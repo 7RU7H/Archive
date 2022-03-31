@@ -38,8 +38,12 @@ Get-Content
 Get-Content -Path .\filename.FILETYPE 
 # -Raw            for raw file output
 
-## Writing to files ##
+# Writing to files
 Set-Content
+
+# Expand a zip file
+Expand-Archive -Path .\*.zip -DestinationPath C:\Destination
+
 
 ## File Hashing and checksums ##
 
@@ -61,17 +65,17 @@ CertUil -hashfile [FILE] MD5|SHA256|SHA512
 
 # Files 
 
-Where-Object
-
-# Strings
-
 Get-ChildItem
-Get-ChildItem C:\ -Recurse | Select-String -Pattern "password"
 Get-ChildItem -Path C:\ -Include *.doc,*.[FILETYPE] -File -Recurse -ErrorAction SilentlyContinue #Find all finds of a particular filetype:
-
 Get-ChildItem –Path C:\ -Include *HSG* -Exclude *.JPG,*.MP3,*.TMP -File -Recurse -ErrorAction SilentlyContinue # Find all find that include *"..."* BUT also exclude wildcard.Filetype
 Get-Childitem -Path C:\ -Recurse # Display pdirectory listing under a parent file, flag: recursive for recursive directory scrapping
 Get-Acl # Get owner of directory again careful of relative running from another directory
+
+Where-Object # TODO
+
+# Strings
+Get-ChildItem C:\ -Recurse | Select-String -Pattern "password"
+
 
 ## Processes, tasks and scheduled tasks
 Get-Process
@@ -81,10 +85,10 @@ Get-Process -ID $PID | Format-Table * # All data on a PID
 schtasks
 schtasks /query /fo /LIST /v
 
-## PS Modules
+## PS Modules ##
 Import-Module module.ps1
 
-##  Sofware
+##  Sofware ##
 # Change executionpolicy
 set-executionpolicy bypass -scope process
 
