@@ -1,5 +1,5 @@
 # Just useful powershell
-```
+```powershell
 ## Box Enumeration ##
 
 Get-ChildItem -Hidden
