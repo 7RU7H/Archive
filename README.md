@@ -1,5 +1,9 @@
 # Archive
-Hacking Methodology, Cheatsheats, Conceptual-Breakdowns
+Hacking Methodology, Cheatsheats, Conceptual-Breakdowns.
+
+## Overview 
+
+Obsidian "second brains", seem like a good idea so I upload it here to somewhat finalise and prompt me to condense all previous my notes into a better format as my more powerful discourse.
 
 ## Linux PrivEsc TODO:
 
