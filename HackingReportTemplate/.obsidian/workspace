@@ -1,0 +1,99 @@
+{
+  "main": {
+    "id": "436f06e8ac7036eb",
+    "type": "split",
+    "children": [
+      {
+        "id": "a38e813ca778651a",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "TargetAddresses.md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "58f813fe5305cd04",
+    "type": "split",
+    "children": [
+      {
+        "id": "6803adb8c18bdb03",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "65b1cca5ac1f459e",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "27e141bc2e7f1f4c",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "fe16bc81ab013095",
+    "type": "split",
+    "children": [
+      {
+        "id": "2c40ea0729e5e1cb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bab4432e210f3e4c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "TargetAddresses.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "a38e813ca778651a",
+  "lastOpenFiles": [
+    "TargetAddresses.md",
+    "Conclusion.md",
+    "CredentialsFoundOrPhished.md",
+    "MarkdownShortcuts.md",
+    "ToolList.md",
+    "References.md",
+    "Objectives.md"
+  ]
+}
