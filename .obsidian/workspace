@@ -1,0 +1,95 @@
+{
+  "main": {
+    "id": "5e38ff0d7306d132",
+    "type": "split",
+    "children": [
+      {
+        "id": "76e76c77206e4eb4",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "PrivEsc/windowsPrivEsc.md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "8c8bdfb281e1e6a2",
+    "type": "split",
+    "children": [
+      {
+        "id": "dcb777db7ca94047",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ed8f63df71621be6",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "904463d60d8efa8d",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "a8801793a2fc8477",
+    "type": "split",
+    "children": [
+      {
+        "id": "0d39bd0d61887708",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "eb64fac060409534",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "PrivEsc/windowsPrivEsc.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "76e76c77206e4eb4",
+  "lastOpenFiles": [
+    "PrivEsc/windowsPrivEsc.md",
+    "PrivEsc/linuxPrivEsc.md",
+    "useful_powershell.md"
+  ]
+}

@@ -82,6 +82,8 @@ Get-ChildItem C:\ -Recurse | Select-String -Pattern "password"
 Get-Process
 Get-Process -ID $PID -IncludeUserName # Owner of proccess
 Get-Process -ID $PID | Format-Table * # All data on a PID
+Get-CimInstance -className win32_process | where-object {$_.ProcessId -eq processId_goes_here } | select ParentProcessId, Name # Get parent process
+
 # Scheduled Tasks
 schtasks
 schtasks /query /fo /LIST /v

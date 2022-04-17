@@ -9,7 +9,10 @@
 ```bash
 wget https://raw.githubusercontent.com/mzet-/linux-exploit-suggester/master/linux-exploit-suggester.sh -O les.sh
 ```
-
+[lse](https://github.com/diego-treitos/linux-smart-enumeration)
+```bash
+curl "https://github.com/diego-treitos/linux-smart-enumeration/releases/latest/download/lse.sh" -Lo lse.sh
+```
 
 ## Lay of the land enumeration:
 ```bash
