@@ -25,8 +25,9 @@ Select-Object                                           select object -Propertie
         last - gets the last x object
         unique - shows the unique objects
         skip - skips x objects
-Select-String "..." -List                               CAREFUL WHERE YOU RUN it relative to working directory location!
 
+Select-String "..." -List                               # CAREFUL WHERE YOU RUN it relative to working directory location!
+Select-String $String -context 10,10			# Findstr but get the ten lines previous and after match VERY HANDY with sysinternals
 ## Counting and measuring
 
 Measure-Object -Sum -ErrorAction SilentlyContinue
