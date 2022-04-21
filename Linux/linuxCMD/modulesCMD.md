@@ -29,6 +29,7 @@ ORS="\n\n" 	= output record separator	would delimiter the record/line output wit
 # tricks:
 awk -F FS -mf Numberoffield '{operation $fieldnum}' file > file
 awk -F: '{print $1}' /etc/passwd | wc -l # for all the users and the wc -l for the total users
+$awk '{a[NR]=$0} END {for (j=1; j<NR; j++) print a[j];sub(/.$/,"",a[NR]);print a[NR]}' InputFile	delete the last character in a file
 
 #### binwalk
 # Allows users to analyze and extract firmware images and helps in identifying code, 
@@ -121,6 +122,8 @@ sed commandline syntax:
 sed -n -e '1,5' -e '10,15p' file.txt		print lines 1to5, 10to15
 sed "s/^/'/;s/$/'/" InputFile			put single quotes around a stream
 sed 's/^/"/;s/$/"/' InputFile			put double quotes around a stream
+sed -i '$ s/.$//' InputFile			delete last character in file
+
 
 
 #### seq
