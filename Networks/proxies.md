@@ -120,6 +120,14 @@ Random - Each connection will be done via random proxy
 this option is good to test your IDS :)
 ```
 
+## Examples
+```bash
+proxychains ssh $USER@$IP
+proxychains xfreerdp /u:$USER /p:$PASSWORD /v:$IP
+proxychains evil-winrm -i $IP -u $USER -p $PASSWORD    
+```
+
+
 # Web Filtering 
 
 Web filter also known as internet or content filter; it a is proxy where the traffic from al the clients in a network si sent towards the internet through this proxy.
