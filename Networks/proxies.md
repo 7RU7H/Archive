@@ -35,6 +35,38 @@ Socket Secure (SOCKS) is network protoocl which allow communication wuth servers
 
 Sock5 proxy supports tunneing for UDP traffic, however not all proxifier tools support this.
 
+## SOCKS5 Proxy 
+```bash
+systemctl start ssh # Start ssh
+systemctl enable ssh # Enable ssh
+
+bash -c "echo 1 > /proc/sys/net/ipv4/iP_forward" # Setting up Remote routing
+
+ssh -D 1337 -q -C -N <user>@kali # Setup the SSH Tunnel 
+#       ^-= a Dynamic Port 
+# -D open a TCP port & use it as a SOCKS5 proxy to connect to ssh server
+# -C compress data to save bandwidth(optional)
+# -q quiet mode, no local ouput!
+# -N do not execute remote commands!
+
+ssh -D 1337 -q -C -f -N <user>@kali
+# -f to run in background
+
+ss -tulpn | grep 1337 # check kali listening ports
+```
+
+## Proxychains port forwarding:
+```bash
+vim /etc/proxychains
+# comment out socks4 127.0.0.0 <port>
+# add 
+socks5 127.0.0.1 1337
+# port scan through proxychains to enumerate internal ports on the server using proxychains:
+proxychains nmap -flags 127.0.0.1
+# find the port the webserver, perform local port forwarding to port using ssh 
+-i id_rsa -L 80:127.0.0.1:<remote port> # may need sudo!
+```
+
 # Proxifiers
 
 A category of software applications that can force other programs to send thraffic through a proxy server. Useful when a application is not proxy aware and cannot configured to use a proxy.
