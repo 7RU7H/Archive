@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "PrivEsc/windowsPrivEsc.md",
+            "file": "Useful-Software/neo4j-guide.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PrivEsc/windowsPrivEsc.md",
+                "file": "Useful-Software/neo4j-guide.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,6 +88,7 @@
   },
   "active": "76e76c77206e4eb4",
   "lastOpenFiles": [
+    "Useful-Software/neo4j-guide.md",
     "PrivEsc/windowsPrivEsc.md",
     "useful_powershell.md",
     "WebHacking/sqli.md",
