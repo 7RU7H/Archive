@@ -123,7 +123,7 @@ sed -n -e '1,5' -e '10,15p' file.txt		print lines 1to5, 10to15
 sed "s/^/'/;s/$/'/" InputFile			put single quotes around a stream
 sed 's/^/"/;s/$/"/' InputFile			put double quotes around a stream
 sed -i '$ s/.$//' InputFile			delete last character in file
-
+sed -i -e 's/[ \t]*//' Input			remove tabs from a file
 
 
 #### seq
