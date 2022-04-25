@@ -34,6 +34,7 @@ MSF5 and lower will have auxiliary/server/socks4a or socks5, MSF6 and newer will
 With MSF6, you will need to specify if you want to use SOCKS4(a) or SOCKS5.
 ```msfconsole
 use auxiliary/server/socks4a
+use auxiliary/server/socks_proxy # msf6 !!
 ```
 Configure proxychains
 ```bash

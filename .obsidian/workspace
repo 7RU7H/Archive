@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Useful-Software/neo4j-guide.md",
+            "file": "Networks/networkTroubleshooting.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Useful-Software/neo4j-guide.md",
+                "file": "Networks/networkTroubleshooting.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,11 +88,15 @@
   },
   "active": "76e76c77206e4eb4",
   "lastOpenFiles": [
+    "Networks/networkTroubleshooting.md",
+    "Networks/networkConnections.md",
+    "Networks/shells.md",
+    "Networks/sshTunneling-Port-Forwarding.md",
+    "Windows/windowsWeapons.md",
+    "postExploitation.md",
+    "Metasploit/proxying-with-metasploit.md",
     "Useful-Software/neo4j-guide.md",
     "PrivEsc/windowsPrivEsc.md",
-    "useful_powershell.md",
-    "WebHacking/sqli.md",
-    "shells.md",
-    "PrivEsc/linuxPrivEsc.md"
+    "useful_powershell.md"
   ]
 }

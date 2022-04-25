@@ -1,11 +1,13 @@
 # Startup:
 
-# Per shell session start with
+### Per shell session start with
+```bash
 ulimit -n 40000 
 # THEN
 sudo neo4j console
 # THEN goto localhost:7474
-bloodhound
+```
+Default credentials
 USER: neo4j
-PASS: password
+PASS: neo4j
 

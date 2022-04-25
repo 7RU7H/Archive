@@ -158,6 +158,9 @@ SNMPSSH-TRAP
 //dafault 5162 	
 //SNMP Notification over SSH Transport Model 	
 
+Burp Proxy
+//default port 8000
+
 TOMCAT PROXY
 //default port 8009
 
