@@ -59,48 +59,58 @@ fi
 # Operators
 ```bash
 # Logical Operators
-&& AND		is boolean operator! Executed based previous output...
-|| OR 		of a ...command succeeding(or returned True or 0), ...
-| PIPE		failures return non-zero.
+&& AND		# is boolean operator! Executed based previous output...
+|| OR 		# of a ...command succeeding(or returned True or 0), ...
+| PIPE		# failures return non-zero.
+
 # Conditional Operators
-expression ? expression : expression	conditional operator
-!EXPRESSION 							The EXPRESSION is false.
+expression ? expression : expression	# conditional operator
+!EXPRESSION 							# The EXPRESSION is false.
+
 # String Operators
--n STRING 	STRING length is greater than zero
--z STRING 	The length of STRING is zero (empty)
-STRING1 != STRING2 	STRING1 is not equal to STRING2
-STRING1 = STRING2 	STRING1 is equal to STRING2
+-n STRING 				# STRING length is greater than zero
+-z STRING 				# The length of STRING is zero (empty)
+STRING1 != STRING2 		# STRING1 is not equal to STRING2
+STRING1 = STRING2 		# STRING1 is equal to STRING2
+
 # Integer Operators
-INTEGER1 -eq INTEGER2 	INTEGER1 is equal to INTEGER2
-INTEGER1 -ne INTEGER2 	INTEGER1 is not equal to INTEGER2
-INTEGER1 -gt INTEGER2 	INTEGER1 is greater than INTEGER2
-INTEGER1 -lt INTEGER2 	INTEGER1 is less than INTEGER2
-INTEGER1 -ge INTEGER2 	INTEGER1 is greater than or equal to INTEGER 2
-INTEGER1 -le INTEGER2 	INTEGER1 is less than or equal to INTEGER 2
+INTEGER1 -eq INTEGER2 	# INTEGER1 is equal to INTEGER2
+INTEGER1 -ne INTEGER2 	# INTEGER1 is not equal to INTEGER2
+INTEGER1 -gt INTEGER2 	# INTEGER1 is greater than INTEGER2
+INTEGER1 -lt INTEGER2 	# INTEGER1 is less than INTEGER2
+INTEGER1 -ge INTEGER2 	# INTEGER1 is greater than or equal to INTEGER 2
+INTEGER1 -le INTEGER2 	# INTEGER1 is less than or equal to INTEGER 2
+
 # File Operators
--d FILE 	FILE exists and is a directory
--e FILE 	FILE exists
--r FILE 	FILE exists and has read permission
--s FILE 	FILE exists and it is not empty
--w FILE 	FILE exists and has write permission
--x FILE 	FILE exists and has execute permission
+-d FILE 	# FILE exists and is a directory
+-e FILE 	# FILE exists
+-r FILE 	# FILE exists and has read permission
+-s FILE 	# FILE exists and it is not empty
+-w FILE 	# FILE exists and has write permission
+-x FILE 	# FILE exists and has execute permission
+
 # Arithmetical Operators
-(($VARIABLE$OPERATOR)) enclose calculations
-id++, id–		variable post-increment, post-decrement
-++id, –id		variable pre-increment, pre-decrement
--, +			unary minus, plus
-!, ~			logical and bitwise negation
-**				exponentiation
-*, /, %			multiplication, division, remainder (modulo)
-+, -			addition, subtraction
-«, »			left and right bitwise shifts
-<=, >=, <, >	comparison
-==, !=			equality, inequality
-&				bitwise AND
-^				bitwise XOR
-|				bitwise OR
-# Assignment Operators
-=, *=, /=, %=, +=, -=, «=, »=, &=, ^=, |=	assignment
+$(( $MATHSGOESHERE ))	 	# Arithemetic expansion
+$[ $MATHSGOESHERE ]			# Another way to do arithemetic expansion
+expr						# Legacy let or declare
+let				
+delcare 
+id++, id–					# variable post-increment, post-decrement
+++id, –id					# variable pre-increment, pre-decrement
+-, +						# unary minus, plus
+!, ~						# logical and bitwise negation
+**							# exponentiation
+*, /, %						# multiplication, division, modulo
++, -						# addition, subtraction
+«, »						# left and right bitwise shifts
+<=, >=, <, >				# comparison
+==, !=						# equality, inequality
+&							# bitwise AND
+^							# bitwise XOR
+|							# bitwise OR
+
+# Assignment(ARITHMETIC) Operators
+=, *=, /=, %=, +=, -=, «=, »=, &=, ^=, |= # For Arithmetic
 ```
 
 # For loop structure

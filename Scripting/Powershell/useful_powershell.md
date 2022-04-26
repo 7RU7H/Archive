@@ -1,54 +1,109 @@
 # Just useful powershell
-```powershell
-## Box Enumeration ##
+This is a condensed and *Hacking Themed* resource for powershell. Powershell is a massive and my humble opinion a *weird* object-oriented programming language. Windows and Powershell are not case-sensitive, but a *stardard* readability is to use upper-case first letter - I suggest not unless you need to present your work(use a script to change it to *standard*). Every command has a cmdlet and combinations of `verb-noun` to construct command that would be too numerous to list. So to define the theme of this document is oneliners catergorised by use(*just in case at some point they maybe some exceptions like two oneliners that need to be seperate executions* **THESE WILL HAVE A `# TASKNAME Command # THEN Command`**). I am in the process of making this better for my own use:
+1. Adding aliases that I might want to use instead of full command
+2. Making the comments defining explaining a better layout
 
-Get-ChildItem -Hidden
+## Basics
+
+```powershell
+$varOne = "power"
+$varTwo = "shell"
+$varOne.GetType()
+[int]$varOne 	#type conver
+$Error 			#contains an array of error objects.
+$Host 			#contains information about the current hosting application.
+$Profile 		#contains the path to the current user profile for PowerShell.
+$PID  			#contains the process ID of current PowerShell session.
+$PSUICulture  	#contains the UI culture or the regional language of the user interface.
+$NULL  			#contains the value of NULL.
+$False 			#contains the value of False.
+$True 			#contains the value of True.
+$cmdletArray = "Start", "Stop", "Read", "Write", "New", "Out"
+operators = "-eq", "-ne", "-le", "-ge" , "-gt", "-lt", "-and"
+# c equivalents: ==, !=, <=, >=, >, <, &&, 
+# -is is a boolean operator
+# | is pipe operator like bash
+
+# Light-weight Commands - No output formatting, parsing or error presentation
+# Piped OBJECT from one cmdlet to the next, like Bash BUT OBJECTS NOT OUTPUT!
+# Add all formatting, etc at the end of the chain
+```
 
 ## General
-
-Get-Command                                             list of powersahell commands BEWARE OF THE LISTS
-Get-Help                                                help for specific cmdlet
-Get-Location                                            justincase pwd
-Get-Command | Get-Member -MemberType Method             view members for a the get command
+```powershell
+Get-Command              # list of powershell commands, BEWARE OF THE LISTS
+Get-Verb				 # list all verbs
+Get-Noun				 # list all nouns
+Get-Help                 # help for specific cmdlet
+Get-Help $Command-Name
+Get-Command Verb-* 
+Get-Command *-Noun # Commands and Cmdlets are both executables in ps, Command= compiled, can be solo-executed cmdlets
+Get-Command | Get-Member -MemberType Method # view members for a the get command
 Get-Command -Type Cmdlets | Measure-Object -Sum -ErrorAction SilentlyContinue
+Get-Alias		
+Set-Alias				 	# Make commands
+Set-Alias -Name helpmeplease -Value Get-help
+```
 
+## Providers and Modules
+```powershell
+# A provider is .NET program to access data stores
+# Typically included in modules and are accessible after the module has been loaded into the current session
+Get-PSProvider
 
-## System information
+# Modules are packages that contain additional cmdlets, functions, providers, etc that an be imported into the current session
+Get-Module 
+Get-Module -ListAvaliable
+Get-Command -Module Defender	# Return all functions of a module
+```
+
+## System Information
+```powershell
 Get-HotFix -ID
 $PSVersionTable.PSVersion
-Get-History
+Get-History							# Get command history
+Get-ChildItem ENV:      # Display all environment variables
+```
+
+## Software Information
+```powershell
+Get-ExecutionPolicy			
+Set-ExecutionPolicy -RemoteSigned	# -Flags -Name -ListAvailable
+
+```
 
 ## Strings and objects
-
+```powershell
 Select-Object                                           select object -Properties Mode, Name
         first - gets the first x object
         last - gets the last x object
         unique - shows the unique objects
         skip - skips x objects
 
-Select-String "..." -List                               # CAREFUL WHERE YOU RUN it relative to working directory location!
+Select-String "..." -List  # CAREFUL WHERE YOU RUN it relative to working directory location!
 Select-String $String -context 10,10			# Findstr but get the ten lines previous and after match VERY HANDY with sysinternals
-## Counting and measuring
+Get-ChildItem C:\ -Recurse | Select-String -Pattern "password"
+```
 
+## Maths, Counting and Measuring
+```powershell
 Measure-Object -Sum -ErrorAction SilentlyContinue
+```
 
 ## File and Directory interactions
+```powershell
+## Reading and Writing ##
+Get-Content							  # Reading file
+Get-Content -Path .\filename.FILETYPE # -Raw for raw file output
 
-# Reading file
-Get-Content
-Get-Content -Path .\filename.FILETYPE 
-# -Raw            for raw file output
+Set-Content 		# Writing to files
+Expand-Archive -Path .\*.zip -DestinationPath C:\Destination # Expand a zip file
 
-# Writing to files
-Set-Content
-
-# Expand a zip file
-Expand-Archive -Path .\*.zip -DestinationPath C:\Destination
-
+Get-Location        # print working directory
+Set-Location 		# choose a directory for context to operate
 
 ## File Hashing and checksums ##
-
-#FILTERHASHTABLE 101:
+# FILTERHASHTABLE 101:
 # Levels:
 # NAME            VALUE
 # verbose         5
@@ -60,25 +115,20 @@ Expand-Archive -Path .\*.zip -DestinationPath C:\Destination
 # FOR EXAMPLE:
 Get-FileHash -Path ... -Algorithm
 CertUil -hashfile [FILE] MD5|SHA256|SHA512
-
-
 ## Finding ##
-
-# Files 
-
-Get-ChildItem
+Get-ChildItem # Aliased ls, dir, gci
+Get-ChildItem -Hidden
 Get-ChildItem -Path C:\ -Include *.doc,*.[FILETYPE] -File -Recurse -ErrorAction SilentlyContinue #Find all finds of a particular filetype:
 Get-ChildItem –Path C:\ -Include *HSG* -Exclude *.JPG,*.MP3,*.TMP -File -Recurse -ErrorAction SilentlyContinue # Find all find that include *"..."* BUT also exclude wildcard.Filetype
 Get-Childitem -Path C:\ -Recurse # Display pdirectory listing under a parent file, flag: recursive for recursive directory scrapping
 Get-Acl # Get owner of directory again careful of relative running from another directory
 
 Where-Object # TODO
-
-# Strings
-Get-ChildItem C:\ -Recurse | Select-String -Pattern "password"
-
+Import-CSV file.csv     # Read a CSV file
+```
 
 ## Processes, tasks and scheduled tasks
+```powershell
 Get-Process
 Get-Process -ID $PID -IncludeUserName # Owner of proccess
 Get-Process -ID $PID | Format-Table * # All data on a PID
@@ -94,10 +144,10 @@ Import-Module module.ps1
 ##  Sofware ##
 # Change executionpolicy
 set-executionpolicy bypass -scope process
+```
 
-
-## Networking ##
-
+## Networking
+```powershell
 # Test connection
 Test-NetConnection -ComputerName 127.0.0.1 -Port 80
 # Check the test connection with:
@@ -109,9 +159,10 @@ netstat -noa |findstr "LISTENING" |findstr "PORTNUMBER"                 # Find p
 nslookup.exe
 server ip
 ls -d domainname
+```
 
-## Host Security Detection ##
-
+## Host Security Detection
+```powershell
 Get-CimInstance -Namespace root/SecurityCenter2 -ClassName AntivirusProduct     # Windows servers may not have SecurityCenter2
 Get-Service WinDefend
 Get-MpComputerStatus                                                            # Get the status of security solution elements
@@ -120,10 +171,10 @@ Get-NetFirewallProfile | Format-Table Name, Enabled                             
 Get-NetFirewallRule | select DisplayName, Enabled, Description                  # Show all enable firewall rules
 Get-NetFirewallRule | findstr "rulename"                                        # Find specific rule with findstr
 Set-NetFirewallProfile -Profile Domain, Public, Private -Enabled False          # disable a firewall
+```
 
-
-## Active Directory ##
-
+## Active Directory
+```powershell
 Get-ADUser -Filter *
 Get-ADUser -Filter * -SearchBase "CN=Admin,OU=THM,DC=redteam,DC=com" # CN=Common Name, DC=Domain Component, OU=OrganizationalUnitName, et
 Get-ADForest | Select-Object Domains
@@ -133,11 +184,11 @@ Get-NetDomain
 Get-NetDomainController
 Get-NetForest
 Get-NetDomainTrust
+```
 
-## Event Logging ##
-#
-## General
-#
+## Event Logging
+```powershell
+# General
 # Get service infomation either:
 Get-CimInstance win32_service -Filter "Description = 'System Monitor service'" # OR
 Get-Service | where-object {$_.DisplayName -like "*sysm*"}

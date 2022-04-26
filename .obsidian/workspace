@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Scripting/useful_bash.md",
+            "file": "Scripting/Powershell/psVerbs.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Scripting/useful_bash.md",
+                "file": "Scripting/Powershell/psVerbs.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +88,15 @@
   },
   "active": "76e76c77206e4eb4",
   "lastOpenFiles": [
-    "Scripting/useful_bash.md",
+    "Scripting/Powershell/psVerbs.md",
+    "Scripting/Powershell/useful_powershell.md",
+    "Scripting/Bash/useful_bash.md",
     "Networks/networkTroubleshooting.md",
     "Networks/networkConnections.md",
     "Networks/shells.md",
     "Networks/sshTunneling-Port-Forwarding.md",
     "Windows/windowsWeapons.md",
     "postExploitation.md",
-    "Metasploit/proxying-with-metasploit.md",
-    "Useful-Software/neo4j-guide.md",
-    "PrivEsc/windowsPrivEsc.md"
+    "Metasploit/proxying-with-metasploit.md"
   ]
 }
