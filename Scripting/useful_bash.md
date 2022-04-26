@@ -21,6 +21,7 @@ echo "Varibales declared outside of functions have global scope, BEWARE"
 echo
 
 ```
+
 # Special Bash Variables:
 ```bash
 $0 		# The name of the Bash script
@@ -35,14 +36,14 @@ $RANDOM 	# A random number
 $LINENO 	# The current line number in the script
 ```
 
-# Read user input
+# Reading User Input
 ```bash
 read var		
 read -p	'Your input: ' var		#specify a prompt
 read -sp 'Your silent input: ' var 	#specify prompt for silent input
 ```
-# Conditionals
 
+# Conditional Statements
 ```bash
 if [ evaluation ]
 then
@@ -110,6 +111,7 @@ do
   ((counter++))
 done
 ```
+
 # Using Files
 ```bash
 FILENAME=file.txt
@@ -120,8 +122,9 @@ do
 done
 ```
 
-# Fnction definition 
-```
+# Function definition 
+You don't have to use the function keyword like C.
+```bash
 function testfunc () #compond_cmd [>,<,>>] file
 {
 	echo "Arguments work just like script arguments: $@"
@@ -130,13 +133,20 @@ function testfunc () #compond_cmd [>,<,>>] file
     	returnValue=0    # Variable values can be returned
    	return $returnValue
 }
+
+testfunc () 
+{
+	echo "C-like function defintition"
+}
+
 ```
 Declare a function with 
 ```bash
 testfunc ## arg1 arg2 .. 
 ```
 
-# Case like Switches
+# Case statements
+These are like switch statements 
 ```bash
 case "$Variable" in
     # List patterns for the conditions you want to meet
@@ -145,6 +155,7 @@ case "$Variable" in
     *) echo "It is not null.";;  # match everything
 esac
 ```
+
 # Parametre Expansion: indirection, listing and length
 ```bash
 param="advanced"; parade="bash";
@@ -162,6 +173,7 @@ ${param/#pattern/string}
 # Substitute at right edge:
 ${param/%pattern/string}
 ```
+
 # Arrays
 ```bash
 array=(zero one two );
