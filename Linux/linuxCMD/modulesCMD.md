@@ -127,7 +127,7 @@ sed -i -e 's/[ \t]*//' Input			remove tabs from a file
 
 
 #### seq
-seg $int		# print sequence of "$int\n" 
+seq $int		# print sequence of "$int\n" 
 
 #### sort
 sort -r 	reverse order

@@ -19,21 +19,24 @@ Post: Post-Exploitation phase
 ```msfconsole
 
 background		# background a session
-			# OR CTRL+Z
+				# OR CTRL+Z
 check			# check if system is vulnerable(SOME MODULES HAVE THIS)
-exploit			# launch the exploit
-	-z		# background exploit when run
+exploit					# launch the exploit
+	-z					# background exploit when run
 info	<module-name> 	# display inforamtion about <module-name>
-			# -j for json, -d markdown
-options			# displays options
-search			# searches
-session	<number>	# switch or refer to a session
-sessions		# list all sessions
-	-i		# interact with session number
-set			# set data for options
-setg			# set global data
-show			# display parametres: all, encoders, nops, exploits, payloads, auxiliary, post, plugins, info, options 
-			# module-specific: missing, advanced, evasion, targets, actions
+						# -j for json, -d markdown
+jobs					# display jobs
+	–k					# kill jobID
+	
+options					# displays options
+search					# searches
+session	<number>		# switch or refer to a session
+sessions				# list all sessions
+	-i					# interact with session number
+set						# set data for options
+setg					# set global data
+show		# display parametres: all, encoders, nops, exploits, payloads, auxiliary, post, plugins, info, options 
+				# module-specific: missing, advanced, evasion, targets, actions
 use 			# select a module
 ```
 

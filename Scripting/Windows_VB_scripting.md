@@ -1,4 +1,4 @@
-# Windows Weapons
+# windowsVBscripting
 
 #  VB script shell:
 ```vb

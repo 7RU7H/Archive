@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Scripting/Powershell/psVerbs.md",
+            "file": "Metasploit/proxying-with-metasploit.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Scripting/Powershell/psVerbs.md",
+                "file": "Metasploit/proxying-with-metasploit.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +88,15 @@
   },
   "active": "76e76c77206e4eb4",
   "lastOpenFiles": [
+    "Metasploit/proxying-with-metasploit.md",
+    "Metasploit/metasploit.md",
+    "Metasploit/meterpreter.md",
+    "Linux/linuxCMD/modulesCMD.md",
+    "notesforlater.md",
+    "Scripting/Windows_VB_scripting.md",
+    "PrivEsc/windowsPrivEsc.md",
     "Scripting/Powershell/psVerbs.md",
     "Scripting/Powershell/useful_powershell.md",
-    "Scripting/Bash/useful_bash.md",
-    "Networks/networkTroubleshooting.md",
-    "Networks/networkConnections.md",
-    "Networks/shells.md",
-    "Networks/sshTunneling-Port-Forwarding.md",
-    "Windows/windowsWeapons.md",
-    "postExploitation.md",
-    "Metasploit/proxying-with-metasploit.md"
+    "Scripting/Bash/useful_bash.md"
   ]
 }

