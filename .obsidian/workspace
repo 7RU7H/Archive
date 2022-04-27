@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Metasploit/proxying-with-metasploit.md",
+            "file": "Scripting/Python/useful_python3.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Metasploit/proxying-with-metasploit.md",
+                "file": "Scripting/Python/useful_python3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +88,15 @@
   },
   "active": "76e76c77206e4eb4",
   "lastOpenFiles": [
+    "Scripting/Python/useful_python3.md",
+    "Scripting/Powershell/useful_powershell.md",
+    "Scripting/Windows_VB_scripting.md",
     "Metasploit/proxying-with-metasploit.md",
     "Metasploit/metasploit.md",
     "Metasploit/meterpreter.md",
     "Linux/linuxCMD/modulesCMD.md",
     "notesforlater.md",
-    "Scripting/Windows_VB_scripting.md",
     "PrivEsc/windowsPrivEsc.md",
-    "Scripting/Powershell/psVerbs.md",
-    "Scripting/Powershell/useful_powershell.md",
-    "Scripting/Bash/useful_bash.md"
+    "Scripting/Powershell/psVerbs.md"
   ]
 }
