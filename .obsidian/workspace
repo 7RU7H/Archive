@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Scripting/Python/useful_python3.md",
+            "file": "Linux/linuxCMD/modulesCMD.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Scripting/Python/useful_python3.md",
+                "file": "Linux/linuxCMD/modulesCMD.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +88,15 @@
   },
   "active": "76e76c77206e4eb4",
   "lastOpenFiles": [
-    "Scripting/Python/useful_python3.md",
-    "Scripting/Powershell/useful_powershell.md",
-    "Scripting/Windows_VB_scripting.md",
-    "Metasploit/proxying-with-metasploit.md",
-    "Metasploit/metasploit.md",
-    "Metasploit/meterpreter.md",
     "Linux/linuxCMD/modulesCMD.md",
+    "Scripting/Bash/useful_bash.md",
+    "Packet-Analysis/Brim/Brim.md",
+    "Post-Exploitation/Mimikatz.md",
     "notesforlater.md",
-    "PrivEsc/windowsPrivEsc.md",
-    "Scripting/Powershell/psVerbs.md"
+    "README.md",
+    "PrivEsc/linuxPrivEsc.md",
+    "PrivEsc/activeDirectoryPrivEsc.md",
+    "Scripting/Python/useful_python3.md",
+    "Scripting/Powershell/useful_powershell.md"
   ]
 }

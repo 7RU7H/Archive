@@ -3,7 +3,7 @@
 
 ### RTFM, Ready the binaries to drop - check the 32bit or 64bit!  
 ### Dont rely one or two enumeration scripts for this specific task
-### Don't be lazy but not be stupid scripts that try to exploit are good for OSCP:
+### Don't be lazy but not be stupid, scripts that try to exploit are no good for OSCP:
 
 [LinEmun](https://github.com/rebootuser/LinEnum/blob/master/LinEnum.sh)
 ```bash

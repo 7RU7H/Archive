@@ -124,7 +124,7 @@ for i in {1..10}; do echo 10.11.1.$i;done
 #While loop structure
 while [ <some test> ]
 do
-  <perform an action>
+  <perform an actioin>
 done
 #While loop with a counter
 counter=1

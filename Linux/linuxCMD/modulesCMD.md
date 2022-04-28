@@ -29,6 +29,8 @@ ORS="\n\n" 	= output record separator	would delimiter the record/line output wit
 # tricks:
 awk -F FS -mf Numberoffield '{operation $fieldnum}' file > file
 awk -F: '{print $1}' /etc/passwd | wc -l # for all the users and the wc -l for the total users
+awk '{ sum += $1 } END { print sum }' # add all the numbers in a file up
+
 $awk '{a[NR]=$0} END {for (j=1; j<NR; j++) print a[j];sub(/.$/,"",a[NR]);print a[NR]}' InputFile	delete the last character in a file
 
 #### binwalk
@@ -119,11 +121,12 @@ sed -e 'range mode/pattern/STRING/g' file.txt
 sed commandline syntax:
 '[condition(s)(optional)] [command/mode(optional)]/[source/to-be-searched pattern(mandatory)]/[to-be-replaced pattern(depends on command/mode you use)]/[args/flags to operate on the pattern searched(optional)]'
 
-sed -n -e '1,5' -e '10,15p' file.txt		print lines 1to5, 10to15
-sed "s/^/'/;s/$/'/" InputFile			put single quotes around a stream
-sed 's/^/"/;s/$/"/' InputFile			put double quotes around a stream
-sed -i '$ s/.$//' InputFile			delete last character in file
-sed -i -e 's/[ \t]*//' Input			remove tabs from a file
+sed -n -e '1,5' -e '10,15p' file.txt		# print lines 1to5, 10to15
+sed "s/^/'/;s/$/'/" InputFile				# put single quotes around a stream
+sed 's/^/"/;s/$/"/' InputFile				# put double quotes around a stream
+sed -i '$ s/.$//' InputFile					# delete last character in file
+sed -i -e 's/[ \t]*//' Input				# remove tabs from a file
+sed -E 's/^([^,]*[,])//'					# remove after comma
 
 
 #### seq
