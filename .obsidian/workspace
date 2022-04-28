@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Linux/linuxCMD/modulesCMD.md",
+            "file": "Password-Attacks/Hydra.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/linuxCMD/modulesCMD.md",
+                "file": "Password-Attacks/Hydra.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,6 +88,8 @@
   },
   "active": "76e76c77206e4eb4",
   "lastOpenFiles": [
+    "Password-Attacks/Hydra.md",
+    "Scripting/Python/useful_python3.md",
     "Linux/linuxCMD/modulesCMD.md",
     "Scripting/Bash/useful_bash.md",
     "Packet-Analysis/Brim/Brim.md",
@@ -95,8 +97,6 @@
     "notesforlater.md",
     "README.md",
     "PrivEsc/linuxPrivEsc.md",
-    "PrivEsc/activeDirectoryPrivEsc.md",
-    "Scripting/Python/useful_python3.md",
-    "Scripting/Powershell/useful_powershell.md"
+    "PrivEsc/activeDirectoryPrivEsc.md"
   ]
 }

@@ -7,7 +7,7 @@ Remember with python [you need a ruler for tab indentatio](https://www.youtube.c
 
 ## Fundamentals
 
-```python3 
+```python 
 #! /usr/bin/python3 # Shebang line
 # Comments with # 
 	# Tab indentation is
@@ -63,7 +63,7 @@ for tool in myList:
 
 Functions
 
-```python3 
+```python 
 def commands():
     theMethod = {
              "nmap":" -sC -sV -O -T 4 -p- ",
@@ -89,7 +89,7 @@ def commands():
 ```
 File IO and User Input with keyword input
 
-```python3
+```python
 # This consider nooby 
 print("Would you like to read from the demo.txt? Y/n:")
     if input('Y'):
@@ -105,9 +105,8 @@ with open(ip_range, "r") as f:
 ```
 ## Next level
 
-Emumerate is commonly consider better in many case for solving problems with iterables.
-They return index and elem
-```
+Emumerate is commonly consider better in many case for solving problems with iterables, they return index and element:
+```python
 for i,word in emunerate('iteratables are tuples, lists, sets, dict, strings')
 print(i,char)
 i = 20
@@ -115,26 +114,29 @@ while i > 0:
     print(f"Tick tock...{i} and {char} seconds left")
     i -= 1
 ```
-Nonlocal keyword
 
-```python3
+Nonlocal keyword
+```python
 nonlocal thisnotglobalbutoutsidefunctionscoping se with care
 ```
-Modules and packages allow for programmers to segment code to organise and allow other code to reuse that code.
-Avoid importing loops main.py-\>foo.py\<-\>bay.py 
 
-```python3
+Modules and packages allow for programmers to segment code to organise and allow other code to reuse that code. Avoid importing loops main.py-\>foo.py\<-\>bay.py 
+```python
 import module
 import package.package_module
 from something import onething
 externalImports = "External modules work in a similar way except we will need to make them available in our PYTHONPATH so they can be imported. This can be done by downloading the module manually and placing it in a directory that Python will search for modules in. We can also do this automatically by using a tool named pip. Pip is a Python package installer that will make it very easy to download and install Python modules into appropriate locations on our system."
 print(externalImports)
+```
 
-
+Find substrings with regex functionality in strings annd counting substrings or regexs:
+```python
+import re
+res = sum(1 for _ in re.finditer("", r.text)) #, re.IGNORECASE))
+res = len(re.findall('', string))#, re.IGNORECASE))
 ```
 
 Ternary and shortcircuiting
-
 ```python
 is_ternary = True
 ternary_op_message = "This message will print at evaluation of the boolean  of is_tenery with if and else" if is_tenary else "Not ternary"
@@ -143,9 +145,9 @@ if is_ternary or is_short_circuiting
 print("Short circuiting using or with is_ternary and is_short_circuiting being True")
 print("is keyword check the value in memory is the same")
 ```
-Function declaration, returns, \*args and \*\*kwargs
 
-```python3
+Function declaration, returns, \*args and \*\*kwargs
+```python
 def super_func(*args)
     return sum(args)
 
@@ -162,11 +164,77 @@ python3
 python3 -v
 ```
 
+# Subproceses
+
+```python
+    #stdout as result
+    result = subprocess.run(["cat", "sample.txt"], stderr=subprocess.PIPE, text=True)
+    print(result.stderr)
+    #stdin
+    result = subprocess.run(["echo", "Hello, World!"], stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+    print(result.stdout)
+    # wait for process
+    process = subprocess.Popen(["ls", "-la"])
+    process.wait()
+    # communicate - get output, error and give input
+    process = subprocess.Popen(["echo", "Hello, World!"], stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+    result = process.communicate()
+    # input into a subprocess
+    process = subprocess.Popen(["python3", "add.py"], stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+    process.stdin.write("2 3")
+    process.stdin.close()
+    # Poll to find whether process is complete or not
+    while True:
+    output = process.stdout.readline()
+    if output:
+        print(output.strip())
+    result = process.poll()
+    if result is not None:
+        break
+    # bash
+    exit_code = subprocess.call
+```
+
+# Async 
+```python
+async def put_proc_queue():
+#tools_dictionary key and the value become
+    = mp.Process(target=
+    .start()
+
+async def pop_entire_proc_queue():
+    for proc in proc_queue:
+        proc.join()
+
+async def somthing:
+	somethingofthis...
+	
+async def run_sequence(*functions: Awaitable[Any]) -> None:
+	for function in functions:
+    	await function
+
+async def run_parallelism(*functions: Awaitable[Any]) -> None:
+	await asyncio.gather(*functions)	
+	
+await somthing.somethingofthis
+tuple1, = #await asycio.gather() #add await if asynchronos, use to replace list comprehension
+
+
+await run_parallelism(
+	something()
+	await run_sequence(
+		something()
+		something()
+		)
+)	
+```
+
+
 # Appendix
 
 ## Tips for cleaner code
 
-```python3
+```python
 print("Ints type convert wto float when they become decimal values")
 print("Don't read the dictionary")
 print("Don't comment too much make documentation as code")
