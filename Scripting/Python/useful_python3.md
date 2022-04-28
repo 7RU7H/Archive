@@ -1,11 +1,10 @@
 # Useful Python 
 
 This is a condensed and *Hacking Themed* resource for python.
-Remember with python [you need a ruler for tab indentatio](https://www.youtube.com/watch?v=YnL9vAFphmE) and [sometimes we have a competition to write the longest list comprehension...and sometimes it's in production...and sometimes we don't call it a competition but work](https://www.youtube.com/watch?v=BgxklT94W0I) which requires a [phd](https://www.youtube.com/watch?v=xyrgkui0uCA).
+Remember with python [you need a ruler for tab indentatio](https://www.youtube.com/watch?v=YnL9vAFphmE) and [sometimes we have a competition to write the longest list comprehension...and sometimes it's in production...and sometimes we don't call it a competition but work](https://www.youtube.com/watch?v=BgxklT94W0I) which requires a [phd](https://www.youtube.com/watch?v=xyrgkui0uCA). This like [xinyMinutes](https://learnxinyminutes.com/docs/python) with most hacking theme and base of things I have found or used.
 
 # Basics
-
-## Fundamentals
+### Fundamentals
 
 ```python 
 #! /usr/bin/python3 # Shebang line
@@ -61,7 +60,7 @@ for tool in myList:
 			print(f"{i+{str({int(i)})} is f strings nesting")
 ```
 
-Functions
+### Functions
 
 ```python 
 def commands():
@@ -87,7 +86,21 @@ def commands():
 
     print("complete")
 ```
-File IO and User Input with keyword input
+
+Function declaration, returns, \*args and \*\*kwargs
+
+```python
+def super_func(*args)
+    return sum(args)
+
+def special_func(**kwargs)
+
+print("super_func() with *args can accept any number of any type of arguments")
+print("special_func(**kwargs) can accept any number of any type keyword=value")
+print("Ordering dule: params, *args, defult parameters then **kwargs")
+```
+
+### File IO and User Input with keyword input
 
 ```python
 # This consider nooby 
@@ -99,12 +112,25 @@ print("Would you like to read from the demo.txt? Y/n:")
         print(line)
         f.close()
 
+# to method like var.method
+# "r" to read
+# "a" to append 
+# "w" to write
+# "x" to create new file
+
 # It is better to use with that auto closes after use - good for tear down code!
 with open(ip_range, "r") as f:
 
 ```
-## Next level
 
+### CLI and ENV
+```bash
+python3 
+python3 -v
+```
+
+# Next level
+### Emumerate
 Emumerate is commonly consider better in many case for solving problems with iterables, they return index and element:
 ```python
 for i,word in emunerate('iteratables are tuples, lists, sets, dict, strings')
@@ -115,7 +141,7 @@ while i > 0:
     i -= 1
 ```
 
-Nonlocal keyword
+### Nonlocal keyword
 ```python
 nonlocal thisnotglobalbutoutsidefunctionscoping se with care
 ```
@@ -129,6 +155,7 @@ externalImports = "External modules work in a similar way except we will need to
 print(externalImports)
 ```
 
+### re module
 Find substrings with regex functionality in strings annd counting substrings or regexs:
 ```python
 import re
@@ -136,6 +163,7 @@ res = sum(1 for _ in re.finditer("", r.text)) #, re.IGNORECASE))
 res = len(re.findall('', string))#, re.IGNORECASE))
 ```
 
+### Boolean
 Ternary and shortcircuiting
 ```python
 is_ternary = True
@@ -146,27 +174,28 @@ print("Short circuiting using or with is_ternary and is_short_circuiting being T
 print("is keyword check the value in memory is the same")
 ```
 
-Function declaration, returns, \*args and \*\*kwargs
+# Hacker related by package
+### requests
 ```python
-def super_func(*args)
-    return sum(args)
+import requests
+```
+### socket
+```python
+import socket
 
-def special_func(**kwargs)
-
-print("super_func() with *args can accept any number of any type of arguments")
-print("special_func(**kwargs) can accept any number of any type keyword=value")
-print("Ordering dule: params, *args, defult parameters then **kwargs")
+```
+### pwntools
+```python
+import pwntools
 ```
 
-# CLI and ENV
-```bash
-python3 
-python3 -v
-```
+# Advanced
 
-# Subproceses
+### Subproceses
+[Reference](https://www.digitalocean.com/community/tutorials/how-to-use-subprocess-to-run-external-programs-in-python-3)
 
 ```python
+def examples_subproccess(): 
     #stdout as result
     result = subprocess.run(["cat", "sample.txt"], stderr=subprocess.PIPE, text=True)
     print(result.stderr)
@@ -189,13 +218,13 @@ python3 -v
     if output:
         print(output.strip())
     result = process.poll()
-    if result is not None:
-        break
-    # bash
-    exit_code = subprocess.call
+	if result is not None:
+		break
+# bash
+exit_code = subprocess.call
 ```
 
-# Async 
+### Async 
 ```python
 async def put_proc_queue():
 #tools_dictionary key and the value become

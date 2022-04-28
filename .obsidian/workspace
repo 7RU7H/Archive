@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Password-Attacks/Hydra.md",
+            "file": "Web-Hacking/Concepts/html101.md.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Password-Attacks/Hydra.md",
+                "file": "Web-Hacking/Concepts/html101.md.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +88,15 @@
   },
   "active": "76e76c77206e4eb4",
   "lastOpenFiles": [
-    "Password-Attacks/Hydra.md",
+    "Web-Hacking/Concepts/html101.md.md",
+    "Web-Hacking/SQLi/sqli.md",
     "Scripting/Python/useful_python3.md",
+    "Scripting/Windows_VB_scripting.md",
+    "Password-Attacks/Hydra.md",
     "Linux/linuxCMD/modulesCMD.md",
     "Scripting/Bash/useful_bash.md",
     "Packet-Analysis/Brim/Brim.md",
     "Post-Exploitation/Mimikatz.md",
-    "notesforlater.md",
-    "README.md",
-    "PrivEsc/linuxPrivEsc.md",
-    "PrivEsc/activeDirectoryPrivEsc.md"
+    "notesforlater.md"
   ]
 }

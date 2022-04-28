@@ -1,4 +1,4 @@
-# SQL and SQLinjection
+# SQLinjection
 
 An ode to SQLI:
 ```poem
