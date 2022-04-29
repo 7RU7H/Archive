@@ -45,9 +45,9 @@ set(myList)
 # Useful methods
 myList.append("crackmapexec")
 .remove
-.contains
-.split
-.index
+.contains()
+.split('delimiter')
+.index()
 # Looping with for, for range, while keywords
 for tool in myList:
 	print(f"{tool} is ready for use!")
@@ -133,12 +133,12 @@ python3 -v
 ### Emumerate
 Emumerate is commonly consider better in many case for solving problems with iterables, they return index and element:
 ```python
-for i,word in emunerate('iteratables are tuples, lists, sets, dict, strings')
-print(i,char)
-i = 20
-while i > 0:
-    print(f"Tick tock...{i} and {char} seconds left")
-    i -= 1
+for i,word in enumerate('iteratables are tuples, lists, sets, dict, strings'):
+	print(f"{i} : {char}")
+	i = 20
+	while i > 0:
+		print(f"Tick tock...{i} and {char} seconds left")
+    	i -= 1
 ```
 
 ### Nonlocal keyword
@@ -159,8 +159,12 @@ print(externalImports)
 Find substrings with regex functionality in strings annd counting substrings or regexs:
 ```python
 import re
+pattern = '[0-9]'
 res = sum(1 for _ in re.finditer("", r.text)) #, re.IGNORECASE))
 res = len(re.findall('', string))#, re.IGNORECASE))
+res = [re.sub(pattern, '', i) for i in list] 
+
+
 ```
 
 ### Boolean
@@ -174,15 +178,32 @@ print("Short circuiting using or with is_ternary and is_short_circuiting being T
 print("is keyword check the value in memory is the same")
 ```
 
-# Hacker related by package
+# Some Modules and Packages for Hackers
 ### requests
 ```python
 import requests
+
+r = requests.get('http://localhost')
+r.status_code
+r.text
+r.headers
+r.encoding
+r.json
 ```
 ### socket
 ```python
+
 import socket
 
+ip_address = "127.0.0.1"
+port = 1337
+buffer_size = 1024
+
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+s.connect((ip_address, port))
+print(s.recv(buffer_size).decode())
+s.send("Message".encode())
+s.close()
 ```
 ### pwntools
 ```python

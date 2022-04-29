@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Web-Hacking/Concepts/html101.md.md",
+            "file": "Coding-Scripting/Powershell/useful_powershell.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Web-Hacking/Concepts/html101.md.md",
+                "file": "Coding-Scripting/Powershell/useful_powershell.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +88,15 @@
   },
   "active": "76e76c77206e4eb4",
   "lastOpenFiles": [
+    "Coding-Scripting/Powershell/useful_powershell.md",
+    "Coding-Scripting/Powershell/basic_Powershell.md",
+    "Packet-Analysis/Wireshark/Wireshark.md",
+    "README.md",
+    "Coding-Scripting/Powershell/psVerbs.md",
+    "Coding-Scripting/Python/useful_python3.md",
+    "Coding-Scripting/Visual-Basic/useful_Visual_Basic.md",
     "Web-Hacking/Concepts/html101.md.md",
     "Web-Hacking/SQLi/sqli.md",
-    "Scripting/Python/useful_python3.md",
-    "Scripting/Windows_VB_scripting.md",
-    "Password-Attacks/Hydra.md",
-    "Linux/linuxCMD/modulesCMD.md",
-    "Scripting/Bash/useful_bash.md",
-    "Packet-Analysis/Brim/Brim.md",
-    "Post-Exploitation/Mimikatz.md",
-    "notesforlater.md"
+    "Password-Attacks/Hydra.md"
   ]
 }

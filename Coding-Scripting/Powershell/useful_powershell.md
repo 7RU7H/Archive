@@ -1,39 +1,13 @@
-# Just useful powershell
-This is a condensed and *Hacking Themed* resource for powershell. Powershell is a massive and my humble opinion a *weird* object-oriented programming language. Windows and Powershell are not case-sensitive, but a *stardard* readability is to use upper-case first letter - I suggest not unless you need to present your work(use a script to change it to *standard*). Every command has a cmdlet and combinations of `verb-noun` to construct command that would be too numerous to list. So to define the theme of this document is oneliners catergorised by use(*just in case at some point they maybe some exceptions like two oneliners that need to be seperate executions* **THESE WILL HAVE A `# TASKNAME Command # THEN Command`**). I am in the process of making this better for my own use:
+# Useful Powershell
+This is a condensed and *Hacking themed* resource for powershell. Powershell is a massive and my humble opinion a *weird* object-oriented programming language. 
+Windows and Powershell are not case-sensitive, but a *stardard* readability is to use upper-case first letter - I suggest not unless you need to present your work(use a script to change it to *standard*). Every command has a cmdlet and combinations of `verb-noun` to construct command that would be too numerous to list. So to define the theme of this document is oneliners catergorised by use(*just in case at some point they maybe some exceptions like two oneliners that need to be seperate executions* **THESE WILL HAVE A `# TASKNAME Command # THEN Command`**). I am in the process of making this better for my own use:
 1. Adding aliases that I might want to use instead of full command
 2. Making the comments defining explaining a better layout
-
-## Basics
-
-```powershell
-$varOne = "power"
-$varTwo = "shell"
-$varOne.GetType()
-[int]$varOne 	#type conver
-$Error 			#contains an array of error objects.
-$Host 			#contains information about the current hosting application.
-$Profile 		#contains the path to the current user profile for PowerShell.
-$PID  			#contains the process ID of current PowerShell session.
-$PSUICulture  	#contains the UI culture or the regional language of the user interface.
-$NULL  			#contains the value of NULL.
-$False 			#contains the value of False.
-$True 			#contains the value of True.
-$cmdletArray = "Start", "Stop", "Read", "Write", "New", "Out"
-operators = "-eq", "-ne", "-le", "-ge" , "-gt", "-lt", "-and"
-# c equivalents: ==, !=, <=, >=, >, <, &&, 
-# -is is a boolean operator
-# | is pipe operator like bash
-
-# Light-weight Commands - No output formatting, parsing or error presentation
-# Piped OBJECT from one cmdlet to the next, like Bash BUT OBJECTS NOT OUTPUT!
-# Add all formatting, etc at the end of the chain
-```
 
 ## General
 ```powershell
 Get-Command              # list of powershell commands, BEWARE OF THE LISTS
 Get-Verb				 # list all verbs
-Get-Noun				 # list all nouns
 Get-Help                 # help for specific cmdlet
 Get-Help $Command-Name
 Get-Command Verb-* 
@@ -43,6 +17,7 @@ Get-Command -Type Cmdlets | Measure-Object -Sum -ErrorAction SilentlyContinue
 Get-Alias		
 Set-Alias				 	# Make commands
 Set-Alias -Name helpmeplease -Value Get-help
+
 ```
 
 ## Providers and Modules
@@ -175,6 +150,7 @@ Set-NetFirewallProfile -Profile Domain, Public, Private -Enabled False          
 
 ## Active Directory
 ```powershell
+# Certain Privileges!
 Get-ADUser -Filter *
 Get-ADUser -Filter * -SearchBase "CN=Admin,OU=THM,DC=redteam,DC=com" # CN=Common Name, DC=Domain Component, OU=OrganizationalUnitName, et
 Get-ADForest | Select-Object Domains

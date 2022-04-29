@@ -1,9 +1,6 @@
 # Powershell Verbs
 
-A listing of powershell verbs, to grep and lookup.
-
-**TODO Find where this was from to reference it**
-.
+A listing of powershell verbs, to grep and lookup. [Reference](https://docs.microsoft.com/en-us/powershell/scripting/developer/cmdlet/approved-verbs-for-windows-powershell-commands?view=powershell-7.2)
 
 ## Common Verbs
 PowerShell uses the System.Management.Automation.VerbsCommon enumeration class to define generic actions that can apply to almost any cmdlet. The following table lists most of the defined verbs

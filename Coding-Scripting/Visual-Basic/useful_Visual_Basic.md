@@ -1,4 +1,4 @@
-# windowsVBscripting
+# Useful Visual Basic
 
 #  VB script shell:
 ```vb
