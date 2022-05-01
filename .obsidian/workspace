@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Coding-Scripting/Powershell/useful_powershell.md",
+            "file": "Networks/shells.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Coding-Scripting/Powershell/useful_powershell.md",
+                "file": "Networks/shells.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +88,15 @@
   },
   "active": "76e76c77206e4eb4",
   "lastOpenFiles": [
-    "Coding-Scripting/Powershell/useful_powershell.md",
-    "Coding-Scripting/Powershell/basic_Powershell.md",
-    "Packet-Analysis/Wireshark/Wireshark.md",
+    "Networks/shells.md",
+    "Useful-Software/netcat.md",
+    "Useful-Software/socat.md",
+    "PrivEsc/linuxPrivEsc.md",
+    "Vulnerable-Functions/Javascript.md",
+    "Web-Hacking/API/API-Fuzzing.md",
     "README.md",
-    "Coding-Scripting/Powershell/psVerbs.md",
-    "Coding-Scripting/Python/useful_python3.md",
-    "Coding-Scripting/Visual-Basic/useful_Visual_Basic.md",
-    "Web-Hacking/Concepts/html101.md.md",
-    "Web-Hacking/SQLi/sqli.md",
-    "Password-Attacks/Hydra.md"
+    "Untitled 1.md",
+    "Web-Hacking/API/API-Shells.md",
+    "PrivEsc/windowsPrivEsc.md"
   ]
 }
