@@ -134,7 +134,7 @@ Set-Location 		# choose a directory for context to operate
 # logalways       0 
 # FOR EXAMPLE:
 Get-FileHash -Path ... -Algorithm
-CertUil -hashfile [FILE] MD5|SHA256|SHA512
+CertUtil -hashfile [FILE] MD5|SHA256|SHA512
 ## Finding ##
 Get-ChildItem # Aliased ls, dir, gci
 Get-ChildItem -Hidden
@@ -158,6 +158,7 @@ Get-CimInstance -className win32_process | where-object {$_.ProcessId -eq proces
 # Scheduled Tasks
 schtasks
 schtasks /query /fo /LIST /v
+Get-ScheduledTask [-Taskname] [-TaskPath]
 
 ##  Sofware ##
 # Change executionpolicy

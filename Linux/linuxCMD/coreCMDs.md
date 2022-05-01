@@ -55,6 +55,10 @@ diff -c context format
 diff -u unified format
 diff -s 		report indentical files
 
+doas # Sudo alternative
+doas -s	# shell with root prompt
+
+
 echo 	write output at current location
 echo "stringwith whitespace you want to remove and append to a file" | tr -d " " >> FILE 
 
@@ -138,7 +142,9 @@ ls -tu	sort by atime
 ls -r	reverse sort order
 ls --full-time	list full data and time
 ls --group-directories-first
-lscpu for cpu info
+
+lspci  # for hardware info
+lscpu  # for cpu info
 
 ldd	print shared libraries
 

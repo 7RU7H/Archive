@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Networks/shells.md",
+            "file": "Hacker-Distros/Kali/Untitled.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Networks/shells.md",
+                "file": "Hacker-Distros/Kali/Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +88,15 @@
   },
   "active": "76e76c77206e4eb4",
   "lastOpenFiles": [
-    "Networks/shells.md",
-    "Useful-Software/netcat.md",
-    "Useful-Software/socat.md",
-    "PrivEsc/linuxPrivEsc.md",
-    "Vulnerable-Functions/Javascript.md",
-    "Web-Hacking/API/API-Fuzzing.md",
-    "README.md",
-    "Untitled 1.md",
-    "Web-Hacking/API/API-Shells.md",
-    "PrivEsc/windowsPrivEsc.md"
+    "Hacker-Distros/Kali/Untitled.md",
+    "Linux/linuxCMD/coreCMDs.md",
+    "Linux/linuxCMD/grepAllTheThings.md",
+    "Coding-Scripting/Powershell/useful_powershell.md",
+    "Networks/proxies.md",
+    "Networks/networkTroubleshooting.md",
+    "Networks/networkConnections.md",
+    "Networks/networkTheory/subnetMasksDictionary.md",
+    "Networks/networkTheory/networkTechnologies.md",
+    "Networks/networkTheory/networkProtocols.md"
   ]
 }

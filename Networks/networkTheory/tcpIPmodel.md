@@ -1,8 +1,7 @@
 # TCP/IP model
 
 Compared to OSI, TCP/IP model's primary goal is to classify communication.
-Roughly, Between applications, between machines, between networks and between internal network machines.
-Assumes the protocols used are prodominantly agnostic to the physical instantiation of data.
+Roughly, between applications, between machines, between networks and between internal network machines. It assumes the protocols used are prodominantly agnostic to the physical instantiation of data.
 
 
 Layer 4: 	Application Layer	Detirmines which rules of connection uses proccess-to-proccess: Which Protocol FTP, SMTP, HTTP (analogous to OSI: Application, Presentation and Session layers)

