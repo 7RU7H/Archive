@@ -28,7 +28,8 @@ ps ajxf                 # Process tree
 env                     # Show environment variables
 file /sbin/init         # Is asymbolic link to /lib/systemd/systemd OR..
 history                 # Command history
-ifconfig                # Network interfaces
+ifconfig                # Legacy Network interfaces
+ip a					# Network interfaces
 ip route                # Network route
 netstat -a              # All listening port and connections
 netstat -at -au         # All TCP or UDP connections

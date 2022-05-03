@@ -343,10 +343,6 @@ MySQL and MSSQL
 ',INPUT=sqlite_version(),INPUT='
 ```
 
-
-
-
-
 ## BURP & SQLMap
 Catch request -> right-click -> Save item
 sqlmap -r filename

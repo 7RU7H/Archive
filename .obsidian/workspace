@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Hacker-Distros/Kali/Untitled.md",
+            "file": "Web-Hacking/SQLi/sqli.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Hacker-Distros/Kali/Untitled.md",
+                "file": "Web-Hacking/SQLi/sqli.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +88,15 @@
   },
   "active": "76e76c77206e4eb4",
   "lastOpenFiles": [
-    "Hacker-Distros/Kali/Untitled.md",
-    "Linux/linuxCMD/coreCMDs.md",
-    "Linux/linuxCMD/grepAllTheThings.md",
-    "Coding-Scripting/Powershell/useful_powershell.md",
-    "Networks/proxies.md",
-    "Networks/networkTroubleshooting.md",
+    "Web-Hacking/SQLi/sqli.md",
+    "Web-Hacking/SQLi/mysql.md",
+    "idiotChecklistServerside.md",
+    "smbCS.md",
     "Networks/networkConnections.md",
-    "Networks/networkTheory/subnetMasksDictionary.md",
-    "Networks/networkTheory/networkTechnologies.md",
-    "Networks/networkTheory/networkProtocols.md"
+    "PrivEsc/Linux/linuxPrivEsc.md",
+    "PrivEsc/Linux/enumLinuxDirectories.md",
+    "Linux/linuxNetworking.md",
+    "Linux/linuxNetworkServices.md",
+    "Linux/linuxConcepts.md"
   ]
 }

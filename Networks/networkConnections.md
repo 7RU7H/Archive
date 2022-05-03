@@ -8,34 +8,23 @@ Allow local machines to run network service without exposing them remotely.
 
 Connect to those port with protocols:
 
-## Operational definitions
+##  TELNET
+Generall port 23, Telnet is cleartext and unsecure!
 
-MAIL delivery:
-
-mail user agent
-mail server agent
-mail transfer agent
-mail delivery agent
-simple mail transfer protocol
-MUA -(smtp)-> MSA/MTA -> SMTP -> MTA/MDA -(POP3/IMAP)-> MUA
-
-
-
-TELNET
-//generall port 23
-//Telnet is cleartext and unsecure!
+```bash
 telnet ip
-THEN
+# THEN
 GET / HTTP/1.1 
-OR
+# OR
 GET /page.html HTTP/1.1
-Will get telnet get you cleartext info on servers with exposed telnet ports - default is 23
+#Will get telnet get you cleartext info on servers with exposed telnet ports
+```
 
-FTP
-//generally port 20 for data
-//generally port 21 for commands
-//file transfer protocol
-//can connect similar with telnet client with port number!
+## FTP
+File transfer protocol, client-server model
+1. Port 20 for data
+2. Port 21 for commands 
+3. can connect similar with telnet client with port number!
 ```
 wget -r ftp://[username]:[password]@[ip]/
 ftp ip
@@ -56,8 +45,8 @@ put file	upload files!
 ```
 
 
-SSH
-//generally port 22
+## SSH
+generally port 22
 ```
 -i	access with private key
 -L	local_port:remote_address:remote_port # for local port fowarding
@@ -66,7 +55,12 @@ SSH
 -N	Do not execute a remote command. Useful in for just forwardin ports
 -p      port
 ```
-STMP
+
+## SFTP - submodule of ssh
+Secure File transfer protocol port 22 
+
+
+SMTP
 //generally 25
 //simple mail transfer protocol
 use telnet
@@ -105,16 +99,18 @@ sudo mount -o port=1234 -t nfs $IP:/dir /tmp/local
 umount ip:/local/file/path			#because why would you need the "n"
 ```
 
-NBT # SMBCLIENT !! 
-//NetBIOS over TCP/IP (NetBT)			#Windows name resolution
-//default ports/protocols
+## NBT - SMB
+Server Message Block protocol uses a client-server model. Cliet uses `smbclient` see [smbclientCheatSheet](smbCS)
+SMB oringally ran on top of NetBIOS using port 139. NetBIOS is an older trnasport layer that allows Windows computer to communicate on the same network.
+Later versions of SMB(after Windows 2000) use port 445 on top of a TCP stack, TCP allows for internet communication.
+NetBIOS over TCP/IP (NetBT)			#Windows name resolution
+135(TCP) msrpc
 137(TCP/UDP)
 138(UDP)
-139(TCP)
-445
+139(TCP) netbios-ssn
+445(TCP) microsoft-ds
 
-
-IMAP
+## IMAP
 //generally 143
 
 HTTPS
