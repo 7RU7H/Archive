@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Web-Hacking/SQLi/sqli.md",
+            "file": "Networks/shells.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Web-Hacking/SQLi/sqli.md",
+                "file": "Networks/shells.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +88,15 @@
   },
   "active": "76e76c77206e4eb4",
   "lastOpenFiles": [
-    "Web-Hacking/SQLi/sqli.md",
-    "Web-Hacking/SQLi/mysql.md",
-    "idiotChecklistServerside.md",
-    "smbCS.md",
-    "Networks/networkConnections.md",
+    "Networks/shells.md",
+    "notesforlater.md",
     "PrivEsc/Linux/linuxPrivEsc.md",
     "PrivEsc/Linux/enumLinuxDirectories.md",
-    "Linux/linuxNetworking.md",
-    "Linux/linuxNetworkServices.md",
-    "Linux/linuxConcepts.md"
+    "smbCS.md",
+    "Networks/networkConnections.md",
+    "ffuf.md",
+    "Web-Hacking/SQLi/sqli.md",
+    "Web-Hacking/SQLi/mysql.md",
+    "idiotChecklistServerside.md"
   ]
 }
