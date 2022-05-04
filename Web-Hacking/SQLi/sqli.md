@@ -2,10 +2,16 @@
 
 An ode to SQLI:
 ```poem
-sqlin' da morning
+sqlin' da morning 
 sqlin' your evening
-database sleep pleasing
-SELECT star password stealing
+admin or one plus one equals two
+single quote for strings
+enum db char-by-char for those correct
+tingles as the database query dumps things
+comments breaking stuff on internet
+admin password from table * select
+database asleep pleasing
+SELECT star FROM passwords stealing
 by 7ru7h
 ```
 
@@ -13,7 +19,7 @@ by 7ru7h
 
 SQL, "sequel" = Structured Query Language
 
-Databases maintained on database server as relational or non-relational databases interacted with query-based languages.
+Databases maintained on database server as relational or non-relational databases interacted with query-based languages. Personally Identifiable Information(Pll) is defined as information that be used to distinguish or trace identity is often stored in SQL database.
 
 ##### Primary and Foreign Keys
 
@@ -21,6 +27,7 @@ Primary Key a specific choice of a minimal set of columns that uniquely specify 
 Foreign Key constrait to prevent actions that would destory links between tables, it s a field(s) in one table that refer to the Primary key in another table. 
 Foreign Key is the child table and the primary key is the Parent table. For example:
 
+```sql
 cheese\_table
 ID	CHEESE		TASTE
 0	Yellow		good
@@ -34,16 +41,17 @@ ID	CHEESEID 	PLACE
 2	2		melted
 
 THE CHEESEID IS THE ID FROM THE CHEESE TABLE
-
+```
 
 
 ##### Relational
-
+```sql
 ID 	TYPE			DETAIL
 0	Relational		Columns represent the attribute and the rows are the "tuple" or record of the data
-	MySQL
-	Microsoft SQL server
-	PostgreSQL
+```
+MySQL
+Microsoft SQL server
+PostgreSQL
 
 
 ##### Non-Relational
@@ -68,8 +76,6 @@ https://github.com/payloadbox/sql-injection-payload-list
 https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/SQL%20Injection
 
 ## Methodology
-
-
 #### Character and Command toolset
 		
 Comments
@@ -112,7 +118,9 @@ DELETE FROM %databasename% WHERE %name%='name';
 WILDCARD = " % "
 statement closure = " ; "
 
-show tabels
+SHOW DATABASE;
+
+USE $dbname
 
 ```
 [codeacademy](https://www.codecademy.com/article/sql-commands)

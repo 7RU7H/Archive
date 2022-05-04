@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Networks/shells.md",
+            "file": "PrivEsc/Linux/linuxPrivEsc.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Networks/shells.md",
+                "file": "PrivEsc/Linux/linuxPrivEsc.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +88,15 @@
   },
   "active": "76e76c77206e4eb4",
   "lastOpenFiles": [
-    "Networks/shells.md",
-    "notesforlater.md",
     "PrivEsc/Linux/linuxPrivEsc.md",
+    "Networks/sshTunneling-Port-Forwarding.md",
+    "Networks/shells.md",
+    "Vulnerable-Functions/PHP.md",
     "PrivEsc/Linux/enumLinuxDirectories.md",
-    "smbCS.md",
-    "Networks/networkConnections.md",
-    "ffuf.md",
-    "Web-Hacking/SQLi/sqli.md",
-    "Web-Hacking/SQLi/mysql.md",
-    "idiotChecklistServerside.md"
+    "evil-winrmCS.md",
+    "Useful-Software/responderCS.md",
+    "notesforlater.md",
+    "Web-Hacking/OWASP-top-whatever-historic-definitions.md",
+    "Web-Hacking/SQLi/sqli.md"
   ]
 }
