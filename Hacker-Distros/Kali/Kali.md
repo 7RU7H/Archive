@@ -19,6 +19,14 @@ Offsec sponsers tool curating a vast collection of great tools for the long term
 
 ## Installation
 
+## Post-Installation
+
+If for some reason use need Python2: [EoL Python ](https://www.kali.org/docs/general-use/using-eol-python-versions/)
+
+
+
+```
+
 ## Configuration
 
 ## Kali-Unique Linux 
