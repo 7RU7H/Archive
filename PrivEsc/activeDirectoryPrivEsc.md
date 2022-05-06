@@ -4,6 +4,10 @@
 
 ## Tools
 
+#### SMB enumeration tools
+
+See [SMB tool](SMB/smbCS)
+
 #### Bloodhound and Sharphound
 
 [Sharphound](https://github.com/BloodHoundAD/BloodHound/tree/master/Collectors) is the collector that gathers all the information abnout the 
@@ -20,10 +24,7 @@ like DCsyncs, Usernames, Trust
 Rubeus, Seatbelt, Mimikatz...
 
 #### Hashcat/JtR
-
-
 `hashcat -m 13100 -a 0 hash.txt rockyou.txt`
-
 
 #### Impacket
 

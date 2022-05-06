@@ -68,7 +68,7 @@ use telnet
 WHOIS 
 //generally 48
 
-DNS
+# DNS
 //default 53
 
 TFTP
@@ -88,7 +88,7 @@ STAT
 LIST	list all messUSER 
 RETR	return a message
 
-NFS:
+# NFS
 //On both 111 2049
 //Use client-server model
 //Shared directory, mount those shares!

@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "notesforlater.md",
+            "file": "Recon/SMB/smbCS.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notesforlater.md",
+                "file": "Recon/SMB/smbCS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +88,15 @@
   },
   "active": "76e76c77206e4eb4",
   "lastOpenFiles": [
-    "notesforlater.md",
-    "Hacker-Distros/Kali/Kali.md",
-    "Coding-Scripting/Bash/useful_bash.md",
+    "Recon/SMB/smbCS.md",
+    "PrivEsc/activeDirectoryPrivEsc.md",
+    "PrivEsc/windowsPrivEsc.md",
+    "Recon/SMB/rcpclientCS.md",
+    "Recon/DNS/DNS.md",
     "Web-Hacking/Wordpress/wordpress.md",
     "Networks/networkConnections.md",
-    "Packet-Analysis/Wireshark/Wireshark.md",
-    "PrivEsc/Linux/linuxPrivEsc.md",
-    "Networks/sshTunneling-Port-Forwarding.md",
-    "Networks/shells.md",
-    "Vulnerable-Functions/PHP.md"
+    "Linux/linuxNetworking.md",
+    "Recon/SMTP/smtpCS.md",
+    "notesforlater.md"
   ]
 }

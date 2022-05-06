@@ -17,11 +17,11 @@ nbtscan -r $IP/$CIDR
 ```
 
 ## RPCclient
-Query MS-RPC for  commands to try and estanblish a null session
+Query MS-RPC for commands to try and estanblish a null session
 ```bash
 rpcclient -U "" -N $IP
 ```
-
+See enumeration commands [rcpclientCS](SMB/rpcclient)
 ## Smbget
 Recursively download an entire share
 ```bash

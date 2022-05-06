@@ -1,0 +1,22 @@
+# SMTP
+
+## Telenet
+```bash
+telnet $IP 25
+vrfy $useremail
+```
+Code 250,251,252 means accepted and user account is valid; code 550 means invalid user.
+
+## Metasploit
+```bash
+use auxiliary/scanner/smtp/smtp_enum
+msf auxiliary(smtp_enum) > set rhosts $IP
+msf auxiliary(smtp_enum) > set rport 25
+msf auxiliary(smtp_enum) > set USER_FILE /usr/
+msf auxiliary(smtp_enum) > exploit
+```
+
+
+
+## References
+[hackingarticals](https://www.hackingarticles.in/4-ways-smtp-enumeration/)

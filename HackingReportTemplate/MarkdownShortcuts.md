@@ -17,3 +17,8 @@ Toggle a drop down
 ```toggle
 
 ```
+
+Table Template
+columnOne  | columnN
+--- | ---
+row |
