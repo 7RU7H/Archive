@@ -1,4 +1,13 @@
-# Github Security
+# Github
+
+## Git not reording pushes?
+[Stackoveranswer](https://stackoverflow.com/questions/15289768/github-commits-arent-recorded-in-the-your-contributions-calendar#19384175)
+```bash
+git config --global user.email youremail@email.com 
+```
+
+
+## Github Security
 
 Password got included in some field or log file and you are already panicing. 
 As soon as possible:
@@ -17,4 +26,5 @@ git rebase - i <COMMIT_HASH>~1
 git rebase --continue
 git push --force
 ```
+
 

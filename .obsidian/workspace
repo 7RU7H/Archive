@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "76e76c77206e4eb4",
+        "id": "b9387c90408c98c1",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Recon/SMB/smbCS.md",
+            "file": "Useful-Software/github-guide.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Recon/SMB/smbCS.md",
+                "file": "Useful-Software/github-guide.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -86,17 +86,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "76e76c77206e4eb4",
+  "active": "b9387c90408c98c1",
   "lastOpenFiles": [
+    "Useful-Software/github-guide.md",
     "Recon/SMB/smbCS.md",
-    "PrivEsc/activeDirectoryPrivEsc.md",
-    "PrivEsc/windowsPrivEsc.md",
-    "Recon/SMB/rcpclientCS.md",
-    "Recon/DNS/DNS.md",
-    "Web-Hacking/Wordpress/wordpress.md",
-    "Networks/networkConnections.md",
-    "Linux/linuxNetworking.md",
     "Recon/SMTP/smtpCS.md",
-    "notesforlater.md"
+    "Web-Hacking/LFI.md",
+    "README.md",
+    "Networks/networkConnections.md",
+    "todoList.md",
+    "PHP.md",
+    "Web-Hacking/SQLi/mysql.md",
+    "Web-Hacking/SQLi/sqli.md"
   ]
 }

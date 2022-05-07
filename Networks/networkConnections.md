@@ -154,8 +154,12 @@ SNMPSSH-TRAP
 //dafault 5162 	
 //SNMP Notification over SSH Transport Model 	
 
-Burp Proxy
-//default port 8000
+## Pando-pub
+7680/tcp
+Legacy application [Pando](https://en.wikipedia.org/wiki/Pando_(application)) BitTorrent client and uses the BitTorrent protocol to transfer files.
+
+## Burp Proxy
+default port 8000
 
 TOMCAT PROXY
 //default port 8009

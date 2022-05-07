@@ -2,6 +2,10 @@
 
 ## Introduction
 [Free 25 API requests per day](https://wpscan.com/pricing)
+
+## What to look for
+/wp-config/
+
 ## WPscan
 
 ```bash
