@@ -161,8 +161,12 @@ Legacy application [Pando](https://en.wikipedia.org/wiki/Pando_(application)) Bi
 ## Burp Proxy
 default port 8000
 
-TOMCAT PROXY
-//default port 8009
+## TOMCAT PROXY
+default port 8009
 
-HTTP Alternate
-//default 8080
+## Apache JServ Protocol
+default  8009
+
+
+## HTTP Alternate
+default 8080
