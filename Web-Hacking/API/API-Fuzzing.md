@@ -1,5 +1,7 @@
 # API Fuzzing
-Tools:
+**Key indicator that you should not bruteforce is rate limiting the /api/ route** 
+
+Tools:	
 1. Postman
 2. wfuzz
 3. fuff

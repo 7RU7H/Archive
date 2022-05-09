@@ -17,3 +17,5 @@ usermod -aG docker $USER
 docker pull kalilinux/kali-rolling
 docker run --tty --interactive kalilinux/kali-rolling /bin/bash
 ```
+
+[Docker setup of kali  for hackers check this article](https://www.pentestpartners.com/security-blog/docker-for-hackers-a-pen-testers-guide/)
