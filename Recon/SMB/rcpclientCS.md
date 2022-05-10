@@ -50,3 +50,7 @@ lsaenumprivsaccount $SID
 lsaremoveacctrights $SID SeCreateTokenPrivilege
 lsaenumprivsaccount $SID
 ```
+
+
+## References 
+[hacking-articles](https://www.hackingarticles.in/active-directory-enumeration-rpcclient/)

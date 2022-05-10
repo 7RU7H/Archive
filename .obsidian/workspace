@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Docker/DockerHacking.md",
+            "file": "Recon/SMB/rcpclientCS.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Docker/DockerHacking.md",
+                "file": "Recon/SMB/rcpclientCS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +88,15 @@
   },
   "active": "b9387c90408c98c1",
   "lastOpenFiles": [
-    "Docker/DockerHacking.md",
-    "Docker/IntroToDocker.md",
-    "Hardening/Hardening.md",
-    "Web-Hacking/Tomcat.md",
+    "Recon/SMB/rcpclientCS.md",
+    "Recon/SMB/smbCS.md",
+    "Web-Hacking/Javascript/NodeJS.md",
+    "Web-Hacking/Javascript/Javascript-Cookie-Abuse.md",
     "Java.md",
-    "PHP.md",
-    "Web-Hacking/ffuf.md",
-    "Networks/portKnocking.md",
-    "Web-Hacking/commandInjection.md",
-    "Web-Hacking/bypassingRateLimit.md"
+    "Networks/shells.md",
+    "Networks/proxies.md",
+    "Password-Attacks/Hydra.md",
+    "Cryptography/Cryptography101.md",
+    "Password-Attacks/passwordAttacks.md"
   ]
 }
