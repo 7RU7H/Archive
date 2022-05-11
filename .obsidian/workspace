@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Recon/SMB/rcpclientCS.md",
+            "file": "Web-Hacking/SSTI.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Recon/SMB/rcpclientCS.md",
+                "file": "Web-Hacking/SSTI.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +88,15 @@
   },
   "active": "b9387c90408c98c1",
   "lastOpenFiles": [
-    "Recon/SMB/rcpclientCS.md",
-    "Recon/SMB/smbCS.md",
-    "Web-Hacking/Javascript/NodeJS.md",
+    "Web-Hacking/SSTI.md",
+    "Hardening/Hardening.md",
+    "Wordlists.md",
+    "Web-Hacking/Haddix-Methodology-Digest/Application-Analysis.md",
     "Web-Hacking/Javascript/Javascript-Cookie-Abuse.md",
-    "Java.md",
-    "Networks/shells.md",
-    "Networks/proxies.md",
-    "Password-Attacks/Hydra.md",
-    "Cryptography/Cryptography101.md",
-    "Password-Attacks/passwordAttacks.md"
+    "Web-Hacking/Web-Hacking-Checklist.md",
+    "Web-Hacking/uploadVuln.md",
+    "Web-Hacking/commandInjection.md",
+    "evil-winrmCS.md",
+    "Recon/SMB/rcpclientCS.md"
   ]
 }
