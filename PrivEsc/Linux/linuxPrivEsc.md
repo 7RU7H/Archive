@@ -19,6 +19,11 @@ curl "https://github.com/diego-treitos/linux-smart-enumeration/releases/latest/d
 id                      # user and usergroup info
 ls -la                  # never use ls
 uname -a                # get system info # search for kernel exploits as last resort
+uname -ar  
+cat /etc/issue  
+cat /etc/*-release  
+cat /etc/lsb-release      # Debian based  
+cat /etc/redhat-release   # Redhat based
 sudo -V                 # version
 sudo id                 # get id of sudo
 visudo                  # sudo policy file

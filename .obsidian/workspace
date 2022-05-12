@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Web-Hacking/SSTI.md",
+            "file": "todoList.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Web-Hacking/SSTI.md",
+                "file": "todoList.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +88,15 @@
   },
   "active": "b9387c90408c98c1",
   "lastOpenFiles": [
-    "Web-Hacking/SSTI.md",
-    "Hardening/Hardening.md",
-    "Wordlists.md",
-    "Web-Hacking/Haddix-Methodology-Digest/Application-Analysis.md",
-    "Web-Hacking/Javascript/Javascript-Cookie-Abuse.md",
-    "Web-Hacking/Web-Hacking-Checklist.md",
-    "Web-Hacking/uploadVuln.md",
-    "Web-Hacking/commandInjection.md",
-    "evil-winrmCS.md",
-    "Recon/SMB/rcpclientCS.md"
+    "todoList.md",
+    "notesforlater.md",
+    "Foothold/shells.md",
+    "Useful-Software/useful_netcat.md",
+    "windowsFileTransfers.md",
+    "PrivEsc/Active-Directory/activeDirectoryPrivEsc.md",
+    "Recon/SNMP/snmpCS.md",
+    "Recon/SMTP/smtpCS.md",
+    "Recon/DNS/DNS.md",
+    "C2/intro2C2.md"
   ]
 }

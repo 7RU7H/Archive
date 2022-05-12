@@ -3,6 +3,7 @@
 ## Telenet
 ```bash
 telnet $IP 25
+nc -nv $IP 25
 vrfy $useremail
 ```
 Code 250,251,252 means accepted and user account is valid; code 550 means invalid user.

