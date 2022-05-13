@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "todoList.md",
+            "file": "impacket.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "todoList.md",
+                "file": "impacket.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +88,15 @@
   },
   "active": "b9387c90408c98c1",
   "lastOpenFiles": [
+    "impacket.md",
+    "Privilege-Escalation/Windows/windowsPrivEsc.md",
+    "Databases/MSSQL/mssql-hacking.md",
+    "Recon/SMB/smbCS.md",
+    "Recon/SMTP/smtpCS.md",
+    "Web-Hacking/Jenkins.md",
     "todoList.md",
     "notesforlater.md",
     "Foothold/shells.md",
-    "Useful-Software/useful_netcat.md",
-    "windowsFileTransfers.md",
-    "PrivEsc/Active-Directory/activeDirectoryPrivEsc.md",
-    "Recon/SNMP/snmpCS.md",
-    "Recon/SMTP/smtpCS.md",
-    "Recon/DNS/DNS.md",
-    "C2/intro2C2.md"
+    "Useful-Software/useful_netcat.md"
   ]
 }

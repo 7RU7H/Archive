@@ -21,7 +21,7 @@ Query MS-RPC for commands to try and estanblish a null session
 rpcclient -U "" -N $IP
 ```
 See enumeration commands [rcpclientCS](SMB/rpcclient)
-## Smbget
+## smbget
 Recursively download an entire share
 ```bash
 smbget -R smb://$IP/$share
@@ -96,7 +96,6 @@ nmap –p 445 --script smb-brute –script-args userdb=user-list.txt,passdb=pass
 ```
 
 ## Search msfconsole!
-
 
 
 ## References

@@ -12,7 +12,7 @@ https://github.com/rewardone/OSCPRepo
 Assimilate: at ftp
 https://github.com/pythonmaster41/Go-For-OSCP
 
-ffiuf/wfuzz 
+ffuf/wfuzz 
 httpx-toolkit
 https://github.com/frohoff/ysoserial
 JSON Web Tokens [https://jwt.io/](https://jwt.io/)
