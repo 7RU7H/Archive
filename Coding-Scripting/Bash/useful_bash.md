@@ -215,3 +215,11 @@ $(declare -p parametres; declare -f functions) # put code here run code"
 ssh remotehote "
 $(declare -p parametres; declare -f functions) # put code here run code"
 ```
+
+# Arguments and Usage
+```bash
+if [ "$#" -ne $ARGTOTAL ]; then
+	echo "Usage: $0 <excepted> <arguments>"
+	exit
+fi
+```

@@ -63,6 +63,8 @@ find / -type f -name config 2>/dev/null
 find / -type f -name "*.log" 2>/dev/null
 find . -type f 2>/dev/null             # for those id_rsas @rennox 
 
+cat * | grep -i passw*
+
 cat /etc/passwd                        # displays all users
 cat /etc/passwd | grep home            # show all real users!
 cat /etc/shells                        # displays all shells
@@ -181,7 +183,7 @@ sudo LD_LIBRARY_PATH=/tmp apache2
 Exploit-DB, Google, and GitHub  
 GTFOBINs  
 ```bash
-find / -type f -a \( -perm -u+s -o -perm -g+s \) -exec ls -l {} \; 2> /dev/null
+find / -type f -a \( -perm -u+s -o -perm -g+s \) -exec ls -l {} \; 2>/dev/null
 find / -type f -perm -u=s -exec -ls -ldb {} \; 2>/dev/null
 find / -type f -perm -04000 -ls 2>/dev/null
 ```

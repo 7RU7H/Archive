@@ -1,6 +1,9 @@
 # Core Linux Commands
 
 ```bash
+
+apropos $string 		# search by keyword manual descript
+
 (sha1,sha256,sha512,md5)sum 
 sha512sum file1 file2 file3 > tests.sha512
 sha512sum -c tests.sha512		check batch

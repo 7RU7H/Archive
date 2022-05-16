@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "impacket.md",
+            "file": "Linux/linuxCMD/coreCMDs.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "impacket.md",
+                "file": "Linux/linuxCMD/coreCMDs.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +88,15 @@
   },
   "active": "b9387c90408c98c1",
   "lastOpenFiles": [
-    "impacket.md",
-    "Privilege-Escalation/Windows/windowsPrivEsc.md",
-    "Databases/MSSQL/mssql-hacking.md",
+    "Linux/linuxCMD/coreCMDs.md",
+    "Coding-Scripting/Bash/useful_bash.md",
     "Recon/SMB/smbCS.md",
-    "Recon/SMTP/smtpCS.md",
-    "Web-Hacking/Jenkins.md",
-    "todoList.md",
-    "notesforlater.md",
-    "Foothold/shells.md",
-    "Useful-Software/useful_netcat.md"
+    "Recon/SMB/rcpclientCS.md",
+    "Useful-Software/Impacket/impacket.md",
+    "Useful-Software/github-guide.md",
+    "Useful-Software/useful_netcat.md",
+    "Password-Attacks/John-The-RipperCS.md",
+    "Password-Attacks/passwordAttacks.md",
+    "Privilege-Escalation/Linux/linuxPrivEsc.md"
   ]
 }
