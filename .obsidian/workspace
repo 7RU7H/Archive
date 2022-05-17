@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Linux/linuxCMD/coreCMDs.md",
+            "file": "NiktoCS.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/linuxCMD/coreCMDs.md",
+                "file": "NiktoCS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +88,15 @@
   },
   "active": "b9387c90408c98c1",
   "lastOpenFiles": [
-    "Linux/linuxCMD/coreCMDs.md",
+    "NiktoCS.md",
     "Coding-Scripting/Bash/useful_bash.md",
-    "Recon/SMB/smbCS.md",
-    "Recon/SMB/rcpclientCS.md",
+    "gobusterCS.md",
     "Useful-Software/Impacket/impacket.md",
-    "Useful-Software/github-guide.md",
-    "Useful-Software/useful_netcat.md",
-    "Password-Attacks/John-The-RipperCS.md",
-    "Password-Attacks/passwordAttacks.md",
-    "Privilege-Escalation/Linux/linuxPrivEsc.md"
+    "Recon/SMB/rcpclientCS.md",
+    "Recon/SMB/smbCS.md",
+    "Foothold/shells.md",
+    "HackingReportTemplate/ExecutiveSummary.md",
+    "HackingReportTemplate/TargetAddresses.md",
+    "HackingReportTemplate/ToolList.md"
   ]
 }

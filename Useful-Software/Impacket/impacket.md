@@ -15,3 +15,4 @@ mssqlclient.py -port $PORT $domain/$user@$IP -windows-auth
 psexec.py $username@$IP
 ```
 
+## smbexec

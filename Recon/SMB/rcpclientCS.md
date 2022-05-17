@@ -1,4 +1,6 @@
 # rpcclient Cheatsheet
+
+Windows 
 ```
 querydispinfo
 srvinfo
