@@ -127,7 +127,7 @@ sed 's/^/"/;s/$/"/' InputFile				# put double quotes around a stream
 sed -i '$ s/.$//' InputFile					# delete last character in file
 sed -i -e 's/[ \t]*//' Input				# remove tabs from a file
 sed -E 's/^([^,]*[,])//'					# remove after comma
-
+sed -i 's/^\#.*$//g' $FILE && sed -i '/^$/d' $FILE	# remove comments
 
 #### seq
 seq $int		# print sequence of "$int\n" 

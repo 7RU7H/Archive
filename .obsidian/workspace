@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "NiktoCS.md",
+            "file": "Web-Hacking/Content-Discovery/ffufCS.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "NiktoCS.md",
+                "file": "Web-Hacking/Content-Discovery/ffufCS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +88,15 @@
   },
   "active": "b9387c90408c98c1",
   "lastOpenFiles": [
-    "NiktoCS.md",
+    "Web-Hacking/Content-Discovery/ffufCS.md",
+    "Linux/linuxCMD/modulesCMD.md",
+    "Linux/linuxCMD/coreCMDs.md",
+    "Exploitation/Binary-Exploitation/Notes.md",
+    "SELinux.md",
     "Coding-Scripting/Bash/useful_bash.md",
-    "gobusterCS.md",
-    "Useful-Software/Impacket/impacket.md",
-    "Recon/SMB/rcpclientCS.md",
-    "Recon/SMB/smbCS.md",
-    "Foothold/shells.md",
-    "HackingReportTemplate/ExecutiveSummary.md",
-    "HackingReportTemplate/TargetAddresses.md",
-    "HackingReportTemplate/ToolList.md"
+    "Web-Hacking/Walking-Web-Applications/Web-Hacking-Checklist.md",
+    "Password-Attacks/Hydra.md",
+    "Web-Hacking/SSTI.md",
+    "Web-Hacking/Web-Analysis/NiktoCS.md"
   ]
 }

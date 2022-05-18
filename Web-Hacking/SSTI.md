@@ -39,6 +39,14 @@ Accept | Error
 --- | ---
 Mako | Unknown
 
+```bash
+${7*7}
+{{7*7}}
+a{*comment*}b
+{{7*'7'}}
+${"z".join("ab")}
+```
+
 Some other payloads
 ```
 ${}
@@ -57,3 +65,8 @@ ${7*7}
 
 ## Payloads
 [PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings//tree/master/Server Side Template Injection)
+
+## References
+
+[flask/jinja2](https://medium.com/@nyomanpradipta120/ssti-in-flask-jinja2-20b068fdaeee)
+[pequalsnp](https://pequalsnp-team.github.io/cheatsheet/flask-jinja2-ssti)

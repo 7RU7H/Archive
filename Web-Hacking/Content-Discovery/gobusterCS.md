@@ -23,3 +23,5 @@ Vhost mode
 ```bash
 gobuster vhost -u http://example.com -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt
 ```
+
+## References
