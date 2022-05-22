@@ -9,7 +9,7 @@
 ## WPscan
 
 ```bash
-wpscan --url -e --api-token $APIKEY
+wpscan --url -e --api-token $APIKEY # -o filename
 ```
 
 ```bash

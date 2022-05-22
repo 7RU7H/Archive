@@ -342,6 +342,12 @@ Nice links:
 [Common One Liners by Frizb](https://github.com/frizb/MSF-Venom-Cheatsheet)
 [six2dex's pentestbook](https://pentestbook.six2dez.com/exploitation/payloads)
 
+Staged | Stager
+--- | ---
+shell_reverse_tcp | shell/reverse_tcp
+
+Staged payloads are compatible with nc because they do not require the payload from msfconsole after the stager payload is executed on victim host.
+
 MSFvemon 101
 ```bash
 msfvenom -h # help
@@ -379,3 +385,17 @@ nc -lvnp 9090
 ```
 
 [lanmaster](https://www.lanmaster53.com/2011/05/7-linux-shells-using-built-in-tools/)
+
+
+## References
+
+[hackingarticles](https://www.hackingarticles.in/msfvenom-cheatsheet-windows-exploitation/)
+[lanmaster](https://www.lanmaster53.com/2011/05/7-linux-shells-using-built-in-tools/)
+[The great g0tmi1k's payload creator](https://github.com/g0tmi1k/msfpc)
+[Common One Liners by Frizb](https://github.com/frizb/MSF-Venom-Cheatsheet)
+[six2dex's pentestbook](https://pentestbook.six2dez.com/exploitation/payloads)
+[git](https://github.com/Hackplayers/evil-winrm)
+[PayloadAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md)
+[revshells](https://www.revshells.com/).
+[highoncoffee](https://highon.coffee/blog/reverse-shell-cheat-sheet/)
+[windows php](https://github.com/Dhayalanb/windows-php-reverse-shell/blob/master/Reverse%20Shell.php)

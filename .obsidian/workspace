@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "b9387c90408c98c1",
+        "id": "60a8a3e49c53a7c4",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Web-Hacking/Content-Discovery/ffufCS.md",
+            "file": "Battlegrounds.md",
             "mode": "source"
           }
         }
@@ -52,7 +52,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 217
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -68,13 +68,13 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Web-Hacking/Content-Discovery/ffufCS.md",
+                "file": "Battlegrounds.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
-                "backlinkCollapsed": false,
+                "backlinkCollapsed": true,
                 "unlinkedCollapsed": true
               }
             }
@@ -86,17 +86,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "b9387c90408c98c1",
+  "active": "60a8a3e49c53a7c4",
   "lastOpenFiles": [
-    "Web-Hacking/Content-Discovery/ffufCS.md",
-    "Linux/linuxCMD/modulesCMD.md",
-    "Linux/linuxCMD/coreCMDs.md",
-    "Exploitation/Binary-Exploitation/Notes.md",
-    "SELinux.md",
-    "Coding-Scripting/Bash/useful_bash.md",
-    "Web-Hacking/Walking-Web-Applications/Web-Hacking-Checklist.md",
-    "Password-Attacks/Hydra.md",
-    "Web-Hacking/SSTI.md",
-    "Web-Hacking/Web-Analysis/NiktoCS.md"
+    "Battlegrounds.md",
+    "Hardening/Hardening.md",
+    "CVEs/shellshocked.md",
+    "CVEs/log4J.md",
+    "creating-Vulnerable-VMs.md",
+    "Recon/Web-Analysis/NiktoCS.md",
+    "Virtual-Machines/virtual-machines.md",
+    "Web-Hacking/CMS/Wordpress/wordpress.md",
+    "Networks/networkConnections.md",
+    "tcpdumpCS.md"
   ]
 }

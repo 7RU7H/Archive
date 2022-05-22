@@ -113,6 +113,10 @@ NetBIOS over TCP/IP (NetBT)			#Windows name resolution
 ## IMAP
 //generally 143
 
+## LDAP
+default port 389
+
+
 ## HTTPS
 //internet messaging access protocol
 //default port 443
