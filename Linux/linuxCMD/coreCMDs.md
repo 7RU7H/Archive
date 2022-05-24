@@ -121,9 +121,12 @@ id		user id
 ln		create hardlink beetween files
 ln -s 		create softlink between files
 
-ls 	list directory
-ls -l	list long formatting file wrx, filesize ... [filename] for specific file info
+ls 		list directory
+ls -l	list long formatting file wrx, filesize ... [filename] 
+
+# for specific file info
 ls -a	list all files including dotfiles
+ls -a1 	list all on one line
 ls -A	list all file including double dotfiles
 ls -la / ... Look for hidden files under system root
 ls -s	list allocated blocs
@@ -166,8 +169,12 @@ mv * dir	move all files to dir!
 
 netstat		list any network activity on current system
 
-ps/kill		process
-pwd		print working directory
+ps/		# process
+ps -aef --forest # sacii art process tree
+ps -aux # -a - all with tty except session leaders; -u  -user orientated format; -x processes without controlling ttys
+
+
+pwd		# print working directory
 
 
 reset		reset shell
@@ -177,8 +184,8 @@ rm 		remove file or folder, directories require -R switch: "rm -R dir"
 
 service		initialise services present in /etc/init.d
 sleep		good for linux system on network for the hanging of connection
-ss		socket statistic (netstat alternative)
-stat		file/file system's status
+ss		 	# socket statistic (netstat alternative)
+stat		# file/file system's status
 
 sudo -l	LISTs commands you are able to with an account! VERY USEFUL
 sudo -i	run a login shell as the target user

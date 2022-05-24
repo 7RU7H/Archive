@@ -117,6 +117,8 @@ Swap mutation |  some characters are swapped and change places
 Duplicate mutation | some characters are duplicated
 Delimiter mutation | delimiters are added between characters
 
+## Password Spray Attacks
+
 ## References
 
 [TryHackMe Room](https://tryhackme.com/room/passwordattacks)

@@ -130,8 +130,8 @@ python3 -v
 ```
 
 # Next level
-### Emumerate
-Emumerate is commonly consider better in many case for solving problems with iterables, they return index and element:
+### Enumerate
+Enumerate is commonly consider better in many case for solving problems with iterables, they return index and element:
 ```python
 for i,word in enumerate('iteratables are tuples, lists, sets, dict, strings'):
 	print(f"{i} : {char}")

@@ -17,6 +17,14 @@ Forensics Mode(to avoid data contamination from auto-mounting any diskes) avalia
 Network Services Disabled by Default.
 Offsec sponsers tool curating a vast collection of great tools for the long term.
 
+## Documentation
+[Offensive Security Docs](http://docs.kali.org)
+[Offensive Security Forums](https://forums.kali.org)
+[Offensive Security Tools](https://tools.kali.org)
+[Offensive Security Bugs](https://bugs.kali.org)
+[Offensive Security Train](https://kali.training)
+
+
 ## Installation
 
 [Download from this site.]([https://www.kali.org/downloads/](https://www.kali.org/downloads/) Use `cat /proc/cpuinfo` or this fancy grep(`grep -qP '^flags\s*:.*\blm\b' /proc/cpuinfo && echo 64-bit || echo 32-bit`) to check whether you are have 32 or 64 bit CPU. Make sure verify integrity and authenticity with  `sha256sum $ISO`. You could also use a key server: `wget -q -O - https://archive.kali.org/archive-key.asc | gpg --import`. There are various GUI tools on all OS for USB formating and creating bootable disks, but here with a Linux Distro:

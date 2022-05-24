@@ -71,7 +71,8 @@ for i in $(seq 105 108); do
 8. Configure Burp proxy(if using firefox to Hack from) `Proxy -> Options -> Intercept Client Request -> Add -> Match Relationship = IP address; Match condition 10.10.110.100-120` and disabling Websockets Messages on the same Proxy tab, Options `Intercept WebSockets Messages -> untick Intercept client-to-server messages & untick Intercept server-to-client messages`. This stop the background page slowing down request cycling stopping you from intercepting Battleground relevant pages.
 
 ## On Castle Enumeration
-[13:20](https://www.youtube.com/watch?v=o42dgCOBkRk)
+```bash
+ps -aef --forest
 
 ## References
 

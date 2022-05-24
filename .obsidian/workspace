@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Battlegrounds.md",
+            "file": "Rust.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Battlegrounds.md",
+                "file": "Rust.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +88,15 @@
   },
   "active": "60a8a3e49c53a7c4",
   "lastOpenFiles": [
-    "Battlegrounds.md",
-    "Hardening/Hardening.md",
-    "CVEs/shellshocked.md",
-    "CVEs/log4J.md",
-    "creating-Vulnerable-VMs.md",
-    "Recon/Web-Analysis/NiktoCS.md",
-    "Virtual-Machines/virtual-machines.md",
-    "Web-Hacking/CMS/Wordpress/wordpress.md",
-    "Networks/networkConnections.md",
-    "tcpdumpCS.md"
+    "Rust.md",
+    "Recon/portKnocking.md",
+    "Recon/SMB/smbCS.md",
+    "Recon/SMB/rcpclientCS.md",
+    "Linux/linuxCMD/coreCMDs.md",
+    "Hacker-Distros/Kali/Kali.md",
+    "Recon/SNMP/snmpCS.md",
+    "Coding-Scripting/Python/useful_python3.md",
+    "Web-Hacking/Content-Discovery/ffufCS.md",
+    "Web-Hacking/Walking-Web-Applications/Web-Hacking-Checklist.md"
   ]
 }

@@ -2,10 +2,8 @@
 UDP port 161 
 
 ## Enumeration
-
 Requires a community list
 ```bash
-
 onesixtyone -c community -i $SMNP_IP_LIST
 snmpwalk -c public -v1 $IP $mib_values
 ```
@@ -27,3 +25,15 @@ snmpwalk -c public -v1 $IP $mib_values
 
 1.3.6.1.2.1.6.13.1.3 TCP Local Ports
 ```
+
+## Ippsec approach
+```bash
+sudo apt install snmp-mibs-downloader
+sudo vim /etc/snmp/snmp.conf
+# Add a comment on the line 
+mibs :$
+# Use snmpbulkwalk - remember '.' at end
+snmpbulkwalk -c public -v2c $IP .
+```
+
+snmpenum tool may not catch any weirdness.
