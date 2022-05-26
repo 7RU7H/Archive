@@ -17,7 +17,5 @@ msf auxiliary(smtp_enum) > set USER_FILE /usr/
 msf auxiliary(smtp_enum) > exploit
 ```
 
-
-
 ## References
 [hackingarticals](https://www.hackingarticles.in/4-ways-smtp-enumeration/)

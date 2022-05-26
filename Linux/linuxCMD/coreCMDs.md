@@ -43,8 +43,8 @@ chown :group
 chown user
 
 
-comm		compare files
-comm file.txt file1.txt
+comm		#compare files
+comm $file.txt $file1.txt
 
 cp 		copy
 -t		# working directory as target directory 		
@@ -69,7 +69,17 @@ env		show enviromental variables
 
 export		set env variables
 
-file		reads file headers
+# Process management
+[ctrl+z]	# Background
+fg			# Foreground
+jobs		# view backgrounded processes
+fg %1		# Job number
+fg %$STR	# by beginning of command name	
+fg %$Commandname # actual command name
+fg %$+ / %%	# current job
+fg %$-		# previous job
+
+file		# reads file headers
 
 find		find things
 find / -perm -u=s -type f 2>/dev/null 		Find SUID binaries
@@ -176,7 +186,6 @@ ps -aux # -a - all with tty except session leaders; -u  -user orientated format;
 
 pwd		# print working directory
 
-
 reset		reset shell
 
 rm 		remove file or folder, directories require -R switch: "rm -R dir"
@@ -209,6 +218,8 @@ tail		print last 10 lines of a file to stdout
 touch		create file
 
 uname		system info
+
+vimdiff		# opens vim with highlighting between multiple files
 
 watch
 -n int	interval run

@@ -30,8 +30,10 @@ ORS="\n\n" 	= output record separator	would delimiter the record/line output wit
 awk -F FS -mf Numberoffield '{operation $fieldnum}' file > file
 awk -F: '{print $1}' /etc/passwd | wc -l # for all the users and the wc -l for the total users
 awk '{ sum += $1 } END { print sum }' # add all the numbers in a file up
-
 $awk '{a[NR]=$0} END {for (j=1; j<NR; j++) print a[j];sub(/.$/,"",a[NR]);print a[NR]}' InputFile	delete the last character in a file
+# sort a text file by line length 
+awk '{ print length, $0 }' | sort -n -s 
+
 
 #### binwalk
 # Allows users to analyze and extract firmware images and helps in identifying code, 

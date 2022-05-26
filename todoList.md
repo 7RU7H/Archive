@@ -15,7 +15,8 @@ https://github.com/pythonmaster41/Go-For-OSCP
 ffuf/wfuzz 
 httpx-toolkit
 https://github.com/frohoff/ysoserial
-JSON Web Tokens [https://jwt.io/](https://jwt.io/)
+
+windows-concept simplified and more concise
 
 update and improve https://github.com/ihack4falafel/OSCP/blob/master/Documents/SQL%20Injection%20Cheatsheet.md
 

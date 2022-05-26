@@ -6,7 +6,7 @@
 
 #### SMB enumeration tools
 
-See [SMB tool](SMB/smbCS)
+See [SMB tool](smbCS.md)
 
 #### Bloodhound and Sharphound
 

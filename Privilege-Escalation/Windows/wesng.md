@@ -1,0 +1,13 @@
+# WES-NG
+[wesng](https://github.com/bitsadmin/wesng)
+
+## Usage
+1. Either use [hackspace](https://github.com/7RU7H/hackspace) or `git clone https://github.com/bitsadmin/wesng --depth 1`
+2. `wes.py --update`
+3. Server the `missingkbs.vbs` with `python3 -m http.server $port`
+4. Either
+	1. Execute `missingkbs.vbs` on vulnerable machine 
+	2. Execute `systeminfo > systeminfo.txt`
+5. Transfer file back and plug into wes.py
+	1. wes.py -m missing.txt
+	2. wes.py -m systeminfo.txt
