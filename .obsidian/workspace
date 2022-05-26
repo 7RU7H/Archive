@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Web-Hacking/uploadVulnerabilities.md",
+            "file": "Web-Hacking/SQLi/NoSQL.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Web-Hacking/uploadVulnerabilities.md",
+                "file": "Web-Hacking/SQLi/NoSQL.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,6 +88,7 @@
   },
   "active": "60a8a3e49c53a7c4",
   "lastOpenFiles": [
+    "Web-Hacking/SQLi/NoSQL.md",
     "Web-Hacking/uploadVulnerabilities.md",
     "Web-Hacking/serverSideTemplateInjection.md",
     "Useful-Software/github-guide.md",
@@ -96,7 +97,6 @@
     "Coding-Scripting/Java.md",
     "notesforlater.md",
     "Coding-Scripting/Rust.md",
-    "printerSecurityTesting.md",
-    "Password-Attacks/default-passwords-data-recovery.md"
+    "printerSecurityTesting.md"
   ]
 }
