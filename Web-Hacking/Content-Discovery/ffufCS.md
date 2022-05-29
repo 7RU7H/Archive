@@ -21,12 +21,6 @@ You can use two wordlists using FUZZ_1 FUZZ_2
 /seclists/Discovery/Web-Content/raft-medium-words-lowercase.txt
 /seclists/Discovery/Web-Content/raft-medium-directories-lowercase.txt
 
-## Fuzzing for 
-
-```bash
-$ for i in {0..255}; do echo $i; done | ffuf -u 'http://$MACHINE_IP/Vuln/?id=FUZZ' -c -w - -fw 33
-```
-
 ## Fuzzing for.. Bruteforce attacks
 Use ffuf like hydra using file size filter to check responses, -X flag to set request type, -d  to send data and -H custom header similar to `curl`.
 ```bash
@@ -40,11 +34,34 @@ ffuf -w /usr/share/seclists/Discovery/Web-Content/web-extensions.txt:FUZZ -u htt
 ```
 
 
-## Fuzzing for 
+## Fuzzing for Parameters
+[It might be better to use](https://github.com/nsonaniya2010/SubDomainizer)
+```bash
+ffuf -u 'http://$IP/path/?FUZZ=1' -c -w /usr/share/seclists/Discovery/Web-Content/burp-parameter-names.txt -fw 39  
+ffuf -u 'http://$IP/path/?FUZZ=1' -c -w /usr/share/seclists/Discovery/Web-Content/raft-medium-words-lowercase.txt -fw 39
+```
+If the parameter accepts integers we can use `-w -` to read from STDOUT.
+```bash
+for i in {0..255}; do echo $i; done | ffuf -u 'http://IP/path/?id=FUZZ' -c -w - -fw 33
+```
 
 
-## Fuzzing for SQLinjections
+## Fuzzing for vhost and subdomains
 
+
+```bash
+`ffuf -u http://FUZZ.mydomain.com -c -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt`
+```
+
+```bash
+#
+ffuf -u http://FUZZ.mydomain.com -c -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt -fs 0 
+# 
+ffuf -u http://mydomain.com -c -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt -H 'Host: FUZZ.mydomain.com' -fs 0
+```
+
+[virtual hosts](https://httpd.apache.org/docs/2.4/en/vhosts/examples.html) (vhosts) is the name used by Apache httpd.
+Nginx use [Server Blocks](https://www.nginx.com/resources/wiki/start/topics/examples/server_blocks/).
 
 ## References
 
