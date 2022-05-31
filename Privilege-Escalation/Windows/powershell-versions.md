@@ -1,0 +1,15 @@
+# Powershell versions
+
+Windows PowerShell 5.0 runs on the following versions of Windows:
+
+1. Windows Server 2016, installed by default
+1. Windows Server 2012 R2/Windows Server 2012/Windows Server 2008 R2 with Service Pack 1/Windows 8.1/Windows 7 with Service Pack 1 (install Windows Management Framework 5.0 to run it)
+
+Windows PowerShell 4.0 runs on the following versions of Windows:
+
+1. Windows 8.1/Windows Server 2012 R2, installed by default
+1. Windows 7 with Service Pack 1/Windows Server 2008 R2 with Service Pack 1 (install Windows Management Framework 4.0 to run it)
+
+Windows PowerShell 3.0 runs on the following versions of Windows:
+1. Windows 8/Windows Server 2012, installed by default
+1. Windows 7 with Service Pack 1/Windows Server 2008 R2 with Service Pack 1/2 (install Windows Management Framework 3.0 to run it)

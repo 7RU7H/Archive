@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Web-Hacking/Content-Discovery/ffufCS.md",
+            "file": "Foothold/Shells.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Web-Hacking/Content-Discovery/ffufCS.md",
+                "file": "Foothold/Shells.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +88,15 @@
   },
   "active": "60a8a3e49c53a7c4",
   "lastOpenFiles": [
+    "Foothold/Shells.md",
+    "Privilege-Escalation/Windows/windowsFileTransfers.md",
+    "Privilege-Escalation/Windows/powershell-versions.md",
+    "todoList.md",
     "Web-Hacking/Content-Discovery/ffufCS.md",
     "Web-Hacking/SQLi/NoSQL.md",
     "Web-Hacking/uploadVulnerabilities.md",
     "Web-Hacking/serverSideTemplateInjection.md",
     "Useful-Software/github-guide.md",
-    "Wordlists/listsOfWordlists.md",
-    "Coding-Scripting/PHP.md",
-    "Coding-Scripting/Java.md",
-    "notesforlater.md",
-    "Coding-Scripting/Rust.md"
+    "Wordlists/listsOfWordlists.md"
   ]
 }
