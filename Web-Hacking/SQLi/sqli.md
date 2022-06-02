@@ -14,10 +14,7 @@ database asleep pleasing
 SELECT star FROM passwords stealing
 by 7ru7h
 ```
-
-
 ## Useful resources
-
 https://github.com/payloadbox/sql-injection-payload-list
 https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/SQL%20Injection
 
@@ -59,5 +56,7 @@ MySQL and MSSQL
 
 
 
+## References
 
+[TryHackMe SLQinjections Labs room](https://tryhackme.com/room/sqlilab)
 

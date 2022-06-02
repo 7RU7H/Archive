@@ -21,6 +21,16 @@ You can use two wordlists using FUZZ_1 FUZZ_2
 /seclists/Discovery/Web-Content/raft-medium-words-lowercase.txt
 /seclists/Discovery/Web-Content/raft-medium-directories-lowercase.txt
 
+**Directory/Page Wordlist**
+/seclists/Discovery/Web-Content/directory-list-2.3-small.txt
+
+**Domain Wordlist**
+/seclists/Discovery/DNS/subdomains-top1million-5000.txt
+
+**Parameters**
+/seclists/Discovery/Web-Content/burp-parameter-names.txt
+/seclists/Discovery/Web-Content/burp-parameter-names.txt
+
 ## Fuzzing for.. Bruteforce attacks
 Use ffuf like hydra using file size filter to check responses, -X flag to set request type, -d  to send data and -H custom header similar to `curl`.
 ```bash
@@ -33,6 +43,15 @@ Need to figure out what the server is running:
 ffuf -w /usr/share/seclists/Discovery/Web-Content/web-extensions.txt:FUZZ -u http://$IP/index.FUZZ 
 ```
 
+## Fuzzing for Pages
+```bash
+ffuf -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-small.txt:FUZZ -u http://$IP/blog/FUZZ.php
+```
+
+## Fuzzing for Values
+```bash
+ffuf -w ids.txt:FUZZ -u http://$IP/admin/admin.php -X POST -d 'id=FUZZ' -H 'Content-Type: application/x-www-form-urlencoded' -fs $xxx
+```
 
 ## Fuzzing for Parameters
 [It might be better to use](https://github.com/nsonaniya2010/SubDomainizer)
@@ -44,24 +63,27 @@ If the parameter accepts integers we can use `-w -` to read from STDOUT.
 ```bash
 for i in {0..255}; do echo $i; done | ffuf -u 'http://IP/path/?id=FUZZ' -c -w - -fw 33
 ```
-
-
-## Fuzzing for vhost and subdomains
-
-
+POST
 ```bash
-`ffuf -u http://FUZZ.mydomain.com -c -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt`
+ffuf -w wordlist.txt:FUZZ -u http://$IP/admin/admin.php -X POST -d 'FUZZ=key' -H 'Content-Type: application/x-www-form-urlencoded' -fs $xxx
 ```
 
+## Fuzz.. Recursively
 ```bash
-#
-ffuf -u http://FUZZ.mydomain.com -c -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt -fs 0 
-# 
-ffuf -u http://mydomain.com -c -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt -H 'Host: FUZZ.mydomain.com' -fs 0
+ffuf -w wordlist.txt:FUZZ -u http://$IP/FUZZ -recursion -recursion-depth 1 -e .php -v
 ```
 
+## Fuzzing for VHosts
+```bash
+ffuf -u http://FUZZ.mydomain.com -c -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt`
+```
 [virtual hosts](https://httpd.apache.org/docs/2.4/en/vhosts/examples.html) (vhosts) is the name used by Apache httpd.
 Nginx use [Server Blocks](https://www.nginx.com/resources/wiki/start/topics/examples/server_blocks/).
+
+## Fuzzing for Subdomains
+```bash
+ffuf -u http://mydomain.com -c -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt -H 'Host: FUZZ.mydomain.com' -fs 0
+```
 
 ## References
 

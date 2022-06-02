@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Foothold/Shells.md",
+            "file": "Web-Hacking/Content-Discovery/ffufCS.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Foothold/Shells.md",
+                "file": "Web-Hacking/Content-Discovery/ffufCS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +88,15 @@
   },
   "active": "60a8a3e49c53a7c4",
   "lastOpenFiles": [
-    "Foothold/Shells.md",
-    "Privilege-Escalation/Windows/windowsFileTransfers.md",
-    "Privilege-Escalation/Windows/powershell-versions.md",
-    "todoList.md",
     "Web-Hacking/Content-Discovery/ffufCS.md",
-    "Web-Hacking/SQLi/NoSQL.md",
-    "Web-Hacking/uploadVulnerabilities.md",
-    "Web-Hacking/serverSideTemplateInjection.md",
-    "Useful-Software/github-guide.md",
-    "Wordlists/listsOfWordlists.md"
+    "Web-Hacking/SQLi/sqli.md",
+    "Web-Hacking/SQLi/introToSQL.md",
+    "Recon/Nmap/nmapAllTheScripts.md",
+    "Privilege-Escalation/Windows/windowsFileTransfers.md",
+    "Privilege-Escalation/Windows/wesng.md",
+    "Recon/Unknown-Service-Recon.md",
+    "Privilege-Escalation/Windows/windowsPrivEsc.md",
+    "Foothold/Shells.md",
+    "Privilege-Escalation/Windows/powershell-versions.md"
   ]
 }

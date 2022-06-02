@@ -9,5 +9,5 @@
 	1. Execute `missingkbs.vbs` on vulnerable machine 
 	2. Execute `systeminfo > systeminfo.txt`
 5. Transfer file back and plug into wes.py
-	1. wes.py -m missing.txt
-	2. wes.py -m systeminfo.txt
+	1. `wes.py -m missing.txt`
+	2. `wes.py systeminfo.txt`
