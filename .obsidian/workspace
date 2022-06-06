@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Exploitation/Binary-Exploitation/Buffer-Overflow/Windows-Buffer-Overflows.md",
+            "file": "Exploitation/Windows/Active-Directory/Attacking-Kerberos.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exploitation/Binary-Exploitation/Buffer-Overflow/Windows-Buffer-Overflows.md",
+                "file": "Exploitation/Windows/Active-Directory/Attacking-Kerberos.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +88,15 @@
   },
   "active": "60a8a3e49c53a7c4",
   "lastOpenFiles": [
-    "Exploitation/Binary-Exploitation/Buffer-Overflow/Windows-Buffer-Overflows.md",
+    "Exploitation/Windows/Active-Directory/Attacking-Kerberos.md",
+    "Exploitation/Binary-Exploitation/Tools.md",
     "Exploitation/Binary-Exploitation/binexGDB101.md",
-    "Exploitation/Binary-Exploitation/Enumeration.md",
     "Exploitation/Binary-Exploitation/Buffer-Overflow/Stackbased-Buffer-Overflows.md",
-    "Hardening/Hardening.md",
-    "HackingReportTemplate/ToolList.md",
-    "HackingReportTemplate/TargetAddresses.md",
-    "HackingReportTemplate/ExecutiveSummary.md",
-    "HackingReportTemplate/MarkdownShortcuts.md",
-    "HackingReportTemplate/References.md"
+    "Exploitation/Binary-Exploitation/Buffer-Overflow/Windows-Buffer-Overflows.md",
+    "Exploitation/Binary-Exploitation/CPU-Architecture.md",
+    "Exploitation/Binary-Exploitation/Exploitation-Types.md",
+    "Exploitation/Binary-Exploitation/Intel-Assembler-Instructions-To-Know.md",
+    "Exploitation/Binary-Exploitation/Program-Memory.md",
+    "todoList.md"
   ]
 }
