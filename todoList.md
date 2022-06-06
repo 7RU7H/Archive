@@ -1,7 +1,6 @@
 # TODO
 ## Notes to mine
-
-BinEx
+Intel Assembly Instructions
 Regexs
 Attacking Kerberos
 put this somewhere:
@@ -58,3 +57,4 @@ old_proc=$new_proc
 
 done
 ```
+

@@ -18,7 +18,16 @@ by 7ru7h
 https://github.com/payloadbox/sql-injection-payload-list
 https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/SQL%20Injection
 
+## 
+Database require instructional commands to store, organise and interact with data. To inject maliformed SQL queries to break the query syntax through logical mechanism and the sql parser's interpretation of characters external usage in token classification. The `-` comment  character is recognised as a break from a functionality to interact with database. Or `'` to indicate the opening of string declaration. The paring functions to consider the following set of character as string continously until otherwise stated. In break the query access to debug messages or likewise indicated through commanding the server to delay its subsequent response demonstrating control of the server. If it will `sleep` because a malicious query states such for speficied time the query may be transformed to the fix its breakage of syntax to then query actual information on the database. Or use the system hosting the database to 
+
+
+use the database as storage for further movement with commands to to reomate code excution
+
 ## Methodology
+
+
+
 #### Character and Command toolset
 Comments
 ```sql
@@ -59,4 +68,4 @@ MySQL and MSSQL
 ## References
 
 [TryHackMe SLQinjections Labs room](https://tryhackme.com/room/sqlilab)
-
+[Computerphile Video](https://www.youtube.com/watch?v=ciNHn38EyRc)

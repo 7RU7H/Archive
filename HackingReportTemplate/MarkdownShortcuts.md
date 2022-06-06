@@ -10,7 +10,7 @@ Just in case weblinking needs to be automated
 
 Stop typing directories
 
-![screenshotname](Screenshots/name.png)
+![screenshotname](name.png)
 
 Toggle a drop down
 

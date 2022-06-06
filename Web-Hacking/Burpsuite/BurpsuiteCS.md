@@ -7,6 +7,37 @@ Some of the tips very simple for simple problems, sometimes that is simply requi
 
 [Official Documentation](https://portswigger.net/burp/documentation/desktop)
 
+# Cool things for the cmd [more]
+- Builtin Browser, never setup the burp certifact with your own browser every again!
+	GOTO Project settings -> no sandbox for builtin browser
+
+
+# FoxyProxy/Firefox proxy
+Firefox menu -> Settings -> Network Settings click Settings
+Select manual proxy configuration:
+	HTTP proxy: 127.0.0.1 8080
+	uncheck: Also use this proxy for FTP and HTTPS 
+	delete: ANYTHING in the "No proxy for" field
+
+## Burp Suite CA
+To intercept and analyze HTTPS traffic, BS has Certificate Authority and uses it to issue on-th-fly certifactes for each website that we visit and pass through Burp.
+
+http://burp -> CA Certificate 
+save the file cacert.der to `/home/<user>/Downloads`
+GOTO Certificate manager in Firefox -> Import it!
+
+## Bypassing Proxy for (some) HTTPS Traffic
+
+Proxy -> Options -> TLS Pass Through -> Add
+
+Need pass through for:
+- Targeting
+- Required mutual authenication or HTTP Public Key Pinning
+## Bypass intercepting HTTPS traffic by configurating to forward traffics towards websites without decrypting and re-encrypting them first.
+
+## SOCKS Proxy in Burp
+User option in Burp Suite -> SOCKS Proxy -> 127.0.0.1 & port number
+
 ## Too much data -> Add Scope to include/exclude
 `Target -> Scope -> Target scope`, to add manually or 
 right click and add under main `Target Site map` tab.
