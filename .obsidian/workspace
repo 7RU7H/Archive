@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Exploitation/Windows/Active-Directory/Attacking-Kerberos.md",
+            "file": "Public-Expoit.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exploitation/Windows/Active-Directory/Attacking-Kerberos.md",
+                "file": "Public-Expoit.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +88,15 @@
   },
   "active": "60a8a3e49c53a7c4",
   "lastOpenFiles": [
+    "Public-Expoit.md",
+    "Exploitation/Windows/Active-Directory/Foothold-On-AD.md",
+    "Coding-Scripting/Bash/useful_bash.md",
+    "Web-Hacking/Content-Discovery/ffufCS.md",
     "Exploitation/Windows/Active-Directory/Attacking-Kerberos.md",
     "Exploitation/Binary-Exploitation/Tools.md",
     "Exploitation/Binary-Exploitation/binexGDB101.md",
     "Exploitation/Binary-Exploitation/Buffer-Overflow/Stackbased-Buffer-Overflows.md",
     "Exploitation/Binary-Exploitation/Buffer-Overflow/Windows-Buffer-Overflows.md",
-    "Exploitation/Binary-Exploitation/CPU-Architecture.md",
-    "Exploitation/Binary-Exploitation/Exploitation-Types.md",
-    "Exploitation/Binary-Exploitation/Intel-Assembler-Instructions-To-Know.md",
-    "Exploitation/Binary-Exploitation/Program-Memory.md",
-    "todoList.md"
+    "Exploitation/Binary-Exploitation/CPU-Architecture.md"
   ]
 }
