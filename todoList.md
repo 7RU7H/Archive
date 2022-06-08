@@ -1,5 +1,5 @@
 # TODO
-## Notes to mine
+
 Intel Assembly Instructions
 Regexs
 Attacking Kerberos
@@ -7,6 +7,8 @@ put this somewhere:
 https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/
 https://github.com/adon90/pentest_compilation
 https://github.com/rewardone/OSCPRepo
+
+Battlegrounds
 
 Assimilate: at ftp
 https://github.com/pythonmaster41/Go-For-OSCP

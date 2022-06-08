@@ -1,4 +1,9 @@
 # Vim Cheatsheet 
+
+```bash
+q+a [record macro] + esc [to end recording then exec with] @a
+```
+
 # [Reference](vim.rtorr.com)
 Exiting
 :w 	write (save) the file, but don't exit
@@ -9,6 +14,7 @@ Exiting
 :qa 	quit all buffers and windows
 ZZ 	write (save) current file, if modified, and quit
 ZQ 	quit without checking for changes
+
 Cursor Movement
 h 	move cursor left
 j 	move cursor down

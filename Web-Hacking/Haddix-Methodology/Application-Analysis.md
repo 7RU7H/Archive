@@ -2,7 +2,7 @@
 [NahamCon2022 - Jason Haddix BBHM - AA](https://www.youtube.com/watch?v=HmDY7w8AbR4)
 
 # Disclaimer
-This is just my notes of the talk mentioned above. These notes were taken to further my research in bug hunting and ethical hacking generally
+This is just my notes of the talk mentioned above. These notes were taken to further my research in bug hunting and ethical hacking.
 
 # Mental Hurdles
 

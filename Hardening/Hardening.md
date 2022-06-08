@@ -11,3 +11,6 @@ rkilll block bluetooth
 ```
 
 To hardblock wifi or bluetooth find the toggle on motherboards, in bioses and other switchs on peripherals.   
+
+## ssh Related
+https://linuxhint.com/disable_root_ssh_debian/

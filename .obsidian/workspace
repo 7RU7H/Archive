@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Public-Expoit.md",
+            "file": "Privilege-Escalation/Linux/linuxPrivEsc.md",
             "mode": "source"
           }
         }
@@ -52,7 +52,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 217
+    "width": 274
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Public-Expoit.md",
+                "file": "Privilege-Escalation/Linux/linuxPrivEsc.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +88,15 @@
   },
   "active": "60a8a3e49c53a7c4",
   "lastOpenFiles": [
-    "Public-Expoit.md",
-    "Exploitation/Windows/Active-Directory/Foothold-On-AD.md",
-    "Coding-Scripting/Bash/useful_bash.md",
-    "Web-Hacking/Content-Discovery/ffufCS.md",
-    "Exploitation/Windows/Active-Directory/Attacking-Kerberos.md",
-    "Exploitation/Binary-Exploitation/Tools.md",
-    "Exploitation/Binary-Exploitation/binexGDB101.md",
+    "Privilege-Escalation/Linux/linuxPrivEsc.md",
+    "Hardening/Hardening.md",
+    "Exploitation/Binary-Exploitation/CPU-Architecture.md",
     "Exploitation/Binary-Exploitation/Buffer-Overflow/Stackbased-Buffer-Overflows.md",
-    "Exploitation/Binary-Exploitation/Buffer-Overflow/Windows-Buffer-Overflows.md",
-    "Exploitation/Binary-Exploitation/CPU-Architecture.md"
+    "Web-Hacking/API/API-Fuzzing.md",
+    "Exploitation/Network/LLMNRpoisoning.md",
+    "Exploitation/Binary-Exploitation/Buffer-Overflow/Untitled.md",
+    "Exploitation/Binary-Exploitation/binexGDB101.md",
+    "Web-Hacking/Javascript/NodeJS.md",
+    "Web-Hacking/Javascript/Walking-WebApps-JS.md"
   ]
 }
