@@ -7,7 +7,7 @@
 
 ## Deserialization
 
-[desserialization](https://opsecx.com/index.php/2017/02/08/exploiting-node-js-deserialization-bug-for-remote-code-execution/)
+[deserialization](https://opsecx.com/index.php/2017/02/08/exploiting-node-js-deserialization-bug-for-remote-code-execution/)
 
 ## Globals
 ```javascript
@@ -17,6 +17,7 @@ exports
 module
 require()
 ```
+
 
 ## Node.js Payload
 ```javascript

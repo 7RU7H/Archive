@@ -24,6 +24,10 @@ exec() 	//return the entire buffer
 execFile
 ```
 
+```javascript
+evaluate()
+```
+
 #### RCE eval()
 ```javascript
 eval() // Executes run-time code

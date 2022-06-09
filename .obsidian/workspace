@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Privilege-Escalation/Linux/linuxPrivEsc.md",
+            "file": "Privilege-Escalation/Windows/windowsPrivEsc.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Privilege-Escalation/Linux/linuxPrivEsc.md",
+                "file": "Privilege-Escalation/Windows/windowsPrivEsc.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +88,15 @@
   },
   "active": "60a8a3e49c53a7c4",
   "lastOpenFiles": [
+    "Privilege-Escalation/Windows/windowsPrivEsc.md",
+    "Privilege-Escalation/Windows/windowsFileTransfers.md",
+    "Foothold/Shells.md",
+    "Metasploit/metasploit.md",
+    "Coding-Scripting/Bash/useful_bash.md",
+    "Vulnerable-Functions/Javascript.md",
+    "Web-Hacking/Javascript/NodeJS.md",
     "Privilege-Escalation/Linux/linuxPrivEsc.md",
     "Privilege-Escalation/Linux/enumLinuxDirectories.md",
-    "Web-Hacking/serverSideTemplateInjection.md",
-    "Docker/DockerHacking.md",
-    "Hardening/Hardening.md",
-    "Exploitation/Binary-Exploitation/CPU-Architecture.md",
-    "Exploitation/Binary-Exploitation/Buffer-Overflow/Stackbased-Buffer-Overflows.md",
-    "Web-Hacking/API/API-Fuzzing.md",
-    "Exploitation/Network/LLMNRpoisoning.md",
-    "Exploitation/Binary-Exploitation/Buffer-Overflow/Untitled.md"
+    "Web-Hacking/serverSideTemplateInjection.md"
   ]
 }

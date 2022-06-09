@@ -17,6 +17,7 @@ powershell.exe -ExecutionPolicy Bypass -File .\jaws-enum.ps1 -OutputFileName Jaw
 ```
 # Tools
 ```
+impacket-psexec # requires credentials
 https://github.com/bitsadmin/nopowershell  
 https://github.com/rasta-mouse/AmsiScanBufferBypass  
 https://github.com/cobbr/InsecurePowerShell  
