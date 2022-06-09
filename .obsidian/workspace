@@ -89,14 +89,14 @@
   "active": "60a8a3e49c53a7c4",
   "lastOpenFiles": [
     "Privilege-Escalation/Linux/linuxPrivEsc.md",
+    "Privilege-Escalation/Linux/enumLinuxDirectories.md",
+    "Web-Hacking/serverSideTemplateInjection.md",
+    "Docker/DockerHacking.md",
     "Hardening/Hardening.md",
     "Exploitation/Binary-Exploitation/CPU-Architecture.md",
     "Exploitation/Binary-Exploitation/Buffer-Overflow/Stackbased-Buffer-Overflows.md",
     "Web-Hacking/API/API-Fuzzing.md",
     "Exploitation/Network/LLMNRpoisoning.md",
-    "Exploitation/Binary-Exploitation/Buffer-Overflow/Untitled.md",
-    "Exploitation/Binary-Exploitation/binexGDB101.md",
-    "Web-Hacking/Javascript/NodeJS.md",
-    "Web-Hacking/Javascript/Walking-WebApps-JS.md"
+    "Exploitation/Binary-Exploitation/Buffer-Overflow/Untitled.md"
   ]
 }

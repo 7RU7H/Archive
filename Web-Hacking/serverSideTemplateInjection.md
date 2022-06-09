@@ -67,6 +67,7 @@ ${7*7}
 [PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings//tree/master/Server Side Template Injection)
 
 ## References
-
+[THM room](https://tryhackme.com/room/learnssti)
 [flask/jinja2](https://medium.com/@nyomanpradipta120/ssti-in-flask-jinja2-20b068fdaeee)
 [pequalsnp](https://pequalsnp-team.github.io/cheatsheet/flask-jinja2-ssti)
+[jayaye15](https://jayaye15.medium.com/jinja2-server-side-template-injection-ssti-9e209a6bbdf6)
