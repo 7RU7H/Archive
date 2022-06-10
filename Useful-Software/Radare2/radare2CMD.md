@@ -112,7 +112,7 @@ wx ff @@`?s  1 10 2`  Writes ff at offsets 1, 2 and 3
 wx 90 @@ sym.*        Writes a nop on every symbol
 ```
 
-## Positioning
+## Positioning 
 ```
 s address: Move cursor to address or symbol
 	s-5 (5 bytes backwards)

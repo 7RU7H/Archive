@@ -7,4 +7,5 @@
 
 ```bash
 dnsrecon -t axfr -d $DOMAIN
+dig axfr $domain @$ip
 ```
