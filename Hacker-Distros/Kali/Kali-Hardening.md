@@ -10,6 +10,7 @@ Hardening starts before you install your system
 ```bash
 apt install ufw
 apt install fail2ban # Protect against bruteforcing expose services
+apt install fwbuilder # ufw  
 ```
 
 ## Network Services

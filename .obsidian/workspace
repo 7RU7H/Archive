@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Virtual-Machines/virtual-machines.md",
+            "file": "Virtual-Machines/Lab-Making/Active-Directory-Lab.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Virtual-Machines/virtual-machines.md",
+                "file": "Virtual-Machines/Lab-Making/Active-Directory-Lab.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,10 +88,10 @@
   },
   "active": "60a8a3e49c53a7c4",
   "lastOpenFiles": [
-    "Virtual-Machines/virtual-machines.md",
-    "Virtual-Machines/creating-Vulnerable-VMs.md",
     "Virtual-Machines/Lab-Making/Active-Directory-Lab.md",
     "Hacker-Distros/Kali/Kali-Hardening.md",
+    "Virtual-Machines/virtual-machines.md",
+    "Virtual-Machines/creating-Vulnerable-VMs.md",
     "Secure-Architectures/Security-Policies.md",
     "Hacker-Distros/Kali/Kali-Monitoring.md",
     "Hardening/Hardening.md",
