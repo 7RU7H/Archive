@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Exploitation/Windows/Active-Directory/AD-Exploitation-Hub.md",
+            "file": "Virtual-Machines/virtual-machines.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exploitation/Windows/Active-Directory/AD-Exploitation-Hub.md",
+                "file": "Virtual-Machines/virtual-machines.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +88,15 @@
   },
   "active": "60a8a3e49c53a7c4",
   "lastOpenFiles": [
-    "Exploitation/Windows/Active-Directory/AD-Exploitation-Hub.md",
-    "Exploitation/Windows/Active-Directory/Foothold-On-AD.md",
-    "Cryptography/JohnTheRipper.md",
-    "Useful-Software/vimCS.md",
-    "Web-Hacking/XXS-CS.md",
-    "Redteam/Redteam-Checklist.md",
-    "Post-Exploitation/Persistence.md",
-    "Recon/Passive-Recon.md",
-    "Coding-Scripting/Javascript/Javascript.md",
-    "Opsec101.md"
+    "Virtual-Machines/virtual-machines.md",
+    "Virtual-Machines/creating-Vulnerable-VMs.md",
+    "Virtual-Machines/Lab-Making/Active-Directory-Lab.md",
+    "Hacker-Distros/Kali/Kali-Hardening.md",
+    "Secure-Architectures/Security-Policies.md",
+    "Hacker-Distros/Kali/Kali-Monitoring.md",
+    "Hardening/Hardening.md",
+    "Exploitation/Using-Public-Exploits.md",
+    "Foothold/Impacket/impacket.md",
+    "Useful-Software/github-guide.md"
   ]
 }

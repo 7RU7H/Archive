@@ -47,7 +47,15 @@ Domain Trees |
 Forests |
 Sites | Collections of users, groups, computers as defined by their physical locations.
 
+## Download the ISO files
 
+## Virtual Box
+ After creating DC machine change the `Shared Clipboard` and `Drag'n'Drop` settings to `Bidirection`.
+ 
+ Creating a Network interface card NIC: First needs to be attached to` NAT`  another on `Internal Network`
+ 
+ 
+## VMware setup
 
 ## References
 [shehackske](https://shehackske.medium.com/active-directory-how-to-set-up-an-ad-lab-66647fb453c0)
@@ -55,5 +63,5 @@ Sites | Collections of users, groups, computers as defined by their physical loc
 [hostadvice](https://hostadvice.com/how-to/how-to-install-virtualbox-on-windows-server-2022/#paragraph3)
 [hackingarticle](https://www.hackingarticles.in/active-directory-pentesting-lab-setup/)
 [drunkrhin0](https://medium.com/swlh/building-an-active-directory-lab-part-1a-automatedlab-fc2399ebe5be)
-
+[Madakar video](https://www.youtube.com/watch?v=MHsI8hJmggI)
 [ADDS Overview](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview)
