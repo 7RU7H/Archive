@@ -187,8 +187,9 @@ Start a listener:
 ```bash
 socat TCP-L:<PORT> -                                 # connect regardless with '-'
 socat -d -d TCP-LISTEN:8080 STDOUT                   # -d -d = increase verbosity of output#
-socat TCP4-LISTEN:8080,fork file:filename.txt,create # create specifies that a new file will be created.
-                                                     # fork create a child process once connection is made to the listener(multiple connections allowed)
+socat TCP4-LISTEN:8080,fork file:filename.txt,create 
+# create specifies that a new file will be created.
+# fork creates a child process once connection is made to the listener(multiple connections allowed)
 ```
 Connect to reverse Shell:
 

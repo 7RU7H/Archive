@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Virtual-Machines/Lab-Making/Active-Directory-Lab.md",
+            "file": "Foothold/Shells.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Virtual-Machines/Lab-Making/Active-Directory-Lab.md",
+                "file": "Foothold/Shells.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +88,15 @@
   },
   "active": "60a8a3e49c53a7c4",
   "lastOpenFiles": [
-    "Virtual-Machines/Lab-Making/Active-Directory-Lab.md",
-    "Hacker-Distros/Kali/Kali-Hardening.md",
-    "Virtual-Machines/virtual-machines.md",
-    "Virtual-Machines/creating-Vulnerable-VMs.md",
-    "Secure-Architectures/Security-Policies.md",
-    "Hacker-Distros/Kali/Kali-Monitoring.md",
-    "Hardening/Hardening.md",
-    "Exploitation/Using-Public-Exploits.md",
-    "Foothold/Impacket/impacket.md",
-    "Useful-Software/github-guide.md"
+    "Foothold/Shells.md",
+    "Coding-Scripting-Programming/Bash/useful_bash.md",
+    "Foothold/reverseShell.md",
+    "Coding-Scripting-Programming/Python/useful_python3.md",
+    "Exploitation/Windows/Active-Directory/Foothold-On-AD.md",
+    "Exploitation/Windows/Active-Directory/Attacking-Kerberos.md",
+    "Exploitation/Windows/Active-Directory/Certificate-Exploitation.md",
+    "Exploitation/Windows/Active-Directory/AD-Exploitation-Hub.md",
+    "Exploitation/responderCS.md",
+    "Secure-Architectures/Security-Policies.md"
   ]
 }
