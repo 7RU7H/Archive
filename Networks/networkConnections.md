@@ -115,6 +115,7 @@ NetBIOS over TCP/IP (NetBT)			#Windows name resolution
 
 ## LDAP
 default port 389
+[Pentest CS for LDAP ivanversluis](https://github.com/ivanversluis/pentest-hacktricks/blob/master/pentesting/pentesting-ldap.md)
 
 
 ## HTTPS

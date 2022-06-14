@@ -1,5 +1,6 @@
 # TODO
 
+LDAP server setup
 Intel Assembly Instructions
 Regexs
 Attacking Kerberos

@@ -297,6 +297,10 @@ Large organizations and enterprises often use added products and features which 
 1. Active Directory Federation Service (ADFS) provides an extended way of offering single sign-on and authorization.  
 1. Active Directory Certification Services (ADCS) provides an integrated certification authority to handle the public key infrastructure.  
 
+## Protocols
+#### LLMNR, NBT-NS, and WPAD
+ Wiki: *"The Link-Local Multicast Name Resolution (LLMNR) is a protocol based on the [Domain Name System](https://en.wikipedia.org/wiki/Domain_Name_System "Domain Name System") (DNS) packet format that allows both [IPv4](https://en.wikipedia.org/wiki/IPv4 "IPv4") and [IPv6](https://en.wikipedia.org/wiki/IPv6 "IPv6") hosts to perform name resolution for hosts on the same local link."* NBNS is a server responsible for maintaining a list of mappings between NetBIOS computer names and network addresses for a network that uses [NetBIOS](https://networkencyclopedia.com/netbios/) as its naming service. Wiki: *The **Web Proxy Auto-Discovery (WPAD) Protocol** is a method used by clients to locate the URL of a configuration file using [DHCP](https://en.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol "Dynamic Host Configuration Protocol") and/or [DNS](https://en.wikipedia.org/wiki/Domain_Name_System "Domain Name System") discovery methods. Once detection and download of the configuration file is complete, it can be executed to determine the proxy for a specified URL.*
+
 ## Active Directory Terminology
 -   **AS-REQ** - 
 -   **AS-REP** - 
@@ -315,3 +319,8 @@ Large organizations and enterprises often use added products and features which 
 -   **Service Long Term Secret Key (Service LT Key)** - The service key is based on the service account. It is used to encrypt the service portion of the service ticket and sign the PAC.
 -   **Session Key** - Issued by the KDC when a TGT is issued. The user will provide the session key to the KDC along with the TGT when requesting a service ticket.
 -   **Privilege Attribute Certificate (PAC)** - The PAC holds all of the user's relevant information, it is sent along with the TGT to the KDC to be signed by the Target LT Key and the KDC LT Key in order to validate the user.
+
+## References
+[LDAP Wiki](https://en.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol)
+[WPAD Wiki](https://en.wikipedia.org/wiki/Web_Proxy_Auto-Discovery_Protocol)
+[SMB Wiki](https://en.wikipedia.org/wiki/Server_Message_Block)
