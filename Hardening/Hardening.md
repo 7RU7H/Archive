@@ -12,5 +12,16 @@ rkilll block bluetooth
 
 To hardblock wifi or bluetooth find the toggle on motherboards, in bioses and other switchs on peripherals.   
 
-## ssh Related
-https://linuxhint.com/disable_root_ssh_debian/
+## SSH Related
+[ssh](https://linuxhint.com/disable_root_ssh_debian/)
+
+## Iptables
+
+Log new connections to a box [ippsec](https://www.youtube.com/watch?v=ABVR8EgXsQU&t=186)
+```bash
+iptables -A INPUT -p tcp -m state --state NEW -j LOG --log-prefix "IPTables New-Connection: " -i $interface
+```
+
+
+## References
+[ippsec geniunely rocks](https://ippsec.rocks/?#)

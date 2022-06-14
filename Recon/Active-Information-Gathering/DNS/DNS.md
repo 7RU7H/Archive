@@ -8,4 +8,18 @@
 ```bash
 dnsrecon -t axfr -d $DOMAIN
 dig axfr $domain @$ip
+host $url 		# ip for a domain
+host -t ns $url # find nameservers for a domain
+host -t mx $url # find mailservers for a domain
+host -l $domain $ns1-domain # List of DNS servers
 ```
+
+Parse just DNS hostnames
+```bash
+for server in $(host -t ns megacorpone.com | cut -d" " -f4); do host -l megacorpone.com $server; done
+```
+
+
+
+## Reference 
+[wonkastocks]https://pastebin.com/qLitw9eT

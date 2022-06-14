@@ -205,8 +205,6 @@ status=$(
 ```
 [string variant](https://stackoverflow.com/questions/2283640/case-statements-evaluate-to-strings#2283814)
 
-```
-
 # Parametre Expansion: indirection, listing and length
 ```bash
 param="advanced"; parade="bash";
