@@ -6,8 +6,13 @@ OSINT or Passive Information Gathering is continually cyclical and recursive pro
 
 Note taking or data management for recursive manual or automated lookup and usage is vital.
 
-## Netcraft
-[searchdns](https://searchdns.netcraft.com) view site reports that provides information about the site technology
+## Specialized Search Engines
+
+[ViewDNS.info](https://viewdns.info/) prvoide a reverse IP lookup service.
+
+The [Threat Intelligence Platform](https://threatintelligenceplatform.com/) performs malware checks, port scanning, ssl certificate checks, whois request, mail server checks, DNS configuration checks, reverse IP lookup.
+
+Netcraft's [searchdns](https://searchdns.netcraft.com) view site reports that provides information about the site technology
 
 ## Trial / Open source code 
 GitHub, GitLab and SourceForge.
@@ -68,8 +73,8 @@ Check [haveibeenpwned](https://haveibeenpwned.com/PwnedWebsites) or [Pastebin](h
 ## Frameworks
 
 [OSINT Framework](https://osintframework.com/)
-[Maltego - Paid](https://www.paterva.com/buy/maltego-clients.php)
+[Maltego](https://www.paterva.com/buy/maltego-clients.php)
 
 ## References
 
-[THM Room]()
+[THM Room](https://tryhackme.com/room/redteamrecon)

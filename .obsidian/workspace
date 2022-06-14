@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Recon/Passive-Information-Gathering/Passive-Recon.md",
+            "file": "Recon/Web-Analysis/NiktoCS.md",
             "mode": "source"
           }
         }
@@ -39,7 +39,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "nikto",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Recon/Passive-Information-Gathering/Passive-Recon.md",
+                "file": "Recon/Web-Analysis/NiktoCS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +88,15 @@
   },
   "active": "60a8a3e49c53a7c4",
   "lastOpenFiles": [
+    "Recon/Web-Analysis/NiktoCS.md",
+    "Recon/Passive-Information-Gathering/Geolocating/geolocating.md",
+    "Recon/Passive-Information-Gathering/Recon-ng/Recon-ng.md",
     "Recon/Passive-Information-Gathering/Passive-Recon.md",
     "Hardening/Hardening.md",
     "Recon/Passive-Information-Gathering/theHarvester/theHarvester.md",
     "Recon/Passive-Information-Gathering/Shodan/Shodan.md",
-    "Recon/Passive-Information-Gathering/Recon-ng/Recon-ng.md",
     "Recon/Active-Information-Gathering/DNS/DNS.md",
     "Coding-Scripting-Programming/Bash/useful_bash.md",
-    "Recon/Passive-Information-Gathering/DNS-Enumeration.md",
-    "Coding-Scripting-Programming/Vulnerable-Functions/Javascript.md",
-    "Foothold/reverseShell.md"
+    "Recon/Passive-Information-Gathering/DNS-Enumeration.md"
   ]
 }
