@@ -54,9 +54,9 @@ Sites | Collections of users, groups, computers as defined by their physical loc
 1. After creating DC machine change the `Shared Clipboard` and `Drag'n'Drop` settings to `Bidirection`.
 1. Creating a Network interface card NIC: First needs to be attached to` NAT`  another on `Internal Network`.
 1. Run DC vm and add the ISO, select location, time and currency formating and keyboard setting you prefer.
-1. Select install and install one of the Desktop Experience version for the GUI. 
+1. Select: install and install one of the Desktop Experience version for the GUI. 
 1. Agree to terms of use.
-1. Select `Custom: Install...` then click next to format.
+1. Select: `Custom: Install...` then click next to format.
 1. Wait, it will reboot multiple times...
 1. Set the Administrator password
 1. Use `Input` tab to insert `Ctrl Alt Del` to get the Login Prompt.
@@ -79,19 +79,33 @@ Rename PC by searching  for `About PC`
 
 **Active Directory Domain Services
 
-Go to `Server Manager > Add roles and features > Next until Server Roles`(Unless you have more than one DC) . Select `Active Directory Domain Services` Next, next  and install. And wait.
+Go to `Server Manager > Add roles and features > Next until Server Roles`(Unless you have more than one DC) . Select: `Active Directory Domain Services` Next, next  and install. And wait.
 
-![postdeployment](Images/click-post-deployment-flag.png)
+![postdeployment](Images/adlab-click-post-deployment-flag.png)
 Click `Promote this server to a domain controller > Add a new forest` and name the root domain name. Then set a password for the Directory Service Restore Mode.
  
  **Administrator Account Setup**
  From start menu `Windows Administrator Tools > Active Directory Users and Computers`. `Right click mydomain.com` to make an Organizational Unit: 
- [make an ou](Images/make-ou.png) 
+ [make an ou](Images/adlab-make-ou.png) 
  `Click User` and make anything, but note that some organisations have nnaming convention for the logon name:
- [logon naming convention](Images/admin-setup.png)
+ [logon naming convention](Images/adlab-admin-setup.png)
  
  Right click the new user and make part of Adminstrative group by going to `Properties > Member of > Add...` input `Domain Admins`. 
  
+**RAS/NAT** 
+
+To allow the OUs to access the internet through the DC open `Server Manage > Add roles > Next till Server Selection & Select: a server from server pool = DC.<domainname>.com > Next Server Roles & Select: = Reomte Access > Next & Next > Selection Routing (it will autoselect DirectAccess and VPN (RAS) > Next & Next & Next > Install`.
+
+Then once installed back to `Server Manager > Dashboard` click the drop down menu `Tools > Routing and Remote Access`. Right on DC and `Configure and Enable Routing and Remote Access > Next`
+![RoutingAndRemoteAccess](Images/adlab-routing-and-remote-access.png)
+
+Then `Select: Network address translation (NAT)` if NAT Internet Connection section does not allow `Use this public interface to connect to the Internet` just repeat from post installed section at `Tools > ...`. If does work `Select: <Name your made for internet routing way back when> > Next > Finish`. If success it should look similar to the image below:
+![routing-internet-success](Images/adlab-internet-for-users-success.png)
+
+**Install and Configure DHCP**
+
+To handle addressing we need instal and configure addressing. Similarly to previous features added in past sections this time starting at `Add roles and feature > ... > Server Roles > Select: DHCP Server > Add Features > Next & Next  & Next > Install`. Then to configure go `Tool Dropdown > DHCP`. Right click on `IPv4 > Provide a scope > Set a Start & End ranges as well as a  Subnet mask`. Considering it is a lab setup the Subnet mask should be `255.255.255.0` and your Start and End address space can be how `< 253`, excluding `.0` and `.255` last octets. `Exclude` any address you like if you want then `Next`. `Lease duration` being default 8 day is fine then `Next > Select: Yes, I want to configure these options now > Set Default gateway to DC's IP address > Add > Next > Next (if you want WINS servers configure here > Next > Next > Finish`. Returning to the DHCP control panel right click on `dc.<domainname>` and `Select: Authorize` and then repeat but `Select: Refresh`. Green ticks equals success.
+
 ## VMware setup
 
 ## References

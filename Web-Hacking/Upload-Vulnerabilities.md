@@ -48,3 +48,8 @@ If file permission on the server are lacks, location of file path found and info
 4. Change the content, length of file
 	1. encoding
 	2. compression
+
+
+## Upload functionality specifics
+
+- If .aspx then use a .aspx reverseshell
