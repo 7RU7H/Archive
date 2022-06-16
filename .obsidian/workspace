@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Virtualization/Lab-Making/Active-Directory-Lab.md",
+            "file": "Recon/Active-Information-Gathering/LDAP/LDAP.md",
             "mode": "source"
           }
         }
@@ -39,7 +39,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "nikto",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Virtualization/Lab-Making/Active-Directory-Lab.md",
+                "file": "Recon/Active-Information-Gathering/LDAP/LDAP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +88,15 @@
   },
   "active": "60a8a3e49c53a7c4",
   "lastOpenFiles": [
-    "Virtualization/Lab-Making/Active-Directory-Lab.md",
-    "Hardware-Maintance/usbs.md",
-    "Web-Hacking/Upload-Vulnerabilities.md",
-    "Recon/Active-Information-Gathering/OS-Detection/OS-Detection.md",
-    "Foothold/Reverse-Shells.md",
+    "Recon/Active-Information-Gathering/LDAP/LDAP.md",
+    "Recon/Active-Information-Gathering/SMB/smbCS.md",
+    "Recon/Active-Information-Gathering/Nmap/nmapAllTheScripts.md",
+    "Recon/Active-Information-Gathering/Active-Directory/Active-Directory-Enumeration.md",
+    "Windows/Active-Directory/Active-Directory-Defined.md",
+    "Cyberwarfare/Battlegrounds.md",
+    "name.png.md",
     "Recon/Active-Information-Gathering/DNS/DNS.md",
-    "Networks/Network-Theory/DNS.md",
-    "Coding-Scripting-Programming/Bash/useful_bash.md",
-    "Networks/Network-Theory/networkTechnologies.md",
-    "Networks/Network-Theory/mailOperations.md"
+    "Hardware-Maintance/usbs.md",
+    "Cryptography/JohnTheRipper.md"
   ]
 }

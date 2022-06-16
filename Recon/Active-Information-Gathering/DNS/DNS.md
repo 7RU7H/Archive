@@ -1,5 +1,5 @@
 # DNS
-[DNS](https://en.wikipedia.org/wiki/Domain_Name_System) is a distributed database responsible for translating domain names into IP addresses. [For theory](Networks/Network-Theory/DNS)
+[DNS](https://en.wikipedia.org/wiki/Domain_Name_System) is a distributed database responsible for translating domain names into IP addresses. [[Networks/Network-Theory/DNS]]()
 
 ## Host lookup
 
