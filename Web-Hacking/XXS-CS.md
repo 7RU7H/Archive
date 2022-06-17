@@ -1,3 +1,9 @@
+# XXS
+
+
+```html
+<img src=http:// />
+```
 
 ## XXS Polyglots
 ```javascript

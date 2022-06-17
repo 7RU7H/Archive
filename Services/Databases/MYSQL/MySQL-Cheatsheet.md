@@ -2,6 +2,13 @@
 
 > Help with SQL commands to interact with a MySQL database
 
+## Service  Access Information
+```
+username@% # login from anywhere
+root@127.0.0.1 # login only from local hosts
+```
+MySQL supports file reads
+
 ## MySQL Locations
 * Mac             */usr/local/mysql/bin*
 * Windows         */Program Files/MySQL/MySQL _version_/bin*

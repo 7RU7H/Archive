@@ -1,4 +1,15 @@
+# John The Ripper
 
+## Quick Useful Commands
+
+
+## Tools
+
+
+## Scenarios
+
+
+#### Protected ZIP
 
 ## zip2john
 

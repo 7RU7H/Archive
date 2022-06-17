@@ -1,6 +1,6 @@
 # Kali Hardening
 
-Initially planning by review how to contruct a [security policies](Secure-Architectures/Security-Policies)
+Initially planning by review how to contruct a [security policies](Security-Policies.md)
 
 Hardening starts before you install your system
 

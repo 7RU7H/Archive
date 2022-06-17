@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Recon/Active-Information-Gathering/LDAP/LDAP.md",
+            "file": "Tools/Useful-Software/vimCS.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Recon/Active-Information-Gathering/LDAP/LDAP.md",
+                "file": "Tools/Useful-Software/vimCS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +88,15 @@
   },
   "active": "60a8a3e49c53a7c4",
   "lastOpenFiles": [
-    "Recon/Active-Information-Gathering/LDAP/LDAP.md",
-    "Recon/Active-Information-Gathering/SMB/smbCS.md",
-    "Recon/Active-Information-Gathering/Nmap/nmapAllTheScripts.md",
-    "Recon/Active-Information-Gathering/Active-Directory/Active-Directory-Enumeration.md",
-    "Windows/Active-Directory/Active-Directory-Defined.md",
-    "Cyberwarfare/Battlegrounds.md",
-    "name.png.md",
+    "Tools/Useful-Software/vimCS.md",
+    "Reverse-Engineering/Source-Code-Analysis.md",
+    "Web-Hacking/Json/Untitled.md",
+    "Services/Databases/MYSQL/MySQL-Cheatsheet.md",
+    "Web-Hacking/XXS-CS.md",
     "Recon/Active-Information-Gathering/DNS/DNS.md",
-    "Hardware-Maintance/usbs.md",
-    "Cryptography/JohnTheRipper.md"
+    "Networks/Network-Theory/DNS.md",
+    "Cryptography/JohnTheRipper.md",
+    "Password-Attacks/John-The-RipperCS.md",
+    "Coding-Scripting-Programming/Python/useful_python3.md"
   ]
 }
