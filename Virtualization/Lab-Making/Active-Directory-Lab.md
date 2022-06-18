@@ -1,16 +1,21 @@
 # Active Directory Lab Making
 
+Under construction
+
 ## Introduction
-AD is everywhere and this article is full of Acronyms to ensure that the length of this is smaller than the size of the official documentation so firstly a glossary of term to \[Home\] key to. Then the contents.
+This is manual setup guide and walkthrough of Active Directory for those that the hands on experience of making and configuring there own. There are many video guides list for variations., but this article contains both VMware(WILL AT SOME POINT) and Virtualbox setups. A brief overview of automated and automating setups will also be provided, but the overall idea is to build ground up knowledge and experience before firing of a script someone else wrote to make some vulnerable. Some have suggestedm, especially for beginnners, that the more intimate experience of turning on and off settings and testing is more valuable than than the script kiddie *spin up VM and wap-out-the someone-elses script then bang tools together to get x outcome*. 
 
-##### Glossary of Terms 
-Acronym | Contraction
---- | ---
-
+Secondly AD is everywhere and this article is full of acronyms to ensure that the length of this is smaller than the size of the official documentation so firstly open [[Active-Directory-Defined]]. If you require termonolgy there is a glossary at the end of the page, but the article also contains defintions, theory and architecture related information. 
 
 ##### Contents
 1. List of Requirements and where to get them
-2. *some* general Installation instructions
+2. Alternate Automated Variation on setups
+3. AD Components
+4. ISO downloading
+5. VirtualBox Setup
+6. VMware Setup
+7. *maybe one* cloud setup
+8. References
 
 
 ## List of requirements
@@ -19,7 +24,7 @@ Although inspired by all the references there are two contraints for these requi
 2. Domain controller
 3. Users need the least but need 
 
-
+## Alternate Automated 
 
 
 ## Active Directory Domain Service (AD DS) Components
@@ -77,7 +82,7 @@ Subnet Mask: 255.255.255.0
 
 Rename PC by searching  for `About PC`
 
-**Active Directory Domain Services
+**Active Directory Domain Services**
 
 Go to `Server Manager > Add roles and features > Next until Server Roles`(Unless you have more than one DC) . Select: `Active Directory Domain Services` Next, next  and install. And wait.
 
@@ -106,7 +111,29 @@ Then `Select: Network address translation (NAT)` if NAT Internet Connection sect
 
 To handle addressing we need instal and configure addressing. Similarly to previous features added in past sections this time starting at `Add roles and feature > ... > Server Roles > Select: DHCP Server > Add Features > Next & Next  & Next > Install`. Then to configure go `Tool Dropdown > DHCP`. Right click on `IPv4 > Provide a scope > Set a Start & End ranges as well as a  Subnet mask`. Considering it is a lab setup the Subnet mask should be `255.255.255.0` and your Start and End address space can be how `< 253`, excluding `.0` and `.255` last octets. `Exclude` any address you like if you want then `Next`. `Lease duration` being default 8 day is fine then `Next > Select: Yes, I want to configure these options now > Set Default gateway to DC's IP address > Add > Next > Next (if you want WINS servers configure here > Next > Next > Finish`. Returning to the DHCP control panel right click on `dc.<domainname>` and `Select: Authorize` and then repeat but `Select: Refresh`. Green ticks equals success.
 
+Depending on whether you are creating a IPv4 or IPv6 network you will also need to set unde `DHCP > dc.<domainname> > IPv* > Server Options > [Right-Click] > Configure Options > [Tick] Router > Ip Address: <DC ip address> + Select Add > Apply`
+
+**Users**
+
+**Client Machine** 
+
+Firstly make sure you have enterprise ISO  version
+**HIGHLY RECOMMEND** you note the exact configuration fo locale and keyboard for easy of use and *just incase the are some weird non-cooperative strangeness(I can only speculate on) regarding localisation issues*. 
+
+Secondly this install is very simple if you read the above alot of `Next` until:
+1. Choose `Custom install`
+1. Select `I don't have internet`
+1. Select `Continue with Limited Setup` make sure you choose something that prevent you creating Microsoft accounts.
+Make User; turn off all privacy settings for your device, `not now`  for cortana.
+
+Post setup
+```powershell
+ipconfig # check default gateway is set to DC
+ping # something to see if setup is working
+```
+
 ## VMware setup
+
 
 ## References
 [shehackske](https://shehackske.medium.com/active-directory-how-to-set-up-an-ad-lab-66647fb453c0)

@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Tools/Useful-Software/vimCS.md",
+            "file": "Post-Exploitation/Privilege-Escalation/Windows/windowsPrivEsc.md",
             "mode": "source"
           }
         }
@@ -52,7 +52,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 271
+    "width": 202
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/Useful-Software/vimCS.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Windows/windowsPrivEsc.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +88,15 @@
   },
   "active": "60a8a3e49c53a7c4",
   "lastOpenFiles": [
+    "Post-Exploitation/Privilege-Escalation/Windows/windowsPrivEsc.md",
+    "Post-Exploitation/Privilege-Escalation/Active-Directory/activeDirectoryPrivEsc.md",
+    "Tools/Nessus/Nessus.md",
+    "Tools/OpenVAS/OpenVAS.md",
+    "Recon/Active-Information-Gathering/Vulnerability-Scanning.md",
+    "Virtualization/Lab-Making/Active-Directory-Lab.md",
+    "Windows/Active-Directory/Active-Directory-Defined.md",
+    "Web-Hacking/Json/Json.md",
     "Tools/Useful-Software/vimCS.md",
-    "Reverse-Engineering/Source-Code-Analysis.md",
-    "Web-Hacking/Json/Untitled.md",
-    "Services/Databases/MYSQL/MySQL-Cheatsheet.md",
-    "Web-Hacking/XXS-CS.md",
-    "Recon/Active-Information-Gathering/DNS/DNS.md",
-    "Networks/Network-Theory/DNS.md",
-    "Cryptography/JohnTheRipper.md",
-    "Password-Attacks/John-The-RipperCS.md",
-    "Coding-Scripting-Programming/Python/useful_python3.md"
+    "Reverse-Engineering/Source-Code-Analysis.md"
   ]
 }
