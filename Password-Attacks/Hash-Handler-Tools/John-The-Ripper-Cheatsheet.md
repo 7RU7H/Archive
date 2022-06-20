@@ -1,5 +1,7 @@
 # John The Ripper
 
+[OpenWall wiki's sample hashes can be found here](https://openwall.info/wiki/john/sample-hashes)
+
 ## Quick Useful Commands
 
 
@@ -44,3 +46,6 @@ For "CaPiTaLiSeD LeTtEr ThEn LoWeRcAsE" --rules=NT
 [List.Rules:reversed]
 r
 ```
+
+## References
+[Openwall Wiki](https://openwall.info/wiki)

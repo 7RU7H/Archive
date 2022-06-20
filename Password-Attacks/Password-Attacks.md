@@ -1,4 +1,7 @@
 # Password Attacks
+## Quick Links
+For just [OpenWall wiki's sample hashes can be found here](https://openwall.info/wiki/john/sample-hashes) and similarly [Hashcat's example hashes](https://hashcat.net/wiki/doku.php?id=example_hashes). These are good for rough useful visual guide and naming format for both tools usage.
+
 ## Introduction 
 We can use a [Dictionary Attack](https://en.wikipedia.org/wiki/Dictionary_attack) using a wordlist or we can [Brute Force](https://en.wikipedia.org/wiki/Brute-force_attack) all possible character combination. If hashes are leaked misconfiguration or another exploit or from a [Pass-the-hash-Attack](https://en.wikipedia.org/wiki/Pass_the_hash), the attacker can then perform [Password Cracking](https://en.wikipedia.org/wiki/Password_cracking). 
 
@@ -11,24 +14,36 @@ Kali, Parrot and Arch wordlists generally found  in `/usr/share/wordlists/`. The
 https://cirt.net/passwords
 https://default-password.info/
 
+## Password Attacks Against Network Sevices
+1. Noisy attack
+1. Dangerous, can damage service for regular users
+1. Time consuming - exponentiation of hopeful `< x^passwords_to_try`
+	1. Worst case its `$total_usernames^$total_passwords` 
+	1. Even slower if as protocol even restrict threaded interaction
+		1.   SMB
+		2.   RDP
 
-## Weak passwords ##
-https://wiki.skullsecurity.org/index.php?title=Passwords 
+## Cracking Password Hashes
+Most system store password authentication locally in to for of cryptographic hashes. Linux stores hashes in `/etc/shadow` implementing shadow-utils, see [slashroot](https://www.slashroot.in/how-are-passwords-stored-linux-understanding-hashing-shadow-utils). Whereas for Windows systems are storeed in Security Accounts Manager(SAM); from NT 4.0 SP3 SYSKEY feature partial encrypts the SAM file. Previous and including Windows 2003 LM  and NTLM hashes are stored rather than just NTLM(**UNSALTED**) disabling LM from Vista onwards. Some hashes have [Salts](https://en.wikipedia.org/wiki/Salt_(cryptography)) to improve password storage security . Identification is the first stage to cracking as there are a vast number of types and strengths. Weak passwords are bad m'kay to see list of dumped passwords head over to [skullsecurity](https://wiki.skullsecurity.org/index.php?title=Passwords).
 
-## Tools ##
-
+## Tools
 [Raw tools for cracking link here](https://inventory.raw.pm/tools.html#title-tools-cracking)
 
-Tool | Description | Local CS
---- | --- | ---
-cewl | crawl a website and extract strings or keywords  | [[Cewl-Cheatsheet]]
-crunch | offline wordlist creation | [[Crunch-Cheatsheet]]
-cupp | create custom wordlists | 
-mentalist | gui wordlist generation | 
-Haiti | hash identifier | 
+Tool | Description | Local Cheatsheet | Links
+--- | --- | --- | ---
+Cewl | crawl a website and extract strings or keywords  | [[Cewl-Cheatsheet]] |
+Crunch | offline wordlist creation | [[Crunch-Cheatsheet]] |
+Cupp | create custom wordlists | |
+Mentalist | gui wordlist generation | |
+Haiti | hash identifier | |
+Hashid | Hash identifier | | [psypanda](https://psypanda.github.io/hashID/)
 John | hash cracker |  [[John-The-Ripper-Cheatsheet]]
 Hashcat | hash cracker | [[Hashcat-Cheatsheet]]
-Hydra | guess/crack valid login/password pairs | [[Hydra-Cheatsheet]]
+Hydra |  De-facto Login Bruteforcer | [[Hydra-Cheatsheet]] | [kalitools](https://www.kali.org/tools/hydra/) [github](https://github.com/vanhauser-thc/thc-hydra)
+Brutespray | Brute-Forcing from Nmap output also with default creds | [[Brutespray-Cheatsheet]] |[kalitools](https://github.com/x90skysn3k/brutespray) [github](https://www.kali.org/tools/brutespray/)
+Crowbar | Brute force the RDP service on a single host with a specified username and wordlist, using 1 thread. | [[Crowbar-CheatSheat]] | [kalitools](https://www.kali.org/tools/crowbar/) [github](https://github.com/galkan/crowbar)
+Medusa | Medusa is a speedy, parallel, and modular, login brute-forcer. |  |[kalitools](https://www.kali.org/tools/medusa/) [github](https://github.com/jmk-foofus/medusa)
+pth-winexe | Path the Hash tool | [[PtH-winexe-Cheatsheet]] |  
 
 # Wordlist generation tools
 This section contains some breif description of tools and links to cheatsheets.
@@ -68,8 +83,11 @@ john --list=rules
 python3 /opt/wordlistctl/wordlistctl.py
 
 
+## Hashcracking
 
-## Train of thought and methodology guide
+[OpenWall wiki's sample hashes can be found here](https://openwall.info/wiki/john/sample-hashes) and similarly [Hashcat's example hashes](https://hashcat.net/wiki/doku.php?id=example_hashes)These are good for rough useful visual guide and naming format for both tools usage. [Hashkiller is a identifing service it has a self signed cert, but offensive security recommends it so ask yourself first](https://hashkiller.co.uk/) 
+
+#### Train of thought and methodology guide
 1. This all about trial and error
 1. Hardware configuration matters
 2. Pick good wordlists
@@ -78,7 +96,7 @@ python3 /opt/wordlistctl/wordlistctl.py
         Symbol at the end
         all small
 
-## Concepts with some John-The-Ripper-Custom-Rules
+####  Concepts with some John-The-Ripper-Custom-Rules
 Wordlist expansion with JOHN!
 ```bash
 john --wordlist=/wordlist.txt --rules=rulename --stdout >> newlist.txt
@@ -106,7 +124,7 @@ For "CaPiTaLiSeD LeTtEr ThEn LoWeRcAsE" --rules=NT
 r
 ```
 
-##  Mutation typology
+**Mutation typology**
 Mutation | Description
 --- | ---
 Repetition mutation | the same group of characters are repeated several times
@@ -117,6 +135,12 @@ Duplicate mutation | some characters are duplicated
 Delimiter mutation | delimiters are added between characters
 
 ## Password Spray Attacks
+
+## Pass the Hash
+Discovered in 1997, is a technique of collecting the NTLM/LM hashes for use in authenicating as a user with hash. For full cheatsheets: [[PtH-winexe-Cheatsheet]];
+
+
+
 
 ## References
 
@@ -129,3 +153,6 @@ Delimiter mutation | delimiters are added between characters
 [Seclists](https://github.com/danielmiessler/SecLists)
 [assetnote](https://wordlists.assetnote.io/)
 [Raw tools for cracking link here](https://inventory.raw.pm/tools.html#title-tools-cracking)
+[Salts](https://en.wikipedia.org/wiki/Salt_(cryptography))
+[Slashroot Article](https://www.slashroot.in/how-are-passwords-stored-linux-understanding-hashing-shadow-utils)
+[skullsecurity](https://wiki.skullsecurity.org/index.php?title=Passwords)
