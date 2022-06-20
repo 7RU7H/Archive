@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "60a8a3e49c53a7c4",
+        "id": "e953369ee76839b0",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Password-Attacks/Password-Attacks.md",
+            "file": "Coding-Scripting-Programming/Bash/useful_bash.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Password-Attacks/Password-Attacks.md",
+                "file": "Coding-Scripting-Programming/Bash/useful_bash.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -86,17 +86,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "60a8a3e49c53a7c4",
+  "active": "e953369ee76839b0",
   "lastOpenFiles": [
-    "Password-Attacks/Password-Attacks.md",
-    "Password-Attacks/Default-Passwords-Data-Recovery-Table.md",
-    "Password-Attacks/Pass-The-Hash-Tools/PtH-winexe-Cheatsheet.md",
-    "Post-Exploitation/Mimikatz.md",
-    "Password-Attacks/Hash-Handler-Tools/Hashcat-Cheatsheet.md",
-    "Password-Attacks/Hash-Handler-Tools/John-The-Ripper-Cheatsheet.md",
-    "Password-Attacks/Login-Tools/Brutespray-Cheatsheet.md",
-    "Password-Attacks/Wordlist-Tools/Crunch-Cheatsheet.md",
-    "Password-Attacks/Login-Tools/Crowbar-CheatSheat.md",
-    "Medusa-Cheatsheet.md"
+    "Coding-Scripting-Programming/Bash/useful_bash.md",
+    "Recon/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
+    "Exploitation/Windows/Active-Directory/Foothold-On-AD.md",
+    "Exploitation/Windows/Active-Directory/AD-Exploitation-Hub.md",
+    "Tools/Useful-Software/Vim-Cheatsheet.md",
+    "Recon/Passive-Information-Gathering/Geolocating/geolocating.md",
+    "Recon/Active-Information-Gathering/Masscan/Masscan-Cheatsheet.md",
+    "Recon/Active-Information-Gathering/Vulnerability-Scanning.md",
+    "Recon/Active-Information-Gathering/Netcat-As-Recon.md",
+    "Tools/Useful-Software/Netcat-Cheatsheet.md"
   ]
 }

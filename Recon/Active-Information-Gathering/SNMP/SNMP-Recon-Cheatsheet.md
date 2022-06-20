@@ -1,4 +1,4 @@
-# SNMP
+# SNMP Cheatsheet
 UDP port 161 
 
 ## Enumeration

@@ -1,7 +1,7 @@
 # geolocating
 
 ## General Jpeg lookup 
-[yandex](yandex.com)
+[yandex](https://yandex.com)
 
 
 ## Finding stuff formula

@@ -1,4 +1,4 @@
-# SMTP
+# SMTP Cheatsheet
 
 ## Telenet
 ```bash

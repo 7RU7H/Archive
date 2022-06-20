@@ -1,6 +1,5 @@
 # Server Message Block 
-SMB oringally ran on top of NetBIOS using port 139. NetBIOS is an older trnasport layer that allows Windows computer to communicate on the same network.
-Later versions of SMB(after Windows 2000) use port 445 on top of a TCP stack, TCP allows for internet communication.
+SMB oringally ran on top of NetBIOS using port 139. NetBIOS is an older trnasport layer that allows Windows computer to communicate on the same network. Later versions of SMB(after Windows 2000) use port 445 on top of a TCP stack, TCP allows for internet communication.
 
 
 ## smbmap
@@ -70,8 +69,8 @@ nmap -p 111 --script=nfs-ls,nfs-statfs,nfs-showmount $IP
 
 ```bash
 nmap -p 445 --script smb-enum-users <target> --script-args smbuser=username,smbpass=password,smbdomain=domain nmap -p 445 --script smb-enum-users <target> --script-args smbuser=username,smbhash=LM:NTLM,smbdomain=domain
-nmap --script smb-enum-users.nse --script-args smbusername=User1,smbpass=Pass@1234,smbdomain=workstation -p445 192.168.1.10
-nmap --script smb-enum-users.nse --script-args smbusername=User1,smbhash=aad3b435b51404eeaad3b435b51404ee:C318D62C8B3CA508DD753DDA8CC74028,smbdomain=mydomain -p445 192.168.1.10
+nmap --script smb-enum-users.nse --script-args smbusername=User1,smbpass=Pass@1234,smbdomain=workstation -p445 $ip
+nmap --script smb-enum-users.nse --script-args smbusername=User1,smbhash=aad3b435b51404eeaad3b435b51404ee:C318D62C8B3CA508DD753DDA8CC74028,smbdomain=mydomain -p445 $ip
 
 # nmap - Enum Groups
 nmap -p 445 --script smb-enum-groups <target> --script-args smbuser=username,smbpass=password,smbdomain=domain nmap -p 445 --script smb-enum-groups <target> --script-args smbuser=username,smbhash=LM:NTLM,smbdomain=domain
@@ -83,15 +82,15 @@ nmap -p 445 --script smb-enum-shares <target> --script-args smbuser=username,smb
 nmap -p 445 --script smb-os-discovery <target>
 
 # nmap - SMB Vulnerabilities on Windows
-nmap -p 445 --script smb-vuln-ms06-025 target-IP
-nmap -p 445 --script smb-vuln-ms07-029 target-IP
-nmap -p 445 --script smb-vuln-ms08-067 target-IP
-nmap -p 445 --script smb-vuln-ms10-054 target-IP
-nmap -p 445 --script smb-vuln-ms10-061 target-IP
-nmap -p 445 --script smb-vuln-ms17-010 target-IP
+nmap -p 445 --script smb-vuln-ms06-025 $ip
+nmap -p 445 --script smb-vuln-ms07-029 $ip
+nmap -p 445 --script smb-vuln-ms08-067 $ip
+nmap -p 445 --script smb-vuln-ms10-054 $ip
+nmap -p 445 --script smb-vuln-ms10-061 $ip
+nmap -p 445 --script smb-vuln-ms17-010 $ip
 
 # nmap - Brute Force Accounts (be aware of account lockout!)
-nmap –p 445 --script smb-brute –script-args userdb=user-list.txt,passdb=pass-list.txt target-IP
+nmap –p 445 --script smb-brute –script-args userdb=user-list.txt,passdb=pass-list.txt $ip
 ```
 
 ## Search msfconsole!

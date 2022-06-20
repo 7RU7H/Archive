@@ -5,7 +5,7 @@ q+a [record macro] + esc [to end recording then exec with] @a
 ```
 
 # Source: vim.rtorr.com
-[Reference](vim.rtorr.com)
+[Reference](https://vim.rtorr.com)
 Exiting
 ```vim
 :w 	write (save) the file, but don't exit

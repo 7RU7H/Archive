@@ -1,5 +1,6 @@
-# Useful Netcat
+# Netcat Cheatsheet
 
+## Useful commands and context
 
 Interact with application:
 ```bash

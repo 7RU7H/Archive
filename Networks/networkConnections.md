@@ -100,7 +100,7 @@ umount ip:/local/file/path			#because why would you need the "n"
 ```
 
 ## NBT - SMB
-Server Message Block protocol uses a client-server model. Cliet uses `smbclient` see [smbclientCheatSheet](smbCS.md)
+Server Message Block protocol uses a client-server model. Cliet uses `smbclient` see [smbclientCheatSheet](SMB-Recon-Cheatsheet.md)
 SMB oringally ran on top of NetBIOS using port 139. NetBIOS is an older trnasport layer that allows Windows computer to communicate on the same network.
 Later versions of SMB(after Windows 2000) use port 445 on top of a TCP stack, TCP allows for internet communication.
 NetBIOS over TCP/IP (NetBT)			#Windows name resolution
