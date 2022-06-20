@@ -5,12 +5,6 @@ Hacking Methodology and Mechanical/Informational/Computational Art, Cheatsheats,
 
 The Internet is an awesome resource, but sometimes it is forgotten the power of small, focused and contained networks of information.
 
-## TODO
-#### READ https://blog.certcube.com/oscp-study/
-
-#### Segment
-useful\_\*language to maybe -> basic\_ + useful\_ + modularX\__
-
 #### Linux PrivEsc TODO:
 
 https://tryhackme.com/room/linuxfunctionhooking

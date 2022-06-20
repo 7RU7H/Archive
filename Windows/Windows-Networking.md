@@ -11,7 +11,7 @@ xfreerdp
 ```
 
 ## Basic Commands
-[See full listing](/windowsNetworkCMD)  
+See full listing of [[Windows-Networking-Commands]]  
 
 ifconfig to inspect IPv4 and IPv6 addresses, subnet mask and default gateway
 ```powershell

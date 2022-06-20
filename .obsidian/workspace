@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Coding-Scripting-Programming/Bash/useful_bash.md",
+            "file": "todoList.md",
             "mode": "source"
           }
         }
@@ -52,7 +52,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 202
+    "width": 383
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Coding-Scripting-Programming/Bash/useful_bash.md",
+                "file": "todoList.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +88,15 @@
   },
   "active": "e953369ee76839b0",
   "lastOpenFiles": [
-    "Coding-Scripting-Programming/Bash/useful_bash.md",
-    "Recon/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
-    "Exploitation/Windows/Active-Directory/Foothold-On-AD.md",
-    "Exploitation/Windows/Active-Directory/AD-Exploitation-Hub.md",
-    "Tools/Useful-Software/Vim-Cheatsheet.md",
-    "Recon/Passive-Information-Gathering/Geolocating/geolocating.md",
-    "Recon/Active-Information-Gathering/Masscan/Masscan-Cheatsheet.md",
-    "Recon/Active-Information-Gathering/Vulnerability-Scanning.md",
+    "todoList.md",
+    "Recon/Active-Information-Gathering/LDAP/LDAP-Recon.md",
+    "Coding-Scripting-Programming/Python/useful_python3.md",
+    "Recon/Active-Information-Gathering/SNMP/SNMP-Recon-Cheatsheet.md",
+    "Recon/Active-Information-Gathering/SMTP/SMTP-Recon-Cheatsheet.md",
     "Recon/Active-Information-Gathering/Netcat-As-Recon.md",
-    "Tools/Useful-Software/Netcat-Cheatsheet.md"
+    "Networks/Network-Services.md",
+    "Recon/Active-Information-Gathering/Nmap/nmapAllTheScripts.md",
+    "Recon/Active-Information-Gathering/SMB/RPCClient-Cheatsheet.md",
+    "Coding-Scripting-Programming/Powershell/basic_Powershell.md"
   ]
 }

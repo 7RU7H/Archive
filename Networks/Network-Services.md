@@ -1,26 +1,6 @@
-# Network connections
-https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml
+# Network services
 
-127.0.0.1 = localhost
-
-Loopback network interface:
-Allow local machines to run network service without exposing them remotely.
-
-Connect to those port with protocols:
-
-##  TELNET
-Generall port 23, Telnet is cleartext and unsecure!
-
-```bash
-telnet ip
-# THEN
-GET / HTTP/1.1 
-# OR
-GET /page.html HTTP/1.1
-#Will get telnet get you cleartext info on servers with exposed telnet ports
-```
-
-## FTP
+## 20/21 - FTP
 File transfer protocol, client-server model
 1. Port 20 for data
 2. Port 21 for commands 
@@ -44,8 +24,7 @@ get file
 put file	upload files!
 ```
 
-
-## SSH
+## 22 SSH
 generally port 22
 ```
 -i	access with private key
@@ -56,27 +35,43 @@ generally port 22
 -p      port
 ```
 
-## SFTP - submodule of ssh
+## 22 - SFTP - submodule of ssh
 Secure File transfer protocol port 22 
 
+## 23 - TELNET
+Generall port 23, Telnet is cleartext and unsecure!
 
-SMTP
-//generally 25
-//simple mail transfer protocol
-use telnet
+```bash
+telnet $ip
+# THEN
+GET / HTTP/1.1 
+# OR
+GET /page.html HTTP/1.1
+#Will get telnet get you cleartext info on servers with exposed telnet ports
+```
 
-WHOIS 
+## 25 - SMTP
+Generally 25
+Stands for Simple mail transfer protocol
+For recon: [[SMTP-Recon-Cheatsheet]]
+```bash
+telnet $ip
+nc -nv $IP
+
+```
+
+## 48 - WHOIS 
 //generally 48
 
-# DNS
+## 53 - DNS
 //default 53
 
-TFTP
-//trivial file transfer protocol - UDP FTP
-//generally 69
+## 69 - TFTP
+Stands for trivial file transfer protocol - UDP FTP
+generally 69
 
-HTTP
-//generally 80
+## 80 - HTTP
+Default 80
 
 POP3
 //generally 110
@@ -88,22 +83,27 @@ STAT
 LIST	list all messUSER 
 RETR	return a message
 
-# NFS
+# 111 - NFS
+[[NFS-Recon]]
 //On both 111 2049
-//Use client-server model
-//Shared directory, mount those shares!
-```
-sudo showmount -e ip
-sudo mount ip:/file/path /local/file/path
-sudo mount -o port=1234 -t nfs $IP:/dir /tmp/local
-umount ip:/local/file/path			#because why would you need the "n"
+
+Shared directory, mount those shares!
+```bash
+sudo showmount -e $ip
+sudo mount $ip:/file/path /local/file/path
+
+sudo mount -o port=1234 -t nfs $ip:/dir /tmp/local
+# nolock maybe required for older systems
+sudo mount -o nolock port=1234 -t nfs $ip:/dir /tmp/local
+
+umount $ip:/local/file/path	
 ```
 
-## NBT - SMB
+## 13(5,7-9), 445 -  NBT - SMB
+[[SMB-Recon-Cheatsheet]]
 Server Message Block protocol uses a client-server model. Cliet uses `smbclient` see [smbclientCheatSheet](SMB-Recon-Cheatsheet.md)
-SMB oringally ran on top of NetBIOS using port 139. NetBIOS is an older trnasport layer that allows Windows computer to communicate on the same network.
-Later versions of SMB(after Windows 2000) use port 445 on top of a TCP stack, TCP allows for internet communication.
-NetBIOS over TCP/IP (NetBT)			#Windows name resolution
+SMB oringally ran on top of NetBIOS using port 139. NetBIOS is an older transport layer that allows Windows computer to communicate on the same network. Later versions of SMB(after Windows 2000) use port 445 on top of a TCP stack, TCP allows for internet communication.
+NetBIOS over TCP/IP (NetBT)	Windows name resolution
 135(TCP) msrpc
 137(TCP/UDP)
 138(UDP)
@@ -113,12 +113,13 @@ NetBIOS over TCP/IP (NetBT)			#Windows name resolution
 ## IMAP
 //generally 143
 
-## LDAP
-default port 389
-[Pentest CS for LDAP ivanversluis](https://github.com/ivanversluis/pentest-hacktricks/blob/master/pentesting/pentesting-ldap.md)
+## 389 - LDAP
+Default port 389
+[[LDAP-Recon]]
 
 
-## HTTPS
+
+## 443- HTTPS
 //internet messaging access protocol
 //default port 443
 
@@ -131,7 +132,6 @@ HTTP-ALT
 IPP
 //internet printing protocol
 //default port 631
-
 
 FTPS 
 //default port 990
@@ -166,7 +166,8 @@ Legacy application [Pando](https://en.wikipedia.org/wiki/Pando_(application)) Bi
 ## Burp Proxy
 default port 8000
 
-## TOMCAT PROXY
+## Tomcat HTTP roxy
+[[Apache-Tomcat]]
 default port 8009
 
 ## Apache JServ Protocol
@@ -175,3 +176,7 @@ default  8009
 
 ## HTTP Alternate
 default 8080
+
+
+## References
+[iana](https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml)

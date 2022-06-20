@@ -1,3 +1,4 @@
+# LDAP Recon
 
 ## Nmap
 
@@ -32,3 +33,4 @@ Optional user and password
 
 ## References
 [Curtis Houghton is awesome](https://github.com/curtishoughton/Penetration-Testing-Cheat-Sheet/blob/master/Enumeration/LDAP/LDAP.md)
+[Pentest CS for LDAP ivanversluis](https://github.com/ivanversluis/pentest-hacktricks/blob/master/pentesting/pentesting-ldap.md)

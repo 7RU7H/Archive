@@ -1,10 +1,14 @@
 # SMTP Cheatsheet
+Simple Mail Transport Protocol (SMTP)
+Vulnerable Email Servers can contain valuable information. 
+See [[Network-Services]] for port information.
 
 ## Telenet
 ```bash
 telnet $IP 25
 nc -nv $IP 25
-vrfy $useremail
+VRFY $useremail # verify email address
+EXPN # Ask server for membership
 ```
 Code 250,251,252 means accepted and user account is valid; code 550 means invalid user.
 

