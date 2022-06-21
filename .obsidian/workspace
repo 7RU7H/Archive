@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "todoList.md",
-            "mode": "source"
+            "file": "Recon/Mechanizing-The-Methodology.md",
+            "mode": "preview"
           }
         }
       }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "todoList.md",
+                "file": "Recon/Mechanizing-The-Methodology.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,6 +88,7 @@
   },
   "active": "e953369ee76839b0",
   "lastOpenFiles": [
+    "Recon/Mechanizing-The-Methodology.md",
     "todoList.md",
     "Recon/Active-Information-Gathering/LDAP/LDAP-Recon.md",
     "Coding-Scripting-Programming/Python/useful_python3.md",
@@ -96,7 +97,6 @@
     "Recon/Active-Information-Gathering/Netcat-As-Recon.md",
     "Networks/Network-Services.md",
     "Recon/Active-Information-Gathering/Nmap/nmapAllTheScripts.md",
-    "Recon/Active-Information-Gathering/SMB/RPCClient-Cheatsheet.md",
-    "Coding-Scripting-Programming/Powershell/basic_Powershell.md"
+    "Recon/Active-Information-Gathering/SMB/RPCClient-Cheatsheet.md"
   ]
 }
