@@ -1,9 +1,8 @@
 # Burpsuite
-This is not a full detailed guide of how to use burpsuite more a selection of tricks and tips. There full courses of how to use this avaliable from Portswigger, but massive amount of free resources and relatively cheap resources to learn and practice from. This Cheatsheet is more just shortcuts, but is intended to make avaliable some of the functionality you may require extract from GUI menu to a scenario:   
+This is not a full detailed guide of how to use burpsuite more a selection of tricks and tips. It not really a cheatsheet and more a sheet of helpful stuff. There are full courses of how to use this avaliable from Portswigger, but their are also massive amounts of free resources and relatively cheap resources to learn and practice from. This Helphsheet is more just shortcuts, but is intended to make avaliable some of the functionality you may require extract from GUI menu to a scenario:   
 *Problem X -> Do this with Burpsuite(plus another applications)*  
 It is also not a showcase of plugins I like or support.  
 Some of the tips very simple for simple problems, sometimes that is simply required.
-
 
 [Official Documentation](https://portswigger.net/burp/documentation/desktop)
 

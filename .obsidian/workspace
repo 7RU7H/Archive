@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Recon/Mechanizing-The-Methodology.md",
+            "file": "Windows/Windows-Registry.md",
             "mode": "preview"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Recon/Mechanizing-The-Methodology.md",
+                "file": "Windows/Windows-Registry.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +88,15 @@
   },
   "active": "e953369ee76839b0",
   "lastOpenFiles": [
-    "Recon/Mechanizing-The-Methodology.md",
-    "todoList.md",
-    "Recon/Active-Information-Gathering/LDAP/LDAP-Recon.md",
-    "Coding-Scripting-Programming/Python/useful_python3.md",
-    "Recon/Active-Information-Gathering/SNMP/SNMP-Recon-Cheatsheet.md",
-    "Recon/Active-Information-Gathering/SMTP/SMTP-Recon-Cheatsheet.md",
-    "Recon/Active-Information-Gathering/Netcat-As-Recon.md",
-    "Networks/Network-Services.md",
-    "Recon/Active-Information-Gathering/Nmap/nmapAllTheScripts.md",
-    "Recon/Active-Information-Gathering/SMB/RPCClient-Cheatsheet.md"
+    "Windows/Windows-Registry.md",
+    "Windows/Windows-Tools.md",
+    "Windows/Windows-VirtualMemory.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+    "Web-Hacking/Content-Discovery/ffufCS.md",
+    "Services/Jenkins.md",
+    "Web-Hacking/Burpsuite/Burpsuite-Helpsheet.md",
+    "Hacker-Distros/Kali/Kali-Hardening.md",
+    "Hacker-Distros/Kali/Kali.md"
   ]
 }

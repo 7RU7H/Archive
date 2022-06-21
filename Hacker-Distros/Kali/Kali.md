@@ -1,7 +1,7 @@
 # Kali
 
 ## Introduction
-Kali Linux is Debian GNU/Linux Linux distributio, which is probably the defacto Enterprise-ready standard for security auditing with the tagline: "the quieter you become, the more you are able to hear". First released in March 2013 to then use a Rolling release model on 21st January, 2016 to present.
+Kali Linux is Debian GNU/Linux Linux distribution, which is probably the defacto Enterprise-ready standard for security auditing with the tagline: "the quieter you become, the more you are able to hear". First released in March 2013 to then use a Rolling release model on 21st January, 2016 to present.
 
 With it is own custom Linux Kernel it massively customizable from a trusted source.
 Headless or GUI the default tools are extensive and come with various alternatives. Default tool come organised into Information Gathering, Vulnerability Analysis, Web Application Analysis, Database Assessment, Password Attacks, Wireless Attacks, Reverse Engineering, Exploitation Tools, Sniffing & Spoofing, Post ExploitationF, orensics, Reporting Tools and Social Engineering Tools. 
@@ -40,9 +40,6 @@ Kali can be botted in UEFI mode but not secure boot. Disable secure boot.
 
 If for some reason use need Python2: [EoL Python ](https://www.kali.org/docs/general-use/using-eol-python-versions/)
 
-
-
-```
 
 ## Configuration
 

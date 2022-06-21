@@ -1,6 +1,6 @@
 # Bash Condensed
 
-Condensing everything I know about bash scripting from Tryhackme, XinYminutes, Offensive Security PK100, writing my own scripts and copious amazing stackoverflow answers.
+Condensing everything I know and learn about bash scripting from Tryhackme, XinYminutes, Offensive Security pwk100,pwk200, writing my own scripts and copious amazing stackoverflow answers.
 
 ```bash
 #!/bin/bash

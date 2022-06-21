@@ -1,8 +1,6 @@
-Windows Virtual Memory
+# Windows Virtual Memory
 
 Although this concept does not directly translate to Windows internals or concepts, it is crucial to understand. If understood correctly, it can be leveraged to aid in abusing Windows internals.
-
-
 
 The theoretical maximum virtual address space is 4 GB on a 32-bit x86 system.
 The theoretical maximum virtual address space is 256 TB on a 64-bit modern system.

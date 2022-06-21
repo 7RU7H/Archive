@@ -1,11 +1,11 @@
-
-Key Properties:
+# Windows Registry 
+## Key Properties
 
 REG_SZ	represents a single null terminated string
 
 Run OR RunOnce # type
 
-
+## Key Layout
 Root keys:
     HKEY_CURRENT_USER
 		Root of all configuration information for the current user - HKCU
@@ -36,79 +36,84 @@ Root keys:
 
 Predefined keys: HKEY_CLASSES_ROOT, HKEY_CURRENT_CONFIG, HKEY_CURRENT_USER, HKEY_CURRENT_USER_LOCAL_SETTINGS, HKEY_LOCAL_MACHINE, HKEY_PERFORMANCE_DATA, HKEY_PERFORMANCE_NLSTEXT, HKEY_PERFORMANCE_TEXT, HKEY_USERS
 
-Registry Functions:
-Function 	Description
-GetSystemRegistryQuota 	Retrieves the current size of the registry and the maximum size that the registry is allowed to attain on the system.
-RegCloseKey 	Closes a handle to the specified registry key.
-RegConnectRegistry 	Establishes a connection to a predefined registry handle on another computer.
-RegCopyTree 	Copies the specified registry key, along with its values and subkeys, to the specified destination key.
-RegCreateKeyEx 	Creates the specified registry key.
-RegCreateKeyTransacted 	Creates the specified registry key and associates it with a transaction.
-RegDeleteKey 	Deletes a subkey and its values.
-RegDeleteKeyEx 	Deletes a subkey and its values from the specified platform-specific view of the registry.
-RegDeleteKeyTransacted 	Deletes a subkey and its values from the specified platform-specific view of the registry as a transacted operation.
-RegDeleteKeyValue 	Removes the specified value from the specified registry key and subkey.
-RegDeleteTree 	Deletes the subkeys and values of the specified key recursively.
-RegDeleteValue 	Removes a named value from the specified registry key.
-RegDisablePredefinedCache 	Disables handle caching for the predefined registry handle for HKEY_CURRENT_USER for the current process.
-RegDisablePredefinedCacheEx 	Disables handle caching for all predefined registry handles for the current process.
-RegDisableReflectionKey 	Disables registry reflection for the specified key.
-RegEnableReflectionKey 	Enables registry reflection for the specified disabled key.
-RegEnumKeyEx 	Enumerates the subkeys of the specified open registry key.
-RegEnumValue 	Enumerates the values for the specified open registry key.
-RegFlushKey 	Writes all attributes of the specified open registry key into the registry.
-RegGetKeySecurity 	Retrieves a copy of the security descriptor protecting the specified open registry key.
-RegGetValue 	Retrieves the type and data for the specified registry value.
-RegLoadKey 	Creates a subkey under HKEY_USERS or HKEY_LOCAL_MACHINE and stores registration information from a specified file into that subkey.
-RegLoadMUIString 	Loads the specified string from the specified key and subkey.
-RegNotifyChangeKeyValue 	Notifies the caller about changes to the attributes or contents of a specified registry key.
-RegOpenCurrentUser 	Retrieves a handle to the HKEY_CURRENT_USER key for the user the current thread is impersonating.
-RegOpenKeyEx 	Opens the specified registry key.
-RegOpenKeyTransacted 	Opens the specified registry key and associates it with a transaction.
-RegOpenUserClassesRoot 	Retrieves a handle to the HKEY_CLASSES_ROOT key for the specified user.
-RegOverridePredefKey 	Maps a predefined registry key to a specified registry key.
-RegQueryInfoKey 	Retrieves information about the specified registry key.
-RegQueryMultipleValues 	Retrieves the type and data for a list of value names associated with an open registry key.
-RegQueryReflectionKey 	Determines whether reflection has been disabled or enabled for the specified key.
-RegQueryValueEx 	Retrieves the type and data for a specified value name associated with an open registry key.
-RegReplaceKey 	Replaces the file backing a registry key and all its subkeys with another file.
-RegRestoreKey 	Reads the registry information in a specified file and copies it over the specified key.
-RegSaveKey 	Saves the specified key and all of its subkeys and values to a new file.
-RegSaveKeyEx 	Saves the specified key and all of its subkeys and values to a new file. You can specify the format for the saved key or hive.
-RegSetKeyValue 	Sets the data for the specified value in the specified registry key and subkey.
-RegSetKeySecurity 	Sets the security of an open registry key.
-RegSetValueEx 	Sets the data and type of a specified value under a registry key.
-RegUnLoadKey 	Unloads the specified registry key and its subkeys from the registry.
+Registry Functions
+
+Function |	Description
+--- | --- 
+GetSystemRegistryQuota  |	Retrieves the current size of the registry and the maximum size that the registry is allowed to attain on the system.
+RegCloseKey  |	Closes a handle to the specified registry key.
+RegConnectRegistry |	Establishes a connection to a predefined registry handle on another computer.
+RegCopyTree |	Copies the specified registry key, along with its values and subkeys, to the specified destination key.
+RegCreateKeyEx |	Creates the specified registry key.
+RegCreateKeyTransacted |	Creates the specified registry key and associates it with a transaction.
+RegDeleteKey |	Deletes a subkey and its values.
+RegDeleteKeyEx |	Deletes a subkey and its values from the specified platform-specific view of the registry.
+RegDeleteKeyTransacted |	Deletes a subkey and its values from the specified platform-specific view of the registry as a transacted operation.
+RegDeleteKeyValue |	Removes the specified value from the specified registry key and subkey.
+RegDeleteTree |	Deletes the subkeys and values of the specified key recursively.
+RegDeleteValue |	Removes a named value from the specified registry key.
+RegDisablePredefinedCache |	Disables handle caching for the predefined registry handle for HKEY_CURRENT_USER for the current process.
+RegDisablePredefinedCacheEx |	Disables handle caching for all predefined registry handles for the current process.
+RegDisableReflectionKey |	Disables registry reflection for the specified key.
+RegEnableReflectionKey |	Enables registry reflection for the specified disabled key.
+RegEnumKeyEx |	Enumerates the subkeys of the specified open registry key.
+RegEnumValue |	Enumerates the values for the specified open registry key.
+RegFlushKey |	Writes all attributes of the specified open registry key into the registry.
+RegGetKeySecurity |	Retrieves a copy of the security descriptor protecting the specified open registry key.
+RegGetValue |	Retrieves the type and data for the specified registry value.
+RegLoadKey |	Creates a subkey under HKEY_USERS or HKEY_LOCAL_MACHINE and stores registration information from a specified file into that subkey.
+RegLoadMUIString |	Loads the specified string from the specified key and subkey.
+RegNotifyChangeKeyValue |	Notifies the caller about changes to the attributes or contents of a specified registry key.
+RegOpenCurrentUser |	Retrieves a handle to the HKEY_CURRENT_USER key for the user the current thread is impersonating.
+RegOpenKeyEx |	Opens the specified registry key.
+RegOpenKeyTransacted |	Opens the specified registry key and associates it with a transaction.
+RegOpenUserClassesRoot |	Retrieves a handle to the HKEY_CLASSES_ROOT key for the specified user.
+RegOverridePredefKey |	Maps a predefined registry key to a specified registry key.
+RegQueryInfoKey |	Retrieves information about the specified registry key.
+RegQueryMultipleValues |	Retrieves the type and data for a list of value names associated with an open registry key.
+RegQueryReflectionKey |	Determines whether reflection has been disabled or enabled for the specified key.
+RegQueryValueEx |	Retrieves the type and data for a specified value name associated with an open registry key.
+RegReplaceKey |	Replaces the file backing a registry key and all its subkeys with another file.
+RegRestoreKey |	Reads the registry information in a specified file and copies it over the specified key.
+RegSaveKey |	Saves the specified key and all of its subkeys and values to a new file.
+RegSaveKeyEx |	Saves the specified key and all of its subkeys and values to a new file. You can specify the format for the saved key or hive.
+RegSetKeyValue |	Sets the data for the specified value in the specified registry key and subkey.
+RegSetKeySecurity |	Sets the security of an open registry key.
+RegSetValueEx |	Sets the data and type of a specified value under a registry key.
+RegUnLoadKey |	Unloads the specified registry key and its subkeys from the registry.
 
 By default, there are four Run and RunOnce keys, which live under HKEY_LOCAL_MACHINE and HKEY_CURRENT_USER:
-
+```cmd
 HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run 
 HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run 
 HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\RunOnce 
 HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\RunOnce
-
+```
 MAC address:
+```
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\ {4D36E972-E325-11CE-BFC1-08002BE10318}
 IP address:
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\Interfaces
+```
 
 Accessing Registry Hives(offline):
 	
-A majority are stored: C:\Windows\System32\Config
+A majority are stored: `C:\Windows\System32\Config`
 
-    DEFAULT (mounted on HKEY_USERS\DEFAULT)
-    SAM (mounted on HKEY_LOCAL_MACHINE\SAM)
-    SECURITY (mounted on HKEY_LOCAL_MACHINE\Security)
-    SOFTWARE (mounted on HKEY_LOCAL_MACHINE\Software)
-    SYSTEM (mounted on HKEY_LOCAL_MACHINE\System)
+Hive | Mounting 
+--- | ---
+DEFAULT |	(mounted on HKEY_USERS\DEFAULT)
+SAM |	(mounted on HKEY_LOCAL_MACHINE\SAM)
+SECURITY |	(mounted on HKEY_LOCAL_MACHINE\Security)
+SOFTWARE |	(mounted on HKEY_LOCAL_MACHINE\Software)
+SYSTEM  |	mounted on HKEY_LOCAL_MACHINE\System)
 
-Hives containing user information:
-Both of these files are hidden files
+Hives containing user information both of these files are hidden files
 
-    NTUSER.DAT (mounted on HKEY_CURRENT_USER when a user logs in)
-	Located: C:\Users\<username>\
-    USRCLASS.DAT (mounted on HKEY_CURRENT_USER\Software\CLASSES)
-	Located: C:\Users\<username>\AppData\Local\Microsoft\Windows
+.DAT | Mounted | File system location
+--- | --- | ---
+NTUSER.DAT | (mounted on HKEY_CURRENT_USER when a user logs in) | Located: C:\Users\<username>\
+USRCLASS.DAT | (mounted on HKEY_CURRENT_USER\Software\CLASSES) |  Located: C:\Users\<username>\AppData\Local\Microsoft\Windows
 
 The Amcache Hive:
 Windows creates this hive to save information on programs that were recently run on the system.
