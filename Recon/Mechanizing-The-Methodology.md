@@ -1,6 +1,4 @@
 # Mechanizing The Methodology
-7:48
-
 How to find vulnerabilities while you're doing other things. By [Daniel Miessler](https://danielmiessler.com) [Twitter](https://twitter.com/danielmiessler). 
 
 

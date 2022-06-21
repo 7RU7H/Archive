@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Windows/Windows-Registry.md",
-            "mode": "preview"
+            "file": "Recon/Mechanizing-The-Methodology.md",
+            "mode": "source"
           }
         }
       }
@@ -39,7 +39,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "Mech",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -48,7 +48,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -68,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Windows/Windows-Registry.md",
+                "file": "Recon/Mechanizing-The-Methodology.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +89,15 @@
   },
   "active": "e953369ee76839b0",
   "lastOpenFiles": [
+    "Recon/Mechanizing-The-Methodology.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/wesng.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Powershell-versions.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/evil-winrmCS.md",
     "Windows/Windows-Registry.md",
     "Windows/Windows-Tools.md",
     "Windows/Windows-VirtualMemory.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation.md",
     "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
-    "Web-Hacking/Content-Discovery/ffufCS.md",
-    "Services/Jenkins.md",
-    "Web-Hacking/Burpsuite/Burpsuite-Helpsheet.md",
-    "Hacker-Distros/Kali/Kali-Hardening.md",
-    "Hacker-Distros/Kali/Kali.md"
+    "Web-Hacking/Content-Discovery/ffufCS.md"
   ]
 }
