@@ -1,4 +1,4 @@
-# WMIC 
+# WMIC Commands
 
 ```wmic
 wmic /?

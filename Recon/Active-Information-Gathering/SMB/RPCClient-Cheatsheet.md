@@ -45,7 +45,7 @@ lsaenumsid
 lsaquery
 lsaquerysecobj
 dsroledominfo
-# numerating LSA Account Privileges
+# Enumerating LSA Account Privileges
 lookupnames $user
 lsaaddacctrights $SID SeCreateTokenPrivilege
 lsaenumprivsaccount $SID
