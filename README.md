@@ -5,21 +5,6 @@ Hacking Methodology and Mechanical/Informational/Computational Art, Cheatsheats,
 
 The Internet is an awesome resource, but sometimes it is forgotten the power of small, focused and contained networks of information.
 
-#### Linux PrivEsc TODO:
-
-https://tryhackme.com/room/linuxfunctionhooking
-
-https://airman604.medium.com/9-ways-to-backdoor-a-linux-box-f5f83bae5a3c
-
-https://payatu.com/guide-linux-privilege-escalation
-
-https://sushant747.gitbooks.io/total-oscp-guide/content/privilege_escalation_-_linux.html
-
-#### Windows PrivEsc TODO:
-
-Find all wider internet stuff
-
-
 ## History and Manifesto
 
 The idea came from partially from [Motasem Hamdan](https://www.youtube.com/c/MotasemHamdaninfosec) and my own text based notes starting to get unmanagable. Although this is not [HackTricks](https://book.hacktricks.xyz/) I want my own resource for personal use while also being much more than other especially in terms of curation and long term ownership. Secondly Obsidian "second brains", seem like a good idea so I upload it here to somewhat finalise and prompt me to condense all previous my notes into a better format as my more powerful discourse. Visually mindmapping concepts and intent to metacognitively play with the information are very important in understanding and learning. I also want a long term Open-Source pedagogical archive to last ten thousand years of people still thinking that ownership of information is an acceptable practice regarding the human endeavour and enterprise. **I do not commend capitalism or those sell their work**. If one day people can learn things by downloading it into bionic implants, why shouldn't everyone have access to this resource? Or should any insitution have control some informational resources, which never actually in scope of control OR benefial to there long term objectives - Cyberwarfare will be the biggest wake up call in this decade.

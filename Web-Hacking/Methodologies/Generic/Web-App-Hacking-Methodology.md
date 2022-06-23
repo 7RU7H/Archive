@@ -63,8 +63,6 @@ These pages contain `Allow` and `Disallow` are directives for search engine bots
 For a definitive list: [[Web-App-Administration-Consoles]]
 
 
-
-
 #### User Enumeration
 To perform client-side exploits against we need to enumerate users. Patterns of names, usernames and emails are important as the underlying technology hosts functionality that presents it on the site or for credentials.
 

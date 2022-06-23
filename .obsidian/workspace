@@ -7,11 +7,8 @@
         "id": "de6857bf8f044317",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Web-Hacking/Methodologies/Generic/Web-App-Hacking-Methodology.md",
-            "mode": "source"
-          }
+          "type": "empty",
+          "state": {}
         }
       }
     ],
@@ -68,7 +65,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Web-Hacking/Methodologies/Generic/Web-App-Hacking-Methodology.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +84,15 @@
   },
   "active": "de6857bf8f044317",
   "lastOpenFiles": [
+    "todoList.md",
+    "README.md",
+    "Web-Hacking/API/API-Fuzzing.md",
+    "Exploitation/Fixing-Public-Exploits.md",
+    "Exploitation/Using-Public-Exploits.md",
     "Web-Hacking/Methodologies/Generic/Web-App-Hacking-Methodology.md",
     "Web-Hacking/SQLi/SQLinjection.md",
     "Web-Hacking/SQLi/MySQL.md",
     "Web-Hacking/SQLi/SQLmap-CheatSheet.md",
-    "Web-Hacking/SQLi/introToSQL.md",
-    "Web-Hacking/Web-App-Administration-Consoles.md",
-    "Web-Hacking/bypassingRateLimit.md",
-    "HackingReportTemplate/Conclusion.md",
-    "HackingReportTemplate/CredentialsFoundOrPhished.md",
-    "HackingReportTemplate/ExecutiveSummary.md"
+    "Web-Hacking/SQLi/introToSQL.md"
   ]
 }
