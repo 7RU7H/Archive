@@ -1,4 +1,11 @@
 # Credentials 
+[[ExecutiveSummary]]
+[[ToolList]]
+[[TargetAddresses]]
+[[CredentialsFoundOrPhished]]
+[[Conclusion]]
+[[References]]
+[[MarkdownShortcuts]]
 
 ## Details listing
 ```txt

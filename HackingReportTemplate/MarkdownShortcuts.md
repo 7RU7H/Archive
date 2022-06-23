@@ -1,4 +1,11 @@
 # MarkdownShortcuts
+[[ExecutiveSummary]]
+[[ToolList]]
+[[TargetAddresses]]
+[[CredentialsFoundOrPhished]]
+[[Conclusion]]
+[[References]]
+[[MarkdownShortcuts]]
 
 Just file to reduce typing 
 

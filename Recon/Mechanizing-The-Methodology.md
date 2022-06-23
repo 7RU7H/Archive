@@ -1,8 +1,5 @@
 # Mechanizing The Methodology
-How to find vulnerabilities while you're doing other things. By [Daniel Miessler](https://danielmiessler.com) [Twitter](https://twitter.com/danielmiessler). 
-
-
-This is an incredible talk and very insightful. If you are a beginner to cli-linux or looking into automation or if you need to focus on the larger meta-cognitive connections 
+How to find vulnerabilities while you're doing other things. By [Daniel Miessler](https://danielmiessler.com) [Twitter](https://twitter.com/danielmiessler). This is an incredible talk and very insightful. If you are a beginner to cli-linux or looking into automation or if you need to focus on the larger meta-cognitive connections 
 
 These are my notes of this talk and [article](https://danielmiessler.com/blog/mechanizing-the-methodology/)
 

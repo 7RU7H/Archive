@@ -1,4 +1,5 @@
 # Bug Hunter Methodology 
+For [[Application-Analysis]] by Jason Haddix follow the aforementioned link.
 Link all talks
 []()
 

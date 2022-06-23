@@ -1,26 +1,16 @@
 # Active Directory Enumeration
 
-For exploitation see [[AD-Exploitation-Hub]] or general theory and definitions [[Active-Directory-Defined]]
+For exploitation see [[AD-Exploitation-Hub]] or general theory and definitions [[Active-Directory-Defined]]. For commands cheatsheet [[Active-Directory-Commands]] or for Privilege Escalation see [[Active-Directory-Privilege-Escalation]].
 
+## Microsoft Management Console
+If access to RDP you can enumerate with Microsoft Management Console (MMC) with the [Remote Server Administration Tools'](https://docs.microsoft.com/en-us/powershell/module/activedirectory/?view=windowsserver2022-ps) (RSAT) AD Snap-Ins
+1.  Press **Start**
+2.  Search **"Apps & Features"** and press enter
+3.  Click **Manage Optional Features**
+4.  Click **Add a feature**
+5.  Search for **"RSAT"**
+6.  Select "**RSAT: Active Directory Domain Services and Lightweight Directory Tools"** and click **Install**
 
-
-## Credential Injection 
-The  `runas.exe` with AD credentials of a user of a AD forest.
-```bash
-runas.exe /netonly /user:<domain>\<username> cmd.exe
-```
-
-The flag `/netonly` allows loading of credentials for network authentication, but will not be verified directly by a DC. If hosting a Windows Box tt is required to when run with Administrative privileges.
-
-
-When using a Windows Box you can verify the credentials by listing `SYSVOL`. Any account and Domain-joined computers  can read `SYSVOL`, it is located on the DC and is a shared folder storing the Group Policy Objects (GPOs).
-
-But we may need to configure DNS if is has not been through VNP or DHCP 
- 
-```powershell
-$dnsip = "<DC IP>"
-$interface = "<Interface>"
-$index = Get-NetAdapter -Name $interface | Select-Object -ExpandProperty 'ifIndex'
-Set-DnsClientServerAddress -InterfaceIndex $index -ServerAddresses $dnsip
-```
-c d
+## References
+[THM Enumerating AD room](https://tryhackme.com/room/adenumeration)
+[Remote Server Administration Tools'](https://docs.microsoft.com/en-us/powershell/module/activedirectory/?view=windowsserver2022-ps)

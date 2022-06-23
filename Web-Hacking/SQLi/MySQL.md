@@ -1,4 +1,4 @@
-# mysql
+# MySQL
 
 ## 
 For mysql including Mariadb:

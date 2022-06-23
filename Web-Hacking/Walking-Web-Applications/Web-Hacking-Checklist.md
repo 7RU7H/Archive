@@ -1,9 +1,8 @@
 # Web Hacking Checklist
 
 
-
-
 ## Once Authenticated Enumerate:
+[[Haddix-Methodology]]
 1. My profile Section
 2. Integration Functions
 3. Paid Account Functions

@@ -5,7 +5,6 @@ This is going to just the help page until I passed OSCP and most to clean up oth
 Catch request -> right-click -> Save item
 sqlmap -r filename
 
-
 ```bash
 Options:
   -h, --help            Show basic help message and exit

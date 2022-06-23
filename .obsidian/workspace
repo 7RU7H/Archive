@@ -4,11 +4,14 @@
     "type": "split",
     "children": [
       {
-        "id": "e953369ee76839b0",
+        "id": "de6857bf8f044317",
         "type": "leaf",
         "state": {
-          "type": "graph",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "Web-Hacking/Methodologies/Generic/Web-App-Hacking-Methodology.md",
+            "mode": "source"
+          }
         }
       }
     ],
@@ -65,6 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Web-Hacking/Methodologies/Generic/Web-App-Hacking-Methodology.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -82,17 +86,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "e953369ee76839b0",
+  "active": "de6857bf8f044317",
   "lastOpenFiles": [
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation.md",
-    "Windows/Windows-Commands/Windows-CLI-cmd.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-File-Transfers.md",
-    "Windows/Windows-Commands/WMIC-Commands.md",
-    "Recon/Active-Information-Gathering/SMB/RPCClient-Cheatsheet.md",
-    "Recon/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
-    "Post-Exploitation/File-Transfers.md",
-    "Coding-Scripting-Programming/Go/testdriven-Development.md",
-    "Exploitation/Fixing-Public-Exploits.md",
-    "Recon/Mechanizing-The-Methodology.md"
+    "Web-Hacking/Methodologies/Generic/Web-App-Hacking-Methodology.md",
+    "Web-Hacking/SQLi/SQLinjection.md",
+    "Web-Hacking/SQLi/MySQL.md",
+    "Web-Hacking/SQLi/SQLmap-CheatSheet.md",
+    "Web-Hacking/SQLi/introToSQL.md",
+    "Web-Hacking/Web-App-Administration-Consoles.md",
+    "Web-Hacking/bypassingRateLimit.md",
+    "HackingReportTemplate/Conclusion.md",
+    "HackingReportTemplate/CredentialsFoundOrPhished.md",
+    "HackingReportTemplate/ExecutiveSummary.md"
   ]
 }
