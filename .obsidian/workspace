@@ -7,8 +7,11 @@
         "id": "de6857bf8f044317",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "Tools/Metasploit/Metasploit.md",
+            "mode": "source"
+          }
         }
       }
     ],
@@ -65,6 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Tools/Metasploit/Metasploit.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -84,15 +88,15 @@
   },
   "active": "de6857bf8f044317",
   "lastOpenFiles": [
+    "Tools/Metasploit/Metasploit.md",
+    "dotNet-Defined.md",
+    "Exploitation/Windows/Active-Directory/Foothold-On-AD.md",
+    "Exploitation/Windows/Active-Directory/Certificate-Exploitation.md",
+    "Exploitation/Windows/Active-Directory/AD-Exploitation-Hub.md",
+    "Tools/Metasploit/Meterpreter.md",
+    "Tools/Metasploit/Proxying-with-metasploit.md",
+    "Coding-Scripting-Programming/Csharp/basic_Csharp.md",
     "todoList.md",
-    "README.md",
-    "Web-Hacking/API/API-Fuzzing.md",
-    "Exploitation/Fixing-Public-Exploits.md",
-    "Exploitation/Using-Public-Exploits.md",
-    "Web-Hacking/Methodologies/Generic/Web-App-Hacking-Methodology.md",
-    "Web-Hacking/SQLi/SQLinjection.md",
-    "Web-Hacking/SQLi/MySQL.md",
-    "Web-Hacking/SQLi/SQLmap-CheatSheet.md",
-    "Web-Hacking/SQLi/introToSQL.md"
+    "README.md"
   ]
 }
