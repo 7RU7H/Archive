@@ -20,7 +20,6 @@ marketplace remove MODULE # to uninstall the specified module."
 
 ## Modules:
 
-
 ```bash
 modules search  # to get a list of all the installed modules
 modules load MODULE # to load a specific module to memory

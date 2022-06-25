@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Tools/Metasploit/Metasploit.md",
+            "file": "Tools/C2/Metasploit/Metasploit.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/Metasploit/Metasploit.md",
+                "file": "Tools/C2/Metasploit/Metasploit.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +88,15 @@
   },
   "active": "de6857bf8f044317",
   "lastOpenFiles": [
-    "Tools/Metasploit/Metasploit.md",
-    "dotNet-Defined.md",
-    "Exploitation/Windows/Active-Directory/Foothold-On-AD.md",
-    "Exploitation/Windows/Active-Directory/Certificate-Exploitation.md",
-    "Exploitation/Windows/Active-Directory/AD-Exploitation-Hub.md",
-    "Tools/Metasploit/Meterpreter.md",
-    "Tools/Metasploit/Proxying-with-metasploit.md",
-    "Coding-Scripting-Programming/Csharp/basic_Csharp.md",
-    "todoList.md",
-    "README.md"
+    "Tools/C2/Metasploit/Metasploit.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Evil-winrmCS.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/Important-Linux-Directories.md",
+    "Security-Enterprises/Redteam/Opsec101.md",
+    "Security-Enterprises/Redteam/Redteam-Checklist.md",
+    "Tools/C2/Metasploit/MSFvenom-Payloads.md",
+    "Linux/Linux-Commands/Module-Linux-Commands.md",
+    "Linux/Linux-Commands/grepAllTheThings.md",
+    "Linux/Linux-Commands/Core-Linux-Commands.md"
   ]
 }

@@ -1,5 +1,5 @@
 # Powershell-Empire modules list
-
+For general information about [[Empire]] follow the link.
 Needed a grep-able list of modules.
 
 Credits
@@ -400,3 +400,6 @@ powershell/lateral_movement/invoke_wmi_debugger			Uses WMI to set the debugger f
 powershell/lateral_movement/invoke_sshcommand			Executes a command on a remote host via SSH.
 external/generate_agent			Generates an agent code instance for a specified listener, pre-staged, and register the agent in the database. This allows the agent to begin ...
 ```
+
+## References
+[infosecmatters](https://www.infosecmatter.com/empire-module-library/)

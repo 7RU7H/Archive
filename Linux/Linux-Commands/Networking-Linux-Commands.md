@@ -1,4 +1,5 @@
 # Linux Networking Commands Current and Legacy
+For non-network related command see:[[Core-Linux-Commands]]
 
 ```bash
 # Places of interest

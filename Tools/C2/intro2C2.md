@@ -89,7 +89,7 @@ They all similarly prozy features to allkow user to contorl specific elements of
 
 ## Metasploit
 
-The Metasploit Framework, developed and maintained by Rapid7, is one of the most popular Exploitation and Post Exploitation frameworks (C2) that is publicly available and is installed on most penetration testing distributions.
+The [[Metasploit]] Framework, developed and maintained by Rapid7, is one of the most popular Exploitation and Post Exploitation frameworks (C2) that is publicly available and is installed on most penetration testing distributions.
 
 ## Armitage - metasploit extension
 
@@ -109,7 +109,7 @@ cd /opt/armitage/release/unix && ./teamserver YourIP P@ssw0rd123
 
 ## Powershell Empire/Starkiller
 
-Powershell Empire and Starkiller is another incredibly popular C2 originally created by Harmjoy, Sixdub, and Enigma0x3 from Veris Group. Currently, the project has been discontinued and has been picked up by the BC Security team (Cx01N, Hubbl3, and _Vinnybod). Empire features agents written in various languages compatible with multiple platforms, making it an incredibly versatile C2.
+Powershell [[Empire]] and Starkiller is another incredibly popular C2 originally created by Harmjoy, Sixdub, and Enigma0x3 from Veris Group. Currently, the project has been discontinued and has been picked up by the BC Security team (Cx01N, Hubbl3, and _Vinnybod). Empire features agents written in various languages compatible with multiple platforms, making it an incredibly versatile C2.
 
 ## Covenant 
 

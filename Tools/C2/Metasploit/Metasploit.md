@@ -1,12 +1,12 @@
 # Metasploit 
-This as simple document condensing the usage of the `msfconsole`. For specific [[Meterpreter]] related follow the link for [[Proxying-with-metasploit]] follow this one. For a brief `msvenom` usage see [[Shells]]
+This as simple document condensing the usage of the `msfconsole`. For specific [[Meterpreter-Commands]] related follow the link for [[Proxying-with-Metasploit]] follow this one. For a brief `msvenom` usage see [[Shells]] or for building a Metasploit module see [[Build-MSF-Modules]] 
 
 ## Introduction
 
 [Metasploit](https://www.metasploit.com/) despite its nae sayers is an incredible tool making the figgly manual process more stream-line and less error prown. It's curation of exploit code helps address the issues with dangers of using public exploit code as well providing the utility of post exploit and enumeration tools in one console framework. Although for those post beginner phase I would recommend as was to me, learn the wonders of metasploit then do it manually, Exploit Frameworks like Metasploit are used because the reduce issues and complexity. It also Open-Source, although similar to Burpsuite in the respect that its core functionality is so very powerful that the commercial version is not really relevent to those that aren't professionals. Metasploit is even more overwhelming in features than Burpsuite Community the Pro version provides alot of features to the Open source version, as awesome as they are the path to learn to use something that makes it easy to not make mistakes is the reason that Metasploit is still awesome and you can learn, apply skill manually and use other tools for much of the [Pro version](https://www.rapid7.com/products/metasploit/download/editions/) offers. 
 
 ## Setup
-Metasploit requires postgresql and requires Kali setup 
+Metasploit on Kali requires postgresql setup:
 ```bash
 sudo systemctl start postgresql
 sudo systemctl enable postgresql
@@ -61,8 +61,9 @@ sessions				# list all sessions
 	-i					# interact with session number
 set						# set data for options
 setg					# set global data
-show		# display parametres: all, encoders, nops, exploits, payloads, auxiliary, post, plugins, info, options 
-				# module-specific: missing, advanced, evasion, targets, actions
+show	# display parametres: all, encoders, nops, exploits, payloads, auxiliary, post, plugins, info, options
+		# module-specific: missing, advanced, evasion, targets, actions
+show advanced			# show advanced options
 use 			# select a module
 ```
 
@@ -109,9 +110,31 @@ set payload 	# Assign payload choice to exploit
 check			# Some exploit check if the provided <options> RHOST is vulnerable
 ```
 
+## Metasploit Payloads
+
+Non-Staged | Staged
+--- | ---
+shell_reverse_tcp | shell/reverse_tcp
+
+Non-staged(Non-meterpreter) payloads are sent with the exploit and compatible with nc because they do not require the payload from msfconsole after the stager payload is executed on victim host. 
+Staged are sent two or more parts, the first staging and connecting back to Attacker then subsequently transfering larger payload containing the remainder of the shellcode. Staged payload are more likely to evade AV due to size. Exstensive listing of payloads can be found: [[MSFvenom-Payloads]].
+
+## Meterpreter
+
+Meterpreter is payload type that can dynamically extended at run-time providing more features and functionality than regular reverse shell. Meterpreter payload versions are written in probably every operationally-in-use programming language. For a full list of commands see [[Meterpreter-Commands]].
+
+## Exploit Multi Handler
+For advanced Metasploit payloads use the builtin listener with
+`use multi/handler` just `set payload insert/payload/name` and `show options` to see configuration and `set <some option name>` to configure. `exploit` or `run` to execute the multi/handler and `-j` to background on execution.
+
+## Client Side Attacks
+[Offensive Sercurity](https://www.offensive-security.com/metasploit-unleashed/client-side-attacks/): *"As network administrators and software developers fortify the perimeter, pentesters need to find a way to make the victims open the door for them to get into the network. Client side attacks require user-interaction such as enticing them to click a link, open a document, or somehow get to your malicious website."*
+
 ## References
 
-[Metasploit]https://www.metasploit.com/
+[Metasploit](https://www.metasploit.com/)
 [Github Metasploit ParrotOS](https://github.com/ParrotSec/metasploit-framework)
 [OS Guide to setting up DB](https://www.offensive-security.com/metasploit-unleashed/using-databases/)
 [Rapid7 Workspaces](https://docs.rapid7.com/metasploit/managing-workspaces/)
+[darkreading on client side attacks](https://www.darkreading.com/risk/anatomy-of-a-client-side-attack-using-metasploit)
+[OS Client Side attacks with Metasploit](https://www.offensive-security.com/metasploit-unleashed/client-side-attacks/)

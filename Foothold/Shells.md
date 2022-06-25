@@ -353,11 +353,12 @@ Nice links:
 [Common One Liners by Frizb](https://github.com/frizb/MSF-Venom-Cheatsheet)
 [six2dex's pentestbook](https://pentestbook.six2dez.com/exploitation/payloads)
 
-Staged | Stager
+Non-Staged | Staged
 --- | ---
 shell_reverse_tcp | shell/reverse_tcp
 
-Staged payloads are compatible with nc because they do not require the payload from msfconsole after the stager payload is executed on victim host.
+Non-staged(Non-meterpreter) payloads are sent with the exploit and compatible with nc because they do not require the payload from msfconsole after the stager payload is executed on victim host. 
+Staged are sent two or more parts, the first staging and connecting back to Attacker then subsequently transfering larger payload containing the remainder of the shellcode. Staged payload are more likely to evade AV due to size. 
 
 MSFvemon 101
 ```bash

@@ -1,8 +1,9 @@
 # Modules 
 
-Check Grep all the things for a single files, eventual I hope to expand and organise this for each to have there own file, but for now one will do.
-```bash
+Check [[grepAllTheThings]] and [[Core-Linux-Commands]], eventual I hope to expand and organise this for each to have there own file, but for now one will do.
+
 #### awk 
+```bash
 awk [flags] [select pattern/find(sort)/commands] [input file]
 
 awk '{print}' file.txt					print to terminal
@@ -33,9 +34,10 @@ awk '{ sum += $1 } END { print sum }' # add all the numbers in a file up
 $awk '{a[NR]=$0} END {for (j=1; j<NR; j++) print a[j];sub(/.$/,"",a[NR]);print a[NR]}' InputFile	delete the last character in a file
 # sort a text file by line length 
 awk '{ print length, $0 }' | sort -n -s 
-
+```
 
 #### binwalk
+```bash
 # Allows users to analyze and extract firmware images and helps in identifying code, 
 # files, and other information embedded in those, or inside another file, taking as an example steganography.
 binwalk -e	extract known file types
@@ -46,9 +48,10 @@ binwalk	-m	custom magic file to use
 binwalk -M	recursively scan extracted files
 binwalk -d 	depth limit
 
-
+```
 #### curl
-
+[[Curl-Cheatsheet]]
+```bash
 --compressed				# Over encoding error of ZIP files with --compressed
 -d 'data=data&data=data'		# transfer data 'inside-the-single-quotes'
 -I					# output header 
@@ -73,10 +76,11 @@ curl -A								you can spcifiy user agent to make request to the server
 curl -:								follow redirects
 curl -b								specify cookies
 curl -X								specify http method!
-
+```
 
 
 #### cut
+```bash
 -d<delimiter> -f$int,			# cut by delimiter, for each field listed 1,2,3,4...
 
 #### find 
@@ -90,10 +94,6 @@ killall gpg-agent
 gpg -d filetodecrypt
 gpg --import key.file
 gpg --cipher-algo [encryption type] [encryption method] [file to encrypt]
-
-
-#### grep 		!see useful/linux/linuxCMD/grepAllTheThings.txt
-
 #### gzip
 gzip -d file.gz		decompress file
 

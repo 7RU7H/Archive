@@ -12,7 +12,7 @@ Note taking or data management for recursive manual or automated lookup and usag
 
 The [Threat Intelligence Platform](https://threatintelligenceplatform.com/) performs malware checks, port scanning, ssl certificate checks, whois request, mail server checks, DNS configuration checks, reverse IP lookup.
 
-Netcraft's [searchdns](https://searchdns.netcraft.com) view site reports that provides information about the site technology
+Netcraft's [searchdns](https://searchdns.netcraft.com) view site reports that provides information about the site technology.
 
 ## Trial / Open source code 
 GitHub, GitLab and SourceForge.
@@ -58,7 +58,7 @@ Use "gitleaks [command] --help" for more information about a command.
 [Qualys SSL Labs](https://www.ssllabs.com/ssltest/)
 
 ## User information
-Use [theHarvester](Recon/Passive-Information-Gathering/theHarvester/theHarvester) for email address harvesting.
+Use [theHarvester](Recon/Passive-Information-Gathering/theHarvester/theHarvester) for email address harvesting. See [[theHarvester]] for Cheatsheet.
 
 Check [haveibeenpwned](https://haveibeenpwned.com/PwnedWebsites) or [Pastebin](https://pastebin.com), checking them with [haveibeenpwned](https://haveibeenpwned.com/PwnedWebsites) can be used in credential stuffing attacks.
 
@@ -74,7 +74,7 @@ Check [haveibeenpwned](https://haveibeenpwned.com/PwnedWebsites) or [Pastebin](h
 
 [OSINT Framework](https://osintframework.com/)
 [Maltego](https://www.paterva.com/buy/maltego-clients.php)
-
+[[Recon-ng]]
 ## References
 
 [THM Room](https://tryhackme.com/room/redteamrecon)
