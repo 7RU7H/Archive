@@ -3,6 +3,7 @@
 [[ToolList]]
 [[TargetAddresses]]
 [[CredentialsFoundOrPhished]]
+[[Objectives]]
 [[Conclusion]]
 [[References]]
 [[MarkdownShortcuts]]

@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Windows/Windows-Concepts/Windows-Processes.md",
+            "file": "Web-Hacking/File-Inclusion-And-Directory-Traversal.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Windows/Windows-Concepts/Windows-Processes.md",
+                "file": "Web-Hacking/File-Inclusion-And-Directory-Traversal.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +88,15 @@
   },
   "active": "de6857bf8f044317",
   "lastOpenFiles": [
-    "Windows/Windows-Concepts/Windows-Processes.md",
-    "HackingReportTemplate/Objectives.md",
-    "HackingReportTemplate/MarkdownShortcuts.md",
-    "HackingReportTemplate/ExecutiveSummary.md",
-    "HackingReportTemplate/CredentialsFoundOrPhished.md",
-    "HackingReportTemplate/Conclusion.md",
-    "HackingReportTemplate/ToolList.md",
-    "HackingReportTemplate/TargetAddresses.md",
+    "Web-Hacking/File-Inclusion-And-Directory-Traversal.md",
+    "Web-Hacking/Command-Injection-Cheatsheet.md",
+    "Web-Hacking/OWASP-top-whatever-historic-definitions.md",
+    "Web-Hacking/Web-App-Administration-Consoles.md",
+    "Windows/Windows-PortableExecFormat.md",
+    "Exploitation/CVEs/shellshocked.md",
     "HackingReportTemplate/References.md",
-    "Linux/Linux-Concepts/Linux-Networking.md"
+    "HackingReportTemplate/TargetAddresses.md",
+    "HackingReportTemplate/ToolList.md",
+    "HackingReportTemplate/Conclusion.md"
   ]
 }

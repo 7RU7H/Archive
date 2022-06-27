@@ -1,7 +1,7 @@
 # Tool List
 
 [[ExecutiveSummary]]
-[[ToolList]]
+[[Objectives]]
 [[TargetAddresses]]
 [[CredentialsFoundOrPhished]]
 [[Conclusion]]

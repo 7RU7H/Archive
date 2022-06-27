@@ -2,7 +2,7 @@
 
 [[ExecutiveSummary]]
 [[ToolList]]
-[[TargetAddresses]]
+[[Objectives]]
 [[CredentialsFoundOrPhished]]
 [[Conclusion]]
 [[References]]
