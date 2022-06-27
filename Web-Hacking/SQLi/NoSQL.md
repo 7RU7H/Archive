@@ -1,7 +1,7 @@
 #  NoSQL
 ## Introduction to NoSQL databases
 
-NoSQL databases are non-relational meaning they do not store information in regular tabular manner. Key-value(An index and value stored at the indexed location), Graph(Data stored in graph structure), Document(have key-value elements with metadata), xml Databases are a subclass), Wide Column Store(tabular but irregular in width, from row to row). See [Wiki](https://en.wikipedia.org/wiki/NoSQL) further information. For [payloads](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/NoSQL%20Injection)
+NoSQL databases are non-relational meaning they do not store information in regular tabular manner. Key-value(An index and value stored at the indexed location), Graph(Data stored in graph structure), Document(have key-value elements with metadata), xml Databases are a subclass), Wide Column Store(tabular but irregular in width, from row to row). See [Wiki](https://en.wikipedia.org/wiki/NoSQL) further information. For [payloads](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/NoSQL%20Injection), or more basics of SQL see [[Introduction-to-SQL]]
 
 ## MongoDB
 [MongoDB](https://www.mongodb.com/) is JSON-like, document store type NoSQL database. Its data is a JSON-like structure called a **Document**. Documents are stored in an associative array with an arbitrary number of fields. These can be store heirarchically called **Collections**. Collections are the equivalent of tables in relational databases; multiple collections are grouped in **databases**. 

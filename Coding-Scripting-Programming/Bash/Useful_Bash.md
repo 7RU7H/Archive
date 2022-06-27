@@ -7,6 +7,7 @@ Condensing everything I know and learn about bash scripting from Tryhackme, XinY
 
 echo "#!/bin/bash is called shebang or absolute path for the interpreter to run the script"
 echo
+
 echo "All Linux modules can be used in Bash Scripting!"
 
 name="mrBASH is a variable name"

@@ -53,7 +53,7 @@ GET /page.html HTTP/1.1
 ## 25 - SMTP
 Generally 25
 Stands for Simple mail transfer protocol
-For recon: [[SMTP-Recon-Cheatsheet]]
+For recon: [[SMTP-Recon-Cheatsheet]], for [[Mail-Operations]]
 ```bash
 telnet $ip
 nc -nv $IP
@@ -118,7 +118,6 @@ Default port 389
 [[LDAP-Recon]]
 
 
-
 ## 443- HTTPS
 //internet messaging access protocol
 //default port 443
@@ -139,8 +138,9 @@ FTPS
 IMAPS
 //default port 993
 
-POP3S
-//default port 995
+## 995 - POP3S
+Default port 995
+[[Mail-Operations]]
 
 MySQL
 //default  port 3306
@@ -149,8 +149,8 @@ mysql -h ip -u user -p password
 ## RDP
 //default port 3389 (TCP)
 
-DOCKER
-//default port 5000
+# 5000 - Docker
+Default port 5000, see [[Intro-To-Docker]] and [[Docker-Hacking]] for more informationmation
 
 SNMPSSH	
 //default 5161	

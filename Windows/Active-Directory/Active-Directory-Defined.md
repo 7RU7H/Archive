@@ -1,6 +1,7 @@
 # ACTIVE DIRECTORY
 
-#### This is 101 ground-up and top-down explanation information cheatsheet and a hub for all concepts I have found researching Active Directory.
+This is 101 ground-up and top-down explanation information cheatsheet and a hub for all concepts I have found researching Active Directory. For [[AD-Exploitation-Hub]] and further more specified reading follow the link, for [[Active-Directory-Privilege-Escalation]]. If you want to build AD go [[Active-Directory-Lab]].
+
 
 ## AD Defined:
 

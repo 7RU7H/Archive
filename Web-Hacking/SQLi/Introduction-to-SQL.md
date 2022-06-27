@@ -1,5 +1,15 @@
 # Introduction to SQL
-The reason that the location of this file in the directory tree is because I unlike Coding-Scripting directory, the convenience of its closeness to resources to perform SQLinjection is more important. 
+Structured Query Language (SQL) is a [domain-specific language](https://en.wikipedia.org/wiki/Domain-specific_language "Domain-specific language") used in programming and designed for managing data held in a [relational database management system](https://en.wikipedia.org/wiki/Relational_database_management_system "Relational database management system") (RDBMS), or for stream processing in a [relational data stream management system](https://en.wikipedia.org/wiki/Relational_data_stream_management_system "Relational data stream management system") (RDSMS).
+
+The reasoning for the location of this file in the directory tree is because unlike Coding-Scripting-Programming directory, the convenience of its closeness to resources to perform SQLinjection is more important. 
+
+## Contents
+[[MySQL]]
+[[MySQL-Cheatsheet]]
+[[NoSQL]]
+[[SQLmap-CheatSheet]]
+[[SQLInjection]]
+[[MSSQL-Hacking]]
 
 ## Definitions and Terminology
 
@@ -296,3 +306,8 @@ WITH clause lets you store the result of a query in a temporary table using an a
 The WITH clause is also known as common table expression (CTE) and subquery factoring.
 ```
 
+## References
+
+[SQL Wiki](https://en.wikipedia.org/wiki/SQL)
+[SQL Syntax Wiki](https://en.wikipedia.org/wiki/SQL_syntax)
+[codeacademy](https://www.codecademy.com/article/sql-commands)

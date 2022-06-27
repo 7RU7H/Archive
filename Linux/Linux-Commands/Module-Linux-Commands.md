@@ -34,6 +34,8 @@ awk '{ sum += $1 } END { print sum }' # add all the numbers in a file up
 $awk '{a[NR]=$0} END {for (j=1; j<NR; j++) print a[j];sub(/.$/,"",a[NR]);print a[NR]}' InputFile	delete the last character in a file
 # sort a text file by line length 
 awk '{ print length, $0 }' | sort -n -s 
+
+
 ```
 
 #### binwalk
@@ -82,13 +84,18 @@ curl -X								specify http method!
 #### cut
 ```bash
 -d<delimiter> -f$int,			# cut by delimiter, for each field listed 1,2,3,4...
-
+````
 #### find 
-
+```bash
 find / -type f -name "*.txt" -exec rm {} \; # delete all the files with .txt extension = use xargs ITS FASTER
 
-#### gpg
+# wordcount a directory tree
+find . -type f -print0 | wc -w --files0-from=-
 
+```
+
+#### gpg
+```
 killall gpg-agent
 
 gpg -d filetodecrypt

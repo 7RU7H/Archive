@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "de6857bf8f044317",
+        "id": "29e43eff4c8d1314",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Web-Hacking/File-Inclusion-And-Directory-Traversal.md",
+            "file": "Services/Databases/MariaDB/MariaDB-Hacking.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Web-Hacking/File-Inclusion-And-Directory-Traversal.md",
+                "file": "Services/Databases/MariaDB/MariaDB-Hacking.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -86,17 +86,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "de6857bf8f044317",
+  "active": "29e43eff4c8d1314",
   "lastOpenFiles": [
-    "Web-Hacking/File-Inclusion-And-Directory-Traversal.md",
-    "Web-Hacking/Command-Injection-Cheatsheet.md",
-    "Web-Hacking/OWASP-top-whatever-historic-definitions.md",
-    "Web-Hacking/Web-App-Administration-Consoles.md",
-    "Windows/Windows-PortableExecFormat.md",
-    "Exploitation/CVEs/shellshocked.md",
-    "HackingReportTemplate/References.md",
-    "HackingReportTemplate/TargetAddresses.md",
-    "HackingReportTemplate/ToolList.md",
-    "HackingReportTemplate/Conclusion.md"
+    "Services/Databases/MariaDB/MariaDB-Hacking.md",
+    "Linux/Linux-Commands/Module-Linux-Commands.md",
+    "Coding-Scripting-Programming/Bash/Useful_Bash.md",
+    "Hardware/Hardware-Hacking/printerSecurityTesting.md",
+    "Coding-Scripting-Programming/Regex.md",
+    "Exploitation/Windows/AMSI-Exploitation.md",
+    "Web-Hacking/SQLi/SQLInjection.md",
+    "Contents.md",
+    "Web-Hacking/SQLi/Introduction-to-SQL.md",
+    "Web-Hacking/File-Inclusion-And-Directory-Traversal/File-Inclusion-And-Directory-Traversal.md"
   ]
 }

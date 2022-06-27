@@ -1,8 +1,9 @@
 # Useful Powershell
-This is a condensed and *Hacking themed* resource for powershell. Powershell is a massive and my humble opinion a *weird* object-oriented programming language. 
-Windows and Powershell are not case-sensitive, but a *stardard* readability is to use upper-case first letter - I suggest not unless you need to present your work(use a script to change it to *standard*). Every command has a cmdlet and combinations of `verb-noun` to construct command that would be too numerous to list. So to define the theme of this document is oneliners catergorised by use(*just in case at some point they maybe some exceptions like two oneliners that need to be seperate executions* **THESE WILL HAVE A `# TASKNAME Command # THEN Command`**). I am in the process of making this better for my own use:
+This is a condensed and *Hacking themed* resource for powershell. Powershell is a massive and my humble opinion a *weird* object-oriented programming language.  Windows and Powershell are not case-sensitive, but a *stardard* readability is to use upper-case first letter - I suggest not unless you need to present your work(use a script to change it to *standard*). Every command has a cmdlet and combinations of `verb-noun` to construct command that would be too numerous to list. So to define the theme of this document is oneliners catergorised by use(*just in case at some point they maybe some exceptions like two oneliners that need to be seperate executions* **THESE WILL HAVE A `# TASKNAME Command # THEN Command`**). I am in the process of making this better for my own use:
 1. Adding aliases that I might want to use instead of full command
 2. Making the comments defining explaining a better layout
+
+For all the [[Powershell-Verbs]].
 
 ## Execution policy bypass And Versioning 
 ```powershell

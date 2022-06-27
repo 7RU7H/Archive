@@ -5,7 +5,7 @@ Similiar to other documents in this repository maximum of a couple of sentences 
  
 
 ## Broken Access control 	
-Given a level of authentication, inadequate security allowing unintended access or control to the machine, user accounts and system files. For admin panels see [[Web-App-Administration-Consoles]]
+Given a level of authentication, inadequate security allowing unintended access or control to the machine, user accounts and system files. For admin panels see [[Web-App-Administration-Consoles]], or for [[File-Inclusion-And-Directory-Traversal]].
 
 ## Cryptographic Failures
 Poor implementation of or lack of adequate cryptographic algorithms to protect data, or weak or faulty implementations.
@@ -14,7 +14,7 @@ token cracking like [[JSON-web-tokens]], cookie cracking like [[Javascript-Cooki
 
 ## Injection
 Submitable data that is not properly filtered at an injection point: log in form, search feature or ANY interactive components.
-SQLi see [[SQLinjection]], XSS(2021 included as an injection attack) [[XXS-Cheatsheet]], template-injection like: [[Server-Side-Template-Injection-Cheatsheet]]
+SQLi see [[SQLInjection]], XSS(2021 included as an injection attack) [[XXS-Cheatsheet]], template-injection like: [[Server-Side-Template-Injection-Cheatsheet]]
 
 ## Insecure Desgin 
 Where the web application design is fundementally flawed.
