@@ -1,12 +1,8 @@
 # (Kali) Linux Networking
+Depending on the Linux flavor the default naming of the interfaces may vary. For detail information about [[Linux-Network-Services]] follow the link.
+Configuration in the GUI can be done: `Advanced Network Configuration`
 
-Depending on the Linux flavor the default naming of the interfaces may vary.
-Configuration in the GUI can be done:
-Advanced Network Configuration
-
-Writing to:/
-/etc/network/interfaces
-will override default 
+Writing to `/etc/network/interfaces` will override default 
 
 For Example:
 allow-hotplug eth0		# specify interface, when kernel detects hot-plug event
@@ -15,7 +11,7 @@ iface eth0 inet static		# iface = interface, inet is the connection type made, s
       netmask 255.255.255.0	# netmask = network mask of the network the IP is on
       gateway 10.1.1.1		# IP the network need to reach out to reach other networks
 
-CMDS:
+Useful command, but full legacy included list can be found here: [[Networking-Linux-Commands]]
 ```
 # Essentials
 ifconfig 		# local ip, interfaces, netmask, MAC address, network metrics configuration

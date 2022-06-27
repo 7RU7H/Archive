@@ -1,6 +1,6 @@
 # rpcclient Cheatsheet
+For `rcpclient` see [[SMB-Recon-Cheatsheet]]
 
-Windows 
 ```
 querydispinfo
 srvinfo

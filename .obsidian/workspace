@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Tools/C2/Metasploit/Metasploit.md",
+            "file": "Windows/Windows-Concepts/Windows-Processes.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/C2/Metasploit/Metasploit.md",
+                "file": "Windows/Windows-Concepts/Windows-Processes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +88,15 @@
   },
   "active": "de6857bf8f044317",
   "lastOpenFiles": [
-    "Tools/C2/Metasploit/Metasploit.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Evil-winrmCS.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Important-Linux-Directories.md",
-    "Security-Enterprises/Redteam/Opsec101.md",
-    "Security-Enterprises/Redteam/Redteam-Checklist.md",
-    "Tools/C2/Metasploit/MSFvenom-Payloads.md",
-    "Linux/Linux-Commands/Module-Linux-Commands.md",
-    "Linux/Linux-Commands/grepAllTheThings.md",
-    "Linux/Linux-Commands/Core-Linux-Commands.md"
+    "Windows/Windows-Concepts/Windows-Processes.md",
+    "HackingReportTemplate/Objectives.md",
+    "HackingReportTemplate/MarkdownShortcuts.md",
+    "HackingReportTemplate/ExecutiveSummary.md",
+    "HackingReportTemplate/CredentialsFoundOrPhished.md",
+    "HackingReportTemplate/Conclusion.md",
+    "HackingReportTemplate/ToolList.md",
+    "HackingReportTemplate/TargetAddresses.md",
+    "HackingReportTemplate/References.md",
+    "Linux/Linux-Concepts/Linux-Networking.md"
   ]
 }
