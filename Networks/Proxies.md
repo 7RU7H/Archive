@@ -130,10 +130,7 @@ proxychains evil-winrm -i $IP -u $USER -p $PASSWORD
 
 # Web Filtering 
 
-Web filter also known as internet or content filter; it a is proxy where the traffic from al the clients in a network si sent towards the internet through this proxy.
-The main role of a proxy is to restrict or control the content an external user is alllowed to access, the content can allowed without inspection, blocked, or inspected more in depth till futher action.
-It proctects against blacklisted sources of malware or anything unrelated to clients required activity.
-It can be intergrated with Data Loss Prevention(DLP) software, to prevent data leakage from within the company.
+Web filter also known as internet or content filter; it a is proxy where the traffic from al the clients in a network si sent towards the internet through this proxy. The main role of a proxy is to restrict or control the content an external user is alllowed to access, the content can allowed without inspection, blocked, or inspected more in depth till futher action. It proctects against blacklisted sources of malware or anything unrelated to clients required activity. It can be intergrated with Data Loss Prevention(DLP) software, to prevent data leakage from within the company.
 
 # Access Classifcation
 
@@ -141,8 +138,7 @@ Proxy Administrators can chooose what categories are allowed, which are blocked,
 
 # Deep Packet Inspection
 
-If clients have access to file uploadable sites, to prevent data leakages the proxy can either block the action and/or alert the administrator, via a classification system. confidential material.
-kue to HTTPS, breaking the SSL channel in order to inspect this lind of traffic, for performance HTTPS Inspection hardware appliciances are used. Proxying like Burpsuite inspecting and then forwarding or dropping traffic.
+If clients have access to file uploadable sites, to prevent data leakages the proxy can either block the action and/or alert the administrator, via a classification system. confidential material. Due to HTTPS, breaking the SSL channel in order to inspect this lind of traffic, for performance HTTPS Inspection hardware appliciances are used. Proxying like Burpsuite inspecting and then forwarding or dropping traffic.
 
 # SSH 
 
