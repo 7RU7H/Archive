@@ -89,12 +89,12 @@ curl -X								specify http method!
 find / -type f -name "*.txt" -exec rm {} \; # delete all the files with .txt extension = use xargs ITS FASTER
 
 # wordcount a directory tree
-find . -type f -print0 | wc -w --files0-from=-
 
+find path -type f | xargs wc -w | tail -1
 ```
 
 #### gpg
-```
+```bash
 killall gpg-agent
 
 gpg -d filetodecrypt
@@ -277,3 +277,6 @@ xxd -p -r flag.txt # plaintext reversion of hexdump
 #### 7Zip
 7z x file.zip
 ```
+
+## References
+[Stackoverflow Wc a directory](https://stackoverflow.com/questions/35559648/how-can-i-count-the-number-of-words-in-a-directory-recursively)

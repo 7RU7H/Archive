@@ -11,7 +11,7 @@ iface eth0 inet static		# iface = interface, inet is the connection type made, s
       netmask 255.255.255.0	# netmask = network mask of the network the IP is on
       gateway 10.1.1.1		# IP the network need to reach out to reach other networks
 
-Useful command, but full legacy included list can be found here: [[Networking-Linux-Commands]]
+Useful command, but full legacy included list can be found here: [[Linux-Networking-Commands]]
 ```
 # Essentials
 ifconfig 		# local ip, interfaces, netmask, MAC address, network metrics configuration

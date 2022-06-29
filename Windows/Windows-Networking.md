@@ -1,4 +1,6 @@
 # Windows Networking And Services
+For full list of commands see [[Windows-Networking-Commands]]
+
 
 ## Essentials
 

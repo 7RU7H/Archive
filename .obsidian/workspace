@@ -89,14 +89,14 @@
   "active": "5ff0af8af362d20c",
   "lastOpenFiles": [
     "Linux/Linux-Commands/Module-Linux-Commands.md",
-    "Linux/Linux-Commands/Linux-Process-Interaction.md",
-    "Linux/Linux-Commands/Linux-Maintaince-And-Troubleshooting-Commands.md",
-    "Linux/Linux-Commands/grepAllTheThings.md",
-    "Linux/Linux-Commands/Core-Linux-Commands.md",
-    "Linux/Linux-Commands/Users-N-Group-Linux-Commands.md",
-    "Linux/Linux-Commands/Systemctl.md",
+    "Coding-Scripting-Programming/Bash/Useful_Bash.md",
+    "Post-Exploitation/Privilege-Escalation/Privilege-Escalation-Defined.md",
+    "Tools/SysInternals/sysinternals-sigcheck.md",
+    "Tools/SysInternals/Sysinternal-Hub.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation.md",
     "Contents.md",
-    "Post-Exploitation/Privilege-Escalation/Privilege-Escalution-Defined.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md"
+    "Recon/Active-Information-Gathering/DNS/DNS-Recon-Active.md",
+    "Recon/Passive-Information-Gathering/DNS-Recon-Passive.md",
+    "Security-Enterprises/Practice-And-Practice.md"
   ]
 }

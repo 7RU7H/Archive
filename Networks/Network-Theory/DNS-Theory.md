@@ -5,7 +5,7 @@
 Domain Name System([DNS](https://en.wikipedia.org/wiki/Domain_Name_System)) is a distributed database responsible for translating domain names into IP addresses. 
 
 ## Links
-[For Active Enumeration](DNS-Recon.md)
+[For Active Enumeration](DNS-Recon-Active.md)
 
 ## Theory
 
