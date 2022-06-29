@@ -1,5 +1,5 @@
 # Core Linux Commands
-For grep-related see [[grepAllTheThings]] and for other modules like `awk`, `sed` and `xargs` see [[Module-Linux-Commands]]. All network related commands current and legacy can be found here: [[Networking-Linux-Commands]]. For User and group related see [[Users-N-Group-Linux-Commands]]
+For grep-related see [[grepAllTheThings]] and for other modules like `awk`, `sed` and `xargs` see [[Module-Linux-Commands]]. All network related commands current and legacy can be found here: [[Networking-Linux-Commands]]. For User and group related see [[Users-N-Group-Linux-Commands]]. For [[Systemctl]] related or for [[Linux-Maintaince-And-Troubleshooting-Commands]].
 
 ```bash
 
