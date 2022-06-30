@@ -1,6 +1,9 @@
-# radare2
+# Radare2 Cheatsheet
+
 [Official book](https://book.rada.re/)
 [Original cheatsheet](https://gist.github.com/williballenthin/6857590dab3e2a6559d7)
+Full commands: [[Radare2 Commands]]
+
 ## Analysis
 load without any analysis (file header at offset 0x0): `r2 -n /path/to/file`
 

