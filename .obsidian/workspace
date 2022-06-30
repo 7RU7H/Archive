@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Tools/Useful-Software/Powercat-Cheatsheet.md",
+            "file": "Tools/C2/Metasploit/Metasploit.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/Useful-Software/Powercat-Cheatsheet.md",
+                "file": "Tools/C2/Metasploit/Metasploit.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +88,15 @@
   },
   "active": "5ff0af8af362d20c",
   "lastOpenFiles": [
-    "Tools/Useful-Software/Powercat-Cheatsheet.md",
-    "Foothold/Shells.md",
-    "Foothold/Reverse-Shells.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-File-Transfers.md",
-    "Coding-Scripting-Programming/Powershell/Useful_Powershell.md",
-    "Hacker-Distros/Kali/Kali-Windows-Resources.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation.md",
-    "Coding-Scripting-Programming/Regex.md",
-    "Coding-Scripting-Programming/Object-Oriented-Programming.md",
-    "Coding-Scripting-Programming/Java.md"
+    "Tools/C2/Metasploit/Metasploit.md",
+    "Post-Exploitation/Lateral-Movement/Windows-Network-Lateral-Movement.md",
+    "Post-Exploitation/Lateral-Movement/Lateral-Movement.md",
+    "Tools/C2/Metasploit/MSFvenom-Payloads.md",
+    "Networks/Network-Theory/Network-Protocols.md",
+    "Post-Exploitation/Port-Redirection-And-Tunneling.md",
+    "Windows/Windows-Concepts/Windows-Processes.md",
+    "Windows/Windows-Concepts/Windows-File-System.md",
+    "Post-Exploitation/File-Transfers.md",
+    "Linux/Linux-Commands/Module-Linux-Commands.md"
   ]
 }

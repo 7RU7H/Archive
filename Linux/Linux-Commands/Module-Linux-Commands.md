@@ -83,7 +83,8 @@ curl -X								specify http method!
 #### cut
 ```bash
 -d<delimiter> -f$int,			# cut by delimiter, for each field listed 1,2,3,4...
-````
+````format for declaring a list is follows:
+            // List<datatype> <var n
 #### find 
 ```bash
 find / -type f -name "*.txt" -exec rm {} \; # delete all the files with .txt extension = use xargs ITS FASTER
@@ -107,9 +108,9 @@ gzip -d file.gz		decompress file
 -r	reverse order
 -u	limit message output amount
 -f	continuously print new log entries
-
+```
 #### sed
-
+```bash
 sed -n [operations] [file] > [file]
 sed ....'1,100p					print matched lines
 sed -e ... -e					multiple section from a filestream 
@@ -127,7 +128,8 @@ sed -y						individual bytes in the string provide
 /1,/2,/3,/n					perform operation on an nth occurrence in a line
 sed -e 'range mode/pattern/STRING/g' file.txt
 sed commandline syntax:
-'[condition(s)(optional)] [command/mode(optional)]/[source/to-be-searched pattern(mandatory)]/[to-be-replaced pattern(depends on command/mode you use)]/[args/flags to operate on the pattern searched(optional)]'
+'[condition(s)(format for declaring a list is follows:
+            // List<datatype> <var noptional)] [command/mode(optional)]/[source/to-be-searched pattern(mandatory)]/[to-be-replaced pattern(depends on command/mode you use)]/[args/flags to operate on the pattern searched(optional)]'
 
 sed -n -e '1,5' -e '10,15p' file.txt		# print lines 1to5, 10to15
 sed "s/^/'/;s/$/'/" InputFile				# put single quotes around a stream
@@ -136,8 +138,10 @@ sed -i '$ s/.$//' InputFile					# delete last character in file
 sed -i -e 's/[ \t]*//' Input				# remove tabs from a file
 sed -E 's/^([^,]*[,])//'					# remove after comma
 sed -i 's/^\#.*$//g' $FILE && sed -i '/^$/d' $FILE	# remove comments
-
+sed 's/\x27/\x22\g'	# replace all single x27 and double quotes x22 with hex escape characters 
+```
 #### seq
+```bash
 seq $int		# print sequence of "$int\n" 
 
 #### sort

