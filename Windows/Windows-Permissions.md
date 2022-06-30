@@ -1,4 +1,11 @@
 # Windows Permissions
+Mask | Permissions
+--- | ---
+F | Full access
+M | Modify access
+RX | Read and Execute access
+R | Read-only acess
+W | Write-only access
 
 ## Permissions assignable to files
 

@@ -61,6 +61,7 @@ Path | Description | OS Details | Notes
 Path | Description | OS Details | Notes
 --- | --- | --- | --- 
 `/etc/crontab` | scheduled tasks | |
+``/var/log/cron.log` | running crons | |
 `/etc/init.d` | service startup | |
 `~/.bashrc` | bash shell configuration |
 

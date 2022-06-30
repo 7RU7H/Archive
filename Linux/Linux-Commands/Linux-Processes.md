@@ -1,4 +1,4 @@
-# Process interaction
+# Linux Processes
 
 ```bash
 ps	provide a list of the currently runnning processes
@@ -28,16 +28,7 @@ fg|bg %+ OR %% = current job
 fg|bg %- = previous job
 
 ```
-## Cron-related
 
-Cron
-crontabs !! " * " is wildcard for non entered cron formatting
-MIN	What minute to execute at
-HOUR	What hour to execute at
-DOM	What day of the month to execute at
-MON	What month of the year to execute at
-DOW	What day of the week to execute at
-CMD	The actual command that will be executed.
 
 ## nsenter 
 ```bash

@@ -1,4 +1,4 @@
-# Linux memory management
+# Linux Memory Management Commands
 
 Memory Space, Partitions and External Drives:
 ```bash

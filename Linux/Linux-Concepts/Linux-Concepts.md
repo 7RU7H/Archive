@@ -1,6 +1,17 @@
+## Linux-Concepts
+For more specific articles:
 
+[[Linux-File-System]]
+[[Linux-Permissions]]
+[[Linux-Networking]]
+[[Linux-Network-Services]]
+[[Linux-Processes]]
+[[Linux-Common-File-Extensions]]
+[[Core-Linux-Commands]]
+[[Useful_Bash]]
+[[Linux-Tricks]]
 
-# USEFUL TERMINAL hotkeys
+# Useful terminal hotkeys
 ```
 [ALT]+"." 			repeat last argument in bash terminal
 [CTRL]+L			quick clear termimal
@@ -9,7 +20,7 @@
 [CTRL]+c			ABORT ABORT!
 ```
 
-# BASIC 
+# Basic
 ```bash
 var=somedata
 alias name='Put your commands here'
@@ -18,7 +29,8 @@ alias name='Put your commands here'
 /etc/bin/file           to execute a bin
 ```
 
-# OPERATORS 101
+# Bash Operators 101 
+See [[Useful_Bash]]
 ```bash
 & run command in the  background
 && cmd1 && cmd2 !! cmd1 has to be successful for next command to run
@@ -26,20 +38,7 @@ alias name='Put your commands here'
 >> is the same as the above but appends and does not overwrite
 ```
 
-# PERMISSIONS 101
-FORMAT EXAMPLE
-```bash
-- rwx rwx rwx
-}
-- = filetype: - inidcates regular file d indicate directory
-4 = read
-2 = write
-1 = execute
 
-rwx (col1) read, write, and execute permissions for the file owner
-rwx (col2) read, write, and execute permissions for the group owner of the file
-rwx (col3) read, write, and execute permissions for all the other users
-```
 
 # PIPING & STDIN, STDOUT, STDERR
 ```bash

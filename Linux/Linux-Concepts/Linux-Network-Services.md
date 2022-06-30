@@ -4,10 +4,11 @@
 
 SysV init == Legacy; Systemd == Backwards compatible with SysV init
 
+## Runlevels
+
 Runlevels are designations set to how a linux system starts and what services are running.
 ```bash
-runlevel
-
+runlevel/
 ```
 
 
