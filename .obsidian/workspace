@@ -7,11 +7,8 @@
         "id": "cf2e8f104331b961",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Antivirus-Evasion/Antivirus-Evasion.md",
-            "mode": "source"
-          }
+          "type": "graph",
+          "state": {}
         }
       }
     ],
@@ -68,7 +65,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Antivirus-Evasion/Antivirus-Evasion.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +84,15 @@
   },
   "active": "cf2e8f104331b961",
   "lastOpenFiles": [
+    "Tools/Useful-Software/Nmap-Cheatsheet.md",
+    "nmapOLDCSNEEDTODO.md",
+    "Post-Exploitation/Lateral-Movement/Windows-Network-Lateral-Movement.md",
+    "Post-Exploitation/Lateral-Movement/Lateral-Movement.md",
     "Antivirus-Evasion/Antivirus-Evasion.md",
     "Antivirus-Evasion/Process-Hollowing.md",
     "Antivirus-Evasion/Reflective-DLL-Injection.md",
     "Antivirus-Evasion/Remote-Process-Memory-Injection.md",
     "Antivirus-Evasion/Process-Doppelganging.md",
-    "Tools/AV-Evasion/Shellter-Helpsheet.md",
-    "Tools/SysInternals/Sysinternals-Hub.md",
-    "Tools/SysInternals/Sysinternals-sigcheck.md",
-    "Windows/ASMI.md",
-    "Antivirus-Evasion/ASMI-Bypassing.md"
+    "Tools/AV-Evasion/Shellter-Helpsheet.md"
   ]
 }
