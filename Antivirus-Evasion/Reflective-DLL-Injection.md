@@ -1,0 +1,3 @@
+# Reflective DLL Injection
+
+Reflective DLL Injection is [[DLL-Injection]], but in process memory. More information on DLL avalible here: [[Dynamic-Link-Libraries]]. To load a DLL stored by the attacker in process memory with custom API calls as `LoadLibrary`([Documentation](https://docs.microsoft.com/en-us/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya)) does not support loading DLLs from memory and Windows operating system does not expose any API calls that can handle this.
