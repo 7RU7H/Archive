@@ -20,3 +20,9 @@ Key Admins | Members of this group can perform administrative actions on key obj
 Enterprise Key Admins | Members of this group can perform administrative actions on key objects within the forest.
 Cloneable Domain Controllers | Members of this group that are domain controllers may be cloned.
 RAS and IAS Servers | Servers in this group can access remote access properties of users.
+
+
+
+Groups | Description
+--- | ---
+Account Operators | Grants limited account creation privileges

