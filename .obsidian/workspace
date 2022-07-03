@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Tools/Useful-Software/Crackmapexec-Cheatsheet.md",
+            "file": "Coding-Scripting-Programming/Powershell/Useful_Powershell.md",
             "mode": "source"
           }
         }
@@ -39,7 +39,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "Kerbrute",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/Useful-Software/Crackmapexec-Cheatsheet.md",
+                "file": "Coding-Scripting-Programming/Powershell/Useful_Powershell.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +88,15 @@
   },
   "active": "d2636975610ca318",
   "lastOpenFiles": [
-    "Tools/Useful-Software/Crackmapexec-Cheatsheet.md",
+    "Coding-Scripting-Programming/Powershell/Useful_Powershell.md",
+    "Foothold/File-Transfers/Windows-File-Transfers.md",
     "Tools/Useful-Software/Impacket/Impacket-Cheatsheet.md",
-    "Password-Attacks/Hash-Handler-Tools/Hashcat-Cheatsheet.md",
-    "Recon/Active-Information-Gathering/SMB/RPCClient-Cheatsheet.md",
-    "Post-Exploitation/Lateral-Movement/Windows-Network-Lateral-Movement.md",
-    "Hacker-Distros/Kali/Setup-Services/Kali-Setup-Rogue-LDAP-Server.md",
-    "Post-Exploitation/Privilege-Escalation/Privilege-Escalation-Defined.md",
-    "Tools/SysInternals/Psexec/Sysinternals-Psexec.md",
     "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Privilege-Escalation.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation.md"
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/PrivEsc-Important-Windows-Location.md",
+    "Tools/Useful-Software/Kerbrute-Cheatsheet.md",
+    "Exploitation/Windows/Active-Directory/Attacking-Kerberos.md",
+    "Foothold/File-Transfers/File-Transfers.md",
+    "Tools/Useful-Software/Evil-winrm-Cheatsheet.md"
   ]
 }

@@ -86,6 +86,8 @@ Set-ExecutionPolicy -RemoteSigned	# -Flags -Name -ListAvailable
 # wmi-object in win10 are good tool to find safest lateral movement  
 Get-WmiObject Query Select from Win32_NetworkAdapterConfiguration | Where-Object Index = $device_number
 (Get-NetIPAddress | Where-Object InterfaceAlias -eq "Local Area Connection").IPv4Address | select -first 1).gettype().fullname
+# Local smbshare information
+Get-SmbShare
 ```
 
 ## Objects 
@@ -96,7 +98,6 @@ Select-Object -Property Mode, Name
 -unique # shows the unique objects
 -skip   # skips x objects
 Where-Object # Filter through objects
-
 ```
 
 ## Strings

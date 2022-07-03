@@ -29,7 +29,7 @@ crackmapexec smb $IP -u "" up ""
 
 With Null sessions Windows System that upgraded from 2003, anonymous authenication to grab password policy:
 ```bash
-crackmapexec smb $IP --pass-pol -u '' -p ''
+crackmapexec smb $IP -u '' -p '' --pass-pol
 ```
 Account lockout threshold: 0 -> bruteforcing with [[Password-Attacks]] 
 
@@ -46,9 +46,17 @@ crackmapexec smb $Subnetmask -u administrator -H 'NTHASH'
 ```
 
 ## Enumeration
+#### Users
+```bash
+crackmapexec smb $IP -u '$foothold-account' -p '$password' --users
+crackmapexec smb $IP -u '$foothold-account' -p '$password' --rid-brute
+crackmapexec smb $IP -u '$foothold-account' -p '$password' --groups
+crackmapexec smb $IP -u '$foothold-account' -p '$password' --local-users
+```
 
 ```bash
-crackmapexec smb $Subnetmask -u $foothold-account -p $password --shares
+crackmapexec smb $IP -u '$foothold-account' -p '$password' --shares
+crackmapexec smb $IP -u '$foothold-account' -p '$password' --pass-pol
 
 ```
 
