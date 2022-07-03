@@ -4,11 +4,14 @@
     "type": "split",
     "children": [
       {
-        "id": "cf2e8f104331b961",
+        "id": "d2636975610ca318",
         "type": "leaf",
         "state": {
-          "type": "graph",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "Tools/Useful-Software/Crackmapexec-Cheatsheet.md",
+            "mode": "source"
+          }
         }
       }
     ],
@@ -65,6 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Tools/Useful-Software/Crackmapexec-Cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -82,17 +86,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "cf2e8f104331b961",
+  "active": "d2636975610ca318",
   "lastOpenFiles": [
-    "Tools/Useful-Software/Nmap-Cheatsheet.md",
-    "nmapOLDCSNEEDTODO.md",
+    "Tools/Useful-Software/Crackmapexec-Cheatsheet.md",
+    "Tools/Useful-Software/Impacket/Impacket-Cheatsheet.md",
+    "Password-Attacks/Hash-Handler-Tools/Hashcat-Cheatsheet.md",
+    "Recon/Active-Information-Gathering/SMB/RPCClient-Cheatsheet.md",
     "Post-Exploitation/Lateral-Movement/Windows-Network-Lateral-Movement.md",
-    "Post-Exploitation/Lateral-Movement/Lateral-Movement.md",
-    "Antivirus-Evasion/Antivirus-Evasion.md",
-    "Antivirus-Evasion/Process-Hollowing.md",
-    "Antivirus-Evasion/Reflective-DLL-Injection.md",
-    "Antivirus-Evasion/Remote-Process-Memory-Injection.md",
-    "Antivirus-Evasion/Process-Doppelganging.md",
-    "Tools/AV-Evasion/Shellter-Helpsheet.md"
+    "Hacker-Distros/Kali/Setup-Services/Kali-Setup-Rogue-LDAP-Server.md",
+    "Post-Exploitation/Privilege-Escalation/Privilege-Escalation-Defined.md",
+    "Tools/SysInternals/Psexec/Sysinternals-Psexec.md",
+    "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Privilege-Escalation.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation.md"
   ]
 }

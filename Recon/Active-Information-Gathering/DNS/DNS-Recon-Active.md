@@ -2,6 +2,13 @@
 [DNS](https://en.wikipedia.org/wiki/Domain_Name_System) is a distributed database responsible for translating domain names into IP addresses. [[DNS-Theory]] for conceptual stuff and for passive DNS recon [[DNS-Recon-Passive]]
 
 ## Host lookup
+```bash
+nslookup
+> server $IP
+# try it's local addresses
+> 127.0.0.1
+> 127.0.0.2
+```
 
 ```bash
 host $url 		# ip for a domain

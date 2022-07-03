@@ -1,4 +1,7 @@
 
+# Windows Events ToMonitor
+Using [[Sysmon-Events]] and [[Sysinteral-Sysmon]].
+
 Applies to: Windows Server 2022, Windows Server 2019, Windows Server
 
 The following table lists events that you should monitor in your environment, according to the recommendations provided in Monitoring Active Directory for Signs of Compromise. In the following table, the "Current Windows Event ID" column lists the event ID as it is implemented in versions of Windows and Windows Server that are currently in mainstream support.
@@ -6,6 +9,8 @@ The following table lists events that you should monitor in your environment, ac
 The "Legacy Windows Event ID" column lists the corresponding event ID in legacy versions of Windows such as client computers running Windows XP or earlier and servers running Windows Server 2003 or earlier. The "Potential Criticality" column identifies whether the event should be considered of low, medium, or high criticality in detecting attacks, and the "Event Summary" column provides a brief description of the event.
 
 A potential criticality of High means that one occurrence of the event should be investigated. Potential criticality of Medium or Low means that these events should only be investigated if they occur unexpectedly or in numbers that significantly exceed the expected baseline in a measured period of time. All organizations should test these recommendations in their environments before creating alerts that require mandatory investigative responses. Every environment is different, and some of the events ranked with a potential criticality of High may occur due to other harmless events.
+
+
 Table 1
 Current Windows Event ID 	Legacy Windows Event ID 	Potential Criticality 	Event Summary
 4618 	N/A 	High 	A monitored security event pattern has occurred.

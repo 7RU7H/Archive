@@ -1,8 +1,7 @@
-Phishing 101 
+# Phishing 101 
 
-############
+
 # Contents:
-#
 # How to write the good phish
 
 

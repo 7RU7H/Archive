@@ -1,6 +1,6 @@
 # Introduction
 
-For instructions on installation, images and use cases per distro/OS see:[Docker for Kali](Hacker-Distros/Kali/dockerForKali), for [[Docker-Hacking]]
+For instructions on installation, images and use cases per distro/OS see:[Docker for Kali](Kali-Setup-Docker.md), for [[Docker-Hacking]]
 
 ## Building a Docker container
 

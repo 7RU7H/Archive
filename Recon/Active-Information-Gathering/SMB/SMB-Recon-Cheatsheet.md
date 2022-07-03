@@ -1,7 +1,6 @@
 # Server Message Block 
 SMB oringally ran on top of NetBIOS using port 139. NetBIOS is an older trnasport layer that allows Windows computer to communicate on the same network. Later versions of SMB(after Windows 2000) use port 445 on top of a TCP stack, TCP allows for internet communication.
 
-
 ## smbmap
 ```bash
 smbmap -H $IP
@@ -19,7 +18,8 @@ Query MS-RPC for commands to try and estanblish a null session
 ```bash
 rpcclient -U "" -N $IP
 ```
-See enumeration commands [rcpclientCS](SMB/rpcclient)
+See enumeration commands [[RPCClient-Cheatsheet]] and its usage [[RPCClient-Usage]]
+
 ## smbget
 Recursively download an entire share
 ```bash

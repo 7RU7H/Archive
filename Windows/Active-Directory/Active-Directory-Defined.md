@@ -5,30 +5,33 @@ This is 101 ground-up and top-down explanation information cheatsheet and a hub 
 
 ## AD Defined:
 
-Active Directory or Active Directory Directory Services(ADDS) is a directory service for Windows Domain Networks.  
-Microsoft scalable centralised IT management, authentication and authorization framework. 
-An Active Directory netowkr is a foresst of domains that hold a collection of servers and machines.
-Location, security and many other aspect make up a rational for a sepcific architecture of forests, trees, domains and the organisation units are each are connected.
+Active Directory or Active Directory Directory Services(ADDS) is a directory service for Windows Domain Networks.  Microsoft scalable centralised IT management, authentication and authorization framework. An Active Directory network a domain that hold a collection of servers and machines. Location, security and many other aspects make up a rational for a specific architecture of forests, trees, domains and the organisation units are each connected and how they are allowed to interact.
 
 AD Components:  
-1. Domain Controllers
+1. Domain Controllers - Windows 2000-20* server with ADDS installed
 1. Forests, Trees, Domains
-1. Users + Groups 
+2. Organisation Units - System folders containers to store and group objects. Each AD Object has attributes.
+	1. Users 
+	1. Groups 
+	2. Workstations and Servers that are domain-joined
 1. Trusts
-1. Policies 
-1. Domain Services
+2. Policies 
+3. Domain Services
 
 ## Domain Controller(DC)
 
-A Windows Server that has Active Directory Domain Service(AD DS) installed and is the domain controller for the forest.
+A Windows Server that has Active Directory Domain Service(ADDS) installed and is the domain controller for the forest.
 AD-Forest will sometimes have multiple DCs for redundancy of data and services, each having the same replicated AD data.
 A DC purpose:
 1. Stores all relevant information including AD DS data store for the Forest 
-1. Handles all key authenication, authorization services and all core and native management services.
-1. Replicates updates from other domain contollers in the forsest
-1. Allow admin access to manage domain resources
+2. Enforce rules governing object within an Windows domain
+3. Handles all key authenication, authorization services and all core and native management services.
+4. Replicates updates from other domain contollers in the forest
+5. Allow admin access to manage domain resources
 
-DC data organisaiton:
+A Primary domain controller emulator is one of the five operations master roles or [FSMO roles](https://docs.microsoft.com/en-GB/troubleshoot/windows-server/identity/fsmo-roles) performed by domain controllers. Technically speaking, the property is called `PdcRoleOwner` and the domain controller with this property will always have the most updated information about user login and authentication.
+
+DC data organisation:
 All data is stored either direct at the Forest level or inside an Organisational Unit(OU)
 
 ## Active Directory Domain Service (AD DS) Date Store
@@ -43,25 +46,26 @@ AD DS retains the databases and processes required to store and manage directory
 
 AD is organised around a top domain domain.com, with the possibility of subdomains sub.domain.com
 
+```
+Forest  -	-	-	-	-	-	-	- Another Forest
+|		\							  /   /		\
+Tree  	 \	-	Connections Vary -   /	Tree 	Tree
+|		  \				        	/	 /	      \
+Domain	   \				  	   /  Domain	Domain
+|			\				      /     /		  \		 
+Organisation Units				 /  (OUs)		(OUs)		
+```
 
-Forest  
-|			\
-Tree  
-|				\
-Domain
-|					\
-Organisation Unit
-|
+Often clients on a internal network are connectioned vai one of the DC as the gateway to the external forests or tree. Internal OUs are also internal member servers(web servers, database servers, etc) and printers reside accessable the DC within their local internal network. It reliant on Domain Name System (check[[DNS-Theory]]) typically with DC will also host a DNS server.
 
  
 ### Forest 
 Forests are self-contained and provides all required services as the highest-level component, caegorizing the parts of the network as a whole.
 
-
 ### Trees
 Trees are a hierarchy of domains in Active Directory Domain Services
 
-
+### Domains
 Domains are used to group and manage objects 
 
 ### Organizational Units (OUs)
@@ -107,10 +111,15 @@ These can access the DC and is the highest privledge level of a user.
 
 ##### Service Accounts 
 
-Used for service maintenance and required by Windows for services to pair a service with a service account.
-When applications need to access the domain resources or require Kerberos authenication; the application is executed in the context of a domain account referred to a service account, but is still a domain user account.
-Execution of applications can be possible in the context of the local SYSTEM accounnt or "group Managed Service Account(gMSA).  
-The gMSA's can also perform automated credientals rotation = account password is 120 characetrs long and changes every 30 days.  
+[Service principle names](https://docs.microsoft.com/en-us/windows/win32/ad/service-principal-names?redirectedfrom=MSDN) as Applications are executed in the context of the operation system user and that user account defines that context, whereas service executed by system itself a [Service Account](https://docs.microsoft.com/en-us/windows/win32/services/service-user-accounts?redirectedfrom=MSDN). Used for service maintenance and required by Windows for services to pair a service with a service account. When applications need to access the domain resources or require Kerberos authenication; the application is executed in the context of a domain account referred to a service account, but is still a domain user account. Domain user account may be required to provide the service accounts more access to resource inside the domain. Execution of applications can be possible in the context of the local SYSTEM accounnt or "group Managed Service Account(gMSA).  The gMSA's can also perform automated credientals rotation = account password is 120 characetrs long and changes every 30 days. 
+
+Service Accounts | Description
+--- | ---
+[LocalSystem](https://docs.microsoft.com/en-us/windows/win32/services/localsystem-account?redirectedfrom=MSDN) | Local account used by SVCM
+[LocalService](https://docs.microsoft.com/en-us/windows/win32/services/localservice-account?redirectedfrom=MSDN) |
+[NetworkService](https://docs.microsoft.com/en-us/windows/win32/services/networkservice-account?redirectedfrom=MSDN) |
+
+ 
 
 ##### Local Administrators
 
@@ -130,8 +139,6 @@ SA = one or more sub authority value
 Sub authority value is dynamic and consists tof two primary parts: 
 /	Domain's numeric identifier 	-22-1234-1234-1234 
 	Relative identifier(RID) 	-1010
-
-
 
 ##### Notes:
 BEWARE AD-cmdlets only installed by default on DCs!
@@ -154,28 +161,10 @@ Responsible for maintaining the data that is stored in AD DS and on domain membe
 ```
 Get-ADGroupMember <groupname> -recursive
 ```
+
 ##### Default Security Groups
 
-Domain Controllers - All domain controllers in the domain
-Domain Guests - All domain guests
-Domain Users - All domain users
-Domain Computers - All workstations and servers joined to the domain
-Domain Admins - Designated administrators of the domain
-Enterprise Admins - Designated administrators of the enterprise
-Schema Admins - Designated administrators of the schema
-DNS Admins - DNS Administrators Group
-DNS Update Proxy - DNS clients who are permitted to perform dynamic updates on behalf of some other clients (such as DHCP servers).
-Allowed RODC Password Replication Group - Members in this group can have their passwords replicated to all read-only domain controllers in the domain
-Group Policy Creator Owners - Members in this group can modify group policy for the domain
-Denied RODC Password Replication Group - Members in this group cannot have their passwords replicated to any read-only domain controllers in the domain
-Protected Users - Members of this group are afforded additional protections against authentication security threats. See http://go.microsoft.com/fwlink/?LinkId=298939 for more information.
-Cert Publishers - Members of this group are permitted to publish certificates to the directory
-Read-Only Domain Controllers - Members of this group are Read-Only Domain Controllers in the domain
-Enterprise Read-Only Domain Controllers - Members of this group are Read-Only Domain Controllers in the enterprise
-Key Admins - Members of this group can perform administrative actions on key objects within the domain.
-Enterprise Key Admins - Members of this group can perform administrative actions on key objects within the forest.
-Cloneable Domain Controllers - Members of this group that are domain controllers may be cloned.
-RAS and IAS Servers - Servers in this group can access remote access properties of users
+See the table of [[Active-Directory-Default-Security-Groups]]
 
 ### Domain Services
 
@@ -190,17 +179,15 @@ Domain Services include:
 
 #### Lightweight Directory Access Protocol(LDAP)
 
-Lightweight Directory Access Protocol5 (LDAP) is very commonly used to interact with Domain Controllers to submit or retrieve data. 
-LDAP is an open-source protocol designed to provides communication and interaction between applications and directory services.
+Lightweight Directory Access Protocol (LDAP) is one the [[Network-Services]] very commonly used to interact with Domain Controllers to submit or retrieve data. LDAP is an open-source protocol designed to provides communication and interaction between applications and directory services. See [[LDAP-Recon]].
 
 #### Certicate Services
 
-THM room and abusing AD certificate service in the pipeline!
+[[AD-Certificate-Exploitation]]
 
 ### Domain Schema
 
 Domain Schema are rules for object creation
-
 
 ## Domain Authentication
 
@@ -221,7 +208,6 @@ Client		Step 1: Authenication Server Request (\_AS\_REQ) ->		Domain Controller
 
 Client 		Step 5: Application Request ->					Application Server
 		<- Step 6: Service Authenication	
-
 
 
 Transaction 		Contents
@@ -322,3 +308,11 @@ Large organizations and enterprises often use added products and features which 
 [LDAP Wiki](https://en.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol)
 [WPAD Wiki](https://en.wikipedia.org/wiki/Web_Proxy_Auto-Discovery_Protocol)
 [SMB Wiki](https://en.wikipedia.org/wiki/Server_Message_Block)
+[FSMO roles](https://docs.microsoft.com/en-GB/troubleshoot/windows-server/identity/fsmo-roles)
+[Remote Server Administration Tools](https://docs.microsoft.com/en-us/powershell/module/activedirectory/?view=windowsserver2022-ps)
+[Remote Server Administration Tools 2](https://docs.microsoft.com/en-us/previous-versions/technet-magazine/gg413289(v=msdn.10)?redirectedfrom=MSDN)
+[Domain Name System](https://en.wikipedia.org/wiki/Domain_Name_System "Domain Name System") 
+[IPv4](https://en.wikipedia.org/wiki/IPv4 "IPv4") 
+[IPv6](https://en.wikipedia.org/wiki/IPv6 "IPv6") 
+[NetBIOS](https://networkencyclopedia.com/netbios/) 
+[DHCP](https://en.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol "Dynamic Host Configuration Protocol")

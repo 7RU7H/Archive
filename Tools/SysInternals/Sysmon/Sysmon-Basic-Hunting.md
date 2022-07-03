@@ -1,5 +1,6 @@
 
-# Hunting for Open Ports with PowerShell - Metasploit hunting 4444/5555
+## Hunting for Open Ports with PowerShell - Metasploit hunting 4444/5555
+```powershell
 Get-WinEvent -Path <Path to Log> -FilterXPath '*/System/EventID=3 and */EventData/Data[@Name="DestinationPort"] and */EventData/Data=4444'
 
 <RuleGroup name="" groupRelation="or">
@@ -104,3 +105,4 @@ Get-WinEvent -Path <Path to Log> -FilterXPath '*/System/EventID=15'
 
 	# Detecting Remote Thread Creation
 Get-WinEvent -Path <Path to Log> -FilterXPath '*/System/EventID=8'
+```

@@ -5,7 +5,7 @@ Tools:
 1. Postman
 2. wfuzz
 3. [[ffufCS]]
-4. [[gobusterCS]]
+4. [[Gobuster-Cheatsheet]]
 
 ```bash
 wfuzz -c -z file,/usr/share/seclists/Discovery/Web-Content/api/objects.txt -X POST --hc 404,400 $IP/api/items\?FUZZ\=test
