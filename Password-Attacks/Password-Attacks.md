@@ -1,6 +1,6 @@
 # Password Attacks
 ## Quick Links
-For just [OpenWall wiki's sample hashes can be found here](https://openwall.info/wiki/john/sample-hashes) and similarly [Hashcat's example hashes](https://hashcat.net/wiki/doku.php?id=example_hashes). These are good for rough useful visual guide and naming format for both tools usage.
+For just [OpenWall wiki's sample hashes can be found here](https://openwall.info/wiki/john/sample-hashes) and similarly [Hashcat's example hashes](https://hashcat.net/wiki/doku.php?id=example_hashes). These are good for rough useful visual guide and naming format for both tools usage. For basic cryptography see [[Cryptography101]] and [[De-Or-En-Cryption]] for applications you may need
 
 ## Introduction 
 We can use a [Dictionary Attack](https://en.wikipedia.org/wiki/Dictionary_attack) using a wordlist or we can [Brute Force](https://en.wikipedia.org/wiki/Brute-force_attack) all possible character combination. If hashes are leaked misconfiguration or another exploit or from a [Pass-the-hash-Attack](https://en.wikipedia.org/wiki/Pass_the_hash), the attacker can then perform [Password Cracking](https://en.wikipedia.org/wiki/Password_cracking). 

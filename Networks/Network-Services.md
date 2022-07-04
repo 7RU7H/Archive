@@ -64,16 +64,19 @@ nc -nv $IP
 //generally 48
 
 ## 53 - DNS
-//default 53
+Default port 53
+[[DNS-Theory]], [[DNS-Recon-Active]], [[DNS-Recon-Passive]]
 
 ## 69 - TFTP
 Stands for trivial file transfer protocol - UDP FTP
 generally 69
 
 ## 80 - HTTP
-Default 80
+Default  port 80
 
-POP3
+[[Web-Hacking-Checklist]], [[Website-Recon]] and [[Web-App-Hacking-Methodology]].
+
+## POP3
 //generally 110
 //post office protocol 3
 //used to download email from mail delivery agent MDA -- from MUA -(smtp)-> MSA/MTA -> SMTP -> MTA/MDA -(POP3/IMAP)-> MUA

@@ -6,6 +6,12 @@ Web-related hacking may seem very independent as a system, but in actuality Web 
 ## Tools
 You can do alot with just `Burp`, `[insert browser of choice] Dev tools`, `Nikto` a `insert directory buester of choice` and `curl`, but sometimes less so `curl` can be blocked as [[Mechanizing-The-Methodology]] points out method for bypassing curl blocking. Bounty bug tools and framework on Github have become numerous and powerful, [[Haddix-Methodology]] and [[Application-Analysis]] provide great sources of good tools.
 
+[[Nikto-Cheatsheet]]
+[[[Burpsuite-Helpsheet]]
+[[OpenVAS]]
+[[Nmap-Cheatsheet]]
+
+
 ## Web Application Assessment vs Peneteration test
 Web App assessments have borad objective on a small selection of applcations or hosts. Whereas Penetration tests are very specific goal over  a larger than the web application potential scoping. [See Penetration Testing Execution Standard (PTES)](http://www.pentest-standard.org/index.php/Main_Page) and [OWASP's Web Application Security Testing](https://owasp.org/www-project-web-security-testing-guide/) for some ideas around the various stardards applied to assesement structuring.
 

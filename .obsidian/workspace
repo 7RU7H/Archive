@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "d2636975610ca318",
+        "id": "69d994911b83538f",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Exploitation/Windows/Active-Directory/AD-Domain-Exploitation.md",
+            "file": "Exploitation/Windows/Active-Directory/Attacking-Kerberos.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exploitation/Windows/Active-Directory/AD-Domain-Exploitation.md",
+                "file": "Exploitation/Windows/Active-Directory/Attacking-Kerberos.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -86,17 +86,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "d2636975610ca318",
+  "active": "69d994911b83538f",
   "lastOpenFiles": [
-    "Exploitation/Windows/Active-Directory/AD-Domain-Exploitation.md",
-    "Exploitation/Windows/Active-Directory/AD-Exploitation-Hub.md",
     "Exploitation/Windows/Active-Directory/Attacking-Kerberos.md",
+    "Tools/Useful-Software/Mimikatz-Cheatsheet.md",
+    "Networks/Active-Directory/Active-Directory-Authenication.md",
+    "Networks/Active-Directory/Active-Directory-Kerberos-Defined.md",
+    "Networks/Network-Services.md",
+    "Networks/Active-Directory/Active-Directory-Credential-Caching.md",
     "Exploitation/Windows/Active-Directory/AD-Certificate-Exploitation.md",
-    "Windows/Active-Directory/Active-Directory-Default-Security-Groups-Table.md",
-    "Tools/Useful-Software/Neo4j-And-Bloodhound-Guide.md",
-    "Tools/Useful-Software/Kerbrute-Cheatsheet.md",
-    "Tools/Useful-Software/Github-guide.md",
-    "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Privilege-Escalation.md",
-    "Tools/Useful-Software/Evil-winrm-Cheatsheet.md"
+    "Exploitation/Windows/Active-Directory/AD-Domain-Exploitation.md",
+    "Tools/Useful-Software/Rubeus-Cheatsheet.md",
+    "Tools/Useful-Software/Kerbrute-Cheatsheet.md"
   ]
 }

@@ -20,18 +20,17 @@ Currently Logged on users that are of important groups have credentials cached i
 
 Reliable functions  `NetWkstaUserEnum`(requires Administrative privileges returns a list of active users on a workstation) and `NetSessionEnum`(does not, returns list of list of active user sessions on servers). Use `NetWkstaUserEnum` post-`NT SYSTEM Level`- Only useful for users the local administrator privileges over that  are logged on. Use `NetSessionEnum` enumerate all active users' sessions. Similiarly and much more extensive enumeration with [Powerview](https://github.com/PowerShellMafia/PowerSploit/blob/dev/Recon/PowerView.ps1) can be utilised to great affect in information gathering. Link to: [[Powercat-Cheatsheet]].
 
-[Service principle names](https://docs.microsoft.com/en-us/windows/win32/ad/service-principal-names?redirectedfrom=MSDN) as Applications are executed in the context of the operation system user and that user account defines that context, whereas service executed by system itself a [Service Account](https://docs.microsoft.com/en-us/windows/win32/services/service-user-accounts?redirectedfrom=MSDN).  Enumeration through these can lead to [[Attacking-Kerberos]] or [[Foothold-On-AD]]
+[Service principle names](https://docs.microsoft.com/en-us/windows/win32/ad/service-principal-names?redirectedfrom=MSDN) as Applications are executed in the context of the operation system user and that user account defines that context, whereas service executed by system itself a [Service Account](https://docs.microsoft.com/en-us/windows/win32/services/service-user-accounts?redirectedfrom=MSDN).  Enumeration through these can lead to [[Attacking-Kerberos]] or [[Foothold-On-AD]]. Application use one of the predefined service accounts below to be lauched by the system.
 
-Service Accounts | Description
+Service Accounts | Privileges 
 --- | ---
-[LocalSystem](https://docs.microsoft.com/en-us/windows/win32/services/localsystem-account?redirectedfrom=MSDN) | Local account used by SVCM
-[LocalService](https://docs.microsoft.com/en-us/windows/win32/services/localservice-account?redirectedfrom=MSDN) |
-[NetworkService](https://docs.microsoft.com/en-us/windows/win32/services/networkservice-account?redirectedfrom=MSDN) |
+[LocalSystem](https://docs.microsoft.com/en-us/windows/win32/services/localsystem-account?redirectedfrom=MSDN) | [[Windows-System-And-Service-Privileges]] 
+[LocalService](https://docs.microsoft.com/en-us/windows/win32/services/localservice-account?redirectedfrom=MSDN) | [[Windows-System-And-Service-Privileges]]
+[NetworkService](https://docs.microsoft.com/en-us/windows/win32/services/networkservice-account?redirectedfrom=MSDN) | [[Windows-System-And-Service-Privileges]]
 
-Domain user account may be required to provide the service accounts more access to resource inside the domain.
+Domain user account may be required to provide the service accounts more access to resource inside the domain. 
 
-
-
+By enumerating all [SPN](https://docs.microsoft.com/en-us/windows/win32/ad/service-principal-names?redirectedfrom=MSDN)s in the domain we get: IP and ports running applications intergated on AD servers, without scanning the network.
 
 ## Microsoft Management Console
 If access to RDP you can enumerate with Microsoft Management Console (MMC) with the [Remote Server Administration Tools](https://docs.microsoft.com/en-us/powershell/module/activedirectory/?view=windowsserver2022-ps) (RSAT) AD Snap-Ins
@@ -44,14 +43,12 @@ If access to RDP you can enumerate with Microsoft Management Console (MMC) with 
 
 
 ## Active Directory Service Interfaces (ADSI)
-#### DNS
+- **DNS**
 For more about [[DNS-Theory]], for enumeration for DNS see both 
 [[DNS-Recon-Active]] and [[DNS-Recon-Passive]].
-
-#### SMB
+- **SMB**
 [[SMB-Recon-Cheatsheet]] and [[RPCClient-Cheatsheet]]
-
-#### LDAP
+- **LDAP**
 [[LDAP-Recon]]
 
 ## SAM Account Type Attributes

