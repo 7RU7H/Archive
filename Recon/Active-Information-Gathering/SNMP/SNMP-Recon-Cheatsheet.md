@@ -24,7 +24,6 @@ Requires a community list contains community strings and ip addresses. `onesixty
 onesixtyone -c community -i $SMNP_IP_LIST
 ```
 
-
 ```bash
 snmpwalk -c public -v1 -t 5 $IP $mib_values
 ```
@@ -34,9 +33,23 @@ snmpwalk -c public -v1 -t 5 $IP $mib_values
 sudo apt install snmp-mibs-downloader
 sudo vim /etc/snmp/snmp.conf
 # Add a comment on the line 
-mibs :$
+mibs :
 # Use snmpbulkwalk - remember '.' at end
 snmpbulkwalk -c public -v2c $IP .
 ```
 
-snmpenum tool may not catch any weirdness.
+Snmpenum tool may not catch any weirdness.
+
+## Get an IPv6 Address from MIBs
+[[IPv6-Defined]] to understand IPv6
+
+```bash
+cat snmpwalk-output | grep iso.3.6.1.2.1.4.34.1.3.2.16|cut -d "." -f 13-28 | cut -d " " -f 1
+# Output will be in the format by line
+# Loopback
+# Link-Local
+# Unique-Local
+or 
+cat -n snmpbulkoutput | grep "inetCidrRouteIfIndex.ipv6"
+
+```

@@ -21,7 +21,7 @@ nmap -iR $int	# random hosts
 --exclude $target
 --excludefile hosts.txt
 -sL 			# creates host list listing each host of the network
--6				# IPv6 target
+-6				# IPv6 target(s)
 ```
 
 # Scans 
@@ -137,13 +137,14 @@ By default Nmap does not scan the ports in numerical order
 --script vuln
 
 ```
-
+## Nmap ScriptGun 
 ```bash
 dir=$(locate /nmap/scripts)
 type=$1
 for script in $(ls $dir | grep $type); do
 	echo $script
 	nmap --script $script $IP
+	wait
 done
 exit
 ```

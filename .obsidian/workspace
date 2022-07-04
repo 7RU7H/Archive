@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Exploitation/Windows/Active-Directory/Attacking-Kerberos.md",
+            "file": "Recon/Active-Information-Gathering/SNMP/SNMP-Recon-Cheatsheet.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exploitation/Windows/Active-Directory/Attacking-Kerberos.md",
+                "file": "Recon/Active-Information-Gathering/SNMP/SNMP-Recon-Cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +88,15 @@
   },
   "active": "69d994911b83538f",
   "lastOpenFiles": [
+    "Recon/Active-Information-Gathering/SNMP/SNMP-Recon-Cheatsheet.md",
+    "README.md",
+    "Recon/Active-Information-Gathering/Nmap/Nmap-Cheatsheet.md",
+    "Networks/Network-Theory/IPv6-Defined.md",
     "Exploitation/Windows/Active-Directory/Attacking-Kerberos.md",
     "Tools/Useful-Software/Mimikatz-Cheatsheet.md",
     "Networks/Active-Directory/Active-Directory-Authenication.md",
     "Networks/Active-Directory/Active-Directory-Kerberos-Defined.md",
     "Networks/Network-Services.md",
-    "Networks/Active-Directory/Active-Directory-Credential-Caching.md",
-    "Exploitation/Windows/Active-Directory/AD-Certificate-Exploitation.md",
-    "Exploitation/Windows/Active-Directory/AD-Domain-Exploitation.md",
-    "Tools/Useful-Software/Rubeus-Cheatsheet.md",
-    "Tools/Useful-Software/Kerbrute-Cheatsheet.md"
+    "Networks/Active-Directory/Active-Directory-Credential-Caching.md"
   ]
 }
