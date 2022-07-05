@@ -9,29 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Post-Exploitation/Lateral-Movement/Active-Directory-Lateral-Movement.md",
-            "mode": "source"
-          }
-        }
-      },
-      {
-        "id": "a92eca72f6bda3cc",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Coding-Scripting-Programming/Powershell/Useful_Powershell.md",
-            "mode": "source"
-          }
-        }
-      },
-      {
-        "id": "7be7c58e9cc497c6",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Coding-Scripting-Programming/Powershell/Basic_Powershell.md",
+            "file": "Tools/Packet-Analysis/Wireshark/Wireshark.md",
             "mode": "source"
           }
         }
@@ -90,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Post-Exploitation/Lateral-Movement/Active-Directory-Lateral-Movement.md",
+                "file": "Tools/Packet-Analysis/Wireshark/Wireshark.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,15 +88,15 @@
   },
   "active": "69d994911b83538f",
   "lastOpenFiles": [
+    "Tools/Packet-Analysis/Wireshark/Wireshark.md",
+    "Networks/Network-Theory/TCP-IPmodel.md",
+    "Tools/Packet-Analysis/Wireshark/Wireshark-Useful-Display-Filters.md",
+    "Web-Hacking/Web-Concepts/html101.md",
     "Post-Exploitation/Lateral-Movement/Active-Directory-Lateral-Movement.md",
     "Coding-Scripting-Programming/Powershell/Basic_Powershell.md",
     "Coding-Scripting-Programming/Powershell/Useful_Powershell.md",
     "Networks/Network-Services.md",
     "Networks/Network-Theory/IPv4-Subnet-Masks-Dictionary.md",
-    "Tools/Useful-Software/Impacket/Impacket-Cheatsheet.md",
-    "Web-Hacking/Subdomains/Subdomains.md",
-    "Web-Hacking/Content-Discovery/FFUF-Cheatsheet.md",
-    "Tools/Useful-Software/Mimikatz-Cheatsheet.md",
-    "Post-Exploitation/Lateral-Movement/Lateral-Movement.md"
+    "Tools/Useful-Software/Impacket/Impacket-Cheatsheet.md"
   ]
 }
