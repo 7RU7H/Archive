@@ -1,4 +1,5 @@
 # Nessus
+Is a tool for [[Vulnerability-Scanning]]. Free and paid version, once open-source.
 
 ## Installing Nessus
 [Find the appropriate version for your operating system](https://www.tenable.com/downloads/nessus), checksum the version with `sha256sum <Nessus>` and finally follow the relevant installation instruction for your OS. For  Kali:

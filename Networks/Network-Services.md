@@ -25,7 +25,7 @@ put file	upload files!
 ```
 
 ## 22 SSH
-generally port 22
+Default port 22
 ```
 -i	access with private key
 -L	local_port:remote_address:remote_port # for local port fowarding
@@ -76,20 +76,19 @@ Default  port 80
 
 [[Web-Hacking-Checklist]], [[Website-Recon]] and [[Web-App-Hacking-Methodology]].
 
-## POP3
-//generally 110
-//post office protocol 3
-//used to download email from mail delivery agent MDA -- from MUA -(smtp)-> MSA/MTA -> SMTP -> MTA/MDA -(POP3/IMAP)-> MUA
+## 110 POP3
+Generally port 110, Post Office Protocol 3 is used to download email from mail delivery agent.
+```
+MDA -- from MUA -(smtp)-> MSA/MTA -> SMTP -> MTA/MDA -(POP3/IMAP)-> MUA
 USER 
 PASS
 STAT
 LIST	list all messUSER 
 RETR	return a message
-
-# 111 - NFS
+```
+## 111 (also 2049) - NFS
 [[NFS-Recon]]
-//On both 111 2049
-
+Ports 111 and 2049
 Shared directory, mount those shares!
 ```bash
 sudo showmount -e $ip
@@ -103,15 +102,15 @@ umount $ip:/local/file/path
 ```
 
 ## 13(5,7-9), 445 -  NBT - SMB
-[[SMB-Recon-Cheatsheet]]
-Server Message Block protocol uses a client-server model. Cliet uses `smbclient` see [smbclientCheatSheet](SMB-Recon-Cheatsheet.md)
-SMB oringally ran on top of NetBIOS using port 139. NetBIOS is an older transport layer that allows Windows computer to communicate on the same network. Later versions of SMB(after Windows 2000) use port 445 on top of a TCP stack, TCP allows for internet communication.
-NetBIOS over TCP/IP (NetBT)	Windows name resolution
-135(TCP) msrpc
-137(TCP/UDP)
-138(UDP)
-139(TCP) netbios-ssn
-445(TCP) microsoft-ds
+Server Message Block protocol uses a client-server model. Client uses `smbclient` see [[SMB-Recon-Cheatsheet]]. SMB oringally ran on top of NetBIOS using port 139. NetBIOS is an older transport layer that allows Windows computer to communicate on the same network. Later versions of SMB(after Windows 2000) use port 445 on top of a TCP stack, TCP allows for internet communication. NetBIOS over TCP/IP (NetBT) is Windows name resolution.
+
+Port | Purpose
+--- | ---
+135(TCP) |  MSRPC;  DCOM is performed over RPC
+137(TCP/UDP) | ..
+138(UDP) | .. 
+139(TCP) | netbios-ssn 
+445(TCP) | microsoft-ds
 
 ## IMAP
 //generally 143
@@ -141,6 +140,21 @@ FTPS
 IMAPS
 //default port 993
 
+## 2049 (also 111) - NFS
+[[NFS-Recon]]
+Ports 111 and 2049
+Shared directory, mount those shares!
+```bash
+sudo showmount -e $ip
+sudo mount $ip:/file/path /local/file/path
+
+sudo mount -o port=1234 -t nfs $ip:/dir /tmp/local
+# nolock maybe required for older systems
+sudo mount -o nolock port=1234 -t nfs $ip:/dir /tmp/local
+
+umount $ip:/local/file/path	
+```
+
 ## 995 - POP3S
 Default port 995
 [[Mail-Operations]]
@@ -167,7 +181,7 @@ SNMPSSH-TRAP
 Legacy application [Pando](https://en.wikipedia.org/wiki/Pando_(application)) BitTorrent client and uses the BitTorrent protocol to transfer files.
 
 ## Burp Proxy
-default port 8000
+Default port 8000, see [[Burpsuite-Helpsheet]]
 
 ## Tomcat HTTP roxy
 [[Apache-Tomcat]]

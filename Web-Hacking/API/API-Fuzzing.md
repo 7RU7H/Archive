@@ -4,7 +4,7 @@
 Tools:	
 1. Postman
 2. wfuzz
-3. [[ffufCS]]
+3. [[FFUF-Cheatsheet]]
 4. [[Gobuster-Cheatsheet]]
 
 ```bash

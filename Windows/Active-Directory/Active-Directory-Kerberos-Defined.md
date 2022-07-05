@@ -7,7 +7,7 @@ Client |  Steps | AD DC/Server
 Client|Step 1: Authenication Server Request (\_AS\_REQ) ->	|	Domain Controller
 Client |<- Step 2: Authenication Server Reply (AS_REP)|	Domain Controller
 Client |		Step 3: Ticket Granting Service Request (TGS_REQ) ->|	Domain Controller
-Client |		<- Step 4: Ticket Granting Server Reply (TGS_REP) |	Domain Controller
+Client |		<- Step 4: Ticket Granting Service Reply (TGS_REP) |	Domain Controller
 Client 	|	Step 5: Application Request ->		|			Application Server
 Client	    |	<- Step 6: Service Authenication	| Application Server
 

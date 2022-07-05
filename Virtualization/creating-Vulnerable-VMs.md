@@ -1,6 +1,8 @@
 # Creating Vulnerable Virtual Machines for CTFs, Practice and Profit
 ## Introduction
 
+For making an [[Active-Directory-Lab]]
+
 ## Hardware Resource Requirements
 
 ## Puzzle Creation Requirements

