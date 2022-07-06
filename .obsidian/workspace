@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Tools/Packet-Analysis/Wireshark/Wireshark.md",
+            "file": "Tools/Useful-Software/Mimikatz-Cheatsheet.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/Packet-Analysis/Wireshark/Wireshark.md",
+                "file": "Tools/Useful-Software/Mimikatz-Cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +88,15 @@
   },
   "active": "69d994911b83538f",
   "lastOpenFiles": [
-    "Tools/Packet-Analysis/Wireshark/Wireshark.md",
-    "Networks/Network-Theory/TCP-IPmodel.md",
-    "Tools/Packet-Analysis/Wireshark/Wireshark-Useful-Display-Filters.md",
-    "Web-Hacking/Web-Concepts/html101.md",
-    "Post-Exploitation/Lateral-Movement/Active-Directory-Lateral-Movement.md",
-    "Coding-Scripting-Programming/Powershell/Basic_Powershell.md",
-    "Coding-Scripting-Programming/Powershell/Useful_Powershell.md",
-    "Networks/Network-Services.md",
-    "Networks/Network-Theory/IPv4-Subnet-Masks-Dictionary.md",
-    "Tools/Useful-Software/Impacket/Impacket-Cheatsheet.md"
+    "Tools/Useful-Software/Mimikatz-Cheatsheet.md",
+    "Post-Exploitation/Persistence/Active-Directory-Persistence.md",
+    "Windows/Windows-Tools.md",
+    "Post-Exploitation/Persistence/Persistence.md",
+    "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Privilege-Escalation.md",
+    "Windows/Active-Directory/Active-Directory-Kerberos-Defined.md",
+    "Security-Enterprises/Redteam/Securing-Cloud-Deployments-A-Red-Team-Perspective.md",
+    "Security-Enterprises/Redteam/Red-Teaming-In-The-Cloud.md",
+    "Security-Enterprises/Redteam/Red-Team-Hub.md",
+    "Tools/Packet-Analysis/Wireshark/Wireshark.md"
   ]
 }
