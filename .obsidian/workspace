@@ -7,8 +7,11 @@
         "id": "b85910fd968c5cad",
         "type": "leaf",
         "state": {
-          "type": "graph",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "Linux/Linux-Commands/Module-Linux-Commands.md",
+            "mode": "source"
+          }
         }
       }
     ],
@@ -65,6 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Linux/Linux-Commands/Module-Linux-Commands.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -84,15 +88,15 @@
   },
   "active": "b85910fd968c5cad",
   "lastOpenFiles": [
-    "Recon/Active-Information-Gathering/Active-Recon.md",
-    "Recon/Active-Information-Gathering/Responder-Cheatsheet.md",
-    "Recon/Passive-Information-Gathering/Passive-Recon.md",
-    "Coding-Scripting-Programming/Bash/Useful_Bash.md",
-    "Recon/Active-Information-Gathering/Netcat-As-Recon.md",
-    "Recon/Active-Information-Gathering/Unknown-Service-Recon.md",
-    "Recon/Active-Information-Gathering/Vulnerability-Scanning.md",
-    "Recon/Passive-Information-Gathering/Shodan/Shodan.md",
-    "Recon/Active-Information-Gathering/Nmap/Nmap-Cheatsheet.md",
-    "Exploitation/Client-Side-Attacks.md"
+    "Linux/Linux-Commands/Module-Linux-Commands.md",
+    "Web-Hacking/Content-Discovery/FFUF-Cheatsheet.md",
+    "Tools/Nmap/Nmap-Cheatsheet.md",
+    "Exploitation/Client-Side-Attacks/Client-Side-Attacks.md",
+    "Exploitation/Client-Side-Attacks/Client-Side-Attack-Targeting.md",
+    "Exploitation/Binary-Exploitation/Golang-Binary-Exploitation.md",
+    "Exploitation/Binary-Exploitation/Binary-Exploitation-Types.md",
+    "Exploitation/Binary-Exploitation/binexGDB101.md",
+    "Exploitation/Binary-Exploitation/Buffer-Overflow/Stackbased-Buffer-Overflows.md",
+    "Exploitation/Binary-Exploitation/Binary-Exploitation-Enumeration.md"
   ]
 }

@@ -191,9 +191,10 @@ uniq -c 	count the occurrences
 uniq -d		print only repeated lines
 uniq -u		print only unique lines
 uniq -i		ignores case
-
+```
 
 #### wget 
+```bash
 
 wget http://url|ip:port/directory
 
@@ -220,9 +221,10 @@ To login via http or ftp
 -T=int			timeout retrieval in seconds
 -N			enable timestamping
 -U			specify user-agent while downloading file
-
+```
 
 #### xargs
+```bash
 Usage: <cmd1> | xargs <cmd2> # default cmd is echo
 
 -t		# verbose print command before and with its output
@@ -277,9 +279,11 @@ Options:
 xxd -s 0xa -l 50 -b file.txt # get the 10th byte (0xa), of first 50 -binary-digit-dump of file.tx
 xxd -c 3 -g 8 file.txt # 3 columns with groupsize 8 per row of file.txt
 xxd -p -r flag.txt # plaintext reversion of hexdump
+```
 
 #### 7Zip
-7z x file.zip
+```bash
+7z e file.zip
 ```
 
 ## References

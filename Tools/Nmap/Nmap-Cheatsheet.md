@@ -1,4 +1,6 @@
 # Nmap Cheatsheet
+Check [[nmapAllTheScripts]] for NSE scripts
+
 ## Utility
 ```bash
 -v  # verbosity level 1
