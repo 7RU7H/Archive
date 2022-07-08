@@ -52,6 +52,8 @@ then
 elif [ another evaluation ]
 then
   echo "do this instead"
+ elif [[ evaluation == $evaluation_double_char_require_double_square ]]
+  echo "check xinybash"
 else 
   echo "do something else" 
 fi

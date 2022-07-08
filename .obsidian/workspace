@@ -84,15 +84,15 @@
   },
   "active": "b85910fd968c5cad",
   "lastOpenFiles": [
-    "Tools/C2/Empire/Starkiller.md",
-    "Tools/C2/Switching-Between-Empire-And-Metasploit.md",
-    "Tools/C2/Empire/Empire.md",
-    "Tools/C2/Empire/Empire-GUI.md",
-    "Coding-Scripting-Programming/Python/Useful_Python.md",
-    "Tools/Useful-Software/Mimikatz-Cheatsheet.md",
-    "Post-Exploitation/Persistence/Active-Directory-Persistence.md",
-    "Windows/Windows-Tools.md",
-    "Post-Exploitation/Persistence/Persistence.md",
-    "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Privilege-Escalation.md"
+    "Recon/Active-Information-Gathering/Active-Recon.md",
+    "Recon/Active-Information-Gathering/Responder-Cheatsheet.md",
+    "Recon/Passive-Information-Gathering/Passive-Recon.md",
+    "Coding-Scripting-Programming/Bash/Useful_Bash.md",
+    "Recon/Active-Information-Gathering/Netcat-As-Recon.md",
+    "Recon/Active-Information-Gathering/Unknown-Service-Recon.md",
+    "Recon/Active-Information-Gathering/Vulnerability-Scanning.md",
+    "Recon/Passive-Information-Gathering/Shodan/Shodan.md",
+    "Recon/Active-Information-Gathering/Nmap/Nmap-Cheatsheet.md",
+    "Exploitation/Client-Side-Attacks.md"
   ]
 }
