@@ -33,8 +33,6 @@ awk '{ sum += $1 } END { print sum }' # add all the numbers in a file up
 $awk '{a[NR]=$0} END {for (j=1; j<NR; j++) print a[j];sub(/.$/,"",a[NR]);print a[NR]}' InputFile	delete the last character in a file
 # sort a text file by line length 
 awk '{ print length, $0 }' | sort -n -s 
-
-
 ```
 
 #### binwalk
@@ -85,6 +83,7 @@ curl -X								specify http method!
 -d<delimiter> -f$int,			# cut by delimiter, for each field listed 1,2,3,4...
 ````format for declaring a list is follows:
             // List<datatype> <var n
+```
 #### find 
 ```bash
 find / -type f -name "*.txt" -exec rm {} \; # delete all the files with .txt extension = use xargs ITS FASTER
@@ -224,6 +223,7 @@ To login via http or ftp
 ```
 
 #### xargs
+For non-echo compatible chain piping 
 ```bash
 Usage: <cmd1> | xargs <cmd2> # default cmd is echo
 
@@ -252,9 +252,11 @@ ls | xargs -I word -n 1 -t sh -c "echo word >> shortrockyou; rm word" # create f
 --		# escape empty flags!
 #for example:
 <cmd> "-- --checkpoint-action=exec=sh"
+```
 
-
-#### xxd	create hexdump of a file
+#### xxd	
+Create hexdump of a file
+```bash
 Options:
     -a          toggle autoskip: A single '*' replaces nul-lines. Default off.
     -b          binary digit dump (incompatible with -ps,-i,-r). Default hex.

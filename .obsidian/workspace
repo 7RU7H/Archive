@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Linux/Linux-Commands/Module-Linux-Commands.md",
+            "file": "Exploitation/Client-Side-Attacks/Client-Side-Attacks-Microsoft-Office.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/Linux-Commands/Module-Linux-Commands.md",
+                "file": "Exploitation/Client-Side-Attacks/Client-Side-Attacks-Microsoft-Office.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +88,15 @@
   },
   "active": "b85910fd968c5cad",
   "lastOpenFiles": [
+    "Exploitation/Client-Side-Attacks/Client-Side-Attacks-Microsoft-Office.md",
+    "Coding-Scripting-Programming/Visual-Basic/Useful_Visual_Basic_for_Applications.md",
+    "Exploitation/Client-Side-Attacks/Client-Side-Attacks-HTML-Applications.md",
+    "Exploitation/Client-Side-Attacks/Client-Side-Attacks.md",
     "Linux/Linux-Commands/Module-Linux-Commands.md",
     "Web-Hacking/Content-Discovery/FFUF-Cheatsheet.md",
     "Tools/Nmap/Nmap-Cheatsheet.md",
-    "Exploitation/Client-Side-Attacks/Client-Side-Attacks.md",
     "Exploitation/Client-Side-Attacks/Client-Side-Attack-Targeting.md",
     "Exploitation/Binary-Exploitation/Golang-Binary-Exploitation.md",
-    "Exploitation/Binary-Exploitation/Binary-Exploitation-Types.md",
-    "Exploitation/Binary-Exploitation/binexGDB101.md",
-    "Exploitation/Binary-Exploitation/Buffer-Overflow/Stackbased-Buffer-Overflows.md",
-    "Exploitation/Binary-Exploitation/Binary-Exploitation-Enumeration.md"
+    "Exploitation/Binary-Exploitation/Binary-Exploitation-Types.md"
   ]
 }

