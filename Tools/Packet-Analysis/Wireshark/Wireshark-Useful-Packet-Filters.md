@@ -1,4 +1,4 @@
-# Useful Wireshark Display Filters
+# Useful Wireshark Packet Filters
 Filter using "x contains keyword"
 ```c
 tcp contains google

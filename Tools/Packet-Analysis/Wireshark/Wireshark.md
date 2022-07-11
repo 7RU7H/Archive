@@ -25,7 +25,7 @@ See [Wireshek Wiki for more](https://wiki.wireshark.org/Home)
 
 
 ## For Just Useful Display Filters
-Found here: [[Wireshark-Useful-Display-Filters]]
+Found here: [[Wireshark-Useful-Packet-Filters]]
 
 
 ## Use cases
@@ -80,6 +80,38 @@ To combine multiple .pcap file into one single file `File -> Merge`.
 ####  Finding Packets
 `Ctrl+G` or `Go -> Go to Packet...`
 `Ctrl+F`
+#### Marking Packets
+`Ctrl+M` or `Edit/Right-Click Mark/Unmakr Packet(s)`
+#### Packet Comments
+`Ctrl+Alt+c` or `Edit/Right-Click -> Packet Comment...`
+#### Export Packets,
+Siphon off packet data to a file
+`File -> Export Specified Packets`
+#### Export Object(Files)
+If want to transform packet data in to files, use export!
+`File -> Export Object`
+#### Time Display Format
+`View -> Time Display Format -> Chose a format`
+#### Expert Info
+Beware of false positives/negatives
+`Analyze Information -> Expert Information `
+
+Severity | Colour | Info
+--- | --- | ---
+Chat | Blue | Information on usual workflow.  
+Note | Cyan | Notable events like application error codes.
+Warn | Yellow | Warnings like unusual error codes or problem statements.  
+Error | Red | Problems like malformed packets.
+
+Group | Info | Group | Info 
+--- | --- | --- | ---
+Checksum | Checksum errors. | Deprecated | Deprecated protocol usage.
+Comment | Packet comment detection. | Malformed | Malformed packet detection.
+
+
+## Packet Filtering 
+
+Wireshark Cheatsheet for [[Wireshark-Useful-Packet-Filters]].
 
 
 ## Packet Dissection

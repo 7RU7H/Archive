@@ -3,7 +3,5 @@
 
 
 ```bash
-
--I $IFACE
-
+responder -I $IFACE
 ```
