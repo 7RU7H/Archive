@@ -16,7 +16,7 @@ git log --oneline -S <COMMIT_SEARCH_PATTERN>
 
 # Copy the commit hash
 
-git rebase - i <COMMIT_HASH>~1
+git rebase -i <COMMIT_HASH>~1
 
 # Change the marker to **drop**
 # Exit from the editor

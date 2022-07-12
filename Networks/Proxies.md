@@ -16,8 +16,7 @@ Proxies make it easier to find vulnerabilities.
 They allow us to perform faster repetitive testing tasks or manually dig deeper into the HTTP(S) traffic.
 
 
-HTTP/HTTPS
-# FoxyProxy/Firefox proxy
+# HTTP/HTTPS with FoxyProxy/Firefox proxy
 Firefox menu -> Settings -> Network Settings click Settings
 Select manual proxy configuration:
         HTTP proxy: 127.0.0.1

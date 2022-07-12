@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Networks/Evading-IPS-And-IDS.md",
+            "file": "Tools/Useful-Software/Github-guide.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Networks/Evading-IPS-And-IDS.md",
+                "file": "Tools/Useful-Software/Github-guide.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +88,15 @@
   },
   "active": "b85910fd968c5cad",
   "lastOpenFiles": [
+    "Tools/Useful-Software/Github-guide.md",
+    "Exploitation/Binary-Exploitation/Buffer-Overflow/Stackbased-Buffer-Overflows.md",
+    "Exploitation/Binary-Exploitation/Buffer-Overflow/Win32-Buffer-Overflow-Exploitation.md",
+    "Exploitation/Binary-Exploitation/Binary-Exploitation-Protections.md",
+    "Networks/Proxies.md",
     "Networks/Evading-IPS-And-IDS.md",
     "Coding-Scripting-Programming/CSS/Basic-CSS.md",
     "Coding-Scripting-Programming/PHP/Useful_PHP.md",
     "Tools/Packet-Analysis/Wireshark/Wireshark.md",
-    "Tools/Packet-Analysis/Wireshark/Wireshark-Useful-Packet-Filters.md",
-    "Exploitation/Binary-Exploitation/Binary-Exploitation-Protections.md",
-    "Exploitation/Binary-Exploitation/Buffer-Overflow/Win32-Buffer-Overflow-Exploitation.md",
-    "Exploitation/Binary-Exploitation/Buffer-Overflow/Stackbased-Buffer-Overflows.md",
-    "Exploitation/Binary-Exploitation/Binary-Exploitation-Types.md",
-    "Exploitation/Binary-Exploitation/binexGDB101.md"
+    "Tools/Packet-Analysis/Wireshark/Wireshark-Useful-Packet-Filters.md"
   ]
 }
