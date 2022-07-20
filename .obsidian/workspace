@@ -4,13 +4,14 @@
     "type": "split",
     "children": [
       {
-        "id": "b85910fd968c5cad",
+        "id": "41ae586cff4239fb",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Tools/Useful-Software/Github-guide.md",
-            "mode": "source"
+            "file": "Coding-Scripting-Programming/Python/Python-Network-Scripting.md",
+            "mode": "source",
+            "source": false
           }
         }
       }
@@ -68,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/Useful-Software/Github-guide.md",
+                "file": "Coding-Scripting-Programming/Python/Python-Network-Scripting.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -86,17 +87,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "b85910fd968c5cad",
+  "active": "41ae586cff4239fb",
   "lastOpenFiles": [
+    "Security-Enterprises/Blueteam/Linux-Blueteam.md",
+    "Post-Exploitation/Persistence/Persistence.md",
+    "Post-Exploitation/Persistence/Windows-Persistence.md",
+    "Post-Exploitation/Persistence/Linux Persistence.md",
     "Tools/Useful-Software/Github-guide.md",
     "Exploitation/Binary-Exploitation/Buffer-Overflow/Stackbased-Buffer-Overflows.md",
     "Exploitation/Binary-Exploitation/Buffer-Overflow/Win32-Buffer-Overflow-Exploitation.md",
     "Exploitation/Binary-Exploitation/Binary-Exploitation-Protections.md",
     "Networks/Proxies.md",
-    "Networks/Evading-IPS-And-IDS.md",
-    "Coding-Scripting-Programming/CSS/Basic-CSS.md",
-    "Coding-Scripting-Programming/PHP/Useful_PHP.md",
-    "Tools/Packet-Analysis/Wireshark/Wireshark.md",
-    "Tools/Packet-Analysis/Wireshark/Wireshark-Useful-Packet-Filters.md"
+    "Networks/Evading-IPS-And-IDS.md"
   ]
 }
