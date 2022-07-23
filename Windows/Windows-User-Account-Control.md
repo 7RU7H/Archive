@@ -37,6 +37,13 @@ To account for seperate roles:
 
 ## UAC Internals 
 
+1. User requests to run a program as administrator
+2. `ShellExecute` (in the context of that user) - `ShellExecute`(`runas`, `<program name>`)
+3. Request forwarded to AppInfo to handle elevation
+4. Application Manifest is check if `AutoElevation` is allowed 
+5. AppInfo Service executes `consent.exe` - UAC prompt is on a secure desktop(seperate desktop isolating the processes to avoid any tampering with the prompt)
+6. If the user then consents, AppInfo service will execute the request using the Elevated Token.
+7. Appinfo will then set the parent process ID of the new process to point to the shell from which elevation was requested.
 
 
 ## References
