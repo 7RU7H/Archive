@@ -32,7 +32,7 @@ Weak credentials, stealable session information, firewall mismanagement allowing
 Deployments, code storage, data storage, insecure respoistories or delivery systems such that authorized access to or control over will lead to compromise like [[Upload-Vulnerabilities]]
 
 ## Security Logging and Monitoring Failures
-Lack of or undisciplined logging of user activity and patterns; coupled with incident response mechanisms if there is no logging where is the evidence to lead investigation, if there are extensive logging but no responsers is there an incident. Do incident responsers sit in the logs or shit in the woods. The [[log4J]] exploit is great example. 
+Lack of or undisciplined logging of user activity and patterns; coupled with incident response mechanisms if there is no logging where is the evidence to lead investigation, if there are extensive logging but no responsers is there an incident. Do incident responsers sit in the logs or shit in the woods. The [[Log4J]] exploit is great example. 
 
 ## Server-Side Request Forgery
 When web application tries to reach a remote server without validating the URL of the remote server. If attack controls the contents of the URL, they can force the application to make a request to a resource it should not be able to reach, including attacker own server.

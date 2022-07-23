@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Post-Exploitation/Privilege-Escalation/Windows/Bypassing-Windows-User-Account-Control.md",
+            "file": "Exploitation/CVEs/Heartbleed.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "history",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -49,7 +49,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -69,7 +70,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Windows/Bypassing-Windows-User-Account-Control.md",
+                "file": "Exploitation/CVEs/Heartbleed.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -87,10 +88,10 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "41ae586cff4239fb",
+  "active": "904463d60d8efa8d",
   "lastOpenFiles": [
-    "Tools/Process-Hacker.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Bypassing-Windows-User-Account-Control.md",
+    "Tools/Process-Hacker.md",
     "Windows/Windows-User-Account-Control.md",
     "Post-Exploitation/Persistence/Windows-Persistence.md",
     "Windows/Windows-Events-To-Monitor.md",
