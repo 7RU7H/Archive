@@ -81,7 +81,10 @@ fg %$+ / %%	# current job
 fg %$-		# previous job
 
 file		# reads file headers
+```
 
+## Find
+```bash
 find		find things
 find / -perm -u=s -type f 2>/dev/null 		Find SUID binaries
 find [path] -type f|d -name [filename]
@@ -97,6 +100,8 @@ find / -type f \( -NAME ... -o )
 ... -exec [hashname] {} \;						List the checksum hash for files
 ... -exec wc -l [NUM]  {}						List of the multifile argument all file that dont contain the wc of NUM
 ... -exec ls -ln  {}							List the file own id
+
+find ./ -type f -name test -exec wc -w {} +   # Count all the word found in list files found 
 
 find / -perm a=x	find executables
 find / -mtime int	find last modified days
@@ -119,7 +124,10 @@ use: man find	for specific program documentation
 a = access, m = modified, c = created
 -[]time num //[-] num less than, [+] num in last
 -[]min 
-	
+```
+
+## getcap
+```bash
 getcap 		displays the capabilities on the queried file(s)
 getcap -r / 2>/dev/null
 

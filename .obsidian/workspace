@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "41ae586cff4239fb",
+        "id": "05105baf9656e936",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Exploitation/CVEs/Heartbleed.md",
+            "file": "Post-Exploitation/Privilege-Escalation/Windows/Bypassing-Windows-User-Account-Control.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "history",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -49,8 +49,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -70,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exploitation/CVEs/Heartbleed.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Windows/Bypassing-Windows-User-Account-Control.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,17 +87,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "904463d60d8efa8d",
+  "active": "05105baf9656e936",
   "lastOpenFiles": [
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Bypassing-Windows-User-Account-Control.md",
-    "Tools/Process-Hacker.md",
+    "Linux/Linux-Commands/Core-Linux-Commands.md",
+    "Windows/Windows-Registry.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/UAC-AutoElevate-List.md",
+    "Foothold/File-Transfers/File-Transfers.md",
+    "Tools/SysInternals/Sigcheck/Sysinternals-Sigcheck.md",
     "Windows/Windows-User-Account-Control.md",
-    "Post-Exploitation/Persistence/Windows-Persistence.md",
-    "Windows/Windows-Events-To-Monitor.md",
-    "Post-Exploitation/Persistence/Active-Directory-Persistence.md",
-    "Windows/Windows-Discretionary-Access-Control-List.md",
-    "Windows/Windows-API.md",
-    "Post-Exploitation/Privilege-Escalation/Privilege-Escalation-Defined.md",
-    "Windows/Windows-Commands/Windows-CLI-cmd.md"
+    "Exploitation/CVEs/Heartbleed.md",
+    "Tools/Process-Hacker.md"
   ]
 }

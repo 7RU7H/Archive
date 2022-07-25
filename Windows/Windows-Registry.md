@@ -1,4 +1,5 @@
 # Windows Registry 
+
 ## Key Properties
 
 REG_SZ	represents a single null terminated string
