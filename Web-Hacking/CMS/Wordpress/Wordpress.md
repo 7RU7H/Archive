@@ -1,12 +1,13 @@
 # Wordpress 
 
 ## Introduction
-[Free 25 API requests per day](https://wpscan.com/pricing)
 
 ## What to look for
 /wp-config/
 
 ## WPscan
+
+[Free 25 API requests per day](https://wpscan.com/pricing)
 
 ```bash
 wpscan --url -e --api-token $APIKEY # -o filename

@@ -120,7 +120,7 @@ Default port 389
 [[LDAP-Recon]]
 
 
-## 443- HTTPS
+## 443 - HTTPS
 //internet messaging access protocol
 //default port 443
 

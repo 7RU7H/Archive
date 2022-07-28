@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Post-Exploitation/Privilege-Escalation/Windows/Bypassing-Windows-User-Account-Control.md",
+            "file": "Networks/Network-Services.md",
             "mode": "source",
             "source": false
           }
@@ -53,7 +53,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 278.5
+    "width": 348.5
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Windows/Bypassing-Windows-User-Account-Control.md",
+                "file": "Networks/Network-Services.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "05105baf9656e936",
   "lastOpenFiles": [
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Bypassing-Windows-User-Account-Control.md",
-    "Linux/Linux-Commands/Core-Linux-Commands.md",
-    "Windows/Windows-Registry.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/UAC-AutoElevate-List.md",
-    "Foothold/File-Transfers/File-Transfers.md",
-    "Tools/SysInternals/Sigcheck/Sysinternals-Sigcheck.md",
-    "Windows/Windows-User-Account-Control.md",
-    "Exploitation/CVEs/Heartbleed.md",
-    "Tools/Process-Hacker.md"
+    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/PrvEsc-Important-Linux-Locations.md",
+    "Services/Jenkins.md",
+    "Services/Webservers/XAMPP/xampp.md",
+    "Services/Webservers/ApacheTomcat/Apache-Tomcat.md",
+    "Web-Hacking/CMS/Wordpress/Wordpress.md",
+    "Web-Hacking/File-Inclusion-And-Directory-Traversal/File-Inclusion-And-Directory-Traversal.md",
+    "Web-Hacking/File-Inclusion-And-Directory-Traversal/Log-Poisoning.md",
+    "Web-Hacking/File-Inclusion-And-Directory-Traversal/DT-FI-Windows-Files.md"
   ]
 }
