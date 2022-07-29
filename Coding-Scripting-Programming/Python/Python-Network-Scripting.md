@@ -58,7 +58,8 @@ More complex client
 Use with to automatically close after use.
 ```python
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as client:
-	# socket stuff!
+	# socket stuff! BUT you don't need to close it will supported by context manager type
+	pass
 ```
 
 

@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Networks/Network-Services.md",
+            "file": "Post-Exploitation/Privilege-Escalation/Windows/Bypassing-Windows-User-Account-Control.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Networks/Network-Services.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Windows/Bypassing-Windows-User-Account-Control.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "05105baf9656e936",
   "lastOpenFiles": [
+    "Windows/Windows-Commands/Windows-CLI-cmd.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Bypassing-Windows-User-Account-Control.md",
+    "Windows/Windows-Commands/Active-Directory-Commands.md",
+    "Coding-Scripting-Programming/Python/Useful_Python.md",
+    "Coding-Scripting-Programming/Python/Python-Network-Scripting.md",
+    "Networks/Network-Services.md",
     "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
     "Post-Exploitation/Privilege-Escalation/Linux/PrvEsc-Important-Linux-Locations.md",
     "Services/Jenkins.md",
-    "Services/Webservers/XAMPP/xampp.md",
-    "Services/Webservers/ApacheTomcat/Apache-Tomcat.md",
-    "Web-Hacking/CMS/Wordpress/Wordpress.md",
-    "Web-Hacking/File-Inclusion-And-Directory-Traversal/File-Inclusion-And-Directory-Traversal.md",
-    "Web-Hacking/File-Inclusion-And-Directory-Traversal/Log-Poisoning.md",
-    "Web-Hacking/File-Inclusion-And-Directory-Traversal/DT-FI-Windows-Files.md"
+    "Services/Webservers/XAMPP/xampp.md"
   ]
 }
