@@ -1,4 +1,7 @@
 # Impacket 
+
+WARNING impacket does not handle NTFS well - [Ippsec Blackfield HTB](https://www.youtube.com/watch?v=IfCysW0Od8w)
+
 From [Impacket Github](https://github.com/SecureAuthCorp/impacket)
 *"Impacket is a collection of Python classes for working with network protocols."*
 ## What protocols are featured?
@@ -11,7 +14,7 @@ From [Impacket Github](https://github.com/SecureAuthCorp/impacket)
 -   Portions/full implementation of the following MSRPC interfaces: EPM, DTYPES, LSAD, LSAT, NRPC, RRP, SAMR, SRVS, WKST, SCMR, BKRP, DHCPM, EVEN6, MGMT, SASEC, TSCH, DCOM, WMI, OXABREF, NSPI, OXNSPI.
 -   Portions of TDS (MSSQL) and LDAP protocol implementations.
 
-Impacket is an awesome suite of scripts written in python that are incorpated into tools like [[Crackmapexec-Cheatsheet]]. It is very useful suite of tools for [[Active-Directory-Enumeration]], [[Foothold-On-AD]], [[Attacking-Kerberos]], [[Active-Directory-Lateral-Movement]] and general [[Active-Directory-Privilege-Escalation]].
+Impacket is an awesome suite of scripts written in python that are incorpated into tools like [[Crackmapexec-Cheatsheet]]. It is very useful suite of tools for [[Active-Directory-Enumeration]], [[Footholding-Active-Directory]], [[Attacking-Kerberos]], [[Active-Directory-Lateral-Movement]] and general [[Active-Directory-Privilege-Escalation]].
 
 Haak9 Technical tips
 ```bash
@@ -90,7 +93,7 @@ mssqlclient.py -port $PORT $domain/$user@$IP -windows-auth
 ```
 
 ## psexec.py
-Similiar to [[Sysinternals-Psexec]] like functionality example using [RemComSvc](https://github.com/kavika13/RemCom).
+Similiar to [[Sysinternals-Psexec]] like functionality example using [RemComSvc](https://github.com/kavika13/RemCom). Runs as nt system - wmiexec.py runs as Administrator.
 ```bash
 
 psexec.py $domain/$username:$password@$IP <command>

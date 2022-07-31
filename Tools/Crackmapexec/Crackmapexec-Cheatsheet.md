@@ -22,6 +22,17 @@ crackmapexec smb $Subnetmask
 crackmapexec smb targets.txt
 ```
 
+## Shares
+Similar checklist from Ippsec to match the pentester use case of [[SMB-Recon-Cheatsheet]] `smbclient`, to enumerate specific configuration, but also Pentester are more *"finickity"*:
+
+```bash
+crackmapexec smb $IP --shares
+crackmapexec smb $IP --shares -u ''
+crackmapexec smb $IP --shares -u 'Test'
+crackmapexec smb $IP --shares -u 'Test' -p ''
+```
+
+
 #### Null sessions
 ```bash
 crackmapexec smb $IP -u "" up ""
@@ -66,3 +77,4 @@ crackmapexec smb $IP -u '$foothold-account' -p '$password' --pass-pol
 [haax9](https://cheatsheet.haax.fr/windows-systems/exploitation/crackmapexec/)
 [haax9 -Github](https://github.com/Haax9)
 [blackhatethicalhacking](https://www.blackhatethicalhacking.com/tools/crackmapexec/)
+[Ippsec Blackfield HTB](https://www.youtube.com/watch?v=IfCysW0Od8w)

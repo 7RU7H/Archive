@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Foothold/Reverse-Shells.md",
+            "file": "Recon/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Foothold/Reverse-Shells.md",
+                "file": "Recon/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "05105baf9656e936",
   "lastOpenFiles": [
-    "Foothold/Shells.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Bypassing-UAC/Bypassing-Windows-User-Account-Control.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Bypassing-UAC/UACME-Keys.md",
-    "Foothold/Reverse-Shells.md",
-    "Coding-Scripting-Programming/Bash/Useful_Bash.md",
-    "README.md",
-    "Windows/Windows-Commands/Windows-CLI-cmd.md",
-    "Windows/Windows-Commands/Active-Directory-Commands.md",
-    "Coding-Scripting-Programming/Python/Useful_Python.md",
-    "Coding-Scripting-Programming/Python/Python-Network-Scripting.md"
+    "Recon/Active-Information-Gathering/Active-Directory/Active-Directory-Enumeration.md",
+    "Tools/Crackmapexec/Crackmapexec-Cheatsheet.md",
+    "Windows/Windows-Permissions.md",
+    "Networks/Evading-IPS-And-IDS.md",
+    "Hacker-Distros/Kali/Setup-Services/Kali-Setup-Rogue-LDAP-Server.md",
+    "Tools/Impacket/Impacket-Cheatsheet.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation.md",
+    "Linux/Linux-Commands/Linux-Processes.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/PrvEsc-Important-Linux-Locations.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md"
   ]
 }

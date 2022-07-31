@@ -54,6 +54,7 @@ enum4linux -a $IP -u <user> -p <pass> # Authenticated session
 enum4linux -u <user> -p <pass> -U $IP # Users enumeration
 enum4linux -u <user> -p <pass> -G $IP # Group and members enumeration
 enum4linux -u <user> -p <pass> -P $IP # Password policy
+enum4linux -a $IP | tee -a enumFourLinux # output to file nicely :)
 ```
 
 ## nmap - Enum Users
