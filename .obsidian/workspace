@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Recon/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
+            "file": "Exploitation/Binary-Exploitation/Buffer-Overflow/Stackbased-Buffer-Overflows.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Recon/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
+                "file": "Exploitation/Binary-Exploitation/Buffer-Overflow/Stackbased-Buffer-Overflows.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,6 +89,7 @@
   },
   "active": "05105baf9656e936",
   "lastOpenFiles": [
+    "Recon/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
     "Recon/Active-Information-Gathering/Active-Directory/Active-Directory-Enumeration.md",
     "Tools/Crackmapexec/Crackmapexec-Cheatsheet.md",
     "Windows/Windows-Permissions.md",
@@ -97,7 +98,6 @@
     "Tools/Impacket/Impacket-Cheatsheet.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation.md",
     "Linux/Linux-Commands/Linux-Processes.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/PrvEsc-Important-Linux-Locations.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md"
+    "Post-Exploitation/Privilege-Escalation/Linux/PrvEsc-Important-Linux-Locations.md"
   ]
 }
