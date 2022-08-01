@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Exploitation/CVEs/Spring4Shell.md",
+            "file": "Coding-Scripting-Programming/Python/Useful_Python.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exploitation/CVEs/Spring4Shell.md",
+                "file": "Coding-Scripting-Programming/Python/Useful_Python.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "05105baf9656e936",
   "lastOpenFiles": [
+    "Coding-Scripting-Programming/Bash/Useful_Bash.md",
+    "Coding-Scripting-Programming/Python/Useful_Python.md",
+    "Exploitation/CVEs/Heartbleed.md",
+    "Exploitation/CVEs/Spring4Shell.md",
     "Networks/Evading-IPS-And-IDS.md",
     "Tools/Nmap/Nmap-Cheatsheet.md",
     "Exploitation/Binary-Exploitation/Buffer-Overflow/Stackbased-Buffer-Overflows.md",
     "Recon/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
     "Recon/Active-Information-Gathering/Active-Directory/Active-Directory-Enumeration.md",
-    "Tools/Crackmapexec/Crackmapexec-Cheatsheet.md",
-    "Windows/Windows-Permissions.md",
-    "Hacker-Distros/Kali/Setup-Services/Kali-Setup-Rogue-LDAP-Server.md",
-    "Tools/Impacket/Impacket-Cheatsheet.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation.md"
+    "Tools/Crackmapexec/Crackmapexec-Cheatsheet.md"
   ]
 }

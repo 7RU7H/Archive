@@ -141,6 +141,25 @@ for i,word in enumerate('iteratables are tuples, lists, sets, dict, strings'):
     	i -= 1
 ```
 
+## Hex2Bin
+```python
+def h2bin(x):
+        return decode_hex(x.replace(' ', '').replace('\n', ''))[0]
+
+def hexdump(s):
+    for b in range(0, len(s), 16):
+        lin = [c for c in s[b : b + 16]]
+        hxdat = ' '.join('%02X' % c for c in lin)
+        pdat = ''.join(chr(c) if 32 <= c <= 126 else '.' for c in lin)
+        print( '  %04x: %-48s %s' % (b, hxdat, pdat))
+    print()
+    
+
+test = h2bin('''00 00 00 ''')
+```
+[akshatmittal](https://gist.github.com/akshatmittal/10279360) updated from [exploitdb](https://www.exploit-db.com/exploits/32745)
+
+
 ### Nonlocal keyword
 ```python
 nonlocal thisnotglobalbutoutsidefunctionscoping se with care
