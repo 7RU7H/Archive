@@ -17,3 +17,9 @@ php file.php
 ```PHP
 <php echo("Hello");phpinfo(); ?>
 ```
+
+
+Base64 PHP decoder
+```PHP
+<?php echo zlib_decode(base64_decode('base64here')); ?>
+```

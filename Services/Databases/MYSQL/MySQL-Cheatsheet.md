@@ -31,6 +31,12 @@ On Windows - https://www.qualitestgroup.com/resources/knowledge-center/how-to-gu
 mysql -u root -p
 ```
 
+## Show Databases
+
+```sql
+SHOW DATABASES;
+```
+
 ## Show Users
 
 ```sql
@@ -72,12 +78,6 @@ DROP USER 'someuser'@'localhost';
 
 ```sql
 exit;
-```
-
-## Show Databases
-
-```sql
-SHOW DATABASES
 ```
 
 ## Create Database

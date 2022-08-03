@@ -14,7 +14,7 @@ From [Impacket Github](https://github.com/SecureAuthCorp/impacket)
 -   Portions/full implementation of the following MSRPC interfaces: EPM, DTYPES, LSAD, LSAT, NRPC, RRP, SAMR, SRVS, WKST, SCMR, BKRP, DHCPM, EVEN6, MGMT, SASEC, TSCH, DCOM, WMI, OXABREF, NSPI, OXNSPI.
 -   Portions of TDS (MSSQL) and LDAP protocol implementations.
 
-Impacket is an awesome suite of scripts written in python that are incorpated into tools like [[Crackmapexec-Cheatsheet]]. It is very useful suite of tools for [[Active-Directory-Enumeration]], [[Footholding-Active-Directory]], [[Attacking-Kerberos]], [[Active-Directory-Lateral-Movement]] and general [[Active-Directory-Privilege-Escalation]].
+Impacket is an awesome suite of scripts written in python that are incorpated into tools like [[Crackmapexec-Cheatsheet]]. It is very useful suite of tools for [[Active-Directory-Enumeration]], [[Active-Directory-Footholding]], [[Attacking-Kerberos]], [[Active-Directory-Lateral-Movement]] and general [[Active-Directory-Privilege-Escalation]].
 
 Haak9 Technical tips
 ```bash

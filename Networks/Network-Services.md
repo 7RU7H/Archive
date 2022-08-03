@@ -159,9 +159,8 @@ umount $ip:/local/file/path
 Default port 995
 [[Mail-Operations]]
 
-MySQL
-//default  port 3306
-mysql -h ip -u user -p password
+## 3306 - MySQL
+`mysql -h ip -u user -p`
 
 ## RDP
 //default port 3389 (TCP)

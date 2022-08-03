@@ -3,7 +3,17 @@
 ## Introduction
 
 ## What to look for
-/wp-config/
+/var/www/html/wp-config.php contain credentials
+
+## Directory  Busting 
+Seclist wordlists
+```
+Discovery/Web-Content/URLs/urls-wordpress-3.3.1.txt/
+Discovery/Web-Content/CMS/wordpress.fuzz.txt/
+Passwords/Honeypot-Captures/wordpress-attacks-july2014.txt
+```
+ls
+
 
 ## WPscan
 
@@ -19,4 +29,12 @@ wpscan --url -e --api-token $APIKEY # -o filename
 ap at t tt dbe u m cb
 ```
 
-## Nmap 
+## Hashes
+Hashcat Hashmode = 400
+
+
+## Reverse Shells
+Use php reverse shells. Places to put them:
+
+Theme Editor use a 404 template as it won't break the site.
+Plugin Editor  then go to /wp-content/plugins/<pluginname.php>

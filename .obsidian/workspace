@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Exploitation/Binary-Exploitation/Buffer-Overflow/Stackbased-Buffer-Overflows.md",
+            "file": "Web-Hacking/CMS/Wordpress/Wordpress.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exploitation/Binary-Exploitation/Buffer-Overflow/Stackbased-Buffer-Overflows.md",
+                "file": "Web-Hacking/CMS/Wordpress/Wordpress.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "05105baf9656e936",
   "lastOpenFiles": [
-    "Exploitation/Binary-Exploitation/Binary-Exploitation-Enumeration.md",
-    "Exploitation/Binary-Exploitation/binexGDB101.md",
-    "Tools/Reverse-Engineering/EDB.md",
-    "Exploitation/Binary-Exploitation/Buffer-Overflow/Stackbased-Buffer-Overflows.md",
-    "Exploitation/Binary-Exploitation/Binary-Exploitation-Tool-List.md",
-    "Reverse-Engineering/Reverse-Engineering-Tools.md",
-    "Tools/BinEx/Pwntools.md",
-    "Coding-Scripting-Programming/Assembly/Assembly-Hacks.md",
-    "Coding-Scripting-Programming/Assembly/Intel-Assembler-Instructions-To-Know.md",
-    "Exploitation/Binary-Exploitation/Binary-Exploitation-Protections.md"
+    "Web-Hacking/XXE/XXE-Vulnerablity.md",
+    "Web-Hacking/CMS/Wordpress/Wordpress.md",
+    "Services/Databases/MYSQL/MySQL-Cheatsheet.md",
+    "Networks/Network-Services.md",
+    "Antivirus-Evasion/Antivirus-Evasion.md",
+    "Antivirus-Evasion/DLL-Injection.md",
+    "Antivirus-Evasion/Inline-Hooking.md",
+    "Exploitation/Creating-Malicous-WAV-files.md",
+    "Foothold/Reverse-Shells.md",
+    "Coding-Scripting-Programming/PHP/Useful_PHP.md"
   ]
 }
