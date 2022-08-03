@@ -9,28 +9,32 @@ nmap -vv --script=ldap-search -p 389 --script-args ldap.maxobjects=-1 -oA nmap/l
 ## ldapsearch
 
 ```bash
-ldapsearch $IP -x # Simple authentication if this work try the below
+ldapsearch ldap://$IP -x # Simple authentication if this work try the below
 ldapsearch -x -s base <namingcontexts>
 
 # Extract an unauthenticated dump of all objects held within the LDAP directory structure
 ldapsearch -LLL -x -H ldap://<domain fqdn> -b '' -s base '(objectclass=*)'
 # Just Persons
-ldapsearch -LLL -x -H ldap://htb.local -b 'DC=htb,DC=local' '(objectClass=Person)' > ldapsearch-person
+ldapsearch -LLL -x -H ldap://<domain> -b 'DC=htb,DC=local' '(objectClass=Person)' | tee -a ldapsearch-person
 
 
 
 # Extract all user objects
-ldapsearch -x -h <IP Address> -D '<domain>\<username>' -w '<password>' -b "CN=Users,DC=<domain>,DC=<domain>"
+ldapsearch -x -H ldap://$IP -D '<domain>\<username>' -w '<password>' -b "CN=Users,DC=<domain>,DC=<domain>"
 # Extract all computer objects
-ldapsearch -x -h $IP -D '<domain>\<username>' -w '<password>' -b "CN=Computers,DC=<domain>,DC=<domain>"
+ldapsearch -x -H ldap://$IP -D '<domain>\<username>' -w '<password>' -b "CN=Computers,DC=<domain>,DC=<domain>"
 # Extract domain admins objects
-ldapsearch -x -h <IP Address> -D '<domain>\<username>' -w '<password>' -b "CN=Domain Admins,CN=Users,DC=<domain>,DC=<domain>"
+ldapsearch -x -H ldap://$IP -D '<domain>\<username>' -w '<password>' -b "CN=Domain Admins,CN=Users,DC=<domain>,DC=<domain>"
 ```
 
 ## ldapdomaindump
 ```bash
-ldapdomaindump -u '<DOMAIN>\<USERNAME>' -p <PASSWORD> $IP -o output.txt
+ldapdomaindump -u '<DOMAIN>\<USERNAME>' -p <PASSWORD> $IP -o $output-directory-name
+
+#ldd2bloodhound -d $output-directory-name/*.json # Visualise with Bloodhound BUT:
+# Note that these files are only compatible with **BloodHound 1.x** which is quite old. There are no plans to support the latest version as the [BloodHound.py project](https://github.com/fox-it/BloodHound.py) was made for this. With the DCOnly collection method this tool will also only talk to LDAP and collect more information than ldapdomaindump would.
 ```
+
 Optional user and password
 
 ## Python Ldap

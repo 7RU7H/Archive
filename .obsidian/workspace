@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Tools/Crackmapexec/Crackmapexec-Cheatsheet.md",
+            "file": "Windows/Powerview/Powerview-Cheatsheet.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/Crackmapexec/Crackmapexec-Cheatsheet.md",
+                "file": "Windows/Powerview/Powerview-Cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "05105baf9656e936",
   "lastOpenFiles": [
+    "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Privilege-Escalation.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Powershell-versions.md",
+    "Coding-Scripting-Programming/Powershell/Useful_Powershell.md",
+    "Foothold/File-Transfers/Windows-File-Transfers.md",
     "Tools/Impacket/Impacket-Cheatsheet.md",
-    "Tools/Crackmapexec/Crackmapexec-Cheatsheet.md",
-    "Recon/Active-Information-Gathering/SMB/RPCClient-Cheatsheet.md",
-    "Recon/Active-Information-Gathering/SMB/RPCClient-Usage.md",
-    "Foothold/Active-Directory-Footholding.md",
-    "Recon/Active-Information-Gathering/LDAP/LDAP-Recon.md",
-    "Hacker-Distros/Kali/Setup-Services/Kali-Setup-Rogue-LDAP-Server.md",
-    "Web-Hacking/CMS/Wordpress/Wordpress.md",
-    "Web-Hacking/XXE/XXE-Vulnerablity.md",
-    "Services/Databases/MYSQL/MySQL-Cheatsheet.md"
+    "Tools/Useful-Software/Neo4j-And-Bloodhound-Guide.md",
+    "Foothold/File-Transfers/File-Transfers.md",
+    "Tools/Process-Hacker.md",
+    "Tools/Shells/Evil-winrm-Cheatsheet.md"
   ]
 }

@@ -203,7 +203,7 @@ Get-DomainOU -GPLink "3E04167E-C2B6-4A9A-8FB7-C811158DC97C"
 ```powershell
 Get-ObjectAcl -SamAccountName <username> -ResolveGUIDs #Get ACLs of an object (permissions of other objects over the indicated one)
 Get-PathAcl -Path "\\dc.mydomain.local\sysvol" #Get permissions of a file
-Find-InterestingDomainAcl -ResolveGUIDs #Find intresting ACEs (Interesting permisions of "unexpected objects" (RID>1000 and modify permissions) over other objects
+Find-InterestingDomainAcl -ResolveGUIDs #Find intresting ACEs (Interesting permissions of "unexpected objects" (RID>1000 and modify permissions) over other objects
 Find-InterestingDomainAcl -ResolveGUIDs | ?{$_.IdentityReference -match "RDPUsers"} #Check if any of the interesting permissions founds is realated to a username/group
 Get-NetGroupMember -GroupName "Administrators" -Recurse | ?{$_.IsGroup -match "false"} | %{Get-ObjectACL -SamAccountName $_.MemberName -ResolveGUIDs} | select ObjectDN, IdentityReference, ActiveDirectoryRights #Get special rights over All administrators in domain
 

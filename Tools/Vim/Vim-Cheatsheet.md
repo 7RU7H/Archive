@@ -1,8 +1,6 @@
 # Vim Cheatsheet 
 
-```bash
-q+a [record macro] + esc [to end recording then exec with] @a
-```
+See [[Vim-Hack-Tricks]] for more Hacking Related uses
 
 # Source: vim.rtorr.com
 [Reference](https://vim.rtorr.com)
