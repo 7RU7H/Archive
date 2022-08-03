@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Web-Hacking/CMS/Wordpress/Wordpress.md",
+            "file": "Tools/Crackmapexec/Crackmapexec-Cheatsheet.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Web-Hacking/CMS/Wordpress/Wordpress.md",
+                "file": "Tools/Crackmapexec/Crackmapexec-Cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "05105baf9656e936",
   "lastOpenFiles": [
-    "Web-Hacking/XXE/XXE-Vulnerablity.md",
+    "Tools/Impacket/Impacket-Cheatsheet.md",
+    "Tools/Crackmapexec/Crackmapexec-Cheatsheet.md",
+    "Recon/Active-Information-Gathering/SMB/RPCClient-Cheatsheet.md",
+    "Recon/Active-Information-Gathering/SMB/RPCClient-Usage.md",
+    "Foothold/Active-Directory-Footholding.md",
+    "Recon/Active-Information-Gathering/LDAP/LDAP-Recon.md",
+    "Hacker-Distros/Kali/Setup-Services/Kali-Setup-Rogue-LDAP-Server.md",
     "Web-Hacking/CMS/Wordpress/Wordpress.md",
-    "Services/Databases/MYSQL/MySQL-Cheatsheet.md",
-    "Networks/Network-Services.md",
-    "Antivirus-Evasion/Antivirus-Evasion.md",
-    "Antivirus-Evasion/DLL-Injection.md",
-    "Antivirus-Evasion/Inline-Hooking.md",
-    "Exploitation/Creating-Malicous-WAV-files.md",
-    "Foothold/Reverse-Shells.md",
-    "Coding-Scripting-Programming/PHP/Useful_PHP.md"
+    "Web-Hacking/XXE/XXE-Vulnerablity.md",
+    "Services/Databases/MYSQL/MySQL-Cheatsheet.md"
   ]
 }

@@ -52,8 +52,8 @@ For users that do not require Kerberos preauthentiation:
 Output is compatible with JtR:[[John-The-Ripper-Cheatsheet]] use `-format hashcat` for  hashcat:[[Hashcat-Cheatsheet]] 
 
 ```bash
-GetNPUSers.py  -dc-ip $IP -request '$domain/' 
-GetNPUSers.py  -dc-ip $IP -request '$domain/' -format hashcat
+GetNPUsers.py  -dc-ip $IP -request '$domain/' 
+GetNPUsers.py  -dc-ip $IP -request '$domain/' -format hashcat
 ```
 This example will attempt to list and get TGTs for those users that have the property:
 ```bash

