@@ -14,6 +14,8 @@ ltrace		# display system and library
 strings	 	# display printable strings in file(s)
 ```
 
+## EDG
+[[EDB]]
 
 ## GDB
 
@@ -58,7 +60,7 @@ python3 -m pip install --upgrade pwntools
 ## Radare2
 [Introductory Documentation](https://github.com/radareorg/radare2/blob/master/doc/intro.md)
 
-[[Radare2 Commands]], [[Radare2-Cheatsheet]] are avaliable
+[[Radare2-Commands]], [[Radare2-Cheatsheet]] are avaliable
 
 
 

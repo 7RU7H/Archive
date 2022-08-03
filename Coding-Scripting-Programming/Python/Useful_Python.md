@@ -141,7 +141,7 @@ for i,word in enumerate('iteratables are tuples, lists, sets, dict, strings'):
     	i -= 1
 ```
 
-## Hex2Bin
+## Hex2Bin & Hexdump
 ```python
 def h2bin(x):
         return decode_hex(x.replace(' ', '').replace('\n', ''))[0]
