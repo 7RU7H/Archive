@@ -26,6 +26,8 @@ cd /tmp; curl https://github.com/BloodHoundAD/SharpHound/releases/download/v1.0.
 ```
 
 ## Bloodhound
+[Docs](https://bloodhound.readthedocs.io/en/latest/data-analysis/bloodhound-gui.html)
+
 ```bash
 bloodhound --no-sandbox
 ```
@@ -40,3 +42,7 @@ Things to do
 Useful place to start from experience:
 2. Show Path from Kerberoastable
 3. Shortest Path from Owned Principals - Show nested group policy of pwned account
+
+
+## References
+[Docs](https://bloodhound.readthedocs.io/en/latest/data-analysis/bloodhound-gui.html)

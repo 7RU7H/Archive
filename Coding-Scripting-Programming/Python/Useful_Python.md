@@ -78,7 +78,7 @@ def commands():
     ip = "10.10.10.10"
 
     for k in theMethod.keys():
-        if k != "gobuster":
+        if k != "gobuster" and k != "nikto": # and is like && but with and extra letter..
             print(f"{k}{theMethod[k]}{ip}")
         else:
             for l in gobusterVar:
@@ -87,7 +87,7 @@ def commands():
     print("complete")
 ```
 
-Function declaration, returns, \*args and \*\*kwargs
+### Function declaration, returns, \*args and \*\*kwargs
 
 ```python
 def super_func(*args)
