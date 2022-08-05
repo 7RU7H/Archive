@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Windows/Powerview/Powerview-Cheatsheet.md",
+            "file": "Foothold/Active-Directory-Footholding.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Windows/Powerview/Powerview-Cheatsheet.md",
+                "file": "Foothold/Active-Directory-Footholding.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "05105baf9656e936",
   "lastOpenFiles": [
-    "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Privilege-Escalation.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Powershell-versions.md",
-    "Coding-Scripting-Programming/Powershell/Useful_Powershell.md",
-    "Foothold/File-Transfers/Windows-File-Transfers.md",
+    "Recon/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
+    "Tools/Nmap/Nmap-Cheatsheet.md",
+    "Foothold/Active-Directory-Footholding.md",
+    "Recon/Active-Information-Gathering/LDAP/LDAP-Recon.md",
     "Tools/Impacket/Impacket-Cheatsheet.md",
-    "Tools/Useful-Software/Neo4j-And-Bloodhound-Guide.md",
-    "Foothold/File-Transfers/File-Transfers.md",
-    "Tools/Process-Hacker.md",
-    "Tools/Shells/Evil-winrm-Cheatsheet.md"
+    "Networks/Network-Services.md",
+    "Recon/Active-Information-Gathering/Active-Directory/Active-Directory-Enumeration.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation.md",
+    "Windows/Powerview/Powerview-Cheatsheet.md",
+    "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Privilege-Escalation.md"
   ]
 }

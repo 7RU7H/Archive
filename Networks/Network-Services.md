@@ -69,7 +69,8 @@ Default port 53
 
 ## 69 - TFTP
 Stands for trivial file transfer protocol - UDP FTP
-generally 69
+PXE Boot uses this Boot image retrieval/loading useful in [[Active-Directory-Footholding]]
+
 
 ## 80 - HTTP
 Default  port 80

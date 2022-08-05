@@ -199,7 +199,7 @@ FIN # Finish
 --ip-options OPTIONS # Send packets with specified IP options 
 --badsum # Send packets with a wrong TCP/UDP checksum
 -sI  # Zombie Scan
---source-port  # specify sourece port
+--source-port  # specify source port
 --randomize-hosts  # random order
 ```
 

