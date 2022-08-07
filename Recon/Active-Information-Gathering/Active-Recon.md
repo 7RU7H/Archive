@@ -3,8 +3,6 @@ This is a hub page for linking all of a specific directory structure.
 
 ## Contents
 
-
-
 [[Active-Recon.md]]
 [[Netcat-As-Recon.md]]
 [[Responder-Cheatsheet.md]]
@@ -17,7 +15,7 @@ This is a hub page for linking all of a specific directory structure.
 [[LDAP-Recon.md]]
 [[Masscan-Cheatsheet.md]]
 [[NFS-Recon.md]]
-[[nmapAllTheScripts]]
+[[Nmap-AllTheScripts]]
 [[Nmap-Cheatsheet]]
 [[OS-Detection.md]]
 [[RPCClient-Cheatsheet.md]]

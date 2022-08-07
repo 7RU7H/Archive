@@ -1,5 +1,5 @@
 # Nmap Cheatsheet
-Check [[nmapAllTheScripts]] for NSE scripts
+Check [[Nmap-AllTheScripts]] for NSE scripts
 
 
 ## Utility

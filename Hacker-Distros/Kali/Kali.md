@@ -47,7 +47,17 @@ If for some reason use need Python2: [EoL Python ](https://www.kali.org/docs/gen
 
 ## Securing
 
+[[Kali-Hardening]]
+Firewall: [[ufw]]
+
 ## Monitoring
 
+[[Kali-Monitoring]]
+
 ## Creating Images
+
+## Services
+[[Kali-Setup-Docker]]
+
+[[Kali-Windows-Resources]]
 

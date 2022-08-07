@@ -1,5 +1,7 @@
 
-## Command 
+# IPv6 Defined
+
+## Commands
 For more [[Linux-Networking-Commands]],[[Windows-Networking-Commands]]
 ```bash
 # Enumerate a IPv6 address
@@ -13,7 +15,7 @@ ssh -6
 
 ## Ippsec's IPv6 Primer
 
-128 bits long, IPv6 has 3.402823669×10³⁸ possible addresses, whereas IPv4 has 4294967296 addresses. Linux calculates these with MAC address.
+128 bits long, IPv6 has 3.402823669×10³⁸ possible addresses, whereas IPv4 has 4,294,967,296 addresses. Linux calculates these with MAC address.
 
 FF.FF.FF.FF
 255.255.255.255
@@ -23,7 +25,7 @@ FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF
 dead:beef:2::1003
 fe80::c2d9:184f:9f41:3c8d
 
-`::` can only done once a address, hex you can drop left most bit its the same as
+`::` can only done once an address as shorthand for `'0' * x till next non Zero `, hex you can drop left most bit its the same as
 fe80:0000:0000:0000:c2d9:184f:9f41:3c8d
 
 /X-bits - X left most bits are going to be 1s

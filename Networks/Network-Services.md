@@ -157,17 +157,19 @@ umount $ip:/local/file/path
 ```
 
 ## 995 - POP3S
-Default port 995
 [[Mail-Operations]]
 
 ## 3306 - MySQL
 `mysql -h ip -u user -p`
 
-## RDP
-//default port 3389 (TCP)
+## 3389 (TCP) - RDP
+```
+remmina
+xfreerdp 
+```
 
 # 5000 - Docker
-Default port 5000, see [[Intro-To-Docker]] and [[Docker-Hacking]] for more informationmation
+See [[Intro-To-Docker]] and [[Docker-Hacking]] for more informationmation
 
 SNMPSSH	
 //default 5161	
