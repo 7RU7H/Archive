@@ -9,7 +9,19 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Hacker-Distros/Hackdows/Hackdows.md",
+            "file": "Exploitation/Binary-Exploitation/Buffer-Overflow/Stackbased-Buffer-Overflow-Scripts.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      },
+      {
+        "id": "8087bc19c5c4f3e6",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Exploitation/Binary-Exploitation/Buffer-Overflow/Stackbased-Buffer-Overflows.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Hacker-Distros/Hackdows/Hackdows.md",
+                "file": "Exploitation/Binary-Exploitation/Buffer-Overflow/Stackbased-Buffer-Overflows.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -87,17 +99,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "05105baf9656e936",
+  "active": "8087bc19c5c4f3e6",
   "lastOpenFiles": [
-    "Post-Exploitation/Lateral-Movement/Active-Directory-Lateral-Movement.md",
-    "Exploitation/Windows/Active-Directory/Overpass-The-Hash.md",
-    "Exploitation/Windows/Active-Directory/Attacking-Kerberos.md",
-    "Exploitation/Windows/Active-Directory/AD-Exploitation-Hub.md",
-    "Exploitation/Windows/Active-Directory/Pass-the-Ticket.md",
-    "Exploitation/Windows/Pass-The-Hash.md",
-    "Exploitation/Windows/Active-Directory/AD-Domain-Exploitation.md",
-    "Recon/Active-Information-Gathering/Active-Directory/Active-Directory-Enumeration.md",
-    "Tools/Useful-Software/Neo4j-And-Bloodhound-Guide.md",
-    "Hacker-Distros/CommandoVM/CommandoVM.md"
+    "Exploitation/Binary-Exploitation/Buffer-Overflow/Stackbased-Buffer-Overflow-Scripts.md",
+    "Exploitation/Binary-Exploitation/Golang-Binary-Exploitation.md",
+    "Exploitation/Binary-Exploitation/Buffer-Overflow/Stackbased-Buffer-Overflows.md",
+    "Exploitation/Binary-Exploitation/Binary-Exploitation-Enumeration.md",
+    "Recon/Active-Information-Gathering/Web-Analysis/Nikto-Cheatsheet.md",
+    "Exploitation/Binary-Exploitation/Mona.md",
+    "Foothold/File-Transfers/Windows-File-Transfers.md",
+    "Hacker-Distros/CommandoVM/CommandoVM.md",
+    "Hacker-Distros/Hackdows/Hackdows.md",
+    "Post-Exploitation/Lateral-Movement/Active-Directory-Lateral-Movement.md"
   ]
 }
