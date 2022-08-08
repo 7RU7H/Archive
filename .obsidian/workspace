@@ -7,12 +7,8 @@
         "id": "1deb4c2ceb61f1a8",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Exploitation/Windows/Pass-The-Hash.md",
-            "mode": "source",
-            "source": false
-          }
+          "type": "graph",
+          "state": {}
         }
       }
     ],
@@ -69,7 +65,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exploitation/Windows/Pass-The-Hash.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +84,15 @@
   },
   "active": "1deb4c2ceb61f1a8",
   "lastOpenFiles": [
-    "Services/Databases/MSSQL/MSSQL-Hacking.md",
-    "Tools/Shells/Socat-Cheatsheet.md",
-    "Networks/Network-Theory/TOR-Hidden-Services.md",
-    "Recon/Active-Information-Gathering/Active-Recon.md",
-    "Hacker-Distros/Kali/Kali.md",
-    "Hacker-Distros/Kali/Kali-Windows-Resources.md",
-    "Foothold/Shells.md",
+    "Services/Databases/Database-Hacking.md",
     "Foothold/Port-Redirection-And-Tunneling.md",
-    "Tools/Nmap/Nmap-AllTheScripts.md",
-    "Foothold/File-Transfers/File-Transfers.md"
+    "Tools/C2/Metasploit/Meterpreter-Commands.md",
+    "Coding-Scripting-Programming/Bash/Useful_Bash.md",
+    "Web-Hacking/CMS/Wordpress/Wordpress.md",
+    "Security-Enterprises/Penetration-Testing.md",
+    "Exploitation/Binary-Exploitation/Buffer-Overflow/Stackbased-Buffer-Overflows.md",
+    "Exploitation/Windows/Pass-The-Hash.md",
+    "Services/Databases/MSSQL/MSSQL-Hacking.md",
+    "Tools/Shells/Socat-Cheatsheet.md"
   ]
 }

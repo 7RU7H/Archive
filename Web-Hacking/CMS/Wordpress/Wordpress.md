@@ -13,6 +13,11 @@ Discovery/Web-Content/CMS/wordpress.fuzz.txt/
 Passwords/Honeypot-Captures/wordpress-attacks-july2014.txt
 ```
 
+## Shells
+Seclists
+```
+/usr/share/seclists/Web-Shells/WordPress
+```
 
 ## WPscan
 

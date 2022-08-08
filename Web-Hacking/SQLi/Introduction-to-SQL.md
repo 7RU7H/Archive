@@ -4,9 +4,9 @@ Structured Query Language (SQL) is a [domain-specific language](https://en.wikip
 The reasoning for the location of this file in the directory tree is because unlike Coding-Scripting-Programming directory, the convenience of its closeness to resources to perform SQLinjection is more important. 
 
 ## Contents
-[[MySQL]]
+[[MySQL-SQLI]]
 [[MySQL-Cheatsheet]]
-[[NoSQL]]
+[[NoSQL-SQLI]]
 [[SQLmap-CheatSheet]]
 [[SQLInjection]]
 [[MSSQL-Hacking]]
