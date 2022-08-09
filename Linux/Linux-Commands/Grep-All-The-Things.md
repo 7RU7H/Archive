@@ -15,9 +15,11 @@ grep -i						ignore case
 grep -l						list filename containing the pattern
 grep -v						print all lines not containing the pattern
 grep -e						MULTIPLE PATTERNS!
+```
 
+Regular Expressions for easy text manipulation on the cmdline:
+```bash
 
-regularExpressions for easy text manipulation on the cmdline:
 [exp]EXP		variableMatch inside [] and explicit match outside
 (exp)				group
 |				exp or exp
@@ -46,9 +48,10 @@ prevChar?			optional character
 * - 0 or more times.
 + - 1 or more times.
  _ 				are included in the \w metacharacter and not in \W, \w will match every single character
+```
 
-# Radical regexs:
-
+`egrep` is `grep -e` in a single command
+```bash
 egrep -o '' file1 > file2	output th egrep from file1 > file2  
 (\d{1,3}\.){3}\d{1,3}		grep every Ipv4 address
 "([0-9]{1,3}[\.]){3}[0-9]{1,3}" grep for ip addresses

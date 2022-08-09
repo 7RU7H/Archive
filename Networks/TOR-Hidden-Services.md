@@ -4,13 +4,11 @@ Tor manpage: *"" Tor is a connection-oriented anonymizing communication service.
 
 ## Installation
 
-
-
 ```bash 
 apt-get install tor
-service tor start
-service tor status
-serivce tor stop
+service tor start # Ubuntu
+service tor status # Ubuntu
+serivce tor stop # Ubuntu
 ```
 
 
@@ -41,16 +39,19 @@ serivce tor stop
 ```bash
 # Edit /etc/proxychains.conf
 # Uncomment dynamic_chain
-# Comment any others
+# Comment any *_chain and proxy_dns
 tor
 proxychains firefox
 ```
 
-## Tor Browser
+Go to [dnsleaktest.com](https://dnsleaktest.com) to test if you IP has changed and see [[DNS-Leaking]] article which based on `dnsleaktest.com/what-is-a-dns-leak.html`
 
+## Tor Browser
+Coming Soon...
 
 
 ## References
 
 [Stackover 2013](https://tor.stackexchange.com/questions/672/how-do-onion-addresses-exactly-work)
 [THM Tor for Beginners room](https://tryhackme.com/room/torforbeginners)
+[dnsleaktest.com](https://dnsleaktest.com)

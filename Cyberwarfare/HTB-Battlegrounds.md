@@ -2,7 +2,7 @@
 
 **"If you know the enemy and know yourself, you need not fear the results of a hundred battles. If you know yourself but not the enemy, for every victory gained you will also suffer defeat."* - Sun Tzu, Art of War.
 
-Try to, at some point I master hacking in battlegrounds context. This hope is that this will morph into an instructional Art of War for Hacking. From absolute novice to master.
+Try to, at some point I want to master hacking in a battlegrounds context. This hope is that this will morph into an instructional Art of War for Hacking. From absolute novice to master.
 
 ## Ippsec Introductional Scripting
 [Hack The Box Hacking Battlegrounds - Cyber Mayhem Gameplay with Ippsec](https://www.youtube.com/watch?v=o42dgCOBkRk)

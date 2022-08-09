@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Networks/TOR-Hidden-Services.md",
+            "file": "Windows/Windows-Commands/Windows-CLI-cmd.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Networks/TOR-Hidden-Services.md",
+                "file": "Windows/Windows-Commands/Windows-CLI-cmd.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "1deb4c2ceb61f1a8",
   "lastOpenFiles": [
-    "Networks/Proxies.md",
-    "Networks/TOR-Hidden-Services.md",
-    "Services/Databases/Database-Hacking.md",
-    "Foothold/Port-Redirection-And-Tunneling.md",
-    "Tools/C2/Metasploit/Meterpreter-Commands.md",
-    "Coding-Scripting-Programming/Bash/Useful_Bash.md",
-    "Web-Hacking/CMS/Wordpress/Wordpress.md",
-    "Security-Enterprises/Penetration-Testing.md",
-    "Exploitation/Binary-Exploitation/Buffer-Overflow/Stackbased-Buffer-Overflows.md",
-    "Exploitation/Windows/Pass-The-Hash.md"
+    "Coding-Scripting-Programming/Csharp/Basic-Csharp.md",
+    "Web-Hacking/Web-Concepts/httpRouting.md",
+    "Web-Hacking/Web-Concepts/httpMethodsAndResponses.md",
+    "Web-Hacking/Web-Concepts/html101.md",
+    "Web-Hacking/XXE/XXE-Vulnerablity.md",
+    "Coding-Scripting-Programming/Java.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/PrivEsc-Important-Windows-Location.md",
+    "Coding-Scripting-Programming/Csharp/Useful-Csharp.md",
+    "Coding-Scripting-Programming/Csharp/Undetectable-Csharp-Reverse-Shells.md",
+    "Foothold/File-Transfers/Windows-File-Transfers.md"
   ]
 }

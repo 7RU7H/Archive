@@ -7,7 +7,7 @@ Very open to feedback and criticism. Hopeful in the future once I have made a re
 
 ## Contents
 
-For full links to all Articles alphabetically see [[Contents]] to `./mkContents.sh` can be used to make this file .I have tested it with graph view, but have personally settled for not having it currently, but is there if anyone ever needs it.
+For full links to all Articles alphabetically see [[Contents]] to `./mkContents.sh` can be used to make this file .I have tested it with graph view, but have personally settled for not having it currently, but is there if anyone ever needs it - I decided the Graph looks better, but the script remains for others if required.
 
 ## Introduction
 
