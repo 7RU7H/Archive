@@ -7,8 +7,12 @@
         "id": "1deb4c2ceb61f1a8",
         "type": "leaf",
         "state": {
-          "type": "graph",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "Networks/TOR-Hidden-Services.md",
+            "mode": "source",
+            "source": false
+          }
         }
       }
     ],
@@ -65,6 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Networks/TOR-Hidden-Services.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -84,6 +89,8 @@
   },
   "active": "1deb4c2ceb61f1a8",
   "lastOpenFiles": [
+    "Networks/Proxies.md",
+    "Networks/TOR-Hidden-Services.md",
     "Services/Databases/Database-Hacking.md",
     "Foothold/Port-Redirection-And-Tunneling.md",
     "Tools/C2/Metasploit/Meterpreter-Commands.md",
@@ -91,8 +98,6 @@
     "Web-Hacking/CMS/Wordpress/Wordpress.md",
     "Security-Enterprises/Penetration-Testing.md",
     "Exploitation/Binary-Exploitation/Buffer-Overflow/Stackbased-Buffer-Overflows.md",
-    "Exploitation/Windows/Pass-The-Hash.md",
-    "Services/Databases/MSSQL/MSSQL-Hacking.md",
-    "Tools/Shells/Socat-Cheatsheet.md"
+    "Exploitation/Windows/Pass-The-Hash.md"
   ]
 }
