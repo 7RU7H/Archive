@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Windows/Windows-Commands/Windows-CLI-cmd.md",
+            "file": "Tools/C2/Armitage/Armitage.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Windows/Windows-Commands/Windows-CLI-cmd.md",
+                "file": "Tools/C2/Armitage/Armitage.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "1deb4c2ceb61f1a8",
   "lastOpenFiles": [
+    "Coding-Scripting-Programming/Bash/Useful_Bash.md",
+    "Tools/C2/Armitage/Armitage.md",
+    "HackingReportTemplate/MarkdownShortcuts.md",
+    "Tools/C2/Introduction-To-Comand-And-Control-Frameworks.md",
+    "Tools/C2/C2-Matrix.md",
+    "Linux/Linux-Concepts/Linux-Concepts.md",
+    "Windows/Windows-Commands/Windows-CLI-cmd.md",
     "Coding-Scripting-Programming/Csharp/Basic-Csharp.md",
     "Web-Hacking/Web-Concepts/httpRouting.md",
-    "Web-Hacking/Web-Concepts/httpMethodsAndResponses.md",
-    "Web-Hacking/Web-Concepts/html101.md",
-    "Web-Hacking/XXE/XXE-Vulnerablity.md",
-    "Coding-Scripting-Programming/Java.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/PrivEsc-Important-Windows-Location.md",
-    "Coding-Scripting-Programming/Csharp/Useful-Csharp.md",
-    "Coding-Scripting-Programming/Csharp/Undetectable-Csharp-Reverse-Shells.md",
-    "Foothold/File-Transfers/Windows-File-Transfers.md"
+    "Web-Hacking/Web-Concepts/httpMethodsAndResponses.md"
   ]
 }
