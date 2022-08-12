@@ -3,7 +3,7 @@
 A _service application_ conforms to the interface rules of the Service Control Manager (SCM).
 Services have a Discretionary Access Control List (DACL) indicating whom can start, stop, pause, query status, query configuration, or reconfigure privileges, etc. Service configuration are stored in the registry under: `HKLM\SYSTEM\CurrentControlSet\Services`.
 
-```powershell
+```batch
 sc qc <servicename>
 SERVICE_NAME: #name ; The output below is corresponds to registry subkey anems
         TYPE               : 20  WIN32_SHARE_PROCESS

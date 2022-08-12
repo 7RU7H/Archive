@@ -4,7 +4,7 @@ SMB oringally ran on top of NetBIOS using port 139. NetBIOS is an older trnaspor
 ## smbmap
 ```bash
 smbmap -H $IP
-smbmap -H $IP -u user -p password -H $IP # requires credentals
+smbmap -H $IP -u user -p password # requires credentals
 ```
 
 ## nbtscan 
@@ -35,7 +35,7 @@ smbclient //$IP/$share -U username%password
 
 smbclient -L $IP			# List shares using NULL session
 smbclient -L //$IP/tmp
-smbclient -U "" -L //$IP/anon
+smbclient -U '' -L //$IP/anon
 smbclient -N //$IP/tmp --option='client min protocol=NT1' # legacy
 
 ## Transfer files!
@@ -46,6 +46,9 @@ smbclient //$IP/$sahre -c 'cd folder;get desired_file_name' password -U username
 smbclient //$IP/$share -c 'put /var/www/my_local_file.txt .\target_folder\target_file.txt' password -U username 
 
 ```
+
+## Crackmapexec!
+[[Crackmapexec-Cheatsheet]]
 
 ## enum4linux Enumeration
 ```bash

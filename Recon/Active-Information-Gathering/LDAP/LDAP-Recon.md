@@ -13,7 +13,7 @@ ldapsearch ldap://$IP -x # Simple authentication if this work try the below
 ldapsearch -x -s base <namingcontexts>
 
 # Extract an unauthenticated dump of all objects held within the LDAP directory structure
-ldapsearch -LLL -x -H ldap://<domain fqdn> -b '' -s base '(objectclass=*)'
+ldapsearch -LLL -x -H ldap://<domain fqdn> -b '' -s base '(objectClass=*)'
 # Just Persons
 ldapsearch -LLL -x -H ldap://<domain> -b 'DC=htb,DC=local' '(objectClass=Person)' | tee -a ldapsearch-person
 
