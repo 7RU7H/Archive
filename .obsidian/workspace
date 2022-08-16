@@ -9,19 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Recon/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
-            "mode": "source",
-            "source": false
-          }
-        }
-      },
-      {
-        "id": "d4756e591431c1aa",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation.md",
+            "file": "Post-Exploitation/Foothold/Foothold-Enumeration.md",
             "mode": "source",
             "source": false
           }
@@ -81,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation.md",
+                "file": "Post-Exploitation/Foothold/Foothold-Enumeration.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,14 +87,14 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "d4756e591431c1aa",
+  "active": "362d38bcf653cb79",
   "lastOpenFiles": [
     "Recon/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation.md",
     "Recon/Active-Information-Gathering/SMB/RPCClient-Cheatsheet.md",
     "Tools/Crackmapexec/Crackmapexec-Cheatsheet.md",
     "Recon/Active-Information-Gathering/LDAP/LDAP-Recon.md",
     "Coding-Scripting-Programming/Bash/Useful_Bash.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation.md",
     "Windows/Windows-Concepts/Windows-Services.md",
     "Windows/Windows-Concepts/Windows-Processes.md",
     "Recon/Active-Information-Gathering/SMB/RPCClient-Usage.md",
