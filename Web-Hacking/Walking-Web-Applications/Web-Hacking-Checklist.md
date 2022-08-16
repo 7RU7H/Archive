@@ -1,5 +1,22 @@
 # Web Hacking Checklist
 
+## Walking the Website
+Mostly Ippsec inspired - use [[Burpsuite-Helpsheet]]
+1. Check the Certificated - Contains email address
+2. Quick check for url: /index.(htlm/php)
+3. Check source for if page is Static or Dynamic
+4. Search `Ctrl + F` for languages
+5. Check Cookies
+6. Request functionality
+7. Check for CMS and google dork it and its version on site  - README.md
+8. Check for API
+9. Default Credentials in Login pages
+10. CSRF tokens
+
+
+Note and test:
+User suppliable input - Login forms, Search bars, Comment sections
+Parameters
 
 ## Once Authenticated Enumerate:
 [[Haddix-Methodology]]

@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Post-Exploitation/Foothold/Foothold-Enumeration.md",
+            "file": "Web-Hacking/Walking-Web-Applications/Web-Hacking-Checklist.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Post-Exploitation/Foothold/Foothold-Enumeration.md",
+                "file": "Web-Hacking/Walking-Web-Applications/Web-Hacking-Checklist.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "362d38bcf653cb79",
   "lastOpenFiles": [
+    "Brain-Hacking/Exercise.md",
+    "Brain-Hacking/Brain-Hacking-Hub.md",
+    "Brain-Hacking/Improve-Your-Learning.md",
+    "Post-Exploitation/Foothold/Foothold-Enumeration.md",
     "Recon/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation.md",
     "Recon/Active-Information-Gathering/SMB/RPCClient-Cheatsheet.md",
     "Tools/Crackmapexec/Crackmapexec-Cheatsheet.md",
     "Recon/Active-Information-Gathering/LDAP/LDAP-Recon.md",
-    "Coding-Scripting-Programming/Bash/Useful_Bash.md",
-    "Windows/Windows-Concepts/Windows-Services.md",
-    "Windows/Windows-Concepts/Windows-Processes.md",
-    "Recon/Active-Information-Gathering/SMB/RPCClient-Usage.md",
-    "Recon/Active-Information-Gathering/DNS/Fierce-Cheatsheet.md"
+    "Coding-Scripting-Programming/Bash/Useful_Bash.md"
   ]
 }
