@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Web-Hacking/Walking-Web-Applications/Web-Hacking-Checklist.md",
+            "file": "Wireless-Hacking/WIFI-Hacking.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Web-Hacking/Walking-Web-Applications/Web-Hacking-Checklist.md",
+                "file": "Wireless-Hacking/WIFI-Hacking.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,6 +89,7 @@
   },
   "active": "362d38bcf653cb79",
   "lastOpenFiles": [
+    "Web-Hacking/Walking-Web-Applications/Web-Hacking-Checklist.md",
     "Brain-Hacking/Exercise.md",
     "Brain-Hacking/Brain-Hacking-Hub.md",
     "Brain-Hacking/Improve-Your-Learning.md",
@@ -97,7 +98,6 @@
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation.md",
     "Recon/Active-Information-Gathering/SMB/RPCClient-Cheatsheet.md",
     "Tools/Crackmapexec/Crackmapexec-Cheatsheet.md",
-    "Recon/Active-Information-Gathering/LDAP/LDAP-Recon.md",
-    "Coding-Scripting-Programming/Bash/Useful_Bash.md"
+    "Recon/Active-Information-Gathering/LDAP/LDAP-Recon.md"
   ]
 }
