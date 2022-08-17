@@ -130,7 +130,10 @@ a = access, m = modified, c = created
 ```bash
 getcap 		displays the capabilities on the queried file(s)
 getcap -r / 2>/dev/null
+```
 
+# head
+```bash
 head		print the first 10 lines of a file to stdout
 
 iconv 		convert file format
@@ -167,6 +170,8 @@ ls -tu	sort by atime
 ls -r	reverse sort order
 ls --full-time	list full data and time
 ls --group-directories-first
+
+lsof   # List Open files
 
 lspci  # for hardware info
 lscpu  # for cpu info
@@ -244,5 +249,6 @@ echo (-n) "" | wc -c : count the characters! Add -n for no newline
 
 which $input	location of /bin/$input
 
-who		ownership
+who		# logged in
+w       #
 ```		

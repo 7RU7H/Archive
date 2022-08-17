@@ -71,6 +71,7 @@ iptables-save
 	 
 # Netstat for network and port status
 netstat/ss	# ss default on most linux distros
+# Sudo/doas will provider greater information!
 # flags:	
 netstat	-natup	
 netstat -tulpn
