@@ -23,11 +23,29 @@ RADIUS | A server for authenticating clients, not just for wifi.
 
 ## Checks and Airmon-ng
 
-First Check adapter configuration, then check again after running `airmon-ng`
+First Check adapter configuration, check for `Mode:Monitor` and then check again after running `airmon-ng`
 ```bash
-iwconfig
-airmon-ng start wlan0
-iwconfig
+iwconfig # See if tool is avaliable
+airmon-ng start wlan<NUM># Put into monitor mode
+iwconfig # Verify
+# Kill them using
+airmon-ng check kill
+```
+Kill potential PIDs that will interfere by changing channels
+and sometimes putting the interface back in managed mode.
+
+You may need to disable Network Manager on Kali with:
+```bash
+systemctl stop network-manager
+```
+
+## Airmon-ng
+
+```bash
+ 
+
+airmon-ng start wlan<NUM> # Put into monitor mode
+airmon-ng stop wlan<NUM> # End monitor mode
 ```
 
 
@@ -36,3 +54,4 @@ iwconfig
 [THM Room](https://tryhackme.com/room/wifihacking101)
 [David Bombal](https://davidbombal.com/hack-wifi-from-1-80/)
 [medium Fabian Voith](https://fabian-voith.de/2020/04/22/get-alfa-awus036ach-usb-nic-running-on-kali-vm-to-attack-wireless-networks/)
+[referenced above kali blog](https://www.kali.org/blog/kali-linux-2017-1-release/)

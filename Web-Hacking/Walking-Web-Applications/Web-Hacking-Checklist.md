@@ -5,13 +5,14 @@ Mostly Ippsec inspired - use [[Burpsuite-Helpsheet]]
 1. Check the Certificated - Contains email address
 2. Quick check for url: /index.(htlm/php)
 3. Check source for if page is Static or Dynamic
-4. Search `Ctrl + F` for languages
-5. Check Cookies
-6. Request functionality
-7. Check for CMS and google dork it and its version on site  - README.md
-8. Check for API
-9. Default Credentials in Login pages
-10. CSRF tokens
+5. Search `Ctrl + F` for languages
+6. Check Cookies
+7. Inspect Elements
+8. Request functionality
+9. Check for CMS and google dork it and its version on site  - README.md
+10. Check for API
+11. Default Credentials in Login pages
+12. CSRF tokens
 
 
 Note and test:

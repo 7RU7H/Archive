@@ -24,7 +24,7 @@ Seclists
 [Free 25 API requests per day](https://wpscan.com/pricing)
 
 ```bash
-wpscan --url -e --api-token $APIKEY # -o filename
+wpscan --url  -e --api-token $APIKEY # -o filename
 ```
 
 ```bash

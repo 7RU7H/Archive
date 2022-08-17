@@ -1,7 +1,7 @@
 # UFW
 
 ```bash
-
+apt install ufw
 sudo ufw status
 sudo ufw enable
 sudo ufw disable
