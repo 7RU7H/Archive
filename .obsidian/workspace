@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Recon/Active-Information-Gathering/SMTP/SMTP-Recon-Cheatsheet.md",
+            "file": "Web-Hacking/Content-Discovery/FFUF-Cheatsheet.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Recon/Active-Information-Gathering/SMTP/SMTP-Recon-Cheatsheet.md",
+                "file": "Web-Hacking/Content-Discovery/FFUF-Cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "362d38bcf653cb79",
   "lastOpenFiles": [
+    "Web-Hacking/Subdomains/Subdomains.md",
+    "Recon/Active-Information-Gathering/DNS/DNS-Recon-Active.md",
+    "Recon/Active-Information-Gathering/SMTP/SMTP-Recon-Cheatsheet.md",
     "Web-Hacking/Walking-Web-Applications/Inspecting-Web-Page-Element-Tricks.md",
     "Web-Hacking/Walking-Web-Applications/Web-Hacking-Checklist.md",
     "Web-Hacking/CMS/Wordpress/Wordpress.md",
-    "Recon/Active-Information-Gathering/SMTP/SMTP-Recon-Cheatsheet.md",
     "Coding-Scripting-Programming/Bash/Useful_Bash.md",
     "Tools/Nmap/Nmap-Cheatsheet.md",
     "Tools/Nmap/Nmap-AllTheScripts.md",
-    "Linux/ufw.md",
-    "Wireless-Hacking/WIFI-Hacking.md",
-    "Post-Exploitation/Foothold/Foothold-Enumeration.md"
+    "Linux/ufw.md"
   ]
 }

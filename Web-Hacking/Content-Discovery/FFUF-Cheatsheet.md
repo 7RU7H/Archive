@@ -75,7 +75,7 @@ ffuf -w wordlist.txt:FUZZ -u http://$IP/FUZZ -recursion -recursion-depth 1 -e .p
 
 ## Fuzzing for VHosts
 ```bash
-ffuf -u http://FUZZ.mydomain.com -c -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt`
+ffuf -u http://mydomain.com -H "Host: FUZZ:mydomain.com" -c -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt
 ```
 [virtual hosts](https://httpd.apache.org/docs/2.4/en/vhosts/examples.html) (vhosts) is the name used by Apache httpd.
 Nginx use [Server Blocks](https://www.nginx.com/resources/wiki/start/topics/examples/server_blocks/).
@@ -91,6 +91,7 @@ ffuf -u http://mydomain.com -c -w /usr/share/seclists/Discovery/DNS/subdomains-t
 [cybersecnerds](https://cybersecnerds.com/ffuf-everything-you-need-to-know/)
 [thmRoom](https://tryhackme.com/room/ffuf)
 [HTB academy ffuf module](https://academy.hackthebox.com/modules)
+[medium quiknapp](https://medium.com/quiknapp/fuzz-faster-with-ffuf-c18c031fc480)
 
 ## Appendix 
 Usage
