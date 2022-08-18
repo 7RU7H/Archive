@@ -90,6 +90,20 @@ Get-WmiObject Query Select from Win32_NetworkAdapterConfiguration | Where-Object
 Get-SmbShare
 ```
 
+## Network Sockets
+Create a socket and connect to it
+```powershell
+$s = New-Object System.Net.Sockets.Socket(
+    [System.Net.Sockets.AddressFamily]::InterNetwork, 
+    [System.Net.Sockets.SocketType]::Stream,
+    [System.Net.Sockets.ProtocolType]::Tcp
+)
+$s.Connect("127.0.0.1", $port)
+# Powershell AddressFamilies, the above is IPv4
+# InterNetworkV6, NetBios, Unix
+# See: https://docs.microsoft.com/en-us/dotnet/api/system.net.sockets.addressfamily?view=net-6.0
+```
+
 ## Objects 
 ```powershell
 Select-Object -Property Mode, Name
