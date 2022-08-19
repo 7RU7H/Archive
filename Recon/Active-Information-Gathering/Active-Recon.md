@@ -8,7 +8,7 @@ This is a hub page for linking all of a specific directory structure.
 [[Responder-Cheatsheet.md]]
 [[Unknown-Service-Recon.md]]
 [[Vulnerability-Scanning.md]]
-[[Active-Directory-Enumeration.md]]
+[[Active-Directory-Enumeration]]
 [[DNSenum-Cheatsheet.md]]
 [[DNS-Recon-Active.md]]
 [[Fierce-Cheatsheet.md]]

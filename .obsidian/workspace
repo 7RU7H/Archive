@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "362d38bcf653cb79",
+        "id": "ce97c9857ea8d559",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation.md",
+            "file": "Post-Exploitation/Foothold/Active-Directory/Active-Directory-Enumeration.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "7z",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation.md",
+                "file": "Post-Exploitation/Foothold/Active-Directory/Active-Directory-Enumeration.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -87,17 +87,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "362d38bcf653cb79",
+  "active": "ce97c9857ea8d559",
   "lastOpenFiles": [
-    "Post-Exploitation/Privilege-Escalation/Windows/PrivEsc-Important-Windows-Location.md",
+    "Tools/Useful-Software/Neo4j-And-Bloodhound-Guide.md",
+    "Post-Exploitation/Foothold/Active-Directory/Active-Directory-Enumeration.md",
+    "Tools/Windows/Windows-Remote-Server-Administration-Tools.md",
+    "().md",
+    "Linux/Linux-Commands/Module-Linux-Commands.md",
+    "Post-Exploitation/Foothold/Active-Directory/Active-Directory-Footholding.md",
     "Post-Exploitation/Foothold/Foothold-Enumeration.md",
+    "Web-Hacking/Session-Tokens.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation.md",
-    "Coding-Scripting-Programming/Powershell/Basic_Powershell.md",
-    "Coding-Scripting-Programming/Powershell/Useful_Powershell.md",
-    "Web-Hacking/Content-Discovery/FFUF-Cheatsheet.md",
-    "Web-Hacking/Subdomains/Subdomains.md",
-    "Recon/Active-Information-Gathering/DNS/DNS-Recon-Active.md",
-    "Recon/Active-Information-Gathering/SMTP/SMTP-Recon-Cheatsheet.md",
-    "Web-Hacking/Walking-Web-Applications/Inspecting-Web-Page-Element-Tricks.md"
+    "Post-Exploitation/Privilege-Escalation/Windows/PrivEsc-Important-Windows-Location.md"
   ]
 }

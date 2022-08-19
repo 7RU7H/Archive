@@ -188,7 +188,7 @@ Lightweight Directory Access Protocol (LDAP) is one the [[Network-Services]] ver
 Domain Schema are rules for object creation
 
 ## Domain Authentication
-[[Active-Directory-Authenication]] is detailed in the aforemented article, although a brief summary of both mechanism for the context of this article is also provided here. NTLM is the default Windows authentication protocol uses an encrypted challenge/response protocol. Whereas Kerberos Ticket System authenciation, discuss at length with related information in [[Active-Directory-Kerberos-Defined]] see [[Attacking-Kerberos]]
+[[Active-Directory-Authentication]] is detailed in the aforemented article, although a brief summary of both mechanism for the context of this article is also provided here. NTLM is the default Windows authentication protocol uses an encrypted challenge/response protocol. Whereas Kerberos Ticket System authenciation, discuss at length with related information in [[Active-Directory-Kerberos-Defined]] see [[Attacking-Kerberos]]
 		
 ### Cloud AD
 
