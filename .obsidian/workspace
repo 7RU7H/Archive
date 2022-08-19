@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Post-Exploitation/Foothold/Active-Directory/Active-Directory-Enumeration.md",
+            "file": "Hardening/Hardening.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Post-Exploitation/Foothold/Active-Directory/Active-Directory-Enumeration.md",
+                "file": "Hardening/Hardening.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "ce97c9857ea8d559",
   "lastOpenFiles": [
-    "Tools/Useful-Software/Neo4j-And-Bloodhound-Guide.md",
+    "Tools/Useful-Software/Boxentriq-Code-Breaking.md",
+    "Cryptography/Cryptography101.md",
+    "Cryptography/Password-Attacks/Password-Recovery.md",
+    "Recon/Passive-Information-Gathering/Passive-Recon.md",
+    "Reverse-Engineering/Source-Code-Analysis.md",
+    "Tools/BinEx/Pwntools.md",
     "Post-Exploitation/Foothold/Active-Directory/Active-Directory-Enumeration.md",
+    "Tools/Useful-Software/Neo4j-And-Bloodhound-Guide.md",
     "Tools/Windows/Windows-Remote-Server-Administration-Tools.md",
-    "().md",
-    "Linux/Linux-Commands/Module-Linux-Commands.md",
-    "Post-Exploitation/Foothold/Active-Directory/Active-Directory-Footholding.md",
-    "Post-Exploitation/Foothold/Foothold-Enumeration.md",
-    "Web-Hacking/Session-Tokens.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/PrivEsc-Important-Windows-Location.md"
+    "().md"
   ]
 }

@@ -1,4 +1,13 @@
 # Pwntools
+## Installation
+
+There are main ways but I found this method work best for me, check yourself.
+```bash
+python3 -m pip install --upgrade pip
+python3 -m pip install --upgrade pwntools
+export PYTHONPATH=/home/$1/.local/bin
+```
+
 
 Enumeration
 ```bash
