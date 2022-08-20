@@ -1,4 +1,6 @@
 # Linux File System
+Linux file system is a single hierarchy, which allows users and applications to access data locational awareness within that hierarchy. The starting point of this hierarchical tree is called the root, represented by the "`/`" character. This directory can contain named subdirectories. It can integrate data from several disks, others are _mounted_ on directories in the hierarchy available under the mount points. 
+Network filesystems such as NFS data is transmitted through the network to a server that stores and retrieves them on demand as the file system abstraction extends across the network.
 
 ## Host related
 

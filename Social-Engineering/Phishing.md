@@ -2,8 +2,6 @@
 
 
 # Contents:
-# How to write the good phish
-
 
 # How to write the good phish
 Three ingredients: Sender Address, Subject matter, Content

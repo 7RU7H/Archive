@@ -1,6 +1,6 @@
 # User and group related
 
-For non-user-and-group related command see:[[Core-Linux-Commands]]
+For non-user-and-group related command see: [[Core-Linux-Commands]]
 
 ```bash
 su	switch user "-l" is login switch
