@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Linux/Linux-Concepts/Linux-Kernel.md",
+            "file": "Brain-Hacking/Improve-Your-Learning.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/Linux-Concepts/Linux-Kernel.md",
+                "file": "Brain-Hacking/Improve-Your-Learning.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "ce97c9857ea8d559",
   "lastOpenFiles": [
+    "Brain-Hacking/Brain-Hacking-Hub.md",
+    "Post-Exploitation/Lateral-Movement/Active-Directory-Lateral-Movement.md",
+    "Post-Exploitation/Lateral-Movement/Lateral-Movement.md",
+    "Hardening/Hardening.md",
+    "Wireless-Hacking/WIFI-Hacking.md",
+    "Linux/Linux-Concepts/Linux-Kernel.md",
     "README.md",
     "Brain-Hacking/Improve-Your-Learning.md",
     "Hacking-Report-Template/ExecutiveSummary.md",
-    "Social-Engineering/Phishing.md",
-    "Linux/Linux-Commands/Linux-Users-N-Group-Linux-Commands.md",
-    "Linux/Linux-Commands/Core-Linux-Commands.md",
-    "Linux/Linux-Concepts/Linux-Kernel.md",
-    "Linux/Linux-Concepts/Linux-File-System.md",
-    "Linux/Linux-Concepts/Linux-Concepts.md",
-    "Hardening/Hardening.md"
+    "Social-Engineering/Phishing.md"
   ]
 }
