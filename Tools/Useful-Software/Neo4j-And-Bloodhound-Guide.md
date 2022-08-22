@@ -18,6 +18,10 @@ PASS: neo4j
 ## SharpHound
 [Sharphound](https://github.com/BloodHoundAD/BloodHound/tree/master/Collectors) is the collector that gathers all the information about the network and compresses it into a zip file. You can then import this data and view a map of the AD domain. This very import to see weak points like DCsyncs, Usernames, Trusts. Given compatibility best to get the newest version, replace `v1.0.4` if required.
 
+[Flangvik/SharpCollection](https://github.com/Flangvik/SharpCollection) is  a github repo that contains ..*"
+Nightly builds of common C# offensive tools, fresh from their respective master branches built and released in a CDI fashion using Azure DevOps release pipelines."* containing sharphound at the various dot net versions
+
+
 ```bash
 cd /tmp; curl https://github.com/BloodHoundAD/SharpHound/releases/download/v1.0.4/SharpHound-v1.0.4.zip -oL SharpHound.zip
 ```
@@ -37,6 +41,12 @@ Sharphound.exe --CollectionMethods <Methods> --Domain <domain> --ExcludeDCs
 
 ## Bloodhound
 [For detailed official documentation](https://bloodhound.readthedocs.io/en/latest/data-analysis/bloodhound-gui.html)
+
+[Python Ingestor](https://github.com/fox-it/BloodHound.py)
+
+```
+python3 bloodhound.py -c all -dc dc01.domain.com -u <users> -p <password> -ns $IP
+```
 
 Beware importanting data is stored and retain after exiting. Comply with data protection and any data destruction policies, but also if you don't want to get confused by any old data - `Database Info -> Scroll to the bottom of the list -> Clear Database`.
 

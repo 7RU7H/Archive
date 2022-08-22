@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Post-Exploitation/Antivirus-Evasion/Antivirus-Evasion.md",
+            "file": "Cryptography/Cracking-Files.md",
             "mode": "source",
             "source": false
           }
@@ -53,7 +53,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 192.5
+    "width": 396.5
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Post-Exploitation/Antivirus-Evasion/Antivirus-Evasion.md",
+                "file": "Cryptography/Cracking-Files.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "ce97c9857ea8d559",
   "lastOpenFiles": [
+    "Web-Hacking/Content-Discovery/FFUF-Cheatsheet.md",
+    "Tools/Useful-Software/Searching-Files.md",
+    "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Privilege-Escalation.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation.md",
+    "Windows/Active-Directory/Active-Directory-Default-Security-Groups-Table.md",
+    "Windows/Windows-Concepts/Accounts-And-Groups/Windows-Accounts-Groups.md",
     "Post-Exploitation/Privilege-Escalation/Windows/PrivEsc-Important-Windows-Location.md",
-    "Post-Exploitation/Foothold/Foothold-Enumeration.md",
-    "Brain-Hacking/Improve-Your-Learning.md",
-    "Brain-Hacking/Brain-Hacking-Hub.md",
-    "Post-Exploitation/Lateral-Movement/Active-Directory-Lateral-Movement.md",
-    "Post-Exploitation/Lateral-Movement/Lateral-Movement.md",
-    "Hardening/Hardening.md",
-    "Wireless-Hacking/WIFI-Hacking.md",
-    "Linux/Linux-Concepts/Linux-Kernel.md"
+    "Tools/Useful-Software/Neo4j-And-Bloodhound-Guide.md",
+    "Tools/Shells/Evil-winrm-Cheatsheet.md",
+    "Tools/Useful-Software/Github-guide.md"
   ]
 }

@@ -26,3 +26,4 @@ RAS and IAS Servers | Servers in this group can access remote access properties 
 Groups | Description
 --- | ---
 Account Operators | Grants limited account creation privileges
+Local Adminstrator Password Solution | Randomises Adminstrator Password, if of this group you can read them

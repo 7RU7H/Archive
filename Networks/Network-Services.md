@@ -117,6 +117,7 @@ Port | Purpose
 //generally 143
 
 ## 389 - LDAP
+Lightweight Directory Access Protocol
 Default port 389
 [[LDAP-Recon]]
 
@@ -177,6 +178,10 @@ SNMPSSH
 SNMPSSH-TRAP 	
 //dafault 5162 	
 //SNMP Notification over SSH Transport Model 	
+
+## 5985-6 - WinRM
+Windows Remote Management Protocol ports
+See [[Evil-winrm-Cheatsheet]]
 
 ## Pando-pub
 7680/tcp
