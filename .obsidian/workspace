@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Cryptography/Cracking-Files.md",
+            "file": "Services/Intrusion-Prevention-Systems.md",
             "mode": "source",
             "source": false
           }
@@ -53,7 +53,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 396.5
+    "width": 258.5
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cryptography/Cracking-Files.md",
+                "file": "Services/Intrusion-Prevention-Systems.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "ce97c9857ea8d559",
   "lastOpenFiles": [
-    "Web-Hacking/Content-Discovery/FFUF-Cheatsheet.md",
-    "Tools/Useful-Software/Searching-Files.md",
-    "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Privilege-Escalation.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation.md",
-    "Windows/Active-Directory/Active-Directory-Default-Security-Groups-Table.md",
-    "Windows/Windows-Concepts/Accounts-And-Groups/Windows-Accounts-Groups.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/PrivEsc-Important-Windows-Location.md",
-    "Tools/Useful-Software/Neo4j-And-Bloodhound-Guide.md",
-    "Tools/Shells/Evil-winrm-Cheatsheet.md",
-    "Tools/Useful-Software/Github-guide.md"
+    "Services/Snort/Snort.md",
+    "Services/Intrusion-Prevention-Systems.md",
+    "Services/Intrusion-Detection-Systems.md",
+    "Networks/Evading-IPS-And-IDS.md",
+    "Post-Exploitation/Foothold/Reverse-Shells.md",
+    "Post-Exploitation/Lateral-Movement/Active-Directory-Lateral-Movement.md",
+    "Brain-Hacking/Exercise.md",
+    "Brain-Hacking/Improve-Your-Learning.md",
+    "Cryptography/Cracking-Files.md",
+    "Web-Hacking/Content-Discovery/FFUF-Cheatsheet.md"
   ]
 }

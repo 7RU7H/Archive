@@ -1,5 +1,5 @@
 # Evading-IPS-And-IDS
-
+Visit the [[Intrusion-Detection-Systems]] and [[Intrusion-Prevention-Systems]] articles for more
 ## Definitions
 
 IPS = Intrusion Prevention System
@@ -10,7 +10,8 @@ NIDS = Host-based-IDS
 Network Traffic and Host activity: is either Benign | Malicious traffic.
 
 Signature-based: Signatures of known maliciou traffic fed into IDS.
-Anomaly-based: Regular traffic model, for IDS to detect anomalies.
+Anomaly/Behaviour-based: Regular traffic model, for IDS to detect anomalies.
+Policy-based: Detect based on policy violations
 
 ## IDS/IPS each have rule syntax:
 Snort uses:
