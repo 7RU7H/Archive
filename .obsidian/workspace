@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Services/Intrusion-Prevention-Systems.md",
+            "file": "Services/Docker/Docker-Hacking.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Services/Intrusion-Prevention-Systems.md",
+                "file": "Services/Docker/Docker-Hacking.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "ce97c9857ea8d559",
   "lastOpenFiles": [
-    "Services/Snort/Snort.md",
-    "Services/Intrusion-Prevention-Systems.md",
-    "Services/Intrusion-Detection-Systems.md",
-    "Networks/Evading-IPS-And-IDS.md",
+    "Services/Docker/Intro-To-Docker.md",
+    "Services/Docker/Docker-Hacking.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/PrvEsc-Important-Linux-Locations.md",
+    "Virtualization/VirtualBox-Windows-10-VM.md",
+    "Post-Exploitation/File-Transfers/Linux-File-Transfers.md",
     "Post-Exploitation/Foothold/Reverse-Shells.md",
-    "Post-Exploitation/Lateral-Movement/Active-Directory-Lateral-Movement.md",
-    "Brain-Hacking/Exercise.md",
-    "Brain-Hacking/Improve-Your-Learning.md",
-    "Cryptography/Cracking-Files.md",
-    "Web-Hacking/Content-Discovery/FFUF-Cheatsheet.md"
+    "Post-Exploitation/Foothold/Shells.md",
+    "Post-Exploitation/File-Transfers/File-Transfers.md",
+    "Post-Exploitation/File-Transfers/Windows-File-Transfers.md"
   ]
 }

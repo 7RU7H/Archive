@@ -41,7 +41,7 @@ THESE are values that add together read+write+exec = (1+2+4) -> 777
 +S	just setuid flag set
 
 chown :group
-chown user
+chown user:user
 
 
 comm		#compare files

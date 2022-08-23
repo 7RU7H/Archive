@@ -42,8 +42,6 @@ systemctl stop network-manager
 ## Airmon-ng
 
 ```bash
- 
-
 airmon-ng start wlan<NUM> # Put into monitor mode
 airmon-ng stop wlan<NUM> # End monitor mode
 ```
