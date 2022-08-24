@@ -4,9 +4,23 @@ During preperation for my OSCP the trials and tribulations of making a VM to to 
 
 ## Downloading..
 
-ISO's sometimes seem to work, it worked for my [[Active-Directory-Lab]] making, but [Here(https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/)]
+ISO's sometimes seem to work, it worked for my [[Active-Directory-Lab]] making, but [Here](https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/)]
 ![](windows-vm-download.png)
 
+## Converting the Disk type
+From [howtogeek](https://www.howtogeek.com/312456/how-to-convert-between-fixed-and-dynamic-disks-in-virtualbox/)
+
+Windows,
+```powershell
+VBoxManage.exe list hdds
+
+# From fixed to dynamic
+VBoxManage.exe clonemedium disk "C:\path\to\source.vdi" "C:\path\to\destination.vdi" –variant Standard
+# To dynamic from fixed
+VBoxManage.exe clonemedium disk "C:\path\to\source.vdi" "C:\path\to\destination.vdi" –variant Fixed
+```
+
+## Changing Disk Size
 Change the disk size `File -> Virtual Media Manager`
 ![disksize](windows-vm-change-disk-size.png)
 
@@ -25,10 +39,21 @@ Change the Drive type to optimise
 and enable: `Use Host I/O Cache`
 ![hostio](windows-vm-host-io.png)
 
+
 # Installation and Post
 Installation is simple if you want to be. It is a simple click through unless you want lots of partitions and generally turn off as much telemetry stuff as you can. Next suggestion is to Debloat it with one of the scripts on Github.
 
-The default user is has the password `Passw0rd!`
+If you used the Edge Developer, the default user is has the password `Passw0rd!`
+
+```powershell
+net user /add <user> password
+net localgroup <preferedGroup> <user> /add
+# Remove the default user
+net user /del <user>
+net localgroup <usersfromgroupsyoudontwantpartof> <users> /del
+```
+
+
 
 ## Reference
 

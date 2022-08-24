@@ -41,7 +41,13 @@ dir 		Displays a list of files and subdirectories in a directory.
 
 tree		Graph of Directories
 	/F	To see files
-forfiles	Selects a file (or set of files) and executes a command on that file. This is helpful for batch jobs.
+forfiles	# Selects a file (or set of files) and executes a command on that file. This is helpful for batch jobs.
+/P          # Path
+/S          # Recursive Search
+/M          # Match Pattern
+/c "cmd /c echo @path" # Do a command, various @variables see /?
+forfiles /P C:\path  /S /M *.conf /c "cmd /c echo @path"
+
 
 echo 		Displays messages, or turns command echoing on or off.
 	echo 2> Create an empty file
@@ -63,8 +69,14 @@ findstr 	Searches for strings in files.
 mkdir 		Creates a directory.
 mklink		Make a symbolic linking hard(/h)or soft(shortcuts)
 more 		Displays output one screen at a time.
-ren 		Renames a file or files.
-rmdir 		Removes a directory.
+
+
+net # Very important command
+
+
+ren 		# Renames a file or files.
+rmdir 		# Removes a directory.
+	/S      # Recursively remove 
 type 		Displays the contents of a text file.
 runas		
 	/user:Administrator "cmd"

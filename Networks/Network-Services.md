@@ -164,9 +164,10 @@ umount $ip:/local/file/path
 `mysql -h ip -u user -p`
 
 ## 3389 (TCP) - RDP
-```
+```bash
 remmina
-xfreerdp 
+xfreerdp /u:$username /p:$Password /v:$IP
+rdesktop $ip
 ```
 
 ## 5000 - Docker

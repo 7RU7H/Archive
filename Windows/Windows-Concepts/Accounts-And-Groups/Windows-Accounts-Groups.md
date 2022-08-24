@@ -1,5 +1,13 @@
 # Accounts and Groups
 
+```powershell
+net user /add <user> password
+net localgroup <preferedGroup> <user> /add
+net user /del <user>
+net localgroup <usersfromgroupsyoudontwantpartof> <users> /del
+```
+
+
 ## Account SID simplified format
 NAME |SID	
 --- | ---
