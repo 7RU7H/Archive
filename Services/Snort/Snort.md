@@ -21,6 +21,51 @@ For more information regarding IDS and IPS systems view the articles [[Intrusion
 - NIDS mode
 - NIPS mode
 
+## Utility
+
+Version and .conf testing
+```bash
+snort -V # Version
+snort -h # HELP!
+# Test -T the -c .conf
+sudo snort -c /etc/snort/snort.conf -T # -q # for quiet mode
+```
+
+## Sniffing Mode 
+```bash
+-v # Verbose
+snort -d  # Display packet data
+snort -de # Also Display link-layer headers
+snort -v -i eth0 # Interface to sniff -plus Verbose
+snort -X # Display full packet details in HEX
+```
+
+## Logging Mode
+
+Default log directory is ` /var/log/snort`; beware linux file ownership.
+`sudo chown $user file`, `sudo chown $username -R directory`
+
+```bash 
+snort -l # Log and alert output directory - default is /var/log/snort
+snort -K ASCII # Log packets in ASCII format
+snort -r # Read dumped logs in Snort
+snort -n # Specify Number of packets to read
+# Examples
+snort -dev -l . # Log to current directory
+snort -dev -K ASCII -l . # Log to current directory in ASCII
+snort -r $logname.log # Read with snort
+tcpdump -r $logname.log -ntc 10 # Read with tcpdump
+# Wireshark can also read these logs, filter with example options for BPF:
+snort -r $logname.log -X 
+snort -r $logname.log icmp # BPF filter
+snort -r $logname.log tcp # BPF filter
+snort -r $logname.log 'udp and port 53' # BPF filters
+snort -r $logname.log -n 10 # Process only the first 10 lines
+snort -r $logname.log -n 10 -vxde # As above with all sniffing parameters
+```
+
+
+
 ## References
 
 [Snort](https://www.snort.org/)

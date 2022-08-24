@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Wireless-Hacking/WIFI-Hacking.md",
+            "file": "Services/Snort/Snort.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Wireless-Hacking/WIFI-Hacking.md",
+                "file": "Services/Snort/Snort.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,6 +89,7 @@
   },
   "active": "ce97c9857ea8d559",
   "lastOpenFiles": [
+    "Wireless-Hacking/WIFI-Hacking.md",
     "Services/Docker/Docker-Hacking.md",
     "Services/Docker/Intro-To-Docker.md",
     "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
@@ -97,7 +98,6 @@
     "Post-Exploitation/File-Transfers/Linux-File-Transfers.md",
     "Post-Exploitation/Foothold/Reverse-Shells.md",
     "Post-Exploitation/Foothold/Shells.md",
-    "Post-Exploitation/File-Transfers/File-Transfers.md",
-    "Post-Exploitation/File-Transfers/Windows-File-Transfers.md"
+    "Post-Exploitation/File-Transfers/File-Transfers.md"
   ]
 }
