@@ -1,5 +1,5 @@
 # Website recon
-Part of [[Web-App-Hacking-Methodology]] or for [[Active-Directory-Enumeration]] as part of [[Redteam-Checklist]] and [[Phishing]]
+Part of [[Web-App-Hacking-Methodology]] or for [[Active-Directory-Enumeration-Defined]] as part of [[Redteam-Checklist]] and [[Phishing]]
 
 [[Web-Hacking-Checklist]] and review sites look for:
 1. Staff names

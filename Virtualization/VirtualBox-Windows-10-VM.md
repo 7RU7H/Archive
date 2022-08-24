@@ -7,6 +7,9 @@ During preperation for my OSCP the trials and tribulations of making a VM to to 
 ISO's sometimes seem to work, it worked for my [[Active-Directory-Lab]] making, but [Here(https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/)]
 ![](windows-vm-download.png)
 
+Change the disk size `File -> Virtual Media Manager`
+![disksize](windows-vm-change-disk-size.png)
+
 ## Prior to Install
 
 Enable the 3D acceleration for least whining from GPU related issues
@@ -25,6 +28,9 @@ and enable: `Use Host I/O Cache`
 # Installation and Post
 Installation is simple if you want to be. It is a simple click through unless you want lots of partitions and generally turn off as much telemetry stuff as you can. Next suggestion is to Debloat it with one of the scripts on Github.
 
+The default user is has the password `Passw0rd!`
+
 ## Reference
 
 [This article SAVED me from myself](https://www.sysnettechsolutions.com/en/install-windows-10-in-oracle-vm-virtualbox/)
+[Disk size increase](https://recoverit.wondershare.com/computer-problems/increase-virtualbox-disk-size.html)

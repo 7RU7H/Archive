@@ -9,7 +9,19 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Services/Snort/Snort.md",
+            "file": "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      },
+      {
+        "id": "d29c74fe09b3746f",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Post-Exploitation/Foothold/Active-Directory/Active-Directory-Enumeration-Cheatsheet.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Services/Snort/Snort.md",
+                "file": "Post-Exploitation/Foothold/Active-Directory/Active-Directory-Enumeration-Cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -87,17 +99,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "ce97c9857ea8d559",
+  "active": "d29c74fe09b3746f",
   "lastOpenFiles": [
-    "Wireless-Hacking/WIFI-Hacking.md",
-    "Services/Docker/Docker-Hacking.md",
-    "Services/Docker/Intro-To-Docker.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/PrvEsc-Important-Linux-Locations.md",
     "Virtualization/VirtualBox-Windows-10-VM.md",
-    "Post-Exploitation/File-Transfers/Linux-File-Transfers.md",
-    "Post-Exploitation/Foothold/Reverse-Shells.md",
-    "Post-Exploitation/Foothold/Shells.md",
-    "Post-Exploitation/File-Transfers/File-Transfers.md"
+    "Post-Exploitation/Foothold/Active-Directory/Active-Directory-Enumeration-Cheatsheet.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation.md",
+    "Post-Exploitation/Foothold/Active-Directory/Active-Directory-Enumeration-Defined.md",
+    "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Privilege-Escalation.md",
+    "Post-Exploitation/Foothold/Active-Directory/Active-Directory-Footholding.md",
+    "Post-Exploitation/Foothold/Foothold-Enumeration.md",
+    "Services/Snort/Snort.md",
+    "Wireless-Hacking/WIFI-Hacking.md",
+    "Services/Docker/Docker-Hacking.md"
   ]
 }

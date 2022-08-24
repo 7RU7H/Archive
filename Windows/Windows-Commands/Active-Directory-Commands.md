@@ -1,5 +1,5 @@
 # Active Directory Commands
-For exploitation see [[AD-Exploitation-Hub]] or general theory and definitions [[Active-Directory-Defined]]. For enumeration see [[Active-Directory-Enumeration]] or for Privilege Escalation see [Active-Directory-Privilege-Escalation]].
+For exploitation see [[AD-Exploitation-Hub]] or general theory and definitions [[Active-Directory-Defined]]. For enumeration see [[Active-Directory-Enumeration-Defined]] or for Privilege Escalation see [Active-Directory-Privilege-Escalation]].
 
 ## BEWARE Active Directory cmdlets are only installed by default on Domain Controllers
 ```powershell
