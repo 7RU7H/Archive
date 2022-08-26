@@ -1,7 +1,7 @@
 # Useful Python(3 only)
 
 This is a condensed and *Hacking Themed* resource for python.
-Remember with python [you need a ruler for tab indentatio](https://www.youtube.com/watch?v=YnL9vAFphmE) and [sometimes we have a competition to write the longest list comprehension...and sometimes it's in production...and sometimes we don't call it a competition but work](https://www.youtube.com/watch?v=BgxklT94W0I) which requires a [phd](https://www.youtube.com/watch?v=xyrgkui0uCA). This like [xinyMinutes](https://learnxinyminutes.com/docs/python) with most hacking theme and base of things I have found or used.
+Remember with python [you need a ruler for tab indentation](https://www.youtube.com/watch?v=YnL9vAFphmE) and [sometimes we have a competition to write the longest list comprehension...and sometimes it's in production...and sometimes we don't call it a competition but work](https://www.youtube.com/watch?v=BgxklT94W0I) which requires a [phd](https://www.youtube.com/watch?v=xyrgkui0uCA). This like [xinyMinutes](https://learnxinyminutes.com/docs/python) with most hacking theme and base of things I have found or used.
 
 # Basics
 ### Fundamentals

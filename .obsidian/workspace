@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Windows/Active-Directory/Active-Directory-Administration.md",
+            "file": "Cryptography/RSA-Encryption.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Windows/Active-Directory/Active-Directory-Administration.md",
+                "file": "Cryptography/RSA-Encryption.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "dfb66606244631dd",
   "lastOpenFiles": [
-    "Windows/Active-Directory/Active-Directory-Defined.md",
+    "Coding-Scripting-Programming/Python/Useful_Python.md",
+    "Cryptography/RSA-Encryption.md",
+    "Cryptography/Cracking-Files.md",
+    "Coding-Scripting-Programming/Python/Python-Network-Scripting.md",
     "Windows/Active-Directory/Active-Directory-Administration.md",
+    "Windows/Active-Directory/Active-Directory-Defined.md",
     "Windows/Active-Directory/Active-Directory-Default-Security-Groups-Table.md",
     "Tools/Impacket/Impacket-Cheatsheet.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/wesng.md",
-    "Post-Exploitation/Privilege-Escalation/Privilege-Escalation-Defined.md",
-    "Coding-Scripting-Programming/Go/Golang.md",
-    "Tools/Useful-Software/UPX.md",
-    "Tools/Useful-Software/Chisel.md"
+    "Post-Exploitation/Privilege-Escalation/Windows/wesng.md"
   ]
 }
