@@ -40,23 +40,10 @@ Alice can recover m from c by using her private key exponent d by computing
 
 Given m, she can recover the original message M by reversing the padding scheme.
 
-- **Irregular Decryption**
 
-For the Brainfuck machine avaliable on HackTheBox the challenge involves decrypting a RSA key with all the components. This is also provides a great explanation as to why private keys and there parts in software, memory or store away unsafely is a bad idea for developer or handlers of data. 
-
-[[Useful_Python]] for help if required.
-
-
-
-To decrypt RSA [StackOverFlow](https://stackoverflow.com/questions/58750417/how-to-decrypt-an-rsa-encryption) or 
-[Euler constant with Python](https://datagy.io/python-e-euler/)
-[SageMath FAQ](https://doc.sagemath.org/html/en/faq/faq-usage.html)
 
 
 
 ## References
 [Primality test Wikipedia article](https://en.wikipedia.org/wiki/Primality_test)
 [RSA Wikipedia article](https://en.wikipedia.org/wiki/RSA_(cryptosystem)#Operation)
-[StackOverFlow](https://stackoverflow.com/questions/58750417/how-to-decrypt-an-rsa-encryption)
-[Euler constant with Python](https://datagy.io/python-e-euler/)
-[Python Math](https://docs.python.org/3/library/math.html)
