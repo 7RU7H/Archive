@@ -1,11 +1,11 @@
 # ACTIVE DIRECTORY
 
-This is 101 ground-up and top-down explanation information cheatsheet and a hub for all concepts I have found researching Active Directory. For [[AD-Exploitation-Hub]] and further more specified reading follow the link, for [[Active-Directory-Privilege-Escalation]]. If you want to build AD go [[Active-Directory-Lab]].
+This is 101 ground-up and top-down explanation information cheatsheet and a hub for all concepts I have found researching Active Directory. For [[AD-Exploitation-Hub]] and further more specified reading follow the link, for [[Active-Directory-Privilege-Escalation]]. If you want to build AD go [[Active-Directory-Lab]]. 
 
 
 ## AD Defined:
 
-Active Directory or Active Directory Directory Services(ADDS) is a directory service for Windows Domain Networks.  Microsoft scalable centralised IT management, authentication and authorization framework. An Active Directory network a domain that hold a collection of servers and machines. Location, security and many other aspects make up a rational for a specific architecture of forests, trees, domains and the organisation units are each connected and how they are allowed to interact.
+Active Directory or Active Directory Directory Services(ADDS) is a directory service for Windows Domain Networks. Microsoft scalable centralised IT management, authentication and authorization framework. Active Directory is a domain that is centralised collection of users and machines in network, AD is run from the Domain Controll server that runs AD services. Location, security and many other aspects make up a rational for a specific architecture of forests, trees, domains and the organisation units are each connected and how they are allowed to interact.
 
 AD Components:  
 1. Domain Controllers - Windows 2000-20* server with ADDS installed
@@ -100,9 +100,31 @@ GPOs in AD work by each domain-joined computer, updated from the DC **EVERY**90m
 
 ### Objects
 
-Objects are defined as users, groups, printers, computers, shares; Microsoft love Object Oriented everything.
+Objects are defined as users, groups, printers, computers, shares; Microsoft love Object Oriented everything. The default containers:
+
+OU Container Name | Description
+--- | ---
+Builtin | Windows default groups
+Computers | Any machine that is domain joined
+Domain Controllers | Default OU containing the network DC
+Users | Defult users and groups applicable to domain wide context
+Manage Service Accounts | Accounts used by services in the domain
+
+**OUs are not Security Groups and Security Groups are not OUs.**
+Security Groups used to **assign permissions** to shared resources.
+OUs are for **applying policies** 
+
+#### Machine
+
+Machines are objects in Active Directory are **objects** known security principals (see [Documentation](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/manage/understand-security-principals)) and are assign an account with limit rights within the domain. Naming conventions `( machine name ) DC01 -> DC01$ ( machine account )`  
+
+Machine Account passwords are automatically rotated out and are generally comprised of 120 random characters.
 
 #### Active Directory Users
+
+Users are either people or services, Users are **objects** known security principals (see [Documentation](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/manage/understand-security-principals))
+
+On the DC use `Search -> Active Directory Users and Computers` to configure users, groups or machines
 
 ##### Domain Admins 
 
@@ -148,21 +170,34 @@ Get-ADUser <user>
 
 Authorization process is controlled by membership in Active Directory Groups, for scalablity and dynamism
 Group types:
-	Distribution Groups: used only to define email lists - No access rights or permission abilities, useful for enumeration 
-	Security Groups: used to assign permissions to shared resources.
+- Distribution Groups: used only to define email lists - No access rights or permission abilities, useful for enumeration 
+- Security Groups: used to assign permissions to shared resources.
+
+
+For incomplete list for demonstrative purposes:
+Security Group | Description
+--- | ---
+Domain Admins | Administrative Privileges over entire domain, including DC
+Server Operators |  User that can administer Domain Controller - cannot change any administrative group memberships
+Backup Operators | User that can access any file(ignoring permissions) - useed for data backups
+Account Operators | User can create modify other accounts in the domain
+Domain Users | Includes all existing user accounts in the domain
+Domain Computer | Includes all existing computer in the domain
+Domain Controllers | Includes all existing DCs on the domain
+See the table of [[Active-Directory-Default-Security-Groups-Table]] 
+
+
+
 
 For Active Directory, there are two types of administrative responsibilities:
-Service administrators:
-Responsible for maintaining and delivering Active Directory Domain Services (AD DS), including managing domain controllers and configuring the AD DS.
-Data administrators:
-Responsible for maintaining the data that is stored in AD DS and on domain member servers and workstations.
+1. Service administrators:
+	- Responsible for maintaining and delivering Active Directory Domain Services (AD DS), including managing domain controllers and configuring the AD DS.
+
+2. Data administrators:
+	- Responsible for maintaining the data that is stored in AD DS and on domain member servers and workstations.
 ```
 Get-ADGroupMember <groupname> -recursive
 ```
-
-##### Default Security Groups
-
-See the table of [[Active-Directory-Default-Security-Groups-Table]]
 
 ### Domain Services
 
@@ -248,6 +283,7 @@ Large organizations and enterprises often use added products and features which 
 -   **Service Long Term Secret Key (Service LT Key)** - The service key is based on the service account. It is used to encrypt the service portion of the service ticket and sign the PAC.
 -   **Session Key** - Issued by the KDC when a TGT is issued. The user will provide the session key to the KDC along with the TGT when requesting a service ticket.
 -   **Privilege Attribute Certificate (PAC)** - The PAC holds all of the user's relevant information, it is sent along with the TGT to the KDC to be signed by the Target LT Key and the KDC LT Key in order to validate the user.
+-  **Security principals** - Security principals are any entity that can be authenticated by the operating system
 
 ## References
 [LDAP Wiki](https://en.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol)
@@ -261,3 +297,4 @@ Large organizations and enterprises often use added products and features which 
 [IPv6](https://en.wikipedia.org/wiki/IPv6 "IPv6") 
 [NetBIOS](https://networkencyclopedia.com/netbios/) 
 [DHCP](https://en.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol "Dynamic Host Configuration Protocol")
+[Security Principle](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/manage/understand-security-principals)

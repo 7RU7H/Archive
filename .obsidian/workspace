@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Coding-Scripting-Programming/Go/Golang.md",
+            "file": "Windows/Active-Directory/Active-Directory-Administration.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "cpu",
+                "query": "wesng",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Coding-Scripting-Programming/Go/Golang.md",
+                "file": "Windows/Active-Directory/Active-Directory-Administration.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "dfb66606244631dd",
   "lastOpenFiles": [
-    "Tools/Useful-Software/UPX.md",
-    "Tools/Useful-Software/Chisel.md",
-    "Coding-Scripting-Programming/Go/Golang.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
-    "Post-Exploitation/File-Transfers/Linux-File-Transfers.md",
-    "Post-Exploitation/Persistence/Active-Directory-Persistence.md",
-    "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Privilege-Escalation.md",
-    "Virtualization/VirtualBox-Windows-10-VM.md",
+    "Windows/Active-Directory/Active-Directory-Defined.md",
+    "Windows/Active-Directory/Active-Directory-Administration.md",
+    "Windows/Active-Directory/Active-Directory-Default-Security-Groups-Table.md",
+    "Tools/Impacket/Impacket-Cheatsheet.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/PrivEsc-Important-Windows-Location.md"
+    "Post-Exploitation/Privilege-Escalation/Windows/wesng.md",
+    "Post-Exploitation/Privilege-Escalation/Privilege-Escalation-Defined.md",
+    "Coding-Scripting-Programming/Go/Golang.md",
+    "Tools/Useful-Software/UPX.md",
+    "Tools/Useful-Software/Chisel.md"
   ]
 }
