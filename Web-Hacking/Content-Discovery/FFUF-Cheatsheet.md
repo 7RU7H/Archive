@@ -12,7 +12,8 @@ The `-t` flag can control the amount threads on ffuf, careful of causing an negl
 
 You can use two wordlists using FUZZ_1 FUZZ_2
 ```bash
-
+where has this gone?
+woops - will update soon
 ```
 
 ## Wordlists and Use

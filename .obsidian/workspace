@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Cryptography/Cryptography-Gone-Wrong.md",
+            "file": "Windows/Active-Directory/Active-Directory-Administration.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cryptography/Cryptography-Gone-Wrong.md",
+                "file": "Windows/Active-Directory/Active-Directory-Administration.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "dfb66606244631dd",
   "lastOpenFiles": [
+    "Windows/Active-Directory/Active-Directory-Defined.md",
+    "Web-Hacking/Content-Discovery/FFUF-Cheatsheet.md",
+    "Exploitation/CVEs/Shellshock.md",
+    "Virtualization/Lab-Making/Active-Directory-Lab.md",
+    "Cryptography/Cryptography-Gone-Wrong.md",
     "Tools/Useful-Software/Puzzle-Solution-Tools.md",
     "Coding-Scripting-Programming/Python/Useful_Python.md",
-    "Cryptography/Cryptography-Gone-Wrong.md",
     "Cryptography/RSA-Encryption.md",
     "Cryptography/Cracking-Files.md",
-    "Coding-Scripting-Programming/Python/Python-Network-Scripting.md",
-    "Windows/Active-Directory/Active-Directory-Administration.md",
-    "Windows/Active-Directory/Active-Directory-Defined.md",
-    "Windows/Active-Directory/Active-Directory-Default-Security-Groups-Table.md",
-    "Tools/Impacket/Impacket-Cheatsheet.md"
+    "Coding-Scripting-Programming/Python/Python-Network-Scripting.md"
   ]
 }

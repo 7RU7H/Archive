@@ -8,7 +8,7 @@ Having started out never Adminstating AD to taking just trying to take OSCP(with
 1. Red flags indicated with **!!RED-FLAG!!** - *"DO X OR BE SQUARE"**
 
 
-## Configuring Users, groups or machines
+## Configuring Users, Groups and Machines
 On the DC use `Search -> Active Directory Users and Computers` to configure users, groups or machines
 
 #### Delegation
@@ -18,3 +18,19 @@ On the DC use `Search -> Active Directory Users and Computers` to configure user
 #### Deleting an OU
 OUs are protected against accidental deletion, to delete:  `View -> Advanced Features -> Object -> Disable: Project object from accidental deletion`
 
+#### Changing a Password
+```powershell
+Set-ADAccountPassword <username> -Reset -NewPassword (Read-Host -AsSecureString -Prompt 'New Password') -Verbose
+# Force password reset on next logon
+Set-ADUser -ChangePasswordAtLogon $true -Identity <username> -Verbose
+```
+
+
+#### Machine Organisation
+Segregating devices according to their use
+- May prevent over generalisation of a group policy
+-  Seperating "Bring your own devices"
+
+## Configuring Group Policy
+
+On the DC use `Search -> Group Policy Management` to configure group policy
