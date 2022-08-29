@@ -25,12 +25,44 @@ Set-ADAccountPassword <username> -Reset -NewPassword (Read-Host -AsSecureString 
 Set-ADUser -ChangePasswordAtLogon $true -Identity <username> -Verbose
 ```
 
-
 #### Machine Organisation
 Segregating devices according to their use
 - May prevent over generalisation of a group policy
--  Seperating "Bring your own devices"
+- Seperating "Bring your own devices"
 
 ## Configuring Group Policy
 
-On the DC use `Search -> Group Policy Management` to configure group policy
+```powershell
+gpupdate /force
+```
+
+On the DC use `Search -> Group Policy Management` to configure group policy. The `Group Policy Management` application displays the complete OU hierarchy. To configure Group policies:
+1. Create a GPO under Group Policy Objects 
+	1. Link the GPO to where policies are required to apply.
+2. `Right click <Name> Domain Policy -> Edit`
+	1. This will open the `Group Policy Management Editor` another directory tree of settings
+
+Important Click-ables by tab:
+- Scope
+	- Security Filtering - Filter applicability of GPO to a set of Objects
+- Details
+	- GPO Status - Enabled, All settings disabled, Computer configuration settings disabled, User configuration settings disabled
+- Settings
+	- Actual contents of GPO#
+
+#### GPO distribution
+GPO are distributed to the network share called `SYSVOL`, which is store in the DC, typically all users in  the domain have access to this share. Its default location is `C:\Windows\SYSVOL\sysvol`.
+
+## Authentication
+
+- NetNTLM is considered obselete for good reason.
+
+## Trees
+
+Domain Admins should not have Enterprise Admin level Privileges
+
+## Trusts
+
+Trust Direction
+1. One-way trust is contrary to the access directoion
+2. Two-way trust relationships are mutually authorise users form the other. By default join mulitple domains under a tree or forest will form a wo-way trust relationship.

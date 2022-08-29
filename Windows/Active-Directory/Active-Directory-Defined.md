@@ -188,7 +188,6 @@ See the table of [[Active-Directory-Default-Security-Groups-Table]]
 
 
 
-
 For Active Directory, there are two types of administrative responsibilities:
 1. Service administrators:
 	- Responsible for maintaining and delivering Active Directory Domain Services (AD DS), including managing domain controllers and configuring the AD DS.
