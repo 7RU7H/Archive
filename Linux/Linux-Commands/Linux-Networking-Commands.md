@@ -1,34 +1,65 @@
 # Linux Networking Commands Current and Legacy
 For non-network related command see:[[Core-Linux-Commands]]
 
+
+## Places of interest
+
 ```bash
-# Places of interest
 /etc/network/interfaces
+/etc/hosts
+/etc/<OS-Dependent/resolve.conf
+```
 
 
+## ARP
+```bash
 arp
 # flags:	
 	-e	# default linux formatting
 	-n	# numerical address
 	-s 	# manually add addresses to the table
 	-d	# remove addresses from the table
+```
 
-dig domain	# [dns-host] [type] 	domain information groper, for observeing DNS name servers
-   @domain	# sepcify domain
+## Dig
+```bash
+# [dns-host] [type] 	domain information groper, for observeing DNS name servers
+dig -x $ip # Domain lookup
+dig @$ip domain -t  AXFR # DNS Zone tranfer
+```
 
+## Echo
+For activating IP forwarding, adding hosts and adding DNS servers
+```bash
+echo "1" > /proc/sys/net/ipv4/ip_forward
+echo "10.10.10.10 domain.com subdomain.domain.com" | sudo tee -a /etc/hosts
+echo "nameserver x.x.x.x" > /etc/resolve.conf
+
+```
+
+## FTP
+```bash
 ftp 
 	-n	# prevents autologon
 	-v	# Showd all responses
+```
 
+## Host
+```bash
+host $ip # Domain lookup
 host $flag $IP	# Host record
 	-t	# ns, a, mx, ptr, cname, txt -type of record
-
+host -t SRRV _<service>_ tcp.url.com # Doman SRV lookup
+host -l <domain> <namesvr> # DNS transfer
 
 hostname	# convert hostnames to IP addresses and vice-versa
 
 ifconfig	provides information on host (req. net-tools)
 # flags:
 
+```
+## IP 
+```bash
 ip
 # flags:
 	a|addr	for your address
@@ -37,7 +68,14 @@ ip
 # for IP  add new route ip/netmask device interface
 sudo ip route add ip/netmask dev eth1
 
+# Print existing VPN keys
+ip xfrm state list 
+# Add 'hidden' interface
+ip addr add <ip>/cidr> dev eth0
 
+```
+## IPtables
+```bash
 iptables
         -L
         -P chain policy		edit chain policy defaults			 
@@ -64,11 +102,16 @@ iptables
 #  Note that on older Linux kernels, this would show as --state instead of --ctstate.
 #  can be used to to create rules based on the type of connection made
 -m conntrack
-
 # to save iptables 
 iptables-save
 
-	 
+# run the builtin WIFI scanner
+iwlist <int> scan
+
+# List established connections
+lsof -i
+
+
 # Netstat for network and port status
 netstat/ss	# ss default on most linux distros
 # Sudo/doas will provider greater information!
@@ -104,20 +147,29 @@ traceroute 	trace the route to domain/ip
 # flags:	
 	-m	max number to hops
 
-scp 		transfer secure copy between two computers
-# for example
+# scp to transfer secure copy between two computers
 scp /file target@myhost.com:/directory
 
 sleep		good for linux system on network for the hanging of connection
+```
 
+# SMB
+See [[SMB-Recon-Cheatsheet]] for more tools and commands
+```bash
+smb//<ip>/share                 # Access Windows share
+share user x.x.x.x <sharename>$ # Mount windows share
+smbclient -U user \\\\<ip>\\<share> # Smb connect
+```
 
+```bash
 tcpdump 
 # flags: 
 	-r	specify file path read from
 	-w 	write to a file
 	<name>	protocol
 	
-
+# Kill a tcp connection
+tcpkill host <ip> and port <port>
 
 # SysV Init distros
 # BEWARE
@@ -154,4 +206,9 @@ known_hosts
 # 1. Remove the known_hosts file or entry to that server in the file or 2. add the -o stricthostkeychecking=no option to the ssh command. Remember that this file is a security mechanism to prevent an unauthorized host from eavesdropping on network traffic. In real-world practice, this mechanism should not be bypassed.
 ```
 
-
+## Change MAC Address
+```bash
+export MAC=xx:xx:xx:xx:xx:xx
+ifconfig <int> hw ether <MAC>
+macchanger -m <MAC> <int>
+```

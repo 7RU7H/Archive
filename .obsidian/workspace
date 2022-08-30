@@ -7,8 +7,12 @@
         "id": "dfb66606244631dd",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "Security-Enterprises/Blueteam/Blue-Team-Key-Documents.md",
+            "mode": "source",
+            "source": false
+          }
         }
       }
     ],
@@ -65,6 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Security-Enterprises/Blueteam/Blue-Team-Key-Documents.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -82,17 +87,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "ed8f63df71621be6",
+  "active": "dfb66606244631dd",
   "lastOpenFiles": [
+    "Security-Enterprises/Blueteam/Blueteam-Hub.md",
+    "Security-Enterprises/Blueteam/Linux-Blueteam.md",
+    "Security-Enterprises/Blueteam/Blue-Team-Key-Documents.md",
+    "Linux/Linux-Commands/Linux-Networking-Commands.md",
+    "Coding-Scripting-Programming/Perl/Useful_Perl.md",
+    "Post-Exploitation/Foothold/Reverse-Shells.md",
+    "Post-Exploitation/Foothold/Shells.md",
     "Exfiltration/Data-Exfiltration/Data-Exfiltration-Defined.md",
     "Exfiltration/Data-Exfiltration/Data-Exfiltration-Over-SSH.md",
-    "Exfiltration/File-Transfers/File-Transfers.md",
-    "Exfiltration/File-Transfers/Windows-File-Transfers.md",
-    "Exfiltration/File-Transfers/Linux-File-Transfers.md",
-    "Exfiltration/Data-Exfiltration/Data-Exfiltration-Over-TCP-Sockets.md",
-    "Networks/DNS-Leaking.md",
-    "Networks/TOR-Hidden-Services.md",
-    "Networks/Proxies.md",
-    "Networks/Network-Troubleshooting.md"
+    "Exfiltration/File-Transfers/File-Transfers.md"
   ]
 }

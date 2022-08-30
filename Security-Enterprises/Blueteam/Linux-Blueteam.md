@@ -7,5 +7,6 @@ Find all timestamps, checking for tampering of files that normally set to 000000
 find / -type f printf"%T+ %p\n" | grep -v 00000000
 ```
 
+
 ## References
 [Ippsec Compromised Video](https://www.youtube.com/watch?v=yaV09XCDDqI&t=2040)
