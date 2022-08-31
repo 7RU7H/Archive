@@ -4,7 +4,7 @@ Real world scenario is that an attacker controls a cloud web server an agent or 
 
 ## HTTP
 
-**HTTP Data Exfiltration will all be in plaintext and therefore not secure.**
+**HTTP Data Exfiltration will all be in plaintext and therefore not secure. If you use HTTPS it will be encrypted**
 
 1.  An attacker create a page to be a data handler on the web server.
 2.  A C2 agent or an attacker sends the data. 
@@ -36,7 +36,7 @@ sed -i 's/ /+/g' /tmp/http.bs64
 cat /tmp/http.bs64 | base64 -d | tar xvfz -
 ```
 
-## HTTPS 
+## Tunneling
 
 [neo-regeorg](https://github.com/L-codes/Neo-reGeorg) is the improve regeorg a tool for HTTP tunnel pivoting previously written in python 2.7.
 ```bash
