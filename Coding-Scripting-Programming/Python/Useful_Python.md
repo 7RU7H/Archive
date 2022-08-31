@@ -160,6 +160,12 @@ test = h2bin('''00 00 00 ''')
 [akshatmittal](https://gist.github.com/akshatmittal/10279360) updated from [exploitdb](https://www.exploit-db.com/exploits/32745)
 
 
+## With key word File I/O
+```python
+with open(wordlist, "r") as f:
+            words = f.read()
+```
+
 ### Nonlocal keyword
 ```python
 nonlocal thisnotglobalbutoutsidefunctionscoping se with care
