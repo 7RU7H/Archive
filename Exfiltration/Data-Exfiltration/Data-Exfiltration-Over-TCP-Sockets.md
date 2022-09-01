@@ -1,6 +1,6 @@
 # Data Exfiltration with - TCP Sockets
 
-Easy to detect as reliant on non-standard protocols only useful on network with no known secruity products.
+It uses the [[Transport-Layer-TCP]] protocol, but is easy to detect as reliant on non-standard protocols only useful on networks with no known secruity products.
 
 1. Attacker listening over TCP/8080
 2. Client connect to TCP/8080

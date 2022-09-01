@@ -9,7 +9,19 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Exfiltration/Data-Exfiltration/Data-Exfiltration-Over-HTTP-and-HTTPS.md",
+            "file": "Exfiltration/Data-Exfiltration/Data-Exfiltration-Defined.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      },
+      {
+        "id": "b863597eed81b5d1",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Networks/Network-Theory/Network-Protocols/Internet-Control-Messaging-Protocol.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exfiltration/Data-Exfiltration/Data-Exfiltration-Over-HTTP-and-HTTPS.md",
+                "file": "Exfiltration/Data-Exfiltration/Data-Exfiltration-Defined.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +101,15 @@
   },
   "active": "dfb66606244631dd",
   "lastOpenFiles": [
-    "Web-Hacking/Methodologies/Haddix-Methodology/Haddix-Methodology.md",
-    "Web-Hacking/File-Inclusion-And-Directory-Traversal/File-Inclusion-And-Directory-Traversal.md",
-    "Web-Hacking/Content-Discovery/FFUF-Cheatsheet.md",
-    "Web-Hacking/File-Inclusion-And-Directory-Traversal/DT-FI-Windows-Files.md",
-    "Cryptography/Password-Attacks/Default-Passwords-Data-Recovery-Table.md",
-    "Cryptography/Cryptography101.md",
-    "Exploitation/Creating-Malicious-WAV-files.md",
-    "Cryptography/Password-Attacks/Wordlist-Tools/Cewl-Cheatsheet.md",
-    "Coding-Scripting-Programming/PHP/Useful_PHP.md",
-    "Exfiltration/Data-Exfiltration/Data-Exfiltration-Over-HTTP-and-HTTPS.md"
+    "Exfiltration/Data-Exfiltration/Data-Exfiltration-Over-ICMP.md",
+    "Exfiltration/Data-Exfiltration/Data-Exfiltration-Defined.md",
+    "Coding-Scripting-Programming/Bash/Useful_Bash.md",
+    "Networks/Network-Theory/Network-Protocols/Internet-Control-Messaging-Protocol.md",
+    "Exfiltration/Data-Exfiltration/Data-Exfiltration-Over-HTTP-and-HTTPS.md",
+    "Exfiltration/Data-Exfiltration/Data-Exfiltration-Over-SSH.md",
+    "Exfiltration/Data-Exfiltration/Data-Exfiltration-Over-TCP-Sockets.md",
+    "Networks/Network-Theory/TCP-IP-Model.md",
+    "Networks/Network-Theory/Network-Protocols/Network-Protocols.md",
+    "Networks/Network-Theory/Network-Protocols/Dynamic-Host-Configuration-Protocol.md"
   ]
 }

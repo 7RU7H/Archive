@@ -48,7 +48,8 @@ Attacker -> Attack Server -- -- Target Network Security -- C2 Beacon on Target N
 ## Data Exfiltration
 [[Data-Exfiltration-Over-TCP-Sockets]]
 [[Data-Exfiltration-Over-SSH]]
-
+[[Data-Exfiltration-Over-HTTP-and-HTTPS]]
+[[Data-Exfiltration-Over-ICMP]]
 
 
 

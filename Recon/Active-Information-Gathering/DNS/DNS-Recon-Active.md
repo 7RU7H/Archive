@@ -1,5 +1,5 @@
 # DNS Active Recon
-[DNS](https://en.wikipedia.org/wiki/Domain_Name_System) is a distributed database responsible for translating domain names into IP addresses. [[DNS-Theory]] for conceptual stuff and for passive DNS recon [[DNS-Recon-Passive]]
+[DNS](https://en.wikipedia.org/wiki/Domain_Name_System) is a distributed database responsible for translating domain names into IP addresses. [[DNS-Defined]] for conceptual stuff and for passive DNS recon [[DNS-Recon-Passive]]
 
 ## Host lookup
 ```bash

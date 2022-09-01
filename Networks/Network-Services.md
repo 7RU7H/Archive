@@ -65,7 +65,7 @@ nc -nv $IP
 
 ## 53 - DNS
 Default port 53
-[[DNS-Theory]], [[DNS-Recon-Active]], [[DNS-Recon-Passive]]
+[[DNS-Defined]], [[DNS-Recon-Active]], [[DNS-Recon-Passive]]
 
 ## 69 - TFTP
 Stands for trivial file transfer protocol - UDP FTP
