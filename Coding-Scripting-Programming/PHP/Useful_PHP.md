@@ -15,7 +15,7 @@ php file.php
 ```
 
 ```PHP
-<php echo("Hello");phpinfo(); ?>
+<?php echo("Hello");phpinfo(); ?>
 ```
 
 
