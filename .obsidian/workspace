@@ -4,24 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "dfb66606244631dd",
+        "id": "62ac868e329cba66",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Exfiltration/Data-Exfiltration/Data-Exfiltration-Defined.md",
-            "mode": "source",
-            "source": false
-          }
-        }
-      },
-      {
-        "id": "b863597eed81b5d1",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Networks/Network-Theory/Network-Protocols/Internet-Control-Messaging-Protocol.md",
+            "file": "Linux/Linux-Concepts/Linux-Users-And-Groups.md",
             "mode": "source",
             "source": false
           }
@@ -81,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exfiltration/Data-Exfiltration/Data-Exfiltration-Defined.md",
+                "file": "Linux/Linux-Concepts/Linux-Users-And-Groups.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,17 +87,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "dfb66606244631dd",
+  "active": "62ac868e329cba66",
   "lastOpenFiles": [
-    "Exfiltration/Data-Exfiltration/Data-Exfiltration-Over-ICMP.md",
-    "Exfiltration/Data-Exfiltration/Data-Exfiltration-Defined.md",
-    "Coding-Scripting-Programming/Bash/Useful_Bash.md",
-    "Networks/Network-Theory/Network-Protocols/Internet-Control-Messaging-Protocol.md",
-    "Exfiltration/Data-Exfiltration/Data-Exfiltration-Over-HTTP-and-HTTPS.md",
-    "Exfiltration/Data-Exfiltration/Data-Exfiltration-Over-SSH.md",
-    "Exfiltration/Data-Exfiltration/Data-Exfiltration-Over-TCP-Sockets.md",
-    "Networks/Network-Theory/TCP-IP-Model.md",
-    "Networks/Network-Theory/Network-Protocols/Network-Protocols.md",
-    "Networks/Network-Theory/Network-Protocols/Dynamic-Host-Configuration-Protocol.md"
+    "Post-Exploitation/Foothold/Shells.md",
+    "Post-Exploitation/Foothold/Bind-And-Reverse-Shells-Defined.md",
+    "Post-Exploitation/Foothold/Reverse-Shells-Listing.md",
+    "Tools/Shells/Netcat-Cheatsheet.md",
+    "Hacker-Distros/Kali/Kali-CLI-Basics.md",
+    "Linux/Linux-Concepts/Linux-Users-And-Groups.md",
+    "Linux/Linux-Concepts/Linux-File-System.md",
+    "Linux/Linux-Concepts/Linux-Kernel.md",
+    "Linux/Linux-Concepts/Linux-Common-File-Extensions.md",
+    "Hacker-Distros/Kali/Kali.md"
   ]
 }

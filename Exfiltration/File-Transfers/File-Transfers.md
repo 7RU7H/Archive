@@ -4,7 +4,7 @@ Some methods are destructive and should be used with caution. All Post Exploitat
 1. For stealth and professionalism they could be found revealing foothold and potential abused for malicious individuals. Documenting each upload helps keep a inventory of use where and how, networks can get very large and it not ideal to have to traverse the entire network to remove one file you forgot to document and missed in cleaning up.
 2. Antivirus scans endpoint filesystems in search of pre-defined file signatures which are mapped from open/closed source tools in wide use from open resources like [Virus Total](https://www.virustotal.com/gui/home/upload). AV should alert System Adminstrators and will quarantine any offending binaries or scripts.
 
-Therefore its best practice to live off the land as regards to Post Exploitation only until a tool is needed to bypass or escalate further. For Shell related information see [[Shells]] and [[Reverse-Shells]] for various reverse shells and place to find more. For [[Windows-File-Transfers]] or [[Linux-File-Transfers]] follow the link the remainer of this article will include hosting methods
+Therefore its best practice to live off the land as regards to Post Exploitation only until a tool is needed to bypass or escalate further. For Shell related information see [[Shells]] and [[Reverse-Shells-Listing]] for various reverse shells and place to find more. For [[Windows-File-Transfers]] or [[Linux-File-Transfers]] follow the link the remainer of this article will include hosting methods
 
 ## PureFTPd
 ```bash
