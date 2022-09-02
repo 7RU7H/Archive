@@ -31,3 +31,7 @@ hydra -L users.txt -P passwords.txt $ip ldap2 -V -f 			# LDAP Brute Forcing
 
 ...F=incorrect:H=Cookie:...
 ```
+
+
+## References
+[Frizb's Hydra Cheatsheet(Original)](https://github.com/frizb/Hydra-Cheatsheet)

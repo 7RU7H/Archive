@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Exfiltration/Data-Exfiltration/Data-Exfiltration-Over-DNS.md",
+            "file": "Tools/Curl-Cheatsheet.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "php",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exfiltration/Data-Exfiltration/Data-Exfiltration-Over-DNS.md",
+                "file": "Tools/Curl-Cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "62ac868e329cba66",
   "lastOpenFiles": [
-    "Setup-DNS.md",
+    "Tools/Process-Hacker.md",
+    "Tools/Curl-Cheatsheet.md",
+    "Cryptography/Password-Attacks/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
+    "Cryptography/Default-Credentials/Pfsense-Default-Credentials.md",
     "Exfiltration/Data-Exfiltration/Data-Exfiltration-Over-DNS.md",
+    "Setup-DNS.md",
     "Exfiltration/Data-Exfiltration/Data-Exfiltration-Over-HTTP-and-HTTPS.md",
     "Exfiltration/Data-Exfiltration/Data-Exfiltration-Over-ICMP.md",
     "Exfiltration/Data-Exfiltration/Data-Exfiltration-Defined.md",
-    "Coding-Scripting-Programming/PHP/Useful_PHP.md",
-    "Web-Hacking/Content-Discovery/FFUF-Cheatsheet.md",
-    "Recon/Active-Information-Gathering/DNS/DNS-Recon-Active.md",
-    "Recon/Active-Information-Gathering/LDAP/LDAP-Recon.md",
-    "Recon/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md"
+    "Coding-Scripting-Programming/PHP/Useful_PHP.md"
   ]
 }
