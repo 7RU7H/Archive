@@ -267,3 +267,20 @@ for port in {1..65535}; do
 done
 echo "Done"
 ```
+
+
+## Check if Root/Sudo used
+From [StackOverFlow](https://stackoverflow.com/questions/42875809/checking-sudo-in-bash-script-with-if-statements)
+```bash
+if [[ "$EUID" = 0 ]]; then
+    echo "(1) Currently root"
+else
+    sudo -k # make sure to ask for password on next sudo
+    if sudo true; then
+        echo "(2) Correct password"
+    else
+        echo "(3) Incorrect password"
+        exit 1
+    fi
+fi
+```

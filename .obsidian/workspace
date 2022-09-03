@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Linux/Linux-Concepts/Linux-Permissions-and-Rights.md",
+            "file": "Coding-Scripting-Programming/Bash/Useful_Bash.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/Linux-Concepts/Linux-Permissions-and-Rights.md",
+                "file": "Coding-Scripting-Programming/Bash/Useful_Bash.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "62ac868e329cba66",
   "lastOpenFiles": [
+    "Web-Hacking/Content-Discovery/FFUF-Cheatsheet.md",
+    "Web-Hacking/Curl-Cheatsheet.md",
+    "Linux/Linux-Concepts/Linux-Permissions-and-Rights.md",
     "Linux/Linux-Concepts/Linux-Rights-Management.md",
     "Linux/Linux-Concepts/SELinux.md",
     "Linux/Linux-Concepts/Linux-Defined.md",
     "Linux/Linux-Concepts/Linux-Common-File-Extensions.md",
     "Linux/Linux-Concepts/Linux-Concepts.md",
     "Linux/Linux-Concepts/Linux-Users-And-Groups.md",
-    "Linux/Linux-Concepts/Linux-Permissions-and-Rights.md",
-    "Services/Databases/Database-Hacking.md",
-    "Coding-Scripting-Programming/Javascript/Useful_Javascript.md",
-    "Web-Hacking/Web-Concepts/HTTP-Defined.md"
+    "Services/Databases/Database-Hacking.md"
   ]
 }
