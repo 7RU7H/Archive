@@ -1,11 +1,11 @@
-# DNS 
+# DNS Defined
 
 ## Introduction
 
 Domain Name System([DNS](https://en.wikipedia.org/wiki/Domain_Name_System)) is a distributed database responsible for translating domain names into IP addresses. 
 
 ## Links
-[For Active Enumeration](DNS-Recon-Active.md)
+[For Active Enumeration](DNS-Recon-Active.md) and [for Passive Enumeration](DNS-Recon-Passive.md)
 
 ## Theory
 
@@ -31,10 +31,16 @@ These are used find specific hostname and IP addresses.
 
 DNS caching is used to store local copies of DNS records at various stages of the lookup process to improve performance. Browser have a separate DNS cache from  local DNS client. The  DNS record's cache lifespan is set by Domain Owner with the Time To Live (TTL) field of a DNS record.
 
+Record | Description
+--- | ---
+NS |  Nameserver records contain the name of the authoritative servers hosting the DNS records for a domain.
+A | Also known as a host record contains the IP address of a hostname 
+MX | Mail Exchange records contain the names of the email servers.
+PTR |  Pointer Records are used in reverse lookup zones and are used to find the records associated with an IP address.
+CNAME | Canonical Name Records are used to create aliases for other host records.
+TXT | Text records can contain any arbitrary data and can be used for various purposes, such as domain ownership verification.
 
-NS - Nameserver records contain the name of the authoritative servers hosting the DNS records for a domain.
-A - Also known as a host record contains the IP address of a hostname 
-MX - Mail Exchange records contain the names of the email servers.
-PTR - Pointer Records are used in reverse lookup zones and are used to find the records associated with an IP address.
-CNAME - Canonical Name Records are used to create aliases for other host records.
-TXT - Text records can contain any arbitrary data and can be used for various purposes, such as domain ownership verification.
+## DNS Limitations
+- It is not a transport protocol!
+-   The maximum length of the Fully Qualified FQDN domain name (including .separators) is 255 characters.
+-   The subdomain name (label) length must not exceed 63 characters (not including .com, .net, etc)
