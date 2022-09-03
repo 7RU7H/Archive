@@ -25,4 +25,4 @@ Althought there are many difference between distros a great wiki is the [ArchWik
 ## References
 [Linux Wiki](https://en.wikipedia.org/wiki/Linux)
 [GNU/Linux Naming Controversy](https://en.wikipedia.org/wiki/GNU/Linux_naming_controversy)
- [GNU](https://www.gnu.org/). 
+[GNU](https://www.gnu.org/). 

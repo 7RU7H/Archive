@@ -17,8 +17,15 @@ var cheese = {
 cheese.toString()
 ```
 
-Minification compresses JS files by removing unnecessary content: ws, comment, also with and as part of dev obfusaction.
+
+## Minification
+Minification compresses JS files by removing unnecessary content: ws, comment, also with and as part of dev obfusaction. Various JS library use various techniques to minified the source code, obfuscating JS is make the source code increbily slow. On top of it being JS... 
+
+JS beautifier is a good tool to de-minify
+
+
+## Files  
 
 Client side js files SHOULD NOT contain any secret values, passwords, encryption jeys or any "hidden" functionality - but when has that stop JS devs.
 
-Various JS library use various techniques to minified the source code, obfuscating JS is make the source code increbily slow. On top of it being JS.
+

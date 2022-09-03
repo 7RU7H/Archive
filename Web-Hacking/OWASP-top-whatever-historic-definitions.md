@@ -5,11 +5,10 @@ Similiar to other documents in this repository maximum of a couple of sentences 
  
 
 ## Broken Access control 	
-Given a level of authentication, inadequate security allowing unintended access or control to the machine, user accounts and system files. For admin panels see [[Web-App-Administration-Consoles]], or for [[File-Inclusion-And-Directory-Traversal]].
+Given a level of authentication, inadequate security allowing unintended access to, or control of the machine, user accounts and system files. For admin panels see [[Web-App-Administration-Consoles]], or for [[File-Inclusion-And-Directory-Traversal]].
 
 ## Cryptographic Failures
-Poor implementation of or lack of adequate cryptographic algorithms to protect data, or weak or faulty implementations.
-token cracking like [[JSON-web-tokens]], cookie cracking like [[Javascript-Cookie-Abuse]], man in the middle
+Poor implementation of or lack of adequate cryptographic algorithms to protect data, or weak or faulty implementations; token cracking like [[JSON-web-tokens]], cookie cracking like [[Javascript-Cookie-Abuse]], man in the middle
 
 
 ## Injection
@@ -17,7 +16,7 @@ Submitable data that is not properly filtered at an injection point: log in form
 SQLi see [[SQLInjection]], XSS(2021 included as an injection attack) [[XXS-Cheatsheet]], template-injection like: [[Server-Side-Template-Injection-Cheatsheet]]
 
 ## Insecure Desgin 
-Where the web application design is fundementally flawed.
+Where the web application design is fundementally flawed. OWASP *"An insecure design cannot be fixed by a perfect implementation as by definition, needed security controls were never created to defend against specific attacks"*
 
 ## Security Misconfiguration
 Mismanaged security configurations of web server stack, underlying os, databases, external services. No brufe force prevention or restrictions on [[Bypassing-Rate-Limits]]

@@ -1,5 +1,7 @@
 # Javascript Vulnerable Functions
-[Jokes aside](https://www.youtube.com/watch?v=Uo3cL4nrGOk), [[Javascript]]...
+For [[Useful_Javascript]]
+
+[Jokes aside](https://www.youtube.com/watch?v=Uo3cL4nrGOk), [[Useful_Javascript]]...
 
 ## Node.js
 

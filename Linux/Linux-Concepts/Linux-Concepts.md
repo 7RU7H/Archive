@@ -2,7 +2,7 @@
 For more specific articles:
 
 [[Linux-File-System]]
-[[Linux-Permissions]]
+[[Linux-Permissions-and-Rights]]
 [[Linux-Networking]]
 [[Linux-Network-Services]]
 [[Linux-Processes]]

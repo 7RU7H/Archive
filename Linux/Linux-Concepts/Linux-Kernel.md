@@ -25,7 +25,7 @@ For each Process the Kernel wil:
 For more see [[Linux-Processes]]
 
 ## Rights Management
-[[Linux-Permissions]]
+[[Linux-Permissions-and-Rights]]
 
 
 ## References
