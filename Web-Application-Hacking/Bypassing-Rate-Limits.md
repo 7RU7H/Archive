@@ -1,10 +1,10 @@
-# Bypassing Rate Limit s
+# Bypassing Rate Limits
 
 ## Abusing rule misconfigurations
 [infosec](https://infosecwriteups.com/bypassing-rate-limit-abusing-misconfiguration-rules-dcd38e4e1028)
 1. Trigger the rate limit algorithm purposefully then change ip or proxy.
 2. Figure out the intervals between requests being blocked
-3.  Try spoofing '127.0.0.1' with the same requests to see if except to 127.0.0.1 configuration is in place.
+3. Try spoofing '127.0.0.1' with the same requests to see if except to 127.0.0.1 configuration is in place.
 
 
 ## Bypassing with Header

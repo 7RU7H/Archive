@@ -2,18 +2,31 @@
 
 ## Walking the Website
 Mostly Ippsec inspired - use [[Burpsuite-Helpsheet]]
+0. `curl -L $url` for grepping 
 1. Check the Certificated - Contains email address
 2. Quick check for url: /index.(htlm/php)
-3. Check source for if page is Static or Dynamic
-5. Search `Ctrl + F` for languages
-6. Check Cookies
-7. Inspect Elements
-8. Request functionality
-9. Check for CMS and google dork it and its version on site  - README.md
-10. Check for API
-11. Default Credentials in Login pages
-12. CSRF tokens
+3.  `Ctrl + U` for source code
+	1. Check if page is Static or Dynamic
+4. Search `Ctrl + F` for languages
+5. Check Cookies
+6. Inspect Elements
+7. Request functionality
+8. Check for CMS and google dork it and its version on site  - README.md
+9. Check for API
+10. Default Credentials in Login pages
+11. CSRF tokens
+12. Change Request Types
 
+In the Background
+
+Fuzz for:
+1. Subdomains if there is a domain name
+2. Fuzz Directories for RCE injectable files
+3. Fuzz Parameters for [[OWASP-top-whatever-historic-definitions]]
+4. Fuzz for [[SQLInjection]]
+
+
+If you get banned DIrectory Busting, [[Bypassing-Rate-Limits]]
 
 Note and test:
 User suppliable input - Login forms, Search bars, Comment sections

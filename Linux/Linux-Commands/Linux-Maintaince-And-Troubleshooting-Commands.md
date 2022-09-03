@@ -23,15 +23,17 @@ pacman			is apt for arch
 add-apt-repository --remove ppa:PPA_Name/ppa
 apt remove
 lsb_release -a for version of unix
-
-
-# If packages are held back Debian
 ```
+
+
+##  If packages are held back Debian
+```bash
 sudo apt-get --with-new-pkgs upgrade
 sudo apt-get install <list of packages kept back>
+```
 
-
-
+## Disk Management
+```bash
 # du 		diskusage
 -a		list files with directory
 -h		human readable

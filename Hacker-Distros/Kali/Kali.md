@@ -38,7 +38,7 @@ Kali can be botted in UEFI mode but not secure boot. Disable secure boot.
 
 ## Post-Installation
 
-If for some reason use need Python2: [EoL Python ](https://www.kali.org/docs/general-use/using-eol-python-versions/)
+If for some reason need Python2: [EoL Python ](https://www.kali.org/docs/general-use/using-eol-python-versions/)
 
 
 ## Configuration

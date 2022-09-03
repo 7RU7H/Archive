@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "62ac868e329cba66",
+        "id": "51ad5402965ef8ae",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Coding-Scripting-Programming/Bash/Useful_Bash.md",
+            "file": "Web-Application-Hacking/Walking-Web-Applications/Web-Hacking-Checklist.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Coding-Scripting-Programming/Bash/Useful_Bash.md",
+                "file": "Web-Application-Hacking/Walking-Web-Applications/Web-Hacking-Checklist.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -87,17 +87,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "62ac868e329cba66",
+  "active": "51ad5402965ef8ae",
   "lastOpenFiles": [
-    "Web-Hacking/Content-Discovery/FFUF-Cheatsheet.md",
-    "Web-Hacking/Curl-Cheatsheet.md",
-    "Linux/Linux-Concepts/Linux-Permissions-and-Rights.md",
-    "Linux/Linux-Concepts/Linux-Rights-Management.md",
-    "Linux/Linux-Concepts/SELinux.md",
-    "Linux/Linux-Concepts/Linux-Defined.md",
-    "Linux/Linux-Concepts/Linux-Common-File-Extensions.md",
-    "Linux/Linux-Concepts/Linux-Concepts.md",
-    "Linux/Linux-Concepts/Linux-Users-And-Groups.md",
-    "Services/Databases/Database-Hacking.md"
+    "Web-Application-Hacking/Bypassing-Rate-Limits.md",
+    "Web-Application-Hacking/Walking-Web-Applications/Web-Hacking-Checklist.md",
+    "Web-Application-Hacking/Walking-Web-Applications/Inspecting-Web-Page-Element-Tricks.md",
+    "Recon/Active-Information-Gathering/Active-Recon.md",
+    "Recon/Active-Information-Gathering/Web-Analysis/Nikto-Cheatsheet.md",
+    "Web-Application-Hacking/Methodologies/Generic/Web-App-Hacking-Methodology.md",
+    "Hacker-Distros/Kali/Kali.md",
+    "Linux/Linux-Concepts/Linux-Kernel.md",
+    "Linux/Linux-Commands/Linux-Hardware-Commands.md",
+    "Linux/Linux-Commands/Linux-Memory-Commands.md"
   ]
 }

@@ -54,7 +54,6 @@ V | Verbose output display
 ## Plugins
 ```bash
 -Plugin apacheuser
-
 ```
 
 

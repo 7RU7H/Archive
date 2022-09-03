@@ -1,4 +1,9 @@
 # Linux Kernel
+```bash
+sudo dmesg # Prints the message buffer of the kernel
+
+```
+
 
 ## Hardware
 
