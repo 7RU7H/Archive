@@ -4,8 +4,8 @@ Disclaimer EVENTUALLY will fill this out with parrot and blackarch, I want to tr
 
 Arch-based will be covered more in future, BUT Kali is where this is starting with mostly.
 
-```
-APT & other disto System stuff:
+```bash
+# APT & other disto System stuff:
 apt			is pacman for ubuntu, debian distos
 apt-cache search	display information stored in internal cached package database
 apt show package	display description

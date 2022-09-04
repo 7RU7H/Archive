@@ -1,1 +1,0 @@
-JSON Web Tokens [https://jwt.io/](https://jwt.io/)

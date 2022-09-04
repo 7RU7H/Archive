@@ -43,6 +43,13 @@ SHOW DATABASES;
 SELECT User, Host FROM mysql.user;
 ```
 
+## Execute Commands
+```sql
+
+`\g` GO # command in mysql
+```
+
+
 ## Create User
 
 ```sql
@@ -337,3 +344,5 @@ SELECT age, COUNT(age) FROM users GROUP BY age HAVING count(age) >=2;
 
 ```
 
+## References
+[dev.mysql.com](https://dev.mysql.com/doc/refman/8.0/en/mysql-commands.html)

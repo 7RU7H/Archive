@@ -84,6 +84,7 @@ curl -X								specify http method!
 ````format for declaring a list is follows:
             // List<datatype> <var n
 ```
+
 #### find 
 ```bash
 find / -type f -name "*.txt" -exec rm {} \; # delete all the files with .txt extension = use xargs ITS FASTER
@@ -91,6 +92,12 @@ find / -type f -name "*.txt" -exec rm {} \; # delete all the files with .txt ext
 # wordcount a directory tree
 
 find path -type f | xargs wc -w | tail -1
+```
+
+## fold 
+Wrap input lines in each FILE, writing to standard output, with no FILE, or when FILE is -, read standard input.
+```bash
+fold 
 ```
 
 #### gpg

@@ -8,7 +8,7 @@ Similiar to other documents in this repository maximum of a couple of sentences 
 Given a level of authentication, inadequate security allowing unintended access to, or control of the machine, user accounts and system files. For admin panels see [[Web-App-Administration-Consoles]], or for [[File-Inclusion-And-Directory-Traversal]].
 
 ## Cryptographic Failures
-Poor implementation of or lack of adequate cryptographic algorithms to protect data, or weak or faulty implementations; token cracking like [[JSON-web-tokens]], cookie cracking like [[Javascript-Cookie-Abuse]], man in the middle
+Poor implementation of or lack of adequate cryptographic algorithms to protect data, or weak or faulty implementations; token cracking like [[JSON-Web-Tokens]], cookie cracking like [[Javascript-Cookie-Abuse]], man in the middle
 
 
 ## Injection

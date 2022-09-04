@@ -38,3 +38,10 @@ Transfer with
 ```powershell
 socat TCP4:$IP:$PORT file:$filename,create
 ```
+
+## SMB Cif-Utils
+```shell
+sudo mount -t cifs -o 'user=$username,password=$password' //$IP/share /mnt/sharename
+```
+
+[Kali Cif-Utils]

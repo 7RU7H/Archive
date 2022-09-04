@@ -13,7 +13,7 @@ A Database is an appplication that can store and retrieve data. This data is sto
 [[MSSQL-Hacking]]
 [[MySQL-Cheatsheet]]
 [[Redis-cli-Cheatsheet]]
-
+[[SQLite-Hacking]]
 
 ## SQLi Cheatsheets
 

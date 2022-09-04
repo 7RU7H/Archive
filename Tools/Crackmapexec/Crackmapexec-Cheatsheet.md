@@ -12,6 +12,11 @@ Contains the submodules
 -   [SessionGopher](https://github.com/fireeye/SessionGopher)
 -   [Mimipenguin](https://github.com/huntergregal/mimipenguin)
 
+## Modules
+
+```shell
+-M spider_plus # spider share outputs json
+```
 
 ## Connecting
 ```bash
@@ -32,8 +37,7 @@ crackmapexec smb $IP --shares -u 'Test'
 crackmapexec smb $IP --shares -u 'Test' -p ''
 ```
 
-
-#### Null sessions
+## Null sessions
 ```bash
 crackmapexec smb $IP -u "" up ""
 ```

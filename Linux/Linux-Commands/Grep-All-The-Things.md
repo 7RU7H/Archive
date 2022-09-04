@@ -2,24 +2,25 @@
 
 ```bash
 
-grep -E "" file					grep expressions in a file [ . =  wildcard][ -i is case insensitive]['*A ' OR '*A' with ws include ws
-grep "string" *.txt				find regular exp in plain text(*=wildcard)
-grep -iRl [path/keyword]	Find files with specific keyword
+grep -E "" file				#grep expressions in a file [ . =  wildcard][ -i is case insensitive]['*A ' OR '*A' with ws include ws
+grep "string" *.txt			#find regular exp in plain text(*=wildcard)
+grep -iRl [path/keyword]	#Find files with specific keyword
 grep -oi '\S*string\S*' [pathtofile]
-grep -n						output line number
-grep -E "" file | wc -l				if expression 1to1 pe4r line the total lines exp appears on
-grep -R						recursive grep files inside folders
-grep -h						greps recursively in a directory disabling the prefixing of filenames in results
-grep -c						count the pattern
-grep -i						ignore case
-grep -l						list filename containing the pattern
-grep -v						print all lines not containing the pattern
-grep -e						MULTIPLE PATTERNS!
+grep -n						#output line number
+grep -E "" file | wc -l		#if expression 1to1 pe4r line the total lines exp appears on
+grep -R						#recursive grep files inside folders
+grep -h						#greps recursively in a directory disabling the prefixing of filenames in results
+grep -c						#count the pattern
+grep -i						#ignore case
+grep -l						#list filename containing the pattern
+grep -v						#print all lines not containing the pattern
+grep -e						#MULTIPLE PATTERNS!
+
+grep '.conf\|config*'       # Grep x or y
 ```
 
 Regular Expressions for easy text manipulation on the cmdline:
 ```bash
-
 [exp]EXP		variableMatch inside [] and explicit match outside
 (exp)				group
 |				exp or exp
