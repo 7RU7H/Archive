@@ -5,7 +5,7 @@ https://www.mandiant.com/resources/blog/commando-vm-customization-containers-kal
 
 1. Get a fresh Window ISO and VM setup.
 	1. If using virtualbox install guest edition
-1. Disable
+1. Disable Security features
 
 
 

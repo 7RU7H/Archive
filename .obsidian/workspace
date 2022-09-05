@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Data-Ex&Infiltration/Data-Exfiltration/Data-Exfiltration-Over-DNS.md",
+            "file": "Hacker-Distros/Whonix/Whonix.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "Network-se",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Data-Ex&Infiltration/Data-Exfiltration/Data-Exfiltration-Over-DNS.md",
+                "file": "Hacker-Distros/Whonix/Whonix.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "51ad5402965ef8ae",
   "lastOpenFiles": [
-    "Linux/Linux-Commands/Linux-Module-Commands.md",
-    "Linux/Linux-Commands/Linux-Maintaince-And-Troubleshooting-Commands.md",
-    "Linux/Linux-DNS-Configuration.md",
-    "Linux/Linux-Commands/Core-Linux-Commands.md",
-    "Linux/Linux-Commands/Grep-All-The-Things.md",
-    "Linux/Linux-Commands/Linux-Hardware-Commands.md",
+    "Hacker-Distros/CommandoVM/CommandoVM.md",
+    "Tools/Useful-Software/Searching-Through-File-Tricks.md",
+    "Tools/Useful-Software/UPX.md",
+    "HTTP-Routing.md",
     "Data-Ex&Infiltration/Data-Exfiltration/Data-Exfiltration-Over-DNS.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
-    "Services/Databases/MYSQL/MySQL-Cheatsheet.md",
-    "Data-Ex&Infiltration/File-Transfers/Linux-File-Transfers.md"
+    "Web-Application-Hacking/Curl-Cheatsheet.md",
+    "Networks/Network-Services.md",
+    "Networks/Network-Theory/Network-Protocols/Network-Protocols.md",
+    "Networks/Network-Theory/Network-Protocols/Application-Protocols/Application-Protocols.md",
+    "Cryptography/Password-Attacks/Bruteforce-Login-Tools/Hydra-Cheatsheet.md"
   ]
 }

