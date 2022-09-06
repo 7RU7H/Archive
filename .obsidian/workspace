@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Security-Enterprises/Redteam/How-To-Be-A-Better-PenTester.md",
+            "file": "Exploitation/Troubleshooting-Exploits-Payloads-Vulnerable-Applications.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Security-Enterprises/Redteam/How-To-Be-A-Better-PenTester.md",
+                "file": "Exploitation/Troubleshooting-Exploits-Payloads-Vulnerable-Applications.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "18cd69cd665739f4",
   "lastOpenFiles": [
+    "Tools/Shells/SSH-Cheatsheet.md",
+    "Exploitation/Troubleshooting-Exploits-Payloads-Vulnerable-Applications.md",
+    "README.md",
+    "Coding-Scripting-Programming/Regex.md",
+    "Coding-Scripting-Programming/Solid-Design-Principles.md",
+    "Networks/Network-Theory/Network-Protocols/Application-Protocols/Application-Protocols.md",
+    "Networks/HTTP-Routing.md",
+    "Security-Enterprises/Redteam/How-To-Be-A-Better-PenTester.md",
     "Networks/Network-Theory/QUIC-Defined.md",
-    "Packet-Analysis/Packet-Analysis-Header-Filtering.md",
-    "Tools/Packet-Analysis/Tcpdump-Cheatsheet.md",
-    "Coding-Scripting-Programming/Bash/Useful_Bash.md",
-    "Packet-Analysis/Packet-Analysis.md",
-    "Post-Exploitation/Lateral-Movement/Active-Directory-Lateral-Movement.md",
-    "Web-Application-Hacking/CMS/Wordpress/Wordpress.md",
-    "Tools/Vim/Vim-Hack-Tricks.md",
-    "Tools/Vim/Vim-Cheatsheet.md",
-    "Web-Application-Hacking/Content-Discovery/FFUF-Cheatsheet.md"
+    "Packet-Analysis/Packet-Analysis-Header-Filtering.md"
   ]
 }
