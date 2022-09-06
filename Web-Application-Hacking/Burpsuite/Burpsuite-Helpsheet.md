@@ -77,6 +77,9 @@ Shortcut | Function
 `Ctrl + L` | Drop an intercepted message
 `Ctrl + D` | Delete an intercepted message
 
+## Intruder Payloads
+- Recursive Grep = allows extract each paylaod from the response to the previous request - useful when you need to extract useful data or deliever an exploit 
+
 ## References
 
 [Official Documentation](https://portswigger.net/burp/documentation/desktop)

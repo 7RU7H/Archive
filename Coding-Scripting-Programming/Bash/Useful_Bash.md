@@ -1,6 +1,6 @@
 # Bash Condensed
 
-Condensing everything I know and learn about bash scripting from Tryhackme, XinYminutes, Offensive Security pwk100,pwk200, writing my own scripts and copious amazing stackoverflow answers.
+Condensing everything I know and learn about bash scripting from Tryhackme, XinYminutes, Offensive Security pwk100, pwk200, writing my own scripts and copious amazing stackoverflow answers.
 
 ```bash
 #!/bin/bash
@@ -283,4 +283,12 @@ else
         exit 1
     fi
 fi
+```
+
+
+## Binary to Decimal Conversion
+
+```bash
+onebyte=10100101
+echo "$((2#$onebyte))"
 ```

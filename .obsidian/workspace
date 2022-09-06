@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "51ad5402965ef8ae",
+        "id": "18cd69cd665739f4",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Hacker-Distros/Whonix/Whonix.md",
+            "file": "Packet-Analysis/Packet-Analysis-Header-Filtering.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Network-se",
+                "query": "tag:#Packet-Analysis-Header-Filtering",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -53,7 +53,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 382.5
+    "width": 252.5
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Hacker-Distros/Whonix/Whonix.md",
+                "file": "Packet-Analysis/Packet-Analysis-Header-Filtering.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -87,17 +87,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "51ad5402965ef8ae",
+  "active": "18cd69cd665739f4",
   "lastOpenFiles": [
-    "Hacker-Distros/CommandoVM/CommandoVM.md",
-    "Tools/Useful-Software/Searching-Through-File-Tricks.md",
-    "Tools/Useful-Software/UPX.md",
-    "HTTP-Routing.md",
-    "Data-Ex&Infiltration/Data-Exfiltration/Data-Exfiltration-Over-DNS.md",
-    "Web-Application-Hacking/Curl-Cheatsheet.md",
-    "Networks/Network-Services.md",
-    "Networks/Network-Theory/Network-Protocols/Network-Protocols.md",
-    "Networks/Network-Theory/Network-Protocols/Application-Protocols/Application-Protocols.md",
-    "Cryptography/Password-Attacks/Bruteforce-Login-Tools/Hydra-Cheatsheet.md"
+    "Tools/Packet-Analysis/Tcpdump-Cheatsheet.md",
+    "Coding-Scripting-Programming/Bash/Useful_Bash.md",
+    "Packet-Analysis/Packet-Analysis-Header-Filtering.md",
+    "Packet-Analysis/Packet-Analysis.md",
+    "Post-Exploitation/Lateral-Movement/Active-Directory-Lateral-Movement.md",
+    "Web-Application-Hacking/CMS/Wordpress/Wordpress.md",
+    "Tools/Vim/Vim-Hack-Tricks.md",
+    "Tools/Vim/Vim-Cheatsheet.md",
+    "Web-Application-Hacking/Content-Discovery/FFUF-Cheatsheet.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md"
   ]
 }

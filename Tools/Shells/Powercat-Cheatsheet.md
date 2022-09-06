@@ -1,5 +1,5 @@
 # Powercat 
-The Powershell clone of Netcat written by [besimorhino](https://github.com/besimorhino/powercat/blob/master/powercat.ps1) and similar useful as netcat but only useful for [[Windows-Privilege-Escalation]], [[Active-Directory-Privilege-Escalation]] and [[Windows-File-Transfers]]
+The Powershell clone of Netcat written by [besimorhino](https://github.com/besimorhino/powercat/blob/master/powercat.ps1) and similar useful as netcat but only useful for [[Windows-Privilege-Escalation-Vectors]], [[Active-Directory-Privilege-Escalation]] and [[Windows-File-Transfers]]
 
 ## Setup
 ```powershell
