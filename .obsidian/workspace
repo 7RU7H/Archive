@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Exploitation/Troubleshooting-Exploits-Payloads-Vulnerable-Applications.md",
+            "file": "Post-Exploitation/Foothold/Reverse-Shells-Listing.md",
             "mode": "source",
             "source": false
           }
@@ -53,7 +53,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 252.5
+    "width": 442.5
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exploitation/Troubleshooting-Exploits-Payloads-Vulnerable-Applications.md",
+                "file": "Post-Exploitation/Foothold/Reverse-Shells-Listing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "18cd69cd665739f4",
   "lastOpenFiles": [
-    "Tools/Shells/SSH-Cheatsheet.md",
-    "Exploitation/Troubleshooting-Exploits-Payloads-Vulnerable-Applications.md",
-    "README.md",
-    "Coding-Scripting-Programming/Regex.md",
-    "Coding-Scripting-Programming/Solid-Design-Principles.md",
-    "Networks/Network-Theory/Network-Protocols/Application-Protocols/Application-Protocols.md",
-    "Networks/HTTP-Routing.md",
-    "Security-Enterprises/Redteam/How-To-Be-A-Better-PenTester.md",
-    "Networks/Network-Theory/QUIC-Defined.md",
-    "Packet-Analysis/Packet-Analysis-Header-Filtering.md"
+    "Post-Exploitation/Foothold/Shells.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/PrvEsc-Important-Linux-Locations.md",
+    "Post-Exploitation/Foothold/Reverse-Shells-Listing.md",
+    "Post-Exploitation/Foothold/Bind-And-Reverse-Shells-Defined.md",
+    "Linux/Linux-Concepts/SELinux.md",
+    "Linux/Linux-Hub-Page.md",
+    "Coding-Scripting-Programming/Bash/Useful_Bash.md",
+    "Linux/Linux-Commands/Linux-One-Liners-To-Rule-Them-All.md",
+    "Exploitation/Troubleshooting-Exploits-Payloads-Vulnerable-Applications.md"
   ]
 }
