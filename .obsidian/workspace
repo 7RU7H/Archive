@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Post-Exploitation/Foothold/Reverse-Shells-Listing.md",
+            "file": "Security-Enterprises/Redteam/Red-Team-Theory/Red-Team-Engagements.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Post-Exploitation/Foothold/Reverse-Shells-Listing.md",
+                "file": "Security-Enterprises/Redteam/Red-Team-Theory/Red-Team-Engagements.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -87,17 +87,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "18cd69cd665739f4",
+  "active": "ed8f63df71621be6",
   "lastOpenFiles": [
-    "Post-Exploitation/Foothold/Shells.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/PrvEsc-Important-Linux-Locations.md",
-    "Post-Exploitation/Foothold/Reverse-Shells-Listing.md",
-    "Post-Exploitation/Foothold/Bind-And-Reverse-Shells-Defined.md",
-    "Linux/Linux-Concepts/SELinux.md",
-    "Linux/Linux-Hub-Page.md",
-    "Coding-Scripting-Programming/Bash/Useful_Bash.md",
-    "Linux/Linux-Commands/Linux-One-Liners-To-Rule-Them-All.md",
-    "Exploitation/Troubleshooting-Exploits-Payloads-Vulnerable-Applications.md"
+    "Security-Enterprises/Redteam/Red-Team-Theory/Red-Team-Fundementals.md",
+    "Security-Enterprises/Cyber-Kill-Chains/Lockhead-Martin-Cyber-Kill-Chain.md",
+    "Security-Enterprises/Cyber-Kill-Chains/Varonis-Cyber-Kill-Chain.md",
+    "Security-Enterprises/Cyber-Kill-Chains/Unified-Kill-Chain.md",
+    "Security-Enterprises/Redteam/Red-Talks/Securing-Cloud-Deployments-A-Red-Team-Perspective.md",
+    "Security-Enterprises/Redteam/Red-Team-Theory/RedTeam-Tooling.md",
+    "Security-Enterprises/Redteam/Red-Team-Theory/Redteam-Checklist.md",
+    "Security-Enterprises/Redteam/Red-Talks/How-To-Be-A-Better-PenTester.md",
+    "Security-Enterprises/Redteam/Untitled.md",
+    "Security-Enterprises/Redteam/Red-Team-Hub.md"
   ]
 }

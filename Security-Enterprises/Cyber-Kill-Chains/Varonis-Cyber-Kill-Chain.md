@@ -1,0 +1,1 @@
+![](varonis-cyber-kill-chain.png)
