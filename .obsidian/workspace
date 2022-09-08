@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Tools/C2/Improving-Existing-C2-Setups.md",
+            "file": "Coding-Scripting-Programming/Vulnerable-Functions/Vulnerable-PHP-Functions.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/C2/Improving-Existing-C2-Setups.md",
+                "file": "Coding-Scripting-Programming/Vulnerable-Functions/Vulnerable-PHP-Functions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "18cd69cd665739f4",
   "lastOpenFiles": [
+    "Post-Exploitation/Privilege-Escalation/Linux/PrvEsc-Important-Linux-Locations.md",
+    "Coding-Scripting-Programming/Vulnerable-Functions/Vulnerable-PHP-Functions.md",
+    "Cryptography/Password-Attacks/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
+    "Tools/C2/Improving-Existing-C2-Setups.md",
     "Tools/C2/Metasploit/MSFvenom-Payloads.md",
     "Tools/C2/Metasploit/Meterpreter-Commands.md",
     "Tools/C2/Metasploit/Metasploit.md",
-    "Tools/C2/Improving-Existing-C2-Setups.md",
     "Tools/C2/Introduction-To-Comand-And-Control-Frameworks.md",
     "Cryptography/Password-Attacks/Password-Attacks.md",
-    "Cryptography/Cryptography101.md",
-    "Cryptography/Password-Attacks/Hash-Handler-Tools/Hashcat-Cheatsheet.md",
-    "Cyberwarfare/Practice/HTB-Battlegrounds.md",
-    "Web-Application-Hacking/Content-Discovery/FFUF-Cheatsheet.md"
+    "Cryptography/Cryptography101.md"
   ]
 }
