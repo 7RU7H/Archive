@@ -66,7 +66,7 @@ for i in $(seq 105 108); do
         done
 ```
 
-5. Metasploit is efficient. Hacking without makes you better; Metasploit streamline exploit execution chain. Speed and time are important and without metasploit research and script fixing takes time.  Shell stablisation is plain for defenders to see, with metaspoit shell there is no need to stablise.
+5. Metasploit is efficient. Hacking without makes you better; Metasploit streamline exploit execution chain. Speed and time are important and without metasploit research and script fixing takes time.  Shell stablisation is plain for defenders to see, with metasploit shell there is no need to stablise.
 
 6. Create more panes for Tmux 
 

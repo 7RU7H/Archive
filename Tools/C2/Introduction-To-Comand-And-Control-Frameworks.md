@@ -70,7 +70,7 @@ With Administrative Access, an SMB Beacon can enable a machine to act as a proxy
 4. The Victim in the non-restricted network segment then forwards the C2 instructions to the hosts in the restricted segment.
 
 # Setup
-
+For more advance setups additions see [[Improving-Existing-C2-Setups]]
 ## Domain Fronting
 Utilising a known host to (for example Cloudflare):
 1. The C2 Operator has a domain that proxies all requests through Cloudflare. 

@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Security-Enterprises/Redteam/Red-Team-Theory/Red-Team-OPSEC.md",
+            "file": "Tools/C2/Improving-Existing-C2-Setups.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#Packet-Analysis-Header-Filtering",
+                "query": "hashcat",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Security-Enterprises/Redteam/Red-Team-Theory/Red-Team-OPSEC.md",
+                "file": "Tools/C2/Improving-Existing-C2-Setups.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "18cd69cd665739f4",
   "lastOpenFiles": [
-    "Security-Enterprises/NOPSEC-101.md",
-    "README.md",
-    "Networks/TOR-Hidden-Services.md",
-    "Security-Enterprises/OPSEC-101.md",
-    "Security-Enterprises/Nopsec-101.md",
-    "Cyberwarfare/Theory/The-Grugq-Is-Powerful-Cyberwarfare-Resource.md",
-    "Security-Enterprises/Penetration-Testing.md",
-    "Security-Enterprises/Redteam/Red-Team-Theory/Red-Team-OPSEC.md",
-    "Security-Enterprises/Redteam/Red-Team-Theory/Red-Team-Threat-Intel.md",
-    "Security-Enterprises/Redteam/Red-Team-Theory/Red-Team-Fundementals.md"
+    "Tools/C2/Metasploit/MSFvenom-Payloads.md",
+    "Tools/C2/Metasploit/Meterpreter-Commands.md",
+    "Tools/C2/Metasploit/Metasploit.md",
+    "Tools/C2/Improving-Existing-C2-Setups.md",
+    "Tools/C2/Introduction-To-Comand-And-Control-Frameworks.md",
+    "Cryptography/Password-Attacks/Password-Attacks.md",
+    "Cryptography/Cryptography101.md",
+    "Cryptography/Password-Attacks/Hash-Handler-Tools/Hashcat-Cheatsheet.md",
+    "Cyberwarfare/Practice/HTB-Battlegrounds.md",
+    "Web-Application-Hacking/Content-Discovery/FFUF-Cheatsheet.md"
   ]
 }

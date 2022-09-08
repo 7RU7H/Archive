@@ -1,6 +1,11 @@
 # MSFvenom Payloads
 MSFvenom is part of [[Metasploit]], this page is a  list of payloads.
 
+The follow command will list the options of a specific payload for more advanced use cases.
+```bash
+msfvenom -p windows/meterpreter/reverse_http --list-options
+```
+
 
 Payload | Description
 --- | ---
