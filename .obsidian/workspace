@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Security-Enterprises/Opsec-101.md",
+            "file": "Security-Enterprises/NOPSEC-101.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Security-Enterprises/Opsec-101.md",
+                "file": "Security-Enterprises/NOPSEC-101.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "18cd69cd665739f4",
   "lastOpenFiles": [
+    "README.md",
+    "Security-Enterprises/NOPSEC-101.md",
+    "Networks/TOR-Hidden-Services.md",
+    "Security-Enterprises/OPSEC-101.md",
+    "Security-Enterprises/Nopsec-101.md",
     "Cyberwarfare/Theory/The-Grugq-Is-Powerful-Cyberwarfare-Resource.md",
-    "Security-Enterprises/Redteam/Red-Team-Theory/Red-Team-Threat-Intel.md",
-    "Security-Enterprises/Redteam/Red-Team-Theory/Red-Team-Fundementals.md",
+    "Security-Enterprises/Penetration-Testing.md",
     "Security-Enterprises/Redteam/Red-Team-Theory/Red-Team-Opsec.md",
-    "Security-Enterprises/Redteam/Red-Team-Theory/Red-Team-Engagements.md",
-    "Security-Enterprises/Opsec-101.md",
-    "Security-Enterprises/Redteam/Red-Team-Theory/Redteam-Checklist.md",
-    "Security-Enterprises/Cyber-Kill-Chains/Lockhead-Martin-Cyber-Kill-Chain.md",
-    "Security-Enterprises/Cyber-Kill-Chains/Varonis-Cyber-Kill-Chain.md",
-    "Security-Enterprises/Cyber-Kill-Chains/Unified-Kill-Chain.md"
+    "Security-Enterprises/Redteam/Red-Team-Theory/Red-Team-Threat-Intel.md",
+    "Security-Enterprises/Redteam/Red-Team-Theory/Red-Team-Fundementals.md"
   ]
 }

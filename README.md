@@ -11,7 +11,7 @@ For full links to all Articles alphabetically see [[Contents]] to `./mkContents.
 
 ## Introduction
 
-The Internet is an awesome resource, but sometimes what it is forgotten the power of small, focused and contained networks of information. 
+The Internet is an awesome resource, but sometimes what it is forgotten the power of small, focused and contained networks of information. This is demonstrative proof of [[NOPSEC-101]]. 
 
 ## History and Manifesto
 
