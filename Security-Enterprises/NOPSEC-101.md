@@ -24,29 +24,31 @@ This is a work in progress, my plan is to make have very combined simple list an
 4. Be Proactively Open to modification and extension
 	- Stop, Listen, Wait, Think and Learn from others 
 	- Be open others' criticism
-	- Be open others' humourous takes 
-5. Review Operationalisation of NOPSEC and YOUR ID
-6. Be tidy and organised
+	- Be open others' humourous takes
+1. Be proactively positive - make your life more valuable to yourself
+	1. Life takes longer the more depressed you are, but you get more fun and happiness from the same amount of time it just seems to go quick
+2. Review Operationalisation of NOPSEC and YOUR ID
+3. Be tidy and organised
 	- Human searching algrhythm for X element in a link list of where the fuck I put that X is 
-7. Learn to use code, be explicit, be loud
+4. Learn to use code, be explicit, be loud
 	- Practice Logic to remove the illogical
 	- Do not use code words it is abstraction that creates inefficiency
 	- If you are loud then everyone know you are there, either you are food or not a threat - be a white blood cell to humanity
-8. Use Crypto-nyms and have them setup prior to use
-9. Be legal never worry and always will alway help others to help justify to others to end there fear
+5. Use Crypto-nyms and have them setup prior to use
+6. Be legal never worry and always will alway help others to help justify to others to end there fear
 	- Examples:
 		- Mob inquisitions historically are bad for everyone, including the mob.
-10. Avoid contamination from procastinative activities. 
+7. Avoid contamination from procastinative activities. 
 	1. Be concious of contamination over time
 	2. Account meta data is collected as if were free money, automated by code and stored somewhere - removal of the non-relevant activities is important
-11. Treat every everything is or is to be Zero Dayed
+8. Treat every everything is or is to be Zero Dayed
 	1. Zero Trust Policy because being up to par with everything else in the environment is important, being shat on hurts time cleaning everything up
 	1. Why [[TOR-Hidden-Services]] if you are all NOPSEC, 
-12. Energy is life, work is required for fun, make you work fun or do something you enjoy
+9. Energy is life, work is required for fun, make you work fun or do something you enjoy
 	- Make relaxation or recreate pure, do work that is basically fun, but challenging
 	1. Do not operate from a location that is inseperate from relaxation or pure recreate
-13. Schedule personal life and ESPECIALLY family time or your need to do non-objective task or your family will crawl that time out of you in a painful way
-14. Keep person environment and life controband/crime free
+10. Schedule personal life and ESPECIALLY family time or your need to do non-objective task or your family will crawl that time out of you in a painful way
+11. Keep person environment and life controband/crime free
 	- Prisons of various types are suppose to be bad, why go
-15. If you can listen to ANY authority then they will tell you stuff and save you alot of time and pain
-16. Be mindful of any control, but especially your own control over your own actions, detirministically you might be doing shit, because you are just shit. 
+12. If you can listen to ANY authority then they will tell you stuff and save you alot of time and pain
+13. Be mindful of any control, but especially your own control over your own actions, detirministically you might be doing shit, because you are just shit. 
