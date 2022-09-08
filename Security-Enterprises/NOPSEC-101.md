@@ -2,7 +2,25 @@
 
 The inverse of [[OPSEC-101]], the information warfare to promote branding and reinforce identity over of external forces. The objective of NOPSEC is to focus your life and not enjoy the insanity of being paranoid and doing the weird loop-de-loop nonsensical and illogical behaviours of cultures while hacking or living life. This was scrapped from lived experiences and the residues of joy that I should share with the world dripping off my brain writing the Archive.
 
+
 This is a work in progress, my plan is to make have very combined simple list and graph like extension to it like control flow and then have big bullet point list of say if you questioned my reasoning then the follow list of why each simple statement is a proof of concept and answer to why it works later.
+
+## Why Pure OPSEC is Bad m'kay
+
+OPSEC is still important, but this article is how that too much makes it is also like shizophrenia - psychological debilitating and reduces your lifespan by decades.
+- Paranoia - Stress and ffficient human computation surrounded what is feared, potential, uncertian.
+- Meta-Self-Imposed-Street-Light-Effect: Attactiveness of self-knowledge is based on secret knowledge leading to illogical conclusion and circluatory assumption building 
+- WHICH then requires great organisation shifts in self and organisation self-reflection on why ideology, models, cognition patterns and framework are not the best.
+- Primes your brain to optimise searching for that which you have primed you brain to look for - aggressive filtering out making openness to novelty or more important novel and improve ways of anything less possible to mentalise
+- Worldview is not meta enough to then understand the cost basis for wasting time doing something
+- Communicatively and Computationally ineffiecent, more work required to do anything from thinking about it, to encryption to beurcracy, - basically a I can or cannot do X because of Y Opsec for expolated actually reason Z that is then translate for others A...
+
+
+## The Pillars of NOPSEC
+Promises - Truth - Trust
+Pedagogy - Scientific
+Communicative effiecency - Computationally effiecency - Adaptablility - Open - Logical
+
 
 ## Tenents
 
