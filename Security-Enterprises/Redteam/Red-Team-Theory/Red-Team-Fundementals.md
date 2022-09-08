@@ -58,7 +58,7 @@ See [[Red-Team-Engagements]] for more.
 
 ##  Red Team Opsec
 
-[[Red-Team-Opsec]]
+[[Red-Team-OPSEC]]
 
 ## Tooling
 

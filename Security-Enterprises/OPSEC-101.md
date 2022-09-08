@@ -46,7 +46,7 @@ It is hurts to get fucked, reason you may need OPSEC
 
 
 ## Group Specific OpSec Guides
-[[Red-Team-Opsec]]
+[[Red-Team-OPSEC]]
 
 ## References
 

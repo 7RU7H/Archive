@@ -1,11 +1,10 @@
-## Red Team OpSec
+## Red Team OPSEC
 
 Operations Security (OPSEC) is a term coined by the United States military. In the field of cybersecurity, let’s start with the definition provided by [NIST](https://csrc.nist.gov/glossary/term/opsec): *“Systematic and proven process by which potential adversaries can be denied information about capabilities and intentions by identifying, controlling, and protecting generally unclassified evidence of the planning and execution of sensitive activities. The process involves five steps: identification of critical information, analysis of threats, analysis of vulnerabilities, assessment of risks, and application of appropriate countermeasures.”*
 
 ## Critical Information
 
-Client Information:
-Red Team information:
+Client Information & Red Team information:
 1. Activities, identities, plans, capabilities and limitations
 1. Tactics, techniques and procedures
 1. IPs, MAC addresses, public domains, hosted websites i.e phishing or "We use this OS or software!"
@@ -18,7 +17,7 @@ What tactics, techniques, and procedures does the adversary use?
 What critical information has the adversary obtained, if any?
 
 ## Vulnerabilities Analysis
-DoD opsec: 
+[DoD opsec](https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodm/520502m.pdf): 
 OPSEC vulnerability exists when an adversary can:
 obtain critical information, 
 analyse the findings, 
@@ -36,3 +35,8 @@ The possibility that the countermeasure can reveal information to the adversary
  prevent an adversary from detecting critical information, 
 provide an alternative interpretation of critical information or indicators (deception), 
 or deny the adversary’s collection system.”
+
+## References
+
+[THM Red Team Opsec Room](https://tryhackme.com/room/opsec)
+[DoD opsec](https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodm/520502m.pdf):

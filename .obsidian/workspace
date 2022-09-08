@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Security-Enterprises/Redteam/Red-Team-Theory/Red-Team-Opsec.md",
+            "file": "Security-Enterprises/Redteam/Red-Team-Theory/Red-Team-OPSEC.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Security-Enterprises/Redteam/Red-Team-Theory/Red-Team-Opsec.md",
+                "file": "Security-Enterprises/Redteam/Red-Team-Theory/Red-Team-OPSEC.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -96,7 +96,7 @@
     "Security-Enterprises/Nopsec-101.md",
     "Cyberwarfare/Theory/The-Grugq-Is-Powerful-Cyberwarfare-Resource.md",
     "Security-Enterprises/Penetration-Testing.md",
-    "Security-Enterprises/Redteam/Red-Team-Theory/Red-Team-Opsec.md",
+    "Security-Enterprises/Redteam/Red-Team-Theory/Red-Team-OPSEC.md",
     "Security-Enterprises/Redteam/Red-Team-Theory/Red-Team-Threat-Intel.md",
     "Security-Enterprises/Redteam/Red-Team-Theory/Red-Team-Fundementals.md"
   ]
