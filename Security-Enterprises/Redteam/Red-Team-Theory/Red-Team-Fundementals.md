@@ -56,6 +56,15 @@ These are general structured around a APT from [Mitre Att&ck](https://attack.mit
 
 See [[Red-Team-Engagements]] for more.
 
+##  Red Team Opsec
+
+[[Red-Team-Opsec]]
+
+## Tooling
+
+[[Red-Team-Tooling]]
+
+
 ## References
 [Mitre Att&ck](https://attack.mitre.org/)
 [Unified Kill Chain](https://unifiedkillchain.com/)

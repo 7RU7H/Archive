@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Security-Enterprises/Redteam/Red-Team-Theory/Red-Team-Engagements.md",
+            "file": "Security-Enterprises/Opsec-101.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Security-Enterprises/Redteam/Red-Team-Theory/Red-Team-Engagements.md",
+                "file": "Security-Enterprises/Opsec-101.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -87,17 +87,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "ed8f63df71621be6",
+  "active": "18cd69cd665739f4",
   "lastOpenFiles": [
+    "Cyberwarfare/Theory/The-Grugq-Is-Powerful-Cyberwarfare-Resource.md",
+    "Security-Enterprises/Redteam/Red-Team-Theory/Red-Team-Threat-Intel.md",
     "Security-Enterprises/Redteam/Red-Team-Theory/Red-Team-Fundementals.md",
+    "Security-Enterprises/Redteam/Red-Team-Theory/Red-Team-Opsec.md",
+    "Security-Enterprises/Redteam/Red-Team-Theory/Red-Team-Engagements.md",
+    "Security-Enterprises/Opsec-101.md",
+    "Security-Enterprises/Redteam/Red-Team-Theory/Redteam-Checklist.md",
     "Security-Enterprises/Cyber-Kill-Chains/Lockhead-Martin-Cyber-Kill-Chain.md",
     "Security-Enterprises/Cyber-Kill-Chains/Varonis-Cyber-Kill-Chain.md",
-    "Security-Enterprises/Cyber-Kill-Chains/Unified-Kill-Chain.md",
-    "Security-Enterprises/Redteam/Red-Talks/Securing-Cloud-Deployments-A-Red-Team-Perspective.md",
-    "Security-Enterprises/Redteam/Red-Team-Theory/RedTeam-Tooling.md",
-    "Security-Enterprises/Redteam/Red-Team-Theory/Redteam-Checklist.md",
-    "Security-Enterprises/Redteam/Red-Talks/How-To-Be-A-Better-PenTester.md",
-    "Security-Enterprises/Redteam/Untitled.md",
-    "Security-Enterprises/Redteam/Red-Team-Hub.md"
+    "Security-Enterprises/Cyber-Kill-Chains/Unified-Kill-Chain.md"
   ]
 }

@@ -1,4 +1,4 @@
 # Red Team Hub
-[[Opsec101]]
+[[Red-Team-Opsec]]
 [[Redteam-Checklist]]
 [[Red-Teaming-In-The-Cloud]]

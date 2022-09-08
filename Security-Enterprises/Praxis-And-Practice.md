@@ -1,6 +1,6 @@
 # Praxis and Practice
 
-Sometimes we all just need to got back to [[Opsec101]].
+Sometimes we all just need to got back to [[Red-Team-Opsec]].
 
 ## Place to Learn, Practice and Improve
 

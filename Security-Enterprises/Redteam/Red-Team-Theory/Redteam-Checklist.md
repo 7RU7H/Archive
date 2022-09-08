@@ -71,3 +71,7 @@
         ☐ Draft observation and findings
         ☐ Finalize attack diagram
         ☐ Finalize report
+
+
+## References
+[redteam.guide/](https://redteam.guide/docs/checklists/red-team-checklist/)
