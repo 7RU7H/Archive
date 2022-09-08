@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Security-Enterprises/NOPSEC-101.md",
+            "file": "Security-Enterprises/Redteam/Red-Team-Theory/Red-Team-Opsec.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Security-Enterprises/NOPSEC-101.md",
+                "file": "Security-Enterprises/Redteam/Red-Team-Theory/Red-Team-Opsec.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,8 +89,8 @@
   },
   "active": "18cd69cd665739f4",
   "lastOpenFiles": [
-    "README.md",
     "Security-Enterprises/NOPSEC-101.md",
+    "README.md",
     "Networks/TOR-Hidden-Services.md",
     "Security-Enterprises/OPSEC-101.md",
     "Security-Enterprises/Nopsec-101.md",
