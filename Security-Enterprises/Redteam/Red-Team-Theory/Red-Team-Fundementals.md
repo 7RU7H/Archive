@@ -46,7 +46,7 @@ Red Team Operator | Executes assignments delegated by team leads. Interpret and 
 [Definitions from redteam.guide](https://redteam.guide/docs/definitions/)
 
 
-## Engagment Structure
+## Engagment Structure 
 These are general structured around a APT from [Mitre Att&ck](https://attack.mitre.org/) and cyber kill chain:
 
 [[Lockhead-Martin-Cyber-Kill-Chain]]
@@ -54,14 +54,14 @@ These are general structured around a APT from [Mitre Att&ck](https://attack.mit
 [[Unified-Kill-Chain]]
 [AD-Attack and Defense -Github](https://github.com/infosecn1nja/AD-Attack-Defense)
 
-See [[Red-Team-Engagements]] for more.
+See [[Red-Team-Engagements]] for more and 
 
-##  Red Team Opsec
+##  Red Team Activities
 
 [[Red-Team-OPSEC]]
-
-## Tooling
-
+[[Red-Team-Threat-Intel]]
+[[Red-Team-Recon]]
+[[Red-Team-Weaponization]]
 [[Red-Team-Tooling]]
 
 
