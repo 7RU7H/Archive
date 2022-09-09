@@ -25,7 +25,8 @@ put file	upload files!
 ```
 
 ## 22 SSH
-Default port 22
+Default port 22 
+[[SSH-Cheatsheet]]
 ```
 -i	access with private key
 -L	local_port:remote_address:remote_port # for local port fowarding
@@ -87,6 +88,7 @@ STAT
 LIST	list all messUSER 
 RETR	return a message
 ```
+
 ## 111 (also 2049) - NFS
 [[NFS-Recon]]
 Ports 111 and 2049
@@ -191,17 +193,19 @@ Legacy application [Pando](https://en.wikipedia.org/wiki/Pando_(application)) Bi
 ## Burp Proxy
 Default port 8000, see [[Burpsuite-Helpsheet]]
 
-## Tomcat HTTP roxy
-[[Apache-Tomcat]]
-default port 8009
+## 8009 - Tomcat HTTP proxy
+[[Apache-Tomcat]]'s default port 8009
 
-## Apache JServ Protocol
-default  8009
+## 8009 Apache JServ Protocol
 
 
-## HTTP Alternate
+
+## 8080 - HTTP Alternate
 default 8080
 
+
+## 10000 - Webmin
+[Webmin](https://webmin.com/)
 
 ## References
 [iana](https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml)

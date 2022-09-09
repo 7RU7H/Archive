@@ -9,19 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Post-Exploitation/Foothold/Network-Infrastructure-Enumeration.md",
-            "mode": "source",
-            "source": false
-          }
-        }
-      },
-      {
-        "id": "2493619e8e0f9368",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Recon/Passive-Information-Gathering/DNS-Recon-Passive.md",
+            "file": "Hacker-Distros/Kali/Kali-Configuration.md",
             "mode": "source",
             "source": false
           }
@@ -81,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Post-Exploitation/Foothold/Network-Infrastructure-Enumeration.md",
+                "file": "Hacker-Distros/Kali/Kali-Configuration.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -101,15 +89,15 @@
   },
   "active": "18cd69cd665739f4",
   "lastOpenFiles": [
-    "Post-Exploitation/Foothold/Foothold-Enumeration.md",
-    "Security-Enterprises/Redteam/Red-Team-Theory/Red-Team-Recon.md",
-    "Recon/Passive-Information-Gathering/DNS-Recon-Passive.md",
-    "Recon/Passive-Information-Gathering/Search-Engine-Dorking.md",
-    "Security-Enterprises/Redteam/Red-Team-Theory/Red-Team-Fundementals.md",
-    "Security-Enterprises/Redteam/Red-Team-Theory/Red-Team-OPSEC.md",
-    "Security-Enterprises/Redteam/Red-Team-Theory/Red-Team-Weaponization.md",
-    "Security-Enterprises/Redteam/Red-Team-Theory/Red-Team-Tooling.md",
-    "Exploitation/Windows/Active-Directory/AD-Exploitation-Hub.md",
-    "Security-Enterprises/Cyber-Kill-Chains/Unified-Kill-Chain.md"
+    "Hacker-Distros/Kali/Kali-Windows-Resources.md",
+    "Hacker-Distros/Kali/Setup-Services/Kali-Setup-Docker.md",
+    "Hacker-Distros/Kali/Setup-Services/Kali-Setup-Rogue-LDAP-Server.md",
+    "Hacker-Distros/Kali/Kali-Configuration.md",
+    "Hacker-Distros/Kali/Kali.md",
+    "Networks/Network-Services.md",
+    "Social-Engineering/Phishing.md",
+    "Cryptography-And-Authentication/Password-Attacks/Password-Attacks.md",
+    "Post-Exploitation/Foothold/Network-Infrastructure-Enumeration.md",
+    "Recon/Passive-Information-Gathering/DNS-Recon-Passive.md"
   ]
 }

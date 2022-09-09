@@ -27,6 +27,8 @@ Offsec sponsers tool curating a vast collection of great tools for the long term
 
 ## Installation
 
+One thing to consider is preseeding an unattended installation for ultimate customisability, another being the recent additions of metapackages to `apt instal kali-<metapackage>` that are catergorisation of tools themed by task.
+
 [Download from this site.]([https://www.kali.org/downloads/](https://www.kali.org/downloads/) Use `cat /proc/cpuinfo` or this fancy grep(`grep -qP '^flags\s*:.*\blm\b' /proc/cpuinfo && echo 64-bit || echo 32-bit`) to check whether you are have 32 or 64 bit CPU. Make sure verify integrity and authenticity with  `sha256sum $ISO`. You could also use a key server: `wget -q -O - https://archive.kali.org/archive-key.asc | gpg --import`. There are various GUI tools on all OS for USB formating and creating bootable disks, but here with a Linux Distro:
 ```bash
 # be root
@@ -40,8 +42,7 @@ Kali can be botted in UEFI mode but not secure boot. Disable secure boot.
 
 If for some reason need Python2: [EoL Python ](https://www.kali.org/docs/general-use/using-eol-python-versions/)
 
-
-## Configuration
+For generall configuration see [[Kali-Configuraiton]]
 
 ## Kali-Unique Linux 
 

