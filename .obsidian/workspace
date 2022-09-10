@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Hacker-Distros/Kali/Kali-Configuration.md",
+            "file": "Networks/Firewalls.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "HTA",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Hacker-Distros/Kali/Kali-Configuration.md",
+                "file": "Networks/Firewalls.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "18cd69cd665739f4",
   "lastOpenFiles": [
+    "Hardware/Hardware-Maintance/USB-Maintaince.md",
+    "Networks/Firewalls.md",
+    "Networks/Network-Security/Evading-IPS-And-IDS.md",
+    "Networks/Network-Theory/Network-Technologies.md",
+    "Networks/Network-Security/Defending-With-IPS-And-IDS.md",
+    "Hacker-Distros/Kali/Kali-Configuration.md",
     "Hacker-Distros/Kali/Kali-Windows-Resources.md",
     "Hacker-Distros/Kali/Setup-Services/Kali-Setup-Docker.md",
     "Hacker-Distros/Kali/Setup-Services/Kali-Setup-Rogue-LDAP-Server.md",
-    "Hacker-Distros/Kali/Kali-Configuration.md",
-    "Hacker-Distros/Kali/Kali.md",
-    "Networks/Network-Services.md",
-    "Social-Engineering/Phishing.md",
-    "Cryptography-And-Authentication/Password-Attacks/Password-Attacks.md",
-    "Post-Exploitation/Foothold/Network-Infrastructure-Enumeration.md",
-    "Recon/Passive-Information-Gathering/DNS-Recon-Passive.md"
+    "Hacker-Distros/Kali/Kali.md"
   ]
 }

