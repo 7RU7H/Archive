@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Networks/Firewalls.md",
+            "file": "Post-Exploitation/Foothold/Sandbox-Evasion.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "Windows-Inte",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -49,7 +49,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -69,7 +70,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Networks/Firewalls.md",
+                "file": "Post-Exploitation/Foothold/Sandbox-Evasion.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -87,17 +88,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "18cd69cd665739f4",
+  "active": "904463d60d8efa8d",
   "lastOpenFiles": [
+    "Reverse-Engineering/Malware-Analysis/Malware-Analysis.md",
+    "Networks/Network-Security/Firewalls.md",
+    "Networks/Network-Security/Evading-Firewalls.md",
     "Hardware/Hardware-Maintance/USB-Maintaince.md",
-    "Networks/Firewalls.md",
     "Networks/Network-Security/Evading-IPS-And-IDS.md",
     "Networks/Network-Theory/Network-Technologies.md",
     "Networks/Network-Security/Defending-With-IPS-And-IDS.md",
     "Hacker-Distros/Kali/Kali-Configuration.md",
     "Hacker-Distros/Kali/Kali-Windows-Resources.md",
-    "Hacker-Distros/Kali/Setup-Services/Kali-Setup-Docker.md",
-    "Hacker-Distros/Kali/Setup-Services/Kali-Setup-Rogue-LDAP-Server.md",
-    "Hacker-Distros/Kali/Kali.md"
+    "Hacker-Distros/Kali/Setup-Services/Kali-Setup-Docker.md"
   ]
 }
