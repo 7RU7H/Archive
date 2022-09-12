@@ -7,12 +7,8 @@
         "id": "18cd69cd665739f4",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Web-Application-Hacking/Curl-Cheatsheet.md",
-            "mode": "source",
-            "source": false
-          }
+          "type": "empty",
+          "state": {}
         }
       }
     ],
@@ -69,7 +65,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Web-Application-Hacking/Curl-Cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -87,17 +82,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "18cd69cd665739f4",
+  "active": "ed8f63df71621be6",
   "lastOpenFiles": [
+    "Social-Engineering/Phishing/Phishing.md",
+    "Antivirus-Evasion/AV-Fingerprinting.md",
+    "Antivirus-Evasion/Antivirus-Evasion.md",
+    "Brain-Hacking/Improve-Your-Learning.md",
+    "Web-Application-Hacking/Curl-Cheatsheet.md",
     "Post-Exploitation/Foothold/Sandbox-Evasion.md",
     "Reverse-Engineering/Malware-Analysis/Malware-Analysis.md",
     "Networks/Network-Security/Firewalls.md",
     "Networks/Network-Security/Evading-Firewalls.md",
-    "Hardware/Hardware-Maintance/USB-Maintaince.md",
-    "Networks/Network-Security/Evading-IPS-And-IDS.md",
-    "Networks/Network-Theory/Network-Technologies.md",
-    "Networks/Network-Security/Defending-With-IPS-And-IDS.md",
-    "Hacker-Distros/Kali/Kali-Configuration.md",
-    "Hacker-Distros/Kali/Kali-Windows-Resources.md"
+    "Hardware/Hardware-Maintance/USB-Maintaince.md"
   ]
 }

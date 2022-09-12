@@ -27,7 +27,13 @@ Management Console | | Ease of use
 
 ## Detection Techniques
 
-With sandboxing, rulesets and partial execution, [Heuristic-Based Detection](https://en.wikipedia.org/wiki/Heuristic_analysis) and [Behaviour-Based Detection](https://www.microsoft.com/en-us/research/video/behavior-based-malware-detection/) provide some Software functionality to perform more than just signature lookup automating some of the process of detection and analysis. This aids partially in preserving the sanity of those trying to defend networks as extreme example of psychological warfare of reverse engineering possible outlined in the [Chris Domas DEF CON 23 talk suggests](https://www.youtube.com/watch?v=HlUe0TUHOIc).
+The simplist form of detection is the use of [Static Detection](), a predefined set of signatures of malicious files that are used in conjunction with pattern matching to find unique strings, Checksums, sequences of bytecode or hex values and crytographic hashes. After which the application performing the [Static Detection]() will perform a set of comparisons between existing files within the operating system and a database of signatures.
+
+[Dynamic Detection]() in contrast to Static techniques takes place during runtime. One method is  inspects Windows application calls and monitor Windows API calls using Windows [Hooks](https://docs.microsoft.com/en-us/windows/win32/winmsg/about-hooks).  Another being Sandboxing.
+
+With sandboxing, rulesets and partial execution, [Heuristic-Based Detection](https://en.wikipedia.org/wiki/Heuristic_analysis) and [Behaviour-Based Detection](https://www.microsoft.com/en-us/research/video/behavior-based-malware-detection/) provide some Software functionality to perform more than just signature lookup automating some of the process of detection and analysis. This aids partially in preserving the sanity of those trying to defend networks as extreme example of psychological warfare of reverse engineering possible outlined in the [Chris Domas DEF CON 23 talk suggests](https://www.youtube.com/watch?v=HlUe0TUHOIc). There is also Static and Dynamic variates of Heuristic Analysis 
+- Static HA - decompling and extracting source code and then comparing it to well known virus source code
+- Dynamic HA - [[Malware-Analysis]] by analylists analyze potential malicious software in isolated and controlled environments to create behavioural rules or are matched to establish behaviour rulesets to detirmine malware strain. 
 
 [Heuristic-Based Detection](https://en.wikipedia.org/wiki/Heuristic_analysis) uses sandboxed stepping through the instruction set of a binary file, without actual execution or by attempting to decompile and then analyze the source code checking known malicious patterns and program calls. 
 
@@ -36,6 +42,22 @@ With sandboxing, rulesets and partial execution, [Heuristic-Based Detection](htt
 And so with combining approaches to detection and analysis, higher detection rates can be achieved. With more data means meta-information about how malicious actions take place providing firewalls, local vulnerability and website scanners, SOC, Blue and Purple teams more implementable rules and understanding of what could be happening when an incident is occuring or occured. Any findings can be tested against or added to the [VirusTotal](https://www.virustotal.com/gui/home/upload) database.
 
 To evade all of this requires some obfuscation or changing of the contents of known malicious files to break the identifying signature. This can range from changing the strings from lower to uppercase to increasingly complex forms of evasion. Reverse-engineering malware, configuring compilation options, refactoring the code it to change the MD5 hash or any signatures that would be detected. Running in memory and attempting to migrate to a legitimate process or overflowing itself after use or cryptographically altering code.
+
+#### Common AV Software
+
+Antivirus Name	 | Service Name	 | Process Name
+--- | --- | ---
+Microsoft Defender | 	WinDefend	 | MSMpEng.exe
+Trend Micro | 	TMBMSRV	 | TMBMSRV.exe
+Avira	 | AntivirService, Avira.ServiceHost | 	avguard.exe, Avira.ServiceHost.exe
+Bitdefender | 	VSSERV	 | bdagent.exe, vsserv.exe
+Kaspersky | 	AVP<Version #> | 	avp.exe, ksde.exe
+AVG	 | AVG Antivirus | 	AVGSvc.exe
+Norton	 | Norton Security	 | NortonSecurity.exe
+McAfee | 	McAPExe, Mfemms | 	MCAPExe.exe, mfemms.exe
+Panda	 | PavPrSvr	 | PavPrSvr.exe
+Avast | Avast Antivirus | 	afwServ.exe, AvastSvc.ex
+
 
 ## Bypassing Antivirus Detection
 
