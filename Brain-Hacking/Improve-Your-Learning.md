@@ -35,6 +35,8 @@ Recall
 
 Priming is Psycholinguistics term to describe in modern colloqial termed a "triggering", in the context of learning we are gaining a brief overview with the need to understand in any meaningful extent. 
 
+- [[Black-Box-Method]], Black-Boxing a concept or problem.
+
 - **Feynmanesque Teaching It to Compress it**
 
 Teaching the domain of information you have somewhat learnt helps by using recall and deliberately trying to compress the information to explain it to someone else or through a medium like text or video.  You strengthen connection while re-encoding a more compressed version of what was learnt.
