@@ -18,3 +18,5 @@ HYPER TEXT MARKUP LANGUAGE(HTML)
 				<img>: Defines an image.
 				<p> Defines the start and end of a paragraph </p>			                    
 ```
+
+See [[Basic-CSS]] of understanding of how CSS prettifies websites 

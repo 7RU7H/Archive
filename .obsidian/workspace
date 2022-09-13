@@ -7,8 +7,12 @@
         "id": "18cd69cd665739f4",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "Social-Engineering/Phishing/Phishing.md",
+            "mode": "source",
+            "source": false
+          }
         }
       }
     ],
@@ -36,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Windows-Inte",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,6 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Social-Engineering/Phishing/Phishing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -82,17 +87,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "ed8f63df71621be6",
+  "active": "18cd69cd665739f4",
   "lastOpenFiles": [
+    "Social-Engineering/Phishing/Phishing-Email-Header-Analysis.md",
+    "Social-Engineering/Phishing/Phishing-Infrastructure.md",
+    "Social-Engineering/Phishing/Phishing-With-GoPhish.md",
+    "Social-Engineering/Phishing/Phishing-Writing-Phishing-Emails.md",
+    "Social-Engineering/Phishing/Phishing-Analysis-Tools.md",
     "Social-Engineering/Phishing/Phishing.md",
-    "Antivirus-Evasion/AV-Fingerprinting.md",
-    "Antivirus-Evasion/Antivirus-Evasion.md",
-    "Brain-Hacking/Improve-Your-Learning.md",
-    "Web-Application-Hacking/Curl-Cheatsheet.md",
-    "Post-Exploitation/Foothold/Sandbox-Evasion.md",
-    "Reverse-Engineering/Malware-Analysis/Malware-Analysis.md",
-    "Networks/Network-Security/Firewalls.md",
-    "Networks/Network-Security/Evading-Firewalls.md",
-    "Hardware/Hardware-Maintance/USB-Maintaince.md"
+    "Web-Application-Hacking/Web-Concepts/HTLM-Defined.md",
+    "Web-Application-Hacking/Web-Concepts/HTTP-Defined.md",
+    "Web-Application-Hacking/Walking-Web-Applications/Web-Hacking-Checklist.md",
+    "Tools/Useful-Software/Github-guide.md"
   ]
 }
