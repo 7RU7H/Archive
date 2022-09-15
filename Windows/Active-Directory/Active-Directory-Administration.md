@@ -12,7 +12,6 @@ Having started out never Adminstating AD to taking just trying to take OSCP(with
 On the DC use `Search -> Active Directory Users and Computers` to configure users, groups or machines
 
 #### Delegation
-
 `Right-Click On OU -> Delegate Control `
 
 #### Deleting an OU

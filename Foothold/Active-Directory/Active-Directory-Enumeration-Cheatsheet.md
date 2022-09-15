@@ -1,7 +1,8 @@
 # Active Directory Enumeration Cheatsheet
 
-To make the articles in this repo more concise and focused, this cheatsheet was inital assimilation from [Emanlui's Incredible Cheatsheet](https://github.com/Emanlui/OSCP-Scripts/blob/main/Windows.md#enumeration) to kick start sourcing everything in this repo that is relevant and to seperate Privilege Escalation from Enumeration.
-For details and explainations see [[Active-Directory-Enumeration-Defined]].
+To make the articles in this repo more concise and focused, this cheatsheet was inital assimilation from [Emanlui's Incredible Cheatsheet](https://github.com/Emanlui/OSCP-Scripts/blob/main/Windows.md#enumeration) to kick start sourcing everything in this repo that is relevant and to seperate Privilege Escalation from Enumeration. For details and explainations see [[Active-Directory-Enumeration-Defined]]. 
+
+If you have access to `Get-Wmi` powershell commands the entire process can be done with 0xinfection blogs inspired [[Active-Directory-Offensive-Enumeration-With-WMI]]
 
 Basics with cmd
 ```powershell
@@ -9,8 +10,23 @@ net user /domain # User account fo r \\DC*.*domain*.*tld
 net user *admin* /domain # information about the admin
 net group /domain # All groups in domain - DC is sometimes required
 net group "<target group name>" /domain
-net accounts /domain   
+net accounts /domain    # Password policy
 ipconfig /displaydns	# Get DC ip
+runas
+```
+
+[Net command documentation](https://docs.microsoft.com/en-us/troubleshoot/windows-server/networking/net-commands-on-operating-systems)
+
+Use runas.exe
+```powershell
+runas.exe /netonly /user:<domain>\<username> cmd.exe
+```
+
+IF internal DNS is configured automative through DHCP or VPN, using the IP for DNS server (usually a DC) of the target network.
+```powershell
+$dnsip = "<DNS Server IP>"
+$index = Get-NetAdapter -Name '<interface-name>' | Select-Object -ExpandProperty 'ifIndex'
+Set-DnsClientServerAddress -InterfaceIndex $index -ServerAddresses $dnsip
 ```
 
 DNS Zone Transfer with `nslookup`
@@ -353,4 +369,6 @@ Set-ADAccountPassword -Identity <username> -Server <domain> -OldPassword (Covert
 ```
 
 ## References
+
 [Emanlui's Incredible Cheatsheet](https://github.com/Emanlui/OSCP-Scripts/blob/main/Windows.md#enumeration)
+[Net command documentation](https://docs.microsoft.com/en-us/troubleshoot/windows-server/networking/net-commands-on-operating-systems)

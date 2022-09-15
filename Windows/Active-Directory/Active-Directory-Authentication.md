@@ -4,6 +4,14 @@ Active Directory supports multiple authentication protocols and techniques and i
 
 With Microsoft's approach to backway compatibility older operating systems like Windows 7 or Windows Server 2008 R2, can be incorperated into Active Directory. Therefore AD still supports several older protocols including [WDigest](https://technet.microsoft.com/en-us/library/cc778868(v=ws.10).aspx).
 
+**IP vs Hostnames**
+
+Command  | Network Protocol | Authentication 
+--- | --- | ---
+`dir \\<DC IP>\SYSVOL` | IP | NTLM
+`dir \\domain_name\SYSVOL` | DNS | Kerberos authentication
+
+
 ## NTLM Authenication
 - **Use**
 1. Used in client to server authenication
@@ -18,7 +26,7 @@ With Microsoft's approach to backway compatibility older operating systems like 
 6. DC encrypt the `nouce/challenge`  itself with its stored version of the NTLM hash to make a comparison with the forwarded `response`
 
 ## Kerberos Authenication
-For detailed explainations of [[Active-Directory-Kerberos-Defined]] and for [[Attacking-Kerberos]] follow the links. The Kerberos authentication protocol used by Microsoft is adopted from the Kerberos version 5 authentication protocol created by MIT and has been used as Microsoft's primary authentication mechanism since Windows Server 2003. It uses a ticket system to ensure an intermediary gatekeeping by the DC as role of key distribution (KDC) for service usage from non-DCs. A example of this process is outlined in [[Active-Directory-Kerberos-Defined]].
+For detailed explainations of [[Active-Directory-Kerberos-Authenication-Defined]] and for [[Attacking-Kerberos]] follow the links. The Kerberos authentication protocol used by Microsoft is adopted from the Kerberos version 5 authentication protocol created by MIT and has been used as Microsoft's primary authentication mechanism since Windows Server 2003. It uses a ticket system to ensure an intermediary gatekeeping by the DC as role of key distribution (KDC) for service usage from non-DCs. A example of this process is outlined in [[Active-Directory-Kerberos-Authenication-Defined]].
 
 
 ## References

@@ -1,6 +1,6 @@
-# ACTIVE DIRECTORY
+# Active Directory Defined
 
-This is 101 ground-up and top-down explanation information cheatsheet and a hub for all concepts I have found researching Active Directory. For [[AD-Exploitation-Hub]] and further more specified reading follow the link, for [[Active-Directory-Privilege-Escalation]]. If you want to build AD go [[Active-Directory-Lab]]. 
+This is 101 ground-up and top-down explanation information cheatsheet and a hub for all concepts I have found researching Active Directory. For [[AD-Exploitation-Hub]] and further more specified reading follow the link, for [[Active-Directory-Privilege-Escalation]], but general enumeration [[Active-Directory-Enumeration-Defined]] and [[Active-Directory-Enumeration-Cheatsheet]].  If you want to build AD go [[Active-Directory-Lab]] then you can practice administrating it with nice on going checklist of general management see [[Active-Directory-Administration]].
 
 
 ## AD Defined:
@@ -12,8 +12,10 @@ AD Components:
 1. Forests, Trees, Domains
 2. Organisation Units - System folders containers to store and group objects. Each AD Object has attributes.
 	1. Users 
-	1. Groups 
-	2. Workstations and Servers that are domain-joined
+		1. People
+		2. Services - applications hosted within the Domain
+	2. Groups 
+	3. Machines - Workstations and Servers that are domain-joined
 1. Trusts
 2. Policies 
 3. Domain Services
@@ -58,35 +60,28 @@ Organisation Units				 /  (OUs)		(OUs)
 
 Often clients on a internal network are connectioned vai one of the DC as the gateway to the external forests or tree. Internal OUs are also internal member servers(web servers, database servers, etc) and printers reside accessable the DC within their local internal network. It reliant on Domain Name System (check[[DNS-Defined]]) typically with DC will also host a DNS server.
 
- 
-### Forest 
-Forests are self-contained and provides all required services as the highest-level component, caegorizing the parts of the network as a whole.
+Object by Hierarchy  |  Description
+--- | ---
+Forest | Forests are self-contained and provides all required services as the highest-level component, caegorizing the parts of the network as a whole.
+Trees | Trees are a hierarchy of domains in Active Directory Domain Services
+Domains | Domains are used to group and manage objects 
+Organizational Units (OUs) | OUS defined as *CONTAINERS* for groups, computers, users, printers and other OUs
 
-### Trees
-Trees are a hierarchy of domains in Active Directory Domain Services
+## Domain Trusts
 
-### Domains
-Domains are used to group and manage objects 
+Trusts define the interactions that are possible between domains inside of a forest, even external domains or forest. The type of trusts between domains, trees in a forest or external to it can be use to traverse laterally throughout the network.  
 
-### Organizational Units (OUs)
-OUS defined as *CONTAINERS* for groups, computers, users, printers and other OUs
-
-### Domain Trusts
-
-Trusts are mechanism for user users to access other resources in their domain and other domains.
-Trusts define the interactions that are possible between domains inside of a forest, even external domains or forest.
-The type of trusts between domains, trees in a forest or external to it can be use to traverse laterally throughout the network.  
 Type:  
-Directional: Direction of trust flows from a trusting domain to a trusted domain  
-Transitive: The trust relationship expands beyond two domains to include other trusted domains  
+- Directional: Direction of trust flows from a trusting domain to a trusted domain  
+- Transitive: The trust relationship expands beyond two domains to include other trusted domains  
 
-### Domain Policies
+## Domain Policies
 
 Policies are like groups, but they are sets of rules of operation that apply to the domain as a whole. There are default domain policy and Domain Admin can add, remove, modify these tules when necessary to uphold the integrity of the network.
 
 #### Group Policy Objects
 
-GPOs are used to managing many settings, Local GPOs for local machine and AD GPOs. They are configured through Active Directory. GPOs are series of XML files that contain settings and configurations for a multitude of applications and options in Windows. When created a GPO is stored in the SMB path `\\domain controller host name>\sysvol`. All members of the Authenticated Users, Domain Users, and Domain Computers group have read permissions to SYSVOL.
+GPOs are used to managing many settings, Local GPOs for local machine and AD GPOs. They are configured through Active Directory's `Group Policy Management`. GPOs are series of XML files that contain settings and configurations for a multitude of applications and options in Windows. When created a GPO is stored in the SMB path `\\domain controller host name>\sysvol`. All members of the Authenticated Users, Domain Users, and Domain Computers group have read permissions to SYSVOL.
 Any account and Domain-joined computers  can read `SYSVOL`, it is located on the DC and is a shared folder storing the Group Policy Objects (GPOs).
 
 GPOs are processed in the following order:
@@ -95,10 +90,9 @@ GPOs are processed in the following order:
 1. OU (parent, then child)
 
 **The GPO which is applied last will be the effective one**
-GPOs in AD work by each domain-joined computer, updated from the DC **EVERY**90mins. Or with command: `gpupdate /force`
+GPOs in AD work by each domain-joined computer, updated from the DC **EVERY** 90mins. Or with command: `gpupdate /force`
 
-
-### Objects
+## Objects
 
 Objects are defined as users, groups, printers, computers, shares; Microsoft love Object Oriented everything. The default containers:
 
@@ -110,17 +104,17 @@ Domain Controllers | Default OU containing the network DC
 Users | Defult users and groups applicable to domain wide context
 Manage Service Accounts | Accounts used by services in the domain
 
-**OUs are not Security Groups and Security Groups are not OUs.**
-Security Groups used to **assign permissions** to shared resources.
-OUs are for **applying policies** 
+- **OUs are not Security Groups and Security Groups are not OUs.**
+- Security Groups used to **assign permissions** to shared resources.
+- OUs are for **applying policies**.
 
-#### Machine
+#### Machines
 
 Machines are objects in Active Directory are **objects** known security principals (see [Documentation](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/manage/understand-security-principals)) and are assign an account with limit rights within the domain. Naming conventions `( machine name ) DC01 -> DC01$ ( machine account )`  
 
 Machine Account passwords are automatically rotated out and are generally comprised of 120 random characters.
 
-#### Active Directory Users
+#### Active Directory Users￼￼IP vs H
 
 Users are either people or services, Users are **objects** known security principals (see [Documentation](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/manage/understand-security-principals))
 
@@ -155,7 +149,7 @@ S = literal "S"
 R = revision level (usually set to 1)
 I = identifier-authority (usually 5 in AD)
 SA = one or more sub authority value
-
+IP vs H
 Sub authority value is dynamic and consists tof two primary parts: 
 /	Domain's numeric identifier 	-22-1234-1234-1234 
 	Relative identifier(RID) 	-1010
@@ -222,7 +216,7 @@ Lightweight Directory Access Protocol (LDAP) is one the [[Network-Services]] ver
 Domain Schema are rules for object creation
 
 ## Domain Authentication
-[[Active-Directory-Authentication]] is detailed in the aforemented article, although a brief summary of both mechanism for the context of this article is also provided here. NTLM is the default Windows authentication protocol uses an encrypted challenge/response protocol. Whereas Kerberos Ticket System authenciation, discuss at length with related information in [[Active-Directory-Kerberos-Defined]] see [[Attacking-Kerberos]]
+[[Active-Directory-Authentication]] is detailed in the aforemented article, although a brief summary of both mechanism for the context of this article is also provided here. NTLM is the default Windows authentication protocol uses an encrypted challenge/response protocol. Whereas Kerberos Ticket System authenciation, discuss at length with related information in [[Active-Directory-Kerberos-Authenication-Defined]] see [[Attacking-Kerberos]]
 		
 ### Cloud AD
 

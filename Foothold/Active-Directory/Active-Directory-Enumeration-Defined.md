@@ -10,13 +10,9 @@ net user *admin* /domain # information about the admin
 net group /domain # All groups in domain - DC is sometimes required
 ```
 
-[[Useful_Powershell]] cmdlets for AD `Get-ADUser` are only installed by default on the DC with [RSAT](https://docs.microsoft.com/en-us/previous-versions/technet-magazine/gg413289(v=msdn.10)?redirectedfrom=MSDN), see [[Active-Directory-Privilege-Escalation]] and [[Useful_Powershell]] for more cmdlets and commands. They maybe install on Windows 7- onwards, but require Administrative privileges to utilize. But [[Basic_Powershell]] is a useful tool installed by default regardless for administrative scripting and automation. 
+[[Useful_Powershell]] cmdlets for AD `Get-ADUser` are only installed by default on the DC with [RSAT](https://docs.microsoft.com/en-us/previous-versions/technet-magazine/gg413289(v=msdn.10)?redirectedfrom=MSDN), see [[Active-Directory-Privilege-Escalation]] and [[Useful_Powershell]] for more cmdlets and commands. They maybe installed on Windows 7-\* onwards, but require Administrative privileges to utilize. Regardless [[Basic_Powershell]] is a useful tool installed by default regardless for administrative scripting and automation. 
 
-[ADAPE](https://github.com/hausec/ADAPE-Script)
-For User, Group and Nested Group enumeration see, the above is better but this also a perfect place to remind myself to keep added to this to learn Powershell(Probably going to translate to Csharp also) AD:
-[My AllTheHackingScripts has AD Enumeration](https://github.com/7RU7H/AllTheHackingScripts/blob/main/powershell/ADtruth.ps1)
-
-Currently Logged on users that are of important groups have credentials cached in memory that could be stolen and used to authenticate with them to perform [[Active-Directory-Lateral-Movement]] or for interacting with [Service principle names](https://docs.microsoft.com/en-us/windows/win32/ad/service-principal-names?redirectedfrom=MSDN) and [[Attacking-Kerberos]] or any other [[Active-Directory-Footholding]]. For more information on the mechanics of Kerberos  [[Active-Directory-Kerberos-Defined]].
+Currently Logged on users that are of important groups have credentials cached in memory that could be stolen and used to authenticate with them to perform [[Active-Directory-Lateral-Movement]] or for interacting with [Service principle names](https://docs.microsoft.com/en-us/windows/win32/ad/service-principal-names?redirectedfrom=MSDN) and [[Attacking-Kerberos]] or any other [[Active-Directory-Footholding]]. For more information on the mechanics of Kerberos  [[Active-Directory-Kerberos-Authenication-Defined]].
 
 Reliable functions  `NetWkstaUserEnum`(requires Administrative privileges returns a list of active users on a workstation) and `NetSessionEnum`(does not, returns list of list of active user sessions on servers). Use `NetWkstaUserEnum` post-`NT SYSTEM Level`- Only useful for users the local administrator privileges over that are logged on. Use `NetSessionEnum` enumerate all active users' sessions. Similiarly and much more extensive enumeration with [Powerview](https://github.com/PowerShellMafia/PowerSploit/blob/dev/Recon/PowerView.ps1) can be utilised to great affect in information gathering. Link to: [[Powercat-Cheatsheet]].
 
@@ -33,7 +29,7 @@ Domain user account may be required to provide the service accounts more access 
 By enumerating all [SPN](https://docs.microsoft.com/en-us/windows/win32/ad/service-principal-names?redirectedfrom=MSDN)s in the domain we get: IP and ports running applications intergated on AD servers, without scanning the network.
 
 ## Microsoft Management Console
-If access to RDP you can enumerate with Microsoft Management Console (MMC) with the [Remote Server Administration Tools](https://docs.microsoft.com/en-us/powershell/module/activedirectory/?view=windowsserver2022-ps) (RSAT) AD Snap-Ins,  see [[Windows-Remote-Server-Administration-Tools]]
+If you have access to RDP you can enumerate with Microsoft Management Console (MMC) with the [Remote Server Administration Tools](https://docs.microsoft.com/en-us/powershell/module/activedirectory/?view=windowsserver2022-ps) (RSAT) AD Snap-Ins,  see [[Windows-Remote-Server-Administration-Tools]]
 for installation, configuration REQUIRED for futher enumeration and other details.
 
 With the configure discussed in the local article we can use this tool like an Admin to view in Object Heirarchy to gather information
@@ -90,6 +86,35 @@ Bloodhound allows Attackers and Defenders to visualize an AD network in a graph 
 Sharphound is the collection tool that enumerate the network and compress it in .zip file for exfiltration. See more at [[Neo4j-And-Bloodhound-Guide]].
 
 **Beware the bugs! - Git clone bloodhound and sharphound**
+
+
+## Credential Injection - Found Creds? Do...
+
+Use runas.exe
+```powershell
+runas.exe /netonly /user:<domain>\<username> cmd.exe
+```
+
+IF internal DNS is configured automative through DHCP or VPN, using the IP for DNS server (usually a DC) of the target network
+```powershell
+$dnsip = "<DNS Server IP>"
+$index = Get-NetAdapter -Name '<interface-name>' | Select-Object -ExpandProperty 'ifIndex'
+Set-DnsClientServerAddress -InterfaceIndex $index -ServerAddresses $dnsip
+```
+
+**IP vs Hostnames**
+
+Command  | Network Protocol | Authentication 
+--- | --- | ---
+`dir \\<DC IP>\SYSVOL` | IP | NTLM
+`dir \\domain_name\SYSVOL` | DNS | Kerberos authentication
+
+
+## Mitigations
+- Use LogOn Events frequency over time to monitor for malicious activity - Find the SharpHound
+- Signature Detection Rules for tools
+- Monitor Command Prompt and Powershell usage if not used by organisation's employees. 
+
 
 ## References
 [THM Enumerating AD room](https://tryhackme.com/room/adenumeration)

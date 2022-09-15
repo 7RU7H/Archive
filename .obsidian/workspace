@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Brain-Hacking/Black-Box-Method.md",
+            "file": "Foothold/Active-Directory/Active-Directory-Enumeration-Cheatsheet.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Brain-Hacking/Black-Box-Method.md",
+                "file": "Foothold/Active-Directory/Active-Directory-Enumeration-Cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "18cd69cd665739f4",
   "lastOpenFiles": [
-    "Brain-Hacking/Improve-Your-Learning.md",
-    "Brain-Hacking/Black-Box-Method.md",
-    "Coding-Scripting-Programming/Functional-Programming.md",
-    "Security-Enterprises/Penetration-Testing.md",
-    "Coding-Scripting-Programming/Bash/Useful_Bash.md",
-    "Social-Engineering/Phishing/Phishing.md",
-    "Social-Engineering/Phishing/Phishing-Email-Header-Analysis.md",
-    "Social-Engineering/Phishing/Phishing-Infrastructure.md",
-    "Social-Engineering/Phishing/Phishing-With-GoPhish.md",
-    "Social-Engineering/Phishing/Phishing-Writing-Phishing-Emails.md"
+    "Foothold/Active-Directory/Active-Directory-Offensive-Enumeration-With-WMI.md",
+    "Foothold/Active-Directory/Active-Directory-Enumeration-Cheatsheet.md",
+    "Foothold/Active-Directory/Active-Directory-Enumeration-Defined.md",
+    "Windows/Active-Directory/Active-Directory-Defined.md",
+    "Windows/Active-Directory/Active-Directory-Authentication.md",
+    "Foothold/Foothold-Enumeration.md",
+    "Foothold/Active-Directory/Active-Directory-Footholding.md",
+    "Cyberwarfare/Theory/The-Grugq-Is-Powerful-Cyberwarfare-Resource.md",
+    "Hacker-Distros/Kali/Setup-Services/Kali-Setup-Rogue-LDAP-Server.md",
+    "Windows/Active-Directory/Active-Directory-Kerberos-Authenication-Defined.md"
   ]
 }

@@ -1,4 +1,4 @@
-# Kerberos Defined
+# Kerberos Authenication Defined
 The Kerberos authentication protocol used by Microsoft is adopted from the Kerberos version 5 authentication protocol created by MIT and has been used as Microsoft's primary authentication mechanism since Windows Server 2003. Used to facilitate both authenication and authorization in Active Directory. DC acts a Key Distribution Centre(KDC) to authenicate client and allow authorization.
 Ticket sytem:
 

@@ -1,15 +1,19 @@
 # Gaining a Foothold on Active Directory
-For enumeration see [[Active-Directory-Enumeration-Defined]] or general theory and definitions [[Active-Directory-Defined]]. For commands cheatsheet [[Active-Directory-Commands]] or for Privilege Escalation see [[Active-Directory-Privilege-Escalation]]. See [[Attacking-Kerberos]] for exclusively Kerberos related and information on the mechanics of Kerberos  [[Active-Directory-Kerberos-Defined]].
+For enumeration see [[Active-Directory-Enumeration-Defined]] or general theory and definitions [[Active-Directory-Defined]]. For commands cheatsheet [[Active-Directory-Commands]] or for Privilege Escalation see [[Active-Directory-Privilege-Escalation]]. See [[Attacking-Kerberos]] for exclusively Kerberos related and information on the mechanics of Kerberos  [[Active-Directory-Kerberos-Authenication-Defined]].
 
-## NTLM Authenticated Services
+## NTLM & NetNTLM Authenticated Services
 New Technology LAN Manager(NTLM) is a family of authentication protocols used to authenticate identities of users in the context of Active Directory network. Services use Windows' challenge-response protocol  called netNTLM. Allowing  services exposable to the internet authenicating on behalf of a client not client directly authenicating to Domain Controller. 
+- RDP
+- Internal-Hosted Email 
+- Exposed VPN endpoints integrated intp AD
+- Intenert expose Web applications that use NetNTML 
 
 
 - **Bruteforce**
 [[Hydra-Cheatsheet]], [[Medusa-Cheatsheet]], [[Brutespray-Cheatsheet]], [[Crowbar-CheatSheat]]
 
 ## LDAP Bind Credentials
-Lightweight Directory Access Protocol (LDAP) is a vendor-neutral application protocol for accessing and maintaining distributed directory information services over IP.  In the context of Active Directory it used as authentication where an application directly verifies the user's credentials. LDAP authenication is used in AD contexts to integrate third-party applications with AD. For more see [[LDAP-Recon]]
+Lightweight Directory Access Protocol (LDAP) is a vendor-neutral application protocol for accessing and maintaining distributed directory information services over IP.  In the context of Active Directory it is used as an authentication mechanicanism where an application directly verifies the user's credentials. LDAP authenication is used in AD contexts to integrate third-party applications with AD. For more see [[LDAP-Recon]].
 
 #### LDAP Authentication
 
@@ -54,11 +58,10 @@ sudo tcpdump -SX -i $interface tcp port 389
 
 [Medium: Pwning Printers with LDAP Pass-Back Attack](https://medium.com/r3d-buck3t/pwning-printers-with-ldap-pass-back-attack-a0d8fa495210)
 
-##  Authentication Relays
-Server Message Block(SMB) protocol allows client-server communication and is used AD networks various utilities and administration. Previous versions have numerous vulnerabilities and exploits, some setting run legacy systems that do not support newer versions of SMB. For more SMB related recon see [[SMB-Recon-Cheatsheet]]
+## Authentication Relays
+Server Message Block(SMB) protocol allows client-server communication and is used in AD networks various utilities and administration. Previous versions have numerous vulnerabilities and exploits, some setting run legacy systems that do not support newer versions of SMB. For more SMB related recon see [[SMB-Recon-Cheatsheet]].
 
 - **Intercepting NetNTLM Challenge**
-
 
 Use [[Responder-Cheatsheet]] to poison the responses during NetNTLM authentication tricking the client to communicate with responder not the server. On a real LAN, Responder will attempt to poison any  Link-Local Multicast Name Resolution (LLMNR),  NetBIOS Name Servier (NBT-NS), and Web Proxy Auto-Discovery (WPAD) requests that are detected.
 
@@ -82,7 +85,9 @@ sudo responder -I $interface
 9. Attacker sends Access Denied error to user
 10. Attacker accesses server resources
 
-##  Microsoft Deployment Toolkit
+
+## Microsoft Deployment Toolkit
+
 [Microsoft Deployment Toolkit](https://www.microsoft.com/en-gb/download/details.aspx?id=54259) (MDT) is a Microsoft service that assists with automating the deployment of Microsoft Operating Systems (OS), it was once commonly integrated with Microsoft's System Center Configuration Manager (SCCM) now rebranded, but basically the same as SCCM under [Microsoft Endpoint Manager](https://docs.microsoft.com/en-us/mem/) (MEM). MEM manages all updates for all Microsoft applications, services, and operating systems, whereas the MDT manages preconfiguration that so IT just connects the machine to the AD network and automation of boot image loading, updating and configuration occurs with MEM. 
 
 For Attackers this is a valuable target to control as the scope of the system control is large and would allow for generating persistence after a cleanup or any new machines and lower level attacks against preconfiguring at boot level. 
@@ -140,15 +145,15 @@ Depending on the host various configuration files contain useful in extracting A
 -   Registry keys
 -   Centrally deployed applications - these usually need to authenicate to the domain during installation and execution 
 
-Scripts like:
+Can be used to automated this process with scripts like:
 [Seatbelt](https://github.com/GhostPack/Seatbelt)
 
-Can be used to automate this process.
+
 
 ## Mitigation
 1. User awareness and training about disclosing sensitive information and not trusting suspicious emails
 2. Limit exposure of AD services and application from the Internet
-3. Enforce Network Access NAC  to prevent rogue devices
+3. Enforce Network Access NAC to prevent rogue devices
 4. Enforce SMB signing - prevent relay attacks
 5. Principle of least privileges 
 

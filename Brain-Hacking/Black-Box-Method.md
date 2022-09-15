@@ -22,10 +22,6 @@ Reason to note down the aspects of what are learning and apply [[Improve-Your-Le
 Some problems should not be Black Boxed as they respond to interaction by making it impossible to solve - Firewalls, AV or any detection mechanism that is design to prevent you hacking it.
 
 
-
-
-
-
 ## References
 
 [Colin Galen's Youtube Video](https://www.youtube.com/watch?v=RDzsrmMl48I)

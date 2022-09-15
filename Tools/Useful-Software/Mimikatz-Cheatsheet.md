@@ -18,7 +18,7 @@ lsadump::sam # Dump SAM database
 ```
 
 ## Kerberos Attacks
-Used in [[Attacking-Kerberos]] see the detailed mechanics of Kerberos and [[Active-Directory-Kerberos-Defined]]. It is credential base so understanding [[Active-Directory-Authentication]] in part for  [[Active-Directory-Privilege-Escalation]] and [[Active-Directory-Lateral-Movement]] as it is capable of command execution.
+Used in [[Attacking-Kerberos]] see the detailed mechanics of Kerberos and [[Active-Directory-Kerberos-Authenication-Defined]]. It is credential base so understanding [[Active-Directory-Authentication]] in part for  [[Active-Directory-Privilege-Escalation]] and [[Active-Directory-Lateral-Movement]] as it is capable of command execution.
 
 ### Kerberos Tickets
 ```powershell
