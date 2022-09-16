@@ -2,6 +2,7 @@
 SMB oringally ran on top of NetBIOS using port 139. NetBIOS is an older transport layer that allows Windows computer to communicate on the same network. Later versions of SMB(after Windows 2000) use port 445 on top of a TCP stack, TCP allows for internet communication.
 
 ## smbmap
+Shows Share **Permissions** and Comment
 ```bash
 smbmap -H $IP
 smbmap -H $IP -u user -p password # requires credentals

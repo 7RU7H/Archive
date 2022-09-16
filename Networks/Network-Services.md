@@ -4,7 +4,7 @@
 File transfer protocol, client-server model
 1. Port 20 for data
 2. Port 21 for commands 
-3. can connect similar with telnet client with port number!
+3. Can connect similar with telnet client with port number!
 ```
 wget -r ftp://[username]:[password]@[ip]/
 ftp ip
@@ -24,8 +24,8 @@ get file
 put file	upload files!
 ```
 
-## 22 SSH
-Default port 22 
+## 22 - SSH & SFTP - Submodule of ssh
+Default port 22 - Secure File transfer protocol 
 [[SSH-Cheatsheet]]
 ```
 -i	access with private key
@@ -36,8 +36,6 @@ Default port 22
 -p      port
 ```
 
-## 22 - SFTP - submodule of ssh
-Secure File transfer protocol port 22 
 
 ## 23 - TELNET
 Generall port 23, Telnet is cleartext and unsecure!
@@ -58,11 +56,10 @@ For recon: [[SMTP-Recon-Cheatsheet]], for [[Mail-Operations]]
 ```bash
 telnet $ip
 nc -nv $IP
-
 ```
 
 ## 48 - WHOIS 
-//generally 48
+
 
 ## 53 - DNS
 Default port 53
@@ -72,13 +69,15 @@ Default port 53
 Stands for trivial file transfer protocol - UDP FTP
 PXE Boot uses this Boot image retrieval/loading useful in [[Active-Directory-Footholding]]
 
+## 79 - Finger 
+[Finger](https://en.wikipedia.org/wiki/Finger_(protocol))
 
 ## 80 - HTTP
 Default  port 80
 
 [[Web-Hacking-Checklist]], [[Website-Recon]] and [[Web-App-Hacking-Methodology]].
 
-## 110 POP3
+## 110 - POP3
 Generally port 110, Post Office Protocol 3 is used to download email from mail delivery agent.
 ```
 MDA -- from MUA -(smtp)-> MSA/MTA -> SMTP -> MTA/MDA -(POP3/IMAP)-> MUA
@@ -115,7 +114,7 @@ Port | Purpose
 139(TCP) | netbios-ssn 
 445(TCP) | microsoft-ds
 
-## IMAP
+## 143 - IMAP
 //generally 143
 
 ## 389 - LDAP
@@ -128,10 +127,10 @@ Default port 389
 //internet messaging access protocol
 //default port 443
 
-SMTPS
-//default port 465
+## 465 - SMTPS
+//default port 
 
-HTTP-ALT
+## 591- HTTP-ALT
 //default 591
 
 IPP
@@ -143,6 +142,9 @@ FTPS
 
 IMAPS
 //default port 993
+
+## 995 - POP3S
+[[Mail-Operations]]
 
 ## 2049 (also 111) - NFS
 [[NFS-Recon]]
@@ -159,8 +161,7 @@ sudo mount -o nolock port=1234 -t nfs $ip:/dir /tmp/local
 umount $ip:/local/file/path	
 ```
 
-## 995 - POP3S
-[[Mail-Operations]]
+
 
 ## 3306 - MySQL
 `mysql -h ip -u user -p`

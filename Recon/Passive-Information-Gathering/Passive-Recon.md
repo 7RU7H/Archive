@@ -9,7 +9,7 @@ This is a hub page for linking all of a specific directory structure.
 [[Passive-Recon.md]]
 [[Search-Engine-Dorking.md]]
 [[Website-Recon.md]]
-[[geolocating.md]]
+[[Geolocating]]
 [[Recon-ng.md]]
 [[Shodan.md]]
 [[theHarvester.md]]

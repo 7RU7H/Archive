@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Foothold/Active-Directory/Active-Directory-Enumeration-Cheatsheet.md",
+            "file": "Packet-Analysis/Packet-Analysis.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Foothold/Active-Directory/Active-Directory-Enumeration-Cheatsheet.md",
+                "file": "Packet-Analysis/Packet-Analysis.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -87,17 +87,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "18cd69cd665739f4",
+  "active": "ed8f63df71621be6",
   "lastOpenFiles": [
-    "Foothold/Active-Directory/Active-Directory-Offensive-Enumeration-With-WMI.md",
-    "Foothold/Active-Directory/Active-Directory-Enumeration-Cheatsheet.md",
-    "Foothold/Active-Directory/Active-Directory-Enumeration-Defined.md",
-    "Windows/Active-Directory/Active-Directory-Defined.md",
-    "Windows/Active-Directory/Active-Directory-Authentication.md",
-    "Foothold/Foothold-Enumeration.md",
-    "Foothold/Active-Directory/Active-Directory-Footholding.md",
-    "Cyberwarfare/Theory/The-Grugq-Is-Powerful-Cyberwarfare-Resource.md",
-    "Hacker-Distros/Kali/Setup-Services/Kali-Setup-Rogue-LDAP-Server.md",
-    "Windows/Active-Directory/Active-Directory-Kerberos-Authenication-Defined.md"
+    "Post-Exploitation/Privilege-Escalation/Windows/PowerSploit-PowerUp-Helpsheet.md",
+    "Tools/Impacket/Impacket-Cheatsheet.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
+    "Post-Exploitation/Privilege-Escalation/Privilege-Escalation-Defined.md",
+    "Recon/Active-Information-Gathering/Responder-Cheatsheet.md",
+    "Services/Databases/MSSQL/MSSQL-Hacking.md",
+    "Recon/Active-Information-Gathering/SMB/RPCClient-Cheatsheet.md",
+    "Windows/Windows-Concepts/Windows-File-System.md",
+    "Recon/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md"
   ]
 }

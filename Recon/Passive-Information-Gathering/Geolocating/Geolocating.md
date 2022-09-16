@@ -1,4 +1,4 @@
-# geolocating
+# Geolocating
 
 ## General Jpeg lookup 
 [yandex](https://yandex.com)
