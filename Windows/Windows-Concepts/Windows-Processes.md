@@ -2,6 +2,8 @@
 
 [From](https://docs.microsoft.com/en-us/windows/win32/procthread/about-processes-and-threads): *"Each process provides the resources needed to execute a program. A process has a virtual address space, executable code, open handles to system objects, a security context, a unique process identifier, environment variables, a priority class, minimum and maximum working set sizes, and at least one thread of execution."*
 
+Remember to consider modern CPUs and [[Threading]]
+
 ## Process Component Purposes
 Process Component 	|	Purpose
 --- | ---
@@ -186,3 +188,9 @@ The new Microsoft Edge web browser, the successor of Internet Explorer. Microsof
     The Host Process svchost.exe starts a fourth executable file called browser_broker.exe.
     This time Microsoft is following its own design traditions and has stored the file in the well-known path %systemroot%\system32.
 
+
+
+## References
+
+[THM Windows Internals Room](https://tryhackme.com/room/windowsinternals)
+[Win32 about-processes-and-threads documentation](https://docs.microsoft.com/en-us/windows/win32/procthread/about-processes-and-threads)

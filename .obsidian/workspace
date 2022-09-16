@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Packet-Analysis/Packet-Analysis.md",
+            "file": "Windows/Windows-Concepts/Windows-API.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "DLL",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Packet-Analysis/Packet-Analysis.md",
+                "file": "Windows/Windows-Concepts/Windows-API.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -87,17 +87,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "ed8f63df71621be6",
+  "active": "18cd69cd665739f4",
   "lastOpenFiles": [
-    "Post-Exploitation/Privilege-Escalation/Windows/PowerSploit-PowerUp-Helpsheet.md",
-    "Tools/Impacket/Impacket-Cheatsheet.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
-    "Post-Exploitation/Privilege-Escalation/Privilege-Escalation-Defined.md",
-    "Recon/Active-Information-Gathering/Responder-Cheatsheet.md",
-    "Services/Databases/MSSQL/MSSQL-Hacking.md",
-    "Recon/Active-Information-Gathering/SMB/RPCClient-Cheatsheet.md",
-    "Windows/Windows-Concepts/Windows-File-System.md",
-    "Recon/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md"
+    "Windows/Windows-Concepts/Windows-Kernel.md",
+    "Windows/Windows-Concepts/Windows-Important-Directories.md",
+    "Windows/Windows-Concepts/Windows-API.md",
+    "Windows/Windows-Concepts/Windows-Processes.md",
+    "Windows/Windows-Concepts/Windows-PortableExecFormat.md",
+    "Windows/Windows-Concepts/Windows-VirtualMemory.md",
+    "Windows/Windows-Concepts/Dynamic-Link-Libraries.md",
+    "Windows/Windows-Networking.md",
+    "Threading.md",
+    "Packet-Analysis/Packet-Analysis.md"
   ]
 }

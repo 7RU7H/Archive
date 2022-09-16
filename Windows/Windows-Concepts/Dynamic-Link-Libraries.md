@@ -28,3 +28,8 @@ With run-time dynamic linking:
 	Once loaded, GetProcAddress is required to identify the exported DLL function to call
 
 In malicious code, threat actors will often use run-time dynamic linking more than load-time dynamic linking. This is because a malicious program may need to transfer files between memory regions, and transferring a single DLL is more manageable than importing using other file requirements.
+
+
+## References
+
+[THM Windows Internals Room](https://tryhackme.com/room/windowsinternals)

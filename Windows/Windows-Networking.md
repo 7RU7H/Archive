@@ -58,10 +58,10 @@ but one of the more prominent features is the ability to launch command prompts 
 
 netsh advfirewall set allprofiles state on # turn it all 
 
-C:\WINDOWS\system32>netsh advfirewall firewall add rule ?
+C:\\WINDOWS\\system32>netsh advfirewall firewall add rule ?
 
 The number of arguments provided is not valid. Check help for the correct syntax.
-
+```
 Usage: add rule name=<string>
       dir=in|out
       action=allow|block|bypass
@@ -83,6 +83,7 @@ Usage: add rule name=<string>
       [edge=yes|deferapp|deferuser|no (default=no)]
       [security=authenticate|authenc|authdynenc|authnoencap|notrequired
          (default=notrequired)]
+```
 
 
 # Services

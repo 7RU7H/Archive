@@ -11,3 +11,7 @@ The upper half (0x80000000 - 0xFFFFFFFF) is allocated to OS memory utilization.
 
 Administrators can alter this allocation layout for applications that require a larger address space through settings ((flag:)increaseUserVA) or the AWE (Address Windowing Extensions).
 
+
+## References
+
+[THM Windows Internals Room](https://tryhackme.com/room/windowsinternals)
