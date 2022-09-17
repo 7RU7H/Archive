@@ -1,7 +1,7 @@
 # SMTP Cheatsheet
 Simple Mail Transport Protocol (SMTP)
 Vulnerable Email Servers can contain valuable information. 
-See [[Network-Services]] for port information.
+See [[Networks/Network-Protocols]] for port information.
 
 ## Telenet
 ```bash

@@ -33,7 +33,6 @@ while(1) { cat index.html | nc -w1 -l -p 8080 }
 
 # HARDCORE GUI way:
 # Add ip to trusted sites and download
-# 
 ```
 [Add to trusted sites with powershell](https://stackoverflow.com/questions/51720030/ie-browser-powershell-script-to-add-site-to-trusted-sites-list-disable-protec)
 
@@ -50,7 +49,6 @@ Get-Command -Type Cmdlets | Measure-Object -Sum -ErrorAction SilentlyContinue
 Get-Alias		
 Set-Alias				 	# Make commands
 Set-Alias -Name helpmeplease -Value Get-help
-
 ```
 
 ## Providers and Modules
@@ -78,7 +76,6 @@ Get-ChildItem ENV:      # Display all environment variables
 ```powershell
 Get-ExecutionPolicy			
 Set-ExecutionPolicy -RemoteSigned	# -Flags -Name -ListAvailable
-
 ```
 
 ## Network information
@@ -128,7 +125,7 @@ Measure-Object -Sum -ErrorAction SilentlyContinue
 
 ## File and Directory interactions
 ```powershell
-## Reading and Writing ##
+## Reading and Writing 
 Get-Content							  # Reading file
 Get-Content -Path .\filename.FILETYPE # -Raw for raw file output
 
@@ -138,7 +135,7 @@ Expand-Archive -Path .\*.zip -DestinationPath C:\Destination # Expand a zip file
 Get-Location        # print working directory
 Set-Location 		# choose a directory for context to operate
 
-## File Hashing and checksums ##
+## File Hashing and checksums 
 # FILTERHASHTABLE 101:
 # Levels:
 # NAME            VALUE

@@ -1,5 +1,5 @@
 # NFS Recon
-Network File System is a distributed file system protocol originally developed by Sun Microsystems in 1984. It uses client-server model to access/share file storage over a network. It is insecure by it host's implementation. See [[Network-Services]] for port information.
+Network File System is a distributed file system protocol originally developed by Sun Microsystems in 1984. It uses client-server model to access/share file storage over a network. It is insecure by it host's implementation. See [[Networks/Network-Protocols]] for port information.
 
 RPCbind and Portmap run on port 111
 

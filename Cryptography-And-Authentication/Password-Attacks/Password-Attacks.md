@@ -136,7 +136,7 @@ Delimiter mutation | delimiters are added between characters
 
 ## Password Spray Attacks
 
-Password spraying is an effective technique used to identify valid credentials, used also for discovring weak passwords against authenication of various [[Network-Services]]. Common weak passwords often follow pattern and format like: `[season][currentyear]`
+Password spraying is an effective technique used to identify valid credentials, used also for discovring weak passwords against authenication of various [[Networks/Network-Protocols]]. Common weak passwords often follow pattern and format like: `[season][currentyear]`
 
 - **Tools**
 

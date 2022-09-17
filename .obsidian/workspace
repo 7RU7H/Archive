@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Windows/Windows-Concepts/Windows-API.md",
+            "file": "Coding-Scripting-Programming/Powershell/Useful_Powershell.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "DLL",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Windows/Windows-Concepts/Windows-API.md",
+                "file": "Coding-Scripting-Programming/Powershell/Useful_Powershell.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "18cd69cd665739f4",
   "lastOpenFiles": [
-    "Windows/Windows-Concepts/Windows-Kernel.md",
-    "Windows/Windows-Concepts/Windows-Important-Directories.md",
-    "Windows/Windows-Concepts/Windows-API.md",
-    "Windows/Windows-Concepts/Windows-Processes.md",
-    "Windows/Windows-Concepts/Windows-PortableExecFormat.md",
-    "Windows/Windows-Concepts/Windows-VirtualMemory.md",
-    "Windows/Windows-Concepts/Dynamic-Link-Libraries.md",
-    "Windows/Windows-Networking.md",
-    "Threading.md",
-    "Packet-Analysis/Packet-Analysis.md"
+    "Foothold/Active-Directory/Active-Directory-Enumeration-Cheatsheet.md",
+    "Exploitation/Windows/Active-Directory/AD-Kerberos-Delegation-Exploitation.md",
+    "Tools/Kekeo-Cheatsheet.md",
+    "Networks/Network-Protocols.md",
+    "Windows/Powerview/Powerview-Cheatsheet.md",
+    "Tools/Windows/AD-Hacking-Tools.md",
+    "Exploitation/Windows/Active-Directory/AD-Exploitation-Hub.md",
+    "Exploitation/Windows/Active-Directory/AD-Permissions-Delegation-Exploitation.md",
+    "Tools/Useful-Software/Nishang-Helpsheet.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md"
   ]
 }

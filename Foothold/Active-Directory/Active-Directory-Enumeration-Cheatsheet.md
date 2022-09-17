@@ -71,7 +71,7 @@ Get-EventLog -List
 Windows Defender
 ```powershell 
 Get-Service WinDefend
-# Check Windows Defender Enabled
+# Check Windows Defender Enabled but have
 Get-MpComputerStatus | Select RealTimeProtectionEnabled 
 Set-MpPreference -DisableRealtimeMonitoring $true
 

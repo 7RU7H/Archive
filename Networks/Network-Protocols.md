@@ -1,4 +1,4 @@
-# Network services
+# Network Protocols
 
 ## 20/21 - FTP
 File transfer protocol, client-server model
@@ -50,7 +50,6 @@ GET /page.html HTTP/1.1
 ```
 
 ## 25 - SMTP
-Generally 25
 Stands for Simple mail transfer protocol
 For recon: [[SMTP-Recon-Cheatsheet]], for [[Mail-Operations]]
 ```bash
@@ -70,7 +69,7 @@ Stands for trivial file transfer protocol - UDP FTP
 PXE Boot uses this Boot image retrieval/loading useful in [[Active-Directory-Footholding]]
 
 ## 79 - Finger 
-[Finger](https://en.wikipedia.org/wiki/Finger_(protocol))
+[Finger](https://en.wikipedia.org/wiki/Finger_(protocol)) user information protocol are simple for the exchange of human-oriented status and user information. Use [pentestmonkey finger-user-enum.pl](https://pentestmonkey.net/tools/user-enumeration/finger-user-enum)
 
 ## 80 - HTTP
 Default  port 80
@@ -129,6 +128,9 @@ Default port 389
 
 ## 465 - SMTPS
 //default port 
+
+## 515 LPD 
+Line Printer Daemon
 
 ## 591- HTTP-ALT
 //default 591

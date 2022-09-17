@@ -1,7 +1,7 @@
 # SNMP Cheatsheet
 
 Simple Network Management Protocol (SNMP) is based on UDP; stateless protocol making it to it is susceptible to IP spoofing and replay attacks.
-SNMP services misconfigurations lead to data leakages. It is meant to **manage** the network. SNMP protocols 1, 2, and 2c offer no traffic encryption and can be easily intercepted over a local network. For port information see [[Network-Services]].
+SNMP services misconfigurations lead to data leakages. It is meant to **manage** the network. SNMP protocols 1, 2, and 2c offer no traffic encryption and can be easily intercepted over a local network. For port information see [[Networks/Network-Protocols]].
 
 ## MIB Tree
 SNMP Management Information Base (MIB) is a database organised in tree based structure containing information usually related to network management. Leaves being the endpoints and the branches representing organisations or network functions.
