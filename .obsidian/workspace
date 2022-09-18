@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Coding-Scripting-Programming/Powershell/Useful_Powershell.md",
+            "file": "Windows/Windows-Concepts/Windows-API.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "msfvenom",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Coding-Scripting-Programming/Powershell/Useful_Powershell.md",
+                "file": "Windows/Windows-Concepts/Windows-API.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "18cd69cd665739f4",
   "lastOpenFiles": [
-    "Foothold/Active-Directory/Active-Directory-Enumeration-Cheatsheet.md",
-    "Exploitation/Windows/Active-Directory/AD-Kerberos-Delegation-Exploitation.md",
-    "Tools/Kekeo-Cheatsheet.md",
-    "Networks/Network-Protocols.md",
-    "Windows/Powerview/Powerview-Cheatsheet.md",
-    "Tools/Windows/AD-Hacking-Tools.md",
-    "Exploitation/Windows/Active-Directory/AD-Exploitation-Hub.md",
-    "Exploitation/Windows/Active-Directory/AD-Permissions-Delegation-Exploitation.md",
-    "Tools/Useful-Software/Nishang-Helpsheet.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md"
+    "Windows/Windows-Concepts/Windows-API.md",
+    "Windows-Runtime-Detection-Evasion.md",
+    "Exploitation/Windows/AMSI-Exploitation.md",
+    "Windows/Windows-Concepts/Windows-Runtime.md",
+    "Foothold/Reverse-Shells-Listing.md",
+    "Foothold/Foothold-Enumeration.md",
+    "Recon/Active-Information-Gathering/SMB/RPCClient-Cheatsheet.md",
+    "Recon/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
+    "Recon/Active-Information-Gathering/DNS/DNS-Recon-Active.md",
+    "Recon/Active-Information-Gathering/DNS/Fierce-Cheatsheet.md"
   ]
 }
