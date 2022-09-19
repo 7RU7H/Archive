@@ -84,7 +84,7 @@ fc		file compare
 
 
 reg		interact with registry
-regedit		gui for registry 
+regedit  	gui for registry 
 
 fsutil		tasks related to file allcation table(FAT) and NTFS file system, reparse points, sparse files, dismounting of volumes.
 	fsinfo
@@ -118,11 +118,11 @@ schtasks
     /Change    		Changes the properties of scheduled task.
     /Run     		Runs the scheduled task on demand.
     /End     	 	Stops the currently running scheduled task.
-    /ShowSid	        Shows the security identifier corresponding to a scheduled 
+    /ShowSid	    Shows the security identifier corresponding to a scheduled 
 
 tasklist # NOTE THAT PARENT PROCESS ENUMERATION IS BEST DONE WITH WMIC OR POWERSHELL
 	/FI		Filter by criteria
-	/SVC		Services hosted by each process
+	/SVC	Services hosted by each process
 	/S		Remote system specify
 	/M		List all or specified task using the given exe/dll
 	/V		Verbose SHOWS USERS

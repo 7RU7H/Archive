@@ -145,7 +145,11 @@ sed -i -e 's/[ \t]*//' Input				# remove tabs from a file
 sed -E 's/^([^,]*[,])//'					# remove after comma
 sed -i 's/^\#.*$//g' $FILE && sed -i '/^$/d' $FILE	# remove comments
 sed 's/\x27/\x22\g'	# replace all single x27 and double quotes x22 with hex escape characters 
+sed 's@^@// @' # insert a // comment at the start of each line
 ```
+
+
+
 #### seq
 ```bash
 seq $int		# print sequence of "$int\n" 

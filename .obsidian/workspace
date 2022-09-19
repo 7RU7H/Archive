@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Windows/Windows-Concepts/Windows-API.md",
+            "file": "Exploitation/Windows/Windows-Thread-Hijacking.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Windows/Windows-Concepts/Windows-API.md",
+                "file": "Exploitation/Windows/Windows-Thread-Hijacking.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "18cd69cd665739f4",
   "lastOpenFiles": [
+    "Antivirus-Evasion/Windows-Process-Hollowing.md",
+    "Exploitation/Windows/Exploiting-Windows-Internals.md",
+    "Exploitation/Windows/Windows-Thread-Hijacking.md",
+    "Exploitation/Windows/Windows-Shellcode-Injection.md",
+    "Linux/Linux-Commands/Linux-Module-Commands.md",
+    "Windows/Windows-Commands/Windows-CLI-cmd.md",
+    "Windows/Windows-Concepts/Windows-Processes.md",
+    "Antivirus-Evasion/Remote-Process-Memory-Injection.md",
     "Windows/Windows-Concepts/Windows-API.md",
-    "Windows-Runtime-Detection-Evasion.md",
-    "Exploitation/Windows/AMSI-Exploitation.md",
-    "Windows/Windows-Concepts/Windows-Runtime.md",
-    "Foothold/Reverse-Shells-Listing.md",
-    "Foothold/Foothold-Enumeration.md",
-    "Recon/Active-Information-Gathering/SMB/RPCClient-Cheatsheet.md",
-    "Recon/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
-    "Recon/Active-Information-Gathering/DNS/DNS-Recon-Active.md",
-    "Recon/Active-Information-Gathering/DNS/Fierce-Cheatsheet.md"
+    "Windows-Runtime-Detection-Evasion.md"
   ]
 }

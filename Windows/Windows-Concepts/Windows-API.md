@@ -9,7 +9,7 @@ Not to be confused with the [[Windows-Runtime]], [Win32 API](https://learn.micro
 [Wikipedia](https://en.wikipedia.org/wiki/Windows_API) article groups the functions provided by the Windows API into eigth catergories:
 - Base Services
 - Advanced Services
-- Graphics DEvice Interface
+- Graphics Device Interface
 - User Interface
 - Common Dialog Box Library
 - Common Control Library

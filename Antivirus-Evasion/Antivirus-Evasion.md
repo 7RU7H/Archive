@@ -90,7 +90,7 @@ Technique Name | Description | Links
 --- | --- | ---
 Remote Process Memory Injection | Injecting a payload in to system legitimised process | [[Remote-Process-Memory-Injection]]
 Reflective DLL Injection | Custom DLL loading a DLL from memory | [[Reflective-DLL-Injection]]
-Process Hollowing | Bootstrapping a non-malicious executable image in a suspended state, removing image and replcaing with a malicious executable image | [[Process-Hollowing]]   
+Process Hollowing | Bootstrapping a non-malicious executable image in a suspended state, removing image and replcaing with a malicious executable image | [[Windows-Process-Hollowing]]   
 Inline Hooking | Introducing control flow redirection | [[Inline-Hooking]]
 Process Doppelgänging |TxF transaction using legitimate executable then overwirting file with payload, create shared section of memory to load into, rollback changes to oringal exe, and then create process from malicious section of share memory | [[Process-Doppelganging]]
 
