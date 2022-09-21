@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Coding-Scripting-Programming/Powershell/Useful_Powershell.md",
+            "file": "Data-Ex&Infiltration/File-Transfers/Windows-File-Transfers.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Coding-Scripting-Programming/Powershell/Useful_Powershell.md",
+                "file": "Data-Ex&Infiltration/File-Transfers/Windows-File-Transfers.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "d4af83e0ef0535c0",
   "lastOpenFiles": [
-    "Hardening/Windows-Hardening.md",
-    "Coding-Scripting-Programming/Powershell/Useful_Powershell.md",
-    "README.md",
-    "Tools/Wordlists/Wordlist-Library.md",
-    "Web-Application-Hacking/Methodologies/Haddix-Methodology/Application-Analysis.md",
-    "Web-Application-Hacking/Content-Discovery/Content-Discovery.md",
-    "Web-Application-Hacking/Content-Discovery/FFUF-Cheatsheet.md",
-    "Web-Application-Hacking/XXS-Cheatsheet.md",
-    "Web-Application-Hacking/Cross-Site-Request-Forgery.md",
-    "Networks/Network-Protocols.md"
+    "Foothold/Windows-Living-Off-The-Land.md",
+    "Data-Ex&Infiltration/Data-Exfiltration/Data-Exfiltration-Defined.md",
+    "Tools/SysInternals/Sysmon/Sysinterals-Sysmon.md",
+    "Tools/SysInternals/Sysinternals-Hub.md",
+    "Foothold/Port-Redirection-And-Tunneling.md",
+    "Foothold/Bind-And-Reverse-Shells-Defined.md",
+    "Foothold/Shells.md",
+    "Foothold/Sandbox-Evasion.md",
+    "Foothold/Network-Infrastructure-Enumeration.md",
+    "Foothold/Foothold-Enumeration.md"
   ]
 }

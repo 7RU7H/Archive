@@ -1,6 +1,6 @@
 
 # Windows Events ToMonitor
-Using [[Sysmon-Events]] and [[Sysinteral-Sysmon]].
+Using [[Sysmon-Events]] and [[Sysinterals-Sysmon]].
 
 Applies to: Windows Server 2022, Windows Server 2019, Windows Server
 

