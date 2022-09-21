@@ -292,3 +292,9 @@ fi
 onebyte=10100101
 echo "$((2#$onebyte))"
 ```
+
+## Recursive Directory Making
+
+```bash
+mkdir -p ~/parent-directory/{child-directory-1,child-directory-2,child-directory-3}
+```

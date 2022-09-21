@@ -182,10 +182,11 @@ man <software>	manual page
 man -k keyword! or '^regex$'
 man int_section manual_name
 
-mkdir		create folder
-mkdir -p 	create directory tree
+mkdir		# create directory
+mkdir -p 	#create directory tree
+mkdir -p ~/parent-directory/{child-directory-1,child-directory-2,child-directory-3}
 
-more/less	cat alternative
+more/less	# cat alternative with scroll down
 
 mv 		move file or folder: mv arg1 arg2, merge or modify a2, a2 can also be a rename!
 mv * dir	move all files to dir!
@@ -193,14 +194,14 @@ mv * dir	move all files to dir!
 
 netstat		list any network activity on current system
 
-ps/		# process
+ps		# process
 ps -aef --forest # sacii art process tree
 ps -aux # -a - all with tty except session leaders; -u  -user orientated format; -x processes without controlling ttys
 
 
 pwd		# print working directory
 
-reset		reset shell
+reset		# reset shell
 
 rm 		remove file or folder, directories require -R switch: "rm -R dir"
 -r		recursive directory removal

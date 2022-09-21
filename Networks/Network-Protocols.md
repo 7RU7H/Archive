@@ -135,15 +135,14 @@ Line Printer Daemon
 ## 591- HTTP-ALT
 //default 591
 
-IPP
-//internet printing protocol
-//default port 631
+## 631 - IPP
+Internet printing protocol default port 631
 
-FTPS 
-//default port 990
+## 990 - FTPS 
+FTPS default port 990
 
-IMAPS
-//default port 993
+## 993 - IMAPS
+IMAPS default port 993
 
 ## 995 - POP3S
 [[Mail-Operations]]
@@ -196,15 +195,16 @@ Legacy application [Pando](https://en.wikipedia.org/wiki/Pando_(application)) Bi
 ## Burp Proxy
 Default port 8000, see [[Burpsuite-Helpsheet]]
 
-## 8009 - Tomcat HTTP proxy
+## 8009 - Various
 [[Apache-Tomcat]]'s default port 8009
-
-## 8009 Apache JServ Protocol
+Apache JServ Protocol
 
 
 
 ## 8080 - HTTP Alternate
 default 8080
+
+## 9000 - [Lots](https://www.speedguide.net/port.php?port=9000)
 
 
 ## 10000 - Webmin

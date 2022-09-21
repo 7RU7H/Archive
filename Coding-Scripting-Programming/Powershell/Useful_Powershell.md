@@ -152,8 +152,10 @@ CertUtil -hashfile [FILE] MD5|SHA256|SHA512
 Get-ChildItem # Aliased ls, dir, gci
 Get-ChildItem -Hidden
 Get-ChildItem -Path C:\ -Include *.doc,*.[FILETYPE] -File -Recurse -ErrorAction SilentlyContinue #Find all finds of a particular filetype:
-Get-ChildItem –Path C:\ -Include *HSG* -Exclude *.JPG,*.MP3,*.TMP -File -Recurse -ErrorAction SilentlyContinue # Find all find that include *"..."* BUT also exclude wildcard.Filetype
-Get-Childitem -Path C:\ -Recurse # Display pdirectory listing under a parent file, flag: recursive for recursive directory scrapping
+Get-ChildItem –Path C:\ -Include *HSG* -Exclude *.JPG,*.MP3,*.TMP -File -Recurse -ErrorAction SilentlyContinue # Find all find that include *"..."* BUT also exclude wildcard. Filetype
+Get-Childitem -Path C:\ -Recurse # Display directory listing under a parent file, flag: recursive for recursive directory scrapping
+gci -Filter "" –Directory |  % { $_.fullname } # Find directoies
+
 Get-Acl # Get owner of directory again careful of relative running from another directory
 
 Where-Object # TODO
@@ -177,21 +179,47 @@ Get-ScheduledTask [-Taskname] [-TaskPath]
 # Change executionpolicy
 Get-ExecutionPolicy
 Set-ExecutionPolicy bypass -scope process
+
+
 ```
 
 ## Services
 ```powershell
 # Display all the Automatic StartType Services
 Get-Service | Select-Object -Property ServiceName,DisplayName,ServiceType,StartType,Status | Sort-Object -Property Status -Descending | Where-Object {$_.StartType -EQ "Automatic" -And $_.ServiceName -Match "^s"} | Format-Table
+
+# Startup type
+Get-Service | select -Property Name, StartType
+Get-WmiObject -Query "Select StartMode From Win32_Service Where Name='winmgmt'"
 ```
 
 ## Registery
 ```powershell
+# Get Providers
+Get-PSProvider
+# Get Provider Drives
+
 # Making a new registery key
 cd HKLM:
 New-Item myKey
 New-ItemProperty -Path .\myKey\ -Name Test -Type DWORD -Value 1
 ```
+
+[Devblogs](https://devblogs.microsoft.com/powershell-community/how-to-update-or-add-a-registry-key-value-with-powershell/) provides a great script to to test the registry key path first, creating it if needed, then setting the value entry:
+```powershell
+# Set variables to indicate value and key to set
+$RegistryPath = 'HKCU:\Software\CommunityBlog\Scripts'
+$Name         = 'Version'
+$Value        = '42'
+# Create the key if it does not exist
+If (-NOT (Test-Path $RegistryPath)) {
+  New-Item -Path $RegistryPath -Force | Out-Null
+}  
+# Now set the value
+New-ItemProperty -Path $RegistryPath -Name $Name -Value $Value -PropertyType DWORD -Force 
+```
+
+
 
 ## Networking
 ```powershell
@@ -271,3 +299,7 @@ Enclose with:
  powershell -c "<code>"
 ```
 For the one liner.
+
+## References
+
+[devblogs.microsoft](https://devblogs.microsoft.com/scripting/)

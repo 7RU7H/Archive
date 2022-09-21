@@ -29,6 +29,11 @@ fg|bg %- = previous job
 
 ```
 
+## Fuser
+```bash
+sudo fuser -v <portnumber>/<protocol> 
+```
+
 ## PGREP
 ```bash
 pgrep [options] pattern # Grep for process IDs

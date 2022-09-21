@@ -30,6 +30,25 @@ upx brute <binary>
 ## Test Driven Development Template
 [[Go-Testdriven-Development]]
 
+## Golang Installation for Linux-Based Hacker Distros
+
+[Install Golang](https://go.dev/doc/install)
+```bash
+# Careful, <version> and Chip varience
+wget https://go.dev/dl/go1.<version>.tar.gz
+sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf <go.version.tar.gz>
+echo "export PATH=$PATH:/usr/local/go/bin" | sudo tee -a /etc/profile # or $HOME.profile for single user
+go version # verify
+# Export GOPATH & GOBIN
+GOPATH="$HOME/go"
+echo "" | tee -a ~/.<rc file of shell> 
+echo "# Golang GOPATH and GOBIN" | tee -a ~/.profile
+echo "export GOPATH=\"$HOME/go\"" | tee -a ~/.profile
+echo "export GOBIN=\"$GOPATH/bin\"" | tee -a ~/.profile
+
+```
+
+
 ## References
 [Official Compilation Tutorial](https://go.dev/doc/tutorial/compile-install)
 [Effective Go is a great article to write idiomatic Go Code](https://go.dev/doc/effective_go)
