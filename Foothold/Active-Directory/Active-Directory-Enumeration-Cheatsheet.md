@@ -13,6 +13,7 @@ net group "<target group name>" /domain
 net accounts /domain    # Password policy
 ipconfig /displaydns	# Get DC ip
 runas
+
 ```
 
 [Net command documentation](https://docs.microsoft.com/en-us/troubleshoot/windows-server/networking/net-commands-on-operating-systems)
@@ -43,6 +44,33 @@ type %userprofile%\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadline\Conso
 (Get-PSReadlineOption).HistorySavePath
 ```
 
+
+## Network Enumeration
+```powershell
+net share # Show shares
+Get-NetComputer -ping
+netstat -ano # -a displays all active connections, -n prevents name resolution, -o display the pid for each connection
+# ARP Table
+arp -a
+Get-NetNeighbor -AddressFamily IPv4 | ft ifIndex,IPAddress,LinkLayerAddress,State
+# check dns server
+ipconfig /all                                    
+Get-NetIPConfiguration | ft InterfaceAlias,InterfaceDescription,IPv4Address
+Get-DnsClientServerAddress -AddressFamily IPv4 | ft
+
+# List routing table
+route print
+Get-NetRoute -AddressFamily IPv4 | ft DestinationPrefix,NextHop,RouteMetric,ifIndex
+
+# SNMP Configuration
+reg query HKLM\SYSTEM\CurrentControlSet\Services\SNMP /s
+Get-ChildItem -path HKLM:\SYSTEM\CurrentControlSet\Services\SNMP -Recurse
+
+1..15 | %(echo "10.10.10.$_"; ping -n 1 10.10.10.$_ | Select-String tt1)         # ip ping sweep 
+1..1024 | %(echo ((New-Object Net.Sockets.TcpCLient).Connect("10.10.10.10", $_)) "Open port on - $_" 2>$null # Port scan
+```
+
+
 ## Host Sercurity Enumeration
 [`GetCimInstance`](https://docs.microsoft.com/en-us/powershell/module/cimcmdlets/get-ciminstance?view=powershell-7.2) maybe configured to not be avaliable for non-users, but may end up needing them to pivot through a network after inital PrivEsc.
 
@@ -55,13 +83,25 @@ Set-NetFirewallProfile -Profile Domain, Public, Private -Enable False
 Get-NetfirewallRule | select Display, Enabled, Description
 ```
 and with cmd.exe:
-```batch 
+```powershell
+netsh advfirewall firewall dump
+# or 
+netsh firewall show state
+netsh firewall show config
+# advfirewall
 netsh advfirewall firewall show rule name=all
 ```
+
 Testing a firewall from the inside:
 ```powershell
 Test-NetConnection -ComputerName 127.0.0.1 -Port 80
 ```
+
+List all block ports by firewall
+```powershell
+$f=New-object -comObject HNetCfg.FwPolicy2;$f.rules |  where {$_.action -eq "0"} | select name,applicationname,localports
+```
+
 
 Eventlogs sometimes provide an insight into applications and services, security or otherwise
 ```powershell 
@@ -80,6 +120,25 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender
 
 sc stop WinDefend
 sc start WinDefend
+
+# check status of Defender
+PS C:\> Get-MpComputerStatus
+
+# disable scanning all downloaded files and attachments, disable AMSI (reactive)
+PS C:\> Set-MpPreference -DisableRealtimeMonitoring $true; Get-MpComputerStatus
+PS C:\> Set-MpPreference -DisableIOAVProtection $true
+
+# disable AMSI (set to 0 to enable)
+PS C:\> Set-MpPreference -DisableScriptScanning 1 
+
+# exclude a folder
+PS C:\> Add-MpPreference -ExclusionPath "C:\Temp"
+PS C:\> Add-MpPreference -ExclusionPath "C:\Windows\Tasks"
+PS C:\> Set-MpPreference -ExclusionProcess "word.exe", "vmwp.exe"
+
+# remove signatures (if Internet connection is present, they will be downloaded again):
+PS > & "C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.2008.9-0\MpCmdRun.exe" -RemoveDefinitions -All
+PS > & "C:\Program Files\Windows Defender\MpCmdRun.exe" -RemoveDefinitions -All
 ```
 
 AV
@@ -194,6 +253,11 @@ Get-DomainComputer -Properties OperatingSystem, Name, DnsHostName | Sort-Object 
 
 #Enumerate Live machines 
 Get-DomainComputer -Ping -Properties OperatingSystem, Name, DnsHostName | Sort-Object -Property DnsHostName
+
+# 
+nltest /DCLIST:DomainName
+nltest /DCNAME:DomainName
+nltest /DSGETDC:DomainName
 ```
 
 Enumerate Groups and group members
@@ -372,3 +436,4 @@ Set-ADAccountPassword -Identity <username> -Server <domain> -OldPassword (Covert
 
 [Emanlui's Incredible Cheatsheet](https://github.com/Emanlui/OSCP-Scripts/blob/main/Windows.md#enumeration)
 [Net command documentation](https://docs.microsoft.com/en-us/troubleshoot/windows-server/networking/net-commands-on-operating-systems)
+[PayloadAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Windows%20-%20Privilege%20Escalation.md)

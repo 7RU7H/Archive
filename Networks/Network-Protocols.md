@@ -162,8 +162,9 @@ sudo mount -o nolock port=1234 -t nfs $ip:/dir /tmp/local
 umount $ip:/local/file/path	
 ```
 
-
-
+## 3128 - Squid
+Squid is a caching and forwarding HTTP web proxy
+[Hacktricks](https://book.hacktricks.xyz/network-services-pentesting/3128-pentesting-squid?q=3128)
 ## 3306 - MySQL
 `mysql -h ip -u user -p`
 
@@ -205,6 +206,7 @@ Apache JServ Protocol
 default 8080
 
 ## 9000 - [Lots](https://www.speedguide.net/port.php?port=9000)
+`FPM/FastCGI` which uses port 9000 by default. [FastCGI PHP-FPM exploit](https://gist.github.com/phith0n/9615e2420f31048f7e30f3937356cf75)
 
 
 ## 10000 - Webmin

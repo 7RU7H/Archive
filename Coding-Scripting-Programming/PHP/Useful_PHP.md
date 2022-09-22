@@ -24,7 +24,8 @@ Base64 PHP decoder
 <?php echo zlib_decode(base64_decode('base64here')); ?>
 ```
 
-
+## Vulnerable Functions
+[[Vulnerable-PHP-Functions]]
 
 ## Webserver Exfiltratation
 
