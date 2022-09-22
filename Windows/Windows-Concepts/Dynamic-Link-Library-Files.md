@@ -1,4 +1,4 @@
-# Dynamic Link Libraries
+# Dynamic Link Library Files
 
 ## DLL Definition
 

@@ -1,6 +1,6 @@
 # WMIC Commands
 
-```wmic
+```powershell
 wmic /?
 wmic context                                            display the state of all the global switches in windows
 wmic bios get serialnumber                              as stated

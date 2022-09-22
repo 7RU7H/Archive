@@ -5,7 +5,6 @@ Hydra Password Cracking Cheetsheet
 
 ```bash
 # Command 								Description:
-
 hydra -P password-file.txt -v $ip snmp 					# Hydra brute force against SNMP
 hydra -t 1 -l admin -P /usr/share/wordlists/rockyou.txt -vV $ip ftp 	# Hydra FTP known user and rockyou password list
 
