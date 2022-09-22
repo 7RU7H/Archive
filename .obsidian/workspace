@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Post-Exploitation/Persistence/Linux-Persistence.md",
+            "file": "Exploitation/CVEs/Pwnkit.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Post-Exploitation/Persistence/Linux-Persistence.md",
+                "file": "Exploitation/CVEs/Pwnkit.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -90,14 +90,14 @@
   "active": "d4af83e0ef0535c0",
   "lastOpenFiles": [
     "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+    "Coding-Scripting-Programming/Bash/Useful_Bash.md",
     "Post-Exploitation/Persistence/Linux-Persistence.md",
     "Post-Exploitation/Persistence/Persistence.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/PrvEsc-Important-Linux-Locations.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/PrivEsc-Important-Linux-Locations.md",
     "Antivirus-Evasion/Inline-Hooking.md",
     "Recon/Active-Information-Gathering/OS-Detection/OS-Detection.md",
     "Recon/Active-Information-Gathering/Netcat-As-Recon.md",
     "Recon/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
-    "Tools/Crackmapexec/Crackmapexec-Cheatsheet.md",
-    "Coding-Scripting-Programming/Programming-Paradigms/Dynamic-Programming.md"
+    "Tools/Crackmapexec/Crackmapexec-Cheatsheet.md"
   ]
 }
