@@ -70,15 +70,21 @@ proxychains nmap -flags 127.0.0.1
 
 A category of software applications that can force other programs to send thraffic through a proxy server. Useful when a application is not proxy aware and cannot configured to use a proxy.
 
-# Proxy chains
+# Proxychains
 
 A proxifier tool that is pre-installed on Kali linux, configured to tunnel traffic over one or more proxies, Proxychains support SOCKS4, SOCKS5, and HTTP(S) proxies.
-```
+```bash
 vim /etc/proxychains4.conf
 socks 127.0.0.1 1337
 proxychains nikto -h http://sitetoscan
 proxychains -q nikto -h http://sitetoscan # quite proxychains output 
 ```
+
+Adjust to Network interface and CPU! - [From hackwhackandsmack](https://www.hackwhackandsmack.com/?p=1021)
+```bash
+seq 1 1000 | xargs -P 50 -I{} proxychains nmap -p {} -sT -Pn --open -n -T4 --min-parallelism 100 --min-rate 1 --oG proxychains_nmap --append-output <IP Address>
+```
+
 
 There are multiple types of proxychain options: 
 	chain_len, option to specify the number of proxies to be used.	
@@ -144,3 +150,7 @@ If clients have access to file uploadable sites, to prevent data leakages the pr
 ```
 ssh USER@FINAL_DEST -o "ProxyCommand=nc -X connect -x PROXYHOST:PROXYPORT %h %p"
 ```
+
+## References
+
+[hackwhackandsmack](https://www.hackwhackandsmack.com/?p=1021)

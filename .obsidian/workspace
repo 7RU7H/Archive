@@ -9,19 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Foothold/Active-Directory/Active-Directory-Enumeration-Cheatsheet.md",
-            "mode": "source",
-            "source": false
-          }
-        }
-      },
-      {
-        "id": "a159d7b571920e7b",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
+            "file": "Tools/Crackmapexec/Crackmapexec-Cheatsheet.md",
             "mode": "source",
             "source": false
           }
@@ -52,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Wordlist",
+                "query": "massca",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -81,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
+                "file": "Tools/Crackmapexec/Crackmapexec-Cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,17 +87,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "a159d7b571920e7b",
+  "active": "d4af83e0ef0535c0",
   "lastOpenFiles": [
+    "Recon/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
+    "Coding-Scripting-Programming/Programming-Paradigms/Dynamic-Programming.md",
+    "Tools/Useful-Software/Masscan-Cheatsheet.md",
+    "Networks/Proxies.md",
     "Foothold/Active-Directory/Active-Directory-Enumeration-Cheatsheet.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
     "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Privilege-Escalation.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
     "Seatbelt-Helpsheet.md",
-    "Tools/Impacket/Impacket-Cheatsheet.md",
-    "Post-Exploitation/Privilege-Escalation/Privilege-Escalation-Defined.md",
-    "Networks/Network-Protocols.md",
-    "Brain-Hacking/Black-Box-Method.md",
-    "Coding-Scripting-Programming/PHP/Useful_PHP.md"
+    "Tools/Impacket/Impacket-Cheatsheet.md"
   ]
 }

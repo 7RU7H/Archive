@@ -13,7 +13,7 @@ This is a hub page for linking all of a specific directory structure.
 [[DNS-Recon-Active.md]]
 [[Fierce-Cheatsheet.md]]
 [[LDAP-Recon.md]]
-[[Masscan-Cheatsheet.md]]
+[[Recon/Active-Information-Gathering/Masscan/Masscan-Cheatsheet]]
 [[NFS-Recon.md]]
 [[Nmap-AllTheScripts]]
 [[Nmap-Cheatsheet]]
