@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Exploitation/CVEs/Pwnkit.md",
+            "file": "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exploitation/CVEs/Pwnkit.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "d4af83e0ef0535c0",
   "lastOpenFiles": [
-    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
-    "Coding-Scripting-Programming/Bash/Useful_Bash.md",
-    "Post-Exploitation/Persistence/Linux-Persistence.md",
-    "Post-Exploitation/Persistence/Persistence.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/PrivEsc-Important-Linux-Locations.md",
-    "Antivirus-Evasion/Inline-Hooking.md",
-    "Recon/Active-Information-Gathering/OS-Detection/OS-Detection.md",
-    "Recon/Active-Information-Gathering/Netcat-As-Recon.md",
-    "Recon/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
-    "Tools/Crackmapexec/Crackmapexec-Cheatsheet.md"
+    "Networks/Proxies.md",
+    "Services/Databases/MYSQL/MySQL-Cheatsheet.md",
+    "Services/Databases/Database-Hacking.md",
+    "Foothold/Active-Directory/Active-Directory-Enumeration-Cheatsheet.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
+    "Coding-Scripting-Programming/Powershell/Useful_Powershell.md",
+    "Foothold/Windows-Living-Off-The-Land.md",
+    "Tools/Windows/AD-Hacking-Tools.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/PowerSploit-PowerUp-Helpsheet.md"
   ]
 }
