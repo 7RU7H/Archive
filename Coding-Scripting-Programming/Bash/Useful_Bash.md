@@ -224,6 +224,12 @@ ${param//pattern/string}
 ${param/#pattern/string}
 # Substitute at right edge:
 ${param/%pattern/string}
+
+# Get all the ports in a comma delimited list for nmap scans -p 0,1,2,3 - without last ,
+LIST=$(cat masscan/masscan.log | grep -v "#" | awk '{print $7}' | cut -d "/" -f1 | tr -s '\n' ', ')
+LENLIST=${#LIST}-1
+DECOMMA=${LIST:0:LENLIST}
+echo $DECOMMA
 ```
 
 # Arrays

