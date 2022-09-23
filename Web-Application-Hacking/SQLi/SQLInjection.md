@@ -4,7 +4,9 @@
 
 SQL injection is a technique used by attacked to execute malicious SQL statements with objective of stealing information, modifying the database or command execution from the context of database interacting with other networked components. Application commonly require dynamic SQL queries to display content conditionally by user context. Users are then granted some part in the process of displaying that content. This input without input sanitization the attacker can make the database interpret the user input as an SQL input instead of data. With parameter control attack can inject malicious query, which may be executed by the database. For introductory material about SQL see [[Introduction-to-SQL]], if you just here for [[SQLmap-CheatSheet]] then follow the latter link.
 
-Invaluable Payload up-to-date pylaod listings can be found:
+For possibly the best hand-on-lab on the internet see [TryHackMe SLQinjections Labs room](https://tryhackme.com/room/sqlilab), it has a good curve to the challenges and has a guidance feature so that in browser you can see what SQL quiery you sent. 
+
+Invaluable Payload up-to-date paylaod listings can be found:
 [payloadbox/sql-injection-payload-list](https://github.com/payloadbox/sql-injection-payload-list
 [PayloadsAllTheThings/](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/SQL%20Injection)
 
@@ -54,44 +56,30 @@ Databases require instructional commands to store, organise and interact with da
 
 
 #### Characters, Command and Considerations toolset
-Always consider the syntax!
-
-Comments
-```sql
-'
--- -
-/*
-```
-Close-previous parentheses
-```sql
-)
-```
-
-MariaDB specific for extensive information for see [[MariaDB-Hacking]]
+Always consider the syntax and Database Lanaguage!
+MariaDB specifics, but for extensive information for see [[MariaDB-Hacking]]
 ```sql
 ;#	-- Ends querys
 LIMIT 1	-- Limit number of records returned
 ```
 
-MSSQL specific for extensive information for see [[MSSQL-Hacking]]
+MSSQL specifics, but for extensive information for see [[MSSQL-Hacking]] 
 ```mssql
 
 ```
 
-MySQL specific for extensive information for see [[MySQL-Cheatsheet]]
+MySQL specifics, but for extensive information for see [[MySQL-Cheatsheet]] [[MySQL-SQLI]]
+```sql
+
+```
+
+sqlite specifics, but for extensive information for see [[SQLite-Hacking]] [[SQLite-Cheatsheet]]
 ```sql
 
 ```
 
 
-## Considering SQL filtering
 
-##### Blind SQLi
-Cause SQL error -> Fix it -> add SQL queries
-Use sleep(5) if reponse is instant SQL query, then there is no SQLi
-
-#### Union SQLi:
-Find number of columns -> Check suitable columns -> Attack
 
 
 
@@ -109,6 +97,19 @@ MySQL and MSSQL
 [Prepared Statements prevent 'illegal' queries](https://en.wikipedia.org/wiki/Prepared_statement)
 
 ## Typology 
+
+Attack Vector | Method 
+--- | ---
+Blind SQLi | Cause SQL error -> Fix it -> add SQL queries && Use sleep(5) if reponse is instant SQL query, then there is no SQLi
+Union SQLi |  Find number of columns -> Check suitable columns -> Attack
+With non Blind SQLi there is some form of extracted data:
+- Cookies
+- Field Display in HTML
+
+**BEWARE** Boolean-based Blind injections are tedious and time-consuming, use fuzzing or script
+
+
+## Attack Vectors
 
 #### Input Boxes 
 
