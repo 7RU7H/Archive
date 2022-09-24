@@ -7,7 +7,7 @@ SQL injection is a technique used by attacked to execute malicious SQL statement
 For possibly the best hand-on-lab on the internet see [TryHackMe SLQinjections Labs room](https://tryhackme.com/room/sqlilab), it has a good curve to the challenges and has a guidance feature so that in browser you can see what SQL quiery you sent. 
 
 Invaluable Payload up-to-date paylaod listings can be found:
-[payloadbox/sql-injection-payload-list](https://github.com/payloadbox/sql-injection-payload-list
+[payloadbox/sql-injection-payload-list](https://github.com/payloadbox/sql-injection-payload-list)
 [PayloadsAllTheThings/](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/SQL%20Injection)
 
 An ode to SQLI:
@@ -68,7 +68,7 @@ MSSQL specifics, but for extensive information for see [[MSSQL-Hacking]]
 
 ```
 
-MySQL specifics, but for extensive information for see [[MySQL-Cheatsheet]] [[MySQL-SQLI]]
+MySQL specifics, but for extensive information for see [[MySQL-Cheatsheet]] [[MySQL-Hacking]]
 ```sql
 
 ```
@@ -77,10 +77,6 @@ sqlite specifics, but for extensive information for see [[SQLite-Hacking]] [[SQL
 ```sql
 
 ```
-
-
-
-
 
 
 ## Database type enumeration

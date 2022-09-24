@@ -4,12 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "d4af83e0ef0535c0",
+        "id": "ad481d26e9f4fb56",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Foothold/Reverse-Shells-Listing.md",
+            "file": "Data-Ex&Infiltration/Git-Filtration-N-Escalation.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      },
+      {
+        "id": "0b8dcf15593c509c",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Tools/Useful-Software/Github-guide.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +52,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "Wordlist",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Foothold/Reverse-Shells-Listing.md",
+                "file": "Data-Ex&Infiltration/Git-Filtration-N-Escalation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -87,17 +99,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "d4af83e0ef0535c0",
+  "active": "ad481d26e9f4fb56",
   "lastOpenFiles": [
-    "Foothold/Shells.md",
-    "Web-Application-Hacking/XXE/XXE-Vulnerablity.md",
-    "Web-Application-Hacking/Bypassing-Rate-Limits.md",
-    "XML-Basics.md",
+    "Tools/Useful-Software/Github-guide.md",
+    "Data-Ex&Infiltration/Git-Filtration-N-Escalation.md",
+    "Wordlists.md",
+    "Web-Application-Hacking/Methodologies/Haddix-Methodology/Application-Analysis.md",
+    "Cryptography-And-Authentication/Password-Attacks/Password-Attacks.md",
+    "Exploitation/CVEs/Shellshock.md",
     "Foothold/Reverse-Shells-Listing.md",
-    "Web-Application-Hacking/SQLi/SQLInjection.md",
-    "Web-Application-Hacking/SQLi/SQLmap-CheatSheet.md",
-    "Services/Webservers/Flask.md",
-    "Services/Databases/MYSQL/MySQL-Cheatsheet.md",
-    "Recon/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md"
+    "Coding-Scripting-Programming/Vulnerable-Functions/Vulnerable-Javascript-Functions.md",
+    "Coding-Scripting-Programming/Javascript/Useful_Javascript.md",
+    "Web-Application-Hacking/SQLi/SQLmap-CheatSheet.md"
   ]
 }

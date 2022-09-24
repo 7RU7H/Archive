@@ -1,6 +1,6 @@
-# MySQL
+# MySQL Hacking
 
-## 
+## Login
 For mysql including Mariadb:
 ```bash
 mysql -u $username -p $password -h $HOST

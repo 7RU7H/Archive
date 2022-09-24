@@ -20,5 +20,5 @@ A Database is an appplication that can store and retrieve data. This data is sto
 [[Introduction-to-SQL]]
 [[SQLInjection]]
 [[NoSQL-SQLI]]
-[[MySQL-SQLI]]
+[[MySQL-Hacking]]
 [[SQLmap-CheatSheet]]

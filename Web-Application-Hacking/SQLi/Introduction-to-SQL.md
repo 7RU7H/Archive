@@ -4,7 +4,7 @@ Structured Query Language (SQL) is a [domain-specific language](https://en.wikip
 The reasoning for the location of this file in the directory tree is because unlike Coding-Scripting-Programming directory, the convenience of its closeness to resources to perform SQLinjection is more important. 
 
 ## Contents
-[[MySQL-SQLI]]
+[[MySQL-Hacking]]
 [[MySQL-Cheatsheet]]
 [[NoSQL-SQLI]]
 [[SQLmap-CheatSheet]]
@@ -28,7 +28,7 @@ Foreign Key is the child table and the primary key is the Parent table. For exam
 cheese\_table
 ID	CHEESE		TASTE
 0	Yellow		good
-1	Red		good
+1	Red		    good
 2	Cream		good
 
 place
