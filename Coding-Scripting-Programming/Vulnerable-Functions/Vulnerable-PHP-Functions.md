@@ -10,9 +10,11 @@ scandir(getcwd())
 ## include()
 Takes all code, text, markup in file and loads it into memory.
 
-## Exec()
 
-## Shell_exuc
+
+## exec()
+
+## shell_exec
 
 ## popen()
 

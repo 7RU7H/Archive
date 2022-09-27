@@ -38,10 +38,10 @@ kinit user
 # - So Kerberos pre-auth is a faster and potentially stealthier way to bf password.
 ```
 
-## dccomexec.py 
+## dcomexec.py 
 Useful for [[Active-Directory-Lateral-Movement]].  A semi-interactive shell similar to wmiexec.py, but using different DCOM endpoints. Currently supports MMC20.Application, ShellWindows and ShellBrowserWindow objects.
 ```bash
-dccomexec.py $domain/$username:$password@$IP <command>
+dcomexec.py $domain/$username:$password@$IP <command>
 ```
 ## dpapi.py
 Password Encryption tool on Windows
@@ -122,6 +122,12 @@ Exploit DCSync Privileges
 secretsdump.py -dc-ip $IP $domain/$user@$ip
 ```
 
+Dump a NTDS hashes
+```bash
+impacket-secretsdump -system system -security security LOCAL
+```
+[medium](https://bond-o.medium.com/extracting-and-cracking-ntds-dit-2b266214f277)
+
 ## smbexec.py
 A similar to `psexec.py` without using [RemComSvc](https://github.com/kavika13/RemCom). Instantiates a local smbserver to then receive the output of commands.
 ```bash
@@ -169,3 +175,4 @@ wmiexec.py $domain/$username:$password@$IP <command>
 [IppsecRocks](https://ippsec.rocks/?#)
 [Haax9](https://cheatsheet.haax.fr/windows-systems/exploitation/remote_execution_techniques/)
 [RemComSvc](https://github.com/kavika13/RemCom)
+[ntds extracting and rcacking medium](https://bond-o.medium.com/extracting-and-cracking-ntds-dit-2b266214f277)

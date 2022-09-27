@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "DnsAdmin-To-DC.md",
+            "file": "Tools/Impacket/Impacket-Cheatsheet.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "impacket",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -49,7 +49,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -69,7 +70,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DnsAdmin-To-DC.md",
+                "file": "Tools/Impacket/Impacket-Cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +90,15 @@
   },
   "active": "ad481d26e9f4fb56",
   "lastOpenFiles": [
-    "Privilege-Escalation/Active-Directory/Active-Directory-Enumeration-Cheatsheet.md",
-    "Privilege-Escalation/Active-Directory/Active-Directory-Offensive-Enumeration-With-WMI.md",
-    "Privilege-Escalation/Windows/SePrivileges/NtSetSystemInformation-Calls.md",
-    "Privilege-Escalation/Windows/SePrivileges/NtQuerySystemInformation-Calls.md",
-    "Privilege-Escalation/Windows/SePrivileges/seBackup-Privilege.md",
-    "Privilege-Escalation/Windows/SePrivileges/SePrivilege-Token-Table.md",
+    "Post-Exploitation/Persistence/Active-Directory-Persistence.md",
+    "Tools/Crackmapexec/Crackmapexec-Cheatsheet.md",
+    "Tools/Impacket/Impacket-Cheatsheet.md",
+    "Networks/Network-Protocols.md",
     "Recon/Active-Information-Gathering/SMB/RPCClient-Cheatsheet.md",
-    "Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
-    "Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
-    "Privilege-Escalation/Active-Directory/Active-Directory-Privilege-Escalation.md"
+    "Recon/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
+    "Recon/Active-Information-Gathering/SMB/RPCClient-Usage.md",
+    "Recon/Active-Information-Gathering/LDAP/LDAP-Recon.md",
+    "Web-Application-Hacking/Burpsuite/Burpsuite-Helpsheet.md",
+    "Web-Application-Hacking/File-Inclusion-And-Directory-Traversal/File-Inclusion-And-Directory-Traversal.md"
   ]
 }

@@ -48,7 +48,7 @@ Rabbit holes \/ Pitfalls:
 ## Vulnerable Functions 
 Language | LFI/RFI | Function | Caveats | RTFM
 --- | --- | --- | ---
-[[Vulnerable-PHP-Functions]] | Both | `include()` | | https://www.php.net/manual/en/function.include.php
+[[Vulnerable-PHP-Functions]] | Both | `include()` | `badquery?file=` then `php://filter/convert.base64encode/resources=` | https://www.php.net/manual/en/function.include.php
 
 
 ## Indictions of (L|R)FIs - Functions
