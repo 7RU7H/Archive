@@ -165,6 +165,7 @@ umount $ip:/local/file/path
 ## 3128 - Squid
 Squid is a caching and forwarding HTTP web proxy
 [Hacktricks](https://book.hacktricks.xyz/network-services-pentesting/3128-pentesting-squid?q=3128)
+
 ## 3306 - MySQL
 `mysql -h ip -u user -p`
 

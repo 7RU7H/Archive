@@ -85,7 +85,6 @@ crackmapexec smb $ip -u 'Administrator' -p 'PASS' -x 'net user Administrator /do
 crackmapexec smb $ip -u Administrator -p 'P@ssw0rd' -X 'whoami'`
 ```
 
-  
 
 ### Getting Credentials
 ```bash

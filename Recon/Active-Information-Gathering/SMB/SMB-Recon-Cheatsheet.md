@@ -18,6 +18,8 @@ nbtscan -r $IP/$CIDR
 Query MS-RPC for commands to try and estanblish a null session
 ```bash
 rpcclient -U "" -N $IP
+# Authenticated Session
+rpcclient -U <username> --password=<password> $ip
 ```
 See enumeration commands [[RPCClient-Cheatsheet]] and its usage [[RPCClient-Usage]]
 

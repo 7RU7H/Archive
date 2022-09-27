@@ -22,5 +22,5 @@ git config --global user.email "user@Nomail.(none)" # Without email
 git add -A 
 git commit -m "A message in a git repo that aligns with objectives"
 # 
-GIT_SSH_COMMAND='ssh -i /path/id_rsa -p 43022' git push origin master
+GIT_SSH_COMMAND='ssh -i /path/id_rsa' git push origin master
 ```

@@ -8,6 +8,7 @@ echo %PROCESSOR_ARCHITECTURE%  # Evasive way of bit info
 tasklist /svc                  # list all services
 tasklist /m                    # list all processes and dlls
 systeminfo                     # list system information
+get-computerinfo           # ps version of systeminfo
 hostname                       #
 vssadmin                       # volume shadow copy service admin # need admin may one day be useful
 wmic qfe get Caption,Description,HotFixId,InstalledOn           # Patch level!
@@ -25,7 +26,7 @@ Get-PSDrive | where {$_.Provider -like "Microsoft.PowerShell.Core\FileSystem"}| 
 ```
 
 
-## User and Admin Enumeration
+## User and Group Enumeration
 ```powershell
 whoami /priv
 net account # Logon requirements

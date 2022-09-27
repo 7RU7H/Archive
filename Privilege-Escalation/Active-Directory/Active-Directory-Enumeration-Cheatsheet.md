@@ -13,8 +13,9 @@ net group "<target group name>" /domain
 net accounts /domain    # Password policy
 ipconfig /displaydns	# Get DC ip
 runas
-
 ```
+
+DnsAdmins can code execute on DCs check: [[DnsAdmin-To-DC]]
 
 [Net command documentation](https://docs.microsoft.com/en-us/troubleshoot/windows-server/networking/net-commands-on-operating-systems)
 
