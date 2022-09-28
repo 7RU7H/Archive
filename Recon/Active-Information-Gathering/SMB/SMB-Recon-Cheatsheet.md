@@ -40,7 +40,7 @@ smbclient -L $IP			# List shares using NULL session
 smbclient -L //$IP/tmp
 smbclient -U '' -L //$IP/anon
 smbclient -N //$IP/tmp --option='client min protocol=NT1' # legacy
-
+smbclient -U //$IP/share\ with\ whitespace # \ to escape whitespace
 ## Transfer files!
 # Download a file from a specific share
 smbclient //$IP/$share -c 'cd folder; ls' password -U username # list

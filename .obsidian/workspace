@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Tools/Impacket/Impacket-Cheatsheet.md",
+            "file": "Post-Exploitation/Persistence/Windows-Persistence/Windows-Persistence-Backdooring-Files.md",
             "mode": "source",
             "source": false
           }
@@ -49,8 +49,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -70,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/Impacket/Impacket-Cheatsheet.md",
+                "file": "Post-Exploitation/Persistence/Windows-Persistence/Windows-Persistence-Backdooring-Files.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -90,15 +89,15 @@
   },
   "active": "ad481d26e9f4fb56",
   "lastOpenFiles": [
+    "Post-Exploitation/Persistence/Windows-Persistence/Windows-Persistence.md",
     "Post-Exploitation/Persistence/Active-Directory-Persistence.md",
-    "Tools/Crackmapexec/Crackmapexec-Cheatsheet.md",
-    "Tools/Impacket/Impacket-Cheatsheet.md",
-    "Networks/Network-Protocols.md",
-    "Recon/Active-Information-Gathering/SMB/RPCClient-Cheatsheet.md",
+    "Post-Exploitation/Persistence/Windows-Persistence/Windows-Persistence-Tampering-with-Unprivileged-Accounts.md",
+    "Privilege-Escalation/Windows/SePrivileges/SeBackup-Privilege.md",
+    "Privilege-Escalation/Privilege-Escalation-Defined.md",
     "Recon/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
-    "Recon/Active-Information-Gathering/SMB/RPCClient-Usage.md",
-    "Recon/Active-Information-Gathering/LDAP/LDAP-Recon.md",
-    "Web-Application-Hacking/Burpsuite/Burpsuite-Helpsheet.md",
-    "Web-Application-Hacking/File-Inclusion-And-Directory-Traversal/File-Inclusion-And-Directory-Traversal.md"
+    "Tools/Impacket/Impacket-Cheatsheet.md",
+    "Tools/Crackmapexec/Crackmapexec-Cheatsheet.md",
+    "Networks/Network-Protocols.md",
+    "Recon/Active-Information-Gathering/SMB/RPCClient-Cheatsheet.md"
   ]
 }

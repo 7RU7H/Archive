@@ -7,7 +7,7 @@
 - [Walied Assar](https://twitter.com/waleedassar) - DoS with SeLockMemoryPrivilege and NtManagePartition()
 - [Qazeer](https://github.com/Qazeer) - SeBackupPrivilege exploitation details.
 
-Not displayed here, but with there own pages as intended by the author are: [[seBackup-Privilege]], [[NtSetSystemInformation-Calls]] and [[NtQuerySystemInformation-Calls]].
+Not displayed here, but with there own pages as intended by the author are: [[SeBackup-Privilege]], [[NtSetSystemInformation-Calls]] and [[NtQuerySystemInformation-Calls]].
 
 
 | Privilege | Impact | Tool | Execution path | Remarks |
