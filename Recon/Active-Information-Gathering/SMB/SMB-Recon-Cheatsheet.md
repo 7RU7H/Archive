@@ -41,7 +41,18 @@ smbclient -L //$IP/tmp
 smbclient -U '' -L //$IP/anon
 smbclient -N //$IP/tmp --option='client min protocol=NT1' # legacy
 smbclient -U //$IP/share\ with\ whitespace # \ to escape whitespace
-## Transfer files!
+```
+
+To escape white space in smb client!
+```bash
+smb: \> prompt off 
+smb: \> recurse on 
+smb: \> mget * # Download everything instead of manually 
+smb: \> cd "Active Directory\ # will work to escape the whitespace
+```
+
+```bash
+## Transfering files!
 # Download a file from a specific share
 smbclient //$IP/$share -c 'cd folder; ls' password -U username # list
 smbclient //$IP/$sahre -c 'cd folder;get desired_file_name' password -U username 
