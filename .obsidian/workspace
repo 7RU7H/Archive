@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Exploitation/Windows/Active-Directory/AD-Resource-Based-Contrained-Delegation.md",
+            "file": "Data-Ex&Infiltration/Data-Exfiltration/Data-Exfiltration-Defined.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "impacket",
+                "query": "Certutil",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -49,7 +49,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -69,7 +70,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exploitation/Windows/Active-Directory/AD-Resource-Based-Contrained-Delegation.md",
+                "file": "Data-Ex&Infiltration/Data-Exfiltration/Data-Exfiltration-Defined.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +90,15 @@
   },
   "active": "ad481d26e9f4fb56",
   "lastOpenFiles": [
-    "Exploitation/Windows/Active-Directory/AD-Domain-Exploitation.md",
-    "Exploitation/Windows/Active-Directory/AD-Permissions-Delegation-Exploitation.md",
-    "Exploitation/Windows/Active-Directory/AD-Kerberos-Delegation-Exploitation.md",
-    "Tools/Useful-Software/Neo4j-And-Bloodhound-Guide.md",
-    "Recon/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
-    "Recon/Active-Information-Gathering/SMB/RPCClient-Cheatsheet.md",
+    "Post-Exploitation/Persistence/Windows-Persistence/Windows-Persistence-Abusing-Services.md",
     "Post-Exploitation/Persistence/Windows-Persistence/Windows-Persistence-Backdooring-Files.md",
+    "Post-Exploitation/Persistence/Windows-Persistence/Windows-Persistence-Tampering-with-Unprivileged-Accounts.md",
     "Post-Exploitation/Persistence/Windows-Persistence/Windows-Persistence.md",
-    "Post-Exploitation/Persistence/Active-Directory-Persistence.md",
-    "Post-Exploitation/Persistence/Windows-Persistence/Windows-Persistence-Tampering-with-Unprivileged-Accounts.md"
+    "Windows/Windows-Registry.md",
+    "[[Windows-Registry]].md",
+    "Coding-Scripting-Programming/Powershell/Useful_Powershell.md",
+    "Exploitation/Windows/Active-Directory/AD-Resource-Based-Contrained-Delegation.md",
+    "Exploitation/Windows/Active-Directory/AD-Domain-Exploitation.md",
+    "Exploitation/Windows/Active-Directory/AD-Permissions-Delegation-Exploitation.md"
   ]
 }

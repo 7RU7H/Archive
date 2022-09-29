@@ -119,86 +119,112 @@ USRCLASS.DAT | (mounted on HKEY_CURRENT_USER\Software\CLASSES) |  Located: C:\Us
 The Amcache Hive:
 Windows creates this hive to save information on programs that were recently run on the system.
 Stores additional data related to program executions.
-
+```powershell
 C:\Windows\AppCompat\Programs\Amcache.hve
 Amcache.hve\Root\File\{Volume GUID}\ //last executed programs
+```
 
 Current Control Set:
 Hive contains the machines configuration data used for controlling system startup are called
 Control Sets
+```
 SYSTEM\ControlSet001
 SYSTEM\ControlSet002
-
+```
 To detirmine the current control set for the most accurate system information is registry:
+```powershell
 SYSTEM\Select\Current
-The "last known good" configurations:
+# The "last known good" configurations:
 SYSTEM\Select\LastKnownGood
+```
 
-
-Volatile Control Set when machine is live: CurrentControlSet = HKLM\SYSTEM\CurrentControlSet
+Volatile Control Set when machine is live: `CurrentControlSet = HKLM\SYSTEM\CurrentControlSet`
 
 Computer name:
+```powershell
 SYSTEM\CurrentControlSet\Control\ComputerName\ComputerName
-
+```
 Time zone information:
+```powershell
 SYSTEM\CurrentControlSet\Control\TimeZoneInformation
-
+```
 Network interfaces and past networks:
+```powershell
 SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\Interfaces
 	Past networks:
 SOFTWARE\Microsoft\Windows NT\CurrentVersion\NetworkList\Signatures\Unmanaged
 SOFTWARE\Microsoft\Windows NT\CurrentVersion\NetworkList\Signatures\Managed
-
+```
 Autoruns:
+```powershell
 NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Run
 NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\RunOnce
 SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce
 SOFTWARE\Microsoft\Windows\CurrentVersion\policies\Explorer\Run
 SOFTWARE\Microsoft\Windows\CurrentVersion\Run
-
+```
 Services:
+```powershell
 SYSTEM\CurrentControlSet\Services
-
+```
 SAM hive:
+```powershell
 SAM\Domains\Account\Users
-
+```
 Recent Files:
+```powershell
 NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs
 NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.by-some-file-extension
-	Recent Office Files:
+```
+Recent Office Files:
+```powershell
 NTUSER.DAT\Software\Microsoft\Office\VERSION
 NTUSER.DAT\Software\Microsoft\Office\15.0\Word
 NTUSER.DAT\Software\Microsoft\Office\VERSION\UserMRU\LiveID_####\FileMRU
-
+```
 Shellbags:
+```powershell
 USRCLASS.DAT\Local Settings\Software\Microsoft\Windows\Shell\Bags
 USRCLASS.DAT\Local Settings\Software\Microsoft\Windows\Shell\BagMRU
 NTUSER.DAT\Software\Microsoft\Windows\Shell\BagMRU
 NTUSER.DAT\Software\Microsoft\Windows\Shell\Bags
-
+```
 Open/Save and LastVisited Dialog MRUs:
+```powershell
 NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\OpenSavePIDlMRU
 NTUSER.DAT\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\LastVisitedPidlMRU
-
+```
 UserAssist:
+```powershell
 NTUSER.DAT\Software\Microsoft\Windows\Currentversion\Explorer\UserAssist\{GUID}\Count
+```
+ShimCache keeps track of application compatibility with the OS and all launched on machine
+Also called AppCompatCache:
 
-ShimCache: // keeps track of application compatibility with the OS and all launched on machine
-Also called AppCompatCache
-
+```powershell
 SYSTEM\CurrentControlSet\Control\Session Manager\AppCompatCache
-Command to parse the Shimcache:
-AppCompatCacheParser.exe --csv <path to save output> -f <path to SYSTEM hive for data parsing> -c <control set to parse>
+```
 
-BAM/DAM: // Background activity monitor, Desktop activity monitor
+Command to parse the Shimcache:
+```powershell
+AppCompatCacheParser.exe --csv <path to save output> -f <path to SYSTEM hive for data parsing> -c <control set to parse>
+```
+
+BAM/DAM - Background activity monitor, Desktop activity monitor
+```powershell
 SYSTEM\CurrentControlSet\Services\bam\UserSettings\{SID}
 SYSTEM\CurrentControlSet\Services\dam\UserSettings\{SID}
+```
 
 Device Identification:
+```powershell
 SYSTEM\CurrentControlSet\Enum\USBSTOR
 SYSTEM\CurrentControlSet\Enum\USB
 	First/Last Times:
 SYSTEM\CurrentControlSet\Enum\USBSTOR\Ven_Prod_Version\USBSerial#\Properties\{83da6326-97a6-4088-9453-a19231573b29}\####
+```
 
 USB device Volume Name:
+```powershell
 SOFTWARE\Microsoft\Windows Portable Devices\Devices
+```
