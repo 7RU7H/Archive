@@ -55,10 +55,12 @@ nmap -PM				# ICMP Address mask Ping Scan
 nmap -PO 				# IP protocol ping
 nmap -PR				# Arp Ping
 ```
+
 ## Packet Size
 ```bash
 Default -sS sizeof 44 [20=ip_header,24=TCP_header] 
 ```
+
 ## Diagnostics and DNS
 ```bash
 --traceroute	# Track packets with traceroute
@@ -72,6 +74,7 @@ Default -sS sizeof 44 [20=ip_header,24=TCP_header]
 --packet-trace  # trace packets
 --iflist	# Display host networking 
 ```
+
 ## Analysis with tshark and iptables
 [[Tshark-Cheatsheet]]: 
 ```bash
@@ -94,6 +97,7 @@ ncat -lvnp $PORT
 ncat -u $IP $PORT # Connect to ncat udp listener
 ncat -ulvnp $PORT # UDP listener
 ```
+
 ## Port
 By default Nmap does not scan the ports in numerical order
 ```bash
@@ -141,6 +145,7 @@ By default Nmap does not scan the ports in numerical order
 --script vuln
 
 ```
+
 ## Nmap ScriptGun 
 ```bash
 dir=$(locate /nmap/scripts)
@@ -181,7 +186,6 @@ SYN # Synchronize
 FIN # Finish
 ```
 
-
 ## Firewall & IDS & IPS Evasion
 ```bash
 # Evasion Approach                              Nmap Argument
@@ -189,7 +193,7 @@ FIN # Finish
 -D RND,RND,ME			   # Hide a scan with random decoys
 --proxies   # Use an HTTP/SOCKS4 proxy to relay connections PROXY_URL
 --spoof-mac # Spoof source MAC address                        MAC_ADDRESS
--S IP_ADDRESS # Spoof source IP address
+-S IP_ADDRESS # Specify source IP address, not SPOOF!
 -g PORT_NUM or --source-port PORT_NUM # Use a specific source port number               
 -f	# Fragment IP data into 8 bytes
 -ff # Fragment IP data into 16 bytes

@@ -39,7 +39,7 @@ Detirmination of attack surface is outlined in [[Application-Analysis]].
 9. Searching
 10. Any other interactions
 11. Cookies, Tokens
-12. Login  pages
+12. Login pages
 13. Source code for static analysis
 
 #### Web Stack Enumeration

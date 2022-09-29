@@ -32,6 +32,13 @@ woops - will update soon
 /seclists/Discovery/Web-Content/burp-parameter-names.txt
 /seclists/Discovery/Web-Content/burp-parameter-names.txt
 
+## Fuzz with special Header
+
+```bash
+# IP spoof
+ffuf -H 'X-Forwarded-For: 10.10.10.10'
+```
+
 ## Fuzzing for.. Bruteforce attacks
 Use ffuf like hydra using file size filter to check responses, -X flag to set request type, -d  to send data and -H custom header similar to `curl`.
 ```bash

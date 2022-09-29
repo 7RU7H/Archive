@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "ad481d26e9f4fb56",
+        "id": "b71dbea8e7f25bda",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Data-Ex&Infiltration/Data-Exfiltration/Data-Exfiltration-Defined.md",
+            "file": "Privilege-Escalation/Windows/PrivEsc-Important-Windows-Locations.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Certutil",
+                "query": "file: PowerSploit",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -49,8 +49,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -70,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Data-Ex&Infiltration/Data-Exfiltration/Data-Exfiltration-Defined.md",
+                "file": "Privilege-Escalation/Windows/PrivEsc-Important-Windows-Locations.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,17 +87,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "ad481d26e9f4fb56",
+  "active": "b71dbea8e7f25bda",
   "lastOpenFiles": [
-    "Post-Exploitation/Persistence/Windows-Persistence/Windows-Persistence-Abusing-Services.md",
-    "Post-Exploitation/Persistence/Windows-Persistence/Windows-Persistence-Backdooring-Files.md",
-    "Post-Exploitation/Persistence/Windows-Persistence/Windows-Persistence-Tampering-with-Unprivileged-Accounts.md",
-    "Post-Exploitation/Persistence/Windows-Persistence/Windows-Persistence.md",
-    "Windows/Windows-Registry.md",
-    "[[Windows-Registry]].md",
-    "Coding-Scripting-Programming/Powershell/Useful_Powershell.md",
-    "Exploitation/Windows/Active-Directory/AD-Resource-Based-Contrained-Delegation.md",
-    "Exploitation/Windows/Active-Directory/AD-Domain-Exploitation.md",
-    "Exploitation/Windows/Active-Directory/AD-Permissions-Delegation-Exploitation.md"
+    "Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
+    "Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
+    "Privilege-Escalation/Windows/PowerSploit-PowerUp-Helpsheet.md",
+    "Data-Ex&Infiltration/File-Transfers/Windows-File-Transfers.md",
+    "Privilege-Escalation/Windows/Bypassing-UAC/Bypassing-Windows-User-Account-Control.md",
+    "Privilege-Escalation/Privilege-Escalation-Defined.md",
+    "Privilege-Escalation/Windows/SePrivileges/SePrivilege-Token-Table.md",
+    "Web-Application-Hacking/SQLi/SQLInjection.md",
+    "Web-Application-Hacking/Burpsuite/Burpsuite-Helpsheet.md",
+    "Web-Application-Hacking/Content-Discovery/FFUF-Cheatsheet.md"
   ]
 }

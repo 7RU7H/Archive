@@ -48,7 +48,7 @@ type %userprofile%\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadline\Conso
 ```
 
 ## Important Windows Locations
-[[PrivEsc-Important-Windows-Location]]
+[[PrivEsc-Important-Windows-Locations]]
 
 ## World Writable Files and Directories
 ```powershell

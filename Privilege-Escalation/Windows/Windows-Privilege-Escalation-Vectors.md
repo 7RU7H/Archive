@@ -2,7 +2,7 @@
 For [[Windows-File-Transfers]]
 For [[WMIC-Commands]]
 For [[Windows-CLI-cmd]]
-For [[PrivEsc-Important-Windows-Location]]
+For [[PrivEsc-Important-Windows-Locations]]
 For [[Powershell-versions]]
 Check out [[Kali-Windows-Resources]] for selection of binaries and such to transfer!
 
