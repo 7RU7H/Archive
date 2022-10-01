@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Post-Exploitation/Persistence/Windows-Persistence/Windows-Persistence-Logon-Triggered.md",
+            "file": "Post-Exploitation/Persistence/Windows-Persistence/WindowsPersistence-RDP.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "mfs",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -53,7 +53,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 354.5
+    "width": 218.5
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Post-Exploitation/Persistence/Windows-Persistence/Windows-Persistence-Logon-Triggered.md",
+                "file": "Post-Exploitation/Persistence/Windows-Persistence/WindowsPersistence-RDP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "b71dbea8e7f25bda",
   "lastOpenFiles": [
-    "Post-Exploitation/Persistence/Windows-Persistence/Windows-Persistence-Abusing-Scheduled-Tasks.md",
-    "Post-Exploitation/Persistence/Windows-Persistence/Windows-Persistence-Backdooring-Files.md",
-    "Post-Exploitation/Persistence/Windows-Persistence/Windows-Persistence-Tampering-with-Unprivileged-Accounts.md",
-    "Post-Exploitation/Persistence/Windows-Persistence/Windows-Persistence-Logon-Triggered.md",
-    "Post-Exploitation/Persistence/Windows-Persistence/Windows-Persistence-Abusing-Services.md",
     "Post-Exploitation/Persistence/Windows-Persistence/Windows-Persistence.md",
-    "Tools/C2/Metasploit/MSFvenom-Payloads.md",
-    "Privilege-Escalation/Windows/PrivEsc-Important-Windows-Locations.md",
-    "Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
-    "Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md"
+    "Post-Exploitation/Persistence/Windows-Persistence/WindowsPersistence-RDP.md",
+    "Post-Exploitation/Persistence/Windows-Persistence/Windows-Persistence-Logon-Triggered.md",
+    "Post-Exploitation/Persistence/Windows-Persistence/Windows-Persistence-Abusing-Scheduled-Tasks.md",
+    "Linux/Distributions/FreeBSD/FreeBSD-Directory-Structure.md",
+    "Exploitation/Binary-Exploitation/Buffer-Overflow/Stackbased-Buffer-Overflows.md",
+    "Exploitation/Binary-Exploitation/Buffer-Overflow/Stackbased-Buffer-Overflow-Scripts.md",
+    "Networks/Network-Protocols.md",
+    "Virtualization/VirtualBox-Windows-10-VM.md",
+    "Virtualization/Virtual-machines.md"
   ]
 }
