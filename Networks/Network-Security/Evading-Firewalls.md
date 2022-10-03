@@ -2,6 +2,16 @@
 
 This article contains methods to evade Firewalls check [[Firewalls]] for typological information.
 
+## Turn them off!
+
+```bash
+
+```
+Windows
+```powershell
+netsh advfirewall set allprofiles state of
+```
+
 ## Evasion Via Controlling the Source MAC/IP/Port
 
 1.  Evasion via controlling the source MAC/IP/Port

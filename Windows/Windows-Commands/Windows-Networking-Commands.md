@@ -5,6 +5,8 @@ arp
 	-a		display all network interface
 
 
+getmac /v # get mac address
+
 ipconfig # *"str" insert string like "Ethernet adapter Ethernet" 
 	
 	/all		displays the full configuration information.
@@ -54,6 +56,11 @@ netsh
 netsh advfirewall firewall add rule name="Deny Ping" dir=in action=block protocol=icmpv4 remoteip=any
 netsh advfirewall firewall add rule name="Allow SSH" dir=in action=allow protocol=tcp localport=22
 
+netsh interface # show interface
+netsh interface ip show address  # show Ip addreses
+netsh wlan show wlanreport # Wireless lan report
+netsh interface ip show dnsservers # show dnsservers
+netsh advfirewall set allprofiles state off # Turn off Windows Defender
 
 net share		# configure and manage shared resources
 	sharename=drive:path

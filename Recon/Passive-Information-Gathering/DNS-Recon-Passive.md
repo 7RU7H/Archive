@@ -37,5 +37,4 @@ BE AWARE !! consider DNSdumpster tool for subdomains, and Shodan.io for exposed 
 ## References
 
 [THM Red Team Recon Room](https://tryhackme.com/room/redteamrecon)
-
-[VidewDNS.info](https://viewdns.info/)
+[ViewDNS.info](https://viewdns.info/)

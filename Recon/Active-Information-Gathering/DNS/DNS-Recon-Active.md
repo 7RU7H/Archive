@@ -1,4 +1,4 @@
-# DNS Active Recon
+ns# DNS Active Recon
 [DNS](https://en.wikipedia.org/wiki/Domain_Name_System) is a distributed database responsible for translating domain names into IP addresses. [[DNS-Defined]] for conceptual stuff and for passive DNS recon [[DNS-Recon-Passive]]
 
 ## Host lookup
@@ -45,9 +45,7 @@ dig axfr $domain @$ip
 
 [DNSrecon](https://github.com/darkoperator/dnsrecon) can perform zone transfer with `-t` flag. Can also bruteforce DNS hostnames with `-D`
 ```bash
-usage: dnsrecon.py [-h] [-d DOMAIN] [-n NS_SERVER] [-r RANGE] [-D DICTIONARY] [-f] [-a] [-s] [-b] [-y] [-k] [-w] [-z] [--threads THREADS] [--lifetime LIFETIME] [--tcp] [--db DB] [-x XML] [-c CSV] [-j JSON] [--iw]
-                   [--disable_check_recursion] [--disable_check_bindversion] [-V] [-v] [-t TYPE]
-
+usage: dnsrecon.py [-h] [-d DOMAIN] [-n NS_SERVER] [-r RANGE] [-D DICTIONARY] [-f] [-a] [-s] [-b] [-y] [-k] [-w] [-z] [--threads THREADS] [--lifetime LIFETIME] [--tcp] [--db DB] [-x XML] [-c CSV] [-j JSON] [--iw] [--disable_check_recursion] [--disable_check_bindversion] [-V] [-v] [-t TYPE]
 ```
 
 [Script](https://github.com/7RU7H/AllTheHackingScripts/blob/main/bash/dnsZoneTransfer.sh)

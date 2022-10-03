@@ -21,7 +21,7 @@ Never forget your `nmap sU` scans or equivalent.
 
 Requires a community list contains community strings and ip addresses. `onesixtyone` will then brute force against the list of ips.
 ```bash
-onesixtyone -c community -i $SMNP_IP_LIST
+onesixtyone -c $community -i $SMNP_IP_LIST
 ```
 
 ```bash

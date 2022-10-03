@@ -114,7 +114,7 @@ find world writable directories:
 find / -writable -type d 2>/dev/null
 find / -perm -222 -type d 2>/dev/null
 find / -perm -o w -type d 2>/dev/null 
-JUST REMEMBER /usr is not writable!:
+# JUST REMEMBER /usr is not writable!:
 find / -writable 2>/dev/null | cut -d "/" -f 2,3 | grep -v proc | sort -u
 
 use: man find	for specific program documentation	

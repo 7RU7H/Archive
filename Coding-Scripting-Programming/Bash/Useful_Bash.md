@@ -144,15 +144,15 @@ done
 
 ```
 [More from askubuntu](https://askubuntu.com/questions/1057870/bash-script-for-i-in-x-y#1057897)
-```
+```bash
 for ((i=$x;i<=$y;i++))
 ```
 Before using the following functions, read below !For a sequence of numbers, you might use `seq`:
-```
+```bash
 for i in $(seq $x $y)
 ```
 If you really need brace expansion, you can use `eval`:
-```
+```bash
 for i in $(eval echo {$x..$y})
 ```
 
@@ -180,7 +180,7 @@ function testfunc () #compond_cmd [>,<,>>] file
 
 testfunc () 
 {
-	echo "C-like function defintition"
+	echo "C-like function definition"
 }
 
 ```
