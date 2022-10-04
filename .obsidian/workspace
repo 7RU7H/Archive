@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Web-Application-Hacking/Content-Discovery/FFUF-Cheatsheet.md",
+            "file": "Tools/Useful-Software/Puzzle-Solution-Tools.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "file:upload",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -49,12 +49,11 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 218.5
+    "width": 308.5
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -70,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Web-Application-Hacking/Content-Discovery/FFUF-Cheatsheet.md",
+                "file": "Tools/Useful-Software/Puzzle-Solution-Tools.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,17 +87,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "904463d60d8efa8d",
+  "active": "dd2a310c581ea896",
   "lastOpenFiles": [
+    "Web-Application-Hacking/File-Inclusion-And-Directory-Traversal/Log-Poisoning.md",
+    "Web-Application-Hacking/CMS/Wordpress/Wordpress.md",
+    "Web-Application-Hacking/File-Inclusion-And-Directory-Traversal/File-Inclusion-And-Directory-Traversal.md",
+    "Web-Application-Hacking/File-Inclusion-And-Directory-Traversal/DT-FI-Windows-Files.md",
+    "Web-Application-Hacking/Content-Discovery/FFUF-Cheatsheet.md",
     "DnsAdmin-To-DC.md",
     "Tools/Kekeo-Cheatsheet.md",
     "Tools/Nuclei.md",
     "Packet-Analysis/Packet-Analysis-Header-Filtering.md",
-    "Packet-Analysis/Packet-Analysis.md",
-    "Tools/Packet-Analysis/Tshark.md",
-    "Post-Exploitation/Lateral-Movement/Active-Directory-Lateral-Movement/AD-Lateral-Movement-Spawning-Remote-Processes.md",
-    "Post-Exploitation/Persistence/Windows-Persistence/Windows-Persistence-Implant-Existing-Services.md",
-    "Post-Exploitation/Persistence/Windows-Persistence/Windows-Persistence-Abusing-Services.md",
-    "Post-Exploitation/Persistence/Windows-Persistence/Windows-Persistence-Backdooring-Files.md"
+    "Packet-Analysis/Packet-Analysis.md"
   ]
 }

