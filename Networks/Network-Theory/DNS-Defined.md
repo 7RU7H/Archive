@@ -24,9 +24,10 @@ Process to resolve this hostname:
 
 A DNS recursor is responsible for interacting with the DNS infrastructure and returning the results to its DNS client. 
 
-The authoritative nameserver contains DNS records in a local database known as the zone file. Generally comprised of
+The authoritative nameserver contains DNS records in a local database known as the zone file. Generally comprised of:
 1. Forward lookup zone  
-2. Reverse lookup zone  
+2. Reverse lookup zone 
+
 These are used find specific hostname and IP addresses.
 
 DNS caching is used to store local copies of DNS records at various stages of the lookup process to improve performance. Browser have a separate DNS cache from  local DNS client. The  DNS record's cache lifespan is set by Domain Owner with the Time To Live (TTL) field of a DNS record.

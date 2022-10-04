@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "6eb8fe06e4eb014b",
+        "id": "dd2a310c581ea896",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Networks/Network-Protocols.md",
+            "file": "Web-Application-Hacking/Content-Discovery/FFUF-Cheatsheet.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "firewalls",
+                "query": "file:upload",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -49,7 +49,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -69,7 +70,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Networks/Network-Protocols.md",
+                "file": "Web-Application-Hacking/Content-Discovery/FFUF-Cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -87,17 +88,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "6eb8fe06e4eb014b",
+  "active": "904463d60d8efa8d",
   "lastOpenFiles": [
-    "Recon/Active-Information-Gathering/SNMP/SNMP-Recon-Cheatsheet.md",
-    "Recon/Active-Information-Gathering/SMTP/SMTP-Recon-Cheatsheet.md",
+    "DnsAdmin-To-DC.md",
+    "Tools/Kekeo-Cheatsheet.md",
+    "Tools/Nuclei.md",
+    "Packet-Analysis/Packet-Analysis-Header-Filtering.md",
+    "Packet-Analysis/Packet-Analysis.md",
+    "Tools/Packet-Analysis/Tshark.md",
+    "Post-Exploitation/Lateral-Movement/Active-Directory-Lateral-Movement/AD-Lateral-Movement-Spawning-Remote-Processes.md",
     "Post-Exploitation/Persistence/Windows-Persistence/Windows-Persistence-Implant-Existing-Services.md",
-    "Post-Exploitation/Persistence/Windows-Persistence/Windows-Persistence.md",
     "Post-Exploitation/Persistence/Windows-Persistence/Windows-Persistence-Abusing-Services.md",
-    "Post-Exploitation/Persistence/Windows-Persistence/Windows-Persistence-Backdooring-Files.md",
-    "Post-Exploitation/Persistence/Windows-Persistence/Windows-Persistence-Logon-Triggered.md",
-    "Post-Exploitation/Persistence/Windows-Persistence/Windows-Persistence-RDP.md",
-    "Post-Exploitation/Persistence/Windows-Persistence/Windows-Persistence-Abusing-Scheduled-Tasks.md",
-    "Windows/Windows-Commands/Windows-CLI-cmd.md"
+    "Post-Exploitation/Persistence/Windows-Persistence/Windows-Persistence-Backdooring-Files.md"
   ]
 }
