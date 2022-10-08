@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Tools/Useful-Software/Puzzle-Solution-Tools.md",
+            "file": "Talk-Notes-Modern-Active-Directory-Attacks-&-Defense.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/Useful-Software/Puzzle-Solution-Tools.md",
+                "file": "Talk-Notes-Modern-Active-Directory-Attacks-&-Defense.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "dd2a310c581ea896",
   "lastOpenFiles": [
-    "Web-Application-Hacking/File-Inclusion-And-Directory-Traversal/Log-Poisoning.md",
-    "Web-Application-Hacking/CMS/Wordpress/Wordpress.md",
-    "Web-Application-Hacking/File-Inclusion-And-Directory-Traversal/File-Inclusion-And-Directory-Traversal.md",
-    "Web-Application-Hacking/File-Inclusion-And-Directory-Traversal/DT-FI-Windows-Files.md",
-    "Web-Application-Hacking/Content-Discovery/FFUF-Cheatsheet.md",
-    "DnsAdmin-To-DC.md",
-    "Tools/Kekeo-Cheatsheet.md",
-    "Tools/Nuclei.md",
-    "Packet-Analysis/Packet-Analysis-Header-Filtering.md",
-    "Packet-Analysis/Packet-Analysis.md"
+    "Exploitation/Windows/Active-Directory/Pass-The-Ticket.md",
+    "Talk-Notes-Modern-Active-Directory-Attacks-&-Defense.md",
+    "Tools/Useful-Software/Mimikatz-Cheatsheet.md",
+    "Security-Enterprises/Redteam/Red-Team-Hub.md",
+    "[[Mimikatz-Cheatsheet]].md",
+    "README.md",
+    "Brain-Hacking/Improve-Your-Learning.md",
+    "Windows/Windows-Concepts/Windows-API.md",
+    "Windows/Windows-Tools.md",
+    "Privilege-Escalation/Linux/Linux-Privilege-Escalation.md"
   ]
 }

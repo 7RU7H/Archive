@@ -1,19 +1,27 @@
 # Crunch
+
+## Introduction
 Crunch can create a wordlist based on criteria you specify. The output from crunch can be sent to the screen, file, or to another program.
+
+```bash
+apt install crunch
+```
+
 ```bash
 Usage: crunch <min> <max> [options]
-where min and max are numbers
+# where min and max are numbers
+-t # flag to set a specific pattern 
 ```
 Before using Crunch be extremely careful with disk memory usage exponentation! It is very easy to generate a wordlist of many Terabytes. BEWARE.
 
+## Patterns
 
-
-`-t` flag to set a specific pattern 
 Pattern Character | Character Translation
-@ | Lower case alphabet characters
-, | Upper case alphabet characters
-% | Numeric characters
-^ | Special characters including space
+---  | ---
+`@` | Lower case alphabet characters
+`,` | Upper case alphabet characters
+`%` | Numeric characters
+`^` | Special characters including space
 
 
 

@@ -30,6 +30,7 @@ Windows distinguishes hardware access by two distinct modes:
 --- | ---
 No direct hardware access | Direct hardware access  
 Access to "owned" memory locations | Access to entire physical memory
+
 For information about the kernel see [[Windows-Kernel]] and memory see [[Windows-VirtualMemory]]. When looking at how languages interact with the Win32 API, this process can become further warped; the application will go through the language runtime before going through the API. See [[Windows-Runtime-Detection-Evasion]].
 
 ## Windows API Components 
@@ -49,7 +50,6 @@ In/Out Parameters | The parameter values that are defined by the call structures
 ## OS Libraries 
 
 Each API call of the Win32 library resides in memory and requires a pointer to a memory address. The process of obtaining pointers to these functions is obscured because of **ASLR** (**A**ddress **S**pace **L**ayout **R**andomization) implementations; each language or package has a unique procedure to overcome ASLR. Given ASLR associated problems, windows.h will determine what calls are being made and create a thunk table to obtain function addresses or pointers.
-
 
 #### P/Invoke
 Microsoft describes [P/Invoke](https://learn.microsoft.com/en-us/dotnet/standard/native-interop/pinvoke) or platform invoke as *“a technology that allows you to access structs, callbacks, and functions in unmanaged libraries from your managed code.”* It is used handle the entire  process of invoking an unmanaged function from managed code, by importing DLLs that contains the unmanaged function or Win32 API call *"Most of the P/Invoke API is contained in two namespaces: `System` and `System.Runtime.InteropServices`. Using these two namespaces give you the tools to describe how you want to communicate with the native component."*

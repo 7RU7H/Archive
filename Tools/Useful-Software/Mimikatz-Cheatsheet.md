@@ -1,5 +1,14 @@
 # Mimikatz
-Used in Post Privilege Esculation in maintaining [[Persistence]] through credential harvesting and [[Active-Directory-Lateral-Movement]]
+Used in Post Privilege Esculation in maintaining [[Persistence]] through credential harvesting and [[Active-Directory-Lateral-Movement]]. Mimikatz is used to dump credentials:
+- From windows protect memory (LSASS) and activity directory domain controller database
+- Kerberos tickets
+	- For all users
+	- For current users
+- Credential Injection
+- Generate Silver/Golden tickets
+	- [[Pass-The-Hash]]
+	- [[Pass-The-Ticket]]
+- And more
 
 ```powershell
 privilege::debugv # enables the _SeDebugPrivilge_ access right
@@ -18,7 +27,7 @@ lsadump::sam # Dump SAM database
 ```
 
 ## Kerberos Attacks
-Used in [[Attacking-Kerberos]] see the detailed mechanics of Kerberos and [[Active-Directory-Kerberos-Authenication-Defined]]. It is credential base so understanding [[Active-Directory-Authentication]] in part for  [[Active-Directory-Privilege-Escalation]] and [[Active-Directory-Lateral-Movement]] as it is capable of command execution.
+Used in [[Attacking-Kerberos]] see the detailed mechanics of Kerberos and [[Active-Directory-Kerberos-Authenication-Defined]]. It is credential base so understanding [[Active-Directory-Authentication]] in part for [[Active-Directory-Privilege-Escalation]] and [[Active-Directory-Lateral-Movement]] as it is capable of command execution.
 
 ### Kerberos Tickets
 ```powershell
