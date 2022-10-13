@@ -27,10 +27,9 @@ If file permission on the server are lacks, location of file path found and info
 2. File type filtering 
 	1. MIME(**M**ultipurpose **I**nternet **M**ail **E**xtension) validation 
 	2. Magic number validation - first bytes of file, `hexedit` to edit in hex.
-3. File length filtering  -
+3. File length filtering - 
 4. File name filtering - bad chars like control chars, slashes, null bytes
 5. File content filtering - checks file content
- 
  
 ##  Bypassing Client-Side filtering
 1.  Turn off Javascript in your browser
@@ -48,8 +47,6 @@ If file permission on the server are lacks, location of file path found and info
 4. Change the content, length of file
 	1. encoding
 	2. compression
-
-
+	3. 
 ## Upload functionality specifics
-
 - If .aspx then use a .aspx reverseshell

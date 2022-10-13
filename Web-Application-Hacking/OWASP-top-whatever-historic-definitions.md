@@ -13,7 +13,7 @@ Poor implementation of or lack of adequate cryptographic algorithms to protect d
 
 ## Injection
 Submitable data that is not properly filtered at an injection point: log in form, search feature or ANY interactive components.
-SQLi see [[SQLInjection]], XSS(2021 included as an injection attack) [[XXS-Cheatsheet]], template-injection like: [[Server-Side-Template-Injection-Cheatsheet]]
+SQLi see [[SQLInjection]], XSS(2021 included as an injection attack) [[XSS-Cheatsheet]], template-injection like: [[Server-Side-Template-Injection-Cheatsheet]]
 
 ## Insecure Desgin 
 Where the web application design is fundementally flawed. OWASP *"An insecure design cannot be fixed by a perfect implementation as by definition, needed security controls were never created to defend against specific attacks"*

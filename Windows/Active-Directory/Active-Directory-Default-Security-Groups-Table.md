@@ -1,3 +1,5 @@
+# Active Directory Default Security Groups Table
+
 Groups | Description
 --- | ---
 Domain Controllers | All domain controllers in the domain

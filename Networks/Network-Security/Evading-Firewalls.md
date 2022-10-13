@@ -9,7 +9,7 @@ This article contains methods to evade Firewalls check [[Firewalls]] for typolog
 ```
 Windows
 ```powershell
-netsh advfirewall set allprofiles state of
+netsh advfirewall set allprofiles state off
 ```
 
 ## Evasion Via Controlling the Source MAC/IP/Port

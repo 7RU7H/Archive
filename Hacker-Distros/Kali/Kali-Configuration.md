@@ -13,7 +13,6 @@ cat /etc/resolv.conf
 ```
 
 ```bash
-
 sudo systemctl restart NetworkManager
 ```
 
@@ -52,4 +51,4 @@ Beware lacks in integrated support for wireless networks.
 
 
 ## References
-[Systemd-networkd Arch Wiki](https://wiki.archlinux.org/title/Systemd-networkd) *"
+[Systemd-networkd Arch Wiki](https://wiki.archlinux.org/title/Systemd-networkd) 

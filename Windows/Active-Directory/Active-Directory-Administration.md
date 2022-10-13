@@ -1,4 +1,4 @@
-## Active Directory Administration
+# Active Directory Administration
 
 This article will eventual contain as must bare-bones guidance on applications and some configuration. So if you [[Active-Directory-Privilege-Escalation]] to some form of [[Active-Directory-Persistence]] and now need to become the DC to some Administration, hopeful this article will have you covered. But to attack is defend without defending and to defend is to attack without attacking the circle of Microsoft Windows and the fools that use, hack and sysadmin it go on. Simply put more as a reminder for myself to put in time to learn how the mechanicism operator as well as how they should not.  
 

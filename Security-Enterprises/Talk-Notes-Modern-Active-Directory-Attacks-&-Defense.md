@@ -5,7 +5,7 @@ These are my notes from the DEFCON 23 talk about Active Directory hacking and de
 
 *Around this time, Active Directory (AD) admins all over the world felt a great disturbance in the Force. Golden Tickets are the ultimate method for persistent, forever AD admin rights to a network since they are valid Kerberos tickets and can’t be detected, right? This talk explores the latest Active Directory attack vectors and describes how Golden Ticket usage can be detected. When forged Kerberos tickets are used in AD, there are some interesting artifacts that can be identified. Yes, despite what you may have read on the internet, there are ways to detect Golden & Silver Ticket usage. Skip the fluff and dive right into the technical detail describing the latest methods for gaining and maintaining administrative access in Active Directory, including some sneaky AD persistence methods. Also covered are traditional security measures that work (and ones that don’t) as well as the mitigation strategies that disrupts the attacker’s preferred game-plan. Prepare to go beyond “Pass-the-Hash” and down the rabbit hole.*
 
-For the author this talk will augment further information throughout this repository and be referenced both to this page, but also the video. I choose the DEF CON video just because it is slightly longer than the Black Hat version. It also turns out this is as this was not in the Black Hat talk and contains Sneaky AD Persistence tricks .
+For the author this talk will augment further information throughout this repository and be referenced both to this page, but also the video. I choose the DEF CON video just because it is slightly longer than the Black Hat version. It also turns out this is as this was not in the Black Hat talk and contains Sneaky AD Persistence tricks.
 
 ## Agenda
 
@@ -28,7 +28,7 @@ For the author this talk will augment further information throughout this reposi
 				- `Get-DecryptedCpassword`
 			- Pivoting with Local Admin
 				- Using GPP Credentials
-				- Connect to other computers  using ADAAdmin account
+				- Connect to other computers using ADA Admin account
 				- Compromise Local Admin creds = Admin rights no all
 				- Always RID 500 - doesn't if renamed.
 				- Mimikatz for more credentials!
@@ -91,7 +91,7 @@ For the author this talk will augment further information throughout this reposi
 					- Doesn't work acrross trusts unless in EA
 				- [[Mimikatz-Cheatsheet]] support SID History in Golden Tickets
 		- Silver Tickets (Forged TGS) Communication
-				- Attacker dumped AD "& has all domain creds
+				- Attacker dumped AD & has all domain creds
 				- Even if domain controller password more than once
 				- Attacker still has Domain Controller hashes
 		- Silver to Golden ticket 
@@ -107,13 +107,13 @@ For the author this talk will augment further information throughout this reposi
 					- Access the to email can get a cross forest TGT
 			
 			
-			
-			- Local Policy 
-			- Logon Scripts
-			- Group Policy
-			- Scheduled Tasks
-			- WMI
-			- Output | SYSVOL
+- Others Bullet point
+	- Local Policy 
+	- Logon Scripts
+	- Group Policy
+	- Scheduled Tasks
+	- WMI
+	- Output | SYSVOL
 				
 ##  Blue Team (Detect, Mitigate and Prevent)
 - [[Blueteam-Hub]]

@@ -47,7 +47,6 @@ airmon-ng stop wlan<NUM> # End monitor mode
 ```
 
 
-
 ## References
 [THM Room](https://tryhackme.com/room/wifihacking101)
 [David Bombal](https://davidbombal.com/hack-wifi-from-1-80/)

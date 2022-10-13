@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "dd2a310c581ea896",
+        "id": "e23dda3db88fb85c",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Talk-Notes-Modern-Active-Directory-Attacks-&-Defense.md",
+            "file": "Web-Application-Hacking/SQLi/SQLInjection.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Talk-Notes-Modern-Active-Directory-Attacks-&-Defense.md",
+                "file": "Web-Application-Hacking/SQLi/SQLInjection.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -87,17 +87,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "dd2a310c581ea896",
+  "active": "e23dda3db88fb85c",
   "lastOpenFiles": [
-    "Exploitation/Windows/Active-Directory/Pass-The-Ticket.md",
-    "Talk-Notes-Modern-Active-Directory-Attacks-&-Defense.md",
-    "Tools/Useful-Software/Mimikatz-Cheatsheet.md",
-    "Security-Enterprises/Redteam/Red-Team-Hub.md",
-    "[[Mimikatz-Cheatsheet]].md",
-    "README.md",
-    "Brain-Hacking/Improve-Your-Learning.md",
-    "Windows/Windows-Concepts/Windows-API.md",
-    "Windows/Windows-Tools.md",
-    "Privilege-Escalation/Linux/Linux-Privilege-Escalation.md"
+    "Web-Application-Hacking/XSS-Cheatsheet.md",
+    "Web-Application-Hacking/Web-App-Administration-Consoles.md",
+    "Web-Application-Hacking/Upload-Vulnerabilities.md",
+    "Web-Application-Hacking/Bypassing-Rate-Limits.md",
+    "Web-Application-Hacking/Command-Injection-Cheatsheet.md",
+    "Web-Application-Hacking/Cross-Site-Request-Forgery.md",
+    "Web-Application-Hacking/Curl-Cheatsheet.md",
+    "Web-Application-Hacking/Server-Side-Template-Injection-Cheatsheet.md",
+    "Web-Application-Hacking/Session-Tokens.md",
+    "Post-Exploitation-Enumeration/Active-Directory/Active-Directory-Footholding.md"
   ]
 }

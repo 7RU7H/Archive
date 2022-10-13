@@ -8,7 +8,7 @@ This is a hub page for linking all of a specific directory structure.
 [[DNS-Recon-Passive.md]]
 [[Passive-Recon.md]]
 [[Search-Engine-Dorking.md]]
-[[Website-Recon.md]]
+[[Website-Recon]]
 [[Geolocating]]
 [[Recon-ng.md]]
 [[Shodan.md]]

@@ -10,7 +10,7 @@
 ## Bypassing with Header
 [infosec](https://infosecwriteups.com/bypassing-rate-limit-like-a-pro-5f3e40250d3c)
 
-1. X-Forwarded-For : IP
+1.  X-Forwarded-For : IP
 2.  X-Forwarded-Host : IP
 3.  X-Client-IP : IP 
 4.  X-Remote-IP : IP

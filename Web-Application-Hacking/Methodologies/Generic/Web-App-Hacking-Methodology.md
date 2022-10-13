@@ -42,6 +42,7 @@ Detirmination of attack surface is outlined in [[Application-Analysis]].
 12. Login pages
 13. Source code for static analysis
 
+
 #### Web Stack Enumeration
 A web stack is the combinations of web technologies from front-end typically UX of a webpage to back-end database, a (or combination of) language(s) and finally the host OS of a server.
 
