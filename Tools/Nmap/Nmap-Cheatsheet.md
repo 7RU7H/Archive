@@ -76,7 +76,7 @@ Default -sS sizeof 44 [20=ip_header,24=TCP_header]
 ```
 
 ## Analysis with tshark and iptables
-[[Tshark-Cheatsheet]]: 
+[[Tshark]]: 
 ```bash
 ifconfig | grep -C 2 $IP-MINUS-4TH-OCTET	# cp interface
 $INTERFACE #=cp interface

@@ -2,6 +2,10 @@
 
 Defined as the use of search strings and operators to refine search results. [Exploitdb has a Google Hacking Database of clever searches](https://www.exploit-db.com/google-hacking-database)
 
+Google Hacking:
+![](refinegooglehacking-tech.png)
+
+DuckDuckGo:
 ![ddg-dork](Images/ddg-dorking.png)
 [DuckDuckGo Search Syntax](https://help.duckduckgo.com/duckduckgo-help-pages/results/syntax/)
 [Google's Refine web searches](https://support.google.com/websearch/answer/2466433)

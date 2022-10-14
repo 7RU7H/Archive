@@ -33,11 +33,11 @@ Proxy -> Options -> TLS Pass Through -> Add
 Need pass through for:
 - Targeting
 - Required mutual authenication or HTTP Public Key Pinning
-- 
+
 ## Bypass intercepting HTTPS traffic by configurating to forward traffics towards websites without decrypting and re-encrypting them first.
 
 ## SOCKS Proxy in Burp
-User option in Burp Suite -> SOCKS Proxy -> 127.0.0.1 & port number
+`User options -> SOCKS Proxy -> 127.0.0.1 & port number` then tick the `Use Proxy`
 
 ## Too much data -> Add Scope to include/exclude
 `Target -> Scope -> Target scope`, to add manually or 

@@ -13,7 +13,25 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Web-Application-Hacking/File-Inclusion-And-Directory-Traversal/Log-Poisoning.md",
+                "file": "Web-Application-Hacking/Burpsuite/Burpsuite-Helpsheet.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "fe8f40b2f6d0c937",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a0d115879f5b258c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Web-Application-Hacking/CMS/Wordpress/Wordpress.md",
                 "mode": "source",
                 "source": false
               }
@@ -77,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Web-Application-Hacking/File-Inclusion-And-Directory-Traversal/Log-Poisoning.md",
+                "file": "Web-Application-Hacking/Burpsuite/Burpsuite-Helpsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,15 +118,15 @@
   },
   "active": "e23dda3db88fb85c",
   "lastOpenFiles": [
-    "Post-Exploitation-Enumeration/Reverse-Shells-Listing.md",
-    "Post-Exploitation-Enumeration/Shells.md",
-    "Networks/Proxies.md",
+    "Web-Application-Hacking/CMS/Wordpress/Wordpress.md",
+    "Web-Application-Hacking/Burpsuite/Burpsuite-Helpsheet.md",
+    "Cryptography-And-Authentication/Password-Attacks/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
+    "Tools/Nmap/Nmap-Cheatsheet.md",
+    "Tools/Curl-Cheatsheet.md",
+    "Hacker-Distros/Kali/Kali-Configuration.md",
+    "Tools/Useful-Software/TMUX.md",
     "Post-Exploitation-Enumeration/Port-Redirection-And-Tunneling.md",
-    "Tools/Useful-Software/Chisel.md",
-    "Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
-    "Cryptography-And-Authentication/Cracking-Files.md",
-    "Coding-Scripting-Programming/PHP/Useful_PHP.md",
-    "Web-Application-Hacking/File-Inclusion-And-Directory-Traversal/Log-Poisoning.md",
-    "Recon/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md"
+    "Networks/Proxies.md",
+    "Tools/Shells/SSH-Cheatsheet.md"
   ]
 }
