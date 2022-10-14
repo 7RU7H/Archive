@@ -77,16 +77,22 @@ Get-WmiObject Win32_PnPSignedDriver | Select-Object DeviceName, DriverVersion, M
 
 ## Network Enumeration
 ```powershell
-net share # Show shares
 Get-NetComputer -ping
-netstat -ano # -a displays all active connections, -n prevents name resolution, -o display the pid for each connection
-# ARP Table
-arp -a
-Get-NetNeighbor -AddressFamily IPv4 | ft ifIndex,IPAddress,LinkLayerAddress,State
 # check dns server
 ipconfig /all                                    
 Get-NetIPConfiguration | ft InterfaceAlias,InterfaceDescription,IPv4Address
 Get-DnsClientServerAddress -AddressFamily IPv4 | ft
+
+# -a displays all active connections, -n prevents name resolution, -o display the pid for each connection
+netstat -ano 
+
+# ARP Table
+arp -a
+Get-NetNeighbor -AddressFamily IPv4 | ft ifIndex,IPAddress,LinkLayerAddress,State
+
+# Network shares
+net share
+powershell Find-DomainShare -ComputerDomain domain.local
 
 # List routing table
 route print
@@ -146,6 +152,19 @@ List all block ports by firewall
 $f=New-object -comObject HNetCfg.FwPolicy2;$f.rules |  where {$_.action -eq "0"} | select name,applicationname,localports
 ```
 
+Disable firewall
+```powershell
+# Disable Firewall on Windows 7 via cmd
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurentControlSet\Control\Terminal Server"  /v fDenyTSConnections /t REG_DWORD /d 0 /f
+
+# Disable Firewall on Windows 7 via Powershell
+powershell.exe -ExecutionPolicy Bypass -command 'Set-ItemProperty -Path "HKLM:\System\CurrentControlSet\Control\Terminal Server" -Name "fDenyTSConnections" –Value'`
+
+# Disable Firewall on any windows via cmd
+netsh firewall set opmode disable
+netsh Advfirewall set allprofiles state off
+```
+
 Eventlogs sometimes provide an insight into applications and services, security or otherwise
 ```powershell 
 Get-EventLog -List
@@ -188,6 +207,7 @@ AV
 ```powershell
 wmic / :\\ \  path antivirusproduct
 Get-CimInstance -Namespace <name/space> -ClassName AntivirusProduct
+WMIC /Node:localhost /Namespace:\\root\SecurityCenter2 Path AntivirusProduct Get displayName
 ```
 
 Sysmon Enumeration
@@ -231,6 +251,14 @@ wmic product get name,version,vendor
 wmic service list brief
 wmic service list brief | findstr  "Running"
 sc qc <service>
+```
+
+## AppLocker
+
+```powershell
+# List AppLocker Rules
+# Requires Powerview
+PowerView PS C:\> Get-AppLockerPolicy -Effective | select -ExpandProperty RuleCollections
 ```
 
 ## Services

