@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Web-Application-Hacking/Burpsuite/Burpsuite-Helpsheet.md",
+                "file": "Tools/Masscan/Masscan-Cheatsheet.md",
                 "mode": "source",
                 "source": false
               }
@@ -95,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Web-Application-Hacking/Burpsuite/Burpsuite-Helpsheet.md",
+                "file": "Tools/Masscan/Masscan-Cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,8 +118,8 @@
   },
   "active": "e23dda3db88fb85c",
   "lastOpenFiles": [
-    "Web-Application-Hacking/CMS/Wordpress/Wordpress.md",
     "Web-Application-Hacking/Burpsuite/Burpsuite-Helpsheet.md",
+    "Web-Application-Hacking/CMS/Wordpress/Wordpress.md",
     "Cryptography-And-Authentication/Password-Attacks/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
     "Tools/Nmap/Nmap-Cheatsheet.md",
     "Tools/Curl-Cheatsheet.md",

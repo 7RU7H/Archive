@@ -8,7 +8,7 @@ Some of the tips very simple for simple problems, sometimes that is simply requi
 
 # Cool things for the cmd [more]
 - Builtin Browser, never setup the burp certifact with your own browser every again!
-	GOTO Project settings -> no sandbox for builtin browser
+Go to `Project settings -> no sandbox for builtin browser`
 
 
 ## FoxyProxy/Firefox proxy
@@ -28,7 +28,7 @@ GOTO Certificate manager in Firefox -> Import it!
 
 ## Bypassing Proxy for (some) HTTPS Traffic
 
-Proxy -> Options -> TLS Pass Through -> Add
+`Proxy -> Options -> TLS Pass Through -> Add`
 
 Need pass through for:
 - Targeting
