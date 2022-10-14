@@ -4,16 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "e23dda3db88fb85c",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Web-Application-Hacking/XSS-Cheatsheet.md",
-            "mode": "source",
-            "source": false
+        "id": "350299ce52b482e6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e23dda3db88fb85c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Web-Application-Hacking/File-Inclusion-And-Directory-Traversal/Log-Poisoning.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        }
+        ]
       }
     ],
     "direction": "vertical"
@@ -31,7 +37,9 @@
             "type": "leaf",
             "state": {
               "type": "file-explorer",
-              "state": {}
+              "state": {
+                "sortOrder": "alphabetical"
+              }
             }
           },
           {
@@ -41,7 +49,7 @@
               "type": "search",
               "state": {
                 "query": "",
-                "matchingCase": true,
+                "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -69,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Web-Application-Hacking/XSS-Cheatsheet.md",
+                "file": "Web-Application-Hacking/File-Inclusion-And-Directory-Traversal/Log-Poisoning.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -87,17 +95,20 @@
     "width": 300,
     "collapsed": true
   },
+  "ribbon": {
+    "mostRecentAction": ""
+  },
   "active": "e23dda3db88fb85c",
   "lastOpenFiles": [
-    "Web-Application-Hacking/SQLi/SQLInjection.md",
-    "Web-Application-Hacking/SQLi/NoSQL-SQLI.md",
-    "Web-Application-Hacking/SQLi/MySQL-Hacking.md",
-    "Web-Application-Hacking/Server-Side-Template-Injection-Cheatsheet.md",
-    "Web-Application-Hacking/Session-Tokens.md",
-    "Web-Application-Hacking/Web-App-Administration-Consoles.md",
-    "Post-Exploitation/Lateral-Movement/Active-Directory-Lateral-Movement/AD-Lateral-Movement-With-WMI.md",
-    "Post-Exploitation/Lateral-Movement/Active-Directory-Lateral-Movement/AD-Lateral-Movement-Spawning-Remote-Processes.md",
-    "Post-Exploitation/Lateral-Movement/Active-Directory-Lateral-Movement/Active-Directory-Lateral-Movement.md",
-    "Tools/C2/Empire/Empire.md"
+    "Post-Exploitation-Enumeration/Reverse-Shells-Listing.md",
+    "Post-Exploitation-Enumeration/Shells.md",
+    "Networks/Proxies.md",
+    "Post-Exploitation-Enumeration/Port-Redirection-And-Tunneling.md",
+    "Tools/Useful-Software/Chisel.md",
+    "Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+    "Cryptography-And-Authentication/Cracking-Files.md",
+    "Coding-Scripting-Programming/PHP/Useful_PHP.md",
+    "Web-Application-Hacking/File-Inclusion-And-Directory-Traversal/Log-Poisoning.md",
+    "Recon/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md"
   ]
 }

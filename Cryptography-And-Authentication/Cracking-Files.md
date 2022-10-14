@@ -23,3 +23,5 @@ Crack with `ssh2john`
 ## Zip files
 
 Crack with `zip2john`
+
+Hashcat mode 17200

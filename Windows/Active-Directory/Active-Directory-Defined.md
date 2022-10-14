@@ -114,7 +114,7 @@ Machines are objects in Active Directory are **objects** known security principa
 
 Machine Account passwords are automatically rotated out and are generally comprised of 120 random characters.
 
-#### Active Directory Users￼￼IP vs H
+#### Active Directory Users IP vs H
 
 Users are either people or services, Users are **objects** known security principals (see [Documentation](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/manage/understand-security-principals))
 
@@ -152,7 +152,7 @@ SA = one or more sub authority value
 IP vs H
 Sub authority value is dynamic and consists tof two primary parts: 
 /	Domain's numeric identifier 	-22-1234-1234-1234 
-	Relative identifier(RID) 	-1010
+Relative identifier(RID) 	-1010
 
 ##### Notes:
 BEWARE AD-cmdlets only installed by default on DCs!
