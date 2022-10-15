@@ -99,9 +99,44 @@ Available columns: created_at, info, name, port, proto, state, updated_at
 
 db_status # View connection to metasploit database
 workspace # -a to add -d to delete 
+
+Database Backend Commands
+=========================
+
+    Command           Description
+    -------           -----------
+    creds             List all credentials in the database
+    db_connect        Connect to an existing database
+    db_disconnect     Disconnect from the current database instance
+    db_export         Export a file containing the contents of the database
+    db_import         Import a scan result file (filetype will be auto-detected)
+    db_nmap           Executes nmap and records the output automatically
+    db_rebuild_cache  Rebuilds the database-stored module cache
+    db_status         Show the current database status
+    hosts             List all hosts in the database
+    loot              List all loot in the database
+    notes             List all notes in the database
+    services          List all services in the database
+    vulns             List all vulnerabilities in the database
+    workspace         Switch between database workspaces
+
 ```
 
 Workspace according to [Rapid7](https://docs.rapid7.com/metasploit/managing-workspaces/): *"Workspaces enable you to segment and manage the hosts and data stored in the database. You can use workspaces to create a logical separation for each segment that you want to test. For example, you may want to create a workspace for each subnet within an organization to limit the hosts to a specific network. Departments like HR, IT, and Accounting would each have its own workspace."*
+
+```bash
+workspace -h
+Usage:
+    workspace                  List workspaces
+    workspace -v               List workspaces verbosely
+    workspace [name]           Switch workspace
+    workspace -a [name] ...    Add workspace(s)
+    workspace -d [name] ...    Delete workspace(s)
+    workspace -D               Delete all workspaces
+	workspace -r               Rename workspace
+    workspace -h               Show this help information
+```
+
 
 ## Auxiliary Modules Commands
 

@@ -108,8 +108,8 @@ By default Nmap does not scan the ports in numerical order
 -p U:$ports T:$port	# by protocol
 -p-					# all ports 
 --open				# open
--top-ports			# top 100 ports
--F 					# Fast scan 
+-top-ports 123		# Specify an arbitrary number of top ports to scan
+-F 					# Fast scan scan only the 100 most common ports
 -r 					# Perform a Sequential Port Scan
 ```
 
