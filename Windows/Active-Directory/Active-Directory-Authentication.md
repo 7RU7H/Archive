@@ -25,7 +25,7 @@ Command  | Network Protocol | Authentication
 5. Server forward to the `response` to DC.
 6. DC encrypt the `nouce/challenge`  itself with its stored version of the NTLM hash to make a comparison with the forwarded `response`
 
-## Kerberos Authenication
+## Kerberos Authentication
 For detailed explainations of [[Active-Directory-Kerberos-Authenication-Defined]] and for [[Attacking-Kerberos]] follow the links. The Kerberos authentication protocol used by Microsoft is adopted from the Kerberos version 5 authentication protocol created by MIT and has been used as Microsoft's primary authentication mechanism since Windows Server 2003. It uses a ticket system to ensure an intermediary gatekeeping by the DC as role of key distribution (KDC) for service usage from non-DCs. A example of this process is outlined in [[Active-Directory-Kerberos-Authenication-Defined]].
 
 

