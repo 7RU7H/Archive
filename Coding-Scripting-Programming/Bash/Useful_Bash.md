@@ -314,3 +314,14 @@ echo "$((2#$onebyte))"
 ```bash
 mkdir -p ~/parent-directory/{child-directory-1,child-directory-2,child-directory-3}
 ```
+
+## Coloring  Stdout
+
+```bash
+BOLD="\e[1m"  
+NORMAL="\e[0m"  
+GREEN="\e[32m"  
+RED="\e[30m"HELP="  
+
+${BOLD}[+]USAGE:${NORMAL} ./search.sh  (OPTIONS)
+```

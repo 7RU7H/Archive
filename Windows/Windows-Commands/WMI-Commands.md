@@ -1,4 +1,6 @@
-# WMIC Commands
+# WMI Commands
+
+Windows Management Instrumentation (WMI) is Windows implementation of Web-Based Enterprise Management (WBEM), an enterprise standard for accessing management information across devices. WMIC is the Command line Utility that allows users to perform WMI operations from a command prompt.
 
 ```powershell
 wmic /?

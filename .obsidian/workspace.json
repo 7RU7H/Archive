@@ -13,13 +13,56 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Coding-Scripting-Programming/Bash/Useful_Bash.md",
+                "file": "Post-Exploitation/Lateral-Movement/Active-Directory-Lateral-Movement/AD-Lateral-Movement-With-WMI.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "04f0cfdeda62e987",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Windows/Windows-Commands/WMI-Commands.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ]
+      },
+      {
+        "id": "b7e9fe9599d43db9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "547573b1c5fdc556",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Post-Exploitation/Persistence/Windows-Persistence/Windows-Persistence-Tampering-with-Unprivileged-Accounts.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d24836911d2467b2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/Useful-Software/Mimikatz-Cheatsheet.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -48,7 +91,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "windows-pers",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -77,7 +120,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Coding-Scripting-Programming/Bash/Useful_Bash.md",
+                "file": "Post-Exploitation/Lateral-Movement/Active-Directory-Lateral-Movement/AD-Lateral-Movement-With-WMI.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,15 +143,15 @@
   },
   "active": "14586fced65693e3",
   "lastOpenFiles": [
-    "Tools/Nmap/Nmap-Cheatsheet.md",
+    "Tools/Useful-Software/Mimikatz-Cheatsheet.md",
+    "Post-Exploitation/Lateral-Movement/Active-Directory-Lateral-Movement/AD-Lateral-Movement-With-WMI.md",
+    "Windows/Windows-Commands/WMI-Commands.md",
+    "Post-Exploitation/Persistence/Windows-Persistence/Windows-Persistence-Tampering-with-Unprivileged-Accounts.md",
+    "Post-Exploitation/Lateral-Movement/Active-Directory-Lateral-Movement/AD-Lateral-Movement-Spawning-Remote-Processes.md",
+    "Post-Exploitation/Persistence/Windows-Persistence/Windows-Persistence.md",
     "Coding-Scripting-Programming/Bash/Useful_Bash.md",
-    "Tools/C2/Metasploit/Metasploit.md",
-    "Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
-    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/File-Transfers.md",
-    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Linux-File-Transfers.md",
-    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Windows-File-Transfers.md",
-    "Post-Exploitation/Bind-And-Reverse-Shells-Defined.md",
-    "Windows/Windows-Commands/Windows-CLI-cmd.md",
-    "Post-Exploitation/Reverse-Shells-Listing.md"
+    "Tools/C2/Metasploit/Meterpreter-Commands.md",
+    "Networks/Network-Protocols.md",
+    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/File-Transfers.md"
   ]
 }

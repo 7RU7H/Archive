@@ -1,6 +1,6 @@
 # Windows PrivilegeEscalation
 For [[Windows-File-Transfers]]
-For [[WMIC-Commands]]
+For [[WMI-Commands]]
 For [[Windows-CLI-cmd]]
 For [[PrivEsc-Important-Windows-Locations]]
 For [[Powershell-versions]]
