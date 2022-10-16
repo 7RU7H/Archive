@@ -27,7 +27,7 @@ For each Process the Kernel wil:
 3. Starts the code
 4. Then retain information about the running process, like PID
 
-For more see [[Linux-Processes]]
+For more see [[Linux-Processes-Commands]]
 
 ## Rights Management
 [[Linux-Permissions-and-Rights]]

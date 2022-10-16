@@ -13,19 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Post-Exploitation/Lateral-Movement/Active-Directory-Lateral-Movement/AD-Lateral-Movement-With-WMI.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "14586fced65693e3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Post-Exploitation/Lateral-Movement/Active-Directory-Lateral-Movement/AD-Lateral-Movement-With-WMI.md",
+                "file": "Services/Databases/MYSQL/MySQL-Cheatsheet.md",
                 "mode": "source",
                 "source": false
               }
@@ -89,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Post-Exploitation/Lateral-Movement/Active-Directory-Lateral-Movement/AD-Lateral-Movement-With-WMI.md",
+                "file": "Services/Databases/MYSQL/MySQL-Cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,15 +100,15 @@
   },
   "active": "a406e410f886cc0a",
   "lastOpenFiles": [
-    "Post-Exploitation/Lateral-Movement/Active-Directory-Lateral-Movement/AD-Lateral-Movement-Alternate-Authenication-Material.md",
-    "Exploitation/Windows/Overpass-The-Hash.md",
-    "Exploitation/Windows/Active-Directory/Pass-The-Key.md",
-    "Post-Exploitation/Lateral-Movement/Active-Directory-Lateral-Movement/AD-Lateral-Movement-With-WMI.md",
-    "Tools/Useful-Software/Mimikatz-Cheatsheet.md",
-    "Exploitation/Windows/Active-Directory/Pass-The-Ticket.md",
-    "Exploitation/Windows/Active-Directory/Attacking-Kerberos.md",
-    "Exploitation/Windows/Pass-The-Hash.md",
-    "Windows/Active-Directory/Active-Directory-Authentication.md",
-    "Post-Exploitation/Lateral-Movement/Active-Directory-Lateral-Movement/Active-Directory-Lateral-Movement.md"
+    "Brain-Hacking/Survival-Heuristics.md",
+    "Services/Databases/MYSQL/MySQL-Cheatsheet.md",
+    "Services/Databases/MariaDB/MariaDB-Hacking.md",
+    "Recon/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
+    "README.md",
+    "Linux/Linux-Commands/Core-Linux-Commands.md",
+    "Exploitation/Windows/Active-Directory/AD-Resource-Based-Contrained-Delegation-Exploitation.md",
+    "Linux/Linux-Commands/Linux-Command-Hub.md",
+    "Linux/Linux-Commands/Linux-Compression-Commands.md",
+    "Linux/Linux-Commands/Linux-One-Liners-To-Rule-Them-All.md"
   ]
 }

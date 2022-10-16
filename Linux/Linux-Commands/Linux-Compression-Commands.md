@@ -1,4 +1,4 @@
-# Linux De&Compression Commands
+# Linux Compression Commands
 
 ## Decompression
 

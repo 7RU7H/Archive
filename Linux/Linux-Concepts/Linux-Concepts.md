@@ -5,7 +5,7 @@ For more specific articles:
 [[Linux-Permissions-and-Rights]]
 [[Linux-Networking]]
 [[Linux-Network-Services]]
-[[Linux-Processes]]
+[[Linux-Processes-Commands]]
 [[Linux-Common-File-Extensions]]
 [[Core-Linux-Commands]]
 [[Useful_Bash]]
