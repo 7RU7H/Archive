@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exploitation/Windows/Active-Directory/DnsAdmin-To-DC.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "294b1bf9fa86625a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Antivirus/Antivirus-Evasion/Antivirus-Evasion-Shellcode.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -48,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Port-Redirection",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -77,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exploitation/Windows/Active-Directory/DnsAdmin-To-DC.md",
+                "file": "Antivirus/Antivirus-Evasion/Antivirus-Evasion-Shellcode.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,17 +111,17 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "81033a334cfdfe8d",
+  "active": "294b1bf9fa86625a",
   "lastOpenFiles": [
-    "Exploitation/Windows/Active-Directory/Attacking-Kerberos.md",
-    "Exploitation/Windows/Windows-Internals-Exploitation/Windows-Shellcode-Injection.md",
-    "Exploitation/Windows/Windows-Internals-Exploitation/Exploiting-Windows-Internals.md",
-    "Exploitation/Windows/Active-Directory/AD-Kerberos-Delegation-Exploitation.md",
-    "Exploitation/Windows/Active-Directory/AD-Certificate-Exploitation.md",
-    "Exploitation/Windows/Active-Directory/AD-Permissions-Delegation-Exploitation.md",
-    "Tools/Shells/SSH-Cheatsheet.md",
-    "Post-Exploitation/Post-Exploitation-Enumeration/Port-Redirection-And-Tunneling.md",
-    "Tools/Nmap/Nmap-Cheatsheet.md",
-    "README.md"
+    "Antivirus/Antivirus-Evasion/Antivirus-Evasion.md",
+    "Antivirus/Antivirus-Evasion/Antivirus-Evasion-Shellcode.md",
+    "Coding-Scripting-Programming/Shellcode/Shellcode-Defined.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
+    "Coding-Scripting-Programming/Languages/Javascript/Useful_Javascript.md",
+    "Coding-Scripting-Programming/Languages/Assembly/Assembly-Hacks.md",
+    "Windows/Windows-Concepts/Windows-Portable-Executable-Format.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
+    "Post-Exploitation/Privilege-Escalation/Privilege-Escalation-Defined.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows Privilege Escalation Bypassing Contrained Powershell.md"
   ]
 }

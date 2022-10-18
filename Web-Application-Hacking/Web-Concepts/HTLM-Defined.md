@@ -2,10 +2,10 @@
 HYPER TEXT MARKUP LANGUAGE(HTML)
 ```html
 <tag is keyword wrapped in bracket> </closing tag>
-<html>: Defines the beginning and end of an HTML document. </html>
-	<head>: Contains metadata about the document. </head>
-		<header>: Defines start and end of page's intro </header>
-			<body>: Defines the start and end page's main content. </body>
+<html> Defines the beginning and end of an HTML document. </html>
+	<head> Contains metadata about the document. </head>
+		<header> Defines start and end of page's intro </header>
+			<body> Defines the start and end page's main content. </body>
 				<a> Defines an archor </a>
 				<a> Flag hyperlinks, achor objects i.e href value attributes </a>
                 <style> Inputs internal Cascading sheets (CSS) </style>

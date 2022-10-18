@@ -23,6 +23,7 @@ Get-DomainObjectAcl -SearchBase 'CN=AdminSDHolder,CN=System,DC=EGOTISTICAL-BANK,
 Get-NetComputer | select samaccountname, operatingsystem
 Get-NetComputer -Unconstrained | select samaccountname 
 Get-NetComputer -TrustedToAuth | select samaccountname
+Get-NetUser -TrustedToAuth # Look at msds-allowedtodelegateto for Kerberos Delegation Exploitation!
 Get-DomainGroup -AdminCount | Get-DomainGroupMember -Recurse | ?{$_.MemberName -like '*
 ```
 

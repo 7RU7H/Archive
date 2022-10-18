@@ -5,7 +5,6 @@
 - **NetworkManager**
 The default network configuration relies on DHCP to obtain an IP address, DNS server, and gateway. Must check _network-manager-*_ packages as some are not installed by default.
 
-
 For introductory information about DNS visit: [[DNS-Defined]]. Base Kali has NetworkManager as a default DNS manager. To display current configuration of resolv.conf
 
 ```bash

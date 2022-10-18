@@ -125,14 +125,15 @@ Default port 389
 //internet messaging access protocol
 //default port 443
 
+## 445 - SMB
+See 13(5,7-9) for legacy SMB 139 is the equivilent service port to 445
+
 ## 465 - SMTPS
 //default port 
 
 ## 500 - ISAKMP
 [Internet Security Association and Key Management Protocol](https://en.wikipedia.org/wiki/Internet_Security_Association_and_Key_Management_Protocol) default UDP port 500
 Recon with `ike-scan`
-
-
 
 ## 515 LPD 
 Line Printer Daemon

@@ -1,5 +1,5 @@
 # Build MSF Module
-For general information about Metasploit see [[Metasploit]]. Check out [[useful_ruby]] for a more hacker [XinYminutes](https://learnxinyminutes.com/docs/ruby/)
+For general information about Metasploit see [[Metasploit]]. Check out [[Useful_Ruby]] for a more hacker [XinYminutes](https://learnxinyminutes.com/docs/ruby/)
 
 ```ruby
 class MetasploitModule < Msf::Exploit::LIBRARY
