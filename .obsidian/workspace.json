@@ -13,19 +13,31 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
+                "file": "Post-Exploitation/Persistence/Active-Directory-Persistence/Active-Directory-Persistence.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "294b1bf9fa86625a",
+            "id": "3869988cb93defef",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Antivirus/Antivirus-Evasion/Antivirus-Evasion-Shellcode.md",
+                "file": "Exploitation/Binary-Exploitation/Buffer-Overflow/Stackbased-Buffer-Overflow-Scripts.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "90112c37b61c61e1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/File-Transfers.md",
                 "mode": "source",
                 "source": false
               }
@@ -90,7 +102,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Antivirus/Antivirus-Evasion/Antivirus-Evasion-Shellcode.md",
+                "file": "Exploitation/Binary-Exploitation/Buffer-Overflow/Stackbased-Buffer-Overflow-Scripts.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,17 +123,17 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "294b1bf9fa86625a",
+  "active": "3869988cb93defef",
   "lastOpenFiles": [
-    "Antivirus/Antivirus-Evasion/Antivirus-Evasion.md",
-    "Antivirus/Antivirus-Evasion/Antivirus-Evasion-Shellcode.md",
-    "Coding-Scripting-Programming/Shellcode/Shellcode-Defined.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
-    "Coding-Scripting-Programming/Languages/Javascript/Useful_Javascript.md",
-    "Coding-Scripting-Programming/Languages/Assembly/Assembly-Hacks.md",
-    "Windows/Windows-Concepts/Windows-Portable-Executable-Format.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
-    "Post-Exploitation/Privilege-Escalation/Privilege-Escalation-Defined.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows Privilege Escalation Bypassing Contrained Powershell.md"
+    "Exploitation/Binary-Exploitation/Buffer-Overflow/Stackbased-Buffer-Overflows.md",
+    "Tools/C2/Metasploit/MSFvenom-Payloads.md",
+    "Post-Exploitation/Shells.md",
+    "Coding-Scripting-Programming/Languages/Powershell/Useful_Powershell.md",
+    "Virtualization/VirtualBox-Windows-10-VM.md",
+    "Virtualization/Virtual-machines.md",
+    "Post-Exploitation/Persistence/Active-Directory-Persistence/AD-Persistence-Credentials.md",
+    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/File-Transfers.md",
+    "Post-Exploitation/Persistence/Active-Directory-Persistence/Active-Directory-Persistence.md",
+    "Tools/Shells/SSH-Cheatsheet.md"
   ]
 }

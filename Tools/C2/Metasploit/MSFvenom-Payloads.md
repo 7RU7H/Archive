@@ -6,7 +6,6 @@ The follow command will list the options of a specific payload for more advanced
 msfvenom -p windows/meterpreter/reverse_http --list-options
 ```
 
-
 Payload | Description
 --- | ---
 aix/ppc/shell_bind_tcp | Listen for a connection and spawn a command shell

@@ -32,7 +32,7 @@ Enable the 3D acceleration for least whining from GPU related issues
 
 Change Paravirtualization to Microsoft's Hyper-v
 ![hyper-v](windows-vm-paravirtualization-interface-hyper-v.png)
-
+[VirtualBox Documentation](https://docs.oracle.com/en/virtualization/virtualbox/6.0/admin/nestedpaging.html)*If nested paging is enabled, the Oracle VM VirtualBox hypervisor can also use large pages to reduce TLB usage and overhead. This can yield a performance improvement of up to 5%. To enable this feature for a VM, you use the **VBoxManage modifyvm --largepages command**.*
 
 Change the Drive type to optimise 
 ![SSD](windows-vm-ssd-select.png)
