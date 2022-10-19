@@ -25,7 +25,31 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exploitation/Binary-Exploitation/Buffer-Overflow/Stackbased-Buffer-Overflows.md",
+                "file": "Exploitation/Using-Public-Exploits.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "38a38be7eb9c5488",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Coding-Scripting-Programming/Languages/Python/Python-Tooling-Libraries.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "297aea420a9a45df",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/File-Transfers.md",
                 "mode": "source",
                 "source": false
               }
@@ -44,7 +68,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -102,7 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exploitation/Binary-Exploitation/Buffer-Overflow/Stackbased-Buffer-Overflows.md",
+                "file": "Coding-Scripting-Programming/Languages/Python/Python-Tooling-Libraries.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,17 +147,17 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "3869988cb93defef",
+  "active": "38a38be7eb9c5488",
   "lastOpenFiles": [
-    "Coding-Scripting-Programming/Shellcode/Shellcode-Defined.md",
+    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/File-Transfers.md",
+    "Coding-Scripting-Programming/Languages/Python/Python-Tooling-Libraries.md",
+    "Exploitation/Using-Public-Exploits.md",
     "Exploitation/Binary-Exploitation/Buffer-Overflow/Stackbased-Buffer-Overflows.md",
+    "Coding-Scripting-Programming/Shellcode/Shellcode-Defined.md",
     "Exploitation/Binary-Exploitation/Buffer-Overflow/Stackbased-Buffer-Overflow-Scripts.md",
     "Tools/C2/Metasploit/MSFvenom-Payloads.md",
     "Reverse-Engineering/Reverse-Engineering-Tools.md",
     "Tools/Reverse-Engineering/Radare2/Radare2-Cheatsheet.md",
-    "Exploitation/Binary-Exploitation/Debuggers.md",
-    "Exploitation/Binary-Exploitation/Binary-Exploitation-Protections.md",
-    "Exploitation/Binary-Exploitation/Golang-Binary-Exploitation.md",
-    "Exploitation/Binary-Exploitation/Binary-Exploitation-Types.md"
+    "Exploitation/Binary-Exploitation/Debuggers.md"
   ]
 }
