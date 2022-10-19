@@ -1,6 +1,9 @@
 
 # IPv6 Defined
 
+_IPv6 link-local_ addresses are addresses that can be used to communicate with nodes (hosts and routers) on an attached link.
+[Wiki](https://en.wikipedia.org/wiki/Unique_local_address): IPv6 Unique-Local Address is is analogous to IPv4 addressing, maybe used freely without centralized registeration.
+
 ## Commands
 For more [[Linux-Networking-Commands]],[[Windows-Networking-Commands]]
 ```bash
@@ -59,5 +62,19 @@ ff02::2 - Multicast Router Nodes
 What would dead:beef:2::1003?
 - Answer invalid it is not defined, reserved for future use.
 
+## Enumnerating Network 
+
+Ping multicast
+```bash
+ping6 -I ens34 $IPv6_Multicast_All_Nodes 
+ip -6 neigh
+# Windows may not respond to multicast pinging
+```
+
+[THC IPv6 Attack Tool](https://packetstormsecurity.com/files/160298/THC-IPv6-Attack-Tool-3.8.html)
+
+`nmap -6`
+
 ## References
-[Ippsec SNeaky IPv6 Talk](https://www.youtube.com/watch?v=1UGxjqTnuyo)
+
+[Ippsec Sneaky IPv6 Talk](https://www.youtube.com/watch?v=1UGxjqTnuyo)

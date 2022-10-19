@@ -61,6 +61,13 @@ python3 -m pip install --upgrade pwntools
 [Introductory Documentation](https://github.com/radareorg/radare2/blob/master/doc/intro.md)
 
 [[Radare2-Commands]], [[Radare2-Cheatsheet]] are avaliable
+```bash
+<cmd>? # each command has a help use it 
+is # Removing some of the symbols to make the display cleaner
+aaa # Analyze
+db main # set breakpint on main
+dc # continue execution
+```
 
 
 

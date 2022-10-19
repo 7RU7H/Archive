@@ -25,19 +25,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exploitation/Binary-Exploitation/Buffer-Overflow/Stackbased-Buffer-Overflow-Scripts.md",
+                "file": "Exploitation/Binary-Exploitation/Buffer-Overflow/Stackbased-Buffer-Overflows.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "90112c37b61c61e1",
+            "id": "eaf54d3fa1555f7a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/File-Transfers.md",
+                "file": "Coding-Scripting-Programming/Shellcode/Shellcode-Defined.md",
                 "mode": "source",
                 "source": false
               }
@@ -102,7 +102,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exploitation/Binary-Exploitation/Buffer-Overflow/Stackbased-Buffer-Overflow-Scripts.md",
+                "file": "Exploitation/Binary-Exploitation/Buffer-Overflow/Stackbased-Buffer-Overflows.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,15 +125,15 @@
   },
   "active": "3869988cb93defef",
   "lastOpenFiles": [
+    "Coding-Scripting-Programming/Shellcode/Shellcode-Defined.md",
     "Exploitation/Binary-Exploitation/Buffer-Overflow/Stackbased-Buffer-Overflows.md",
+    "Exploitation/Binary-Exploitation/Buffer-Overflow/Stackbased-Buffer-Overflow-Scripts.md",
     "Tools/C2/Metasploit/MSFvenom-Payloads.md",
-    "Post-Exploitation/Shells.md",
-    "Coding-Scripting-Programming/Languages/Powershell/Useful_Powershell.md",
-    "Virtualization/VirtualBox-Windows-10-VM.md",
-    "Virtualization/Virtual-machines.md",
-    "Post-Exploitation/Persistence/Active-Directory-Persistence/AD-Persistence-Credentials.md",
-    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/File-Transfers.md",
-    "Post-Exploitation/Persistence/Active-Directory-Persistence/Active-Directory-Persistence.md",
-    "Tools/Shells/SSH-Cheatsheet.md"
+    "Reverse-Engineering/Reverse-Engineering-Tools.md",
+    "Tools/Reverse-Engineering/Radare2/Radare2-Cheatsheet.md",
+    "Exploitation/Binary-Exploitation/Debuggers.md",
+    "Exploitation/Binary-Exploitation/Binary-Exploitation-Protections.md",
+    "Exploitation/Binary-Exploitation/Golang-Binary-Exploitation.md",
+    "Exploitation/Binary-Exploitation/Binary-Exploitation-Types.md"
   ]
 }

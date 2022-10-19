@@ -5,4 +5,4 @@
 Breakpoint Manager
 
 
-OpcodeSearcher
+Plugin -> OpcodeSearcher 
