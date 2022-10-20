@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Coding-Scripting-Programming/Languages/Python/Python-Tooling-Libraries.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
                 "mode": "source",
                 "source": false
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Coding-Scripting-Programming/Languages/Python/Python-Tooling-Libraries.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -149,15 +149,15 @@
   },
   "active": "38a38be7eb9c5488",
   "lastOpenFiles": [
-    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/File-Transfers.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/PrivEsc-Important-Linux-Locations.md",
+    "Web-Application-Hacking/Content-Discovery/FFUF-Cheatsheet.md",
+    "Cryptography-And-Authentication/Password-Attacks/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
+    "Coding-Scripting-Programming/Languages/PHP/Useful_PHP.md",
+    "Web-Application-Hacking/Walking-Web-Applications/Web-Hacking-Checklist.md",
+    "Hacker-Distros/Kali/Kali-Configuration.md",
     "Coding-Scripting-Programming/Languages/Python/Python-Tooling-Libraries.md",
+    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/File-Transfers.md",
     "Exploitation/Using-Public-Exploits.md",
-    "Exploitation/Binary-Exploitation/Buffer-Overflow/Stackbased-Buffer-Overflows.md",
-    "Coding-Scripting-Programming/Shellcode/Shellcode-Defined.md",
-    "Exploitation/Binary-Exploitation/Buffer-Overflow/Stackbased-Buffer-Overflow-Scripts.md",
-    "Tools/C2/Metasploit/MSFvenom-Payloads.md",
-    "Reverse-Engineering/Reverse-Engineering-Tools.md",
-    "Tools/Reverse-Engineering/Radare2/Radare2-Cheatsheet.md",
-    "Exploitation/Binary-Exploitation/Debuggers.md"
+    "Exploitation/Binary-Exploitation/Buffer-Overflow/Stackbased-Buffer-Overflows.md"
   ]
 }

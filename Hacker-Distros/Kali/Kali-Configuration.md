@@ -144,11 +144,41 @@ pg_dropcluster new-version cluster-name
 # Before dropping cluster during migration of a cluster checked it has actually migrated
 pg_renamecluster # rename cluster
 pg_lsclusters # list clusters
-
 ```
 
+#### Configuring Apache 2
 
+The `apache2` package is disable by default, but a default package for Kali. It is a modular server with external module providing function after being loaded during initialization of apache. These module create  or delete symbolic links in `/etc/apache2/mods-enabled/`, pointing at the actual files (stored in `/etc/apache2/mods-available/`).
+```bash
+systemctl start apache2
+as2enmod _module_ # enable new module
+asdismod module # disable module
+a2ensite www.domain.com # enable a virtual host
+```
 
+Useful modules: 
+-  [Full list of standard Apache modules](https://httpd.apache.org/docs/2.4/mod/index.html)
+- `libapache-mod-php` - PHP module 
+- `ssl` - SSL for HTTPS configured `/etc/apache2/sites-available/default-ssl.conf`
+	- See [Apache SSL configuration documentation](https://httpd.apache.org/docs/2.4/mod/mod_ssl.html)
+
+Default configuration:
+- Listen on port 80 - configured `/etc/apache2/ports.conf`
+- Serves pages from `/var/www/html` - configured `/etc/apache2/sites-enabled/000-default.conf`
+Virtual Hosting
+
+Default configuration of for Apache 2 enables name-based virtual hosts, defined in `/etc/apache2/sites-enabled/000-default.conf`. **Be aware**: requests concerning unknown virtual hosts will always be served by the first defined virtual host, which is why the package ships a `000-default.conf` configuration file, which is sorted first among all other files that you might create. Each additional virtual host is described by a file stored in `/etc/apache2/sites-available/`, as `.conf`. Minimal configuration example: 
+
+Website files stored at: `/srv/www.kali.org/www/`, defined with the `DocumentRoot` options:
+```
+<VirtualHost *:80>
+ServerName www.kali.org
+ServerAlias kali.org
+DocumentRoot /srv/www.kali.org/www
+</VirtualHost>
+```
+
+[CustomLog and ErrorLog Directives](https://httpd.apache.org/docs/2.4/logs.html) 
 
 
 ## References
