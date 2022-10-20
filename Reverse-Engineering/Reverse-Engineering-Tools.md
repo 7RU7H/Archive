@@ -30,22 +30,16 @@ gdb -q /path/to/my/bin
 ## Ghidra
 [[Ghidra-Cheatsheet]]
 
-## Immunity Debugger
+## Immunity Debugg
 
-Step into  `F7`
-Step over `F8`
-Debug menu `F9`
-
-To search `right-click inside disassemble window -> Search for -> [Various search all arguments`.
-
-To set a breakpoint `Select line on disassembly window -> F2`.
-
-Excute till return `Ctrl + F9`
-
-Overflow with `Open -> Enter Filename <Name>; Files of type: <Type>; Arguments: <Pass arguments here> `
+[[Immunity-Debugger-Helpsheet]]
 
 ## Mona
+
+[[Mona]]
+
 ## Putty
+
 ## Pwntools
 [Python library documentation](http://docs.pwntools.com/en/stable)
 [GDB plugin documentation](https://browserpwndbg.readthedocs.io/en/docs/)

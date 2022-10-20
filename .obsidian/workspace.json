@@ -13,55 +13,31 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Post-Exploitation/Persistence/Active-Directory-Persistence/Active-Directory-Persistence.md",
+                "file": "Exploitation/Binary-Exploitation/Buffer-Overflow/Stackbased-Buffer-Overflows.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "3869988cb93defef",
+            "id": "ae88c503819cb3ab",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exploitation/Using-Public-Exploits.md",
+                "file": "Reverse-Engineering/Reverse-Engineering-Tools.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "38a38be7eb9c5488",
+            "id": "1ff57deb9006d4f0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "297aea420a9a45df",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/File-Transfers.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "eaf54d3fa1555f7a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Coding-Scripting-Programming/Shellcode/Shellcode-Defined.md",
+                "file": "Tools/Reverse-Engineering/Immunity-Debugger-Helpsheet.md",
                 "mode": "source",
                 "source": false
               }
@@ -126,7 +102,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+                "file": "Tools/Reverse-Engineering/Immunity-Debugger-Helpsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,17 +123,17 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "38a38be7eb9c5488",
+  "active": "1ff57deb9006d4f0",
   "lastOpenFiles": [
+    "Web-Application-Hacking/CMS/Wordpress.md",
+    "Web-Application-Hacking/CMS/Drupal.md",
+    "Web-Application-Hacking/CMS/Joomla.md",
+    "Services/Databases/MariaDB/MariaDB-Hacking.md",
+    "Services/Databases/MYSQL/MySQL-Cheatsheet.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
     "Post-Exploitation/Privilege-Escalation/Linux/PrivEsc-Important-Linux-Locations.md",
-    "Web-Application-Hacking/Content-Discovery/FFUF-Cheatsheet.md",
-    "Cryptography-And-Authentication/Password-Attacks/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
-    "Coding-Scripting-Programming/Languages/PHP/Useful_PHP.md",
-    "Web-Application-Hacking/Walking-Web-Applications/Web-Hacking-Checklist.md",
-    "Hacker-Distros/Kali/Kali-Configuration.md",
-    "Coding-Scripting-Programming/Languages/Python/Python-Tooling-Libraries.md",
-    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/File-Transfers.md",
-    "Exploitation/Using-Public-Exploits.md",
-    "Exploitation/Binary-Exploitation/Buffer-Overflow/Stackbased-Buffer-Overflows.md"
+    "Tools/Reverse-Engineering/Immunity-Debugger-Helpsheet.md",
+    "Reverse-Engineering/Reverse-Engineering-Tools.md",
+    "Exploitation/Binary-Exploitation/Mona.md"
   ]
 }
