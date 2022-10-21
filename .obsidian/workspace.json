@@ -13,38 +13,25 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exploitation/Binary-Exploitation/Buffer-Overflow/Stackbased-Buffer-Overflows.md",
+                "file": "Coding-Scripting-Programming/Languages/Python/Useful_Python.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "ae88c503819cb3ab",
+            "id": "9c136500ec0fa0f9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Reverse-Engineering/Reverse-Engineering-Tools.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1ff57deb9006d4f0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tools/Reverse-Engineering/Immunity-Debugger-Helpsheet.md",
+                "file": "Exploitation/Binary-Exploitation/Buffer-Overflow/Stackbased-Buffer-Overflow-Scripts.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -102,7 +89,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/Reverse-Engineering/Immunity-Debugger-Helpsheet.md",
+                "file": "Coding-Scripting-Programming/Languages/Python/Useful_Python.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,17 +110,17 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "1ff57deb9006d4f0",
+  "active": "81033a334cfdfe8d",
   "lastOpenFiles": [
-    "Web-Application-Hacking/CMS/Wordpress.md",
-    "Web-Application-Hacking/CMS/Drupal.md",
-    "Web-Application-Hacking/CMS/Joomla.md",
-    "Services/Databases/MariaDB/MariaDB-Hacking.md",
-    "Services/Databases/MYSQL/MySQL-Cheatsheet.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/PrivEsc-Important-Linux-Locations.md",
+    "Exploitation/Binary-Exploitation/Buffer-Overflow/Stackbased-Buffer-Overflow-Scripts.md",
+    "Coding-Scripting-Programming/Languages/Python/Useful_Python.md",
+    "Coding-Scripting-Programming/Languages/Python/Python-Tooling-Libraries.md",
+    "Exploitation/Binary-Exploitation/Buffer-Overflow/Stackbased-Buffer-Overflows.md",
+    "Exploitation/Binary-Exploitation/Mona.md",
+    "Immunity Debugger.md",
     "Tools/Reverse-Engineering/Immunity-Debugger-Helpsheet.md",
     "Reverse-Engineering/Reverse-Engineering-Tools.md",
-    "Exploitation/Binary-Exploitation/Mona.md"
+    "Hacker-Distros/Kali/Kali-Configuration/Kali-Configuration.md",
+    "Hacker-Distros/Kali/Kali-Configuration/Configuring-Users-And-Groups-With-Kali.md"
   ]
 }
