@@ -1,4 +1,6 @@
-# Networking 
+# Networking With Kali
+
+Consider using [[Linux-Networking-Commands]]
 
 - **NetworkManager**
 The default network configuration relies on DHCP to obtain an IP address, DNS server, and gateway. Must check _network-manager-*_ packages as some are not installed by default.
@@ -43,6 +45,30 @@ ln -sf /run/systemd/resolve/resolv.conf /etc/resolv.conf
 - Alternatively - `/lib/systemd/network/` for packaged files or `/run/systemd/network/` for files generated at run-time. 
 
 Beware lacks in integrated support for wireless networks.
+
+## Interfaces
+
+In the `/etc/network/interfaces` changes can be made to each interface, below is an example of configuring `eth0` for dynamic host configuration protocol (DHCP)
+```bash
+auto eth0
+iface eth0 inet dhcp
+```
+
+Wireless
+```bash
+ wpa_passphrase myssid wpa-password # Generate a PSK
+
+# add to /etc/network/interfaces
+echo "
+auto wlan0
+iface wlan0 inet dhcp
+     wpa-ssid myssid
+     wpa-psk $PSK_hash
+
+" | sudo tee -a /etc/network/interfaces
+ 
+```
+
 
 ## References
 
