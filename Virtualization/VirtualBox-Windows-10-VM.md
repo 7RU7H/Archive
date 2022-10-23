@@ -53,6 +53,22 @@ net user /del <user>
 net localgroup <usersfromgroupsyoudontwantpartof> <users> /del
 ```
 
+Debloater `wget https://github.com/Sycnex/Windows10Debloater/archive/refs/heads/master.zip`
+open powershell
+```powershell
+Set-ExecutionPolicy Unrestricted -Force
+Expand-Archive .zip
+.\Windows10Debloater.ps1
+```
+
+Visual Studio http://code.visualstudio.com/docs/?dv=win
+
+http://debugger.immunityinc.com/ID_register.py : requires field before download
+Will install python2.7 if you don't have it!
+
+## Networking
+
+MAke careful consideration as to what is safe and what you want. This is an awesome blog about every possible configuration options, with pictures and well written [nakivo.com](https://www.nakivo.com/blog/virtualbox-network-setting-guide/)
 
 
 ## Reference

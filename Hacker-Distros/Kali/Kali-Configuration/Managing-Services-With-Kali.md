@@ -1,3 +1,5 @@
+## Managing Services
+
 Kali uses `systemd` as its init system; [Wikipedia init](https://en.wikipedia.org/wiki/Init) *"in Unix-based computer operating systems, init is the first process started during booting of the computer system. Init is a daemon process that continues running until the system is shut down.*"*
 
 `systemd` can be queried and controlled with `systemctl`, which without arguements  `systemctl` output a list of active units. Each services is represented by a service unit described by a service file usually shipped in `/lib/systemd/system/` (or `/run/systemd/system/`, or `/etc/systemd/system/`. In which ever directory the service unit is shipped it can be modified with `service-name.service.d/*.conf` file while the unit files are in plain text, using a key-value pair( `key = value` ), grouped between `[section]` headers  similiar to Windows `*.ini` files. For example:
@@ -40,7 +42,6 @@ systemctl status x.service # Current status - includes the latest lines of the a
 systemctl reload x.service
 systemctl restart x.service
 ```
-
 
 
 ## References

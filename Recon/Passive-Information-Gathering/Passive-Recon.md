@@ -5,11 +5,11 @@ This is a hub page for linking all of a specific directory structure.
 
 
 
-[[DNS-Recon-Passive.md]]
-[[Passive-Recon.md]]
-[[Search-Engine-Dorking.md]]
+[[DNS-Recon-Passive]]
+[[Passive-Recon]]
+[[Search-Engine-Dorking]]
 [[Website-Recon]]
 [[Geolocating]]
-[[Recon-ng.md]]
-[[Shodan.md]]
-[[theHarvester.md]]
+[[Recon-ng]]
+[[Shodan]]
+[[theHarvester]]

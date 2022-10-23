@@ -1,7 +1,10 @@
 # Firewalls
-A firewall is software or hardware that monitors the network traffic and compares it against a set of rules before passing or blocking it. For evasion techniques see [[Evading-Firewalls]]
+A firewall is software or hardware that parses incoming and outgoing network packets and compares it against a set of rules before passing or blocking it. For evasion techniques see [[Evading-Firewalls]]
 
 ## Types of Firewall
+
+A filtering network gateway is a type of firewall that protects an entire network, usually installed on a dedicated machine configured as a gateway for the network so that it can parse all packets that pass in and out of the network. Whereas local firewall is a software service on one machine in order to filter or limit access to some local services and/or preventing rogue outgoing connections. More specfic typology:
+
 -   Packet-Filtering Firewall: Packet-filtering inspects the protocol, source and destination IP addresses, and source and destination ports in the case of TCP and UDP datagrams. It is a stateless inspection firewall.
 -   Circuit-Level Gateway: In addition to the features offered by the packet-filtering firewalls, circuit-level gateways can provide additional capabilities, such as checking TCP three-way-handshake against the firewall rules.
 -   Stateful Inspection Firewall: Track of the established TCP sessions, therefore it can detect and block any TCP packet outside an established TCP session.

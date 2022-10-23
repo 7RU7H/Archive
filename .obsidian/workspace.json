@@ -4,22 +4,107 @@
     "type": "split",
     "children": [
       {
-        "id": "6bbfebfcd41e8ae9",
+        "id": "762f080f40901566",
         "type": "tabs",
         "children": [
           {
-            "id": "0b328ac30a3d0683",
+            "id": "8647572121547ea6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Hacker-Distros/Kali/Kali-Configuration/Configuring-Services-With-Kali.md",
+                "file": "Hacker-Distros/Kali/Kali-Security/Kali-Hardening.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0f191c43eae5fc7e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Hacker-Distros/Kali/Kali-Security/Kali-Hardening.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6068d1e9d8b75396",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Hacker-Distros/Kali/Kali-Configuration/Managing-Services-With-Kali.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1c19318886439fd2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Hacker-Distros/Kali/Kali.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e79b8df4d2efb0b1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Hacker-Distros/Kali/Kali.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9d827e6b008e8ece",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Hacker-Distros/Kali/Kali.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9f3f3943f8f74f63",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Linux/Linux-Concepts/Netfilter.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9ecf9ee75ed55c17",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Hacker-Distros/Kali/Kali.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -48,7 +133,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "gdb",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -77,7 +162,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Hacker-Distros/Kali/Kali-Configuration/Configuring-Services-With-Kali.md",
+                "file": "Hacker-Distros/Kali/Kali.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,17 +183,17 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "0b328ac30a3d0683",
+  "active": "9ecf9ee75ed55c17",
   "lastOpenFiles": [
-    "Hacker-Distros/Kali/Kali-Configuration/Configurating-Networking-With-Kali.md",
-    "Hacker-Distros/Kali/Kali-Configuration/Configuring-Services-With-Kali.md",
-    "Linux/Linux-Commands/Linux-Networking-Commands.md",
-    "Hacker-Distros/Kali/Kali-Configuration/Managing-Services-With-Kali.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
-    "Services/Databases/MYSQL/MySQL-Cheatsheet.md",
-    "Services/Databases/MariaDB/MariaDB-Hacking.md",
-    "Services/Databases/MSSQL/MSSQL-Hacking.md",
-    "Hacker-Distros/Kali/Kali-Configuration/Configuring-Postgresql-With-Kali.md",
-    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Linux-File-Transfers.md"
+    "Linux/Linux-Concepts/ipXtables.md",
+    "Linux/Linux-Concepts/Netfilter.md",
+    "Hacker-Distros/Kali/Kali.md",
+    "Hacker-Distros/Kali/Kali-Security/Kali-Monitoring.md",
+    "Hacker-Distros/Kali/Kali-Security/Kali-Hardening.md",
+    "Reverse-Engineering/Reverse-Engineering-Tools.md",
+    "Hacker-Distros/Kali/Kali-Security/Securing-Kali-Network-Services.md",
+    "Networks/Network-Security/Securing-Network-Services.md",
+    "Networks/Network-Security/Firewalls.md",
+    "Hacker-Distros/Kali/Kali-Configuration/Configurating-Networking-With-Kali.md"
   ]
 }

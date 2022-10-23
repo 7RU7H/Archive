@@ -3,6 +3,9 @@
 
 For making an [[Active-Directory-Lab]]
 
+For Windows 7 ISOs see:
+https://techpp.com/2018/04/16/windows-7-iso-official-direct-download-links/
+
 ## Hardware Resource Requirements
 
 ## Puzzle Creation Requirements
