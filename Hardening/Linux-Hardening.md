@@ -15,6 +15,12 @@ To hardblock wifi or bluetooth find the toggle on motherboards, in bioses and ot
 ## SSH Related
 [ssh](https://linuxhint.com/disable_root_ssh_debian/)
 
+Helpful connect unwanted ssh connections back to there machine lol. 
+```bash
+socat -d -d TCP-L:22,reuseaddr,fork SYSTEM:"nc \\$SOCAT_PEERADDR 22
+```
+
+
 ## Iptables
 
 Log new connections to a box [ippsec](https://www.youtube.com/watch?v=ABVR8EgXsQU&t=186)
@@ -25,3 +31,4 @@ iptables -A INPUT -p tcp -m state --state NEW -j LOG --log-prefix "IPTables New-
 
 ## References
 [ippsec geniunely rocks](https://ippsec.rocks/?#)
+[@climagic](@climagic)

@@ -56,6 +56,12 @@ Kali can be botted in UEFI mode but not secure boot. Disable secure boot.
 
 For using Python2: [EoL Python ](https://www.kali.org/docs/general-use/using-eol-python-versions/), see [[Python-Tooling-Libraries]] for full setup! 
 
+As Kali uses Debian package management - see [[Debian-Package-Management]]. `dpkg`  informs Kali's structuring. Debian and Kali use three sections to differentiate packages according to the licenses chosen by the authors of each work. A difference between Debian and Kali is that, Debian only has main enabled by default, whereas Kali has all three enabled by default. `main` the Debian default enabled;  `non-free` archive is different because it contains software that does not (entirely) conform to these principles but which can nevertheless be distributed without restrictions; `contrib` (contributions) is a set of open source software that cannot function without some non-free elements, which include `non-free` section files or free software whose compilation requries proprietary elements. For example Kali `/etc/apt/sources.list`:
+```
+# Main Kali repository
+deb http://http.kali.org/kali kali-rolling main contrib non-free
+```
+
 #### Configuration
 
 For general configuration hub pages see [[Kali-Configuration]] and general CLI interaction for basics see [[Kali-CLI-Basics]]

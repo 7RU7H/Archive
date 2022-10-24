@@ -5,7 +5,7 @@ File transfer protocol, client-server model
 1. Port 20 for data
 2. Port 21 for commands 
 3. Can connect similar with telnet client with port number!
-```
+```bash
 wget -r ftp://[username]:[password]@[ip]/
 ftp ip
 
@@ -18,6 +18,10 @@ SYST	system		system info
 PASV	passive		enter passive mode
 TYPE A	type ascii	enter ASCII mode
 STAT	status		give server status
+
+# If downloading files that are binaries
+binary # prepare server for binary mode transfer
+get x.exe
 
 ls -la		list directory, sometimes ls DOES NOT WORK
 get file

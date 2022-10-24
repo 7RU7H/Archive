@@ -40,6 +40,15 @@ proxychains <commands go here> # beware of some tool not work through or are ver
 
 ```
 
+sshfs is a util that uses FUSE and SSH to mount a remote directory as a local one. 
+```bash
+apt-get install sshfs # debian
+brew install sshfs # mac osx
+yum install fuse-sshfs # red hat
+pacman -S sshfs # arch
+
+sshfs user@remotehost: /remotedir localdir
+```
 
 
 ## References

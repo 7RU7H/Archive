@@ -314,6 +314,11 @@ There is alot here:
 #!/usr/bin/python3
 import socket
 import struct
+import sys
+
+# stdout in bytes:
+sys.stdout.buffer.write(bytes('a string'))
+
 
 def customp32(data):
 #struct.pack(">I", data) # big endian

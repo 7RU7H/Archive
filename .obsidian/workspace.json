@@ -4,107 +4,71 @@
     "type": "split",
     "children": [
       {
-        "id": "762f080f40901566",
+        "id": "c8e2f825f789379d",
         "type": "tabs",
         "children": [
           {
-            "id": "8647572121547ea6",
+            "id": "0d8fba2f01874245",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Hacker-Distros/Kali/Kali-Security/Kali-Hardening.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "0f191c43eae5fc7e",
+            "id": "af2f5a1e3542052b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Hacker-Distros/Kali/Kali-Security/Kali-Hardening.md",
+                "file": "Linux/Linux-Commands/Linux-Module-Commands.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "6068d1e9d8b75396",
+            "id": "5e7d4b938cac8cb9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Hacker-Distros/Kali/Kali-Configuration/Managing-Services-With-Kali.md",
+                "file": "Linux/Linux-Commands/Linux-CLIMagic.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "1c19318886439fd2",
+            "id": "139704b89c29f11f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Hacker-Distros/Kali/Kali.md",
+                "file": "Hacker-Distros/Kali/Kali-Configuration/Configurating-Networking-With-Kali.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "e79b8df4d2efb0b1",
+            "id": "7660955df44f6b3e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Hacker-Distros/Kali/Kali.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9d827e6b008e8ece",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Hacker-Distros/Kali/Kali.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9f3f3943f8f74f63",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Linux/Linux-Concepts/Netfilter.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9ecf9ee75ed55c17",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Hacker-Distros/Kali/Kali.md",
+                "file": "Linux/Distributions/Debian/Debian-Package-Management.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -133,7 +97,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "gdb",
+                "query": "Hardening",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -162,7 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Hacker-Distros/Kali/Kali.md",
+                "file": "Linux/Linux-Commands/Linux-CLIMagic.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -183,17 +147,17 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "9ecf9ee75ed55c17",
+  "active": "5e7d4b938cac8cb9",
   "lastOpenFiles": [
-    "Linux/Linux-Concepts/ipXtables.md",
-    "Linux/Linux-Concepts/Netfilter.md",
+    "Hacker-Distros/Kali/Kali-Configuration/Configurating-Networking-With-Kali.md",
+    "Linux/Linux-Commands/Linux-CLIMagic.md",
+    "Linux/Linux-Commands/Linux-Module-Commands.md",
+    "Hardening/Linux-Hardening.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+    "Tools/Shells/SSH-Cheatsheet.md",
+    "README.md",
+    "Linux/Distributions/Debian/Debian-Package-Management.md",
     "Hacker-Distros/Kali/Kali.md",
-    "Hacker-Distros/Kali/Kali-Security/Kali-Monitoring.md",
-    "Hacker-Distros/Kali/Kali-Security/Kali-Hardening.md",
-    "Reverse-Engineering/Reverse-Engineering-Tools.md",
-    "Hacker-Distros/Kali/Kali-Security/Securing-Kali-Network-Services.md",
-    "Networks/Network-Security/Securing-Network-Services.md",
-    "Networks/Network-Security/Firewalls.md",
-    "Hacker-Distros/Kali/Kali-Configuration/Configurating-Networking-With-Kali.md"
+    "Networks/Network-Protocols.md"
   ]
 }
