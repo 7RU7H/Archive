@@ -13,62 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+                "file": "Exploitation/Windows/Active-Directory/AD-Kerberos-Delegation-Exploitation.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "af2f5a1e3542052b",
+            "id": "91a87211bda765af",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Linux-Commands/Linux-Module-Commands.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "5e7d4b938cac8cb9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Linux/Linux-Commands/Linux-CLIMagic.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "139704b89c29f11f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Hacker-Distros/Kali/Kali-Configuration/Configurating-Networking-With-Kali.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7660955df44f6b3e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Linux/Distributions/Debian/Debian-Package-Management.md",
+                "file": "Coding-Scripting-Programming/Languages/PHP/Useful_PHP.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -126,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/Linux-Commands/Linux-CLIMagic.md",
+                "file": "Coding-Scripting-Programming/Languages/PHP/Useful_PHP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,17 +111,17 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "5e7d4b938cac8cb9",
+  "active": "91a87211bda765af",
   "lastOpenFiles": [
-    "Hacker-Distros/Kali/Kali-Configuration/Configurating-Networking-With-Kali.md",
-    "Linux/Linux-Commands/Linux-CLIMagic.md",
-    "Linux/Linux-Commands/Linux-Module-Commands.md",
-    "Hardening/Linux-Hardening.md",
     "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
-    "Tools/Shells/SSH-Cheatsheet.md",
-    "README.md",
-    "Linux/Distributions/Debian/Debian-Package-Management.md",
-    "Hacker-Distros/Kali/Kali.md",
-    "Networks/Network-Protocols.md"
+    "Recon/Active-Information-Gathering/LDAP/LDAP-Recon.md",
+    "Virtualization/Lab-Making/VirtualBox-Network.md",
+    "Exploitation/Windows/Active-Directory/AD-Kerberos-Delegation-Exploitation.md",
+    "Exploitation/Windows/Active-Directory/AD-Exploitation-Hub.md",
+    "Exploitation/Windows/Active-Directory/AD-User-Exploitation.md",
+    "Exploitation/Windows/Active-Directory/AD-Automated-Relays-Exploitation.md",
+    "Web-Application-Hacking/Cross-Site-Request-Forgery.md",
+    "Web-Application-Hacking/Command-Injection-Cheatsheet.md",
+    "Web-Application-Hacking/Web-Concepts/HTLM-Defined.md"
   ]
 }

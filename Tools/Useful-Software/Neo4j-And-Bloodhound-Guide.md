@@ -84,6 +84,15 @@ Useful place to start from experience:
 2. Show Path from Kerberoastable
 3. Shortest Path from Owned Principals - Show nested group policy of pwned account
 
+## Custom Queries
+
+Bloodhound query - `Click -> "Create Custom Query" in the Analysis tab in Bloodhound`
+
+
+```js
+// Which machine accounts have administrative permissions over another
+MATCH p=(c1:Computer)-[r1:MemberOf*1..]->(g:Group)-[r2:AdminTo]->(n:Computer) RETURN p
+```
 
 ## References
 [Docs](https://bloodhound.readthedocs.io/en/latest/data-analysis/bloodhound-gui.html)

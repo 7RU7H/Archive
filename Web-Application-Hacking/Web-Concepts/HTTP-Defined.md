@@ -12,7 +12,9 @@ PUT |  Updates the content of a given resource with the client's input.
 DELETE | Removes the requested resource.
 OPTIONS | Returns the communication options allowed by the server, including the allowed methods that the server accepts.
 HEAD | Similar to GET, but only retrieves the HTTP headers of the page without the response body.
-sometimes servers have CUSTOM METHODS...
+TRACE | allows the client to see what is being received at the other end of the request chain and use that data for testing or diagnostic information
+
+..sometimes servers have CUSTOM METHODS...
 
 METHOD | PATH | QUERY STRING | PARAMETERS | PROTOCOL
 --- | --- | --- | --- | ---
@@ -42,8 +44,6 @@ Content-Type: # what type of data the server expects i.e:"application/x-www-form
 ```
 
 `Set-Cookie: <cookie-name>=<cookie-value>`
-
-
 
 ### HTTP Body
 
