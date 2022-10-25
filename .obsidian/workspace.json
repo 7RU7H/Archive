@@ -13,26 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exploitation/Windows/Active-Directory/AD-Kerberos-Delegation-Exploitation.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "91a87211bda765af",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
                 "file": "Coding-Scripting-Programming/Languages/PHP/Useful_PHP.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -111,17 +98,17 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "91a87211bda765af",
+  "active": "0d8fba2f01874245",
   "lastOpenFiles": [
-    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+    "Cryptography-And-Authentication/Password-Attacks/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
     "Recon/Active-Information-Gathering/LDAP/LDAP-Recon.md",
-    "Virtualization/Lab-Making/VirtualBox-Network.md",
+    "Recon/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
+    "Recon/Active-Information-Gathering/NFS/NFS-Recon.md",
+    "Linux/Distributions/Debian/Debian-Package-Management.md",
+    "Hacker-Distros/Kali/Kali.md",
     "Exploitation/Windows/Active-Directory/AD-Kerberos-Delegation-Exploitation.md",
-    "Exploitation/Windows/Active-Directory/AD-Exploitation-Hub.md",
-    "Exploitation/Windows/Active-Directory/AD-User-Exploitation.md",
-    "Exploitation/Windows/Active-Directory/AD-Automated-Relays-Exploitation.md",
-    "Web-Application-Hacking/Cross-Site-Request-Forgery.md",
-    "Web-Application-Hacking/Command-Injection-Cheatsheet.md",
-    "Web-Application-Hacking/Web-Concepts/HTLM-Defined.md"
+    "Coding-Scripting-Programming/Languages/PHP/Useful_PHP.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+    "Virtualization/Lab-Making/VirtualBox-Network.md"
   ]
 }
