@@ -34,3 +34,14 @@ ssh-keygen
 ssh-copy-id -i /.ssh/id_rsa.pub kali@localhost # send to remote server
 ssh -i .ssh/id_rsa kali@localhost # logon to remote server with key
 ```
+
+
+## Cracking Files
+Consider [[Cracking-Files]]
+
+Weird string in a file? Screenshot each! Retain originals
+```bash
+file $file 
+cp $file $file.bak
+cat $file # beware escape characters for the terminal
+```

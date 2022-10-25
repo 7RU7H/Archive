@@ -1,6 +1,3 @@
-# Cracking Files
-
-
 ## PFX files
 
 [pfx files](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/personal-information-exchange---pfx--files) are used to store private and public keys for Software Publisher Certificates. Pvk2Pfx tool is used to perform CA issued .spc and its key to pfx file.
