@@ -3,6 +3,26 @@ This is a condensed and *Hacking themed* resource for powershell. Powershell is 
 1. Adding aliases that I might want to use instead of full command
 2. Making the comments defining explaining a better layout
 
+## Windows PowerShell Executables File System Locations
+
+The default paths to the executables for PowerShell and PowerShell ISE on relevant **64-bit** Windows operating systems:  
+  
+App | Location
+--- | ---
+32-bit (x86) PowerShell executable | `%SystemRoot%\SysWOW64\WindowsPowerShell\v1.0\powershell.exe`
+64-bit (x64) Powershell executable | `%SystemRoot%\system32\WindowsPowerShell\v1.0\powershell.exe`
+32-bit (x86) Powershell ISE executable | `%SystemRoot%\SysWOW64\WindowsPowerShell\v1.0\powershell_ise.exe`
+64-bit (x64) Powershell ISE executable | `%SystemRoot%\system32\WindowsPowerShell\v1.0\powershell_ise.exe`
+
+The default paths to the executables for PowerShell and PowerShell ISE on relevant **32-bit** Windows operating systems:  
+
+App | Location
+--- | ---
+32-bit (x86) PowerShell executable | `%SystemRoot%\system32\WindowsPowerShell\v1.0\powershell.exe`
+32-bit (x86) Powershell ISE executable  | `%SystemRoot%\system32\WindowsPowerShell\v1.0\powershell_ise.exe`
+
+[Powershelladmin](https://www.powershelladmin.com/wiki/PowerShell_Executables_File_System_Locations.php)
+
 For all the [[Powershell-Verbs]].
 
 ## Execution policy bypass And Versioning 
