@@ -13,7 +13,31 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Linux-Concepts/Linux-Users-And-Groups.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Windows/WESNG-Helpsheet.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e395b46e52899827",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/Impacket/Impacket-Cheatsheet.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0fe793e7820e128b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
                 "mode": "source",
                 "source": false
               }
@@ -77,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/Linux-Concepts/Linux-Users-And-Groups.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Windows/WESNG-Helpsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,15 +124,15 @@
   },
   "active": "0d8fba2f01874245",
   "lastOpenFiles": [
-    "Networks/Network-Protocols.md",
-    "Tools/WhatWeb.md",
-    "Recon/Active-Information-Gathering/RDP/RDP-Recon.md",
-    "Tools/Useful-Software/Telnet-Cheatsheet.md",
-    "Recon/Active-Information-Gathering/SMTP/SMTP-Recon-Cheatsheet.md",
-    "Networks/Network-Theory/Mail-Operations.md",
-    "Linux/Distributions/Debian/Debian-Package-Management.md",
-    "Hacker-Distros/Kali/Kali.md",
-    "Exploitation/Troubleshooting-Exploits-Payloads-Vulnerable-Applications.md",
-    "Brain-Hacking/Troubleshooting.md"
+    "Tools/Impacket/Impacket-Cheatsheet.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/WESNG-Helpsheet.md",
+    "Tools/Mimikatz/Golden-Tickets.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
+    "Tools/Masscan/Masscan-Cheatsheet.md",
+    "Tools/Mimikatz/Mimikatz-Cheatsheet.md",
+    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Windows-File-Transfers.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/SePrivileges/SePrivilege-Token-Table.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation Bypassing-Contrained-Powershell.md"
   ]
 }
