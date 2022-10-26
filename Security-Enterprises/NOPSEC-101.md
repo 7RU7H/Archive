@@ -1,4 +1,6 @@
-# NOPSEC 101
+# NOPSEC 101 
+
+NopSec != [OopSec](https://www.youtube.com/watch?v=StSLxFbVz0M)
 
 The inverse of [[OPSEC-101]], the information warfare to promote branding and reinforce identity over of external forces. The objective of NOPSEC is to focus your life and not enjoy the insanity of being paranoid and doing the weird loop-de-loop nonsensical and illogical behaviours of cultures while hacking or living life. This was scrapped from lived experiences and the residues of joy that I should share with the world dripping off my brain writing the Archive. This is not a replacement for OPSEC, but more a yin-yang or taoist addition - The wise man can hear NOPSEC in the wind. 
 

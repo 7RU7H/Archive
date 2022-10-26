@@ -82,13 +82,32 @@ Default  port 80
 
 ## 110 - POP3
 Generally port 110, Post Office Protocol 3 is used to download email from mail delivery agent.
-```
+Acronyms: mail transfer agent (MTA), mail delivery agent (MDA), mail submission agent (MSA), mail user agent (MUA).
+```bash
 MDA -- from MUA -(smtp)-> MSA/MTA -> SMTP -> MTA/MDA -(POP3/IMAP)-> MUA
+# Connect
+nc $ip 110
+telnet $ip 110
+# Once connected
 USER 
 PASS
 STAT
-LIST	list all messUSER 
+LIST	list all message of USER 
 RETR	return a message
+
+
+USER admin
+PASS admin
+
+USER root
+PASS root
+
+USER root
+PASS toor
+
+# Once logged
+list
+
 ```
 
 ## 111 (also 2049) - NFS
@@ -105,6 +124,10 @@ sudo mount -o nolock port=1234 -t nfs $ip:/dir /tmp/local
 
 umount $ip:/local/file/path	
 ```
+
+## 113 - IDENT
+
+Identification/Authorization service. When a client program on your end contacts a remote server for services such as POP, IMAP, SMTP, IRC, FTP, etc. that remote server sends back a query to the IDENT port 113 asking for identification from your system
 
 ## 13(5,7-9), 445 -  NBT - SMB
 Server Message Block protocol uses a client-server model. Client uses `smbclient` see [[SMB-Recon-Cheatsheet]]. SMB originally ran on top of NetBIOS using port 139. NetBIOS is an older transport layer that allows Windows computer to communicate on the same network. Later versions of SMB(after Windows 2000) use port 445 on top of a TCP stack, TCP allows for internet communication. NetBIOS over TCP/IP (NetBT) is Windows name resolution.
@@ -229,3 +252,4 @@ default 8080
 
 ## References
 [iana](https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml)
+[speedguide](https://www.speedguide.net/port.php?)

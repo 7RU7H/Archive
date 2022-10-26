@@ -74,6 +74,12 @@ apt install $package $package- # "-" for remove
 apt remove $package+ $package # "+" for install
 apt purge $package # completely remove package and data 
 apt install -o Dpkg::Options::="--force-overwrite" $package
+apt-cache # queries and displays available information about installed and installable packages
+apt-cache show $metapackage # readable record for packages good for kali metapackages 
+apt-cache search # search package list for a regex pattern 
+apt clean # empties entire /var/cache/apt/archives/
+apt-get clean # removes packages no longer download due not found in mirror
+
 
 apt search
 apt remove
@@ -143,7 +149,9 @@ The checksecruity scripts - `chkrootkit` and `rkhunter` packages detect certain 
 [Official forums](https://forums.kali.org/) and the [Rules](https://www.kali.org/docs/community/kali-linux-community-forums/) 
 `#kali-linux` channel on the[IRC Channel](https://webchat.otfc.net/) , [Web-based Client](https://webchat.otfc.net/) and [Rules](https://www.kali.org/docs/community/kali-linux-irc-channel/)
 
-## Bug Reporting
+## Troubleshooting and Bug Reporting
+
+See [[Debian-Package-Management]], [[Troubleshooting]] for general checklists to work through while you do not panic. Downgrade with old `.deb` files - found in the `pool` directory on your Kali mirror (removed and obsolete packages are kept for three to four days to avoid problems with users not having the latest package indices).
 
 Official Recommendations:
 - Double check before filing bug reports against Debian

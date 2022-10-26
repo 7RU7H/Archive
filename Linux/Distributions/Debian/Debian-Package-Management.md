@@ -18,6 +18,11 @@ apt search
 apt update
 apt upgrade
 apt-listchanges # displays information about possible problems at the beginning of a package upgrade
+apt-cache # queries and displays available information about installed and installable packages
+apt-cache # show
+apt-cache search # search package list for a regex pattern 
+apt clean # empties entire /var/cache/apt/archives/
+apt-get clean # removes packages no longer download due not found in mirror
 
 dpkg -i $package.deb # direct use of debian package manager - unpacks and runs configuration scripts automatically
 dpkg --unpack
@@ -34,9 +39,17 @@ dpkg -L $package # --listfiles $package queries the /var/lib/dpkg/info database
 dpkg -S $file # --search $file finds any packages containing the file or path passed 
 dpkg -s $packe # --status $package command displays the headers of an installed package
 dpkg -l "core*" # --list displays the list of packages known to the system and their installation status - can be used with wildcard and piped to grep
+dpkg -c $file.deb # --contents list all the files inside a .deb file
+dpkg -I $file.deb # --info display $file.deb's headers 
+# Compare versions
+# use comparison operators lt,le,eq,ne,ge,gt
+# pre denotes prerelease, but is just string to dpkg - for alphabetical sorting
+# ~ get package number 
+dpkg --compare-versions 3.2-3~pre3.3.9 gt 3.1-4 
+echo $?
 ```
 
-APT retrieves its packages from a repository.
+`apt` retrieves its packages from a repository. `apt` drop packages the downloaded files once installed.
 *"source package"*:  a package containing the source code of program
 *"package source"*: a repository that contains a packages.
 The `/etc/apt/sources.list` file lists different repositories (or sources) that publish Debian Packages and it the configuration file for defining package sources. Syntax of this file:
@@ -58,3 +71,11 @@ The `/etc/apt/sources.list` file lists different repositories (or sources) that 
 			- to indicate Subdirectories use a trailing slash 
 			- `./` indicate absence of subdirectories
 Debian uses three sections to differentiate packages according to the licenses chosen by the authors of each work. To differentiate packages Debian has only `main` enabled by default
+
+`apt-cache` queries and displays available information about installed and installable packages stored in `apt`'s internal database gathered from `sources.list` files during the `apt update` operation. Locally searching is performed on stored a copy of `Packages` files located on Debian mirrors in `/var/lib/apt/lists/`.  To avoid redownload, cached copies of already downloaded packages are found at `/var/cache/apt/archives/`, which  regularly sorted with `apt clean` and `apt-get clean`. Note that the configuration parameter `APT::Clean-Installed` can be used to prevent the removal of `.deb` files that are currently installed.
+
+## Troubleshooting
+
+See [[Troubleshooting]] generally. 
+For bugs reports - https://bugs.debian.org/package
+For downgrading - find old .deb in `apt`'s cache `/var/cache/apt/archives/`, check https://snapshot.debian.org/
