@@ -41,8 +41,10 @@ Virtualiser - Virtualbox or VMWare
 	- [VirtualBox Builder from an ISO](https://developer.hashicorp.com/packer/plugins/builders/virtualbox) - use json to save space in your brain 
 	- Use smallest, featureless ISOs possible!
 	- Preconfigure Virtualiser Networking
-	- Preseed files 
-Ansible 
+	- Preseed files (include anisible is you using it to provision)
+	- `packer validate $build.json`
+	- `packer build $build.json*`
+Provisioner - [[Ansible]] - Or Packer provisioners [Windows Shell](https://developer.hashicorp.com/packer/docs/provisioners/windows-shell) or [Powershell](https://www.packer.io/docs/provisioners/powershell)
 
 
 ## Puzzle Creation Requirements

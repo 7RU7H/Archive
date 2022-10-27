@@ -16,9 +16,11 @@ There are alot of these how to learn to x so firstly address the learning part:
 4. Read a little every day, but diversify:
 	 - i.e Bug Bounty report one day, AD whitepaper another or insert-x-ethical-hacking-x-site reading material; Blog about CVEs; Proof of Concepts about bugs; Source Code.
 5. Develop humility, integrity and remember you are stupid. The training your brain to like solving the problem and the feeling when it works over time train a patience for long complex tasks or researching that can get very frustrating.
+6. Learn, practice and research whatever **you** are interested in and enjoy, not what is cool or apparently makes money quick a better investment is alway go for long term expertise, the always money comes after.
 
 Some of the below can be connective - i.e 
 
+- Don't worry about learning everything, but dont specialise, wait years before really making that decision. everything is connect dont limit yourself.
 - Read and Practice -(In order of expense) Tryhackme, Pentester Labs, Hack The Box Acamedy
 	- It should be more hands on keyboard and less reading until you need to read to solve a problem. 
 - Watch and note Ippsec, X Youtube
@@ -46,7 +48,10 @@ Some of the below can be connective - i.e
 			- And if you stay.. you are just another idiot for whatever scam - Governmental backed, Criminally Backed, etc... why even bother it their to trap both and idiots in the Great Games that Money-Ideological-Coercion-Ego games that people play on themselves and others play on them - and you will never be one of them, no matter how high up or cyber-firepower you bring in you are Government Agency, Hactivist Group or Criminal Gang you are it is Game as Old as time itself. 
 			- Also if you learning or working in there even if you save the world like Marcus Hutchins, you are still targetable by law enforcement somewhere.
 	- For me finding other people was the hardest as I am a people person in a digitally socializing world. I could talk my way into a bank vault and back out again, but never into good company to learn this stuff lol - hopeful this will change.
-- Learn Networking - Network plus
+- Learn Networking and Web
+	- Wireshark - Tryhackme, Pentester Lab
+	- Burpsuite - Tryhackme, Pentester Lab
+	- Network Virtualised machines
 - Learn to script 
 	- Try a bash and powershell command during your day
 	- Piece these together into a script for later automation - build it up, thank me later!
@@ -68,3 +73,4 @@ Some of the below can be connective - i.e
 	- Then you are up against automation and experience Bug Hunters
 	- Partner Programs are a barrier for a reason
 - Build your own methodology and intuitions, but remember their are much betetr resources for good reason - I think that about this repository comparative to others, it helps. 
+- Do the coursework dont do the exam, but **do** go for the exam if need some goal or certificate is what you want. Expertise comes from experience, but the measure of experience is demonstrable work **complete** and a certificate is measure of work done at particular standard. Experience of a certian quality is what is sort after.
