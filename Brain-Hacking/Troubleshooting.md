@@ -1,8 +1,9 @@
 
-1. Test in [[Virtual-machines]]
+1. Test in [[Virtual-Machines]]
 2. [[Search-Engine-Dorking]]
-3. Leverage Bug Reports
-4. Downgrading 
-5.  Use log files
-6. [[Network-Troubleshooting]]
-7. [[Troubleshooting-Exploits-Payloads-Vulnerable-Applications]]
+3. Leverage the tool of install various debugging, logging
+4. Leverage Bug Reports
+5. Downgrading 
+6. Create more output from the problem with installation tools
+7. [[Network-Troubleshooting]]
+8. [[Troubleshooting-Exploits-Payloads-Vulnerable-Applications]]

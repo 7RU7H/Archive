@@ -23,6 +23,8 @@ apt-cache # show
 apt-cache search # search package list for a regex pattern 
 apt clean # empties entire /var/cache/apt/archives/
 apt-get clean # removes packages no longer download due not found in mirror
+apt --reinstall install $package
+
 
 dpkg -i $package.deb # direct use of debian package manager - unpacks and runs configuration scripts automatically
 dpkg --unpack
@@ -76,6 +78,23 @@ Debian uses three sections to differentiate packages according to the licenses c
 
 ## Troubleshooting
 
-See [[Troubleshooting]] generally. 
-For bugs reports - https://bugs.debian.org/package
-For downgrading - find old .deb in `apt`'s cache `/var/cache/apt/archives/`, check https://snapshot.debian.org/
+- See [[Troubleshooting]] generally. 
+- For bugs reports - https://bugs.debian.org/package
+- For downgrading - find old .deb in `apt`'s cache `/var/cache/apt/archives/`, check https://snapshot.debian.org/. 
+- Upgrades sometimes get interrupted because one of the package maintainer scripts fails - frequently `postint` - you maybe have to edit the script..
+	- `set -x` after shebang, arrange rerunning of script with `dpkg --configure -a` for `postinst` provides more output 
+	- Either fix the underlying problem or add `|| true` at the end of the line of the failing command
+- The `dpkg` tool keeps a log of all of its actions in `/var/log/dpkg.log`, it is very verbose - it tracks: 
+	- package details at all stages
+	- `dpkg`'s behaviour
+	- history of development of the system
+	- time keeping of installations or updates
+	- crossed-checked with information from `changelog.Debian.gz`
+- The use of `--force-*` option or some other malfunction can lead to a system where `apt` family of commands will refuse to function. Just reinstall OS, this maybe too much, but **if in extereme cases and this ugly solution not for long term use after:**
+	- Run `apt full-upgrade` to check unmet dependencies, and fix...
+- Damage from removal or modification can be fixed with a simple: `apt --reinstall install $package` 
+- **Do Not Use `apt --reinstall` to Recover from an Attack**
+	- Quarantine from networking - change in bios, remove networking cards, etc
+	- Do not panic, investigate the extent of the damage
+	- Wipe and reinstall OS
+	- For the paranoid - buy new a motherboard, remove and quarantine the old motherboard, remove all networking capabilities on the board and anything that connected with it own instruction set or long term storage - learn from investigating it in isolation to other systems. 

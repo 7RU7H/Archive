@@ -13,50 +13,70 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Windows/WESNG-Helpsheet.md",
+                "file": "Virtualization/Lab-Making/Creating-Vulnerable-VMs.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "6fcaa3e2d17c5b33",
+            "id": "ad4609177d867be3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Coding-Scripting-Programming/Languages/Powershell/Useful_Powershell.md",
+                "file": "Virtualization/Virtual-Machines.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "e395b46e52899827",
+            "id": "af8343fbc48d5f72",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/Impacket/Impacket-Cheatsheet.md",
+                "file": "Virtualization/Packer.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "0fe793e7820e128b",
+            "id": "eb0e6a2b20e4e0fb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
+                "file": "Virtualization/Lab-Making/Creating-Vulnerable-VMs.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "fcc9c0d5d1faf645",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "9b1f20c14cedab89",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Virtualization/Blueprinting-Vulnerable-VMs-CTFs.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -85,7 +105,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "file:Respon",
+                "query": "Daniel",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -114,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
+                "file": "Virtualization/Blueprinting-Vulnerable-VMs-CTFs.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,20 +152,17 @@
     "width": 300,
     "collapsed": true
   },
-  "ribbon": {
-    "mostRecentAction": ""
-  },
-  "active": "0fe793e7820e128b",
+  "active": "9b1f20c14cedab89",
   "lastOpenFiles": [
-    "Tools/C2/Empire/Empire.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
-    "Recon/Active-Information-Gathering/Responder-Cheatsheet.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
-    "Coding-Scripting-Programming/Languages/Powershell/Useful_Powershell.md",
-    "Coding-Scripting-Programming/Languages/Powershell/Powershell-Eventlogging.md.md",
-    "Coding-Scripting-Programming/Languages/Powershell/Powershell-WinAPI-Interaction.md",
-    "Coding-Scripting-Programming/Languages/Powershell/Basic_Powershell.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/SePrivileges/SePrivilege-Token-Table.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/WESNG-Helpsheet.md"
+    "Brain-Hacking/Learning-To-Hack.md",
+    "Virtualization/Lab-Making/Creating-Vulnerable-VMs.md",
+    "Virtualization/Virtual-Machines.md",
+    "Virtualization/Packer.md",
+    "Recon/Active-Information-Gathering/SMTP/SMTP-Recon-Cheatsheet.md",
+    "Virtualization/Lab-Making/VirtualBox-Windows-10-VM.md",
+    "Web-Application-Hacking/Methodologies/Generic/Web-App-Hacking-Methodology.md",
+    "Virtualization/Lab-Making/VirtualBox-Networking.md",
+    "Brain-Hacking/Troubleshooting.md",
+    "Hacker-Distros/Kali/Kali.md"
   ]
 }
