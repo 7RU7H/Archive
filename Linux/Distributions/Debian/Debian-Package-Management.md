@@ -49,6 +49,17 @@ dpkg -I $file.deb # --info display $file.deb's headers
 # ~ get package number 
 dpkg --compare-versions 3.2-3~pre3.3.9 gt 3.1-4 
 echo $?
+
+# Either 
+apt -o Dpkg::Options::="--force-overwrite" install 
+# or in /etc/apt/apt.conf.d/99local - either local or 99local
+Dpkg::Options {
+   "--force-overwrite";
+}
+# if you can only access the web through a proxy, add a line like to the above file
+Acquire::http::proxy "http://yourproxy:$portnum" 
+# For an FTP proxy
+Acquire::ftp::proxy "ftp://yourproxy"
 ```
 
 `apt` retrieves its packages from a repository. `apt` drop packages the downloaded files once installed.
@@ -76,6 +87,40 @@ Debian uses three sections to differentiate packages according to the licenses c
 
 `apt-cache` queries and displays available information about installed and installable packages stored in `apt`'s internal database gathered from `sources.list` files during the `apt update` operation. Locally searching is performed on stored a copy of `Packages` files located on Debian mirrors in `/var/lib/apt/lists/`.  To avoid redownload, cached copies of already downloaded packages are found at `/var/cache/apt/archives/`, which  regularly sorted with `apt clean` and `apt-get clean`. Note that the configuration parameter `APT::Clean-Installed` can be used to prevent the removal of `.deb` files that are currently installed.
 
+## Configuring APT
+
+Every file in `/etc/apt/apt.conf.d/` are instructions for the configuration of APT, each subdirectory represents a configuration file that is split into multiple files. End users don't have to manually follow multiple package configuration instructions typically found in the package's `/usr/share/doc/package/README.Debian` file, because the installer can drop in configuration files and the structuring brings flexibility for co-existing configurations of package maintainers. Although...
+
+**Beware of Configuration Files Generated from `.d` Directories**
+
+APT has native support of its `/etc/apt/apt.conf.d` directory, some applications the `.d` directory is a Debian-specific addition used as input to dynamically generate the canonical configuration file used by the application. For these applications **do not manually edit** the main configuration file as your changes will be lost on the next execution of the `update-*` command
+
+## Package Prioritization
+
+Package Context | Priority Value
+--- | ---
+Installed package | 100
+Non-Installed package | 500
+Non-Installed package part of a target release | 990
+
+- Target release (defined with the `-t` command-line option or the `APT::Default-Release`
+- You can modify the priorities by adding entries in the `/etc/apt/preferences` file.
+	- If several generic entries exist, the first match is used.
+	- Every package source is identified by the information contained in a `Release` file and downloads together with the `Packages` files.
+- APT will never install an older version of a package - with value lower than any on the table above or greater than 1000.
+- If two packages have the same priority, APT installs the newest one
+- Priority Value between 100 and 500, the package will only be installed if there is no other newer version installed or available in another distribution.
+- Priority between 501 and 990 will only be installed if there is no newer version installed or available in the target distribution.
+
+For Debian experiement or Debian-based bleeding edge: `apt install $package/experimental`
+```bash
+# You can, but it's not advised specify in /etc/apt/preferences the following:
+Package: *
+Pin: release a=experimental
+Pin-Priority: 500
+```
+
+
 ## Troubleshooting
 
 - See [[Troubleshooting]] generally. 
@@ -98,3 +143,15 @@ Debian uses three sections to differentiate packages according to the licenses c
 	- Do not panic, investigate the extent of the damage
 	- Wipe and reinstall OS
 	- For the paranoid - buy new a motherboard, remove and quarantine the old motherboard, remove all networking capabilities on the board and anything that connected with it own instruction set or long term storage - learn from investigating it in isolation to other systems. 
+
+#### Alternatives to APT
+
+See [[Common-Linux-Administration-Alternatives]]
+
+
+## References
+
+https://snapshot.debian.org/
+https://bugs.debian.org/package
+[Aptitude](https://wiki.debian.org/Aptitude)
+[Synaptic](https://wiki.debian.org/Synaptic)

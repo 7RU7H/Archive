@@ -13,62 +13,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Virtualization/Lab-Making/Creating-Vulnerable-VMs.md",
+                "file": "Hacker-Distros/Kali/Kali.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "ad4609177d867be3",
+            "id": "d9f651abf42e6fed",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Virtualization/Virtual-Machines.md",
+                "file": "Exploitation/Windows/Active-Directory/AD-Certificate-Exploitation.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "af8343fbc48d5f72",
+            "id": "3c452ae4213a4b57",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Virtualization/Packer.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "eb0e6a2b20e4e0fb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Virtualization/Lab-Making/Creating-Vulnerable-VMs.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7cac91a59dc72545",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Virtualization/Ansible.md",
+                "file": "Tools/Useful-Software/Rubeus-Cheatsheet.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -126,7 +102,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Virtualization/Ansible.md",
+                "file": "Exploitation/Windows/Active-Directory/AD-Certificate-Exploitation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,17 +120,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "7cac91a59dc72545",
+  "active": "d9f651abf42e6fed",
   "lastOpenFiles": [
-    "Virtualization/Lab-Making/Creating-Vulnerable-VMs.md",
-    "Brain-Hacking/Learning-To-Hack.md",
-    "Virtualization/Packer.md",
-    "Exploitation/Windows/PrintNightmare.md",
-    "Virtualization/Blueprinting-Vulnerable-VMs-CTFs.md",
-    "Virtualization/Virtual-Machines.md",
-    "Recon/Active-Information-Gathering/SMTP/SMTP-Recon-Cheatsheet.md",
-    "Virtualization/Lab-Making/VirtualBox-Windows-10-VM.md",
-    "Web-Application-Hacking/Methodologies/Generic/Web-App-Hacking-Methodology.md",
-    "Virtualization/Lab-Making/VirtualBox-Networking.md"
+    "Tools/Useful-Software/Rubeus-Cheatsheet.md",
+    "Exploitation/Windows/Active-Directory/AD-Certificate-Exploitation.md",
+    "Web-Application-Hacking/CMS/Wordpress.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
+    "Post-Exploitation/Persistence/Windows-Persistence/Windows-Persistence-RDP.md",
+    "Post-Exploitation/Persistence/Persistence.md",
+    "Recon/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
+    "Hacker-Distros/Kali/Kali.md",
+    "Linux/Distributions/Debian/Debian-Package-Management.md",
+    "Linux/Distributions/Common-Linux-Administration-Alternatives.md"
   ]
 }

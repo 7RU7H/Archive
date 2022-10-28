@@ -1,6 +1,10 @@
 # HTTP Defined
 
-Stateless without cookies. Data from one HTTP request does not influence the next request sent by the same user. The web server can only process the data available on the request. For [[Ht]]
+Stateless without cookies. Data from one HTTP request does not influence the next request sent by the same user. The web server can only process the data available on the request. For [[HTTP-Routing]]
+
+## Versions
+
+**HTTP 1.0 is a non-persistent connection, and HTTP 1.1 is persistent connection**. For a connection Persistent or Non-persistent it is sure that to initiate TCP connection one RTT is used. RTT-> Time for a small packet to travel from client to server and back.
 
 ## Requests
 
