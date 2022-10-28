@@ -1,11 +1,14 @@
 # EVIL-WINRM
 Evil-WinRM see [[Shells]] for more [[Shells]] and [[Reverse-Shells-Listing]] of [[Reverse-Shells-Listing]]
+```powershell
+Enable-PSRemoting
+```
+
 
 ```bash
 evil-winrm -i $IP -u $USER -p $PASS
 # Enable SSL and use a cert and key file
 evil-winrm -S -i $IP -c $keyfile.cert -k $keyfile.pem
-
 ```
 On remote system use the menu to, any powershell loaded with `. .\Module` will be visible in this `menu` command:
 ```powershell

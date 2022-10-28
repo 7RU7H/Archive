@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Hacker-Distros/Kali/Kali.md",
+                "file": "Tools/Shells/Powercat-Cheatsheet.md",
                 "mode": "source",
                 "source": false
               }
@@ -32,6 +32,42 @@
             }
           },
           {
+            "id": "e8a796c6dab28718",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/Mimikatz/Mimikatz-Cheatsheet.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0c587503228390e3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Post-Exploitation/Credentials-Harvesting/AD-Credential-Harvesting.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "aefc79ac7a231c30",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Windows-File-Transfers.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "3c452ae4213a4b57",
             "type": "leaf",
             "state": {
@@ -44,7 +80,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -73,7 +109,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Daniel",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -102,7 +138,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exploitation/Windows/Active-Directory/AD-Certificate-Exploitation.md",
+                "file": "Post-Exploitation/Credentials-Harvesting/AD-Credential-Harvesting.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,17 +156,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "d9f651abf42e6fed",
+  "active": "ed8f63df71621be6",
   "lastOpenFiles": [
-    "Tools/Useful-Software/Rubeus-Cheatsheet.md",
     "Exploitation/Windows/Active-Directory/AD-Certificate-Exploitation.md",
-    "Web-Application-Hacking/CMS/Wordpress.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
-    "Post-Exploitation/Persistence/Windows-Persistence/Windows-Persistence-RDP.md",
-    "Post-Exploitation/Persistence/Persistence.md",
-    "Recon/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
+    "Tools/Shells/Powercat-Cheatsheet.md",
+    "Post-Exploitation/Bind-And-Reverse-Shells-Defined.md",
     "Hacker-Distros/Kali/Kali.md",
-    "Linux/Distributions/Debian/Debian-Package-Management.md",
-    "Linux/Distributions/Common-Linux-Administration-Alternatives.md"
+    "Post-Exploitation/Credentials-Harvesting/AD-Credential-Harvesting.md",
+    "Tools/Mimikatz/Mimikatz-Cheatsheet.md",
+    "Tools/SysInternals/Sysinternals-Procdump.md",
+    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Windows-File-Transfers.md",
+    "Tools/Shells/Evil-winrm-Cheatsheet.md",
+    "Post-Exploitation/Data-Ex&Infiltration/Data-Exfiltration/Data-Exfiltration-Over-SSH.md"
   ]
 }
