@@ -13,74 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/Shells/Powercat-Cheatsheet.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d9f651abf42e6fed",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Exploitation/Windows/Active-Directory/AD-Certificate-Exploitation.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e8a796c6dab28718",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tools/Mimikatz/Mimikatz-Cheatsheet.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0c587503228390e3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Post-Exploitation/Credentials-Harvesting/AD-Credential-Harvesting.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "aefc79ac7a231c30",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Windows-File-Transfers.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "3c452ae4213a4b57",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tools/Useful-Software/Rubeus-Cheatsheet.md",
+                "file": "Linux/Distributions/Linux-System-Administration/Common-Linux-Administration-Alternatives.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -138,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Post-Exploitation/Credentials-Harvesting/AD-Credential-Harvesting.md",
+                "file": "Linux/Distributions/Linux-System-Administration/Common-Linux-Administration-Alternatives.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -156,17 +95,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "ed8f63df71621be6",
+  "active": "0d8fba2f01874245",
   "lastOpenFiles": [
-    "Exploitation/Windows/Active-Directory/AD-Certificate-Exploitation.md",
+    "Linux/Distributions/Debian/Debian-Package-Management.md",
+    "Linux/Distributions/Linux-System-Administration/Common-Linux-Administration-Alternatives.md",
+    "Linux/Distributions/Linux-System-Administration/APT-And-Other-Non-Host-Distributions.md",
     "Tools/Shells/Powercat-Cheatsheet.md",
-    "Post-Exploitation/Bind-And-Reverse-Shells-Defined.md",
-    "Hacker-Distros/Kali/Kali.md",
-    "Post-Exploitation/Credentials-Harvesting/AD-Credential-Harvesting.md",
+    "Exploitation/Windows/Active-Directory/AD-Certificate-Exploitation.md",
     "Tools/Mimikatz/Mimikatz-Cheatsheet.md",
-    "Tools/SysInternals/Sysinternals-Procdump.md",
-    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Windows-File-Transfers.md",
-    "Tools/Shells/Evil-winrm-Cheatsheet.md",
-    "Post-Exploitation/Data-Ex&Infiltration/Data-Exfiltration/Data-Exfiltration-Over-SSH.md"
+    "Services/Databases/MYSQL/MySQL-Cheatsheet.md",
+    "Services/Databases/MYSQL/MySQL-Hacking.md",
+    "Services/Databases/MSSQL/MSSQL-Hacking.md",
+    "Coding-Scripting-Programming/Languages/Python/Useful_Python.md"
   ]
 }

@@ -12,6 +12,7 @@ apt install # indirect use of debian package manager to install packages
 # force overwrite files
 apt install $package $package- # "-" for remove
 apt remove $package+ $package # "+" for install
+apt install $package:$architecture
 apt purge $package # completely remove package and data 
 apt install -o Dpkg::Options::="--force-overwrite" $package
 apt search
@@ -24,11 +25,20 @@ apt-cache search # search package list for a regex pattern
 apt clean # empties entire /var/cache/apt/archives/
 apt-get clean # removes packages no longer download due not found in mirror
 apt --reinstall install $package
+apt autoremove
+apt-mark auto $package # mark packages
 
+apt-cache policy # display default priority
+apt install $package/$substate_of_distribution
+# if it fails due to unsatisfiable dependencies use:
+-t $substate_of_distribution
 
 dpkg -i $package.deb # direct use of debian package manager - unpacks and runs configuration scripts automatically
 dpkg --unpack
 dpkg --configure $package.deb
+dpkg --print-architecture # print host architecture
+dpkg --add-architecture # add an architecture 
+dpkg --print-architecture # remove an architecture
 
 #  If dpkg fails to install a package and return an error - ignore it with:
 dpkg -i --force-overwrite 
@@ -95,6 +105,10 @@ Every file in `/etc/apt/apt.conf.d/` are instructions for the configuration of A
 
 APT has native support of its `/etc/apt/apt.conf.d` directory, some applications the `.d` directory is a Debian-specific addition used as input to dynamically generate the canonical configuration file used by the application. For these applications **do not manually edit** the main configuration file as your changes will be lost on the next execution of the `update-*` command
 
+Tracking packages is a best practice imvolving marking for automatic removal any package you do not require directly. `apt-mark auto package` to mark the given package as automatic, whereas `apt-mark manual package` does the opposite.
+
+Enabling Multi-Architecture support to define foriegn architectures on a host can be done with `dpkg --print-architecture` to print host architecture, `dpkg --add-architecture`  to add an architecture and `dpkg --print-architecture` to remove an architecture. Finally foriehgn packages can then be installed with `apt install package:architecture`. To make multi-arch actually useful and usable, libraries had to be repackaged and moved to an architecture-specific directory so that multiple copies (targeting different architectures) can be installed alongside one another. Such updated packages contain the `Multi-Arch: same` header field to tell the packaging system that the various architectures of the package can be safely co-installed (and that those packages can only satisfy dependencies of packages of the same architecture). `Multi-Arch: same` packages must have their **names qualified with their architecture** to be unambiguously identifiable and **package must be the same version** to be upgraded together. These packages may also share files with other instances of the same package; `dpkg` ensures that all packages have bit-for-bit identical files when they are shared. Satisfying a dependency requires either a package marked `Multi-Arch: foreign` or a package whose architecture matches the one of the package declaring the dependency (in this dependency resolution process, architecture-independent packages are assumed to be of the same architecture as the host). It can be weakened with `package:any`, if foreign only if it is marked `Multi-Arch: allowed`. 
+
 ## Package Prioritization
 
 Package Context | Priority Value
@@ -120,6 +134,7 @@ Pin: release a=experimental
 Pin-Priority: 500
 ```
 
+For more exotic package mixxing see [[APT-And-Other-Non-Host-Distributions]]
 
 ## Troubleshooting
 
