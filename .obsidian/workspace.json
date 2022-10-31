@@ -4,22 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "c8e2f825f789379d",
+        "id": "d80e058e7a73b185",
         "type": "tabs",
         "children": [
           {
-            "id": "0d8fba2f01874245",
+            "id": "d2549c0278fef416",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Distributions/Linux-System-Administration/Common-Linux-Administration-Alternatives.md",
+                "file": "Linux/Linux-Commands/Core-Linux-Commands.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8a452bb3be942cb5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Linux/Linux-Commands/Linux-One-Liners-To-Rule-Them-All.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -77,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/Distributions/Linux-System-Administration/Common-Linux-Administration-Alternatives.md",
+                "file": "Linux/Linux-Commands/Linux-One-Liners-To-Rule-Them-All.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,17 +108,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "0d8fba2f01874245",
+  "active": "8a452bb3be942cb5",
   "lastOpenFiles": [
+    "Linux/Linux-Commands/Core-Linux-Commands.md",
+    "Linux/Linux-Commands/Linux-One-Liners-To-Rule-Them-All.md",
+    "Linux/Linux-Commands/Linux-Command-Hub.md",
+    "Hardening/Linux-Hardening.md",
+    "Virtualization/Lab-Making/Creating-Vulnerable-VMs.md",
+    "Virtualization/Lab-Making/Blueprinting-Vulnerable-VMs-CTFs.md",
+    "Virtualization/Lab-Making/VirtualBox-Windows-10-VM.md",
+    "Post-Exploitation/Credentials-Harvesting/AD-Credential-Harvesting.md",
     "Linux/Distributions/Debian/Debian-Package-Management.md",
-    "Linux/Distributions/Linux-System-Administration/Common-Linux-Administration-Alternatives.md",
-    "Linux/Distributions/Linux-System-Administration/APT-And-Other-Non-Host-Distributions.md",
-    "Tools/Shells/Powercat-Cheatsheet.md",
-    "Exploitation/Windows/Active-Directory/AD-Certificate-Exploitation.md",
-    "Tools/Mimikatz/Mimikatz-Cheatsheet.md",
-    "Services/Databases/MYSQL/MySQL-Cheatsheet.md",
-    "Services/Databases/MYSQL/MySQL-Hacking.md",
-    "Services/Databases/MSSQL/MSSQL-Hacking.md",
-    "Coding-Scripting-Programming/Languages/Python/Useful_Python.md"
+    "Tools/Useful-Software/Nishang-Helpsheet.md"
   ]
 }

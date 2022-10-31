@@ -1,6 +1,7 @@
 # Kali
 
 ## Introduction
+
 Kali Linux is Debian GNU/Linux Linux distribution, which is probably the defacto Enterprise-ready standard for security auditing with the tagline: "the quieter you become, the more you are able to hear". First released in March 2013 to then use a Rolling release model on 21st January, 2016 to present.
 
 With it is own custom Linux Kernel it massively customizable from a trusted source.
@@ -105,6 +106,13 @@ Package: *
 Pin: release o=Debian
 Pin-Priority: -10
 ```
+
+#### Package Authenticity
+
+**Beware, if paranoid: Package signatures cannot be verified externally - check the fingerprints of imported keys**
+
+To circumvent the risk of malicious packages, Kali provides a tamper-proof seal to guarantee at install time to inform the user that the package has come from the official maintainer.  Trust keys are managed by `apt-key`, which maintains a keyring of GnuPG public keys, which are used to verify signatures in the `Release.gpg` files available on the mirrors. Only the official Kali keys are needed and automatically kept up-to-date by `kali-archive-keyring` package in the corresponding `/etc/apt/trusted.gpg.d`. To add the key to the trusted keyring, the administrator can run `apt-key add < key.asc`.
+
 
 #### Securing and Monitoring
 

