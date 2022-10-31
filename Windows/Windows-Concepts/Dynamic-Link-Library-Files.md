@@ -29,6 +29,18 @@ With run-time dynamic linking:
 
 In malicious code, threat actors will often use run-time dynamic linking more than load-time dynamic linking. This is because a malicious program may need to transfer files between memory regions, and transferring a single DLL is more manageable than importing using other file requirements.
 
+DLL search order
+
+Unsafe | Safer
+--- | ---
+Current Directory | Directory Applicqtion is loaded 
+Directory Applicqtion is loaded | System32
+System32 | 16 bit system file: Windows\System 
+16 system file: Windows\System | C:\Windows
+C:\Windows | Current Directory
+%PATH% | %PATH%
+
+
 
 ## References
 
