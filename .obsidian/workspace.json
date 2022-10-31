@@ -4,58 +4,59 @@
     "type": "split",
     "children": [
       {
-        "id": "d80e058e7a73b185",
+        "id": "d10e0c0f7d6a64aa",
         "type": "tabs",
         "children": [
           {
-            "id": "d2549c0278fef416",
+            "id": "86ad4a334316af6e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
+                "file": "Networks/Network-Theory/DNS-Defined.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "93e964d4625def85",
+            "id": "a4a134c73f7c1816",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+                "file": "DIG-cheatsheet.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "2268e2d92e851d46",
+            "id": "cfb315197a22fed9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
+                "file": "Recon/Passive-Information-Gathering/DNS-Recon-Passive.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "6f5d47a8b44c6a64",
+            "id": "1683ba67c3da1b41",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Windows-File-Transfers.md",
+                "file": "Recon/Active-Information-Gathering/DNS/DNS-Recon-Active.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -113,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
+                "file": "Recon/Active-Information-Gathering/DNS/DNS-Recon-Active.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,17 +132,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "d2549c0278fef416",
+  "active": "1683ba67c3da1b41",
   "lastOpenFiles": [
-    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+    "Recon/Passive-Information-Gathering/DNS-Recon-Passive.md",
+    "DIG-cheatsheet.md",
+    "Recon/Active-Information-Gathering/DNS/DNS-Recon-Active.md",
+    "Networks/Network-Theory/DNS-Defined.md",
+    "Tools/Useful-Software/Github-guide.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
     "Post-Exploitation/Credentials-Harvesting/AD-Credential-Harvesting.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
-    "Windows/Windows-Concepts/Dynamic-Link-Library-Files.md",
-    "Exploitation/Windows/Windows-Internals-Exploitation/Reflective-DLL-Injection.md",
-    "Exploitation/Windows/Windows-Internals-Exploitation/DLL-Injection.md",
-    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Windows-File-Transfers.md",
-    "Linux/Linux-Commands/Core-Linux-Commands.md",
-    "Linux/Linux-Commands/Linux-One-Liners-To-Rule-Them-All.md"
+    "Windows/Windows-Concepts/Dynamic-Link-Library-Files.md"
   ]
 }

@@ -1,5 +1,17 @@
 # Github
 
+## AAARGH.. breath just use the correct git commands
+
+```bash
+# Check local repo status to its remote hosted on github
+git status -uno
+git branch # display branches
+
+# Are you really sure the local is ahead of the remote?
+# Push once, measure twice - DOUBLE CHECK!
+git push --all -f
+```
+
 ## Git not recording pushes?
 [Stackoveranswer](https://stackoverflow.com/questions/15289768/github-commits-arent-recorded-in-the-your-contributions-calendar#19384175)
 ```bash
@@ -31,3 +43,4 @@ Primegen](https://www.youtube.com/c/ThePrimeagen)
 ```bash
 git commit --amend --no-edit
 ```
+

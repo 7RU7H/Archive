@@ -1,4 +1,6 @@
-s# DNS Passive Recon
+# DNS Passive Recon
+
+For [[DNS-Defined]], [[DNS-Recon-Active]]
 
 The domain registrar is responsible for maintaining the WHOIS records for the domain names it is leasing. `whois` will query the WHOIS server to provide all saved records.
 ```bash
@@ -17,8 +19,9 @@ whois $url
 ```bash
 nslookup [-type=] $url A=ipv4,AAAA=ipv6,cname=CanonicalName,MX=MailServers,SOA=stateofAuthority,txt=txtrecords 
 
-dig $url [type]		# Domain Information Groper
+dig $domain [type]		# Domain Information Groper
 ```
+See [[DIG-cheatsheet]]
 
 BE AWARE !! consider DNSdumpster tool for subdomains, and Shodan.io for exposed IoT anythings connected to networks
 
@@ -38,3 +41,4 @@ BE AWARE !! consider DNSdumpster tool for subdomains, and Shodan.io for exposed 
 
 [THM Red Team Recon Room](https://tryhackme.com/room/redteamrecon)
 [ViewDNS.info](https://viewdns.info/)
+[THM DNS in Detail](https://tryhackme.com/room/dnsindetail)
