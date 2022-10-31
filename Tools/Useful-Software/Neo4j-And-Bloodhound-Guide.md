@@ -39,6 +39,18 @@ cd /tmp; curl https://github.com/BloodHoundAD/SharpHound/releases/download/v1.0.
 Sharphound.exe --CollectionMethods <Methods> --Domain <domain> --ExcludeDCs
 ```
 
+Remote, Non Domain-Joined - Beware Windows Security!
+```powershell
+# configure DNS
+notepad %SYSTEMROOT%\System32\drivers\etc\hosts
+# Start a shell in user context of compromised account locally
+runas /netonly /user:$domain\$user cmd.exe
+# Run SharpHound.exe
+.\SharpHound.exe -c all -d $domain --DomainController $DC_IP
+```
+[Ippsec Active](https://www.youtube.com/watch?v=jUc1J31DNdw)
+
+
 ## Bloodhound
 [For detailed official documentation](https://bloodhound.readthedocs.io/en/latest/data-analysis/bloodhound-gui.html)
 

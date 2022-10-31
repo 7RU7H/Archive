@@ -2,5 +2,5 @@
 
 
 [[Powerview-Cheatsheet]]
-[[PowerSploit-PowerUp-Helpsheet]]
+[[PowerSploit-Helpsheet]]
 [[Nishang-Helpsheet]]

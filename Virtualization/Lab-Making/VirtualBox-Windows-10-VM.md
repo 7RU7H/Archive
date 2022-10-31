@@ -68,8 +68,14 @@ Will install python2.7 if you don't have it!
 
 ## Networking
 
-MAke careful consideration as to what is safe and what you want. This is an awesome blog about every possible configuration options, with pictures and well written [nakivo.com](https://www.nakivo.com/blog/virtualbox-network-setting-guide/)
+Make careful consideration as to what is safe and what you want. This is an awesome blog about every possible configuration options, with pictures and well written [nakivo.com](https://www.nakivo.com/blog/virtualbox-network-setting-guide/)
 
+
+## Sharing Files
+
+Either Install Guest Editions
+
+Setup a Shared Folder
 
 ## Reference
 

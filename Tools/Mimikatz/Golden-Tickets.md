@@ -1,7 +1,7 @@
-Golden tickets are forget Ticket Granting Tickets (TGTs) as part of Kerberos, see [[Active-Directory-Kerberos-Authenication-Defined]] and it one of many techniques of [[Attacking-Kerberos]]. It is a ticket that grants any ticket, which requires KRBTGT accounts password hash, maybe try [[Mimikatz-Cheatsheet]]. This article is notes on the subject of Golden Tickets:
+Golden tickets are forged Ticket Granting Tickets (TGTs) as part of Kerberos, see [[Active-Directory-Kerberos-Authenication-Defined]] and it one of many techniques of [[Attacking-Kerberos]]. It is a ticket that grants any ticket, which requires KRBTGT accounts password hash, maybe try [[Mimikatz-Cheatsheet]]. This article is notes on the subject of Golden Tickets:
 
 Requirement:
-- KRBTGT account's password hash, 
+- KRBTGT account's password hash
 - domain name, domain SID, and user ID of account to be impersonated
 
 - With KRBTGT user hash - we don't need the password hash of the account we want to impersonate, ince it was signed by the KRBTGT hash, this verification passes and the TGT is declared valid no matter its contents.
@@ -13,10 +13,12 @@ Requirement:
 	- Blue team would have to rotate the KRBTGT account password atleast twice, is an incredibly painful process for the blue team
 		- Not all services are smart enough to release the TGT is no longer valid (since the timestamp is still valid) and thus won't auto-request a new TGT.
 - Golden Tickets allow even bypass smart card authenication as smart cards are verified by the DC before it creates the TGT.
-- Golden ticket can created nonm domain joined machines!
+- Golden ticket can created non domain joined machines!
 
+With a Golden ticket the first interaction is a TGS-REQ using the TGT (Golden Ticket), there is no prior credential submission or AS-REQ / AS-REP. The DC checks and verifies it. It is considered a important persistence method see [[AD-Persistence-Tickets]].
 
 
 ## References
 
 [THM AD Persistence Room](https://tryhackme.com/room/persistingad)
+[Kerberos and Attacks 101 by Tim Medin](https://www.youtube.com/watch?v=9lOFpUA25Nk)
