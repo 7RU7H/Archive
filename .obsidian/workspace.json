@@ -13,7 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
+                "file": "Post-Exploitation/Credentials-Harvesting/AD-Credential-Harvesting.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "519ab0f115a14603",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/Mimikatz/Mimikatz-Cheatsheet.md",
                 "mode": "source",
                 "source": false
               }
@@ -77,7 +89,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
+                "file": "Post-Exploitation/Credentials-Harvesting/AD-Credential-Harvesting.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,15 +109,15 @@
   },
   "active": "86ad4a334316af6e",
   "lastOpenFiles": [
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
+    "Tools/Mimikatz/Mimikatz-Cheatsheet.md",
+    "Post-Exploitation/Credentials-Harvesting/AD-Credential-Harvesting.md",
+    "Windows/Windows-Commands/Windows-Networking-Commands.md",
+    "Windows/Windows-Commands/WMI-Commands.md",
+    "Windows/Windows-Commands/Windows-CLI-cmd.md",
+    "Post-Exploitation/Persistence/Active-Directory-Persistence/AD-Persistence-Credentials.md",
+    "Web-Application-Hacking/File-Inclusion-And-Directory-Traversal/DT-FI-Windows-Files.md",
+    "Cryptography-And-Authentication/Password-Attacks/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
     "Networks/Network-Protocols.md",
-    "Tools/Shells/Socat-Cheatsheet.md",
-    "Security-Enterprises/Redteam/Red-Team-Theory/Adversay-Emulation.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation Bypassing-Contrained-Powershell.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/PrivEsc-Important-Windows-Locations.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/PowerSploit-Helpsheet.md",
-    "Linux/Linux-Commands/Linux-Networking-Commands.md",
-    "Linux/Linux-Commands/Linux-Processes-Commands.md"
+    "Services/Webservers/JS/nttpd.md"
   ]
 }

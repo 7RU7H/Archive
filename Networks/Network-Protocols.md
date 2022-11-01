@@ -199,6 +199,11 @@ sudo mount -o nolock port=1234 -t nfs $ip:/dir /tmp/local
 umount $ip:/local/file/path	
 ```
 
+## 2233 - Infocrypt
+
+InfoCrypt Desktop is a Windows 95 or Windows NT software providing desktop to desktop security within a LAN or WAN. As it operates at the network layer, it is completely transparent to the user and will work with any application.
+
+
 ## 3128 - Squid
 Squid is a caching and forwarding HTTP web proxy
 [Hacktricks](https://book.hacktricks.xyz/network-services-pentesting/3128-pentesting-squid?q=3128)
