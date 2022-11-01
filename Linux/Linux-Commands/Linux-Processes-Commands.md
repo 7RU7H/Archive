@@ -10,7 +10,7 @@ ps -C	select by command name
 top	realtime stats about processes running
 kill	kill + PID will 
 SIGTERM - Kill the process, but allow it to do some cleanup tasks beforehand
-SIGKILL - Kill the process - doesn't do any cleanup after the fact
+SIGKILL - Kill the process - #doesn't do any cleanup after the fact
 SIGSTOP - Stop/suspend a process
 systemstl	allows interaction with systemd process/daemon
 	start, stop, enable, disable : enable and disable interact at bootup!

@@ -13,31 +13,55 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Networks/Network-Theory/DNS-Defined.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "a4a134c73f7c1816",
+            "id": "85de5d30273d2d79",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/Crackmapexec/Crackmapexec-Cheatsheet.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "d83e26c3b7075618",
+            "id": "49450e77d19b41b7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exploitation/Windows/Active-Directory/Attacking-Kerberos.md",
+                "file": "Networks/Network-Protocols.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "15ff0a4c03d9d434",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/Shells/Socat-Cheatsheet.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "80c69dad7b6012d2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Post-Exploitation/Privilege-Escalation/Windows/PrivEsc-Important-Windows-Locations.md",
                 "mode": "source",
                 "source": false
               }
@@ -61,7 +85,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Windows/Active-Directory/Active-Directory-Kerberos-Authenication-Defined.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation Bypassing-Contrained-Powershell.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +121,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Windows hosts file",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -126,7 +150,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exploitation/Windows/Active-Directory/Attacking-Kerberos.md",
+                "file": "Networks/Network-Protocols.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,17 +168,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "d83e26c3b7075618",
+  "active": "49450e77d19b41b7",
   "lastOpenFiles": [
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation Bypassing-Contrained-Powershell.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
     "Post-Exploitation/Privilege-Escalation/Windows/PrivEsc-Important-Windows-Locations.md",
-    "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Enumeration-Cheatsheet.md",
-    "Windows/Windows-Networking.md",
-    "Tools/Useful-Software/Neo4j-And-Bloodhound-Guide.md",
-    "Virtualization/Lab-Making/VirtualBox-Networking.md",
-    "Virtualization/Lab-Making/VirtualBox-Windows-10-VM.md",
-    "Tools/Crackmapexec/Crackmapexec-Cheatsheet.md"
+    "Post-Exploitation/Privilege-Escalation/Windows/PowerSploit-Helpsheet.md",
+    "Tools/Shells/Socat-Cheatsheet.md",
+    "Linux/Linux-Commands/Linux-Networking-Commands.md",
+    "Linux/Linux-Commands/Linux-Processes-Commands.md",
+    "Recon/Active-Information-Gathering/DNS/DNS-Recon-Active.md",
+    "Recon/Active-Information-Gathering/DNS/Fierce-Cheatsheet.md"
   ]
 }

@@ -2,6 +2,7 @@
 
 Lightweight Directory Access Protocol, Lightweight Directory Access Protocol,Lightweight Directory Access Protocol...
 
+
 ## Nmap
 
 ```bash
@@ -49,3 +50,4 @@ A malicious LDAP server for JNDI injection attacks. [Github-veracode-research ro
 ## References
 [Curtis Houghton is awesome](https://github.com/curtishoughton/Penetration-Testing-Cheat-Sheet/blob/master/Enumeration/LDAP/LDAP.md)
 [Pentest CS for LDAP ivanversluis](https://github.com/ivanversluis/pentest-hacktricks/blob/master/pentesting/pentesting-ldap.md)
+[Penting LDAP Hacktricks]https://book.hacktricks.xyz/network-services-pentesting/pentesting-ldap

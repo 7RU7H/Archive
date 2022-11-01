@@ -158,6 +158,10 @@ See 13(5,7-9) for legacy SMB 139 is the equivilent service port to 445
 ## 465 - SMTPS
 //default port 
 
+## 464 Kpasswd5
+
+Kerberos Change/Set password (official) - Indicative of DC 
+
 ## 500 - ISAKMP
 [Internet Security Association and Key Management Protocol](https://en.wikipedia.org/wiki/Internet_Security_Association_and_Key_Management_Protocol) default UDP port 500
 Recon with `ike-scan`
@@ -246,6 +250,9 @@ default 8080
 ## 9000 - [Lots](https://www.speedguide.net/port.php?port=9000)
 `FPM/FastCGI` which uses port 9000 by default. [FastCGI PHP-FPM exploit](https://gist.github.com/phith0n/9615e2420f31048f7e30f3937356cf75)
 
+## 9389 - ADWS
+
+Active Directory Web Services (ADWS), in Windows Server 2008 R2 and later, is a new Windows service that provides a Web service interface to Active Directory domains, Active Directory Lightweight Directory Services (AD LDS) instances, and Active Directory Database Mounting Tool instances that are running on the same server as ADWS.
 
 ## 10000 - Webmin
 [Webmin](https://webmin.com/)
