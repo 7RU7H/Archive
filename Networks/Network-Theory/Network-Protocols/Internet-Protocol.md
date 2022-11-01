@@ -3,7 +3,6 @@
 IP addresses
 ```
 4 * octet concatenate_to 32bit int; foreach assign 1-255 # (2^8 = 256) 
-
 ```
 2^32 OR
 2^8^4 = 0-255.0-255.0-255.0-255 possible addresses ~4.3billion possible values

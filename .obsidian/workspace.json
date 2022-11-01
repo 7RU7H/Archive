@@ -4,28 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "d10e0c0f7d6a64aa",
+        "id": "5d1b9a420ce8692b",
         "type": "tabs",
         "children": [
           {
-            "id": "86ad4a334316af6e",
+            "id": "c406ba3badde09fc",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Post-Exploitation/Credentials-Harvesting/AD-Credential-Harvesting.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "519ab0f115a14603",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tools/Mimikatz/Mimikatz-Cheatsheet.md",
+                "file": "Networks/Network-Theory/Network-Protocols/Ipsec.md",
                 "mode": "source",
                 "source": false
               }
@@ -60,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "Ipsec",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -89,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Post-Exploitation/Credentials-Harvesting/AD-Credential-Harvesting.md",
+                "file": "Networks/Network-Theory/Network-Protocols/Ipsec.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,17 +95,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "86ad4a334316af6e",
+  "active": "ed8f63df71621be6",
   "lastOpenFiles": [
+    "Networks/Network-Theory/Network-Protocols/Network-Address-Translation.md",
+    "Networks/Network-Theory/Network-Protocols/Internet-Protocol.md",
+    "Networks/Network-Theory/Network-Protocols/Ipsec.md",
     "Tools/Mimikatz/Mimikatz-Cheatsheet.md",
+    "Coding-Scripting-Programming/Languages/Python/Useful_Python.md",
+    "Tools/Vim/Vim-Cheatsheet.md",
+    "Exploitation/Fixing-Public-Exploits.md",
+    "Exploitation/Using-Public-Exploits.md",
     "Post-Exploitation/Credentials-Harvesting/AD-Credential-Harvesting.md",
-    "Windows/Windows-Commands/Windows-Networking-Commands.md",
-    "Windows/Windows-Commands/WMI-Commands.md",
-    "Windows/Windows-Commands/Windows-CLI-cmd.md",
-    "Post-Exploitation/Persistence/Active-Directory-Persistence/AD-Persistence-Credentials.md",
-    "Web-Application-Hacking/File-Inclusion-And-Directory-Traversal/DT-FI-Windows-Files.md",
-    "Cryptography-And-Authentication/Password-Attacks/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
-    "Networks/Network-Protocols.md",
-    "Services/Webservers/JS/nttpd.md"
+    "Windows/Windows-Commands/Windows-Networking-Commands.md"
   ]
 }
