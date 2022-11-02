@@ -1,5 +1,5 @@
 
-When two remote site what to exchange information, one safe way is virtual connect with vpn encrypted tunnel. 
+When two remote site what to exchange information, one safe way is virtual connect with vpn encrypted tunnel. Troubleshooot IPsec with [https://docs.netgate.com/pfsense/en/latest/troubleshooting/ipsec.html](https://docs.netgate.com/pfsense/en/latest/troubleshooting/ipsec.html), suggested by [Ippsec](https://www.youtube.com/watch?v=1ae64CdwLHE)
 
 Prior to connection - Establishing of cryptographic settings - Internet Key Exchange (IKE) occurs
 - Sometimes called IKE Profiles or Policy
@@ -44,4 +44,7 @@ If there is NAT boudary between the two sites we must add a NAT traveral - add U
 
 ## References
 
+[Wikipedia](https://en.wikipedia.org/wiki/IPsec)
 [What is IPSec?](https://www.youtube.com/watch?v=tuDVWQOG0C0)
+[Troubleshoot Ipsec https://docs.netgate.com/pfsense/en/latest/troubleshooting/ipsec.html](https://docs.netgate.com/pfsense/en/latest/troubleshooting/ipsec.html)
+[Ippsec Conceal Video discusses Ipsec](https://www.youtube.com/watch?v=1ae64CdwLHE)

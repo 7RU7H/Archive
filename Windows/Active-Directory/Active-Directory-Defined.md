@@ -81,8 +81,7 @@ Policies are like groups, but they are sets of rules of operation that apply to 
 
 #### Group Policy Objects
 
-GPOs are used to managing many settings, Local GPOs for local machine and AD GPOs. They are configured through Active Directory's `Group Policy Management`. GPOs are series of XML files that contain settings and configurations for a multitude of applications and options in Windows. When created a GPO is stored in the SMB path `\\domain controller host name>\sysvol`. All members of the Authenticated Users, Domain Users, and Domain Computers group have read permissions to SYSVOL.
-Any account and Domain-joined computers  can read `SYSVOL`, it is located on the DC and is a shared folder storing the Group Policy Objects (GPOs).
+GPOs are used to managing many settings, Local GPOs for local machine and AD GPOs. They are configured through Active Directory's `Group Policy Management`. GPOs are series of XML files that contain settings and configurations for a multitude of applications and options in Windows. When created a GPO is stored in the SMB path `\\domain controller host name>\sysvol`. All members of the Authenticated Users, Domain Users, and Domain Computers group have read permissions to SYSVOL. Any account and Domain-joined computers can read `SYSVOL`, it is located on the DC and is a shared folder storing the Group Policy Objects (GPOs).
 
 GPOs are processed in the following order:
 1. Local

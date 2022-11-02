@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Networks/Network-Theory/Network-Protocols/Ipsec.md",
+                "file": "Post-Exploitation/Credentials-Harvesting/AD-Credential-Harvesting.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Ipsec",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -57,7 +57,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -77,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Networks/Network-Theory/Network-Protocols/Ipsec.md",
+                "file": "Post-Exploitation/Credentials-Harvesting/AD-Credential-Harvesting.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,17 +96,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "ed8f63df71621be6",
+  "active": "c406ba3badde09fc",
   "lastOpenFiles": [
+    "Windows/Active-Directory/Active-Directory-Defined.md",
+    "Windows/Active-Directory/Active-Directory-Administration.md",
+    "Post-Exploitation/Credentials-Harvesting/AD-Credential-Harvesting.md",
+    "DC-Sync-Attack.md",
+    "Tools/Impacket/Impacket-Cheatsheet.md",
+    "Networks/Network-Protocols.md",
+    "Networks/Network-Theory/Network-Protocols/Ipsec.md",
     "Networks/Network-Theory/Network-Protocols/Network-Address-Translation.md",
     "Networks/Network-Theory/Network-Protocols/Internet-Protocol.md",
-    "Networks/Network-Theory/Network-Protocols/Ipsec.md",
-    "Tools/Mimikatz/Mimikatz-Cheatsheet.md",
-    "Coding-Scripting-Programming/Languages/Python/Useful_Python.md",
-    "Tools/Vim/Vim-Cheatsheet.md",
-    "Exploitation/Fixing-Public-Exploits.md",
-    "Exploitation/Using-Public-Exploits.md",
-    "Post-Exploitation/Credentials-Harvesting/AD-Credential-Harvesting.md",
-    "Windows/Windows-Commands/Windows-Networking-Commands.md"
+    "Tools/Mimikatz/Mimikatz-Cheatsheet.md"
   ]
 }

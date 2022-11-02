@@ -31,6 +31,8 @@ Segregating devices according to their use
 
 ## Configuring Group Policy
 
+SYSVOL is an essential component of Active Directory and creates a shared directory on an NTFS volume that all authenticated domain users can access with reading permission.
+
 ```powershell
 gpupdate /force
 ```

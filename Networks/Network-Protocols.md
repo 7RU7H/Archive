@@ -130,6 +130,7 @@ umount $ip:/local/file/path
 Identification/Authorization service. When a client program on your end contacts a remote server for services such as POP, IMAP, SMTP, IRC, FTP, etc. that remote server sends back a query to the IDENT port 113 asking for identification from your system
 
 ## 13(5,7-9), 445 -  NBT - SMB
+
 Server Message Block protocol uses a client-server model. Client uses `smbclient` see [[SMB-Recon-Cheatsheet]]. SMB originally ran on top of NetBIOS using port 139. NetBIOS is an older transport layer that allows Windows computer to communicate on the same network. Later versions of SMB(after Windows 2000) use port 445 on top of a TCP stack, TCP allows for internet communication. NetBIOS over TCP/IP (NetBT) is Windows name resolution.
 
 Port | Purpose
@@ -141,7 +142,12 @@ Port | Purpose
 445(TCP) | microsoft-ds
 
 ## 143 - IMAP
-//generally 143
+
+[Banner Grab](https://book.hacktricks.xyz/network-services-pentesting/pentesting-imap)
+```bash
+nc -nv <IP> 143
+openssl s_client -connect <IP>:993 -quiet
+```
 
 ## 389 - LDAP
 Lightweight Directory Access Protocol
