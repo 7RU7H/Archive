@@ -10,7 +10,7 @@ Run OR RunOnce # type
 Root keys:
     HKEY_CURRENT_USER
 		Root of all configuration information for the current user - HKCU
-		\Environment # user environment variables
+		Environment # user environment variables
     HKEY_HKEY_USERS
 		Contains all the actively loaded user profiles on the computer - HKU
 			Registry hive 	Supporting files

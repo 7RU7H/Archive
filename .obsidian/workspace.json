@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Post-Exploitation/Credentials-Harvesting/AD-Credential-Harvesting.md",
+                "file": "Cryptography-And-Authentication/Password-Attacks/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "5397c2e7b4620946",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/C2/Metasploit/Meterpreter-Commands.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -57,8 +70,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -78,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Post-Exploitation/Credentials-Harvesting/AD-Credential-Harvesting.md",
+                "file": "Tools/C2/Metasploit/Meterpreter-Commands.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -96,17 +108,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "c406ba3badde09fc",
+  "active": "5397c2e7b4620946",
   "lastOpenFiles": [
-    "Windows/Active-Directory/Active-Directory-Defined.md",
-    "Windows/Active-Directory/Active-Directory-Administration.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation Bypassing-Contrained-Powershell.md",
     "Post-Exploitation/Credentials-Harvesting/AD-Credential-Harvesting.md",
-    "DC-Sync-Attack.md",
-    "Tools/Impacket/Impacket-Cheatsheet.md",
-    "Networks/Network-Protocols.md",
-    "Networks/Network-Theory/Network-Protocols/Ipsec.md",
-    "Networks/Network-Theory/Network-Protocols/Network-Address-Translation.md",
-    "Networks/Network-Theory/Network-Protocols/Internet-Protocol.md",
-    "Tools/Mimikatz/Mimikatz-Cheatsheet.md"
+    "Windows/Windows-Concepts/Windows-Permissions.md",
+    "Windows/Windows-Commands/Icalcs-Command.md",
+    "Windows/Windows-Concepts/Windows-Important-Directories.md",
+    "Windows/Windows-Concepts/Windows-Kernel.md",
+    "Windows/Windows-Concepts/Windows-API.md",
+    "Windows/Windows-Concepts/Windows-Discretionary-Access-Control-List.md",
+    "Windows/Windows-Concepts/Windows-File-System.md"
   ]
 }

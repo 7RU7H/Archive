@@ -256,7 +256,7 @@ Some of these mitigations are from 2015, no Principle Least Privilege is mention
 		Powershell remoting (WinRm)
 	Limit & Track Powershell Remote
 	Audit Meter Powershell usage
-	[[Powershell-versions]] some are very unsafe! 
+	[[Powershell-Versions]] some are very unsafe! 
 - Powershell v5 Security Enhancements
 	- Script block logging 
 		- Logs final command executed by powershell

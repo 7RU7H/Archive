@@ -1,5 +1,12 @@
 # Meterpreter 
 
+## Modules to use with Meterpreter
+
+
+```
+exploit/windows/local/service_permissions
+```
+
 ## Commands
 
 Core commands

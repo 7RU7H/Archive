@@ -35,8 +35,8 @@ Full Control: Allows the user to *read, write, change, and delete files and subf
 
 ## Synchronization
 
-[quote:](https://docs.microsoft.com/en-us/windows/win32/secauthz/standard-access-rights?redirectedfrom=MSDN)
-> The right to use the object for synchronization. This enables a thread to wait until the object is in the signaled state. Some object types do not support this access right.
+[Standard Access Rights Documentation Quote:](https://docs.microsoft.com/en-us/windows/win32/secauthz/standard-access-rights?redirectedfrom=MSDN)
+> *"The right to use the object for synchronization. This enables a thread to wait until the object is in the signaled state. Some object types do not support this access right."*
 
 WIN32 API requires synchronization rights to allow directories to interact with there child items, or files their contents.
 
