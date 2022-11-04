@@ -172,6 +172,55 @@ crackmapexec smb $ip -u 'Administrator' -p 'PASS' -M mimikatz crackmapexec smb 1
 [*] web_delivery              Kicks off a Metasploit Payload using the exploit/multi/script/web_delivery module
 ```
  
+SMB Modules
+```python
+# crackmapexec smb -L
+[*] Get-ComputerDetails       Enumerates sysinfo
+[*] bh_owned                  Set pwned computer as owned in Bloodhound
+[*] bloodhound                Executes the BloodHound recon script on the target and retreives the results to the attackers' machine
+[*] empire_exec               Uses Empire's RESTful API to generate a launcher for the specified listener and executes it
+[*] enum_avproducts           Gathers information on all endpoint protection solutions installed on the the remote host(s) via WMI
+[*] enum_chrome               Decrypts saved Chrome passwords using Get-ChromeDump
+[*] enum_dns                  Uses WMI to dump DNS from an AD DNS Server
+[*] get_keystrokes            Logs keys pressed, time and the active window
+[*] get_netdomaincontroller   Enumerates all domain controllers
+[*] get_netrdpsession         Enumerates all active RDP sessions
+[*] get_timedscreenshot       Takes screenshots at a regular interval
+[*] gpp_autologin             Searches the domain controller for registry.xml to find autologon information and returns the username and password.
+[*] gpp_password              Retrieves the plaintext password and other information for accounts pushed through Group Policy Preferences.
+[*] invoke_sessiongopher      Digs up saved session information for PuTTY, WinSCP, FileZilla, SuperPuTTY, and RDP using SessionGopher
+[*] invoke_vnc                Injects a VNC client in memory
+[*] lsassy                    Dump lsass and parse the result remotely with lsassy
+[*] met_inject                Downloads the Meterpreter stager and injects it into memory
+[*] mimikatz                  Dumps all logon credentials from memory
+[*] mimikatz_enum_chrome      Decrypts saved Chrome passwords using Mimikatz
+[*] mimikatz_enum_vault_creds Decrypts saved credentials in Windows Vault/Credential Manager
+[*] mimikittenz               Executes Mimikittenz
+[*] multirdp                  Patches terminal services in memory to allow multiple RDP users
+[*] netripper                 Capture's credentials by using API hooking
+[*] pe_inject                 Downloads the specified DLL/EXE and injects it into memory
+[*] rdp                       Enables/Disables RDP
+[*] rid_hijack                Executes the RID hijacking persistence hook.
+[*] runasppl                  Check if the registry value RunAsPPL is set or not
+[*] scuffy                    Creates and dumps an arbitrary .scf file with the icon property containing a UNC path to the declared SMB server against all writeable shares
+[*] shellcode_inject          Downloads the specified raw shellcode and injects it into memory
+[*] slinky                    Creates windows shortcuts with the icon attribute containing a UNC path to the specified SMB server in all shares with write permissions
+[*] spider_plus               List files on the target server (excluding `DIR` directories and `EXT` extensions) and save them to the `OUTPUT` directory if they are smaller then `SIZE`
+[*] spooler                   Detect if print spooler is enabled or not
+[*] test_connection           Pings a host
+[*] tokens                    Enumerates available tokens
+[*] uac                       Checks UAC status
+[*] wdigest                   Creates/Deletes the 'UseLogonCredential' registry key enabling WDigest cred dumping on Windows >= 8.1
+[*] web_delivery              Kicks off a Metasploit Payload using the exploit/multi/script/web_delivery module
+[*] webdav                    Checks whether the WebClient service is running on the target
+[*] wireless                  Get key of all wireless interfaces
+```
+
+SSH Modules
+```python
+# cme ssh -L
+[*] mimipenguin               Dumps cleartext credentials in memory
+```
 
 ### Getting shells
 

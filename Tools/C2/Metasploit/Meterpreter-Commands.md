@@ -3,8 +3,12 @@
 ## Modules to use with Meterpreter
 
 
-```
+```ruby
+# exploit suggester
+search suggest
 exploit/windows/local/service_permissions
+post/windows/gather/credentials/gpp
+post/windows/gather/enum_unattend
 ```
 
 ## Commands

@@ -13,26 +13,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cryptography-And-Authentication/Password-Attacks/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
+                "file": "Recon/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "5397c2e7b4620946",
+            "id": "0f5dcced79253e27",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/C2/Metasploit/Meterpreter-Commands.md",
+                "file": "Reverse-Engineering/Malware-Analysis/Malware-Analysis.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "febea2d84f33a011",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/Volatility.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -61,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "Wordlists",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -90,7 +102,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/C2/Metasploit/Meterpreter-Commands.md",
+                "file": "Tools/Volatility.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -108,17 +120,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "5397c2e7b4620946",
+  "active": "febea2d84f33a011",
   "lastOpenFiles": [
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
+    "Reverse-Engineering/Malware-Analysis/Malware-Analysis.md",
+    "Tools/Impacket/Impacket-Cheatsheet.md",
+    "Tools/Packet-Analysis/Wireshark/Wireshark.md",
+    "Tools/Packet-Analysis/Wireshark/Wireshark-Useful-Packet-Filters.md",
+    "Tools/Volatility.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/PrivEsc-Important-Windows-Locations.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation Bypassing-Contrained-Powershell.md",
-    "Post-Exploitation/Credentials-Harvesting/AD-Credential-Harvesting.md",
-    "Windows/Windows-Concepts/Windows-Permissions.md",
-    "Windows/Windows-Commands/Icalcs-Command.md",
-    "Windows/Windows-Concepts/Windows-Important-Directories.md",
-    "Windows/Windows-Concepts/Windows-Kernel.md",
-    "Windows/Windows-Concepts/Windows-API.md",
-    "Windows/Windows-Concepts/Windows-Discretionary-Access-Control-List.md",
-    "Windows/Windows-Concepts/Windows-File-System.md"
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
+    "Tools/C2/Metasploit/Meterpreter-Commands.md"
   ]
 }

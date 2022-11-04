@@ -58,7 +58,7 @@ Packet details - Great place to look into [[OSI-Model]] or [[Networks/Network-Th
 ![Packetdetails](wireshark-packet-detail.png)
 
 Packet bytes are displayed in hex on the left and ascii on the right
-![Packetbytes]wireshark-packetbytes.png)
+![Packetbytes](wireshark-packetbytes.png)
 
 Start button to start capturing:
 ![StartButton](wireshark-start.png)
@@ -66,35 +66,52 @@ Start button to start capturing:
 Red square to stop and green fin button to restart the capture.
 ![Stop](wireshark-stop.png)
 
-## Great GUI tricks
+## Great GUI trick and Packet Navigation
 
-#### Following Packets
-The most import possible trick is `Right Click <Packet Line> -> Follow -> <Stream Type>`, which allow you to follow the traffic from one client and server connection of `TCP/UDP/SSL/HTTP stream` in a seperate GUI window, rather the line by line manually packet by packet.
+TL;DR - Follow packets and learn filter logic
+
 #### Colouring 
 Custom colouring can be can be set by `View -> Coloring Rules...`
+
 #### Merge PCAP Files
 To combine multiple .pcap file into one single file `File -> Merge`.
+
 #### View File Details
 `Statistics -> Capture File Properties`
-#### Exporting Artifacts
-####  Finding Packets
-`Ctrl+G` or `Go -> Go to Packet...`
-`Ctrl+F`
+
+#### Finding Packets
+- Search packets `Go (Dropdown) -> "Go to packet..."` or `Ctrl + G`
+- Finding packets `Edit (Dropdown) -> Find Packets` or `Ctrl + F`
+
 #### Marking Packets
-`Ctrl+M` or `Edit/Right-Click Mark/Unmakr Packet(s)`
+Mark packets `Edit (Dropdown) -> Mark/Unmark packets` or `Ctrl + M`, Next marked packet `Ctrl + Shift + N` and Previous marked packet  `Ctrl + Shift + B`.
+
 #### Packet Comments
-`Ctrl+Alt+c` or `Edit/Right-Click -> Packet Comment...`
+Add comments to packets `Edit (Dropdown) -> Packet Comment...` or `Ctrl + Alt + C`
+
 #### Export Packets,
 Siphon off packet data to a file
 `File -> Export Specified Packets`
-#### Export Object(Files)
-If want to transform packet data in to files, use export!
-`File -> Export Object`
+
+#### Export Object (Files) - Arctifacts
+If want to transform packet data in to files, use export! Export objects `File -> Export Objects -> <protocol stream>`  can extract files transfer through the wire.
+
 #### Time Display Format
-`View -> Time Display Format -> Chose a format`
+Change displayed time format `View (Dropdown) -> Time Display Format -> <formating option>`
+
 #### Expert Info
-Beware of false positives/negatives
-`Analyze Information -> Expert Information `
+Beware of false positives/negatives `Analyze Information -> Expert Information `
+
+#### Packet Filtering
+See [[Wireshark-Useful-Packet-Filters]]
+- Apply as filter - applies filter after choice: `Right-Click <highlighted packets> Or Analyze (Dropdown) -> Apply as filter`
+- Conversation filter `Right-Click <highlighted packets> Or Analyze (Dropdown) -> Conversational filter` 
+- Colourise Conversation `View (Dropdown) -> Colourise Conversaation -> (Reset - if required)`
+- Prepare filter - applies filter immediately: `Right-Click -> Prepare as Filter -> <logical selection>`
+- Apply as Column `Right-click -> Analyse -> Apply as Column` - helpful when analysing specific field
+- The most import possible trick is `Right Click <Packet Line> -> Follow -> <Stream Type>`, which allow you to follow the traffic from one client and server connection of `TCP/UDP/SSL/HTTP stream` in a seperate GUI window, rather the line by line manually packet by packet.``
+
+#### Default Coloring
 
 Severity | Colour | Info
 --- | --- | ---
@@ -116,13 +133,14 @@ Wireshark Cheatsheet for [[Wireshark-Useful-Packet-Filters]].
 
 ## Packet Dissection
 [RFTM](https://github.com/boundary/wireshark/blob/master/doc/README.dissector)
-**The Frame (Layer 1):** Frame/packet details specific to the Physical layer of the OSI model.
-**Source MAC (Layer 2):** Displays source and destination MAC Addresses; from the Data Link layer of the OSI model.
-**Source IP (Layer 3):** Displays source and destination IPv4 Addresses; from the Network layer of the OSI model.
-**Protocol (Layer 4):** Displays details of the protocol used (UDP/TCP) and source and destination ports; from the Transport layer of the OSI model.
-**Protocol Errors:** Continuation of the 4th layer, shows specific segments from TCP that needed to be reassembled.
-**Application Protocol (Layer 5):** This will show details specific to the protocol used, such as HTTP, FTP,  and SMB. From the Application layer of the OSI model.
-**Application Data:** This extension of the 5th layer can show the application-specific data.
+- **The Frame (Layer 1):** Frame/packet details specific to the Physical layer of the OSI model.
+- **Source MAC (Layer 2):** Displays source and destination MAC Addresses; from the Data Link layer of the OSI model.
+- **Source IP (Layer 3):** Displays source and destination IPv4 Addresses; from the Network layer of the OSI model.
+- **Protocol (Layer 4):** Displays details of the protocol used (UDP/TCP) and source and destination ports; from the Transport layer of the OSI model.
+- **Protocol Errors:** Continuation of the 4th layer, shows specific segments from TCP that needed to be reassembled.
+- **Application Protocol (Layer 5):** This will show details specific to the protocol used, such as HTTP, FTP,  and SMB. From the Application layer of the OSI model.
+- **Application Data:** This extension of the 5th layer can show the application-specific data.
+
 
 
 
@@ -134,4 +152,5 @@ Wireshark Cheatsheet for [[Wireshark-Useful-Packet-Filters]].
 [Winpcap](https://www.winpcap.org/)
 [Berkley Packet Filter](https://biot.com/capstats/bpf.html)
 [David Bombal Youtube](https://www.youtube.com/watch?v=GMNOT1aZmD8)
-[THM Wireshark Room](https://tryhackme.com/room/wiresharkthebasics)  
+[THM Wireshark Room Wireshark Basics](https://tryhackme.com/room/wiresharkthebasics)  
+[The Other THM Wireshark Room - Wireshark 101](https://tryhackme.com/room/wireshark)
