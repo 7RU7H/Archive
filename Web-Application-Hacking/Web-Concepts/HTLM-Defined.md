@@ -16,6 +16,7 @@ HYPER TEXT MARKUP LANGUAGE(HTML)
                 <input type="hidden"> inputs can be typecast </input>
 				<input> "Hidden", set by devs, exposable with devtools </input>
 				<img>: Defines an image.
+				<br> /* Line Break */
 				<p> Defines the start and end of a paragraph </p>
 				/* This a comment this symbol: => is a line break */			                    
 ```

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/Curl-Cheatsheet.md",
+                "file": "Web-Application-Hacking/Upload-Vulnerabilities.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Web-Application-Hacking/DAVtest.md",
+                "file": "Exploitation/CVEs/Shellshock.md",
                 "mode": "source",
                 "source": false
               }
@@ -37,7 +37,55 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Web-Application-Hacking/Upload-Vulnerabilities.md",
+                "file": "Post-Exploitation/Windows-Living-Off-The-Land.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c429558f37b72ec8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Networks/Network-Protocols.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e5cca08fa7f36148",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Web-Application-Hacking/Subdomains/Subdomains.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ff3b3dccdfefb3fd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/Crackmapexec/Crackmapexec-Cheatsheet.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d3b7d1c229ede2b8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/Masscan/Masscan-Cheatsheet.md",
                 "mode": "source",
                 "source": false
               }
@@ -49,14 +97,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Coding-Scripting-Programming/Languages/PHP/Useful_PHP.md",
+                "file": "Web-Application-Hacking/DAVtest.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +133,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "wfuzz",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -98,7 +146,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 308.5
+    "width": 313.5
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -114,7 +162,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Web-Application-Hacking/Upload-Vulnerabilities.md",
+                "file": "Exploitation/CVEs/Shellshock.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,17 +180,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "51336ab1e2d6ed17",
+  "active": "dfa81bec554e7176",
   "lastOpenFiles": [
-    "Tools/Curl-Cheatsheet.md",
-    "Web-Application-Hacking/Upload-Vulnerabilities.md",
-    "Coding-Scripting-Programming/Languages/PHP/Useful_PHP.md",
-    "Web-Application-Hacking/Web-Concepts/HTTP-Defined.md",
-    "Web-Application-Hacking/File-Inclusion-And-Directory-Traversal/File-Inclusion-And-Directory-Traversal.md",
-    "Exploitation/Bind-And-Reverse-Shells-Defined.md",
-    "Exploitation/Fixing-Public-Exploits.md",
-    "Exploitation/Creating-Malicious-WAV-files.md",
-    "Exploitation/Using-Public-Exploits.md",
-    "Exploitation/Troubleshooting-Exploits-Payloads-Vulnerable-Applications.md"
+    "Post-Exploitation/Privilege-Escalation/Linux/PrivEsc-Important-Linux-Locations.md",
+    "Web-Application-Hacking/Subdomains/Subdomains.md",
+    "Web-Application-Hacking/API/API-Fuzzing.md",
+    "Web-Application-Hacking/Content-Discovery/FFUF-Cheatsheet.md",
+    "Networks/Network-Protocols.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/PrivEsc-Important-Windows-Locations.md",
+    "Tools/Masscan/Masscan-Cheatsheet.md",
+    "Tools/Crackmapexec/Crackmapexec-Cheatsheet.md",
+    "Windows/Windows-Commands/Windows-Commands.md",
+    "Web-Application-Hacking/Upload-Vulnerabilities.md"
   ]
 }

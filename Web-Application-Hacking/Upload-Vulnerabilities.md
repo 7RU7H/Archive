@@ -29,6 +29,7 @@ curl --upload-file <file> http://<IP>/test/<filename>
 [Portswigger](https://portswigger.net/web-security/file-upload)*"The `Content-Type` response header may provide clues as to what kind of file the server thinks it has served. If this header hasn't been explicitly set by the application code, it normally contains the result of the file extension/MIME type mapping."*
 
 ## Methods 
+
 Beware the some methods are damaging to data, a shell is potential damaging. PoC should be least harmful to the server.
 
 Upload - Beware of Filtering and Validation checking
@@ -75,6 +76,7 @@ If file permission on the server are lacks, location of file path found and info
 	2. compression
 
 ## Upload functionality specifics
+
 - If .aspx then use a .aspx reverseshell
 
 

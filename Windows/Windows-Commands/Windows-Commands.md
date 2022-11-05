@@ -26,6 +26,8 @@ certutil -hashfile \FULLPATH\ [EncryptionMethod] # Checksum a file
 
 | clip # copy to clipboard
 
+chdir # Change dir, but without parametres will print current working directory
+
 cls # Clear screen
 
 
@@ -54,6 +56,7 @@ icacls		Modify File or Folder permissions
 	/T	Execute recursively on all subfolders
 	/C	Force continue despite errros
 	/L	Execute on the Symbolic Link itself`
+cacls
 
 dir 		Displays a list of files and subdirectories in a directory.
 	/A		hidden
