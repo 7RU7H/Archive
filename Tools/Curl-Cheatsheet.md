@@ -61,6 +61,7 @@ bash <(curl -s http://url/myscript.sh)
 curl -I url # display header
 # Fetch the headers silently
 curl -I -s https://domain.com   
+curl "http://$IP" -X OPTIONS -I # Get all the options
 
 # Basic authentification
 

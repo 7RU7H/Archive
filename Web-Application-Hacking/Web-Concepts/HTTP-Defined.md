@@ -17,6 +17,7 @@ DELETE | Removes the requested resource.
 OPTIONS | Returns the communication options allowed by the server, including the allowed methods that the server accepts.
 HEAD | Similar to GET, but only retrieves the HTTP headers of the page without the response body.
 TRACE | allows the client to see what is being received at the other end of the request chain and use that data for testing or diagnostic information
+EXEC | Execute
 
 ..sometimes servers have CUSTOM METHODS...
 

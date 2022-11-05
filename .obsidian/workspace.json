@@ -13,13 +13,50 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Hacker-Distros/Kali/Kali-Indepth-Customisation.md",
+                "file": "Tools/Curl-Cheatsheet.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "dfa81bec554e7176",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Web-Application-Hacking/DAVtest.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "51336ab1e2d6ed17",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Web-Application-Hacking/Upload-Vulnerabilities.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a49796d439a10ae6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Coding-Scripting-Programming/Languages/PHP/Useful_PHP.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -48,7 +85,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "\"control file\"",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -57,8 +94,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -78,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Hacker-Distros/Kali/Kali-Indepth-Customisation.md",
+                "file": "Web-Application-Hacking/Upload-Vulnerabilities.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -96,17 +132,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "c406ba3badde09fc",
+  "active": "51336ab1e2d6ed17",
   "lastOpenFiles": [
-    "Linux/Distributions/Debian/Debian-Package-Management.md",
-    "Linux/Distributions/Linux-System-Administration/APT-And-Other-Non-Host-Distributions.md",
-    "Recon/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
-    "Reverse-Engineering/Malware-Analysis/Malware-Analysis.md",
-    "Exploitation/CVEs/Shellshock.md",
-    "Post-Exploitation/Persistence/Active-Directory-Persistence/AD-Persistence-Certificates.md",
-    "Post-Exploitation/Persistence/Active-Directory-Persistence/AD-Persistence-Credentials.md",
-    "Post-Exploitation/Persistence/Active-Directory-Persistence/Active-Directory-Persistence.md",
-    "Post-Exploitation/Persistence/Active-Directory-Persistence/AD-Persistence-Tickets.md",
-    "Tools/Useful-Software/Rubeus-Cheatsheet.md"
+    "Tools/Curl-Cheatsheet.md",
+    "Web-Application-Hacking/Upload-Vulnerabilities.md",
+    "Coding-Scripting-Programming/Languages/PHP/Useful_PHP.md",
+    "Web-Application-Hacking/Web-Concepts/HTTP-Defined.md",
+    "Web-Application-Hacking/File-Inclusion-And-Directory-Traversal/File-Inclusion-And-Directory-Traversal.md",
+    "Exploitation/Bind-And-Reverse-Shells-Defined.md",
+    "Exploitation/Fixing-Public-Exploits.md",
+    "Exploitation/Creating-Malicious-WAV-files.md",
+    "Exploitation/Using-Public-Exploits.md",
+    "Exploitation/Troubleshooting-Exploits-Payloads-Vulnerable-Applications.md"
   ]
 }

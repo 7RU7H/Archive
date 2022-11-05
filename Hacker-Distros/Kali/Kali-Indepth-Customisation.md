@@ -1,4 +1,6 @@
-Firstly the non indepth apt usage requires [[Debian-Package-Management]] article
+Note: Potential restructure.
+
+Firstly the non in-depth apt usage requires [[Debian-Package-Management]] article
 
 The `.deb` is the combination of a file archive and of meta-information is directly visible in the structure of a `.deb` file, which is simply an `ar` archive; the `.deb` three files: the debian binary (contains a single version number describing the format of the archive) , `control` (archive contains meta-information) and `data` (an archive with varying compression format contain actual files to be installed) files with the latter two commonly compressed.
 
