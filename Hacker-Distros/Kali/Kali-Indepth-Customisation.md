@@ -26,7 +26,8 @@ Generally you should always install the recommended packages unless you know exa
 		- The `Enhances` field describes a `Suggests`, located in the suggested package indicating to it is possible to add a suggestion without having to modify the package that is concerned.
 - The `Conflicts` field indicates when a package cannot be installed simultaneously with another. 
 - The `Breaks` field is similiar to `Conflicts` signals that when package will break another package. 
-
+- The `Provides` fields provides *virtual package* a substitution package without having to use the same package name.
+	 - A "virtual package" - associates a generic service with it (the package provides the service) and second indicates that a package completely replaces another, therefore satisy the dependencies that other would satisfy.
 `apt` compares versioning logically with `&` and `|`  with the header being a list of conditions. Version comparison operators: 
 -   `<<` - less than.
 -   `<=` - less than or equal to.
