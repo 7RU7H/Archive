@@ -81,6 +81,7 @@ Decimal  | Binary |	Hexadecimal
 ```
 iconv
 ```
+
 ## Encoding
 ``` 
 base64 (-d for decode)

@@ -8,43 +8,55 @@
         "type": "tabs",
         "children": [
           {
-            "id": "c406ba3badde09fc",
+            "id": "a49796d439a10ae6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Web-Application-Hacking/Upload-Vulnerabilities.md",
+                "file": "Exploitation/Windows/Active-Directory/AD-User-Exploitation.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "dfa81bec554e7176",
+            "id": "f71ce4f3b067382b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exploitation/CVEs/Shellshock.md",
+                "file": "Cryptography-And-Authentication/Password-Attacks/Bruteforce-Login-Tools/Brutespray-Cheatsheet.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "51336ab1e2d6ed17",
+            "id": "b64c0064d6441573",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Post-Exploitation/Windows-Living-Off-The-Land.md",
+                "file": "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Windows-File-Transfers.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "c429558f37b72ec8",
+            "id": "97e5e2b45c060916",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cryptography-And-Authentication/Password-Attacks/Wordlist-Tools/Cewl-Cheatsheet.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c0ba6643eb96a55e",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -54,57 +66,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "e5cca08fa7f36148",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Web-Application-Hacking/Subdomains/Subdomains.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ff3b3dccdfefb3fd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tools/Crackmapexec/Crackmapexec-Cheatsheet.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d3b7d1c229ede2b8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tools/Masscan/Masscan-Cheatsheet.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a49796d439a10ae6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Web-Application-Hacking/DAVtest.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -162,7 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exploitation/CVEs/Shellshock.md",
+                "file": "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Windows-File-Transfers.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -180,17 +144,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "dfa81bec554e7176",
+  "active": "b64c0064d6441573",
   "lastOpenFiles": [
-    "Post-Exploitation/Privilege-Escalation/Linux/PrivEsc-Important-Linux-Locations.md",
-    "Web-Application-Hacking/Subdomains/Subdomains.md",
-    "Web-Application-Hacking/API/API-Fuzzing.md",
-    "Web-Application-Hacking/Content-Discovery/FFUF-Cheatsheet.md",
-    "Networks/Network-Protocols.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/PrivEsc-Important-Windows-Locations.md",
-    "Tools/Masscan/Masscan-Cheatsheet.md",
-    "Tools/Crackmapexec/Crackmapexec-Cheatsheet.md",
-    "Windows/Windows-Commands/Windows-Commands.md",
-    "Web-Application-Hacking/Upload-Vulnerabilities.md"
+    "Exploitation/Reverse-Shells-Listing.md",
+    "Exploitation/Using-Public-Exploits.md",
+    "Exploitation/Shells.md",
+    "Exploitation/Troubleshooting-Exploits-Payloads-Vulnerable-Applications.md",
+    "Exploitation/Shell-Spawning.md",
+    "Tools/C2/Metasploit/MSFvenom-Payloads.md",
+    "Tools/C2/Metasploit/Pivoting-and-Proxying-with-Metasploit.md",
+    "Tools/C2/Metasploit/Meterpreter-Commands.md",
+    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Windows-File-Transfers.md",
+    "Tools/Nmap/Nmap-Cheatsheet.md"
   ]
 }
