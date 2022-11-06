@@ -42,6 +42,48 @@ If there is NAT boudary between the two sites we must add a NAT traveral - add U
 - UDP port 45500
 `[IP Header][UDP Header][ESP HEADER][IP Header][TCP|UDP Header][Payload][ESP Trailer][ESP AUTH]`
 
+## OpenVPN
+
+## Strongswan
+
+[Strongswan](https://en.wikipedia.org/wiki/StrongSwan) is apparently really complex and requires considerations about the configuration that must be exact, unlike OpenVPN you do not need to transfer configuration file. Refer to Troubleshooting IPsec with [https://docs.netgate.com/pfsense/en/latest/troubleshooting/ipsec.html]. Ipsec manual and Ipsec.secrets, the Strongswan documentation is pretty rough and dense.
+
+```bash
+#  install strongswan
+sudo apt install strongswan
+
+# Create a transport vpn because a tunnel mode would encrypt traffic were cant exchange or debug at the other end.
+# Ipsec.secrets
+sudo vim /etc/ipsec.secrets
+$ip %any : PSK "$Key" 
+
+# This is not a default configuration, more anm example!
+# You may need to tunnel, not transport requiring encryption configurations
+# You may not need fragmentation
+echo "
+conn target
+        type=transport
+        keyexchange=ikev1
+        left=$IP
+        leftprotoport=tcp
+        right=$target_ip
+        rightprotoport=tcp
+        authby=psk
+        esp=3des-sha1
+        fragmentation=yes 
+        ike=3des-sha1-modp1024
+        ikelifetime=8h
+        auto=start
+" | sudo tee -a /etc/ipsec.conf
+
+sudo ipsec start --nofork
+# more issues change the maximum transmission unit 
+ifconfig tun0 mtu 1000 
+```
+
+Some issuse that you will face I will state here as demonstrative of the configuration difficulties post setup. [Ippsec Conceal Video discusses Ipsec](https://www.youtube.com/watch?v=1ae64CdwLHE), he also discussed using this picture to describe how with each cyclinder below is an additional amount of bytes per protocol. **IGNORE THE MESSAGE RECTANGLE**, assume the inner most Router is the message and that the maximum transmission size is 1500; the yellow being Ipsec adds another 50-5 bytes. With the referenced video, because you are using the OpenVPN to connect to HTB the blue cylinder is 60 overhead. So transport VPN inside a tunnel VPN. 
+![](Onion_diagram.png)
+
 ## References
 
 [Wikipedia](https://en.wikipedia.org/wiki/IPsec)

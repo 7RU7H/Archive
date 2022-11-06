@@ -1,6 +1,7 @@
 # Nmap Cheatsheet
 Check [[Nmap-AllTheScripts]] for NSE scripts
 
+**Nmap only supports ethernet interfaces (including most 802.11 wireless cards and many VPN clients) for raw packet scans**. Unless you use the -sT -Pn options, RAS connections (such as PPP dialups) and certain VPN clients are not supported.
 
 ## Utility
 ```bash

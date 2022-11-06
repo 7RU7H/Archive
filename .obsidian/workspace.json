@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exploitation/Windows/Active-Directory/AD-User-Exploitation.md",
+                "file": "Tools/Nmap/Nmap-Cheatsheet.md",
                 "mode": "source",
                 "source": false
               }
@@ -49,26 +49,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cryptography-And-Authentication/Password-Attacks/Wordlist-Tools/Cewl-Cheatsheet.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c0ba6643eb96a55e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Networks/Network-Protocols.md",
+                "file": "Web-Application-Hacking/XXE/XXE-Vulnerablity.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -97,7 +84,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "wfuzz",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -126,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Windows-File-Transfers.md",
+                "file": "Tools/Nmap/Nmap-Cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,17 +131,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "b64c0064d6441573",
+  "active": "a49796d439a10ae6",
   "lastOpenFiles": [
-    "Exploitation/Reverse-Shells-Listing.md",
-    "Exploitation/Using-Public-Exploits.md",
-    "Exploitation/Shells.md",
-    "Exploitation/Troubleshooting-Exploits-Payloads-Vulnerable-Applications.md",
-    "Exploitation/Shell-Spawning.md",
-    "Tools/C2/Metasploit/MSFvenom-Payloads.md",
-    "Tools/C2/Metasploit/Pivoting-and-Proxying-with-Metasploit.md",
-    "Tools/C2/Metasploit/Meterpreter-Commands.md",
-    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Windows-File-Transfers.md",
-    "Tools/Nmap/Nmap-Cheatsheet.md"
+    "Exploitation/Windows/Active-Directory/AD-User-Exploitation.md",
+    "Tools/TOR-Hidden-Services.md",
+    "Networks/Network-Theory/Network-Protocols/Ipsec.md",
+    "Networks/Network-Protocols.md",
+    "Web-Application-Hacking/XXE/XXE-Vulnerablity.md",
+    "Tools/Nmap/Nmap-AllTheScripts.md",
+    "Web-Application-Hacking/Methodologies/Haddix-Methodology/Application-Analysis.md",
+    "Cryptography-And-Authentication/Password-Attacks/Bruteforce-Login-Tools/Crowbar-CheatSheat.md",
+    "Post-Exploitation/Post-Exploitation-Enumeration/Active-Directory/Active-Directory-Footholding.md",
+    "Cryptography-And-Authentication/Password-Attacks/Wordlist-Tools/Cewl-Cheatsheet.md"
   ]
 }

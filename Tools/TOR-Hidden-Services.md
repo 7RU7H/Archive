@@ -1,5 +1,7 @@
 # TOR 
 
+![](Onion_diagram.png)
+
 Tor manpage: *"" Tor is a connection-oriented anonymizing communication service. Users choose a source-routed path through a set of nodes, and negtiate a "virtual circuit" through the network. Each node in a virtual circuit knows its predecessor and successor nodes, but no other nodes. Traffic flowing down the circuit is unwrapped by a symmetric key at each node, which reveals the downstream node."*
 
 ## Installation

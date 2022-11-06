@@ -170,7 +170,7 @@ Kerberos Change/Set password (official) - Indicative of DC
 
 ## 500 - ISAKMP
 [Internet Security Association and Key Management Protocol](https://en.wikipedia.org/wiki/Internet_Security_Association_and_Key_Management_Protocol) default UDP port 500
-Recon with `ike-scan`
+Recon with `ike-scan`, see [[Ipsec]]
 
 ## 515 LPD 
 Line Printer Daemon
@@ -237,6 +237,12 @@ SNMPSSH
 SNMPSSH-TRAP 	
 //dafault 5162 	
 //SNMP Notification over SSH Transport Model 	
+
+## 5353 MultiCast DNS
+
+## 5355 LLMNR 
+- [[Responder-Cheatsheet]] catches hashes from this port
+
 
 ## 5985-6 - WinRM
 Windows Remote Management Protocol ports
