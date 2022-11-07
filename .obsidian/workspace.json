@@ -4,100 +4,28 @@
     "type": "split",
     "children": [
       {
-        "id": "5d1b9a420ce8692b",
+        "id": "e4202343252ac19d",
         "type": "tabs",
         "children": [
           {
-            "id": "b64c0064d6441573",
+            "id": "b4c1441b9e840038",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/Ghidra-Cheatsheet.md",
+                "file": "Exploitation/CVEs/EternalRed.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "f40393ca3220029e",
+            "id": "90558c77fa6a76c1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/BinEx/Pwntools.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a49796d439a10ae6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "df54f6d0c495eacd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Services/Databases/MYSQL/MySQL-Hacking.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "fe876ad695850ecc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Services/Databases/MYSQL/MySQL-Cheatsheet.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f58443d3cab4253d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Coding-Scripting-Programming/Languages/Go/Golang.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1979c533efb277eb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Networks/Proxies.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b2233301936ac256",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tools/Useful-Software/Chisel.md",
+                "file": "Cryptography-And-Authentication/Cracking-Files.md",
                 "mode": "source",
                 "source": false
               }
@@ -133,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Rubeus",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -162,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/BinEx/Pwntools.md",
+                "file": "Cryptography-And-Authentication/Cracking-Files.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -180,17 +108,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "f40393ca3220029e",
+  "active": "90558c77fa6a76c1",
   "lastOpenFiles": [
-    "Exploitation/Binary-Exploitation/ROP-Chaining/ROP-Chains-With-GDB-and-GEF.md",
-    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Linux-File-Transfers.md",
-    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/File-Transfers.md",
-    "Cryptography-And-Authentication/Cracking-Files.md",
-    "Tools/Ghidra-Cheatsheet.md",
-    "Reverse-Engineering/Reverse-Engineering-Tools.md",
-    "Services/Docker/Docker-Hacking.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
     "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Windows-File-Transfers.md",
-    "Services/Databases/MYSQL/MySQL-Hacking.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md"
+    "Exploitation/CVEs/EternalBlue.md",
+    "Exploitation/CVEs/EternalRed.md",
+    "Coding-Scripting-Programming/Languages/Python/Python-Tooling-Libraries.md",
+    "README.md",
+    "Tools/Useful-Software/Chisel.md",
+    "Networks/Proxies.md",
+    "Coding-Scripting-Programming/Languages/Go/Golang.md",
+    "Services/Databases/MYSQL/MySQL-Cheatsheet.md"
   ]
 }

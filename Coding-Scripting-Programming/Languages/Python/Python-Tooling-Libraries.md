@@ -42,7 +42,7 @@ export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 ```
-Then
+Then  
 ```bash
 pyenv shell 2.7.18
 wget https://bootstrap.pypa.io/pip/2.7/get-pip.py
@@ -50,7 +50,6 @@ sudo python2 get-pip.py
 sudo pip2 install -U setuptools
 sudo pip2 install impacket
 ```
-
 
 
 ## Python Circles of Hell -  [Blackhillinfosec](https://www.blackhillsinfosec.com/wp-content/uploads/2020/08/SLIDES_PrettyLittlePythonSecretsEpisode1.pdf)

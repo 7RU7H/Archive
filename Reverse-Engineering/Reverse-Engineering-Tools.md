@@ -21,6 +21,13 @@ strings	 	# display printable strings in file(s)
 
 ## GEF
 *`GEF` (pronounced ʤɛf - "Jeff") is a kick-ass set of commands for X86, ARM, MIPS, PowerPC and SPARC to make GDB cool again for exploit dev. It is aimed to be used mostly by exploit developers and reverse-engineers, to provide additional features to GDB using the Python API to assist during the process of dynamic analysis and exploit development.* [Documentation](https://gef.readthedocs.io/en/master/)
+```bash
+# probably will require root privileges..
+bash -c "$(curl -fsSL https://gef.blah.cat/sh)"
+# for extras!
+wget -q -O- https://github.com/hugsy/gef/raw/main/scripts/gef-extras.sh | sh
+```
+
 To run:
 ```bash
 gdb -q /path/to/my/bin
