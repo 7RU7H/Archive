@@ -13,7 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Services/Docker/Docker-Hacking.md",
+                "file": "Tools/Ghidra-Cheatsheet.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f40393ca3220029e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cryptography-And-Authentication/Cracking-Files.md",
                 "mode": "source",
                 "source": false
               }
@@ -91,7 +103,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -149,7 +162,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Services/Docker/Docker-Hacking.md",
+                "file": "Cryptography-And-Authentication/Cracking-Files.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -167,17 +180,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "b64c0064d6441573",
+  "active": "f40393ca3220029e",
   "lastOpenFiles": [
+    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/File-Transfers.md",
+    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Linux-File-Transfers.md",
+    "Exploitation/Binary-Exploitation/ROP-Chaining/ROP-Chains-With-GDB-and-GEF.md",
+    "Tools/Ghidra-Cheatsheet.md",
+    "Reverse-Engineering/Reverse-Engineering-Tools.md",
+    "Services/Docker/Docker-Hacking.md",
     "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Windows-File-Transfers.md",
     "Services/Databases/MYSQL/MySQL-Hacking.md",
     "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
-    "Services/Databases/MYSQL/MySQL-Cheatsheet.md",
-    "Services/Docker/Docker-Hacking.md",
-    "Services/Docker/Intro-To-Docker.md",
-    "Tools/Useful-Software/Chisel.md",
-    "Cloud-Hacking/AWS-Hacking.md",
-    "Networks/Proxies.md",
-    "Coding-Scripting-Programming/Languages/Go/Golang.md"
+    "Services/Databases/MYSQL/MySQL-Cheatsheet.md"
   ]
 }
