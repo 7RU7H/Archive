@@ -72,7 +72,7 @@ A category of software applications that can force other programs to send thraff
 
 # Proxychains
 
-A proxifier tool that is pre-installed on Kali linux, configured to tunnel traffic over one or more proxies, Proxychains support SOCKS4, SOCKS5, and HTTP(S) proxies.
+A proxifier tool that is pre-installed on Kali linux, configured to tunnel traffic over one or more proxies, Proxychains support SOCKS4, SOCKS5, and HTTP(S) proxies. [http://proxychains.sourceforge.net/](http://proxychains.sourceforge.net/) it explicitly states it supports TCP and DNS (which actually can be UDP or TCP) from [superuser](https://superuser.com/questions/442995/is-ping-not-supposed-to-work-via-proxychains)
 ```bash
 vim /etc/proxychains4.conf
 socks 127.0.0.1 1337
@@ -154,3 +154,5 @@ ssh USER@FINAL_DEST -o "ProxyCommand=nc -X connect -x PROXYHOST:PROXYPORT %h %p"
 ## References
 
 [hackwhackandsmack](https://www.hackwhackandsmack.com/?p=1021)
+[http://proxychains.sourceforge.net/](http://proxychains.sourceforge.net/) 
+[superuser](https://superuser.com/questions/442995/is-ping-not-supposed-to-work-via-proxychains)

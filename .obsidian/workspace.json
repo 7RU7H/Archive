@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Windows-File-Transfers.md",
+                "file": "Services/Docker/Docker-Hacking.md",
                 "mode": "source",
                 "source": false
               }
@@ -37,14 +37,61 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Services/Docker/Docker-Hacking.md",
+                "file": "Services/Databases/MYSQL/MySQL-Hacking.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "fe876ad695850ecc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Services/Databases/MYSQL/MySQL-Cheatsheet.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f58443d3cab4253d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Coding-Scripting-Programming/Languages/Go/Golang.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1979c533efb277eb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Networks/Proxies.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b2233301936ac256",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/Useful-Software/Chisel.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -120,17 +167,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "df54f6d0c495eacd",
+  "active": "b64c0064d6441573",
   "lastOpenFiles": [
+    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Windows-File-Transfers.md",
+    "Services/Databases/MYSQL/MySQL-Hacking.md",
     "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+    "Services/Databases/MYSQL/MySQL-Cheatsheet.md",
     "Services/Docker/Docker-Hacking.md",
     "Services/Docker/Intro-To-Docker.md",
-    "Web-Application-Hacking/CMS/Wordpress.md",
-    "Coding-Scripting-Programming/Languages/Python/Python-Tooling-Libraries.md",
-    "Windows/dotNet-Defined.md",
-    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Windows-File-Transfers.md",
-    "Web-Application-Hacking/XXE/XXE-Vulnerablity.md",
-    "Tools/Useful-Software/Rubeus-Cheatsheet.md",
-    "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Privilege-Escalation.md"
+    "Tools/Useful-Software/Chisel.md",
+    "Cloud-Hacking/AWS-Hacking.md",
+    "Networks/Proxies.md",
+    "Coding-Scripting-Programming/Languages/Go/Golang.md"
   ]
 }

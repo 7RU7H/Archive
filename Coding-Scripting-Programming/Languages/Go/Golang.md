@@ -4,14 +4,21 @@
 ## Compiling Go
 [Official Compilation Tutorial](https://go.dev/doc/tutorial/compile-install)
 ```bash
+# Remember if you compile for another system
+# On target machine:
+ldd --version # linux and windows
 go build 
+CGO_ENABLED=0 go build # For static without c runtime libraries
 ```
+[Continuing research here at Martin Tournoij (“arp242);](https://www.arp242.net/static-go.html)
 
 Specifying Architecture
 ```bash
 go env GOOS GOARCH # current system as target
 go tool dist list
 GOOS=<os> GOARCH=<arch> go build
+
+ldd $binary # to check it is static or dynamically compiled and with which C libraries if any
 ```
 
 
@@ -21,7 +28,7 @@ Minimisation effort with [[UPX]]
 # -s strip binary of debug info
 # -w strip of dwarf infomation
 go build -ldflags="-s -w"
-upx brute <binary>
+upx <binary>
 ```
 
 ## Effective Go
