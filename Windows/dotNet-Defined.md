@@ -22,18 +22,23 @@ C++ -> Compiled(Unmanged Compoent sent to OSS) -> | Assembly Code -> |	CLR ->  |
 \.NET has a [Dynamic Language Runtime (DLR)](https://docs.microsoft.com/en-us/dotnet/framework/reflection-and-codedom/dynamic-language-runtime-overview). 
 
 ## Compilers and Offensive Tooling
-[VScode compiler](https://code.visualstudio.com/Docs/languages/csharp)
-Requires [free, but valid Microsoft account](https://outlook.live.com/owa/).
+[VScode compiler](https://code.visualstudio.com/Docs/languages/csharp) requires [free, but valid Microsoft account](https://outlook.live.com/owa/).
+
+Compiler Options:
+- Roslyn
+- GCC
+- MinGW
+- LLVM
+- TCC
+- MSBuild
+
 To create a solution file for .NET Core with VScode:
-`Create a new project OR Open a project or solution > Console App (.NET Core)`
-
-Roslyn
-GCC
-MinGW
-LLVM
-TCC
-MSBuild
-
+1. `Create a new project` or  `Open a project or solution` `then -> Console App (.NET Core)`
+	1. If a new project is selected, Configure project - with Name, Location adn Solution Name
+	2. Once created, Visual Studio will automatically add a starting C# hello world file and maintain the solution file for building.
+	
+- Dependencies, Classes, and Methods are oraginsed in the Solutions Explorer as a file tree
+- To build a solution file, navigate to `Build -> Build Solution` or  `[Ctrl] + [Shift] + [B]`
 
 ## References
 [DLR Overview](https://docs.microsoft.com/en-us/dotnet/framework/reflection-and-codedom/dynamic-language-runtime-overview)

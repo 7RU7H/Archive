@@ -35,7 +35,7 @@ add to your shell's .rc the below is for `zsh`'s `.zshrc`
 ```bash
 # Load pyenv automatically by appending
 # the following to 
-~/.zprofile (for login shells)
+~/.profile (for login shells)
 and ~/.zshrc (for interactive shells) :
 
 export PYENV_ROOT="$HOME/.pyenv"

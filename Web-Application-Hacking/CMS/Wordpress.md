@@ -1,17 +1,22 @@
 # Wordpress 
 
-
-`/var/www/html/wp-config.php` contain credentials
+Checklist:
+- Login page
+- `robot.txt`
+- `/var/www/html/wp-config.php` contain credentials
+- Enumerate users with `-u` with wpscan
 
 ## WPscan
 
 [Free 25 API requests per day](https://wpscan.com/pricing)
 
 ```bash
-wpscan --url  -e --api-token $APIKEY # -o filename
+wpscan --url $url -e --api-token $APIKEY # -o filename
 # optional - all plugins, themes, plus timthumbs
 # vp,vt,tt,cb,dbe,u,m
 ap at t tt dbe u m cb
+
+wpscan --url $url --api-token $APIKEY -U admin -P /usr/share/wordlists/rockyou.txt
 ```
 
 ## Haax's Trick
