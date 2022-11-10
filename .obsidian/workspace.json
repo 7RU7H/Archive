@@ -13,26 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exploitation/CVEs/EternalRed.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "90558c77fa6a76c1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cryptography-And-Authentication/Cracking-Files.md",
+                "file": "Hacker-Distros/Kali/Kali-Indepth-Customisation.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -61,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "compression",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -90,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cryptography-And-Authentication/Cracking-Files.md",
+                "file": "Hacker-Distros/Kali/Kali-Indepth-Customisation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -108,17 +95,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "90558c77fa6a76c1",
+  "active": "b4c1441b9e840038",
   "lastOpenFiles": [
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
-    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Windows-File-Transfers.md",
-    "Exploitation/CVEs/EternalBlue.md",
-    "Exploitation/CVEs/EternalRed.md",
-    "Coding-Scripting-Programming/Languages/Python/Python-Tooling-Libraries.md",
-    "README.md",
-    "Tools/Useful-Software/Chisel.md",
-    "Networks/Proxies.md",
-    "Coding-Scripting-Programming/Languages/Go/Golang.md",
-    "Services/Databases/MYSQL/MySQL-Cheatsheet.md"
+    "Linux/Distributions/Debian/Debian-Package-Management.md",
+    "Tools/C2/Empire/Empire.md",
+    "Linux/Linux-Commands/Linux-Compression-Commands.md",
+    "Linux/Linux-Commands/Core-Linux-Commands.md",
+    "Antivirus/Antivirus-Evasion/Antivirus-Evasion.md",
+    "Antivirus/Antivirus-Evasion/Antivirus-Evasion-Shellcode.md",
+    "Web-Application-Hacking/Upload-Vulnerabilities.md",
+    "Tools/C2/Empire/Powershell-Empire-Modules.md",
+    "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Enumeration-Cheatsheet.md",
+    "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Enumeration-Defined.md"
   ]
 }

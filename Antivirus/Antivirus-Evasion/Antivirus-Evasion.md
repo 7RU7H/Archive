@@ -3,7 +3,8 @@
 Understanding to evading [Antivirus software](https://en.wikipedia.org/wiki/Antivirus_software) and the [techniques, tools and methodology](https://attack.mitre.org/) of Malware and APTs can help protect against and improve defenses and make ethical hacking more interesting.
 
 ## Introduction to AV and Detection
-[AV software](https://en.wikipedia.org/wiki/Antivirus_software) is a host-based security solution designed prevent, detect, and remove malicious software. This software is reliant on blacklisting technologies like signature based static analysis with usual MD5 sums of known malicious files. Antivirus signatures are a continuous sequence of bytes within malware that uniquely identifies it. Files that are potentially [Malware](https://en.wikipedia.org/wiki/Malware) are scanned if the scanner detects identifying features, it quarantines it. 
+[AV software](https://en.wikipedia.org/wiki/Antivirus_software) is a host-based security solution designed prevent, detect, and remove malicious software. This software is reliant on blacklisting technologies like signature based static analysis with usual MD5 sums of known malicious file
+s. Antivirus signatures are a continuous sequence of bytes within malware that uniquely identifies it. Files that are potentially [Malware](https://en.wikipedia.org/wiki/Malware) are scanned if the scanner detects identifying features, it quarantines it. 
 
 Traditionally AV tries to detect within current and downloaded files:
 -   Gain full access to a target machine.
@@ -129,6 +130,13 @@ Golang is the *goto* language of malware development
 	5. Used in Backend code with APIs and networking
 5. Simple and fun to write making easier to be more creative with evasion techniques and the complexity of exploitation anyway.
 
+#### MFSVenom Shells
+
+A consideration when using any of the tools to inject shellcode into a binary is that [[MSFvenom-Payloads]]  you must migrate processes if that execuatble you are piggy-backing on terminates at some point. 
+```ruby
+set AutoRunScript post/windows/manage/migrate
+```
+
 #### Shellter 
 [Shellter](https://www.shellterproject.com/) *"Shellter is a dynamic shellcode injection tool, and the first truly dynamic PE infector ever created. It can be used in order to inject shellcode into native Windows applications (currently 32-bit applications only). The shellcode can be something yours or something generated through a framework, such as Metasploit."* For more see the [[Shellter-Helpsheet]]
 
@@ -140,6 +148,8 @@ Golang is the *goto* language of malware development
 
 #### peCloak
 peCloak from [Mike Czumak](http://www.securitysift.com/pecloak-py-an-experiment-in-av-evasion/) is python script that automates multiple tricks to evade AVs.
+
+
 
 ## References 
 [AV Wiki](https://en.wikipedia.org/wiki/Antivirus_software)

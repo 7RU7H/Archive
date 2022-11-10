@@ -48,6 +48,9 @@ If file permission on the server are lacks, location of file path found and info
  
 ##  Filtering types
 
+When using [[Burpsuite-Helpsheet]], you may need to configure the types Burp intercepts:
+`Proxy -> Options -> Intercept Client Requests` section, edit the condition of the first line to remove or add.
+
 1. Extension validation - only want a .specific extension
 2. File type filtering 
 	1. MIME(**M**ultipurpose **I**nternet **M**ail **E**xtension) validation 

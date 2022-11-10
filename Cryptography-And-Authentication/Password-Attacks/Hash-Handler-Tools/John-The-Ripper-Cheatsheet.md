@@ -4,21 +4,22 @@
 
 ## Quick Useful Commands
 
-
-## Tools
+```bash
+john --list=formats | grep $grep_
+```
 
 
 ## Scenarios
 
-
-#### Protected ZIP
-
-## zip2john
+Cracking a file check out [[Cracking-Files]]
+Have a `/etc/passwd` and `/etc/shadow`
 
 ```bash
-zip2john backup.zip > hash
-john -wordlist=/usr/share/wordlists/rockyou.txt hash
+unshadow shadow.txt passwd.txt > unshadow.txt
+john --wordlist=/usr/share/wordlists/rockyou.txt unshadowed.txt
 ```
+
+
 
 ## Wordlist expansion with JtR
 ```bash
@@ -49,3 +50,4 @@ r
 
 ## References
 [Openwall Wiki](https://openwall.info/wiki)
+[erev0s rcacking /etc/shadow /etc/passwd blog](https://erev0s.com/blog/cracking-etcshadow-john/)

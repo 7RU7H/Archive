@@ -255,7 +255,7 @@ This section contains all legacy related
 #### Installation
 Various and numerous..
 ####  Startup
-If you install powershell-empire
+If you installed powershell-empire
 ```bash
 powershell-empire server
 powershell-empire client
