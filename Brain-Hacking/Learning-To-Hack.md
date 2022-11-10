@@ -13,11 +13,12 @@ There are alot of these how to learn to x so firstly address the learning part:
 	1. Learn efficiently  
 		- Space it out, interweave practice with reading, deep study and shallow study
 1. Do sometime new and related everyday
-2. Read a little every day, but diversify:
+2. Read a little every day, but diversify - You read scans, terminals, code everyday - insert  Tyrion Lannister quote about reading - but learn to REALLY read - Fast and slow reading - when to to go fast and when to go slow:
 	 - i.e Bug Bounty report one day, AD whitepaper another or insert-x-ethical-hacking-x-site reading material; Blog about CVEs; Proof of Concepts about bugs; Source Code.
-3. Develop humility, integrity and remember you are stupid. The training your brain to like solving the problem and the feeling when it works over time train a patience for long complex tasks or researching that can get very frustrating.
-4. Learn, practice and research whatever **you** are interested in and enjoy, not what is cool or apparently makes money quick a better investment is alway go for long term expertise, the always money comes after.
-5. Explore in different ways
+1. Take Notes and visualise the problems
+4. Develop humility, integrity and remember you are stupid. The training your brain to like solving the problem and the feeling when it works over time train a patience for long complex tasks or researching that can get very frustrating.
+5. Learn, practice and research whatever **you** are interested in and enjoy, not what is cool or apparently makes money quick a better investment is alway go for long term expertise, the always money comes after.
+6. Explore in different ways
 	-  [Have Gzegroz Niedziela explain some mad real world Web Exploits](https://www.youtube.com/c/BugBountyReportsExplained) 
 	- Be handheld through an insane machine to know how far I many connections in my brain I have to go - roughly scaled between scarily alot and ton
 		- Reasoning comes from being good guitar: do it for the sounds that you could make not to look cool; more sounds you can make the more musical intense you can make anything. Sometimes you just to sit there and be wowed and try anyway, clumsy try - be humble - find the parts that are difficult and find similarly easiler elements elsewhere, [More Rocky](https://www.youtube.com/watch?v=hHpFSQMUxj4), [More Cheesey](https://www.youtube.com/watch?v=yGZsnbPCv1I) or [More British](https://www.youtube.com/watch?v=pt-Yc2rzOOM) or [Wooten](https://www.youtube.com/watch?v=CFcPlv9RhEY) or more [Bass](https://www.youtube.com/watch?v=Sa0upTDZDYQ) or [Spanish](https://www.youtube.com/watch?v=NIKWBdthzg4) - combine all of that and keep building

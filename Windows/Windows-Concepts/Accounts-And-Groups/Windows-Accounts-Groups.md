@@ -8,6 +8,14 @@ net localgroup <usersfromgroupsyoudontwantpartof> <users> /del
 ```
 
 
+SIDs are used to track the security principal and the account's access when connecting to resources
+
+SID Attributes
+
+Attribute | Description and Use
+--- | ---
+SID History | To enable access for an account to effectively be cloned to another
+
 ## Account SID simplified format
 NAME |SID	
 --- | ---

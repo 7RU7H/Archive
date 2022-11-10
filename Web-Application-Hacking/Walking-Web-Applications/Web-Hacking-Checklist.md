@@ -3,7 +3,7 @@
 ## Walking the Website
 Mostly Ippsec inspired - use [[Burpsuite-Helpsheet]]
 0. `curl -L $url` for grepping 
-1. Check the Certificated - Contains email address
+1. Check the Certificate - Contains email address
 2. Quick check for url: /index.(htlm/php)
 3.  `Ctrl + U` for source code
 	1. Check if page is Static or Dynamic
