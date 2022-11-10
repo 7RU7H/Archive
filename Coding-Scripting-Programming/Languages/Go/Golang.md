@@ -21,7 +21,6 @@ GOOS=<os> GOARCH=<arch> go build
 ldd $binary # to check it is static or dynamically compiled and with which C libraries if any
 ```
 
-
 Minimisation effort with [[UPX]]
 ```bash
 # To mimise binary size

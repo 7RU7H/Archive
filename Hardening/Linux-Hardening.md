@@ -35,6 +35,14 @@ Log new connections to a box [ippsec](https://www.youtube.com/watch?v=ABVR8EgXsQ
 iptables -A INPUT -p tcp -m state --state NEW -j LOG --log-prefix "IPTables New-Connection: " -i $interface
 ```
 
+## Stop Sneaky, Fast Execution!
+
+[/dev/shm is a common directory for marshalling and operating from in Linux for attackers as it directory that is a tempory file storage that uses RAM for the backing store](https://superuser.com/questions/45342/when-should-i-use-dev-shm-and-when-should-i-use-tmp. It is flushed leaving no trace of execution or what was put in that directory. It is also faster as than disk storage.
+```bash
+sudo mount -o remount,noexec /dev/shm
+mount | grep shm # to check flags
+```
+
 
 ## References
 [ippsec geniunely rocks](https://ippsec.rocks/?#)

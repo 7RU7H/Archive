@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Hacker-Distros/Kali/Kali-Indepth-Customisation.md",
+                "file": "Brain-Hacking/Learning-To-Hack.md",
                 "mode": "source",
                 "source": false
               }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Hacker-Distros/Kali/Kali-Indepth-Customisation.md",
+                "file": "Brain-Hacking/Learning-To-Hack.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,15 +97,15 @@
   },
   "active": "b4c1441b9e840038",
   "lastOpenFiles": [
+    "Hardening/Linux-Hardening.md",
+    "Coding-Scripting-Programming/Languages/Go/Golang.md",
+    "Hacker-Distros/Kali/Kali-Indepth-Customisation.md",
     "Linux/Distributions/Debian/Debian-Package-Management.md",
     "Tools/C2/Empire/Empire.md",
     "Linux/Linux-Commands/Linux-Compression-Commands.md",
     "Linux/Linux-Commands/Core-Linux-Commands.md",
     "Antivirus/Antivirus-Evasion/Antivirus-Evasion.md",
     "Antivirus/Antivirus-Evasion/Antivirus-Evasion-Shellcode.md",
-    "Web-Application-Hacking/Upload-Vulnerabilities.md",
-    "Tools/C2/Empire/Powershell-Empire-Modules.md",
-    "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Enumeration-Cheatsheet.md",
-    "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Enumeration-Defined.md"
+    "Web-Application-Hacking/Upload-Vulnerabilities.md"
   ]
 }

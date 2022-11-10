@@ -10,13 +10,18 @@ There are alot of these how to learn to x so firstly address the learning part:
 		- Do not use other people imports at first
 		- Look up the python/ruby solution and translate it - learn them at the same time while build multi-lingualism and deepen your golang understand
 		- Look the best golang solution after you succeeded or failed to improve your own code. Code review without the egos and your code gets better for free.
-2. Learn effeciently 
-	- Space it out, interweave practice with reading, deep study and shallow study
-3. Do sometime new and related everyday
-4. Read a little every day, but diversify:
+	1. Learn efficiently  
+		- Space it out, interweave practice with reading, deep study and shallow study
+1. Do sometime new and related everyday
+2. Read a little every day, but diversify:
 	 - i.e Bug Bounty report one day, AD whitepaper another or insert-x-ethical-hacking-x-site reading material; Blog about CVEs; Proof of Concepts about bugs; Source Code.
-5. Develop humility, integrity and remember you are stupid. The training your brain to like solving the problem and the feeling when it works over time train a patience for long complex tasks or researching that can get very frustrating.
-6. Learn, practice and research whatever **you** are interested in and enjoy, not what is cool or apparently makes money quick a better investment is alway go for long term expertise, the always money comes after.
+3. Develop humility, integrity and remember you are stupid. The training your brain to like solving the problem and the feeling when it works over time train a patience for long complex tasks or researching that can get very frustrating.
+4. Learn, practice and research whatever **you** are interested in and enjoy, not what is cool or apparently makes money quick a better investment is alway go for long term expertise, the always money comes after.
+5. Explore in different ways
+	-  [Have Gzegroz Niedziela explain some mad real world Web Exploits](https://www.youtube.com/c/BugBountyReportsExplained) 
+	- Be handheld through an insane machine to know how far I many connections in my brain I have to go - roughly scaled between scarily alot and ton
+		- Reasoning comes from being good guitar: do it for the sounds that you could make not to look cool; more sounds you can make the more musical intense you can make anything. Sometimes you just to sit there and be wowed and try anyway, clumsy try - be humble - find the parts that are difficult and find similarly easiler elements elsewhere, [More Rocky](https://www.youtube.com/watch?v=hHpFSQMUxj4), [More Cheesey](https://www.youtube.com/watch?v=yGZsnbPCv1I) or [More British](https://www.youtube.com/watch?v=pt-Yc2rzOOM) or [Wooten](https://www.youtube.com/watch?v=CFcPlv9RhEY) or more [Bass](https://www.youtube.com/watch?v=Sa0upTDZDYQ) or [Spanish](https://www.youtube.com/watch?v=NIKWBdthzg4) - combine all of that and keep building
+	- Get the bigger the picture of whatever sometimes. [Like Haddix Application Analysis Methodology](https://www.youtube.com/watch?v=FqnSAa2KmBI)  
 
 Some of the below can be connective - i.e 
 
