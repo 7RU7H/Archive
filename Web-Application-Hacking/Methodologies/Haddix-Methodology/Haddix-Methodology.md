@@ -12,7 +12,6 @@ OWASP testing guide
 The Web application hacker's handbook 2
 
 
-
 # Discovery
 Go the road less traveled:
 1. subdomains
@@ -56,9 +55,11 @@ swf parameter xss:
 common params:
 onload, allowedDomain, movieplayer, xmlPath, eventhandler, callback (see owasp page)
 common injection strings:
+```
 \%22})))}catch(e)alert(document.domain);}//
 "];)catch(e)()if(!self.a)self.a=!alert(document.domain);//
 "a")(((type:"ready")));)catch(e)alert(1))//
+```
 
 github: cure53/Flashbang
 
@@ -141,7 +142,7 @@ github BurpExtension/csrfr_token_detector.py
 burp store -> autorize
 
 
-# Find Privilege 
+- Find Privilege 
 Add user function
 Delete user function
 start project/campaign/etc function
@@ -153,7 +154,7 @@ Transport
 
 github arvinddorraiswamy/mywebappscripts/tree/master/ForceSSL
 
-# Find Logic Flaws
+- Find Logic Flaws
 substituting hashed parametres
 step mainuplation
 use negatives in quantities

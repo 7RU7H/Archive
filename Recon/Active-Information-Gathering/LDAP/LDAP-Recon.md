@@ -20,7 +20,7 @@ ldapsearch -LLL -x -H ldap://<domain fqdn> -b '' -s base '(objectClass=*)'
 # Just Persons
 ldapsearch -LLL -x -H ldap://<domain> -b 'DC=domain,DC=local' '(objectClass=Person)' | tee -a ldapsearch-person
 
-
+# try port 3268
 
 # Extract all user objects
 ldapsearch -x -H ldap://$IP -D '<domain>\<username>' -w '<password>' -b "CN=Users,DC=<domain>,DC=<domain>"

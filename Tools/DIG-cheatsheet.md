@@ -1,4 +1,6 @@
 ```bash
+dig -x $ip @ip
+dig $domain @ip $record_type
 dig $domain # Query "A" recond
 dig $domain +short # Query "A" recond, plus less verbose
 dig $domain  MX # Query "MX" reconds

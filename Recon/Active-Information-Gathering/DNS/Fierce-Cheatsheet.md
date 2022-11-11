@@ -1,8 +1,8 @@
 # Fierce
 Fierce A DNS reconnaissance tool for locating non-contiguous IP space.
 ```bash
-fierce -dns $domain
-fierce -dns $domain ---dns-servers $nameserver
+fierce $domain
+fierce $domain --dns-servers $nameserver
 
 options:
   -h, --help            show this help message and exit

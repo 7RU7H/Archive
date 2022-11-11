@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Hacker-Distros/Kali/Kali-Advanced-Usage.md",
+                "file": "Web-Application-Hacking/Methodologies/Generic/Web-App-Hacking-Methodology.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,7 +25,55 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Post-Exploitation/Persistence/Active-Directory-Persistence/AD-Persistence-Group-Membership.md",
+                "file": "Web-Application-Hacking/XSS-Cheatsheet.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "825e7953f2043279",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Coding-Scripting-Programming/Regex.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "bc42e90d8cd63416",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Recon/Active-Information-Gathering/LDAP/LDAP-Recon.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "622d86ffadf90b90",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Recon/Active-Information-Gathering/SMB/RPCClient-Cheatsheet.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2f77c1eaed95acfd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Recon/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
                 "mode": "source",
                 "source": false
               }
@@ -90,7 +138,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Post-Exploitation/Persistence/Active-Directory-Persistence/AD-Persistence-Group-Membership.md",
+                "file": "Web-Application-Hacking/XSS-Cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,15 +158,15 @@
   },
   "active": "51d467ba9ac6d2bc",
   "lastOpenFiles": [
-    "Post-Exploitation/Persistence/Active-Directory-Persistence/AD-Persistence-Credentials.md",
-    "Post-Exploitation/Persistence/Active-Directory-Persistence/AD-Persistence-Group-Membership.md",
-    "Post-Exploitation/Persistence/Active-Directory-Persistence/AD-Persistence-SID-History.md",
-    "Hacker-Distros/Kali/Kali-Advanced-Usage.md",
-    "Linux/Distributions/Debian/Debian-Package-Management.md",
-    "Recon/Active-Information-Gathering/SMB/RPCClient-Cheatsheet.md",
-    "Tools/Crackmapexec/Crackmapexec-Cheatsheet.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/PrivEsc-Important-Windows-Locations.md",
+    "Web-Application-Hacking/File-Inclusion-And-Directory-Traversal/DT-FI-Windows-Files.md",
+    "Coding-Scripting-Programming/Languages/PHP/Useful_PHP.md",
+    "Web-Application-Hacking/Methodologies/Generic/Web-App-Hacking-Methodology.md",
     "Tools/Impacket/Impacket-Cheatsheet.md",
-    "Cryptography-And-Authentication/Password-Attacks/Bruteforce-Login-Tools/Hydra-Cheatsheet.md"
+    "Hacker-Distros/Kali/Kali-Advanced-Usage.md",
+    "Recon/Active-Information-Gathering/LDAP/LDAP-Recon.md",
+    "Coding-Scripting-Programming/Regex.md",
+    "Recon/Active-Information-Gathering/SMB/RPCClient-Cheatsheet.md",
+    "Recon/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
+    "Recon/Amass.md"
   ]
 }
