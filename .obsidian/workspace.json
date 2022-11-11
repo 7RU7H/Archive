@@ -13,110 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Recon/Active-Information-Gathering/SMB/RPCClient-Cheatsheet.md",
+                "file": "Hacker-Distros/Kali/Kali-Advanced-Usage.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "2f37b88a655e9fb5",
+            "id": "51d467ba9ac6d2bc",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cryptography-And-Authentication/Password-Attacks/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "18eb0330033e686b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Windows/Windows-Concepts/Accounts-And-Groups/Windows-Accounts-Groups.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8c5795f677f2d8fb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Windows/PrivEsc-Important-Windows-Locations.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "59578e3c5dc69258",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tools/Impacket/Impacket-Cheatsheet.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9b5af6d22743909b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tools/Crackmapexec/Crackmapexec-Cheatsheet.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d8a225d13e7774f6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tools/C2/Metasploit/Metasploit.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b012d395ddade890",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Recon/Active-Information-Gathering/LDAP/LDAP-Recon.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a2a40433c1f2b780",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tools/Mimikatz/Mimikatz-Cheatsheet.md",
+                "file": "Post-Exploitation/Persistence/Active-Directory-Persistence/AD-Persistence-Group-Membership.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -174,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/Crackmapexec/Crackmapexec-Cheatsheet.md",
+                "file": "Post-Exploitation/Persistence/Active-Directory-Persistence/AD-Persistence-Group-Membership.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -192,17 +108,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "9b5af6d22743909b",
+  "active": "51d467ba9ac6d2bc",
   "lastOpenFiles": [
+    "Post-Exploitation/Persistence/Active-Directory-Persistence/AD-Persistence-Credentials.md",
+    "Post-Exploitation/Persistence/Active-Directory-Persistence/AD-Persistence-Group-Membership.md",
+    "Post-Exploitation/Persistence/Active-Directory-Persistence/AD-Persistence-SID-History.md",
+    "Hacker-Distros/Kali/Kali-Advanced-Usage.md",
+    "Linux/Distributions/Debian/Debian-Package-Management.md",
+    "Recon/Active-Information-Gathering/SMB/RPCClient-Cheatsheet.md",
+    "Tools/Crackmapexec/Crackmapexec-Cheatsheet.md",
     "Post-Exploitation/Privilege-Escalation/Windows/PrivEsc-Important-Windows-Locations.md",
     "Tools/Impacket/Impacket-Cheatsheet.md",
-    "Cryptography-And-Authentication/Password-Attacks/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
-    "Recon/Active-Information-Gathering/SMB/RPCClient-Cheatsheet.md",
-    "Recon/Active-Information-Gathering/SMB/RPCClient-Usage.md",
-    "Post-Exploitation/Persistence/Active-Directory-Persistence/AD-Persistence-SID-History.md",
-    "Post-Exploitation/Persistence/Active-Directory-Persistence/AD-Persistence-Tickets.md",
-    "Post-Exploitation/Persistence/Active-Directory-Persistence/Active-Directory-Persistence.md",
-    "Post-Exploitation/Persistence/Windows-Persistence/Windows-Persistence-Abusing-Services.md",
-    "Windows/Windows-Concepts/Accounts-And-Groups/Windows-Accounts-Groups.md"
+    "Cryptography-And-Authentication/Password-Attacks/Bruteforce-Login-Tools/Hydra-Cheatsheet.md"
   ]
 }
