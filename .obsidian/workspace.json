@@ -13,19 +13,31 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Web-Application-Hacking/Methodologies/Generic/Web-App-Hacking-Methodology.md",
+                "file": "Post-Exploitation/Persistence/Active-Directory-Persistence/Active-Directory-Persistence.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "51d467ba9ac6d2bc",
+            "id": "5d4aeb6a78b6a776",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Web-Application-Hacking/XSS-Cheatsheet.md",
+                "file": "Post-Exploitation/Persistence/Active-Directory-Persistence/AD-Persistence-ACLs.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1f7cbe6b3a0d49b9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Post-Exploitation/Persistence/Active-Directory-Persistence/AD-Persistence-Group-Membership.md",
                 "mode": "source",
                 "source": false
               }
@@ -38,42 +50,6 @@
               "type": "markdown",
               "state": {
                 "file": "Coding-Scripting-Programming/Regex.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "bc42e90d8cd63416",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Recon/Active-Information-Gathering/LDAP/LDAP-Recon.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "622d86ffadf90b90",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Recon/Active-Information-Gathering/SMB/RPCClient-Cheatsheet.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "2f77c1eaed95acfd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Recon/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
                 "mode": "source",
                 "source": false
               }
@@ -138,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Web-Application-Hacking/XSS-Cheatsheet.md",
+                "file": "Post-Exploitation/Persistence/Active-Directory-Persistence/AD-Persistence-ACLs.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -156,17 +132,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "51d467ba9ac6d2bc",
+  "active": "5d4aeb6a78b6a776",
   "lastOpenFiles": [
-    "Web-Application-Hacking/File-Inclusion-And-Directory-Traversal/DT-FI-Windows-Files.md",
-    "Coding-Scripting-Programming/Languages/PHP/Useful_PHP.md",
-    "Web-Application-Hacking/Methodologies/Generic/Web-App-Hacking-Methodology.md",
-    "Tools/Impacket/Impacket-Cheatsheet.md",
+    "Post-Exploitation/Persistence/Active-Directory-Persistence/AD-Persistence-Group-Membership.md",
+    "Post-Exploitation/Persistence/Active-Directory-Persistence/AD-Persistence-ACLs.md",
+    "Post-Exploitation/Persistence/Active-Directory-Persistence/AD-Persistence-Certificates.md",
+    "Post-Exploitation/Persistence/Active-Directory-Persistence/Active-Directory-Persistence.md",
     "Hacker-Distros/Kali/Kali-Advanced-Usage.md",
-    "Recon/Active-Information-Gathering/LDAP/LDAP-Recon.md",
+    "Web-Application-Hacking/Methodologies/Generic/Web-App-Hacking-Methodology.md",
     "Coding-Scripting-Programming/Regex.md",
-    "Recon/Active-Information-Gathering/SMB/RPCClient-Cheatsheet.md",
-    "Recon/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
-    "Recon/Amass.md"
+    "Recon/Active-Information-Gathering/LDAP/LDAP-Recon.md",
+    "Web-Application-Hacking/XSS-Cheatsheet.md",
+    "Web-Application-Hacking/File-Inclusion-And-Directory-Traversal/DT-FI-Windows-Files.md"
   ]
 }
