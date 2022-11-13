@@ -1,5 +1,7 @@
 # Apache Tomcat
 
+Default password: metasploit module auxillary scanner! 
+
 ## Ghostcat
 /manager/
 /manager-gui/

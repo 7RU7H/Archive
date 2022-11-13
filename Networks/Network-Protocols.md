@@ -107,7 +107,6 @@ PASS toor
 
 # Once logged
 list
-
 ```
 
 ## 111 (also 2049) - NFS
@@ -129,7 +128,10 @@ umount $ip:/local/file/path
 
 Identification/Authorization service. When a client program on your end contacts a remote server for services such as POP, IMAP, SMTP, IRC, FTP, etc. that remote server sends back a query to the IDENT port 113 asking for identification from your system
 
-## 13(5,7-9), 445 -  NBT - SMB
+## 135 - RCP 
+Has encryption protocol of higher port number. See [[RPC-Recon]], use [[RPCClient-Cheatsheet]] and [[RPCClient-Usage]]
+
+## 137-9), 445 -  NBT - SMB
 
 Server Message Block protocol uses a client-server model. Client uses `smbclient` see [[SMB-Recon-Cheatsheet]]. SMB originally ran on top of NetBIOS using port 139. NetBIOS is an older transport layer that allows Windows computer to communicate on the same network. Later versions of SMB(after Windows 2000) use port 445 on top of a TCP stack, TCP allows for internet communication. NetBIOS over TCP/IP (NetBT) is Windows name resolution.
 
@@ -172,7 +174,7 @@ Kerberos Change/Set password (official) - Indicative of DC
 [Internet Security Association and Key Management Protocol](https://en.wikipedia.org/wiki/Internet_Security_Association_and_Key_Management_Protocol) default UDP port 500
 Recon with `ike-scan`, see [[Ipsec]]
 
-## 515 LPD 
+## 515 - LPD 
 Line Printer Daemon
 
 ## 591- HTTP-ALT
@@ -227,6 +229,9 @@ remmina
 xfreerdp /u:$username /p:$Password /v:$IP
 rdesktop $ip
 ```
+
+## 4555 RSIP
+See [[RSIP-Recon]] forwarding administration emails
 
 ## 5000 - Docker
 See [[Intro-To-Docker]] and [[Docker-Hacking]] for more informationmation

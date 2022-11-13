@@ -2,6 +2,11 @@
 
 C# or as some joke, Microsoft Java, is powerful object oriented programing language that is commonly used in application and utilities built for Windows. It allows developers to interact with the a run-time environment known as the Common Language Runtime (CLR)and Win32 API. You can use any \.NET langauge to compile into the Common Intermediary Language (CIL).  Microsoft: *"\.NET provides a run-time environment, called the common language runtime, that runs the code and provides services that make the development process easier. Compilers and tools expose the common language runtime's functionality and enable you to write code that benefits from this managed execution environment. Code that you develop with a language compiler that targets the runtime is called managed code. Managed code benefits from features such as cross-language integration, cross-language exception handling, enhanced security, versioning and deployment support, a simplified model for component interaction, and debugging and profiling services."* For [[Basic-Csharp]] usage and tricks.
 
+Starting with Visual Studio 2022, **Visual Studio no longer includes .** **NET Framework components for .** **NET Framework 4.0 - 4.5.** **1 because these versions are no longer supported**.
+
+So all your Potato Exploits are gone
+
+
 Branch | Purpose
 --- | --- 
 \.NET Framework | Windows only
@@ -18,6 +23,9 @@ C++ -> Compiled(Unmanged Compoent sent to OSS) -> | Assembly Code -> |	CLR ->  |
 \.NET assemblies are compiled .exes and .dlls that any .NET language can execute. The CLR will compile the CIL into native machine code. Any unmanaged code with .NET you can chose for this to code to be directly compiled from the language into machine code, skipping the CLR.
 
 ## \.NET Dynamic Language Runtime (DLR)
+
+Check local versions:
+- `dir "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework"``
 
 \.NET has a [Dynamic Language Runtime (DLR)](https://docs.microsoft.com/en-us/dotnet/framework/reflection-and-codedom/dynamic-language-runtime-overview). 
 

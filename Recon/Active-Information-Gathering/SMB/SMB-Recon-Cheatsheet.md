@@ -1,10 +1,24 @@
 # Server Message Block 
+
 SMB oringally ran on top of NetBIOS using port 139. NetBIOS is an older transport layer that allows Windows computer to communicate on the same network. Later versions of SMB(after Windows 2000) use port 445 on top of a TCP stack, TCP allows for internet communication.
+
+Shares in the wild
+Sharename | Type | Comment | Description
+--- | --- | --- | ---
+ADMIN$ | Disk | Remote Admin | Share used for psexec
+C$ | Disk | Default Share | Direct C drive access
+IPC$ | Disk | Remote IPC | Deals with Named Pipes - Attackers Enumerate Here!
+SYSVOL | Disk | Logon server share | [[Active-Directory-Defined]] GPP and GPO, configurations for domain-joined machines
+
+Some organisation have Anonymous logins due to not wanting make people authenicate when they mess with the share file, **but** put restriction on share files - not a misconfiguration [Ref: Unknown Artists](https://www.youtube.com/watch?v=n4DgGFpQrjk)
 
 ## smbmap
 Shows Share **Permissions** and Comment
 ```bash
 smbmap -H $IP
+smbmap -H -u ''
+smbmap -H -u 'Guest' -p 'Anonymous'
+smbmap -H -u 'Guest' -p ''
 smbmap -H $IP -u user -p password # requires credentals
 ```
 
@@ -13,15 +27,6 @@ Scan NetBIOS name servers, enumerate connection points across a network
 ```bash
 nbtscan -r $IP/$CIDR
 ```
-
-## RPCclient
-Query MS-RPC for commands to try and estanblish a null session
-```bash
-rpcclient -U "" -N $IP
-# Authenticated Session
-rpcclient -U <username> --password=<password> $ip
-```
-See enumeration commands [[RPCClient-Cheatsheet]] and its usage [[RPCClient-Usage]]
 
 ## smbget
 Recursively download an entire share
@@ -120,3 +125,4 @@ nmap –p 445 --script smb-brute –script-args userdb=user-list.txt,passdb=pass
 [lzone](https://lzone.de/cheat-sheet/SMB)
 [irgoncalves](https://github.com/irgoncalves/smbclient_cheatsheet)
 [referenced by the above](https://sharingsec.blogspot.com/)
+[Unknown Artists](https://www.youtube.com/watch?v=n4DgGFpQrjk)
