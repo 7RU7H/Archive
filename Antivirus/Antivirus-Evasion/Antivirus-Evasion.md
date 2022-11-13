@@ -135,6 +135,7 @@ Golang is the *goto* language of malware development
 A consideration when using any of the tools to inject shellcode into a binary is that [[MSFvenom-Payloads]]  you must migrate processes if that execuatble you are piggy-backing on terminates at some point. 
 ```ruby
 set AutoRunScript post/windows/manage/migrate
+set AutoRunScript post/linux/manage/migrate
 ```
 
 #### Shellter 

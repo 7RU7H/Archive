@@ -25,8 +25,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Windows/WESNG-Helpsheet.md",
-                "mode": "source",
+                "file": "Post-Exploitation/Privilege-Escalation/Windows/SePrivileges/SePrivilege-Token-Table.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -49,7 +49,55 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Services/Elastix.md",
+                "file": "Recon/Active-Information-Gathering/SMTP/SMTP-Recon-Cheatsheet.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9f434da34cc53739",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/C2/Metasploit/Metasploit.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "525e3c1b0dcd0219",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Windows-File-Transfers.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ca2d892bd0c66f87",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Exploitation/Windows/Potato-Exploits.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b04a995defd09995",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Linux/Linux-Commands/Linux-Processes-Commands.md",
                 "mode": "source",
                 "source": false
               }
@@ -80,7 +128,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -109,7 +157,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": ".Net version",
+                "query": "AutoRun",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -138,7 +186,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Services/Elastix.md",
+                "file": "Exploitation/Windows/Potato-Exploits.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -156,17 +204,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "fc6f4b6becd443bb",
+  "active": "ca2d892bd0c66f87",
   "lastOpenFiles": [
-    "Services/Webservers/ApacheTomcat/Apache-Tomcat.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/WESNG-Helpsheet.md",
-    "Windows/dotNet-Defined.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/SePrivileges/SePrivilege-Token-Table.md",
+    "Tools/Microsoft-Visual-Studios.md",
+    "Exploitation/Windows/Potato-Exploits.md",
     "Exploitation/Compiling-Exploits.md",
-    "Networks/Network-Protocols.md",
-    "Recon/Active-Information-Gathering/RPC/RPC-Recon.md",
-    "Networks/Network-Theory/Network-Protocols/Network-Protocols.md",
-    "Recon/Active-Information-Gathering/RSIP/RSIP-Recon.md",
-    "Recon/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md"
+    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Windows-File-Transfers.md",
+    "Coding-Scripting-Programming/Languages/Powershell/Useful_Powershell.md",
+    "Antivirus/Antivirus-Evasion/Antivirus-Evasion.md",
+    "Linux/Linux-Commands/Linux-Networking-Commands.md",
+    "Linux/Linux-Commands/Linux-Processes-Commands.md",
+    "Tools/C2/Metasploit/Metasploit.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/SePrivileges/SePrivilege-Token-Table.md"
   ]
 }
