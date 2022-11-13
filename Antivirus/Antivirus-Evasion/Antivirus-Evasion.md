@@ -140,6 +140,8 @@ set AutoRunScript post/windows/manage/migrate
 #### Shellter 
 [Shellter](https://www.shellterproject.com/) *"Shellter is a dynamic shellcode injection tool, and the first truly dynamic PE infector ever created. It can be used in order to inject shellcode into native Windows applications (currently 32-bit applications only). The shellcode can be something yours or something generated through a framework, such as Metasploit."* For more see the [[Shellter-Helpsheet]]
 
+Note that in order to restore the execution flow through the Stealth Mode option, custom payloads need to terminate by exiting the current thread.
+
 [AV Evasion Tooling from InfosecInstitute](https://resources.infosecinstitute.com/topic/antivirus-evasion-tools/)
 
 #### Viel-Evasion

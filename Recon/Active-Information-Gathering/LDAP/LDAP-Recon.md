@@ -40,6 +40,8 @@ ldapdomaindump -u '<DOMAIN>\<USERNAME>' -p <PASSWORD> $IP -o $output-directory-n
 
 Optional user and password
 
+https://github.com/ropnop/go-windapsearch
+
 ## Python Ldap
 [See script for enumeration](https://github.com/curtishoughton/Penetration-Testing-Cheat-Sheet/blob/master/Enumeration/LDAP/LDAP.md)
 

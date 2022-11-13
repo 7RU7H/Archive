@@ -8,84 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "5d4aeb6a78b6a776",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Privilege-Escalation.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f0f019aedabca1ed",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Exploitation/Windows/Windows-Internals-Exploitation/AMSI-Exploitation.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d105fc215f0e042a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tools/Shells/Evil-winrm-Cheatsheet.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c164ebfc3f492e2c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Exploitation/Windows/Windows-Internals-Exploitation/AMSI-Exploitation.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0f582c291ff58fbf",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Post-Exploitation/Credentials-Harvesting/AD-Credential-Harvesting.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "bb2f8c86c1376068",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Windows/Powerview/Powerview-Cheatsheet.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "1f7cbe6b3a0d49b9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exploitation/Binary-Exploitation/Binary-Exploitation-Protections.md",
+                "file": "Recon/Active-Information-Gathering/LDAP/LDAP-Recon.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,25 +25,50 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exploitation/Windows/Active-Directory/ACL-Abuse.md",
+                "file": "Tools/C2/Empire/Empire.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "825e7953f2043279",
+            "id": "7c32d11efc16d39f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Coding-Scripting-Programming/Regex.md",
+                "file": "Tools/AV-Evasion/Shellter-Helpsheet.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "daaba15d0f4cee3b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Exploitation/Windows/Active-Directory/AD-Group-Policy-Objects-Exploitation.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "aae185f45f089866",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/C2/Empire/Powershell-Empire-Modules.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -144,7 +97,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Security Identifiers",
+                "query": "Shellter",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -153,7 +106,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -173,7 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Privilege-Escalation.md",
+                "file": "Tools/AV-Evasion/Shellter-Helpsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -191,17 +145,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "5d4aeb6a78b6a776",
+  "active": "7c32d11efc16d39f",
   "lastOpenFiles": [
-    "Exploitation/Windows/Active-Directory/AD-DC-Sync-Attack.md",
-    "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Privilege-Escalation.md",
-    "Post-Exploitation/Persistence/Active-Directory-Persistence/Active-Directory-Persistence.md",
-    "Exploitation/Windows/Active-Directory/ACL-Abuse.md",
-    "Brain-Hacking/Personality.md",
-    "Exploitation/Windows/Windows-Internals-Exploitation/AMSI-Exploitation.md",
-    "Tools/Shells/Evil-winrm-Cheatsheet.md",
-    "Post-Exploitation/Credentials-Harvesting/AD-Credential-Harvesting.md",
-    "Post-Exploitation/Persistence/Active-Directory-Persistence/AD-Persistence-SID-History.md",
-    "Post-Exploitation/Persistence/Active-Directory-Persistence/AD-Persistence-Group-Membership.md"
+    "Antivirus/Antivirus-Evasion/Antivirus-Evasion.md",
+    "Post-Exploitation/Persistence/Active-Directory-Persistence/AD-Persistence-GPOs.md",
+    "Exploitation/Windows/Active-Directory/AD-Group-Policy-Objects-Exploitation.md",
+    "Post-Exploitation/Persistence/Active-Directory-Persistence/AD-Persistence-Tickets.md",
+    "Post-Exploitation/Persistence/Active-Directory-Persistence/AD-Persistence-Certificates.md",
+    "Tools/C2/Empire/Empire.md",
+    "Tools/C2/Empire/Powershell-Empire-Modules.md",
+    "Tools/C2/Empire/Starkiller.md",
+    "Tools/C2/Metasploit/Metasploit.md",
+    "Tools/C2/Metasploit/Build-MSF-Modules.md"
   ]
 }

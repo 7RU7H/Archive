@@ -15,6 +15,8 @@ Default credentials
 USER: neo4j
 PASS: neo4j
 
+[Change Password](https://neo4j.com/docs/operations-manual/current/configuration/password-and-user-recovery/)
+
 ## SharpHound
 [Sharphound](https://github.com/BloodHoundAD/BloodHound/tree/master/Collectors) is the collector that gathers all the information about the network and compresses it into a zip file. You can then import this data and view a map of the AD domain. This very import to see weak points like DCsyncs, Usernames, Trusts. Given compatibility best to get the newest version, replace `v1.0.4` if required.
 
