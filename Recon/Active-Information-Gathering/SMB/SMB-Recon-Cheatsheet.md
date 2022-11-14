@@ -7,7 +7,7 @@ Sharename | Type | Comment | Description
 --- | --- | --- | ---
 ADMIN$ | Disk | Remote Admin | Share used for psexec
 C$ | Disk | Default Share | Direct C drive access
-IPC$ | Disk | Remote IPC | Deals with Named Pipes - Attackers Enumerate Here!
+IPC$ | Disk | Remote IPC | Deals with Named Pipes - Attackers Enumerate Here! - If you can Read [[Crackmapexec-Cheatsheet]] `--rid-brute`
 SYSVOL | Disk | Logon server share | [[Active-Directory-Defined]] GPP and GPO, configurations for domain-joined machines
 
 Some organisation have Anonymous logins due to not wanting make people authenicate when they mess with the share file, **but** put restriction on share files - not a misconfiguration [Ref: Unknown Artists](https://www.youtube.com/watch?v=n4DgGFpQrjk)
@@ -68,6 +68,11 @@ smbclient //$IP/$share -c 'put /var/www/my_local_file.txt .\target_folder\target
 
 ## Crackmapexec!
 [[Crackmapexec-Cheatsheet]]
+```bash
+crackmapexec smb -u 'guest' -p '' --shares
+# If you can read IPC$
+crackmapexec smb -u 'guest' -p '' --rid-brute
+```
 
 ## enum4linux Enumeration
 ```bash

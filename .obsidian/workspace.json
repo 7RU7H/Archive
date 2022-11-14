@@ -8,7 +8,19 @@
         "type": "tabs",
         "children": [
           {
-            "id": "1f7cbe6b3a0d49b9",
+            "id": "c997379218ea0cbd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Recon/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1185f361367d8710",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -20,115 +32,19 @@
             }
           },
           {
-            "id": "832e0f00ec8b11d7",
+            "id": "ca0088f5fa2c4180",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Windows/SePrivileges/SePrivilege-Token-Table.md",
-                "mode": "preview",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7599fde0669b2c53",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Services/Webservers/ApacheTomcat/Apache-Tomcat.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "fc6f4b6becd443bb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Recon/Active-Information-Gathering/SMTP/SMTP-Recon-Cheatsheet.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9f434da34cc53739",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tools/C2/Metasploit/Metasploit.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "525e3c1b0dcd0219",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Windows-File-Transfers.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ca2d892bd0c66f87",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Exploitation/Windows/Potato-Exploits.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b04a995defd09995",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Linux/Linux-Commands/Linux-Processes-Commands.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "2573361cc84de0c4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Exploitation/Compiling-Exploits.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c997379218ea0cbd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Networks/Network-Protocols.md",
+                "file": "Windows/Windows-Concepts/Windows-Permissions.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -157,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "AutoRun",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -186,7 +102,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exploitation/Windows/Potato-Exploits.md",
+                "file": "Windows/Windows-Concepts/Windows-Permissions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -204,17 +120,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "ca2d892bd0c66f87",
+  "active": "ca0088f5fa2c4180",
   "lastOpenFiles": [
-    "Tools/Microsoft-Visual-Studios.md",
-    "Exploitation/Windows/Potato-Exploits.md",
+    "Windows/Windows-Concepts/Windows-File-System.md",
+    "Recon/Active-Information-Gathering/RDP/RDP-Recon.md",
+    "Tools/Impacket/Impacket-Cheatsheet.md",
+    "Recon/Active-Information-Gathering/DNS/DNS-Recon-Active.md",
+    "Recon/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
+    "Tools/DNSRecon-Cheatsheet.md",
+    "Networks/Network-Protocols.md",
     "Exploitation/Compiling-Exploits.md",
-    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Windows-File-Transfers.md",
-    "Coding-Scripting-Programming/Languages/Powershell/Useful_Powershell.md",
-    "Antivirus/Antivirus-Evasion/Antivirus-Evasion.md",
-    "Linux/Linux-Commands/Linux-Networking-Commands.md",
     "Linux/Linux-Commands/Linux-Processes-Commands.md",
-    "Tools/C2/Metasploit/Metasploit.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/SePrivileges/SePrivilege-Token-Table.md"
+    "Linux/Linux-Commands/Linux-Compression-Commands.md"
   ]
 }

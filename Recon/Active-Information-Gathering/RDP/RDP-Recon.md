@@ -1,3 +1,7 @@
+
+When logon to domain, try the various: `sub.domain.local\$user` not just what is displayed 
+
+
 Version and Vulnerability Identification
 ```bash
 # Using nmap NSE scripts

@@ -4,10 +4,13 @@ to execute commands on the server.*
 
 Template engines create static template files for reuse in an application used to display dynamically generated content on a web page. They replace variables inside a template file with actual dynamic values for a client. Insecure implementation of a template engine leads to this vulnerablity.
 
+![](sttimethod.png)
+
 ## Identification Process
+
 `{SSTI}` ->  Accept OR Error
 
-First: `${7*7}` 
+First: `${7*7}`  or `#{7*7}`
 
 Accept | Error
 --- | ---
@@ -62,6 +65,7 @@ ${7*7}
 {{7*7}}
 #{7*7}
 ```
+
 
 ## Payloads
 [PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings//tree/master/Server Side Template Injection)

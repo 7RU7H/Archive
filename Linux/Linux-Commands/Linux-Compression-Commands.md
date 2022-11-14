@@ -6,6 +6,7 @@
 tar xvf $file.tar
 gzip -x $file.gz
 7z e $file.7z
+unrar e $file.rar
 ```
 
 ## Compression
