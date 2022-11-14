@@ -25,6 +25,7 @@ curl --upload-file <file> http://<IP>/test/<filename>
 		- Non-Executable: the server may just send the file's contents to the client in an HTTP response.
 		- Executable: server must be configured to executed that file type it will respond to the client
 			- Else it is not configured and will respond with an Error
+- Get the source code and read it properly
 
 [Portswigger](https://portswigger.net/web-security/file-upload)*"The `Content-Type` response header may provide clues as to what kind of file the server thinks it has served. If this header hasn't been explicitly set by the application code, it normally contains the result of the file extension/MIME type mapping."*
 
@@ -51,7 +52,7 @@ If file permission on the server are lacks, location of file path found and info
 When using [[Burpsuite-Helpsheet]], you may need to configure the types Burp intercepts:
 `Proxy -> Options -> Intercept Client Requests` section, edit the condition of the first line to remove or add.
 
-1. Extension validation - only want a .specific extension
+1. Extension validation - only want a .specific extension, can append **after** or **before**
 2. File type filtering 
 	1. MIME(**M**ultipurpose **I**nternet **M**ail **E**xtension) validation 
 	2. Magic number validation - first bytes of file, `hexedit` to edit in hex.

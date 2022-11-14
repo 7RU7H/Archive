@@ -8,43 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "c997379218ea0cbd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Recon/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "1185f361367d8710",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Recon/Active-Information-Gathering/DNS/DNS-Recon-Active.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ca0088f5fa2c4180",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Windows/Windows-Concepts/Windows-Permissions.md",
+                "file": "Web-Application-Hacking/Upload-Vulnerabilities.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -102,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Windows/Windows-Concepts/Windows-Permissions.md",
+                "file": "Web-Application-Hacking/Upload-Vulnerabilities.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,17 +95,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "ca0088f5fa2c4180",
+  "active": "1185f361367d8710",
   "lastOpenFiles": [
+    "Coding-Scripting-Programming/Languages/PHP/Useful_PHP.md",
+    "Recon/Active-Information-Gathering/DNS/DNS-Recon-Active.md",
+    "Windows/Windows-Concepts/Windows-Permissions.md",
     "Windows/Windows-Concepts/Windows-File-System.md",
     "Recon/Active-Information-Gathering/RDP/RDP-Recon.md",
     "Tools/Impacket/Impacket-Cheatsheet.md",
-    "Recon/Active-Information-Gathering/DNS/DNS-Recon-Active.md",
     "Recon/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
     "Tools/DNSRecon-Cheatsheet.md",
     "Networks/Network-Protocols.md",
-    "Exploitation/Compiling-Exploits.md",
-    "Linux/Linux-Commands/Linux-Processes-Commands.md",
-    "Linux/Linux-Commands/Linux-Compression-Commands.md"
+    "Exploitation/Compiling-Exploits.md"
   ]
 }
