@@ -13,13 +13,74 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Web-Application-Hacking/Upload-Vulnerabilities.md",
+                "file": "Antivirus/Antivirus-Evasion/Antivirus-Evasion.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "010b4731094202de",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Exploitation/Bind-And-Reverse-Shells-Defined.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "96b3ca8ad3b82cc1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Antivirus/Antivirus-Evasion/AMSI-Bypasses/AMSI-ScanBuffer-Patch.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0a4c0ae905254abb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/Useful-Software/Nishang-Helpsheet.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "022e69bd8a660ffd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Antivirus/Antivirus-Evasion/AMSI-Bypasses/AMSI-ScanBuffer-Patch.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "af898d0ff1d351bd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Windows/ASMI.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -77,7 +138,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Web-Application-Hacking/Upload-Vulnerabilities.md",
+                "file": "Exploitation/Bind-And-Reverse-Shells-Defined.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,17 +156,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "1185f361367d8710",
+  "active": "010b4731094202de",
   "lastOpenFiles": [
-    "Coding-Scripting-Programming/Languages/PHP/Useful_PHP.md",
-    "Recon/Active-Information-Gathering/DNS/DNS-Recon-Active.md",
-    "Windows/Windows-Concepts/Windows-Permissions.md",
-    "Windows/Windows-Concepts/Windows-File-System.md",
-    "Recon/Active-Information-Gathering/RDP/RDP-Recon.md",
-    "Tools/Impacket/Impacket-Cheatsheet.md",
-    "Recon/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
-    "Tools/DNSRecon-Cheatsheet.md",
-    "Networks/Network-Protocols.md",
-    "Exploitation/Compiling-Exploits.md"
+    "Exploitation/Shells.md",
+    "Antivirus/Antivirus-Evasion/ASMI-Bypassing.md",
+    "Antivirus/Antivirus-Evasion/AMSI-Bypasses/AMSI-ScanBuffer-Patch.md",
+    "Antivirus/Antivirus-Evasion/AMSI-Bypasses/AMSI-Buffer-Patch-In-memory.md",
+    "Tools/Useful-Software/Nishang-Helpsheet.md",
+    "Windows/ASMI.md",
+    "Antivirus/Antivirus-Evasion/EDR-Bypassing.md",
+    "Antivirus/Antivirus-Evasion/Antivirus-Evasion.md",
+    "Web-Application-Hacking/Upload-Vulnerabilities.md",
+    "Coding-Scripting-Programming/Languages/PHP/Useful_PHP.md"
   ]
 }
