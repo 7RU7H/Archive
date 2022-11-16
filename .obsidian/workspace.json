@@ -13,67 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Antivirus/Antivirus-Evasion/Antivirus-Evasion.md",
+                "file": "Antivirus/Antivirus-Evasion/Obfuscation-Principles.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "010b4731094202de",
+            "id": "941e99256dab0810",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exploitation/Bind-And-Reverse-Shells-Defined.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "96b3ca8ad3b82cc1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Antivirus/Antivirus-Evasion/AMSI-Bypasses/AMSI-ScanBuffer-Patch.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0a4c0ae905254abb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tools/Useful-Software/Nishang-Helpsheet.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "022e69bd8a660ffd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Antivirus/Antivirus-Evasion/AMSI-Bypasses/AMSI-ScanBuffer-Patch.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "af898d0ff1d351bd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Windows/ASMI.md",
+                "file": "Coding-Scripting-Programming/Languages/Powershell/Useful_Powershell.md",
                 "mode": "source",
                 "source": false
               }
@@ -138,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exploitation/Bind-And-Reverse-Shells-Defined.md",
+                "file": "Coding-Scripting-Programming/Languages/Powershell/Useful_Powershell.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -156,17 +108,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "010b4731094202de",
+  "active": "941e99256dab0810",
   "lastOpenFiles": [
-    "Exploitation/Shells.md",
+    "Antivirus/Antivirus-Evasion/Obfuscation-Principles.md",
+    "Antivirus/Antivirus-Evasion/String-Obfuscation-Operations.md",
     "Antivirus/Antivirus-Evasion/ASMI-Bypassing.md",
+    "Antivirus/Antivirus-Evasion/AV-Fingerprinting.md",
     "Antivirus/Antivirus-Evasion/AMSI-Bypasses/AMSI-ScanBuffer-Patch.md",
     "Antivirus/Antivirus-Evasion/AMSI-Bypasses/AMSI-Buffer-Patch-In-memory.md",
-    "Tools/Useful-Software/Nishang-Helpsheet.md",
-    "Windows/ASMI.md",
-    "Antivirus/Antivirus-Evasion/EDR-Bypassing.md",
+    "Windows/Windows-Commands/Windows-Commands.md",
     "Antivirus/Antivirus-Evasion/Antivirus-Evasion.md",
-    "Web-Application-Hacking/Upload-Vulnerabilities.md",
-    "Coding-Scripting-Programming/Languages/PHP/Useful_PHP.md"
+    "Tools/C2/Metasploit/MSFvenom-Payloads.md",
+    "Exploitation/Bind-And-Reverse-Shells-Defined.md"
   ]
 }

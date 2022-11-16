@@ -30,6 +30,19 @@ Stripping Redundant Symbols | Strips symbolic information such as debug informat
 Meaningless Identifiers | Transform a meaningful identifier to something meaningless
 
 
+## String Obfuscation Operations
+
+```powershell
+# Concatenate  
+('co'+'ff'+'ee')
+# Reorder
+('{1}{0}'-f'ffee','co')
+# Whitespace 
+( 'co' +'fee' + 'e')
+```
+
+
 ## References
 [Layered obfuscation: a taxonomy of software obfuscation techniques for layered security paper](https://cybersecurity.springeropen.com/track/pdf/10.1186/s42400-020-00049-3.pdf)
 [THM Obfuscation Principles Room](https://tryhackme.com/room/obfuscationprinciples)
+[THM Holo](https://tryhackme.com/room/hololive)

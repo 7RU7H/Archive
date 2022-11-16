@@ -317,6 +317,18 @@ Enclose with:
 ```
 For the one liner.
 
+## Type accelerators
+
+"Type accelerators are aliases for .NET framework classes allowing access to specific .NET framework classes without having to type the full class name explicitly. For example:
+`AliasAttribute` class from `[System.Management.Automation.AliasAttribute]` to `[Alias]`." 
+[docs.microsoft.com about_type_accelerators in powershell-7.1](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_type_accelerators?view=powershell-7.1)
+
+Create new type accelators [idera adding-new-type-accelerators-in-powershell](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/adding-new-type-accelerators-in-powershell) 
+
+
 ## References
 
 [devblogs.microsoft](https://devblogs.microsoft.com/scripting/)
+[docs.microsoft.com about_type_accelerators in powershell-7.1](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_type_accelerators?view=powershell-7.1)
+[idera adding-new-type-accelerators-in-powershell](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/adding-new-type-accelerators-in-powershell) 
+[THM Holo](https://tryhackme.com/room/hololive)

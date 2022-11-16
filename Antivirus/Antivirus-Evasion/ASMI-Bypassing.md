@@ -19,6 +19,11 @@ AMSI is instrumented in both System.Management.Automation.dll and within the CLR
 
 Bypassing 
 
+Test with: 
+[amsi.fail](https://amsi.fail/) *"AMSI.fail generates obfuscated PowerShell snippets that break or disable AMSI for the current process. The snippets are randomly selected from a small pool of techniques/variations before being obfuscated. Every snippet is obfuscated at runtime/request so that no generated output share the same signatures."*
+
+
+
 ## Bypasses
 
 One enumeration method for bypassing is compare target versions to bypass with [InsecurePowershell](https://github.com/PowerShell/PowerShell/compare/master...cobbr:master), which is a GitHub repository of PowerShell with security features removed. [S3cur3Th1sSh1t's currated List](https://github.com/S3cur3Th1sSh1t/Amsi-Bypass-Powershell)  is represented here with either code or  local links to big code blocks or Cheatsheats with function calls from the framework.
