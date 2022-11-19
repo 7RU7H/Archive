@@ -140,7 +140,6 @@ privilege::debug
 sekurlsa::credman
 ```
 
-
 ## Certification Persistence
 
 ```powershell

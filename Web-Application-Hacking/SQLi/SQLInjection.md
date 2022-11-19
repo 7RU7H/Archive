@@ -103,7 +103,7 @@ With non Blind SQLi there is some form of extracted data:
 - Field Display in HTML
 
 **BEWARE** Boolean-based Blind injections are tedious and time-consuming, use fuzzing or script
-
+**BEWARE** Nested functionality of i.e Registering a User and then as an Authenicated Users the Username is a SQLi on another section of the website. [[SQLmap-CheatSheet]] may require a tamper script with `--tamper tamper.py` to create a user and then exploit the target page.
 
 ## Attack Vectors
 
@@ -185,6 +185,7 @@ asd',username='test',email='hacked
 ',username=sqlite_version(),email='
 -- Then use targeted database's SQL variant -> tablename -> target table's fields -> data
 ```
+
 
 
 
