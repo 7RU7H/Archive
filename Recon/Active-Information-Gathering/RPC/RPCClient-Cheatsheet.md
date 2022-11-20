@@ -17,7 +17,6 @@ queryuser
 enumprivs
 getdompwinfo
 getusrdompwinfo $0xRID
-lsaenumsid
 ```
 ## Enumerating LSA Group Privileges
 ```powershell

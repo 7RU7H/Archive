@@ -1,7 +1,6 @@
-# Hydra-Cheatsheet
-[Original](https://github.com/frizb/Hydra-Cheatsheet), this one is four years old so I made some additions.
+# Hydra Cheatsheet
 
-Hydra Password Cracking Cheetsheet
+Hydra Password Cracking Cheetsheet, the [Original](https://github.com/frizb/Hydra-Cheatsheet), this one is four years old so I made some additions.
 
 ```bash
 # Command 								Description:

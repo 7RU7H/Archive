@@ -13,7 +13,31 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exploitation/Binary-Exploitation/Buffer-Overflow/Stackbased-Buffer-Overflows.md",
+                "file": "Web-Application-Hacking/SQLi/SQLInjection.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a185b85a3ad1607c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cryptography-And-Authentication/Password-Attacks/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "29ffe61f5fec5d10",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/Crackmapexec/Crackmapexec-Cheatsheet.md",
                 "mode": "source",
                 "source": false
               }
@@ -77,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exploitation/Binary-Exploitation/Buffer-Overflow/Stackbased-Buffer-Overflows.md",
+                "file": "Web-Application-Hacking/SQLi/SQLInjection.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,15 +121,15 @@
   },
   "active": "1185f361367d8710",
   "lastOpenFiles": [
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation Bypassing-Contrained-Powershell.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
-    "Coding-Scripting-Programming/Languages/Powershell/Useful_Powershell.md",
-    "Tools/Mimikatz/Mimikatz-Cheatsheet.md",
+    "Cryptography-And-Authentication/Password-Attacks/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
     "Web-Application-Hacking/SQLi/SQLInjection.md",
-    "Web-Application-Hacking/SQLi/SQLmap-CheatSheet.md",
-    "Antivirus/Antivirus-Evasion/Obfuscation-Principles.md",
-    "Antivirus/Antivirus-Evasion/String-Obfuscation-Operations.md",
-    "Antivirus/Antivirus-Evasion/ASMI-Bypassing.md"
+    "Tools/Curl-Cheatsheet.md",
+    "Recon/Active-Information-Gathering/RPC/RPCClient-Cheatsheet.md",
+    "Recon/Active-Information-Gathering/RPC/RPCClient-Usage.md",
+    "Recon/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
+    "Tools/Crackmapexec/Crackmapexec-Cheatsheet.md",
+    "Recon/Active-Information-Gathering/RPC/RPC-Recon.md",
+    "Recon/Active-Information-Gathering/RDP/RDP-Recon.md",
+    "Recon/Active-Information-Gathering/LDAP/LDAP-Recon.md"
   ]
 }

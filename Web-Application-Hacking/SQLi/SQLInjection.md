@@ -4,11 +4,9 @@
 
 SQL injection is a technique used by attacked to execute malicious SQL statements with objective of stealing information, modifying the database or command execution from the context of database interacting with other networked components. Application commonly require dynamic SQL queries to display content conditionally by user context. Users are then granted some part in the process of displaying that content. This input without input sanitization the attacker can make the database interpret the user input as an SQL input instead of data. With parameter control attack can inject malicious query, which may be executed by the database. For introductory material about SQL see [[Introduction-to-SQL]], if you just here for [[SQLmap-CheatSheet]] then follow the latter link.
 
-For possibly the best hand-on-lab on the internet see [TryHackMe SLQinjections Labs room](https://tryhackme.com/room/sqlilab), it has a good curve to the challenges and has a guidance feature so that in browser you can see what SQL quiery you sent. 
-
-Invaluable Payload up-to-date paylaod listings can be found:
-[payloadbox/sql-injection-payload-list](https://github.com/payloadbox/sql-injection-payload-list)
-[PayloadsAllTheThings/](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/SQL%20Injection)
+For possibly the best hand-on-lab on the internet see [TryHackMe SLQinjections Labs room](https://tryhackme.com/room/sqlilab), it has a good curve to the challenges and has a guidance feature so that in browser you can see what SQL quiery you sent. Invaluable Payloads up-to-date payload listings can be found:
+- [Payloadbox](https://github.com/payloadbox/sql-injection-payload-list)
+- [PayloadsAllTheThings/](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/SQL%20Injection)
 
 An ode to SQLI:
 ```poem
@@ -105,6 +103,15 @@ With non Blind SQLi there is some form of extracted data:
 **BEWARE** Boolean-based Blind injections are tedious and time-consuming, use fuzzing or script
 **BEWARE** Nested functionality of i.e Registering a User and then as an Authenicated Users the Username is a SQLi on another section of the website. [[SQLmap-CheatSheet]] may require a tamper script with `--tamper tamper.py` to create a user and then exploit the target page.
 
+## Use-full  Language Features 
+
+Useful feature categorised by use case are featured here to provide are pointer of more that just more commonly used syntax that sterotypes alot of explainations about SQLi.
+
+Aggration functions that concatenate non-null value in a column have utility in retrieval  of data; some language varients:
+- MySQLand SQLIte  `GROUP_CONCAT()` function returns a string with concatenated non-NULL value from a group.
+- PostgreSQL and SQL Server have similar functions called `STRING_AGG()`
+
+
 ## Attack Vectors
 
 #### Input Boxes 
@@ -195,3 +202,5 @@ asd',username='test',email='hacked
 [Computerphile Video](https://www.youtube.com/watch?v=ciNHn38EyRc)
 [payloadbox/sql-injection-payload-list](https://github.com/payloadbox/sql-injection-payload-list
 [PayloadsAllTheThings/](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/SQL%20Injection)
+[MYSQL Group_Concat](https://www.w3resource.com/mysql/aggregate-functions-and-grouping/aggregate-functions-and-grouping-group_concat.php)
+[SQLite Group_Concat](https://www.sqlitetutorial.net/sqlite-group_concat/)
