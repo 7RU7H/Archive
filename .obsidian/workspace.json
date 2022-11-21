@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Web-Application-Hacking/SQLi/SQLInjection.md",
+                "file": "Hardening/Linux-Hardening.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cryptography-And-Authentication/Password-Attacks/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
+                "file": "Services/Snort/Snort.md",
                 "mode": "source",
                 "source": false
               }
@@ -101,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Web-Application-Hacking/SQLi/SQLInjection.md",
+                "file": "Hardening/Linux-Hardening.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,15 +121,15 @@
   },
   "active": "1185f361367d8710",
   "lastOpenFiles": [
-    "Cryptography-And-Authentication/Password-Attacks/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
     "Web-Application-Hacking/SQLi/SQLInjection.md",
+    "Services/Snort/Snort.md",
+    "Networks/Network-Security/Evading-IPS-And-IDS.md",
+    "Cryptography-And-Authentication/Password-Attacks/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
+    "Networks/Network-Protocols.md",
     "Tools/Curl-Cheatsheet.md",
     "Recon/Active-Information-Gathering/RPC/RPCClient-Cheatsheet.md",
     "Recon/Active-Information-Gathering/RPC/RPCClient-Usage.md",
     "Recon/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
-    "Tools/Crackmapexec/Crackmapexec-Cheatsheet.md",
-    "Recon/Active-Information-Gathering/RPC/RPC-Recon.md",
-    "Recon/Active-Information-Gathering/RDP/RDP-Recon.md",
-    "Recon/Active-Information-Gathering/LDAP/LDAP-Recon.md"
+    "Tools/Crackmapexec/Crackmapexec-Cheatsheet.md"
   ]
 }

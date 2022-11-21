@@ -27,6 +27,9 @@ Helpful connect unwanted ssh connections back to there machine lol.
 socat -d -d TCP-L:22,reuseaddr,fork SYSTEM:"nc \\$SOCAT_PEERADDR 22
 ```
 
+SSH Keys
+
+
 
 ## Iptables
 
@@ -44,6 +47,12 @@ mount | grep shm # to check flags
 ```
 
 
+## Disto Specific Guides
+
+[Fedora](https://docs.fedoraproject.org/en-US/fedora/17/html/Security_Guide/chap-Security_Guide-Basic_Hardening.html)
+
+
 ## References
 [ippsec geniunely rocks](https://ippsec.rocks/?#)
 [@climagic](@climagic)
+[Fedroa Hardening Guide(https://docs.fedoraproject.org/en-US/fedora/17/html/Security_Guide/chap-Security_Guide-Basic_Hardening.html)

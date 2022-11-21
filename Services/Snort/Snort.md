@@ -64,7 +64,40 @@ snort -r $logname.log -n 10 # Process only the first 10 lines
 snort -r $logname.log -n 10 -vxde # As above with all sniffing parameters
 ```
 
+## IDS/IPS Mode
 
+NIDS mode parametres
+```bash
+snort -c /etc/snort/snort.conf # Define config file
+snort -c /etc/snort/snort.conf  -T # Test config file
+snort -c /etc/snort/snort.conf -N # Disable Logging - in IDS/IPS mode
+snort -c /etc/snort/snort.conf -D # Background mode
+snort -A # Alert modes (default is full):
+# full - All possible information 
+# fast - alert message, timestamp, src and dst ip plus port number 
+# console - fast style, but to console screen 
+# cmg - CMG style; header in text and hex format
+# none(disable alerts)
+# 
+# IPS mode and dropping packets
+# edit snort.conf or:
+snort -c /etc/snort/snort.conf -q -Q daq afpacket -i $iface0:$iface1
+# -Q daq = activate DAQ (Data Acquisition modules) use afpacket module
+# snort requires atleast two interfaces
+```
+
+## PCAP Investigtion 
+
+```bash
+# Investigate with default reading options
+snort -r $file.pcap # Read a pcap
+snort --pcap-list="$file0.pcap $file1.pcap $file2.pcap $file3.pcap " # space sperated pcap list
+snort --pcap-show # Show pcap name on console during processing
+# Investigate with snort.conf
+# Snort will identify traffic and prompt alerts according to ruleset
+# Make multiple .conf
+sudo snort -c /etc/snort/snort.conf -q -r $file0.pcap -A console -n 10
+```
 
 ## References
 

@@ -243,18 +243,21 @@ SNMPSSH-TRAP
 //dafault 5162 	
 //SNMP Notification over SSH Transport Model 	
 
-## 5353 MultiCast DNS
+## 5353 - MultiCast DNS
 
-## 5355 LLMNR 
+## 5355 - LLMNR 
 - [[Responder-Cheatsheet]] catches hashes from this port
+
+## 5601 - Kibana
+
+Kibana provides search and data visualization capabilities for data indexed in Elasticsearch. The service runs per default on port 5601
 
 
 ## 5985-6 - WinRM
 Windows Remote Management Protocol ports
 See [[Evil-winrm-Cheatsheet]]
 
-## Pando-pub
-7680/tcp
+## 7680 - Pando-pub
 Legacy application [Pando](https://en.wikipedia.org/wiki/Pando_(application)) BitTorrent client and uses the BitTorrent protocol to transfer files.
 
 ## Burp Proxy
