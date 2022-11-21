@@ -9,6 +9,7 @@ See [Debug STMP connection for great description of SMTP commands that occuring 
 ```bash
 telnet $IP 25
 nc -nv $IP 25
+EHLO # client server identification Hello
 VRFY $useremail # verify email address
 EXPN # Ask server for membership
 # To quit telnet is worse than vim
@@ -32,3 +33,4 @@ msf auxiliary(smtp_enum) > exploit
 
 [HackingArticles](https://www.hackingarticles.in/4-ways-smtp-enumeration/)
 [Debug STMP connection for great description of SMTP commands that occuring exploitation of MAil servers](https://www.sparkpost.com/blog/how-to-check-an-smtp-connection-with-a-manual-telnet-session/)
+[Microsoft Use Telnet to test SMTP communication on Exchange servers](https://learn.microsoft.com/en-us/exchange/mail-flow/test-smtp-telnet?view=exchserver-2019)

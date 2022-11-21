@@ -14,6 +14,9 @@ To prevent cheating and ensure this game is realistic, everyone must the follow 
 10.  Resets should only be used if the target has been broken or otherwise rendered unusable; resets shouldn't be used to prevent users from gaining access.
 11.  If one vulnerability is patch then don't spam resets, there are 4-5 methods to gain foothold in every machine.
 
+Additionally:
+- You are allowed to use rootkits. But as implied by rules, while planting rootkits, make sure you do not break the machine or make it unusable for everyone but you.
+
 Points - Points do not go towards your TryHackMe account score.
 
 There are two ways to get points.
