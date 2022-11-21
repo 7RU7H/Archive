@@ -3,19 +3,21 @@ Simple Mail Transport Protocol (SMTP)
 Vulnerable Email Servers can contain valuable information. 
 See [[Networks/Network-Protocols]] for port information.
 
-## Telenet
+See [Debug STMP connection for great description of SMTP commands that occuring exploitation of MAil servers](https://www.sparkpost.com/blog/how-to-check-an-smtp-connection-with-a-manual-telnet-session/)
+
+## Telnet
 ```bash
 telnet $IP 25
 nc -nv $IP 25
 VRFY $useremail # verify email address
 EXPN # Ask server for membership
+# To quit telnet is worse than vim
+[CTRL] + $escapekey_show_on_initial_connection 
+telnet> help # Display commands 
+telnet> close
 ```
 Code 250,251,252 means accepted and user account is valid; code 550 means invalid user.
 
-## Nmap
-```bash
-
-```
 
 ## Metasploit
 ```bash
@@ -27,4 +29,6 @@ msf auxiliary(smtp_enum) > exploit
 ```
 
 ## References
-[hackingarticals](https://www.hackingarticles.in/4-ways-smtp-enumeration/)
+
+[HackingArticles](https://www.hackingarticles.in/4-ways-smtp-enumeration/)
+[Debug STMP connection for great description of SMTP commands that occuring exploitation of MAil servers](https://www.sparkpost.com/blog/how-to-check-an-smtp-connection-with-a-manual-telnet-session/)
