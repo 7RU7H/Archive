@@ -286,14 +286,6 @@ else
         echo "(2) Correct password"
     else
         echo "(3) Incorrect password"
-        exit 1if [[ "$EUID" = 0 ]]; then
-    echo "(1) Currently root"
-else
-    sudo -k # make sure to ask for password on next sudo
-    if sudo true; then
-        echo "(2) Correct password"
-    else
-        echo "(3) Incorrect password"
         exit 1
     fi
 fi

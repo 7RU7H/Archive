@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Coding-Scripting-Programming/Languages/Javascript/Useful_Javascript.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
                 "mode": "source",
                 "source": false
               }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Coding-Scripting-Programming/Languages/Javascript/Useful_Javascript.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +97,8 @@
   },
   "active": "9a499c2a9c3393ca",
   "lastOpenFiles": [
+    "Coding-Scripting-Programming/Languages/Bash/Useful_Bash.md",
+    "Coding-Scripting-Programming/Languages/Javascript/Useful_Javascript.md",
     "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Linux-File-Transfers.md",
     "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Windows-File-Transfers.md",
     "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/File-Transfers.md",
@@ -104,8 +106,6 @@
     "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
     "Recon/Active-Information-Gathering/POP3/POP3.md",
     "Post-Exploitation/Privilege-Escalation/Linux/PrivEsc-Important-Linux-Locations.md",
-    "Recon/Active-Information-Gathering/SMTP/SMTP-Recon-Cheatsheet.md",
-    "Cryptography-And-Authentication/Password-Attacks/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
-    "Services/Databases/MYSQL/MySQL-Cheatsheet.md"
+    "Recon/Active-Information-Gathering/SMTP/SMTP-Recon-Cheatsheet.md"
   ]
 }
