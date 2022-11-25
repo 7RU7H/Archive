@@ -80,6 +80,9 @@ Default  port 80
 
 [[Web-Hacking-Checklist]], [[Website-Recon]] and [[Web-App-Hacking-Methodology]].
 
+## 88 - Kerberos
+Found on the Domain Controller in Active Directory Network - see [[Active-Directory-Kerberos-Authenication-Defined]]
+
 ## 110 - POP3
 Generally port 110, Post Office Protocol 3 is used to download email from mail delivery agent.
 Acronyms: mail transfer agent (MTA), mail delivery agent (MDA), mail submission agent (MSA), mail user agent (MUA).

