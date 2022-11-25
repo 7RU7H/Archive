@@ -317,6 +317,19 @@ Enclose with:
 ```
 For the one liner.
 
+## Credential Making
+
+```powershell
+$pass = convertto-securestring -asplaintext -force -string ""
+$cred = new-object -typename system.management.automation.pscredential -arguementlist "",$pass
+$session = newpssession -computername dc01 -credential $cred
+enter-pssession -session $sessions
+# Sometimes you need to use invoke command instead of $session creation due to shell limitations
+invoke-comand -computername $computername -ScriptBlock { hostname }  -Credential $cred
+# PSRemoting may require a specific configuration:
+-ConfigurationName $configName
+```
+
 ## Type accelerators
 
 "Type accelerators are aliases for .NET framework classes allowing access to specific .NET framework classes without having to type the full class name explicitly. For example:

