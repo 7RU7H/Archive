@@ -16,17 +16,17 @@ Invented by [Paul Pols](https://www.linkedin.com/in/paulpols) The Unified Kill C
 4. Social Engineering ([MITRE Tactic TA0001](https://attack.mitre.org/tactics/TA0001/)) - [[Phishing]]
 5. Exploitation ([MITRE Tactic TA0002](https://attack.mitre.org/tactics/TA0002/))
 6. Persistence ([MITRE Tactic TA0003](https://attack.mitre.org/tactics/TA0002/)) - [[Persistence]]
-7. Defense Evasion ([MITRE Tactic TA0005](https://attack.mitre.org/tactics/TA0005/)) - [[Antivirus-Evasion]]
+7. Defense Evasion ([MITRE Tactic TA0005](https://attack.mitre.org/tactics/TA0005/)) - [[Antivirus-Evasion]], and any technique that done evade defense
 8. Command and Control ([MITRE Tactic TA0011](https://attack.mitre.org/tactics/TA0011/)) - [[C2-Matrix]]
-9. Pivoting ([MITRE Tactic TA0008](https://attack.mitre.org/tactics/TA0008/))- [[Port-Redirection-And-Tunneling]]
-11. Discovery 
+9. Pivoting ([MITRE Tactic TA0008](https://attack.mitre.org/tactics/TA0008/)) - [[Port-Redirection-And-Tunneling]]
+11. Discovery ([MITRE Tactic TA0007](https://attack.mitre.org/tactics/TA0007/)) - [[Network-Infrastructure-Enumeration]]
 12. Privilege Escalation - [[Privilege-Escalation-Defined]]
-13. Credential Access - [[AD-Credential-Harvesting]]
-14. Execution
-15. Lateral Movement - [[Lateral-Movement]]
-16. Collection
-17. Exfiltration - [[Data-Exfiltration-Defined]]
-18. Impact
+13. Credential Access ([MITRE Tactic TA0006](https://attack.mitre.org/tactics/TA0006/)) [[AD-Credential-Harvesting]]
+14. Execution ([MITRE Tactic TA0002](https://attack.mitre.org/tactics/TA0002/))
+15. Lateral Movement ([MITRE Tactic TA0008](https://attack.mitre.org/tactics/TA0008/)) [[Lateral-Movement]]
+16. Collection  ([MITRE Tactic TA0009](https://attack.mitre.org/tactics/TA0009/%3E%3Cp%20style=))
+17. Exfiltration ([MITRE Tactic TA0010](https://attack.mitre.org/tactics/TA0010/)) [[Data-Exfiltration-Defined]]
+18. Impact ([MITRE Tactic TA0040](https://attack.mitre.org/tactics/TA0040/))
 19. Objectives
 
 

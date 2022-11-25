@@ -4,23 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "e4202343252ac19d",
+        "id": "a6e8eaf02250903a",
         "type": "tabs",
         "children": [
           {
-            "id": "9a499c2a9c3393ca",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Security-Enterprises/Cyber-Kill-Chains/Unified-Kill-Chain.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6c1f96ef3b1fa6d7",
+            "id": "c7124d0c663f57ee",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -31,8 +19,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -108,17 +95,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "6c1f96ef3b1fa6d7",
+  "active": "c7124d0c663f57ee",
   "lastOpenFiles": [
-    "Security-Enterprises/Blueteam/Threat-Modelling.md",
+    "Antivirus/Antivirus-Evasion/Antivirus-Evasion.md",
     "Security-Enterprises/Cyber-Kill-Chains/Unified-Kill-Chain.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
-    "Coding-Scripting-Programming/Languages/Bash/Useful_Bash.md",
-    "Coding-Scripting-Programming/Languages/Javascript/Useful_Javascript.md",
-    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Linux-File-Transfers.md",
-    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Windows-File-Transfers.md",
-    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/File-Transfers.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Shell-Escapes.md",
-    "Recon/Active-Information-Gathering/POP3/POP3.md"
+    "Post-Exploitation/Persistence/Persistence.md",
+    "Social-Engineering/Phishing/Phishing.md",
+    "Recon/Active-Information-Gathering/Active-Recon.md",
+    "Recon/Passive-Information-Gathering/Passive-Recon.md",
+    "Post-Exploitation/Post-Exploitation-Enumeration/Network-Infrastructure-Enumeration.md",
+    "Security-Enterprises/Cyber-Kill-Chains/Varonis-Cyber-Kill-Chain.md",
+    "README.md",
+    "Security-Enterprises/Blueteam/Threat-Modelling.md"
   ]
 }
