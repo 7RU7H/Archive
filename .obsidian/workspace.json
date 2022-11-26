@@ -13,26 +13,62 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
+                "file": "Web-Application-Hacking/Bypassing-Rate-Limits.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "7cfe53b4a99502c9",
+            "id": "3becf9f78306a724",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Antivirus/Antivirus-Evasion/ASMI-Bypassing.md",
+                "file": "Cryptography-And-Authentication/Password-Attacks/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f04310e2b464c103",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/Impacket/Impacket-Cheatsheet.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "cc1e2b2f49e412af",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Recon/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "59c12048850108c3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/Nmap/Nmap-Cheatsheet.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -90,7 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Antivirus/Antivirus-Evasion/ASMI-Bypassing.md",
+                "file": "Recon/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -108,17 +144,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "7cfe53b4a99502c9",
+  "active": "cc1e2b2f49e412af",
   "lastOpenFiles": [
+    "Tools/Crackmapexec/Crackmapexec-Cheatsheet.md",
+    "Recon/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
+    "Tools/Impacket/Impacket-Cheatsheet.md",
+    "Cryptography-And-Authentication/Password-Attacks/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
+    "Web-Application-Hacking/Bypassing-Rate-Limits.md",
+    "Web-Application-Hacking/HTTP-Routing.md",
+    "Web-Application-Hacking/CMS/Wordpress.md",
+    "Tools/Nmap/Nmap-Cheatsheet.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
-    "Post-Exploitation/Lateral-Movement/Active-Directory-Lateral-Movement/Active-Directory-Lateral-Movement.md",
-    "Antivirus/Antivirus-Evasion/ASMI-Bypassing.md",
-    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Windows-File-Transfers.md",
-    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/File-Transfers.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Shell-Escapes.md",
-    "Post-Exploitation/Post-Exploitation-Enumeration/Active-Directory/Active-Directory-Footholding.md",
-    "Coding-Scripting-Programming/Languages/Powershell/Useful_Powershell.md",
-    "Post-Exploitation/Lateral-Movement/Lateral-Movement.md",
-    "Post-Exploitation/Lateral-Movement/Active-Directory-Lateral-Movement/AD-Lateral-Movement-With-WMI.md"
+    "Antivirus/Antivirus-Evasion/ASMI-Bypassing.md"
   ]
 }

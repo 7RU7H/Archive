@@ -2,7 +2,7 @@
 
 Checklist:
 - Login page
-- `robot.txt`
+- `robots.txt`
 - `/var/www/html/wp-config.php` contain credentials
 - Enumerate users with `-u` with wpscan
 
@@ -51,7 +51,7 @@ https://monsite.com/wp-includes
 ## Directory  Busting 
 Seclist wordlists
 ```
-Discovery/Web-Content/URLs/urls-wordpress-3.3.1.txt/
+Discovery/Web-Content/URLs/urls-wordpress-3.3.1.txt
 Discovery/Web-Content/CMS/wordpress.fuzz.txt
 Passwords/Honeypot-Captures/wordpress-attacks-july2014.txt
 ```

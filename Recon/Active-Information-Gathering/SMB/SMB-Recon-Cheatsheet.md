@@ -90,7 +90,7 @@ Oneliner for enumerating SMB shares
 nmap -p 139,445 --script=smb-enum-shares.nse,smb-enum-users.nse $IP
 ```
 
-RPC-Bind port 111,  Server convert a remote procedure call program nu,mber to into universal addresses
+RPC-Bind port 111,  Server convert a remote procedure call program number to into universal addresses
 ```bash
 nmap -p 111 --script=nfs-ls,nfs-statfs,nfs-showmount $IP
 ```
