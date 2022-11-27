@@ -16,7 +16,33 @@ For full links to all Articles alphabetically see [[Contents]] to `./mkContents.
 
 The Internet is an awesome resource, but sometimes what it is forgotten the power of small, focused and contained networks of information. This is demonstrative proof of [[NOPSEC-101]]. 
 
-## History and Manifesto
+Fundementally set out in memory of [Dan Kaminsky](https://en.wikipedia.org/wiki/Dan_Kaminsky) and the like, to support Ethical Use of all knowledge, models, tools and techniques. White Hats should be like [Witchers of the Information Age](https://witcher.fandom.com/wiki/Witcher_Wiki) - protect and serve, but collaborate, discover, invent and archive.
+
+1. Promote: 
+	1. Science and the scientific method
+	2. Fixing and break things to fix everything to make it safer
+	3. Historic collection, maintaining of the old
+		1. Wikipedia, Waybackmachine
+	4. Novel and inventiveness 
+	5. Free debate and communal health to debate
+	6. Fair credit for work done; references and payment - coin for your bug bounty hunters
+	7. Optimisation - [[How-To-Be-A-Better-PenTester]]
+	8. Raise others up, if you beat them down, raise them yourself. Expand or Die.
+	9. Diligence - Cleanup, keep systems operational till replacement- Do not crash the box
+	10. Collaberation	
+1. Denounce:
+	- Malicious and Unethical usage of any information contained here
+	- Ideology, replace it and any with it with the stategy and task of being a system, improving and maintaining all systems. 
+	- Fraud, false informationl come correct or get corrected, if you are not healthy enough be corrected  
+1. Prioritize:
+	 1. (Cheat/Help)sheets for Free and Open Source Software and Free Versions of Tools:
+1. Acknowledge:
+	1. Information should be free to those that seek it, but there is prices to uses and seeking of said knowledge.
+	2. Educate should be free to free humanity from ignorance and weakness
+	3. The past
+	4. Any *"other-side"* - Assimilate or Die.
+
+
 
 The idea came from partially from [Motasem Hamdan](https://www.youtube.com/c/MotasemHamdaninfosec) and my own text based notes starting to get unmanagable. Although this is not [HackTricks](https://book.hacktricks.xyz/) I want my own resource for personal use while also being much more than other especially in terms of curation and long term ownership. Secondly Obsidian "second brains", seem like a good idea so I upload it here to somewhat finalise and prompt me to condense all previous my notes into a better format as my more powerful discourse. Visually mindmapping concepts and intent to metacognitively play with the information are vuld like to make a more public and open source,ery important in understanding and learning. I also want a long term Open-Source pedagogical archive to last ten thousand years of people still thinking that ownership of information is an acceptable practice regarding the human endeavour and enterprise. **I do not commend capitalism or those sell that their work**. If one day people can learn things by downloading it into bionic implants, why shouldn't everyone have access to this resource? Or should any insitution have control some informational resources, which never actually in scope of control OR benefial to there long term objectives - Cyberwarfare will be the biggest wake up call in this decade.
 

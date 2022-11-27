@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exploitation/CVEs/ZeroLogon.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
@@ -89,7 +89,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exploitation/CVEs/ZeroLogon.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -109,6 +109,7 @@
   },
   "active": "78cd261313409d40",
   "lastOpenFiles": [
+    "Exploitation/CVEs/ZeroLogon.md",
     "Coding-Scripting-Programming/Languages/Bash/Useful_Bash.md",
     "Recon/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
     "Tools/Impacket/Impacket-Cheatsheet.md",
@@ -117,7 +118,6 @@
     "Recon/Amass.md",
     "Coding-Scripting-Programming/Code-Analysis.md",
     "Tools/Responder-Cheatsheet.md",
-    "Recon/Active-Information-Gathering/Unknown-Service-Recon.md",
-    "Recon/Active-Information-Gathering/Active-Recon.md"
+    "Recon/Active-Information-Gathering/Unknown-Service-Recon.md"
   ]
 }
