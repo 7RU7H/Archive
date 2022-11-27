@@ -168,7 +168,7 @@ with open(wordlist, "r") as f:
 
 ### Nonlocal keyword
 ```python
-nonlocal thisnotglobalbutoutsidefunctionscoping se with care
+nonlocal # thisnotglobalbutoutsidefunctionscopyinguse with care
 ```
 
 Modules and packages allow for programmers to segment code to organise and allow other code to reuse that code. Avoid importing loops main.py-\>foo.py\<-\>bay.py 
@@ -203,7 +203,7 @@ print("Short circuiting using or with is_ternary and is_short_circuiting being T
 print("is keyword check the value in memory is the same")
 ```
 
-# Some Modules and Packages for Hackers
+## Some Modules and Packages for Hackers
 ### requests
 ```python
 import requests

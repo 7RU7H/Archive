@@ -13,7 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1c57c73523c79ec7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/Mimikatz/Mimikatz-Cheatsheet.md",
                 "mode": "source",
                 "source": false
               }
@@ -89,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -109,15 +121,15 @@
   },
   "active": "78cd261313409d40",
   "lastOpenFiles": [
-    "Software/SIEM-Solutions.md",
-    "README.md",
-    "Exploitation/CVEs/ZeroLogon.md",
-    "Coding-Scripting-Programming/Languages/Bash/Useful_Bash.md",
-    "Recon/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
-    "Tools/Impacket/Impacket-Cheatsheet.md",
-    "Cryptography-And-Authentication/Password-Attacks/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
-    "Tools/Burpsuite/Burpsuite-Helpsheet.md",
-    "Recon/Amass.md",
-    "Coding-Scripting-Programming/Code-Analysis.md"
+    "Tools/Mimikatz/Mimikatz-Cheatsheet.md",
+    "Security-Enterprises/Meta-Team-View.md",
+    "Images/RvB-NetSPI.jpeg",
+    "Tools/Nmap/Nmap-Cheatsheet.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation Bypassing-Contrained-Powershell.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
+    "Post-Exploitation/Post-Exploitation-Enumeration/Foothold-Enumeration.md",
+    "Post-Exploitation/Post-Exploitation-Enumeration/Network-Infrastructure-Enumeration.md",
+    "Post-Exploitation/Post-Exploitation-Enumeration/Active-Directory/Active-Directory-Footholding.md"
   ]
 }
