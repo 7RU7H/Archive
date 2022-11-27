@@ -109,6 +109,8 @@
   },
   "active": "78cd261313409d40",
   "lastOpenFiles": [
+    "Software/SIEM-Solutions.md",
+    "README.md",
     "Exploitation/CVEs/ZeroLogon.md",
     "Coding-Scripting-Programming/Languages/Bash/Useful_Bash.md",
     "Recon/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
@@ -116,8 +118,6 @@
     "Cryptography-And-Authentication/Password-Attacks/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
     "Tools/Burpsuite/Burpsuite-Helpsheet.md",
     "Recon/Amass.md",
-    "Coding-Scripting-Programming/Code-Analysis.md",
-    "Tools/Responder-Cheatsheet.md",
-    "Recon/Active-Information-Gathering/Unknown-Service-Recon.md"
+    "Coding-Scripting-Programming/Code-Analysis.md"
   ]
 }

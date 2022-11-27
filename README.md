@@ -27,24 +27,31 @@ Fundementally set out in memory of [Dan Kaminsky](https://en.wikipedia.org/wiki/
 	5. Free debate and communal health to debate
 	6. Fair credit for work done; references and payment - coin for your bug bounty hunters
 	7. Optimisation - [[How-To-Be-A-Better-PenTester]]
-	8. Raise others up, if you beat them down, raise them yourself. Expand or Die.
-	9. Diligence - Cleanup, keep systems operational till replacement- Do not crash the box
-	10. Collaberation	
+	8. Raise others up, if you beat them down, raise them yourself - provide the better way. Expand or Die
+	10. Diligence - Cleanup, keep systems operational till replacement- Do not crash the box
+	11. Collaberation and helping others
 1. Denounce:
 	- Malicious and Unethical usage of any information contained here
 	- Ideology, replace it and any with it with the stategy and task of being a system, improving and maintaining all systems. 
-	- Fraud, false informationl come correct or get corrected, if you are not healthy enough be corrected  
+	- Fraud, false information come correct or get corrected, if you are not healthy enough be corrected
+	- Discourse that aids in dichotomy wars - Vim vs Emacs, but acknowledge pros and cons
+	- Racism 
 1. Prioritize:
-	 1. (Cheat/Help)sheets for Free and Open Source Software and Free Versions of Tools:
+	 1. (Cheat/Help)sheets for Free and Open Source Software and Free Versions of Tools
+	 2. Rules are not just to be broken, a machine can improve its effectiveness through brute forcing probelm solving staticistical 
+	 3. Educate to better others and maintain supriority over adversarial concepts to humanity and competing movements of informational control - stupidity, selfishness, stagnation.
+	 4. Simplify, but document complexity in a linked context
 1. Acknowledge:
 	1. Information should be free to those that seek it, but there is prices to uses and seeking of said knowledge.
 	2. Educate should be free to free humanity from ignorance and weakness
-	3. The past
+	3. The past.
 	4. Any *"other-side"* - Assimilate or Die.
+	5. Break and securing; dicovery and proof-checking are infinite processes.
+	6. When this respository and users are wrong 
+	7. Everyone starts off in utero as a arsehole. Grow, let grow and acknowledge positive growth.
+	8. Acknowledge personal preferences, but in so acknowledge the large context is prioritized - all wares are just some racket for some company or persons, you are just a mechanism for market domination.
 
-
-
-The idea came from partially from [Motasem Hamdan](https://www.youtube.com/c/MotasemHamdaninfosec) and my own text based notes starting to get unmanagable. Although this is not [HackTricks](https://book.hacktricks.xyz/) I want my own resource for personal use while also being much more than other especially in terms of curation and long term ownership. Secondly Obsidian "second brains", seem like a good idea so I upload it here to somewhat finalise and prompt me to condense all previous my notes into a better format as my more powerful discourse. Visually mindmapping concepts and intent to metacognitively play with the information are vuld like to make a more public and open source,ery important in understanding and learning. I also want a long term Open-Source pedagogical archive to last ten thousand years of people still thinking that ownership of information is an acceptable practice regarding the human endeavour and enterprise. **I do not commend capitalism or those sell that their work**. If one day people can learn things by downloading it into bionic implants, why shouldn't everyone have access to this resource? Or should any insitution have control some informational resources, which never actually in scope of control OR benefial to there long term objectives - Cyberwarfare will be the biggest wake up call in this decade.
+The idea came from partially from [Motasem Hamdan](https://www.youtube.com/c/MotasemHamdaninfosec) and my own text based notes starting to get unmanagable. Although this is not [HackTricks](https://book.hacktricks.xyz/) I want my own resource for personal use while also being much more than other especially in terms of curation and long term ownership. Secondly Obsidian "second brains", seem like a good idea so I upload it here to somewhat finalise and prompt me to condense all previous my notes into a better format as my more powerful discourse. Visually mindmapping concepts and intent to metacognitively play with the information are vuld like to make a more public and open source, which is important in understanding and learning. I also want a long term Open-Source pedagogical archive to last ten thousand years of people still thinking that ownership of information is an acceptable practice regarding the human endeavour and enterprise. **I do not commend capitalism or those sell that their work**. If one day people can learn things by downloading it into bionic implants, why shouldn't everyone have access to this resource? Or should any insitution have control some informational resources, which never actually in scope of control OR benefial to there long term objectives - Cyberwarfare will be the biggest wake up call in this decade.
 
 Knowledge and the Truth, will not and should not bow to any authority or any antithesis. Authority is emergent and mutable. Truth is immutable and omnipresent. The Universe is detirministic. Please breath and learn to cope. Therefore, as I laugh re-reading this (months later after updating the README for the first time): I recognise that the information in this repository will hopeful be the most accurate. I have yet to and may not ever be an authoritative voice on any or most of the topics in contain here. Falsity is cancer plaguing humanity even with all the resources and models, the Truth should not be out of reach it. It may hurt though. Like for postulation that randomness or non-detirministic potential unviersally that is not the case and logical provable: 
 
