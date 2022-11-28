@@ -8,5 +8,5 @@ For specific OOP related information see [[Object-Oriented-Programming]] article
 
 ## Compilation
 
-
+https://learn.microsoft.com/en-us/visualstudio/get-started/csharp/run-program?view=vs-2022
 

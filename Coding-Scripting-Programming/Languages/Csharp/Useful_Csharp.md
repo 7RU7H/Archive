@@ -6,3 +6,4 @@ For a good shell see [[Undetectable-Csharp-Reverse-Shells]]
 dir C:\Windows\Microsoft.Net\Framework64\
 # This directory will contain the version of dot net vX.X.XXXX
 ```
+

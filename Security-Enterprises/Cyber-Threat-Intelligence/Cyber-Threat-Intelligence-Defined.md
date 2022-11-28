@@ -81,8 +81,24 @@ Continous data processing from raw data to contextualised and actionable insight
 
 [[Diamond-Model]]
 
+## CTI Tools
+
+[**Urlscan.io**](https://urlscan.io) *is a free service to scan and analyse websites. When a URL is submitted to urlscan.io, an automated process will browse to the URL like a regular user and record the activity that this page navigation creates. This includes the domains and IPs contacted, the resources (JavaScript, CSS, etc) requested from those domains, as well as additional information about the page itself. urlscan.io will take a screenshot of the page, record the DOM content, JavaScript global variables, cookies created by the page, and a myriad of other observations. If the site is targeting the users one of the more than 400 brands tracked by urlscan.io, it will be highlighted as potentially malicious in the scan results*.
+
+[Abuse.ch](https://abuse.ch) is a research project hosted by the Institue for Cybersecurity and Engineering at the Bern University of Applied Sciences in Switzerland. It was developed to identify and track malware and botnets through several operational platforms developed under the project, these platforms:
+
+-   [Malware Bazaar](https://bazaar.abuse.ch/):  A resource for sharing malware samples.
+-   [Feodo Tracker](https://feodotracker.abuse.ch/):  A resource used to track botnet command and control (C2) infrastructure linked with Emotet, Dridex and TrickBot.
+-   [SSL Blacklist](https://sslbl.abuse.ch/):  A resource for collecting and providing a blocklist for malicious SSL certificates and JA3/JA3s fingerprints.
+-   [URL Haus](https://urlhaus.abuse.ch/):  A resource for sharing malware distribution sites.
+-   [Threat Fox](https://threatfox.abuse.ch/):  A resource for sharing indicators of compromise (IOCs).
+
 ## References
 
+[THM Cyber Threat Intel Room](https://tryhackme.com/room/cyberthreatintel)
 [Wikipedia Cyber Threat Intelligence](https://en.wikipedia.org/wiki/Cyber_threat_intelligence) 
 [Crowdstrike](https://www.crowdstrike.com/cybersecurity-101/threat-intelligence/)
-[Wikipedia's Bank Of England quote Definition](https://www.bankofengland.co.uk/-/media/boe/files/financial-stability/financial-sector-continuity/understanding-cyber-threat-intelligence-operations.pdf
+[Wikipedia's Bank Of England quote Definition](https://www.bankofengland.co.uk/-/media/boe/files/financial-stability/financial-sector-continuity/understanding-cyber-threat-intelligence-operations.pdf)
+[urlscan.io About](https://urlscan.io/about/)
+[Abuse.ch](https://abuse.ch)
+[THM Threat Intel Tools Room](https://tryhackme.com/room/threatinteltools)

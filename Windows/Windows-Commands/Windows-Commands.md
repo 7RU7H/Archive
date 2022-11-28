@@ -117,15 +117,17 @@ fsutil		tasks related to file allcation table(FAT) and NTFS file system, reparse
 		drivetype
 		volumeinfo	
 
+# for Hijack Execution Flow
+# change PATH to friendly directory and drop malicious .exe, call the legitimate exe but it run the closest searched PATH variable
 set		Displays stored environment variables
 set VAR		To temporarily change the value of environment variables in the current shell
-        	PATH=C:\YourFavouritePrivEscDir # for Hijack Execution Flow
-        		# change PATH to friendly directory and drop malicious .exe, call the legitimate exe but it run the closest searched PATH variable
+        	PATH=C:\YourFavouritePrivEscDir 
 setx    	To permanently change value by modifying the register.
 		Similar but requires new command prompt, then run set.
 	/S	remotes system, /u [domain]\user /p password
 	/M	make variable system wide
-setx /M PATH "%PATH%;<your-new-path # trunication occurs %PATH%, concatenation of SYSTEM+ USER  values; add that to the 2nd arg of setx
+setx /M PATH "%PATH%;<your-new-path> 
+# trunication occurs %PATH%, concatenation of SYSTEM+ USER  values; add that to the 2nd arg of setx
 setx PATH ~PATH~ # use the search path defined in the PATH environment
 
 setx [/s <computer> [/u [<domain>\]<user name> [/p [<password>]]]] /f <filename> {[<variable>] {/a <X>,<Y> | /r <X>,<Y> <String>} [/m] | /x} [/d <delimiters>]

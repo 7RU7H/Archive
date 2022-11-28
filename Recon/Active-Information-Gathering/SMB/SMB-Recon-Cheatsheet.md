@@ -9,6 +9,7 @@ ADMIN$ | Disk | Remote Admin | Share used for psexec
 C$ | Disk | Default Share | Direct C drive access
 IPC$ | Disk | Remote IPC | Deals with Named Pipes - Attackers Enumerate Here! - If you can Read [[Crackmapexec-Cheatsheet]] `--rid-brute`
 SYSVOL | Disk | Logon server share | [[Active-Directory-Defined]] GPP and GPO, configurations for domain-joined machines
+NETLOGON| 
 
 Some organisation have Anonymous logins due to not wanting make people authenicate when they mess with the share file, **but** put restriction on share files - not a misconfiguration [Ref: Unknown Artists](https://www.youtube.com/watch?v=n4DgGFpQrjk)
 
@@ -57,13 +58,12 @@ smb: \> cd "Active Directory\ # will work to escape the whitespace
 ```
 
 ```bash
-## Transfering files!
+## Transferring files!
 # Download a file from a specific share
 smbclient //$IP/$share -c 'cd folder; ls' password -U username # list
 smbclient //$IP/$sahre -c 'cd folder;get desired_file_name' password -U username 
 # Copy a file to a specific share
 smbclient //$IP/$share -c 'put /var/www/my_local_file.txt .\target_folder\target_file.txt' password -U username 
-
 ```
 
 ## Crackmapexec!
