@@ -13,38 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Recon/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9f7fc305f86d2bf9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Recon/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "fef2933fea78e4fc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Recon/Active-Information-Gathering/LDAP/LDAP-Recon.md",
+                "file": "Hacker-Distros/Kali/Kali-Advanced-Usage.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -73,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "ffuf",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -102,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Recon/Active-Information-Gathering/LDAP/LDAP-Recon.md",
+                "file": "Hacker-Distros/Kali/Kali-Advanced-Usage.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,16 +95,16 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "fef2933fea78e4fc",
+  "active": "ed8f63df71621be6",
   "lastOpenFiles": [
-    "Tools/Crackmapexec/Crackmapexec-Cheatsheet.md",
     "Recon/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
+    "Recon/Active-Information-Gathering/LDAP/LDAP-Recon.md",
+    "Tools/Crackmapexec/Crackmapexec-Cheatsheet.md",
     "Recon/Active-Information-Gathering/RPC/RPCClient-Cheatsheet.md",
     "Coding-Scripting-Programming/Languages/Csharp/Useful_Csharp.md",
     "Coding-Scripting-Programming/Languages/Csharp/Basic-Csharp.md",
     "Coding-Scripting-Programming/Languages/Csharp/Undetectable-Csharp-Reverse-Shells.md",
     "Coding-Scripting-Programming/Languages/Python/Useful_Python.md",
-    "Recon/Active-Information-Gathering/LDAP/LDAP-Recon.md",
     "Windows/Windows-Commands/Windows-Commands.md",
     "Coding-Scripting-Programming/Languages/Powershell/Useful_Powershell.md"
   ]
