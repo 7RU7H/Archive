@@ -13,7 +13,43 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Hacker-Distros/Kali/Kali-Advanced-Usage.md",
+                "file": "Recon/Active-Information-Gathering/NFS/NFS-Recon.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8d9feefc700798b3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Recon/Active-Information-Gathering/LDAP/LDAP-Recon.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a7326e739a38caca",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Recon/Active-Information-Gathering/NFS/NFS-Recon.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3065c484305bf3e8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +84,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "nfs",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -57,7 +93,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -77,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Hacker-Distros/Kali/Kali-Advanced-Usage.md",
+                "file": "Recon/Active-Information-Gathering/NFS/NFS-Recon.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,17 +132,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "ed8f63df71621be6",
+  "active": "2ecc1adbe9f39b70",
   "lastOpenFiles": [
-    "Recon/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
-    "Recon/Active-Information-Gathering/LDAP/LDAP-Recon.md",
-    "Tools/Crackmapexec/Crackmapexec-Cheatsheet.md",
+    "Recon/Active-Information-Gathering/Active-Recon.md",
+    "Tools/Masscan/Masscan-Cheatsheet.md",
     "Recon/Active-Information-Gathering/RPC/RPCClient-Cheatsheet.md",
-    "Coding-Scripting-Programming/Languages/Csharp/Useful_Csharp.md",
-    "Coding-Scripting-Programming/Languages/Csharp/Basic-Csharp.md",
-    "Coding-Scripting-Programming/Languages/Csharp/Undetectable-Csharp-Reverse-Shells.md",
-    "Coding-Scripting-Programming/Languages/Python/Useful_Python.md",
-    "Windows/Windows-Commands/Windows-Commands.md",
-    "Coding-Scripting-Programming/Languages/Powershell/Useful_Powershell.md"
+    "Recon/Active-Information-Gathering/NFS/NFS-Recon.md",
+    "Recon/Active-Information-Gathering/LDAP/LDAP-Recon.md",
+    "Hacker-Distros/Kali/Kali-Advanced-Usage.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
+    "Recon/Local-Setup.md",
+    "Recon/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
+    "Tools/Crackmapexec/Crackmapexec-Cheatsheet.md"
   ]
 }
