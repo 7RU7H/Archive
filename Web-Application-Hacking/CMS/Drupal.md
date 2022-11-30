@@ -1,4 +1,12 @@
-##  Tricks
+
+## Vulnerable Defaults
+
+[This seems insane](https://www.drupal.org/docs/7/core/modules/php), but for the entire version 7 of Drupal you can just press the RCE me button with Authenicated Access Module is drupal core module *or* if it is enabled - was removed in [Drupal 8](https://www.drupal.org/docs/core-modules-and-themes).  The [Drupal 7 core PHP filter module adds the ability to include PHP code in posts so even in configuration  one misconfiguration or failure to properly check the php being executed is a security risk.](https://www.drupal.org/docs/8/modules/php/overview). follow the link: [[Useful_PHP]] for aid in footholding a Drupal 7 box near you.
+
+`/var/www/html/sites/default/settings.php` important configration file containing drupal user and password.
+
+## Tricks
+
 
 ```bash
 # Manual user enumeration

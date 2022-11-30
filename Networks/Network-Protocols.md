@@ -63,10 +63,9 @@ nc -nv $IP
 
 ## 48 - WHOIS 
 
-
 ## 53 - DNS
-Default port 53
-[[DNS-Defined]], [[DNS-Recon-Active]], [[DNS-Recon-Passive]]
+Default port 53 - [[DNS-Defined]], [[DNS-Recon-Active]], [[DNS-Recon-Passive]]
+TCP/UDP; TCP is for zone transfers 
 
 ## 69 - TFTP
 Stands for trivial file transfer protocol - UDP FTP
@@ -156,8 +155,7 @@ openssl s_client -connect <IP>:993 -quiet
 
 ## 389 - LDAP
 Lightweight Directory Access Protocol
-Default port 389
-[[LDAP-Recon]]
+Default port 389 and encrypted variant is 636 - [[LDAP-Recon]]
 
 ## 443 - HTTPS
 //internet messaging access protocol
@@ -185,6 +183,10 @@ Line Printer Daemon
 
 ## 631 - IPP
 Internet printing protocol default port 631
+
+## 636 - LDAPS
+Lightweight Directory Access Protocol over SSL
+Default port 636 and non-encrypted variant is - 389 - [[LDAP-Recon]]
 
 ## 990 - FTPS 
 FTPS default port 990
