@@ -4,70 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "a6e8eaf02250903a",
+        "id": "14deb7e8ed3b483d",
         "type": "tabs",
         "children": [
           {
-            "id": "2ecc1adbe9f39b70",
+            "id": "96597fbb0093bc8b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/Impacket/Impacket-Cheatsheet.md",
+                "file": "Hacker-Distros/Kali/Kali-Configuration/Kali-Configuration.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "8d9feefc700798b3",
+            "id": "51346e491a624d66",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8eddd52d53eda85d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Coding-Scripting-Programming/Languages/PHP/Useful_PHP.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a7326e739a38caca",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Recon/Active-Information-Gathering/NFS/NFS-Recon.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "3065c484305bf3e8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
+                "file": "Hacker-Distros/Kali/Kali-Customization.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -96,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "requests",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -125,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/Impacket/Impacket-Cheatsheet.md",
+                "file": "Hacker-Distros/Kali/Kali-Customization.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -143,17 +108,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "2ecc1adbe9f39b70",
+  "active": "51346e491a624d66",
   "lastOpenFiles": [
-    "Exploitation/Windows/Active-Directory/Attacking-Kerberos.md",
-    "Tools/Impacket/Impacket-Cheatsheet.md",
-    "Tools/Useful-Software/Kerbrute-Cheatsheet.md",
-    "Recon/Active-Information-Gathering/NFS/NFS-Recon.md",
-    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Linux-File-Transfers.md",
-    "Web-Application-Hacking/CMS/Drupal.md",
-    "Networks/Network-Protocols.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
-    "Coding-Scripting-Programming/Languages/PHP/Useful_PHP.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/LinEnum-Helpsheet.md"
+    "Hacker-Distros/Kali/Kali-Configuration/Kali-Configuration.md",
+    "Security-Enterprises/Cyber-Kill-Chains/Diamond-Model.md",
+    "Security-Enterprises/Cyber-Kill-Chains/Lockhead-Martin-Cyber-Kill-Chain.md",
+    "Forensics/Timestomping.md",
+    "Exploitation/Watering-Hole-Attack.md",
+    "Exploitation/Bad-USBs.md",
+    "Coding-Scripting-Programming/Languages/Visual-Basic/Useful_Visual_Basic.md",
+    "Reconnaissance/OSINT.md",
+    "Web-Application-Hacking/Web-Concepts/HTTP-Defined.md",
+    "Tools/Amass.md"
   ]
 }

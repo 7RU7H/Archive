@@ -9,7 +9,6 @@ This is a hub page for Kali Linux configuration
 [[Configuring-Users-And-Groups-With-Kali]]
 [[Managing-Services-With-Kali]]
 
-
 ## References
 
 [PEN-103]()

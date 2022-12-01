@@ -10,12 +10,12 @@
 ## Bypassing with Header
 [infosec](https://infosecwriteups.com/bypassing-rate-limit-like-a-pro-5f3e40250d3c)
 
-1.  X-Forwarded-For : IP
-2.  X-Forwarded-Host : IP
-3.  X-Client-IP : IP 
-4.  X-Remote-IP : IP
-5.  X-Remote-Addr : IP
-6.  X-Host : IP
+1.  X-Forwarded-For: IP
+2.  X-Forwarded-Host: IP
+3.  X-Client-IP: IP 
+4.  X-Remote-IP: IP
+5.  X-Remote-Addr: IP
+6.  X-Host: IP
 
 ## Bypassing Rate Limit with some Characters
 1. Adding Null Byte ( %00 ) at the end of the Email can sometimes Bypass Rate Limit. 
