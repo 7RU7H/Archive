@@ -26,7 +26,7 @@ use auxiliary/scanner/smtp/smtp_enum
 msf auxiliary(smtp_enum) > set rhosts $IP
 msf auxiliary(smtp_enum) > set rport 25
 msf auxiliary(smtp_enum) > set USER_FILE /usr/
-msf auxiliary(smtp_enum) > exploit
+msf auxiliary(smtp_enum) > exploitv
 ```
 
 ## References

@@ -25,14 +25,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Hacker-Distros/Kali/Kali-Customization.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "96404c7150e97dab",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Coding-Scripting-Programming/Regular-Expressions.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -90,7 +102,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Hacker-Distros/Kali/Kali-Customization.md",
+                "file": "Coding-Scripting-Programming/Regular-Expressions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -108,17 +120,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "51346e491a624d66",
+  "active": "96404c7150e97dab",
   "lastOpenFiles": [
+    "Forensics/Log-Analysis.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+    "Reconnaissance/Active-Information-Gathering/SMTP/SMTP-Recon-Cheatsheet.md",
+    "Coding-Scripting-Programming/Languages/Bash/Useful_Bash.md",
+    "Hacker-Distros/Kali/Kali-Customization.md",
     "Hacker-Distros/Kali/Kali-Configuration/Kali-Configuration.md",
     "Security-Enterprises/Cyber-Kill-Chains/Diamond-Model.md",
     "Security-Enterprises/Cyber-Kill-Chains/Lockhead-Martin-Cyber-Kill-Chain.md",
     "Forensics/Timestomping.md",
-    "Exploitation/Watering-Hole-Attack.md",
-    "Exploitation/Bad-USBs.md",
-    "Coding-Scripting-Programming/Languages/Visual-Basic/Useful_Visual_Basic.md",
-    "Reconnaissance/OSINT.md",
-    "Web-Application-Hacking/Web-Concepts/HTTP-Defined.md",
-    "Tools/Amass.md"
+    "Exploitation/Watering-Hole-Attack.md"
   ]
 }
