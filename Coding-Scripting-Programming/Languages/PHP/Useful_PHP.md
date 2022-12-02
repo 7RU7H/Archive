@@ -12,6 +12,26 @@ Execute file:
 php file.php
 ```
 
+## Useful Functions listing
+
+Regex
+[preg_match](https://www.php.net/manual/en/function.preg-match.php) - Perform a regular expression match
+
+[is_resource](https://www.php.net/manual/en/function.is-resource.php) - Finds whether a variable is a resource
+
+Arrays
+[array_shift](https://www.php.net/manual/en/function.array-shift.php) - Shift an element off the beginning of array
+
+Strings 
+[explode](https://www.php.net/manual/en/function.explode.php) - Split a string by a string
+[implode](https://www.php.net/manual/en/function.implode.php) - Join array elements with a string
+
+Files
+[finfo_open](https://www.php.net/manual/en/function.finfo-open.php) - Create a new finfo instance
+[move_uploaded_file](https://www.php.net/manual/en/function.move-uploaded-file.php) - Moves an uploaded file to a new location
+[file_put_contents](https://www.php.net/manual/en/function.file-put-contents.php)
+
+
 ## Scripting
 
 Http `cmd` super global variable function for RCEs  

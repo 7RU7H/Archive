@@ -42,9 +42,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "7f5e932c52218144",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Coding-Scripting-Programming/Code-Auditing.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -102,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Coding-Scripting-Programming/Regular-Expressions.md",
+                "file": "Coding-Scripting-Programming/Code-Auditing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,17 +132,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "96404c7150e97dab",
+  "active": "7f5e932c52218144",
   "lastOpenFiles": [
+    "Coding-Scripting-Programming/Programming-Paradigms/Functional-Programming.md",
+    "Coding-Scripting-Programming/Languages/PHP/Useful_PHP.md",
+    "Coding-Scripting-Programming/Code-Auditing.md",
+    "Coding-Scripting-Programming/Regular-Expressions.md",
     "Forensics/Log-Analysis.md",
     "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
     "Reconnaissance/Active-Information-Gathering/SMTP/SMTP-Recon-Cheatsheet.md",
     "Coding-Scripting-Programming/Languages/Bash/Useful_Bash.md",
     "Hacker-Distros/Kali/Kali-Customization.md",
-    "Hacker-Distros/Kali/Kali-Configuration/Kali-Configuration.md",
-    "Security-Enterprises/Cyber-Kill-Chains/Diamond-Model.md",
-    "Security-Enterprises/Cyber-Kill-Chains/Lockhead-Martin-Cyber-Kill-Chain.md",
-    "Forensics/Timestomping.md",
-    "Exploitation/Watering-Hole-Attack.md"
+    "Hacker-Distros/Kali/Kali-Configuration/Kali-Configuration.md"
   ]
 }
