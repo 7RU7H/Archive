@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Social-Engineering/Phishing/Phishing-Analysis-Tools.md",
+                "file": "Cloud/Azure/Azure-Defined.md",
                 "mode": "source",
                 "source": false
               }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Social-Engineering/Phishing/Phishing-Analysis-Tools.md",
+                "file": "Cloud/Azure/Azure-Defined.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,15 +97,15 @@
   },
   "active": "96597fbb0093bc8b",
   "lastOpenFiles": [
+    "Cloud/Cloud-Computing-Defined.md",
+    "Cloud/Azure/Azure-Defined.md",
+    "Social-Engineering/Phishing/Phishing-Analysis-Tools.md",
     "Reconnaissance/OSINT.md",
     "Networks/Network-Protocols.md",
     "Tools/Useful-Software/Puzzle-Solution-Tools.md",
     "Social-Engineering/Phishing/Phishing.md",
     "Tools/Useful-Software/Cyberchef.md",
     "Social-Engineering/Phishing/Phishing-Email-Header-Analysis.md",
-    "Social-Engineering/Phishing/Phising-Email-Analysis-Defined.md",
-    "Social-Engineering/Phishing/Untitled.md",
-    "Social-Engineering/Phishing/Defending-Against-Phishing.md",
-    "Cloud/Cloud-Defined.md"
+    "Social-Engineering/Phishing/Phising-Email-Analysis-Defined.md"
   ]
 }
