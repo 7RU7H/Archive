@@ -15,8 +15,12 @@ grep -i						#ignore case
 grep -l						#list filename containing the pattern
 grep -v						#print all lines not containing the pattern
 grep -e						#MULTIPLE PATTERNS!
+grep -x                     # match whole line
 
+# Useful greps
 grep '.conf\|config*'       # Grep x or y
+grep -x '.{8,}'
+
 ```
 
 Regular Expressions for easy text manipulation on the cmdline:

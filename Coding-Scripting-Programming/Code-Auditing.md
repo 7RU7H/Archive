@@ -25,7 +25,7 @@ This article concerns Code Auditing/review via the use of Linux based CLI, edito
 2.  Error code minor difference make the difference 
 3. Consider the known application security issues that are derived from insecure coding practices:
 	- Input validation
-	- OUtpu encoding
+	- Output encoding
 	- Missing access controls
 	- Weak regex checks
 

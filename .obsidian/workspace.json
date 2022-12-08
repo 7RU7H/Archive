@@ -13,50 +13,74 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Hacker-Distros/Kali/Kali-Configuration/Kali-Configuration.md",
+                "file": "Reconnaissance/OSINT.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "51346e491a624d66",
+            "id": "e63481a9fb112fe5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+                "file": "Social-Engineering/Phishing/Phishing-Email-Header-Analysis.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "96404c7150e97dab",
+            "id": "0f413147fc08e34c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Coding-Scripting-Programming/Regular-Expressions.md",
+                "file": "Social-Engineering/Phishing/Phishing.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "7f5e932c52218144",
+            "id": "7a94e8be45669a71",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Coding-Scripting-Programming/Code-Auditing.md",
+                "file": "Social-Engineering/Phishing/Defending-Against-Phishing.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d2bb03e699a797a6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cloud/Cloud-Defined.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9e09419aaa34f613",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Brain-Hacking/Hacking-The-Thing.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -114,7 +138,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Coding-Scripting-Programming/Code-Auditing.md",
+                "file": "Social-Engineering/Phishing/Phishing-Email-Header-Analysis.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,17 +156,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "7f5e932c52218144",
+  "active": "e63481a9fb112fe5",
   "lastOpenFiles": [
-    "Coding-Scripting-Programming/Programming-Paradigms/Functional-Programming.md",
-    "Coding-Scripting-Programming/Languages/PHP/Useful_PHP.md",
-    "Coding-Scripting-Programming/Code-Auditing.md",
-    "Coding-Scripting-Programming/Regular-Expressions.md",
-    "Forensics/Log-Analysis.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
-    "Reconnaissance/Active-Information-Gathering/SMTP/SMTP-Recon-Cheatsheet.md",
-    "Coding-Scripting-Programming/Languages/Bash/Useful_Bash.md",
-    "Hacker-Distros/Kali/Kali-Customization.md",
-    "Hacker-Distros/Kali/Kali-Configuration/Kali-Configuration.md"
+    "Social-Engineering/Phishing/Phishing.md",
+    "Social-Engineering/Phishing/Phising-Email-Analysis-Defined.md",
+    "Social-Engineering/Phishing/Untitled.md",
+    "Social-Engineering/Phishing/Phishing-Email-Header-Analysis.md",
+    "Social-Engineering/Phishing/Defending-Against-Phishing.md",
+    "Cloud/Cloud-Defined.md",
+    "Cloud/Azure/Azure-Defined.md",
+    "Cloud/Cloud-Hacking/AWS-Hacking.md",
+    "Cryptography-And-Authentication/Password-Attacks/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
+    "Virtualization/Lab-Making/Active-Directory-Lab.md"
   ]
 }

