@@ -2,6 +2,10 @@
 
 To write or stop the *"good phising"*, similarly to malware devlopment knowing the toolset of the opposing sides tools is useful in testing the computational how of phishing and correspond analytical techniques and tools to stop it. 
 
+## Headers, Bodies and Attachments
+
+[emlAnalyzer](https://github.com/ninoseki/eml_analyzer)
+
 ## Headers
 
 Messageheader: https://toolbox.googleapps.com/apps/messageheader/analyzeheader
@@ -25,7 +29,7 @@ https://www.wannabrowser.net/
 
 ### URL extractor
 URL Extractor: https://www.convertcsv.com/url-extractor.htm
-CyberChef -> Extract URLs
+[[Cyberchef]] -> Extract URLs
 
 ## URL reputation
 
