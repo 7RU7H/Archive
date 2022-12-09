@@ -38,7 +38,7 @@ Pairing is Geopolitical borders, except Brazil South see: [Azure Cross Replicati
 
 VM cannot span zones, Zonal VMs that can provide the same service
 
-#### Authenication and Authorization
+#### Authentication and Authorization
 
 Azure Active Directory is a Cloud identity provider [[Active-Directory-Defined]],  the Authentication protocols used in Azure include:
 - Open ID connect
@@ -230,7 +230,126 @@ Database services in Azure for responsibility do not need to run in a VM as resp
 - MSSQL 
 	- Azure SQL Databaste (PaaS)
 	- Azure SQL Managed Instances 
+- PostgreSQL - optional Hyper Scale for sharding over multiple servers
+- MySQL
+- ComosDB 
+	- Multiple database models - graph, rest, etc
+	- Pickage consistency of the data between databases
+
+Migration Data Service will ascertian how MSSQL is used on-premise and how itcan then be used in Azure. 
+
+#### Azure Markplace
+
+Application and solutions both Microsoft and Third Party are listed here, with pricing and licensing.
+
+#### IoT Services
+
+Azure IoT Hub manages registered devices to SDKs to communicat (managed by Azure) with Applications.
+
+Azure Iot Central sit on top of Azure IoT Hub adds a GUI, rules wizard and analytics
+
+Aziure Sphere is securing IoT devices, it runs a OS (customised Linux Kernel) and AS3 service that checks for compromise
+
+#### Data Services
+
+Data services encapsulate extract, transformance and load from source system to a sync system - this is orchestratrated by the Azure Data Factory.
+
+HDInsight - will transform data into open source frameworks   
+Databricks - managed offering builton Apache sparks for transformation
+
+Azure Synapse Analytics is an all in one solution to analyse data, but provides Warehousing, its own Apache Spark tranformation service.
+
+#### AI Services
+
+Azure Machine Learning - platform for prediction, company provides data, model, testing and deployment of AI models.
+
+Azure Cognitive Services - Prebuilt models
+
+Azure Bot Service - Bots that interact with humans that can linked into multiple channels.
 
 
-Control plane - ARM 
-Data plane 
+#### DevOps Services
+
+Azure DevOps has repositories, Git is the standard for version control 
+- Boards for management
+- Artficats
+- Test plans
+
+Github is builtin to Azure it is the modern standard owned by Microsoft. It will surpace Azure DevOps.
+
+DevTest Labs creates any in ARM template and testing something and tearing down afterwards.
+
+#### Costs in Azure and Optimisations
+
+Costs | Optimizations
+--- | ---
+Type | IaaS -> PaaS
+SKU | Optimal Ratio Resources to Workload
+Tier | Lifecycle Management
+Location | Tags for owner catergorisation
+Metering | 
+Provisioned? | Resource Group to delete non required resources
+Running? | Deallocate
+How many? | Auto Scale 
+Work doing? |
+How much is it storing? - Capicity and Interaction | 
+Licensing | 
+
+Azure Advisor recommends costing.
+
+Azure Reservations discout services for reservation commitments of 1 to 3 years terms.
+
+Azure Spot VMs are VMS that are non-allocated VMs spaces used be paid Subscribers that have an eviction rate if they are then required by others. When stopped state is saved; costwise it is cheap. 
+
+[Pricing Calculator](https://azure.microsoft.com/en-gb/pricing/calculator/)
+[Total Cost of Ownship Calculator](https://azure.microsoft.com/en-gb/pricing/tco/calculator/)
+
+
+#### Azure Advisor
+
+Service focused on guidance for cost, performance, security, reliability, operational excellence, etc.
+
+#### Azure Monitor
+
+Azure Monitor for Monitoring the metrics and logs under one subcription. Data from logs can can be channeled through Diagnostic settings to other services like Log Analytics Workspace, which is part of Azure Monitor that is a log ingestion service, at a cost. Event hub can be subscribed to be external [[SIEM-Solutions]].
+
+Systems like Azure AD's logs, Subscription ARM level logs, Resource's logs and metrics - Log do not get stored by default.
+
+Alert Rules can be created and monitored in Azure Monitor
+Action Rules can be different scope based on Alerts that can call an Action Group.
+
+
+#### Service Level Agreements and Compliance
+
+Service Level Agreements (SLA) describe the percentage in per unit of time that a service can be down. Resources each have their own SLAs. 
+
+Private Preview and Public Preview has No SLA or Support to preview services till it is consided a General Availability Service, which has SLA and support.
+
+[Microsoft Privacy Statement](https://privacy.microsoft.com/en-gb/privacystatement)
+[Online Service terms](https://azure.microsoft.com/en-gb/support/legal/)
+[Online Subscription Agreement](https://azure.microsoft.com/en-gb/support/legal/subscription-agreement/)
+[Data Protection Addendum](https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA)
+
+The Trust Center details security compliance details. 
+
+#### Security
+
+Consider Confidentiality, Integrity and Avaliablility
+
+Defence in depth
+- Identity and Access
+- Physical 
+- Perimeter
+- Network - NSG, disable by default allow by exception
+- Compute - patching
+- Application
+- Data - encrypted at rest or in transit
+
+Microsoft Defender for Cloud, hooks into compliance offering, scoring system, just in time service - RDP when it is required. 
+
+Azure Sentinel sit on top of Log Analytics Workspaces as Microsoft SIEM and Security Automation Response (SAR) tool.
+
+
+## References
+
+[AZ 900 Johnthebrit's 2022 study cram for Azure Fundementals video](https://www.youtube.com/watch?v=tQp1YkB2Tgs&t=8348s)

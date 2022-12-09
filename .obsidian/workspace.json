@@ -57,8 +57,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -96,7 +95,7 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "904463d60d8efa8d",
+  "active": "ed8f63df71621be6",
   "lastOpenFiles": [
     "Cloud/Cloud-Computing-Defined.md",
     "Cloud/Azure/Azure-Defined.md",
