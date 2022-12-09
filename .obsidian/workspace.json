@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "requests",
+                "query": "file:]",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -57,7 +57,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -95,7 +96,7 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "96597fbb0093bc8b",
+  "active": "904463d60d8efa8d",
   "lastOpenFiles": [
     "Cloud/Cloud-Computing-Defined.md",
     "Cloud/Azure/Azure-Defined.md",
