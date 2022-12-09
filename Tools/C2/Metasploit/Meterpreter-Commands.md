@@ -1,5 +1,14 @@
 # Meterpreter 
 
+Is very powerful and very well known to vendors.
+
+
+For convert shell to meterpreter
+```ruby
+sessions -u -1 # -1 is the sessions number
+```
+
+
 ## Modules to use with Meterpreter
 
 
@@ -9,7 +18,15 @@ search suggest
 exploit/windows/local/service_permissions
 post/windows/gather/credentials/gpp
 post/windows/gather/enum_unattend
+
+
+resolve webservice_database # resolves internal IP address of databases use on the compromised machine
+
+route add $CIDR -1 # -1 is the session number
+route print
 ```
+
+Consider reviewing [[Pivoting-and-Proxying-with-Metasploit]]
 
 ## Commands
 
