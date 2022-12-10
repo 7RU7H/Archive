@@ -55,7 +55,9 @@ Sites | Collections of users, groups, computers as defined by their physical loc
 ## Download the ISO files
 
 ## Virtual Box
+
 **Installation and QoL**
+
 1. After creating DC machine change the `Shared Clipboard` and `Drag'n'Drop` settings to `Bidirection`.
 1. Creating a Network interface card NIC: First needs to be attached to` NAT`  another on `Internal Network`.
 1. Run DC vm and add the ISO, select location, time and currency formating and keyboard setting you prefer.

@@ -64,12 +64,10 @@ Role Assignment
 
 Budget - Costing 
 
-## Subscriptions
-
+#### Subscriptions
 
 A subscription is base unit of Azure interaction and an agreement between Microsoft and customer. [Azure subscription limits and quotas - Azure Resource Manager | Microsoft Learn](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/azure-subscription-service-limits)
 Different subscription can be used for structural reasons. RBAC, Policy and Budget can be applied to eac.
-
 
 #### Azure Resource Manager
 
@@ -113,7 +111,7 @@ Subscriber migrating to the cloud from exist workloads and enivornment can follo
 - Manages operations for cloud and hydrid solutions
 - Organizes to align team and roles support business's cloud adoption efforts
 
-####  Resources
+#### Resources
 
 Virtualisation of the Hardware
 
@@ -158,7 +156,6 @@ Subnets can have Service Endpoints that can optimised and secures a route to a s
 Private Endpoints can instead be a set an IP in a Subnet that point to a particular version of that service.
 
 Public Endpoints and protected by basic Azure DDoS protection service, standard plans can be purchase to protect particular areas of the your Subscription's Virtual Network
-
 
 Multiple VNs can be peered,which we route over the Azure Backbone.
 Gatway can be created to connect over the internet  to on-premises networks, encrypted with:
@@ -266,7 +263,6 @@ Azure Machine Learning - platform for prediction, company provides data, model, 
 Azure Cognitive Services - Prebuilt models
 
 Azure Bot Service - Bots that interact with humans that can linked into multiple channels.
-
 
 #### DevOps Services
 
