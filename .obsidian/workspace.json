@@ -13,74 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Virtualization/Lab-Making/Active-Directory-Lab.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a2a97649ad6a16f7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-AD-Administration.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "85c09a3a822b82b1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-AD-Device-Management.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7b4d03da6e616f54",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Blockchain/Blockchains-Defined.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4b987017eec596ab",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Blockchain/Smart-Contact-Hacking/Smart-Contract-Hacking.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0cf2d610686c2dc3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cloud/Azure/Azure-Defined.md",
+                "file": "Tools/Impacket/Impacket-Cheatsheet.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -138,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blockchain/Smart-Contact-Hacking/Smart-Contract-Hacking.md",
+                "file": "Tools/Impacket/Impacket-Cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -156,17 +95,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "4b987017eec596ab",
+  "active": "96597fbb0093bc8b",
   "lastOpenFiles": [
-    "Blockchain/Blockchains-Defined.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-AD-Device-Management.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-AD-Administration.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration.md",
+    "Exploitation/Windows/Active-Directory/Pass-The-Ticket.md",
+    "Tools/Crackmapexec/Crackmapexec-Cheatsheet.md",
     "Virtualization/Lab-Making/Active-Directory-Lab.md",
-    "Tools/C2/Metasploit/Pivoting-and-Proxying-with-Metasploit.md",
-    "Cloud/Azure/Azure-Defined.md",
-    "Tools/C2/Metasploit/Meterpreter-Commands.md",
-    "Networks/Network-Theory/IPvX/IPv4-Subnet-Masks-Dictionary.md",
-    "Post-Exploitation/Credentials-Harvesting/Web-App-Credentials.md"
+    "Cloud/Azure/Azure-Administration/Azure-Administration-AD-Administration.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-AD-Device-Management.md",
+    "Blockchain/Blockchains-Defined.md",
+    "Hacker-Distros/Kali/Setup-Services/Kali-Setup-Docker.md",
+    "Services/Docker/Intro-To-Docker.md",
+    "Blockchain/Smart-Contact-Hacking/Smart-Contract-Hacking.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration.md"
   ]
 }
