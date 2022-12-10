@@ -1,6 +1,6 @@
 # Azure AD Administration
 
-AD and AD Cloud are just local and remote variants of AD, both are in use today and connectable with Hyrid Cloud. 
+AD and AD Cloud are just local and remote variants of AD, both are in use today and connectable with Hyrid Cloud. See [[Active-Directory-Defined]] for on-premise AD definitions and descriptions.
 
 Identity and Access management service
 
@@ -20,7 +20,6 @@ Azure AD Editions:
 2. Office 365 Apps -  Company Branding, SLA, Two-Sync between On-Premise and Cloud
 3. Premium 1 -  Hybrid Architecture Advanced Group Access, Conditional Access
 4. Premium 2 - Identity protection and governace
-
 
 Domain - logical group, AD requires DNS managing domain-joined hosts
 Domain Controller - Server that manages the DNS, Service Authorization, Storage and Cross Domain related interactions  
