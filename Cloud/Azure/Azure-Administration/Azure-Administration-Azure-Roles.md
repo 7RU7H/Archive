@@ -1,6 +1,6 @@
 # Azure Administration - Azure Roles
 
-# Azure AD Roles
+#### Azure AD Roles
 
 Azure AD roles are used to manage Azure AD resources in a directory such as:
 - create units
@@ -56,12 +56,10 @@ Azure AD Roles | Azure Roles
 Controls access of AD resources | Control access to Azure resources
 
 - By default, Azure Roles and Azure AD do not span Azure and Azure AD
-- By default the Global Administrator does not have access to Azure resources
+- By default, the Global Administrator does not have access to Azure resources
 - Global Administrator must be grant access to Azure resource if granted the User Access Administrator role
 
 [Assign Azure roles using Azure PowerShell](https://learn.microsoft.com/en-us/azure/role-based-access-control/role-assignments-powershell)
-
-
 
 ## References
 

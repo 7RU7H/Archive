@@ -30,9 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "329d6c92e24d6a93",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Policies.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -90,7 +102,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Roles.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Policies.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -108,17 +120,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "b286b8c83373cde8",
+  "active": "329d6c92e24d6a93",
   "lastOpenFiles": [
     "Cloud/Azure/Azure-Administration/Azure-Administration-AD-Device-Management.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-AD-Administration.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Policies.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Roles.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-AD-Administration.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration.md",
     "Exploitation/Windows/Potato-Exploits.md",
     "Services/Databases/MSSQL/MSSQL-Hacking.md",
     "Tools/Impacket/Impacket-Cheatsheet.md",
     "Reconnaissance/Local-Setup.md",
-    "Reconnaissance/Active-Information-Gathering/LDAP/LDAP-Recon.md",
-    "Exploitation/Windows/Active-Directory/Pass-The-Ticket.md"
+    "Reconnaissance/Active-Information-Gathering/LDAP/LDAP-Recon.md"
   ]
 }
