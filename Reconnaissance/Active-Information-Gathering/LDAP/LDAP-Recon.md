@@ -7,6 +7,8 @@ Lightweight Directory Access Protocol, Lightweight Directory Access Protocol,Lig
 
 ```bash
 nmap -vv --script=ldap-search -p 389 --script-args ldap.maxobjects=-1 -oA nmap/ldap-search $IP
+
+nmap -n -Pn -sV -oN ldapNotBrute --script "ldap* and not brute" -p 389 $ip_address
 ```
 
 ## ldapsearch

