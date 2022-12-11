@@ -113,3 +113,7 @@ Windows Autopilot is a collection of technogies used to set up and pre-configure
 	- Microsoft Intune
 	- Windows Update for Business
 	- Microsoft Endpoint Configuration Manager
+
+## References
+
+[FreeCodeCamp.org - AZ 104 Course](https://www.youtube.com/watch?v=10PbGbTUSAg&t=3458s)

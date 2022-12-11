@@ -91,3 +91,7 @@ Notifiications - Notification when and on resets
 Customization - Customize Helpdesk link
 On-Premise Integration - As stated
 Administrator Policy - Admin password reset policy.
+
+## References
+
+[FreeCodeCamp.org - AZ 104 Course](https://www.youtube.com/watch?v=10PbGbTUSAg&t=3458s)
