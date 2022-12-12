@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/Impacket/Impacket-Cheatsheet.md",
+                "file": "Exploitation/Windows/Csharp-Exploitation.md",
                 "mode": "source",
                 "source": false
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/Impacket/Impacket-Cheatsheet.md",
+                "file": "Exploitation/Windows/Csharp-Exploitation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -170,6 +170,7 @@
   },
   "active": "a1c8b3b8fcf5e8ed",
   "lastOpenFiles": [
+    "Tools/Impacket/Impacket-Cheatsheet.md",
     "Exploitation/Reverse-Shells-Listing.md",
     "Exploitation/Windows/Csharp-Exploitation.md",
     "Coding-Scripting-Programming/Languages/Csharp/Useful_Csharp.md",
@@ -178,7 +179,6 @@
     "Exploitation/Windows/Potato-Exploits.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-ARM-Templates.md",
-    "Software/Infrastucture-As-Code.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Resource-Manager.md"
+    "Software/Infrastucture-As-Code.md"
   ]
 }
