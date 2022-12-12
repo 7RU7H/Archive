@@ -37,14 +37,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Policies.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "987fb8cd99d7e5bd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Resource-Manager.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -86,7 +98,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 315.5
+    "width": 428.5110321044922
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -102,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Policies.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Resource-Manager.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,17 +132,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "329d6c92e24d6a93",
+  "active": "987fb8cd99d7e5bd",
   "lastOpenFiles": [
-    "Cloud/Azure/Azure-Administration/Azure-Administration-AD-Device-Management.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Resource-Manager.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Policies.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-AD-Device-Management.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Roles.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-AD-Administration.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration.md",
     "Exploitation/Windows/Potato-Exploits.md",
     "Services/Databases/MSSQL/MSSQL-Hacking.md",
     "Tools/Impacket/Impacket-Cheatsheet.md",
-    "Reconnaissance/Local-Setup.md",
-    "Reconnaissance/Active-Information-Gathering/LDAP/LDAP-Recon.md"
+    "Reconnaissance/Local-Setup.md"
   ]
 }
