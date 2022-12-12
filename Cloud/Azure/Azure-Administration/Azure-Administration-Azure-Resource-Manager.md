@@ -1,6 +1,6 @@
 #  Azure Administration - Azure Resource Manager
 
-Azure Resouce Manager is a collection of services not searchable.
+Azure Resouce Manager is a collection of services not searchable, it allows a you manage Azure Resources. 
 - CRUD Resources
 - Apply management features
 - Writing Infrastructure as Code (IaC) via JSON temlpates.
@@ -17,7 +17,6 @@ Features that encompasses the ARM layer
 - Role-Based Access Controls (RBAC)
 - Azure Policies
 - ARM Templates
-- Tenants
 
 Azure Resource Manager is a like gate keeper with Authenication (AD) as all requests flow through ARM. Requestes on the left and Resources on the right 
 ![](wherearmisinazure.png)
@@ -63,7 +62,7 @@ Resource Groups are containers that hold related resources (a group of Virtual M
 
 #### Resource Provider
 
-Resource Provider need to be registered, but by default a subscriptions has access 
+Resource Provider need to be registered, but by default a subscriptions has access many registered resource providers other need to be registered.
 
 #### Resource Tags
 
@@ -87,11 +86,13 @@ Tags allow you to organize resources:
 
 #### Resource Locks
 
-Locking prevents CRUD-ing of resources by other users from accidental or malicious   
+Locking prevents CRUD-ing of resources by other users from accidental or malicious actions:
+- CanNotDelete
+- ReadOnly
 
 #### Azure Blueprint
 
-Blueprints are a declarative method to orchestrat the delpoyment of various resource template and other artifacts. Compose:
+Blueprints are a declarative method to orchestrate the delpoyment of various resource template and other artifacts- enable quick creation of govern subcriptions. Nearly everything you want to include for deployments in Azure Blueprints can be accomplished with ARM Templates - [[Azure-Administration-ARM-Templates]] 
 - Role Assignments
 - Policy Assignments
 - Azure Resource Manager templates 
@@ -152,4 +153,5 @@ Moving Resources - there are end cases - [see Documentation for more]([Move reso
 
 ## References
 
+[FreeCodeCamp.org - AZ 104 Course](https://www.youtube.com/watch?v=10PbGbTUSAg&t=3458s)
 [Move resources to a new subscription or resource group - Azure Resource Manager | Microsoft Learn](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/move-resource-group-and-subscription)
