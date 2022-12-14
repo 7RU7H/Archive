@@ -138,6 +138,8 @@ USERNAME 		Shows the currently logged on user
 TEMP 			Returns the default temporary storage directory(ies)
 USERPROFILE 		Holds the profile location of the current user
 
+echo %PATH% 
+
 schtasks
     /Create        	Creates a new scheduled task.
     /Delete      	Deletes the scheduled task(s).

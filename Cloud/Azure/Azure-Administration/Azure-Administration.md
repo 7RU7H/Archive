@@ -7,3 +7,7 @@ This a hub page group links to all relevant articles under a Azure Administratio
 [[Azure-Administration-Azure-Policies]]
 [[Azure-Administration-Azure-Resource-Manager]]
 [[Azure-Administration-ARM-Templates]]
+[[Azure-Administration-Storage-Account]]
+
+
+For the Cheatsheet: [[Azure-Administrator-Cheatsheet]]
