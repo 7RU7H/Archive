@@ -1,7 +1,10 @@
 # Wireshark
+
+
 I actively recommend Wireshark as personally it help me really understand [[Networks/Network-Protocols]],[[Networks/Network-Theory/Network-Protocols/Network-Protocols]] and [[TCP-IP-Model]]  and I highly recommend it.
 
 ## Introduction
+
 For capture packets Wireshark uses the libraries [Libpcap](https://www.tcpdump.org/manpages/pcap.3pcap.html) on Linux from the maintainers of Tcpdump (see [[Tcpdump-Cheatsheet]] for more Tcpdump information), [Winpcap](https://www.winpcap.org/) on Windows, but is unmaintained as of 2018, see [Npcap](https://nmap.org/npcap/) as replacement for WinPcap and WinPcap Pro. With this we can reduce network traffic with `capture filters` to define what we want to capture -> `capture engine` told like to make a more public and open source,o capture the specified network traffic -> and `display filters` to make visible only the ouput the relevant with `filters` as commands. From [Wireshark Official](https://www.wireshark.org/) 
 **Wireshark** *is the world’s foremost and widely-used network protocol analyzer. It lets you see what’s happening on your network at a microscopic level and is the de facto (and often de jure) standard across many commercial and non-profit enterprises, government agencies, and educational institutions. Wireshark development thrives thanks to the volunteer contributions of networking experts around the globe and is the continuation of a project started by Gerald Combs in 1998.*
 
@@ -22,6 +25,8 @@ For capture packets Wireshark uses the libraries [Libpcap](https://www.tcpdump.o
 -   *Output can be exported to XML, PostScript®, CSV, or plain text*
 
 See [Wireshek Wiki for more](https://wiki.wireshark.org/Home)
+
+THM Golden Rule: *"The golden rule mentioned in the previous room is valid in this section; you can right-click and filter the event of interest!"*
 
 
 ## For Just Useful Display Filters
@@ -102,6 +107,10 @@ Change displayed time format `View (Dropdown) -> Time Display Format -> <formati
 #### Expert Info
 Beware of false positives/negatives `Analyze Information -> Expert Information `
 
+#### Geolocation mapping for Source and Destination Addresses
+Wireshark supports MaxMind databases, and the latest versions of the Wireshark come configured MaxMind DB resolver.
+`Edit -> Preferences -> Name Resolution -> MaxMind database directories"` 
+
 #### Packet Filtering
 See [[Wireshark-Useful-Packet-Filters]]
 - Apply as filter - applies filter after choice: `Right-Click <highlighted packets> Or Analyze (Dropdown) -> Apply as filter`
@@ -141,11 +150,25 @@ Wireshark Cheatsheet for [[Wireshark-Useful-Packet-Filters]].
 - **Application Protocol (Layer 5):** This will show details specific to the protocol used, such as HTTP, FTP,  and SMB. From the Application layer of the OSI model.
 - **Application Data:** This extension of the 5th layer can show the application-specific data.
 
+## Statistics
 
-
+From the `Statistcs` drop down:
+- Resolved Addresses - identifies IP addresses and DNS names within the capture file
+- Protocol Hierarchy - tree view based on packet counters and percentages 
+- Conversations - display traffic from two specific endpoints formatted: ethernet, 
+  Ipv4, IPv6, TCP and UDP - the number is display next to protocol name in tab
+- Endpoints - simiilar to converations provides unique information for ethernet, 
+  Ipv4, IPv6, TCP and UDP - resolving MAC address for known manufacturer's transport names, network IP addresses, VLAN IDs, etc
+	- Geolocation
+	- Organisation
+	- AS numbers
+- IPv4 and 6 Statistics - provide information per protocol
+- DNS - tree view of packet counter and percentages of DNS protocol usage
+- HTTP - tree view of packet counter and percentages of HTTP
 
 
 ## References
+
 [Miguel Sampaio da Veiga](https://medium.com/hacker-toolbelt/wireshark-filters-cheat-sheet-eacdc438969c)
 [Wireshark.org Wiki](https://wiki.wireshark.org/Home)
 [Wireshark Official](https://www.wireshark.org/)
@@ -153,4 +176,5 @@ Wireshark Cheatsheet for [[Wireshark-Useful-Packet-Filters]].
 [Berkley Packet Filter](https://biot.com/capstats/bpf.html)
 [David Bombal Youtube](https://www.youtube.com/watch?v=GMNOT1aZmD8)
 [THM Wireshark Room Wireshark Basics](https://tryhackme.com/room/wiresharkthebasics)  
+[THM Packet Operations Room](https://tryhackme.com/room/wiresharkpacketoperations)
 [The Other THM Wireshark Room - Wireshark 101](https://tryhackme.com/room/wireshark)

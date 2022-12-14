@@ -8,91 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "96597fbb0093bc8b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Exploitation/Windows/Potato-Exploits.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7581b2d531ce1f20",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Coding-Scripting-Programming/Languages/Csharp/Useful_Csharp.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a1c8b3b8fcf5e8ed",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Exploitation/Windows/Csharp-Exploitation.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b286b8c83373cde8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Roles.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "329d6c92e24d6a93",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "215f0050e3e2f7da",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-ARM-Templates.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "987fb8cd99d7e5bd",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Resource-Manager.md",
+                "file": "Tools/Packet-Analysis/Wireshark/Wireshark-Useful-Packet-Filters.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -121,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "UTF-",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -130,11 +57,12 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 428.5110321044922
+    "width": 337.5110321044922
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -150,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exploitation/Windows/Csharp-Exploitation.md",
+                "file": "Tools/Packet-Analysis/Wireshark/Wireshark-Useful-Packet-Filters.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -168,17 +96,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "a1c8b3b8fcf5e8ed",
+  "active": "987fb8cd99d7e5bd",
   "lastOpenFiles": [
-    "Tools/Impacket/Impacket-Cheatsheet.md",
-    "Exploitation/Reverse-Shells-Listing.md",
-    "Exploitation/Windows/Csharp-Exploitation.md",
-    "Coding-Scripting-Programming/Languages/Csharp/Useful_Csharp.md",
-    "Coding-Scripting-Programming/Languages/Csharp/Basic-Csharp.md",
-    "Services/Webservers/IIS/IIS.md",
-    "Exploitation/Windows/Potato-Exploits.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration.md",
+    "Tools/Packet-Analysis/Wireshark/Wireshark.md",
+    "Tools/Packet-Analysis/Wireshark/Wireshark-Useful-Packet-Filters.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Resource-Manager.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-ARM-Templates.md",
-    "Software/Infrastucture-As-Code.md"
+    "Cloud/Azure/Azure-Administration/Azure-Administration.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Roles.md",
+    "Web-Application-Hacking/Server-Side-Template-Injection-Cheatsheet.md",
+    "Coding-Scripting-Programming/Languages/Csharp/Useful_Csharp.md",
+    "Exploitation/Windows/Csharp-Exploitation.md",
+    "Tools/Impacket/Impacket-Cheatsheet.md"
   ]
 }

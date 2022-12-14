@@ -1,4 +1,52 @@
 # Useful Wireshark Packet Filters
+
+## Filter Types
+
+**Filter** | **Type Description**
+--- | ---
+**Capture Filters** | Used to save only a specific part of the traffic, set before capturing traffic and not changeable during the capture. 
+**Display Filters** | Used to investigate packets by reducing the number of visible packets, and it is changeable during the capture.
+
+Packet Filter ToolBar
+
+- Packet filters are defined in lowercase
+- Packet filters can automcomplete 
+- Detail is repressented by a dot
+- Three-colour representation:
+	- Green = Valid
+	- Red = Invalid
+	- Yellow = Warning - works, but unreliable
+
+Capture Syntax:
+
+Scope: host, net, port and portrange.
+Direction: src, dst, src or dst, src and dst,
+Protocol: ether, wlan, ip, ip6, arp, rarp, tcp and udp.
+
+Official [Display Filter Reference](https://www.wireshark.org/docs/dfref/)
+
+Comparison Operators
+**English** | **C-Like** | **Description**
+--- | --- | ---
+eq | == | Equal
+ne | != | Not equal
+gt | > | Greater than
+lt | < | Less Than
+ge | >= |Greater than or equal to
+le | <= | Less than or equal to
+
+Logical Expressions
+**English** | **C-Like** | **Description**
+--- | --- | ---
+and | && | Logical AND
+or | \|| | Logical OR
+not | ! | logical NOT
+
+
+
+
+## Filters
+
 Filter using "x contains keyword"
 ```c
 tcp contains google
@@ -78,3 +126,15 @@ Detecting SYN Floods
 ```c
 tcp.flags.syn == 1 and tcp.flags.ack == 0
 ```
+
+
+## References
+
+[Display Filter Reference](https://www.wireshark.org/docs/dfref/)
+[Wireshark.org Wiki](https://wiki.wireshark.org/Home)
+[Wireshark Official](https://www.wireshark.org/)
+[Berkley Packet Filter](https://biot.com/capstats/bpf.html)
+[David Bombal Youtube](https://www.youtube.com/watch?v=GMNOT1aZmD8)
+[THM Wireshark Room Wireshark Basics](https://tryhackme.com/room/wiresharkthebasics)  
+[THM Packet Operations Room](https://tryhackme.com/room/wiresharkpacketoperations)
+[The Other THM Wireshark Room - Wireshark 101](https://tryhackme.com/room/wireshark)
