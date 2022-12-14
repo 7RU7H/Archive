@@ -26,7 +26,7 @@ Fuzz for:
 4. Fuzz for [[SQLInjection]]
 
 
-If you get banned DIrectory Busting, [[Bypassing-Rate-Limits]]
+If you get banned Directory Busting, [[Bypassing-Rate-Limits]]
 
 Note and test:
 User suppliable input - Login forms, Search bars, Comment sections

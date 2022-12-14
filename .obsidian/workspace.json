@@ -134,6 +134,8 @@
   },
   "active": "21ada53e0e016614",
   "lastOpenFiles": [
+    "Web-Application-Hacking/Methodologies/Walking-Web-Applications/Web-Hacking-Checklist.md",
+    "Brain-Hacking/Question-Based-Hacking-Methodology.md",
     "Brain-Hacking/Black-Box-Method.md",
     "Brain-Hacking/Hacking-The-Thing.md",
     "Brain-Hacking/Improve-Your-Learning.md",
@@ -141,8 +143,6 @@
     "Cloud/Azure/Azure-Administration/Azure-Administrator-Cheatsheet.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Resource-Manager.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Roles.md",
-    "Windows/Windows-Commands/Windows-Commands.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Policies.md"
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Roles.md"
   ]
 }

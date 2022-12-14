@@ -1,6 +1,11 @@
 
 # Question Based Hacking Methodology
 
+
+
+To ensure maintain it functional purose metholody will never contain - question X do Y? Just more Questions to be answered by you! If better format, technology exists to make this less of a list of questions the format should retain textual scriptablity and portablity.  
+
+
 For more philsophical Hacking super dense and short article see [[Hacking-The-Thing]] 
 
 What systems are online, but available
@@ -8,11 +13,13 @@ Who can connect
 What is allowed to connect - type of connection 
 What is connected to what
 How is it connected
+How are you connecting
 What permissions do you have
 How can use current level of access to get more access
 
+
 Where can input be provided 
-What can be reqquested
+What can be requested
 
 What does the output suggest?
 - Error - information disclosure  
@@ -22,9 +29,35 @@ What is does it run
 What is network level purpose of connections
 
 
+
+
 - Objectives
 
-- Web 
+- Web
+	- Does the site provide text to scrap into wordlist
+	- Virtual hosting? 
+		- Fuzzable - rate limits?
+		- Potential OSINTable VHOST from merging or referenced? 
+	- Server and Website Language
+		- Vulnerable versioning?
+	- What request methods?
+		 - Can you bypass with additional Headers?
+	- Endpoints?
+	- CMS 
+	- Does the website use a database for storage?
+	- Where can input be provided?
+		- What input?
+		- Where does the input go?
+		- How is it processed?
+	 - API?
+		 - Is it mappable?
+		 - Disclosure API Token?
+
+Condense:
+[[Haddix-Methodology]]
+[[Web-App-Hacking-Methodology]]
+[[Web-Hacking-Checklist]]
+
 
 - Pre-Network Phase
 	- External User interaction points - Website, email address
@@ -55,10 +88,11 @@ What is network level purpose of connections
 	- Is there AD?
 		- Domain Information?
 		- Legacy Protocols
-	- If there is DNS 
+	- Is there DNS? 
 		1. Are there subdomains?
 		2. Can you Zone Tranfer?
 		3. Information disclosure?
+		4. Connected to other DNS servers?
 	- Accessible/Mountable File Shares?
 		1. What is being shared?
 			1. Hardcoded Credentials?
@@ -89,6 +123,11 @@ What is network level purpose of connections
 
 - What accounts are later objectives based on Company Role?
 
+- What is CPU architecture?
+- Have two is one - one is none? - Multiple shells for stability issues
+- Are you able to run in memory?
+- Living Off the Land Binaries?
+- Kernel Version
 - User Hierarchy
 	- Overextended Low Privilege User
 - Group Hierarchy
@@ -110,9 +149,14 @@ What is network level purpose of connections
 	2. Version have an exploit?
 	3. Permissions on local software libaries used, executable PATH variable? 
 - What services are running?
-	- What is running at high privileges
+	- What is running at high privileges?
+		- Should system or root be running that service?
 
 
 - In-House Applications
 - In-House Scripting
 	1. Hardcoded Credentials
+
+
+
+- Have you cleaned up?
