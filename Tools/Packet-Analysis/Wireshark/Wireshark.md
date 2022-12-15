@@ -75,6 +75,9 @@ Red square to stop and green fin button to restart the capture.
 
 TL;DR - Follow packets and learn filter logic
 
+#### Prepared Filters
+A Glossary exist under `Analyze -> Display Filter Expression`; it has a search bar for quality of life.
+
 #### Colouring 
 Custom colouring can be can be set by `View -> Coloring Rules...`
 

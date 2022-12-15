@@ -86,7 +86,7 @@ Rename PC by searching  for `About PC`
 
 **Active Directory Domain Services**
 
-Go to `Server Manager > Add roles and features > Next until Server Roles`(Unless you have more than one DC) . Select: `Active Directory Domain Services` Next, next  and install. And wait.
+Go to `Server Manager -> Manage -> Add roles and features > Next until Server Roles`(Unless you have more than one DC) . Select: `Active Directory Domain Services` Next, next  and install. And wait.
 
 ![postdeployment](Images/adlab-click-post-deployment-flag.png)
 Click `Promote this server to a domain controller > Add a new forest` and name the root domain name. Then set a password for the Directory Service Restore Mode.

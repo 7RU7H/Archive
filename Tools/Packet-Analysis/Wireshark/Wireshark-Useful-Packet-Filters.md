@@ -43,15 +43,12 @@ or | \|| | Logical OR
 not | ! | logical NOT
 
 
-
-
 ## Filters
 
 Filter using "x contains keyword"
 ```c
 tcp contains google
 frame contains “(attachment|tar|exe|zip|pdf)” // File type
-
 ```
 
 Filter by a timeframe:
@@ -61,9 +58,13 @@ Filter by a timeframe:
 
 Filter by IP, src, dst, subnet, exclude ip.x
 ```c
-ip.addr == 10.10.10.10
-ip.src == 10.10.10.10
-ip.dst == 10.10.10.10
+ip // Show all IP Packets
+// The ip.addr filters the traffic without considering the packet direction. 
+ip.addr == 10.10.10.10 // show all packet containing this address
+ip.addr == 10.10.10.10/24 // show all packet containing this subnet
+// The ip.src/ip.dst filters the packet depending on the packet direction.
+ip.src == 10.10.10.10 // Show packets originating from this IP
+ip.dst == 10.10.10.10 // Show packets destined for this IP
 ip.addr == 10.10.10.10/CIDR
 !ip.addr == 10.10.10.10
 ```
@@ -75,8 +76,16 @@ tcp.flags.syn==1 or (tcp.seq==1 and tcp.ack==1 and tcp.len==0 and tcp.analysis.i
 
 Filter by protocol
 ```c
+tcp.port == 80 // TCP with port 80
+udp.srcport == 53 // udp packets originating from 53 
+tcp.dstport == 4444 // Tcp packets destined for 4444
 dns
+dns.flags.response == 0 // Show all DNS requests 
+dns.flag.response == 1 // Show all DNS responses
+dns.qry.type == 1 // DNS "A" records
 http
+http.request.method == "GET" // filter by request method
+http.response.code == 200 // packets with HTTP response code 200
 ftp
 arp
 ssh
@@ -126,6 +135,21 @@ Detecting SYN Floods
 ```c
 tcp.flags.syn == 1 and tcp.flags.ack == 0
 ```
+
+#### Advanced Filtering
+
+```c
+$filter contains "IIS"
+$filter matches "\.(php|html)" // keywords ".php" or ".html"
+$filter in {80 443 8080} //in fields that have values 80, 443, 8080
+$filter upper(http.server) contains "APACHE" // upper case conversion 
+$filter lower(http.server) contains "apache" // lower case conversion 
+$filter string(frame.number) matches "[12345]$" // Convert all framenumber fields to string value and list frames thtat end with 12345 
+```
+
+Save filters with `Bookmarks`, enter a filter, left click the blue flag icon and `Save this filter`; to use click the plus symbol on the far right handside of the window, next to the Arrow at the end of the `Apply a display filter input bar ... <Ctrl-/>.
+
+Profiles `Edit -> Configuration Profiles... [Ctrl+Shift+A]`
 
 
 ## References
