@@ -25,7 +25,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/Packet-Analysis/Wireshark/Wireshark.md",
+                "file": "Reverse-Engineering/Malware-Analysis/Malware-Analysis.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6a285ea7447fa802",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/SysInternals/Procmon/Sysinternals-Procmon.md",
                 "mode": "source",
                 "source": false
               }
@@ -126,7 +138,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/Packet-Analysis/Wireshark/Wireshark.md",
+                "file": "Reverse-Engineering/Malware-Analysis/Malware-Analysis.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -146,15 +158,15 @@
   },
   "active": "35fe53388f897439",
   "lastOpenFiles": [
+    "Antivirus/Antivirus-Evasion/EDR-Bypassing.md",
+    "Reverse-Engineering/Malware-Analysis/Malware-Analysis.md",
+    "Tools/SysInternals/Procmon/Sysinternals-Procmon.md",
+    "Tools/SysInternals/Sysinternals-Hub.md",
+    "Tools/SysInternals/Sysmon/Sysmon-Events.md",
     "Tools/Packet-Analysis/Wireshark/Wireshark-Useful-Packet-Filters.md",
-    "Tools/Packet-Analysis/Wireshark/Wireshark.md",
     "Networks/Packet-Analysis/Packet-Analysis.md",
-    "Brain-Hacking/Black-Box-Method.md",
-    "Virtualization/Lab-Making/Active-Directory-Lab.md",
-    "Post-Exploitation/Persistence/Linux-Persistence.md",
-    "Brain-Hacking/Personality.md",
-    "Brain-Hacking/Beyond-Root-Ideas.md",
-    "Brain-Hacking/Question-Based-Hacking-Methodology.md",
-    "Web-Application-Hacking/Methodologies/Walking-Web-Applications/Web-Hacking-Checklist.md"
+    "Networks/Packet-Analysis/Packet-Analysis-Header-Filtering.md",
+    "Tools/Packet-Analysis/Wireshark/Wireshark.md",
+    "Brain-Hacking/Black-Box-Method.md"
   ]
 }

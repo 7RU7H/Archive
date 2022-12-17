@@ -136,6 +136,58 @@ Detecting SYN Floods
 tcp.flags.syn == 1 and tcp.flags.ack == 0
 ```
 
+#### Spot NMAP or TCP/UDP packet manipulation
+
+[[Nmap-Cheatsheet]] is industry-standard port scan that won't be used by in any [[Red-Team-Tooling]] arsenal. This is due to it have a packet header stating that it is a Nmap packet and even if a script kiddie used nmap and tuned to be stealthier here are filter to spot it:
+```c
+tcp
+udp
+// SYN flags only
+tcp.flags == 2 
+tcp.flags.syn == 1
+// ACK flags only
+tcp.flags == 16 
+tcp.flags.ack == 1
+// SYN, ACK flags set
+tcp.flags == 18
+(tcp.flags.syn == 1) and (tcp.flags.ack == 1)
+// RST flags only
+tcp.flags == 4 
+tcp.flags.reset == 1
+// RST, ACK flags set
+tcp.flags == 20
+(tcp.flags.reset == 1) and (tcp.flags.ack == 1)
+// FIN flags only
+tcp.flags == 1 
+tcp.flags.fin == 1
+// Spot anomylous patterns in big capture files 
+// Given a window.size Win=8192 means 8192 bytes of data server can recieve without requiring an acknowledgement
+// TCP connect scans:
+tcp.flags.syn == 1 and tcp.flags.ack == 0 and tcp.window_size > 1024
+//
+tcp.flags.syn ==1 and tcp.flags.ack == 0 and tcp.window_size <= 1024
+// For UDP patterns
+// There are no prompts to ports, ICMP error for close ports
+icmp.type == 3 and icmp.code == 3
+```
+
+[Understanding Windows.Size](http://www.freekb.net/Article?id=939)
+
+#### Detecting ARP Poisoning/Spoofing
+
+[[ARP-Protocol]] is the technology responsible for allowing devices to identify themselves on a network, where ARP Poisoning/Spoofing or MITM attack involve network jamming/maniuplation by sending malicious ARP packet to a default gatewat to manipulated the IP to MAC address table to sniff the traffic of a target host. Initial detection starts with identifyig duplicates MAC address uses where one IP address pretends to be the gateway address
+
+```c
+arp // Global search
+arp.opcode == 1 // ARP requests
+arp.opcode == 2 // ARP responses
+arp.dst.hw_mac == 00:00:00:00:00 // destination mac address
+arp.duplicate-address-detected or arp.duplicate-address-frame // Hunt ARP poisoning detection
+((arp) && (arp.opcode == 1)) && (arp.src.hw_mac == $target_mac_address) // Hunt ARP flooding detection
+```
+
+
+
 #### Advanced Filtering
 
 ```c
@@ -152,6 +204,8 @@ Save filters with `Bookmarks`, enter a filter, left click the blue flag icon and
 Profiles `Edit -> Configuration Profiles... [Ctrl+Shift+A]`
 
 
+
+
 ## References
 
 [Display Filter Reference](https://www.wireshark.org/docs/dfref/)
@@ -162,3 +216,4 @@ Profiles `Edit -> Configuration Profiles... [Ctrl+Shift+A]`
 [THM Wireshark Room Wireshark Basics](https://tryhackme.com/room/wiresharkthebasics)  
 [THM Packet Operations Room](https://tryhackme.com/room/wiresharkpacketoperations)
 [The Other THM Wireshark Room - Wireshark 101](https://tryhackme.com/room/wireshark)
+[Understanding Windows.Size](http://www.freekb.net/Article?id=939)
