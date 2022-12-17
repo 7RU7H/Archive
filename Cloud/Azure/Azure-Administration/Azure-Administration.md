@@ -8,6 +8,7 @@ This a hub page group links to all relevant articles under a Azure Administratio
 [[Azure-Administration-Azure-Resource-Manager]]
 [[Azure-Administration-ARM-Templates]]
 [[Azure-Administration-Storage-Account]]
-
+[[Azure-Administration-Virtual-Machines]]
 
 For the Cheatsheet: [[Azure-Administrator-Cheatsheet]]
+

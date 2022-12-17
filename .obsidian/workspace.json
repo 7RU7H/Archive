@@ -13,31 +13,43 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "35fe53388f897439",
+            "id": "b3cab50792c4071e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Reverse-Engineering/Malware-Analysis/Malware-Analysis.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Virtual-Machines.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "6a285ea7447fa802",
+            "id": "3b54b4b44ac96958",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/SysInternals/Procmon/Sysinternals-Procmon.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administrator-Virtual-Networking.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b96f6f9cbe4c6fc8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cloud/Cloud-Initialization.md",
                 "mode": "source",
                 "source": false
               }
@@ -49,38 +61,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Brain-Hacking/Question-Based-Hacking-Methodology.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "3c3bbc5898b03d9a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Virtualization/Lab-Making/Active-Directory-Lab.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0704b8eb5d4cdbe9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Windows/Windows-Commands/Windows-Commands.md",
+                "file": "Web-Application-Hacking/Content-Discovery/FFUF-Cheatsheet.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -138,7 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Reverse-Engineering/Malware-Analysis/Malware-Analysis.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administrator-Virtual-Networking.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -156,17 +144,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "35fe53388f897439",
+  "active": "3b54b4b44ac96958",
   "lastOpenFiles": [
-    "Antivirus/Antivirus-Evasion/EDR-Bypassing.md",
-    "Reverse-Engineering/Malware-Analysis/Malware-Analysis.md",
-    "Tools/SysInternals/Procmon/Sysinternals-Procmon.md",
-    "Tools/SysInternals/Sysinternals-Hub.md",
-    "Tools/SysInternals/Sysmon/Sysmon-Events.md",
-    "Tools/Packet-Analysis/Wireshark/Wireshark-Useful-Packet-Filters.md",
-    "Networks/Packet-Analysis/Packet-Analysis.md",
-    "Networks/Packet-Analysis/Packet-Analysis-Header-Filtering.md",
-    "Tools/Packet-Analysis/Wireshark/Wireshark.md",
-    "Brain-Hacking/Black-Box-Method.md"
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Virtual-Machines.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration.md",
+    "Cloud/Cloud-Initialization.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation Bypassing-Contrained-Powershell.md",
+    "Web-Application-Hacking/Content-Discovery/FFUF-Cheatsheet.md",
+    "Brain-Hacking/Question-Based-Hacking-Methodology.md",
+    "Virtualization/Lab-Making/Active-Directory-Lab.md",
+    "Tools/SysInternals/Procmon/Sysinternals-Procmon.md"
   ]
 }

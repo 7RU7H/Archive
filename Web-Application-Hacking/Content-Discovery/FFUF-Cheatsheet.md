@@ -82,8 +82,9 @@ ffuf -w wordlist.txt:FUZZ -u http://$IP/FUZZ -recursion -recursion-depth 1 -e .p
 ```
 
 ## Fuzzing for VHosts
+[To match the output of wfuzz at 5:20](https://www.youtube.com/watch?v=U-2nI6wSPOE&t=46s) at  
 ```bash
-ffuf -u http://mydomain.com -H "Host: FUZZ:mydomain.com" -c -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt
+ffuf -u http://mydomain.com -H "Host: FUZZ:mydomain.com" -c -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt  -fl $checkToFilter --mc all
 ```
 [virtual hosts](https://httpd.apache.org/docs/2.4/en/vhosts/examples.html) (vhosts) is the name used by Apache httpd.
 Nginx use [Server Blocks](https://www.nginx.com/resources/wiki/start/topics/examples/server_blocks/).

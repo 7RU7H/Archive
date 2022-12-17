@@ -59,7 +59,7 @@ Condense:
 [[Web-Hacking-Checklist]]
 
 
-- Pre-Network Phase
+- Pre-Network Phase / OSINT
 	- External User interaction points - Website, email address
 	- Domain Names
 	- Email addresses
