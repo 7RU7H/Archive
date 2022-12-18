@@ -83,7 +83,16 @@ Update Management allow you to automate and install operating system updates and
 
 Automation Accounts - `Search -> Automataion Accounts -> Create`
 
-`Subscriptions -> Resource Providers` - we need `Microsoft.AlertsManagement` and `Microsoft.insights` 
+`Subscriptions -> Resource Providers` - we need:
+
+- `Microsoft.AlertsManagement` - https://learn.microsoft.com/en-us/azure/azure-monitor/insights/alert-management-solution
+- `Microsoft.insights`  - https://learn.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview?tabs=net
+
+And also:
+- Virtual Networks for VMs [[Azure-Administrator-Virtual-Networking]]
+- Auto-instrumentation - https://learn.microsoft.com/en-us/azure/azure-monitor/app/codeless-overview
+
+
 
 
 ## References
