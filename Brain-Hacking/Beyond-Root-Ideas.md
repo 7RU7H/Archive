@@ -1,6 +1,11 @@
 
-1. Try the other route to the box
-1. Service Configuration 
-1. Patch the box, if possible apply
-1. Persistence mechanism
-1. Perform a interest data exfiltration technique 
+1. Alternate routes to the box
+	1. No metasploit for OS\* certifications
+	2. Or use [[Metasploit]] or [[C2-Matrix]] framework
+2. Service Configuration 
+3. Patch the box, if possible applicatiblity
+4. Harden the box [[Linux-Hardening]] and [[Windows-Hardening]]
+5. Persistence mechanisms
+6. Perform a interesting data exfiltration technique with your own fake data 
+7. Detect yourself - auditd, sysmon
+8. Kernel PrivEsc - Go misconfigure the box and PrivEsc that way or Vice-a-Versa (most kernels are vulnerable, but the if done everything without a kernel exploit, why not?)

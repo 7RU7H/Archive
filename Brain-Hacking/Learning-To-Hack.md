@@ -7,7 +7,7 @@ There are alot of these how to learn to x so firstly address the learning part:
 Hacker mindset is commonly refered to. In priority order it really begins and dies on:
 
 It is skillset that is built over years of time, orangatuan can use tools, script kiddies can press a button, but the real awesomeness of Hacking is almost not even really the hacking:
-- How does a system - lowest possible abstraction to highest work
+- How does a system work - range of abstraction of how?  
 - Building, maintaining and troubleshooting systems to a **modern** standard 
 
 

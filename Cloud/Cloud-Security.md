@@ -1,6 +1,8 @@
 
 # Cloud SANS Zero to Hero
 
+https://www.youtube.com/watch?v=Xfq0sTW7cp8
+
 org phases:
 roadmap planning - most org dont start in the cloud
 building foundation

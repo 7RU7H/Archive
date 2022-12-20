@@ -62,7 +62,8 @@ What is network level purpose of connections
 	- Do any parameters call non-local resources?
 		- Does the non local request have it only parameters
 		- `ffuf -request search.req -request-proto http -w special-chars.txt -mc all` - which characters cause what issue that indicate what about the context? 
-
+	- Error text 
+		- What does the error mean? Just google it! 
 
 Condense:
 [[Haddix-Methodology]]

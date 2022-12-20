@@ -20,7 +20,7 @@
             }
           },
           {
-            "id": "71e739f8049c42b8",
+            "id": "b47aba8f5c9e5e99",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -32,43 +32,19 @@
             }
           },
           {
-            "id": "94a1fc43c6899e53",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cloud/Cloud-Security.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b47aba8f5c9e5e99",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Exploitation/Windows/Finding-Windows-Exploits.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "45b8149b981a5881",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Brain-Hacking/Learning-To-Hack.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administrator-Virtual-Networking.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -126,7 +102,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Brain-Hacking/Learning-To-Hack.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administrator-Virtual-Networking.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -146,15 +122,15 @@
   },
   "active": "45b8149b981a5881",
   "lastOpenFiles": [
-    "Brain-Hacking/Question-Based-Hacking-Methodology.md",
-    "Services/Webservers/ApacheTomcat/Apache-Tomcat.md",
-    "Brain-Hacking/Learning-To-Hack.md",
     "Cloud/Cloud-Security.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administrator-Virtual-Networking.md",
+    "Brain-Hacking/Beyond-Root-Ideas.md",
+    "Brain-Hacking/Learning-To-Hack.md",
+    "Brain-Hacking/Question-Based-Hacking-Methodology.md",
+    "Exploitation/Windows/Finding-Windows-Exploits.md",
+    "Services/Webservers/ApacheTomcat/Apache-Tomcat.md",
     "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
     "Post-Exploitation/Privilege-Escalation/Linux/PrivEsc-Important-Linux-Locations.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
-    "Security-Enterprises/Blueteam/Threat-Modelling.md",
-    "Exploitation/Windows/Finding-Windows-Exploits.md",
-    "Security-Enterprises/Blueteam/Windows-Blueteam.md"
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md"
   ]
 }
