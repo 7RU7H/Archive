@@ -3,7 +3,32 @@ By 7ru7h therefore as always look at other sources, it is just good for being a 
 Warning does contain enjoy the spicey takes, like programming and CTF vs Bug hunting
 There are alot of these how to learn to x so firstly address the learning part:
 
-1. Train your brain to love solving problems. Hacking is problem solving a task with the payoff that often a takes long time to get to. 
+
+Hacker mindset is commonly refered to. In priority order it really begins and dies on:
+
+It is skillset that is built over years of time, orangatuan can use tools, script kiddies can press a button, but the real awesomeness of Hacking is almost not even really the hacking:
+- How does a system - lowest possible abstraction to highest work
+- Building, maintaining and troubleshooting systems to a **modern** standard 
+
+
+1. Understand it, by asking questions and researching how something works - an activity to acquire knowledge
+	- Knowing alot - Or rephrase that to think in a manner that is set of continual future pattern of trying to understand a concept
+	- Subverting the system - Repurposing a system, to think of it as subversion leads to non-empcompassing understanding - to repurpose requires understanding of the actuallities of the system's intended and unintended occur actualities when interacted with.
+1. Patience and Focus 
+	- the Pomodoro Method is evil - **DO NOT TAKE BREAKS EVERY 25 minutes**
+		- Push to hour, remembering to exercise 15% Learning Uptake and posture health - sitting is bad. 
+	- If you have neither do it or something for fun or make it more fun with other through social or following allow with a streamer, class, course, youtube, etc 
+	- and becuase you enjoy it - both patience and focus are hard earnt qualities to fight for everyday
+	- Remove distractions, habits that create distraction 
+3. Organisation and Mental logistics and the Tao of testing
+	- Be methodically and scientific - measure twice cut once
+	- If your data is a mess how are you going to connect that data to find the way 
+	- If you have the infrastructure to replicate the target, you do not get into the Schrödinger's Hack of whether interaction (successful, erroreous, destructive) or lack of interaction, **which may then affect later interactions thereby failing yourself by not be organised and methodical**   
+4. Creativity in connecting data to be combined into doing - an activity to seperate the useful information and connecting it together
+5. Tool are extensions of **your** [[Question-Based-Hacking-Methodology]] (you have to make and practice and revise **your capabilities**)
+
+
+4. Train your brain to love solving problems. Hacking is problem solving a task with the payoff that often a takes long time to get to. 
 	- Learn Go and try make very small programs 
 		- Delay googling solutions - set timer & amount of actions you have till you can look up
 		- Do not use some the standard libary sometimes
@@ -12,13 +37,14 @@ There are alot of these how to learn to x so firstly address the learning part:
 		- Look the best golang solution after you succeeded or failed to improve your own code. Code review without the egos and your code gets better for free.
 	1. Learn efficiently  
 		- Space it out, interweave practice with reading, deep study and shallow study
-1. Do sometime new and related everyday
-2. Read a little every day, but diversify - You read scans, terminals, code everyday - insert  Tyrion Lannister quote about reading - but learn to REALLY read - Fast and slow reading - when to to go fast and when to go slow:
+5. Do sometime new and related everyday
+6. If cant explain the x to the most non techinical person, will management understand, do you actually understand it? - It is a good concept comprehension test and good for memory compressions and neural strengthing.
+7. Read a little every day, but diversify - You read scans, terminals, code everyday - insert  Tyrion Lannister quote about reading - but learn to REALLY read - Fast and slow reading - when to to go fast and when to go slow:
 	 - i.e Bug Bounty report one day, AD whitepaper another or insert-x-ethical-hacking-x-site reading material; Blog about CVEs; Proof of Concepts about bugs; Source Code.
-1. Take Notes and visualise the problems
-4. Develop humility, integrity and remember you are stupid. The training your brain to like solving the problem and the feeling when it works over time train a patience for long complex tasks or researching that can get very frustrating.
-5. Learn, practice and research whatever **you** are interested in and enjoy, not what is cool or apparently makes money quick a better investment is alway go for long term expertise, the always money comes after.
-6. Explore in different ways
+8. Take Notes and visualise the problems
+9. Develop humility, integrity and remember you are stupid. The training your brain to like solving the problem and the feeling when it works over time train a patience for long complex tasks or researching that can get very frustrating.
+10. Learn, practice and research whatever **you** are interested in and enjoy, not what is cool or apparently makes money quick a better investment is alway go for long term expertise, the always money comes after.
+11. Explore in different ways
 	-  [Have Gzegroz Niedziela explain some mad real world Web Exploits](https://www.youtube.com/c/BugBountyReportsExplained) 
 	- Be handheld through an insane machine to know how far I many connections in my brain I have to go - roughly scaled between scarily alot and ton
 		- Reasoning comes from being good guitar: do it for the sounds that you could make not to look cool; more sounds you can make the more musical intense you can make anything. Sometimes you just to sit there and be wowed and try anyway, clumsy try - be humble - find the parts that are difficult and find similarly easiler elements elsewhere, [More Rocky](https://www.youtube.com/watch?v=hHpFSQMUxj4), [More Cheesey](https://www.youtube.com/watch?v=yGZsnbPCv1I) or [More British](https://www.youtube.com/watch?v=pt-Yc2rzOOM) or [Wooten](https://www.youtube.com/watch?v=CFcPlv9RhEY) or more [Bass](https://www.youtube.com/watch?v=Sa0upTDZDYQ) or [Spanish](https://www.youtube.com/watch?v=NIKWBdthzg4) - combine all of that and keep building
@@ -29,6 +55,7 @@ Some of the below can be connective - i.e
 - Don't worry about learning everything, but dont specialise, wait years before really making that decision. everything is connect dont limit yourself.
 - Read and Practice -(In order of expense) Tryhackme, Pentester Labs, Hack The Box Acamedy
 	- It should be more hands on keyboard and less reading until you need to read to solve a problem. 
+- Go beyond root - Performing Sysadmin tasks -, Persistence, Research service configurations, do cleanup, Alternate Routes - alternate vulnerablities, no metasploit, only [[Windows-Living-Off-The-Land]], find the check in the script used to find the PrivEsc vector... 
 - Watch and note Ippsec, X Youtube
 	- Also sit down and be passive mentored through a box sometimes. Why?
 		- Firstly life is chaotic, sometimes you have bad days, but to do sometime you love every day on those bad days: get hands on keyboard and watching copy the Youtuber. Its like a free in person training and mentoring - it is how complex animals learn, think monkeys and nut and rocks lined up together.
@@ -37,8 +64,9 @@ Some of the below can be connective - i.e
 	- **BUT** more importantly you need to have a solution
 		- If you just got the answer from the teacher in a maths class you would really learn maths
 		- If you never got help from a teacher then you never learn some the assumptions and shortcut pieces of information that required for more complex thinking surrounding problems. Also there is assumptive most effiecent way to do almost everything - you need these to solve more problems more quickly - it'll also make it more fun.
+- Read/Watch everyone else: 0xdf, snowscan, etc 
 - Start noting what you do, your brain is a finite size
-- Learn Google Dorking
+- Learn Google Dorking - [[Search-Engine-Dorking]]
 	- Better queries mean better results 
 - Social Network 
 	- Try to be the least smart person in a room whenever possible - or remember you are almost certianly the least smart person in rooms full smart people.
@@ -54,7 +82,7 @@ Some of the below can be connective - i.e
 			- And if you stay.. you are just another idiot for whatever scam - Governmental backed, Criminally Backed, etc... why even bother it their to trap both and idiots in the Great Games that Money-Ideological-Coercion-Ego games that people play on themselves and others play on them - and you will never be one of them, no matter how high up or cyber-firepower you bring in you are Government Agency, Hactivist Group or Criminal Gang you are it is Game as Old as time itself. 
 			- Also if you learning or working in there even if you save the world like Marcus Hutchins, you are still targetable by law enforcement somewhere.
 	- For me finding other people was the hardest as I am a people person in a digitally socializing world. I could talk my way into a bank vault and back out again, but never into good company to learn this stuff lol - hopeful this will change.
-- Learn Networking and Web
+- Learn Networking and Web - Network+
 	- Wireshark - Tryhackme, Pentester Lab
 	- Burpsuite - Tryhackme, Pentester Lab
 	- Network Virtualised machines

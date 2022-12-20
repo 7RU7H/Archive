@@ -38,8 +38,15 @@ What is network level purpose of connections
 	- Virtual hosting? 
 		- Fuzzable - rate limits?
 		- Potential OSINTable VHOST from merging or referenced? 
-	- Server and Website Language
+	- Webserver and Website Language
+		- Webserver generic issues by type
+			-  [[Apache-Tomcat]]
 		- Vulnerable versioning?
+		- Javascript?
+			-  XSS?
+				- What Input Validation?
+					- Which characters?
+						- URL encoding ip address in XSS payloads?
 	- What request methods?
 		 - Can you bypass with additional Headers?
 	- Endpoints?
@@ -52,6 +59,10 @@ What is network level purpose of connections
 	 - API?
 		 - Is it mappable?
 		 - Disclosure API Token?
+	- Do any parameters call non-local resources?
+		- Does the non local request have it only parameters
+		- `ffuf -request search.req -request-proto http -w special-chars.txt -mc all` - which characters cause what issue that indicate what about the context? 
+
 
 Condense:
 [[Haddix-Methodology]]
@@ -67,6 +78,9 @@ Condense:
 	- Cloud providers
 - External Network
 - Internal Network
+- Host Enumeration
+	- Do scans or enumerated data have conflicting versioning and OS?
+		- Containerisation - which is the container and which is the host?
 - Lateral Movement
 	- Password Reuse?
 

@@ -186,6 +186,18 @@ arp.duplicate-address-detected or arp.duplicate-address-frame // Hunt ARP poison
 ((arp) && (arp.opcode == 1)) && (arp.src.hw_mac == $target_mac_address) // Hunt ARP flooding detection
 ```
 
+#### DHCP
+
+```c
+dhcp // same bootp
+bottp // same as dhcp
+dhcp.option.dhcp == 3 // Reequest
+dhcp.option.dhcp == 5 // ACK
+dhcp.option.dhcp == 6 // NAK
+
+dhcp.option.hostname contains "keyword" // DHCP Requestion
+dhcp.option.domain_name contain "keyword"
+```
 
 
 #### Advanced Filtering

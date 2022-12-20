@@ -2,6 +2,8 @@
 
 Default password: metasploit module auxillary scanner! 
 
+nginx - tomcat look url parsing /..;/
+
 ## Ghostcat
 /manager/
 /manager-gui/

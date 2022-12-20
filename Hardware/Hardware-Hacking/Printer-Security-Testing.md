@@ -1,4 +1,4 @@
-Printer Security Testing Cheat Sheet
+# Printer Security Testing Cheat Sheet
 
 To systematically check for vulnerabilities in a printing device, first perform a generic network assessment and check for printer-specifc web based information leaks using Praeda. Then, use the following cheat sheet to quickly find flaws in printer languages and network protocols.
 Category | Attack | Protocol | Testing
