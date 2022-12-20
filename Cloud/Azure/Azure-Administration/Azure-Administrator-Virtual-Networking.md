@@ -1,7 +1,6 @@
 # Azure Administrator - Virtual Networking
 
 
-
 Virtual Networks consist of one of more IP ranges that are typically from RFC 1918, but not exclusively. 
 
 - Exists within a specific subscription
@@ -88,7 +87,6 @@ BIG WARNING - **Use Network Security Groups** - The defaults are dangerous
 			- Azure will automatically create Public IPs and allow internet access
 - Ports exposed - Use encrypted variants - [[Nmap-Cheatsheat]] is easy to use to find your RDP and SSH , SMB that is externally facing, just don't - obsfucation is not security.
 	- Just-In-Time access is avaliable if you don't have private routing. Do not expose services to internet continually
-
 #### Connecting Virtual Neworks
 
 If you have multiple subscription or region you then will have multiple virtual networks to connect them via:
@@ -107,3 +105,68 @@ Historic comparison being: Site-to-Site VPN or connection to the same ExpressRou
 - Peering location would hair pin on a circuit to talk to the same facility on different Virtual Network - bad latency
 
 On-premise to an Azure subnet Gatewaycan be used to connect resources via Gateway transit, becuase of Peering to reach out to On-Premise assets. 
+
+#### Connecting On-Premises to Azure
+
+Extending On-Premise to Azure with  [[Ipsec]] tunnels:
+- Point-To-Site VPN - connect specific device to a network.
+- Site-To-Site VPN - connect a network to virtual network 
+	- Good if ExpressRoute is too expensive
+	- S2S VPN gateways enable multiple VPN connects to different networks if route not policy based
+	- ExpressRoute Private Peering - Connects a network to a virtual network via ExpressRoute Gateway
+		- ExpressRoute circuits enable multiple virtual networks to be connected to a single circuit, but vnet to vnet better via peering - Big Enterprises want this for it being a private connection, no hops else where connect to Microsoft Backbone Network - not Geopolitical Region locked at the Premium level.
+		- Can be encrypted, but is not by default - MaxSEC at the edge router provider 
+		- If Fast Path is Enabled it does not go via the Gateway, Gateway is required for routing information, also Fast Path does working for Peering.
+		- MPLS can be connect to backend at carrier neutral connect that can also connect ExpressRoute
+	- Microsoft Peering - Can go by Private Endpoints as well as ExpressRoute
+		- Storage
+		- Database Accounts
+
+
+#### Controlling Traffic Flows
+
+Default traffic will flow freely. Azure requires segmentation and traffic controls within a virtual networks and/or external a number of approaches can be utilized.
+
+- Azure Firewalls
+- Network Security Groups 
+	- Listing a rules that a scoped by:
+		- Source 
+		- Destination
+		- Protocol 
+		- Port
+		- Action
+		- CIDR
+	- And Applied at various levels - enforced a the virtual filtering platform at the NIC
+	- Inheritance
+
+Create Network Security Group
+`Search -> Network Security Group` - Then use brain in relation to network and security objectives 
+
+`Service Tag` maps to IP ranges that manage the ranges
+
+Application Security Groups - ASG tags are tags that help when the network is sparse that helps in  rule keeping instead worrying about IP ranges the application is in.
+
+#### Service Endpoints and Service Endpoints Policies
+
+NSGs are focused on traffic inot and out of the virtual network, Azure PaaS options have built-in Firewalls to often restrict a service to only spoecific subnets of specific virtual networks.Service endpoints make a specific subnet known to specific Azure service and add optimal path to service.
+
+- Virtual firewalls on service are configurable to allow only a specific subnet
+- Service Enpoint Policies allow specific instances of services to be allowed from a virtual network, which is not possible with NSG service Tag
+- Service Endpoints are not routeable
+
+
+#### Azure DNS
+
+Virtual Network can use Azure DNS or custom DNS, Azure can provide public and private zones. Set at NIC level not at the VM level.
+- Private DNS Zone - you pick the name and managed fully - names, records, etc!
+- Domain Controllers - for custom DNS Active Directory - probably not Public 
+- Private DNS can set auto-registration 
+- Private DNS can be used across subscriptions, regions! - PERMISSIONS!
+- Azure DNS 168.63.129.16
+
+#### Azure Private Link
+
+Azure Private Link is when a external facing Azure PAaS serfvice is accessed from a resource in a VNet the trafffic sztays on the Azure network. Priave Endpoint into a Network. The PaaS service stil ahas a external facing endpoint that some companies do not want even with firewall/authenication - firewalls and authenication are bypassable. APL enables PaaS Service is an avatar for that service instance and can project custom services that are behind a Load Balancer. Must have consistent DNS management!
+
+
+[John Savill's Microsoft Azure Master Class Part 6 - Networking](https://www.youtube.com/watch?v=K8ePZdLfU7M&t=3511s)
