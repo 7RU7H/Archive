@@ -34,6 +34,7 @@ Azure Monitor Logs is based on Azure Data Explorer, and log queries are written 
 	- Logic Apps
 	- PowerShell
 	- Azure Monitor Logs API
+[FreeCodeCamp.org - AZ 104 Course](https://www.youtube.com/watch?v=10PbGbTUSAg&t=3458s)
 - Kusto is based on relational database management systems and supports entirties such as databases, tables and columns
 	- Some query operators include:
 		- Calculated columns , searching and filtering on rows, group by-aggregates, join functions
@@ -71,4 +72,9 @@ To use Application insights you need to instrument your application
 - Apps can be instrumented from anywhere
 - When you set up Application Insights monitoring for your web app, you create an Application Insights resource in Microsoft Azure
 - You open this resource in the Azure portal in order to see and analyze the telemety collected your app.
-the resource is identified by an  instrumentation key (ikey)
+The resource is identified by an instrumentation key (ikey)
+
+
+## References
+
+[FreeCodeCamp.org - AZ 104 Course](https://www.youtube.com/watch?v=10PbGbTUSAg&t=3458s)

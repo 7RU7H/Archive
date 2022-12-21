@@ -73,7 +73,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Scale-Sets.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Adminstration-Azure-Monitor.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1bf44aac83cb3e16",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Backups.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +109,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Adminstration-Azure-Monitor.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administrator-Cheatsheet.md",
                 "mode": "source",
                 "source": false
               }
@@ -116,7 +128,7 @@
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -174,7 +186,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Adminstration-Azure-Monitor.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Backups.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -202,17 +214,17 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "8698ac5fc77da3f5",
+  "active": "1bf44aac83cb3e16",
   "lastOpenFiles": [
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Application-Services.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-ARM-Templates.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Scale-Sets.md",
+    "Cloud/Azure/Azure-Administration/Azure-Adminstration-Azure-Monitor.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Backups.md",
     "Cloud/Azure/Azure-Administration/Azure-Administrator-Virtual-Networking.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Virtual-Machines.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Application-Gateways.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Scale-Sets.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Application-Services.md",
     "Cloud/Azure/Azure-Administration/Azure-Administrator-Cheatsheet.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Storage-Account.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Disks.md"
+    "Cloud/Azure/Azure-Administration/Azure-Administration-ARM-Templates.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Virtual-Machines.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Application-Gateways.md"
   ]
 }
