@@ -149,6 +149,8 @@ Variables
 			"instancesSize": "Large",
 			"instanceCount": 1
 		}
+​￼￼￼References
+
 	}
 }
 // Referencing nested variables:
@@ -164,6 +166,8 @@ ARM Template Outputs return values from deployed resources:
 	}
 }
 ```
+
+​￼￼￼References
 
 You can use Azure API via CLI,  PowerShell or SDK to fetch outputs. 
 
