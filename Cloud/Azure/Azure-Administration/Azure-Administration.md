@@ -10,6 +10,7 @@ This a hub page group links to all relevant articles under a Azure Administratio
 [[Azure-Administration-Storage-Account]]
 [[Azure-Administration-Virtual-Machines]]
 [[Azure-Administrator-Virtual-Networking]]
+[[Azure-Administration-Azure-Disks]]
 
 For the Cheatsheet: [[Azure-Administrator-Cheatsheet]]
 
