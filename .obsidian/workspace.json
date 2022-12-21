@@ -92,6 +92,18 @@
             }
           },
           {
+            "id": "8698ac5fc77da3f5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cloud/Azure/Azure-Administration/Azure-Adminstration-Azure-Monitor.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "aade2b0998dca28e",
             "type": "leaf",
             "state": {
@@ -104,7 +116,7 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -162,7 +174,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Application-Services.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Adminstration-Azure-Monitor.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -190,10 +202,10 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "6f53d953ce015022",
+  "active": "8698ac5fc77da3f5",
   "lastOpenFiles": [
-    "Cloud/Azure/Azure-Administration/Azure-Administration-ARM-Templates.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Application-Services.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-ARM-Templates.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Scale-Sets.md",
     "Cloud/Azure/Azure-Administration/Azure-Administrator-Virtual-Networking.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Virtual-Machines.md",
