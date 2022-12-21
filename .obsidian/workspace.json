@@ -54,9 +54,33 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "3bef46f02983437a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Application-Gateways.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "aade2b0998dca28e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administrator-Virtual-Networking.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -114,7 +138,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Application-Gateways.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,17 +166,17 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "a0082b049120fea9",
+  "active": "3bef46f02983437a",
   "lastOpenFiles": [
+    "Cloud/Azure/Azure-Administration/Azure-Administrator-Virtual-Networking.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Virtual-Machines.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administrator-Cheatsheet.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Application-Gateways.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Storage-Account.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Disks.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Roles.md",
     "Coding-Scripting-Programming/Secure-Coding.md",
-    "Linux/Linux-Commands/Linux-CLIMagic.md",
-    "Type-.md",
-    "Exploitation/Windows/PrintNightmare.md",
-    "[[Active-Directory-Defined]].md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-AD-Administration.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administrator-Virtual-Networking.md"
+    "Linux/Linux-Commands/Linux-CLIMagic.md"
   ]
 }

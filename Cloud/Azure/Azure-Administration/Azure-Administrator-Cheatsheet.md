@@ -72,4 +72,11 @@ Create a SAS for container `Home -> Storage Accounts -> $ContainerName -> Shared
 - SAS Token
 - Blob service SAS URL
 - Queue service SAS URL
-- Tabe service SAS URL
+- Take service SAS URL
+
+
+
+## References
+
+
+[John Savill's Microsoft Azure Master Class Part 6 - Networking](https://www.youtube.com/watch?v=K8ePZdLfU7M&t=3511s)

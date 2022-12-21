@@ -169,4 +169,6 @@ Virtual Network can use Azure DNS or custom DNS, Azure can provide public and pr
 Azure Private Link is when a external facing Azure PAaS serfvice is accessed from a resource in a VNet the trafffic sztays on the Azure network. Priave Endpoint into a Network. The PaaS service stil ahas a external facing endpoint that some companies do not want even with firewall/authenication - firewalls and authenication are bypassable. APL enables PaaS Service is an avatar for that service instance and can project custom services that are behind a Load Balancer. Must have consistent DNS management!
 
 
+## References
+
 [John Savill's Microsoft Azure Master Class Part 6 - Networking](https://www.youtube.com/watch?v=K8ePZdLfU7M&t=3511s)
