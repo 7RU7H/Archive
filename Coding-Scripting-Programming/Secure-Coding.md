@@ -59,21 +59,6 @@ $toys_rs=mysqli_query($db,$query);
 ```
 The `$query` variable is a concatenation of the first string and the output of super global function call `$_GET[]`, meaning is adding it together `a + b` becoming `ab` where `b` is appended to `a`. Beware it will concatenate **any** value regardless of the underlying type, syntax, set of characters, etc. With SQLi it is about break the query syntax of the initial query and then fixing it with the your query or in the case above just making addition queries.
 
-Safer integer protections:
-```php
-$query="select * from users where id=".intval($_GET['id']);
-```
-
-Prepared SQL statements 
-```php
-$q = "%".$_GET['q']."%";
-$query="select * from toys where name like ? or description like ?";
-$stmt = mysqli_prepare($db, $query);
-mysqli_stmt_bind_param($stmt, 'ss', $q, $q);
-mysqli_stmt_execute($stmt);
-$toys_rs=mysqli_stmt_get_result($stmt);
-```
-
 Similiarly in C\# a connection is made with `SqlConnection` and then a `SqlCommand` can be then sent while it also requires a `SqlDataReader` reader to read the output and an exception handler `
 `SqlException`.
 ```csharp
@@ -126,6 +111,28 @@ namespace sqltest
 }
 ```
 [C sharp - insert code to query database](https://learn.microsoft.com/en-us/azure/azure-sql/database/connect-query-dotnet-core?view=azuresql)
+
+
+Safer integer protections:
+```php
+$query="select * from users where id=".intval($_GET['id']);
+```
+
+Prepared SQL statements - hardcode prepared fields and a statement
+```php
+$q = "%".$_GET['q']."%";
+$query="select * from toys where name like ? or description like ?";
+$stmt = mysqli_prepare($db, $query);
+mysqli_stmt_bind_param($stmt, 'ss', $q, $q);
+mysqli_stmt_execute($stmt);
+$toys_rs=mysqli_stmt_get_result($stmt);
+```
+
+So what are doing is:
+- Replace string values that are queried with `?` - use hardcoded variables to be call inline later in code
+- mysqli_prepare() to prepare query
+- mysqli_stmt_bind_param to add in our hardcode variables inline as referenced earlier
+- mysqli_stmt_execute() and then mysqli_stmt_get_result() rather than query, because we want execute our query and the result request is also hardcode  
 
 
 ## References
