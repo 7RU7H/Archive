@@ -242,7 +242,7 @@ Yes Arch too: ❯❯ pacman -S sshfs
 ❯❯ dpkg -l '*4.10.0*' | cat
 ```
 
-- Run sudo on the last command in your history. Be careful though. <Up Arrow > & [Ctrl-a] sudo can be fast too and perhaps safer
+- Run sudo on the last command in your history. Be careful though. `<Up Arrow > & [Ctrl-a]` sudo can be fast too and perhaps safer
 
 ```Bash
 ❯❯ sudo !!
@@ -902,7 +902,7 @@ Yes Arch too: ❯❯ pacman -S sshfs
 ❯❯ <Ctrl-e >
 ```
 
-- Move your cursor to the beginning of the line. Faster than holding down left arrow. In screen, you need to press <Ctrl-a a >
+- Move your cursor to the beginning of the line. Faster than holding down left arrow. In screen, you need to press `<Ctrl-a a >`
 
 ```Bash
 ❯❯ <Ctrl-a >
@@ -913,8 +913,6 @@ Yes Arch too: ❯❯ pacman -S sshfs
 ```Bash
 ❯❯ <Ctrl-r >string
 ```
-
-##
 
 ```Bash
 ❯❯ alias find='sleep $((RANDOM%60+5))

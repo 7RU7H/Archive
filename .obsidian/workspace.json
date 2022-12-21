@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administrator-Virtual-Networking.md",
+                "file": "Coding-Scripting-Programming/Secure-Coding.md",
                 "mode": "source",
                 "source": false
               }
@@ -102,7 +102,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administrator-Virtual-Networking.md",
+                "file": "Coding-Scripting-Programming/Secure-Coding.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,17 +120,27 @@
     "width": 300,
     "collapsed": true
   },
+  "left-ribbon": {
+    "hiddenItems": {
+      "obsidian-excalidraw-plugin:New Excalidraw drawing": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "command-palette:Open command palette": false,
+      "markdown-importer:Open format converter": false
+    }
+  },
   "active": "45b8149b981a5881",
   "lastOpenFiles": [
-    "Cloud/Cloud-Security.md",
+    "Linux/Linux-Commands/Linux-CLIMagic.md",
+    "Type-.md",
+    "Exploitation/Windows/PrintNightmare.md",
+    "[[Active-Directory-Defined]].md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-AD-Administration.md",
     "Cloud/Azure/Azure-Administration/Azure-Administrator-Virtual-Networking.md",
+    "Cloud/Cloud-Security.md",
     "Brain-Hacking/Beyond-Root-Ideas.md",
-    "Brain-Hacking/Learning-To-Hack.md",
-    "Brain-Hacking/Question-Based-Hacking-Methodology.md",
-    "Exploitation/Windows/Finding-Windows-Exploits.md",
-    "Services/Webservers/ApacheTomcat/Apache-Tomcat.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/PrivEsc-Important-Linux-Locations.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md"
+    "Brain-Hacking/Learning-To-Hack.md"
   ]
 }
