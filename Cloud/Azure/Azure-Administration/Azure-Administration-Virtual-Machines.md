@@ -51,7 +51,8 @@ Azure Compute Units (ACU) a method of comparing compute CPU performance across A
 
 #### VM Via Azure Mobile App
 
-You can monitor your VMs on the go with [mobile App](https://azure.microsoft.com/en-gb/products/app-service/mobile/). 
+You can monitolt Domains
+- Newest VM - Delete the newest created VM, balanced across AZsr your VMs on the go with [mobile App](https://azure.microsoft.com/en-gb/products/app-service/mobile/). 
 
 #### Hyper-V and Generation 1 vs 2
 
@@ -78,7 +79,8 @@ You have to create a Azure BastionSubnet called `AzureBastionSubnet` with atleas
 #### Update Management
 
 Update Management allow you to automate and install operating system updates and patches for both Windows and Linux. It uses Azure Automation underneath Update Managemen, switch performs a compliance scan every 24 hours. Log Analytics workspace and Automation Account required like all Azure Automation
-
+lt Domains
+- Newest VM - Delete the newest created VM, balanced across AZs
 #### Virtual Machine Monitoring
 
 Automation Accounts - `Search -> Automataion Accounts -> Create`

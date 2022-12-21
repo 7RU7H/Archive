@@ -62,7 +62,8 @@ Some outside of the above may work, but Load balances may not understnad
 
 - Virtual Networks are dual stack enabling IPv4 and IPv6 address ranges assigned
 	- The Azure Health probes use IPv4
-- IPv6 supported in NSGs, UDR and LB (Loadbalancers), peering
+- IPv6 supported in NSGslt Domains
+- Newest VM - Delete the newest created VM, balanced across AZs, UDR and LB (Loadbalancers), peering
 	- Kubernetes is work in progress, but also is dual stack
 - Can enable IPv6 existing resources - may require reboot - DHCP addressing
 - No ExpressRoute (on-premises to Azure) IPv6
@@ -97,7 +98,8 @@ If you have multiple subscription or region you then will have multiple virtual 
 	- Span subscriptions and AAD tenants
 	- Peers are not transitive, but they could be via (if Hub is parent and nth number of Spokes are child nodes and Vnets of a network):
 		- Peering segmented Spoke Vnets
-		- Vnet Hub could with user defined routing - **Beware the Capacity and Scaling of Routing Appliance in the Hub!** 
+		- Vnet Hub could with user defined routing - **Beware the Capacity and Scaling of Routing Appliance in thelt Domains
+- Newest VM - Delete the newest created VM, balanced across AZs Hub!** 
 			- Vnet Hub has a route table for peering between Spoke VNets 
 			- Solution: Forwarding to the Hub from Spoke 1 to another Spoke 2 . 
 
@@ -160,7 +162,8 @@ NSGs are focused on traffic inot and out of the virtual network, Azure PaaS opti
 Virtual Network can use Azure DNS or custom DNS, Azure can provide public and private zones. Set at NIC level not at the VM level.
 - Private DNS Zone - you pick the name and managed fully - names, records, etc!
 - Domain Controllers - for custom DNS Active Directory - probably not Public 
-- Private DNS can set auto-registration 
+- Private DNS can set auto-registration lt Domains
+- Newest VM - Delete the newest created VM, balanced across AZs
 - Private DNS can be used across subscriptions, regions! - PERMISSIONS!
 - Azure DNS 168.63.129.16
 
