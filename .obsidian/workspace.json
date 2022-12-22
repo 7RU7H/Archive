@@ -4,47 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "14deb7e8ed3b483d",
+        "id": "2dfd8767baea08a4",
         "type": "tabs",
         "children": [
           {
-            "id": "21ada53e0e016614",
+            "id": "d19495926ee86467",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Web-Application-Hacking/Content-Discovery/FFUF-Cheatsheet.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           },
           {
-            "id": "b47aba8f5c9e5e99",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Brain-Hacking/Question-Based-Hacking-Methodology.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "45b8149b981a5881",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Coding-Scripting-Programming/Secure-Coding.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a0082b049120fea9",
+            "id": "78c73a43699a6666",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -56,79 +28,43 @@
             }
           },
           {
-            "id": "3bef46f02983437a",
+            "id": "93adbd3d7c0918bb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Application-Gateways.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Containers-Instances.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "1e6c28281738be6c",
+            "id": "ad32c127746fe335",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Adminstration-Azure-Monitor.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Container-Registeries.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "1bf44aac83cb3e16",
+            "id": "5e823085ffcdd03d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Backups.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6f53d953ce015022",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Application-Services.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8698ac5fc77da3f5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administrator-Cheatsheet.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "aade2b0998dca28e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administrator-Virtual-Networking.md",
+                "file": "Exploitation/Video-Game-Hacking.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -186,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Backups.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Container-Registeries.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -214,17 +150,17 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "1bf44aac83cb3e16",
+  "active": "ad32c127746fe335",
   "lastOpenFiles": [
-    "Cloud/Azure/Azure-Administration/Azure-Adminstration-Azure-Monitor.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Backups.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administrator-Virtual-Networking.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Scale-Sets.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Application-Services.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administrator-Cheatsheet.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Storage-Account.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-ARM-Templates.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Containers-Instances.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Container-Registeries.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration.md",
+    "Exploitation/Video-Game-Hacking.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Policies.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Resource-Manager.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Virtual-Machines.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Application-Gateways.md"
+    "Cloud/Azure/Azure-Administration/Azure-Adminstration-Azure-Monitor.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administrator-Virtual-Networking.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administrator-Cheatsheet.md"
   ]
 }
