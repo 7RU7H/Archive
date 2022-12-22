@@ -6,7 +6,7 @@ Azure Kubernetes Services (AKS) makes it simple to deploy a managed Kubernetes c
 - Service Discovery across multiple containers
 - Automatic scaling
 - Coordinated application upgrades
-Bridge to Kubernetes is an extension in [[Visual-Studio-Code]] and [[VS-Code]] to write, test and debug microservice code on development workstations
+Bridge to Kubernetes is an extension in [[Microsoft-Visual-Studios]] and [[VS-Code]] to write, test and debug microservice code on development workstations
 
 Azure manages:
 - Kubernetes masters

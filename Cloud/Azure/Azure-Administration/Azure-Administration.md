@@ -12,6 +12,15 @@ This a hub page group links to all relevant articles under a Azure Administratio
 [[Azure-Administrator-Virtual-Networking]]
 [[Azure-Administration-Azure-Disks]]
 [[Azure-Administration-Application-Gateways]]
+[[Azure-Administration-Azure-DNS]]
+[[Azure-Administration-Azure-Kubernetes-Services]]
+[[Azure-Administration-Container-Registeries]]
+[[Azure-Administration-Azure-Containers-Instances]]
+[[Azure-Administration-Scale-Sets]]
+[[Azure-Administration-Azure-Backups]]
+[[Azure-Administration-Application-Services]]
+[[Azure-Administration-Application-Gateways]]
+[[Azure-Adminstration-Azure-Monitor]]
 
 For the Cheatsheet: [[Azure-Administrator-Cheatsheet]]
 

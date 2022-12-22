@@ -1,13 +1,33 @@
 # Azure Administrator - Virtual Networking
 
 
-Virtual Networks consist of one of more IP ranges that are typically from RFC 1918, but not exclusively. 
+Virtual Networks consist of one of more Address Space(s) available IP ranges that are typically from RFC 1918, but not exclusively, which are allocating for you use within your VNet
 
 - Exists within a specific subscription
-- Exists within a specific region
+- Region VNet Peering - Exists within a specific region, peering two Vnets in same regions
+- Global VNet Peering - Exists within a different regions, peering two Vnets in two different two regions
 - The only public IPs avaliable are the one granted by Azure
 - Subnet creation lose **five** addresses: all 0s, 256, Azure Default Gateway, next two address after the Default gateway will be lost to DNS.
 	- /29 - would only have 3 addresses as you always lose the 5 above
+
+Network Interface Controller (NIC) - soft/hardware that interface between two device or protocol layer in a network communicating with IP
+
+Azure Network Interfaces (NICs):
+- Azure Network Interfaces are attached to azure VM instance
+- Without an NIC, an Azure VM instance would have no way to communicate
+- An Azure VM instance has to have an NIC and can have multiple NICs
+
+Route Table is table of data stored in router or network host that list routes to next destinations
+- By default Azure creates a route table with default routes (system routes) and associates them to your subnmets
+- You can override the system routes assigned to your subnets by creating a new route table and associating with a subnet
+
+Subnet is a logical division of an address space
+- Subnet requires a Route Table for access
+- Public and Prviate subnet describes whether a subnet is reachale from the internet or not
+- Azure has no concept of private and public subnets 
+	- **Configure subnets to have ensure they do no reach the internet!**
+- Associate an NSG to protect traffic entering and leaving your subnet
+- Azure has special types of Gateway Subnet that is used by Azure Virtual Network Gateway
 
 #### Creating 
 - Connect to Resource Group
@@ -30,7 +50,7 @@ The Virtual Network should be broken up into subnet ranges like on-premise to ma
 		- Use Resilience Services -  Load balance, Firewall in front of VM not Public IPs for VMs!
 	- Instance Level Public - VM processes by Private IP
 
-![](azure-virtualnetworking-diagram.excalidraw)
+![1000](azure-virtualnetworking-diagram.excalidraw)
 
 - VMs are placed in the subnet, in actuality you are placing NIC in the subnet and connecting it to the VM. 
 - Azure tracks the IP addresses as deallocation and reallocation will result in a VM getting probably a different IP. 
@@ -88,6 +108,7 @@ BIG WARNING - **Use Network Security Groups** - The defaults are dangerous
 			- Azure will automatically create Public IPs and allow internet access
 - Ports exposed - Use encrypted variants - [[Nmap-Cheatsheat]] is easy to use to find your RDP and SSH , SMB that is externally facing, just don't - obsfucation is not security.
 	- Just-In-Time access is avaliable if you don't have private routing. Do not expose services to internet continually
+	- 
 #### Connecting Virtual Neworks
 
 If you have multiple subscription or region you then will have multiple virtual networks to connect them via:
@@ -156,8 +177,7 @@ NSGs are focused on traffic inot and out of the virtual network, Azure PaaS opti
 - Service Enpoint Policies allow specific instances of services to be allowed from a virtual network, which is not possible with NSG service Tag
 - Service Endpoints are not routeable
 
-
-#### Azure DNS
+#### Azure DNS 
 
 Virtual Network can use Azure DNS or custom DNS, Azure can provide public and private zones. Set at NIC level not at the VM level.
 - Private DNS Zone - you pick the name and managed fully - names, records, etc!
@@ -167,10 +187,63 @@ Virtual Network can use Azure DNS or custom DNS, Azure can provide public and pr
 - Private DNS can be used across subscriptions, regions! - PERMISSIONS!
 - Azure DNS 168.63.129.16
 
+Consider reviewing [[Azure-Administration-Azure-DNS]] and [[DNS-Defined]] for futher information.
+
 #### Azure Private Link
 
-Azure Private Link is when a external facing Azure PAaS serfvice is accessed from a resource in a VNet the trafffic sztays on the Azure network. Priave Endpoint into a Network. The PaaS service stil ahas a external facing endpoint that some companies do not want even with firewall/authenication - firewalls and authenication are bypassable. APL enables PaaS Service is an avatar for that service instance and can project custom services that are behind a Load Balancer. Must have consistent DNS management!
+Azure Private Link is when a external facing Azure PAaS service is accessed from a resource in a VNet the trafffic stays on the Azure network. APL enables PaaS Service is an avatar for that service instance and can project custom services that are behind a Load Balancer. Must have consistent DNS management!
+- Private Link Endpoint is the Network Interface  
+- Private Link service is the connection
+	- Requires Azure Standard Internal Load Balancer and associated to a Link service:
+		- Azure Sotrage
+		- CosmoDB
+		- SQL
+- Third-Party providers acan be powered by Private Link
 
+The PaaS service still has a external facing endpoint that some companies do not want even with firewall/authenication - firewalls and authenication are bypassable. 
+
+Azure Firewall is managed, cloud-based network security service that protects your Azure VNets resources:
+- It is a fully stateful Firewall as a SErvice (FWaaS) with: built-in high availability and unrestricted cloud scalability
+- Uses a static public IP address for your VNet resources allowing outside firewalls to identify traffic originating from your virtual network
+- Fully integrated with Azure Monitor for logging and analytics
+- Azure Firewall on its own VNet
+- VNets pass through this Central Vnet
+- Comes with Microsoft Threat Intelligence
+	- Blocks know malicious IPs and FQDNs
+
+Azure ExpressRoutes create private connections between Azure datacenters and infrastructure on your premises or in a colocation envirnoment:
+- connectivity can be from an: Any-to-any (IP VPN) network, a point-to-point Ethernet network, virtual cross-connection
+- Through a connectivity provider at a colocation facililty 
+
+ExpressRoute Direct allows for greater bandwidth connection from 50 Mbs to 10Gbs
+
+#### Azure Network Watcher
+
+Azure Network Watcher provides tools to monitor, diagnose and view network metrics - also enable and disable logging for resource in an Azure Vnet
+
+Watcher can monitor and repair Azure resources you provision:
+- Cannot be used to monitor PaaS (fully managed services) monitoring or Web Analytics
+- Disabled by default in most regionsso you need to enable it at per region basis
+- Visualize the topology of VNets
+
+Network Performance Monitor (NPM) is cloud-based hybrid network monitoring solution , which helps you monitor network performance between various points in your network infrastructure.
+- Traffic blackholing 
+- Route errors
+- Unventional Network Issues
+- Generates Alerts andNotifies you when a threshold is breached for a network link.
+
+#### Network Security Groups (NSG)
+
+Network Security Group (NSG) filter network traffic to and from Azure resources in a VNet; an NSG is composed of many Security Rules with the following properties:
+- Name
+- Source or Destination
+- Port Range
+- Protocol 
+- Action
+- Priority - 100 to 4096
+
+- Inbound Rules apply To traffic entering the NSG
+- Outbound Rules apply to traffic leaving the NSG
 
 ## References
 
