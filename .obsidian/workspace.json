@@ -28,6 +28,18 @@
             }
           },
           {
+            "id": "808ecacb2e5b6e0f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Virtual-WAN.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "efba3a220d423d98",
             "type": "leaf",
             "state": {
@@ -52,7 +64,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -110,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administrator-Virtual-Networking.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Virtual-WAN.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -138,17 +150,17 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "78c73a43699a6666",
+  "active": "808ecacb2e5b6e0f",
   "lastOpenFiles": [
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-DNS.md",
+    "Cloud/Azure/Azure-Administration/Azure-Adminstration-Azure-Monitor.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Virtual-WAN.md",
     "Cloud/Azure/Azure-Administration/Azure-Administrator-Virtual-Networking.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-DNS.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Containers-Instances.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Container-Registeries.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Kubernetes-Services.md",
     "Tools/Microsoft-Visual-Studios.md",
-    "Exploitation/Video-Game-Hacking.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Policies.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Resource-Manager.md"
+    "Exploitation/Video-Game-Hacking.md"
   ]
 }
