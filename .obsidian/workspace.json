@@ -52,6 +52,18 @@
             }
           },
           {
+            "id": "7acaa68d98e7190f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Kubernetes-Services.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "5e823085ffcdd03d",
             "type": "leaf",
             "state": {
@@ -64,7 +76,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -122,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Container-Registeries.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Kubernetes-Services.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,17 +162,17 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "ad32c127746fe335",
+  "active": "7acaa68d98e7190f",
   "lastOpenFiles": [
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Containers-Instances.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Container-Registeries.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Kubernetes-Services.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Containers-Instances.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration.md",
     "Exploitation/Video-Game-Hacking.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Policies.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Resource-Manager.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Virtual-Machines.md",
     "Cloud/Azure/Azure-Administration/Azure-Adminstration-Azure-Monitor.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administrator-Virtual-Networking.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administrator-Cheatsheet.md"
+    "Cloud/Azure/Azure-Administration/Azure-Administrator-Virtual-Networking.md"
   ]
 }
