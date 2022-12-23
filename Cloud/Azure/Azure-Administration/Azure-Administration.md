@@ -21,6 +21,7 @@ This a hub page group links to all relevant articles under a Azure Administratio
 [[Azure-Administration-Application-Services]]
 [[Azure-Administration-Application-Gateways]]
 [[Azure-Adminstration-Azure-Monitor]]
+[[Azure-Administration-Virtual-WAN]]
 
 For the Cheatsheet: [[Azure-Administrator-Cheatsheet]]
 
