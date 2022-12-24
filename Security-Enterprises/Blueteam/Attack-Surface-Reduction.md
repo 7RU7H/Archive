@@ -1,7 +1,7 @@
 # Attack Surface Reduction
 
 
-Attack Vectors: are the Mitre Tactic Techniques and Procedures (TTPs) that used by adversaries to complete their objectives.
+Attack Vectors: are similiar Mitre Tactics, Techniques and Procedures (TTPs) that used by adversaries to complete their objectives.
 
 Attack Surface: is the surface area - abstract mathematical sense of space - of which attacks can be made against. It is scope of assets held by stake holder that define a shape. 
 
@@ -16,7 +16,7 @@ Attack Surface Reduction is the strategy of reducing the the area of asset attac
 - [[Defense-In-Depth]]
 - Countering Human Error
 - Countering Insider Threat 
-- Collective Strength - Vulnerable legacy systems will targeted - secure them and segment them
+- Collective Strength - Vulnerable/Legacy systems will targeted - secure and segement Legacy Systems
 - Data retention 
 - Throughout Incident Response  
 - Phishing Protections

@@ -33,62 +33,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administrator-Cheatsheet.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "db078631d3cdce6f",
+            "id": "240271e17d374c13",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Security-Enterprises/Blueteam/Defense-In-Depth.md",
+                "file": "Services/Kubernetes/Kubernetes.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "77c7ffc7a4f8476f",
+            "id": "7ea782ce08fe028e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Security-Enterprises/Blueteam/Attack-Surface-Reduction.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "efba3a220d423d98",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-DNS.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "5e823085ffcdd03d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Exploitation/Video-Game-Hacking.md",
+                "file": "Services/Kubernetes/Kubernetes-Hacking.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -146,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Security-Enterprises/Blueteam/Attack-Surface-Reduction.md",
+                "file": "Services/Kubernetes/Kubernetes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,17 +150,17 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "77c7ffc7a4f8476f",
+  "active": "240271e17d374c13",
   "lastOpenFiles": [
-    "Security-Enterprises/Blueteam/Defense-In-Depth.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-DNS.md",
+    "Services/Kubernetes/Kubernetes-Hacking.md",
+    "Services/Kubernetes/Kubernetes.md",
+    "README.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administrator-Cheatsheet.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Virtual-WAN.md",
-    "Cloud/Azure/Azure-Administration/Azure-Adminstration-Azure-Monitor.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-AD-Administration.md",
     "Cloud/Azure/Azure-Administration/Azure-Administrator-Virtual-Networking.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Containers-Instances.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Container-Registeries.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Kubernetes-Services.md",
-    "Tools/Microsoft-Visual-Studios.md"
+    "Security-Enterprises/Blueteam/Attack-Surface-Reduction.md",
+    "Security-Enterprises/Blueteam/Defense-In-Depth.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-DNS.md"
   ]
 }

@@ -1,5 +1,22 @@
 # Archive
 
+## Important
+
+With the advent of [ChatGPT](https://chat.openai.com/chat) I will be using it because I theorize a kind of [[ChatGPT-Whispering]], firstly it is a cool naming and will revolutionize Hacking and [[Search-Engine-Dorking]]. Information gathering is very important and although I think ChatGTP is more of an investment for the future as it is wrong somewhat useless, regardless I write and assimiliate other works with as much credit as I can give in words - references and endorsement. AI will never ruin this. It would ruin the point of this Repo. I use it for what I have or others I trust have verified about the world. I will not use ChatGTP to write anything without editing it and cross referencing it. This is my learning, revision and known best till I assimiliate better  
+
+But. For dramatic variate of an "also".
+
+Information gathering is very important and if an Hacker is able to ask an AI the best phased question it can bridge gaps in understanding of what you are hacking. ChatGPT has its own limitations, but Cheatsheet of Linguistically the best ways to ask questions - [[ChatGPT-Whispering]] or AI whsipering is even more valuable, I foresee. 
+
+I write this to state that there will be uses of AI, but the reason I make this is to learn and I here to learn and not either state that I am making some cheatsheet spread and never finish it or be a scam and use ChatGTP to not recognise other humans work - ChatGTP is guilt of that and my biggest criticism - is where did you find this stuff. Its default style is very arrogant. To Summarise:
+
+1. I will sometimes use ChatGTP to add to a cheatsheet to aid humanity in getting the most out of it.
+2. Its usage will be to check what it actually recommends and how I can get the most out of it that feeds back to point 1.
+3. At some point the more me-esque element of sysntax will fade, but I will not use ChatGTP to write any article as I want to have some of this information in my brain.
+4. Luddites never win, but ChatGTP has limits that State sponsered types do not have to deal with - the gap to defend and secure ordinary people's relate cyber assets should not be handed entirely in aftermath.  
+5. I need to trust this is the good stuff, using AI to write anything would counter my person goals and information pool. 
+
+
 ## Overview 
 
 Hacking Methodology and Mechanical/Informational/Computational Art, Cheatsheats, Conceptual-Breakdowns. 
