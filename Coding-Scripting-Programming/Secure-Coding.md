@@ -23,6 +23,12 @@ Implemented:
 - Array of allowed values to check parametre content
 - [[Regular-Expressions]] for any other structured data covering the whole input string and not using "any character" wildcard (such as  `.` or `\s`)
 
+Validating free-form Unicode text
+
+*"Free-form text, especially with Unicode characters, is perceived as difficult to validate due to a relatively large space of characters that need to be allowed."* [From OWASP](https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html#validating-free-form-unicode-text)
+-   **Normalization:** Ensure canonical encoding is used across all the text and no invalid characters are present.
+-   **Character category allow-listing:** Unicode allows listing categories such as "decimal digits" or "letters" which not only covers the Latin alphabet but also various other scripts used globally (e.g. Arabic, Cyrillic, CJK ideographs etc).
+-   **Individual character allow-listing:** If you allow letters and ideographs in names and also want to allow apostrophe `'` for Irish names, but don't want to allow the whole punctuation category.
 
 #### File uploads
 

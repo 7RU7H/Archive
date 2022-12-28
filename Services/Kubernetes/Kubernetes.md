@@ -3,7 +3,8 @@ For hacking [[Kubernetes-Hacking]]
 
 ## Hardening K8
 
-- Patching
+- Patching 
+	- Legacy Kubenetes API if exposed does not require token for authenication
 - RBAC Policy
 	- Use namespaces to restrict access to cluster resources
 - Security Policy
@@ -26,7 +27,7 @@ For hacking [[Kubernetes-Hacking]]
 	- Restrict self-modifying workloads
 - Monitoring
 	- Scan containers and pod for vulnerabilities and misconfigurations
-	- Captute and Audit logs
+	- Capture and Audit logs
 	- Periodic manual review of settings
 
 

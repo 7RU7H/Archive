@@ -10,8 +10,15 @@ Online editor are helpful resource, much like online code editors when you need 
 
 ## Regular Language
 
+A reminder for myself more than anything - use `egrep`
 ```bash
-[ <charset is defined  enclosed in square brackets> ] # define charset
+egrep OPTIONS 'PATTERNS' FILE # Just use egrep for regex 
+```
+
+Defining Patterns
+```bash
+'^[PATTERN]{}$' # define and encapsulate an entire line with ^ and $ in single quotes
+^[ <charset is defined  enclosed in square brackets> ]$ # define charset
 [a-zA-Z] # Dash '-' define a range, like all lowcase and uppercase chracters
 
 # Excluding characters
@@ -30,8 +37,8 @@ a.c # Will match aac, abc, a@c
 acb? # Will match ab and abc
 
 # Meta Characters
-
-\d # matches  a digit
+# Some binaries do not use metacharacters
+\d # matches a digit
 \D # matches a non-digit
 \w # matches a alphanumeric - includes: _
 \W # matches a non-alphanumeric characters - does not include: _  
@@ -63,13 +70,17 @@ $ # ends with character
 ```
 
 
-
 ## Helpful Regexes
 
 For  >= 8 character containing atleast one of each: uppercase letter, lowercase letter and digits
 
 ```
 (/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/)
+```
+
+Find the urls both http and https, optional www
+```
+'^http(s)?://(www)?.+\..+
 ```
 
 ## References

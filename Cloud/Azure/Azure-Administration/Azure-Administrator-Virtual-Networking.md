@@ -50,7 +50,7 @@ The Virtual Network should be broken up into subnet ranges like on-premise to ma
 		- Use Resilience Services -  Load balance, Firewall in front of VM not Public IPs for VMs!
 	- Instance Level Public - VM processes by Private IP
 
-![1000](azure-virtualnetworking-diagram.excalidraw)
+![1000](azure-virtualnetworking-diagram.excalidraw.md)
 
 - VMs are placed in the subnet, in actuality you are placing NIC in the subnet and connecting it to the VM. 
 - Azure tracks the IP addresses as deallocation and reallocation will result in a VM getting probably a different IP. 

@@ -24,6 +24,8 @@ Smart Contracts are just functions (i.e Deposit, Withdraw) wrapped together as i
 `Pay Alice X amount of Y Cryptocurrency if Alice's Balance Z is not Empty to Bob` 
 `Pay Amount`, `If Balance`, `To`  without the context. 
 
+## Hacking Smart Contracts
+
 See [[Smart-Contract-Hacking]]
 
 ## References

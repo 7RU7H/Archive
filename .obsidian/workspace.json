@@ -8,32 +8,48 @@
         "type": "tabs",
         "children": [
           {
-            "id": "d19495926ee86467",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
             "id": "78c73a43699a6666",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administrator-Virtual-Networking.md",
+                "file": "Services/Kubernetes/Kubernetes.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "808ecacb2e5b6e0f",
+            "id": "ab008ffc5e5fc76c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administrator-Cheatsheet.md",
+                "file": "Blockchain/Blockchains-Defined.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b086c5149d9a7b38",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Coding-Scripting-Programming/Regular-Expressions.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d21a8311e86c6717",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Coding-Scripting-Programming/Secure-Coding.md",
                 "mode": "source",
                 "source": false
               }
@@ -45,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Services/Kubernetes/Kubernetes.md",
+                "file": "Coding-Scripting-Programming/Languages/PHP/Useful_PHP.md",
                 "mode": "source",
                 "source": false
               }
@@ -64,7 +80,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -122,7 +138,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Services/Kubernetes/Kubernetes.md",
+                "file": "Coding-Scripting-Programming/Regular-Expressions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,17 +166,17 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "240271e17d374c13",
+  "active": "b086c5149d9a7b38",
   "lastOpenFiles": [
-    "Services/Kubernetes/Kubernetes-Hacking.md",
+    "Coding-Scripting-Programming/Secure-Coding.md",
+    "Tools/Volatility.md",
+    "Coding-Scripting-Programming/Regular-Expressions.md",
+    "Blockchain/Smart-Contact-Hacking/Smart-Contract-Hacking.md",
+    "Blockchain/Blockchains-Defined.md",
+    "Images/Excalidraw/azure-virtualnetworking-diagram.excalidraw.md",
+    "Forensics/Memory-Forensics.md",
     "Services/Kubernetes/Kubernetes.md",
-    "README.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administrator-Cheatsheet.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-AD-Administration.md",
     "Cloud/Azure/Azure-Administration/Azure-Administrator-Virtual-Networking.md",
-    "Security-Enterprises/Blueteam/Attack-Surface-Reduction.md",
-    "Security-Enterprises/Blueteam/Defense-In-Depth.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-DNS.md"
+    "Coding-Scripting-Programming/Languages/PHP/Useful_PHP.md"
   ]
 }
