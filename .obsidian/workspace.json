@@ -8,24 +8,24 @@
         "type": "tabs",
         "children": [
           {
-            "id": "78c73a43699a6666",
+            "id": "ab008ffc5e5fc76c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Services/Kubernetes/Kubernetes.md",
+                "file": "Exploitation/Shell-Spawning.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "ab008ffc5e5fc76c",
+            "id": "5ccc593b71b51c46",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blockchain/Blockchains-Defined.md",
+                "file": "Exploitation/Encoded-Shell-Spawning.md",
                 "mode": "source",
                 "source": false
               }
@@ -49,7 +49,31 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Coding-Scripting-Programming/Secure-Coding.md",
+                "file": "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Linux-File-Transfers.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "78c73a43699a6666",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Services/Kubernetes/Kubernetes.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "84f6a784c6a78bde",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Services/Kubernetes/Kubernetes-Hacking.md",
                 "mode": "source",
                 "source": false
               }
@@ -80,7 +104,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -138,7 +162,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Coding-Scripting-Programming/Regular-Expressions.md",
+                "file": "Services/Kubernetes/Kubernetes-Hacking.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -166,17 +190,17 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "b086c5149d9a7b38",
+  "active": "84f6a784c6a78bde",
   "lastOpenFiles": [
-    "Coding-Scripting-Programming/Secure-Coding.md",
-    "Tools/Volatility.md",
-    "Coding-Scripting-Programming/Regular-Expressions.md",
-    "Blockchain/Smart-Contact-Hacking/Smart-Contract-Hacking.md",
-    "Blockchain/Blockchains-Defined.md",
-    "Images/Excalidraw/azure-virtualnetworking-diagram.excalidraw.md",
-    "Forensics/Memory-Forensics.md",
     "Services/Kubernetes/Kubernetes.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administrator-Virtual-Networking.md",
-    "Coding-Scripting-Programming/Languages/PHP/Useful_PHP.md"
+    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Shell-Escapes.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+    "Tools/LinEnum-Helpsheet.md",
+    "Post-Exploitation/Privilege-Escalation/Kubenetes-Escaping.md",
+    "Services/Kubernetes/Kubernetes-Hacking.md",
+    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Linux-File-Transfers.md",
+    "Coding-Scripting-Programming/Secure-Coding.md",
+    "Exploitation/Encoded-Shell-Spawning.md",
+    "Exploitation/Shell-Spawning.md"
   ]
 }

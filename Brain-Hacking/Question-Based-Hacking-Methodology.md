@@ -33,12 +33,27 @@ What is network level purpose of connections
 
 - Objectives
 
+- Pre-Network Phase / OSINT
+
+- REDO
+
+	- External expose identification
+		- Formatting for email and users?
+	- What externally exposed infrastructure exists - Ports, Websites, DNS servers -> Subdomains? Email servers?
+	- Domain Names
+	- CIDR ranges 
+	- Cloud providers
+- External Network
+
 - Web
-	- Does the site provide text to scrap into wordlist
+	- Have you pressed `[CTRL + F12]` yet?
+	- Does the site provide text to scrap into wordlist?
 	- Virtual hosting? 
 		- Fuzzable - rate limits?
 		- Potential OSINTable VHOST from merging or referenced? 
 	- Webserver and Website Language
+		- Vulnerable Lanaguage?
+		- Vulnerable webserver?
 		- Webserver generic issues by type
 			-  [[Apache-Tomcat]]
 		- Vulnerable versioning?
@@ -65,25 +80,29 @@ What is network level purpose of connections
 	- Error text 
 		- What does the error mean? Just google it! 
 
+
 Condense:
 [[Haddix-Methodology]]
 [[Web-App-Hacking-Methodology]]
 [[Web-Hacking-Checklist]]
 
-
-- Pre-Network Phase / OSINT
-	- External User interaction points - Website, email address
-	- Domain Names
-	- Email addresses
-	- CIDR ranges 
-	- Cloud providers
-- External Network
+- Breaching
+	- Host OS and version?
+		- Are we a container?
+	- Service user in the event of footholding the machine?
+	- Binaries avaliable?
+	- Expected security?
+	- Have you tried encoding the payload to counter string handling both client and server side
+ 
 - Internal Network
 - Host Enumeration
 	- Do scans or enumerated data have conflicting versioning and OS?
 		- Containerisation - which is the container and which is the host?
 - Lateral Movement
 	- Password Reuse?
+
+
+
 
 - Host
 	- What security is on host?
