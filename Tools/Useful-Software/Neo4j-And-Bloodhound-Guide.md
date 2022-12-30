@@ -35,6 +35,8 @@ cd /tmp; curl https://github.com/BloodHoundAD/SharpHound/releases/download/v1.0.
 
 ```powershell
 .\SharpHound.exe -c all
+SharpHound.exe -c DCOnly
+# dc only is pretty quiet comparitive to all, all will try out-of-scope machine, all machines in the domain..
 ```
 
 ```batch

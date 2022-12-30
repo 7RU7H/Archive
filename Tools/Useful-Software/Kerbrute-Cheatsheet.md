@@ -25,6 +25,15 @@ Bruteforcing Windows passwords with Kerberos is much faster than any other appro
 ./kerbrute -d lab.ropnop.com bruteforce -`
 ```
 
+
+If issues with kerberos trying syncing time to KDC host
+```bash
+sudo apt install ntpdate
+sudo ntpdate $dc_ip
+```
+[Alh4zr3d's HTB search stream](https://www.youtube.com/watch?v=OEu3sXFUCP0)
+
+
 ## References
 
 [Haak9](https://cheatsheet.haax.fr/windows-systems/exploitation/kerberos/)

@@ -8,24 +8,24 @@
         "type": "tabs",
         "children": [
           {
-            "id": "ab008ffc5e5fc76c",
+            "id": "5ccc593b71b51c46",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exploitation/Shell-Spawning.md",
+                "file": "Tools/Volatility.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "5ccc593b71b51c46",
+            "id": "5a01af936c865baf",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exploitation/Encoded-Shell-Spawning.md",
+                "file": "Hardware/Memory-Extraction.md",
                 "mode": "source",
                 "source": false
               }
@@ -73,7 +73,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Services/Kubernetes/Kubernetes-Hacking.md",
+                "file": "Brain-Hacking/Question-Based-Hacking-Methodology.md",
                 "mode": "source",
                 "source": false
               }
@@ -103,8 +103,7 @@
               }
             }
           }
-        ],
-        "currentTab": 5
+        ]
       }
     ],
     "direction": "vertical"
@@ -162,7 +161,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Services/Kubernetes/Kubernetes-Hacking.md",
+                "file": "Tools/Volatility.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -190,17 +189,17 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "84f6a784c6a78bde",
+  "active": "5ccc593b71b51c46",
   "lastOpenFiles": [
-    "Services/Kubernetes/Kubernetes.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Shell-Escapes.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
-    "Tools/LinEnum-Helpsheet.md",
-    "Post-Exploitation/Privilege-Escalation/Kubenetes-Escaping.md",
-    "Services/Kubernetes/Kubernetes-Hacking.md",
-    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Linux-File-Transfers.md",
-    "Coding-Scripting-Programming/Secure-Coding.md",
+    "Hardware/Memory-Extraction.md",
+    "Tools/Volatility.md",
+    "Reverse-Engineering/Malware-Analysis/Malware-Analysis.md",
     "Exploitation/Encoded-Shell-Spawning.md",
+    "Exploitation/Video-Game-Hacking.md",
+    "Tools/Useful-Software/Neo4j-And-Bloodhound-Guide.md",
+    "Reconnaissance/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
+    "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Privilege-Escalation.md",
+    "Tools/Useful-Software/Kerbrute-Cheatsheet.md",
     "Exploitation/Shell-Spawning.md"
   ]
 }
