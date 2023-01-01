@@ -20,90 +20,43 @@
             }
           },
           {
+            "id": "b3a732a5a23814ef",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Artificial-Intelligence/Chat-GPT-Whispering.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "46be0c3bfac45a7c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Services/Containerisation.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "5a01af936c865baf",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Hardware/Memory-Extraction.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b086c5149d9a7b38",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Coding-Scripting-Programming/Regular-Expressions.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d21a8311e86c6717",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Linux-File-Transfers.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "78c73a43699a6666",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Services/Kubernetes/Kubernetes.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "84f6a784c6a78bde",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Brain-Hacking/Question-Based-Hacking-Methodology.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "240271e17d374c13",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Coding-Scripting-Programming/Languages/PHP/Useful_PHP.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7ea782ce08fe028e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Services/Kubernetes/Kubernetes-Hacking.md",
+                "file": "Services/Docker/Intro-To-Docker.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -161,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/Volatility.md",
+                "file": "Services/Docker/Intro-To-Docker.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -189,17 +142,17 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "5ccc593b71b51c46",
+  "active": "5a01af936c865baf",
   "lastOpenFiles": [
+    "Services/Containerisation.md",
+    "Services/Docker/Intro-To-Docker.md",
     "Hardware/Memory-Extraction.md",
+    "Artificial-Intelligence/Chat-GPT-Whispering.md",
+    "Reconnaissance/Passive-Information-Gathering/Search-Engine-Dorking.md",
     "Tools/Volatility.md",
+    "Brain-Hacking/Question-Based-Hacking-Methodology.md",
     "Reverse-Engineering/Malware-Analysis/Malware-Analysis.md",
     "Exploitation/Encoded-Shell-Spawning.md",
-    "Exploitation/Video-Game-Hacking.md",
-    "Tools/Useful-Software/Neo4j-And-Bloodhound-Guide.md",
-    "Reconnaissance/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
-    "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Privilege-Escalation.md",
-    "Tools/Useful-Software/Kerbrute-Cheatsheet.md",
-    "Exploitation/Shell-Spawning.md"
+    "Exploitation/Video-Game-Hacking.md"
   ]
 }
