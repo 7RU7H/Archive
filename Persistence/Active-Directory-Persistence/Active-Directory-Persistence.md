@@ -35,7 +35,7 @@ lsadump::dcsync /user:Administrator
 
 Skeleton Key attack, built-in module in [[Mimikatz-Cheatsheet]], is backdoor mechanism that runs on DC in memory allows single password (the skeleton password) that can log in to any account. *"Technically the Skeleton Key does this by manipulating the way the encrypted timesamp (AS-REQ) is validated. As a reminder: in RC4, the timestamp is encrypted using the NT hash of the user by the client, after which the domain controller attempts to decrypt the timestamp using the user's NT hash AND the skeleton key NT hash (mimkatz default: 60BA4FCADC4667A033C178194C03DF6, which is password "mimikatz")".*
 
-- Requires Kerberos RC4 encrytion
+- Requires Kerberos RC4 encryption
 - Full compromise of DC
 - Does not Persist by itself as it runs in memory
 

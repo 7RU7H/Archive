@@ -58,6 +58,20 @@ GPO are distributed to the network share called `SYSVOL`, which is store in the 
 
 - NetNTLM is considered obselete for good reason.
 
+
+Consider a better password policy - view current:
+```powershell
+Get-ADDefaultDomainPasswordPolicy
+```
+
+It might be worth reviewing the [UK government's Password advice](https://www.ncsc.gov.uk/collection/passwords/updating-your-approach), which has alot of nuanced advice, but no direct instruction as to what length or how complex - prompt reader for considerations. 
+
+A crude example:
+```powershell
+Set-ADDefaultDomainPasswordPolicy -Identity $domain -PasswordHistoryCount 10 -MinPasswordLength 12 -ComplexityEnabled $true
+```
+
+
 ## Trees
 
 Domain Admins should not have Enterprise Admin level Privileges

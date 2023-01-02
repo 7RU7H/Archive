@@ -268,7 +268,7 @@ Some of these mitigations are from 2015, no Principle Least Privilege is mention
 		- Constrained Language mode - does have .NET and advanced functionality
 		- Enabled in AppLocker in allow mode
 	- Antimalware Integration (Win 10) [[ASMI]]
-		- Be aware of [[AMSI-Exploitation]] and [[ASMI-Bypassing]]
+		- Be aware of [[AMSI-Exploitation]] and [[AMSI-Bypassing]]
 	
 	
 
