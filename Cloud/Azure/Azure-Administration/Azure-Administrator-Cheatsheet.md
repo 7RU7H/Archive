@@ -1,9 +1,58 @@
 
 # Azure Administrator Cheatsheet
 
+- Access the portal at https://portal.azure.com/
+- Cloud Shell on the `>_` Icon; Temporary Host - per-session, per-user basis
+	- Has Requirements to use! - `Show Advanced Settings -> provide require fields ->Create Storage`
+
+
+```powershell
+-Az # Azure Module shipo backwards compatible with -AzureRM 
+New-AzVm # Create a new VM inside your Azure Subscription
+# Use the az module to restart a machine 
+az vm restart -g $ResourceGroup -n $VmName
+# Find Azure stuff
+az find
+az find blob
+```
+
 
 
 ## Resources
+
+Azure Resource Manager provides a consistent management layer to perform tasks through Azure PowerShell, Azure CLI, Azure portal, REST API, and client SDKs.
+
+
+Disk creation, retrieval and updating in powershell 
+```powershell
+# Consider Naming Conventions
+$diskname = ""
+# Get the resource group
+$rgName = Get-AzResourceGroup -Name
+# Create a Diskconfiguration for a NewAzDisk
+$diskConfig = New-AzDiskConfig -Location $location -CreateOption Empty -DiskSizeGB 32 -Sku $Skuname
+# Make a new disk with the variables created above - consider naming convention
+NewAzDisk -ResourceGroupName $rgName -DiskName $diskname -Disk $diskConfig  
+# Retrieve a Azure Disk
+Get-AzDisk -ResourceGroupName $rgName -Name $diskname
+# Retrieve Sku
+(Get-AzDisk -ResourceGroupName $rgName -Name $diskname).Sku
+# Update 
+New-AzDiskUpdateConfig -DiskSizeGB 64 -Sku Premium_LRS | Update-AzDisk -ResourceGroupName $rgName -DiskName $diskname
+```
+
+Disk creation, retrieval and updating in Bash
+```bash
+RGNAME=''
+LOCATION=$(az group show --name $RGNAME --query location --out tsv)
+DISKNAME=''
+az group show --name $RGNAME
+az disk create --resource-group $RGNAME --name $DISKNAME --size-gb 32 --sku 'Standard_LRS' 
+# Retrieve Disk properties
+az disk show --resource-group $RGNAME --name $DISKNAME # --query for specific
+# Update 
+az disk update --resource-group $RGNAME --name $DISKNAME # --Whatever-changes-by-flag!
+```
 
 #### Create a Disk
 

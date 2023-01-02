@@ -1,5 +1,6 @@
 # Active Directory Administration
 
+
 This article will eventual contain as must bare-bones guidance on applications and some configuration. So if you [[Active-Directory-Privilege-Escalation]] to some form of [[Active-Directory-Persistence]] and now need to become the DC to some Administration, hopeful this article will have you covered. But to attack is defend without defending and to defend is to attack without attacking the circle of Microsoft Windows and the fools that use, hack and sysadmin it go on. Simply put more as a reminder for myself to put in time to learn how the mechanicism operator as well as how they should not.  
 
 Having started out never Adminstating AD to taking just trying to take OSCP(with the update AD exam), this **IS  NOT** certified list of do-s and don't-s, but more a article to compress the knownledge of others in a simple checklist  of **run x**, **do y**, **DO NOT DO A,B,C** and read the manuals or links provided. If you just want AD  information read [[Active-Directory-Defined]], but if you feel like you need to test things out go to article on making a [[Active-Directory-Lab]] before doing anything on your workplace's fancy production environments.
@@ -9,6 +10,7 @@ Having started out never Adminstating AD to taking just trying to take OSCP(with
 
 
 ## Configuring Users, Groups and Machines
+
 On the DC use `Search -> Active Directory Users and Computers` to configure users, groups or machines
 
 #### Delegation

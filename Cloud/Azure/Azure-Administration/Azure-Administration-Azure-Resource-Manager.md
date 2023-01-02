@@ -59,6 +59,15 @@ Access controls can applied at granular level while being very organized.
 #### Resource Groups
 
 Resource Groups are containers that hold related resources (a group of Virtual Machines) for an Azure solution from a Resource Provider - Microsoft.Compute 
+- Resource can only exist in one group
+- Cannot be renamed
+- Can contain varying types of resources and from different regions
+- Can interact with each other
+
+Considerations:
+- Shared lifecycle
+- Scope 
+- Interactions
 
 #### Resource Provider
 
@@ -87,8 +96,19 @@ Tags allow you to organize resources:
 #### Resource Locks
 
 Locking prevents CRUD-ing of resources by other users from accidental or malicious actions:
-- CanNotDelete
+- Delete - prevent deletion
 - ReadOnly
+
+#### Moving Resources
+
+Consult - [Move operation suppport for resource page](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/move-support-resources)
+
+#### Deletion
+
+By resource group or by resource
+
+#### Usage + Quotas
+`Resource Group -> Usage + quotas` - View resource usage against limits 
 
 #### Azure Blueprint
 
@@ -155,3 +175,4 @@ Moving Resources - there are end cases - [see Documentation for more]([Move reso
 
 [FreeCodeCamp.org - AZ 104 Course](https://www.youtube.com/watch?v=10PbGbTUSAg&t=3458s)
 [Move resources to a new subscription or resource group - Azure Resource Manager | Microsoft Learn](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/move-resource-group-and-subscription)
+[Microsoft Learn - Move operation suppport for resource page](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/move-support-resources)

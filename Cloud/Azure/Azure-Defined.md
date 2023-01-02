@@ -1,4 +1,18 @@
+
 # Azure Defined 
+
+
+#### Access
+
+- Access the portal at h]ttps://portal.azure.com/
+- Cloud Shell on the `>_` Icon - Bash and Powershell Shell!
+	- Runs on Temporary Host - per-session and per-user basis 
+	- Requires:
+		- a new or existing Azure Files share to be mounted.
+		- a resource group, storage account, and Azure File share.
+
+
+#### What is Azure?
 
 Shared responsibility - Microsoft and Tenet
 
@@ -13,6 +27,7 @@ Customer is then responsible for - VM and VM Scale Sets
 - App
 - Data
 - OS
+
 
 Platform as a Service
 - Azure is resposible for everything except the App and the Data
@@ -112,6 +127,24 @@ Subscriber migrating to the cloud from exist workloads and enivornment can follo
 - Organizes to align team and roles support business's cloud adoption efforts
 
 #### Resources
+
+Azure Resource Manager provides a consistent management layer to perform tasks through Azure PowerShell, Azure CLI, Azure portal, REST API, and client SDKs. Benefits:
+- Group deployment, management and monitoring
+- Dev Lifecycle consistency endurance
+- Templates! Template are QoL and less error prone and scalable
+- RBAC
+- Tags for management! USE TAGS USE TAGS!
+
+ Knowing the names of resource providers and resources helps you define resources you want to deploy to Azure
+![](azureResourceManager.png)
+[[Azure-Administration-Azure-Resource-Manager]]
+
+Terminology
+- Resource - A manageable item that is available through Azure
+- Resource group - A container that holds related resources for an Azure solution
+- Resource Provider - A service that supplies the resources you can deploy and manage through Resource Manager
+- Template - A JavaScript Object Notation (JSON) file that defines one or more resources to deploy to a resource group.
+- Declarative Syntax - Key and Value pair. 
 
 Virtualisation of the Hardware
 
