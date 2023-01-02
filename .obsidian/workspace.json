@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "5ccc593b71b51c46",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tools/Forensics/Volatility.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "b3a732a5a23814ef",
             "type": "leaf",
             "state": {
@@ -32,91 +20,79 @@
             }
           },
           {
-            "id": "46be0c3bfac45a7c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Services/Containerisation.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "5a01af936c865baf",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tools/Windows/Process-Hacker.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "56e9b08c2407b740",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tools/Burpsuite/Burpsuite-Helpsheet.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "019b715cfc29ae9a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Internet-Of-Things/MQTT.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "2a97ddb1b2b192d2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Networks/Network-Protocols.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "9908fd4efabab6f7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Internet-Of-Things/IoT-Device-Hacking.md",
+                "file": "Brain-Hacking/Question-Based-Hacking-Methodology.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "90f3bd0db1091491",
+            "id": "37ae98942240b178",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Brain-Hacking/RTFM.md",
+                "file": "Software/File-Typology/DS-Store-Files.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b2ce36ddf703860d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Software/xls-xlsx-Files.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0cbe0f3639f6411b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Exploitation/Windows/Active-Directory/AD-User-Exploitation.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f62a4d080a01855d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Exploitation/Windows/Active-Directory/AD-Permission-Abuse.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "67b4cc0aa3ba6167",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cryptography-And-Authentication/AD-Azure-Weak-Password-Finding.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 8
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -174,7 +150,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Brain-Hacking/RTFM.md",
+                "file": "Cryptography-And-Authentication/AD-Azure-Weak-Password-Finding.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -202,17 +178,17 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "90f3bd0db1091491",
+  "active": "67b4cc0aa3ba6167",
   "lastOpenFiles": [
-    "Coding-Scripting-Programming/Languages/PHP/Useful_PHP.md",
-    "Brain-Hacking/RTFM.md",
-    "Internet-Of-Things/IoT-Device-Hacking.md",
-    "Internet-Of-Things/MQTT.md",
-    "Networks/Network-Protocols.md",
-    "Tools/Burpsuite/Burpsuite-Helpsheet.md",
-    "Brain-Hacking/Question-Based-Hacking-Methodology.md",
-    "Tools/Useful-Software/Neo4j-And-Bloodhound-Guide.md",
-    "Hacker-Distros/Kali/Kali-CLI-Basics.md",
-    "Tools/Untitled.md"
+    "Exploitation/Windows/Active-Directory/AD-Permission-Abuse.md",
+    "Cryptography-And-Authentication/Password-Attacks/Hash-Handler-Tools/John-The-Ripper-Cheatsheet.md",
+    "Cryptography-And-Authentication/Password-Attacks/Password-Attacks.md",
+    "Cryptography-And-Authentication/Cracking-Files.md",
+    "Exploitation/Windows/Active-Directory/AD-User-Exploitation.md",
+    "Windows/Active-Directory/Active-Directory-sMSA-gMSA.md",
+    "Software/xls-xlsx-Files.md",
+    "Software/File-Typology/DS-Store-Files.md",
+    "Software/File-Typology/File-Extensions.md",
+    "Brain-Hacking/Question-Based-Hacking-Methodology.md"
   ]
 }

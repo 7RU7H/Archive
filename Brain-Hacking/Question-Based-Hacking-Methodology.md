@@ -8,6 +8,10 @@ To ensure maintain it functional purose metholody will never contain - question 
 
 For more philsophical Hacking super dense and short article see [[Hacking-The-Thing]] 
 
+
+
+
+
 What systems are online, but available
 Who can connect
 What is allowed to connect - type of connection 
@@ -27,6 +31,16 @@ What does the output suggest?
 What is regular userland purpose
 What is does it run
 What is network level purpose of connections
+
+Brief disclosure on terminology, if there is a better way I will replace it
+
+#### Intel vs Information:
+
+Intel - Human intelligence data - data made by humans 
+Information - Machine information provided by querying machines
+
+Intel - Alice is a Helpdesk operator, Bob requested a password reset 
+Information - the user Alice has X SID that then indicates Administrative Group  
 
 
 
@@ -86,9 +100,21 @@ Condense:
 [[Web-App-Hacking-Methodology]]
 [[Web-Hacking-Checklist]]
 
+- Prior to breaching
+	- Are there presuppositions that can be made before footholding a machine?
+		- Security - Network and Host - Traffic-typoplogy and AMSI or Shell jails?  
+		- OS?
+
+	- Have you checked listeners, agents, tooling for your operatational errors? 
+	- Have you followed the principle that *"Two is one and one is none"*?
+
 - Breaching
 	- Host OS and version?
-		- Are we a container?
+		- Are we in a Container?
+		- Are we in a Kubernetes Fleet
+		- Are we in a VM
+		- Are we on bare metal?
+	- `whoami /all` and variants are common alerts - but what user are we 	  
 	- Service user in the event of footholding the machine?
 	- Binaries avaliable?
 	- Expected security?
@@ -96,13 +122,30 @@ Condense:
  
 - Internal Network
 - Active Directory
-	- Have you got scope for [[Responder-Cheatsheet]] and [mitm6](https://github.com/dirkjanm/mitm6) - MITM those NTLM hashes.
+	- Are you Temporally Synced to the target Domain?
+	- Is it really large and requires a [[Domain-Flyover]]
+	- Have you got scope for [[Responder-Cheatsheet]] for [[LLMNRpoisoning]] and [mitm6](https://github.com/dirkjanm/mitm6) - MITM those NTLM hashes.
 		- Have they not cracked yet?
 			- NTLM Relay Attack?
-	 - Recursively 
+	- What do the protocol used and what information from those protocols can be queried to provide a mapping of intended networking and use of AD?
+		- Are they vulnerable protocols?
+		- Is what is shared and expected to be shared by AD or have humans disclosed information in shares?
+			- Do the shares contain: shortcuts to executables, credentials, software, user and domain intel and information?	
+	 - Recursively have with current context and reappraise Bloodhound, your objectives and the potential paths - [[Neo4j-And-Bloodhound-Guide]]? - `-c DCOnly` is quieter!
 		1. How do I compromise credentials?
-		2. What services can I access with those credentials?
-		3. How can I abuse my permissions to get more permissions and more credentials?
+			1. Is the credential reused/defaults/weak/hardcoded?
+				1. Have reused all credentials with [[Password-Attacks]]?
+			2. ASREP-roast?
+			3. Kerberoastable?
+			4. Databases?
+			5. Network Shares/File system artifacts?
+			6. sMSA or [[gMSA-abuse]]?
+		3. What services can I access with those credentials?
+			1. Have you mapped the network, with or without SharpHound?
+			1. Is there evidence of network  requiring [[Proxies]] and [[Port-Redirection-And-Tunneling]]  
+		4. How can I abuse my permissions to get more permissions and more credentials?
+			1. How can you abuse the permissions allocated to the User or Group of current context?
+		5. Is there alternate tool to the method of doing any previous step?
 
 
 - Host Enumeration
@@ -169,9 +212,10 @@ Condense:
 
 - What accounts are later objectives based on Company Role?
 
-- What is CPU architecture?
+- What is CPU architecture and its implications?
 - Have two is one - one is none? - Multiple shells for stability issues
 - Are you able to run in memory?
+	- If not have you a method of altering the file system records to cleanup and **set a reminder** that you have touched disk?
 - Living Off the Land Binaries?
 - Kernel Version
 - User Hierarchy
@@ -197,12 +241,17 @@ Condense:
 - What services are running?
 	- What is running at high privileges?
 		- Should system or root be running that service?
+		- What is the file system tree surrounding the execution path?
+		- What dlls is it using?
+			- What is the file system tree surrounding a targetable dll
 
 
 - In-House Applications
 - In-House Scripting
 	1. Hardcoded Credentials
 
-
+Persistence 
+- Scope?
+	
 
 - Have you cleaned up?

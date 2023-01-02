@@ -1,21 +1,27 @@
 # Password Attacks
+
 ## Quick Links
+
 For just [OpenWall wiki's sample hashes can be found here](https://openwall.info/wiki/john/sample-hashes) and similarly [Hashcat's example hashes](https://hashcat.net/wiki/doku.php?id=example_hashes). These are good for rough useful visual guide and naming format for both tools usage. For basic cryptography see [[Cryptography101]] and [[De-Or-En-Cryption]] for applications you may need
 
 ## Introduction 
+
 We can use a [Dictionary Attack](https://en.wikipedia.org/wiki/Dictionary_attack) using a wordlist or we can [Brute Force](https://en.wikipedia.org/wiki/Brute-force_attack) all possible character combination. If hashes are leaked misconfiguration or another exploit or from a [Pass-the-hash-Attack](https://en.wikipedia.org/wiki/Pass_the_hash), the attacker can then perform [Password Cracking](https://en.wikipedia.org/wiki/Password_cracking). 
 
 ## Wordlists
+
 Kali, Parrot and Arch wordlists generally found  in `/usr/share/wordlists/`. These can be built, mutated and generated with various tools covered with links to cheatsheet in this article. For growing list of great wordlists see [[Wordlist-Library]] contain familiar lists like: [assetnote](https://wordlists.assetnote.io/) or [seclists](https://github.com/danielmiessler/SecLists)
 
 
 ## Default passwords
+
 [[Default-Passwords-Data-Recovery-Table]] or by going to [the source](https://datarecovery.com/rd/default-passwords/)
 https://cirt.net/passwords
 https://default-password.info/
 
 ## Password Attacks Against Network Sevices
 1. Noisy attack
+
 1. Dangerous, can damage service for regular users
 1. Time consuming - exponentiation of hopeful `< x^passwords_to_try`
 	1. Worst case its `$total_usernames^$total_passwords` 
@@ -24,6 +30,7 @@ https://default-password.info/
 		2.   RDP
 
 ## Cracking Password Hashes
+
 Most system store password authentication locally in to for of cryptographic hashes. Linux stores hashes in `/etc/shadow` implementing shadow-utils, see [slashroot](https://www.slashroot.in/how-are-passwords-stored-linux-understanding-hashing-shadow-utils). Whereas for Windows systems are storeed in Security Accounts Manager(SAM); from NT 4.0 SP3 SYSKEY feature partial encrypts the SAM file. Previous and including Windows 2003 LM  and NTLM hashes are stored rather than just NTLM(**UNSALTED**) disabling LM from Vista onwards. Some hashes have [Salts](https://en.wikipedia.org/wiki/Salt_(cryptography)) to improve password storage security . Identification is the first stage to cracking as there are a vast number of types and strengths. Weak passwords are bad m'kay to see list of dumped passwords head over to [skullsecurity](https://wiki.skullsecurity.org/index.php?title=Passwords).
 
 ## Tools

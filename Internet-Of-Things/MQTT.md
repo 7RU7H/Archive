@@ -36,7 +36,7 @@ PINGRESP | 13 | Server to Client | PING response
 DISCONNECT | 14 | Client to server | Client is disconnecting
 Reserved | 15 | Forbidden | Reserved 
 
-## Mosquitto Client and Alternative
+## Mosquitto Client and Alternatives
 
 Requires `mosquitto_sub` and `mosquitto_pub` -  `apt install mosquitto-client` - is a simple MMQT client that will subscribe to a single topic and print all messages it receives.
  
@@ -59,6 +59,7 @@ mosquitto_pub -h $host -t $device/info -m "Insert Message Here!"
 -url # specify username, password, host, port and topic in one URL
 ```
 
+[mqtt-pwn](https://github.com/akamai-threat-research/mqtt-pwn) intends to be a one-stop-shop for IoT Broker penetration-testing and security assessment operations.
 
 ## References
 

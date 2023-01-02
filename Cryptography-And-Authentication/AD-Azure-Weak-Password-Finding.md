@@ -1,0 +1,1 @@
+https://thycotic.com/solutions/free-it-tools/weak-password-finder/
