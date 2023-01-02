@@ -6,7 +6,7 @@
 
 ### Per shell session start with
 ```bash
-ulimit -n 40000 
+ulimit -n 40000 # increase history
 # THEN
 sudo neo4j console
 # THEN goto localhost:7474
@@ -71,6 +71,9 @@ bloodhound --no-sandbox
 ```
 
 ## Getting the most out of the Visualisation 
+
+Change `Settings -> Edge Label Display & Node Label Display -> [both] to Always Display`, may improve infomation visibility, but that may require reconfiguration in dense graphs - larger networks displayed in graph format by bloodhound.
+
 
 1. Change the Layout! - Why? - Because you want to escalate or move laterally, viewing the network in both ways can help when the graph is very dense with information
 	- Directed Graphs have a direction, showing connections in linear chain

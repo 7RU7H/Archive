@@ -95,11 +95,23 @@ Condense:
 	- Have you tried encoding the payload to counter string handling both client and server side
  
 - Internal Network
+- Active Directory
+	- Have you got scope for [[Responder-Cheatsheet]] and [mitm6](https://github.com/dirkjanm/mitm6) - MITM those NTLM hashes.
+		- Have they not cracked yet?
+			- NTLM Relay Attack?
+	 - Recursively 
+		1. How do I compromise credentials?
+		2. What services can I access with those credentials?
+		3. How can I abuse my permissions to get more permissions and more credentials?
+
+
 - Host Enumeration
 	- Do scans or enumerated data have conflicting versioning and OS?
 		- Containerisation - which is the container and which is the host?
 - Lateral Movement
 	- Password Reuse?
+
+
 
 
 

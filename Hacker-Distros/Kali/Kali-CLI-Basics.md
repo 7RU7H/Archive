@@ -9,6 +9,11 @@ Really I recommend a terminal multiplexor like TMUX, but
 `SHIFT CTRL + T`  for new terminal window
 `SHIFT CTRL + R`  split the window vertical
 
+Open the file manager to the current working directory - useful for Bloodhound or any drag and drop activity.
+```bash
+thunar # or Thunar for some reason../
+```
+
 
 ## References
 

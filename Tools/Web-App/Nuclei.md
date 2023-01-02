@@ -6,7 +6,7 @@ nuclei -ut # update templates
 
 ```bash
 nuclei -u https://$ip -o nuclei
-nuclei -u https://$subdomain.$domain -me nuclei # markdown exported
+nuclei -u https://$subdomain.$domain -me nuclei # output in markdown 
 ```
 
 ```bash
