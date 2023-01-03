@@ -8,11 +8,13 @@
 
 ARM Templates are [[Infrastructure-As-Code]] (IaC) - the process of managing and provisioning computer data centers through machine-readable definition files (JSON files) rather than physical hardware configuration or interactive configuration tools - ARM is declarative, JSON files that define Azure Resources to provision and Azure services to configure. ARM template positives:
 - Reduce Configuration Mistakes
+	- Builtin Validation!
 - Stand up or Tear down or Sharing is quick
 - Knownable definion of a stack
 - Establishes baseline compliance
 - Modular 
-- Reusable - due to modularity
+- Reusable 
+- Idempotent -  deploy the same template many times and get the same resource types in the same state.
 - Extensibility - Add Bash and Powershell scripting!
 - Testing - ARM template Toolkit
 - Preview Changes 
@@ -22,6 +24,9 @@ ARM Templates are [[Infrastructure-As-Code]] (IaC) - the process of managing and
 - CI/CD integration
 - Exportable Code - export current state of resource groups and resources
 - Authoring Tools - Visual Studio Code has advanced features for authoring ARM templates
+
+![](armtemplatepipeline.png)
+
 
 `Search -> Deploy custom template` - there are common templates:
 -    [Create a Linux virtual machine](https://portal.azure.com/#)
@@ -45,6 +50,19 @@ When it deployment fails it does not perform cleanup - manual resource deletion 
 - Type Validation and IntelliSense
 
 [Azure Quickstart Templates](https://azure.microsoft.com/resources/templates/) are Azure Resource Manager templates provided by the Azure community.
+
+#### ARM Template File Structure
+
+**Element** | **Description**
+--- | ---
+**schema** | A required section that defines the location of the JSON schema file that describes the structure of JSON data. The version number you use depends on the scope of the deployment and your JSON editor.
+**contentVersion** | A required section that defines the version of your template (such as 1.0.0.0). You can use this value to document significant changes in your template to ensure you're deploying the right template.
+**apiProfile** | An optional section that defines a collection of API versions for resource types. You can use this value to avoid having to specify API versions for each resource in the template.
+**parameters** | An optional section where you define values that are provided during deployment. These values can be provided by a parameter file, by command-line parameters, or in the Azure portal.
+**variables** | An optional section where you define values that are used to simplify template language expressions.**functions** | An optional section where you can define [user-defined functions](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/template-user-defined-functions) that are available within the template. User-defined functions can simplify your template when complicated expressions are used repeatedly in your template.
+**resources** | A required section that defines the actual items you want to deploy or update in a resource group or a subscription.
+**output** | An optional section where you specify the values that will be returned at the end of the deployment.
+
 
 #### ARM Template Skeleton
 
@@ -121,6 +139,8 @@ Functions
 
 - User-Defined Functions are creatable custom functions
 
+Parameters and outputs provide flexibility per context to whatever granularity provided in the template.
+
 Variables
 ```json
 //...
@@ -132,6 +152,7 @@ Variables
 	{
 	"type": "Microsoft.Storage/storageAccounts",
 	"name": "[variables('storageName')]",
+	"location": "[resourceGroup().location]",
 	//...
 	}
 ]
@@ -142,7 +163,7 @@ Variables
 "parameters": {
 	"environmentName": {
 		"type": "string",
-		"allowedValue": [
+		"allowedValues": [
 			"test",
 			"prod"
 		]
@@ -159,12 +180,45 @@ Variables
 			"instancesSize": "Large",
 			"instanceCount": 1
 		}
-​￼￼￼References
-
 	}
 }
 // Referencing nested variables:
 "[variables('environmentSettings')[parameters('environmentNames')].instanceSize]"
+```
+
+Parameters avaliable Properties
+```json
+"parameters": {
+  "<parameter-name>": {
+    "type": "<type-of-parameter-value>",
+    "defaultValue": "<default-value-of-parameter>",
+    "allowedValues": [
+      "<array-of-allowed-values>"
+    ],
+    "minValue": <minimum-value-for-int>,
+    "maxValue": <maximum-value-for-int>,
+    "minLength": <minimum-length-for-string-or-array>,
+    "maxLength": <maximum-length-for-string-or-array-parameters>,
+    "metadata": {
+      "description": "<description-of-the-parameter>"
+    }
+  }
+}
+```
+
+Output avaliable Properties
+```json
+"outputs": {
+  "<output-name>": {
+    "condition": "<boolean-value-whether-to-output-value>",
+    "type": "<type-of-output-value>",
+    "value": "<output-value-expression>",
+    "copy": {
+      "count": <number-of-iterations>,
+      "input": <values-for-the-variable>
+    }
+  }
+}
 ```
 
 ARM Template Outputs return values from deployed resources:
@@ -178,6 +232,35 @@ ARM Template Outputs return values from deployed resources:
 ```
 
 You can use Azure API via CLI,  PowerShell or SDK to fetch outputs. 
+
+## Storage Account Template
+
+```JSON
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.1",
+  "apiProfile": "",
+  "parameters": {},
+  "variables": {},
+  "functions": [],
+  "resources": [
+    {
+      "type": "Microsoft.Storage/storageAccounts",
+      "apiVersion": "2019-06-01",
+      "name": "learntemplatestorage123",
+      "location": "westus",
+      "sku": {
+        "name": "Standard_LRS"
+      },
+      "kind": "StorageV2",
+      "properties": {
+        "supportsHttpsTrafficOnly": true
+      }
+    }
+  ],
+  "outputs": {}
+}
+```
 
 ## References
 

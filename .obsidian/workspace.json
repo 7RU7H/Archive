@@ -116,7 +116,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -174,7 +174,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administrator-Cheatsheet.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-ARM-Templates.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -202,14 +202,14 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "5b7d3c8831158b4a",
+  "active": "826d2c865105c1eb",
   "lastOpenFiles": [
-    "Cloud/Azure/Azure-Defined.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Resource-Manager.md",
     "Cloud/Azure/Azure-Administration/Azure-Administrator-Cheatsheet.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-ARM-Templates.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Resource-Manager.md",
+    "Cloud/Azure/Azure-Defined.md",
     "Cloud/Cloud-Hacking/Azure-Hacking.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-ARM-Templates.md",
     "Web-Application-Hacking/Upload-Vulnerabilities.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation Bypassing-Contrained-Powershell.md",
     "Web-Application-Hacking/Content-Discovery/FFUF-Cheatsheet.md",

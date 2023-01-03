@@ -69,6 +69,25 @@ Considerations:
 - Scope 
 - Interactions
 
+Deploy a Resource Group from [[Microsoft-Visual-Studios]] 
+```powershell
+Get-AzSubscription
+$context = Get-AzSubscription -SubscriptionId {Your subscription ID}
+Set-AzContext $context
+$rgName = "ResourceGroupName"
+Set-AzDefault -ResourceGroupName 
+# Deploy the template, also for updating the same deployment
+$templateFile="azuredeploy.json"
+$today=Get-Date -Format "MM-dd-yyyy"
+$deploymentName="NamingConventionsApply-"+"$today"
+New-AzResourceGroupDeployment `
+  -Name $deploymentName `
+  -TemplateFile $templateFile
+# Go to: Resource Group -> $rgName -> Overview -> "Deployments x Succeeded" -> Select $template
+```
+
+Parameters and outputs provide flexibility to variance in context.
+
 #### Resource Provider
 
 Resource Provider need to be registered, but by default a subscriptions has access many registered resource providers other need to be registered.

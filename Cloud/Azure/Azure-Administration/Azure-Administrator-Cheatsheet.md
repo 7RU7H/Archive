@@ -112,7 +112,7 @@ az find "az vm"
 
 Create and Administrate a Resource Group
 ```powershell
-az group create --name $name> --location $location
+az group create --name $name --location $location
 # List all groups and table format - more concise
 az group list
 az group list --output table 
@@ -121,11 +121,31 @@ $rgName = "ResourceGroupName"
 az group list --query "[?name == '$rgName']"
 ```
 
-Create and Aministrate a VM
+Create and Administrate a VM
 ```powershell
 New-AzVm # Create a new VM inside your Azure Subscription
 # Use the az module to restart a machine 
 az vm restart -g $ResourceGroup -n $VmName
+```
+
+Create a Resource Group
+```powershell
+$templateFile="{provide-the-path-to-the-template-file}"
+az deployment group create \
+  --name blanktemplate \
+  --resource-group myResourceGroup \
+  --template-file $templateFile \
+  --parameters $x=$y
+```
+
+Deploy Resource Group with Template
+```powershell
+templateFile="{provide-the-path-to-the-template-file}"
+az deployment group create \
+  --name blanktemplate \
+  --resource-group myResourceGroup \
+  --template-file $templateFile \
+  --parameters $x=$y
 ```
 
 Create and Adminstrate a Service Plan
@@ -152,7 +172,7 @@ az webapp deployment source config --name $AZURE_WEB_APP --resource-group $RESOU
 
 ## Powershell
 
-Always update the Powershell - older versions are very unsafe, if possible remove old powershell. See [[Useful_Powershell]] and [[Basic_Powershell]] repectively.
+Always update the Powershell - older versions are very unsafe, if possible remove old powershell. See [[Useful_Powershell]] and [[Basic_Powershell]] repectively. [[Microsoft-Visual-Studios]] requires `Connect-AzAccount`
 ```powershell
 $PSVersionTable.PSVersion
 pwsh -ver
@@ -171,8 +191,17 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 # Install and update Az module to current user 
 Install-Module -Name Az -Scope CurrentUser -Repository PSGallery
 Update-Module -Name Az
+
+```
+
+
+```powershell
 # Useful commands
 Connect-AzAccount
+# Set a default Subscription 
+$context = Get-AzSubscription -SubscriptionId {Your subscription ID}
+Set-AzContext $context
+
 Set-AzContext -Subscription '00000000-0000-0000-0000-000000000000'
 # Consider piping with  `| Format-Table`
 Get-AzResourceGroup
@@ -204,6 +233,22 @@ Get-AzDisk -ResourceGroupName $rgName -Name $diskname
 (Get-AzDisk -ResourceGroupName $rgName -Name $diskname).Sku
 # Update 
 New-AzDiskUpdateConfig -DiskSizeGB 64 -Sku Premium_LRS | Update-AzDisk -ResourceGroupName $rgName -DiskName $diskname
+```
+
+Resource Group Creation and Administration
+```powershell
+New-AzResourceGroup `
+  -Name {name of your resource group} `
+  -Location "{location}"
+```
+
+Resource Group Deployment with Template
+```powershell
+$templateFile = "{provide-the-path-to-the-template-file}"
+New-AzResourceGroupDeployment `
+  -Name blanktemplate `
+  -ResourceGroupName myResourceGroup `
+  -TemplateFile $templateFile
 ```
 
 VM Creation and Adminstration
@@ -243,6 +288,25 @@ Get-AzNetworkSecurityGroup -ResourceGroupName $vm.ResourceGroupName | Remove-AzN
 # Delete Public IP
 Get-AzPublicIpAddress -ResourceGroupName $vm.ResourceGroupName | Remove-AzPublicIpAddress -Force
 ```
+
+Requires [[Microsoft-Visual-Studios]] 
+```powershell
+Get-AzSubscription
+$context = Get-AzSubscription -SubscriptionId {Your subscription ID}
+Set-AzContext $context
+$rgName = "ResourceGroupName"
+Set-AzDefault -ResourceGroupName 
+# Deploy the template, also for updating the same deployment
+$templateFile="azuredeploy.json"
+$today=Get-Date -Format "MM-dd-yyyy"
+$deploymentName="NamingConventionsApply-"+"$today"
+New-AzResourceGroupDeployment `
+  -Name $deploymentName `
+  -TemplateFile $templateFile `
+  -$ConsiderParameters
+# Go to: Resource Group -> $rgName -> Overview -> "Deployments x Succeeded" -> Select $template
+```
+
 
 
 ## Bash
