@@ -4,6 +4,7 @@
 *"File upload vulnerabilities are when a web server allows users to upload files to its filesystem without sufficiently validating things like their name, type, contents, or size. Failing to properly enforce restrictions on these could mean that even a basic image upload function can be used to upload arbitrary and potentially dangerous files instead. This could even include server-side script files that enable remote code execution. In some cases, the act of uploading the file is in itself enough to cause damage. Other attacks may involve a follow-up HTTP request for the file, typically to trigger its execution by the server."*
 
 ## Tools
+
 1. Content Discovery Tool - feroxbuster, gobuster, dirb, dirbuster, ffuf, wfuzz.. to find where to upload file and where uploaded files will end up
 2. Wappalyzer - For some information
 3. Burp - Intercept upload requests to configure the request to bypass and/or trick the server.
@@ -53,6 +54,7 @@ When using [[Burpsuite-Helpsheet]], you may need to configure the types Burp int
 `Proxy -> Options -> Intercept Client Requests` section, edit the condition of the first line to remove or add.
 
 1. Extension validation - only want a .specific extension, can append **after** or **before**
+	1. Check for .phpX and .phar variations
 2. File type filtering 
 	1. MIME(**M**ultipurpose **I**nternet **M**ail **E**xtension) validation 
 	2. Magic number validation - first bytes of file, `hexedit` to edit in hex.
@@ -79,6 +81,11 @@ When using [[Burpsuite-Helpsheet]], you may need to configure the types Burp int
 	1. encoding
 	2. compression
 
+## Bypass File Execution
+
+1. If there is a file upload vulnerablity upload a blank `.htaccess` 
+2. If you can create a new directory on upload make new directory 
+
 ## Upload functionality specifics
 
 - If .aspx then use a .aspx reverseshell
@@ -91,6 +98,15 @@ The impact of file upload vulnerabilities:
 - What property of the file that is uploaded does not get validated
 - What HTTP Method configuration and client-server modelcontext allows for uploading
 - What file permissions does the file have once uploaded
+
+PHP Migitations:
+
+- md5sum or shasum the files and store them as the \*-sum string for pseudo random filenames, which remove control over the extension. 
+- Disable PHP wrappers, file could be archived as .zip, but then unzipped PHP wrappers with the extension then useable 
+​- Complexify the suming as function `md5($data_uploaded, $store_id, $user_id, $filename)`
+	- `$data_uploaded`, `$store_id` - like a Salt
+	- `$user_id`, `$filename` - prevent collision with other files
+
 
 ## References
 
