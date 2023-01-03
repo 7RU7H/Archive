@@ -126,6 +126,7 @@ ARM Templates:
 - are stored locally or in source control 
 - No active connection or relationship to the ARM template
 
+
 Azure Blueprints
 - relationship between the blueprint definition (what should be deployed) and the blueprint assignment (what was deployed)
 - Upgrade serval subscription at once that are governed by the same blueprint
@@ -144,6 +145,8 @@ Wait for deployment, `Go to resource`
 ##### Create a Resource Group
 
 `Resource Groups -> Create` - Add tags for QoL 
+
+If the resource already exists and no change is detected in the properties, no action is taken. If the resource already exists and a property has changed, the resource is updated. If the resource doesn't exist, it's created.
 
 ###### Administrating a Resource Group
 

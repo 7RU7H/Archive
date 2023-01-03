@@ -131,9 +131,11 @@ Subscriber migrating to the cloud from exist workloads and enivornment can follo
 Azure Resource Manager provides a consistent management layer to perform tasks through Azure PowerShell, Azure CLI, Azure portal, REST API, and client SDKs. Benefits:
 - Group deployment, management and monitoring
 - Dev Lifecycle consistency endurance
-- Templates! Template are QoL and less error prone and scalable
+- Templates! Templates are QoL and less error prone and scalable
 - RBAC
 - Tags for management! USE TAGS USE TAGS!
+
+For more indepth management of Resources see [[Azure-Administration-Azure-Resource-Manager]] and [[Azure-Administration-ARM-Templates]]
 
  Knowing the names of resource providers and resources helps you define resources you want to deploy to Azure
 ![](azureResourceManager.png)

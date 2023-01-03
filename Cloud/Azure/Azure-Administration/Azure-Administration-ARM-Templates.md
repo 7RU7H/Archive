@@ -36,6 +36,16 @@ You can also [Build your own template in the editor](https://portal.azure.com/#)
 
 When it deployment fails it does not perform cleanup - manual resource deletion or [roll back feature](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/rollback-on-error)
 
+## Azure BICEP Templates
+
+[Azure Bicep](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview) is a domain-specific language (DSL) that uses declarative syntax to deploy Azure resources. Bicep is a transparent abstraction over ARM template JSON and doesn't lose any of the JSON template capabilities.
+- Simpler Syntax
+- Modules
+- Automatic dependency management
+- Type Validation and IntelliSense
+
+[Azure Quickstart Templates](https://azure.microsoft.com/resources/templates/) are Azure Resource Manager templates provided by the Azure community.
+
 #### ARM Template Skeleton
 
 Basic Skeleton of template with comments explaining use case
@@ -77,7 +87,7 @@ Example Parameter use:
 ```json
 //...
 // Set parameters in this block
-"parameters": { 
+"parameters": {
 	"storageName": {
 		"type": "string",
 		"minLength": 5,
@@ -166,8 +176,6 @@ ARM Template Outputs return values from deployed resources:
 	}
 }
 ```
-
-​￼￼￼References
 
 You can use Azure API via CLI,  PowerShell or SDK to fetch outputs. 
 
