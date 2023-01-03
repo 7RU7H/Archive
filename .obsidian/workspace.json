@@ -68,26 +68,36 @@
             }
           },
           {
-            "id": "1113c33e44d78e05",
+            "id": "2e52f19cbb570629",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Resource-Manager.md",
+                "file": "Hardware/Hardware-Protocols.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "2e52f19cbb570629",
+            "id": "0bfdc6133ac42768",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
+                "file": "Hardware/Hardware-Hacking/Hardware-Hacking.md",
                 "mode": "source",
                 "source": false
+              }
+            }
+          },
+          {
+            "id": "c44de2fcbe1fec22",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Images/SPI-PICO-POCI-communication.md"
               }
             }
           }
@@ -150,7 +160,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Resource-Manager.md",
+                "file": "Hardware/Hardware-Protocols.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -178,17 +188,17 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "1113c33e44d78e05",
+  "active": "2e52f19cbb570629",
   "lastOpenFiles": [
-    "Cloud/Azure/Azure-Defined.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Resource-Manager.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administrator-Cheatsheet.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration.md",
-    "Windows/Active-Directory/Active-Directory-Administration.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation Bypassing-Contrained-Powershell.md",
-    "Antivirus/Antivirus-Evasion/AMSI-Bypassing.md",
-    "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Privilege-Escalation.md"
+    "Hardware/Hardware-Hacking/Hardware-Hacking.md",
+    "Hardware/Hardware-Protocols.md",
+    "Excalidraw/I2C-protocol.md",
+    "Images/SPI-PICO-POCI-communication.md",
+    "Hardware/Hardware-Hacking/Printer-Security-Testing.md",
+    "Images/SPI-protocol.md",
+    "Images/USART-protocol.md",
+    "Images/buitinazureroles.png",
+    "Images/azureResourceManager.png",
+    "Images/azure-storageaccountcomparison.png"
   ]
 }
