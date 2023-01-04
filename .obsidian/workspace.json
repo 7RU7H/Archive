@@ -104,6 +104,18 @@
             }
           },
           {
+            "id": "3423043f6fc0a320",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Hardware/Firmware-Reversing.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "0bfdc6133ac42768",
             "type": "leaf",
             "state": {
@@ -116,7 +128,7 @@
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 8
       }
     ],
     "direction": "vertical"
@@ -174,7 +186,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-ARM-Templates.md",
+                "file": "Hardware/Firmware-Reversing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -202,10 +214,10 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "826d2c865105c1eb",
+  "active": "3423043f6fc0a320",
   "lastOpenFiles": [
-    "Cloud/Azure/Azure-Administration/Azure-Administrator-Cheatsheet.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-ARM-Templates.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administrator-Cheatsheet.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Resource-Manager.md",
     "Cloud/Azure/Azure-Defined.md",
     "Cloud/Cloud-Hacking/Azure-Hacking.md",
