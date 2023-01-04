@@ -109,7 +109,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Hardware/Firmware-Reversing.md",
+                "file": "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/File-Transfers.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3d7d84dcb1c89297",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Brain-Hacking/Question-Based-Hacking-Methodology.md",
                 "mode": "source",
                 "source": false
               }
@@ -128,7 +140,7 @@
             }
           }
         ],
-        "currentTab": 8
+        "currentTab": 9
       }
     ],
     "direction": "vertical"
@@ -186,7 +198,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Hardware/Firmware-Reversing.md",
+                "file": "Brain-Hacking/Question-Based-Hacking-Methodology.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -214,17 +226,17 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "3423043f6fc0a320",
+  "active": "3d7d84dcb1c89297",
   "lastOpenFiles": [
+    "Post-Exploitation/Port-Redirection-And-Tunneling.md",
+    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/File-Transfers.md",
+    "Brain-Hacking/Beyond-Root-Ideas.md",
+    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Linux-File-Transfers.md",
+    "Hardware/Firmware-Reversing.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-ARM-Templates.md",
     "Cloud/Azure/Azure-Administration/Azure-Administrator-Cheatsheet.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Resource-Manager.md",
     "Cloud/Azure/Azure-Defined.md",
-    "Cloud/Cloud-Hacking/Azure-Hacking.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration.md",
-    "Web-Application-Hacking/Upload-Vulnerabilities.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation Bypassing-Contrained-Powershell.md",
-    "Web-Application-Hacking/Content-Discovery/FFUF-Cheatsheet.md",
-    "Web-Application-Hacking/API/API-Fuzzing.md"
+    "Cloud/Cloud-Hacking/Azure-Hacking.md"
   ]
 }

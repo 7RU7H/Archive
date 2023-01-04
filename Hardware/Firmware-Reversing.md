@@ -31,7 +31,7 @@ Potential Steps:
 	- **[Qemu](https://www.qemu.org/)**: Qemu is a free and open-source emulator and enables working on cross-platform environments for aiding in full-system emulation or a single binary emulation.
 	- **[Gnu DeBugger (GDB)](https://www.sourceware.org/gdb/)**[:](https://www.sourceware.org/gdb/) GDB is a dynamic debugging tool for emulating a binary and inspecting its memory and registers - supports remote debugging.
 
-## Cheatsheet 
+## Cheatsheet - Begins... 
 
 Is firmware encrypted? 
 ```bash

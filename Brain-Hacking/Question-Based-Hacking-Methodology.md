@@ -121,6 +121,7 @@ Condense:
 	- Have you tried encoding the payload to counter string handling both client and server side
  
 - Internal Network
+
 - Active Directory
 	- Are you Temporally Synced to the target Domain?
 	- Is it really large and requires a [[Domain-Flyover]]
@@ -234,7 +235,7 @@ Condense:
 			1. Hardcoded Credentials
 			2. Permissions
 			3. Does script call external binaries, script, etc running as root/system at some point 
-- Third Applications
+- Third Applications? 
 	1. Does third-party application have installation management rights that affect the file system structure to cause misconfiguration?
 	2. Version have an exploit?
 	3. Permissions on local software libaries used, executable PATH variable? 
@@ -244,7 +245,14 @@ Condense:
 		- What is the file system tree surrounding the execution path?
 		- What dlls is it using?
 			- What is the file system tree surrounding a targetable dll
-
+- Networking?
+- What does the segmentation entail for access?
+- What does access is potential gained from using [[Port-Redirection-And-Tunneling]] 
+- If we domain or network joined what ports are exposed to localhost, but not remotehost?
+	- Are there in-house usage of non-standard ports?
+		- Port Redirection, Networking and Network Security considerations?
+			- Avaliable services for redirection or can you drop a binary like Chisel?
+	- Is Root/User hosting a network service on a port?
 
 - In-House Applications
 - In-House Scripting
