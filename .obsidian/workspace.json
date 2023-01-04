@@ -121,7 +121,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Brain-Hacking/Question-Based-Hacking-Methodology.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
                 "mode": "source",
                 "source": false
               }
@@ -169,7 +169,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "PrivEsc",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -178,7 +178,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -198,7 +199,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Brain-Hacking/Question-Based-Hacking-Methodology.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -228,15 +229,15 @@
   },
   "active": "3d7d84dcb1c89297",
   "lastOpenFiles": [
+    "Web-Application-Hacking/Javascript/NodeJS.md",
     "Post-Exploitation/Port-Redirection-And-Tunneling.md",
+    "Brain-Hacking/Question-Based-Hacking-Methodology.md",
     "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/File-Transfers.md",
     "Brain-Hacking/Beyond-Root-Ideas.md",
     "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Linux-File-Transfers.md",
     "Hardware/Firmware-Reversing.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-ARM-Templates.md",
     "Cloud/Azure/Azure-Administration/Azure-Administrator-Cheatsheet.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Resource-Manager.md",
-    "Cloud/Azure/Azure-Defined.md",
-    "Cloud/Cloud-Hacking/Azure-Hacking.md"
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Resource-Manager.md"
   ]
 }
