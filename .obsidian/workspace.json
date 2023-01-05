@@ -128,6 +128,14 @@
             }
           },
           {
+            "id": "963a1320e4b26df0",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
             "id": "0bfdc6133ac42768",
             "type": "leaf",
             "state": {
@@ -140,7 +148,7 @@
             }
           }
         ],
-        "currentTab": 9
+        "currentTab": 10
       }
     ],
     "direction": "vertical"
@@ -178,8 +186,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -199,7 +206,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -227,8 +233,10 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "3d7d84dcb1c89297",
+  "active": "ed8f63df71621be6",
   "lastOpenFiles": [
+    "Tools/Yara/Yara.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
     "Web-Application-Hacking/Javascript/NodeJS.md",
     "Post-Exploitation/Port-Redirection-And-Tunneling.md",
     "Brain-Hacking/Question-Based-Hacking-Methodology.md",
@@ -236,8 +244,6 @@
     "Brain-Hacking/Beyond-Root-Ideas.md",
     "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Linux-File-Transfers.md",
     "Hardware/Firmware-Reversing.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-ARM-Templates.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administrator-Cheatsheet.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Resource-Manager.md"
+    "Cloud/Azure/Azure-Administration/Azure-Administration-ARM-Templates.md"
   ]
 }
