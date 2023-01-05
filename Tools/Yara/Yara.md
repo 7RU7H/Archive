@@ -30,6 +30,7 @@ This is a cheatsheet of keywords, syntax and discourse of file, beware:
 - **Making rules with massive variable sets and conditions is an anti-pattern (bad idea)** - consider [[Refactoring]] - the below is an *Example of use in a pseudo-context*
 	- Ideally for ease of compression and to avoid logical weirdness having massive lists of conditions is the pyramid of doom in debugging, and lmassive list of strings unsegemented may lead to mixing of patterns that occur only in some cases
 - YARA handles undefined values in various complex ways that are kind of un-scopable for examplary purposes - [visit](https://yara.readthedocs.io/en/stable/writingrules.html#undefined-values-1)
+- It is not functional is anyway
 ```json
 import "ModuleNamehere" // Must be place outside of Rule {}
 // ... and this is single-line comment
@@ -79,6 +80,7 @@ rule ExampleRule : Tag1 Tag2 // `: Tag Tag ` for later filtering with Yara
 	    // iterating over sting occurences - with for, for..of
 	    for all i in (1,2,3) : ( @a[i] + 10 == @b[i] )
 	    uint32(uint32(0x3C)) == 0x00004550 // use (un)signed-integer read offsets 
+}
 ```
 
 #### Conditions
