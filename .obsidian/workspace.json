@@ -66,21 +66,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "721b5c6b727b4b57",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tools/Forensics/Sigma.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -138,7 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/Forensics/Sigma.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-AD-Administration.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -166,17 +154,17 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "721b5c6b727b4b57",
+  "active": "6d5e9e26b4aa0dde",
   "lastOpenFiles": [
-    "Splunk.md",
-    "Tools/Forensics/Sigma.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-AD-Administration.md",
     "Cloud/Azure/Azure-Defined.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-AD-Administration.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Subscriptions.md",
+    "Tools/Forensics/Sigma.md",
+    "Splunk.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Resource-Manager.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-ARM-Templates.md",
     "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
     "Tools/Yara/Yara.md",
-    "Pasted image 20230105120758.png",
-    "Web-Application-Hacking/Javascript/NodeJS.md"
+    "Pasted image 20230105120758.png"
   ]
 }

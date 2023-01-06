@@ -4,7 +4,7 @@
 
 #### Access
 
-- Access the portal at h]ttps://portal.azure.com/
+- Access the portal at https://portal.azure.com/
 - Cloud Shell on the `>_` Icon - Bash and Powershell Shell!
 	- Runs on Temporary Host - per-session and per-user basis 
 	- Requires:
@@ -28,7 +28,6 @@ Customer is then responsible for - VM and VM Scale Sets
 - Data
 - OS
 
-
 Platform as a Service
 - Azure is resposible for everything except the App and the Data
 	- Azure Container, Kuberneties, Logical Apps, Functions
@@ -49,9 +48,11 @@ Pairing is Geopolitical borders, except Brazil South see: [Azure Cross Replicati
 - Three availability zones map to one subscription - AZ1, AZ2, AZ3 
 - No consistency between region
 - Some Zone redundant it spans all the zones
-- Zonal is specific availability zone. 
+- Zonal is specific availability zone.
 
 VM cannot span zones, Zonal VMs that can provide the same service
+
+Consider reviewing [[Azure-Administration-Subscriptions]]
 
 #### Authentication and Authorization
 
@@ -81,12 +82,11 @@ Budget - Costing
 
 #### Subscriptions
 
-A subscription is base unit of Azure interaction and an agreement between Microsoft and customer. [Azure subscription limits and quotas - Azure Resource Manager | Microsoft Learn](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/azure-subscription-service-limits)
-Different subscription can be used for structural reasons. RBAC, Policy and Budget can be applied to eac.
-
+A subscription is base unit of Azure interaction and an agreement between Microsoft and customer. [Azure subscription limits and quotas - Azure Resource Manager | Microsoft Learn](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/azure-subscription-service-limits). Different subscription can be used for structural reasons. RBAC, Policy and Budget can be applied to each. See [[Azure-Administration-Subscriptions]].
+ 
 #### Azure Resource Manager
 
-Management suite for Azure.
+Management suite for Azure. See [[Azure-Administration-Azure-Resource-Manager]] and [[Azure-Administration-ARM-Templates]]
 
 - Resources are created in a resource group in subscription, but can not be nested, have inheritance
 - Resource groups are not a connective boundary.
