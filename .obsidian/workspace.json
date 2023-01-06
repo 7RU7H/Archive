@@ -66,9 +66,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "4b62fe0723b83fa0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Roles-And-RBAC.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -126,7 +138,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cloud/Cloud-Hacking/Azure-Hacking.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Roles-And-RBAC.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -154,17 +166,17 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "c3ed6276515aa6ce",
+  "active": "4b62fe0723b83fa0",
   "lastOpenFiles": [
     "Cloud/Azure/Azure-Administration/Azure-Administrator-Cheatsheet.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Roles-And-RBAC.md",
+    "Cloud/Cloud-Hacking/Azure-Hacking.md",
+    "Persistence/Active-Directory-Persistence/AD-Persistence-Credentials.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Policies.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-RBAC.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration.md",
     "Cloud/Azure/Azure-Defined.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-AD-Administration.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Subscriptions.md",
-    "Tools/Forensics/Sigma.md",
-    "Splunk.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Resource-Manager.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-ARM-Templates.md"
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Subscriptions.md"
   ]
 }

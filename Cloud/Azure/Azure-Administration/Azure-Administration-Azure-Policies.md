@@ -2,6 +2,11 @@
 
 Organizations that use multiple subscriptions need a way to efficiently manage access, policies, and compliance. [Azure management groups](https://learn.microsoft.com/en-us/azure/governance/management-groups/overview) provide a level of scope and control above your subscriptions. Azure Policies enforce organizational standards and assess compliance at-scale Policies - do not restrict access they only observe for compliance. 
 
+Azure Polices | Azure Roles
+--- | ---
+Ensure compliance of resources | Control access to resources
+Does not restrict actions | Manages User actions at different scopes - does restict on Azure Resources
+
 - Policy Definitions - Defined in a .json to describe business ruls to control access to resources
 - Policy Assignment - Scope of a policy can effect
 - Policy Parameters - Values passed into Polcy definition so POlices are mote flexiable for re-use
@@ -61,6 +66,16 @@ Policies Authoring:
 `Policies -> Definitions` - Policies and Initiative definitions - export definitions
 `Policies -> Assignments` - Assign Policies and Initiatives
 `Policies -> Examptions` - Scope, Category - To create a new exemption - go to `assignment` or the `compliance`.
+
+Apply a policy by tag
+`Policies -> Definitions -> Category -> Tags -> Require a tag.. -> Assign -> Scop -> subscription and resource group`
+
+Assignment of a policy - and various assignment configuration and management:
+`Policies -> Assignments -> Assignment Name's ellipsis -> Right click` - This menu will show: Edit, delete, duplicate assignment; view definition and compliance; create excemptions.
+
+Inheritance is made in the: 
+`Policies -> Assignments -> Assign`
+
 
 ## Examples
 

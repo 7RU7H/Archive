@@ -101,12 +101,43 @@ Policies Authoring:
 `Policies -> Assignments` - Assign Policies and Initiatives
 `Policies -> Examptions` - Scope, Category - To create a new exemption - go to `assignment` or the `compliance`.
 
+Apply a policy by tag
+`Policies -> Definitions -> Category -> Tags -> Require a tag.. -> Assign -> Scop -> subscription and resource group`
+
+Assignment of a policy - and various assignment configuration and management:
+`Policies -> Assignments -> Assignment Name's ellipsis -> Right click` - This menu will show: Edit, delete, duplicate assignment; view definition and compliance; create excemptions.
+
+Inheritance is made in the: 
+`Policies -> Assignments -> Assign`
+
 ## Cost management
 
 Management
 `Search Cost Management -> Cost Management`
 From here for:
 `Cost Alerts`,  `Cost Analysis`, `Budgets`
+
+## RBAC and Role Management
+
+Implement management groups 
+`Search Management groups -> Management groups`
+Setup Azure AD permissions for Implementing Management Groups
+`Search Azure ->  Azure Active Directory -> Properties -> Access management for Azure Resources` - Refresh in `Management Groups`
+From `Management Groups` - Requires Management group ID and Display name
+Create a `Management Group`
+`Search Management groups -> Management groups -> <insert Management group ID and Display name> 
+Add a management group to a subscription
+`Search Management groups -> Management groups -> $Management_group -> Subscriptions`  - Subscription ID is in `Overview`
+
+Custom RBAC role creation:
+`Upload a $customRole.json file`  - replace fields reqiure prior to upload!
+`Open CloudCLI` to upload
+```powershell
+New-AzRoleDefinition -InputFile $file
+```
+Assign roles
+`Management Groups -> Access Control (IAM) -> Add -> Search <role keyword> ->  + Select members`
+
 
 
 ## AzCopy 
