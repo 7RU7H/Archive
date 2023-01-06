@@ -77,7 +77,39 @@ Create File Share in a Storage Account `$StorageAccount`
 
 Setup File Sync `Azure File Sync -> Create` - 
 
-#### AzCopy 
+## Management Groups - Azure Policies
+
+Policy Creation:
+1. Policy Defintions -  [list of built-in definitions](https://learn.microsoft.com/en-us/azure/governance/policy/samples/built-in-policies)
+2. Initiative definition - [Azure Policy initiative definition structure](https://learn.microsoft.com/en-us/azure/governance/policy/concepts/initiative-definition-structure) and  [list of built-in initiatives](https://learn.microsoft.com/en-us/azure/governance/policy/samples/built-in-initiatives)
+3. Scope the initiative definition 
+4. Detirmine Compliance
+
+Policy definitions can also be imported into Azure Policy from [GitHub](https://github.com/Azure/azure-policy/tree/master/samples)
+Initiative Definitions are good at ANY scale of organization, do not skip.
+
+To view compliance across a scope:
+`Overview -> Policies - Compliance` 
+
+**Policy Assignment takes 10-30 minutes - Blueprints are useful**
+
+Polices Management:
+`Policies -> Compliance` - Assign polices, initatives
+`Policies -> Remediation` - Policies to remediate and Remediation tasks
+Policies Authoring:
+`Policies -> Definitions` - Policies and Initiative definitions - export definitions
+`Policies -> Assignments` - Assign Policies and Initiatives
+`Policies -> Examptions` - Scope, Category - To create a new exemption - go to `assignment` or the `compliance`.
+
+## Cost management
+
+Management
+`Search Cost Management -> Cost Management`
+From here for:
+`Cost Alerts`,  `Cost Analysis`, `Budgets`
+
+
+## AzCopy 
 
 AZcopy is installed by default on the CloudShell
 ```powershell

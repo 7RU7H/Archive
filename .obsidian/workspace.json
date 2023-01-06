@@ -61,14 +61,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-AD-Administration.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Policies.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -126,7 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-AD-Administration.md",
+                "file": "Cloud/Cloud-Hacking/Azure-Hacking.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -154,17 +154,17 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "6d5e9e26b4aa0dde",
+  "active": "c3ed6276515aa6ce",
   "lastOpenFiles": [
+    "Cloud/Azure/Azure-Administration/Azure-Administrator-Cheatsheet.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Policies.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration.md",
     "Cloud/Azure/Azure-Defined.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-AD-Administration.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Subscriptions.md",
     "Tools/Forensics/Sigma.md",
     "Splunk.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Resource-Manager.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-ARM-Templates.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
-    "Tools/Yara/Yara.md",
-    "Pasted image 20230105120758.png"
+    "Cloud/Azure/Azure-Administration/Azure-Administration-ARM-Templates.md"
   ]
 }
