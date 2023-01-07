@@ -67,18 +67,20 @@ Information - the user Alice has X SID that then indicates Administrative Group
 		- Potential OSINTable VHOST from merging or referenced? 
 	- Webserver and Website Language
 		- Vulnerable Lanaguage?
-		- Vulnerable webserver?
-		- Webserver generic issues by type
-			-  [[Apache-Tomcat]]
-		- Vulnerable versioning?
 		- Javascript?
 			-  XSS?
 				- What Input Validation?
 					- Which characters?
 						- URL encoding ip address in XSS payloads?
+		- Vulnerable webserver?
+		- Webserver generic issues by type
+			-  [[Apache-Tomcat]]
+		- Vulnerable versioning?
+
 	- What request methods?
 		 - Can you bypass with additional Headers?
 	- Endpoints?
+		- Fuzzed with Special chararcters on all end points - [[FFUF-Cheatsheet]]?
 	- CMS 
 	- Does the website use a database for storage?
 	- Where can input be provided?
