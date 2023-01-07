@@ -138,20 +138,25 @@ User Creation Considerations
 	- Strategize to miminize error 
 Group Considerations
 - Access Rights
-	- Assigned - specific users can have unique permissions
-	- Dynamic User - automatically add and remove group member
-	- Dynamic device - (security groups only) automatically add and remove devices in security groups.
+	- **Assigned** - specific users can have unique permissions
+	- **Dynamic User** - automatically add and remove group member
+	- **Dynamic device** - (security groups only) automatically add and remove devices in security groups.
 Administrative Unit Considerations - admin role scoping
 - Constrain Scope permissions boundaries to locale 
 - Management tools
 - Role Requirements in Azure Portal
 
+Account restoration must occur 30 day from deletion 
 
+- Access rights through signle user or group assignment
+	-  **Direct assignment**: Assign a user the required access rights by directly assigning a role that has those access rights.
+	-   **Group assignment**: Assign a group the required access rights, and members of the group will inherit those rights.
+	-   **Rule-based assignment**: Use rules to determine a group membership based on user or device properties.
+
+For Temporary Guest users use: `Azure AD B2B` -  you don't take on the responsibility of managing and authenticating the credentials and identities of partners. Some organisations will use federations for on-premise resource authenication - avaliability is dependent of on-premise (security? - some of the big hacks of 2022 were malicious abuse of contractor access, beware) 
 
 
 ## Azure Portal Motions 
-
-
 
 Manage Tenants
 `Search Azure AD -> Manage tenants`
@@ -167,15 +172,19 @@ To assigna  license
 
 #### Create a Users, Groups and Manage Them  
 
+Remember that you filter be tenant!
+
 Azure AD 
 `Overview -> Users -> Create`
 
 Creation User
 `Search Users -> New Users -> New user`
-Invite User
+Invite User - For Temporary Guest users use: `Azure AD B2B`
 `Search Users -> New Users -> Invite`
+Configure guest users:
+- add to `Groups`
+- Access to apps `Manage -> Enterprise applications -> Docusign` (or whatever Digital signing software) 
 
-- Azure AD  Users
 Edit User settings
 `Search Azure AD -> Azure AD -> User Settings`
 User Management
@@ -209,8 +218,6 @@ To make a dynamic group dynamic:
 Deleted Groups
 `Search Groups - > Groups -> Deleted groups`
 
-
-
 #### Authenication and Authorization
 
 Enabling various types of MFA per user, bulk assignment is in the per-user MFA window 
@@ -229,8 +236,41 @@ Customization - Customize Helpdesk link
 On-Premise Integration - As stated
 Administrator Policy - Admin password reset policy.
 
+## Azure CLI 
 
+```powershell
+# Create a new user
+az ad user create
+# Delete a user
+az ad user delete
+```
 
+## Powershell
+
+```powershell
+# Create a new user
+New-AzureADUser
+# Remove a user
+Remove-AzADUser 
+wEPDwUKMTI3ODM5MzQ0Mg9kFgICAw8WAh4HZW5jdHlwZQUTbXVsdGlwYXJ0L2Zvcm0tZGF0YWRkWOy0CDxpPqG7BtAdOq8rOXuncl8=```
+
+Bulk user and member creation:
+```powershell
+$invitations = import-csv c:\bulkinvite\invitations.csv
+
+$messageInfo = New-Object Microsoft.Open.MSGraph.Model.InvitedUserMessageInfo
+
+$messageInfo.customizedMessageBody = "Hello. You are invited to the Contoso organization."
+
+foreach ($email in $invitations)
+   {New-AzureADMSInvitation `
+      -InvitedUserEmailAddress $email.InvitedUserEmailAddress `
+      -InvitedUserDisplayName $email.Name `
+      -InviteRedirectUrl https://myapps.microsoft.com `
+      -InvitedUserMessageInfo $messageInfo `
+      -SendInvitationMessage $true
+   }
+```
 
 ## References
 

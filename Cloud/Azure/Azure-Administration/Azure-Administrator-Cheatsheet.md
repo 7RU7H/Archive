@@ -135,9 +135,93 @@ Custom RBAC role creation:
 ```powershell
 New-AzRoleDefinition -InputFile $file
 ```
-Assign roles
-`Management Groups -> Access Control (IAM) -> Add -> Search <role keyword> ->  + Select members`
 
+Assign roles **at scope** - `Subscription,Resource group, Resource`
+`Management Groups -> Access Control (IAM) -> Add -> Search <role keyword> ->  + Select members`
+Assign can be done via Resource Group of Admin Scoping in fields
+`Resource Groups -> Access Control (IAM) -> Add (role, co-adminstrator, custom) role -> Search`
+`Remove` to remove!
+`Activty Log` to find all role (de-)assignments
+
+## Azure AD 
+
+Manage Tenants
+`Search Azure AD -> Manage tenants`
+Create a Tenant
+`All Services -> Azure AD -> Manage Tenants -> Create`
+Configure Tenant
+`Create a Tenant -> Configuration -> Name -> Review and CReate -> Create`
+
+License Management
+`Search Azure AD -> Azure AD -> Licenses`
+To assigna  license
+`All Products -> Assign`
+
+#### Create a Users, Groups and Manage Them  
+
+Remember that you filter be tenant!
+
+Azure AD 
+`Overview -> Users -> Create`
+
+Creation User
+`Search Users -> New Users -> New user`
+Invite User - For Temporary Guest users use: `Azure AD B2B`
+`Search Users -> New Users -> Invite`
+Configure guest users:
+- add to `Groups`
+- Access to apps `Manage -> Enterprise applications -> Docusign` (or whatever Digital signing software) 
+
+Edit User settings
+`Search Azure AD -> Azure AD -> User Settings`
+User Management
+`Search Azure AD -> Azure AD -> Users`
+Create/Invite
+`Search Azure AD -> Azure AD -> Users -> New Users -> New user`
+Assign Roles
+``Search Azure AD -> Users -> Assigned Roles`
+Enable Account
+`Users -> $username -> Settings -> [Tick/Untick] Account enabled`
+Guest user can be added with Creating and then Inviting
+`Search Azure AD -> Azure AD -> Users -> New Users -> New user`
+`Overview -> Users -> New User -> Invite External`
+- remember to add to groups and anything else.
+
+Bulk additions, deletion and invitation use a .cvs with SOME of the fields
+Name | Username | Initial Password | Block Sign in | Firstname | Lastname 
+--- | --- | --- | ---
+John Doe | jdoe | password123! | No | John | Doe
+
+Bulk Operations
+`Search -> Users -> Bulk operations -> Create/invite/delete` 
+
+Manage Groups
+`Search Groups - > Groups -> New group/Download groups
+Create Group
+`Search Azure AD -> Groups -> New Group`
+- `Membership type* -> Assign/Dynamic(User/Device)`
+To make a dynamic group dynamic:
+- `Add Dynamic Query Rule-> Select a Property, Operator and Value`
+Deleted Groups
+`Search Groups - > Groups -> Deleted groups`
+
+#### Authenication and Authorization
+
+Enabling various types of MFA per user, bulk assignment is in the per-user MFA window 
+`Users -> Per-user MFA`
+Additional options - Where the important stuff is
+`Per-Users MFA -> Server Settings` (Not obvious - displays as `users server settings`)
+Remember to `enforce`! 
+
+Password reset
+`Overview -> Password Reset`
+Properties - Self Service password resets
+Authenication Methods
+Registation - Require users to register when signing in
+Notifiications - Notification when and on resets
+Customization - Customize Helpdesk link
+On-Premise Integration - As stated
+Administrator Policy - Admin password reset policy.
 
 
 ## AzCopy 
@@ -231,6 +315,29 @@ Deploy code from Github
 ```powershell
 az webapp deployment source config --name $AZURE_WEB_APP --resource-group $RESOURCE_GROUP --repo-url "https://github.com/Azure-Samples/php-docs-hello-world" --branch master --manual-integration
 ```
+
+Create Azure AD objects 
+```powershell
+# Create a new user
+az ad user create
+# Delete a user
+az ad user delete
+```
+
+Azure RBAC with az role, use [az role definition list](https://learn.microsoft.com/en-us/cli/azure/role/definition#az-role-definition-list).
+```powershell
+az role definition list
+# by name like "Contributor"
+az role definition list --name {roleName}
+# name and description of all available role definition
+az role definition list --output json --query '[].{roleName:roleName, description:description}'
+# list all builtin roles
+az role definition list --custom-role-only false --output json --query '[].{roleName:roleName, description:description, roleType:roleType}'
+# output to json the Contributor Actions, NotActions
+az role definition list --name "Contributor" --output json --query '[].{actions:permissions[0].actions, notActions:permissions[0].notActions}'
+
+```
+[List Azure role definitions - Azure RBAC | Microsoft Learn](https://learn.microsoft.com/en-us/azure/role-based-access-control/role-definitions-list)
 
 
 ## Powershell
@@ -370,6 +477,42 @@ New-AzResourceGroupDeployment `
 # Go to: Resource Group -> $rgName -> Overview -> "Deployments x Succeeded" -> Select $template
 ```
 
+Create Azure AD objects 
+```powershell
+# Create a new user
+New-AzureADUser
+# Remove a user
+Remove-AzADUser 
+```
+
+Bulk Create Azure AD objects :
+```powershell
+$invitations = import-csv c:\bulkinvite\invitations.csv
+
+$messageInfo = New-Object Microsoft.Open.MSGraph.Model.InvitedUserMessageInfo
+
+$messageInfo.customizedMessageBody = "Hello. You are invited to the Contoso organization."
+
+foreach ($email in $invitations)
+   {New-AzureADMSInvitation `
+      -InvitedUserEmailAddress $email.InvitedUserEmailAddress `
+      -InvitedUserDisplayName $email.Name `
+      -InviteRedirectUrl https://myapps.microsoft.com `
+      -InvitedUserMessageInfo $messageInfo `
+      -SendInvitationMessage $true
+   }
+```
+
+Azure RBAC 
+```powershell
+# List all Azure Roles
+Get-AzRoleDefinition | FT Name, Description
+# Filter by name and convert to json
+Get-AzRoleDefinition <role_name> | ConvertTo-Json
+# Get Actions and NotActions Properties, with piped or class dot property
+Get-AzRoleDefinition <role_name> | FL Actions, NotActions
+(Get-AzRoleDefinition <role_name>).Actions
+``` 
 
 
 ## Bash
