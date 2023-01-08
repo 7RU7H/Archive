@@ -111,11 +111,26 @@ Consider variance and other implementation scenarios
 
 #### Azure AD SSPR feature
 
-Azure Active Directory **self-service password reset** (SSPR) feature - no helpdesk (more secure and efficient)
+Azure Active Directory **self-service password reset** (SSPR) feature - no helpdesk (more secure and efficient). Deploy SSPR with password writeback by using [Azure AD Connect](https://learn.microsoft.com/en-us/azure/active-directory/authentication/tutorial-enable-sspr-writeback) or [cloud sync](https://learn.microsoft.com/en-us/azure/active-directory/authentication/tutorial-enable-cloud-sync-sspr-writeback).
 - Requires:
 	- Global Administrator privileges to manage SSPR options
 	- valid license to use SSPR.
 - SSPR Security group limit users with SSPR privileges
+
+
+[It is works:](https://learn.microsoft.com/en-us/azure/active-directory/authentication/concept-sspr-howitworks)
+When a user accesses the SSPR portal, the Azure platform considers the following factors:
+-   How should the page be localized?
+-   Is the user account valid?
+-   What organization does the user belong to?
+-   Where is the user's password managed?
+
+You can require a minimum number of authenication methods; methods Avaliable
+![](azuressprmethods.png)
+For Administration account - strong MFA policy, no reuse, rotate - no security question to prevent weak answers and [[OSINT]]. Users only registered when they have the met the number required methods needed for SSPR.
+
+Configure SSPR
+`Azure Active Directory -> Passwords -> Properties - SSPR enabled (None/Selectec/All)`
 
 #### Azure User and Group Accounts
 

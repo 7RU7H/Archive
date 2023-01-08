@@ -60,7 +60,7 @@ Information - the user Alice has X SID that then indicates Administrative Group
 - External Network
 
 - Web
-	- Have you pressed `[CTRL + F12]` yet?
+	- Have you pressed `[CTRL + F12]` yet? - Browser `Inspect` does not show HTML encoded characters
 	- Does the site provide text to scrap into wordlist?
 	- Virtual hosting? 
 		- Fuzzable - rate limits?
@@ -71,11 +71,13 @@ Information - the user Alice has X SID that then indicates Administrative Group
 			-  XSS?
 				- What Input Validation?
 					- Which characters?
-						- URL encoding ip address in XSS payloads?
-		- Vulnerable webserver?
+						- URL encoded ip address in XSS payloads?
+				- Have you tried multiple payloads to verify (non-)existence of XXS, then tools? 
+			- Deserialization Attacks?
+		- Vulnerable webserver version?
 		- Webserver generic issues by type
 			-  [[Apache-Tomcat]]
-		- Vulnerable versioning?
+		- Vulnerable versioning?firends
 
 	- What request methods?
 		 - Can you bypass with additional Headers?
@@ -95,6 +97,11 @@ Information - the user Alice has X SID that then indicates Administrative Group
 		- `ffuf -request search.req -request-proto http -w special-chars.txt -mc all` - which characters cause what issue that indicate what about the context? 
 	- Error text 
 		- What does the error mean? Just google it! 
+
+Application:
+
+- Hardcoded credentials? 
+- Deserialization?
 
 
 Condense:

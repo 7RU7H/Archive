@@ -19,3 +19,22 @@ Specificity
 
 
 - Recursively ask follow-up questions 
+
+
+[Santiago](https://twitter.com/svpino/status/1611357154514186241) *"I have 2+ decades of programming experience. I like to think I know what I'm doing. I don't trust people's code (especially mine,) and I surely don't trust ChatGPT's output."*
+
+- Explain Code
+- Improve X
+- Rewrite X with Y - style specification, idiomatic contructs 
+- Simplify
+- Write Tests
+- Alternative to X
+- Translate X to Y
+- Write documentation for X
+- Find bugs
+- Scaffolding code to speed up process
+
+
+## References
+
+[Santiago](https://twitter.com/svpino/status/1611357154514186241)

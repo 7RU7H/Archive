@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administrator-Cheatsheet.md",
+                "file": "Artificial-Intelligence/Chat-GPT-Whispering.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Roles-And-RBAC.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-AD-Administration.md",
                 "mode": "source",
                 "source": false
               }
@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-AD-Administration.md",
+                "file": "Web-Application-Hacking/Javascript/Javascript-Cookie-Abuse.md",
                 "mode": "source",
                 "source": false
               }
@@ -79,7 +79,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -108,7 +109,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "PrivEsc",
+                "query": "Node JS",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -137,7 +138,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administrator-Cheatsheet.md",
+                "file": "Brain-Hacking/Question-Based-Hacking-Methodology.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -165,17 +166,17 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "5b7d3c8831158b4a",
+  "active": "587a5b8672620526",
   "lastOpenFiles": [
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Roles-And-RBAC.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-AD-Administration.md",
+    "Web-Application-Hacking/Javascript/Javascript-Cookie-Abuse.md",
+    "Web-Application-Hacking/XSS-Cheatsheet.md",
     "Cloud/Azure/Azure-Administration/Azure-Administrator-Cheatsheet.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-AD-Administration.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Roles-And-RBAC.md",
+    "Artificial-Intelligence/Chat-GPT-Whispering.md",
     "Cloud/Cloud-Hacking/Azure-Hacking.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Resource-Manager.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Policies.md",
-    "Brain-Hacking/Question-Based-Hacking-Methodology.md",
-    "Tools/SIEMs/Splunk.md",
-    "Persistence/Active-Directory-Persistence/AD-Persistence-Credentials.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-RBAC.md"
+    "Brain-Hacking/Question-Based-Hacking-Methodology.md"
   ]
 }

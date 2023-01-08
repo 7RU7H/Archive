@@ -154,8 +154,11 @@ Configure Tenant
 
 License Management
 `Search Azure AD -> Azure AD -> Licenses`
-To assigna  license
+To assign a license
 `All Products -> Assign`
+
+Customize Azure AD organization branding
+`Search Azure AD -> Azure AD -> Azure Active Directory -> Manage -> Company Branding -> Configure`
 
 #### Create a Users, Groups and Manage Them  
 
@@ -206,6 +209,11 @@ Deleted Groups
 `Search Groups - > Groups -> Deleted groups`
 
 #### Authenication and Authorization
+
+Configure SSPR
+`Azure Active Directory -> Passwords -> Properties - SSPR enabled (None/Selectec/All)`
+Futher configuration of SSPR
+`Authenicatin Mehtods, Registration, Notification and Customise Helpdesk link`
 
 Enabling various types of MFA per user, bulk assignment is in the per-user MFA window 
 `Users -> Per-user MFA`
