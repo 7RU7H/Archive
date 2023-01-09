@@ -42,6 +42,10 @@ Detirmination of attack surface is outlined in [[Application-Analysis]].
 12. Login pages
 13. Source code for static analysis
 
+Parameters - [XSS Rat](https://twitter.com/theXSSrat/status/1612122763627724800) , SQLI, JSi, html tag injection, CSTI, SSTI...
+```
+'"`><img src=x>${{7*7}}
+```
 
 #### Web Stack Enumeration
 A web stack is the combinations of web technologies from front-end typically UX of a webpage to back-end database, a (or combination of) language(s) and finally the host OS of a server.

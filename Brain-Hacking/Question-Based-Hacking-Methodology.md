@@ -3,7 +3,8 @@
 
 
 
-To ensure maintain it functional purose metholody will never contain - question X do Y? Just more Questions to be answered by you! If better format, technology exists to make this less of a list of questions the format should retain textual scriptablity and portablity.  
+To ensure maintain it functional purose metholody will never contain - question X do Y? Just more Questions to be answered by you! If better format, technology exists to make this less of a list of questions the format should retain textual scriptablity and portablity.  An addition to questions is more supplimentary actionable cognitive enhancement of either a 
+
 
 
 For more philsophical Hacking super dense and short article see [[Hacking-The-Thing]] 
@@ -66,6 +67,7 @@ Information - the user Alice has X SID that then indicates Administrative Group
 		- Fuzzable - rate limits?
 		- Potential OSINTable VHOST from merging or referenced? 
 	- Webserver and Website Language
+		- Clarify host OS version from webserver version? - Measure twice cut once!
 		- Vulnerable Lanaguage?
 		- Javascript?
 			-  XSS?
@@ -101,6 +103,7 @@ Information - the user Alice has X SID that then indicates Administrative Group
 Application:
 
 - Hardcoded credentials? 
+- Special Character handling?
 - Deserialization?
 
 
@@ -113,8 +116,8 @@ Condense:
 	- Are there presuppositions that can be made before footholding a machine?
 		- Security - Network and Host - Traffic-typoplogy and AMSI or Shell jails?  
 		- OS?
-
 	- Have you checked listeners, agents, tooling for your operatational errors? 
+	- How does the application-to-gain-entry handle double and single quotes?
 	- Have you followed the principle that *"Two is one and one is none"*?
 
 - Breaching

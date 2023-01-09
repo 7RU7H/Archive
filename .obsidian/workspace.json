@@ -109,7 +109,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Node JS",
+                "query": "FFUF",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -168,15 +168,15 @@
   },
   "active": "587a5b8672620526",
   "lastOpenFiles": [
+    "Web-Application-Hacking/Content-Discovery/FFUF-Cheatsheet.md",
+    "Brain-Hacking/Question-Based-Hacking-Methodology.md",
+    "Web-Application-Hacking/Methodologies/Generic/Web-App-Hacking-Methodology.md",
     "Web-Application-Hacking/Javascript/Javascript-Cookie-Abuse.md",
     "Web-Application-Hacking/XSS-Cheatsheet.md",
     "Cloud/Azure/Azure-Administration/Azure-Administrator-Cheatsheet.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-AD-Administration.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Roles-And-RBAC.md",
     "Artificial-Intelligence/Chat-GPT-Whispering.md",
-    "Cloud/Cloud-Hacking/Azure-Hacking.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Resource-Manager.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Policies.md",
-    "Brain-Hacking/Question-Based-Hacking-Methodology.md"
+    "Cloud/Cloud-Hacking/Azure-Hacking.md"
   ]
 }
