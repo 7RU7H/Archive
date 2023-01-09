@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "5b7d3c8831158b4a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Artificial-Intelligence/Chat-GPT-Whispering.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "6b6644568aeaf462",
             "type": "leaf",
             "state": {
@@ -78,9 +66,45 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "8c68a9bc76a46d81",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Artificial-Intelligence/Chat-GPT-Whispering.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "bf826b8422d9070c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cloud/AWS/AWS-Defined.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "bddf9528f25d0b30",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Hacker-Distros/Kali/Setup-Services/Kali-Setup-Docker.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -109,7 +133,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "FFUF",
+                "query": "mkdir ",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -138,7 +162,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Brain-Hacking/Question-Based-Hacking-Methodology.md",
+                "file": "Hacker-Distros/Kali/Setup-Services/Kali-Setup-Docker.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -166,17 +190,17 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "587a5b8672620526",
+  "active": "bddf9528f25d0b30",
   "lastOpenFiles": [
-    "Web-Application-Hacking/Content-Discovery/FFUF-Cheatsheet.md",
-    "Brain-Hacking/Question-Based-Hacking-Methodology.md",
-    "Web-Application-Hacking/Methodologies/Generic/Web-App-Hacking-Methodology.md",
-    "Web-Application-Hacking/Javascript/Javascript-Cookie-Abuse.md",
-    "Web-Application-Hacking/XSS-Cheatsheet.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administrator-Cheatsheet.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-AD-Administration.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Roles-And-RBAC.md",
+    "Tools/Rustscan.md",
+    "Hacker-Distros/Kali/Setup-Services/Kali-Setup-Docker.md",
+    "Services/Docker/Intro-To-Docker.md",
+    "Coding-Scripting-Programming/Languages/Bash/Useful_Bash.md",
+    "Linux/Linux-Commands/Linux-CLIMagic.md",
+    "Cloud/AWS/AWS-Defined.md",
     "Artificial-Intelligence/Chat-GPT-Whispering.md",
-    "Cloud/Cloud-Hacking/Azure-Hacking.md"
+    "Brain-Hacking/Question-Based-Hacking-Methodology.md",
+    "Web-Application-Hacking/Content-Discovery/FFUF-Cheatsheet.md",
+    "Web-Application-Hacking/Methodologies/Generic/Web-App-Hacking-Methodology.md"
   ]
 }

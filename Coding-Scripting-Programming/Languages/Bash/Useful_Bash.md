@@ -311,9 +311,14 @@ mkdir -p ~/parent-directory/{child-directory-1,child-directory-2,child-directory
 
 ```bash
 BOLD="\e[1m"  
-NORMAL="\e[0m"  
-GREEN="\e[32m"  
-RED="\e[30m"HELP="  
-
+NORMAL="\e[0m"
+red="\033[1;31m"
+green="\033[1;32m"
+yellow="\033[1;33m"
+blue="\033[1;34m"
+purple="\033[1;35m"
+cyan="\033[1;36m"
+grey="\033[0;37m"
+reset="\033[m"
 ${BOLD}[+]USAGE:${NORMAL} ./search.sh  (OPTIONS)
 ```

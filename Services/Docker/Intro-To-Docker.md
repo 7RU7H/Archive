@@ -4,17 +4,20 @@ For instructions on installation, images and use cases per distro/OS see: [Docke
 
 ## What is Docker and Containeristion?
 
-[[Containerisation]] is explained by article linked, Docker is open-source containerisation platform. It allows Applications to published, shared and deployed accross any infrastructure that can run Docker.The Docker Engine that is layer of computational organisation above the hardware, the host OS and its kernel. It is not a hypervisor. Each Docker contain must have the same kernel type to operate. A container is commonly used to hold an environment or specific OS of an OS family to test system variation of running software. It is similar to VM hosting but Docker with there is **NO** virtualisation, hence requiring host OS that host Contain running similar OSes. Docker images are a read-only template of instruction for creating a Docker container. 
+[[Containerisation]] is explained by article linked, Docker is open-source containerisation platform that allows Applications to be published, shared and deployed accross any infrastructure that can run Docker.The Docker Engine that is layer of computational organisation above the hardware, the host OS and its kernel. It is not a hypervisor. Each Docker contain must have the same kernel type to operate. A container is commonly used to hold an environment or specific OS of an OS family to test system variation of running software. It is similar to VM hosting but Docker with there is **NO** virtualisation, hence requiring host OS that host Contain running similar OSes. Docker images are a read-only template of instruction for creating a Docker container. 
 
-## Building a Docker container
+## Building a Docker containers
 
 ```bash
-docker run  -d --privileged -v /:/host:rw $image
+docker build -t yourname/imagename path/to/Dockerfile
 
+docker run  -d --privileged -v /:/host:rw $image
 FROM $dir/$image
 ```
 
-[Docker setup of kali for hackers consider this article](https://www.pentestpartners.com/security-blog/docker-for-hackers-a-pen-testers-guide/)
+[Docker setup of kali for hackers consider this article](https://www.pentestpartners.com/security-blog/docker-for-hackers-a-pen-testers-guide/), that Hackers *"can use Docker to build and configure an environment containing just the tools we need, and then launch a container and work from that. Our environment will always be exactly the same as it’s launched from an image, and we can easily launch multiple containers at the same time as they don’t consume a lot of resources...allows us to have a self-contained testing environment for each job or test or random-tinker, where any processes, installs and so on are all local to that container and don’t pollute your “Testing VM” or host OS."*
+
+
 
 ## Securing Containers
 
