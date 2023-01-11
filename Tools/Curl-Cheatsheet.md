@@ -1,4 +1,4 @@
-# Curl Cheatsheet
+s# Curl Cheatsheet
 
 This is a cheatsheet and assimilation of curl relating web hacking articles, blogs and other cheatsheets; all referenced at the end of this cheatsheet. `curl` your way to victory! To really learn I read the article that this is based on and improved in a more two part format: simple: `flag: usage`; then addition in depth information about `curl` with Frizb cheatsheet as starting point.
 
@@ -118,6 +118,7 @@ $HOME/.curlrc # Default config file in UNIX-like systems
 #  limit the connection speed to 1,234 bytes/second:
 curl --limit-rate 1234B http://www.ismycomputeron.com/
 
+curl -d
 
 # Display progress metre
 curl -#

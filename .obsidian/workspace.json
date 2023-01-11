@@ -20,36 +20,24 @@
             }
           },
           {
-            "id": "c3ed6276515aa6ce",
+            "id": "3f047444fd04a89a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud/Cloud-Hacking/Azure-Hacking.md",
+                "file": "Post-Exploitation/Evasion/Log-And-Monitor-Evasion.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "3737139cbb3472db",
+            "id": "0eb1358ee366589e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud/Azure/Azure-Defined.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6d5e9e26b4aa0dde",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Web-Application-Hacking/Javascript/Javascript-Cookie-Abuse.md",
+                "file": "Security-Enterprises/Penetration-Testing/Tactical-Post-Exploitation.md",
                 "mode": "source",
                 "source": false
               }
@@ -90,21 +78,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "bddf9528f25d0b30",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Hacker-Distros/Kali/Setup-Services/Kali-Setup-Docker.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
         ],
-        "currentTab": 7
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -133,7 +109,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "mkdir ",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -162,7 +138,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Hacker-Distros/Kali/Setup-Services/Kali-Setup-Docker.md",
+                "file": "Security-Enterprises/Penetration-Testing/Tactical-Post-Exploitation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -190,17 +166,17 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "bddf9528f25d0b30",
+  "active": "0eb1358ee366589e",
   "lastOpenFiles": [
-    "Tools/Rustscan.md",
-    "Hacker-Distros/Kali/Setup-Services/Kali-Setup-Docker.md",
-    "Services/Docker/Intro-To-Docker.md",
-    "Coding-Scripting-Programming/Languages/Bash/Useful_Bash.md",
-    "Linux/Linux-Commands/Linux-CLIMagic.md",
-    "Cloud/AWS/AWS-Defined.md",
-    "Artificial-Intelligence/Chat-GPT-Whispering.md",
+    "Post-Exploitation/Evasion/Log-And-Monitor-Evasion.md",
+    "Security-Enterprises/Penetration-Testing/Tactical-Post-Exploitation.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-AD-Administration.md",
+    "Cloud/Cloud-Hacking/Azure-Hacking.md",
+    "Cloud/Azure/Azure-Defined.md",
+    "Web-Application-Hacking/Javascript/Javascript-Cookie-Abuse.md",
     "Brain-Hacking/Question-Based-Hacking-Methodology.md",
-    "Web-Application-Hacking/Content-Discovery/FFUF-Cheatsheet.md",
-    "Web-Application-Hacking/Methodologies/Generic/Web-App-Hacking-Methodology.md"
+    "Artificial-Intelligence/Chat-GPT-Whispering.md",
+    "Cloud/AWS/AWS-Defined.md",
+    "Exploitation/Encoded-Shell-Spawning.md"
   ]
 }
