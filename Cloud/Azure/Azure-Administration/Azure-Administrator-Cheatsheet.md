@@ -67,8 +67,6 @@ Create a Custom Template
 
 ## Storage Accounts
 
-
-#### Create a Storage Account
 Create in Azure Software Development Kit SDK or Portal `Storage Account -> Share Access signature`.
 
 Create Storage Account `Search -> Storage Accounts`, provide name, location, redundancy 
@@ -76,6 +74,52 @@ Create Storage Account `Search -> Storage Accounts`, provide name, location, red
 Create File Share in a Storage Account `$StorageAccount` 
 
 Setup File Sync `Azure File Sync -> Create` - 
+
+Create Container for Blob Storage
+`Azure Storage accounts -> + Container -> Name and Change "Public Access Level"`
+
+Use Azure Blob Storage lifecycle management policy rules to:
+`Storage Account -> $storage_account -> Lifecycle Management`
+- Rule-based run scheduling
+- Rule-based condition to containers or a subset of blobs
+- Delete blobs 
+- Transition Storage tier 
+
+AZcopy is installed by default on the CloudShell
+```powershell
+azcopy copy $localpath $remotepath # upload
+azcopy copy $remotepath $localpath # download
+azcopy login # create URI to login
+```
+
+URL for Azure remote container: `Home -> Storage Accounts -> $ContainerName -> Properties` - must be globally unique
+
+Create a SAS for container `Home -> Storage Accounts -> $ContainerName -> Shared Access Signature` configure and `Generate SAS and connection string`. Used for:
+- Connection strings
+- SAS Token
+- Blob service SAS URL
+- Queue service SAS URL
+- Table service SAS URL
+
+Storage access
+**Container service** - `//`**`mystorageaccount`**`.blob.core.windows.net`
+**Table service** - `//`**`mystorageaccount`**`.table.core.windows.net` 
+**Queue service** - `//`**`mystorageaccount`**`.queue.core.windows.net`
+**File service** - `//`**`mystorageaccount`**`.file.core.windows.net`
+**Blob Access** - `//`**`mystorageaccount`**`.blob.core.windows.net/`**`mycontainer`**`/`**`myblob`**.
+
+Configure Custom Domains - Either:
+- Direct mapping - create a `CNAME` record
+- Intermediary domain mapping (when domain is already in use) - prepend `asverify` to subdomain it permit Azure to recognize your custom domain thereby using a intermediary domain to validate the domain.
+
+#### Secure Storage endpoints
+
+`Storage Accounts -> $storage_account -> Networking Firewalls and virtual networks`; restrict access:
+- Enabled from all networks
+- Enabled from selected virtual networks and IP address
+- Disabled
+
+
 
 ## Management Groups - Azure Policies
 

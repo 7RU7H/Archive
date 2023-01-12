@@ -7,7 +7,7 @@ This a hub page group links to all relevant articles under a Azure Administratio
 [[Azure-Administration-Azure-Policies]]
 [[Azure-Administration-Azure-Resource-Manager]]
 [[Azure-Administration-ARM-Templates]]
-[[Azure-Administration-Storage-Account]]
+[[Azure-Administration-Storage-Accounts]]
 [[Azure-Administration-Virtual-Machines]]
 [[Azure-Administrator-Virtual-Networking]]
 [[Azure-Administration-Azure-Disks]]

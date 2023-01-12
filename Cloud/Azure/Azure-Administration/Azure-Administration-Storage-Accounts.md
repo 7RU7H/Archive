@@ -1,12 +1,30 @@
-#markdown 
-Azure Storage Accounts offers several types of storage accounts:
+# Azure Administration - Storage Accounts
+
+Azure Storage is Microsoft's cloud storage solution for modern data storage scenarios. Azure Storage offers a massively scalable object store for data objects. It provides a file system service for the cloud, a messaging store for reliable messaging, and a NoSQL store. Azure Storage data catergories:
+- Structure Data
+- Unstructure data
+- VM data
+
+Price Tiers
+- Stardard
+- Premium
+
+Considerations:
+- Durability and availability
+- Secure access
+- Scalability
+- Manageability
+- Data Accessibility
+- Storage optimization for masive data
+- Storage for messages should use Queue Storage
+- Table Storage for structure data
+- Azure Files for configs and logs for later use.
+
+
+The storage account name is used as part of the URI for API access, so it must be globally unique. Azure Storage Accounts offer several types of storage accounts:
 
 Account Kind:
-- General-purpose v1 (legacy)
-- General-purpose v2
-- BlobStorage (legacy)
-- BlockBlobstorage
-- FileStorage
+![1000](azurestorageaccounttypes.png)
 
 Storage Accounts:
 Supported Services - Blob, File, Queue, Table, Disk, Data Loake Gen2
@@ -24,12 +42,10 @@ Azure has 5 Core Storage services, searchable
 - Blob 
 	- Azure Blob a masssive scalable object store for text and binary data.
 		- Include support for big data analytics through Data Lake Storage Gen2
-	- Azure Files
-		- Managed file shares for cloud or on-premises deployments
-	-  Azure Queues
-		- A NoSQL store for schemaless storage of structured data
-	- Azure Tables
-		- A messaging store for reiable messaging between application components
+	- Azure Files - Managed file shares for cloud or on-premises deployments
+	-  Azure Queues - A messaging store for reliable messaging between application components.
+	- Azure Tables - A NoSQL store for schemaless storage of structured data or _relational_ data.
+		
 - Disks
 	- Azure Disks
 		- Block-level storage volumes for Azure VMs
@@ -84,6 +100,10 @@ Archive
 - Rarely accessed and stored for at least 180 days
 - Lowest Storage and highest access cost
 
+Premium Blob Storage: *"Premium Blob Storage is best suited for I/O intensive workloads that require low and consistent storage latency. Premium Blob Storage uses solid-state drives (SSDs) for fast and consistent response times. This storage is best for workloads that perform many small transactions."*
+
+![1000](azurecomparisonofstoragetiering.png)
+
 
 #### Access Tiers (Blob Storage)
 
@@ -96,6 +116,7 @@ When a blob is uploaded or moved to another tier it is charged at the new tier's
 	- Any blob moved into Cool tier (GPv2 accounts only) is subject to a cool early deletion period of 30 days.
 	- Any blob moved into Archive tier is subject to an Arcvhive early deletion period of 180 days -charge is prorated.
 
+
 #### Replication and Data redundancy 
 
 Upon creation of a Storage Account you need to choose a Replication Type, Replication stores multiple copies of data protecting it from:
@@ -106,14 +127,16 @@ Upon creation of a Storage Account you need to choose a Replication Type, Replic
 
 - Region Specific
 - Redundacy - Standard performance:
-	- Local Redundant Storage - Distributed over Local to AZ1 in a Region
-	- Zone Redundant Storage -  Distributed through the Zones of a Region
-	- Global Redundant Storage - Distributed both Locally in one Zone and also in the Paired Region
+	- Local Redundant Storage (LRS) - Distributed over Local to AZ1 in a Region
+	- Zone Redundant Storage (ZRS) -  Distributed through the Zones of a Region
+	- Global Redundant Storage (GRS) - Distributed both Locally in one Zone and also in the Paired Region
 	- Geo-Zone Redundant Storage (GZRS) - Distributed Locally one per Zone and Paired region
 		- Always replicates asynchronously!
 		- Some services allow reading from a Pair
 - Premium Options vary on type; never a Geo-replicated option
 
+Replication Strategies:
+![1000](azurereplicationstrategies.png)
 
 The greater the level of redundancy the greater the expense:
 - Primary Region Redundancy - Data is replicated  either:
@@ -146,7 +169,7 @@ The greater the level of redundancy the greater the expense:
 
 #### Azure Blobs
  
-Blob storage is an object-store that is optimizaed for storing massive amounts of unstructured data (does not adhere to particular data model or definition).
+Blob storage is an object-store that is optimizaed for storing massive amounts of unstructured data (does not adhere to particular data model or definition). Azure Blob Storage uses a container resource to group a set of blobs. A blob can't exist by itself in Blob Storage. A blob must be stored in a container resource, -which can store an unlimited number of blobs. Azure storage account can contain an unlimited number of containers.
 
 Storage Account (a unique namespace in Azure for your data) -> Containers (similar to folder in a file system) -> Blobs ( the actual data being stored).
 
@@ -161,6 +184,8 @@ Types:
 	- Stores random access files up to 8 TB
 	- Store Virtual Hard Drive files and serve as disks for Azure VMs
 
+![1000](azureblobuploadtools.png)
+
 Moving Blobs:
 Method | Description
 --- | ---
@@ -171,6 +196,46 @@ Blobfuse | Virtual file system driver - access through Linux file system
 Azure Data Box | Rugged device to physically transport data to Azure
 Azure Import/Export service | Service to ship physical disks for data transfer no Azure
 
+Create Container for Blob Storage
+`Azure Storage accounts -> + Container -> Name and Change "Public Access Level"`:
+**Public access level**: The access level specifies whether the container and its blobs can be accessed publicly. By default, container data is private and visible only to the account owner. There are three access level choices:
+    -   **Private**: (Default) Prohibit anonymous access to the container and blobs.
+    -   **Blob**: Allow anonymous public read access for the blobs only.
+    -   **Container**: Allow anonymous public read and list access to the entire container, including the blobs.
+
+See Tiering for Hot, Cold, Arcvhie and Premium Storage
+
+Use Azure Blob Storage lifecycle management policy rules to:
+`Storage Account -> $storage_account -> Lifecycle Management`
+- Rule-based run scheduling
+- Rule-based condition to containers or a subset of blobs
+- Delete blobs 
+- Transition Storage tier 
+
+Object replication copies blobs in a container asynchronously according to policy rules that you configure. During the replication process, the following contents are copied from the source container to the destination container:
+-   The blob contents
+-   The blob metadata and properties
+-   Any versions of data associated with the blob
+Requires:
+- Versioning enabled
+- Does not support snapshots
+- Replication Policy
+Considerations:
+- Latency reductions
+- Efficiency for compute workloads
+- Data distribution
+- Costs benefit
+
+Create a storage account:
+`Storage Accounts`
+Create Container for blobs
+`Storage Accounts -> $storage_account -> Containers
+Upload Blob
+`Storage Accounts -> $storage_account -> Containers -> $container -> Upload`
+Move Data to, from, or within Azure Storage
+`Storage Accounts -> $storage_account -> Diagnose and solve problems`
+Monitor Storage Accounts
+`Storage Accounts -> $storage_account -> Insights`
 
 #### Azure Files
 
@@ -182,6 +247,8 @@ File share in cloud, a centralized server for storage allowing for multiple conn
 	- Diagnostic share - logs to file share
 	- Dev/Test/Debug - Quick sharing of tooling
 - Containerization - to persist stateful containers
+- Diagnostic logs, metrics, and crash dumps can be written to a file share and processed or analyzed later.
+- Configuration files can be stored on a file share and accessed from multiple virtual machines.
 
 Azure files instead of File Shares server
 - Share Access - Already setup to work with standard networking protocols SMB and NFS
@@ -190,7 +257,7 @@ Azure files instead of File Shares server
 - Scripting and Tooling - Automation
 - Resiliency 
 
-Azure Files Feature
+Azure Files Features:
 - Backups - shared snapshots
 	- Incremental
 	- Read-only
@@ -228,7 +295,7 @@ Azure File Sync
 
 Allows cacheing of Azure File Share on an on-premise or cloud VM, no limit to amount of cacheing with SMB, NFS and FTPS.
 
-Azure Storage Explorer
+#### Azure Storage Explorer
 
 Standalone app to work with Azure Storage data on Windows, Linux and macOS - create Blob containers, uplaod files, create snopshops of Disk
 
@@ -249,7 +316,7 @@ azcopy copy $localpath $remotepath # upload
 azcopy copy $remotepath $localpath # download
 ```
 
-Azure Import and Export Services
+#### Azure Import and Export Services
 
 Shipping with physical disk drives large amounts of data to a Azure Blob and Azure Files to a Azure datacenter. CLI tool for preparation `WAImportExport` - Window 64 bit only; Import Jobs:
 - Prepares disks
@@ -266,7 +333,7 @@ For export jobs
 - up to 10 empty drives per job
 - shipped to location
 
-Shared Access Signatures
+#### Shared Access Signatures
 
 URI that grants restricted temporary access to Azure Storage resources
 - Account-level SAS - access to one or more storage services 
@@ -308,12 +375,35 @@ azcopy login # create URI to login
 
 URL for Azure remote container: `Home -> Storage Accounts -> $ContainerName -> Properties`
 
-Create a SAS for container `Home -> Storage Accounts -> $ContainerName -> Shared Access Signature` configure and `Generate SAS and connection string`. It will generate connections trings for: 
+Create a SAS for container `Home -> Storage Accounts -> $ContainerName -> Shared Access Signature` configure and `Generate SAS and connection string`. It will generate connections strings for: 
 - Connection strings
 - SAS Token
 - Blob service SAS URL
 - Queue service SAS URL
-- Tabe service SAS URL
+- Table service SAS URL
+
+#### Storage Access
+
+**Container service** - `//`**`mystorageaccount`**`.blob.core.windows.net`
+**Table service** - `//`**`mystorageaccount`**`.table.core.windows.net` 
+**Queue service** - `//`**`mystorageaccount`**`.queue.core.windows.net`
+**File service** - `//`**`mystorageaccount`**`.file.core.windows.net`
+**Blob Access** - `//`**`mystorageaccount`**`.blob.core.windows.net/`**`mycontainer`**`/`**`myblob`**.
+
+#### Configure Custom Domains
+
+Azure Storage doesn't currently provide native support for HTTPS with custom domains. You can implement an Azure Content Delivery Network (CDN) to access blobs by using custom domains over HTTPS. By either configuring:
+- Direct mapping - create a `CNAME` record
+- Intermediary domain mapping (when domain is already in use) - prepend `asverify` to subdomain it permit Azure to recognize your custom domain thereby using a intermediary domain to validate the domain.
+
+#### Secure Storage endpoints
+
+`Storage Accounts -> $storage_account -> Networking Firewalls and virtual networks`; restrict access:
+- Enabled from all networks
+- Enabled from selected virtual networks and IP address
+- Disabled
+
+
 ## References
 
 [FreeCodeCamp.org - AZ 104 Course](https://www.youtube.com/watch?v=10PbGbTUSAg&t=3458s)

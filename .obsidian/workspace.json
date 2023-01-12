@@ -13,74 +13,25 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-AD-Administration.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Storage-Accounts.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "3f047444fd04a89a",
+            "id": "6a4e3cb592195f35",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Post-Exploitation/Evasion/Log-And-Monitor-Evasion.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0eb1358ee366589e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Security-Enterprises/Penetration-Testing/Tactical-Post-Exploitation.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "587a5b8672620526",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Brain-Hacking/Question-Based-Hacking-Methodology.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8c68a9bc76a46d81",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Artificial-Intelligence/Chat-GPT-Whispering.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "bf826b8422d9070c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cloud/AWS/AWS-Defined.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administrator-Cheatsheet.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -138,7 +89,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Security-Enterprises/Penetration-Testing/Tactical-Post-Exploitation.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Storage-Accounts.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -166,17 +117,17 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "0eb1358ee366589e",
+  "active": "6b6644568aeaf462",
   "lastOpenFiles": [
-    "Post-Exploitation/Evasion/Log-And-Monitor-Evasion.md",
-    "Security-Enterprises/Penetration-Testing/Tactical-Post-Exploitation.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administrator-Cheatsheet.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Storage-Accounts.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-AD-Administration.md",
-    "Cloud/Cloud-Hacking/Azure-Hacking.md",
-    "Cloud/Azure/Azure-Defined.md",
-    "Web-Application-Hacking/Javascript/Javascript-Cookie-Abuse.md",
     "Brain-Hacking/Question-Based-Hacking-Methodology.md",
-    "Artificial-Intelligence/Chat-GPT-Whispering.md",
-    "Cloud/AWS/AWS-Defined.md",
-    "Exploitation/Encoded-Shell-Spawning.md"
+    "Services/Databases/MYSQL/MySQL-Cheatsheet.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+    "Services/Databases/MYSQL/MySQL-Hacking.md",
+    "Post-Exploitation/Evasion/Log-And-Monitor-Evasion.md",
+    "Post-Exploitation/Information-Gathering/Windows-Post-Exploitation-Info-Gathering.md",
+    "Security-Enterprises/Penetration-Testing/Tactical-Post-Exploitation.md"
   ]
 }
