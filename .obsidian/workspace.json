@@ -20,6 +20,18 @@
             }
           },
           {
+            "id": "ba8854edeb14a9cc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cloud/Cloud-Hacking/Azure-Hacking.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "6a4e3cb592195f35",
             "type": "leaf",
             "state": {
@@ -119,15 +131,15 @@
   },
   "active": "6b6644568aeaf462",
   "lastOpenFiles": [
-    "Cloud/Azure/Azure-Administration/Azure-Administrator-Cheatsheet.md",
+    "Cloud/Cloud-Hacking/Azure-Hacking.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Storage-Accounts.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administrator-Cheatsheet.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-AD-Administration.md",
     "Brain-Hacking/Question-Based-Hacking-Methodology.md",
     "Services/Databases/MYSQL/MySQL-Cheatsheet.md",
     "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
     "Services/Databases/MYSQL/MySQL-Hacking.md",
     "Post-Exploitation/Evasion/Log-And-Monitor-Evasion.md",
-    "Post-Exploitation/Information-Gathering/Windows-Post-Exploitation-Info-Gathering.md",
-    "Security-Enterprises/Penetration-Testing/Tactical-Post-Exploitation.md"
+    "Post-Exploitation/Information-Gathering/Windows-Post-Exploitation-Info-Gathering.md"
   ]
 }

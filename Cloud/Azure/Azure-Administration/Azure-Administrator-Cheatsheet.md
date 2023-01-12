@@ -71,6 +71,9 @@ Create in Azure Software Development Kit SDK or Portal `Storage Account -> Share
 
 Create Storage Account `Search -> Storage Accounts`, provide name, location, redundancy 
 
+Configure Azure Storage Encryption:
+`Storage accounts -> $storage_accounts -> Encryption`
+
 Create File Share in a Storage Account `$StorageAccount` 
 
 Setup File Sync `Azure File Sync -> Create` - 
@@ -94,12 +97,29 @@ azcopy login # create URI to login
 
 URL for Azure remote container: `Home -> Storage Accounts -> $ContainerName -> Properties` - must be globally unique
 
-Create a SAS for container `Home -> Storage Accounts -> $ContainerName -> Shared Access Signature` configure and `Generate SAS and connection string`. Used for:
+Create a SAS:
+`Storage Accounts -> $storage_account -> search SAS`configure and `Generate SAS and connection string`. Used for:
 - Connection strings
 - SAS Token
 - Blob service SAS URL
 - Queue service SAS URL
 - Table service SAS URL
+
+Con be done from `$resource`
+
+URI Format with parametres explained
+```powershell
+https://myaccount.blob.core.windows.net/$containerName/file.txt
+?sv= # Storage services version
+&ss # Storage service
+&sip # IP range
+&spr # Protocol
+&st # Start Time
+&se # Expiration Time
+&sr # Storage Resource - b for blob, q for queue 
+&sp # permissions  r, wr
+&sig # SHA256 hash - the signature
+```
 
 Storage access
 **Container service** - `//`**`mystorageaccount`**`.blob.core.windows.net`

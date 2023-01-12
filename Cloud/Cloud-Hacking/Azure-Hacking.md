@@ -1,9 +1,18 @@
 
 These are just ideas and things I have found. Nothing tested or works just ideas. There are better resources...
 
+## Objectives
+
+Compromise the SAS
+
+
+
 ## Adminstrative Password Reuse
 
 - Upon VM creation passwords are reused, if VM has created with  `Get-Credential` or variant, ssh or rdp is open and you have a Administrative password 
+
+
+## Compromise the SAS
 
 
 ## Administrator Browsers and Password management

@@ -203,7 +203,7 @@ Create Container for Blob Storage
     -   **Blob**: Allow anonymous public read access for the blobs only.
     -   **Container**: Allow anonymous public read and list access to the entire container, including the blobs.
 
-See Tiering for Hot, Cold, Arcvhie and Premium Storage
+See Tiering for Hot, Cold, Archive and Premium Storage
 
 Use Azure Blob Storage lifecycle management policy rules to:
 `Storage Account -> $storage_account -> Lifecycle Management`
@@ -295,47 +295,43 @@ Azure File Sync
 
 Allows cacheing of Azure File Share on an on-premise or cloud VM, no limit to amount of cacheing with SMB, NFS and FTPS.
 
-#### Azure Storage Explorer
 
-Standalone app to work with Azure Storage data on Windows, Linux and macOS - create Blob containers, uplaod files, create snopshops of Disk
+## Azure Storage Security
 
-[AZCopy]((https://learn.microsoft.com/en-us/azure/storage/common/storage-ref-azcopy) - CLI - downloadable executable copy blobs or files to or from a storage accounts
+- Encryption 
+	- Secure data in transit
+	- Secure data at rest - decrypted on retrieva
+- Shared access signatures
+- Authorized & Authenication
 
-Avaliable:
-[GitHub - Azure/azure-storage-azcopy: The new Azure Storage data transfer utility - AzCopy v10](https://github.com/Azure/azure-storage-azcopy)
-[Copy or move data to Azure Storage by using AzCopy v10 | Microsoft Learn](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10#download-azcopy)
+Configure Azure Storage Encryption:
+`Storage accounts -> $storage_accounts -> Encryption`
 
-- Requires Permissions!:
-	- Storage Blob Data Reader - download
-	- Storage Blob Data contributor - upload
-	- Storage Blob Data Owner - upload
-- Access via Azure AD or Shared Access Signature (SAS)
+Customer Managed Keys for greater control - create, disable, audit, rotate and define access controls. Choose:
+- Encryption Type
+- Encryption Key
 
-```powershell
-azcopy copy $localpath $remotepath # upload
-azcopy copy $remotepath $localpath # download
-```
+Consideration regarding Storage Security
+![1000](azurestorageauthorizationstrategies.png)
 
-#### Azure Import and Export Services
+Microsoft's Recommendations:
+- Always use HTTPS
+- Reference stored access policies
+- Set near-term expiry for unplanned SAS
+- Require client renew SAS
+- Set SAS start time to avoid clock skew -  set: -15 minutes ago 
+- Define *minimum* and limit access permissions for resource
+	- Consider costs of over provisioning
+- Do not assume a SAS is always correct choice
+- Monitor applications
 
-Shipping with physical disk drives large amounts of data to a Azure Blob and Azure Files to a Azure datacenter. CLI tool for preparation `WAImportExport` - Window 64 bit only; Import Jobs:
-- Prepares disks
-- Copies data to drive
-- Encrypts with AES 246 bitlocker
-- Generate journal fies during import
-	- Journal File store basic imformation - drive serial number, encryption key, storage account
-- Identifies number of drives required
-
-Version 1 is import/export data to Blob storage - Version 2 is for import data  Azure File 
-
-For export jobs
-- export only from Azure Blob
-- up to 10 empty drives per job
-- shipped to location
 
 #### Shared Access Signatures
 
-URI that grants restricted temporary access to Azure Storage resources
+Create a SAS
+`Storage Accounts -> $storage_account -> search SAS`
+
+A shared access signature (SAS) is URI that grants restricted temporary access to Azure Storage resources
 - Account-level SAS - access to one or more storage services 
 - Service-level SAS - access to single storage services with storage account key
 - User delegation SAS 
@@ -346,19 +342,38 @@ URI that grants restricted temporary access to Azure Storage resources
 	- Start, expiry times plus permission are part of the URI
 	- Any SAS type 
 - Service SAS with stored access policy
-	- Stored access policcy is defined on a resource container
+	- Stored access policy is defined on a resource container
 	- Stored access policy can be associated to multiple SAS to managed constraints
+- IP addresses
+- Protocols
 
 URI Format with parametres explained
 ```powershell
 https://myaccount.blob.core.windows.net/$containerName/file.txt
 ?sv= # Storage services version
+&ss # Storage service
+&sip # IP range
+&spr # Protocol
 &st # Start Time
 &se # Expiration Time
 &sr # Storage Resource - b for blob, q for queue 
 &sp # permissions  r, wr
-&sig # SHA256 hash
+&sig # SHA256 hash - the signature
 ```
+
+
+
+
+#### Secure Storage Endpoints
+
+`Storage Accounts -> $storage_account -> Networking Firewalls and virtual networks`; restrict access:
+- Enabled from all networks
+- Enabled from selected virtual networks and IP address
+- Disabled
+
+
+
+## Workflows
 
 Create in Azure Software Development Kit SDK or Portal `Storage Account -> Share Access signature`.
 
@@ -396,12 +411,43 @@ Azure Storage doesn't currently provide native support for HTTPS with custom dom
 - Direct mapping - create a `CNAME` record
 - Intermediary domain mapping (when domain is already in use) - prepend `asverify` to subdomain it permit Azure to recognize your custom domain thereby using a intermediary domain to validate the domain.
 
-#### Secure Storage endpoints
+#### Azure Storage Explorer
 
-`Storage Accounts -> $storage_account -> Networking Firewalls and virtual networks`; restrict access:
-- Enabled from all networks
-- Enabled from selected virtual networks and IP address
-- Disabled
+Standalone app to work with Azure Storage data on Windows, Linux and macOS - create Blob containers, uplaod files, create snopshops of Disk
+
+[AZCopy]((https://learn.microsoft.com/en-us/azure/storage/common/storage-ref-azcopy) - CLI - downloadable executable copy blobs or files to or from a storage accounts
+
+Avaliable:
+[GitHub - Azure/azure-storage-azcopy: The new Azure Storage data transfer utility - AzCopy v10](https://github.com/Azure/azure-storage-azcopy)
+[Copy or move data to Azure Storage by using AzCopy v10 | Microsoft Learn](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10#download-azcopy)
+
+- Requires Permissions!:
+	- Storage Blob Data Reader - download
+	- Storage Blob Data contributor - upload
+	- Storage Blob Data Owner - upload
+- Access via Azure AD or Shared Access Signature (SAS)
+
+```powershell
+azcopy copy $localpath $remotepath # upload
+azcopy copy $remotepath $localpath # download
+```
+
+#### Azure Import and Export Services
+
+Shipping with physical disk drives large amounts of data to a Azure Blob and Azure Files to a Azure datacenter. CLI tool for preparation `WAImportExport` - Window 64 bit only; Import Jobs:
+- Prepares disks
+- Copies data to drive
+- Encrypts with AES 246 bitlocker
+- Generate journal fies during import
+	- Journal File store basic imformation - drive serial number, encryption key, storage account
+- Identifies number of drives required
+
+Version 1 is import/export data to Blob storage - Version 2 is for import data  Azure File 
+
+For export jobs
+- export only from Azure Blob
+- up to 10 empty drives per job
+- shipped to location
 
 
 ## References
