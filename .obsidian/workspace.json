@@ -42,6 +42,102 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "4bd73df0dd5c5f20",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Security-Enterprises/Security-Operations-Center.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1175ad32f6b1b784",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Security-Enterprises/Incident-Response.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a9c662b12014ef7a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cloud/Cloud-Hacking/AWS-Hacking.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6c3f9d900b746776",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Services/Databases/Dynamodb/Amazon-Dynamodb.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "63d13602fb65df89",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Persistence/Linux-Persistence.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "914e65096560e585",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Coding-Scripting-Programming/Languages/PHP/Useful_PHP.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "464649bad4ed30e0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cloud/Cloud-Hacking/Cloud-Hacking-Tooling.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "dadc572b2770c2b9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Brain-Hacking/Question-Based-Hacking-Methodology.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ]
       }
@@ -131,15 +227,15 @@
   },
   "active": "6b6644568aeaf462",
   "lastOpenFiles": [
-    "Cloud/Cloud-Hacking/Azure-Hacking.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Storage-Accounts.md",
     "Cloud/Azure/Azure-Administration/Azure-Administrator-Cheatsheet.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-AD-Administration.md",
-    "Brain-Hacking/Question-Based-Hacking-Methodology.md",
-    "Services/Databases/MYSQL/MySQL-Cheatsheet.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Storage-Accounts.md",
+    "Services/Databases/Dynamodb/Amazon-Dynamodb.md",
+    "Coding-Scripting-Programming/Languages/PHP/Useful_PHP.md",
+    "Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Blue-KOTH-Battlegrounds-Cheatsheet-Linux.md",
     "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
-    "Services/Databases/MYSQL/MySQL-Hacking.md",
-    "Post-Exploitation/Evasion/Log-And-Monitor-Evasion.md",
-    "Post-Exploitation/Information-Gathering/Windows-Post-Exploitation-Info-Gathering.md"
+    "Persistence/Linux-Persistence.md",
+    "Brain-Hacking/Question-Based-Hacking-Methodology.md",
+    "Cloud/Cloud-Hacking/AWS-Hacking.md",
+    "Cloud/AWS/AWS-Defined.md"
   ]
 }

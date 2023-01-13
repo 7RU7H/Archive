@@ -66,6 +66,8 @@ Information - the user Alice has X SID that then indicates Administrative Group
 	- Virtual hosting? 
 		- Fuzzable - rate limits?
 		- Potential OSINTable VHOST from merging or referenced? 
+		- What does the VHOSTing indicate about the technological stack: Subdomains, Containization, Cloud?
+			- How is then stacked - bottom up from entry point?
 	- Webserver and Website Language
 		- Clarify host OS version from webserver version? - Measure twice cut once!
 		- Vulnerable Lanaguage?
@@ -79,7 +81,7 @@ Information - the user Alice has X SID that then indicates Administrative Group
 		- Vulnerable webserver version?
 		- Webserver generic issues by type
 			-  [[Apache-Tomcat]]
-		- Vulnerable versioning?firends
+		- Vulnerable versioning? 
 
 	- What request methods?
 		 - Can you bypass with additional Headers?
@@ -105,8 +107,10 @@ Application:
 - Hardcoded credentials? 
 - Special Character handling?
 - Deserialization?
-
-
+- Third party dependencies?
+	- Vulnerable versions?
+	- Abusable from contextual misconfiguration? 
+ 
 Condense:
 [[Haddix-Methodology]]
 [[Web-App-Hacking-Methodology]]
@@ -131,6 +135,7 @@ Condense:
 	- Binaries avaliable?
 	- Expected security?
 	- Have you tried encoding the payload to counter string handling both client and server side
+	- `www-data` and varients will not have user directory how will that affect subsequent chain
  
 - Internal Network
 

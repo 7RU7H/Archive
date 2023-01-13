@@ -34,6 +34,8 @@ Files
 [move_uploaded_file](https://www.php.net/manual/en/function.move-uploaded-file.php) - Moves an uploaded file to a new location
 [file_put_contents](https://www.php.net/manual/en/function.file-put-contents.php)
 
+Execution:
+[passthru](https://www.php.net/manual/en/function.passthru.php) - The _passthru_() function is similar to the exec() function in that it executes a command . This function should be used in place of exec() or system() he output from the Unix command is binary data which needs to be passed directly back to the browser. 
 
 ## Scripting
 

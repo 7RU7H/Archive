@@ -296,6 +296,28 @@ Azure File Sync
 Allows cacheing of Azure File Share on an on-premise or cloud VM, no limit to amount of cacheing with SMB, NFS and FTPS.
 
 
+## Azure Storage Tables
+
+[Azure Storage](https://learn.microsoft.com/en-us/azure/storage/tables/table-storage-overview): *"Azure Table storage is a service that stores non-relational structured data (also known as structured NoSQL data) in the cloud, providing a key/attribute store with a schemaless design."*
+
+This does also require a storage account and resource group.
+
+[Create a AzStorageTable storage](https://learn.microsoft.com/en-us/azure/storage/tables/table-storage-how-to-use-powershell) table associated with the storage account in Azure and relevant activities
+```powershell
+# Create new table
+New-AzStorageTable -Name $tableName –Context $ctx
+# create a object to perform table operations
+$storageTable = Get-AzStorageTable –Name $tableName –Context $ctx
+# Get the manditory CloudTable, will create a table if non-existent
+$cloudTable = $storageTable.CloudTable
+# table entries - entityOne/Two are fields 
+Add-AzTableRow -table $cloudTable -partitionKey $partitionKey -rowKey ("CA") -property @{"entityOne"="data";"entityTwo"=1}
+# Query the table; for specifics use: -columnName "" -value "" -operator $op
+Get-AzTableRow -table $cloudTable | ft
+# Delete a table
+Remove-AzStorageTable –Name $tableName –Context $ctx
+```
+
 ## Azure Storage Security
 
 - Encryption 
@@ -360,8 +382,6 @@ https://myaccount.blob.core.windows.net/$containerName/file.txt
 &sp # permissions  r, wr
 &sig # SHA256 hash - the signature
 ```
-
-
 
 
 #### Secure Storage Endpoints
@@ -455,3 +475,5 @@ For export jobs
 [FreeCodeCamp.org - AZ 104 Course](https://www.youtube.com/watch?v=10PbGbTUSAg&t=3458s)
 [azcopy | Microsoft Learn](https://learn.microsoft.com/en-us/azure/storage/common/storage-ref-azcopy)
 [GitHub - Azure/azure-storage-azcopy: The new Azure Storage data transfer utility - AzCopy v10](https://github.com/Azure/azure-storage-azcopy)
+[Azure Storage](https://learn.microsoft.com/en-us/azure/storage/tables/table-storage-overview)
+[Create a AzStorageTable storage](https://learn.microsoft.com/en-us/azure/storage/tables/table-storage-how-to-use-powershell)

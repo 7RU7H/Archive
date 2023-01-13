@@ -23,9 +23,14 @@ Reference:[airman604](https://airman604.medium.com/9-ways-to-backdoor-a-linux-bo
 ## ssh keys
 It's not very hidden, easy to remove or detect. - https://attack.mitre.org/techniques/T1098/
 ```bash
-ssh-keygen
-# drop public key in /target/.ssh
+# Generate on host; provide some fields
+ssh-keygen  
+# target machine:
+# cat public key on host and echo it into .ssh/authorized_keys
 mkdir .ssh
+echo "ssh-rsa $base64fromkey" > .ssh/authorized_keys
+```
+# 
 chmod 600 id_rsa
 ```
 

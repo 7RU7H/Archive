@@ -28,7 +28,14 @@ exec >/dev/tty
 
 ## Replace Vulnerable functions
 
-PHP
+```bash
+grep -r -e 'system(\|exec(' 2>/dev/null
+# Nuke the files
+sed -i 's/exec(/passthru(/g' $file
+sed -i 's/system(/passthru(/g' $file
+```
+
+PHP - see [[Useful_PHP]]
 ```php
 eval() -> get_file_contents
 

@@ -415,6 +415,12 @@ az role definition list --name "Contributor" --output json --query '[].{actions:
 ## Powershell
 
 Always update the Powershell - older versions are very unsafe, if possible remove old powershell. See [[Useful_Powershell]] and [[Basic_Powershell]] repectively. [[Microsoft-Visual-Studios]] requires `Connect-AzAccount`
+
+```powershell
+Add-AzAccount # Login to Azure
+Get-AzLocation | select Location
+```
+
 ```powershell
 $PSVersionTable.PSVersion
 pwsh -ver
@@ -586,7 +592,21 @@ Get-AzRoleDefinition <role_name> | FL Actions, NotActions
 (Get-AzRoleDefinition <role_name>).Actions
 ``` 
 
-
+Azure Storage Tables
+```powershell
+# Create new table
+New-AzStorageTable -Name $tableName –Context $ctx
+# create a object to perform table operations
+$storageTable = Get-AzStorageTable –Name $tableName –Context $ctx
+# Get the manditory CloudTable, will create a table if non-existent
+$cloudTable = $storageTable.CloudTable
+# table entries - entityOne/Two are fields 
+Add-AzTableRow -table $cloudTable -partitionKey $partitionKey -rowKey ("CA") -property @{"entityOne"="data";"entityTwo"=1}
+# Query the table; for specifics use: -columnName "" -value "" -operator $op
+Get-AzTableRow -table $cloudTable | ft
+# Delete a table
+Remove-AzStorageTable –Name $tableName –Context $ctx
+```
 ## Bash
 
 Disk creation, retrieval and updating in Bash
