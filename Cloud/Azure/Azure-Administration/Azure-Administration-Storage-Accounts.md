@@ -167,133 +167,81 @@ The greater the level of redundancy the greater the expense:
 		- These the same in every aspect as the above expect the Secondary is synchronous 
 
 
-#### Azure Blobs
- 
-Blob storage is an object-store that is optimizaed for storing massive amounts of unstructured data (does not adhere to particular data model or definition). Azure Blob Storage uses a container resource to group a set of blobs. A blob can't exist by itself in Blob Storage. A blob must be stored in a container resource, -which can store an unlimited number of blobs. Azure storage account can contain an unlimited number of containers.
+## Azure Blobs
 
-Storage Account (a unique namespace in Azure for your data) -> Containers (similar to folder in a file system) -> Blobs ( the actual data being stored).
+[[Azure-Administration-Blobs]]
 
-Types:
-- Block Blobs
-	- Store text and binary data
-	- Individual managed 
-	- up 4.75 TiB of Data
-- Append Blobs
-	- Optimized for append operations - Good for Logging Data
-- Page Blobs
-	- Stores random access files up to 8 TB
-	- Store Virtual Hard Drive files and serve as disks for Azure VMs
+## Azure Files
 
-![1000](azureblobuploadtools.png)
+[[Azure-Administration-Files]]
 
-Moving Blobs:
-Method | Description
---- | ---
-AzCopy | CLI for Linux and Windows - uses ASDML
-Azure Storage Data Movement Library | .NET Library  
-Azure Data Factory | ETL service 
-Blobfuse | Virtual file system driver - access through Linux file system
-Azure Data Box | Rugged device to physically transport data to Azure
-Azure Import/Export service | Service to ship physical disks for data transfer no Azure
+## Azure Storage Tooling
 
-Create Container for Blob Storage
-`Azure Storage accounts -> + Container -> Name and Change "Public Access Level"`:
-**Public access level**: The access level specifies whether the container and its blobs can be accessed publicly. By default, container data is private and visible only to the account owner. There are three access level choices:
-    -   **Private**: (Default) Prohibit anonymous access to the container and blobs.
-    -   **Blob**: Allow anonymous public read access for the blobs only.
-    -   **Container**: Allow anonymous public read and list access to the entire container, including the blobs.
+#### Azure Storage Explorer
 
-See Tiering for Hot, Cold, Archive and Premium Storage
+Standalone app to work with Azure Storage data on Windows, Linux and macOS - create Blob containers, uplaod files, create snopshops of Disk. Requires both: management (Azure Resource Manager) and data layer permissions to allow full access to your resources.
 
-Use Azure Blob Storage lifecycle management policy rules to:
-`Storage Account -> $storage_account -> Lifecycle Management`
-- Rule-based run scheduling
-- Rule-based condition to containers or a subset of blobs
-- Delete blobs 
-- Transition Storage tier 
+Attach to external Storage Account with: `Account Name` and `Account Key`
 
-Object replication copies blobs in a container asynchronously according to policy rules that you configure. During the replication process, the following contents are copied from the source container to the destination container:
--   The blob contents
--   The blob metadata and properties
--   Any versions of data associated with the blob
-Requires:
-- Versioning enabled
-- Does not support snapshots
-- Replication Policy
-Considerations:
-- Latency reductions
-- Efficiency for compute workloads
-- Data distribution
-- Costs benefit
+#### Azure Import/Export Service
 
-Create a storage account:
-`Storage Accounts`
-Create Container for blobs
-`Storage Accounts -> $storage_account -> Containers
-Upload Blob
-`Storage Accounts -> $storage_account -> Containers -> $container -> Upload`
-Move Data to, from, or within Azure Storage
-`Storage Accounts -> $storage_account -> Diagnose and solve problems`
-Monitor Storage Accounts
-`Storage Accounts -> $storage_account -> Insights`
+The Azure Import/Export service is used to securely import large amounts of data to Azure Blob Storage and Azure Files by shipping disk drives to an Azure datacenter. This service can also be used to transfer data from Azure Blob Storage to disk drives and ship to your on-premises sites. Steps regardless
+1. Identity data
+2. Calculate transportation disk requirement
+3. `Azure Export Jobs` or install and run `WAImportExport` top copy data to disk
+4. Physical transportation
 
-#### Azure Files
+Shipping with physical disk drives large amounts of data to a Azure Blob and Azure Files to a Azure datacenter with CLI tool for preparation - `WAImportExport` - Window 64 bit only; Import Jobs:
+- Prepares disks
+- Copies data to drive
+- Encrypts with AES 246 bitlocker
+- Generate journal fies during import
+	- Journal File store basic imformation - drive serial number, encryption key, storage account
+- Identifies number of drives required
 
-File share in cloud, a centralized server for storage allowing for multiple connections (mounting) with either SMB or NFS. Azure Files uses:
-- Replacement or supplement for Network Attach Storage NAS
-- Lift-and-Shift - Classic or Hybird Lifes
-- Simplify cloud development
-	- Shared application settings
-	- Diagnostic share - logs to file share
-	- Dev/Test/Debug - Quick sharing of tooling
-- Containerization - to persist stateful containers
-- Diagnostic logs, metrics, and crash dumps can be written to a file share and processed or analyzed later.
-- Configuration files can be stored on a file share and accessed from multiple virtual machines.
+Version 1 is import/export data to Blob storage - Version 2 is for import data  Azure File 
 
-Azure files instead of File Shares server
-- Share Access - Already setup to work with standard networking protocols SMB and NFS
-- Fully managed patched by Azure
-- Scalable
-- Scripting and Tooling - Automation
-- Resiliency 
+For export jobs
+- export only from Azure Blob
+- up to 10 empty drives per job
+- shipped to location
 
-Azure Files Features:
-- Backups - shared snapshots
-	- Incremental
-	- Read-only
-	- 200 snapshots per file share
-	- 10 year retention
-	- Stored in file share
-- Soft Delete
-- Advanced Threat Protection
-	- Very powerful software
-- Store Tiers
-	- Premium - SSD storage
-	- Transaction optimized - HDD with transaction heavy workloads - historically called standard
-	- Hot - optimized for general purpose file sharing 
-	- Cool - stored in HDD for cost effienct storage- optimized for archiving scenarios
+`WAImportExport` considerations:
+- Bitlocker encryptions, SupportedDisk and the OS version
 
 
-Types of Storage
-- General Purpose version 2 - deployed on HDD
-- FileStorage - SSD deplyment
+#### AzCopy 
 
-Identity
-- On-Premise Azure Storage can  be joined to AD DS
-- Managed - Azure Storage can  be joined to AD DS - Microsoft manages
-- Store Account Key - Username and password 
+AZcopy is installed by default on the CloudShell
+```powershell
+azcopy copy [source] [destination] [flags]
+azcopy copy $localpath $remotepath # upload
+azcopy copy $remotepath $localpath # download
+azcopy login # create URI to login
+# Supports wildcard include and exclude
+azcopy copy [source] [destination] --include
+azcopy copy [source] [destination] --exclude 
+```
 
-Networking 
-- Azure Files are accessible from anywhere via storage account public endpoint
-- SMB - 445 
+[AZCopy]((https://learn.microsoft.com/en-us/azure/storage/common/storage-ref-azcopy) - CLI - downloadable executable copy blobs or files to or from a storage accounts
 
- Encryption
- - Encrypted-at-rest using Azure Storage Service Encryptions
- - Encrypted-in-transit with SMB 3.0+ or HTTPS
+Avaliable:
+[GitHub - Azure/azure-storage-azcopy: The new Azure Storage data transfer utility - AzCopy v10](https://github.com/Azure/azure-storage-azcopy)
+[Copy or move data to Azure Storage by using AzCopy v10 | Microsoft Learn](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10#download-azcopy)
 
-Azure File Sync
+- Requires Permissions!:
+	- Storage Blob Data Reader - download
+	- Storage Blob Data contributor - upload
+	- Storage Blob Data Owner - upload
+- Access via Azure AD or Shared Access Signature (SAS)
 
-Allows cacheing of Azure File Share on an on-premise or cloud VM, no limit to amount of cacheing with SMB, NFS and FTPS.
+Azure Copy Features
+-   Every AzCopy instance creates a job order and a related log file.
+-   AzCopy supports Azure Data Lake Storage Gen2 APIs.
+-   AzCopy is built into Azure Storage Explorer.  
+-   AzCopy is available on Windows, Linux, and macOS.
+-   Authenicate with SAS or Azure-AD
+
 
 
 ## Azure Storage Tables
@@ -392,21 +340,12 @@ https://myaccount.blob.core.windows.net/$containerName/file.txt
 - Disabled
 
 
-
 ## Workflows
 
 Create in Azure Software Development Kit SDK or Portal `Storage Account -> Share Access signature`.
 
 Setup File Sync `Azure File Sync -> Create` - 
 
-#### AzCopy 
-
-AZcopy is installed by default on the CloudShell
-```powershell
-azcopy copy $localpath $remotepath # upload
-azcopy copy $remotepath $localpath # download
-azcopy login # create URI to login
-```
 
 URL for Azure remote container: `Home -> Storage Accounts -> $ContainerName -> Properties`
 
@@ -430,45 +369,6 @@ Create a SAS for container `Home -> Storage Accounts -> $ContainerName -> Shared
 Azure Storage doesn't currently provide native support for HTTPS with custom domains. You can implement an Azure Content Delivery Network (CDN) to access blobs by using custom domains over HTTPS. By either configuring:
 - Direct mapping - create a `CNAME` record
 - Intermediary domain mapping (when domain is already in use) - prepend `asverify` to subdomain it permit Azure to recognize your custom domain thereby using a intermediary domain to validate the domain.
-
-#### Azure Storage Explorer
-
-Standalone app to work with Azure Storage data on Windows, Linux and macOS - create Blob containers, uplaod files, create snopshops of Disk
-
-[AZCopy]((https://learn.microsoft.com/en-us/azure/storage/common/storage-ref-azcopy) - CLI - downloadable executable copy blobs or files to or from a storage accounts
-
-Avaliable:
-[GitHub - Azure/azure-storage-azcopy: The new Azure Storage data transfer utility - AzCopy v10](https://github.com/Azure/azure-storage-azcopy)
-[Copy or move data to Azure Storage by using AzCopy v10 | Microsoft Learn](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10#download-azcopy)
-
-- Requires Permissions!:
-	- Storage Blob Data Reader - download
-	- Storage Blob Data contributor - upload
-	- Storage Blob Data Owner - upload
-- Access via Azure AD or Shared Access Signature (SAS)
-
-```powershell
-azcopy copy $localpath $remotepath # upload
-azcopy copy $remotepath $localpath # download
-```
-
-#### Azure Import and Export Services
-
-Shipping with physical disk drives large amounts of data to a Azure Blob and Azure Files to a Azure datacenter. CLI tool for preparation `WAImportExport` - Window 64 bit only; Import Jobs:
-- Prepares disks
-- Copies data to drive
-- Encrypts with AES 246 bitlocker
-- Generate journal fies during import
-	- Journal File store basic imformation - drive serial number, encryption key, storage account
-- Identifies number of drives required
-
-Version 1 is import/export data to Blob storage - Version 2 is for import data  Azure File 
-
-For export jobs
-- export only from Azure Blob
-- up to 10 empty drives per job
-- shipped to location
-
 
 ## References
 

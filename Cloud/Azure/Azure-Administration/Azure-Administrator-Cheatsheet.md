@@ -74,9 +74,29 @@ Create Storage Account `Search -> Storage Accounts`, provide name, location, red
 Configure Azure Storage Encryption:
 `Storage accounts -> $storage_accounts -> Encryption`
 
-Create File Share in a Storage Account `$StorageAccount` 
+Create a Azure Files Share
+`Storage Account -> $storage_account -> File Shares`
+- open port 445 - check firewall
+- enable - `Secure tranfer required`
 
-Setup File Sync `Azure File Sync -> Create` - 
+File mounting can be done on-demand with the `mount` command or on-boot (persistent) by creating an entry in /etc/fstab.
+
+
+Setup File Sync `Azure File Sync -> Create` - Marketplace - not default, but covered in AZ 104
+
+Create file share snapshots
+`Storage Account -> $storage_account -> File Shares -> $file_share -> Snapshots
+
+Azure File Sync agent:
+```powershell
+Microsoft.StorageSync
+```
+
+Deploying a Azure File Sync:
+1. Deploy Storage Sync Services
+2. Prepare Windwos Server(s)
+3. Install Azure File Sync agent
+4. Register Windows Server(s)
 
 Create Container for Blob Storage
 `Azure Storage accounts -> + Container -> Name and Change "Public Access Level"`
@@ -90,9 +110,13 @@ Use Azure Blob Storage lifecycle management policy rules to:
 
 AZcopy is installed by default on the CloudShell
 ```powershell
+azcopy copy [source] [destination] [flags]
 azcopy copy $localpath $remotepath # upload
 azcopy copy $remotepath $localpath # download
 azcopy login # create URI to login
+# Supports wildcard include and exclude
+azcopy copy [source] [destination] --include
+azcopy copy [source] [destination] --exclude 
 ```
 
 URL for Azure remote container: `Home -> Storage Accounts -> $ContainerName -> Properties` - must be globally unique
@@ -138,8 +162,6 @@ Configure Custom Domains - Either:
 - Enabled from all networks
 - Enabled from selected virtual networks and IP address
 - Disabled
-
-
 
 ## Management Groups - Azure Policies
 
