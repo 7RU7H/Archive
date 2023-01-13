@@ -1,6 +1,7 @@
 # Azure Administration - Storage Accounts
 
-Azure Storage is Microsoft's cloud storage solution for modern data storage scenarios. Azure Storage offers a massively scalable object store for data objects. It provides a file system service for the cloud, a messaging store for reliable messaging, and a NoSQL store. Azure Storage data catergories:
+Azure Storage is Microsoft's cloud storage solution for modern data storage scenarios. Azure Storage offers a massively scalable object store for data objects. It provides a file system service for the cloud, a messaging store for reliable messaging, and a NoSQL store. 
+Azure Storage data catergories:
 - Structure Data
 - Unstructure data
 - VM data
@@ -19,6 +20,11 @@ Considerations:
 - Storage for messages should use Queue Storage
 - Table Storage for structure data
 - Azure Files for configs and logs for later use.
+- The number of storage accounts you need is typically determined by:
+	- data diversity
+	- cost sensitivity  
+	- tolerance for management overhead.
+- Access from Azure AD is best with SPN to handle the authenication.
 
 
 The storage account name is used as part of the URI for API access, so it must be globally unique. Azure Storage Accounts offer several types of storage accounts:
@@ -331,6 +337,104 @@ https://myaccount.blob.core.windows.net/$containerName/file.txt
 &sig # SHA256 hash - the signature
 ```
 
+Create SAS In  .NET
+
+Create a blob container to connect to the storage account on Azure
+```C#
+BlobContainerClient container = new BlobContainerClient( "ConnectionString", "Container" );
+```
+
+Retrieve the blob you want to create a SAS token for and create a BlobClient
+```C#
+foreach (BlobItem blobItem in container.GetBlobs())
+{
+    BlobClient blob = container.GetBlobClient(blobItem.Name);
+}
+```
+
+Create a BlobSasBuilder object for the blob you use to generate the SAS token
+```C#
+BlobSasBuilder sas = new BlobSasBuilder
+{
+    BlobContainerName = blob.BlobContainerName,
+    BlobName = blob.Name,
+    Resource = "b",
+    ExpiresOn = DateTimeOffset.UtcNow.AddMinutes(1)
+};
+
+// Allow read access
+sas.SetPermissions(BlobSasPermissions.Read);
+```
+
+Authenticate a call to the ToSasQueryParameters method of the BlobSasBuilder object
+```C#
+StorageSharedKeyCredential storageSharedKeyCredential = new StorageSharedKeyCredential( "AccountName", "AccountKey");
+
+sasToken = sas.ToSasQueryParameters(storageSharedKeyCredential).ToString();
+```
+
+Create a SAS for a Blob
+```C#
+// Build a SAS token for the given blob
+private string GetBlobSas(BlobClient blob)
+{
+    // Create a user SAS that only allows reading for a minute
+    BlobSasBuilder sas = new BlobSasBuilder 
+    {
+        BlobContainerName = blob.BlobContainerName,
+        BlobName = blob.Name,
+        Resource = "b",
+        ExpiresOn = DateTimeOffset.UtcNow.AddMinutes(1)
+    };
+    // Allow read access
+    sas.SetPermissions(BlobSasPermissions.Read);
+
+    // Use the shared key to access the blob
+    var storageSharedKeyCredential = new StorageSharedKeyCredential(
+        _iconfiguration.GetValue<string>("StorageAccount:AccountName"),
+        _iconfiguration.GetValue<string>("StorageAccount:AccountKey")
+    );
+
+    return '?' + sas.ToSasQueryParameters(storageSharedKeyCredential).ToString();
+}
+```
+
+#### Stored Access Policies
+
+Stored access policy can be created for:
+-   Blob containers
+-   File shares
+-   Queues
+-   Tables
+
+Create a Stored Access Policy for a Container
+`Storage Accounts -> $storage_account -> Container -> Access Policy`
+
+Create a Stored Access Policy for a Container
+```powershell
+# perm can be : <(a)dd, (c)reate, (d)elete, (l)ist, (r)ead, or (w)rite>
+az storage container policy create -name $polcyName --container-name $container --start $startTime-UTC --expiry $expiryTime-UTC --permissions $perm --account-key $storageAccountKey --account $storageName
+```
+
+With C\#
+```C#
+// Use a stored access policy for the SAS
+private void CreateStoredAccessPolicy()
+{
+    // Create a stored access policy for our blobs
+    BlobSignedIdentifier identifier = new BlobSignedIdentifier
+    {
+        Id = _storedPolicyID,
+        AccessPolicy = new BlobAccessPolicy
+        {
+            ExpiresOn = DateTimeOffset.UtcNow.AddHours(1),
+            Permissions = "r"
+        }
+    };
+
+    _container.SetAccessPolicy(permissions: new BlobSignedIdentifier[] { identifier });
+}
+```
 
 #### Secure Storage Endpoints
 
@@ -369,6 +473,29 @@ Create a SAS for container `Home -> Storage Accounts -> $ContainerName -> Shared
 Azure Storage doesn't currently provide native support for HTTPS with custom domains. You can implement an Azure Content Delivery Network (CDN) to access blobs by using custom domains over HTTPS. By either configuring:
 - Direct mapping - create a `CNAME` record
 - Intermediary domain mapping (when domain is already in use) - prepend `asverify` to subdomain it permit Azure to recognize your custom domain thereby using a intermediary domain to validate the domain.
+
+Create Storage Account
+```powershell
+az storage account create --name $storageName --access-tier hot --kind StorageV2 --resource-group $resourceGroup
+```
+
+Obtain connection string to storage account
+```powershell
+az storage account show-connection-string --name $storageName
+# Copy the AccountKey=$base64string ; remember to include the ==
+```
+
+Create a container
+```powershell
+az storage container create --name $containerName --account-name $storageName 
+--public-access off
+```
+
+Upload to a blob
+```powershell
+az storage blob upload-batch --source sas --destination $containerName --acount-name $storageName --pattern *.ext # wildcard extensions!
+```
+
 
 ## References
 

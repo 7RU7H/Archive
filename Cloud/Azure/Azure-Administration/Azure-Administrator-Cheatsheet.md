@@ -108,6 +108,9 @@ Use Azure Blob Storage lifecycle management policy rules to:
 - Delete blobs 
 - Transition Storage tier 
 
+Create a Stored Access Policy for a Container
+`Storage Accounts -> $storage_account -> Container -> Access Policy`
+
 AZcopy is installed by default on the CloudShell
 ```powershell
 azcopy copy [source] [destination] [flags]
@@ -432,6 +435,34 @@ az role definition list --name "Contributor" --output json --query '[].{actions:
 
 ```
 [List Azure role definitions - Azure RBAC | Microsoft Learn](https://learn.microsoft.com/en-us/azure/role-based-access-control/role-definitions-list)
+
+Create Storage Account
+```powershell
+az storage account create --name $storageName --access-tier hot --kind StorageV2 --resource-group $resourceGroup
+```
+
+Obtain connection string to storage account
+```powershell
+az storage account show-connection-string --name $storageName
+# Copy the AccountKey=$base64string ; remember to include the ==
+```
+
+Create a container
+```powershell
+az storage container create --name $containerName --account-name $storageName 
+--public-access off
+```
+
+Upload to a blob
+```powershell
+az storage blob upload-batch --source sas --destination $containerName --acount-name $storageName --pattern *.ext # wildcard extensions!
+```
+
+Create a Stored Access Policy for a Container
+```powershell
+# perm can be : <(a)dd, (c)reate, (d)elete, (l)ist, (r)ead, or (w)rite>
+az storage container policy create -name $polcyName --container-name $container --start $startTime-UTC --expiry $expiryTime-UTC --permissions $perm --account-key $storageAccountKey --account $storageName
+```
 
 
 ## Powershell
