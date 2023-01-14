@@ -1,6 +1,6 @@
 # Naabu Cheatsheet
 
-[naabu](https://github.com/projectdiscovery/naabu) is a fast port scanner written in go with a focus on reliability and simplicity. Designed to be used in combination with other tools for attack surface discovery in bug bounties and pentests
+[naabu](https://github.com/projectdiscovery/naabu) is a fast port scanner written in go with a focus on reliability and simplicity. Designed to be used in combination with other tools for attack surface discovery in bug bounties and pentests.
 
 -   Fast And Simple **SYN/CONNECT** probe based scanning
 -   Optimized for ease of use and **lightweight** on resources
@@ -34,9 +34,9 @@ nmapRate=# None
 # naabu -i and nmap -e to specify interface
 # Reduce idiocy - ie no vpn up, no scan
 interface=tun0
-# the -v flag for naabu verbosity
-# -stats for time, PPS, packets percentage 
-sudo naabu -host 10.10.10.10 -p 0-65535 -i $interface -c $workers -rate $naabuRate -nc -o naabu/10-10-10-10-allports -stats -v -nmap-cli 'nmap -sV -sC --min-rate $nmapRate -e $interface -oN nmap/from-naabu-some-ports-sc-sv'
+# add -v flag for naabu verbosity - does not do anything in 2.0.5
+# add -stats for time, PPS, packets percentage 
+sudo naabu -host 10.10.10.10 -p 0-65535 -i $interface -c $workers -rate $naabuRate -nc -o naabu/10-10-10-10-allports -nmap-cli 'nmap -sV -sC --min-rate $nmapRate -e $interface -oN nmap/from-naabu-some-ports-sc-sv'
 ```
 
 

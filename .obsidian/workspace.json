@@ -8,36 +8,24 @@
         "type": "tabs",
         "children": [
           {
-            "id": "6b6644568aeaf462",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Storage-Accounts.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "fe1a09d0a8985f41",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administrator-Cheatsheet.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "caf3d4cf5eae2678",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "Tools/Port-scanning/Naabu-Cheatsheet.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8489771a91787546",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Exploitation/CVEs/CVE-2022-26134.md",
                 "mode": "source",
                 "source": false
               }
@@ -114,7 +102,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administrator-Cheatsheet.md",
+                "file": "Exploitation/CVEs/CVE-2022-26134.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,12 +130,12 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "fe1a09d0a8985f41",
+  "active": "8489771a91787546",
   "lastOpenFiles": [
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Storage-Accounts.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administrator-Cheatsheet.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Blobs.md",
     "Tools/Port-scanning/Naabu-Cheatsheet.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administrator-Cheatsheet.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Storage-Accounts.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Blobs.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Files.md",
     "Persistence/Linux-Persistence.md",
     "Services/Databases/Dynamodb/Amazon-Dynamodb.md",
