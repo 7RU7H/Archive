@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/Port-scanning/Naabu-Cheatsheet.md",
+                "file": "Brain-Hacking/Question-Based-Hacking-Methodology.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exploitation/CVEs/CVE-2022-26134.md",
+                "file": "Tools/Packet-Analysis/Wireshark/Wireshark-Useful-Packet-Filters.md",
                 "mode": "source",
                 "source": false
               }
@@ -73,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "Splunk",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -102,7 +102,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exploitation/CVEs/CVE-2022-26134.md",
+                "file": "Tools/Packet-Analysis/Wireshark/Wireshark-Useful-Packet-Filters.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,15 +132,15 @@
   },
   "active": "8489771a91787546",
   "lastOpenFiles": [
+    "Brain-Hacking/Question-Based-Hacking-Methodology.md",
     "Tools/Port-scanning/Naabu-Cheatsheet.md",
+    "Tools/Packet-Analysis/Wireshark/Wireshark-Useful-Packet-Filters.md",
+    "Tools/Packet-Analysis/Wireshark/Wireshark.md",
+    "Tools/SIEMs/Splunk.md",
+    "Tools/Splunk.md",
+    "Exploitation/CVEs/CVE-2022-26134.md",
     "Cloud/Azure/Azure-Administration/Azure-Administrator-Cheatsheet.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Storage-Accounts.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Blobs.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Files.md",
-    "Persistence/Linux-Persistence.md",
-    "Services/Databases/Dynamodb/Amazon-Dynamodb.md",
-    "Cloud/Cloud-Hacking/AWS-Hacking.md",
-    "Security-Enterprises/Incident-Response.md",
-    "Security-Enterprises/Security-Operations-Center.md"
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Blobs.md"
   ]
 }

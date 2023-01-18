@@ -42,14 +42,24 @@ and | && | Logical AND
 or | \|| | Logical OR
 not | ! | logical NOT
 
+#### Filtering
 
-## Filters
-
-Filter using "x contains keyword"
+Filter using "FILTER VERB keyword"
 ```c
+$filter contains "IIS"
+$filter matches "\.(php|html)" // keywords ".php" or ".html"
+$filter in {80 443 8080} //in fields that have values 80, 443, 8080
+$filter upper(http.server) contains "APACHE" // upper case conversion 
+$filter lower(http.server) contains "apache" // lower case conversion 
+$filter string(frame.number) matches "[12345]$" // Convert all framenumber fields to string value and list frames thtat end with 12345 
 tcp contains google
 frame contains “(attachment|tar|exe|zip|pdf)” // File type
+
 ```
+
+Save filters with `Bookmarks`, enter a filter, left click the blue flag icon and `Save this filter`; to use click the plus symbol on the far right handside of the window, next to the Arrow at the end of the `Apply a display filter input bar ... <Ctrl-/>.
+
+Profiles `Edit -> Configuration Profiles... [Ctrl+Shift+A]`
 
 Filter by a timeframe:
 ```c
@@ -152,7 +162,7 @@ tcp.flags.ack == 1
 tcp.flags == 18
 (tcp.flags.syn == 1) and (tcp.flags.ack == 1)
 // RST flags only
-tcp.flags == 4 
+tcp.flags ==SYNTAX 4 
 tcp.flags.reset == 1
 // RST, ACK flags set
 tcp.flags == 20
@@ -175,7 +185,7 @@ icmp.type == 3 and icmp.code == 3
 
 #### Detecting ARP Poisoning/Spoofing
 
-[[ARP-Protocol]] is the technology responsible for allowing devices to identify themselves on a network, where ARP Poisoning/Spoofing or MITM attack involve network jamming/maniuplation by sending malicious ARP packet to a default gatewat to manipulated the IP to MAC address table to sniff the traffic of a target host. Initial detection starts with identifyig duplicates MAC address uses where one IP address pretends to be the gateway address
+[[ARP-Protocol]] is the technology responsible for allowing devices to identify themselves on a network. ARP Poisoning/Spoofing or MITM attack involves network jamming/maniuplation by sending malicious ARP packets to a default gateway to manipulated the IP to MAC address table to sniff the traffic of a target host. Initial detection starts with identifing duplicate MAC address usage where one IP address pretends to be the gateway address
 
 ```c
 arp // Global search
@@ -190,32 +200,39 @@ arp.duplicate-address-detected or arp.duplicate-address-frame // Hunt ARP poison
 
 ```c
 dhcp // same bootp
-bottp // same as dhcp
-dhcp.option.dhcp == 3 // Reequest
-dhcp.option.dhcp == 5 // ACK
-dhcp.option.dhcp == 6 // NAK
+bootp // same as dhcp
+dhcp.option.dhcp == 3 // Request - hostname information
+dhcp.option.dhcp == 5 // ACK - accepted requests
+dhcp.option.dhcp == 6 // NAK - denied requests
+dhcp.option.dhcp == 12 // DHCP request hostname
+dhcp.option.dhcp == 50 // Requested IP address
+dhcp.option.dhcp == 51 // Requested IP lease time
+dhcp.option.dhcp == 61 // DHCP request Client MAC address
+
 
 dhcp.option.hostname contains "keyword" // DHCP Requestion
 dhcp.option.domain_name contain "keyword"
 ```
 
-
-#### Advanced Filtering
+#### NetBIOS (NBNS)
 
 ```c
-$filter contains "IIS"
-$filter matches "\.(php|html)" // keywords ".php" or ".html"
-$filter in {80 443 8080} //in fields that have values 80, 443, 8080
-$filter upper(http.server) contains "APACHE" // upper case conversion 
-$filter lower(http.server) contains "apache" // lower case conversion 
-$filter string(frame.number) matches "[12345]$" // Convert all framenumber fields to string value and list frames thtat end with 12345 
+nbns // Global search
+nbns.name contains "keyword" // Check info field!
 ```
 
-Save filters with `Bookmarks`, enter a filter, left click the blue flag icon and `Save this filter`; to use click the plus symbol on the far right handside of the window, next to the Arrow at the end of the `Apply a display filter input bar ... <Ctrl-/>.
+#### Kerberos
 
-Profiles `Edit -> Configuration Profiles... [Ctrl+Shift+A]`
-
-
+```c
+// Some hostnames contain $ in AD
+kerberos // global search
+kerberos.CNameString contains "keyword"
+kerberos.CNameString and !(kerberos.CNameString contains "$") 
+kerberos.pvno == 5 //version number
+kerberos.realm contains ".org" // Domain tll for generate ticket
+kerberos.SNameString == "krbtg" // Service and domain name for generate ticket 
+kerberos.addresses // Client IP address and NetBIOSker
+``` 
 
 
 ## References

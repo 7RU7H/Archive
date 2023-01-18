@@ -82,7 +82,7 @@ Information - the user Alice has X SID that then indicates Administrative Group
 		- Webserver generic issues by type
 			-  [[Apache-Tomcat]]
 		- Vulnerable versioning? 
-
+	- Have you caused and dorked the error messages? 
 	- What request methods?
 		 - Can you bypass with additional Headers?
 	- Endpoints?
@@ -101,6 +101,8 @@ Information - the user Alice has X SID that then indicates Administrative Group
 		- `ffuf -request search.req -request-proto http -w special-chars.txt -mc all` - which characters cause what issue that indicate what about the context? 
 	- Error text 
 		- What does the error mean? Just google it! 
+	- Have you performed scanning or manual enumeration authenicated?
+
 
 Application:
 
