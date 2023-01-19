@@ -14,3 +14,5 @@ To figure out which other machines can be inside network:
 1. Compare the one-bits - The one-bits tell us that every corresponding bit of any two IP addresses inside the network must match.
 
 4.3 billion possible values, [[Network-Address-Translations]] (NAT) solves this small number
+
+

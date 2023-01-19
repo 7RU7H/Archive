@@ -223,6 +223,7 @@ nbns.name contains "keyword" // Check info field!
 
 #### Kerberos
 
+A overview of some the attacks against kerberos are found in [[Attacking-Kerberos]]
 ```c
 // Some hostnames contain $ in AD
 kerberos // global search
@@ -234,6 +235,24 @@ kerberos.SNameString == "krbtg" // Service and domain name for generate ticket
 kerberos.addresses // Client IP address and NetBIOSker
 ``` 
 
+#### DNS
+
+Detect DNS Tunnelling occus post exploitation phase of attack chain the indications of [[Data-Exfiltration-Over-DNS]]:
+- subdomain names that are actually the data being exfiltrated
+
+#### ICMP
+
+Internet Control Message Protocol (ICMP) is designed for diagnosing and reporting network communication issues. It uses raw sockets not ports. Detecting ICMP Tunnelling (Using ICMP to tunnel another protocol data) occus post exploitation phase of attack chain. Indicatations of  [[Data-Exfiltration-Over-ICMP]]:
+- Large packet size 
+- Large volume of ICMP traffic
+```c
+icmp
+data.len > 64 and icmp
+```
+
+Migitate
+- Block custom ICMP packet creation and usage over a specific size at host level
+- Block large, outbound ICMP traffic network level with Firewall rules.  
 
 ## References
 

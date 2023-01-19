@@ -15,7 +15,7 @@ This is a hub page for linking all of a specific directory structure.
 [[DNS-Recon-Active]]
 [[Fierce-Cheatsheet]]
 [[LDAP-Recon]]
-[[Tools/Masscan/Masscan-Cheatsheet]]
+[[Masscan-Cheatsheet]]
 [[NFS-Recon]]
 [[Nmap-AllTheScripts]]
 [[Nmap-Cheatsheet]]

@@ -23,6 +23,8 @@ What permissions do you have
 How can use current level of access to get more access
 
 
+
+
 Where can input be provided 
 What can be requested
 
@@ -32,6 +34,9 @@ What does the output suggest?
 What is regular userland purpose
 What is does it run
 What is network level purpose of connections
+
+
+## Terminology
 
 Brief disclosure on terminology, if there is a better way I will replace it
 
@@ -119,6 +124,8 @@ Condense:
 [[Web-Hacking-Checklist]]
 
 - Prior to breaching
+	- RTFM and any reminders; reread the code?
+		- Checked the shebang on the python exploit? - Trolly python2 developers 
 	- Are there presuppositions that can be made before footholding a machine?
 		- Security - Network and Host - Traffic-typoplogy and AMSI or Shell jails?  
 		- OS?
@@ -129,7 +136,8 @@ Condense:
 - Breaching
 	- Host OS and version?
 		- Are we in a Container?
-		- Are we in a Kubernetes Fleet
+		- Are we in a Kubernetes Fleet?
+			- Host's purpose in relation to the others?
 		- Are we in a VM
 		- Are we on bare metal?
 	- `whoami /all` and variants are common alerts - but what user are we 	  
@@ -191,7 +199,7 @@ Condense:
 		 - Virtualization Software/Hardware?
 			 - Virtual Networking?
 - What does a `ping`'s `TTL` field indicate?
-	- OS?
+	- Host OS?
 	- Network Typology?
 - What Ports are open?
 	- Is there AD?
