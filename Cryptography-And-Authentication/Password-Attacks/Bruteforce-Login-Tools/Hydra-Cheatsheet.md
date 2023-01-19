@@ -2,6 +2,11 @@
 
 Hydra Password Cracking Cheetsheet, the [Original](https://github.com/frizb/Hydra-Cheatsheet), this one is four years old so I made some additions.
 
+Always consider adding the `-e`
+```bash
+-e nsr    try "n" null password, "s" login as pass and/or "r" reversed login
+```
+
 ```bash
 # Command 								Description:
 hydra -P password-file.txt -v $ip snmp 					# Hydra brute force against SNMP

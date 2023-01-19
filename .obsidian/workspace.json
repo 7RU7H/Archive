@@ -20,36 +20,48 @@
             }
           },
           {
-            "id": "fb9fb6481f60b5fd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Networks/Network-Theory/Network-Protocols/Transport-Layer-TCP.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e445d579e7122ec8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "013feaddd8352227",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "Virtualization/Ansible.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d34d387484fccc88",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Reconnaissance/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2581bf4315f65140",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cryptography-And-Authentication/Password-Attacks/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "924f0e11f128325a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
                 "mode": "source",
                 "source": false
               }
@@ -68,7 +80,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -154,17 +166,17 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "e445d579e7122ec8",
+  "active": "924f0e11f128325a",
   "lastOpenFiles": [
-    "Tools/Port-scanning/Naabu-Cheatsheet.md",
+    "Linux/Linux-Commands/Linux-Module-Commands.md",
     "Virtualization/Ansible.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
-    "Networks/Network-Theory/Network-Protocols/Transport-Layer-TCP.md",
-    "Networks/Network-Theory/Network-Protocols/Internet-Protocol.md",
-    "Networks/Network-Theory/Network-Protocols/Transport-Layer-UDP.md",
-    "Brain-Hacking/Hacking-Meta-Hacking-Problems.md",
-    "Brain-Hacking/Personality.md",
-    "Brain-Hacking/Question-Based-Hacking-Methodology.md",
-    "Networks/Network-Security/TCP-Wrappers.md"
+    "Linux/Linux-Commands/Core-Linux-Commands.md",
+    "Linux/Linux-Commands/Grep-All-The-Things.md",
+    "Linux/Linux-Commands/Linux-CLIMagic.md",
+    "Linux/Linux-Commands/Linux-Command-Hub.md",
+    "Linux/Linux-Commands/Linux-Compression-Commands.md",
+    "Linux/Linux-Commands/Linux-Hardware-Commands.md",
+    "Linux/Linux-Commands/Linux-Memory-Commands.md",
+    "Linux/Linux-Commands/Linux-Users-N-Group-Linux-Commands.md"
   ]
 }

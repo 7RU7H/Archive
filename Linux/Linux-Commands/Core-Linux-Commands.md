@@ -126,21 +126,21 @@ use: man find	for specific program documentation
 a = access, m = modified, c = created
 -[]time num //[-] num less than, [+] num in last
 -[]min 
-
-
-
 ```
 
 ## getcap
 ```bash
-getcap 		displays the capabilities on the queried file(s)
+getcap 		# displays the capabilities on the queried file(s)
 getcap -r / 2>/dev/null
 ```
 
-# head
+## head
 ```bash
-head		print the first 10 lines of a file to stdout
+head		# print the first 10 lines of a file to stdout
+```
 
+
+```bash
 iconv 		convert file format
 
 id		user id

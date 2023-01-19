@@ -127,9 +127,9 @@ play -n -c1 synth whitenoise band -n 100 20 band -n 50 20 gain +30 fade h 1 8640
 #### sed
 ```bash
 sed -n [operations] [file] > [file]
-sed ....'1,100p					print matched lines
-sed -e ... -e					multiple section from a filestream 
-sed 's/subthis/forthis/[]'			's = substitute /a/b/[ p = pattern, gp = global]
+sed ....'1,100p'					# print matched lines
+sed -e ... -e					# multiple section from a filestream 
+sed 's/subthis/forthis/[]'			# 's = substitute /a/b/[ p = pattern, gp = global]
 sed 's/\([^:]*\).*/\1/' /etc/passwd		for easy usernames
 sed -f						specify file containing string pattern
 sed -E						use extended regular expression
@@ -154,16 +154,17 @@ sed -i -e 's/[ \t]*//' Input				# remove tabs from a file
 sed -E 's/^([^,]*[,])//'					# remove after comma
 sed -i 's/^\#.*$//g' $FILE && sed -i '/^$/d' $FILE	# remove comments
 sed 's/\x27/\x22\g'	# replace all single x27 and double quotes x22 with hex escape characters 
+sed -r '/^.{,5}$/d' # remove lines of 5 or less in length 
 sed 's@^@// @' # insert a // comment at the start of each line
 ```
-
-
 
 #### seq
 ```bash
 seq $int		# print sequence of "$int\n" 
+```
 
 #### sort
+```bash
 sort -r 	reverse order
 sort -c		check if sorted
 sort -u		to sort and removes duplicate lines
