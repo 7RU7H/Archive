@@ -1,6 +1,7 @@
 # Server Side Template Injection
-*Server-side template injection is a vulnerability where the attacker injects malicious input into a template in order  
-to execute commands on the server.*
+
+
+*Server-side template injection is a vulnerability where the attacker injects malicious input into a template in order  to execute commands on the server.*
 
 Template engines create static template files for reuse in an application used to display dynamically generated content on a web page. They replace variables inside a template file with actual dynamic values for a client. Insecure implementation of a template engine leads to this vulnerablity.
 
@@ -42,7 +43,15 @@ Accept | Error
 --- | ---
 Mako | Unknown
 
-```bash
+## PoC, Attack Chain and Onwards to RCE
+
+SSTI is RCE. 
+
+
+```python
+# Polyglot
+${{<%[%'"}}%\. 
+# Identify the stack
 ${7*7}
 {{7*7}}
 a{*comment*}b
@@ -50,28 +59,23 @@ a{*comment*}b
 ${"z".join("ab")}
 ```
 
-Some other payloads
-```
-${}
-{{}}
-<%= %>
-${7/0}
-{{7/0}}
-<%= 7/0 %>
-${foobar}
-{{foobar}}
-<%= foobar %>
-${7*7}
-{{7*7}}
-#{7*7}
-```
+0. Fuzz bad characters - [[FFUF-Cheatsheet]]
+	- Filters may be in place to sanatize - regexes at the input and the reflected functionality
+1. Enumerate the framework
+	- Get the framework version 
+	- Get all the classes
+	- Some SSTI are exploited by direction function calls other require id numbers of functions avaliable
+	- RTFM not just [PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings//tree/master/Server Side Template Injection)
+3. PoC cmd execution
 
 
-## Payloads
-[PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings//tree/master/Server Side Template Injection)
+More Payloads - [PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings//tree/master/Server Side Template Injection)
+Bypasses 
+
 
 ## References
 [THM room](https://tryhackme.com/room/learnssti)
 [flask/jinja2](https://medium.com/@nyomanpradipta120/ssti-in-flask-jinja2-20b068fdaeee)
 [pequalsnp](https://pequalsnp-team.github.io/cheatsheet/flask-jinja2-ssti)
 [jayaye15](https://jayaye15.medium.com/jinja2-server-side-template-injection-ssti-9e209a6bbdf6)
+[PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings//tree/master/Server Side Template Injection)

@@ -38,7 +38,7 @@ options:
 ```
 
 Commands within Empire
-```
+```python
 Commands
 ========
 agents            Jump to the Agents menu.
@@ -64,7 +64,7 @@ usestager         Use an Empire stager.
 ```
 
 Login to Starkiller, default Credentials
-```
+```powershell
 Uri: 127.0.0.1:1337
 User: empireadmin
 Pass: password123
@@ -74,6 +74,7 @@ Pass: password123
 
 
 ## Listeners
+
 Listener Types | Description
 --- | ---
 http | This is the standard listener that utilizes HTTP to listen on a specific port
@@ -89,8 +90,9 @@ http_malleable | Used alongside the malleable C2 profiles from BC|Security.
 meterpreter | injectable meterpreter payloads
 
 Template use
-```
+```python
 listeners # Display active listeners
+#  Create a listener - provide and type followed by a name
 uselistener # <space> + <tab>*2 for autocomplete a listen type name 
 info # provide options information
 set # set a option to value
@@ -124,7 +126,7 @@ windows/hta | HTA server an HTML application protocol that can be used to evade 
 osx/applescript | Stager in AppleScript: Apple's own programming language.
 osx/teensy | Similar to the rubber ducky is a small form factor micro|controller for physical attacks.
 
-```
+```python
 usestager <stager/path/name>
 info # options for stager
 set Listener <name>
@@ -134,7 +136,7 @@ execute
 
 ## Agents
 Once listener is running and stager has been prepared deploying an Agent that are like shells that can run commands, but have various security related modules builtin for which the output returns to the powershell-empire listeners. 
-```
+```python
 agents # list all agents
 interact <Agent Name> # chose agent interaction
 # Command execute on a remote host
@@ -142,7 +144,7 @@ interact <Agent Name> # chose agent interaction
 ```
 
 A list of Agents commands
-```
+```python
 Agent Commands
 ==============
 agents            Jump to the agents menu.
@@ -184,7 +186,7 @@ workinghours      Get or set an agent's working hours (9:00-17:00).
 ```
 
 Spawing additional agents:
-```
+```python
 ps
 psinject <Listener> <pid> # if meterpreter!
 # Then check agents list
@@ -208,7 +210,7 @@ Collection | Dumping browser data, packet capturing (sniffing), keylogging, scre
 Management | Modules for managing the system and performing various useful tasks
 Exploit | Modules for various known vulnerabilities (ZeroLogon, PrintNightmare, EternalBlue etc.)
 
-```
+```python
 usemodule
 # For example powerview on AD 
 usemodule situational_awareness/network/powerview/get_user
@@ -243,7 +245,6 @@ interact # interat with agent
 ```
 
 
-
 # Plugin
 
 Plugins
@@ -273,6 +274,7 @@ Starting Starkiller
 
 
 ## References
-[THM Empire Room]https://tryhackme.com/room/rppsempire
-[infosec matters]https://www.infosecmatter.com/empire-module-library/
+
+[THM Empire Room](https://tryhackme.com/room/rppsempire)
+[infosec matters](https://www.infosecmatter.com/empire-module-library/)
 

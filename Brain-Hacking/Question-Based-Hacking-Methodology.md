@@ -98,6 +98,7 @@ Information - the user Alice has X SID that then indicates Administrative Group
 		- What input?
 		- Where does the input go?
 		- How is it processed?
+		- Is there evidence of filtering and sanitization of input? 
 	 - API?
 		 - Is it mappable?
 		 - Disclosure API Token?
@@ -106,8 +107,17 @@ Information - the user Alice has X SID that then indicates Administrative Group
 		- `ffuf -request search.req -request-proto http -w special-chars.txt -mc all` - which characters cause what issue that indicate what about the context? 
 	- Error text 
 		- What does the error mean? Just google it! 
-	- Have you performed scanning or manual enumeration authenicated?
+	- How is data reflected back?
+		- Did you fuzz for bad characters?
+		- XXS, SSTI, etc?
 
+
+- Web PrivEsc
+- Have you performed scanning or manual enumeration authenicated?
+- How is authenicated user data reflected on the page?
+	- Framework? 
+	- Database?
+	- Session-related?
 
 Application:
 
@@ -217,6 +227,10 @@ Condense:
 			3. Documents that will openned by unprivileged users?
 	- Are there custom ports or protocols?
 	- Are any services running accessible with Default Credentials?  
+
+- Post More Stealthier Shell
+	- Did you make another persistence mechanism just in case?
+	- Did you clean up the obvious?
 
 - What is Network Typology?
 	1. What is accessible? 
