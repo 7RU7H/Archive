@@ -18,6 +18,7 @@ PASS: neo4j
 [Change Password](https://neo4j.com/docs/operations-manual/current/configuration/password-and-user-recovery/)
 
 ## SharpHound
+
 [Sharphound](https://github.com/BloodHoundAD/BloodHound/tree/master/Collectors) is the collector that gathers all the information about the network and compresses it into a zip file. You can then import this data and view a map of the AD domain. This very import to see weak points like DCsyncs, Usernames, Trusts. Given compatibility best to get the newest version, replace `v1.0.4` if required.
 
 [Flangvik/SharpCollection](https://github.com/Flangvik/SharpCollection) is  a github repo that contains ..*"
@@ -60,8 +61,12 @@ runas /netonly /user:$domain\$user cmd.exe
 
 [Python Ingestor](https://github.com/fox-it/BloodHound.py)
 
-```
+```bash
 python3 bloodhound.py -c all -dc dc01.domain.com -u <users> -p <password> -ns $IP
+```
+
+```bash
+python3 bloodhound.py --dns-tcp -c all -d domain.tld -ns 10.10.10.10 -u $compromisedUser -p 'password'
 ```
 
 Beware importanting data is stored and retain after exiting. Comply with data protection and any data destruction policies, but also if you don't want to get confused by any old data - `Database Info -> Scroll to the bottom of the list -> Clear Database`.

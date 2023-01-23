@@ -169,16 +169,25 @@ sort -r 	reverse order
 sort -c		check if sorted
 sort -u		to sort and removes duplicate lines
 sort -o		output to filename given
-
+```
 
 #### tac			concatenate files and print them in reverse!
+```bash
+
 tac -b	attach a separator before instead of after
 tac -r	interpret te separator as a regex
 tac -s	use STRING as a seaprator instead of Newline
+```
 
 #### strings 	
+```bash
 # Search each file specified and print any printable character strings found that are at least four characters long and followed by an unprintable character. 
 # Often used to find human-readable content within binary files.
+# Different strings encoding may reveal different hardcoded credentials on poor designed applications
+strings -e s # 7-bit byte (used for ASCII, ISO 8859) - Default
+strings -e S # 8-bit byte
+strings -e b # 16-bit bigendian
+strings -e l # 16-bit littleendian
 
 #### tar
 

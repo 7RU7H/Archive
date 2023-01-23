@@ -10,8 +10,15 @@ ltrace		# display system and library
 ## Windows Local Tools
 
 ## Cross Platform CLI Tools
+
+
+#### Strings
+Different strings encoding may reveal different hardcoded credentials on poor designed applications
 ```bash
-strings	 	# display printable strings in file(s)
+strings -e s # 7-bit byte (used for ASCII, ISO 8859) - Default
+strings -e S # 8-bit byte
+strings -e b # 16-bit bigendian
+strings -e l # 16-bit littleendian
 ```
 
 ## EDG

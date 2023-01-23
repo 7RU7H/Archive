@@ -23,6 +23,7 @@ This a hub page group links to all relevant articles under a Azure Administratio
 [[Azure-Adminstration-Azure-Monitor]]
 [[Azure-Administration-Virtual-WAN]]
 [[Azure-Administration-Subscriptions]]
+[[Azure-Administration-Managing-Virtual-Network]]
 
 For the Cheatsheet: [[Azure-Administrator-Cheatsheet]]
 

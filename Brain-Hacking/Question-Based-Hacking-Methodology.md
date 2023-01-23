@@ -167,6 +167,9 @@ Condense:
 			- NTLM Relay Attack?
 	- What do the protocol used and what information from those protocols can be queried to provide a mapping of intended networking and use of AD?
 		- Are they vulnerable protocols?
+			- Checked the authenicated ldap queries output for interesting fields? - [[LDAP-Recon]]
+			- SMB version - [[SMB-Recon-Cheatsheet]]
+			- [[RPC-Recon]]
 		- Is what is shared and expected to be shared by AD or have humans disclosed information in shares?
 			- Do the shares contain: shortcuts to executables, credentials, software, user and domain intel and information?	
 	 - Recursively have with current context and reappraise Bloodhound, your objectives and the potential paths - [[Neo4j-And-Bloodhound-Guide]]? - `-c DCOnly` is quieter!
@@ -178,6 +181,7 @@ Condense:
 			4. Databases?
 			5. Network Shares/File system artifacts?
 			6. sMSA or [[gMSA-abuse]]?
+			7. [[ACL-Abuse]]?
 		3. What services can I access with those credentials?
 			1. Have you mapped the network, with or without SharpHound?
 			1. Is there evidence of network  requiring [[Proxies]] and [[Port-Redirection-And-Tunneling]]  
@@ -214,7 +218,7 @@ Condense:
 - What Ports are open?
 	- Is there AD?
 		- Domain Information?
-		- Legacy Protocols
+		- Legacy Protocols?
 	- Is there DNS? 
 		1. Are there subdomains?
 		2. Can you Zone Tranfer?

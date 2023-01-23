@@ -320,6 +320,33 @@ Customization - Customize Helpdesk link
 On-Premise Integration - As stated
 Administrator Policy - Admin password reset policy.
 
+## Azure Virtual Networking
+
+Create Virtual Networks and Manage
+`Search "Virtual Networks" -> Virtual Networks (-> Create)`
+- Azure Fiewall, Bastion and other require a subnet!
+
+Create Subnets
+`Search "Virtual Networks" -> Virtual Networks -> $VN -> Subnets -> + Subnets/Gateway subnet`
+Remember to: plan IP addresses - they can be `private` or  `public`, `static` or `dynamic` and Azure reserves five IP addresses:
+- 192.168.1.0 - Identifier for the Virtual Network
+- 192.168.1.1 - Azure Default Gateway
+- 192.168.1.2 - Azure DNS address 
+- 192.168.1.3 - Azure DNS address
+- 192.168.1.255 - virtual network broadcast address
+
+Consideration :
+- Service requirements
+- Avaliability requirements - static IPs for DNS and DCs, TLS/SSL certs linked to an IP
+- Network virtual appliances
+- Service Endpoints
+- Network Security Groups
+- Private links
+- VMs do not manage there IPs
+
+Create and manage public IPs
+`Search "Public IP Address -> Pulic IP addresses" ` then with `+ Create` provide the options `IP version, SKU, Tier, Name, Assignment, Routing`
+
 
 ## AzCopy 
 

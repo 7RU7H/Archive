@@ -48,7 +48,49 @@ To create a solution file for .NET Core with VScode:
 - Dependencies, Classes, and Methods are oraginsed in the Solutions Explorer as a file tree
 - To build a solution file, navigate to `Build -> Build Solution` or  `[Ctrl] + [Shift] + [B]`
 
+## Build on Linux
+
+
+For Kali here is an install .NET script on Kali creating a paranoid variable export to profiles and rc files, for the just in case.   
+```bash
+#!/bin/bash
+# Run as non root user.
+# https://learn.microsoft.com/en-us/dotnet/core/install/linux-debian
+wget https://packages.microsoft.com/config/debian/11/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+wait
+sudo dpkg -i packages-microsoft-prod.deb
+wait
+rm packages-microsoft-prod.deb
+sudo apt-get update
+wait
+sudo apt-get install -y dotnet-sdk-6.0
+wait
+sudo apt-get install -y aspnetcore-runtime-6.0
+wait
+sudo apt-get install -y dotnet-runtime-6.0
+wait
+echo "" | sudo tee -a /etc/profile
+echo "# ENV variable for DOTNET Telemetry disabled" | sudo tee -a /etc/profile
+echo "export DOTNET_CLI_TELEMETRY_OPTOUT=1" | sudo tee -a /etc/profile
+echo "" | sudo tee -a /etc/zsh/zprofile
+echo "# ENV variable for DOTNET Telemetry disabled" | sudo tee -a /etc/zsh/zprofile
+echo "export DOTNET_CLI_TELEMETRY_OPTOUT=1" | sudo tee -a /etc/zsh/zprofile
+echo "" | sudo tee -a /root/.zshrc
+echo "# ENV variable for DOTNET Telemetry disabled" | sudo tee -a /root/.zshrc
+echo "export DOTNET_CLI_TELEMETRY_OPTOUT=1" | sudo tee -a /root/.zshrc
+echo "" | sudo tee -a /root/.bashrc
+echo "# ENV variable for DOTNET Telemetry disabled" | sudo tee -a /root/.bashrc
+echo "export DOTNET_CLI_TELEMETRY_OPTOUT=1" | sudo tee -a /root/.bashrc
+echo "" | tee -a ~/.zshrc
+echo "# ENV variable for DOTNET Telemetry disabled" | tee -a ~/.zshrc
+echo "export DOTNET_CLI_TELEMETRY_OPTOUT=1" | tee -a ~/.zshrc
+exit
+```
+
+
 ## References
+
+
 [DLR Overview](https://docs.microsoft.com/en-us/dotnet/framework/reflection-and-codedom/dynamic-language-runtime-overview)
 [C# Documentation](https://docs.microsoft.com/en-us/dotnet/csharp/)
 [THM Holo Room](https://tryhackme.com/room/hololive)

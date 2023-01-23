@@ -4,103 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "d354c56f445738aa",
+        "id": "11cb08a4901a931e",
         "type": "tabs",
         "children": [
           {
-            "id": "caf3d4cf5eae2678",
+            "id": "8ae9ad666e4a0c7b",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Brain-Hacking/Question-Based-Hacking-Methodology.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "013feaddd8352227",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Virtualization/Ansible.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d34d387484fccc88",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Reconnaissance/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7450d626138aca47",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Coding-Scripting-Programming/Languages/Python/Useful_Python.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7c84b02e0fdc65b6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Web-Application-Hacking/Server-Side-Template-Injection-Cheatsheet.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "59a2f8153f5000a2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tools/Content-Discovery-Tools/Feroxbuster.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "924f0e11f128325a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0c64c6b004b94ce3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tools/Port-scanning/Naabu-Cheatsheet.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -132,7 +44,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "Bloodhound.py",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -161,7 +73,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Brain-Hacking/Question-Based-Hacking-Methodology.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -189,17 +100,17 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "caf3d4cf5eae2678",
+  "active": "8ae9ad666e4a0c7b",
   "lastOpenFiles": [
+    "Tools/Port-scanning/Naabu-Cheatsheet.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
     "Tools/Content-Discovery-Tools/Feroxbuster.md",
     "Web-Application-Hacking/Server-Side-Template-Injection-Cheatsheet.md",
-    "Brain-Hacking/Question-Based-Hacking-Methodology.md",
-    "Services/ELK/Hacking-ELK.md",
-    "Linux/Linux-Concepts/Linux-Users-And-Groups.md",
-    "Coding-Scripting-Programming/Languages/Python/Useful_Python.md",
-    "Tools/C2/Empire/Empire.md",
-    "Exploitation/Shell-Spawning.md",
-    "Exploitation/Reverse-Shells-Listing.md",
-    "Wordlists/Wordlists.md"
+    "Linux/Linux-Commands/Linux-Module-Commands.md",
+    "Reconnaissance/Active-Information-Gathering/LDAP/LDAP-Recon.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administrator-Cheatsheet.md",
+    "Tools/Useful-Software/Rubeus-Cheatsheet.md",
+    "Tools/Useful-Software/Neo4j-And-Bloodhound-Guide.md",
+    "Exploitation/Windows/Active-Directory/ACL-Abuse/ACL-Abuse.md"
   ]
 }
