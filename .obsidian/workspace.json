@@ -61,14 +61,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Persistence/Windows-Persistence/DLL-Hijacking.md",
+                "file": "Post-Exploitation/Escaping-Restricted-Environments/Linux-Shell-Escapes.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0288c7c2222124eb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Post-Exploitation/Escaping-Restricted-Environments/Python-Jails.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -97,7 +109,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "reverse strings",
+                "query": "Linux-shell",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -126,7 +138,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Persistence/Windows-Persistence/DLL-Hijacking.md",
+                "file": "Post-Exploitation/Escaping-Restricted-Environments/Python-Jails.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -154,17 +166,17 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "ed8f63df71621be6",
+  "active": "0288c7c2222124eb",
   "lastOpenFiles": [
+    "Post-Exploitation/Escaping-Restricted-Environments/Linux-Shell-Escapes.md",
+    "Persistence/Windows-Persistence/DLL-Hijacking.md",
+    "Reconnaissance/Active-Information-Gathering/SMTP/SMTP-Recon-Cheatsheet.md",
     "Tools/Packet-Analysis/Wireshark/Wireshark.md",
     "Tools/Packet-Analysis/Wireshark/Wireshark-Useful-Packet-Filters.md",
     "Tools/Packet-Analysis/Brim/Brim.md",
-    "Reconnaissance/Active-Information-Gathering/SMTP/SMTP-Recon-Cheatsheet.md",
     "Tools/Forensics/Volatility.md",
     "Tools/Useful-Software/Puzzle-Solution-Tools.md",
     "Coding-Scripting-Programming/Languages/Python/Useful_Python.md",
-    "Linux/Linux-Commands/Linux-Module-Commands.md",
-    "Tools/Useful-Software/Cyberchef.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md"
+    "Linux/Linux-Commands/Linux-Module-Commands.md"
   ]
 }
