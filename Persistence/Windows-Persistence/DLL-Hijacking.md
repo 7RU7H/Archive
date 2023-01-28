@@ -67,6 +67,12 @@ The power of this persistence method comes from placing the dll in difficult to 
 
 Ippsec demonstrates that if we can write in `c:\Windows` we can hijack most of the dll's explorer.exe loads from system32 as the recursive search has not yet had to recurse to the child directory. Explorer is relative unique binary in that there are very few in `c:\Windows` directory Ippsec uses `csapi.dll` and points out that some dlls are not really used this being one of them, but is still loaded by explorer.exe. Similiarly he just downloads the dll to OneDrive executable directory and hijacks it by once again placing it within a position in the path to which it will be loaded first.
 
+## Mitigations
+
+- **Append** additional path variables do not **Prepend** default directorys
+- Check third party software post-installation directory permissions with `icacls.exe`
+	- Commonly third party apps will misconfigure your system that allow for this exploited 
+
 
 ## References
 
