@@ -42,6 +42,13 @@ and | && | Logical AND
 or | \|| | Logical OR
 not | ! | logical NOT
 
+#### Meta-workflows
+
+Find locations of destination file path of a download file from a GET request.
+```c
+Follow HTTP stream -> Find: "C:\"
+```
+
 #### Filtering
 
 Filter using "FILTER VERB keyword"
@@ -59,7 +66,7 @@ frame contains “(attachment|tar|exe|zip|pdf)” // File type
 
 Save filters with `Bookmarks`, enter a filter, left click the blue flag icon and `Save this filter`; to use click the plus symbol on the far right handside of the window, next to the Arrow at the end of the `Apply a display filter input bar ... <Ctrl-/>.
 
-Profiles `Edit -> Configuration Profiles... [Ctrl+Shift+A]`
+Profiles `Edit -> ConfiguraFollow HTTP stream -> Find: "C:\"tion Profiles... [Ctrl+Shift+A]`
 
 Filter by a timeframe:
 ```c
@@ -69,8 +76,8 @@ Filter by a timeframe:
 Filter by IP, src, dst, subnet, exclude ip.x
 ```c
 ip // Show all IP Packets
-// The ip.addr filters the traffic without considering the packet direction. 
-ip.addr == 10.10.10.10 // show all packet containing this address
+// The ip.addr filters the traffic without consiFollow HTTP stream -> Find: "C:\"dering the packet direction. 
+ip.addr == 10.10.10.10 // show all packet coFollow HTTP stream -> Find: "C:\"ntaining this address
 ip.addr == 10.10.10.10/24 // show all packet containing this subnet
 // The ip.src/ip.dst filters the packet depending on the packet direction.
 ip.src == 10.10.10.10 // Show packets originating from this IP

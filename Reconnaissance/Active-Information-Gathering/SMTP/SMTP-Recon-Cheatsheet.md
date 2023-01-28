@@ -16,6 +16,8 @@ EXPN # Ask server for membership
 [CTRL] + $escapekey_show_on_initial_connection 
 telnet> help # Display commands 
 telnet> close
+
+
 ```
 Code 250,251,252 means accepted and user account is valid; code 550 means invalid user.
 

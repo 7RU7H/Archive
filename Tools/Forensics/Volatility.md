@@ -23,8 +23,6 @@ Plugins are the heart of analytical lensing with Volatility.
 Previous Volatility versions would require manual identification of OS profile - OS and its build version. Volatility3 will automatically identify the host and build of the memory file, but you need to specify the operating system prior to specifying the plugin to be used for example:
 `windows.info`, `linux.info` and `mac.info`.
 
-
-
 ## Cheatsheet
 
 [Documentation](https://volatility3.readthedocs.io/en/latest/volatility3.plugins.html) and Initial Assimilations from [Andrea Fortuna](https://github.com/andreafortuna)

@@ -1,12 +1,13 @@
 # Brim
 
-Brim uses Zed, which is a command-line tool to manage and query Zed data lakes.
+Brim is an open-source desktop application that processes pcap files and logs files, with a primary focus on providing search and analytics using the Zeek log processing format. It supports Zeek signatures and [[Suricata]] rules for detection. Brim uses Zed, which is a command-line tool to manage and query Zed data lakes.
+
+
+
 [Full command list can be found here](https://zed.brimdata.io/docs/commands/zed/) and useful ones or oneliner can be found here:
 
-```brim
-
+```c++
 # Get hostname by DHCP
-
 _path "dhcp" | cut client_addr, client_fqdn 
 # Get MAC address
 
@@ -31,6 +32,7 @@ _path=="dns" | count() by query | sort -r # Beware of how it counts
 
 
 # Suricata Alerts
+event_type=="alert" 
 
 # By source and destination
 event_type=="alert" | alerts := union(alert.category) by src_ip, dest_ip
@@ -41,3 +43,4 @@ event_type=="alert" | alerts := union(alert.category) by src_ip, dest_ip
 ## References
 
 [https://kifarunix.com/analyze-network-traffic-using-brim-security/](https://kifarunix.com/analyze-network-traffic-using-brim-security/)
+[THM Brim Room](https://tryhackme.com/room/brim)

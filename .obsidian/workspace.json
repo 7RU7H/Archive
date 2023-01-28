@@ -4,18 +4,71 @@
     "type": "split",
     "children": [
       {
-        "id": "11cb08a4901a931e",
+        "id": "3e7f0cb9234e4441",
         "type": "tabs",
         "children": [
           {
-            "id": "8ae9ad666e4a0c7b",
+            "id": "0c2fee20da42c954",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Reconnaissance/Active-Information-Gathering/SMTP/SMTP-Recon-Cheatsheet.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8b496ac0c2314de8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/Packet-Analysis/Brim/Brim.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d36661de08ba8eaf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/Packet-Analysis/Wireshark/Wireshark-Useful-Packet-Filters.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "de80af7b797b7262",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/Packet-Analysis/Wireshark/Wireshark.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "34ea1847836d8b9d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Persistence/Windows-Persistence/DLL-Hijacking.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -44,7 +97,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Bloodhound.py",
+                "query": "reverse strings",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -73,6 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Persistence/Windows-Persistence/DLL-Hijacking.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,17 +154,17 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "8ae9ad666e4a0c7b",
+  "active": "ed8f63df71621be6",
   "lastOpenFiles": [
-    "Tools/Port-scanning/Naabu-Cheatsheet.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
-    "Tools/Content-Discovery-Tools/Feroxbuster.md",
-    "Web-Application-Hacking/Server-Side-Template-Injection-Cheatsheet.md",
+    "Tools/Packet-Analysis/Wireshark/Wireshark.md",
+    "Tools/Packet-Analysis/Wireshark/Wireshark-Useful-Packet-Filters.md",
+    "Tools/Packet-Analysis/Brim/Brim.md",
+    "Reconnaissance/Active-Information-Gathering/SMTP/SMTP-Recon-Cheatsheet.md",
+    "Tools/Forensics/Volatility.md",
+    "Tools/Useful-Software/Puzzle-Solution-Tools.md",
+    "Coding-Scripting-Programming/Languages/Python/Useful_Python.md",
     "Linux/Linux-Commands/Linux-Module-Commands.md",
-    "Reconnaissance/Active-Information-Gathering/LDAP/LDAP-Recon.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administrator-Cheatsheet.md",
-    "Tools/Useful-Software/Rubeus-Cheatsheet.md",
-    "Tools/Useful-Software/Neo4j-And-Bloodhound-Guide.md",
-    "Exploitation/Windows/Active-Directory/ACL-Abuse/ACL-Abuse.md"
+    "Tools/Useful-Software/Cyberchef.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md"
   ]
 }
