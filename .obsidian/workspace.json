@@ -25,19 +25,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/Packet-Analysis/Brim/Brim.md",
+                "file": "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/File-Transfers.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "d36661de08ba8eaf",
+            "id": "8f84f718adcedb47",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/Packet-Analysis/Wireshark/Wireshark-Useful-Packet-Filters.md",
+                "file": "Brain-Hacking/Reframing-Hard-Cybersecurity-Problems-For-Fun-And-Profit.md",
                 "mode": "source",
                 "source": false
               }
@@ -56,31 +56,19 @@
             }
           },
           {
-            "id": "34ea1847836d8b9d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Post-Exploitation/Escaping-Restricted-Environments/Linux-Shell-Escapes.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "0288c7c2222124eb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Post-Exploitation/Escaping-Restricted-Environments/Python-Jails.md",
+                "file": "Post-Exploitation/Escaping-Restricted-Environments/Python-Sandbox-Bypasses.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -109,7 +97,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Linux-shell",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -138,7 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Post-Exploitation/Escaping-Restricted-Environments/Python-Jails.md",
+                "file": "Brain-Hacking/Reframing-Hard-Cybersecurity-Problems-For-Fun-And-Profit.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -166,17 +154,17 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "0288c7c2222124eb",
+  "active": "8f84f718adcedb47",
   "lastOpenFiles": [
-    "Post-Exploitation/Escaping-Restricted-Environments/Linux-Shell-Escapes.md",
-    "Persistence/Windows-Persistence/DLL-Hijacking.md",
-    "Reconnaissance/Active-Information-Gathering/SMTP/SMTP-Recon-Cheatsheet.md",
-    "Tools/Packet-Analysis/Wireshark/Wireshark.md",
-    "Tools/Packet-Analysis/Wireshark/Wireshark-Useful-Packet-Filters.md",
+    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/File-Transfers.md",
+    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Linux-File-Transfers.md",
+    "Exploitation/Reverse-Shells-Listing.md",
+    "Exploitation/Shell-Spawning.md",
+    "Tools/C2/Empire/Empire.md",
     "Tools/Packet-Analysis/Brim/Brim.md",
-    "Tools/Forensics/Volatility.md",
-    "Tools/Useful-Software/Puzzle-Solution-Tools.md",
-    "Coding-Scripting-Programming/Languages/Python/Useful_Python.md",
-    "Linux/Linux-Commands/Linux-Module-Commands.md"
+    "Virtualization/Packer.md",
+    "Virtualization/Lab-Making/Creating-Vulnerable-VMs.md",
+    "Post-Exploitation/Escaping-Restricted-Environments/Python-Sandbox-Bypasses.md",
+    "Tools/Packet-Analysis/Wireshark/Wireshark-Useful-Packet-Filters.md"
   ]
 }
