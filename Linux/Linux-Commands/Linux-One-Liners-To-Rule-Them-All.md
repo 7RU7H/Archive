@@ -15,4 +15,11 @@ find . -type f -name *.nmap -exec cat {} + | grep "/tcp" | sort -u | awk '{print
 ```
 
 
+## String One-Line
+
+Print all but the first field with awk
+```bash
+awk '{for (i=2; i<=NF; i++) printf $i " "; print $NF}'
+```
+
 ## References

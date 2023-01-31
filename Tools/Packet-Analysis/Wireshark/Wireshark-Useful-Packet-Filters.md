@@ -111,11 +111,6 @@ icmp
 !(arp or icmp or dns) // filter broadcast traffic
 ```
 
-Http related
-```c
-http.request.method==GET
-http.request.method==POST
-```
 
 Filter by user agent
 ```c
@@ -260,6 +255,64 @@ data.len > 64 and icmp
 Migitate
 - Block custom ICMP packet creation and usage over a specific size at host level
 - Block large, outbound ICMP traffic network level with Firewall rules.  
+
+
+#### FTP 
+
+This protocol is potentially an attack vector for MITM, Credenital stealing and unauthorized access, [[Phishing]], Malware planting, and Data Exfiltration - [[Data-Exfiltration-Defined]]. Considerations as to detecting malicious FTP traffic:
+- Commands that alter file system
+- Bruteforcing
+
+
+For [[FTP-Response-Codes]]
+```c
+ftp 
+// x1x series: information request responses 
+// x2x series: connection messages
+// x3x series authenication messages
+// x4x Unspecified as of RFC 959
+// x5x File system
+// 200 is command success
+ftp.response.code == 200
+ftp.request.command == "$CMD"
+ftp.request.arg == "password"
+
+// Detect Bruteforce
+ftp.response.code == 530
+(ftp.response.code == 530) and (ftp.response.arg contains "username")
+(ftp.request.command == "PASS") and (ftp.request.arg contains "password")
+```
+
+#### HTTP
+
+Consider reviewing [[HTTP-Defined]] as [[Phishing]] pages, web attacks - [[Web-Hacking-Checklist]], [[Data-Exfiltration-Over-HTTP-and-HTTPS]] and C2 traffic is something http(s) - [[C2-Matrix]]. Generally with web attack detection it is about understanding where  and what data is being trafficed to the potential vulnerable web server by understanding the attack.
+
+[[HTTP-Response-codes]] - https://en.wikipedia.org/wiki/List_of_HTTP_status_codes
+```c
+http.request.method == "GET"
+http.request.method == "POST" 
+http.response.code == $INT // Know you codes - errors are used in recon!
+http.user_agent contains ""
+http.request.uri contains "admin"
+http.request.full_uri contains "admin" //more complete info than the above
+http.server 
+http.host 
+http.connection == "Keep-Alive"
+data-text-lines contains "keyword"
+
+// detection based on tool signatures
+// Beware of bypassing by altering slight naming   
+(http.user_agent contains "sqlmap") or (http.user_agent contains "Nmap") or (http.user_agent contains "Wfuzz") or (http.user_agent contains "Nikto")
+// Mozlila or Gooogle
+``````
+
+Log4J Analysis
+```c
+http.request.method == "POST"
+(ip contains "jndi") or ( ip contains "Exploit")
+(frame contains "jndi") or ( frame contains "Exploit")
+(http.user_agent contains "$") or (http.user_agent contains "==")
+```
 
 ## References
 

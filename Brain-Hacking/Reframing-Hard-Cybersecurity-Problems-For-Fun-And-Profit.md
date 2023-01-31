@@ -122,11 +122,11 @@ def longest_shell_code_sequence(text):
 shakespeare_ds = tf.data.TextLineDataset("shakespeare.txt")
 
 # Apply the `longest_shell_code_sequence` function to each line of the dataset
-longest_sequences = shakespeare_ds.map(longest_shell_
+longest_sequences = shakespeare_ds.map(longest_shell_code_sequence)
 ```
 
 ChatGPT - Note: This code is purely hypothetical and is not intended to be executed. Attempting to execute shell code derived from natural language text is extremely dangerous and could result in security vulnerabilities or system crashes.
 
 ## References
 
-[Keynote: Reframing Hard Cybersecurity Problems for Fun and Profit - by Ed Skodis](https://www.youtube.com/watch?v=Q8X01QtWTRY&t=29s)
+[Keynote: Reframing Hard Cybersecurity Problems for Fun and Profit - by Ed Skodis](https://www.youtube.com/watch?v=Q8X01QtWTRY)
