@@ -25,7 +25,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administrator-Virtual-Networking.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "dd5cc45af81318dc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Virtual-Networking.md",
                 "mode": "source",
                 "source": false
               }
@@ -56,7 +68,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -114,7 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administrator-Virtual-Networking.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Virtual-Networking.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,17 +154,17 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "8f84f718adcedb47",
+  "active": "dd5cc45af81318dc",
   "lastOpenFiles": [
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Virtual-Networking.md",
     "Tools/Packet-Analysis/Wireshark/Wireshark.md",
     "Tools/Packet-Analysis/Wireshark/Wireshark-Useful-Packet-Filters.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administrator-Virtual-Networking.md",
     "Networks/FTP-Response-Codes.md",
     "Reconnaissance/Active-Information-Gathering/SMTP/SMTP-Recon-Cheatsheet.md",
     "Linux/Linux-Commands/Linux-One-Liners-To-Rule-Them-All.md",
     "Coding-Scripting-Programming/Regular-Expressions.md",
     "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/File-Transfers.md",
-    "Brain-Hacking/Reframing-Hard-Cybersecurity-Problems-For-Fun-And-Profit.md",
-    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Linux-File-Transfers.md"
+    "Brain-Hacking/Reframing-Hard-Cybersecurity-Problems-For-Fun-And-Profit.md"
   ]
 }

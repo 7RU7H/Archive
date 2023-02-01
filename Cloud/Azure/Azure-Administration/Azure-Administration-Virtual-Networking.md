@@ -1,4 +1,4 @@
-# Azure Administrator - Virtual Networking
+# Azure Administration - Virtual Networking
 
 
 Virtual Networks consist of one of more Address Space(s) available IP ranges that are typically from RFC 1918, but not exclusively, which are allocating for you use within your VNet
@@ -269,6 +269,10 @@ Consider:
 - Deny by Default is a security default - Allow is then for avaliability, while not compromising security
 - Rule Priority - Rule Priority - Rule Priority
 
+[Application Security Group](https://learn.microsoft.com/en-us/azure/virtual-network/application-security-groups) are for logically grouping VMs by workload in Azure virtual network.
+
+#### NSG Workflow
+
 Overview of NSGs
 `Search -> Network Security Groups`
 
@@ -282,7 +286,53 @@ Add RDP to a VM Allowing and Disallowing the connection with NSG
 - `Inbound port rules Tab -> add inbound port rule -> Configure`  
 - `Outbound port rules Tab -> add outbound port rule -> Configure`
 
-[Application Security Group](https://learn.microsoft.com/en-us/azure/virtual-network/application-security-groups)  are for logically grouping VMs by workload in Azure virtual network.
+#### Azure Firewall
+
+Azure Firewall is a managed, stateful firewall and cloud-based network security service that protects your Azure Virtual Network resources. Allows creating, enforcement and logging appplication and network connectivity policies across subscriptions and Vnets. It integrates with Azure Monitor for logging and analytics.
+- By default denys all trafficthrough your virtual network - protection from bad actors,  stupidity and blind spots 
+- It has a static public IP address
+- Can span multiple availability zones for increased availability during deployment and unrestricted in scalabilty
+- Limit outbound HTTP/S traffic or Azure SQL traffic to a specified list of fully qualified domain names (FQDN) including wild cards
+- Create network filtering rules 
+- It can distinguish legitimate packets for different types of connections
+- Supports threat intelligence-based filtering
+
+With Azure Firewall, Bastion and VPN Gateway by default you can implementing a hub-spoke network - reduces costs of time and money by centralizing services. Consider
+- Role separation
+- Subscription limits
+- Shared services
+
+Azure Firewall Rules are configured for: 
+- **NAT** - Azure Firewall destination network address translation (DNAT) rules to translate and filter inbound traffic to your subnets
+	-   **Name**: Provide a label for the rule.
+	-   **Protocol**: Choose the TCP or UDP protocol.
+	-   **Source Address**: Identify the address as * (internet), a specific internet address, or a classless inter-domain routing (CIDR) block.
+	-   **Destination Address**: Specify the external address of the firewall for the rule to inspect.
+	-   **Destination Ports**: Provide the TCP or UDP ports that the rule listens to on the external IP address of the firewall.
+	-   **Translated Address**: Specify the IP address of the service (virtual machine, internal load balancer, and so on) that privately hosts or presents the service.
+	-   **Translated Port**: Identify the port that the inbound traffic is routed to by Azure Firewall.
+- **Network** rule  - Any non-HTTP/S traffic that's allowed to flow through your firewall must have a network rule
+	-   **Name**: Provide a label for the rule.
+	-   **Protocol**: Choose the protocol for the rule, including TCP, UDP, ICMP (ping and traceroute), or Any.
+	-   **Source Address**: Identify the address or CIDR block of the source.
+	-   **Destination Addresses**: Specify the addresses or CIDR blocks of the destination(s).
+	-   **Destination Ports**: Provide the destination port of the traffic.
+- **Application** rules define fully qualified domain names (FQDNs) that can be accessed from a subnet
+	- **Name**: Provide a label for the rule.
+	-   **Source Addresses**: Identify the IP address of the source.
+	-   **Protocol:Port**: Specify `HTTP` or `HTTPS` and the port that the web server is listening on.
+	-   **Target FQDNs**: Provide the domain name of the service, such as `www.contoso.com`. Wildcards (\*) can be used. An FQDN tag represents a group of FQDNs associated with well known Microsoft services. Example FQDN tags include `Windows Update`, `App Service Environment`, and `Azure Backup`.
+	
+Azure Firewall Rules are processed by:
+- Network rules
+- Application rules
+
+
+
+#### Azure Firewall Workflow
+
+
+
 
 
 ## References

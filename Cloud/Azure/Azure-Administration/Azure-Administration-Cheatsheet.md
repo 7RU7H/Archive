@@ -1,5 +1,5 @@
 
-# Azure Administrator Cheatsheet
+# Azure Administration Cheatsheet
 
 - Access the portal at https://portal.azure.com/ -  great for performing single tasks
 - Cloud Shell on the `>_` Icon; Temporary Host - per-session, per-user basis
@@ -346,6 +346,23 @@ Consideration :
 
 Create and manage public IPs
 `Search "Public IP Address -> Pulic IP addresses" ` then with `+ Create` provide the options `IP version, SKU, Tier, Name, Assignment, Routing`
+
+
+#### NSG Workflow
+
+Overview of NSGs
+`Search -> Network Security Groups`
+
+Create an NSG
+`Search -> Network Security Groups -> + Create` - Source, Destination, Service, Priority
+Associate NSG with a Subnet or NSG
+`$NSG -> Settings -> Network Interfaces, Subnets`
+
+Add RDP to a VM Allowing and Disallowing the connection with NSG
+`$VM -> Connect -> Configure if required then goto -> Networking -> Either:`
+- `Inbound port rules Tab -> add inbound port rule -> Configure`  
+- `Outbound port rules Tab -> add outbound port rule -> Configure`
+
 
 
 ## AzCopy 

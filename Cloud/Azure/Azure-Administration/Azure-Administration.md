@@ -9,7 +9,7 @@ This a hub page group links to all relevant articles under a Azure Administratio
 [[Azure-Administration-ARM-Templates]]
 [[Azure-Administration-Storage-Accounts]]
 [[Azure-Administration-Virtual-Machines]]
-[[Azure-Administrator-Virtual-Networking]]
+[[Azure-Administration-Virtual-Networking]]
 [[Azure-Administration-Azure-Disks]]
 [[Azure-Administration-Application-Gateways]]
 [[Azure-Administration-Azure-DNS]]
@@ -25,5 +25,5 @@ This a hub page group links to all relevant articles under a Azure Administratio
 [[Azure-Administration-Subscriptions]]
 [[Azure-Administration-Managing-Virtual-Network]]
 
-For the Cheatsheet: [[Azure-Administrator-Cheatsheet]]
+For the Cheatsheet: [[Azure-Administration-Cheatsheet]]
 
