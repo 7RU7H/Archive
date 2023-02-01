@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+                "file": "Coding-Scripting-Programming/Malware/Malware-Techiques-Obfuscation.md",
                 "mode": "source",
                 "source": false
               }
@@ -38,6 +38,18 @@
               "type": "markdown",
               "state": {
                 "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Virtual-Networking.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7b6db4b5f7873a2a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cloud/Cloud-Hacking/Azure-Hacking.md",
                 "mode": "source",
                 "source": false
               }
@@ -68,7 +80,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -126,7 +138,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Virtual-Networking.md",
+                "file": "Coding-Scripting-Programming/Malware/Malware-Techiques-Obfuscation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -154,17 +166,17 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "dd5cc45af81318dc",
+  "active": "8f84f718adcedb47",
   "lastOpenFiles": [
+    "Reverse-Engineering/Malware-Analysis/Malware-Analysis.md",
+    "Coding-Scripting-Programming/Malware/Malware-Techiques-Packing.md",
+    "Reverse-Engineering/Malware-Analysis/Malware-Analysis-PE-Headers.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Virtual-Networking.md",
+    "Cloud/Cloud-Hacking/Azure-Hacking.md",
     "Tools/Packet-Analysis/Wireshark/Wireshark.md",
     "Tools/Packet-Analysis/Wireshark/Wireshark-Useful-Packet-Filters.md",
     "Networks/FTP-Response-Codes.md",
-    "Reconnaissance/Active-Information-Gathering/SMTP/SMTP-Recon-Cheatsheet.md",
-    "Linux/Linux-Commands/Linux-One-Liners-To-Rule-Them-All.md",
-    "Coding-Scripting-Programming/Regular-Expressions.md",
-    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/File-Transfers.md",
-    "Brain-Hacking/Reframing-Hard-Cybersecurity-Problems-For-Fun-And-Profit.md"
+    "Reconnaissance/Active-Information-Gathering/SMTP/SMTP-Recon-Cheatsheet.md"
   ]
 }

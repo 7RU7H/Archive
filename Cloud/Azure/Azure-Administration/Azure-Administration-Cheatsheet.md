@@ -363,6 +363,31 @@ Add RDP to a VM Allowing and Disallowing the connection with NSG
 - `Inbound port rules Tab -> add inbound port rule -> Configure`  
 - `Outbound port rules Tab -> add outbound port rule -> Configure`
 
+####  Azure DNS
+
+Create DNS zones
+`Search -> DNS zones`
+
+To delegate your domain to Azure DNS:
+1.  Identify your DNS name server - for each zone Azure DNS allocated DNS server from each pool and authoritative `NS` (or _Name server_) records in your DNS zone.
+	1. Find with Azure Portal
+2.  Update your parent domain  - each registar has their own DNS management tools
+	1.  Go to your registrar's (third-party domain registrar, company where domain was registered) DNS management page.
+	2.  Find the existing `NS` records for your parent domain.
+	3.  Replace the existing `NS` records with the `NS` records created for your domain by Azure DNS.
+		-  Remember to include a trailing period `..` at the end of the address
+		- Always copy **all** DNS name server `NS` records for your domain to the parent domain 
+3.  Delegate subdomains (optional)
+	1.  Go to the parent DNS zone for your domain in the Azure portal.
+	2.  Find the existing `NS` records for your parent domain.
+	3.  Create new `NS` records for your child DNS zone (subdomain).
+
+Create record set or Child zone
+`Search -> DNS zones -> Search $DNSzone -> + Record Set | + Child Zone 
+
+Common pattern - name resolution for multiple networks, where one is focused on registration and the other resolution.
+`Vnet1 = Registration <-> Azure Private DNS zone records <-> Vnet2 = Resolution`
+
 
 
 ## AzCopy 
