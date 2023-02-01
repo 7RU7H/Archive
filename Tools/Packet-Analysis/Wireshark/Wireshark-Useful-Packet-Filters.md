@@ -314,6 +314,26 @@ http.request.method == "POST"
 (http.user_agent contains "$") or (http.user_agent contains "==")
 ```
 
+#### Decrypting HTTPS Traffic
+
+```c
+http.request
+tls // Global tls
+tls.handshake.type == 1 // tls client request 
+tls.handshake.type == 2 // tls server response
+ssdp // Local simple server discovery protocol
+
+(http.request or tls.handshake.type == 1) and !(ssdp) // Client hello
+(http.request or tls.handshake.type == 2) and !(ssdp) // Server hello
+// Requires
+// MUST dump the keys DURING capture!!!
+// Configure browser to dump keys 
+SSLKEYLOGFILE // Env variable - browser will save them to this variable
+// Edit -> Preferences -> Protocols -> TLS = to add/remove key log files 
+// Or = Transport Layer Security -> Right Click -> Protocol Preferences -> (Pre)Master-Secret log filename... -> TLS -> Browse.. (to load a pre-MSL file)
+```
+
+
 ## References
 
 [Display Filter Reference](https://www.wireshark.org/docs/dfref/)

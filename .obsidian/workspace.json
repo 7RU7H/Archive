@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/Packet-Analysis/Wireshark/Wireshark-Useful-Packet-Filters.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administrator-Virtual-Networking.md",
                 "mode": "source",
                 "source": false
               }
@@ -114,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/Packet-Analysis/Wireshark/Wireshark-Useful-Packet-Filters.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administrator-Virtual-Networking.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,15 +144,15 @@
   },
   "active": "8f84f718adcedb47",
   "lastOpenFiles": [
-    "Networks/FTP-Response-Codes.md",
+    "Tools/Packet-Analysis/Wireshark/Wireshark.md",
     "Tools/Packet-Analysis/Wireshark/Wireshark-Useful-Packet-Filters.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administrator-Virtual-Networking.md",
+    "Networks/FTP-Response-Codes.md",
     "Reconnaissance/Active-Information-Gathering/SMTP/SMTP-Recon-Cheatsheet.md",
     "Linux/Linux-Commands/Linux-One-Liners-To-Rule-Them-All.md",
     "Coding-Scripting-Programming/Regular-Expressions.md",
     "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/File-Transfers.md",
     "Brain-Hacking/Reframing-Hard-Cybersecurity-Problems-For-Fun-And-Profit.md",
-    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Linux-File-Transfers.md",
-    "Exploitation/Reverse-Shells-Listing.md",
-    "Exploitation/Shell-Spawning.md"
+    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Linux-File-Transfers.md"
   ]
 }

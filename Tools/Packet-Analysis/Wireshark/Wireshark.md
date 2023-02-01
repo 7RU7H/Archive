@@ -30,6 +30,7 @@ THM Golden Rule: *"The golden rule mentioned in the previous room is valid in th
 
 
 ## For Just Useful Display Filters
+
 Found here: [[Wireshark-Useful-Packet-Filters]]
 
 
@@ -39,6 +40,8 @@ Want a GUI with quick filters instead of [[Tcpdump-Cheatsheet]] and [[Useful_Bas
 -   Detecting and troubleshooting network problems, such as network load failure points and congestion.
 -   Detecting security anomalies, such as rogue hosts, abnormal port usage, and suspicious traffic.
 -   Investigating and learning protocol details, such as response codes and payload data.
+-   Create Firewall rules on the for various vendors from a couple of clicks 
+
 
 ## Capture filters
 Filter by interface discard any from unselected interfaces like Display Filters uses the [Berkley Packet Filter](https://biot.com/capstats/bpf.html) syntax. 
@@ -168,6 +171,24 @@ From the `Statistcs` drop down:
 - IPv4 and 6 Statistics - provide information per protocol
 - DNS - tree view of packet counter and percentages of DNS protocol usage
 - HTTP - tree view of packet counter and percentages of HTTP
+
+## Tools
+
+#### Filter out the Tools with Plain Text Credentials
+
+`Tools -> Credentials`
+
+#### Firewall ACL Rules
+
+`Select a Packet -> Tools -> Firewall ACL Rules -> Dropdown of Rule type`
+
+-   Netfilter (iptables)
+-   Cisco IOS (standard/extended)
+-   IP Filter (ipfilter)
+-   IPFirewall (ipfw)
+-   Packet filter (pf)
+-   Windows Firewall (netsh new/old format)
+
 
 
 ## References
