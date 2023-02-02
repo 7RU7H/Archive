@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Coding-Scripting-Programming/Malware/Malware-Techiques-Obfuscation.md",
+                "file": "Reverse-Engineering/Malware-Analysis/Malware-Analysis-PE-Headers.md",
                 "mode": "source",
                 "source": false
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Coding-Scripting-Programming/Malware/Malware-Techiques-Obfuscation.md",
+                "file": "Reverse-Engineering/Malware-Analysis/Malware-Analysis-PE-Headers.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -168,15 +168,15 @@
   },
   "active": "8f84f718adcedb47",
   "lastOpenFiles": [
+    "Coding-Scripting-Programming/Languages/C/Useful_C.md",
+    "Reverse-Engineering/Malware-Analysis/Malware-Analysis-PE-Headers.md",
+    "Coding-Scripting-Programming/Malware/Malware-Techiques-Obfuscation.md",
     "Reverse-Engineering/Malware-Analysis/Malware-Analysis.md",
     "Coding-Scripting-Programming/Malware/Malware-Techiques-Packing.md",
-    "Reverse-Engineering/Malware-Analysis/Malware-Analysis-PE-Headers.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Virtual-Networking.md",
     "Cloud/Cloud-Hacking/Azure-Hacking.md",
     "Tools/Packet-Analysis/Wireshark/Wireshark.md",
-    "Tools/Packet-Analysis/Wireshark/Wireshark-Useful-Packet-Filters.md",
-    "Networks/FTP-Response-Codes.md",
-    "Reconnaissance/Active-Information-Gathering/SMTP/SMTP-Recon-Cheatsheet.md"
+    "Tools/Packet-Analysis/Wireshark/Wireshark-Useful-Packet-Filters.md"
   ]
 }
