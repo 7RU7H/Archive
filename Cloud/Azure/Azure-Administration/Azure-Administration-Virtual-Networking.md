@@ -129,22 +129,57 @@ Historic comparison being: Site-to-Site VPN or connection to the same ExpressRou
 
 On-premise to an Azure subnet Gatewaycan be used to connect resources via Gateway transit, becuase of Peering to reach out to On-Premise assets. 
 
-#### Connecting On-Premises to Azure
 
-Extending On-Premise to Azure with  [[Ipsec]] tunnels:
+#### VPN Gateways and Connecting On-Premises to Azure
+
+Organizations use a virtual private network (VPN) to create a private, encrypted connection for their resources and users to the internet using [[Ipsec]] protocol.A VPN gateway is a specific type of virtual network gateway that's used to send encrypted traffic between your Azure virtual network and an on-premises location over the public internet or over the Azure backbone Microsoft network. Considerations:
+- Vnet can have one VPN gateway with multiple connects to it sharing the bandwidth
+
+Extending On-Premise to Azure with [[Ipsec]] tunnels - see [planning table](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways#planningtable):
 - Point-To-Site VPN - connect specific device to a network.
 - Site-To-Site VPN - connect a network to virtual network 
 	- Good if ExpressRoute is too expensive
 	- S2S VPN gateways enable multiple VPN connects to different networks if route not policy based
-	- ExpressRoute Private Peering - Connects a network to a virtual network via ExpressRoute Gateway
-		- ExpressRoute circuits enable multiple virtual networks to be connected to a single circuit, but vnet to vnet better via peering - Big Enterprises want this for it being a private connection, no hops else where connect to Microsoft Backbone Network - not Geopolitical Region locked at the Premium level.
-		- Can be encrypted, but is not by default - MaxSEC at the edge router provider 
-		- If Fast Path is Enabled it does not go via the Gateway, Gateway is required for routing information, also Fast Path does working for Peering.
-		- MPLS can be connect to backend at carrier neutral connect that can also connect ExpressRoute
-	- Microsoft Peering - Can go by Private Endpoints as well as ExpressRoute
-		- Storage
-		- Database Accounts
+- Vnet-To-Vnet with  IPsec/IKE VPN tunnel
+	- Cross-Region/Subscriptions/Deployment-model 
+- [Highly Available]((https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-highlyavailable) -  better VM availbility due to redundancy
+	- Active-Active - both VMs are active
+	- Active-Standby - one is on standby in case of failover
 
+Peering
+- ExpressRoute Private Peering - Connects a network to a virtual network via ExpressRoute Gateway
+	- ExpressRoute circuits enable multiple virtual networks to be connected to a single circuit, but vnet to vnet better via peering - Big Enterprises want this for it being a private connection, no hops else where connect to Microsoft Backbone Network - not Geopolitical Region locked at the Premium level.
+	- Can be encrypted, but is not by default - MaxSEC at the edge router provider 
+	- If Fast Path is Enabled it does not go via the Gateway, Gateway is required for routing information, also Fast Path does working for Peering.
+	- MPLS can be connect to backend at carrier neutral connect that can also connect ExpressRoute
+- Microsoft Peering - Can go by Private Endpoints as well as ExpressRoute
+	- Storage
+	- Database Accounts
+
+-   Plan your [Azure VPN Gateway solution](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways#planningtable)
+-   Peruse [Azure VPN Gateway documentation](https://learn.microsoft.com/en-us/azure/vpn-gateway/).
+-   Discover [VPN Gateway configuration settings](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpn-gateway-settings).
+-   Create and manage a [VPN gateway by using the Azure portal](https://learn.microsoft.com/en-us/azure/vpn-gateway/tutorial-create-gateway-portal).
+-   Create a [site-to-site VPN connection in the Azure portal](https://learn.microsoft.com/en-us/azure/vpn-gateway/tutorial-site-to-site-portal). 
+-   Explore [VPN Gateway design options: S2S, P2S, VNet-to-VNet, and high availability](https://learn.microsoft.com/en-us/azure/vpn-gateway/design).
+-   Review [highly available cross-premises and VNet-to-VNet connectivity](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-highlyavailable).
+-   Find [validated VPN devices and IPsec/IKE parameters for S2S VPN Gateway connections](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpn-devices)   
+
+VPN Gateway requires: - subnet, dns server and VPN device 
+`Search -> Virtual Network Gateways -> + Create`
+Select:
+- VPN or ExressRoute
+- Gateway type
+	- Route-based - uses routes in the IP forwarding or routing table to direct packets into their corresponding tunnel interfaces
+	- Policy-based -  encrypt and direct packets through IPsec tunnels based on the IPsec policies - configured with the combinations of address prefixes between your on-premises network and the Azure virtual network
+- SKU, Generation (bytes per second), Names, RG, Vnet
+
+Local Network Gateways - to represent the on-premises site that you want to connect to a virtual network
+`Search -> Local Network Gateways -> + Create`
+- (Advanced) Border Gateway Protocol (BGP) - routability and reachable protocol -  requires - the minimum prefix you need to declare is the host address of your BGP Peer IP address on your VPN device.
+
+On-Premise VPN devices: shared key and public IP address of your VPN gateway
+- Configuration scripts are available for some devices - [Download VPN device configuration scripts for S2S VPN connections](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-download-vpndevicescript) to find a downloadable script for your VPN device.
 
 #### Controlling Traffic Flows
 

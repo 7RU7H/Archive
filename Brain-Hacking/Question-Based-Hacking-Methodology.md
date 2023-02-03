@@ -162,7 +162,7 @@ Condense:
 - Active Directory
 	- Are you Temporally Synced to the target Domain?
 	- Is it really large and requires a [[Domain-Flyover]]
-	- Have you got scope for [[Responder-Cheatsheet]] for [[LLMNRpoisoning]] and [mitm6](https://github.com/dirkjanm/mitm6) - MITM those NTLM hashes.
+	- Have you got scope for [[Responder-Cheatsheet]] for [[LLMNR-Poisoning]] and [mitm6](https://github.com/dirkjanm/mitm6) - MITM those NTLM hashes.
 		- Have they not cracked yet?
 			- NTLM Relay Attack?
 	- What do the protocol used and what information from those protocols can be queried to provide a mapping of intended networking and use of AD?

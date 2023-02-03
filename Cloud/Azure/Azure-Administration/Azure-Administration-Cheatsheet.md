@@ -222,12 +222,44 @@ Custom RBAC role creation:
 `Upload a $customRole.json file`  - replace fields reqiure prior to upload!
 `Open CloudCLI` to upload
 ```powershell
-New-AzRoleDefinition -InputFile $file
+New-AzRoleDefi
+VPN Gateway requires: - subnet, dns server and VPN device 
+`Search -> Virtual Network Gateways -> + Create`
+Select:
+- VPN or ExressRoute
+- Gateway type
+	- Route-based - uses routes in the IP forwarding or routing table to direct packets into their corresponding tunnel interfaces
+	- Policy-based -  encrypt and direct packets through IPsec tunnels based on the IPsec policies - configured with the combinations of address prefixes between your on-premises network and the Azure virtual network
+- SKU, Generation (bytes per second), Names, RG, Vnet
+
+Local Network Gateways - to represent the on-premises site that you want to connect to a virtual network
+`Search -> Local Network Gateways -> + Create`
+- (Advanced) Border Gateway Protocol (BGP) - routability and reachable protocol -  requires - the minimum prefix you need to declare is the host address of your BGP Peer IP address on your VPN device.
+
+On-Premise VPN devices: shared key and public IP address of your VPN gateway
+- Configuration scripts are available for some devices - [Download VPN device configuration scripts for S2S VPN connections](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-download-vpndevicescript) to find a downloadable script for your VPN device.
+nition -InputFile $file
 ```
 
 Assign roles **at scope** - `Subscription,Resource group, Resource`
 `Management Groups -> Access Control (IAM) -> Add -> Search <role keyword> ->  + Select members`
-Assign can be done via Resource Group of Admin Scoping in fields
+Assign can be done via Reso
+VPN Gateway requires: - subnet, dns server and VPN device 
+`Search -> Virtual Network Gateways -> + Create`
+Select:
+- VPN or ExressRoute
+- Gateway type
+	- Route-based - uses routes in the IP forwarding or routing table to direct packets into their corresponding tunnel interfaces
+	- Policy-based -  encrypt and direct packets through IPsec tunnels based on the IPsec policies - configured with the combinations of address prefixes between your on-premises network and the Azure virtual network
+- SKU, Generation (bytes per second), Names, RG, Vnet
+
+Local Network Gateways - to represent the on-premises site that you want to connect to a virtual network
+`Search -> Local Network Gateways -> + Create`
+- (Advanced) Border Gateway Protocol (BGP) - routability and reachable protocol -  requires - the minimum prefix you need to declare is the host address of your BGP Peer IP address on your VPN device.
+
+On-Premise VPN devices: shared key and public IP address of your VPN gateway
+- Configuration scripts are available for some devices - [Download VPN device configuration scripts for S2S VPN connections](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-download-vpndevicescript) to find a downloadable script for your VPN device.
+urce Group of Admin Scoping in fields
 `Resource Groups -> Access Control (IAM) -> Add (role, co-adminstrator, custom) role -> Search`
 `Remove` to remove!
 `Activty Log` to find all role (de-)assignments
@@ -388,6 +420,23 @@ Create record set or Child zone
 Common pattern - name resolution for multiple networks, where one is focused on registration and the other resolution.
 `Vnet1 = Registration <-> Azure Private DNS zone records <-> Vnet2 = Resolution`
 
+#### VPN Gateways
+
+VPN Gateway requires: - subnet, dns server and VPN device 
+`Search -> Virtual Network Gateways -> + Create`
+Select:
+- VPN or ExressRoute
+- Gateway type
+	- Route-based - uses routes in the IP forwarding or routing table to direct packets into their corresponding tunnel interfaces
+	- Policy-based -  encrypt and direct packets through IPsec tunnels based on the IPsec policies - configured with the combinations of address prefixes between your on-premises network and the Azure virtual network
+- SKU, Generation (bytes per second), Names, RG, Vnet
+
+Local Network Gateways - to represent the on-premises site that you want to connect to a virtual network
+`Search -> Local Network Gateways -> + Create`
+- (Advanced) Border Gateway Protocol (BGP) - routability and reachable protocol -  requires - the minimum prefix you need to declare is the host address of your BGP Peer IP address on your VPN device.
+
+On-Premise VPN devices: shared key and public IP address of your VPN gateway
+- Configuration scripts are available for some devices - [Download VPN device configuration scripts for S2S VPN connections](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-download-vpndevicescript) to find a downloadable script for your VPN device.
 
 
 ## AzCopy 

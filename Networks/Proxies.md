@@ -17,6 +17,7 @@ They allow us to perform faster repetitive testing tasks or manually dig deeper 
 
 
 # HTTP/HTTPS with FoxyProxy/Firefox proxy
+
 Firefox menu -> Settings -> Network Settings click Settings
 Select manual proxy configuration:
         HTTP proxy: 127.0.0.1
@@ -24,6 +25,7 @@ Select manual proxy configuration:
         delete: ANYTHING in the "No proxy for" field
 
 # CA Certificate 
+
 Certificate Authority (CA) is a entity that issues digital certificates. With HTTPS, the certificate authenicates the server by checking the browser is communicating with a legitmate website.
 "Find in settings":"Certificates" -> click View Certificates... ->  Authorities
 
@@ -55,6 +57,7 @@ ss -tulpn | grep 1337 # check kali listening ports
 ```
 
 ## Proxychains port forwarding:
+
 ```bash
 vim /etc/proxychains
 # comment out socks4 127.0.0.0 <port>
