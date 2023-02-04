@@ -32,6 +32,30 @@
             }
           },
           {
+            "id": "d6489ac8c548df98",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Coding-Scripting-Programming/Malware/Go/Go-Malware-Writing-For-Windows.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7093db154aa32203",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Hacker-Distros/Kali/Kali-Configuration/Updating-Burpsuite-On-Kali.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "d513bdede151c873",
             "type": "leaf",
             "state": {
@@ -80,7 +104,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -138,7 +162,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Services/Webservers/IIS/IIS.md",
+                "file": "Hacker-Distros/Kali/Kali-Configuration/Updating-Burpsuite-On-Kali.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -166,8 +190,10 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "dd5cc45af81318dc",
+  "active": "7093db154aa32203",
   "lastOpenFiles": [
+    "Coding-Scripting-Programming/Malware/Go/Go-Malware-Writing-For-Windows.md",
+    "Services/Webservers/IIS/IIS.md",
     "Digitial-Forensics/Windows-Forensics.md",
     "Digitial-Forensics/Linux-Forensics.md",
     "Digitial-Forensics/Digital-Forensics.md",
@@ -175,8 +201,6 @@
     "Digitial-Forensics/Timestomping.md",
     "Digitial-Forensics/Mobile-Forensics.md",
     "Digitial-Forensics/Memory-Forensics.md",
-    "Digitial-Forensics/Network-Forensics-Defined.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
-    "Cloud/Azure/Azure-Administration/Azure-Adminstration-Azure-Monitor.md"
+    "Digitial-Forensics/Network-Forensics-Defined.md"
   ]
 }
