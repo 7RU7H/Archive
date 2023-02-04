@@ -25,7 +25,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+                "file": "Services/Webservers/IIS/IIS.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d513bdede151c873",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Incident-Response/Incident-Response.md",
                 "mode": "source",
                 "source": false
               }
@@ -126,7 +138,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+                "file": "Services/Webservers/IIS/IIS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -156,15 +168,15 @@
   },
   "active": "dd5cc45af81318dc",
   "lastOpenFiles": [
-    "Cloud/Azure/Azure-Administration/Azure-Adminstration-Azure-Monitor.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Virtual-Networking.md",
-    "Tools/Curl-Cheatsheet.md",
-    "Antivirus/Antivirus-Evasion/Inline-Hooking.md",
-    "Coding-Scripting-Programming/Malware/Useful-Functions-And-Syscalls.md",
-    "Coding-Scripting-Programming/Languages/PHP/Useful_PHP.md",
-    "Cryptography-And-Authentication/Password-Attacks/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
-    "Services/Webservers/Webservers-PHP-Based-Commonalities.md",
-    "Services/Webservers/ApacheTomcat/Apache-Tomcat.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/PrivEsc-Important-Linux-Locations.md"
+    "Digitial-Forensics/Windows-Forensics.md",
+    "Digitial-Forensics/Linux-Forensics.md",
+    "Digitial-Forensics/Digital-Forensics.md",
+    "Incident-Response/Incident-Response.md",
+    "Digitial-Forensics/Timestomping.md",
+    "Digitial-Forensics/Mobile-Forensics.md",
+    "Digitial-Forensics/Memory-Forensics.md",
+    "Digitial-Forensics/Network-Forensics-Defined.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+    "Cloud/Azure/Azure-Administration/Azure-Adminstration-Azure-Monitor.md"
   ]
 }
