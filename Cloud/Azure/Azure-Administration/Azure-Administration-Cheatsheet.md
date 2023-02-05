@@ -438,6 +438,61 @@ Local Network Gateways - to represent the on-premises site that you want to conn
 On-Premise VPN devices: shared key and public IP address of your VPN gateway
 - Configuration scripts are available for some devices - [Download VPN device configuration scripts for S2S VPN connections](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-download-vpndevicescript) to find a downloadable script for your VPN device.
 
+## VM Scale Sets
+
+Create and Manage VM Scale Sets
+`Search -> Virtual machine scale sets` 
+- Size = Price; Azure Spot - discount unused pool ; image = OS, arch = x86 or arm64
+- Orchestration mode:
+	- Uniform - for large scale stateless workloads with indetical instances - department workstation
+	- Flexible - high availability at scale with identical or multiple instances - any configuration to the scale set.
+- Advanced tab to enable beyond 100 instances; spreading for optimal spreading of allocation 
+ - Configure Scaling in the `Scaling` tab; 
+	 - Policy - min/max number of instances; manula or autoscaling 
+	 - Scale in - CPU threshold, decrease of instances
+	 - Scale out - CPU threshold, duration, increase of instances
+	 - Scale-In policy - default, newest, oldest vms
+
+Size Scaling
+`Virtual Machines -> $VM -> Size -> Resize by select new size`
+Disk Scaling
+`Virtual Machines -> $VM -> Disks -> + Create and Attach a new disk -> provide a name and size (GiB)` 
+
+Register resource providers
+```powershell
+Register-AzResourceProvider -ProviderNamespace $RP
+```
+
+Deploy a zone-resilient Azure VM scale set with Portal
+`Search -> Virtual machine scale sets -> + Create -> Provide: Name, Resource Group and Zones! - Orchestration mode!, Image,Size` - Add to or Create a Vnet; configure NIC NSG and consider `Load balancer`; Scaling; Management `Monitoring: managed or custom` - do not disable; `Advanced - Spreading and Beyond 100 instances;`
+
+Upgrading VM scale sets
+Load a script with Script with Custom Script Extension
+`Search -> VM scale sets -> Instances -> Select instances -> Upgrade` - check with Load balancer Frontend IP: `Search -> Load Balancers -> $LoadBalancer -> Frontend IP configuration -> Copy address` 
+
+`Search -> VM scale sets -> Scaling -> Manual Scaling or Custom autoscale`
+if Custom:
+- Configure the Default auto created scale condition 
+	- Add rules!!!
+	- Scale  mode - metric or instance count
+	- Instance limits
+	- Schedule
+Test with:
+```powershell
+# This is the microsoft way.. - test if you need a while loop..
+# Note is this just a way to increase costs in the cli?
+# "Sorry boss I spent X dollars on a web request"
+$pip (Get-AzPublicIpAddress -ResourceGroupName $rgName -Name $lbpipName).IpAddress
+while ($true) { Invoke-WebRequest -Uri "http://$pip" }
+```
+
+Custom Script Extension - Container with a custom IIS webserver
+- Storage Account with scripts, container for webserver
+`VMs -> $Container -> Extensions + Add -> Custom Script Extension -> Upload scripts from Storage Account `
+
+Export Template, custom template for mass use
+`VMs -> $CustomVm -> Export Template`
+
 
 ## AzCopy 
 

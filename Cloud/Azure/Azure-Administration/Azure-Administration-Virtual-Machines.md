@@ -1,14 +1,18 @@
 # Azure Administration - Virtual Machines
 
+
+
 Azure Virtual Machines (VMs) are a configurable server without having to buy and maintain physical hardware, they still require:
 - Patching
 - Installing packages
 - Configurating Package
 - Attach multiple Managed Disk to your Azure Vms
 
-See [[Virtual-Machines]] for a more general overview and [[VirtualBox-Networking]] as well as making the veirtual network first before make machines [[Azure-Administration-Virtual-Networking]]
+Consider reading [[Virtual-Machines]] for a more general overview and [[VirtualBox-Networking]] as well as making the virtual networks first before make machines [[Azure-Administration-Virtual-Networking]], it is free and simplier.
 
-Windows VMs require a License!
+Azure VMs support granular controls at scale and is the basis of the Azure infrastructure as a service (IaaS) model. It splits the reponsibilities 
+![1080](azurevmcustomerandazurerespsplit.png)
+Windows VMs still require a License!
 
 The size of the image is detirmined by the image, which also defines the vCPUs, Memory and Storage Capacity. Limitations on VMs per regions found here: [Azure subscription and service limits, quotas, and constraints](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/azure-subscription-service-limits). They are billed at a hourly rate.
 
@@ -21,8 +25,18 @@ Components created with the Virtual Machine:
 - Public IP address - Address that you will use to public access the VM
 - Virtual Network (VNet) - The network where your VM will reside
 
-Worth considering [[Cloud-Initialization]]
-
+Consider reading - [[Cloud-Initialization]]; regarding VMs in Azure they require some forethought and virtual infrastructure - Questions to ask what is the purpose of the VM, where should it then be avaliability in security, location, use, etc? Generally the cost part is then tweakable or more obvious
+1. A network - How is the VM accessed and why
+2. A name - Does it fit a good naming and tag scheme to keep track of why you need it
+	- best to detirmine how tagging will fit within the large context   
+3. Location - region
+3. Size 
+4. Storage type - [[Azure-Administration-Storage-Accounts]], [Azure Managed Disks](https://learn.microsoft.com/en-us/azure/virtual-machines/managed-disks-overview) handle Azure storage account creation and management - `C:` is default system disk
+	- Temporary disks - do not store on temporary disk, but log temporary data for security
+	- Linux `/dev/sdb`
+		- Windows `D:`
+1. OS - not just Windows, but if you want containerization use [[Azure-Administration-Azure-Containers-Instances]] - What is the user require to do their job? 
+	1. Azure Arc for abstraction layer on top of  Kubernetes Clusters
 
 #### VM Sizes
 
@@ -69,7 +83,7 @@ SSH, RDP or Azure Bastion
 - [[RDP-Cheatsheet]]
 - [[SSH-Cheatsheet]]
 
-Azure Bastion is a service you deply that lets you connect to a virtual machine using your browser and the Azure Portal. It provides secure and seamless RDP/SSH connectiveity to virtual machine over TLS so that you can use the browser.
+Azure Bastion is a service you deploy that lets you connect to a virtual machine using your browser and the Azure Portal. It provides secure and seamless RDP/SSH connectiveity to virtual machine over TLS so that you can use the browser.
 
 You have to create a Azure BastionSubnet called `AzureBastionSubnet` with atleast /27 size.
 
@@ -81,6 +95,8 @@ You have to create a Azure BastionSubnet called `AzureBastionSubnet` with atleas
 Update Management allow you to automate and install operating system updates and patches for both Windows and Linux. It uses Azure Automation underneath Update Managemen, switch performs a compliance scan every 24 hours. Log Analytics workspace and Automation Account required like all Azure Automation
 lt Domains
 - Newest VM - Delete the newest created VM, balanced across AZs
+
+
 #### Virtual Machine Monitoring
 
 Automation Accounts - `Search -> Automataion Accounts -> Create`

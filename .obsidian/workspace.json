@@ -13,19 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/Curl-Cheatsheet.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "dd5cc45af81318dc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Services/Webservers/IIS/IIS.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
                 "mode": "source",
                 "source": false
               }
@@ -44,24 +32,12 @@
             }
           },
           {
-            "id": "7093db154aa32203",
+            "id": "d96088c0a6b35645",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Hacker-Distros/Kali/Kali-Configuration/Updating-Burpsuite-On-Kali.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d513bdede151c873",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Incident-Response/Incident-Response.md",
+                "file": "Hacker-Distros/Kali/Setup-Services/Kali-FTP-Setup.md",
                 "mode": "source",
                 "source": false
               }
@@ -78,33 +54,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "de80af7b797b7262",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tools/Packet-Analysis/Wireshark/Wireshark.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0288c7c2222124eb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Post-Exploitation/Escaping-Restricted-Environments/Python-Sandbox-Bypasses.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -162,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Hacker-Distros/Kali/Kali-Configuration/Updating-Burpsuite-On-Kali.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -190,17 +141,17 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "7093db154aa32203",
+  "active": "0c2fee20da42c954",
   "lastOpenFiles": [
-    "Coding-Scripting-Programming/Malware/Go/Go-Malware-Writing-For-Windows.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Scale-Sets.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Virtual-Machines.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration.md",
+    "Tools/Curl-Cheatsheet.md",
     "Services/Webservers/IIS/IIS.md",
-    "Digitial-Forensics/Windows-Forensics.md",
-    "Digitial-Forensics/Linux-Forensics.md",
-    "Digitial-Forensics/Digital-Forensics.md",
-    "Incident-Response/Incident-Response.md",
-    "Digitial-Forensics/Timestomping.md",
-    "Digitial-Forensics/Mobile-Forensics.md",
-    "Digitial-Forensics/Memory-Forensics.md",
-    "Digitial-Forensics/Network-Forensics-Defined.md"
+    "Coding-Scripting-Programming/Malware/Go/Go-Malware-Writing-For-Windows.md",
+    "Cloud/Cloud-Hacking/Azure-Hacking.md",
+    "Tools/Packet-Analysis/Wireshark/Wireshark.md",
+    "Hacker-Distros/Kali/Setup-Services/Kali-FTP-Setup.md"
   ]
 }
