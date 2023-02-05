@@ -68,6 +68,33 @@ Azure Compute Units (ACU) a method of comparing compute CPU performance across A
 You can monitolt Domains
 - Newest VM - Delete the newest created VM, balanced across AZsr your VMs on the go with [mobile App](https://azure.microsoft.com/en-gb/products/app-service/mobile/). 
 
+#### VM extensions
+
+Many of the maintenance tasks are repetitive and time-consuming one way to automate it is VM extensions. You can manage virtual machine extensions with the Azure CLI, PowerShell, Azure Resource Manager (ARM) templates, and the Azure portal; for either existing or newly deployed VMs.
+- Custom Script Extensions 
+- Powershell Desired State Configuration
+- First and Third party extensions exist
+
+Custom Script Extension to run scripts - timesout after 90 minutes
+```powershell
+Set-AzVmCustomScriptExtension -FileUri https://scriptstore.blob.core.windows.net/scripts/Install_IIS.ps1 -Run "PowerShell.exe" -VmName vmName -ResourceGroupName resourceGroup -Location "location"
+```
+
+Desired State Configuration - create specific configuration with scripts 
+```powershell
+configuration IISInstall # configuration script block
+{
+   Node "localhost" # Which VMs are configured
+   { 
+      WindowsFeature IIS # The resourcce block  
+      {
+         Ensure = "Present" # indicate if Role or Feature
+         Name = "Web-Server" 
+      }
+   }
+}
+```
+
 #### Hyper-V and Generation 1 vs 2
 
 Hyper-V is Microsoft's hardware virtualization product, it lets you create and run a software version of a computer, called a virtual machine. Each virtual machine acts alike a complete computer, running an operating system and programs.

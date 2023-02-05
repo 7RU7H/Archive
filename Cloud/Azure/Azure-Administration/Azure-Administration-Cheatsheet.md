@@ -763,6 +763,27 @@ Get-AzNetworkSecurityGroup -ResourceGroupName $vm.ResourceGroupName | Remove-AzN
 Get-AzPublicIpAddress -ResourceGroupName $vm.ResourceGroupName | Remove-AzPublicIpAddress -Force
 ```
 
+Extensions help in task automation
+Custom Script Extension to run scripts - timesout after 90 minutes
+```powershell
+Set-AzVmCustomScriptExtension -FileUri https://scriptstore.blob.core.windows.net/scripts/Install_IIS.ps1 -Run "PowerShell.exe" -VmName vmName -ResourceGroupName resourceGroup -Location "location"
+```
+
+Desired State Configuration - create specific configuration with scripts 
+```powershell
+configuration IISInstall # configuration script block
+{
+   Node "localhost" # Which VMs are configured
+   { 
+      WindowsFeature IIS # The resourcce block  
+      {
+         Ensure = "Present" # indicate if Role or Feature
+         Name = "Web-Server" 
+      }
+   }
+}
+```
+
 Requires [[Microsoft-Visual-Studios]] 
 ```powershell
 Get-AzSubscription

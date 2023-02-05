@@ -20,6 +20,30 @@
             }
           },
           {
+            "id": "0d94ecc78457b5e2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cloud/Cloud-Hacking/Azure-Hacking.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "5abbb1d62ef4724b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "d6489ac8c548df98",
             "type": "leaf",
             "state": {
@@ -143,15 +167,15 @@
   },
   "active": "0c2fee20da42c954",
   "lastOpenFiles": [
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Scale-Sets.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Virtual-Machines.md",
+    "Cloud/Cloud-Hacking/Azure-Hacking.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Virtual-Networking.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Managing-Virtual-Network.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Scale-Sets.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration.md",
     "Tools/Curl-Cheatsheet.md",
     "Services/Webservers/IIS/IIS.md",
-    "Coding-Scripting-Programming/Malware/Go/Go-Malware-Writing-For-Windows.md",
-    "Cloud/Cloud-Hacking/Azure-Hacking.md",
-    "Tools/Packet-Analysis/Wireshark/Wireshark.md",
-    "Hacker-Distros/Kali/Setup-Services/Kali-FTP-Setup.md"
+    "Coding-Scripting-Programming/Malware/Go/Go-Malware-Writing-For-Windows.md"
   ]
 }

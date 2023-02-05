@@ -39,3 +39,20 @@ These maybe stored in a fileshare disk and are `.json` files, blending in is imp
 New-AzRoleDefinition -InputFile $file
 ```
 
+#### Desired-State Persistence Backdooring
+
+Desired State Configuration is a management platform in Windows PowerShel used is for create specific configurations with scripts. Find a script with `configuration` keyword and under given contexts could provide persistence in customized meaning Admin only and managed by Humans leading to oversight. This can be done from CLI aswell..
+```powershell
+configuration IISInstall # configuration script block
+{
+   Node "localhost" # Which VMs are configured
+   { 
+      WindowsFeature IIS # The resourcce block  
+      {
+         Ensure = "Present" # indicate if Role or Feature
+         Name = "Web-Server" 
+      }
+   }
+}
+```
+The Windows PowerShell Desired State Configuration comes with a set of built-in configuration resources, such as `File Resource`, `Log Resource`, and `User Resource`.
