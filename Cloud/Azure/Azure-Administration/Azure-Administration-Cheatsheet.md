@@ -493,6 +493,90 @@ Custom Script Extension - Container with a custom IIS webserver
 Export Template, custom template for mass use
 `VMs -> $CustomVm -> Export Template`
 
+## Azure App Services
+
+Create a Azure App Service
+`Search -> App Services + Create`
+Basics 
+- Resource Group
+- Publish: Code, Docker Container or Static Web App
+- Runtime stack
+Deployment 
+- Github actions - continuous deployment!
+- Devlopment slots are live apps with their own hostnames - ``
+Networking - Public access and network injection toggles
+Monitoring - Insights
+Tags - TAGS TAGS TAGS!
+
+Create a staging deployment slot and configure deployment 
+`App Services -> $App -> Deployment Slots -> + Add Slot`
+Then
+`$App -> Deplyment Centre -> Select a Source -> Save`
+
+Scale up/out Azure App Services
+`Search -> App Services -> Manual scale / Custom Autoscale`
+- For Custom Autoscale:
+	- Minimum instance count
+	- Maximum instance count
+	- Adequate scale margin
+	- Scale rule combinations
+	- Metric statistics
+	- Default instance count
+	- Notifications
+
+Deploy Code to a Azure App Service configure to deploy git source code.
+```powershell
+Set-Location-Path $pathToSourceCode
+git remote add $Repository $AzureAppServiceDeployURL.git 
+git push $Repository $Branch
+# Authenicate
+```
+
+Deployment Swaps
+`Search -> App Services -> $App -> Deployment Slots -> Swap`
+Select Source and Target
+
+Create a Custom Domain for Azure App Service
+`Search -> App Services -> Custom Domains`
+- `Search -> Domain Names` and reserve directly in the Azure portal
+- Create DNS records
+- Enable
+
+Backup Azure App Service (App configuration settings, File content, connected Databases)- requires:
+- Standard or Premium tier App Service plan 
+- Storage Container - [[Azure-Administration-Storage-Accounts]]
+Provide the in `App Services -> $App -> Backup `
+
+## Containerisation
+
+Deploy a Docker Container using Azure Container Instances
+`Search -> Container Instances -> + Create`
+- Basic - Resource Group 
+- Networking - DNS name label
+- Advanced - Restart policy
+
+## AKS
+
+Check if registered
+`Search -> Subscriptions -> $Subscription -> Resource Providers `
+
+`Search -> Kubernetes Services -> + Create (either): + Create a Kubernetes cluster | + Add a Kubernetes cluster with Azure Arc`
+Basic: 
+- Avaliability Zones - (consider full removal for high avaliability)
+- Scale method: Manual or Autoscale
+- Node Count: 1 - 5 
+Node pools - configure here
+Acces - RBAC and AKS-managed Azure AD 
+Networking
+Integrations - Container Monitoring
+
+Add Node pools 
+`Search -> Kubernetes Services -> $KubernetesService -> Node Pools `
+
+Scale Node pool deployed 
+`Search -> Kubernetes Services -> $KubernetesService -> Node Pools -> $NodePool -> Scale Node pool` - configure and apply.
+
+Check the bash section  for CLI deployment and scaling.
 
 ## AzCopy 
 
@@ -637,6 +721,13 @@ Create a Stored Access Policy for a Container
 az storage container policy create -name $polcyName --container-name $container --start $startTime-UTC --expiry $expiryTime-UTC --permissions $perm --account-key $storageAccountKey --account $storageName
 ```
 
+Send HTTP requests with `Get-AzWebApp`
+```powershell
+$webapp = Get-AzWebApp -ResourceGroupName $rgName
+Invoke-WebRequest -Uri $webapp.DefaultHostName
+# Send infinite request to test with while loop and powershell code blocks
+while ($true) { Invoke-WebRequest -Uri $webapp.DefaultHostName }
+```
 
 ## Powershell
 
@@ -854,6 +945,7 @@ Get-AzTableRow -table $cloudTable | ft
 # Delete a table
 Remove-AzStorageTable –Name $tableName –Context $ctx
 ```
+
 ## Bash
 
 Disk creation, retrieval and updating in Bash
@@ -869,6 +961,40 @@ az disk show --resource-group $RGNAME --name $DISKNAME # --query for specific
 az disk update --resource-group $RGNAME --name $DISKNAME # --Whatever-changes-by-flag!
 ```
 
+AKS deployment
+```bash
+# Access AZK cluster, then show connectivity
+RGROUP='azResourceGroup'
+AKS_CLUSTER='azCluster'
+az aks get-credentials --resource-group $RGOUP --name $AKS_CLUSTER
+kubectl get nodes
+# Deploy an nginx image
+kubectl create deployment nginx-deployment --image=nginx
+kubectl get pods
+kubectl get deployment
+# Expose the http port to internet
+kubectl expose deployment nginx-deployment --port=80 --type=LoadBalancer
+# Display provisioning and IP
+kubectl get service
+```
+
+Scale a AKS cluster
+```bash
+kubectl scale --replicas=2 deployment/nginx-deployment
+kubectl get pods
+
+# Scale by node 
+az aks scale --resource-group $RESOURCE_GROUP --name $AKS_CLUSTER --node-count 2
+kubectl get nodes
+
+# Scale by pods
+kubectl scale --replicas=10 deployment/nginx-deployment
+kubectl get pods
+
+kubectl get pod -o=custom-columns=NODE:.spec.nodeName,POD:.metadata.name
+# Delete deploymen
+kubectl delete deplyment ngnix-deployment
+```
 
 ## References
 

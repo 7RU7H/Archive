@@ -1,5 +1,13 @@
 For hacking [[Kubernetes-Hacking]]
 
+## Kubernetes Virtual Networking
+
+-   Kubernetes nodes are connected to a virtual network, which provides inbound and outbound connectivity for pods.
+-   The kube-proxy component runs on each node to provide the network features.
+-   Network policies configure security and filtering of the network traffic for pods.
+-   Network traffic can be distributed by using a load balancer.
+-   Complex routing of application traffic can be achieved with Ingress Controllers.
+
 
 ## Hardening K8
 
@@ -36,3 +44,4 @@ For hacking [[Kubernetes-Hacking]]
 [Online YAML prettifier](https://onlineyamltools.com/prettify-yaml)
 [NSA CISA Kubenetes Hardening Guide](https://media.defense.gov/2022/Aug/29/2003066362/-1/-1/0/CTR_KUBERNETES_HARDENING_GUIDANCE_1.2_20220829.PDF)
 [Google's Kubenetes Hardening Documentation](https://cloud.google.com/kubernetes-engine/docs/how-to/hardening-your-cluster#restrict_self_modify)
+[Microsoft Learn]([Configure Azure Kubernetes Service networking - Training | Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/configure-azure-kubernetes-service/4-kubernetes-networking))

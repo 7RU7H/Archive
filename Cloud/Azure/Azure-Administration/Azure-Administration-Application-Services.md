@@ -25,7 +25,6 @@ The Azure app service Benefits
 ![1080](azureappservicesbenefits.png)
 
 
- 
 You pay based on an Azure App Servies Plan - list below by incremental cost:
 - Shared Tier 
 	- Free 
@@ -42,7 +41,7 @@ You pay based on an Azure App Servies Plan - list below by incremental cost:
 **Custom Containers** are supported, create docker file, upload to Azure Container Registry and deploy
 	
 **Deployment Slots** allows you create different environemtns of your web-application, can also swap environments - potential [Blue/Green deploy](https://en.wikipedia.org/wiki/Blue-green_deployment) 
-	
+- Connections strings follow the content across the swap, Scale and Domains do not.
 	
 App Service Environment (ASE) is an Azure App Service feature that provides a fully isolated and dedidcated environment for securely running App Service apps at high scale
 - Customers can create multiple ASEs:
@@ -66,10 +65,18 @@ Azure App services provides many ways to deploy your applications:
 Deployment slots are configured in the Azure portal. You can swap your app content and configuration elements between deployment slots, including the production slot.
 ![1080](azureappservicesslotsvsswapped.png)
 
+## Insights
+
+App Services are integratable with Azure Insights to automatically detect performance anomalies in your apps. Language agnostic, on-off cloud location agnostics, DevOps integration and monitor and analyze data from mobile apps. Consider reviewing [[Azure-Adminstration-Azure-Monitor]]
+
+![1080](azureappserviesinsightpluses.png)
+
+## Workflows
 
 Azure App Services
 `Search -> App Services + Create`
 Basics 
+- Resource Group
 - Publish: Code, Docker Container or Static Web App
 - Runtime stack
 Deployment 
@@ -79,6 +86,10 @@ Networking - Public access and network injection toggles
 Monitoring - Insights
 Tags - TAGS TAGS TAGS!
 
+Create a staging deployment slot and configure deployment 
+`App Services -> $App -> Deployment Slots -> + Add Slot`
+Then
+`$App -> Deplyment Centre -> Select a Source -> Save`
 
 Scale up/out Azure App Services
 `Search -> App Services -> Manual scale / Custom Autoscale`
@@ -90,6 +101,38 @@ Scale up/out Azure App Services
 	- Metric statistics
 	- Default instance count
 	- Notifications
+
+Deploy Code to a Azure App Service configure to deploy git source code.
+```powershell
+Set-Location-Path $pathToSourceCode
+git remote add $Repository $AzureAppServiceDeployURL.git 
+git push $Repository $Branch
+# Authenicate
+```
+
+Deployment Swaps
+`Search -> App Services -> $App -> Deployment Slots -> Swap`
+Select Source and Target
+
+Create a Custom Domain for Azure App Service
+`Search -> App Services -> Custom Domains`
+- `Search -> Domain Names` and reserve directly in the Azure portal
+- Create DNS records
+- Enable
+
+Backup Azure App Service (App configuration settings, File content, connected Databases)- requires:
+- Standard or Premium tier App Service plan 
+- Storage Container - [[Azure-Administration-Storage-Accounts]]
+Provide the in `App Services -> $App -> Backup `
+
+Send HTTP requests with `Get-AzWebApp`
+```powershell
+$webapp = Get-AzWebApp -ResourceGroupName $rgName
+Invoke-WebRequest -Uri $webapp.DefaultHostName
+# Send infinite request to test with while loop and powershell code blocks
+while ($true) { Invoke-WebRequest -Uri $webapp.DefaultHostName }
+```
+
 
 ## References
 

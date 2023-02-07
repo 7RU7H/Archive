@@ -25,7 +25,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Application-Services.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Kubernetes-Services.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c0d6e610bd035f01",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Services/Kubernetes/Kubernetes.md",
                 "mode": "source",
                 "source": false
               }
@@ -42,45 +54,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "809e98419a3aa00d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Digitial-Forensics/Windows-Forensics.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "23f5d8232cf39992",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Windows/Windows-Concepts/Windows-File-System.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9b9c8529d886dfc8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tools/Forensics/Eric-Zimmerman-Tools.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -138,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/Forensics/Eric-Zimmerman-Tools.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -203,17 +179,17 @@
       }
     ]
   },
-  "active": "9b9c8529d886dfc8",
+  "active": "79e95afd5b3565f0",
   "lastOpenFiles": [
-    "Digitial-Forensics/Windows-Forensics.md",
-    "Tools/Forensics/Eric-Zimmerman-Tools.md",
-    "Windows/Windows-Concepts/Windows-File-System.md",
-    "Windows/Windows-Registry.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Application-Services.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration.md",
-    "Services/Docker/Docker-Hacking.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Kubernetes-Services.md",
+    "Services/Kubernetes/Kubernetes.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Containers-Instances.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
-    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Linux-File-Transfers.md"
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Application-Services.md",
+    "Digitial-Forensics/Windows-Forensics.md",
+    "Windows/Windows-Concepts/Windows-File-System.md",
+    "Tools/Forensics/Eric-Zimmerman-Tools.md",
+    "Windows/Windows-Registry.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration.md"
   ]
 }
