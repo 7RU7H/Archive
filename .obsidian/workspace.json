@@ -8,78 +8,79 @@
         "type": "tabs",
         "children": [
           {
-            "id": "0c2fee20da42c954",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0d94ecc78457b5e2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cloud/Cloud-Hacking/Azure-Hacking.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "5abbb1d62ef4724b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d6489ac8c548df98",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Coding-Scripting-Programming/Malware/Go/Go-Malware-Writing-For-Windows.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "d96088c0a6b35645",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Hacker-Distros/Kali/Setup-Services/Kali-FTP-Setup.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "7b6db4b5f7873a2a",
+            "id": "373dec0b2883aa2f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud/Cloud-Hacking/Azure-Hacking.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Application-Services.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "79e95afd5b3565f0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "809e98419a3aa00d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Digitial-Forensics/Windows-Forensics.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "23f5d8232cf39992",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Windows/Windows-Concepts/Windows-File-System.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9b9c8529d886dfc8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/Forensics/Eric-Zimmerman-Tools.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -137,7 +138,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+                "file": "Tools/Forensics/Eric-Zimmerman-Tools.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -165,17 +166,54 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "0c2fee20da42c954",
+  "floating": {
+    "id": "116ba3c613f21538",
+    "type": "floating",
+    "children": [
+      {
+        "id": "cd754feef7edfa56",
+        "type": "window",
+        "children": [
+          {
+            "id": "7e10522cda02ab72",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "aa2d9dfe751ec702",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Windows/Windows-Registry.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical",
+        "x": 1039,
+        "y": 27,
+        "width": 600,
+        "height": 600,
+        "maximize": false,
+        "zoom": -1
+      }
+    ]
+  },
+  "active": "9b9c8529d886dfc8",
   "lastOpenFiles": [
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Virtual-Machines.md",
-    "Cloud/Cloud-Hacking/Azure-Hacking.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Virtual-Networking.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Managing-Virtual-Network.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Scale-Sets.md",
+    "Digitial-Forensics/Windows-Forensics.md",
+    "Tools/Forensics/Eric-Zimmerman-Tools.md",
+    "Windows/Windows-Concepts/Windows-File-System.md",
+    "Windows/Windows-Registry.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Application-Services.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration.md",
-    "Tools/Curl-Cheatsheet.md",
-    "Services/Webservers/IIS/IIS.md",
-    "Coding-Scripting-Programming/Malware/Go/Go-Malware-Writing-For-Windows.md"
+    "Services/Docker/Docker-Hacking.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Linux-File-Transfers.md"
   ]
 }

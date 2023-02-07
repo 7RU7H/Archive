@@ -1,10 +1,22 @@
 # Windows Registry 
 
+
+If you want to grab a copy the registry hives from `%WINDIR%\System32\Config`, you cannot because it is a restricted file. Use:
+- [[KAPE]]
+- [[Autopsy]]
+- [FTK Imager](https://www.exterro.com/ftk-imager) is similar to Autopsy
+
+After extraction:
+- [AccessData's Registry Viewer](https://accessdata.com/product-download/registry-viewer-2-0-0) has a similar user interface to the Windows Registry Editor - load one hive at a time and it can't take the transaction logs into account.
+- [RegRipper](https://github.com/keydet89/RegRipper3.0) no transaction logs
+- [Eric Zimmerman tools](https://ericzimmerman.github.io/#!index.md)
+
+
 ## Key Properties
 
-REG_SZ	represents a single null terminated string
+REG_SZrepresents a single null terminated string
 
-Run OR RunOnce # type
+Run OR RunOnce
 
 ## Key Layout
 Root keys:
@@ -14,20 +26,20 @@ Root keys:
     HKEY_HKEY_USERS
 		Contains all the actively loaded user profiles on the computer - HKU
 			Registry hive 	Supporting files
-			HKEY_CURRENT_CONFIG 	System, System.alt, System.log, System.sav
-			HKEY_CURRENT_USER 	Ntuser.dat, Ntuser.dat.log
-			HKEY_LOCAL_MACHINE\SAM 	Sam, Sam.log, Sam.sav
-			HKEY_LOCAL_MACHINE\Security 	Security, Security.log, Security.sav
-			HKEY_LOCAL_MACHINE\Software 	Software, Software.log, Software.sav
-			HKEY_LOCAL_MACHINE\System 	System, System.alt, System.log, System.sav
-			HKEY_USERS\.DEFAULT 	Default, Default.log, Default.sav
+			`HKEY_CURRENT_CONFIG`	System, System.alt, System.log, System.sav
+			`HKEY_CURRENT_USER` 	Ntuser.dat, Ntuser.dat.log
+			`HKEY_LOCAL_MACHINE\SAM` 	Sam, Sam.log, Sam.sav
+			`HKEY_LOCAL_MACHINE\Security` 	Security, Security.log, Security.sav
+			`HKEY_LOCAL_MACHINE\Software` 	Software, Software.log, Software.sav
+			`HKEY_LOCAL_MACHINE\System` 	System, System.alt, System.log, System.sav
+			`HKEY_USERS\.DEFAULT` 	Default, Default.log, Default.sav
 		HKCU is a subkey of HKU
     HKEY_LOCAL_MACHINE
 		Configuration information of the local machine - HKLM
-		\SYSTEM\CurrentControlSet\Control\Session Manager\Environment	System environment variables
+		`\SYSTEM\CurrentControlSet\Control\Session Manager\Environment`	System environment variables
     HKEY_CLASSES_ROOT
-		Subkey HKLM\Software - HKCR, stores information program execution:
-		From Windows 2000 HKCU\Software\Classes would override the defaults of HKLM\Software\Classes
+		`Subkey HKLM\Software` - HKCR, stores information program execution:
+		From Windows 2000 `HKCU\Software\Classes would override the defaults of HKLM\Software\Classes`
 		HKCR merges a view of the registry from both sources and back compatible with earlier windoes versions
 		Be considerate of the parent/child structuring when store keys where exeisting keys enter the search chain
    HKEY_CURRENT_CONFIG
@@ -117,8 +129,7 @@ NTUSER.DAT | (mounted on HKEY_CURRENT_USER when a user logs in) | Located: C:\Us
 USRCLASS.DAT | (mounted on HKEY_CURRENT_USER\Software\CLASSES) |  Located: C:\Users\<username>\AppData\Local\Microsoft\Windows
 
 The Amcache Hive:
-Windows creates this hive to save information on programs that were recently run on the system.
-Stores additional data related to program executions.
+Windows creates this hive to save information on programs that were recently run on the system. Stores additional data related to program executions.
 ```powershell
 C:\Windows\AppCompat\Programs\Amcache.hve
 Amcache.hve\Root\File\{Volume GUID}\ //last executed programs
@@ -228,3 +239,8 @@ USB device Volume Name:
 ```powershell
 SOFTWARE\Microsoft\Windows Portable Devices\Devices
 ```
+
+
+## References
+
+[THM Forensics Room 1](https://tryhackme.com/room/windowsforensics1)

