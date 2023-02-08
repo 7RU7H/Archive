@@ -598,6 +598,10 @@ Create a SAS for container `Home -> Storage Accounts -> $ContainerName -> Shared
 
 ## Azure CLI
 
+Full actual documentation:
+- [Azure CLI overview](https://learn.microsoft.com/en-us/cli/azure/)
+- [Azure CLI command reference](https://learn.microsoft.com/en-us/cli/azure/reference-index)
+
 Variables in Bash `Variable` and in Powershell `$Variable`; `export $v` and `set $v` for current session environment variable creation.
 
 ```powershell
@@ -647,6 +651,95 @@ az deployment group create \
   --resource-group myResourceGroup \
   --template-file $templateFile \
   --parameters $x=$y
+```
+
+Azure VM command with subcommand for managing VMs
+```bash 
+# VM Subcommands:
+az vm create
+--no-wait # can be used in a script to not wait and create next VM 
+# Open a specific network port for inbound traffic
+az vm open-port 
+az vm open-port --port  80 --resource-group $rg --name $name
+# Deallocate a VM
+az vm deallocate 
+# details of a VM
+az vm show 
+az vm show  --resource-group $rg --name $name
+# Update a property of a virtual machine
+az vm update 
+# Start, Stop, Delete, Restart VM
+az vm start 
+az vm stop 
+az vm restart
+az vm delete
+# List active VMs
+az vm list 
+az vm list --output table
+# List the IP address by -n name
+az vm list-ip-addresses -n SampleVM -o table
+
+# List avaliable images
+# filter with:
+--publisher
+--sku
+--offer
+az vm image list --output table
+# Show all Microsoft images 
+az vm image list --publisher Microsoft --output table --all
+# All Wordpress images
+az vm image list --sku Wordpress --output table --all
+# Location specific images
+az vm image list --location eastus --output table
+# List Sizes of VM, can also be filtered
+az vm list-sizes --location eastus --output table
+```
+
+Create a VM
+```bash
+# Returns a response in JSON
+az vm create \
+  --resource-group $resource_group_name \
+  --location westus \
+  --name SampleVM \
+  --image UbuntuLTS \
+  --admin-username azureuser \
+  --generate-ssh-keys \
+  --verbose \ 
+  --size "Standard_DS2_v2"  
+```
+
+Resize a VM
+```bash
+# List options avaliable
+az vm list-vm-resize-options \
+    --resource-group $resource_group_name \
+    --name SampleVM \
+    --output table
+# Rezie
+az vm resize \
+    --resource-group $resource_group_name \
+    --name SampleVM \
+    --size Standard_D2s_v3
+```
+
+You can add filters with [JMESPath.org](http://jmespath.org/) an industry-standard query language built around JSON objects. `$identifier[?subsetObject != '0'].[names]`
+```bash
+az vm show \
+    --resource-group $resource_group_name \
+    --name SampleVM \
+	--query "networkProfile.networkInterfaces[].id" -o tsv
+# More Useful Queries
+--query "osProfile.adminUsername"
+--query hardwareProfile.vmSize
+```
+
+Verifying a stopped VM by querying PowerState
+```bash
+az vm get-instance-view \
+    --name SampleVM \
+    --resource-group $resource_group_name \
+    --query "instanceView.statuses[?starts_with(code, 'PowerState/')].displayStatus" -o tsv
 ```
 
 Create and Adminstrate a Service Plan

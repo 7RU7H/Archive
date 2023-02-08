@@ -1,4 +1,4 @@
-# Azure Administration - Managing Virtual Network
+# Azure Administration - Managing Virtual Networks
 
 
 ## Azure Virtual Networks

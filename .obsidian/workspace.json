@@ -181,15 +181,15 @@
   },
   "active": "79e95afd5b3565f0",
   "lastOpenFiles": [
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Virtual-Machines.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Managing-Virtual-Networks.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Kubernetes-Services.md",
     "Services/Kubernetes/Kubernetes.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Containers-Instances.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Application-Services.md",
     "Digitial-Forensics/Windows-Forensics.md",
     "Windows/Windows-Concepts/Windows-File-System.md",
-    "Tools/Forensics/Eric-Zimmerman-Tools.md",
-    "Windows/Windows-Registry.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration.md"
+    "Tools/Forensics/Eric-Zimmerman-Tools.md"
   ]
 }
