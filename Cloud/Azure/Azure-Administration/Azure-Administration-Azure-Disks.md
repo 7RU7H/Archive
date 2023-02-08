@@ -21,6 +21,9 @@ Azure Private Links to ensure traffic between Zure disk and Vms within the Micro
 
 Azure Backup can be used to create a backup job with time-based backups and backup retention policies
 
+#### Application data storage on a VM
+
+Dedicated data disks are generally considered the best place to store application data files. They can be larger than OS disks and you can optimize them for the cost and performance characteristics appropriate for your data.
 
 ## References
 

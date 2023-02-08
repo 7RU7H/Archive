@@ -20,43 +20,19 @@
             }
           },
           {
-            "id": "373dec0b2883aa2f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Kubernetes-Services.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c0d6e610bd035f01",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Services/Kubernetes/Kubernetes.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "79e95afd5b3565f0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Application-Services.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -114,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Application-Services.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -181,15 +157,15 @@
   },
   "active": "79e95afd5b3565f0",
   "lastOpenFiles": [
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Virtual-Machines.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Managing-Virtual-Networks.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Virtual-Machines.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Disks.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Virtual-Networking.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Kubernetes-Services.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Managing-Virtual-Networks.md",
     "Services/Kubernetes/Kubernetes.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Containers-Instances.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Application-Services.md",
-    "Digitial-Forensics/Windows-Forensics.md",
-    "Windows/Windows-Concepts/Windows-File-System.md",
-    "Tools/Forensics/Eric-Zimmerman-Tools.md"
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Application-Services.md"
   ]
 }

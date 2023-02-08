@@ -108,7 +108,9 @@ BIG WARNING - **Use Network Security Groups** - The defaults are dangerous
 			- Azure will automatically create Public IPs and allow internet access
 - Ports exposed - Use encrypted variants - [[Nmap-Cheatsheat]] is easy to use to find your RDP and SSH , SMB that is externally facing, just don't - obsfucation is not security.
 	- Just-In-Time access is avaliable if you don't have private routing. Do not expose services to internet continually
-	- 
+
+SMTP (port 25) is a special case. Depending on your subscription level and when your account was created, outbound SMTP traffic may be blocked.
+
 #### Connecting Virtual Neworks
 
 If you have multiple subscription or region you then will have multiple virtual networks to connect them via:

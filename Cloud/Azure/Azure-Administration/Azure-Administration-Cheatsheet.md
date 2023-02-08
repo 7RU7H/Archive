@@ -19,16 +19,13 @@ Create a Disk
 
 Wait for deployment, `Go to resource` 
 
-##### Create a Resource Group
-
+Create a Resource Group
 `Resource Groups -> Create` - Add tags for QoL 
 
-#### Administrating a Resource
-
+Administrating a Resource
 `Resources -> Resource Group -> Deployments -> $DeploymentName 
 
-###### Administrating a Resource Group
-
+Administrating a Resource Group
 `Resource Groups -> $ResourceGroup -> Settings` 
 - Deployments - Redeploy, delete
 - Security - Microsoft Defender for the Cloud
@@ -37,7 +34,6 @@ Wait for deployment, `Go to resource`
 - Locks - Apply locks on resources
 
 #### Moving Resources
-
 Moving Resources - there are end cases - [see Documentation for more]([Move resources to a new subscription or resource group - Azure Resource Manager | Microsoft Learn](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/move-resource-group-and-subscription)):
 -   If you're using Azure Stack Hub, you can't move resources between groups.
 -   [App Services move guidance](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/move-limitations/app-service-move-limitations)
@@ -63,7 +59,21 @@ Create a Custom Template
 - `Edit Template`
 - `Edit Parameters` - file named parameters 
 - `Load file` to upload - file named template
-- `Project, Instance details` - can be modified 
+- `Project, Instance details` - can be modified
+
+## Azure VMs
+
+Create a VM
+`Azure services -> Create resource -> Search (resource - Windows Server)`
+Provide configurations for Basic, Disks, Networking (**BEWARE** Azure creates default - it is non trivial to change after creation - CHECK! - Address space and Subnets!), Managemnt, Advanced; Next:
+1. Create an NSG
+2. Create inbound traffic rule 
+3. Attached data disks - best practice on App data storage not temp or C:
+
+Connect to a VM via RDP
+`Search All Resources -> $name -> Connect -> select RDP`
+
+
 
 ## Storage Accounts
 

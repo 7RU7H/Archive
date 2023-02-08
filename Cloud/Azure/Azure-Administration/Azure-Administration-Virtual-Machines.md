@@ -68,8 +68,22 @@ Azure Compute Units (ACU) a method of comparing compute CPU performance across A
 
 #### VM Via Azure Mobile App
 
-You can monitolt Domains
-- Newest VM - Delete the newest created VM, balanced across AZsr your VMs on the go with [mobile App](https://azure.microsoft.com/en-gb/products/app-service/mobile/). 
+You can monitorv Domains
+- Newest VM - Delete the newest created VM, balanced across AZsr your VMs on the go 
+- with [mobile App](https://azure.microsoft.com/en-gb/products/app-service/mobile/). 
+
+## Azure Portal Workflows
+
+Create a VM
+`Azure services -> Create resource -> Search (resource - Windows Server)`
+Provide configurations for Basic, Disks, Networking (**BEWARE** Azure creates default - it is non trivial to change after creation - CHECK! - Address space and Subnets!), Managemnt, Advanced; Next:
+1. Create an NSG
+2. Create inbound traffic rule 
+3. Attached data disks - best practice on App data storage not temp or C:
+
+Connect to a VM via RDP
+`Search All Resources -> $name -> Connect -> select RDP`
+
 
 #### VM extensions
 
@@ -139,6 +153,9 @@ Automation Accounts - `Search -> Automataion Accounts -> Create`
 And also:
 - Virtual Networks for VMs [[Azure-Administration-Virtual-Networking]]
 - Auto-instrumentation - https://learn.microsoft.com/en-us/azure/azure-monitor/app/codeless-overview
+
+
+
 
 ## CLI Workflows
 
