@@ -73,8 +73,6 @@ Provide configurations for Basic, Disks, Networking (**BEWARE** Azure creates de
 Connect to a VM via RDP
 `Search All Resources -> $name -> Connect -> select RDP`
 
-
-
 ## Storage Accounts
 
 Create in Azure Software Development Kit SDK or Portal `Storage Account -> Share Access signature`.
@@ -82,7 +80,89 @@ Create in Azure Software Development Kit SDK or Portal `Storage Account -> Share
 Create Storage Account `Search -> Storage Accounts`, provide name, location, redundancy 
 
 Configure Azure Storage Encryption:
-`Storage accounts -> $storage_accounts -> Encryption`
+`Storage accounts -> $storage_accounts -> EncBootstrap web applications
+```bash
+# C#
+# Install dotnet
+wget -q -O - https://dotnet.microsoft.com/download/dotnet/scripts/v1/dotnet-install.sh | bash -s -- --version 6.0.404
+export PATH="~/.dotnet:$PATH"
+echo "export PATH=~/.dotnet:\$PATH" >> ~/.bashrc
+# create a ASP.NET Core MVC application
+dotnet new mvc --name $webappName
+cd $webappName/
+dotnet run
+
+# Java - with maven-archetype-webapp template
+cd ~
+mvn archetype:generate -DgroupId=example.demo -DartifactId=$webappName -DinteractiveMode=false -DarchetypeArtifactId=maven-archetype-webapp -DarchetypeVersion=1.4
+cd $webappName
+mvn package
+# the result will be .war file to be deploy
+
+# Node.js
+mkdir $path/$WebApp
+cd $WebApp
+npm init -y
+# start Web App
+npm start
+# Python - with flask
+python3 -m venv venv 
+source venv/bin/activate
+pip install flask
+mkdir $path/$WebApp
+cd $WebApp
+# Add applications to requirements.txt
+pip freeze > requirements.txt
+# Test
+export FLASK_APP=application.py
+flask run
+# Adding code to source control with git
+git init
+git add .
+git commit -m "Initial commit"
+```
+
+Deploying a WebApp
+```bash
+# C# 
+cd $webappName
+# Publish to build and zip to package
+dontnet publish -o pub
+cd pub
+zip -r site.zip *
+# Deply with the az cli
+az webapp deployment source config-zip \
+    --src site.zip \
+    --resource-group $rgName \
+    --name $appName
+
+# Java
+# CLI credentials required
+az webapp deployment user set --user-name <username> --password <password>
+# WAR deploy
+cd $webappName/target
+curl -v -X POST -u <username>:<password> https://<your-app-name>.scm.azurewebsites.net/api/wardeploy --data-binary @$webappName.war
+
+# Node.js
+export APPNAME=$(az webapp list --query [0].name --output tsv)
+export APPRG=$(az webapp list --query [0].resourceGroup --output tsv)
+export APPPLAN=$(az appservice plan list --query [0].name --output tsv)
+export APPSKU=$(az appservice plan list --query [0].sku.name --output tsv)
+export APPLOCATION=$(az appservice plan list --query [0].location --output tsv)
+
+az webapp up --name $APPNAME --resource-group $APPRG --plan $APPPLAN --sku $APPSKU --location "$APPLOCATION"
+
+# Python 
+export APPNAME=$(az webapp list --query [0].name --output tsv)
+export APPRG=$(az webapp list --query [0].resourceGroup --output tsv)
+export APPPLAN=$(az appservice plan list --query [0].name --output tsv)
+export APPSKU=$(az appservice plan list --query [0].sku.name --output tsv)
+export APPLOCATION=$(az appservice plan list --query [0].location --output tsv)
+
+cd path/$webappName
+az webapp up --name $APPNAME --resource-group $APPRG --plan $APPPLAN --sku $APPSKU --location "$APPLOCATION"
+```
+ryption`
 
 Create a Azure Files Share
 `Storage Account -> $storage_account -> File Shares`
@@ -170,6 +250,90 @@ Configure Custom Domains - Either:
 - Intermediary domain mapping (when domain is already in use) - prepend `asverify` to subdomain it permit Azure to recognize your custom domain thereby using a intermediary domain to validate the domain.
 
 #### Secure Storage endpoints
+
+Bootstrap web applications
+```bash
+# C#
+# Install dotnet
+wget -q -O - https://dotnet.microsoft.com/download/dotnet/scripts/v1/dotnet-install.sh | bash -s -- --version 6.0.404
+export PATH="~/.dotnet:$PATH"
+echo "export PATH=~/.dotnet:\$PATH" >> ~/.bashrc
+# create a ASP.NET Core MVC application
+dotnet new mvc --name $webappName
+cd $webappName/
+dotnet run
+
+# Java - with maven-archetype-webapp template
+cd ~
+mvn archetype:generate -DgroupId=example.demo -DartifactId=$webappName -DinteractiveMode=false -DarchetypeArtifactId=maven-archetype-webapp -DarchetypeVersion=1.4
+cd $webappName
+mvn package
+# the result will be .war file to be deploy
+
+# Node.js
+mkdir $path/$WebApp
+cd $WebApp
+npm init -y
+# start Web App
+npm start
+# Python - with flask
+python3 -m venv venv 
+source venv/bin/activate
+pip install flask
+mkdir $path/$WebApp
+cd $WebApp
+# Add applications to requirements.txt
+pip freeze > requirements.txt
+# Test
+export FLASK_APP=application.py
+flask run
+# Adding code to source control with git
+git init
+git add .
+git commit -m "Initial commit"
+```
+
+Deploying a WebApp
+```bash
+# C# 
+cd $webappName
+# Publish to build and zip to package
+dontnet publish -o pub
+cd pub
+zip -r site.zip *
+# Deply with the az cli
+az webapp deployment source config-zip \
+    --src site.zip \
+    --resource-group $rgName \
+    --name $appName
+
+# Java
+# CLI credentials required
+az webapp deployment user set --user-name <username> --password <password>
+# WAR deploy
+cd $webappName/target
+curl -v -X POST -u <username>:<password> https://<your-app-name>.scm.azurewebsites.net/api/wardeploy --data-binary @$webappName.war
+
+# Node.js
+export APPNAME=$(az webapp list --query [0].name --output tsv)
+export APPRG=$(az webapp list --query [0].resourceGroup --output tsv)
+export APPPLAN=$(az appservice plan list --query [0].name --output tsv)
+export APPSKU=$(az appservice plan list --query [0].sku.name --output tsv)
+export APPLOCATION=$(az appservice plan list --query [0].location --output tsv)
+
+az webapp up --name $APPNAME --resource-group $APPRG --plan $APPPLAN --sku $APPSKU --location "$APPLOCATION"
+
+# Python 
+export APPNAME=$(az webapp list --query [0].name --output tsv)
+export APPRG=$(az webapp list --query [0].resourceGroup --output tsv)
+export APPPLAN=$(az appservice plan list --query [0].name --output tsv)
+export APPSKU=$(az appservice plan list --query [0].sku.name --output tsv)
+export APPLOCATION=$(az appservice plan list --query [0].location --output tsv)
+
+cd path/$webappName
+az webapp up --name $APPNAME --resource-group $APPRG --plan $APPPLAN --sku $APPSKU --location "$APPLOCATION"
+```
+
 
 `Storage Accounts -> $storage_account -> Networking Firewalls and virtual networks`; restrict access:
 - Enabled from all networks
@@ -556,6 +720,31 @@ Backup Azure App Service (App configuration settings, File content, connected Da
 - Standard or Premium tier App Service plan 
 - Storage Container - [[Azure-Administration-Storage-Accounts]]
 Provide the in `App Services -> $App -> Backup `
+
+## Azure Automation
+
+Create Automation Account
+`Search Automation Accounts -> Automation Accounts -> + Create
+
+Compile DSC script 
+`Search Automation Accounts -> Automation Accounts -> $AutomationAccount -> State configuration (DSC) -> Configurations -> Select DSC script -> Compile -> Yes`
+
+Register VMs with your Azure Automation Account
+`Search Automation Accounts -> Automation Accounts -> $AutomationAccount -> State configuration (DSC) -> Nodes + Add -> Configure settings -> Comfirm`
+
+Push is simple powershell include in the Powershell
+Pulling a configuration for lots of nodes - also included in the Powershell section
+1. Set up a DSC and create a DSC configuration
+2. Upload DSC script to Azure Automation account - create if required
+3. Add required modules, compile configuration
+4. Register VM
+5. On VM Install DSC VM extension
+6. Install WMF
+7. LCM applies the desired state -
+	1. Poll Pull Server 
+	2. Download
+	3. Compare
+	4. Update
 
 ## Containerisation
 
