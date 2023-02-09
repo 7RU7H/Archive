@@ -2,7 +2,7 @@
 
 
 If you want to grab a copy the registry hives from `%WINDIR%\System32\Config`, you cannot because it is a restricted file. Use:
-- [[KAPE]]
+- [[Kape]]
 - [[Autopsy]]
 - [FTK Imager](https://www.exterro.com/ftk-imager) is similar to Autopsy
 
@@ -151,20 +151,46 @@ SYSTEM\Select\LastKnownGood
 
 Volatile Control Set when machine is live: `CurrentControlSet = HKLM\SYSTEM\CurrentControlSet`
 
+Account RIDs
+```
+SAM\Domains\Account\Users\Names
+```
+User Account Creation:
+```powershell
+SAM\Domains\Accounts\User\{HEX}\$letter
+```
 Computer name:
 ```powershell
 SYSTEM\CurrentControlSet\Control\ComputerName\ComputerName
+SYSTEM\ControlSet001\Control\ComputerName\ComputerName  
 ```
 Time zone information:
 ```powershell
 SYSTEM\CurrentControlSet\Control\TimeZoneInformation
 ```
-Network interfaces and past networks:
+Command related
 ```powershell
+# Commands executed
+SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RunMRU
+# Excution totals
+SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\UserAssist
+```
+Binaries Executed
+```powershell
+NTUSER.DAT\Software\Microsoft\Windows\Currentversion\Explorer\UserAssist\{GUID}\Count
+```
+
+Network related 
+```powershell
+# Network interfaces 
 SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\Interfaces
-	Past networks:
+# Past networks:
 SOFTWARE\Microsoft\Windows NT\CurrentVersion\NetworkList\Signatures\Unmanaged
 SOFTWARE\Microsoft\Windows NT\CurrentVersion\NetworkList\Signatures\Managed
+# Network connections
+SOFTWARE\Microsoft\Windows NT\CurrentVersion\NetworkList\Profiles
+# Last Assign DHCP IP
+HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\Interfaces
 ```
 Autoruns:
 ```powershell
@@ -193,6 +219,11 @@ NTUSER.DAT\Software\Microsoft\Office\VERSION
 NTUSER.DAT\Software\Microsoft\Office\15.0\Word
 NTUSER.DAT\Software\Microsoft\Office\VERSION\UserMRU\LiveID_####\FileMRU
 ```
+File Shares
+```
+SYSTEM\ControlSet001\SErvices\LanmanSErver\Shares
+```
+
 Shellbags:
 ```powershell
 USRCLASS.DAT\Local Settings\Software\Microsoft\Windows\Shell\Bags

@@ -1,8 +1,7 @@
 
 # Eric Zimmerman Tools
 
-[Eric Zimmerman's tools](https://ericzimmerman.github.io/#!index.md)
-
+[Eric Zimmerman's tools](https://ericzimmerman.github.io/#!index.md) are commonly used in [[Windows-Forensics]]
 
 Program usage information is stored and loaded from:
 `C:\Windows\Prefetch`

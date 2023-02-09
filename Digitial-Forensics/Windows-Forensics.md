@@ -2,14 +2,14 @@
 ## Registry
 
 For a cheatsheet and short explainations of Hives and Keys see [[Windows-Registry]]. Bear in mind in attempting to copy the registry hives from `%WINDIR%\System32\Config` you will not be able, as it is a restricted file. Use:
-- [[KAPE]]
+- [[Kape]]
 - [[Autopsy]]
 - [FTK Imager](https://www.exterro.com/ftk-imager) is similar to Autopsy
 
 After extraction:
 - [AccessData's Registry Viewer](https://accessdata.com/product-download/registry-viewer-2-0-0) has a similar user interface to the Windows Registry Editor - load one hive at a time and it can't take the transaction logs into account.
-- [RegRipper](https://github.com/keydet89/RegRipper3.0) no transaction logs
-- [Eric Zimmerman tools](https://ericzimmerman.github.io/#!index.md)
+- [RegRipper](https://github.com/keydet89/RegRipper3.0) no transaction logs - but good for information deobfuscation
+- [Eric Zimmerman tools](https://ericzimmerman.github.io/#!index.md) - [[Eric-Zimmerman-Tools]]
 
 ## File Systems
 

@@ -14,7 +14,7 @@ This is a hub and overview page for Digital Forensics related topics. Although D
 
 #### Tools
 
-[[KAPE]]
+[[Kape]]
 [[Autopsy]]
 [[Volatility]]
 [[Redline]]

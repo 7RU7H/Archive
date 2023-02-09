@@ -1,8 +1,9 @@
 # Kali Setup Docker 
 
 ## Install on Kali
+
 ```bash
-apt install -y docker.io
+sudo apt install docker.io
 systemctl enable docker --now
 ```
 

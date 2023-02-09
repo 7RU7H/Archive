@@ -6,18 +6,19 @@ Some of this article maybe considered as critical, but to get the most out ChatG
 
 ## Beware
 
+- If something is not documented it won't tell you! It will answer incorrectly 
 - It does not (at lauch) cite references
 - It can be incorrect and its inferenciable that English tone is very arrogant and can be very misleading.
 - Its verbosity is own weakness - it pads outs answers with discourse
 - It limited in its capicity answer by ethical, legal, etc restraints. Its content policy will almost certianly have telemetry and also limits its usefulness, but you generally can rephrase questions and get answers that bypass this policy. 
-
+- ChatGPT can be very very wrong
 
 ## Goals of ChatGPT Whispering
 
-Limit output verbosity
-Specificity
-
-
+- Get better answers
+- Limit output verbosity
+- Specificity in answering
+- Weed out undocumented answers - if an AI or Special Human can't find something that should be documented it probably should be
 - Recursively ask follow-up questions 
 
 

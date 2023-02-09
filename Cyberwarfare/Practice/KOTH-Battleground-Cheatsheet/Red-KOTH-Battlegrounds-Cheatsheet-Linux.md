@@ -10,7 +10,12 @@ Hide your shell, beware is easily counterable [ethicalhacker club article](https
 exec >/dev/null # restored with: `exec >/dev/tty`
 ```
 
-
+Linux File ACLs and Attributes - 
+```bash
+getfacls
+chattr
+lsattr
+```
 
 
 ## References
