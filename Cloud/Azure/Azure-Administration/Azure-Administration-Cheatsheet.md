@@ -1051,9 +1051,9 @@ Update-Module -Name Az
 
 ```
 
-
+Useful commands
 ```powershell
-# Useful commands
+# Connect to Azure
 Connect-AzAccount
 # Set a default Subscription 
 $context = Get-AzSubscription -SubscriptionId {Your subscription ID}
@@ -1067,6 +1067,8 @@ New-AzResourceGroup -Name <name> -Location <location>
 # Verify Resources
 Get-AzResource
 Get-AzResource -ResourceGroupName $rgName
+# Test connection to another VM or resource
+Test-NetConnection -ComputerName $ip -Port 3389 -InformationLevel 'Detailed'
 ```
 
 General Azure aaS Commands for Data

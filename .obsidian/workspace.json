@@ -20,60 +20,24 @@
             }
           },
           {
-            "id": "79e95afd5b3565f0",
+            "id": "8bfa15e3a67626a6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Coding-Scripting-Programming/Languages/Python/Useful_Python.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "27b561d2b8dbb31d",
+            "id": "09ad0fe978166df8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Red-KOTH-Battlegrounds-Cheatsheet-Linux.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "3c89d59d39a80528",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Windows/Windows-Registry.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "120fd0abc3791f02",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Hacker-Distros/Kali/Setup-Services/Kali-Setup-Docker.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9df0e3e253df6fdf",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tools/Forensics/Kape.md",
+                "file": "Coding-Scripting-Programming/Languages/Powershell/Useful_Powershell.md",
                 "mode": "source",
                 "source": false
               }
@@ -118,7 +82,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -138,7 +103,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Coding-Scripting-Programming/Languages/Python/Useful_Python.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -166,17 +131,17 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "79e95afd5b3565f0",
+  "active": "8bfa15e3a67626a6",
   "lastOpenFiles": [
-    "Hacker-Distros/Kali/Setup-Services/Kali-Setup-Docker.md",
-    "Reconnaissance/Port-Knocking.md",
-    "Windows/Windows-Registry.md",
-    "Digitial-Forensics/Windows-Forensics.md",
-    "Artificial-Intelligence/Chat-GPT-Whispering.md",
+    "Coding-Scripting-Programming/Languages/Powershell/Useful_Powershell.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Virtual-Networking.md",
     "Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Red-KOTH-Battlegrounds-Cheatsheet-Linux.md",
-    "Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Red-KOTH-Battlegrounds-Cheatsheet-Windows.md",
-    "Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Blue-KOTH-Battlegrounds-Cheatsheet-Windows.md",
-    "Tools/Forensics/Kape.md",
-    "Tools/Forensics/Eric-Zimmerman-Tools.md"
+    "Hacker-Distros/Kali/Setup-Services/Kali-Setup-Docker.md",
+    "Windows/Windows-Registry.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+    "Coding-Scripting-Programming/Languages/Python/Useful_Python.md",
+    "Reconnaissance/Port-Knocking.md",
+    "Digitial-Forensics/Windows-Forensics.md"
   ]
 }

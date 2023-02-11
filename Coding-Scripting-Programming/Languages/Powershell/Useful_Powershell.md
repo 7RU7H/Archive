@@ -237,11 +237,10 @@ New-ItemProperty -Path $RegistryPath -Name $Name -Value $Value -PropertyType DWO
 ```
 
 
-
 ## Networking
 ```powershell
 # Test connection
-Test-NetConnection -ComputerName 127.0.0.1 -Port 80
+Test-NetConnection -ComputerName 127.0.0.1 -Port 80 -InformationLevel 'Detailed'
 # Check the test connection with:
 (New-Object System.Net.Sockets.TcpClient("127.0.0.1", "80")).Connected
 
@@ -325,7 +324,7 @@ $cred = new-object -typename system.management.automation.pscredential -arguemen
 $session = newpssession -computername dc01 -credential $cred
 enter-pssession -session $sessions
 # Sometimes you need to use invoke command instead of $session creation due to shell limitations
-invoke-comand -computername $computername -ScriptBlock { hostname }  -Credential $cred
+invoke-command -computername $computername -ScriptBlock { hostname }  -Credential $cred
 # PSRemoting may require a specific configuration:
 -ConfigurationName $configName
 ```

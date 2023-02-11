@@ -400,7 +400,44 @@ Azure Firewall Rules are processed by:
 - Network rules
 - Application rules
 
+#### Azure Virtual Network Peering
+
+[Azure Virtual Network peering](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-peering-overview) lets you connect virtual networks in the same or different regions, so resources in both networks can communicate with each other, but are still managed separately. Azure Virtual Network peering does not require downtime for resources, utilizes the Azure infrastructure simplifying and strengthening performance.  
+
+- Regional virtual network peering - Cloud, Public or Govenment Region 
+- Global virtual network peering
+
+You cannot:
+- Peering different Azure Government cloud 
+
+Configure a Azure VPN Gateway in a peered virtual network as a transit point between target Virtual Networks for peering.
+- VPN gateway in the hub, not in peer networks
+- Apply NSGs
+- One VPN gateway, but can be all the following 
+	- vnet-to-vnet
+	- site-to-site
+	- point-to-site
+
+Vnet Peering - requires account with `(Classic) Network Contributor` role
+`Search -> Virtual Networks -> $Vnet -> SEttings -> Peering -> Add(peering)` 
+- Create in hub, not peers; make NSG rules!
+- One Gateway to Transit them All - vnet-to-vnet, site-to-site and point-to-site
+- Vnets must have resources, the first must be made with [[Azure-Administration-Azure-Resource-Manager]], the second is referred to as the remote network
+-  [Permissions](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-manage-peering?tabs=peering-portal#permissions)
+- Extending Peering 
+	- Hub and spoke network - Central hub for VPN gateway, spoke Vnets
+	- User-defined route (UDR): either a hop to/from VM IP address or VPN Gateway
+	- Service chaining: define UDRs from Vnet to a network virtual appliance or VPN
+
+RDP in and Test with:
+```powershell
+Test-NetConnection -ComputerName $ip -Port 3389 -InformationLevel 'Detailed'
+```
+
+
 
 ## References
 
 [John Savill's Microsoft Azure Master Class Part 6 - Networking](https://www.youtube.com/watch?v=K8ePZdLfU7M&t=3511s)
+[Vnet Peering Permissions](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-manage-peering?tabs=peering-portal#permissions)
+[Azure Virtual Network peering documentation](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-peering-overview).
