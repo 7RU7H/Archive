@@ -553,6 +553,8 @@ Consideration :
 Create and manage public IPs
 `Search "Public IP Address -> Pulic IP addresses" ` then with `+ Create` provide the options `IP version, SKU, Tier, Name, Assignment, Routing`
 
+Implement Virtual Networking
+`Search -> Virtual Network -> $Vnet (With Subnet, VMs, DNSm, NSGs, etc configured)` in the `Private DNS Zone -> Virtual Network Link -> + Add - provide a Link name, Vnet` 
 
 #### NSG Workflow
 
@@ -612,6 +614,19 @@ Local Network Gateways - to represent the on-premises site that you want to conn
 On-Premise VPN devices: shared key and public IP address of your VPN gateway
 - Configuration scripts are available for some devices - [Download VPN device configuration scripts for S2S VPN connections](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-download-vpndevicescript) to find a downloadable script for your VPN device.
 
+#### Virtual Network Peering
+
+Vnet Peering - requires account with `(Classic) Network Contributor` role
+`Search -> Virtual Networks -> $Vnet -> SEttings -> Peering -> Add(peering)` 
+- Create in hub, not peers; make NSG rules!
+- One Gateway to Transit them All - vnet-to-vnet, site-to-site and point-to-site
+- Vnets must have resources, the first must be made with [[Azure-Administration-Azure-Resource-Manager]], the second is referred to as the remote network
+-  [Permissions](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-manage-peering?tabs=peering-portal#permissions)
+- Extending Peering 
+	- Hub and spoke network - Central hub for VPN gateway, spoke Vnets
+	- User-defined route (UDR): either a hop to/from VM IP address or VPN Gateway
+	- Service chaining: define UDRs from Vnet to a network virtual appliance or VPN
+
 ## VM Scale Sets
 
 Create and Manage VM Scale Sets
@@ -620,7 +635,8 @@ Create and Manage VM Scale Sets
 - Orchestration mode:
 	- Uniform - for large scale stateless workloads with indetical instances - department workstation
 	- Flexible - high availability at scale with identical or multiple instances - any configuration to the scale set.
-- Advanced tab to enable beyond 100 instances; spreading for optimal spreading of allocation 
+- Advanced tab to enable beyond 100 instances; spreading for optimal spreading of allocation Implement Virtual Networking
+`Search -> Virtual Network -> $Vnet (With Subnet, VMs, DNSm, NSGs, etc configured)` in the `Private DNS Zone -> Virtual Network Link -> + Add - provide a Link name, Vnet` 
  - Configure Scaling in the `Scaling` tab; 
 	 - Policy - min/max number of instances; manula or autoscaling 
 	 - Scale in - CPU threshold, decrease of instances
