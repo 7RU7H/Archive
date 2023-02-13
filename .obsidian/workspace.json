@@ -56,7 +56,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -114,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Virtual-Networking.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,10 +142,10 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "09ad0fe978166df8",
+  "active": "1e2721b479dae2ca",
   "lastOpenFiles": [
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Virtual-Networking.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
     "Security-Enterprises/Secure-Architectures/Security-Policies.md",
     "Coding-Scripting-Programming/Languages/Bash/Useful_Bash.md",
     "Security-Enterprises/Secure-Architectures/Security-Principles.md",

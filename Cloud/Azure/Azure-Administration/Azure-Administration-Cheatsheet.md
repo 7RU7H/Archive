@@ -528,6 +528,10 @@ Administrator Policy - Admin password reset policy.
 
 ## Azure Virtual Networking
 
+Address spaces - Review IP Schema Implementation
+By CIDR 10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16
+Routable address over the internet: 215.11.0.0 to 215.11.255.255
+
 View a Network Typology by subscription, Resource Group and Vnet
 `Search -> Network Watcher -> Topology`
 
@@ -588,7 +592,15 @@ Install-WindowsFeature -Name "RSAT-RemoteAccess-Powershell"
 
 Load Balancers Workflows by Type and important information:
 `Search -> Load Balancers` and `+ Create` a type:
-- Application Gateway - Region layer 7 load balancer
+- Application Gateway - Region layer 7 load balancer - Application Gateway Configuration
+	- Routing Methods
+		- Path-based routing: sends requests with different URL paths to different pools of back-end servers.
+		- Multi-site routing:  configures more than one web application on the same application gateway instance.
+	- Optional Firewall checks (Recommended)
+		- OWASP defines a set of generic rules for detecting attacks. These rules are referred to as the Core Rule Set (CRS)
+	- Traffic Redirection
+	- Rewrite HTTP Headers
+	- Custom Error pages instead of default error pages - highly advised Attacker need error pages
 - Front Door - Global Layer 7 load balancer 
 - Load Balancer - Layer 4 for internal and public configurations
 	- SKU options: Basic, Standard, and Gateway 
@@ -1005,6 +1017,45 @@ az vm get-instance-view \
     --name SampleVM \
     --resource-group $resource_group_name \
     --query "instanceView.statuses[?starts_with(code, 'PowerState/')].displayStatus" -o tsv
+```
+
+Create a Vnet with Subnets 
+```powershell
+# Create Vnet
+az network vnet create \
+    --resource-group $rGroup \
+    --name CoreServicesVnet \
+    --address-prefixes 10.20.0.0/16 \
+    --location westus
+# Creat Subnets with address prfixes
+az network vnet subnet create \
+    --resource-group $rGroup \
+    --vnet-name CoreServicesVnet \
+    --name GatewaySubnet \
+    --address-prefixes 10.20.0.0/27
+
+az network vnet subnet create \
+    --resource-group $rGroup \
+    --vnet-name CoreServicesVnet \
+    --name SharedServicesSubnet \
+    --address-prefixes 10.20.10.0/24
+
+az network vnet subnet create \
+    --resource-group $rGroup \
+    --vnet-name CoreServicesVnet \
+    --name DatabaseSubnet \
+    --address-prefixes 10.20.20.0/24
+
+az network vnet subnet create \
+    --resource-group $rGroup \
+    --vnet-name CoreServicesVnet \
+    --name PublicWebServiceSubnet \
+    --address-prefixes 10.20.30.0/24
+# List the subnets
+az network vnet subnet list \
+    --resource-group $rGroup \
+    --vnet-name CoreServicesVnet \
+    --output table
 ```
 
 Azure CLI view network typology

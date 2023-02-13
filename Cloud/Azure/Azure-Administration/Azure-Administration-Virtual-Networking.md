@@ -247,6 +247,19 @@ Manage:
 	- Health probe
 	- Session persistence: None (default), Client IP, Client IP and Protocol
 
+Application Gateway Configuration
+- Routing Methods
+	- Path-based routing: sends requests with different URL paths to different pools of back-end servers.
+	- Multi-site routing:  configures more than one web application on the same application gateway instance.
+- Optional Firewall checks (Recommended)
+	- OWASP defines a set of generic rules for detecting attacks. These rules are referred to as the Core Rule Set (CRS)
+- Traffic Redirection
+- Rewrite HTTP Headers
+- Custom Error pages instead of default error pages - highly advised Attacker need error pages
+
+Application Gateway distributes requests across multiple servers by using a round-robin technique.
+![](azureapplicationgatewayflowdiagram.png)
+- Listen is either Basic or Multi-site and handle TLS/SSL certificates
 
 #### Network Watcher
 
@@ -296,6 +309,79 @@ NSGs are focused on traffic inot and out of the virtual network, Azure PaaS opti
 - Virtual firewalls on service are configurable to allow only a specific subnet
 - Service Enpoint Policies allow specific instances of services to be allowed from a virtual network, which is not possible with NSG service Tag
 - Service Endpoints are not routeable
+
+#### Designing an IP addressing schema for your Azure deployment
+
+Before you start integrating Azure with on-premises networks, it's important to identify the current private IP address scheme used in the on-premises network. There can be no IP address overlap for interconnected networks. To ensure compatibility between:
+- On-premise: Administrator defined
+- Azure: Azure (Reserved Address spaces!) and NSG defined
+	- Public IPs
+		- Public IP addres prefix is reserved - the rest is specified by Azure
+		- Allows On-Premise Public IP address
+	- Private IPs
+		- Reserved by Internet Assigned Numbers Authority (IANA) based on your network requirements:
+			-   10.0.0.0/8
+			-   172.16.0.0/12
+			-   192.168.0.0/16
+	 - Dynamic or Static allocation
+	- SKUs: Basic or Standard
+
+Routable address over the internet: 215.11.0.0 to 215.11.255.255
+
+Discover IP address scheme requirements:
+-   How many devices do you have on the network?
+-   How many devices are you planning to add to the network in the future?
+
+When your network expands, you don't want to redesign the IP address scheme. Here are some other questions you could ask:
+-   Based on the services running on the infrastructure, what devices do you need to separate?
+-   How many subnets do you need?
+-   How many devices per subnet will you have?
+-   How many devices are you planning to add to the subnets in future?
+-   Are all subnets going to be the same size?
+-   How many subnets do you want or plan to add in future?
+
+Address spaces - Review IP Schema Implementation
+By CIDR 10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16
+Routable address over the internet: 215.11.0.0 to 215.11.255.255
+
+Create a Vnet with Subnets 
+```powershell
+# Create Vnet
+az network vnet create \
+    --resource-group $rGroup \
+    --name CoreServicesVnet \
+    --address-prefixes 10.20.0.0/16 \
+    --location westus
+# Creat Subnets with address prfixes
+az network vnet subnet create \
+    --resource-group $rGroup \
+    --vnet-name CoreServicesVnet \
+    --name GatewaySubnet \
+    --address-prefixes 10.20.0.0/27
+
+az network vnet subnet create \
+    --resource-group $rGroup \
+    --vnet-name CoreServicesVnet \
+    --name SharedServicesSubnet \
+    --address-prefixes 10.20.10.0/24
+
+az network vnet subnet create \
+    --resource-group $rGroup \
+    --vnet-name CoreServicesVnet \
+    --name DatabaseSubnet \
+    --address-prefixes 10.20.20.0/24
+
+az network vnet subnet create \
+    --resource-group $rGroup \
+    --vnet-name CoreServicesVnet \
+    --name PublicWebServiceSubnet \
+    --address-prefixes 10.20.30.0/24
+# List the subnets
+az network vnet subnet list \
+    --resource-group $rGroup \
+    --vnet-name CoreServicesVnet \
+    --output table
+```
 
 #### Configuring Network Routing and Endpoints
 
