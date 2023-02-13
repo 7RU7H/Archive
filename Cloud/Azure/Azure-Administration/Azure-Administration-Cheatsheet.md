@@ -528,6 +528,9 @@ Administrator Policy - Admin password reset policy.
 
 ## Azure Virtual Networking
 
+View a Network Typology by subscription, Resource Group and Vnet
+`Search -> Network Watcher -> Topology`
+
 Create Virtual Networks and Manage
 `Search "Virtual Networks" -> Virtual Networks (-> Create)`
 - Azure Fiewall, Bastion and other require a subnet!
@@ -555,6 +558,53 @@ Create and manage public IPs
 
 Implement Virtual Networking
 `Search -> Virtual Network -> $Vnet (With Subnet, VMs, DNSm, NSGs, etc configured)` in the `Private DNS Zone -> Virtual Network Link -> + Add - provide a Link name, Vnet` 
+
+Router Configuration:
+- NIC level:
+	- Enable IP forwarding or Run command:
+```powershell
+# Routing VM - Lab example!
+# You should probably not allow alot of these features
+Install-WindowsFeature RemoteAccess -IncludeManagementTools
+Install-WindowsFeature -Name Routing  -IncludeManagementTools  -IncludeAllSubFeature
+Install-WindowsFeature -Name "RSAT-RemoteAccess-Powershell"
+Install-RemoteAccess -VpnType RoutingOnly
+Get-NetAdapter | Set-NetIPInterface -Forwarding Enabled
+```
+- Route Table
+	- `+ Create`, 
+	- `Subnet -> + Associate` with a subnet
+	- `Routes -> + Add`
+
+Vm Script - `$VM -> Run Command`
+```powershell
+# Admin remote access work station
+Install-WindowsFeature RemoteAccess -IncludeManagementTools
+Install-WindowsFeature -Name Routing  -IncludeManagementTools  -IncludeAllSubFeature
+Install-WindowsFeature -Name "RSAT-RemoteAccess-Powershell"
+```
+
+#### Load Balancers
+
+Load Balancers Workflows by Type and important information:
+`Search -> Load Balancers` and `+ Create` a type:
+- Application Gateway - Region layer 7 load balancer
+- Front Door - Global Layer 7 load balancer 
+- Load Balancer - Layer 4 for internal and public configurations
+	- SKU options: Basic, Standard, and Gateway 
+- Traffic Manager - DNs-based traffic load balancer
+Manage:
+`Search -> Load Balancers -> $loadBalancer`:
+- Front-end IP configuration 
+- Back-end pools: `+ Add -> $name & $Vnet`
+- Health probes: `+ Add -> $name & Protocol, Port and Interval`
+- Load-balancing rules (can be used in combination with NAT rules) - requires a frontend, backend, and health probe; define a rule:
+	- IPv4 or 6
+	- Frontend IP address
+	- Backend pool or Backend port
+	- Health probe
+	- Session persistence: None (default), Client IP, Client IP and Protocol
+
 
 #### NSG Workflow
 
@@ -957,6 +1007,17 @@ az vm get-instance-view \
     --query "instanceView.statuses[?starts_with(code, 'PowerState/')].displayStatus" -o tsv
 ```
 
+Azure CLI view network typology
+```powershell
+# A Configuration
+az network watcher configure \
+  --resource-group $rGroup \
+  --location eastus \
+  --enabled true
+# Show a typology for a resource group
+az network watcher show-topology --resource-group $rGroup
+```
+
 Create and Adminstrate a Service Plan
 ```powershell
 # Create a Service Plan
@@ -1254,6 +1315,30 @@ Add-AzTableRow -table $cloudTable -partitionKey $partitionKey -rowKey ("CA") -pr
 Get-AzTableRow -table $cloudTable | ft
 # Delete a table
 Remove-AzStorageTable –Name $tableName –Context $ctx
+```
+
+NetworkWatcher
+```powershell
+# Create a new NetworkWatcher
+New-AzNetworkWatcher `
+  -Name NetworkWatcher_eastus `
+  -ResourceGroupName NetworkWatcherRG
+```
+
+Retrieve a Network Watcher instance with [Get-AzNetworkWatcher](https://learn.microsoft.com/en-us/powershell/module/az.network/get-aznetworkwatcher)
+```powershell
+$nw = Get-AzResource `
+  | Where {$_.ResourceType -eq "Microsoft.Network/networkWatchers" -and $_.Location -eq "EastUS" }
+$networkWatcher = Get-AzNetworkWatcher `
+  -Name $nw.Name `
+  -ResourceGroupName $nw.ResourceGroupName
+```
+
+Retrieve a topology
+```powershell
+Get-AzNetworkWatcherTopology `
+  -NetworkWatcher $networkWatcher `
+  -TargetResourceGroupName $rGroup
 ```
 
 ## Bash

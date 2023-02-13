@@ -206,6 +206,89 @@ Create Network Security Group
 
 Application Security Groups - ASG tags are tags that help when the network is sparse that helps in  rule keeping instead worrying about IP ranges the application is in.
 
+#### Azure Load Balancer
+
+Load Balancing is used to efficiently distribute incoming network traffic across back-end servers and resources. A load balancer is implemented by using load-balancing rules and health probes. It sit between the Frontend and Backend to test the Backend and deal with the flow of traffic from the Frontend. 
+- Load Balancer scales up to millions of TCP and UDP application flows.
+- For Inbound and outbound
+- Public or internal
+- Components:
+	- Front-end IP configuration 
+		- Specifies the public IP or internal IP that your load balancer responds to.
+	- Back-end pools
+		- Are services and resources including VMs or Scale-sets
+	- Health probes
+		- Tests health of Backend
+	- Load-balancing rules
+		- Detirmine traffic distribution to Backend
+		
+A Load Balancer uses a five-tuple (source IP, source port, destination IP, destination port, and protocol type) hash to map traffic to available servers.
+
+Basic Vs Standard SKUs for Load Balancers
+![1080](azurecomparebasicandstandskusforloadbalancers.png)
+The Gateway SKU supports high performance and high availability scenarios with third-party network virtual appliances (NVAs).
+
+Load Balancers Workflows by Type and important information:
+`Search -> Load Balancers` and `+ Create` a type:
+- Application Gateway - Region layer 7 load balancer
+- Front Door - Global Layer 7 load balancer 
+- Load Balancer - Layer 4 for internal and public configurations
+	- SKU options: Basic, Standard, and Gateway 
+- Traffic Manager - DNs-based traffic load balancer
+Manage:
+`Search -> Load Balancers -> $loadBalancer`:
+- Front-end IP configuration 
+- Back-end pools: `+ Add -> $name & $Vnet`
+- Health probes: `+ Add -> $name & Protocol, Port and Interval`
+- Load-balancing rules (can be used in combination with NAT rules) - requires a frontend, backend, and health probe; define a rule:
+	- IPv4 or 6
+	- Frontend IP address
+	- Backend pool or Backend port
+	- Health probe
+	- Session persistence: None (default), Client IP, Client IP and Protocol
+
+
+#### Network Watcher
+
+View a Network Typology by subscription, Resource Group and Vnet
+`Search -> Network Watcher -> Topology`
+
+Azure CLI view network typology
+```powershell
+# A Configuration
+az network watcher configure \
+  --resource-group $rGroup \
+  --location eastus \
+  --enabled true
+# Show a typology for a resource group
+az network watcher show-topology --resource-group $rGroup
+```
+
+Create a new NetworkWatcher
+```powershell
+New-AzNetworkWatcher `
+  -Name NetworkWatcher_eastus `
+  -ResourceGroupName NetworkWatcherRG
+```
+
+Retrieve a Network Watcher instance with [Get-AzNetworkWatcher](https://learn.microsoft.com/en-us/powershell/module/az.network/get-aznetworkwatcher)
+```powershell
+$nw = Get-AzResource `
+  | Where {$_.ResourceType -eq "Microsoft.Network/networkWatchers" -and $_.Location -eq "EastUS" }
+$networkWatcher = Get-AzNetworkWatcher `
+  -Name $nw.Name `
+  -ResourceGroupName $nw.ResourceGroupName
+```
+
+Retrieve a topology
+```powershell
+Get-AzNetworkWatcherTopology `
+  -NetworkWatcher $networkWatcher `
+  -TargetResourceGroupName $rGroup
+```
+
+[View Azure virtual network topology | Microsoft Learn](https://learn.microsoft.com/en-us/azure/network-watcher/view-network-topology)
+
 #### Service Endpoints and Service Endpoints Policies
 
 NSGs are focused on traffic inot and out of the virtual network, Azure PaaS options have built-in Firewalls to often restrict a service to only spoecific subnets of specific virtual networks.Service endpoints make a specific subnet known to specific Azure service and add optimal path to service.
