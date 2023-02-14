@@ -13,7 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/Forensics/Autopsy.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-DNS.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "fe81a6612a11b03e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Networks/Network-Theory/Network-Protocols/DNS-Defined.md",
                 "mode": "source",
                 "source": false
               }
@@ -77,7 +89,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/Forensics/Autopsy.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-DNS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,15 +119,15 @@
   },
   "active": "e990632f1b0eed2c",
   "lastOpenFiles": [
-    "Tools/SIEMs/Splunk.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+    "Networks/Network-Theory/Network-Protocols/DNS-Defined.md",
+    "Windows/Windows-Commands/Windows-Commands.md",
+    "Windows/Windows-Commands/Icalcs-Command.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-DNS.md",
+    "Cloud/Cloud-Hacking/Azure-Hacking.md",
+    "Reconnaissance/Passive-Information-Gathering/DNS-Recon-Passive.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Virtual-Networking.md",
-    "Security-Enterprises/Secure-Architectures/Security-Policies.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
-    "Coding-Scripting-Programming/Languages/Bash/Useful_Bash.md",
-    "Security-Enterprises/Secure-Architectures/Security-Principles.md",
-    "Coding-Scripting-Programming/Languages/Powershell/Useful_Powershell.md",
-    "Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Red-KOTH-Battlegrounds-Cheatsheet-Linux.md",
-    "Hacker-Distros/Kali/Setup-Services/Kali-Setup-Docker.md"
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Managing-Virtual-Networks.md",
+    "Tools/Forensics/Autopsy.md"
   ]
 }

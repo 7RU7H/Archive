@@ -1058,6 +1058,49 @@ az network vnet subnet list \
     --output table
 ```
 
+Query Vnet are Provisioned
+```powershell
+az network vnet list --query "[?contains(provisioningState, 'Succeeded')]" --output table
+```
+
+Create peering between two Vnets
+```powershell
+# Forward and Reverseing Peering is required
+# Initial Forward Peering
+az network vnet peering create \
+    --name SalesVNet-To-MarketingVNet \
+    --remote-vnet MarketingVNet \
+    --resource-group $rgNameSales \
+    --vnet-name SalesVNet \
+    --allow-vnet-access
+# Reverse peering between the inital Vnet Peering
+az network vnet peering create \
+    --name MarketingVNet-To-SalesVNet \
+    --remote-vnet SalesVNet \
+    --resource-group $rgNameMarketing \
+    --vnet-name MarketingVNet \
+    --allow-vnet-access
+
+# Query Connection
+az network vnet peering list \
+    --resource-group $rgName \
+    --vnet-name $VnetName \
+    --query "[].{Name:name, Resource:resourceGroup, PeeringState:peeringState, AllowVnetAccess:allowVirtualNetworkAccess}"\
+    --output table
+
+# Check Effective Routes
+az network nic show-effective-route-table \
+    --resource-group $rgNameSales \
+    --name SalesVMVMNic \
+    --output table
+    
+# Ceck Effective Routes From the Reverse Peering
+az network nic show-effective-route-table \ 
+--resource-group $rgNameMarketing \ 
+--name MarketingVMVMNic \ 
+--output table
+```
+
 Azure CLI view network typology
 ```powershell
 # A Configuration

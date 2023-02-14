@@ -4,8 +4,15 @@
 
 Domain Name System([DNS](https://en.wikipedia.org/wiki/Domain_Name_System)) is a distributed database responsible for translating domain names into IP addresses. 
 
+A DNS Server provides:
+- Maintains a local cache of recently accessed or used domain names and their IP addresses.
+- Maintains the key-value pair database of IP addresses and any host or subdomain over which the DNS server has authority
+
 ## Links
-[For Active Enumeration](DNS-Recon-Active.md) and [for Passive Enumeration](DNS-Recon-Passive.md)
+
+[For Active Enumeration](DNS-Recon-Active.md)
+[for Passive Enumeration](DNS-Recon-Passive.md)
+[[Azure-Administration-Azure-DNS]]
 
 ## Theory
 
@@ -68,6 +75,7 @@ From [Cloudflare's Learning dns-records](https://www.cloudflare.com/learning/dns
 
 
 ## DNS Limitations
+
 - It is not a transport protocol!
 -   The maximum length of the Fully Qualified FQDN domain name (including .separators) is 255 characters.
 -   The subdomain name (label) length must not exceed 63 characters (not including .com, .net, etc)
@@ -85,3 +93,4 @@ it at its destination.
 
 [msdcs domains](https://standalonelabs.wordpress.com/2011/05/08/what-is-the-_msdcs-subdomain/)
 [Cloudflare's Learning dns-records](https://www.cloudflare.com/learning/dns/dns-records/)
+[Azure What is DNS](https://learn.microsoft.com/en-us/training/modules/host-domain-azure-dns/2-what-is-azure-dns)

@@ -7,6 +7,9 @@ Compromise the SAS
 Control and Reduce valid digital communication between subscription holder and Azure - force older methods of communication to provide more time for later objective
 Persist on-redeployment post-IR-removal
 
+## Split-Horizon Request Forgery
+
+Azure DNS allows for public and private domains of the same name to exist this seems like a vector for which you can exploit the DNS server request to give you the incorrect lookup.
 
 
 ## Adminstrative Password Reuse

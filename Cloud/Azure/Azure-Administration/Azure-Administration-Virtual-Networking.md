@@ -1,7 +1,8 @@
 # Azure Administration - Virtual Networking
 
+## Azure Virtual Networks
 
-Virtual Networks consist of one of more Address Space(s) available IP ranges that are typically from RFC 1918, but not exclusively, which are allocating for you use within your VNet
+An Azure virtual network is a logical isolation of the Azure cloud that's dedicated to your subscription. It is used to provision and manage VPNs in Azure and link virtual networks with an on-premises with hybrid or cross-premises solutions to prevent overlap. Virtual Networks consist of one of more Address Space(s) available IP ranges that are typically from RFC 1918, but not exclusively, which are allocating for you use within your VNet
 
 - Exists within a specific subscription
 - Region VNet Peering - Exists within a specific region, peering two Vnets in same regions
@@ -28,6 +29,13 @@ Subnet is a logical division of an address space
 	- **Configure subnets to have ensure they do no reach the internet!**
 - Associate an NSG to protect traffic entering and leaving your subnet
 - Azure has special types of Gateway Subnet that is used by Azure Virtual Network Gateway
+
+Associating Public IP to a resource 
+![1080](azureassociatingpublicips.png)
+
+Associating Private IP to a resource 
+![1080](azureassociatingprivateips.png)
+
 
 #### Creating 
 - Connect to Resource Group
@@ -131,6 +139,102 @@ Historic comparison being: Site-to-Site VPN or connection to the same ExpressRou
 
 On-premise to an Azure subnet Gatewaycan be used to connect resources via Gateway transit, becuase of Peering to reach out to On-Premise assets. 
 
+
+#### Configuring VM Avaliability
+
+Plan for maintaince and unexpected downtime:
+- Use an availability set, which is a logical feature you can use to ensure a group of related virtual machines are deployed together - reducing single point of failure, that they are not upgraded at the same time.
+	- VMs in the set should be identical
+
+Microsoft provides [Service Level Agreements (SLAs) for Azure Virtual Machines](https://azure.microsoft.com/support/legal/sla/virtual-machines/v1_9/) for Azure virtual machines and availability sets. Considerations:
+- Redundancy
+- Seperation of application tiers
+- Load balancing
+- Managed Disks
+
+For Domains:
+- `update domains`  -  is a group of nodes that are upgraded together during the process of a service upgrade
+	- Each `update domain`  contains a set of virtual machines and associated physical hardware that can be updated and rebooted at the same time.
+	- Configure up to 20, one update at a time
+	- Default: 5 non-user configurable update domains
+- `fault domains` -  is a group of nodes that represent a physical unit of failure
+	- Defines a group of virtual machines that share a common set of hardware that share a single point of failure
+	- 2 domains work togther to mitigate against hardware failures, network outages, power interruptions, or software updates.
+
+Availability Zones:
+- Unique physical locations qithin a Azure Region
+	- One or more Datacentres
+- Minimum of three Availability zones
+- Prevents against Datacentre failure
+- Prevents single point of failure with Zone redundancy
+
+![](azureservicessupportingavailabilityzones.png)
+
+Scalability - goes Vertically (VM Size up or down) and Horizonally (Number of VMs)
+Considerations:
+- Limitations
+- Flexibility
+- Reprovisioning
+
+#### Peering
+
+Azure Virtual network peering is nontransitive meaning only directly peered can communicate. 
+
+You can connect to your on-premises network from a peered virtual network if you enable gateways transit from a virtual network that has a VPN gateway. 
+
+Gateway transit from Vnet to On-premise via VPN gateway
+`$HubNetwork -> Allow gateway Transit` `
+`SpokeNetwork -> Use remote gateways`
+
+Peering Options:
+- **Virtual network peering** connects virtual networks in the same Azure region
+	- Cross-subscription Vnet Peering: Two Administors must grtant each other `Network Contributor` role as they are both seperate Azure AD tenants
+-  **Global virtual network peering** connects virtual networks that are in different Azure regions
+
+**When peering only one gets created configuration in the reverse direction is required!**
+
+Query Vnet are Provisioned
+```powershell
+az network vnet list --query "[?contains(provisioningState, 'Succeeded')]" --output table
+```
+
+Create peering between two Vnets
+```powershell
+# Forward and Reverseing Peering is required
+# Initial Forward Peering
+az network vnet peering create \
+    --name SalesVNet-To-MarketingVNet \
+    --remote-vnet MarketingVNet \
+    --resource-group $rgNameSales \
+    --vnet-name SalesVNet \
+    --allow-vnet-access
+# Reverse peering between the inital Vnet Peering
+az network vnet peering create \
+    --name MarketingVNet-To-SalesVNet \
+    --remote-vnet SalesVNet \
+    --resource-group $rgNameMarketing \
+    --vnet-name MarketingVNet \
+    --allow-vnet-access
+
+# Query Connection
+az network vnet peering list \
+    --resource-group $rgName \
+    --vnet-name $VnetName \
+    --query "[].{Name:name, Resource:resourceGroup, PeeringState:peeringState, AllowVnetAccess:allowVirtualNetworkAccess}"\
+    --output table
+
+# Check Effective Routes
+az network nic show-effective-route-table \
+    --resource-group $rgNameSales \
+    --name SalesVMVMNic \
+    --output table
+    
+# Ceck Effective Routes From the Reverse Peering
+az network nic show-effective-route-table \ 
+--resource-group $rgNameMarketing \ 
+--name MarketingVMVMNic \ 
+--output table
+```
 
 #### VPN Gateways and Connecting On-Premises to Azure
 
@@ -424,55 +528,11 @@ Azure Private Link  provides private connectivity from a virtual network to Azu
 	- All traffic to the service can be routed through the private endpoint. No gateways, NAT devices, Azure ExpressRoute or VPN connections, or public IP addresses are required.
 
 Implement Virtual Networking
-`Search -> Virtual Network -> $Vnet (With Subnet, VMs, DNSm, NSGs, etc configured)` in the `Private DNS Zone -> Virtual Network Link -> + Add - provide a Link name, Vnet` 
+`Search -> Virtual Network -> $Vnet (With Subnet, VMs, DNS, NSGs, etc configured)` in the `Private DNS Zone -> Virtual Network Link -> + Add - provide a Link name, Vnet` 
 
 #### Azure DNS 
 
-Virtual Network can use Azure DNS or custom DNS, Azure can provide public and private zones. Set at NIC level not at the VM level. Azure DNS is not a domain registar!
-- On subscription creation - automatic domain creation for it as `$yourdomainname.onmicrosoft.com`; to be used until your custom domain name is _verified_.
-	- To initiate the verification process, add a DNS record for your custom domain name either a `MX` or `TXT` record
-- Private DNS Zones: 
-	- Private DNS Zone - you pick the name and managed fully - names, records, etc!
-	- Private DNS can be used across subscriptions, regions! - PERMISSIONS!
-	- Private DNS can set auto-registration 
-	- No custom solution, automatic record and resolution managenment with various support - reduce the misconfigurations
-- Domain Controllers - for custom DNS Active Directory - probably not Public 
-- Newest VM - Delete the newest created VM, balanced across AZs
-- Azure DNS 168.63.129.16
-	- Root/Parent domain is registered at the registrar and then pointed to Azure DNS.
-	- Child domains are registered directly in Azure DNS.
-Consider reviewing [[Azure-Administration-Azure-DNS]] and [[DNS-Defined]] for futher information.
-
-Be aware of the difference between DNS Record sets and individual records
-- DNS Record sets  are collection of records
-	- A DNS record set can't contain two identical records.
-	- A record set of type `CNAME` can contain only one record.
-	- Empty record sets do appear 
-
-Workflows
-
-Create DNS zones
-`Search -> DNS zones`
-
-To delegate your domain to Azure DNS:
-1.  Identify your DNS name server - for each zone Azure DNS allocated DNS server from each pool and authoritative `NS` (or _Name server_) records in your DNS zone.
-	1. Find with Azure Portal
-2.  Update your parent domain  - each registar has their own DNS management tools
-	1.  Go to your registrar's (third-party domain registrar, company where domain was registered) DNS management page.
-	2.  Find the existing `NS` records for your parent domain.
-	3.  Replace the existing `NS` records with the `NS` records created for your domain by Azure DNS.
-		-  Remember to include a trailing period `..` at the end of the address
-		- Always copy **all** DNS name server `NS` records for your domain to the parent domain 
-3.  Delegate subdomains (optional)
-	1.  Go to the parent DNS zone for your domain in the Azure portal.
-	2.  Find the existing `NS` records for your parent domain.
-	3.  Create new `NS` records for your child DNS zone (subdomain).
-
-Create record set or Child zone
-`Search -> DNS zones -> Search $DNSzone -> + Record Set | + Child Zone 
-
-Common pattern - name resolution for multiple networks, where one is focused on registration and the other resolution.
-`Vnet1 = Registration <-> Azure Private DNS zone records <-> Vnet2 = Resolution`
+[[Azure-Administration-Azure-DNS]]
 
 #### Azure Private Link
 
@@ -675,6 +735,38 @@ Typology:
 -  **Basic**: A Basic Virtual WAN can be implemented only in an S2S VPN connection.
 -  **Standard**: A Standard Virtual WAN can be implemented with Azure ExpressRoute and a User VPN (P2S). You can also use a Standard WAN with an S2S VPN, Inter-hub, and VNet-to-VNet connection transiting through the virtual hub.
 
+
+## Workflows
+
+
+Create Virtual Networks and Manage
+`Search "Virtual Networks" -> Virtual Networks (-> Create)`
+- Azure Fiewall, Bastion and other require a subnet!
+
+Create Subnets
+`Search "Virtual Networks" -> Virtual Networks -> $VN -> Subnets -> + Subnets/Gateway subnet`
+Remember to: plan IP addresses - they can be `private` or  `public`, `static` or `dynamic` and Azure reserves five IP addresses:
+- 192.168.1.0 - Identifier for the Virtual Network
+- 192.168.1.1 - Azure Default Gateway
+- 192.168.1.2 - Azure DNS address 
+- 192.168.1.3 - Azure DNS address
+- 192.168.1.255 - virtual network broadcast address
+
+Consideration :
+- Service requirements
+- Avaliability requirements - static IPs for DNS and DCs, TLS/SSL certs linked to an IP
+- Network virtual appliances
+- Service Endpoints
+- Network Security Groups
+- Private links
+- VMs do not manage there IPs
+
+Create and manage public IPs
+`Search "Public IP Address -> Pulic IP addresses" ` then with `+ Create` provide the options `IP version, SKU, Tier, Name, Assignment, Routing`
+
+## References
+
+[Service Level Agreements for Azure Virtual Machines](https://azure.microsoft.com/support/legal/sla/virtual-machines/v1_9/) 
 
 
 ## References
