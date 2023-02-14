@@ -43,7 +43,33 @@ By Upload:
 	- *"a "sandbox" index as a destination if you have problems determining a source type for your data. A sandbox index lets you troubleshoot your configuration without impacting production indexes. You can always change this setting later."* 
 5.  **Review** -> Review configuration 
 
+## Useful SPL
+
+The SPL (Splunk Search Processing Language)
+
+[Botsv2 Dataset](https://github.com/splunk/botsv2)
+
+[Metadata Article](https://www.splunk.com/en_us/blog/tips-and-tricks/metadata-metalore.html?301=/blog/2017/07/31/metadata-metalore.html)
+
+[Metadata](https://docs.splunk.com/Documentation/Splunk/latest/SearchReference/Metadata) Command can be used to search for the same kind of information that is found in the Data Summary
+```c
+// Change index!
+| metadata type=sourcetypes index=botsv2 | eval firstTime=strftime(firstTime,"%Y-%m-%d %H:%M:%S") | eval lastTime=strftime(lastTime,"%Y-%m-%d %H:%M:%S") | eval recentTime=strftime(recentTime,"%Y-%m-%d %H:%M:%S") | sort - totalCount
+```
+
+Return events containing Keyword
+`index="botsv2 $keyword"`
+
+PAN traffic source type
+`index="botsv2" $keyword sourcetype="pan:traffic"`
+
+HTTP styream source type from IP address
+`index="botsv2" 10.10.10.10 sourcetype="stream:HTTP"`
+``
 
 ## References
 
 [THM Splunk 101 Room](https://tryhackme.com/room/splunk101)
+[Splunk Documentation](https://docs.splunk.com/Documentation) 
+[Metadata Documentation](https://docs.splunk.com/Documentation/Splunk/latest/SearchReference/Metadata)
+[THM Splunk 2 Room](https://tryhackme.com/room/splunk2gcd5)

@@ -4,59 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "3e7f0cb9234e4441",
+        "id": "a685ea5fb9668c88",
         "type": "tabs",
         "children": [
           {
-            "id": "d96088c0a6b35645",
+            "id": "e990632f1b0eed2c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8bfa15e3a67626a6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Security-Enterprises/Secure-Architectures/Security-Policies.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "09ad0fe978166df8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Virtual-Networking.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1e2721b479dae2ca",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+                "file": "Tools/Forensics/Autopsy.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -85,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "Autopsy",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -114,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+                "file": "Tools/Forensics/Autopsy.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,17 +105,17 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "1e2721b479dae2ca",
+  "active": "e990632f1b0eed2c",
   "lastOpenFiles": [
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Virtual-Networking.md",
+    "Tools/SIEMs/Splunk.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Virtual-Networking.md",
     "Security-Enterprises/Secure-Architectures/Security-Policies.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
     "Coding-Scripting-Programming/Languages/Bash/Useful_Bash.md",
     "Security-Enterprises/Secure-Architectures/Security-Principles.md",
     "Coding-Scripting-Programming/Languages/Powershell/Useful_Powershell.md",
     "Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Red-KOTH-Battlegrounds-Cheatsheet-Linux.md",
-    "Hacker-Distros/Kali/Setup-Services/Kali-Setup-Docker.md",
-    "Windows/Windows-Registry.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md"
+    "Hacker-Distros/Kali/Setup-Services/Kali-Setup-Docker.md"
   ]
 }
