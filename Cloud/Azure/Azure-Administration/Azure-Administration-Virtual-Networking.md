@@ -706,6 +706,70 @@ RDP in and Test with:
 Test-NetConnection -ComputerName $ip -Port 3389 -InformationLevel 'Detailed'
 ```
 
+#### Traffic Control with Routes In Azure Virtual Network
+
+Configuration of Network Virtual Applicance (NVA) to control traffic through routing.  A network virtual appliance (NVA) is a virtual appliance that consists of various layers like:
+- Firewall
+- WAN optimizer
+- Application-delivery controllers
+- Routers
+- Load balancers
+- IDS/IPS
+- Proxies
+Some require multiple network interfaces. Customers often create network virtual appliances and they can be downloaded from the Azure Marketplace.
+
+
+Routing is controlled by System Routes - You can't create or delete system routes, but you can override the system routes by adding custom routes to control traffic flow to the next hop. Types:
+- System Default Routes 
+- Virtual network peering
+- Service chaining
+- Virtual network gateway
+- Virtual network service endpoint
+
+Subnet default system routes
+Address prefix | Next hop type
+--- | ---
+Unique to the virtual network | Virtual network 
+0.0.0.0/0 | Internet
+10.0.0.0/8 | None
+172.16.0.0/12 | None
+192.168.0.0/16 | None
+100.64.0.0/10 | None
+Defaults can be overidden!
+
+Custom routes:
+- Create a user-defined route 
+	- Virtual appliance: Firewall, NIC of VM for IP forwarding or Private IP of a Load Balancer
+	- Virtual Network Gateway: VPN hops
+	- Virtual Network: Override System defaults withiin a Vnet
+	- Internet
+	- None
+- Border Gateway Protocol (BGP) - Used to transfer data and information between different host gateways
+	- Typically use of a BGP is to advertise on-premises routes to Azure when you're connected to an Azure datacenter through Azure ExpressRoute
+
+```powershell
+# Create a Route Table
+az network route-table create \
+        --name publictable \
+        --resource-group $rGroup \
+        --disable-bgp-route-propagation false
+# Create a Custom Route		
+az network route-table route create \
+        --route-table-name publictable \
+        --resource-group $rGroup \
+        --name productionsubnet \
+        --address-prefix 10.0.1.0/24 \
+        --next-hop-type VirtualAppliance \
+        --next-hop-ip-address 10.0.2.4		
+# Associate Route Table with publicsubnet
+az network vnet subnet update \
+        --name publicsubnet \
+        --vnet-name vnet \
+        --resource-group $rGroup \
+        --route-table publictable
+```
+
+
 #### Azure ExpressRoute
 
 Azure ExpressRoute provides a high-speed private connection to connect your on-premises networks to Microsoft cloud services. Why:

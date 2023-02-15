@@ -59,3 +59,34 @@ configuration IISInstall # configuration script block
 }
 ```
 The Windows PowerShell Desired State Configuration comes with a set of built-in configuration resources, such as `File Resource`, `Log Resource`, and `User Resource`.
+
+## Destructive
+
+#### Untag everything 
+
+Forcing a hard reset of subscription if they backups, but would also provide additional time as it would become difficult and unwieldy to use non-tag variables.
+
+#### Reassign all Log endpoints
+
+Create a misconfiguration where all the endpoints are logging other end points such that the data is mixed up
+
+
+## Strategies
+
+#### User-Defined Exfiltration Pipeline and Route to Network Insanity 
+
+Emergency Data Exfiltration the equivlent of pulling out a heart, leaving a clockwork toy in its place and that sows up the wound and cleans up everything.
+
+Use User Defined Routes to configure an burst exfiltration route configuration, before a clean up task and then a reconfiguration of the entire network with User Defined Routes to force return to backup or delay the amount of time it takes that a team can interfer with the clean up bot.  
+
+Requires calculation of time to exfiltrate data
+
+Two scripts, one scheduled task:
+1. Exfiltration Pipe
+	- Turn all NVAs against all traffic expect the exfiltration stream
+	- Route all traffic to each Hub
+2. Nightmare version of each target network - on-premise and off-premise.
+
+3. Script a configuration to entire network into user defined route that utiilizes the maximum bandwidth
+4. Have some scheduled Adminstrative task to wipe, reconfigure post exfiltration
+5. 

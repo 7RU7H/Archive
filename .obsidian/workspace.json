@@ -8,12 +8,24 @@
         "type": "tabs",
         "children": [
           {
+            "id": "097bb02a405b126e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cloud/Cloud-Hacking/Azure-Hacking.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "e990632f1b0eed2c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-DNS.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Virtual-Networking.md",
                 "mode": "source",
                 "source": false
               }
@@ -31,7 +43,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -89,7 +102,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-DNS.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Virtual-Networking.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,13 +132,13 @@
   },
   "active": "e990632f1b0eed2c",
   "lastOpenFiles": [
+    "Cloud/Cloud-Hacking/Azure-Hacking.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Virtual-Networking.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-DNS.md",
     "Networks/Network-Theory/Network-Protocols/DNS-Defined.md",
     "Windows/Windows-Commands/Windows-Commands.md",
     "Windows/Windows-Commands/Icalcs-Command.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-DNS.md",
-    "Cloud/Cloud-Hacking/Azure-Hacking.md",
     "Reconnaissance/Passive-Information-Gathering/DNS-Recon-Passive.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Virtual-Networking.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Managing-Virtual-Networks.md",
     "Tools/Forensics/Autopsy.md"
