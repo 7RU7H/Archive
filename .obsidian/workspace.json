@@ -20,6 +20,30 @@
             }
           },
           {
+            "id": "a4556d5e73c815bd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7f26d839472f3702",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Virtual-Networking.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "c51dd5432484f755",
             "type": "leaf",
             "state": {
@@ -31,7 +55,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -89,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/Forensics/Kape.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,17 +142,17 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "e990632f1b0eed2c",
+  "active": "a4556d5e73c815bd",
   "lastOpenFiles": [
-    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Windows-File-Transfers.md",
-    "Tools/Forensics/Kape.md",
-    "Networks/Network-Theory/Network-Protocols/DNS-Defined.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Virtual-Networking.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+    "Tools/Forensics/Kape.md",
+    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Windows-File-Transfers.md",
+    "Networks/Network-Theory/Network-Protocols/DNS-Defined.md",
     "Cloud/Cloud-Hacking/Azure-Hacking.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-DNS.md",
     "Windows/Windows-Commands/Windows-Commands.md",
     "Windows/Windows-Commands/Icalcs-Command.md",
-    "Reconnaissance/Passive-Information-Gathering/DNS-Recon-Passive.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md"
+    "Reconnaissance/Passive-Information-Gathering/DNS-Recon-Passive.md"
   ]
 }

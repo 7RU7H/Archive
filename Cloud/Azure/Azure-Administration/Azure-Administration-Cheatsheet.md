@@ -892,6 +892,14 @@ az find $word
 az find "az vm" 
 ```
 
+Cloud Config Example - cloud-init.txt
+```yaml
+#cloud-config
+package_upgrade: true
+packages:
+   - inetutils-traceroute
+```
+
 Create and Administrate a Resource Group
 ```powershell
 az group create --name $name --location $location
@@ -970,6 +978,11 @@ az vm image list --sku Wordpress --output table --all
 az vm image list --location eastus --output table
 # List Sizes of VM, can also be filtered
 az vm list-sizes --location eastus --output table
+# Private and Public flags
+--public-ip-address 10.10.10.10
+--private-ip-address 10.10.10.10
+--public-ip-address-allocation 'dynamic' # or 'static' 
+--public-ip-address-dns-name $DNSname
 ```
 
 Create a VM
@@ -1110,6 +1123,63 @@ az network watcher configure \
   --enabled true
 # Show a typology for a resource group
 az network watcher show-topology --resource-group $rGroup
+```
+
+Create a Route Table and a Custom Route - Prvate Subnets, IP forwarding
+```powershell
+# Create a Route Table
+az network route-table create \
+        --name publictable \
+        --resource-group $rGroup \
+        --disable-bgp-route-propagation false
+# Create a Custom Route		
+az network route-table route create \
+        --route-table-name publictable \
+        --resource-group $rGroup \
+        --name productionsubnet \
+        --address-prefix 10.0.1.0/24 \
+        --next-hop-type VirtualAppliance \
+        --next-hop-ip-address 10.0.2.4		
+# Associate Route Table with publicsubnet
+az network vnet subnet update \
+        --name publicsubnet \
+        --vnet-name vnet \
+        --resource-group $rGroup \
+        --route-table publictable
+```
+
+Deploy a Network Virtual Appliance, Enable IP forwarding 
+```powershell
+# Create NVA
+az vm create \
+    --resource-group $rGroup \
+    --name nva \
+    --vnet-name vnet \
+    --subnet dmzsubnet \
+    --image UbuntuLTS \
+    --admin-username azureuser \
+    --admin-password <password>
+# Query the ID of NVA NIC
+NICID=$(az vm nic list \
+    --resource-group $rGroup \
+    --vm-name nva \
+    --query "[].{id:id}" --output tsv)
+# Query the name of NVA NIC
+NICNAME=$(az vm nic show \
+    --resource-group $rGroup \
+    --vm-name nva \
+    --nic $NICID \
+    --query "{name:name}" --output tsv)
+# # Enable IP forwarding for the appliance
+az network nic update --name $NICNAME \
+    --resource-group $rGroup \
+    --ip-forwarding true
+# Enable IP forwarding in the appliance
+NVAIP="$(az vm list-ip-addresses \
+    --resource-group $rGroup  \
+    --name nva \
+    --query "[].virtualMachine.network.publicIpAddresses[*].ipAddress" \
+    --output tsv)"
 ```
 
 Create and Adminstrate a Service Plan

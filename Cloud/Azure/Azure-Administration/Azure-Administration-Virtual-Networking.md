@@ -70,6 +70,8 @@ Ensure static IP on a VM:
 IP forwarding from a VM - for Firewalls and Gateway devices
 `Virtual  Machines -> $VMnames -> Network Interface -> IP forwarding  set to (Disabled | Enabled)`
 
+
+
 #### Supported Types of IP Traffic
 
 - Standard IP-based Protocol support include:
@@ -747,6 +749,7 @@ Custom routes:
 - Border Gateway Protocol (BGP) - Used to transfer data and information between different host gateways
 	- Typically use of a BGP is to advertise on-premises routes to Azure when you're connected to an Azure datacenter through Azure ExpressRoute
 
+Create a Route Table and a Custom Route - Prvate Subnets, IP forwarding
 ```powershell
 # Create a Route Table
 az network route-table create \
@@ -769,6 +772,55 @@ az network vnet subnet update \
         --route-table publictable
 ```
 
+Deploy a Network Virtual Appliance, Enable IP forwarding 
+```powershell
+# Create NVA
+az vm create \
+    --resource-group $rGroup \
+    --name nva \
+    --vnet-name vnet \
+    --subnet dmzsubnet \
+    --image UbuntuLTS \
+    --admin-username azureuser \
+    --admin-password <password>
+# Query the ID of NVA NIC
+NICID=$(az vm nic list \
+    --resource-group $rGroup \
+    --vm-name nva \
+    --query "[].{id:id}" --output tsv)
+# Query the name of NVA NIC
+NICNAME=$(az vm nic show \
+    --resource-group $rGroup \
+    --vm-name nva \
+    --nic $NICID \
+    --query "{name:name}" --output tsv)
+# # Enable IP forwarding for the appliance
+az network nic update --name $NICNAME \
+    --resource-group $rGroup \
+    --ip-forwarding true
+# Enable IP forwarding in the appliance
+NVAIP="$(az vm list-ip-addresses \
+    --resource-group $rGroup  \
+    --name nva \
+    --query "[].virtualMachine.network.publicIpAddresses[*].ipAddress" \
+    --output tsv)"
+```
+
+Cloud Config Example - cloud-init.txt
+```yaml
+#cloud-config
+package_upgrade: true
+packages:
+   - inetutils-traceroute
+```
+
+Private and Public flags for `az vm create`
+```powershell
+--public-ip-address 10.10.10.10
+--private-ip-address 10.10.10.10
+--public-ip-address-allocation 'dynamic' # or 'static' 
+--public-ip-address-dns-name $DNSname
+```
 
 #### Azure ExpressRoute
 
