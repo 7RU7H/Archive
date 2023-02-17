@@ -139,13 +139,39 @@ YARA’s regular expressions recognise the following metacharacters:
 - [Python's PE Module](https://pypi.org/project/pefile/) 
 
 
-## Yara Useful Auxiliary Toollist
+## Yara Useful Auxiliary Toolset
 
 [Yara-CI](https://yara-ci.cloud.virustotal.com/): *"YARA-CI helps you to keep your [YARA](https://virustotal.github.io/yara/) rules in good shape. It can be integrated into any GitHub repository containing YARA rules, and it will run automated tests every time you make some change."*
 
+[yarGen](https://github.com/Neo23x0/yarGen) - *"is a generator for YARA rules"*
+
+```bash 
+# -m file to generate rules from
+# --excludegood : force to exclude all goodware strings
+# -o outpath
+python3 yarGen.py -m $inputFile --excludegood  -o $outputFile
+```
+
+Consult:
+-   [https://www.bsk-consulting.de/2015/02/16/write-simple-sound-yara-rules/](https://www.bsk-consulting.de/2015/02/16/write-simple-sound-yara-rules/)  
+-   [https://www.bsk-consulting.de/2015/10/17/how-to-write-simple-but-sound-yara-rules-part-2/](https://www.bsk-consulting.de/2015/10/17/how-to-write-simple-but-sound-yara-rules-part-2/)
+-   [https://www.bsk-consulting.de/2016/04/15/how-to-write-simple-but-sound-yara-rules-part-3/](https://www.bsk-consulting.de/2016/04/15/how-to-write-simple-but-sound-yara-rules-part-3/)
+
 [Yextend](https://github.com/BayshoreNetworks/yextend): *"Yara integrated software to handle archive file data."*
 
-## Community Rules, Projects, Extras
+[Loki](https://github.com/Neo23x0/Loki)  is a *"Simple IOC and Incident Response Scanner"*. Detection is based on:
+1. File Name IOC - Regex match on full file path/name
+2. Yara Rule Check - Yara signature match on file data and process memory
+3. Hash Check - Compares known malicious hashes (MD5, SHA1, SHA256) with scanned files
+4. C2 Back Connect Check - Compares process connection endpoints with C2 IOCs (new since version v.10)
+
+[Thor](https://www.nextron-systems.com/thor-lite/) - multi-platform IOC AND YARA scanner for corporate customers.
+
+[FENRIR](https://github.com/Neo23x0/Fenrir) - Simple Bash IOC Scanner
+
+[YAYA](https://github.com/EFForg/yaya) - Yet Another Yara Automaton - Automatically curate open source yara rules and run scans
+
+#### Community Rules, Projects, Extras
 
 [awesome-yara](https://github.com/InQuest/awesome-yara) - A curated list of awesome YARA rules, tools, and resources
 [Yara-Rules Porject](https://github.com/Yara-Rules) and their [rule Repository](https://github.com/Yara-Rules/rules)
