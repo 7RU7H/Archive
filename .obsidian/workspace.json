@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "e990632f1b0eed2c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tools/Yara/Yara.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "a4556d5e73c815bd",
             "type": "leaf",
             "state": {
@@ -113,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/Yara/Yara.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -141,17 +129,17 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "e990632f1b0eed2c",
+  "active": "a4556d5e73c815bd",
   "lastOpenFiles": [
-    "Tools/Forensics/Kape.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Virtual-Networking.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+    "Tools/Yara/Yara.md",
+    "Tools/Forensics/Kape.md",
     "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Windows-File-Transfers.md",
     "Networks/Network-Theory/Network-Protocols/DNS-Defined.md",
     "Cloud/Cloud-Hacking/Azure-Hacking.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-DNS.md",
     "Windows/Windows-Commands/Windows-Commands.md",
-    "Windows/Windows-Commands/Icalcs-Command.md",
-    "Reconnaissance/Passive-Information-Gathering/DNS-Recon-Passive.md"
+    "Windows/Windows-Commands/Icalcs-Command.md"
   ]
 }

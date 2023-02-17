@@ -617,6 +617,17 @@ Manage:
 	- Health probe
 	- Session persistence: None (default), Client IP, Client IP and Protocol
 
+1. `Create a Resource -> Load Balancer` - options:
+2. `Basic: SKU, Type ( Public | Internal ) and Tier (Regional | Global )`. 
+3. `Configure front-end IP configuration -> Add (Consider assignment*)`  
+4. `Configure back-end IP configuration -> Select backend pool VMS`  
+5. `Inbound Rules -> Add`
+
+Add session persistence to a load balancer
+`Search Load Balancers -> Load Blancers -> $LB -> Edit -> Sessions persistence dropdown -> None, Client IP, Client IP and Protocol`
+
+- RDP Desktop Gateway + Load Balancer = must be Source IP affinity LB
+- Media upload + Load Balancer = must be Source IP affinity LB
 
 #### NSG Workflow
 
@@ -688,6 +699,8 @@ Vnet Peering - requires account with `(Classic) Network Contributor` role
 	- Hub and spoke network - Central hub for VPN gateway, spoke Vnets
 	- User-defined route (UDR): either a hop to/from VM IP address or VPN Gateway
 	- Service chaining: define UDRs from Vnet to a network virtual appliance or VPN
+
+
 
 ## VM Scale Sets
 
@@ -1032,6 +1045,54 @@ az vm get-instance-view \
     --query "instanceView.statuses[?starts_with(code, 'PowerState/')].displayStatus" -o tsv
 ```
 
+Disk creation, retrieval and updating in Bash
+```bash
+RGNAME=''
+LOCATION=$(az group show --name $RGNAME --query location --out tsv)
+DISKNAME=''
+az group show --name $RGNAME
+az disk create --resource-group $RGNAME --name $DISKNAME --size-gb 32 --sku 'Standard_LRS' 
+# Retrieve Disk properties
+az disk show --resource-group $RGNAME --name $DISKNAME # --query for specific
+# Update 
+az disk update --resource-group $RGNAME --name $DISKNAME # --Whatever-changes-by-flag!
+```
+
+AKS deployment
+```bash
+# Access AZK cluster, then show connectivity
+RGROUP='azResourceGroup'
+AKS_CLUSTER='azCluster'
+az aks get-credentials --resource-group $RGOUP --name $AKS_CLUSTER
+kubectl get nodes
+# Deploy an nginx image
+kubectl create deployment nginx-deployment --image=nginx
+kubectl get pods
+kubectl get deployment
+# Expose the http port to internet
+kubectl expose deployment nginx-deployment --port=80 --type=LoadBalancer
+# Display provisioning and IP
+kubectl get service
+```
+
+Scale a AKS cluster
+```bash
+kubectl scale --replicas=2 deployment/nginx-deployment
+kubectl get pods
+
+# Scale by node 
+az aks scale --resource-group $RESOURCE_GROUP --name $AKS_CLUSTER --node-count 2
+kubectl get nodes
+
+# Scale by pods
+kubectl scale --replicas=10 deployment/nginx-deployment
+kubectl get pods
+
+kubectl get pod -o=custom-columns=NODE:.spec.nodeName,POD:.metadata.name
+# Delete deploymen
+kubectl delete deplyment ngnix-deployment
+```
+
 Create a Vnet with Subnets 
 ```powershell
 # Create Vnet
@@ -1261,6 +1322,62 @@ Invoke-WebRequest -Uri $webapp.DefaultHostName
 # Send infinite request to test with while loop and powershell code blocks
 while ($true) { Invoke-WebRequest -Uri $webapp.DefaultHostName }
 ```
+
+Load Balancer
+```bash
+az network public-ip create \
+  --resource-group $rGroup \
+  --allocation-method Static \
+  --name myPublicIP
+
+az network lb create \
+  --resource-group $rGroup \
+  --name myLoadBalancer \
+  --public-ip-address myPublicIP \
+  --frontend-ip-name myFrontEndPool \
+  --backend-pool-name myBackEndPool
+
+az network lb probe create \
+  --resource-group $rGroup \
+  --lb-name myLoadBalancer \
+  --name myHealthProbe \
+  --protocol tcp \
+  --port 80
+
+az network lb rule create \
+  --resource-group $rGroup \
+  --lb-name myLoadBalancer \
+  --name myHTTPRule \
+  --protocol tcp \
+  --frontend-port 80 \
+  --backend-port 80 \
+  --frontend-ip-name myFrontEndPool \
+  --backend-pool-name myBackEndPool \
+  --probe-name myHealthProbe
+
+# Connect the VMs to the back-end pool and update NIC
+az network nic ip-config update \
+  --resource-group $rGroup \
+  --nic-name webNic1 \
+  --name ipconfig1 \
+  --lb-name myLoadBalancer \
+  --lb-address-pools myBackEndPool
+
+az network nic ip-config update \
+  --resource-group $rGroup \
+  --nic-name webNic2 \
+  --name ipconfig1 \
+  --lb-name myLoadBalancer \
+  --lb-address-pools myBackEndPool
+# Get pulic IP of the Load Balancer and URL for website
+echo http://$(az network public-ip show \
+                --resource-group [sandbox resource group name] \
+                --name myPublicIP \
+                --query ipAddress \
+                --output tsv)
+```
+
+
 
 ## Powershell
 
@@ -1505,54 +1622,67 @@ Get-AzNetworkWatcherTopology `
   -TargetResourceGroupName $rGroup
 ```
 
-## Bash
+Load Balancer
+```powershell;
+$Location = $(Get-AzureRmResourceGroup -ResourceGroupName [sandbox resource group name]).Location
+# Create a public IP address 
+$publicIP = New-AzPublicIpAddress `
+  -ResourceGroupName $rGroup `
+  -Location $Location `
+  -AllocationMethod "Static" `
+  -Name "myPublicIP"
+# Create Front-end IP
+$frontendIP = New-AzLoadBalancerFrontendIpConfig `
+  -Name "myFrontEnd" `
+  -PublicIpAddress $publicIP
+# Create a back-end address pool
+$backendPool = New-AzLoadBalancerBackendAddressPoolConfig -Name "myBackEndPool"
+# Allow Load Balancer to monitor backend pool
+$probe = New-AzLoadBalancerProbeConfig `
+  -Name "myHealthProbe" `
+  -Protocol http `
+  -Port 80 `
+  -IntervalInSeconds 5 `
+  -ProbeCount 2 `
+  -RequestPath "/"
+# Create a rule for the Load Balancer
+$lbrule = New-AzLoadBalancerRuleConfig `
+  -Name "myLoadBalancerRule" `
+  -FrontendIpConfiguration $frontendIP `
+  -BackendAddressPool $backendPool `
+  -Protocol Tcp `
+  -FrontendPort 80 `
+  -BackendPort 80 `
+  -Probe $probe
+# Create Load Balancer
+$lb = New-AzLoadBalancer `
+  -ResourceGroupName $rGroup `
+  -Name 'MyLoadBalancer' `
+  -Location $Location `
+  -FrontendIpConfiguration $frontendIP `
+  -BackendAddressPool $backendPool `
+  -Probe $probe `
+  -LoadBalancingRule $lbrule
+# Connect the VMs to the back-end pool 
+$nic1 = Get-AzNetworkInterface -ResourceGroupName $rGroup -Name "webNic1"
+$nic2 = Get-AzNetworkInterface -ResourceGroupName $rGroup -Name "webNic2"
+# Update the network interfaces 
+$nic1.IpConfigurations[0].LoadBalancerBackendAddressPools = $backendPool
+$nic2.IpConfigurations[0].LoadBalancerBackendAddressPools = $backendPool
 
-Disk creation, retrieval and updating in Bash
-```bash
-RGNAME=''
-LOCATION=$(az group show --name $RGNAME --query location --out tsv)
-DISKNAME=''
-az group show --name $RGNAME
-az disk create --resource-group $RGNAME --name $DISKNAME --size-gb 32 --sku 'Standard_LRS' 
-# Retrieve Disk properties
-az disk show --resource-group $RGNAME --name $DISKNAME # --query for specific
-# Update 
-az disk update --resource-group $RGNAME --name $DISKNAME # --Whatever-changes-by-flag!
+Set-AzNetworkInterface -NetworkInterface $nic1 -AsJob
+Set-AzNetworkInterface -NetworkInterface $nic2 -AsJob
+# Get pulic IP of the Load Balancer and URL for website
+Write-Host http://$($(Get-AzPublicIPAddress `
+  -ResourceGroupName [sandbox resource group name] `
+  -Name "myPublicIP").IpAddress)
 ```
 
-AKS deployment
-```bash
-# Access AZK cluster, then show connectivity
-RGROUP='azResourceGroup'
-AKS_CLUSTER='azCluster'
-az aks get-credentials --resource-group $RGOUP --name $AKS_CLUSTER
-kubectl get nodes
-# Deploy an nginx image
-kubectl create deployment nginx-deployment --image=nginx
-kubectl get pods
-kubectl get deployment
-# Expose the http port to internet
-kubectl expose deployment nginx-deployment --port=80 --type=LoadBalancer
-# Display provisioning and IP
-kubectl get service
-```
-
-Scale a AKS cluster
-```bash
-kubectl scale --replicas=2 deployment/nginx-deployment
-kubectl get pods
-
-# Scale by node 
-az aks scale --resource-group $RESOURCE_GROUP --name $AKS_CLUSTER --node-count 2
-kubectl get nodes
-
-# Scale by pods
-kubectl scale --replicas=10 deployment/nginx-deployment
-kubectl get pods
-
-kubectl get pod -o=custom-columns=NODE:.spec.nodeName,POD:.metadata.name
-# Delete deploymen
-kubectl delete deplyment ngnix-deployment
+Source IP affininty load balancer
+```powershell
+$lb = Get-AzLoadBalancer -Name MyLb -ResourceGroupName MyResourceGroup
+$lb.LoadBalancingRules[0].LoadDistribution = 'sourceIp'
+Set-AzLoadBalancer -LoadBalancer $lb
 ```
 
 ## References
