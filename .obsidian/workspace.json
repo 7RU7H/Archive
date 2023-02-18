@@ -13,37 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+                "file": "Coding-Scripting-Programming/Languages/Powershell/Useful_Powershell.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "7f26d839472f3702",
+            "id": "12e3539a53346e2a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Virtual-Networking.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c51dd5432484f755",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Windows-File-Transfers.md",
+                "file": "Services/Webservers/Jenkins.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -101,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+                "file": "Services/Webservers/Jenkins.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -129,17 +118,17 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "a4556d5e73c815bd",
+  "active": "12e3539a53346e2a",
   "lastOpenFiles": [
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Virtual-Networking.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
-    "Tools/Yara/Yara.md",
-    "Tools/Forensics/Kape.md",
-    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Windows-File-Transfers.md",
-    "Networks/Network-Theory/Network-Protocols/DNS-Defined.md",
-    "Cloud/Cloud-Hacking/Azure-Hacking.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-DNS.md",
-    "Windows/Windows-Commands/Windows-Commands.md",
-    "Windows/Windows-Commands/Icalcs-Command.md"
+    "Exploitation/Shells.md",
+    "Exploitation/Reverse-Shells-Listing.md",
+    "Exploitation/Shell-Spawning.md",
+    "Services/Webservers/Jenkins.md",
+    "Coding-Scripting-Programming/Languages/Powershell/Useful_Powershell.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
+    "Post-Exploitation/Cleanup/Windows-Cleanup.md",
+    "Services/Webservers/Apache/Apache-Groovy/Apache-Groovy.md",
+    "Exploitation/Windows/Active-Directory/ACL-Abuse/ForceChangePassword.md",
+    "Exploitation/Windows/Active-Directory/Untitled.md"
   ]
 }

