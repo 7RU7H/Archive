@@ -868,6 +868,73 @@ Scale Node pool deployed
 
 Check the bash section  for CLI deployment and scaling.
 
+## Azure Backup
+
+Backup Center
+`Search -> Backup Center`:
+- `+ Backup`
+- `<- Restore`
+- `+ Policy`
+- `+ Vault`
+
+Create a Recovery Service Vault
+`Search -> Recovery Services vaults -> + Create`
+
+Configure replication of recover Service Vault
+`$Backup -> Properties -> Backup Configuration -> Update `
+- Choose: `Geo-redundant | Locally redundant | Zone redundant`
+
+Backup 
+`$Backup -> Overview -> + Backup -> Select Workload and What to backup -> Configure:
+- Policy Sub type - How many per day, Operation tier (x-y days) Resilience Level 
+- Backup Policy - Default, Custom and
+	- `Create a new policy`
+		- Backup schedule
+		- Instant Restore -  Retain instant recovery snapshots for X days
+		- Retention Range
+- `Add` - Add a Resource
+- Check `$Backup -> Protected items -> Backup items -> $resourcetype`
+
+Backup a resource
+`$Backup -> Protected items -> Backup items -> $resourcetype -> $resource -> View Details -> Backup Now`
+
+Backup File/Folder 
+`Search Virtual Machines -> $VM -> Connect` - Connect to machine - 
+`Log into Azure Portal -> Recovery Services vaults -> $rsv -> + Backup -> Workload: On-Premise (regardless) -> Backup: Files and folders -> Prepare Infrastructure:`
+- Download the Agent for Windows Server or Window Client
+- Installation Setup Wiazrd
+- Download the Vault Credentials
+
+Recovery Files:
+Locally
+`Microsoft Azure Backup Application- > Recover Data -> Select Mode, Volume and Data `
+Virtual Snapshots:
+`Search Recovery Services Vaults -> $rsv -> Backup items -> $AzureVM -> View Details -> File Recovery -> Download Excutable -> Open IaaSVMILRExeForWindows.exe -> copy and paste Password to run Script into IaaSVMILRExeForWindows.exe`, then
+On Host open `cmd.exe` with [robocopy]((https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/robocopy):
+```powershell
+# Copy from the mounted virtual snapshosts
+# Consider permissions!
+robocopy G:\File\Path\To\Dir C:\File\Path\To\Dir $file /r:1 /w:1 
+```
+Then `Unmount Disks`
+
+Azure Recovery Services soft delete 
+`Search Recovery Services Vaults -> $rsv -> Backup items -> Azure Backup Agent -> View Details -> $ComputerName -> Delete -> Type the Server name* & Provide Reason & Add comment for professionalism & Tick and Delete`
+
+Stop Backup and Deal witht Data retention
+`Search Recovery Services Vaults -> $rsv -> Backup items -> Azure Virtual Machine -> View Details -> Stop Backup`, then pick to:
+- Retain Backup Data 
+- Delete Backup Data
+	- Type the name of the backup item* ; add a Reason and comment  
+
+Undelete Backup that has Backup Disabled 
+`Search Recovery Services Vaults -> $rsv -> Backup items -> $Backup -> Undelete`
+
+Delete Backup Data Backup
+`Search Recovery Services Vaults -> $rsv -> Backup items -> $Backup -> Delete backup data`
+
+
+
 ## AzCopy 
 
 AZcopy is installed by default on the CloudShell

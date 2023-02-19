@@ -13,19 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Coding-Scripting-Programming/Languages/Powershell/Useful_Powershell.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "12e3539a53346e2a",
+            "id": "6a422716ac691574",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Services/Webservers/Jenkins.md",
+                "file": "Cloud/Cloud-Hacking/Azure-Hacking.md",
                 "mode": "source",
                 "source": false
               }
@@ -90,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Services/Webservers/Jenkins.md",
+                "file": "Cloud/Cloud-Hacking/Azure-Hacking.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,17 +118,17 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "12e3539a53346e2a",
+  "active": "6a422716ac691574",
   "lastOpenFiles": [
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Backups.md",
+    "Cloud/Cloud-Hacking/Azure-Hacking.md",
+    "Services/Webservers/Jenkins.md",
+    "Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Red-KOTH-Battlegrounds-Cheatsheet-Windows.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
+    "Coding-Scripting-Programming/Languages/Powershell/Useful_Powershell.md",
     "Exploitation/Shells.md",
     "Exploitation/Reverse-Shells-Listing.md",
-    "Exploitation/Shell-Spawning.md",
-    "Services/Webservers/Jenkins.md",
-    "Coding-Scripting-Programming/Languages/Powershell/Useful_Powershell.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
-    "Post-Exploitation/Cleanup/Windows-Cleanup.md",
-    "Services/Webservers/Apache/Apache-Groovy/Apache-Groovy.md",
-    "Exploitation/Windows/Active-Directory/ACL-Abuse/ForceChangePassword.md",
-    "Exploitation/Windows/Active-Directory/Untitled.md"
+    "Exploitation/Shell-Spawning.md"
   ]
 }

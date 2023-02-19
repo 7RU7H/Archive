@@ -1,5 +1,5 @@
 
-These are just ideas and things I have found. Nothing tested or works just ideas. There are better resources... I will hopeful research these 
+Warning I have no idea whether anything works. These are just ideas and things I have found from learning some Azure. There are better resources... I will hopeful research these at some point. This just a place for me to be creative, which I yet to really succeed in, in this field in any meaningful sense.  
 
 ## Objectives
 
@@ -60,6 +60,24 @@ configuration IISInstall # configuration script block
 ```
 The Windows PowerShell Desired State Configuration comes with a set of built-in configuration resources, such as `File Resource`, `Log Resource`, and `User Resource`.
 
+#### Template Supply Chain Compromise
+
+If templating is archival in storage with sufficient access a variety of attacks could occur: 
+- Backdooring
+	- VMs
+	- NIC 
+	- Whitelisted traffic for Firewalls and Load Balancers
+	- Route
+- Files Share Poisoning
+
+- Scrapping templated credentials for patterning and reusable credentials that are not managed by Azure. 
+
+#### Backup Poisoning
+
+Tools probably exist somewhere that can edit blob data - if so you can persistent in any way possible relevative to the context of which backup is poisoned - such that Backup Vault can be compromised post reset. 
+
+
+
 ## Destructive
 
 #### Untag everything 
@@ -90,3 +108,5 @@ Two scripts, one scheduled task:
 3. Script a configuration to entire network into user defined route that utiilizes the maximum bandwidth
 4. Have some scheduled Adminstrative task to wipe, reconfigure post exfiltration
 5. 
+
+
