@@ -13,26 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6a422716ac691574",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cloud/Cloud-Hacking/Azure-Hacking.md",
+                "file": "Services/Databases/MYSQL/MySQL-SQL-Injection-Cheatsheet-Fixed-From-Pentest-Monkey.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -90,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cloud/Cloud-Hacking/Azure-Hacking.md",
+                "file": "Services/Databases/MYSQL/MySQL-SQL-Injection-Cheatsheet-Fixed-From-Pentest-Monkey.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,11 +105,11 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "6a422716ac691574",
+  "active": "a4556d5e73c815bd",
   "lastOpenFiles": [
     "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Backups.md",
     "Cloud/Cloud-Hacking/Azure-Hacking.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Backups.md",
     "Services/Webservers/Jenkins.md",
     "Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Red-KOTH-Battlegrounds-Cheatsheet-Windows.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
