@@ -103,7 +103,7 @@ PHP Migitations:
 
 - md5sum or shasum the files and store them as the \*-sum string for pseudo random filenames, which remove control over the extension. 
 - Disable PHP wrappers, file could be archived as .zip, but then unzipped PHP wrappers with the extension then useable 
-​- Complexify the suming as function `md5($data_uploaded, $store_id, $user_id, $filename)`
+- Complexify the suming as function `md5($data_uploaded, $store_id, $user_id, $filename)`
 	- `$data_uploaded`, `$store_id` - like a Salt
 	- `$user_id`, `$filename` - prevent collision with other files
 

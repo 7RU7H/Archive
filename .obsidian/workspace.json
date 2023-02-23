@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Services/Databases/MYSQL/MySQL-SQL-Injection-Cheatsheet-Fixed-From-Pentest-Monkey.md",
+                "file": "Services/Docker/Intro-To-Docker.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Autopsy",
+                "query": "SQLmap",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Services/Databases/MYSQL/MySQL-SQL-Injection-Cheatsheet-Fixed-From-Pentest-Monkey.md",
+                "file": "Services/Docker/Intro-To-Docker.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,15 +107,28 @@
   },
   "active": "a4556d5e73c815bd",
   "lastOpenFiles": [
+    "Services/Docker/Docker-Hacking.md",
+    "Services/Docker/Intro-To-Docker.md",
+    "Digitial-Forensics/Linux-Forensics.md",
+    "Services/Package-Managers/NPM.md",
+    "Web-Application-Hacking/Javascript/NodeJS.md",
+    "Tools/Web-App/SQLmap-CheatSheet.md",
+    "Services/Databases/Database-Hacking.md",
+    "Web-Application-Hacking/Upload-Vulnerabilities.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Linux-File-Transfers.md",
+    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/File-Transfers.md",
+    "Coding-Scripting-Programming/Languages/Javascript/Useful_Javascript.md",
+    "Services/Package-Managers",
+    "Services/Databases/MYSQL/MySQL-Cheatsheet.md",
+    "Services/Databases/MYSQL/MySQL-SQL-Injection-Cheatsheet-Fixed-From-Pentest-Monkey.md",
+    "Services/Databases/MYSQL/MySQL-Hacking.md",
+    "Hardware/Hardware-Maintance/USB-Maintaince.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
     "Cloud/Cloud-Hacking/Azure-Hacking.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Backups.md",
     "Services/Webservers/Jenkins.md",
     "Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Red-KOTH-Battlegrounds-Cheatsheet-Windows.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
-    "Coding-Scripting-Programming/Languages/Powershell/Useful_Powershell.md",
-    "Exploitation/Shells.md",
-    "Exploitation/Reverse-Shells-Listing.md",
-    "Exploitation/Shell-Spawning.md"
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md"
   ]
 }

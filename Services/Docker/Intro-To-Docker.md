@@ -9,14 +9,22 @@ For instructions on installation, images and use cases per distro/OS see: [Docke
 ## Building a Docker containers
 
 ```bash
-docker build -t yourname/imagename path/to/Dockerfile
+
+docker build -t $yourname/$imagename path/to/Dockerfile
+
+# Pull the latest version
+sudo docker pull $package/$package
+
+
 
 docker run  -d --privileged -v /:/host:rw $image
 FROM $dir/$image
+
+# Run -it sudo tty --rm to delete when done, bind port to host
+sudo docker run -it --rm --name package -p $port:$port $package/$package
 ```
 
 [Docker setup of kali for hackers consider this article](https://www.pentestpartners.com/security-blog/docker-for-hackers-a-pen-testers-guide/), that Hackers *"can use Docker to build and configure an environment containing just the tools we need, and then launch a container and work from that. Our environment will always be exactly the same as it’s launched from an image, and we can easily launch multiple containers at the same time as they don’t consume a lot of resources...allows us to have a self-contained testing environment for each job or test or random-tinker, where any processes, installs and so on are all local to that container and don’t pollute your “Testing VM” or host OS."*
-
 
 
 ## Securing Containers

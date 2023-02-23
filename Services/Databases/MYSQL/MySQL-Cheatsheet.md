@@ -14,7 +14,7 @@ MySQL supports file reads
 * Windows         */Program Files/MySQL/MySQL _version_/bin*
 * Xampp           */xampp/mysql/bin*
 
-## Add mysql to your PATH
+## Add MySQL to your PATH
 
 ```bash
 # Current Session

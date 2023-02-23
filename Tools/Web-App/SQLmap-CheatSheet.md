@@ -85,3 +85,9 @@ Options:
 
     --wizard            Simple wizard interface for beginner users
 ```
+
+```python
+-p # parametre
+--privileges # db shell privileges
+--random-agent # always good because sqlmap states its sqlmap so WAF will catch it
+```
