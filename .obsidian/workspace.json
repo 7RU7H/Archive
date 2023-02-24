@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "a4556d5e73c815bd",
+            "id": "e3bcbb0bf2e7ccd6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Services/Docker/Intro-To-Docker.md",
+                "file": "Exploitation/CVEs/PrintNightmare.md",
                 "mode": "source",
                 "source": false
               }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Services/Docker/Intro-To-Docker.md",
+                "file": "Exploitation/CVEs/PrintNightmare.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,10 +105,13 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "a4556d5e73c815bd",
+  "active": "e3bcbb0bf2e7ccd6",
   "lastOpenFiles": [
+    "Tools/Yara/Yara.md",
+    "Exploitation/CVEs/PrintNightmare.md",
+    "Windows/Windows-Concepts/Windows-Services.md",
+    "Services/Docker/Docker.md",
     "Services/Docker/Docker-Hacking.md",
-    "Services/Docker/Intro-To-Docker.md",
     "Digitial-Forensics/Linux-Forensics.md",
     "Services/Package-Managers/NPM.md",
     "Web-Application-Hacking/Javascript/NodeJS.md",

@@ -35,7 +35,7 @@ Multi-container groups are useful when you want to divide a single functional ta
 
 #### Docker
 
-[[Intro-To-Docker]] contains various local curated information about Docker.
+[[Docker]] contains various local curated information about Docker.
 
 ## Workflows
 

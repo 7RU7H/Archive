@@ -1,7 +1,7 @@
 # Docker Hacking
 
 
-For basic information about docker try here: [[Intro-To-Docker]].
+For basic information about docker try here: [[Docker]].
 Containers have networking capabilities and their own file storage. They achieve this by using three components of the Linux kernel:
 
 -   Namespaces - segregate system resources such as processes, files, and memory away from other namespaces.

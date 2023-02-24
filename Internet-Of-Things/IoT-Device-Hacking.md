@@ -26,7 +26,7 @@ WebSocket | Device-to-Device  | Relies on a client-server model to send data ov
 	1. [[Source-Code-Analysis]]
 
 2. Setup a Listener 
-	- Consider containerising the listener with - Docker - see [[Intro-To-Docker]]
+	- Consider containerising the listener with - Docker - see [[Docker]]
 3. Send a message to the broker to send redirect target output to listener device of your choosing
 
 

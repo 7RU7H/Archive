@@ -51,7 +51,7 @@ rule ExampleRule : Tag1 Tag2 // `: Tag Tag ` for later filtering with Yara
         // xor with single byte keys
         $xor_string = "This program cannot" xor
         $b64 = "This program cannot" base64
-        $a = { E8 00 00 00 00 } // Entrypoint string
+nd still be looking for a game o        $a = { E8 00 00 00 00 } // Entrypoint string
         // Regular expression
         // can be followed with nocase, ascii, wide, fullword
         // `.` can match new-line characters

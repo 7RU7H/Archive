@@ -3,7 +3,7 @@
 
 Containerisation is the virtualization at an OS level or an application level. It is a process of encapsulating or packaging an application with any dependencies to run isolated,  uniformly and consistently on any infrastructure. [Containerization](https://www.ibm.com/uk-en/cloud/learn/containerization) is considered an alternative or companion to [Virtualization](https://www.ibm.com/uk-en/cloud/learn/virtualization-a-complete-guide), but is use to group the require resources of an application to deal with issues of dependencies and compatibility at various levels - without the need to install an entire OS with [[Virtual-Machines]]
 
-Using Docker as an example, the table below attempts to illustrate that Container 1 and 2 are isolated, but run on the same Docker Engine that sit on a OS and that physical machine. See [[Intro-To-Docker]] for introductory reference to Docker.
+Using Docker as an example, the table below attempts to illustrate that Container 1 and 2 are isolated, but run on the same Docker Engine that sit on a OS and that physical machine. See [[Docker]] for introductory reference to Docker.
 **Container 1** | **Container 2**
 --- | --- 
 Application 1 | Application 2
