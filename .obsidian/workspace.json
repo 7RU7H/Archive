@@ -107,6 +107,12 @@
   },
   "active": "e3bcbb0bf2e7ccd6",
   "lastOpenFiles": [
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Monitor.md",
+    "Images/azurelogeventcatergories.png",
+    "Images/azurelogeventtiering.png",
+    "Images/azuremonitorcomponents.png",
+    "Cloud/Azure/Azure-Defined.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Backups.md",
     "Images/azuresoftdeleteandbackups.png",
     "Images/azurecomparisonbetweenmabsandmars.png",
@@ -131,9 +137,6 @@
     "Services/Databases/MYSQL/MySQL-SQL-Injection-Cheatsheet-Fixed-From-Pentest-Monkey.md",
     "Services/Databases/MYSQL/MySQL-Hacking.md",
     "Hardware/Hardware-Maintance/USB-Maintaince.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
-    "Cloud/Cloud-Hacking/Azure-Hacking.md",
-    "Services/Webservers/Jenkins.md",
-    "Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Red-KOTH-Battlegrounds-Cheatsheet-Windows.md"
+    "Cloud/Cloud-Hacking/Azure-Hacking.md"
   ]
 }

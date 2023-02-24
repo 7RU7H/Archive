@@ -946,7 +946,42 @@ Undelete Backup that has Backup Disabled
 Delete Backup Data Backup
 `Search Recovery Services Vaults -> $rsv -> Backup items -> $Backup -> Delete backup data`
 
+## Azure Monitor
 
+
+Access Azure Monitor
+`Search -> Monitor`
+
+Register the Microsoft.Insights and Microsoft.AlertsManagement resource providers 
+```powershell
+Register-AzResourceProvider -ProviderNamespace Microsoft.Insights
+Register-AzResourceProvider -ProviderNamespace Microsoft.AlertsManagement
+```
+
+Metrics 
+`Search -> Monitor -> Metrics -> Select a Scope (Tree View)`
+
+Create an (metric) Alert 
+`Search -> Monitor -> Alerts -> Create
+
+Create an (metric) Alert 
+`Search -> Monitor -> Metrics -> New Alert Rule
+
+Log Analytics Querying - Has drop down listing of useful input!
+`Search -> Monitor -> Logs -> Select a scope -> (Tables | Queries | Functions | Filters)  -> Run Query`
+- You can click to collapse the left panel
+
+Create and Configure Log Analytics workspaces
+`Search Log Analytics workspaces -> Log Analytics workspaces -> Create`
+`Search Automation Accounts -> Create -> $LAWrGroup` - check [supported mappings](https://learn.microsoft.com/en-us/azure/automation/how-to/region-mappings) then `$AutomationAccount -> Inventory -> Select Log Analytics workspace -> $LAW & Enable` then `Update Management -> Enable`
+
+Configure VM for Log Analytics
+`Search -> Virtual Machines -> $VM -> (Metrics - for default Monitoring) Diagnostic settings -> Select a Diagnostics storage account & Enable guest-level monitoring` then configure: 
+- Performance Counters
+- Logs
+- Crash dumps Sinks 
+- Agent
+Then `$VM -> Logs -> Enable -> chooose a Log Analytucs Workspace -> Enable `
 
 ## AzCopy 
 

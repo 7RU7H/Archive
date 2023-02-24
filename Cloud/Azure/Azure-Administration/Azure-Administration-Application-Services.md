@@ -91,7 +91,7 @@ Deployment slots are configured in the Azure portal. You can swap your app conte
 
 ## Insights
 
-App Services are integratable with Azure Insights to automatically detect performance anomalies in your apps. Language agnostic, on-off cloud location agnostics, DevOps integration and monitor and analyze data from mobile apps. Consider reviewing [[Azure-Adminstration-Azure-Monitor]]
+App Services are integratable with Azure Insights to automatically detect performance anomalies in your apps. Language agnostic, on-off cloud location agnostics, DevOps integration and monitor and analyze data from mobile apps. Consider reviewing [[Azure-Administration-Azure-Monitor]]
 
 ![1080](azureappserviesinsightpluses.png)
 
