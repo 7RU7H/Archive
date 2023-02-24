@@ -869,7 +869,6 @@ Scale Node pool deployed
 Check the bash section  for CLI deployment and scaling.
 
 ## Azure Backup
-
 Backup Center
 `Search -> Backup Center`:
 - `+ Backup`
@@ -877,12 +876,23 @@ Backup Center
 - `+ Policy`
 - `+ Vault`
 
+Backup Workflows
+1. Create a Recovery Services Vault - choose LRS/GRS
+2. Define a backup policy - when and retention length of data snapshots
+3. Backup VMs, etc..
+
 Create a Recovery Service Vault
 `Search -> Recovery Services vaults -> + Create`
+- Multi-select for backup "What you want to backup" options
 
 Configure replication of recover Service Vault
 `$Backup -> Properties -> Backup Configuration -> Update `
 - Choose: `Geo-redundant | Locally redundant | Zone redundant`
+
+Implement System Center Data Protection Manager (DPM) and or Microsoft Azure Backup Server (MABS)
+- First [deploy the System Center DPM protection agent](https://learn.microsoft.com/en-us/system-center/dpm/deploy-dpm-protection-agent)
+- Then [install the DPM protection agent (for MABS)](https://learn.microsoft.com/en-us/azure/backup/backup-azure-microsoft-azure-backup#install-and-update-the-data-protection-manager-protection-agent)
+- Any machines that you want to back up must be added to a [System Center DPM _protection group_](https://learn.microsoft.com/en-us/system-center/dpm/create-dpm-protection-groups).
 
 Backup 
 `$Backup -> Overview -> + Backup -> Select Workload and What to backup -> Configure:
@@ -904,6 +914,9 @@ Backup File/Folder
 - Download the Agent for Windows Server or Window Client
 - Installation Setup Wiazrd
 - Download the Vault Credentials
+
+Restore or File Recovery VM
+`Search Recovery Services Vaults -> $rsv -> Backup items -> Azure Virutal Machines -> $VM -> Restore VM / File Recovery`
 
 Recovery Files:
 Locally

@@ -63,7 +63,7 @@ nc -nv $IP
 
 ## 48 - WHOIS 
 
-## 53 - DNS
+## 53 - DNSEnd Point Mapper
 Default port 53 - [[DNS-Defined]], [[DNS-Recon-Active]], [[DNS-Recon-Passive]]
 TCP/UDP; TCP is for zone transfers 
 
@@ -130,8 +130,12 @@ umount $ip:/local/file/path
 
 Identification/Authorization service. When a client program on your end contacts a remote server for services such as POP, IMAP, SMTP, IRC, FTP, etc. that remote server sends back a query to the IDENT port 113 asking for identification from your system
 
-## 135 - RCP 
-Has encryption protocol of higher port number. See [[RPC-Recon]], use [[RPCClient-Cheatsheet]] and [[RPCClient-Usage]]
+## 135 - RCP  & EPMAP
+
+RPC encryption protocol of higher port number. See [[RPC-Recon]], use [[RPCClient-Cheatsheet]] and [[RPCClient-Usage]]
+
+EPMAP allows launching procedures that are remotely hosted (bootstrap) through the distribution of an MS-RPC service’s IP address and protocol - [REF](https://documentation.stormshield.eu/SNS/v4/en/Content/User_Configuration_Manual_SNS_v4/Protocols/EPMAP_Protocol.htm)
+
 
 ## 137-9), 445 -  NBT - SMB
 
@@ -244,12 +248,12 @@ See [[RSIP-Recon]] forwarding administration emails
 ## 5000 - Docker
 See [[Docker]] and [[Docker-Hacking]] for more informationmation
 
-SNMPSSH	
-//default 5161	
-//SNMP over SSH Transport Model 						
-SNMPSSH-TRAP 	
-//dafault 5162 	
-//SNMP Notification over SSH Transport Model 	
+## 5161 - SNMPSSH	 	
+SNMP over SSH Transport Model 						
+
+## 5162 SNMPSSH-TRAP 	
+ 	
+SNMP Notification over SSH Transport Model 	
 
 ## 5353 - MultiCast DNS
 
@@ -267,6 +271,10 @@ Kibana provides search and data visualization capabilities for data indexed in E
 ## 5985-6 - WinRM
 Windows Remote Management Protocol ports
 See [[Evil-winrm-Cheatsheet]]
+
+## 6379 - Redis
+
+Seee for Redis-cli a client for Redis database locally: [[Redis-cli-Cheatsheet]]
 
 ## 7680 - Pando-pub
 Legacy application [Pando](https://en.wikipedia.org/wiki/Pando_(application)) BitTorrent client and uses the BitTorrent protocol to transfer files.

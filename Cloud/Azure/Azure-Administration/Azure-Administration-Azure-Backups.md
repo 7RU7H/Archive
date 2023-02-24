@@ -49,6 +49,38 @@ Azure Site Recovery (ASR) is a hybrid (on-premise to cloud) backup solution for 
 
 ![](azuremarsagentcompletebackupfromonpremisetocloud.png)
 
+## VM Backups
+
+Azure Backup provides independent and isolated backups to guard against unintended destruction of the data on your virtual machines.
+- Azure Backup - best option for production workload backup
+	- Microsoft Azure Recovery Services (MARS) agent for Azure Backup
+		- See comparison with MABS image
+	- Microsoft Azure Backup Server (MABS)
+		- See comparison with MARS image
+	- Snapshot VMs and stores data a recovery points in geo-redendant recovery vaults - Files or VMs
+- Azure managed disks 
+	- Snapshots 
+		- Read-only full copy of a managed disk 
+		- Billed by size used
+		- Kept two days to reduce backup and restore times
+		- Incremental stored as Blobs
+	- Image - Capture a single image containing all managed disks associated with a VM
+- Azure Site Recovery -  for scenarios involving replication, failover, and fall back.
+	- Disaster recovery for VMs 
+	- Can backup data from SQL database  or IaaS VMs, Azure Services
+	- Replicate Azure virtual machines from one Azure region to another
+       - Replicate on-premises VMware virtual machines, Hyper-V virtual machines, physical servers (Windows and Linux), and Azure Stack virtual machines to Azure
+       - Replicate AWS Windows instances to Azure
+	- Replicate on-premises VMware virtual machines, Hyper-V virtual machines managed by System Center VMM, and physical servers to a secondary site
+- VMs can also be backup with System Center Data Protection Manager (DPM) or Microsoft Azure Backup Server (MABS)
+	- For specialized workloads, virtual machines, or files, folders, and volumes - data from SQL server or Microsoft Exchange or Sharepoint
+
+Comparison between MABS and MARS
+![](azurecomparisonbetweenmabsandmars.png)
+
+Soft delete for those mistakes everybody makes
+![](azuresoftdeleteandbackups.png)
+
 ## Workflows
 
 Backup Center
@@ -58,12 +90,23 @@ Backup Center
 - `+ Policy`
 - `+ Vault`
 
+Backup Workflows
+1. Create a Recovery Services Vault - choose LRS/GRS
+2. Define a backup policy - when and retention length of data snapshots
+3. Backup VMs, etc..
+
 Create a Recovery Service Vault
 `Search -> Recovery Services vaults -> + Create`
+- Multi-select for backup "What you want to backup" options
 
 Configure replication of recover Service Vault
 `$Backup -> Properties -> Backup Configuration -> Update `
 - Choose: `Geo-redundant | Locally redundant | Zone redundant`
+
+Implement System Center Data Protection Manager (DPM) and or Microsoft Azure Backup Server (MABS)
+- First [deploy the System Center DPM protection agent](https://learn.microsoft.com/en-us/system-center/dpm/deploy-dpm-protection-agent)
+- Then [install the DPM protection agent (for MABS)](https://learn.microsoft.com/en-us/azure/backup/backup-azure-microsoft-azure-backup#install-and-update-the-data-protection-manager-protection-agent)
+- Any machines that you want to back up must be added to a [System Center DPM _protection group_](https://learn.microsoft.com/en-us/system-center/dpm/create-dpm-protection-groups).
 
 Backup 
 `$Backup -> Overview -> + Backup -> Select Workload and What to backup -> Configure:
@@ -85,6 +128,9 @@ Backup File/Folder
 - Download the Agent for Windows Server or Window Client
 - Installation Setup Wiazrd
 - Download the Vault Credentials
+
+Restore or File Recovery VM
+`Search Recovery Services Vaults -> $rsv -> Backup items -> Azure Virutal Machines -> $VM -> Restore VM / File Recovery`
 
 Recovery Files:
 Locally

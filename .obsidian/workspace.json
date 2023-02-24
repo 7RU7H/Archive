@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exploitation/CVEs/PrintNightmare.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
                 "mode": "source",
                 "source": false
               }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exploitation/CVEs/PrintNightmare.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,8 +107,12 @@
   },
   "active": "e3bcbb0bf2e7ccd6",
   "lastOpenFiles": [
-    "Tools/Yara/Yara.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Backups.md",
+    "Images/azuresoftdeleteandbackups.png",
+    "Images/azurecomparisonbetweenmabsandmars.png",
+    "Networks/Network-Protocols.md",
     "Exploitation/CVEs/PrintNightmare.md",
+    "Tools/Yara/Yara.md",
     "Windows/Windows-Concepts/Windows-Services.md",
     "Services/Docker/Docker.md",
     "Services/Docker/Docker-Hacking.md",
@@ -129,9 +133,7 @@
     "Hardware/Hardware-Maintance/USB-Maintaince.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
     "Cloud/Cloud-Hacking/Azure-Hacking.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Backups.md",
     "Services/Webservers/Jenkins.md",
-    "Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Red-KOTH-Battlegrounds-Cheatsheet-Windows.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md"
+    "Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Red-KOTH-Battlegrounds-Cheatsheet-Windows.md"
   ]
 }
