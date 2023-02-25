@@ -12,6 +12,11 @@ This is a hub and overview page for Digital Forensics related topics. Although D
 - Order of Volatility - Digital evidence is often volatile - if not captured maybe lost -  preserve RAM
 - Timeline Creation - Event timelines are required for efficient and accurate analysis
 
+Dirty Wordlists
+- Notetaking while investigating to avoid:
+	- Recursive rabbit hole when dealing with [[Persistence]] mechanisms regardless of OS. 
+	- Missing Cleanup
+
 #### Tools
 
 [[Kape]]

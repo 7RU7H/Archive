@@ -1,4 +1,4 @@
-# Chat GPT Whispering
+#  AI Whispering
 
 ChatGPT Whispering is a just a term I made up while thinking about applying ChatGPT it is the best term I could think of that would be similar to [[Search-Engine-Dorking]]. As quick disclaimer this information was gathered in the early stages of the free release of ChatGPT - model improve and some of the information maybe become invalid.
 

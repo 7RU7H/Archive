@@ -13,13 +13,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+                "file": "Coding-Scripting-Programming/Languages/Python/Python-Tooling-Libraries.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4a7863d48319f2ef",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Post-Exploitation/Evasion/Stealth/Linux-Stealth.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a4cb7d3d201a8140",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Exploitation/CVEs/LocalPotato.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -77,7 +102,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+                "file": "Post-Exploitation/Evasion/Stealth/Linux-Stealth.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,14 +130,24 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "e3bcbb0bf2e7ccd6",
+  "active": "4a7863d48319f2ef",
   "lastOpenFiles": [
+    "Coding-Scripting-Programming/Languages/Python/Python-Tooling-Libraries.md",
+    "Digitial-Forensics/Digital-Forensics.md",
+    "Post-Exploitation/Evasion/Stealth/Linux-Stealth.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+    "Exploitation/CVEs/LocalPotato.md",
+    "Persistence/Linux-Persistence.md",
+    "Post-Exploitation/Evasion/Stealth",
+    "Windows/Windows-Concepts/NTLM-Authentication.md",
+    "Artificial-Intelligence/AI-Whispering.md",
+    "Coding-Scripting-Programming/Languages/Python/Python-2to3-Tool.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Monitor.md",
     "Images/azurelogeventcatergories.png",
     "Images/azurelogeventtiering.png",
     "Images/azuremonitorcomponents.png",
     "Cloud/Azure/Azure-Defined.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Backups.md",
     "Images/azuresoftdeleteandbackups.png",
     "Images/azurecomparisonbetweenmabsandmars.png",
@@ -128,15 +163,7 @@
     "Tools/Web-App/SQLmap-CheatSheet.md",
     "Services/Databases/Database-Hacking.md",
     "Web-Application-Hacking/Upload-Vulnerabilities.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
     "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Linux-File-Transfers.md",
-    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/File-Transfers.md",
-    "Coding-Scripting-Programming/Languages/Javascript/Useful_Javascript.md",
-    "Services/Package-Managers",
-    "Services/Databases/MYSQL/MySQL-Cheatsheet.md",
-    "Services/Databases/MYSQL/MySQL-SQL-Injection-Cheatsheet-Fixed-From-Pentest-Monkey.md",
-    "Services/Databases/MYSQL/MySQL-Hacking.md",
-    "Hardware/Hardware-Maintance/USB-Maintaince.md",
-    "Cloud/Cloud-Hacking/Azure-Hacking.md"
+    "Services/Package-Managers"
   ]
 }
