@@ -963,8 +963,6 @@ Metrics
 
 Create an (metric) Alert 
 `Search -> Monitor -> Alerts -> Create
-
-Create an (metric) Alert 
 `Search -> Monitor -> Metrics -> New Alert Rule
 
 Log Analytics Querying - Has drop down listing of useful input!
@@ -982,6 +980,28 @@ Configure VM for Log Analytics
 - Crash dumps Sinks 
 - Agent
 Then `$VM -> Logs -> Enable -> chooose a Log Analytucs Workspace -> Enable `
+
+KGL Log queries 
+- Schema 
+- Filter
+- Explorer
+
+```kusto
+# Control Commands 
+.create table Logs (Level:string, Text:string)
+
+# Queries
+$table | count
+$table | top 3 by event severity duration
+$table | where StartTime between (datetime(2007-11-01) .. datetime(2007-12-01))
+
+# Aggregate content by specifications using using summarize 
+$table | summarize count(), avg(severity) by $column, $column
+
+# Create a Column Chart from $event 
+$table | where isnotempty($event) | summarize event_count=count() by $event | top 10 by event_count | render columnchart
+
+```
 
 ## AzCopy 
 

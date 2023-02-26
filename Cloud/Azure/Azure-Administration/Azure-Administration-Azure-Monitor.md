@@ -91,14 +91,27 @@ Azure Monitor Logs is based on Azure Data Explorer, and log queries are written 
 	- Columns - columns are named entities that have a scalar data type
 	- Stored Functions - are named  entities that allow reuse of Kusto queries or query parts 
 	- External tables are entities that have a scalar data stored outside Kusto database
+- You can and more:
+	- Search and sort by value, time, property state, and more
+	- Join data from multiple tables
+	- Aggregate large sets of data
+	- Perform intricate operations with minimal code
+
+Scenarios:
+- Assess update requirement and time-to-complete
+- Track Changes and identiy access issues
+- Security 
+
+The following illustration highlights how KQL queries use the dedicated table data for your monitored services and resources.
+![1080](azurekglqueries.png)
 
 ## Metric Explorer
  
  **Metric Explorer** is a sub-service of Azure Monitor that allows you to plot charts, visualize correlating trends, and investigate spikes and dips in metrics value. To visualize a metric you need to define:
-	- Scope: You can select \*resource(s)
-	- Namespace: A specific group of metric data within a resource
-	- Metric: Value to visualize
-	- Aggregation: groups of values
+- Scope: You can select \*resource(s)
+- Namespace: A specific group of metric data within a resource
+- Metric: Value to visualize
+- Aggregation: groups of values
 
 ## Azure Alerts
 
@@ -144,7 +157,7 @@ Azure Administrators use Azure Monitor to receive alerts for their monitored app
 	- Name and Description
 - Action Group - collection of notification preferences that you define as an Azure subscription owner
 	- Action Type:
-		- **Automation runbook**: An automation runbook is the ability to define, build, orchestrate, manage, and report on workflows that support system and network operational processes. A runbook workflow can potentially interact with all types of infrastructure elements, such as applications, databases, and hardware.
+		- **Automation runbook**: An automation runbook is the ability to define, build, orchestrate, manage, and report on workflows that support///////welcome-pack system and network operational processes. A runbook workflow can potentially interact with all types of infrastructure elements, such as applications, databases, and hardware.
 		- **Azure Functions**: Azure Functions is a serverless compute service that lets you run event-triggered code without having to explicitly provision or manage infrastructure.
 		- **ITSM**: The action can connect Azure and a supported IT Service Management (ITSM) product or service. This action requires an ITSM connection.
 		- **Logic Apps**: Azure Logic Apps connects your business-critical apps and services by automating your workflows.
@@ -204,6 +217,29 @@ Configure VM for Log Analytics
 - Crash dumps Sinks 
 - Agent
 Then `$VM -> Logs -> Enable -> chooose a Log Analytucs Workspace -> Enable `
+
+KGL Log queries 
+- Schema 
+- Filter
+- Explorer
+
+```kusto
+# Control Commands 
+.create table Logs (Level:string, Text:string)
+
+# Queries
+$table | count
+$table | top 3 by event severity duration
+$table | where StartTime between (datetime(2007-11-01) .. datetime(2007-12-01))
+
+# Aggregate content by specifications using using summarize 
+$table | summarize count(), avg(severity) by $column, $column
+
+# Create a Column Chart from $event 
+$table | where isnotempty($event) | summarize event_count=count() by $event | top 10 by event_count | render columnchart
+
+```
+
 
 ## References
 
