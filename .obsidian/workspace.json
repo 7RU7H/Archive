@@ -8,30 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "e3bcbb0bf2e7ccd6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Coding-Scripting-Programming/Languages/Python/Python-Tooling-Libraries.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4a7863d48319f2ef",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Post-Exploitation/Evasion/Stealth/Linux-Stealth.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "a4cb7d3d201a8140",
             "type": "leaf",
             "state": {
@@ -43,8 +19,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -102,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Post-Exploitation/Evasion/Stealth/Linux-Stealth.md",
+                "file": "Exploitation/CVEs/LocalPotato.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,13 +105,18 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "4a7863d48319f2ef",
+  "active": "a4cb7d3d201a8140",
   "lastOpenFiles": [
-    "Coding-Scripting-Programming/Languages/Python/Python-Tooling-Libraries.md",
-    "Digitial-Forensics/Digital-Forensics.md",
-    "Post-Exploitation/Evasion/Stealth/Linux-Stealth.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+    "Tools/Forensics/Sigma.md",
     "Exploitation/CVEs/LocalPotato.md",
+    "Tools/Yara/Yara.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
+    "Excalidraw/localpotato.excalidraw.md",
+    "Coding-Scripting-Programming/Languages/Python/Python-Tooling-Libraries.md",
+    "Cryptography-And-Authentication/Password-Attacks/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
+    "Post-Exploitation/Evasion/Stealth/Linux-Stealth.md",
+    "Digitial-Forensics/Digital-Forensics.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
     "Persistence/Linux-Persistence.md",
     "Post-Exploitation/Evasion/Stealth",
     "Windows/Windows-Concepts/NTLM-Authentication.md",
@@ -153,17 +133,12 @@
     "Images/azurecomparisonbetweenmabsandmars.png",
     "Networks/Network-Protocols.md",
     "Exploitation/CVEs/PrintNightmare.md",
-    "Tools/Yara/Yara.md",
     "Windows/Windows-Concepts/Windows-Services.md",
     "Services/Docker/Docker.md",
     "Services/Docker/Docker-Hacking.md",
     "Digitial-Forensics/Linux-Forensics.md",
     "Services/Package-Managers/NPM.md",
     "Web-Application-Hacking/Javascript/NodeJS.md",
-    "Tools/Web-App/SQLmap-CheatSheet.md",
-    "Services/Databases/Database-Hacking.md",
-    "Web-Application-Hacking/Upload-Vulnerabilities.md",
-    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Linux-File-Transfers.md",
     "Services/Package-Managers"
   ]
 }
