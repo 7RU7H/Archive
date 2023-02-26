@@ -18,8 +18,45 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "dea0c23df1b448da",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/Reverse-Engineering/Radare2/Radare2-Cheatsheet.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "be685b58e3717829",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/Reverse-Engineering/Radare2/Radare2-Commands.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c7b6a618ea4d5d9d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Coding-Scripting-Programming/Malware/Polymorfic-Code.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -77,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Monitor.md",
+                "file": "Coding-Scripting-Programming/Malware/Polymorfic-Code.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,8 +142,12 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "a4cb7d3d201a8140",
+  "active": "c7b6a618ea4d5d9d",
   "lastOpenFiles": [
+    "Tools/Reverse-Engineering/Radare2/Radare2-Commands.md",
+    "Coding-Scripting-Programming/Malware/Polymorfic-Code.md",
+    "Tools/Reverse-Engineering/Radare2/Radare2-Cheatsheet.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Monitor.md",
     "Images/azurealertsdescriptionimage.png",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Alerts.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration.md",
@@ -131,9 +172,6 @@
     "Post-Exploitation/Evasion/Stealth",
     "Windows/Windows-Concepts/NTLM-Authentication.md",
     "Artificial-Intelligence/AI-Whispering.md",
-    "Coding-Scripting-Programming/Languages/Python/Python-2to3-Tool.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Monitor.md",
     "Images/azurelogeventcatergories.png",
     "Images/azurelogeventtiering.png",
     "Images/azuremonitorcomponents.png",

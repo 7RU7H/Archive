@@ -79,9 +79,11 @@ is* prints symbols
 * `(` Used to define and run macros
 * `$` Used to define alias
 * `$$`: Resolves to current address
-* Offsets (`@`) are absolute, we can use $$ for relative ones `@ $$+4`
-* `?` Evaluate expression
+* Offsets (`@`) are absolute, we can use ```
 ```
+$$ for relative ones @ $$+4
+* `?` Evaluate expression
+
 [0x00000000]> ? 33 +2
 35 0x23 043 0000:0023 35 00100011 35.0 0.000000
 
@@ -98,7 +100,7 @@ Note: | and & need to be escaped
 * `???` Help for `?` command
 * `?i` Takes input from stdin. Eg `?i username`
 * `??` Result from previous operations
-* `?s from to [step]`: Generates sequence from <from> to <to> every <step>
+* `?s from to [step]`: Generates sequence from `<from>` to `<to>` every `<step>`
 * `?p`: Get physical address for given virtual address
 * `?P`: Get virtual address for given physical one
 * `?v` Show hex value of math expr
@@ -114,7 +116,8 @@ wx ff @@`?s  1 10 2`  Writes ff at offsets 1, 2 and 3
 wx 90 @@ sym.*        Writes a nop on every symbol
 ```
 
-## Positioning 
+##  Positioning 
+
 ```
 s address: Move cursor to address or symbol
 	s-5 (5 bytes backwards)
