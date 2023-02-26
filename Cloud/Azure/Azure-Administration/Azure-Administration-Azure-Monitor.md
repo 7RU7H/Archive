@@ -100,14 +100,55 @@ Azure Monitor Logs is based on Azure Data Explorer, and log queries are written 
 	- Metric: Value to visualize
 	- Aggregation: groups of values
 
-## Alerts
+## Azure Alerts
 
-Alert notification for issues are found on infrastructure or application
+Azure Administrators use Azure Monitor to receive alerts for their monitored applications and resources. Consider reading [[Azure-Administration-Azure-Monitor]] for further Azure Monitor details as Azure Monitor captures logs and metrics telemetry data for administed infrastructure or applications that can then be analyzed and used to identify potential problems. Alert notification for issues are found on infrastructure or application, but require you to configure Azure Monitor to capture telemetry data for your Azure services, resources, and applications.
+
+![1080](azurealertsdescriptionimage.png)
+
 - Identify and address issues before the users of your system notice them.
 - Azure has 3 kinds of Alerts
 	1. Metric Alerts
 	2. Log Alerts
-	3. Activity Log Alerts
+	3. Activity Log events
+- Other include
+	- Smart detection alerts - Automatic warnings about issues in web apps through Application insights 
+		- Migrate smart detection tyo create alert rules. 
+- An alert consists of Alert Rules that combine the settings and conditions you want to monitor, including:    
+	- Resources to monitor
+	- Signals or telemetry to gather from the resources
+	- Conditions to match
+	- Action Group are invoked unpon alerting to fulfill responsive steps when an alert triggers
+- When monitoring multiple resources, the system evaluates your conditions separately for each resource, and alerts trigger for each resource separately.
+- Alert states
+	- New - not in review
+	- Acknowledged - in review
+	- Closed - issue is complete, can be reopened 
+- An Alert History retains information about state changes
+- Stateful Alerts - Activity logs are always stateless!
+	- Trigger when alert rule condition matches data and a duplicate alert does not exist.
+	- Does not trigger more action until current alert conditions are clear
+- Stateless Alerts
+	- Triggers when alert rule condition matches your data and a duplicate alert does not exist
+- Alert Rules:
+	- Target resource 
+		- scope and signal available for Alert Operation
+	- Alert Signal
+		- Emitted signal can be 
+		- Metric 
+		- Activity log 
+		- Application Insights 
+		- Log 
+	- Rule Criteria
+	- Issue Severity - ranges from 0 to 4
+	- Name and Description
+- Action Group - collection of notification preferences that you define as an Azure subscription owner
+	- Action Type:
+		- **Automation runbook**: An automation runbook is the ability to define, build, orchestrate, manage, and report on workflows that support system and network operational processes. A runbook workflow can potentially interact with all types of infrastructure elements, such as applications, databases, and hardware.
+		- **Azure Functions**: Azure Functions is a serverless compute service that lets you run event-triggered code without having to explicitly provision or manage infrastructure.
+		- **ITSM**: The action can connect Azure and a supported IT Service Management (ITSM) product or service. This action requires an ITSM connection.
+		- **Logic Apps**: Azure Logic Apps connects your business-critical apps and services by automating your workflows.
+		- **Webhook**: A webhook is an HTTPS or HTTP endpoint that allows external applications to communicate with your system.
 
 ## Dashboards 
 
@@ -145,9 +186,7 @@ Metrics
 `Search -> Monitor -> Metrics -> Select a Scope (Tree View)`
 
 Create an (metric) Alert 
-`Search -> Monitor -> Alerts -> Create
-
-Create an (metric) Alert 
+`Search -> Monitor -> Alerts -> Create 
 `Search -> Monitor -> Metrics -> New Alert Rule
 
 Log Analytics Querying - Has drop down listing of useful input!
