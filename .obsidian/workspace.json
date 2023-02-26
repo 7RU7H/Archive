@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exploitation/CVEs/LocalPotato.md",
+                "file": "Exploitation/Binary-Exploitation/Binary-Exploitation-Enumeration.md",
                 "mode": "source",
                 "source": false
               }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exploitation/CVEs/LocalPotato.md",
+                "file": "Exploitation/Binary-Exploitation/Binary-Exploitation-Enumeration.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,8 +107,11 @@
   },
   "active": "a4cb7d3d201a8140",
   "lastOpenFiles": [
-    "Tools/Forensics/Sigma.md",
+    "ELF-Binaries.md",
+    "Exploitation/Binary-Exploitation/Binary-Exploitation-Enumeration.md",
+    "Reverse-Engineering/Binary-Composition/Binary-Composition-Hub.md",
     "Exploitation/CVEs/LocalPotato.md",
+    "Tools/Forensics/Sigma.md",
     "Tools/Yara/Yara.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
     "Excalidraw/localpotato.excalidraw.md",
@@ -136,9 +139,6 @@
     "Windows/Windows-Concepts/Windows-Services.md",
     "Services/Docker/Docker.md",
     "Services/Docker/Docker-Hacking.md",
-    "Digitial-Forensics/Linux-Forensics.md",
-    "Services/Package-Managers/NPM.md",
-    "Web-Application-Hacking/Javascript/NodeJS.md",
     "Services/Package-Managers"
   ]
 }
