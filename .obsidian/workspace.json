@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exploitation/Binary-Exploitation/Binary-Exploitation-Enumeration.md",
+                "file": "Reconnaissance/Active-Information-Gathering/OS-Detection/OS-Detection.md",
                 "mode": "source",
                 "source": false
               }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exploitation/Binary-Exploitation/Binary-Exploitation-Enumeration.md",
+                "file": "Reconnaissance/Active-Information-Gathering/OS-Detection/OS-Detection.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,8 +107,10 @@
   },
   "active": "a4cb7d3d201a8140",
   "lastOpenFiles": [
-    "ELF-Binaries.md",
+    "Reconnaissance/Local-Setup.md",
+    "Coding-Scripting-Programming/Languages/C/Useful_C.md",
     "Exploitation/Binary-Exploitation/Binary-Exploitation-Enumeration.md",
+    "ELF-Binaries.md",
     "Reverse-Engineering/Binary-Composition/Binary-Composition-Hub.md",
     "Exploitation/CVEs/LocalPotato.md",
     "Tools/Forensics/Sigma.md",
@@ -137,8 +139,6 @@
     "Networks/Network-Protocols.md",
     "Exploitation/CVEs/PrintNightmare.md",
     "Windows/Windows-Concepts/Windows-Services.md",
-    "Services/Docker/Docker.md",
-    "Services/Docker/Docker-Hacking.md",
     "Services/Package-Managers"
   ]
 }
