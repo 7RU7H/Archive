@@ -13,7 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+                "file": "Persistence/Linux-Persistence.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6386e306b48c0ff3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
                 "mode": "source",
                 "source": false
               }
@@ -84,7 +96,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "SQLmap",
+                "query": " ssh-ch",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -97,7 +109,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 362.0124969482422
+    "width": 259.0110321044922
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -113,7 +125,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+                "file": "Persistence/Linux-Persistence.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -143,6 +155,11 @@
   },
   "active": "a4cb7d3d201a8140",
   "lastOpenFiles": [
+    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+    "Persistence/Linux-Persistence.md",
+    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/File-Transfers.md",
+    "Tools/Shells/SSH-Cheatsheet.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Monitor.md",
     "Cloud/Cloud-Hacking/Azure-Hacking.md",
     "Reverse-Engineering/Malware-Analysis/Malware-Analysis.md",
@@ -150,7 +167,6 @@
     "Coding-Scripting-Programming/Malware/Malware-Techiques-Obfuscation.md",
     "Tools/Forensics/Volatility.md",
     "Digitial-Forensics/Memory-Forensics.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
     "Images/azurekglqueries.png",
     "Tools/Reverse-Engineering/Radare2/Radare2-Commands.md",
     "Coding-Scripting-Programming/Malware/Polymorfic-Code.md",
@@ -167,10 +183,6 @@
     "Reverse-Engineering/Binary-Composition/Binary-Composition-Hub.md",
     "Exploitation/CVEs/LocalPotato.md",
     "Tools/Forensics/Sigma.md",
-    "Tools/Yara/Yara.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
-    "Excalidraw/localpotato.excalidraw.md",
-    "Coding-Scripting-Programming/Languages/Python/Python-Tooling-Libraries.md",
     "Post-Exploitation/Evasion/Stealth",
     "Images/azurelogeventcatergories.png",
     "Images/azurelogeventtiering.png",
