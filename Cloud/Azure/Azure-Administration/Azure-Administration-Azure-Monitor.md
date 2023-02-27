@@ -105,6 +105,23 @@ Scenarios:
 The following illustration highlights how KQL queries use the dedicated table data for your monitored services and resources.
 ![1080](azurekglqueries.png)
 
+## Network Watcher
+
+**Network Watcher** provides tools to **monitor**, **diagnose**, view **metrics**, and enable or disable **logs** for resources in an Azure virtual network (**regional service**)!
+- Automate remote network monitoring with packet capture - from triggering alerts
+	-  `Network Watcher -> PAcket capture`
+- Network Security Group Flow Logs (NSG Flow Logs) for network traffic pattern collection
+- Diagnose VPN issues
+	- `Network Watcher -> VPN troubleshoot
+- Visual Network Typology 
+	- `Network Watcher -> Topology`
+- Connection Troubleshoot -  suite of networking tools and capabilities to3 troubleshoots network performance and connectivity issues in Azure.
+	 - `Network Watcher -> Connection troubleshoot`
+- Verify IP flow -  IP Flow Verify quickly diagnose connectivity issues from or to the internet and from or to the on-premises environment.
+	- `Network Watcher -> Ip flow verify`
+- Next Hop - determine if traffic is being directed to the intended destination by showing the next hop'
+	- `Network Watcher -> Next Hop`
+
 ## Metric Explorer
  
  **Metric Explorer** is a sub-service of Azure Monitor that allows you to plot charts, visualize correlating trends, and investigate spikes and dips in metrics value. To visualize a metric you need to define:

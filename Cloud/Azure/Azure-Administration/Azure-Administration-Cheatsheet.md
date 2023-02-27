@@ -948,9 +948,10 @@ Delete Backup Data Backup
 
 ## Azure Monitor
 
-
 Access Azure Monitor
 `Search -> Monitor`
+Access Network Monitor 
+`Search -> Network Watcher`
 
 Register the Microsoft.Insights and Microsoft.AlertsManagement resource providers 
 ```powershell
@@ -986,6 +987,7 @@ KGL Log queries
 - Filter
 - Explorer
 
+THIS IS NOT FINISHED!
 ```kusto
 # Control Commands 
 .create table Logs (Level:string, Text:string)
@@ -1000,8 +1002,21 @@ $table | summarize count(), avg(severity) by $column, $column
 
 # Create a Column Chart from $event 
 $table | where isnotempty($event) | summarize event_count=count() by $event | top 10 by event_count | render columnchart
-
 ```
+
+- Automate remote network monitoring with packet capture - from triggering alerts
+	-  `Network Watcher -> PAcket capture`
+- Network Security Group Flow Logs (NSG Flow Logs) for network traffic pattern collection
+- Diagnose VPN issues
+	- `Network Watcher -> VPN troubleshoot
+- Visual Network Typology 
+	- `Network Watcher -> Topology`
+- Connection Troubleshoot -  suite of networking tools and capabilities to3 troubleshoots network performance and connectivity issues in Azure.
+	 - `Network Watcher -> Connection troubleshoot`
+- Verify IP flow -  IP Flow Verify quickly diagnose connectivity issues from or to the internet and from or to the on-premises environment.
+	- `Network Watcher -> Ip flow verify`
+- Next Hop - determine if traffic is being directed to the intended destination by showing the next hop'
+	- `Network Watcher -> Next Hop`
 
 ## AzCopy 
 

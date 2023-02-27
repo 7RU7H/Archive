@@ -7,6 +7,14 @@ Compromise the SAS
 Control and Reduce valid digital communication between subscription holder and Azure - force older methods of communication to provide more time for later objective
 Persist on-redeployment post-IR-removal
 
+## Azure (Bloodhound/Responder) for badAdmins
+
+If Adminstrator credentials are compromised a stealthier approach to using Bloodhound or Responder would to use Azure Network Watcher is awesome it can
+- `Packet Capture` - if you want to sniff credentials in a sneaky way that looks like a Admin check connectivity of your C-Suite
+- `Topology` can visual entire Network typology down to the NIC  
+
+If you can compromise a Cloud environment understanding the network patterns in the packet economy and the defensive mindset surround Alerting and Rule creation could help you understand your adversary as well as where the important data is.
+
 ## Split-Horizon Request Forgery
 
 Azure DNS allows for public and private domains of the same name to exist this seems like a vector for which you can exploit the DNS server request to give you the incorrect lookup.
