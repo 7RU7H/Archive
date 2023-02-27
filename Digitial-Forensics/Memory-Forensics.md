@@ -13,7 +13,6 @@ Memory forensics is the analysis of a memory dump for the RAM. Usually this is a
 - Users 
 - Files accessed
 - Clipboard contents
-- 
 
 
 ## Linux Memory Forensics
