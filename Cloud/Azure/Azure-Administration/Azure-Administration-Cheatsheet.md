@@ -162,7 +162,7 @@ export APPLOCATION=$(az appservice plan list --query [0].location --output tsv)
 cd path/$webappName
 az webapp up --name $APPNAME --resource-group $APPRG --plan $APPPLAN --sku $APPSKU --location "$APPLOCATION"
 ```
-ryption`
+
 
 Create a Azure Files Share
 `Storage Account -> $storage_account -> File Shares`
@@ -700,8 +700,6 @@ Vnet Peering - requires account with `(Classic) Network Contributor` role
 	- User-defined route (UDR): either a hop to/from VM IP address or VPN Gateway
 	- Service chaining: define UDRs from Vnet to a network virtual appliance or VPN
 
-
-
 ## VM Scale Sets
 
 Create and Manage VM Scale Sets
@@ -965,6 +963,7 @@ Metrics
 Create an (metric) Alert 
 `Search -> Monitor -> Alerts -> Create
 `Search -> Monitor -> Metrics -> New Alert Rule
+- Select scope, filter times..., then configure
 
 Log Analytics Querying - Has drop down listing of useful input!
 `Search -> Monitor -> Logs -> Select a scope -> (Tables | Queries | Functions | Filters)  -> Run Query`

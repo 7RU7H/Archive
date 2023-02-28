@@ -138,17 +138,23 @@ Azure Administrators use Azure Monitor to receive alerts for their monitored app
 
 - Identify and address issues before the users of your system notice them.
 - Azure has 3 kinds of Alerts
-	1. Metric Alerts
-	2. Log Alerts
-	3. Activity Log events
+	1. Metric Alerts trigger when a specified threshold is exceeded
+		- Metric based data is the numerical time-sensitive values that represent some aspect of the target resource 
+	1. Log Alerts notify you when Azure resources change state
+		- Log based data is the querying of content data held in structured, record-based log files that are relevant to the target resource.
+	2. Activity Log events  notify you when Azure resources change state
 - Other include
 	- Smart detection alerts - Automatic warnings about issues in web apps through Application insights 
 		- Migrate smart detection tyo create alert rules. 
 - An alert consists of Alert Rules that combine the settings and conditions you want to monitor, including:    
-	- Resources to monitor
-	- Signals or telemetry to gather from the resources
-	- Conditions to match
-	- Action Group are invoked unpon alerting to fulfill responsive steps when an alert triggers
+	- `Resource` to monitor
+	- `Condition` to match
+		- Signal type  - Metric, Logs, Acticity log
+		- Alert Logic
+	- `Action` Group are invoked unpon alerting to fulfill responsive steps when an alert triggers
+	- `Alert Detaails`
+		- Severity
+		- Name and description
 - When monitoring multiple resources, the system evaluates your conditions separately for each resource, and alerts trigger for each resource separately.
 - Alert states
 	- New - not in review
@@ -174,11 +180,49 @@ Azure Administrators use Azure Monitor to receive alerts for their monitored app
 	- Name and Description
 - Action Group - collection of notification preferences that you define as an Azure subscription owner
 	- Action Type:
-		- **Automation runbook**: An automation runbook is the ability to define, build, orchestrate, manage, and report on workflows that support///////welcome-pack system and network operational processes. A runbook workflow can potentially interact with all types of infrastructure elements, such as applications, databases, and hardware.
+		- **Automation runbook**: An automation runbook is the ability to define, build, orchestrate, manage, and report on workflows that support welcome-pack system and network operational processes. A runbook workflow can potentially interact with all types of infrastructure elements, such as applications, databases, and hardware.
 		- **Azure Functions**: Azure Functions is a serverless compute service that lets you run event-triggered code without having to explicitly provision or manage infrastructure.
 		- **ITSM**: The action can connect Azure and a supported IT Service Management (ITSM) product or service. This action requires an ITSM connection.
 		- **Logic Apps**: Azure Logic Apps connects your business-critical apps and services by automating your workflows.
 		- **Webhook**: A webhook is an HTTPS or HTTP endpoint that allows external applications to communicate with your system.
+
+- Metric Alerts
+	- Static threshold metric alerts - `IF $resource == $NUM { DO X }`
+	- Dynamic threshold metric alerts (Azure ML!) - just define these parameters
+		- Look-back period - defines how many previous periods need to be evaluated
+		- Number of Violations
+	- Scaling is limited to VMs
+
+- Log Alerts
+	- Log query
+	- Time period
+	- Frequency
+	- Threshold
+	-  `number-of-records` type of log search returns a single alert when the number of records in a search result reaches or exceeds the value
+	
+	- `metric-measurement` logs require addiitional criteria to be set
+		- Aggregate function 
+			- calculation made against result data, result of this function is called AggregatedValue 
+		- Group field
+			- Field by which the result will be grouped
+		- Interval
+			- Time interval  by which the data is aggregated
+		- Threshold
+			- A point defined by an aggregated value and the total number of breaches.
+
+- Activity Log Alerts
+	- Specific operations
+	- Service health events
+		- Include notice of incidents and maintenance of target resources.
+	- Composition
+		- **Category**: Administrative, service health, autoscale, policy, or recommendation
+		- **Scope**: Resource level, resource group level, or subscription level
+		- **Resource group**: Where the alert rule is saved
+		- **Resource type**: Namespace for the target of the alert
+		- **Operation name**: Operation name
+		- **Level**: Verbose, informational, warning, error, or critical
+		- **Status**: Started, failed, or succeeded
+		- **Event initiated by**: Email address or Azure Active Directory identifier (known as the "caller") for the user
 
 ## Dashboards 
 
@@ -218,6 +262,21 @@ Metrics
 Create an (metric) Alert 
 `Search -> Monitor -> Alerts -> Create 
 `Search -> Monitor -> Metrics -> New Alert Rule
+- Select scope, filter times..., then configure
+
+Create a metric alert; examlpe VM CPU is greater than 80% 
+```bash
+az monitor metrics alert create \
+    -n "Cpu80PercentAlert" \
+    --resource-group $rGroup \
+    --scopes $VMID \
+    --condition "max percentage CPU > 80" \
+    --description "Virtual machine is running at or greater than 80% CPU utilization" \
+    --evaluation-frequency 1m \
+    --window-size 1m \
+    --severity 3
+```
+
 
 Log Analytics Querying - Has drop down listing of useful input!
 `Search -> Monitor -> Logs -> Select a scope -> (Tables | Queries | Functions | Filters)  -> Run Query`

