@@ -9,17 +9,23 @@ Make a new sub-directory putting all current directory into that new directory
 mkdir $new_subdirectory | ls | grep -v $new_subdirectory | tr -S '\n' ' ' | xargs -I@ bash -c 'mv @ $new_subdirectory/'
 ```
 
-Find all the .nmap  files with open unique (no duplicates) confirmed (non 'service?') tcp services on open ports, sorted alphabetally f
+Find all the .nmap  files with open unique (no duplicates) confirmed (non 'service?') tcp services on open ports, sorted alphabetally file
 ```bash
 find . -type f -name *.nmap -exec cat {} + | grep "/tcp" | sort -u | awk '{print $3}' | sort -u | grep -v '?\|[0-9]'
 ```
-
 
 ## String One-Line
 
 Print all but the first field with awk
 ```bash
 awk '{for (i=2; i<=NF; i++) printf $i " "; print $NF}'
+```
+
+## Line by line make a file
+
+This is useful in scenarios where you want to copy and paste into your favourite editor, but you just have `echo` 
+```bash
+cat $file | awk '{print "echo \""$1" "$2"\" >> $output" }'
 ```
 
 ## References

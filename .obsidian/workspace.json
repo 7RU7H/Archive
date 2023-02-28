@@ -56,7 +56,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +85,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": " ssh-ch",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -114,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Monitor.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,10 +142,17 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "480fdc9b0f8b5034",
+  "active": "ed8f63df71621be6",
   "lastOpenFiles": [
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Monitor.md",
+    "Tools/Reverse-Engineering/Radare2/Radare2-Commands.md",
+    "Linux/Linux-Commands/Linux-One-Liners-To-Rule-Them-All.md",
+    "Exploitation/Binary-Exploitation/Binary-Exploitation-Enumeration.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+    "Linux/Linux-Commands/Linux-Module-Commands.md",
+    "Tools/Stegonography/Untitled.md",
+    "Tools/Stegonography",
+    "Tools/Reverse-Engineering/Radare2/Radare2-Cheatsheet.md",
     "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
     "Cloud/Cloud-Hacking/Azure-Hacking.md",
     "Coding-Scripting-Programming/Languages/Powershell/Useful_Powershell.md",
@@ -161,17 +168,11 @@
     "Coding-Scripting-Programming/Malware/Malware-Techiques-Obfuscation.md",
     "Tools/Forensics/Volatility.md",
     "Images/azurekglqueries.png",
-    "Tools/Reverse-Engineering/Radare2/Radare2-Commands.md",
     "Coding-Scripting-Programming/Malware/Polymorfic-Code.md",
-    "Tools/Reverse-Engineering/Radare2/Radare2-Cheatsheet.md",
     "Images/azurealertsdescriptionimage.png",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Alerts.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-AD-Administration.md",
-    "Reconnaissance/Active-Information-Gathering/OS-Detection/OS-Detection.md",
-    "Reconnaissance/Local-Setup.md",
-    "Coding-Scripting-Programming/Languages/C/Useful_C.md",
-    "Exploitation/Binary-Exploitation/Binary-Exploitation-Enumeration.md",
     "Post-Exploitation/Evasion/Stealth",
     "Images/azurelogeventcatergories.png",
     "Images/azurelogeventtiering.png",

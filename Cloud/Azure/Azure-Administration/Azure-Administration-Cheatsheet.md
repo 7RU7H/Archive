@@ -985,22 +985,44 @@ KGL Log queries
 - Schema 
 - Filter
 - Explorer
-
-THIS IS NOT FINISHED!
+- 
 ```kusto
+# Syntax
+# Count by Rows:
+$Table | count 
+
+# Count by Column:
+$Table 
+| count
+
 # Control Commands 
 .create table Logs (Level:string, Text:string)
 
-# Queries
+
+# Queries - I will use row queries for space, unless it is required
 $table | count
 $table | top 3 by event severity duration
 $table | where StartTime between (datetime(2007-11-01) .. datetime(2007-12-01))
+$table | where $Column == "Something" 
+
+# Top most security events by time generated
+SecurityEvents 
+	| take 10 by TimeGenerated
+
+# In the last 24 hours records of "Clicked Schedule Button"
+AppEvents 
+    | where TimeGenerated > ago(24h)
+    | where Name == "Clicked Schedule Button"
+
+# Heartbeat data source reports the health of all computers that report to LA Workspace
+Heartbeat | summarize arg_max(TimeGenerated, *) by ComputerIP
 
 # Aggregate content by specifications using using summarize 
 $table | summarize count(), avg(severity) by $column, $column
 
 # Create a Column Chart from $event 
 $table | where isnotempty($event) | summarize event_count=count() by $event | top 10 by event_count | render columnchart
+
 ```
 
 - Automate remote network monitoring with packet capture - from triggering alerts

@@ -25,11 +25,11 @@ To obtain observability you need to use Metrics, Logs (Metrics and Logs are two 
 	- Traces:  A history request which travels through multiple Apps/services for troubleshooting failure
 - [Azure Monitor Insights](https://learn.microsoft.com/en-us/azure/azure-monitor/insights/insights-overview)
 	- Get insights
-		-  Application Performance Monitoring (APM) tools monitor app performance and gather trace logging data.
+		-  Application Performance Monitoring (APM) tools monitor app perparanoid black sabbathformance and gather trace logging data.
 	- Visualize
 		- Power BI with the Azure Workbooks
 	- Analyze 
-		- Logs with queries I
+		- Logs with queries 
 		- Interactive analysis withAzureMonitor Metrics analysis engine
 	- Alerts
 	- Integrate data with Ingestor and Exportign log data with Azure CLI Powershell, and APIs.
@@ -37,9 +37,16 @@ To obtain observability you need to use Metrics, Logs (Metrics and Logs are two 
 
 ![](azuremonitorcomponents.png)
 
+Azure Monitor collects data automatically from a range of components:
+- **Application data**: Data that relates to your custom application code.
+- **Operating system data**: Data from the Windows or Linux virtual machines that host your application.
+- **Azure resource data**: Data that relates to the operations of an Azure resource, such as a web app or a load balancer.
+- **Azure subscription data**: Data that relates to your subscription. It includes data about Azure health and availability.
+- **Azure tenant data**: Data about your Azure organization-level services, such as Azure Active Directory.
+- **Custom Sources**:
+
 All data collected by Azure Monitor is either a [metric or log](https://learn.microsoft.com/en-us/azure/azure-monitor/platform/data-collection) data type. 
 - **Metrics** are numerical values that describe some aspect of a system at a particular point in time. Metrics are lightweight and capable of supporting near real-time scenarios.
-	- 
 - **Logs** contain different kinds of data organized into records with different sets of properties for each type. Data like events and traces are stored as logs along with performance data so all the data can be combined for analysis.
 	- Log Events 
 		- Includes a range of data at the subscription-level
@@ -300,13 +307,35 @@ KGL Log queries
 - Explorer
 
 ```kusto
+# Syntax
+# Count by Rows:
+$Table | count 
+
+# Count by Column:
+$Table 
+| count
+
 # Control Commands 
 .create table Logs (Level:string, Text:string)
 
-# Queries
+
+# Queries - I will use row queries for space, unless it is required
 $table | count
 $table | top 3 by event severity duration
 $table | where StartTime between (datetime(2007-11-01) .. datetime(2007-12-01))
+$table | where $Column == "Something" 
+
+# Top most security events by time generated
+SecurityEvents 
+	| take 10 by TimeGenerated
+
+# In the last 24 hours records of "Clicked Schedule Button"
+AppEvents 
+    | where TimeGenerated > ago(24h)
+    | where Name == "Clicked Schedule Button"
+
+# Heartbeat data source reports the health of all computers that report to LA Workspace
+Heartbeat | summarize arg_max(TimeGenerated, *) by ComputerIP
 
 # Aggregate content by specifications using using summarize 
 $table | summarize count(), avg(severity) by $column, $column
