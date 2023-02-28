@@ -98,7 +98,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 332.0110321044922
+    "width": 359.0110321044922
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -142,13 +142,14 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "ed8f63df71621be6",
+  "active": "6386e306b48c0ff3",
   "lastOpenFiles": [
     "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Monitor.md",
+    "Images/azuremonitorcollectionagents.png",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
     "Tools/Reverse-Engineering/Radare2/Radare2-Commands.md",
     "Linux/Linux-Commands/Linux-One-Liners-To-Rule-Them-All.md",
     "Exploitation/Binary-Exploitation/Binary-Exploitation-Enumeration.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
     "Linux/Linux-Commands/Linux-Module-Commands.md",
     "Tools/Stegonography/Untitled.md",
     "Tools/Stegonography",
@@ -172,7 +173,6 @@
     "Images/azurealertsdescriptionimage.png",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Alerts.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-AD-Administration.md",
     "Post-Exploitation/Evasion/Stealth",
     "Images/azurelogeventcatergories.png",
     "Images/azurelogeventtiering.png",

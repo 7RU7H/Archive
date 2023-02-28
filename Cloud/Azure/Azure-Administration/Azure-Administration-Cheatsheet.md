@@ -985,31 +985,31 @@ KGL Log queries
 - Schema 
 - Filter
 - Explorer
-- 
-```kusto
-# Syntax
-# Count by Rows:
+
+```sql
+// Syntax
+// Count by Rows:
 $Table | count 
 
-# Count by Column:
+// Count by Column:
 $Table 
 | count
 
-# Control Commands 
+// Control Commands 
 .create table Logs (Level:string, Text:string)
 
 
-# Queries - I will use row queries for space, unless it is required
+// Queries - I will use row queries for space, unless it is required
 $table | count
 $table | top 3 by event severity duration
 $table | where StartTime between (datetime(2007-11-01) .. datetime(2007-12-01))
 $table | where $Column == "Something" 
 
-# Top most security events by time generated
+// Top most security events by time generated
 SecurityEvents 
 	| take 10 by TimeGenerated
 
-# In the last 24 hours records of "Clicked Schedule Button"
+// In the last 24 hours records of "Clicked Schedule Button"
 AppEvents 
     | where TimeGenerated > ago(24h)
     | where Name == "Clicked Schedule Button"
@@ -1017,13 +1017,34 @@ AppEvents
 # Heartbeat data source reports the health of all computers that report to LA Workspace
 Heartbeat | summarize arg_max(TimeGenerated, *) by ComputerIP
 
-# Aggregate content by specifications using using summarize 
+// Aggregate content by specifications using using summarize 
 $table | summarize count(), avg(severity) by $column, $column
 
-# Create a Column Chart from $event 
+// Create a Column Chart from $event 
 $table | where isnotempty($event) | summarize event_count=count() by $event | top 10 by event_count | render columnchart
 
+// Chat CPU usage trends by computer
+InsightsMetrics
+| where TimeGenerated > ago(1h)
+| where Origin == "vm.azm.ms"
+| where Namespace == "Processor"
+| where Name == "UtilizationPercentage"
+summarize avg(Val) by bin(TimeGenerated, 5m), Computer
+render timechart
 ```
+
+Onboard virtual machines to Azure Monitor VM Insights
+`Monitor -> Monitoring -> Insights -> Select Enable & Refresh`; avaliable Graphs:
+- Logical Disk Performance
+- CPU Utilization
+- Available Memory
+- Logical Disk IOPS
+- Logical Disk MB/s
+- Logical Disk Latency (ms)
+- Max Logical Disk Used %
+- Bytes Sent Rate
+- Bytes Received Rate
+
 
 - Automate remote network monitoring with packet capture - from triggering alerts
 	-  `Network Watcher -> PAcket capture`

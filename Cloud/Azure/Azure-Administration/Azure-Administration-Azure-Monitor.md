@@ -88,10 +88,11 @@ Azure Monitor Logs is based on Azure Data Explorer, and log queries are written 
 	- Azure Monitor Logs API
 
 - Kusto is based on relational database management systems and supports entirties such as databases, tables and columns
+-  Kusto queries are read-only requests
 	- Some query operators include:
-		- Calculated columns , searching and filtering on rows, group by-aggregates, join functions
+		- Calculated columns, searching and filtering on rows, group by-aggregates, join functions
 - Kusto queries execute in context of some Kust database that is attached to a Kusto cluster
-- Kusto is generally composed of the follwing entites:
+- Kusto is generally composed of the following entites:
 	- Clusters - are entities that hold databases
 	- Databases - are named entities that allow reuse of Kusto queries or query parts
 	- Tables  - are named entities that hold data
@@ -103,6 +104,7 @@ Azure Monitor Logs is based on Azure Data Explorer, and log queries are written 
 	- Join data from multiple tables
 	- Aggregate large sets of data
 	- Perform intricate operations with minimal code
+- Groups of series of tables are called a schema 
 
 Scenarios:
 - Assess update requirement and time-to-complete
@@ -111,6 +113,20 @@ Scenarios:
 
 The following illustration highlights how KQL queries use the dedicated table data for your monitored services and resources.
 ![1080](azurekglqueries.png)
+
+Correctly designing a Log Analytics workspace deployment is important. Log Analytics workspaces are containers where Azure Monitor data is collected, aggregated, and analyzed.
+- Access mode
+	- workspace-context: access to all log in workspace where the permission is assigned 
+	- resource-context: provides access to view logs for resources in all tables you have access to
+- Access control mode
+	- how permissions work for any given Log Analytics workspace
+		- Require workspace permissions - no granular RBAC
+		- Use resource or workspace permissions - granular RBAC
+- Table-level RBAC - Very granular RBAC at the table level
+
+Azure Insight VM prevent user from access data they should not have access to
+
+![](azuremonitorcollectionagents.png)
 
 ## Network Watcher
 
@@ -306,30 +322,37 @@ KGL Log queries
 - Filter
 - Explorer
 
-```kusto
-# Syntax
-# Count by Rows:
+Log Analytic log queries can be found:
+- Alert Rules
+- Dashboards
+- Export
+- Powershell
+- Azure Monitor Logs API
+
+```sql
+// Syntax
+// Count by Rows:
 $Table | count 
 
-# Count by Column:
+// Count by Column:
 $Table 
 | count
 
-# Control Commands 
+// Control Commands 
 .create table Logs (Level:string, Text:string)
 
 
-# Queries - I will use row queries for space, unless it is required
+// Queries - I will use row queries for space, unless it is required
 $table | count
 $table | top 3 by event severity duration
 $table | where StartTime between (datetime(2007-11-01) .. datetime(2007-12-01))
 $table | where $Column == "Something" 
 
-# Top most security events by time generated
+// Top most security events by time generated
 SecurityEvents 
 	| take 10 by TimeGenerated
 
-# In the last 24 hours records of "Clicked Schedule Button"
+// In the last 24 hours records of "Clicked Schedule Button"
 AppEvents 
     | where TimeGenerated > ago(24h)
     | where Name == "Clicked Schedule Button"
@@ -337,14 +360,33 @@ AppEvents
 # Heartbeat data source reports the health of all computers that report to LA Workspace
 Heartbeat | summarize arg_max(TimeGenerated, *) by ComputerIP
 
-# Aggregate content by specifications using using summarize 
+// Aggregate content by specifications using using summarize 
 $table | summarize count(), avg(severity) by $column, $column
 
-# Create a Column Chart from $event 
+// Create a Column Chart from $event 
 $table | where isnotempty($event) | summarize event_count=count() by $event | top 10 by event_count | render columnchart
 
+// Chat CPU usage trends by computer
+InsightsMetrics
+| where TimeGenerated > ago(1h)
+| where Origin == "vm.azm.ms"
+| where Namespace == "Processor"
+| where Name == "UtilizationPercentage"
+summarize avg(Val) by bin(TimeGenerated, 5m), Computer
+render timechart
 ```
 
+Onboard virtual machines to Azure Monitor VM Insights
+`Monitor -> Monitoring -> Insights -> Select Enable & Refresh`; avaliable Graphs:
+- Logical Disk Performance
+- CPU Utilization
+- Available Memory
+- Logical Disk IOPS
+- Logical Disk MB/s
+- Logical Disk Latency (ms)
+- Max Logical Disk Used %
+- Bytes Sent Rate
+- Bytes Received Rate
 
 ## References
 
