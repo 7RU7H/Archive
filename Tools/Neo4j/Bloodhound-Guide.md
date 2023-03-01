@@ -1,21 +1,6 @@
-# Neo4j-And-Bloodhound Guide
+# Bloodhound Guide
 
 **Beware the bugs! - Git clone bloodhound and sharphound**
-
-## Startup:
-
-### Per shell session start with
-```bash
-ulimit -n 40000 # increase history
-# THEN
-sudo neo4j console
-# THEN goto localhost:7474
-```
-Default credentials
-USER: neo4j
-PASS: neo4j
-
-[Change Password](https://neo4j.com/docs/operations-manual/current/configuration/password-and-user-recovery/)
 
 ## SharpHound
 
@@ -33,11 +18,12 @@ cd /tmp; curl https://github.com/BloodHoundAD/SharpHound/releases/download/v1.0.
 - Sharphound.exe 
 - Azurehound.ps1 = for Microsoft Azure
 
-
 ```powershell
 .\SharpHound.exe -c all
 SharpHound.exe -c DCOnly
 # dc only is pretty quiet comparitive to all, all will try out-of-scope machine, all machines in the domain..
+# Do not spawn SharpHound binary, common Alert 
+--NoSaveCache 
 ```
 
 ```batch
@@ -57,6 +43,7 @@ runas /netonly /user:$domain\$user cmd.exe
 
 
 ## Bloodhound
+
 [For detailed official documentation](https://bloodhound.readthedocs.io/en/latest/data-analysis/bloodhound-gui.html)
 
 [Python Ingestor](https://github.com/fox-it/BloodHound.py)
@@ -119,4 +106,5 @@ MATCH p=(c1:Computer)-[r1:MemberOf*1..]->(g:Group)-[r2:AdminTo]->(n:Computer) RE
 ```
 
 ## References
+
 [Docs](https://bloodhound.readthedocs.io/en/latest/data-analysis/bloodhound-gui.html)

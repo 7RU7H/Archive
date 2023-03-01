@@ -13,50 +13,25 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Persistence/Linux-Persistence.md",
+                "file": "Web-Application-Hacking/SQLi/SQLInjection.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "6386e306b48c0ff3",
+            "id": "13bea4a0e295298b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "480fdc9b0f8b5034",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Monitor.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "733c561ac5333779",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cloud/Cloud-Hacking/Azure-Hacking.md",
+                "file": "Brain-Hacking/Question-Based-Hacking-Methodology.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -114,7 +89,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+                "file": "Web-Application-Hacking/SQLi/SQLInjection.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,11 +117,19 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "6386e306b48c0ff3",
+  "active": "a4cb7d3d201a8140",
   "lastOpenFiles": [
+    "Brain-Hacking/Question-Based-Hacking-Methodology.md",
+    "Web-Application-Hacking/SQLi/SQLInjection.md",
+    "Services/Webservers/Webservers-PHP-Based-Commonalities.md",
+    "Reconnaissance/Passive-Information-Gathering/Search-Engine-Dorking.md",
+    "Tools/Neo4j/Bloodhound-Guide.md",
+    "Tools/Neo4j/Neo4j.md",
+    "Tools/Neo4j",
+    "Persistence/Linux-Persistence.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Monitor.md",
     "Images/azuremonitorcollectionagents.png",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
     "Tools/Reverse-Engineering/Radare2/Radare2-Commands.md",
     "Linux/Linux-Commands/Linux-One-Liners-To-Rule-Them-All.md",
     "Exploitation/Binary-Exploitation/Binary-Exploitation-Enumeration.md",
@@ -161,18 +144,12 @@
     "Coding-Scripting-Programming/Languages/Python/Useful_Python.md",
     "Exploitation/CVEs/PrintNightmare.md",
     "Digitial-Forensics/Memory-Forensics.md",
-    "Persistence/Linux-Persistence.md",
     "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/File-Transfers.md",
     "Tools/Shells/SSH-Cheatsheet.md",
     "Reverse-Engineering/Malware-Analysis/Malware-Analysis.md",
     "Reverse-Engineering/Malware-Analysis/Fake-System-And-Network-Infrastructure-For-Malware-Analysis.md",
-    "Coding-Scripting-Programming/Malware/Malware-Techiques-Obfuscation.md",
-    "Tools/Forensics/Volatility.md",
     "Images/azurekglqueries.png",
-    "Coding-Scripting-Programming/Malware/Polymorfic-Code.md",
     "Images/azurealertsdescriptionimage.png",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Alerts.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration.md",
     "Post-Exploitation/Evasion/Stealth",
     "Images/azurelogeventcatergories.png",
     "Images/azurelogeventtiering.png",

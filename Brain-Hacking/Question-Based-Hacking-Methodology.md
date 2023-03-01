@@ -108,8 +108,16 @@ Information - the user Alice has X SID that then indicates Administrative Group
 	- Error text 
 		- What does the error mean? Just google it! 
 	- How is data reflected back?
-		- Did you fuzz for bad characters?
+		- Did you fuzz for special bad characters?
 		- XXS, SSTI, etc?
+... 
+- SQLI?
+	- Can you create an Error and fix it?
+	- Is the data returned a Boolean directly or indrectly?
+	- Are Headers used in the back to store SQL data?
+		- PHP: `X-Forward-For: 10.10.10.0.` to log IP addresses
+	- If nothing is returned can you query the database to sleep()?
+	- If there are multiple fields is there second order injection with `'\''` and `'"'` to generate a error, have do so for each?
 
 
 - Web PrivEsc
@@ -172,7 +180,7 @@ Condense:
 			- [[RPC-Recon]]
 		- Is what is shared and expected to be shared by AD or have humans disclosed information in shares?
 			- Do the shares contain: shortcuts to executables, credentials, software, user and domain intel and information?	
-	 - Recursively have with current context and reappraise Bloodhound, your objectives and the potential paths - [[Neo4j-And-Bloodhound-Guide]]? - `-c DCOnly` is quieter!
+	 - Recursively have with current context and reappraise Bloodhound, your objectives and the potential paths - [[Bloodhound-Guide]]? - `-c DCOnly` is quieter!
 		1. How do I compromise credentials?
 			1. Is the credential reused/defaults/weak/hardcoded?
 				1. Have reused all credentials with [[Password-Attacks]]?

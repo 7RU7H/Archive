@@ -32,6 +32,17 @@ DuckDuckGo:
 
 from [THM Red Team Recon](https://tryhackme.com/room/redteamrecon)
 
+## Others
+
+- Use “`ext:php`” and “`inurl:?`” along with the domain to find `.php` files with a question mark in the url
+- Disclosed Bugs
+	- `site:openbugbounty.org inurl:reports intext:"yahoo.com"`
+
+## Location of Data
+
+- Code left dumped/left on pastebin, jsfiddle, and codebeautify
+
+
 ## References
 [Wiki](https://en.wikipedia.org/wiki/Google_hacking)
 [DuckDuckGo Search Syntax](https://help.duckduckgo.com/duckduckgo-help-pages/results/syntax/)
@@ -40,3 +51,4 @@ from [THM Red Team Recon](https://tryhackme.com/room/redteamrecon)
 [Bing's Advanced Search Options](https://support.microsoft.com/en-us/topic/advanced-search-options-b92e25f1-0085-4271-bdf9-14aaea720930)
 [THM Red Team Recon](https://tryhackme.com/room/redteamrecon)
 [Exploit-db 's google-hacking-database](https://www.exploit-db.com/google-hacking-database)
+[Mike Takahashi 5+ Google Dorks](Use “`ext:php`” and “`inurl:?`” along with the domain to find `.php` files with a question mark in the url:)

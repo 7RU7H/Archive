@@ -7,3 +7,6 @@ Search and see
 ```php
 file_uploads # php will accept uploads and put it in a cached directory 
 ```
+
+
+PHP, the `X-Fowarded-For` header is commonly used for logging the user IP Address.

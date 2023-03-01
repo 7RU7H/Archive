@@ -981,7 +981,7 @@ Configure VM for Log Analytics
 - Agent
 Then `$VM -> Logs -> Enable -> chooose a Log Analytucs Workspace -> Enable `
 
-KGL Log queries 
+#### KGL Log queries 
 - Schema 
 - Filter
 - Explorer
@@ -1045,6 +1045,7 @@ Onboard virtual machines to Azure Monitor VM Insights
 - Bytes Sent Rate
 - Bytes Received Rate
 
+#### Network Watcher
 
 - Automate remote network monitoring with packet capture - from triggering alerts
 	-  `Network Watcher -> PAcket capture`

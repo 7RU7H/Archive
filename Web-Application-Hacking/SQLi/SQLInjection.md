@@ -41,6 +41,14 @@ Databases require instructional commands to store, organise and interact with da
 			- [[FFUF-Cheatsheet]] maybe useful in fuzzing fields of the database.
 		- Or use the system hosting the database to use the database as storage for further movement with commands to code excution. 
 
+4. Nested SQL
+	- *A useful function in SQL is creating a query within a query, also known as a subquery or nested query. A nested query is a SELECT statement that is typically enclosed in parentheses, and embedded within a primary SELECT , INSERT , or DELETE operation.* [DigitalOcean Nest SQL](https://www.digitalocean.com/community/tutorials/how-to-use-nested-queries)
+	- [Coderwall Nested SQLi](https://coderwall.com/p/dnf8sa/nested-sql-injections)
+5. If there are multiple fields is there second order injection with `'\''` and `'"'` to generate a error, have do so for each? - [PortSwigger Second Order SQLi](https://portswigger.net/kb/issues/00100210_sql-injection-second-order)
+
+Al second order injections
+- Figure out which field has a possiblility of second order injection with `'\''` and `'"'` to generate a error.
+
 ## Use cases for SQLi 
 
 1. Authentication Bypass
@@ -194,9 +202,8 @@ asd',username='test',email='hacked
 ```
 
 
-
-
 ## References
+
 [Prepared Statements Wiki](https://en.wikipedia.org/wiki/Prepared_statement)
 [TryHackMe SLQinjections Labs room](https://tryhackme.com/room/sqlilab)
 [Computerphile Video](https://www.youtube.com/watch?v=ciNHn38EyRc)
@@ -204,3 +211,5 @@ asd',username='test',email='hacked
 [PayloadsAllTheThings/](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/SQL%20Injection)
 [MYSQL Group_Concat](https://www.w3resource.com/mysql/aggregate-functions-and-grouping/aggregate-functions-and-grouping-group_concat.php)
 [SQLite Group_Concat](https://www.sqlitetutorial.net/sqlite-group_concat/)
+[DigitalOcean Nest SQL](https://www.digitalocean.com/community/tutorials/how-to-use-nested-queries)[Coderwall Nested SQLi](https://coderwall.com/p/dnf8sa/nested-sql-injections)
+[PortSwigger Second Order SQLi](https://portswigger.net/kb/issues/00100210_sql-injection-second-order)
