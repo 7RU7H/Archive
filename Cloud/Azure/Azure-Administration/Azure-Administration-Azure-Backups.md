@@ -2,7 +2,7 @@
 # Azure Backups
 
 
-The Azure Backup service provides a simple, secure, and cost-effective solution for backing up your data. Administrators implement the Microsoft Azure Recovery Services (MARS) agent for Azure Backup to recover their data from the Microsoft Azure cloud. Azure Backup Service is a backup layer that spans many Azure services - Scales, secures data at-rest and in-transit with unlimited data transfer:
+The Azure Backup service provides a simple, secure and cost-effective solution for backing up an organistion's data. Administrators implement the Microsoft Azure Recovery Services (MARS) agent for Azure Backup to recover their data from the Microsoft Azure cloud. Azure Backup Service is a backup layer that spans many Azure services - Scales, secures data at-rest and in-transit with unlimited data transfer:
 - On-Premise, Azure VMs, Azure Fiels, SQL Server (via Azure VM), SAP HANNA databases (vie Azure VM), Azure Database for PostgreSQL
 - Azure Backup directly integerated with Azure Services - not searchable based on service name
 - Offload on-premises backups
@@ -15,20 +15,18 @@ Benefits according to Microsoft:
 
 ## Azure Recovery Services (ARS) 
 
-Azure Recovery Services (ARS) vault is a storage entity in  Azure that houses data and recovery points
+Azure Recovery Services (ARS) vault is a storage entity in Azure that houses data and recovery points
 - Enhanced capabilities to help secure backup data 
 - Central Monitoring for your hybrid IT environment
 - Azure role-based access controll (Azure RBAC)
-- Soft Delte
-- Cross Region Restore
- Microsoft Azure REcovery Services (MARS) agent backups files, folders, and system state from Windows on-premises mahcnie and Azure VMs
+- Soft Delete
+- Cross-3Region Restore
+ Microsoft Azure Recovery Services (MARS) agent backups files, folders, and system state from Windows on-premises mahcnie and Azure VMs
  - BAckups are stored in a REcovery Services vulat in Azure
  - MARS agent is also known as the Azure Backup agent
  - The AMRS agent does not support Linux operating systems
 
 Azure Site Recovery (ASR) is a hybrid (on-premise to cloud) backup solution for site-to-site recovery
-
-
 - Recovery Services Vaults 
 	- Backup: 
 		- File Shares, Files and folders, IaaS VM SQL databases
@@ -65,7 +63,7 @@ Azure Backup provides independent and isolated backups to guard against unintend
 		- Kept two days to reduce backup and restore times
 		- Incremental stored as Blobs
 	- Image - Capture a single image containing all managed disks associated with a VM
-- Azure Site Recovery -  for scenarios involving replication, failover, and fall back.
+- Azure Site Recovery - for scenarios involving replication, failover, and fall back.
 	- Disaster recovery for VMs 
 	- Can backup data from SQL database  or IaaS VMs, Azure Services
 	- Replicate Azure virtual machines from one Azure region to another
@@ -159,8 +157,6 @@ Undelete Backup that has Backup Disabled
 
 Delete Backup Data Backup
 `Search Recovery Services Vaults -> $rsv -> Backup items -> $Backup -> Delete backup data`
-
-
 
 ## References
 

@@ -61,6 +61,42 @@ Create a Custom Template
 - `Load file` to upload - file named template
 - `Project, Instance details` - can be modified
 
+Basic Skeleton of template with comments explaining use case
+```json
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "apiProfile": "", // Valure to avoid having to specify API versions foreach resource in the template 
+  "parameters": {}, //values passed to template 
+  "variables": {}, // transform parameteres or resources properties using function expressions
+  "functions": [], // User-Defined functions available within the template
+  "resources": [] // Azure resource you want to deploy or update 
+}
+```
+
+Example Resource use
+```json
+//...
+  "resources": [
+      {
+          "type": "Microsoft.Storage/storageAccounts", // {ResourceProvider}/ResourceType
+          "apiVersion": "2019-01-01", //resource proivdes provider their own API!
+          "name": "{provide-unique-name}", // variable used here
+          "location": "eastus", //region to be deployed
+          "sku": {
+              "name": "Standard_LRS"
+          },
+          "kind": "StorageV2",
+          "properties": {
+              "supportsHttpsTrafficOnly": true
+          }
+      }
+  ]
+//...
+```
+- Must lookup resource providers API version!
+
+
 ## Azure VMs
 
 Create a VM
@@ -480,10 +516,12 @@ Assign Roles
 ``Search Azure AD -> Users -> Assigned Roles`
 Enable Account
 `Users -> $username -> Settings -> [Tick/Untick] Account enabled`
-Guest user can be added with Creating and then Inviting
+
+Temporary Guest users use: `Azure AD B2B` , Guest user can be added with Creating and then Inviting
 `Search Azure AD -> Azure AD -> Users -> New Users -> New user`
 `Overview -> Users -> New User -> Invite External`
 - remember to add to groups and anything else.
+
 
 Bulk additions, deletion and invitation use a .cvs with SOME of the fields
 Name | Username | Initial Password | Block Sign in | Firstname | Lastname 
@@ -505,7 +543,7 @@ Deleted Groups
 
 #### Authenication and Authorization
 
-Configure SSPR
+Configure SSPR (self-service-password-reset)
 `Azure Active Directory -> Passwords -> Properties - SSPR enabled (None/Selectec/All)`
 Futher configuration of SSPR
 `Authenicatin Mehtods, Registration, Notification and Customise Helpdesk link`

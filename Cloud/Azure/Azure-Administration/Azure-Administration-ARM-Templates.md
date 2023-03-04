@@ -28,12 +28,7 @@ ARM Templates are [[Infrastructure-As-Code]] (IaC) - the process of managing and
 ![](armtemplatepipeline.png)
 
 
-`Search -> Deploy custom template` - there are common templates:
--    [Create a Linux virtual machine](https://portal.azure.com/#)
--    [Create a Windows virtual machine](https://portal.azure.com/#)
--    [Create a web app](https://portal.azure.com/#)
--    [Create a SQL database](https://portal.azure.com/#)
--    [Azure landing zone](https://portal.azure.com/#)
+`Search -> Deploy custom template` 
 
 You can also [Build your own template in the editor](https://portal.azure.com/#) 
 - [ARM template documentation | Microsoft Learn](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/)

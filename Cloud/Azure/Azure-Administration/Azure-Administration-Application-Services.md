@@ -1,7 +1,6 @@
 
 # Azure Administration - Application Services
 
-
 Azure App Service is an HTTP-based service for hosting web applications, REST APIs, and mobile back ends. An App Service plan defines a set of compute resources for a web application to run; the compute resources are analogous to a server farm in conventional web hosting:
 - Choose your own programming lanaguage for Windows or Linux
 - Platform as a Service
@@ -11,7 +10,7 @@ Azure App Service is an HTTP-based service for hosting web applications, REST AP
 - Azure App Services you supports the following runtimes: .NET, .NET Core, Java Ruby, node.js, PHP, Python
 - Azure App services can also run docker single or multi-containers
 
-Azure App service has built-in auto scale support and will increase or decrease the resources allocated to run your app as needed, depending on the demand.
+Azure App services has built-in auto scaling support that can increase or decrease the resources allocated to run your app as needed, depending on the demand.
 
 Azure App service makes it easy to implement common:
 - Azure DevOps 
@@ -44,11 +43,11 @@ You pay based on an Azure App Servies Plan - list below by incremental cost:
 **Deployment Slots** allows you create different environemtns of your web-application, can also swap environments - potential [Blue/Green deploy](https://en.wikipedia.org/wiki/Blue-green_deployment) 
 - Connections strings follow the content across the swap, Scale and Domains do not.
 	
-App Service Environment (ASE) is an Azure App Service feature that provides a fully isolated and dedidcated environment for securely running App Service apps at high scale
+App Service Environment (ASE) is an Azure App Service feature that provides a fully isolated and dedicated environment for securely running App Service apps at high scale
 - Customers can create multiple ASEs:
 	- Within a single Azure Region
 	- Across Multiple Azure Region making ASEs
-- Idea for horizontally scaling stateless applciation tiers in support of high requests per second (RPS) workloads
+- Idea for horizontally scaling stateless application tiers in support of high requests per second (RPS) workloads
 - ASE comes with its own pricing tier (Isolated Tier)
 - ASEs can be used to configure security architecture
 - Apps running on ASEs can have their access gated by upstream devices, such as web applcation firewalls (WAFs)

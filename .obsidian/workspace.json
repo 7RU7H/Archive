@@ -8,55 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "a4cb7d3d201a8140",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Web-Application-Hacking/SQLi/SQLInjection.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "fcea956906b99db9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Post-Exploitation/Stealth/Active-Directory-Stealth.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "249c68025fb2f425",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Digitial-Forensics/Offensive-Forensics.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "13bea4a0e295298b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Brain-Hacking/Question-Based-Hacking-Methodology.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -85,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "passthru()",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -98,7 +61,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 359.0110321044922
+    "width": 515.5
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -114,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Digitial-Forensics/Offensive-Forensics.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -134,48 +97,50 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "obsidian-excalidraw-plugin:New Excalidraw drawing": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "command-palette:Open command palette": false,
-      "markdown-importer:Open format converter": false
+      "markdown-importer:Open format converter": false,
+      "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
   "active": "249c68025fb2f425",
   "lastOpenFiles": [
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Kubernetes-Services.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+    "Services/Databases/Dynamodb/Amazon-Dynamodb.md",
+    "Cloud/Cloud-Hacking/AWS-Hacking.md",
+    "Cloud/AWS/AWS-Defined.md",
+    "Services/Databases/MongoDB/MongoDB.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-DNS.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Disks.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Container-Instances.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Backups.md",
+    "Networks/Network-Protocols.md",
+    "Brain-Hacking/Question-Based-Hacking-Methodology.md",
+    "Post-Exploitation/Stealth/Active-Directory-Stealth.md",
+    "Services/Databases/MongoDB",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-ARM-Templates.md",
+    "Web-Application-Hacking/SQLi/SQLInjection.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Application-Services.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Application-Gateways.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-AD-Device-Management.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-AD-Administration.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration.md",
+    "Digitial-Forensics/Offensive-Forensics.md",
     "Images/robleesansoffensiveforensicstimestomping.png.png",
     "Images/robleesansoffensiveforensicstimestomping.png",
-    "Digitial-Forensics/Offensive-Forensics.md",
     "Digitial-Forensics/Timestomping.md",
     "Reconnaissance/Active-Information-Gathering/User/User-Recon-Active.md",
     "Images/robleesansoffensiveforensicslateralmovementoverview.png",
     "Reconnaissance/Active-Information-Gathering/User",
-    "Post-Exploitation/Stealth/Active-Directory-Stealth.md",
-    "Web-Application-Hacking/SQLi/SQLInjection.md",
-    "Brain-Hacking/Question-Based-Hacking-Methodology.md",
     "Services/Webservers/Webservers-PHP-Based-Commonalities.md",
     "Reconnaissance/Passive-Information-Gathering/Search-Engine-Dorking.md",
     "Tools/Neo4j/Bloodhound-Guide.md",
-    "Tools/Neo4j/Neo4j.md",
     "Tools/Neo4j",
-    "Persistence/Linux-Persistence.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Monitor.md",
     "Images/azuremonitorcollectionagents.png",
-    "Tools/Reverse-Engineering/Radare2/Radare2-Commands.md",
-    "Linux/Linux-Commands/Linux-One-Liners-To-Rule-Them-All.md",
-    "Exploitation/Binary-Exploitation/Binary-Exploitation-Enumeration.md",
-    "Linux/Linux-Commands/Linux-Module-Commands.md",
-    "Tools/Stegonography/Untitled.md",
     "Tools/Stegonography",
-    "Tools/Reverse-Engineering/Radare2/Radare2-Cheatsheet.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
-    "Cloud/Cloud-Hacking/Azure-Hacking.md",
-    "Coding-Scripting-Programming/Languages/Powershell/Useful_Powershell.md",
-    "Tools/Useful-Software/Code-Online.md",
-    "Coding-Scripting-Programming/Languages/Python/Useful_Python.md",
-    "Exploitation/CVEs/PrintNightmare.md",
     "Images/azurekglqueries.png",
     "Images/azurealertsdescriptionimage.png",
     "Post-Exploitation/Stealth",

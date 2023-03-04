@@ -192,6 +192,15 @@ Internet printing protocol default port 631
 Lightweight Directory Access Protocol over SSL
 Default port 636 and non-encrypted variant is - 389 - [[LDAP-Recon]]
 
+## 873 - Rsync
+[Rsync](https://wiki.archlinux.org/title/rsync) is an open source utility that provides fast incremental file transfer. Can transfer anonymously without credential - good for mirroring. 
+```bash
+rsync --list-only $ip::
+rsync --list-only $ip::$share
+rsync 3$ip::$share/$remotefile $copyfiletohost
+
+```
+
 ## 990 - FTPS 
 FTPS default port 990
 
@@ -287,7 +296,6 @@ Default port 8000, see [[Burpsuite-Helpsheet]]
 Apache JServ Protocol
 
 
-
 ## 8080 - HTTP Alternate
 default 8080
 
@@ -300,6 +308,10 @@ Active Directory Web Services (ADWS), in Windows Server 2008 R2 and later, is a 
 
 ## 10000 - Webmin
 [Webmin](https://webmin.com/)
+
+## 27017 - MongoDB
+
+[[MongoDB]]
 
 ## References
 [iana](https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml)

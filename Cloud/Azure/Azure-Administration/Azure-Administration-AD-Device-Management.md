@@ -1,6 +1,5 @@
 # Azure Administration AD Device Management
 
-
 Device Identity management is the management of physical devices such as phones, tablets, laptops and desktop computers, which are grant access to Cloud company resources. With configuration the possibility of managing employee's personal equipment - Bring Your Own Device (BYOD) - can be through Azure to keep assets safe.
 
 1. Azure AD Registered - Windows 10, iOS, Android, MacOS

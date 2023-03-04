@@ -32,7 +32,7 @@ Microsoft espoused features
 ![1000](azureadfeatures.png)
 
 Considerations:
-- SSO for accessiblity for consistence UX experience to cloud or on-premise resources for users.
+- SSO for accessiblity for consistent UX experience to cloud or on-premise resources for users.
 - Secure remote access - centralized authorization management, MFA2
 - Advanced Data protection
 - Cost reduction and self -service options
@@ -69,7 +69,7 @@ Azure AD is based on HTTP and HTTPS protocols with REST API
 
 Azure AD users and groups are created in a flat structure. There are no organizational units (OUs) or group policy objects (GPOs).
 
-You manage only users, groups, and policies - unless you deploy AD DS
+You manage only users, groups, and policies - unless you deploy AD DS.
 
 #### Azure AD Domain Services 
 
@@ -84,7 +84,7 @@ Azure AD Directory Domain Services provides managed domain services such as:
 
 Azure AD Connect is hybrid service to connect on-premise to Azure Account
 
-Password hash synchronization - sync local AD with Cloud AD
+Password hash synchronization - sync on-premise AD with Cloud AD
 Pass-through authenication - sign-on with the same password for local and cloud AD
 Federation integration - hybrid environment for local AD FS infrastucture - certificate renewal
 Synchronization - syncing data 
@@ -92,22 +92,30 @@ Health Monitoring - monitoring in Azure Portal
 
 #### Azure AD
 
-Users - Identity for a person - Users, Guest Users, Service Account
-Groups - Owners and members; assignable and joinable!
-Assigning Access rights - Direct, Group, Rule-based, External authority assignment
-External Identities - allows external parties access your apps and resources with trust signin like - Google and Facebook logins. Share, develop Azure AD apps for other tenants, developt white-label apps for consumers and customers Azure AD B2C. 
-Tenant - Logical division of organization in Azure - instance of AD in Azure - Business to business, Business to consumer
+Users 
+- Identity for a person 
+	- Users, Guest Users, Service Account
+Groups 
+- Owners and members; assignable and joinable!
+Assigning Access rights 
+- Direct, Group, Rule-based, External authority assignment
+External Identities 
+- allows external parties access your apps and resources with trust signin like:
+	- Google and Facebook logins. Share, develop Azure AD apps for other tenants, developt white-label apps for consumers and customers Azure AD B2C. 
+Tenant 
+- Logical division of organization in Azure 
+	- instance of AD in Azure
+	- Business to business, Business to consumer
 
 #### Azure AD join
 
 Azure AD join - for device joining:
 Features:
-SSO, Enterprise State roaming, MS Store for bussiness access, Windows Hello, Access restrictions, access to on-premise 
+SSO, Enterprise State roaming, MS Store for business access, Windows Hello, Access restrictions, access to on-premise 
 - Requires:
 	- Connection
 	- Registering - potential combination of registration with other solutions
 	- Joining
-Consider variance and other implementation scenarios
 
 #### Azure AD SSPR feature
 
@@ -119,23 +127,23 @@ Azure Active Directory **self-service password reset** (SSPR) feature - no hel
 
 
 [It is works:](https://learn.microsoft.com/en-us/azure/active-directory/authentication/concept-sspr-howitworks)
-When a user accesses the SSPR portal, the Azure platform considers the following factors:
--   How should the page be localized?
--   Is the user account valid?
--   What organization does the user belong to?
--   Where is the user's password managed?
+When a users access the SSPR portal, the Azure platform considers the following factors:
+- How should the page be localized?
+- Is the user account valid?
+- What organization does the user belong to?
+- Where is the user's password managed?
 
 You can require a minimum number of authenication methods; methods Avaliable
 ![](azuressprmethods.png)
 For Administration account - strong MFA policy, no reuse, rotate - no security question to prevent weak answers and [[OSINT]]. Users only registered when they have the met the number required methods needed for SSPR.
 
-Configure SSPR
+Configure SSPR (self-service-password-reset)
 `Azure Active Directory -> Passwords -> Properties - SSPR enabled (None/Selectec/All)`
 
 #### Azure User and Group Accounts
 
 Types of Account:
--  Cloud identity - user account defined only in Azure AD
+- Cloud identity - user account defined only in Azure AD
 - Directory-synchronized identity - defined on premise sync-ed to Azure AD with Azure AD Connect
 - Guest User - defined outside of Azure.
 
@@ -164,9 +172,9 @@ Administrative Unit Considerations - admin role scoping
 Account restoration must occur 30 day from deletion 
 
 - Access rights through signle user or group assignment
-	-  **Direct assignment**: Assign a user the required access rights by directly assigning a role that has those access rights.
-	-   **Group assignment**: Assign a group the required access rights, and members of the group will inherit those rights.
-	-   **Rule-based assignment**: Use rules to determine a group membership based on user or device properties.
+	- **Direct assignment**: Assign a user the required access rights by directly assigning a role that has those access rights.
+	- **Group assignment**: Assign a group the required access rights, and members of the group will inherit those rights.
+	- **Rule-based assignment**: Use rules to determine a group membership based on user or device properties.
 
 For Temporary Guest users use: `Azure AD B2B` -  you don't take on the responsibility of managing and authenticating the credentials and identities of partners. Some organisations will use federations for on-premise resource authenication - avaliability is dependent of on-premise (security? - some of the big hacks of 2022 were malicious abuse of contractor access, beware) 
 

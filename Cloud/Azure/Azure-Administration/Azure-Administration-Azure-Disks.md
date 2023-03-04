@@ -17,7 +17,7 @@ Azure Managed Disk are block-level storage volumes that are managed by Azure and
 	- Windows - Bitlocker
 	- Linux - DM-Crypt
 	 
-Azure Private Links to ensure traffic between Zure disk and Vms within the Microsoft network
+Azure Private Links to ensure traffic between Zure disk and VMs within the Microsoft network
 
 Azure Backup can be used to create a backup job with time-based backups and backup retention policies
 

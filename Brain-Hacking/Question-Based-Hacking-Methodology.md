@@ -76,7 +76,7 @@ Information - the user Alice has X SID that then indicates Administrative Group
 	- Webserver and Website Language
 		- Clarify host OS version from webserver version? - Measure twice cut once!
 		- Vulnerable Lanaguage?
-		- Javascript?
+		- Javascript? - modern browsers can debug especially useful blind exploit development
 			-  XSS?
 				- What Input Validation?
 					- Which characters?
