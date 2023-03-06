@@ -1,12 +1,11 @@
-
 # Azure Administration Scale Sets
 
 Azure Scale sets allows automatic increases and decreases in VM capacity. Load Balancers can be associated with a Scale Set:
-- Evenly distribute VM accorss availablility Zones - more Availablility
+- Evenly distribute VM accross availablility Zones - more avaliablility
 - Use Load Balancer probe checks for more robust Health checks
 
 Load Balancers:
-1. Application Gateway is an HTTP/HTTPS web traffic load balncer application firewall
+1. Application Gateway is an HTTP/HTTPS web traffic load balancer application firewall
 2. Azure Load Balancer supports all TCP/UDP network traffic, port-forwarding and outbound flaws.
 
 A **Scaling Policy** detirmines what VM is removed to decrease the capacity of the Scale Set either:
@@ -16,7 +15,7 @@ A **Scaling Policy** detirmines what VM is removed to decrease the capacity of t
 
 **Update Policy** determine VM instances are brought up-to-date with the latest scale set model
 - Automatic: Increasing with start upgrading immediately in random order
-- Manual - Existiing instances must be manaually upgraded
+- Manual - Existing instances must be manaually upgraded
 - Rolling - Upgrade roll out in batches with optional pause
 Health monitoring can be enabled to detirmine if server is healthy or unhealthy
 1. Application health extension: Ping an HTTP request to a specifrc path and except a status 200
@@ -40,7 +39,7 @@ Create and Manage VM Scale Sets
 	- Flexible - high availability at scale with identical or multiple instances - any configuration to the scale set.
 - Advanced tab to enable beyond 100 instances; spreading for optimal spreading of allocation 
  - Configure Scaling in the `Scaling` tab; 
-	 - Policy - min/max number of instances; manula or autoscaling 
+	 - Policy - min/max number of instances; manual or autoscaling 
 	 - Scale in - CPU threshold, decrease of instances
 	 - Scale out - CPU threshold, duration, increase of instances
 	 - Scale-In policy - default, newest, oldest vms
@@ -66,7 +65,7 @@ Load a script with Script with Custom Script Extension
 if Custom:
 - Configure the Default auto created scale condition 
 	- Add rules!!!
-	- Scale  mode - metric or instance count
+	- Scale mode - metric or instance count
 	- Instance limits
 	- Schedule
 Test with:
@@ -87,7 +86,7 @@ Export Template, custom template for mass use
 
 ## References
 
-[Youtube Azure Administrator Certification (AZ-104)](https://www.youtube.com/watch?v=10PbGbTUSAg&t=14542s)
+[Youtube Azure Administrator Certification (AZ-104)](https://www.youtube.com/watch?v=10PbGbTUSAg)
 [autoscale with Azure Virtual Machine Scale Sets](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-autoscale-overview).
 [Deploy your application on Azure Virtual Machine Scale Sets](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-deploy-app).
 [Choose the right number of fault domains for Azure Virtual Machine Scale Sets](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-manage-fault-domains).

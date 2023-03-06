@@ -7,9 +7,9 @@ Azure Polices | Azure Roles
 Ensure compliance of resources | Control access to resources
 Does not restrict actions | Manages User actions at different scopes - does restict on Azure Resources
 
-- Policy Definitions - Defined in a .json to describe business ruls to control access to resources
+- Policy Definitions - Defined in a .json to describe business rules to control access to resources
 - Policy Assignment - Scope of a policy can effect
-- Policy Parameters - Values passed into Polcy definition so POlices are mote flexiable for re-use
+- Policy Parameters - Values passed into Polcy definition so Polices are more flexiable for re-use
 - Initiative Definitions - A collection of policy definitions, assignable to enforce compliance 
 
 `Overview -> Policies - Compliance` To view compliance across a scope.
@@ -31,14 +31,14 @@ Considerations:
 
 You use JSON to create a policy definition. The policy definition contains elements for:
 
--   display name
--   description
--   mode
--   metadata
--   parameters
--   policy rule
-    -   logical evaluation
-    -   effect
+- display name
+- description
+- mode
+- metadata
+- parameters
+- policy rule
+    - logical evaluation
+    - effect
 
 Policy Rules consist of an `if` and `then` blocks to specify when policy is enforced to precisely define scenario(s) for a policy. Policy Rule has a Policy Effect: 
 - Deny
@@ -49,7 +49,7 @@ Policy Rules consist of an `if` and `then` blocks to specify when policy is enfo
 - Disabled
 
 Policy Creation:
-1. Policy Defintions -  [list of built-in definitions](https://learn.microsoft.com/en-us/azure/governance/policy/samples/built-in-policies)
+1. Policy Defintions - [list of built-in definitions](https://learn.microsoft.com/en-us/azure/governance/policy/samples/built-in-policies)
 2. Initiative definition - [Azure Policy initiative definition structure](https://learn.microsoft.com/en-us/azure/governance/policy/concepts/initiative-definition-structure) and  [list of built-in initiatives](https://learn.microsoft.com/en-us/azure/governance/policy/samples/built-in-initiatives)
 3. Scope the initiative definition 
 4. Detirmine Compliance
@@ -79,7 +79,7 @@ Inheritance is made in the:
 
 ## Examples
 
-![1000](azureexamplepolicygroup.png)
+![1080](azureexamplepolicygroup.png)
 
 
 

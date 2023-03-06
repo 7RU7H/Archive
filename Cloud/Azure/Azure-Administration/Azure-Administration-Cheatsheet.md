@@ -3,7 +3,7 @@
 
 - Access the portal at https://portal.azure.com/ -  great for performing single tasks
 - Cloud Shell on the `>_` Icon; Temporary Host - per-session, per-user basis
-	- Has Requirements to use! - `Show Advanced Settings -> provide require fields -> Create Storage`
+	- Has Requirements to use! - `Show Advanced Settings -> provide required fields -> Create Storage`
 
 ## Resources
 
@@ -12,12 +12,7 @@ Azure Resource Manager provides a consistent management layer to perform tasks t
 #### Create Resources
 
 Create a Disk
-`Search: Disk -> Create- > Basics -> Encryption -> Networking -> Advanced -> Tags -> Review + create` Considerations:
-- SKUs
-- Size, IOPs and cost
-- Tags
-
-Wait for deployment, `Go to resource` 
+`Search: Disk -> Create -> Basics -> Encryption -> Networking -> Advanced -> Tags -> Review + create` Considerations: SKUs; Size, IOPs and cost; Tags - `review ->` Wait for deployment, `Go to resource` 
 
 Create a Resource Group
 `Resource Groups -> Create` - Add tags for QoL 
@@ -34,7 +29,7 @@ Administrating a Resource Group
 - Locks - Apply locks on resources
 
 #### Moving Resources
-Moving Resources - there are end cases - [see Documentation for more]([Move resources to a new subscription or resource group - Azure Resource Manager | Microsoft Learn](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/move-resource-group-and-subscription)):
+Moving Resources - there are edge cases - [see Documentation for more]([Move resources to a new subscription or resource group - Azure Resource Manager | Microsoft Learn](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/move-resource-group-and-subscription)):
 -   If you're using Azure Stack Hub, you can't move resources between groups.
 -   [App Services move guidance](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/move-limitations/app-service-move-limitations)
 -   [Azure DevOps Services move guidance](https://learn.microsoft.com/en-us/azure/devops/organizations/billing/change-azure-subscription?toc=/azure/azure-resource-manager/toc.json)
@@ -117,98 +112,16 @@ Create Storage Account `Search -> Storage Accounts`, provide name, location, red
 
 Configure Azure Storage Encryption:
 `Storage accounts -> $storage_accounts -> EncBootstrap web applications
-```bash
-# C#
-# Install dotnet
-wget -q -O - https://dotnet.microsoft.com/download/dotnet/scripts/v1/dotnet-install.sh | bash -s -- --version 6.0.404
-export PATH="~/.dotnet:$PATH"
-echo "export PATH=~/.dotnet:\$PATH" >> ~/.bashrc
-# create a ASP.NET Core MVC application
-dotnet new mvc --name $webappName
-cd $webappName/
-dotnet run
-
-# Java - with maven-archetype-webapp template
-cd ~
-mvn archetype:generate -DgroupId=example.demo -DartifactId=$webappName -DinteractiveMode=false -DarchetypeArtifactId=maven-archetype-webapp -DarchetypeVersion=1.4
-cd $webappName
-mvn package
-# the result will be .war file to be deploy
-
-# Node.js
-mkdir $path/$WebApp
-cd $WebApp
-npm init -y
-# start Web App
-npm start
-# Python - with flask
-python3 -m venv venv 
-source venv/bin/activate
-pip install flask
-mkdir $path/$WebApp
-cd $WebApp
-# Add applications to requirements.txt
-pip freeze > requirements.txt
-# Test
-export FLASK_APP=application.py
-flask run
-# Adding code to source control with git
-git init
-git add .
-git commit -m "Initial commit"
-```
-
-Deploying a WebApp
-```bash
-# C# 
-cd $webappName
-# Publish to build and zip to package
-dontnet publish -o pub
-cd pub
-zip -r site.zip *
-# Deply with the az cli
-az webapp deployment source config-zip \
-    --src site.zip \
-    --resource-group $rgName \
-    --name $appName
-
-# Java
-# CLI credentials required
-az webapp deployment user set --user-name <username> --password <password>
-# WAR deploy
-cd $webappName/target
-curl -v -X POST -u <username>:<password> https://<your-app-name>.scm.azurewebsites.net/api/wardeploy --data-binary @$webappName.war
-
-# Node.js
-export APPNAME=$(az webapp list --query [0].name --output tsv)
-export APPRG=$(az webapp list --query [0].resourceGroup --output tsv)
-export APPPLAN=$(az appservice plan list --query [0].name --output tsv)
-export APPSKU=$(az appservice plan list --query [0].sku.name --output tsv)
-export APPLOCATION=$(az appservice plan list --query [0].location --output tsv)
-
-az webapp up --name $APPNAME --resource-group $APPRG --plan $APPPLAN --sku $APPSKU --location "$APPLOCATION"
-
-# Python 
-export APPNAME=$(az webapp list --query [0].name --output tsv)
-export APPRG=$(az webapp list --query [0].resourceGroup --output tsv)
-export APPPLAN=$(az appservice plan list --query [0].name --output tsv)
-export APPSKU=$(az appservice plan list --query [0].sku.name --output tsv)
-export APPLOCATION=$(az appservice plan list --query [0].location --output tsv)
-
-cd path/$webappName
-az webapp up --name $APPNAME --resource-group $APPRG --plan $APPPLAN --sku $APPSKU --location "$APPLOCATION"
-```
-
 
 Create a Azure Files Share
 `Storage Account -> $storage_account -> File Shares`
-- open port 445 - check firewall
-- enable - `Secure tranfer required`
+- Open port 445 - check firewall
+- Enable - `Secure tranfer required`
 
 File mounting can be done on-demand with the `mount` command or on-boot (persistent) by creating an entry in /etc/fstab.
 
-
-Setup File Sync `Azure File Sync -> Create` - Marketplace - not default, but covered in AZ 104
+Setup File Sync 
+`Azure File Sync -> Create` - Marketplace - not default, but covered in AZ 104
 
 Create file share snapshots
 `Storage Account -> $storage_account -> File Shares -> $file_share -> Snapshots
@@ -220,7 +133,7 @@ Microsoft.StorageSync
 
 Deploying a Azure File Sync:
 1. Deploy Storage Sync Services
-2. Prepare Windwos Server(s)
+2. Prepare Windows Server(s)
 3. Install Azure File Sync agent
 4. Register Windows Server(s)
 
@@ -248,10 +161,10 @@ azcopy copy [source] [destination] --include
 azcopy copy [source] [destination] --exclude 
 ```
 
-URL for Azure remote container: `Home -> Storage Accounts -> $ContainerName -> Properties` - must be globally unique
+URL for Azure remote container: `Home -> Storage Accounts -> $ContainerName -> Properties` - must be globally unique!
 
 Create a SAS:
-`Storage Accounts -> $storage_account -> search SAS`configure and `Generate SAS and connection string`. Used for:
+`Storage Accounts -> $storage_account -> search SAS` configure and `Generate SAS and connection string`. Used for:
 - Connection strings
 - SAS Token
 - Blob service SAS URL
@@ -285,92 +198,7 @@ Configure Custom Domains - Either:
 - Direct mapping - create a `CNAME` record
 - Intermediary domain mapping (when domain is already in use) - prepend `asverify` to subdomain it permit Azure to recognize your custom domain thereby using a intermediary domain to validate the domain.
 
-#### Secure Storage endpoints
-
-Bootstrap web applications
-```bash
-# C#
-# Install dotnet
-wget -q -O - https://dotnet.microsoft.com/download/dotnet/scripts/v1/dotnet-install.sh | bash -s -- --version 6.0.404
-export PATH="~/.dotnet:$PATH"
-echo "export PATH=~/.dotnet:\$PATH" >> ~/.bashrc
-# create a ASP.NET Core MVC application
-dotnet new mvc --name $webappName
-cd $webappName/
-dotnet run
-
-# Java - with maven-archetype-webapp template
-cd ~
-mvn archetype:generate -DgroupId=example.demo -DartifactId=$webappName -DinteractiveMode=false -DarchetypeArtifactId=maven-archetype-webapp -DarchetypeVersion=1.4
-cd $webappName
-mvn package
-# the result will be .war file to be deploy
-
-# Node.js
-mkdir $path/$WebApp
-cd $WebApp
-npm init -y
-# start Web App
-npm start
-# Python - with flask
-python3 -m venv venv 
-source venv/bin/activate
-pip install flask
-mkdir $path/$WebApp
-cd $WebApp
-# Add applications to requirements.txt
-pip freeze > requirements.txt
-# Test
-export FLASK_APP=application.py
-flask run
-# Adding code to source control with git
-git init
-git add .
-git commit -m "Initial commit"
-```
-
-Deploying a WebApp
-```bash
-# C# 
-cd $webappName
-# Publish to build and zip to package
-dontnet publish -o pub
-cd pub
-zip -r site.zip *
-# Deply with the az cli
-az webapp deployment source config-zip \
-    --src site.zip \
-    --resource-group $rgName \
-    --name $appName
-
-# Java
-# CLI credentials required
-az webapp deployment user set --user-name <username> --password <password>
-# WAR deploy
-cd $webappName/target
-curl -v -X POST -u <username>:<password> https://<your-app-name>.scm.azurewebsites.net/api/wardeploy --data-binary @$webappName.war
-
-# Node.js
-export APPNAME=$(az webapp list --query [0].name --output tsv)
-export APPRG=$(az webapp list --query [0].resourceGroup --output tsv)
-export APPPLAN=$(az appservice plan list --query [0].name --output tsv)
-export APPSKU=$(az appservice plan list --query [0].sku.name --output tsv)
-export APPLOCATION=$(az appservice plan list --query [0].location --output tsv)
-
-az webapp up --name $APPNAME --resource-group $APPRG --plan $APPPLAN --sku $APPSKU --location "$APPLOCATION"
-
-# Python 
-export APPNAME=$(az webapp list --query [0].name --output tsv)
-export APPRG=$(az webapp list --query [0].resourceGroup --output tsv)
-export APPPLAN=$(az appservice plan list --query [0].name --output tsv)
-export APPSKU=$(az appservice plan list --query [0].sku.name --output tsv)
-export APPLOCATION=$(az appservice plan list --query [0].location --output tsv)
-
-cd path/$webappName
-az webapp up --name $APPNAME --resource-group $APPRG --plan $APPPLAN --sku $APPSKU --location "$APPLOCATION"
-```
-
-
+Secure Storage endpoints
 `Storage Accounts -> $storage_account -> Networking Firewalls and virtual networks`; restrict access:
 - Enabled from all networks
 - Enabled from selected virtual networks and IP address
@@ -379,7 +207,7 @@ az webapp up --name $APPNAME --resource-group $APPRG --plan $APPPLAN --sku $APPS
 ## Management Groups - Azure Policies
 
 Policy Creation:
-1. Policy Defintions -  [list of built-in definitions](https://learn.microsoft.com/en-us/azure/governance/policy/samples/built-in-policies)
+1. Policy Defintions - [list of built-in definitions](https://learn.microsoft.com/en-us/azure/governance/policy/samples/built-in-policies)
 2. Initiative definition - [Azure Policy initiative definition structure](https://learn.microsoft.com/en-us/azure/governance/policy/concepts/initiative-definition-structure) and  [list of built-in initiatives](https://learn.microsoft.com/en-us/azure/governance/policy/samples/built-in-initiatives)
 3. Scope the initiative definition 
 4. Detirmine Compliance
@@ -398,7 +226,7 @@ Polices Management:
 Policies Authoring:
 `Policies -> Definitions` - Policies and Initiative definitions - export definitions
 `Policies -> Assignments` - Assign Policies and Initiatives
-`Policies -> Examptions` - Scope, Category - To create a new exemption - go to `assignment` or the `compliance`.
+`Policies -> Exemptions` - Scope, Category - To create a new exemption - go to `assignment` or the `compliance`.
 
 Apply a policy by tag
 `Policies -> Definitions -> Category -> Tags -> Require a tag.. -> Assign -> Scop -> subscription and resource group`
@@ -411,7 +239,7 @@ Inheritance is made in the:
 
 ## Cost management
 
-Management
+Cost Management Dashboard
 `Search Cost Management -> Cost Management`
 From here for:
 `Cost Alerts`,  `Cost Analysis`, `Budgets`
@@ -429,17 +257,16 @@ Add a management group to a subscription
 `Search Management groups -> Management groups -> $Management_group -> Subscriptions`  - Subscription ID is in `Overview`
 
 Custom RBAC role creation:
-`Upload a $customRole.json file`  - replace fields reqiure prior to upload!
-`Open CloudCLI` to upload
-```powershell
-New-AzRoleDefi
+`Upload a $customRole.json file`  - replace fields required prior to upload!
+`Open CloudCLI` to upload or use AzCLI or Powershell
+
 VPN Gateway requires: - subnet, dns server and VPN device 
 `Search -> Virtual Network Gateways -> + Create`
 Select:
-- VPN or ExressRoute
+- VPN or ExpressRoute
 - Gateway type
 	- Route-based - uses routes in the IP forwarding or routing table to direct packets into their corresponding tunnel interfaces
-	- Policy-based -  encrypt and direct packets through IPsec tunnels based on the IPsec policies - configured with the combinations of address prefixes between your on-premises network and the Azure virtual network
+	- Policy-based - encrypt and direct packets through IPsec tunnels based on the IPsec policies - configured with the combinations of address prefixes between your on-premises network and the Azure virtual network
 - SKU, Generation (bytes per second), Names, RG, Vnet
 
 Local Network Gateways - to represent the on-premises site that you want to connect to a virtual network
@@ -448,8 +275,7 @@ Local Network Gateways - to represent the on-premises site that you want to conn
 
 On-Premise VPN devices: shared key and public IP address of your VPN gateway
 - Configuration scripts are available for some devices - [Download VPN device configuration scripts for S2S VPN connections](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-download-vpndevicescript) to find a downloadable script for your VPN device.
-nition -InputFile $file
-```
+
 
 Assign roles **at scope** - `Subscription,Resource group, Resource`
 `Management Groups -> Access Control (IAM) -> Add -> Search <role keyword> ->  + Select members`
@@ -465,7 +291,7 @@ Select:
 
 Local Network Gateways - to represent the on-premises site that you want to connect to a virtual network
 `Search -> Local Network Gateways -> + Create`
-- (Advanced) Border Gateway Protocol (BGP) - routability and reachable protocol -  requires - the minimum prefix you need to declare is the host address of your BGP Peer IP address on your VPN device.
+- (Advanced) Border Gateway Protocol (BGP) - routability and reachable protocol - requires - the minimum prefix you need to declare is the host address of your BGP Peer IP address on your VPN device.
 
 On-Premise VPN devices: shared key and public IP address of your VPN gateway
 - Configuration scripts are available for some devices - [Download VPN device configuration scripts for S2S VPN connections](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-download-vpndevicescript) to find a downloadable script for your VPN device.
@@ -481,7 +307,7 @@ Manage Tenants
 Create a Tenant
 `All Services -> Azure AD -> Manage Tenants -> Create`
 Configure Tenant
-`Create a Tenant -> Configuration -> Name -> Review and CReate -> Create`
+`Create a Tenant -> Configuration -> Name -> Review and Create -> Create`
 
 License Management
 `Search Azure AD -> Azure AD -> Licenses`
@@ -503,7 +329,7 @@ Creation User
 Invite User - For Temporary Guest users use: `Azure AD B2B`
 `Search Users -> New Users -> Invite`
 Configure guest users:
-- add to `Groups`
+- Add to `Groups`
 - Access to apps `Manage -> Enterprise applications -> Docusign` (or whatever Digital signing software) 
 
 Edit User settings
@@ -546,7 +372,7 @@ Deleted Groups
 Configure SSPR (self-service-password-reset)
 `Azure Active Directory -> Passwords -> Properties - SSPR enabled (None/Selectec/All)`
 Futher configuration of SSPR
-`Authenicatin Mehtods, Registration, Notification and Customise Helpdesk link`
+`Authenication Methods, Registration, Notification and Customise Helpdesk link`
 
 Enabling various types of MFA per user, bulk assignment is in the per-user MFA window 
 `Users -> Per-user MFA`
@@ -570,12 +396,12 @@ Address spaces - Review IP Schema Implementation
 By CIDR 10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16
 Routable address over the internet: 215.11.0.0 to 215.11.255.255
 
-View a Network Typology by subscription, Resource Group and Vnet
+View a Network Typology by Subscription, Resource Group and VNet
 `Search -> Network Watcher -> Topology`
 
 Create Virtual Networks and Manage
 `Search "Virtual Networks" -> Virtual Networks (-> Create)`
-- Azure Fiewall, Bastion and other require a subnet!
+- Azure Firewall, Bastion and other require a subnet!
 
 Create Subnets
 `Search "Virtual Networks" -> Virtual Networks -> $VN -> Subnets -> + Subnets/Gateway subnet`
@@ -584,9 +410,9 @@ Remember to: plan IP addresses - they can be `private` or  `public`, `static` or
 - 192.168.1.1 - Azure Default Gateway
 - 192.168.1.2 - Azure DNS address 
 - 192.168.1.3 - Azure DNS address
-- 192.168.1.255 - virtual network broadcast address
+- 192.168.1.255 - Virtual network broadcast address
 
-Consideration :
+Consideration:
 - Service requirements
 - Avaliability requirements - static IPs for DNS and DCs, TLS/SSL certs linked to an IP
 - Network virtual appliances
@@ -642,11 +468,11 @@ Load Balancers Workflows by Type and important information:
 - Front Door - Global Layer 7 load balancer 
 - Load Balancer - Layer 4 for internal and public configurations
 	- SKU options: Basic, Standard, and Gateway 
-- Traffic Manager - DNs-based traffic load balancer
+- Traffic Manager - DNS-based traffic load balancer
 Manage:
 `Search -> Load Balancers -> $loadBalancer`:
 - Front-end IP configuration 
-- Back-end pools: `+ Add -> $name & $Vnet`
+- Back-end pools: `+ Add -> $name & $VNet`
 - Health probes: `+ Add -> $name & Protocol, Port and Interval`
 - Load-balancing rules (can be used in combination with NAT rules) - requires a frontend, backend, and health probe; define a rule:
 	- IPv4 or 6
@@ -657,7 +483,7 @@ Manage:
 
 1. `Create a Resource -> Load Balancer` - options:
 2. `Basic: SKU, Type ( Public | Internal ) and Tier (Regional | Global )`. 
-3. `Configure front-end IP configuration -> Add (Consider assignment*)`  
+3. `Configure front-end IP configuration -> Add (Consider assignment)`  
 4. `Configure back-end IP configuration -> Select backend pool VMS`  
 5. `Inbound Rules -> Add`
 
@@ -712,7 +538,7 @@ Common pattern - name resolution for multiple networks, where one is focused on 
 VPN Gateway requires: - subnet, dns server and VPN device 
 `Search -> Virtual Network Gateways -> + Create`
 Select:
-- VPN or ExressRoute
+- VPN or ExpressRoute
 - Gateway type
 	- Route-based - uses routes in the IP forwarding or routing table to direct packets into their corresponding tunnel interfaces
 	- Policy-based -  encrypt and direct packets through IPsec tunnels based on the IPsec policies - configured with the combinations of address prefixes between your on-premises network and the Azure virtual network
@@ -727,15 +553,15 @@ On-Premise VPN devices: shared key and public IP address of your VPN gateway
 
 #### Virtual Network Peering
 
-Vnet Peering - requires account with `(Classic) Network Contributor` role
+VNet Peering - requires account with `(Classic) Network Contributor` role
 `Search -> Virtual Networks -> $Vnet -> SEttings -> Peering -> Add(peering)` 
 - Create in hub, not peers; make NSG rules!
 - One Gateway to Transit them All - vnet-to-vnet, site-to-site and point-to-site
-- Vnets must have resources, the first must be made with [[Azure-Administration-Azure-Resource-Manager]], the second is referred to as the remote network
--  [Permissions](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-manage-peering?tabs=peering-portal#permissions)
+- VNets must have resources, the first must be made with [[Azure-Administration-Azure-Resource-Manager]], the second is referred to as the remote network
+- [Permissions](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-manage-peering?tabs=peering-portal#permissions)
 - Extending Peering 
-	- Hub and spoke network - Central hub for VPN gateway, spoke Vnets
-	- User-defined route (UDR): either a hop to/from VM IP address or VPN Gateway
+	- Hub and spoke network - Central hub for VPN gateway, spoke VNets
+	- User-Defined Route (UDR): either a hop to/from VM IP address or VPN Gateway
 	- Service chaining: define UDRs from Vnet to a network virtual appliance or VPN
 
 ## VM Scale Sets
@@ -744,15 +570,15 @@ Create and Manage VM Scale Sets
 `Search -> Virtual machine scale sets` 
 - Size = Price; Azure Spot - discount unused pool ; image = OS, arch = x86 or arm64
 - Orchestration mode:
-	- Uniform - for large scale stateless workloads with indetical instances - department workstation
+	- Uniform - for large scale stateless workloads with indentical instances - department workstation
 	- Flexible - high availability at scale with identical or multiple instances - any configuration to the scale set.
 - Advanced tab to enable beyond 100 instances; spreading for optimal spreading of allocation Implement Virtual Networking
-`Search -> Virtual Network -> $Vnet (With Subnet, VMs, DNSm, NSGs, etc configured)` in the `Private DNS Zone -> Virtual Network Link -> + Add - provide a Link name, Vnet` 
+`Search -> Virtual Network -> $Vnet (With Subnet, VMs, DNS, NSGs, etc configured)` in the `Private DNS Zone -> Virtual Network Link -> + Add - provide a Link name, Vnet` 
  - Configure Scaling in the `Scaling` tab; 
 	 - Policy - min/max number of instances; manula or autoscaling 
 	 - Scale in - CPU threshold, decrease of instances
 	 - Scale out - CPU threshold, duration, increase of instances
-	 - Scale-In policy - default, newest, oldest vms
+	 - Scale-In policy - default, newest, oldest VMs
 
 Size Scaling
 `Virtual Machines -> $VM -> Size -> Resize by select new size`
@@ -765,7 +591,7 @@ Register-AzResourceProvider -ProviderNamespace $RP
 ```
 
 Deploy a zone-resilient Azure VM scale set with Portal
-`Search -> Virtual machine scale sets -> + Create -> Provide: Name, Resource Group and Zones! - Orchestration mode!, Image,Size` - Add to or Create a Vnet; configure NIC NSG and consider `Load balancer`; Scaling; Management `Monitoring: managed or custom` - do not disable; `Advanced - Spreading and Beyond 100 instances;`
+`Search -> Virtual machine scale sets -> + Create -> Provide: Name, Resource Group and Zones! - Orchestration mode!, Image,Size` - Add to or Create a VNet; configure NIC NSG and consider `Load balancer`; Scaling; Management `Monitoring: managed or custom` - do not disable; `Advanced - Spreading and Beyond 100 instances;`
 
 Upgrading VM scale sets
 Load a script with Script with Custom Script Extension
@@ -789,10 +615,10 @@ while ($true) { Invoke-WebRequest -Uri "http://$pip" }
 
 Custom Script Extension - Container with a custom IIS webserver
 - Storage Account with scripts, container for webserver
-`VMs -> $Container -> Extensions + Add -> Custom Script Extension -> Upload scripts from Storage Account `
+`VMs -> $Container -> Extensions + Add -> Custom Script Extension -> Upload scripts from Storage Account`
 
 Export Template, custom template for mass use
-`VMs -> $CustomVm -> Export Template`
+`VMs -> $CustomVM -> Export Template`
 
 ## Azure App Services
 
@@ -804,7 +630,7 @@ Basics
 - Runtime stack
 Deployment 
 - Github actions - continuous deployment!
-- Devlopment slots are live apps with their own hostnames - ``
+- Development slots are live apps with their own hostnames - ``
 Networking - Public access and network injection toggles
 Monitoring - Insights
 Tags - TAGS TAGS TAGS!
@@ -843,7 +669,7 @@ Create a Custom Domain for Azure App Service
 - Create DNS records
 - Enable
 
-Backup Azure App Service (App configuration settings, File content, connected Databases)- requires:
+Backup Azure App Service (App configuration settings, File content, connected Databases) - requires:
 - Standard or Premium tier App Service plan 
 - Storage Container - [[Azure-Administration-Storage-Accounts]]
 Provide the in `App Services -> $App -> Backup `
@@ -857,7 +683,7 @@ Compile DSC script
 `Search Automation Accounts -> Automation Accounts -> $AutomationAccount -> State configuration (DSC) -> Configurations -> Select DSC script -> Compile -> Yes`
 
 Register VMs with your Azure Automation Account
-`Search Automation Accounts -> Automation Accounts -> $AutomationAccount -> State configuration (DSC) -> Nodes + Add -> Configure settings -> Comfirm`
+`Search Automation Accounts -> Automation Accounts -> $AutomationAccount -> State configuration (DSC) -> Nodes + Add -> Configure settings -> Confirm`
 
 Push is simple powershell include in the Powershell
 Pulling a configuration for lots of nodes - also included in the Powershell section
@@ -892,7 +718,7 @@ Basic:
 - Scale method: Manual or Autoscale
 - Node Count: 1 - 5 
 Node pools - configure here
-Acces - RBAC and AKS-managed Azure AD 
+Access - RBAC and AKS-managed Azure AD 
 Networking
 Integrations - Container Monitoring
 
@@ -905,6 +731,7 @@ Scale Node pool deployed
 Check the bash section  for CLI deployment and scaling.
 
 ## Azure Backup
+
 Backup Center
 `Search -> Backup Center`:
 - `+ Backup`
@@ -948,11 +775,11 @@ Backup File/Folder
 `Search Virtual Machines -> $VM -> Connect` - Connect to machine - 
 `Log into Azure Portal -> Recovery Services vaults -> $rsv -> + Backup -> Workload: On-Premise (regardless) -> Backup: Files and folders -> Prepare Infrastructure:`
 - Download the Agent for Windows Server or Window Client
-- Installation Setup Wiazrd
+- Installation Setup Wizard
 - Download the Vault Credentials
 
 Restore or File Recovery VM
-`Search Recovery Services Vaults -> $rsv -> Backup items -> Azure Virutal Machines -> $VM -> Restore VM / File Recovery`
+`Search Recovery Services Vaults -> $rsv -> Backup items -> Azure Virtual Machines -> $VM -> Restore VM / File Recovery`
 
 Recovery Files:
 Locally
@@ -1007,7 +834,7 @@ Log Analytics Querying - Has drop down listing of useful input!
 `Search -> Monitor -> Logs -> Select a scope -> (Tables | Queries | Functions | Filters)  -> Run Query`
 - You can click to collapse the left panel
 
-Create and Configure Log Analytics workspaces
+Create and Configure Log Analytics workspaces - Good Workspace design equals better Analytics!
 `Search Log Analytics workspaces -> Log Analytics workspaces -> Create`
 `Search Automation Accounts -> Create -> $LAWrGroup` - check [supported mappings](https://learn.microsoft.com/en-us/azure/automation/how-to/region-mappings) then `$AutomationAccount -> Inventory -> Select Log Analytics workspace -> $LAW & Enable` then `Update Management -> Enable`
 
@@ -1086,7 +913,7 @@ Onboard virtual machines to Azure Monitor VM Insights
 #### Network Watcher
 
 - Automate remote network monitoring with packet capture - from triggering alerts
-	-  `Network Watcher -> PAcket capture`
+	-  `Network Watcher -> Packet capture`
 - Network Security Group Flow Logs (NSG Flow Logs) for network traffic pattern collection
 - Diagnose VPN issues
 	- `Network Watcher -> VPN troubleshoot
@@ -1157,9 +984,14 @@ az group list --query "[?name == '$rgName']"
 
 Create and Administrate a VM
 ```powershell
-New-AzVm # Create a new VM inside your Azure Subscription
+az vm create \ 
+	--resource-group $ResourceGroup
+	--name $VmName 
+	--image $image
+	--public-ip-sku $SKU
+	--admin-username $username
 # Use the az module to restart a machine 
-az vm restart -g $ResourceGroup -n $VmName
+az vm restart --resource-group $ResourceGroup -n $VmName
 ```
 
 Create a Resource Group

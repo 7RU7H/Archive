@@ -16,8 +16,7 @@ Built-In Azure AD Roles:
 
 Regarding [[Azure-Administration-AD-Administration]], do not use Classic subcription Roles use either RBAC or [Azure AD Administrator roles](https://learn.microsoft.com/en-us/azure/active-directory/roles/permissions-reference):
 ![1000](azurerolerbacandadminroles.png)
-Azure AD Roles are used to manage resources in Azure AD
-Azure RBAC role provide more granular access management for Azure resources.
+Azure AD Roles are used to manage resources in Azure AD; Azure RBAC role provide more granular access management for Azure resources.
 
 #### Differentiation 
 
@@ -41,14 +40,13 @@ Controls access of AD resources | Control access to Azure resources
 Role-based access control (RBAC) is a mechanism that can help you manage who can access your Azure resources. RBAC lets you determine what operations specific users can do on specific resources, and control what areas of a resource each user can access.
 
 Azure RBAC - Organizations using public cloud are concerned about:
-1.  Ensuring that when people leave the organization, they lose access to resources in the cloud.
-2.  Striking the right balance between autonomy and central governance
+1. Ensuring that when people leave the organization, they lose access to resources in the cloud.
+2. Striking the right balance between autonomy and central governance
 
 Fundamental Roles of Azure RBAC
 ![](azurefundamentalrbacroles.png)
 
-Azure RBAC is an allow model 
-`NotActions` to create a set of not allowed permissions that are then substracted from `Actions` to compute the effective permissions - for example the default [Contributor](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles#contributor) role :
+Azure RBAC is an allow model; `NotActions` to create a set of not allowed permissions that are then substracted from `Actions` to compute the effective permissions - for example the default [Contributor](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles#contributor) role :
 -   Delete roles and role assignments
 -   Create roles and role assignments
 -   Grant the caller User Access Administrator access at the tenant scope
@@ -64,7 +62,7 @@ RBAC core concepts:
 - `Security Principal` -> `user, group, or application`
 - `Role Definitions` -  permissions
 - `Scope` - where the permission apply
-- `assignment` -  *"process of binding a role to a security principal at a particular scope for the purpose of granting access"*
+- `Assignment` -  *"process of binding a role to a security principal at a particular scope for the purpose of granting access"*
 
 Azure RBAC 
 ```powershell
@@ -78,7 +76,7 @@ Get-AzRoleDefinition <role_name> | FL Actions, NotActions
 ``` 
 
 Azure RBAC with az role, use [az role definition list](https://learn.microsoft.com/en-us/cli/azure/role/definition#az-role-definition-list).
-```powershell
+```bash
 az role definition list
 # by name like "Contributor"
 az role definition list --name {roleName}
@@ -171,7 +169,7 @@ New-AzRoleDefinition -InputFile $file
 Assign roles **at scope** - `Subscription,Resource group, Resource`
 `Management Groups -> Access Control (IAM) -> Add -> Search <role keyword> ->  + Select members`
 Assign can be done via Resource Group of Admin Scoping in fields
-`Resource Groups -> Access Control (IAM) -> Add (role, co-adminstrator, custom) role -> Search`
+`Resource Groups -> Access Control (IAM) -> Add (role, co-administrator, custom) role -> Search`
 `Remove` to remove!
 `Activty Log` to find all role (de-)assignments
 

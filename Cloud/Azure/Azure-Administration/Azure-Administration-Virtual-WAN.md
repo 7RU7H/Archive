@@ -1,7 +1,7 @@
 
 # Azure Administration - Virtual WAN
 
-Azure Virtual WAN is consolidated networking service that provides Network, security and routing functionalities in a single operational interface. Azure Virtuual WAN is a Software Defined WAN (SD-WAN) is better way to route to your branches, datacenters, VNet and cloud services.
+The Azure Virtual WAN (wide-area network) networking service combines networking, security, and routing functionalities into a single operational interface. Azure Virtual WAN is a consolidated networking service that provides Network, security and routing functionalities in a single operational interface. Azure Virtuual WAN is a Software Defined WAN (SD-WAN) is better way to route to your branches, datacenters, VNet and cloud services.
 - Branch Connectivity
 - Site-to-site
 - Remote User VPN
@@ -10,6 +10,11 @@ Azure Virtual WAN is consolidated networking service that provides Network, secu
 - VPN ExpressRoute inter-connectivity
 - Routing
 - Azure Firewall encryption for private connectivity
+
+![](azurewansimage.png)
+Typology:
+-  **Basic**: A Basic Virtual WAN can be implemented only in an S2S VPN connection.
+-  **Standard**: A Standard Virtual WAN can be implemented with Azure ExpressRoute and a User VPN (P2S). You can also use a Standard WAN with an S2S VPN, Inter-hub, and VNet-to-VNet connection transiting through the virtual hub.
 
 Terminology:
 - A Point of Presence (PoP) is an entry at the edge a Network

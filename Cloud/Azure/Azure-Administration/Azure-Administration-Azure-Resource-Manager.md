@@ -135,7 +135,7 @@ Blueprints are a declarative method to orchestrate the delpoyment of various res
 - Role Assignments
 - Policy Assignments
 - Azure Resource Manager templates 
-- resource Groups
+- Resource Groups
 
 The Azure Blueprints service is backed by the globally distributed Azure Cosmos DB, Blueprint object are replicated to multiple Azure regions. Azure Blueprints support improved tracking and auditing of deployments.
 
@@ -147,7 +147,7 @@ ARM Templates:
 
 
 Azure Blueprints
-- relationship between the blueprint definition (what should be deployed) and the blueprint assignment (what was deployed)
+- Relationship between the blueprint definition (what should be deployed) and the blueprint assignment (what was deployed)
 - Upgrade serval subscription at once that are governed by the same blueprint
 
 #### Administrative Motions and Workflow
@@ -178,7 +178,7 @@ If the resource already exists and no change is detected in the properties, no a
 
 #### Moving Resources
 
-Moving Resources - there are end cases - [see Documentation for more]([Move resources to a new subscription or resource group - Azure Resource Manager | Microsoft Learn](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/move-resource-group-and-subscription)):
+Moving Resources - there are edge cases - [see Documentation for more]([Move resources to a new subscription or resource group - Azure Resource Manager | Microsoft Learn](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/move-resource-group-and-subscription)):
 -   If you're using Azure Stack Hub, you can't move resources between groups.
 -   [App Services move guidance](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/move-limitations/app-service-move-limitations)
 -   [Azure DevOps Services move guidance](https://learn.microsoft.com/en-us/azure/devops/organizations/billing/change-azure-subscription?toc=/azure/azure-resource-manager/toc.json)

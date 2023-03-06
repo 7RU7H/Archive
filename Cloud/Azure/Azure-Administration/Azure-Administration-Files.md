@@ -1,6 +1,5 @@
 #  Azure Administration - Files (File Shares)
 
-
 File share in cloud, a centralized server for storage allowing for multiple connections (mounting) with either SMB or NFS. Azure Files uses:
 - Replacement or supplement for Network Attach Storage NAS
 - Lift-and-Shift - Classic or Hybird Lifes
@@ -19,7 +18,7 @@ Azure files instead of File Shares server
 - Scripting and Tooling - Automation
 - Resiliency 
 
-Comparison betweem Azure Files, Azure Blobs and Azure Disks in choosing storage
+Comparison between Azure Files, Azure Blobs and Azure Disks in choosing storage
 ![1080](azurecomparefilesblobsanddisks.png)
 
 Azure Files Features:
@@ -40,11 +39,11 @@ Azure Files Features:
 
 Types of Storage
 - General Purpose version 2 - deployed on HDD
-- FileStorage - SSD deplyment
+- FileStorage - SSD deployment
 
 Identity
-- On-Premise Azure Storage can  be joined to AD DS
-- Managed - Azure Storage can  be joined to AD DS - Microsoft manages
+- On-Premise Azure Storage can be joined to AD DS
+- Managed - Azure Storage can be joined to AD DS - Microsoft manages
 - Store Account Key - Username and password 
 
 Networking 
@@ -64,7 +63,7 @@ Cloud tiering is an optional feature of Azure File Sync. Frequently accessed fil
 ![](azurefilesynccomponents.png)
 Components of Azure File Sync:
 - Storage Sync Service
-	-  forms sync relationships, a subscription can have multiple
+	-  Forms sync relationships, a subscription can have multiple
 - Sync Group 
 	- Defines the sync topology for a set of files
 - Registered Server
@@ -96,3 +95,7 @@ Deploying a Azure File Sync:
 2. Prepare Windwos Server(s)
 3. Install Azure File Sync agent
 4. Register Windows Server(s)
+
+## References
+
+[Youtube Azure Administrator Certification (AZ-104)](https://www.youtube.com/watch?v=10PbGbTUSAg)

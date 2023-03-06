@@ -13,7 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Virtual-WAN.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1a76ba9d76cecc69",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Virtual-Networking.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +60,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "passthru()",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -61,7 +73,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 515.5
+    "width": 377.5
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -77,7 +89,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Virtual-WAN.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,8 +119,25 @@
   },
   "active": "249c68025fb2f425",
   "lastOpenFiles": [
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Kubernetes-Services.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Virtual-Networking.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Virtual-WAN.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Virtual-Machines.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Subscriptions.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Storage-Accounts.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Files.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Scale-Sets.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Container-Registeries.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+    "Linux/Linux-Commands/Linux-Users-And-Group-Commands.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Blobs.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Resource-Manager.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Roles-And-RBAC.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Policies.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Monitor.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Kubernetes-Services.md",
+    "Hacker-Distros/Kali/Kali-Configuration/Configuring-Users-And-Groups-With-Kali.md",
+    "Linux/Linux-Concepts/Linux-Users-And-Groups.md",
+    "README.md",
     "Services/Databases/Dynamodb/Amazon-Dynamodb.md",
     "Cloud/Cloud-Hacking/AWS-Hacking.md",
     "Cloud/AWS/AWS-Defined.md",
@@ -116,28 +145,11 @@
     "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-DNS.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Disks.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Container-Instances.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Backups.md",
-    "Networks/Network-Protocols.md",
-    "Brain-Hacking/Question-Based-Hacking-Methodology.md",
-    "Post-Exploitation/Stealth/Active-Directory-Stealth.md",
     "Services/Databases/MongoDB",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-ARM-Templates.md",
-    "Web-Application-Hacking/SQLi/SQLInjection.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Application-Services.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Application-Gateways.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-AD-Device-Management.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-AD-Administration.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration.md",
-    "Digitial-Forensics/Offensive-Forensics.md",
     "Images/robleesansoffensiveforensicstimestomping.png.png",
     "Images/robleesansoffensiveforensicstimestomping.png",
-    "Digitial-Forensics/Timestomping.md",
-    "Reconnaissance/Active-Information-Gathering/User/User-Recon-Active.md",
     "Images/robleesansoffensiveforensicslateralmovementoverview.png",
     "Reconnaissance/Active-Information-Gathering/User",
-    "Services/Webservers/Webservers-PHP-Based-Commonalities.md",
-    "Reconnaissance/Passive-Information-Gathering/Search-Engine-Dorking.md",
-    "Tools/Neo4j/Bloodhound-Guide.md",
     "Tools/Neo4j",
     "Images/azuremonitorcollectionagents.png",
     "Tools/Stegonography",

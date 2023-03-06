@@ -1,5 +1,7 @@
 ## User and Group Management
 
+Consider changing the [Default Kali Linux Passwords](https://www.kali.org/docs/introduction/default-credentials/)
+
 Use `vipw` and `vigr` to edit to avoid accidental harm.
 Important File and Location | Purpose
 --- | --- 

@@ -14,18 +14,17 @@ Considerations:
 - Durability and availability
 - Secure access
 - Scalability
-- Manageability
+- Managability
 - Data Accessibility
-- Storage optimization for masive data
+- Storage optimization for massive data
 - Storage for messages should use Queue Storage
 - Table Storage for structure data
 - Azure Files for configs and logs for later use.
 - The number of storage accounts you need is typically determined by:
-	- data diversity
-	- cost sensitivity  
-	- tolerance for management overhead.
+	- Data diversity
+	- Cost sensitivity  
+	- Tolerance for management overhead.
 - Access from Azure AD is best with SPN to handle the authenication.
-
 
 The storage account name is used as part of the URI for API access, so it must be globally unique. Azure Storage Accounts offer several types of storage accounts:
 
@@ -49,7 +48,7 @@ Azure has 5 Core Storage services, searchable
 	- Azure Blob a masssive scalable object store for text and binary data.
 		- Include support for big data analytics through Data Lake Storage Gen2
 	- Azure Files - Managed file shares for cloud or on-premises deployments
-	-  Azure Queues - A messaging store for reliable messaging between application components.
+	- Azure Queues - A messaging store for reliable messaging between application components.
 	- Azure Tables - A NoSQL store for schemaless storage of structured data or _relational_ data.
 		
 - Disks
@@ -142,7 +141,7 @@ Upon creation of a Storage Account you need to choose a Replication Type, Replic
 - Premium Options vary on type; never a Geo-replicated option
 
 Replication Strategies:
-![1000](azurereplicationstrategies.png)
+![1080](azurereplicationstrategies.png)
 
 The greater the level of redundancy the greater the expense:
 - Primary Region Redundancy - Data is replicated  either:
@@ -248,7 +247,6 @@ Azure Copy Features
 -   AzCopy is built into Azure Storage Explorer.  
 -   AzCopy is available on Windows, Linux, and macOS.
 -   Authenicate with SAS or Azure-AD
-
 
 
 ## Azure Storage Tables
@@ -403,10 +401,10 @@ private string GetBlobSas(BlobClient blob)
 #### Stored Access Policies
 
 Stored access policy can be created for:
--   Blob containers
--   File shares
--   Queues
--   Tables
+- Blob containers
+- File shares
+- Queues
+- Tables
 
 Create a Stored Access Policy for a Container
 `Storage Accounts -> $storage_account -> Container -> Access Policy`
@@ -450,7 +448,6 @@ private void CreateStoredAccessPolicy()
 Create in Azure Software Development Kit SDK or Portal `Storage Account -> Share Access signature`.
 
 Setup File Sync `Azure File Sync -> Create` - 
-
 
 URL for Azure remote container: `Home -> Storage Accounts -> $ContainerName -> Properties`
 

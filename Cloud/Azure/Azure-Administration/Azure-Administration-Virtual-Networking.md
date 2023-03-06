@@ -7,7 +7,7 @@ An Azure virtual network is a logical isolation of the Azure cloud that's dedica
 - Exists within a specific subscription
 - Region VNet Peering - Exists within a specific region, peering two Vnets in same regions
 - Global VNet Peering - Exists within a different regions, peering two Vnets in two different two regions
-- The only public IPs avaliable are the one granted by Azure
+- The only public IPs available are the one granted by Azure
 - Subnet creation lose **five** addresses: all 0s, 256, Azure Default Gateway, next two address after the Default gateway will be lost to DNS.
 	- /29 - would only have 3 addresses as you always lose the 5 above
 
@@ -19,7 +19,7 @@ Azure Network Interfaces (NICs):
 - An Azure VM instance has to have an NIC and can have multiple NICs
 
 Route Table is table of data stored in router or network host that list routes to next destinations
-- By default Azure creates a route table with default routes (system routes) and associates them to your subnmets
+- By default Azure creates a route table with default routes (system routes) and associates them to your subnets
 - You can override the system routes assigned to your subnets by creating a new route table and associating with a subnet
 
 Subnet is a logical division of an address space
@@ -43,9 +43,7 @@ Associating Private IP to a resource
 - IP address space, can add multiple and IPv6 - the automatic ones are drawn from Azure analyzing your own IP spaces
 - Remember Azure takes 5 addresses before sizing!
 
-
-The Virtual Network should be broken up into subnet ranges like on-premise to manage the networking. Avaliablity Zones (AZ)s can be spanned acrossed by a subnet, resources in a subnet need to be alignment of resources avaliable from a AZ dimension.
-
+The Virtual Network should be broken up into subnet ranges like on-premise to manage the networking. Availablity Zones (AZ)s can be spanned acrossed by a subnet, resources in a subnet need to be alignment of resources available from a AZ dimension.
 
 - IP always comes via fabric (Azure) OS using DHCP - can configure per OS basis 
 - IPs can be reserved in ARM
@@ -70,8 +68,6 @@ Ensure static IP on a VM:
 IP forwarding from a VM - for Firewalls and Gateway devices
 `Virtual  Machines -> $VMnames -> Network Interface -> IP forwarding  set to (Disabled | Enabled)`
 
-
-
 #### Supported Types of IP Traffic
 
 - Standard IP-based Protocol support include:
@@ -82,7 +78,7 @@ IP forwarding from a VM - for Firewalls and Gateway devices
 Some outside of the above may work, but Load balancers may not understnad
 
 - Multicast, broadcast IP-in-IP encapsulated packets and Generic Routing Encapsulation (GRE) is blocked! 
-	- This is Software defined networking, this is not Virtual LAN - no [[OSI]] Layer 2
+	- This is Software defined networking, this is not Virtual LAN - no [[OSI-Model]] Layer 2
 - Cannot `ping` the Azure Gateway or use `tracert` these are abstractions in software! 
 	- There is no traffic to sniff, it is all direct!
 	- VNet is the isolation
@@ -117,24 +113,24 @@ BIG WARNING - **Use Network Security Groups** - The defaults are dangerous
 		- If there is no Load Balancer! WARNING
 			- Azure will automatically create Public IPs and allow internet access
 - Ports exposed - Use encrypted variants - [[Nmap-Cheatsheet]] is easy to use to find your RDP and SSH , SMB that is externally facing, just don't - obsfucation is not security.
-	- Just-In-Time access is avaliable if you don't have private routing. Do not expose services to internet continually
+	- Just-In-Time access is available if you don't have private routing. Do not expose services to internet continually
 
 SMTP (port 25) is a special case. Depending on your subscription level and when your account was created, outbound SMTP traffic may be blocked.
 
-#### Connecting Virtual Neworks
+#### Connecting Virtual Networks
 
 If you have multiple subscription or region you then will have multiple virtual networks to connect them via:
 - Virtual Network Peering 
 	- Same or different Region
 	- IP address space CANNOT overlap
-	- Ingreess and egrees charge for using Azure Backbone
+	- Ingress and egrees charge for using Azure Backbone
 	- Span subscriptions and AAD tenants
 	- Peers are not transitive, but they could be via (if Hub is parent and nth number of Spokes are child nodes and Vnets of a network):
 		- Peering segmented Spoke Vnets
-		- Vnet Hub could with user defined routing - **Beware the Capacity and Scaling of Routing Appliance in thelt Domains
-- Newest VM - Delete the newest created VM, balanced across AZs Hub!** 
-			- Vnet Hub has a route table for peering between Spoke VNets 
-			- Solution: Forwarding to the Hub from Spoke 1 to another Spoke 2 . 
+		- Vnet Hub could with user defined routing - **Beware the Capacity and Scaling of Routing Appliance in the Domains
+- Newest VM - Delete the newest created VM, balanced across AZs Hub! 
+	- Vnet Hub has a route table for peering between Spoke VNets 
+	- Solution: Forwarding to the Hub from Spoke 1 to another Spoke 2 
 
 Historic comparison being: Site-to-Site VPN or connection to the same ExpressRoute:
 - Peering location would hair pin on a circuit to talk to the same facility on different Virtual Network - bad latency
@@ -142,7 +138,7 @@ Historic comparison being: Site-to-Site VPN or connection to the same ExpressRou
 On-premise to an Azure subnet Gatewaycan be used to connect resources via Gateway transit, becuase of Peering to reach out to On-Premise assets. 
 
 
-#### Configuring VM Avaliability
+#### Configuring VM Availability
 
 Plan for maintaince and unexpected downtime:
 - Use an availability set, which is a logical feature you can use to ensure a group of related virtual machines are deployed together - reducing single point of failure, that they are not upgraded at the same time.
@@ -164,7 +160,7 @@ For Domains:
 	- 2 domains work togther to mitigate against hardware failures, network outages, power interruptions, or software updates.
 
 Availability Zones:
-- Unique physical locations qithin a Azure Region
+- Unique physical locations within a Azure Region
 	- One or more Datacentres
 - Minimum of three Availability zones
 - Prevents against Datacentre failure
@@ -184,13 +180,13 @@ Azure Virtual network peering is nontransitive meaning only directly peered can 
 
 You can connect to your on-premises network from a peered virtual network if you enable gateways transit from a virtual network that has a VPN gateway. 
 
-Gateway transit from Vnet to On-premise via VPN gateway
+Gateway transit from Vnet to On-premise via VPN gateway:
 `$HubNetwork -> Allow gateway Transit` `
 `SpokeNetwork -> Use remote gateways`
 
 Peering Options:
 - **Virtual network peering** connects virtual networks in the same Azure region
-	- Cross-subscription Vnet Peering: Two Administors must grtant each other `Network Contributor` role as they are both seperate Azure AD tenants
+	- Cross-subscription Vnet Peering: Two Administrators must grant each other `Network Contributor` role as they are both seperate Azure AD tenants
 -  **Global virtual network peering** connects virtual networks that are in different Azure regions
 
 **When peering only one gets created configuration in the reverse direction is required!**
@@ -240,7 +236,7 @@ az network nic show-effective-route-table \
 
 #### VPN Gateways and Connecting On-Premises to Azure
 
-Organizations use a virtual private network (VPN) to create a private, encrypted connection for their resources and users to the internet using [[Ipsec]] protocol.A VPN gateway is a specific type of virtual network gateway that's used to send encrypted traffic between your Azure virtual network and an on-premises location over the public internet or over the Azure backbone Microsoft network. Considerations:
+Organizations use a virtual private network (VPN) to create a private, encrypted connection for their resources and users to the internet using [[Ipsec]] protocol. A VPN gateway is a specific type of virtual network gateway that's used to send encrypted traffic between your Azure virtual network and an on-premises location over the public internet or over the Azure backbone Microsoft network. Considerations:
 - Vnet can have one VPN gateway with multiple connects to it sharing the bandwidth
 
 Extending On-Premise to Azure with [[Ipsec]] tunnels - see [planning table](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways#planningtable):
@@ -248,15 +244,15 @@ Extending On-Premise to Azure with [[Ipsec]] tunnels - see [planning table](http
 - Site-To-Site VPN - connect a network to virtual network 
 	- Good if ExpressRoute is too expensive
 	- S2S VPN gateways enable multiple VPN connects to different networks if route not policy based
-- Vnet-To-Vnet with  IPsec/IKE VPN tunnel
+- Vnet-To-Vnet with IPSec/IKE VPN tunnel
 	- Cross-Region/Subscriptions/Deployment-model 
-- [Highly Available]((https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-highlyavailable) -  better VM availbility due to redundancy
+- [Highly Available]((https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-highlyavailable) - better VM availbility due to redundancy
 	- Active-Active - both VMs are active
 	- Active-Standby - one is on standby in case of failover
 
 Peering
 - ExpressRoute Private Peering - Connects a network to a virtual network via ExpressRoute Gateway
-	- ExpressRoute circuits enable multiple virtual networks to be connected to a single circuit, but vnet to vnet better via peering - Big Enterprises want this for it being a private connection, no hops else where connect to Microsoft Backbone Network - not Geopolitical Region locked at the Premium level.
+	- ExpressRoute circuits enable multiple virtual networks to be connected to a single circuit, but vnet to Vnet better via peering - Big Enterprises want this for it being a private connection, no hops else where connect to Microsoft Backbone Network - not Geopolitical Region locked at the Premium level.
 	- Can be encrypted, but is not by default - MaxSEC at the edge router provider 
 	- If Fast Path is Enabled it does not go via the Gateway, Gateway is required for routing information, also Fast Path does working for Peering.
 	- MPLS can be connect to backend at carrier neutral connect that can also connect ExpressRoute
@@ -264,22 +260,22 @@ Peering
 	- Storage
 	- Database Accounts
 
--   Plan your [Azure VPN Gateway solution](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways#planningtable)
--   Peruse [Azure VPN Gateway documentation](https://learn.microsoft.com/en-us/azure/vpn-gateway/).
--   Discover [VPN Gateway configuration settings](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpn-gateway-settings).
--   Create and manage a [VPN gateway by using the Azure portal](https://learn.microsoft.com/en-us/azure/vpn-gateway/tutorial-create-gateway-portal).
--   Create a [site-to-site VPN connection in the Azure portal](https://learn.microsoft.com/en-us/azure/vpn-gateway/tutorial-site-to-site-portal). 
--   Explore [VPN Gateway design options: S2S, P2S, VNet-to-VNet, and high availability](https://learn.microsoft.com/en-us/azure/vpn-gateway/design).
--   Review [highly available cross-premises and VNet-to-VNet connectivity](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-highlyavailable).
--   Find [validated VPN devices and IPsec/IKE parameters for S2S VPN Gateway connections](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpn-devices)   
+- Plan your [Azure VPN Gateway solution](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways#planningtable)
+- Peruse [Azure VPN Gateway documentation](https://learn.microsoft.com/en-us/azure/vpn-gateway/).
+- Discover [VPN Gateway configuration settings](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpn-gateway-settings).
+- Create and manage a [VPN gateway by using the Azure portal](https://learn.microsoft.com/en-us/azure/vpn-gateway/tutorial-create-gateway-portal).
+- Create a [Site-to-Site VPN connection in the Azure portal](https://learn.microsoft.com/en-us/azure/vpn-gateway/tutorial-site-to-site-portal). 
+- Explore [VPN Gateway design options: S2S, P2S, VNet-to-VNet, and high availability](https://learn.microsoft.com/en-us/azure/vpn-gateway/design).
+- Review [highly available cross-premises and VNet-to-VNet connectivity](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-highlyavailable).
+- Find [validated VPN devices and IPsec/IKE parameters for S2S VPN Gateway connections](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpn-devices)   
 
-VPN Gateway requires: - subnet, dns server and VPN device 
+VPN Gateway requires: - subnet, DNS server and VPN device 
 `Search -> Virtual Network Gateways -> + Create`
 Select:
-- VPN or ExressRoute
+- VPN or ExpressRoute
 - Gateway type
 	- Route-based - uses routes in the IP forwarding or routing table to direct packets into their corresponding tunnel interfaces
-	- Policy-based -  encrypt and direct packets through IPsec tunnels based on the IPsec policies - configured with the combinations of address prefixes between your on-premises network and the Azure virtual network
+	- Policy-based - encrypts and directs packets through IPsec tunnels based on the IPsec policies - configured with the combinations of address prefixes between your on-premises network and the Azure virtual network
 - SKU, Generation (bytes per second), Names, RG, Vnet
 
 Local Network Gateways - to represent the on-premises site that you want to connect to a virtual network
@@ -316,8 +312,8 @@ Application Security Groups - ASG tags are tags that help when the network is sp
 
 Load Balancing is used to efficiently distribute incoming network traffic across back-end servers and resources. A load balancer is implemented by using load-balancing rules and health probes. It sit between the Frontend and Backend to test the Backend and deal with the flow of traffic from the Frontend. 
 - Load Balancer scales up to millions of TCP and UDP application flows.
-- For Inbound and outbound
-- Public or internal
+- For Inbound and Outbound
+- Public or Internal
 - Components:
 	- Front-end IP configuration 
 		- Specifies the public IP or internal IP that your load balancer responds to.
@@ -330,20 +326,19 @@ Load Balancing is used to efficiently distribute incoming network traffic across
 		
 A Load Balancer Distribution modes:
 - 5-tuple hash (multiple VMs: 
-	- source IP
-	- source port 
-	- destination IP 
-	- destination port
-	- protocol type 
+	- Source IP
+	- Source port 
+	- Destination IP 
+	- Destination port
+	- Protocol type 
 - Source IP affinity/Session Affinity/Client IP affinity uses (for one Specific Client):
 	- 2-tuple hash: Source and Destination IP
-	
 
 - An **availability set** is a logical grouping that you use to isolate virtual machine resources from each other when they're deployed. Availabilty sets allow virtual machines to remain available when a physical server fails.
 - An **availability zone** offers groups of one or more datacenters that have independent power, cooling, and networking.
 
 Basic load balancers allow:
-- Port forwarding
+- Port Forwarding
 - Automatic reconfiguration
 - Health probes
 - Outbound connections through source network address translation (SNAT)
@@ -367,7 +362,7 @@ Load Balancers Workflows by Type and important information:
 - Front Door - Global Layer 7 load balancer 
 - Load Balancer - Layer 4 for internal and public configurations
 	- SKU options: Basic, Standard, and Gateway 
-- Traffic Manager - DNs-based traffic load balancer
+- Traffic Manager - DNS-based traffic load balancer
 Manage:
 `Search -> Load Balancers -> $loadBalancer`:
 - Front-end IP configuration 
@@ -383,7 +378,7 @@ Manage:
 Application Gateway Configuration
 - Routing Methods
 	- Path-based routing: sends requests with different URL paths to different pools of back-end servers.
-	- Multi-site routing:  configures more than one web application on the same application gateway instance.
+	- Multi-site routing: configures more than one web application on the same application gateway instance.
 - Optional Firewall checks (Recommended)
 	- OWASP defines a set of generic rules for detecting attacks. These rules are referred to as the Core Rule Set (CRS)
 - Traffic Redirection
@@ -395,7 +390,7 @@ Application Gateway distributes requests across multiple servers by using a roun
 - Listen is either Basic or Multi-site and handle TLS/SSL certificates
 
 
-Source IP affininty load balancer
+Source IP affinity load balancer
 ```powershell
 $lb = Get-AzLoadBalancer -Name MyLb -ResourceGroupName MyResourceGroup
 $lb.LoadBalancingRules[0].LoadDistribution = 'sourceIp'
@@ -568,7 +563,7 @@ Get-AzNetworkWatcherTopology `
 
 #### Service Endpoints and Service Endpoints Policies
 
-NSGs are focused on traffic inot and out of the virtual network, Azure PaaS options have built-in Firewalls to often restrict a service to only spoecific subnets of specific virtual networks.Service endpoints make a specific subnet known to specific Azure service and add optimal path to service.
+NSGs are focused on traffic inot and out of the virtual network, Azure PaaS options have built-in Firewalls to often restrict a service to only specific subnets of specific virtual networks. Service endpoints make a specific subnet known to specific Azure service and add optimal path to service.
 
 - Virtual firewalls on service are configurable to allow only a specific subnet
 - Service Enpoint Policies allow specific instances of services to be allowed from a virtual network, which is not possible with NSG service Tag
@@ -593,16 +588,16 @@ Before you start integrating Azure with on-premises networks, it's important to 
 Routable address over the internet: 215.11.0.0 to 215.11.255.255
 
 Discover IP address scheme requirements:
--   How many devices do you have on the network?
--   How many devices are you planning to add to the network in the future?
+- How many devices do you have on the network?
+- How many devices are you planning to add to the network in the future?
 
 When your network expands, you don't want to redesign the IP address scheme. Here are some other questions you could ask:
--   Based on the services running on the infrastructure, what devices do you need to separate?
--   How many subnets do you need?
--   How many devices per subnet will you have?
--   How many devices are you planning to add to the subnets in future?
--   Are all subnets going to be the same size?
--   How many subnets do you want or plan to add in future?
+- Based on the services running on the infrastructure, what devices do you need to separate?
+- How many subnets do you need?
+- How many devices per subnet will you have?
+- How many devices are you planning to add to the subnets in future?
+- Are all subnets going to be the same size?
+- How many subnets do you want or plan to add in future?
 
 Address spaces - Review IP Schema Implementation
 By CIDR 10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16
@@ -650,7 +645,7 @@ az network vnet subnet list \
 #### Configuring Network Routing and Endpoints
 
 Azure uses *system routes* to control network traffic between virtual machines, on-premises networks, and the internet. Information about the system routes is recorded in a *route table*.
-- The route table contains a set of rules (routes) specificying packet routing in a Vnet  
+- The route table contains a set of rules (routes) specifying packet routing in a Vnet  
 - Each packet leaving a subnet is handled by on associated route table
 - Packets are matched to routes by using the destination.
 - If matching route cannot be found it is dropped.
@@ -659,28 +654,28 @@ Azure automatically handles all network traffic routing, except in a custom conf
 -  The valid next hop choices are virtual appliance, virtual network gateway, virtual network, internet, and none.
 -  Administrators can create user routes, but not system routes.
 
-Virtual Network (VNet) service endpoint provides secure and direct connectivity to Azure services over an optimized route over the Azure backbone network. Endpoints allow you to secure  Azure service resources to only your virtual networks. Service Endpoints enables private IP addresses in the VNet to reach the endpoint of an Azure service without needing a public IP address on the VNet.  Service endpoints for your service: 
+Virtual Network (VNet) service endpoint provides secure and direct connectivity to Azure services over an optimized route over the Azure backbone network. Endpoints allow you to secure Azure service resources to only your virtual networks. Service Endpoints enables private IP addresses in the VNet to reach the endpoint of an Azure service without needing a public IP address on the VNet. Service endpoints for your service: 
 
--   **[Azure Storage](https://learn.microsoft.com/en-us/azure/storage/common/storage-network-security?toc=/azure/virtual-network/toc.json#grant-access-from-a-virtual-network)** (_Microsoft.Storage_): Generally available in all Azure regions.
--   **[Azure SQL Database](https://learn.microsoft.com/en-us/azure/azure-sql/database/vnet-service-endpoint-rule-overview?toc=%2fazure%2fvirtual-network%2ftoc.json)** (_Microsoft.Sql_): Generally available in all Azure regions.
--   **[Azure Synapse Analytics](https://learn.microsoft.com/en-us/azure/azure-sql/database/vnet-service-endpoint-rule-overview?toc=%2fazure%2fvirtual-network%2ftoc.json)** (_Microsoft.Sql_): Generally available in all Azure regions for dedicated SQL pools (formerly SQL DW).
--   **[Azure Database for PostgreSQL server](https://learn.microsoft.com/en-us/azure/postgresql/howto-manage-vnet-using-portal?toc=/azure/virtual-network/toc.json)** (_Microsoft.Sql_): Generally available in Azure regions where database service is available.
--   **[Azure Database for MySQL server](https://learn.microsoft.com/en-us/azure/mysql/howto-manage-vnet-using-portal?toc=/azure/virtual-network/toc.json)** (_Microsoft.Sql_): Generally available in Azure regions where database service is available.
--   **[Azure Database for MariaDB](https://learn.microsoft.com/en-us/azure/mariadb/concepts-data-access-security-vnet)** (_Microsoft.Sql_): Generally available in Azure regions where database service is available.
--   **[Azure Cosmos DB](https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-configure-vnet-service-endpoint?toc=/azure/virtual-network/toc.json)** (_Microsoft.AzureCosmosDB_): Generally available in all Azure regions.
--   **[Azure Key Vault](https://learn.microsoft.com/en-us/azure/key-vault/general/overview-vnet-service-endpoints)** (_Microsoft.KeyVault_): Generally available in all Azure regions.
--   **[Azure Service Bus](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-service-endpoints?toc=/azure/virtual-network/toc.json)** (_Microsoft.ServiceBus_): Generally available in all Azure regions.
--   **[Azure Event Hubs](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-service-endpoints?toc=/azure/virtual-network/toc.json)** (_Microsoft.EventHub_): Generally available in all Azure regions.
--   **[Azure Data Lake Store Gen 1](https://learn.microsoft.com/en-us/azure/data-lake-store/data-lake-store-network-security?toc=/azure/virtual-network/toc.json)** (_Microsoft.AzureActiveDirectory_): Generally available in all Azure regions where ADLS Gen1 is available.
--   **[Azure App Service](https://learn.microsoft.com/en-us/azure/app-service/app-service-ip-restrictions)** (_Microsoft.Web_): Generally available in all Azure regions where App service is available.
--   **[Azure Cognitive Services](https://learn.microsoft.com/en-us/azure/cognitive-services/cognitive-services-virtual-networks?tabs=portal)** (_Microsoft.CognitiveServices_): Generally available in all Azure regions where Cognitive services are available.
+- **[Azure Storage](https://learn.microsoft.com/en-us/azure/storage/common/storage-network-security?toc=/azure/virtual-network/toc.json#grant-access-from-a-virtual-network)** (_Microsoft.Storage_): Generally available in all Azure regions.
+- **[Azure SQL Database](https://learn.microsoft.com/en-us/azure/azure-sql/database/vnet-service-endpoint-rule-overview?toc=%2fazure%2fvirtual-network%2ftoc.json)** (_Microsoft.Sql_): Generally available in all Azure regions.
+- **[Azure Synapse Analytics](https://learn.microsoft.com/en-us/azure/azure-sql/database/vnet-service-endpoint-rule-overview?toc=%2fazure%2fvirtual-network%2ftoc.json)** (_Microsoft.Sql_): Generally available in all Azure regions for dedicated SQL pools (formerly SQL DW).
+- **[Azure Database for PostgreSQL server](https://learn.microsoft.com/en-us/azure/postgresql/howto-manage-vnet-using-portal?toc=/azure/virtual-network/toc.json)** (_Microsoft.Sql_): Generally available in Azure regions where database service is available.
+- **[Azure Database for MySQL server](https://learn.microsoft.com/en-us/azure/mysql/howto-manage-vnet-using-portal?toc=/azure/virtual-network/toc.json)** (_Microsoft.Sql_): Generally available in Azure regions where database service is available.
+- **[Azure Database for MariaDB](https://learn.microsoft.com/en-us/azure/mariadb/concepts-data-access-security-vnet)** (_Microsoft.Sql_): Generally available in Azure regions where database service is available.
+- **[Azure Cosmos DB](https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-configure-vnet-service-endpoint?toc=/azure/virtual-network/toc.json)** (_Microsoft.AzureCosmosDB_): Generally available in all Azure regions.
+- **[Azure Key Vault](https://learn.microsoft.com/en-us/azure/key-vault/general/overview-vnet-service-endpoints)** (_Microsoft.KeyVault_): Generally available in all Azure regions.
+- **[Azure Service Bus](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-service-endpoints?toc=/azure/virtual-network/toc.json)** (_Microsoft.ServiceBus_): Generally available in all Azure regions.
+- **[Azure Event Hubs](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-service-endpoints?toc=/azure/virtual-network/toc.json)** (_Microsoft.EventHub_): Generally available in all Azure regions.
+- **[Azure Data Lake Store Gen 1](https://learn.microsoft.com/en-us/azure/data-lake-store/data-lake-store-network-security?toc=/azure/virtual-network/toc.json)** (_Microsoft.AzureActiveDirectory_): Generally available in all Azure regions where ADLS Gen1 is available.
+- **[Azure App Service](https://learn.microsoft.com/en-us/azure/app-service/app-service-ip-restrictions)** (_Microsoft.Web_): Generally available in all Azure regions where App service is available.
+- **[Azure Cognitive Services](https://learn.microsoft.com/en-us/azure/cognitive-services/cognitive-services-virtual-networks?tabs=portal)** (_Microsoft.CognitiveServices_): Generally available in all Azure regions where Cognitive services are available.
 
 A virtual network _service endpoint_ provides the identity of your virtual network to the Azure service. After service endpoints are enabled in your virtual network, you can secure Azure service resources to your virtual network by adding a _virtual network rule_ to the resources.
-- Secure with Vnet Rules
-- Configured through th subnet
+- Secure with VNet Rules
+- Configured through the subnet
 - Can extend your Vnet identity to your Azure Services - Database for a website...
 
-Azure Private Link  provides private connectivity from a virtual network to Azure platform as a service (PaaS), customer-owned, or Microsoft partner services to simplify network architecture and secure connection between endpoints in Azure. 
+Azure Private Link  provides private connectivity from a virtual network to Azure platform as a service (PaaS), customer-owned, or Microsoft partner services to simplify Network Architecture and secure connection between endpoints in Azure. 
 - No exposure to internet keeps all traffic on the Microsoft global network.
 - It can link anywhere
 	- Privately deliver your own services in your customer's virtual networks.
@@ -696,7 +691,7 @@ Implement Virtual Networking
 
 #### Azure Private Link
 
-Azure Private Link is when a external facing Azure PAaS service is accessed from a resource in a VNet the trafffic stays on the Azure network. APL enables PaaS Service is an avatar for that service instance and can project custom services that are behind a Load Balancer. Must have consistent DNS management!
+Azure Private Link is when a external facing Azure PaaS service is accessed from a resource in a VNet the traffic stays on the Azure network. APL enables PaaS Service is an avatar for that service instance and can project custom services that are behind a Load Balancer. Must have consistent DNS management!
 - Private Link Endpoint is the Network Interface  
 - Private Link service is the connection
 	- Requires Azure Standard Internal Load Balancer and associated to a Link service:
@@ -705,10 +700,10 @@ Azure Private Link is when a external facing Azure PAaS service is accessed from
 		- SQL
 - Third-Party providers acan be powered by Private Link
 
-The PaaS service still has a external facing endpoint that some companies do not want even with firewall/authenication - firewalls and authenication are bypassable. 
+The PaaS service still has a external facing endpoint that some companies do not want even with firewall/authentication - firewalls and authentication are bypassable. 
 
 Azure Firewall is managed, cloud-based network security service that protects your Azure VNets resources:
-- It is a fully stateful Firewall as a SErvice (FWaaS) with: built-in high availability and unrestricted cloud scalability
+- It is a fully stateful Firewall as a Service (FWaaS) with: built-in high availability and unrestricted cloud scalability
 - Uses a static public IP address for your VNet resources allowing outside firewalls to identify traffic originating from your virtual network
 - Fully integrated with Azure Monitor for logging and analytics
 - Azure Firewall on its own VNet
@@ -734,12 +729,12 @@ Watcher can monitor and repair Azure resources you provision:
 Network Performance Monitor (NPM) is cloud-based hybrid network monitoring solution , which helps you monitor network performance between various points in your network infrastructure.
 - Traffic blackholing 
 - Route errors
-- Unventional Network Issues
-- Generates Alerts andNotifies you when a threshold is breached for a network link.
+- Unconventional Network Issues
+- Generates Alerts and Notifies you when a threshold is breached for a network link.
 
 #### Network Security Groups (NSG)
 
-Network Security Group (NSG) limit network traffic to and from Azure resources in a VNet. NSGs are assignableto subnets to create demilitarized zone (DMZ) that acts as a buffer between resource within a VNet and the internet. 
+Network Security Group (NSG) limit network traffic to and from Azure resources in a VNet. NSGs are assignable to subnets to create demilitarized zone (DMZ) that acts as a buffer between resource within a VNet and the internet. 
 - A subnet can have a maximum of one associated network security group and cannot have associated NSGs. 
 - You assign NSGs to (which constitute a tiering at each level in rule precedence):
 	- Subnet	
@@ -771,7 +766,7 @@ Network Security Group (NSG) limit network traffic to and from Azure resources i
 Consider:
 - Traffic
 	- Intra-subnet traffic
-- Deny by Default is a security default - Allow is then for avaliability, while not compromising security
+- Deny by Default is a security default - Allow is then for availability, while not compromising security
 - Rule Priority - Rule Priority - Rule Priority
 
 [Application Security Group](https://learn.microsoft.com/en-us/azure/virtual-network/application-security-groups) are for logically grouping VMs by workload in Azure virtual network.
@@ -794,7 +789,7 @@ Add RDP to a VM Allowing and Disallowing the connection with NSG
 #### Azure Firewall
 
 Azure Firewall is a managed, stateful firewall and cloud-based network security service that protects your Azure Virtual Network resources. Allows creating, enforcement and logging appplication and network connectivity policies across subscriptions and Vnets. It integrates with Azure Monitor for logging and analytics.
-- By default denys all trafficthrough your virtual network - protection from bad actors,  stupidity and blind spots 
+- By default denies all traffic through your virtual network - protection from bad actors,  stupidity and blind spots 
 - It has a static public IP address
 - Can span multiple availability zones for increased availability during deployment and unrestricted in scalabilty
 - Limit outbound HTTP/S traffic or Azure SQL traffic to a specified list of fully qualified domain names (FQDN) including wild cards
@@ -809,24 +804,24 @@ With Azure Firewall, Bastion and VPN Gateway by default you can implementing a h
 
 Azure Firewall Rules are configured for: 
 - **NAT** - Azure Firewall destination network address translation (DNAT) rules to translate and filter inbound traffic to your subnets
-	-   **Name**: Provide a label for the rule.
-	-   **Protocol**: Choose the TCP or UDP protocol.
-	-   **Source Address**: Identify the address as * (internet), a specific internet address, or a classless inter-domain routing (CIDR) block.
-	-   **Destination Address**: Specify the external address of the firewall for the rule to inspect.
-	-   **Destination Ports**: Provide the TCP or UDP ports that the rule listens to on the external IP address of the firewall.
-	-   **Translated Address**: Specify the IP address of the service (virtual machine, internal load balancer, and so on) that privately hosts or presents the service.
-	-   **Translated Port**: Identify the port that the inbound traffic is routed to by Azure Firewall.
+	- **Name**: Provide a label for the rule.
+	- **Protocol**: Choose the TCP or UDP protocol.
+	- **Source Address**: Identify the address as * (internet), a specific internet address, or a classless inter-domain routing (CIDR) block.
+	- **Destination Address**: Specify the external address of the firewall for the rule to inspect.
+	- **Destination Ports**: Provide the TCP or UDP ports that the rule listens to on the external IP address of the firewall.
+	- **Translated Address**: Specify the IP address of the service (virtual machine, internal load balancer, and so on) that privately hosts or presents the service.
+	- **Translated Port**: Identify the port that the inbound traffic is routed to by Azure Firewall.
 - **Network** rule  - Any non-HTTP/S traffic that's allowed to flow through your firewall must have a network rule
-	-   **Name**: Provide a label for the rule.
-	-   **Protocol**: Choose the protocol for the rule, including TCP, UDP, ICMP (ping and traceroute), or Any.
-	-   **Source Address**: Identify the address or CIDR block of the source.
-	-   **Destination Addresses**: Specify the addresses or CIDR blocks of the destination(s).
-	-   **Destination Ports**: Provide the destination port of the traffic.
+	- **Name**: Provide a label for the rule.
+	- **Protocol**: Choose the protocol for the rule, including TCP, UDP, ICMP (ping and traceroute), or Any.
+	- **Source Address**: Identify the address or CIDR block of the source.
+	- **Destination Addresses**: Specify the addresses or CIDR blocks of the destination(s).
+	- **Destination Ports**: Provide the destination port of the traffic.
 - **Application** rules define fully qualified domain names (FQDNs) that can be accessed from a subnet
 	- **Name**: Provide a label for the rule.
-	-   **Source Addresses**: Identify the IP address of the source.
-	-   **Protocol:Port**: Specify `HTTP` or `HTTPS` and the port that the web server is listening on.
-	-   **Target FQDNs**: Provide the domain name of the service, such as `www.contoso.com`. Wildcards (\*) can be used. An FQDN tag represents a group of FQDNs associated with well known Microsoft services. Example FQDN tags include `Windows Update`, `App Service Environment`, and `Azure Backup`.
+	- **Source Addresses**: Identify the IP address of the source.
+	- **Protocol:Port**: Specify `HTTP` or `HTTPS` and the port that the web server is listening on.
+	- **Target FQDNs**: Provide the domain name of the service, such as `www.contoso.com`. Wildcards (\*) can be used. An FQDN tag represents a group of FQDNs associated with well known Microsoft services. Example FQDN tags include `Windows Update`, `App Service Environment`, and `Azure Backup`
 	
 Azure Firewall Rules are processed by:
 - Network rules
@@ -834,10 +829,10 @@ Azure Firewall Rules are processed by:
 
 #### Azure Virtual Network Peering
 
-[Azure Virtual Network peering](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-peering-overview) lets you connect virtual networks in the same or different regions, so resources in both networks can communicate with each other, but are still managed separately. Azure Virtual Network peering does not require downtime for resources, utilizes the Azure infrastructure simplifying and strengthening performance.  
+[Azure Virtual Network peering](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-peering-overview) lets you connect Virtual Networks in the same or different regions, so resources in both networks can communicate with each other, but are still managed separately. Azure Virtual Network peering does not require downtime for resources, utilizes the Azure infrastructure simplifying and strengthening performance.  
 
-- Regional virtual network peering - Cloud, Public or Govenment Region 
-- Global virtual network peering
+- Regional Virtual Network peering - Cloud, Public or Govenment Region 
+- Global Virtual Network peering
 
 You cannot:
 - Peering different Azure Government cloud 
@@ -877,7 +872,6 @@ Configuration of Network Virtual Applicance (NVA) to control traffic through rou
 - IDS/IPS
 - Proxies
 Some require multiple network interfaces. Customers often create network virtual appliances and they can be downloaded from the Azure Marketplace.
-
 
 Routing is controlled by System Routes - You can't create or delete system routes, but you can override the system routes by adding custom routes to control traffic flow to the next hop. Types:
 - System Default Routes 
@@ -1002,20 +996,13 @@ Supported ExpressRoute locations:
 
 #### Azure WAN
 
-The Azure Virtual WAN  (wide-area network) networking service combines networking, security, and routing functionalities into a single operational interface.
-
-![](azurewansimage.png)
-Typology:
--  **Basic**: A Basic Virtual WAN can be implemented only in an S2S VPN connection.
--  **Standard**: A Standard Virtual WAN can be implemented with Azure ExpressRoute and a User VPN (P2S). You can also use a Standard WAN with an S2S VPN, Inter-hub, and VNet-to-VNet connection transiting through the virtual hub.
-
+[[Azure-Administration-Virtual-WAN]]
 
 ## Workflows
 
-
 Create Virtual Networks and Manage
 `Search "Virtual Networks" -> Virtual Networks (-> Create)`
-- Azure Fiewall, Bastion and other require a subnet!
+- Azure Firewall, Bastion and other require a subnet!
 
 Create Subnets
 `Search "Virtual Networks" -> Virtual Networks -> $VN -> Subnets -> + Subnets/Gateway subnet`
@@ -1024,11 +1011,11 @@ Remember to: plan IP addresses - they can be `private` or  `public`, `static` or
 - 192.168.1.1 - Azure Default Gateway
 - 192.168.1.2 - Azure DNS address 
 - 192.168.1.3 - Azure DNS address
-- 192.168.1.255 - virtual network broadcast address
+- 192.168.1.255 - Virtual Network broadcast address
 
-Consideration :
+Consideration:
 - Service requirements
-- Avaliability requirements - static IPs for DNS and DCs, TLS/SSL certs linked to an IP
+- Availability requirements - static IPs for DNS and DCs, TLS/SSL certs linked to an IP
 - Network virtual appliances
 - Service Endpoints
 - Network Security Groups
@@ -1041,10 +1028,6 @@ Create and manage public IPs
 ## References
 
 [Service Level Agreements for Azure Virtual Machines](https://azure.microsoft.com/support/legal/sla/virtual-machines/v1_9/) 
-
-
-## References
-
 [John Savill's Microsoft Azure Master Class Part 6 - Networking](https://www.youtube.com/watch?v=K8ePZdLfU7M&t=3511s)
 [Vnet Peering Permissions](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-manage-peering?tabs=peering-portal#permissions)
 [Azure Virtual Network peering documentation](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-peering-overview).

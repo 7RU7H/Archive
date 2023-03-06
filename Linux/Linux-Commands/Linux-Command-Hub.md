@@ -8,7 +8,7 @@ This is a hub page that will help narrow down a command or useful cases:
 [[Linux-Compression-Commands.md]]                     
 [[Linux-Processes-Commands.md]]
 [[Linux-Hardware-Commands.md]]
-[[Linux-Users-N-Group-Linux-Commands.md]]
+[[Linux-Users-And-Group-Commands]]
 [[Linux-Maintaince-And-Troubleshooting-Commands.md]]  
 [[Systemctl.md]]
 [[Linux-Memory-Commands.md]]

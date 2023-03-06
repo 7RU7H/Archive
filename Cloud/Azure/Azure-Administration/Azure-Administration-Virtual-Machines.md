@@ -1,7 +1,5 @@
 # Azure Administration - Virtual Machines
 
-
-
 Azure Virtual Machines (VMs) are a configurable server without having to buy and maintain physical hardware, they still require:
 - Patching
 - Installing packages
@@ -70,7 +68,7 @@ Azure Compute Units (ACU) a method of comparing compute CPU performance across A
 
 You can monitorv Domains
 - Newest VM - Delete the newest created VM, balanced across AZsr your VMs on the go 
-- with [mobile App](https://azure.microsoft.com/en-gb/products/app-service/mobile/). 
+- With [mobile App](https://azure.microsoft.com/en-gb/products/app-service/mobile/). 
 
 ## Azure Portal Workflows
 
@@ -84,8 +82,7 @@ Provide configurations for Basic, Disks, Networking (**BEWARE** Azure creates de
 Connect to a VM via RDP
 `Search All Resources -> $name -> Connect -> select RDP`
 
-
-#### VM extensions
+#### VM Extensions
 
 Many of the maintenance tasks are repetitive and time-consuming one way to automate it is VM extensions. You can manage virtual machine extensions with the Azure CLI, PowerShell, Azure Resource Manager (ARM) templates, and the Azure portal; for either existing or newly deployed VMs.
 - Custom Script Extensions 
@@ -123,7 +120,7 @@ Azure has Generation 1 and Generation 2 are similar, but exactly the same as Hyp
 
 #### Connecting to the VM
 
-SSH, RDP or Azure Bastion
+SSH, RDP or Azure Bastion - Use VPN to connect to Azure as raw RDP or SSH connections are MITM-able
 - [[RDP-Cheatsheet]]
 - [[SSH-Cheatsheet]]
 
@@ -136,7 +133,7 @@ You have to create a Azure BastionSubnet called `AzureBastionSubnet` with atleas
 
 #### Update Management
 
-Update Management allow you to automate and install operating system updates and patches for both Windows and Linux. It uses Azure Automation underneath Update Managemen, switch performs a compliance scan every 24 hours. Log Analytics workspace and Automation Account required like all Azure Automation
+Update Management allow you to automate and install operating system updates and patches for both Windows and Linux. It uses Azure Automation underneath Update Management, switch performs a compliance scan every 24 hours. Log Analytics workspace and Automation Account required like all Azure Automation
 lt Domains
 - Newest VM - Delete the newest created VM, balanced across AZs
 
@@ -164,8 +161,8 @@ Azure Automation State Configuration ensure VMs in a a cluster are in a consiste
 Requires:
 - Port 443
 - Global URL
--   Global URL of US Gov Virginia: \*.azure-automation.us
--   Agent service: https://`<workspaceId>`.agentsvc.azure-automation.net
+- Global URL of US Gov Virginia: \*.azure-automation.us
+- Agent service: https://`<workspaceId>`.agentsvc.azure-automation.net
 
 Azure Automation DSC supports the following operating systems:
 
@@ -203,9 +200,9 @@ Compile DSC script
 Register VMs with your Azure Automation Account
 `Search Automation Accounts -> Automation Accounts -> $AutomationAccount -> State configuration (DSC) -> Nodes + Add -> Configure settings -> Comfirm`
 
-Azure Automatio Account related
+Azure Automation Account related
 
-Upload the DSC scription into your Azure Automation account
+Upload the DSC script into your Azure Automation account
 ```powershell
 Import-AzAutomationDscConfiguration `
     -Published `

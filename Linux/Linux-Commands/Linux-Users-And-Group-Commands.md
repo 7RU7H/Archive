@@ -1,27 +1,46 @@
-# User and group related
+# User and Group related commands
 
 For non-user-and-group related command see: [[Core-Linux-Commands]]
 
 ```bash
-su	switch user "-l" is login switch
-id	provide general info of user
-whoami	print current username
+# switch user "-l" is login switch
+su
+# provide general info of user
+id	
+# print current username
+whoami	
+
+# Adding Users
+useradd
+
+useradd -u usergroup -g groupid -p cheese -s /bin/$shell -m /$username
+
+# Modifying Users
+usermod
+
+# Passwords
+
+passwd --status $user
+# View the password change status
+chage -l jane
 
 
-useradd -u usergroup -g groupid -p cheese -s shelldefault -d /homedirname -m username
 
-Lock account # places a ! in /etc/shadow
+
+# Lock account # places a ! in /etc/shadow
 usermod -L username 
 passwd -l username
 chage -e	change expiry date of passwd
 usermod -s 	change default shell of the user
 
-groups	list groups a user is a part of BUT
-THEN USE THIS FIND COMMAND 
+# groups 
+# list groups a user is a part of BUT THEN USE THIS FIND COMMAND 
 find / -group users -type f 2>/dev/null
 user* -* *group *
 useradd -G sudo username
 usermod -aG sudo username
+
+
 
 
 # Create a password hash that is compliant:

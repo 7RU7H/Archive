@@ -1,4 +1,6 @@
-Blob storage is an object-store that is optimizaed for storing massive amounts of unstructured data (does not adhere to particular data model or definition). Azure Blob Storage uses a container resource to group a set of blobs. A blob can't exist by itself in Blob Storage. A blob must be stored in a container resource, -which can store an unlimited number of blobs. Azure storage account can contain an unlimited number of containers.
+# Azure Administration - Blobs
+
+Blob storage is an object-store that is optimized for storing massive amounts of unstructured data (does not adhere to particular data model or definition). Azure Blob Storage uses a container resource to group a set of blobs. A blob can't exist by itself in Blob Storage. A blob must be stored in a container resource, which can store an unlimited number of blobs. Azure storage account can contain an unlimited number of containers.
 
 Storage Account (a unique namespace in Azure for your data) -> Containers (similar to folder in a file system) -> Blobs ( the actual data being stored).
 
@@ -28,9 +30,9 @@ Azure Import/Export service | Service to ship physical disks for data transfer n
 Create Container for Blob Storage
 `Azure Storage accounts -> + Container -> Name and Change "Public Access Level"`:
 **Public access level**: The access level specifies whether the container and its blobs can be accessed publicly. By default, container data is private and visible only to the account owner. There are three access level choices:
-    -   **Private**: (Default) Prohibit anonymous access to the container and blobs.
-    -   **Blob**: Allow anonymous public read access for the blobs only.
-    -   **Container**: Allow anonymous public read and list access to the entire container, including the blobs.
+-   **Private**: (Default) Prohibit anonymous access to the container and blobs.
+-   **Blob**: Allow anonymous public read access for the blobs only.
+-   **Container**: Allow anonymous public read and list access to the entire container, including the blobs.
 
 See Tiering for Hot, Cold, Archive and Premium Storage
 
@@ -42,9 +44,9 @@ Use Azure Blob Storage lifecycle management policy rules to:
 - Transition Storage tier 
 
 Object replication copies blobs in a container asynchronously according to policy rules that you configure. During the replication process, the following contents are copied from the source container to the destination container:
--   The blob contents
--   The blob metadata and properties
--   Any versions of data associated with the blob
+- The blob contents
+- The blob metadata and properties
+- Any versions of data associated with the blob
 Requires:
 - Versioning enabled
 - Does not support snapshots
