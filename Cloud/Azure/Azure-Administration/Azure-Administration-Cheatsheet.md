@@ -15,6 +15,13 @@
 
 Azure Resource Manager provides a consistent management layer to perform tasks through Azure PowerShell, Azure CLI, Azure portal, REST API, and client SDKs.
 
+Important
+- SLA - Service Level Agree is ratio of commitments to uptime and connectivity
+	- VM 99.95% in a Avaliability Set
+	- VM with Premium SSD 99.9%
+	- VM with Standard SSD 99.5%
+	- VM with Standard HDD 95%
+
 #### Create Resources
 
 Create a Disk
@@ -48,6 +55,7 @@ Moving Resources - there are edge cases - [see Documentation for more]([Move res
 [ResourcesOperationsExtensions.MoveResources Method (Microsoft.Azure.Management.ResourceManager) - Azure for .NET Developers | Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/api/microsoft.azure.management.resourcemanager.resourcesoperationsextensions.moveresources?view=azure-dotnet)
 
 `Resource Groups -> $Src -> Tick $Resource -> Move -> Move to another resource group`
+
 
 ## ARM & Bicep Templates
 
@@ -124,7 +132,10 @@ Create a Azure Files Share
 - Open port 445 - check firewall
 - Enable - `Secure tranfer required`
 
-File mounting can be done on-demand with the `mount` command or on-boot (persistent) by creating an entry in /etc/fstab.
+Accessing a Azure a File Share - Mount with File explorer!
+UNC pathing:  `\\$StorageAccount.file.core.windows.net\$FileShare` 
+
+With Linux file share mounting can be done on-demand with the `mount` command or on-boot (persistent) by creating an entry in /etc/fstab.
 
 Setup File Sync 
 `Azure File Sync -> Create` - Marketplace - not default, but covered in AZ 104
@@ -212,6 +223,14 @@ Secure Storage endpoints
 
 ## Management Groups - Azure Policies
 
+Azure Policy(Ensure compliance of resources and does not restrict) != Azure Roles (Control access to resources - Manages User actions at different scopes) && RBAC (Who own Owns, Contributes, Can read and User Access Administrator - Assignment, Scope, Role Definitions, Security Principle(Object: `user`, `group` or `application`))
+ 
+- [[Azure-Administration-Azure-Policies]] 
+	- Policy Definitions - Defined in a .json to describe business rules to control access to resources
+	- Policy Assignment - Scope of a policy can effect
+	- Policy Parameters - Values passed into Policy definition so Polices are more flexiable for re-use
+	- Initiative Definitions - A collection of Policy definitions, assignable to enforce compliance 
+
 Policy Creation:
 1. Policy Defintions - [list of built-in definitions](https://learn.microsoft.com/en-us/azure/governance/policy/samples/built-in-policies)
 2. Initiative definition - [Azure Policy initiative definition structure](https://learn.microsoft.com/en-us/azure/governance/policy/concepts/initiative-definition-structure) and  [list of built-in initiatives](https://learn.microsoft.com/en-us/azure/governance/policy/samples/built-in-initiatives)
@@ -252,6 +271,8 @@ From here for:
 
 ## RBAC and Role Management
 
+RBAC (Who own Owns, Contributes, Can read and User Access Administrator - Assignment, Scope, Role Definitions, Security Principle(Object: `user`, `group` or `application`)) != Azure Policy(Ensure compliance of resources and does not restrict) && Azure Roles (Control access to resources - Manages User actions at different scopes) 
+
 Implement management groups 
 `Search Management groups -> Management groups`
 Setup Azure AD permissions for Implementing Management Groups
@@ -266,45 +287,16 @@ Custom RBAC role creation:
 `Upload a $customRole.json file`  - replace fields required prior to upload!
 `Open CloudCLI` to upload or use AzCLI or Powershell
 
-VPN Gateway requires: - subnet, dns server and VPN device 
-`Search -> Virtual Network Gateways -> + Create`
-Select:
-- VPN or ExpressRoute
-- Gateway type
-	- Route-based - uses routes in the IP forwarding or routing table to direct packets into their corresponding tunnel interfaces
-	- Policy-based - encrypt and direct packets through IPsec tunnels based on the IPsec policies - configured with the combinations of address prefixes between your on-premises network and the Azure virtual network
-- SKU, Generation (bytes per second), Names, RG, Vnet
-
-Local Network Gateways - to represent the on-premises site that you want to connect to a virtual network
-`Search -> Local Network Gateways -> + Create`
-- (Advanced) Border Gateway Protocol (BGP) - routability and reachable protocol -  requires - the minimum prefix you need to declare is the host address of your BGP Peer IP address on your VPN device.
-
-On-Premise VPN devices: shared key and public IP address of your VPN gateway
-- Configuration scripts are available for some devices - [Download VPN device configuration scripts for S2S VPN connections](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-download-vpndevicescript) to find a downloadable script for your VPN device.
-
-
 Assign roles **at scope** - `Subscription,Resource group, Resource`
 `Management Groups -> Access Control (IAM) -> Add -> Search <role keyword> ->  + Select members`
-Assign can be done via Reso
-VPN Gateway requires: - subnet, dns server and VPN device 
-`Search -> Virtual Network Gateways -> + Create`
-Select:
-- VPN or ExressRoute
-- Gateway type
-	- Route-based - uses routes in the IP forwarding or routing table to direct packets into their corresponding tunnel interfaces
-	- Policy-based -  encrypt and direct packets through IPsec tunnels based on the IPsec policies - configured with the combinations of address prefixes between your on-premises network and the Azure virtual network
-- SKU, Generation (bytes per second), Names, RG, Vnet
-
-Local Network Gateways - to represent the on-premises site that you want to connect to a virtual network
-`Search -> Local Network Gateways -> + Create`
-- (Advanced) Border Gateway Protocol (BGP) - routability and reachable protocol - requires - the minimum prefix you need to declare is the host address of your BGP Peer IP address on your VPN device.
-
-On-Premise VPN devices: shared key and public IP address of your VPN gateway
-- Configuration scripts are available for some devices - [Download VPN device configuration scripts for S2S VPN connections](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-download-vpndevicescript) to find a downloadable script for your VPN device.
-urce Group of Admin Scoping in fields
+Assign can be done via Resource Group of Admin Scoping in fields
 `Resource Groups -> Access Control (IAM) -> Add (role, co-adminstrator, custom) role -> Search`
 `Remove` to remove!
 `Activty Log` to find all role (de-)assignments
+
+Levels:
+`Microsoft.Authorization/*/` `read`
+`Microsoft.Support/*`
 
 ## Azure AD 
 
@@ -360,7 +352,7 @@ Enable Account
 Temporary Guest users use: `Azure AD B2B` , Guest user can be added with Creating and then Inviting
 `Search Azure AD -> Azure AD -> Users -> New Users -> New user`
 `Overview -> Users -> New User -> Invite External`
-- remember to add to groups and anything else.
+- Remember to add to groups and anything else.
 
 
 Bulk additions, deletion and invitation use a .cvs with SOME of the fields
@@ -413,7 +405,13 @@ By CIDR 10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16
 Routable address over the internet: 215.11.0.0 to 215.11.255.255
 
 - Important:
+	- Address range overlaps restricts various connectivity potentials - see  [[IPv4-Subnet-Masks-Dictionary]]:
+		- 10.11.0.0/17 overlaps with 10.11.0.0/25
+		- 192.168.16.0/22 does not overlap with 10.11.0.0/17
 	- Cross region connection use a gateway, NIC in Region A != connect to Region B
+	- 5 Addresses are taken by Azure per (256 addresses of IPv4)
+	- Add either to New Subnet or new Address space - understand the differences
+
 
 View a Network Typology by Subscription, Resource Group and VNet
 `Search -> Network Watcher -> Topology`
@@ -570,6 +568,8 @@ Select:
 	- Policy-based -  encrypt and direct packets through IPsec tunnels based on the IPsec policies - configured with the combinations of address prefixes between your on-premises network and the Azure virtual network
 - SKU, Generation (bytes per second), Names, RG, Vnet
 
+Vnet-To-Vnet requires a Gateway Subnet Azure commends reserving /27 and /28 for each address range of each Vnet.  
+
 Local Network Gateways - to represent the on-premises site that you want to connect to a virtual network
 `Search -> Local Network Gateways -> + Create`
 - (Advanced) Border Gateway Protocol (BGP) - routability and reachable protocol -  requires - the minimum prefix you need to declare is the host address of your BGP Peer IP address on your VPN device.
@@ -577,7 +577,7 @@ Local Network Gateways - to represent the on-premises site that you want to conn
 On-Premise VPN devices: shared key and public IP address of your VPN gateway
 - Configuration scripts are available for some devices - [Download VPN device configuration scripts for S2S VPN connections](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-download-vpndevicescript) to find a downloadable script for your VPN device.
 
-- VPN client configured on a `$resource` to use configuration files, public key file .cer - pre-installation for avaliability
+
 
 #### Virtual Network Peering
 
@@ -730,7 +730,7 @@ Pulling a configuration for lots of nodes - also included in the Powershell sect
 	3. Compare
 	4. Update
 
-## Containerisation
+## Containerization
 
 Deploy a Docker Container using Azure Container Instances
 `Search -> Container Instances -> + Create`
@@ -957,7 +957,7 @@ Onboard virtual machines to Azure Monitor VM Insights
 	- `Network Watcher -> Topology`
 - Connection Troubleshoot -  suite of networking tools and capabilities to3 troubleshoots network performance and connectivity issues in Azure.
 	 - `Network Watcher -> Connection troubleshoot`
-- Verify IP flow -  IP Flow Verify quickly diagnose connectivity issues from or to the internet and from or to the on-premises environment.
+- Verify IP flow -  IP Flow Verify quickly di agnose connectivity issues from or to the internet and from or to the on-premises environment.
 	- `Network Watcher -> Ip flow verify`
 - Next Hop - determine if traffic is being directed to the intended destination by showing the next hop'
 	- `Network Watcher -> Next Hop`
@@ -1492,7 +1492,6 @@ echo http://$(az network public-ip show \
 ```
 
 
-
 ## Powershell
 
 Always update the Powershell - older versions are very unsafe, if possible remove old powershell. See [[Useful_Powershell]] and [[Basic_Powershell]] repectively. [[Microsoft-Visual-Studios]] requires `Connect-AzAccount`
@@ -1797,6 +1796,12 @@ Source IP affininty load balancer
 $lb = Get-AzLoadBalancer -Name MyLb -ResourceGroupName MyResourceGroup
 $lb.LoadBalancingRules[0].LoadDistribution = 'sourceIp'
 Set-AzLoadBalancer -LoadBalancer $lb
+```
+
+Move a Resource 
+```powershell
+$vm = Get-AzResource
+Move-AzResource 
 ```
 
 ## References

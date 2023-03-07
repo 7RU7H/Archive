@@ -9,3 +9,9 @@ If you are from a Ethical Hacking Background [IT Security Labs is Ex-Windows/Azu
 
 1. Read what they are asking of you not rabbit-hole in the complexity of the problem
 	1. Make a picture of the problem to simplify the large body of texts of the questions.
+1. Simplify scenarios to fundementals!
+	1. Is it in the same Region - Cross Region comes changes in legalities 	
+	1. Address range overlapping are always prohibited in all circumstances - [Plan for IP addresses](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/plan-for-ip-addressing)
+	1. Peering requires Bi-direction connection
+	1. Principle of Least Privilege
+1. Memorize `Microsoft.$ROLE/*/` roles

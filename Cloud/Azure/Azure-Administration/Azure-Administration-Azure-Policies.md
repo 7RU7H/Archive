@@ -9,14 +9,14 @@ Does not restrict actions | Manages User actions at different scopes - does rest
 
 - Policy Definitions - Defined in a .json to describe business rules to control access to resources
 - Policy Assignment - Scope of a policy can effect
-- Policy Parameters - Values passed into Polcy definition so Polices are more flexiable for re-use
-- Initiative Definitions - A collection of policy definitions, assignable to enforce compliance 
+- Policy Parameters - Values passed into Policy definition so Polices are more flexiable for re-use
+- Initiative Definitions - A collection of Policy definitions, assignable to enforce compliance 
 
 `Overview -> Policies - Compliance` To view compliance across a scope.
 
 Considerations:
 - Custom heirarchies and groups
-- policy inheritance - easier to manage uniques or security sensitive without overextending permissions
+- Policy inheritance - easier to manage uniques or security sensitive without overextending permissions
 - Compliance rules - help organization meet compliance level easier
 - Cost reporting by tag, across subscription, etc!
 - Deployable resources type deployment potentials
@@ -31,14 +31,14 @@ Considerations:
 
 You use JSON to create a policy definition. The policy definition contains elements for:
 
-- display name
-- description
-- mode
-- metadata
-- parameters
-- policy rule
-    - logical evaluation
-    - effect
+- Display name
+- Description
+- Mode
+- Metadata
+- Parameters
+- Policy rule
+    - Logical evaluation
+    - Effect
 
 Policy Rules consist of an `if` and `then` blocks to specify when policy is enforced to precisely define scenario(s) for a policy. Policy Rule has a Policy Effect: 
 - Deny

@@ -3,7 +3,7 @@
 #### Azure AD Roles
 
 Azure AD roles are used to manage Azure AD resources in a directory such as:
-- create units
+- Create units
 - edit units
 - assign adminstrative roles to others
 - reset user passwords

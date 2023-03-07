@@ -20,12 +20,24 @@
             }
           },
           {
+            "id": "a9121b9bb103e4e2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Policies.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "a0910d4dbd8d319b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Kubernetes-Services.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Roles-And-RBAC.md",
                 "mode": "source",
                 "source": false
               }
@@ -43,8 +55,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -86,7 +97,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 415.5
+    "width": 482.5
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -102,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cloud/Azure/Azure-Defined.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,8 +141,11 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "631e52562aa5be3b",
+  "active": "c80de84cb8c53175",
   "lastOpenFiles": [
+    "Cloud/Azure/Azure-Administration/AZ-104-Exam-Resources.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Policies.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Roles-And-RBAC.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Kubernetes-Services.md",
     "Cloud/Azure/Azure-Defined.md",
@@ -144,9 +158,7 @@
     "Cloud/Azure/Azure-Administration/Azure-Administration-Files.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Container-Registeries.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Blobs.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Roles-And-RBAC.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Resource-Manager.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Policies.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Monitor.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-DNS.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Disks.md",
@@ -157,7 +169,6 @@
     "Cloud/Azure/Azure-Administration/Azure-Administration-Application-Gateways.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-AD-Device-Management.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-AD-Administration.md",
-    "Cloud/Azure/Azure-Administration/AZ-104-Exam-Resources.md",
     "Services/Databases/MongoDB",
     "Images/robleesansoffensiveforensicstimestomping.png.png",
     "Images/robleesansoffensiveforensicstimestomping.png",
