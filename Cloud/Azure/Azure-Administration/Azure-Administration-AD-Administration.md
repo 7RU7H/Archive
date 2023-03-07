@@ -297,5 +297,7 @@ foreach ($email in $invitations)
 
 ## References
 
+[Microsoft Technical Documentation](https://learn.microsoft.com/en-us/docs/)
+[Microsoft Learn](https://learn.microsoft.com/en-us/)
 [FreeCodeCamp.org - AZ 104 Course](https://www.youtube.com/watch?v=10PbGbTUSAg&t=3458s)
 [Azure Active Directory pricing](https://azure.microsoft.com/pricing/details/active-directory) 

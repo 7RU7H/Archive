@@ -396,3 +396,5 @@ Onboard virtual machines to Azure Monitor VM Insights
 [Azure Monitor Logs](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/data-platform-logs)
 [Azure Monitor Insights](https://learn.microsoft.com/en-us/azure/azure-monitor/insights/insights-overview)
 [Supported regions for linked Log Analytics workspace | Microsoft Learn](https://learn.microsoft.com/en-us/azure/automation/how-to/region-mappings)
+[Microsoft Technical Documentation](https://learn.microsoft.com/en-us/docs/)
+[Microsoft Learn](https://learn.microsoft.com/en-us/)

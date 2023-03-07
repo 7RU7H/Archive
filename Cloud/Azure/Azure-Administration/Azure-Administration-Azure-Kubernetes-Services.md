@@ -115,6 +115,21 @@ Add Node pools
 Scale Node pool deployed 
 `Search -> Kubernetes Services -> $KubernetesService -> Node Pools -> $NodePool -> Scale Node pool` - configure and apply.
 
+AKS creation
+```bash
+# Requires a Resource Group!
+az group create \ 
+--name $rGroup
+--location $location
+# Create AKS cluster
+az aks create 
+--resource-group $rGroup
+--name $aksClusterName
+--node-count 3 
+--enable-addons monitoring 
+--generate-ssh-keys
+```
+
 AKS deployment
 ```bash
 # Access AZK cluster, then show connectivity
@@ -156,3 +171,5 @@ kubectl delete deplyment ngnix-deployment
 [Kubernetes](https://kubernetes.io/) 
 [Azure Kubernetes Service documentation](https://learn.microsoft.com/en-us/azure/aks/)
 [Azure Kubernetes Service](https://learn.microsoft.com/en-us/azure/aks/intro-kubernetes)
+[Microsoft Technical Documentation](https://learn.microsoft.com/en-us/docs/)
+[Microsoft Learn](https://learn.microsoft.com/en-us/)

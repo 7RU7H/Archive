@@ -182,3 +182,5 @@ Assign can be done via Resource Group of Admin Scoping in fields
 [Custom roles](https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles)
 [Azure AD Administrator roles](https://learn.microsoft.com/en-us/azure/active-directory/roles/permissions-reference)
 [List Azure role definitions - Azure RBAC | Microsoft Learn](https://learn.microsoft.com/en-us/azure/role-based-access-control/role-definitions-list)
+[Microsoft Technical Documentation](https://learn.microsoft.com/en-us/docs/)
+[Microsoft Learn](https://learn.microsoft.com/en-us/)

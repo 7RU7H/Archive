@@ -8,30 +8,43 @@
         "type": "tabs",
         "children": [
           {
-            "id": "249c68025fb2f425",
+            "id": "c80de84cb8c53175",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Virtual-WAN.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "1a76ba9d76cecc69",
+            "id": "a0910d4dbd8d319b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Virtual-Networking.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Kubernetes-Services.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "631e52562aa5be3b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cloud/Azure/Azure-Defined.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -60,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "gospider",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -73,7 +86,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 377.5
+    "width": 415.5
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -89,7 +102,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Virtual-WAN.md",
+                "file": "Cloud/Azure/Azure-Defined.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,34 +130,34 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "249c68025fb2f425",
+  "active": "631e52562aa5be3b",
   "lastOpenFiles": [
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Virtual-Networking.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Kubernetes-Services.md",
+    "Cloud/Azure/Azure-Defined.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Virtual-WAN.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Virtual-Networking.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Virtual-Machines.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Subscriptions.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Storage-Accounts.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Files.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Scale-Sets.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Files.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Container-Registeries.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
-    "Linux/Linux-Commands/Linux-Users-And-Group-Commands.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Blobs.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Resource-Manager.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Roles-And-RBAC.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Resource-Manager.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Policies.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Monitor.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Kubernetes-Services.md",
-    "Hacker-Distros/Kali/Kali-Configuration/Configuring-Users-And-Groups-With-Kali.md",
-    "Linux/Linux-Concepts/Linux-Users-And-Groups.md",
-    "README.md",
-    "Services/Databases/Dynamodb/Amazon-Dynamodb.md",
-    "Cloud/Cloud-Hacking/AWS-Hacking.md",
-    "Cloud/AWS/AWS-Defined.md",
-    "Services/Databases/MongoDB/MongoDB.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-DNS.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Disks.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Container-Instances.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Backups.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-ARM-Templates.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Application-Services.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Application-Gateways.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-AD-Device-Management.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-AD-Administration.md",
+    "Cloud/Azure/Azure-Administration/AZ-104-Exam-Resources.md",
     "Services/Databases/MongoDB",
     "Images/robleesansoffensiveforensicstimestomping.png.png",
     "Images/robleesansoffensiveforensicstimestomping.png",

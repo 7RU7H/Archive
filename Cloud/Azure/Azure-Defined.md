@@ -384,3 +384,9 @@ Azure Sentinel sit on top of Log Analytics Workspaces as Microsoft SIEM and Secu
 ## References
 
 [AZ 900 Johnthebrit's 2022 study cram for Azure Fundementals video](https://www.youtube.com/watch?v=tQp1YkB2Tgs&t=8348s)
+[Microsoft Technical Documentation](https://learn.microsoft.com/en-us/docs/)
+[Microsoft Learn](https://learn.microsoft.com/en-us/)
+[Microsoft Privacy Statement](https://privacy.microsoft.com/en-gb/privacystatement)
+[Online Service terms](https://azure.microsoft.com/en-gb/support/legal/)
+[Online Subscription Agreement](https://azure.microsoft.com/en-gb/support/legal/subscription-agreement/)
+[Data Protection Addendum](https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA)

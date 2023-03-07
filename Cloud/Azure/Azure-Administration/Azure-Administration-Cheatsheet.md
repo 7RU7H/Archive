@@ -5,6 +5,12 @@
 - Cloud Shell on the `>_` Icon; Temporary Host - per-session, per-user basis
 	- Has Requirements to use! - `Show Advanced Settings -> provide required fields -> Create Storage`
 
+[Interactive map Resource Map](https://infrastructuremap.microsoft.com/explore) - Use 2D for fast load times
+[Azure Cross Replication Regions](https://learn.microsoft.com/en-us/azure/reliability/cross-region-replication-azure)
+[Azure subscription limits and quotas - Azure Resource Manager | Microsoft Learn](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/azure-subscription-service-limits)
+[Pricing Calculator](https://azure.microsoft.com/en-gb/pricing/calculator/)
+[Total Cost of Ownship Calculator](https://azure.microsoft.com/en-gb/pricing/tco/calculator/)
+
 ## Resources
 
 Azure Resource Manager provides a consistent management layer to perform tasks through Azure PowerShell, Azure CLI, Azure portal, REST API, and client SDKs.
@@ -31,7 +37,7 @@ Administrating a Resource Group
 #### Moving Resources
 Moving Resources - there are edge cases - [see Documentation for more]([Move resources to a new subscription or resource group - Azure Resource Manager | Microsoft Learn](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/move-resource-group-and-subscription)):
 -   If you're using Azure Stack Hub, you can't move resources between groups.
--   [App Services move guidance](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/move-limitations/app-service-move-limitations)
+-   [App Services move guidance](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/move-limitations/app-service-move-limitations) -  Web app to Web app cross region is not allowed!  
 -   [Azure DevOps Services move guidance](https://learn.microsoft.com/en-us/azure/devops/organizations/billing/change-azure-subscription?toc=/azure/azure-resource-manager/toc.json)
 -   [Classic deployment model move guidance](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/move-limitations/classic-model-move-limitations) - Classic Compute, Classic Storage, Classic Virtual Networks, and Cloud Services
 -   [Networking move guidance](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/move-limitations/networking-move-limitations)
@@ -319,7 +325,15 @@ Customize Azure AD organization branding
 
 #### Create a Users, Groups and Manage Them  
 
-Remember that you filter be tenant!
+- Remember that you filter by tenant!
+- Teiring from Global Admins to lesser Admins in Azure, Azure AD, AD and Host machine
+	- Ownership and Role - [Azure AD builtin Roles](https://learn.microsoft.com/en-us/azure/active-directory/roles/permissions-reference)
+		- What can be owned? - think CRUD
+			- Users, Groups, Devices, Resources, Authentication, Policy, Services, Configuration
+				- External or Interal relavative to X
+				- Context - Dynamic Devices or Guest User are temporary therefore think PoLP
+	- The assign machine to user th default Admin is that Use - most likely requires change
+- Azure AD Registered != Azure AD Joined 
 
 Azure AD 
 `Overview -> Users -> Create`
@@ -339,7 +353,7 @@ User Management
 Create/Invite
 `Search Azure AD -> Azure AD -> Users -> New Users -> New user`
 Assign Roles
-``Search Azure AD -> Users -> Assigned Roles`
+`Search Azure AD -> Users -> Assigned Roles`
 Enable Account
 `Users -> $username -> Settings -> [Tick/Untick] Account enabled`
 
@@ -390,11 +404,16 @@ Customization - Customize Helpdesk link
 On-Premise Integration - As stated
 Administrator Policy - Admin password reset policy.
 
+
+
 ## Azure Virtual Networking
 
 Address spaces - Review IP Schema Implementation
 By CIDR 10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16
 Routable address over the internet: 215.11.0.0 to 215.11.255.255
+
+- Important:
+	- Cross region connection use a gateway, NIC in Region A != connect to Region B
 
 View a Network Typology by Subscription, Resource Group and VNet
 `Search -> Network Watcher -> Topology`
@@ -416,7 +435,8 @@ Consideration:
 - Service requirements
 - Avaliability requirements - static IPs for DNS and DCs, TLS/SSL certs linked to an IP
 - Network virtual appliances
-- Service Endpoints
+- Service Endpoints - Secure Endpoints from externals
+	- VMs in a VNet need Service endpoints enabled to acces Storage Accoutsw 
 - Network Security Groups
 - Private links
 - VMs do not manage there IPs
@@ -456,10 +476,16 @@ Install-WindowsFeature -Name "RSAT-RemoteAccess-Powershell"
 
 Load Balancers Workflows by Type and important information:
 `Search -> Load Balancers` and `+ Create` a type:
+- Basic 
+	- Requires Resources in the same Avaliablity/Scale set
+- Standard 
+	- Requires resource in the same Vnet
 - Application Gateway - Region layer 7 load balancer - Application Gateway Configuration
 	- Routing Methods
 		- Path-based routing: sends requests with different URL paths to different pools of back-end servers.
-		- Multi-site routing:  configures more than one web application on the same application gateway instance.
+			- `/` = Path
+		- Multi-site routing: configures more than one web application on the same application gateway instance
+			- Multi-site listeners are if the URL is different
 	- Optional Firewall checks (Recommended)
 		- OWASP defines a set of generic rules for detecting attacks. These rules are referred to as the Core Rule Set (CRS)
 	- Traffic Redirection
@@ -477,7 +503,7 @@ Manage:
 - Load-balancing rules (can be used in combination with NAT rules) - requires a frontend, backend, and health probe; define a rule:
 	- IPv4 or 6
 	- Frontend IP address
-	- Backend pool or Backend port
+	- Backehttps://www.youtube.com/watch?v=5MbdRjkUUAUnd pool or Backend port
 	- Health probe
 	- Session persistence: None (default), Client IP, Client IP and Protocol
 
@@ -508,7 +534,7 @@ Add RDP to a VM Allowing and Disallowing the connection with NSG
 - `Inbound port rules Tab -> add inbound port rule -> Configure`  
 - `Outbound port rules Tab -> add outbound port rule -> Configure`
 
-####  Azure DNS
+#### Azure DNS
 
 Create DNS zones
 `Search -> DNS zones`
@@ -551,6 +577,8 @@ Local Network Gateways - to represent the on-premises site that you want to conn
 On-Premise VPN devices: shared key and public IP address of your VPN gateway
 - Configuration scripts are available for some devices - [Download VPN device configuration scripts for S2S VPN connections](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-download-vpndevicescript) to find a downloadable script for your VPN device.
 
+- VPN client configured on a `$resource` to use configuration files, public key file .cer - pre-installation for avaliability
+
 #### Virtual Network Peering
 
 VNet Peering - requires account with `(Classic) Network Contributor` role
@@ -575,7 +603,7 @@ Create and Manage VM Scale Sets
 - Advanced tab to enable beyond 100 instances; spreading for optimal spreading of allocation Implement Virtual Networking
 `Search -> Virtual Network -> $Vnet (With Subnet, VMs, DNS, NSGs, etc configured)` in the `Private DNS Zone -> Virtual Network Link -> + Add - provide a Link name, Vnet` 
  - Configure Scaling in the `Scaling` tab; 
-	 - Policy - min/max number of instances; manula or autoscaling 
+	 - Policy - min/max number of instances; manual or autoscaling 
 	 - Scale in - CPU threshold, decrease of instances
 	 - Scale out - CPU threshold, duration, increase of instances
 	 - Scale-In policy - default, newest, oldest VMs
@@ -621,6 +649,9 @@ Export Template, custom template for mass use
 `VMs -> $CustomVM -> Export Template`
 
 ## Azure App Services
+
+- Some Apps require multiple Subnets per service, per context!!:
+	- Web = DB, Front End, Processing - one for each layer!
 
 Create a Azure App Service
 `Search -> App Services + Create`
@@ -709,6 +740,9 @@ Deploy a Docker Container using Azure Container Instances
 
 ## AKS
 
+- Important
+	- Resource Group require pre-AKS-Workflow
+
 Check if registered
 `Search -> Subscriptions -> $Subscription -> Resource Providers `
 
@@ -731,6 +765,8 @@ Scale Node pool deployed
 Check the bash section  for CLI deployment and scaling.
 
 ## Azure Backup
+
+- Backups only occur within region! - Region(RSV, Application/Resource)
 
 Backup Center
 `Search -> Backup Center`:
@@ -1119,6 +1155,21 @@ az disk create --resource-group $RGNAME --name $DISKNAME --size-gb 32 --sku 'Sta
 az disk show --resource-group $RGNAME --name $DISKNAME # --query for specific
 # Update 
 az disk update --resource-group $RGNAME --name $DISKNAME # --Whatever-changes-by-flag!
+```
+
+AKS creation
+```bash
+# Requires a Resource Group!
+az group create \ 
+--name $rGroup
+--location $location
+# Create AKS cluster
+az aks create 
+--resource-group $rGroup
+--name $aksClusterName
+--node-count 3 
+--enable-addons monitoring 
+--generate-ssh-keys
 ```
 
 AKS deployment
@@ -1750,5 +1801,6 @@ Set-AzLoadBalancer -LoadBalancer $lb
 
 ## References
 
-[Offical Microsoft Material for Az104](https://learn.microsoft.com/)
 [John Savill's Microsoft Azure Master Class Part 6 - Networking](https://www.youtube.com/watch?v=K8ePZdLfU7M&t=3511s)
+[Microsoft Technical Documentation](https://learn.microsoft.com/en-us/docs/)
+[Microsoft Learn](https://learn.microsoft.com/en-us/)

@@ -502,3 +502,5 @@ az storage blob upload-batch --source sas --destination $containerName --acount-
 [GitHub - Azure/azure-storage-azcopy: The new Azure Storage data transfer utility - AzCopy v10](https://github.com/Azure/azure-storage-azcopy)
 [Azure Storage](https://learn.microsoft.com/en-us/azure/storage/tables/table-storage-overview)
 [Create a AzStorageTable storage](https://learn.microsoft.com/en-us/azure/storage/tables/table-storage-how-to-use-powershell)
+[Microsoft Technical Documentation](https://learn.microsoft.com/en-us/docs/)
+[Microsoft Learn](https://learn.microsoft.com/en-us/)

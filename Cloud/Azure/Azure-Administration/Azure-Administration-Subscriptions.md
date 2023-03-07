@@ -37,4 +37,6 @@ Considerations:
 [Pricing Calculator](https://azure.microsoft.com/pricing/calculator/)
 [Azure regions](https://azure.microsoft.com/global-infrastructure/geographies/#geographies) 
 [Azure products](https://azure.microsoft.com/global-infrastructure/services/) 
-[paired regions](https://learn.microsoft.com/en-us/azure/best-practices-availability-paired-regions#azure-cross-region-replication-pairings-for-all-geographies) 
+[Paired Regions](https://learn.microsoft.com/en-us/azure/best-practices-availability-paired-regions#azure-cross-region-replication-pairings-for-all-geographies) 
+[Microsoft Technical Documentation](https://learn.microsoft.com/en-us/docs/)
+[Microsoft Learn](https://learn.microsoft.com/en-us/)

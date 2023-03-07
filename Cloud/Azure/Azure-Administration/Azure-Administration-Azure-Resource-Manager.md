@@ -198,3 +198,5 @@ Moving Resources - there are edge cases - [see Documentation for more]([Move res
 [FreeCodeCamp.org - AZ 104 Course](https://www.youtube.com/watch?v=10PbGbTUSAg&t=3458s)
 [Move resources to a new subscription or resource group - Azure Resource Manager | Microsoft Learn](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/move-resource-group-and-subscription)
 [Microsoft Learn - Move operation suppport for resource page](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/move-support-resources)
+[Microsoft Technical Documentation](https://learn.microsoft.com/en-us/docs/)
+[Microsoft Learn](https://learn.microsoft.com/en-us/)

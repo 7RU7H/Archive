@@ -270,3 +270,5 @@ You can use Azure API via CLI,  PowerShell or SDK to fetch outputs.
 [Roll back feature](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/rollback-on-error)
 [Convert portal template to template spec - Azure Resource Manager | Microsoft Learn](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/template-spec-convert?WT.mc_id=Portal-HubsExtension)
 [FreeCodeCamp.org - AZ 104 Course](https://www.youtube.com/watch?v=10PbGbTUSAg&t=3458s)
+[Microsoft Technical Documentation](https://learn.microsoft.com/en-us/docs/)
+[Microsoft Learn](https://learn.microsoft.com/en-us/)

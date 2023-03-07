@@ -249,3 +249,5 @@ az webapp up --name $APPNAME --resource-group $APPRG --plan $APPPLAN --sku $APPS
 [Internal Load Balancing](https://azure.microsoft.com/en-gb/blog/internal-load-balancing/)
 [Blue/Green deploy](https://en.wikipedia.org/wiki/Blue-green_deployment)
 [FreeCodeCamp.org - AZ 104 Course](https://www.youtube.com/watch?v=10PbGbTUSAg&t=3458s)
+[Microsoft Technical Documentation](https://learn.microsoft.com/en-us/docs/)
+[Microsoft Learn](https://learn.microsoft.com/en-us/)

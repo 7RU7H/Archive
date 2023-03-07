@@ -90,4 +90,6 @@ Inheritance is made in the:
 [Azure Definition File](https://learn.microsoft.com/en-us/azure/governance/policy/concepts/definition-structure) 
 [Azure management groups](https://learn.microsoft.com/en-us/azure/governance/management-groups/overview) 
 [list of built-in definitions](https://learn.microsoft.com/en-us/azure/governance/policy/samples/built-in-policies)
-[Azure Policy initiative definition structure](https://learn.microsoft.com/en-us/azure/governance/policy/concepts/initiative-definition-structure).
+[Azure Policy initiative definition structure](https://learn.microsoft.com/en-us/azure/governance/policy/concepts/initiative-definition-structure)
+[Microsoft Technical Documentation](https://learn.microsoft.com/en-us/docs/)
+[Microsoft Learn](https://learn.microsoft.com/en-us/)

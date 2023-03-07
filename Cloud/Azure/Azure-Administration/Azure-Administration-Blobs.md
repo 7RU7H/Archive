@@ -67,3 +67,8 @@ Move Data to, from, or within Azure Storage
 `Storage Accounts -> $storage_account -> Diagnose and solve problems`
 Monitor Storage Accounts
 `Storage Accounts -> $storage_account -> Insights`
+
+## References
+
+[Microsoft Technical Documentation](https://learn.microsoft.com/en-us/docs/)
+[Microsoft Learn](https://learn.microsoft.com/en-us/)

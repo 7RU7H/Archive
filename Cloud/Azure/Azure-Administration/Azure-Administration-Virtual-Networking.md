@@ -1033,3 +1033,5 @@ Create and manage public IPs
 [Azure Virtual Network peering documentation](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-peering-overview).
 [ExpressRoute Pricing options](https://azure.microsoft.com/pricing/details/expressroute/)
 [Azure virtual network service endpoints | Microsoft Learn](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-service-endpoints-overview)
+[Microsoft Technical Documentation](https://learn.microsoft.com/en-us/docs/)
+[Microsoft Learn](https://learn.microsoft.com/en-us/)
