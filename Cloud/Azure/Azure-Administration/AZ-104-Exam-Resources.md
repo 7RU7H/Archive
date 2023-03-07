@@ -1,3 +1,35 @@
+#  AZ 104 Exam resources
+
+## General Requirements - Without Cloud
+
+If you already have AWS certs, I would not know, but probably Active Directory part is the important 
+
+- Good Network Fundementals 
+	- At Network+ level understanding
+	- Sec+ level understanding will also help
+- Active Directory understanding - Azure AD is AD, but you will still have On-premise AD
+	- I got this through THM, HTB, OSPG and OScerts
+- Good SysAdmin
+	-  Organised - TAGS TAGS TAGS!
+	- Linux and Windows - both are important
+	- Roles and Permissions
+	- Maintaince
+	- Service Avaliability
+	- Powershell/Bash usage is used in Azure 
+- Can read Powershell well 
+
+Will be required 
+- Containerisation - K8 and Docker
+- The Exam changes more rapidly - older material gets older quick
+- Kusto Log quieries - double checking for this.
+
+## Absolute Musts
+
+Make a free Azure Account - must!
+
+Read and [AZ-104 Microsoft Learn](https://learn.microsoft.com/en-us/certifications/exams/az-104/) - must!
+
+
 
 [John Savile](https://www.youtube.com/@NTFAQGuy) is great resource regarding anything Azure. [Master Class](https://www.youtube.com/playlist?list=PLlVtbbG169nGccbp8VSpAozu3w9xSQJoY)
 

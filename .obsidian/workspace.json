@@ -4,55 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "a685ea5fb9668c88",
+        "id": "75123bd670f159b5",
         "type": "tabs",
         "children": [
           {
-            "id": "c80de84cb8c53175",
+            "id": "18d04a9f082ea889",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a9121b9bb103e4e2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Policies.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a0910d4dbd8d319b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Roles-And-RBAC.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "631e52562aa5be3b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cloud/Azure/Azure-Defined.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -113,7 +73,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -141,14 +100,16 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "c80de84cb8c53175",
+  "active": "ed8f63df71621be6",
   "lastOpenFiles": [
-    "Cloud/Azure/Azure-Administration/AZ-104-Exam-Resources.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Policies.md",
+    "Cloud/Azure/Azure-Defined.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Roles-And-RBAC.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Policies.md",
+    "Coding-Scripting-Programming/Languages/Python/Python-Tooling-Libraries.md",
+    "Cloud/Azure/Azure-Administration/AZ-104-Exam-Resources.md",
+    "Coding-Scripting-Programming/Languages/Python/Useful_Python.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Kubernetes-Services.md",
-    "Cloud/Azure/Azure-Defined.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Virtual-WAN.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Virtual-Networking.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Virtual-Machines.md",
@@ -167,8 +128,6 @@
     "Cloud/Azure/Azure-Administration/Azure-Administration-ARM-Templates.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Application-Services.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Application-Gateways.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-AD-Device-Management.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-AD-Administration.md",
     "Services/Databases/MongoDB",
     "Images/robleesansoffensiveforensicstimestomping.png.png",
     "Images/robleesansoffensiveforensicstimestomping.png",
