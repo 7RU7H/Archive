@@ -12,6 +12,16 @@
 [Total Cost of Ownship Calculator](https://azure.microsoft.com/en-gb/pricing/tco/calculator/)
 [Understand Subscription and Service limits](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/azure-subscription-service-limits)
 
+Powershell Cmdlet Logic
+```powershell
+Get-Az # Retrieve information
+New-Az # Create Azure X
+Update-Az # Update Azure X
+Add-Az # Add X to Existing Azure Y
+Move-Az # Move Az X to Y
+Export-Az # Capture to a template
+```
+
 
 1. Subscriptions and Azure AD Tenant
 1. Management Groups and Subscriptions - Context
@@ -173,6 +183,9 @@ Use Azure Blob Storage lifecycle management policy rules to:
 Create a Stored Access Policy for a Container
 `Storage Accounts -> $storage_account -> Container -> Access Policy`
 
+List or Add rules for Lifecycle Policy management 
+`Search Storage Account -> $storageAccount -> Data Management -> Lifecycle Management -> List View | Add rules`
+
 AZcopy is installed by default on the CloudShell
 ```powershell
 azcopy copy [source] [destination] [flags]
@@ -183,6 +196,7 @@ azcopy login # create URI to login
 azcopy copy [source] [destination] --include
 azcopy copy [source] [destination] --exclude 
 ```
+Moving or storing is done region based. 
 
 URL for Azure remote container: `Home -> Storage Accounts -> $ContainerName -> Properties` - must be globally unique!
 
@@ -227,7 +241,7 @@ Secure Storage endpoints
 - Enabled from selected virtual networks and IP address
 - Disabled
 
-## Management Groups - Azure Policies
+## Azure Policies
 
 Governance is about enforcement of rules and ensuring proper functioning to standards. 
 - Policies  - WHAT 
@@ -413,7 +427,6 @@ On-Premise Integration - As stated
 Administrator Policy - Admin password reset policy.
 
 
-
 ## Azure Virtual Networking
 
 Address spaces - Review IP Schema Implementation
@@ -593,8 +606,6 @@ Local Network Gateways - to represent the on-premises site that you want to conn
 On-Premise VPN devices: shared key and public IP address of your VPN gateway
 - Configuration scripts are available for some devices - [Download VPN device configuration scripts for S2S VPN connections](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-download-vpndevicescript) to find a downloadable script for your VPN device.
 
-
-
 #### Virtual Network Peering
 
 VNet Peering - requires account with `(Classic) Network Contributor` role
@@ -607,6 +618,29 @@ VNet Peering - requires account with `(Classic) Network Contributor` role
 	- Hub and spoke network - Central hub for VPN gateway, spoke VNets
 	- User-Defined Route (UDR): either a hop to/from VM IP address or VPN Gateway
 	- Service chaining: define UDRs from Vnet to a network virtual appliance or VPN
+
+#### Azure Firewalls
+
+Deploy Azure Firewall requires: Resource Group, VNet,
+- **AzureFirewallSubnet** - the firewall is in this subnet.
+- **Workload-SN** - the workload server is in this subnet. This subnet's network traffic goes through the firewall.
+`Search Firewall -> Create -> Configure $Sub, $rGroup, etc..`
+- Create default route 
+- Configure rules
+
+If a match is found it terminate processing.
+
+[Azure Firewall Rules](https://learn.microsoft.com/en-us/azure/firewall/rule-processing) are processed based on:
+- Firewall Policy 
+	- Rule Collection Group Priority 
+	- Rule Collection priority
+- Classic Rules - 100 is Highest 65,000 Lowest priority. at can be accessed from a subnet
+
+Type Priority - NAT Rule before Network Rule before Application Rule.
+- **NAT** - Azure Firewall destination network address translation (DNAT) rules to translate and filter inbound traffic to your subnets
+- **Network** rule - Any non-HTTP/S traffic that's allowed to flow through your firewall must have a network rule
+- **Application** rules define fully qualified domain names (FQDNs) that can be accessed from a subnet
+
 
 ## VM Scale Sets
 
@@ -1087,7 +1121,7 @@ az vm update
 az vm start 
 az vm stop 
 az vm restart
-az vm delete
+az vm deletegroup
 # List active VMs
 az vm list 
 az vm list --output table
@@ -1428,6 +1462,13 @@ Obtain connection string to storage account
 ```powershell
 az storage account show-connection-string --name $storageName
 # Copy the AccountKey=$base64string ; remember to include the ==
+```
+
+```bash
+az storage account management-policy create \
+    --account-name $storageAccount \
+    --policy @policy.json \
+    --resource-group $rGroup
 ```
 
 Create a container
@@ -1824,6 +1865,37 @@ $vm = Get-AzResource
 Move-AzResource 
 ```
 
+[Azure DNS](https://learn.microsoft.com/en-us/powershell/module/az.dns/new-azdnsrecordset?view=azps-9.4.0)
+```powershell
+# Config
+# New DNS Root record
+New-AzDnsRecordConfig
+# 
+Add-AzDnsRecordConfig
+
+# Set
+Get-AzDnsRecordSet
+New-AzDnsRecordSet
+Remove-AzDnsRecordSet
+Set-AzDnsRecordSet
+
+# Make Application is accessible for Azure DNS
+# "A" is IPv4 address
+# -name is the Record name: @ Represent the Root domain 
+New-AzDnsRecordConfig -Name "@" -RecordType "A" -ZoneName "$newDomainNameHere" -ResourceGroupName $rGroup -DnsRecords (New-AzDnsRecordConfig -IPv4Address "10.10.10.10")
+# You need TXT record to verify custom domain
+New-AzDnsRecordSet -ZoneName "$newDomainNameHere" -ResourceGroupName $rGroup -Name "@" -RecordType "TXT" -TTL 600 -DnsRecord(New-AzDnsRecordConfig -Value "application.azure.websites.net")
+
+# When IP address changes for custom DNS you must update the "A" record
+$RecordSet = Get-AzDnsRecordSet -ResourceGroupName MyResourceGroup -ZoneName myzone.com -Name www -RecordType A
+Add-AzDnsRecordConfig -RecordSet $RecordSet -Ipv4Address 172.16.0.0
+Add-AzDnsRecordConfig -RecordSet $RecordSet -Ipv4Address 172.31.255.255
+Set-AzDnsRecordSet -RecordSet $RecordSet
+# These cmdlets can also be piped:
+Get-AzDnsRecordSet -ResourceGroupName MyResourceGroup -ZoneName myzone.com -Name www -RecordType A | Add-AzDnsRecordConfig -Ipv4Address 172.16.0.0 | Add-AzDnsRecordConfig -Ipv4Address 172.31.255.255 | Set-AzDnsRecordSet
+```
+
+
 ## References
 
 [John Savill's Microsoft Azure Master Class Part 6 - Networking](https://www.youtube.com/watch?v=K8ePZdLfU7M&t=3511s)
@@ -1835,3 +1907,4 @@ Move-AzResource
 [Azure subscription limits and quotas - Azure Resource Manager | Microsoft Learn](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/azure-subscription-service-limits)
 [Pricing Calculator](https://azure.microsoft.com/en-gb/pricing/calculator/)
 [Total Cost of Ownship Calculator](https://azure.microsoft.com/en-gb/pricing/tco/calculator/)
+[Set-AzDnsRecordSet](https://learn.microsoft.com/en-us/powershell/module/az.dns/set-azdnsrecordset?view=azps-9.4.0)

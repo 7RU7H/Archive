@@ -100,10 +100,7 @@ Locks are implemented at the control plain only. For example locks the storage a
 
 Roles are limited to 4000, RBAC at the attribute level can help.
 
-
 Initatives - Policies implemented over a Scope 
-
-
 
 
 ## References

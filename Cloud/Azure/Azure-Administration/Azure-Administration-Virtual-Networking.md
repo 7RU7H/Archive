@@ -811,9 +811,9 @@ Azure Firewall Rules are configured for:
 	- **Destination Ports**: Provide the TCP or UDP ports that the rule listens to on the external IP address of the firewall.
 	- **Translated Address**: Specify the IP address of the service (virtual machine, internal load balancer, and so on) that privately hosts or presents the service.
 	- **Translated Port**: Identify the port that the inbound traffic is routed to by Azure Firewall.
-- **Network** rule  - Any non-HTTP/S traffic that's allowed to flow through your firewall must have a network rule
+- **Network** rule - Any non-HTTP/S traffic that's allowed to flow through your firewall must have a network rule
 	- **Name**: Provide a label for the rule.
-	- **Protocol**: Choose the protocol for the rule, including TCP, UDP, ICMP (ping and traceroute), or Any.
+	- **Protocol**: Choose the protocohttps://learn.microsoft.com/en-us/powershell/module/az.dns/new-azdnsrecordset?view=azps-9.4.0l for the rule, including TCP, UDP, ICMP (ping and traceroute), or Any.
 	- **Source Address**: Identify the address or CIDR block of the source.
 	- **Destination Addresses**: Specify the addresses or CIDR blocks of the destination(s).
 	- **Destination Ports**: Provide the destination port of the traffic.
@@ -822,10 +822,26 @@ Azure Firewall Rules are configured for:
 	- **Source Addresses**: Identify the IP address of the source.
 	- **Protocol:Port**: Specify `HTTP` or `HTTPS` and the port that the web server is listening on.
 	- **Target FQDNs**: Provide the domain name of the service, such as `www.contoso.com`. Wildcards (\*) can be used. An FQDN tag represents a group of FQDNs associated with well known Microsoft services. Example FQDN tags include `Windows Update`, `App Service Environment`, and `Azure Backup`
-	
-Azure Firewall Rules are processed by:
-- Network rules
-- Application rules
+
+Deploy Azure Firewall requires: Resource Group, VNet,
+- **AzureFirewallSubnet** - the firewall is in this subnet.
+- **Workload-SN** - the workload server is in this subnet. This subnet's network traffic goes through the firewall.
+`Search Firewall -> Create -> Configure $Sub, $rGroup, etc..`
+- Create default route 
+- Configure rules
+
+[Azure Firewall Rules](https://learn.microsoft.com/en-us/azure/firewall/rule-processing) are processed based on:
+- Firewall Policy 
+	- Rule Collection Group Priority 
+	- Rule Collection priority
+- Classic Rules - 100 is Highest 65,000 Lowest priority. at can be accessed from a subnet
+
+If a match is found it terminate processing.
+
+Type Priority - NAT Rule before Network Rule before Application Rule.
+- **NAT** - Azure Firewall destination network address translation (DNAT) rules to translate and filter inbound traffic to your subnets
+- **Network** rule - Any non-HTTP/S traffic that's allowed to flow through your firewall must have a network rule
+- **Application** rules define fully qualified domain names (FQDNs) that can be accessed from a subnet
 
 #### Azure Virtual Network Peering
 
@@ -1035,3 +1051,4 @@ Create and manage public IPs
 [Azure virtual network service endpoints | Microsoft Learn](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-service-endpoints-overview)
 [Microsoft Technical Documentation](https://learn.microsoft.com/en-us/docs/)
 [Microsoft Learn](https://learn.microsoft.com/en-us/)
+[Azure Firewall Rules](https://learn.microsoft.com/en-us/azure/firewall/rule-processing)

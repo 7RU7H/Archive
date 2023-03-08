@@ -8,48 +8,48 @@
         "type": "tabs",
         "children": [
           {
-            "id": "ee6e06b078b61d09",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Exploitation/CVEs/PrintNightmare.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "84b899a1fcc30d83",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tools/Windows/Event-Viewer.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "31db6e38ec4ff207",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Windows/Windows-Concepts/Windows-Events-To-Monitor.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "e9c5ad832332d621",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "673f1c5af7805d30",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Virtual-Networking.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "dbfd01537d4b90ef",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Storage-Accounts.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "24f2b21fdc58af69",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Blobs.md",
                 "mode": "source",
                 "source": false
               }
@@ -78,9 +78,20 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "6c5fb619098166c4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cloud/Azure/Azure-Administration/AZ-104-Exam-Resources.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -138,7 +149,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Policies.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -166,16 +177,22 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "0c6eaee1046a84d6",
+  "active": "e9c5ad832332d621",
   "lastOpenFiles": [
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Virtual-Networking.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Roles-And-RBAC.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-DNS.md",
+    "Cloud/Azure/Azure-Administration/AZ-104-Exam-Resources.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Storage-Accounts.md",
+    "Networks/Network-Theory/Network-Protocols/DNS-Defined.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Container-Instances.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Blobs.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Policies.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Roles-And-RBAC.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration.md",
     "Linux/Linux-Commands/Linux-Module-Commands.md",
     "Networks/Network-Theory/OSI-Model.md",
     "Hardware/CPU-Architecture.md",
-    "Cloud/Azure/Azure-Administration/AZ-104-Exam-Resources.md",
     "Windows/Windows-Concepts/Windows-Events-To-Monitor.md",
     "Tools/Windows/Event-Viewer.md",
     "Exploitation/CVEs/PrintNightmare.md",
@@ -188,12 +205,6 @@
     "Antivirus/Antivirus-Evasion/EDR-Bypassing.md",
     "Antivirus/Antivirus-Evasion/Inline-Hooking.md",
     "Antivirus/Antivirus-Evasion/Metasploit-AV-Evasion.md",
-    "Antivirus/Antivirus-Evasion/Signature-Evasion.md",
-    "Antivirus/Antivirus-Evasion/Windows-Runtime-Detection-Evasion.md",
-    "Antivirus/Antivirus-Evasion/Antivirus-Evasion.md",
-    "Cloud/Azure/Azure-Defined.md",
-    "Coding-Scripting-Programming/Languages/Python/Python-Tooling-Libraries.md",
-    "Coding-Scripting-Programming/Languages/Python/Useful_Python.md",
     "Services/Databases/MongoDB",
     "Images/robleesansoffensiveforensicstimestomping.png.png",
     "Images/robleesansoffensiveforensicstimestomping.png",

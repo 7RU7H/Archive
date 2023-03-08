@@ -27,6 +27,39 @@ Blobfuse | Virtual file system driver - access through Linux file system
 Azure Data Box | Rugged device to physically transport data to Azure
 Azure Import/Export service | Service to ship physical disks for data transfer no Azure
 
+[Managing Lifecycle](https://learn.microsoft.com/en-us/azure/storage/blobs/lifecycle-management-policy-configure?tabs=azure-portal) can be rule base to change to a different storage tier 
+```json
+{
+  "rules": [
+    {
+      "enabled": true,
+      "name": "move-to-cool",
+      "type": "Lifecycle",
+      "definition": {
+        "actions": {
+          "baseBlob": {
+            "tierToCool": {
+              "daysAfterModificationGreaterThan": 30
+            }
+          }
+        },
+        "filters": {
+          "blobTypes": [
+            "blockBlob"
+          ],
+          "prefixMatch": [
+            "sample-container/log"
+          ]
+        }
+      }
+    }
+  ]
+}
+```
+
+List or Add rules for Lifecycle Policy management 
+`Search Storage Account -> $storageAccount -> Data Management -> Lifecycle Management -> List View | Add rules`
+
 Create Container for Blob Storage
 `Azure Storage accounts -> + Container -> Name and Change "Public Access Level"`:
 **Public access level**: The access level specifies whether the container and its blobs can be accessed publicly. By default, container data is private and visible only to the account owner. There are three access level choices:

@@ -29,7 +29,7 @@ Azure Features:
 - RBAC for granular control of resource request by domain
 - Activity Logs
 - Resource Locking - restrict or remove access to resource groups, subscriptions or resources
-- Private Domains
+- Private Domains[Set-AzDnsRecordSet](https://learn.microsoft.com/en-us/powershell/module/az.dns/set-azdnsrecordset?view=azps-9.4.0)
 	- No need for DNS Solution
 	- All DNS records types supported
 	- Hostnames of VMs are automatically maintained
@@ -94,8 +94,40 @@ Private DNS Zones
 1. Identify VNets
 2. Link Vnet to Private DNS Zone
 
+[Azure DNS](https://learn.microsoft.com/en-us/powershell/module/az.dns/new-azdnsrecordset?view=azps-9.4.0)
+```powershell
+# Config
+# New DNS Root record
+New-AzDnsRecordConfig
+# 
+Add-AzDnsRecordConfig
+
+# Set
+Get-AzDnsRecordSet
+New-AzDnsRecordSet
+Remove-AzDnsRecordSet
+Set-AzDnsRecordSet
+
+# Make Application is accessible for Azure DNS
+# "A" is IPv4 address
+# -name is the Record name: @ Represent the Root domain 
+New-AzDnsRecordConfig -Name "@" -RecordType "A" -ZoneName "$newDomainNameHere" -ResourceGroupName $rGroup -DnsRecords (New-AzDnsRecordConfig -IPv4Address "10.10.10.10")
+# You need TXT record to verify custom domain
+New-AzDnsRecordSet -ZoneName "$newDomainNameHere" -ResourceGroupName $rGroup -Name "@" -RecordType "TXT" -TTL 600 -DnsRecord(New-AzDnsRecordConfig -Value "application.azure.websites.net")
+
+# When IP address changes for custom DNS you must update the "A" record
+$RecordSet = Get-AzDnsRecordSet -ResourceGroupName MyResourceGroup -ZoneName myzone.com -Name www -RecordType A
+Add-AzDnsRecordConfig -RecordSet $RecordSet -Ipv4Address 172.16.0.0
+Add-AzDnsRecordConfig -RecordSet $RecordSet -Ipv4Address 172.31.255.255
+Set-AzDnsRecordSet -RecordSet $RecordSet
+# These cmdlets can also be piped:
+Get-AzDnsRecordSet -ResourceGroupName MyResourceGroup -ZoneName myzone.com -Name www -RecordType A | Add-AzDnsRecordConfig -Ipv4Address 172.16.0.0 | Add-AzDnsRecordConfig -Ipv4Address 172.31.255.255 | Set-AzDnsRecordSet
+```
+
 ## References
 
 [FreeCodeCamp.org - AZ 104 Course](https://www.youtube.com/watch?v=10PbGbTUSAg&t=3458s)
 [Microsoft Technical Documentation](https://learn.microsoft.com/en-us/docs/)
 [Microsoft Learn](https://learn.microsoft.com/en-us/)
+[Set-AzDnsRecordSet](https://learn.microsoft.com/en-us/powershell/module/az.dns/set-azdnsrecordset?view=azps-9.4.0)
+[Azure DNS ](https://learn.microsoft.com/en-us/powershell/module/az.dns/?view=azps-9.4.0)

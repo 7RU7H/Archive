@@ -35,13 +35,11 @@ Get-Az # Retrieve information
 New-Az # Create Azure X
 Update-Az # Update Azure X
 Add-Az # Add X to Existing Azure Y
-Move-Az # Move Az X 
-
-
+Move-Az # Move Az X to Y
+Export-Az # Capture to a template
 ```
 
-
-
+aaaaaaaa
 [John Savile](https://www.youtube.com/@NTFAQGuy) is great resource regarding anything Azure. [Master Class](https://www.youtube.com/playlist?list=PLlVtbbG169nGccbp8VSpAozu3w9xSQJoY)
 
 [Eyedia AZ-104 Exam Playlist](https://www.youtube.com/playlist?list=PLA_CqAntXBh4DPIYCcplBWLjT3AYl1822) - similar exam questions especially the *got-ya questions* in visual and digestable format. Absolute must! 
@@ -58,6 +56,8 @@ If you are from a Ethical Hacking Background [IT Security Labs is Ex-Windows/Azu
 	1. Address range overlapping are always prohibited in all circumstances - [Plan for IP addresses](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/plan-for-ip-addressing)
 	1. Peering requires Bi-direction connection
 	1. Principle of Least Privilege
-	1. Recursively apply heirarchies of inheritance across subsequent levels in Top-Down manner
+	3. Recursively apply heirarchies of inheritance across subsequent levels in Top-Down manner
 		- Top-Level logic can affect how lower levels are permitted to operate - across concepts in Azure
-1. Memorize `Microsoft.$ROLE/*/` role logic
+1. Memorize `Microsoft.$AZURECOMPONENT/*/..` 
+	- Role hierarchy check  
+1. Read any powershell or AzCLI command snippets fully question will have fill the blanks in Fundementals will guide decision as well understanding the cmdlet naming logic 
