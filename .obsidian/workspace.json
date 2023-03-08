@@ -11,11 +11,52 @@
             "id": "18d04a9f082ea889",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Antivirus/Antivirus-Evasion/Antivirus-Evasion.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "dfa63cab23d0ed7c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Antivirus/Windows-Defender-For-AV-Evasion.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ee6e06b078b61d09",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Services/Databases/SQLite/SQLite-Hacking.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "27c14a38e6039e68",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Antivirus/Antivirus-Evasion/Signature-Evasion.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -44,7 +85,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "gospider",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -57,7 +98,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 482.5
+    "width": 374.5
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -73,6 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Services/Databases/SQLite/SQLite-Hacking.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,8 +142,15 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "ed8f63df71621be6",
+  "active": "ee6e06b078b61d09",
   "lastOpenFiles": [
+    "Antivirus/Antivirus-Evasion/EDR-Bypassing.md",
+    "Antivirus/Antivirus-Evasion/Inline-Hooking.md",
+    "Antivirus/Antivirus-Evasion/Metasploit-AV-Evasion.md",
+    "Antivirus/Antivirus-Evasion/Signature-Evasion.md",
+    "Antivirus/Windows-Defender-For-AV-Evasion.md",
+    "Antivirus/Antivirus-Evasion/Windows-Runtime-Detection-Evasion.md",
+    "Antivirus/Antivirus-Evasion/Antivirus-Evasion.md",
     "Cloud/Azure/Azure-Defined.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Roles-And-RBAC.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Policies.md",
@@ -121,13 +170,6 @@
     "Cloud/Azure/Azure-Administration/Azure-Administration-Blobs.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Resource-Manager.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Monitor.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-DNS.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Disks.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Container-Instances.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Backups.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-ARM-Templates.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Application-Services.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Application-Gateways.md",
     "Services/Databases/MongoDB",
     "Images/robleesansoffensiveforensicstimestomping.png.png",
     "Images/robleesansoffensiveforensicstimestomping.png",
