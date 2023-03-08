@@ -948,19 +948,21 @@ Onboard virtual machines to Azure Monitor VM Insights
 
 #### Network Watcher
 
-- Automate remote network monitoring with packet capture - from triggering alerts
+- `Packet capture` - Automate remote network monitoring and triggering alerts from packet capture
 	-  `Network Watcher -> Packet capture`
 - Network Security Group Flow Logs (NSG Flow Logs) for network traffic pattern collection
-- Diagnose VPN issues
+- `VPN troubleshoot` - Diagnose VPN issues
 	- `Network Watcher -> VPN troubleshoot
 - Visual Network Typology 
 	- `Network Watcher -> Topology`
-- Connection Troubleshoot -  suite of networking tools and capabilities to3 troubleshoots network performance and connectivity issues in Azure.
+- `Connection Troubleshoot` - suite of networking tools and capabilities to troubleshoots network performance and connectivity issues in Azure.
 	 - `Network Watcher -> Connection troubleshoot`
-- Verify IP flow -  IP Flow Verify quickly di agnose connectivity issues from or to the internet and from or to the on-premises environment.
+- `Verify IP flow` -  IP flow verify checks if a packet is allowed or denied to or from a virtual machine. Indetify based on NSGs
 	- `Network Watcher -> Ip flow verify`
-- Next Hop - determine if traffic is being directed to the intended destination by showing the next hop'
+- `Next Hop` - determine if traffic is being directed to the intended destination by showing the next hop'
 	- `Network Watcher -> Next Hop`
+- `Connection Monitor` - provides unified, end-to-end connection monitoring
+- `Traffic Analytics` - is a cloud-based solution that provides visibility into user and application activity in your cloud networks by analyzes NSG flow logs
 
 ## AzCopy 
 
@@ -1547,7 +1549,7 @@ General Azure aaS Commands for Data
 Get-AzVMSize # VM sizes 
 ```
 
-Disk creation, retrieval and updating in powershell 
+Disk creation, retrieval, attachment and updating in powershell 
 ```powershell
 # Consider Naming Conventions
 $diskname = ""
@@ -1563,6 +1565,8 @@ Get-AzDisk -ResourceGroupName $rgName -Name $diskname
 (Get-AzDisk -ResourceGroupName $rgName -Name $diskname).Sku
 # Update 
 New-AzDiskUpdateConfig -DiskSizeGB 64 -Sku Premium_LRS | Update-AzDisk -ResourceGroupName $rgName -DiskName $diskname
+# Add to a VM
+Add-AzVMDataDisk -VM $VMname -Name $diskName -CreateOPtion Attach -ManagedDisks
 ```
 
 Resource Group Creation and Administration

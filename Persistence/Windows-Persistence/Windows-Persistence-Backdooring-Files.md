@@ -24,7 +24,7 @@ Make sure to "Change Icon..."  to revert any visble changes to the Icon display 
 
 ## Hijacking File Associations
 
-Default operation system file associations are stored as key in [Registry](Windows-Registry). For each file type a key is store under `HKLM\Software\Classes\` . For `.txt` stored `HKLM\Software\Classes\.txt`  subkey would look like the table below:
+Default operation system file associations are stored as key in [Registry](Windows-Registry.md). For each file type a key is store under `HKLM\Software\Classes\` . For `.txt` stored `HKLM\Software\Classes\.txt`  subkey would look like the table below:
 
 Name | Type | Data
 --- | --- | ---
