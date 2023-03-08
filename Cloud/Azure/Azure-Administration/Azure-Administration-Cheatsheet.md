@@ -10,6 +10,12 @@
 [Azure subscription limits and quotas - Azure Resource Manager | Microsoft Learn](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/azure-subscription-service-limits)
 [Pricing Calculator](https://azure.microsoft.com/en-gb/pricing/calculator/)
 [Total Cost of Ownship Calculator](https://azure.microsoft.com/en-gb/pricing/tco/calculator/)
+[Understand Subscription and Service limits](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/azure-subscription-service-limits)
+
+
+1. Subscriptions and Azure AD Tenant
+1. Management Groups and Subscriptions - Context
+1. Resource Group - Everything exists in resource group, no nesting allowed, not a boundary of access
 
 ## Resources
 
@@ -223,6 +229,11 @@ Secure Storage endpoints
 
 ## Management Groups - Azure Policies
 
+Governance is about enforcement of rules and ensuring proper functioning to standards. 
+- Policies  - WHAT 
+- [[Azure-Administration-Azure-Roles-And-RBAC]] - WHO
+- Budget - HOW MUCH
+
 Azure Policy(Ensure compliance of resources and does not restrict) != Azure Roles (Control access to resources - Manages User actions at different scopes) && RBAC (Who own Owns, Contributes, Can read and User Access Administrator - Assignment, Scope, Role Definitions, Security Principle(Object: `user`, `group` or `application`))
  
 - [[Azure-Administration-Azure-Policies]] 
@@ -271,7 +282,12 @@ From here for:
 
 ## RBAC and Role Management
 
-RBAC (Who own Owns, Contributes, Can read and User Access Administrator - Assignment, Scope, Role Definitions, Security Principle(Object: `user`, `group` or `application`)) != Azure Policy(Ensure compliance of resources and does not restrict) && Azure Roles (Control access to resources - Manages User actions at different scopes) 
+Governance is about enforcement of rules and ensuring proper functioning to standards. 
+- Policies  - WHAT 
+- [[Azure-Administration-Azure-Roles-And-RBAC]] - WHO
+- Budget - HOW MUCH
+
+RBAC (Who own Owns, Contributes, Can read and User Access Administrator - Assignment, Scope, Role Definitions, Security Principle(Object: `user`, `group` or `application`)) != Azure Policy (Ensure compliance of resources and does not restrict) && Azure Roles (Control access to resources - Manages User actions at different scopes) 
 
 Implement management groups 
 `Search Management groups -> Management groups`
@@ -1813,3 +1829,9 @@ Move-AzResource
 [John Savill's Microsoft Azure Master Class Part 6 - Networking](https://www.youtube.com/watch?v=K8ePZdLfU7M&t=3511s)
 [Microsoft Technical Documentation](https://learn.microsoft.com/en-us/docs/)
 [Microsoft Learn](https://learn.microsoft.com/en-us/)
+[Subscription and Service limits](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/azure-subscription-service-limits)
+[Interactive map Resource Map](https://infrastructuremap.microsoft.com/explore) 
+[Azure Cross Replication Regions](https://learn.microsoft.com/en-us/azure/reliability/cross-region-replication-azure)
+[Azure subscription limits and quotas - Azure Resource Manager | Microsoft Learn](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/azure-subscription-service-limits)
+[Pricing Calculator](https://azure.microsoft.com/en-gb/pricing/calculator/)
+[Total Cost of Ownship Calculator](https://azure.microsoft.com/en-gb/pricing/tco/calculator/)

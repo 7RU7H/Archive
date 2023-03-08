@@ -56,12 +56,24 @@
             }
           },
           {
-            "id": "400ceefd7f40e9bf",
+            "id": "0c6eaee1046a84d6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/AZ-104-Exam-Resources.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Policies.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c66f03d9676760f9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Roles-And-RBAC.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +122,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 374.5
+    "width": 489.5
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -126,7 +138,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/AZ-104-Exam-Resources.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Policies.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -154,9 +166,15 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "400ceefd7f40e9bf",
+  "active": "0c6eaee1046a84d6",
   "lastOpenFiles": [
     "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Roles-And-RBAC.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Policies.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration.md",
+    "Linux/Linux-Commands/Linux-Module-Commands.md",
+    "Networks/Network-Theory/OSI-Model.md",
+    "Hardware/CPU-Architecture.md",
     "Cloud/Azure/Azure-Administration/AZ-104-Exam-Resources.md",
     "Windows/Windows-Concepts/Windows-Events-To-Monitor.md",
     "Tools/Windows/Event-Viewer.md",
@@ -174,14 +192,8 @@
     "Antivirus/Antivirus-Evasion/Windows-Runtime-Detection-Evasion.md",
     "Antivirus/Antivirus-Evasion/Antivirus-Evasion.md",
     "Cloud/Azure/Azure-Defined.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Roles-And-RBAC.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Policies.md",
     "Coding-Scripting-Programming/Languages/Python/Python-Tooling-Libraries.md",
     "Coding-Scripting-Programming/Languages/Python/Useful_Python.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Kubernetes-Services.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Virtual-WAN.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Virtual-Networking.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Virtual-Machines.md",
     "Services/Databases/MongoDB",
     "Images/robleesansoffensiveforensicstimestomping.png.png",
     "Images/robleesansoffensiveforensicstimestomping.png",

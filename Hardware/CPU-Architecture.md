@@ -6,11 +6,11 @@
 Endianess is key to understanding that the most significant bit is located on either side of eight bits. **L**east for memory is **L**eftmost  **Least** significant, fortunately in English no matter the width.
 ```
 LITTLE ENDIAN           0 1 0 1 0 1 0 1  <<THIS SIDE IS MOST IMPORTANT
-                        ^LSB       MSB^    
+                       ^LSB          MSB^    
 
 
 BIG ENDIAN      THIS SIDE IS THE MOST IMPORTANT >> 1 0 1 0 1 0 1 0
-                                                   ^MSB       LSB^
+                                                ^MSB            LSB^
 ```
 
 ## Register

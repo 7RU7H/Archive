@@ -30,11 +30,9 @@ Function		Implement protocols that initiate, maintain and terminate 												
 Layer			4
 Protocol		Transport Layer
 Data Unit(PDU)	Segment, Datagram
-Function		Ordering and time management of data between source to 										         		 destination,
-				Handling errors, resending, transmission speed issues
+Function		Ordering and time management of data between source to destination, Handling errors, resending, transmission speed issues
 				Stateful protocols - segementation of segments;
-				Statless protocols(datagrams) accept some packet loss, reording, 
-				errors or duplication.
+				Statless protocols(datagrams) accept some packet loss, reording, errors or duplication.
 
 Layer
 Protocol		Network Layer
@@ -44,7 +42,7 @@ Function		Routing and broadcasting of messages, addressing of multiple 					  		
 Layer 			2
 Protocol		Data Link Layer
 Data Unit(PDU)	Frame
-Function		Define rules for initating, monitoring and terminating 					    			 communication
+Function		Define rules for initating, monitoring and terminating communication
 				Error detection and correction
 
 Layer			1
@@ -52,5 +50,8 @@ Protocol		Physical Layer
 Data Unit(PDU)	Bit, Symbol
 Function		Transfers raw data between physical machine and physical medium
 
+```
 
+## References
 
+[Wikipedia PDU](https://en.wikipedia.org/wiki/Protocol_data_unit)

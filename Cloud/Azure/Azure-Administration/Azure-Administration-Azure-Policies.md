@@ -2,6 +2,11 @@
 
 Organizations that use multiple subscriptions need a way to efficiently manage access, policies, and compliance. [Azure management groups](https://learn.microsoft.com/en-us/azure/governance/management-groups/overview) provide a level of scope and control above your subscriptions. Azure Policies enforce organizational standards and assess compliance at-scale Policies - do not restrict access they only observe for compliance. 
 
+Governance is about enforcement of rules and ensuring proper functioning to standards. 
+- Policies  - WHAT 
+- [[Azure-Administration-Azure-Roles-And-RBAC]] - WHO
+- Budget - HOW MUCH
+
 Azure Polices | Azure Roles
 --- | ---
 Ensure compliance of resources | Control access to resources
@@ -23,7 +28,6 @@ Considerations:
 - Location restrictions for users for security
 - Enforcement of compliance rules to manage resources and user options
 - Inventory audits on your VMs with [[Azure-Administration-Azure-Backups]] and Azure Policies
-
 
 #### Azure Definition File
 
@@ -77,9 +81,27 @@ Inheritance is made in the:
 `Policies -> Assignments -> Assign`
 
 
-## Examples
+## Examples And Consideration
 
 ![1080](azureexamplepolicygroup.png)
+
+Management group are hierarchy to organize and apply policy over resources. Governance is applied top-down and is inhierited.
+
+1. Subscriptions and Azure AD Tenant
+	- Subscription Owners can move Subscription to different Azure AD Tenant, but lose previous RBAC
+	- Azure AD tenant create trust to domain-joined to then gain access to their tiering RBAC.
+3. Management Groups and Subscriptions - Context
+	- Root Management Group is created first
+		- Unmovable and Undeletable.
+		- 6 Level Deep maximum
+4. Resource Group - Everything exists in resource group, no nesting allowed, not a boundary of access
+
+Locks are implemented at the control plain only. For example locks the storage account attributes, but blobs can be delete within the storage account  
+
+Roles are limited to 4000, RBAC at the attribute level can help.
+
+
+Initatives - Policies implemented over a Scope 
 
 
 
@@ -93,3 +115,4 @@ Inheritance is made in the:
 [Azure Policy initiative definition structure](https://learn.microsoft.com/en-us/azure/governance/policy/concepts/initiative-definition-structure)
 [Microsoft Technical Documentation](https://learn.microsoft.com/en-us/docs/)
 [Microsoft Learn](https://learn.microsoft.com/en-us/)
+[John Savill Azure Master Class v2 - Governance](https://www.youtube.com/watch?v=eLSjnF6Crlw&list=PLlVtbbG169nGccbp8VSpAozu3w9xSQJoY&index=4)

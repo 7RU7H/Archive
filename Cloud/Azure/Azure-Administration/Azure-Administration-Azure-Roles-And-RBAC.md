@@ -4,15 +4,20 @@
 
 Azure AD roles are used to manage Azure AD resources in a directory such as:
 - Create units
-- edit units
-- assign adminstrative roles to others
-- reset user passwords
-- manage user licenses
-- manage domains
+- Edit units
+- Assign adminstrative roles to others
+- Reset user passwords
+- Manage user licenses
+- Manage domains
 Built-In Azure AD Roles:
 - Global Administrator - Full access to everything
 - User Administrator - Full access to creat and manage users
 - Billing Administrator - Make purchases, maneg subscriptions and support tickets
+
+Governance is about enforcement of rules and ensuring proper functioning to standards. 
+- Policies  - WHAT 
+- [[Azure-Administration-Azure-Roles-And-RBAC]] - WHO
+- Budget - HOW MUCH
 
 Regarding [[Azure-Administration-AD-Administration]], do not use Classic subcription Roles use either RBAC or [Azure AD Administrator roles](https://learn.microsoft.com/en-us/azure/active-directory/roles/permissions-reference):
 ![1000](azurerolerbacandadminroles.png)
@@ -184,3 +189,4 @@ Assign can be done via Resource Group of Admin Scoping in fields
 [List Azure role definitions - Azure RBAC | Microsoft Learn](https://learn.microsoft.com/en-us/azure/role-based-access-control/role-definitions-list)
 [Microsoft Technical Documentation](https://learn.microsoft.com/en-us/docs/)
 [Microsoft Learn](https://learn.microsoft.com/en-us/)
+[John Savill Azure Master Class v2 - Governance](https://www.youtube.com/watch?v=eLSjnF6Crlw&list=PLlVtbbG169nGccbp8VSpAozu3w9xSQJoY&index=4)

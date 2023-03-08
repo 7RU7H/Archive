@@ -35,7 +35,7 @@ Get-Az # Retrieve information
 New-Az # Create Azure X
 Update-Az # Update Azure X
 Add-Az # Add X to Existing Azure Y
-
+Move-Az # Move Az X 
 
 
 ```
