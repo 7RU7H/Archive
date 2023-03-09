@@ -241,6 +241,16 @@ Secure Storage endpoints
 - Enabled from selected virtual networks and IP address
 - Disabled
 
+Import/Export Jobs - physical disk to data center
+1. Identity data
+2. Calculate transportation disk requirement
+3. `Azure Export Jobs` or install and run `WAImportExport` top copy data to disk
+4. Physical transportation
+
+Shipping with physical disk drives large amounts of data to a Azure Blob and Azure Files to a Azure datacenter with CLI tool for preparation - `WAImportExport` - Window 64 bit only
+- Export only from Azure Blob
+- Up to 10 empty drives per job
+
 ## Azure Policies
 
 Governance is about enforcement of rules and ensuring proper functioning to standards. 
@@ -550,6 +560,8 @@ Add session persistence to a load balancer
 
 Overview of NSGs
 `Search -> Network Security Groups`
+- Inbound precedence: `Vnet -> NIC`
+- Outbound precedence `NIC -> Vnet`
 
 Create an NSG
 `Search -> Network Security Groups -> + Create` - Source, Destination, Service, Priority
@@ -632,9 +644,9 @@ If a match is found it terminate processing.
 
 [Azure Firewall Rules](https://learn.microsoft.com/en-us/azure/firewall/rule-processing) are processed based on:
 - Firewall Policy 
-	- Rule Collection Group Priority 
+	- Rule Collection Group Priority - Highest priority is 100 to Lowest priority is 4096
 	- Rule Collection priority
-- Classic Rules - 100 is Highest 65,000 Lowest priority. at can be accessed from a subnet
+- Classic Rules - 100 is Highest and 65,000 is Lowest priority. at can be accessed from a subnet
 
 Type Priority - NAT Rule before Network Rule before Application Rule.
 - **NAT** - Azure Firewall destination network address translation (DNAT) rules to translate and filter inbound traffic to your subnets
@@ -1016,11 +1028,21 @@ Onboard virtual machines to Azure Monitor VM Insights
 
 ## AzCopy 
 
-AZcopy is installed by default on the CloudShell
+[AZCopy]((https://learn.microsoft.com/en-us/azure/storage/common/storage-ref-azcopy) - CLI - downloadable executable copy blobs or files to or from a storage accounts; [AzCopy](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-files) is installed by default on the CloudShell
 ```powershell
+# Make file shares
+azcopy make 'https://<storage-account-name>.file.core.windows.net/<file-share-name><SAS-token>'
+
+# Upload files or directories
+# Suport wildcard 
 azcopy copy $localpath $remotepath # upload
+# Download
 azcopy copy $remotepath $localpath # download
 azcopy login # create URI to login
+
+# Supported by not recommended - doesn't support differential copies at scale
+# Useful in Temporary File deletion and Syncing between Shares
+azcopy sync $localpath $remotepath --delete-desitnation true
 ```
 
 URL for Azure remote container: `Home -> Storage Accounts -> $ContainerName -> Properties`
@@ -1908,3 +1930,4 @@ Get-AzDnsRecordSet -ResourceGroupName MyResourceGroup -ZoneName myzone.com -Name
 [Pricing Calculator](https://azure.microsoft.com/en-gb/pricing/calculator/)
 [Total Cost of Ownship Calculator](https://azure.microsoft.com/en-gb/pricing/tco/calculator/)
 [Set-AzDnsRecordSet](https://learn.microsoft.com/en-us/powershell/module/az.dns/set-azdnsrecordset?view=azps-9.4.0)
+[AzCopy](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-files)

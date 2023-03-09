@@ -45,7 +45,7 @@ A Comparison of Storage Types
 
 Azure has 5 Core Storage services, searchable 
 - Blob 
-	- Azure Blob a masssive scalable object store for text and binary data.
+	- Azure Blob a massive scalable object store for text and binary data.
 		- Include support for big data analytics through Data Lake Storage Gen2
 	- Azure Files - Managed file shares for cloud or on-premises deployments
 	- Azure Queues - A messaging store for reliable messaging between application components.
@@ -208,8 +208,8 @@ Shipping with physical disk drives large amounts of data to a Azure Blob and Azu
 Version 1 is import/export data to Blob storage - Version 2 is for import data  Azure File 
 
 For export jobs
-- export only from Azure Blob
-- up to 10 empty drives per job
+- Export only from Azure Blob
+- Up to 10 empty drives per job
 - shipped to location
 
 `WAImportExport` considerations:
@@ -218,18 +218,28 @@ For export jobs
 
 #### AzCopy 
 
-AZcopy is installed by default on the CloudShell
+
+[AZCopy]((https://learn.microsoft.com/en-us/azure/storage/common/storage-ref-azcopy) - CLI - downloadable executable copy blobs or files to or from a storage accounts; [AzCopy](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-files) is installed by default on the CloudShell
 ```powershell
-azcopy copy [source] [destination] [flags]
+# create URI to login
+azcopy login 
+# Make file shares
+azcopy make 'https://<storage-account-name>.file.core.windows.net/<file-share-name><SAS-token>'
+
+# Upload files or directories
+# Support wildcards * 
 azcopy copy $localpath $remotepath # upload
+# Download
 azcopy copy $remotepath $localpath # download
-azcopy login # create URI to login
+
 # Supports wildcard include and exclude
 azcopy copy [source] [destination] --include
 azcopy copy [source] [destination] --exclude 
-```
 
-[AZCopy]((https://learn.microsoft.com/en-us/azure/storage/common/storage-ref-azcopy) - CLI - downloadable executable copy blobs or files to or from a storage accounts
+# Supported by not recommended - doesn't support differential copies at scale
+# Useful in Temporary File deletion and Syncing between Shares
+azcopy sync $localpath $remotepath --delete-desitnation true
+```
 
 Avaliable:
 [GitHub - Azure/azure-storage-azcopy: The new Azure Storage data transfer utility - AzCopy v10](https://github.com/Azure/azure-storage-azcopy)

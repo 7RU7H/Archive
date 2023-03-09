@@ -1,4 +1,4 @@
-# Azure Administration Scale Sets
+ # Azure Administration Scale Sets
 
 Azure Scale sets allows automatic increases and decreases in VM capacity. Load Balancers can be associated with a Scale Set:
 - Evenly distribute VM accross availablility Zones - more avaliablility

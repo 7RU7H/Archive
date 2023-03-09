@@ -101,7 +101,34 @@ Move Data to, from, or within Azure Storage
 Monitor Storage Accounts
 `Storage Accounts -> $storage_account -> Insights`
 
+[AZCopy]((https://learn.microsoft.com/en-us/azure/storage/common/storage-ref-azcopy) - CLI - downloadable executable copy blobs or files to or from a storage accounts; [AzCopy](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-files) is installed by default on the CloudShell
+```powershell
+# create URI to login
+azcopy login 
+# Make file shares
+azcopy make 'https://<storage-account-name>.file.core.windows.net/<file-share-name><SAS-token>'
+
+# Upload files or directories
+# Support wildcards * 
+azcopy copy $localpath $remotepath # upload
+# Download
+azcopy copy $remotepath $localpath # download
+
+# Supports wildcard include and exclude
+azcopy copy [source] [destination] --include
+azcopy copy [source] [destination] --exclude 
+
+# Supported by not recommended - doesn't support differential copies at scale
+# Useful in Temporary File deletion and Syncing between Shares
+azcopy sync $localpath $remotepath --delete-desitnation true
+```
+
+
+
+
 ## References
 
 [Microsoft Technical Documentation](https://learn.microsoft.com/en-us/docs/)
 [Microsoft Learn](https://learn.microsoft.com/en-us/)
+[AZCopy]((https://learn.microsoft.com/en-us/azure/storage/common/storage-ref-azcopy) 
+[AzCopy Useage](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-files)

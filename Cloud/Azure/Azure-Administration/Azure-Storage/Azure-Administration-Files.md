@@ -96,6 +96,23 @@ Deploying a Azure File Sync:
 3. Install Azure File Sync agent
 4. Register Windows Server(s)
 
+[AzCopy](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-files) is installed by default on the CloudShell
+```powershell
+# Make file shares
+azcopy make 'https://<storage-account-name>.file.core.windows.net/<file-share-name><SAS-token>'
+
+# Upload files or directories
+# Suport wildcard 
+azcopy copy $localpath $remotepath # upload
+# Download
+azcopy copy $remotepath $localpath # download
+azcopy login # create URI to login
+
+# Supported by not recommended - doesn't support differential copies at scale
+# Useful in Temporary File deletion and Syncing between Shares
+azcopy sync $localpath $remotepath --delete-desitnation true
+```
+
 ## References
 
 [Youtube Azure Administrator Certification (AZ-104)](https://www.youtube.com/watch?v=10PbGbTUSAg)

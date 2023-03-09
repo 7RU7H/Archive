@@ -832,9 +832,9 @@ Deploy Azure Firewall requires: Resource Group, VNet,
 
 [Azure Firewall Rules](https://learn.microsoft.com/en-us/azure/firewall/rule-processing) are processed based on:
 - Firewall Policy 
-	- Rule Collection Group Priority 
+	- Rule Collection Group Priority - Highest priority is 100 to Lowest priority is 4096
 	- Rule Collection priority
-- Classic Rules - 100 is Highest 65,000 Lowest priority. at can be accessed from a subnet
+- Classic Rules - 100 is Highest and 65,000 is Lowest priority. at can be accessed from a subnet
 
 If a match is found it terminate processing.
 

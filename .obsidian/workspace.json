@@ -8,7 +8,19 @@
         "type": "tabs",
         "children": [
           {
-            "id": "e9c5ad832332d621",
+            "id": "6c5fb619098166c4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Container-Registeries.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1a44c6f30603f57d",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -20,78 +32,43 @@
             }
           },
           {
-            "id": "673f1c5af7805d30",
+            "id": "d65186db421a7633",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Virtual-Networking.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Storage/Azure-Administration-Storage-Accounts.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "dbfd01537d4b90ef",
+            "id": "98e6c2e441fe75a8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Storage-Accounts.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Virtual-Networking/Azure-Administration-Virtual-Networking.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "24f2b21fdc58af69",
+            "id": "46caea6022236691",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Blobs.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0c6eaee1046a84d6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Policies.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c66f03d9676760f9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Roles-And-RBAC.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6c5fb619098166c4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cloud/Azure/Azure-Administration/AZ-104-Exam-Resources.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Storage/Azure-Administration-Storage-Accounts.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -177,18 +154,27 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "e9c5ad832332d621",
+  "active": "ed8f63df71621be6",
   "lastOpenFiles": [
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Virtual-Networking.md",
+    "Cloud/Azure/Azure-Administration/Azure-Storage/Azure-Administration-Storage-Accounts.md",
+    "Cloud/Azure/Azure-Administration/Azure-Storage/Azure-Administration-Blobs.md",
+    "Cloud/Azure/Azure-Administration/Azure-Virtual-Networking/Azure-Administration-Virtual-Networking.md",
+    "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Container-Registeries.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-DNS.md",
+    "Cloud/Azure/Azure-Administration/Azure-Storage/Azure-Administration-Files.md",
+    "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Maintenance",
+    "Cloud/Azure/Azure-Administration/Azure-Virtual-Networking",
     "Cloud/Azure/Azure-Administration/AZ-104-Exam-Resources.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Storage-Accounts.md",
+    "Cloud/Azure/Azure-Administration/Azure-Compute-Resources",
+    "Cloud/Azure/Azure-Administration/Azure-Storage",
+    "Cloud/Azure/Azure-Administration/Azure-Identities-And-Governance",
+    "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Virtual-Machines.md",
+    "Cloud/Azure/Azure-Administration/Azure-Identities-And-Governance/Azure-Administration-Azure-Roles-And-RBAC.md",
+    "Cloud/Azure/Azure-Administration/Azure-Identities-And-Governance/Azure-Administration-Azure-Policies.md",
+    "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Scale-Sets.md",
+    "Cloud/Azure/Azure-Administration/Azure-Virtual-Networking/Azure-Administration-Azure-DNS.md",
     "Networks/Network-Theory/Network-Protocols/DNS-Defined.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Container-Instances.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Blobs.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Policies.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Azure-Roles-And-RBAC.md",
+    "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Azure-Container-Instances.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration.md",
     "Linux/Linux-Commands/Linux-Module-Commands.md",
     "Networks/Network-Theory/OSI-Model.md",
@@ -201,10 +187,6 @@
     "Windows/Windows-Tools.md",
     "Tools/Windows/Process-Hacker.md",
     "Tools/SysInternals/Sysinternals-Hub.md",
-    "Services/Databases/SQLite/SQLite-Hacking.md",
-    "Antivirus/Antivirus-Evasion/EDR-Bypassing.md",
-    "Antivirus/Antivirus-Evasion/Inline-Hooking.md",
-    "Antivirus/Antivirus-Evasion/Metasploit-AV-Evasion.md",
     "Services/Databases/MongoDB",
     "Images/robleesansoffensiveforensicstimestomping.png.png",
     "Images/robleesansoffensiveforensicstimestomping.png",
@@ -219,7 +201,6 @@
     "Images/azurelogeventcatergories.png",
     "Images/azurelogeventtiering.png",
     "Images/azuremonitorcomponents.png",
-    "Images/azuresoftdeleteandbackups.png",
-    "Services/Package-Managers"
+    "Images/azuresoftdeleteandbackups.png"
   ]
 }
