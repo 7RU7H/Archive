@@ -20,6 +20,12 @@ Update-Az # Update Azure X
 Add-Az # Add X to Existing Azure Y
 Move-Az # Move Az X to Y
 Export-Az # Capture to a template
+Import-Az # Import config
+Remove-Az # Remove..
+Select-Az # Select != Get; Choose X
+Invoke-Az # Contruct and Perform X
+Clear-Az # Clear settable values
+Set-Az # Opposite of Clear, Set values
 ```
 
 
@@ -222,6 +228,8 @@ Administrator Policy - Admin password reset policy.
 Address spaces - Review IP Schema Implementation
 By CIDR 10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16
 Routable address over the internet: 215.11.0.0 to 215.11.255.255
+Azure Makes System routes by default
+[Network Limits](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/azure-subscription-service-limits?toc=%2Fazure%2Fvirtual-network%2Ftoc.json#networking-limits)
 
 - Important:
 	- Address range overlaps restricts various connectivity potentials - see  [[IPv4-Subnet-Masks-Dictionary]]:
@@ -253,6 +261,11 @@ Remember to: plan IP addresses - they can be `private` or  `public`, `static` or
 - 192.168.1.2 - Azure DNS address 
 - 192.168.1.3 - Azure DNS address
 - 192.168.1.255 - Virtual network broadcast address
+
+IP Forwarding: 
+- Beware
+	- Use case
+	- NSGs - Vnet, Subnet, NIC
 
 Consideration:
 - Service requirements
@@ -295,6 +308,8 @@ Install-WindowsFeature -Name Routing  -IncludeManagementTools  -IncludeAllSubFea
 Install-WindowsFeature -Name "RSAT-RemoteAccess-Powershell"
 ```
 
+[User Defined Routes]((https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-udr-overview) - limited!
+
 #### Load Balancers
 
 Load Balancers Workflows by Type and important information:
@@ -303,7 +318,7 @@ Load Balancers Workflows by Type and important information:
 	- Requires Resources in the same Avaliablity/Scale set
 - Standard 
 	- Requires resource in the same Vnet
-- Application Gateway - Region layer 7 load balancer - Application Gateway Configuration
+- Application Gateway - Regional Layer 7 load balancer - Application Gateway Configuration
 	- Routing Methods
 		- Path-based routing: sends requests with different URL paths to different pools of back-end servers.
 			- `/` = Path
@@ -314,22 +329,22 @@ Load Balancers Workflows by Type and important information:
 	- Traffic Redirection
 	- Rewrite HTTP Headers
 	- Custom Error pages instead of default error pages - highly advised Attacker need error pages
-- Front Door - Global Layer 7 load balancer 
+- Front Door - Global Layer 7 Load Balancer - Application Delivery Network (ADN) as a service 
 - Load Balancer - Layer 4 for internal and public configurations
 	- SKU options: Basic, Standard, and Gateway 
 - Traffic Manager - DNS-based traffic load balancer
-Manage:
-`Search -> Load Balancers -> $loadBalancer`:
-- Front-end IP configuration 
-- Back-end pools: `+ Add -> $name & $VNet`
-- Health probes: `+ Add -> $name & Protocol, Port and Interval`
-- Load-balancing rules (can be used in combination with NAT rules) - requires a frontend, backend, and health probe; define a rule:
-	- IPv4 or 6
-	- Frontend IP address
-	- Backehttps://www.youtube.com/watch?v=5MbdRjkUUAUnd pool or Backend port
-	- Health probe
-	- Session persistence: None (default), Client IP, Client IP and Protocol
-
+ 
+ - Manage Load Balancers: `Search -> Load Balancers -> $loadBalancer`; [Components](https://learn.microsoft.com/en-us/azure/load-balancer/components):
+	- Front-end IP configuration
+		- Public or Private IP
+	- Back-end pools: `+ Add -> $name & $VNet`
+	- Health probes: `+ Add -> $name & Protocol, Port and Interval`
+	- Load-balancing rules (can be used in combination with NAT rules) - requires a frontend, backend, and health probe; define a rule:
+		- IPv4 or 6
+		- Frontend IP address
+		- Backehttps://www.youtube.com/watch?v=5MbdRjkUUAUnd pool or Backend port
+		- Health probe
+		- Session persistence: None (default), Client IP, Client IP and Protocol
 1. `Create a Resource -> Load Balancer` - options:
 2. `Basic: SKU, Type ( Public | Internal ) and Tier (Regional | Global )`. 
 3. `Configure front-end IP configuration -> Add (Consider assignment)`  
@@ -360,6 +375,15 @@ Add RDP to a VM Allowing and Disallowing the connection with NSG
 - `Outbound port rules Tab -> add outbound port rule -> Configure`
 
 #### Azure DNS
+
+- **Azure Alias** - Azure DNS specific record! - Important - Alias A record
+	- Points to directly to an Azure Resource instead of IP or hostname to avoid dangling domains 
+	- Updates DNS record automatically set when IP addresses change
+	- Used for:
+		- Hosts load-balanced application at zone apex with a Traffic Manager profile
+		- Points to Azure Content Delivery Network endpoints
+		- A public IP resource
+		- A front door profile
 
 Create DNS zones
 `Search -> DNS zones`
@@ -471,15 +495,45 @@ Administrating a Resource Group
 - Locks - Apply locks on resources
 
 #### Moving Resources
+
 Moving Resources - there are edge cases - [see Documentation for more]([Move resources to a new subscription or resource group - Azure Resource Manager | Microsoft Learn](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/move-resource-group-and-subscription)):
--   If you're using Azure Stack Hub, you can't move resources between groups.
--   [App Services move guidance](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/move-limitations/app-service-move-limitations) -  Web app to Web app cross region is not allowed!  
--   [Azure DevOps Services move guidance](https://learn.microsoft.com/en-us/azure/devops/organizations/billing/change-azure-subscription?toc=/azure/azure-resource-manager/toc.json)
--   [Classic deployment model move guidance](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/move-limitations/classic-model-move-limitations) - Classic Compute, Classic Storage, Classic Virtual Networks, and Cloud Services
--   [Networking move guidance](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/move-limitations/networking-move-limitations)
--   [Recovery Services move guidance](https://learn.microsoft.com/en-us/azure/backup/backup-azure-move-recovery-services-vault?toc=/azure/azure-resource-manager/toc.json)
--   [Virtual Machines move guidance](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/move-limitations/virtual-machines-move-limitations)
--   To move an Azure subscription to a new management group, see [Move subscriptions](https://learn.microsoft.com/en-us/azure/governance/management-groups/manage#move-subscriptions).
+- If you're using Azure Stack Hub, you can't move resources between groups.
+- [App Services move guidance](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/move-limitations/app-service-move-limitations)
+	- No existing Apps or TLS/SSL certificate cross region is not allowed!  
+	- Resources in Resource Group always move together!
+	- No Apps with private endpoints
+- [Azure DevOps Services move guidance](https://learn.microsoft.com/en-us/azure/devops/organizations/billing/change-azure-subscription?toc=/azure/azure-resource-manager/toc.json)
+- [Classic deployment model move guidance](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/move-limitations/classic-model-move-limitations) - Classic Compute, Classic Storage, Classic Virtual Networks, and Cloud Services 
+	- Inter-Sub
+	- Lots of Operational restrictions (One-X-at-a-Time or  (No Vnets, VM moved only All VMs only with Cloud Service) not RBAC 
+	- Sub-To-Sub 
+		- Same AAD Tenent
+		- No Cloud Service Provider subs
+		- Target must not have Classic Resources
+		- REST API for classic moves - no Resource Manager
+- [Networking move guidance](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/move-limitations/networking-move-limitations)
+	- Avoid AKS VNet moves
+	- Disable peering
+	- No VPN Gateway cross-sub moves
+	- Connat move a Subnet that has resource navigation links 
+- [Recovery Services move guidance](https://learn.microsoft.com/en-us/azure/backup/backup-azure-move-recovery-services-vault?toc=/azure/azure-resource-manager/toc.json)
+	- Permissions
+	- One-At-A-Time
+	- Vaults restrictions - Hacker Senses
+		- Key Vault and VMs from same region
+		- Only move a vault that contains any of the following types of backup items any not listed -  are stopped and  data permanently deleted before move:
+			- Azure Virtual Machines
+			- Microsoft Azure Recovery Services (MARS) Agent
+			- Microsoft Azure Backup Server (MABS)
+			- Data Protection Manager (DPM)
+- [Virtual Machines move guidance](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/move-limitations/virtual-machines-move-limitations)
+	- Not yet supported
+		- Scale sets with Standard LB and Public IP SKUs 
+		- Low-priority VM and SSs
+		- Dependents - All or Not att all!
+		- Individual Availability Sets
+		- Marketplace VMs with attached plans
+- To move an Azure subscription to a new management group, see [Move subscriptions](https://learn.microsoft.com/en-us/azure/governance/management-groups/manage#move-subscriptions).
 
 [ResourcesOperationsExtensions.MoveResources Method (Microsoft.Azure.Management.ResourceManager) - Azure for .NET Developers | Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/api/microsoft.azure.management.resourcemanager.resourcesoperationsextensions.moveresources?view=azure-dotnet)
 
@@ -983,6 +1037,10 @@ Create an (metric) Alert
 `Search -> Monitor -> Metrics -> New Alert Rule
 - Select scope, filter times..., then configure
 
+Create Action Groups - collection of notification preferences
+`Search -> Alerts -> Action Groups`
+
+
 Log Analytics Querying - Has drop down listing of useful input!
 `Search -> Monitor -> Logs -> Select a scope -> (Tables | Queries | Functions | Filters)  -> Run Query`
 - You can click to collapse the left panel
@@ -1078,7 +1136,7 @@ Onboard virtual machines to Azure Monitor VM Insights
 	- `Network Watcher -> Ip flow verify`
 - `Next Hop` - determine if traffic is being directed to the intended destination by showing the next hop'
 	- `Network Watcher -> Next Hop`
-- `Connection Monitor` - provides unified, end-to-end connection monitoring
+- `Connection Monitor` - provides unified, end-to-end connection monitoring in your Azure and hybrid networks!
 - `Traffic Analytics` - is a cloud-based solution that provides visibility into user and application activity in your cloud networks by analyzes NSG flow logs
 
 ## AzCopy 
@@ -1627,6 +1685,10 @@ echo http://$(az network public-ip show \
                 --output tsv)
 ```
 
+User Defined Route
+```bash
+az network route-table route create -g MyResourceGroup --route-table-name MyRouteTable -n StorageRoute --address-prefix Storage --next-hop-type VirtualAppliance --next-hop-ip-address 10.0.100.4
+```
 
 ## Powershell
 
@@ -1872,6 +1934,11 @@ Get-AzNetworkWatcherTopology `
   -TargetResourceGroupName $rGroup
 ```
 
+User Defined Route
+```
+New-AzRouteConfig -Name "StorageRoute" -AddressPrefix "Storage" -NextHopType "VirtualAppliance" -NextHopIpAddress "10.0.100.4"
+```
+
 Load Balancer
 ```powershell;
 $Location = $(Get-AzureRmResourceGroup -ResourceGroupName [sandbox resource group name]).Location
@@ -1987,3 +2054,6 @@ Get-AzDnsRecordSet -ResourceGroupName MyResourceGroup -ZoneName myzone.com -Name
 [AzCopy](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-files)
 [Deploy File Sync](https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-deployment-guide) 
 [Plan for IP addressing - Cloud Adoption Framework | Microsoft Learn](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/plan-for-ip-addressing)
+[Load Balancer Components](https://learn.microsoft.com/en-us/azure/load-balancer/components)
+[Azure virtual network traffic routing | Microsoft Learn](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-udr-overview)
+[Azure subscription limits and quotas - Azure Resource Manager | Microsoft Learn](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/azure-subscription-service-limits?toc=%2Fazure%2Fvirtual-network%2Ftoc.json#networking-limits)

@@ -32,12 +32,24 @@
             }
           },
           {
-            "id": "5bb40565dae9a8cf",
+            "id": "6de9fdbda8daeef2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Virtual-Machines.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "5bb40565dae9a8cf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cloud/Azure/Azure-Administration/Azure-Virtual-Networking/Azure-Administration-Azure-DNS.md",
                 "mode": "source",
                 "source": false
               }
@@ -121,7 +133,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Explorer",
+                "query": "custom script extension",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -130,11 +142,12 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 372.5
+    "width": 464.5
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -178,10 +191,13 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "1a44c6f30603f57d",
+  "active": "904463d60d8efa8d",
   "lastOpenFiles": [
     "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Virtual-Machines.md",
+    "Cloud/Azure/Azure-Administration/Azure-Identities-And-Governance/Azure-Administration-Subscriptions.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+    "Cloud/Azure/Azure-Administration/Azure-Virtual-Networking/Azure-Administration-Azure-DNS.md",
+    "Networks/Network-Theory/Network-Protocols/DNS-Defined.md",
     "Cloud/Cloud-Computing-Defined.md",
     "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Container-Registeries.md",
     "Cloud/Azure/Azure-Administration/Azure-Storage/Azure-Administration-Storage-Accounts.md",
@@ -198,8 +214,6 @@
     "Cloud/Azure/Azure-Administration/Azure-Identities-And-Governance",
     "Cloud/Azure/Azure-Administration/Azure-Identities-And-Governance/Azure-Administration-Azure-Roles-And-RBAC.md",
     "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Scale-Sets.md",
-    "Cloud/Azure/Azure-Administration/Azure-Virtual-Networking/Azure-Administration-Azure-DNS.md",
-    "Networks/Network-Theory/Network-Protocols/DNS-Defined.md",
     "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Azure-Container-Instances.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration.md",
     "Linux/Linux-Commands/Linux-Module-Commands.md",
@@ -210,7 +224,6 @@
     "Exploitation/CVEs/PrintNightmare.md",
     "Antivirus/Windows-Defender-For-AV-Evasion.md",
     "Windows/Windows-Concepts/Windows-Event-Logs.md",
-    "Windows/Windows-Tools.md",
     "Services/Databases/MongoDB",
     "Images/robleesansoffensiveforensicstimestomping.png.png",
     "Images/robleesansoffensiveforensicstimestomping.png",

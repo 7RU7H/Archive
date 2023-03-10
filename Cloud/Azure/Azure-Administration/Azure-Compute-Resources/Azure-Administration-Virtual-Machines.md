@@ -148,7 +148,44 @@ Azure Bastion is a service you deploy that lets you connect to a virtual machine
 
 You have to create a Azure BastionSubnet called `AzureBastionSubnet` with atleast /27 size.
 
-`Search -> Bastions` or after `Creating a Virtual Machine`
+`Search -> Bastions` or after `Creating a Virtual Machine`Moving Resources - there are edge cases - [see Documentation for more]([Move resources to a new subscription or resource group - Azure Resource Manager | Microsoft Learn](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/move-resource-group-and-subscription)):
+- If you're using Azure Stack Hub, you can't move resources between groups.
+- [App Services move guidance](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/move-limitations/app-service-move-limitations)
+	- No existing Apps or TLS/SSL certificate cross region is not allowed!  
+	- Resources in Resource Group always move together!
+	- No Apps with private endpoints
+- [Azure DevOps Services move guidance](https://learn.microsoft.com/en-us/azure/devops/organizations/billing/change-azure-subscription?toc=/azure/azure-resource-manager/toc.json)
+- [Classic deployment model move guidance](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/move-limitations/classic-model-move-limitations) - Classic Compute, Classic Storage, Classic Virtual Networks, and Cloud Services 
+	- Inter-Sub
+	- Lots of Operational restrictions (One-X-at-a-Time or  (No Vnets, VM moved only All VMs only with Cloud Service) not RBAC 
+	- Sub-To-Sub 
+		- Same AAD Tenent
+		- No Cloud Service Provider subs
+		- Target must not have Classic Resources
+		- REST API for classic moves - no Resource Manager
+- [Networking move guidance](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/move-limitations/networking-move-limitations)
+	- Avoid AKS VNet moves
+	- Disable peering
+	- No VPN Gateway cross-sub moves
+	- Connat move a Subnet that has resource navigation links 
+- [Recovery Services move guidance](https://learn.microsoft.com/en-us/azure/backup/backup-azure-move-recovery-services-vault?toc=/azure/azure-resource-manager/toc.json)
+	- Permissions
+	- One-At-A-Time
+	- Vaults restrictions - Hacker Senses
+		- Key Vault and VMs from same region
+		- Only move a vault that contains any of the following types of backup items any not listed -  are stopped and  data permanently deleted before move:
+			- Azure Virtual Machines
+			- Microsoft Azure Recovery Services (MARS) Agent
+			- Microsoft Azure Backup Server (MABS)
+			- Data Protection Manager (DPM)
+- [Virtual Machines move guidance](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/move-limitations/virtual-machines-move-limitations)
+	- Not yet supported
+		- Scale sets with Standard LB and Public IP SKUs 
+		- Low-priority VM and SSs
+		- Dependents - All or Not att all!
+		- Individual Availability Sets
+		- Marketplace VMs with attached plans
+- To move an Azure subscription to a new management group, see [Move subscriptions](https://learn.microsoft.com/en-us/azure/governance/management-groups/manage#move-subscriptions).
 
 
 #### Update Management

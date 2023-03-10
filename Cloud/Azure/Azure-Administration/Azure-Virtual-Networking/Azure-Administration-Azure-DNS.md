@@ -15,7 +15,7 @@ Azure DNS is extended DNS - see *Alias, Record Set, Time To Live*  - no domain n
 
 Azure has a special record types 
 - **Azure Alias** 
-	-  Points to directly to an Azure Resource instead of IP or hostname to avoid dangling domains 
+	- Points to directly to an Azure Resource instead of IP or hostname to avoid dangling domains 
 	- Updates DNS record automatically set when IP addresses change
 	- Used for:
 		- Hosts load-balanced application at zone apex with a Traffic Manager profile
