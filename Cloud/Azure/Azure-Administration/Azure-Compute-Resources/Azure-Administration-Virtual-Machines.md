@@ -70,6 +70,26 @@ You can monitorv Domains
 - Newest VM - Delete the newest created VM, balanced across AZsr your VMs on the go 
 - With [mobile App](https://azure.microsoft.com/en-gb/products/app-service/mobile/). 
 
+#### Availabilty Sets
+
+An availability set is a logical feature you can use to ensure a group of related identical virtual machines are deployed together and torn down together. Azure manages physical location, Administrator builds:
+- Azure Portal
+- ARM - [[Azure-Administration-Azure-Resource-Manager]]
+- Scripting
+- API Tools
+Consider
+- Redundancy
+- Seperation of Application Tiers - no single point of failure
+- Managed Disk for Block-Level Storage
+
+Scale sets:
+- Update Domains -  is a group of nodes that are upgraded together
+- Fault Domains -  is a group of nodes that represent a physical unit of failure
+
+Availability Zone
+- Zonal Services pin each resource to a specific zone.
+- Zone-Redundant services are zone-redundant, the platform replicates automatically across all zones.
+
 ## Azure Portal Workflows
 
 Create a VM

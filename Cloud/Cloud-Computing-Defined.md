@@ -23,6 +23,7 @@ Public Cloud
 	Multi Location - Different customers
 Private Cloud - On premises infrastucture to host capacity  
 	Capital Expenditure - Assets with lifespan that is for upfront
+	Block-Level Storage for persistent Data
 Hybrid Cloud
 
 ## Services - \*aaS

@@ -40,6 +40,13 @@ Deployment model - Resource, Manager, Classic
 
 A Comparison of Storage Types
 ![](azure-storageaccountcomparison.png)
+**Types:**
+-   **Azure Blob Storage**. Blob storage is used to store unstructured data as a binary large object (blob).
+-   **Azure Table Storage**. Table storage is used to store NoSQL, semi-structured data.
+-   **Azure Queue Storage**. Queue storage is used to store messages in a queue, which can then be accessed and processed by applications through HTTP(S) calls.
+-   **Azure Files**. Azure Files is a file-sharing service that enables access through the Server Message Block protocol, similar to traditional file servers.
+-   **Azure Data Lake Storage**. Azure Data Lake, based on Apache Hadoop, is designed for large data volumes and can store unstructured and structured data. Azure Data Lake Storage Gen1 is a dedicated service. Azure Data Lake Storage Gen2 is Azure Blob Storage with the hierarchical namespace feature enabled on the account.
+
 
 #### Storage Services
 
@@ -184,11 +191,18 @@ The greater the level of redundancy the greater the expense:
 
 #### Azure Storage Explorer
 
-Standalone app to work with Azure Storage data on Windows, Linux and macOS - create Blob containers, uplaod files, create snopshops of Disk. Requires both: management (Azure Resource Manager) and data layer permissions to allow full access to your resources.
+Storage Explorer is a GUI application developed by Microsoft to simplify access to, and the management of, data stored in Azure storage accounts. Storage Explorer is available on Windows, macOS, and Linux. - create Blob containers, upload files, create snapshots of Disk. Requires both: management (Azure Resource Manager) and data layer permissions to allow full access to your resources.
 
-Attach to external Storage Account with: `Account Name` and `Account Key`
+Storage Explorer gives you the ability to manage the data stored in multiple Azure storage accounts and across Azure subscriptions.
 
-
+- Signin through `StorageExplorer.exe` with an Azure Account
+	- Add a resource via Azure AD, choosing the Azure tenant and the associated account
+- Or SAS
+	- Then find connection node: `Local & attached > Storage Accounts > Attached Container > Service`
+- Or with Storage account name and key
+- For Data Lake Storage Gen1:
+	-  URI associated with the data lake
+- 
 #### Azure Import/Export Service
 
 The Azure Import/Export service is used to securely import large amounts of data to Azure Blob Storage and Azure Files by shipping disk drives to an Azure datacenter. This service can also be used to transfer data from Azure Blob Storage to disk drives and ship to your on-premises sites. Steps regardless

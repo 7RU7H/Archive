@@ -32,6 +32,30 @@
             }
           },
           {
+            "id": "5bb40565dae9a8cf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Virtual-Machines.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "5130aa7e8f6ac4da",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cloud/Cloud-Computing-Defined.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "871d0611e74122ea",
             "type": "leaf",
             "state": {
@@ -97,7 +121,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "Explorer",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -156,12 +180,14 @@
   },
   "active": "1a44c6f30603f57d",
   "lastOpenFiles": [
+    "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Virtual-Machines.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+    "Cloud/Cloud-Computing-Defined.md",
+    "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Container-Registeries.md",
+    "Cloud/Azure/Azure-Administration/Azure-Storage/Azure-Administration-Storage-Accounts.md",
     "Cloud/Azure/Azure-Administration/Azure-Identities-And-Governance/Azure-Administration-Azure-Policies.md",
     "Cloud/Azure/Azure-Administration/Azure-Virtual-Networking/Azure-Administration-Virtual-Networking.md",
     "Cloud/Azure/Azure-Administration/Azure-Identities-And-Governance/Azure-Administration-AD-Administration.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
-    "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Container-Registeries.md",
-    "Cloud/Azure/Azure-Administration/Azure-Storage/Azure-Administration-Storage-Accounts.md",
     "Cloud/Azure/Azure-Administration/Azure-Storage/Azure-Administration-Blobs.md",
     "Cloud/Azure/Azure-Administration/Azure-Storage/Azure-Administration-Files.md",
     "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Maintenance",
@@ -170,7 +196,6 @@
     "Cloud/Azure/Azure-Administration/Azure-Compute-Resources",
     "Cloud/Azure/Azure-Administration/Azure-Storage",
     "Cloud/Azure/Azure-Administration/Azure-Identities-And-Governance",
-    "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Virtual-Machines.md",
     "Cloud/Azure/Azure-Administration/Azure-Identities-And-Governance/Azure-Administration-Azure-Roles-And-RBAC.md",
     "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Scale-Sets.md",
     "Cloud/Azure/Azure-Administration/Azure-Virtual-Networking/Azure-Administration-Azure-DNS.md",
@@ -186,7 +211,6 @@
     "Antivirus/Windows-Defender-For-AV-Evasion.md",
     "Windows/Windows-Concepts/Windows-Event-Logs.md",
     "Windows/Windows-Tools.md",
-    "Tools/Windows/Process-Hacker.md",
     "Services/Databases/MongoDB",
     "Images/robleesansoffensiveforensicstimestomping.png.png",
     "Images/robleesansoffensiveforensicstimestomping.png",

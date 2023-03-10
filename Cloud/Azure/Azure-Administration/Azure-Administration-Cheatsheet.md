@@ -27,239 +27,6 @@ Export-Az # Capture to a template
 1. Management Groups and Subscriptions - Context
 1. Resource Group - Everything exists in resource group, no nesting allowed, not a boundary of access
 
-## Resources
-
-Azure Resource Manager provides a consistent management layer to perform tasks through Azure PowerShell, Azure CLI, Azure portal, REST API, and client SDKs.
-
-Important
-- SLA - Service Level Agree is ratio of commitments to uptime and connectivity
-	- VM 99.95% in a Avaliability Set
-	- VM with Premium SSD 99.9%
-	- VM with Standard SSD 99.5%
-	- VM with Standard HDD 95%
-
-#### Create Resources
-
-Create a Disk
-`Search: Disk -> Create -> Basics -> Encryption -> Networking -> Advanced -> Tags -> Review + create` Considerations: SKUs; Size, IOPs and cost; Tags - `review ->` Wait for deployment, `Go to resource` 
-
-Create a Resource Group
-`Resource Groups -> Create` - Add tags for QoL 
-
-Administrating a Resource
-`Resources -> Resource Group -> Deployments -> $DeploymentName 
-
-Administrating a Resource Group
-`Resource Groups -> $ResourceGroup -> Settings` 
-- Deployments - Redeploy, delete
-- Security - Microsoft Defender for the Cloud
-- Policies - Assign Policies Initiatives
-- Properties - Copy and paste Properties
-- Locks - Apply locks on resources
-
-#### Moving Resources
-Moving Resources - there are edge cases - [see Documentation for more]([Move resources to a new subscription or resource group - Azure Resource Manager | Microsoft Learn](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/move-resource-group-and-subscription)):
--   If you're using Azure Stack Hub, you can't move resources between groups.
--   [App Services move guidance](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/move-limitations/app-service-move-limitations) -  Web app to Web app cross region is not allowed!  
--   [Azure DevOps Services move guidance](https://learn.microsoft.com/en-us/azure/devops/organizations/billing/change-azure-subscription?toc=/azure/azure-resource-manager/toc.json)
--   [Classic deployment model move guidance](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/move-limitations/classic-model-move-limitations) - Classic Compute, Classic Storage, Classic Virtual Networks, and Cloud Services
--   [Networking move guidance](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/move-limitations/networking-move-limitations)
--   [Recovery Services move guidance](https://learn.microsoft.com/en-us/azure/backup/backup-azure-move-recovery-services-vault?toc=/azure/azure-resource-manager/toc.json)
--   [Virtual Machines move guidance](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/move-limitations/virtual-machines-move-limitations)
--   To move an Azure subscription to a new management group, see [Move subscriptions](https://learn.microsoft.com/en-us/azure/governance/management-groups/manage#move-subscriptions).
-
-[ResourcesOperationsExtensions.MoveResources Method (Microsoft.Azure.Management.ResourceManager) - Azure for .NET Developers | Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/api/microsoft.azure.management.resourcemanager.resourcesoperationsextensions.moveresources?view=azure-dotnet)
-
-`Resource Groups -> $Src -> Tick $Resource -> Move -> Move to another resource group`
-
-
-## ARM & Bicep Templates
-
-Upload, Download and Modify a Template
-`Resources -> Resource Group -> Deployments -> $DeploymentName -> Template` 
-- Download and Input for uploading
-
-Create a Custom Template
-`Search "Custom template" -> Deploy Custom Template -> Build your own template in the editor`
-- `Edit Template`
-- `Edit Parameters` - file named parameters 
-- `Load file` to upload - file named template
-- `Project, Instance details` - can be modified
-
-Basic Skeleton of template with comments explaining use case
-```json
-{
-  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
-  "contentVersion": "1.0.0.0",
-  "apiProfile": "", // Valure to avoid having to specify API versions foreach resource in the template 
-  "parameters": {}, //values passed to template 
-  "variables": {}, // transform parameteres or resources properties using function expressions
-  "functions": [], // User-Defined functions available within the template
-  "resources": [] // Azure resource you want to deploy or update 
-}
-```
-
-Example Resource use
-```json
-//...
-  "resources": [
-      {
-          "type": "Microsoft.Storage/storageAccounts", // {ResourceProvider}/ResourceType
-          "apiVersion": "2019-01-01", //resource proivdes provider their own API!
-          "name": "{provide-unique-name}", // variable used here
-          "location": "eastus", //region to be deployed
-          "sku": {
-              "name": "Standard_LRS"
-          },
-          "kind": "StorageV2",
-          "properties": {
-              "supportsHttpsTrafficOnly": true
-          }
-      }
-  ]
-//...
-```
-- Must lookup resource providers API version!
-
-
-## Azure VMs
-
-Create a VM
-`Azure services -> Create resource -> Search (resource - Windows Server)`
-Provide configurations for Basic, Disks, Networking (**BEWARE** Azure creates default - it is non trivial to change after creation - CHECK! - Address space and Subnets!), Managemnt, Advanced; Next:
-1. Create an NSG
-2. Create inbound traffic rule 
-3. Attached data disks - best practice on App data storage not temp or C:
-
-Connect to a VM via RDP
-`Search All Resources -> $name -> Connect -> select RDP`
-
-## Storage Accounts
-
-Create in Azure Software Development Kit SDK or Portal `Storage Account -> Share Access signature`.
-
-Create Storage Account `Search -> Storage Accounts`, provide name, location, redundancy 
-
-Configure Azure Storage Encryption:
-`Storage accounts -> $storage_accounts -> EncBootstrap web applications
-
-Create a Azure Files Share
-`Storage Account -> $storage_account -> File Shares`
-- Open port 445 - check firewall
-- Enable - `Secure tranfer required`
-
-Accessing a Azure a File Share - Mount with File explorer!
-UNC pathing:  `\\$StorageAccount.file.core.windows.net\$FileShare` 
-
-With Linux file share mounting can be done on-demand with the `mount` command or on-boot (persistent) by creating an entry in /etc/fstab.
-
-[Deploy File Sync](https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-deployment-guide) 
-`Azure File Sync -> Create` - Marketplace - not default, but covered in AZ 104
-1. Deploy the Storage Sync Service
-2. Prepare Windows Server(s)
-	1. Install Azure File Sync agent
-	2. Register servers with Storage Sync Service
-3. Resource Group for deployment
-4. Deployment location
-
-Azure File Sync agent:
-```powershell
-Microsoft.StorageSync
-```
-
-- Beware Legacy and older generation require Powershell at 5.1
-- And may require disabling of Internet Explorer Enhanced Security for Admins and Users - **ONLY** for initial server registration! - RESET!
-	- FileSyncSvc.exe - service; StoragSync.sys - system filter; PowerShell cmdlets:
-```powershell
-# Deafult location for cmdlets 
-C:\\Program Files\\Azure\\StorageSyncAgent\\StorageSync.Management.PowerShell.Cmdlets.dll
-C:\\Program Files\\Azure\\StorageSyncAgent\\StorageSync.Management.ServerCmdlets.dll
-```
-
-Create file share snapshots
-`Storage Account -> $storage_account -> File Shares -> $file_share -> Snapshots
-
-Create Container for Blob Storage
-`Azure Storage accounts -> + Container -> Name and Change "Public Access Level"`
-
-Use Azure Blob Storage lifecycle management policy rules to:
-`Storage Account -> $storage_account -> Lifecycle Management`
-- Rule-based run scheduling
-- Rule-based condition to containers or a subset of blobs
-- Delete blobs 
-- Transition Storage tier 
-
-Create a Stored Access Policy for a Container
-`Storage Accounts -> $storage_account -> Container -> Access Policy`
-
-List or Add rules for Lifecycle Policy management 
-`Search Storage Account -> $storageAccount -> Data Management -> Lifecycle Management -> List View | Add rules`
-
-AZcopy is installed by default on the CloudShell
-```powershell
-azcopy copy [source] [destination] [flags]
-azcopy copy $localpath $remotepath # upload
-azcopy copy $remotepath $localpath # download
-azcopy login # create URI to login
-# Supports wildcard include and exclude
-azcopy copy [source] [destination] --include
-azcopy copy [source] [destination] --exclude 
-```
-Moving or storing is done region based. 
-
-URL for Azure remote container: `Home -> Storage Accounts -> $ContainerName -> Properties` - must be globally unique!
-
-Create a SAS:
-`Storage Accounts -> $storage_account -> search SAS` configure and `Generate SAS and connection string`. Used for:
-- Connection strings
-- SAS Token
-- Blob service SAS URL
-- Queue service SAS URL
-- Table service SAS URL
-
-Con be done from `$resource`
-
-URI Format with parametres explained
-```powershell
-https://myaccount.blob.core.windows.net/$containerName/file.txt
-?sv= # Storage services version
-&ss # Storage service
-&sip # IP range
-&spr # Protocol
-&st # Start Time
-&se # Expiration Time
-&sr # Storage Resource - b for blob, q for queue 
-&sp # permissions  r, wr
-&sig # SHA256 hash - the signature
-```
-
-Storage access
-**Container service** - `//`**`mystorageaccount`**`.blob.core.windows.net`
-**Table service** - `//`**`mystorageaccount`**`.table.core.windows.net` 
-**Queue service** - `//`**`mystorageaccount`**`.queue.core.windows.net`
-**File service** - `//`**`mystorageaccount`**`.file.core.windows.net`
-**Blob Access** - `//`**`mystorageaccount`**`.blob.core.windows.net/`**`mycontainer`**`/`**`myblob`**.
-
-Configure Custom Domains - Either:
-- Direct mapping - create a `CNAME` record
-- Intermediary domain mapping (when domain is already in use) - prepend `asverify` to subdomain it permit Azure to recognize your custom domain thereby using a intermediary domain to validate the domain.
-
-Secure Storage endpoints
-`Storage Accounts -> $storage_account -> Networking Firewalls and virtual networks`; restrict access:
-- Enabled from all networks
-- Enabled from selected virtual networks and IP address
-- Disabled
-
-Import/Export Jobs - physical disk to data center
-1. Identity data
-2. Calculate transportation disk requirement
-3. `Azure Export Jobs` or install and run `WAImportExport` top copy data to disk
-4. Physical transportation
-
-Shipping with physical disk drives large amounts of data to a Azure Blob and Azure Files to a Azure datacenter with CLI tool for preparation - `WAImportExport` - Window 64 bit only
-- Export only from Azure Blob
-- Up to 10 empty drives per job
-
 ## Azure Policies
 
 Governance is about enforcement of rules and ensuring proper functioning to standards. 
@@ -351,7 +118,7 @@ Levels:
 
 Important Distinctions:
 - Azure AD Directory Domain Services provides managed domain services
-- Azure AD Connect is hybrid service to connect on-premise to Azure Account
+- Azure AD Connect is Hybrid Service to connect on-premise to Azure Account
 
 
 Manage Tenants
@@ -415,7 +182,7 @@ Name | Username | Initial Password | Block Sign in | Firstname | Lastname
 John Doe | jdoe | password123! | No | John | Doe
 
 Bulk Operations
-`Search -> Users -> Bulk operations -> Create/invite/delete` 
+`Search -> Users -> Bulk operations -> Create/Invite/Delete` 
 
 Manage Groups
 `Search Groups - > Groups -> New group/Download groups
@@ -449,7 +216,6 @@ Notifiications - Notification when and on resets
 Customization - Customize Helpdesk link
 On-Premise Integration - As stated
 Administrator Policy - Admin password reset policy.
-
 
 ## Azure Virtual Networking
 
@@ -674,7 +440,158 @@ Type Priority - NAT Rule before Network Rule before Application Rule.
 - **Application** rules define fully qualified domain names (FQDNs) that can be accessed from a subnet
 
 
-## VM Scale Sets
+## Resource Groups and Resources
+
+Azure Resource Manager provides a consistent management layer to perform tasks through Azure PowerShell, Azure CLI, Azure portal, REST API, and client SDKs.
+
+Important
+- SLA - Service Level Agree is ratio of commitments to uptime and connectivity
+	- VM 99.95% in a Avaliability Set
+	- VM with Premium SSD 99.9%
+	- VM with Standard SSD 99.5%
+	- VM with Standard HDD 95%
+
+#### Create Resources
+
+Create a Disk
+`Search: Disk -> Create -> Basics -> Encryption -> Networking -> Advanced -> Tags -> Review + create` Considerations: SKUs; Size, IOPs and cost; Tags - `review ->` Wait for deployment, `Go to resource` 
+
+Create a Resource Group
+`Resource Groups -> Create` - Add tags for QoL 
+
+Administrating a Resource
+`Resources -> Resource Group -> Deployments -> $DeploymentName 
+
+Administrating a Resource Group
+`Resource Groups -> $ResourceGroup -> Settings` 
+- Deployments - Redeploy, delete
+- Security - Microsoft Defender for the Cloud
+- Policies - Assign Policies Initiatives
+- Properties - Copy and paste Properties
+- Locks - Apply locks on resources
+
+#### Moving Resources
+Moving Resources - there are edge cases - [see Documentation for more]([Move resources to a new subscription or resource group - Azure Resource Manager | Microsoft Learn](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/move-resource-group-and-subscription)):
+-   If you're using Azure Stack Hub, you can't move resources between groups.
+-   [App Services move guidance](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/move-limitations/app-service-move-limitations) -  Web app to Web app cross region is not allowed!  
+-   [Azure DevOps Services move guidance](https://learn.microsoft.com/en-us/azure/devops/organizations/billing/change-azure-subscription?toc=/azure/azure-resource-manager/toc.json)
+-   [Classic deployment model move guidance](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/move-limitations/classic-model-move-limitations) - Classic Compute, Classic Storage, Classic Virtual Networks, and Cloud Services
+-   [Networking move guidance](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/move-limitations/networking-move-limitations)
+-   [Recovery Services move guidance](https://learn.microsoft.com/en-us/azure/backup/backup-azure-move-recovery-services-vault?toc=/azure/azure-resource-manager/toc.json)
+-   [Virtual Machines move guidance](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/move-limitations/virtual-machines-move-limitations)
+-   To move an Azure subscription to a new management group, see [Move subscriptions](https://learn.microsoft.com/en-us/azure/governance/management-groups/manage#move-subscriptions).
+
+[ResourcesOperationsExtensions.MoveResources Method (Microsoft.Azure.Management.ResourceManager) - Azure for .NET Developers | Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/api/microsoft.azure.management.resourcemanager.resourcesoperationsextensions.moveresources?view=azure-dotnet)
+
+`Resource Groups -> $Src -> Tick $Resource -> Move -> Move to another resource group`
+
+
+## ARM & Bicep Templates
+
+Upload, Download and Modify a Template
+`Resources -> Resource Group -> Deployments -> $DeploymentName -> Template` 
+- Download and Input for uploading
+
+Create a Custom Template
+`Search "Custom template" -> Deploy Custom Template -> Build your own template in the editor`
+- `Edit Template`
+- `Edit Parameters` - file named parameters 
+- `Load file` to upload - file named template
+- `Project, Instance details` - can be modified
+
+Basic Skeleton of template with comments explaining use case
+```json
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "apiProfile": "", // Valure to avoid having to specify API versions foreach resource in the template 
+  "parameters": {}, //values passed to template 
+  "variables": {}, // transform parameteres or resources properties using function expressions
+  "functions": [], // User-Defined functions available within the template
+  "resources": [] // Azure resource you want to deploy or update 
+}
+```
+
+Example Resource use
+```json
+//...
+  "resources": [
+      {
+          "type": "Microsoft.Storage/storageAccounts", // {ResourceProvider}/ResourceType
+          "apiVersion": "2019-01-01", //resource proivdes provider their own API!
+          "name": "{provide-unique-name}", // variable used here
+          "location": "eastus", //region to be deployed
+          "sku": {
+              "name": "Standard_LRS"
+          },
+          "kind": "StorageV2",
+          "properties": {
+              "supportsHttpsTrafficOnly": true
+          }
+      }
+  ]
+//...
+```
+- Must lookup resource providers API version!
+
+
+## Azure VMs
+
+Create a VM
+`Azure services -> Create resource -> Search (resource - Windows Server)`
+Provide configurations for Basic, Disks, Networking (**BEWARE** Azure creates default - it is non trivial to change after creation - CHECK! - Address space and Subnets!), Managemnt, Advanced; Next:
+1. Create an NSG
+2. Create inbound traffic rule 
+3. Attached data disks - best practice on App data storage not temp or C:
+
+Connect to a VM via RDP
+`Search All Resources -> $name -> Connect -> select RDP`
+
+
+#### Availability Sets
+
+Availability Set Group of related identical virtual machines are (un)deployed together
+- Built: Azure Portal, ARM, Scripting, API Tools, Managed Disk for Block-Level Storage
+- SLA: 99.95%
+- Scale sets:
+	- Update Domains -  is a group of nodes that are upgraded together - `Configure amount`
+	- Fault Domains -  is a group of nodes that represent a physical unit of failure - `Configure amount`
+- Use managed disks? `No (Classics) or Yes (Aligned)`
+Availability Zone
+- Zonal Services pin each resource to a specific zone.
+- Zone-Redundant services are zone-redundant, the platform replicates automatically across all zones.
+
+#### Azure Automation
+
+Create Automation Account
+`Search Automation Accounts -> Automation Accounts -> + Create
+
+Automation Accounts - `Search -> Automataion Accounts -> Create`
+`Subscriptions -> Resource Providers` - we need:
+- `Microsoft.AlertsManagement` - https://learn.microsoft.com/en-us/azure/azure-monitor/insights/alert-management-solution
+- `Microsoft.insights`  - https://learn.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview?tabs=net
+
+Compile Desired State Configuration (DSC) script 
+`Search Automation Accounts -> Automation Accounts -> $AutomationAccount -> State configuration (DSC) -> Configurations -> Select DSC script -> Compile -> Yes`
+
+Register VMs with your Azure Automation Account
+`Search Automation Accounts -> Automation Accounts -> $AutomationAccount -> State configuration (DSC) -> Nodes + Add -> Configure settings -> Confirm`
+
+Push is simple powershell include in the Powershell
+Pulling a configuration for lots of nodes - also included in the Powershell section
+1. Set up a DSC and create a DSC configuration
+2. Upload DSC script to Azure Automation account - create if required
+3. Add required modules, compile configuration
+4. Register VM
+5. On VM Install DSC VM extension
+6. Install WMF
+7. LCM applies the desired state -
+	1. Poll Pull Server 
+	2. Download
+	3. Compare
+	4. Update
+
+#### VM Scale Sets
 
 Create and Manage VM Scale Sets
 `Search -> Virtual machine scale sets` 
@@ -686,9 +603,13 @@ Create and Manage VM Scale Sets
 `Search -> Virtual Network -> $Vnet (With Subnet, VMs, DNS, NSGs, etc configured)` in the `Private DNS Zone -> Virtual Network Link -> + Add - provide a Link name, Vnet` 
  - Configure Scaling in the `Scaling` tab; 
 	 - Policy - min/max number of instances; manual or autoscaling 
-	 - Scale in - CPU threshold, decrease of instances
-	 - Scale out - CPU threshold, duration, increase of instances
+	 - Scale Vertically - CPU threshold, decrease of instances
+	 - Scale Horizonally - CPU threshold, duration, increase of instances
 	 - Scale-In policy - default, newest, oldest VMs
+
+Scale sets:
+- Update Domains -  is a group of nodes that are upgraded together
+- Fault Domains -  is a group of nodes that represent a physical unit of failure
 
 Size Scaling
 `Virtual Machines -> $VM -> Size -> Resize by select new size`
@@ -707,7 +628,7 @@ Upgrading VM scale sets
 Load a script with Script with Custom Script Extension (automatically launch and execute virtual machine customization tasks after initial machine configuration - timesout after 90 minutes)
 `Search -> VM scale sets -> Instances -> Select instances -> Upgrade` - check with Load balancer Frontend IP: `Search -> Load Balancers -> $LoadBalancer -> Frontend IP configuration -> Copy address` 
 
-`Search -> VM scale sets -> Scaling -> Manual Scaling or Custom autoscale`
+`Search -> VM Scale Sets -> Scaling -> Manual Scaling or Custom autoscale`
 if Custom:
 - Configure the Default auto created scale condition 
 	- Add rules!!!
@@ -729,6 +650,143 @@ Custom Script Extension (automatically launch and execute virtual machine custom
 
 Export Template, custom template for mass use
 `VMs -> $CustomVM -> Export Template`
+
+
+## Storage Accounts
+
+Create in Azure Software Development Kit SDK or Portal `Storage Account -> Share Access signature`.
+
+Create Storage Account `Search -> Storage Accounts`, provide name, location, redundancy 
+
+Configure Azure Storage Encryption:
+`Storage accounts -> $storage_accounts -> EncBootstrap web applications
+
+Create a Azure Files Share
+`Storage Account -> $storage_account -> File Shares`
+- Open port 445 - check firewall
+- Enable - `Secure tranfer required`
+
+Accessing a Azure a File Share - Mount with File explorer!
+UNC pathing:  `\\$StorageAccount.file.core.windows.net\$FileShare` 
+
+With Linux file share mounting can be done on-demand with the `mount` command or on-boot (persistent) by creating an entry in /etc/fstab.
+
+[Deploy File Sync](https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-deployment-guide) 
+`Azure File Sync -> Create` - Marketplace - not default, but covered in AZ 104
+1. Deploy the Storage Sync Service
+2. Prepare Windows Server(s)
+	1. Install Azure File Sync agent
+	2. Register servers with Storage Sync Service
+3. Resource Group for deployment
+4. Deployment location
+
+Azure File Sync agent:
+```powershell
+Microsoft.StorageSync
+```
+
+- Beware Legacy and older generation require Powershell at 5.1
+- And may require disabling of Internet Explorer Enhanced Security for Admins and Users - **ONLY** for initial server registration! - RESET!
+	- FileSyncSvc.exe - service; StoragSync.sys - system filter; PowerShell cmdlets:
+```powershell
+# Deafult location for cmdlets 
+C:\\Program Files\\Azure\\StorageSyncAgent\\StorageSync.Management.PowerShell.Cmdlets.dll
+C:\\Program Files\\Azure\\StorageSyncAgent\\StorageSync.Management.ServerCmdlets.dll
+```
+
+Create file share snapshots
+`Storage Account -> $storage_account -> File Shares -> $file_share -> Snapshots
+
+Create Container for Blob Storage
+`Azure Storage accounts -> + Container -> Name and Change "Public Access Level"`
+
+Use Azure Blob Storage lifecycle management policy rules to:
+`Storage Account -> $storage_account -> Lifecycle Management`
+- Rule-based run scheduling
+- Rule-based condition to containers or a subset of blobs
+- Delete blobs 
+- Transition Storage tier 
+
+Create a Stored Access Policy for a Container
+`Storage Accounts -> $storage_account -> Container -> Access Policy`
+
+List or Add rules for Lifecycle Policy management 
+`Search Storage Account -> $storageAccount -> Data Management -> Lifecycle Management -> List View | Add rules`
+
+AZcopy is installed by default on the CloudShell
+```powershell
+azcopy copy [source] [destination] [flags]
+azcopy copy $localpath $remotepath # upload
+azcopy copy $remotepath $localpath # download
+azcopy login # create URI to login
+# Supports wildcard include and exclude
+azcopy copy [source] [destination] --include
+azcopy copy [source] [destination] --exclude 
+```
+Moving or storing is done region based. 
+
+URL for Azure remote container: `Home -> Storage Accounts -> $ContainerName -> Properties` - must be globally unique!
+
+Create a SAS:
+`Storage Accounts -> $storage_account -> search SAS` configure and `Generate SAS and connection string`. Used for:
+- Connection strings
+- SAS Token
+- Blob service SAS URL
+- Queue service SAS URL
+- Table service SAS URL
+
+Con be done from `$resource`
+
+URI Format with parametres explained
+```powershell
+https://myaccount.blob.core.windows.net/$containerName/file.txt
+?sv= # Storage services version
+&ss # Storage service
+&sip # IP range
+&spr # Protocol
+&st # Start Time
+&se # Expiration Time
+&sr # Storage Resource - b for blob, q for queue 
+&sp # permissions  r, wr
+&sig # SHA256 hash - the signature
+```
+
+Storage access
+**Container service** - `//`**`mystorageaccount`**`.blob.core.windows.net`
+**Table service** - `//`**`mystorageaccount`**`.table.core.windows.net` 
+**Queue service** - `//`**`mystorageaccount`**`.queue.core.windows.net`
+**File service** - `//`**`mystorageaccount`**`.file.core.windows.net`
+**Blob Access** - `//`**`mystorageaccount`**`.blob.core.windows.net/`**`mycontainer`**`/`**`myblob`**.
+
+Configure Custom Domains - Either:
+- Direct mapping - create a `CNAME` record
+- Intermediary domain mapping (when domain is already in use) - prepend `asverify` to subdomain it permit Azure to recognize your custom domain thereby using a intermediary domain to validate the domain.
+
+Secure Storage endpoints
+`Storage Accounts -> $storage_account -> Networking Firewalls and virtual networks`; restrict access:
+- Enabled from all networks
+- Enabled from selected virtual networks and IP address
+- Disabled
+
+Import/Export Jobs - physical disk to data center
+1. Identity data
+2. Calculate transportation disk requirement
+3. `Azure Export Jobs` or install and run `WAImportExport` top copy data to disk
+4. Physical transportation
+
+Shipping with physical disk drives large amounts of data to a Azure Blob and Azure Files to a Azure datacenter with CLI tool for preparation - `WAImportExport` - Window 64 bit only
+- Export only from Azure Blob
+- Up to 10 empty drives per job
+
+`StorageExplorer.exe` - manage the data stored in multiple Azure storage accounts and across Azure subscriptions.
+- Signin through `StorageExplorer.exe` with an Azure Account
+	- Add a resource via Azure AD, choosing the Azure tenant and the associated account
+- Or SAS
+	- Then find connection node: `Local & attached > Storage Accounts > Attached Container > Service`
+- Or with Storage account name and key
+- For Data Lake Storage Gen1:
+	-  URI associated with the data lake
+
 
 ## Azure App Services
 
@@ -787,30 +845,7 @@ Backup Azure App Service (App configuration settings, File content, connected Da
 - Storage Container - [[Azure-Administration-Storage-Accounts]]
 Provide the in `App Services -> $App -> Backup `
 
-## Azure Automation
 
-Create Automation Account
-`Search Automation Accounts -> Automation Accounts -> + Create
-
-Compile Desired State Configuration (DSC) script 
-`Search Automation Accounts -> Automation Accounts -> $AutomationAccount -> State configuration (DSC) -> Configurations -> Select DSC script -> Compile -> Yes`
-
-Register VMs with your Azure Automation Account
-`Search Automation Accounts -> Automation Accounts -> $AutomationAccount -> State configuration (DSC) -> Nodes + Add -> Configure settings -> Confirm`
-
-Push is simple powershell include in the Powershell
-Pulling a configuration for lots of nodes - also included in the Powershell section
-1. Set up a DSC and create a DSC configuration
-2. Upload DSC script to Azure Automation account - create if required
-3. Add required modules, compile configuration
-4. Register VM
-5. On VM Install DSC VM extension
-6. Install WMF
-7. LCM applies the desired state -
-	1. Poll Pull Server 
-	2. Download
-	3. Compare
-	4. Update
 
 ## Containerization
 
