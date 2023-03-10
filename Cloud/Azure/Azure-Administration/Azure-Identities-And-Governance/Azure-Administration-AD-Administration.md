@@ -90,6 +90,8 @@ Federation integration - hybrid environment for local AD FS infrastucture - cert
 Synchronization - syncing data 
 Health Monitoring - monitoring in Azure Portal
 
+
+
 #### Azure AD
 
 Users 

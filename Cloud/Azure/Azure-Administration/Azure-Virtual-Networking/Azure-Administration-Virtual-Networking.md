@@ -159,7 +159,7 @@ For Domains:
 	- Defines a group of virtual machines that share a common set of hardware that share a single point of failure
 	- 2 domains work togther to mitigate against hardware failures, network outages, power interruptions, or software updates.
 
-Availability Zones:
+Avaliability Zones:
 - Unique physical locations within a Azure Region
 	- One or more Datacentres
 - Minimum of three Availability zones
@@ -584,6 +584,8 @@ Before you start integrating Azure with on-premises networks, it's important to 
 			-   192.168.0.0/16
 	 - Dynamic or Static allocation
 	- SKUs: Basic or Standard
+
+Planning for IP Addressing is a non-trivial problem and a nightmare to replan review - [Plan for IP addressing - Cloud Adoption Framework | Microsoft Learn](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/plan-for-ip-addressing)
 
 Routable address over the internet: 215.11.0.0 to 215.11.255.255
 

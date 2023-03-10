@@ -153,22 +153,31 @@ UNC pathing:  `\\$StorageAccount.file.core.windows.net\$FileShare`
 
 With Linux file share mounting can be done on-demand with the `mount` command or on-boot (persistent) by creating an entry in /etc/fstab.
 
-Setup File Sync 
+[Deploy File Sync](https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-deployment-guide) 
 `Azure File Sync -> Create` - Marketplace - not default, but covered in AZ 104
-
-Create file share snapshots
-`Storage Account -> $storage_account -> File Shares -> $file_share -> Snapshots
+1. Deploy the Storage Sync Service
+2. Prepare Windows Server(s)
+	1. Install Azure File Sync agent
+	2. Register servers with Storage Sync Service
+3. Resource Group for deployment
+4. Deployment location
 
 Azure File Sync agent:
 ```powershell
 Microsoft.StorageSync
 ```
 
-Deploying a Azure File Sync:
-1. Deploy Storage Sync Services
-2. Prepare Windows Server(s)
-3. Install Azure File Sync agent
-4. Register Windows Server(s)
+- Beware Legacy and older generation require Powershell at 5.1
+- And may require disabling of Internet Explorer Enhanced Security for Admins and Users - **ONLY** for initial server registration! - RESET!
+	- FileSyncSvc.exe - service; StoragSync.sys - system filter; PowerShell cmdlets:
+```powershell
+# Deafult location for cmdlets 
+C:\\Program Files\\Azure\\StorageSyncAgent\\StorageSync.Management.PowerShell.Cmdlets.dll
+C:\\Program Files\\Azure\\StorageSyncAgent\\StorageSync.Management.ServerCmdlets.dll
+```
+
+Create file share snapshots
+`Storage Account -> $storage_account -> File Shares -> $file_share -> Snapshots
 
 Create Container for Blob Storage
 `Azure Storage accounts -> + Container -> Name and Change "Public Access Level"`
@@ -340,6 +349,11 @@ Levels:
 
 ## Azure AD 
 
+Important Distinctions:
+- Azure AD Directory Domain Services provides managed domain services
+- Azure AD Connect is hybrid service to connect on-premise to Azure Account
+
+
 Manage Tenants
 `Search Azure AD -> Manage tenants`
 Create a Tenant
@@ -450,7 +464,13 @@ Routable address over the internet: 215.11.0.0 to 215.11.255.255
 	- Cross region connection use a gateway, NIC in Region A != connect to Region B
 	- 5 Addresses are taken by Azure per (256 addresses of IPv4)
 	- Add either to New Subnet or new Address space - understand the differences
-
+	- [Design IP Addressing is non-trivial](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/plan-for-ip-addressing)
+	 - Don't use the following address ranges:
+		- `224.0.0.0/4` (multicast)
+	       - `255.255.255.255/32` (broadcast)
+		- `127.0.0.0/8` (loopback)
+	       - `169.254.0.0/16` (link-local)
+		- `168.63.129.16/32` (internal DNS)
 
 View a Network Typology by Subscription, Resource Group and VNet
 `Search -> Network Watcher -> Topology`
@@ -684,7 +704,7 @@ Deploy a zone-resilient Azure VM scale set with Portal
 `Search -> Virtual machine scale sets -> + Create -> Provide: Name, Resource Group and Zones! - Orchestration mode!, Image,Size` - Add to or Create a VNet; configure NIC NSG and consider `Load balancer`; Scaling; Management `Monitoring: managed or custom` - do not disable; `Advanced - Spreading and Beyond 100 instances;`
 
 Upgrading VM scale sets
-Load a script with Script with Custom Script Extension
+Load a script with Script with Custom Script Extension (automatically launch and execute virtual machine customization tasks after initial machine configuration - timesout after 90 minutes)
 `Search -> VM scale sets -> Instances -> Select instances -> Upgrade` - check with Load balancer Frontend IP: `Search -> Load Balancers -> $LoadBalancer -> Frontend IP configuration -> Copy address` 
 
 `Search -> VM scale sets -> Scaling -> Manual Scaling or Custom autoscale`
@@ -703,7 +723,7 @@ $pip (Get-AzPublicIpAddress -ResourceGroupName $rgName -Name $lbpipName).IpAddre
 while ($true) { Invoke-WebRequest -Uri "http://$pip" }
 ```
 
-Custom Script Extension - Container with a custom IIS webserver
+Custom Script Extension (automatically launch and execute virtual machine customization tasks after initial machine configuration - timesout after 90 minutes) - Container with a custom IIS webserver
 - Storage Account with scripts, container for webserver
 `VMs -> $Container -> Extensions + Add -> Custom Script Extension -> Upload scripts from Storage Account`
 
@@ -772,7 +792,7 @@ Provide the in `App Services -> $App -> Backup `
 Create Automation Account
 `Search Automation Accounts -> Automation Accounts -> + Create
 
-Compile DSC script 
+Compile Desired State Configuration (DSC) script 
 `Search Automation Accounts -> Automation Accounts -> $AutomationAccount -> State configuration (DSC) -> Configurations -> Select DSC script -> Compile -> Yes`
 
 Register VMs with your Azure Automation Account
@@ -1702,8 +1722,7 @@ Get-AzNetworkSecurityGroup -ResourceGroupName $vm.ResourceGroupName | Remove-AzN
 Get-AzPublicIpAddress -ResourceGroupName $vm.ResourceGroupName | Remove-AzPublicIpAddress -Force
 ```
 
-Extensions help in task automation
-Custom Script Extension to run scripts - timesout after 90 minutes
+Custom Script Extension automatically launch and execute virtual machine customization tasks after initial machine configuration - timesout after 90 minutes
 ```powershell
 Set-AzVmCustomScriptExtension -FileUri https://scriptstore.blob.core.windows.net/scripts/Install_IIS.ps1 -Run "PowerShell.exe" -VmName vmName -ResourceGroupName resourceGroup -Location "location"
 ```
@@ -1931,3 +1950,5 @@ Get-AzDnsRecordSet -ResourceGroupName MyResourceGroup -ZoneName myzone.com -Name
 [Total Cost of Ownship Calculator](https://azure.microsoft.com/en-gb/pricing/tco/calculator/)
 [Set-AzDnsRecordSet](https://learn.microsoft.com/en-us/powershell/module/az.dns/set-azdnsrecordset?view=azps-9.4.0)
 [AzCopy](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-files)
+[Deploy File Sync](https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-deployment-guide) 
+[Plan for IP addressing - Cloud Adoption Framework | Microsoft Learn](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/plan-for-ip-addressing)
