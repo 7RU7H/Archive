@@ -1,4 +1,3 @@
-
 # Azure Administration Cheatsheet
 
 - Access the portal at https://portal.azure.com/ -  great for performing single tasks
@@ -126,6 +125,8 @@ RBAC (Who own Owns, Contributes, Can read and User Access Administrator - Assign
 		- Licenses and Billing: relevant
 - Important:
 	- The only Role containing the term Elevated [Storage File Data Smb Share Elevated Contributor](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles#storage-file-data-smb-share-elevated-contributor). 
+	- Password Administrator != Helpdesk Administrator!
+		- On-premise Helpdesk Administrator can perform password resets, which still exist...
 
 Implement management groups 
 `Search Management groups -> Management groups`
@@ -238,6 +239,8 @@ Configure SSPR (self-service-password-reset)
 `Azure Active Directory -> Passwords -> Properties - SSPR enabled (None/Selectec/All)`
 Futher configuration of SSPR
 `Authenication Methods, Registration, Notification and Customise Helpdesk link`
+- Requires Premium Azure AD P1
+
 
 Enabling various types of MFA per user, bulk assignment is in the per-user MFA window 
 `Users -> Per-user MFA`
@@ -405,6 +408,7 @@ Load Balancers Workflows by Type and important information:
 3. `Configure front-end IP configuration -> Add (Consider assignment)`  
 4. `Configure back-end IP configuration -> Select backend pool VMS`  
 5. `Inbound Rules -> Add`
+	- NAT Rules on LB is for FE to BE pool! 
 
 Add session persistence to a load balancer
 `Search Load Balancers -> Load Blancers -> $LB -> Edit -> Sessions persistence dropdown -> None, Client IP, Client IP and Protocol`
@@ -842,6 +846,7 @@ Use Azure Blob Storage lifecycle management policy rules to:
 `Storage Account -> $storage_account -> Lifecycle Management`
 - Rule-based run scheduling
 - Rule-based condition to containers or a subset of blobs
+	- Access tracking
 - Delete blobs 
 - Transition Storage tier 
 
@@ -878,16 +883,19 @@ Con be done from `$resource`
 URI Format with parametres explained
 ```powershell
 https://myaccount.blob.core.windows.net/$containerName/file.txt
-?sv= # Storage services version
-&ss # Storage service
-&sip # IP range
-&spr # Protocol
+# REQUIRED
+?sv= # Signed version - signature version! 
 &st # Start Time
 &se # Expiration Time
 &sr # Storage Resource - b for blob, q for queue 
 &sp # permissions  r, wr
 &sig # SHA256 hash - the signature
+# "Some" Optional
+&ss # Storage service
+&sip # IP range
+&spr # Protocol
 ```
+See ([Create a service SAS - Azure Storage | Microsoft Learn](https://learn.microsoft.com/en-us/rest/api/storageservices/create-service-sas))
 
 Storage access
 **Container service** - `//`**`mystorageaccount`**`.blob.core.windows.net`
@@ -906,12 +914,6 @@ Secure Storage endpoints
 - Enabled from selected virtual networks and IP address
 - Disabled
 
-Import/Export Jobs - physical disk to data center
-1. Identity data
-2. Calculate transportation disk requirement
-3. `Azure Export Jobs` or install and run `WAImportExport` top copy data to disk
-4. Physical transportation
-
 Job | Storage Service | Supported | Not supported 
 --- | --- |--- | ---
 Import | Azure Blob Storage  |  Block blobs and Page blobs supported | -  
@@ -923,6 +925,55 @@ Export | Azure Blob Storage | Block blobs, Page blobs, and Append blobs supporte
 Shipping with physical disk drives large amounts of data to a Azure Blob and Azure Files to a Azure datacenter with CLI tool for preparation - `WAImportExport` - Window 64 bit only
 - Export only from Azure Blob
 - Up to 10 empty drives per job
+
+Import/Export Jobs - physical disk to data center
+1. Identity data
+2. Calculate transportation disk requirement
+3. `Azure Export Jobs` or install and run `WAImportExport` to copy data to disk
+4. Physical transportation
+
+[Import Job to Azure Files](https://learn.microsoft.com/en-us/azure/import-export/storage-import-export-data-to-files?tabs=azure-portal-preview)
+1. Prep Drives
+	1. Single NTFS volume per drive
+	2. Modify dataset.csv
+		- Import file or folder or both
+	3. If specify encryption state either `Encrypt` to enable Bitlocker or `AlreadyEncrypted` and supply Bitlocker key 
+2. Create Import Job
+	 - `Search -> Azure Data Box` - prep transfer
+		1.  Select the **Import to Azure** transfer type.
+		2.  Select the subscription to use for the Import/Export job.
+		3.  Select a resource group.
+		4.  Select the **Source country/region** for the job.
+		5.  Select the **Destination Azure region** for the job.
+		6.  Then select **Apply**.
+	- Create Job 
+3. Ship Data Box
+4. Update job with tracking information
+5. Verify Data upload to Azure
+
+Add more drives use the same journal file; add the `AdditionalDriveSet`
+```powershell
+WAImportExport.exe PrepImport /j:<JournalFile> /id:<SessionId> /AdditionalDriveSet:<driveset.csv>
+```
+
+[Import Blob to Blob Storage](https://learn.microsoft.com/en-us/azure/import-export/storage-import-export-data-to-blobs?tabs=azure-portal-preview)
+- Prep data and disks
+1. Connect disk drive via SATA connectors
+2. Single NTFS volume per drive - no mmountpoints
+3. Bitlocker Encryption
+4. `Robocopy` data 
+5. USe `WaImportExport.exe`
+```powershell
+./WAImportExport.exe PrepImport /j:<journal file name> /id:session<session number> /t:<Drive letter> /bk:<BitLocker key> /srcdir:<Drive letter>:\ /dstdir:<Container name>/ /blobtype:<BlockBlob or PageBlob> /skipwrite
+```
+6. Get bitlocker key of drive `manage-bde -protectors -get <DriveLetter>:`
+7. Prep Disk
+- Create Job - will check if it passes validation
+- (Optional) Configure customer managed key - for customers using Microsoft manage key 
+- Ship drive
+- Update Job with tracking information
+- Verify Data upload to Azure
+
 
 `StorageExplorer.exe` - manage the data stored in multiple Azure storage accounts and across Azure subscriptions.
 - Signin through `StorageExplorer.exe` with an Azure Account
@@ -1007,15 +1058,40 @@ Provide the in `App Services -> $App -> Backup `
 
 
 
-## Containerization
+## Azure Containerization
 
-Deploy a Docker Container using Azure Container Instances
+Deploy a Windows or Linux Container using Azure Container Instances 
 `Search -> Container Instances -> + Create`
 - Basic - Resource Group 
 - Networking - DNS name label
 - Advanced - Restart policy
 
-## AKS
+#### Docker 
+
+[[Docker]] Containers need to be built then published - [[Azure-DevOps]]
+
+#### App Service Plans
+
+[App Service Plans](https://learn.microsoft.com/en-us/azure/app-service/overview-hosting-plans) are PaaS - supports lots of Languages for gRPC and HTTP related App. 
+- Has a variety of tierings. 
+- It can autoscales nodes - Vertically and Horizonally
+- Multiple Apps per Service Plan
+- Deployment slots 
+	- Can be swap with Virtual IPs no route tabling
+
+#### Azure Logic Apps
+
+Graphical-based orchestration of business logic, serverless, runs on Azure Functions that are triggerable. Can have many Connectors and template
+
+#### Azure Spring App
+
+[[Spring]] is a Java based framework
+
+#### Azure Container Apps
+
+Micro services with easy containerization Azure hand with [DAPR](https://learn.microsoft.com/en-us/azure/container-apps/dapr-overview?tabs=bicep1%2Cyaml) and KEDA without the complexity of Kubernetes 
+
+#### AKS
 
 - Important
 	- Resource Group require pre-AKS-Workflow
@@ -1058,6 +1134,11 @@ kubectl create namespace kured
 # Install kured in that namespace with Helm 3 (only on Linux nodes, kured is not working on Windows nodes)
 helm install my-release kubereboot/kured --namespace kured --set nodeSelector."kubernetes\.io/os"=linux
 ```
+
+#### Azure Functions
+
+[Azure Functions](https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview) are serverless workloads to save technical and monetary costs of some services - compute-on-demand 
+
 
 ## Azure Backup
 
@@ -1176,6 +1257,7 @@ Create an (metric) Alert
 
 Create Action Groups - collection of notification preferences
 `Search -> Alerts -> Action Groups`
+- SMS - 5 Minute cooldown  
 
 Log Analytics Querying - Has drop down listing of useful input!
 `Search -> Monitor -> Logs -> Select a scope -> (Tables | Queries | Functions | Filters)  -> Run Query`
@@ -1260,6 +1342,10 @@ Onboard virtual machines to Azure Monitor VM Insights
 - Bytes Received Rate
 
 #### Network Watcher
+
+Important 
+- `NetworkWatcherAgentWindows` agent is an extension that required on Azure VMs!
+- 1 Network Watcher per region 
 
 - `Packet capture` - Automate remote network monitoring and triggering alerts from packet capture
 	-  `Network Watcher -> Packet capture`
@@ -2205,4 +2291,6 @@ Get-AzDnsRecordSet -ResourceGroupName MyResourceGroup -ZoneName myzone.com -Name
 [Arsen Vladimirskiy medium blog: TCP Proxy Protocol v2 with Azure Private Link Service — Deep Dive](https://arsenvlad.medium.com/tcp-proxy-protocol-v2-with-azure-private-link-service-deep-dive-64f8db9586cf)
 [Set up staging environments - Azure App Service | Microsoft Learn](https://learn.microsoft.com/en-us/azure/app-service/deploy-staging-slots)
 [Azure Diagnostics extension overview - Azure Monitor | Microsoft Learn](https://learn.microsoft.com/en-us/azure/azure-monitor/agents/diagnostics-extension-overview)
-[Azure Event Hubs](https://learn.microsoft.com/en-us/azure/azure-monitor/agents/diagnostics-extension-stream-event-hubs).
+[Azure Event Hubs](https://learn.microsoft.com/en-us/azure/azure-monitor/agents/diagnostics-extension-stream-event-hubs)
+[Tutorial to import data to Azure Blob Storage with Azure Import/Export service | Microsoft Learn](https://learn.microsoft.com/en-us/azure/import-export/storage-import-export-data-to-blobs?tabs=azure-portal-preview)
+[Tutorial to transfer data to Azure Files with Azure Import/Export | Microsoft Learn](https://learn.microsoft.com/en-us/azure/import-export/storage-import-export-data-to-files?tabs=azure-portal-preview)

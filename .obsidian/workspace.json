@@ -122,7 +122,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 368.5
+    "width": 472.5
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -170,8 +170,8 @@
   "lastOpenFiles": [
     "Cloud/Azure/Azure-Administration/Azure-Identities-And-Governance/Azure-Administration-Azure-Roles-And-RBAC.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
-    "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Maintenance/Azure-Administration-Azure-Monitor.md",
     "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Azure-Disks.md",
+    "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Maintenance/Azure-Administration-Azure-Monitor.md",
     "Hardware/Hardware-Services/BitLocker.md",
     "Hardware/Hardware-Services",
     "Linux/Linux-Concepts/Linux-Kernel.md",

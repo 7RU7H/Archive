@@ -101,6 +101,8 @@ RBAC core concepts:
 		- Licenses and Billing: relevant
 - Important:
 	- The only Role containing the term Elevated [Storage File Data Smb Share Elevated Contributor](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles#storage-file-data-smb-share-elevated-contributor). 
+	- Password Administrator != Helpdesk Administrator!
+		- On-premise Helpdesk Administrator can perform password resets, which still exist...
 
 
 ## Workflows
