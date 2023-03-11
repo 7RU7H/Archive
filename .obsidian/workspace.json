@@ -4,83 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "75123bd670f159b5",
+        "id": "0b8b8d02204af9ac",
         "type": "tabs",
         "children": [
           {
-            "id": "1a44c6f30603f57d",
+            "id": "9f35fda4d8c67121",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Identities-And-Governance/Azure-Administration-Azure-Roles-And-RBAC.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1fbee923e22631f9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c9e944d7af4b6b37",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Azure-Disks.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "66bc34df11da0831",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Hardware/Hardware-Services/BitLocker.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "cc728190e9beab5b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Services/Kubernetes/Kubernetes.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6d20818f66699c62",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Azure-Kubernetes-Services.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -122,7 +61,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 472.5
+    "width": 264.5
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -138,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -166,7 +105,7 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "1fbee923e22631f9",
+  "active": "9f35fda4d8c67121",
   "lastOpenFiles": [
     "Cloud/Azure/Azure-Administration/Azure-Identities-And-Governance/Azure-Administration-Azure-Roles-And-RBAC.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",

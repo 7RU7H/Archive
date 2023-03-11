@@ -78,6 +78,8 @@ Assignment of a policy - and various assignment configuration and management:
 Inheritance is made in the: 
 `Policies -> Assignments -> Assign`
 
+POSIX-compliant-ACL requires Hierarchical Namespace 
+
 ## Cost management
 
 Cost Management Dashboard
@@ -153,12 +155,17 @@ Levels:
 `Microsoft.Authorization/*/` `read`
 `Microsoft.Support/*`
 
+Create Azure Service Bus -  brokered messaging communication model - `App/Service (Msg Sender) -> (SB namespace) Queue -> Service/App (Msg Receiver)` 
+`All Services -> Integration -> Service Bus`, configure:
+- Create namespace for queue, select (RG, Sub, Location, Pricing Tier) 
+Important - Service Bus = event-driven
+
 ## Azure AD 
 
 Important Distinctions:
 - Azure AD Directory Domain Services provides managed domain services
 - Azure AD Connect is Hybrid Service to connect on-premise to Azure Account
-
+	- Writeback (Cloud and On-Premise Syncing) is required for required data.
 
 Manage Tenants
 `Search Azure AD -> Manage tenants`
@@ -186,6 +193,7 @@ Customize Azure AD organization branding
 				- Context - Dynamic Devices or Guest User are temporary therefore think PoLP
 	- The assign machine to user th default Admin is that Use - most likely requires change
 - Azure AD Registered != Azure AD Joined 
+- Access policy! 
 
 Azure AD 
 `Overview -> Users -> Create`
@@ -197,6 +205,7 @@ Invite User - For Temporary Guest users use: `Azure AD B2B`
 Configure guest users:
 - Add to `Groups`
 - Access to apps `Manage -> Enterprise applications -> Docusign` (or whatever Digital signing software) 
+- Guest users have `user@myorgdomain.com#EXT#domain.com` have `#EXT#` appended 
 
 Edit User settings
 `Search Azure AD -> Azure AD -> User Settings`
@@ -467,6 +476,8 @@ Create record set or Child zone
 Common pattern - name resolution for multiple networks, where one is focused on registration and the other resolution.
 `Vnet1 = Registration <-> Azure Private DNS zone records <-> Vnet2 = Resolution`
 
+DNS servers require network peering to resolve IPs if not using AzureDNS
+
 #### VPN Gateways
 
 VPN Gateway requires: - subnet, dns server and VPN device 
@@ -692,6 +703,8 @@ Availability Set Group of related identical virtual machines are (un)deployed to
 Availability Zone
 - Zonal Services pin each resource to a specific zone.
 - Zone-Redundant services are zone-redundant, the platform replicates automatically across all zones.
+
+- Wait for `FailoverCommited` to comfirm replication to another region!
 
 #### Azure Automation
 
@@ -1155,6 +1168,7 @@ Backup Workflows
 1. Create a Recovery Services Vault - choose LRS/GRS
 2. Define a backup policy - when and retention length of data snapshots
 3. Backup VMs, etc..
+	1. Mindful of defaults - VMs is 30 days
 
 Create a Recovery Service Vault
 `Search -> Recovery Services vaults -> + Create`
@@ -1282,7 +1296,7 @@ Then `$VM -> Logs -> Enable -> chooose a Log Analytucs Workspace -> Enable `
 - Filter
 - Explorer
 
-```sql
+```kusto
 // Syntax
 // Count by Rows:
 $Table | count 
@@ -2241,7 +2255,7 @@ Move-AzResource
 # Config
 # New DNS Root record
 New-AzDnsRecordConfig
-# 
+# Add DNS Record 
 Add-AzDnsRecordConfig
 
 # Set
