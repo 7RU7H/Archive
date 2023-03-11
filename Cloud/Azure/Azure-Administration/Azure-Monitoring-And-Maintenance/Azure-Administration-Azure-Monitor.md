@@ -273,6 +273,20 @@ The resource is identified by an instrumentation key (ikey)
 Access Azure Monitor
 `Search -> Monitor`
 
+[Diagnostic Extension]([Azure Diagnostics extension overview - Azure Monitor | Microsoft Learn](https://learn.microsoft.com/en-us/azure/azure-monitor/agents/diagnostics-extension-overview)) -  or Boot Diagnostics, Storage Explorer, Metrics - Autoscaling and Alerts, Data for [Azure Event Hubs](https://learn.microsoft.com/en-us/azure/azure-monitor/agents/diagnostics-extension-stream-event-hubs)
+- **Only Azure Resources and Azure Monitor Logs**
+Configure VM for Log Analytics - Install and Configure Azure Diagnostics for Windows (WAD)
+`Search -> Virtual Machines -> $VM -> (Metrics - for default Monitoring) Diagnostic settings -> Select a Diagnostics storage account & Enable guest-level monitoring` then configure: 
+- Performance Counters
+- Logs
+- Crash dumps Sinks 
+- Agent
+Then `$VM -> Logs -> Enable -> chooose a Log Analytucs Workspace -> Enable `
+
+
+[IT Service Management Connector](https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/itsmc-definition#install-it-service-management-connector) - Integrate Azure Monitor with (non)Azure (only ITSM supported products) to resolve issues; can installed on LA Workspaces
+`Markplace -> ITSMC`; to connect `Resources -> $resource (include LA Workspaces) -> ITSM Connections`
+
 Register the Microsoft.Insights and Microsoft.AlertsManagement resource providers 
 ```powershell
 Register-AzResourceProvider -ProviderNamespace Microsoft.Insights
@@ -308,14 +322,6 @@ Log Analytics Querying - Has drop down listing of useful input!
 Create and Configure Log Analytics workspaces
 `Search Log Analytics workspaces -> Log Analytics workspaces -> Create`
 `Search Automation Accounts -> Create -> $LAWrGroup` - check [supported mappings](https://learn.microsoft.com/en-us/azure/automation/how-to/region-mappings) then `$AutomationAccount -> Inventory -> Select Log Analytics workspace -> $LAW & Enable` then `Update Management -> Enable`
-
-Configure VM for Log Analytics
-`Search -> Virtual Machines -> $VM -> (Metrics - for default Monitoring) Diagnostic settings -> Select a Diagnostics storage account & Enable guest-level monitoring` then configure: 
-- Performance Counters
-- Logs
-- Crash dumps Sinks 
-- Agent
-Then `$VM -> Logs -> Enable -> chooose a Log Analytucs Workspace -> Enable `
 
 KGL Log queries 
 - Schema 
@@ -398,3 +404,4 @@ Onboard virtual machines to Azure Monitor VM Insights
 [Supported regions for linked Log Analytics workspace | Microsoft Learn](https://learn.microsoft.com/en-us/azure/automation/how-to/region-mappings)
 [Microsoft Technical Documentation](https://learn.microsoft.com/en-us/docs/)
 [Microsoft Learn](https://learn.microsoft.com/en-us/)
+[Azure Diagnostics extension overview - Azure Monitor | Microsoft Learn](https://learn.microsoft.com/en-us/azure/azure-monitor/agents/diagnostics-extension-overview)

@@ -94,6 +94,26 @@ Cluster autoscaling considerations
 Scale rapidly (scheduled) with burst scaling deploy to another subnet in the same Vnet with Virtual Nodes, not pods.
 ![](azureaksforburstscaling.png)
 
+## AKS node updating
+
+`kured` [is used to orchestrate the update process](https://learn.microsoft.com/en-us/azure/aks/node-updates-kured):
+![](azure-k8updatenodes.png)
+- Linux requires: `/var/run/reboot-required` - reboot not automatic
+
+```bash
+# Add the Kured Helm repository
+helm repo add kubereboot https://kubereboot.github.io/charts/
+
+# Update your local Helm chart repository cache
+helm repo update
+
+# Create a dedicated namespace where you would like to deploy kured into
+kubectl create namespace kured
+
+# Install kured in that namespace with Helm 3 (only on Linux nodes, kured is not working on Windows nodes)
+helm install my-release kubereboot/kured --namespace kured --set nodeSelector."kubernetes\.io/os"=linux
+```
+
 ## Workflows
 
 Check if registered
@@ -173,3 +193,4 @@ kubectl delete deplyment ngnix-deployment
 [Azure Kubernetes Service](https://learn.microsoft.com/en-us/azure/aks/intro-kubernetes)
 [Microsoft Technical Documentation](https://learn.microsoft.com/en-us/docs/)
 [Microsoft Learn](https://learn.microsoft.com/en-us/)
+[Microsfot Learn: AKS Kured](https://learn.microsoft.com/en-us/azure/aks/node-updates-kured)

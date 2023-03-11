@@ -178,6 +178,16 @@ The greater the level of redundancy the greater the expense:
 		- RA-GZRS 
 		- These the same in every aspect as the above expect the Secondary is synchronous 
 
+## Import/Export Supported Types
+
+Job | Storage Service | Supported | Not supported 
+--- | --- |--- | ---
+Import | Azure Blob Storage  |  Block blobs and Page blobs supported | -  
+.. | Azure Files storage |  Files supported  | ..
+Export | Azure Blob Storage | Block blobs, Page blobs, and Append blobs supported | Azure Files not supported  
+.. | .. | .. | Export from Archive tier not supported
+
+
 
 ## Azure Blobs
 

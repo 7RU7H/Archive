@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "6c5fb619098166c4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Container-Registeries.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "1a44c6f30603f57d",
             "type": "leaf",
             "state": {
@@ -32,79 +20,66 @@
             }
           },
           {
-            "id": "6de9fdbda8daeef2",
+            "id": "1fbee923e22631f9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Virtual-Machines.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Maintenance/Azure-Administration-Azure-Monitor.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "5bb40565dae9a8cf",
+            "id": "c9e944d7af4b6b37",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Virtual-Networking/Azure-Administration-Azure-DNS.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Azure-Disks.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "5130aa7e8f6ac4da",
+            "id": "66bc34df11da0831",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud/Cloud-Computing-Defined.md",
+                "file": "Hardware/Hardware-Services/BitLocker.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "871d0611e74122ea",
+            "id": "cc728190e9beab5b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Virtual-Networking/Azure-Administration-Virtual-Networking.md",
+                "file": "Services/Kubernetes/Kubernetes.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "35bb49da1c2bf082",
+            "id": "6d20818f66699c62",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Identities-And-Governance/Azure-Administration-Azure-Policies.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "39e53eb089085c72",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Identities-And-Governance/Azure-Administration-AD-Administration.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Azure-Kubernetes-Services.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -133,7 +108,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "custom script extension",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -142,12 +117,11 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 464.5
+    "width": 368.5
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -191,16 +165,24 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "904463d60d8efa8d",
+  "active": "1a44c6f30603f57d",
   "lastOpenFiles": [
-    "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Virtual-Machines.md",
-    "Cloud/Azure/Azure-Administration/Azure-Identities-And-Governance/Azure-Administration-Subscriptions.md",
+    "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Maintenance/Azure-Administration-Azure-Monitor.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
-    "Cloud/Azure/Azure-Administration/Azure-Virtual-Networking/Azure-Administration-Azure-DNS.md",
-    "Networks/Network-Theory/Network-Protocols/DNS-Defined.md",
-    "Cloud/Cloud-Computing-Defined.md",
+    "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Azure-Disks.md",
+    "Hardware/Hardware-Services/BitLocker.md",
+    "Hardware/Hardware-Services",
+    "Linux/Linux-Concepts/Linux-Kernel.md",
+    "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Azure-Kubernetes-Services.md",
+    "Images/azure-k8updatenodes.png",
+    "Services/Kubernetes/Kubernetes.md",
     "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Container-Registeries.md",
     "Cloud/Azure/Azure-Administration/Azure-Storage/Azure-Administration-Storage-Accounts.md",
+    "Cloud/Azure/Azure-Administration/Azure-Virtual-Networking/Azure-Administration-Azure-DNS.md",
+    "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Virtual-Machines.md",
+    "Cloud/Azure/Azure-Administration/Azure-Identities-And-Governance/Azure-Administration-Subscriptions.md",
+    "Networks/Network-Theory/Network-Protocols/DNS-Defined.md",
+    "Cloud/Cloud-Computing-Defined.md",
     "Cloud/Azure/Azure-Administration/Azure-Identities-And-Governance/Azure-Administration-Azure-Policies.md",
     "Cloud/Azure/Azure-Administration/Azure-Virtual-Networking/Azure-Administration-Virtual-Networking.md",
     "Cloud/Azure/Azure-Administration/Azure-Identities-And-Governance/Azure-Administration-AD-Administration.md",
@@ -218,12 +200,6 @@
     "Cloud/Azure/Azure-Administration/Azure-Administration.md",
     "Linux/Linux-Commands/Linux-Module-Commands.md",
     "Networks/Network-Theory/OSI-Model.md",
-    "Hardware/CPU-Architecture.md",
-    "Windows/Windows-Concepts/Windows-Events-To-Monitor.md",
-    "Tools/Windows/Event-Viewer.md",
-    "Exploitation/CVEs/PrintNightmare.md",
-    "Antivirus/Windows-Defender-For-AV-Evasion.md",
-    "Windows/Windows-Concepts/Windows-Event-Logs.md",
     "Services/Databases/MongoDB",
     "Images/robleesansoffensiveforensicstimestomping.png.png",
     "Images/robleesansoffensiveforensicstimestomping.png",
@@ -234,10 +210,8 @@
     "Tools/Stegonography",
     "Images/azurekglqueries.png",
     "Images/azurealertsdescriptionimage.png",
-    "Post-Exploitation/Stealth",
     "Images/azurelogeventcatergories.png",
     "Images/azurelogeventtiering.png",
-    "Images/azuremonitorcomponents.png",
-    "Images/azuresoftdeleteandbackups.png"
+    "Images/azuremonitorcomponents.png"
   ]
 }

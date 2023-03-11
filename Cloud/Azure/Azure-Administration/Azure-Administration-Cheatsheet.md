@@ -274,7 +274,7 @@ Consideration:
 - Service Endpoints - Secure Endpoints from externals
 	- VMs in a VNet need Service endpoints enabled to acces Storage Accoutsw 
 - Network Security Groups
-- Private links
+- Azure Private Links enables you to access Azure PaaS Services and Azure hosted customer-owned/partner services over a [private endpoint](https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-overview)
 - VMs do not manage there IPs
 
 Create and manage public IPs
@@ -309,6 +309,29 @@ Install-WindowsFeature -Name "RSAT-RemoteAccess-Powershell"
 ```
 
 [User Defined Routes]((https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-udr-overview) - limited!
+
+[Private Link Service](https://learn.microsoft.com/en-us/azure/private-link/create-private-link-service-portal?tabs=dynamic-ip) - Requires: Internal Loadblancer, vnets and reverse subnet
+`Private Link Center -> Private Links`; add Basics; 
+- Outbound settings
+	- Load Balancer and its FE IP
+	- Source NAT Vnet, Subnet
+	- Enable [TCP proxy V2](https://arsenvlad.medium.com/tcp-proxy-protocol-v2-with-azure-private-link-service-deep-dive-64f8db9586cf) - **[if you need a source IP of service consumers!](https://learn.microsoft.com/en-us/azure/private-link/private-link-service-overview#getting-connection-information-using-tcp-proxy-v2)**
+		- [For source IP address for your Private Link service, an explicit disable setting](https://learn.microsoft.com/en-us/azure/private-link/disable-private-link-service-network-policy?tabs=private-link-network-policy-powershell)) `privateLinkServiceNetworkPolicies` is required on the subnet
+	- Private IP address settings - Dynamic or Static
+- Access Security 
+
+
+
+[Create a Private Endpoints](https://learn.microsoft.com/en-us/azure/private-link/create-private-endpoint-portal?tabs=dynamic-ip) - Requires:  PremiumV2-tier and Active Subscription, Vnet and Private Endpoint.
+`Private Link Center -> Private Endpoints:`
+- Resource: 
+	- Connect in my directory or 
+	- Resource-type, Resource 
+	- Connect with Resource ID or Alias
+- Vnet configuration`:
+	- Beware of Dymanic | Static IP allocation
+	- Beware Private Endpoint DNS if required!
+
 
 #### Load Balancers
 
@@ -428,6 +451,20 @@ Local Network Gateways - to represent the on-premises site that you want to conn
 On-Premise VPN devices: shared key and public IP address of your VPN gateway
 - Configuration scripts are available for some devices - [Download VPN device configuration scripts for S2S VPN connections](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-download-vpndevicescript) to find a downloadable script for your VPN device.
 
+Create an ExpressRoute
+`ExpressRoute -> Create ExpressRoute`; Configuration:
+- Provider (name required )| Direct
+- Create new | import class
+- Peering Location
+- Bandwidth
+- SKU: Standard | Premium
+- Billing Model: Metered | Unlimited
+- Allow classic operations? - to allow classic virtual networks to link to the circuit
+
+Get ExpressRoute Service Key
+`ExpressRoute Circuit -> Overview -> Service Key`
+
+
 #### Virtual Network Peering
 
 VNet Peering - requires account with `(Classic) Network Contributor` role
@@ -479,6 +516,11 @@ Important
 
 Create a Disk
 `Search: Disk -> Create -> Basics -> Encryption -> Networking -> Advanced -> Tags -> Review + create` Considerations: SKUs; Size, IOPs and cost; Tags - `review ->` Wait for deployment, `Go to resource` 
+
+- SLA:
+	- Premium SSD = 99.9%
+	- Standard SSD = 99.5%
+	- Standard HDD = 95%
 
 Create a Resource Group
 `Resource Groups -> Create` - Add tags for QoL 
@@ -715,6 +757,16 @@ Create Storage Account `Search -> Storage Accounts`, provide name, location, red
 Configure Azure Storage Encryption:
 `Storage accounts -> $storage_accounts -> EncBootstrap web applications
 
+Configure Disk Encryption:
+`Search -> Storage Account -> $StorageAcc -> Add (GPv2 or Premium block blob) -> Encryption:`
+- Type:
+	- Microsoft-Managed keys
+	- Customer Managed Kyeys
+- Support for CMKs - Cannot change after creation
+	- Blobs and file only
+	- All service types
+- Enable Infrastructure Encryption - Cannot change after creation
+
 Create a Azure Files Share
 `Storage Account -> $storage_account -> File Shares`
 - Open port 445 - check firewall
@@ -828,6 +880,14 @@ Import/Export Jobs - physical disk to data center
 3. `Azure Export Jobs` or install and run `WAImportExport` top copy data to disk
 4. Physical transportation
 
+Job | Storage Service | Supported | Not supported 
+--- | --- |--- | ---
+Import | Azure Blob Storage  |  Block blobs and Page blobs supported | -  
+.. | Azure Files storage |  Files supported  | ..
+Export | Azure Blob Storage | Block blobs, Page blobs, and Append blobs supported | Azure Files not supported  
+.. | .. | .. | Export from Archive tier not supported
+
+
 Shipping with physical disk drives large amounts of data to a Azure Blob and Azure Files to a Azure datacenter with CLI tool for preparation - `WAImportExport` - Window 64 bit only
 - Export only from Azure Blob
 - Up to 10 empty drives per job
@@ -884,9 +944,23 @@ git push $Repository $Branch
 # Authenicate
 ```
 
-Deployment Swaps
+Deployment Slots 
+`Search -> App Services -> $App -> Deployment Slots -> + Add slot  
+
+Deployment Swaps - swap between slots
 `Search -> App Services -> $App -> Deployment Slots -> Swap`
-Select Source and Target
+- Select Source and Target
+[Swap operations](https://learn.microsoft.com/en-us/azure/app-service/deploy-staging-slots):
+1. Target requires, then wait: 
+	- Slot-specific app settings and connection strings
+	- Continuous deployment
+	- App Services authentication 
+2. If local cache is enabled 
+	- trigger local cache initialization - HTTP request to root `/` on each app 
+3. If Auto swap is enabled with custom warm-up trigger `applicationInitialization` (if not specified)
+4. All warmed up? - Swap slots by switching the routing rules for the two slots
+5. Source slot has pre-swap app previously in the target slot, perform the same operation by applying all settings and restarting the instances. No need to to re-route, it is stored
+
 
 Create a Custom Domain for Azure App Service
 `Search -> App Services -> Custom Domains`
@@ -913,6 +987,8 @@ Deploy a Docker Container using Azure Container Instances
 
 - Important
 	- Resource Group require pre-AKS-Workflow
+	- Kubectl is the only way [[Kubernetes]]
+	- 10 second heartbeat
 
 Check if registered
 `Search -> Subscriptions -> $Subscription -> Resource Providers `
@@ -934,6 +1010,22 @@ Scale Node pool deployed
 `Search -> Kubernetes Services -> $KubernetesService -> Node Pools -> $NodePool -> Scale Node pool` - configure and apply.
 
 Check the bash section  for CLI deployment and scaling.
+
+- Linux requires: `/var/run/reboot-required` - reboot not automatic
+
+```bash
+# Add the Kured Helm repository
+helm repo add kubereboot https://kubereboot.github.io/charts/
+
+# Update your local Helm chart repository cache
+helm repo update
+
+# Create a dedicated namespace where you would like to deploy kured into
+kubectl create namespace kured
+
+# Install kured in that namespace with Helm 3 (only on Linux nodes, kured is not working on Windows nodes)
+helm install my-release kubereboot/kured --namespace kured --set nodeSelector."kubernetes\.io/os"=linux
+```
 
 ## Azure Backup
 
@@ -959,7 +1051,7 @@ Configure replication of recover Service Vault
 `$Backup -> Properties -> Backup Configuration -> Update `
 - Choose: `Geo-redundant | Locally redundant | Zone redundant`
 
-Implement System Center Data Protection Manager (DPM) and or Microsoft Azure Backup Server (MABS)
+Implement System Center Data Protection Manager (DPM) and or Microsoft Azure Backup Server (MABS - On-Premise-to-cloud backup!)
 - First [deploy the System Center DPM protection agent](https://learn.microsoft.com/en-us/system-center/dpm/deploy-dpm-protection-agent)
 - Then [install the DPM protection agent (for MABS)](https://learn.microsoft.com/en-us/azure/backup/backup-azure-microsoft-azure-backup#install-and-update-the-data-protection-manager-protection-agent)
 - Any machines that you want to back up must be added to a [System Center DPM _protection group_](https://learn.microsoft.com/en-us/system-center/dpm/create-dpm-protection-groups).
@@ -1023,6 +1115,19 @@ Access Azure Monitor
 Access Network Monitor 
 `Search -> Network Watcher`
 
+[Diagnostic Extension]([Azure Diagnostics extension overview - Azure Monitor | Microsoft Learn](https://learn.microsoft.com/en-us/azure/azure-monitor/agents/diagnostics-extension-overview)) -  or Boot Diagnostics, Storage Explorer, Metrics - Autoscaling and Alerts, Data for [Azure Event Hubs](https://learn.microsoft.com/en-us/azure/azure-monitor/agents/diagnostics-extension-stream-event-hubs)
+- **Only Azure Resources and Azure Monitor Logs**
+Configure VM for Log Analytics - Install and Configure Azure Diagnostics for Windows (WAD)
+`Search -> Virtual Machines -> $VM -> (Metrics - for default Monitoring) Diagnostic settings -> Select a Diagnostics storage account & Enable guest-level monitoring` then configure: 
+- Performance Counters
+- Logs
+- Crash dumps Sinks 
+- Agent
+Then `$VM -> Logs -> Enable -> chooose a Log Analytucs Workspace -> Enable `
+
+
+[IT Service Management Connector](https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/itsmc-definition#install-it-service-management-connector) - Integrate Azure Monitor with (non)Azure (only ITSM supported products) to resolve issues; can installed on LA Workspaces
+`Markplace -> ITSMC`; to connect `Resources -> $resource (include LA Workspaces) -> ITSM Connections`
 Register the Microsoft.Insights and Microsoft.AlertsManagement resource providers 
 ```powershell
 Register-AzResourceProvider -ProviderNamespace Microsoft.Insights
@@ -1040,7 +1145,6 @@ Create an (metric) Alert
 Create Action Groups - collection of notification preferences
 `Search -> Alerts -> Action Groups`
 
-
 Log Analytics Querying - Has drop down listing of useful input!
 `Search -> Monitor -> Logs -> Select a scope -> (Tables | Queries | Functions | Filters)  -> Run Query`
 - You can click to collapse the left panel
@@ -1049,7 +1153,9 @@ Create and Configure Log Analytics workspaces - Good Workspace design equals bet
 `Search Log Analytics workspaces -> Log Analytics workspaces -> Create`
 `Search Automation Accounts -> Create -> $LAWrGroup` - check [supported mappings](https://learn.microsoft.com/en-us/azure/automation/how-to/region-mappings) then `$AutomationAccount -> Inventory -> Select Log Analytics workspace -> $LAW & Enable` then `Update Management -> Enable`
 
-Configure VM for Log Analytics
+Configure VM for Log Analytics - with [Diagnostic Extension]([Azure Diagnostics extension overview - Azure Monitor | Microsoft Learn](https://learn.microsoft.com/en-us/azure/azure-monitor/agents/diagnostics-extension-overview)) - Boot Diagnostics, Storage Explorer, Metrics - Autoscaling and Alerts, Data for [Azure Event Hubs](https://learn.microsoft.com/en-us/azure/azure-monitor/agents/diagnostics-extension-stream-event-hubs)
+- **Only Azure Resources and Azure Monitor Logs**
+Install and Configure Azure Diagnostics for Windows (WAD)
 `Search -> Virtual Machines -> $VM -> (Metrics - for default Monitoring) Diagnostic settings -> Select a Diagnostics storage account & Enable guest-level monitoring` then configure: 
 - Performance Counters
 - Logs
@@ -1166,6 +1272,10 @@ Create a SAS for container `Home -> Storage Accounts -> $ContainerName -> Shared
 - Blob service SAS URL
 - Queue service SAS URL
 - Take service SAS URL
+
+## Kubectl
+
+[[Kubernetes]]
 
 ## Azure CLI
 
@@ -2057,3 +2167,10 @@ Get-AzDnsRecordSet -ResourceGroupName MyResourceGroup -ZoneName myzone.com -Name
 [Load Balancer Components](https://learn.microsoft.com/en-us/azure/load-balancer/components)
 [Azure virtual network traffic routing | Microsoft Learn](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-udr-overview)
 [Azure subscription limits and quotas - Azure Resource Manager | Microsoft Learn](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/azure-subscription-service-limits?toc=%2Fazure%2Fvirtual-network%2Ftoc.json#networking-limits)
+[Create a Private Link](https://learn.microsoft.com/en-us/azure/private-link/create-private-endpoint-portal?tabs=dynamic-ip) 
+[Disable Network POlicies for a Private Link service](https://learn.microsoft.com/en-us/azure/private-link/disable-private-link-service-network-policy?tabs=private-link-network-policy-powershell)
+[TCP V2 Proxy for Azure Private Links](https://learn.microsoft.com/en-us/azure/private-link/private-link-service-overview#getting-connection-information-using-tcp-proxy-v2)
+[Arsen Vladimirskiy medium blog: TCP Proxy Protocol v2 with Azure Private Link Service — Deep Dive](https://arsenvlad.medium.com/tcp-proxy-protocol-v2-with-azure-private-link-service-deep-dive-64f8db9586cf)
+[Set up staging environments - Azure App Service | Microsoft Learn](https://learn.microsoft.com/en-us/azure/app-service/deploy-staging-slots)
+[Azure Diagnostics extension overview - Azure Monitor | Microsoft Learn](https://learn.microsoft.com/en-us/azure/azure-monitor/agents/diagnostics-extension-overview)
+[Azure Event Hubs](https://learn.microsoft.com/en-us/azure/azure-monitor/agents/diagnostics-extension-stream-event-hubs).

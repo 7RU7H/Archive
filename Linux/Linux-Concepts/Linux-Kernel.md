@@ -3,8 +3,6 @@
 sudo dmesg # Prints the message buffer of the kernel
 
 ```
-
-
 ## Hardware
 
 The kernel exports data about detected hardware through the `/proc/` and `/sys/` virtual file systems. Applications often access devices by way of files created within `/dev/`. Specific files represent disk drives (for instance, `/dev/sda`), partitions (`/dev/sda1`), mice (`/dev/input/mouse0`), keyboards (`/dev/input/event0`), sound cards (`/dev/snd/*`), serial ports (`/dev/ttyS*`), and other components.
@@ -30,11 +28,16 @@ For each Process the Kernel wil:
 For more see [[Linux-Processes-Commands]]
 
 ## Rights Management
+
 [[Linux-Permissions-and-Rights]]
 
+## Secure Computing Mode
+
+[Seccomp](https://en.wikipedia.org/wiki/Seccomp) is Linux Kernel Facility it is feature that isolates a process into secure state whihc cannot make system calls. It kernel detect systemcall it can terminated the process with `SIGKILL` or `SIGSYS` or log the event. 
 
 ## References
 
 
-https://www.kernel.org/
-https://en.wikipedia.org/wiki/Linux_kernel
+[Kernel Org](https://www.kernel.org/)
+[Linux Kernel - Wikipedia](https://en.wikipedia.org/wiki/Linux_kernel)
+[seccomp - Wikipedia](https://en.wikipedia.org/wiki/Seccomp)

@@ -25,6 +25,18 @@ Azure Backup can be used to create a backup job with time-based backups and back
 
 Dedicated data disks are generally considered the best place to store application data files. They can be larger than OS disks and you can optimize them for the cost and performance characteristics appropriate for your data.
 
+## Workflows
+
+Configure Disk Encryption -
+`Search -> Storage Account -> $StorageAcc -> Add (GPv2 or Premium block blob) -> Encryption:`
+- Type:
+	- Microsoft-Managed keys
+	- Customer Managed Kyeys
+- Support for CMKs - Cannot change after creation
+	- Blobs and file only
+	- All service types
+- Enable Infrastructure Encryption - Cannot change after creation
+
 ## References
 
 [FreeCodeCamp.org - AZ 104 Course](https://www.youtube.com/watch?v=10PbGbTUSAg&t=3458s)
