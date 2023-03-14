@@ -1,7 +1,25 @@
-# Cryptography 101
+# Cryptography 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 For a list of commands related to cryptography try here: [[De-Or-En-Cryption]]
 
-## A Cryptography Glossary
+## Glossary
 
 AES: 128-bit symmetric-key block cipher with three fixed key size variants.
 
@@ -49,12 +67,16 @@ Salt: A string appended to a password to create a unique digest when run through
 
 Stream Cipher: An encryption algorithm that operates on one bit of plaintext at a time. Contrast with Block Cipher.
 
+Substitution Cipher: An encryption algorithm that operates by replace each chracter of a plaintext set of characters with another, the key would be the rotation or identifier for character sets that replace the plain text.
+
 Symmetric-key encryption: Model of encryption that uses the same shared key for both encryption and decryption.
+
+Transposition cipher: Rearranges the order of the characters of a plain text by key the ordering of encrypted output.
 
 
 ## Encoding
-**CALCULATOR IS YOUR FRIEND**
 
+**CALCULATOR IS YOUR FRIEND**
 Decimal  | Binary |	Hexadecimal
 --- | --- | ---
 0   | 0b0 | 0x0
@@ -77,21 +99,23 @@ Decimal  | Binary |	Hexadecimal
 255	 | 	0b11111111 | 0xff
 
 
-## File format conversion:
-```
+File format conversion:
+```bash
 iconv
 ```
 
-## Encoding
-``` 
-base64 (-d for decode)
+Encoding
+```bash 
+# beware of characters like newlines no the cmdline 
+# -w0 wrap amount
+base64 (-d for decode) | base64 -d -w0 
 md5sum
 shasum
 sha256
 sha512sum
 ```
 
-## Important password file paths:
+Important password file paths:
 ```
 /etc/passwrd
 /etc/shadow
@@ -99,6 +123,9 @@ sha512sum
 
 C:\Windows\System32\config\*SAM
 ```
+
+
+
 
 ## Password Hashing Algorithms
 
@@ -134,56 +161,19 @@ $y$j9T$F5Jx5fExrKuPp53xLKQ..1$X3DX6M94c7o.9agCG9G317fhZg9SqC.5i5rd.RhAtQ7
 1. hash - X3DX6M94c7o.9agCG9G317fhZg9SqC.5i5rd.RhAtQ7
 
 ## Symmetric-Key Encryption
-Encryption is used to protect its confidentiality.
 
-### Symmetric Keys
+Symmetic Key Algorithms use the same key for encrypting the plaintext into ciphertext and for decrypting the ciphertext back into plaintext. Key is sometimes "passphrase" synonymous with "key". Maintaining the key's secrecy is vital, if public anyone can decrypt with it - harms confidentiality as transmission of the key not the data is the issue.
 
-Symmetic Key Algorithms use the same key for encrypting the plaintext into ciphertext and for decrypting the ciphertext back into plaintext.
-Key is sometimes "passphrase" synonymous with "key"
-Maintaining the key's secrecy is vital, if public anyone can decrypt with it - harms confidentiality as transmission of the key not the data is the issue.
+National Institute of Standard and Technology (NIST) published the Data Encryption Standard (DES) in 1977. DES is a symmetric encryption algorithm that uses a key size of 56 bits.
 
-### Caesar Ciphers
-
-ROT-13 with tr
-```
-tr 'A-Za-z' 'N-ZA-Mn-za-m' # encode
-tr 'N-ZA-Mn-za-m' 'A-Za-z' # decode
-```
-
-### XOR Cipher
-
-Xor cipher is based off the bitwise XOR operation.
-A xor 0  = A
-A xor A = 0
-A xor B = B xor A
-(A xor B) xor C = A xor (B xor C)
-(B xor A) xor A = B xor 0 xor B
-
-XOR Cipher Trace Table 
-
-Plaintext | Key | Ciphertext
---- | --- | ---
-0 | 0 | 0
-0 | 1 | 1
-1 | 0 | 1
-1 | 1 | 0 
-
-### Blowfish
-
-64 bit block cipher 
-```bash
-gpg -c --cipher-algo blowfish blowfish.plain
-gpg --decrypt blowfish.plain.gpg
-
-```
+NIST published the Advanced Encryption Standard (AES) in 2001 using a key 128,192,256 bits.
 
 ## Asymmetric Encryption
 
-### Theory
-
-A public key to distribute and private key that is confidential.
-
-A(Holds prviate to decrypt, and public key to distribute) - exchange - B(Holds public key to encrypt) 
+Theory
+- Public key to distribute 
+- Private key that is confidential
+- `$A` (Holds prviate to decrypt, and public key to distribute) ` -> exchange  ->` `$B` (Holds public key to encrypt) 
 ```bash
 gpg --gen-key
 gpg --output example-pub.asc --armor --export Offsec # armor flag for output being in ASCII
@@ -250,6 +240,44 @@ SSL encryption procedures leverage both asymmetric and symmetric encryption.
 It bypasses the weakness of symmetric encryption by using asymmetric encryption to transmit the symmetric key. But, has several problems.
 
 Transport layer security(TLS) 
+
+## Ciphers
+
+### Caesar Ciphers
+
+ROT-13 with tr
+```
+tr 'A-Za-z' 'N-ZA-Mn-za-m' # encode
+tr 'N-ZA-Mn-za-m' 'A-Za-z' # decode
+```
+
+### XOR Cipher
+
+Xor cipher is based off the bitwise XOR operation.
+A xor 0  = A
+A xor A = 0
+A xor B = B xor A
+(A xor B) xor C = A xor (B xor C)
+(B xor A) xor A = B xor 0 xor B
+
+XOR Cipher Trace Table 
+
+Plaintext | Key | Ciphertext
+--- | --- | ---
+0 | 0 | 0
+0 | 1 | 1
+1 | 0 | 1
+1 | 1 | 0 
+
+### Blowfish
+
+64 bit block cipher 
+```bash
+gpg -c --cipher-algo blowfish blowfish.plain
+gpg --decrypt blowfish.plain.gpg
+
+```
+
 
 
 ## References

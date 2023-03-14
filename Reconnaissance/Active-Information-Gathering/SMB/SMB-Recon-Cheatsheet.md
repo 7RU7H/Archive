@@ -74,6 +74,7 @@ smbclient //$IP/$share -c 'put /var/www/my_local_file.txt .\target_folder\target
 crackmapexec smb -u 'guest' -p '' --shares
 # If you can read IPC$
 crackmapexec smb -u 'guest' -p '' --rid-brute
+
 ```
 
 ## enum4linux Enumeration

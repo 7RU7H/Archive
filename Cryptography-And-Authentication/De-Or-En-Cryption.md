@@ -1,5 +1,6 @@
 # (De|En)cryption
-For definitions and concepts try here: [[Cryptography101]]
+
+For definitions and concepts try here: [[Cryptography]]
 ## gpg
 ```bash
 killall gpg-agent
@@ -45,3 +46,7 @@ file $file
 cp $file $file.bak
 cat $file # beware escape characters for the terminal
 ```
+
+## Cryptogram solving
+
+[quipqiup](https://www.quipqiup.com/) *"a fast and automated cryptogram solver by [Edwin Olson](http://april.eecs.umich.edu/people/ebolson). It can solve simple substitution ciphers often found in newspapers, including puzzles like cryptoquips (in which word boundaries are preserved) and patristocrats (inwhi chwor dboun darie saren t).*"*

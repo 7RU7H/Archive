@@ -1,13 +1,16 @@
 # DNS Active Recon
-[DNS](https://en.wikipedia.org/wiki/Domain_Name_System) is a distributed database responsible for translating domain names into IP addresses. [[DNS-Defined]] for conceptual stuff and for passive DNS recon [[DNS-Recon-Passive]]
+
+[DNS](https://en.wikipedia.org/wiki/Domain_Name_System) is a distributed database responsible for translating domain names into IP addresses. [[DNS-Defined]] for conceptual stuff and for passive DNS recon [[DNS-Recon-Passive]].
 
 ## Host lookup
+
 ```bash
 nslookup
 > server $IP
-# try it's local addresses
+# Try it's local addresses
 > 127.0.0.1
 > 127.0.0.2
+> domain.tld
 ```
 
 ```bash
@@ -16,6 +19,7 @@ host -t ns $url # find nameservers for a domain
 host -t mx $url # find mailservers for a domain
 host -l $domain $ns1-domain # List of DNS servers
 ```
+
 Parse just DNS hostnames
 ```bash
 for server in $(host -t ns megacorpone.com | cut -d" " -f4); do host -l megacorpone.com $server; done
@@ -23,8 +27,7 @@ for server in $(host -t ns megacorpone.com | cut -d" " -f4); do host -l megacorp
 
 ## Forward Lookup Brute Forcing
 
-TL;DR - Forward lookup: query hostname for IP - What is the IP of this hostname?
-Foward lookup is defined as requesting an IP address of a hostname to query both a valid and an invalid hostname, if host successfully resolves a name to an IP, it could indicate a functional server. Check Seclists, [[Wordlist-Library]] and [[Wordlists-Considerations]] for comprehensive subdomain brute-forcing to  automate the forward DNS lookup of common hostnames.
+TL;DR - Forward lookup: query hostname for IP - What is the IP of this hostname? Foward lookup is defined as requesting an IP address of a hostname to query both a valid and an invalid hostname, if host successfully resolves a name to an IP, it could indicate a functional server. Check Seclists, [[Wordlist-Library]] and [[Wordlists-Considerations]] for comprehensive subdomain brute-forcing to  automate the forward DNS lookup of common hostnames.
 ```bash
 for ip in $(cat list.txt); do host $ip.<insert-domain-name>.com; done
 ```
@@ -93,7 +96,7 @@ done
 
 ## Reference 
 [Wonkastocks](https://pastebin.com/qLitw9eT)
-[infinitelogins](https://infinitelogins.com/2020/12/09/enumerating-dns-port-53/)
+[Infinitelogins](https://infinitelogins.com/2020/12/09/enumerating-dns-port-53/)
 [Forward/Reverse Lookup](https://www.mustbegeek.com/understanding-forward-and-reverse-lookup-zones-in-dns/)
 [DNS Zone Transfer Wikipedia](https://en.wikipedia.org/wiki/DNS_zone_transfer)
 [Linode Red Team DNS Zone Transfers](https://www.linode.com/docs/guides/red-team-reconnaissance-techniques/#dns-zone-transfers)

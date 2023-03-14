@@ -1,6 +1,6 @@
 # Active Directory Authenication
 
-Active Directory supports multiple authentication protocols and techniques and implements authentication to Windows, Linux amd MacOS. For more basics of cryptography see [[Cryptography101]]. For how AD caches the hashes see [[Active-Directory-Credential-Caching]].
+Active Directory supports multiple authentication protocols and techniques and implements authentication to Windows, Linux amd MacOS. For more basics of cryptography see [[Cryptography]]. For how AD caches the hashes see [[Active-Directory-Credential-Caching]].
 
 With Microsoft's approach to backway compatibility older operating systems like Windows 7 or Windows Server 2008 R2, can be incorperated into Active Directory. Therefore AD still supports several older protocols including [WDigest](https://technet.microsoft.com/en-us/library/cc778868(v=ws.10).aspx).
 

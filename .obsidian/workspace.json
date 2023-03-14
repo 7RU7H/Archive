@@ -18,8 +18,57 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "08345c6010561416",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cryptography-And-Authentication/Cryptography.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8d08098a03f22bf3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cryptography-And-Authentication/De-Or-En-Cryption.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b77e359a66f615f6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Reconnaissance/Active-Information-Gathering/RPC/RPC-Recon.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "269d22e3f8e86434",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/Crackmapexec/Crackmapexec-Cheatsheet.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -61,7 +110,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 264.5
+    "width": 416.5
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -77,7 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "Cryptography-And-Authentication/Cryptography.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,10 +154,17 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "9f35fda4d8c67121",
+  "active": "08345c6010561416",
   "lastOpenFiles": [
-    "Cloud/Azure/Azure-Administration/Azure-Identities-And-Governance/Azure-Administration-Azure-Roles-And-RBAC.md",
+    "Cryptography-And-Authentication/De-Or-En-Cryption.md",
+    "Cryptography-And-Authentication/Cryptography.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+    "Reconnaissance/Active-Information-Gathering/DNS/DNS-Recon-Active.md",
+    "Tools/Crackmapexec/Crackmapexec-Cheatsheet.md",
+    "Reconnaissance/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
+    "Reconnaissance/Active-Information-Gathering/RPC/RPC-Recon.md",
+    "README.md",
+    "Cloud/Azure/Azure-Administration/Azure-Identities-And-Governance/Azure-Administration-Azure-Roles-And-RBAC.md",
     "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Azure-Disks.md",
     "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Maintenance/Azure-Administration-Azure-Monitor.md",
     "Hardware/Hardware-Services/BitLocker.md",
@@ -128,18 +184,11 @@
     "Cloud/Azure/Azure-Administration/Azure-Virtual-Networking/Azure-Administration-Virtual-Networking.md",
     "Cloud/Azure/Azure-Administration/Azure-Identities-And-Governance/Azure-Administration-AD-Administration.md",
     "Cloud/Azure/Azure-Administration/Azure-Storage/Azure-Administration-Blobs.md",
-    "Cloud/Azure/Azure-Administration/Azure-Storage/Azure-Administration-Files.md",
     "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Maintenance",
     "Cloud/Azure/Azure-Administration/Azure-Virtual-Networking",
-    "Cloud/Azure/Azure-Administration/AZ-104-Exam-Resources.md",
     "Cloud/Azure/Azure-Administration/Azure-Compute-Resources",
     "Cloud/Azure/Azure-Administration/Azure-Storage",
     "Cloud/Azure/Azure-Administration/Azure-Identities-And-Governance",
-    "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Scale-Sets.md",
-    "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Azure-Container-Instances.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration.md",
-    "Linux/Linux-Commands/Linux-Module-Commands.md",
-    "Networks/Network-Theory/OSI-Model.md",
     "Services/Databases/MongoDB",
     "Images/robleesansoffensiveforensicstimestomping.png.png",
     "Images/robleesansoffensiveforensicstimestomping.png",

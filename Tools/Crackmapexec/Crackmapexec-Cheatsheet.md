@@ -1,4 +1,5 @@
 # Crackmapexec Cheatsheet
+
 Contains the submodules
 -   [Impacket](https://github.com/CoreSecurity/impacket)
 -   [Pywinrm](https://github.com/diyan/pywinrm)
@@ -11,12 +12,6 @@ Contains the submodules
 -   [RandomPS-Scripts](https://github.com/xorrior/RandomPS-Scripts)
 -   [SessionGopher](https://github.com/fireeye/SessionGopher)
 -   [Mimipenguin](https://github.com/huntergregal/mimipenguin)
-
-## Modules
-
-```shell
--M spider_plus # spider share outputs json
-```
 
 ## Connecting
 ```bash
@@ -127,11 +122,12 @@ cmedb> creds
 # Get credentials access for a specific account 
 cmedb> creds <username>  
 # Using credentials from the database 
-crackmapexec smb $ip -id <credsID>`
+crackmapexec smb $ip -id <credsID>
 ```
  
 
 ### Modules
+
 ```bash
 # List available modules 
 crackmapexec smb -L  
