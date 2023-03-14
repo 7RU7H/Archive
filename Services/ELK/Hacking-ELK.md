@@ -1,6 +1,11 @@
 
 See [[ELK-Defined]] for legitimate uses of the Elastix Stack
 
+Default password
+```
+eLaStIx. :  2oo7
+```
+
 ## Logstash
 
 [Hacktricks](https://book.hacktricks.xyz/linux-hardening/privilege-escalation/logstash) *"Logstash is used for collecting, transforming and outputting logs. This is realized by using **pipelines**, which conta

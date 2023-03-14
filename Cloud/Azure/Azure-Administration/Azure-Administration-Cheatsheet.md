@@ -1,4 +1,4 @@
-# Azure Administration Cheatsheet
+# Azure dministration Cheatsheet
 
 - Access the portal at https://portal.azure.com/ -  great for performing single tasks
 - Cloud Shell on the `>_` Icon; Temporary Host - per-session, per-user basis
@@ -860,6 +860,10 @@ UNC pathing:  `\\$StorageAccount.file.core.windows.net\$FileShare`
 With Linux file share mounting can be done on-demand with the `mount` command or on-boot (persistent) by creating an entry in /etc/fstab.
 
 [Deploy File Sync](https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-deployment-guide) 
+- Only for:
+	- Standard file shares (GPv2), LRS/ZRS
+	- Standard file shares (GPv2), GRS/GZRS
+	- Premium file shares (FileStorage), LRS/ZRS
 `Azure File Sync -> Create` - Marketplace - not default, but covered in AZ 104
 1. Deploy the Storage Sync Service
 2. Prepare Windows Server(s)
@@ -1282,7 +1286,11 @@ Configure VM for Log Analytics - Install and Configure Azure Diagnostics for Win
 - Performance Counters
 - Logs
 - Crash dumps Sinks 
-- Agent
+- Agents
+	- Azure Custom Script Extension is used for post-deployment configuration, software installation, or any other configuration or management task.
+	- Desired State Configuration (DSC) is a management platform to manage an IT and development infrastructure with configuration as code.
+	- Log Analytics agent for Linux as part of a solution to collect JSON output
+	- Azure VMAccess extension acts as a KVM switch that allows you to access the console to reset access to Linux or perform disk-level maintenance.
 Then `$VM -> Logs -> Enable -> chooose a Log Analytucs Workspace -> Enable `
 
 

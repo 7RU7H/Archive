@@ -2,16 +2,23 @@
 # Azure Administration - Azure DNS
 
 
+
+
 Azure DNS is extended DNS - see *Alias, Record Set, Time To Live*  - no domain name purchases! For general understanding about DNS see [[DNS-Defined]]. Azure considerations and extensions:
 - Azure DNS
 	- Azure managed DNS resolved by Microsoft Azure infrastructure
+	- Azure Private DNS allows for private name resolution between Azure virtual networks. 
 - Public DNS
+	- Azure public DNS provides DNS for public access
 	- Manage custom domains for internet accessible domains
 		- Websites
 		- Records for proof of ownership
 		- Connect to email servers
 - Private DNS 
 	- Internally facing custom domains  
+
+- Azure-provided name resolution does not support user-defined domain names and only supports a single virtual network. [Name resolution for resources in Azure virtual networks | Microsoft Learn](https://learn.microsoft.com/azure/virtual-network/virtual-networks-name-resolution-for-vms-and-role-instances#azure-provided-name-resolution)
+
 
 Azure has a special record types 
 - **Azure Alias** 
@@ -165,4 +172,5 @@ Get-AzDnsRecordSet -ResourceGroupName MyResourceGroup -ZoneName myzone.com -Name
 [Microsoft Technical Documentation](https://learn.microsoft.com/en-us/docs/)
 [Microsoft Learn](https://learn.microsoft.com/en-us/)
 [Set-AzDnsRecordSet](https://learn.microsoft.com/en-us/powershell/module/az.dns/set-azdnsrecordset?view=azps-9.4.0)
-[Azure DNS ](https://learn.microsoft.com/en-us/powershell/module/az.dns/?view=azps-9.4.0)
+[Azure DNS](https://learn.microsoft.com/en-us/powershell/module/az.dns/?view=azps-9.4.0)
+[Name resolution for resources in Azure virtual networks | Microsoft Learn](https://learn.microsoft.com/azure/virtual-network/virtual-networks-name-resolution-for-vms-and-role-instances#azure-provided-name-resolution)

@@ -44,7 +44,6 @@ Sources:
 -   **Operational Intel:** Looks into an adversary’s specific motives and intent to perform an attack. Security teams may use this intel to understand the critical assets available in the organisation (people, processes and technologies) that may be targeted.
 
 
-
 ## CTI Lifecycles
 
 Continous data processing from raw data to contextualised and actionable insights focusing triaging security incidents:
@@ -92,6 +91,8 @@ Continous data processing from raw data to contextualised and actionable insight
 -   [SSL Blacklist](https://sslbl.abuse.ch/):  A resource for collecting and providing a blocklist for malicious SSL certificates and JA3/JA3s fingerprints.
 -   [URL Haus](https://urlhaus.abuse.ch/):  A resource for sharing malware distribution sites.
 -   [Threat Fox](https://threatfox.abuse.ch/):  A resource for sharing indicators of compromise (IOCs).
+
+[Security Onion](https://github.com/Security-Onion-Solutions/securityonion) *"Security Onion is a free and open platform for threat hunting, enterprise security monitoring, and log management. It includes our own interfaces for alerting, dashboards, hunting, PCAP, and case management. It also includes other tools such as Playbook, osquery, CyberChef, Elasticsearch, Logstash, Kibana, Suricata, and Zeek."*
 
 ## References
 

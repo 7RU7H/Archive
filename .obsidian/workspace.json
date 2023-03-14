@@ -25,6 +25,42 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "Windows/Windows-Concepts/Accounts-And-Groups/Windows-System-And-Service-Privileges.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "dff0a1c047e676e3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cloud/Cloud-Hacking/Azure-Hacking-Notes.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0dcad7af1fe6d5a1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Maintenance/Azure-Administration-Azure-Monitor.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "24190b45245ff481",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
                 "mode": "source",
                 "source": false
@@ -44,7 +80,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -102,7 +138,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Maintenance/Azure-Administration-Azure-Monitor.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,15 +166,28 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "08345c6010561416",
+  "active": "0dcad7af1fe6d5a1",
   "lastOpenFiles": [
     "Cloud/Azure/Azure-Administration/Azure-Virtual-Networking/Azure-Administration-Azure-DNS.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+    "Security-Enterprises/Cyber-Threat-Intelligence/Cyber-Threat-Intelligence-Defined.md",
+    "Services/ELK/Hacking-ELK.md",
+    "Services/ELK/ELK-Defined.md",
+    "Services/ELK/Elastix.md",
+    "Services/Databases/MSSQL/MSSQL.md",
+    "Cloud/Cloud-Hacking/Azure-Hacking.md",
+    "Cloud/Cloud-Hacking/Azure-Hacking-Notes.md",
+    "Services/Databases/MSSQL/MSSQL-Hacking.md",
+    "Web-Application-Hacking/SQLi/Introduction-to-SQL.md",
+    "Reconnaissance/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
+    "Cloud/Azure/Azure-Administration/Azure-Storage/Azure-Administration-Files.md",
+    "Windows/Windows-Concepts/Accounts-And-Groups/Windows-Services-Account.md",
+    "Windows/Windows-Concepts/Accounts-And-Groups/Windows-System-And-Service-Privileges.md",
+    "Windows/Windows-Concepts/Accounts-And-Groups/Windows-Accounts-Groups.md",
+    "Reconnaissance/Active-Information-Gathering/DNS/DNS-Recon-Active.md",
     "Cryptography-And-Authentication/Cryptography.md",
     "Cryptography-And-Authentication/De-Or-En-Cryption.md",
-    "Reconnaissance/Active-Information-Gathering/DNS/DNS-Recon-Active.md",
     "Tools/Crackmapexec/Crackmapexec-Cheatsheet.md",
-    "Reconnaissance/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
     "Reconnaissance/Active-Information-Gathering/RPC/RPC-Recon.md",
     "README.md",
     "Cloud/Azure/Azure-Administration/Azure-Identities-And-Governance/Azure-Administration-Azure-Roles-And-RBAC.md",
@@ -146,20 +195,7 @@
     "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Maintenance/Azure-Administration-Azure-Monitor.md",
     "Hardware/Hardware-Services/BitLocker.md",
     "Hardware/Hardware-Services",
-    "Linux/Linux-Concepts/Linux-Kernel.md",
-    "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Azure-Kubernetes-Services.md",
     "Images/azure-k8updatenodes.png",
-    "Services/Kubernetes/Kubernetes.md",
-    "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Container-Registeries.md",
-    "Cloud/Azure/Azure-Administration/Azure-Storage/Azure-Administration-Storage-Accounts.md",
-    "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Virtual-Machines.md",
-    "Cloud/Azure/Azure-Administration/Azure-Identities-And-Governance/Azure-Administration-Subscriptions.md",
-    "Networks/Network-Theory/Network-Protocols/DNS-Defined.md",
-    "Cloud/Cloud-Computing-Defined.md",
-    "Cloud/Azure/Azure-Administration/Azure-Identities-And-Governance/Azure-Administration-Azure-Policies.md",
-    "Cloud/Azure/Azure-Administration/Azure-Virtual-Networking/Azure-Administration-Virtual-Networking.md",
-    "Cloud/Azure/Azure-Administration/Azure-Identities-And-Governance/Azure-Administration-AD-Administration.md",
-    "Cloud/Azure/Azure-Administration/Azure-Storage/Azure-Administration-Blobs.md",
     "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Maintenance",
     "Cloud/Azure/Azure-Administration/Azure-Virtual-Networking",
     "Cloud/Azure/Azure-Administration/Azure-Compute-Resources",

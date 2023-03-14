@@ -14,22 +14,34 @@ NETLOGON|
 Some organisation have Anonymous logins due to not wanting make people authenicate when they mess with the share file, **but** put restriction on share files - not a misconfiguration [Ref: Unknown Artists](https://www.youtube.com/watch?v=n4DgGFpQrjk)
 
 ## smbmap
+
 Shows Share **Permissions** and Comment
 ```bash
+# Test permissions by flag
 smbmap -H $IP
 smbmap -H -u ''
 smbmap -H -u 'Guest' -p 'Anonymous'
 smbmap -H -u 'Guest' -p ''
-smbmap -H $IP -u user -p password # requires credentals
+# Always recursively check all credentials and permissions
+smbmap -H $IP -u $user -p $password
+
+# Recursively list dirs, files 
+smbmap -H $IP -R --exclude SYSVOL,IPC$
+# Recursive list contents of directory
+smbmap -H $IP -u $user -p $password -r --exclude SYSVOL,IPC$
+# Download a specifc file
+smbmap -H $IP -u -u $user -p $password  --download user$/$username/Documents/$file.txt
 ```
 
 ## nbtscan 
+
 Scan NetBIOS name servers, enumerate connection points across a network
 ```bash
 nbtscan -r $IP/$CIDR
 ```
 
 ## smbget
+
 Recursively download an entire share
 ```bash
 smbget -R smb://$IP/$share
@@ -40,6 +52,7 @@ smb: \> mget * # Download everything instead of manually
 ```
 
 ## smbclient
+
 ```bash
 # list share with valid user and password
 smbclient -L $IP -U username%password
@@ -69,15 +82,19 @@ smbclient //$IP/$share -c 'put /var/www/my_local_file.txt .\target_folder\target
 ```
 
 ## Crackmapexec!
+
 [[Crackmapexec-Cheatsheet]]
 ```bash
+# Run crackmapexec any command to initalize it
+crackmapexec smb
+# Guest authorization recon
 crackmapexec smb -u 'guest' -p '' --shares
 # If you can read IPC$
 crackmapexec smb -u 'guest' -p '' --rid-brute
-
 ```
 
 ## enum4linux Enumeration
+
 ```bash
 enum4linux -a $IP #  Anonymous session
 enum4linux -a $IP -u <user> -p <pass> # Authenticated session
@@ -88,6 +105,7 @@ enum4linux -a $IP | tee -a enumFourLinux # output to file nicely :)
 ```
 
 ## nmap - Enum Users
+
 Oneliner for enumerating SMB shares
 ```bash
 nmap -p 139,445 --script=smb-enum-shares.nse,smb-enum-users.nse $IP
@@ -124,8 +142,12 @@ nmap -p 445 --script smb-vuln-ms17-010 $ip
 nmap –p 445 --script smb-brute –script-args userdb=user-list.txt,passdb=pass-list.txt $ip
 ```
 
-## Search msfconsole!
+## Metasploit
 
+Auxiliary module
+```ruby
+search smb_login
+```
 
 ## References
 

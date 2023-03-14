@@ -2,17 +2,21 @@
 
 [DNS](https://en.wikipedia.org/wiki/Domain_Name_System) is a distributed database responsible for translating domain names into IP addresses. [[DNS-Defined]] for conceptual stuff and for passive DNS recon [[DNS-Recon-Passive]].
 
-## Host lookup
+#### Host lookup
 
+`nslookup` is useful for query DNS servers 
 ```bash
 nslookup
+# Set variables! - 
 > server $IP
 # Try it's local addresses
 > 127.0.0.1
 > 127.0.0.2
+# Try domains and subdomains
 > domain.tld
 ```
 
+`host` 
 ```bash
 host www.domain.com # return ip for a domain
 host -t ns $url # find nameservers for a domain
@@ -25,7 +29,7 @@ Parse just DNS hostnames
 for server in $(host -t ns megacorpone.com | cut -d" " -f4); do host -l megacorpone.com $server; done
 ```
 
-## Forward Lookup Brute Forcing
+#### Forward Lookup Brute Forcing
 
 TL;DR - Forward lookup: query hostname for IP - What is the IP of this hostname? Foward lookup is defined as requesting an IP address of a hostname to query both a valid and an invalid hostname, if host successfully resolves a name to an IP, it could indicate a functional server. Check Seclists, [[Wordlist-Library]] and [[Wordlists-Considerations]] for comprehensive subdomain brute-forcing to  automate the forward DNS lookup of common hostnames.
 ```bash
@@ -33,7 +37,8 @@ for ip in $(cat list.txt); do host $ip.<insert-domain-name>.com; done
 ```
 [Script](https://github.com/7RU7H/AllTheHackingScripts/blob/main/bash/forwardDNSLookup.sh)
 
-## Reverse Lookup Brute Forcing
+#### Reverse Lookup Brute Forcing
+
 TL;DR - Reverse lookup: query IP for this hostname - What Hostname is using this IP?
 ```bash
 for ip in $(seq  50 100); do host <known-ip-range>.$ip; done | grep -v "not found"
@@ -42,13 +47,13 @@ for ip in $(seq 0 255); do dig -x 192.168.156.$ip; done | grep "ANSWER: 1"
 ```
 [Script](https://github.com/7RU7H/AllTheHackingScripts/blob/main/bash/reverseLookupBruteForcer.sh)
 
-## Tools
+#### Tools
 
 [[Fierce-Cheatsheet]]
 [[DNSenum-Cheatsheet]] 
 DNSRecon is an advanced, modern DNS enumeration script written in Python.
 
-## DNS Zone Transfer
+#### DNS Zone Transfer
 
 TL;DR - DNS Zone Transfer - Database replication between related DNS servers in zone file is copied from a master DNS server to a slave server. If you can perform a DNS zone tranfer you can get alot of Network Information that the DNS server is connected to.
 
@@ -86,11 +91,11 @@ done
 ```
 [Script](https://github.com/7RU7H/AllTheHackingScripts/blob/main/bash/dnsZoneTransfer.sh)
 
-## Bruteforcing DNS
+#### Bruteforcing DNS
 
 [[Amass]]
 
-## Stub Resolution
+#### Stub Resolution
 
 [Massdns](https://github.com/blechschmidt/massdns)
 

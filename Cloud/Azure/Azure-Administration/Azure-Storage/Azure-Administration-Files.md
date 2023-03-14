@@ -58,6 +58,11 @@ Networking
 
 Azure File Sync enables caching of Azure File Share on an on-premise or cloud VM, no limit to amount of cacheing with SMB, NFS and FTPS. Use to centralize your organization's file shares in Azure Files.
 
+- Only for:
+	- Standard file shares (GPv2), LRS/ZRS
+	- Standard file shares (GPv2), GRS/GZRS
+	- Premium file shares (FileStorage), LRS/ZRS
+
 Cloud tiering is an optional feature of Azure File Sync. Frequently accessed files are cached locally on the server while all other files are tiered to Azure Files based on policy settings.
 
 ![](azurefilesynccomponents.png)

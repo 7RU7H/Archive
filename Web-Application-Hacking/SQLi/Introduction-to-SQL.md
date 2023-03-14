@@ -1,9 +1,11 @@
 # Introduction to SQL
+
 Structured Query Language (SQL) is a [domain-specific language](https://en.wikipedia.org/wiki/Domain-specific_language "Domain-specific language") used in programming and designed for managing data held in a [relational database management system](https://en.wikipedia.org/wiki/Relational_database_management_system "Relational database management system") (RDBMS), or for stream processing in a [relational data stream management system](https://en.wikipedia.org/wiki/Relational_data_stream_management_system "Relational data stream management system") (RDSMS).
 
 The reasoning for the location of this file in the directory tree is because unlike Coding-Scripting-Programming directory, the convenience of its closeness to resources to perform SQLinjection is more important. 
 
 ## Contents
+
 [[MySQL-Hacking]]
 [[MySQL-Cheatsheet]]
 [[NoSQL-SQLI]]

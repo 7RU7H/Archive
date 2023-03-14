@@ -7,6 +7,11 @@ Azure Monitor is the comprehensive solution for collecting, analyzing and acting
 - Alerts
 - Automated Actions
 - Log Monitoring
+- Agents
+	- Azure Custom Script Extension is used for post-deployment configuration, software installation, or any other configuration or management task.
+	- Desired State Configuration (DSC) is a management platform to manage an IT and development infrastructure with configuration as code.
+	- Log Analytics agent for Linux as part of a solution to collect JSON output
+	- Azure VMAccess extension acts as a KVM switch that allows you to access the console to reset access to Linux or perform disk-level maintenance.
 
 To obtain observability you need to use Metrics, Logs (Metrics and Logs are two base data types) and Traces.
 - You have to use them together, using them in isolate does not increase visibility
