@@ -444,7 +444,10 @@ Add RDP to a VM Allowing and Disallowing the connection with NSG
 
 #### Azure DNS
 
-- **Azure Alias** - Azure DNS specific record! - Important - Alias A record
+[Overview of Azure DNS alias records](https://learn.microsoft.com/en-us/azure/dns/dns-alias) are qualifications on a DNS record set. They reference Azure resources from a DNS zone in Azure. An alias record set is supported for the following record types in an Azure DNS zone:
+- A, AAAA, CNAME
+- [Create A Alias Record](https://learn.microsoft.com/en-us/azure/dns/tutorial-alias-rr):
+- `Search DNS Zone -> $DNSzone -> + Record Set -> Add record set (Name, Type,, Alias record set (Yes I No), Alias Type (Azure resource | Zone record set)` referencing either a set or resource
 	- Points to directly to an Azure Resource instead of IP or hostname to avoid dangling domains 
 	- Updates DNS record automatically set when IP addresses change
 	- Used for:
@@ -470,9 +473,39 @@ To delegate your domain to Azure DNS:
 	2.  Find the existing `NS` records for your parent domain.
 	3.  Create new `NS` records for your child DNS zone (subdomain).
 
-Create record set or Child zone
-`Search -> DNS zones -> Search $DNSzone -> + Record Set | + Child Zone 
+[Azure DNS](https://learn.microsoft.com/en-us/azure/dns/dns-overview) *"is a hosting service for DNS domains that provides name resolution by using Microsoft Azure infrastructure."*  Azure can manage all your DNS or you can using the all the features other Azureservices.. 
+- It does not support DNSSEC
+- Customizable Vnet with Private domains
 
+Azure Public DNS - [Host your domain in Azure DNS](https://learn.microsoft.com/en-us/azure/dns/dns-delegate-domain-azure-dns)
+- `Search DNS Zones -> Create`
+- If it is a child of an existing zone already hosted in Azure DNS 
+	- `Tick, providing Name and Resource Group Location`
+- [Delegate your DNS zone](https://learn.microsoft.com/en-us/azure/dns/dns-delegate-domain-azure-dns) to Azure DNS
+	1. Get name servers for your zone
+	2. `Search DNS Zones -> $DNSzone -> Overview -> ..name servers listed..`
+	3. Update parent domain with `Azure DNS name servers` - each registar with its own DNS tools
+- [Child Zones](https://learn.microsoft.com/en-us/azure/dns/tutorial-public-dns-zones-child)
+	- `Search -> DNS Zones -> $DNSzone -> + Child zone`
+
+[Azure DNS for private domains](https://learn.microsoft.com/en-us/azure/dns/private-dns-overview) for Custom DNS requires:
+- Vnet (With Resource Manager deployment model) and Subnet,
+- Add Virtual Network Linking: `Resource groups -> $resourceGroup -> $domain -> select Virtual Network Links` - provide VNet, Sub and a `Link name`  
+- Create an additional DNS Record in the correct DNS Zone	
+
+Azure DNS Private Resolver - required RG and VNet - no VM based DNS servers
+- Sub, RG, Name, Region and VNet
+`Search -> Private DNS Resolver` 
+- provide the required Project Details 
+- For `Inbound Endpoints` and `Outbound Endpoints` require both a name and separate subnet 
+- `Ruleset` - `+ Add rules` to Domain name resolution requests that match will be forwarded to the IP addresses  specified through the endpoint selected
+
+Azure Traffic Manager for the Network Watcher can be used the diagnose issues with Azure DNS. 
+[Creating an Alias Record to support apex domains](https://learn.microsoft.com/en-us/azure/dns/tutorial-alias-tm) 
+- Add DNS label from  `Search -> Public IP addresses -> $resource -> Configuration -> DNS name label & Save`
+- Create a traffic manager profile: `Search -> Traffic Manager profile` - consider routing method
+- Add endpoint `$TMprofile -> Endpoints`
+- Create an Alias Record that points to the Traffic Manager profile: `$DNSzone and + Rescord set` 
 Common pattern - name resolution for multiple networks, where one is focused on registration and the other resolution.
 `Vnet1 = Registration <-> Azure Private DNS zone records <-> Vnet2 = Resolution`
 

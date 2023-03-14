@@ -25,43 +25,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cryptography-And-Authentication/Cryptography.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "8d08098a03f22bf3",
+            "id": "76bbbe81024763ba",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cryptography-And-Authentication/De-Or-En-Cryption.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b77e359a66f615f6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Reconnaissance/Active-Information-Gathering/RPC/RPC-Recon.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "269d22e3f8e86434",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tools/Crackmapexec/Crackmapexec-Cheatsheet.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Virtual-Networking/Azure-Administration-Azure-DNS.md",
                 "mode": "source",
                 "source": false
               }
@@ -126,7 +102,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cryptography-And-Authentication/Cryptography.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -156,9 +132,10 @@
   },
   "active": "08345c6010561416",
   "lastOpenFiles": [
-    "Cryptography-And-Authentication/De-Or-En-Cryption.md",
-    "Cryptography-And-Authentication/Cryptography.md",
+    "Cloud/Azure/Azure-Administration/Azure-Virtual-Networking/Azure-Administration-Azure-DNS.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+    "Cryptography-And-Authentication/Cryptography.md",
+    "Cryptography-And-Authentication/De-Or-En-Cryption.md",
     "Reconnaissance/Active-Information-Gathering/DNS/DNS-Recon-Active.md",
     "Tools/Crackmapexec/Crackmapexec-Cheatsheet.md",
     "Reconnaissance/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
@@ -175,7 +152,6 @@
     "Services/Kubernetes/Kubernetes.md",
     "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Container-Registeries.md",
     "Cloud/Azure/Azure-Administration/Azure-Storage/Azure-Administration-Storage-Accounts.md",
-    "Cloud/Azure/Azure-Administration/Azure-Virtual-Networking/Azure-Administration-Azure-DNS.md",
     "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Virtual-Machines.md",
     "Cloud/Azure/Azure-Administration/Azure-Identities-And-Governance/Azure-Administration-Subscriptions.md",
     "Networks/Network-Theory/Network-Protocols/DNS-Defined.md",
