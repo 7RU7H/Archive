@@ -4,83 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "0b8b8d02204af9ac",
+        "id": "a71c1a5e2813efb8",
         "type": "tabs",
         "children": [
           {
-            "id": "9f35fda4d8c67121",
+            "id": "d35c21c084a63013",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "08345c6010561416",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Windows/Windows-Concepts/Accounts-And-Groups/Windows-System-And-Service-Privileges.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "dff0a1c047e676e3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cloud/Cloud-Hacking/Azure-Hacking-Notes.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0dcad7af1fe6d5a1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Maintenance/Azure-Administration-Azure-Monitor.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "24190b45245ff481",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "76bbbe81024763ba",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Virtual-Networking/Azure-Administration-Azure-DNS.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -110,7 +49,7 @@
               "type": "search",
               "state": {
                 "query": "",
-                "matchingCase": false,
+                "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -122,7 +61,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 416.5
+    "width": 355.5
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -138,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Maintenance/Azure-Administration-Azure-Monitor.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -166,10 +105,15 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "0dcad7af1fe6d5a1",
+  "active": "d35c21c084a63013",
   "lastOpenFiles": [
+    "Coding-Scripting-Programming/Regular-Expressions.md",
+    "Tools/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
+    "Tools/Bruteforce-Login-Tools/Brutespray-Cheatsheet.md",
     "Cloud/Azure/Azure-Administration/Azure-Virtual-Networking/Azure-Administration-Azure-DNS.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+    "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Maintenance/Azure-Administration-Azure-Monitor.md",
     "Security-Enterprises/Cyber-Threat-Intelligence/Cyber-Threat-Intelligence-Defined.md",
     "Services/ELK/Hacking-ELK.md",
     "Services/ELK/ELK-Defined.md",
@@ -189,11 +133,6 @@
     "Cryptography-And-Authentication/De-Or-En-Cryption.md",
     "Tools/Crackmapexec/Crackmapexec-Cheatsheet.md",
     "Reconnaissance/Active-Information-Gathering/RPC/RPC-Recon.md",
-    "README.md",
-    "Cloud/Azure/Azure-Administration/Azure-Identities-And-Governance/Azure-Administration-Azure-Roles-And-RBAC.md",
-    "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Azure-Disks.md",
-    "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Maintenance/Azure-Administration-Azure-Monitor.md",
-    "Hardware/Hardware-Services/BitLocker.md",
     "Hardware/Hardware-Services",
     "Images/azure-k8updatenodes.png",
     "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Maintenance",
