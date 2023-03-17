@@ -18,8 +18,57 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "bc28896ac33934fd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Post-Exploitation/Cleanup/Linux-Cleanup.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "da44a6b4362ee5b9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Brain-Hacking/Beyond-Root-Ideas.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2481edc1360c914b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Web-Application-Hacking/Web-Concepts/HTTP-Defined.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "cfacbc91565ea516",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Services/Webservers/Sinatra/Sinatra.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -48,7 +97,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "HTTP-Def",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -57,7 +106,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -77,7 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+                "file": "Web-Application-Hacking/Web-Concepts/HTTP-Defined.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,14 +155,27 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "d35c21c084a63013",
+  "active": "2481edc1360c914b",
   "lastOpenFiles": [
+    "Brain-Hacking/Question-Based-Hacking-Methodology.md",
+    "Brain-Hacking/Beyond-Root-Ideas.md",
+    "Linux/Linux-Concepts/Sudo.md",
+    "Post-Exploitation/Cleanup/Linux-Cleanup.md",
+    "Services/Webservers/Sinatra/Sinatra.md",
+    "Services/Webservers/Apache/Apache-Groovy/Apache-Groovy.md",
+    "Services/Webservers/Apache/Apache-Tomcat/Apache-Tomcat.md",
+    "Services/Webservers/IIS/IIS.md",
+    "Services/Webservers/XAMPP/XAMPP.md",
+    "Services/Webservers/WebDAV/XAMPP.md",
+    "Services/Webservers/JS/nttpd.md",
+    "Services/Webservers/Sinatra",
+    "Post-Exploitation/Cleanup/Windows-Cleanup.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
     "Coding-Scripting-Programming/Regular-Expressions.md",
     "Tools/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
     "Tools/Bruteforce-Login-Tools/Brutespray-Cheatsheet.md",
     "Cloud/Azure/Azure-Administration/Azure-Virtual-Networking/Azure-Administration-Azure-DNS.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
     "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Maintenance/Azure-Administration-Azure-Monitor.md",
     "Security-Enterprises/Cyber-Threat-Intelligence/Cyber-Threat-Intelligence-Defined.md",
     "Services/ELK/Hacking-ELK.md",
@@ -121,18 +184,6 @@
     "Services/Databases/MSSQL/MSSQL.md",
     "Cloud/Cloud-Hacking/Azure-Hacking.md",
     "Cloud/Cloud-Hacking/Azure-Hacking-Notes.md",
-    "Services/Databases/MSSQL/MSSQL-Hacking.md",
-    "Web-Application-Hacking/SQLi/Introduction-to-SQL.md",
-    "Reconnaissance/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
-    "Cloud/Azure/Azure-Administration/Azure-Storage/Azure-Administration-Files.md",
-    "Windows/Windows-Concepts/Accounts-And-Groups/Windows-Services-Account.md",
-    "Windows/Windows-Concepts/Accounts-And-Groups/Windows-System-And-Service-Privileges.md",
-    "Windows/Windows-Concepts/Accounts-And-Groups/Windows-Accounts-Groups.md",
-    "Reconnaissance/Active-Information-Gathering/DNS/DNS-Recon-Active.md",
-    "Cryptography-And-Authentication/Cryptography.md",
-    "Cryptography-And-Authentication/De-Or-En-Cryption.md",
-    "Tools/Crackmapexec/Crackmapexec-Cheatsheet.md",
-    "Reconnaissance/Active-Information-Gathering/RPC/RPC-Recon.md",
     "Hardware/Hardware-Services",
     "Images/azure-k8updatenodes.png",
     "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Maintenance",
@@ -147,7 +198,6 @@
     "Reconnaissance/Active-Information-Gathering/User",
     "Tools/Neo4j",
     "Images/azuremonitorcollectionagents.png",
-    "Tools/Stegonography",
     "Images/azurekglqueries.png",
     "Images/azurealertsdescriptionimage.png",
     "Images/azurelogeventcatergories.png",

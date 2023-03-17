@@ -50,6 +50,8 @@ Content-Type: # what type of data the server expects i.e:"application/x-www-form
 
 `Set-Cookie: <cookie-name>=<cookie-value>`
 
+[The HTTP **`WWW-Authenticate`** response header defines the [HTTP authentication](https://developer.mozilla.org/en-US/docs/Web/HTTP/Authentication) methods ("challenges") that might be used to gain access to a specific resource.](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/WWW-Authenticate)
+
 ### HTTP Body
 
 Body last line(s) of HTTP request where the payload, any data transmitted will be located
@@ -75,7 +77,10 @@ X-*:Non standard HTTP headers, often revealing information is here
 
 
 ## URL Encoding
+
 To ensure data is parse correctly by client and server data can be encoded with URL encoding that  works by replacing all forbidden URL characters with the "%" sign followed by the hexadecimal ASCII value of the specified character.
 
 
+## References
 
+[Mozilla WWW-Authenicate Documentation](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/WWW-Authenticate)

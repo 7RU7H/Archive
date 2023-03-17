@@ -73,6 +73,8 @@ Information - the user Alice has X SID that then indicates Administrative Group
 		- Potential OSINTable VHOST from merging or referenced? 
 		- What does the VHOSTing indicate about the technological stack: Subdomains, Containization, Cloud?
 			- How is then stacked - bottom up from entry point?
+	- WAF?
+		- `If-None-Match` 
 	- Webserver and Website Language
 		- Clarify host OS version from webserver version? - Measure twice cut once!
 		- Vulnerable Lanaguage?
@@ -119,6 +121,9 @@ Information - the user Alice has X SID that then indicates Administrative Group
 	- If nothing is returned can you query the database to sleep()?
 	- If there are multiple fields is there second order injection with `'\''` and `'"'` to generate a error, have do so for each?
 
+- LFI?
+	-  Add a `.` betwen `filename` and `.ext` for invalid file checks
+	- Adding a `/` in the middle of `filename.ext` to check characters
 
 - Web PrivEsc
 - Have you performed scanning or manual enumeration authenicated?
