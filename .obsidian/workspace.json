@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+                "file": "Exploitation/Reverse-Shells-Listing.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/PrivEsc-Important-Linux-Locations.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
                 "mode": "source",
                 "source": false
               }
@@ -61,7 +61,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Brain-Hacking/Beyond-Root-Ideas.md",
+                "file": "Persistence/Linux-Persistence.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a6ba567f556a9f64",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Web-Application-Hacking/PHP-Filters.md",
                 "mode": "source",
                 "source": false
               }
@@ -91,7 +103,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -149,7 +162,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+                "file": "Web-Application-Hacking/PHP-Filters.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -177,17 +190,20 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "d35c21c084a63013",
+  "active": "a6ba567f556a9f64",
   "lastOpenFiles": [
+    "Persistence/Linux-Persistence.md",
+    "Web-Application-Hacking/PHP-Filters.md",
+    "Brain-Hacking/Beyond-Root-Ideas.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/PrivEsc-Important-Linux-Locations.md",
     "Exploitation/Reverse-Shells-Listing.md",
     "Exploitation/Shell-Spawning.md",
     "Post-Exploitation/Port-Redirection-And-Tunneling.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/PrivEsc-Important-Linux-Locations.md",
     "Services/Webservers/WebDAV/XAMPP.md",
     "Services/Webservers/XAMPP/XAMPP.md",
     "Services/Webservers/Apache/Apache-Groovy/Apache-Groovy.md",
     "Services/Webservers/Apache/Apache-Tomcat/Apache-Tomcat.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
     "Tools/C2/Metasploit/MSFvenom-Payloads.md",
     "Tools/C2/Metasploit/Metasploit.md",
     "Tools/C2/Metasploit/Meterpreter-Commands.md",
@@ -200,11 +216,8 @@
     "Web-Application-Hacking/Command-Injection-Cheatsheet.md",
     "Web-Application-Hacking/Web-Concepts/HTTP-Defined.md",
     "Brain-Hacking/Question-Based-Hacking-Methodology.md",
-    "Brain-Hacking/Beyond-Root-Ideas.md",
     "Linux/Linux-Concepts/Sudo.md",
     "Services/Webservers/Sinatra/Sinatra.md",
-    "Services/Webservers/IIS/IIS.md",
-    "Services/Webservers/JS/nttpd.md",
     "Services/Webservers/Sinatra",
     "Hardware/Hardware-Services",
     "Images/azure-k8updatenodes.png",

