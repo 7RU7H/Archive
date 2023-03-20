@@ -2,24 +2,46 @@
 
 ## The power of \*nix ";" or Windows "&"
 
-```
-url/ENDPOINT?PARAMETRE=;ls+-la+/' # Linux Host
-PARAMETRE=&type  # Windows Host
+```powershell
+# Linux and Windows Host
+&
+&&
+| 
+||
+# Linux
+;
+\n # or 0x0a
+# $ or ` to perform inline execution of an injected command
+` # injected command is `
+$( # injected command is )
+
+
+url/ENDPOINT?PARAMETRE=;ls+-la+/ 
+PARAMETRE=&type  
 ```
 
-%2F is url encoded forward slash. & and && to make additional commands to the payload that simply an shell one liner injected into a website.  
+%2F is url encoded forward slash. & and && to make additional commands to the payload that simply a  one liner injected into a website.  
 
 ## Types 
 
 1. Blind - no direct output from the application when testing payloads
-2. Verboase - direct output from the aqpplication when testing payloads
+2. Verbose - direct output from the application when testing payloads
+
+Make the remote server sleep for blind PoC  
+```bash
+sleep 5
+```
 
 ## Remediation 
 
 1. Vulnerable functions interacting with OS replaced
-2. Sanitise Input - Specify format or types of data a user can submit
-3. Filtering Input - Stripping out bad characters
+2. Sanitise and Filtering Input - [Portswigger](https://portswigger.net/web-security/os-command-injection):
+	- Validating against a whitelist of permitted values.
+	- Validating that the input is a number.
+	- Validating that the input contains only alphanumeric characters, no other syntax or whitespace.
 
 ## References
-[portswigger](https://portswigger.net/web-security/os-command-injection)
+
+[Portswigger](https://portswigger.net/web-security/os-command-injection)
 [TryHackMe Room](https://tryhackme.com/room/oscommandinjection)
+[OWASP](https://owasp.org/www-community/attacks/Command_Injection)

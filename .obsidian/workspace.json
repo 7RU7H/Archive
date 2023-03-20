@@ -25,7 +25,31 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Post-Exploitation/Cleanup/Linux-Cleanup.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Linux/PrivEsc-Important-Linux-Locations.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "da56fe8d268d2d32",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/C2/Metasploit/MSFvenom-Payloads.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e7c8aeb283161eb2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Exploitation/Reverse-Shells-Listing.md",
                 "mode": "source",
                 "source": false
               }
@@ -49,7 +73,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Web-Application-Hacking/Web-Concepts/HTTP-Defined.md",
+                "file": "Reconnaissance/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
                 "mode": "source",
                 "source": false
               }
@@ -67,8 +91,7 @@
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -97,7 +120,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "HTTP-Def",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -106,8 +129,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -127,7 +149,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Web-Application-Hacking/Web-Concepts/HTTP-Defined.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -155,35 +177,35 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "2481edc1360c914b",
+  "active": "d35c21c084a63013",
   "lastOpenFiles": [
+    "Exploitation/Reverse-Shells-Listing.md",
+    "Exploitation/Shell-Spawning.md",
+    "Post-Exploitation/Port-Redirection-And-Tunneling.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/PrivEsc-Important-Linux-Locations.md",
+    "Services/Webservers/WebDAV/XAMPP.md",
+    "Services/Webservers/XAMPP/XAMPP.md",
+    "Services/Webservers/Apache/Apache-Groovy/Apache-Groovy.md",
+    "Services/Webservers/Apache/Apache-Tomcat/Apache-Tomcat.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+    "Tools/C2/Metasploit/MSFvenom-Payloads.md",
+    "Tools/C2/Metasploit/Metasploit.md",
+    "Tools/C2/Metasploit/Meterpreter-Commands.md",
+    "Exploitation/Bind-And-Reverse-Shells-Defined.md",
+    "Exploitation/Shells.md",
+    "Exploitation/Using-Public-Exploits.md",
+    "Brain-Hacking/Troubleshooting.md",
+    "Post-Exploitation/Cleanup/Linux-Cleanup.md",
+    "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Enumeration-Defined.md",
+    "Web-Application-Hacking/Command-Injection-Cheatsheet.md",
+    "Web-Application-Hacking/Web-Concepts/HTTP-Defined.md",
     "Brain-Hacking/Question-Based-Hacking-Methodology.md",
     "Brain-Hacking/Beyond-Root-Ideas.md",
     "Linux/Linux-Concepts/Sudo.md",
-    "Post-Exploitation/Cleanup/Linux-Cleanup.md",
     "Services/Webservers/Sinatra/Sinatra.md",
-    "Services/Webservers/Apache/Apache-Groovy/Apache-Groovy.md",
-    "Services/Webservers/Apache/Apache-Tomcat/Apache-Tomcat.md",
     "Services/Webservers/IIS/IIS.md",
-    "Services/Webservers/XAMPP/XAMPP.md",
-    "Services/Webservers/WebDAV/XAMPP.md",
     "Services/Webservers/JS/nttpd.md",
     "Services/Webservers/Sinatra",
-    "Post-Exploitation/Cleanup/Windows-Cleanup.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
-    "Coding-Scripting-Programming/Regular-Expressions.md",
-    "Tools/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
-    "Tools/Bruteforce-Login-Tools/Brutespray-Cheatsheet.md",
-    "Cloud/Azure/Azure-Administration/Azure-Virtual-Networking/Azure-Administration-Azure-DNS.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
-    "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Maintenance/Azure-Administration-Azure-Monitor.md",
-    "Security-Enterprises/Cyber-Threat-Intelligence/Cyber-Threat-Intelligence-Defined.md",
-    "Services/ELK/Hacking-ELK.md",
-    "Services/ELK/ELK-Defined.md",
-    "Services/ELK/Elastix.md",
-    "Services/Databases/MSSQL/MSSQL.md",
-    "Cloud/Cloud-Hacking/Azure-Hacking.md",
-    "Cloud/Cloud-Hacking/Azure-Hacking-Notes.md",
     "Hardware/Hardware-Services",
     "Images/azure-k8updatenodes.png",
     "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Maintenance",
