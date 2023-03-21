@@ -1,6 +1,6 @@
 # Rustscan
 
-Due Rustscan not being very compatable
+Due Rustscan not being very compatable 
 
 Pull either docker image:
 ```bash
@@ -28,7 +28,7 @@ Flags
 -b # Batch size - files openned - 65535 is all ports..
 -t # timeout
 -g # grep 
--u # ulimit
+-u # ulimitis different for every single one of us. Cyber security is not static and there are often multiple paths that lead to Rome. All I ca
 -n # ignore config file
 --accessible # turn off the artwork
 ```

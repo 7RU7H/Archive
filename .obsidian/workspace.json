@@ -8,103 +8,30 @@
         "type": "tabs",
         "children": [
           {
-            "id": "d35c21c084a63013",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Exploitation/Reverse-Shells-Listing.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "bc28896ac33934fd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "da56fe8d268d2d32",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tools/C2/Metasploit/MSFvenom-Payloads.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e7c8aeb283161eb2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Exploitation/Reverse-Shells-Listing.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "da44a6b4362ee5b9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Persistence/Linux-Persistence.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "a6ba567f556a9f64",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Web-Application-Hacking/PHP-Filters.md",
+                "file": "Tools/SIEMs/Splunk.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "2481edc1360c914b",
+            "id": "4ab689310b8f099d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Reconnaissance/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "cfacbc91565ea516",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Services/Webservers/Sinatra/Sinatra.md",
+                "file": "Security-Enterprises/Blueteam/Incident-Handling-Life-Cycle.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 5
+        ]
       }
     ],
     "direction": "vertical"
@@ -162,7 +89,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Web-Application-Hacking/PHP-Filters.md",
+                "file": "Tools/SIEMs/Splunk.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -192,19 +119,23 @@
   },
   "active": "a6ba567f556a9f64",
   "lastOpenFiles": [
-    "Persistence/Linux-Persistence.md",
-    "Web-Application-Hacking/PHP-Filters.md",
-    "Brain-Hacking/Beyond-Root-Ideas.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/PrivEsc-Important-Linux-Locations.md",
+    "Security-Enterprises/Blueteam/Incident-Handling-Life-Cycle.md",
+    "Reconnaissance/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
+    "Tools/SIEMs/Splunk.md",
     "Exploitation/Reverse-Shells-Listing.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+    "Tools/C2/Metasploit/MSFvenom-Payloads.md",
+    "Tools/Port-scanning/Rustscan.md",
+    "Web-Application-Hacking/PHP-Filters.md",
+    "Persistence/Linux-Persistence.md",
+    "Brain-Hacking/Beyond-Root-Ideas.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/PrivEsc-Important-Linux-Locations.md",
     "Exploitation/Shell-Spawning.md",
     "Post-Exploitation/Port-Redirection-And-Tunneling.md",
     "Services/Webservers/WebDAV/XAMPP.md",
     "Services/Webservers/XAMPP/XAMPP.md",
     "Services/Webservers/Apache/Apache-Groovy/Apache-Groovy.md",
     "Services/Webservers/Apache/Apache-Tomcat/Apache-Tomcat.md",
-    "Tools/C2/Metasploit/MSFvenom-Payloads.md",
     "Tools/C2/Metasploit/Metasploit.md",
     "Tools/C2/Metasploit/Meterpreter-Commands.md",
     "Exploitation/Bind-And-Reverse-Shells-Defined.md",
@@ -214,10 +145,6 @@
     "Post-Exploitation/Cleanup/Linux-Cleanup.md",
     "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Enumeration-Defined.md",
     "Web-Application-Hacking/Command-Injection-Cheatsheet.md",
-    "Web-Application-Hacking/Web-Concepts/HTTP-Defined.md",
-    "Brain-Hacking/Question-Based-Hacking-Methodology.md",
-    "Linux/Linux-Concepts/Sudo.md",
-    "Services/Webservers/Sinatra/Sinatra.md",
     "Services/Webservers/Sinatra",
     "Hardware/Hardware-Services",
     "Images/azure-k8updatenodes.png",
