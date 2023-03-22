@@ -137,7 +137,7 @@ socat -x tcp-listen:$port,fork -
 # (sleep is necessary to prevent socat closing socket before data received)
 (echo -e "GET / HTTP/1.1\r\nHost: butzel.info\r\n\r" && sleep 1) \ | socat TCP4:domain.com:80 -
 
-# http to httpS 'Proxy' (for an webserver without TLS-Support)
+# http to https 'Proxy' (for an webserver without TLS-Support)
 socat OPENSSL-LISTEN:443,reuseaddr,pf=ip4,fork,cert=server.pem,cafile=client.crt,verify=0 TCP4-CONNECT:127.0.0.1:80
 
 # udp to tcp

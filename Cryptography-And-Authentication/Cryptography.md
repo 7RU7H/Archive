@@ -239,7 +239,7 @@ SSL encryption procedures leverage both asymmetric and symmetric encryption.
 
 It bypasses the weakness of symmetric encryption by using asymmetric encryption to transmit the symmetric key. But, has several problems.
 
-Transport layer security(TLS) 
+Transport layer security(TLS) - [[TLS-SSL]]
 
 ## Ciphers
 

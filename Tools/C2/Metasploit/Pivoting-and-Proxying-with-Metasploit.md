@@ -55,8 +55,7 @@ route get
 ## Setting up Proxy with Metasploit
 
 Note: Depending on what version of Metasploit you are using, the Proxy Server module will be different. 
-MSF5 and lower will have auxiliary/server/socks4a or socks5, MSF6 and newer will have socks/auxiliary/socks\_proxy. 
-With MSF6, you will need to specify if you want to use SOCKS4(a) or SOCKS5.
+MSF5 and lower will have auxiliary/server/socks4a or socks5, MSF6 and newer will have `socks/auxiliary/socks\_proxy`. With MSF6, you will need to specify if you want to use SOCKS4(a) or SOCKS5. See [[SOCKS5-Protocol]].
 ```ruby
 use auxiliary/server/socks4a
 # msf6 !!

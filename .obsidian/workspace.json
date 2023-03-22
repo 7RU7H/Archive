@@ -8,55 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "a6ba567f556a9f64",
+            "id": "ad1dad14bb6a4d91",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exploitation/Binary-Exploitation/Binary-Exploitation-Enumeration.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9f13b723be4d30b5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Persistence/Linux-Persistence.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4ab689310b8f099d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Networks/Network-Protocols-Cheatsheet.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "bb4c3ba41221aafc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Networks/Network-Theory/Mail-Operations.md",
+                "file": "Networks/Network-Theory/Network-Protocols/IPsec.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -85,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "scp ",
+                "query": "socks5",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -98,7 +61,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 355.5
+    "width": 385.5
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -114,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Networks/Network-Theory/Mail-Operations.md",
+                "file": "Networks/Network-Theory/Network-Protocols/IPsec.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,34 +105,34 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "bb4c3ba41221aafc",
+  "active": "ad1dad14bb6a4d91",
   "lastOpenFiles": [
+    "Networks/Network-Theory/Network-Protocols/SOCKS5-Protocol.md",
+    "Networks/Network-Theory/Network-Protocols/IPsec.md",
+    "Networks/Proxies.md",
     "Networks/Network-Protocols-Cheatsheet.md",
+    "Post-Exploitation/Data-Ex&Infiltration/Data-Exfiltration/Data-Exfiltration-Over-DNS.md",
+    "Tools/C2/Metasploit/Pivoting-and-Proxying-with-Metasploit.md",
+    "Post-Exploitation/Data-Ex&Infiltration/Data-Exfiltration/Data-Exfiltration-Over-HTTP-and-HTTPS.md",
+    "Tools/Packet-Analysis/Wireshark/Wireshark-Useful-Packet-Filters.md",
+    "Tools/Shells/Socat-Cheatsheet.md",
+    "Social-Engineering/Phishing/Phishing-Infrastructure.md",
     "Networks/Network-Theory/Mail-Operations.md",
-    "Networks/Network-Theory/Network-Protocols/Network-Protocols-Hub.md",
-    "Coding-Scripting-Programming/Languages/Bash/Useful_Bash.md",
-    "Post-Exploitation/Privilege-Escalation/Privilege-Escalation-Defined.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
-    "Persistence/Linux-Persistence.md",
-    "Persistence/Windows-Persistence/Windows-Persistence.md",
-    "Persistence/Persistence.md",
-    "Security-Enterprises/Blueteam/Incident-Handling-Life-Cycle.md",
-    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/File-Transfers.md",
-    "Tools/Useful-Software/Puzzle-Solution-Tools.md",
+    "Exploitation/CVEs/Heartbleed.md",
+    "Cryptography-And-Authentication/Cryptography.md",
+    "Networks/Network-Theory/Network-Protocols/TLS-SSL.md",
+    "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Application-Services.md",
+    "Cloud/Azure/Azure-Administration/Azure-Identities-And-Governance/Azure-Administration-AD-Device-Management.md",
+    "Cloud/Azure/Azure-Administration/Azure-Identities-And-Governance/Azure-Administration-Azure-Policies.md",
+    "Cloud/Azure/Azure-Administration/Azure-Identities-And-Governance/Azure-Administration-Azure-Roles-And-RBAC.md",
+    "Cloud/Azure/Azure-Administration/Azure-Identities-And-Governance/Azure-Administration-Subscriptions.md",
+    "Cloud/Azure/Azure-Administration/Azure-Identities-And-Governance/Azure-Administration-AD-Administration.md",
+    "Tools/Port-scanning/Nmap/Nmap-AllTheScripts.md",
+    "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Maintenance/Azure-Administration-Azure-Backups.md",
+    "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Azure-Disks.md",
+    "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Azure-Resource-Manager.md",
+    "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Container-Registeries.md",
     "Exploitation/Binary-Exploitation/Binary-Exploitation-Enumeration.md",
-    "Tools/SIEMs/Splunk.md",
-    "Reconnaissance/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
-    "Exploitation/Reverse-Shells-Listing.md",
-    "Tools/C2/Metasploit/MSFvenom-Payloads.md",
-    "Tools/Port-scanning/Rustscan.md",
-    "Web-Application-Hacking/PHP-Filters.md",
-    "Brain-Hacking/Beyond-Root-Ideas.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/PrivEsc-Important-Linux-Locations.md",
-    "Exploitation/Shell-Spawning.md",
-    "Post-Exploitation/Port-Redirection-And-Tunneling.md",
-    "Services/Webservers/WebDAV/XAMPP.md",
-    "Services/Webservers/XAMPP/XAMPP.md",
-    "Services/Webservers/Apache/Apache-Groovy/Apache-Groovy.md",
     "Services/Webservers/Sinatra",
     "Hardware/Hardware-Services",
     "Images/azure-k8updatenodes.png",

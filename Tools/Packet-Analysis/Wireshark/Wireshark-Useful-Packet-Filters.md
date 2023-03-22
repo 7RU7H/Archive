@@ -316,6 +316,7 @@ http.request.method == "POST"
 
 #### Decrypting HTTPS Traffic
 
+ See [[TLS-SSL]]
 ```c
 http.request
 tls // Global tls

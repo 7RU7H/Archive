@@ -27,16 +27,18 @@ Select manual proxy configuration:
 # CA Certificate 
 
 Certificate Authority (CA) is a entity that issues digital certificates. With HTTPS, the certificate authenicates the server by checking the browser is communicating with a legitmate website.
-"Find in settings":"Certificates" -> click View Certificates... ->  Authorities
+`"Find in settings":"Certificates" -> click View Certificates... ->  Authorities`
 
 # SOCKS Tunnel
 
 To circumvent firewall protections, we need to tunnel our traffic to another network in a secure manner.
 Socket Secure (SOCKS) is network protoocl which allow communication wuth servers through a firewall by tunneling network traffic to atual server on the behalf of a client.
 
-Sock5 proxy supports tunneing for UDP traffic, however not all proxifier tools support this.
+Sock5 proxy supports tunneling for UDP traffic, however not all proxifier tools support this.
 
 ## SOCKS5 Proxy 
+
+See [[SOCKS5-Protocol]]
 ```bash
 systemctl start ssh # Start ssh
 systemctl enable ssh # Enable ssh

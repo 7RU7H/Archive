@@ -82,7 +82,7 @@ Fast Identity Online (FIDO) Alliance - An open industry association whoase missi
 - Client to Authenicator Protocola (CTAP)
 - CTAP is complementary to W3C's Web Authentication (WebAuthn) specification; together, they are known as FIDO2
 
-#### Hybrid Azure AD Joined DEvices
+#### Hybrid Azure AD Joined Devices
 
 Device joined to on-premises AD and Azure requiring organizational account to sign in to the device, primary use case is for hybrid organizations with exist on-premises AD infrastructure. 
 - Operating Systems supported: Windows 7 - 10 and Server 2008 - 2022

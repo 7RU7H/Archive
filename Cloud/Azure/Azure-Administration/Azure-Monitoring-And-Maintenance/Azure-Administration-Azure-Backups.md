@@ -20,9 +20,9 @@ Azure Recovery Services (ARS) vault is a storage entity in Azure that houses dat
 - Central Monitoring for your hybrid IT environment
 - Azure role-based access controll (Azure RBAC)
 - Soft Delete
-- Cross-3Region Restore
- Microsoft Azure Recovery Services (MARS) agent backups files, folders, and system state from Windows on-premises mahcnie and Azure VMs
- - BAckups are stored in a REcovery Services vulat in Azure
+- Cross-Region Restore
+ Microsoft Azure Recovery Services (MARS) agent backups files, folders, and system state from Windows on-premises machine and Azure VMs
+ - Backups are stored in a Recovery Services vulat in Azure
  - MARS agent is also known as the Azure Backup agent
  - The AMRS agent does not support Linux operating systems
 
@@ -97,7 +97,7 @@ Create a Recovery Service Vault
 `Search -> Recovery Services vaults -> + Create`
 - Multi-select for backup "What you want to backup" options
 
-Configure replication of recover Service Vault
+Configure replication of Recover Service Vault
 `$Backup -> Properties -> Backup Configuration -> Update `
 - Choose: `Geo-redundant | Locally redundant | Zone redundant`
 
@@ -146,7 +146,7 @@ Then `Unmount Disks`
 Azure Recovery Services soft delete 
 `Search Recovery Services Vaults -> $rsv -> Backup items -> Azure Backup Agent -> View Details -> $ComputerName -> Delete -> Type the Server name* & Provide Reason & Add comment for professionalism & Tick and Delete`
 
-Stop Backup and Deal witht Data retention
+Stop Backup and Deal with Data retention
 `Search Recovery Services Vaults -> $rsv -> Backup items -> Azure Virtual Machine -> View Details -> Stop Backup`, then pick to:
 - Retain Backup Data 
 - Delete Backup Data

@@ -236,10 +236,10 @@ az network nic show-effective-route-table \
 
 #### VPN Gateways and Connecting On-Premises to Azure
 
-Organizations use a virtual private network (VPN) to create a private, encrypted connection for their resources and users to the internet using [[Ipsec]] protocol. A VPN gateway is a specific type of virtual network gateway that's used to send encrypted traffic between your Azure virtual network and an on-premises location over the public internet or over the Azure backbone Microsoft network. Considerations:
+Organizations use a virtual private network (VPN) to create a private, encrypted connection for their resources and users to the internet using [[IPsec]] protocol. A VPN gateway is a specific type of virtual network gateway that's used to send encrypted traffic between your Azure virtual network and an on-premises location over the public internet or over the Azure backbone Microsoft network. Considerations:
 - Vnet can have one VPN gateway with multiple connects to it sharing the bandwidth
 
-Extending On-Premise to Azure with [[Ipsec]] tunnels - see [planning table](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways#planningtable):
+Extending On-Premise to Azure with [[IPsec]] tunnels - see [planning table](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways#planningtable):
 - Point-To-Site VPN - connect specific device to a network.
 - Site-To-Site VPN - connect a network to virtual network 
 	- Good if ExpressRoute is too expensive
