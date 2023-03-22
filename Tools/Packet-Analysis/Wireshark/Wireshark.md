@@ -1,7 +1,7 @@
 # Wireshark
 
 
-I actively recommend Wireshark as personally it help me really understand [[Networks/Network-Protocols]],[[Networks/Network-Theory/Network-Protocols/Network-Protocols]] and [[TCP-IP-Model]]  and I highly recommend it.
+I actively recommend Wireshark as personally it help me really understand [[Network-Protocols-Cheatsheet]],[[Network-Protocols-Hub]] and [[TCP-IP-Model]]  and I highly recommend it.
 
 ## Introduction
 
@@ -62,7 +62,7 @@ Tool status, profile and numeric packet information:
 Here is where your packets are listed, more inmportant following the stream and 
 [Packetlist](wireshark-packetlist.png)
 
-Packet details - Great place to look into [[OSI-Model]] or [[Networks/Network-Theory/Network-Protocols/Network-Protocols]] very helpful for learning, by looking around.
+Packet details - Great place to look into [[OSI-Model]] or [[Network-Protocols-Hub]] very helpful for learning, by looking around.
 ![Packetdetails](wireshark-packet-detail.png)
 
 Packet bytes are displayed in hex on the left and ascii on the right

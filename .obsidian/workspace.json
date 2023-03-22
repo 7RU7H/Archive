@@ -13,7 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/SIEMs/Splunk.md",
+                "file": "Exploitation/Binary-Exploitation/Binary-Exploitation-Enumeration.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9f13b723be4d30b5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Persistence/Linux-Persistence.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,13 +37,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Security-Enterprises/Blueteam/Incident-Handling-Life-Cycle.md",
+                "file": "Networks/Network-Protocols-Cheatsheet.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "bb4c3ba41221aafc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Networks/Network-Theory/Mail-Operations.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -60,7 +85,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "scp ",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -89,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/SIEMs/Splunk.md",
+                "file": "Networks/Network-Theory/Mail-Operations.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,17 +142,27 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "a6ba567f556a9f64",
+  "active": "bb4c3ba41221aafc",
   "lastOpenFiles": [
-    "Security-Enterprises/Blueteam/Incident-Handling-Life-Cycle.md",
-    "Reconnaissance/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
-    "Tools/SIEMs/Splunk.md",
-    "Exploitation/Reverse-Shells-Listing.md",
+    "Networks/Network-Protocols-Cheatsheet.md",
+    "Networks/Network-Theory/Mail-Operations.md",
+    "Networks/Network-Theory/Network-Protocols/Network-Protocols-Hub.md",
+    "Coding-Scripting-Programming/Languages/Bash/Useful_Bash.md",
+    "Post-Exploitation/Privilege-Escalation/Privilege-Escalation-Defined.md",
     "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+    "Persistence/Linux-Persistence.md",
+    "Persistence/Windows-Persistence/Windows-Persistence.md",
+    "Persistence/Persistence.md",
+    "Security-Enterprises/Blueteam/Incident-Handling-Life-Cycle.md",
+    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/File-Transfers.md",
+    "Tools/Useful-Software/Puzzle-Solution-Tools.md",
+    "Exploitation/Binary-Exploitation/Binary-Exploitation-Enumeration.md",
+    "Tools/SIEMs/Splunk.md",
+    "Reconnaissance/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
+    "Exploitation/Reverse-Shells-Listing.md",
     "Tools/C2/Metasploit/MSFvenom-Payloads.md",
     "Tools/Port-scanning/Rustscan.md",
     "Web-Application-Hacking/PHP-Filters.md",
-    "Persistence/Linux-Persistence.md",
     "Brain-Hacking/Beyond-Root-Ideas.md",
     "Post-Exploitation/Privilege-Escalation/Linux/PrivEsc-Important-Linux-Locations.md",
     "Exploitation/Shell-Spawning.md",
@@ -135,16 +170,6 @@
     "Services/Webservers/WebDAV/XAMPP.md",
     "Services/Webservers/XAMPP/XAMPP.md",
     "Services/Webservers/Apache/Apache-Groovy/Apache-Groovy.md",
-    "Services/Webservers/Apache/Apache-Tomcat/Apache-Tomcat.md",
-    "Tools/C2/Metasploit/Metasploit.md",
-    "Tools/C2/Metasploit/Meterpreter-Commands.md",
-    "Exploitation/Bind-And-Reverse-Shells-Defined.md",
-    "Exploitation/Shells.md",
-    "Exploitation/Using-Public-Exploits.md",
-    "Brain-Hacking/Troubleshooting.md",
-    "Post-Exploitation/Cleanup/Linux-Cleanup.md",
-    "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Enumeration-Defined.md",
-    "Web-Application-Hacking/Command-Injection-Cheatsheet.md",
     "Services/Webservers/Sinatra",
     "Hardware/Hardware-Services",
     "Images/azure-k8updatenodes.png",

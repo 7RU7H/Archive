@@ -38,7 +38,7 @@ find / -name docker.sock 2>/dev/null
 
 [Deepce](https://github.com/stealthcopter/deepce.git) is like PEAS-NG for Docker
 
-Docker has a socket [[Networks/Network-Protocols]] on 5000 so that another host can send commands to it, not default, but possible.
+Docker has a socket [[Network-Protocols-Cheatsheet]] on 5000 so that another host can send commands to it, not default, but possible.
 
 
 ## Preface

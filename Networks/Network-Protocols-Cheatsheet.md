@@ -1,25 +1,30 @@
 # Network Protocols
 
-## 20/21 - FTP
+## 20 & 21 - FTP
+
 File transfer protocol, client-server model
-1. Port 20 for data
-2. Port 21 for commands 
-3. Can connect similar with telnet client with port number!
+- Control Connection - connection request - Port 21 for commands 
+- Data Connection - post authenication, used for transferring data -  Port 20 for data
+- Varienty of  clients: Telnet, Filezilla (Common IoC),  CuteFTP
 ```bash
 wget -r ftp://[username]:[password]@[ip]/
 ftp ip
-
+# Active mode is used by client and server to negoiate authenication
 -n 	prevent autologon
 -v 	verbose server output
 
 USER username
 PASS password
-SYST	system		system info
-PASV	passive		enter passive mode
-TYPE A	type ascii	enter ASCII mode
-STAT	status		give server status
+SYST	# system		system info
+PASV	# passive		enter passive mode - this is first command that is sent after auth
+TYPE A	# type ascii	enter ASCII mode
+ASCII   # Will perform the same as the above 
+IMAGE   # Binary mode 
+EBCDIC  # for EBCDIC character set
+STAT	# status		give server status
+LOCAL   # "Type L n" for machines that do not support 8-bit bytes transfer - n is byte size
 
-# If downloading files that are binaries
+# If (up/down)loading files that are binaries!
 binary # prepare server for binary mode transfer
 get x.exe
 
@@ -27,6 +32,7 @@ ls -la		list directory, sometimes ls DOES NOT WORK
 get file
 put file	upload files!
 ```
+
 
 ## 22 - SSH & SFTP - Submodule of ssh
 Default port 22 - Secure File transfer protocol 
@@ -54,6 +60,7 @@ GET /page.html HTTP/1.1
 ```
 
 ## 25 - SMTP
+
 Stands for Simple mail transfer protocol
 For recon: [[SMTP-Recon-Cheatsheet]], for [[Mail-Operations]]
 ```bash
@@ -63,9 +70,17 @@ nc -nv $IP
 
 ## 48 - WHOIS 
 
-## 53 - DNSEnd Point Mapper
-Default port 53 - [[DNS-Defined]], [[DNS-Recon-Active]], [[DNS-Recon-Passive]]
-TCP/UDP; TCP is for zone transfers 
+## 53 (TCP & UDP) - DNS/DNSSEC
+
+[[DNS-Defined]], [[DNS-Recon-Active]], [[DNS-Recon-Passive]]
+
+DNSSEC ensure possibility that a DNS response received is from the domain owner. Requires:
+1. The DNS zone owner signs all DNS records using a private key.
+2. The DNS zone publishes its public key
+
+DNS EndPoint Mapper
+
+Microsoft Azure expands on DNS see [[Azure-Administration-Azure-DNS]]
 
 ## 69 - TFTP
 Stands for trivial file transfer protocol - UDP FTP
@@ -83,8 +98,9 @@ Default  port 80
 Found on the Domain Controller in Active Directory Network - see [[Active-Directory-Kerberos-Authenication-Defined]]
 
 ## 110 - POP3
+
 Generally port 110, Post Office Protocol 3 is used to download email from mail delivery agent.
-Acronyms: mail transfer agent (MTA), mail delivery agent (MDA), mail submission agent (MSA), mail user agent (MUA).
+Acronyms: mail transfer agent (MTA), mail delivery agent (MDA), mail submission agent (MSA), mail user agent (MUA). POP3 is used to download email messages from the server to the client.
 ```bash
 MDA -- from MUA -(smtp)-> MSA/MTA -> SMTP -> MTA/MDA -(POP3/IMAP)-> MUA
 # Connect
@@ -137,7 +153,7 @@ RPC encryption protocol of higher port number. See [[RPC-Recon]], use [[RPCClien
 EPMAP allows launching procedures that are remotely hosted (bootstrap) through the distribution of an MS-RPC service’s IP address and protocol - [REF](https://documentation.stormshield.eu/SNS/v4/en/Content/User_Configuration_Manual_SNS_v4/Protocols/EPMAP_Protocol.htm)
 
 
-## 137-9), 445 -  NBT - SMB
+## (137-9), 445 -  NBT - SMB
 
 Server Message Block protocol uses a client-server model. Client uses `smbclient` see [[SMB-Recon-Cheatsheet]]. SMB originally ran on top of NetBIOS using port 139. NetBIOS is an older transport layer that allows Windows computer to communicate on the same network. Later versions of SMB(after Windows 2000) use port 445 on top of a TCP stack, TCP allows for internet communication. NetBIOS over TCP/IP (NetBT) is Windows name resolution.
 
@@ -162,14 +178,20 @@ Lightweight Directory Access Protocol
 Default port 389 and encrypted variant is 636 - [[LDAP-Recon]]
 
 ## 443 - HTTPS
-//internet messaging access protocol
-//default port 443
+
+[[HTTP-Defined]]
 
 ## 445 - SMB
-See 13(5,7-9) for legacy SMB 139 is the equivilent service port to 445
+
+Widely using for file transfer in Windows AD and Azure Networking for File Shares and Azure Files 
+See 13(5,7-9) for legacy SMB 139 is the equivilent service port to 445. 
+- [[SMB-Recon-Cheatsheet]]
+- [[Azure-Administration-Files]]
 
 ## 465 - SMTPS
-//default port 
+
+Simple Mail Transfer Protocol Secure, not to be confused with SMTP with POP3, both are use in email communication. SMTP is an “Email Push Protocol” used to transfer email messages from the client to the server. [[Mail-Operations]]
+
 
 ## 464 Kpasswd5
 
@@ -189,10 +211,12 @@ Line Printer Daemon
 Internet printing protocol default port 631
 
 ## 636 - LDAPS
+
 Lightweight Directory Access Protocol over SSL
 Default port 636 and non-encrypted variant is - 389 - [[LDAP-Recon]]
 
 ## 873 - Rsync
+
 [Rsync](https://wiki.archlinux.org/title/rsync) is an open source utility that provides fast incremental file transfer. Can transfer anonymously without credential - good for mirroring. 
 ```bash
 rsync --list-only $ip::
@@ -202,10 +226,14 @@ rsync 3$ip::$share/$remotefile $copyfiletohost
 ```
 
 ## 990 - FTPS 
-FTPS default port 990
+
+FTPS default port 990, which not to be confused with SFTP. FTPS is FTP with TLS.
+- Control Connection - connection request
+- Data Connection - post authenication, used for transferring data
 
 ## 993 - IMAPS
-IMAPS default port 993
+
+IMAPS default port 993, [Internet messaging access protocol](https://en.wikipedia.org/wiki/Internet_Message_Access_Protocol) used by email clients to retrieve messages from a mail server of TCP/IP
 
 ## 995 - POP3S
 [[Mail-Operations]]

@@ -56,7 +56,7 @@ IF IPS blocks DNS-queries && HTTP requests THEN:
 
 #### Manipulating (Source) TCP/UDP port
 
-If you all your traffic coming from an established [[Networks/Network-Protocols]] port then the recieving end will interpret just by port number, allowing for evasion. Without deep packet inspection, the port numbers are the primary indicator of the service used, unless the security solution can analyze the data carried by the TCP segments.
+If you all your traffic coming from an established [[Network-Protocols-Cheatsheet]] port then the recieving end will interpret just by port number, allowing for evasion. Without deep packet inspection, the port numbers are the primary indicator of the service used, unless the security solution can analyze the data carried by the TCP segments.
 
 
 #### Session Splicing
