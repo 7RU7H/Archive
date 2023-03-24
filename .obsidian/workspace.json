@@ -32,6 +32,30 @@
             }
           },
           {
+            "id": "b44cafc13338b3cb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/Content-Discovery-Tools/FFUF-Cheatsheet.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a62789871cba7a44",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Services/Webservers/PHP-Webserver-Commonalities.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "1847c636fb625c7f",
             "type": "leaf",
             "state": {
@@ -44,7 +68,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -73,7 +97,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "socks5",
+                "query": "ASP.",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -102,7 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exploitation/CVEs/CVE-2023-23397.md",
+                "file": "Services/Webservers/PHP-Webserver-Commonalities.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,10 +154,14 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "8d41630688618d05",
+  "active": "a62789871cba7a44",
   "lastOpenFiles": [
-    "Networks/Network-Theory/Network-Protocols/IPsec.md",
+    "Services/Webservers/ASP-DotNet-Webserver-Commonalities.md",
+    "Tools/Content-Discovery-Tools/FFUF-Cheatsheet.md",
+    "Web-Application-Hacking/API/API-Fuzzing.md",
+    "Post-Exploitation/Credentials-Harvesting/Browser-Credential-Harvesting.md",
     "Exploitation/CVEs/CVE-2023-23397.md",
+    "Networks/Network-Theory/Network-Protocols/IPsec.md",
     "Hacker-Distros/Kali/Kali-Purple.md",
     "Networks/Network-Theory/Network-Protocols/SOCKS5-Protocol.md",
     "Networks/Proxies.md",
@@ -154,10 +182,6 @@
     "Cloud/Azure/Azure-Administration/Azure-Identities-And-Governance/Azure-Administration-Azure-Roles-And-RBAC.md",
     "Cloud/Azure/Azure-Administration/Azure-Identities-And-Governance/Azure-Administration-Subscriptions.md",
     "Cloud/Azure/Azure-Administration/Azure-Identities-And-Governance/Azure-Administration-AD-Administration.md",
-    "Tools/Port-scanning/Nmap/Nmap-AllTheScripts.md",
-    "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Maintenance/Azure-Administration-Azure-Backups.md",
-    "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Azure-Disks.md",
-    "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Azure-Resource-Manager.md",
     "Services/Webservers/Sinatra",
     "Hardware/Hardware-Services",
     "Images/azure-k8updatenodes.png",

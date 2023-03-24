@@ -116,7 +116,7 @@ wfuzz -c -w ./lfi2.txt --hw 0 http://10.10.10.10/nav.php?page=../../../../../../
 
 ## Phpinfolfi
 
-[[Webservers-PHP-Based-Commonalities]], and phpinfo pages contain both the configuration for whether uploads are enabled but also  PHP Variables section that be then check after attempting upload.
+[[PHP-Webserver-Commonalities]], and phpinfo pages contain both the configuration for whether uploads are enabled but also  PHP Variables section that be then check after attempting upload.
 
 ```
 Content-Type: multipart/form-data; boundary=BadFileFromBurp

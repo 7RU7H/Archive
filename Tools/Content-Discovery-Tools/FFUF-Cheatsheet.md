@@ -16,7 +16,10 @@ where has this gone?
 woops - will update soon
 ```
 
-## Wordlists and Use
+#### Wordlists and Use
+
+Consult [[Wordlists]], [[Wordlist-Library]] and [[Wordlists-Considerations]]
+
 **File extensions**
 /seclists/Discovery/Web-Content/web-extensions.txt
 /seclists/Discovery/Web-Content/raft-medium-words-lowercase.txt
@@ -32,36 +35,41 @@ woops - will update soon
 /seclists/Discovery/Web-Content/burp-parameter-names.txt
 /seclists/Discovery/Web-Content/burp-parameter-names.txt
 
-## Fuzz with special Header
+#### Fuzz with special Header
 
 ```bash
 # IP spoof
 ffuf -H 'X-Forwarded-For: 10.10.10.10'
 ```
 
-## Fuzzing for.. Bruteforce attacks
+#### Fuzzing for.. Bruteforce attacks
+
 Use ffuf like hydra using file size filter to check responses, -X flag to set request type, -d  to send data and -H custom header similar to `curl`.
 ```bash
 ffuf -u http://$IP/Login -c -w /usr/share/wordlists/rockyou.txt -X POST -d 'username=admin&password=FUZZ&submit=Submit' -fs 1435 -H 'Content-Type: application/x-www-form-urlencoded'
 ```
 
-## Fuzzing for Extension
+##### Fuzzing for Extension
+
 Need to figure out what the server is running:
 ```bash
 ffuf -w /usr/share/seclists/Discovery/Web-Content/web-extensions.txt:FUZZ -u http://$IP/index.FUZZ 
 ```
 
-## Fuzzing for Pages
+#### Fuzzing for Pages
+
 ```bash
 ffuf -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-small.txt:FUZZ -u http://$IP/blog/FUZZ.php
 ```
 
-## Fuzzing for Values
+#### Fuzzing for Values
+
 ```bash
 ffuf -w ids.txt:FUZZ -u http://$IP/admin/admin.php -X POST -d 'id=FUZZ' -H 'Content-Type: application/x-www-form-urlencoded' -fs $xxx
 ```
 
-## Fuzzing for Parameters
+#### Fuzzing for Parameters
+
 [It might be better to use](https://github.com/nsonaniya2010/SubDomainizer)
 ```bash
 ffuf -u 'http://$IP/path/?FUZZ=1' -c -w /usr/share/seclists/Discovery/Web-Content/burp-parameter-names.txt -fw 39  
@@ -76,12 +84,12 @@ POST
 ffuf -w wordlist.txt:FUZZ -u http://$IP/admin/admin.php -X POST -d 'FUZZ=key' -H 'Content-Type: application/x-www-form-urlencoded' -fs $xxx
 ```
 
-## Fuzz.. Recursively
+#### Fuzz.. Recursively
 ```bash
 ffuf -w wordlist.txt:FUZZ -u http://$IP/FUZZ -recursion -recursion-depth 1 -e .php -v
 ```
 
-## Fuzzing for VHosts
+#### Fuzzing for VHosts
 [To match the output of wfuzz at 5:20](https://www.youtube.com/watch?v=U-2nI6wSPOE&t=46s) at  
 ```bash
 ffuf -u http://mydomain.com -H "Host: FUZZ.mydomain.com" -c -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt:FUZZ  -fl $checkToFilter --mc all
@@ -89,9 +97,17 @@ ffuf -u http://mydomain.com -H "Host: FUZZ.mydomain.com" -c -w /usr/share/seclis
 [virtual hosts](https://httpd.apache.org/docs/2.4/en/vhosts/examples.html) (vhosts) is the name used by Apache httpd.
 Nginx use [Server Blocks](https://www.nginx.com/resources/wiki/start/topics/examples/server_blocks/).
 
-## Fuzzing for Subdomains
+#### Fuzzing for Subdomains
 ```bash
 ffuf -u http://mydomain.com -c -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt -H 'Host: FUZZ.mydomain.com' -fs 0
+```
+
+#### Fuzz a field in a captured request 
+
+Reminder to edit the request.req and add FUZZ Field
+```bash
+# Consider editing size of request to speed up fuzzing
+ffuf -request request.req -request-proto http
 ```
 
 ## References
