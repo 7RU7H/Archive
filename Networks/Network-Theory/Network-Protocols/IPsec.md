@@ -92,13 +92,6 @@ New IP Header | AH Header | IP Header | TCP/UDP Header | Data |  ESP Trailer | E
 		- Cleartext -> `[IP Header][TCP|UDP Header][Payload]`
 		- Encrypted Modes:
 
-## IPsec-v3
-
-- Authentication Header (AH) for authentication and integrity.
-- Encapsulating Security Payload (ESP) forauthentication, integrity, and confidentiality.
-- Security Association (SA) is responsible for negotiating the encryption keys and algorithms. 
-	- Internet Key Exchange (IKE)
-
 
 ## NAT Traversal
 
@@ -110,7 +103,7 @@ If there is NAT boudary between the two sites we must add a NAT traveral - add U
 
 ## Strongswan
 
-[Strongswan](https://en.wikipedia.org/wiki/StrongSwan) is apparently really complex and requires considerations about the configuration that must be exact, unlike OpenVPN you do not need to transfer configuration file. Refer to Troubleshooting IPsec with [https://docs.netgate.com/pfsense/en/latest/troubleshooting/ipsec.html]. Ipsec manual and Ipsec.secrets, the Strongswan documentation is pretty rough and dense.
+[Strongswan](https://en.wikipedia.org/wiki/StrongSwan) is apparently really complex and requires considerations about the configuration that must be exact, unlike OpenVPN you do not need to transfer configuration file. Refer to Troubleshooting IPsec with [https://docs.netgate.com/pfsense/en/latest/troubleshooting/ipsec.html](https://docs.netgate.com/pfsense/en/latest/troubleshooting/ipsec.html). Ipsec manual and Ipsec.secrets, the Strongswan documentation is pretty rough and dense.
 
 ```bash
 #  install strongswan

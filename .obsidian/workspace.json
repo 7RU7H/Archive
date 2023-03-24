@@ -18,8 +18,33 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "8d41630688618d05",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Exploitation/CVEs/CVE-2023-23397.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1847c636fb625c7f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Hacker-Distros/Kali/Kali-Purple.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -77,7 +102,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Networks/Network-Theory/Network-Protocols/IPsec.md",
+                "file": "Exploitation/CVEs/CVE-2023-23397.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,10 +130,12 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "ad1dad14bb6a4d91",
+  "active": "8d41630688618d05",
   "lastOpenFiles": [
-    "Networks/Network-Theory/Network-Protocols/SOCKS5-Protocol.md",
     "Networks/Network-Theory/Network-Protocols/IPsec.md",
+    "Exploitation/CVEs/CVE-2023-23397.md",
+    "Hacker-Distros/Kali/Kali-Purple.md",
+    "Networks/Network-Theory/Network-Protocols/SOCKS5-Protocol.md",
     "Networks/Proxies.md",
     "Networks/Network-Protocols-Cheatsheet.md",
     "Post-Exploitation/Data-Ex&Infiltration/Data-Exfiltration/Data-Exfiltration-Over-DNS.md",
@@ -131,8 +158,6 @@
     "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Maintenance/Azure-Administration-Azure-Backups.md",
     "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Azure-Disks.md",
     "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Azure-Resource-Manager.md",
-    "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Container-Registeries.md",
-    "Exploitation/Binary-Exploitation/Binary-Exploitation-Enumeration.md",
     "Services/Webservers/Sinatra",
     "Hardware/Hardware-Services",
     "Images/azure-k8updatenodes.png",
