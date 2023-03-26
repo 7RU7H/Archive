@@ -28,8 +28,9 @@ Communicative effiecency - Computationally effiecency - Adaptablility - Open - L
 
 1. Be proactively Honest - talk all the time, do not be paranoid it is inefficient
 	-  If you are an immoral shit to whomever then NOPSEC is not for you
-    -  Have brutal clarity over your objectives and override culture.
-    - Talk all the time and teach people everything that you know to create a cyclic loop of pedagogic progression
+	-  Have brutal clarity over your objectives, override culture and biases.
+	- Ask yourself if any biases may affect youtr thinking or others?
+	- Talk all the time and teach people everything that you know to create a cyclic loop of pedagogic progression
 	- Cyber-Agencies and Authority have all the power and resources
 	- You are not special and no one is, only the group and its effiecency is special
 	- Have social media accounts for specific goal - want to program only follow programmers that are good
@@ -49,7 +50,12 @@ Communicative effiecency - Computationally effiecency - Adaptablility - Open - L
 	- Stop, Listen, Wait, Think and Learn from others 
 	- Be open others' criticism
 	- Be open others' humourous takes
-	- Be open to not extending beyond the bounds of 
+	- Be open to not extending beyond the bounds of what ends up a rabbithole
+	- Be empathetic and not sympathetic
+	- Listen to calculate 
+		- What is the framing	
+		- Is this too good to be true? 
+		- Am I emotional primed to respond 
 1. Be proactively positive - make your life more valuable to yourself
 	1. Life takes longer the more depressed you are, but you get more fun and happiness from the same amount of time it just seems to go quick
 2. Review Operationalisation of NOPSEC and YOUR ID
@@ -59,7 +65,7 @@ Communicative effiecency - Computationally effiecency - Adaptablility - Open - L
 	- Practice Logic to remove the illogical
 	- Do not use code words it is abstraction that creates inefficiency
 	- If you are loud then everyone know you are there, either you are food or not a threat - be a white blood cell to humanity
-5. Use Crypto-nyms and have them setup prior to use
+5. Use Crypto-nyms and have them setup prior to use OR speak and avocate for common sociolect usage that is both stiving to be scientific and logically
 6. Be legal never worry and always will alway help others to help justify to others to end there fear
 	- No blackmail, no threats, no need to matyr yourself
 	- Examples:
@@ -76,5 +82,6 @@ Communicative effiecency - Computationally effiecency - Adaptablility - Open - L
 10. Schedule personal life and ESPECIALLY family time or your need to do non-objective task or your family will crawl that time out of you in a painful way
 11. Keep person environment and life controband/crime free
 	- Prisons of various types are suppose to be bad, why go
-12. If you can listen to ANY authority then they will tell you stuff and save you alot of time and pain
-13. Be mindful of any control, but especially your own control over your own actions, detirministically you might be doing shit, because you are just shit. 
+	- Most people are happy when they feel they are making impact and doing something that has some meanful  good, recognise that other may need some help and being there  to provide that no matter how insignicant that may be may actually be really good for that other person.
+1. If you can listen to ANY authority then they will tell you stuff and save you alot of time and pain
+2. Be mindful of any control, but especially your own control over your own actions, detirministically you might be doing shit, because you are just shit. 

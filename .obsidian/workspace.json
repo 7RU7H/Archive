@@ -4,35 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "a71c1a5e2813efb8",
+        "id": "21f423b40b5d4a06",
         "type": "tabs",
         "children": [
           {
-            "id": "ad1dad14bb6a4d91",
+            "id": "91b3d8b0a7838d01",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Exploitation/CVEs/PrintNightmare.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e76b8a53e529248a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tools/Tor-Hidden-Services.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -61,7 +44,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Amass",
+                "query": "NOPSEC",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -90,7 +73,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/Tor-Hidden-Services.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,10 +100,12 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "e76b8a53e529248a",
+  "active": "91b3d8b0a7838d01",
   "lastOpenFiles": [
-    "Security-Enterprises/Blueteam/Threat-Hunting-Talk-John-Ham.md",
     "Exploitation/CVEs/PrintNightmare.md",
+    "Security-Enterprises/NOPSEC-101.md",
+    "Tools/Tor-Hidden-Services.md",
+    "Security-Enterprises/Blueteam/Threat-Hunting-Talk-John-Ham.md",
     "Images/wwh-seriouslyireallycanstillseeyou-llmnrandwpadprimer.png",
     "Reconnaissance/Active-Information-Gathering/DNS/DNS-Recon-Active.md",
     "Tools/Recon-Frameworks/Amass.md",
@@ -145,7 +129,6 @@
     "Post-Exploitation/Data-Ex&Infiltration/Data-Exfiltration/Data-Exfiltration-Over-DNS.md",
     "Tools/C2/Metasploit/Pivoting-and-Proxying-with-Metasploit.md",
     "Post-Exploitation/Data-Ex&Infiltration/Data-Exfiltration/Data-Exfiltration-Over-HTTP-and-HTTPS.md",
-    "Tools/Packet-Analysis/Wireshark/Wireshark-Useful-Packet-Filters.md",
     "Services/Webservers/Sinatra",
     "Hardware/Hardware-Services",
     "Images/azure-k8updatenodes.png",
