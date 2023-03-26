@@ -1,4 +1,5 @@
 # Golang 
+
 ## Installing GO
 
 ## Compiling Go
@@ -31,9 +32,11 @@ upx <binary>
 ```
 
 ## Effective Go
+
 [Effective Go is a great article to write idiomatic Go Code](https://go.dev/doc/effective_go)
 
 ## Test Driven Development Template
+
 [[Go-Testdriven-Development]]
 
 ## Golang Installation for Linux-Based Hacker Distros
@@ -51,11 +54,15 @@ echo "" | tee -a ~/.<rc file of shell>
 echo "# Golang GOPATH and GOBIN" | tee -a ~/.profile
 echo "export GOPATH=\"$HOME/go\"" | tee -a ~/.profile
 echo "export GOBIN=\"$GOPATH/bin\"" | tee -a ~/.profile
-
 ```
 
+## Secure Coding in Go
+
+[OWASP's Go-SCP](https://github.com/OWASP/Go-SCP) is a *"Go programming language secure coding practices guide"*
 
 ## References
+
 [Official Compilation Tutorial](https://go.dev/doc/tutorial/compile-install)
 [Effective Go is a great article to write idiomatic Go Code](https://go.dev/doc/effective_go)
 [Building for specific archs and oses](https://www.digitalocean.com/community/tutorials/building-go-applications-for-different-operating-systems-and-architectures)
+[OWASP's Go-SCP](https://github.com/OWASP/Go-SCP)

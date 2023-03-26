@@ -13,43 +13,43 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Networks/Network-Theory/Network-Protocols/IPsec.md",
+                "file": "Reconnaissance/Active-Information-Gathering/DNS/DNS-Recon-Active.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "8d41630688618d05",
+            "id": "32ca53e8ab3e93c9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exploitation/CVEs/CVE-2023-23397.md",
+                "file": "Tools/Recon-Frameworks/Amass.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "b44cafc13338b3cb",
+            "id": "53c3cbb9cf5cb699",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/Content-Discovery-Tools/FFUF-Cheatsheet.md",
+                "file": "Coding-Scripting-Programming/Languages/Go/Golang.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "a62789871cba7a44",
+            "id": "37eda155e61a2764",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Services/Webservers/PHP-Webserver-Commonalities.md",
+                "file": "Tools/DNS-Related/DIG-cheatsheet.md",
                 "mode": "source",
                 "source": false
               }
@@ -67,8 +67,7 @@
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -97,7 +96,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "ASP.",
+                "query": "Amass",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -126,7 +125,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Services/Webservers/PHP-Webserver-Commonalities.md",
+                "file": "Reconnaissance/Active-Information-Gathering/DNS/DNS-Recon-Active.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -154,14 +153,23 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "a62789871cba7a44",
+  "active": "ad1dad14bb6a4d91",
   "lastOpenFiles": [
+    "Tools/DNS-Related/DNSRecon-Cheatsheet.md",
+    "Reconnaissance/Active-Information-Gathering/DNS/DNS-Recon-Active.md",
+    "VirusTotal.md",
+    "Linux/Linux-Commands/Linux-CLIMagic.md",
+    "Linux/Linux-Commands/Linux-One-Liners-To-Rule-Them-All.md",
+    "Coding-Scripting-Programming/Languages/Go/Golang.md",
+    "Tools/Recon-Frameworks/Amass.md",
+    "Networks/Network-Theory/Network-Protocols/IPsec.md",
+    "Exploitation/CVEs/CVE-2023-23397.md",
+    "Tools/DNS-Related/DIG-cheatsheet.md",
+    "Services/Webservers/PHP-Webserver-Commonalities.md",
     "Services/Webservers/ASP-DotNet-Webserver-Commonalities.md",
     "Tools/Content-Discovery-Tools/FFUF-Cheatsheet.md",
     "Web-Application-Hacking/API/API-Fuzzing.md",
     "Post-Exploitation/Credentials-Harvesting/Browser-Credential-Harvesting.md",
-    "Exploitation/CVEs/CVE-2023-23397.md",
-    "Networks/Network-Theory/Network-Protocols/IPsec.md",
     "Hacker-Distros/Kali/Kali-Purple.md",
     "Networks/Network-Theory/Network-Protocols/SOCKS5-Protocol.md",
     "Networks/Proxies.md",
@@ -173,15 +181,6 @@
     "Tools/Shells/Socat-Cheatsheet.md",
     "Social-Engineering/Phishing/Phishing-Infrastructure.md",
     "Networks/Network-Theory/Mail-Operations.md",
-    "Exploitation/CVEs/Heartbleed.md",
-    "Cryptography-And-Authentication/Cryptography.md",
-    "Networks/Network-Theory/Network-Protocols/TLS-SSL.md",
-    "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Application-Services.md",
-    "Cloud/Azure/Azure-Administration/Azure-Identities-And-Governance/Azure-Administration-AD-Device-Management.md",
-    "Cloud/Azure/Azure-Administration/Azure-Identities-And-Governance/Azure-Administration-Azure-Policies.md",
-    "Cloud/Azure/Azure-Administration/Azure-Identities-And-Governance/Azure-Administration-Azure-Roles-And-RBAC.md",
-    "Cloud/Azure/Azure-Administration/Azure-Identities-And-Governance/Azure-Administration-Subscriptions.md",
-    "Cloud/Azure/Azure-Administration/Azure-Identities-And-Governance/Azure-Administration-AD-Administration.md",
     "Services/Webservers/Sinatra",
     "Hardware/Hardware-Services",
     "Images/azure-k8updatenodes.png",

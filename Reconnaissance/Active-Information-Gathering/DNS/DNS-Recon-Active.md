@@ -2,6 +2,39 @@
 
 [DNS](https://en.wikipedia.org/wiki/Domain_Name_System) is a distributed database responsible for translating domain names into IP addresses. [[DNS-Defined]] for conceptual stuff and for passive DNS recon [[DNS-Recon-Passive]].
 
+#### Host Discovery
+
+The website [dnsdumpster](https://dnsdumpster.com/) *"is a FREE domain research tool that can discover hosts related to a domain. Finding visible hosts from the attackers perspective is an important part of the security assessment process."*
+- Non-Bruteforce
+- Pro-version for more queries
+
+[nmmapper's python tool dnsdumpster](https://github.com/nmmapper/dnsdumpster) is *"a tool to perform DNS reconnaissance on target networks. Among the DNS information got from include subdomains, mx records, web application firewall detection and more fingerprinting and lookups"*. 
+
+#### Certificate Search
+
+[Bharath](https://blog.appsecco.com/a-penetration-testers-guide-to-sub-domain-enumeration-7d842d5570f6):*"Certificate Transparency(CT) is a project under which a Certificate Authority(CA) has to publish every SSL/TLS certificate they issue to a public log. An SSL/TLS certificate usually contains domain names, sub-domain names and email addresses."* In the article [Bharath](https://medium.com/@0xbharath?source=---two_column_layout_sidebar----------------------------------) recommends:
+- [https://censys.io/](https://censys.io/)
+- [https://developers.facebook.com/tools/ct/](https://developers.facebook.com/tools/ct/)
+- [https://google.com/transparencyreport/https/ct/](https://www.google.com/transparencyreport/https/ct/)
+- [crt.sh](https://crt.sh/) is a online certificate fingerprinter. Where you provide *".. an **Identity** (Domain Name, Organization Name, etc), a **Certificate Fingerprint** (SHA-1 or SHA-256) or a **crt.sh ID**"*
+crt.sh has a [[Postgresql]] database for CT logged data: 
+```bash
+psql -h crt.sh -p 5432 -U guest certwatch
+```
+
+#### DNSSEC
+
+[ldns-walk](https://linux.die.net/man/1/ldns-walk) *"is used to retrieve the contents of a DNSSEC signed zone. It does this through NSEC-walking (following the chain of NSEC records) and 'guessing' the next non-existent owner name for each NSEC...Note that it might get stuck on some wildcard records when used through a caching forwarder. This problem can be circumvented by querying the authoritative nameserver directly (with the @ argument). Of course the nameserver that is used must be DNSSEC-aware."*
+
+```bash
+# full walk -f; -s good for large zone as is continuous 
+ldns-walk -f @$nameserver -s $ownername
+```
+
+[nsec3walker](https://dnscurve.org/nsec3walker.html)
+
+[nsec3mapper](https://github.com/anonion0/nsec3map) *"a tool to enumerate the resource records of a DNS zone using its DNSSEC NSEC or NSEC3 chain.It can be used to discover hosts in a DNS zone quickly and with a minimum amount of queries if said zone is DNSSEC-enabled. `n3map` was written primarily to show that NSEC3 does not offer meaningful protection against zone enumeration. Although originally only intended as a PoC and written in Python, it is actually quite fast and able to enumerate even large zones (with a million or more entries) in a short time given adequate hardware. It also includes a simple [John the Ripper](https://github.com/openwall/john "John the Ripper (Jumbo)") plugin that can be used to crack the obtained NSEC3 hashes."*
+
 #### Host lookup
 
 `nslookup` is useful for query DNS servers 
@@ -43,15 +76,13 @@ TL;DR - Reverse lookup: query IP for this hostname - What Hostname is using this
 ```bash
 for ip in $(seq  50 100); do host <known-ip-range>.$ip; done | grep -v "not found"
 for ip in $(seq 0 255); do dig -x 192.168.156.$ip; done | grep "ANSWER: 1"
-
 ```
 [Script](https://github.com/7RU7H/AllTheHackingScripts/blob/main/bash/reverseLookupBruteForcer.sh)
 
-#### Tools
-
+Tools to consider
 [[Fierce-Cheatsheet]]
 [[DNSenum-Cheatsheet]] 
-DNSRecon is an advanced, modern DNS enumeration script written in Python.
+[[DNSRecon-Cheatsheet]] is an advanced, modern DNS enumeration script written in Python.
 
 #### DNS Zone Transfer
 
@@ -94,15 +125,40 @@ done
 #### Bruteforcing DNS
 
 [[Amass]]
+```bash
+amass enum --passive -d $domain.$tld
+```
 
 #### Stub Resolution
 
 [Massdns](https://github.com/blechschmidt/massdns)
 
-## Reference 
+#### Subdomain Enumeration
+
+[[FFUF-Cheatsheet]], [[Gobuster-Cheatsheet]] and [[WFUZZ]] - and many others
+
+[[Search-Engine-Dorking]]
+```bash
+site:$domain.$tld
+```
+
+[[VirusTotal]] runs its own passive DNS replication service at [Search](https://www.virustotal.com/gui/home/search)
+
+## References
+
+[Bharath's "A penetration tester’s guide to subdomain enumeration" blog featured in Niteteam4!](https://blog.appsecco.com/a-penetration-testers-guide-to-sub-domain-enumeration-7d842d5570f6)
 [Wonkastocks](https://pastebin.com/qLitw9eT)
 [Infinitelogins](https://infinitelogins.com/2020/12/09/enumerating-dns-port-53/)
 [Forward/Reverse Lookup](https://www.mustbegeek.com/understanding-forward-and-reverse-lookup-zones-in-dns/)
 [DNS Zone Transfer Wikipedia](https://en.wikipedia.org/wiki/DNS_zone_transfer)
 [Linode Red Team DNS Zone Transfers](https://www.linode.com/docs/guides/red-team-reconnaissance-techniques/#dns-zone-transfers)
 [THM DNS in Detail](https://tryhackme.com/room/dnsindetail)
+[Massdns](https://github.com/blechschmidt/massdns)
+[Zone transfer Script](https://github.com/7RU7H/AllTheHackingScripts/blob/main/bash/dnsZoneTransfer.sh)
+[Wikipedia DNS](https//en.wikipedia.org/wiki/Domain_Name_System) [dnsdumpster](https//dnsdumpster.com/)
+[nmmapper's python tool dnsdumpster](https//github.com/nmmapper/dnsdumpster)
+[crt.sh](https//crt.sh/)
+[ldns-walk](https//linux.die.net/man/1/ldns-walk)
+[nsec3walker](https//dnscurve.org/nsec3walker.html)
+[nsec3mapper](https//github.com/anonion0/nsec3map)
+

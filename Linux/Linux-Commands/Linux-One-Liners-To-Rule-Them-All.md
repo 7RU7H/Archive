@@ -28,4 +28,11 @@ This is useful in scenarios where you want to copy and paste into your favourite
 cat $file | awk '{print "echo \""$1" "$2"\" >> $output" }'
 ```
 
+##  Grab References from a Markdown File
+
+May require some editting post also consider adding `sed`
+```bash
+cat $file.md| grep -r '](' | awk -F\) '{print $1")"}' | awk -F: '{print $2$3}'
+```
+
 ## References
