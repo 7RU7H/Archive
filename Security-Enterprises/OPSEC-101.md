@@ -29,7 +29,7 @@ It is hurts to get fucked, reason you may need OPSEC
 	3. Zero Trust Policy - Friends are just co-defendents and rats
 	4. Do not confuse recreate and work
 	5. Do not Operate from your own house
-	6. Use [[TOR-Hidden-Services]]
+	6. Use [[Tor-Hidden-Services]]
 1. Keep personal life seperate 
 1. Keep person environment controband free
 1. Do not talk to authorities
@@ -42,7 +42,7 @@ It is hurts to get fucked, reason you may need OPSEC
 
 ## Service-Level
 
-[[TOR-Hidden-Services]]
+[[Tor-Hidden-Services]]
 
 
 ## Group Specific OpSec Guides

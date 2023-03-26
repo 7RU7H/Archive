@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Security-Enterprises/Blueteam/Threat-Hunting-Talk-John-Ham.md",
+                "file": "Tools/Tor-Hidden-Services.md",
                 "mode": "source",
                 "source": false
               }
@@ -90,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Security-Enterprises/Blueteam/Threat-Hunting-Talk-John-Ham.md",
+                "file": "Tools/Tor-Hidden-Services.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,8 +120,8 @@
   },
   "active": "e76b8a53e529248a",
   "lastOpenFiles": [
-    "Exploitation/CVEs/PrintNightmare.md",
     "Security-Enterprises/Blueteam/Threat-Hunting-Talk-John-Ham.md",
+    "Exploitation/CVEs/PrintNightmare.md",
     "Images/wwh-seriouslyireallycanstillseeyou-llmnrandwpadprimer.png",
     "Reconnaissance/Active-Information-Gathering/DNS/DNS-Recon-Active.md",
     "Tools/Recon-Frameworks/Amass.md",

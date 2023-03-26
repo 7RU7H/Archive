@@ -1,4 +1,4 @@
-# TOR 
+# Tor 
 
 ![](Onion_diagram.png)
 
@@ -52,8 +52,18 @@ Go to [dnsleaktest.com](https://dnsleaktest.com) to test if you IP has changed a
 Coming Soon...
 
 
+## Tor Exploitation
+
+From the Schneier On Security artical: [How the NSA Attacks Tor/Firefox Users With QUANTUM and FOXACID](https://www.schneier.com/blog/archives/2013/10/how_the_nsa_att.html) - TLDR:
+- NSA compromise or setup public internet servers (FoxAcid Servers - exploit orchestrator an Internet-enabled system capable of attacking target computers) and corresponding links to those servers to "fingerprint" Users by correlating  them with Database and Inhouse Tools to: 
+	- Filter collection to find patterns of TOR use as TOR traffic is anomalous to regular traffic
+	- XKeyscore to view "almost everything" a target does on the Internet. 
+
+FoxZAcid servers have innocuous tags in URI 
+
 ## References
 
-[Stackover 2013](https://tor.stackexchange.com/questions/672/how-do-onion-addresses-exactly-work)
+[Stackexchange 2013](https://tor.stackexchange.com/questions/672/how-do-onion-addresses-exactly-work)
 [THM Tor for Beginners room](https://tryhackme.com/room/torforbeginners)
 [dnsleaktest.com](https://dnsleaktest.com)
+[How the NSA Attacks Tor/Firefox Users With QUANTUM and FOXACID](https://www.schneier.com/blog/archives/2013/10/how_the_nsa_att.html)

@@ -69,7 +69,7 @@ Communicative effiecency - Computationally effiecency - Adaptablility - Open - L
 	2. Account meta data is collected as if were free money, automated by code and stored somewhere - removal of the non-relevant activities is important
 8. Treat every everything is or is to be Zero Dayed
 	1. Zero Trust Policy because being up to par with everything else in the environment is important, being shat on hurts time cleaning everything up
-	1. Why [[TOR-Hidden-Services]] if you are all NOPSEC 
+	1. Why [[Tor-Hidden-Services]] if you are all NOPSEC 
 9. Energy is life, work is required for fun, make you work fun or do something you enjoy
 	- Make relaxation or recreate pure, do work that is basically fun, but challenging
 	1. Do not operate from a location that is inseperate from relaxation or pure recreate
