@@ -21,6 +21,16 @@ For more information regarding IDS and IPS systems view the articles [[Intrusion
 - NIDS mode
 - NIPS mode
 
+## Zeek and Snort Comparison
+
+- Focus 
+	- [[Zeek]]: NSM and IDS through network analysis with detection for alerts that triggered by events 
+	- [[Snort]] : IDS/IPS signature-based detection 
+- Common Use  
+	- [[Zeek]]: Network Monitoring, traffic investigation and detecting chained event
+	- [[Snort]] : Itrusion detection and prevention to stop the known threats and attacks
+
+
 ## Utility
 
 Version and .conf testing

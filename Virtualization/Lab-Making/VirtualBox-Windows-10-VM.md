@@ -73,9 +73,9 @@ Make careful consideration as to what is safe and what you want. This is an awes
 
 ## Sharing Files
 
-Either Install Guest Editions
-
-Setup a Shared Folder
+- Install Guest Editions
+- Setup a Shared Folder
+- [[Impacket-Cheatsheet]] has a `impacket-smbshare` for the quick and dirty
 
 ## Reference
 

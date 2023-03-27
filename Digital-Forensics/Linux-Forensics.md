@@ -36,13 +36,17 @@ ps aux
 cat /etc/hosts
 cat /etc/resolv.conf
 
-# Logs
+# Logs - And evidence of execution
 # Syslog
 cat /var/log/syslog*
 # Auth logs
 cat /var/log/auth.log*
 # Third party logs
 ls -la /var/log
+# Bash History
+cat /home/$user/.bash_history
+# Vim History
+cat /home/$user/.vimfino
 
 # Evidence of execution
 # sudo execution history
@@ -55,14 +59,15 @@ cat ~/.viminfo
 ```
 
 
-
 In [[Linux-Persistence]] article details as many persistence mechanisms used be attacks, the below are example articfact gather commands
 ```bash
 # Crons
 cat /etc/crontab
 # Service Startup
 ls /etc/init.d
-# .bashrc
+# .bashrc for each user
 cat ~/.bashrc
+# System wide settings
+cat /etc/profile
 ```
 

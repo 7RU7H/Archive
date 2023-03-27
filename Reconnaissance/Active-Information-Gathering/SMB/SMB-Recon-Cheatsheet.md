@@ -19,9 +19,9 @@ Shows Share **Permissions** and Comment
 ```bash
 # Test permissions by flag
 smbmap -H $IP
-smbmap -H -u ''
-smbmap -H -u 'Guest' -p 'Anonymous'
-smbmap -H -u 'Guest' -p ''
+smbmap -H $IP -u ''
+smbmap -H $IP -u 'Guest' -p 'Anonymous'
+smbmap -H $IP -u 'Guest' -p ''
 # Always recursively check all credentials and permissions
 smbmap -H $IP -u $user -p $password
 
