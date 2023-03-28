@@ -10,6 +10,16 @@
 
 [From adamtheautomator](https://adamtheautomator.com/procmon/) - consider this article provides gifs and images to explain, here I generally only want the raw workflow that is important.  
 
+Operation Column contains classes of Operation with different icons to represent each class
+-   Registry
+-   Filesystem
+-   Network
+-   Processes
+-   Profiling events
+
+Event Properties:
+`Double Click on an event`
+
 Enabling and Disabling Captures `[magnifying glass icon]` if red x is displayed over the top of it is is disabled
 
 To export procmon filters:
@@ -85,5 +95,5 @@ with either `Include` or `Exclude` options to the provided value field to filter
 
 ## References 
 
-[Procmon Microsoft Doumenetation](https://learn.microsoft.com/en-us/sysinternals/downloads/procmon#overview-of-process-monitor-capabilities)
+[Procmon Microsoft Documenetation](https://learn.microsoft.com/en-us/sysinternals/downloads/procmon#overview-of-process-monitor-capabilities)
 [UTilmate Guide to Procmon](https://adamtheautomator.com/procmon/)

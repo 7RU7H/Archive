@@ -240,7 +240,11 @@ kerberos.addresses // Client IP address and NetBIOSker
 #### DNS
 
 Detect DNS Tunnelling occus post exploitation phase of attack chain the indications of [[Data-Exfiltration-Over-DNS]]:
-- subdomain names that are actually the data being exfiltrated
+- Subdomain names that are actually the data being exfiltrated
+
+```c
+dns
+```
 
 #### ICMP
 

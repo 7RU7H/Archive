@@ -8,24 +8,48 @@
         "type": "tabs",
         "children": [
           {
-            "id": "42cb2338be9f2ce7",
+            "id": "df20aaf9b5d73527",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Virtualization/Lab-Making/VirtualBox-Virtual-Networking.md",
+                "file": "Tools/Content-Discovery-Tools/Feroxbuster.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "92a2405e0f9bd1b3",
+            "id": "05d1dbdde3e941ca",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Reconnaissance/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
+                "file": "Tools/Windows/Event-Viewer.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d234bcdaa6592eba",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Networks/Network-Protocols-Cheatsheet.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "08c69461ca5407d0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/SysInternals/Procmon/Sysinternals-Procmon.md",
                 "mode": "source",
                 "source": false
               }
@@ -61,7 +85,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "mget",
+                "query": "Event Logs",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -70,12 +94,11 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 385.5
+    "width": 293.5
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -91,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Reconnaissance/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
+                "file": "Tools/Windows/Event-Viewer.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,10 +142,18 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "92a2405e0f9bd1b3",
+  "active": "05d1dbdde3e941ca",
   "lastOpenFiles": [
-    "Coding-Scripting-Programming/Languages/Python/Useful_Python.md",
+    "Coding-Scripting-Programming/Languages/Powershell/Powershell-Eventlogging.md.md",
+    "Tools/Windows/Event-Viewer.md",
+    "Images/eventviewereventtypes.png",
+    "Networks/Network-Protocols-Cheatsheet.md",
+    "Tools/SysInternals/Procmon/Sysinternals-Procmon.md",
+    "Tools/Content-Discovery-Tools/Feroxbuster.md",
+    "Tools/Packet-Analysis/Wireshark/Wireshark-Useful-Packet-Filters.md",
     "Virtualization/Lab-Making/VirtualBox-Virtual-Networking.md",
+    "Reconnaissance/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
+    "Coding-Scripting-Programming/Languages/Python/Useful_Python.md",
     "Virtualization/Lab-Making/VirtualBox-Windows-10-VM.md",
     "Virtualization/Lab-Making/Blueprinting-Vulnerable-VMs-CTFs.md",
     "Virtualization/Lab-Making/Creating-Vulnerable-VMs.md",
@@ -141,13 +172,6 @@
     "Images/wwh-seriouslyireallycanstillseeyou-llmnrandwpadprimer.png",
     "Reconnaissance/Active-Information-Gathering/DNS/DNS-Recon-Active.md",
     "Tools/Recon-Frameworks/Amass.md",
-    "Tools/DNS-Related/DIG-cheatsheet.md",
-    "Tools/DNS-Related/DNSRecon-Cheatsheet.md",
-    "Tools/VirusTotal.md",
-    "Linux/Linux-Commands/Linux-CLIMagic.md",
-    "Linux/Linux-Commands/Linux-One-Liners-To-Rule-Them-All.md",
-    "Coding-Scripting-Programming/Languages/Go/Golang.md",
-    "Networks/Network-Theory/Network-Protocols/IPsec.md",
     "Services/Webservers/Sinatra",
     "Hardware/Hardware-Services",
     "Images/azure-k8updatenodes.png",
@@ -165,7 +189,6 @@
     "Images/azuremonitorcollectionagents.png",
     "Images/azurekglqueries.png",
     "Images/azurealertsdescriptionimage.png",
-    "Images/azurelogeventcatergories.png",
-    "Images/azurelogeventtiering.png"
+    "Images/azurelogeventcatergories.png"
   ]
 }

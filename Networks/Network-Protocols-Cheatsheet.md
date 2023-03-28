@@ -174,8 +174,13 @@ openssl s_client -connect <IP>:993 -quiet
 ```
 
 ## 389 - LDAP
-Lightweight Directory Access Protocol
-Default port 389 and encrypted variant is 636 - [[LDAP-Recon]]
+
+Lightweight Directory Access Protocol - [[LDAP-Recon]]
+LDAP Defaults:
+plain text LDAP is port 389 
+LDAP SSL is port 636 
+LDAP connection to Global Catalog is port 3268
+LDAP connection to Global Catalog over SSL is port 3269
 
 ## 443 - HTTPS
 
@@ -212,8 +217,12 @@ Internet printing protocol default port 631
 
 ## 636 - LDAPS
 
-Lightweight Directory Access Protocol over SSL
-Default port 636 and non-encrypted variant is - 389 - [[LDAP-Recon]]
+Lightweight Directory Access Protocol over SSL - [[LDAP-Recon]]
+LDAP Defaults:
+plain text LDAP is port 389 
+LDAP SSL is port 636 
+LDAP connection to Global Catalog is port 3268
+LDAP connection to Global Catalog over SSL is port 3269
 
 ## 873 - Rsync
 
@@ -265,9 +274,21 @@ InfoCrypt Desktop is a Windows 95 or Windows NT software providing desktop to d
 Squid is a caching and forwarding HTTP web proxy
 [Hacktricks](https://book.hacktricks.xyz/network-services-pentesting/3128-pentesting-squid?q=3128)
 
-## 3269 - Microsoft Global Catalog over SSL
-Runs both tcp and udp
-msft-gc-ssl, Microsoft Global Catalog over SSL (similar to port 3268, LDAP over SSL) (official)
+
+## 3268 - Microsoft Global Catalog 
+
+LDAP (Lightweight Directory Access Protocol (over SSL)) Defaults:  - [[LDAP-Recon]]
+plain text LDAP is port 389 
+LDAP SSL is port 636 
+
+## 3269 (TCP/UDP) - Microsoft Global Catalog over SSL
+- msft-gc-ssl, Microsoft Global Catalog over SSL (similar to port 3268, LDAP over SSL) (official)
+
+LDAP (Lightweight Directory Access Protocol (over SSL)) Defaults:  - [[LDAP-Recon]]
+plain text LDAP is port 389 
+LDAP SSL is port 636  
+
+
 
 ## 3306 - MySQL
 `mysql -h ip -u user -p`
