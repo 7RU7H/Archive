@@ -25,6 +25,18 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "Event-Tracing-for-Windows.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "879f4b621ff83fa0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "Tools/Windows/Event-Viewer.md",
                 "mode": "source",
                 "source": false
@@ -114,7 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/Windows/Event-Viewer.md",
+                "file": "Event-Tracing-for-Windows.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,8 +156,9 @@
   },
   "active": "05d1dbdde3e941ca",
   "lastOpenFiles": [
-    "Coding-Scripting-Programming/Languages/Powershell/Powershell-Eventlogging.md.md",
     "Tools/Windows/Event-Viewer.md",
+    "Event-Tracing-for-Windows.md",
+    "Coding-Scripting-Programming/Languages/Powershell/Powershell-Eventlogging.md.md",
     "Images/eventviewereventtypes.png",
     "Networks/Network-Protocols-Cheatsheet.md",
     "Tools/SysInternals/Procmon/Sysinternals-Procmon.md",
@@ -171,7 +184,6 @@
     "Security-Enterprises/Blueteam/Threat-Hunting-Talk-John-Ham.md",
     "Images/wwh-seriouslyireallycanstillseeyou-llmnrandwpadprimer.png",
     "Reconnaissance/Active-Information-Gathering/DNS/DNS-Recon-Active.md",
-    "Tools/Recon-Frameworks/Amass.md",
     "Services/Webservers/Sinatra",
     "Hardware/Hardware-Services",
     "Images/azure-k8updatenodes.png",
