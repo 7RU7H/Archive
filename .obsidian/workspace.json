@@ -25,7 +25,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Event-Tracing-for-Windows.md",
+                "file": "Security-Enterprises/Digital-Forensics/Digital-Forensics.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e2590d14a45dd4c8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Security-Enterprises/Threat-Emulation/Atomic-Red-Team.md",
                 "mode": "source",
                 "source": false
               }
@@ -44,18 +56,6 @@
             }
           },
           {
-            "id": "d234bcdaa6592eba",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Networks/Network-Protocols-Cheatsheet.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "08c69461ca5407d0",
             "type": "leaf",
             "state": {
@@ -68,7 +68,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -126,7 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Event-Tracing-for-Windows.md",
+                "file": "Security-Enterprises/Threat-Emulation/Atomic-Red-Team.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -154,13 +154,19 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "05d1dbdde3e941ca",
+  "active": "e2590d14a45dd4c8",
   "lastOpenFiles": [
-    "Tools/Windows/Event-Viewer.md",
+    "Security-Enterprises/Digital-Forensics/Digital-Forensics.md",
+    "Security-Enterprises/Threat-Emulation/Atomic-Red-Team.md",
+    "Security-Enterprises/Threat-Emulation",
+    "Security-Enterprises/Attribution-And-Analysis",
+    "Security-Enterprises/Digital-Forensics/Digital-Forensics 1.md",
     "Event-Tracing-for-Windows.md",
+    "Tools/Windows/Event-Viewer.md",
+    "Tools/Useful-Software/Curl-Cheatsheet.md",
+    "Networks/Network-Protocols-Cheatsheet.md",
     "Coding-Scripting-Programming/Languages/Powershell/Powershell-Eventlogging.md.md",
     "Images/eventviewereventtypes.png",
-    "Networks/Network-Protocols-Cheatsheet.md",
     "Tools/SysInternals/Procmon/Sysinternals-Procmon.md",
     "Tools/Content-Discovery-Tools/Feroxbuster.md",
     "Tools/Packet-Analysis/Wireshark/Wireshark-Useful-Packet-Filters.md",
@@ -174,16 +180,12 @@
     "Software/File-Typology/xls-xlsx-Files.md",
     "Tools/Zeek.md",
     "Services/Snort/Snort.md",
-    "Digital-Forensics/Linux-Forensics.md",
+    "Security-Enterprises/Digital-Forensics/Linux-Forensics.md",
     "Web-Application-Hacking/Methodologies/Haddix-Methodology/Application-Analysis.md",
     "Tools/Content-Discovery-Tools/Gospider.md",
     "Tools/Content-Discovery-Tools/Gobuster-Cheatsheet.md",
     "Exploitation/CVEs/PrintNightmare.md",
-    "Security-Enterprises/NOPSEC-101.md",
-    "Tools/Tor-Hidden-Services.md",
-    "Security-Enterprises/Blueteam/Threat-Hunting-Talk-John-Ham.md",
     "Images/wwh-seriouslyireallycanstillseeyou-llmnrandwpadprimer.png",
-    "Reconnaissance/Active-Information-Gathering/DNS/DNS-Recon-Active.md",
     "Services/Webservers/Sinatra",
     "Hardware/Hardware-Services",
     "Images/azure-k8updatenodes.png",
@@ -196,8 +198,6 @@
     "Images/robleesansoffensiveforensicstimestomping.png.png",
     "Images/robleesansoffensiveforensicstimestomping.png",
     "Images/robleesansoffensiveforensicslateralmovementoverview.png",
-    "Reconnaissance/Active-Information-Gathering/User",
-    "Tools/Neo4j",
     "Images/azuremonitorcollectionagents.png",
     "Images/azurekglqueries.png",
     "Images/azurealertsdescriptionimage.png",
