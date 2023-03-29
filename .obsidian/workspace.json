@@ -13,62 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/Content-Discovery-Tools/Feroxbuster.md",
+                "file": "Tools/Useful-Software/Chisel.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "05d1dbdde3e941ca",
+            "id": "3d2c0b25680f0d5a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Security-Enterprises/Digital-Forensics/Digital-Forensics.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e2590d14a45dd4c8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Security-Enterprises/Threat-Emulation/Atomic-Red-Team.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "879f4b621ff83fa0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tools/Windows/Event-Viewer.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "08c69461ca5407d0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tools/SysInternals/Procmon/Sysinternals-Procmon.md",
+                "file": "Post-Exploitation/Port-Redirection-And-Tunneling.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -97,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Event Logs",
+                "query": "upx",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -106,7 +70,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -126,7 +91,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Security-Enterprises/Threat-Emulation/Atomic-Red-Team.md",
+                "file": "Post-Exploitation/Port-Redirection-And-Tunneling.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -154,21 +119,24 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "e2590d14a45dd4c8",
+  "active": "3d2c0b25680f0d5a",
   "lastOpenFiles": [
+    "Tools/Useful-Software/Chisel.md",
+    "Cloud/Cloud-Hacking/AWS-Hacking.md",
+    "Windows/Windows-Concepts/Event-Tracing-for-Windows.md",
+    "README.md",
+    "Tools/Content-Discovery-Tools/Feroxbuster.md",
     "Security-Enterprises/Digital-Forensics/Digital-Forensics.md",
     "Security-Enterprises/Threat-Emulation/Atomic-Red-Team.md",
     "Security-Enterprises/Threat-Emulation",
     "Security-Enterprises/Attribution-And-Analysis",
     "Security-Enterprises/Digital-Forensics/Digital-Forensics 1.md",
-    "Event-Tracing-for-Windows.md",
     "Tools/Windows/Event-Viewer.md",
     "Tools/Useful-Software/Curl-Cheatsheet.md",
     "Networks/Network-Protocols-Cheatsheet.md",
     "Coding-Scripting-Programming/Languages/Powershell/Powershell-Eventlogging.md.md",
     "Images/eventviewereventtypes.png",
     "Tools/SysInternals/Procmon/Sysinternals-Procmon.md",
-    "Tools/Content-Discovery-Tools/Feroxbuster.md",
     "Tools/Packet-Analysis/Wireshark/Wireshark-Useful-Packet-Filters.md",
     "Virtualization/Lab-Making/VirtualBox-Virtual-Networking.md",
     "Reconnaissance/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
@@ -182,9 +150,6 @@
     "Services/Snort/Snort.md",
     "Security-Enterprises/Digital-Forensics/Linux-Forensics.md",
     "Web-Application-Hacking/Methodologies/Haddix-Methodology/Application-Analysis.md",
-    "Tools/Content-Discovery-Tools/Gospider.md",
-    "Tools/Content-Discovery-Tools/Gobuster-Cheatsheet.md",
-    "Exploitation/CVEs/PrintNightmare.md",
     "Images/wwh-seriouslyireallycanstillseeyou-llmnrandwpadprimer.png",
     "Services/Webservers/Sinatra",
     "Hardware/Hardware-Services",

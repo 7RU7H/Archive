@@ -28,12 +28,13 @@ echo "Chisel is now ready and minimised: "
 echo $chiselsize
 ```
 
-## Reverse Pivot with Chisel Explain:
+## Reverse Pivot with Chisel Explained:
+
 Chisel is useful when you can not port forward with ssh. You would then need chisel for reverse pivoting, which is the reverse of port forward as the  **Remote box is listening** to connect back the attack to open up the tunnel. For information about [[Port-Redirection-And-Tunneling]].
 
 ```bash
 # AttackBox
-chisel server -p 8000 -reverse # -v is useful for checking connection 
+chisel server -host 127.0.0.1 -p 8000 -reverse # -v is useful for checking connection 
 # Client
 chisel client $attackboxIP:8000 R:8001:$clientip:$port
 # Accessing through the tunnel on Attackbox
