@@ -20,6 +20,66 @@
             }
           },
           {
+            "id": "ba6425cebd3ca903",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/Content-Discovery-Tools/FFUF-Cheatsheet.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b76e020449a678c6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/Atomic-Red-Team.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c8e3bbc69ec48c67",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Enumeration-Cheatsheet.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e7b8cdd99c0b69cc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Exploitation/TTY-Spawning.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7008f8f78bef7ef9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/MITRE-ATT&CK-Navigator.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "3d2c0b25680f0d5a",
             "type": "leaf",
             "state": {
@@ -32,7 +92,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -61,7 +121,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "upx",
+                "query": "powershell history",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -70,8 +130,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -91,7 +150,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Post-Exploitation/Port-Redirection-And-Tunneling.md",
+                "file": "Exploitation/TTY-Spawning.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,15 +178,29 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "3d2c0b25680f0d5a",
+  "active": "e7b8cdd99c0b69cc",
   "lastOpenFiles": [
+    "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Enumeration-Cheatsheet.md",
+    "Windows/Windows-Concepts/Windows-Events-To-Monitor.md",
+    "Tools/SysInternals/Sysmon/Sysmon-Events.md",
+    "Exploitation/CVEs/PrintNightmare.md",
+    "Software/EDR/Aurora-EDR.md",
+    "Security-Enterprises/CTF-Platforms/TryHackMe.md",
+    "Tools/Forensics/Sigma.md",
+    "Tools/Atomic-Red-Team.md",
+    "Exploitation/TTY-Spawning.md",
+    "Software/EDR/EDR-Defined.md",
+    "Software/EDR",
+    "Tools/Content-Discovery-Tools/FFUF-Cheatsheet.md",
+    "Tools/MITRE-ATT&CK-Navigator.md",
+    "Networks/Network-Theory/Network-Protocols/DNS-Defined.md",
     "Tools/Useful-Software/Chisel.md",
+    "Post-Exploitation/Port-Redirection-And-Tunneling.md",
     "Cloud/Cloud-Hacking/AWS-Hacking.md",
     "Windows/Windows-Concepts/Event-Tracing-for-Windows.md",
     "README.md",
     "Tools/Content-Discovery-Tools/Feroxbuster.md",
     "Security-Enterprises/Digital-Forensics/Digital-Forensics.md",
-    "Security-Enterprises/Threat-Emulation/Atomic-Red-Team.md",
     "Security-Enterprises/Threat-Emulation",
     "Security-Enterprises/Attribution-And-Analysis",
     "Security-Enterprises/Digital-Forensics/Digital-Forensics 1.md",
@@ -137,19 +210,6 @@
     "Coding-Scripting-Programming/Languages/Powershell/Powershell-Eventlogging.md.md",
     "Images/eventviewereventtypes.png",
     "Tools/SysInternals/Procmon/Sysinternals-Procmon.md",
-    "Tools/Packet-Analysis/Wireshark/Wireshark-Useful-Packet-Filters.md",
-    "Virtualization/Lab-Making/VirtualBox-Virtual-Networking.md",
-    "Reconnaissance/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
-    "Coding-Scripting-Programming/Languages/Python/Useful_Python.md",
-    "Virtualization/Lab-Making/VirtualBox-Windows-10-VM.md",
-    "Virtualization/Lab-Making/Blueprinting-Vulnerable-VMs-CTFs.md",
-    "Virtualization/Lab-Making/Creating-Vulnerable-VMs.md",
-    "Virtualization/Virtual-Machines.md",
-    "Software/File-Typology/xls-xlsx-Files.md",
-    "Tools/Zeek.md",
-    "Services/Snort/Snort.md",
-    "Security-Enterprises/Digital-Forensics/Linux-Forensics.md",
-    "Web-Application-Hacking/Methodologies/Haddix-Methodology/Application-Analysis.md",
     "Images/wwh-seriouslyireallycanstillseeyou-llmnrandwpadprimer.png",
     "Services/Webservers/Sinatra",
     "Hardware/Hardware-Services",
@@ -159,7 +219,6 @@
     "Cloud/Azure/Azure-Administration/Azure-Compute-Resources",
     "Cloud/Azure/Azure-Administration/Azure-Storage",
     "Cloud/Azure/Azure-Administration/Azure-Identities-And-Governance",
-    "Services/Databases/MongoDB",
     "Images/robleesansoffensiveforensicstimestomping.png.png",
     "Images/robleesansoffensiveforensicstimestomping.png",
     "Images/robleesansoffensiveforensicslateralmovementoverview.png",

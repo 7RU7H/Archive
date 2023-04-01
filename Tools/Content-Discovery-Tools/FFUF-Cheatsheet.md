@@ -1,9 +1,11 @@
 # FFUF
 
 ## Introduction 
+
 [fuff](https://github.com/ffuf/ffuf). is a fast web fuzzer written in Go. Examples of usage [Content discovery](https://github.com/ffuf/ffuf#typical-directory-discovery), [Vhost discovery](https://github.com/ffuf/ffuf#virtual-host-discovery-without-dns-records), [Parameter fuzzing](https://github.com/ffuf/ffuf#get-parameter-fuzzing), [POST data fuzzing](https://github.com/ffuf/ffuf#post-data-fuzzing), [Using external mutator](https://github.com/ffuf/ffuf#using-external-mutator-to-produce-test-cases), [Configuration files](https://github.com/ffuf/ffuf#configuration-files). Already included on BlackArch, Pentoo, Kali and Parrot.
 
 ## Basics
+
 We choose a wordlist assign the :FUZZ keyword to denote that will then at the point /FUZZ; this can also be embedded in file path
 ```
 ffuf -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-small.txt:FUZZ -u $URL/FUZZ
@@ -77,7 +79,7 @@ ffuf -u 'http://$IP/path/?FUZZ=1' -c -w /usr/share/seclists/Discovery/Web-Conten
 ```
 If the parameter accepts integers we can use `-w -` to read from STDOUT.
 ```bash
-for i in {0..255}; do echo $i; done | ffuf -u 'http://IP/path/?id=FUZZ' -c -w - -fw 33
+for i in {0..255}; do echo $i; done | ffuf -u 'http://IP/path/?id=FUZZ' -c -w -mc all -fw 33
 ```
 POST
 ```bash
@@ -90,12 +92,11 @@ ffuf -w wordlist.txt:FUZZ -u http://$IP/FUZZ -recursion -recursion-depth 1 -e .p
 ```
 
 #### Fuzzing for VHosts
+
 [To match the output of wfuzz at 5:20](https://www.youtube.com/watch?v=U-2nI6wSPOE&t=46s) at  
 ```bash
 ffuf -u http://mydomain.com -H "Host: FUZZ.mydomain.com" -c -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt:FUZZ  -fl $checkToFilter --mc all
 ```
-[virtual hosts](https://httpd.apache.org/docs/2.4/en/vhosts/examples.html) (vhosts) is the name used by Apache httpd.
-Nginx use [Server Blocks](https://www.nginx.com/resources/wiki/start/topics/examples/server_blocks/).
 
 #### Fuzzing for Subdomains
 ```bash
@@ -119,6 +120,7 @@ ffuf -request request.req -request-proto http
 [medium quiknapp](https://medium.com/quiknapp/fuzz-faster-with-ffuf-c18c031fc480)
 
 ## Appendix 
+
 Usage
 ```bash
 Fuzz Faster U Fool - v1.3.0-dev
@@ -187,4 +189,4 @@ OUTPUT OPTIONS:
   -od                 Directory path to store matched results to.
   -of                 Output file format. Available formats: json, ejson, html, md, csv, ecsv (or, 'all' for all formats) (default: json)
   -or                 Don't create the output file if we don't have results (default: false)
-  ```
+```

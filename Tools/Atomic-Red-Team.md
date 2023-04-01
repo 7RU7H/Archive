@@ -31,12 +31,27 @@ Atomics
 
 [invoke-atomicredteam](https://github.com/redcanaryco/invoke-atomicredteam) *"Invoke-AtomicRedTeam is a PowerShell module to execute tests as defined in the [atomics folder]([https://github.com/redcanaryco/atomic-red-team/tree/master/atomics](https://github.com/redcanaryco/atomic-red-team/tree/master/atomics)) of Red Canary's Atomic Red Team project."* [Link for Usage and installation instuction](https://github.com/redcanaryco/invoke-atomicredteam/wiki)
 
+[atomicredteam.io](https://atomicredteam.io/atomics/#collection) shows the available Tactics and Atomics combined with [MITRE ATT&CK® Navigator](https://mitre-attack.github.io/attack-navigator/) - or article here [[MITRE-ATT&CK-Navigator]]
+
 ```powershell
 powershell -ExecutionPolicy bypass
 # Load Module
 Import-Module "C:\Tools\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
 # Create a path when located in default location.
 $PSDefaultParameterValues = @{"Invoke-AtomicTest:PathToAtomicsFolder"="C:\Tools\AtomicRedTeam\atomics"}
+# Help
+help Invoke-AtomicTest
+# Details a MITRE TTPs and AtomicRT Atomics and Executors
+Invoke-AtomicTest TXXXX -ShowDetails -ShowDetailsBrief
+# To get prerequisites requires internet
+Invoke-AtomicTest TXXXX -GetPrereqs -CheckPrereqs 
+
+# From Atomics Directory find and run invoke-atomictest for ART 
+PS: $PATH\atomics
+
+Where-Object Name -Match "T1566.001|T1203|T1059.003|T1083|T1082|T1016|T1049|T1007|T1087.001"
+
+'T1566.001','T1059.003','T1083','T1082','T1016','T1049','T1007','T1087.001' | ForEach-Object {echo "Enumerating $_"; Invoke-AtomicTest $_ -ShowDetailsBrief }
 
 ```
 

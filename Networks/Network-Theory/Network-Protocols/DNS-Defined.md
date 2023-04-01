@@ -88,6 +88,10 @@ it at its destination.
 ## \_msdcs
 `_msdcs` domain **contains subdomains corresponding to all domains in the forest** (labeled by the domain's GUID). In these subdomains are service records for the DCs in those domains.
 
+## Subdomain/VHOSTs
+
+[Virtual hosts](https://httpd.apache.org/docs/2.4/en/vhosts/examples.html) (vhosts) is the name used by Apache httpd, whereas Nginx use [Server Blocks](https://www.nginx.com/resources/wiki/start/topics/examples/server_blocks/).
+
 
 ## References
 
