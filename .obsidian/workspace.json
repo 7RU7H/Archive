@@ -61,7 +61,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exploitation/TTY-Spawning.md",
+                "file": "Networks/Traffic-Analysis/Traffic-Analysis.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1b64402468b4ebc6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Networks/Network-Security/Network-Security.md",
                 "mode": "source",
                 "source": false
               }
@@ -92,7 +104,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -150,7 +162,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exploitation/TTY-Spawning.md",
+                "file": "Networks/Network-Security/Network-Security.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -178,8 +190,14 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "e7b8cdd99c0b69cc",
+  "active": "1b64402468b4ebc6",
   "lastOpenFiles": [
+    "Networks/Network-Security/Defending-With-IPS-And-IDS.md",
+    "Networks/Network-Security/Network-Security.md",
+    "Networks/Traffic-Analysis/Traffic-Analysis.md",
+    "Networks/FTP-Response-Codes.md",
+    "Networks/Traffic-Analysis/Packet-Analysis-Header-Filtering.md",
+    "Exploitation/TTY-Spawning.md",
     "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Enumeration-Cheatsheet.md",
     "Windows/Windows-Concepts/Windows-Events-To-Monitor.md",
     "Tools/SysInternals/Sysmon/Sysmon-Events.md",
@@ -188,7 +206,6 @@
     "Security-Enterprises/CTF-Platforms/TryHackMe.md",
     "Tools/Forensics/Sigma.md",
     "Tools/Atomic-Red-Team.md",
-    "Exploitation/TTY-Spawning.md",
     "Software/EDR/EDR-Defined.md",
     "Software/EDR",
     "Tools/Content-Discovery-Tools/FFUF-Cheatsheet.md",
@@ -204,12 +221,7 @@
     "Security-Enterprises/Threat-Emulation",
     "Security-Enterprises/Attribution-And-Analysis",
     "Security-Enterprises/Digital-Forensics/Digital-Forensics 1.md",
-    "Tools/Windows/Event-Viewer.md",
-    "Tools/Useful-Software/Curl-Cheatsheet.md",
-    "Networks/Network-Protocols-Cheatsheet.md",
-    "Coding-Scripting-Programming/Languages/Powershell/Powershell-Eventlogging.md.md",
     "Images/eventviewereventtypes.png",
-    "Tools/SysInternals/Procmon/Sysinternals-Procmon.md",
     "Images/wwh-seriouslyireallycanstillseeyou-llmnrandwpadprimer.png",
     "Services/Webservers/Sinatra",
     "Hardware/Hardware-Services",
