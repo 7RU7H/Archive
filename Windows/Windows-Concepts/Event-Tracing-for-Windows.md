@@ -1,7 +1,20 @@
 # Event Tracing for Windows
 
+[Event tracing](https://learn.microsoft.com/en-us/windows/win32/etw/about-event-tracing) is *"Event Tracing for Windows (ETW) is an efficient kernel-level tracing facility that lets you log kernel or application-defined events to a log file. You can consume the events in real time or from a log file and use them to debug an application or to determine where performance issues are occurring in the application."* 
 
-[Event tracing](https://learn.microsoft.com/en-us/windows/win32/etw/about-event-tracing) is *"Event Tracing for Windows (ETW) is an efficient kernel-level tracing facility that lets you log kernel or application-defined events to a log file. You can consume the events in real time or from a log file and use them to debug an application or to determine where performance issues are occurring in the application."* [Event tracing for Windows](https://learn.microsoft.com/en-us/previous-versions/windows/desktop/xperf/event-tracing-for-windows) released with Windows 2000:
+Components on Windows that are part of ETW 
+- Controllers - application used to configure event tracing sessions
+- Providers - applications that produce event logs
+- Consumers - applications subscribe and listen to events in real-time or from a file - like [[Event-Viewer]]
+
+The event information is categorised under these types of levels:
+- **Information:** Describes the successful operation of a driver, application or service. 
+- **Warning:** Describes an event that may not be a present issue but can cause problems in the future.
+- **Error:** Describes a significant problem with a service or application.
+- **Success Audit:** Outlines that an audited security access operation was successful.
+- **Failure Audit:** Outlines that an audited security access operation failed. 
+
+[Event tracing for Windows](https://learn.microsoft.com/en-us/previous-versions/windows/desktop/xperf/event-tracing-for-windows) released with Windows 2000:
 - Sessions stored to disk 
 - ETL file extension - similiar to EVT/EVTX files
 - Found - Common listed below: 
@@ -82,7 +95,7 @@
 			- Level and Task
 			- Payload
 - ETW Technologies
-	- Manaaged Object Format (MOF)
+	- Managed Object Format (MOF)
 		- Kernel events 
 		- CIM repository
 	- Trace Message Format (TMF)
@@ -115,3 +128,4 @@ Further reading...
 [Event tracing for Windows](https://learn.microsoft.com/en-us/previous-versions/windows/desktop/xperf/event-tracing-for-windows)
 [Nicole Ibrahim SANS DFIR talk: Windows Forensics: Event Trace Logs - SANS DFIR Summit 2018 ](https://www.youtube.com/watch?v=TUR-L9AtzQE)
 [ired.team](https://www.ired.team/miscellaneous-reversing-forensics/windows-kernel-internals/etw-event-tracing-for-windows-101) 
+[THM Room Aurora EDR](https://tryhackme.com/room/auroraedr)

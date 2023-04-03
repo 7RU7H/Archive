@@ -37,43 +37,43 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/Atomic-Red-Team.md",
+                "file": "Windows/Windows-Concepts/Event-Tracing-for-Windows.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "c8e3bbc69ec48c67",
+            "id": "088f21d59c8c6c3b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Enumeration-Cheatsheet.md",
+                "file": "Tools/Windows/Event-Viewer.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "e7b8cdd99c0b69cc",
+            "id": "e574d105977b2860",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Networks/Traffic-Analysis/Traffic-Analysis.md",
+                "file": "Software/EDR/EDR-Defined.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "1b64402468b4ebc6",
+            "id": "1ee3c7fb5b04d6e6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Networks/Network-Security/Network-Security.md",
+                "file": "Software/EDR/Aurora-EDR.md",
                 "mode": "source",
                 "source": false
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "powershell history",
+                "query": "Aurora",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -142,7 +142,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -162,7 +163,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Networks/Network-Security/Network-Security.md",
+                "file": "Software/EDR/Aurora-EDR.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -190,23 +191,25 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "1b64402468b4ebc6",
+  "active": "1ee3c7fb5b04d6e6",
   "lastOpenFiles": [
-    "Networks/Network-Security/Defending-With-IPS-And-IDS.md",
-    "Networks/Network-Security/Network-Security.md",
+    "Software/EDR/EDR-Defined.md",
+    "Tools/Windows/Event-Viewer.md",
+    "Windows/Windows-Concepts/Event-Tracing-for-Windows.md",
+    "Software/EDR/Aurora-EDR.md",
+    "Tools/Atomic-Red-Team.md",
+    "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Enumeration-Cheatsheet.md",
     "Networks/Traffic-Analysis/Traffic-Analysis.md",
+    "Networks/Network-Security/Network-Security.md",
+    "Networks/Network-Security/Defending-With-IPS-And-IDS.md",
     "Networks/FTP-Response-Codes.md",
     "Networks/Traffic-Analysis/Packet-Analysis-Header-Filtering.md",
     "Exploitation/TTY-Spawning.md",
-    "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Enumeration-Cheatsheet.md",
     "Windows/Windows-Concepts/Windows-Events-To-Monitor.md",
     "Tools/SysInternals/Sysmon/Sysmon-Events.md",
     "Exploitation/CVEs/PrintNightmare.md",
-    "Software/EDR/Aurora-EDR.md",
     "Security-Enterprises/CTF-Platforms/TryHackMe.md",
     "Tools/Forensics/Sigma.md",
-    "Tools/Atomic-Red-Team.md",
-    "Software/EDR/EDR-Defined.md",
     "Software/EDR",
     "Tools/Content-Discovery-Tools/FFUF-Cheatsheet.md",
     "Tools/MITRE-ATT&CK-Navigator.md",
@@ -214,13 +217,11 @@
     "Tools/Useful-Software/Chisel.md",
     "Post-Exploitation/Port-Redirection-And-Tunneling.md",
     "Cloud/Cloud-Hacking/AWS-Hacking.md",
-    "Windows/Windows-Concepts/Event-Tracing-for-Windows.md",
     "README.md",
     "Tools/Content-Discovery-Tools/Feroxbuster.md",
     "Security-Enterprises/Digital-Forensics/Digital-Forensics.md",
     "Security-Enterprises/Threat-Emulation",
     "Security-Enterprises/Attribution-And-Analysis",
-    "Security-Enterprises/Digital-Forensics/Digital-Forensics 1.md",
     "Images/eventviewereventtypes.png",
     "Images/wwh-seriouslyireallycanstillseeyou-llmnrandwpadprimer.png",
     "Services/Webservers/Sinatra",

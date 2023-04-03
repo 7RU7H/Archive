@@ -6,11 +6,10 @@ Alternatives to Event Viewer being either Wevtutil.exe or [[Powershell-Eventlogg
 
 
 
-
-Application
+Application - log events associated with system components 
 Security - can be modified to improved Audited
 Setup
-System - Windows Logs systyem-related events
+System - Windows Logs system-related events
 Forwarded Events 
 
 Microsoft/Windows/
@@ -44,3 +43,4 @@ Remote Event logging
 [THM Windows Event Logs Room](https://tryhackme.com/room/windowseventlogs)
 [Learn Microsoft Event-View Inside show](https://learn.microsoft.com/en-us/shows/inside/event-viewer)
 [Event Types](https://learn.microsoft.com/en-us/windows/win32/eventlog/event-types)
+[THM Room Aurora](https://tryhackme.com/room/auroraedr)
