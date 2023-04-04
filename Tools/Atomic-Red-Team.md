@@ -55,6 +55,31 @@ Where-Object Name -Match "T1566.001|T1203|T1059.003|T1083|T1082|T1016|T1049|T100
 
 ```
 
+#### Warning - Warning - Warning - Warning
+**You may not be able to clear logs in production environments for a good reason, just don't - they barely store enough to catch people - do not be a accidental insider threat**
+
+Customisation of Atomic Red Team
+```powershell
+# AtomicRedTeam does leave some artifacts on the system unless you specify it to do so
+# THM room example is net user; ATR will execute but not actuall create the artifact where 
+# an operator can run `net user` and display the new user
+# Options:
+# Interactivity required for which operator provides arguments
+Invoke-AtomicTest TXXXX.XXX -PromptForInputArgs
+# Create a script block as a environment variable to pass to Invoke-AtomicRedTest 
+$customArgs = @{ "username" = "THM_Atomic"; "password" = "P@ssw0rd"  }
+Invoke-AtomicTest TXXXX.XXX -InputArgs $customArgs
+# Important:
+# Cleanup will cleanup artifacts useful in sustained, various testing on one environment to avoid contamination of data for operator 
+-Cleanup 
+```
+
+Create new Atomic Tests
+```powershell
+Start-AtomicGUI
+# Go to http://localhost:8487/home
+```
+
 ## References
 
 [THM Room Atomic Read Team](https://tryhackme.com/room/atomicredteam)

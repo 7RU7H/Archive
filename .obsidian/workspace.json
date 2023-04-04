@@ -18,93 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "ba6425cebd3ca903",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tools/Content-Discovery-Tools/FFUF-Cheatsheet.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b76e020449a678c6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Windows/Windows-Concepts/Event-Tracing-for-Windows.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "088f21d59c8c6c3b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tools/Windows/Event-Viewer.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e574d105977b2860",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Software/EDR/EDR-Defined.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1ee3c7fb5b04d6e6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Software/EDR/Aurora-EDR.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7008f8f78bef7ef9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tools/MITRE-ATT&CK-Navigator.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "3d2c0b25680f0d5a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Post-Exploitation/Port-Redirection-And-Tunneling.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 5
+        ]
       }
     ],
     "direction": "vertical"
@@ -142,8 +57,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -163,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Software/EDR/Aurora-EDR.md",
+                "file": "Tools/Useful-Software/Chisel.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -191,13 +105,14 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "1ee3c7fb5b04d6e6",
+  "active": "df20aaf9b5d73527",
   "lastOpenFiles": [
-    "Software/EDR/EDR-Defined.md",
-    "Tools/Windows/Event-Viewer.md",
-    "Windows/Windows-Concepts/Event-Tracing-for-Windows.md",
-    "Software/EDR/Aurora-EDR.md",
     "Tools/Atomic-Red-Team.md",
+    "Tools/Content-Discovery-Tools/FFUF-Cheatsheet.md",
+    "Tools/Windows/Event-Viewer.md",
+    "Software/EDR/Aurora-EDR.md",
+    "Software/EDR/EDR-Defined.md",
+    "Windows/Windows-Concepts/Event-Tracing-for-Windows.md",
     "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Enumeration-Cheatsheet.md",
     "Networks/Traffic-Analysis/Traffic-Analysis.md",
     "Networks/Network-Security/Network-Security.md",
@@ -211,7 +126,6 @@
     "Security-Enterprises/CTF-Platforms/TryHackMe.md",
     "Tools/Forensics/Sigma.md",
     "Software/EDR",
-    "Tools/Content-Discovery-Tools/FFUF-Cheatsheet.md",
     "Tools/MITRE-ATT&CK-Navigator.md",
     "Networks/Network-Theory/Network-Protocols/DNS-Defined.md",
     "Tools/Useful-Software/Chisel.md",
