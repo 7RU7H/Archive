@@ -13,13 +13,98 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/Useful-Software/Chisel.md",
+                "file": "Tools/Reverse-Engineering/Ghidra-Cheatsheet.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1c318fd35c409a1d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "169439cb79048d11",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Persistence/Rootkits/Rootkits-Defined.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "78352db33bbba51b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Security-Enterprises/CTF-Platforms/TryHackMe.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1840c8f72575a687",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Post-Exploitation/Privilege-Escalation/Linux/PrivEsc-Important-Linux-Locations.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e20e53d8d4f42361",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/Atomic-Red-Team.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e41d9959f888ba5a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Exploitation/Reverse-Shells-Listing.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "df219a7b21e24acb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Exploitation/TTY-Spawning.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -77,7 +162,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/Useful-Software/Chisel.md",
+                "file": "Persistence/Rootkits/Rootkits-Defined.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,9 +190,22 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "df20aaf9b5d73527",
+  "active": "169439cb79048d11",
   "lastOpenFiles": [
+    "Images/boopkit.png",
+    "Security-Enterprises/CTF-Platforms/TryHackMe.md",
+    "Persistence/Rootkits/Rootkits-Defined.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+    "Persistence/Rootkits",
+    "Post-Exploitation/Privilege-Escalation/Linux/PrivEsc-Important-Linux-Locations.md",
+    "Tools/Reverse-Engineering/Ghidra-Cheatsheet.md",
+    "Reverse-Engineering/Reverse-Engineering-Tools.md",
+    "Tools/Useful-Software/Chisel.md",
+    "Networks/Network-Theory/Network-Protocols/DNS-Defined.md",
+    "Exploitation/Reverse-Shells-Listing.md",
     "Tools/Atomic-Red-Team.md",
+    "Tools/MITRE-ATT&CK-Navigator.md",
+    "Exploitation/TTY-Spawning.md",
     "Tools/Content-Discovery-Tools/FFUF-Cheatsheet.md",
     "Tools/Windows/Event-Viewer.md",
     "Software/EDR/Aurora-EDR.md",
@@ -119,21 +217,9 @@
     "Networks/Network-Security/Defending-With-IPS-And-IDS.md",
     "Networks/FTP-Response-Codes.md",
     "Networks/Traffic-Analysis/Packet-Analysis-Header-Filtering.md",
-    "Exploitation/TTY-Spawning.md",
     "Windows/Windows-Concepts/Windows-Events-To-Monitor.md",
     "Tools/SysInternals/Sysmon/Sysmon-Events.md",
-    "Exploitation/CVEs/PrintNightmare.md",
-    "Security-Enterprises/CTF-Platforms/TryHackMe.md",
-    "Tools/Forensics/Sigma.md",
     "Software/EDR",
-    "Tools/MITRE-ATT&CK-Navigator.md",
-    "Networks/Network-Theory/Network-Protocols/DNS-Defined.md",
-    "Tools/Useful-Software/Chisel.md",
-    "Post-Exploitation/Port-Redirection-And-Tunneling.md",
-    "Cloud/Cloud-Hacking/AWS-Hacking.md",
-    "README.md",
-    "Tools/Content-Discovery-Tools/Feroxbuster.md",
-    "Security-Enterprises/Digital-Forensics/Digital-Forensics.md",
     "Security-Enterprises/Threat-Emulation",
     "Security-Enterprises/Attribution-And-Analysis",
     "Images/eventviewereventtypes.png",
@@ -145,7 +231,6 @@
     "Cloud/Azure/Azure-Administration/Azure-Virtual-Networking",
     "Cloud/Azure/Azure-Administration/Azure-Compute-Resources",
     "Cloud/Azure/Azure-Administration/Azure-Storage",
-    "Cloud/Azure/Azure-Administration/Azure-Identities-And-Governance",
     "Images/robleesansoffensiveforensicstimestomping.png.png",
     "Images/robleesansoffensiveforensicstimestomping.png",
     "Images/robleesansoffensiveforensicslateralmovementoverview.png",
