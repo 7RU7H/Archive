@@ -1,12 +1,20 @@
- # Azure Administration Scale Sets
+# Azure Administration Scale Sets
 
 Azure Scale sets allows automatic increases and decreases in VM capacity. Load Balancers can be associated with a Scale Set:
 - Evenly distribute VM accross availablility Zones - more avaliablility
 - Use Load Balancer probe checks for more robust Health checks
+	- Load Balancers:
+		1. Application Gateway is an HTTP/HTTPS web traffic load balancer application firewall
+		2. Azure Load Balancer supports all TCP/UDP network traffic, port-forwarding and outbound flaws.
 
-Load Balancers:
-1. Application Gateway is an HTTP/HTTPS web traffic load balancer application firewall
-2. Azure Load Balancer supports all TCP/UDP network traffic, port-forwarding and outbound flaws.
+An Availability set is
+- Assigned an:
+	- Fault Domain - up to 3
+		- Are a group of virtual machines that share a common power source and network switch.
+	- Update Domain - up to 20
+		- Are groups of virtual machines and underlying physical hardware that can be rebooted at the same time
+		- If 5 Update domain, the 6th will be in the 1st, 7th will in the 2nd, etc - if 20 the 21th VM is in the 1st..
+	- Can't be changed once the availability set has been created
 
 A **Scaling Policy** detirmines what VM is removed to decrease the capacity of the Scale Set either:
 - Default - Delete VM with highest instance ID balanced across AZs and Fault Domains
@@ -92,3 +100,4 @@ Export Template, custom template for mass use
 [Choose the right number of fault domains for Azure Virtual Machine Scale Sets](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-manage-fault-domains)
 [Microsoft Technical Documentation](https://learn.microsoft.com/en-us/docs/)
 [Microsoft Learn](https://learn.microsoft.com/en-us/)
+[Learn Micorsoft - Availability Set Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/availability-set-overview)

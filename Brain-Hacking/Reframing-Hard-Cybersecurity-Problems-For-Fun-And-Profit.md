@@ -9,7 +9,7 @@ There are many early variations that are very similiar to this I just choose thi
 Keyroot is should strive to change the way people think and be challenging
 
 1. Reframe the problem - Hacking all about reframing hard problems  
-	- Chunking of a problemv become easier
+	- Chunking of a problem become easier
 	2. If you can't fix it... Feature it  
 		- There are hard problems you cant fix, admit is exist and expose the probelm to youself and others - Talks, Challenge Parties and papers exposing the problem
 	1. Typology of Problems 

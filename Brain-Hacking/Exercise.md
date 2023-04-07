@@ -7,12 +7,13 @@ Exchange Mental Stress for Physical Stress - Absolute Bargain
 
 
 # One Box Man 
+
 Working towards this being a manditory minimum, by using sets, spacing them throughout the day.
 
 100 Pressups
 100 Situps
 100 Swats
-A Jog/Run to get outside mainly
+A Jog/Run to get outside
 
 Back exercises for posture per x hours:
 Cobra yoga pose 

@@ -71,3 +71,7 @@ These are the TL;DWatch notes and takeways from the excellent talk: [Survival He
 - **Respect your Intuition**
 	- Your brain is always operation, it can reveal it to your conciousness
 	- Author notes: Brain has to actually do what she is deciding to work in the first place... 
+
+## References
+
+[Survival Heuristics: My Favorite Techniques for Avoiding Intelligence Traps - SANS CTI Summit 2018](https://www.youtube.com/watch?v=kNv2PlqmsAc) 

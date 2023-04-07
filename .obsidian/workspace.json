@@ -4,28 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "21f423b40b5d4a06",
+        "id": "cbd347a18bb51c15",
         "type": "tabs",
         "children": [
           {
-            "id": "df20aaf9b5d73527",
+            "id": "61a5c5d58baee9a8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7a64f7e286445d47",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Maintenance/Azure-Administration-Disaster-Recovery.md",
                 "mode": "source",
                 "source": false
               }
@@ -117,8 +105,21 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "df20aaf9b5d73527",
+  "active": "61a5c5d58baee9a8",
   "lastOpenFiles": [
+    "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Scale-Sets.md",
+    "Brain-Hacking/RTFM.md",
+    "Brain-Hacking/Survival-Heuristics.md",
+    "Brain-Hacking/Reframing-Hard-Cybersecurity-Problems-For-Fun-And-Profit.md",
+    "Brain-Hacking/Question-Based-Hacking-Methodology.md",
+    "Brain-Hacking/Personality.md",
+    "Brain-Hacking/Learning-To-Hack.md",
+    "Brain-Hacking/Improve-Your-Learning.md",
+    "Brain-Hacking/Exercise.md",
+    "Brain-Hacking/Hacking-Meta-Hacking-Problems.md",
+    "Brain-Hacking/Brain-Hacking-Hub.md",
+    "Brain-Hacking/Black-Box-Method.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration.md",
     "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Maintenance/Azure-Administration-Azure-Backups.md",
     "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Maintenance/Azure-Administration-Disaster-Recovery.md",
@@ -134,19 +135,6 @@
     "Tools/Useful-Software/Chisel.md",
     "Networks/Network-Theory/Network-Protocols/DNS-Defined.md",
     "Exploitation/Reverse-Shells-Listing.md",
-    "Tools/Atomic-Red-Team.md",
-    "Tools/MITRE-ATT&CK-Navigator.md",
-    "Exploitation/TTY-Spawning.md",
-    "Tools/Content-Discovery-Tools/FFUF-Cheatsheet.md",
-    "Tools/Windows/Event-Viewer.md",
-    "Software/EDR/Aurora-EDR.md",
-    "Software/EDR/EDR-Defined.md",
-    "Windows/Windows-Concepts/Event-Tracing-for-Windows.md",
-    "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Enumeration-Cheatsheet.md",
-    "Networks/Traffic-Analysis/Traffic-Analysis.md",
-    "Networks/Network-Security/Network-Security.md",
-    "Networks/Network-Security/Defending-With-IPS-And-IDS.md",
-    "Networks/FTP-Response-Codes.md",
     "Software/EDR",
     "Security-Enterprises/Threat-Emulation",
     "Security-Enterprises/Attribution-And-Analysis",

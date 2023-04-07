@@ -592,6 +592,16 @@ Important
 	- VM with Standard SSD 99.5%
 	- VM with Standard HDD 95%
 
+An Availability set is
+- Assigned an:
+	- Fault Domain - up to 3
+		- Are a group of virtual machines that share a common power source and network switch.
+	- Update Domain - up to 20
+		- Are groups of virtual machines and underlying physical hardware that can be rebooted at the same time
+		- If 5 Update domain, the 6th will be in the 1st, 7th will in the 2nd, etc - if 20 the 21th VM is in the 1st..
+	- Can't be changed once the availability set has been created
+
+
 #### Create Resources
 
 Create a Disk
@@ -774,6 +784,9 @@ Pulling a configuration for lots of nodes - also included in the Powershell sect
 Create and Manage VM Scale Sets
 `Search -> Virtual machine scale sets` 
 - Size = Price; Azure Spot - discount unused pool ; image = OS, arch = x86 or arm64
+	- Azure Spot must have set a eviction policy as Azure has capcity needs:
+		- Deallocation - moves your VM to the stopped-deallocated state, allowing you to redeploy it later, with not guarantee of allocation success, you'll be charged storage costs for the underlying disks.
+		- Delete - VMs is deleted with underlying disk 
 - Orchestration mode:
 	- Uniform - for large scale stateless workloads with indentical instances - department workstation
 	- Flexible - high availability at scale with identical or multiple instances - any configuration to the scale set.
