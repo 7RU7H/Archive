@@ -2,8 +2,6 @@
 # Azure Administration - Azure DNS
 
 
-
-
 Azure DNS is extended DNS - see *Alias, Record Set, Time To Live*  - no domain name purchases! For general understanding about DNS see [[DNS-Defined]]. Azure considerations and extensions:
 - Azure DNS
 	- Azure managed DNS resolved by Microsoft Azure infrastructure
@@ -114,10 +112,10 @@ Azure Public DNS - [Host your domain in Azure DNS](https://learn.microsoft.com/e
 
 [Azure DNS for private domains](https://learn.microsoft.com/en-us/azure/dns/private-dns-overview) for Custom DNS requires:
 - Vnet (With Resource Manager deployment model) and Subnet,
-- Add Virtual Network Linking: `Resource groups -> $resourceGroup -> $domain -> select Virtual Network Links` - provide VNet, Sub and a `Link name`  
+- Add Virtual Network Linking (add VNet to a Zone): `Resource groups -> $resourceGroup -> $domain -> select Virtual Network Links` - provide VNet, Sub and a `Link name`  
 - Create an additional DNS Record in the correct DNS Zone	
 
-Azure DNS Private Resolver - required RG and VNet - no VM based DNS servers
+Azure DNS Private Resolver (for Proxying DNS Quieries) - required RG and VNet - no VM based DNS servers
 - Sub, RG, Name, Region and VNet
 `Search -> Private DNS Resolver` 
 - provide the required Project Details 

@@ -13,98 +13,25 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/Reverse-Engineering/Ghidra-Cheatsheet.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "1c318fd35c409a1d",
+            "id": "7a64f7e286445d47",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "169439cb79048d11",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Persistence/Rootkits/Rootkits-Defined.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "78352db33bbba51b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Security-Enterprises/CTF-Platforms/TryHackMe.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1840c8f72575a687",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/PrivEsc-Important-Linux-Locations.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e20e53d8d4f42361",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tools/Atomic-Red-Team.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e41d9959f888ba5a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Exploitation/Reverse-Shells-Listing.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "df219a7b21e24acb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Exploitation/TTY-Spawning.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Maintenance/Azure-Administration-Disaster-Recovery.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -146,7 +73,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 293.5
+    "width": 476.5
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -162,7 +89,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Persistence/Rootkits/Rootkits-Defined.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -190,15 +117,19 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "169439cb79048d11",
+  "active": "df20aaf9b5d73527",
   "lastOpenFiles": [
+    "Cloud/Azure/Azure-Administration/Azure-Administration.md",
+    "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Maintenance/Azure-Administration-Azure-Backups.md",
+    "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Maintenance/Azure-Administration-Disaster-Recovery.md",
+    "Cloud/Azure/Azure-Administration/Azure-Virtual-Networking/Azure-Administration-Azure-DNS.md",
+    "Tools/Reverse-Engineering/Ghidra-Cheatsheet.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+    "Persistence/Rootkits/Rootkits-Defined.md",
     "Images/boopkit.png",
     "Security-Enterprises/CTF-Platforms/TryHackMe.md",
-    "Persistence/Rootkits/Rootkits-Defined.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
     "Persistence/Rootkits",
     "Post-Exploitation/Privilege-Escalation/Linux/PrivEsc-Important-Linux-Locations.md",
-    "Tools/Reverse-Engineering/Ghidra-Cheatsheet.md",
     "Reverse-Engineering/Reverse-Engineering-Tools.md",
     "Tools/Useful-Software/Chisel.md",
     "Networks/Network-Theory/Network-Protocols/DNS-Defined.md",
@@ -216,9 +147,6 @@
     "Networks/Network-Security/Network-Security.md",
     "Networks/Network-Security/Defending-With-IPS-And-IDS.md",
     "Networks/FTP-Response-Codes.md",
-    "Networks/Traffic-Analysis/Packet-Analysis-Header-Filtering.md",
-    "Windows/Windows-Concepts/Windows-Events-To-Monitor.md",
-    "Tools/SysInternals/Sysmon/Sysmon-Events.md",
     "Software/EDR",
     "Security-Enterprises/Threat-Emulation",
     "Security-Enterprises/Attribution-And-Analysis",
@@ -236,7 +164,6 @@
     "Images/robleesansoffensiveforensicslateralmovementoverview.png",
     "Images/azuremonitorcollectionagents.png",
     "Images/azurekglqueries.png",
-    "Images/azurealertsdescriptionimage.png",
-    "Images/azurelogeventcatergories.png"
+    "Images/azurealertsdescriptionimage.png"
   ]
 }
