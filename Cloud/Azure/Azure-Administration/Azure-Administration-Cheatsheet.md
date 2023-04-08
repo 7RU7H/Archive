@@ -35,11 +35,14 @@ Set-Az # Opposite of Clear, Set values
 ## Azure Policies
 
 Governance is about enforcement of rules and ensuring proper functioning to standards. 
-- Policies  - WHAT 
-- [[Azure-Administration-Azure-Roles-And-RBAC]] - WHO
-- Budget - HOW MUCH
-
-Azure Policy(Ensure compliance of resources and does not restrict) != Azure Roles (Control access to resources - Manages User actions at different scopes) && RBAC (Who own Owns, Contributes, Can read and User Access Administrator - Assignment, Scope, Role Definitions, Security Principle(Object: `user`, `group` or `application`))
+Azure Policy  != Azure Roles && RBAC
+- [[Azure-Administration-Azure-Policies]] - Policies  - WHAT? - ensures compliance of resources and does not restrict access
+- [[Azure-Administration-Azure-Roles-And-RBAC]] - WHO?
+	- Azure Roles the object (that is an implementation of Azure Roles) each a type of Roles like Owner, Contributer, Reader...  
+	- RBAC controls access to resources - Manages User actions at different scopes 
+	- A Role has:
+		- Assignment, Scope, Role Definitions, Security Principle(Object: `user`, `group` or `application`))
+- Budget - HOW MUCH?
  
 - [[Azure-Administration-Azure-Policies]] 
 	- Policy Definitions - Defined in a .json to describe business rules to control access to resources
@@ -49,17 +52,17 @@ Azure Policy(Ensure compliance of resources and does not restrict) != Azure Role
 
 Policy Creation:
 1. Policy Defintions - [list of built-in definitions](https://learn.microsoft.com/en-us/azure/governance/policy/samples/built-in-policies)
+	- Policy definitions can also be imported into Azure Policy from [GitHub](https://github.com/Azure/azure-policy/tree/master/samples)
 2. Initiative definition - [Azure Policy initiative definition structure](https://learn.microsoft.com/en-us/azure/governance/policy/concepts/initiative-definition-structure) and  [list of built-in initiatives](https://learn.microsoft.com/en-us/azure/governance/policy/samples/built-in-initiatives)
+	- Initiative Definitions are good at ANY scale of organization, do not skip.
 3. Scope the initiative definition 
 4. Detirmine Compliance
 
-Policy definitions can also be imported into Azure Policy from [GitHub](https://github.com/Azure/azure-policy/tree/master/samples)
-Initiative Definitions are good at ANY scale of organization, do not skip.
 
 To view compliance across a scope:
 `Overview -> Policies - Compliance` 
 
-**Policy Assignment takes 10-30 minutes - Blueprints are useful**
+**Policy Assignment take 10-30 minutes for Azure to implement - Blueprints are useful**
 
 Polices Management:
 `Policies -> Compliance` - Assign polices, initatives
@@ -87,14 +90,18 @@ Cost Management Dashboard
 From here for:
 `Cost Alerts`,  `Cost Analysis`, `Budgets`
 
-## RBAC and Role Management
+## RBAC and Azure Role 
 
-Governance is about enforcement of rules and ensuring proper functioning to standards. 
-- Policies  - WHAT 
-- [[Azure-Administration-Azure-Roles-And-RBAC]] - WHO
-- Budget - HOW MUCH
-
-RBAC (Who own Owns, Contributes, Can read and User Access Administrator - Assignment, Scope, Role Definitions, Security Principle(Object: `user`, `group` or `application`)) != Azure Policy (Ensure compliance of resources and does not restrict) && Azure Roles (Control access to resources - Manages User actions at different scopes) 
+Azure RBAC is the authorization system built on ARM that implment accessmanagement over the four Fundemtnal Azure Roles Owner, Contributor, Reader, User Access Administration. Therefore:
+Azure Policy  != Azure Roles && RBAC
+- [[Azure-Administration-Azure-Policies]] - Policies  - WHAT? - ensures compliance of resources and does not restrict access
+- [[Azure-Administration-Azure-Roles-And-RBAC]] - WHO?
+	- Azure Roles the object (that is an implementation of Azure Roles) each a type of Roles like Owner, Contributer, Reader...  
+	- RBAC controls access to resources - Manages User actions at different scopes 
+	- A Role has:
+		- Assignment, Scope, Role Definitions, Security Principle(Object: `user`, `group` or `application`))
+		- RBAC is the permissions that Role has!
+- Budget - HOW MUCH? 
 
 [Role for task by Principle of Least Privilege](https://learn.microsoft.com/en-us/azure/active-directory/roles/delegate-by-task); TLDR:
 - Apps - Application Administrator
@@ -102,6 +109,7 @@ RBAC (Who own Owns, Contributes, Can read and User Access Administrator - Assign
 	- Configure B2B external collaboration settings
 	- Create B2C applications
 	- **Azure AD B2C Global Administrators do not have the same permissions as Azure AD Global Administrators -  make sure you are in the  Azure AD B2C directory!!!**
+	- B2B users will have  `user@myorgdomain.com#EXT#domain.com` have `#EXT#` appended 
 - Device - Cloud Device Administrator 
 - Global Admin is configure control plane settings
 	- Required: - exclude combined: BEWARE the combined! i.e Reset guest user invite
@@ -128,7 +136,7 @@ RBAC (Who own Owns, Contributes, Can read and User Access Administrator - Assign
 - Important:
 	- The only Role containing the term Elevated [Storage File Data Smb Share Elevated Contributor](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles#storage-file-data-smb-share-elevated-contributor). 
 	- Password Administrator != Helpdesk Administrator!
-		- On-premise Helpdesk Administrator can perform password resets, which still exist...
+		- On-premise Helpdesk Administrator can perform password resets
 
 Implement management groups 
 `Search Management groups -> Management groups`
@@ -144,7 +152,7 @@ Custom RBAC role creation:
 `Upload a $customRole.json file`  - replace fields required prior to upload!
 `Open CloudCLI` to upload or use AzCLI or Powershell
 
-Assign roles **at scope** - `Subscription,Resource group, Resource`
+Assign roles **at scope** - `Subscription, Resource group, Resource`
 `Management Groups -> Access Control (IAM) -> Add -> Search <role keyword> ->  + Select members`
 Assign can be done via Resource Group of Admin Scoping in fields
 `Resource Groups -> Access Control (IAM) -> Add (role, co-adminstrator, custom) role -> Search`
@@ -165,7 +173,7 @@ Important - Service Bus = event-driven
 Important Distinctions:
 - Azure AD Directory Domain Services provides managed domain services
 - Azure AD Connect is Hybrid Service to connect on-premise to Azure Account
-	- Writeback (Cloud and On-Premise Syncing) is required for required data.
+	- Writeback (Cloud and On-Premise Syncing) is required for the required data to Synchronize between cloud and on-premise.
 
 Manage Tenants
 `Search Azure AD -> Manage tenants`
@@ -223,7 +231,6 @@ Temporary Guest users use: `Azure AD B2B` , Guest user can be added with Creatin
 `Overview -> Users -> New User -> Invite External`
 - Remember to add to groups and anything else.
 
-
 Bulk additions, deletion and invitation use a .cvs with SOME of the fields
 Name | Username | Initial Password | Block Sign in | Firstname | Lastname 
 --- | --- | --- | ---
@@ -242,14 +249,13 @@ To make a dynamic group dynamic:
 Deleted Groups
 `Search Groups - > Groups -> Deleted groups`
 
-#### Authenication and Authorization
+#### Authentication and Authorization
 
 Configure SSPR (self-service-password-reset)
 `Azure Active Directory -> Passwords -> Properties - SSPR enabled (None/Selectec/All)`
 Futher configuration of SSPR
 `Authenication Methods, Registration, Notification and Customise Helpdesk link`
 - Requires Premium Azure AD P1
-
 
 Enabling various types of MFA per user, bulk assignment is in the per-user MFA window 
 `Users -> Per-user MFA`
@@ -354,7 +360,7 @@ Install-WindowsFeature -Name "RSAT-RemoteAccess-Powershell"
 
 [User Defined Routes]((https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-udr-overview) - limited!
 
-[Private Link Service](https://learn.microsoft.com/en-us/azure/private-link/create-private-link-service-portal?tabs=dynamic-ip) - Requires: Internal Loadblancer, vnets and reverse subnet
+[Private Link Service](https://learn.microsoft.com/en-us/azure/private-link/create-private-link-service-portal?tabs=dynamic-ip) - Requires: Internal Loadblancer, Vnets and reverse subnet
 `Private Link Center -> Private Links`; add Basics; 
 - Outbound settings
 	- Load Balancer and its FE IP
@@ -364,9 +370,7 @@ Install-WindowsFeature -Name "RSAT-RemoteAccess-Powershell"
 	- Private IP address settings - Dynamic or Static
 - Access Security 
 
-
-
-[Create a Private Endpoints](https://learn.microsoft.com/en-us/azure/private-link/create-private-endpoint-portal?tabs=dynamic-ip) - Requires:  PremiumV2-tier and Active Subscription, Vnet and Private Endpoint.
+[Create a Private Endpoints](https://learn.microsoft.com/en-us/azure/private-link/create-private-endpoint-portal?tabs=dynamic-ip) - Requires:  Premium V2-tier and an Active Subscription, Vnet and Private Endpoint.
 `Private Link Center -> Private Endpoints:`
 - Resource: 
 	- Connect in my directory or 
@@ -493,7 +497,7 @@ Azure Public DNS - [Host your domain in Azure DNS](https://learn.microsoft.com/e
 - Add Virtual Network Linking: `Resource groups -> $resourceGroup -> $domain -> select Virtual Network Links` - provide VNet, Sub and a `Link name`  
 - Create an additional DNS Record in the correct DNS Zone	
 
-Azure DNS Private Resolver - required RG and VNet - no VM based DNS servers
+[Azure DNS Private Resolver](https://learn.microsoft.com/en-us/azure/dns/dns-private-resolver-overview) (enables you to query Azure DNS private zones from an on-premises environment and vice versa without deploying VM based DNS servers) - required RG and VNet - no VM based DNS servers
 - Sub, RG, Name, Region and VNet
 `Search -> Private DNS Resolver` 
 - provide the required Project Details 
@@ -526,7 +530,7 @@ Vnet-To-Vnet requires a Gateway Subnet Azure commends reserving /27 and /28 for 
 
 Local Network Gateways - to represent the on-premises site that you want to connect to a virtual network
 `Search -> Local Network Gateways -> + Create`
-- (Advanced) Border Gateway Protocol (BGP) - routability and reachable protocol -  requires - the minimum prefix you need to declare is the host address of your BGP Peer IP address on your VPN device.
+- (Advanced) Border Gateway Protocol (BGP) - routability and reachable protocol - requires - the minimum prefix you need to declare is the host address of your BGP Peer IP address on your VPN device.
 
 On-Premise VPN devices: shared key and public IP address of your VPN gateway
 - Configuration scripts are available for some devices - [Download VPN device configuration scripts for S2S VPN connections](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-download-vpndevicescript) to find a downloadable script for your VPN device.
@@ -598,7 +602,7 @@ An Availability set is
 		- Are a group of virtual machines that share a common power source and network switch.
 	- Update Domain - up to 20
 		- Are groups of virtual machines and underlying physical hardware that can be rebooted at the same time
-		- If 5 Update domain, the 6th will be in the 1st, 7th will in the 2nd, etc - if 20 the 21th VM is in the 1st..
+		- If 5 Update domains, the 6th will be in the 1st, 7th will in the 2nd, etc - if 20 the 21th VM is in the 1st..
 	- Can't be changed once the availability set has been created
 
 
@@ -647,13 +651,14 @@ Moving Resources - there are edge cases - [see Documentation for more]([Move res
 	- Avoid AKS VNet moves
 	- Disable peering
 	- No VPN Gateway cross-sub moves
-	- Connat move a Subnet that has resource navigation links 
+	- Cannot move a Subnet that has resource navigation links 
 - [Recovery Services move guidance](https://learn.microsoft.com/en-us/azure/backup/backup-azure-move-recovery-services-vault?toc=/azure/azure-resource-manager/toc.json)
 	- Permissions
 	- One-At-A-Time
-	- Vaults restrictions - Hacker Senses
+	- Vaults restrictions
 		- Key Vault and VMs from same region
-		- Only move a vault that contains any of the following types of backup items any not listed -  are stopped and  data permanently deleted before move:
+		- Only move a vault that contains any of the following types of backup items;
+			- Any not listed -  are stopped and data permanently deleted before move:
 			- Azure Virtual Machines
 			- Microsoft Azure Recovery Services (MARS) Agent
 			- Microsoft Azure Backup Server (MABS)
@@ -736,12 +741,18 @@ Connect to a VM via RDP
 
 #### Availability Sets
 
-Availability Set Group of related identical virtual machines are (un)deployed together
+Availability Set Group of related identical virtual machines are (un)deployed together. An Availability set is
 - Built: Azure Portal, ARM, Scripting, API Tools, Managed Disk for Block-Level Storage
 - SLA: 99.95%
 - Scale sets:
-	- Update Domains -  is a group of nodes that are upgraded together - `Configure amount`
+	- Update Domains - is a group of nodes that are upgraded together - `Configure amount`
+		- Update Domain - up to 20
+			- Are groups of virtual machines and underlying physical hardware that can be rebooted at the same time
+			- If 5 Update domains, the 6th will be in the 1st, 7th will in the 2nd, etc - if 20 the 21th VM is in the 1st..
 	- Fault Domains -  is a group of nodes that represent a physical unit of failure - `Configure amount`
+		- Fault Domain - up to 3
+		- Are a group of virtual machines that share a common power source and network switch.
+	- Can't be changed once the availability set has been created 
 - Use managed disks? `No (Classics) or Yes (Aligned)`
 Availability Zone
 - Zonal Services pin each resource to a specific zone.
@@ -757,7 +768,7 @@ Create Automation Account
 Automation Accounts - `Search -> Automataion Accounts -> Create`
 `Subscriptions -> Resource Providers` - we need:
 - `Microsoft.AlertsManagement` - https://learn.microsoft.com/en-us/azure/azure-monitor/insights/alert-management-solution
-- `Microsoft.insights`  - https://learn.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview?tabs=net
+- `Microsoft.Insights`  - https://learn.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview?tabs=net
 
 Compile Desired State Configuration (DSC) script 
 `Search Automation Accounts -> Automation Accounts -> $AutomationAccount -> State configuration (DSC) -> Configurations -> Select DSC script -> Compile -> Yes`
@@ -820,7 +831,7 @@ Load a script with Script with Custom Script Extension (automatically launch and
 `Search -> VM scale sets -> Instances -> Select instances -> Upgrade` - check with Load balancer Frontend IP: `Search -> Load Balancers -> $LoadBalancer -> Frontend IP configuration -> Copy address` 
 
 `Search -> VM Scale Sets -> Scaling -> Manual Scaling or Custom autoscale`
-if Custom:
+If Custom:
 - Configure the Default auto created scale condition 
 	- Add rules!!!
 	- Scale  mode - metric or instance count
@@ -894,7 +905,7 @@ Microsoft.StorageSync
 - And may require disabling of Internet Explorer Enhanced Security for Admins and Users - **ONLY** for initial server registration! - RESET!
 	- FileSyncSvc.exe - service; StoragSync.sys - system filter; PowerShell cmdlets:
 ```powershell
-# Deafult location for cmdlets 
+# Default location for cmdlets 
 C:\\Program Files\\Azure\\StorageSyncAgent\\StorageSync.Management.PowerShell.Cmdlets.dll
 C:\\Program Files\\Azure\\StorageSyncAgent\\StorageSync.Management.ServerCmdlets.dll
 ```
@@ -929,7 +940,6 @@ azcopy login # create URI to login
 azcopy copy [source] [destination] --include
 azcopy copy [source] [destination] --exclude 
 ```
-Moving or storing is done region based. 
 
 URL for Azure remote container: `Home -> Storage Accounts -> $ContainerName -> Properties` - must be globally unique!
 
@@ -941,7 +951,7 @@ Create a SAS:
 - Queue service SAS URL
 - Table service SAS URL
 
-Con be done from `$resource`
+Can be done from `$resource`
 
 URI Format with parametres explained
 ```powershell
@@ -1025,7 +1035,7 @@ WAImportExport.exe PrepImport /j:<JournalFile> /id:<SessionId> /AdditionalDriveS
 2. Single NTFS volume per drive - no mmountpoints
 3. Bitlocker Encryption
 4. `Robocopy` data 
-5. USe `WaImportExport.exe`
+5. Use `WaImportExport.exe`
 ```powershell
 ./WAImportExport.exe PrepImport /j:<journal file name> /id:session<session number> /t:<Drive letter> /bk:<BitLocker key> /srcdir:<Drive letter>:\ /dstdir:<Container name>/ /blobtype:<BlockBlob or PageBlob> /skipwrite
 ```
@@ -1036,7 +1046,6 @@ WAImportExport.exe PrepImport /j:<JournalFile> /id:<SessionId> /AdditionalDriveS
 - Ship drive
 - Update Job with tracking information
 - Verify Data upload to Azure
-
 
 `StorageExplorer.exe` - manage the data stored in multiple Azure storage accounts and across Azure subscriptions.
 - Signin through `StorageExplorer.exe` with an Azure Account
@@ -1120,7 +1129,6 @@ Backup Azure App Service (App configuration settings, File content, connected Da
 Provide the in `App Services -> $App -> Backup `
 
 
-
 ## Azure Containerization
 
 Deploy a Windows or Linux Container using Azure Container Instances 
@@ -1201,7 +1209,6 @@ helm install my-release kubereboot/kured --namespace kured --set nodeSelector."k
 #### Azure Functions
 
 [Azure Functions](https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview) are serverless workloads to save technical and monetary costs of some services - compute-on-demand 
-
 
 ## Azure Backup
 
@@ -1329,7 +1336,8 @@ Configure VM for Log Analytics - Install and Configure Azure Diagnostics for Win
 - Agents
 	- Azure Custom Script Extension is used for post-deployment configuration, software installation, or any other configuration or management task.
 	- Desired State Configuration (DSC) is a management platform to manage an IT and development infrastructure with configuration as code.
-	- Log Analytics agent for Linux as part of a solution to collect JSON output
+	- Log Analytics agent for Log Analytics Workspaces
+		- for Linux as part of a solution to collect JSON output
 	- Azure VMAccess extension acts as a KVM switch that allows you to access the console to reset access to Linux or perform disk-level maintenance.
 Then `$VM -> Logs -> Enable -> chooose a Log Analytucs Workspace -> Enable `
 
@@ -1451,9 +1459,9 @@ Important
 	- `Network Watcher -> Topology`
 - `Connection Troubleshoot` - suite of networking tools and capabilities to troubleshoots network performance and connectivity issues in Azure.
 	 - `Network Watcher -> Connection troubleshoot`
-- `Verify IP flow` -  IP flow verify checks if a packet is allowed or denied to or from a virtual machine. Indetify based on NSGs
+- `Verify IP flow` -  IP flow verify checks if a packet is allowed or denied to or from a virtual machine. Identify based on NSGs
 	- `Network Watcher -> Ip flow verify`
-- `Next Hop` - determine if traffic is being directed to the intended destination by showing the next hop'
+- `Next Hop` - determine if traffic is being directed to the intended destination by showing the next hop
 	- `Network Watcher -> Next Hop`
 - `Connection Monitor` - provides unified, end-to-end connection monitoring in your Azure and hybrid networks!
 - `Traffic Analytics` - is a cloud-based solution that provides visibility into user and application activity in your cloud networks by analyzes NSG flow logs
