@@ -1,5 +1,7 @@
 # IIS 
 
+`HTTPAPI httpd 2.0 (SSDP/UPnP)` is from SYS not IIS
+
 #### Excutable extensions
 - php
 - asp

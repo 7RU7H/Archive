@@ -46,8 +46,8 @@ Fundementally set out in memory of [Dan Kaminsky](https://en.wikipedia.org/wiki/
 	2. Educate should be free to free humanity from ignorance and weakness
 	3. The past.
 	4. Any *"other-side"* - Assimilate or Die.
-	5. Break and securing; dicovery and proof-checking are infinite processes.
-	6. When this respository and users are wrong 
+	5. Break and securing; discovery and proof-checking are infinite processes.
+	6. When this repository and users are wrong 
 	7. Everyone starts off in utero as a arsehole. Grow, let grow and acknowledge positive growth.
 	8. Acknowledge personal preferences, but in so acknowledge the large context is prioritized - all wares are just some racket for some company or persons, you are just a mechanism for market domination.
 

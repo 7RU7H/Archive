@@ -1,4 +1,4 @@
-# Azure dministration Cheatsheet
+# Azure Administration Cheatsheet
 
 - Access the portal at https://portal.azure.com/ -  great for performing single tasks
 - Cloud Shell on the `>_` Icon; Temporary Host - per-session, per-user basis
@@ -360,7 +360,7 @@ Install-WindowsFeature -Name "RSAT-RemoteAccess-Powershell"
 
 [User Defined Routes]((https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-udr-overview) - limited!
 
-[Private Link Service](https://learn.microsoft.com/en-us/azure/private-link/create-private-link-service-portal?tabs=dynamic-ip) - Requires: Internal Loadblancer, Vnets and reverse subnet
+[Private Link Service](https://learn.microsoft.com/en-us/azure/private-link/create-private-link-service-portal?tabs=dynamic-ip) (connect private behind a load balancer to a service or resource) - Requires: Internal Loadblancer, Vnets and reverse subnet
 `Private Link Center -> Private Links`; add Basics; 
 - Outbound settings
 	- Load Balancer and its FE IP
@@ -517,7 +517,7 @@ DNS servers require network peering to resolve IPs if not using AzureDNS
 
 #### VPN Gateways
 
-VPN Gateway requires: - subnet, dns server and VPN device 
+VPN Gateway requires: - subnet, DNS server and VPN device 
 `Search -> Virtual Network Gateways -> + Create`
 Select:
 - VPN or ExpressRoute
@@ -537,7 +537,7 @@ On-Premise VPN devices: shared key and public IP address of your VPN gateway
 
 Create an ExpressRoute
 `ExpressRoute -> Create ExpressRoute`; Configuration:
-- Provider (name required )| Direct
+- Provider (name required) | Direct
 - Create new | import class
 - Peering Location
 - Bandwidth
@@ -1137,8 +1137,6 @@ Deploy a Windows or Linux Container using Azure Container Instances
 - Networking - DNS name label
 - Advanced - Restart policy
 
-#### Docker 
-
 [[Docker]] Containers need to be built then published - [[Azure-DevOps]]
 
 #### App Service Plans
@@ -1385,7 +1383,7 @@ Then `$VM -> Logs -> Enable -> chooose a Log Analytucs Workspace -> Enable `
 - Filter
 - Explorer
 
-```kusto
+```sql
 // Syntax
 // Count by Rows:
 $Table | count 
