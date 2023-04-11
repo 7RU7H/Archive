@@ -27,6 +27,7 @@ This a hub page group links to all relevant articles under a Azure Administratio
 [[Azure-Administration-Subscriptions]]
 [[Azure-Administration-Files]]
 [[Azure-Administration-Disaster-Recovery]]
+[[Azure-Administration-Replication]]
 
 For the Cheatsheet: [[Azure-Administration-Cheatsheet]]
 

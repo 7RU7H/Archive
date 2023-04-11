@@ -90,7 +90,21 @@ Federation integration - hybrid environment for local AD FS infrastucture - cert
 Synchronization - syncing data 
 Health Monitoring - monitoring in Azure Portal
 
+#### Azure AD join
 
+Azure Active Directory enables single sign-on (SSO) to devices, applications, and services from anywhere. Securing is vital for compliance!
+Azure AD join - for device joining:
+Features:
+- SSO, Enterprise State roaming, MS Store for business access, Windows Hello, Access restrictions, access to on-premise 
+- Requires:
+	- Connection
+	- Register - register to manage
+	- Join - extension of registering a device and changes the local state of the device to enable sign-in from organizational account instead of personal 
+ - Potential combination of registration with other solutions
+
+![](azureadbenefitsofazureadjoin.png)
+
+[Implement Azure Active Directory join - Training | Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/configure-azure-active-directory/6-implement-active-directory-join)
 
 #### Azure AD
 
@@ -109,15 +123,7 @@ Tenant
 	- instance of AD in Azure
 	- Business to business, Business to consumer
 
-#### Azure AD join
 
-Azure AD join - for device joining:
-Features:
-SSO, Enterprise State roaming, MS Store for business access, Windows Hello, Access restrictions, access to on-premise 
-- Requires:
-	- Connection
-	- Registering - potential combination of registration with other solutions
-	- Joining
 
 #### Azure AD SSPR feature
 
@@ -303,3 +309,4 @@ foreach ($email in $invitations)
 [Microsoft Learn](https://learn.microsoft.com/en-us/)
 [FreeCodeCamp.org - AZ 104 Course](https://www.youtube.com/watch?v=10PbGbTUSAg&t=3458s)
 [Azure Active Directory pricing](https://azure.microsoft.com/pricing/details/active-directory) 
+[Implement Azure Active Directory join - Training | Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/configure-azure-active-directory/6-implement-active-directory-join)

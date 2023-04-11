@@ -1,5 +1,7 @@
 # Useful_Rust
 
+I am not affliated with Rust organization, btw.
+
 ## Installation and Maintance
 Linux install
 
@@ -23,9 +25,8 @@ Check cargo version with `cargo --version`
 1. build documentation for your project with `cargo doc`
 1. publish a library to [crates.io](https://crates.io) with `cargo publish`
 
-## Online Tool
+## Online Tools and Resources
 
 https://play.rust-lang.org/
-
 
 [The Rust Programming Language](https://doc.rust-lang.org/book/#the-rust-programming-language)
