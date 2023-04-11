@@ -86,7 +86,7 @@ To perform client-side exploits against we need to enumerate users. Patterns of 
 
 
 ## Web Exploits
-Check [[OWASP-top-whatever-historic-definitions]] for more historic definitive listing.
+Check [[OWASP-Top-10-Historic-Definitions]] for more historic definitive listing.
 
 
 ## Authentication Bypass

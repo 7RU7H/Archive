@@ -1,5 +1,7 @@
 # Command Injection
 
+When a web application makes a call to a function that interacts with the server's console directly.
+
 ## The power of \*nix ";" or Windows "&"
 
 ```powershell
@@ -45,3 +47,4 @@ sleep 5
 [Portswigger](https://portswigger.net/web-security/os-command-injection)
 [TryHackMe Room](https://tryhackme.com/room/oscommandinjection)
 [OWASP](https://owasp.org/www-community/attacks/Command_Injection)
+[THM OWASP Top 10 2021 Room](https://tryhackme.com/room/owasptop102021)

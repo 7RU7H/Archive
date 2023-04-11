@@ -13,13 +13,98 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "Coding-Scripting-Programming/Languages/Rust/Rust.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2927c37259e43370",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Persistence/Rootkits/Rootkits-Defined.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "5f473b2cdb3fc46f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Exploitation/MITM-Attacks.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "cfb986b1aa63ab5d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Services/Databases/SQLite/SQLite-Hacking.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "43d59f33551e4a8e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Web-Application-Hacking/OWASP-Top-10-Historic-Definitions.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ed3dfa228388f12b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Web-Application-Hacking/Insecure-Object-Reference.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "20f82bd4d4bd5da0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Web-Application-Hacking/Command-Injection-Cheatsheet.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "94ec59a8bac3c8c1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Post-Exploitation/Privilege-Escalation/Linux/PrivEsc-Important-Linux-Locations.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -48,7 +133,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Aurora",
+                "query": "/proc/",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -61,7 +146,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 476.5
+    "width": 405.5
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -77,7 +162,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Linux/PrivEsc-Important-Linux-Locations.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,8 +190,21 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "61a5c5d58baee9a8",
+  "active": "94ec59a8bac3c8c1",
   "lastOpenFiles": [
+    "Web-Application-Hacking/Command-Injection-Cheatsheet.md",
+    "Web-Application-Hacking/Insecure-Object-Reference.md",
+    "Web-Application-Hacking/OWASP-Top-10-Historic-Definitions.md",
+    "Services/Databases/SQLite/SQLite-Hacking.md",
+    "Exploitation/MITM-Attacks.md",
+    "Coding-Scripting-Programming/Languages/Rust/Rust.md",
+    "Brain-Hacking/Mindset.md",
+    "Tools/Useful-Software/Github-guide.md",
+    "Cryptography-And-Authentication/Cryptography.md",
+    "Exploitation/CVEs/Spring4Shell.md",
+    "Brain-Hacking/Hacking-Meta-Hacking-Problems.md",
+    "Brain-Hacking/Hacking-The-Thing.md",
+    "README.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
     "Reconnaissance/Active-Information-Gathering/Unknown-Service-Recon.md",
     "Coding-Scripting-Programming/Languages/JSON.md",
@@ -122,18 +220,6 @@
     "Coding-Scripting-Programming/Languages/ASP",
     "Networks/Network-Theory/IPvX/IPv4-Subnet-Masks-Dictionary.md",
     "Tools/Burpsuite/Burpsuite-Helpsheet.md",
-    "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Scale-Sets.md",
-    "Brain-Hacking/RTFM.md",
-    "Brain-Hacking/Survival-Heuristics.md",
-    "Brain-Hacking/Reframing-Hard-Cybersecurity-Problems-For-Fun-And-Profit.md",
-    "Brain-Hacking/Question-Based-Hacking-Methodology.md",
-    "Brain-Hacking/Personality.md",
-    "Brain-Hacking/Learning-To-Hack.md",
-    "Brain-Hacking/Improve-Your-Learning.md",
-    "Brain-Hacking/Exercise.md",
-    "Brain-Hacking/Hacking-Meta-Hacking-Problems.md",
-    "Brain-Hacking/Brain-Hacking-Hub.md",
-    "Brain-Hacking/Black-Box-Method.md",
     "Images/boopkit.png",
     "Persistence/Rootkits",
     "Software/EDR",

@@ -1,15 +1,18 @@
 # SQLite Hacking
 
-
 SQLite while on box does not require credentials!
+```bash
+sqlite3 databasename.db
+```
 
+Useful 
 ```sql
 .tables
 .quit
 .help
 .database
 .schema
-select * from tablenamedsomething;
+select * from $tablenamedsomething;
 ```
 
 

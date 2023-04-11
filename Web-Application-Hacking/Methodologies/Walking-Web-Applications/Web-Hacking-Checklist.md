@@ -22,7 +22,7 @@ In the Background
 Fuzz for:
 1. Subdomains if there is a domain name
 2. Fuzz Directories for RCE injectable files
-3. Fuzz Parameters for [[OWASP-top-whatever-historic-definitions]]
+3. Fuzz Parameters for [[OWASP-Top-10-Historic-Definitions]]
 4. Fuzz for [[SQLInjection]]
 
 
