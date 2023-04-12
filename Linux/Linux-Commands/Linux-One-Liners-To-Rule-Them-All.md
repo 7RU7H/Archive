@@ -35,4 +35,16 @@ May require some editting post also consider adding `sed`
 cat $file.md| grep -r '](' | awk -F\) '{print $1")"}' | awk -F: '{print $2$3}'
 ```
 
+## Replace case of each first letter of each word
+
+From [Stackoverflow uppercasing first letter of words using sed](https://stackoverflow.com/questions/1538676/uppercasing-first-letter-of-words-using-sed)
+```bash
+# Replace all the first letter with the corresponding uppercase letter 
+sed -e "s/\b\(.\)/\u\1/g"
+# Replace all the first letter with the corresponding lowercase letter 
+sed -e "s/\b\(.\)/\l\1/g"
+```
+
 ## References
+
+[Stackoverflow uppercasing first letter of words using sed](https://stackoverflow.com/questions/1538676/uppercasing-first-letter-of-words-using-sed)

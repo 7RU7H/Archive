@@ -1,4 +1,4 @@
-# OWASP TOP 10 - WHENEVER 
+# OWASP Top 10 - WHENEVER 
 
 This document is a condensing of OWASP various years listing of top ten vulnerability definitions. The reason for various listing document specification is that historically some vulnerablities return in nasty ways.
 Similiar to other documents in this repository maximum of a couple of sentences to define a concept.
@@ -30,7 +30,14 @@ Where the web application design is fundementally flawed. OWASP *"An insecure de
 
 ## Security Misconfiguration
 
-Mismanaged security configurations of web server stack, underlying os, databases, external services. No brufe force prevention or restrictions on [[Bypassing-Rate-Limits]]
+Mismanaged security configurations of web server stack, underlying os, databases, external services. 
+- Permissions
+- Secret management
+- Exposing Error messages 
+- Not using [HTTP security headers](https://owasp.org/www-project-secure-headers/), although this not a vulnerablity in itself
+- No brute force prevention or restrictions on [[Bypassing-Rate-Limits]]
+
+[OWASP top 10 entry for Security Misconfiguration](https://owasp.org/Top10/A05_2021-Security_Misconfiguration/).
 
 ## Vulnerable And Outdated Components
 
@@ -39,6 +46,11 @@ External services such as frameworks, software libraries
 ## Identification and Authentication Failures
 
 Weak credentials, stealable session information, firewall mismanagement allowing for brute forcing. See [[Default-Passwords-Data-Recovery-Table]] or [[Password-Attacks]]
+- Brute Force Attacks
+- Weak credentials
+- Weak session cookies
+- Lack of MFA or modern prevention of brute forcing the user to respond to MFA requests
+- Account creation logic flaw within the authenication mechanism where input is not sanitizing whitespace "`user`" and  "` user`" are treated the as re-registering not a new account. 
 
 ## Software and Data Integrity Flaws
 
@@ -53,3 +65,8 @@ Lack of or undisciplined logging of user activity and patterns; coupled with inc
 When web application tries to reach a remote server without validating the URL of the remote server. If attack controls the contents of the URL, they can force the application to make a request to a resource it should not be able to reach, including attacker own server.
 
 
+## References
+
+[OWASP top 10 entry for Security Misconfiguration](https://owasp.org/Top10/A05_2021-Security_Misconfiguration/).
+[HTTP security headers](https://owasp.org/www-project-secure-headers/)
+[OWASP top 10 2021](https://tryhackme.com/room/owasptop102021)
