@@ -54,7 +54,15 @@ Weak credentials, stealable session information, firewall mismanagement allowing
 
 ## Software and Data Integrity Flaws
 
-Deployments, code storage, data storage, insecure respoistories or delivery systems such that authorized access to or control over will lead to compromise like [[Upload-Vulnerabilities]]
+Deployments, code storage, data storage, insecure respoistories or delivery systems such that authorized access to or control over will lead to compromise:
+- [[Upload-Vulnerabilities]]
+- [[Hijacking-Remote-Technology-Repositories]]
+
+Integrity of file hashes
+```bash
+echo "$expectHash" && md5sum $file
+echo "$expectHash" && shasum -a $algorhythm $file
+```
 
 ## Security Logging and Monitoring Failures
 
@@ -67,6 +75,6 @@ When web application tries to reach a remote server without validating the URL o
 
 ## References
 
-[OWASP top 10 entry for Security Misconfiguration](https://owasp.org/Top10/A05_2021-Security_Misconfiguration/).
+[OWASP top 10 entry for Security Misconfiguration](https://owasp.org/Top10/A05_2021-Security_Misconfiguration/)
 [HTTP security headers](https://owasp.org/www-project-secure-headers/)
 [OWASP top 10 2021](https://tryhackme.com/room/owasptop102021)

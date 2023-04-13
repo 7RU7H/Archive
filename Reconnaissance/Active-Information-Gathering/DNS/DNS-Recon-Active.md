@@ -54,7 +54,7 @@ nslookup
 host www.domain.com # return ip for a domain
 host -t ns $url # find nameservers for a domain
 host -t mx $url # find mailservers for a domain
-host -l $domain $ns1-domain # List of DNS servers
+host -l $domain $ns1.$domain # List of DNS servers
 ```
 
 Parse just DNS hostnames

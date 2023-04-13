@@ -32,6 +32,42 @@
             }
           },
           {
+            "id": "9a03d72ae2c9a6b8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Reconnaissance/Active-Information-Gathering/DNS/DNS-Recon-Active.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "56f74bc5d8a92c14",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Reconnaissance/Active-Information-Gathering/AWS/AWS-Bucket-Active.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e82f61cb0c8e16d4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Reconnaissance/Passive-Information-Gathering/Source-Code/Open-Source-Code-Passive.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "2927c37259e43370",
             "type": "leaf",
             "state": {
@@ -44,7 +80,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -102,7 +138,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Web-Application-Hacking/OWASP-Top-10-Historic-Definitions.md",
+                "file": "Reconnaissance/Passive-Information-Gathering/Source-Code/Open-Source-Code-Passive.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,14 +166,20 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "220d23823bfd5608",
+  "active": "e82f61cb0c8e16d4",
   "lastOpenFiles": [
+    "Reconnaissance/Active-Information-Gathering/AWS/AWS-Bucket-Active.md",
+    "Reconnaissance/Passive-Information-Gathering/Source-Code/Open-Source-Code-Passive.md",
+    "Reconnaissance/Passive-Information-Gathering/Source-Code",
+    "Reconnaissance/Active-Information-Gathering/DNS/DNS-Recon-Active.md",
+    "Reconnaissance/Active-Information-Gathering/AWS",
+    "Web-Application-Hacking/OWASP-Top-10-Historic-Definitions.md",
+    "Web-Application-Hacking/Hijacking-Remote-Technology-Repositories.md",
+    "Persistence/Rootkits/Rootkits-Defined.md",
     "Linux/Linux-Commands/Linux-One-Liners-To-Rule-Them-All.md",
     "Coding-Scripting-Programming/Languages/Rust/Rust.md",
-    "Persistence/Rootkits/Rootkits-Defined.md",
     "Exploitation/MITM-Attacks.md",
     "Services/Databases/SQLite/SQLite-Hacking.md",
-    "Web-Application-Hacking/OWASP-Top-10-Historic-Definitions.md",
     "Web-Application-Hacking/Insecure-Object-Reference.md",
     "Web-Application-Hacking/Command-Injection-Cheatsheet.md",
     "Cloud/Azure/Azure-Administration/Azure-Identities-And-Governance/Azure-Administration-Azure-Policies.md",
@@ -155,11 +197,7 @@
     "README.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
     "Reconnaissance/Active-Information-Gathering/Unknown-Service-Recon.md",
-    "Coding-Scripting-Programming/Languages/JSON.md",
-    "Reconnaissance/Active-Information-Gathering/Web-Analysis/HTTP(S)-Header-Recon.md",
-    "APIs/API-Hacking.md",
     "APIs",
-    "Web-Application-Hacking/Web-Concepts/HTTP-Defined.md",
     "Coding-Scripting-Programming/Languages/ASP",
     "Images/boopkit.png",
     "Persistence/Rootkits",
@@ -171,8 +209,6 @@
     "Services/Webservers/Sinatra",
     "Hardware/Hardware-Services",
     "Images/azure-k8updatenodes.png",
-    "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Maintenance",
-    "Cloud/Azure/Azure-Administration/Azure-Virtual-Networking",
     "Images/robleesansoffensiveforensicstimestomping.png.png",
     "Images/robleesansoffensiveforensicstimestomping.png",
     "Images/robleesansoffensiveforensicslateralmovementoverview.png",
