@@ -1074,6 +1074,10 @@ Deployment
 Networking - Public access and network injection toggles
 Monitoring - Insights
 Tags - TAGS TAGS TAGS!
+- Extras
+	- Always On: keep application loaded even when there is no traffic
+	- ARR Affinity - in multi-instance deployment ensure app client is routed to same instance for life of the session
+	- Connection strings: encrypted at rest and transmitted over encryption
 
 Create a staging deployment slot and configure deployment 
 `App Services -> $App -> Deployment Slots -> + Add Slot`
@@ -1115,12 +1119,14 @@ Deployment Swaps - swap between slots
 3. If Auto swap is enabled with custom warm-up trigger `applicationInitialization` (if not specified)
 4. All warmed up? - Swap slots by switching the routing rules for the two slots
 5. Source slot has pre-swap app previously in the target slot, perform the same operation by applying all settings and restarting the instances. No need to to re-route, it is stored
+- BEWARE - Slot != App; Slot is more like a host:
+![](azslotswappedsettingsvsslotspecificsettings.png)
 
 
 Create a Custom Domain for Azure App Service
 `Search -> App Services -> Custom Domains`
 - `Search -> Domain Names` and reserve directly in the Azure portal
-- Create DNS records
+- Create DNS records - either `A` or `CNAME`
 - Enable
 
 Backup Azure App Service (App configuration settings, File content, connected Databases) - requires:

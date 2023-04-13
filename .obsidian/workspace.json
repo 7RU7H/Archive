@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+                "file": "Tools/Shells/Netcat-Cheatsheet.md",
                 "mode": "source",
                 "source": false
               }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+                "file": "Tools/Shells/Netcat-Cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,13 +107,15 @@
   },
   "active": "848f0c7e9821375a",
   "lastOpenFiles": [
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+    "Images/azslotswappedsettingsvsslotspecificsettings.png",
+    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
     "Post-Exploitation/Privilege-Escalation/Linux/Important-Linux-Locations.md",
     "Networks/Network-Protocols-Cheatsheet.md",
     "Web-Application-Hacking/Basic-HTTP-Authenication.md",
     "Web-Application-Hacking/XXE/XXE-Vulnerablity.md",
     "Web-Application-Hacking/File-Inclusion-And-Directory-Traversal/DT-FI-Windows-Files.md",
     "Post-Exploitation/Privilege-Escalation/Windows/PrivEsc-Important-Windows-Locations.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
     "Exploitation/Reverse-Shells-Listing.md",
     "Exploitation/Shells.md",
     "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Application-Services.md",
@@ -131,10 +133,8 @@
     "Services/Databases/MongoDB/MongoDB.md",
     "Services/Network-Access-Applications/UniFi.md",
     "Services/Network-Access-Applications",
-    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
     "Web-Application-Hacking/JSON/JSON-Web-Tokens.md",
     "Coding-Scripting-Programming/Languages/JSON.md",
-    "Web-Application-Hacking/JSON/Json.md",
     "Reconnaissance/Passive-Information-Gathering/Source-Code",
     "Reconnaissance/Active-Information-Gathering/AWS",
     "Images/azureadbenefitsofazureadjoin.png",
@@ -151,7 +151,6 @@
     "Images/azure-k8updatenodes.png",
     "Images/robleesansoffensiveforensicstimestomping.png.png",
     "Images/robleesansoffensiveforensicstimestomping.png",
-    "Images/robleesansoffensiveforensicslateralmovementoverview.png",
-    "Images/azuremonitorcollectionagents.png"
+    "Images/robleesansoffensiveforensicslateralmovementoverview.png"
   ]
 }

