@@ -20,7 +20,7 @@ mongo "mongodb://localhost:27017"
 
 ```c
 > use <DATABASE>;
-> show dbs
+> show dbs;
 > show tables;
 > show collections;
 > db.system.keys.find();
@@ -32,10 +32,26 @@ mongo "mongodb://localhost:27017"
 > use admin;
 ```
 
-##### User Password Reset to "12345"
-
+User Password Reset to "12345"
 ```c
 > db.getCollection('users').update({username:"admin"}, { $set: {"services" : { "password" : {"bcrypt" : "$2a$10$n9CM8OgInDlwpvjLKLPML.eizXIzLlRtgCh3GRLafOdR9ldAUh/KG" } } } })
+```
+
+One-liner locally to access a database and extract database data and print it in [[JSON]]
+```bash
+# --eval is a script block to evaluate json
+mongo --port $port $database --eval "db.admin.find().forEach(printjson);"
+```
+
+Make a valid password
+```bash
+mkpasswd -m $algo Password1234
+```
+
+Replace a password
+```bash
+mongo --port $port $database --eval 'db.admin.update({"_id":  
+ObjectId("$objectID")},{$set:{"$password":"$newPasswordHash"}})'
 ```
 
 
