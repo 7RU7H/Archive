@@ -11,8 +11,12 @@
             "id": "848f0c7e9821375a",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -44,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "/proc/",
+                "query": "nohup",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -73,6 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,6 +107,20 @@
   },
   "active": "848f0c7e9821375a",
   "lastOpenFiles": [
+    "Post-Exploitation/Privilege-Escalation/Linux/Important-Linux-Locations.md",
+    "Networks/Network-Protocols-Cheatsheet.md",
+    "Web-Application-Hacking/Basic-HTTP-Authenication.md",
+    "Web-Application-Hacking/XXE/XXE-Vulnerablity.md",
+    "Web-Application-Hacking/File-Inclusion-And-Directory-Traversal/DT-FI-Windows-Files.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/PrivEsc-Important-Windows-Locations.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+    "Exploitation/Reverse-Shells-Listing.md",
+    "Exploitation/Shells.md",
+    "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Application-Services.md",
+    "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Virtual-Machines.md",
+    "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Azure-Disks.md",
+    "Images/azurecloudserviceresponsiblitychart.png",
+    "Linux/Linux-Commands/Linux-One-Liners-To-Rule-Them-All.md",
     "Persistence/Rootkits/Rootkits-Defined.md",
     "Exploitation/CVEs/Log4J.md",
     "Reconnaissance/Passive-Information-Gathering/Source-Code/Open-Source-Code-Passive.md",
@@ -109,7 +128,6 @@
     "Reconnaissance/Active-Information-Gathering/DNS/DNS-Recon-Active.md",
     "Exploitation/TTY-Spawning.md",
     "Web-Application-Hacking/OWASP-Top-10-Historic-Definitions.md",
-    "Linux/Linux-Commands/Linux-One-Liners-To-Rule-Them-All.md",
     "Services/Databases/MongoDB/MongoDB.md",
     "Services/Network-Access-Applications/UniFi.md",
     "Services/Network-Access-Applications",
@@ -119,18 +137,7 @@
     "Web-Application-Hacking/JSON/Json.md",
     "Reconnaissance/Passive-Information-Gathering/Source-Code",
     "Reconnaissance/Active-Information-Gathering/AWS",
-    "Web-Application-Hacking/Hijacking-Remote-Technology-Repositories.md",
-    "Coding-Scripting-Programming/Languages/Rust/Rust.md",
-    "Exploitation/MITM-Attacks.md",
-    "Services/Databases/SQLite/SQLite-Hacking.md",
-    "Web-Application-Hacking/Insecure-Object-Reference.md",
-    "Web-Application-Hacking/Command-Injection-Cheatsheet.md",
-    "Cloud/Azure/Azure-Administration/Azure-Identities-And-Governance/Azure-Administration-Azure-Policies.md",
-    "Cloud/Azure/Azure-Administration/Azure-Storage/Azure-Administration-Replication.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration.md",
-    "Cloud/Azure/Azure-Administration/Azure-Identities-And-Governance/Azure-Administration-AD-Administration.md",
     "Images/azureadbenefitsofazureadjoin.png",
-    "Post-Exploitation/Privilege-Escalation/Linux/Important-Linux-Locations.md",
     "APIs",
     "Coding-Scripting-Programming/Languages/ASP",
     "Images/boopkit.png",
@@ -145,7 +152,6 @@
     "Images/robleesansoffensiveforensicstimestomping.png.png",
     "Images/robleesansoffensiveforensicstimestomping.png",
     "Images/robleesansoffensiveforensicslateralmovementoverview.png",
-    "Images/azuremonitorcollectionagents.png",
-    "Images/azurekglqueries.png"
+    "Images/azuremonitorcollectionagents.png"
   ]
 }

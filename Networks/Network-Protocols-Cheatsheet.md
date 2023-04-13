@@ -82,9 +82,16 @@ DNS EndPoint Mapper
 
 Microsoft Azure expands on DNS see [[Azure-Administration-Azure-DNS]]
 
-## 69 - TFTP
+## 69 UDP - TFTP
+
 Stands for trivial file transfer protocol - UDP FTP
 PXE Boot uses this Boot image retrieval/loading useful in [[Active-Directory-Footholding]]
+```bash
+sudo apt install tftp
+tftp $ip
+? # Commands 
+```
+
 
 ## 79 - Finger 
 [Finger](https://en.wikipedia.org/wiki/Finger_(protocol)) user information protocol are simple for the exchange of human-oriented status and user information. Use [pentestmonkey finger-user-enum.pl](https://pentestmonkey.net/tools/user-enumeration/finger-user-enum)

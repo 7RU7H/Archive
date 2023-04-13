@@ -1,4 +1,5 @@
 # Windows File paths
+
 ```
 C:/Users/Administrator/NTUser.dat
 C:/Documents and Settings/Administrator/NTUser.dat
@@ -71,4 +72,5 @@ C:/inetpub/logs/LogFiles/W3SVC1/u_ex[YYMMDD].log
 ```
 
 ## References
+
 [rapid7](https://www.rapid7.com/blog/post/2016/07/29/pentesting-in-the-real-world-local-file-inclusion-with-windows-server-files/)

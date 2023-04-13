@@ -51,3 +51,4 @@ Configuration of a XML interperter disallowing the inclusion of external entitie
 [BrightSec](https://brightsec.com/blog/xxe-attack/)
 [OWASP](https://owasp.org/www-community/vulnerabilities/XML_External_Entity_(XXE)_Processing)
 [PayloadsAllTheThings - XXE ](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/XXE%20Injection/Files/Classic%20XXE%20-%20etc%20passwd.xml)
+[Hacktricks](https://book.hacktricks.xyz/pentesting-web/xxe-xee-xml-external-entity)

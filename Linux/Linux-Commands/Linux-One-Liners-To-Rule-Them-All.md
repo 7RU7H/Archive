@@ -45,6 +45,12 @@ sed -e "s/\b\(.\)/\u\1/g"
 sed -e "s/\b\(.\)/\l\1/g"
 ```
 
+## Finding 
+
+```bash
+ls -1 | grep -v '$unwantdir\|proc'
+```
+
 ## References
 
 [Stackoverflow uppercasing first letter of words using sed](https://stackoverflow.com/questions/1538676/uppercasing-first-letter-of-words-using-sed)

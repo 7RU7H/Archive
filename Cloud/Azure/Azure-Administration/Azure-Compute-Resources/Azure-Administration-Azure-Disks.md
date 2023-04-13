@@ -21,9 +21,29 @@ Azure Private Links to ensure traffic between Zure disk and VMs within the Micro
 
 Azure Backup can be used to create a backup job with time-based backups and backup retention policies
 
+
 #### Application data storage on a VM
 
 Dedicated data disks are generally considered the best place to store application data files. They can be larger than OS disks and you can optimize them for the cost and performance characteristics appropriate for your data.
+
+## VM Disks
+
+- OS disk
+	- `C:\`
+- Temporary disk 
+	- `D:\`
+	- Windows: `pagefile.sys`
+	- Linux: `/dev/sdb` - formatted and mounted to `/mnt` by Azure Linux Agent
+- Data disk - registered as [Small Computer System Interface (SCSI)](https://en.wikipedia.org/wiki/SCSI) drives
+	- `F:\`
+
+Managed-disks - An Azure-managed disk is a VHD stored as paged blobs managed by Azure
+- You pick a disk type
+- Required for for single instance VM SLA 
+
+Azure Premium Storage - Client managed Disk with best performance
+
+Standard Azure Storage - for limiting costs 
 
 ## Workflows
 
@@ -42,3 +62,4 @@ Configure Disk Encryption -
 [FreeCodeCamp.org - AZ 104 Course](https://www.youtube.com/watch?v=10PbGbTUSAg&t=3458s)
 [Microsoft Technical Documentation](https://learn.microsoft.com/en-us/docs/)
 [Microsoft Learn](https://learn.microsoft.com/en-us/)
+[SCSI - Wikipedia](https://en.wikipedia.org/wiki/SCSI)
