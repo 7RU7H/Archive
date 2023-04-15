@@ -13,13 +13,50 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cryptography-And-Authentication/Cryptography.md",
+                "file": "Brain-Hacking/Actions/Learning-To-Hack.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3891b57b3c0342f6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Brain-Hacking/Actions/Exercise.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6cd7b864efff8861",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Security-Enterprises/For-Individuals/Praxis-And-Practice.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9a74d4b4fa8c8064",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Security-Enterprises/Secure-Architectures/Security-Strategies.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -77,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cryptography-And-Authentication/Cryptography.md",
+                "file": "Security-Enterprises/For-Individuals/Praxis-And-Practice.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,8 +142,31 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "848f0c7e9821375a",
+  "active": "6cd7b864efff8861",
   "lastOpenFiles": [
+    "Security-Enterprises/Secure-Architectures/Security-Strategies.md",
+    "Security-Enterprises/Secure-Architectures/Security-Principles.md",
+    "Security-Enterprises/Secure-Architectures/Security-Controls.md",
+    "Security-Enterprises/Secure-Architectures/Security-Policies.md",
+    "Security-Enterprises/For-Individuals/Praxis-And-Practice.md",
+    "Security-Enterprises/Security-Principles.md",
+    "Security-Enterprises/Untitled",
+    "Security-Enterprises/For-Individuals",
+    "Brain-Hacking/Actions/Exercise.md",
+    "Brain-Hacking/Actions/Learning-To-Continue-Learning-Better.md",
+    "Brain-Hacking/Actions/Learning-To-Hack.md",
+    "Brain-Hacking/Talk-Notes",
+    "Brain-Hacking/Philosphy",
+    "Brain-Hacking/Concepts",
+    "Brain-Hacking/Actions",
+    "Brain-Hacking/Actions/Personality.md",
+    "Brain-Hacking/Actions/Improve-Your-Learning.md",
+    "Brain-Hacking/Brain-Hacking-Hub.md",
+    "Brain-Hacking/Concepts/Black-Box-Method.md",
+    "Brain-Hacking/Actions/Beyond-Root-Ideas.md",
+    "Brain-Hacking/Hacking-The-Thing.md",
+    "Brain-Hacking/Concepts/Hacking-Meta-Hacking-Problems.md",
+    "Cryptography-And-Authentication/Cryptography.md",
     "Web-Application-Hacking/OWASP-Top-10-Historic-Definitions.md",
     "Web-Application-Hacking/JSON/JSON-Web-Tokens.md",
     "Tools/Shells/Netcat-Cheatsheet.md",
@@ -117,38 +177,15 @@
     "Networks/Network-Protocols-Cheatsheet.md",
     "Web-Application-Hacking/Basic-HTTP-Authenication.md",
     "Web-Application-Hacking/XXE/XXE-Vulnerablity.md",
-    "Web-Application-Hacking/File-Inclusion-And-Directory-Traversal/DT-FI-Windows-Files.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/PrivEsc-Important-Windows-Locations.md",
-    "Exploitation/Reverse-Shells-Listing.md",
-    "Exploitation/Shells.md",
-    "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Application-Services.md",
-    "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Virtual-Machines.md",
-    "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Azure-Disks.md",
     "Images/azurecloudserviceresponsiblitychart.png",
-    "Linux/Linux-Commands/Linux-One-Liners-To-Rule-Them-All.md",
-    "Persistence/Rootkits/Rootkits-Defined.md",
-    "Exploitation/CVEs/Log4J.md",
-    "Reconnaissance/Passive-Information-Gathering/Source-Code/Open-Source-Code-Passive.md",
-    "Reconnaissance/Active-Information-Gathering/AWS/AWS-Bucket-Active.md",
-    "Reconnaissance/Active-Information-Gathering/DNS/DNS-Recon-Active.md",
-    "Exploitation/TTY-Spawning.md",
-    "Services/Databases/MongoDB/MongoDB.md",
-    "Services/Network-Access-Applications/UniFi.md",
     "Services/Network-Access-Applications",
-    "Coding-Scripting-Programming/Languages/JSON.md",
     "Reconnaissance/Passive-Information-Gathering/Source-Code",
     "Reconnaissance/Active-Information-Gathering/AWS",
     "Images/azureadbenefitsofazureadjoin.png",
     "APIs",
-    "Coding-Scripting-Programming/Languages/ASP",
     "Images/boopkit.png",
-    "Persistence/Rootkits",
-    "Software/EDR",
-    "Security-Enterprises/Threat-Emulation",
-    "Security-Enterprises/Attribution-And-Analysis",
     "Images/eventviewereventtypes.png",
     "Images/wwh-seriouslyireallycanstillseeyou-llmnrandwpadprimer.png",
-    "Services/Webservers/Sinatra",
     "Images/azure-k8updatenodes.png",
     "Images/robleesansoffensiveforensicstimestomping.png.png",
     "Images/robleesansoffensiveforensicstimestomping.png",

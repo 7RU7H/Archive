@@ -1,6 +1,6 @@
 # Security Policies
 
-Bruce Schneier:*"Security is a process, not a product."*  
+Bruce Schneier: *"Security is a process, not a product."*  
 
 - Assets to be protected change over time, the risk components evolve and therefore response should accordingly.
 - Each subsystem will have its own requirements and constraints, and so the risk assessment and the design of the security policy should be undertaken separately for each

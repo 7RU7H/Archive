@@ -6,15 +6,13 @@ Exercise is crucial and fundemental for Brain Hacking. First thing and mental he
 Exchange Mental Stress for Physical Stress - Absolute Bargain
 
 
-# One Box Man 
+#### One Box Man 
 
-Working towards this being a manditory minimum, by using sets, spacing them throughout the day.
+I suggest working towards this being a manditory minimum, by using sets, spacing them throughout the day - divide into sets if required
 
-100 Pressups
-100 Situps
-100 Swats
-A Jog/Run to get outside
+- 100 Pressups
+- 100 Situps
+- 100 Swats
+- A Jog/Run even just a walk to get outside 
 
-Back exercises for posture per x hours:
-Cobra yoga pose 
-Head against wall feet half a metre from the wall arch back
+- Research back exercises for posture

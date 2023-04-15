@@ -1,5 +1,7 @@
 # Cryptography 
 
+- Split 
+
 For a list of commands related to cryptography try here: [[De-Or-En-Cryption]]
 
 ## Glossary

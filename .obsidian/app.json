@@ -1,4 +1,5 @@
 {
   "alwaysUpdateLinks": true,
-  "promptDelete": false
+  "promptDelete": false,
+  "attachmentFolderPath": "Brain-Hacking/Actionables"
 }
