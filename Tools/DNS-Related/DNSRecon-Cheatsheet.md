@@ -11,6 +11,12 @@ dnsrecon -d $domain.com -D ~/list.txt -t brt # Brute force
 dnsrecon.py -n ns1.ns1.insecuredns.com -d insecuredns.com -D /usr/share/seclists/Discovery/DNS/subdomains-top1mil-5000.txt -t brt
 ```
 
+```bash
+# Standard scan
+dnsrecon -d megacorpone.com -t std
+# Brute force for subdomains
+dnsrecon -d megacorpone.com  -D $subdomainWordlist -t brt
+```
 
 ## References
 

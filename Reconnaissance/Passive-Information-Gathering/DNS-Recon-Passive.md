@@ -4,8 +4,16 @@ For [[DNS-Defined]], [[DNS-Recon-Active]]
 
 The domain registrar is responsible for maintaining the WHOIS records for the domain names it is leasing. `whois` will query the WHOIS server to provide all saved records.
 ```bash
-whois $url
-```
+# WHOIS server $ip 
+whois $domain -h $serverIP
+# Registrar Names
+# Name servers
+
+# Perform reverse lookups
+# If NS records are found and have more NS IP(s) 
+whois $ip -h $serverIP 
+# Who is hosting that IP address
+	```
 `whois` will return:
 -   Registrar WHOIS server
 -   Registrar URL

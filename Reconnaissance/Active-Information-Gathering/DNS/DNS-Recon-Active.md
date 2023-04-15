@@ -2,6 +2,8 @@
 
 [DNS](https://en.wikipedia.org/wiki/Domain_Name_System) is a distributed database responsible for translating domain names into IP addresses. [[DNS-Defined]] for conceptual stuff and for passive DNS recon [[DNS-Recon-Passive]].
 
+- Priority - DNS Priority - The lower the number, the higher the priority. [infosecinstitute -dns-hacking](https://resources.infosecinstitute.com/topic/dns-hacking/)
+
 #### Host Discovery
 
 The website [dnsdumpster](https://dnsdumpster.com/) *"is a FREE domain research tool that can discover hosts related to a domain. Finding visible hosts from the attackers perspective is an important part of the security assessment process."*
@@ -47,14 +49,25 @@ nslookup
 > 127.0.0.2
 # Try domains and subdomains
 > domain.tld
+
+# Resolve A record
+nslookup $ns.$domain.$tld
+# Resolve TXT to a specific host from the previous command output 
+nslookup -type=TXT $ns.$domain.$tld $hostIP
 ```
 
 `host` 
 ```bash
-host www.domain.com # return ip for a domain
-host -t ns $url # find nameservers for a domain
-host -t mx $url # find mailservers for a domain
-host -l $domain $ns1.$domain # List of DNS servers
+# Get A record
+host $domain
+# Detirmine subdomain existence
+host $subdomain.$domain
+# Get * record type
+host -t mx $domain
+host -t txt $domain
+host -t ns $url 
+# List of DNS servers
+host -l $domain $ns1.$domain 
 ```
 
 Parse just DNS hostnames
@@ -66,7 +79,11 @@ for server in $(host -t ns megacorpone.com | cut -d" " -f4); do host -l megacorp
 
 TL;DR - Forward lookup: query hostname for IP - What is the IP of this hostname? Foward lookup is defined as requesting an IP address of a hostname to query both a valid and an invalid hostname, if host successfully resolves a name to an IP, it could indicate a functional server. Check Seclists, [[Wordlist-Library]] and [[Wordlists-Considerations]] for comprehensive subdomain brute-forcing to  automate the forward DNS lookup of common hostnames.
 ```bash
-for ip in $(cat list.txt); do host $ip.<insert-domain-name>.com; done
+for ns in $(cat /usr/share/seclists/Discovery/DNS/$list.txt); do host $ns.$domain.$tld; done
+# Give the output from the above scan IP address with `host` from subnet range from $lowest to $highest  
+low=0
+high=255
+for ip in $(seq $low $high); do host 10.10.10.$ip; done | grep -v "not found"
 ```
 [Script](https://github.com/7RU7H/AllTheHackingScripts/blob/main/bash/forwardDNSLookup.sh)
 
@@ -161,4 +178,4 @@ site:$domain.$tld
 [ldns-walk](https//linux.die.net/man/1/ldns-walk)
 [nsec3walker](https//dnscurve.org/nsec3walker.html)
 [nsec3mapper](https//github.com/anonion0/nsec3map)
-
+[infosecinstitute -dns-hacking](https://resources.infosecinstitute.com/topic/dns-hacking/)

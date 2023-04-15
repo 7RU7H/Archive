@@ -52,6 +52,8 @@ SOA record | Stores admin information about a domain.
 SRV record | Specifies a port for specific services.
 PTR record | Provides a domain name in reverse-lookups.
 
+- Priority - DNS Priority - The lower the number, the higher the priority. [infosecinstitute -dns-hacking](https://resources.infosecinstitute.com/topic/dns-hacking/)
+
 #### Less Common Records
 
 From [Cloudflare's Learning dns-records](https://www.cloudflare.com/learning/dns/dns-records/)

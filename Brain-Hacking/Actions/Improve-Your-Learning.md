@@ -2,14 +2,84 @@
 
 This basically hack together and I think a better way to teach how to learn more effetively than [Justin Sung](https://www.youtube.com/c/JustinSung) as really the key to all learning is a compression and hyper-connectively. This a more effective way as to memorise this simple short sentence per-concept manual. 
 
+Objectives:
+1. Improve the quality of information we take in
+2.Improve the way or mode in which we receive information
+3. Improve our practice of retrieving information
+4. Improve upon self-discipline and methodology of self-critque to find flaws and schedule a solution to improve on that flaw  
+
+Concepts:
+- Cognative Load - Too much information at once
+- [Contextualised Learning](https://files.eric.ed.gov/fulltext/ED448304.pdf) - it is easiler to learn something if you are contextualising it with practice
+- [Transversal Skills Lopez and Rodriguez-Lopez, 2020)](https://ervet-journal.springeropen.com/articles/10.1186/s40461-020-00100-0](https://ervet-journal.springeropen.com/articles/10.1186/s40461-020-00100-0) 
+	- Focus on understanding:
+		- Methodology
+		- Techniques
+		- Purpose of actions
+- Demonstrative Method - modeling what is intended to be learnt 
+	- Re-enforce verification of our work - Science!  
+- [Interleaving](https://academicaffairs.arizona.edu/l2l-strategy-interleaving) - learning in context one task to for example exploit a system may actually help one understand how to detect it
+- Priming - briefing your brain with information of something that is upcoming have memories to reference and instantiate 
+- Modeling - map out material to be learnt in model of context
+
+
+TL;DR - TODOs
+
+- Check you understood what you read
+	- [[Improve-Reading]]
+- Improve Critical Thinking 
+	- [(Daniel, Lafortune, Pallascio, et al., 2005)](https://www.researchgate.net/profile/Marie-france_Daniel/publication/262849880_Modeling_the_Development_Process_of_Dialogical_Critical_Thinking_in_Pupils_Aged_10_to_12_Years/links/54ee0f110cf25238f93984dd.pdf) 
+- Create a model what you are learn
+	- [(Intel, 2012)](https://www.intel.com/content/dam/www/program/education/us/en/documents/project-design/strategies/instructionalstrategies-modeling.pdf) 
+- Ask yourself am I learning anything doing X, but also explore and experiement with cross-domain ideas; fixation on single disciplines (i.e. in Music:
+	- Music is divided into roles based on the ranges of pitch, but if you only fixate one range you do not appreciate what each instrument at each range accomplishes 
 - Practice the 4 types of learning with respect to complexity of the topic, port number need repeatition - AD exploitation requires graphing
-- Exercise: Increase your ability to take in new information, by chemical hacking your brain to learning 15% more effectively (also improves mental health, sleep schedules - the first thing a mental health profession will check if you are ill or heading toward being unwell is how much exercise you do).
-- One to four hours a day is better than 15 hours a day, but if you want to work alot then pivot and manage deep and shallower work intervals
+- Exercise: Increase your ability to take in new information, by chemical hacking your brain to learning 15% more effectively (also improves mental health, sleep schedules - the first thing a mental health profession will check if you are ill or heading toward being unwell is how much exercise you do). 
+	- [(Warner, 2006)](https://www.webmd.com/diet/news/20061103/exercise-fights-fatigue-boosts-energy) - Exercise improves almost everything
+	- [(Rodriguez, 2015)](https://www.scientificamerican.com/article/hit-the-gym-after-studying-to-boost-recall/) - Exercise after study to boost recall
+- One to four hours a day is better than 15 hours a day, but if you want to work alot then pivot and manage deep and shallower work intervals 
+- Sleep is important for learning - [(Sandoiu, 2018)](https://www.medicalnewstoday.com/articles/321161) , [(Massachusetts Institute of Technology, 2019)](https://www.sciencedaily.com/releases/2019/10/191001083956.htm) 
+- Learn by doing, remember by doing
+	- i.e. in Music: Learn all the theory, but never practice with instrument make your composition unnatuaral (the physical actualities of your limbs or organ when playing have to inform a composition); it is common for composers to hand over alot of interpretation and control to the player.
 - Listen to listen, don't listen to respond
-- Be humble 
-- Try the least smart person in the room surrounded by smarter people.
+- Be humble - masters are always humble as they understand there is always something still to humble them
+- Try to the least smart person in the room surrounded by smarter people.
+- Challenge yourself
+	- Embrace challenge and push yourself
+- Follow and practice with a master 
+	- Be kind as challenge is not a kindness
+	- Other often have better and, more importantly different ideas and methods 
+- Pick a good place to learn
+	- Sniper condition train helps Snipers improve under different stress conditions, but
+	- The same place to do X is part of informing your brain that you in a place where you do X 
+		- Do not work from bed, bed is to sleep.
+- Schedule time to experiment and improvise
+	- Experiment-and-experiment-again mindset ensures you trying different combinations and understand a further completeness of a unit of something.
+- Good Notetaking, Flashcards, etc are subjectively made, but quality is empirical
+- Retrieval Practice 
+	- Recall practice
+	- Before reaching for solution in notes or online - STOP and try and make your brain remember or solve it first, then look if you cant remember AND to check if you are correct
+	- Gentle remind yourself everything you have learnt before Sleep
+- Spaced Learning - [(Pan, 2022)](https://psychology.ucsd.edu/undergraduate-program/undergraduate-resources/academic-writing-resources/effective-studying/spaced-practice.html)
+	- Theory and Practice balanced to task
+	- Spread out deep study sessions 
+	- Exercise for 15% for 2 hours ~ 
+	- After 4 hours brief break - must lie down and close eyes to rest!
+- SQ3R and PQ4R methods 
+	- Survey, question, read, recite and review
+	- Preview, question, read, reflect, recite and review - [good for reading comprehension](https://www.verywellfamily.com/strategy-improves-reading-comprehension-2162266)
+- Feynman Technique 
+	1.  Learn a X
+	2.  Explain it to a beginner
+	3.  Identify gaps
+	4.  Return to study
 
 This will not make a genius in a week or a month, but will make a better student and teacher over the course months. It is a investment that willl last a lifetime. But with that stated you must **PRACTICE IT**, like incident response you must actually try to respond to the incident in the first place otherwise you have failed.
+
+## Attention
+
+Dual Coding - Multiple modes of the same or similar information used to learn a single unit what is to be learnt - [Cuevas, 2014](https://sciencebasedmedicine.org/brain-based-learning-myth-versus-reality-testing-learning-styles-and-dual-coding/)
+
 
 ## Time Investment 
 
@@ -99,4 +169,14 @@ Be mentored, follow along with a youtuber or streamer, get you hands on the keyb
 
 
 ## References
+
 [Justin Sung](https://www.youtube.com/c/JustinSung)
+[Cuevas, 2014](https://sciencebasedmedicine.org/brain-based-learning-myth-versus-reality-testing-learning-styles-and-dual-coding/)
+[Contextualised Learning](https://files.eric.ed.gov/fulltext/ED448304.pdf) 
+[Interleaving](https://academicaffairs.arizona.edu/l2l-strategy-interleaving) 
+[(Pan, 2022)](https://psychology.ucsd.edu/undergraduate-program/undergraduate-resources/academic-writing-resources/effective-studying/spaced-practice.html)
+[(Sandoiu, 2018)](https://www.medicalnewstoday.com/articles/321161) 
+[(Massachusetts Institute of Technology, 2019)](https://www.sciencedaily.com/releases/2019/10/191001083956.htm) 
+[(Warner, 2006)](https://www.webmd.com/diet/news/20061103/exercise-fights-fatigue-boosts-energy) 
+[(Rodriguez, 2015)](https://www.scientificamerican.com/article/hit-the-gym-after-studying-to-boost-recall/)
+[(Daniel, Lafortune, Pallascio, et al., 2005)](https://www.researchgate.net/profile/Marie-france_Daniel/publication/262849880_Modeling_the_Development_Process_of_Dialogical_Critical_Thinking_in_Pupils_Aged_10_to_12_Years/links/54ee0f110cf25238f93984dd.pdf) 

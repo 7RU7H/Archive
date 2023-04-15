@@ -1,6 +1,12 @@
-# Search-Engine Dorking/Hacking
+# Search-Engine Dorking
 
-Defined as the use of search strings and operators to refine search results. [Exploitdb has a Google Hacking Database of clever searches](https://www.exploit-db.com/google-hacking-database)
+
+
+Defined as the use of search strings and operators to refine search results.
+
+Tools to assist 
+- [Exploitdb has a Google Hacking Database of clever searches](https://www.exploit-db.com/google-hacking-database)
+- https://dorksearch.com/
 
 Google Hacking:
 ![](refinegooglehacking-tech.png)

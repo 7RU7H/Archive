@@ -4,6 +4,8 @@ Sometimes we all just need to got back to [[Red-Team-OPSEC]].
 
 ## Place to Learn, Practice and Improve
 
+Learning is a crucial part of life and especially in technological change and fields of intensive change try - [[Improve-Your-Learning]]
+
 #### TryHackMe
 
 [[TryHackMe]]
