@@ -64,6 +64,8 @@ echo "$expectHash" && md5sum $file
 echo "$expectHash" && shasum -a $algorhythm $file
 ```
 
+- [[Javascript-Cookie-Abuse]] and [[JSON-Web-Tokens]]
+
 ## Security Logging and Monitoring Failures
 
 Lack of or undisciplined logging of user activity and patterns; coupled with incident response mechanisms if there is no logging where is the evidence to lead investigation, if there are extensive logging but no responsers is there an incident. Do incident responsers sit in the logs or shit in the woods. The [[Log4J]] exploit is great example. 

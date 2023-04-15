@@ -1,22 +1,5 @@
 # Cryptography 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 For a list of commands related to cryptography try here: [[De-Or-En-Cryption]]
 
 ## Glossary
@@ -98,7 +81,6 @@ Decimal  | Binary |	Hexadecimal
 .. | .. | ..
 255	 | 	0b11111111 | 0xff
 
-
 File format conversion:
 ```bash
 iconv
@@ -125,8 +107,6 @@ C:\Windows\System32\config\*SAM
 ```
 
 
-
-
 ## Password Hashing Algorithms
 
 Where hashing is often used to protect the integrity of data. 
@@ -134,14 +114,14 @@ Where hashing is often used to protect the integrity of data.
 ```bash
 john --list=foramt | grep
 ```
-Or try tools like hashid, hash-identifier, haiti
-Or a site like [Crackstation](https://crackstation.net/), if your are working for an organisation get permission before trying their hashes against rainbow tables.
+- Or try tools like `hashid`, `hash-identifier`, `haiti`
+- Or a site like [Crackstation](https://crackstation.net/), if your are working for an organisation get permission before trying hashes against any online rainbow table.
 
-### Salting
+#### Salt
 
 A salt is an preferably random, nuique generated string, it mixed with cleartext input, then the hash is calculated for the mixed string. It is useful as the same password will produce the same hash, so to store user passwords with the potential for same password use can be avoid with salting.Salting protects against rainbow table attacks.o
 
-### Hashing passwords:
+Hashing passwords:
 ```
 import hashlib
 string = "saltedpassword"
@@ -151,7 +131,8 @@ Unix has different variations of mkpasswd
 ```
 mkpasswd -m SHA-512 foobar salt
 ```
-#### sha512 crypt
+
+sha512 crypt
 ```
 $y$j9T$F5Jx5fExrKuPp53xLKQ..1$X3DX6M94c7o.9agCG9G317fhZg9SqC.5i5rd.RhAtQ7
 ```
@@ -164,15 +145,54 @@ $y$j9T$F5Jx5fExrKuPp53xLKQ..1$X3DX6M94c7o.9agCG9G317fhZg9SqC.5i5rd.RhAtQ7
 
 Symmetic Key Algorithms use the same key for encrypting the plaintext into ciphertext and for decrypting the ciphertext back into plaintext. Key is sometimes "passphrase" synonymous with "key". Maintaining the key's secrecy is vital, if public anyone can decrypt with it - harms confidentiality as transmission of the key not the data is the issue.
 
-National Institute of Standard and Technology (NIST) published the Data Encryption Standard (DES) in 1977. DES is a symmetric encryption algorithm that uses a key size of 56 bits.
+- Beware Cipher type: Block (2d array) Cipher and Stream (1d array) Cipher
 
-NIST published the Advanced Encryption Standard (AES) in 2001 using a key 128,192,256 bits.
+National Institute of Standard and Technology (NIST) published the Data Encryption Standard (DES) in 1977. DES is a symmetric encryption algorithm that uses a key size of 56 bits. As a replacement for triple DES NIST published the Advanced Encryption Standard (AES) in 2001 using a key 128,192,256 bits. It has four transformations that  reoccur multiple times:
+-   KeyExpansion – round keys are derived from the cipher key using the [AES key schedule](https://en.wikipedia.org/wiki/AES_key_schedule "AES key schedule"). AES requires a separate 128-bit round key block for each round plus one more. [Wikipedia - AES High-level description of the algorithm](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard):
+-   Initial round key addition:
+    1.  AddRoundKey – each byte of the state is combined with a byte of the round key using [bitwise xor](https://en.wikipedia.org/wiki/Bitwise_xor "Bitwise xor").
+-   9, 11 or 13 rounds:
+    1.  SubBytes – a [non-linear](https://en.wikipedia.org/wiki/Linear_map "Linear map") substitution step where each byte is replaced with another according to a [lookup table](https://en.wikipedia.org/wiki/Rijndael_S-box "Rijndael S-box").
+    2.  ShiftRows – a transposition step where the last three rows of the state are shifted cyclically a certain number of steps.
+    3.  MixColumns – a linear mixing operation which operates on the columns of the state, combining the four bytes in each column.
+    4.  AddRoundKey
+-   Final round (making 10, 12 or 14 rounds in total):
+    1.  SubBytes
+    2.  ShiftRows
+    3.  AddRoundKey
+
+For the AES Standard read: [FIPS PUB 197](https://csrc.nist.gov/publications/detail/fips/197/final)
+
+GNU Privacy Guard 
+```bash
+# with symmetric encryption using a $CIPHER encrypt message.txt 
+gpg --symmetric --cipher-algo $CIPHER message.txt
+# Armour flag for ASCCII armoured output
+--armor
+# Decrypt with
+gpg --output original_message.txt --decrypt message.gpg
+```
+
+OpenSSL Project
+```bash
+# Openssl is a powerful tool 
+openssl <(standard|message digest|cipher)-command> <flags>
+# Encrypting
+openssl aes-256-cbc -e -in message.txt -out encrypted_message
+# Decrypting
+openssl aes-256-cbc -d -in encrypted_message -out original_message.txt
+
+# improving encryption with iterations and using Password-Based Key Derivation Function 2 (PBKDF2);
+openssl aes-256-cbc -pbkdf2 -iter 10000 -e -in message.txt -out encrypted_message
+# the decryption will require the same flags that changed the encryption method
+openssl aes-256-cbc -pbkdf2 -iter 10000 -d -in encrypted_message -out original_message.txt
+```
 
 ## Asymmetric Encryption
 
 Theory
 - Public key to distribute 
-- Private key that is confidential
+- Private key is kept confidential
 - `$A` (Holds prviate to decrypt, and public key to distribute) ` -> exchange  ->` `$B` (Holds public key to encrypt) 
 ```bash
 gpg --gen-key
@@ -195,7 +215,7 @@ SUPER
 Asymmetric key-pairs can also be used to sign and verify messages.
 A will sign the message with private key and B verifies it with the public key - Signing != sending the private key!!
 
-### Asymmetric Encryption Maths
+#### Asymmetric Encryption Mathematics
 
 Prime Factorisation:
 x * y = z # z being the unqiue product of two prime numbers, so for:
@@ -206,7 +226,7 @@ Using n as base, perform additional maths to out two special numbers e and d - s
 Public key as a tuple(n,e)
 Private key as a tuple(n,d)
 
-### Asymmetric Encrypted Bind Shells
+#### Asymmetric Encrypted Bind Shells
 
 Encrypted communication rely on the Secure Sockets Layer(SSL)
 
@@ -230,7 +250,7 @@ socat OPENSSL-LISTEN:443,cert=bind_shell.pem,verify=0,fork EXEC:/bin//bash
 socat - OPENSSL:$IP:$PORT,verify=0 <cmd>
 ```
 
-### SSL and HTTPS
+#### SSL and HTTPS
 
 SSL encryption procedures leverage both asymmetric and symmetric encryption. 
 1. Server and client agree on a symmetric session key encrypted by the client with a server's public key
@@ -243,15 +263,23 @@ Transport layer security(TLS) - [[TLS-SSL]]
 
 ## Ciphers
 
-### Caesar Ciphers
+#### Block Ciphers
+
+Algorithm that use a dimensional array to encrypt data
+
+#### Stream Ciphers
+
+Algorithm that use a 1 dimensional array to encrypt data
+
+#### Caesar Ciphers
 
 ROT-13 with tr
-```
+```bash
 tr 'A-Za-z' 'N-ZA-Mn-za-m' # encode
 tr 'N-ZA-Mn-za-m' 'A-Za-z' # decode
 ```
 
-### XOR Cipher
+#### XOR Cipher
 
 Xor cipher is based off the bitwise XOR operation.
 A xor 0  = A
@@ -269,15 +297,20 @@ Plaintext | Key | Ciphertext
 1 | 0 | 1
 1 | 1 | 0 
 
-### Blowfish
+#### Blowfish
 
 64 bit block cipher 
 ```bash
 gpg -c --cipher-algo blowfish blowfish.plain
 gpg --decrypt blowfish.plain.gpg
-
 ```
 
 
-
 ## References
+
+[THM Room Introduction to Cryptography](https://tryhackme.com/room/cryptographyintr)
+[Public Key Cryptography - Computerphile](https://www.youtube.com/watch?v=GSIDS_lvRv4)
+[AES Explained (Advanced Encryption Standard) - Computerphile](https://www.youtube.com/watch?v=O4xNJsjtN6E)
+[Encryption & Entropy - Computerphile](https://www.youtube.com/watch?v=8VSuwDG4bhw)
+[Secret Key Exchange (Diffie-Hellman) - Computerphile](https://www.youtube.com/watch?v=NmM9HA2MQGI)
+[Wikipedia - AES](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard)
