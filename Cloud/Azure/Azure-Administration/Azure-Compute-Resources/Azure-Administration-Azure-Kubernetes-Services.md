@@ -114,6 +114,17 @@ kubectl create namespace kured
 helm install my-release kubereboot/kured --namespace kured --set nodeSelector."kubernetes\.io/os"=linux
 ```
 
+## Calico network policies
+
+[Calico network policies](https://docs.tigera.io/calico/latest/network-policy/get-started/calico-policy/calico-network-policy) in a cluster in an [Azure Kubernetes Server (AKS)](https://learn.microsoft.com/en-us/azure/aks/hybrid/calico-networking-policy) deployment are used to enforce which network traffic is allowed or denied using rules in Calico network policy.
+
+```powershell
+x = "a name"
+OS = # Linux, Windows depending on the node OS
+# Apply a Calico Network Policy
+kubectl apply -f policy-$x-$OS.yaml
+```
+
 ## Workflows
 
 Check if registered
@@ -194,3 +205,4 @@ kubectl delete deplyment ngnix-deployment
 [Microsoft Technical Documentation](https://learn.microsoft.com/en-us/docs/)
 [Microsoft Learn](https://learn.microsoft.com/en-us/)
 [Microsfot Learn: AKS Kured](https://learn.microsoft.com/en-us/azure/aks/node-updates-kured)
+[Get started with Calico network policy | Calico Documentation (tigera.io)](https://docs.tigera.io/calico/latest/network-policy/get-started/calico-policy/calico-network-policy)

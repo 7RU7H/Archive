@@ -8,7 +8,7 @@ The reasoning for the location of this file in the directory tree is because unl
 
 [[MySQL-Hacking]]
 [[MySQL-Cheatsheet]]
-[[NoSQL-SQLI]]
+[[NoSQLInjection]]
 [[SQLmap-CheatSheet]]
 [[SQLInjection]]
 [[MSSQL-Hacking]]

