@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Web-Application-Hacking/XXE/XXE-Injection.md",
+                "file": "Reconnaissance/Active-Information-Gathering/SNMP/SNMP-Recon-Cheatsheet.md",
                 "mode": "source",
                 "source": false
               }
@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Windows/PrivEsc-Important-Windows-Locations.md",
+                "file": "Linux/Linux-Commands/Linux-Module-Commands.md",
                 "mode": "source",
                 "source": false
               }
@@ -92,7 +92,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -150,7 +150,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Web-Application-Hacking/XXE/XXE-Injection.md",
+                "file": "Linux/Linux-Commands/Linux-Module-Commands.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -178,13 +178,18 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "aa8c2fe19c3c014c",
+  "active": "f0d19e7362e54a4a",
   "lastOpenFiles": [
-    "Server-Side-Request-Forgery.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/PrivEsc-Important-Windows-Locations.md",
+    "Reconnaissance/Active-Information-Gathering/SNMP/SNMP-Recon-Cheatsheet.md",
+    "Security-Enterprises/CTF-Platforms/TryHackMe.md",
+    "Coding-Scripting-Programming/Vulnerable-Functions/Vulnerable-PHP-Functions.md",
+    "Coding-Scripting-Programming/Languages/PHP/Useful_PHP.md",
     "Web-Application-Hacking/XXE/XXE-Injection.md",
+    "Server-Side-Request-Forgery.md",
     "SSRF.md",
     "Web-Application-Hacking/SQLi/NoSQLInjection.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/PrivEsc-Important-Windows-Locations.md",
     "Coding-Scripting-Programming/XML-Basics.md",
     "Services/Databases/MongoDB/MongoDB.md",
     "Services/Databases/Database-Hacking.md",
@@ -201,17 +206,12 @@
     "Security-Enterprises/For-Individuals/Praxis-And-Practice.md",
     "Security-Enterprises/Secure-Architectures/Security-Strategies.md",
     "Security-Enterprises/Secure-Architectures/Security-Principles.md",
-    "Security-Enterprises/Secure-Architectures/Security-Controls.md",
-    "Security-Enterprises/Secure-Architectures/Security-Policies.md",
-    "Security-Enterprises/Security-Principles.md",
     "Security-Enterprises/Untitled",
     "Security-Enterprises/For-Individuals",
-    "Brain-Hacking/Actions/Learning-To-Continue-Learning-Better.md",
     "Brain-Hacking/Talk-Notes",
     "Brain-Hacking/Philosphy",
     "Brain-Hacking/Concepts",
     "Brain-Hacking/Actions",
-    "Brain-Hacking/Actions/Personality.md",
     "Images/azslotswappedsettingsvsslotspecificsettings.png",
     "Images/azurecloudserviceresponsiblitychart.png",
     "Services/Network-Access-Applications",

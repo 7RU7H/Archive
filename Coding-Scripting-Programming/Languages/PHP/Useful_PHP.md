@@ -60,6 +60,7 @@ Base64 PHP decoder
 ```
 
 ## Vulnerable Functions
+
 [[Vulnerable-PHP-Functions]]
 
 ## Webserver Exfiltratation

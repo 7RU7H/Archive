@@ -124,6 +124,28 @@ gzip -d file.gz		decompress file
 play -n -c1 synth whitenoise band -n 100 20 band -n 50 20 gain +30 fade h 1 86400 1
 ```
 
+#### rsync
+[Rsync - Jay LaCroix](https://www.youtube.com/watch?v=GqSxR93xK6E), [Rsync Man](https://linux.die.net/man/1/rsync)
+```bash
+df -h # Check the volumes
+lost+found # directory for rsync 
+# Check if it could send data with dry run
+rsync --dry-run $flags $source $destination 
+# -n same as --dry-run
+# -a archive mode
+# -v verbose
+# -z compress
+rsync -avz /source $user@$IP:/destination
+# -4 -6 for prefer IPv4 or IPv6
+# -u skipp newer file on destination!
+# -r recurse into directories
+# -d no recursive
+
+
+# GTFObins - shell, suid and sudo :)
+$sudo rsync -e sh -c "sh $revshell" # suid: "sh -p"
+```
+[gtfobins rsync](https://gtfobins.github.io/gtfobins/rsync/#shell)
 
 #### sed
 ```bash
@@ -254,8 +276,11 @@ To login via http or ftp
 ```
 
 #### xargs
-For non-echo compatible chain piping 
+
+[Xargs DistroTube](https://www.youtube.com/watch?v=rp7jLi_kgPg) - take stdin as parametres for commands safely for application that do not by default allow stdin as args. For non-echo compatible chain piping 
 ```bash
+# ls, mv, echo - all cant take stdin
+# cmd1 | xargs cmd2
 Usage: <cmd1> | xargs <cmd2> # default cmd is echo
 
 -t		# verbose print command before and with its output
@@ -275,17 +300,34 @@ Usage: <cmd1> | xargs <cmd2> # default cmd is echo
 -l		# similar to -L but defaults to at most one non-blank input line if MAX-LINES is not specified
 -x		# exit command execution if size specified is exceede
 
-ls | cut -d. -f1 | xargs -I {} mv {}.txt {}.jpg # change all the file extensions in e directory
-find / -type f -name "*.txt" | xargs rm # remove all .txt files from a directory set by find
-cat file | xargs -I files -t sh -c “touch files; chmod 400 files” # create all the files from a list of names and mkae them all read-only permissions
-ls | xargs -I word -n 1 -t sh -c "echo word >> shortrockyou; rm word" # create filelisting of all the files in a directory then delete the files
-
 --		# escape empty flags!
 #for example:
 <cmd> "-- --checkpoint-action=exec=sh"
 
+# 1 - 5 all on one line - both do the same as xargs default to echo
+seq 5 | xargs
+seq 5 | xargs echo 
+# -t get output with cmd and output in two lines
+seq 5 | xargs -t 
+# Specify arguments -I [pattern] like {} below:
+# file.txt contains hostnames: "htb thm ospg" - no space with each hostname on newline   
+cat file.txt | xargs -I {} touch {}.txt 
+ls | cut -d. -f1 | xargs -I {} mv {}.txt {}.jpg # change all the file extensions in e directory
+find / -type f -name "*.txt" | xargs rm # remove all .txt files from a directory set by find
+cat file | xargs -I files -t sh -c “touch files; chmod 400 files” # create all the files from a list of names and make them all read-only permissions
+ls | xargs -I word -n 1 -t sh -c "echo word >> shortrockyou; rm word" # create filelisting of all the files in a directory then delete the files
+
+# Specify a max number of arguments per line
+ls | xargs -n 3
+# Maximum number a procs at a time
+ls | xargs -n 1 -P 2 bash -c 'echo $0; sleep 1'  
+# Find and Xargs and grep all configuration files
+find . -type f -name "*.*onf*" | xargs grep -ie 'passw'
+
+
 xargs < file.txt # join a file to one line
 ```
+[Inspiration for the Find,Xargs,grep example](https://phoenixnap.com/kb/xargs-command)
 
 #### xxd	
 Create hexdump of a file
