@@ -4,4 +4,4 @@ If you are fortunate or really need Burp Pro, this article may eventual fill up 
 
 ## Plugins to get
 
-- Dom invader - Find all the XXSes
+- Dom invader - Find all the XSSes

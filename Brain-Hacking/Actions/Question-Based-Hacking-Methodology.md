@@ -83,7 +83,7 @@ Information - the user Alice has X SID that then indicates Administrative Group
 				- What Input Validation?
 					- Which characters?
 						- URL encoded ip address in XSS payloads?
-				- Have you tried multiple payloads to verify (non-)existence of XXS, then tools? 
+				- Have you tried multiple payloads to verify (non-)existence of XSS, then tools? 
 			- Deserialization Attacks?
 		- Vulnerable webserver version?
 		- Webserver generic issues by type
@@ -111,7 +111,7 @@ Information - the user Alice has X SID that then indicates Administrative Group
 		- What does the error mean? Just google it! 
 	- How is data reflected back?
 		- Did you fuzz for special bad characters?
-		- XXS, SSTI, etc?
+		- XSS, SSTI, etc?
 ... 
 - SQLI?
 	- Can you create an Error and fix it?

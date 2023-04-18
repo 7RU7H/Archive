@@ -1,4 +1,4 @@
-# XSS
+[Types of XSS](https://owasp.org/www-community/Types_of_Cross-Site_Scripting) either client-side or server-side
 Unsanitized data can allow attacker to inject client side scripts into webpages and execute malicious code.
 
 XSS Type | Description | Potential Targets
@@ -47,7 +47,7 @@ Bypass payload size restrictions by [linking to an external Javascript file](htt
 
 ## XSS Polyglots
 ```javascript
-jaVasCript:/*-/*`/*\`/*'/*"/**/(/* */onerror=alert('XSS') )//%0D%0A%0d%0a//</stYle/</titLe/</teXtarEa/</scRipt/--!>\x3csVg/<sVg/oNloAd=alert('XXS')//>\x3e
+jaVasCript:/*-/*`/*\`/*'/*"/**/(/* */onerror=alert('XSS') )//%0D%0A%0d%0a//</stYle/</titLe/</teXtarEa/</scRipt/--!>\x3csVg/<sVg/oNloAd=alert('XSS')//>\x3e
 ```
 
 ## SKing7's XSS Filter Evasion Cheat Sheet
@@ -60,6 +60,7 @@ This cheat sheet lists a series of XSS attacks that can be used to bypass certai
 [Owasp](https://owasp.org/www-community/attacks/xss/)
 [XSS Prevention Cheatsheet from OWASP](https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html)
 [DOM XSS Prevention Cheatsheet from OWASP ](https://cheatsheetseries.owasp.org/cheatsheets/DOM_based_XSS_Prevention_Cheat_Sheet.html)
-[XXS Wiki](https://en.wikipedia.org/wiki/Cross-site_scripting)
+[XSS Wiki](https://en.wikipedia.org/wiki/Cross-site_scripting)
 [sking7](https://sking7.github.io/articles/218647712.html)
 [Bankrobber Ippsec Video](https://www.youtube.com/watch?v=zYmA9ECuCio)
+[Owasp Types of XSS](https://owasp.org/www-community/Types_of_Cross-Site_Scripting)

@@ -23,6 +23,7 @@ mongo "mongodb://localhost:27017"
 > show dbs;
 > show tables;
 > show collections;
+// .$table.function()
 > db.system.keys.find();
 > db.users.find();
 > db.getUsers();

@@ -56,9 +56,9 @@ When using [[Burpsuite-Helpsheet]], you may need to configure the types Burp int
 1. Extension validation - only want a .specific extension, can append **after** or **before**
 	1. Check for .phpX and .phar variations
 2. File type filtering 
-	1. MIME(**M**ultipurpose **I**nternet **M**ail **E**xtension) validation 
+	1. MIME (**M**ultipurpose **I**nternet **M**ail **E**xtension) validation 
 	2. Magic number validation - first bytes of file, `hexedit` to edit in hex.
-3. File length filtering -  checks on file length
+3. File length filtering - checks on file length
 4. File name filtering - bad chars like control chars, slashes, null bytes
 5. File content filtering - checks file content
  

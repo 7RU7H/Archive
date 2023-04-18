@@ -13,98 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Brain-Hacking/Actions/Learning-To-Hack.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "3891b57b3c0342f6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Web-Application-Hacking/SQLi/NoSQLInjection.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "aa8c2fe19c3c014c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Reconnaissance/Active-Information-Gathering/SNMP/SNMP-Recon-Cheatsheet.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f0d19e7362e54a4a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cloud/Cloud-Hacking/Azure-Hacking.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "739053e602006920",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cloud/Cloud-Hacking/Azure-Hacking.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8b7cf91bbba98323",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Coding-Scripting-Programming/XML-Basics.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6cd7b864efff8861",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Brain-Hacking/Actions/Improve-Your-Learning.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f565848a5d7f2776",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Reconnaissance/Passive-Information-Gathering/DNS-Recon-Passive.md",
+                "file": "Web-Application-Hacking/XSS-Cheatsheet.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -133,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "NoSQL",
+                "query": "XXS",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -146,7 +61,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 405.5
+    "width": 350.5
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -162,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cloud/Cloud-Hacking/Azure-Hacking.md",
+                "file": "Web-Application-Hacking/XSS-Cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -190,17 +105,26 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "739053e602006920",
+  "active": "848f0c7e9821375a",
   "lastOpenFiles": [
+    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/File-Transfers.md",
+    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Linux-File-Transfers.md",
+    "Services/Databases/MongoDB/MongoDB.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/Important-Linux-Locations.md",
+    "Brain-Hacking/Actions/Learning-To-Hack.md",
+    "Cloud/Cloud-Hacking/Azure-Hacking.md",
+    "Reconnaissance/Active-Information-Gathering/SNMP/SNMP-Recon-Cheatsheet.md",
+    "Web-Application-Hacking/XSS-Cheatsheet.md",
+    "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
+    "Tools/Burpsuite/Burpsuite-Pro-Version.md",
+    "Web-Application-Hacking/Upload-Vulnerabilities.md",
     "Cloud/Cloud-Hacking/Azure-Hacking-Notes.md",
     "Cloud/Cloud-Hacking/Cloud-Hacking-Tooling.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
-    "Cloud/Cloud-Hacking/Azure-Hacking.md",
     "Security-Enterprises/CTF-Platforms/TryHackMe.md",
     "Linux/Linux-Commands/Linux-Module-Commands.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
     "Post-Exploitation/Privilege-Escalation/Windows/PrivEsc-Important-Windows-Locations.md",
-    "Reconnaissance/Active-Information-Gathering/SNMP/SNMP-Recon-Cheatsheet.md",
     "Coding-Scripting-Programming/Vulnerable-Functions/Vulnerable-PHP-Functions.md",
     "Coding-Scripting-Programming/Languages/PHP/Useful_PHP.md",
     "Web-Application-Hacking/XXE/XXE-Injection.md",
@@ -208,16 +132,7 @@
     "SSRF.md",
     "Web-Application-Hacking/SQLi/NoSQLInjection.md",
     "Coding-Scripting-Programming/XML-Basics.md",
-    "Services/Databases/MongoDB/MongoDB.md",
     "Services/Databases/Database-Hacking.md",
-    "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Azure-Kubernetes-Services.md",
-    "Brain-Hacking/Actions/Exercise.md",
-    "Reconnaissance/Passive-Information-Gathering/DNS-Recon-Passive.md",
-    "Brain-Hacking/Actions/Learning-To-Hack.md",
-    "Reconnaissance/Passive-Information-Gathering/Search-Engine-Dorking.md",
-    "Networks/Network-Theory/Network-Protocols/DNS-Defined.md",
-    "Reconnaissance/Active-Information-Gathering/DNS/DNS-Recon-Active.md",
-    "Tools/DNS-Related/DNSRecon-Cheatsheet.md",
     "Security-Enterprises/Untitled",
     "Security-Enterprises/For-Individuals",
     "Brain-Hacking/Talk-Notes",
