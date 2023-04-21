@@ -1,7 +1,7 @@
 # SQLMAP
 This is going to just the help page until I passed OSCP and most to clean up other SQLi related files.
 
-## BURP plus SQLMap
+## Burp plus SQLMap
 Catch request -> right-click -> Save item
 sqlmap -r filename
 

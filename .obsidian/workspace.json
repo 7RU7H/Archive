@@ -13,13 +13,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Web-Application-Hacking/XSS-Cheatsheet.md",
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ea276d4b0f533bb4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Exploitation/Weaponizing-Vulnerabilities.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "fe7d1179bb572a43",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/Crackmapexec/Crackmapexec-Cheatsheet.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -77,7 +102,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Web-Application-Hacking/XSS-Cheatsheet.md",
+                "file": "Tools/Crackmapexec/Crackmapexec-Cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,8 +130,15 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "848f0c7e9821375a",
+  "active": "fe7d1179bb572a43",
   "lastOpenFiles": [
+    "Exploitation/Weaponizing-Vulnerabilities.md",
+    "Post-Exploitation/Privilege-Escalation/Privilege-Escalation.md",
+    "README.md",
+    "Cloud/Cloud-Hacking/Cloud-Hacking-Tooling.md",
+    "Tools/Web-App/SQLmap-CheatSheet.md",
+    "Web-Application-Hacking/SQLi/SQLInjection.md",
+    "Web-Application-Hacking/XSS-Cheatsheet.md",
     "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
     "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/File-Transfers.md",
     "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Linux-File-Transfers.md",
@@ -115,12 +147,10 @@
     "Brain-Hacking/Actions/Learning-To-Hack.md",
     "Cloud/Cloud-Hacking/Azure-Hacking.md",
     "Reconnaissance/Active-Information-Gathering/SNMP/SNMP-Recon-Cheatsheet.md",
-    "Web-Application-Hacking/XSS-Cheatsheet.md",
     "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
     "Tools/Burpsuite/Burpsuite-Pro-Version.md",
     "Web-Application-Hacking/Upload-Vulnerabilities.md",
     "Cloud/Cloud-Hacking/Azure-Hacking-Notes.md",
-    "Cloud/Cloud-Hacking/Cloud-Hacking-Tooling.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
     "Security-Enterprises/CTF-Platforms/TryHackMe.md",
     "Linux/Linux-Commands/Linux-Module-Commands.md",
@@ -128,11 +158,6 @@
     "Coding-Scripting-Programming/Vulnerable-Functions/Vulnerable-PHP-Functions.md",
     "Coding-Scripting-Programming/Languages/PHP/Useful_PHP.md",
     "Web-Application-Hacking/XXE/XXE-Injection.md",
-    "Server-Side-Request-Forgery.md",
-    "SSRF.md",
-    "Web-Application-Hacking/SQLi/NoSQLInjection.md",
-    "Coding-Scripting-Programming/XML-Basics.md",
-    "Services/Databases/Database-Hacking.md",
     "Security-Enterprises/Untitled",
     "Security-Enterprises/For-Individuals",
     "Brain-Hacking/Talk-Notes",

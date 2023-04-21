@@ -20,7 +20,7 @@ Invented by [Paul Pols](https://www.linkedin.com/in/paulpols) The Unified Kill C
 8. Command and Control ([MITRE Tactic TA0011](https://attack.mitre.org/tactics/TA0011/)) - [[C2-Matrix]]
 9. Pivoting ([MITRE Tactic TA0008](https://attack.mitre.org/tactics/TA0008/)) - [[Port-Redirection-And-Tunneling]]
 11. Discovery ([MITRE Tactic TA0007](https://attack.mitre.org/tactics/TA0007/)) - [[Network-Infrastructure-Enumeration]]
-12. Privilege Escalation - [[Privilege-Escalation-Defined]]
+12. Privilege Escalation - [[Privilege-Escalation]]
 13. Credential Access ([MITRE Tactic TA0006](https://attack.mitre.org/tactics/TA0006/)) [[AD-Credential-Harvesting]]
 14. Execution ([MITRE Tactic TA0002](https://attack.mitre.org/tactics/TA0002/))
 15. Lateral Movement ([MITRE Tactic TA0008](https://attack.mitre.org/tactics/TA0008/)) [[Lateral-Movement]]
