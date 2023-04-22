@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/Crackmapexec/Crackmapexec-Cheatsheet.md",
+                "file": "Coding-Scripting-Programming/Languages/Bash/Useful_Bash.md",
                 "mode": "source",
                 "source": false
               }
@@ -102,7 +102,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/Crackmapexec/Crackmapexec-Cheatsheet.md",
+                "file": "Coding-Scripting-Programming/Languages/Bash/Useful_Bash.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,6 +132,7 @@
   },
   "active": "fe7d1179bb572a43",
   "lastOpenFiles": [
+    "Tools/Crackmapexec/Crackmapexec-Cheatsheet.md",
     "Exploitation/Weaponizing-Vulnerabilities.md",
     "Post-Exploitation/Privilege-Escalation/Privilege-Escalation.md",
     "README.md",
@@ -157,7 +158,6 @@
     "Post-Exploitation/Privilege-Escalation/Windows/PrivEsc-Important-Windows-Locations.md",
     "Coding-Scripting-Programming/Vulnerable-Functions/Vulnerable-PHP-Functions.md",
     "Coding-Scripting-Programming/Languages/PHP/Useful_PHP.md",
-    "Web-Application-Hacking/XXE/XXE-Injection.md",
     "Security-Enterprises/Untitled",
     "Security-Enterprises/For-Individuals",
     "Brain-Hacking/Talk-Notes",
