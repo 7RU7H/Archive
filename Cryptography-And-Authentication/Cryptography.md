@@ -1,6 +1,6 @@
 # Cryptography 
 
-- Split 
+- Note Split out
 
 For a list of commands related to cryptography try here: [[De-Or-En-Cryption]]
 
@@ -192,6 +192,8 @@ openssl aes-256-cbc -pbkdf2 -iter 10000 -d -in encrypted_message -out original_m
 
 ## Asymmetric Encryption
 
+Asymmetric encryption can solve integrity, authenticity and nonrepudiation
+
 Theory
 - Public key to distribute 
 - Private key is kept confidential
@@ -214,19 +216,46 @@ SUPER
 1. E = Encryption-key of 
 1. R = Receiver.
 
+```goat
+Alice -> Bob
+1. Alice encrypts with Bob's public key
+2. Bob decrypts with Bob's private key
+Bob  -> Alice
+1. Bob encrypts with Alice's public key
+2. Alice decrypts with Alice's private key
+```
+
 Asymmetric key-pairs can also be used to sign and verify messages.
 A will sign the message with private key and B verifies it with the public key - Signing != sending the private key!!
 
 #### Asymmetric Encryption Mathematics
 
-Prime Factorisation:
-x * y = z # z being the unqiue product of two prime numbers, so for:
-primes p,q
-product n
+RSA got its name from its inventors, Rivest, Shamir, and Adleman
 
-Using n as base, perform additional maths to out two special numbers e and d - such that their properties are relative to n
-Public key as a tuple(n,e)
-Private key as a tuple(n,d)
+Prime Factorisation:
+```bash
+x * y = z # z being the unqiue product of two prime numbers, so for:
+primes={p,q}
+product=n
+
+# Using n as base:
+# Perform additional maths to output two special numbers e and d 
+# !! such that their properties are relative to n
+# Public key as a:
+tuple(n,e)
+# Private key as a: 
+tuple(n,d)
+
+# THM - to see real values for p and q:
+# Generate a RSA
+openssl genrsa -out private-key.pem 2048
+# Using RSA make public key from private key
+openssl rsa -in private-key.pem -pubout -out public-key.pem
+# For the values of:
+# p, q, n, e, d := prime1, prime2, modulus, publicExponent, publicExponent
+# in the following command
+openssl rsa -in private-key.pem -text -noout
+```
 
 #### Asymmetric Encrypted Bind Shells
 

