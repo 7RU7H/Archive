@@ -401,6 +401,17 @@ b'\xff\x01'
 
 ```
 
+Pwntools SOCKS proxy [xct solution to HTB retired machine](https://www.youtube.com/watch?v=w2K-bQNs3cg)
+```python
+from pwn import *
+
+context.proxy = (sock.SOCK4, localhost, 9090)
+# Functional code can start here
+p = remote('localhost', 910, level='info')
+# Functional code does here
+# Then end with p.interactive() 
+p.interactive()
+```
 
 To un-pickle the data you can: [Ref](https://stackoverflow.com/questions/24906126/how-to-unpack-pkl-file)
 ```python

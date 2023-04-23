@@ -3,6 +3,7 @@
 File Inclusion facilitation stems from Directory traversal vulnerabities. Directory traversal or path path traversal are identifiable by an ability to manipulate file paths with cli-esque: `../` or `..\` characters to change directory from the webpage beeing attacked. For [[Log-Poisoning]]
 
 ## Indication of Vulnerability
+
 Locate parameteres and test for manipulation and arbitrary file reading.
 1. URL query strings
 	1. file extensions in URL query strings
@@ -13,6 +14,7 @@ Readable files by the `www-data` or account used to host the web server can be t
 Warning messages can then reveal which functions are used in invalid parameter passing of one the above files.
 
 ## Traversal encoding:
+
 Remember this is a guide to ideas of how to encode lfi, encoding payloads on the fly not from here.
 ```
 ../
@@ -34,11 +36,13 @@ Remember this is a guide to ideas of how to encode lfi, encoding payloads on the
 ```
 
 ##  File inclusion Types
+
 Local File Inclusion are occurent when the included file is present on the web server; Remote File Inclusion when a file is loaded from a remote source. Each is dependent of the language the  application is written in and server configuration.
 
 For Windows files [[DT-FI-Windows-Files]]; for Linux files [[DT-FI-Linux-Files]]
 
 ## Indication of FIs
+
 Locate parameteres and test for manipulation and arbitrary file execution.
 
 Rabbit holes \/ Pitfalls:
@@ -46,6 +50,7 @@ Rabbit holes \/ Pitfalls:
 2. Routing and firewall rules regarding **ATTACKER PORT USAGE!** for connecting back to local attacking IP
 
 ## Testing
+
 1. Invalid input
 2. Regular page - index.php
 3. Imply filter `php://filter/convert.base64-encode/resource=` to exfil php source code
@@ -189,6 +194,7 @@ for x in usernames:
 
 
 ## References
+
 [certcube](https://blog.certcube.com/detailed-cheatsheet-lfi-rce-websheels/)
 [Kory Kyzar](https://gist.github.com/korrosivesec)
 [rapid7](https://www.rapid7.com/blog/post/2016/07/29/pentesting-in-the-real-world-local-file-inclusion-with-windows-server-files/)

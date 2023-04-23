@@ -64,6 +64,8 @@ Information - the user Alice has X SID that then indicates Administrative Group
 	- CIDR ranges 
 	- Cloud providers
 - External Network
+	- Strange/Custom ports?
+		- What do common extractions with CLI tools suggest about this ports use? -  `curl`, `telnet`, `nc`
 
 - Web
 	- Have you pressed `[CTRL + F12]` yet? - Browser `Inspect` does not show HTML encoded characters
@@ -96,6 +98,10 @@ Information - the user Alice has X SID that then indicates Administrative Group
 		- Fuzzed with Special chararcters on all end points - [[FFUF-Cheatsheet]]?
 	- CMS 
 	- Does the website use a database for storage?
+	- Webserver default Admin Login panels?
+		- Default credentials?
+		- Reused credentials?
+		- Insecure credentials?
 	- Where can input be provided?
 		- What input?
 		- Where does the input go?
@@ -107,11 +113,20 @@ Information - the user Alice has X SID that then indicates Administrative Group
 	- Do any parameters call non-local resources?
 		- Does the non local request have it only parameters
 		- `ffuf -request search.req -request-proto http -w special-chars.txt -mc all` - which characters cause what issue that indicate what about the context? 
-	- Error text 
-		- What does the error mean? Just google it! 
-	- How is data reflected back?
-		- Did you fuzz for special bad characters?
-		- XSS, SSTI, etc?
+		- What data returns from the testing the parameter?
+			- LFI? Can you read disk/memory?
+			- RFI? Can you get remote resources? - Internal && External
+			- SSRF? Can you request known resources - ports, files, webpages?
+			- XSS? Can you execute javascript scripting?
+			- SSTI? Can you exploit the template engines access to system?
+			- (no)SQLI? Can you create error code enough to PoC interaction with database?  
+			- CMDi? Can you execute with `& CMD` - windows  or `; CMD` - linux?
+			- IDOR? Can you deserialize or decoded data; or modify data to change your object context?  
+			- Error text 
+				- What does the error mean? Just google it! 
+			- How is data reflected back?
+				- Did you fuzz for special bad characters?
+				- XSS, SSTI, etc?
 ... 
 - SQLI?
 	- Can you create an Error and fix it?
