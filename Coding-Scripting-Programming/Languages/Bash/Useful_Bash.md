@@ -246,7 +246,7 @@ echo ${!array[@]}
 ```bash
 sudo bash -c ""
 $(declare -p parametres; declare -f functions) # put code here run code"
-ssh remotehote "
+ssh remotehost "
 $(declare -p parametres; declare -f functions) # put code here run code"
 ```
 
@@ -290,7 +290,6 @@ else
     fi
 fi
 ```
-
 
 ## Binary to Decimal Conversion
 

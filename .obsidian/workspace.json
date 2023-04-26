@@ -18,21 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "d52b20cd18d85452",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -61,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "False Positives",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -70,7 +57,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -90,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
+                "file": "Exploitation/CVEs/CVE-2021-41773.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,8 +106,12 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "d52b20cd18d85452",
+  "active": "904463d60d8efa8d",
   "lastOpenFiles": [
+    "Coding-Scripting-Programming/Languages/Bash/Useful_Bash.md",
+    "Exploitation/CVEs/CVE-2021-41773.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+    "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
     "Reconnaissance/Active-Information-Gathering/Vulnerability-Analysis/Vulnerability-Scanning.md",
     "Tools/Useful-Software/Nessus.md",
     "Web-Application-Hacking/Web-Concepts/HTLM-Defined.md",
@@ -134,9 +126,7 @@
     "Cryptography-And-Authentication/Password-Attacks/Password-Attacks.md",
     "Coding-Scripting-Programming/Languages/Python/Useful_Python.md",
     "Linux/Linux-Commands/Linux-Compression-Commands.md",
-    "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
     "Persistence/Linux-Persistence.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
     "Web-Application-Hacking/File-Inclusion-And-Directory-Traversal/File-Inclusion-And-Directory-Traversal.md",
     "Reverse-Engineering/Reverse-Engineering-Tools.md",
     "Tools/Binary-Exploitation-Tools/Pwntools.md",
@@ -145,8 +135,6 @@
     "Tools/Useful-Software/Chisel.md",
     "Services/Docker/Docker-Hacking.md",
     "Cryptography-And-Authentication/Cryptography.md",
-    "README.md",
-    "Exploitation/Weaponizing-Vulnerabilities.md",
     "Security-Enterprises/For-Individuals",
     "Brain-Hacking/Talk-Notes",
     "Brain-Hacking/Philosphy",
