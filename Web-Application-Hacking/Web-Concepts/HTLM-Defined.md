@@ -1,5 +1,6 @@
 # HTML 
-HYPER TEXT MARKUP LANGUAGE(HTML)
+
+Hypertext Markup Language (HTML)
 ```html
 <tag is keyword wrapped in bracket> </closing tag>
 <html> Defines the beginning and end of an HTML document. </html>
@@ -15,10 +16,20 @@ HYPER TEXT MARKUP LANGUAGE(HTML)
                 <input> It represents functionality trusted to the user </input>
                 <input type="hidden"> inputs can be typecast </input>
 				<input> "Hidden", set by devs, exposable with devtools </input>
+				<table>
+					<tr> <!-- table row -->
+						<th>TableHeader</th>
+						<td scope="row" > Table datacell! </td>
+					</tr>
+				<table/>
 				<img>: Defines an image.
 				<br> /* Line Break */
 				<p> Defines the start and end of a paragraph </p>
-				/* This a comment this symbol: => is a line break */			                    
+				<!-- This a comment this symbol: => is a line break -->		                    
 ```
 
 See [[Basic-CSS]] of understanding of how CSS prettifies websites 
+
+## References
+
+[w3school HTML](https://www.w3schools.com/html/default.asp)

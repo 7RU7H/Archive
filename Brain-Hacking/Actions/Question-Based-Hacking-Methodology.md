@@ -48,6 +48,13 @@ Information - Machine information provided by querying machines
 Intel - Alice is a Helpdesk operator, Bob requested a password reset 
 Information - the user Alice has X SID that then indicates Administrative Group  
 
+#### False Positives and Negatives
+
+[False Positives](https://www.cgisecurity.com/questions/falsepositive.shtml) - detected, but not vulnerable
+[False Negatives](https://www.cgisecurity.com/questions/falsenegative.shtml) - not detected, but detection mechanism failed
+
+
+
 
 
 
@@ -336,3 +343,11 @@ Persistence
 	
 
 - Have you cleaned up?
+
+
+
+
+## References
+
+[https://www.cgisecurity.com/questions/falsepositive.shtml](https://www.cgisecurity.com/questions/falsepositive.shtml)
+[https://www.cgisecurity.com/questions/falsenegative.shtml](https://www.cgisecurity.com/questions/falsenegative.shtml)

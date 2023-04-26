@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Coding-Scripting-Programming/Languages/Python/Useful_Python.md",
+                "file": "Web-Application-Hacking/Web-Concepts/HTLM-Defined.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d52b20cd18d85452",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -48,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Decompress",
+                "query": "False Positives",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -77,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Coding-Scripting-Programming/Languages/Python/Useful_Python.md",
+                "file": "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,8 +118,21 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "848f0c7e9821375a",
+  "active": "d52b20cd18d85452",
   "lastOpenFiles": [
+    "Reconnaissance/Active-Information-Gathering/Vulnerability-Analysis/Vulnerability-Scanning.md",
+    "Tools/Useful-Software/Nessus.md",
+    "Web-Application-Hacking/Web-Concepts/HTLM-Defined.md",
+    "Security-Enterprises/Report-Writing/Hacking-Report-Template/ExecutiveSummary.md",
+    "Security-Enterprises/Report-Writing/Report-Writing.md",
+    "Security-Enterprises/Report-Writing",
+    "Tools/Port-scanning/Rustscan.md",
+    "Linux/Linux-Commands/Linux-Memory-Commands.md",
+    "Linux/Linux-Commands/Core-Linux-Commands.md",
+    "Web-Application-Hacking/CMS/Wordpress.md",
+    "Tools/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
+    "Cryptography-And-Authentication/Password-Attacks/Password-Attacks.md",
+    "Coding-Scripting-Programming/Languages/Python/Useful_Python.md",
     "Linux/Linux-Commands/Linux-Compression-Commands.md",
     "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
     "Persistence/Linux-Persistence.md",
@@ -121,19 +147,6 @@
     "Cryptography-And-Authentication/Cryptography.md",
     "README.md",
     "Exploitation/Weaponizing-Vulnerabilities.md",
-    "Coding-Scripting-Programming/Languages/Bash/Useful_Bash.md",
-    "Tools/Crackmapexec/Crackmapexec-Cheatsheet.md",
-    "Post-Exploitation/Privilege-Escalation/Privilege-Escalation.md",
-    "Cloud/Cloud-Hacking/Cloud-Hacking-Tooling.md",
-    "Tools/Web-App/SQLmap-CheatSheet.md",
-    "Web-Application-Hacking/SQLi/SQLInjection.md",
-    "Web-Application-Hacking/XSS-Cheatsheet.md",
-    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/File-Transfers.md",
-    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Linux-File-Transfers.md",
-    "Services/Databases/MongoDB/MongoDB.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Important-Linux-Locations.md",
-    "Brain-Hacking/Actions/Learning-To-Hack.md",
-    "Security-Enterprises/Untitled",
     "Security-Enterprises/For-Individuals",
     "Brain-Hacking/Talk-Notes",
     "Brain-Hacking/Philosphy",
