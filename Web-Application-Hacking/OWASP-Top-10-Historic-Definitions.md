@@ -9,7 +9,7 @@ Similiar to other documents in this repository maximum of a couple of sentences 
 Given a level of authentication, inadequate security allowing unintended access to, or control of the machine, user accounts and system files. 
 - For admin panels see [[Web-App-Administration-Consoles]]
 - [[File-Inclusion-And-Directory-Traversal]]
-- [[Insecure-Object-Reference]]
+- [[Insecure-Direct-Object-Reference]]
 
 ## Cryptographic Failures
 

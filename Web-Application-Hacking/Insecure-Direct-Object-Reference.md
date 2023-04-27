@@ -1,4 +1,4 @@
-# Insecure Object Reference (IDOR)
+# Insecure Direct Object Reference (IDOR)
 
 An IDOR is access control vulnerability where a user can access resources becuase the Direct Object Reference to that resource is modifiable by the user.
 

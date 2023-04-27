@@ -1,6 +1,6 @@
 # SMTP Cheatsheet
-Simple Mail Transport Protocol (SMTP)
-Vulnerable Email Servers can contain valuable information. 
+
+Simple Mail Transport Protocol (SMTP) - Vulnerable Email Servers can contain valuable information. 
 See [[Network-Protocols-Cheatsheet]] for port information.
 
 See [Debug STMP connection for great description of SMTP commands that occuring exploitation of MAil servers](https://www.sparkpost.com/blog/how-to-check-an-smtp-connection-with-a-manual-telnet-session/)
@@ -15,9 +15,7 @@ EXPN # Ask server for membership
 # To quit telnet is worse than vim
 [CTRL] + $escapekey_show_on_initial_connection 
 telnet> help # Display commands 
-telnet> close
-
-
+telnet> quit
 ```
 Code 250,251,252 means accepted and user account is valid; code 550 means invalid user.
 

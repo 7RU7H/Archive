@@ -13,7 +13,31 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Web-Application-Hacking/Web-Concepts/HTLM-Defined.md",
+                "file": "APIs/API-Hacking.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0bac977b20048fe1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Web-Application-Hacking/Insecure-Direct-Object-Reference.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8cb29eb1149ce094",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Reconnaissance/Active-Information-Gathering/SMTP/SMTP-Recon-Cheatsheet.md",
                 "mode": "source",
                 "source": false
               }
@@ -57,8 +81,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -78,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exploitation/CVEs/CVE-2021-41773.md",
+                "file": "APIs/API-Hacking.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,15 +129,21 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "904463d60d8efa8d",
+  "active": "848f0c7e9821375a",
   "lastOpenFiles": [
+    "Web-Application-Hacking/Insecure-Direct-Object-Reference.md",
+    "APIs/API-Hacking.md",
+    "Reconnaissance/Active-Information-Gathering/SMTP/SMTP-Recon-Cheatsheet.md",
+    "Reconnaissance/Active-Information-Gathering/DNS/DNS-Recon-Active.md",
+    "Cryptography-And-Authentication/Password-Attacks/Password-Attacks.md",
+    "Tools/Burpsuite/Burpsuite-Helpsheet.md",
+    "Web-Application-Hacking/Web-Concepts/HTLM-Defined.md",
     "Coding-Scripting-Programming/Languages/Bash/Useful_Bash.md",
     "Exploitation/CVEs/CVE-2021-41773.md",
     "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
     "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
     "Reconnaissance/Active-Information-Gathering/Vulnerability-Analysis/Vulnerability-Scanning.md",
     "Tools/Useful-Software/Nessus.md",
-    "Web-Application-Hacking/Web-Concepts/HTLM-Defined.md",
     "Security-Enterprises/Report-Writing/Hacking-Report-Template/ExecutiveSummary.md",
     "Security-Enterprises/Report-Writing/Report-Writing.md",
     "Security-Enterprises/Report-Writing",
@@ -123,18 +152,12 @@
     "Linux/Linux-Commands/Core-Linux-Commands.md",
     "Web-Application-Hacking/CMS/Wordpress.md",
     "Tools/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
-    "Cryptography-And-Authentication/Password-Attacks/Password-Attacks.md",
     "Coding-Scripting-Programming/Languages/Python/Useful_Python.md",
     "Linux/Linux-Commands/Linux-Compression-Commands.md",
     "Persistence/Linux-Persistence.md",
     "Web-Application-Hacking/File-Inclusion-And-Directory-Traversal/File-Inclusion-And-Directory-Traversal.md",
     "Reverse-Engineering/Reverse-Engineering-Tools.md",
     "Tools/Binary-Exploitation-Tools/Pwntools.md",
-    "Services/Databases/Redis/Redis-cli-Cheatsheet.md",
-    "Services/Databases/Database-Hacking.md",
-    "Tools/Useful-Software/Chisel.md",
-    "Services/Docker/Docker-Hacking.md",
-    "Cryptography-And-Authentication/Cryptography.md",
     "Security-Enterprises/For-Individuals",
     "Brain-Hacking/Talk-Notes",
     "Brain-Hacking/Philosphy",
