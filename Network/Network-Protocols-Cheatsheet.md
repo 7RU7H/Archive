@@ -94,10 +94,11 @@ tftp $ip
 
 
 ## 79 - Finger 
+
 [Finger](https://en.wikipedia.org/wiki/Finger_(protocol)) user information protocol are simple for the exchange of human-oriented status and user information. Use [pentestmonkey finger-user-enum.pl](https://pentestmonkey.net/tools/user-enumeration/finger-user-enum)
 
 ## 80 - HTTP
-Default  port 80
+
 
 [[Web-Hacking-Checklist]], [[Website-Recon]] and [[Web-App-Hacking-Methodology]].
 
@@ -289,6 +290,7 @@ plain text LDAP is port 389
 LDAP SSL is port 636 
 
 ## 3269 (TCP/UDP) - Microsoft Global Catalog over SSL
+
 - msft-gc-ssl, Microsoft Global Catalog over SSL (similar to port 3268, LDAP over SSL) (official)
 
 LDAP (Lightweight Directory Access Protocol (over SSL)) Defaults:  - [[LDAP-Recon]]
@@ -297,19 +299,20 @@ LDAP SSL is port 636
 
 
 ## 3306 - MySQL
+
 `mysql -h ip -u user -p`
 
 ## 3389 (TCP) - RDP
-```bash
-remmina
-xfreerdp /u:$username /p:$Password /v:$IP
-rdesktop $ip
-```
+
+See [[RDP]] - Beware - On Windows 11, Network Level Authentication (NLA) is enabled by default for RDP connections.
+
 
 ## 4555 RSIP
+
 See [[RSIP-Recon]] forwarding administration emails
 
 ## 5000 - Docker
+
 See [[Docker]] and [[Docker-Hacking]] for more informationmation
 
 ## 5161 - SNMPSSH	 	
@@ -329,10 +332,12 @@ SNMP Notification over SSH Transport Model
 Kibana provides search and data visualization capabilities for data indexed in Elasticsearch. The service runs per default on port 5601
 
 ## 5900 - VNC 
+
 [Virtual Network Computing](https://en.wikipedia.org/wiki/Virtual_Network_Computing) is a graphic desktop-sharing system that uses the [Remote Frame Buffer protocol (RFB)](https://en.wikipedia.org/wiki/RFB_protocol) to remotely control another [computer](https://en.wikipedia.org/wiki/Computer "Computer"). RDP software like Remmina can connect. [See redhat artical regarding screen sharing](https://www.redhat.com/sysadmin/vnc-screen-sharing-linux)
 
 
 ## 5985-6 - WinRM
+
 Windows Remote Management Protocol ports
 See [[Evil-winrm-Cheatsheet]]
 

@@ -37,6 +37,15 @@ Files
 Execution:
 [passthru](https://www.php.net/manual/en/function.passthru.php) - The _passthru_() function is similar to the exec() function in that it executes a command . This function should be used in place of exec() or system() he output from the Unix command is binary data which needs to be passed directly back to the browser. 
 
+
+## Superglobals
+
+PHP [superglobals](https://www.php.net/manual/en/language.variables.superglobals.php) are variables that are associative arrays that are available in all scopes throughout a script.
+
+The superglobal `$GLOBAL` variable defines globally scope variables
+- As of PHP 8.1.0, write access to the entire [`$GLOBALS`](https://www.php.net/manual/en/reserved.variables.globals.php) array is no longer supported
+
+
 ## Scripting
 
 Http `cmd` super global variable function for RCEs  

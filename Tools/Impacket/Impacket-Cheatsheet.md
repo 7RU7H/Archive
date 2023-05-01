@@ -115,7 +115,20 @@ lookupsid.py $target
 
 ## mssqlclient.py
 
+Connect to Microsoft SQL databases
 ```bash
+# Connect to a Microsoft SQL server
+impacket-mssqlclient -port $PORT $domain/$sql_svc 
+# As a user with Windows Authenciation
+impacket-mssqlclient $user:$hostname@$IP -windows-auth
+# Specify a database instance
+-db $database_instance
+# If to are targeting a DC 
+-dc-ip 
+# Do prompt for password
+-no-pass
+
+
 mssqlclient.py -port $PORT $domain/$user@$IP -windows-auth
 # Example with kerberos Authenication from a silver ticket with ccache file
 export KRB5CCNAME=Administrator.ccache

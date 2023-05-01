@@ -13,37 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "Services/Databases/MYSQL/MySQL-Cheatsheet.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d00e36ad64b16b83",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "APIs/API-Hacking.md",
                 "mode": "source",
                 "source": false
               }
             }
-          },
-          {
-            "id": "0bac977b20048fe1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Web-Application-Hacking/Insecure-Direct-Object-Reference.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8cb29eb1149ce094",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Reconnaissance/Active-Information-Gathering/SMTP/SMTP-Recon-Cheatsheet.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -129,11 +118,25 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "848f0c7e9821375a",
+  "active": "d00e36ad64b16b83",
   "lastOpenFiles": [
-    "Web-Application-Hacking/Insecure-Direct-Object-Reference.md",
+    "Services/Databases/MYSQL/MySQL-Cheatsheet.md",
+    "Services/Databases/MSSQL/MSSQL-Hacking.md",
+    "Coding-Scripting-Programming/Languages/Visual-Basic/Useful_Visual_Basic.md",
+    "Network/RDP.md",
+    "Network/Network-Protocols-Cheatsheet.md",
+    "Coding-Scripting-Programming/Languages/PHP/Useful_PHP.md",
+    "Tools/Impacket/Impacket-Cheatsheet.md",
     "APIs/API-Hacking.md",
     "Reconnaissance/Active-Information-Gathering/SMTP/SMTP-Recon-Cheatsheet.md",
+    "Web-Application-Hacking/Insecure-Direct-Object-Reference.md",
+    "Services/Databases/MYSQL/MySQL-Hacking.md",
+    "Cryptography-And-Authentication/Password-Attacks/Wordlist-Tools/Crunch-Cheatsheet.md",
+    "Cryptography-And-Authentication/Password-Attacks/Wordlist-Tools/Cewl-Cheatsheet.md",
+    "Web-Application-Hacking/Command-Injection-Cheatsheet.md",
+    "Exploitation/Reverse-Shells-Listing.md",
+    "Exploitation/Bind-And-Reverse-Shells-Defined.md",
+    "Coding-Scripting-Programming/Programming-Paradigms/Model-View-Controller.md",
     "Reconnaissance/Active-Information-Gathering/DNS/DNS-Recon-Active.md",
     "Cryptography-And-Authentication/Password-Attacks/Password-Attacks.md",
     "Tools/Burpsuite/Burpsuite-Helpsheet.md",
@@ -143,21 +146,7 @@
     "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
     "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
     "Reconnaissance/Active-Information-Gathering/Vulnerability-Analysis/Vulnerability-Scanning.md",
-    "Tools/Useful-Software/Nessus.md",
-    "Security-Enterprises/Report-Writing/Hacking-Report-Template/ExecutiveSummary.md",
-    "Security-Enterprises/Report-Writing/Report-Writing.md",
     "Security-Enterprises/Report-Writing",
-    "Tools/Port-scanning/Rustscan.md",
-    "Linux/Linux-Commands/Linux-Memory-Commands.md",
-    "Linux/Linux-Commands/Core-Linux-Commands.md",
-    "Web-Application-Hacking/CMS/Wordpress.md",
-    "Tools/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
-    "Coding-Scripting-Programming/Languages/Python/Useful_Python.md",
-    "Linux/Linux-Commands/Linux-Compression-Commands.md",
-    "Persistence/Linux-Persistence.md",
-    "Web-Application-Hacking/File-Inclusion-And-Directory-Traversal/File-Inclusion-And-Directory-Traversal.md",
-    "Reverse-Engineering/Reverse-Engineering-Tools.md",
-    "Tools/Binary-Exploitation-Tools/Pwntools.md",
     "Security-Enterprises/For-Individuals",
     "Brain-Hacking/Talk-Notes",
     "Brain-Hacking/Philosphy",

