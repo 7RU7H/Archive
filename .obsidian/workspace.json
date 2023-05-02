@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "APIs/API-Hacking.md",
+                "file": "Brain-Hacking/Actions/Learning-To-Hack.md",
                 "mode": "source",
                 "source": false
               }
@@ -90,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "APIs/API-Hacking.md",
+                "file": "Brain-Hacking/Actions/Learning-To-Hack.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,6 +120,8 @@
   },
   "active": "d00e36ad64b16b83",
   "lastOpenFiles": [
+    "Reconnaissance/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
+    "APIs/API-Hacking.md",
     "Services/Databases/MYSQL/MySQL-Cheatsheet.md",
     "Services/Databases/MSSQL/MSSQL-Hacking.md",
     "Coding-Scripting-Programming/Languages/Visual-Basic/Useful_Visual_Basic.md",
@@ -127,7 +129,6 @@
     "Network/Network-Protocols-Cheatsheet.md",
     "Coding-Scripting-Programming/Languages/PHP/Useful_PHP.md",
     "Tools/Impacket/Impacket-Cheatsheet.md",
-    "APIs/API-Hacking.md",
     "Reconnaissance/Active-Information-Gathering/SMTP/SMTP-Recon-Cheatsheet.md",
     "Web-Application-Hacking/Insecure-Direct-Object-Reference.md",
     "Services/Databases/MYSQL/MySQL-Hacking.md",
@@ -145,7 +146,6 @@
     "Exploitation/CVEs/CVE-2021-41773.md",
     "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
     "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
-    "Reconnaissance/Active-Information-Gathering/Vulnerability-Analysis/Vulnerability-Scanning.md",
     "Security-Enterprises/Report-Writing",
     "Security-Enterprises/For-Individuals",
     "Brain-Hacking/Talk-Notes",

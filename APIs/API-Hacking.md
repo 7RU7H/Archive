@@ -42,6 +42,15 @@ Migitations:
 
 #### Excessive Data Exposure
 
+Mitigations:
+- Never rely on the client side to filter sensitive data.
+- Review the responses from the API to make sure they contain only legitimate data.
+- Ask who is consuming this data before exposing a new API endpoint
+- Avoid generic methods such as `to_json()` and `to_string()`; cherry-pick specific properties you really want to return
+- Classify sensitive and personally identifiable information (PII) that your application stores and works
+- Implement a schema-based response validation mechanism as an extra layer of security.
+- Review all API calls returning or handling any classified data - sensitive or personally identifiable information (PII)
+
 #### Lack of Resources & Rate Limiting
 
 #### Broken Function Level Authorisation

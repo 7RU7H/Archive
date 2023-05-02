@@ -30,7 +30,7 @@ smbmap -H $IP -R --exclude SYSVOL,IPC$
 # Recursive list contents of directory
 smbmap -H $IP -u $user -p $password -r --exclude SYSVOL,IPC$
 # Download a specifc file
-smbmap -H $IP -u -u $user -p $password  --download user$/$username/Documents/$file.txt
+smbmap -H $IP -u $user -p $password  --download user$/$username/Documents/$file.txt
 ```
 
 ## nbtscan 

@@ -108,3 +108,34 @@ Some of the below can be connective - i.e
 	- Partner Programs are a barrier for a reason
 - Build your own methodology and intuitions, but remember their are much betetr resources for good reason - I think that about this repository comparative to others, it helps. 
 - Do the coursework dont do the exam, but **do** go for the exam if need some goal or certificate is what you want. Expertise comes from experience, but the measure of experience is demonstrable work **complete** and a certificate is measure of work done at particular standard. Experience of a certian quality is what is sort after.
+
+
+Disclaimer Writeups to me are legitimate self solving of machines, but I think personally everyone should write and ethically hack for a variety of reasons. Secondly it really not healthy to learn hacking in a way that makes failure a part of it. You won't actually learn that way, it is an elitist and gatekeeping mindset towards anything. The best in the world in any domain are the best out learning and enjoying the process. A culture of *"cards close to  the chest"* mentality about one's capabalility to towards doing the the thing and making content for yourself to document your progress is madness, cowardise and only an Ethical Hacking community problem. Artists of all kind would never improve, Competivity Sports person, Programming and Video Gamers STEM field would never public verify anything and this were this just about money, jobs and ego. Nothing more. It would be absurd for a most other professions to treat the activity they do this way. Just say you looked a writeup, then you know what you do not know otherwise enjoy the 1984 madness of everyone else and burnout. Also there so many boxes to do them all solo would take a long time. I personally want to complete HTB and THM, but not waste years of my life malding into the abyss, because of culture or tradition.
+
+As of 2023 I have got a formula for Helped-Throughs, after much testing and realised that Helped-Throughs should either be:
+
+Personal Requirements: 
+1. Balance in all things. Do not do just one or the other, if you must lean more to doing Writeups especially the more experienced you are. 
+1. Writeups are not Helped-Throughouts 
+	- Writeup are solo or team solving of a CTF
+	- Help-Throughout are way to remove most of the challenge to incourage experiementation, research, indepth focus, postivity in succeeding to learn not learning out of the pain failure
+
+Benefits:
+1. Note taking the process
+2. Writing will improve your weaknesses and flaws through discovery of them
+3. A better way to enjoy and important learn content creator and expose all the other great hackers out there.
+	-  Watching the video without try what is happening is good, but as good as personally practical experiences
+4. Have a better learning curve expand research and understand without claiming to be awesome
+5. Beat the imposter syndrome, by make it about learning not fail, but do not mix challenge - but do challenging content without help
+
+Types:
+1. Stop and Start; Push till stuck - 2 hours max **and then** - walk it out then try again for another 30 minutes, then stop and peak. And only peak.
+	1. Beyond root should be box related and one or two tasks that take a maxium of 1 hour each 
+	2. After completion you must review atleast three writeups both video and written of the diagic learning
+2. Like a full project - llike (must be) extensive walkthrough or bootcamp in you favourite location:
+	- Multiple Writeups both video and written
+	- One section must be challenge to try without support in an area of weakness - 1 hour maximum
+	- It must document what you have learnt about your weaknesses and mistakes 
+	- It must takes at atleast 12 hours on one machine and its topics
+	- Research of surrounding relevant information must occur at depth
+	- Beyond root should be extensive
