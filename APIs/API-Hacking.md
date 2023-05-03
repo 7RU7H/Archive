@@ -42,7 +42,8 @@ Migitations:
 
 #### Excessive Data Exposure
 
-Mitigations:
+Excessive Data Exposure is simple - exposure of object, properties or endpoints that expose data that should be classified as sensitive and handle in secure way and the reliance on client data filtering. Attackers sniff the traffic to analyze the API responses.
+v
 - Never rely on the client side to filter sensitive data.
 - Review the responses from the API to make sure they contain only legitimate data.
 - Ask who is consuming this data before exposing a new API endpoint
@@ -52,6 +53,15 @@ Mitigations:
 - Review all API calls returning or handling any classified data - sensitive or personally identifiable information (PII)
 
 #### Lack of Resources & Rate Limiting
+
+Both lack of resource and controls to enforce rate usage of resources can lead to Denial of Service (DoS), [*but also leaves the door open to authentication flaws such as brute force.*](https://owasp.org/www-project-api-security/)
+
+Mitigations and Prevention:
+- Use docker with ease of use over limit [memory](https://docs.docker.com/config/containers/resource_constraints/#memory), [CPU](https://docs.docker.com/config/containers/resource_constraints/#cpu), [number of restarts](https://docs.docker.com/engine/reference/commandline/run/#restart-policies---restart), [file descriptors, and processes](https://docs.docker.com/engine/reference/commandline/run/#set-ulimits-in-container---ulimit).
+- Implement a limit on how often a client can call the API within a defined timeframe.
+- Notify the client when the limit is exceeded by providing the limit number and the time at which the limit will be reset.
+- Add proper server-side validation for query string and request body parameters, specifically the one that controls the number of records to be returned in the response.
+- Define and enforce maximum size of data on all incoming parameters and payloads such as maximum length for strings and maximum number of elements in arrays.
 
 #### Broken Function Level Authorisation
 
