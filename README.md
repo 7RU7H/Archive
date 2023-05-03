@@ -21,7 +21,7 @@ Fundementally set out in memory of [Dan Kaminsky](https://en.wikipedia.org/wiki/
 1. Promote: 
 	1. Science and the scientific method
 	2. Fixing and break things to fix everything to make it safer
-	3. Historic collection, maintaining of the old
+	3. Historic collections
 		1. Wikipedia, Waybackmachine
 	4. Novel and inventiveness 
 	5. Free debate and communal health to debate
@@ -32,10 +32,10 @@ Fundementally set out in memory of [Dan Kaminsky](https://en.wikipedia.org/wiki/
 	11. Collaberation and helping others
 1. Denounce:
 	- Malicious and Unethical usage of any information contained here
-	- Ideology, replace it and any with it with the stategy and task of being a system, improving and maintaining all systems. 
+	- Ideology, replace it and any with it with the strategy and task of being a system, improving and maintaining all systems. 
 	- Fraud, false information come correct or get corrected, if you are not healthy enough be corrected
 	- Discourse that aids in dichotomy wars - Vim vs Emacs, but acknowledge pros and cons
-	- Racism 
+	- Bigotry 
 1. Prioritize:
 	 1. (Cheat/Help)sheets for Free and Open Source Software and Free Versions of Tools
 	 2. Rules are not just to be broken, a machine can improve its effectiveness through brute forcing probelm solving staticistical 
