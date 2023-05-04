@@ -22,6 +22,10 @@ An Application Programming Interface is middleware that facilitates communicatio
 		- `Model` updates -> `View`
 		- `View` sees `User` 
 
+Hunt for:
+- Are there checks for any API endpoints does the user have access to perform the requested action of the requested object?
+
+
 Migitations:
 - Validate any incoming API calls for request methods
 - Authorization mechanisms reliant on user policies and hierarchy
@@ -31,6 +35,16 @@ Migitations:
 #### Broken User Authentication (BUA)
 
 Broken User Authentication (BUA) is incorrect implementation of authenication mechanism leading to the compromising of authentication tokens or temporary or permanent impersonation of user’s identities.
+
+Hunt for:
+- Can you: 
+	- Credential stuff
+	- Brute force
+	- Break a weak encryption key if encrypted, weakly hashed or in plain text
+	- Pass unsigned/weakly signed [[JSON-Web-Tokens]] - no expiration datas?
+- Does the API permit weak passwords?
+- Does the API validate tokens
+- Is sensitive data sent in the URL
 
 Migitations:
 - Ensure end users use complex passphrases
@@ -43,7 +57,11 @@ Migitations:
 #### Excessive Data Exposure
 
 Excessive Data Exposure is simple - exposure of object, properties or endpoints that expose data that should be classified as sensitive and handle in secure way and the reliance on client data filtering. Attackers sniff the traffic to analyze the API responses.
-v
+
+Hunt for:
+- Can you sniff traffic erroneously intended by the develope to be filtered on the client-side?
+
+Mitigations and Preventions:
 - Never rely on the client side to filter sensitive data.
 - Review the responses from the API to make sure they contain only legitimate data.
 - Ask who is consuming this data before exposing a new API endpoint
@@ -56,6 +74,16 @@ v
 
 Both lack of resource and controls to enforce rate usage of resources can lead to Denial of Service (DoS), [*but also leaves the door open to authentication flaws such as brute force.*](https://owasp.org/www-project-api-security/)
 
+Hunt for:
+- Execution timeouts
+- Max allocable memory
+- Number of file descriptors
+- Number of processes
+- Request payload size (e.g., uploads)
+- Number of requests per client/resource
+- Number of records per page to return in a single request response
+
+
 Mitigations and Prevention:
 - Use docker with ease of use over limit [memory](https://docs.docker.com/config/containers/resource_constraints/#memory), [CPU](https://docs.docker.com/config/containers/resource_constraints/#cpu), [number of restarts](https://docs.docker.com/engine/reference/commandline/run/#restart-policies---restart), [file descriptors, and processes](https://docs.docker.com/engine/reference/commandline/run/#set-ulimits-in-container---ulimit).
 - Implement a limit on how often a client can call the API within a defined timeframe.
@@ -65,9 +93,20 @@ Mitigations and Prevention:
 
 #### Broken Function Level Authorisation
 
+Where a user can bypass the mechanisms to secure associated access, permissions and privileges of other groups to then exploit this extension to their capabilities.  
 
+Hunt for
+- Non-Administrative access to administrative endpoints? 
+	- Do not base this on the path only!
+- Can Non-Administrative users perform standand or non-standard administrative actions?
+- Can Non-Administrative user from one security group access functions exposed only to another group? 
 
-
+Mitigations and Preventions
+- Consistent and easy to analyze authorization module that is invoked from all your business functions 
+- The enforcement mechanism(s) should deny all access by default, requiring explicit grants to specific roles for access to every function.
+- Review your API endpoints against function level authorization flaws, while keeping in mind the business logic of the application and groups hierarchy.
+- Make sure that all of your administrative controllers inherit from an administrative abstract controller that implements authorization checks based on the user’s group/role.
+- Make sure that administrative functions inside a regular controller implements authorization checks based on the user’s group and role.
 
 ## References
 
