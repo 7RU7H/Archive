@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
+                "file": "APIs/API-Hacking.md",
                 "mode": "source",
                 "source": false
               }
@@ -31,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/C2/Sliver/Sliver-Cheatsheet.md",
+                "file": "APIs/API-Hacking.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,13 +125,14 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "ed8f63df71621be6",
+  "active": "9c25bdb074742d91",
   "lastOpenFiles": [
+    "Reverse-Engineering/Malware-Analysis/Malware-Analysis.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
     "Tools/C2/Sliver",
     "Tools/Exploit-Frameworks",
     "Windows/Windows-Concepts/Windows-Permissions.md",
     "Tools/C2/Sliver/Sliver-Cheatsheet.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation Bypassing-Contrained-Powershell.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
     "Coding-Scripting-Programming/Languages/Go/Golang.md",
@@ -165,7 +165,6 @@
     "Images/azslotswappedsettingsvsslotspecificsettings.png",
     "Images/azurecloudserviceresponsiblitychart.png",
     "Services/Network-Access-Applications",
-    "Reconnaissance/Passive-Information-Gathering/Source-Code",
     "Images/azureadbenefitsofazureadjoin.png",
     "Images/boopkit.png",
     "Images/eventviewereventtypes.png",

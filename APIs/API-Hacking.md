@@ -101,12 +101,39 @@ Hunt for
 - Can Non-Administrative users perform standand or non-standard administrative actions?
 - Can Non-Administrative user from one security group access functions exposed only to another group? 
 
-Mitigations and Preventions
+Mitigations and Preventions:
 - Consistent and easy to analyze authorization module that is invoked from all your business functions 
 - The enforcement mechanism(s) should deny all access by default, requiring explicit grants to specific roles for access to every function.
 - Review your API endpoints against function level authorization flaws, while keeping in mind the business logic of the application and groups hierarchy.
 - Make sure that all of your administrative controllers inherit from an administrative abstract controller that implements authorization checks based on the user’s group/role.
 - Make sure that administrative functions inside a regular controller implements authorization checks based on the user’s group and role.
+ 
+
+#### Mass Assignment
+
+Mass alignment is mass modification by the client to data models. *"Exploitation of mass assignment is easier in APIs, since by design they expose the underlying implementation of the application along with the properties’ names"* 
+
+Hunt For...
+1. Seek to understanding the API structure, business logic and object's relations)
+2. Hunt for:
+	- Lack of filtering of client input 
+		- Is there a schema to data expected?
+		- Is there blacklisting?
+	- Client’s input data payload fields
+
+Mitigations and Preventions:
+-   If possible, avoid using functions that automatically bind a client’s input into code variables or internal objects.
+-   Whitelist only the properties that should be updated by the client.
+-   Use built-in features to blacklist properties that should not be accessed by clients.
+-   If applicable, explicitly define and enforce schemas for the input data payloads.
+
+
+#### Security Misconfiguration
+#### Injection
+#### Improper Assets Management
+#### Insufficient Logging & Monitoring
+
+
 
 ## References
 
