@@ -10,7 +10,7 @@ A [Blockchain](https://en.wikipedia.org/wiki/Blockchain) is a type of [distribut
 
 **Beware Smart Contracts do not typically constitute a valid binding agreement at law!**
 
-**If it is never legal binding - RUN FAR FAR AWAY**
+**If it is never legal binding - RUN FAR, FAR AWAY**
 
 **Successful human enterprise for over 10 thousand years is built on legality in primitive (non-written) and modern sense to arbitate transactions between humans**
 

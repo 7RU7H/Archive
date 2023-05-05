@@ -17,6 +17,7 @@ Get-SmbShare | ForEach-Object {
 ```
 
 Hunt for Schedule Task persistence
+- [Note](https://www.ired.team/offensive-security/persistence/t1053-schtask) that processes spawned as scheduled tasks have `taskeng.exe` process as their parent:
 ```powershell
 # Hunt for Schedule Task persistence
 get-scheduledtask | findstr /v Disabled
@@ -30,3 +31,8 @@ $task.Principal | fl
 # Remove or CounterIntel to check file operations..
 del <filepath>
 ```
+
+
+## References
+
+[ired.team](https://www.ired.team/offensive-security/persistence/t1053-schtask)

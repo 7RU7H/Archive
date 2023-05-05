@@ -52,7 +52,7 @@ New-Service -Name "<SERVICE_NAME>" -BinaryPathName "<PATH_TO_BINARY>" -Descripti
 ```
 #### Scheduled tasks
 ```powershell
-New-ScheduledTaskAction -Execute "cmd.exe" -ARgument "/ C:\path\backdoor.exe"
+New-ScheduledTaskAction -Execute "cmd.exe" -Argument "/ C:\path\backdoor.exe"
 New-ScheduledTaskTrigger -AtlogOn
 New-ScheduledTaskPrincipal -UserId "NT AUTHORITY\SYSTEM" -RunLevel Highest
 New-ScheduledTaskSettingsSet

@@ -9,7 +9,7 @@
 	 - [[Email-Harvesting]]
 2.  Weaponization
 	- Using a Command and Control - see [[C2-Matrix]] and apply techniques from [MITRE ATT&CK](https://attack.mitre.org/tactics/TA0011/).
-	- Malicious VBA Macros see  [[Useful_Visual_Basic]] or article ["Intro to Macros and VBA For Script Kiddies" by TrustedSec](https://www.trustedsec.com/blog/intro-to-macros-and-vba-for-script-kiddies/).
+	- Malicious VBA Macros see  [[Useful-Visual-Basic]] or article ["Intro to Macros and VBA For Script Kiddies" by TrustedSec](https://www.trustedsec.com/blog/intro-to-macros-and-vba-for-script-kiddies/).
 	- [[Bad-USBs]]
 	- Implants
 3. Delivery 

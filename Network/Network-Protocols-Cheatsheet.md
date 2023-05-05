@@ -48,8 +48,8 @@ Default port 22 - Secure File transfer protocol
 
 
 ## 23 - TELNET
-Generall port 23, Telnet is cleartext and unsecure!
 
+Generall port 23, Telnet is cleartext and unsecure!
 ```bash
 telnet $ip
 # THEN
