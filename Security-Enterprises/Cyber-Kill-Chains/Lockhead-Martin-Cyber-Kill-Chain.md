@@ -19,7 +19,7 @@
 4. Exploitation
 	- CVEs
 	- Zero-days 
-	- [[Social-Enigeering]] human users into compromising their machines for the attacker
+	- [[Social-Engineering]] human users into compromising their machines for the attacker
 	- Users triggering Email attachment
 5.  Installation
 	- Web Shells

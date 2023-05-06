@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Web-Application-Hacking/Command-Injection-Cheatsheet.md",
+                "file": "Exploitation/Client-Side-Attacks/Client-Side-Attacks-Microsoft-Office.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Web-Application-Hacking/Command-Injection-Cheatsheet.md",
+                "file": "Exploitation/Client-Side-Attacks/Client-Side-Attacks-Microsoft-Office.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,6 +140,12 @@
   },
   "active": "ba5180c1eefabd01",
   "lastOpenFiles": [
+    "Exploitation/Client-Side-Attacks/Client-Side-Attack-Targeting.md",
+    "Social-Engineering.md",
+    "Exploitation/Client-Side-Attacks/Client-Side-Attacks-Microsoft-Office.md",
+    "Exploitation/Client-Side-Attacks/Client-Side-Attacks.md",
+    "Exploitation/Client-Side-Attacks/Client-Side-Attacks-HTML-Applications.md",
+    "Web-Application-Hacking/Command-Injection-Cheatsheet.md",
     "Web-Application-Hacking/Directory-Traversal/Directory-Traversal.md",
     "Web-Application-Hacking/File-Inclusion/Log-Poisoning.md",
     "Web-Application-Hacking/File-Inclusion/File-Inclusion.md",
@@ -162,12 +168,6 @@
     "Tools/Shells/SSH-Cheatsheet.md",
     "Network/Network-Protocols-Cheatsheet.md",
     "Tools/C2/Introduction-To-Comand-And-Control-Frameworks.md",
-    "Tools/Bruteforce-Login-Tools/Crowbar-CheatSheat.md",
-    "Cryptography-And-Authentication/Password-Attacks/Password-Attacks.md",
-    "Web-Application-Hacking/Command-Injection-Cheatsheet.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Important-Linux-Locations.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
-    "Services/Webservers/Apache/Apache-Tomcat/Apache-Tomcat.md",
     "Tools/C2/Sliver",
     "Tools/Exploit-Frameworks",
     "Services/Webservers/Apache/Apache2",

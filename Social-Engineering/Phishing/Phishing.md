@@ -1,6 +1,6 @@
 # Phishing Defined
 
-[Phishing](https://en.wikipedia.org/wiki/Phishing) is type of [[Social-Enigeering]] where the attacker sends fraudulent message(s) design to trick a victim into actions related to the attackers Objective ([MITRE Tactic TA0001](https://attack.mitre.org/tactics/TA0001/)).
+[Phishing](https://en.wikipedia.org/wiki/Phishing) is type of [[Social-Engineering]] where the attacker sends fraudulent message(s) design to trick a victim into actions related to the attackers Objective ([MITRE Tactic TA0001](https://attack.mitre.org/tactics/TA0001/)).
 
 # Contents:
 
