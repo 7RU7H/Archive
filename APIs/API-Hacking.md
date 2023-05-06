@@ -127,8 +127,32 @@ Mitigations and Preventions:
 -   Use built-in features to blacklist properties that should not be accessed by clients.
 -   If applicable, explicitly define and enforce schemas for the input data payloads.
 
-
 #### Security Misconfiguration
+
+Any configuration that leads to a security vulnerability, therefore a considered a misconfiguration. 
+
+Hunt for:
+- Versioning - out-of-date or missing patches
+- Error handling leaking information like stack traces or sensitive information
+- No TLS
+- Security directives are not sent to clients (e.g., [Security Headers](https://www.owasp.org/index.php/OWASP_Secure_Headers_Project))
+- Cross-Origin Resource Sharing (CORS) policy is missing or improperly set
+
+
+Mitigations and Preventions:
+The API life cycle should include:
+- A repeatable hardening process leading to fast and easy deployment of a properly locked down environment.
+- A task to review and update configurations across the entire API stack. The review should include: orchestration files, API components, and cloud services (e.g., S3 bucket permissions).
+- A secure communication channel for all API interactions access to static assets (e.g., images).
+- An automated process to continuously assess the effectiveness of the configuration and settings in all environments.
+
+
+- Use TLS 
+- Define and enforce all API response payload schemas including error responses.
+- Disable all HTTP verbs other than the specified 
+- Proper implement of Cross-Origin Resource Sharing (CORS) policy.
+
+
 #### Injection
 #### Improper Assets Management
 #### Insufficient Logging & Monitoring

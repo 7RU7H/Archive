@@ -145,6 +145,7 @@ For example, in versions prior to 3.13, Cobalt Strike C2 servers were able to be
 
 ### SSH port forwarding
 Setup a local port forward to forward our local port to the remote Teamserver server
+
 ````
 ssh -L 55553:127.0.0.1:55553 root@192.168.0.44
 ```

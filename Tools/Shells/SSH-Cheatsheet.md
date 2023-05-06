@@ -1,10 +1,19 @@
 # SSH Cheatsheet
 
+Useful Flags
+```bash
+-i	access with private key
+-L	local_port:remote_address:remote_port # for local port fowarding
+-R	port:loca_address:local_port # For remote port forwarding 
+-D	local_PORT # Dynamic port fowarding, creates sockets proxy on localhost
+-N	Do not execute a remote command. Useful in for just forwardin ports
+-p  Port
+```
+
 
 ## SSH Client Escape Sequences
 
 [Sans Using the SSH "Konami Code" (SSH Control Sequences) by Jeff McJunkin](https://www.sans.org/blog/using-the-ssh-konami-code-ssh-control-sequences/)
-
 ```bash
 # Note that escapes are only recognized immediately after newline
 ~. # terminate connection (and any multiplexed sessions)_

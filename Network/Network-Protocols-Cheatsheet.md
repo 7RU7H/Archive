@@ -37,14 +37,7 @@ put file	upload files!
 ## 22 - SSH & SFTP - Submodule of ssh
 Default port 22 - Secure File transfer protocol 
 [[SSH-Cheatsheet]]
-```
--i	access with private key
--L	local_port:remote_address:remote_port # for local port fowarding
--R	port:loca_address:local_port # For remote port forwarding 
--D	local_PORT # Dynamic port fowarding, creates sockets proxy on localhost
--N	Do not execute a remote command. Useful in for just forwardin ports
--p      port
-```
+
 
 
 ## 23 - TELNET
