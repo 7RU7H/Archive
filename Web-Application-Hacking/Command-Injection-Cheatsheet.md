@@ -24,6 +24,11 @@ PARAMETRE=&type
 
 %2F is url encoded forward slash. & and && to make additional commands to the payload that simply a  one liner injected into a website.  
 
+Is Dos or Powershell executing the command injection payload?
+```powershell
+(dir 2>&1 *`|echo CMD);&<# rem #>echo PowerShell
+```
+
 ## Types 
 
 1. Blind - no direct output from the application when testing payloads

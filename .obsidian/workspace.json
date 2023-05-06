@@ -25,13 +25,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/C2/Sliver/Sliver-Cheatsheet.md",
+                "file": "Web-Application-Hacking/Command-Injection-Cheatsheet.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7be651cfd5d999fc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Web-Application-Hacking/File-Inclusion/Log-Poisoning.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -97,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "APIs/API-Hacking.md",
+                "file": "Web-Application-Hacking/Command-Injection-Cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,46 +138,46 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "9c25bdb074742d91",
+  "active": "ba5180c1eefabd01",
   "lastOpenFiles": [
+    "Web-Application-Hacking/Directory-Traversal/Directory-Traversal.md",
+    "Web-Application-Hacking/File-Inclusion/Log-Poisoning.md",
+    "Web-Application-Hacking/File-Inclusion/File-Inclusion.md",
+    "Linux/Linux-File-Paths.md",
+    "Windows/Windows-File-Paths.md",
+    "Web-Application-Hacking/File-Inclusion-And-Directory-Traver",
+    "Web-Application-Hacking/Directory-Traversal",
+    "Exploitation/Using-Public-Exploits.md",
+    "Exploitation/Fixing-Public-Exploits.md",
+    "Exploitation/Compiling-Exploits.md",
+    "Reconnaissance/Active-Information-Gathering/DNS/DNS-Recon-Active.md",
+    "Reconnaissance/Passive-Information-Gathering/Source-Code/Open-Source-Code-Passive.md",
+    "Reconnaissance/Passive-Information-Gathering/DNS-Recon-Passive.md",
+    "Reconnaissance/Passive-Information-Gathering/Search-Engine-Dorking.md",
+    "Reconnaissance/Passive-Information-Gathering/Passive-Recon.md",
+    "Reconnaissance/Passive-Information-Gathering/Website-Recon.md",
+    "Tools/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
+    "Tools/C2/Sliver/Sliver-Cheatsheet.md",
+    "APIs/API-Hacking.md",
     "Tools/Shells/SSH-Cheatsheet.md",
     "Network/Network-Protocols-Cheatsheet.md",
     "Tools/C2/Introduction-To-Comand-And-Control-Frameworks.md",
     "Tools/Bruteforce-Login-Tools/Crowbar-CheatSheat.md",
-    "Tools/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
     "Cryptography-And-Authentication/Password-Attacks/Password-Attacks.md",
     "Web-Application-Hacking/Command-Injection-Cheatsheet.md",
     "Post-Exploitation/Privilege-Escalation/Linux/Important-Linux-Locations.md",
     "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
     "Services/Webservers/Apache/Apache-Tomcat/Apache-Tomcat.md",
-    "Services/Webservers/Apache/Apache2/Apache2.md",
-    "APIs/API-Hacking.md",
-    "Reverse-Engineering/Malware-Analysis/Malware-Analysis.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
     "Tools/C2/Sliver",
     "Tools/Exploit-Frameworks",
-    "Windows/Windows-Concepts/Windows-Permissions.md",
-    "Tools/C2/Sliver/Sliver-Cheatsheet.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation Bypassing-Contrained-Powershell.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
-    "Coding-Scripting-Programming/Languages/Go/Golang.md",
-    "Persistence/Persistence.md",
-    "Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Blue-KOTH-Battlegrounds-Cheatsheet-Windows.md",
-    "Persistence/Windows-Persistence/Windows-Persistence.md",
-    "README.md",
-    "Services/Blockchain/Blockchains-Defined.md",
-    "Hacker-Distros/Kali/Kali-Configuration/Configuring-Apache2-With-Kali.md",
-    "Coding-Scripting-Programming/Languages/Visual-Basic/Useful-Visual-Basic.md",
     "Services/Webservers/Apache/Apache2",
     "Security-Enterprises/Report-Writing",
     "Security-Enterprises/For-Individuals",
     "Brain-Hacking/Talk-Notes",
     "Brain-Hacking/Philosphy",
     "Brain-Hacking/Concepts",
-    "Brain-Hacking/Actions",
     "Images/azslotswappedsettingsvsslotspecificsettings.png",
     "Images/azurecloudserviceresponsiblitychart.png",
-    "Services/Network-Access-Applications",
     "Images/azureadbenefitsofazureadjoin.png",
     "Images/boopkit.png",
     "Images/eventviewereventtypes.png",

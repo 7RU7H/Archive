@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Log Poisoning is a type of [[File-Inclusion-And-Directory-Traversal]] related attack that seeks to inject the log file of a server with malicious request that include code to then can then be used in an LFI payload. The infamous [[Log4J]] exploit is the famous recent example of Log Poisoning that leads to Remote Code Execution. Simple example being:
+Log Poisoning is a type of [[File-Inclusion]] related attack that seeks to inject the log file of a server with malicious request that include code to then can then be used in an LFI payload. The infamous [[Log4J]] exploit is the famous recent example of Log Poisoning that leads to Remote Code Execution. Simple example being:
 ```bash
 nc -nv $poor_web_server_ip 80
 (UNKNOWN) [$poor_web_server_ip] 80 (http) open
@@ -34,11 +34,22 @@ Windows
 C:\xampp\apache\logs\access.log
 ```
 
+[https://docs.microsoft.com/en-us/iis/manage/provisioning-and-managing-iis/managing-iis-log-file-storage](https://docs.microsoft.com/en-us/iis/manage/provisioning-and-managing-iis/managing-iis-log-file-storage)
+`C:\inetpub\logs\LogFiles\W3SVC1\`
+`C:\inetpub\wwwroot\web.config`
+Apache logs can be found in `C:\xampp\apache\logs`
+
+
 ## Located Controllable Log Fields
 
-Use Burpsuite ([[Burpsuite-Helpsheet]]) or combination of curl([[Curl-Cheatsheet]]) modifying the various possible fields contained in the log. 
+Use Burpsuite ([[Burpsuite-Helpsheet]]) or combination of `curl` ([[Curl-Cheatsheet]]) modifying the various possible fields contained in the log. 
 
+```bash
+# curl to burp proxy
+curl 127.0.0.1 --proxy 8000
 ```
+
+```bash
 # Test Symbol filtering 
 User-Agent: Add your testing message here" 
 ```
@@ -54,3 +65,7 @@ Controlling a modifiable field then leads to test whether the server or website 
 ```
 
 `url:/path/to/log/logname.log&cmd=
+
+## References
+
+[https://docs.microsoft.com/en-us/iis/manage/provisioning-and-managing-iis/managing-iis-log-file-storage](https://docs.microsoft.com/en-us/iis/manage/provisioning-and-managing-iis/managing-iis-log-file-storage)

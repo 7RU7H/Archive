@@ -37,8 +37,12 @@ BE AWARE !! consider DNSdumpster tool for subdomains, and Shodan.io for exposed 
 
 [ViewDNS.info](https://viewdns.info/) is third party to yourself and target that offer reverse lookup.
 
+## Netcraft
+ 
+https://searchdns.netcraft.com a *"Netcraft extension to ensure you don't get tricked by criminals. It's backed by our [malicious site feeds](https://www.netcraft.com/cybercrime/malicious-site-feeds/) that protect billions of people around the world from phishing, malware and other cybercrime activities."*"
 
 ## Threat Intelligence Platform
+
 [Threat Intelligence Platform](https://threatintelligenceplatform.com/) is visualisation tool for `dig` and `whois` that requires you to provide a domain name or an IP address then launching tests from malware checks to WHOIS and DNS queries.
 
 ## Censys Search
@@ -50,3 +54,5 @@ BE AWARE !! consider DNSdumpster tool for subdomains, and Shodan.io for exposed 
 [THM Red Team Recon Room](https://tryhackme.com/room/redteamrecon)
 [ViewDNS.info](https://viewdns.info/)
 [THM DNS in Detail](https://tryhackme.com/room/dnsindetail)
+https://searchdns.netcraft.com
+[Netcraft malicious site feeds](https://www.netcraft.com/cybercrime/malicious-site-feeds/) 

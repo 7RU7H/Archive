@@ -178,4 +178,4 @@ site:$domain.$tld
 [ldns-walk](https//linux.die.net/man/1/ldns-walk)
 [nsec3walker](https//dnscurve.org/nsec3walker.html)
 [nsec3mapper](https//github.com/anonion0/nsec3map)
-[infosecinstitute -dns-hacking](https://resources.infosecinstitute.com/topic/dns-hacking/)
+[infosecinstitute-dns-hacking](https://resources.infosecinstitute.com/topic/dns-hacking/)
