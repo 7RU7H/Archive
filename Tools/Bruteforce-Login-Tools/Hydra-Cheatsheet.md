@@ -7,6 +7,7 @@ Always consider adding the `-e`
 -e nsr    try "n" null password, "s" login as pass and/or "r" reversed login
 ```
 
+- Using burp to capture a request and copying and pasting the form names into the command line avoid silly mistakes that are time costly
 ```bash
 # Command 								Description:
 hydra -P password-file.txt -v $ip snmp 					# Hydra brute force against SNMP
@@ -45,4 +46,5 @@ hydra -L users.txt -P passwords.txt $ip ldap2 -V -f 			# LDAP Brute Forcing
 
 
 ## References
+
 [Frizb's Hydra Cheatsheet(Original)](https://github.com/frizb/Hydra-Cheatsheet)

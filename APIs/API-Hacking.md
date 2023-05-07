@@ -5,7 +5,6 @@ An Application Programming Interface is middleware that facilitates communicatio
 ## Tricks
 
 - Try put in an empty body of http request json `{}`
-``
 
 ## OWASP API Top 10
 
@@ -146,7 +145,6 @@ The API life cycle should include:
 - A secure communication channel for all API interactions access to static assets (e.g., images).
 - An automated process to continuously assess the effectiveness of the configuration and settings in all environments.
 
-
 - Use TLS 
 - Define and enforce all API response payload schemas including error responses.
 - Disable all HTTP verbs other than the specified 
@@ -154,6 +152,23 @@ The API life cycle should include:
 
 
 #### Injection
+
+Where injection attacks can occur through API queries. See [[SQLInjection]], [[Command-Injection-Cheatsheet]], etc.
+
+Hunt for:
+- Unfiltered, unvalidated or unsanitized client-supplied data
+- Direct concatenation of client-supplied data and embeded service queries through an API query
+- Data from external systems is unfiltered, unvalidated or unsanitized 
+
+Mitigations and Preventions:
+- Perform data validation using a single, trustworthy, and actively maintained library.
+- Validate, filter, and sanitize all client-provided data, or other data coming from integrated systems.
+- Special characters should be escaped using the specific syntax for the target interpreter.
+- Prefer a safe API that provides a parameterized interface.
+- Always limit the number of returned records to prevent mass disclosure in case of injection.
+- Validate incoming data using sufficient filters to only allow valid values for each input parameter.
+- Define data types and strict patterns for all string parameters.
+
 #### Improper Assets Management
 #### Insufficient Logging & Monitoring
 

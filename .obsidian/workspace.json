@@ -13,19 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "APIs/API-Hacking.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ba5180c1eefabd01",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Exploitation/Client-Side-Attacks/Client-Side-Attacks-Microsoft-Office.md",
+                "file": "Tools/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
                 "mode": "source",
                 "source": false
               }
@@ -37,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Web-Application-Hacking/File-Inclusion/Log-Poisoning.md",
+                "file": "APIs/API-Hacking.md",
                 "mode": "source",
                 "source": false
               }
@@ -73,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "SSH",
+                "query": "Impacket ",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -110,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exploitation/Client-Side-Attacks/Client-Side-Attacks-Microsoft-Office.md",
+                "file": "APIs/API-Hacking.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -138,16 +126,23 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "ba5180c1eefabd01",
+  "active": "7be651cfd5d999fc",
   "lastOpenFiles": [
+    "Web-Application-Hacking/File-Inclusion/Log-Poisoning.md",
+    "Tools/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
+    "Social-Engineering/Untitled.md",
+    "Cryptography-And-Authentication/Password-Attacks/Hash-Cracking-Tools/John-The-Ripper-Cheatsheet.md",
+    "APIs/API-Hacking.md",
+    "Cryptography-And-Authentication/Password-Attacks/Hash-Cracking-Tools/Hashcat-Cheatsheet.md",
+    "Tools/Impacket/Impacket-Cheatsheet.md",
+    "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Privilege-Escalation.md",
+    "Exploitation/Client-Side-Attacks/Client-Side-Attacks-Microsoft-Office.md",
     "Exploitation/Client-Side-Attacks/Client-Side-Attack-Targeting.md",
     "Social-Engineering.md",
-    "Exploitation/Client-Side-Attacks/Client-Side-Attacks-Microsoft-Office.md",
     "Exploitation/Client-Side-Attacks/Client-Side-Attacks.md",
     "Exploitation/Client-Side-Attacks/Client-Side-Attacks-HTML-Applications.md",
     "Web-Application-Hacking/Command-Injection-Cheatsheet.md",
     "Web-Application-Hacking/Directory-Traversal/Directory-Traversal.md",
-    "Web-Application-Hacking/File-Inclusion/Log-Poisoning.md",
     "Web-Application-Hacking/File-Inclusion/File-Inclusion.md",
     "Linux/Linux-File-Paths.md",
     "Windows/Windows-File-Paths.md",
@@ -161,13 +156,6 @@
     "Reconnaissance/Passive-Information-Gathering/DNS-Recon-Passive.md",
     "Reconnaissance/Passive-Information-Gathering/Search-Engine-Dorking.md",
     "Reconnaissance/Passive-Information-Gathering/Passive-Recon.md",
-    "Reconnaissance/Passive-Information-Gathering/Website-Recon.md",
-    "Tools/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
-    "Tools/C2/Sliver/Sliver-Cheatsheet.md",
-    "APIs/API-Hacking.md",
-    "Tools/Shells/SSH-Cheatsheet.md",
-    "Network/Network-Protocols-Cheatsheet.md",
-    "Tools/C2/Introduction-To-Comand-And-Control-Frameworks.md",
     "Tools/C2/Sliver",
     "Tools/Exploit-Frameworks",
     "Services/Webservers/Apache/Apache2",
