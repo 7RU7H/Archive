@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exploitation/Reverse-Shells-Listing.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exploitation/Reverse-Shells-Listing.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,6 +140,11 @@
   },
   "active": "8c06a4677795b028",
   "lastOpenFiles": [
+    "Post-Exploitation/Privilege-Escalation/Windows/PrivEsc-Important-Windows-Locations.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation Bypassing-Contrained-Powershell.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
+    "Exploitation/Reverse-Shells-Listing.md",
     "APIs/API-Hacking.md",
     "Social-Engineering/Social-Engineering.md",
     "Cryptography-And-Authentication/Password-Attacks/Hash-Cracking-Tools/Hashcat-Cheatsheet.md",
@@ -161,13 +166,8 @@
     "Web-Application-Hacking/Directory-Traversal/Directory-Traversal.md",
     "Web-Application-Hacking/File-Inclusion/File-Inclusion.md",
     "Linux/Linux-File-Paths.md",
-    "Windows/Windows-File-Paths.md",
     "Web-Application-Hacking/File-Inclusion-And-Directory-Traver",
     "Web-Application-Hacking/Directory-Traversal",
-    "Exploitation/Using-Public-Exploits.md",
-    "Exploitation/Fixing-Public-Exploits.md",
-    "Exploitation/Compiling-Exploits.md",
-    "Reconnaissance/Active-Information-Gathering/DNS/DNS-Recon-Active.md",
     "Tools/C2/Sliver",
     "Tools/Exploit-Frameworks",
     "Services/Webservers/Apache/Apache2",
