@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
+                "file": "Cryptography-And-Authentication/Password-Attacks/Hash-Cracking-Tools/Hashcat-Cheatsheet.md",
                 "mode": "source",
                 "source": false
               }
@@ -30,9 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "8c06a4677795b028",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Exploitation/Reverse-Shells-Listing.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "APIs/API-Hacking.md",
+                "file": "Exploitation/Reverse-Shells-Listing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,19 +138,23 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "7be651cfd5d999fc",
+  "active": "8c06a4677795b028",
   "lastOpenFiles": [
-    "Web-Application-Hacking/File-Inclusion/Log-Poisoning.md",
-    "Tools/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
-    "Social-Engineering/Untitled.md",
-    "Cryptography-And-Authentication/Password-Attacks/Hash-Cracking-Tools/John-The-Ripper-Cheatsheet.md",
     "APIs/API-Hacking.md",
+    "Social-Engineering/Social-Engineering.md",
     "Cryptography-And-Authentication/Password-Attacks/Hash-Cracking-Tools/Hashcat-Cheatsheet.md",
+    "Cryptography-And-Authentication/Password-Attacks/Password-Attacks.md",
+    "Cryptography-And-Authentication/Password-Attacks/Hash-Cracking-Tools/John-The-Ripper-Cheatsheet.md",
+    "Cryptography-And-Authentication/Password-Attacks/Password-Recovery.md",
+    "Reconnaissance/Active-Information-Gathering/RPC/RPC-Recon.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/SePrivileges/SePrivilege-Token-Table.md",
+    "Tools/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
+    "Web-Application-Hacking/File-Inclusion/Log-Poisoning.md",
+    "Social-Engineering/Untitled.md",
     "Tools/Impacket/Impacket-Cheatsheet.md",
     "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Privilege-Escalation.md",
     "Exploitation/Client-Side-Attacks/Client-Side-Attacks-Microsoft-Office.md",
     "Exploitation/Client-Side-Attacks/Client-Side-Attack-Targeting.md",
-    "Social-Engineering.md",
     "Exploitation/Client-Side-Attacks/Client-Side-Attacks.md",
     "Exploitation/Client-Side-Attacks/Client-Side-Attacks-HTML-Applications.md",
     "Web-Application-Hacking/Command-Injection-Cheatsheet.md",
@@ -152,10 +168,6 @@
     "Exploitation/Fixing-Public-Exploits.md",
     "Exploitation/Compiling-Exploits.md",
     "Reconnaissance/Active-Information-Gathering/DNS/DNS-Recon-Active.md",
-    "Reconnaissance/Passive-Information-Gathering/Source-Code/Open-Source-Code-Passive.md",
-    "Reconnaissance/Passive-Information-Gathering/DNS-Recon-Passive.md",
-    "Reconnaissance/Passive-Information-Gathering/Search-Engine-Dorking.md",
-    "Reconnaissance/Passive-Information-Gathering/Passive-Recon.md",
     "Tools/C2/Sliver",
     "Tools/Exploit-Frameworks",
     "Services/Webservers/Apache/Apache2",

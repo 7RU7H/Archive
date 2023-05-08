@@ -70,6 +70,7 @@ https://github.com/tp7309/TTPassGen
 https://github.com/therodri2/username_generator.git
 
 # Wordlist fetchers
+
 https://github.com/BlackArch/wordlistctl
 https://github.com/initstring/lyricpass 
 
@@ -103,7 +104,7 @@ python3 /opt/wordlistctl/wordlistctl.py
         Symbol at the end
         all small
 
-####  Concepts with some John-The-Ripper-Custom-Rules
+#### Concepts with some John-The-Ripper-Custom-Rules
 Wordlist expansion with JOHN!
 ```bash
 john --wordlist=/wordlist.txt --rules=rulename --stdout >> newlist.txt

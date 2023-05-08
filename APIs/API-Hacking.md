@@ -170,6 +170,33 @@ Mitigations and Preventions:
 - Define data types and strict patterns for all string parameters.
 
 #### Improper Assets Management
+
+Scenarios where variant versions both past or development branches of an API are exposed along with the production branch.
+
+Hunt for:
+- Unclear answers to the purpose of an API host:
+	- Which environment is the API running in (e.g., production, staging, test, development)?
+	- Who should have network access to the API (e.g., public, internal, partners)?
+	- Which API version is running?
+	- What data is gathered and processed by the API (e.g., PII)?
+	- What's the data flow?
+- Old, development or previous API versions are running unpatched on live systems
+- Integrated services inventory, either first- or third-party, is missing or outdated.
+
+Migitiations and Preventions:
+- API security firewalls for all exposed versions of your APIs
+- API versions inventory - All API hosts and document important aspect of each
+	- Inventory integrated services and document important aspects
+	- Hosting  branches - production, staging, test, development
+		- Access controls relevant to each
+	- Avoid using production data with non-production API deployments 		
+- Retirement planning
+- API documentation available to those authorized to use the API
+- Generate documentation automatically by adopting open standards
+- Document all aspects of your API
+- Perform risk analysis on newer versions that include security improvements
+
+
 #### Insufficient Logging & Monitoring
 
 
