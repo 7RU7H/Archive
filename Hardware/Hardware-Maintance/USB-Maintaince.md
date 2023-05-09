@@ -40,6 +40,26 @@ mkfs.ntfs /dev/$sdxy
 ```
 
 
+Encrypting a USB flash memory - [THM](https://tryhackme.com/room/linuxsystemhardening) :
+```bash
+# List USB drives
+sudo lsblk
+# Locate/print block device atttributes
+sudo blkid
+# With verbose cryptsetup verify passphrase 
+sudo cryptsetup -y -v luksFormat /dev/sdb1
+# open a LUKs device <device> <name>
+sudo cryptsetup luksOpen /dev/sdb1 EDCdrive
+# make ext4 filesystem - 2 and 3 are avaliable
+sudo mkfs.ext4 /dev/mapper/EDCdrive -L "Strategos USB"
+# Mount USB
+sudo mount /dev/mapper/EDCdrive /media/secure-USB
+# Check Settings:
+sudo cryptsetup luksDump /dev/sdb1
+```
+
+
 ## References
 
 [maketecheasier](https://www.maketecheasier.com/repair-corrupted-usb-drive-linux/)
+[THM Room Linux System Hardening](https://tryhackme.com/room/linuxsystemhardening)

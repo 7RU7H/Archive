@@ -16,8 +16,9 @@ ss -anp | grep $PID # Find the IP address of adversary
 ```
 
 Patch sudoers file
-```
+```bash
 # Beware the pickiness of editing this file.
+visudo
 ```
 
 Counter Hidden Bash Shells
@@ -51,5 +52,4 @@ if (strpos($ip, ';') !== false) {
 
 ## References
 
-[]()
 [ethicalhackerclub](https://ethicalhackers.club/hack-the-box-battlegrounds-cyber-mayhem-attack-defense-review-strategies-tips-and-tricks/)

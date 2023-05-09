@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
+                "file": "Hardening/Linux-Hardening.md",
                 "mode": "source",
                 "source": false
               }
@@ -45,6 +45,24 @@
           }
         ],
         "currentTab": 2
+      },
+      {
+        "id": "cbb28f9f7e2d1a48",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7f52967498d9fff9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Blue-KOTH-Battlegrounds-Cheatsheet-Linux.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -110,7 +128,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
+                "file": "Hardening/Linux-Hardening.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,8 +158,13 @@
   },
   "active": "8c06a4677795b028",
   "lastOpenFiles": [
-    "Post-Exploitation/Privilege-Escalation/Windows/PrivEsc-Important-Windows-Locations.md",
+    "Coding-Scripting-Programming/Languages/Rust/Rust.md",
+    "Hardening/Linux-Hardening.md",
+    "Hardware/Hardware-Maintance/USB-Maintaince.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
+    "Hacker-Distros/Kali/Kali-Security/Kali-Hardening.md",
+    "Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Blue-KOTH-Battlegrounds-Cheatsheet-Linux.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/PrivEsc-Important-Windows-Locations.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation Bypassing-Contrained-Powershell.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
     "Exploitation/Reverse-Shells-Listing.md",
@@ -161,11 +184,6 @@
     "Exploitation/Client-Side-Attacks/Client-Side-Attacks-Microsoft-Office.md",
     "Exploitation/Client-Side-Attacks/Client-Side-Attack-Targeting.md",
     "Exploitation/Client-Side-Attacks/Client-Side-Attacks.md",
-    "Exploitation/Client-Side-Attacks/Client-Side-Attacks-HTML-Applications.md",
-    "Web-Application-Hacking/Command-Injection-Cheatsheet.md",
-    "Web-Application-Hacking/Directory-Traversal/Directory-Traversal.md",
-    "Web-Application-Hacking/File-Inclusion/File-Inclusion.md",
-    "Linux/Linux-File-Paths.md",
     "Web-Application-Hacking/File-Inclusion-And-Directory-Traver",
     "Web-Application-Hacking/Directory-Traversal",
     "Tools/C2/Sliver",

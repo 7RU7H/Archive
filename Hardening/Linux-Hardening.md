@@ -1,5 +1,22 @@
 # Hardening
 
+
+## Physical Security
+
+[[Physical-Security]] for your Linux machine...
+
+Encrypt your drives. Defense in depth; depth being analogus to wasting the time of the attacker.  
+
+GRUB password with [PBKDF2](https://en.wikipedia.org/wiki/PBKDF2)
+```bash
+# This hash is added to a config
+grub2-mkpasswd-pbkdf2
+```
+
+For [[Kali-Hardening]] LVM encryption is avaliable preinstall.
+
+## AppArmor
+
 [AppArmor](https://apparmor.net/): *"AppArmor is an effective and easy-to-use Linux application security system. AppArmor proactively protects the operating system and applications from external or internal threats, even zero-day attacks, by enforcing good behavior and preventing both known and unknown application flaws from being exploited. AppArmor supplements the traditional Unix discretionary access control (DAC) model by providing mandatory access control (MAC). It has been included in the mainline Linux kernel since version 2.6.36 and its development has been supported by Canonical since 2009."*
 
 ```bash
@@ -7,33 +24,32 @@ aa-status
 sudo journalctl -fx
 ```
 
-[ssh tarpit](https://github.com/skeeto/endlessh)
-
 
 ## Softblock wifi and bluetooth
+
+To Hardblock wifi or bluetooth find the toggle on motherboards, in bioses and other switchs on peripherals.   
 ```bash
 rfkill list
 rfkill block wifi
 rkilll block bluetooth
 ```
 
-To hardblock wifi or bluetooth find the toggle on motherboards, in bioses and other switchs on peripherals.   
-
 ## SSH Related
-[ssh](https://linuxhint.com/disable_root_ssh_debian/)
+
+[SSH](https://linuxhint.com/disable_root_ssh_debian/)
 
 Helpful connect unwanted ssh connections back to there machine lol. 
 ```bash
 socat -d -d TCP-L:22,reuseaddr,fork SYSTEM:"nc \\$SOCAT_PEERADDR 22
 ```
 
-SSH Keys
+SSH Keys 
 
-
+[ssh tarpit](https://github.com/skeeto/endlessh)
 
 ## Iptables
 
-Log new connections to a box [ippsec](https://www.youtube.com/watch?v=ABVR8EgXsQU&t=186)
+Log new connections to a box [Ippsec](https://www.youtube.com/watch?v=ABVR8EgXsQU&t=186)
 ```bash
 iptables -A INPUT -p tcp -m state --state NEW -j LOG --log-prefix "IPTables New-Connection: " -i $interface
 ```
@@ -47,12 +63,96 @@ mount | grep shm # to check flags
 ```
 
 
+## Filesystem 
+
+Modern \*nix ship  with LUKS (Linux Unified Key Setup), from [THM](https://tryhackme.com/room/linuxsystemhardening) :
+*"Most distributions let you encrypt a drive using a graphical interface. However, if you would like to set up LUKS from the command line, the steps are along these lines:*"
+- Install `cryptsetup-luks`. (You can issue `apt install cryptsetup`, `yum install cryptsetup-luks` or `dnf install cryptsetup-luks` for Ubuntu/Debian, RHEL/Cent OS, and Fedora, respectively.)
+- Confirm the partition name using `fdisk -l`, `lsblk` or `blkid`. (Create a partition using `fdisk` if necessary.)
+- Set up the partition for LUKS encryption: `cryptsetup -y -v luksFormat /dev/sdb1`. (Replace `/dev/sdb1` with the partition name you want to encrypt.)
+- Create a mapping to access the partition: `cryptsetup luksOpen /dev/sdb1 EDCdrive`.
+- Confirm mapping details: `ls -l /dev/mapper/EDCdrive` and `cryptsetup -v status EDCdrive`.
+- Overwrite existing data with zero: `dd if=/dev/zero of=/dev/mapper/EDCdrive`.
+- Format the partition: `mkfs.ext4 /dev/mapper/EDCdrive -L "Strategos USB"`.
+- Mount it and start using it like a usual partition: `mount /dev/mapper/EDCdrive /media/secure-USB`.
+
+Encrypting a USB flash memory - [THM](https://tryhackme.com/room/linuxsystemhardening) :
+```bash
+# List USB drives
+sudo lsblk
+# Locate/print block device atttributes
+sudo blkid
+# With verbose cryptsetup verify passphrase 
+sudo cryptsetup -y -v luksFormat /dev/sdb1
+# open a LUKs device <device> <name>
+sudo cryptsetup luksOpen /dev/sdb1 EDCdrive
+# make ext4 filesystem - 2 and 3 are avaliable
+sudo mkfs.ext4 /dev/mapper/EDCdrive -L "Strategos USB"
+# Mount USB
+sudo mount /dev/mapper/EDCdrive /media/secure-USB
+# Check Settings:
+sudo cryptsetup luksDump /dev/sdb1
+```
+For more related USB topic consider [[USB-Maintaince]]
+
+Single file encryption and decryption
+```bash
+# count=$x is MBs in size!
+# ext4 does not support <= 32MB
+dd if=/dev/zero of=cryptfile.img bs=1M count=64
+# Format it providing a passphrase
+sudo cryptsetup luksFormat cryptfile.img
+# Bind file to a block device for manipluation like a partition
+sudo cryptsetup luksOpen cryptfile.img cryptdev
+# Create a filesystem at the device block
+sudo mkfs.ext4 /dev/mapper/cryptdev
+# Close deviuce
+sudo cryptsetup luksClose cryptdev
+
+# Decrypt
+sudo cryptsetup open --type luks $encryptedFile.img $decryptName
+# Mount to a directory
+mkdir -p cryptdir
+sudo mount -t auto /dev/mapper/cryptdev cryptdir
+# Unmount and close
+sudo umount cryptdir
+sudo cryptsetup luksClose cryptdev
+```
+
+Create a /etc/cryptmount/cmtab file user config - `cryptmount` allows us to mount configured encrypted files without root permissions.
+```bash
+mycryptlabel {
+    dev=$(HOME)/cryptfile.img
+    dir=$(HOME)/cryptdir
+    fstype=auto
+    keyformat=luks
+}
+```
+
+Private mount namespace, mount and unmount
+```bash
+# Create private mountspace
+sudo unshare -m sudo -u "$USER" -i
+# mount
+cryptmount mycryptlabel
+# unmount
+cryptmount -u mycryptlabel
+```
+
+
 ## Disto Specific Guides
 
 [Fedora](https://docs.fedoraproject.org/en-US/fedora/17/html/Security_Guide/chap-Security_Guide-Basic_Hardening.html)
 
 
 ## References
-[ippsec geniunely rocks](https://ippsec.rocks/?#)
+
+[lpenz](http://www.lpenz.org/articles/luksfile/)
+[THM Room Linux System Hardening](https://tryhackme.com/room/linuxsystemhardening)
+[Ippsec geniunely rocks](https://ippsec.rocks/?#)
 [@climagic](@climagic)
-[Fedroa Hardening Guide(https://docs.fedoraproject.org/en-US/fedora/17/html/Security_Guide/chap-Security_Guide-Basic_Hardening.html)
+[Fedroa Hardening Guide](https://docs.fedoraproject.org/en-US/fedora/17/html/Security_Guide/chap-Security_Guide-Basic_Hardening.html)
+[PBKDF2](https://en.wikipedia.org/wiki/PBKDF2)
+[https://linux.die.net/man/8/cryptsetup](https://linux.die.net/man/8/cryptsetup)
+[https://linux.die.net/man/8/cryptmount](https://linux.die.net/man/8/cryptmount)
+[https://willhaley.com/blog/encrypted-file-container-disk-image-in-linux/](https://willhaley.com/blog/encrypted-file-container-disk-image-in-linux/)
