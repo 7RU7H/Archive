@@ -25,44 +25,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "APIs/API-Hacking.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8c06a4677795b028",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Hardening/Linux-Hardening.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
-      },
-      {
-        "id": "cbb28f9f7e2d1a48",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "7f52967498d9fff9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Blue-KOTH-Battlegrounds-Cheatsheet-Linux.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -128,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Hardening/Linux-Hardening.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -156,10 +126,11 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "8c06a4677795b028",
+  "active": "7be651cfd5d999fc",
   "lastOpenFiles": [
-    "Coding-Scripting-Programming/Languages/Rust/Rust.md",
+    "APIs/API-Hacking.md",
     "Hardening/Linux-Hardening.md",
+    "Coding-Scripting-Programming/Languages/Rust/Rust.md",
     "Hardware/Hardware-Maintance/USB-Maintaince.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
     "Hacker-Distros/Kali/Kali-Security/Kali-Hardening.md",
@@ -168,7 +139,6 @@
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation Bypassing-Contrained-Powershell.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
     "Exploitation/Reverse-Shells-Listing.md",
-    "APIs/API-Hacking.md",
     "Social-Engineering/Social-Engineering.md",
     "Cryptography-And-Authentication/Password-Attacks/Hash-Cracking-Tools/Hashcat-Cheatsheet.md",
     "Cryptography-And-Authentication/Password-Attacks/Password-Attacks.md",
