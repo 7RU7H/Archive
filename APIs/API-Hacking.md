@@ -199,7 +199,21 @@ Migitiations and Preventions:
 
 #### Insufficient Logging & Monitoring
 
+Lack of Logging and Monitor reduces detection potential of Blue Teams and allow adversaries to further attack, pivot and persist.  
 
+Hunt for
+- No Logs
+- [[Log-Injection]] 
+- Logs that not continuously monitored 
+- API infrastructure is not continuously monitored 
+
+Migitations and Preventions
+- Log all failed authentication attempts, denied access, and input validation errors.
+- Logs should be written using a format suited to be consumed by a log management solution, and should include enough detail to identify the malicious actor.
+- Logs should be handled as sensitive data, and their integrity should be guaranteed at rest and transit.
+- Configure a monitoring system to continuously monitor the infrastructure, network, and the API functioning.
+- Use a Security Information and Event Management (SIEM) system to aggregate and manage logs from all components of the API stack and hosts.
+- Configure custom dashboards and alerts, enabling suspicious activities to be detected and responded to earlier.
 
 ## References
 

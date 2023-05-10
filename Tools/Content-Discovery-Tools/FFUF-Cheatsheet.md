@@ -20,7 +20,7 @@ woops - will update soon
 
 #### Wordlists and Use
 
-Consult [[Wordlists]], [[Wordlist-Library]] and [[Wordlists-Considerations]]
+Consult [[Wordlists]], [[Wordlist-Library]] and [[Wordlist-Considerations]]
 
 **File extensions**
 /seclists/Discovery/Web-Content/web-extensions.txt
@@ -87,7 +87,10 @@ ffuf -w wordlist.txt:FUZZ -u http://$IP/admin/admin.php -X POST -d 'FUZZ=key' -H
 ```
 
 #### Fuzz.. Recursively
+
 ```bash
+# Fuzz and extension -e $ext recusive
+# Use -v for output QoL 
 ffuf -w wordlist.txt:FUZZ -u http://$IP/FUZZ -recursion -recursion-depth 1 -e .php -v
 ```
 
@@ -110,6 +113,8 @@ Reminder to edit the request.req and add FUZZ Field
 # Consider editing size of request to speed up fuzzing
 ffuf -request request.req -request-proto http
 ```
+
+
 
 ## References
 
