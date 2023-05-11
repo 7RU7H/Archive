@@ -37,7 +37,7 @@ index.php?option=<nameofplugin>
 administrator/manifests/files/joomla.xml
 plugins/system/cache/cache.xml
 ```
-
+[Joomla.xml is for pre version 4.0 and will contain the version](https://docs.joomla.org/Manifest_files)
 
 ## Reverse Shell
 
@@ -62,3 +62,4 @@ System → Component → Media → “php” in legal extensions and nothing in 
 
 [Haax.fr](https://cheatsheet.haax.fr/web-pentest/content-management-system-cms/joomla/)
 [six2dez](https://github.com/six2dez/pentest-book/blob/master/enumeration/webservices/joomla.md)
+[Joomla Documentation Manifest files](https://docs.joomla.org/Manifest_files)

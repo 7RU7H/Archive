@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Enumeration-Defined.md",
+                "file": "Tools/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +104,7 @@
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -154,7 +154,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 286.5
+    "width": 285.5
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -170,7 +170,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Web-Application-Hacking/CMS/Joomla.md",
+                "file": "Tools/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -198,19 +198,20 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "a0f85892644bb608",
+  "active": "98a1a34dd447525b",
   "lastOpenFiles": [
+    "Cryptography-And-Authentication/Password-Attacks/Wordlist-Tools/Cewl-Cheatsheet.md",
+    "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Enumeration-Defined.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+    "Web-Application-Hacking/CMS/Joomla.md",
     "Post-Exploitation/Privilege-Escalation/Privilege-Escalation.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
-    "Web-Application-Hacking/CMS/Joomla.md",
     "Reconnaissance/Active-Information-Gathering/OS-Detection/OS-Detection.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation Bypassing-Contrained-Powershell.md",
     "Tools/Neo4j/Neo4j.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
     "Post-Exploitation/Privilege-Escalation/Linux/Important-Linux-Locations.md",
     "Tools/Neo4j/Bloodhound-Guide.md",
-    "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Enumeration-Defined.md",
     "Post-Exploitation/Privilege-Escalation/Windows/PowerSploit-Helpsheet.md",
     "Post-Exploitation/Privilege-Escalation/Windows/SePrivileges/SePrivilege-Token-Table.md",
     "Post-Exploitation/Privilege-Escalation/Windows/SePrivileges/SeBackup-Privilege.md",
@@ -225,7 +226,6 @@
     "Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Blue-KOTH-Battlegrounds-Cheatsheet-Linux.md",
     "Post-Exploitation/Privilege-Escalation/Windows/PrivEsc-Important-Windows-Locations.md",
     "Exploitation/Reverse-Shells-Listing.md",
-    "Social-Engineering/Social-Engineering.md",
     "Web-Application-Hacking/File-Inclusion-And-Directory-Traver",
     "Web-Application-Hacking/Directory-Traversal",
     "Tools/C2/Sliver",
