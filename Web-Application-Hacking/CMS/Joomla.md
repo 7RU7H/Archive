@@ -2,6 +2,8 @@
 ## Scanning and Enumeration
 
 ```bash
+# Kali-Rolling
+sudo apt install joomscan
 # Get components running on the website
 joomscan --url http://10.10.10.150/ --random-agent --enumerate-components
 
@@ -15,6 +17,25 @@ joomscan --url http://10.10.10.150/ --random-agent --enumerate-components
 
 # Joomlavs is also a good scanning tool
 https://github.com/rastating/joomlav
+
+# Scan using random agent through burpsuite proxy while trying to enumerate components
+joomscan -u http://target.com -ec -r- --proxy 127.0.0.1:8080 # | tee -a joomscan-report 
+```
+
+
+## Common Files
+
+```bash
+README.txt
+htaccess.txt
+web.config.txt
+configuration.php
+LICENSE.txt
+administrator
+administrator/index.php # Default admin login
+index.php?option=<nameofplugin>
+administrator/manifests/files/joomla.xml
+plugins/system/cache/cache.xml
 ```
 
 
@@ -40,3 +61,4 @@ System → Component → Media → “php” in legal extensions and nothing in 
 ## References
 
 [Haax.fr](https://cheatsheet.haax.fr/web-pentest/content-management-system-cms/joomla/)
+[six2dez](https://github.com/six2dez/pentest-book/blob/master/enumeration/webservices/joomla.md)

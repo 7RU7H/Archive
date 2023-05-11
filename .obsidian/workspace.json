@@ -18,8 +18,93 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "d6d1ec56d99ac76c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "98a1a34dd447525b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Enumeration-Defined.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ea7ff8dec0c3f127",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/Neo4j/Bloodhound-Guide.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d34763ae2f419c18",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/Neo4j/Neo4j.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2043f28da42e4406",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e11d8d70ba7994a3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Post-Exploitation/Privilege-Escalation/Privilege-Escalation.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a0f85892644bb608",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Web-Application-Hacking/CMS/Joomla.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -48,7 +133,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Impacket ",
+                "query": "ssh version",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +170,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/Content-Discovery-Tools/FFUF-Cheatsheet.md",
+                "file": "Web-Application-Hacking/CMS/Joomla.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,34 +198,34 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "9c25bdb074742d91",
+  "active": "a0f85892644bb608",
   "lastOpenFiles": [
-    "Tools/Wordlists/Wordlist-Considerations.md",
+    "Post-Exploitation/Privilege-Escalation/Privilege-Escalation.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
+    "Web-Application-Hacking/CMS/Joomla.md",
+    "Reconnaissance/Active-Information-Gathering/OS-Detection/OS-Detection.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation Bypassing-Contrained-Powershell.md",
+    "Tools/Neo4j/Neo4j.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/Important-Linux-Locations.md",
+    "Tools/Neo4j/Bloodhound-Guide.md",
+    "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Enumeration-Defined.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/PowerSploit-Helpsheet.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/SePrivileges/SePrivilege-Token-Table.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/SePrivileges/SeBackup-Privilege.md",
     "Tools/Content-Discovery-Tools/FFUF-Cheatsheet.md",
+    "Tools/Wordlists/Wordlist-Considerations.md",
     "Hardening/Linux-Hardening.md",
     "Cryptography-And-Authentication/Password-Attacks/Hash-Cracking-Tools/Hashcat-Cheatsheet.md",
     "APIs/API-Hacking.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
     "Coding-Scripting-Programming/Languages/Rust/Rust.md",
     "Hardware/Hardware-Maintance/USB-Maintaince.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
     "Hacker-Distros/Kali/Kali-Security/Kali-Hardening.md",
     "Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Blue-KOTH-Battlegrounds-Cheatsheet-Linux.md",
     "Post-Exploitation/Privilege-Escalation/Windows/PrivEsc-Important-Windows-Locations.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation Bypassing-Contrained-Powershell.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
     "Exploitation/Reverse-Shells-Listing.md",
     "Social-Engineering/Social-Engineering.md",
-    "Cryptography-And-Authentication/Password-Attacks/Password-Attacks.md",
-    "Cryptography-And-Authentication/Password-Attacks/Hash-Cracking-Tools/John-The-Ripper-Cheatsheet.md",
-    "Cryptography-And-Authentication/Password-Attacks/Password-Recovery.md",
-    "Reconnaissance/Active-Information-Gathering/RPC/RPC-Recon.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/SePrivileges/SePrivilege-Token-Table.md",
-    "Tools/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
-    "Web-Application-Hacking/File-Inclusion/Log-Poisoning.md",
-    "Social-Engineering/Untitled.md",
-    "Tools/Impacket/Impacket-Cheatsheet.md",
-    "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Privilege-Escalation.md",
     "Web-Application-Hacking/File-Inclusion-And-Directory-Traver",
     "Web-Application-Hacking/Directory-Traversal",
     "Tools/C2/Sliver",

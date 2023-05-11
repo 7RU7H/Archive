@@ -41,10 +41,7 @@ runas /netonly /user:$domain\$user cmd.exe
 ```
 [Ippsec Active](https://www.youtube.com/watch?v=jUc1J31DNdw)
 
-
-## Bloodhound
-
-[For detailed official documentation](https://bloodhound.readthedocs.io/en/latest/data-analysis/bloodhound-gui.html)
+## FoxIt Remote Python 
 
 [Python Ingestor](https://github.com/fox-it/BloodHound.py)
 
@@ -56,13 +53,27 @@ python3 bloodhound.py -c all -dc dc01.domain.com -u <users> -p <password> -ns $I
 python3 bloodhound.py --dns-tcp -c all -d domain.tld -ns 10.10.10.10 -u $compromisedUser -p 'password'
 ```
 
+
+## BloodHound
+
+[For detailed official documentation](https://bloodhound.readthedocs.io/en/latest/data-analysis/bloodhound-gui.html)
+
+Start neo4j with enough history not to tank and die.
+```bash
+ulimit -n 40000 # increase history
+# THEN
+sudo neo4j console
+# THEN goto localhost:7474
+```
+For more [[Neo4j]] related information follow the link
+
 Beware importanting data is stored and retain after exiting. Comply with data protection and any data destruction policies, but also if you don't want to get confused by any old data - `Database Info -> Scroll to the bottom of the list -> Clear Database`.
 
 ```bash
 bloodhound --no-sandbox
 ```
 
-## Getting the most out of the Visualisation 
+## Getting the most out of the visualisation 
 
 Change `Settings -> Edge Label Display & Node Label Display -> [both] to Always Display`, may improve infomation visibility, but that may require reconfiguration in dense graphs - larger networks displayed in graph format by bloodhound.
 
@@ -108,3 +119,8 @@ MATCH p=(c1:Computer)-[r1:MemberOf*1..]->(g:Group)-[r2:AdminTo]->(n:Computer) RE
 ## References
 
 [Docs](https://bloodhound.readthedocs.io/en/latest/data-analysis/bloodhound-gui.html)
+[Ippsec Active](https://www.youtube.com/watch?v=jUc1J31DNdw)
+[For detailed official documentation](https://bloodhound.readthedocs.io/en/latest/data-analysis/bloodhound-gui.html)
+[Python Ingestor](https://github.com/fox-it/BloodHound.py)
+[Sharphound](https://github.com/BloodHoundAD/BloodHound/tree/master/Collectors)
+[Flangvik/SharpCollection](https://github.com/Flangvik/SharpCollection) 
