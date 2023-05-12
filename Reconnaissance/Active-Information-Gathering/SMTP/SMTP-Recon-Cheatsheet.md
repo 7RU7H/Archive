@@ -9,7 +9,7 @@ See [Debug STMP connection for great description of SMTP commands that occuring 
 ```bash
 telnet $IP 25
 nc -nv $IP 25
-EHLO # client server identification Hello
+EHLO all # client server identification Hello
 VRFY $useremail # verify email address
 EXPN # Ask server for membership
 # To quit telnet is worse than vim
@@ -26,7 +26,7 @@ use auxiliary/scanner/smtp/smtp_enum
 msf auxiliary(smtp_enum) > set rhosts $IP
 msf auxiliary(smtp_enum) > set rport 25
 msf auxiliary(smtp_enum) > set USER_FILE /usr/
-msf auxiliary(smtp_enum) > exploitv
+msf auxiliary(smtp_enum) > exploit
 ```
 
 ## References

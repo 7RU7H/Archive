@@ -19,11 +19,16 @@ For [[Kali-Hardening]] LVM encryption is avaliable preinstall.
 
 [AppArmor](https://apparmor.net/): *"AppArmor is an effective and easy-to-use Linux application security system. AppArmor proactively protects the operating system and applications from external or internal threats, even zero-day attacks, by enforcing good behavior and preventing both known and unknown application flaws from being exploited. AppArmor supplements the traditional Unix discretionary access control (DAC) model by providing mandatory access control (MAC). It has been included in the mainline Linux kernel since version 2.6.36 and its development has been supported by Canonical since 2009."*
 
+[AppArmor](https://www.apparmor.net/) can be used for more granular control over processes and their host and network access
 ```bash
 aa-status 
 sudo journalctl -fx
 ```
 
+
+## SELinux 
+
+[SELinux](https://github.com/SELinuxProject) can be used for more granular control over processes and their host and network access
 
 ## Softblock wifi and bluetooth
 
@@ -139,6 +144,53 @@ cryptmount mycryptlabel
 cryptmount -u mycryptlabel
 ```
 
+## Firewalls
+
+Proper implementation of Linux [[Firewalls]] to prevent adversaries [[Evading-Firewalls]] requires firstly a Firewall and a ruleset. Some of the security risk is mitigate by defining controls over acceptable network traffic, what packets from specific ports are allowed to leave a machine or be accepted at a recieve port and preventing clients functioning as a servers. Therefore considerations on a ruleset are critical as to Allow, Deny or Reject:
+- What should enter the network 
+- What should leave the network
+
+Stateless Firewalls inspect specific IP and TCP/UDP Header fields:
+- Filtering IP based on:
+	- Source IP address
+	- Destination IP address
+- Filtering on TCP/UDP Header
+	- Source TCP/UDP port
+	- Destination TCP/UDP port
+
+Prior to utilizing a solution, deciding on a firewall policy or an enforcer of an existing security policy that covers firewall configuration. Although their are advocates for either really it is a lesser of two evils to pick the first:
+- Block everything and allow certain exceptions.
+- Allow everything and block certain exceptions.
+
+My reasoning being that to do so firstly in the long term is less work, in the short and long term you will have great understanding of Linux networking and exceptions require visibility. Hindsight is painful an exception is an exemption from what you were monitoring.
+
+Netfilter hooks require a front-end like `iptables` see [[ipXtables]] for futher usage
+```bash
+# A generally good idea would to blacklist and then open ports one at a time on use, especially if they are below 1024 as root is require to bind to those ports.  
+iptables -A INPUT -p tcp --dport 22 -j ACCEPT
+iptables -A OUTPUT -p tcp --sport 22 -j ACCEPT
+# Flush rules
+iptables -F 
+# List all rules
+iptables -L
+```
+
+Netfilter hooks require a front-end like `fwfilter`
+```bash
+# Create a table called fwfilter
+nft add table fwfilter
+# Add an input chain
+nft add chain fwfilter fwinput { type filter hook input priority 0 \; }
+# Add an output chain
+nft add chain fwfilter fwoutput { type filter hook output priority 0 \; }
+# Add allow rule for ssh traffic
+nft add fwfilter fwinput tcp dport 22 accept
+nft add fwfilter fwoutput tcp sport 22 accept
+# List fwfilter
+nft list table fwfilter
+```
+
+For the uncomplicated amongst us there is `ufw` - [[ufw]]
 
 ## Disto Specific Guides
 
@@ -156,3 +208,5 @@ cryptmount -u mycryptlabel
 [https://linux.die.net/man/8/cryptsetup](https://linux.die.net/man/8/cryptsetup)
 [https://linux.die.net/man/8/cryptmount](https://linux.die.net/man/8/cryptmount)
 [https://willhaley.com/blog/encrypted-file-container-disk-image-in-linux/](https://willhaley.com/blog/encrypted-file-container-disk-image-in-linux/)
+[AppArmor](https://www.apparmor.net/) 
+[SELinux](https://github.com/SELinuxProject)
