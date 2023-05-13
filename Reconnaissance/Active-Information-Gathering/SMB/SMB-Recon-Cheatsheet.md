@@ -13,6 +13,8 @@ NETLOGON|
 
 Some organisation have Anonymous logins due to not wanting make people authenicate when they mess with the share file, **but** put restriction on share files - not a misconfiguration [Ref: Unknown Artists](https://www.youtube.com/watch?v=n4DgGFpQrjk)
 
+Shares utiliizing Home directories have [Roaming Profiles](https://docs.microsoft.com/en-us/windows-server/storage/folder-redirection/folder-redirection-rup-overview) - your bad stuff comes too!
+
 ## smbmap
 
 Shows Share **Permissions** and Comment
@@ -156,3 +158,5 @@ search smb_login
 [irgoncalves](https://github.com/irgoncalves/smbclient_cheatsheet)
 [referenced by the above](https://sharingsec.blogspot.com/)
 [Unknown Artists](https://www.youtube.com/watch?v=n4DgGFpQrjk)
+[HTB academy Windows Privilege Escalation Course](https://academy.hackthebox.com/course/preview/windows-privilege-escalation)
+[Roaming Profiles](https://docs.microsoft.com/en-us/windows-server/storage/folder-redirection/folder-redirection-rup-overview) 

@@ -44,6 +44,18 @@
             }
           },
           {
+            "id": "40a8540f7efaacd7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "a315420f94c09cfa",
             "type": "leaf",
             "state": {
@@ -68,7 +80,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -114,8 +126,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -135,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Hardening/Linux-Hardening.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,18 +174,20 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "904463d60d8efa8d",
+  "active": "40a8540f7efaacd7",
   "lastOpenFiles": [
-    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
+    "Reconnaissance/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
     "Post-Exploitation/Privilege-Escalation/Privilege-Escalation.md",
+    "Hardening/Linux-Hardening.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
     "Reconnaissance/Passive-Information-Gathering/Website-Recon.md",
     "Reconnaissance/Active-Information-Gathering/User/User-Active-Recon.md",
     "Reconnaissance/Active-Information-Gathering/POP3/POP3-Recon.md",
     "Reconnaissance/Active-Information-Gathering/DNS/DNS-Active-Recon.md",
     "Tools/DNS-Related/DNSRecon-Cheatsheet.md",
     "Tools/Content-Discovery-Tools/FFUF-Cheatsheet.md",
-    "Hardening/Linux-Hardening.md",
     "Linux/ufw.md",
     "Reconnaissance/Active-Information-Gathering/SMTP/SMTP-Recon-Cheatsheet.md",
     "Tools/DNS-Related/DIG-cheatsheet.md",
@@ -186,11 +199,9 @@
     "Tools/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
     "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Enumeration-Defined.md",
     "Reconnaissance/Active-Information-Gathering/OS-Detection/OS-Detection.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation Bypassing-Contrained-Powershell.md",
     "Tools/Neo4j/Neo4j.md",
     "Post-Exploitation/Privilege-Escalation/Linux/Important-Linux-Locations.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/PowerSploit-Helpsheet.md",
     "Web-Application-Hacking/File-Inclusion-And-Directory-Traver",
     "Web-Application-Hacking/Directory-Traversal",
     "Tools/C2/Sliver",
