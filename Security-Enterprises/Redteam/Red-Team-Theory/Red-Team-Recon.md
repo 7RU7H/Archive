@@ -5,7 +5,7 @@ Red Teaming often requires both [[Passive-Recon]] and [[Active-Recon]]
 
 Link by Recon Type | Recon Locality
 --- | --- 
-[[DNS-Recon-Active]] | Internal and External
+[[DNS-Active-Recon]] | Internal and External
 [[DNS-Recon-Passive]] | External
 [[Recon-ng]] is Passive Recon | OSINT
 [[Shodan]] is Passive Recon | Exposed Devices

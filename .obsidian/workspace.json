@@ -20,36 +20,12 @@
             }
           },
           {
-            "id": "d6d1ec56d99ac76c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "ea7ff8dec0c3f127",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "Tools/Neo4j/Bloodhound-Guide.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d34763ae2f419c18",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tools/Neo4j/Neo4j.md",
                 "mode": "source",
                 "source": false
               }
@@ -68,7 +44,7 @@
             }
           },
           {
-            "id": "e11d8d70ba7994a3",
+            "id": "a315420f94c09cfa",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -80,55 +56,19 @@
             }
           },
           {
-            "id": "a0f85892644bb608",
+            "id": "d6d1ec56d99ac76c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Reconnaissance/Active-Information-Gathering/DNS/DNS-Recon-Active.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e900ca6cf0aae3b6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tools/DNS-Related/DNSRecon-Cheatsheet.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f00f3bbf570991cc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tools/Content-Discovery-Tools/FFUF-Cheatsheet.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7b2c3ccc83dc9c5a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tools/DNS-Related/DIG-cheatsheet.md",
+                "file": "Hardening/Linux-Hardening.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -157,7 +97,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "ssh version",
+                "query": "openssl",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -174,7 +114,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -194,7 +135,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Reconnaissance/Active-Information-Gathering/DNS/DNS-Recon-Active.md",
+                "file": "Hardening/Linux-Hardening.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -222,10 +163,16 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "a0f85892644bb608",
+  "active": "904463d60d8efa8d",
   "lastOpenFiles": [
+    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
+    "Post-Exploitation/Privilege-Escalation/Privilege-Escalation.md",
+    "Reconnaissance/Passive-Information-Gathering/Website-Recon.md",
+    "Reconnaissance/Active-Information-Gathering/User/User-Active-Recon.md",
+    "Reconnaissance/Active-Information-Gathering/POP3/POP3-Recon.md",
+    "Reconnaissance/Active-Information-Gathering/DNS/DNS-Active-Recon.md",
     "Tools/DNS-Related/DNSRecon-Cheatsheet.md",
-    "Reconnaissance/Active-Information-Gathering/DNS/DNS-Recon-Active.md",
     "Tools/Content-Discovery-Tools/FFUF-Cheatsheet.md",
     "Hardening/Linux-Hardening.md",
     "Linux/ufw.md",
@@ -234,22 +181,16 @@
     "Reconnaissance/Passive-Information-Gathering/DNS-Recon-Passive.md",
     "Linux/Linux-Concepts/ipXtables.md",
     "Web-Application-Hacking/CMS/Joomla.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
     "Tools/Neo4j/Bloodhound-Guide.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
     "Cryptography-And-Authentication/Password-Attacks/Wordlist-Tools/Cewl-Cheatsheet.md",
     "Tools/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
     "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Enumeration-Defined.md",
-    "Post-Exploitation/Privilege-Escalation/Privilege-Escalation.md",
     "Reconnaissance/Active-Information-Gathering/OS-Detection/OS-Detection.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation Bypassing-Contrained-Powershell.md",
     "Tools/Neo4j/Neo4j.md",
     "Post-Exploitation/Privilege-Escalation/Linux/Important-Linux-Locations.md",
     "Post-Exploitation/Privilege-Escalation/Windows/PowerSploit-Helpsheet.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/SePrivileges/SePrivilege-Token-Table.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/SePrivileges/SeBackup-Privilege.md",
-    "Tools/Wordlists/Wordlist-Considerations.md",
     "Web-Application-Hacking/File-Inclusion-And-Directory-Traver",
     "Web-Application-Hacking/Directory-Traversal",
     "Tools/C2/Sliver",

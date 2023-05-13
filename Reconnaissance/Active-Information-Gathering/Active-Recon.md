@@ -13,7 +13,7 @@ This is a hub page for linking all of a specific directory structure.
 [[Vulnerability-Scanning]]
 [[Active-Directory-Enumeration-Defined]]
 [[DNSenum-Cheatsheet]]
-[[DNS-Recon-Active]]
+[[DNS-Active-Recon]]
 [[Fierce-Cheatsheet]]
 [[LDAP-Recon]]
 [[Masscan-Cheatsheet]]

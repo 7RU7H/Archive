@@ -65,7 +65,7 @@ nc -nv $IP
 
 ## 53 (TCP & UDP) - DNS/DNSSEC
 
-[[DNS-Defined]], [[DNS-Recon-Active]], [[DNS-Recon-Passive]]
+[[DNS-Defined]], [[DNS-Active-Recon]], [[DNS-Recon-Passive]]
 
 DNSSEC ensure possibility that a DNS response received is from the domain owner. Requires:
 1. The DNS zone owner signs all DNS records using a private key.

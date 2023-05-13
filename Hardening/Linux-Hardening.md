@@ -192,10 +192,31 @@ nft list table fwfilter
 
 For the uncomplicated amongst us there is `ufw` - [[ufw]]
 
+## Remote Access
+
+To harden Linux remote access we must try defend against:
+- Brute Force and guess of passwords
+- Password sniffing
+- [[MITM-Attacks]] over the network
+
+Sometimes it pays to think similarly to protercting a domain controller, which do you actually need remote access to a machine? Data in transit by design has to be parsed at the intended endpoint even if it is encrypted. With sniffed encrypted data all it then takes is to retroactively decrypt with any keys used and patience was really the only barrier to the attacker. If you do need remote access:
+- Do not connect over WIFI or Bluetooth, absolutely not public
+- Use MFA were possible
+- Passphrase that are long and strong that memberable 
+	- Take care making passsphrase that reference interests that you can be profiled for through OSINT you from social media by attackers 
+- Use encrypted protocols to remotely connect
+- Use [[Tor-Hidden-Services]] or [[IPsec]] - require your own hosting and maintaining your own infrastructure 
+- Disable Root/Administrator remote access
+	- In `/etc/ssh/sshd_config`
+	 - [Deny RDP or other protocols for Administrators Group](https://learn.microsoft.com/en-us/troubleshoot/windows-server/remote/deny-user-permissions-to-logon-to-rd-session-host)
+- Use RSA keys for ssh, see [[SSH-Cheatsheet]] - `ssh-keygen -t rsa` 
+- Use [[Cryptography]] - `openssl` for key generation 
+
+
 ## Disto Specific Guides
 
-[Fedora](https://docs.fedoraproject.org/en-US/fedora/17/html/Security_Guide/chap-Security_Guide-Basic_Hardening.html)
-
+- [Fedora](https://docs.fedoraproject.org/en-US/fedora/17/html/Security_Guide/chap-Security_Guide-Basic_Hardening.html)
+- [[Kali-Hardening]]
 
 ## References
 
@@ -210,3 +231,4 @@ For the uncomplicated amongst us there is `ufw` - [[ufw]]
 [https://willhaley.com/blog/encrypted-file-container-disk-image-in-linux/](https://willhaley.com/blog/encrypted-file-container-disk-image-in-linux/)
 [AppArmor](https://www.apparmor.net/) 
 [SELinux](https://github.com/SELinuxProject)
+[Microsoft Learn - deny e]https://learn.microsoft.com/en-us/troubleshoot/windows-server/remote/deny-user-permissions-to-logon-to-rd-session-host)

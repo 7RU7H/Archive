@@ -10,7 +10,7 @@ A DNS Server provides:
 
 ## Links
 
-[For Active Enumeration](DNS-Recon-Active.md)
+[For Active Enumeration](DNS-Active-Recon.md)
 [for Passive Enumeration](DNS-Recon-Passive.md)
 [[Azure-Administration-Azure-DNS]]
 

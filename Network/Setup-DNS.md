@@ -1,6 +1,6 @@
 # Setup DNS
 
-This article will require some prior knowledge regarding, although many of the articles listed have this information embedded in them it may be worth briefer schematic information like in [[DNS-Defined]] and trouble shooting yourself with [[DNS-Recon-Active]] and [[DNS-Recon-Passive]]
+This article will require some prior knowledge regarding, although many of the articles listed have this information embedded in them it may be worth briefer schematic information like in [[DNS-Defined]] and trouble shooting yourself with [[DNS-Active-Recon]] and [[DNS-Recon-Passive]]
 
 ## Debian IPv4 DNS server
 
