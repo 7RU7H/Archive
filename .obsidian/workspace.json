@@ -44,12 +44,24 @@
             }
           },
           {
-            "id": "40a8540f7efaacd7",
+            "id": "419a688ece94c023",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "40a8540f7efaacd7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Windows/Windows-Commands/Windows-Commands.md",
                 "mode": "source",
                 "source": false
               }
@@ -121,7 +133,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "openssl",
+                "query": "more ",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -186,12 +198,18 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "40a8540f7efaacd7",
+  "active": "419a688ece94c023",
   "lastOpenFiles": [
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
+    "Coding-Scripting-Programming/Malware/Polymorphic-Code.md",
+    "Exploitation/Binary-Exploitation/Binary-Exploitation-Enumeration.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
-    "Windows/Windows-Concepts/Windows-Processes.md",
+    "Security-Enterprises/Redteam/Red-Team-Theory/Adversary-Emulation.md",
+    "Exploitation/Windows/Finding-Windows-Exploits.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
     "Post-Exploitation/Privilege-Escalation/Privilege-Escalation.md",
+    "Windows/Windows-Concepts/Windows-Processes.md",
+    "Windows/Windows-Commands/Windows-Commands.md",
+    "Tools/Neo4j/Bloodhound-Guide.md",
     "Network/Network-Protocols-Cheatsheet.md",
     "Windows/Windows-Concepts/Accounts-And-Groups/Windows-System-And-Service-Privileges.md",
     "Reconnaissance/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
@@ -208,12 +226,6 @@
     "Tools/DNS-Related/DIG-cheatsheet.md",
     "Reconnaissance/Passive-Information-Gathering/DNS-Recon-Passive.md",
     "Linux/Linux-Concepts/ipXtables.md",
-    "Web-Application-Hacking/CMS/Joomla.md",
-    "Tools/Neo4j/Bloodhound-Guide.md",
-    "Cryptography-And-Authentication/Password-Attacks/Wordlist-Tools/Cewl-Cheatsheet.md",
-    "Tools/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
-    "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Enumeration-Defined.md",
-    "Reconnaissance/Active-Information-Gathering/OS-Detection/OS-Detection.md",
     "Web-Application-Hacking/File-Inclusion-And-Directory-Traver",
     "Web-Application-Hacking/Directory-Traversal",
     "Tools/C2/Sliver",

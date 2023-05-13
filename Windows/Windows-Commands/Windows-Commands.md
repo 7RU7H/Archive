@@ -1,5 +1,8 @@
 # cmd.exe - cli
 
+[Windows Commands](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands)
+
+
 ```powershell
 assoc # File association 
 assoc .filetype=APP # set default application to open/use file type 
@@ -175,3 +178,4 @@ shutdown /r /fw /f /t 0
 ## References
 
 [Networkchuck top 40 CLI video](https://www.youtube.com/watch?v=Jfvg3CS1X3A)
+[Windows Commands](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands)
