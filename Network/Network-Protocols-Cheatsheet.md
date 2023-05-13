@@ -363,12 +363,20 @@ default 8080
 Active Directory Web Services (ADWS), in Windows Server 2008 R2 and later, is a new Windows service that provides a Web service interface to Active Directory domains, Active Directory Lightweight Directory Services (AD LDS) instances, and Active Directory Database Mounting Tool instances that are running on the same server as ADWS.
 
 ## 10000 - Webmin
+
 [Webmin](https://webmin.com/)
 
+## 25672 - Erlang
+
+Erlang is a programming language designed around distributed computing and will have a network port that allows other Erlang nodes to join the cluster. It uses a cookie. [Erlang-arce blogpost from Mubix](https://malicious.link/post/2018/erlang-arce/)
+
 ## 27017 - MongoDB
+
 
 [[MongoDB]]
 
 ## References
+
 [iana](https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml)
 [speedguide](https://www.speedguide.net/port.php?)
+[Erlang-arce blogpost from Mubix](https://malicious.link/post/2018/erlang-arce/)

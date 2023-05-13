@@ -4,6 +4,8 @@
 
 Remember to consider modern CPUs and [[Threading]]
 
+*An [access-tokens](https://learn.microsoft.com/en-us/windows/win32/secauthz/access-tokens) is an object that describes the [_security context_](https://learn.microsoft.com/en-us/windows/desktop/SecGloss/s-gly) of a [_process_](https://learn.microsoft.com/en-us/windows/desktop/SecGloss/p-gly) or thread. The information in a token includes the identity and privileges of the user account associated with the process or thread.*
+
 ## Process Component Purposes
 Process Component 	|	Purpose
 --- | ---
@@ -194,3 +196,6 @@ The new Microsoft Edge web browser, the successor of Internet Explorer. Microsof
 
 [THM Windows Internals Room](https://tryhackme.com/room/windowsinternals)
 [Win32 about-processes-and-threads documentation](https://docs.microsoft.com/en-us/windows/win32/procthread/about-processes-and-threads)
+[access-tokens](https://learn.microsoft.com/en-us/windows/win32/secauthz/access-tokens) 
+[security context](https://learn.microsoft.com/en-us/windows/desktop/SecGloss/s-gly)
+[process](https://learn.microsoft.com/en-us/windows/desktop/SecGloss/p-gly) 

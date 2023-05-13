@@ -1,6 +1,8 @@
 # System And Service Privileges
 
-## Local System
+Consider the ramification: [[SePrivilege-Token-Table]]
+
+# Local System
 The [LocalSystem](https://docs.microsoft.com/en-us/windows/win32/services/localsystem-account?redirectedfrom=MSDN) account has the following privileges:
 
 -   **SE_ASSIGNPRIMARYTOKEN_NAME** (disabled)
@@ -57,6 +59,7 @@ The [NetworkService](https://docs.microsoft.com/en-us/windows/win32/services/net
 
 
 ## References
+
 [LocalSystem](https://docs.microsoft.com/en-us/windows/win32/services/localsystem-account?redirectedfrom=MSDN)
 [LocalService](https://docs.microsoft.com/en-us/windows/win32/services/localservice-account?redirectedfrom=MSDN)
 [NetworkService](https://docs.microsoft.com/en-us/windows/win32/services/networkservice-account?redirectedfrom=MSDN0)
