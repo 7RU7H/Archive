@@ -97,14 +97,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Hardening/Linux-Hardening.md",
+                "file": "Web-Application-Hacking/XSS/Jack-Masa-Mindmap.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -170,7 +170,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
+                "file": "Web-Application-Hacking/XSS/Jack-Masa-Mindmap.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -198,11 +198,15 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "419a688ece94c023",
+  "active": "d6d1ec56d99ac76c",
   "lastOpenFiles": [
+    "Images/jackmasa-mind-map.png",
+    "Hardening/Linux-Hardening.md",
+    "Web-Application-Hacking/XSS/Jack-Masa-Mindmap.md",
+    "Web-Application-Hacking/XSS",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
     "Coding-Scripting-Programming/Malware/Polymorphic-Code.md",
     "Exploitation/Binary-Exploitation/Binary-Exploitation-Enumeration.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
     "Security-Enterprises/Redteam/Red-Team-Theory/Adversary-Emulation.md",
     "Exploitation/Windows/Finding-Windows-Exploits.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
@@ -213,7 +217,6 @@
     "Network/Network-Protocols-Cheatsheet.md",
     "Windows/Windows-Concepts/Accounts-And-Groups/Windows-System-And-Service-Privileges.md",
     "Reconnaissance/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
-    "Hardening/Linux-Hardening.md",
     "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
     "Reconnaissance/Passive-Information-Gathering/Website-Recon.md",
     "Reconnaissance/Active-Information-Gathering/User/User-Active-Recon.md",
@@ -224,8 +227,6 @@
     "Linux/ufw.md",
     "Reconnaissance/Active-Information-Gathering/SMTP/SMTP-Recon-Cheatsheet.md",
     "Tools/DNS-Related/DIG-cheatsheet.md",
-    "Reconnaissance/Passive-Information-Gathering/DNS-Recon-Passive.md",
-    "Linux/Linux-Concepts/ipXtables.md",
     "Web-Application-Hacking/File-Inclusion-And-Directory-Traver",
     "Web-Application-Hacking/Directory-Traversal",
     "Tools/C2/Sliver",
@@ -235,7 +236,6 @@
     "Security-Enterprises/For-Individuals",
     "Brain-Hacking/Talk-Notes",
     "Brain-Hacking/Philosphy",
-    "Brain-Hacking/Concepts",
     "Images/azslotswappedsettingsvsslotspecificsettings.png",
     "Images/azurecloudserviceresponsiblitychart.png",
     "Images/azureadbenefitsofazureadjoin.png",

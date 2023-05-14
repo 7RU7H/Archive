@@ -212,6 +212,35 @@ Sometimes it pays to think similarly to protercting a domain controller, which d
 - Use RSA keys for ssh, see [[SSH-Cheatsheet]] - `ssh-keygen -t rsa` 
 - Use [[Cryptography]] - `openssl` for key generation 
 
+## Sudo / Doas
+
+Perform as command that follows the `sudo` instruction with root privileges with granular rules if configured. This is possible the most difficult to get right as administrator as sudo is both complex and its use and uses one wants to prevent is non-trivial problem.
+```bash
+# Add to the sudo group
+sudo -aG sudo $username
+# Some Arch, Fedora and RedHat has the Wheel group instead
+sudo -aG wheel $username
+
+# Disable root or any unused accounts
+sudo sed -i 's@root:x:0:0:root:/root:/bin/bash@root:x:0:0:root:/root:/sbin/nologin@g' /etc/passwd
+
+# Password policy configuration files
+apt-get install libpam-pwquality
+# RedHat and Fedora 
+/etc/security/pwquality.conf
+# Debian and Ubuntu
+/etc/pam.d/common-password
+```
+
+libpam-pwquality configuration:
+```bash
+sudo cat /etc/security/pwquality.conf
+difok=5 # specify number of characters that were not present in the last password
+minlen=10 # minimum length
+minclass=3 # minimum classes of characters - lowercase, uppercase, digits, symbols ...
+badwords=(space seperated list of words that should be used in passwords)
+retry=2 # retry prompt amount
+```
 
 ## Disto Specific Guides
 
