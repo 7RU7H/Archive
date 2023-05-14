@@ -31,7 +31,7 @@ With [[Impacket-Cheatsheet]] `secretsdump.py` we can dump the hashes of those fi
 For reference see the official documentation regarding [Privilege Constants](https://learn.microsoft.com/en-us/windows/win32/secauthz/privilege-constants) and forcomplete token table [[SePrivilege-Token-Table]].
 
 The Backup Operators group has the following:
--   **SeBackupPrivilege:** The user can read any file in the system, ignoring any DACL in place, see [[SeBackup-Privilege]]
+-   **SeBackupPrivilege:** The user can read any file in the system, ignoring any DACL in place, see [[SeBackupPrivilege]]
 -   **SeRestorePrivilege:** The user can write any file in the system, ignoring any DACL in place.
 
 As this group we can assign the above privileges to any user regardless of group,

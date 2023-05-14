@@ -36,7 +36,7 @@ To Hardblock wifi or bluetooth find the toggle on motherboards, in bioses and ot
 ```bash
 rfkill list
 rfkill block wifi
-rkilll block bluetooth
+rfkill block bluetooth
 ```
 
 ## SSH Related

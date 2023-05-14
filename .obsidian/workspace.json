@@ -25,31 +25,19 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "Services/Databases/MSSQL/MSSQL-Hacking.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "023f07c6653562fe",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "419a688ece94c023",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Windows/Windows-Concepts/Windows-Events/Windows-Events-To-Monitor.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "40a8540f7efaacd7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Windows/Windows-Commands/Windows-Commands.md",
                 "mode": "source",
                 "source": false
               }
@@ -61,26 +49,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Windows/SePrivileges/SePrivilege-Token-Table.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a315420f94c09cfa",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Privilege-Escalation.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Windows/SePrivileges/SeDebugPrivilege.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -109,7 +85,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "more ",
+                "query": "Visual-Studio",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -146,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Windows/SePrivileges/SePrivilege-Token-Table.md",
+                "file": "Services/Databases/MSSQL/MSSQL-Hacking.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,36 +150,36 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "9ca271f09c91891b",
+  "active": "2043f28da42e4406",
   "lastOpenFiles": [
-    "Windows/Windows-Concepts/Windows-Processes.md",
+    "Tools/Editors/Microsoft-Visual-Studios.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
+    "Exploitation/Compiling-Exploits.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/SePrivileges/SeDebugPrivilege.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/SePrivileges/SePrivilege-Token-Table.md",
     "Windows/Windows-Concepts/Windows-Events/Windows-Events-To-Monitor.md",
+    "Post-Exploitation/Privilege-Escalation/Privilege-Escalation.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Bypassing-UAC/UACME-Keys.md",
+    "Tools/Packet-Analysis/Wireshark/Wireshark.md",
+    "Hardening/Linux-Hardening.md",
+    "Coding-Scripting-Programming/Languages/Python/Python-Network-Scripting.md",
+    "Hardware/Hardware-Hacking/Printer-Security-Testing.md",
+    "Hardware/Hardware-Maintance/Hardware-Maintaince.md",
+    "Hardware/Hardware-Maintance/USB-Maintaince.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/SePrivileges/SeBackupPrivilege.md",
+    "Post-Exploitation/Windows-Living-Off-The-Land.md",
+    "Artificial-Intelligence/Open-Source-AI-Models.md",
+    "Windows/Windows-Concepts/Windows-Processes.md",
+    "Tools/Mimikatz/Mimikatz-Cheatsheet.md",
     "Windows/Windows-Concepts/Windows-Events/Windows-Event-Logs.md",
     "Exploitation/Windows/Active-Directory/AD-Group-Rights-and-Privileges-in-Windows.md",
     "Exploitation/Windows/Active-Directory/AD-Permissions-Delegation-Exploitation.md",
     "Windows/Active-Directory/Active-Directory-Privileged-Groups.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
     "Windows/Windows-Commands/Windows-Commands.md",
     "Windows/Windows-Concepts/Accounts-And-Groups/Windows-Privileged-Groups.md",
-    "Windows/Windows-Concepts/Accounts-And-Groups/Windows-User-Rights-Assignment.md",
-    "Windows/Windows-Concepts/Accounts-And-Groups/Windows-User-Account-Control.md",
-    "Windows/Active-Directory/Active-Directory-Default-Security-Groups-Table.md",
-    "Windows/Active-Directory/Active-Directory-Defined.md",
-    "Windows/Active-Directory/Active-Directory-Kerberos-Authenication-Defined.md",
-    "Windows/Windows-Concepts/Accounts-And-Groups/Windows-Accounts-Groups.md",
-    "Windows/Windows-Concepts/Accounts-And-Groups/Windows-Services-Account.md",
-    "Windows/Windows-Concepts/Accounts-And-Groups/Windows-System-And-Service-Privileges.md",
-    "Windows/Windows-Concepts/Dynamic-Link-Libraries.md",
-    "Windows/Windows-Concepts/Windows-Strings.md",
-    "Windows/Windows-Concepts/Accounts-And-Groups/Windows-Discretionary-Access-Control-List.md",
     "Windows/Windows-Concepts/Windows-Events",
-    "Windows/Windows-Concepts/Windows-Filesystem/Windows-File-System.md",
     "Windows/Windows-Concepts/Windows-Filesystem",
-    "Windows/Windows-Concepts/Windows-Important-Directories.md",
-    "Windows/Windows-Concepts/Windows-Filesystem/Windows-Permissions.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
-    "Tools/Content-Discovery-Tools/FFUF-Cheatsheet.md",
-    "Tools/Neo4j/Bloodhound-Guide.md",
     "Images/jackmasa-mind-map.png",
     "Web-Application-Hacking/XSS",
     "Web-Application-Hacking/File-Inclusion-And-Directory-Traver",
