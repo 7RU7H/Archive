@@ -1,8 +1,17 @@
-# System And Service Privileges
+# Windows System And Service Privileges
 
-Consider the ramification: [[SePrivilege-Token-Table]]
+Microsoft: *"A [Privilege](https://docs.microsoft.com/en-us/windows/win32/secauthz/privileges) is the right of an account, such as a user or group account, to perform various system-related operations on the local computer, such as shutting down the system, loading device drivers, or changing the system time. Privileges differ from access rights in two ways:*
+- *Privileges control access to system resources and system-related tasks, whereas access rights control access to [securable objects](https://learn.microsoft.com/en-us/windows/win32/secauthz/securable-objects).*
+-   *A system administrator assigns privileges to user and group accounts, whereas the system grants or denies access to a securable object based on the access rights granted in the [Access Control Entries (ACEs)](https://docs.microsoft.com/en-us/windows/win32/secauthz/access-control-entries) in the object's DACL...* - [security descriptor](https://docs.microsoft.com/en-us/windows/win32/secauthz/security-descriptors)
+	- Consider reviewing:
+		- [[Windows-Discretionary-Access-Control-List]] 
+		- [[Windows-User-Account-Control]] and [[Bypassing-Windows-User-Account-Control]]
+...*Each system has an account database that stores the privileges held by user and group accounts"* and each logon event produces an access token for that user. Most privileges are disabled by default and some can be modified with administrative terminal or manually. 
 
-# Local System
+Consider the ramification with: [[SePrivilege-Token-Table]]
+
+#### Local System
+
 The [LocalSystem](https://docs.microsoft.com/en-us/windows/win32/services/localsystem-account?redirectedfrom=MSDN) account has the following privileges:
 
 -   **SE_ASSIGNPRIMARYTOKEN_NAME** (disabled)
@@ -30,7 +39,8 @@ The [LocalSystem](https://docs.microsoft.com/en-us/windows/win32/services/locals
 -   **SE_TCB_NAME** (enabled)
 -   **SE_UNDOCK_NAME** (disabled)
 
-## Local Service
+#### Local Service
+
 The [LocalService](https://docs.microsoft.com/en-us/windows/win32/services/localservice-account?redirectedfrom=MSDN) account has the following privileges:
 
 -   **SE_ASSIGNPRIMARYTOKEN_NAME** (disabled)
@@ -44,7 +54,8 @@ The [LocalService](https://docs.microsoft.com/en-us/windows/win32/services/local
 -   Any privileges assigned to users and authenticated users
 
 
-## Network Service
+#### Network Service
+
 The [NetworkService](https://docs.microsoft.com/en-us/windows/win32/services/networkservice-account?redirectedfrom=MSDN0) account has the following privileges:
 
 -   **SE_ASSIGNPRIMARYTOKEN_NAME** (disabled)
@@ -63,3 +74,6 @@ The [NetworkService](https://docs.microsoft.com/en-us/windows/win32/services/net
 [LocalSystem](https://docs.microsoft.com/en-us/windows/win32/services/localsystem-account?redirectedfrom=MSDN)
 [LocalService](https://docs.microsoft.com/en-us/windows/win32/services/localservice-account?redirectedfrom=MSDN)
 [NetworkService](https://docs.microsoft.com/en-us/windows/win32/services/networkservice-account?redirectedfrom=MSDN0)
+[securable objects](https://learn.microsoft.com/en-us/windows/win32/secauthz/securable-objects)
+[Privilege](https://docs.microsoft.com/en-us/windows/win32/secauthz/privileges) 
+[Access Control Entries (ACEs)](https://docs.microsoft.com/en-us/windows/win32/secauthz/access-control-entries)

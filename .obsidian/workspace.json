@@ -20,18 +20,6 @@
             }
           },
           {
-            "id": "ea7ff8dec0c3f127",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tools/Neo4j/Bloodhound-Guide.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "2043f28da42e4406",
             "type": "leaf",
             "state": {
@@ -49,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
+                "file": "Windows/Windows-Concepts/Windows-Events/Windows-Events-To-Monitor.md",
                 "mode": "source",
                 "source": false
               }
@@ -90,21 +78,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "d6d1ec56d99ac76c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Web-Application-Hacking/XSS/Jack-Masa-Mindmap.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
         ],
-        "currentTab": 7
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -170,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Web-Application-Hacking/XSS/Jack-Masa-Mindmap.md",
+                "file": "Windows/Windows-Concepts/Windows-Events/Windows-Events-To-Monitor.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -198,35 +174,38 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "d6d1ec56d99ac76c",
+  "active": "419a688ece94c023",
   "lastOpenFiles": [
-    "Images/jackmasa-mind-map.png",
-    "Hardening/Linux-Hardening.md",
-    "Web-Application-Hacking/XSS/Jack-Masa-Mindmap.md",
-    "Web-Application-Hacking/XSS",
+    "Windows/Windows-Concepts/Windows-Events/Windows-Event-Logs.md",
+    "Exploitation/Windows/Active-Directory/AD-Group-Rights-and-Privileges-in-Windows.md",
+    "Exploitation/Windows/Active-Directory/AD-Permissions-Delegation-Exploitation.md",
+    "Windows/Active-Directory/Active-Directory-Privileged-Groups.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
-    "Coding-Scripting-Programming/Malware/Polymorphic-Code.md",
-    "Exploitation/Binary-Exploitation/Binary-Exploitation-Enumeration.md",
-    "Security-Enterprises/Redteam/Red-Team-Theory/Adversary-Emulation.md",
-    "Exploitation/Windows/Finding-Windows-Exploits.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
-    "Post-Exploitation/Privilege-Escalation/Privilege-Escalation.md",
     "Windows/Windows-Concepts/Windows-Processes.md",
     "Windows/Windows-Commands/Windows-Commands.md",
-    "Tools/Neo4j/Bloodhound-Guide.md",
-    "Network/Network-Protocols-Cheatsheet.md",
+    "Windows/Windows-Concepts/Accounts-And-Groups/Windows-Privileged-Groups.md",
+    "Windows/Windows-Concepts/Accounts-And-Groups/Windows-User-Rights-Assignment.md",
+    "Windows/Windows-Concepts/Accounts-And-Groups/Windows-User-Account-Control.md",
+    "Windows/Active-Directory/Active-Directory-Default-Security-Groups-Table.md",
+    "Windows/Active-Directory/Active-Directory-Defined.md",
+    "Windows/Active-Directory/Active-Directory-Kerberos-Authenication-Defined.md",
+    "Windows/Windows-Concepts/Accounts-And-Groups/Windows-Accounts-Groups.md",
+    "Windows/Windows-Concepts/Accounts-And-Groups/Windows-Services-Account.md",
     "Windows/Windows-Concepts/Accounts-And-Groups/Windows-System-And-Service-Privileges.md",
-    "Reconnaissance/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
-    "Reconnaissance/Passive-Information-Gathering/Website-Recon.md",
-    "Reconnaissance/Active-Information-Gathering/User/User-Active-Recon.md",
-    "Reconnaissance/Active-Information-Gathering/POP3/POP3-Recon.md",
-    "Reconnaissance/Active-Information-Gathering/DNS/DNS-Active-Recon.md",
-    "Tools/DNS-Related/DNSRecon-Cheatsheet.md",
+    "Windows/Windows-Concepts/Dynamic-Link-Libraries.md",
+    "Windows/Windows-Concepts/Windows-Strings.md",
+    "Windows/Windows-Concepts/Accounts-And-Groups/Windows-Discretionary-Access-Control-List.md",
+    "Windows/Windows-Concepts/Windows-Events",
+    "Windows/Windows-Concepts/Windows-Filesystem/Windows-File-System.md",
+    "Windows/Windows-Concepts/Windows-Filesystem",
+    "Windows/Windows-Concepts/Windows-Important-Directories.md",
+    "Windows/Windows-Concepts/Windows-Filesystem/Windows-Permissions.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
     "Tools/Content-Discovery-Tools/FFUF-Cheatsheet.md",
-    "Linux/ufw.md",
-    "Reconnaissance/Active-Information-Gathering/SMTP/SMTP-Recon-Cheatsheet.md",
-    "Tools/DNS-Related/DIG-cheatsheet.md",
+    "Tools/Neo4j/Bloodhound-Guide.md",
+    "Post-Exploitation/Privilege-Escalation/Privilege-Escalation.md",
+    "Images/jackmasa-mind-map.png",
+    "Web-Application-Hacking/XSS",
     "Web-Application-Hacking/File-Inclusion-And-Directory-Traver",
     "Web-Application-Hacking/Directory-Traversal",
     "Tools/C2/Sliver",
@@ -234,8 +213,6 @@
     "Services/Webservers/Apache/Apache2",
     "Security-Enterprises/Report-Writing",
     "Security-Enterprises/For-Individuals",
-    "Brain-Hacking/Talk-Notes",
-    "Brain-Hacking/Philosphy",
     "Images/azslotswappedsettingsvsslotspecificsettings.png",
     "Images/azurecloudserviceresponsiblitychart.png",
     "Images/azureadbenefitsofazureadjoin.png",
@@ -244,7 +221,6 @@
     "Images/wwh-seriouslyireallycanstillseeyou-llmnrandwpadprimer.png",
     "Images/azure-k8updatenodes.png",
     "Images/robleesansoffensiveforensicstimestomping.png.png",
-    "Images/robleesansoffensiveforensicstimestomping.png",
-    "Images/robleesansoffensiveforensicslateralmovementoverview.png"
+    "Images/robleesansoffensiveforensicstimestomping.png"
   ]
 }

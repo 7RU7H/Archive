@@ -12,7 +12,7 @@ AD Components:
 1. Forests, Trees, Domains
 2. Organisation Units - System folders containers to store and group objects. Each AD Object has attributes.
 	1. Users 
-		1. People
+		1. People - [[Active-Directory-Privileged-Groups]]
 		2. Services - applications hosted within the Domain
 	2. Groups 
 	3. Machines - Workstations and Servers that are domain-joined
@@ -22,8 +22,7 @@ AD Components:
 
 ## Domain Controller(DC)
 
-A Windows Server that has Active Directory Domain Service(ADDS) installed and is the domain controller for the forest.
-AD-Forest will sometimes have multiple DCs for redundancy of data and services, each having the same replicated AD data.
+A Windows Server that has Active Directory Domain Service(ADDS) installed and is the domain controller for the forest. AD-Forest will sometimes have multiple DCs for redundancy of data and services, each having the same replicated AD data.
 A DC purpose:
 1. Stores all relevant information including AD DS data store for the Forest 
 2. Enforce rules governing object within an Windows domain
