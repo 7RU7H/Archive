@@ -4,7 +4,7 @@
 
 Remember to consider modern CPUs and [[Threading]]
 
-*An [access-tokens](https://learn.microsoft.com/en-us/windows/win32/secauthz/access-tokens) is an object that describes the [_security context_](https://learn.microsoft.com/en-us/windows/desktop/SecGloss/s-gly) of a [_process_](https://learn.microsoft.com/en-us/windows/desktop/SecGloss/p-gly) or thread. The information in a token includes the identity and privileges of the user account associated with the process or thread.*
+*An [access-tokens](https://learn.microsoft.com/en-us/windows/win32/secauthz/access-tokens) is an object that describes the [security context](https://learn.microsoft.com/en-us/windows/desktop/SecGloss/s-gly) of a [process](https://learn.microsoft.com/en-us/windows/desktop/SecGloss/p-gly) or thread. The information in a token includes the identity and privileges of the user account associated with the process or thread.*
 
 ## Process Component Purposes
 Process Component 	|	Purpose

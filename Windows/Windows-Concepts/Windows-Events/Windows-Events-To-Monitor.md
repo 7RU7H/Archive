@@ -1,6 +1,4 @@
-
 # Windows Events ToMonitor
-
 
 Using [[Sysmon-Events]] and [[Sysinterals-Sysmon]].
 
@@ -8,10 +6,9 @@ Applies to: Windows Server 2022, Windows Server 2019, Windows Server
 
 The following table lists events that you should monitor in your environment, according to the recommendations provided in Monitoring Active Directory for Signs of Compromise. In the following table, the "Current Windows Event ID" column lists the event ID as it is implemented in versions of Windows and Windows Server that are currently in mainstream support.
 
-The "Legacy Windows Event ID" column lists the corresponding event ID in legacy versions of Windows such as client computers running Windows XP or earlier and servers running Windows Server 2003 or earlier. The "Potential Criticality" column identifies whethe44444 the event should be considered of low, medium, or high criticality in detecting attacks, and the "Event Summary" column provides a brief description of the event.
+The "Legacy Windows Event ID" column lists the corresponding event ID in legacy versions of Windows such as client computers running Windows XP or earlier and servers running Windows Server 2003 or earlier. The "Potential Criticality" column identifies where the the event should be considered of low, medium, or high criticality in detecting attacks, and the "Event Summary" column provides a brief description of the event.
 
 A potential criticality of High means that one occurrence of the event should be investigated. Potential criticality of Medium or Low means that these events should only be investigated if they occur unexpectedly or in numbers that significantly exceed the expected baseline in a measured period of time. All organizations should test these recommendations in their environments before creating alerts that require mandatory investigative responses. Every environment is different, and some of the events ranked with a potential criticality of High may occur due to other harmless events.
-
 
 Current Windows Event ID | 	Legacy Windows Event ID | 	Potential Criticality| 	Event Summary
 --- | --- | --- | --- 
@@ -22,7 +19,7 @@ Current Windows Event ID | 	Legacy Windows Event ID | 	Potential Criticality| 	E
 4766 | N/A | High | An attempt to add SID History to an account failed.
 4794 | N/A | High | An attempt was made to set the Directory Services Restore Mode.
 4897 | 801 | High | Role separation enabled:
-4964 | N/A | High | [Special groups have been assigned to a new logon](https://docs.microsoft.com/en-us/windows/security/threat-protection/auditing/event-4672).
+4964 | N/A | High | [Special groups have been assigned to a new logon](https://docs.microsoft.com/en-us/windows/security/threat-protection/auditing/event-4672). - [Guide](https://blog.palantir.com/windows-privilege-abuse-auditing-detection-and-defense-3078a403d74e)
 5124 | N/A | High | A security setting was updated on the OCSP Responder Service
 N/A | 550 | Medium to High | Possible denial-of-service (DoS) attack
 1102 | 517 | Medium to High | The audit log was cleared
@@ -97,8 +94,8 @@ N/A | 550 | Medium to High | Possible denial-of-service (DoS) attack
 6278 | N/A | Medium | Network Policy Server granted full access to a user because the host met the defined health policy.
 6279 | N/A | Medium | Network Policy Server locked the user account due to repeated failed authentication attempts.
 6280 | N/A | Medium | Network Policy Server unlocked the user account.
-- | 640 | Medium | General account database changed
-- | 619 | Medium | Quality of Service Policy changed
+N/A | 640 | Medium | General account database changed
+N/A | 619 | Medium | Quality of Service Policy changed
 24586 | N/A | Medium | An error was encountered converting volume
 24592 | N/A | Medium | An attempt to automatically restart conversion on volume %2 failed.
 24593 | N/A | Medium | Metadata write: Volume %2 returning errors while trying to modify metadata. If failures continue, decrypt volume
@@ -395,5 +392,7 @@ N/A | 616 | Low | IPsec policy agent encountered a potential serious failure
 5049 | N/A | Low | An IPsec Security Association was deleted.
 5478 | N/A | Low | IPsec Services has started successfully.
 
+## References
 
 [4672: Special privileges assigned to new logon](https://docs.microsoft.com/en-us/windows/security/threat-protection/auditing/event-4672)
+[palantir Blog on Privilege Abuse monitoring](https://blog.palantir.com/windows-privilege-abuse-auditing-detection-and-defense-3078a403d74e)

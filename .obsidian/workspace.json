@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Windows/Windows-Concepts/Windows-Processes.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Windows/SePrivileges/SePrivilege-Token-Table.md",
                 "mode": "source",
                 "source": false
               }
@@ -80,7 +80,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -146,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Windows/Windows-Concepts/Windows-Events/Windows-Events-To-Monitor.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Windows/SePrivileges/SePrivilege-Token-Table.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,14 +174,15 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "419a688ece94c023",
+  "active": "9ca271f09c91891b",
   "lastOpenFiles": [
+    "Windows/Windows-Concepts/Windows-Processes.md",
+    "Windows/Windows-Concepts/Windows-Events/Windows-Events-To-Monitor.md",
     "Windows/Windows-Concepts/Windows-Events/Windows-Event-Logs.md",
     "Exploitation/Windows/Active-Directory/AD-Group-Rights-and-Privileges-in-Windows.md",
     "Exploitation/Windows/Active-Directory/AD-Permissions-Delegation-Exploitation.md",
     "Windows/Active-Directory/Active-Directory-Privileged-Groups.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
-    "Windows/Windows-Concepts/Windows-Processes.md",
     "Windows/Windows-Commands/Windows-Commands.md",
     "Windows/Windows-Concepts/Accounts-And-Groups/Windows-Privileged-Groups.md",
     "Windows/Windows-Concepts/Accounts-And-Groups/Windows-User-Rights-Assignment.md",
@@ -203,7 +204,6 @@
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
     "Tools/Content-Discovery-Tools/FFUF-Cheatsheet.md",
     "Tools/Neo4j/Bloodhound-Guide.md",
-    "Post-Exploitation/Privilege-Escalation/Privilege-Escalation.md",
     "Images/jackmasa-mind-map.png",
     "Web-Application-Hacking/XSS",
     "Web-Application-Hacking/File-Inclusion-And-Directory-Traver",
