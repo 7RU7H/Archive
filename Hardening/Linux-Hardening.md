@@ -242,6 +242,30 @@ badwords=(space seperated list of words that should be used in passwords)
 retry=2 # retry prompt amount
 ```
 
+## Sofware and Services
+
+- Do not run services as root
+- Disable Unnecessary services
+- Block unneeded network ports
+- Avoid Legacy Protocols
+	- If it is not encrypted do not use it
+- Remove Identification Strings 
+	- Version numbers
+	- OS type and version
+
+## Update and Upgrade Policy
+
+- Keep your system updated with the latest security patches and bug fixes.
+- Upgrade to OS to LTS when current OS no longer is supported
+	- [The Ubuntu lifecycle and release cadence](https://ubuntu.com/about/release-cycle).
+	- RedHat Enterprise Linux 8 and 9 offer 12 years of support in three phases:
+		1. Full Support for five years
+		2. Maintenance Support for five years
+		3. Extended Life Phase for two years
+		4. [Red Hat Enterprise Linux Life Cycle](https://access.redhat.com/support/policy/updates/errata/)
+- Update the Kernel
+
+
 ## Disto Specific Guides
 
 - [Fedora](https://docs.fedoraproject.org/en-US/fedora/17/html/Security_Guide/chap-Security_Guide-Basic_Hardening.html)
@@ -260,4 +284,7 @@ retry=2 # retry prompt amount
 [https://willhaley.com/blog/encrypted-file-container-disk-image-in-linux/](https://willhaley.com/blog/encrypted-file-container-disk-image-in-linux/)
 [AppArmor](https://www.apparmor.net/) 
 [SELinux](https://github.com/SELinuxProject)
-[Microsoft Learn - deny e]https://learn.microsoft.com/en-us/troubleshoot/windows-server/remote/deny-user-permissions-to-logon-to-rd-session-host)
+[Red Hat Enterprise Linux Life Cycle](https://access.redhat.com/support/policy/updates/errata/)
+[Ubuntu lifecycle and release cadence](https://ubuntu.com/about/release-cycle)
+[Microsoft Learn](https://learn.microsoft.com/en-us/troubleshoot/windows-server/remote/deny-user-permissions-to-logon-to-rd-session-host)
+

