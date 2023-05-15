@@ -188,18 +188,18 @@ seq $int		# print sequence of "$int\n"
 
 #### sort
 ```bash
-sort -r 	reverse order
-sort -c		check if sorted
-sort -u		to sort and removes duplicate lines
-sort -o		output to filename given
+sort -r 	# reverse order
+sort -c		# check if sorted
+sort -u		# to sort and removes duplicate lines
+sort -o		# output to filename given
 ```
 
 #### tac			concatenate files and print them in reverse!
 ```bash
 
-tac -b	attach a separator before instead of after
-tac -r	interpret te separator as a regex
-tac -s	use STRING as a seaprator instead of Newline
+tac -b	# attach a separator before instead of after
+tac -r	# interpret te separator as a regex
+tac -s	# use STRING as a seaprator instead of Newline
 ```
 
 #### strings 	

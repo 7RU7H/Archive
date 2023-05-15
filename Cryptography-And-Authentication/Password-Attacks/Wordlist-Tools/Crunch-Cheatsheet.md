@@ -27,7 +27,7 @@ crunch 7 7 -t p@ss,%^ -l a@aaaaa > 1.txt
 crunch 10 10 -t password%^ -o password.txt
 # Terminate generate at pattern -e [PATTERN]
 crunch 3 3 abc -e acc -o 2.txt
-# Permutate with a mazx of 6 space seperated patterns
+# Permutate with a max of 6 space seperated patterns
 crunch 3 3 -p abc %%% XYZ -o 3.txt
 # Permutate pattern and wordlist
 crunch 3 3 edf -q 3.txt -o 4.txt
@@ -57,7 +57,6 @@ crunch 5 5 abc12 -t @@@%% -o dict.txt
 # The above produces: aaa00, aaa01, aaa02, aaa03, aaa04...
 crunch 5 5 abc12 -t @@@%% -i -o invert.txt
 # The above produces: aaa00, baa00, caa00, 1aa00, 2aa00, aba00
-
 
 ```
 Before using Crunch be extremely careful with disk memory usage exponentation! It is very easy to generate a wordlist of many Terabytes. BEWARE.

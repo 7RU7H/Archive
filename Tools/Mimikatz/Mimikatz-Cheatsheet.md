@@ -1,4 +1,4 @@
-# Mimikatz
+# Mimikatz Cheatsheet
 Used in Post Privilege Esculation in maintaining [[Persistence]] through credential harvesting and [[Active-Directory-Lateral-Movement]]. Mimikatz is used to dump credentials:
 - From windows protect memory (LSASS) and activity directory domain controller database
 - Kerberos tickets

@@ -1,3 +1,4 @@
+# RDP Recon
 
 When logon to domain, try the various: `sub.domain.local\$user` not just what is displayed 
 
@@ -14,6 +15,7 @@ rdp-enum-encryption
 rdp-vuln-ms12-020.nse 
 ```
 
+**RDP will not display if the user doesn't have RDP privileges**
 
 Credential Brute Force
 ```bash
