@@ -265,11 +265,55 @@ retry=2 # retry prompt amount
 		4. [Red Hat Enterprise Linux Life Cycle](https://access.redhat.com/support/policy/updates/errata/)
 - Update the Kernel
 
+## Logging 
+
+[CrowdStrike:](https://www.crowdstrike.com/guides/linux-logging/advanced-concepts/) *"Linux uses a daemon called rsyslogd to process messages using the syslog protocol. This service evolved from the regular syslog daemon to the current enterprise-level logging system."* Its configuration file can be found at `/etc/rsyslog.conf` on Red Hat, Debian-based including [[Kali]], and Fedora. Its directives are located in `/etc/rsyslog.d/*.conf`
+
+[CrowdStrike example of writing kernel logging with an alert level then forwarding to a remote host](https://www.crowdstrike.com/guides/linux-logging/advanced-concepts/) 
+```bash
+# Write kernel logs to file
+kern.* /var/log/kern
+# Everybody gets emergency messages
+*.emerg *
+# Forward all messages to another host to be processed by that remote host’s syslog daemon
+*.* @@remote-host:514
+```
+
+For [[Debian-Package-Management]] [logcheck](https://www.debian.org/doc/manuals/securing-debian-manual/log-alerts.en.html) for alerting
+
+- General System messages
+	-  `/var/log/messages` 
+	- `/var/log/syslog` - [Ubuntu](https://help.ubuntu.com/community/LinuxLogFiles)  
+- User related messages 
+	- Authentication attempts
+		-  `/var/log/auth.log` - Debian based 
+		-  `/var/log/secure` - Red Hat and Fedora-based 
+	- Current users logged in
+		-  `/var/log/utmp`
+	- Users logged in and out
+		-  `/var/log/wtmp`
+		- `/var/log/lastlog` - Ubuntu, Fedora
+	- Failed Logins
+		- `/var/log/btmp`
+- Kernel messages
+	 -  `/var/log/kern.log`
+- Start-up messages and boot information 
+	-  `/var/log/boot.log`
+- Device Driver messages
+	- `/var/log/dmesg`
+- Debug
+	- `/var/log/debug`
+- Package Management
+	- [[APT-And-Other-Non-Host-Distributions]]
+		- `/var/log/apt/history.log` - command history
+		- `/var/log/apt/term.log` - terminal output
 
 ## Disto Specific Guides
 
 - [Fedora](https://docs.fedoraproject.org/en-US/fedora/17/html/Security_Guide/chap-Security_Guide-Basic_Hardening.html)
 - [[Kali-Hardening]]
+- [Debian ](https://www.debian.org/doc/manuals/securing-debian-manual/)
+
 
 ## References
 
@@ -287,4 +331,6 @@ retry=2 # retry prompt amount
 [Red Hat Enterprise Linux Life Cycle](https://access.redhat.com/support/policy/updates/errata/)
 [Ubuntu lifecycle and release cadence](https://ubuntu.com/about/release-cycle)
 [Microsoft Learn](https://learn.microsoft.com/en-us/troubleshoot/windows-server/remote/deny-user-permissions-to-logon-to-rd-session-host)
-
+[Ubuntu](https://help.ubuntu.com/community/LinuxLogFiles)  
+[logcheck](https://www.debian.org/doc/manuals/securing-debian-manual/log-alerts.en.html)
+[Debian Hardening Guide](https://www.debian.org/doc/manuals/securing-debian-manual/)

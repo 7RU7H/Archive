@@ -73,7 +73,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/Mimikatz/Mimikatz-Cheatsheet.md",
+                "file": "Linux/Linux-System-Administration/Linux-Logging.md",
                 "mode": "source",
                 "source": false
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/Mimikatz/Mimikatz-Cheatsheet.md",
+                "file": "Linux/Linux-System-Administration/Linux-Logging.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -176,13 +176,15 @@
   },
   "active": "12823d5f82ea0b97",
   "lastOpenFiles": [
+    "Hardening/Linux-Hardening.md",
+    "Linux/Linux-System-Administration/Linux-Logging.md",
+    "Tools/Mimikatz/Mimikatz-Cheatsheet.md",
     "Linux/Linux-Commands/Linux-Module-Commands.md",
     "Cryptography-And-Authentication/Password-Attacks/Wordlist-Tools/Crunch-Cheatsheet.md",
     "Reconnaissance/Active-Information-Gathering/RDP/RDP-Recon.md",
     "Linux/Distributions/Debian/Debian-Package-Management.md",
     "Cryptography-And-Authentication/De-Or-En-Cryption.md",
     "Coding-Scripting-Programming/Languages/Rust/Rust.md",
-    "Hardening/Linux-Hardening.md",
     "Tools/Useful-Software/TMUX.md",
     "Post-Exploitation/Windows-Living-Off-The-Land.md",
     "Tools/Content-Discovery-Tools/FFUF-Cheatsheet.md",
@@ -200,8 +202,6 @@
     "Tools/Packet-Analysis/Wireshark/Wireshark.md",
     "Coding-Scripting-Programming/Languages/Python/Python-Network-Scripting.md",
     "Hardware/Hardware-Hacking/Printer-Security-Testing.md",
-    "Hardware/Hardware-Maintance/Hardware-Maintaince.md",
-    "Hardware/Hardware-Maintance/USB-Maintaince.md",
     "Windows/Windows-Concepts/Windows-Events",
     "Windows/Windows-Concepts/Windows-Filesystem",
     "Images/jackmasa-mind-map.png",
