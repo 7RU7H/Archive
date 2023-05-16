@@ -73,7 +73,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/Linux-System-Administration/Linux-Logging.md",
+                "file": "Tools/C2/Sliver/Sliver-Cheatsheet.md",
                 "mode": "source",
                 "source": false
               }
@@ -109,7 +109,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "crunch ",
+                "query": "schedule",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -126,7 +126,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -146,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/Linux-System-Administration/Linux-Logging.md",
+                "file": "Tools/C2/Sliver/Sliver-Cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -176,8 +177,15 @@
   },
   "active": "12823d5f82ea0b97",
   "lastOpenFiles": [
-    "Hardening/Linux-Hardening.md",
+    "Post-Exploitation/Lateral-Movement/Active-Directory-Lateral-Movement/AD-Lateral-Movement-With-WMI.md",
+    "Persistence/Windows-Persistence/Windows-Persistence-Abusing-Scheduled-Tasks.md",
+    "Tools/C2/Sliver/Sliver-Cheatsheet.md",
+    "Tools/Web-App/DAVtest.md",
+    "Web-Application-Hacking/Web-Concepts/HTLM-Defined.md",
+    "Tools/Useful-Software/Curl-Cheatsheet.md",
+    "Web-Application-Hacking/API/API-Fuzzing.md",
     "Linux/Linux-System-Administration/Linux-Logging.md",
+    "Hardening/Linux-Hardening.md",
     "Tools/Mimikatz/Mimikatz-Cheatsheet.md",
     "Linux/Linux-Commands/Linux-Module-Commands.md",
     "Cryptography-And-Authentication/Password-Attacks/Wordlist-Tools/Crunch-Cheatsheet.md",
@@ -195,13 +203,6 @@
     "Services/Databases/MSSQL/MSSQL-Hacking.md",
     "Coding-Scripting-Programming/Languages/C/Useful_C.md",
     "Exploitation/Compiling-Exploits.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/SePrivileges/SePrivilege-Token-Table.md",
-    "Windows/Windows-Concepts/Windows-Events/Windows-Events-To-Monitor.md",
-    "Post-Exploitation/Privilege-Escalation/Privilege-Escalation.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Bypassing-UAC/UACME-Keys.md",
-    "Tools/Packet-Analysis/Wireshark/Wireshark.md",
-    "Coding-Scripting-Programming/Languages/Python/Python-Network-Scripting.md",
-    "Hardware/Hardware-Hacking/Printer-Security-Testing.md",
     "Windows/Windows-Concepts/Windows-Events",
     "Windows/Windows-Concepts/Windows-Filesystem",
     "Images/jackmasa-mind-map.png",

