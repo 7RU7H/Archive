@@ -61,6 +61,10 @@ int main()
 }
 ```
 
+
+## References
+
+[Windows - C Language Reference](https://learn.microsoft.com/en-us/cpp/c-language/c-language-reference?view=msvc-170)
 [GCC](https://linux.die.net/man/1/gcc)
 [XinYminutesC](https://learnxinyminutes.com/docs/c/)
 [Jacob Sorber Programming with Processes](https://www.youtube.com/playlist?list=PL9IEJIKnBJjFNNfpY6fHjVzAwtgRYjhPw)

@@ -36,3 +36,11 @@ Armory
 // Because why not
 armory install all 
 ```
+
+https://dominicbreuker.com/post/learning_sliver_c2_06_stagers/
+
+Shell generation
+```go
+// Disable shikata ga nai
+--formate shellcode -G
+```

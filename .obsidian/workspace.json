@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Services/Webservers/IIS/IIS.md",
+                "file": "Services/Webservers/JS/NodeJS.md",
                 "mode": "source",
                 "source": false
               }
@@ -78,9 +78,33 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "a86a7dd16f692603",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/C2/Sliver/Sliver-Cheatsheet.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a73c30368031462d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Security-Enterprises/Redteam/Red-Team-Domain-Categorization.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -109,7 +133,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "Node",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -146,7 +170,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Services/Webservers/IIS/IIS.md",
+                "file": "Tools/C2/Sliver/Sliver-Cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,14 +198,24 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "2043f28da42e4406",
+  "active": "a86a7dd16f692603",
   "lastOpenFiles": [
+    "Security-Enterprises/Redteam/Red-Team-Domain-Categorization.md",
+    "Tools/C2/Sliver/Sliver-Cheatsheet.md",
+    "Services/Webservers/JS/NodeJS.md",
+    "Web-Application-Hacking/Javascript/Javascript-Cookie-Abuse.md",
+    "Coding-Scripting-Programming/Languages/C/Useful-C.md",
+    "Coding-Scripting-Programming/Languages/C/Concurrent-C.md",
+    "Coding-Scripting-Programming/Languages/C/Bad-C.md",
+    "Network/Network-Protocols-Cheatsheet.md",
+    "Network/Network-Address-Translation-Defined.md",
+    "Coding-Scripting-Programming/Languages/Bash/Useful_Bash.md",
+    "Services/Webservers/IIS/IIS.md",
     "Tools/Exploit-Frameworks/Metasploit/Metasploit.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Scripts-And-Tools.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
     "Tools/Exploit-Frameworks/Metasploit/MSFvenom-Payloads.md",
-    "Tools/C2/Sliver/Sliver-Cheatsheet.md",
     "Post-Exploitation/Lateral-Movement/Active-Directory-Lateral-Movement/AD-Lateral-Movement-With-WMI.md",
     "Persistence/Windows-Persistence/Windows-Persistence-Abusing-Scheduled-Tasks.md",
     "Tools/Web-App/DAVtest.md",
@@ -192,16 +226,6 @@
     "Hardening/Linux-Hardening.md",
     "Tools/Mimikatz/Mimikatz-Cheatsheet.md",
     "Linux/Linux-Commands/Linux-Module-Commands.md",
-    "Cryptography-And-Authentication/Password-Attacks/Wordlist-Tools/Crunch-Cheatsheet.md",
-    "Reconnaissance/Active-Information-Gathering/RDP/RDP-Recon.md",
-    "Linux/Distributions/Debian/Debian-Package-Management.md",
-    "Cryptography-And-Authentication/De-Or-En-Cryption.md",
-    "Coding-Scripting-Programming/Languages/Rust/Rust.md",
-    "Tools/Useful-Software/TMUX.md",
-    "Post-Exploitation/Windows-Living-Off-The-Land.md",
-    "Tools/Content-Discovery-Tools/FFUF-Cheatsheet.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/SePrivileges/SeDebugPrivilege.md",
-    "Tools/Editors/Microsoft-Visual-Studios.md",
     "Windows/Windows-Concepts/Windows-Events",
     "Windows/Windows-Concepts/Windows-Filesystem",
     "Images/jackmasa-mind-map.png",
