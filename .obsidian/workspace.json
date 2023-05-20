@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Post-Exploitation/Windows-Living-Off-The-Land.md",
+                "file": "Security-Enterprises/Cyber-Kill-Chains/Diamond-Model.md",
                 "mode": "source",
                 "source": false
               }
@@ -92,6 +92,18 @@
             }
           },
           {
+            "id": "5ac4a34fe233ec38",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Linux/Linux-Commands/Linux-Module-Commands.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "c64a81e883bb1b0f",
             "type": "leaf",
             "state": {
@@ -115,8 +127,7 @@
               }
             }
           }
-        ],
-        "currentTab": 6
+        ]
       }
     ],
     "direction": "vertical"
@@ -145,7 +156,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Node",
+                "query": "nohup",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -182,7 +193,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Windows/SePrivileges/SeDebugPrivilege.md",
+                "file": "Security-Enterprises/Cyber-Kill-Chains/Diamond-Model.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -210,10 +221,15 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "a86a7dd16f692603",
+  "active": "9c25bdb074742d91",
   "lastOpenFiles": [
-    "Tools/Mimikatz/Mimikatz-Cheatsheet.md",
+    "Post-Exploitation/Windows-Living-Off-The-Land.md",
+    "Linux/Linux-Commands/Linux-Module-Commands.md",
+    "Linux/Linux-Commands/Linux-Memory-Commands.md",
+    "Linux/Linux-Commands/Core-Linux-Commands.md",
     "Post-Exploitation/Privilege-Escalation/Windows/SePrivileges/SeDebugPrivilege.md",
+    "Security-Enterprises/CTF-Platforms/TryHackMe.md",
+    "Tools/Mimikatz/Mimikatz-Cheatsheet.md",
     "Security-Enterprises/Redteam/Red-Team-Domain-Categorization.md",
     "Post-Exploitation/Privilege-Escalation/Windows/SePrivileges/SePrivilege-Token-Table.md",
     "Tools/C2/Sliver/Sliver-Cheatsheet.md",
@@ -233,11 +249,6 @@
     "Tools/Exploit-Frameworks/Metasploit/MSFvenom-Payloads.md",
     "Post-Exploitation/Lateral-Movement/Active-Directory-Lateral-Movement/AD-Lateral-Movement-With-WMI.md",
     "Persistence/Windows-Persistence/Windows-Persistence-Abusing-Scheduled-Tasks.md",
-    "Tools/Web-App/DAVtest.md",
-    "Web-Application-Hacking/Web-Concepts/HTLM-Defined.md",
-    "Tools/Useful-Software/Curl-Cheatsheet.md",
-    "Web-Application-Hacking/API/API-Fuzzing.md",
-    "Linux/Linux-System-Administration/Linux-Logging.md",
     "Windows/Windows-Concepts/Windows-Events",
     "Windows/Windows-Concepts/Windows-Filesystem",
     "Images/jackmasa-mind-map.png",
