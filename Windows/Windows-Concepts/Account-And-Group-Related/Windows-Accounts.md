@@ -1,4 +1,4 @@
-# Accounts and Groups
+# Accounts
 
 ```powershell
 net user /add <user> password

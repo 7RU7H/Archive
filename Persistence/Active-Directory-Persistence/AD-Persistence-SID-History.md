@@ -1,7 +1,7 @@
 # Active Directory SID History
 
 
-The Security IDentifiers (SIDs) are used to track the security principal and the account's access when connecting to resources check: [[Windows-Accounts-Groups]] for more details. The have an attribute called SID history is use to enable access for an account to effectively be cloned to another. It help is AD migrations, as the user can still access the previous domains. While SID history is a great persistence technique, credential rotation and cleanup can still remove our persistence.
+The Security IDentifiers (SIDs) are used to track the security principal and the account's access when connecting to resources check: [[Windows-Accounts]] for more details. The have an attribute called SID history is use to enable access for an account to effectively be cloned to another. It help is AD migrations, as the user can still access the previous domains. While SID history is a great persistence technique, credential rotation and cleanup can still remove our persistence.
 
 ## Forging History
 
