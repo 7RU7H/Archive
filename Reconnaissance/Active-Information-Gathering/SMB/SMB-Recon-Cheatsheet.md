@@ -47,10 +47,7 @@ nbtscan -r $IP/$CIDR
 Recursively download an entire share
 ```bash
 smbget -R smb://$IP/$share
-# Or better
-smb: \> prompt off 
-smb: \> recurse on 
-smb: \> mget * # Download everything instead of manually 
+# Or better use smbclient
 ```
 
 ## smbclient
@@ -74,8 +71,12 @@ smbclient //10.10.10.10/annoying\ white\ spaces\ share
 smb: \> cd "Active Directory\ # will work to escape the whitespace
 ```
 
+Exfiltrating files
 ```bash
-## Transferring files!
+smb: \> prompt off 
+smb: \> recurse on 
+smb: \> mget * # Download everything instead of manually 
+
 # Download a file from a specific share
 smbclient //$IP/$share -c 'cd folder; ls' password -U username # list
 smbclient //$IP/$sahre -c 'cd folder;get desired_file_name' password -U username 
