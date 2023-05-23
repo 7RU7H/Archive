@@ -8,18 +8,67 @@
         "type": "tabs",
         "children": [
           {
+            "id": "763859aa7f115f70",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "9c25bdb074742d91",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Reconnaissance/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Privilege-Escalation.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b21740a138646daf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Windows/Windows-Concepts/Account-And-Group-Related/Windows-Groups.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "5c7d00429f11a633",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Post-Exploitation/Windows-Living-Off-The-Land.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "aaa7038990a651ed",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Privilege-Escalation.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -48,7 +97,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "nohup",
+                "query": "Events-",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Reconnaissance/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
+                "file": "Windows/Windows-Concepts/Account-And-Group-Related/Windows-Groups.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,21 +162,28 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "9c25bdb074742d91",
+  "active": "ed8f63df71621be6",
   "lastOpenFiles": [
-    "Post-Exploitation/Privilege-Escalation/Windows/SePrivileges/SeBackupPrivilege.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
-    "Windows/Windows-Concepts/Account-And-Group-Related/Windows-Groups.md",
-    "Images/ss64-windowsgroups-default-admin-users-and-groups.png",
     "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Privilege-Escalation.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
+    "Post-Exploitation/Windows-Living-Off-The-Land.md",
+    "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Offensive-Enumeration-With-WMI.md",
+    "Windows/Windows-Concepts/Account-And-Group-Related/Windows-Groups.md",
+    "Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Blue-KOTH-Battlegrounds-Cheatsheet-Windows.md",
+    "Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Blue-KOTH-Battlegrounds-Cheatsheet-Linux.md",
+    "Windows/Windows-Concepts/Windows-Events/Windows-Events-To-Monitor.md",
+    "Hardening/Active-Directory-Hardening.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
+    "Reconnaissance/Passive-Information-Gathering/Search-Engine-Dorking.md",
+    "Reconnaissance/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/SePrivileges/SeBackupPrivilege.md",
+    "Images/ss64-windowsgroups-default-admin-users-and-groups.png",
     "Windows/Active-Directory/Active-Directory-Privileged-Groups.md",
     "Windows/Windows-Concepts/Account-And-Group-Related/Windows-Accounts.md",
     "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Enumeration-Cheatsheet.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Scripts-And-Tools.md",
     "Post-Exploitation/Privilege-Escalation/Windows/SePrivileges/SeTakeOwnershipPrivilege.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation Bypassing-Contrained-Powershell.md",
-    "Post-Exploitation/Windows-Living-Off-The-Land.md",
     "Tools/Neo4j/Neo4j.md",
     "Tools/Neo4j/Bloodhound-Guide.md",
     "Post-Exploitation/Privilege-Escalation/Windows/SePrivileges/SePrivilege-Token-Table.md",
@@ -135,12 +191,6 @@
     "Security-Enterprises/Redteam/Red-Team-Domain-Categorization.md",
     "Services/Webservers/JS/NodeJS.md",
     "Windows/Windows-Commands/Icacls-Command.md",
-    "Linux/Linux-Commands/Linux-Module-Commands.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/SePrivileges/SeDebugPrivilege.md",
-    "Tools/Exploit-Frameworks/Metasploit/MSFvenom-Payloads.md",
-    "Security-Enterprises/Cyber-Kill-Chains/Diamond-Model.md",
-    "Linux/Linux-Commands/Linux-Memory-Commands.md",
-    "Linux/Linux-Commands/Core-Linux-Commands.md",
     "Windows/Windows-Concepts/Windows-Events",
     "Windows/Windows-Concepts/Windows-Filesystem",
     "Images/jackmasa-mind-map.png",

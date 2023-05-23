@@ -139,7 +139,7 @@ N/A | 619 | Medium | Quality of Service Policy changed
 4672 | 576 | Low | Special privileges assigned to new logon.
 4673 | 577 | Low | A privileged service was called.
 4674 | 578 | Low | An operation was attempted on a privileged object.
-4688 | 592 | Low | A new process has been created.
+[4688](https://learn.microsoft.com/en-us/windows/security/threat-protection/auditing/event-4688) | 592 | Low | [A new process has been created]([Audit Process Creation](https://learn.microsoft.com/en-us/windows/security/threat-protection/auditing/audit-process-creation).
 4689 | 593 | Low | A process has exited.
 4690 | 594 | Low | An attempt was made to duplicate a handle to an object.
 4691 | 595 | Low | Indirect access to an object was requested.

@@ -32,7 +32,58 @@ $task.Principal | fl
 del <filepath>
 ```
 
+## Alert for Commands
+
+[Study on Top 10 Windows Commands run by attackers](https://blogs.jpcert.or.jp/en/2016/01/windows-commands-abused-by-attackers.html)
+```powershell
+# Enumeration
+tasklist /s /v
+ver
+ipconfig /all /?
+systeminfo
+net time
+netstat -ano
+qprocess
+query user
+whoami /all
+net start
+arp -a 
+chcp
+nslookup
+fsutil fsinfo drives
+time /t
+set
+# Recon
+dir
+net
+view
+ping
+net use
+type
+net user /all /?
+net view
+qwinst -ano
+net localgroup
+net group
+net config
+net share
+dsquery
+csvde /f /q
+nbtstat -a
+net sessions
+nltest /dclist
+wevutil
+# Spreading malware
+at 
+reg add exporty query
+wmic
+wusa
+netsh advfirewall
+sc qc query
+rundll32 
+```
 
 ## References
 
 [ired.team](https://www.ired.team/offensive-security/persistence/t1053-schtask)
+[Study on Top 10 Windows Commands run by attackers](https://blogs.jpcert.or.jp/en/2016/01/windows-commands-abused-by-attackers.html)
