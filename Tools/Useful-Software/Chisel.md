@@ -22,8 +22,6 @@ ldd --version # linux and windows
 go build -ldflags="-s -w" 
 # Build for windows
 GOOS=windows GOARCH=amd64 go build -ldflags="-s -w"
-
-
 upx chisel
 
 # IPsec stuff I failed to get working
@@ -42,11 +40,6 @@ Ran either on Attack box or target box as a server or client
 
 - Regarding `--reverse` and `R:`... TLDR: `--reverse` allows reverse port forwarding, `R:` perform reverse port forward
 	- *"When the chisel server has `--reverse` enabled, remotes can be prefixed with `R` to denote that they are reversed. That is, the server will listen and accept connections, and they will be proxied through the client which specified the remote. Reverse remotes specifying "`R:socks`" will listen on the server's default socks port (1080) and terminate the connection at the client's internal SOCKS5 proxy."*
-
-```go
-// 10.10.10.10 = tun0 address
-chisel server -host 10.10.10.10 -p 10000 --reverse --socks5 
-```
 
 ## Local Port Forwarding
 
