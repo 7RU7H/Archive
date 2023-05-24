@@ -37,7 +37,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Windows/Windows-Concepts/Account-And-Group-Related/Windows-Groups.md",
+                "file": "Exploitation/Reverse-Shells-Listing.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "959762141061bdd7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/C2/Sliver/Sliver-Cheatsheet.md",
                 "mode": "source",
                 "source": false
               }
@@ -68,7 +80,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -97,7 +109,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Events-",
+                "query": "reverse-shell",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -134,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Windows/Windows-Concepts/Account-And-Group-Related/Windows-Groups.md",
+                "file": "Tools/C2/Sliver/Sliver-Cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -162,13 +174,19 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "ed8f63df71621be6",
+  "active": "959762141061bdd7",
   "lastOpenFiles": [
+    "Exploitation/Reverse-Shells-Listing.md",
+    "Exploitation/Bind-And-Reverse-Shells-Defined.md",
+    "Network/Network-Protocols-Cheatsheet.md",
+    "Cryptography-And-Authentication/Password-Attacks/Hash-Cracking-Tools/Hashcat-Cheatsheet.md",
+    "Cryptography-And-Authentication/Password-Attacks/Hash-Cracking-Tools/John-The-Ripper-Cheatsheet.md",
+    "Cryptography-And-Authentication/AD-Azure-Weak-Password-Finding.md",
+    "Windows/Windows-Concepts/Account-And-Group-Related/Windows-Groups.md",
     "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Privilege-Escalation.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
     "Post-Exploitation/Windows-Living-Off-The-Land.md",
     "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Offensive-Enumeration-With-WMI.md",
-    "Windows/Windows-Concepts/Account-And-Group-Related/Windows-Groups.md",
     "Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Blue-KOTH-Battlegrounds-Cheatsheet-Windows.md",
     "Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Blue-KOTH-Battlegrounds-Cheatsheet-Linux.md",
     "Windows/Windows-Concepts/Windows-Events/Windows-Events-To-Monitor.md",
@@ -185,12 +203,6 @@
     "Post-Exploitation/Privilege-Escalation/Windows/SePrivileges/SeTakeOwnershipPrivilege.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation Bypassing-Contrained-Powershell.md",
     "Tools/Neo4j/Neo4j.md",
-    "Tools/Neo4j/Bloodhound-Guide.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/SePrivileges/SePrivilege-Token-Table.md",
-    "Tools/Mimikatz/Mimikatz-Cheatsheet.md",
-    "Security-Enterprises/Redteam/Red-Team-Domain-Categorization.md",
-    "Services/Webservers/JS/NodeJS.md",
-    "Windows/Windows-Commands/Icacls-Command.md",
     "Windows/Windows-Concepts/Windows-Events",
     "Windows/Windows-Concepts/Windows-Filesystem",
     "Images/jackmasa-mind-map.png",

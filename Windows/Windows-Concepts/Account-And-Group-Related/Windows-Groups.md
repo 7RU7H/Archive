@@ -75,10 +75,6 @@ reg delete \\$IPaddress\HKLM\SYSTEM\CurrentControlSet\Services\DNS\Parameters /v
 ```
 
 
-
-
-
-
 #### Hyper-V Administrators
 
 [Hyper-V Administrators](https://docs.microsoft.com/en-us/windows/security/identity-protection/access-control/active-directory-security-groups#bkmk-hypervadministrators)

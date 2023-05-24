@@ -49,5 +49,6 @@ r
 ```
 
 ## References
+
 [Openwall Wiki](https://openwall.info/wiki)
-[erev0s rcacking /etc/shadow /etc/passwd blog](https://erev0s.com/blog/cracking-etcshadow-john/)
+[erev0s cracking /etc/shadow /etc/passwd blog](https://erev0s.com/blog/cracking-etcshadow-john/)
