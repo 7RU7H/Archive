@@ -49,7 +49,31 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/C2/Sliver/Sliver-Cheatsheet.md",
+                "file": "Tools/Useful-Software/Chisel.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d21407578e2bddd1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Post-Exploitation/Port-Redirection-And-Tunneling.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ac26a83c84759984",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "SSH-Tunneling-Or-Port-Forwarding.md",
                 "mode": "source",
                 "source": false
               }
@@ -80,7 +104,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -109,7 +133,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "reverse-shell",
+                "query": "nohup",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -146,7 +170,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/C2/Sliver/Sliver-Cheatsheet.md",
+                "file": "Post-Exploitation/Port-Redirection-And-Tunneling.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,9 +198,14 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "959762141061bdd7",
+  "active": "d21407578e2bddd1",
   "lastOpenFiles": [
+    "Tools/Useful-Software/Chisel.md",
+    "SSH-Tunneling-Or-Port-Forwarding.md",
+    "Post-Exploitation/Port-Redirection-And-Tunneling.md",
+    "Post-Exploitation/Windows-Living-Off-The-Land.md",
     "Exploitation/Reverse-Shells-Listing.md",
+    "Tools/C2/Sliver/Sliver-Cheatsheet.md",
     "Exploitation/Bind-And-Reverse-Shells-Defined.md",
     "Network/Network-Protocols-Cheatsheet.md",
     "Cryptography-And-Authentication/Password-Attacks/Hash-Cracking-Tools/Hashcat-Cheatsheet.md",
@@ -185,7 +214,6 @@
     "Windows/Windows-Concepts/Account-And-Group-Related/Windows-Groups.md",
     "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Privilege-Escalation.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
-    "Post-Exploitation/Windows-Living-Off-The-Land.md",
     "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Offensive-Enumeration-With-WMI.md",
     "Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Blue-KOTH-Battlegrounds-Cheatsheet-Windows.md",
     "Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Blue-KOTH-Battlegrounds-Cheatsheet-Linux.md",
@@ -199,10 +227,6 @@
     "Windows/Active-Directory/Active-Directory-Privileged-Groups.md",
     "Windows/Windows-Concepts/Account-And-Group-Related/Windows-Accounts.md",
     "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Enumeration-Cheatsheet.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Scripts-And-Tools.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/SePrivileges/SeTakeOwnershipPrivilege.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation Bypassing-Contrained-Powershell.md",
-    "Tools/Neo4j/Neo4j.md",
     "Windows/Windows-Concepts/Windows-Events",
     "Windows/Windows-Concepts/Windows-Filesystem",
     "Images/jackmasa-mind-map.png",
