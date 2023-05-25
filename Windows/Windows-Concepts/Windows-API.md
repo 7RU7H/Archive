@@ -86,6 +86,7 @@ Defining an API call in Powershell or .NET is almost identical in its implementa
 
 ## Commonly Abused API Calls
 [SANs](https://www.sans.org/white-papers/33649/) and [MalAPI.io](http://malapi.io/)
+
 **API Call** | **Explanation**
 --- | ---
 LoadLibraryA | Maps a specified DLL  into the address space of the calling process  
