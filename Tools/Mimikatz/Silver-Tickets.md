@@ -1,4 +1,4 @@
-Silver tickets are forget Ticket Granting Service (TGSs) as part of Kerberos, see [[Active-Directory-Kerberos-Authenication-Defined]] and it one of many techniques of [[Attacking-Kerberos]]. It is a ticket that grants ticket for a specific target, which **DOES NOT requires compromising the KRBTGT**, maybe try [[Mimikatz-Cheatsheet]]. Tim Medin: *"In a Silver Ticket attack, we force a Service ticket with a custom PAC (to escalate privileges). This Service Ticket is forged using the Target LT key (NTLM Service Hash). As we don't have the KDC LT key, we cannot create a valid, complete PAC signature. However, PAC validation is usally disabled, which means there is an opportunity."*
+Silver tickets are forget Ticket Granting Service (TGSs) as part of Kerberos, see [[Active-Directory-Kerberos-Authenication-Defined]] and it one of many techniques of [[Attacking-Kerberos]]. It is a ticket that grants ticket for a specific target, which **DOES NOT requires compromising the KRBTGT**, maybe try [[Mimikatz-Cheatsheet]]. Tim Medin: *"In a Silver Ticket attack, we force a Service ticket with a custom PAC (to escalate privileges). This Service Ticket is forged using the Target LT key (NTLM Service Hash). As we don't have the KDC LT key, we cannot create a valid, complete PAC signature. However, PAC validation is usually disabled, which means there is an opportunity."*
 
 Some Service Accounts will not verify the second signature - SQLservers, but not Webservers! This article is notes on the subject of Silver Tickets:
 
@@ -23,8 +23,8 @@ Requirement:
 - The Silver Ticket's scope is limited to whatever service is targeted on the specific server.
 - Forging TGS has no associated TGT, therefore Domain Controller was never contacted
 	- This means it is more stealthier as logging occur on the machine not on the DC for Blue Team 
-- Permissions are detirmined through SID
-	- Non-existent users must have relevant SIDs, i.e SID that indictated the users to be in host's local administrators group 
+- Permissions are determined through SID
+	- Non-existent users must have relevant SIDs, i.e SID that indicated the users to be in host's local administrators group 
  - Machine Account Passwords are usually rotated every 30 days
 	 - Even so we can leverage the access our TGS provides to gain access to the host's registry and alter the parameter that is responsible for the password rotation of the machine account
 

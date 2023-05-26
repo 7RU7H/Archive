@@ -42,6 +42,8 @@ jobs -K <kill all jobs> // -F for force
 // Beacons
 // Show all beacons, information and checkin time
 beacons 
+// Remove beacons that missed their last checking by 1 hour or more 
+beacons prune  
 // Show all bbeacno tasks - task are FIFO
 tasks
 // Drop down to select with arrow keys

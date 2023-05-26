@@ -24,18 +24,18 @@ ssh -f -N -L $port:127.0.0.1:port user@ip -i id_rsa
 -f
 ```
 
-If you do not want to break your ssh connection [konami from SANs](https://www.sans.org/blog/using-the-ssh-konami-code-ssh-control-sequences/) discusses using the key seqeunces ssh client:
+If you do not want to break your ssh connection [konami from SANs](https://www.sans.org/blog/using-the-ssh-konami-code-ssh-control-sequences/) discusses using the key sequences ssh client:
 -  `~.` - terminate connection (and any multiplexed sessions)
 -  `~B` - send a BREAK to the remote system
 -  `~C` - open a command line
--  `~R` - request rekey
+-  `~R` - request key
 -  `~V/v` - decrease/increase verbosity (LogLevel)
 -  `~^Z` - suspend ssh
 -  `~#` - list forwarded connections
 -  `~&` - background ssh (when waiting for connections to terminate)
 -  `~?` - this message
 -  `~~` - send the escape character by typing it twice
--   (Note that escapes are only recognized immediately after newline.)
+-   (Note that escapes are only recognised immediately after newline.)
 
 https://www.ired.team/offensive-security/lateral-movement/ssh-tunnelling-port-forwarding
 If you need ssh-keys

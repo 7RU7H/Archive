@@ -1,4 +1,4 @@
-# Impacket 
+# Impacket Cheatsheet
 
 WARNING impacket does not handle NTFS well - [Ippsec Blackfield HTB](https://www.youtube.com/watch?v=IfCysW0Od8w)
 
@@ -57,7 +57,7 @@ Password Encryption tool on Windows
 
 ## GetNPUsers.py
 
-ASREP Roasting - For users that do not require Kerberos preauthentiation: 'Do not require Kerberos preauthentication' set (UF_DONT_REQUIRE_PREAUTH). Output is compatible with JtR:[[John-The-Ripper-Cheatsheet]] use `-format hashcat` for  hashcat: [[Hashcat-Cheatsheet]].
+ASREP Roasting - For users that do not require Kerberos preauthentiation: 'Do not require Kerberos preauthentication set (UF_DONT_REQUIRE_PREAUTH). Output is compatible with JtR:[[John-The-Ripper-Cheatsheet]] use `-format hashcat` for  hashcat: [[Hashcat-Cheatsheet]].
 ```bash
 GetNPUsers.py  -dc-ip $IP -request '$domain/' 
 GetNPUsers.py  -dc-ip $IP -request '$domain/' -format hashcat
@@ -100,7 +100,7 @@ getST.py -hashes $lm:$nt -spn $spn/$spn-dc $domain$/$user
 
 ## GetUserSPNs.py
 
-This example will try to find and fetch Service Principal Names that are associated with normal user accounts. Output is compatible with JtR and HashCat.
+This example will try to find and fetch Service Principal Names that are associated with normal user accounts. Output is compatible with [[John-The-Ripper-Cheatsheet]] and [[Hashcat-Cheatsheet]] .
 ```bash
 GetUserSPNs.py -dc-ip $ip $domain.local/$user -request # provide a password
 GetUserSPNs.py -dc-ip $dc-ip $spn.info/$notanadmin
