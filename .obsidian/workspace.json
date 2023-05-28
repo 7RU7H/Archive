@@ -92,7 +92,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -158,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/Impacket/Impacket-Cheatsheet.md",
+                "file": "Tools/C2/Sliver/Sliver-Cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -186,13 +186,14 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "91211035a28ad09d",
+  "active": "19438118cd31c48e",
   "lastOpenFiles": [
+    "Tools/Useful-Software/Chisel.md",
+    "Tools/Impacket/Impacket-Cheatsheet.md",
     "Exploitation/Windows/Active-Directory/Pass-The-Ticket.md",
     "Post-Exploitation/Lateral-Movement/Active-Directory-Lateral-Movement/Active-Directory-Lateral-Movement.md",
     "Exploitation/Windows/Active-Directory/Attacking-Kerberos.md",
     "Tools/Neo4j/Bloodhound-Guide.md",
-    "Tools/Impacket/Impacket-Cheatsheet.md",
     "Exploitation/Windows/Active-Directory/AD-Kerberos-Delegation-Exploitation.md",
     "Tools/Mimikatz/Silver-Tickets.md",
     "Tools/C2/Sliver/Sliver-Cheatsheet.md",
@@ -204,7 +205,6 @@
     "SSH-Tunneling-Or-Port-Forwarding.md",
     "Windows/Windows-Concepts/Account-And-Group-Related/Windows-Groups.md",
     "Post-Exploitation/Windows-Living-Off-The-Land.md",
-    "Tools/Useful-Software/Chisel.md",
     "Cryptography-And-Authentication/Password-Attacks/Hash-Cracking-Tools/John-The-Ripper-Cheatsheet.md",
     "Windows/Windows-Concepts/Windows-Processes.md",
     "Windows/Windows-Concepts/Windows-API.md",
