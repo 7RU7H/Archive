@@ -1,6 +1,6 @@
 # Windows Groups
 
-For [[Active-Directory-Privileged-Groups]] as well as the official documnetation regarding Check [Active Directory default security groups by operating system version](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn579255(v=ws.11)?redirectedfrom=MSDN#event-log-readers).
+For [[Active-Directory-Privileged-Groups]] as well as the official documentation regarding Check [Active Directory default security groups by operating system version](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn579255(v=ws.11)?redirectedfrom=MSDN#event-log-readers).
 
 ## Builtin Groups
 
@@ -32,7 +32,7 @@ Get-WinEvent -LogName security | where { $_.ID -eq 4688 -and $_.Properties[8].Va
 
 #### DNS Admins
 
-[DnsAdmins](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/understand-security-groups#dnsadmins) group have access to network DNS information and DNS service. The DNS service runs as `NT AUTHORITY\SYSTEM` supporting custiom plugins specifiable with the builtit [dnscmd](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/dnscmd) utility. DnsAdmin do not have reboot permissions on DNS server by default. 
+[DnsAdmins](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/understand-security-groups#dnsadmins) group have access to network DNS information and DNS service. The DNS service runs as `NT AUTHORITY\SYSTEM` supporting custom plugins specifiable with the builtit [dnscmd](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/dnscmd) utility. DnsAdmin do not have reboot permissions on DNS server by default. 
 
 
 1. Use [mimilibdll](https://github.com/gentilkiwi/mimikatz/tree/master/mimilib) authored by Benjamin Delphy by  modifying the [kdns.c](https://github.com/gentilkiwi/mimikatz/blob/master/mimilib/kdns.c) file to execute code - review [labofapenetrationtester article](http://www.labofapenetrationtester.com/2017/05/abusing-dnsadmins-privilege-for-escalation-in-active-directory.html)
@@ -74,12 +74,22 @@ reg query \\$IPaddress\HKLM\SYSTEM\CurrentControlSet\Services\DNS\Parameters
 reg delete \\$IPaddress\HKLM\SYSTEM\CurrentControlSet\Services\DNS\Parameters /v ServerLevelPluginDll
 ```
 
-
 #### Hyper-V Administrators
 
-[Hyper-V Administrators](https://docs.microsoft.com/en-us/windows/security/identity-protection/access-control/active-directory-security-groups#bkmk-hypervadministrators)
+[Hyper-V Administrators](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/understand-security-groups#hyper-v-administrators) *have complete and unrestricted access to all the features in Hyper-V.*
 
-[Print Operators](https://docs.microsoft.com/en-us/windows/security/identity-protection/access-control/active-directory-security-groups#bkmk-printoperators)
+#### Print Operators
+
+[Print Operators](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/understand-security-groups#print-operators) *can manage, create, share, and delete printers that are connected to domain controllers in the domain. They also can manage Active Directory printer objects in the domain. Members of this group can locally sign in to and shut down domain controllers in the domain.*
+
+`SeLoadDriverPrivilege` either have elevated context bypass UAC ([[Bypassing-Windows-User-Account-Control]]) 
+
+see [[SePrivilege-Token-Table]]
+
+https://book.hacktricks.xyz/windows-hardening/windows-local-privilege-escalation/privilege-escalation-abusing-tokens/abuse-seloaddriverprivilege
+https://www.tarlogic.com/blog/seloaddriverprivilege-privilege-escalation/
+
+#### Server Operators
 
 [Server Operators](https://docs.microsoft.com/en-us/windows/security/identity-protection/access-control/active-directory-security-groups#bkmk-serveroperators)
 
