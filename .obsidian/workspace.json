@@ -37,7 +37,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exploitation/Windows/Active-Directory/Pass-The-Ticket.md",
+                "file": "Coding-Scripting-Programming/Languages/Powershell/Useful_Powershell.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8c77763670e5b585",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Persistence/Active-Directory-Persistence/AD-Persistence-Tickets.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,14 +97,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Post-Exploitation/Windows-Living-Off-The-Land.md",
+                "file": "Web-Application-Hacking/OWASP-Top-10-Historic-Definitions.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -121,7 +133,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Services",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -158,7 +170,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/C2/Sliver/Sliver-Cheatsheet.md",
+                "file": "Web-Application-Hacking/OWASP-Top-10-Historic-Definitions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -186,34 +198,35 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "19438118cd31c48e",
+  "active": "a4935855f3f0dc89",
   "lastOpenFiles": [
-    "Tools/Useful-Software/Chisel.md",
+    "Web-Application-Hacking/Hijacking-Remote-Technology-Repositories.md",
+    "Web-Application-Hacking/OWASP-Top-10-Historic-Definitions.md",
+    "Post-Exploitation/Windows-Living-Off-The-Land.md",
+    "Persistence/Active-Directory-Persistence/AD-Persistence-Tickets.md",
+    "Tools/Shells/SSH",
     "Tools/Impacket/Impacket-Cheatsheet.md",
-    "Exploitation/Windows/Active-Directory/Pass-The-Ticket.md",
-    "Post-Exploitation/Lateral-Movement/Active-Directory-Lateral-Movement/Active-Directory-Lateral-Movement.md",
+    "Coding-Scripting-Programming/Languages/Powershell/Useful_Powershell.md",
+    "Persistence/Active-Directory-Persistence/AD-Persistence-SID-History.md",
+    "Persistence/Active-Directory-Persistence/AD-Persistence-Group-Membership.md",
+    "Persistence/Active-Directory-Persistence/AD-Persistence-ACLs.md",
+    "Persistence/Active-Directory-Persistence/AD-Persistence-Certificates.md",
+    "Persistence/Active-Directory-Persistence/AD-Persistence-Credentials.md",
+    "Persistence/Active-Directory-Persistence/AD-Persistence-GPOs.md",
+    "Persistence/Active-Directory-Persistence/Active-Directory-Persistence.md",
+    "Tools/Mimikatz/Golden-Tickets.md",
     "Exploitation/Windows/Active-Directory/Attacking-Kerberos.md",
+    "Exploitation/Windows/Active-Directory/Pass-The-Ticket.md",
+    "Tools/C2/Sliver/Sliver-Cheatsheet.md",
+    "Tools/Useful-Software/Chisel.md",
+    "Post-Exploitation/Lateral-Movement/Active-Directory-Lateral-Movement/Active-Directory-Lateral-Movement.md",
     "Tools/Neo4j/Bloodhound-Guide.md",
     "Exploitation/Windows/Active-Directory/AD-Kerberos-Delegation-Exploitation.md",
     "Tools/Mimikatz/Silver-Tickets.md",
-    "Tools/C2/Sliver/Sliver-Cheatsheet.md",
     "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Privilege-Escalation.md",
     "Exploitation/Reverse-Shells-Listing.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
     "Windows/Windows-Concepts/Account-And-Group-Related/Windows-System-And-Service-Privileges.md",
-    "Post-Exploitation/Port-Redirection-And-Tunneling.md",
-    "SSH-Tunneling-Or-Port-Forwarding.md",
-    "Windows/Windows-Concepts/Account-And-Group-Related/Windows-Groups.md",
-    "Post-Exploitation/Windows-Living-Off-The-Land.md",
-    "Cryptography-And-Authentication/Password-Attacks/Hash-Cracking-Tools/John-The-Ripper-Cheatsheet.md",
-    "Windows/Windows-Concepts/Windows-Processes.md",
-    "Windows/Windows-Concepts/Windows-API.md",
-    "Coding-Scripting-Programming/Languages/Powershell/Useful_Powershell.md",
-    "Tools/Local-PrivEsc/Seatbelt-Helpsheet.md",
-    "Windows/Windows-Commands/Windows-Commands.md",
-    "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Enumeration-Defined.md",
-    "Exploitation/Bind-And-Reverse-Shells-Defined.md",
-    "Network/Network-Protocols-Cheatsheet.md",
     "Images/ss64-windowsgroups-default-admin-users-and-groups.png",
     "Windows/Windows-Concepts/Windows-Events",
     "Windows/Windows-Concepts/Windows-Filesystem",
@@ -225,7 +238,6 @@
     "Tools/Exploit-Frameworks",
     "Services/Webservers/Apache/Apache2",
     "Security-Enterprises/Report-Writing",
-    "Security-Enterprises/For-Individuals",
     "Images/azslotswappedsettingsvsslotspecificsettings.png",
     "Images/azurecloudserviceresponsiblitychart.png",
     "Images/azureadbenefitsofazureadjoin.png",

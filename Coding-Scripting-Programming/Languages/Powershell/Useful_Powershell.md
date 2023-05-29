@@ -336,9 +336,11 @@ For the one liner.
 
 ## Credential Making
 
+- [a73xsh](https://gist.github.com/a73xsh/59463149c50d75c3a25889cf20823f8e)
 ```powershell
+$user = "addyouruser"
 $pass = convertto-securestring -asplaintext -force -string ""
-$cred = new-object -typename system.management.automation.pscredential -arguementlist "",$pass
+$cred = new-object -typename system.management.automation.pscredential($user,$pass)
 $session = newpssession -computername dc01 -credential $cred
 enter-pssession -session $sessions
 # Sometimes you need to use invoke command instead of $session creation due to shell limitations
