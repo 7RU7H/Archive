@@ -73,7 +73,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/Impacket/Impacket-Cheatsheet.md",
+                "file": "Brain-Hacking/Actions/Good-Acronyms-And-Phrases.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +104,7 @@
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -170,7 +170,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Windows/Bypassing-UAC/Bypassing-Windows-User-Account-Control.md",
+                "file": "Brain-Hacking/Actions/Good-Acronyms-And-Phrases.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -198,15 +198,18 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "a4935855f3f0dc89",
+  "active": "91211035a28ad09d",
   "lastOpenFiles": [
+    "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
+    "Brain-Hacking/Actions/Good-Acronyms-And-Phrases.md",
+    "Tools/Impacket/Impacket-Cheatsheet.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Bypassing-UAC/Bypassing-Windows-User-Account-Control.md",
     "Windows/Windows-Concepts/Account-And-Group-Related/Windows-Groups.md",
     "Web-Application-Hacking/OWASP-Top-10-Historic-Definitions.md",
     "Web-Application-Hacking/Hijacking-Remote-Technology-Repositories.md",
     "Post-Exploitation/Windows-Living-Off-The-Land.md",
     "Persistence/Active-Directory-Persistence/AD-Persistence-Tickets.md",
     "Tools/Shells/SSH",
-    "Tools/Impacket/Impacket-Cheatsheet.md",
     "Coding-Scripting-Programming/Languages/Powershell/Useful_Powershell.md",
     "Persistence/Active-Directory-Persistence/AD-Persistence-SID-History.md",
     "Persistence/Active-Directory-Persistence/AD-Persistence-Group-Membership.md",
@@ -224,9 +227,6 @@
     "Tools/Neo4j/Bloodhound-Guide.md",
     "Exploitation/Windows/Active-Directory/AD-Kerberos-Delegation-Exploitation.md",
     "Tools/Mimikatz/Silver-Tickets.md",
-    "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Privilege-Escalation.md",
-    "Exploitation/Reverse-Shells-Listing.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
     "Images/ss64-windowsgroups-default-admin-users-and-groups.png",
     "Windows/Windows-Concepts/Windows-Events",
     "Windows/Windows-Concepts/Windows-Filesystem",
