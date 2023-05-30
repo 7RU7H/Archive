@@ -54,6 +54,7 @@ Information - the user Alice has X SID that then indicates Administrative Group
 [False Negatives](https://www.cgisecurity.com/questions/falsenegative.shtml) - not detected, but detection mechanism failed
 
 
+- Consider how your problem is on OSI layer - Please Do Not Throw Away Sausage Pizza 
 
 
 
