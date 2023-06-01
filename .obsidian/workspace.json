@@ -20,24 +20,36 @@
             }
           },
           {
-            "id": "959762141061bdd7",
+            "id": "ec9de92df9173244",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/Useful-Software/Chisel.md",
+                "file": "Exploitation/Windows/Active-Directory/AD-Kerberos-Delegation-Exploitation.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "ec9de92df9173244",
+            "id": "4390e04ca780282d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Network/RDP.md",
+                "file": "Tools/Mimikatz/Mimikatz-Cheatsheet.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6b49a98298c7ab84",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/Mimikatz/Kekeo-Cheatsheet.md",
                 "mode": "source",
                 "source": false
               }
@@ -121,7 +133,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "RDP",
+                "query": "RID",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -143,7 +155,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 434.5
+    "width": 390.5
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -159,7 +171,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Network/RDP.md",
+                "file": "Tools/Mimikatz/Mimikatz-Cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,14 +199,22 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "ec9de92df9173244",
+  "active": "4390e04ca780282d",
   "lastOpenFiles": [
+    "Windows/Active-Directory/Active-Directory-Defined.md",
+    "Tools/Mimikatz/Mimikatz-Cheatsheet.md",
+    "Exploitation/Windows/Active-Directory/AD-Kerberos-Delegation-Exploitation.md",
+    "Tools/Mimikatz/Kekeo-Cheatsheet.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Scripts-And-Tools.md",
+    "Network/RDP.md",
     "Post-Exploitation/Post-Exploitation-Enumeration/Active-Directory/Active-Directory-Footholding.md",
+    "Tools/Useful-Software/Chisel.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
+    "Exploitation/Windows/Active-Directory/AD-Domain-Exploitation.md",
     "Coding-Scripting-Programming/Languages/Powershell/Useful_Powershell.md",
     "Exploitation/Windows/Active-Directory/AD-Certificate-Exploitation.md",
-    "Network/RDP.md",
     "Exploitation/Windows/Pass-The-Hash.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
     "Brain-Hacking/Actions/Good-Acronyms-And-Phrases.md",
     "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
     "Tools/Impacket/Impacket-Cheatsheet.md",
@@ -208,14 +228,6 @@
     "Persistence/Active-Directory-Persistence/AD-Persistence-SID-History.md",
     "Persistence/Active-Directory-Persistence/AD-Persistence-Group-Membership.md",
     "Persistence/Active-Directory-Persistence/AD-Persistence-ACLs.md",
-    "Persistence/Active-Directory-Persistence/AD-Persistence-Certificates.md",
-    "Persistence/Active-Directory-Persistence/AD-Persistence-Credentials.md",
-    "Persistence/Active-Directory-Persistence/AD-Persistence-GPOs.md",
-    "Persistence/Active-Directory-Persistence/Active-Directory-Persistence.md",
-    "Tools/Mimikatz/Golden-Tickets.md",
-    "Exploitation/Windows/Active-Directory/Attacking-Kerberos.md",
-    "Exploitation/Windows/Active-Directory/Pass-The-Ticket.md",
-    "Tools/C2/Sliver/Sliver-Cheatsheet.md",
     "Images/ss64-windowsgroups-default-admin-users-and-groups.png",
     "Windows/Windows-Concepts/Windows-Events",
     "Windows/Windows-Concepts/Windows-Filesystem",

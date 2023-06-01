@@ -26,8 +26,8 @@ A Windows Server that has Active Directory Domain Service(ADDS) installed and is
 A DC purpose:
 1. Stores all relevant information including AD DS data store for the Forest 
 2. Enforce rules governing object within an Windows domain
-3. Handles all key authenication, authorization services and all core and native management services.
-4. Replicates updates from other domain contollers in the forest
+3. Handles all key authentication, authorisation services and all core and native management services.
+4. Replicates updates from other domain controllers in the forest
 5. Allow admin access to manage domain resources
 
 A Primary domain controller emulator is one of the five operations master roles or [FSMO roles](https://docs.microsoft.com/en-GB/troubleshoot/windows-server/identity/fsmo-roles) performed by domain controllers. Technically speaking, the property is called `PdcRoleOwner` and the domain controller with this property will always have the most updated information about user login and authentication.
@@ -57,7 +57,7 @@ Domain	   \				  	   /  Domain	Domain
 Organisation Units				 /  (OUs)		(OUs)		
 ```
 
-Often clients on a internal network are connectioned vai one of the DC as the gateway to the external forests or tree. Internal OUs are also internal member servers(web servers, database servers, etc) and printers reside accessable the DC within their local internal network. It reliant on Domain Name System (check[[DNS-Defined]]) typically with DC will also host a DNS server.
+Often clients on a internal network are connected via one of the DC as the gateway to the external forests or tree. Internal OUs are also internal member servers(web servers, database servers, etc) and printers reside accessible the DC within their local internal network. It reliant on Domain Name System (check [[DNS-Defined]]) typically with DC will also host a DNS server.
 
 Object by Hierarchy  |  Description
 --- | ---
