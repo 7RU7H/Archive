@@ -44,6 +44,42 @@
             }
           },
           {
+            "id": "cd19266e505ba653",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Windows/Windows-Commands/Windows-Commands.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f1892e4a4da10181",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Exploitation/Windows/Active-Directory/AD-DC-Sync-Attack.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "230c5ad8c18d21a4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Post-Exploitation/Windows-Living-Off-The-Land.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "6b49a98298c7ab84",
             "type": "leaf",
             "state": {
@@ -104,7 +140,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 9
       }
     ],
     "direction": "vertical"
@@ -133,7 +169,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "RID",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -150,8 +186,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -171,7 +206,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/Mimikatz/Mimikatz-Cheatsheet.md",
+                "file": "Tools/C2/Sliver/Sliver-Cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -199,10 +234,13 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "4390e04ca780282d",
+  "active": "19438118cd31c48e",
   "lastOpenFiles": [
-    "Windows/Active-Directory/Active-Directory-Defined.md",
+    "Windows/Windows-Commands/Windows-Commands.md",
     "Tools/Mimikatz/Mimikatz-Cheatsheet.md",
+    "Exploitation/Windows/Active-Directory/AD-DC-Sync-Attack.md",
+    "Post-Exploitation/Windows-Living-Off-The-Land.md",
+    "Windows/Active-Directory/Active-Directory-Defined.md",
     "Exploitation/Windows/Active-Directory/AD-Kerberos-Delegation-Exploitation.md",
     "Tools/Mimikatz/Kekeo-Cheatsheet.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Scripts-And-Tools.md",
@@ -222,12 +260,9 @@
     "Windows/Windows-Concepts/Account-And-Group-Related/Windows-Groups.md",
     "Web-Application-Hacking/OWASP-Top-10-Historic-Definitions.md",
     "Web-Application-Hacking/Hijacking-Remote-Technology-Repositories.md",
-    "Post-Exploitation/Windows-Living-Off-The-Land.md",
     "Persistence/Active-Directory-Persistence/AD-Persistence-Tickets.md",
     "Tools/Shells/SSH",
     "Persistence/Active-Directory-Persistence/AD-Persistence-SID-History.md",
-    "Persistence/Active-Directory-Persistence/AD-Persistence-Group-Membership.md",
-    "Persistence/Active-Directory-Persistence/AD-Persistence-ACLs.md",
     "Images/ss64-windowsgroups-default-admin-users-and-groups.png",
     "Windows/Windows-Concepts/Windows-Events",
     "Windows/Windows-Concepts/Windows-Filesystem",
