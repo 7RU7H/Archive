@@ -121,7 +121,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/C2/Sliver/Sliver-Cheatsheet.md",
+                "file": "Coding-Scripting-Programming/Languages/C/Useful-C.md",
                 "mode": "source",
                 "source": false
               }
@@ -206,7 +206,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/C2/Sliver/Sliver-Cheatsheet.md",
+                "file": "Coding-Scripting-Programming/Languages/C/Useful-C.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -236,6 +236,8 @@
   },
   "active": "19438118cd31c48e",
   "lastOpenFiles": [
+    "Security-Enterprises/Digital-Forensics/Digital-Forensics.md",
+    "Tools/C2/Sliver/Sliver-Cheatsheet.md",
     "Windows/Windows-Commands/Windows-Commands.md",
     "Tools/Mimikatz/Mimikatz-Cheatsheet.md",
     "Exploitation/Windows/Active-Directory/AD-DC-Sync-Attack.md",
@@ -260,9 +262,7 @@
     "Windows/Windows-Concepts/Account-And-Group-Related/Windows-Groups.md",
     "Web-Application-Hacking/OWASP-Top-10-Historic-Definitions.md",
     "Web-Application-Hacking/Hijacking-Remote-Technology-Repositories.md",
-    "Persistence/Active-Directory-Persistence/AD-Persistence-Tickets.md",
     "Tools/Shells/SSH",
-    "Persistence/Active-Directory-Persistence/AD-Persistence-SID-History.md",
     "Images/ss64-windowsgroups-default-admin-users-and-groups.png",
     "Windows/Windows-Concepts/Windows-Events",
     "Windows/Windows-Concepts/Windows-Filesystem",
