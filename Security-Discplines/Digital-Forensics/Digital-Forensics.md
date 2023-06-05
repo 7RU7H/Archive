@@ -1,7 +1,7 @@
 
 # Digital Forensics
 
-This is a hub and overview page for Digital Forensics related topics. Although Digital Forensics and Incident Response are often combined and share skill sets, DF is the investigative and analytical side of the pairing. A field experts where apply forensic analysis and techniques to digital artefacts of human activity in computational devices. This expertise has application in criminal and defensive investigations. [Digital Forensics is the forensic examination of anything wherever computational data exists.](https://www.youtube.com/watch?v=ehxJZAGUaxY) The author consider the conceptual separation of [[Security-Enterprises/Incident-Response]] and Digital Forensics a etymological imperative; simply Digital Forensics does not need Incident Response, but Incident Response requires techniques from Digital Forensics to evaluate data. Corporate definitions often coincide with the concatenating of tasks and title to save money.
+This is a hub and overview page for Digital Forensics related topics. Although Digital Forensics and Incident Response are often combined and share skill sets, DF is the investigative and analytical side of the pairing. A field experts where apply forensic analysis and techniques to digital artefacts of human activity in computational devices. This expertise has application in criminal and defensive investigations. [Digital Forensics is the forensic examination of anything wherever computational data exists.](https://www.youtube.com/watch?v=ehxJZAGUaxY) The author consider the conceptual separation of [[Security-Discplines/Incident-Response]] and Digital Forensics a etymological imperative; simply Digital Forensics does not need Incident Response, but Incident Response requires techniques from Digital Forensics to evaluate data. Corporate definitions often coincide with the concatenating of tasks and title to save money.
 
 
 #### Concepts
@@ -14,7 +14,7 @@ This is a hub and overview page for Digital Forensics related topics. Although D
 - Timeline Creation - Event timelines are required for efficient and accurate analysis
 
 Dirty Wordlists
-- Notetaking while investigating to avoid:
+- Note taking while investigating to avoid:
 	- Recursive rabbit hole when dealing with [[Persistence]] mechanisms regardless of OS. 
 	- Missing Cleanup
 
@@ -25,7 +25,16 @@ Dirty Wordlists
 [[Volatility]]
 [[Redline]]
 [[Velociraptor]]
-[[FTK-Imager]] is a forensics tool that allows forensic specialists to acquire computer data and perform analysis without affecting the original evidence, preserving its authenticity, integrity, and validity for presentation during a trial in a court of law.
+[FTK Imager](https://www.exterro.com/ftk-imager)  is a forensics tool that allows forensic specialists to acquire computer data and perform analysis without affecting the original evidence, preserving its authenticity, integrity, and validity for presentation during a trial in a court of law. It is premium software so will not receive coverage due to legal risks regardless if it is for education. 
+- UI Features: 
+	- Evidence Tree Pane which displays a hierarchical view of the added evidence sources?
+	- File List Pane
+		- Corrupted file - 0 file size
+		- Obfuscated - conflicting file  extension and header information
+		- Deleted files marked with an `X`
+	- Viewer Pane to show file contents
+- Forensic Features:
+	- Detect Encryption
 
 
 #### OS Specific Cheatsheets:
@@ -43,7 +52,7 @@ At each stage and concept discuss are rough guidelines that typically followed e
 
 - Search Warrants
 
-- Minimization evidence tampering
+- Minimisation evidence tampering
 - Accountability 
 - Process for Establishing Chain of Custody - Before, During and After a collection and turnover:
 	- Ensure proper documentation of any seized materials as evidence (devices/data).
@@ -67,9 +76,11 @@ Challenges faced
 - Data tampering, corruption and eradication
 - Anti-Forensic measures
 - Compromise of artefacts prior to investigation
-- Minimization evidence tampering
+- Minimisation evidence tampering
 
 ## References
 
 [THM DFIR Room](https://tryhackme.com/room/introductoryroomdfirmodule)
 [SANs DFIR - What is Digital Forensics & Incident Response (DFIR)?](https://www.youtube.com/watch?v=ehxJZAGUaxY)
+[FTK Imager](https://www.exterro.com/ftk-imager)  
+[THM Digital Forensics Case B4DM755 Room](https://tryhackme.com/room/caseb4dm755)

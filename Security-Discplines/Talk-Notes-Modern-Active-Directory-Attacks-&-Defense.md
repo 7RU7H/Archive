@@ -1,9 +1,9 @@
 # Red vs Blue: Modern Active Directory Attacks & Defense by Sean Metcalfe
 
 ## Introduction
-These are my notes from the DEFCON 23 talk about Active Directory hacking and defending avalible on [youtube](https://www.youtube.com/watch?v=rknpKIxT7NM). It is even six years on considered high recommended watching material. Description:
+These are my notes from the DEFCON 23 talk about Active Directory hacking and defending available on [youtube](https://www.youtube.com/watch?v=rknpKIxT7NM). It is even six years on considered high recommended watching material. Description:
 
-*Around this time, Active Directory (AD) admins all over the world felt a great disturbance in the Force. Golden Tickets are the ultimate method for persistent, forever AD admin rights to a network since they are valid Kerberos tickets and can’t be detected, right? This talk explores the latest Active Directory attack vectors and describes how Golden Ticket usage can be detected. When forged Kerberos tickets are used in AD, there are some interesting artifacts that can be identified. Yes, despite what you may have read on the internet, there are ways to detect Golden & Silver Ticket usage. Skip the fluff and dive right into the technical detail describing the latest methods for gaining and maintaining administrative access in Active Directory, including some sneaky AD persistence methods. Also covered are traditional security measures that work (and ones that don’t) as well as the mitigation strategies that disrupts the attacker’s preferred game-plan. Prepare to go beyond “Pass-the-Hash” and down the rabbit hole.*
+*Around this time, Active Directory (AD) admins all over the world felt a great disturbance in the Force. Golden Tickets are the ultimate method for persistent, forever AD admin rights to a network since they are valid Kerberos tickets and can’t be detected, right? This talk explores the latest Active Directory attack vectors and describes how Golden Ticket usage can be detected. When forged Kerberos tickets are used in AD, there are some interesting artefacts that can be identified. Yes, despite what you may have read on the internet, there are ways to detect Golden & Silver Ticket usage. Skip the fluff and dive right into the technical detail describing the latest methods for gaining and maintaining administrative access in Active Directory, including some sneaky AD persistence methods. Also covered are traditional security measures that work (and ones that don’t) as well as the mitigation strategies that disrupts the attacker’s preferred game-plan. Prepare to go beyond “Pass-the-Hash” and down the rabbit hole.*
 
 For the author this talk will augment further information throughout this repository and be referenced both to this page, but also the video. I choose the DEF CON video just because it is slightly longer than the Black Hat version. It also turns out this is as this was not in the Black Hat talk and contains Sneaky AD Persistence tricks.
 
@@ -61,7 +61,7 @@ For the author this talk will augment further information throughout this reposi
 				- Directory Service Restore Mode - DSRM 
 					- "Break glass" access to DC
 					- DSRM password set when DC is promoted it is rarely changed, password Change Process
-					- Using DSM Creds
+					- Using DSM Credentials
 						- Reboot to DSRM
 						- Access DSRM without Rebooting (2k8+)
 							- DsrmAdminLogonBehavior = 1 -> 2 
@@ -86,10 +86,10 @@ For the author this talk will augment further information throughout this reposi
 					- Inject into LSASS
 					- Get Credentials 
 		- Golden Ticket (Forged TGT) Communication
-				- Limitations
-					- Admin Rights limited to current domain
-					- Doesn't work acrross trusts unless in EA
-				- [[Mimikatz-Cheatsheet]] support SID History in Golden Tickets
+			- Limitations
+			- Admin Rights limited to current domain
+			- Doesn't work acrross trusts unless in EA
+			- [[Mimikatz-Cheatsheet]] support SID History in Golden Tickets
 		- Silver Tickets (Forged TGS) Communication
 				- Attacker dumped AD & has all domain creds
 				- Even if domain controller password more than once
