@@ -216,7 +216,7 @@ Condense:
 			3. Kerberoastable?
 			4. Databases?
 			5. Network Shares/File system artifacts?
-			6. sMSA or [[gMSA-abuse]]?
+			6. sMSA or [[gMSA-abuse]]?AD escalation and laterally movement, before Local Privilege Escalation is always a reduction in time to objective.
 			7. [[ACL-Abuse]]?
 		3. What services can I access with those credentials?
 			1. Have you mapped the network, with or without SharpHound?
@@ -224,6 +224,8 @@ Condense:
 		4. How can I abuse my permissions to get more permissions and more credentials?
 			1. How can you abuse the permissions allocated to the User or Group of current context?
 		5. Is there alternate tool to the method of doing any previous step?
+	- Foothold on a box - remember:
+		- [[Active-Directory-Lateral-Movement]] and [[Active-Directory-Privilege-Escalation]] before Local Privilege Escalation is always a reduction in time to objective. 
 
 
 - Host Enumeration

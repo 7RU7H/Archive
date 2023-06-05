@@ -59,7 +59,7 @@ Tech advances
 
 MITRE as detections are great baseline for defense, but signature-based detection that are customizations are a way to bypass all of these baselines. 
 
-Customization and knowing were the detection will be is the basis for successful bypassing [[AMSI-Bypassing]] and [[EDR-Bypassing]]
+Customization and knowing were the detection will be is the basis for successful bypassing [[AMSI-Bypassing]] and [[EDR-Bypass]]
 
 Powershell is still [[Useful_Powershell]]..as detections are fragile. Change the defaults.
 

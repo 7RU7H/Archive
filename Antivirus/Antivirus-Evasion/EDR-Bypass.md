@@ -1,5 +1,5 @@
 
-# EDR Bypassing
+# EDR Bypass
 
 EDR hooks a process you may need to unhook it. Come back later... just like EDR which will replace the hooks in the process.
 
