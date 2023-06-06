@@ -8,7 +8,7 @@ Very open to feedback and criticism. Hopeful in the future once I have made a re
 
 H.D. Moore: *“If you don’t think you’re a n00b, you’re not trying hard enough.”*
 
-See the [[About]] page for historic dumping of everything that was on this page as well a history of this repository. Among the issues of the author dyslexia is one that is high on the list and although Obsidian introduced a spellchecker it must have be a hard year and half of anyone reading the contents of this repository.  
+See the [[About]] page for historic dumping of everything that was on this page as well a history of this repository. Among the issues of the author dyslexia is one that is high on the list and although Obsidian introduced a spellchecker in 2023, but it must have be a hard year and half of anyone reading the contents of this repository.   
 
 #### For A Contents Page
 

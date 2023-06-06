@@ -2,7 +2,7 @@
 
 ## DLL Definition
 
-DLL = respositories of functions, written in the same format as .exe files.  Windows Storage differs per architecture:
+Dynamic Link Libraries are files of functions, written in the same format as .exe files.  Windows Storage differs per architecture:
 1. 64bit stored: System32 (contains the 64-bit (really really it does)
 2. SysWOW64 (contains the 32 bit) (confusingly)
 

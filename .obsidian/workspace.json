@@ -4,35 +4,47 @@
     "type": "split",
     "children": [
       {
-        "id": "08e69e608499c68e",
+        "id": "3f94b459e33503b9",
         "type": "tabs",
         "children": [
           {
-            "id": "9c25bdb074742d91",
+            "id": "972d5c8c527aab4b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Privilege-Escalation.md",
+                "file": "Windows/Windows-Concepts/Account-And-Group-Related/Windows-Groups.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "ec9de92df9173244",
+            "id": "ef96fbbf9263e536",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exploitation/Windows/Active-Directory/AD-Kerberos-Delegation-Exploitation.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "4390e04ca780282d",
+            "id": "e771f82074ab9502",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Exploitation/Binary-Exploitation/Binary-Exploitation-Enumeration.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "500bfbfecb619191",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -44,67 +56,19 @@
             }
           },
           {
-            "id": "cd19266e505ba653",
+            "id": "768c47fab6fdf647",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Windows/Windows-Commands/Windows-Commands.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f1892e4a4da10181",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Exploitation/Windows/Active-Directory/AD-DC-Sync-Attack.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "230c5ad8c18d21a4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Post-Exploitation/Windows-Living-Off-The-Land.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6b49a98298c7ab84",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a4935855f3f0dc89",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Windows/Bypassing-UAC/Bypassing-Windows-User-Account-Control.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -133,7 +97,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "Mimika",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -170,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -198,39 +162,39 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "6b49a98298c7ab84",
+  "active": "ef96fbbf9263e536",
   "lastOpenFiles": [
+    "Reverse-Engineering/Binary-Composition/Binary-Composition-Hub.md",
+    "Exploitation/Binary-Exploitation/Binary-Exploitation-Enumeration.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+    "Coding-Scripting-Programming/Languages/Bash/Useful_Bash.md",
+    "Security-Disciplines/Digital-Forensics/Digital-Forensics.md",
+    "Windows/Windows-Concepts/Account-And-Group-Related/Windows-Groups.md",
+    "Tools/Mimikatz/Mimikatz-Cheatsheet.md",
+    "Windows/Active-Directory/Active-Directory-Credential-Caching.md",
+    "Exploitation/Compiling-Exploits.md",
+    "Windows/Windows-Concepts/Dynamic-Link-Libraries.md",
+    "Coding-Scripting-Programming/Languages/C/Useful-C.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
+    "Windows/Windows-Concepts/NTLM-Authentication.md",
+    "Windows/Windows-Concepts/Windows-Important-Directories.md",
+    "README.md",
+    "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Privilege-Escalation.md",
+    "Exploitation/Windows/Active-Directory/AD-Kerberos-Delegation-Exploitation.md",
+    "Windows/Windows-Commands/Windows-Commands.md",
+    "Exploitation/Windows/Active-Directory/AD-DC-Sync-Attack.md",
+    "Post-Exploitation/Windows-Living-Off-The-Land.md",
+    "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
     "Tools/C2/Sliver/Command-And-Control-Frameworks.md",
     "Tools/C2/C2-Matrix.md",
     "Tools/Network-Management/Network-Mangement.md",
     "Tools/C2/Untitled.md",
     "Tools/Mimikatz/Kekeo-Cheatsheet.md",
     "Tools/Network-Management",
-    "Tools/Useful-Software/fping.md",
-    "Reconnaissance/Active-Information-Gathering/OS-Detection/OS-Detection.md",
     "Tools/LLMNR",
     "Tools/AD-Offensive",
-    "Persistence/Active-Directory-Persistence/AD-Persistence-Tickets.md",
-    "Tools/EDR-Bypass/ScareCrow.md",
-    "Antivirus/Antivirus-Evasion/EDR-Bypass.md",
     "Tools/EDR-Bypass",
-    "Exploitation/Windows/Active-Directory/AD-Certificate-Exploitation.md",
-    "Tools/Wordlists/Wordlist-Tools/MP32-Cheatsheet.md",
-    "Security-Discplines/Digital-Forensics/Digital-Forensics.md",
-    "Tools/Wordlists/Untitled.md",
-    "README.md",
-    "This-Repository-Specific/About.md",
     "This-Repository-Specific",
-    "Tools/Forensics/FTK-Imager.md",
-    "Security-Discplines/Talk-Notes-Modern-Active-Directory-Attacks-&-Defense.md",
-    "Security-Discplines/Security-Operations-Centre.md",
-    "Security-Discplines/Blue-Team/Finding-a-Domains-Worth-of-Malware-Jeff-McJunkin.md",
-    "Social-Engineering/Phishing/Pretext.md",
-    "Coding-Scripting-Programming/Languages/C/Useful-C.md",
-    "Tools/C2/Sliver/Sliver-Cheatsheet.md",
-    "Windows/Windows-Commands/Windows-Commands.md",
-    "Tools/Mimikatz/Mimikatz-Cheatsheet.md",
-    "Exploitation/Windows/Active-Directory/AD-DC-Sync-Attack.md",
     "Tools/Shells/SSH",
     "Images/ss64-windowsgroups-default-admin-users-and-groups.png",
     "Windows/Windows-Concepts/Windows-Events",

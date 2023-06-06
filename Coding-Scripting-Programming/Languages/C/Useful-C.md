@@ -112,7 +112,6 @@ signal(SIGTERM, handler);
 // SIGKILL cannot be handler - oreder not a request
 ```
 
-
 Simple use system to call another binary - see [[Compiling-Exploits]]
 ```c
 #include "stdlib.h"

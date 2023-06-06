@@ -1,7 +1,7 @@
 
 # Digital Forensics
 
-This is a hub and overview page for Digital Forensics related topics. Although Digital Forensics and Incident Response are often combined and share skill sets, DF is the investigative and analytical side of the pairing. A field experts where apply forensic analysis and techniques to digital artefacts of human activity in computational devices. This expertise has application in criminal and defensive investigations. [Digital Forensics is the forensic examination of anything wherever computational data exists.](https://www.youtube.com/watch?v=ehxJZAGUaxY) The author consider the conceptual separation of [[Security-Discplines/Incident-Response]] and Digital Forensics a etymological imperative; simply Digital Forensics does not need Incident Response, but Incident Response requires techniques from Digital Forensics to evaluate data. Corporate definitions often coincide with the concatenating of tasks and title to save money.
+This is a hub and overview page for Digital Forensics related topics. Although Digital Forensics and Incident Response are often combined and share skill sets, DF is the investigative and analytical side of the pairing. A field experts where apply forensic analysis and techniques to digital artefacts of human activity in computational devices. This expertise has application in criminal and defensive investigations. [Digital Forensics is the forensic examination of anything wherever computational data exists.](https://www.youtube.com/watch?v=ehxJZAGUaxY) The author consider the conceptual separation of [[Security-Disciplines/Incident-Response]] and Digital Forensics a etymological imperative; simply Digital Forensics does not need Incident Response, but Incident Response requires techniques from Digital Forensics to evaluate data. Corporate definitions often coincide with the concatenating of tasks and title to save money.
 
 
 #### Concepts
@@ -69,8 +69,14 @@ DFIR First Responders should *typically* adhere to the following guidelines if a
 - Use of Write-Blocking devices
 
 
-Forensics Lab Analyst will use a write-blocking device to mount the suspect drive / forensic artefact to prevent accidental tampering.
+Forensics Lab Analyst will use a write-blocking device to mount the suspect drive / forensic 
+artefact to prevent accidental tampering.
 
+Phases:
+- Pre-search
+- Search
+- Post-search
+- Trial
 
 Challenges faced
 - Data tampering, corruption and eradication

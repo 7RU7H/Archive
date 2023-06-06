@@ -191,7 +191,7 @@ Condense:
 	- Binaries avaliable?
 	- Expected security?
 	- Have you tried encoding the payload to counter string handling both client and server side
-	- `www-data` and varients will not have user directory how will that affect subsequent chain
+	- `www-data` and variants will not have user directory how will that affect subsequent chain
  
 - Internal Network
 
@@ -203,7 +203,7 @@ Condense:
 			- NTLM Relay Attack?
 	- What do the protocol used and what information from those protocols can be queried to provide a mapping of intended networking and use of AD?
 		- Are they vulnerable protocols?
-			- Checked the authenicated ldap queries output for interesting fields? - [[LDAP-Recon]]
+			- Checked the authenticated LDAP queries output for interesting fields? - [[LDAP-Recon]]
 			- SMB version - [[SMB-Recon-Cheatsheet]]
 			- [[RPC-Recon]]
 		- Is what is shared and expected to be shared by AD or have humans disclosed information in shares?
@@ -215,7 +215,7 @@ Condense:
 			2. ASREP-roast?
 			3. Kerberoastable?
 			4. Databases?
-			5. Network Shares/File system artifacts?
+			5. Network Shares/File system artefacts?
 			6. sMSA or [[gMSA-abuse]]?AD escalation and laterally movement, before Local Privilege Escalation is always a reduction in time to objective.
 			7. [[ACL-Abuse]]?
 		3. What services can I access with those credentials?

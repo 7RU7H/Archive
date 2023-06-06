@@ -34,8 +34,8 @@ Get-WinEvent -LogName security | where { $_.ID -eq 4688 -and $_.Properties[8].Va
 
 [DnsAdmins](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/understand-security-groups#dnsadmins) group have access to network DNS information and DNS service. The DNS service runs as `NT AUTHORITY\SYSTEM` supporting custom plugins specifiable with the builtit [dnscmd](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/dnscmd) utility. DnsAdmin do not have reboot permissions on DNS server by default. 
 
+1. Use [mimilib.dll](https://github.com/gentilkiwi/mimikatz/tree/master/mimilib) authored by Benjamin Delphy by  modifying the [kdns.c](https://github.com/gentilkiwi/mimikatz/blob/master/mimilib/kdns.c) file to execute code - review [labofapenetrationtester article](http://www.labofapenetrationtester.com/2017/05/abusing-dnsadmins-privilege-for-escalation-in-active-directory.html)
 
-1. Use [mimilibdll](https://github.com/gentilkiwi/mimikatz/tree/master/mimilib) authored by Benjamin Delphy by  modifying the [kdns.c](https://github.com/gentilkiwi/mimikatz/blob/master/mimilib/kdns.c) file to execute code - review [labofapenetrationtester article](http://www.labofapenetrationtester.com/2017/05/abusing-dnsadmins-privilege-for-escalation-in-active-directory.html)
 
 2. Create a WPAD Record - [[Responder-Cheatsheet]] or [[Inveigh-Cheatsheet]] to capture hashes as [DnsAdmins have permission to disable global query block security](https://docs.microsoft.com/en-us/powershell/module/dnsserver/set-dnsserverglobalqueryblocklist?view=windowsserver2019-ps)
 ```powershell
