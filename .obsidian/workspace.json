@@ -13,19 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Windows/Windows-Concepts/Account-And-Group-Related/Windows-Groups.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ef96fbbf9263e536",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+                "file": "Exploitation/Windows/Active-Directory/AD-Certificate-Exploitation.md",
                 "mode": "source",
                 "source": false
               }
@@ -67,8 +55,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -134,7 +121,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+                "file": "Exploitation/Windows/Active-Directory/AD-Certificate-Exploitation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -162,14 +149,22 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "ef96fbbf9263e536",
+  "active": "972d5c8c527aab4b",
   "lastOpenFiles": [
+    "Tools/AD-Offensive/Certipy.md",
+    "Exploitation/Windows/Active-Directory/AD-Certificate-Exploitation.md",
+    "Windows/Windows-Concepts/Account-And-Group-Related/Windows-Groups.md",
+    "Exploitation/Windows/Active-Directory/ACL-Abuse/ForceChangePassword.md",
+    "Exploitation/Windows/Active-Directory/ACL-Abuse/GenericAll.md",
+    "Exploitation/Windows/Active-Directory/ACL-Abuse/GenericWrite.md",
+    "Post-Exploitation/Stealth/Windows-Stealth.md",
+    "Tools/Crackmapexec/Crackmapexec-Cheatsheet.md",
+    "Reconnaissance/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
     "Reverse-Engineering/Binary-Composition/Binary-Composition-Hub.md",
     "Exploitation/Binary-Exploitation/Binary-Exploitation-Enumeration.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
     "Coding-Scripting-Programming/Languages/Bash/Useful_Bash.md",
     "Security-Disciplines/Digital-Forensics/Digital-Forensics.md",
-    "Windows/Windows-Concepts/Account-And-Group-Related/Windows-Groups.md",
     "Tools/Mimikatz/Mimikatz-Cheatsheet.md",
     "Windows/Active-Directory/Active-Directory-Credential-Caching.md",
     "Exploitation/Compiling-Exploits.md",
@@ -182,14 +177,6 @@
     "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Privilege-Escalation.md",
     "Exploitation/Windows/Active-Directory/AD-Kerberos-Delegation-Exploitation.md",
     "Windows/Windows-Commands/Windows-Commands.md",
-    "Exploitation/Windows/Active-Directory/AD-DC-Sync-Attack.md",
-    "Post-Exploitation/Windows-Living-Off-The-Land.md",
-    "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
-    "Tools/C2/Sliver/Command-And-Control-Frameworks.md",
-    "Tools/C2/C2-Matrix.md",
-    "Tools/Network-Management/Network-Mangement.md",
-    "Tools/C2/Untitled.md",
-    "Tools/Mimikatz/Kekeo-Cheatsheet.md",
     "Tools/Network-Management",
     "Tools/LLMNR",
     "Tools/AD-Offensive",

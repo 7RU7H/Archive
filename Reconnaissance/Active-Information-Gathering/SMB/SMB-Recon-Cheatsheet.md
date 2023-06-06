@@ -94,6 +94,8 @@ crackmapexec smb
 crackmapexec smb -u 'guest' -p '' --shares
 # If you can read IPC$
 crackmapexec smb -u 'guest' -p '' --rid-brute
+# Authenticated local admin 
+crackmapexec smb -u 'sysadmin' -p '123lsapasswordsforfree' --rlsa
 ```
 
 ## enum4linux Enumeration

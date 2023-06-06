@@ -4,7 +4,6 @@ For [[Active-Directory-Privileged-Groups]] as well as the official documentation
 
 ## Builtin Groups
 
-
 #### Backup Operators
 
 [Backup Operators](https://docs.microsoft.com/en-us/windows/security/identity-protection/access-control/active-directory-security-groups#bkmk-backupoperators) have the [[SeBackupPrivilege]] and SeRestorePrivilege privileges. Although the account must programmatically copy the data specifying the [FILE_FLAG_BACKUP_SEMANTICS](https://docs.microsoft.com/en-us/windows/win32/api/fileapi/nf-fileapi-createfilea) flag. 

