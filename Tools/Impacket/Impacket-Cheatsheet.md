@@ -6,6 +6,7 @@ From [Impacket Github](https://github.com/SecureAuthCorp/impacket) or [secureAut
 *"Impacket is a collection of Python classes for working with network protocols."*
 
 ## What protocols are featured?
+
 -   Ethernet, Linux "Cooked" capture.
 -   IP, TCP, UDP, ICMP, IGMP, ARP.
 -   IPv4 and IPv6 Support.
@@ -43,6 +44,16 @@ kinit user
 # - Now failures will be logged as event 4771.
 # - So Kerberos pre-auth is a faster and potentially stealthier way to bf password.
 ```
+
+
+## Indicators of Compromise
+
+`wmic` mounts and writes output to `ADMIN$` share by default.
+```bash
+# Choose a share and does not execute cmd.exe with no output
+-share $SHARE -silentcommand
+```
+
 
 ## dcomexec.py 
 
