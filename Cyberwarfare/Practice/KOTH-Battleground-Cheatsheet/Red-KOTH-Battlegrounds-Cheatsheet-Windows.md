@@ -1,7 +1,12 @@
 # Red Windows
 
 Website 
-`Ctrl + Shift + R` - cache refresh pages to ensure last game does not misform as to current context
+`Ctrl + Shift + R` - cache refresh pages to ensure last game does not misinform as to current context
+
+Change the keyboard layout - check in scope if so force any new user to have a weird keyboard layout
+```powershell
+Set-WinUserLanguageList -Force 'en-US'
+```
 
 Hiding binaries
 ```powershll

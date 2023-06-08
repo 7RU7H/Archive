@@ -13,7 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cryptography-And-Authentication/Cryptography.md",
+                "file": "Exploitation/Windows/Active-Directory/AD-Domain-Exploitation.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2d8a0b43d03d4cf1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/C2/Sliver/Sliver-Cheatsheet.md",
                 "mode": "source",
                 "source": false
               }
@@ -60,7 +72,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Golden-",
+                "query": "Emulating",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -97,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cryptography-And-Authentication/Cryptography.md",
+                "file": "Exploitation/Windows/Active-Directory/AD-Domain-Exploitation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,8 +137,18 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "3ee70a6c78509a9d",
+  "active": "ed8f63df71621be6",
   "lastOpenFiles": [
+    "Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Red-KOTH-Battlegrounds-Cheatsheet-Windows.md",
+    "Security-Disciplines/Red-Team/Red-Team-Theory/Adversary-Emulation.md",
+    "Exploitation/Windows/Active-Directory/AD-Domain-Exploitation.md",
+    "Exploitation/Windows/Active-Directory/AD-Forest-Exploitation.md",
+    "Brain-Hacking/Better-Resources.md",
+    "Tools/C2/Sliver/Sliver-Cheatsheet.md",
+    "Tools/C2/Command-And-Control-Frameworks.md",
+    "Tools/C2/Introduction-To-Comand-And-Control-Frameworks.md",
+    "Windows/Active-Directory/Active-Directory-Commands.md",
+    "Cryptography-And-Authentication/Cryptography.md",
     "Exploitation/Windows/Active-Directory/Ticket-Attacks/Sapphire-Tickets.md",
     "Social-Engineering/Body-Language/Facial-Expression.md",
     "Social-Engineering/Body-Language/Body-Language.md",
@@ -141,20 +163,10 @@
     "Brain-Hacking/Actions/Personality.md",
     "Exploitation/Windows/Active-Directory/Ticket-Attacks/Diamond-Tickets.md",
     "Tools/Impacket/Impacket-Cheatsheet.md",
-    "Exploitation/Windows/Active-Directory/AD-Domain-Exploitation.md",
     "Exploitation/Windows/Active-Directory/Ticket-Attacks/Golden-Tickets.md",
     "Exploitation/Windows/Active-Directory/Ticket-Attacks",
     "Exploitation/Windows/Active-Directory/Ticket-Attacks/Attacking-Kerberos.md",
-    "Cryptography-And-Authentication/Cryptography.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
-    "Tools/Mimikatz/Mimikatz-Cheatsheet.md",
-    "Exploitation/Binary-Exploitation/Binary-Exploitation-Enumeration.md",
-    "Exploitation/Windows/Active-Directory/AD-Certificate-Exploitation.md",
-    "Tools/AD-Offensive/Certipy.md",
-    "Windows/Windows-Concepts/Account-And-Group-Related/Windows-Groups.md",
-    "Exploitation/Windows/Active-Directory/ACL-Abuse/ForceChangePassword.md",
-    "Exploitation/Windows/Active-Directory/ACL-Abuse/GenericAll.md",
-    "Exploitation/Windows/Active-Directory/ACL-Abuse/GenericWrite.md",
     "Tools/Network-Management",
     "Tools/LLMNR",
     "Tools/AD-Offensive",

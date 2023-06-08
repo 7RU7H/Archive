@@ -400,3 +400,4 @@ gpg --decrypt blowfish.plain.gpg
 [Wikipedia - AES](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard)
 [Wikipedia Discrete log problem](https://en.wikipedia.org/wiki/Discrete_logarithm)
 [Youtube - Diffie Hellman - the Mathematics bit- Computerphile](https://www.youtube.com/watch?v=Yjrfm_oRO0w&t=1s):
+[RFC2104](https://www.rfc-editor.org/rfc/rfc2104) 
