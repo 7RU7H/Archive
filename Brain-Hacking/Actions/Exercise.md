@@ -8,11 +8,11 @@ Exchange Mental Stress for Physical Stress - Absolute Bargain
 
 #### One Box Man 
 
-I suggest working towards this being a manditory minimum, by using sets, spacing them throughout the day - divide into sets if required
+I suggest working towards this being a mandatory minimum, by using sets, spacing them throughout the day - divide into sets if required
 
-- 100 Pressups
-- 100 Situps
+- 100 Press ups
+- 100 Sit ups
 - 100 Swats
 - A Jog/Run even just a walk to get outside 
 
-- Research back exercises for posture
+- Back exercises for posture

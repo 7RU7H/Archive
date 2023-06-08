@@ -25,7 +25,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exploitation/Windows/Active-Directory/Ticket-Attacks/Diamond-Tickets.md",
+                "file": "Social-Engineering/Body-Language/Facial-Expression.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "85e33ad038f03ed7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Social-Engineering/Body-Language/Body-Language.md",
                 "mode": "source",
                 "source": false
               }
@@ -44,7 +56,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -110,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exploitation/Windows/Active-Directory/Ticket-Attacks/Diamond-Tickets.md",
+                "file": "Social-Engineering/Body-Language/Body-Language.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -138,11 +150,22 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "937aace620a7f318",
+  "active": "85e33ad038f03ed7",
   "lastOpenFiles": [
+    "Social-Engineering/Body-Language/Facial-Expression.md",
+    "Social-Engineering/Body-Language/Body-Language.md",
+    "Social-Engineering/Detecting-Deception.md",
+    "Social-Engineering/Body-Language",
+    "Social-Engineering/Social-Engineering.md",
+    "Brain-Hacking/Actions/Exercise.md",
+    "Brain-Hacking/Actions/Good-Acronyms-And-Phrases.md",
+    "Brain-Hacking/Actions/Learning-To-Continue-Learning-Better.md",
+    "Brain-Hacking/Actions/Improve-Your-Learning.md",
+    "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
+    "Brain-Hacking/Actions/Personality.md",
+    "Exploitation/Windows/Active-Directory/Ticket-Attacks/Diamond-Tickets.md",
     "Tools/Impacket/Impacket-Cheatsheet.md",
     "Exploitation/Windows/Active-Directory/AD-Domain-Exploitation.md",
-    "Exploitation/Windows/Active-Directory/Ticket-Attacks/Diamond-Tickets.md",
     "Exploitation/Windows/Active-Directory/Ticket-Attacks/Sapphire-Tickets.md",
     "Exploitation/Windows/Active-Directory/Ticket-Attacks/Golden-Tickets.md",
     "Exploitation/Windows/Active-Directory/Ticket-Attacks",
@@ -157,16 +180,6 @@
     "Exploitation/Windows/Active-Directory/ACL-Abuse/ForceChangePassword.md",
     "Exploitation/Windows/Active-Directory/ACL-Abuse/GenericAll.md",
     "Exploitation/Windows/Active-Directory/ACL-Abuse/GenericWrite.md",
-    "Post-Exploitation/Stealth/Windows-Stealth.md",
-    "Tools/Crackmapexec/Crackmapexec-Cheatsheet.md",
-    "Reconnaissance/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
-    "Reverse-Engineering/Binary-Composition/Binary-Composition-Hub.md",
-    "Coding-Scripting-Programming/Languages/Bash/Useful_Bash.md",
-    "Security-Disciplines/Digital-Forensics/Digital-Forensics.md",
-    "Windows/Active-Directory/Active-Directory-Credential-Caching.md",
-    "Exploitation/Compiling-Exploits.md",
-    "Windows/Windows-Concepts/Dynamic-Link-Libraries.md",
     "Tools/Network-Management",
     "Tools/LLMNR",
     "Tools/AD-Offensive",
@@ -177,7 +190,6 @@
     "Windows/Windows-Concepts/Windows-Events",
     "Windows/Windows-Concepts/Windows-Filesystem",
     "Images/jackmasa-mind-map.png",
-    "Web-Application-Hacking/XSS",
     "Images/azslotswappedsettingsvsslotspecificsettings.png",
     "Images/azurecloudserviceresponsiblitychart.png",
     "Images/azureadbenefitsofazureadjoin.png",
