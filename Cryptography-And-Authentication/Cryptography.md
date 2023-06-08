@@ -62,6 +62,7 @@ Transposition cipher: Rearranges the order of the characters of a plain text by 
 ## Encoding
 
 **CALCULATOR IS YOUR FRIEND**
+
 Decimal  | Binary |	Hexadecimal
 --- | --- | ---
 0   | 0b0 | 0x0
@@ -109,9 +110,10 @@ C:\Windows\System32\config\*SAM
 ```
 
 
-## Password Hashing Algorithms
+## Cryptographic Hashing
 
-Where hashing is often used to protect the integrity of data. 
+A cryptographic hash function is an algorithm that takes data of arbitrary size as its input and returns a fixed size value, called  digest or checksum, as its output. Cryptographic hash function is a type of hashing function is used to protect the integrity of data as it attempt guarantee security properties. Mathematical entails that easy to compute to cipher, but without the key values it makes it as difficult as possible to reverse the computation.
+
 [Hashcat Examples is your friend](https://hashcat.net/wiki/doku.php?id=example_hashes)
 ```bash
 john --list=foramt | grep
@@ -143,9 +145,32 @@ $y$j9T$F5Jx5fExrKuPp53xLKQ..1$X3DX6M94c7o.9agCG9G317fhZg9SqC.5i5rd.RhAtQ7
 1. salt - F5Jx5fExrKuPp53xLKQ..1
 1. hash - X3DX6M94c7o.9agCG9G317fhZg9SqC.5i5rd.RhAtQ7
 
+#### HMAC
+
+Hash-based message authentication code (HMAC) is a message authentication code (MAC) that uses a cryptographic key in addition to a hash function. [RFC2104](https://www.rfc-editor.org/rfc/rfc2104) outlines HMAC as:
+HMAC requires:
+- secret key
+- inner pad (ipad) a constant string. (RFC2104 uses the byte `0x36` repeated B times. The value of B depends on the chosen hash function.)
+- outer pad (opad) a constant string. (RFC2104 uses the byte `0x5C` repeated B times.)
+
+Calculating the HMAC follows the following steps as shown on [THM cryptography 101 Room](https://tryhackme.com/room/cryptographyintro):
+1. Append zeroes to the key to make it of length B, i.e., to make its length match that of the ipad.
+2. Using bitwise exclusive-OR (XOR), represented by ⊕, calculate key ⊕ ipad.
+3. Append the message to the XOR output from step 2.
+4. Apply the hash function to the resulting stream of bytes (in step 3).
+5. Using XOR, calculate key ⊕ opad.
+6. Append the hash function output from step 4 to the XOR output from step 5.
+7. Apply the hash function to the resulting stream of bytes (in step 6) to get the HMAC.
+
+```bash
+# Beware hmac is not part of any Kali metapackages for good reason...
+hmac256 $key $file
+```
+
+
 ## Symmetric-Key Encryption
 
-Symmetic Key Algorithms use the same key for encrypting the plaintext into ciphertext and for decrypting the ciphertext back into plaintext. Key is sometimes "passphrase" synonymous with "key". Maintaining the key's secrecy is vital, if public anyone can decrypt with it - harms confidentiality as transmission of the key not the data is the issue.
+Symmetric Key Algorithms use the same key for encrypting the plaintext into ciphertext and for decrypting the ciphertext back into plaintext. Key is sometimes "passphrase" synonymous with "key". Maintaining the key's secrecy is vital, if public anyone can decrypt with it - harms confidentiality as transmission of the key not the data is the issue.
 
 - Beware Cipher type: Block (2d array) Cipher and Stream (1d array) Cipher
 
