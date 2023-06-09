@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exploitation/Windows/Active-Directory/AD-Domain-Exploitation.md",
+                "file": "Cryptography-And-Authentication/Cryptography.md",
                 "mode": "source",
                 "source": false
               }
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exploitation/Windows/Active-Directory/AD-Domain-Exploitation.md",
+                "file": "Cryptography-And-Authentication/Cryptography.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -137,11 +137,11 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "ed8f63df71621be6",
+  "active": "3ee70a6c78509a9d",
   "lastOpenFiles": [
+    "Exploitation/Windows/Active-Directory/AD-Domain-Exploitation.md",
     "Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Red-KOTH-Battlegrounds-Cheatsheet-Windows.md",
     "Security-Disciplines/Red-Team/Red-Team-Theory/Adversary-Emulation.md",
-    "Exploitation/Windows/Active-Directory/AD-Domain-Exploitation.md",
     "Exploitation/Windows/Active-Directory/AD-Forest-Exploitation.md",
     "Brain-Hacking/Better-Resources.md",
     "Tools/C2/Sliver/Sliver-Cheatsheet.md",

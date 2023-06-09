@@ -307,9 +307,9 @@ socat OPENSSL-LISTEN:443,cert=bind_shell.pem,verify=0,fork EXEC:/bin//bash
 socat - OPENSSL:$IP:$PORT,verify=0 <cmd>
 ```
 
-#### SSL and HTTPS
+#### PKI SSL/TLS
 
-SSL encryption procedures leverage both asymmetric and symmetric encryption. 
+SSL encryption procedures leverages both asymmetric and symmetric encryption. To prevent [[MITM-Attacks]], Public Key Infrastructure (PKI)
 1. Server and client agree on a symmetric session key encrypted by the client with a server's public key
 1. Session key is transmitted over the network to the server.
 1. The server uses its private key to decrypt the session key.
@@ -317,6 +317,23 @@ SSL encryption procedures leverage both asymmetric and symmetric encryption.
 It bypasses the weakness of symmetric encryption by using asymmetric encryption to transmit the symmetric key. But, has several problems.
 
 Transport layer security(TLS) - [[TLS-SSL]]
+
+Use `openssl` for SSL/TLS workflow
+```bash
+# Generate a certificate
+openssl req -new -nodes -newkey rsa:4096 -keyout key.pem -out cert.csr
+# req -new create a new certificate signing request
+# -nodes save private key without a passphrase
+# -newkey generate a new private key
+# rsa:4096 generate an RSA key of size 4096 bits
+# -keyout specify where to save the key
+# -out save the certificate signing request
+#
+# Create a self-signed certificate
+openssl req -x509 -newkey -nodes rsa:4096 -keyout key.pem -out cert.pem -sha256 -days 365
+# View this certificate
+openssl x509 -in cert.pem -text
+```
 
 #### Diffie-Hellman Key Exchange
 
