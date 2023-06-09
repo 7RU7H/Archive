@@ -1,5 +1,20 @@
 # Sliver Cheatsheet
 
+- OPSEC 
+	- [[EDR-Bypass]]ing requires more than just the [garble](https://github.com/burrowers/garble)(use to "*Obfuscate Go builds"*) and [go-donut](https://github.com/Binject/go-donut) - (go port of [donut](https://github.com/TheWover/donut) - *"Generates x86, x64, or AMD64+x86 position-independent shellcode that loads .NET Assemblies, PE files, and other Windows payloads from memory and runs them with parameters"*)
+	- Use a custom stager
+	- Modify - `~/.sliver/configs/http-c2.json`
+	- change or rotate extensions and filenames used in procedural URL generation
+	- mimic legitimate browser request headers (just take them directly from `Burp Suite`)
+	- mimic legitimate response headers (again, just steal them from some web app)
+	- consider domain fronting (thankfully, the Host header can now be configured)
+- Staging 
+	- *"only supports the MSF staging protocol served either over TCP or HTTP/S."*
+- Communication
+	- Procedural obfuscation - reduce communication profile for operator
+	- [Silver's Transport Encryption](https://github.com/BishopFox/sliver/wiki/Transport-Encryption)
+	- DNS transport is optimised for speed, not evasion
+
 [Sliver Wiki](https://github.com/BishopFox/sliver/wiki/)
 ```go
 // Depending on install
@@ -244,3 +259,8 @@ NT* AND *AUTHORITY\\SYSTEM*)
 [seamlessintelligence part 1](https://seamlessintelligence.com.au/sliver_1.html)
 [seamlessintelligence part 2](https://seamlessintelligence.com.au/sliver_2.html)
 [seamlessintelligence part 3](https://seamlessintelligence.com.au/sliver_3.html)
+[tishina.in](https://tishina.in/opsec/sliver-opsec-notes#implant+obfuscation+and+export+formats)
+[go-donut](https://github.com/Binject/go-donut)
+[garble](https://github.com/burrowers/garble)
+[donut](https://github.com/TheWover/donut) 
+[Silver's Transport Encryption](https://github.com/BishopFox/sliver/wiki/Transport-Encryption)

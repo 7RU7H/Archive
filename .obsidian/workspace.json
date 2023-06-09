@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exploitation/Windows/Active-Directory/Ticket-Attacks/Diamond-Tickets.md",
+                "file": "Tools/C2/Sliver/Sliver-Cheatsheet.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exploitation/Windows/Active-Directory/Ticket-Attacks/Diamond-Tickets.md",
+                "file": "Tools/C2/Sliver/Sliver-Cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,8 +140,8 @@
   },
   "active": "2d8a0b43d03d4cf1",
   "lastOpenFiles": [
-    "Tools/C2/Sliver/Sliver-Cheatsheet.md",
     "Exploitation/Windows/Active-Directory/Ticket-Attacks/Diamond-Tickets.md",
+    "Tools/C2/Sliver/Sliver-Cheatsheet.md",
     "Tools/AD-Offensive/Rubeus-Cheatsheet.md",
     "Cryptography-And-Authentication/Cryptography.md",
     "Exploitation/Windows/Active-Directory/AD-Domain-Exploitation.md",
