@@ -168,7 +168,7 @@ reconfig
 reconfig -i 30s -j 5s
 ```
 
-Proxies and Pivots
+Proxies 
 ```go
 // Either
 use <sessionID> 
@@ -180,8 +180,6 @@ sessions -i <sessionID>
 sock5 start
 // kill Proxy
 socks5 stop -i <id>
-
-
 ```
 
 Pivots != `Portfwd`, egress through implants

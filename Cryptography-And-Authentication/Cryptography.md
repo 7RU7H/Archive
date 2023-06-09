@@ -285,8 +285,7 @@ openssl rsa -in private-key.pem -text -noout
 
 #### Asymmetric Encrypted Bind Shells
 
-Encrypted communication rely on the Secure Sockets Layer(SSL)
-
+Encrypted communication rely on the Secure Sockets Layer (SSL)
 ```bash
 openssl req -newkey rsa:2048 -nodes -keyout bind_shell.key -x509 -days 30 -out bind_shell.crt
 
@@ -316,7 +315,7 @@ SSL encryption procedures leverages both asymmetric and symmetric encryption. To
 
 It bypasses the weakness of symmetric encryption by using asymmetric encryption to transmit the symmetric key. But, has several problems.
 
-Transport layer security(TLS) - [[TLS-SSL]]
+Transport layer security (TLS) - [[TLS-SSL]]
 
 Use `openssl` for SSL/TLS workflow
 ```bash
