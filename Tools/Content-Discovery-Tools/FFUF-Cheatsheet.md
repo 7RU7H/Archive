@@ -2,7 +2,7 @@
 
 ## Introduction 
 
-[fuff](https://github.com/ffuf/ffuf). is a fast web fuzzer written in Go. Examples of usage [Content discovery](https://github.com/ffuf/ffuf#typical-directory-discovery), [Vhost discovery](https://github.com/ffuf/ffuf#virtual-host-discovery-without-dns-records), [Parameter fuzzing](https://github.com/ffuf/ffuf#get-parameter-fuzzing), [POST data fuzzing](https://github.com/ffuf/ffuf#post-data-fuzzing), [Using external mutator](https://github.com/ffuf/ffuf#using-external-mutator-to-produce-test-cases), [Configuration files](https://github.com/ffuf/ffuf#configuration-files). Already included on BlackArch, Pentoo, Kali and Parrot.
+[fuff](https://github.com/ffuf/ffuf). is a fast web fuzzer written in Go. Examples of usage [Content discovery](https://github.com/ffuf/ffuf#typical-directory-discovery), [Vhost discovery](https://github.com/ffuf/ffuf#virtual-host-discovery-without-dns-records), [Parameter fuzzing](https://github.com/ffuf/ffuf#get-parameter-fuzzing), [POST data fuzzing](https://github.com/ffuf/ffuf#post-data-fuzzing), [Using external mutator](https://github.com/ffuf/ffuf#using-external-mutator-to-produce-test-cases), [Configuration files](https://github.com/ffuf/ffuf#configuration-files). Already included on BlackArch, Kali, Parrot and Pentoo.
 
 ## Basics
 
@@ -10,7 +10,7 @@ We choose a wordlist assign the :FUZZ keyword to denote that will then at the po
 ```
 ffuf -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-small.txt:FUZZ -u $URL/FUZZ
 ```
-The `-t` flag can control the amount threads on ffuf, careful of causing an negligent DoS attack through sending too many requests. Filters and Matcher option help reduce output - very important. Filter code `-fc 403` or match by code  `-mc 200` and filter size `-fs 0` display only the most relevant to find the what *maybe* there.
+The `-t` flag can control the amount threads on `ffuf`, careful of causing an negligent DoS attack through sending too many requests. Filters and Matcher option help reduce output - very important. Filter code `-fc 403` or match by code  `-mc 200` and filter size `-fs 0` display only the most relevant to find the what *maybe* there.
 
 You can use two wordlists using FUZZ_1 FUZZ_2
 ```bash
@@ -46,7 +46,7 @@ ffuf -H 'X-Forwarded-For: 10.10.10.10'
 
 #### Fuzzing for.. Bruteforce attacks
 
-Use ffuf like hydra using file size filter to check responses, -X flag to set request type, -d  to send data and -H custom header similar to `curl`.
+Use `ffuf` like hydra using file size filter to check responses, -X flag to set request type, -d  to send data and -H custom header similar to `curl`.
 ```bash
 ffuf -u http://$IP/Login -c -w /usr/share/wordlists/rockyou.txt -X POST -d 'username=admin&password=FUZZ&submit=Submit' -fs 1435 -H 'Content-Type: application/x-www-form-urlencoded'
 ```

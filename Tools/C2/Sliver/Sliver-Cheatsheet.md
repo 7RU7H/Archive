@@ -18,9 +18,10 @@
 [Sliver Wiki](https://github.com/BishopFox/sliver/wiki/)
 ```go
 // Depending on install
-// Sometimes not ideal... issues..
+// Sometimes not ideal... issues..beware..
 sudo sliver
 sudo su - ; /root/sliver-server
+sliver-server
 
 // Display help
 help <command>
@@ -29,6 +30,7 @@ help <command>
 multiplayer 
 new-operator
 // Connect with Client
+sliver-client
 
 // View all implants
 implants

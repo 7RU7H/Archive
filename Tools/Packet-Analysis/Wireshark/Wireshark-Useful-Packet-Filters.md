@@ -26,6 +26,7 @@ Protocol: ether, wlan, ip, ip6, arp, rarp, tcp and udp.
 Official [Display Filter Reference](https://www.wireshark.org/docs/dfref/)
 
 Comparison Operators
+
 **English** | **C-Like** | **Description**
 --- | --- | ---
 eq | == | Equal
@@ -36,6 +37,7 @@ ge | >= |Greater than or equal to
 le | <= | Less than or equal to
 
 Logical Expressions
+
 **English** | **C-Like** | **Description**
 --- | --- | ---
 and | && | Logical AND
@@ -64,11 +66,11 @@ frame contains “(attachment|tar|exe|zip|pdf)” // File type
 
 ```
 
-Save filters with `Bookmarks`, enter a filter, left click the blue flag icon and `Save this filter`; to use click the plus symbol on the far right handside of the window, next to the Arrow at the end of the `Apply a display filter input bar ... <Ctrl-/>.
+Save filters with `Bookmarks`, enter a filter, left click the blue flag icon and `Save this filter`; to use click the plus symbol on the far right hand side of the window, next to the Arrow at the end of the `Apply a display filter input bar ... <Ctrl-/>.
 
 Profiles `Edit -> ConfiguraFollow HTTP stream -> Find: "C:\"tion Profiles... [Ctrl+Shift+A]`
 
-Filter by a timeframe:
+Filter by a time frame:
 ```c
 (frame.time >= "Sep 24, 2021 16:45:11") && (frame.time <= "Sep 24, 2021 16:45:30")
 ```
@@ -248,7 +250,7 @@ dns
 
 #### ICMP
 
-Internet Control Message Protocol (ICMP) is designed for diagnosing and reporting network communication issues. It uses raw sockets not ports. Detecting ICMP Tunnelling (Using ICMP to tunnel another protocol data) occus post exploitation phase of attack chain. Indicatations of  [[Data-Exfiltration-Over-ICMP]]:
+Internet Control Message Protocol (ICMP) is designed for diagnosing and reporting network communication issues. It uses raw sockets not ports. Detecting ICMP Tunnelling (Using ICMP to tunnel another protocol data) occurs post exploitation phase of attack chain. Indications of  [[Data-Exfiltration-Over-ICMP]]:
 - Large packet size 
 - Large volume of ICMP traffic
 ```c
@@ -256,17 +258,16 @@ icmp
 data.len > 64 and icmp
 ```
 
-Migitate
+Mitigate
 - Block custom ICMP packet creation and usage over a specific size at host level
 - Block large, outbound ICMP traffic network level with Firewall rules.  
 
 
 #### FTP 
 
-This protocol is potentially an attack vector for MITM, Credenital stealing and unauthorized access, [[Phishing]], Malware planting, and Data Exfiltration - [[Data-Exfiltration-Defined]]. Considerations as to detecting malicious FTP traffic:
+This protocol is potentially an attack vector for MITM, Credential stealing and unauthorised access, [[Phishing]], Malware planting, and Data Exfiltration - [[Data-Exfiltration-Defined]]. Considerations as to detecting malicious FTP traffic:
 - Commands that alter file system
 - Bruteforcing
-
 
 For [[FTP-Response-Codes]]
 ```c
@@ -289,7 +290,7 @@ ftp.response.code == 530
 
 #### HTTP
 
-Consider reviewing [[HTTP-Defined]] as [[Phishing]] pages, web attacks - [[Web-Hacking-Checklist]], [[Data-Exfiltration-Over-HTTP-and-HTTPS]] and C2 traffic is something http(s) - [[C2-Matrix]]. Generally with web attack detection it is about understanding where  and what data is being trafficed to the potential vulnerable web server by understanding the attack.
+Consider reviewing [[HTTP-Defined]] as [[Phishing]] pages, web attacks - [[Web-Hacking-Checklist]], [[Data-Exfiltration-Over-HTTP-and-HTTPS]] and C2 traffic is something http(s) - [[C2-Matrix]]. Generally with web attack detection it is about understanding where  and what data is being trafficked to the potential vulnerable web server by understanding the attack.
 
 [[HTTP-Response-codes]] - https://en.wikipedia.org/wiki/List_of_HTTP_status_codes
 ```c
@@ -338,6 +339,16 @@ SSLKEYLOGFILE // Env variable - browser will save them to this variable
 // Or = Transport Layer Security -> Right Click -> Protocol Preferences -> (Pre)Master-Secret log filename... -> TLS -> Browse.. (to load a pre-MSL file)
 ```
 
+
+SMB traffic
+```c
+// Beware the network with SMBv1!
+smb
+// SMB version 2
+smb2
+// Show all authentication attempts
+smb2.auth_frame
+```
 
 ## References
 

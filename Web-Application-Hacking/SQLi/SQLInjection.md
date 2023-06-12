@@ -95,7 +95,7 @@ MySQL and MSSQL
 ',INPUT=sqlite_version(),INPUT='
 ```
 
-## Defense and Migitation
+## Defence and Mitigation
 [Prepared Statements prevent 'illegal' queries](https://en.wikipedia.org/wiki/Prepared_statement)
 
 ## Typology 
@@ -109,14 +109,14 @@ With non Blind SQLi there is some form of extracted data:
 - Field Display in HTML
 
 **BEWARE** Boolean-based Blind injections are tedious and time-consuming, use fuzzing or script
-**BEWARE** Nested functionality of i.e Registering a User and then as an Authenicated Users the Username is a SQLi on another section of the website. [[SQLmap-CheatSheet]] may require a tamper script with `--tamper tamper.py` to create a user and then exploit the target page.
+**BEWARE** Nested functionality of i.e Registering a User and then as an Authenticated Users the Username is a SQLi on another section of the website. [[SQLmap-CheatSheet]] may require a tamper script with `--tamper tamper.py` to create a user and then exploit the target page.
 
 ## Use-full  Language Features 
 
-Useful feature categorised by use case are featured here to provide are pointer of more that just more commonly used syntax that sterotypes alot of explainations about SQLi.
+Useful feature categorised by use case are featured here to provide are pointer of more that just more commonly used syntax that stereotypes a lot of explanations about SQLi.
 
-Aggration functions that concatenate non-null value in a column have utility in retrieval  of data; some language varients:
-- MySQLand SQLIte  `GROUP_CONCAT()` function returns a string with concatenated non-NULL value from a group.
+Aggregation functions that concatenate non-null value in a column have utility in retrieval  of data; some language variants:
+- MySQL and SQLIte  `GROUP_CONCAT()` function returns a string with concatenated non-NULL value from a group.
 - PostgreSQL and SQL Server have similar functions called `STRING_AGG()`
 
 

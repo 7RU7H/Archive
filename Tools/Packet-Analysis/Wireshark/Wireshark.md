@@ -24,7 +24,7 @@ For capture packets Wireshark uses the libraries [Libpcap](https://www.tcpdump.o
 -   *Coloring rules can be applied to the packet list for quick, intuitive analysis*
 -   *Output can be exported to XML, PostScript®, CSV, or plain text*
 
-See [Wireshek Wiki for more](https://wiki.wireshark.org/Home)
+See [Wireshark Wiki for more](https://wiki.wireshark.org/Home)
 
 THM Golden Rule: *"The golden rule mentioned in the previous room is valid in this section; you can right-click and filter the event of interest!"*
 
