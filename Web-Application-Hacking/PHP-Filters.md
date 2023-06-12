@@ -6,7 +6,7 @@ PHP Filters are a powerful wrappers of lots a functionality that take input and 
 - [Only other is "callback" where all flags are ignored](https://www.php.net/manual/en/filter.filters.misc.php)
 - [PHP Filter flags](https://www.php.net/manual/en/filter.filters.flags.php) provides developers to filter by builtin conditions-on-passed-input, encode the input.
 
-File inclusion vulnerability exists due to how php filters are used with `include()`
+File inclusion vulnerability exists due to how PHP filters are used with `include()`
 
 [LFI / RFI using PHP://filters](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/File%20Inclusion/README.md#lfi--rfi-using-wrappers)
 ```php

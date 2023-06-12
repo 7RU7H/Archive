@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Web-Application-Hacking/PHP-Filters.md",
+                "file": "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,14 +25,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Hardening/Linux-Hardening.md",
+                "file": "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Hardening/Linux-Hardening.md",
+                "file": "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,8 +125,17 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "014f6bcb6bb8f3e2",
+  "active": "9027907588b8b74a",
   "lastOpenFiles": [
+    "Web-Application-Hacking/Server-Side-Request-Forgery.md",
+    "Web-Application-Hacking/PHP-Filters.md",
+    "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
+    "Web-Application-Hacking/Server-Side-Template-Injection-Cheatsheet.md",
+    "Web-Application-Hacking/OWASP-Top-10-Historic-Definitions.md",
+    "Web-Application-Hacking/Insecure-Direct-Object-Reference.md",
+    "Web-Application-Hacking/Hijacking-Remote-Technology-Repositories.md",
+    "Web-Application-Hacking/Cross-Site-Request-Forgery.md",
+    "Hardening/Linux-Hardening.md",
     "Hardening/Windows-Hardening.md",
     "Hardware/Hardware-Hacking/Printer-Security-Testing.md",
     "Hardware/Hardware-Hacking/Hardware-Hacking.md",
@@ -145,15 +153,6 @@
     "Services/Databases/MSSQL/MSSQL-Hacking.md",
     "Services/Databases/MSSQL/MSSQL.md",
     "Web-Application-Hacking/SQLi/Introduction-to-SQL.md",
-    "Web-Application-Hacking/SQLi/NoSQLInjection.md",
-    "Web-Application-Hacking/SQLi/SQLInjection.md",
-    "Tools/Content-Discovery-Tools/FFUF-Cheatsheet.md",
-    "Web-Application-Hacking/PHP-Filters.md",
-    "Web-Application-Hacking/Command-Injection-Cheatsheet.md",
-    "Tools/Packet-Analysis/Wireshark/Wireshark-Useful-Packet-Filters.md",
-    "Reconnaissance/Passive-Information-Gathering/Search-Engine-Dorking.md",
-    "Tools/Packet-Analysis/Wireshark/Wireshark.md",
-    "Tools/Packet-Analysis/Tshark.md",
     "Social-Engineering/Body-Language",
     "Exploitation/Windows/Active-Directory/Ticket-Attacks",
     "Tools/Network-Management",

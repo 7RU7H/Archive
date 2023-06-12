@@ -3,11 +3,11 @@
 
 
 
-To ensure maintain it functional purose metholody will never contain - question X do Y? Just more Questions to be answered by you! If better format, technology exists to make this less of a list of questions the format should retain textual scriptablity and portablity.  An addition to questions is more supplimentary actionable cognitive enhancement of either a 
+To ensure maintain it functional purpose methodology will never contain - question X do Y? Just more Questions to be answered by you! If better format, technology exists to make this less of a list of questions the format should retain textual scriptablity and portability.  An addition to questions is more supplimentary actionable cognitive enhancement of either a 
 
 
 
-For more philsophical Hacking super dense and short article see [[Hacking-The-Thing]] 
+For more philosophical Hacking super dense and short article see [[Hacking-The-Thing]] 
 
 
 
@@ -81,32 +81,32 @@ Information - the user Alice has X SID that then indicates Administrative Group
 	- Virtual hosting? 
 		- Fuzzable - rate limits?
 		- Potential OSINTable VHOST from merging or referenced? 
-		- What does the VHOSTing indicate about the technological stack: Subdomains, Containization, Cloud?
+		- What does the VHOSTing indicate about the technological stack: Subdomains, Containerisation, Cloud?
 			- How is then stacked - bottom up from entry point?
 	- WAF?
 		- `If-None-Match` 
-	- Webserver and Website Language
-		- Clarify host OS version from webserver version? - Measure twice cut once!
-		- Vulnerable Lanaguage?
+	- Web server and Website Language
+		- Clarify host OS version from Web Server version? - Measure twice cut once!
+		- Vulnerable Language?
 		- Javascript? - modern browsers can debug especially useful blind exploit development
 			-  XSS?
 				- What Input Validation?
 					- Which characters?
-						- URL encoded ip address in XSS payloads?
+						- URL encoded IP address in XSS payloads?
 				- Have you tried multiple payloads to verify (non-)existence of XSS, then tools? 
 			- Deserialization Attacks?
 		- Vulnerable webserver version?
 		- Webserver generic issues by type
 			-  [[Apache-Tomcat]]
 		- Vulnerable versioning? 
-	- Have you caused and dorked the error messages? 
+	- Have you caused and dorked ([[Search-Engine-Dorking]]) the error messages? 
 	- What request methods?
 		 - Can you bypass with additional Headers?
 	- Endpoints?
-		- Fuzzed with Special chararcters on all end points - [[FFUF-Cheatsheet]]?
+		- Fuzzed with Special characters on all end points - [[FFUF-Cheatsheet]]?
 	- CMS 
 	- Does the website use a database for storage?
-	- Webserver default Admin Login panels?
+	- Web server default Admin Login panels?
 		- Default credentials?
 		- Reused credentials?
 		- Insecure credentials?
@@ -116,7 +116,7 @@ Information - the user Alice has X SID that then indicates Administrative Group
 		- How is it processed?
 		- Is there evidence of filtering and sanitization of input? 
 	 - API?
-		 - Is it mappable?
+		 - Is it mappable? 
 		 - Disclosure API Token?
 	- Do any parameters call non-local resources?
 		- Does the non local request have it only parameters
@@ -188,7 +188,7 @@ Condense:
 		- Are we on bare metal?
 	- `whoami /all` and variants are common alerts - but what user are we 	  
 	- Service user in the event of footholding the machine?
-	- Binaries avaliable?
+	- Binaries available?
 	- Expected security?
 	- Have you tried encoding the payload to counter string handling both client and server side
 	- `www-data` and variants will not have user directory how will that affect subsequent chain
@@ -207,7 +207,7 @@ Condense:
 			- SMB version - [[SMB-Recon-Cheatsheet]]
 			- [[RPC-Recon]]
 		- Is what is shared and expected to be shared by AD or have humans disclosed information in shares?
-			- Do the shares contain: shortcuts to executables, credentials, software, user and domain intel and information?	
+			- Do the shares contain: shortcuts to executable, credentials, software, user and domain intel and information?	
 	 - Recursively have with current context and reappraise Bloodhound, your objectives and the potential paths - [[Bloodhound-Guide]]? - `-c DCOnly` is quieter!
 		1. How do I compromise credentials?
 			1. Is the credential reused/defaults/weak/hardcoded?
@@ -276,9 +276,9 @@ Condense:
 
 - What is Network Typology?
 	1. What is accessible? 
-	2. What should legitmate traffic  
+	2. What should legitimate traffic  
 	3. Any Network Security?   
-		1. What source and destination ports is legitmate traffic expect to be running on? 
+		1. What source and destination ports is legitimate traffic expect to be running on? 
 		2. Local Encryption *"Standards"*?  
 	1. Where are the databases?
 		1. What language?
