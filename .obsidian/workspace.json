@@ -13,7 +13,31 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
+                "file": "Tools/C2/Sliver/Sliver-Cheatsheet.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "14f9759048d6f79a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Exploitation/Network/Passive-Network-Sniffing.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0e9ae778071af536",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Exploitation/Network/ARP-Spoofing.md",
                 "mode": "source",
                 "source": false
               }
@@ -26,6 +50,25 @@
               "type": "markdown",
               "state": {
                 "file": "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      },
+      {
+        "id": "f43b07d1b2dd4450",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5d39aad88e4920b4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Exploitation/Network/MAC-Flooding.md",
                 "mode": "source",
                 "source": false
               }
@@ -60,7 +103,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Wireshark",
+                "query": "nginx",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -97,7 +140,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
+                "file": "Exploitation/Network/Passive-Network-Sniffing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,11 +168,20 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "9027907588b8b74a",
+  "active": "14f9759048d6f79a",
   "lastOpenFiles": [
+    "Exploitation/Network/MAC-Flooding.md",
+    "Exploitation/Network/Passive-Network-Sniffing.md",
+    "Exploitation/Network/ARP-Spoofing.md",
+    "Exploitation/Network/LLMNR-Poisoning.md",
+    "Services/Webservers/Apache/Apache-Tomcat/Apache-Tomcat.md",
+    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Linux-File-Transfers.md",
+    "Tools/C2/Sliver/Sliver-Cheatsheet.md",
+    "Linux/Linux-Commands/Linux-Module-Commands.md",
+    "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
+    "Linux/Linux-Commands/Core-Linux-Commands.md",
     "Web-Application-Hacking/Server-Side-Request-Forgery.md",
     "Web-Application-Hacking/PHP-Filters.md",
-    "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
     "Web-Application-Hacking/Server-Side-Template-Injection-Cheatsheet.md",
     "Web-Application-Hacking/OWASP-Top-10-Historic-Definitions.md",
     "Web-Application-Hacking/Insecure-Direct-Object-Reference.md",
@@ -144,15 +196,6 @@
     "Post-Exploitation/Credentials-Harvesting/AD-Credential-Harvesting.md",
     "Reconnaissance/Active-Information-Gathering/Active-Recon.md",
     "Reconnaissance/Active-Information-Gathering/Netcat-As-Recon.md",
-    "Reconnaissance/Active-Information-Gathering/Unknown-Service-Recon.md",
-    "Services/Databases/Dynamodb/Amazon-Dynamodb.md",
-    "Services/Databases/SQLite/SQLite-Hacking.md",
-    "Services/Databases/MariaDB/MariaDB-Hacking.md",
-    "Services/Databases/MongoDB/MongoDB.md",
-    "Services/Databases/MYSQL/MySQL-Cheatsheet.md",
-    "Services/Databases/MSSQL/MSSQL-Hacking.md",
-    "Services/Databases/MSSQL/MSSQL.md",
-    "Web-Application-Hacking/SQLi/Introduction-to-SQL.md",
     "Social-Engineering/Body-Language",
     "Exploitation/Windows/Active-Directory/Ticket-Attacks",
     "Tools/Network-Management",
