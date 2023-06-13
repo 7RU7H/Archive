@@ -3,7 +3,7 @@
 Simple Mail Transport Protocol (SMTP) - Vulnerable Email Servers can contain valuable information. 
 See [[Network-Protocols-Cheatsheet]] for port information.
 
-See [Debug STMP connection for great description of SMTP commands that occuring exploitation of MAil servers](https://www.sparkpost.com/blog/how-to-check-an-smtp-connection-with-a-manual-telnet-session/)
+See [Debug STMP connection for great description of SMTP commands that occuring exploitation of MAIL servers](https://www.sparkpost.com/blog/how-to-check-an-smtp-connection-with-a-manual-telnet-session/)
 
 ## Telnet
 ```bash
@@ -21,6 +21,8 @@ Code 250,251,252 means accepted and user account is valid; code 550 means invali
 
 
 ## Metasploit
+
+[[Metasploit]] has an auxiliary scan.
 ```bash
 use auxiliary/scanner/smtp/smtp_enum
 msf auxiliary(smtp_enum) > set rhosts $IP

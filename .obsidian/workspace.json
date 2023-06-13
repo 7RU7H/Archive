@@ -49,14 +49,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
+                "file": "Web-Application-Hacking/Web-Concepts/HTTP-Defined.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       },
       {
         "id": "f43b07d1b2dd4450",
@@ -68,7 +68,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exploitation/Network/MAC-Flooding.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
                 "mode": "source",
                 "source": false
               }
@@ -103,7 +103,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "nginx",
+                "query": "HTTP",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -120,7 +120,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -140,7 +141,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exploitation/Network/Passive-Network-Sniffing.md",
+                "file": "Web-Application-Hacking/Web-Concepts/HTTP-Defined.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -168,17 +169,24 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "14f9759048d6f79a",
+  "active": "014f6bcb6bb8f3e2",
   "lastOpenFiles": [
-    "Exploitation/Network/MAC-Flooding.md",
+    "Network/Network-Theory/Network-Protocols/Application-Protocols/Application-Protocols.md",
+    "Network/Network-Theory/Network-Protocols/Transport-Layer-TCP.md",
+    "Network/Network-Theory/Network-Protocols/TCP-IP-Model.md",
+    "Post-Exploitation/Stealth/Linux-Stealth.md",
+    "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+    "Reconnaissance/Active-Information-Gathering/SMTP/SMTP-Recon-Cheatsheet.md",
+    "Alternate-Resources.md",
     "Exploitation/Network/Passive-Network-Sniffing.md",
+    "Exploitation/Network/MAC-Flooding.md",
     "Exploitation/Network/ARP-Spoofing.md",
     "Exploitation/Network/LLMNR-Poisoning.md",
     "Services/Webservers/Apache/Apache-Tomcat/Apache-Tomcat.md",
     "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Linux-File-Transfers.md",
     "Tools/C2/Sliver/Sliver-Cheatsheet.md",
     "Linux/Linux-Commands/Linux-Module-Commands.md",
-    "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
     "Linux/Linux-Commands/Core-Linux-Commands.md",
     "Web-Application-Hacking/Server-Side-Request-Forgery.md",
     "Web-Application-Hacking/PHP-Filters.md",
@@ -189,13 +197,6 @@
     "Web-Application-Hacking/Cross-Site-Request-Forgery.md",
     "Hardening/Linux-Hardening.md",
     "Hardening/Windows-Hardening.md",
-    "Hardware/Hardware-Hacking/Printer-Security-Testing.md",
-    "Hardware/Hardware-Hacking/Hardware-Hacking.md",
-    "Post-Exploitation/Credentials-Harvesting/Web-App-Credentials.md",
-    "Post-Exploitation/Credentials-Harvesting/Browser-Credential-Harvesting.md",
-    "Post-Exploitation/Credentials-Harvesting/AD-Credential-Harvesting.md",
-    "Reconnaissance/Active-Information-Gathering/Active-Recon.md",
-    "Reconnaissance/Active-Information-Gathering/Netcat-As-Recon.md",
     "Social-Engineering/Body-Language",
     "Exploitation/Windows/Active-Directory/Ticket-Attacks",
     "Tools/Network-Management",
