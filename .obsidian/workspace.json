@@ -4,71 +4,28 @@
     "type": "split",
     "children": [
       {
-        "id": "208cdcef1aeb3231",
+        "id": "26005b9f36ef0234",
         "type": "tabs",
         "children": [
           {
-            "id": "9027907588b8b74a",
+            "id": "2024bdc4741d6d5b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/C2/Sliver/Sliver-Cheatsheet.md",
+                "file": "APIs/API-Hacking.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "14f9759048d6f79a",
+            "id": "319ebb1067dbb958",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exploitation/Network/Passive-Network-Sniffing.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0e9ae778071af536",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Exploitation/Network/ARP-Spoofing.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "014f6bcb6bb8f3e2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Web-Application-Hacking/Web-Concepts/HTTP-Defined.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ],
-        "currentTab": 3
-      },
-      {
-        "id": "f43b07d1b2dd4450",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "5d39aad88e4920b4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+                "file": "Exploitation/MITM-Attacks.md",
                 "mode": "source",
                 "source": false
               }
@@ -120,8 +77,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -141,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Web-Application-Hacking/Web-Concepts/HTTP-Defined.md",
+                "file": "APIs/API-Hacking.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -169,23 +125,26 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "014f6bcb6bb8f3e2",
+  "active": "2024bdc4741d6d5b",
   "lastOpenFiles": [
+    "Exploitation/Network/ARP-Spoofing.md",
+    "Exploitation/Network/MAC-Flooding.md",
+    "Exploitation/MITM-Attacks.md",
+    "Security-Disciplines/Penetration-Testing/Tactical-Post-Exploitation.md",
+    "Tools/C2/Sliver/Sliver-Cheatsheet.md",
+    "Exploitation/Network/Passive-Network-Sniffing.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+    "Web-Application-Hacking/Web-Concepts/HTTP-Defined.md",
     "Network/Network-Theory/Network-Protocols/Application-Protocols/Application-Protocols.md",
     "Network/Network-Theory/Network-Protocols/Transport-Layer-TCP.md",
     "Network/Network-Theory/Network-Protocols/TCP-IP-Model.md",
     "Post-Exploitation/Stealth/Linux-Stealth.md",
     "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
     "Reconnaissance/Active-Information-Gathering/SMTP/SMTP-Recon-Cheatsheet.md",
     "Alternate-Resources.md",
-    "Exploitation/Network/Passive-Network-Sniffing.md",
-    "Exploitation/Network/MAC-Flooding.md",
-    "Exploitation/Network/ARP-Spoofing.md",
     "Exploitation/Network/LLMNR-Poisoning.md",
     "Services/Webservers/Apache/Apache-Tomcat/Apache-Tomcat.md",
     "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Linux-File-Transfers.md",
-    "Tools/C2/Sliver/Sliver-Cheatsheet.md",
     "Linux/Linux-Commands/Linux-Module-Commands.md",
     "Linux/Linux-Commands/Core-Linux-Commands.md",
     "Web-Application-Hacking/Server-Side-Request-Forgery.md",
@@ -194,9 +153,6 @@
     "Web-Application-Hacking/OWASP-Top-10-Historic-Definitions.md",
     "Web-Application-Hacking/Insecure-Direct-Object-Reference.md",
     "Web-Application-Hacking/Hijacking-Remote-Technology-Repositories.md",
-    "Web-Application-Hacking/Cross-Site-Request-Forgery.md",
-    "Hardening/Linux-Hardening.md",
-    "Hardening/Windows-Hardening.md",
     "Social-Engineering/Body-Language",
     "Exploitation/Windows/Active-Directory/Ticket-Attacks",
     "Tools/Network-Management",
