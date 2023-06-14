@@ -6,16 +6,16 @@ Try to, at some point I want to master hacking in a battlegrounds context. This 
 
 ## Rules
 
--   Players aren’t supposed to shut down machines.
--   Players are not allowed to change the root password of machines.
--   Processes/commands that are marked with `HTB=1` prefix should not be considered as part of the exploitation process since they are system checks to ensure that machine’s legitimate functionality is preserved.
--   Defenders are not allowed to massively “kill shells” in order to secure their systems. They should focus on patching the actual vulnerabilities.
--   Defenders aren’t supposed to kill a service just to patch vulnerabilities.
--   When defenders try to patch vulnerabilities, it’s their responsibility to make sure that no underlying functionality has been stopped due to their patch. For example, there is a reason for sudo entries so when they are modified they should still serve their original purpose. Removing a sudo entry is not a “fix” and defenders should consider fixing the insecure “sudo entry” instead of removing it.
--   If a system check has been fired in the middle of a service restart or machine reset/reboot there is a chance that defenders will be punished with loss of points. This is intended and the reason behind that is to “award” the players who didn’t restart/reboot many times.
--   Surrenders can’t be called before the 15 minute mark.
+- Players aren’t supposed to shut down machines.
+- Players are not allowed to change the root password of machines.
+- Processes/commands that are marked with `HTB=1` prefix should not be considered as part of the exploitation process since they are system checks to ensure that machine’s legitimate functionality is preserved.
+- Defenders are not allowed to massively “kill shells” in order to secure their systems. They should focus on patching the actual vulnerabilities.
+- Defenders aren’t supposed to kill a service just to patch vulnerabilities.
+- When defenders try to patch vulnerabilities, it’s their responsibility to make sure that no underlying functionality has been stopped due to their patch. For example, there is a reason for sudo entries so when they are modified they should still serve their original purpose. Removing a sudo entry is not a “fix” and defenders should consider fixing the insecure “sudo entry” instead of removing it.
+- If a system check has been fired in the middle of a service restart or machine reset/reboot there is a chance that defenders will be punished with loss of points. This is intended and the reason behind that is to “award” the players who didn’t restart/reboot many times.
+- Surrenders can’t be called before the 15 minute mark.
 
-## Ippsec Introductional Scripting
+## Ippsec Scripting
 
 [Hack The Box Hacking Battlegrounds - Cyber Mayhem Gameplay with Ippsec](https://www.youtube.com/watch?v=o42dgCOBkRk)
 
@@ -93,9 +93,8 @@ for i in $(seq 105 108); do
 
 ```bash
 ps -aef --forest
-
-
 ```
+
 ## References
 
 [Hack The Box Hacking Battlegrounds - Cyber Mayhem Gameplay with Ippsec](https://www.youtube.com/watch?v=o42dgCOBkRk)

@@ -2,9 +2,28 @@
 
 An Application Programming Interface is middleware that facilitates communication between multiple applications (any software) via a set of protocols and definitions to specific interfaces (service contract between two applications). Communication a set of requests and responses. 
 
-## Tricks
+## Techniques, Tricks and Tools
 
-- Try put in an empty body of http request json `{}`
+- [MindAPI project](https://dsopas.github.io/MindAPI/about/) is free and open-source project that *"is a mindmap which combines years of experience in testing API security.* Its divided into two sections:
+	- Reconnaissance
+	- Testing (Follows OWASP API Security Top 10 guidelines and other security guides)"
+
+- Try put in an empty body of HTTP request JSON `{}`
+
+
+- [[Postman-Helpsheet]] - [Postman]()
+- SoapUI 
+- [[Burpsuite-Helpsheet]]
+- [[OWASP-ZAP]]
+
+## API Security Issues
+
+- Authentication / Session management
+- Authorisation / Access Controls / IDORs
+- Input Validation / Error Handling
+- Rate Limiting / Throttling 
+
+
 
 ## OWASP API Top 10
 
@@ -222,3 +241,4 @@ Migitations and Preventions
 [OWASP API Top 10](https://owasp.org/www-project-api-security/)
 [OWASP - Broken Object Level Authorization](https://github.com/OWASP/API-Security/blob/master/2019/en/src/0xa1-broken-object-level-authorization.md)
 [Wikipedia Model-View-Controller](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller)
+[API Security 101: Tools, Tips and Tricks | Pen Test HackFest Summit 2021](https://www.youtube.com/watch?v=4nDjFEBzwF4)

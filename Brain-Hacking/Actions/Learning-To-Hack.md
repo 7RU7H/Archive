@@ -6,7 +6,7 @@ There are alot of these how to learn to x so firstly address the learning part:
 
 Hacker mindset is commonly refered to. In priority order it really begins and dies on:
 
-It is skillset that is built over years of time, orangatuan can use tools, script kiddies can press a button, but the real awesomeness of Hacking is almost not even really the hacking:
+It is skill set that is built over years of time, orangutan can use tools, script kiddies can press a button, but the real awesomeness of Hacking is almost not even really the hacking:
 - How does a system work - range of abstraction of how?  
 - Building, maintaining and troubleshooting systems to a **modern** standard 
 
@@ -31,15 +31,15 @@ It is skillset that is built over years of time, orangatuan can use tools, scrip
 4. Train your brain to love solving problems. Hacking is problem solving a task with the payoff that often a takes long time to get to. 
 	- Learn Go and try make very small programs 
 		- Delay googling solutions - set timer & amount of actions you have till you can look up
-		- Do not use some the standard libary sometimes
+		- Do not use some the standard library sometimes
 		- Do not use other people imports at first
 		- Look up the python/ruby solution and translate it - learn them at the same time while build multi-lingualism and deepen your golang understand
 		- Look the best golang solution after you succeeded or failed to improve your own code. Code review without the egos and your code gets better for free.
 	1. Learn efficiently  
 		- Space it out, interweave practice with reading, deep study and shallow study
 5. Do sometime new and related everyday
-6. If cant explain the x to the most non techinical person, will management understand, do you actually understand it? - It is a good concept comprehension test and good for memory compressions and neural strengthing.
-7. Read a little every day, but diversify - You read scans, terminals, code everyday - insert  Tyrion Lannister quote about reading - but learn to REALLY read - Fast and slow reading - when to to go fast and when to go slow:
+6. If cant explain the x to the most non techinical person, will management understand, do you actually understand it? - It is a good concept comprehension test and good for memory compression and neural strengthening.
+7. Read a little every day, but diversify - You read scans, terminals, code everyday - insert Tyrion Lannister quote about reading - but learn to REALLY read - Fast and slow reading - when to to go fast and when to go slow:
 	 - i.e Bug Bounty report one day, AD whitepaper another or insert-x-ethical-hacking-x-site reading material; Blog about CVEs; Proof of Concepts about bugs; Source Code.
 8. Take Notes and visualise the problems
 9. Develop humility, integrity and remember you are stupid. The training your brain to like solving the problem and the feeling when it works over time train a patience for long complex tasks or researching that can get very frustrating.
@@ -63,13 +63,13 @@ Some of the below can be connective - i.e
 	- **BUT** Read the walkthroughes afterwards anyway if you succeed. 0xDF is good choice for Hack the box - some boxes have multiple paths intended or otherwise
 	- **BUT** more importantly you need to have a solution
 		- If you just got the answer from the teacher in a maths class you would really learn maths
-		- If you never got help from a teacher then you never learn some the assumptions and shortcut pieces of information that required for more complex thinking surrounding problems. Also there is assumptive most effiecent way to do almost everything - you need these to solve more problems more quickly - it'll also make it more fun.
+		- If you never got help from a teacher then you never learn some the assumptions and shortcut pieces of information that required for more complex thinking surrounding problems. Also there is assumptive most efficient way to do almost everything - you need these to solve more problems more quickly - it'll also make it more fun.
 - Read/Watch everyone else: 0xdf, snowscan, etc 
 - Start noting what you do, your brain is a finite size
 - Learn Google Dorking - [[Search-Engine-Dorking]]
 	- Better queries mean better results 
 - Social Network 
-	- Try to be the least smart person in a room whenever possible - or remember you are almost certianly the least smart person in rooms full smart people.
+	- Try to be the least smart person in a room whenever possible - or remember you are almost certainly the least smart person in rooms full smart people.
 	- Talk less, be polite and be friendly to social and cultural norms
 		- Our brains are story driven - and stories like
 			- You: *"Hello, how does x 0day work?"* does not work they are not google or your teacher.
@@ -78,10 +78,10 @@ Some of the below can be connective - i.e
 		- Discord apparently 
 		- Meet people in the real world - if you can
 		- Avoid the Dark Web
-			- To me it seems like the adult equivilent of a child going to place were told not to go for just a second and running away.
+			- To me it seems like the adult equivalent of a child going to place were told not to go for just a second and running away.
 			- And if you stay.. you are just another idiot for whatever scam - Governmental backed, Criminally Backed, etc... why even bother it their to trap both and idiots in the Great Games that Money-Ideological-Coercion-Ego games that people play on themselves and others play on them - and you will never be one of them, no matter how high up or cyber-firepower you bring in you are Government Agency, Hactivist Group or Criminal Gang you are it is Game as Old as time itself. 
 			- Also if you learning or working in there even if you save the world like Marcus Hutchins, you are still targetable by law enforcement somewhere.
-	- For me finding other people was the hardest as I am a people person in a digitally socializing world. I could talk my way into a bank vault and back out again, but never into good company to learn this stuff lol - hopeful this will change.
+	- For me finding other people was the hardest as I am a people person in a digitally socialising world. I could talk my way into a bank vault and back out again, but never into good company to learn this stuff - hopeful this will change.
 - Learn Networking and Web - Network+
 	- Wireshark - Tryhackme, Pentester Lab
 	- Burpsuite - Tryhackme, Pentester Lab
@@ -100,17 +100,17 @@ Some of the below can be connective - i.e
 - Build Virtual Machines and more importantly network them
 - CTFs - (In no particular order) Tryhackme, HackTheBox, Proving Grounds, Pentester Labs
 	- Some are not real world enough - To puzzle orientated, but sometimes default passwords are actually used in the real world...	
-- Bug Bounty, but... *"instead look for vulnerablities passively"* - Peter Kim and instead MUST  peoples research even if you do not actually want to do web pentesting or bug bounty. 
+- Bug Bounty, but... *"instead look for vulnerabilities passively"* - Peter Kim and instead MUST  peoples research even if you do not actually want to do web pentesting or bug bounty. 
 - It is trendy - ALWAYS avoid - and very poor work (also lot of wasted time) to pay ratio
-	- Problem is there is little to no feedback loop if you do not have fundementals
+	- Problem is there is little to no feedback loop if you do not have fundamentals
 	- Requires a level of capability to really start that takes years
 	- Then you are up against automation and experience Bug Hunters
 	- Partner Programs are a barrier for a reason
-- Build your own methodology and intuitions, but remember their are much betetr resources for good reason - I think that about this repository comparative to others, it helps. 
-- Do the coursework dont do the exam, but **do** go for the exam if need some goal or certificate is what you want. Expertise comes from experience, but the measure of experience is demonstrable work **complete** and a certificate is measure of work done at particular standard. Experience of a certian quality is what is sort after.
+- Build your own methodology and intuitions, but remember their are much better resources for good reason - I think that about this repository comparative to others, it helps. 
+- Do the coursework don't do the exam, but **do** go for the exam if need some goal or certificate is what you want. Expertise comes from experience, but the measure of experience is demonstrable work **complete** and a certificate is measure of work done at particular standard. Experience of a certain quality is what is sort after.
 
 
-Disclaimer Writeups to me are legitimate self solving of machines, but I think personally everyone should write and ethically hack for a variety of reasons. Secondly it really not healthy to learn hacking in a way that makes failure a part of it. You won't actually learn that way, it is an elitist and gatekeeping mindset towards anything. The best in the world in any domain are the best out learning and enjoying the process. A culture of *"cards close to  the chest"* mentality about one's capabalility to towards doing the the thing and making content for yourself to document your progress is madness, cowardise and only an Ethical Hacking community problem. Artists of all kind would never improve, Competivity Sports person, Programming and Video Gamers STEM field would never public verify anything and this were this just about money, jobs and ego. Nothing more. It would be absurd for a most other professions to treat the activity they do this way. Just say you looked a writeup, then you know what you do not know otherwise enjoy the 1984 madness of everyone else and burnout. Also there so many boxes to do them all solo would take a long time. I personally want to complete HTB and THM, but not waste years of my life malding into the abyss, because of culture or tradition.
+Disclaimer Writeups to me are legitimate self solving of machines, but I think personally everyone should write and ethically hack for a variety of reasons. Secondly it really not healthy to learn hacking in a way that makes failure a part of it. You won't actually learn that way, it is an elitist and gate-keeping mindset towards anything. The best in the world in any domain are the best out learning and enjoying the process. A culture of *"cards close to  the chest"* mentality about one's capability to towards doing the the thing and making content for yourself to document your progress is madness, cowardice and only an Ethical Hacking community problem. Artists of all kind would never improve, Competivity Sports person, Programming and Video Gamers STEM field would never public verify anything and this were this just about money, jobs and ego. Nothing more. It would be absurd for a most other professions to treat the activity they do this way. Just say you looked a writeup, then you know what you do not know otherwise enjoy the 1984 madness of everyone else and burnout. Also there so many boxes to do them all solo would take a long time. I personally want to complete HTB and THM, but not waste years of my life malding into the abyss, because of culture or tradition.
 
 As of 2023 I have got a formula for Helped-Throughs, after much testing and realised that Helped-Throughs should either be:
 
@@ -118,7 +118,7 @@ Personal Requirements:
 1. Balance in all things. Do not do just one or the other, if you must lean more to doing Writeups especially the more experienced you are. 
 1. Writeups are not Helped-Throughouts 
 	- Writeup are solo or team solving of a CTF
-	- Help-Throughout are way to remove most of the challenge to incourage experiementation, research, indepth focus, postivity in succeeding to learn not learning out of the pain failure
+	- Help-Throughout are way to remove most of the challenge to encourage experimentation, research, in depth focus, positivity in succeeding to learn not learning out of the pain failure
 
 Benefits:
 1. Note taking the process
@@ -130,9 +130,9 @@ Benefits:
 
 Types:
 1. Stop and Start; Push till stuck - 2 hours max **and then** - walk it out then try again for another 30 minutes, then stop and peak. And only peak.
-	1. Beyond root should be box related and one or two tasks that take a maxium of 1 hour each 
-	2. After completion you must review atleast three writeups both video and written of the diagic learning
-2. Like a full project - llike (must be) extensive walkthrough or bootcamp in you favourite location:
+	1. Beyond root should be box related and one or two tasks that take a maximum of 1 hour each 
+	2. After completion you must review at least three writeups both video and written of the diagic learning
+2. Like a full project - like (must be) extensive walkthrough or bootcamp in you favourite location:
 	- Multiple Writeups both video and written
 	- One section must be challenge to try without support in an area of weakness - 1 hour maximum
 	- It must document what you have learnt about your weaknesses and mistakes 

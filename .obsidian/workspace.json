@@ -4,28 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "26005b9f36ef0234",
+        "id": "97cfd0c319118018",
         "type": "tabs",
         "children": [
           {
-            "id": "2024bdc4741d6d5b",
+            "id": "d845b38410977fc2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "APIs/API-Hacking.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "319ebb1067dbb958",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Exploitation/MITM-Attacks.md",
+                "file": "Artificial-Intelligence/AI-Whispering.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "APIs/API-Hacking.md",
+                "file": "Artificial-Intelligence/AI-Whispering.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,34 +113,34 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "2024bdc4741d6d5b",
+  "active": "d845b38410977fc2",
   "lastOpenFiles": [
-    "Exploitation/Network/ARP-Spoofing.md",
+    "Artificial-Intelligence/Open-Source-AI-Models.md",
+    "Brain-Hacking/Actions/Beyond-Root-Ideas.md",
+    "Brain-Hacking/Actions/Exercise.md",
+    "Brain-Hacking/Actions/Good-Acronyms-And-Phrases.md",
+    "Brain-Hacking/Actions/Improve-Your-Learning.md",
+    "Brain-Hacking/Actions/Learning-To-Continue-Learning-Better.md",
+    "Brain-Hacking/Actions/Learning-To-Hack.md",
+    "Brain-Hacking/Actions/Personality.md",
+    "Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Blue-KOTH-Battlegrounds-Cheatsheet-Linux.md",
+    "Cyberwarfare/Practice/THM-King-Of-The-Hill.md",
+    "Cyberwarfare/Practice/HTB-Battlegrounds.md",
+    "Cyberwarfare/Practice/Default-Toolkit-Inventory.md",
+    "Exploitation/Binary-Exploitation/Binary-Exploitation-Protections.md",
+    "Exploitation/Binary-Exploitation/Buffer-Overflow/Stackbased-Buffer-Overflows.md",
+    "Exploitation/Binary-Exploitation/Buffer-Overflow/Stackbased-Buffer-Overflow-Scripts.md",
+    "Internet-Of-Things/MQTT.md",
+    "Internet-Of-Things/IoT-Device-Hacking.md",
     "Exploitation/Network/MAC-Flooding.md",
+    "Exploitation/Network/ARP-Spoofing.md",
+    "Exploitation/Network/LLMNR-Poisoning.md",
+    "Exploitation/Network/Passive-Network-Sniffing.md",
+    "APIs/API-Hacking.md",
     "Exploitation/MITM-Attacks.md",
     "Security-Disciplines/Penetration-Testing/Tactical-Post-Exploitation.md",
     "Tools/C2/Sliver/Sliver-Cheatsheet.md",
-    "Exploitation/Network/Passive-Network-Sniffing.md",
     "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
-    "Web-Application-Hacking/Web-Concepts/HTTP-Defined.md",
-    "Network/Network-Theory/Network-Protocols/Application-Protocols/Application-Protocols.md",
-    "Network/Network-Theory/Network-Protocols/Transport-Layer-TCP.md",
-    "Network/Network-Theory/Network-Protocols/TCP-IP-Model.md",
-    "Post-Exploitation/Stealth/Linux-Stealth.md",
-    "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
-    "Reconnaissance/Active-Information-Gathering/SMTP/SMTP-Recon-Cheatsheet.md",
-    "Alternate-Resources.md",
-    "Exploitation/Network/LLMNR-Poisoning.md",
-    "Services/Webservers/Apache/Apache-Tomcat/Apache-Tomcat.md",
-    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Linux-File-Transfers.md",
-    "Linux/Linux-Commands/Linux-Module-Commands.md",
-    "Linux/Linux-Commands/Core-Linux-Commands.md",
-    "Web-Application-Hacking/Server-Side-Request-Forgery.md",
-    "Web-Application-Hacking/PHP-Filters.md",
-    "Web-Application-Hacking/Server-Side-Template-Injection-Cheatsheet.md",
-    "Web-Application-Hacking/OWASP-Top-10-Historic-Definitions.md",
-    "Web-Application-Hacking/Insecure-Direct-Object-Reference.md",
-    "Web-Application-Hacking/Hijacking-Remote-Technology-Repositories.md",
     "Social-Engineering/Body-Language",
     "Exploitation/Windows/Active-Directory/Ticket-Attacks",
     "Tools/Network-Management",
