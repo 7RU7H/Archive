@@ -68,7 +68,7 @@ Password Encryption tool on Windows
 
 ## GetNPUsers.py
 
-ASREP Roasting - For users that do not require Kerberos preauthentiation: 'Do not require Kerberos preauthentication set (UF_DONT_REQUIRE_PREAUTH). Output is compatible with JtR:[[John-The-Ripper-Cheatsheet]] use `-format hashcat` for  hashcat: [[Hashcat-Cheatsheet]].
+ASREP Roasting - For users that do not require Kerberos preauthentiation: 'Do not require Kerberos preauthentication set (UF_DONT_REQUIRE_PREAUTH). Output is compatible with JtR:[[John-The-Ripper-Cheatsheet]] use `-format hashcat` for  Hashcat: [[Hashcat-Cheatsheet]].
 ```bash
 GetNPUsers.py  -dc-ip $IP -request '$domain/' 
 GetNPUsers.py  -dc-ip $IP -request '$domain/' -format hashcat
