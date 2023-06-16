@@ -168,8 +168,7 @@ sc start
 sc stop
 sc config <svc> *=	Set configuration of a service see /? for type of configuration changes avaliable
 
-taskkill 
-	/PID int
+taskkill /PID $int # /F will force termination
 
 # Retart to system bios without touching a hotkey!
 shutdown /r /fw /f /t 0

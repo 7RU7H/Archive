@@ -54,7 +54,7 @@ x86_64-w64-mingw32-gcc-win32 hello.c -o test.exe
 x86_64-w64-mingw32-gcc-win32 dll.c -o bad.dll -shared # shared to make it a dll
 ```
 
-Transfering just the executable and not the dll, using [[Sysinternals-Procmon]] to `Filter -> Process Name is test.exe -> Apply and ok` then running test.exe we can observer path recursion looking for the missing bad.dll. If you write to any of the locations that recursively searched for or we can put it in the current working directory we can do DLL Hijacking. Similarly if we can inject into a misconfigured `%PATH%` where system32 is not the first in the listing we can also perform DLL Hijacking
+Transfering just the executable and not the dll, using [[Sysinternals-ProcMon]] to `Filter -> Process Name is test.exe -> Apply and ok` then running test.exe we can observer path recursion looking for the missing bad.dll. If you write to any of the locations that recursively searched for or we can put it in the current working directory we can do DLL Hijacking. Similarly if we can inject into a misconfigured `%PATH%` where system32 is not the first in the listing we can also perform DLL Hijacking
 
 ```powershell
 echo %PATH%
