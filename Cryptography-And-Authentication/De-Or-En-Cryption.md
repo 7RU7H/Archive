@@ -13,6 +13,8 @@ gpg --decrypt aes256.plain.gpg
 
 gpg -c --cipher-algo blowfish blowfish.plain
 gpg --decrypt blowfish.plain.gpg
+
+gpg --import public.key
 ```
 
 ## Openssl

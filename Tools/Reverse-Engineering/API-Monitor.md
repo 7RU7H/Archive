@@ -1,8 +1,6 @@
 # API Monitor
 
-MalwareJake has both x32 and x64 you should too from [[IDA-Malware-Reverse-Engineering-101-By-Jake-Williams-Notes]]
-
-
+MalwareJake has both x32 and x64 you should too from [[IDA-Malware-Reverse-Engineering-101-By-Jake-Williams-Notes]]. [[API-Logger]] is also easier and read to find information, but not for experimenting with multiple running applications to monitor with malware.
 
 
 
@@ -10,9 +8,11 @@ MalwareJake has both x32 and x64 you should too from [[IDA-Malware-Reverse-Engin
 - Monitor processes tab - displays processes being monitored for API calls
 - Summary tab - shows the API call, the Module, the Thread, Time, Return Value, and any errors
 - Running Processes tab - shows running processes that API Monitor can monitor.
+- Parameters Tab - displays parameters of API calls including the values of those Parameters before and after the API calls.
+- Hex buffer tab - Display Hex buffer of each select item currently clicked on
+- Call Stack tab - show Call stack of a process
+- Output tab - displays output
 
+## References
 
-This tab shows the Parameters of the API call, including the values of those Parameters before and after the API calls.
-4. This tab shows the Hex buffer of the selected value.
-5. This tab shows the Call Stack of the process.
-6. Finally, this tab shows the Output.
+[THM Basic Dynamic Analysis Room](https://tryhackme.com/room/basicdynamicanalysis)
