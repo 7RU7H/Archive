@@ -3,14 +3,17 @@
 
 
 
-To ensure maintain it functional purpose methodology will never contain - question X do Y? Just more Questions to be answered by you! If better format, technology exists to make this less of a list of questions the format should retain textual scriptablity and portability.  An addition to questions is more supplimentary actionable cognitive enhancement of either a 
 
 
 
-For more philosophical Hacking super dense and short article see [[Hacking-The-Thing]] 
 
 
 
+What
+Why
+Where
+How
+Who 
 
 
 What systems are online, but available
@@ -21,9 +24,6 @@ How is it connected
 How are you connecting
 What permissions do you have
 How can use current level of access to get more access
-
-
-
 
 Where can input be provided 
 What can be requested
