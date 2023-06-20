@@ -25,43 +25,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cryptography-And-Authentication/De-Or-En-Cryption.md",
+                "file": "Coding-Scripting-Programming/Malware/Malware-Techniques/Static-Analysis-Evasion-Techniques.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "5c692fc98638b595",
+            "id": "8740e537ef265947",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Reverse-Engineering/Malware-Analysis/Malware-Analysis.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "50d70211f5e57047",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tools/Reverse-Engineering/Regshot.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7063ba2f9a89de66",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Post-Exploitation/Shadow-Networking/Pivoting-Tunnelling-And-Redirection-Master-Class-Darnell-And-Thurner-Notes.md",
+                "file": "Coding-Scripting-Programming/Malware/Malware-Techniques/Dynamic-Analysis-Evasion.md",
                 "mode": "source",
                 "source": false
               }
@@ -80,7 +56,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -146,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Post-Exploitation/Shadow-Networking/Pivoting-Tunnelling-And-Redirection-Master-Class-Darnell-And-Thurner-Notes.md",
+                "file": "Coding-Scripting-Programming/Malware/Malware-Techniques/Dynamic-Analysis-Evasion.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -173,45 +149,45 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "7063ba2f9a89de66",
+  "active": "8740e537ef265947",
   "lastOpenFiles": [
-    "Post-Exploitation/Living-Off-The-Land",
-    "Post-Exploitation/Shadow-Networking",
+    "Coding-Scripting-Programming/Malware/Malware-Techniques/Static-Analysis-Evasion-Techniques.md",
+    "Reverse-Engineering/Malware-Analysis/Dynamic-Malware-Analysis.md",
+    "Coding-Scripting-Programming/Malware/Malware-Techniques/Dynamic-Analysis-Evasion.md",
+    "Reverse-Engineering/Malware-Analysis/Static-Malware-Analysis.md",
+    "Coding-Scripting-Programming/Malware/Malware-Techniques-.md",
+    "Coding-Scripting-Programming/Malware/Malware-Techniques",
+    "Cryptography-And-Authentication/De-Or-En-Cryption.md",
+    "Reverse-Engineering/Malware-Analysis/Dy.md",
+    "Reverse-Engineering/Malware-Analysis/Malware-Analysis.md",
     "Tools/Reverse-Engineering/Regshot.md",
     "Post-Exploitation/Shadow-Networking/Pivoting-Tunnelling-And-Redirection-Master-Class-Darnell-And-Thurner-Notes.md",
-    "Reverse-Engineering/Malware-Analysis/Dynamic-Malware-Analysis.md",
+    "Post-Exploitation/Living-Off-The-Land",
+    "Post-Exploitation/Shadow-Networking",
     "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
     "Tools/SysInternals/ProcExp/Sysinternals-ProcExp.md",
-    "Reverse-Engineering/Malware-Analysis/Malware-Analysis.md",
-    "Coding-Scripting-Programming/Malware/Malware-Techniques-Process-Hollowing.md",
-    "Coding-Scripting-Programming/Malware/Malware-Techniques-Process-Masquerading.md",
+    "Coding-Scripting-Programming/Malware/Malware-Techniques/Malware-Techniques-Process-Hollowing.md",
+    "Coding-Scripting-Programming/Malware/Malware-Techniques/Malware-Techniques-Process-Masquerading.md",
     "Tools/SysInternals/ProcMon/Sysinternals-ProcMon.md",
     "Tools/SysInternals/ProcExp",
     "Tools/Reverse-Engineering/API-Monitor.md",
     "Tools/Reverse-Engineering/API-Logger.md",
     "Windows/Windows-Commands/Windows-Commands.md",
-    "Cryptography-And-Authentication/De-Or-En-Cryption.md",
     "Reconnaissance/Active-Information-Gathering/OS-Detection/OS-Detection.md",
     "Reverse-Engineering/Malware-Analysis/IDA-Malware-Reverse-Engineering-101-By-Jake-Williams-Notes.md",
     "Post-Exploitation/Privilege-Escalation/Linux/Important-Linux-Locations.md",
     "Images/procmonbar.png",
-    "Reverse-Engineering/Malware-Analysis/Static-Malware-Analysis.md",
     "Reverse-Engineering/Malware-Analysis/Malware-Sandbox.md",
     "Linux/Linux-Commands/Linux-Module-Commands.md",
-    "Coding-Scripting-Programming/Malware/Malware-Techniques-Obfuscation.md",
-    "Coding-Scripting-Programming/Malware/Malware-Techniques-Packing.md",
+    "Coding-Scripting-Programming/Malware/Malware-Techniques/Malware-Techniques-Obfuscation.md",
+    "Coding-Scripting-Programming/Malware/Malware-Techniques/Malware-Techniques-Packing.md",
     "Network/Network-Theory/Network-Protocols/DNS-Defined.md",
-    "Windows/Active-Directory/Active-Directory-Defined.md",
-    "Web-Application-Hacking/CMS/Wordpress.md",
-    "Security-Disciplines/Incident-Response/Five-Windows-Forensic-Artefacts-for-Every-Incident-Response.md",
     "Social-Engineering/Body-Language",
     "Exploitation/Windows/Active-Directory/Ticket-Attacks",
     "Tools/Network-Management",
     "Tools/LLMNR",
     "Tools/AD-Offensive",
     "Tools/EDR-Bypass",
-    "This-Repository-Specific",
-    "Tools/Shells/SSH",
     "Images/ss64-windowsgroups-default-admin-users-and-groups.png",
     "Images/jackmasa-mind-map.png",
     "Images/azslotswappedsettingsvsslotspecificsettings.png",

@@ -12,3 +12,4 @@ Regshot snapshots the Windows Registry to compare the results between two snapsh
 
 ## References
 
+[THM Basic Dynamic Analysis Room](https://tryhackme.com/room/basicdynamicanalysis)

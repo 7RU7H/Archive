@@ -1,6 +1,7 @@
 # (De|En)cryption
 
 For definitions and concepts try here: [[Cryptography]]
+
 ## gpg
 ```bash
 killall gpg-agent
