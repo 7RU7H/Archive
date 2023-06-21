@@ -10,6 +10,9 @@ An Application Programming Interface is middleware that facilitates communicatio
 
 - Try put in an empty body of HTTP request JSON `{}`
 
+- Fuzzing endpoing extensions 
+	- `php,asp,aspx,jsp,py,txt,conf,config,bak,backup,swp,old,db,sq` [@hakluke](https://twitter.com/hakluke/status/1221792235215151104)
+
 
 - [[Postman-Helpsheet]] - [Postman]()
 - SoapUI 
@@ -22,8 +25,6 @@ An Application Programming Interface is middleware that facilitates communicatio
 - Authorisation / Access Controls / IDORs
 - Input Validation / Error Handling
 - Rate Limiting / Throttling 
-
-
 
 ## OWASP API Top 10
 
