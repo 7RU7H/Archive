@@ -131,15 +131,32 @@ Data protections rely on decisions about what needs protect in the cloud and wha
 
 ## Security Through Policy
 
+- Identity-based
+- Resource-based
+- Session-based
+
 ## Security Through Access Management
 
-- MFA at least, but always push for better
+Access Management - correct permissions for the correct account to correctly perform a task.  
+- Create Identities - Template identities, make excepts exceptionally
+- Authentication Factors
+	- MFA at least, but always push for better for regular users - move away from password to passphrase and bad storage methods or passwords all together to something that what a user has to have together
+		- But make it easy and not irritatating for the user! 
+	- More powerful permissions require more oversight and less single point of failure human interaction: Big Federation-Level Own account requires - X people with Y regular authentication plus Account specific authorisation, not one person and one password to own your entire cloud.
+- Roles: Policy and Organisation Structure should inform account Roles limited to that Role
 
-IAM - focus on
-- identity management - user and machine - integration between federations and clouds
-- segregation - permission hierarchy relative to organisation and B2B
-- access management - multiplier of amount access control makes it difficult to perfect it.
-- workforce transformation
+IAM - Focus on and improve for success
+- Identity management - user and machine - integration between federations and clouds
+- Do not share passwords or account
+- Segregation - permission hierarchy relative to organisation and B2B
+- Access management 
+	- multiplier of amount access control makes it difficult to perfect it
+- Authorisation and Authentication systems that are MFA 
+	- More is good in most cases
+		- Do not make it irritating or difficult for genuine users attempts your user base will make find ways to make there life easier and your Cloud-System Administrator life hell. 
+			- You provide a service not a challenge.
+	- Just-in-Time  		  
+- Workforce transformation
 
 lam and Cloud security maturity framework
 - understand current context 
@@ -148,11 +165,36 @@ lam and Cloud security maturity framework
 
 ## Security Through Network Management
 
+Network Security Groups - Rule based management
+- Defaults
+- What resource to where and how
+
+Virtual Security Solutions
+- Gateways
+	- VPN  
+	- Load-balancers
+	- Firewalls
+	- DNS Firewalls
+	- Application gateways
+
+Connection between On-Premise and Cloud
+- Cross-service credential management
+- Cross domain access management
+
+
 ## Security Through Storage Management
+
+Storage is not Archival (Backup) 
+
+- Use or Create Geographical Boundaries
+- Set Role-based Authorisation and Access though Policy
+- Encryption at rest and in transit
 
 ## Security Through Monitoring and Logging
 
 ## Security Through Backup Management
+
+
 
 ## Security Through Disaster Management
 
