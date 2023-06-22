@@ -13,26 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Reverse-Engineering/Malware-Analysis/IDA-Malware-Reverse-Engineering-101-By-Jake-Williams-Notes.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "079f0d38b8af7864",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cloud/Cloud-Security.md",
+                "file": "Tools/Cross-OS/Exiftool.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cloud/Cloud-Security.md",
+                "file": "Tools/Cross-OS/Exiftool.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,14 +113,31 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "079f0d38b8af7864",
+  "active": "d845b38410977fc2",
   "lastOpenFiles": [
-    "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Maintenance/Azure-Administration-Azure-Monitor.md",
+    "Tools/Web-Application/SQLmap-CheatSheet.md",
+    "Tools/Cross-OS/Exiftool.md",
+    "Tools/Data-Processing/Searching-Through-File-Tricks.md",
+    "Tools/Detection-And-Monitoring",
+    "Tools/Data-Processing",
+    "Tools/Useful-Online-Software/Puzzle-Solution-Tools.md",
+    "Reverse-Engineering/Malware-Analysis/IDA-Malware-Reverse-Engineering-101-By-Jake-Williams-Notes.md",
+    "Tools/Malware",
+    "Tools/Vulnerability-Management",
+    "Tools/Cross-OS",
+    "Tools/Cross.md",
+    "Tools/Network-Based/Network-Mangement.md",
+    "Tools/Network-Management/Untitled.md",
+    "Tools/Useful-Online-Software/Explainshell.md",
+    "Persistence/Windows-Persistence/Windows-Persistence.md",
+    "Coding-Scripting-Programming/Languages/Rust/Rust.md",
+    "Coding-Scripting-Programming/Languages/Ruby/Useful_Ruby.md",
+    "Coding-Scripting-Programming/Languages/Go/Golang.md",
     "Cloud/Cloud-Security.md",
+    "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Maintenance/Azure-Administration-Azure-Monitor.md",
     "Hardware/FlipperZero/FlipperZero.md",
     "Reverse-Engineering/Malware-Analysis/Dynamic-Malware-Analysis.md",
     "Linux/Linux-Commands/Linux-Module-Commands.md",
-    "Reverse-Engineering/Malware-Analysis/IDA-Malware-Reverse-Engineering-101-By-Jake-Williams-Notes.md",
     "APIs/API-Hacking.md",
     "Exploitation/Binary-Exploitation/Binary-Exploitation-Enumeration.md",
     "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
@@ -143,28 +147,11 @@
     "Coding-Scripting-Programming/Malware/Malware-Techniques-.md",
     "Coding-Scripting-Programming/Malware/Malware-Techniques",
     "Cryptography-And-Authentication/De-Or-En-Cryption.md",
-    "Reverse-Engineering/Malware-Analysis/Dy.md",
-    "Reverse-Engineering/Malware-Analysis/Malware-Analysis.md",
-    "Tools/Reverse-Engineering/Regshot.md",
-    "Post-Exploitation/Shadow-Networking/Pivoting-Tunnelling-And-Redirection-Master-Class-Darnell-And-Thurner-Notes.md",
     "Post-Exploitation/Living-Off-The-Land",
     "Post-Exploitation/Shadow-Networking",
-    "Tools/SysInternals/ProcExp/Sysinternals-ProcExp.md",
-    "Coding-Scripting-Programming/Malware/Malware-Techniques/Malware-Techniques-Process-Hollowing.md",
-    "Coding-Scripting-Programming/Malware/Malware-Techniques/Malware-Techniques-Process-Masquerading.md",
-    "Tools/SysInternals/ProcMon/Sysinternals-ProcMon.md",
     "Tools/SysInternals/ProcExp",
-    "Tools/Reverse-Engineering/API-Monitor.md",
-    "Tools/Reverse-Engineering/API-Logger.md",
-    "Windows/Windows-Commands/Windows-Commands.md",
-    "Reconnaissance/Active-Information-Gathering/OS-Detection/OS-Detection.md",
     "Images/procmonbar.png",
     "Social-Engineering/Body-Language",
-    "Exploitation/Windows/Active-Directory/Ticket-Attacks",
-    "Tools/Network-Management",
-    "Tools/LLMNR",
-    "Tools/AD-Offensive",
-    "Tools/EDR-Bypass",
     "Images/ss64-windowsgroups-default-admin-users-and-groups.png",
     "Images/jackmasa-mind-map.png",
     "Images/azslotswappedsettingsvsslotspecificsettings.png",

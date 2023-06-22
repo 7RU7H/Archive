@@ -1,9 +1,21 @@
 # SQLMAP
+
 This is going to just the help page until I passed OSCP and most to clean up other SQLi related files.
 
-## Burp plus SQLMap
-Catch request -> right-click -> Save item
+Burp plus SQLMap
+`Proxy request -> right-click -> Save item`
+```bash
 sqlmap -r filename
+```
+```python
+-p # parametre
+--privileges # db shell privileges
+--random-agent # always good because sqlmap states its sqlmap so WAF will catch it
+```
+```bash
+sqlmap --eval "python code to dynamical calculate parametres of sql quiery"
+```
+
 
 ```bash
 Options:
@@ -84,10 +96,4 @@ Options:
     These options do not fit into any other category
 
     --wizard            Simple wizard interface for beginner users
-```
-
-```python
--p # parametre
---privileges # db shell privileges
---random-agent # always good because sqlmap states its sqlmap so WAF will catch it
 ```

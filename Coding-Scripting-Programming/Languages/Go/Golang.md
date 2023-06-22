@@ -60,6 +60,10 @@ echo "export GOBIN=\"$GOPATH/bin\"" | tee -a ~/.profile
 
 [OWASP's Go-SCP](https://github.com/OWASP/Go-SCP) is a *"Go programming language secure coding practices guide"*
 
+## Malware 
+
+[[Go-Malware-Writing-For-Windows]]
+
 ## References
 
 [Official Compilation Tutorial](https://go.dev/doc/tutorial/compile-install)
