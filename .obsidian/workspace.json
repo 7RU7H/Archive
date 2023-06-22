@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Coding-Scripting-Programming/Programming-Paradigms/Power-Of-10-Rules.md",
+                "file": "Exploitation/Windows/Active-Directory/ACL-Abuse/WriteDacl.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Coding-Scripting-Programming/Programming-Paradigms/Power-Of-10-Rules.md",
+                "file": "Exploitation/Windows/Active-Directory/ACL-Abuse/WriteDacl.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,8 +115,18 @@
   },
   "active": "d845b38410977fc2",
   "lastOpenFiles": [
-    "Linux/Linux-Commands/Linux-Module-Commands.md",
+    "Exploitation/Windows/Active-Directory/ACL-Abuse/ACL-Abuse.md",
+    "Exploitation/Windows/Active-Directory/ACL-Abuse/WriteDacl.md",
+    "Tools/Host-Privilege-Escalation/Windows/Standin.md",
+    "Persistence/Linux-Persistence.md",
+    "Tools/Host-Privilege-Escalation/Linux",
+    "Tools/Host-Privilege-Escalation/Windows",
+    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/File-Transfers.md",
+    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Linux-File-Transfers.md",
+    "README.md",
+    "Alternate-Resources.md",
     "Coding-Scripting-Programming/Programming-Paradigms/Power-Of-10-Rules.md",
+    "Linux/Linux-Commands/Linux-Module-Commands.md",
     "Linux/Linux-Commands/Linux-Memory-Commands.md",
     "Tools/Cross-OS/Exiftool.md",
     "Tools/Web-Application/SQLmap-CheatSheet.md",
@@ -138,20 +148,10 @@
     "Coding-Scripting-Programming/Languages/Go/Golang.md",
     "Cloud/Cloud-Security.md",
     "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Maintenance/Azure-Administration-Azure-Monitor.md",
-    "Hardware/FlipperZero/FlipperZero.md",
-    "Reverse-Engineering/Malware-Analysis/Dynamic-Malware-Analysis.md",
-    "APIs/API-Hacking.md",
-    "Exploitation/Binary-Exploitation/Binary-Exploitation-Enumeration.md",
-    "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
-    "Coding-Scripting-Programming/Malware/Malware-Techniques/Static-Analysis-Evasion-Techniques.md",
-    "Coding-Scripting-Programming/Malware/Malware-Techniques/Dynamic-Analysis-Evasion.md",
-    "Reverse-Engineering/Malware-Analysis/Static-Malware-Analysis.md",
     "Coding-Scripting-Programming/Malware/Malware-Techniques",
     "Post-Exploitation/Living-Off-The-Land",
     "Post-Exploitation/Shadow-Networking",
-    "Tools/SysInternals/ProcExp",
     "Images/procmonbar.png",
-    "Social-Engineering/Body-Language",
     "Images/ss64-windowsgroups-default-admin-users-and-groups.png",
     "Images/jackmasa-mind-map.png",
     "Images/azslotswappedsettingsvsslotspecificsettings.png",
