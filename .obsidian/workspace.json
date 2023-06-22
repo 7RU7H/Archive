@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/Cross-OS/Exiftool.md",
+                "file": "Coding-Scripting-Programming/Programming-Paradigms/Power-Of-10-Rules.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/Cross-OS/Exiftool.md",
+                "file": "Coding-Scripting-Programming/Programming-Paradigms/Power-Of-10-Rules.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,8 +115,11 @@
   },
   "active": "d845b38410977fc2",
   "lastOpenFiles": [
-    "Tools/Web-Application/SQLmap-CheatSheet.md",
+    "Linux/Linux-Commands/Linux-Module-Commands.md",
+    "Coding-Scripting-Programming/Programming-Paradigms/Power-Of-10-Rules.md",
+    "Linux/Linux-Commands/Linux-Memory-Commands.md",
     "Tools/Cross-OS/Exiftool.md",
+    "Tools/Web-Application/SQLmap-CheatSheet.md",
     "Tools/Data-Processing/Searching-Through-File-Tricks.md",
     "Tools/Detection-And-Monitoring",
     "Tools/Data-Processing",
@@ -137,16 +140,13 @@
     "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Maintenance/Azure-Administration-Azure-Monitor.md",
     "Hardware/FlipperZero/FlipperZero.md",
     "Reverse-Engineering/Malware-Analysis/Dynamic-Malware-Analysis.md",
-    "Linux/Linux-Commands/Linux-Module-Commands.md",
     "APIs/API-Hacking.md",
     "Exploitation/Binary-Exploitation/Binary-Exploitation-Enumeration.md",
     "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
     "Coding-Scripting-Programming/Malware/Malware-Techniques/Static-Analysis-Evasion-Techniques.md",
     "Coding-Scripting-Programming/Malware/Malware-Techniques/Dynamic-Analysis-Evasion.md",
     "Reverse-Engineering/Malware-Analysis/Static-Malware-Analysis.md",
-    "Coding-Scripting-Programming/Malware/Malware-Techniques-.md",
     "Coding-Scripting-Programming/Malware/Malware-Techniques",
-    "Cryptography-And-Authentication/De-Or-En-Cryption.md",
     "Post-Exploitation/Living-Off-The-Land",
     "Post-Exploitation/Shadow-Networking",
     "Tools/SysInternals/ProcExp",

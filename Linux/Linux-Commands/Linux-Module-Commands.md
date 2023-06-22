@@ -117,6 +117,13 @@ gzip -d file.gz		decompress file
 -f	continuously print new log entries
 ```
 
+#### inotifywait
+[inotifywait](https://linux.die.net/man/1/inotifywait) waits for changes to files
+```bash
+inotifywait
+```
+
+
 #### play
 ```bash 
 # This feels like an easter egg
@@ -367,3 +374,4 @@ echo %42%65%20%63%61%72%65%66%75%6c%20%77%68%61%74%2f%68%6f%77%20%79%6f%75%20%64
 ## References
 [Stackoverflow Wc a directory](https://stackoverflow.com/questions/35559648/how-can-i-count-the-number-of-words-in-a-directory-recursively)
 [@climagic](@climagic)
+[inotifywait](https://linux.die.net/man/1/inotifywait) 
