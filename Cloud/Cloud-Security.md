@@ -192,13 +192,33 @@ Storage is not Archival (Backup)
 
 ## Security Through Monitoring and Logging
 
-## Security Through Backup Management
+Good log management
+- Centralised 
+- Pushing for more than the default held time for logs
 
+[[Azure-Administration-Azure-Monitor]]
+- Azure Monitor Logs
+- Azure Log Workspaces
+- Azure Log Agent
+
+[[AWS-Defined]] Logging:
+- Identity & Access Management: Basic logging features related to access management, e.g. logs credential reports of user accounts.
+- CloudTrail: Logs all API calls made to AWS resources.
+- CloudWatch: Monitors the entire cloud infra and informs about applications status performance changes, ensuring better resource utilisation.
+- GuardDuty: Ensures continuous monitoring of malicious activity and unauthorised behaviour.
+
+## Security Through Backup Management
 
 
 ## Security Through Disaster Management
 
+
 ## Security Through Patching
+
+[[Azure-Automation]] 
+- Update Agent
+
+AWS - Systems Manager
 
 ## Security Through Personnel Capabilities
 

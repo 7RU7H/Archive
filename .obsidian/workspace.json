@@ -128,6 +128,8 @@
   },
   "active": "079f0d38b8af7864",
   "lastOpenFiles": [
+    "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Maintenance/Azure-Administration-Azure-Monitor.md",
+    "Cloud/Cloud-Security.md",
     "Hardware/FlipperZero/FlipperZero.md",
     "Reverse-Engineering/Malware-Analysis/Dynamic-Malware-Analysis.md",
     "Linux/Linux-Commands/Linux-Module-Commands.md",
@@ -156,9 +158,7 @@
     "Tools/Reverse-Engineering/API-Logger.md",
     "Windows/Windows-Commands/Windows-Commands.md",
     "Reconnaissance/Active-Information-Gathering/OS-Detection/OS-Detection.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Important-Linux-Locations.md",
     "Images/procmonbar.png",
-    "Reverse-Engineering/Malware-Analysis/Malware-Sandbox.md",
     "Social-Engineering/Body-Language",
     "Exploitation/Windows/Active-Directory/Ticket-Attacks",
     "Tools/Network-Management",
