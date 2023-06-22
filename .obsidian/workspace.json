@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Hardware/FlipperZero/FlipperZero.md",
+                "file": "Cloud/Cloud-Security.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Hardware/FlipperZero/FlipperZero.md",
+                "file": "Cloud/Cloud-Security.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -128,6 +128,7 @@
   },
   "active": "079f0d38b8af7864",
   "lastOpenFiles": [
+    "Hardware/FlipperZero/FlipperZero.md",
     "Reverse-Engineering/Malware-Analysis/Dynamic-Malware-Analysis.md",
     "Linux/Linux-Commands/Linux-Module-Commands.md",
     "Reverse-Engineering/Malware-Analysis/IDA-Malware-Reverse-Engineering-101-By-Jake-Williams-Notes.md",
@@ -158,7 +159,6 @@
     "Post-Exploitation/Privilege-Escalation/Linux/Important-Linux-Locations.md",
     "Images/procmonbar.png",
     "Reverse-Engineering/Malware-Analysis/Malware-Sandbox.md",
-    "Coding-Scripting-Programming/Malware/Malware-Techniques/Malware-Techniques-Obfuscation.md",
     "Social-Engineering/Body-Language",
     "Exploitation/Windows/Active-Directory/Ticket-Attacks",
     "Tools/Network-Management",
