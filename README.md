@@ -2,7 +2,7 @@
 
 ## Overview 
 
-Hacking Methodology and Mechanical/Informational/Computational Art, Cheatsheats, Conceptual-Breakdowns - Now with pages that are spellchecked! 
+Hacking Methodology, Cheatsheets, Conceptual-Breakdowns - Now with pages that are spellchecked! 
 
 Very open to feedback and criticism. Hopeful in the future once I have made a rest API to simple applications I will make public, open source contribution version that would include addition functionality to the API to merge and archive comparative versioning to allow individual to build there own out of information the added or learnt rather than just a big Wikipedia of stuff that is there that allows you to track and make the connections for yourself. This is due to my person educational experience just making this.
 

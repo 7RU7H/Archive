@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exploitation/Windows/Active-Directory/ACL-Abuse/WriteDacl.md",
+                "file": "Cloud/Kubernetes/Kubernetes-Hacking.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exploitation/Windows/Active-Directory/ACL-Abuse/WriteDacl.md",
+                "file": "Cloud/Kubernetes/Kubernetes-Hacking.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,15 +115,22 @@
   },
   "active": "d845b38410977fc2",
   "lastOpenFiles": [
+    "Tools/Network-Based/Chisel.md",
+    "Cloud/Kubernetes/Kubernetes-Hacking.md",
+    "README.md",
+    "Persistence/Linux-Persistence.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+    "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Privilege-Escalation.md",
+    "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Offensive-Enumeration-With-WMI.md",
+    "Post-Exploitation/Post-Exploitation-Enumeration/Active-Directory/Active-Directory-Footholding.md",
     "Exploitation/Windows/Active-Directory/ACL-Abuse/ACL-Abuse.md",
     "Exploitation/Windows/Active-Directory/ACL-Abuse/WriteDacl.md",
-    "Tools/Host-Privilege-Escalation/Windows/Standin.md",
-    "Persistence/Linux-Persistence.md",
+    "Tools/AD-Offensive/Standin.md",
     "Tools/Host-Privilege-Escalation/Linux",
     "Tools/Host-Privilege-Escalation/Windows",
     "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/File-Transfers.md",
     "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Linux-File-Transfers.md",
-    "README.md",
     "Alternate-Resources.md",
     "Coding-Scripting-Programming/Programming-Paradigms/Power-Of-10-Rules.md",
     "Linux/Linux-Commands/Linux-Module-Commands.md",
@@ -141,13 +148,6 @@
     "Tools/Cross.md",
     "Tools/Network-Based/Network-Mangement.md",
     "Tools/Network-Management/Untitled.md",
-    "Tools/Useful-Online-Software/Explainshell.md",
-    "Persistence/Windows-Persistence/Windows-Persistence.md",
-    "Coding-Scripting-Programming/Languages/Rust/Rust.md",
-    "Coding-Scripting-Programming/Languages/Ruby/Useful_Ruby.md",
-    "Coding-Scripting-Programming/Languages/Go/Golang.md",
-    "Cloud/Cloud-Security.md",
-    "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Maintenance/Azure-Administration-Azure-Monitor.md",
     "Coding-Scripting-Programming/Malware/Malware-Techniques",
     "Post-Exploitation/Living-Off-The-Land",
     "Post-Exploitation/Shadow-Networking",
