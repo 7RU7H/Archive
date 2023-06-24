@@ -13,7 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud/Kubernetes/Kubernetes-Hacking.md",
+                "file": "Tools/Debuggers/x64dbg.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "fd8420f889e42ab7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/Network-Based/Chisel.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cloud/Kubernetes/Kubernetes-Hacking.md",
+                "file": "Tools/Debuggers/x64dbg.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,8 +127,13 @@
   },
   "active": "d845b38410977fc2",
   "lastOpenFiles": [
-    "Tools/Network-Based/Chisel.md",
+    "Coding-Scripting-Programming/Malware/Useful-Functions-And-Syscalls.md",
+    "Tools/Debuggers/x64dbg.md",
+    "Reverse-Engineering/Anti-Reverse-Engineering/Anti-Reverse-Engineering.md",
+    "Reverse-Engineering/Anti-Reverse-Engineering",
     "Cloud/Kubernetes/Kubernetes-Hacking.md",
+    "Tools/Debuggers",
+    "Tools/Network-Based/Chisel.md",
     "README.md",
     "Persistence/Linux-Persistence.md",
     "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
@@ -145,12 +162,7 @@
     "Tools/Malware",
     "Tools/Vulnerability-Management",
     "Tools/Cross-OS",
-    "Tools/Cross.md",
-    "Tools/Network-Based/Network-Mangement.md",
-    "Tools/Network-Management/Untitled.md",
     "Coding-Scripting-Programming/Malware/Malware-Techniques",
-    "Post-Exploitation/Living-Off-The-Land",
-    "Post-Exploitation/Shadow-Networking",
     "Images/procmonbar.png",
     "Images/ss64-windowsgroups-default-admin-users-and-groups.png",
     "Images/jackmasa-mind-map.png",

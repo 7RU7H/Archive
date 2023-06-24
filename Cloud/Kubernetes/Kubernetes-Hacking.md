@@ -103,7 +103,6 @@ spec:
   containers:
   - name: everything-allowed-pod
     image: ubuntu
-    imagePullPolicy: IfNotPresent 
     securityContext:
       privileged: true
     volumeMounts:
@@ -118,6 +117,12 @@ spec:
       path: /
 ```
 
+To force image pulling or not if the cluster lack internet connection set and set `image:`  to locally cached image.
+```yaml
+imagePullPolicy: IfNotPresent 
+imagePullPolicy: Never 
+imagePullPolicy: IfNotPresent 
+```
 
 
 Beware:
@@ -154,10 +159,11 @@ Pod breakout
 
 Privilege Escape
 
-Cloud Hackinghttps://tryhackme.com/room/insekube
+Cloud Hacking
 
 ## References
 
 [Online YAML prettifier](https://onlineyamltools.com/prettify-yaml)
 [Official Kubernetes download kubectl binaries](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/);
 [THM Insekube Room](https://tryhackme.com/room/insekube)
+[Unofficial Kubernetes Documentation](https://unofficial-kubernetes.readthedocs.io/en/latest/)
