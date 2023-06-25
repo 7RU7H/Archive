@@ -51,6 +51,13 @@ sed -e "s/\b\(.\)/\l\1/g"
 ls -1 | grep -v '$unwantdir\|proc'
 ```
 
+Create bash variables from sequence, useful in using `awk`
+```bash
+for i in {1..10}; do echo "\"\$$i\" "; done | tr -d '\n'
+# returns "$1" "$2" "$3" "$4" "$5" "$6" "$7" "$8" "$9" "$10"
+```
+
+
 ## References
 
 [Stackoverflow uppercasing first letter of words using sed](https://stackoverflow.com/questions/1538676/uppercasing-first-letter-of-words-using-sed)
