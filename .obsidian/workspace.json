@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "ProcMon",
+                "query": "ffuf",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -115,8 +115,11 @@
   },
   "active": "a615c9387ecec740",
   "lastOpenFiles": [
-    "Linux/Linux-Commands/Linux-One-Liners-To-Rule-Them-All.md",
+    "Post-Exploitation/Stealth/Linux-Stealth.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+    "Tools/Content-Discovery-Tools/FFUF-Cheatsheet.md",
     "Cloud/Docker/Docker.md",
+    "Linux/Linux-Commands/Linux-One-Liners-To-Rule-Them-All.md",
     "Reconnaissance/Active-Information-Gathering/RPC/RPCClient-Cheatsheet.md",
     "Reconnaissance/Active-Information-Gathering/RPC/RPC-Recon.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
@@ -129,7 +132,6 @@
     "Tools/Debuggers",
     "README.md",
     "Persistence/Linux-Persistence.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
     "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Privilege-Escalation.md",
     "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Offensive-Enumeration-With-WMI.md",
     "Post-Exploitation/Post-Exploitation-Enumeration/Active-Directory/Active-Directory-Footholding.md",
@@ -143,8 +145,6 @@
     "Alternate-Resources.md",
     "Coding-Scripting-Programming/Programming-Paradigms/Power-Of-10-Rules.md",
     "Linux/Linux-Commands/Linux-Module-Commands.md",
-    "Linux/Linux-Commands/Linux-Memory-Commands.md",
-    "Tools/Cross-OS/Exiftool.md",
     "Tools/Detection-And-Monitoring",
     "Tools/Data-Processing",
     "Tools/Malware",

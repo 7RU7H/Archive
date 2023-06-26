@@ -73,26 +73,171 @@ sudo docker run -it --rm --name package -p $port:$port $package/$package
 
 [Docker setup of kali for hackers consider this article](https://www.pentestpartners.com/security-blog/docker-for-hackers-a-pen-testers-guide/), that Hackers *"can use Docker to build and configure an environment containing just the tools we need, and then launch a container and work from that. Our environment will always be exactly the same as it’s launched from an image, and we can easily launch multiple containers at the same time as they don’t consume a lot of resources...allows us to have a self-contained testing environment for each job or test or random-tinker, where any processes, installs and so on are all local to that container and don’t pollute your “Testing VM” or host OS."*
 
-
 Dockerfiles with Build is not that same as Compose with .yaml
 Docker `build` is:
 - for single containers 
 - uses Dockerfiles 
-Docker `compose` is for multiple containers 
+Docker `compose`is for multiple containers to interact with each other while needing to run in isolation from one another.
 - for **running** multiple containers on a single host 
 - uses .yaml composition files
 - [see](https://docs.docker.com/compose/gettingstarted/)
 
-```
+[Dockerfiles](https://docs.docker.com/engine/reference/builder/) have the syntax: `INSTRUCTION arguments`
 
-FROM
-RUN
+```dockerfile
+# Parse directives
+# Parser directives are optional, non-case-sensitive can noly be used once 
+# Do add layers or are shown up as build step, they affect how the subsequent lines are handled
+# directive=value
+
+# Comment
+ # Leading whitespace before comments and instructions are ignored
+# INSTRUCTION arguments
+
+# From initializes a new build stage and sets the base image
+FROM IMAGE:latest
+# Run a executable or shell command
+RUN <command> 
+RUN <executable> 
+# Security level either: insecure or sandbox
+RUN --security=
+# Netwokr either: default, none or host
+RUN --network=
+# Copy
+# ADD != COPY; COPY is basic copy
+# either copies a file(s), directories
 COPY
+COPY [--chown=<user>:<group>] [--chmod=<perms>] <src>... <dest>
+COPY [--chown=<user>:<group>] [--chmod=<perms>] ["<src>",... "<dest>"]
+# WORKDIR set the current working directory
 WORKDIR
+# CMD is either a executable, parametres for an ENTRYPOINT or shell command and parametres
 CMD
+# Export network ports one line per protocol
 EXPOSE
-
+EXPOSE 443/tcp
+EXPOSE 443/udp
+# LABEL adds metadata to an image
+LABEL 
+# ENV Sets environment variables 
+ENV
+# ADD 
+# ADD != COPY; ADD: tar extractions, remote url support
+# either copies a file(s), directories or remote file URLs from src to dst
+# Two forms:
+ADD [--chown=<user>:<group>] [--chmod=<perms>] [--checksum=<checksum>] <src>... <dest>
+ADD [--chown=<user>:<group>] [--chmod=<perms>] ["<src>",... "<dest>"]
+# ENTRYPOINT allows you to configure a container that will run as an executable
+ENTRYPOINT
+# VOLUME creates a mount point with the specified name and marks it as holding externally mounted volumes from native host or other containers
+VOLUME
+# USER sets the user name (or UID) and optionally the user group (or GID) to use as the default user and group for the remainder of the current stage of the build
+USER
+# Create variables within a Dockerfile
+ARG IMAGE=favouriteOS
+# ONBUILD adds to the image a trigger instruction to be executed at a later time,
+ONBUILD
+# STOPSIGNAL sets the system call signal that will be sent to the container to exit
+STOPSIGNAL
+# HEALTHCHECK 
+# Either disable any healthcheck or check from with inside a container
+HEALTHCHECK NONE
+HEALTHCHECK [OPTIONS] CMD command
+SHELL
+# MAINTAINER -- deprecated
 ```
+
+Set a name and destination of the docker container.
+```bash
+docker build -t NAME <destination>
+```
+
+Reducing container size:
+- Only install essential packages
+- Removing cached files
+- Using minimal base OS with `FROM`
+- Minimise the number of layers to the Docker file; `RUN <all installations on one line>`
+
+#### Docker Compose
+
+Docker `compose` is for multiple containers to interact with each other while needing to run in isolation from one another.
+- for **running** multiple containers on a single host 
+- uses [YAML](https://yaml.org) (.yaml or .yml) composition files
+- [see](https://docs.docker.com/compose/gettingstarted/)
+
+*"The Compose file is a [YAML](https://yaml.org) file defining services, networks, and volumes for a Docker application. The latest and recommended version of the Compose file format is defined by the [Compose Specification](https://github.com/compose-spec/compose-spec/blob/master/spec.md)."* - [From](https://docs.docker.com/compose/compose-file/)
+
+Docker compose command
+```bash
+# (re)create/build and start fleet of containers specifed in a compositionFile.yaml
+docker-compose up 
+# Start prebuilt containers specifed in a compositionFile.yaml
+docker-compose start
+# Stop and delete containers specifed in a compositionFile.yaml
+docker-compose down
+# Just stop coantiners containers specifed in a compositionFile.yaml
+docker-compose stop 
+# Just build containers specifed in a compositionFile.yaml
+docker-compose build
+```
+
+This an adapted docker-compose.yml from the [THM Intro to Docker room](https://tryhackme.com/room/introtodockerk8pdqk) and the [Compose spec](https://github.com/compose-spec/compose-spec/blob/master/spec.md)
+```yaml
+# version of the compose file that must be at the top of file
+version: '0.1'
+services:  # container's configuration name
+  frontend:
+    build: ./webapp
+    networks:
+      - front-tier
+      - back-tier
+    ports:
+      - '443:443'
+    configs:
+      - httpd-config
+    secrets:
+      - server-certificate
+
+  backend:
+    image: 'mysql:latest'
+    networks:
+      - back-tier
+    environment: # set environment variables (not secure!)
+      - MYSQL_DATABASE=ecommerce
+      - MYSQL_USERNAME=root
+      - MYSQL_ROOT_PASSWORD=dontputpasswordsintheenvironmentvars
+    volumes:
+      - db-data:/etc/data
+  appgateway: 
+    image: 'owasp/application-gateway:latest'
+    networks:
+      - front-tier
+      - back-tier
+      
+networks: # Containers must be part of a network this section defines the networks
+  front-tier: {}
+  back-tier: {}
+
+configs:
+  httpd-config:
+    external: true
+
+secrets:
+  server-certificate:
+    external: true
+
+volumes:
+  db-data:
+    driver: flocker
+    driver_opts:
+      size: "10GiB"
+```
+
+#### Docker Socket
+
+Docker sockets allow for Interprocess Communication (IPC).
+
+*"By default, Docker runs through a non-networked UNIX socket. It can also optionally communicate using SSH or a TLS (HTTPS) socket."* - [Protect the Docker daemon socket](https://docs.docker.com/engine/security/protect-access/)
 
 
 
@@ -114,3 +259,6 @@ EXPOSE
 [THM Intro to Containerisation](https://tryhackme.com/room/introtocontainerisation)
 [THM Intro to Docker](https://tryhackme.com/room/introtodockerk8pdqk)
 [Docker compose](https://docs.docker.com/compose/gettingstarted/)
+[Dockerfile reference](https://docs.docker.com/engine/reference/builder/#onbuild)
+[Compose Specification](https://github.com/compose-spec/compose-spec/blob/master/spec.md)
+[Composition File](https://docs.docker.com/compose/compose-file/)
