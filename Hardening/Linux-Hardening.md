@@ -98,7 +98,7 @@ sudo mount /dev/mapper/EDCdrive /media/secure-USB
 # Check Settings:
 sudo cryptsetup luksDump /dev/sdb1
 ```
-For more related USB topic consider [[USB-Maintaince]]
+For more related USB topic consider [[USB-Maintenance]]
 
 Single file encryption and decryption
 ```bash
