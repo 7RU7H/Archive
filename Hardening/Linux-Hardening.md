@@ -242,6 +242,14 @@ badwords=(space seperated list of words that should be used in passwords)
 retry=2 # retry prompt amount
 ```
 
+Prevent Wildcard abuse of sudo 
+```bash
+ls -la /etc/sudoers.d 
+sudo vim $USER
+# Instead *
+sed 's/*/[a-zA-Z0-9_-]/g' /etc/sudoers.d/$USER
+```
+
 ## Sofware and Services
 
 - Do not run services as root
@@ -308,7 +316,7 @@ For [[Debian-Package-Management]] [logcheck](https://www.debian.org/doc/manuals/
 		- `/var/log/apt/history.log` - command history
 		- `/var/log/apt/term.log` - terminal output
 
-## Disto Specific Guides
+## Distribution Specific Guides
 
 - [Fedora](https://docs.fedoraproject.org/en-US/fedora/17/html/Security_Guide/chap-Security_Guide-Basic_Hardening.html)
 - [[Kali-Hardening]]
@@ -334,3 +342,4 @@ For [[Debian-Package-Management]] [logcheck](https://www.debian.org/doc/manuals/
 [Ubuntu](https://help.ubuntu.com/community/LinuxLogFiles)  
 [logcheck](https://www.debian.org/doc/manuals/securing-debian-manual/log-alerts.en.html)
 [Debian Hardening Guide](https://www.debian.org/doc/manuals/securing-debian-manual/)
+[ippsec.rocks](https://ippsec.rocks)

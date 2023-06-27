@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Hardware/Flipper-Zero/Flipper-Zero.md",
+                "file": "Exploitation/Server-Side/Server-Side-XSS.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Hardware/Flipper-Zero/Flipper-Zero.md",
+                "file": "Exploitation/Server-Side/Server-Side-XSS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,10 +115,14 @@
   },
   "active": "a615c9387ecec740",
   "lastOpenFiles": [
+    "Hardening/Linux-Hardening.md",
+    "Exploitation/Server-Side/Server-Side-XSS.md",
+    "Exploitation/Server-Side",
+    "ippsec.rocks.md",
+    "Hardware/Flipper-Zero/Flipper-Zero.md",
     "Linux/Linux-Commands/Linux-Users-And-Group-Commands.md",
     "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
     "Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Blue-KOTH-Battlegrounds-Cheatsheet-Linux.md",
-    "Hardware/Flipper-Zero/Flipper-Zero.md",
     "Network/Network-Theory/Network-Protocols/DNS-Defined.md",
     "README.md",
     "Hardware/Memory-Extraction.md",
@@ -138,9 +142,6 @@
     "Linux/Linux-Commands/Linux-One-Liners-To-Rule-Them-All.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
     "Tools/Network-Based/Chisel.md",
-    "Tools/Debuggers/x64dbg.md",
-    "Coding-Scripting-Programming/Malware/Useful-Functions-And-Syscalls.md",
-    "Reverse-Engineering/Anti-Reverse-Engineering/Anti-Reverse-Engineering.md",
     "Reverse-Engineering/Anti-Reverse-Engineering",
     "Tools/Debuggers",
     "Tools/Host-Privilege-Escalation/Linux",
@@ -150,7 +151,6 @@
     "Tools/Malware",
     "Tools/Vulnerability-Management",
     "Tools/Cross-OS",
-    "Coding-Scripting-Programming/Malware/Malware-Techniques",
     "Images/procmonbar.png",
     "Images/ss64-windowsgroups-default-admin-users-and-groups.png",
     "Images/jackmasa-mind-map.png",

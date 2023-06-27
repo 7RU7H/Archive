@@ -11,8 +11,7 @@ Consider watching [Pen Ace's Flipper Zero - Starter Guide](https://www.youtube.c
 
 [awesome-flipperzero](https://github.com/djsime1/awesome-flipperzero)
 
-## Community Addition
-
+## Community Additions
 
 
 [UberGuidoZ - Github Flipper repository](https://github.com/UberGuidoZ/Flipper) *"Playground (and dump) of stuff I make or modify for the Flipper Zero"*
