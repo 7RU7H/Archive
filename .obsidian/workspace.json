@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud/Docker/Docker.md",
+                "file": "Web-Application-Hacking/OWASP-Top-10-Historic-Definitions.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "ffuf",
+                "query": "JWT",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cloud/Docker/Docker.md",
+                "file": "Web-Application-Hacking/OWASP-Top-10-Historic-Definitions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,13 +115,19 @@
   },
   "active": "a615c9387ecec740",
   "lastOpenFiles": [
+    "Web-Application-Hacking/Javascript/Javascript-Cookie-Abuse.md",
+    "Web-Application-Hacking/OWASP-Top-10-Historic-Definitions.md",
+    "Web-Application-Hacking/JSON/JSON-Web-Tokens.md",
+    "Alternate-Resources.md",
+    "Hardware/Hardware-Maintance/USB-Maintaince.md",
+    "Reconnaissance/Active-Information-Gathering/RPC/RPC-Recon.md",
+    "Reconnaissance/Active-Information-Gathering/RPC/RPCClient-Usage.md",
+    "Reconnaissance/Active-Information-Gathering/RPC/RPCClient-Cheatsheet.md",
+    "Cloud/Docker/Docker.md",
     "Post-Exploitation/Stealth/Linux-Stealth.md",
     "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
     "Tools/Content-Discovery-Tools/FFUF-Cheatsheet.md",
-    "Cloud/Docker/Docker.md",
     "Linux/Linux-Commands/Linux-One-Liners-To-Rule-Them-All.md",
-    "Reconnaissance/Active-Information-Gathering/RPC/RPCClient-Cheatsheet.md",
-    "Reconnaissance/Active-Information-Gathering/RPC/RPC-Recon.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
     "Tools/Network-Based/Chisel.md",
     "Tools/Debuggers/x64dbg.md",
@@ -137,14 +143,8 @@
     "Post-Exploitation/Post-Exploitation-Enumeration/Active-Directory/Active-Directory-Footholding.md",
     "Exploitation/Windows/Active-Directory/ACL-Abuse/ACL-Abuse.md",
     "Exploitation/Windows/Active-Directory/ACL-Abuse/WriteDacl.md",
-    "Tools/AD-Offensive/Standin.md",
     "Tools/Host-Privilege-Escalation/Linux",
     "Tools/Host-Privilege-Escalation/Windows",
-    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/File-Transfers.md",
-    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Linux-File-Transfers.md",
-    "Alternate-Resources.md",
-    "Coding-Scripting-Programming/Programming-Paradigms/Power-Of-10-Rules.md",
-    "Linux/Linux-Commands/Linux-Module-Commands.md",
     "Tools/Detection-And-Monitoring",
     "Tools/Data-Processing",
     "Tools/Malware",

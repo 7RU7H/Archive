@@ -7,8 +7,17 @@ ls /dev/disk/by-id # Check the disk name
 sudo dd if=/dev/disk/by-id/$DISK_ID status=progress | gzip -c > ~/$BACKUP_NAME.img.gz
 ````
 
-Fix maybe?
+USB for installing one OS
+```bash
+sudo su -
+lsblk
+# Reformat if requried
+sudo mkfs.vfat /dev/$SDA123
+sudo fsck -v -a /dev/disk/by-id/$DISK_ID
+sudo cat Downloads/your.iso > /disk/by-id/$DISK_ID
+```
 
+Fix maybe?
 ```bash
 sudo fsck -v -a /dev/disk/by-id/$DISK_ID
 ```
@@ -63,3 +72,4 @@ sudo cryptsetup luksDump /dev/sdb1
 
 [maketecheasier](https://www.maketecheasier.com/repair-corrupted-usb-drive-linux/)
 [THM Room Linux System Hardening](https://tryhackme.com/room/linuxsystemhardening)
+[Arch Wiki](https://wiki.archlinux.org/title/USB_flash_installation_medium)

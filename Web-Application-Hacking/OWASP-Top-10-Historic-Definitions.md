@@ -81,6 +81,7 @@ Software and data integrity failures relate to code and infrastructure that does
 - [[Upload-Vulnerabilities]]
 - [[Hijacking-Remote-Technology-Repositories]]
 
+
 Integrity of file hashes
 ```bash
 echo "$expectHash" && md5sum $file

