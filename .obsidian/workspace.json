@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exploitation/Windows/Active-Directory/AD-Domain-Exploitation.md",
+                "file": "Security-Disciplines/Secure-Architectures/Governance-And-Regulation.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exploitation/Windows/Active-Directory/AD-Domain-Exploitation.md",
+                "file": "Security-Disciplines/Secure-Architectures/Governance-And-Regulation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -128,8 +128,9 @@
   },
   "active": "4376c237d5cc402e",
   "lastOpenFiles": [
-    "Exploitation/Windows/Active-Directory/AD-Forest-Exploitation.md",
+    "Security-Disciplines/Secure-Architectures/Governance-And-Regulation.md",
     "Exploitation/Windows/Active-Directory/AD-Domain-Exploitation.md",
+    "Exploitation/Windows/Active-Directory/AD-Forest-Exploitation.md",
     "Exploitation/Windows/Active-Directory/AD-Certificate-Exploitation.md",
     "Exploitation/Windows/Active-Directory/AD-DC-Sync-Attack.md",
     "Exploitation/Windows/Active-Directory/AD-Group-Policy-Objects-Exploitation.md",
@@ -154,7 +155,6 @@
     "Web-Application-Hacking/Javascript/Javascript-Cookie-Abuse.md",
     "Web-Application-Hacking/JSON/JSON-Web-Tokens.md",
     "Alternate-Resources.md",
-    "Reconnaissance/Active-Information-Gathering/RPC/RPC-Recon.md",
     "Reverse-Engineering/Anti-Reverse-Engineering",
     "Tools/Debuggers",
     "Tools/Host-Privilege-Escalation/Linux",
