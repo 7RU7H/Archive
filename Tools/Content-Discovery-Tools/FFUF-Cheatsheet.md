@@ -2,7 +2,7 @@
 
 ## Introduction 
 
-[fuff](https://github.com/ffuf/ffuf). is a fast web fuzzer written in Go. Examples of usage [Content discovery](https://github.com/ffuf/ffuf#typical-directory-discovery), [Vhost discovery](https://github.com/ffuf/ffuf#virtual-host-discovery-without-dns-records), [Parameter fuzzing](https://github.com/ffuf/ffuf#get-parameter-fuzzing), [POST data fuzzing](https://github.com/ffuf/ffuf#post-data-fuzzing), [Using external mutator](https://github.com/ffuf/ffuf#using-external-mutator-to-produce-test-cases), [Configuration files](https://github.com/ffuf/ffuf#configuration-files). Already included on BlackArch, Kali, Parrot and Pentoo.
+[fuff](https://github.com/ffuf/ffuf). is a fast web fuzzer written in Go. Examples of usage [Content discovery](https://github.com/ffuf/ffuf#typical-directory-discovery), [Vhost discovery](https://github.com/ffuf/ffuf#virtual-host-discovery-without-dns-records), [Parameter fuzzing](https://github.com/ffuf/ffuf#get-parameter-fuzzing), [POST data fuzzing](https://github.com/ffuf/ffuf#post-data-fuzzing), [Using external mutator](https://github.com/ffuf/ffuf#using-external-mutator-to-produce-test-cases), [Configuration files](https://github.com/ffuf/ffuf#configuration-files). Already included on Black Arch, Kali, Parrot and Pentoo.
 
 ## Basics
 
@@ -23,19 +23,19 @@ woops - will update soon
 Consult [[Wordlists]], [[Wordlist-Library]] and [[Wordlist-Considerations]]
 
 **File extensions**
-/seclists/Discovery/Web-Content/web-extensions.txt
-/seclists/Discovery/Web-Content/raft-medium-words-lowercase.txt
-/seclists/Discovery/Web-Content/raft-medium-directories-lowercase.txt
+`/seclists/Discovery/Web-Content/web-extensions.txt`
+`/seclists/Discovery/Web-Content/raft-medium-words-lowercase.txt`
+`/seclists/Discovery/Web-Content/raft-medium-directories-lowercase.txt`
 
 **Directory/Page Wordlist**
-/seclists/Discovery/Web-Content/directory-list-2.3-small.txt
+`/seclists/Discovery/Web-Content/directory-list-2.3-small.txt`
 
 **Domain Wordlist**
-/seclists/Discovery/DNS/subdomains-top1million-5000.txt
+`/seclists/Discovery/DNS/subdomains-top1million-5000.txt`
 
 **Parameters**
-/seclists/Discovery/Web-Content/burp-parameter-names.txt
-/seclists/Discovery/Web-Content/burp-parameter-names.txt
+`/seclists/Discovery/Web-Content/burp-parameter-names.txt`
+`/seclists/Discovery/Web-Content/burp-parameter-names.txt`
 
 #### Fuzz with special Header
 
@@ -79,9 +79,9 @@ ffuf -u 'http://$IP/path/?FUZZ=1' -c -w /usr/share/seclists/Discovery/Web-Conten
 ```
 If the parameter accepts integers we can use `-w -` to read from STDOUT.
 ```bash
-for i in {0..255}; do echo $i; done | ffuf -u 'http://IP/path/?id=FUZZ' -c -w -mc all -fw 33
+for i in $(seq 1 1000); do echo $i; done | ffuf -u 'http://IP/path/?id=FUZZ' -c -w -mc all -fw 33
 ```
-POST
+`-X` to set the method to a POST request `-d` to provide data like [[Curl-Cheatsheet]] 
 ```bash
 ffuf -w wordlist.txt:FUZZ -u http://$IP/admin/admin.php -X POST -d 'FUZZ=key' -H 'Content-Type: application/x-www-form-urlencoded' -fs $xxx
 ```
@@ -96,12 +96,22 @@ ffuf -w wordlist.txt:FUZZ -u http://$IP/FUZZ -recursion -recursion-depth 1 -e .p
 
 #### Fuzzing for VHosts
 
+Vhosts != Sub domains:
+- Vhosts is subdomain hosted on the same server and has the same IP as the host domain
+	- Vhosts may or may not have public Public DNS records
+- Sub domain is a name server record Parent DNS server and has its own DNS server as child to the parent domain.  
+
 [To match the output of wfuzz at 5:20](https://www.youtube.com/watch?v=U-2nI6wSPOE&t=46s) at  
 ```bash
 ffuf -u http://mydomain.com -H "Host: FUZZ.mydomain.com" -c -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt:FUZZ  -fl $checkToFilter --mc all
 ```
 
 #### Fuzzing for Subdomains
+
+Vhosts != Sub domains:
+- Vhosts is subdomain hosted on the same server and has the same IP as the host domain
+	- Vhosts may or may not have public Public DNS records
+- Sub domain is a name server record Parent DNS server and has its own DNS server as child to the parent domain.  
 ```bash
 ffuf -u http://mydomain.com -c -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt -H 'Host: FUZZ.mydomain.com' -fs 0
 ```
@@ -113,8 +123,6 @@ Reminder to edit the request.req and add FUZZ Field
 # Consider editing size of request to speed up fuzzing
 ffuf -request request.req -request-proto http
 ```
-
-
 
 ## References
 

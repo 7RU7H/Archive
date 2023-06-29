@@ -6,7 +6,7 @@ This is a hub page for *"Brain Hacking*" or ways to improve your cognition.
 [[Black-Box-Method]]
 [[Exercise]]
 [[Hacking-Meta-Hacking-Problems]]
-[[Hacking-The-Thing.md]]
+[[Hacking-The-Thing]]
 [[Improve-Your-Learning]]
 [[Learning-To-Hack]]
 [[Personality]]

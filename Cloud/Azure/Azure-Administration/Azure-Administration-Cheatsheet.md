@@ -503,7 +503,7 @@ Azure Public DNS - [Host your domain in Azure DNS](https://learn.microsoft.com/e
 `Search -> Private DNS Resolver` 
 - provide the required Project Details 
 - For `Inbound Endpoints` and `Outbound Endpoints` require both a name and separate subnet 
-- `Ruleset` - `+ Add rules` to Domain name resolution requests that match will be forwarded to the IP addresses  specified through the endpoint selected
+- `Ruleset` - `+ Add rules` to Domain name resolution requests that match will be forwarded to the IP addresses specified through the endpoint selected
 
 Azure Traffic Manager for the Network Watcher can be used the diagnose issues with Azure DNS. 
 [Creating an Alias Record to support apex domains](https://learn.microsoft.com/en-us/azure/dns/tutorial-alias-tm) 
@@ -514,7 +514,7 @@ Azure Traffic Manager for the Network Watcher can be used the diagnose issues wi
 Common pattern - name resolution for multiple networks, where one is focused on registration and the other resolution.
 `Vnet1 = Registration <-> Azure Private DNS zone records <-> Vnet2 = Resolution`
 
-DNS servers require network peering to resolve IPs if not using AzureDNS
+DNS servers require network peering to resolve IPs if not using Azure DNS
 
 #### VPN Gateways
 
@@ -847,8 +847,8 @@ $pip (Get-AzPublicIpAddress -ResourceGroupName $rgName -Name $lbpipName).IpAddre
 while ($true) { Invoke-WebRequest -Uri "http://$pip" }
 ```
 
-Custom Script Extension (automatically launch and execute virtual machine customization tasks after initial machine configuration - timesout after 90 minutes) - Container with a custom IIS webserver
-- Storage Account with scripts, container for webserver
+Custom Script Extension (automatically launch and execute virtual machine customization tasks after initial machine configuration - times out after 90 minutes) - Container with a custom IIS web server
+- Storage Account with scripts, container for web server
 `VMs -> $Container -> Extensions + Add -> Custom Script Extension -> Upload scripts from Storage Account`
 
 Export Template, custom template for mass use
@@ -1116,7 +1116,7 @@ Deployment Swaps - swap between slots
 	- Continuous deployment
 	- App Services authentication 
 2. If local cache is enabled 
-	- trigger local cache initialization - HTTP request to root `/` on each app 
+	- trigger local cache initialisation - HTTP request to root `/` on each app 
 3. If Auto swap is enabled with custom warm-up trigger `applicationInitialization` (if not specified)
 4. All warmed up? - Swap slots by switching the routing rules for the two slots
 5. Source slot has pre-swap app previously in the target slot, perform the same operation by applying all settings and restarting the instances. No need to to re-route, it is stored
@@ -1136,7 +1136,7 @@ Backup Azure App Service (App configuration settings, File content, connected Da
 Provide the in `App Services -> $App -> Backup `
 
 
-## Azure Containerization
+## Azure Containerisation
 
 Deploy a Windows or Linux Container using Azure Container Instances 
 `Search -> Container Instances -> + Create`
@@ -1150,7 +1150,7 @@ Deploy a Windows or Linux Container using Azure Container Instances
 
 [App Service Plans](https://learn.microsoft.com/en-us/azure/app-service/overview-hosting-plans) are PaaS - supports lots of Languages for gRPC and HTTP related App. 
 - Has a variety of tierings. 
-- It can autoscales nodes - Vertically and Horizonally
+- It can autoscales nodes - Vertically and Horizontally
 - Multiple Apps per Service Plan
 - Deployment slots 
 	- Can be swap with Virtual IPs no route tabling
@@ -2053,7 +2053,6 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 # Install and update Az module to current user 
 Install-Module -Name Az -Scope CurrentUser -Repository PSGallery
 Update-Module -Name Az
-
 ```
 
 Useful commands
