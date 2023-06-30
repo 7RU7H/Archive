@@ -239,17 +239,7 @@ Condense:
 
 
 
-- Host
-	- What security is on host?
-		- Restricted Shell
-		- AV
-		- Are we in a container?
-	- Is it a container?
-		- What Container brand?
-		- What is the network configuration for the container?
-	 - Is it Virtualized?
-		 - Virtualization Software/Hardware?
-			 - Virtual Networking?
+- Host enumeration 
 - What does a `ping`'s `TTL` field indicate?
 	- Host OS?
 	- Network Typology?
@@ -264,9 +254,9 @@ Condense:
 		4. Connected to other DNS servers?
 	- Accessible/Mountable File Shares?
 		1. What is being shared?
-			1. Hardcoded Credentials?
+			1. Hard-coded Credentials?
 			2. Replaced Shortcuts?
-			3. Documents that will openned by unprivileged users?
+			3. Documents that will opened by unprivileged users?
 	- Are there custom ports or protocols?
 	- Are any services running accessible with Default Credentials?  
 
@@ -296,50 +286,137 @@ Condense:
 
 - What accounts are later objectives based on Company Role?
 
-- What is CPU architecture and its implications?
-- Have two is one - one is none? - Multiple shells for stability issues
-- Are you able to run in memory?
-	- If not have you a method of altering the file system records to cleanup and **set a reminder** that you have touched disk?
-- Living Off the Land Binaries?
-- Kernel Version
-- User Hierarchy
-	- Overextended Low Privilege User
-- Group Hierarchy
-	- Nesting?
-		- Misconfiguration in the chain? 
-- File System Permissions
-	- How, where and what is current user allowed to do
-	- Is the executable PATH variable controllable?
-		- Modifiable
-		- Pathing insecure/misconfiguration/fault 
-	- Administrative Files
-		1. Administrative Setup Files not cleaned up?
-		2. Administrative Scripts
-			1. Hardcoded Credentials
-			2. Permissions
-			3. Does script call external binaries, script, etc running as root/system at some point 
-- Third Applications? 
-	1. Does third-party application have installation management rights that affect the file system structure to cause misconfiguration?
-	2. Version have an exploit?
-	3. Permissions on local software libraries used, executable PATH variable? 
-- What services are running?
-	- What is running at high privileges?
-		- Should system or root be running that service?
-		- What is the file system tree surrounding the execution path?
-		- What DLLs is it using?
-			- What is the file system tree surrounding a targetable DLL
-- Networking?
-- What does the segmentation entail for access?
-- What does access is potential gained from using [[Port-Redirection-And-Tunneling]] 
-- If we domain or network joined what ports are exposed to localhost, but not remote host?
-	- Are there in-house usage of non-standard ports?
-		- Port Redirection, Networking and Network Security considerations?
-			- Available services for redirection or can you drop a binary like Chisel?
-	- Is Root/User hosting a network service on a port?
 
-- In-House Applications
-- In-House Scripting
-	1. Hardcoded Credentials
+- Localhost enumeration and assess the need to Privilege Escalation
+	- As operator are you?
+		- Stopping, considering security mechanisms that maybe in place to alert SOC, IR, etc.
+		- Are you meeting objective on a granular level with any action
+		- Gaining situational awareness
+		- Noting effectively 
+			- Pathing affectively
+			- Reducing information overload 
+		- Meeting requirements of stealth or (non)-harmful activities
+		- Assess the value of time in Privilege Escalating locally - should you laterally move?
+	- Are we in the Cloud or On-premises
+	- What security is on host?
+		- Restricted Shell
+		- AV
+		 - Is the host Virtualised?
+		 - Virtualisation Software/Hardware?
+			- Are we in a container?
+				- Is it a container or cluster?
+			- Container/Pod image
+			- What is the network configuration for the container(s)/cluster?
+			- Virtual Networking?
+	- What is CPU architecture and its implications?
+	- Operating System?
+		- [[Linux-Privilege-Escalation]]
+		- [[Windows-Privilege-Escalation-Enumeration]] and [[Windows-Privilege-Escalation-Vectors]]
+	- Have two is one - one is none? - Multiple shells for stability issues
+	- Are you able to run in memory?
+		- If not have you a method of altering the file system records to cleanup and **set a reminder** that you have touched disk?
+	- Living Off the Land Binaries?
+		- Custom and non-default additions including the below
+			- Custom additions are potentially normal, what is normal usage look like to security? 
+		- GTFOBins
+		- [[Windows-Living-Off-The-Land]]
+	- Kernel Version?  - and wait unless it Pwnkit and time saving situation
+	- What services and applications are installed?
+		- What services are running?
+			- Why are they running - purpose of machine?
+			- What is running at high privileges?
+				- Should system or root be running that service?
+				- What is the file system tree surrounding the execution path?
+				- What DLLs is it using?
+					- What is the file system tree surrounding a targetable DLL
+		- Installed Packages and Versions
+			- Third Applications? 
+				1. Does third-party application have installation management rights that affect the file system structure to cause misconfiguration?
+				2. Version have an exploit?
+				3. Permissions on local software libraries used, executable PATH variable? 
+	- User sessions - Who is current logged in? What users recently logged in?
+		- How are is the user logged in?
+			- What is the current time on  
+			- In person
+			- What network protocol - SSH, RDP? 
+	- What users, admins, and groups exist on the system? 
+		- User Hierarchy
+			- Overextended Low Privilege User
+		- Group Hierarchy
+			- Nesting?
+				- Misconfiguration in the chain? 
+		- UAC and sudo-like privileges
+			- User-by-user basis  
+		- What password policies, if any, are enforced on the host? 
+	- File System Permissions
+		- What is readable?
+		- What is writable?
+		- What is executable?
+		- How, where and what is current user allowed to do with the above can this be used to achieve objectives? 
+			- By default
+			- UAC, sePrivilegeTokens, SETUID and SETGID Permissions
+		- Is the executable PATH variable controllable?
+			- Modifiable
+			- Pathing insecure/misconfiguration/fault 
+		- Administrative Files
+			1. Administrative Setup Files not cleaned up?
+			2. Administrative Scripts
+				1. Hardcoded Credentials
+				2. Permissions
+				3. Does script call external binaries, script, etc running as root/system at some point
+		- Important files
+			- What types of interesting information can we find in history, log, and backup files
+				- Backup files - check access, permissions and what is normal 
+				- Can we access the shell `_history` file for any users and can we uncover any thing interesting from their recorded command line history such as passwords?
+			- Configuration files
+				- Can contain credentials
+			- Credential files
+				- Shadow, SAM, SYSTEM hives
+				- Hashes in files non secure locations 
+					- `/etc/passwd` - embedded devices
+					- User files
+					- Configuration files
+			- OS control files 
+				- [[Windows-Registry]] control
+				- `/etc/`, `/usr`, `/var`
+			
+		- User Files
+			- Home directories 
+			- External to home directory owned files
+		- Environment Variables
+			- PATH variable misconfigurations and traversal algorithm issues 
+			- Container credentials 
+			- Container Network information 
+		- Scheduled tasks?
+			- What does the task do and interact with **directing**, **subsequently** and as a **by-product-of-either**?
+			- Are  able to hijack anything on the *entire chain*?
+		- Networking?
+			- What does the segmentation entail for access?
+			- Current IP addressing information    
+			- What sockets are in use?
+			- What sockets are we able to control if any?
+			- Anything interesting in the `/etc/hosts` file?
+		       - Is the host joined to an Active Directory domain?
+			- Are there any interesting network connections to other systems in the internal network or even outside the network?
+			- What does access is potential gained from using [[Port-Redirection-And-Tunneling]] 
+			- If we domain or network joined what ports are exposed to localhost, but not remote host?
+				- Are there in-house usage of non-standard ports?
+					- Port Redirection, Networking and Network Security considerations?
+						- Available services for redirection or can you drop a binary like Chisel?
+				- Is Root/User hosting a network service on a port?
+		- Drives and devices - See Important files
+			- Unmounted File systems 
+			- Additional drives
+		- What is custom that we may be able to take advantage of?
+			- In-House Applications
+			- In-House Scripting
+				1. Hardcoded Credentials
+
+
+
+
+
+
 
 Persistence 
 - Scope?

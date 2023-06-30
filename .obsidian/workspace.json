@@ -25,14 +25,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Security-Disciplines/Secure-Architectures/Governance-And-Regulation.md",
+                "file": "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2d752e40792ff247",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a5be0f93e9078c38",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Hardening/Linux-Hardening.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Security-Disciplines/Secure-Architectures/Governance-And-Regulation.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,11 +150,14 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "4376c237d5cc402e",
+  "active": "2d752e40792ff247",
   "lastOpenFiles": [
+    "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+    "Hardening/Linux-Hardening.md",
+    "Security-Disciplines/Secure-Architectures/Governance-And-Regulation.md",
     "Tools/Content-Discovery-Tools/FFUF-Cheatsheet.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
-    "Security-Disciplines/Secure-Architectures/Governance-And-Regulation.md",
     "Exploitation/Windows/Active-Directory/AD-Domain-Exploitation.md",
     "Exploitation/Windows/Active-Directory/AD-Forest-Exploitation.md",
     "Exploitation/Windows/Active-Directory/AD-Certificate-Exploitation.md",
@@ -140,12 +167,10 @@
     "Tools/C2/Sliver/Sliver-Cheatsheet.md",
     "Virtualization/Proxmox.md",
     "Exploitation/Server-Side/Server-Side-XSS.md",
-    "Hardening/Linux-Hardening.md",
     "Exploitation/Server-Side",
     "ippsec.rocks.md",
     "Hardware/Flipper-Zero/Flipper-Zero.md",
     "Linux/Linux-Commands/Linux-Users-And-Group-Commands.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
     "Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Blue-KOTH-Battlegrounds-Cheatsheet-Linux.md",
     "Network/Network-Theory/Network-Protocols/DNS-Defined.md",
     "README.md",
@@ -154,7 +179,6 @@
     "Hardware/Hardware-Maintance/Hardware-Maintenance.md",
     "Hardware/Hardware-Maintance/USB-Maintenance.md",
     "Web-Application-Hacking/OWASP-Top-10-Historic-Definitions.md",
-    "Web-Application-Hacking/Javascript/Javascript-Cookie-Abuse.md",
     "Reverse-Engineering/Anti-Reverse-Engineering",
     "Tools/Debuggers",
     "Tools/Host-Privilege-Escalation/Linux",

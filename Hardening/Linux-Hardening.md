@@ -1,6 +1,5 @@
 # Hardening
 
-
 ## Physical Security
 
 [[Physical-Security]] for your Linux machine...
@@ -14,6 +13,16 @@ grub2-mkpasswd-pbkdf2
 ```
 
 For [[Kali-Hardening]] LVM encryption is avaliable preinstall.
+
+
+## Snort
+
+[Snort](https://www.snort.org/faq/what-is-snort) - consider [[Snort]] article locally - *"Snort is an open source network intrusion prevention system, capable of performing real-time traffic analysis and packet logging on IP networks. It can perform protocol analysis, content searching/matching, and can be used to detect a variety of attacks and probes, such as buffer overflows, stealth port scans, CGI attacks, SMB probes, OS fingerprinting attempts, and much more."*
+
+
+## Fail2Ban
+
+[Fail2ban](https://github.com/fail2ban/fail2ban) "*scans log files like `/var/log/auth.log` and bans IP addresses conducting too many failed login attempts. It does this by updating system firewall rules to reject new connections from those IP addresses, for a configurable amount of time. Fail2Ban comes out-of-the-box ready to read many standard log files, such as those for sshd and Apache, and is easily configured to read any log file of your choosing, for any error you wish."*
 
 ## AppArmor
 
@@ -190,7 +199,7 @@ nft add fwfilter fwoutput tcp sport 22 accept
 nft list table fwfilter
 ```
 
-For the uncomplicated amongst us there is `ufw` - [[ufw]]
+For the uncomplicated amongst us there is `ufw` - [[ufw]], [Uncomplicated Firewall (ufw)](https://wiki.ubuntu.com/UncomplicatedFirewall)
 
 ## Remote Access
 
@@ -322,6 +331,8 @@ For [[Debian-Package-Management]] [logcheck](https://www.debian.org/doc/manuals/
 - [[Kali-Hardening]]
 - [Debian ](https://www.debian.org/doc/manuals/securing-debian-manual/)
 
+- Consideration to add on research... 
+	- [Exec Shield](https://en.wikipedia.org/wiki/Exec_Shield) 
 
 ## References
 
@@ -343,3 +354,6 @@ For [[Debian-Package-Management]] [logcheck](https://www.debian.org/doc/manuals/
 [logcheck](https://www.debian.org/doc/manuals/securing-debian-manual/log-alerts.en.html)
 [Debian Hardening Guide](https://www.debian.org/doc/manuals/securing-debian-manual/)
 [ippsec.rocks](https://ippsec.rocks)
+[Uncomplicated Firewall (ufw)](https://wiki.ubuntu.com/UncomplicatedFirewall)
+[Snort](https://www.snort.org/faq/what-is-snort) 
+[Fail2ban](https://github.com/fail2ban/fail2ban)
