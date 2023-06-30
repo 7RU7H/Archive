@@ -2,6 +2,8 @@
 
 ## Introduction
 
+Probably for the foreseeable future this article will be a summarised and additive version of [THM Governance & Regulation Room](https://tryhackme.com/room/cybergovernanceregulation), where either rewording for ease of understanding or compression to reduce bloat is the main goal. Additive information from other sources to expands and improves on simplify and summarised information will built in over time. The rationale for this decision is that this documentation is verbose for practical legal implementations and learning it is valuable but time consuming and maybe unnecessary to absolute fluent in, but still valuable to understand.  
+
 #### Introductory Glossary 
 
 - Compliance: 
@@ -89,10 +91,125 @@ From - [THM Governance & Regulation Room](https://tryhackme.com/room/cybergovern
 
 ## Governance Risk and Compliance (GRC)
 
+- Governance component
+	- guiding an organisation by directing:
+		- information security strategy
+			- policies
+			- standards
+			- baselines
+			- frameworks
+- Risk Management component 
+	- identifying, assessing, and prioritising risks
+	- implementing controls and mitigation strategies
+- Compliance component
+	- Ensuring an organisation:
+		- meets its legal, regulatory, and industry obligations 
+		- ...and its activities align with its policies and procedures
 
+Developing GRC program
+- Define the scope and objective
+- Conduct a risk assessment
+- Develop policies and procedures
+- Establish governance processes
+- Implement controls
+- Monitor and measure performance
+- Continuously improve
+
+## Data and Privacy Protection
+
+#### General Data Protection Regulation (GDPR)
+
+The [THM Governance & Regulation Room](https://tryhackme.com/room/cybergovernanceregulation) summarises the [GDPR](https://gdpr-info.eu/) as a data protection law implemented by the European Union on May 2018 to protect personal data. Personal data is "_Any data associated with an individual that can be utilised to identify them either directly or indirectly_". Key points of the law include the following:  
+-  Prior approval must be obtained before collecting any personal data.
+-  Personal data should be kept to a **minimum** and only collected when necessary.
+-  Adequate measures are to be adopted to protect stored personal data.
+
+#### Payment Card Industry Data Security Standard (PCI DSS)
+
+[PCI DSS](https://www.pcisecuritystandards.org/) is focused on maintaining secure card transactions and protecting against data theft and fraud. [PCI_DSS-QRG-v4_0 Document](https://docs-prv.pcisecuritystandards.org/PCI%20DSS/Supporting%20Document/PCI_DSS-QRG-v4_0.pdf)
+
+## NIST special publications
+
+National Institute of Standards and Technology (NIST), US, develops and provides a catalogue of security controls to protect the CIA triad of information systems. They publish a framework of assessments and augmentation for organisations to act on.
+
+- [NIST 800-53](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-53r5.pdf) is a publication titled "Security and Privacy Controls for Information Systems and Organisations"
+	- Control families
+		- Administrative Controls
+			- Audit and accountability
+			- Awareness and Training
+			- Configuration management
+			- Contingency Planning
+			- Incident Response
+			- Maintenance
+			- Program Management
+			- Risk Assessment
+			- Security Assessment and Authorisation
+		- Technical Controls
+			- Access Control
+			- Identification and authentication
+			- System and Communications Protection
+			- System and Information integrity
+			- System and Services Acquisition
+			- System and Services Development
+			- Program System and Services Development
+		- Physical Controls
+			- Personnel Security
+			- Physical and Environmental
+			- Media Protection 
+		- Strategic Controls
+			- Planning
+	- Compliance Best Practices
+		- Discovery and Classify
+		- Map
+		- Manage
+		- Monitor
+- NIST Special Publication 800-63B is a set of guidelines created by the NIST to help organisations establish effective digital identity practices.
+
+## Information Security Management and Compliance
+
+#### ISO/IEC 27001
+
+**ISO 27001** is an internationally recognised standard for requirements to **plan, develop, run, and update** an organisation's Information Security Management System (ISMS). The official ISO/IEC 27001 documents are paid for and can be purchased from this [link](https://www.iso.org/standard/27001). It was developed by International Organisation for Standardisation (ISO) and the International Electrotechnical Commission (IEC) and has the following core components:
+- **Scope**: This specifies the ISMS's boundaries, including the covered assets and processes.
+- **Information security policy**: A high-level document defining an organisation's information security approach.
+- **Risk assessment**: Involves identifying and evaluating the risks to the confidentiality, integrity, and availability of the organisation's information.
+- **Risk treatment**: Involves selecting and implementing controls to reduce the identified risks to an acceptable level.
+- **Statement of Applicability (SoA)**: This document specifies which controls from the standard are applicable and which are not.
+- **Internal audit**: This involves conducting periodic audits of the ISMS to ensure that it is operating effectively.
+- **Management review**: Review the performance of ISMS at regular intervals.
+
+#### Service Organisation Control 2 (SOC 2)
+
+[**SOC 2**](https://soc2.co.uk/) was developed by the American Institute of Certified Public Accountants (AICPA) as a **compliance/auditing framework**.
+
+SOC 2 Important Cardinals are about the quality of humans auditing, auditing the audit and report quality in finding and recommendations:
+- SOC 2 is an auditing standard that evaluates the usefulness of a service organisation's controls related to confidentiality, availability, integrity, and privacy.
+- Independent auditors conduct SOC 2 audits to determine that security controls meet the relevant criteria.
+- SOC 2 reports provide valuable information to customers, stakeholders, and regulators on a service organisation's security and privacy practices. 
+- The SOC 2 audit report will assess the controls in place at the cloud computing company and include any findings or recommendations for improvement.
+
+Generic controls:
+- Security
+- Availability
+- Processing integrity
+- Confidentiality
+- Privacy
+
+Planning and Undergoing a SOC 2 Audit
+- Determine the scope
+- Chose a suitable auditor
+- Plan a audit
+- Prepare for the audit
+- Conduct the audit
+- Receive the audit report
 
 
 ## References
 
 [THM Governance & Regulation Room](https://tryhackme.com/room/cybergovernanceregulation)
 [NCSC.gov.uk - Cyber security Governance](https://www.ncsc.gov.uk/collection/risk-management/cyber-security-governance)
+[GDPR](https://gdpr-info.eu/)
+[PCI DSS](https://www.pcisecuritystandards.org/)
+[PCI_DSS-QRG-v4_0 Document](https://docs-prv.pcisecuritystandards.org/PCI%20DSS/Supporting%20Document/PCI_DSS-QRG-v4_0.pdf)
+[NIST 800-53](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-53r5.pdf) 
+[SOC 2](https://soc2.co.uk/)

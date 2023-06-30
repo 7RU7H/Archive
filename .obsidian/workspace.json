@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/Content-Discovery-Tools/FFUF-Cheatsheet.md",
+                "file": "Security-Disciplines/Secure-Architectures/Governance-And-Regulation.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/Content-Discovery-Tools/FFUF-Cheatsheet.md",
+                "file": "Security-Disciplines/Secure-Architectures/Governance-And-Regulation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -128,6 +128,7 @@
   },
   "active": "4376c237d5cc402e",
   "lastOpenFiles": [
+    "Tools/Content-Discovery-Tools/FFUF-Cheatsheet.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
     "Security-Disciplines/Secure-Architectures/Governance-And-Regulation.md",
     "Exploitation/Windows/Active-Directory/AD-Domain-Exploitation.md",
@@ -154,7 +155,6 @@
     "Hardware/Hardware-Maintance/USB-Maintenance.md",
     "Web-Application-Hacking/OWASP-Top-10-Historic-Definitions.md",
     "Web-Application-Hacking/Javascript/Javascript-Cookie-Abuse.md",
-    "Web-Application-Hacking/JSON/JSON-Web-Tokens.md",
     "Reverse-Engineering/Anti-Reverse-Engineering",
     "Tools/Debuggers",
     "Tools/Host-Privilege-Escalation/Linux",
