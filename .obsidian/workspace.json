@@ -32,7 +32,7 @@
             }
           },
           {
-            "id": "2d752e40792ff247",
+            "id": "e33ae9e0d13d4d66",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -150,13 +150,14 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "2d752e40792ff247",
+  "active": "e33ae9e0d13d4d66",
   "lastOpenFiles": [
-    "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
+    "Brain-Hacking/Actions/Personality.md",
     "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
-    "Hardening/Linux-Hardening.md",
+    "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
     "Security-Disciplines/Secure-Architectures/Governance-And-Regulation.md",
     "Tools/Content-Discovery-Tools/FFUF-Cheatsheet.md",
+    "Hardening/Linux-Hardening.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
     "Exploitation/Windows/Active-Directory/AD-Domain-Exploitation.md",
     "Exploitation/Windows/Active-Directory/AD-Forest-Exploitation.md",
@@ -178,7 +179,6 @@
     "Hardware/Threading.md",
     "Hardware/Hardware-Maintance/Hardware-Maintenance.md",
     "Hardware/Hardware-Maintance/USB-Maintenance.md",
-    "Web-Application-Hacking/OWASP-Top-10-Historic-Definitions.md",
     "Reverse-Engineering/Anti-Reverse-Engineering",
     "Tools/Debuggers",
     "Tools/Host-Privilege-Escalation/Linux",
