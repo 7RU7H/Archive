@@ -32,18 +32,6 @@
             }
           },
           {
-            "id": "e33ae9e0d13d4d66",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "a5be0f93e9078c38",
             "type": "leaf",
             "state": {
@@ -56,7 +44,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -122,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+                "file": "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,10 +138,15 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "e33ae9e0d13d4d66",
+  "active": "4376c237d5cc402e",
   "lastOpenFiles": [
-    "Brain-Hacking/Actions/Personality.md",
+    "Coding-Scripting-Programming/Languages/PHP/Useful_PHP.md",
+    "Web-Application-Hacking/Broken-Access-Control.md",
+    "Web-Application-Hacking/OWASP-Top-10-Historic-Definitions.md",
+    "Web-Application-Hacking/Insecure-Direct-Object-Reference.md",
+    "APIs/API-Fuzzing.md",
     "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+    "Brain-Hacking/Actions/Personality.md",
     "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
     "Security-Disciplines/Secure-Architectures/Governance-And-Regulation.md",
     "Tools/Content-Discovery-Tools/FFUF-Cheatsheet.md",
@@ -174,11 +167,6 @@
     "Linux/Linux-Commands/Linux-Users-And-Group-Commands.md",
     "Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Blue-KOTH-Battlegrounds-Cheatsheet-Linux.md",
     "Network/Network-Theory/Network-Protocols/DNS-Defined.md",
-    "README.md",
-    "Hardware/Memory-Extraction.md",
-    "Hardware/Threading.md",
-    "Hardware/Hardware-Maintance/Hardware-Maintenance.md",
-    "Hardware/Hardware-Maintance/USB-Maintenance.md",
     "Reverse-Engineering/Anti-Reverse-Engineering",
     "Tools/Debuggers",
     "Tools/Host-Privilege-Escalation/Linux",

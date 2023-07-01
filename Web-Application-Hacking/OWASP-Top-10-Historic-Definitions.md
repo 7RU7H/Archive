@@ -10,6 +10,7 @@ Given a level of authentication, inadequate security allowing unintended access 
 - For admin panels see [[Web-App-Administration-Consoles]]
 - [[File-Inclusion]]
 - [[Insecure-Direct-Object-Reference]]
+- [[Broken-Access-Control]]
 
 Indicators of Vulnerability:
 Prevention:

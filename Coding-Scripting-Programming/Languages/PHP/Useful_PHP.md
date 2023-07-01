@@ -1,9 +1,16 @@
 # Useful_PHP
 
-[RTFM here is a documentation](https://www.php.net/) below is just useful php with description how its workings. One of the many Web-Hackronomicons of eye-brow-raising levels of secure language design with the insanity of multiple function calls capable of doing the exact same thing. Try to remember which are all of the vulnerable code in which server context anduser context when humans like trust and favourites, where is the person that shouts remember the Pwhpaarrr 1.69 version of with a similar function called that is allowed by some design loop hole. 
+[RTFM here is a documentation](https://www.php.net/) below is just useful PHP with description how its workings. One of the many Web-Hackronomicons of eye-brow-raising levels of secure language design with the insanity of multiple function calls capable of doing the exact same thing. Try to remember which are all of the vulnerable code in which server context and user context when humans like trust and favourites, where is the person that shouts remember the Pwhpaarrr 1.69 version of with a similar function called that is allowed by some design loop hole. 
+
+## Secure PHP
+
+[OWASP PHP Configuration Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/PHP_Configuration_Cheat_Sheet.html)
+[PHP The Right Way: Security](https://phptherightway.com/#security)
+[Secure Coding in PHP](https://www.php.net/manual/en/security.php)
+
+## General information
 
 PHP 8.1 - Dev has a Backdoor
-
 
 PHP webserver
 ```bash
@@ -14,6 +21,7 @@ Execute file:
 ```bash
 php file.php
 ```
+
 
 ## Useful Functions listing
 
@@ -91,3 +99,6 @@ Put your horrible PHP in html: [php.net](https://www.php.net/manual/en/language.
 
 [HTTP GET superglobal variable](https://www.php.net/manual/en/reserved.variables.get.php)
 [php.net](https://www.php.net/) 
+[OWASP PHP Configuration Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/PHP_Configuration_Cheat_Sheet.html)
+[PHP The Right Way: Security](https://phptherightway.com/#security)
+[Secure Coding in PHP](https://www.php.net/manual/en/security.php)
