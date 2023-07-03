@@ -44,24 +44,12 @@
             }
           },
           {
-            "id": "8df3ddf16de3a127",
+            "id": "a34dba402be46d74",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Post-Exploitation/Escaping-Restricted-Environments/Linux-Shell-Escapes.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "fca54c205167f07c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Coding-Scripting-Programming/Languages/C/Useful-C.md",
+                "file": "Web-Application-Hacking/XSS/XSS-Cheatsheet.md",
                 "mode": "source",
                 "source": false
               }
@@ -109,7 +97,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "runas",
+                "query": "Redline",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -146,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Post-Exploitation/Escaping-Restricted-Environments/Linux-Shell-Escapes.md",
+                "file": "Web-Application-Hacking/XSS/XSS-Cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,13 +162,19 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "8df3ddf16de3a127",
+  "active": "a34dba402be46d74",
   "lastOpenFiles": [
-    "Coding-Scripting-Programming/Languages/C/Useful-C.md",
-    "Post-Exploitation/Escaping-Restricted-Environments/Linux-Shell-Escapes.md",
     "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
     "Hardening/Linux-Hardening.md",
+    "Redline.md",
+    "Hardware/Memory-Extraction.md",
+    "Security-Disciplines/Digital-Forensics/Digital-Forensics.md",
+    "Web-Application-Hacking/Web-Shells.md",
+    "Tools/Detection-And-Monitoring/Yara/Yara.md",
+    "Post-Exploitation/Escaping-Restricted-Environments/Linux-Shell-Escapes.md",
     "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
+    "Tools/Forensics/Sigma.md",
+    "Coding-Scripting-Programming/Languages/C/Useful-C.md",
     "Coding-Scripting-Programming/Languages/PHP/Useful_PHP.md",
     "Web-Application-Hacking/Broken-Access-Control.md",
     "Web-Application-Hacking/OWASP-Top-10-Historic-Definitions.md",
@@ -196,13 +190,7 @@
     "Exploitation/Windows/Active-Directory/AD-DC-Sync-Attack.md",
     "Exploitation/Windows/Active-Directory/AD-Group-Policy-Objects-Exploitation.md",
     "Exploitation/Windows/Active-Directory/AD-Exploitation-Hub.md",
-    "Tools/C2/Sliver/Sliver-Cheatsheet.md",
-    "Virtualization/Proxmox.md",
-    "Exploitation/Server-Side/Server-Side-XSS.md",
     "Exploitation/Server-Side",
-    "ippsec.rocks.md",
-    "Hardware/Flipper-Zero/Flipper-Zero.md",
-    "Linux/Linux-Commands/Linux-Users-And-Group-Commands.md",
     "Reverse-Engineering/Anti-Reverse-Engineering",
     "Tools/Debuggers",
     "Tools/Host-Privilege-Escalation/Linux",

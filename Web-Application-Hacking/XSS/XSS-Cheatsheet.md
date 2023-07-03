@@ -26,6 +26,7 @@ If the application does not filtering these characters by removing or encoding t
 
 
 ## Useful Tricks
+
 Listener at the ready you can check if you get a connection back:
 ```html
 <img src=http://$attacker-ip:port />
@@ -44,6 +45,8 @@ Cookie Stealing
 
 Bypass payload size restrictions by [linking to an external Javascript file](https://www.youtube.com/watch?v=Uo3cL4nrGOk).
 
+With Iframes see either `src` idicative of a URL or content with `data` or `srcdoc` in [Hacktrick Iframes in XSS, CSP, and SOP](https://book.hacktricks.xyz/pentesting-web/xss-cross-site-scripting/iframes-in-xss-and-csp) 
+
 
 ## XSS Polyglots
 ```javascript
@@ -56,6 +59,8 @@ This cheat sheet lists a series of XSS attacks that can be used to bypass certai
 [Sking7](https://sking7.github.io/articles/218647712.html)
 
 
+
+
 ## References
 [Owasp](https://owasp.org/www-community/attacks/xss/)
 [XSS Prevention Cheatsheet from OWASP](https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html)
@@ -64,3 +69,4 @@ This cheat sheet lists a series of XSS attacks that can be used to bypass certai
 [sking7](https://sking7.github.io/articles/218647712.html)
 [Bankrobber Ippsec Video](https://www.youtube.com/watch?v=zYmA9ECuCio)
 [Owasp Types of XSS](https://owasp.org/www-community/Types_of_Cross-Site_Scripting)
+[Hacktrick Iframes in XSS, CSP, and SOP](https://book.hacktricks.xyz/pentesting-web/xss-cross-site-scripting/iframes-in-xss-and-csp) 

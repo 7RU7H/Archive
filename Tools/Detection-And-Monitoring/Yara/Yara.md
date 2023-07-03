@@ -171,6 +171,8 @@ Consult:
 
 [YAYA](https://github.com/EFForg/yaya) - Yet Another Yara Automaton - Automatically curate open source yara rules and run scans
 
+[VALHALLA](https://www.nextron-systems.com/valhalla/)  -  boosts your detection capabilities with the power of thousands of hand-crafted high-quality [YARA](https://virustotal.github.io/yara/) and [Sigma](https://github.com/SigmaHQ/sigma) rules.
+
 #### Community Rules, Projects, Extras
 
 [awesome-yara](https://github.com/InQuest/awesome-yara) - A curated list of awesome YARA rules, tools, and resources
