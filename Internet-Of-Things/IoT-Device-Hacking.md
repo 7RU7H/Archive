@@ -1,7 +1,14 @@
 # IoT Device Hacking
 
-Internet of Things (IoT) Devices are physical devices with various capabilities such as sensors, processing, software and connectivity to exchange data with other devices and systems over the internet or otyher communications networks.
+Internet of Things (IoT) Devices are physical devices with various capabilities such as sensors, processing, software and connectivity to exchange data with other devices and systems over the internet or other communications networks.
 
+## Get the Firmware
+
+1. Obtaining it from the vendor's website
+2. Googling it  
+3. Reversing the mobile application  
+4. Sniffing the OTA (over the air) update mechanism
+5. Dumping it from the device
 
 
 ## Common Messaging Protocols 
@@ -34,3 +41,4 @@ WebSocket | Device-to-Device  | Relies on a client-server model to send data ov
 
 [Wikipedia IoT](https://en.wikipedia.org/wiki/Internet_of_things)
 [THM AoC4](https://tryhackme.com/room/adventofcyber4)
+[THM Intro to IoT](https://tryhackme.com/room/iotintro)

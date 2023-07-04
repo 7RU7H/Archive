@@ -13,7 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Virtualization/Proxmox.md",
+                "file": "Services/Databases/OSquery/OSquery.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "5086af184235f7ad",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Internet-Of-Things/IoT-Device-Hacking.md",
                 "mode": "source",
                 "source": false
               }
@@ -67,8 +79,7 @@
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -134,7 +145,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Web-Application-Hacking/XSS/XSS-Cheatsheet.md",
+                "file": "Services/Databases/OSquery/OSquery.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -162,8 +173,13 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "a34dba402be46d74",
+  "active": "a615c9387ecec740",
   "lastOpenFiles": [
+    "Internet-Of-Things/IoT-Device-Hacking.md",
+    "Services/Databases/OSquery/OSquery.md",
+    "Virtualization/Proxmox.md",
+    "Services/Databases/OSquery",
+    "Web-Application-Hacking/XSS/XSS-Cheatsheet.md",
     "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
     "Hardening/Linux-Hardening.md",
     "Redline.md",
@@ -186,10 +202,6 @@
     "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
     "Exploitation/Windows/Active-Directory/AD-Domain-Exploitation.md",
     "Exploitation/Windows/Active-Directory/AD-Forest-Exploitation.md",
-    "Exploitation/Windows/Active-Directory/AD-Certificate-Exploitation.md",
-    "Exploitation/Windows/Active-Directory/AD-DC-Sync-Attack.md",
-    "Exploitation/Windows/Active-Directory/AD-Group-Policy-Objects-Exploitation.md",
-    "Exploitation/Windows/Active-Directory/AD-Exploitation-Hub.md",
     "Exploitation/Server-Side",
     "Reverse-Engineering/Anti-Reverse-Engineering",
     "Tools/Debuggers",
@@ -199,7 +211,6 @@
     "Tools/Data-Processing",
     "Tools/Malware",
     "Tools/Vulnerability-Management",
-    "Tools/Cross-OS",
     "Images/procmonbar.png",
     "Images/ss64-windowsgroups-default-admin-users-and-groups.png",
     "Images/jackmasa-mind-map.png",
