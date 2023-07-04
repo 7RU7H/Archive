@@ -61,6 +61,27 @@ mosquitto_pub -h $host -t $device/info -m "Insert Message Here!"
 
 [mqtt-pwn](https://github.com/akamai-threat-research/mqtt-pwn) intends to be a one-stop-shop for IoT Broker penetration-testing and security assessment operations.
 
+## Attacking
+
+No Authentication 
+```bash
+mosquitto_sub -h $ip -t '#' -v
+```
+
+[[Metasploit]] for dictionary attacks 
+```ruby
+msf6 > use auxiliary/scanner/mqtt/connect
+msf6 auxiliary(scanner/mqtt/connect) > set PASS_FILE /tmp/passwords.txt
+msf6 auxiliary(scanner/mqtt/connect) > set USER_FILE /tmp/users.txt
+msf6 auxiliary(scanner/mqtt/connect) > set RHOST <insert here>
+```
+
+
+
+
 ## References
 
 [THM AoC4](https://tryhackme.com/room/adventofcyber4)
+[Security Cafe](https://securitycafe.ro/2022/04/08/iot-pentesting-101-how-to-hack-mqtt-the-standard-for-iot-messaging/)
+[mqtt-pwn](https://github.com/akamai-threat-research/mqtt-pwn) 
+[Hacktricks - MQTT](https://book.hacktricks.xyz/network-services-pentesting/1883-pentesting-mqtt-mosquitto) 

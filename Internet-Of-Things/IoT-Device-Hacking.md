@@ -10,6 +10,9 @@ Internet of Things (IoT) Devices are physical devices with various capabilities 
 4. Sniffing the OTA (over the air) update mechanism
 5. Dumping it from the device
 
+## Firmadyne 
+
+[FIRMADYNE](https://github.com/firmadyne/firmadyne) *"is an automated and scalable system for performing emulation and dynamic analysis of Linux-based embedded firmware."*
 
 ## Common Messaging Protocols 
 
@@ -42,3 +45,4 @@ WebSocket | Device-to-Device  | Relies on a client-server model to send data ov
 [Wikipedia IoT](https://en.wikipedia.org/wiki/Internet_of_things)
 [THM AoC4](https://tryhackme.com/room/adventofcyber4)
 [THM Intro to IoT](https://tryhackme.com/room/iotintro)
+[Github - FIRMADYNE](https://github.com/firmadyne/firmadyne) 

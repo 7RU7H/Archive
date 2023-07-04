@@ -8,24 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "a615c9387ecec740",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Services/Databases/OSquery/OSquery.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "5086af184235f7ad",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Internet-Of-Things/IoT-Device-Hacking.md",
+                "file": "Internet-Of-Things/MQTT.md",
                 "mode": "source",
                 "source": false
               }
@@ -79,7 +67,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -145,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Services/Databases/OSquery/OSquery.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -173,8 +162,9 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "a615c9387ecec740",
+  "active": "84968ac2280ca848",
   "lastOpenFiles": [
+    "Internet-Of-Things/MQTT.md",
     "Internet-Of-Things/IoT-Device-Hacking.md",
     "Services/Databases/OSquery/OSquery.md",
     "Virtualization/Proxmox.md",
@@ -201,7 +191,6 @@
     "Tools/Content-Discovery-Tools/FFUF-Cheatsheet.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
     "Exploitation/Windows/Active-Directory/AD-Domain-Exploitation.md",
-    "Exploitation/Windows/Active-Directory/AD-Forest-Exploitation.md",
     "Exploitation/Server-Side",
     "Reverse-Engineering/Anti-Reverse-Engineering",
     "Tools/Debuggers",
