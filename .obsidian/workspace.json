@@ -32,6 +32,18 @@
             }
           },
           {
+            "id": "67b4baa67befe6a6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/Useful-Online-Software/Cyberchef.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "a5be0f93e9078c38",
             "type": "leaf",
             "state": {
@@ -140,8 +152,10 @@
   },
   "active": "4376c237d5cc402e",
   "lastOpenFiles": [
-    "Services/Databases/OSquery/Osquery.md",
+    "Tools/Useful-Online-Software/Cyberchef.md",
+    "Coding-Scripting-Programming/Languages/Powershell/Useful_Powershell.md",
     "Tools/Detection-And-Monitoring/SIEMs/Splunk.md",
+    "Services/Databases/OSquery/Osquery.md",
     "Security-Disciplines/Blue-Team/Ransomware-Encrypted-File-Extensions-List.md",
     "Exploitation/CVEs/PrintNightmare.md",
     "Services/ELK/ELK-Defined.md",
@@ -165,8 +179,6 @@
     "Web-Application-Hacking/Broken-Access-Control.md",
     "Web-Application-Hacking/OWASP-Top-10-Historic-Definitions.md",
     "Web-Application-Hacking/Insecure-Direct-Object-Reference.md",
-    "APIs/API-Fuzzing.md",
-    "Brain-Hacking/Actions/Personality.md",
     "Exploitation/Server-Side",
     "Reverse-Engineering/Anti-Reverse-Engineering",
     "Tools/Debuggers",

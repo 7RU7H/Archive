@@ -109,15 +109,34 @@ Find [[XSS-Cheatsheet]] - XSS always generates errors!
 
 Find [[Cross-Site-Request-Forgery]] - get the token!
 
+SSL/TLS traffic for SSL certificates
+`index="botsv2" sourcetype="stream:tcp"` and various `ssl_*` fields
+- `ssl_issuer`
+
 Find Encrypted files because of Ransomware with: [[Ransomware-Encrypted-File-Extensions-List]]
 
 `sourcetype=`[[Osquery]] if *was implemented* on system is very useful data source.
+- `columns.path` for file path
+- `columns.target_path` for target paths - destination of output onto the filesystem
+- `columns.pid` for process ids
+- `columns,.key` for environment variables
+- For Usernames use [[Osquery]] formatting
 
+Scheduled tasks
+`index="botsv2" schtasks.exe` + `sourcetype` + `| dedup ParentCommandLine | table ParentCommandLine CommandLine` to reduce to the command line arguments run 
+
+Windows Registry
+`index="botsv2" source=WinRegistry` + path `\\$parent\\$child\\$etc`
 
 Find [[Bad-USBs]]
+`Vendor Id` + `Model ID` and enter into [Device Hunt](https://devicehunt.com/) 
 
+Convert weird strings with [[Cyberchef]]
 
-
+Events before/after or same time of this a particular event
+On the `Time` column of `Time | Event` in List formatting:
+- `Click $time -> select either ("Before this time" || "After this time" || "At this time")`
+- Then `Nearby Event -> select +/- Int (milliseconds, seconds, minutes, hours, days, weeks)` then `Apply`
 
 Reverse the order of events displayed
 `| reverse`
@@ -141,3 +160,5 @@ Handling finding Filenames
 [Metadata Documentation](https://docs.splunk.com/Documentation/Splunk/latest/SearchReference/Metadata)
 [THM Splunk 2 Room](https://tryhackme.com/room/splunk2gcd5)
 [THM Splunk Inciident Handling Room](https://tryhackme.com/room/splunk201)
+[Device Hunt](https://devicehunt.com/)
+[Motasem Hamdan - Splunk Playlist](https://www.youtube.com/playlist?list=PLqM63j87R5p42cBwRwI24FQeF7oEBFmka)

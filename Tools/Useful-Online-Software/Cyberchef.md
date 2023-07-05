@@ -7,6 +7,14 @@ It’s the Cyber Swiss Army Knife.
 
 CyberChef Open-Sourced through [GitHub](https://github.com/gchq/CyberChef)
 
+## UI Tricks
+
+- Input
+	- Encoded PowerShell - `From base64` + `Remove Null Bytes`
+
+- Output 
+	- `TT` symbol `Click` for Drop-down to choose display from Raw Bytes, Simplified Chinese GB18030 - also has a search filter! 
+
 
 ## Phishing Email Analysis
 
