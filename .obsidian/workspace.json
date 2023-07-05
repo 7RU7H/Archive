@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
+                "file": "Tools/Detection-And-Monitoring/SIEMs/Splunk.md",
                 "mode": "source",
                 "source": false
               }
@@ -42,33 +42,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "a34dba402be46d74",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Web-Application-Hacking/XSS/XSS-Cheatsheet.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "84968ac2280ca848",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -97,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Redline",
+                "query": "Splunk",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -134,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+                "file": "Tools/Detection-And-Monitoring/SIEMs/Splunk.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -162,23 +138,27 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "84968ac2280ca848",
+  "active": "4376c237d5cc402e",
   "lastOpenFiles": [
-    "Internet-Of-Things/MQTT.md",
-    "Internet-Of-Things/IoT-Device-Hacking.md",
-    "Services/Databases/OSquery/OSquery.md",
-    "Virtualization/Proxmox.md",
-    "Services/Databases/OSquery",
+    "Services/Databases/OSquery/Osquery.md",
+    "Tools/Detection-And-Monitoring/SIEMs/Splunk.md",
+    "Security-Disciplines/Blue-Team/Ransomware-Encrypted-File-Extensions-List.md",
+    "Exploitation/CVEs/PrintNightmare.md",
+    "Services/ELK/ELK-Defined.md",
+    "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
+    "Hardening/Linux-Hardening.md",
     "Web-Application-Hacking/XSS/XSS-Cheatsheet.md",
     "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
-    "Hardening/Linux-Hardening.md",
+    "Internet-Of-Things/MQTT.md",
+    "Internet-Of-Things/IoT-Device-Hacking.md",
+    "Virtualization/Proxmox.md",
+    "Services/Databases/OSquery",
     "Redline.md",
     "Hardware/Memory-Extraction.md",
     "Security-Disciplines/Digital-Forensics/Digital-Forensics.md",
     "Web-Application-Hacking/Web-Shells.md",
     "Tools/Detection-And-Monitoring/Yara/Yara.md",
     "Post-Exploitation/Escaping-Restricted-Environments/Linux-Shell-Escapes.md",
-    "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
     "Tools/Forensics/Sigma.md",
     "Coding-Scripting-Programming/Languages/C/Useful-C.md",
     "Coding-Scripting-Programming/Languages/PHP/Useful_PHP.md",
@@ -187,10 +167,6 @@
     "Web-Application-Hacking/Insecure-Direct-Object-Reference.md",
     "APIs/API-Fuzzing.md",
     "Brain-Hacking/Actions/Personality.md",
-    "Security-Disciplines/Secure-Architectures/Governance-And-Regulation.md",
-    "Tools/Content-Discovery-Tools/FFUF-Cheatsheet.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
-    "Exploitation/Windows/Active-Directory/AD-Domain-Exploitation.md",
     "Exploitation/Server-Side",
     "Reverse-Engineering/Anti-Reverse-Engineering",
     "Tools/Debuggers",
