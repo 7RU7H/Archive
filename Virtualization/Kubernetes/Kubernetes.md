@@ -48,7 +48,7 @@ kubectl <cmd> namespace $nsName
 # Nodes
 # ++cmds: taint, top, cordon, annotate, uncordon, drain, label, exec
 kubectl <cmd> node
-# Replication Controllers
+# Replication Controllers - ReplicaSets
 kubectl <cmd> rc
 # replicasets
 # ++cmd: scale
