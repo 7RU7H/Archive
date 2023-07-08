@@ -13,13 +13,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Security-Disciplines/Malware-Analysis/Malware-Analysis-Resources.md",
+                "file": "Coding-Scripting-Programming/Malware/Anti-Reverse-Engineering-Techniques.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9af2f994a348ad97",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/Useful-Online-Software/Github-guide.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "339eafc96a9f0af4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/Debuggers/x64dbg.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -48,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Splunk",
+                "query": "Packers",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,7 +94,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 390.5
+    "width": 318.5
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -85,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Security-Disciplines/Malware-Analysis/Malware-Analysis-Resources.md",
+                "file": "Tools/Useful-Online-Software/Github-guide.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,10 +138,18 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "a5be0f93e9078c38",
+  "active": "9af2f994a348ad97",
   "lastOpenFiles": [
-    "Security-Disciplines/Cyber-Threat-Intelligence/CTI-DNS-Recon.md",
+    "Reverse-Engineering/Anti-Reverse-Engineering/Circumventing-Anti-Reverse-Engineering.md",
+    "Tools/Debuggers/x64dbg.md",
+    "Antivirus/Antivirus-Evasion/Antivirus-Evasion.md",
+    "Tools/Malware/Packers/Packers.md",
+    "Tools/Malware/Packers",
+    "Coding-Scripting-Programming/Malware/Anti-Reverse-Engineering-Techniques.md",
+    "Reverse-Engineering/Anti-Reverse-Engineering/Anti-Reverse-Engineering.md",
+    "Alternate-Resources.md",
     "Security-Disciplines/Malware-Analysis/Malware-Analysis-Resources.md",
+    "Security-Disciplines/Cyber-Threat-Intelligence/CTI-DNS-Recon.md",
     "Virtualization/Kubernetes/Kubernetes.md",
     "Virtualization/Virtualisation.md",
     "README.md",
@@ -134,14 +167,7 @@
     "Exploitation/CVEs/PrintNightmare.md",
     "Services/ELK/ELK-Defined.md",
     "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
-    "Web-Application-Hacking/XSS/XSS-Cheatsheet.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
-    "Internet-Of-Things/IoT-Device-Hacking.md",
-    "Virtualization/Proxmox.md",
     "Services/Databases/OSquery",
-    "Hardware/Memory-Extraction.md",
-    "Security-Disciplines/Digital-Forensics/Digital-Forensics.md",
-    "Web-Application-Hacking/Web-Shells.md",
     "Exploitation/Server-Side",
     "Reverse-Engineering/Anti-Reverse-Engineering",
     "Tools/Debuggers",
@@ -150,7 +176,6 @@
     "Tools/Detection-And-Monitoring",
     "Tools/Data-Processing",
     "Tools/Malware",
-    "Tools/Vulnerability-Management",
     "Images/procmonbar.png",
     "Images/ss64-windowsgroups-default-admin-users-and-groups.png",
     "Images/jackmasa-mind-map.png",

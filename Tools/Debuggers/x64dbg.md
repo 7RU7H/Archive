@@ -5,12 +5,35 @@
 
 After opening a executable the debugger will attach itself to the spawned process and pause it before it starts.
 
+
+Tricks:
+
+Jump to entry point with keybinding and To run program
+- `F9`
+
+Set Break Points
+- `F2`
+
 Automatic Breakpoints
 - `Options -> Preferences -> Events (Tick or Untick)`
 
-Find stuff with Search For
+Find stuff 
+
+... with Search For
 - `CPU -> Right-Click -> Search For -> $various`
 
+...Enter expression to follow 
+- `Ctrl+G` to pop open *"Enter expression to follow..."* 
+
+Find a particular Windows API call in binary
+- `Right Click -> Search -> Current module -> Intermodular calls -> Search * -> Double clikc on target function from search`
+
+Patch binary
+- `Find a particular Windows API call in binary` - tip then 
+	- Either
+		- `Highlight code -> Right Click -> Fill with NOPs`
+		- `Ctrl+G` to pop open `"Enter expression to follow.." -> Right Click -> Follow to Dump`, which allow for manipulation of the hex code, by default the bottom panel under Dump tab
+		- On the Registers Panel  `Right Click -> Modify Value`
 
 #### Tabs
 
@@ -49,6 +72,8 @@ Find stuff with Search For
 		- Opcode: toggle breakpoint.
 		- Disassembly: follow in disassembly.
 		- Comments: set comments.
+
+
 
 
 ## References
