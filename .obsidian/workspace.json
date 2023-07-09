@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+                "file": "Tools/Useful-Online-Software/Github-guide.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 318.5
+    "width": 295.5
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+                "file": "Tools/Useful-Online-Software/Github-guide.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,6 +115,9 @@
   },
   "active": "a5be0f93e9078c38",
   "lastOpenFiles": [
+    "Security-Disciplines/Security-Models/Security-Principles.md",
+    "Security-Disciplines/Security-Models/CIA-Triad.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
     "Coding-Scripting-Programming/Languages/C/Useful-C.md",
     "Coding-Scripting-Programming/Languages/C/Concurrent-C.md",
     "Coding-Scripting-Programming/Languages/C/Bad-C.md",
@@ -126,7 +129,6 @@
     "Coding-Scripting-Programming/Malware/Anti-Reverse-Engineering-Techniques.md",
     "Coding-Scripting-Programming/Malware/Useful-Functions-And-Syscalls.md",
     "Coding-Scripting-Programming/Malware/Polymorphic-Code.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
     "Reverse-Engineering/Anti-Reverse-Engineering/Circumventing-Anti-Reverse-Engineering.md",
     "Tools/Useful-Online-Software/Github-guide.md",
     "Tools/Debuggers/x64dbg.md",
@@ -140,8 +142,6 @@
     "Virtualization/Kubernetes/Kubernetes.md",
     "Virtualization/Virtualisation.md",
     "README.md",
-    "Redline.md",
-    "Cloud/AWS/AWS-Defined.md",
     "Services/Databases/OSquery",
     "Exploitation/Server-Side",
     "Reverse-Engineering/Anti-Reverse-Engineering",
