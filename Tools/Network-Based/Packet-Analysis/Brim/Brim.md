@@ -1,10 +1,8 @@
 # Brim
 
-Brim is an open-source desktop application that processes pcap files and logs files, with a primary focus on providing search and analytics using the Zeek log processing format. It supports Zeek signatures and [[Suricata]] rules for detection. Brim uses Zed, which is a command-line tool to manage and query Zed data lakes.
+Brim is an open-source desktop application that processes .pcap files and logs files, with a primary focus on providing search and analytics using the [[Zeek]] log processing format. It supports [[Zeek]] signatures and [[Suricata]] rules for detection. Brim uses Zed, which is a command-line tool to manage and query Zed data lakes.
 
-
-
-[Full command list can be found here](https://zed.brimdata.io/docs/commands/zed/) and useful ones or oneliner can be found here:
+[Full command list can be found here](https://zed.brimdata.io/docs/commands/zed/) and useful ones or one-liner can be found here:
 
 ```c++
 # Get hostname by DHCP

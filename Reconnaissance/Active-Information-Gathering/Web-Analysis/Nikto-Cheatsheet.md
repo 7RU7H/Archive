@@ -18,9 +18,11 @@ nikto -h $IP -useproxy (Proxy IP address) # Web host scan via a proxy
 nikto -h $IP -config (filename.conf) # Use a specified file as a database  
 nikto -h $IP -nolookup 	# Stop DNS lookup for hosts  
 nikto -h $IP -nocache 	# Stop caching responses for scans
+nikto -h $IP -e # Evasion 
 ```
 ## Tuning
-If you need to check for a specific vulnerablity
+
+If you need to check for a specific vulnerability
 
 Option | Description
 --- | ---
@@ -39,7 +41,25 @@ Option | Description
 `c` | Remote Source Inclusion
 `x` | Reverse Tuning Options (i.e., include all except specified)
 
+
+## Evasion
+
+**Option** | **Encoding technique**
+--- | ---
+1 | Random URI encoding (non-UTF8)
+2 | Directory self-reference (/./)
+3 | Premature URL ending
+4 | Prepend long random string
+5 | Fake parameter
+6 | TAB as request spacer
+7 | Change the case of the URL
+8 | Use Windows directory separator (\)
+A | Use a carriage return (0x0d) as a request spacer
+B | Use binary value 0x0b as a request spacer
+
+
 ## Display 
+
 Option | Description
 --- | ---
 1 | Display redirects  
@@ -58,4 +78,5 @@ V | Verbose output display
 
 
 ## References
+
 [rangeforce](https://materials.rangeforce.com/tutorial/2019/12/05/Nikto/)

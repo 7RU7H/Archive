@@ -13,7 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/Useful-Online-Software/Github-guide.md",
+                "file": "Post-Exploitation/Evasion/IDS-Evasion.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "aef7b82ea3e2fa3d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Post-Exploitation/Evasion/Evading-IPS-And-IDS.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +60,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Packers",
+                "query": "Grafana",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,7 +81,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 295.5
+    "width": 416.5,
+    "collapsed": true
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/Useful-Online-Software/Github-guide.md",
+                "file": "Post-Exploitation/Evasion/IDS-Evasion.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,6 +128,15 @@
   },
   "active": "a5be0f93e9078c38",
   "lastOpenFiles": [
+    "Services/Grafana.md",
+    "Post-Exploitation/Evasion/IDS-Evasion.md",
+    "Reconnaissance/Active-Information-Gathering/Web-Analysis/Nikto-Cheatsheet.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/PrivEsc-Important-Windows-Locations.md",
+    "Tools/Network-Based/Packet-Analysis/Brim/Brim.md",
+    "Post-Exploitation/Evasion/Evading-IPS-And-IDS.md",
+    "Windows/Windows-File-Paths.md",
+    "Tools/Useful-Online-Software/Github-guide.md",
+    "Post-Exploitation/Credentials-Harvesting/AD-Credential-Harvesting.md",
     "Security-Disciplines/Security-Models/Security-Principles.md",
     "Security-Disciplines/Security-Models/CIA-Triad.md",
     "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
@@ -130,18 +152,9 @@
     "Coding-Scripting-Programming/Malware/Useful-Functions-And-Syscalls.md",
     "Coding-Scripting-Programming/Malware/Polymorphic-Code.md",
     "Reverse-Engineering/Anti-Reverse-Engineering/Circumventing-Anti-Reverse-Engineering.md",
-    "Tools/Useful-Online-Software/Github-guide.md",
     "Tools/Debuggers/x64dbg.md",
     "Antivirus/Antivirus-Evasion/Antivirus-Evasion.md",
-    "Tools/Malware/Packers/Packers.md",
     "Tools/Malware/Packers",
-    "Reverse-Engineering/Anti-Reverse-Engineering/Anti-Reverse-Engineering.md",
-    "Alternate-Resources.md",
-    "Security-Disciplines/Malware-Analysis/Malware-Analysis-Resources.md",
-    "Security-Disciplines/Cyber-Threat-Intelligence/CTI-DNS-Recon.md",
-    "Virtualization/Kubernetes/Kubernetes.md",
-    "Virtualization/Virtualisation.md",
-    "README.md",
     "Services/Databases/OSquery",
     "Exploitation/Server-Side",
     "Reverse-Engineering/Anti-Reverse-Engineering",
