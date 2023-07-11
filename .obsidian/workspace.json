@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "8b92fafd5063b089",
+        "id": "b5a370f9b72853ed",
         "type": "tabs",
         "children": [
           {
-            "id": "a5be0f93e9078c38",
+            "id": "09f8e309b87211b3",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Security-Disciplines/Malware-Analysis/IDA-Malware-Reverse-Engineering-101-By-Jake-Williams-Notes.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -86,7 +82,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Security-Disciplines/Malware-Analysis/IDA-Malware-Reverse-Engineering-101-By-Jake-Williams-Notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,8 +109,11 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "a5be0f93e9078c38",
+  "active": "09f8e309b87211b3",
   "lastOpenFiles": [
+    "Security-Disciplines/Blue-Team/Detection-Engineering.md",
+    "Software/EDR/EDR.md",
+    "Security-Disciplines/Malware-Analysis/IDA-Malware-Reverse-Engineering-101-By-Jake-Williams-Notes.md",
     "Post-Exploitation/Evasion/IDS-Evasion.md",
     "Services/Grafana.md",
     "Reconnaissance/Active-Information-Gathering/Web-Analysis/Nikto-Cheatsheet.md",
@@ -139,9 +137,6 @@
     "Coding-Scripting-Programming/Malware/Anti-Reverse-Engineering-Techniques.md",
     "Coding-Scripting-Programming/Malware/Useful-Functions-And-Syscalls.md",
     "Coding-Scripting-Programming/Malware/Polymorphic-Code.md",
-    "Reverse-Engineering/Anti-Reverse-Engineering/Circumventing-Anti-Reverse-Engineering.md",
-    "Tools/Debuggers/x64dbg.md",
-    "Antivirus/Antivirus-Evasion/Antivirus-Evasion.md",
     "Tools/Malware/Packers",
     "Services/Databases/OSquery",
     "Exploitation/Server-Side",
