@@ -4,28 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "fa314d9676873bc8",
+        "id": "84ad535684e4b38d",
         "type": "tabs",
         "children": [
           {
-            "id": "ae53f7acf9ab1c3b",
+            "id": "4838870137d4053d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Secure-Architectures/Identity-And-Access-Management.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "03b23bc52985c81a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Web-Application-Hacking/Broken-Access-Control.md",
+                "file": "Exploitation/Windows/Follina-MSDT.md",
                 "mode": "source",
                 "source": false
               }
@@ -60,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Discretion",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -77,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Secure-Architectures/Identity-And-Access-Management.md",
+                "file": "Exploitation/Windows/Follina-MSDT.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,10 +113,11 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "ae53f7acf9ab1c3b",
+  "active": "4838870137d4053d",
   "lastOpenFiles": [
-    "Web-Application-Hacking/Broken-Access-Control.md",
+    "Exploitation/Windows/Follina-MSDT.md",
     "Secure-Architectures/Identity-And-Access-Management.md",
+    "Web-Application-Hacking/Broken-Access-Control.md",
     "Cryptography-And-Authentication/Replay-Attacks.md",
     "Tools/Cross-OS/Curl-Cheatsheet.md",
     "Secure-Architectures",
@@ -154,7 +142,6 @@
     "Coding-Scripting-Programming/Languages/C/Bad-C.md",
     "Coding-Scripting-Programming/Malware/Malware-Techniques/Malware-Techniques-Packing.md",
     "Coding-Scripting-Programming/Malware/Malware-Techniques/Static-Analysis-Evasion-Techniques.md",
-    "Coding-Scripting-Programming/Malware/Malware-Techniques/Malware-Techniques-Obfuscation.md",
     "Tools/Malware/Packers",
     "Services/Databases/OSquery",
     "Exploitation/Server-Side",
