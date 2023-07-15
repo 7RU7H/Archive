@@ -218,13 +218,14 @@ strings -e s # 7-bit byte (used for ASCII, ISO 8859) - Default
 strings -e S # 8-bit byte
 strings -e b # 16-bit bigendian
 strings -e l # 16-bit littleendian
+```
 
 #### tar
-
+```bash
 tar -xf archive.tar
 -x tells tar to extract files from an archive.
 -f tells tar that the next argument will be the name of the archive to operate on
-tar zxvf file
+tar -zxvf file
 
 #### tr
 #TR for TRANSLATIONS!

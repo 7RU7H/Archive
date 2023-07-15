@@ -10,6 +10,11 @@ git clone https://github.com/optiv/ScareCrow.git
 go build ScareCrow.go
 ```
 
+Create bad Windows Office executables
+```bash
+ScareCrow -I Binary.bin -Loader binary -domain microsoft.com -obfu -Evasion KnownDLL 
+```
+
 
 ## References
 
