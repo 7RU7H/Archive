@@ -203,7 +203,7 @@ Domain Services include:
 
 #### Lightweight Directory Access Protocol(LDAP)
 
-Lightweight Directory Access Protocol (LDAP) is one the [[Network-Protocols-Cheatsheet]] very commonly used to interact with Domain Controllers to submit or retrieve data. LDAP is an open-source protocol designed to provides communication and interaction between applications and directory services. See [[LDAP-Recon]].
+Lightweight Directory Access Protocol (LDAP) is one the [[Network-Protocols]] very commonly used to interact with Domain Controllers to submit or retrieve data. LDAP is an open-source protocol designed to provides communication and interaction between applications and directory services. See [[LDAP-Recon]].
 
 #### Certicate Services
 

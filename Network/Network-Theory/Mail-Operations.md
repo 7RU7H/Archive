@@ -1,6 +1,6 @@
 # Mail Operations 
 
-[[Network-Protocols-Hub]] and especially [[Network-Protocols-Cheatsheet]] are required for some differentiation as to later workflow like Recon for harvesting see [[Email-Harvesting]].
+[[Network-Protocols-Hub]] and especially [[Network-Protocols]] are required for some differentiation as to later workflow like Recon for harvesting see [[Email-Harvesting]].
 
 Mail delivery:
 ```c

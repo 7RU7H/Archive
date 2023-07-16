@@ -1,6 +1,6 @@
 # Network Protocols
 
-[[Network-Protocols-Cheatsheet]]
+[[Network-Protocols]]
 [[Application-Protocols]]
 [[ARP-Protocol]]
 [[Dynamic-Host-Configuration-Protocol]]

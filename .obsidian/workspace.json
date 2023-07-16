@@ -4,47 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "84ad535684e4b38d",
+        "id": "ab5826fc3211c535",
         "type": "tabs",
         "children": [
           {
-            "id": "4838870137d4053d",
+            "id": "46684074c0c7f5a7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Secure-Architectures/EDR/EDR.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "db1dcfdf40000335",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Post-Exploitation/Evasion/Logging-And-Monitor-Evasion.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "97aca4f96b0e2352",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Windows/ETW.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -110,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Post-Exploitation/Evasion/Logging-And-Monitor-Evasion.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -138,17 +113,20 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "db1dcfdf40000335",
+  "active": "46684074c0c7f5a7",
   "lastOpenFiles": [
-    "Windows/ETW.md",
+    "Network/Network-Protocols.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+    "Tools/Network-Based/Packet-Analysis/Tcpdump-Cheatsheet.md",
+    "Secure-Architectures/EDR/EDR.md",
     "Post-Exploitation/Evasion/Logging-And-Monitor-Evasion.md",
+    "Windows/ETW.md",
     "Images/mseetwlogevasiondeface.png",
     "Images/msetwdiagram.png",
     "Coding-Scripting-Programming/Malware/Shellcode/Shellcode.md",
     "Windows/Windows-Concepts/Windows-Events/Windows-Events-To-Monitor.md",
     "Windows/Windows-Concepts/Windows-Events/Windows-Event-Logs.md",
     "Coding-Scripting-Programming/XML.md",
-    "Secure-Architectures/EDR/EDR.md",
     "Post-Exploitation/Evasion/EDR-Evasion",
     "Post-Exploitation/Evasion/Antivirus-Evasion/Antivirus-Evasion-Shellcode.md",
     "Coding-Scripting-Programming/Malware/Binders.md",
@@ -167,8 +145,6 @@
     "Cryptography-And-Authentication/Replay-Attacks.md",
     "Tools/Cross-OS/Curl-Cheatsheet.md",
     "Secure-Architectures",
-    "Tools/Content-Discovery-Tools/Feroxbuster.md",
-    "Security-Disciplines/Blue-Team/Detection-Engineering.md",
     "Tools/Malware/Packers",
     "Services/Databases/OSquery",
     "Exploitation/Server-Side",

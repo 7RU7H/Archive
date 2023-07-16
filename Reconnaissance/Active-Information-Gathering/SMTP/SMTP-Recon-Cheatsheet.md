@@ -1,7 +1,7 @@
 # SMTP Cheatsheet
 
 Simple Mail Transport Protocol (SMTP) - Vulnerable Email Servers can contain valuable information. 
-See [[Network-Protocols-Cheatsheet]] for port information.
+See [[Network-Protocols]] for port information.
 
 See [Debug STMP connection for great description of SMTP commands that occuring exploitation of MAIL servers](https://www.sparkpost.com/blog/how-to-check-an-smtp-connection-with-a-manual-telnet-session/)
 

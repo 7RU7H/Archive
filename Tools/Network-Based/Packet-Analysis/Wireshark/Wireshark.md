@@ -1,7 +1,7 @@
 # Wireshark
 
 
-I actively recommend Wireshark as personally it help me really understand [[Network-Protocols-Cheatsheet]],[[Network-Protocols-Hub]] and [[TCP-IP-Model]]  and I highly recommend it.
+I actively recommend Wireshark as personally it help me really understand [[Network-Protocols]],[[Network-Protocols-Hub]] and [[TCP-IP-Model]]  and I highly recommend it.
 
 ## Introduction
 
