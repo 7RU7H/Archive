@@ -18,7 +18,7 @@ Portswigger example of stock level in  shopping application:
 
 ## XXE XML Entity injection
 
-See [[XML-Basics]] for more about XML
+See [[XML]] for more about XML
 ```xml
 <!--Last Line of Request -->
 
