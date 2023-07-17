@@ -249,6 +249,59 @@ s.close()
 import pwntools
 ```
 
+## Testing
+
+Unit Testing
+```python
+import unittest
+
+
+# https://realpython.com/python-testing/#unit-tests-vs-integration-tests
+
+class TestSum(unittest.TestCase):
+
+    def test_sum(self):
+        self.assertEqual(sum([1, 2, 3]), 6, "Should be 6")
+
+    def test_sum_tuple(self):
+        self.assertEqual(sum((1, 2, 2)), 6, "Should be 6")
+
+if __name__ == '__main__':
+    unittest.main()
+
+
+    from my_sum import sum
+
+
+class TestSum(unittest.TestCase):
+    def test_list_int(self):
+        """
+        Test that it can sum a list of integers
+        """
+        data = [1, 2, 3]
+        result = sum(data)
+        self.assertEqual(result, 6)
+
+if __name__ == '__main__':
+    unittest.main()
+
+def test_bad_type(self):
+        data = "banana"
+        with self.assertRaises(TypeError):
+            result = sum(data)
+
+
+
+.assertEqual(a, b)      a == b
+.assertTrue(x)  bool(x) is True
+.assertFalse(x) bool(x) is False
+.assertIs(a, b) a is b
+.assertIsNone(x)        x is None
+.assertIn(a, b) a in b
+.assertIsInstance(a, b) isinstance(a, b)
+
+```
+
 # Advanced
 
 ### Subproceses
@@ -437,6 +490,8 @@ if __name__ == "__main__":
     #with open('badpickle.pkl', 'rb') as f:
     #    data = pickle.load(f)
 ```
+
+
 
 
 # Appendix

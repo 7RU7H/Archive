@@ -18,8 +18,33 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "32cf76cd6b345ca6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Alternate-Resources.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "785a36af4ac8930b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Web-Application-Hacking/XSS/XSS-Cheatsheet.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+                "file": "Alternate-Resources.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,10 +138,15 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "46684074c0c7f5a7",
+  "active": "32cf76cd6b345ca6",
   "lastOpenFiles": [
-    "Network/Network-Protocols.md",
+    "Coding-Scripting-Programming/Languages/Bash/Useful_Bash.md",
+    "Web-Application-Hacking/XSS/XSS-Cheatsheet.md",
     "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+    "Coding-Scripting-Programming/Languages/Python/Useful_Python.md",
+    "Linux/Linux-Commands/Linux-Users-And-Group-Commands.md",
+    "Images/becomethewwwdata.png",
+    "Network/Network-Protocols.md",
     "Tools/Network-Based/Packet-Analysis/Tcpdump-Cheatsheet.md",
     "Secure-Architectures/EDR/EDR.md",
     "Post-Exploitation/Evasion/Logging-And-Monitor-Evasion.md",
@@ -140,10 +170,6 @@
     "Exploitation/Shells.md",
     "Windows/Windows-Concepts/Windows-Portable-Executable-Format.md",
     "Exploitation/Windows/Follina-MSDT.md",
-    "Secure-Architectures/Identity-And-Access-Management.md",
-    "Web-Application-Hacking/Broken-Access-Control.md",
-    "Cryptography-And-Authentication/Replay-Attacks.md",
-    "Tools/Cross-OS/Curl-Cheatsheet.md",
     "Secure-Architectures",
     "Tools/Malware/Packers",
     "Services/Databases/OSquery",
@@ -159,7 +185,6 @@
     "Images/azslotswappedsettingsvsslotspecificsettings.png",
     "Images/azurecloudserviceresponsiblitychart.png",
     "Images/azureadbenefitsofazureadjoin.png",
-    "Images/boopkit.png",
-    "Images/eventviewereventtypes.png"
+    "Images/boopkit.png"
   ]
 }

@@ -26,11 +26,14 @@ getent group sudo
 visudo 
 
 # Passwords
-
+# Edit the /etc/passwd file, will prompt for nano, vim-* so
+sudo vipw 
 passwd --status $user
+# Edit the /etc/shadow file
+sudo vipw -s
+
 # View the password change status
 chage -l jane
-
 
 
 # Lock account # places a ! in /etc/shadow
@@ -39,14 +42,23 @@ passwd -l username
 chage -e	change expiry date of passwd
 usermod -s 	change default shell of the user
 
-# groups 
+# Groups 
 # list groups a user is a part of BUT THEN USE THIS FIND COMMAND 
 find / -group users -type f 2>/dev/null
 user* -* *group *
 useradd -G sudo username
 usermod -aG sudo username
 
+groupadd $groupName
+# Add a group with a password
+groupadd -p $groupPassword $groupName
+# Create a system group
+groupadd --system $groupName
 
+# Edit the /etc/group file, will prompt for nano, vim-* so
+sudo vigr 
+# Reload the /etc/group file and update /etc/gshadow
+sudo grpck 
 
 
 # Create a password hash that is compliant:

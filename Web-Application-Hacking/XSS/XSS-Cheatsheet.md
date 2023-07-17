@@ -55,11 +55,7 @@ jaVasCript:/*-/*`/*\`/*'/*"/**/(/* */onerror=alert('XSS') )//%0D%0A%0d%0a//</stY
 
 ## SKing7's XSS Filter Evasion Cheat Sheet
 
-This cheat sheet lists a series of XSS attacks that can be used to bypass certain XSS defensive filters. Please note that input filtering is an incomplete defense for XSS which these tests can be used to illustrate. 
-[Sking7](https://sking7.github.io/articles/218647712.html)
-
-
-
+This cheat sheet lists a series of XSS attacks that can be used to bypass certain XSS defensive filters. Please note that input filtering is an incomplete defense for XSS which these tests can be used to illustrate. [Sking7](https://sking7.github.io/articles/218647712.html)
 
 ## References
 [Owasp](https://owasp.org/www-community/attacks/xss/)
