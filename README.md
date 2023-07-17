@@ -1,5 +1,7 @@
 # Archive
 
+Beware all [Azure AD related topics and Azure AD got renamed to -> Microsoft Entra](https://www.microsoft.com/en-us/security/blog/2023/07/11/microsoft-entra-expands-into-security-service-edge-and-azure-ad-becomes-microsoft-entra-id/), considering scripting a solution to rename everything...
+
 ## Overview 
 
 Hacking Methodology, Cheatsheets, Conceptual-Breakdowns - Now with pages that are spellchecked! 
@@ -13,4 +15,3 @@ See the [[About]] page for historic dumping of everything that was on this page 
 #### For A Contents Page
 
 For full links to all Articles alphabetically see [[Contents]] to `./mkContents.sh` can be used to make this file. I have tested it with graph view, but have personally settled for not having it currently, but is there if anyone ever needs it - I decided the Graph looks better, but the script remains for others if required.
-
