@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Alternate-Resources.md",
+                "file": "Post-Exploitation/Evasion/Logging-And-Monitoring-Evasion/Logging-And-Monitoring-Evasion.md",
                 "mode": "source",
                 "source": false
               }
@@ -37,14 +37,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Web-Application-Hacking/XSS/XSS-Cheatsheet.md",
+                "file": "Post-Exploitation/Evasion/Logging-And-Monitoring-Evasion/ETW-Evasion-Patching-Tracing-Functions.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Alternate-Resources.md",
+                "file": "Post-Exploitation/Evasion/Logging-And-Monitoring-Evasion/ETW-Evasion-Patching-Tracing-Functions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -138,10 +138,21 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "32cf76cd6b345ca6",
+  "active": "ed8f63df71621be6",
   "lastOpenFiles": [
-    "Coding-Scripting-Programming/Languages/Bash/Useful_Bash.md",
+    "Post-Exploitation/Evasion/Logging-And-Monitoring-Evasion/Logging-And-Monitoring-Evasion.md",
+    "Windows/ETW.md",
+    "Post-Exploitation/Evasion/Logging-And-Monitoring-Evasion/ETW-Evasion-Patching-Tracing-Functions.md",
+    "Post-Exploitation/Evasion/Logging-And-Monitoring-Evasion/ETW-Evasion-PowerShell-Reflection.md",
+    "Post-Exploitation/Post-Exploitation-Enumeration/Foothold-Enumeration.md",
+    "Post-Exploitation/Post-Exploitation-Enumeration/Network-Infrastructure-Enumeration.md",
+    "Post-Exploitation/Post-Exploitation-Enumeration/Windows-Post-Exploitation-Info-Gathering.md",
+    "Post-Exploitation/Evasion/Logging-And-Monitoring-Evasion/Group-Policy-Takeover.md",
     "Web-Application-Hacking/XSS/XSS-Cheatsheet.md",
+    "Post-Exploitation/Evasion/Windows-SysAdmin-Evasion.md",
+    "Post-Exploitation/Evasion/Logging-And-Monitoring-Evasion",
+    "Alternate-Resources.md",
+    "Coding-Scripting-Programming/Languages/Bash/Useful_Bash.md",
     "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
     "Coding-Scripting-Programming/Languages/Python/Useful_Python.md",
     "Linux/Linux-Commands/Linux-Users-And-Group-Commands.md",
@@ -149,8 +160,6 @@
     "Network/Network-Protocols.md",
     "Tools/Network-Based/Packet-Analysis/Tcpdump-Cheatsheet.md",
     "Secure-Architectures/EDR/EDR.md",
-    "Post-Exploitation/Evasion/Logging-And-Monitor-Evasion.md",
-    "Windows/ETW.md",
     "Images/mseetwlogevasiondeface.png",
     "Images/msetwdiagram.png",
     "Coding-Scripting-Programming/Malware/Shellcode/Shellcode.md",
@@ -162,14 +171,6 @@
     "Coding-Scripting-Programming/Malware/Binders.md",
     "Tools/Malware/Packers/Packers.md",
     "Linux/Linux-Commands/Linux-Module-Commands.md",
-    "Tools/C2/Sliver/Sliver-Cheatsheet.md",
-    "Tools/EDR-Bypass/ScareCrow.md",
-    "Coding-Scripting-Programming/Malware/Payloads.md",
-    "Tools/Exploit-Frameworks/Metasploit/Metasploit.md",
-    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/File-Transfers.md",
-    "Exploitation/Shells.md",
-    "Windows/Windows-Concepts/Windows-Portable-Executable-Format.md",
-    "Exploitation/Windows/Follina-MSDT.md",
     "Secure-Architectures",
     "Tools/Malware/Packers",
     "Services/Databases/OSquery",
@@ -178,7 +179,6 @@
     "Tools/Debuggers",
     "Tools/Host-Privilege-Escalation/Linux",
     "Tools/Host-Privilege-Escalation/Windows",
-    "Tools/Detection-And-Monitoring",
     "Images/procmonbar.png",
     "Images/ss64-windowsgroups-default-admin-users-and-groups.png",
     "Images/jackmasa-mind-map.png",
