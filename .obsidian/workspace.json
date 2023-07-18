@@ -11,8 +11,24 @@
             "id": "4e2499dea7bd15fd",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "x86-Architecture.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9fc177f2d1b79487",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Post-Exploitation/Evasion/Logging-And-Monitoring-Evasion/ETW-Evasion-Patching-Tracing-Functions.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -65,7 +81,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 570.5110321044922
+    "width": 293.5110321044922
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -81,6 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "x86-Architecture.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -108,8 +125,12 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "ed8f63df71621be6",
+  "active": "4e2499dea7bd15fd",
   "lastOpenFiles": [
+    "Excalidraw/computerArchitecture.excalidraw.md",
+    "x86-Architecture.md",
+    "Post-Exploitation/Evasion/Logging-And-Monitoring-Evasion/ETW-Evasion-Patching-Tracing-Functions.md",
+    "Untitled",
     "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
     "README.md",
     "Post-Exploitation/Evasion/Logging-And-Monitoring-Evasion/Logging-And-Monitoring-Evasion.md",
@@ -118,7 +139,6 @@
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
     "Cloud/Azure/Azure-Administration/Azure-Identities-And-Governance/Azure-Administration-AD-Administration.md",
     "Cloud/Azure/Azure-Administration/Beware-.md",
-    "Post-Exploitation/Evasion/Logging-And-Monitoring-Evasion/ETW-Evasion-Patching-Tracing-Functions.md",
     "Windows/ETW.md",
     "Post-Exploitation/Evasion/Logging-And-Monitoring-Evasion/ETW-Evasion-PowerShell-Reflection.md",
     "Post-Exploitation/Post-Exploitation-Enumeration/Foothold-Enumeration.md",
@@ -138,8 +158,6 @@
     "Secure-Architectures/EDR/EDR.md",
     "Images/mseetwlogevasiondeface.png",
     "Images/msetwdiagram.png",
-    "Coding-Scripting-Programming/Malware/Shellcode/Shellcode.md",
-    "Windows/Windows-Concepts/Windows-Events/Windows-Events-To-Monitor.md",
     "Post-Exploitation/Evasion/EDR-Evasion",
     "Secure-Architectures",
     "Tools/Malware/Packers",
@@ -148,7 +166,6 @@
     "Coding-Scripting-Programming/Anti-Reverse-Engineering",
     "Tools/Debuggers",
     "Tools/Host-Privilege-Escalation/Linux",
-    "Tools/Host-Privilege-Escalation/Windows",
     "Images/procmonbar.png",
     "Images/ss64-windowsgroups-default-admin-users-and-groups.png",
     "Images/jackmasa-mind-map.png",
