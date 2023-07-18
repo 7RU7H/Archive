@@ -1,14 +1,16 @@
 # x86 Architecture
 
+Is a [[CPU-Architecture]]
+
 The CPU - *roughly*:
 ![](computerArchitecture.excalidraw.md)
 
 Parts:
 - Control Unit
 - Arithmetic/Logic Unit
-- Registers - *generally by type (all fit within bitwidth)* - either current or next as the last being store in the register:
+- Registers - *generally by type (all fit within bit width)* - either current or next as the last being store in the register:
 	- Addresses - an address that points somewhere in memory or on the stack
-	- Counters - for Incrementation or decrementation 
+	- Counters - for incrementation or decrementation 
 	- Accumulator - (stores Results)
 	- Instructions - stores instructions
 	- Data 
@@ -61,7 +63,7 @@ EIP | RPI | Instruction Pointer - store the next instruction
 - Code Segment - points to the Code section in the memory
 - Data Segment - points to the program's Data section in the memory
 - Stack Segment - points to the program's Stack in the memory
-- Extra S egment - Programmer determined
+- Extra Segment - Programmer determined
 - FS - use undefined by the hardware 
 - Gs - use undefined by the hardware 
 

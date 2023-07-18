@@ -23,7 +23,7 @@ See [[Phishing]].
 
 ## Internal Network Enumeration
 
-Due to [[Firewalls]], [[Intrusion-Detection-Systems]] and [[Intrusion-Prevention-Systems]] various testing is applied, often with custom tooling to stealthily assess the viable ways to bypass [[Port-Redirection-And-Tunneling]]. 
+Due to [[Firewalls]], [[Intrusion-Detection-Systems]] and [[Intrusion-Prevention-Systems]] various testing is applied, often with custom tooling to stealthily assess the viable ways to bypass [[Port-Redirection-And-Tunnelling]]. 
 
 [[Active-Directory-Footholding]]
 

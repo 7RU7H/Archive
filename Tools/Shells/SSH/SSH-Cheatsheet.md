@@ -29,7 +29,7 @@ Useful Flags
 
 ```
 
-For other tunnelling and port redirection see [[Port-Redirection-And-Tunneling]]:
+For other tunnelling and port redirection see [[Port-Redirection-And-Tunnelling]]:
 ```bash
 # A = Attacker, B = Pivot host, C = Server
 

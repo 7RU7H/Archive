@@ -220,7 +220,7 @@ Condense:
 			7. [[ACL-Abuse]]?
 		3. What services can I access with those credentials?
 			1. Have you mapped the network, with or without SharpHound?
-			1. Is there evidence of network  requiring [[Proxies]] and [[Port-Redirection-And-Tunneling]]  
+			1. Is there evidence of network  requiring [[Proxies]] and [[Port-Redirection-And-Tunnelling]]  
 		4. How can I abuse my permissions to get more permissions and more credentials?
 			1. How can you abuse the permissions allocated to the User or Group of current context?
 		5. Is there alternate tool to the method of doing any previous step?
@@ -398,7 +398,7 @@ Condense:
 			- Anything interesting in the `/etc/hosts` file?
 		       - Is the host joined to an Active Directory domain?
 			- Are there any interesting network connections to other systems in the internal network or even outside the network?
-			- What does access is potential gained from using [[Port-Redirection-And-Tunneling]] 
+			- What does access is potential gained from using [[Port-Redirection-And-Tunnelling]] 
 			- If we domain or network joined what ports are exposed to localhost, but not remote host?
 				- Are there in-house usage of non-standard ports?
 					- Port Redirection, Networking and Network Security considerations?

@@ -4,31 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "2a25889731fff4a7",
+        "id": "f9851e5505c3b2a0",
         "type": "tabs",
         "children": [
           {
-            "id": "4e2499dea7bd15fd",
+            "id": "0b747ef7990a30bf",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "x86-Architecture.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9fc177f2d1b79487",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Post-Exploitation/Evasion/Logging-And-Monitoring-Evasion/ETW-Evasion-Patching-Tracing-Functions.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -97,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "x86-Architecture.md",
+                "file": "Excalidraw/localpotato.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,37 +109,37 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "4e2499dea7bd15fd",
+  "active": "ed8f63df71621be6",
   "lastOpenFiles": [
-    "Excalidraw/computerArchitecture.excalidraw.md",
-    "x86-Architecture.md",
-    "Post-Exploitation/Evasion/Logging-And-Monitoring-Evasion/ETW-Evasion-Patching-Tracing-Functions.md",
-    "Untitled",
-    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
-    "README.md",
-    "Post-Exploitation/Evasion/Logging-And-Monitoring-Evasion/Logging-And-Monitoring-Evasion.md",
-    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Windows-File-Transfers.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
-    "Cloud/Azure/Azure-Administration/Azure-Identities-And-Governance/Azure-Administration-AD-Administration.md",
-    "Cloud/Azure/Azure-Administration/Beware-.md",
-    "Windows/ETW.md",
-    "Post-Exploitation/Evasion/Logging-And-Monitoring-Evasion/ETW-Evasion-PowerShell-Reflection.md",
-    "Post-Exploitation/Post-Exploitation-Enumeration/Foothold-Enumeration.md",
-    "Post-Exploitation/Post-Exploitation-Enumeration/Network-Infrastructure-Enumeration.md",
-    "Post-Exploitation/Post-Exploitation-Enumeration/Windows-Post-Exploitation-Info-Gathering.md",
-    "Post-Exploitation/Evasion/Logging-And-Monitoring-Evasion/Group-Policy-Takeover.md",
-    "Web-Application-Hacking/XSS/XSS-Cheatsheet.md",
-    "Post-Exploitation/Evasion/Windows-SysAdmin-Evasion.md",
-    "Post-Exploitation/Evasion/Logging-And-Monitoring-Evasion",
-    "Alternate-Resources.md",
-    "Coding-Scripting-Programming/Languages/Bash/Useful_Bash.md",
-    "Coding-Scripting-Programming/Languages/Python/Useful_Python.md",
-    "Linux/Linux-Commands/Linux-Users-And-Group-Commands.md",
-    "Images/becomethewwwdata.png",
+    "Exploitation/Windows/PrintNightmare.md",
+    "Internet-Of-Things/MQTT.md",
+    "Network/FTP-Response-Codes.md",
+    "Network/Network-Address-Translation-Defined.md",
     "Network/Network-Protocols.md",
-    "Tools/Network-Based/Packet-Analysis/Tcpdump-Cheatsheet.md",
-    "Secure-Architectures/EDR/EDR.md",
+    "Network/Network-Troubleshooting.md",
+    "Network/Setup-DNS.md",
+    "Network/RDP.md",
+    "Post-Exploitation/Cleanup/Linux-Cleanup.md",
+    "Post-Exploitation/Cleanup/Windows-Cleanup.md",
+    "Post-Exploitation/Evasion/Evading-Firewalls.md",
+    "Post-Exploitation/Evasion/Evading-IPS-And-IDS.md",
+    "Post-Exploitation/Evasion/IDS-Evasion.md",
+    "Post-Exploitation/Evasion/Sandbox-Evasion.md",
+    "Post-Exploitation/Evasion/Windows-SysAdmin-Evasion.md",
+    "Post-Exploitation/Lateral-Movement/Lateral-Movement.md",
+    "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Privilege-Escalation.md",
+    "Post-Exploitation/Shadow-Networking/Pivoting-Tunnelling-And-Redirection-Master-Class-Darnell-And-Thurner-Notes.md",
+    "Post-Exploitation/Shadow-Networking/Port-Redirection-And-Tunnelling.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/Important-Linux-Locations.md",
+    "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Enumeration-Cheatsheet.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+    "Hardware/CPU-Architecture.md",
+    "Hardware/x86-Architecture.md",
+    "Post-Exploitation/Evasion/Logging-And-Monitoring-Evasion/ETW-Evasion-Patching-Tracing-Functions.md",
+    "Excalidraw/computerArchitecture.excalidraw.md",
+    "Untitled",
+    "Post-Exploitation/Evasion/Logging-And-Monitoring-Evasion",
+    "Images/becomethewwwdata.png",
     "Images/mseetwlogevasiondeface.png",
     "Images/msetwdiagram.png",
     "Post-Exploitation/Evasion/EDR-Evasion",

@@ -18,7 +18,7 @@ Invented by [Paul Pols](https://www.linkedin.com/in/paulpols) The Unified Kill C
 6. Persistence ([MITRE Tactic TA0003](https://attack.mitre.org/tactics/TA0002/)) - [[Persistence]]
 7. Defense Evasion ([MITRE Tactic TA0005](https://attack.mitre.org/tactics/TA0005/)) - [[Antivirus-Evasion]], and any technique that done evade defense
 8. Command and Control ([MITRE Tactic TA0011](https://attack.mitre.org/tactics/TA0011/)) - [[C2-Matrix]]
-9. Pivoting ([MITRE Tactic TA0008](https://attack.mitre.org/tactics/TA0008/)) - [[Port-Redirection-And-Tunneling]]
+9. Pivoting ([MITRE Tactic TA0008](https://attack.mitre.org/tactics/TA0008/)) - [[Port-Redirection-And-Tunnelling]]
 11. Discovery ([MITRE Tactic TA0007](https://attack.mitre.org/tactics/TA0007/)) - [[Network-Infrastructure-Enumeration]]
 12. Privilege Escalation - [[Privilege-Escalation]]
 13. Credential Access ([MITRE Tactic TA0006](https://attack.mitre.org/tactics/TA0006/)) [[AD-Credential-Harvesting]]

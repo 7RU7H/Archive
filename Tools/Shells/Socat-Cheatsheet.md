@@ -148,7 +148,7 @@ socat tcp4-listen:8080,reuseaddr,fork socks4A:127.0.0.1:t0rhidd3ns3rvice.onion:8
 #https://superuser.com/questions/1302861/how-i-can-make-port-forwarding-using-tor#1302869
 ```
 
-[[Port-Redirection-And-Tunneling]] with Socat
+[[Port-Redirection-And-Tunnelling]] with Socat
 ```bash
 socat TCP4-LISTEN:$port,reuseaddr,fork TCP4:domain.com:ssh
 ```

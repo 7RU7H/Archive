@@ -222,7 +222,7 @@ Cycle through the ports to enumerate firewall blacklisting.
 Use non blocked ports
 
 ## Port forward/tunneling/mapping
-[[Port-Redirection-And-Tunneling]], but with ncat
+[[Port-Redirection-And-Tunnelling]], but with ncat
 Defined as: Fowarding packet sent to one destination port to another destination port.
 Either `-c` or `--sh-exec`
 Target server should be replaced with local host

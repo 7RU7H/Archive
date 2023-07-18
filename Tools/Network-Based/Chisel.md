@@ -1,6 +1,6 @@
 # Chisel
 
-Given the discrepancy between term used in [[Port-Redirection-And-Tunneling]] as a authorial decision I am just going to try standardise the Offensive Security terminology - so read the linked article for information regard why this repository uses a particular set of definitions.
+Given the discrepancy between term used in [[Port-Redirection-And-Tunnelling]] as a authorial decision I am just going to try standardise the Offensive Security terminology - so read the linked article for information regard why this repository uses a particular set of definitions.
 
 [Chisel](https://github.com/jpillora/chisel.git) *"is a fast TCP/UDP tunnel, transported over HTTP, secured via SSH. Single executable including both client and server. Written in Go (golang). Chisel is mainly useful for passing through firewalls, though it can also be used to provide a secure endpoint into your network."*
 
@@ -90,7 +90,7 @@ socks5 $serverIP $serverPort
 
 ## Reverse Pivot with Chisel Explained:
 
-Chisel is useful when you can not port forward with ssh. You would then need chisel for reverse pivoting, which is the reverse of port forward as the  **Remote box is listening** to connect back the attack to open up the tunnel. For information about [[Port-Redirection-And-Tunneling]].
+Chisel is useful when you can not port forward with ssh. You would then need chisel for reverse pivoting, which is the reverse of port forward as the  **Remote box is listening** to connect back the attack to open up the tunnel. For information about [[Port-Redirection-And-Tunnelling]].
 
 ```bash
 # AttackBox

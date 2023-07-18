@@ -5,7 +5,7 @@ Weaponisation or Exploitation  is second stage of the [[Varonis-Cyber-Kill-Chain
 
 ## Delivery
 
-See [[File-Transfers]], [[Windows-File-Transfers]] and [[Data-Exfiltration-Defined]] all containing some basic and advance uses, while exfiltration maybe in the title these methods can be using internally to transfer files potential with [[Port-Redirection-And-Tunneling]]. But with that stated there is also delivery via:
+See [[File-Transfers]], [[Windows-File-Transfers]] and [[Data-Exfiltration-Defined]] all containing some basic and advance uses, while exfiltration maybe in the title these methods can be using internally to transfer files potential with [[Port-Redirection-And-Tunnelling]]. But with that stated there is also delivery via:
 - Email
 - SMS
 - Controlling IoT devices
