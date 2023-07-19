@@ -11,7 +11,7 @@ Parts:
 - Registers - *generally by type (all fit within bit width)* - either current or next as the last being store in the register:
 	- Addresses - an address that points somewhere in memory or on the stack
 	- Counters - for incrementation or decrementation 
-	- Accumulator - (stores Results)
+	- Accumulator - stores results
 	- Instructions - stores instructions
 	- Data 
 - Cache - Fast memory but small place to store data within the CPU
@@ -60,12 +60,12 @@ EIP | RPI | Instruction Pointer - store the next instruction
 - Trap Flag - TF - indicates if the processor is in debugging mode (one instruction at a time) 
 
 [x86 Segmentation](https://en.wikipedia.org/wiki/X86_memory_segmentation) is implementation of memory segmentation; Segment Registers are 16-bit registers that convert flat memory space into different segments for easier and more possible addressing:
-- Code Segment - points to the Code section in the memory
-- Data Segment - points to the program's Data section in the memory
-- Stack Segment - points to the program's Stack in the memory
-- Extra Segment - Programmer determined
+- Code Segment - CS - points to the Code section in the memory
+- Data Segment - DS - points to the program's Data section in the memory
+- Stack Segment - SS-  points to the program's Stack in the memory
+- Extra Segment - ES - Programmer determined
 - FS - use undefined by the hardware 
-- Gs - use undefined by the hardware 
+- GS - use undefined by the hardware 
 
 - Suffixes:
 	- D stands for (Double|Long)-word (4 Bytes), 
@@ -79,18 +79,18 @@ R8-R15 are 64- bit general purpose registers not present in 32-bit systems
 
 - Stack - First-in-last-out section of memory where data is pushed on to the stack and popped after use, which entails control flow for the program as instruction-after-instruction is pushed then popped off the stack till programs termination.
 	- Stack Frame
-	- Stack Pointer points to the top of the stack and both increments and decrements 
-	- Base Pointer points to the bottom of the stack and remains constant
+	- Stack Pointer points to the top of the Stack and both increments and decrements 
+	- Base Pointer points to the bottom of the Stack and remains constant
 	- Function Prologue:
 		1. Arguments of a function are pushed to the stack before the function starts execution
-		2. Return Address is pushed onto the stack
-		3. Saved Based Pointer is pushed onto the stack
+		2. Return Address is pushed onto the Stack
+		3. Saved Based Pointer is pushed onto the Stack
 		4. Base pointer changed to current top of the Stack  
 		5. Function then executes and the Stack pointer increments
 	 - Function Epilogue:
 		 - Old Base Pointer is popped off the stack and onto the Base Pointer when the function exits
 		 - Return address is popped off to the Instruction Pointer
-		 - Stack Pointer is rearranged to point to the top of the stack
+		 - Stack Pointer is rearranged to point to the top of the Stack
 - Code - contains the programs code
 - Heap - a continuous two dimensional blob of memory of a set size that data is created and destroy during a programs execution
 - Data - contains initialised data that is only constant
