@@ -3,10 +3,10 @@ For [[Useful_Powershell]] general use follow the link.
 A listing of powershell verbs, to grep and lookup. [Reference](https://docs.microsoft.com/en-us/powershell/scripting/developer/cmdlet/approved-verbs-for-windows-powershell-commands?view=powershell-7.2)
 
 ## Common Verbs
-PowerShell uses the System.Management.Automation.VerbsCommon enumeration class to define generic actions that can apply to almost any cmdlet. The following table lists most of the defined verbs
+PowerShell uses the `System.Management.Automation.VerbsCommon` enumeration class to define generic actions that can apply to almost any cmdlet. The following table lists most of the defined verbs
 ```powershell
 
-Common Verbs
+# Common Verbs
 Verb (alias) 	Action 	Synonyms to avoid
 Add (a) 	Adds a resource to a container, or attaches an item to another item. For example, the Add-Content cmdlet adds content to a file. This verb is paired with Remove. 	Append, Attach, Concatenate, Insert
 Clear (cl) 	Removes all the resources from a container but does not delete the container. For example, the Clear-Content cmdlet removes the contents of a file but does not delete the file. 	Flush, Erase, Release, Unmark, Unset, Nullify

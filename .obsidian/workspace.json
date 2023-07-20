@@ -13,19 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Post-Exploitation/Evasion/Logging-And-Monitoring-Evasion/ETW-Evasion-Group-Policy-Takeover.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4e3b9ffe9ea88514",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Post-Exploitation/Evasion/Logging-And-Monitoring-Evasion/ETW-Evasion-Group-Policy-Takeover.md",
+                "file": "Post-Exploitation/Stealth/Evasion/Logging-And-Monitoring-Evasion/Logging-And-Monitoring-Evasion.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Post-Exploitation/Evasion/Logging-And-Monitoring-Evasion/ETW-Evasion-Group-Policy-Takeover.md",
+                "file": "Post-Exploitation/Stealth/Evasion/Logging-And-Monitoring-Evasion/Logging-And-Monitoring-Evasion.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,11 +115,16 @@
   },
   "active": "0b747ef7990a30bf",
   "lastOpenFiles": [
-    "Post-Exploitation/Evasion/Logging-And-Monitoring-Evasion/ETW-Evasion-PowerShell-Reflection.md",
-    "Post-Exploitation/Evasion/Logging-And-Monitoring-Evasion/ETW-Evasion-Disabling-Providers.md",
-    "Post-Exploitation/Evasion/Logging-And-Monitoring-Evasion/ETW-Evasion-Patching-Tracing-Functions.md",
-    "Post-Exploitation/Evasion/Logging-And-Monitoring-Evasion/ETW-Evasion-Group-Policy-Takeover.md",
-    "Post-Exploitation/Evasion/Logging-And-Monitoring-Evasion/Logging-And-Monitoring-Evasion.md",
+    "Coding-Scripting-Programming/Languages/Powershell/Powershell-Verbs.md",
+    "Coding-Scripting-Programming/Languages/Powershell/Useful_Powershell.md",
+    "Post-Exploitation/Stealth/Evasion/Logging-And-Monitoring-Evasion/ETW-Evasion-PowerShell-Reflection.md",
+    "Post-Exploitation/Stealth/Evasion/Logging-And-Monitoring-Evasion/ETW-Evasion-Group-Policy-Takeover.md",
+    "Post-Exploitation/Stealth/Evasion/Logging-And-Monitoring-Evasion/ETW-Evasion-Disabling-Providers.md",
+    "Post-Exploitation/Stealth/Evasion/Logging-And-Monitoring-Evasion/ETW-Evasion-Patching-Tracing-Functions.md",
+    "Post-Exploitation/Stealth/Evasion/Logging-And-Monitoring-Evasion/ETW-Evasion-Abusing-Log-Pipeline.md",
+    "Coding-Scripting-Programming/Languages/Powershell/Basic_Powershell.md",
+    "Coding-Scripting-Programming/Languages/Powershell/Powershell-Eventlogging.md.md",
+    "Post-Exploitation/Stealth/Evasion/Logging-And-Monitoring-Evasion/Logging-And-Monitoring-Evasion.md",
     "Hardware/x86-Architecture.md",
     "Exploitation/Windows/PrintNightmare.md",
     "Internet-Of-Things/MQTT.md",
@@ -141,24 +134,19 @@
     "Network/Network-Troubleshooting.md",
     "Network/Setup-DNS.md",
     "Network/RDP.md",
-    "Post-Exploitation/Cleanup/Linux-Cleanup.md",
-    "Post-Exploitation/Cleanup/Windows-Cleanup.md",
-    "Post-Exploitation/Evasion/Evading-Firewalls.md",
-    "Post-Exploitation/Evasion/Evading-IPS-And-IDS.md",
-    "Post-Exploitation/Evasion/IDS-Evasion.md",
-    "Post-Exploitation/Evasion/Sandbox-Evasion.md",
-    "Post-Exploitation/Evasion/Windows-SysAdmin-Evasion.md",
-    "Post-Exploitation/Lateral-Movement/Lateral-Movement.md",
-    "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Privilege-Escalation.md",
-    "Post-Exploitation/Shadow-Networking/Pivoting-Tunnelling-And-Redirection-Master-Class-Darnell-And-Thurner-Notes.md",
-    "Post-Exploitation/Shadow-Networking/Port-Redirection-And-Tunnelling.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Important-Linux-Locations.md",
+    "Post-Exploitation/Stealth/Cleanup/Linux-Cleanup.md",
+    "Post-Exploitation/Stealth/Cleanup/Windows-Cleanup.md",
+    "Post-Exploitation/Stealth/Evasion/Evading-Firewalls.md",
+    "Post-Exploitation/Stealth/Evasion/Evading-IPS-And-IDS.md",
+    "Post-Exploitation/Stealth/Evasion/IDS-Evasion.md",
+    "Post-Exploitation/Stealth/Evasion/Sandbox-Evasion.md",
+    "Post-Exploitation/Stealth/Evasion/Windows-SysAdmin-Evasion.md",
     "Untitled",
-    "Post-Exploitation/Evasion/Logging-And-Monitoring-Evasion",
+    "Post-Exploitation/Stealth/Evasion/Logging-And-Monitoring-Evasion",
     "Images/becomethewwwdata.png",
     "Images/mseetwlogevasiondeface.png",
     "Images/msetwdiagram.png",
-    "Post-Exploitation/Evasion/EDR-Evasion",
+    "Post-Exploitation/Stealth/Evasion/EDR-Evasion",
     "Secure-Architectures",
     "Tools/Malware/Packers",
     "Services/Databases/OSquery",
