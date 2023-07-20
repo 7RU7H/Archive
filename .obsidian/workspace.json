@@ -13,13 +13,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/Data-Processing/JQ.md",
+                "file": "Tools/AD-Offensive/Impacket/Impacket-Cheatsheet.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d50bdf3e1339e6d4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/AD-Offensive/Bloodhound-Guide.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4eb4c8c7c284ed2e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -85,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/Data-Processing/JQ.md",
+                "file": "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,12 +138,13 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "0b747ef7990a30bf",
+  "active": "4eb4c8c7c284ed2e",
   "lastOpenFiles": [
+    "Tools/AD-Offensive/Crackmapexec/Crackmapexec-Cheatsheet.md",
     "Tools/AD-Offensive/Bloodhound-Guide.md",
+    "Tools/AD-Offensive/Impacket/Impacket-Cheatsheet.md",
     "Tools/Data-Processing/JQ.md",
     "Tools/AD-Offensive/Neo4j/Untitled.md",
-    "Tools/AD-Offensive/Impacket/Impacket-Cheatsheet.md",
     "Post-Exploitation/Lateral-Movement/Active-Directory-Lateral-Movement/Active-Directory-Lateral-Movement.md",
     "Post-Exploitation/Stealth/Evasion/Logging-And-Monitoring-Evasion/Logging-And-Monitoring-Evasion.md",
     "Coding-Scripting-Programming/Languages/Powershell/Powershell-Verbs.md",
@@ -140,7 +166,6 @@
     "Network/Setup-DNS.md",
     "Network/RDP.md",
     "Post-Exploitation/Stealth/Cleanup/Linux-Cleanup.md",
-    "Post-Exploitation/Stealth/Cleanup/Windows-Cleanup.md",
     "Untitled",
     "Post-Exploitation/Stealth/Evasion/Logging-And-Monitoring-Evasion",
     "Images/becomethewwwdata.png",
