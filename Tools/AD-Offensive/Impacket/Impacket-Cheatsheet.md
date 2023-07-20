@@ -99,6 +99,9 @@ getPac.py -targetUser Administrator $domain/$username:$password
 Given a password, hash or aesKey, this script will request a TGT and save it as ccache.
 ```bash
 getTGT.py -hashes lm:nt domain.com/user
+
+
+impacket-getTGT -dc-ip $dcIP $domain/$username:$password
 ```
 
 ## GetST.py

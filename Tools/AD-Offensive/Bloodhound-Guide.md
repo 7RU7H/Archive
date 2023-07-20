@@ -1,6 +1,59 @@
 # Bloodhound Guide
 
-**Beware the bugs! - Git clone bloodhound and sharphound**
+# Considerations...
+
+- **Beware the bugs! - Git clone bloodhound and sharphound**
+- **BloodHound  is awesome but sometimes manually parsing data with JQ can net passwords** 
+	-  [[JQ]] improvements from [Manually Parse Bloodhound Data with JQ to Create Lists of Potentially Vulnerable Users and Computers](https://www.youtube.com/watch?v=o3W4H0UfDmQ)
+
+
+## Getting the most out of the visualisation 
+
+Change `Settings -> Edge Label Display & Node Label Display -> [both] to Always Display`, may improve infomation visibility, but that may require reconfiguration in dense graphs - larger networks displayed in graph format by bloodhound.
+
+- Bloodhound Debug mode to show Cipher Query
+`Settings -> Tick Debug Mode`
+
+1. Change the Layout! - Why? - Because you want to escalate or move laterally, viewing the network in both ways can help when the graph is very dense with information
+	- Directed Graphs have a direction, showing connections in linear chain
+	- Hierarchical Graph show nestings within Heirarchies, showing connection via Privilege
+2. Drag stuff around! - Why? - Because Bloodhound does not optimise the positioning
+3. Click the Edges! - Why? Because the edges in some queries provide exploitation methodology
+4. Use Filters - Why? At some point you just want to display very specific information, filters, filters, filters. 
+
+#### Node Info
+-   **Overview** - Provides summaries information such as the number of active sessions the account has and if it can reach high-value targets.  
+-   **Node Properties** - Shows information regarding the AD account. 
+-   **Extra Properties** - Provides more detailed AD information.
+-   **Group Membership** - Shows information regarding the groups that the account is a member of.  
+-   **Local Admin Rights** - Provides information on domain-joined hosts where the account has administrative privileges.  
+-   **Execution Rights** - Provides information on special privileges.  
+-   **Outbound Control Rights** - Shows information regarding AD objects where this account has permissions to modify their attributes.  
+-   **Inbound Control Rights** -  Provides information regarding AD objects that can modify the attributes of this account.
+
+
+#### Mapping the Pwnable Path to DC
+Things to do
+1. Enter username owned -> `Right Click Node -> Mark User as Owned`
+1. Explore Queries
+1. `Right Click <connection between two nodes> -> Abuse Info` (Abuse Info uses Powerview)
+
+Useful place to start from experience:
+2. Show Path from Kerberoastable
+3. Shortest Path from Owned Principals - Show nested group policy of pwned account
+
+#### Custom Queries
+
+Bloodhound query - `Click -> "Create Custom Query" in the Analysis tab in Bloodhound`
+
+
+```js
+// Which machine accounts have administrative permissions over another
+MATCH p=(c1:Computer)-[r1:MemberOf*1..]->(g:Group)-[r2:AdminTo]->(n:Computer) RETURN p
+```
+
+
+
 
 ## SharpHound
 
@@ -73,49 +126,6 @@ Beware importanting data is stored and retain after exiting. Comply with data pr
 bloodhound --no-sandbox
 ```
 
-## Getting the most out of the visualisation 
-
-Change `Settings -> Edge Label Display & Node Label Display -> [both] to Always Display`, may improve infomation visibility, but that may require reconfiguration in dense graphs - larger networks displayed in graph format by bloodhound.
-
-
-1. Change the Layout! - Why? - Because you want to escalate or move laterally, viewing the network in both ways can help when the graph is very dense with information
-	- Directed Graphs have a direction, showing connections in linear chain
-	- Hierarchical Graph show nestings within Heirarchies, showing connection via Privilege
-2. Drag stuff around! - Why? - Because Bloodhound does not optimise the positioning
-3. Click the Edges! - Why? Because the edges in some queries provide exploitation methodology
-4. Use Filters - Why? At some point you just want to display very specific information, filters, filters, filters. 
-
-## Node Info
--   **Overview** - Provides summaries information such as the number of active sessions the account has and if it can reach high-value targets.  
--   **Node Properties** - Shows information regarding the AD account. 
--   **Extra Properties** - Provides more detailed AD information.
--   **Group Membership** - Shows information regarding the groups that the account is a member of.  
--   **Local Admin Rights** - Provides information on domain-joined hosts where the account has administrative privileges.  
--   **Execution Rights** - Provides information on special privileges.  
--   **Outbound Control Rights** - Shows information regarding AD objects where this account has permissions to modify their attributes.  
--   **Inbound Control Rights** -  Provides information regarding AD objects that can modify the attributes of this account.
-
-
-## Mapping the Pwnable Path to DC
-Things to do
-1. Enter username owned -> `Right Click Node -> Mark User as Owned`
-1. Explore Queries
-1. `Right Click <connection between two nodes> -> Abuse Info` (Abuse Info uses Powerview)
-
-Useful place to start from experience:
-2. Show Path from Kerberoastable
-3. Shortest Path from Owned Principals - Show nested group policy of pwned account
-
-## Custom Queries
-
-Bloodhound query - `Click -> "Create Custom Query" in the Analysis tab in Bloodhound`
-
-
-```js
-// Which machine accounts have administrative permissions over another
-MATCH p=(c1:Computer)-[r1:MemberOf*1..]->(g:Group)-[r2:AdminTo]->(n:Computer) RETURN p
-```
-
 ## References
 
 [Docs](https://bloodhound.readthedocs.io/en/latest/data-analysis/bloodhound-gui.html)
@@ -124,3 +134,4 @@ MATCH p=(c1:Computer)-[r1:MemberOf*1..]->(g:Group)-[r2:AdminTo]->(n:Computer) RE
 [Python Ingestor](https://github.com/fox-it/BloodHound.py)
 [Sharphound](https://github.com/BloodHoundAD/BloodHound/tree/master/Collectors)
 [Flangvik/SharpCollection](https://github.com/Flangvik/SharpCollection) 
+[Ippsec: Manually Parse Bloodhound Data with JQ to Create Lists of Potentially Vulnerable Users and Computers](https://www.youtube.com/watch?v=o3W4H0UfDmQ)
