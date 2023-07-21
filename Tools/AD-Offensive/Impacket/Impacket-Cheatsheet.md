@@ -1,9 +1,8 @@
 # Impacket Cheatsheet
 
-WARNING impacket does not handle NTFS well - [Ippsec Blackfield HTB](https://www.youtube.com/watch?v=IfCysW0Od8w)
+WARNING `impacket` does not handle NTFS well - [Ippsec Blackfield HTB](https://www.youtube.com/watch?v=IfCysW0Od8w)
 
-From [Impacket Github](https://github.com/SecureAuthCorp/impacket) or [secureAuth](https://www.secureauth.com/labs/open-source-tools/impacket/) for a full listing and detailed discription of each tool
-*"Impacket is a collection of Python classes for working with network protocols."*
+From [Impacket Github](https://github.com/SecureAuthCorp/impacket) or [secureAuth](https://www.secureauth.com/labs/open-source-tools/impacket/) for a full listing and detailed description of each tool *"Impacket is a collection of Python classes for working with network protocols."*
 
 ## What protocols are featured?
 
@@ -16,7 +15,7 @@ From [Impacket Github](https://github.com/SecureAuthCorp/impacket) or [secureAut
 -   Portions/full implementation of the following MSRPC interfaces: EPM, DTYPES, LSAD, LSAT, NRPC, RRP, SAMR, SRVS, WKST, SCMR, BKRP, DHCPM, EVEN6, MGMT, SASEC, TSCH, DCOM, WMI, OXABREF, NSPI, OXNSPI.
 -   Portions of TDS (MSSQL) and LDAP protocol implementations.
 
-Impacket is an awesome suite of scripts written in python that are incorpated into tools like [[Crackmapexec-Cheatsheet]]. It is very useful suite of tools for [[Active-Directory-Enumeration-Defined]], [[Active-Directory-Footholding]], [[Attacking-Kerberos]], [[Active-Directory-Lateral-Movement]] and general [[Active-Directory-Privilege-Escalation]].
+Impacket is an awesome suite of scripts written in python that are incorporated into tools like [[Crackmapexec-Cheatsheet]]. It is very useful suite of tools for [[Active-Directory-Enumeration-Defined]], [[Active-Directory-Footholding]], [[Attacking-Kerberos]], [[Active-Directory-Lateral-Movement]] and general [[Active-Directory-Privilege-Escalation]].
 
 Working with ccache files on Linux:
 ```bash

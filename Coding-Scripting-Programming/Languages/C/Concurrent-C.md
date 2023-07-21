@@ -65,7 +65,7 @@ int main(void)
 }
 ```
 
-CreateThread - Windows API
+`CreateThread` - [[Windows-API]]
 
 ## References
 
