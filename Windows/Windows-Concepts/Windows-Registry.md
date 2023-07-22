@@ -20,34 +20,42 @@ Run OR RunOnce
 
 ## Key Layout
 Root keys:
-    HKEY_CURRENT_USER
-		Root of all configuration information for the current user - HKCU
-		Environment # user environment variables
-    HKEY_HKEY_USERS
-		Contains all the actively loaded user profiles on the computer - HKU
-			Registry hive 	Supporting files
-			`HKEY_CURRENT_CONFIG`	System, System.alt, System.log, System.sav
-			`HKEY_CURRENT_USER` 	Ntuser.dat, Ntuser.dat.log
-			`HKEY_LOCAL_MACHINE\SAM` 	Sam, Sam.log, Sam.sav
-			`HKEY_LOCAL_MACHINE\Security` 	Security, Security.log, Security.sav
-			`HKEY_LOCAL_MACHINE\Software` 	Software, Software.log, Software.sav
-			`HKEY_LOCAL_MACHINE\System` 	System, System.alt, System.log, System.sav
-			`HKEY_USERS\.DEFAULT` 	Default, Default.log, Default.sav
-		HKCU is a subkey of HKU
-    HKEY_LOCAL_MACHINE
-		Configuration information of the local machine - HKLM
-		`\SYSTEM\CurrentControlSet\Control\Session Manager\Environment`	System environment variables
-    HKEY_CLASSES_ROOT
-		`Subkey HKLM\Software` - HKCR, stores information program execution:
-		From Windows 2000 `HKCU\Software\Classes would override the defaults of HKLM\Software\Classes`
-		HKCR merges a view of the registry from both sources and back compatible with earlier windoes versions
-		Be considerate of the parent/child structuring when store keys where exeisting keys enter the search chain
-   HKEY_CURRENT_CONFIG
-		Contains information about the hardware profile that is used by the local computer at system startup.
-   HKEY_PERFORMANCE_DATA
-		Stores information related to system performance, THE DATA associated with this key is reference by registry functions   
+- `HKEY_CURRENT_USER`
+	- Root of all configuration information for the current user
+	- HKCU Environment user environment variables
+- `HKEY_HKEY_USERS
+	- Contains all the actively loaded user profiles on the computer - HKU
+		- Registry hive     Supporting files
+		- `HKEY_CURRENT_CONFIG`	System, System.alt, System.log, System.sav
+		- `HKEY_CURRENT_USER` 	Ntuser.dat, Ntuser.dat.log
+		- `HKEY_LOCAL_MACHINE\SAM` 	Sam, Sam.log, Sam.sav
+		- `HKEY_LOCAL_MACHINE\Security` 	Security, Security.log, Security.sav
+		- `HKEY_LOCAL_MACHINE\Software` 	Software, Software.log, Software.sav
+		- `HKEY_LOCAL_MACHINE\System` 	System, System.alt, System.log, System.sav
+		- `HKEY_USERS\.DEFAULT` 	Default, Default.log, Default.sav
+		- HKCU is a subkey of HKU
+- `HKEY_LOCAL_MACHINE`
+	- Configuration information of the local machine - HKLM
+	- `\SYSTEM\CurrentControlSet\Control\Session Manager\Environment` - System environment variables
+- `HKEY_CLASSES_ROOT`
+	- `Subkey HKLM\Software` - HKCR, stores information program execution:
+	- From Windows 2000 `HKCU\Software\Classes would override the defaults of HKLM\Software\Classes`
+	- HKCR merges a view of the registry from both sources and back compatible with earlier windows versions. Be considerate of the parent/child structuring when store keys where existing keys enter the search chain
+- `HKEY_CURRENT_CONFIG`
+	- Contains information about the hardware profile that is used by the local computer at system startup.
+ - `HKEY_PERFORMANCE_DATA`
+	- Stores information related to system performance, THE DATA associated with this key is reference by registry functions   
 
-Predefined keys: HKEY_CLASSES_ROOT, HKEY_CURRENT_CONFIG, HKEY_CURRENT_USER, HKEY_CURRENT_USER_LOCAL_SETTINGS, HKEY_LOCAL_MACHINE, HKEY_PERFORMANCE_DATA, HKEY_PERFORMANCE_NLSTEXT, HKEY_PERFORMANCE_TEXT, HKEY_USERS
+Predefined keys: 
+- `HKEY_CLASSES_ROOT`
+- `HKEY_CURRENT_CONFIG`
+- `HKEY_CURRENT_USER`
+- `HKEY_CURRENT_USER_LOCAL_SETTINGS`
+- `HKEY_LOCAL_MACHINE`
+- `HKEY_PERFORMANCE_DATA`
+- `HKEY_PERFORMANCE_NLSTEXT`
+- `HKEY_PERFORMANCE_TEXT`
+- `HKEY_USERS`
 
 Registry Functions
 
@@ -95,17 +103,17 @@ RegSetKeySecurity |	Sets the security of an open registry key.
 RegSetValueEx |	Sets the data and type of a specified value under a registry key.
 RegUnLoadKey |	Unloads the specified registry key and its subkeys from the registry.
 
-By default, there are four Run and RunOnce keys, which live under HKEY_LOCAL_MACHINE and HKEY_CURRENT_USER:
-```cmd
+By default, there are four `Run` and `RunOnce` keys, which live under `HKEY_LOCAL_MACHINE` and `HKEY_CURRENT_USER`:
+```powershell
 HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run 
 HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run 
 HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\RunOnce 
 HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\RunOnce
 ```
 MAC address:
-```
+```powershell
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\ {4D36E972-E325-11CE-BFC1-08002BE10318}
-IP address:
+# IP address:
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\Interfaces
 ```
 
@@ -115,11 +123,18 @@ A majority are stored: `C:\Windows\System32\Config`
 
 Hive | Mounting 
 --- | ---
-DEFAULT |	(mounted on HKEY_USERS\DEFAULT)
-SAM |	(mounted on HKEY_LOCAL_MACHINE\SAM)
-SECURITY |	(mounted on HKEY_LOCAL_MACHINE\Security)
-SOFTWARE |	(mounted on HKEY_LOCAL_MACHINE\Software)
-SYSTEM  |	mounted on HKEY_LOCAL_MACHINE\System)
+DEFAULT |	(mounted on `HKEY_USERS\DEFAULT`)
+SAM |	(mounted on `HKEY_LOCAL_MACHINE\SAM`)
+SECURITY |	(mounted on `HKEY_LOCAL_MACHINE\Security`)
+SOFTWARE |	(mounted on `HKEY_LOCAL_MACHINE\Software`)
+SYSTEM  |	mounted on `HKEY_LOCAL_MACHINE\System`)
+
+```powershell
+# Windows Registry 
+SOFTWARE\Microsoft\Windows NT\CurrentVersion\NetworkList\Profiles
+# Last Assign DHCP IP
+HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\Interfaces
+```
 
 Hives containing user information both of these files are hidden files
 

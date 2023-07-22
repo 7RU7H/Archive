@@ -1,8 +1,10 @@
 # Windows Networking And Services
+
+
 For full list of commands see [[Windows-Networking-Commands]]
 
 
-## Essentials
+#### Essentials
 
 CLI is fast, efficient and powerful; a few exploits require GUI use Remote Desktop Protocol (RDP).
 
@@ -12,7 +14,8 @@ rdesktop
 xfreerdp
 ```
 
-## Basic Commands
+#### Basic Commands
+
 See full listing of [[Windows-Networking-Commands]]  
 
 ifconfig to inspect IPv4 and IPv6 addresses, subnet mask and default gateway
@@ -36,13 +39,14 @@ set VAR # for specific environment variables
 
 Beware!! Some services are necessary for computers with Windows to run.
 
-# Name Resolution:
+#### Name Resolution:
 
 NetBIOS1 was originally created as a Layer 5 (OSI model2) protocol to connect devices to each other within a Local Area Network (LAN). As time went on, there was a higher demand in requiring data to traverse outside of the LAN.  Because packets needed to be routed externally, NetBIOS was eventually updated to a Layer 4 protocol, called NetBIOS over TCP/IP (NetBT).3 
-By default, NBT runs on ports 137 (TCP/UDP), 138 (UDP), and 139 (TCP). 
-While NBT is similar to DNS in that it resolves IP addresses to host/domain names, DNS is a layer 7 protocol (port 53 - TCP/UDP) and is more scalable due to its hierarchical naming structure.
 
-Windows hosts file is lcoated in `%SystemRoot%\System32\drivers\etc\hosts`
+- By default, NBT runs on ports 137 (TCP/UDP), 138 (UDP), and 139 (TCP). 
+- While NBT is similar to DNS in that it resolves IP addresses to host/domain names, DNS is a layer 7 protocol (port 53 - TCP/UDP) and is more scalable due to its hierarchical naming structure.
+
+Windows hosts file is located in `%SystemRoot%\System32\drivers\etc\hosts`
 
 SMB port 139 445
 net share # to configure
@@ -53,9 +57,9 @@ GUI Configure DNS
 ![](setdnsinwindows.png)
 
 
-# Remote Administration:
+#### Remote Administration:
 
-Windows Sysinternals1 is a collection of freeware tools that can assist in things like diagnosing, troubleshooting, and managing Windows systems. 
+Windows Sysinternals (consider the [[Sysinternals-Hub]]) is a collection of freeware tools that can assist in things like diagnosing, troubleshooting, and managing Windows systems. 
 Psexec2 is one of the CLI tools within the Sysinternals suite that has many features, 
 but one of the more prominent features is the ability to launch command prompts on remote devices.
 
@@ -64,8 +68,8 @@ netsh advfirewall set allprofiles state on # turn it all
 `C:\\WINDOWS\\system32>netsh advfirewall firewall add rule ?`
 
 The number of arguments provided is not valid. Check help for the correct syntax.
-```
-Usage: add rule name=<string>
+```powershell
+	Usage: add rule name=<string>
       dir=in|out
       action=allow|block|bypass
       [program=<program path>]

@@ -7,6 +7,7 @@ Remember to consider modern CPUs and [[Threading]]
 *An [access-tokens](https://learn.microsoft.com/en-us/windows/win32/secauthz/access-tokens) is an object that describes the [security context](https://learn.microsoft.com/en-us/windows/desktop/SecGloss/s-gly) of a [process](https://learn.microsoft.com/en-us/windows/desktop/SecGloss/p-gly) or thread. The information in a token includes the identity and privileges of the user account associated with the process or thread.*
 
 ## Process Component Purposes
+
 Process Component 	|	Purpose
 --- | ---
 Private Virtual Address Space | Virtual memory addresses that the process is allocated.
@@ -17,6 +18,7 @@ Process ID | Unique numerical identifier of the process.
 Threads | Section of a process scheduled for execution.
 
 ## Depiction of a process in memory
+
 Component | Purpose
 --- | ---
 Code | Code to be executed by the process.
@@ -26,6 +28,7 @@ Process Resources | Defines further resources of the process.
 Environment Block | Data structure to define process information.
 
 ## Threads
+
 Component |  Purpose
 --- | ---
 Stack  | All data relevant and specific to the thread (exceptions, procedure calls, etc.)
@@ -34,6 +37,7 @@ Stack Argument | Unique value assigned to each thread
 Context Structure | Holds machine register values maintained by the kernel
 
 ## cmd:tasklist
+
 Exe | Description 
 --- | ---
 smss.exe | Session Manager responsible for mapping out virtual address space
@@ -45,8 +49,7 @@ MsMpEng | Microsoft Defender
 
 reference:https://andreafortuna.org/2017/06/15/standard-windows-processes-a-brief-reference/
 
-WINDOWS 7 WINDOWS 10 is at the bottom as to changes
-dle and System
+WINDOWS 7 WINDOWS 10 is at the bottom as to changes idle and System
 
     Created by ntoskrnl.exe via the process manager function, which creates and terminates processes and threads.
     No visible parent processes

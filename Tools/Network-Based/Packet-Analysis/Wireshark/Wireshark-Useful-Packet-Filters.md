@@ -267,7 +267,7 @@ Mitigate
 
 This protocol is potentially an attack vector for MITM, Credential stealing and unauthorised access, [[Phishing]], Malware planting, and Data Exfiltration - [[Data-Exfiltration-Defined]]. Considerations as to detecting malicious FTP traffic:
 - Commands that alter file system
-- Bruteforcing
+- Brute-forcing
 
 For [[FTP-Response-Codes]]
 ```c
@@ -290,7 +290,7 @@ ftp.response.code == 530
 
 #### HTTP
 
-Consider reviewing [[HTTP-Defined]] as [[Phishing]] pages, web attacks - [[Web-Hacking-Checklist]], [[Data-Exfiltration-Over-HTTP-and-HTTPS]] and C2 traffic is something http(s) - [[C2-Matrix]]. Generally with web attack detection it is about understanding where  and what data is being trafficked to the potential vulnerable web server by understanding the attack.
+Consider reviewing [[HTTP-Defined]] as [[Phishing]] pages, web attacks - [[Web-Hacking-Checklist]], [[Data-Exfiltration-Over-HTTP-and-HTTPS]] and C2 traffic is something HTTP(s) - [[C2-Matrix]]. Generally with web attack detection it is about understanding where  and what data is being trafficked to the potential vulnerable web server by understanding the attack.
 
 [[HTTP-Response-codes]] - https://en.wikipedia.org/wiki/List_of_HTTP_status_codes
 ```c

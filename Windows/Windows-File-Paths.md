@@ -1,6 +1,6 @@
 # Windows File paths
 
-```
+```powershell
 C:/Users/Administrator/NTUser.dat
 C:/Documents and Settings/Administrator/NTUser.dat
 C:/apache/logs/access.log

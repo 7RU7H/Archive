@@ -23,7 +23,7 @@ RADIUS | A server for authenticating clients, not just for wifi.
 
 ## Checks and Airmon-ng
 
-First Check adapter configuration, check for `Mode:Monitor` and then check again after running `airmon-ng`
+First Check adaptor configuration, check for `Mode:Monitor` and then check again after running `airmon-ng`
 ```bash
 iwconfig # See if tool is avaliable
 airmon-ng start wlan<NUM># Put into monitor mode
@@ -48,6 +48,7 @@ airmon-ng stop wlan<NUM> # End monitor mode
 
 
 ## References
+
 [THM Room](https://tryhackme.com/room/wifihacking101)
 [David Bombal](https://davidbombal.com/hack-wifi-from-1-80/)
 [medium Fabian Voith](https://fabian-voith.de/2020/04/22/get-alfa-awus036ach-usb-nic-running-on-kali-vm-to-attack-wireless-networks/)
