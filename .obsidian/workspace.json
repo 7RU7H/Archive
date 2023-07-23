@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Services/Network-Access-Applications/UniFi.md",
+                "file": "Security-Disciplines/Blue-Team/Finding-a-Domains-Worth-of-Malware-Jeff-McJunkin.md",
                 "mode": "source",
                 "source": false
               }
@@ -31,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "MacOS/macOS-Hub-Page.md",
+                "file": "Security-Disciplines/Blue-Team/Finding-a-Domains-Worth-of-Malware-Jeff-McJunkin.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,15 +125,19 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "ac1b10439f5536ef",
+  "active": "0b747ef7990a30bf",
   "lastOpenFiles": [
-    "MacOS/masOS-OS-X-Timeline.md",
+    "Cryptography-And-Authentication/Cryptography.md",
+    "Cryptography-And-Authentication/Cracking-Files.md",
+    "Security-Disciplines/Security-Operations-Centre.md",
+    "Security-Disciplines/Digital-Forensics/Windows-Forensics.md",
+    "Services/Network-Access-Applications/UniFi.md",
     "MacOS/macOS-Hub-Page.md",
+    "MacOS/masOS-OS-X-Timeline.md",
     "Security-Disciplines/Blue-Team/Endpoint-Security.md",
     "MacOS",
     "Coding-Scripting-Programming/Languages/Powershell/PowerShell-Event-Logging.md.md",
     "Security-Disciplines/Blue-Team/Finding-a-Domains-Worth-of-Malware-Jeff-McJunkin.md",
-    "Services/Network-Access-Applications/UniFi.md",
     "Windows/Windows-Concepts/Windows-Networking.md",
     "Windows/Windows-Concepts/Windows-Portable-Executable-Format.md",
     "Windows/Windows-Concepts/Windows-Processes.md",
@@ -151,10 +154,6 @@
     "Tools/Network-Based/Packet-Analysis/Wireshark/Wireshark.md",
     "Security-Disciplines/Digital-Forensics/Network-Forensics-Defined.md",
     "Post-Exploitation/Stealth/Evasion/Antivirus-Evasion/Signature-Evasion.md",
-    "Post-Exploitation/Stealth/Evasion/Antivirus-Evasion/Obfuscation-Principles.md",
-    "Coding-Scripting-Programming/Languages/Bash/Useful_Bash.md",
-    "Coding-Scripting-Programming/Languages/C/Useful-C.md",
-    "Coding-Scripting-Programming/Languages/C/Concurrent-C.md",
     "Post-Exploitation/Stealth/Evasion/Logging-And-Monitoring-Evasion",
     "Images/becomethewwwdata.png",
     "Images/mseetwlogevasiondeface.png",

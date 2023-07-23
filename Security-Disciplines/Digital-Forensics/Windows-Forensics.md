@@ -1,7 +1,7 @@
 
 ## Registry
 
-For a cheatsheet and short explainations of Hives and Keys see [[Windows-Registry]]. Bear in mind in attempting to copy the registry hives from `%WINDIR%\System32\Config` you will not be able, as it is a restricted file. Use:
+For a cheatsheet and short explanations of Hives and Keys see [[Windows-Registry]]. Bear in mind in attempting to copy the registry hives from `%WINDIR%\System32\Config` you will not be able, as it is a restricted file. Use:
 - [[Kape]]
 - [[Autopsy]]
 - [FTK Imager](https://www.exterro.com/ftk-imager) is similar to Autopsy
@@ -23,7 +23,7 @@ Shortcut file locations:
 LECmd.exex to parse shortcut files
 `LECmd.exe -f <path-to-shortcut-files> --csv <path-to-save-csv>`
 
-I/E/Edge History
+Internet Explorer / Edge History
 `C:\Users\<username>\AppData\Local\Microsoft\Windows\WebCache\WebCacheV*.dat`
 
 
@@ -64,4 +64,4 @@ Setup information is stored in:
 
 [Eric ZimmermanGithub.io](https://ericzimmerman.github.io/#!index.md)
 [THM Windows Froensic Room 2](https://tryhackme.com/room/windowsforensics2)
-[THM Forensics Room 1](https://tryhackme.com/room/windowsforensics1)
+[THM Windows Forensics Room 1](https://tryhackme.com/room/windowsforensics1)

@@ -82,3 +82,4 @@ Preview Pane
 [Darwin](https://github.com/apple/darwin-xnu)
 [Aqua](https://en.wikipedia.org/wiki/Aqua_(user_interface)#References)
 [Cocoa](https://developer.apple.com/library/archive/documentation/macOSX/Conceptual/OSX_Technology_Overview/CocoaApplicationLayer/CocoaApplicationLayer.html) 
+[Finder](https://support.apple.com/en-us/HT201732) 

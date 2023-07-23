@@ -34,7 +34,7 @@ Encoding: A means of transforming data from one format to another.
 
 Encryption: The process of scrambling data or messages, making it unreadable and secret.
 
-Entropy: The amount of unpredictability in a given ciphertext. Entropy colloquially refers to how close the ciphertext is to ideal randomly generated text.
+Entropy: The amount of unpredictability in a given cipher text. Entropy colloquially refers to how close the cipher text is to ideal randomly generated text.
 
 Fundamental Theorem of Arithmetic: The mathematical statement that every natural number greater than 1 must be either prime or a product of unique prime factors. Forms the basis of many asymmetric cryptography implementations.
 
@@ -52,7 +52,7 @@ Salt: A string appended to a password to create a unique digest when run through
 
 Stream Cipher: An encryption algorithm that operates on one bit of plaintext at a time. Contrast with Block Cipher.
 
-Substitution Cipher: An encryption algorithm that operates by replace each chracter of a plaintext set of characters with another, the key would be the rotation or identifier for character sets that replace the plain text.
+Substitution Cipher: An encryption algorithm that operates by replace each character of a plain text set of characters with another, the key would be the rotation or identifier for character sets that replace the plain text.
 
 Symmetric-key encryption: Model of encryption that uses the same shared key for both encryption and decryption.
 
@@ -231,7 +231,6 @@ echo "Asymmetric encryption example" > asymmetry.txt
 gpg --recipient Offsec --encrypt asymmetry.txt
 # transfer file
 gpg --decrypt asymmetry.txt.gpg # requires passphrase
-
 ```
 It can sometimes be tricky to recall who has to use which keys to encrypt and decrypt messages with asymmetric encryption. We can use the following mnemonics to help us remember: 
 SUPER 
