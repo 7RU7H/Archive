@@ -3,7 +3,7 @@
 Both introduced to `jq` and as a continuation of techniques in [Ippsec's: Manually Parse Bloodhound Data with JQ to Create Lists of Potentially Vulnerable Users and Computers](https://www.youtube.com/watch?v=o3W4H0UfDmQ) where Ippsec: *"Think like a list instead of a graph"*
 ```bash
 # Convert Integers
-(INT|tostring)
+(.DotSomethingThatIsAnINT|tostring)
 # Display all json nicely
 cat user.json | jq .
 # Put query at the end of the syntax
