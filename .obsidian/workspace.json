@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Security-Disciplines/Blue-Team/Endpoint-Security.md",
+                "file": "MacOS/macOS-Hub-Page.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Security-Disciplines/Blue-Team/Endpoint-Security.md",
+                "file": "MacOS/macOS-Hub-Page.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -128,8 +128,12 @@
   },
   "active": "ac1b10439f5536ef",
   "lastOpenFiles": [
-    "Security-Disciplines/Blue-Team/Finding-a-Domains-Worth-of-Malware-Jeff-McJunkin.md",
+    "MacOS/masOS-OS-X-Timeline.md",
+    "MacOS/macOS-Hub-Page.md",
     "Security-Disciplines/Blue-Team/Endpoint-Security.md",
+    "MacOS",
+    "Coding-Scripting-Programming/Languages/Powershell/PowerShell-Event-Logging.md.md",
+    "Security-Disciplines/Blue-Team/Finding-a-Domains-Worth-of-Malware-Jeff-McJunkin.md",
     "Services/Network-Access-Applications/UniFi.md",
     "Windows/Windows-Concepts/Windows-Networking.md",
     "Windows/Windows-Concepts/Windows-Portable-Executable-Format.md",
@@ -151,10 +155,6 @@
     "Coding-Scripting-Programming/Languages/Bash/Useful_Bash.md",
     "Coding-Scripting-Programming/Languages/C/Useful-C.md",
     "Coding-Scripting-Programming/Languages/C/Concurrent-C.md",
-    "Coding-Scripting-Programming/Languages/C/Bad-C.md",
-    "Tools/AD-Offensive/Impacket/Impacket-Cheatsheet.md",
-    "Tools/AD-Offensive/Bloodhound-Guide.md",
-    "Untitled",
     "Post-Exploitation/Stealth/Evasion/Logging-And-Monitoring-Evasion",
     "Images/becomethewwwdata.png",
     "Images/mseetwlogevasiondeface.png",

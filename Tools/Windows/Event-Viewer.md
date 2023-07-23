@@ -2,7 +2,7 @@
 
 Event Viewer uses [[Event-Tracing-for-Windows]]
 
-Alternatives to Event Viewer being either Wevtutil.exe or [[Powershell-Eventlogging.md]]
+Alternatives to Event Viewer being either Wevtutil.exe or [[PowerShell-Event-Logging.md]]
 
 
 

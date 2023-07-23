@@ -1,4 +1,4 @@
-# Event Logging with Powershell
+# Event Logging with PowerShell
 
 ```powershell
 # General

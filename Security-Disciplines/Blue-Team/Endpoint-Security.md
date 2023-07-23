@@ -26,7 +26,7 @@ Typically logs.etv(x) are stored:
 Articles locally:
 - [[Windows-Event-Logs]]
 - [[Windows-Events-To-Monitor]]
-- [[Powershell-Eventlogging.md]]
+- [[PowerShell-Event-Logging.md]]
 - Beware more sophisticated attackers will try [[Logging-And-Monitoring-Evasion]] techniques.
 
 
