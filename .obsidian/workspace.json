@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Windows/Windows-Concepts/Windows-Networking.md",
+                "file": "Services/Network-Access-Applications/UniFi.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ac1b10439f5536ef",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Security-Disciplines/Blue-Team/Endpoint-Security.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Windows/Windows-Concepts/Windows-Networking.md",
+                "file": "Security-Disciplines/Blue-Team/Endpoint-Security.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,8 +126,12 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "0b747ef7990a30bf",
+  "active": "ac1b10439f5536ef",
   "lastOpenFiles": [
+    "Security-Disciplines/Blue-Team/Finding-a-Domains-Worth-of-Malware-Jeff-McJunkin.md",
+    "Security-Disciplines/Blue-Team/Endpoint-Security.md",
+    "Services/Network-Access-Applications/UniFi.md",
+    "Windows/Windows-Concepts/Windows-Networking.md",
     "Windows/Windows-Concepts/Windows-Portable-Executable-Format.md",
     "Windows/Windows-Concepts/Windows-Processes.md",
     "Windows/Windows-Concepts/Windows-Registry.md",
@@ -137,10 +154,6 @@
     "Coding-Scripting-Programming/Languages/C/Bad-C.md",
     "Tools/AD-Offensive/Impacket/Impacket-Cheatsheet.md",
     "Tools/AD-Offensive/Bloodhound-Guide.md",
-    "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
-    "Tools/AD-Offensive/Crackmapexec/Crackmapexec-Cheatsheet.md",
-    "Tools/Data-Processing/JQ.md",
-    "Tools/AD-Offensive/Neo4j/Untitled.md",
     "Untitled",
     "Post-Exploitation/Stealth/Evasion/Logging-And-Monitoring-Evasion",
     "Images/becomethewwwdata.png",

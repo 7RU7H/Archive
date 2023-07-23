@@ -1,7 +1,7 @@
 # UniFi
 
 
-Full port list and usage found: [UniFi Network - Required Ports Reference]](https://help.ui.com/hc/en-us/articles/218506997-UniFi-Network-Required-Ports-Reference)
+Full port list and usage found: [UniFi Network - Required Ports Reference](https://help.ui.com/hc/en-us/articles/218506997-UniFi-Network-Required-Ports-Reference)
 
 #### Adminstration Panel
 

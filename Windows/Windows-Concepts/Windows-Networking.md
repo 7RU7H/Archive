@@ -1,4 +1,4 @@
-# Windows Networking And Services
+# Windows Networking
 
 
 For full list of commands see [[Windows-Networking-Commands]]
@@ -26,7 +26,7 @@ ipconfig /renew "Ethernet adapter Ethernet"
 ipconfig /displaydns
 ipconfig /flushdns
 ```
-systeminfo also displays various network related properties:
+`systeminfo` also displays various network related properties:
 ```powershell
 systeminfo
 systeminfo /s computer1 /u user\domain1 /p password
