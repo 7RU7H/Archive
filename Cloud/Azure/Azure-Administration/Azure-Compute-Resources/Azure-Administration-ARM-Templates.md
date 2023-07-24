@@ -3,15 +3,19 @@
 #### Introduction to ARM Templates
 
 
-[Template Specs](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/template-specs?tabs=azure-powershell) is a resource type for storing an Azure Resource Manager template (ARM template) in Azure for later deployment. This resource type enables you to share ARM templates with other users in your organization. Just like any other Azure resource, you can use Azure role-based access control (Azure RBAC) to share the template spec. Template Gallery is to deprecated by 2025 - [Convert portal template to template spec - Azure Resource Manager | Microsoft Learn](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/template-spec-convert?WT.mc_id=Portal-HubsExtension)
+[Template Specs](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/template-specs?tabs=azure-powershell) is a resource type for storing an Azure Resource Manager template (ARM template) in Azure for later deployment. This resource type enables you to share ARM templates with other users in your organisation. Just like any other Azure resource, you can use Azure role-based access control (Azure RBAC) - [[Azure-Administration-Azure-Roles-And-RBAC]] to share the template spec. Template Gallery is to deprecated by 2025 - [Convert portal template to template spec - Azure Resource Manager | Microsoft Learn](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/template-spec-convert?WT.mc_id=Portal-HubsExtension)
 
 
-ARM Templates are [[Infrastructure-As-Code]] (IaC) - the process of managing and provisioning computer data centers through machine-readable definition files (JSON files) rather than physical hardware configuration or interactive configuration tools - ARM is declarative, JSON files that define Azure Resources to provision and Azure services to configure. ARM template positives:
+ARM Templates are [[Infrastructure-As-Code]] (IaC) - the process of managing and provisioning computer data centres through machine-readable definition files ([[JSON]] files) rather than physical hardware configuration or interactive configuration tools - ARM is declarative, [[JSON]] files that define Azure Resources to provision and Azure services to configure. ARM template positives:
+- Simply orchestration
+- Standardisation
+- Help express complex deployments - dependencies, ordering, etc
 - Reduce Configuration Mistakes
 	- Builtin Validation!
 - Stand up or Tear down or Sharing is quick
-- Knownable definion of a stack
+- Observable definition of a stack
 - Establishes baseline compliance
+- Linkable with other templates 
 - Modular 
 - Reusable 
 - Idempotent -  deploy the same template many times and get the same resource types in the same state.
@@ -28,7 +32,9 @@ ARM Templates are [[Infrastructure-As-Code]] (IaC) - the process of managing and
 ![](armtemplatepipeline.png)
 
 
-`Search -> Deploy custom template` 
+
+Deploy a custom template
+`Search -> Deploy custom template`
 
 You can also [Build your own template in the editor](https://portal.azure.com/#) 
 - [ARM template documentation | Microsoft Learn](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/)
@@ -38,15 +44,38 @@ When it deployment fails it does not perform cleanup - manual resource deletion 
 
 ## Azure BICEP Templates
 
-[Azure Bicep](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview) is a domain-specific language (DSL) that uses declarative syntax to deploy Azure resources. Bicep is a transparent abstraction over ARM template JSON and doesn't lose any of the JSON template capabilities.
+[Azure Bicep](https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview) is a domain-specific language (DSL) that uses declarative syntax to deploy Azure resources. Bicep is a transparent abstraction over ARM template [[JSON]] and doesn't lose any of the [[JSON]] template capabilities.
 - Simpler Syntax
 - Modules
 - Automatic dependency management
 - Type Validation and IntelliSense
 
+[[Transpilation]] (converting source to another language)
+`Bicep Template -> JSON Template -> Azure`
+
 [Azure Quickstart Templates](https://azure.microsoft.com/resources/templates/) are Azure Resource Manager templates provided by the Azure community.
 
 #### ARM Template File Structure
+
+Key-Value - `{ Key: Value}` -  pairs where values can be:
+- A string
+- A integer 
+- Boolean expression
+- List of values
+- Object (collections of other key-value pairs)
+
+```json
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#", // Location of JSON scehma file
+  "contentVersion": "",  // Version
+  "apiProfile": "", 
+  "parameters": {  }, // Values provided at deployment
+  "variables": {  }, // Values used as json fragments 
+  "functions": [  ], // user-defined functions
+  "resources": [  ], // resource types
+  "outputs": {  } // values return after deployment
+}
+```
 
 **Element** | **Description**
 --- | ---
@@ -66,11 +95,12 @@ Basic Skeleton of template with comments explaining use case
 {
   "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
   "contentVersion": "1.0.0.0",
-  "apiProfile": "", // Valure to avoid having to specify API versions foreach resource in the template 
-  "parameters": {}, //values passed to template 
+  "apiProfile": "", // Value to avoid having to specify API versions for each resource in the template 
+  "parameters": {}, // values passed to template at deployment
   "variables": {}, // transform parameteres or resources properties using function expressions
   "functions": [], // User-Defined functions available within the template
   "resources": [] // Azure resource you want to deploy or update 
+  "outputs": {  } // values return after deployment
 }
 ```
 
@@ -272,3 +302,4 @@ You can use Azure API via CLI,  PowerShell or SDK to fetch outputs.
 [FreeCodeCamp.org - AZ 104 Course](https://www.youtube.com/watch?v=10PbGbTUSAg&t=3458s)
 [Microsoft Technical Documentation](https://learn.microsoft.com/en-us/docs/)
 [Microsoft Learn](https://learn.microsoft.com/en-us/)
+[Microsoft Learn | Understand the structure and syntax of ARM templates](https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/syntax)

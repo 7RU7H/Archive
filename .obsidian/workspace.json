@@ -8,31 +8,30 @@
         "type": "tabs",
         "children": [
           {
-            "id": "2ffd3a15b7aa039e",
+            "id": "8241b4058d82606b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Security-Disciplines/Digital-Forensics/Windows-Forensics.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Azure-CLI.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "a39974795a685bb7",
+            "id": "903057f84c1fb3f3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Azure-Resource-Manager.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Azure-Resource-Manager.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Azure-CLI.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,9 +125,15 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "a39974795a685bb7",
+  "active": "8241b4058d82606b",
   "lastOpenFiles": [
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+    "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Azure-CLI.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration.md",
+    "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Untitled",
+    "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-ARM-Templates.md",
     "Security-Disciplines/Digital-Forensics/Windows-Forensics.md",
+    "Coding-Scripting-Programming/Programming-Paradigms/Transpilation.md",
     "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Azure-Resource-Manager.md",
     "Windows/Windows-Concepts/Windows-Registry.md",
     "Tools/Forensics/Kape.md",
@@ -151,11 +156,6 @@
     "Security-Disciplines/Blue-Team/Endpoint-Security.md",
     "MacOS",
     "Coding-Scripting-Programming/Languages/Powershell/PowerShell-Event-Logging.md.md",
-    "Windows/Windows-Concepts/Windows-Networking.md",
-    "Windows/Windows-Concepts/Windows-Portable-Executable-Format.md",
-    "Windows/Windows-Concepts/Windows-Processes.md",
-    "Windows/Windows-Concepts/Windows-Runtime.md",
-    "Windows/Windows-Concepts/Windows-Services.md",
     "Post-Exploitation/Stealth/Evasion/Logging-And-Monitoring-Evasion",
     "Images/becomethewwwdata.png",
     "Images/mseetwlogevasiondeface.png",
@@ -166,7 +166,6 @@
     "Services/Databases/OSquery",
     "Exploitation/Server-Side",
     "Coding-Scripting-Programming/Anti-Reverse-Engineering",
-    "Tools/Debuggers",
     "Images/procmonbar.png",
     "Images/ss64-windowsgroups-default-admin-users-and-groups.png",
     "Images/jackmasa-mind-map.png",

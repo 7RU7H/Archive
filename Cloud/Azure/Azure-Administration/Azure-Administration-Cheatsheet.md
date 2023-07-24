@@ -633,6 +633,8 @@ Administrating a Resource Group
 
 #### Moving Resources
 
+[Check the move support resource list](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/move-support-resources)
+
 Moving Resources - there are edge cases - [see Documentation for more]([Move resources to a new subscription or resource group - Azure Resource Manager | Microsoft Learn](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/move-resource-group-and-subscription)):
 - If you're using Azure Stack Hub, you can't move resources between groups.
 - [App Services move guidance](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/move-limitations/app-service-move-limitations)
@@ -1505,11 +1507,13 @@ Create a SAS for container `Home -> Storage Accounts -> $ContainerName -> Shared
 
 ## Azure CLI
 
+Mostly a mirror with the information from [[Azure-Administration-Azure-CLI]]
+
 Full actual documentation:
 - [Azure CLI overview](https://learn.microsoft.com/en-us/cli/azure/)
 - [Azure CLI command reference](https://learn.microsoft.com/en-us/cli/azure/reference-index)
 
-Variables in Bash `Variable` and in Powershell `$Variable`; `export $v` and `set $v` for current session environment variable creation.
+Variables in Bash `Variable` and in PowerShell `$Variable`; `export $v` and `set $v` for current session environment variable creation.
 
 ```powershell
 -Az # Azure Module ships backwards compatible with -AzureRM 
@@ -1889,7 +1893,16 @@ az appservice plan list --output table
 ```
 
 Create and Administrate a Webapp
-```powershell
+```bash
+# Environment Variables
+export RESOURCE_GROUP=$groupname
+export AZURE_REGION=eastus
+export AZURE_WEB_APP=$webappName
+export AZURE_APP_PLAN=$webappName-$appPlanID
+
+az appservice plan create --name $AZURE_APP_PLAN  --resource-group $RESOURCE_GROUP --location --sku FREE
+
+
 az webapp create --name $AZURE_WEB_APP --resource-group $RESOURCE_GROUP --plan $AZURE_APP_PLAN
 # Verify
 az webapp list --output table
@@ -2026,9 +2039,9 @@ User Defined Route
 az network route-table route create -g MyResourceGroup --route-table-name MyRouteTable -n StorageRoute --address-prefix Storage --next-hop-type VirtualAppliance --next-hop-ip-address 10.0.100.4
 ```
 
-## Powershell
+## PowerShell
 
-Always update the Powershell - older versions are very unsafe, if possible remove old powershell. See [[Useful_Powershell]] and [[Basic_Powershell]] repectively. [[Microsoft-Visual-Studios]] requires `Connect-AzAccount`
+Always update the PowerShell - older versions are very unsafe, if possible remove old PowerShell. See [[Useful_Powershell]] and [[Basic_Powershell]] respectively. [[Microsoft-Visual-Studios]] requires `Connect-AzAccount`
 
 ```powershell
 Add-AzAccount # Login to Azure
@@ -2401,3 +2414,4 @@ Get-AzDnsRecordSet -ResourceGroupName MyResourceGroup -ZoneName myzone.com -Name
 [Azure Event Hubs](https://learn.microsoft.com/en-us/azure/azure-monitor/agents/diagnostics-extension-stream-event-hubs)
 [Tutorial to import data to Azure Blob Storage with Azure Import/Export service | Microsoft Learn](https://learn.microsoft.com/en-us/azure/import-export/storage-import-export-data-to-blobs?tabs=azure-portal-preview)
 [Tutorial to transfer data to Azure Files with Azure Import/Export | Microsoft Learn](https://learn.microsoft.com/en-us/azure/import-export/storage-import-export-data-to-files?tabs=azure-portal-preview)
+[Microsoft learn | Move-support-resources](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/move-support-resources)
