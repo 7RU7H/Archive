@@ -196,13 +196,13 @@ Condense:
 - Internal Network
 
 - Active Directory
-	- REcursively while dealing with AD, Tools, your OS and you - have you configured correctly?:
+	- Recursively while dealing with AD, Tools, your OS and you - have you configured correctly?:
 		- Step -1): Are *you* mentally prepared and ready to deal with the issue abound... 
 		- Step 0): is `/etc/hosts` configured `$DCipv4Address dc.$domain.$tld $domain.$tld` in this order!
 		- Step 1): Continuously re-synced to the DC: `sudo ntpdate -s $targetDC.$domain.$tld` 
 			- temporal synced to target domain controller required for [[Attacking-Kerberos]] or any [[Active-Directory-Kerberos-Authenication-Defined]] 
-		- Step 2): Do you need to **(re)**TGT after re-synced to the DC: go to Step 1)
-		- Step 3): Is Kinit configured properly? 
+		- Step 2): Is Kinit configured properly?
+		- Step 3): Do you need to **(re)**TGT after re-synced to the DC: go to Step 1)
 		- Step 4): Are you running latest Tool versions!
 	- Is it really large and requires a [[Domain-Flyover]]
 	- Have you got scope for [[Responder-Cheatsheet]] for [[LLMNR-Poisoning]] and [mitm6](https://github.com/dirkjanm/mitm6) - MITM those NTLM hashes.

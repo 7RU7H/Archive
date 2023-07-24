@@ -198,13 +198,6 @@ case "$Variable" in
     1) echo "There is a one.";;
     *) echo "It is not null.";;  # match everything
 esac
-
-status=$(
-  case "$status" in
-    ("foo") echo "bar" ;;
-    ("baz") echo "buh" ;;
-    (*) echo "$status" ;;
-  esac)
 ```
 [string variant](https://stackoverflow.com/questions/2283640/case-statements-evaluate-to-strings#2283814)
 

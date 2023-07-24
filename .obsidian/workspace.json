@@ -8,24 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "8241b4058d82606b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Azure-CLI.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "903057f84c1fb3f3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+                "file": "Tools/AD-Offensive/Managing-Nix-For-Active-Directory-.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Azure-CLI.md",
+                "file": "Tools/AD-Offensive/Managing-Nix-For-Active-Directory-.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,8 +113,11 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "8241b4058d82606b",
+  "active": "903057f84c1fb3f3",
   "lastOpenFiles": [
+    "Coding-Scripting-Programming/Languages/Bash/Useful_Bash.md",
+    "Tools/AD-Offensive/Managing-Nix-For-Active-Directory-.md",
+    "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
     "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Azure-CLI.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration.md",
@@ -152,10 +143,7 @@
     "Cryptography-And-Authentication/Cracking-Files.md",
     "Security-Disciplines/Security-Operations-Centre.md",
     "Services/Network-Access-Applications/UniFi.md",
-    "MacOS/masOS-OS-X-Timeline.md",
-    "Security-Disciplines/Blue-Team/Endpoint-Security.md",
     "MacOS",
-    "Coding-Scripting-Programming/Languages/Powershell/PowerShell-Event-Logging.md.md",
     "Post-Exploitation/Stealth/Evasion/Logging-And-Monitoring-Evasion",
     "Images/becomethewwwdata.png",
     "Images/mseetwlogevasiondeface.png",

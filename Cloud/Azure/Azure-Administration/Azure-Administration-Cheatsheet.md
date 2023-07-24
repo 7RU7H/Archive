@@ -1892,7 +1892,7 @@ az appservice plan create --name $AZURE_APP_PLAN --resource-group $RESOURCE_GROU
 az appservice plan list --output table
 ```
 
-Create and Administrate a Webapp
+Create and Administrate a Web app
 ```bash
 # Environment Variables
 export RESOURCE_GROUP=$groupname
