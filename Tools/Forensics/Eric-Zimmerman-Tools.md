@@ -31,6 +31,8 @@ Shortcut file locations:
 LECmd.exex to parse shortcut files
 `LECmd.exe -f <path-to-shortcut-files> --csv <path-to-save-csv>`
 
+Registry Explorer
+
 
 ## References
 

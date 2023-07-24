@@ -1,9 +1,15 @@
-#  Azure Administration - Azure Resource Manager
+# Azure Administration - Azure Resource Manager
 
-Azure Resouce Manager is a collection of services not searchable, it allows a you manage Azure Resources. 
-- CRUD Resources
+Azure Resource Manager is a collection of services not searchable, it allows a you manage Azure Resources. 
+- CUD Resources - minus the -R
+	- Azure Resource Manager is for deploying, updating or deleting all resources for single or coordinated operations on a solution.
+	- Deploy in order for resources that are dependent on others 
 - Apply management features
-- Writing Infrastructure as Code (IaC) via JSON temlpates.
+	- [[Azure-Administration-Azure-Roles-And-RBAC]]
+- Writing Infrastructure as Code (IaC) via JSON templates.
+- Tag Resources
+	- TAGS! TAGS! TAGS!
+- Clarify Billing 
 
 Features that encompasses the ARM layer
 - Subscriptions
@@ -18,8 +24,15 @@ Features that encompasses the ARM layer
 - Azure Policies
 - ARM Templates
 
-Azure Resource Manager is a like gate keeper with Authenication (AD) as all requests flow through ARM. Requestes on the left and Resources on the right 
+Azure Resource Manager is a like gate keeper with Authentication (AD) as all requests flow through ARM. Requests on the left and Resources on the right 
 ![](wherearmisinazure.png)
+
+Terminology:
+- resource: a virtual machine, storage account, web app, database, load balancer, virtual network
+- resource group: a group of resource as an object for ease of management
+- resource provider: a **infrastructure as a service** that providers resources and operations for working with an Azure Services
+- template: [[JSON]] template defining various
+- declarative syntax: statement of intent of a desired state: `install $application `
 
 Scoping:
 - Management Groups
@@ -31,7 +44,7 @@ Scoping:
 
 #### Subscriptions 
 
-Subscriptions are required in Azure, you can have multiple;. Multiple subscriptions can be managed hierarchally structured tiering of subscriptions with single top-level "Root" management group, for example:
+Subscriptions are required in Azure, you can have multiple;. Multiple subscriptions can be managed hierarchically structured tiering of subscriptions with single top-level "Root" management group, for example:
 
 - Root Management Group
 	- HR 
@@ -88,13 +101,15 @@ New-AzResourceGroupDeployment `
 
 Parameters and outputs provide flexibility to variance in context.
 
-#### Resource Provider
+#### Resource Providers
 
-Resource Provider need to be registered, but by default a subscriptions has access many registered resource providers other need to be registered.
+Resource Providers offer sets of resources and operations for working with an Azure Services. Resource Provider need to be registered, but by default a subscriptions has access many registered resource providers other need to be registered. Int the format:
+- `{resources-provider}\{resource`
+- `Microsoft.KeyVaults/vaults` is a resource provider for key vaults
 
 #### Resource Tags
 
-Someitimes just known a Tags, it is key value pair assigned to a Azure Resource; for exmaple:
+Sometimes just known as Tags, it is key value pair assigned to a Azure Resource; for example:
 By:
 - Department 
 - Status
@@ -175,6 +190,7 @@ If the resource already exists and no change is detected in the properties, no a
 - Policies - Assign Policies Initiatives
 - Properties - Copy and paste Properties
 - Locks - Apply locks on resources
+	- Inherited by child resources
 
 #### Moving Resources
 

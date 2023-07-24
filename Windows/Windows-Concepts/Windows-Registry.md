@@ -19,6 +19,7 @@ REG_SZrepresents a single null terminated string
 Run OR RunOnce
 
 ## Key Layout
+
 Root keys:
 - `HKEY_CURRENT_USER`
 	- Root of all configuration information for the current user

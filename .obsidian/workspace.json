@@ -4,22 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "308b2e0bc7ca69b5",
+        "id": "758c15ee96c48e7a",
         "type": "tabs",
         "children": [
           {
-            "id": "e76e968d20c9d77a",
+            "id": "2ffd3a15b7aa039e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cyberwarfare/Theory/Cyberwarfare-Considerations.md",
+                "file": "Security-Disciplines/Digital-Forensics/Windows-Forensics.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a39974795a685bb7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Azure-Resource-Manager.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -48,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "jq ",
+                "query": "Explorer",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,7 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 293.5110321044922
+    "width": 468.5110321044922
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cyberwarfare/Theory/Cyberwarfare-Considerations.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Azure-Resource-Manager.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,16 +126,26 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "e76e968d20c9d77a",
+  "active": "a39974795a685bb7",
   "lastOpenFiles": [
-    "Tools/Data-Processing/JQ.md",
+    "Security-Disciplines/Digital-Forensics/Windows-Forensics.md",
+    "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Azure-Resource-Manager.md",
+    "Windows/Windows-Concepts/Windows-Registry.md",
+    "Tools/Forensics/Kape.md",
+    "Tools/Forensics/Eric-Zimmerman-Tools.md",
+    "Tools/SysInternals/Sysinternals-Hub.md",
+    "Tools/SysInternals/ProcDump",
+    "Tools/Forensics/Autopsy.md",
+    "Tools/Content-Discovery-Tools/Gobuster-Cheatsheet.md",
+    "Coding-Scripting-Programming/APIs/API-Fuzzing.md",
+    "Security-Disciplines/Blue-Team/Windows-Blueteam.md",
     "Cyberwarfare/Theory/Cyberwarfare-Considerations.md",
+    "Tools/Data-Processing/JQ.md",
     "MacOS/macOS-Hub-Page.md",
     "Security-Disciplines/Blue-Team/Finding-a-Domains-Worth-of-Malware-Jeff-McJunkin.md",
     "Cryptography-And-Authentication/Cryptography.md",
     "Cryptography-And-Authentication/Cracking-Files.md",
     "Security-Disciplines/Security-Operations-Centre.md",
-    "Security-Disciplines/Digital-Forensics/Windows-Forensics.md",
     "Services/Network-Access-Applications/UniFi.md",
     "MacOS/masOS-OS-X-Timeline.md",
     "Security-Disciplines/Blue-Team/Endpoint-Security.md",
@@ -131,17 +154,8 @@
     "Windows/Windows-Concepts/Windows-Networking.md",
     "Windows/Windows-Concepts/Windows-Portable-Executable-Format.md",
     "Windows/Windows-Concepts/Windows-Processes.md",
-    "Windows/Windows-Concepts/Windows-Registry.md",
     "Windows/Windows-Concepts/Windows-Runtime.md",
     "Windows/Windows-Concepts/Windows-Services.md",
-    "Windows/Windows-Concepts/Windows-Strings.md",
-    "Windows/Windows-Concepts/Windows-VirtualMemory.md",
-    "Windows/ETW.md",
-    "Windows/Windows-File-Paths.md",
-    "Wireless-Hacking/WIFI-Hacking.md",
-    "Exploitation/CVEs/PrintNightmare.md",
-    "Tools/Network-Based/Packet-Analysis/Wireshark/Wireshark-Useful-Packet-Filters.md",
-    "Tools/Network-Based/Packet-Analysis/Wireshark/Wireshark.md",
     "Post-Exploitation/Stealth/Evasion/Logging-And-Monitoring-Evasion",
     "Images/becomethewwwdata.png",
     "Images/mseetwlogevasiondeface.png",
@@ -153,7 +167,6 @@
     "Exploitation/Server-Side",
     "Coding-Scripting-Programming/Anti-Reverse-Engineering",
     "Tools/Debuggers",
-    "Tools/Host-Privilege-Escalation/Linux",
     "Images/procmonbar.png",
     "Images/ss64-windowsgroups-default-admin-users-and-groups.png",
     "Images/jackmasa-mind-map.png",
