@@ -1,5 +1,4 @@
-# Circumventing-Anti-Reverse-Engineering
-
+# Circumvent Anti Reverse Engineering
 
 
 ## Configuration
