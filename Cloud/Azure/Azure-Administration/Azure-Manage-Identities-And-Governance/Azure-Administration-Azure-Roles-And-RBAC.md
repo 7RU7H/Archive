@@ -19,7 +19,7 @@ Governance is about enforcement of rules and ensuring proper functioning to stan
 - [[Azure-Administration-Azure-Roles-And-RBAC]] - WHO
 - Budget - HOW MUCH
 
-Regarding [[Azure-Administration-AD-Administration]], do not use Classic subcription Roles use either RBAC or [Azure AD Administrator roles](https://learn.microsoft.com/en-us/azure/active-directory/roles/permissions-reference):
+Regarding [[Azure-Administration-Microsoft-Entra-ID-Administration]], do not use Classic subcription Roles use either RBAC or [Azure AD Administrator roles](https://learn.microsoft.com/en-us/azure/active-directory/roles/permissions-reference):
 ![1000](azurerolerbacandadminroles.png)
 Azure AD Roles are used to manage resources in Azure AD; Azure RBAC role provide more granular access management for Azure resources.
 

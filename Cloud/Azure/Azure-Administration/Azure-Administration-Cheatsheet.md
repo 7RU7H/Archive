@@ -12,24 +12,7 @@
 [Understand Subscription and Service limits](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/azure-subscription-service-limits)
 
 
-Powershell Cmdlet Logic
-```powershell
-Get-Az # Retrieve information
-New-Az # Create Azure X
-Update-Az # Update Azure X
-Add-Az # Add X to Existing Azure Y
-Move-Az # Move Az X to Y
-Export-Az # Capture to a template
-Import-Az # Import config
-Remove-Az # Remove..
-Select-Az # Select != Get; Choose X
-Invoke-Az # Contruct and Perform X
-Clear-Az # Clear settable values
-Set-Az # Opposite of Clear, Set values
-```
-
-
-1. Subscriptions and Azure AD Tenant
+1. Subscriptions and Microsoft Entra ID Tenant
 1. Management Groups and Subscriptions - Context
 1. Resource Group - Everything exists in resource group, no nesting allowed, not a boundary of access
 
@@ -93,7 +76,7 @@ From here for:
 
 ## RBAC and Azure Role 
 
-Azure RBAC is the authorization system built on ARM that implment accessmanagement over the four Fundemtnal Azure Roles Owner, Contributor, Reader, User Access Administration. Therefore:
+Azure RBAC is the authorisation system built on ARM that implement access management over the four Fundamental Azure Roles Owner, Contributor, Reader, User Access Administration. Therefore:
 Azure Policy  != Azure Roles && RBAC
 - [[Azure-Administration-Azure-Policies]] - Policies  - WHAT? - ensures compliance of resources and does not restrict access
 - [[Azure-Administration-Azure-Roles-And-RBAC]] - WHO?
@@ -109,7 +92,7 @@ Azure Policy  != Azure Roles && RBAC
 - B2C - only Global Admins:
 	- Configure B2B external collaboration settings
 	- Create B2C applications
-	- **Azure AD B2C Global Administrators do not have the same permissions as Azure AD Global Administrators -  make sure you are in the  Azure AD B2C directory!!!**
+	- **Microsoft Entra ID B2C Global Administrators do not have the same permissions as Microsoft Entra ID Global Administrators -  make sure you are in the  Microsoft Entra ID B2C directory!!!**
 	- B2B users will have  `user@myorgdomain.com#EXT#domain.com` have `#EXT#` appended 
 - Device - Cloud Device Administrator 
 - Global Admin is configure control plane settings
@@ -127,8 +110,8 @@ Azure Policy  != Azure Roles && RBAC
 		- Reading - Readers
 		- Group - Groups Level Roles
 		- If Identity Protect - Security Roles
-		- If MFA - Authenication Roles 
-		- Privileged Role - Privileged Role Adminstrator
+		- If MFA - Authentication Roles 
+		- Privileged Role - Privileged Role Administrator
 		- Users  - User Admin
 		- Support - Service Support Admin plus relevant service 
 	- Do not use with 
@@ -141,8 +124,8 @@ Azure Policy  != Azure Roles && RBAC
 
 Implement management groups 
 `Search Management groups -> Management groups`
-Setup Azure AD permissions for Implementing Management Groups
-`Search Azure ->  Azure Active Directory -> Properties -> Access management for Azure Resources` - Refresh in `Management Groups`
+Setup Microsoft Entra ID permissions for Implementing Management Groups
+`Search Azure ->  Microsoft Entra ID -> Properties -> Access management for Azure Resources` - Refresh in `Management Groups`
 From `Management Groups` - Requires Management group ID and Display name
 Create a `Management Group`
 `Search Management groups -> Management groups -> <insert Management group ID and Display name> 
@@ -169,47 +152,47 @@ Create Azure Service Bus -  brokered messaging communication model - `App/Servic
 - Create namespace for queue, select (RG, Sub, Location, Pricing Tier) 
 Important - Service Bus = event-driven
 
-## Azure AD 
+## Microsoft Entra ID 
 
 Important Distinctions:
-- Azure AD Directory Domain Services provides managed domain services
-- Azure AD Connect is Hybrid Service to connect on-premise to Azure Account
+- Microsoft Entra ID Directory Domain Services provides managed domain services
+- Microsoft Entra ID Connect is Hybrid Service to connect on-premise to Azure Account
 	- Writeback (Cloud and On-Premise Syncing) is required for the required data to Synchronize between cloud and on-premise.
 
 Manage Tenants
-`Search Azure AD -> Manage tenants`
+`Search Microsoft Entra ID -> Manage tenants`
 Create a Tenant
-`All Services -> Azure AD -> Manage Tenants -> Create`
+`All Services -> Microsoft Entra ID -> Manage Tenants -> Create`
 Configure Tenant
 `Create a Tenant -> Configuration -> Name -> Review and Create -> Create`
 
 License Management
-`Search Azure AD -> Azure AD -> Licenses`
+`Search Microsoft Entra ID -> Microsoft Entra ID -> Licenses`
 To assign a license
 `All Products -> Assign`
 
-Customize Azure AD organization branding
-`Search Azure AD -> Azure AD -> Azure Active Directory -> Manage -> Company Branding -> Configure`
+Customize Microsoft Entra ID organization branding
+`Search Microsoft Entra ID -> Microsoft Entra ID -> Microsoft Entra ID -> Manage -> Company Branding -> Configure`
 
 #### Create a Users, Groups and Manage Them  
 
 - Remember that you filter by tenant!
 - Teiring from Global Admins to lesser Admins in Azure, Azure AD, AD and Host machine
-	- Ownership and Role - [Azure AD builtin Roles](https://learn.microsoft.com/en-us/azure/active-directory/roles/permissions-reference)
+	- Ownership and Role - [Microsoft Entra ID builtin Roles](https://learn.microsoft.com/en-us/azure/active-directory/roles/permissions-reference)
 		- What can be owned? - think CRUD
 			- Users, Groups, Devices, Resources, Authentication, Policy, Services, Configuration
 				- External or Interal relavative to X
 				- Context - Dynamic Devices or Guest User are temporary therefore think PoLP
 	- The assign machine to user th default Admin is that Use - most likely requires change
-- Azure AD Registered != Azure AD Joined 
+- Microsoft Entra ID Registered != Microsoft Entra ID Joined 
 - Access policy! 
 
-Azure AD 
+Microsoft Entra ID 
 `Overview -> Users -> Create`
 
 Creation User
 `Search Users -> New Users -> New user`
-Invite User - For Temporary Guest users use: `Azure AD B2B`
+Invite User - For Temporary Guest users use: `Microsoft Entra ID B2B`
 `Search Users -> New Users -> Invite`
 Configure guest users:
 - Add to `Groups`
@@ -217,22 +200,23 @@ Configure guest users:
 - Guest users have `user@myorgdomain.com#EXT#domain.com` have `#EXT#` appended 
 
 Edit User settings
-`Search Azure AD -> Azure AD -> User Settings`
+`Search Microsoft Entra ID -> Microsoft Entra ID -> User Settings`
 User Management
-`Search Azure AD -> Azure AD -> Users`
+`Search Microsoft Entra ID -> Microsoft Entra ID -> Users`
 Create/Invite
-`Search Azure AD -> Azure AD -> Users -> New Users -> New user`
+`Search Microsoft Entra ID -> Microsoft Entra ID -> Users -> New Users -> New user`
 Assign Roles
-`Search Azure AD -> Users -> Assigned Roles`
+`Search Microsoft Entra ID -> Users -> Assigned Roles`
 Enable Account
 `Users -> $username -> Settings -> [Tick/Untick] Account enabled`
 
-Temporary Guest users use: `Azure AD B2B` , Guest user can be added with Creating and then Inviting
-`Search Azure AD -> Azure AD -> Users -> New Users -> New user`
+Temporary Guest users use: `Microsoft Entra ID B2B` , Guest user can be added with Creating and then Inviting
+`Search Microsoft Entra ID -> Microsoft Entra ID -> Users -> New Users -> New user`
 `Overview -> Users -> New User -> Invite External`
 - Remember to add to groups and anything else.
 
 Bulk additions, deletion and invitation use a .cvs with SOME of the fields
+
 Name | Username | Initial Password | Block Sign in | Firstname | Lastname 
 --- | --- | --- | ---
 John Doe | jdoe | password123! | No | John | Doe
@@ -243,7 +227,7 @@ Bulk Operations
 Manage Groups
 `Search Groups - > Groups -> New group/Download groups
 Create Group
-`Search Azure AD -> Groups -> New Group`
+`Search Microsoft Entra ID -> Groups -> New Group`
 - `Membership type* -> Assign/Dynamic(User/Device)`
 To make a dynamic group dynamic:
 - `Add Dynamic Query Rule-> Select a Property, Operator and Value`
@@ -253,10 +237,10 @@ Deleted Groups
 #### Authentication and Authorization
 
 Configure SSPR (self-service-password-reset)
-`Azure Active Directory -> Passwords -> Properties - SSPR enabled (None/Selectec/All)`
+`Microsoft Entra ID -> Passwords -> Properties - SSPR enabled (None/Selectec/All)`
 Futher configuration of SSPR
 `Authenication Methods, Registration, Notification and Customise Helpdesk link`
-- Requires Premium Azure AD P1
+- Requires Premium Microsoft Entra ID P1
 
 Enabling various types of MFA per user, bulk assignment is in the per-user MFA window 
 `Users -> Per-user MFA`
@@ -267,10 +251,10 @@ Remember to `enforce`!
 Password reset
 `Overview -> Password Reset`
 Properties - Self Service password resets
-Authenication Methods
-Registation - Require users to register when signing in
-Notifiications - Notification when and on resets
-Customization - Customize Helpdesk link
+Authentication Methods
+Registration - Require users to register when signing in
+Notifications - Notification when and on resets
+Customisation - Customise Helpdesk link
 On-Premise Integration - As stated
 Administrator Policy - Admin password reset policy.
 
@@ -1185,7 +1169,7 @@ Basic:
 - Scale method: Manual or Autoscale
 - Node Count: 1 - 5 
 Node pools - configure here
-Access - RBAC and AKS-managed Azure AD 
+Access - RBAC and AKS-managed Microsoft Entra ID 
 Networking
 Integrations - Container Monitoring
 
@@ -1914,7 +1898,7 @@ Deploy code from Github
 az webapp deployment source config --name $AZURE_WEB_APP --resource-group $RESOURCE_GROUP --repo-url "https://github.com/Azure-Samples/php-docs-hello-world" --branch master --manual-integration
 ```
 
-Create Azure AD objects 
+Create Microsoft Entra ID objects 
 ```powershell
 # Create a new user
 az ad user create
@@ -2038,354 +2022,6 @@ User Defined Route
 ```bash
 az network route-table route create -g MyResourceGroup --route-table-name MyRouteTable -n StorageRoute --address-prefix Storage --next-hop-type VirtualAppliance --next-hop-ip-address 10.0.100.4
 ```
-
-## PowerShell
-
-Always update the PowerShell - older versions are very unsafe, if possible remove old PowerShell. See [[Useful_Powershell]] and [[Basic_Powershell]] respectively. [[Microsoft-Visual-Studios]] requires `Connect-AzAccount`
-
-```powershell
-Add-AzAccount # Login to Azure
-Get-AzLocation | select Location
-```
-
-```powershell
-$PSVersionTable.PSVersion
-pwsh -ver
-dotnet tool install --global PowerShell # Install
-.\yourScript.ps1 "Parameters"
-import yourScript.ps1
-$adminCredential = Get-Credential # See useful_powershell for the Red-Team way
-# Show EVERYTHING in a directory
-ls -hidden 
-# Open builtin editor
-# Right Click or [Ctrl +] S (Save) Q (Quit)
-code ".hiddenyourScript.ps1"  
-Get-Help -Name $cmdlet -Detailed
-# Change execution policy
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-# Install and update Az module to current user 
-Install-Module -Name Az -Scope CurrentUser -Repository PSGallery
-Update-Module -Name Az
-```
-
-Useful commands
-```powershell
-# Connect to Azure
-Connect-AzAccount
-# Set a default Subscription 
-$context = Get-AzSubscription -SubscriptionId {Your subscription ID}
-Set-AzContext $context
-
-Set-AzContext -Subscription '00000000-0000-0000-0000-000000000000'
-# Consider piping with  `| Format-Table`
-Get-AzResourceGroup
-# Create a resource group 
-New-AzResourceGroup -Name <name> -Location <location>
-# Verify Resources
-Get-AzResource
-Get-AzResource -ResourceGroupName $rgName
-# Test connection to another VM or resource
-Test-NetConnection -ComputerName $ip -Port 3389 -InformationLevel 'Detailed'
-```
-
-General Azure aaS Commands for Data
-```powershell
-Get-AzVMSize # VM sizes 
-```
-
-Disk creation, retrieval, attachment and updating in powershell 
-```powershell
-# Consider Naming Conventions
-$diskname = ""
-# Get the resource group
-$rgName = Get-AzResourceGroup -Name
-# Create a Diskconfiguration for a NewAzDisk
-$diskConfig = New-AzDiskConfig -Location $location -CreateOption Empty -DiskSizeGB 32 -Sku $Skuname
-# Make a new disk with the variables created above - consider naming convention
-NewAzDisk -ResourceGroupName $rgName -DiskName $diskname -Disk $diskConfig  
-# Retrieve a Azure Disk
-Get-AzDisk -ResourceGroupName $rgName -Name $diskname
-# Retrieve Sku
-(Get-AzDisk -ResourceGroupName $rgName -Name $diskname).Sku
-# Update 
-New-AzDiskUpdateConfig -DiskSizeGB 64 -Sku Premium_LRS | Update-AzDisk -ResourceGroupName $rgName -DiskName $diskname
-# Add to a VM
-Add-AzVMDataDisk -VM $VMname -Name $diskName -CreateOPtion Attach -ManagedDisks
-```
-
-Resource Group Creation and Administration
-```powershell
-New-AzResourceGroup `
-  -Name {name of your resource group} `
-  -Location "{location}"
-```
-
-Resource Group Deployment with Template
-```powershell
-$templateFile = "{provide-the-path-to-the-template-file}"
-New-AzResourceGroupDeployment `
-  -Name blanktemplate `
-  -ResourceGroupName myResourceGroup `
-  -TemplateFile $templateFile
-```
-
-VM Creation and Adminstration
-```powershell
-# Get the resource group
-$rgName = Get-AzResourceGroup -Name
-# Create VM
-New-AzVm -ResourceGroupName $rgName -Name $machineName -Credential (Get-Credential) -Location $location -Image $image -OpenPorts $sshOrrdp
-# Adminstration Commands
-Remove
-Start-AzVM
-Stop-AzVM
-Restart-AzVM
-Update-AzVM
-
-Get-AzResource -ResourceGroupName $vm.ResourceGroupName | Format-Table
-# Get-VM for object usage
-$vm = Get-AzVM -Name $machineName -ResourceGroupName $rgName
-# Query OS Disk info
-$vm.StorageProfile.OsDisk
-
-# Update a property
-$vm.HardwareProfile.vmSize = "Standard_DS3_v2"
-Update-AzVM -Name $machineName -ResourceGroupName $rgName
-# Stop VM
-Stop-AzVM -Name $vm.Name -ResourceGroupName $vm.ResourceGroupName
-# Delete VM
-Remove-AzVM -Name $vm.Name -ResourceGroupName $vm.ResourceGroupName
-# Delete the Network Interface
-$vm | Remove-AzNetworkInterface –Force
-# Delete manage Os disks and storage account
-Get-AzDisk -ResourceGroupName $vm.ResourceGroupName -DiskName $vm.StorageProfile.OSDisk.Name | Remove-AzDisk -Force
-# Delete The Virtual Network
-Get-AzVirtualNetwork -ResourceGroupName $vm.ResourceGroupName | Remove-AzVirtualNetwork -Force
-# Delete the Security Group
-Get-AzNetworkSecurityGroup -ResourceGroupName $vm.ResourceGroupName | Remove-AzNetworkSecurityGroup -Force
-# Delete Public IP
-Get-AzPublicIpAddress -ResourceGroupName $vm.ResourceGroupName | Remove-AzPublicIpAddress -Force
-```
-
-Custom Script Extension automatically launch and execute virtual machine customization tasks after initial machine configuration - timesout after 90 minutes
-```powershell
-Set-AzVmCustomScriptExtension -FileUri https://scriptstore.blob.core.windows.net/scripts/Install_IIS.ps1 -Run "PowerShell.exe" -VmName vmName -ResourceGroupName resourceGroup -Location "location"
-```
-
-Desired State Configuration - create specific configuration with scripts 
-```powershell
-configuration IISInstall # configuration script block
-{
-   Node "localhost" # Which VMs are configured
-   { 
-      WindowsFeature IIS # The resourcce block  
-      {
-         Ensure = "Present" # indicate if Role or Feature
-         Name = "Web-Server" 
-      }
-   }
-}
-```
-
-Requires [[Microsoft-Visual-Studios]] 
-```powershell
-Get-AzSubscription
-$context = Get-AzSubscription -SubscriptionId {Your subscription ID}
-Set-AzContext $context
-$rgName = "ResourceGroupName"
-Set-AzDefault -ResourceGroupName 
-# Deploy the template, also for updating the same deployment
-$templateFile="azuredeploy.json"
-$today=Get-Date -Format "MM-dd-yyyy"
-$deploymentName="NamingConventionsApply-"+"$today"
-New-AzResourceGroupDeployment `
-  -Name $deploymentName `
-  -TemplateFile $templateFile `
-  -$ConsiderParameters
-# Go to: Resource Group -> $rgName -> Overview -> "Deployments x Succeeded" -> Select $template
-```
-
-Create Azure AD objects 
-```powershell
-# Create a new user
-New-AzureADUser
-# Remove a user
-Remove-AzADUser 
-```
-
-Bulk Create Azure AD objects :
-```powershell
-$invitations = import-csv c:\bulkinvite\invitations.csv
-
-$messageInfo = New-Object Microsoft.Open.MSGraph.Model.InvitedUserMessageInfo
-
-$messageInfo.customizedMessageBody = "Hello. You are invited to the Contoso organization."
-
-foreach ($email in $invitations)
-   {New-AzureADMSInvitation `
-      -InvitedUserEmailAddress $email.InvitedUserEmailAddress `
-      -InvitedUserDisplayName $email.Name `
-      -InviteRedirectUrl https://myapps.microsoft.com `
-      -InvitedUserMessageInfo $messageInfo `
-      -SendInvitationMessage $true
-   }
-```
-
-Azure RBAC 
-```powershell
-# List all Azure Roles
-Get-AzRoleDefinition | FT Name, Description
-# Filter by name and convert to json
-Get-AzRoleDefinition <role_name> | ConvertTo-Json
-# Get Actions and NotActions Properties, with piped or class dot property
-Get-AzRoleDefinition <role_name> | FL Actions, NotActions
-(Get-AzRoleDefinition <role_name>).Actions
-``` 
-
-Azure Storage Tables
-```powershell
-# Create new table
-New-AzStorageTable -Name $tableName –Context $ctx
-# create a object to perform table operations
-$storageTable = Get-AzStorageTable –Name $tableName –Context $ctx
-# Get the manditory CloudTable, will create a table if non-existent
-$cloudTable = $storageTable.CloudTable
-# table entries - entityOne/Two are fields 
-Add-AzTableRow -table $cloudTable -partitionKey $partitionKey -rowKey ("CA") -property @{"entityOne"="data";"entityTwo"=1}
-# Query the table; for specifics use: -columnName "" -value "" -operator $op
-Get-AzTableRow -table $cloudTable | ft
-# Delete a table
-Remove-AzStorageTable –Name $tableName –Context $ctx
-```
-
-NetworkWatcher
-```powershell
-# Create a new NetworkWatcher
-New-AzNetworkWatcher `
-  -Name NetworkWatcher_eastus `
-  -ResourceGroupName NetworkWatcherRG
-```
-
-Retrieve a Network Watcher instance with [Get-AzNetworkWatcher](https://learn.microsoft.com/en-us/powershell/module/az.network/get-aznetworkwatcher)
-```powershell
-$nw = Get-AzResource `
-  | Where {$_.ResourceType -eq "Microsoft.Network/networkWatchers" -and $_.Location -eq "EastUS" }
-$networkWatcher = Get-AzNetworkWatcher `
-  -Name $nw.Name `
-  -ResourceGroupName $nw.ResourceGroupName
-```
-
-Retrieve a topology
-```powershell
-Get-AzNetworkWatcherTopology `
-  -NetworkWatcher $networkWatcher `
-  -TargetResourceGroupName $rGroup
-```
-
-User Defined Route
-```
-New-AzRouteConfig -Name "StorageRoute" -AddressPrefix "Storage" -NextHopType "VirtualAppliance" -NextHopIpAddress "10.0.100.4"
-```
-
-Load Balancer
-```powershell;
-$Location = $(Get-AzureRmResourceGroup -ResourceGroupName [sandbox resource group name]).Location
-# Create a public IP address 
-$publicIP = New-AzPublicIpAddress `
-  -ResourceGroupName $rGroup `
-  -Location $Location `
-  -AllocationMethod "Static" `
-  -Name "myPublicIP"
-# Create Front-end IP
-$frontendIP = New-AzLoadBalancerFrontendIpConfig `
-  -Name "myFrontEnd" `
-  -PublicIpAddress $publicIP
-# Create a back-end address pool
-$backendPool = New-AzLoadBalancerBackendAddressPoolConfig -Name "myBackEndPool"
-# Allow Load Balancer to monitor backend pool
-$probe = New-AzLoadBalancerProbeConfig `
-  -Name "myHealthProbe" `
-  -Protocol http `
-  -Port 80 `
-  -IntervalInSeconds 5 `
-  -ProbeCount 2 `
-  -RequestPath "/"
-# Create a rule for the Load Balancer
-$lbrule = New-AzLoadBalancerRuleConfig `
-  -Name "myLoadBalancerRule" `
-  -FrontendIpConfiguration $frontendIP `
-  -BackendAddressPool $backendPool `
-  -Protocol Tcp `
-  -FrontendPort 80 `
-  -BackendPort 80 `
-  -Probe $probe
-# Create Load Balancer
-$lb = New-AzLoadBalancer `
-  -ResourceGroupName $rGroup `
-  -Name 'MyLoadBalancer' `
-  -Location $Location `
-  -FrontendIpConfiguration $frontendIP `
-  -BackendAddressPool $backendPool `
-  -Probe $probe `
-  -LoadBalancingRule $lbrule
-# Connect the VMs to the back-end pool 
-$nic1 = Get-AzNetworkInterface -ResourceGroupName $rGroup -Name "webNic1"
-$nic2 = Get-AzNetworkInterface -ResourceGroupName $rGroup -Name "webNic2"
-# Update the network interfaces 
-$nic1.IpConfigurations[0].LoadBalancerBackendAddressPools = $backendPool
-$nic2.IpConfigurations[0].LoadBalancerBackendAddressPools = $backendPool
-
-Set-AzNetworkInterface -NetworkInterface $nic1 -AsJob
-Set-AzNetworkInterface -NetworkInterface $nic2 -AsJob
-# Get pulic IP of the Load Balancer and URL for website
-Write-Host http://$($(Get-AzPublicIPAddress `
-  -ResourceGroupName [sandbox resource group name] `
-  -Name "myPublicIP").IpAddress)
-```
-
-Source IP affininty load balancer
-```powershell
-$lb = Get-AzLoadBalancer -Name MyLb -ResourceGroupName MyResourceGroup
-$lb.LoadBalancingRules[0].LoadDistribution = 'sourceIp'
-Set-AzLoadBalancer -LoadBalancer $lb
-```
-
-Move a Resource 
-```powershell
-$vm = Get-AzResource
-Move-AzResource 
-```
-
-[Azure DNS](https://learn.microsoft.com/en-us/powershell/module/az.dns/new-azdnsrecordset?view=azps-9.4.0)
-```powershell
-# Config
-# New DNS Root record
-New-AzDnsRecordConfig
-# Add DNS Record 
-Add-AzDnsRecordConfig
-
-# Set
-Get-AzDnsRecordSet
-New-AzDnsRecordSet
-Remove-AzDnsRecordSet
-Set-AzDnsRecordSet
-
-# Make Application is accessible for Azure DNS
-# "A" is IPv4 address
-# -name is the Record name: @ Represent the Root domain 
-New-AzDnsRecordConfig -Name "@" -RecordType "A" -ZoneName "$newDomainNameHere" -ResourceGroupName $rGroup -DnsRecords (New-AzDnsRecordConfig -IPv4Address "10.10.10.10")
-# You need TXT record to verify custom domain
-New-AzDnsRecordSet -ZoneName "$newDomainNameHere" -ResourceGroupName $rGroup -Name "@" -RecordType "TXT" -TTL 600 -DnsRecord(New-AzDnsRecordConfig -Value "application.azure.websites.net")
-
-# When IP address changes for custom DNS you must update the "A" record
-$RecordSet = Get-AzDnsRecordSet -ResourceGroupName MyResourceGroup -ZoneName myzone.com -Name www -RecordType A
-Add-AzDnsRecordConfig -RecordSet $RecordSet -Ipv4Address 172.16.0.0
-Add-AzDnsRecordConfig -RecordSet $RecordSet -Ipv4Address 172.31.255.255
-Set-AzDnsRecordSet -RecordSet $RecordSet
-# These cmdlets can also be piped:
-Get-AzDnsRecordSet -ResourceGroupName MyResourceGroup -ZoneName myzone.com -Name www -RecordType A | Add-AzDnsRecordConfig -Ipv4Address 172.16.0.0 | Add-AzDnsRecordConfig -Ipv4Address 172.31.255.255 | Set-AzDnsRecordSet
-```
-
 
 ## References
 

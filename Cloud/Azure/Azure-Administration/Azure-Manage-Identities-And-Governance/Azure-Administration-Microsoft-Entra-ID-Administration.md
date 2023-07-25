@@ -1,10 +1,19 @@
-# Azure AD Administration
+# Azure Administration Microsoft Entra ID 
 
-[Azure Active Directory (Azure AD)](https://learn.microsoft.com/en-us/azure/active-directory/) is Microsoft's multi-tenant cloud-based directory and identity management service. AD and AD Cloud are just local and remote variants of AD, both are in use today and connectable with Hyrid Cloud. See [[Active-Directory-Defined]] for on-premise AD definitions and descriptions. It is the principle Identity and Access management service. Authorize and authenicate to multiple sources: 
+Azure Active Directory renamed on to Microsoft Entra ID as on July 2023.
+
+[Microsoft Entra ID  (once Azure AD)](https://learn.microsoft.com/en-us/azure/active-directory/) is Microsoft's multi-tenant cloud-based directory and identity management service. AD and AD Cloud are just local and remote variants of AD, both are in use today and connectable with Hybrid Cloud. 
+
+A very helpful explanation from [John Savill](https://www.youtube.com/watch?v=JIjijcXoQt4): Entra is a entrance (like a door) to entire features cloud with identity to protect everything behind that entrance.
+Active Directory is not Microsoft Entra ID formerly known as Azure AD: 
+- Microsoft Entra ID is flat, Active Directory domains are trees and forest 
+- Domain controllers are deployed only when required for compatibility for Domain Services
+
+See [[Active-Directory-Defined]] for on-premise AD definitions and descriptions. It is the principle Identity and Access management service. Authorise and authenticate to multiple sources: 
 - On-Premise AD, Internal resources and apps located on your corporate network
 - Web-Application - IpD - google login 
 - External resources like Microsoft 365, the Azure portal, and SaaS applications.
-- Cloud apps developed for your organization.
+- Cloud apps developed for your organisation.
 
 Internal Resources | External  Resources
 --- | --- 
@@ -14,17 +23,17 @@ Access to on-premises workstations | Azure Portal
 
 ![](azureadexample.png)
 
-#### Azure AD Editions
+#### Microsoft Entra ID  Editions
 
 ![](azureadeditions.png)
 
-Teirs:
-Azure Active Directory Free
-Azure Active Directory Microsoft 365 Apps
-Azure Active Directory Premium P1
-Azure Active Directory Premium P2
+Tiers:
+- Microsoft Entra ID Free
+- Microsoft Entra ID Microsoft 365 Apps
+- Microsoft Entra ID Premium P1 
+- Microsoft Entra ID Premium P2
 
-See [Azure Active Directory pricing](https://azure.microsoft.com/pricing/details/active-directory)
+See [Microsoft Entra ID pricing](https://www.microsoft.com/en-gb/security/business/microsoft-entra-pricing?rtc=1)
 
 #### Features
 
@@ -32,7 +41,7 @@ Microsoft espoused features
 ![1000](azureadfeatures.png)
 
 Considerations:
-- SSO for accessiblity for consistent UX experience to cloud or on-premise resources for users.
+- SSO for accessibility for consistent UX experience to cloud or on-premise resources for users.
 - Secure remote access - centralized authorization management, MFA2
 - Advanced Data protection
 - Cost reduction and self -service options
@@ -40,13 +49,13 @@ Considerations:
 
 #### Terminology and Concepts
 
-Azure AD concept | Description
+Microsoft Entra ID  concept | Description
 --- | ---
 Identity | is an object that can be authenticated 
 Account | is an identity that has data associated with it 
-Azure AD account | is an identity that's created through Azure AD or another Microsoft cloud service  
-Azure Tenant | is a single dedicated and trusted instance of Azure AD
-Azure subscription | is used to pay for Azure cloud services 
+Microsoft Entra ID  account | is an identity that's created through Microsoft Entra ID  or another Microsoft cloud service  
+Microsoft Entra Tenant | is a single dedicated and trusted instance of Azure AD
+Microsoft Entra subscription | is used to pay for Azure cloud services 
 Domain |  logical group, AD requires DNS managing domain-joined hosts
 Domain Controller  | Server that manages the DNS, Service Authorization, Storage and Cross Domain related interactions  
 Domain computer | Domain joined host
@@ -55,45 +64,45 @@ Group Policy Objects (GPO) | Virtual collection of Policy settings
 Organization Units (OU) | Objects that are collection of attributes that can be organized 
 Directory Service | Runs on a DC providing methods for storing data and managing availability.
 
-##### Important distinctions between Azure AD and AD Directory Service
+##### Important distinctions between Microsoft Entra ID  and AD Directory Service
 
-Tenants represents an organization in Azure Active Directory - distinct and separate from other Azure AD tenants.
+Tenants represents an organisation in Microsoft Entra ID - distinct and separate from other Microsoft Entra ID  tenants.
 
-Azure AD includes federation service
+Microsoft Entra ID  includes federation service
 
-AD DS is primarily a directory service, while Azure AD is a full identity solution.
+AD DS is primarily a directory service, while Microsoft Entra ID  is a full identity solution.
 
-Azure AD is based on HTTP and HTTPS protocols with REST API
-- Azure AD tenants can't be queried by using LDAP. Azure AD uses the REST API over HTTP and HTTPS.
+Microsoft Entra ID  is based on HTTP and HTTPS protocols with REST API
+- Microsoft Entra ID  tenants can't be queried by using LDAP. Microsoft Entra ID  uses the REST API over HTTP and HTTPS.
  - it doesn't use Kerberos authentication.
 
-Azure AD users and groups are created in a flat structure. There are no organizational units (OUs) or group policy objects (GPOs).
+Microsoft Entra ID  users and groups are created in a flat structure. There are no organisational units (OUs) or group policy objects (GPOs).
 
 You manage only users, groups, and policies - unless you deploy AD DS.
 
-#### Azure AD Domain Services 
+#### Microsoft Entra ID  Domain Services 
 
-Azure AD  Domain Services - some AD domain services are not available in the cloud - 
-Azure AD Directory Domain Services provides managed domain services such as:
+Microsoft Entra ID   Domain Services - some AD domain services are not available in the cloud - 
+Microsoft Entra ID  Directory Domain Services provides managed domain services such as:
 - Domain Joins
 - Group policies
 - LDAP
 - Kerberos
 
-#### Azure AD Connect
+#### Microsoft Entra ID Connect
 
-Azure AD Connect is hybrid service to connect on-premise to Azure Account
+Microsoft Entra ID  Connect is hybrid service to connect on-premise to Azure Account
 
 Password hash synchronization - sync on-premise AD with Cloud AD
 Pass-through authenication - sign-on with the same password for local and cloud AD
-Federation integration - hybrid environment for local AD FS infrastucture - certificate renewal
+Federation integration - hybrid environment for local AD FS infrastructure - certificate renewal
 Synchronization - syncing data 
 Health Monitoring - monitoring in Azure Portal
 
-#### Azure AD join
+#### Microsoft Entra ID  join
 
-Azure Active Directory enables single sign-on (SSO) to devices, applications, and services from anywhere. Securing is vital for compliance!
-Azure AD join - for device joining:
+Microsoft Entra ID enables single sign-on (SSO) to devices, applications, and services from anywhere. Securing is vital for compliance!
+Microsoft Entra ID  join - for device joining:
 Features:
 - SSO, Enterprise State roaming, MS Store for business access, Windows Hello, Access restrictions, access to on-premise 
 - Requires:
@@ -104,9 +113,9 @@ Features:
 
 ![](azureadbenefitsofazureadjoin.png)
 
-[Implement Azure Active Directory join - Training | Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/configure-azure-active-directory/6-implement-active-directory-join)
+[Implement Microsoft Entra ID join - Training | Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/configure-azure-active-directory/6-implement-active-directory-join)
 
-#### Azure AD
+#### Microsoft Entra ID
 
 Users 
 - Identity for a person 
@@ -117,42 +126,40 @@ Assigning Access rights
 - Direct, Group, Rule-based, External authority assignment
 External Identities 
 - allows external parties access your apps and resources with trust signin like:
-	- Google and Facebook logins. Share, develop Azure AD apps for other tenants, developt white-label apps for consumers and customers Azure AD B2C. 
+	- Google and Facebook logins. Share, develop Microsoft Entra ID  apps for other tenants, developt white-label apps for consumers and customers Microsoft Entra ID  B2C. 
 Tenant 
 - Logical division of organization in Azure 
 	- instance of AD in Azure
 	- Business to business, Business to consumer
 
 
+#### Microsoft Entra ID - SSPR feature
 
-#### Azure AD SSPR feature
-
-Azure Active Directory **self-service password reset** (SSPR) feature - no helpdesk (more secure and efficient). Deploy SSPR with password writeback by using [Azure AD Connect](https://learn.microsoft.com/en-us/azure/active-directory/authentication/tutorial-enable-sspr-writeback) or [cloud sync](https://learn.microsoft.com/en-us/azure/active-directory/authentication/tutorial-enable-cloud-sync-sspr-writeback).
+Microsoft Entra ID **self-service password reset** (SSPR) feature - no helpdesk (more secure and efficient). Deploy SSPR with password writeback by using [Microsoft Entra ID  Connect](https://learn.microsoft.com/en-us/azure/active-directory/authentication/tutorial-enable-sspr-writeback) or [cloud sync](https://learn.microsoft.com/en-us/azure/active-directory/authentication/tutorial-enable-cloud-sync-sspr-writeback).
 - Requires:
 	- Global Administrator privileges to manage SSPR options
 	- valid license to use SSPR.
 - SSPR Security group limit users with SSPR privileges
 
-
-[It is works:](https://learn.microsoft.com/en-us/azure/active-directory/authentication/concept-sspr-howitworks)
+[This is how it works:](https://learn.microsoft.com/en-us/azure/active-directory/authentication/concept-sspr-howitworks)
 When a users access the SSPR portal, the Azure platform considers the following factors:
-- How should the page be localized?
+- How should the page be localised?
 - Is the user account valid?
-- What organization does the user belong to?
+- What organisation does the user belong to?
 - Where is the user's password managed?
 
-You can require a minimum number of authenication methods; methods Avaliable
+You can require a minimum number of authentication methods; methods Available
 ![](azuressprmethods.png)
 For Administration account - strong MFA policy, no reuse, rotate - no security question to prevent weak answers and [[OSINT]]. Users only registered when they have the met the number required methods needed for SSPR.
 
 Configure SSPR (self-service-password-reset)
-`Azure Active Directory -> Passwords -> Properties - SSPR enabled (None/Selectec/All)`
+`Microsoft Entra ID -> Passwords -> Properties - SSPR enabled (None/Selectec/All)`
 
 #### Azure User and Group Accounts
 
 Types of Account:
 - Cloud identity - user account defined only in Azure AD
-- Directory-synchronized identity - defined on premise sync-ed to Azure AD with Azure AD Connect
+- Directory-synchronized identity - defined on premise sync-ed to Microsoft Entra ID with Microsoft Entra Connect
 - Guest User - defined outside of Azure.
 
 Typological Considerations: 
@@ -184,20 +191,20 @@ Account restoration must occur 30 day from deletion
 	- **Group assignment**: Assign a group the required access rights, and members of the group will inherit those rights.
 	- **Rule-based assignment**: Use rules to determine a group membership based on user or device properties.
 
-For Temporary Guest users use: `Azure AD B2B` -  you don't take on the responsibility of managing and authenticating the credentials and identities of partners. Some organisations will use federations for on-premise resource authenication - avaliability is dependent of on-premise (security? - some of the big hacks of 2022 were malicious abuse of contractor access, beware) 
+For Temporary Guest users use: `Microsoft Entra ID  B2B` -  you don't take on the responsibility of managing and authenticating the credentials and identities of partners. Some organisations will use federations for on-premise resource authenication - avaliability is dependent of on-premise (security? - some of the big hacks of 2022 were malicious abuse of contractor access, beware) 
 
 
 ## Azure Portal Motions 
 
 Manage Tenants
-`Search Azure AD -> Manage tenants`
+`Search Microsoft Entra ID  -> Manage tenants`
 Create a Tenant
-`All Services -> Azure AD -> Manage Tenants -> Create`
+`All Services -> Microsoft Entra ID  -> Manage Tenants -> Create`
 Configure Tenant
 `Create a Tenant -> Configuration -> Name -> Review and CReate -> Create`
 
 License Management
-`Search Azure AD -> Azure AD -> Licenses`
+`Search Microsoft Entra ID  -> Microsoft Entra ID  -> Licenses`
 To assigna  license
 `All Products -> Assign`
 
@@ -205,33 +212,34 @@ To assigna  license
 
 Remember that you filter be tenant!
 
-Azure AD 
+Microsoft Entra ID  
 `Overview -> Users -> Create`
 
 Creation User
 `Search Users -> New Users -> New user`
-Invite User - For Temporary Guest users use: `Azure AD B2B`
+Invite User - For Temporary Guest users use: `Microsoft Entra ID  B2B`
 `Search Users -> New Users -> Invite`
 Configure guest users:
 - add to `Groups`
 - Access to apps `Manage -> Enterprise applications -> Docusign` (or whatever Digital signing software) 
 
 Edit User settings
-`Search Azure AD -> Azure AD -> User Settings`
+`Search Microsoft Entra ID  -> Microsoft Entra ID  -> User Settings`
 User Management
-`Search Azure AD -> Azure AD -> Users`
+`Search Microsoft Entra ID  -> Microsoft Entra ID  -> Users`
 Create/Invite
-`Search Azure AD -> Azure AD -> Users -> New Users -> New user`
+`Search Microsoft Entra ID  -> Microsoft Entra ID  -> Users -> New Users -> New user`
 Assign Roles
-``Search Azure AD -> Users -> Assigned Roles`
+``Search Microsoft Entra ID  -> Users -> Assigned Roles`
 Enable Account
 `Users -> $username -> Settings -> [Tick/Untick] Account enabled`
 Guest user can be added with Creating and then Inviting
-`Search Azure AD -> Azure AD -> Users -> New Users -> New user`
+`Search Microsoft Entra ID  -> Microsoft Entra ID  -> Users -> New Users -> New user`
 `Overview -> Users -> New User -> Invite External`
 - remember to add to groups and anything else.
 
 Bulk additions, deletion and invitation use a .cvs with SOME of the fields
+
 Name | Username | Initial Password | Block Sign in | Firstname | Lastname 
 --- | --- | --- | ---
 John Doe | jdoe | password123! | No | John | Doe
@@ -242,14 +250,14 @@ Bulk Operations
 Manage Groups
 `Search Groups - > Groups -> New group/Download groups
 Create Group
-`Search Azure AD -> Groups -> New Group`
+`Search Microsoft Entra ID  -> Groups -> New Group`
 - `Membership type* -> Assign/Dynamic(User/Device)`
 To make a dynamic group dynamic:
 - `Add Dynamic Query Rule-> Select a Property, Operator and Value`
 Deleted Groups
 `Search Groups - > Groups -> Deleted groups`
 
-#### Authenication and Authorization
+#### Authentication and Authorisation
 
 Enabling various types of MFA per user, bulk assignment is in the per-user MFA window 
 `Users -> Per-user MFA`
@@ -260,10 +268,10 @@ Remember to `enforce`!
 Password reset
 `Overview -> Password Reset`
 Properties - Self Service password resets
-Authenication Methods
-Registation - Require users to register when signing in
-Notifiications - Notification when and on resets
-Customization - Customize Helpdesk link
+Authentication Methods
+Registration - Require users to register when signing in
+Notifications - Notification when and on resets
+Customisation - Customise Helpdesk link
 On-Premise Integration - As stated
 Administrator Policy - Admin password reset policy.
 
@@ -308,5 +316,6 @@ foreach ($email in $invitations)
 [Microsoft Technical Documentation](https://learn.microsoft.com/en-us/docs/)
 [Microsoft Learn](https://learn.microsoft.com/en-us/)
 [FreeCodeCamp.org - AZ 104 Course](https://www.youtube.com/watch?v=10PbGbTUSAg&t=3458s)
-[Azure Active Directory pricing](https://azure.microsoft.com/pricing/details/active-directory) 
-[Implement Azure Active Directory join - Training | Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/configure-azure-active-directory/6-implement-active-directory-join)
+[Microsoft Entra ID pricing](https://azure.microsoft.com/pricing/details/active-directory) 
+[Implement Microsoft Entra ID join - Training | Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/configure-azure-active-directory/6-implement-active-directory-join)
+[John Savill is always great](https://www.youtube.com/watch?v=JIjijcXoQt4)

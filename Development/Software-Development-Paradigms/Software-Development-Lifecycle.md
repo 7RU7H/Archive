@@ -2,7 +2,7 @@
 
 As with all Development Philosophy, consider the [[Development-Philosphy-Disclaimer]] first.
 
-SDLC is a DevOps concept and its aim is to:
+Software Development Lifecycle (SDLC) is a DevOps concept and its aim is to:
 - Provide analysis of each phase 
 - Establish repeatable processes and predictable outcomes
 - Improve the quality of the software

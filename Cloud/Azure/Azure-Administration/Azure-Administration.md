@@ -1,7 +1,7 @@
 
 This a hub page group links to all relevant articles under a Azure Administration  
 
-[[Azure-Administration-AD-Administration]]
+[[Azure-Administration-Microsoft-Entra-ID-Administration]]
 [[Azure-Administration-AD-Device-Management]]
 [[Azure-Administration-Azure-Roles-And-RBAC]]
 [[Azure-Administration-Azure-Policies]]
