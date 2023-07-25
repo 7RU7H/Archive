@@ -7,11 +7,20 @@ Azure Monitor is the comprehensive solution for collecting, analysing and acting
 	- Query and analyse Logs
 - Alerts and Action groups
 - Log Monitoring
-- Agents
-	- Azure Custom Script Extension is used for post-deployment configuration, software installation, or any other configuration or management task.
-	- Desired State Configuration (DSC) is a management platform to manage an IT and development infrastructure with configuration as code.
-	- Log Analytics agent for Linux as part of a solution to collect JSON output
-	- Azure VMAccess extension acts as a KVM switch that allows you to access the console to reset access to Linux or perform disk-level maintenance.
+- Agents and Extension disambiguation
+	- Azure Monitor Agent - Collects monitoring data 
+		- Will replace the both Log Analytics Agent and Azure diagnostic at some point:
+		- Azure Diagnostic Extension - Enables customers to receive extra data from guest OSes and Workload on Azure resource
+		- Log Analytics agent - Collects logs and performance data for Azure Resources
+			- for Linux as part of a solution to collect JSON output
+	- Azure Custom Script Extension
+		- is used for post-deployment configuration, software installation, or any other configuration or management task.
+	- Desired State Configuration (DSC) 
+		- is a management platform to manage an IT and development infrastructure with configuration as code.
+	- Dependency Agent 
+		- Collects discovered data about certain processes to maps all dependencies between virtual machines and any external process dependencies.
+	- Azure VMAccess extension
+		- acts as a KVM switch that allows you to access the console to reset access to Linux or perform disk-level maintenance.
 
 ![](azuremonitorcollectionagents.png)
 
@@ -93,9 +102,6 @@ Tiering of Log data mapping:
 
 Event Categories
 ![](azurelogeventcatergories.png)
-
-
-
 
 ## Metric Explorer
  
@@ -193,7 +199,10 @@ Azure Administrators use Azure Monitor to receive alerts for their monitored app
 		- **Category**: Administrative, service health, autoscale, policy, or recommendation
 		- **Scope**: Resource level, resource group level, or subscription level
 		- **Resource group**: Where the alert rule is saved
-		- **Resource type**: Namespace for the target of the alert
+		- **Resource type**: Namespace for the target	- Dependency Agent 
+		- Collects discovered data about certain processes to maps all dependencies between virtual machines and any external process dependencies.
+	- Azure VMAccess extension
+		- acts as a KVM switch that allows you to access the console to reset access to Linux or perform disk-level maintenance. of the alert
 		- **Operation name**: Operation name
 		- **Level**: Verbose, informational, warning, error, or critical
 		- **Status**: Started, failed, or succeeded
@@ -203,24 +212,30 @@ Azure Administrators use Azure Monitor to receive alerts for their monitored app
 
 Azure Dashboards are virtual workspaces - day-to-day operations and monitor resources
 Azure Workbooks - visual reporting
-Application Insights is a Application Permformance Management (APM) service it is a sub-service of Azure Monitor
-- Automatic performa anomaly reporting
+Application Insights is a Application Performance Management (APM) service it is a sub-service of Azure Monitor
+- Automatic performance anomaly reporting
 - Analytics and diagnostic tooling
 - Works for apps for .NET, Node.js, Java and Python hosted on-premises, hybrid or any public cloud
 - Integrates with DevOps process
-- Can monitor and analyze telemetry from mobile apps by integrating with Visual Studio App Center
+- Can monitor and analyse telemetry from mobile apps by integrating with Visual Studio App Center
 
-## Insights
+## Azure Monitor Logs
+
+Azure Monitor Logs collects and organises log data generated from Azure resources that is then stored in a Log Analytics workspace. See [[Azure-Administration-Log-Analytics]]. Azure Monitor Logs can store Azure Monitor Metrics data and various other data types, each using their own structure.
+
+## Azure Monitor VM Insights 
+
+Azure Monitor VM Insights  is a feature of Azure Monitor  provides access to log data without exposing the user to underlying queries. Azure Monitor VM Insights relies on Azure Monitor Logs. It is a predefined, curated monitoring experience. Azure Monitor VM Insights use a table named `InsightsMetric`.
 
 To use Application insights you need to instrument your application
 - To instrument you need to install the instrument package (SDK)
 - Or enable Application Insights using the Application Insights Agents when supported
 - Apps can be instrumented from anywhere
 - When you set up Application Insights monitoring for your web app, you create an Application Insights resource in Microsoft Azure
-- You open this resource in the Azure portal in order to see and analyze the telemety collected your app.
+- You open this resource in the Azure portal in order to see and analyse the telemetry collected your app.
 The resource is identified by an instrumentation key (ikey)
 
-Azure Insight VM prevent user from accessing data they should not have access to
+Azure Insights VM prevent user from accessing data they should not have access to
 
 ## Workflows
 
@@ -273,7 +288,7 @@ Log Analytics Querying - Has drop down listing of useful input!
 `Search -> Monitor -> Logs -> Select a scope -> (Tables | Queries | Functions | Filters)  -> Run Query`
 - You can click to collapse the left panel
 
-Create and Configure Log Analytics workspaces
+Create and Configure Log Analytics workspaces - [[Azure-Administration-Log-Analytics]]
 `Search Log Analytics workspaces -> Log Analytics workspaces -> Create`
 `Search Automation Accounts -> Create -> $LAWrGroup` - check [supported mappings](https://learn.microsoft.com/en-us/azure/automation/how-to/region-mappings) then `$AutomationAccount -> Inventory -> Select Log Analytics workspace -> $LAW & Enable` then `Update Management -> Enable`
 

@@ -1400,7 +1400,16 @@ Install and Configure Azure Diagnostics for Windows (WAD)
 - Logs
 - Crash dumps Sinks 
 - Agent
-Then `$VM -> Logs -> Enable -> chooose a Log Analytucs Workspace -> Enable `
+Then `$VM -> Logs -> Enable -> chooose a Log Analytics Workspace -> Enable `
+
+Deploy Log Analytics - beware the access control
+Access mode - either
+- `Resource-context`: view logs for resources in all tables you have access to - queries scope to all data in all tables
+- `Workspace-context`: access to all logs in a workspace - queries scope to resource
+Access control mode 
+- `Require workspace permissions`: all data in any table where permission are defined 
+- ` Use resource or workspace permissions`: granular RBAC
+Table level RBAC - requires Azure custom roles to either grant or deny access to specific tables, either  `Workspace-context` or  `Resource-context`
 
 #### KGL Log queries 
 - Schema 
@@ -1435,7 +1444,7 @@ AppEvents
     | where TimeGenerated > ago(24h)
     | where Name == "Clicked Schedule Button"
 
-# Heartbeat data source reports the health of all computers that report to LA Workspace
+// Heartbeat data source reports the health of all computers that report to LA Workspace
 Heartbeat | summarize arg_max(TimeGenerated, *) by ComputerIP
 
 // Aggregate content by specifications using using summarize 
@@ -1457,7 +1466,7 @@ render timechart
 Onboard virtual machines to Azure Monitor VM Insights
 `Monitor -> Monitoring -> Insights -> Select Enable & Refresh`; available Graphs:
 - Logical Disk Performance
-- CPU Utilization
+- CPU Utilisation
 - Available Memory
 - Logical Disk IOPS
 - Logical Disk MB/s

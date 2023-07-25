@@ -1,8 +1,31 @@
 # Azure-Administration Log Analytics
 
-Log Analytics an Azure Portal Tool to **edit and run log queries** with data in Azure Monitor Logs -  Log Analytics use [KQL](https://learn.microsoft.com/en-us/azure/data-explorer/kusto/query/) - Kusto Query Language
+Log Analytics an Azure Portal Tool to **edit and run log queries** with data in Azure Monitor Logs -  Log Analytics use [KQL](https://learn.microsoft.com/en-us/azure/data-explorer/kusto/query/) - Kusto Query Language. Data collection is done by Azure Monitor - [[Azure-Administration-Azure-Monitor]]. Logs are time-stamped information about changes made to resources, depending on Log source of either data type of metrics or logs.
+
+![](azuremonitorcollectionforlogs.png)
+
+**Application data**: Data that relates to your custom application code.
+- **Operating system data**: Data from the Windows or Linux virtual machines that host your application.
+- **Azure resource data**: Data that relates to the operations of an Azure resource, such as a web app or a load balancer.
+- **Azure subscription data**: Data that relates to your subscription. It includes data about Azure health and availability.
+- **Azure tenant data**: Data about your Azure organization-level services, such as Azure Active Directory.
+
 
 Log Analytics workspace is a unique environment for Azure monitor Log Data; each has its own data repository and configuration, data sources and solutions are configured to store their data in a workspace.
+
+
+#### Deploying Log Analytics
+
+Azure Log Analytics Access Control
+![](azureloganalyticsaccesscontrol.png)
+
+Access mode - either
+- `Resource-context`: view logs for resources in all tables you have access to - queries scope to all data in all tables
+- `Workspace-context`: access to all logs in a workspace - queries scope to resource
+Access control mode 
+- `Require workspace permissions`: all data in any table where permission are defined 
+- ` Use resource or workspace permissions`: granular RBAC
+Table level RBAC - requires Azure custom roles to either grant or deny access to specific tables, either  `Workspace-context` or  `Resource-context`
 
 Azure Monitor Logs is based on Azure Data Explorer, and log queries are written using the same KQL
 - KQL used in:
@@ -15,7 +38,7 @@ Azure Monitor Logs is based on Azure Data Explorer, and log queries are written 
 	- Azure Monitor Logs API
 
 - Kusto is based on relational database management systems and supports entities such as databases, tables and columns
--  Kusto queries are read-only requests
+- Kusto queries are read-only requests
 	- Some query operators include:
 		- Calculated columns, searching and filtering on rows, group by-aggregates, join functions
 - Kusto queries execute in context of some Kusto database that is attached to a Kusto cluster
@@ -35,13 +58,13 @@ Azure Monitor Logs is based on Azure Data Explorer, and log queries are written 
 
 Scenarios:
 - Assess update requirement and time-to-complete
-- Track Changes and identiy access issues
+- Track Changes and identity access issues
 - Security 
 
 The following illustration highlights how KQL queries use the dedicated table data for your monitored services and resources.
 ![1080](azurekglqueries.png)
 
-Correctly designing a Log Analytics workspace deployment is important. Log Analytics workspaces are containers where Azure Monitor data is collected, aggregated, and analyzed.
+Correctly designing a Log Analytics workspace deployment is important. Log Analytics workspaces are containers where Azure Monitor data is collected, aggregated, and analysed.
 - Access mode
 	- workspace-context: access to all log in workspace where the permission is assigned 
 	- resource-context: provides access to view logs for resources in all tables you have access to
@@ -51,11 +74,66 @@ Correctly designing a Log Analytics workspace deployment is important. Log Analy
 		- Use resource or workspace permissions - granular RBAC
 - Table-level RBAC - Very granular RBAC at the table level
 
-Azure Monitor data teirs:
+Azure Monitor data tiers:
 ![](azuremonitoringtier.png)
 
 Tiering of Log data mapping:
 ![](azurelogeventtiering.png)
+
+ 
+
+#### KGL Log queries 
+- Schema 
+- Filter
+- Explorer
+
+```sql
+// Syntax
+// Count by Rows:
+$Table | count 
+
+// Count by Column:
+$Table 
+| count
+
+// Control Commands 
+.create table Logs (Level:string, Text:string)
+
+
+// Queries - I will use row queries for space, unless it is required
+$table | count
+$table | top 3 by event severity duration
+$table | where StartTime between (datetime(2007-11-01) .. datetime(2007-12-01))
+$table | where $Column == "Something" 
+
+// Top most security events by time generated
+SecurityEvents 
+	| take 10 by TimeGenerated
+
+// In the last 24 hours records of "Clicked Schedule Button"
+AppEvents 
+    | where TimeGenerated > ago(24h)
+    | where Name == "Clicked Schedule Button"
+
+// Heartbeat data source reports the health of all computers that report to LA Workspace
+Heartbeat | summarize arg_max(TimeGenerated, *) by ComputerIP
+
+// Aggregate content by specifications using using summarize 
+$table | summarize count(), avg(severity) by $column, $column
+
+// Create a Column Chart from $event 
+$table | where isnotempty($event) | summarize event_count=count() by $event | top 10 by event_count | render columnchart
+
+// Chat CPU usage trends by computer
+InsightsMetrics
+| where TimeGenerated > ago(1h)
+| where Origin == "vm.azm.ms"
+| where Namespace == "Processor"
+| where Name == "UtilizationPercentage"
+summarize avg(Val) by bin(TimeGenerated, 5m), Computer
+render timechart
+```
+
 
 ## References
 
