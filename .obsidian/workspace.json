@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Maintenance/Azure-Administration-Microsoft-Graph-PowerShell-Module.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Backup-Resources/Azure-Administration-Azure-Backups.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Maintenance/Azure-Administration-Microsoft-Graph-PowerShell-Module.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Backup-Resources/Azure-Administration-Azure-Backups.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,8 +140,10 @@
   },
   "active": "a5c4a037d48bc4ec",
   "lastOpenFiles": [
+    "Images/azuresiterecoveryfeatures.png",
+    "Images/azuresiterecovery.png",
+    "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Backup-Resources/Azure-Administration-Microsoft-Graph-PowerShell-Module.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
-    "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Maintenance/Azure-Administration-Microsoft-Graph-PowerShell-Module.md",
     "Images/microsoftgraphwhatis.png",
     "Cloud/Cloud-Hacking/Azure-PowerShell-Module.md",
     "Cloud/Azure/Azure-Administration/sedmB5DSu",
@@ -155,7 +157,7 @@
     "Tools/AD-Offensive/Managing-Nix-For-Active-Directory-.md",
     "Development/Languages/Bash/Useful_Bash.md",
     "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
-    "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Maintenance/Azure-Administration-Azure-CLI.md",
+    "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Azure-CLI.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration.md",
     "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Untitled",
     "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-ARM-Templates.md",
@@ -183,7 +185,6 @@
     "Images/ss64-windowsgroups-default-admin-users-and-groups.png",
     "Images/jackmasa-mind-map.png",
     "Images/azslotswappedsettingsvsslotspecificsettings.png",
-    "Images/azurecloudserviceresponsiblitychart.png",
-    "Images/azureadbenefitsofazureadjoin.png"
+    "Images/azurecloudserviceresponsiblitychart.png"
   ]
 }

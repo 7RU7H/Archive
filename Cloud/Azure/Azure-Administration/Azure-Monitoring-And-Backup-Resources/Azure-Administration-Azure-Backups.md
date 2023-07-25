@@ -2,27 +2,44 @@
 # Azure Backups
 
 
-The Azure Backup service provides a simple, secure and cost-effective solution for backing up an organistion's data. Administrators implement the Microsoft Azure Recovery Services (MARS) agent for Azure Backup to recover their data from the Microsoft Azure cloud. Azure Backup Service is a backup layer that spans many Azure services - Scales, secures data at-rest and in-transit with unlimited data transfer:
-- On-Premise, Azure VMs, Azure Fiels, SQL Server (via Azure VM), SAP HANNA databases (vie Azure VM), Azure Database for PostgreSQL
-- Azure Backup directly integerated with Azure Services - not searchable based on service name
+The Azure Backup service provides a simple, secure and cost-effective solution for backing up an organisation's data. Administrators implement the Microsoft Azure Recovery Services (MARS) agent for Azure Backup to recover their data from the Microsoft Azure cloud. Azure Backup Service is a backup layer that spans many Azure services - Scales, secures data at-rest and in-transit with unlimited data transfer:
+- On-Premise, Azure VMs, Azure Files, SQL Server (via Azure VM), SAP HANA databases (vie Azure VM), Azure Database for PostgreSQL
+- Azure Backup directly integrated with Azure Services - not searchable based on service name
 - Offload on-premises backups
 - Backup VMs
+- Filter views by datasource-specific properties
 - App Consistent Backups (restore apps back to an exact state) 
 - Automatic Storage Management - with Storage options 
+- Uses Azure Workbooks of Azure Monitor and Azure Monitor Logs (Log Analytics) to help you view detailed reports on backups.
 
 Benefits according to Microsoft:
 ![](azurebackupbenefit.png)
+
+## Backup Centre 
+
+`Azure Portal -> Backup Center`
+
+- Azure Files backup is snapshot-based
+- Azure Backup for files and folders relies on the MARS agent
+
+#### Storage replication options
+
+|Replication type|Recommendation|
+|---|---|
+|**Geo-redundant** (GRS)|(Default) Use GRS when Azure is your primary backup storage endpoint.|
+|**Locally redundant** (LRS)|If Azure **isn't** your primary backup storage endpoint, use LRS to reduce your storage costs.|
+|**Zone redundant**|If you require data availability without downtime in a region and need to guarantee data residency, use ZRS.|
 
 ## Azure Recovery Services (ARS) 
 
 Azure Recovery Services (ARS) vault is a storage entity in Azure that houses data and recovery points
 - Enhanced capabilities to help secure backup data 
 - Central Monitoring for your hybrid IT environment
-- Azure role-based access controll (Azure RBAC)
+- Azure role-based access control (Azure RBAC)
 - Soft Delete
 - Cross-Region Restore
  Microsoft Azure Recovery Services (MARS) agent backups files, folders, and system state from Windows on-premises machine and Azure VMs
- - Backups are stored in a Recovery Services vulat in Azure
+ - Backups are stored in a Recovery Services vault in Azure
  - MARS agent is also known as the Azure Backup agent
  - The AMRS agent does not support Linux operating systems
 
@@ -35,17 +52,33 @@ Azure Site Recovery (ASR) is a hybrid (on-premise to cloud) backup solution for 
 	-  No data transfer -  Don't need to configure the storage replication type. 
 		- Azure Files backup is snapshot-based
 
+Soft delete for those mistakes everybody makes
+![](azuresoftdeleteandbackups.png)
+
+- Before deletion, stop backup jobs
+- Apply soft-delete state
+- 14 day retention period to view soft-delete data in the vault 
+- Undelete backup items
+- Restore items
+- Resume backups
+
 ## Microsoft Azure Recovery Services (MARS) agent
 
-- Requires installation on Windows Client and Server - does not require a seperate backup server it is an agent.
-- Location of installation and execution of the MARS agent detirmines what data is backed up 
+- Requires installation on Windows Client and Server - does not require a separate backup server it is an agent.
+- Location of installation and execution of the MARS agent determines what data is backed up 
 - Not application-aware
-- Runable: 
+- Runable: System Center Data Protection Manager (DPM) or Microsoft Azure Backup Server (MABS)
 	- On premises
 	- Specific file system locations - VM or Physical
 	- From a a Microsoft Azure Backup Server (MABS) instance or a System Center Data Protection Manager (DPM) server to backup to a MABS or DPM.
 
+Configure on-premises file and folder backups
 ![](azuremarsagentcompletebackupfromonpremisetocloud.png)
+
+1. Create a Recovery Services Vault
+2. Download MARS Agent and Credentials file
+3. Install and register MARS agent
+4. Configure Backups
 
 ## VM Backups
 
@@ -56,28 +89,54 @@ Azure Backup provides independent and isolated backups to guard against unintend
 	- Microsoft Azure Backup Server (MABS)
 		- See comparison with MARS image
 	- Snapshot VMs and stores data a recovery points in geo-redendant recovery vaults - Files or VMs
-- Azure managed disks 
-	- Snapshots 
-		- Read-only full copy of a managed disk 
-		- Billed by size used
-		- Kept two days to reduce backup and restore times
-		- Incremental stored as Blobs
-	- Image - Capture a single image containing all managed disks associated with a VM
-- Azure Site Recovery - for scenarios involving replication, failover, and fall back.
-	- Disaster recovery for VMs 
-	- Can backup data from SQL database  or IaaS VMs, Azure Services
-	- Replicate Azure virtual machines from one Azure region to another
-       - Replicate on-premises VMware virtual machines, Hyper-V virtual machines, physical servers (Windows and Linux), and Azure Stack virtual machines to Azure
-       - Replicate AWS Windows instances to Azure
-	- Replicate on-premises VMware virtual machines, Hyper-V virtual machines managed by System Center VMM, and physical servers to a secondary site
-- VMs can also be backup with System Center Data Protection Manager (DPM) or Microsoft Azure Backup Server (MABS)
-	- For specialized workloads, virtual machines, or files, folders, and volumes - data from SQL server or Microsoft Exchange or Sharepoint
+			-  Azure Backup keeps snapshots for two days
+			- Snapshot backups are problematic for configurations that require the coordination of multiple disks, such as striping - the snapshots need to coordinate with each other, but this functionality isn't currently supported.
+			- You can set the default snapshot retention value from one and five days.
+			- Incremental snapshots are stored as Azure page blobs (Azure Disks).
+			- Recovery points are listed for the virtual machine snapshot in the Azure portal and are labelled with a _recovery point type_.
 
 Comparison between MABS and MARS
 ![](azurecomparisonbetweenmabsandmars.png)
 
-Soft delete for those mistakes everybody makes
-![](azuresoftdeleteandbackups.png)
+## Azure Managed Disks 
+
+- For:
+	 - Snapshots 
+		- Read-only full copy of a managed disk 
+		- Billed by size usedSystem Center Data Protection Manager (DPM) or Microsoft Azure Backup Server (MABS)
+		- Kept two days to reduce backup and restore times
+		- Incremental stored as Blobs
+	- Image - Capture a single image containing all managed disks associated with a VM
+
+## System Center Data Protection Manager (DPM) or Microsoft Azure Backup Server (MABS)
+
+- System Center Data Protection Manager (DPM) or Microsoft Azure Backup Server (MABS):
+	- For specialized workloads, virtual machines, or files, folders, and volumes - data from SQL server or Microsoft Exchange or Sharepoint
+	 - MABS agent must be installed on target machines, added to the [System Center DPM _protection group_](https://learn.microsoft.com/en-us/system-center/dpm/create-dpm-protection-groups).
+	- To protect your on-premises machines, the System Center DPM or MABS instance must be located on-premises.
+	- To protect your Azure virtual machines, the MABS instance must run as an Azure virtual machine and located in Azure.
+
+Requires: 
+- [System Center DPM (and MABS) protection agent](https://learn.microsoft.com/en-us/system-center/dpm/deploy-dpm-protection-agent)
+- [Microsoft Azure Backup Server (MABS)](https://learn.microsoft.com/en-us/azure/backup/backup-mabs-whats-new-mabs)
+
+
+## Azure Site Recovery 
+
+Azure Site Recovery for scenarios involving replication, failover, and fall back. 
+- Disaster recovery for VMs 
+- Can backup data from SQL database  or IaaS VMs, Azure Services
+- Replicate Azure virtual machines from one Azure region to another
+- Replicate on-premises VMware virtual machines, Hyper-V virtual machines, physical servers (Windows and Linux), and Azure Stack virtual machines to Azure
+- Replicate AWS Windows instances to Azure
+- Replicate on-premises VMware virtual machines, Hyper-V virtual machines managed by System Center VMM, and physical servers to a secondary site
+- [Azure Site Recovery documentation](https://learn.microsoft.com/en-us/azure/site-recovery/site-recovery-overview).
+
+Azure Site Recovery visualised
+![](azuresiterecovery.png)
+
+Azure Site Recovery features
+![](azuresiterecoveryfeatures.png)
 
 ## Workflows
 
@@ -95,7 +154,9 @@ Backup Workflows
 
 Create a Recovery Service Vault
 `Search -> Recovery Services vaults -> + Create`
-- Multi-select for backup "What you want to backup" options
+- Create -> Define backup policy -> Backup X
+	- Multi-select for backup "What you want to backup" options
+
 
 Configure replication of Recover Service Vault
 `$Backup -> Properties -> Backup Configuration -> Update `
@@ -164,3 +225,4 @@ Delete Backup Data Backup
 [robocopy | Microsoft Learn](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/robocopy)
 [Microsoft Technical Documentation](https://learn.microsoft.com/en-us/docs/)
 [Microsoft Learn](https://learn.microsoft.com/en-us/)
+[System Center DPM _protection group_](https://learn.microsoft.com/en-us/system-center/dpm/create-dpm-protection-groups)

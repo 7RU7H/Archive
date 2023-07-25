@@ -12,7 +12,7 @@ Install-Module -Name Microsoft.Graph
 # List all submodules in Microsoft.Graph
 get-module -listavailable -name microsoft.graph.*
 # Submodule command systax  
-# BEWARE old module arguements and parametres HAVE CHANGED! no `sed 's/Az/Mg/g'` everything :(
+# BEWARE scripting in deprecated Azure Powershell module arguements and parametres HAVE CHANGED! no `sed 's/Az/Mg/g'` everything :(
 Get-Mg # Retrieve information
 New-Mg # Create Mgure X
 Update-Mg # Update Mgure X
