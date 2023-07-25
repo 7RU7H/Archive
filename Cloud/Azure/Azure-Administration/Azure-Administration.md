@@ -18,7 +18,7 @@ This a hub page group links to all relevant articles under a Azure Administratio
 [[Azure-Administration-Container-Registeries]]
 [[Azure-Administration-Azure-Container-Instances]]
 [[Azure-Administration-Scale-Sets]]
-[[Azure-Administration-Azure-Backups]]
+[[Azure-Administration-Azure-Backups]]Azure-Administration-Log-Analytics
 [[Azure-Administration-Application-Services]]
 [[Azure-Administration-Application-Gateways]]
 [[Azure-Administration-Azure-Monitor]]
@@ -29,6 +29,8 @@ This a hub page group links to all relevant articles under a Azure Administratio
 [[Azure-Administration-Files]]
 [[Azure-Administration-Disaster-Recovery]]
 [[Azure-Administration-Replication]]
+[[Azure-Administration-Log-Analytics]]
 
 For the Cheatsheet: [[Azure-Administration-Cheatsheet]]
 
+For deprecated Azure PowerShell module: [[Azure-PowerShell-Module]]

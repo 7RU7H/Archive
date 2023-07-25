@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Manage-Identities-And-Governance/Azure-Administration-Microsoft-Entra-ID-Administration.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Backup-Resources/Azure-Administration-Azure-Monitor.md",
                 "mode": "source",
                 "source": false
               }
@@ -37,7 +37,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Backup-Resources/Azure-Administration-Azure-Backups.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Backup-Resources/Azure-Administration-Log-Analytics.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4b795d1cc36cdd0e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cloud/Azure/Azure-Administration/AZ-104-Exam-Resources.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Backup-Resources/Azure-Administration-Azure-Backups.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Backup-Resources/Azure-Administration-Log-Analytics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,15 +152,21 @@
   },
   "active": "a5c4a037d48bc4ec",
   "lastOpenFiles": [
+    "Cloud/Azure/Azure-Administration/AZ-104-Exam-Resources.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+    "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Backup-Resources/Azure-Administration-Log-Analytics.md",
+    "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Backup-Resources/Azure-Administration-Azure-Monitor.md",
+    "Images/azuremonitoringtier.png",
+    "Cloud/Azure/Azure-Administration/Azure-Manage-Identities-And-Governance/Azure-Administration-Microsoft-Entra-ID-Administration.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration.md",
+    "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Backup-Resources/Azure-Administration-Azure-Backups.md",
     "Images/azuresiterecoveryfeatures.png",
     "Images/azuresiterecovery.png",
     "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Backup-Resources/Azure-Administration-Microsoft-Graph-PowerShell-Module.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
     "Images/microsoftgraphwhatis.png",
     "Cloud/Cloud-Hacking/Azure-PowerShell-Module.md",
     "Cloud/Azure/Azure-Administration/sedmB5DSu",
     "Cloud/Azure/Azure-Administration/sedeu5ZuR",
-    "Cloud/Azure/Azure-Administration/Azure-Manage-Identities-And-Governance/Azure-Administration-Microsoft-Entra-ID-Administration.md",
     "Development/Software-Development-Paradigms/Software-Development-Lifecycle.md",
     "Development/Software-Development-Paradigms/Development-Philosphy-Disclaimer.md",
     "Development/Software-Development-Paradigms",
@@ -158,7 +176,6 @@
     "Development/Languages/Bash/Useful_Bash.md",
     "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
     "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Azure-CLI.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration.md",
     "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Untitled",
     "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-ARM-Templates.md",
     "Security-Disciplines/Digital-Forensics/Windows-Forensics.md",
@@ -169,10 +186,6 @@
     "Tools/Forensics/Eric-Zimmerman-Tools.md",
     "Tools/SysInternals/Sysinternals-Hub.md",
     "Tools/SysInternals/ProcDump",
-    "Tools/Forensics/Autopsy.md",
-    "Tools/Content-Discovery-Tools/Gobuster-Cheatsheet.md",
-    "Development/APIs/API-Fuzzing.md",
-    "Security-Disciplines/Blue-Team/Windows-Blueteam.md",
     "MacOS",
     "Post-Exploitation/Stealth/Evasion/Logging-And-Monitoring-Evasion",
     "Images/becomethewwwdata.png",
@@ -183,8 +196,6 @@
     "Tools/Malware/Packers",
     "Images/procmonbar.png",
     "Images/ss64-windowsgroups-default-admin-users-and-groups.png",
-    "Images/jackmasa-mind-map.png",
-    "Images/azslotswappedsettingsvsslotspecificsettings.png",
-    "Images/azurecloudserviceresponsiblitychart.png"
+    "Images/jackmasa-mind-map.png"
   ]
 }

@@ -1,11 +1,11 @@
-
 # Azure Administration - Azure Monitor
 
-Azure Monitor is the comprehensive solution for collecting, analyzing and acting on telemetry from cloud and on-premise linked environments. **Azure Monitor collects Logs and Metrics** and enables you to gather monitoring and diagnostic information about the health of your services. You can use this information to visualize and analyze the causes of problems that might occur in your app.
+Azure Monitor is the comprehensive solution for collecting, analysing and acting on telemetry from cloud and on-premise linked environments. **Azure Monitor collects Logs and Metrics** and enables you to gather monitoring and diagnostic information about the health of your services. You can use this information to visualise and analyse the causes of problems that might occur in your app.
 
 - Create Visual Dashboards
-- Alerts
-- Automated Actions
+	- Monitor and visualise metrics
+	- Query and analyse Logs
+- Alerts and Action groups
 - Log Monitoring
 - Agents
 	- Azure Custom Script Extension is used for post-deployment configuration, software installation, or any other configuration or management task.
@@ -13,33 +13,35 @@ Azure Monitor is the comprehensive solution for collecting, analyzing and acting
 	- Log Analytics agent for Linux as part of a solution to collect JSON output
 	- Azure VMAccess extension acts as a KVM switch that allows you to access the console to reset access to Linux or perform disk-level maintenance.
 
+![](azuremonitorcollectionagents.png)
+
 To obtain observability you need to use Metrics, Logs (Metrics and Logs are two base data types) and Traces.
 - You have to use them together, using them in isolate does not increase visibility
 	- [Azure Monitor Metrics](https://learn.microsoft.com/en-us/azure/azure-monitor/essentials/data-platform-metrics)
 	- [Azure Monitor Logs](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/data-platform-logs)
-		- Data logs are consolidated from differenct sources into workspaces
+		- Data logs are consolidated from different sources into workspaces
 			- Platform logs from Azure services
-			- Log and performance data from applcations can be consolidated
+			- Log and performance data from applications can be consolidated
 			- Usage and performance data from applications can be consolidated
-			- In workspace so they can be analyzed together using a sophisticated query language capable of analyzing millions of records
-	- Work with log queries and their resuls [KQL](https://learn.microsoft.com/en-us/azure/data-explorer/kusto/query/)  interactively using Log Analytics
-- Azure Monitor Metrics collects numeric data from monitored resources into a time series database. Analyze with **Metrics Explorer** 
+			- In workspace so they can be analysed together using a sophisticated query language capable of analysing millions of records
+	- Work with log queries and their results [KQL](https://learn.microsoft.com/en-us/azure/data-explorer/kusto/query/)  interactively using Log Analytics
+- Azure Monitor Metrics collects numeric data from monitored resources into a time series database. Analyse with **Metrics Explorer** 
 	- Metrics are numerical values collected at regular intervals and describe some aspect of system at a particular time
 	- Lightweight and capable of supporting near real-time
 - Troubleshooting 
 	- Traces:  A history request which travels through multiple Apps/services for troubleshooting failure
 - [Azure Monitor Insights](https://learn.microsoft.com/en-us/azure/azure-monitor/insights/insights-overview)
-	- Get insights
-		-  Application Performance Monitoring (APM) tools monitor app perparanoid black sabbathformance and gather trace logging data.
-	- Visualize
+	- Get insights - Author joke-note: reminder to play Paranoid by Black Sabbath whenever opening this article or Azure Monitor
+		-  Application Performance Monitoring (APM) tools monitor app performance and gather trace logging data.
+	- Visualise
 		- Power BI with the Azure Workbooks
-	- Analyze 
+	- Analyse 
 		- Logs with queries 
-		- Interactive analysis withAzureMonitor Metrics analysis engine
-	- Alerts
-	- Integrate data with Ingestor and Exportign log data with Azure CLI Powershell, and APIs.
+		- Interactive analysis with Azure Monitor Metrics analysis engine
+	- Alerts - Respond every 5 minutes to SMS 
+	- Integrate data with Ingestor and Exporting log data with Azure CLI PowerShell, and APIs.
 
-
+Components of Azure Monitor:
 ![](azuremonitorcomponents.png)
 
 Azure Monitor collects data automatically from a range of components:
@@ -51,87 +53,37 @@ Azure Monitor collects data automatically from a range of components:
 - **Custom Sources**:
 
 All data collected by Azure Monitor is either a [metric or log](https://learn.microsoft.com/en-us/azure/azure-monitor/platform/data-collection) data type. 
-- **Metrics** are numerical values that describe some aspect of a system at a particular point in time. Metrics are lightweight and capable of supporting near real-time scenarios.
-- **Logs** contain different kinds of data organized into records with different sets of properties for each type. Data like events and traces are stored as logs along with performance data so all the data can be combined for analysis.
+- **Metrics** are numerical values that describe some aspect of a system at a particular point in time. Metrics are lightweight and capable of supporting near real-time scenarios. Viewable:
+	- Metrics are displayed on Overview page for a resource in Azure portal
+	- Azure Monitor metrics explorer
+- **Logs** contain different kinds of data organised into records with different sets of properties for each type. Data like events and traces are stored as logs along with performance data so all the data can be combined for analysis.
 	- Log Events 
 		- Includes a range of data at the subscription-level
 		- Kept for 90 days
 		- Log any write operation (PUT, POST, DELETE)
 		- Status of resources
-		- Activity logs of Azure Portal, CLI, Powershell cmdlets and Azure Monitor REST API
+		- Activity logs of Azure Portal, CLI, PowerShell cmdlets and Azure Monitor REST API
 			- Filtered by:
 				- Subscription
-				- Timespan
+				- Time span
 				- Event severity
 				- Resource Group
 				- Resource
 				- Resource type
 				- Operation name - ARM operation
-				- Event initation caller
-			- Downloadable into a CSV file
+				- Event initiation caller
+			- Downloadable into a .csv file
+
+Azure Monitor data teirs:
+![](azuremonitoringtier.png)
+
 
 Tiering of Log data mapping:
 ![](azurelogeventtiering.png)
 
-Event Catergories
+Event Categories
 ![](azurelogeventcatergories.png)
 
-## Log Analytics
-
-Log Analytics an Azure Portal Tool to **edit and run log queries** with data in Azure Monitor Logs -  Log Analytics use [KQL](https://learn.microsoft.com/en-us/azure/data-explorer/kusto/query/) - Kusto Query Language
-
-Log Analytics workspace is a unique environment for Azure monitor Log Data; each has its own data repository and configuration, data sources and solutions are configured to store their data in a workspace
-
-Azure Monitor Logs is based on Azure Data Explorer, and log queries are written using the same KQL
-- KQL used in:
-	- Log Analytics
-	- Log Alert Rules
-	- Workbooks
-	- Azure Dashboards
-	- Logic Apps
-	- PowerShell
-	- Azure Monitor Logs API
-
-- Kusto is based on relational database management systems and supports entirties such as databases, tables and columns
--  Kusto queries are read-only requests
-	- Some query operators include:
-		- Calculated columns, searching and filtering on rows, group by-aggregates, join functions
-- Kusto queries execute in context of some Kust database that is attached to a Kusto cluster
-- Kusto is generally composed of the following entites:
-	- Clusters - are entities that hold databases
-	- Databases - are named entities that allow reuse of Kusto queries or query parts
-	- Tables  - are named entities that hold data
-	- Columns - columns are named entities that have a scalar data type
-	- Stored Functions - are named  entities that allow reuse of Kusto queries or query parts 
-	- External tables are entities that have a scalar data stored outside Kusto database
-- You can and more:
-	- Search and sort by value, time, property state, and more
-	- Join data from multiple tables
-	- Aggregate large sets of data
-	- Perform intricate operations with minimal code
-- Groups of series of tables are called a schema 
-
-Scenarios:
-- Assess update requirement and time-to-complete
-- Track Changes and identiy access issues
-- Security 
-
-The following illustration highlights how KQL queries use the dedicated table data for your monitored services and resources.
-![1080](azurekglqueries.png)
-
-Correctly designing a Log Analytics workspace deployment is important. Log Analytics workspaces are containers where Azure Monitor data is collected, aggregated, and analyzed.
-- Access mode
-	- workspace-context: access to all log in workspace where the permission is assigned 
-	- resource-context: provides access to view logs for resources in all tables you have access to
-- Access control mode
-	- how permissions work for any given Log Analytics workspace
-		- Require workspace permissions - no granular RBAC
-		- Use resource or workspace permissions - granular RBAC
-- Table-level RBAC - Very granular RBAC at the table level
-
-Azure Insight VM prevent user from access data they should not have access to
-
-![](azuremonitorcollectionagents.png)
 
 ## Network Watcher
 
@@ -273,6 +225,8 @@ To use Application insights you need to instrument your application
 - You open this resource in the Azure portal in order to see and analyze the telemety collected your app.
 The resource is identified by an instrumentation key (ikey)
 
+Azure Insight VM prevent user from accessing data they should not have access to
+
 ## Workflows
 
 Access Azure Monitor
@@ -388,9 +342,9 @@ render timechart
 ```
 
 Onboard virtual machines to Azure Monitor VM Insights
-`Monitor -> Monitoring -> Insights -> Select Enable & Refresh`; avaliable Graphs:
+`Monitor -> Monitoring -> Insights -> Select Enable & Refresh`; available Graphs:
 - Logical Disk Performance
-- CPU Utilization
+- CPU Utilisation
 - Available Memory
 - Logical Disk IOPS
 - Logical Disk MB/s
@@ -410,3 +364,4 @@ Onboard virtual machines to Azure Monitor VM Insights
 [Microsoft Technical Documentation](https://learn.microsoft.com/en-us/docs/)
 [Microsoft Learn](https://learn.microsoft.com/en-us/)
 [Azure Diagnostics extension overview - Azure Monitor | Microsoft Learn](https://learn.microsoft.com/en-us/azure/azure-monitor/agents/diagnostics-extension-overview)
+[John Savill](https://www.youtube.com/@NTFAQGuy) 
