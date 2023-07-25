@@ -8,13 +8,44 @@
 [Azure Cross Replication Regions](https://learn.microsoft.com/en-us/azure/reliability/cross-region-replication-azure)
 [Azure subscription limits and quotas - Azure Resource Manager | Microsoft Learn](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/azure-subscription-service-limits)
 [Pricing Calculator](https://azure.microsoft.com/en-gb/pricing/calculator/)
-[Total Cost of Ownship Calculator](https://azure.microsoft.com/en-gb/pricing/tco/calculator/)
+[Total Cost of Ownership Calculator](https://azure.microsoft.com/en-gb/pricing/tco/calculator/)
 [Understand Subscription and Service limits](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/azure-subscription-service-limits)
-
 
 1. Subscriptions and Microsoft Entra ID Tenant
 1. Management Groups and Subscriptions - Context
 1. Resource Group - Everything exists in resource group, no nesting allowed, not a boundary of access
+
+
+PowerShell Cmdlet Logic 
+```powershell
+# Microsoft Graph Module
+Get-Mg # Retrieve information
+New-Mg # Create Mgure X
+Update-Mg # Update Mgure X
+Add-Mg # Add X to Existing Mgure Y
+Move-Mg # Move Mg X to Y
+Export-Mg # Capture to a template
+Import-Mg # Import config
+Remove-Mg # Remove..
+Select-Mg # Select != Get; Choose X
+Invoke-Mg # Contruct and Perform X
+Clear-Mg # Clear settable values
+Set-Mg # Opposite of Clear, Set values
+# Deprecated Zure Powershell Module
+Get-Az # Retrieve information
+New-Az # Create Azure X
+Update-Az # Update Azure X
+Add-Az # Add X to Existing Azure Y
+Move-Az # Move Az X to Y
+Export-Az # Capture to a template
+Import-Az # Import config
+Remove-Az # Remove..
+Select-Az # Select != Get; Choose X
+Invoke-Az # Contruct and Perform X
+Clear-Az # Clear settable values
+Set-Az # Opposite of Clear, Set values
+```
+
 
 ## Azure Policies
 

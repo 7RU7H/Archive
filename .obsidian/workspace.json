@@ -37,14 +37,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud/Cloud-Hacking/Azure-PowerShell-Module.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Maintenance/Azure-Administration-Microsoft-Graph-PowerShell-Module.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Maintenance/Azure-Administration-Microsoft-Graph-PowerShell-Module.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -138,12 +138,14 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "c2c711b9193304a3",
+  "active": "a5c4a037d48bc4ec",
   "lastOpenFiles": [
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+    "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Maintenance/Azure-Administration-Microsoft-Graph-PowerShell-Module.md",
+    "Images/microsoftgraphwhatis.png",
+    "Cloud/Cloud-Hacking/Azure-PowerShell-Module.md",
     "Cloud/Azure/Azure-Administration/sedmB5DSu",
     "Cloud/Azure/Azure-Administration/sedeu5ZuR",
-    "Cloud/Cloud-Hacking/Azure-PowerShell-Module.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
     "Cloud/Azure/Azure-Administration/Azure-Manage-Identities-And-Governance/Azure-Administration-Microsoft-Entra-ID-Administration.md",
     "Development/Software-Development-Paradigms/Software-Development-Lifecycle.md",
     "Development/Software-Development-Paradigms/Development-Philosphy-Disclaimer.md",
@@ -169,7 +171,6 @@
     "Tools/Content-Discovery-Tools/Gobuster-Cheatsheet.md",
     "Development/APIs/API-Fuzzing.md",
     "Security-Disciplines/Blue-Team/Windows-Blueteam.md",
-    "Cyberwarfare/Theory/Cyberwarfare-Considerations.md",
     "MacOS",
     "Post-Exploitation/Stealth/Evasion/Logging-And-Monitoring-Evasion",
     "Images/becomethewwwdata.png",
@@ -178,13 +179,11 @@
     "Post-Exploitation/Stealth/Evasion/EDR-Evasion",
     "Secure-Architectures",
     "Tools/Malware/Packers",
-    "Services/Databases/OSquery",
     "Images/procmonbar.png",
     "Images/ss64-windowsgroups-default-admin-users-and-groups.png",
     "Images/jackmasa-mind-map.png",
     "Images/azslotswappedsettingsvsslotspecificsettings.png",
     "Images/azurecloudserviceresponsiblitychart.png",
-    "Images/azureadbenefitsofazureadjoin.png",
-    "Images/boopkit.png"
+    "Images/azureadbenefitsofazureadjoin.png"
   ]
 }
