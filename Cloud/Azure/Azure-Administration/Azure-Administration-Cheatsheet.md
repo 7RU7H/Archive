@@ -1455,7 +1455,7 @@ render timechart
 ```
 
 Onboard virtual machines to Azure Monitor VM Insights
-`Monitor -> Monitoring -> Insights -> Select Enable & Refresh`; avaliable Graphs:
+`Monitor -> Monitoring -> Insights -> Select Enable & Refresh`; available Graphs:
 - Logical Disk Performance
 - CPU Utilization
 - Available Memory
@@ -1471,7 +1471,6 @@ Onboard virtual machines to Azure Monitor VM Insights
 Important 
 - `NetworkWatcherAgentWindows` agent is an extension that required on Azure VMs!
 - 1 Network Watcher per region 
-
 - `Packet capture` - Automate remote network monitoring and triggering alerts from packet capture
 	-  `Network Watcher -> Packet capture`
 - Network Security Group Flow Logs (NSG Flow Logs) for network traffic pattern collection
@@ -1487,6 +1486,9 @@ Important
 	- `Network Watcher -> Next Hop`
 - `Connection Monitor` - provides unified, end-to-end connection monitoring in your Azure and hybrid networks!
 - `Traffic Analytics` - is a cloud-based solution that provides visibility into user and application activity in your cloud networks by analyzes NSG flow logs
+- `Network Typology` - visualise a virtual network
+
+
 
 ## AzCopy 
 

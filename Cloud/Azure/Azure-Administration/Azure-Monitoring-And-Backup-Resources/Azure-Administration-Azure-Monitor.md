@@ -43,14 +43,16 @@ To obtain observability you need to use Metrics, Logs (Metrics and Logs are two 
 
 Components of Azure Monitor:
 ![](azuremonitorcomponents.png)
+Azure Monitor can collect log data from any REST client by using the Data Collector API.
 
 Azure Monitor collects data automatically from a range of components:
 - **Application data**: Data that relates to your custom application code.
 - **Operating system data**: Data from the Windows or Linux virtual machines that host your application.
 - **Azure resource data**: Data that relates to the operations of an Azure resource, such as a web app or a load balancer.
 - **Azure subscription data**: Data that relates to your subscription. It includes data about Azure health and availability.
-- **Azure tenant data**: Data about your Azure organization-level services, such as Azure Active Directory.
+- **Azure tenant data**: Data about your Azure organisation-level services, such as Azure Active Directory.
 - **Custom Sources**:
+	- Azure Monitor can collect log data from any REST client by using the Data Collector API, you can create custom monitoring scenarios
 
 All data collected by Azure Monitor is either a [metric or log](https://learn.microsoft.com/en-us/azure/azure-monitor/platform/data-collection) data type. 
 - **Metrics** are numerical values that describe some aspect of a system at a particular point in time. Metrics are lightweight and capable of supporting near real-time scenarios. Viewable:
@@ -77,6 +79,14 @@ All data collected by Azure Monitor is either a [metric or log](https://learn.m
 Azure Monitor data teirs:
 ![](azuremonitoringtier.png)
 
+Activity Logs
+- Determine the "what, who, and when" for any write operation (PUT, POST, DELETE) performed on resources in your subscription.
+- Kept for 90 days
+- Retrieve events from activity logs with:
+	- Azure portal
+	- the Azure CLI
+	- PowerShell cmdlets
+	- Azure Monitor REST API
 
 Tiering of Log data mapping:
 ![](azurelogeventtiering.png)
@@ -85,22 +95,7 @@ Event Categories
 ![](azurelogeventcatergories.png)
 
 
-## Network Watcher
 
-**Network Watcher** provides tools to **monitor**, **diagnose**, view **metrics**, and enable or disable **logs** for resources in an Azure virtual network (**regional service**)!
-- Automate remote network monitoring with packet capture - from triggering alerts
-	-  `Network Watcher -> PAcket capture`
-- Network Security Group Flow Logs (NSG Flow Logs) for network traffic pattern collection
-- Diagnose VPN issues
-	- `Network Watcher -> VPN troubleshoot
-- Visual Network Typology 
-	- `Network Watcher -> Topology`
-- Connection Troubleshoot -  suite of networking tools and capabilities to3 troubleshoots network performance and connectivity issues in Azure.
-	 - `Network Watcher -> Connection troubleshoot`
-- Verify IP flow -  IP Flow Verify quickly diagnose connectivity issues from or to the internet and from or to the on-premises environment.
-	- `Network Watcher -> Ip flow verify`
-- Next Hop - determine if traffic is being directed to the intended destination by showing the next hop'
-	- `Network Watcher -> Next Hop`
 
 ## Metric Explorer
  

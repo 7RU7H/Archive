@@ -30,6 +30,7 @@ This a hub page group links to all relevant articles under a Azure Administratio
 [[Azure-Administration-Disaster-Recovery]]
 [[Azure-Administration-Replication]]
 [[Azure-Administration-Log-Analytics]]
+[[Azure-Administration-Network-Watcher]]
 
 For the Cheatsheet: [[Azure-Administration-Cheatsheet]]
 
