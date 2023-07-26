@@ -37,7 +37,7 @@ Parameters
 1. My profile Section
 2. Integration Functions
 3. Paid Account Functions
-4. Published / used Authenicated API Calls
+4. Published / used Authenticated API Calls
 5. Upload / Export Functions
 6. Undocumentated API CAlls and Admin tools
 7. Multiple User Levels

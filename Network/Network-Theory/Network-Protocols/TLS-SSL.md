@@ -5,7 +5,7 @@
 ```goat
 Client -> Client Hello Message (TLS version, cipher suite plus random bytes) -> Server 
 Client <- Server Hello Message (certificate and cipher suite plus random bytes) <- Server
-Client -> Authenication -> Server
+Client -> Authentication -> Server
 Client -> Premaster secret (server public key + random bytes ) -> Server
 Client <- Decryption premaster secretwith server private key <- Server
 Client <-> Sessions key generated (with client's random bytes), but not transmitted <-> Server

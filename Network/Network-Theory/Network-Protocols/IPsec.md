@@ -28,7 +28,7 @@ Original:
 | IP Header | TCP/UDP Header | Data | 
 
 
-						.-----Authenicated------.
+						.-----Authenticated------.
 						|						|
 					    v                       v
 | IP Header | AH Header | TCP/UDP Header | Data | 
@@ -36,7 +36,7 @@ Original:
 
 Tunnel Mode
 ```goat
-						  .------------Authenicated-----------.
+						  .------------Authenticated-----------.
 						  |								      |
 					      v                                   v
 New IP Header | AH Header | IP Header | TCP/UDP Header | Data | 
@@ -70,7 +70,7 @@ Original:
 | IP Header | TCP/UDP Header | Data | 
 
 Transport Mode
-								     .-Authenicated-&-Encrypted-.
+								     .-Authenticated-&-Encrypted-.
 								     |						    |
 							         v                          v
 | IP Header | ESP Header | AH Header | TCP/UDP Header |  Data   | ESP Trailer | ESP Authentication |
@@ -78,7 +78,7 @@ Transport Mode
 
 Tunnel Mode
 
-						  .-----Authenicated-&-Encrypted------.
+						  .-----Authenticated-&-Encrypted------.
 						  |								      |
 					      v                                   v
 New IP Header | AH Header | IP Header | TCP/UDP Header | Data |  ESP Trailer | ESP Authentication | 

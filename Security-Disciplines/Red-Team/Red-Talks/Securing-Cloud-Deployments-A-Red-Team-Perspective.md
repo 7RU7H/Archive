@@ -71,7 +71,7 @@ Traditional granular controls are very different from cloud controls!
 2. Brand Impersonation (No SSL certification for users to differenciate; No cert? Bad site - gone)
 3. Improper service cleanup/deprovisioning (IPs, DNS, service names) can let an attacker claim them
 
-#### Confusing Authenication for Authorization 
+#### Confusing Authentication for Authorization 
 1. Just because someone has an account doesn't mean they belong here..
 2. Detirmining a user's role through user controlled fields
 3. This applies to other identity fields as well
@@ -93,7 +93,7 @@ Traditional granular controls are very different from cloud controls!
 
 John Lambert Microsoft Security Consultant: *"Defenders think in lists, Attackers think in graphs"*
 
-#### Multifactor Authenication
+#### Multifactor Authentication
 1.  Much harder to steal, guess, brute force...
 2.  Not impossible, but attacker like low hanging fruit
 3.  Make sure you're using across all services, Better yet...

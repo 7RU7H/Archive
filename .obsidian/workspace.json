@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Post-Exploitation/Post-Exploitation-Enumeration/Active-Directory/Active-Directory-Footholding.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Application-Services.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Hardening",
+                "query": "Authen",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -114,7 +114,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -134,7 +135,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Post-Exploitation/Post-Exploitation-Enumeration/Active-Directory/Active-Directory-Footholding.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Application-Services.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -164,11 +165,16 @@
   },
   "active": "a37d8a9f9ce3867d",
   "lastOpenFiles": [
+    "Post-Exploitation/Credentials-Harvesting/AD-Credential-Harvesting.md",
+    "Post-Exploitation/Credentials-Harvesting/Web-App-Credentials.md",
+    "Post-Exploitation/Credentials-Harvesting/Browser-Credential-Harvesting.md",
+    "Post-Exploitation/Lateral-Movement/Active-Directory-Lateral-Movement/AD-Lateral-Movement-Alternate-Authentication-Material.md",
+    "Post-Exploitation/Lateral-Movement/Active-Directory-Lateral-Movement/Active-Directory-Lateral-Movement.md",
+    "Post-Exploitation/Post-Exploitation-Enumeration/Active-Directory/Active-Directory-Footholding.md",
     "Post-Exploitation/Post-Exploitation-Enumeration/macOS-Information-Gathering.md",
     "Post-Exploitation/Post-Exploitation-Enumeration/Foothold-Enumeration.md",
     "Security-Disciplines/Penetration-Testing/Tactical-Post-Exploitation.md",
     "Post-Exploitation/Post-Exploitation-Enumeration/Windows-Post-Exploitation-Info-Gathering.md",
-    "Post-Exploitation/Post-Exploitation-Enumeration/Active-Directory/Active-Directory-Footholding.md",
     "Securing-Architectures/Hardening/Active-Directory-Hardening.md",
     "Securing-Architectures/Hardening/Windows-Hardening.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
@@ -194,12 +200,7 @@
     "Development/Software-Development-Paradigms",
     "Development/Anti-Reverse-Engineering/Circumvent-Anti-Reverse-Engineering.md",
     "Development/Malware/Anti-Reverse-Engineering-Techniques.md",
-    "Tools/AD-Offensive/Managing-Nix-For-Active-Directory-.md",
-    "Development/Languages/Bash/Useful_Bash.md",
-    "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
-    "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Azure-CLI.md",
     "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Untitled",
-    "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-ARM-Templates.md",
     "Tools/SysInternals/ProcDump",
     "MacOS",
     "Post-Exploitation/Stealth/Evasion/Logging-And-Monitoring-Evasion",

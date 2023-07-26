@@ -96,7 +96,7 @@ tftp $ip
 [[Web-Hacking-Checklist]], [[Website-Recon]] and [[Web-App-Hacking-Methodology]].
 
 ## 88 - Kerberos
-Found on the Domain Controller in Active Directory Network - see [[Active-Directory-Kerberos-Authenication-Defined]]
+Found on the Domain Controller in Active Directory Network - see [[Active-Directory-Kerberos-Authentication-Defined]]
 
 ## 110 - POP3
 

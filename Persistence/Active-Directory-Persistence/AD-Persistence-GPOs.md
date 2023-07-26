@@ -43,14 +43,14 @@ Make it so that the Blue or Purple teams cannot just remove the persistence, ret
 1. Click on your policy and then on `Delegation`
 2. Remove Permissions that provide ability to edit GPOs
 	1. Right Click `ENTERPRISE DOMAIN CONTROLLERS` and select `Edit settings, delete, modify security`
-	2. Click on all other groups (except Authenicated Users and click `Remove`
+	2. Click on all other groups (except Authenticated Users and click `Remove`
 3. `Advanced` and remove the `Created Owner` from permissions
 	- All authenticated Users must have the ability to read the policy, **by default** or the policy could not be read by the user's account when they authenticate to apply User policies - without the logon script we could remove this permission.
 	- Replace Authenticated Users with Domain Computers to ensure that computers can still read and apply the policy, but prevent any user from reading the policy. If this option extra configuration to ensure shell callback - **This is no going back after this approach**.
 			1. Click `Add`
 			2. Type `Domain Computers` and Click `Check Names -> Ok`
 			3. Select `Read Permissions` and click `OK`
-			4. Click on `Authenicated Users -> Remove`
+			4. Click on `Authenticated Users -> Remove`
 
 ## References
 

@@ -1,7 +1,7 @@
 # Active Directory  Persistence With Tickets
 
 
-Understanding Kerberos is a must, view: [[Active-Directory-Kerberos-Authenication-Defined]] and then [[Attacking-Kerberos]]. 
+Understanding Kerberos is a must, view: [[Active-Directory-Kerberos-Authentication-Defined]] and then [[Attacking-Kerberos]]. 
 
 
 When using [[Golden-Tickets]]:

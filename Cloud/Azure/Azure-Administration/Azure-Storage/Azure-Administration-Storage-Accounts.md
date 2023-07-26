@@ -280,7 +280,7 @@ Azure Copy Features
 -   AzCopy supports Azure Data Lake Storage Gen2 APIs.
 -   AzCopy is built into Azure Storage Explorer.  
 -   AzCopy is available on Windows, Linux, and macOS.
--   Authenicate with SAS or Azure-AD
+-   Authenticate with SAS or Azure-AD
 
 
 ## Azure Storage Tables
@@ -311,7 +311,7 @@ Remove-AzStorageTable –Name $tableName –Context $ctx
 	- Secure data in transit
 	- Secure data at rest - decrypted on retrieva
 - Shared access signatures
-- Authorized & Authenication
+- Authorized & Authentication
 
 Configure Azure Storage Encryption:
 `Storage accounts -> $storage_accounts -> Encryption`

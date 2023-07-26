@@ -54,7 +54,7 @@ Both MDM and MAM is managed Via Microsoft Intune, part of Microsoft Endpoint Man
 
 Mobile Application Management (MAM) - Publish, push configure, secure, monitor and update mobile apps for your users.
 
-Microsoft Authenicated App is for secure sign-ins for all your online account using MFA, passwordless and password autofill - found on Appstores.'
+Microsoft Authenticated App is for secure sign-ins for all your online account using MFA, passwordless and password autofill - found on Appstores.'
 
 #### Azure AD Joined Devices
 
@@ -78,7 +78,7 @@ All Windows 10 devices, except Home, Server 2019 and beyond running in Azure - S
 
 Fast Identity Online (FIDO) Alliance - An open industry association whoase mission is to develop and promote authenication standards  that help reduce the world's over-reliance on passwords. Security Keys are a secondary physcial device used a second stop in authentication - supports FIDO/WebAuthn, UF2; are waterproff and crush resistant, USB-A and NFC dual connectors on a single key; work with most major outlets - Google, Facebook,etc. FIDO Alliance has published three sets of open specifications:
 - FIDO Universal Second Factor (FIDO U2F)
-- FIDO Universal Authenication Framework (FIDO UAF)
+- FIDO Universal Authentication Framework (FIDO UAF)
 - Client to Authenicator Protocola (CTAP)
 - CTAP is complementary to W3C's Web Authentication (WebAuthn) specification; together, they are known as FIDO2
 

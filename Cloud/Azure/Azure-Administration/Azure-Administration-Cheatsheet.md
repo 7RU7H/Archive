@@ -270,7 +270,7 @@ Deleted Groups
 Configure SSPR (self-service-password-reset)
 `Microsoft Entra ID -> Passwords -> Properties - SSPR enabled (None/Selectec/All)`
 Futher configuration of SSPR
-`Authenication Methods, Registration, Notification and Customise Helpdesk link`
+`Authentication Methods, Registration, Notification and Customise Helpdesk link`
 - Requires Premium Microsoft Entra ID P1
 
 Enabling various types of MFA per user, bulk assignment is in the per-user MFA window 
@@ -1118,7 +1118,7 @@ Deploy Code to a Azure App Service configure to deploy git source code.
 Set-Location-Path $pathToSourceCode
 git remote add $Repository $AzureAppServiceDeployURL.git 
 git push $Repository $Branch
-# Authenicate
+# Authenticate
 ```
 
 Deployment Slots 

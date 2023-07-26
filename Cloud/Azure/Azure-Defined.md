@@ -62,7 +62,7 @@ Azure Active Directory is a Cloud identity provider [[Active-Directory-Defined]]
 - WS-Fed
 - OAUTH2
 
-We want Multi-Factor Authenication as it currently most secure. Whereas for Authorization we use Role Base Access Control (RBAC) with Conditional Access. RBAC is based on Conditional Access from Azure AD and add requirements of authenication. Role Based Access Control:
+We want Multi-Factor Authentication as it currently most secure. Whereas for Authorization we use Role Base Access Control (RBAC) with Conditional Access. RBAC is based on Conditional Access from Azure AD and add requirements of authenication. Role Based Access Control:
 - A Role is a set of actions - Owner, Contributor, Reader; some are subsets of actions
 - Roles are given to an Identity - user and group at particular scopes.
 

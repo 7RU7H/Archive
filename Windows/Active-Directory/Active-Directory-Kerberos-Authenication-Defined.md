@@ -1,4 +1,4 @@
-# Kerberos Authenication Defined
+# Kerberos Authentication Defined
 
 The Kerberos authentication protocol is used by Microsoft, adopted from the Kerberos version 5 authentication protocol created by MIT and has been used as Microsoft's primary authentication mechanism since Windows Server 2003. Used to facilitate both authenication and authorization in Active Directory. Privilege Attribution Certificate contains all the relevant user information stored on each service - signed by target server and secret key value only known by DC. The DC acts a Key Distribution Centre(KDC) to authenicate client and allow authorization. SPN is the Service Principal Name and is a mapping between service and account, the KDC requires this to properly encrypt the service of the Service Ticket - with `Setspn.exe`.
 
@@ -41,12 +41,12 @@ Encrypted with the TGT session key
 
 Client |  Steps | AD DC/Server
 --- | --- | ---
-Client|Step 1: Authenication Server Request (\_AS\_REQ) ->	|	Domain Controller
-Client |<- Step 2: Authenication Server Reply (AS_REP)|	Domain Controller
+Client|Step 1: Authentication Server Request (\_AS\_REQ) ->	|	Domain Controller
+Client |<- Step 2: Authentication Server Reply (AS_REP)|	Domain Controller
 Client |		Step 3: Ticket Granting Service Request (TGS_REQ) ->|	Domain Controller
 Client |		<- Step 4: Ticket Granting Service Reply (TGS_REP) |	Domain Controller
 Client 	|	Step 5: Application Request ->		|			Application Server
-Client	    |	<- Step 6: Service Authenication	| Application Server
+Client	    |	<- Step 6: Service Authentication	| Application Server
 
 
 Transaction  |	Contents

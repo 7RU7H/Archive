@@ -1,4 +1,4 @@
-# Active Directory Authenication
+# Active Directory Authentication
 
 Active Directory supports multiple authentication protocols and techniques and implements authentication to Windows, Linux amd MacOS. For more basics of cryptography see [[Cryptography]]. For how AD caches the hashes see [[Active-Directory-Credential-Caching]].
 
@@ -12,12 +12,12 @@ Command  | Network Protocol | Authentication
 `dir \\domain_name\SYSVOL` | DNS | Kerberos authentication
 
 
-## NTLM Authenication
+## NTLM Authentication
 - **Use**
 1. Used in client to server authenication
 1. Used in user authenication to a hostname not registered on the AD integrated DNS server.
 
-- **Authenication Process**
+- **Authentication Process**
 1. Calculation of cryptographic hash
 2. Client Machine sends `user name` -> `server`; Server -> returns a random value called either `nouce/challenge`  
 3. Client Machine encrypts the `nouce/challenge` with the NTLM hash called a `response`
@@ -26,7 +26,7 @@ Command  | Network Protocol | Authentication
 6. DC encrypt the `nouce/challenge`  itself with its stored version of the NTLM hash to make a comparison with the forwarded `response`
 
 ## Kerberos Authentication
-For detailed explainations of [[Active-Directory-Kerberos-Authenication-Defined]] and for [[Attacking-Kerberos]] follow the links. The Kerberos authentication protocol used by Microsoft is adopted from the Kerberos version 5 authentication protocol created by MIT and has been used as Microsoft's primary authentication mechanism since Windows Server 2003. It uses a ticket system to ensure an intermediary gatekeeping by the DC as role of key distribution (KDC) for service usage from non-DCs. A example of this process is outlined in [[Active-Directory-Kerberos-Authenication-Defined]].
+For detailed explainations of [[Active-Directory-Kerberos-Authentication-Defined]] and for [[Attacking-Kerberos]] follow the links. The Kerberos authentication protocol used by Microsoft is adopted from the Kerberos version 5 authentication protocol created by MIT and has been used as Microsoft's primary authentication mechanism since Windows Server 2003. It uses a ticket system to ensure an intermediary gatekeeping by the DC as role of key distribution (KDC) for service usage from non-DCs. A example of this process is outlined in [[Active-Directory-Kerberos-Authentication-Defined]].
 
 
 ## References

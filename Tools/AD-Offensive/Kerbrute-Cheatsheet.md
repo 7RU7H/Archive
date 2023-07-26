@@ -1,5 +1,5 @@
 # Kerbrute Cheatsheet
- For more information on the mechanics of Kerberos  [[Active-Directory-Kerberos-Authenication-Defined]] and [[Attacking-Kerberos]].
+ For more information on the mechanics of Kerberos  [[Active-Directory-Kerberos-Authentication-Defined]] and [[Attacking-Kerberos]].
  
 Kerbrute go install method `go install github.com/ropnop/kerbrute@latest`  
 [Kerbrute precompiled](https://github.com/ropnop/kerbrute/releases)

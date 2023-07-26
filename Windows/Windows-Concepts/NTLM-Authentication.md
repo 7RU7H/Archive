@@ -7,7 +7,7 @@ Client - Server
 		- Server can check User and Domain before beginning local authenication  
 - Client  <- Type 2 Message: Challenge <- Server
 	- Server create SEcurity Context and sends back its ID to the client 
-- Client  -> Type 3 Message: Authenication (Empy Type if successful) (Response to Chellenge) -> Server
+- Client  -> Type 3 Message: Authentication (Empy Type if successful) (Response to Chellenge) -> Server
 	- Only if the client successfully associates themselves with an existing Security Context ID 
 
 

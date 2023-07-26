@@ -16,7 +16,7 @@ cat /etc/group
 sudo cat /etc/sudoers
 # Login information
 sudo last -f /var/log/wtmp
-# Authenication logs
+# Authentication logs
 cat /var/log/auth.log | tail
 # Hostname
 cat /etc/hostname

@@ -92,7 +92,7 @@ RBAC core concepts:
 		- Reading - Readers
 		- Group - Groups Level Roles
 		- If Identity Protect - Security Roles
-		- If MFA - Authenication Roles 
+		- If MFA - Authentication Roles 
 		- Privileged Role - Privileged Role Adminstrator
 		- Users  - User Admin
 		- Support - Service Support Admin plus relevant service 

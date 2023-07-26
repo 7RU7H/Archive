@@ -8,7 +8,7 @@ Attack Surface: is the surface area - abstract mathematical sense of space - of 
 Attack Surface Reduction is the strategy of reducing the the area of asset attackability through:
 - Accessibility
 - Speedy Patching!
-- Authenication and Authorization
+- Authentication and Authorization
 - Sandboxing
 - Brute Forcing protections and practices to make it expensive 
 - Password/Ticket policies and rotations for users and machines

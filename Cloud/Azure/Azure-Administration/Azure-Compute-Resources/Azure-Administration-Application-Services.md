@@ -134,7 +134,7 @@ Deploy Code to a Azure App Service configure to deploy git source code.
 Set-Location-Path $pathToSourceCode
 git remote add $Repository $AzureAppServiceDeployURL.git 
 git push $Repository $Branch
-# Authenicate
+# Authenticate
 ```
 
 Deployment Swaps

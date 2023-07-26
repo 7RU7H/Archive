@@ -77,7 +77,7 @@ Apply a filter
 List of Possible Filters:
 ```powershell
 Architecture
-AuthenicationID
+AuthenticationID
 Category
 Command Line
 Company

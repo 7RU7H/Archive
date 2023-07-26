@@ -144,7 +144,7 @@ impacket-mssqlclient $user:$hostname@$IP -windows-auth
 
 
 mssqlclient.py -port $PORT $domain/$user@$IP -windows-auth
-# Example with kerberos Authenication from a silver ticket with ccache file
+# Example with kerberos Authentication from a silver ticket with ccache file
 export KRB5CCNAME=Administrator.ccache
 impacket-mssqlclient -no-pass -k $domain.local/Administrator@dc1.$domain.local
 ```

@@ -4,7 +4,7 @@ For Active Directory we can use traditional methods of [[Persistence]] as well a
 
 ## Golden Ticket Attacks
 
-The ultimate goal of [[Attacking-Kerberos]] is the get the secret key known only to KDCs, which is the domain user account krbtgt. [[Active-Directory-Kerberos-Authenication-Defined]] details the exact process of authenication and authorization through ticketing the KDC performs. Obtaining the KDC key is the ultimate persistence mechanism as the krbtgt account password is not automatically changed and only changed when the domain functional level is upgraded from Windows 2003 to Windows 2008. Old krbtgt passwords have been found in the wild. Using [[Mimikatz-Cheatsheet]] with current privilege of a Domain Admin group account or the compromised the DC, see [[Active-Directory-Default-Security-Groups-Table]].
+The ultimate goal of [[Attacking-Kerberos]] is the get the secret key known only to KDCs, which is the domain user account krbtgt. [[Active-Directory-Kerberos-Authentication-Defined]] details the exact process of authenication and authorization through ticketing the KDC performs. Obtaining the KDC key is the ultimate persistence mechanism as the krbtgt account password is not automatically changed and only changed when the domain functional level is upgraded from Windows 2003 to Windows 2008. Old krbtgt passwords have been found in the wild. Using [[Mimikatz-Cheatsheet]] with current privilege of a Domain Admin group account or the compromised the DC, see [[Active-Directory-Default-Security-Groups-Table]].
 ```powershell
 privilege::debug
 lsadump::lsa /patch

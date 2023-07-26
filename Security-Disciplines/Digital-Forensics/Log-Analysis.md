@@ -1,7 +1,7 @@
 
 Log files contain historic records of events that recorded for monitoring for a variety of reasons.
 - Application Errors
-- Authenication attempts
+- Authentication attempts
 - Traffic data
 - Changes to stored data
 - Results of monitor check 

@@ -1,5 +1,5 @@
 # Kekeo Cheatsheet
-[Kekeo](https://github.com/gentilkiwi/kekeo) is tool for [[Attacking-Kerberos]] and with [[Mimikatz-Cheatsheet]] performing [[AD-Kerberos-Delegation-Exploitation]]. For details about Kerberos Authenication see [[Active-Directory-Kerberos-Authenication-Defined]]
+[Kekeo](https://github.com/gentilkiwi/kekeo) is tool for [[Attacking-Kerberos]] and with [[Mimikatz-Cheatsheet]] performing [[AD-Kerberos-Delegation-Exploitation]]. For details about Kerberos Authentication see [[Active-Directory-Kerberos-Authentication-Defined]]
 
 
 Generate TGT tickets 

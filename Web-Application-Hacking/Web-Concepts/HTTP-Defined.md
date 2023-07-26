@@ -83,4 +83,4 @@ To ensure data is parse correctly by client and server data can be encoded with 
 
 ## References
 
-[Mozilla WWW-Authenicate Documentation](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/WWW-Authenticate)
+[Mozilla WWW-Authenticate Documentation](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/WWW-Authenticate)
