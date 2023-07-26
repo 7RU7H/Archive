@@ -1,7 +1,7 @@
 
-# Azure Administration - Container Registeries
+# Azure Administration - Container Registries
 
-Azure Container Registry is managed, private Docker Registery service based on the open-source Docker Registry, used for building container images in Azure and existing container development and deployment pipelines.
+Azure Container Registry is managed, private Docker Registry service based on the open-source Docker Registry, used for building container images in Azure and existing container development and deployment pipelines.
 
 Pull images from an Azure container registry to various deployment targets:
 - Kubernetes - see [[Azure-Administration-Azure-Kubernetes-Services]]

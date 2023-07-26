@@ -15,7 +15,7 @@ This a hub page group links to all relevant articles under a Azure Administratio
 [[Azure-Administration-Application-Gateways]]
 [[Azure-Administration-Azure-DNS]]
 [[Azure-Administration-Azure-Kubernetes-Services]]
-[[Azure-Administration-Container-Registeries]]
+[[Azure-Administration-Container-Registries]]
 [[Azure-Administration-Azure-Container-Instances]]
 [[Azure-Administration-Scale-And-Availability-Sets]]
 [[Azure-Administration-Azure-Backups]]Azure-Administration-Log-Analytics
@@ -31,6 +31,7 @@ This a hub page group links to all relevant articles under a Azure Administratio
 [[Azure-Administration-Replication]]
 [[Azure-Administration-Log-Analytics]]
 [[Azure-Administration-Network-Watcher]]
+[[Azure-Administration-Network-And-Application-Security-Groups]]
 
 For the Cheatsheet: [[Azure-Administration-Cheatsheet]]
 
