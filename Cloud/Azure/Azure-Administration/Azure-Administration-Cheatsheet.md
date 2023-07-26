@@ -62,7 +62,7 @@ Azure Policy  != Azure Roles && RBAC
 - [[Azure-Administration-Azure-Policies]] 
 	- Policy Definitions - Defined in a .json to describe business rules to control access to resources
 	- Policy Assignment - Scope of a policy can effect
-	- Policy Parameters - Values passed into Policy definition so Polices are more flexiable for re-use
+	- Policy Parameters - Values passed into Policy definition so Polices are more flexible for re-use
 	- Initiative Definitions - A collection of Policy definitions, assignable to enforce compliance 
 
 Policy Creation:
@@ -269,7 +269,7 @@ Deleted Groups
 
 Configure SSPR (self-service-password-reset)
 `Microsoft Entra ID -> Passwords -> Properties - SSPR enabled (None/Selectec/All)`
-Futher configuration of SSPR
+Further configuration of SSPR
 `Authentication Methods, Registration, Notification and Customise Helpdesk link`
 - Requires Premium Microsoft Entra ID P1
 
@@ -303,9 +303,13 @@ Azure Makes System routes by default
 		- 192.168.16.0/22 does not overlap with 10.11.0.0/17
 	- Cross region connection use a gateway, NIC in Region A != connect to Region B
 	- 5 Addresses are taken by Azure per (256 addresses of IPv4)
+		- `192.82.1.0` Identifies the VNet
+		- `192.82.1.1` Gateway
+		- `192.82.1.2-3` Azure maps Azure DNS IP addresses to the virtual network space
+		- `192.82.1.255` Broadcast
 	- Add either to New Subnet or new Address space - understand the differences
 	- [Design IP Addressing is non-trivial](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/plan-for-ip-addressing)
-	 - Don't use the following address ranges:
+	- Don't use the following address ranges:
 		- `224.0.0.0/4` (multicast)
 	       - `255.255.255.255/32` (broadcast)
 		- `127.0.0.0/8` (loopback)
@@ -317,16 +321,14 @@ View a Network Typology by Subscription, Resource Group and VNet
 
 Create Virtual Networks and Manage
 `Search "Virtual Networks" -> Virtual Networks (-> Create)`
-- Azure Firewall, Bastion and other require a subnet!
+- Azure Firewall, Bastion and other require a Subnet!
 
 Create Subnets
 `Search "Virtual Networks" -> Virtual Networks -> $VN -> Subnets -> + Subnets/Gateway subnet`
-Remember to: plan IP addresses - they can be `private` or  `public`, `static` or `dynamic` and Azure reserves five IP addresses:
-- 192.168.1.0 - Identifier for the Virtual Network
-- 192.168.1.1 - Azure Default Gateway
-- 192.168.1.2 - Azure DNS address 
-- 192.168.1.3 - Azure DNS address
-- 192.168.1.255 - Virtual network broadcast address
+Remember to: plan IP addresses - they can be `private` or  `public`, `static` or `dynamic` and 
+
+View a Network Typology by Subscription, Resource Group and VNet
+`Search -> Network Watcher -> Topology`
 
 IP Forwarding: 
 - Beware

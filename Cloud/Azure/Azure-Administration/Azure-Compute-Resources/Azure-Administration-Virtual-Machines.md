@@ -6,7 +6,7 @@ Azure Virtual Machines (VMs) are a configurable server without having to buy and
 - Configurating Package
 - Attach multiple Managed Disk to your Azure Vms
 
-Consider reading [[Virtual-Machines]] for a more general overview and [[VirtualBox-Virtual-Networking]] as well as making the virtual networks first before make machines [[Azure-Administration-Virtual-Networking]], it is free and simplier.
+Consider reading [[Virtual-Machines]] for a more general overview and [[VirtualBox-Virtual-Networking]] as well as making the virtual networks first before make machines [[Azure-Administration-Configure-Virtual-Networks]], it is free and simplier.
 
 Azure VMs support granular controls at scale and is the basis of the Azure infrastructure as a service (IaaS) model. It splits the reponsibilities 
 ![1080](azurevmcustomerandazurerespsplit.png)
@@ -205,7 +205,7 @@ Automation Accounts - `Search -> Automataion Accounts -> Create`
 - `Microsoft.insights`  - https://learn.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview?tabs=net
 
 And also:
-- Virtual Networks for VMs [[Azure-Administration-Virtual-Networking]]
+- Virtual Networks for VMs [[Azure-Administration-Configure-Virtual-Networks]]
 - Auto-instrumentation - https://learn.microsoft.com/en-us/azure/azure-monitor/app/codeless-overview
 
 ## Protect VMs with Azure Automation State Configuration

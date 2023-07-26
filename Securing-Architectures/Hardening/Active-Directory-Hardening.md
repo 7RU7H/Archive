@@ -2,7 +2,7 @@
 
 For encompassing article about the features of Active Directory - [[Active-Directory-Defined]] 
 ``
-It would recommended to make a [[Active-Directory-Lab]]
+It would recommended to make a [[Active-Directory-Lab]] 
 
 - Active Directory Hardening: Level - Actions
 	- Implement Least Privilege Model
@@ -69,9 +69,9 @@ It would recommended to make a [[Active-Directory-Lab]]
 		- [Policy Analyser](https://www.microsoft.com/en-us/download/details.aspx?id=55319)
 			- `PolicyAnalyzer.exe``
 			- Compare Group Policy to check for:
-				- inconsistencies
-				- redundant settings
-				- alterations required
+				- Inconsistencies
+				- Redundant settings
+				- Alterations required
 	
 ## Workflows
 

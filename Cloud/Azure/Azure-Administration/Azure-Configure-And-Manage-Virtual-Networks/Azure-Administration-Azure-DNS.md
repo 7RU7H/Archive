@@ -54,7 +54,7 @@ Virtual Networks can use Azure DNS or custom DNS, Azure can provide public and p
 - Azure DNS 168.63.129.16
 	- Root/Parent domain is registered at the registrar and then pointed to Azure DNS.
 	- Child domains are registered directly in Azure DNS.
-Consider reviewing  [[Azure-Administration-Virtual-Networking]] and [[DNS-Defined]] for futher information.
+Consider reviewing  [[Azure-Administration-Configure-Virtual-Networks]] and [[DNS-Defined]] for futher information.
 
 Be aware of the difference between DNS Record sets and individual records
 - DNS Record sets  are collection of records

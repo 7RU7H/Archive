@@ -11,6 +11,12 @@ An Azure virtual network is a logical isolation of the Azure cloud that's dedica
 - Subnet creation lose **five** addresses: all 0s, 256, Azure Default Gateway, next two address after the Default gateway will be lost to DNS.
 	- /29 - would only have 3 addresses as you always lose the 5 above
 
+Azure Virtual Network 
+- Azure virtual network is a logical isolation of the Azure cloud dedicated to subscription
+- For provisioning and managing VPNs in Azure
+- Create hybrid or cross-premises solutions, when CIDR blocks do not overlap
+- Controllable DNS server settings for virtual networks, and segmentation of the virtual network into subnets.
+
 Network Interface Controller (NIC) - soft/hardware that interface between two device or protocol layer in a network communicating with IP
 
 Azure Network Interfaces (NICs):
@@ -24,10 +30,10 @@ Route Table is table of data stored in router or network host that list routes t
 
 Subnet is a logical division of an address space
 - Subnet requires a Route Table for access
-- Public and Prviate subnet describes whether a subnet is reachale from the internet or not
+- Public and Private subnet describes whether a subnet is reachable from the internet or not
 - Azure has no concept of private and public subnets 
 	- **Configure subnets to have ensure they do no reach the internet!**
-- Associate an NSG to protect traffic entering and leaving your subnet
+- Associate an NSG to protect traffic entering and leaving your Subnet
 - Azure has special types of Gateway Subnet that is used by Azure Virtual Network Gateway
 
 Associating Public IP to a resource 
@@ -37,19 +43,20 @@ Associating Private IP to a resource
 ![1080](azureassociatingprivateips.png)
 
 
-#### Creating 
+#### Creating Virtual Networks
+
 - Connect to Resource Group
 - Name with naming convention
-- IP address space, can add multiple and IPv6 - the automatic ones are drawn from Azure analyzing your own IP spaces
+- IP address space, can add multiple and IPv6 - the automatic ones are drawn from Azure analysing your own IP spaces
 - Remember Azure takes 5 addresses before sizing!
 
-The Virtual Network should be broken up into subnet ranges like on-premise to manage the networking. Availablity Zones (AZ)s can be spanned acrossed by a subnet, resources in a subnet need to be alignment of resources available from a AZ dimension.
+The Virtual Network should be broken up into subnet ranges like on-premise to manage the networking. Availability Zones (AZ)s can be spanned across subnets, zones and regions Resources in a subnets need to be alignment with resources available from a AZ dimension.
 
 - IP always comes via fabric (Azure) OS using DHCP - can configure per OS basis 
 - IPs can be reserved in ARM
 	- For Domain Controllers
 - VMs can have multiple NICs
-- Each NIC can be in a different virtual subnet in the same virtual network or different subnets
+- Each NIC can be in a different Virtual Subnet in the same virtual network or different subnets - Cross region also! 
 - Multiple IP configuration per NIC
 - IP configuration can have Public and Private IP
 	- Public IP is internet routable - Just DO NOT!
@@ -67,6 +74,29 @@ Ensure static IP on a VM:
 
 IP forwarding from a VM - for Firewalls and Gateway devices
 `Virtual  Machines -> $VMnames -> Network Interface -> IP forwarding  set to (Disabled | Enabled)`
+
+#### Plan IP addressing 
+
+- [Design IP Addressing is non-trivial](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/plan-for-ip-addressing)
+	- Address range overlaps restricts various connectivity potentials - see  [[IPv4-Subnet-Masks-Dictionary]]:
+		- `10.11.0.0/17` overlaps with `10.11.0.0/25`
+		- `192.168.16.0/22` does not overlap with `10.11.0.0/17`
+	- Cross region connection use a gateway, NIC in Region A != connect to Region B
+	- 5 Addresses are taken by Azure per (256 addresses of IPv4)
+		- `192.82.1.0` Identifies the VNet
+		- `192.82.1.1` Gateway
+		- `192.82.1.2-3` Azure maps Azure DNS IP addresses to the virtual network space
+		- `192.82.1.255` Broadcast
+	- Add either to New Subnet or new Address space - understand the differences
+	- Don't use the following address ranges:
+		- `224.0.0.0/4` (multicast)
+	       - `255.255.255.255/32` (broadcast)
+		- `127.0.0.0/8` (loopback)
+	       - `169.254.0.0/16` (link-local)
+		- `168.63.129.16/32` (internal DNS)
+
+View a Network Typology by Subscription, Resource Group and VNet
+`Search -> Network Watcher -> Topology`
 
 #### Supported Types of IP Traffic
 
@@ -89,7 +119,7 @@ Some outside of the above may work, but Load balancers may not understnad
 - Virtual Networks are dual stack enabling IPv4 and IPv6 address ranges assigned
 	- The Azure Health probes use IPv4
 - IPv6 supported in NSGslt Domains
-- Newest VM - Delete the newest created VM, balanced across AZs, UDR and LB (Loadbalancers), peering
+- Newest VM - Delete the newest created VM, balanced across AZs, UDR and LB (Load Balancers), peering
 	- Kubernetes is work in progress, but also is dual stack
 - Can enable IPv6 existing resources - may require reboot - DHCP addressing
 - No ExpressRoute (on-premises to Azure) IPv6
@@ -157,18 +187,18 @@ For Domains:
 	- Default: 5 non-user configurable update domains
 - `fault domains` -  is a group of nodes that represent a physical unit of failure
 	- Defines a group of virtual machines that share a common set of hardware that share a single point of failure
-	- 2 domains work togther to mitigate against hardware failures, network outages, power interruptions, or software updates.
+	- 2 domains work together to mitigate against hardware failures, network outages, power interruptions, or software updates.
 
-Avaliability Zones:
+Availability Zones:
 - Unique physical locations within a Azure Region
-	- One or more Datacentres
+	- One or more Data centres
 - Minimum of three Availability zones
-- Prevents against Datacentre failure
+- Prevents against Data centre failure
 - Prevents single point of failure with Zone redundancy
 
 ![](azureservicessupportingavailabilityzones.png)
 
-Scalability - goes Vertically (VM Size up or down) and Horizonally (Number of VMs)
+Scalability - goes Vertically (VM Size up or down) and Horizontally (Number of VMs)
 Considerations:
 - Limitations
 - Flexibility
@@ -176,7 +206,7 @@ Considerations:
 
 #### Peering
 
-Azure Virtual network peering is nontransitive meaning only directly peered can communicate. 
+Azure Virtual network peering is non-transitive meaning only directly peered can communicate. 
 
 You can connect to your on-premises network from a peered virtual network if you enable gateways transit from a virtual network that has a VPN gateway. 
 
