@@ -25,7 +25,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+                "file": "Securing-Architectures/Hardening/Active-Directory-Hardening.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a37d8a9f9ce3867d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Post-Exploitation/Post-Exploitation-Enumeration/Active-Directory/Active-Directory-Footholding.md",
                 "mode": "source",
                 "source": false
               }
@@ -56,7 +68,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -85,7 +97,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Anti-Reve",
+                "query": "Hardening",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -122,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+                "file": "Post-Exploitation/Post-Exploitation-Enumeration/Active-Directory/Active-Directory-Footholding.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,13 +162,20 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "c2c711b9193304a3",
+  "active": "a37d8a9f9ce3867d",
   "lastOpenFiles": [
+    "Post-Exploitation/Post-Exploitation-Enumeration/macOS-Information-Gathering.md",
+    "Post-Exploitation/Post-Exploitation-Enumeration/Foothold-Enumeration.md",
+    "Security-Disciplines/Penetration-Testing/Tactical-Post-Exploitation.md",
+    "Post-Exploitation/Post-Exploitation-Enumeration/Windows-Post-Exploitation-Info-Gathering.md",
+    "Post-Exploitation/Post-Exploitation-Enumeration/Active-Directory/Active-Directory-Footholding.md",
+    "Securing-Architectures/Hardening/Active-Directory-Hardening.md",
+    "Securing-Architectures/Hardening/Windows-Hardening.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
     "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Backup-Resources/Azure-Administration-Azure-Monitor.md",
     "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Backup-Resources/Azure-Administration-Log-Analytics.md",
     "Images/azureloganalyticsaccesscontrol.png",
     "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Backup-Resources/Azure-Administration-Network-Watcher.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
     "Images/azuremonitorcollectionforlogs.png",
     "Cloud/Azure/Azure-Administration/Azure-Administration.md",
     "Cloud/Azure/Azure-Administration/AZ-104-Exam-Resources.md",
@@ -181,12 +200,6 @@
     "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Azure-CLI.md",
     "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Untitled",
     "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-ARM-Templates.md",
-    "Security-Disciplines/Digital-Forensics/Windows-Forensics.md",
-    "Development/Programming-Paradigms/Transpilation.md",
-    "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Azure-Resource-Manager.md",
-    "Windows/Windows-Concepts/Windows-Registry.md",
-    "Tools/Forensics/Kape.md",
-    "Tools/Forensics/Eric-Zimmerman-Tools.md",
     "Tools/SysInternals/ProcDump",
     "MacOS",
     "Post-Exploitation/Stealth/Evasion/Logging-And-Monitoring-Evasion",
@@ -194,7 +207,7 @@
     "Images/mseetwlogevasiondeface.png",
     "Images/msetwdiagram.png",
     "Post-Exploitation/Stealth/Evasion/EDR-Evasion",
-    "Secure-Architectures",
+    "Securing-Architectures",
     "Tools/Malware/Packers",
     "Images/procmonbar.png"
   ]

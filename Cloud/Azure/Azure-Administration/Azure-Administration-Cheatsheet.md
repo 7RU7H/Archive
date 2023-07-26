@@ -53,7 +53,7 @@ Governance is about enforcement of rules and ensuring proper functioning to stan
 Azure Policy  != Azure Roles && RBAC
 - [[Azure-Administration-Azure-Policies]] - Policies  - WHAT? - ensures compliance of resources and does not restrict access
 - [[Azure-Administration-Azure-Roles-And-RBAC]] - WHO?
-	- Azure Roles the object (that is an implementation of Azure Roles) each a type of Roles like Owner, Contributer, Reader...  
+	- Azure Roles the object (that is an implementation of Azure Roles) each a type of Roles like Owner, Contributor, Reader...  
 	- RBAC controls access to resources - Manages User actions at different scopes 
 	- A Role has:
 		- Assignment, Scope, Role Definitions, Security Principle(Object: `user`, `group` or `application`))
@@ -66,12 +66,12 @@ Azure Policy  != Azure Roles && RBAC
 	- Initiative Definitions - A collection of Policy definitions, assignable to enforce compliance 
 
 Policy Creation:
-1. Policy Defintions - [list of built-in definitions](https://learn.microsoft.com/en-us/azure/governance/policy/samples/built-in-policies)
+1. Policy Definitions - [list of built-in definitions](https://learn.microsoft.com/en-us/azure/governance/policy/samples/built-in-policies)
 	- Policy definitions can also be imported into Azure Policy from [GitHub](https://github.com/Azure/azure-policy/tree/master/samples)
 2. Initiative definition - [Azure Policy initiative definition structure](https://learn.microsoft.com/en-us/azure/governance/policy/concepts/initiative-definition-structure) and  [list of built-in initiatives](https://learn.microsoft.com/en-us/azure/governance/policy/samples/built-in-initiatives)
-	- Initiative Definitions are good at ANY scale of organization, do not skip.
+	- Initiative Definitions are good at ANY scale of organisation, do not skip.
 3. Scope the initiative definition 
-4. Detirmine Compliance
+4. Determine Compliance
 
 
 To view compliance across a scope:
@@ -80,7 +80,7 @@ To view compliance across a scope:
 **Policy Assignment take 10-30 minutes for Azure to implement - Blueprints are useful**
 
 Polices Management:
-`Policies -> Compliance` - Assign polices, initatives
+`Policies -> Compliance` - Assign polices, initiatives
 `Policies -> Remediation` - Policies to remediate and Remediation tasks
 Policies Authoring:
 `Policies -> Definitions` - Policies and Initiative definitions - export definitions
@@ -414,7 +414,7 @@ Load Balancers Workflows by Type and important information:
 	- Optional Firewall checks (Recommended)
 		- OWASP defines a set of generic rules for detecting attacks. These rules are referred to as the Core Rule Set (CRS)
 	- Traffic Redirection
-	- Rewrite HTTP Headers
+	- Rewrite HTTP Headersinitatives
 	- Custom Error pages instead of default error pages - highly advised Attacker need error pages
 - Front Door - Global Layer 7 Load Balancer - Application Delivery Network (ADN) as a service 
 - Load Balancer - Layer 4 for internal and public configurations
