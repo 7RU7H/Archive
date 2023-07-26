@@ -17,7 +17,7 @@ This a hub page group links to all relevant articles under a Azure Administratio
 [[Azure-Administration-Azure-Kubernetes-Services]]
 [[Azure-Administration-Container-Registeries]]
 [[Azure-Administration-Azure-Container-Instances]]
-[[Azure-Administration-Scale-Sets]]
+[[Azure-Administration-Scale-And-Availability-Sets]]
 [[Azure-Administration-Azure-Backups]]Azure-Administration-Log-Analytics
 [[Azure-Administration-Application-Services]]
 [[Azure-Administration-Application-Gateways]]

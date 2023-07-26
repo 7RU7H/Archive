@@ -1,4 +1,4 @@
-# Azure Administration Scale Sets
+# Azure Administration Scale and Availability Sets 
 
 Azure Scale sets allows automatic increases and decreases in VM capacity. Load Balancers can be associated with a Scale Set:
 - Evenly distribute VM accross availablility Zones - more avaliablility
@@ -6,6 +6,17 @@ Azure Scale sets allows automatic increases and decreases in VM capacity. Load B
 	- Load Balancers:
 		1. Application Gateway is an HTTP/HTTPS web traffic load balancer application firewall
 		2. Azure Load Balancer supports all TCP/UDP network traffic, port-forwarding and outbound flaws.
+
+
+An availability set is a logical feature you can use to ensure a group of related identical virtual machines are deployed together and torn down together. Azure manages physical location, Administrator builds:
+- Azure Portal
+- ARM - [[Azure-Administration-Azure-Resource-Manager]]
+- Scripting
+- API Tools
+Consider
+- Redundancy
+- Separation of Application Tiers - no single point of failure
+- Managed Disk for Block-Level Storage
 
 An Availability set is
 - Assigned an:
@@ -16,26 +27,69 @@ An Availability set is
 		- If 5 Update domain, the 6th will be in the 1st, 7th will in the 2nd, etc - if 20 the 21th VM is in the 1st..
 	- Can't be changed once the availability set has been created
 
-A **Scaling Policy** detirmines what VM is removed to decrease the capacity of the Scale Set either:
+Scale sets:
+- Update Domains -  is a group of nodes that are upgraded together
+- Fault Domains -  is a group of nodes that represent a physical unit of failure
+
+A **Scaling Policy** determines what VM is removed to decrease the capacity of the Scale Set either:
 - Default - Delete VM with highest instance ID balanced across AZs and Fault Domains
 - Newest VM - Delete the newest created VM, balanced across AZs
 - Oldest VM - Delete oldest VM balanced across AZs 
 
 **Update Policy** determine VM instances are brought up-to-date with the latest scale set model
 - Automatic: Increasing with start upgrading immediately in random order
-- Manual - Existing instances must be manaually upgraded
+- Manual - Existing instances must be manually upgraded
 - Rolling - Upgrade roll out in batches with optional pause
-Health monitoring can be enabled to detirmine if server is healthy or unhealthy
-1. Application health extension: Ping an HTTP request to a specifrc path and except a status 200
+Health monitoring can be enabled to determine if server is healthy or unhealthy
+1. Application health extension: Ping an HTTP request to a specific path and except a status 200
 2. Load Balancers Probe - allow checks based on TCP, UDP or HTTP requests.
 
 Automatic Repair policy if an instance is found to be unhealthy the delete it and launch a new instance
 
-**Autoscaling** - minimizes the number of unnecessary virtual machine instances that run your application, consider:
+**Autoscaling** - minimises the number of unnecessary virtual machine instances that run your application, consider:
 - Overhead
 - Events
 - Scaling in and out given demand
 - Define adjustment in capacity
+
+Availability Zone
+- Zonal Services pin each resource to a specific zone.
+- Zone-Redundant services are zone-redundant, the platform replicates automatically across all zones.
+
+Plan for maintenance and unexpected downtime:
+- Use an availability set, which is a logical feature you can use to ensure a group of related virtual machines are deployed together - reducing single point of failure, that they are not upgraded at the same time.
+	- VMs in the set should be identical
+
+Microsoft provides [Service Level Agreements (SLAs) for Azure Virtual Machines](https://azure.microsoft.com/support/legal/sla/virtual-machines/v1_9/) for Azure virtual machines and availability sets. Considerations:
+- Redundancy
+- Separation of application tiers
+- Load balancing
+- Managed Disks
+
+For Domains:
+- `update domains`  -  is a group of nodes that are upgraded together during the process of a service upgrade
+	- Each `update domain`  contains a set of virtual machines and associated physical hardware that can be updated and rebooted at the same time.
+	- Configure up to 20, one update at a time
+	- Default: 5 non-user configurable update domains
+- `fault domains` -  is a group of nodes that represent a physical unit of failure
+	- Defines a group of virtual machines that share a common set of hardware that share a single point of failure
+	- 2 domains work together to mitigate against hardware failures, network outages, power interruptions, or software updates.
+
+Availability Zones:
+- Unique physical locations within a Azure Region
+	- One or more Data centres
+- Minimum of three Availability zones
+- Prevents against Data centre failure
+- Prevents single point of failure with Zone redundancy
+
+![](azureservicessupportingavailabilityzones.png)
+
+Scalability - goes Vertically (VM Size up or down) and Horizontally (Number of VMs)
+Considerations:
+- Limitations
+- Flexibility
+- Reprovisioning
+
 
 #### Workflows
 

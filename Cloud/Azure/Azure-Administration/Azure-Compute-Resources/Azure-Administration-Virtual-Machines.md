@@ -3,16 +3,16 @@
 Azure Virtual Machines (VMs) are a configurable server without having to buy and maintain physical hardware, they still require:
 - Patching
 - Installing packages
-- Configurating Package
+- Configuration Package
 - Attach multiple Managed Disk to your Azure Vms
 
-Consider reading [[Virtual-Machines]] for a more general overview and [[VirtualBox-Virtual-Networking]] as well as making the virtual networks first before make machines [[Azure-Administration-Configure-Virtual-Networks]], it is free and simplier.
+Consider reading [[Virtual-Machines]] for a more general overview and [[VirtualBox-Virtual-Networking]] as well as making the virtual networks first before make machines [[Azure-Administration-Configure-Virtual-Networks]], it is free and simpler.
 
 Azure VMs support granular controls at scale and is the basis of the Azure infrastructure as a service (IaaS) model. It splits the reponsibilities 
 ![1080](azurevmcustomerandazurerespsplit.png)
 Windows VMs still require a License!
 
-The size of the image is detirmined by the image, which also defines the vCPUs, Memory and Storage Capacity. Limitations on VMs per regions found here: [Azure subscription and service limits, quotas, and constraints](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/azure-subscription-service-limits). They are billed at a hourly rate.
+The size of the image is determined by the image, which also defines the vCPUs, Memory and Storage Capacity. Limitations on VMs per regions found here: [Azure subscription and service limits, quotas, and constraints](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/azure-subscription-service-limits). They are billed at a hourly rate.
 
 Components created with the Virtual Machine:
 - OS you must specify the Operating Systems - found in the Azure Marketplace
@@ -23,7 +23,7 @@ Components created with the Virtual Machine:
 - Public IP address - Address that you will use to public access the VM
 - Virtual Network (VNet) - The network where your VM will reside
 
-Consider reading - [[Cloud-Initialization]]; regarding VMs in Azure they require some forethought and virtual infrastructure - Questions to ask what is the purpose of the VM, where should it then be avaliability in security, location, use, etc? Generally the cost part is then tweakable or more obvious
+Consider reading - [[Cloud-Initialization]]; regarding VMs in Azure they require some forethought and virtual infrastructure - Questions to ask what is the purpose of the VM, where should it then be availability in security, location, use, etc? Generally the cost part is then tweakable or more obvious
 1. A network - How is the VM accessed and why
 2. A name - Does it fit a good naming and tag scheme to keep track of why you need it
 	- best to detirmine how tagging will fit within the large context   
@@ -70,25 +70,8 @@ You can monitorv Domains
 - Newest VM - Delete the newest created VM, balanced across AZsr your VMs on the go 
 - With [mobile App](https://azure.microsoft.com/en-gb/products/app-service/mobile/). 
 
-#### Availabilty Sets
 
-An availability set is a logical feature you can use to ensure a group of related identical virtual machines are deployed together and torn down together. Azure manages physical location, Administrator builds:
-- Azure Portal
-- ARM - [[Azure-Administration-Azure-Resource-Manager]]
-- Scripting
-- API Tools
-Consider
-- Redundancy
-- Seperation of Application Tiers - no single point of failure
-- Managed Disk for Block-Level Storage
 
-Scale sets:
-- Update Domains -  is a group of nodes that are upgraded together
-- Fault Domains -  is a group of nodes that represent a physical unit of failure
-
-Availability Zone
-- Zonal Services pin each resource to a specific zone.
-- Zone-Redundant services are zone-redundant, the platform replicates automatically across all zones.
 
 ## Azure Portal Workflows
 

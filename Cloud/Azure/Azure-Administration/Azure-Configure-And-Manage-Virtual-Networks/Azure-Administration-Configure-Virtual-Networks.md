@@ -165,44 +165,10 @@ If you have multiple subscription or region you then will have multiple virtual 
 Historic comparison being: Site-to-Site VPN or connection to the same ExpressRoute:
 - Peering location would hair pin on a circuit to talk to the same facility on different Virtual Network - bad latency
 
-On-premise to an Azure subnet Gatewaycan be used to connect resources via Gateway transit, becuase of Peering to reach out to On-Premise assets. 
+On-premise to an Azure subnet Gateway can be used to connect resources via Gateway transit, because of Peering to reach out to On-Premise assets. 
 
 
-#### Configuring VM Availability
 
-Plan for maintaince and unexpected downtime:
-- Use an availability set, which is a logical feature you can use to ensure a group of related virtual machines are deployed together - reducing single point of failure, that they are not upgraded at the same time.
-	- VMs in the set should be identical
-
-Microsoft provides [Service Level Agreements (SLAs) for Azure Virtual Machines](https://azure.microsoft.com/support/legal/sla/virtual-machines/v1_9/) for Azure virtual machines and availability sets. Considerations:
-- Redundancy
-- Seperation of application tiers
-- Load balancing
-- Managed Disks
-
-For Domains:
-- `update domains`  -  is a group of nodes that are upgraded together during the process of a service upgrade
-	- Each `update domain`  contains a set of virtual machines and associated physical hardware that can be updated and rebooted at the same time.
-	- Configure up to 20, one update at a time
-	- Default: 5 non-user configurable update domains
-- `fault domains` -  is a group of nodes that represent a physical unit of failure
-	- Defines a group of virtual machines that share a common set of hardware that share a single point of failure
-	- 2 domains work together to mitigate against hardware failures, network outages, power interruptions, or software updates.
-
-Availability Zones:
-- Unique physical locations within a Azure Region
-	- One or more Data centres
-- Minimum of three Availability zones
-- Prevents against Data centre failure
-- Prevents single point of failure with Zone redundancy
-
-![](azureservicessupportingavailabilityzones.png)
-
-Scalability - goes Vertically (VM Size up or down) and Horizontally (Number of VMs)
-Considerations:
-- Limitations
-- Flexibility
-- Reprovisioning
 
 #### Peering
 
