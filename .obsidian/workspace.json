@@ -13,19 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Network-And-Application-Security-Groups.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f94ce2f9b3af1e26",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Azure-Firewall.md",
+                "file": "Cloud/Cloud-Hacking/Azure-Hacking-Notes.md",
                 "mode": "source",
                 "source": false
               }
@@ -43,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -110,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Azure-Firewall.md",
+                "file": "Cloud/Cloud-Hacking/Azure-Hacking-Notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -138,17 +125,20 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "f94ce2f9b3af1e26",
+  "active": "90d216c71872b23f",
   "lastOpenFiles": [
+    "Images/wheredoyouthinkitisdonefrom.png",
+    "Cloud/Cloud-Hacking/Azure-Hacking.md",
+    "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Network-And-Application-Security-Groups.md",
+    "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Container-Registries.md",
+    "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Azure-Firewall.md",
+    "Cloud/Cloud-Hacking/Azure-Hacking-Notes.md",
     "Images/azurefirewalldeploymentoptions.png",
     "Images/azurefirewallmanagerfeatures.png",
     "Images/azurepremiumfirewallfeatures.png",
     "Images/azurefirewallfeatures.png",
     "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Configure-Virtual-Networks.md",
-    "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Azure-Firewall.md",
-    "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Container-Registries.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration.md",
-    "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Network-And-Application-Security-Groups.md",
     "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Backup-Resources/Azure-Administration-Network-Watcher.md",
     "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Scale-And-Availability-Sets.md",
     "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Virtual-Machines.md",
@@ -168,8 +158,6 @@
     "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Application-Services.md",
     "Post-Exploitation/Credentials-Harvesting/AD-Credential-Harvesting.md",
     "Post-Exploitation/Credentials-Harvesting/Web-App-Credentials.md",
-    "Post-Exploitation/Credentials-Harvesting/Browser-Credential-Harvesting.md",
-    "Post-Exploitation/Lateral-Movement/Active-Directory-Lateral-Movement/AD-Lateral-Movement-Alternate-Authentication-Material.md",
     "Images/azureloganalyticsaccesscontrol.png",
     "Images/azuremonitorcollectionforlogs.png",
     "Images/azuremonitoringtier.png",
@@ -183,7 +171,6 @@
     "Tools/SysInternals/ProcDump",
     "MacOS",
     "Post-Exploitation/Stealth/Evasion/Logging-And-Monitoring-Evasion",
-    "Images/becomethewwwdata.png",
     "Post-Exploitation/Stealth/Evasion/EDR-Evasion",
     "Securing-Architectures"
   ]

@@ -1,6 +1,0 @@
-
-# Anti-Reverse Engineering
-
-
-
-
