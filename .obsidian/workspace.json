@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "8968034cbe54d664",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Backup-Resources/Azure-Administration-Azure-Monitor.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "c2c711b9193304a3",
             "type": "leaf",
             "state": {
@@ -32,43 +20,18 @@
             }
           },
           {
-            "id": "a37d8a9f9ce3867d",
+            "id": "90d216c71872b23f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Application-Services.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e4fa334f5035304b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Backup-Resources/Azure-Administration-Log-Analytics.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "76d775ee4185e8c0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Enumeration-Cheatsheet.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -97,7 +60,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Authen",
+                "query": "findstr",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -114,8 +77,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -135,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Application-Services.md",
+                "file": "Securing-Architectures/Hardening/Active-Directory-Hardening.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,22 +125,29 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "a37d8a9f9ce3867d",
+  "active": "ed8f63df71621be6",
   "lastOpenFiles": [
+    "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Enumeration-Cheatsheet.md",
+    "Securing-Architectures/Hardening/Active-Directory-Hardening.md",
+    "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Backup-Resources/Azure-Administration-Azure-Monitor.md",
+    "Development/Regular-Expressions.md",
+    "Post-Exploitation/Lateral-Movement/Lateral-Movement.md",
+    "Post-Exploitation/Lateral-Movement/Active-Directory-Lateral-Movement/AD-Lateral-Movement-With-WMI.md",
+    "Post-Exploitation/Lateral-Movement/Active-Directory-Lateral-Movement/AD-Lateral-Movement-Spawning-Remote-Processes.md",
+    "Post-Exploitation/Lateral-Movement/Active-Directory-Lateral-Movement/AD-Lateral-Movement-Abusing-User-Behaviour.md",
+    "Post-Exploitation/Lateral-Movement/Active-Directory-Lateral-Movement/Active-Directory-Lateral-Movement.md",
+    "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Application-Services.md",
     "Post-Exploitation/Credentials-Harvesting/AD-Credential-Harvesting.md",
     "Post-Exploitation/Credentials-Harvesting/Web-App-Credentials.md",
     "Post-Exploitation/Credentials-Harvesting/Browser-Credential-Harvesting.md",
     "Post-Exploitation/Lateral-Movement/Active-Directory-Lateral-Movement/AD-Lateral-Movement-Alternate-Authentication-Material.md",
-    "Post-Exploitation/Lateral-Movement/Active-Directory-Lateral-Movement/Active-Directory-Lateral-Movement.md",
     "Post-Exploitation/Post-Exploitation-Enumeration/Active-Directory/Active-Directory-Footholding.md",
     "Post-Exploitation/Post-Exploitation-Enumeration/macOS-Information-Gathering.md",
     "Post-Exploitation/Post-Exploitation-Enumeration/Foothold-Enumeration.md",
     "Security-Disciplines/Penetration-Testing/Tactical-Post-Exploitation.md",
     "Post-Exploitation/Post-Exploitation-Enumeration/Windows-Post-Exploitation-Info-Gathering.md",
-    "Securing-Architectures/Hardening/Active-Directory-Hardening.md",
     "Securing-Architectures/Hardening/Windows-Hardening.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
-    "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Backup-Resources/Azure-Administration-Azure-Monitor.md",
     "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Backup-Resources/Azure-Administration-Log-Analytics.md",
     "Images/azureloganalyticsaccesscontrol.png",
     "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Backup-Resources/Azure-Administration-Network-Watcher.md",
@@ -187,19 +156,12 @@
     "Cloud/Azure/Azure-Administration/AZ-104-Exam-Resources.md",
     "Images/azuremonitoringtier.png",
     "Cloud/Azure/Azure-Administration/Azure-Manage-Identities-And-Governance/Azure-Administration-Microsoft-Entra-ID-Administration.md",
-    "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Backup-Resources/Azure-Administration-Azure-Backups.md",
     "Images/azuresiterecoveryfeatures.png",
     "Images/azuresiterecovery.png",
-    "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Backup-Resources/Azure-Administration-Microsoft-Graph-PowerShell-Module.md",
     "Images/microsoftgraphwhatis.png",
-    "Cloud/Cloud-Hacking/Azure-PowerShell-Module.md",
     "Cloud/Azure/Azure-Administration/sedmB5DSu",
     "Cloud/Azure/Azure-Administration/sedeu5ZuR",
-    "Development/Software-Development-Paradigms/Software-Development-Lifecycle.md",
-    "Development/Software-Development-Paradigms/Development-Philosphy-Disclaimer.md",
     "Development/Software-Development-Paradigms",
-    "Development/Anti-Reverse-Engineering/Circumvent-Anti-Reverse-Engineering.md",
-    "Development/Malware/Anti-Reverse-Engineering-Techniques.md",
     "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Untitled",
     "Tools/SysInternals/ProcDump",
     "MacOS",

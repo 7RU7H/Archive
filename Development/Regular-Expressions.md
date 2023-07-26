@@ -83,6 +83,14 @@ Find the urls both http and https, optional www
 '^http(s)?://(www)?.+\..+
 ```
 
+
+Is a number a prime regex - [noulakaz](https://www.noulakaz.net/2007/03/18/a-regular-expression-to-check-for-prime-numbers/)
+```perl
+# Perl
+/^1?$|^(11+?)\1+$/
+```
+
+
 ## References
 
 [THM Room Catregex](https://tryhackme.com/room/catregex)
@@ -90,3 +98,4 @@ Find the urls both http and https, optional www
 https://regex101.com/
 [Regex Wiki](https://en.wikipedia.org/wiki/Regular_expression)
 [Wikipedia String Searching Algorithms](https://en.wikipedia.org/wiki/String-searching_algorithm)  
+[noulakaz](https://www.noulakaz.net/2007/03/18/a-regular-expression-to-check-for-prime-numbers/)
