@@ -1,12 +1,11 @@
 # Azure Administration Scale and Availability Sets 
 
 Azure Scale sets allows automatic increases and decreases in VM capacity. Load Balancers can be associated with a Scale Set:
-- Evenly distribute VM accross availablility Zones - more avaliablility
+- Evenly distribute VM across availablility Zones - more availability
 - Use Load Balancer probe checks for more robust Health checks
 	- Load Balancers:
 		1. Application Gateway is an HTTP/HTTPS web traffic load balancer application firewall
 		2. Azure Load Balancer supports all TCP/UDP network traffic, port-forwarding and outbound flaws.
-
 
 An availability set is a logical feature you can use to ensure a group of related identical virtual machines are deployed together and torn down together. Azure manages physical location, Administrator builds:
 - Azure Portal
@@ -32,9 +31,9 @@ Scale sets:
 - Fault Domains -  is a group of nodes that represent a physical unit of failure
 
 A **Scaling Policy** determines what VM is removed to decrease the capacity of the Scale Set either:
-- Default - Delete VM with highest instance ID balanced across AZs and Fault Domains
-- Newest VM - Delete the newest created VM, balanced across AZs
-- Oldest VM - Delete oldest VM balanced across AZs 
+- Default - Delete VM with highest instance ID balanced across Availability Zones  and Fault Domains
+- Newest VM - Delete the newest created VM, balanced across Availability Zones 
+- Oldest VM - Delete oldest VM balanced across Availability Zones 
 
 **Update Policy** determine VM instances are brought up-to-date with the latest scale set model
 - Automatic: Increasing with start upgrading immediately in random order

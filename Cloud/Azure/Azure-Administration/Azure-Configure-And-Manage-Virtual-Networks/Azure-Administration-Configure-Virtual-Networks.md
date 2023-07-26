@@ -168,8 +168,6 @@ Historic comparison being: Site-to-Site VPN or connection to the same ExpressRou
 On-premise to an Azure subnet Gateway can be used to connect resources via Gateway transit, because of Peering to reach out to On-Premise assets. 
 
 
-
-
 #### Peering
 
 Azure Virtual network peering is non-transitive meaning only directly peered can communicate. 
@@ -516,45 +514,6 @@ echo http://$(az network public-ip show \
 ```
 
 
-#### Network Watcher
-
-View a Network Typology by subscription, Resource Group and Vnet
-`Search -> Network Watcher -> Topology`
-
-Azure CLI view network typology
-```powershell
-# A Configuration
-az network watcher configure \
-  --resource-group $rGroup \
-  --location eastus \
-  --enabled true
-# Show a typology for a resource group
-az network watcher show-topology --resource-group $rGroup
-```
-
-Create a new NetworkWatcher
-```powershell
-New-AzNetworkWatcher `
-  -Name NetworkWatcher_eastus `
-  -ResourceGroupName NetworkWatcherRG
-```
-
-Retrieve a Network Watcher instance with [Get-AzNetworkWatcher](https://learn.microsoft.com/en-us/powershell/module/az.network/get-aznetworkwatcher)
-```powershell
-$nw = Get-AzResource `
-  | Where {$_.ResourceType -eq "Microsoft.Network/networkWatchers" -and $_.Location -eq "EastUS" }
-$networkWatcher = Get-AzNetworkWatcher `
-  -Name $nw.Name `
-  -ResourceGroupName $nw.ResourceGroupName
-```
-
-Retrieve a topology
-```powershell
-Get-AzNetworkWatcherTopology `
-  -NetworkWatcher $networkWatcher `
-  -TargetResourceGroupName $rGroup
-```
-
 [View Azure virtual network topology | Microsoft Learn](https://learn.microsoft.com/en-us/azure/network-watcher/view-network-topology)
 
 #### Service Endpoints and Service Endpoints Policies
@@ -715,74 +674,12 @@ Azure ExpressRoutes create private connections between Azure datacenters and inf
 
 ExpressRoute Direct allows for greater bandwidth connection from 50 Mbs to 10Gbs
 
-#### Azure Network Watcher
-
-Azure Network Watcher provides tools to monitor, diagnose and view network metrics - also enable and disable logging for resource in an Azure Vnet
-
-Watcher can monitor and repair Azure resources you provision:
-- Cannot be used to monitor PaaS (fully managed services) monitoring or Web Analytics
-- Disabled by default in most regionsso you need to enable it at per region basis
-- Visualize the topology of VNets
-
-Network Performance Monitor (NPM) is cloud-based hybrid network monitoring solution , which helps you monitor network performance between various points in your network infrastructure.
-- Traffic blackholing 
-- Route errors
-- Unconventional Network Issues
-- Generates Alerts and Notifies you when a threshold is breached for a network link.
 
 #### Network Security Groups (NSG)
 
-Network Security Group (NSG) limit network traffic to and from Azure resources in a VNet. NSGs are assignable to subnets to create demilitarized zone (DMZ) that acts as a buffer between resource within a VNet and the internet. 
-- A subnet can have a maximum of one associated network security group and cannot have associated NSGs. 
-- You assign NSGs to (which constitute a tiering at each level in rule precedence):
-	- Subnet	
-	- Resource's a Network interface card (NIC).
-- A NSG is composed of many Security Rules with the following properties:
-	- Name
-	- Source (Any, IP addresses, Service tag)
-	- Destination (Any, IP addresses, Virtual network)
-	- Port Range
-	- Protocol 
-	- Action - Allow or Deny
-	- Priority - 100 to 4096
-- Each rule has a priority value - higher the priority value the more precedence in ordering amongst other rules.
-- You can't remove the default security rules, but can be overriden by higher priority Security Rule
-- Each NSG and its Security Rules are evaluated independently.
+[[Azure-Administration-Network-And-Application-Security-Groups]]
 
-- NSG precedence - Outbound NIC NSG rules, Inbound Subnet NSG rules
 
-- In/Outbound Rules have three default security rules for an NSG
-- For In/Outbound Rule evaluation Azure also checks how to apply the rules for intra-subnet traffic.
-- Inbound Rules apply to traffic entering the NSG
-	- Inbound Rules (1) **deny all inbound traffic** except (2 - Allow) traffic from your virtual network and (3 - Allow) Azure load balancers
-	- Azure first processes network security group security rules for any associated subnets and then any associated network interfaces
-- Outbound Rules apply to traffic leaving the NSG
-	- Outbound rules (3 - Deny All outbound) **only allow outbound traffic** (1) to the internet and your (2) virtual network
-	- Azure first processes network security group security rules for any associated subnets and then any associated network interfaces
-- Without an NSG Azure applies default rules aty both the NIC and Subnet level
-
-Consider:
-- Traffic
-	- Intra-subnet traffic
-- Deny by Default is a security default - Allow is then for availability, while not compromising security
-- Rule Priority - Rule Priority - Rule Priority
-
-[Application Security Group](https://learn.microsoft.com/en-us/azure/virtual-network/application-security-groups) are for logically grouping VMs by workload in Azure virtual network.
-
-#### NSG Workflow
-
-Overview of NSGs
-`Search -> Network Security Groups`
-
-Create an NSG
-`Search -> Network Security Groups -> + Create` - Source, Destination, Service, Priority
-Associate NSG with a Subnet or NSG
-`$NSG -> Settings -> Network Interfaces, Subnets`
-
-Add RDP to a VM Allowing and Disallowing the connection with NSG
-`$VM -> Connect -> Configure if required then goto -> Networking -> Either:`
-- `Inbound port rules Tab -> add inbound port rule -> Configure`  
-- `Outbound port rules Tab -> add outbound port rule -> Configure`
 
 #### Azure Firewall
 
