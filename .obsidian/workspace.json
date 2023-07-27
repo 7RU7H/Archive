@@ -8,24 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "90d216c71872b23f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cloud/Cloud-Hacking/Azure-Hacking-Notes.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "8430e7f17602c58a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Configure-Virtual-Networks.md",
+                "file": "Securing-Networks-And-Systems/Hardening/Network-Device-Hardening.md",
                 "mode": "source",
                 "source": false
               }
@@ -60,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "findstr",
+                "query": "Firewalls",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -97,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cloud/Cloud-Hacking/Azure-Hacking-Notes.md",
+                "file": "Securing-Networks-And-Systems/Hardening/Network-Device-Hardening.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,19 +113,30 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "90d216c71872b23f",
+  "active": "8430e7f17602c58a",
   "lastOpenFiles": [
+    "Reconnaissance/Active-Information-Gathering/SNMP/SNMP-Recon-Cheatsheet.md",
+    "Securing-Networks-And-Systems/Hardening/Network-Device-Hardening.md",
+    "Networks/Traffic-Analysis/Packet-Analysis-Header-Filtering.md",
+    "Networks/Network-Security/DNS-Leaking.md",
+    "Networks/Network-Security/Firewalls.md",
+    "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Configure-Virtual-Networks.md",
+    "Exploitation/Using-Public-Exploits.md",
+    "Exploitation/Weaponizing-Vulnerabilities.md",
+    "Exploitation/Windows/Active-Directory/Pass-The-Key.md",
+    "Exploitation/Windows/Active-Directory/Pass-The-Ticket.md",
+    "Exploitation/Windows/Active-Directory/AD-Group-Rights-and-Privileges-in-Windows.md",
+    "Networks/Network-Theory/Network-Technologies.md",
+    "Cloud/Cloud-Hacking/Azure-Hacking-Notes.md",
     "Images/wheredoyouthinkitisdonefrom.png",
     "Cloud/Cloud-Hacking/Azure-Hacking.md",
     "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Network-And-Application-Security-Groups.md",
     "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Container-Registries.md",
     "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Azure-Firewall.md",
-    "Cloud/Cloud-Hacking/Azure-Hacking-Notes.md",
     "Images/azurefirewalldeploymentoptions.png",
     "Images/azurefirewallmanagerfeatures.png",
     "Images/azurepremiumfirewallfeatures.png",
     "Images/azurefirewallfeatures.png",
-    "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Configure-Virtual-Networks.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration.md",
     "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Backup-Resources/Azure-Administration-Network-Watcher.md",
     "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Scale-And-Availability-Sets.md",
@@ -147,23 +146,12 @@
     "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Enumeration-Cheatsheet.md",
     "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks",
     "Cloud/Azure/Azure-Administration/Azure-A.md",
-    "Securing-Architectures/Hardening/Active-Directory-Hardening.md",
-    "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Backup-Resources/Azure-Administration-Azure-Monitor.md",
-    "Development/Regular-Expressions.md",
-    "Post-Exploitation/Lateral-Movement/Lateral-Movement.md",
-    "Post-Exploitation/Lateral-Movement/Active-Directory-Lateral-Movement/AD-Lateral-Movement-With-WMI.md",
-    "Post-Exploitation/Lateral-Movement/Active-Directory-Lateral-Movement/AD-Lateral-Movement-Spawning-Remote-Processes.md",
-    "Post-Exploitation/Lateral-Movement/Active-Directory-Lateral-Movement/AD-Lateral-Movement-Abusing-User-Behaviour.md",
-    "Post-Exploitation/Lateral-Movement/Active-Directory-Lateral-Movement/Active-Directory-Lateral-Movement.md",
-    "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Application-Services.md",
-    "Post-Exploitation/Credentials-Harvesting/AD-Credential-Harvesting.md",
-    "Post-Exploitation/Credentials-Harvesting/Web-App-Credentials.md",
+    "Securing-Networks-And-Systems/Hardening/Active-Directory-Hardening.md",
     "Images/azureloganalyticsaccesscontrol.png",
     "Images/azuremonitorcollectionforlogs.png",
     "Images/azuremonitoringtier.png",
     "Images/azuresiterecoveryfeatures.png",
     "Images/azuresiterecovery.png",
-    "Images/microsoftgraphwhatis.png",
     "Cloud/Azure/Azure-Administration/sedmB5DSu",
     "Cloud/Azure/Azure-Administration/sedeu5ZuR",
     "Development/Software-Development-Paradigms",
@@ -172,6 +160,6 @@
     "MacOS",
     "Post-Exploitation/Stealth/Evasion/Logging-And-Monitoring-Evasion",
     "Post-Exploitation/Stealth/Evasion/EDR-Evasion",
-    "Securing-Architectures"
+    "Securing-Networks-And-Systems"
   ]
 }

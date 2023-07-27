@@ -50,7 +50,7 @@ New-AzRoleDefinition -InputFile $file
 
 #### Desired-State Persistence Backdooring
 
-Desired State Configuration is a management platform in Windows PowerShell used is for create specific configurations with scripts. Find a script with `configuration` keyword and under given contexts could provide persistence in customized meaning Admin only and managed by Humans leading to oversight. This can be done from CLI aswell..
+Desired State Configuration is a management platform in Windows PowerShell used is for create specific configurations with scripts. Find a script with `configuration` keyword and under given contexts could provide persistence in customised meaning Admin only and managed by Humans leading to oversight. This can be done from CLI aswell..
 ```powershell
 configuration IISInstall # configuration script block
 {

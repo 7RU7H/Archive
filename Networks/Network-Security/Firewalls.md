@@ -1,4 +1,5 @@
 # Firewalls
+
 A firewall is software or hardware that parses incoming and outgoing network packets and compares it against a set of rules before passing or blocking it. For evasion techniques see [[Evading-Firewalls]]
 
 ## Types of Firewall
