@@ -12,7 +12,7 @@ This is a hub page for linking all of a specific directory structure.
 [[Passive-Recon]]
 [[Search-Engine-Dorking]]
 [[Website-Recon]]
-[[Geolocating]]
+[[IMINT-GEOINT]]
 [[Recon-ng]]
 [[Shodan]]
 [[theHarvester]]

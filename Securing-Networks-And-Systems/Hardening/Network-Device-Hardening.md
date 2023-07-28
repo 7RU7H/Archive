@@ -11,7 +11,7 @@ Network Devices include:
 	- Wireless Access Points
 - Repeaters
 - Modems
-- Bridge
+- Bridges
 - [[Firewalls]]
 - Hubs
 - Network Interface Cards

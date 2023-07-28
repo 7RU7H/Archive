@@ -9,3 +9,5 @@ Part of [[Web-App-Hacking-Methodology]] or for [[Active-Directory-Enumeration-De
 1. Linked social media accounts [[Sherlock]]
 
 [[Vim-Hack-Tricks]] contains a vim like usernames variation generator macro.
+
+WayBackMachine - [Firefox](https://addons.mozilla.org/en-GB/firefox/addon/wayback-machine_new/) and [Chrome](https://chrome.google.com/webstore/detail/wayback-machine/fpnmgdkabkmnadcjpehmlllkndpkmiak)

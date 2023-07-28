@@ -4,16 +4,52 @@
     "type": "split",
     "children": [
       {
-        "id": "504c29962eb641b6",
+        "id": "24faecfb6994b1d8",
         "type": "tabs",
         "children": [
           {
-            "id": "8430e7f17602c58a",
+            "id": "e965cdd0f4d1aa73",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Securing-Networks-And-Systems/Hardening/Network-Device-Hardening.md",
+                "file": "Reconnaissance/OSINT/OSINT.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c2f8df1d3c62adda",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Reconnaissance/SOCMINT.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f7a6aac495d1a753",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Reconnaissance/Passive-Information-Gathering/IMINT-GEOINT/IMINT-GEOINT.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1c8e0f63c3f48edb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/OSINT/Spiderfoot.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +121,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Securing-Networks-And-Systems/Hardening/Network-Device-Hardening.md",
+                "file": "Reconnaissance/OSINT/OSINT.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,10 +149,27 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "8430e7f17602c58a",
+  "active": "e965cdd0f4d1aa73",
   "lastOpenFiles": [
-    "Reconnaissance/Active-Information-Gathering/SNMP/SNMP-Recon-Cheatsheet.md",
+    "Reconnaissance/OSINT/OSINT-People.md",
+    "Reconnaissance/OSINT/OSINT.md",
+    "Reconnaissance/OSINT",
+    "Reconnaissance/SOCMINT.md",
+    "Reconnaissance/Passive-Information-Gathering/IMINT-GEOINT/IMINT-GEOINT.md",
+    "Tools/OSINT/Spiderfoot.md",
+    "Tools/Useful-Online-Software/Github-guide.md",
+    "Tools/Useful-Online-Software/Explainshell.md",
+    "Tools/Useful-Online-Software/Puzzle-Solution-Tools.md",
+    "Tools/Useful-Online-Software/MITRE-ATT&CK-Navigator.md",
+    "Tools/Useful-Online-Software/Cyberchef.md",
+    "Tools/Useful-Online-Software/Code-Online.md",
+    "Reconnaissance/Passive-Information-Gathering/Website-Recon.md",
+    "Reconnaissance/IMINT-AND-GEOINT.md",
+    "Tools/OSINT",
+    "Networks/Network-Security/TCP-Wrappers.md",
+    "Networks/Network-Security/Securing-Network-Services.md",
     "Securing-Networks-And-Systems/Hardening/Network-Device-Hardening.md",
+    "Reconnaissance/Active-Information-Gathering/SNMP/SNMP-Recon-Cheatsheet.md",
     "Networks/Traffic-Analysis/Packet-Analysis-Header-Filtering.md",
     "Networks/Network-Security/DNS-Leaking.md",
     "Networks/Network-Security/Firewalls.md",
@@ -126,27 +179,12 @@
     "Exploitation/Windows/Active-Directory/Pass-The-Key.md",
     "Exploitation/Windows/Active-Directory/Pass-The-Ticket.md",
     "Exploitation/Windows/Active-Directory/AD-Group-Rights-and-Privileges-in-Windows.md",
-    "Networks/Network-Theory/Network-Technologies.md",
-    "Cloud/Cloud-Hacking/Azure-Hacking-Notes.md",
     "Images/wheredoyouthinkitisdonefrom.png",
-    "Cloud/Cloud-Hacking/Azure-Hacking.md",
-    "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Network-And-Application-Security-Groups.md",
-    "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Container-Registries.md",
-    "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Azure-Firewall.md",
     "Images/azurefirewalldeploymentoptions.png",
     "Images/azurefirewallmanagerfeatures.png",
     "Images/azurepremiumfirewallfeatures.png",
     "Images/azurefirewallfeatures.png",
-    "Cloud/Azure/Azure-Administration/Azure-Administration.md",
-    "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Backup-Resources/Azure-Administration-Network-Watcher.md",
-    "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Scale-And-Availability-Sets.md",
-    "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Virtual-Machines.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
-    "Images/Excalidraw/azure-virtualnetworking-diagram.excalidraw.md",
-    "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Enumeration-Cheatsheet.md",
     "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks",
-    "Cloud/Azure/Azure-Administration/Azure-A.md",
-    "Securing-Networks-And-Systems/Hardening/Active-Directory-Hardening.md",
     "Images/azureloganalyticsaccesscontrol.png",
     "Images/azuremonitorcollectionforlogs.png",
     "Images/azuremonitoringtier.png",
@@ -158,8 +196,6 @@
     "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Untitled",
     "Tools/SysInternals/ProcDump",
     "MacOS",
-    "Post-Exploitation/Stealth/Evasion/Logging-And-Monitoring-Evasion",
-    "Post-Exploitation/Stealth/Evasion/EDR-Evasion",
-    "Securing-Networks-And-Systems"
+    "Post-Exploitation/Stealth/Evasion/Logging-And-Monitoring-Evasion"
   ]
 }
