@@ -12,19 +12,19 @@ It is skill set that is built over years of time, orangutan can use tools, scrip
 
 
 1. Understand it, by asking questions and researching how something works - an activity to acquire knowledge
-	- Knowing alot - Or rephrase that to think in a manner that is set of continual future pattern of trying to understand a concept
-	- Subverting the system - Repurposing a system, to think of it as subversion leads to non-empcompassing understanding - to repurpose requires understanding of the actuallities of the system's intended and unintended occur actualities when interacted with.
+	- Knowing a lot - Or rephrase that to think in a manner that is set of continual future pattern of trying to understand a concept
+	- Subverting the system - Re-purposing a system, to think of it as subversion leads to non-encompassing understanding - to re-purpose requires understanding of the actualities of the system's intended and unintended occur actualities when interacted with.
 1. Patience and Focus 
 	- the Pomodoro Method is evil - **DO NOT TAKE BREAKS EVERY 25 minutes**
 		- Push to hour, remembering to exercise 15% Learning Uptake and posture health - sitting is bad. 
-	- If you have neither do it or something for fun or make it more fun with other through social or following allow with a streamer, class, course, youtube, etc 
-	- and becuase you enjoy it - both patience and focus are hard earnt qualities to fight for everyday
+	- If you have neither do it or something for fun or make it more fun with other through social or following allow with a streamer, class, course, Youtube, etc 
+	- and because you enjoy it - both patience and focus are hard earnt qualities to fight for everyday
 	- Remove distractions, habits that create distraction 
 3. Organisation and Mental logistics and the Tao of testing
 	- Be methodically and scientific - measure twice cut once
 	- If your data is a mess how are you going to connect that data to find the way 
-	- If you have the infrastructure to replicate the target, you do not get into the Schrödinger's Hack of whether interaction (successful, erroreous, destructive) or lack of interaction, **which may then affect later interactions thereby failing yourself by not be organised and methodical**   
-4. Creativity in connecting data to be combined into doing - an activity to seperate the useful information and connecting it together
+	- If you have the infrastructure to replicate the target, you do not get into the Schrödinger's Hack of whether interaction (successful, erroneous, destructive) or lack of interaction, **which may then affect later interactions thereby failing yourself by not be organised and methodical**   
+4. Creativity in connecting data to be combined into doing - an activity to separate the useful information and connecting it together
 5. Tool are extensions of **your** [[Question-Based-Hacking-Methodology]] (you have to make and practice and revise **your capabilities**)
 
 
@@ -38,7 +38,7 @@ It is skill set that is built over years of time, orangutan can use tools, scrip
 	1. Learn efficiently  
 		- Space it out, interweave practice with reading, deep study and shallow study
 5. Do sometime new and related everyday
-6. If cant explain the x to the most non techinical person, will management understand, do you actually understand it? - It is a good concept comprehension test and good for memory compression and neural strengthening.
+6. If cant explain the x to the most non technical person, will management understand, do you actually understand it? - It is a good concept comprehension test and good for memory compression and neural strengthening.
 7. Read a little every day, but diversify - You read scans, terminals, code everyday - insert Tyrion Lannister quote about reading - but learn to REALLY read - Fast and slow reading - when to to go fast and when to go slow:
 	 - i.e Bug Bounty report one day, AD whitepaper another or insert-x-ethical-hacking-x-site reading material; Blog about CVEs; Proof of Concepts about bugs; Source Code.
 8. Take Notes and visualise the problems
@@ -47,7 +47,7 @@ It is skill set that is built over years of time, orangutan can use tools, scrip
 11. Explore in different ways
 	-  [Have Gzegroz Niedziela explain some mad real world Web Exploits](https://www.youtube.com/c/BugBountyReportsExplained) 
 	- Be handheld through an insane machine to know how far I many connections in my brain I have to go - roughly scaled between scarily alot and ton
-		- Reasoning comes from being good guitar: do it for the sounds that you could make not to look cool; more sounds you can make the more musical intense you can make anything. Sometimes you just to sit there and be wowed and try anyway, clumsy try - be humble - find the parts that are difficult and find similarly easiler elements elsewhere, [More Rocky](https://www.youtube.com/watch?v=hHpFSQMUxj4), [More Cheesey](https://www.youtube.com/watch?v=yGZsnbPCv1I) or [More British](https://www.youtube.com/watch?v=pt-Yc2rzOOM) or [Wooten](https://www.youtube.com/watch?v=CFcPlv9RhEY) or more [Bass](https://www.youtube.com/watch?v=Sa0upTDZDYQ) or [Spanish](https://www.youtube.com/watch?v=NIKWBdthzg4) - combine all of that and keep building
+		- Reasoning comes from being good guitar: do it for the sounds that you could make not to look cool; more sounds you can make the more musical intense you can make anything. Sometimes you just to sit there and be wowed and try anyway, clumsy try - be humble - find the parts that are difficult and find similarly easier elements elsewhere, [More Rocky](https://www.youtube.com/watch?v=hHpFSQMUxj4), [More Cheesey](https://www.youtube.com/watch?v=yGZsnbPCv1I) or [More British](https://www.youtube.com/watch?v=pt-Yc2rzOOM) or [Wooten](https://www.youtube.com/watch?v=CFcPlv9RhEY) or more [Bass](https://www.youtube.com/watch?v=Sa0upTDZDYQ) or [Spanish](https://www.youtube.com/watch?v=NIKWBdthzg4) - combine all of that and keep building
 	- Get the bigger the picture of whatever sometimes. [Like Haddix Application Analysis Methodology](https://www.youtube.com/watch?v=FqnSAa2KmBI)  
 
 Some of the below can be connective - i.e 

@@ -3,12 +3,33 @@
 
 
 
+## Terminology
+
+Brief disclosure on terminology, if there is a better way I will replace it
+
+#### Intel vs Information:
+
+Intel - Human intelligence data - data made by humans 
+Information - Machine information provided by querying machines
+
+Intel - Alice is a Helpdesk operator, Bob requested a password reset 
+Information - the user Alice has X SID that then indicates Administrative Group  
+
+#### False Positives and Negatives
+
+[False Positives](https://www.cgisecurity.com/questions/falsepositive.shtml) - detected, but not vulnerable
+[False Negatives](https://www.cgisecurity.com/questions/falsenegative.shtml) - not detected, but detection mechanism failed
 
 
+- Consider how your problem is on OSI layer - Please Do Not Throw Away Sausage Pizza 
 
+####  Objectives
 
+...
 
+#### Notes to tidy 
 
+- Basics are fundamentals and forming questions are vital for answers, result, clues, etc
 What
 Why
 Where
@@ -36,36 +57,27 @@ What is does it run
 What is network level purpose of connections
 
 
-## Terminology
+#### Question
 
-Brief disclosure on terminology, if there is a better way I will replace it
+- Are the people on the network [[OSINT]]able?
+	- Is it in-scope and most professional way [[OSINT-People]]
+	- Who to [[OSINT]]? 
+		- Roles and social-contact-adjacent?
+	- By technique? 
+	- Do they accept documents for [[Phishing]]? 
+	- Can we do [[Social-Engineering]] on a phone?
+	- Pretext to do any of the above
+		- Is a pretext form-able?
+			- Is the enough information and correlation?
+				- What is expected call or document format?
+					- What do we need to forge a forgery? 
+				- Can you pull it off?
+					- Is something that you can actually do - [do not try to pretend to be a old women combining something unfitting to meta-context, which your audience would perceive as less than normal](https://www.youtube.com/watch?v=9_OIs49m56E)
+			- ...then is the pretext fitting?
 
-#### Intel vs Information:
-
-Intel - Human intelligence data - data made by humans 
-Information - Machine information provided by querying machines
-
-Intel - Alice is a Helpdesk operator, Bob requested a password reset 
-Information - the user Alice has X SID that then indicates Administrative Group  
-
-#### False Positives and Negatives
-
-[False Positives](https://www.cgisecurity.com/questions/falsepositive.shtml) - detected, but not vulnerable
-[False Negatives](https://www.cgisecurity.com/questions/falsenegative.shtml) - not detected, but detection mechanism failed
-
-
-- Consider how your problem is on OSI layer - Please Do Not Throw Away Sausage Pizza 
-
-
-
-
-- Objectives
-
-- Pre-Network Phase / OSINT
-
-- REDO
-
-	- External expose identification
+	
+- Is infrastructure [[OSINT]]able?
+	- Externally exposed identification
 		- Formatting for email and users?
 	- What externally exposed infrastructure exists - Ports, Websites, DNS servers -> Subdomains? Email servers?
 	- Domain Names

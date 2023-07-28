@@ -1,5 +1,7 @@
 # OSINT People
 
+This is a TTPs to add to as I continue to learn and improve [[OSINT]]ing people online and offline 
+
 - What is the basic profile of target?
 	- Name
 	- Naming Conventions

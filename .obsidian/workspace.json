@@ -8,48 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "e965cdd0f4d1aa73",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Reconnaissance/OSINT/OSINT.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c2f8df1d3c62adda",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Reconnaissance/SOCMINT.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f7a6aac495d1a753",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Reconnaissance/Passive-Information-Gathering/IMINT-GEOINT/IMINT-GEOINT.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "1c8e0f63c3f48edb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/OSINT/Spiderfoot.md",
+                "file": "Brain-Hacking/Actions/Learning-To-Hack.md",
                 "mode": "source",
                 "source": false
               }
@@ -121,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Reconnaissance/OSINT/OSINT.md",
+                "file": "Brain-Hacking/Actions/Learning-To-Hack.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -149,14 +113,16 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "e965cdd0f4d1aa73",
+  "active": "1c8e0f63c3f48edb",
   "lastOpenFiles": [
+    "Brain-Hacking/Actions/Personality.md",
+    "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
     "Reconnaissance/OSINT/OSINT-People.md",
+    "Tools/OSINT/Spiderfoot.md",
+    "Reconnaissance/Passive-Information-Gathering/IMINT-GEOINT/IMINT-GEOINT.md",
+    "Reconnaissance/SOCMINT.md",
     "Reconnaissance/OSINT/OSINT.md",
     "Reconnaissance/OSINT",
-    "Reconnaissance/SOCMINT.md",
-    "Reconnaissance/Passive-Information-Gathering/IMINT-GEOINT/IMINT-GEOINT.md",
-    "Tools/OSINT/Spiderfoot.md",
     "Tools/Useful-Online-Software/Github-guide.md",
     "Tools/Useful-Online-Software/Explainshell.md",
     "Tools/Useful-Online-Software/Puzzle-Solution-Tools.md",
@@ -177,8 +143,6 @@
     "Exploitation/Using-Public-Exploits.md",
     "Exploitation/Weaponizing-Vulnerabilities.md",
     "Exploitation/Windows/Active-Directory/Pass-The-Key.md",
-    "Exploitation/Windows/Active-Directory/Pass-The-Ticket.md",
-    "Exploitation/Windows/Active-Directory/AD-Group-Rights-and-Privileges-in-Windows.md",
     "Images/wheredoyouthinkitisdonefrom.png",
     "Images/azurefirewalldeploymentoptions.png",
     "Images/azurefirewallmanagerfeatures.png",
