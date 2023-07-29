@@ -1,4 +1,4 @@
-Not to be confused with [[VS-Code]] the editor and debugger... it hurts.
+Not to be confused with [[VS-Code]] ... it hurts.
 
 ## Compiling Exploits
 

@@ -10,6 +10,8 @@ Software Development Lifecycle (SDLC) is a DevOps concept and its aim is to:
 - Meet deadlines
 - Meet cost estimations
 
+Software Development Lifecycle is not Secure Software Development Lifecycle this article will append the Secure additions along side SDLC after defining SDLC first. 
+
 #### Phases
 
 Loosely put and, frequently rearranged 

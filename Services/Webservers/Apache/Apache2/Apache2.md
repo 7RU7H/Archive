@@ -16,7 +16,7 @@ Useful modules:
 - `ssl` - SSL for HTTPS configured `/etc/apache2/sites-available/default-ssl.conf`
 	- See [Apache SSL configuration documentation](https://httpd.apache.org/docs/2.4/mod/mod_ssl.html)
 
-Default configuration:
+Default configuration files:
 - Listen on port 80 - configured `/etc/apache2/ports.conf`
 - Serves pages from `/var/www/html` - configured `/etc/apache2/sites-enabled/000-default.conf`
 Virtual Hosting

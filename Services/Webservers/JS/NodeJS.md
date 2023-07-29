@@ -2,10 +2,16 @@
 
 
 [Node.js](https://nodejs.org) is a [[Useful_Javascript]] framework, or web technology. Or external links:
-[XinYminutes JS](https://learnxinyminutes.com/docs/javascript/) and [Javascript beautifer](https://beautifier.io/) for the hacky JS and online beautifier.
+[XinYminutes JS](https://learnxinyminutes.com/docs/javascript/) and 
 
 
-[Node JS security Course](https://github.com/ajinabraham/Node.Js-Security-Course)
+Node application will almost always accepts [[JSON]]
+
+
+## Tools
+
+[Javascript beautifer](https://beautifier.io/) for the JS online beautifier.
+
 
 ## Shells
 
@@ -43,10 +49,15 @@ node
 > module.paths
 ```
 
+## Appendix
+
+[Node JS security Course](https://github.com/ajinabraham/Node.Js-Security-Course)
+
+
 ## References
 
 [Node.js Reverse shells](https://medium.com/dont-code-me-on-that/bunch-of-shells-nodejs-cdd6eb740f73)
 [Digital Ocean Node.js Module creation](https://www.digitalocean.com/community/tutorials/how-to-create-a-node-js-module)
 [XinYminutes JS](https://learnxinyminutes.com/docs/javascript/)
 [Javascript beautifer](https://beautifier.io/)
-[Node.js]
+[Node.js](https://nodejs.org)
