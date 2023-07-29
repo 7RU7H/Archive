@@ -57,7 +57,7 @@ Domain	   \				  	   /  Domain	Domain
 Organisation Units				 /  (OUs)		(OUs)		
 ```
 
-Often clients on a internal network are connected via one of the DC as the gateway to the external forests or tree. Internal OUs are also internal member servers(web servers, database servers, etc) and printers reside accessible the DC within their local internal network. It reliant on Domain Name System (check [[DNS-Defined]]) typically with DC will also host a DNS server.
+Often clients on a internal network are connected via one of the DC as the gateway to the external forests or tree. Internal OUs are also internal member servers(web servers, database servers, etc) and printers reside accessible the DC within their local internal network. It reliant on Domain Name System (check [[DNS]]) typically with DC will also host a DNS server.
 
 Object by Hierarchy  |  Description
 --- | ---

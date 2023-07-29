@@ -1,6 +1,6 @@
 # DNS Passive Recon
 
-For [[DNS-Defined]], [[DNS-Active-Recon]]
+For [[DNS]], [[DNS-Active-Recon]]
 
 The domain registrar is responsible for maintaining the WHOIS records for the domain names it is leasing. `whois` will query the WHOIS server to provide all saved records.
 ```bash

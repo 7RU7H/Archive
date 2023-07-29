@@ -1,6 +1,6 @@
 # CTI DNS Recon
 
-[[DNS-Defined]]
+[[DNS]]
 
 **Beware** : [[DNS-Active-Recon]] != [[DNS-Recon-Passive]]
 

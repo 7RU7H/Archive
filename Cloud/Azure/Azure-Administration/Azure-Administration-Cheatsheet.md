@@ -1,4 +1,3 @@
-# Azure Administration Cheatsheet
 
 - Access the portal at https://portal.azure.com/ -  great for performing single tasks
 - Cloud Shell on the `>_` Icon; Temporary Host - per-session, per-user basis
@@ -509,6 +508,27 @@ Azure Public DNS - [Host your domain in Azure DNS](https://learn.microsoft.com/e
 	3. Update parent domain with `Azure DNS name servers` - each registar with its own DNS tools
 - [Child Zones](https://learn.microsoft.com/en-us/azure/dns/tutorial-public-dns-zones-child)
 	- `Search -> DNS Zones -> $DNSzone -> + Child zone`
+- Dynamically Resolve a Traffic Manager (DNS load balancer) 
+	- Zone Apexes or Root Apexes will receive a lot of traffic use Traffic Manager Profiles instead of complex redirection policies
+	- `Search -> Traffic Manager -> Create a `
+		- Name, Routing Method, Subscription, Resource Group
+			- Routing Methods:
+				- Performance
+				- Weighted
+				- Priority
+				- Geographic
+				- MultiValue
+				- Subnet
+
+Azure Private DNS Zone
+`Search -> Private DNS Zones -> Create`
+- Subscription, Resource Group and instance Name
+- Link VNet Name `$PrivateDNSZone -> Settings -> Virtual Network Links -> Add`
+	- Link Name
+	- `Tick - I know the resource ID of Virtual network`...if you do
+	- Subscription, Virtual Network
+	- Consider Auto Registration?
+		- [Auto registration feature manages DNS records for virtual machines deployed in a virtual network](https://learn.microsoft.com/en-us/azure/dns/private-dns-autoregistration)
 
 [Azure DNS for private domains](https://learn.microsoft.com/en-us/azure/dns/private-dns-overview) for Custom DNS requires:
 - Vnet (With Resource Manager deployment model) and Subnet,
@@ -517,10 +537,23 @@ Azure Public DNS - [Host your domain in Azure DNS](https://learn.microsoft.com/e
 
 [Azure DNS Private Resolver](https://learn.microsoft.com/en-us/azure/dns/dns-private-resolver-overview) (enables you to query Azure DNS private zones from an on-premises environment and vice versa without deploying VM based DNS servers) - required RG and VNet - no VM based DNS servers
 - Sub, RG, Name, Region and VNet
-`Search -> Private DNS Resolver` 
-- provide the required Project Details 
-- For `Inbound Endpoints` and `Outbound Endpoints` require both a name and separate subnet 
-- `Ruleset` - `+ Add rules` to Domain name resolution requests that match will be forwarded to the IP addresses specified through the endpoint selected
+`Search DNS Private Resolvers -> Create | Manage View | Refresh` provide the required 
+- Create: 
+	- Set VNet and Region
+	- Add Endpoints..
+		- Inbound / Outbound - provide a name and Subnet 
+			- For `Inbound Endpoints` and `Outbound Endpoints` require both a name and separate Subnet
+	- `Ruleset` - `+ Add rules` to Domain name resolution requests that match will be forwarded to the IP addresses specified through the endpoint selected
+		- Add Rulesets:
+			- `Tick Add a ruleset` can be done after creation
+				- Ruleset Name
+				- Endpoint
+		- Rules
+			- Rule name: 
+			- Domain Name: target domain name
+			- Rule State: `Enabled || Disabled`
+			- Add a destination - `IP && Port`
+
 
 Azure Traffic Manager for the Network Watcher can be used the diagnose issues with Azure DNS. 
 [Creating an Alias Record to support apex domains](https://learn.microsoft.com/en-us/azure/dns/tutorial-alias-tm) 
@@ -532,6 +565,7 @@ Common pattern - name resolution for multiple networks, where one is focused on 
 `Vnet1 = Registration <-> Azure Private DNS zone records <-> Vnet2 = Resolution`
 
 DNS servers require network peering to resolve IPs if not using Azure DNS
+
 
 #### VPN Gateways
 

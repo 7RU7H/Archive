@@ -1,10 +1,10 @@
 # Azure Administration - Azure DNS
 
-
-Azure DNS is extended DNS - see *Alias, Record Set, Time To Live*  - no domain name purchases! For general understanding about DNS see [[DNS-Defined]]. Azure considerations and extensions:
+Azure DNS lets you host your DNS records for your domains on Azure infrastructure Azure DNS is extended DNS - see *Alias, Record Set, Time To Live*  - no domain name purchases! For general understanding about DNS see [[DNS]]. Azure considerations and extensions:
 - Azure DNS
 	- Azure managed DNS resolved by Microsoft Azure infrastructure
-	- Azure Private DNS allows for private name resolution between Azure virtual networks. 
+	- Azure Private DNS allows for private name resolution between Azure virtual networks.
+	- Azure-provided name resolution does not support user-defined domain names and only supports a single virtual network. [Name resolution for resources in Azure virtual networks | Microsoft Learn](https://learn.microsoft.com/azure/virtual-network/virtual-networks-name-resolution-for-vms-and-role-instances#azure-provided-name-resolution)
 - Public DNS
 	- Azure public DNS provides DNS for public access
 	- Manage custom domains for internet accessible domains
@@ -12,9 +12,22 @@ Azure DNS is extended DNS - see *Alias, Record Set, Time To Live*  - no domain n
 		- Records for proof of ownership
 		- Connect to email servers
 - Private DNS 
+	- Private Zones providing name resolution for virtual machines (VMs) within a/between. virtual network 
+		- Without custom DNS solution!
 	- Internally facing custom domains  
+- Private Resolvers 
+	- Zero maintenance PaaS DNS for Hybrid cloud, centralising and distrubing DNS across Azure
+- DNS Security 
+	- RBAC
+	- Activity Logs
+	- Resource Locking
 
-- Azure-provided name resolution does not support user-defined domain names and only supports a single virtual network. [Name resolution for resources in Azure virtual networks | Microsoft Learn](https://learn.microsoft.com/azure/virtual-network/virtual-networks-name-resolution-for-vms-and-role-instances#azure-provided-name-resolution)
+
+[[DNS]] Servers in Azure
+- Maintains a local cache of recently accessed or used domain names and their IP addresses
+- Maintains the key-value pair database of IP addresses and any host or subdomain over which the DNS server has authority
+- Give access to network-enabled device to web-based-resource through reference
+- IPv4 or IPv6
 
 
 Azure has a special record types 
@@ -53,7 +66,7 @@ Virtual Networks can use Azure DNS or custom DNS, Azure can provide public and p
 - Azure DNS 168.63.129.16
 	- Root/Parent domain is registered at the registrar and then pointed to Azure DNS.
 	- Child domains are registered directly in Azure DNS.
-Consider reviewing  [[Azure-Administration-Configure-Virtual-Networks]] and [[DNS-Defined]] for futher information.
+Consider reviewing  [[Azure-Administration-Configure-Virtual-Networks]] and [[DNS]] for futher information.
 
 Be aware of the difference between DNS Record sets and individual records
 - DNS Record sets  are collection of records
@@ -78,9 +91,6 @@ Capabilities:
 
 ## Workflows
 
-Create DNS zones
-`Search -> DNS zones`
-
 [Sample DNS script](https://github.com/MicrosoftDocs/mslearn-host-domain-azure-dns.git)
 
 To delegate your domain to Azure DNS:
@@ -99,14 +109,11 @@ To delegate your domain to Azure DNS:
 4. Test with `nslookup -type=SOA $domain.$tld`
 5. Create Load Balancers to handle requests
 	 1. Link Apex Domain with a Load Balancer
-		 1. Alias Record to point to a Load Balancer  route traffic through a Traffic Manager 	
-		
+		 1. Alias Record to point to a Load Balancer  route traffic through a Traffic Manager 			
 
 [Azure DNS](https://learn.microsoft.com/en-us/azure/dns/dns-overview) *"is a hosting service for DNS domains that provides name resolution by using Microsoft Azure infrastructure."*  Azure can manage all your DNS or you can using the all the features other Azureservices.. 
 - It does not support DNSSEC
-- Customizable Vnet with Private domains
-
-Having never managed a DNS server and looking into here and there especially from the [[Kotarak-Helped-Through]] - beyond root of making a DNS server andI once required a Rogue DNS server at some point for another box. From what I have read and can assume seems like a good idea from the point on study the AZ-104 that is much easier to manage. No record management without some kind of versioning like `git` for software seems like a nightmare especially from what I understand that incorrect record keeping and can then expose domain that are suppose be in some network perimeter and not accessible by the public internet.
+- Customisation VNet with Private domains
 
 [Overview of Azure DNS alias records](https://learn.microsoft.com/en-us/azure/dns/dns-alias) are qualifications on a DNS record set. They reference Azure resources from a DNS zone in Azure. An alias record set is supported for the following record types in an Azure DNS zone:
 - A, AAAA, CNAME
@@ -123,18 +130,51 @@ Azure Public DNS - [Host your domain in Azure DNS](https://learn.microsoft.com/e
 	3. Update parent domain with `Azure DNS name servers` - each registar with its own DNS tools
 - [Child Zones](https://learn.microsoft.com/en-us/azure/dns/tutorial-public-dns-zones-child)
 	- `Search -> DNS Zones -> $DNSzone -> + Child zone`
+- Dynamically Resolve a Traffic Manager (DNS load balancer) 
+	- Zone Apexes or Root Apexes will receive a lot of traffic use Traffic Manager Profiles instead of complex redirection policies
+	- `Search -> Traffic Manager -> Create a `
+		- Name, Routing Method, Subscription, Resource Group
+			- Routing Methods:
+				- Performance
+				- Weighted
+				- Priority
+				- Geographic
+				- MultiValue
+				- Subnet
+
+Azure Private DNS Zone
+`Search -> Private DNS Zones -> Create`
+- Subscription, Resource Group and instance Name
+- Link VNet Name `$PrivateDNSZone -> Settings -> Virtual Network Links -> Add`
+	- Link Name
+	- `Tick - I know the resource ID of Virtual network`...if you do
+	- Subscription, Virtual Network
+	- Consider Auto Registration?
+		- [Auto registration feature manages DNS records for virtual machines deployed in a virtual network](https://learn.microsoft.com/en-us/azure/dns/private-dns-autoregistration)
 
 [Azure DNS for private domains](https://learn.microsoft.com/en-us/azure/dns/private-dns-overview) for Custom DNS requires:
-- Vnet (With Resource Manager deployment model) and Subnet,
+- R Vnet (With Resource Manager deployment model) and Subnet,
 - Add Virtual Network Linking (add VNet to a Zone): `Resource groups -> $resourceGroup -> $domain -> select Virtual Network Links` - provide VNet, Sub and a `Link name`  
-- Create an additional DNS Record in the correct DNS Zone	
+- Create an additional DNS Record in the correct DNS Zone
 
-Azure DNS Private Resolver (for Proxying DNS Quieries) - required RG and VNet - no VM based DNS servers
+[Azure DNS Private Resolver](https://learn.microsoft.com/en-us/azure/dns/dns-private-resolver-overview) (enables you to query Azure DNS private zones from an on-premises environment and vice versa without deploying VM based DNS servers) - required RG and VNet - no VM based DNS servers
 - Sub, RG, Name, Region and VNet
-`Search -> Private DNS Resolver` 
-- provide the required Project Details 
-- For `Inbound Endpoints` and `Outbound Endpoints` require both a name and separate subnet 
-- `Ruleset` - `+ Add rules` to Domain name resolution requests that match will be forwarded to the IP addresses  specified through the endpoint selected
+`Search DNS Private Resolvers -> Create | Manage View | Refresh` provide the required 
+- Create: 
+	- Set VNet and Region
+	- Add Endpoints..
+		- Inbound / Outbound - provide a name and Subnet 
+			- For `Inbound Endpoints` and `Outbound Endpoints` require both a name and separate Subnet
+	- `Ruleset` - `+ Add rules` to Domain name resolution requests that match will be forwarded to the IP addresses specified through the endpoint selected
+		- Add Rulesets:
+			- `Tick Add a ruleset` can be done after creation
+				- Ruleset Name
+				- Endpoint
+		- Rules
+			- Rule name: 
+			- Domain Name: target domain name
+			- Rule State: `Enabled || Disabled`
+			- Add a destination - `IP && Port`
 
 Azure Traffic Manager for the Network Watcher can be used the diagnose issues with Azure DNS. 
 [Creating an Alias Record to support apex domains](https://learn.microsoft.com/en-us/azure/dns/tutorial-alias-tm) 
@@ -148,6 +188,7 @@ Common pattern - name resolution for multiple networks, where one is focused on 
 `Vnet1 = Registration <-> Azure Private DNS zone records <-> Vnet2 = Resolution`
 
 
+	
 [Azure DNS](https://learn.microsoft.com/en-us/powershell/module/az.dns/new-azdnsrecordset?view=azps-9.4.0)
 ```powershell
 # Config
@@ -186,3 +227,4 @@ Get-AzDnsRecordSet -ResourceGroupName MyResourceGroup -ZoneName myzone.com -Name
 [Set-AzDnsRecordSet](https://learn.microsoft.com/en-us/powershell/module/az.dns/set-azdnsrecordset?view=azps-9.4.0)
 [Azure DNS](https://learn.microsoft.com/en-us/powershell/module/az.dns/?view=azps-9.4.0)
 [Name resolution for resources in Azure virtual networks | Microsoft Learn](https://learn.microsoft.com/azure/virtual-network/virtual-networks-name-resolution-for-vms-and-role-instances#azure-provided-name-resolution)
+[What is auto registration feature in Azure DNS private zones? | Microsoft Learn](https://learn.microsoft.com/en-us/azure/dns/private-dns-autoregistration)

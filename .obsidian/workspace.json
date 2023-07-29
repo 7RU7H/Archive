@@ -13,13 +13,38 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Private-Link-And-Endpoints.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "30f527430aa8b6f3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "09475d00ea75c5e4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Azure-DNS.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Azure-DNS.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,8 +138,21 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "1c8e0f63c3f48edb",
+  "active": "30f527430aa8b6f3",
   "lastOpenFiles": [
+    "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Azure-DNS.md",
+    "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Private-Link-And-Endpoints.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+    "Exploitation/Exploitation-Hub-Page.md",
+    "Exploitation/Development",
+    "Exploitation/Exploit-Lookup-And-Maintaince",
+    "Exploitation/Video-Game-Hacking",
+    "Exploitation/Shells",
+    "Linux/Linux-Hub-Page.md",
+    "Linux/Linux-Concepts/Linux-DNS-Configuration.md",
+    "README.md",
+    "Networks/Network-Theory/Network-Protocols/DNS.md",
+    "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Application-Gateways.md",
     "Development/Software-Development-Paradigms/Software-Development-Lifecycle.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
     "Post-Exploitation/Post-Exploitation-Enumeration/Windows-Post-Exploitation-Info-Gathering.md",
@@ -130,19 +168,10 @@
     "Cloud/Kubernetes/Kubernetes-Hacking.md",
     "Security-Disciplines/Cyber-Threat-Intelligence/Cyber-Threat-Intelligence.md",
     "Development/Software-Development-Paradigms/Development-Philosophy-Disclaimer.md",
-    "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Azure-DNS.md",
     "Brain-Hacking/Actions/Learning-To-Hack.md",
     "Brain-Hacking/Actions/Personality.md",
     "Reconnaissance/OSINT/OSINT-People.md",
-    "Tools/OSINT/Spiderfoot.md",
-    "Reconnaissance/Passive-Information-Gathering/IMINT-GEOINT/IMINT-GEOINT.md",
-    "Reconnaissance/SOCMINT.md",
-    "Reconnaissance/OSINT/OSINT.md",
     "Reconnaissance/OSINT",
-    "Tools/Useful-Online-Software/Github-guide.md",
-    "Tools/Useful-Online-Software/Explainshell.md",
-    "Tools/Useful-Online-Software/Puzzle-Solution-Tools.md",
-    "Tools/Useful-Online-Software/MITRE-ATT&CK-Navigator.md",
     "Tools/OSINT",
     "Images/wheredoyouthinkitisdonefrom.png",
     "Images/azurefirewalldeploymentoptions.png",
@@ -156,10 +185,6 @@
     "Images/azuresiterecoveryfeatures.png",
     "Images/azuresiterecovery.png",
     "Cloud/Azure/Azure-Administration/sedmB5DSu",
-    "Cloud/Azure/Azure-Administration/sedeu5ZuR",
-    "Development/Software-Development-Paradigms",
-    "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Untitled",
-    "Tools/SysInternals/ProcDump",
-    "MacOS"
+    "Cloud/Azure/Azure-Administration/sedeu5ZuR"
   ]
 }
