@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Brain-Hacking/Actions/Learning-To-Hack.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Azure-DNS.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0270348f4ab7a7c2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Development/Software-Development-Paradigms/Software-Development-Lifecycle.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Brain-Hacking/Actions/Learning-To-Hack.md",
+                "file": "Development/Software-Development-Paradigms/Software-Development-Lifecycle.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,8 +126,13 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "1c8e0f63c3f48edb",
+  "active": "0270348f4ab7a7c2",
   "lastOpenFiles": [
+    "Security-Disciplines/Cyber-Threat-Intelligence/Cyber-Threat-Intelligence.md",
+    "Development/Software-Development-Paradigms/Software-Development-Lifecycle.md",
+    "Development/Software-Development-Paradigms/Development-Philosophy-Disclaimer.md",
+    "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Azure-DNS.md",
+    "Brain-Hacking/Actions/Learning-To-Hack.md",
     "Brain-Hacking/Actions/Personality.md",
     "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
     "Reconnaissance/OSINT/OSINT-People.md",
@@ -138,11 +156,6 @@
     "Reconnaissance/Active-Information-Gathering/SNMP/SNMP-Recon-Cheatsheet.md",
     "Networks/Traffic-Analysis/Packet-Analysis-Header-Filtering.md",
     "Networks/Network-Security/DNS-Leaking.md",
-    "Networks/Network-Security/Firewalls.md",
-    "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Configure-Virtual-Networks.md",
-    "Exploitation/Using-Public-Exploits.md",
-    "Exploitation/Weaponizing-Vulnerabilities.md",
-    "Exploitation/Windows/Active-Directory/Pass-The-Key.md",
     "Images/wheredoyouthinkitisdonefrom.png",
     "Images/azurefirewalldeploymentoptions.png",
     "Images/azurefirewallmanagerfeatures.png",
