@@ -20,6 +20,18 @@
             }
           },
           {
+            "id": "9ab31319db7afefe",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Backup-Resources/Azure-Administration-Log-Analytics.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "09475d00ea75c5e4",
             "type": "leaf",
             "state": {
@@ -139,9 +151,11 @@
   },
   "active": "1c8e0f63c3f48edb",
   "lastOpenFiles": [
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
-    "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Azure-DNS.md",
+    "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Backup-Resources/Azure-Administration-Log-Analytics.md",
     "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Application-Services.md",
+    "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Azure-DNS.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+    "ASP.md",
     "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Virtual-WAN.md",
     "Images/azureenterprisechoicesofwan.png",
     "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Private-Link-And-Endpoints.md",
@@ -169,7 +183,6 @@
     "Tools/Debuggers-IDEs-Editors/IDEs",
     "Services/Webservers/JS/NodeJS.md",
     "Web-Application-Hacking/Javascript/Javascript-Cookie-Abuse.md",
-    "Cloud/Kubernetes/Kubernetes-Hacking.md",
     "Reconnaissance/OSINT",
     "Tools/OSINT",
     "Images/wheredoyouthinkitisdonefrom.png",

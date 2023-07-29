@@ -1200,6 +1200,32 @@ Deployment Swaps - swap between slots
 - BEWARE - Slot != App; Slot is more like a host:
 ![](azslotswappedsettingsvsslotspecificsettings.png)
 
+Configure Application
+- General Settings:
+	- `Search App Services -> $App -> Configuration -> General Settings`
+		- Stack settings
+		- Platform settings
+		- Debugging
+		- Incoming Client Certificates
+- Application Settings:
+	- `Search App Services -> $App -> Configuration -> Application Settings`
+	- Edit in bulk or configure connection strings for non-ASP variant applications
+		- `-> Advanced && modify JSON -> Update`
+- Configure Path Mappings
+	- `Search App Services -> $App -> Configuration -> Path Mappings`
+		- Windows `-> New Handler`
+			- **Extension**: The file extension you want to handle, such as .php or handler.fcgi.
+			- **Script processor**: The absolute path of the script processor. Requests to files that match the file extension are processed by the script processor. Use the path `D:\home\site\wwwroot` to refer to your app's root directory.
+			- **Arguments**: Optional command-line arguments for the script processor.
+		- Linux `-> New Azure Storage Mount`  configure:
+			- **Name**: The display name.
+			- **Configuration options**: Basic or Advanced.
+			- **Storage accounts**: The storage account with the container you want.
+			- **Storage type**: **Azure Blobs** or **Azure Files**. Windows container apps only support Azure Files.
+			- **Storage container**: For basic configuration, the container you want.
+			- **Share name**: For advanced configuration, the file share name.
+			- **Access key**: For advanced configuration, the access key.
+			- **Mount path**: The absolute path in your container to mount the custom storage.
 
 Create a Custom Domain for Azure App Service
 `Search -> App Services -> Custom Domains`
