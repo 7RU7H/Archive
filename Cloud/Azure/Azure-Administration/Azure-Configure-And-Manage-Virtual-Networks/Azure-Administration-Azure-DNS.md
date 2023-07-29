@@ -61,6 +61,21 @@ Be aware of the difference between DNS Record sets and individual records
 	- A record set of type `CNAME` can contain only one record.
 	- Empty record sets do appear 
 
+#### Azure DNS Private Resolver
+
+Azure DNS private resolver is a cloud-native, highly available, and DevOps-friendly service (PaaS DNS). **Zero maintenance** DNS service to:
+- Resolve and conditionally forward DNS queries from a virtual network, on-premises, and to other target DNS servers **without the need to create and manage a custom DNS solution.**
+- Resolve DNS names hosted in Azure Private DNS Zones from on-premises networks and DNS queries for your own domain names.
+Capabilities:
+- Conditional forwarding to on-premises DNS or external DNS servers via outbound endpoints of Azure DNS Private Resolver
+- Resolve Azure Private DNS Zone records with inbound endpoints
+- Inbound Endpoints - Private IP of Subnet in a VNet
+- Outbound Endpoints - s conditionally forward DNS queries with **forwarding Rulesets** to forward the traffic to specific target DNS servers
+- Use Case:
+	- Hybrid Cloud need for DNS resolution between Cloud and on-premises
+	- To centralise DNS resolution across Azure
+	- To distribute DNS resolution across Azure
+
 ## Workflows
 
 Create DNS zones
