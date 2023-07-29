@@ -1113,21 +1113,45 @@ WAImportExport.exe PrepImport /j:<JournalFile> /id:<SessionId> /AdditionalDriveS
 
 ## Azure App Services
 
+[App Service Plans](https://learn.microsoft.com/en-us/azure/app-service/overview-hosting-plans) are PaaS - supports lots of Languages for gRPC and HTTP related App. 
+- Has a variety of tierings. 
+- It can autoscales nodes - Vertically and Horizontally
+- Multiple Apps per Service Plan
+- Deployment slots 
+	- Can be swap with Virtual IPs no route tabling]
+
 - Some Apps require multiple Subnets per service, per context!!:
 	- Web = DB, Front End, Processing - one for each layer!
 
-Create a Azure App Service
+Azure App Services  -  Create a Web app
+`All resources -> Create a Resource -> Create a web app` 
+or 
 `Search -> App Services + Create`
 Basics 
 - Resource Group
 - Publish: Code, Docker Container or Static Web App
 - Runtime stack
 Deployment 
-- Github actions - continuous deployment!
-- Development slots are live apps with their own hostnames - ``
+- Automated 
+	- Azure DevSec Ops Service
+	- Github
+		- Github actions - continuous deployment!
+	- Bitbucket similar to Github 
+- Manual
+	- Git
+	- CLI
+	- [[Microsoft-Visual-Studios]]
+	- Zip Deployment
+	- FTP/S - please use encrypted FTP or you will be in a lot of trouble.
+- Use Deployment slot
+	- Swapping between staging and production environments 
+	- Development slots are live apps with their own hostnames - ``
 Networking - Public access and network injection toggles
 Monitoring - Insights
 Tags - TAGS TAGS TAGS!
+`App services` authorisation behaviours:
+- Allow unauthenticated requests
+- Require authentication
 - Extras
 	- Always On: keep application loaded even when there is no traffic
 	- ARR Affinity - in multi-instance deployment ensure app client is routed to same instance for life of the session
@@ -1198,15 +1222,6 @@ Deploy a Windows or Linux Container using Azure Container Instances
 - Advanced - Restart policy
 
 [[Docker]] Containers need to be built then published - [[Azure-DevOps]]
-
-#### App Service Plans
-
-[App Service Plans](https://learn.microsoft.com/en-us/azure/app-service/overview-hosting-plans) are PaaS - supports lots of Languages for gRPC and HTTP related App. 
-- Has a variety of tierings. 
-- It can autoscales nodes - Vertically and Horizontally
-- Multiple Apps per Service Plan
-- Deployment slots 
-	- Can be swap with Virtual IPs no route tabling
 
 #### Azure Logic Apps
 
@@ -2099,6 +2114,106 @@ echo http://$(az network public-ip show \
 User Defined Route
 ```bash
 az network route-table route create -g MyResourceGroup --route-table-name MyRouteTable -n StorageRoute --address-prefix Storage --next-hop-type VirtualAppliance --next-hop-ip-address 10.0.100.4
+```
+
+
+Bootstrap web applications
+```bash
+# C#
+# Install dotnet
+wget -q -O - https://dotnet.microsoft.com/download/dotnet/scripts/v1/dotnet-install.sh | bash -s -- --version 6.0.404
+export PATH="~/.dotnet:$PATH"
+echo "export PATH=~/.dotnet:\$PATH" >> ~/.bashrc
+# create a ASP.NET Core MVC application
+dotnet new mvc --name $webappName
+cd $webappName/
+dotnet run
+
+# Java - with maven-archetype-webapp template
+cd ~
+mvn archetype:generate -DgroupId=example.demo -DartifactId=$webappName -DinteractiveMode=false -DarchetypeArtifactId=maven-archetype-webapp -DarchetypeVersion=1.4
+cd $webappName
+mvn package
+# the result will be .war file to be deploy
+
+# Node.js
+mkdir $path/$WebApp
+cd $WebApp
+npm init -y
+# start Web App
+npm start
+# Python - with flask
+python3 -m venv venv 
+source venv/bin/activate
+pip install flask
+mkdir $path/$WebApp
+cd $WebApp
+# Add applications to requirements.txt
+pip freeze > requirements.txt
+# Test
+export FLASK_APP=application.py
+flask run
+# Adding code to source control with git
+git init
+git add .
+git commit -m "Initial commit"
+```
+
+Deploying a WebApp
+```bash
+# C# 
+cd $webappName
+# Publish to build and zip to package
+dontnet publish -o pub
+cd pub
+zip -r site.zip *
+# Deply with the az cli
+az webapp deployment source config-zip \
+    --src site.zip \
+    --resource-group $rgName \
+    --name $appName
+
+# Java
+# CLI credentials required
+az webapp deployment user set --user-name <username> --password <password>
+# WAR deploy
+cd $webappName/target
+curl -v -X POST -u <username>:<password> https://<your-app-name>.scm.azurewebsites.net/api/wardeploy --data-binary @$webappName.war
+
+# Node.js
+export APPNAME=$(az webapp list --query [0].name --output tsv)
+export APPRG=$(az webapp list --query [0].resourceGroup --output tsv)
+export APPPLAN=$(az appservice plan list --query [0].name --output tsv)
+export APPSKU=$(az appservice plan list --query [0].sku.name --output tsv)
+export APPLOCATION=$(az appservice plan list --query [0].location --output tsv)
+
+az webapp up --name $APPNAME --resource-group $APPRG --plan $APPPLAN --sku $APPSKU --location "$APPLOCATION"
+
+# Python 
+export APPNAME=$(az webapp list --query [0].name --output tsv)
+export APPRG=$(az webapp list --query [0].resourceGroup --output tsv)
+export APPPLAN=$(az appservice plan list --query [0].name --output tsv)
+export APPSKU=$(az appservice plan list --query [0].sku.name --output tsv)
+export APPLOCATION=$(az appservice plan list --query [0].location --output tsv)
+
+cd path/$webappName
+az webapp up --name $APPNAME --resource-group $APPRG --plan $APPPLAN --sku $APPSKU --location "$APPLOCATION"
+```
+
+Find outbound IPs of App Service Plan
+```bash
+# Same information as Azure Portal on Outbound IPs
+az webapp show \
+    --resource-group <group_name> \
+    --name <app_name> \ 
+    --query outboundIpAddresses \
+    --output tsv
+# All possible outbound IPs
+az webapp show \
+    --resource-group <group_name> \ 
+    --name <app_name> \ 
+    --query possibleOutboundIpAddresses \
+    --output tsv
 ```
 
 ## References

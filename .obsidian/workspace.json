@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Virtual-WAN.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Application-Services.md",
                 "mode": "source",
                 "source": false
               }
@@ -26,6 +26,18 @@
               "type": "markdown",
               "state": {
                 "file": "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Azure-DNS.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0c260f994f2c526a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Virtual-WAN.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Application-Services.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,15 +139,16 @@
   },
   "active": "1c8e0f63c3f48edb",
   "lastOpenFiles": [
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+    "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Azure-DNS.md",
+    "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Application-Services.md",
+    "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Virtual-WAN.md",
     "Images/azureenterprisechoicesofwan.png",
     "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Private-Link-And-Endpoints.md",
-    "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Virtual-WAN.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration.md",
     "Reconnaissance/Active-Information-Gathering/DNS/DNS-Active-Recon.md",
     "Exploitation/Exploitation.md",
     "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Network-And-Application-Security-Groups.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
-    "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Azure-DNS.md",
     "Exploitation/Development",
     "Exploitation/Exploit-Lookup-And-Maintaince",
     "Exploitation/Video-Game-Hacking",
@@ -156,7 +169,6 @@
     "Tools/Debuggers-IDEs-Editors/IDEs",
     "Services/Webservers/JS/NodeJS.md",
     "Web-Application-Hacking/Javascript/Javascript-Cookie-Abuse.md",
-    "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Application-Services.md",
     "Cloud/Kubernetes/Kubernetes-Hacking.md",
     "Reconnaissance/OSINT",
     "Tools/OSINT",
@@ -170,7 +182,6 @@
     "Images/azuremonitorcollectionforlogs.png",
     "Images/azuremonitoringtier.png",
     "Images/azuresiterecoveryfeatures.png",
-    "Images/azuresiterecovery.png",
     "Cloud/Azure/Azure-Administration/sedmB5DSu",
     "Cloud/Azure/Azure-Administration/sedeu5ZuR"
   ]

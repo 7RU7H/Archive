@@ -2,15 +2,17 @@
 # Azure Administration - Application Services
 
 Azure App Service is an HTTP-based service for hosting web applications, REST APIs, and mobile back ends. An App Service plan defines a set of compute resources for a web application to run; the compute resources are analogous to a server farm in conventional web hosting:
-- Choose your own programming lanaguage for Windows or Linux
+- Choose your own programming language for Windows or Linux
+	- Azure App Services you supports the following runtimes: .NET, .NET Core, Java Ruby, node.js, PHP, Python
 - Platform as a Service
 	- Region
 	- Number of VMs
 	- Size of VMs
-- Azure App Services you supports the following runtimes: .NET, .NET Core, Java Ruby, node.js, PHP, Python
 - Azure App services can also run docker single or multi-containers
-
-Azure App services has built-in auto scaling support that can increase or decrease the resources allocated to run your app as needed, depending on the demand.
+- Builtin auto scale support
+	- Increase or decrease the resources allocated to run your app as needed, depending on the demand.
+- Deployment Slots
+- Continuous integration/deployment support
 
 Azure App service makes it easy to implement common:
 - Azure DevOps 
@@ -21,19 +23,31 @@ Azure App service makes it easy to implement common:
 - Custom Domains
 - Attaching TLS/SSL certificates
 
+Limitations:
+- Not supported on Shared pricing tier 
+- Builtin Images have an allocated storage, disk latency of this volume is higher and more variable than the latency of the container filesystem
+	- May require custom container option
+- Azure portal shows only features that currently work for Linux apps 
+
 The Azure app service Benefits
 ![1080](azureappservicesbenefits.png)
 
-
-You pay based on an Azure App Servies Plan - list below by incremental cost:
-- Shared Tier 
+An App Server will always run within an App Service plan that defines a set of compute resources for a web app to run. Defined by:
+- Operating System (Windows, Linux)
+- Region (West US, East US, etc.)
+- Number of VM instances
+- Size of VM instances (Small, Medium, Large)
+- Pricing tier (Free, Shared, Basic, Standard, Premium, PremiumV2, PremiumV3, Isolated, IsolatedV2) - list below by incremental cost:
+- Shared Compute Tier -  same Azure VM as other App Service apps, including apps of other customers:
 	- Free 
 	- Shared (Linux not supported)
-- Dedicated Teir 
+- Dedicated Compute Tier - Only app in the same App Service plan run dedicated Azure VMs:
 	- Basic 
 	- Standard 
 	- Premium - legacy:  PremiumV2, PremiumV3
-	- Isolated Tier - High performance, security, isolation
+- Isolated Tier - dedicated Azure VMs on dedicated Azure Virtual Networks for highest performance, security, isolation:
+	- Isolated
+	- Isolated V2 
 
 ![1080](azureappservicespricetier.png)
 
@@ -66,13 +80,13 @@ Azure App services provides many ways to deploy your applications:
 
 Azure supports automated deployment directly from several sources. The following options are available:
 
--   **Azure DevOps**: You can push your code to Azure DevOps (previously known as Visual Studio Team Services), build your code in the cloud, run the tests, generate a release from the code, and finally, push your code to an Azure Web App.
--   **GitHub**: Azure supports automated deployment directly from GitHub. When you connect your GitHub repository to Azure for automated deployment, any changes you push to your production branch on GitHub will be automatically deployed for you.
--   **Bitbucket**: With its similarities to GitHub, you can configure an automated deployment with Bitbucket.
--   **OneDrive**: OneDrive is Microsoft's cloud-based storage. You must have a Microsoft Account linked to a OneDrive account to deploy to Azure.
--   **Dropbox**: Azure supports deployment from Dropbox, which is a popular cloud-based storage system that is similar to OneDrive.
+-  **Azure DevOps**: You can push your code to Azure DevOps (previously known as Visual Studio Team Services), build your code in the cloud, run the tests, generate a release from the code, and finally, push your code to an Azure Web App.
+-  **GitHub**: Azure supports automated deployment directly from GitHub. When you connect your GitHub repository to Azure for automated deployment, any changes you push to your production branch on GitHub will be automatically deployed for you.
+-  **Bitbucket**: With its similarities to GitHub, you can configure an automated deployment with Bitbucket.
+-  **OneDrive**: OneDrive is Microsoft's cloud-based storage. You must have a Microsoft Account linked to a OneDrive account to deploy to Azure.
+-  **Dropbox**: Azure supports deployment from Dropbox, which is a popular cloud-based storage system that is similar to OneDrive.
 
-####  Manaual Deployment
+####  Manual Deployment
 
 There are a few options that you can use to manually push your code to Azure:
 
@@ -83,21 +97,69 @@ There are a few options that you can use to manually push your code to Azure:
 -   **Visual Studio**: Visual Studio features an App Service deployment wizard that can walk you through the deployment process.
 -   **FTP/S**: FTP or FTPS is a traditional way of pushing your code to many hosting environments, including App Service.****
 
-#### DevOps and Continous deployment
+#### Authentication and Authorisation in App Service Plans
+
+Use Identity Providers:
+
+|Provider|Sign-in endpoint|How-To guidance|
+|---|---|---|
+|Microsoft Identity Platform|`/.auth/login/aad`|[App Service Microsoft Identity Platform login](https://learn.microsoft.com/en-us/azure/app-service/configure-authentication-provider-aad)|
+|Facebook|`/.auth/login/facebook`|[App Service Facebook login](https://learn.microsoft.com/en-us/azure/app-service/configure-authentication-provider-facebook)|
+|Google|`/.auth/login/google`|[App Service Google login](https://learn.microsoft.com/en-us/azure/app-service/configure-authentication-provider-google)|
+|Twitter|`/.auth/login/twitter`|[App Service Twitter login](https://learn.microsoft.com/en-us/azure/app-service/configure-authentication-provider-twitter)|
+|Any OpenID Connect provider|`/.auth/login/<providerName>`|[App Service OpenID Connect login](https://learn.microsoft.com/en-us/azure/app-service/configure-authentication-provider-openid-connect)|
+|GitHub|`/.auth/login/github`|[App Service GitHub login](https://learn.microsoft.com/en-us/azure/app-service/configure-authentication-provider-github)|
+
+The authentication and authorisation module runs in the same sandbox as your application code, it handles every incoming HTTP request:
+- Authenticates users and clients with the specified identity provider(s)
+- Validates, stores, and refreshes OAuth tokens issued by the configured identity provider(s)
+- Manages the authenticated session
+- Injects identity information into HTTP request headers
+
+Either Authentication Flow with or without Provider SDK:
+
+|Step|Without provider SDK|With provider SDK|
+|---|---|---|
+|Sign user in|Redirects client to `/.auth/login/<provider>`.|Client code signs user in directly with provider's SDK and receives an authentication token. For information, see the provider's documentation.|
+|Post-authentication|Provider redirects client to `/.auth/login/<provider>/callback`.|Client code posts token from provider to `/.auth/login/<provider>` for validation.|
+|Establish authenticated session|App Service adds authenticated cookie to response.|App Service returns its own authentication token to client code.|
+|Serve authenticated content|Client includes authentication cookie in subsequent requests (automatically handled by browser).|Client code presents authentication token in `X-ZUMO-AUTH` header (automatically handled by Mobile Apps client SDKs).|
+
+### Token store
+
+App Service provides a built-in token store, which is a repository of tokens that are associated with the users of your web apps, APIs, or native mobile apps. When you enable authentication with any provider, this token store is immediately available to your app.
+
+### Logging and tracing
+
+If you enable application logging, authentication and authorization traces are collected directly in your log files. If you see an authentication error that you didn't expect, you can conveniently find all the details by looking in your existing application logs.
+
+#### DevOps and Continuous deployment
 
 Deployment slots are configured in the Azure portal. You can swap your app content and configuration elements between deployment slots, including the production slot.
 ![1080](azureappservicesslotsvsswapped.png)
 
 ## Insights
 
-App Services are integratable with Azure Insights to automatically detect performance anomalies in your apps. Language agnostic, on-off cloud location agnostics, DevOps integration and monitor and analyze data from mobile apps. Consider reviewing [[Azure-Administration-Azure-Monitor]]
+App Services are integratable with Azure Insights to automatically detect performance anomalies in your apps. Language agnostic, on-off cloud location agnostics, DevOps integration and monitor and analyze data from mobile apps. Consider reviewing [[Azure-Administration-Azure-Monitor]].
 
 ![1080](azureappserviesinsightpluses.png)
+
+#### App Services Networking
+
+Control the inbound and outbound network traffic for either multi-tenant or single-tenant. Networking features:
+
+|Inbound features|Outbound features|
+|---|---|
+|App-assigned address|Hybrid Connections|
+|Access restrictions|Gateway-required virtual network integration|
+|Service endpoints|Virtual network integration|
+|Private endpoints| ...
+
+Your Application is your Application you control your Application's features and problems
 
 ## Workflows
 
 Azure Portal for development slots for management - although you can create APp services with CLI or scripting
-
 Azure App Services  -  Create a Web app
 `All resources -> Create a Resource -> Create a web app` 
 or 
@@ -107,11 +169,30 @@ Basics
 - Publish: Code, Docker Container or Static Web App
 - Runtime stack
 Deployment 
-- Github actions - continuous deployment!
-- Devlopment slots are live apps with their own hostnames - ``
+- Automated 
+	- Azure DevSec Ops Service
+	- Github
+		- Github actions - continuous deployment!
+	- Bitbucket similar to Github 
+- Manual
+	- Git
+	- CLI
+	- [[Microsoft-Visual-Studios]]
+	- Zip Deployment
+	- FTP/S - please use encrypted FTP or you will be in a lot of trouble.
+- Use Deployment slot
+	- Swapping between staging and production environments 
+	- Development slots are live apps with their own hostnames - ``
 Networking - Public access and network injection toggles
 Monitoring - Insights
 Tags - TAGS TAGS TAGS!
+`App services` authorisation behaviours:
+- Allow unauthenticated requests
+- Require authentication
+- Extras
+	- Always On: keep application loaded even when there is no traffic
+	- ARR Affinity - in multi-instance deployment ensure app client is routed to same instance for life of the session
+	- Connection strings: encrypted at rest and transmitted over encryption
 
 Create a staging deployment slot and configure deployment 
 `App Services -> $App -> Deployment Slots -> + Add Slot`
@@ -137,20 +218,44 @@ git push $Repository $Branch
 # Authenticate
 ```
 
-Deployment Swaps
+Deployment Slots 
+`Search -> App Services -> $App -> Deployment Slots -> + Add slot  
+
+Deployment Swaps - swap between slots
 `Search -> App Services -> $App -> Deployment Slots -> Swap`
-Select Source and Target
+- Select Source and Target
+[Swap operations](https://learn.microsoft.com/en-us/azure/app-service/deploy-staging-slots):
+1. Target requires, then wait: 
+	- Slot-specific app settings and connection strings
+	- Continuous deployment
+	- App Services authentication 
+2. If local cache is enabled 
+	- trigger local cache initialisation - HTTP request to root `/` on each app 
+3. If Auto swap is enabled with custom warm-up trigger `applicationInitialization` (if not specified)
+4. All warmed up? - Swap slots by switching the routing rules for the two slots
+5. Source slot has pre-swap app previously in the target slot, perform the same operation by applying all settings and restarting the instances. No need to to re-route, it is stored
+- BEWARE - Slot != App; Slot is more like a host:
+![](azslotswappedsettingsvsslotspecificsettings.png)
+
 
 Create a Custom Domain for Azure App Service
 `Search -> App Services -> Custom Domains`
 - `Search -> Domain Names` and reserve directly in the Azure portal
-- Create DNS records
+- Create DNS records - either `A` or `CNAME`
 - Enable
 
-Backup Azure App Service (App configuration settings, File content, connected Databases)- requires:
+Backup Azure App Service (App configuration settings, File content, connected Databases) - requires:
 - Standard or Premium tier App Service plan 
 - Storage Container - [[Azure-Administration-Storage-Accounts]]
 Provide the in `App Services -> $App -> Backup `
+
+Deploy Code to a Azure App Service configure to deploy git source code.
+```powershell
+Set-Location-Path $pathToSourceCode
+git remote add $Repository $AzureAppServiceDeployURL.git 
+git push $Repository $Branch
+# Authenticate
+```
 
 Send HTTP requests with `Get-AzWebApp`
 ```powershell
@@ -241,6 +346,22 @@ export APPLOCATION=$(az appservice plan list --query [0].location --output tsv)
 
 cd path/$webappName
 az webapp up --name $APPNAME --resource-group $APPRG --plan $APPPLAN --sku $APPSKU --location "$APPLOCATION"
+```
+
+Find outbound IPs of App Service Plan
+```bash
+# Same information as Azure Portal on Outbound IPs
+az webapp show \
+    --resource-group <group_name> \
+    --name <app_name> \ 
+    --query outboundIpAddresses \
+    --output tsv
+# All possible outbound IPs
+az webapp show \
+    --resource-group <group_name> \ 
+    --name <app_name> \ 
+    --query possibleOutboundIpAddresses \
+    --output tsv
 ```
 
 
