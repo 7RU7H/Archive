@@ -13,7 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Private-Link-And-Endpoints.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Azure-Kubernetes-Services.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ed2743cbec8990b9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cloud/Kubernetes/Kubernetes.md",
                 "mode": "source",
                 "source": false
               }
@@ -55,7 +67,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -121,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Private-Link-And-Endpoints.md",
+                "file": "Cloud/Kubernetes/Kubernetes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -149,8 +162,10 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "1c8e0f63c3f48edb",
+  "active": "ed2743cbec8990b9",
   "lastOpenFiles": [
+    "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Azure-Kubernetes-Services.md",
+    "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Private-Link-And-Endpoints.md",
     "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Azure-Virtual-Machines.md",
     "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Azure-App-Services.md",
     "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Backup-Resources/Azure-Administration-Log-Analytics.md",
@@ -159,7 +174,6 @@
     "ASP.md",
     "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Virtual-WAN.md",
     "Images/azureenterprisechoicesofwan.png",
-    "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Private-Link-And-Endpoints.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration.md",
     "Reconnaissance/Active-Information-Gathering/DNS/DNS-Active-Recon.md",
     "Exploitation/Exploitation.md",
@@ -182,7 +196,6 @@
     "Cyberwarfare/Theory/Cyberwarfare-Considerations.md",
     "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
     "Tools/Debuggers-IDEs-Editors/IDEs",
-    "Services/Webservers/JS/NodeJS.md",
     "Reconnaissance/OSINT",
     "Tools/OSINT",
     "Images/wheredoyouthinkitisdonefrom.png",

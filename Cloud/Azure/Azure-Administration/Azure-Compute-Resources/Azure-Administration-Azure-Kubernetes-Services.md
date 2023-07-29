@@ -1,4 +1,3 @@
-
 # Azure Administration - Azure Kubernetes Services
 
 Azure [[Kubernetes]] Services (AKS) makes it simple to deploy a managed Kubernetes cluster in Azure. AKS service is free and only pay agent nodes within the cluster not the masters; AKS scenarios where you require full container orchestration:
