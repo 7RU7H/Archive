@@ -1,4 +1,4 @@
-# Azure Administration - Virtual Machines
+# Azure Administration - Azure Virtual Machines
 
 Azure Virtual Machines (VMs) are a configurable server without having to buy and maintain physical hardware, they still require:
 - Patching

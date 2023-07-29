@@ -1,5 +1,5 @@
 
-# Azure Administration - Application Services
+# Azure Administration Azure App Services
 
 Azure App Service is an HTTP-based service for hosting web applications, REST APIs, and mobile back ends. An App Service plan defines a set of compute resources for a web application to run; the compute resources are analogous to a server farm in conventional web hosting:
 - Choose your own programming language for Windows or Linux
@@ -91,7 +91,7 @@ Azure supports automated deployment directly from several sources. The following
 There are a few options that you can use to manually push your code to Azure:
 
 -   **Git**: App Service web apps feature a Git URL that you can add as a remote repository. Pushing to the remote repository will deploy your app.
--   _**az webapp up**_: `webapp up` is a feature of the `az` command-line interface that packages your app and deploys it. Unlike other deployment methods, `az webapp up` can create a new App Service web app for you if you haven't already created one.
+-   **az webapp up**: `webapp up` is a feature of the `az` command-line interface that packages your app and deploys it. Unlike other deployment methods, `az webapp up` can create a new App Service web app for you if you haven't already created one.
 -   **ZIP deploy**: You can use `az webapp deployment source config-zip` to send a ZIP of your application files to App Service. You can also access ZIP deploy via basic HTTP utilities such as `curl`.
 -   **WAR deploy**: WAR deploy is an App Service deployment mechanism designed for deploying Java web applications using WAR packages. You can access WAR deploy using the Kudu HTTP API located at `http://<your-app-name>.scm.azurewebsites.net/api/wardeploy`. If that fails, try: `https://<your-app-name>.scm.azurewebsites.net/api/wardeploy`.
 -   **Visual Studio**: Visual Studio features an App Service deployment wizard that can walk you through the deployment process.
