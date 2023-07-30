@@ -3,7 +3,6 @@
 
 For hacking [[Kubernetes-Hacking]].
 
-
 Kubernetes Architecture:
 - Control Plane - services that manage orchestration
 	- kube-apiserver

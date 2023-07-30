@@ -83,7 +83,7 @@ Improvement on SSDLC as someone forgot that security bugs existed, even though t
 - Planning (Feasibility Stage) and Risk Assessment Phase: 
 	- Define scope and purpose of the application
 	- Per planned feature gather all possible security considerations that promote security by design
-- Requirements Definition and additional Risk Assessment Phase: 
+- Requirements Definition and amicroservicedditional Risk Assessment Phase: 
 	- Per feature's requirements gather all possible security considerations that promote security by design
 	- Define prototype ideas and gathering all the necessary details, which may be in the form of:
 		- Making a list of all the requirements for the prototype system  
@@ -143,6 +143,37 @@ Improvement on SSDLC as someone forgot that security bugs existed, even though t
 			5. Vulnerabilities and Weaknesses Analysis
 			6. Attack Enumeration & Modelling
 			7. Risk Impact Analysis
+
+#### Secure Code Review and Analysis
+
+- Types
+	- Static Application Security Testing (SAST) 
+		- white-box testing and analysis of source code
+	- Software Composition Analysis (SCA) 
+		- automated scanning of dependencies for security vulnerabilities
+	- Dynamic Application Security Testing (DAST) 
+		- black-box testing to dynamically find vulnerabilities at runtime
+	- Interactive Application Security Testing (IAST) 
+		- grey-box testing that analyses code for security vulnerabilities on real-time running web and mobile applications
+	- Runtime Application Self Protection (RASP)
+		- runtime application integrated into an application to analyse inward and outward traffic and end-user behavioural patterns to prevent security attacks.
+
+#### Security Assessments
+
+Do not confuse:
+- [[Vulnerability-Assessment]]  != [[Penetration-Testing]] !=  [[Red-Team-Engagements]]
+
+[[Vulnerability-Assessment]] with [[Vulnerability-Scanning]]
+- [[OpenVAS]]
+- [[Tools/Vulnerability-Analysis/Nessus/Nessus|Nessus]]
+- [[ISS-Scanner]]
+
+[[Penetration-Testing]]
+
+### Methodologies
+
+[[Microsoft-SDL]]
+
 
 
 ## References

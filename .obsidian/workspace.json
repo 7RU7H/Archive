@@ -4,71 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "24faecfb6994b1d8",
+        "id": "d9ae10ce8c24f91b",
         "type": "tabs",
         "children": [
           {
-            "id": "1c8e0f63c3f48edb",
+            "id": "c3f3653cf4f8bec9",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Azure-Kubernetes-Services.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ed2743cbec8990b9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cloud/Kubernetes/Kubernetes.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9ab31319db7afefe",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Backup-Resources/Azure-Administration-Log-Analytics.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "09475d00ea75c5e4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Azure-DNS.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0c260f994f2c526a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -134,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cloud/Kubernetes/Kubernetes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -162,9 +108,15 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "ed2743cbec8990b9",
+  "active": "c3f3653cf4f8bec9",
   "lastOpenFiles": [
+    "Microsoft-SDL.md",
+    "Development/Software-Development-Paradigms/Software-Development-Lifecycle.md",
+    "Tools/Vulnerability-Analysis/Nessus/Nessus.md",
+    "Tools/Vulnerability-Management/Nessus.md",
+    "Reconnaissance/Active-Information-Gathering/Vulnerability-Scanning.md",
     "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Azure-Kubernetes-Services.md",
+    "Cloud/Kubernetes/Kubernetes.md",
     "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Private-Link-And-Endpoints.md",
     "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Azure-Virtual-Machines.md",
     "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Azure-App-Services.md",
@@ -187,14 +139,8 @@
     "README.md",
     "Networks/Network-Theory/Network-Protocols/DNS.md",
     "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Application-Gateways.md",
-    "Development/Software-Development-Paradigms/Software-Development-Lifecycle.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
     "Post-Exploitation/Post-Exploitation-Enumeration/Windows-Post-Exploitation-Info-Gathering.md",
-    "Services/Webservers/Apache/Apache2/Apache2.md",
-    "Tools/Debuggers-IDEs-Editors/IDEs/VS-Code.md",
-    "Tools/Debuggers-IDEs-Editors/IDEs/Microsoft-Visual-Studios.md",
-    "Cyberwarfare/Theory/Cyberwarfare-Considerations.md",
-    "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
     "Tools/Debuggers-IDEs-Editors/IDEs",
     "Reconnaissance/OSINT",
     "Tools/OSINT",
