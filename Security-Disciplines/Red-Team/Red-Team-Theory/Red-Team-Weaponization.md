@@ -35,7 +35,7 @@ Powershell is an object-oriented programming language executed from the Dynamic 
 
 ## C2
 
-Follow the link to [[Introduction-To-Comand-And-Control-Frameworks]]. These framework contain all of the above and [[Useful_Csharp]] method from exploitation to exfiltration and for a listing of C2s see [[C2-Matrix]].
+Follow the link to [[Introduction-To-Command-And-Control-Frameworks]]. These framework contain all of the above and [[Useful_Csharp]] method from exploitation to exfiltration and for a listing of C2s see [[C2-Matrix]].
 
 
 ## References

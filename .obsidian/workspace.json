@@ -11,8 +11,12 @@
             "id": "c3f3653cf4f8bec9",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Tools/Forensics/Sigma.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -44,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Node",
+                "query": "Sigma",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Tools/Forensics/Sigma.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,8 +115,15 @@
   },
   "active": "c3f3653cf4f8bec9",
   "lastOpenFiles": [
-    "Microsoft-SDL.md",
+    "YAML.md",
+    "Tools/Forensics/Sigma.md",
+    "Security-Disciplines/Blue-Team/Detection-Engineering.md",
     "Development/Software-Development-Paradigms/Software-Development-Lifecycle.md",
+    "Microsoft-SDL.md",
+    "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Application-Gateways.md",
+    "Post-Exploitation/Data-Ex&Infiltration/Data-Exfiltration/Data-Exfiltration-Over-DNS.md",
+    "Networks/Setup-DNS.md",
+    "Tools/C2/Introduction-To-Command-And-Control-Frameworks.md",
     "Tools/Vulnerability-Analysis/Nessus/Nessus.md",
     "Tools/Vulnerability-Management/Nessus.md",
     "Reconnaissance/Active-Information-Gathering/Vulnerability-Scanning.md",
@@ -134,13 +146,6 @@
     "Exploitation/Exploit-Lookup-And-Maintaince",
     "Exploitation/Video-Game-Hacking",
     "Exploitation/Shells",
-    "Linux/Linux-Hub-Page.md",
-    "Linux/Linux-Concepts/Linux-DNS-Configuration.md",
-    "README.md",
-    "Networks/Network-Theory/Network-Protocols/DNS.md",
-    "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Application-Gateways.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
-    "Post-Exploitation/Post-Exploitation-Enumeration/Windows-Post-Exploitation-Info-Gathering.md",
     "Tools/Debuggers-IDEs-Editors/IDEs",
     "Reconnaissance/OSINT",
     "Tools/OSINT",

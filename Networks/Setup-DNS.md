@@ -1,10 +1,10 @@
 # Setup DNS
 
-This article will require some prior knowledge regarding, although many of the articles listed have this information embedded in them it may be worth briefer schematic information like in [[DNS]] and trouble shooting yourself with [[DNS-Active-Recon]] and [[DNS-Recon-Passive]]
+This article will require some prior knowledge regarding, although many of the articles listed have this information embedded in them it may be worth briefer schematic information like in the article [[DNS]] and trouble shooting yourself with [[DNS-Active-Recon]] and [[DNS-Recon-Passive]]
 
 ## Debian IPv4 DNS server
 
-This section makes extensive use of this article from [Linuxhint](https://linuxhint.com/configure-dns-server-on-debian/) to make concise checklist of manual instructions without desciption about DNS or aspects of it. For more extensive Debian Adminstration see the [Debian Adminstrator's Handbook](https://www.debian.org/doc/manuals/debian-handbook/sect.domain-name-servers.en.html)
+This section makes extensive use of this article from [Linuxhint](https://linuxhint.com/configure-dns-server-on-debian/) to make concise checklist of manual instructions without description about DNS or aspects of it. For more extensive Debian Administration see the [Debian Adminstrator's Handbook](https://www.debian.org/doc/manuals/debian-handbook/sect.domain-name-servers.en.html)
 
 ```bash
 sudo apt-get update -y && apt-get upgrade -y 
@@ -124,6 +124,7 @@ sudo named-checkconf
 
 
 ## References
+3
 https://help.medium.com/hc/en-us/articles/115003053487-Setting-up-a-custom-domain-for-your-profile-or-publication
 
 https://medium.com/nuculabs/setting-up-a-simple-dns-server-859de750f6fe'

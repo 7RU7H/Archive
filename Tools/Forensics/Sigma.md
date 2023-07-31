@@ -3,27 +3,63 @@
 
 Both [[Snort]] and [[Yara]] are also present in the Archive.
 
-- Create detection methods and signature alongside IOCs and Yara rules
+- Create detection methods and signature alongside IoCs and [[Yara]] rules
 - Write [[SIEM-Solutions]] search that avoid vendor lock-in
 - Share signatures
 - Write Custom Detection rules
 
 
-`Sigma Format` for genric signature descriptions -> `Sigma Converter` applies predefined and custom field mapping -> To third parties like [[Tools/Splunk]] search, [[ELK-Defined]] search queries and other [[SIEM-Solutions]] queries.
+`Sigma Format` for generic signature descriptions -> `Sigma Converter` applies predefined and custom field mapping -> To third parties like [[Splunk]] search, [[ELK-Defined]] search queries and other [[SIEM-Solutions]] queries.
 
-Sigma allows for standardization format to share analysis, IOCs, [[Yara]] rules, which may not be avaliable from the in-house collected data.
+Sigma allows for standardisation format to share analysis, IoCs, [[Yara]] rules, which may not be available from the in-house collected data.
 
 ## Sigma Rule Syntax
 
-[Status types](https://tryhackme.com/room/adventofcyber4#):
--   _Stable_: The rule may be used in production environments and dashboards.
--   _Test_: Trials are being done to the rule and could require fine-tuning.
--   _Experimental_: The rule is very generic and is being tested. It could lead to false results, be noisy, and identify exciting events.
--   _Deprecated_: The rule has been replaced and would no longer yield accurate results. 
--   _Unsupported_: The rule is not usable in its current state (unique correlation log, homemade fields).
+[[YAML]] file properties: 
+- YAML is case-sensitive.
+- Files should have the `.yml` extension.
+- Spaces are used for indentation and not tabs.
+- Comments are attributed using the `#` character.
+- Key-value pairs are denoted using the colon `:` character.
+- Array elements are denoted using the dash `-` character.
 
-[Predefined Tags list](https://github.com/SigmaHQ/sigma/wiki/Tags)
+[ID types](https://github.com/SigmaHQ/sigma-specification/blob/main/Sigma_specification.md#rule-identification): 
+- derived: The rule was derived from the referred rule or rules, which may remain active.
+- obsoletes: The rule obsoletes the referred rule or rules, which aren't used anymore.
+- merged: The rule was merged from the referred rules. The rules may be still existing and in use.
+- renamed: The rule had previously the referred identifier or identifiers but was renamed for whatever reason, e.g. from a private naming scheme to UUIDs, to resolve collisions etc. It's not expected that a rule with this id exists anymore.
+- similar: Use to relate similar rules to each other (e.g. same detection content applied to different log sources, rule that is a modified version of another rule with a different level)
 
+[Status types](https://github.com/SigmaHQ/sigma-specification/blob/main/Sigma_specification.md#rule-identification):
+- stable: the rule didn't produce any obvious false positives in multiple environments over a long period of time
+- test: the rule doesn't show any obvious false positives on a limited set of test systems
+- experimental: a new rule that hasn't been tested outside of lab environments and could lead to many false positives
+- deprecated: the rule is to replace or cover another one. The link between both rules is made via the `related` field.
+- unsupported: the rule can not be used in its current state (special correlation log, home-made fields...etc.)
+
+[Log types](https://github.com/SigmaHQ/sigma-specification/blob/main/Sigma_specification.md#rule-identification):
+- product: Selects all log outputs of a particular product.
+- category: Selects the log files written by the selected product. 
+- service: Selects only a subset of the logs from the selected product.
+- definition: Describes the log source and any applied configurations.
+
+- Transformation modifiers: 
+	- These change the values provided into different values and can modify the logical operations between values. They include:
+	    - `contains`: The value would be matched anywhere in the field.
+	    - `all`: This changes the OR operation of lists into an AND operation. This means that the search conditions has to match all listed values.
+	    - `base64`: This looks at values encoded with Base64.
+	    - `endswith`: With this modifier, the value is expected to be at the end of the field. For example, this is representative of `*\cmd.exe`.
+	    - `startswith`: This modifier will match the value at the beginning of the field. For example, `power*`.
+- Type modifiers:
+	- These change the type of the value or sometimes even the value itself. Currently, the only usable type modifier is `re`, which is supported by Elasticsearch queries to handle the value as a regular expression.
+
+Level: `Informational -> Low -> Medium -> High -> Critical`
+
+Search-Identifier data structures:
+- [Lists](https://github.com/SigmaHQ/sigma-specification/blob/main/Sigma_specification.md#lists) contain strings or maps logically linked with `OR`
+- [Maps](https://github.com/SigmaHQ/sigma-specification/blob/main/Sigma_specification.md#maps) - dictionaries of Key-Value pairs
+
+[Predefined Tags list](https://github.com/SigmaHQ/sigma/wiki/Tags):
 ```yaml
 title: # Rule name
 id: # Global unique id - UUID format
@@ -38,9 +74,9 @@ detection: # the rule, key value pairs with operators and keywords
   selection: # search identifiers
     EventID: # search identifier value 
       - 4750 # search's list value indexed with - $list_value  
-    Image|endswith:
+    Image|endswith: # Search identify 'Image', tranformation modifiers: endswith, contains..
       - '\svchost.exe'
-   CommandLine|contains|all:
+   CommandLine|contains|all: 
       - cmd
       - /c
   condition: selection 
@@ -51,16 +87,18 @@ tags:
    - attack.persistence # Points to the MITRE tactic
 ```
 
-For EventIDs and Sysmon - see [[Sysmon-Events]], [[Windows-Events-To-Monitor]], also this awesome site [Ultimatewindowssecurity](https://www.ultimatewindowssecurity.com/securitylog/encyclopedia/default.aspx?i=j) , which has a encyclopedia of Windows audit, Sharepoint audit, SQL point audit, Exchangfe audit, Sysmon all listed and `[Ctrl + F]` to success
+For Event IDs and Sysmon - see [[Sysmon-Events]], [[Windows-Events-To-Monitor]], also this awesome site [Ultimatewindowssecurity](https://www.ultimatewindowssecurity.com/securitylog/encyclopedia/default.aspx?i=j) , which has a encyclopedia of Windows audit, Sharepoint audit, SQL point audit, Exchange audit, Sysmon all listed and `[Ctrl + F]` to success.
 
 [[MITRE-ATT&CK]] official site: [Link](https://attack.mitre.org/)
 
 ## Tooling
 
-[Sigmac is deprecated to be replace by pySigma](https://github.com/SigmaHQ/sigma/blob/master/tools/README.md)
-[pySigma](https://github.com/SigmaHQ/pySigma) - more stable python library than Sigmac
+Be aware the translation from SIgma to other platforms may require further treatment of escaping characters that may not be compatible.
 
-[Unicoder.io](https://uncoder.io/) - is an open-source web Sigma converter for numerous SIEM and EDR platforms.
+[Sigmac is deprecated to be replace by pySigma](https://github.com/SigmaHQ/sigma/blob/master/tools/README.md)
+[pySigma](https://github.com/SigmaHQ/pySigma) - more stable python library than Sigma
+
+[Unicoder.io](https://uncoder.io/) - is an open-source web Sigma converter for numerous [[SIEM-Solutions]] and [[EDR]] platforms.
 
 ## References
 
@@ -70,4 +108,5 @@ For EventIDs and Sysmon - see [[Sysmon-Events]], [[Windows-Events-To-Monitor]], 
 [Sigmac](https://github.com/SigmaHQ/sigma/blob/master/tools/README.md)
 [pySigma](https://github.com/SigmaHQ/pySigma) 
 [Unicoder.io](https://uncoder.io/)
-[Ultimatewindowssecurity](https://www.ultimatewindowssecurity.com/securitylog/encyclopedia/default.aspx?i=j)
+[Ultimate Windows Security](https://www.ultimatewindowssecurity.com/securitylog/encyclopedia/default.aspx?i=j)
+[Sigma Specification](https://github.com/SigmaHQ/sigma-specification/blob/main/Sigma_specification.md#rule-identification)

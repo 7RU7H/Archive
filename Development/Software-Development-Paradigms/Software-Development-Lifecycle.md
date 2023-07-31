@@ -8,7 +8,7 @@ Software Development Lifecycle (SDLC) is a DevOps concept and its aim is to:
 - Improve the quality of the software
 - Improve the quality of the development process	
 - Meet deadlines
-- Meet cost estimations
+- Meet cost estimationshttps://tryhackme.com/room/dnsmanipulation
 
 Software Development Lifecycle is not Secure Software Development Lifecycle this article will append the Secure additions along side SDLC after defining SDLC first. 
 
@@ -172,9 +172,37 @@ Do not confuse:
 
 ### Methodologies
 
-[[Microsoft-SDL]]
+- Microsoft SDL
+	- Principles
+		- Secure by design
+		- Security by default
+		- Security by deployment
+		- Communications
+	- Practices
+		- Provide Training
+		- Define Security Requirements
+		- Define Metrics and Compliance reporting
+		- Perform Threat Modelling
+		- Define and Use Cryptography Standards
+		- Manage the Security Risk of Using Third-Party Components
+		- Use Approved Tools
+		- Perform Security Testing (SAST, DAST, IAST)
+		- Perform Security Assessments
+		- Establish a Standard Incident Response Process
 
+OWASP S-SDLC
+- Principles
+	- SDL is a collection of mandatory security activities grouped by the traditional software development lifecycle phases.
+	- Data is collected to assess training effectiveness.
+	- In-process metrics are used to confirm process compliance.
+	- Post-release metrics are used to guide future changes.
+	- SDL places heavy emphasis on understanding the cause and effect of security vulnerabilities.
+	- A development team must complete the sixteen mandatory security activities to comply with the Microsoft SDL process.
+- [OWASP SAMM](https://owasp.org/www-project-samm/) - Software Assurance Maturity Model
+	- Measure how well an organisation is currently doing
 
+[BSIMM](https://owaspsamm.org/blog/2020/10/29/comparing-bsimm-and-samm/)
+- Measure security posture
 
 ## References
 
