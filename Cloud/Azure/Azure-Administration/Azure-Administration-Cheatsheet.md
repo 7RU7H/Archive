@@ -520,7 +520,7 @@ Azure Public DNS - [Host your domain in Azure DNS](https://learn.microsoft.com/e
 				- MultiValue
 				- Subnet
 
-[Azure Prviate DNS Zones](https://learn.microsoft.com/en-us/azure/dns/private-dns-overview) requires:
+[Azure Private DNS Zones](https://learn.microsoft.com/en-us/azure/dns/private-dns-overview) requires:
 - Vnet (With Resource Manager deployment model) and Subnet,
 - Add Virtual Network Linking (add VNet to a Zone): `Resource groups -> $resourceGroup -> $domain -> select Virtual Network Links` - provide VNet, Sub and a `Link name`  
 - Create an additional DNS Record in the correct DNS Zone
@@ -610,8 +610,12 @@ VNet Peering - requires account with `(Classic) Network Contributor` role
 - [Permissions](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-manage-peering?tabs=peering-portal#permissions)
 - Extending Peering 
 	- Hub and spoke network - Central hub for VPN gateway, spoke VNets
-	- User-Defined Route (UDR): either a hop to/from VM IP address or VPN Gateway
-	- Service chaining: define UDRs from Vnet to a network virtual appliance or VPN
+	- User-Defined Route (UDR): either a hop to/from:
+		- Virtual network gateway
+		- Virtual network
+		- Internet
+		- Network virtual appliance (NVA)
+	- Service chaining: define UDRs from VNet to a network virtual appliance or VPN
 
 #### Azure Firewalls
 

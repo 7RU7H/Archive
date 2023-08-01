@@ -20,7 +20,11 @@ Peering Restrictions:
 
 **Service chaining** lets you define UDRs. These routes direct traffic from one virtual network to an NVA or VPN gateway.
 
-**User-defined route (UDR)** is a Virtual network peering enables the next hop in a user-defined route to be the IP address of a virtual machine in the peered virtual network, or a VPN gateway.
+**User-defined route (UDR)** is a Virtual network peering enables the next hop in a user-defined route to be the IP address of a virtual machine in the peered virtual network, or a VPN gateway. UDRs access route tables - [[Azure-Administration-Network-Routes-And-Endpoints]].
+- Virtual network gateway
+- Virtual network
+- Internet
+- Network virtual appliance (NVA)
 
 ![1080](azvnetservicechainingandudrs.excalidraw)
 

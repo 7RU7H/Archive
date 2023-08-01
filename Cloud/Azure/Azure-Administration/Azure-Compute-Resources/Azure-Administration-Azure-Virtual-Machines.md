@@ -8,7 +8,7 @@ Azure Virtual Machines (VMs) are a configurable server without having to buy and
 
 Consider reading [[Virtual-Machines]] for a more general overview and [[VirtualBox-Virtual-Networking]] as well as making the virtual networks first before make machines [[Azure-Administration-Configure-Virtual-Networks]], it is free and simpler.
 
-Azure VMs support granular controls at scale and is the basis of the Azure infrastructure as a service (IaaS) model. It splits the reponsibilities 
+Azure VMs support granular controls at scale and is the basis of the Azure infrastructure as a service (IaaS) model. It splits the responsibilities 
 ![1080](azurevmcustomerandazurerespsplit.png)
 Windows VMs still require a License!
 

@@ -8,30 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "357a8e2496b41e8e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Virtual-Networking-Peering.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "fc2753e2ce4cf11d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "f3a6164dc76f8bec",
             "type": "leaf",
             "state": {
@@ -42,8 +18,45 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "5f572d794037505a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7306c1d088d5bb84",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Configure-Virtual-Networks.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7e059002f78d758f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -93,7 +106,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 468.5110321044922
+    "width": 492.5110321044922
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -109,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Virtual-Networking-Peering.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -137,16 +150,22 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "357a8e2496b41e8e",
+  "active": "5f572d794037505a",
   "lastOpenFiles": [
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
-    "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Network-Routes-And-Endpoints.md",
+    "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administrator-Load-Balancer.md",
     "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Configure-Virtual-Networks.md",
+    "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Network-Routes-And-Endpoints.md",
     "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Virtual-Networking-Peering.md",
-    "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Azure-Firewall.md",
-    "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Private-Link-And-Endpoints.md",
     "Excalidraw/azvnetservicechainingandudrs.excalidraw.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+    "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Application-Gateways.md",
+    "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Azure-Virtual-Machines.md",
+    "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Scale-And-Availability-Sets.md",
+    "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Azure-Firewall.md",
     "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Azure-DNS.md",
+    "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Network-And-Application-Security-Groups.md",
+    "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Private-Link-And-Endpoints.md",
     "Networks/Network-Theory/Network-Protocols/DNS.md",
     "Images/azureprivatedns.png",
     "Security-Disciplines/Blue-Team/Auditing-And-Monitoring.md",
@@ -155,17 +174,11 @@
     "Security-Disciplines/Blue-Team/Detection-Engineering.md",
     "Development/Software-Development-Paradigms/Software-Development-Lifecycle.md",
     "Microsoft-SDL.md",
-    "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Application-Gateways.md",
     "Post-Exploitation/Data-Ex&Infiltration/Data-Exfiltration/Data-Exfiltration-Over-DNS.md",
     "Networks/Setup-DNS.md",
     "Tools/C2/Introduction-To-Command-And-Control-Frameworks.md",
     "Tools/Vulnerability-Analysis/Nessus/Nessus.md",
     "Tools/Vulnerability-Management/Nessus.md",
-    "Reconnaissance/Active-Information-Gathering/Vulnerability-Scanning.md",
-    "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Azure-Kubernetes-Services.md",
-    "Cloud/Kubernetes/Kubernetes.md",
-    "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Azure-Virtual-Machines.md",
-    "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Azure-App-Services.md",
     "Images/azureenterprisechoicesofwan.png",
     "Exploitation/Development",
     "Exploitation/Exploit-Lookup-And-Maintaince",
