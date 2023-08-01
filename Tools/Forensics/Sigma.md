@@ -8,7 +8,6 @@ Both [[Snort]] and [[Yara]] are also present in the Archive.
 - Share signatures
 - Write Custom Detection rules
 
-
 `Sigma Format` for generic signature descriptions -> `Sigma Converter` applies predefined and custom field mapping -> To third parties like [[Splunk]] search, [[ELK-Defined]] search queries and other [[SIEM-Solutions]] queries.
 
 Sigma allows for standardisation format to share analysis, IoCs, [[Yara]] rules, which may not be available from the in-house collected data.
@@ -93,7 +92,7 @@ For Event IDs and Sysmon - see [[Sysmon-Events]], [[Windows-Events-To-Monitor]],
 
 ## Tooling
 
-Be aware the translation from SIgma to other platforms may require further treatment of escaping characters that may not be compatible.
+Be aware the translation from Sigma to other platforms may require further treatment of escaping characters that may not be compatible.
 
 [Sigmac is deprecated to be replace by pySigma](https://github.com/SigmaHQ/sigma/blob/master/tools/README.md)
 [pySigma](https://github.com/SigmaHQ/pySigma) - more stable python library than Sigma

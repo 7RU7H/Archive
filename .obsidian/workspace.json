@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/Forensics/Sigma.md",
+                "file": "Security-Disciplines/Blue-Team/Auditing-And-Monitoring.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/Forensics/Sigma.md",
+                "file": "Security-Disciplines/Blue-Team/Auditing-And-Monitoring.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,8 +115,9 @@
   },
   "active": "c3f3653cf4f8bec9",
   "lastOpenFiles": [
-    "YAML.md",
     "Tools/Forensics/Sigma.md",
+    "Security-Disciplines/Blue-Team/Auditing-And-Monitoring.md",
+    "Software/File-Typology/YAML.md",
     "Security-Disciplines/Blue-Team/Detection-Engineering.md",
     "Development/Software-Development-Paradigms/Software-Development-Lifecycle.md",
     "Microsoft-SDL.md",
@@ -141,7 +142,6 @@
     "Cloud/Azure/Azure-Administration/Azure-Administration.md",
     "Reconnaissance/Active-Information-Gathering/DNS/DNS-Active-Recon.md",
     "Exploitation/Exploitation.md",
-    "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Network-And-Application-Security-Groups.md",
     "Exploitation/Development",
     "Exploitation/Exploit-Lookup-And-Maintaince",
     "Exploitation/Video-Game-Hacking",
