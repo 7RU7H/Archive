@@ -8,6 +8,13 @@ Azure Firewall is a cloud-based security service that protects your Azure virtua
 - Create network filtering rules 
 - It can distinguish legitimate packets for different types of connections
 - Supports threat intelligence-based filtering
+- It is a fully stateful Firewall as a Service (FWaaS) with: built-in high availability and unrestricted cloud scalability
+- Uses a static public IP address for your VNet resources allowing outside firewalls to identify traffic originating from your virtual network
+- Fully integrated with Azure Monitor for logging and analytics
+- Azure Firewall on its own VNet
+- VNets pass through this Central Vnet
+- Comes with Microsoft Threat Intelligence
+	- Blocks know malicious IPs and FQDNs
 
 Why?
 - You want to protect your network against infiltration.

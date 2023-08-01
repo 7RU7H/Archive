@@ -14,7 +14,23 @@ Azure DNS lets you host your DNS records for your domains on Azure infrastructur
 - Private DNS 
 	- Private Zones providing name resolution for virtual machines (VMs) within a/between. virtual network 
 		- Without custom DNS solution!
+		- Automatic Hostname record management
+		- Hostname resolution between virtual networks
+		- Azure region support in all Azure regions 
 	- Internally facing custom domains  
+	- For:
+		- Name resolution scope to a single Vnet:
+			- VMs from Vnet 1 -> Query AZ private DNS zone for VNet2 resolution, Vnet1 is linked: 
+				- Auto registration needed to be enabled in Link configuration for create two `A` records
+				- Resolves only *using* Vnet2 
+				- Azure Private DNS also responds to reverse DNS (PTR) for Vms with Vnet1 
+		- Name resolution for multiple networks
+			- Vnet1 is designated for registration Vnet2 for name resolution, both share DNS zone address `testmydns.loc`
+			- Vnet1 VM registration is automatic
+			- Vnet2 VM registration is manual
+			- DNS query from VM of Vnet2 for resource in Vnet1 returns  `NXDOMAIN` (error message - Domain does *N*ot e*X*ist)
+			- DNS query from VM of Vnet1 for resource in Vnet2 return FQDN for resource 
+![](azureprivatedns.png)
 - Private Resolvers 
 	- Zero maintenance PaaS DNS for Hybrid cloud, centralising and distrubing DNS across Azure
 - DNS Security 
@@ -142,20 +158,21 @@ Azure Public DNS - [Host your domain in Azure DNS](https://learn.microsoft.com/e
 				- MultiValue
 				- Subnet
 
-Azure Private DNS Zone
+[Azure Prviate DNS Zones](https://learn.microsoft.com/en-us/azure/dns/private-dns-overview) requires:
+- Vnet (With Resource Manager deployment model) and Subnet,
+- Add Virtual Network Linking (add VNet to a Zone): `Resource groups -> $resourceGroup -> $domain -> select Virtual Network Links` - provide VNet, Sub and a `Link name`  
+- Create an additional DNS Record in the correct DNS Zone
 `Search -> Private DNS Zones -> Create`
 - Subscription, Resource Group and instance Name
 - Link VNet Name `$PrivateDNSZone -> Settings -> Virtual Network Links -> Add`
 	- Link Name
 	- `Tick - I know the resource ID of Virtual network`...if you do
 	- Subscription, Virtual Network
-	- Consider Auto Registration?
-		- [Auto registration feature manages DNS records for virtual machines deployed in a virtual network](https://learn.microsoft.com/en-us/azure/dns/private-dns-autoregistration)
+	- Registration and Resolution
+		- If it is not registered it wont resolve
+			- Consider the [Auto registration feature manages DNS records for virtual machines deployed in a virtual network](https://learn.microsoft.com/en-us/azure/dns/private-dns-autoregistration)
 
-[Azure DNS for private domains](https://learn.microsoft.com/en-us/azure/dns/private-dns-overview) for Custom DNS requires:
-- R Vnet (With Resource Manager deployment model) and Subnet,
-- Add Virtual Network Linking (add VNet to a Zone): `Resource groups -> $resourceGroup -> $domain -> select Virtual Network Links` - provide VNet, Sub and a `Link name`  
-- Create an additional DNS Record in the correct DNS Zone
+
 
 [Azure DNS Private Resolver](https://learn.microsoft.com/en-us/azure/dns/dns-private-resolver-overview) (enables you to query Azure DNS private zones from an on-premises environment and vice versa without deploying VM based DNS servers) - required RG and VNet - no VM based DNS servers
 - Sub, RG, Name, Region and VNet

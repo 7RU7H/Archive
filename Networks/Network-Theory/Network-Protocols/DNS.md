@@ -50,7 +50,7 @@ TXT | Text records can contain any arbitrary data and can be used for various pu
 AAAA  | The record that contains the IPv6 address for a domain (as opposed to A records, which list the IPv4 address). [Learn more about the AAAA record.](https://www.cloudflare.com/learning/dns/dns-records/dns-aaaa-record/)
 SOA record | Stores admin information about a domain.
 SRV record | Specifies a port for specific services.
-PTR record | Provides a domain name in reverse-lookups.
+PTR record | Queries an IP to return a domain name in what is called a reverse lookup.
 
 - Priority - DNS Priority - The lower the number, the higher the priority. [infosecinstitute -dns-hacking](https://resources.infosecinstitute.com/topic/dns-hacking/)
 

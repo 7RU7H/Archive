@@ -167,118 +167,6 @@ Historic comparison being: Site-to-Site VPN or connection to the same ExpressRou
 
 On-premise to an Azure subnet Gateway can be used to connect resources via Gateway transit, because of Peering to reach out to On-Premise assets. 
 
-
-#### Peering
-
-Azure Virtual network peering is non-transitive meaning only directly peered can communicate. 
-
-You can connect to your on-premises network from a peered virtual network if you enable gateways transit from a virtual network that has a VPN gateway. 
-
-Gateway transit from Vnet to On-premise via VPN gateway:
-`$HubNetwork -> Allow gateway Transit` `
-`SpokeNetwork -> Use remote gateways`
-
-Peering Options:
-- **Virtual network peering** connects virtual networks in the same Azure region
-	- Cross-subscription Vnet Peering: Two Administrators must grant each other `Network Contributor` role as they are both seperate Azure AD tenants
--  **Global virtual network peering** connects virtual networks that are in different Azure regions
-
-**When peering only one gets created configuration in the reverse direction is required!**
-
-Query Vnet are Provisioned
-```powershell
-az network vnet list --query "[?contains(provisioningState, 'Succeeded')]" --output table
-```
-
-Create peering between two Vnets
-```powershell
-# Forward and Reverseing Peering is required
-# Initial Forward Peering
-az network vnet peering create \
-    --name SalesVNet-To-MarketingVNet \
-    --remote-vnet MarketingVNet \
-    --resource-group $rgNameSales \
-    --vnet-name SalesVNet \
-    --allow-vnet-access
-# Reverse peering between the inital Vnet Peering
-az network vnet peering create \
-    --name MarketingVNet-To-SalesVNet \
-    --remote-vnet SalesVNet \
-    --resource-group $rgNameMarketing \
-    --vnet-name MarketingVNet \
-    --allow-vnet-access
-
-# Query Connection
-az network vnet peering list \
-    --resource-group $rgName \
-    --vnet-name $VnetName \
-    --query "[].{Name:name, Resource:resourceGroup, PeeringState:peeringState, AllowVnetAccess:allowVirtualNetworkAccess}"\
-    --output table
-
-# Check Effective Routes
-az network nic show-effective-route-table \
-    --resource-group $rgNameSales \
-    --name SalesVMVMNic \
-    --output table
-    
-# Ceck Effective Routes From the Reverse Peering
-az network nic show-effective-route-table \ 
---resource-group $rgNameMarketing \ 
---name MarketingVMVMNic \ 
---output table
-```
-
-#### VPN Gateways and Connecting On-Premises to Azure
-
-Organizations use a virtual private network (VPN) to create a private, encrypted connection for their resources and users to the internet using [[IPsec]] protocol. A VPN gateway is a specific type of virtual network gateway that's used to send encrypted traffic between your Azure virtual network and an on-premises location over the public internet or over the Azure backbone Microsoft network. Considerations:
-- Vnet can have one VPN gateway with multiple connects to it sharing the bandwidth
-
-Extending On-Premise to Azure with [[IPsec]] tunnels - see [planning table](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways#planningtable):
-- Point-To-Site VPN - connect specific device to a network.
-- Site-To-Site VPN - connect a network to virtual network 
-	- Good if ExpressRoute is too expensive
-	- S2S VPN gateways enable multiple VPN connects to different networks if route not policy based
-- Vnet-To-Vnet with IPSec/IKE VPN tunnel
-	- Cross-Region/Subscriptions/Deployment-model 
-- [Highly Available]((https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-highlyavailable) - better VM availbility due to redundancy
-	- Active-Active - both VMs are active
-	- Active-Standby - one is on standby in case of failover
-
-Peering
-- ExpressRoute Private Peering - Connects a network to a virtual network via ExpressRoute Gateway
-	- ExpressRoute circuits enable multiple virtual networks to be connected to a single circuit, but vnet to Vnet better via peering - Big Enterprises want this for it being a private connection, no hops else where connect to Microsoft Backbone Network - not Geopolitical Region locked at the Premium level.
-	- Can be encrypted, but is not by default - MaxSEC at the edge router provider 
-	- If Fast Path is Enabled it does not go via the Gateway, Gateway is required for routing information, also Fast Path does working for Peering.
-	- MPLS can be connect to backend at carrier neutral connect that can also connect ExpressRoute
-- Microsoft Peering - Can go by Private Endpoints as well as ExpressRoute
-	- Storage
-	- Database Accounts
-
-- Plan your [Azure VPN Gateway solution](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways#planningtable)
-- Peruse [Azure VPN Gateway documentation](https://learn.microsoft.com/en-us/azure/vpn-gateway/).
-- Discover [VPN Gateway configuration settings](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpn-gateway-settings).
-- Create and manage a [VPN gateway by using the Azure portal](https://learn.microsoft.com/en-us/azure/vpn-gateway/tutorial-create-gateway-portal).
-- Create a [Site-to-Site VPN connection in the Azure portal](https://learn.microsoft.com/en-us/azure/vpn-gateway/tutorial-site-to-site-portal). 
-- Explore [VPN Gateway design options: S2S, P2S, VNet-to-VNet, and high availability](https://learn.microsoft.com/en-us/azure/vpn-gateway/design).
-- Review [highly available cross-premises and VNet-to-VNet connectivity](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-highlyavailable).
-- Find [validated VPN devices and IPsec/IKE parameters for S2S VPN Gateway connections](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpn-devices)   
-
-VPN Gateway requires: - subnet, DNS server and VPN device 
-`Search -> Virtual Network Gateways -> + Create`
-Select:
-- VPN or ExpressRoute
-- Gateway type
-	- Route-based - uses routes in the IP forwarding or routing table to direct packets into their corresponding tunnel interfaces
-	- Policy-based - encrypts and directs packets through IPsec tunnels based on the IPsec policies - configured with the combinations of address prefixes between your on-premises network and the Azure virtual network
-- SKU, Generation (bytes per second), Names, RG, Vnet
-
-Local Network Gateways - to represent the on-premises site that you want to connect to a virtual network
-`Search -> Local Network Gateways -> + Create`
-- (Advanced) Border Gateway Protocol (BGP) - routability and reachable protocol -  requires - the minimum prefix you need to declare is the host address of your BGP Peer IP address on your VPN device.
-
-On-Premise VPN devices: shared key and public IP address of your VPN gateway
-- Configuration scripts are available for some devices - [Download VPN device configuration scripts for S2S VPN connections](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-download-vpndevicescript) to find a downloadable script for your VPN device.
-
 #### Controlling Traffic Flows
 
 Default traffic will flow freely. Azure requires segmentation and traffic controls within a virtual networks and/or external a number of approaches can be utilized.
@@ -601,80 +489,17 @@ az network vnet subnet list \
 
 #### Configuring Network Routing and Endpoints
 
-Azure uses *system routes* to control network traffic between virtual machines, on-premises networks, and the internet. Information about the system routes is recorded in a *route table*.
-- The route table contains a set of rules (routes) specifying packet routing in a Vnet  
-- Each packet leaving a subnet is handled by on associated route table
-- Packets are matched to routes by using the destination.
-- If matching route cannot be found it is dropped.
-
-Azure automatically handles all network traffic routing, except in a custom configurations called User-Defined-Routes (UDRs): 
--  The valid next hop choices are virtual appliance, virtual network gateway, virtual network, internet, and none.
--  Administrators can create user routes, but not system routes.
-
-Virtual Network (VNet) service endpoint provides secure and direct connectivity to Azure services over an optimized route over the Azure backbone network. Endpoints allow you to secure Azure service resources to only your virtual networks. Service Endpoints enables private IP addresses in the VNet to reach the endpoint of an Azure service without needing a public IP address on the VNet. Service endpoints for your service: 
-
-- **[Azure Storage](https://learn.microsoft.com/en-us/azure/storage/common/storage-network-security?toc=/azure/virtual-network/toc.json#grant-access-from-a-virtual-network)** (_Microsoft.Storage_): Generally available in all Azure regions.
-- **[Azure SQL Database](https://learn.microsoft.com/en-us/azure/azure-sql/database/vnet-service-endpoint-rule-overview?toc=%2fazure%2fvirtual-network%2ftoc.json)** (_Microsoft.Sql_): Generally available in all Azure regions.
-- **[Azure Synapse Analytics](https://learn.microsoft.com/en-us/azure/azure-sql/database/vnet-service-endpoint-rule-overview?toc=%2fazure%2fvirtual-network%2ftoc.json)** (_Microsoft.Sql_): Generally available in all Azure regions for dedicated SQL pools (formerly SQL DW).
-- **[Azure Database for PostgreSQL server](https://learn.microsoft.com/en-us/azure/postgresql/howto-manage-vnet-using-portal?toc=/azure/virtual-network/toc.json)** (_Microsoft.Sql_): Generally available in Azure regions where database service is available.
-- **[Azure Database for MySQL server](https://learn.microsoft.com/en-us/azure/mysql/howto-manage-vnet-using-portal?toc=/azure/virtual-network/toc.json)** (_Microsoft.Sql_): Generally available in Azure regions where database service is available.
-- **[Azure Database for MariaDB](https://learn.microsoft.com/en-us/azure/mariadb/concepts-data-access-security-vnet)** (_Microsoft.Sql_): Generally available in Azure regions where database service is available.
-- **[Azure Cosmos DB](https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-configure-vnet-service-endpoint?toc=/azure/virtual-network/toc.json)** (_Microsoft.AzureCosmosDB_): Generally available in all Azure regions.
-- **[Azure Key Vault](https://learn.microsoft.com/en-us/azure/key-vault/general/overview-vnet-service-endpoints)** (_Microsoft.KeyVault_): Generally available in all Azure regions.
-- **[Azure Service Bus](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-service-endpoints?toc=/azure/virtual-network/toc.json)** (_Microsoft.ServiceBus_): Generally available in all Azure regions.
-- **[Azure Event Hubs](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-service-endpoints?toc=/azure/virtual-network/toc.json)** (_Microsoft.EventHub_): Generally available in all Azure regions.
-- **[Azure Data Lake Store Gen 1](https://learn.microsoft.com/en-us/azure/data-lake-store/data-lake-store-network-security?toc=/azure/virtual-network/toc.json)** (_Microsoft.AzureActiveDirectory_): Generally available in all Azure regions where ADLS Gen1 is available.
-- **[Azure App Service](https://learn.microsoft.com/en-us/azure/app-service/app-service-ip-restrictions)** (_Microsoft.Web_): Generally available in all Azure regions where App service is available.
-- **[Azure Cognitive Services](https://learn.microsoft.com/en-us/azure/cognitive-services/cognitive-services-virtual-networks?tabs=portal)** (_Microsoft.CognitiveServices_): Generally available in all Azure regions where Cognitive services are available.
-
-A virtual network _service endpoint_ provides the identity of your virtual network to the Azure service. After service endpoints are enabled in your virtual network, you can secure Azure service resources to your virtual network by adding a _virtual network rule_ to the resources.
-- Secure with VNet Rules
-- Configured through the subnet
-- Can extend your Vnet identity to your Azure Services - Database for a website...
-
-Azure Private Link  provides private connectivity from a virtual network to Azure platform as a service (PaaS), customer-owned, or Microsoft partner services to simplify Network Architecture and secure connection between endpoints in Azure. 
-- No exposure to internet keeps all traffic on the Microsoft global network.
-- It can link anywhere
-	- Privately deliver your own services in your customer's virtual networks.
-	- Privately to services running in other Azure regions.
-	- All traffic to the service can be routed through the private endpoint. No gateways, NAT devices, Azure ExpressRoute or VPN connections, or public IP addresses are required.
-
-Implement Virtual Networking
-`Search -> Virtual Network -> $Vnet (With Subnet, VMs, DNS, NSGs, etc configured)` in the `Private DNS Zone -> Virtual Network Link -> + Add - provide a Link name, Vnet` 
-
+[[Azure-Administration-Network-Routes-And-Endpoints]]
 #### Azure DNS 
 
 [[Azure-Administration-Azure-DNS]]
 
-#### Azure Private Link
+#### Azure Private Link and Endpoints
 
-Azure Private Link is when a external facing Azure PaaS service is accessed from a resource in a VNet the traffic stays on the Azure network. APL enables PaaS Service is an avatar for that service instance and can project custom services that are behind a Load Balancer. Must have consistent DNS management!
-- Private Link Endpoint is the Network Interface  
-- Private Link service is the connection
-	- Requires Azure Standard Internal Load Balancer and associated to a Link service:
-		- Azure Sotrage
-		- CosmoDB
-		- SQL
-- Third-Party providers acan be powered by Private Link
+[[Azure-Administration-Private-Link-And-Endpoints]]
+#### Azure Virtual Network Peering
 
-The PaaS service still has a external facing endpoint that some companies do not want even with firewall/authentication - firewalls and authentication are bypassable. 
-
-Azure Firewall is managed, cloud-based network security service that protects your Azure VNets resources:
-- It is a fully stateful Firewall as a Service (FWaaS) with: built-in high availability and unrestricted cloud scalability
-- Uses a static public IP address for your VNet resources allowing outside firewalls to identify traffic originating from your virtual network
-- Fully integrated with Azure Monitor for logging and analytics
-- Azure Firewall on its own VNet
-- VNets pass through this Central Vnet
-- Comes with Microsoft Threat Intelligence
-	- Blocks know malicious IPs and FQDNs
-
-Azure ExpressRoutes create private connections between Azure datacenters and infrastructure on your premises or in a colocation envirnoment:
-- connectivity can be from an: Any-to-any (IP VPN) network, a point-to-point Ethernet network, virtual cross-connection
-- Through a connectivity provider at a colocation facililty 
-
-ExpressRoute Direct allows for greater bandwidth connection from 50 Mbs to 10Gbs
-
-
+[[Azure-Administration-Virtual-Networking-Peering]]
 #### Network Security Groups (NSG)
 
 [[Azure-Administration-Network-And-Application-Security-Groups]]
@@ -683,39 +508,17 @@ ExpressRoute Direct allows for greater bandwidth connection from 50 Mbs to 10Gbs
 
 [[Azure-Administration-Azure-Firewall]]
 
+
+#### Azure ExpressRoute
+
+Azure ExpressRoutes create private connections between Azure datacenters and infrastructure on your premises or in a colocation environment:
+- connectivity can be from an: Any-to-any (IP VPN) network, a point-to-point Ethernet network, virtual cross-connection
+- Through a connectivity provider at a colocation facililty 
+ExpressRoute Direct allows for greater bandwidth connection from 50 Mbs to 10Gbs
+
 #### Azure Virtual Network Peering
 
-[Azure Virtual Network peering](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-peering-overview) lets you connect Virtual Networks in the same or different regions, so resources in both networks can communicate with each other, but are still managed separately. Azure Virtual Network peering does not require downtime for resources, utilizes the Azure infrastructure simplifying and strengthening performance.  
-
-- Regional Virtual Network peering - Cloud, Public or Govenment Region 
-- Global Virtual Network peering
-
-You cannot:
-- Peering different Azure Government cloud 
-
-Configure a Azure VPN Gateway in a peered virtual network as a transit point between target Virtual Networks for peering.
-- VPN gateway in the hub, not in peer networks
-- Apply NSGs
-- One VPN gateway, but can be all the following 
-	- vnet-to-vnet
-	- site-to-site
-	- point-to-site
-
-Vnet Peering - requires account with `(Classic) Network Contributor` role
-`Search -> Virtual Networks -> $Vnet -> SEttings -> Peering -> Add(peering)` 
-- Create in hub, not peers; make NSG rules!
-- One Gateway to Transit them All - vnet-to-vnet, site-to-site and point-to-site
-- Vnets must have resources, the first must be made with [[Azure-Administration-Azure-Resource-Manager]], the second is referred to as the remote network
--  [Permissions](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-manage-peering?tabs=peering-portal#permissions)
-- Extending Peering 
-	- Hub and spoke network - Central hub for VPN gateway, spoke Vnets
-	- User-defined route (UDR): either a hop to/from VM IP address or VPN Gateway
-	- Service chaining: define UDRs from Vnet to a network virtual appliance or VPN
-
-RDP in and Test with:
-```powershell
-Test-NetConnection -ComputerName $ip -Port 3389 -InformationLevel 'Detailed'
-```
+[[Azure-Administration-Virtual-Networking-Peering]]
 
 #### Traffic Control with Routes In Azure Virtual Network
 
@@ -732,11 +535,12 @@ Some require multiple network interfaces. Customers often create network virtual
 Routing is controlled by System Routes - You can't create or delete system routes, but you can override the system routes by adding custom routes to control traffic flow to the next hop. Types:
 - System Default Routes 
 - Virtual network peering
-- Service chaining
+- Service chainingazvnetservicechainingandudrs.excalidraw
 - Virtual network gateway
 - Virtual network service endpoint
 
 Subnet default system routes
+
 Address prefix | Next hop type
 --- | ---
 Unique to the virtual network | Virtual network 
@@ -745,19 +549,19 @@ Unique to the virtual network | Virtual network
 172.16.0.0/12 | None
 192.168.0.0/16 | None
 100.64.0.0/10 | None
-Defaults can be overidden!
+Defaults can be overridden!
 
 Custom routes:
 - Create a user-defined route 
 	- Virtual appliance: Firewall, NIC of VM for IP forwarding or Private IP of a Load Balancer
 	- Virtual Network Gateway: VPN hops
-	- Virtual Network: Override System defaults withiin a Vnet
+	- Virtual Network: Override System defaults within a Vnet
 	- Internet
 	- None
 - Border Gateway Protocol (BGP) - Used to transfer data and information between different host gateways
-	- Typically use of a BGP is to advertise on-premises routes to Azure when you're connected to an Azure datacenter through Azure ExpressRoute
+	- Typically use of a BGP is to advertise on-premises routes to Azure when you're connected to an Azure data centre through Azure ExpressRoute
 
-Create a Route Table and a Custom Route - Prvate Subnets, IP forwarding
+Create a Route Table and a Custom Route - Private Subnets, IP forwarding
 ```powershell
 # Create a Route Table
 az network route-table create \

@@ -520,20 +520,19 @@ Azure Public DNS - [Host your domain in Azure DNS](https://learn.microsoft.com/e
 				- MultiValue
 				- Subnet
 
-Azure Private DNS Zone
+[Azure Prviate DNS Zones](https://learn.microsoft.com/en-us/azure/dns/private-dns-overview) requires:
+- Vnet (With Resource Manager deployment model) and Subnet,
+- Add Virtual Network Linking (add VNet to a Zone): `Resource groups -> $resourceGroup -> $domain -> select Virtual Network Links` - provide VNet, Sub and a `Link name`  
+- Create an additional DNS Record in the correct DNS Zone
 `Search -> Private DNS Zones -> Create`
 - Subscription, Resource Group and instance Name
 - Link VNet Name `$PrivateDNSZone -> Settings -> Virtual Network Links -> Add`
 	- Link Name
 	- `Tick - I know the resource ID of Virtual network`...if you do
 	- Subscription, Virtual Network
-	- Consider Auto Registration?
-		- [Auto registration feature manages DNS records for virtual machines deployed in a virtual network](https://learn.microsoft.com/en-us/azure/dns/private-dns-autoregistration)
-
-[Azure DNS for private domains](https://learn.microsoft.com/en-us/azure/dns/private-dns-overview) for Custom DNS requires:
-- Vnet (With Resource Manager deployment model) and Subnet,
-- Add Virtual Network Linking: `Resource groups -> $resourceGroup -> $domain -> select Virtual Network Links` - provide VNet, Sub and a `Link name`  
-- Create an additional DNS Record in the correct DNS Zone	
+	- Registration and Resolution
+		- If it is not registered it wont resolve
+			- Consider the [Auto registration feature manages DNS records for virtual machines deployed in a virtual network](https://learn.microsoft.com/en-us/azure/dns/private-dns-autoregistration)
 
 [Azure DNS Private Resolver](https://learn.microsoft.com/en-us/azure/dns/dns-private-resolver-overview) (enables you to query Azure DNS private zones from an on-premises environment and vice versa without deploying VM based DNS servers) - required RG and VNet - no VM based DNS servers
 - Sub, RG, Name, Region and VNet
