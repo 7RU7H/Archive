@@ -220,7 +220,7 @@ Export | Azure Blob Storage | Block blobs, Page blobs, and Append blobs supporte
 
 ## Azure Files
 
-[[Azure-Administration-Files]]
+[[Azure-Administration-Files-And-File-Sync]]
 
 ## Azure Storage Tooling
 

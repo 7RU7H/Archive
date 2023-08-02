@@ -9,7 +9,7 @@ For Windows, Sysinternals is the suite of tools gain a deep insight on what is g
 
 ## Endpoint Logging and Monitoring
 
-Windows [[Event-Tracing-for-Windows]] creates raw data can be translated into XML using the Windows API to store data in log files with .evt or .evtx extension. These can be viewed with:
+Windows [[ETW]] creates raw data can be translated into XML using the Windows API to store data in log files with .evt or .evtx extension. These can be viewed with:
 - [[Event-Viewer]] 
 - [[Sysinterals-Sysmon]] 
 - [[Osquery]]
@@ -24,7 +24,7 @@ Typically logs.etv(x) are stored:
 - `C:\Windows\System32\winevt\Logs`
 
 Articles locally:
-- [[Windows-Event-Logs]]
+- [[Windows-Logging]]
 - [[Windows-Events-To-Monitor]]
 - [[PowerShell-Event-Logging.md]]
 - Beware more sophisticated attackers will try [[Logging-And-Monitoring-Evasion]] techniques.

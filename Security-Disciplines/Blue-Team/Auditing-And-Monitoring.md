@@ -70,6 +70,16 @@ Audit Areas:
 - Business Continuity Planning
 - Disaster Recovery Planning
 
+## Log Management
+
+- Log to a central location
+- Use a tool to filter and parse the logs
+- Setup alerts
+
+[[Linux-Logging]]
+[[Windows-Logging]]
+
+
 ## References
 
 [THM Auditing and Monitoring Room](https://tryhackme.com/room/auditingandmonitoringse)

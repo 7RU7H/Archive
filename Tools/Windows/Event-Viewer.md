@@ -1,6 +1,6 @@
 # Event Viewer
 
-Event Viewer uses [[Event-Tracing-for-Windows]]
+Event Viewer uses [[ETW]]
 
 Alternatives to Event Viewer being either Wevtutil.exe or [[PowerShell-Event-Logging.md]]
 
@@ -16,7 +16,7 @@ Microsoft/Windows/
 
 Logs file with the extension `.evtx` typically located in `C:\Windows\System32\winevt\Logs` directory. 
 
-Can view `.etl` event trace log files from [[Event-Tracing-for-Windows]]
+Can view `.etl` event trace log files from [[ETW]]
 
 [Event Types](https://learn.microsoft.com/en-us/windows/win32/eventlog/event-types)
 ![](eventviewereventtypes.png)

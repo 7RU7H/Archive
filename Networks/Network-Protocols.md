@@ -192,7 +192,7 @@ LDAP connection to Global Catalog over SSL is port 3269
 Widely using for file transfer in Windows AD and Azure Networking for File Shares and Azure Files 
 See 13(5,7-9) for legacy SMB 139 is the equivilent service port to 445. 
 - [[SMB-Recon-Cheatsheet]]
-- [[Azure-Administration-Files]]
+- [[Azure-Administration-Files-And-File-Sync]]
 
 ## 465 - SMTPS
 

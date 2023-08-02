@@ -1,14 +1,16 @@
 #  Azure Administration - Files (File Shares)
 
-File share in cloud, a centralized server for storage allowing for multiple connections (mounting) with either SMB or NFS. Azure Files uses:
+[Azure Files](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-introduction) offers shared storage for applications by using the industry standard [Server Message Block protocol](https://msdn.microsoft.com/library/windows/desktop/aa365233.aspx). SMB File share in cloud, a centralised storage allowing for multiple connections (mounting) with either SMB or NFS. 
+
+Azure Files uses:
 - Replacement or supplement for Network Attach Storage NAS
-- Lift-and-Shift - Classic or Hybird Lifes
+- Lift-and-Shift - Classic or Hybrid 
 - Simplify cloud development
 	- Shared application settings
 	- Diagnostic share - logs to file share
 	- Dev/Test/Debug - Quick sharing of tooling
-- Containerization - to persist stateful containers
-- Diagnostic logs, metrics, and crash dumps can be written to a file share and processed or analyzed later.
+- Containerisation - to persist stateful containers
+- Diagnostic logs, metrics, and crash dumps can be written to a file share and processed or analysed later.
 - Configuration files can be stored on a file share and accessed from multiple virtual machines.
 
 Azure files instead of File Shares server
@@ -33,9 +35,9 @@ Azure Files Features:
 	- Very powerful software
 - Store Tiers
 	- Premium - SSD storage
-	- Transaction optimized - HDD with transaction heavy workloads - historically called standard
-	- Hot - optimized for general purpose file sharing 
-	- Cool - stored in HDD for cost effienct storage- optimized for archiving scenarios
+	- Transaction optimised - HDD with transaction heavy workloads - historically called standard
+	- Hot - optimised for general purpose file sharing 
+	- Cool - stored in HDD for cost efficient storage- optimised for archiving scenarios
 
 Types of Storage
 - General Purpose version 2 - deployed on HDD
@@ -51,19 +53,19 @@ Networking
 - SMB - 445 
 
  Encryption
- - Encrypted-at-rest using Azure Storage Service Encryptions
+ - Encrypted-at-rest using Azure Storage Service Encryption
  - Encrypted-in-transit with SMB 3.0+ or HTTPS
 
 #### Azure File Sync
 
-Azure File Sync enables caching of Azure File Share on an on-premise or cloud VM, no limit to amount of cacheing with SMB, NFS and FTPS. Use to centralize your organization's file shares in Azure Files.
+Azure File Sync enables caching of Azure File Share on an on-premise or cloud VM, no limit to amount of caching with SMB, NFS and FTPS. Use to centralise your organisation's file shares in Azure Files.
 
 - Only for:
 	- Standard file shares (GPv2), LRS/ZRS
 	- Standard file shares (GPv2), GRS/GZRS
 	- Premium file shares (FileStorage), LRS/ZRS
 
-Cloud tiering is an optional feature of Azure File Sync. Frequently accessed files are cached locally on the server while all other files are tiered to Azure Files based on policy settings.
+Cloud teiring is an optional feature of Azure File Sync. Frequently accessed files are cached locally on the server while all other files are tiered to Azure Files based on policy settings.
 
 ![](azurefilesynccomponents.png)
 Components of Azure File Sync:

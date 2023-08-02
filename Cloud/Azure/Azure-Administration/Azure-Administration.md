@@ -27,7 +27,7 @@ This a hub page group links to all relevant articles under a Azure Administratio
 [[Azure-Administration-Subscriptions]]
 [[Azure-Administration-Configure-Virtual-Networks]]
 [[Azure-Administration-Subscriptions]]
-[[Azure-Administration-Files]]
+[[Azure-Administration-Files-And-File-Sync]]
 [[Azure-Administration-Disaster-Recovery]]
 [[Azure-Administration-Replication]]
 [[Azure-Administration-Log-Analytics]]

@@ -1,4 +1,4 @@
-# Windows Events ToMonitor
+# Windows Events To Monitor
 
 Using [[Sysmon-Events]] and [[Sysinterals-Sysmon]].
 
@@ -8,7 +8,7 @@ The following table lists events that you should monitor in your environment, ac
 
 The "Legacy Windows Event ID" column lists the corresponding event ID in legacy versions of Windows such as client computers running Windows XP or earlier and servers running Windows Server 2003 or earlier. The "Potential Criticality" column identifies where the the event should be considered of low, medium, or high criticality in detecting attacks, and the "Event Summary" column provides a brief description of the event.
 
-A potential criticality of High means that one occurrence of the event should be investigated. Potential criticality of Medium or Low means that these events should only be investigated if they occur unexpectedly or in numbers that significantly exceed the expected baseline in a measured period of time. All organizations should test these recommendations in their environments before creating alerts that require mandatory investigative responses. Every environment is different, and some of the events ranked with a potential criticality of High may occur due to other harmless events.
+A potential criticality of High means that one occurrence of the event should be investigated. Potential criticality of Medium or Low means that these events should only be investigated if they occur unexpectedly or in numbers that significantly exceed the expected baseline in a measured period of time. All organisations should test these recommendations in their environments before creating alerts that require mandatory investigative responses. Every environment is different, and some of the events ranked with a potential criticality of High may occur due to other harmless events.
 
 Current Windows Event ID | 	Legacy Windows Event ID | 	Potential Criticality| 	Event Summary
 --- | --- | --- | --- 
