@@ -1,8 +1,27 @@
-# Azure Administration - Blobs
+# Azure Administration - Blob-Storage
 
-Blob storage is an object-store that is optimized for storing massive amounts of unstructured data (does not adhere to particular data model or definition). Azure Blob Storage uses a container resource to group a set of blobs. A blob can't exist by itself in Blob Storage. A blob must be stored in a container resource, which can store an unlimited number of blobs. Azure storage account can contain an unlimited number of containers.
+Blob storage is an object-store that is optimised for storing massive amounts of unstructured data (does not adhere to particular data model or definition). Azure Blob Storage uses a container resource to group a set of blobs. A blob can't exist by itself in Blob Storage. A blob must be stored in a container resource, which can store an unlimited number of blobs. Azure storage account can contain an unlimited number of containers.
 
-Storage Account (a unique namespace in Azure for your data) -> Containers (similar to folder in a file system) -> Blobs ( the actual data being stored).
+Important:
+- All blobs must be in a container.
+- A container can store an unlimited number of blobs.
+- An Azure storage account can contain an unlimited number of containers.
+- You can create the container in the Azure portal.
+- You upload blobs into a container.
+
+`Storage Account (a unique namespace in Azure for your data) -> Containers (similar to folder in a file system) -> Blobs ( the actual data being stored).`
+
+- Blob Storage can store any type of text or binary data. Some examples are text documents, images, video files, and application installers.
+- Blob Storage uses three resources to store and manage your data:
+    - An Azure storage account
+    - Containers in an Azure storage account
+    - Blobs in a container
+- To implement Blob Storage, you configure several settings:
+    - Blob container options
+    - Blob types and upload options
+    - Blob Storage access tiers
+    - Blob lifecycle rules
+    - Blob object replication options
 
 Types:
 - Block Blobs
@@ -10,7 +29,7 @@ Types:
 	- Individual managed 
 	- up 4.75 TiB of Data
 - Append Blobs
-	- Optimized for append operations - Good for Logging Data
+	- Optimised for append operations - Good for Logging Data
 - Page Blobs
 	- Stores random access files up to 8 TB
 	- Store Virtual Hard Drive files and serve as disks for Azure VMs
@@ -18,6 +37,7 @@ Types:
 ![1000](azureblobuploadtools.png)
 
 Moving Blobs:
+
 Method | Description
 --- | ---
 AzCopy | CLI for Linux and Windows - uses ASDML
@@ -101,6 +121,13 @@ Move Data to, from, or within Azure Storage
 Monitor Storage Accounts
 `Storage Accounts -> $storage_account -> Insights`
 
+Configure a Container (in Blob Storage)
+- Provide: Name 
+- Set Public Access Level:
+	- **Private**: (Default) Prohibit anonymous access to the container and blobs.
+	- **Blob**: Allow anonymous public read access for the blobs only.
+	- **Container**: Allow anonymous public read and list access to the entire container, including the blob
+
 [AZCopy]((https://learn.microsoft.com/en-us/azure/storage/common/storage-ref-azcopy) - CLI - downloadable executable copy blobs or files to or from a storage accounts; [AzCopy](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-files) is installed by default on the CloudShell
 ```powershell
 # create URI to login
@@ -122,9 +149,6 @@ azcopy copy [source] [destination] --exclude
 # Useful in Temporary File deletion and Syncing between Shares
 azcopy sync $localpath $remotepath --delete-desitnation true
 ```
-
-
-
 
 ## References
 

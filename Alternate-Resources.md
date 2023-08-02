@@ -20,10 +20,14 @@ The Awesome HackTricks - probably the best resource on Ethical Hacking and Pente
 A good SysAdmin, DevOps, Cloud Engineer Cheatsheets
 [lzone.de Cheatsheets](https://lzone.de/cheat-sheet.html)
 
+#### Microsoft.Learn
 
+[Training | Microsoft Learn](https://learn.microsoft.com/en-us/training/) and [Technical documentation | Microsoft Learn](https://learn.microsoft.com/en-us/docs/) are well written training and documentation of all Microsoft Products - excellent for all colour teams. 
 ## References
 
 [HackTricks](https://book.hacktricks.xyz/welcome/readme)
 [lzone.de Cheatsheets](https://lzone.de/cheat-sheet.html)
 [IppSec - YouTube](https://www.youtube.com/@ippsec)
 [IppSec - Search](https://ippsec.rocks/)
+[Training | Microsoft Learn](https://learn.microsoft.com/en-us/training/)
+[Technical documentation | Microsoft Learn](https://learn.microsoft.com/en-us/docs/) 
