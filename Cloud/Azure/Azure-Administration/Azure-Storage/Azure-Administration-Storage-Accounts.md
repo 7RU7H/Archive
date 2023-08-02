@@ -267,7 +267,6 @@ For export jobs
 
 #### AzCopy 
 
-
 [AZCopy]((https://learn.microsoft.com/en-us/azure/storage/common/storage-ref-azcopy) - CLI - downloadable executable copy blobs or files to or from a storage accounts; [AzCopy](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-files) is installed by default on the CloudShell
 ```powershell
 # create URI to login
@@ -332,129 +331,7 @@ Remove-AzStorageTable –Name $tableName –Context $ctx
 
 ## Azure Storage Security
 
-- Encryption 
-	- Secure data in transit
-	- Secure data at rest - decrypted on retrieva
-- Shared access signatures
-- Authorized & Authentication
-
-Configure Azure Storage Encryption:
-`Storage accounts -> $storage_accounts -> Encryption`
-
-Customer Managed Keys for greater control:
-- Create, disable, audit, rotate and define access controls. Choose:
-	- Encryption Type
-	- Encryption Key
-
-Consideration regarding Storage Security
-![1000](azurestorageauthorizationstrategies.png)
-
-Microsoft's Recommendations:
-- Always use HTTPS
-- Reference stored access policies
-- Set near-term expiry for unplanned SAS
-- Require client renew SAS
-- Set SAS start time to avoid clock skew -  set: -15 minutes ago 
-- Define *minimum* and limit access permissions for resource
-	- Consider costs of over provisioning
-- Do not assume a SAS is always correct choice
-- Monitor applications
-#### Shared Access Signatures
-
-Create a SAS
-`Storage Accounts -> $storage_account -> search SAS`
-
-A shared access signature (SAS) is URI that grants restricted temporary access to Azure Storage resources
-- Account-level SAS - access to one or more storage services 
-- Service-level SAS - access to single storage services with storage account key
-- User delegation SAS 
-	- Azure AD credentials for access to storage account
-	- Limited to only Blobs and Containers
-	- Best practice methods
-- Ad hoc 
-	- Start, expiry times plus permission are part of the URI
-	- Any SAS type 
-- Service SAS with stored access policy
-	- Stored access policy is defined on a resource container
-	- Stored access policy can be associated to multiple SAS to managed constraints
-- IP addresses
-- Protocols
-
-URI Format with parametres explained
-```powershell
-https://myaccount.blob.core.windows.net/$containerName/file.txt
-?sv= # Storage services version
-&ss # Storage service
-&sip # IP range
-&spr # Protocol
-&st # Start Time
-&se # Expiration Time
-&sr # Storage Resource - b for blob, q for queue 
-&sp # permissions  r, wr
-&sig # SHA256 hash - the signature
-```
-
-Create SAS In  .NET
-
-Create a blob container to connect to the storage account on Azure
-```C#
-BlobContainerClient container = new BlobContainerClient( "ConnectionString", "Container" );
-```
-
-Retrieve the blob you want to create a SAS token for and create a BlobClient
-```C#
-foreach (BlobItem blobItem in container.GetBlobs())
-{
-    BlobClient blob = container.GetBlobClient(blobItem.Name);
-}
-```
-
-Create a BlobSasBuilder object for the blob you use to generate the SAS token
-```C#
-BlobSasBuilder sas = new BlobSasBuilder
-{
-    BlobContainerName = blob.BlobContainerName,
-    BlobName = blob.Name,
-    Resource = "b",
-    ExpiresOn = DateTimeOffset.UtcNow.AddMinutes(1)
-};
-
-// Allow read access
-sas.SetPermissions(BlobSasPermissions.Read);
-```
-
-Authenticate a call to the ToSasQueryParameters method of the BlobSasBuilder object
-```C#
-StorageSharedKeyCredential storageSharedKeyCredential = new StorageSharedKeyCredential( "AccountName", "AccountKey");
-
-sasToken = sas.ToSasQueryParameters(storageSharedKeyCredential).ToString();
-```
-
-Create a SAS for a Blob
-```C#
-// Build a SAS token for the given blob
-private string GetBlobSas(BlobClient blob)
-{
-    // Create a user SAS that only allows reading for a minute
-    BlobSasBuilder sas = new BlobSasBuilder 
-    {
-        BlobContainerName = blob.BlobContainerName,
-        BlobName = blob.Name,
-        Resource = "b",
-        ExpiresOn = DateTimeOffset.UtcNow.AddMinutes(1)
-    };
-    // Allow read access
-    sas.SetPermissions(BlobSasPermissions.Read);
-
-    // Use the shared key to access the blob
-    var storageSharedKeyCredential = new StorageSharedKeyCredential(
-        _iconfiguration.GetValue<string>("StorageAccount:AccountName"),
-        _iconfiguration.GetValue<string>("StorageAccount:AccountKey")
-    );
-
-    return '?' + sas.ToSasQueryParameters(storageSharedKeyCredential).ToString();
-}
-```
+[[Azure-Administration-Storage-Security-Strategies]]
 
 #### Stored Access Policies
 

@@ -795,7 +795,6 @@ Provide configurations for Basic, Disks, Networking (**BEWARE** Azure creates de
 Connect to a VM via RDP
 `Search All Resources -> $name -> Connect -> select RDP`
 
-
 #### Availability Sets
 
 Availability Set Group of related identical virtual machines are (un)deployed together. An Availability set is
@@ -910,7 +909,6 @@ Custom Script Extension (automatically launch and execute virtual machine custom
 Export Template, custom template for mass use
 `VMs -> $CustomVM -> Export Template`
 
-
 ## Storage Accounts
 
 Create in Azure Software Development Kit SDK or Portal `Storage Account -> Share Access signature`.
@@ -948,7 +946,7 @@ With Linux file share mounting can be done on-demand with the `mount` command 
 `Azure File Sync -> Create` - Marketplace - not default, but covered in AZ 104
 1. Deploy the Storage Sync Service
 2. Prepare Windows Server(s)
-	1. Install Azure File Sync agent
+	1. Install Azur1e File Sync agent
 	2. Register servers with Storage Sync Service
 3. Resource Group for deployment
 4. Deployment location
@@ -958,7 +956,7 @@ Azure File Sync agent:
 Microsoft.StorageSync
 ```
 
-- Beware Legacy and older generation require Powershell at 5.1
+- Beware Legacy and older generation require PowerShell at 5.1
 - And may require disabling of Internet Explorer Enhanced Security for Admins and Users - **ONLY** for initial server registration! - RESET!
 	- FileSyncSvc.exe - service; StoragSync.sys - system filter; PowerShell cmdlets:
 ```powershell
@@ -1051,7 +1049,6 @@ Import | Azure Blob Storage  |  Block blobs and Page blobs supported | -
 Export | Azure Blob Storage | Block blobs, Page blobs, and Append blobs supported | Azure Files not supported  
 .. | .. | .. | Export from Archive tier not supported
 
-
 Shipping with physical disk drives large amounts of data to a Azure Blob and Azure Files to a Azure data center with CLI tool for preparation - `WAImportExport` - Window 64 bit only
 - Export only from Azure Blob
 - Up to 10 empty drives per job
@@ -1070,12 +1067,12 @@ Import/Export Jobs - physical disk to data centre
 	3. If specify encryption state either `Encrypt` to enable Bitlocker or `AlreadyEncrypted` and supply Bitlocker key 
 2. Create Import Job
 	 - `Search -> Azure Data Box` - prep transfer
-		1.  Select the **Import to Azure** transfer type.
-		2.  Select the subscription to use for the Import/Export job.
-		3.  Select a resource group.
-		4.  Select the **Source country/region** for the job.
-		5.  Select the **Destination Azure region** for the job.
-		6.  Then select **Apply**.
+		1. Select the **Import to Azure** transfer type.
+		2. Select the subscription to use for the Import/Export job.
+		3. Select a resource group.
+		4. Select the **Source country/region** for the job.
+		5. Select the **Destination Azure region** for the job.
+		6. Then select **Apply**.
 	- Create Job 
 3. Ship Data Box
 4. Update job with tracking information
@@ -1125,26 +1122,27 @@ Create Container for Blob Storage
 
 See Tiering for Hot, Cold, Archive and Premium Storage
 
-Use Azure Blob Storage lifecycle management policy rules to:
+Use Azure Blob Storage Lifecycle management policy rules to:
 `Storage Account -> $storage_account -> Lifecycle Management`
 - Rule-based run scheduling
 - Rule-based condition to containers or a subset of blobs
 - Delete blobs 
 - Transition Storage tier 
 
-Object replication copies blobs in a container asynchronously according to policy rules that you configure. During the replication process, the following contents are copied from the source container to the destination container:
-- The blob contents
-- The blob metadata and properties
-- Any versions of data associated with the blob
-Requires:
-- Versioning enabled
-- Does not support snapshots
-- Replication Policy
-Considerations:
-- Latency reductions
-- Efficiency for compute workloads
-- Data distribution
-- Costs benefit
+Object replication copies blobs in a container asynchronously according to policy rules that you configure. 
+- During the replication process, the following contents are copied from the source container to the destination container:
+	- The blob contents
+	- The blob metadata and properties
+	- Any versions of data associated with the blob
+- Requires:
+	- Versioning enabled
+	- Does not support snapshots
+	- Replication Policy
+- Considerations:
+	- Latency reductions
+	- Efficiency for compute workloads
+	- Data distribution
+	- Costs benefit
 
 Create a storage account:
 `Storage Accounts`
@@ -1162,9 +1160,6 @@ Monitor Storage Accounts
 |**AzCopy**|An easy-to-use command-line tool for Windows and Linux. You can copy data to and from Blob Storage, across containers, and across storage accounts.|
 |**Azure Data Box Disk**|A service for transferring on-premises data to Blob Storage when large datasets or network constraints make uploading data over the wire unrealistic. You can use Azure Data Box Disk to request solid-state disks (SSDs) from Microsoft. You can copy your data to those disks and ship them back to Microsoft to be uploaded into Blob Storage.|
 |**Azure Import/Export**|A service that helps you export large amounts of data from your storage account to hard drives that you provide and that Microsoft then ships back to you with your data.|
-
-
-
 
 
 ## Azure App Services
@@ -1201,10 +1196,13 @@ Deployment
 	- FTP/S - please use encrypted FTP or you will be in a lot of trouble.
 - Use Deployment slot
 	- Swapping between staging and production environments 
-	- Development slots are live apps with their own hostnames - ``
-Networking - Public access and network injection toggles
-Monitoring - Insights
-Tags - TAGS TAGS TAGS!
+	- Development slots are live apps with their own Hostnames - ``
+Networking:
+- Public access and network injection toggles
+Monitoring:
+- Insights
+Tags:
+- TAGS TAGS TAGS!
 `App services` authorisation behaviours:
 - Allow unauthenticated requests
 - Require authentication
@@ -1249,11 +1247,12 @@ Deployment Swaps - swap between slots
 	- Continuous deployment
 	- App Services authentication 
 2. If local cache is enabled 
-	- trigger local cache initialisation - HTTP request to root `/` on each app 
+	- Trigger local cache initialisation - HTTP request to root `/` on each app 
 3. If Auto swap is enabled with custom warm-up trigger `applicationInitialization` (if not specified)
 4. All warmed up? - Swap slots by switching the routing rules for the two slots
-5. Source slot has pre-swap app previously in the target slot, perform the same operation by applying all settings and restarting the instances. No need to to re-route, it is stored
-- BEWARE - Slot != App; Slot is more like a host:
+5. Source slot has Pre-swap app previously in the target slot, perform the same operation by applying all settings and restarting the instances. No need to to re-route, it is stored
+- BEWARE
+	- Slot != App; Slot is more like a host:
 ![](azslotswappedsettingsvsslotspecificsettings.png)
 
 Configure Application

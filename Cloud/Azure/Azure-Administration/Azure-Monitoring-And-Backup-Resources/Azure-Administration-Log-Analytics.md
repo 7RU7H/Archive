@@ -5,11 +5,14 @@ Log Analytics an Azure Portal Tool to **edit and run log queries** with data in 
 ![](azuremonitorcollectionforlogs.png)
 
 **Application data**: Data that relates to your custom application code.
-- **Operating system data**: Data from the Windows or Linux virtual machines that host your application.
-- **Azure resource data**: Data that relates to the operations of an Azure resource, such as a web app or a load balancer.
-- **Azure subscription data**: Data that relates to your subscription. It includes data about Azure health and availability.
-- **Azure tenant data**: Data about your Azure organization-level services, such as Azure Active Directory.
-
+- **Operating system data**: 
+	- Data from the Windows or Linux virtual machines that host your application.
+- **Azure resource data**: 
+	- Data that relates to the operations of an Azure resource, such as a web app or a load balancer.
+- **Azure subscription data**: 
+	- Data that relates to your subscription. It includes data about Azure health and availability.
+- **Azure tenant data**: 
+	- Data about your Azure organisation-level services, such as Azure Active Directory.
 
 Log Analytics workspace is a unique environment for Azure monitor Log Data; each has its own data repository and configuration, data sources and solutions are configured to store their data in a workspace.
 
@@ -100,7 +103,6 @@ Azure Monitor data tiers:
 Tiering of Log data mapping:
 ![](azurelogeventtiering.png)
 
-
 #### KGL Log queries 
 - Schema 
 - Filter
@@ -152,7 +154,6 @@ InsightsMetrics
 summarize avg(Val) by bin(TimeGenerated, 5m), Computer
 render timechart
 ```
-
 
 ## References
 

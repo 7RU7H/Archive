@@ -1,6 +1,5 @@
 # Azure-Administration Disaster Recovery
 
-
 #### Failover and Reprotection
 
 Failover to secondary region and Re-Protect (replicate back) to primary region 
@@ -31,5 +30,5 @@ Failover back to primary region
 
 ## References
 
-[learn.microsoft - Fail over Azure VMs to a secondary region ](https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-tutorial-failover-failback)
-[learn.microsoft - Fail back Azure VM to the primary region](https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-tutorial-failback)
+[Learn.Microsoft - Fail over Azure VMs to a secondary region ](https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-tutorial-failover-failback)
+[Learn.Microsoft - Fail back Azure VM to the primary region](https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-tutorial-failback)

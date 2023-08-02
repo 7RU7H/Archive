@@ -37,6 +37,7 @@ This a hub page group links to all relevant articles under a Azure Administratio
 [[Azure-Administration-Virtual-Networking-Peering]]
 [[Azure-Administration-Network-Routes-And-Endpoints]]
 [[Azure-Administrator-Load-Balancer]]
+[[Azure-Administration-Storage-Security-Strategies]]
 
 For the Cheatsheet: [[Azure-Administration-Cheatsheet]]
 
