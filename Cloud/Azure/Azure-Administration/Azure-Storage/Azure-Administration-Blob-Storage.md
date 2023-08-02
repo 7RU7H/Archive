@@ -47,6 +47,33 @@ Blobfuse | Virtual file system driver - access through Linux file system
 Azure Data Box | Rugged device to physically transport data to Azure
 Azure Import/Export service | Service to ship physical disks for data transfer no Azure
 
+#### Lifecycle management policy rules
+
+- `If` clause  sets the evaluation clause for the policy rule.
+	- `If Last modified >= 10 days ago`  
+- `Then` clause sets the action clause for the policy rule.
+	- `Then...`
+		- Delete blob
+		- Move to archive storage
+		- Move to cold storage
+
+#### Blob object replication
+
+Requires:
+- Version enabled for Hot or Cool tier
+- Object replication doesn't support blob snapshots
+- Hot or Cool tier for replication for Hot or Cool tier
+- When you configure object replication, you create a replication policy
+- A replication policy includes one or more rules that specify a source container and a destination container
+
+- Consider:
+	- Latency by client's closest region 
+	- More efficient for compute workloads
+	- Data distribution 
+	- Costs benefits of Lifecycle management
+
+#### Workflows
+
 [Managing Lifecycle](https://learn.microsoft.com/en-us/azure/storage/blobs/lifecycle-management-policy-configure?tabs=azure-portal) can be rule base to change to a different storage tier 
 ```json
 {
@@ -120,6 +147,13 @@ Move Data to, from, or within Azure Storage
 `Storage Accounts -> $storage_account -> Diagnose and solve problems`
 Monitor Storage Accounts
 `Storage Accounts -> $storage_account -> Insights`
+
+|Upload tool|Description|
+|---|---|
+|**AzCopy**|An easy-to-use command-line tool for Windows and Linux. You can copy data to and from Blob Storage, across containers, and across storage accounts.|
+|**Azure Data Box Disk**|A service for transferring on-premises data to Blob Storage when large datasets or network constraints make uploading data over the wire unrealistic. You can use Azure Data Box Disk to request solid-state disks (SSDs) from Microsoft. You can copy your data to those disks and ship them back to Microsoft to be uploaded into Blob Storage.|
+|**Azure Import/Export**|A service that helps you export large amounts of data from your storage account to hard drives that you provide and that Microsoft then ships back to you with your data.|
+
 
 Configure a Container (in Blob Storage)
 - Provide: Name 

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Storage/Azure-Administration-Blob-Storage.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Storage/Azure-Administration-Blob-Storage.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,9 +115,9 @@
   },
   "active": "f3a6164dc76f8bec",
   "lastOpenFiles": [
-    "Cloud/Azure/Azure-Administration/Azure-Storage/Azure-Administration-Storage-Accounts.md",
     "Cloud/Azure/Azure-Administration/Azure-Storage/Azure-Administration-Blob-Storage.md",
     "Cloud/Azure/Azure-Administration/Azure-Storage/Azure-Administration-Replication.md",
+    "Cloud/Azure/Azure-Administration/Azure-Storage/Azure-Administration-Storage-Accounts.md",
     "README.md",
     "Alternate-Resources.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration.md",

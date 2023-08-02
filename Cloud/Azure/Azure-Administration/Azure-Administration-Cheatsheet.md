@@ -938,7 +938,7 @@ Create a Azure Files Share
 Accessing a Azure a File Share - Mount with File explorer!
 UNC pathing:  `\\$StorageAccount.file.core.windows.net\$FileShare` 
 
-With Linux file share mounting can be done on-demand with the `mount` command or on-boot (persistent) by creating an entry in /etc/fstab.
+With Linux file share mounting can be done on-demand with the `mount` command or on-boot (persistent) by creating an entry in `/etc/fstab`.
 
 [Deploy File Sync](https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-deployment-guide) 
 - Only for:
@@ -1036,7 +1036,7 @@ Storage access
 
 Configure Custom Domains - Either:
 - Direct mapping - create a `CNAME` record
-- Intermediary domain mapping (when domain is already in use) - prepend `asverify` to subdomain it permit Azure to recognize your custom domain thereby using a intermediary domain to validate the domain.
+- Intermediary domain mapping (when domain is already in use) - prepend `asverify` to subdomain it permit Azure to recognise your custom domain thereby using a intermediary domain to validate the domain.
 
 Secure Storage endpoints
 `Storage Accounts -> $storage_account -> Networking Firewalls and virtual networks`; restrict access:
@@ -1052,11 +1052,11 @@ Export | Azure Blob Storage | Block blobs, Page blobs, and Append blobs supporte
 .. | .. | .. | Export from Archive tier not supported
 
 
-Shipping with physical disk drives large amounts of data to a Azure Blob and Azure Files to a Azure datacenter with CLI tool for preparation - `WAImportExport` - Window 64 bit only
+Shipping with physical disk drives large amounts of data to a Azure Blob and Azure Files to a Azure data center with CLI tool for preparation - `WAImportExport` - Window 64 bit only
 - Export only from Azure Blob
 - Up to 10 empty drives per job
 
-Import/Export Jobs - physical disk to data center
+Import/Export Jobs - physical disk to data centre
 1. Identity data
 2. Calculate transportation disk requirement
 3. `Azure Export Jobs` or install and run `WAImportExport` to copy data to disk
@@ -1096,7 +1096,7 @@ WAImportExport.exe PrepImport /j:<JournalFile> /id:<SessionId> /AdditionalDriveS
 ```powershell
 ./WAImportExport.exe PrepImport /j:<journal file name> /id:session<session number> /t:<Drive letter> /bk:<BitLocker key> /srcdir:<Drive letter>:\ /dstdir:<Container name>/ /blobtype:<BlockBlob or PageBlob> /skipwrite
 ```
-6. Get bitlocker key of drive `manage-bde -protectors -get <DriveLetter>:`
+6. Get Bitlocker key of drive `manage-bde -protectors -get <DriveLetter>:`
 7. Prep Disk
 - Create Job - will check if it passes validation
 - (Optional) Configure customer managed key - for customers using Microsoft manage key 
@@ -1105,13 +1105,66 @@ WAImportExport.exe PrepImport /j:<JournalFile> /id:<SessionId> /AdditionalDriveS
 - Verify Data upload to Azure
 
 `StorageExplorer.exe` - manage the data stored in multiple Azure storage accounts and across Azure subscriptions.
-- Signin through `StorageExplorer.exe` with an Azure Account
+- Sign-in through `StorageExplorer.exe` with an Azure Account
 	- Add a resource via Azure AD, choosing the Azure tenant and the associated account
 - Or SAS
 	- Then find connection node: `Local & attached > Storage Accounts > Attached Container > Service`
 - Or with Storage account name and key
 - For Data Lake Storage Gen1:
 	-  URI associated with the data lake
+
+List or Add rules for Lifecycle Policy management 
+`Search Storage Account -> $storageAccount -> Data Management -> Lifecycle Management -> List View | Add rules`
+
+Create Container for Blob Storage
+`Azure Storage accounts -> + Container -> Name and Change "Public Access Level"`:
+**Public access level**: The access level specifies whether the container and its blobs can be accessed publicly. By default, container data is private and visible only to the account owner. There are three access level choices:
+- **Private**: (Default) Prohibit anonymous access to the container and blobs.
+- **Blob**: Allow anonymous public read access for the blobs only.
+- **Container**: Allow anonymous public read and list access to the entire container, including the blobs.
+
+See Tiering for Hot, Cold, Archive and Premium Storage
+
+Use Azure Blob Storage lifecycle management policy rules to:
+`Storage Account -> $storage_account -> Lifecycle Management`
+- Rule-based run scheduling
+- Rule-based condition to containers or a subset of blobs
+- Delete blobs 
+- Transition Storage tier 
+
+Object replication copies blobs in a container asynchronously according to policy rules that you configure. During the replication process, the following contents are copied from the source container to the destination container:
+- The blob contents
+- The blob metadata and properties
+- Any versions of data associated with the blob
+Requires:
+- Versioning enabled
+- Does not support snapshots
+- Replication Policy
+Considerations:
+- Latency reductions
+- Efficiency for compute workloads
+- Data distribution
+- Costs benefit
+
+Create a storage account:
+`Storage Accounts`
+Create Container for blobs
+`Storage Accounts -> $storage_account -> Containers
+Upload Blob
+`Storage Accounts -> $storage_account -> Containers -> $container -> Upload`
+Move Data to, from, or within Azure Storage
+`Storage Accounts -> $storage_account -> Diagnose and solve problems`
+Monitor Storage Accounts
+`Storage Accounts -> $storage_account -> Insights`
+
+|Upload tool|Description|
+|---|---|
+|**AzCopy**|An easy-to-use command-line tool for Windows and Linux. You can copy data to and from Blob Storage, across containers, and across storage accounts.|
+|**Azure Data Box Disk**|A service for transferring on-premises data to Blob Storage when large datasets or network constraints make uploading data over the wire unrealistic. You can use Azure Data Box Disk to request solid-state disks (SSDs) from Microsoft. You can copy your data to those disks and ship them back to Microsoft to be uploaded into Blob Storage.|
+|**Azure Import/Export**|A service that helps you export large amounts of data from your storage account to hard drives that you provide and that Microsoft then ships back to you with your data.|
+
+
+
 
 
 ## Azure App Services
