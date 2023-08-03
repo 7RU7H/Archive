@@ -248,46 +248,7 @@ Export | Azure Blob Storage | Block blobs, Page blobs, and Append blobs supporte
 
 ## Azure Storage Tooling
 
-#### Azure Storage Explorer
-
-Storage Explorer is a GUI application developed by Microsoft to simplify access to, and the management of, data stored in Azure storage accounts. Storage Explorer is available on Windows, macOS, and Linux. - create Blob containers, upload files, create snapshots of Disk. Requires both: management (Azure Resource Manager) and data layer permissions to allow full access to your resources.
-
-Storage Explorer gives you the ability to manage the data stored in multiple Azure storage accounts and across Azure subscriptions.
-
-- Signin through `StorageExplorer.exe` with an Azure Account
-	- Add a resource via Azure AD, choosing the Azure tenant and the associated account
-- Or SAS
-	- Then find connection node: `Local & attached > Storage Accounts > Attached Container > Service`
-- Or with Storage account name and key
-- For Data Lake Storage Gen1:
-	-  URI associated with the data lake
-- 
-#### Azure Import/Export Service
-
-The Azure Import/Export service is used to securely import large amounts of data to Azure Blob Storage and Azure Files by shipping disk drives to an Azure datacenter. This service can also be used to transfer data from Azure Blob Storage to disk drives and ship to your on-premises sites. Steps regardless
-1. Identity data
-2. Calculate transportation disk requirement
-3. `Azure Export Jobs` or install and run `WAImportExport` top copy data to disk
-4. Physical transportation
-
-Shipping with physical disk drives large amounts of data to a Azure Blob and Azure Files to a Azure datacenter with CLI tool for preparation - `WAImportExport` - Window 64 bit only; Import Jobs:
-- Prepares disks
-- Copies data to drive
-- Encrypts with AES 246 bitlocker
-- Generate journal fies during import
-	- Journal File store basic imformation - drive serial number, encryption key, storage account
-- Identifies number of drives required
-
-Version 1 is import/export data to Blob storage - Version 2 is for import data  Azure File 
-
-For export jobs
-- Export only from Azure Blob
-- Up to 10 empty drives per job
-- shipped to location
-
-`WAImportExport` considerations:
-- Bitlocker encryptions, SupportedDisk and the OS version
-
+[[Azure-Administration-Azure-Storage-Tooling]]
 
 #### AzCopy 
 

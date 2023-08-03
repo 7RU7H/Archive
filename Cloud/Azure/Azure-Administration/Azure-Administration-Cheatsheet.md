@@ -1061,15 +1061,35 @@ Import | Azure Blob Storage  |  Block blobs and Page blobs supported | -
 Export | Azure Blob Storage | Block blobs, Page blobs, and Append blobs supported | Azure Files not supported  
 .. | .. | .. | Export from Archive tier not supported
 
-Shipping with physical disk drives large amounts of data to a Azure Blob and Azure Files to a Azure data center with CLI tool for preparation - `WAImportExport` - Window 64 bit only
+Shipping with physical disk drives large amounts of data to a Azure Blob and Azure Files to a Azure data center with CLI tool for preparation - `WAImportExport` - Considersation
 - Export only from Azure Blob
 - Up to 10 empty drives per job
-
+- The WAImportExport tool is available in two versions:
+	- Version 1 is best for importing and exporting data in Azure Blob Storage.
+	- Version 2 is best for importing data into Azure Files.
+	- The WAImportExport tool is only compatible with 64-bit Windows operating system. For the list of supported operating systems and versions, see [Azure Import/Export requirements](https://learn.microsoft.com/en-us/azure/import-export/storage-import-export-requirements#supported-operating-systems).
+	
 Import/Export Jobs - physical disk to data centre
 1. Identity data
 2. Calculate transportation disk requirement
 3. `Azure Export Jobs` or install and run `WAImportExport` to copy data to disk
 4. Physical transportation
+
+Create an Azure Export Job
+1. Identify the data in Azure Blob Storage to export.
+2. Determine the number of disks needed to accommodate the data to transfer.
+3. In the Azure portal, create an Azure Export job and provide the following information:
+    - The Azure Storage account to use for the Export job
+    - The blob data to export
+    - The return address for shipment of your disks
+    - Your shipment carrier account number
+4. Ship the required number of disks to the Azure region datacenter that hosts the storage account. Note the shipment tracking number.
+5. Update the Export job to include the shipment tracking number.
+6. After the disks arrive at the Azure datacenter, the staff completes the following tasks:
+    1. The specified data in the storage account is copied to the disks you provided.
+    2. The disk volumes are encrypted by using BitLocker.
+    3. The disks are shipped back to you.
+- The BitLocker keys used to encrypt your disks are stored with the specified storage account in the Azure portal. You can decrypt the content of the disks and copy the data to your on-premises storage
 
 [Import Job to Azure Files](https://learn.microsoft.com/en-us/azure/import-export/storage-import-export-data-to-files?tabs=azure-portal-preview)
 1. Prep Drives
@@ -1664,7 +1684,7 @@ azcopy sync $localpath $remotepath --delete-desitnation true
 
 URL for Azure remote container: `Home -> Storage Accounts -> $ContainerName -> Properties`
 
-Create a SAS for container `Home -> Storage Accounts -> $ContainerName -> Shared Access Signature` configure and `Generate SAS and connection string`. It will generate connections trings for: 
+Create a SAS for container `Home -> Storage Accounts -> $ContainerName -> Shared Access Signature` configure and `Generate SAS and connection string`. It will generate connections strings for: 
 - Connection strings
 - SAS Token
 - Blob service SAS URL

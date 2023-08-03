@@ -38,6 +38,7 @@ This a hub page group links to all relevant articles under a Azure Administratio
 [[Azure-Administration-Network-Routes-And-Endpoints]]
 [[Azure-Administrator-Load-Balancer]]
 [[Azure-Administration-Storage-Security-Strategies]]
+[[Azure-Administration-Azure-Storage-Tooling]]
 
 For the Cheatsheet: [[Azure-Administration-Cheatsheet]]
 
