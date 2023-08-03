@@ -1,5 +1,7 @@
 # Alternate Resources
 
+Eventually this list will become more full - if you are not here I probably finding the time to put you here. These just resource I have turned to - if you are not I will discover and place you here.
+
 This repository stands on and shadows amongst absolute giants in the various communities that may largely go unnoticed. As a thanks and recognition as well a firm statement of transcendence through the power of dispersed information here is a list of *Alternate* or **better resources** with a sentence at most a description in alphabetical order:
 
 #### Arch Wiki
@@ -8,12 +10,16 @@ This repository stands on and shadows amongst absolute giants in the various com
 
 #### HackTricks
 
-The Awesome HackTricks - probably the best resource on Ethical Hacking and Pentesting on the Internet:
-[HackTricks](https://book.hacktricks.xyz/welcome/readme)
+The Awesome HackTricks - probably the best resource on Ethical Hacking and Pentesting (all domains) on the Internet:
+[HackTricks](https://book.hacktricks.xyz/welcome/readme). HackTricks is also maintained an is textual representation of [PEASS-NG](https://github.com/carlospolop/PEASS-ng)
 
 #### Ippsec.rocks and Ippsec's YouTube
 
-[Ippsec.rocks](https://ippsec.rocks/) is a search engine to find keywords in [Ippsec's HackTheBox Video Walkthroughs or Technique explainations](https://www.youtube.com/@ippsec)
+[Ippsec.rocks](https://ippsec.rocks/) is a search engine to find keywords in [Ippsec's HackTheBox Video Walkthroughs or Technique explanations](https://www.youtube.com/@ippsec). Ippsec is commonly considered a must watch for Cyber security outsiders and insiders and is attributed to the success of many passers of the OSCP. Was mentioned by [TotalBiscuit](https://en.wikipedia.org/wiki/TotalBiscuit) along time ago - generally a good sign of absolute quality.
+
+#### John Hammond
+
+John Hammond Youtube Content creator with over thousands of videos; his [Youtube channel](https://www.youtube.com/channel/UCVeW9qkBjo3zosnqUbG7CFw) is 20 minute digestible videos that tackle both real-world and CTF problems with focus on accessibility to Cybersecurity in the real world. [John also the opposite of his meme counter-part](https://antagonists.fandom.com/wiki/Dr._John_Hammond) in that he educates malicious activity for safety of all rather the creating a theme park of hacking-horrors for money.
 
 #### Lzone
 

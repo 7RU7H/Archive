@@ -69,9 +69,11 @@ Audit Areas:
 - Procurement
 - Business Continuity Planning
 - Disaster Recovery Planning
-
 ## Log Management
 
+Logging provides a historical account of events for later analysis or audit review; it is essential for diagnostic, forensics, and compliance purposes. Logging is a form of data collection and a record-keeping activity, which can be processed and used to understanding and improve situations. 
+
+General Strategy:
 - Log to a central location
 - Use a tool to filter and parse the logs
 - Setup alerts
@@ -79,6 +81,25 @@ Audit Areas:
 [[Linux-Logging]]
 [[Windows-Logging]]
 
+## Monitoring
+
+Monitoring is a real-time, continuous process used to detect issues or anomalies immediately. Monitoring attempt to ensure effective operational control, security, and optimal performance.
+
+Importance:
+- Troubleshooting 
+- Maintenance
+- Performance Optimisation
+- Preventing Failures
+- Security Risk Mitigation
+- Regulatory Compliance
+
+[[SIEM-Solutions]] can provide the answer to some large scale monitoring technical requirements. Security Information and Event Management (SIEM) is a set of integrated management technologies that aim to provide a holistic view of an organisation’s information security. SIEM systems collect and aggregate log data generated throughout the organisation’s IT infrastructure from network devices, systems, and applications. Its capabilities include:
+- Data aggregation - automates the collection and management of data 
+- Potential Correlation - Correlation does not equal causation
+- Analytic tooling - Humans still have to do the analysis
+	- Forensic Analysis - processing data to help analysts analyses more effectively with historical analysis 
+	- Threat Intelligence - integrating intelligence feeds 
+- Automating and Orchestration - some SIEMs can automatically respond to some detected incidents 
 
 ## References
 

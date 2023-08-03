@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exploitation/CVEs/CVE-2021-3560.md",
+                "file": "Tools/Velociraptor.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Sigma",
+                "query": "Vel",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exploitation/CVEs/CVE-2021-3560.md",
+                "file": "Tools/Velociraptor.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,12 +115,16 @@
   },
   "active": "fac9f46b2dbfa952",
   "lastOpenFiles": [
+    "Alternate-Resources.md",
+    "Tools/Velociraptor.md",
+    "Images/velociraptorofficialdocsimage-oneofthebestimageseveraboutdinosaurs.png",
+    "Security-Disciplines/Digital-Forensics/Digital-Forensics.md",
+    "Exploitation/CVEs/CVE-2021-3560.md",
     "Security-Disciplines/Blue-Team/Auditing-And-Monitoring.md",
     "Windows/Windows-Concepts/Windows-Events/Windows-Logging.md",
     "Windows/Windows-Concepts/Windows-Events/Windows-Events-To-Monitor.md",
     "Windows/Windows-Concepts/Windows-Events/ETW.md",
     "Linux/Linux-Concepts/Linux-Logging.md",
-    "Exploitation/CVEs/CVE-2021-3560.md",
     "Linux/Linux-System-Administration/Linux-Logging.md",
     "Security-Disciplines/Blue-Team/Blue-Team-Key-Documents.md",
     "Security-Disciplines/Blue-Team/Endpoint-Security.md",
@@ -138,10 +142,6 @@
     "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Backup-Resources/Azure-Administration-Disaster-Recovery.md",
     "Cloud/Azure/Azure-Administration/Azure-Manage-And-Implement-Storage-In-Azure/Azure-Administration-Replication.md",
     "README.md",
-    "Alternate-Resources.md",
-    "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administrator-Load-Balancer.md",
-    "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Configure-Virtual-Networks.md",
-    "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Network-Routes-And-Endpoints.md",
     "Images/azureprivatedns.png",
     "Images/azureenterprisechoicesofwan.png",
     "Exploitation/Development",
@@ -159,7 +159,6 @@
     "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks",
     "Images/azureloganalyticsaccesscontrol.png",
     "Images/azuremonitorcollectionforlogs.png",
-    "Images/azuremonitoringtier.png",
     "Cloud/Azure/Azure-Administration/sedmB5DSu"
   ]
 }
