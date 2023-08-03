@@ -7,7 +7,7 @@ Azure Storage data catergories:
 - VM data
 
 Price Tiers
-- Stardard - HDD
+- Standard - HDD
 - Premium -SSD
 
 Considerations:
@@ -31,16 +31,41 @@ The storage account name is used as part of the URI for API access, so it must b
 Account Kind:
 ![1000](azurestorageaccounttypes.png)
 
-Storage Accounts:
-Supported Services - Azure Blob, Azure File, Azure Queue, Azure Table, Disk, Azure Data Lake Gen2
-Supported Services - Azure Blob, Azure File, Azure Queue, Azure Table,  Disk, Azure Data Lake Gen2
-Performance Tiers - Standard Premium
-Access Tiers - Hot, Cool, Archive
-Replication - LRS, GRS, RA-GRS, ZRS, GZRS, RA-GZRS
-Deployment model - Resource, Manager, Classic
+- Storage Accounts:
+	- Supported Services:
+		- Azure Blob Storage - [[Azure-Administration-Blob-Storage]]
+		- Azure File - [[Azure-Administration-Files-And-File-Sync]]
+		- Azure Queue
+		- Azure Table 
+		- Azure Disks (Paged Blobs) - [[Azure-Administration-Azure-Disks-Paged-Blobs]]
+		- Azure Data Lake Gen2
+	- Performance Tiers 
+		- Standard 
+		- Premium
+	- Access Tiers
+		- Hot
+		- Cool
+		- Archive
+	- Replication - [[Azure-Administration-Disaster-Recovery]] and [[Azure-Administration-Azure-Backups]]
+		- LRS
+		- GRS
+		- RA-GRS
+		- ZRS 
+		- GZRS
+		- RA-GZRS
+	- Deployment model
+		- Resource
+		- Manager
+		- Classic
 
 A Comparison of Storage Types
 ![](azure-storageaccountcomparison.png)
+
+|Azure Files (file shares)|Azure Blob Storage (blobs)|Azure Disks (page blobs)|
+|---|---|---|
+|Azure Files provides the SMB and NFS protocols, client libraries, and a REST interface that allows access from anywhere to stored files.|Azure Blob Storage provides client libraries and a REST interface that allows unstructured data to be stored and accessed at a massive scale in block blobs.|Azure Disks is similar to Azure Blob Storage. Azure Disks provides a REST interface to store and access index-based or structured data in page blobs.|
+|- Files in an Azure Files share are true directory objects.  <br>- Data in Azure Files is accessed through file shares across multiple virtual machines.|- Blobs in Azure Blob Storage are a flat namespace.  <br>- Blob data in Azure Blob Storage is accessed through a container.|- Page blobs in Azure Disks are stored as 512-byte pages.  <br>- Page blob data is exclusive to a single virtual machine.|
+|_**Azure Files** is ideal to lift and shift an application to the cloud that already uses the native file system APIs. Share data between the app and other applications running in Azure._  <br>  <br>_Azure Files is a good option when you want to store development and debugging tools that need to be accessed from many virtual machines._|_**Azure Blob Storage** is ideal for applications that need to support streaming and random-access scenarios._  <br>  <br>_Azure Blob Storage is a good option when you want to be able to access application data from anywhere._|_**Azure Disks** solutions are ideal when your applications run frequent random read/write operations._  <br>  <br>_Azure Disks is a good option when you want to store relational data for operating system and data disks in Azure Virtual Machines and databases._|
 
 #### Storage Services
 
@@ -213,7 +238,6 @@ Import | Azure Blob Storage  |  Block blobs and Page blobs supported | -
 Export | Azure Blob Storage | Block blobs, Page blobs, and Append blobs supported | Azure Files not supported  
 .. | .. | .. | Export from Archive tier not supported
 
-
 ## Azure Blobs
 
 [[Azure-Administration-Blob-Storage]]
@@ -306,7 +330,6 @@ Azure Copy Features
 -   AzCopy is available on Windows, Linux, and macOS.
 -   Authenticate with SAS or Azure-AD
 
-
 ## Azure Storage Tables
 
 [Azure Storage](https://learn.microsoft.com/en-us/azure/storage/tables/table-storage-overview): *"Azure Table storage is a service that stores non-relational structured data (also known as structured NoSQL data) in the cloud, providing a key/attribute store with a schemaless design."*
@@ -376,7 +399,6 @@ private void CreateStoredAccessPolicy()
 - Enabled from all networks
 - Enabled from selected virtual networks and IP address
 - Disabled
-
 
 ## Workflows
 

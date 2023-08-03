@@ -42,7 +42,7 @@ Clients has the follow data points:
 - Client Metadata
 - Labels - Labelling helps group clients
 
-VQL Drilldown view shows:
+`VQL Drillown` view shows:
 - Orange - Memory usage over a 24 hours time-span
 - Blue - CPU usage over a 24 hours time-span
 

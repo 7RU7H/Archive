@@ -11,7 +11,7 @@ This a hub page group links to all relevant articles under a Azure Administratio
 [[Azure-Administration-Storage-Accounts]]
 [[Azure-Administration-Azure-Virtual-Machines]]
 [[Azure-Administration-Configure-Virtual-Networks]]
-[[Azure-Administration-Azure-Disks]]
+[[Azure-Administration-Azure-Disks-Paged-Blobs]]
 [[Azure-Administration-Application-Gateways]]
 [[Azure-Administration-Azure-DNS]]
 [[Azure-Administration-Azure-Kubernetes-Services]]

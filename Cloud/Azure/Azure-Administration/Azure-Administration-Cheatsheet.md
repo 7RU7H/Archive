@@ -928,28 +928,40 @@ Configure Disk Encryption:
 	- All service types
 - Enable Infrastructure Encryption - Cannot change after creation
 
-Create a Azure Files Share
+Create an Azure Files Share - [[Azure-Administration-Files-And-File-Sync]]
 `Storage Account -> $storage_account -> File Shares`
-- Open port 445 - check firewall
-- Enable - `Secure tranfer required`
+- open port 445 - check firewall - [[Azure-Administration-Azure-Firewall]]
+- enable - `Secure tranfer required`
+- File mounting can be done on-demand with:
+	- Windows - `Azure Portal -> Resource Groups -> Azure Files -> $FileShare -> Connect`:
+		- Specify Drive
+		- Authentication method:
+			- Active Directory
+			- Storage Account Key
+	- Linux - the `mount` command or on-boot (persistent) by creating an entry in `/etc/fstab`.
 
 Accessing a Azure a File Share - Mount with File explorer!
 UNC pathing:  `\\$StorageAccount.file.core.windows.net\$FileShare` 
 
-With Linux file share mounting can be done on-demand with the `mount` command or on-boot (persistent) by creating an entry in `/etc/fstab`.
 
-[Deploy File Sync](https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-deployment-guide) 
+[Deploy File Sync](https://learn.microsoft.com/en-us/azure/storage/file-sync/file-sync-deployment-guide) - [[Azure-Administration-Files-And-File-Sync]]
 - Only for:
 	- Standard file shares (GPv2), LRS/ZRS
 	- Standard file shares (GPv2), GRS/GZRS
 	- Premium file shares (FileStorage), LRS/ZRS
 `Azure File Sync -> Create` - Marketplace - not default, but covered in AZ 104
 1. Deploy the Storage Sync Service
+	- Configure:
+		 - The deployment name for the Storage Sync Service
+		- The Azure subscription ID to use for the deployment
+		- A Resource Group for the deployment
+		- The deployment location
 2. Prepare Windows Server(s)
-	1. Install Azur1e File Sync agent
+	1. Install Azure File Sync agent
 	2. Register servers with Storage Sync Service
-3. Resource Group for deployment
-4. Deployment location
+		- The Storage Sync Service deployment name
+		- The Resource Group for the deployment
+
 
 Azure File Sync agent:
 ```powershell
