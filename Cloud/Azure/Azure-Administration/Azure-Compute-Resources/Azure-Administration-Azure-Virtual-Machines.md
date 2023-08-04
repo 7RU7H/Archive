@@ -4,7 +4,7 @@ Azure Virtual Machines (VMs) are a configurable server without having to buy and
 - Patching
 - Installing packages
 - Configuration Package
-- Attach multiple Managed Disk to your Azure Vms
+- Attach multiple Managed Disk to your Azure VMs
 
 Consider reading [[Virtual-Machines]] for a more general overview and [[VirtualBox-Virtual-Networking]] as well as making the virtual networks first before make machines [[Azure-Administration-Configure-Virtual-Networks]], it is free and simpler.
 
@@ -17,7 +17,7 @@ The size of the image is determined by the image, which also defines the vCPUs, 
 Components created with the Virtual Machine:
 - OS you must specify the Operating Systems - found in the Azure Marketplace
 	- BYOLinux require Linux Virtual Hard Disk (VHD)  - VHDX is not supported Azure
-- Network Security Group (NSG) - attach to the NIC - virtual firwall
+- Network Security Group (NSG) - attach to the NIC - virtual firewall
 - Network Interface (NIC) - device that handles IP protocols and network communications
 - Virtual Machine Instances -  the actual running server
 - Public IP address - Address that you will use to public access the VM
@@ -26,28 +26,29 @@ Components created with the Virtual Machine:
 Consider reading - [[Cloud-Initialization]]; regarding VMs in Azure they require some forethought and virtual infrastructure - Questions to ask what is the purpose of the VM, where should it then be availability in security, location, use, etc? Generally the cost part is then tweakable or more obvious
 1. A network - How is the VM accessed and why
 2. A name - Does it fit a good naming and tag scheme to keep track of why you need it
-	- best to detirmine how tagging will fit within the large context   
+	- best to determine how tagging will fit within the large context   
 3. Location - region
 3. Size 
 4. Storage type - [[Azure-Administration-Storage-Accounts]], [Azure Managed Disks](https://learn.microsoft.com/en-us/azure/virtual-machines/managed-disks-overview) handle Azure storage account creation and management - `C:` is default system disk
 	- Temporary disks - do not store on temporary disk, but log temporary data for security
 	- Linux `/dev/sdb`
 		- Windows `D:`
-1. OS - not just Windows, but if you want containerization use [[Azure-Administration-Azure-Container-Instances]] - What is the user require to do their job? 
+1. OS - not just Windows, but if you want containerisation use [[Azure-Administration-Azure-Container-Instances]] - What is the user require to do their job? 
 	1. Azure Arc for abstraction layer on top of  Kubernetes Clusters
+1. Pricing 
 
 #### VM Sizes
 
 Sizing is important
 ![1080](azurevmsizingtable.png)
 
-SKU family / Series are interchangable terminology
+SKU family / Series are interchangeable terminology
 
 General Purpose - Balanced CPU-to-Memory ratio. Testing and development, small to medium databases, and low to medium traffic web servers.
 SKUs: B, Dsv3, Dv3, Dasv4, Dav4, DSv2, Dv2,Av2, DC, DCv2, Dv4, Dsv4, Ddv4, Ddsv4
 - B1 is very common as it is cost effective.
 
-Compute Optimized - High CPU-to-memory ratio. Good for medium traffic web servers, network appliances , batch processes, and app servers. 
+Compute Optimised - High CPU-to-memory ratio. Good for medium traffic web servers, network appliances , batch processes, and app servers. 
 SKUs: F, Fs, Fsv2
 
 Memory Optimized - High CPU-to-memory rational database servers, medium to large caches, and in-memory analytics:
@@ -64,14 +65,63 @@ SKUs: HB, HBv2, HC, H
 
 Azure Compute Units (ACU) a method of comparing compute CPU performance across Azure SKUs. ACU is a Small (Standrd_A1) VM with [current value of 100](https://learn.microsoft.com/en-us/azure/virtual-machines/acu), whereare all other SKUs then represent approximately how much faster that SKU can run a standard benchmark
 
+## Virtual Machine Storage
+
+- OS disk
+- Temporary Disk
+	-  Windows VMs
+		- `D:` drive by default. This drive is used for storing the **pagefile.sys** file.
+	- Linux VMs
+		- The temporary disk is typically `/dev/sdb`. 
+		- This disk is formatted and mounted to `/mnt` by the Azure Linux Agent.
+- Data disk 
+	-  A managed disk that's attached to a virtual machine to store application data, or other data you need to keep. Data disks are registered as SCSI drives and are labelled with a letter you choose.
+Consider:
+- Azure Premium Storage & migration
+- Multiple Disks
+- Managed Disk - Azure manage Paged Blobs
+- Azure Bastion for Linux VM software installation
+
+#### Disks
+
+A Disk role is either:
+- OS disk contain Operating system files
+	- An ephemeral OS disk is a virtual disk that saves data on the local virtual machine storage. An ephemeral disk has faster read-and-write latency than a managed disk, **but an individual virtual machine failure might destroy all the data on an ephemeral disk and leave the virtual machine unable to boot - They are free though**
+- Data disk
+	- >= 1 virtual disks; maximum capacity of 32,767 GB; persistent storage for data
+- Temporary
+	- Only 1; Lost during maintenance events
+
+#### Unmanaged Disks
+
+Disk you manual create and manage stored as Paged Blob - [[Azure-Administration-Azure-Disks-Paged-Blobs]]. To...
+
+Create an Unmanaged Disk
+`..$(Create VM) -> Disk -> Advanced -> Use managed disk -> No`
+- Select Storage Account
+
+
+#### Managed Disks
+
+A managed disk is a virtual hard disk for which Azure manages all the required physical infrastructure. Because Azure takes care of the underlying complexity, managed disks are easy to use. Stored as Paged Blob - [[Azure-Administration-Azure-Disks-Paged-Blobs]]
+
+- Scalability 
+- Availability
+- Integration with availability sets and zones
+- Support Azure Backup
+- Granular access control
+- Supports Encryption
+
+#### Local Disk Storage
+
+
+
+
 #### VM Via Azure Mobile App
 
-You can monitorv Domains
+You can monitor Domains
 - Newest VM - Delete the newest created VM, balanced across AZsr your VMs on the go 
 - With [mobile App](https://azure.microsoft.com/en-gb/products/app-service/mobile/). 
-
-
-
 
 ## Azure Portal Workflows
 
@@ -84,6 +134,14 @@ Provide configurations for Basic, Disks, Networking (**BEWARE** Azure creates de
 
 Connect to a VM via RDP
 `Search All Resources -> $name -> Connect -> select RDP`
+
+Change a VM size requires:
+- Stop and deallocate the virtual machine then select any size available in your region.	 
+	- Resizing Prod machine is not advised as it might require restart, change IP or configuration settings 
+
+Create an Unmanaged Disk
+`..$(Create VM) -> Disk -> Advanced -> Use managed disk -> No`
+- Select Storage Account
 
 #### VM Extensions
 

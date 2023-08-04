@@ -795,6 +795,14 @@ Provide configurations for Basic, Disks, Networking (**BEWARE** Azure creates de
 Connect to a VM via RDP
 `Search All Resources -> $name -> Connect -> select RDP`
 
+Change a VM size requires:
+- Stop and deallocate the virtual machine then select any size available in your region.	 
+	- Resizing Prod machine is not advised as it might require restart, change IP or configuration settings 
+
+Create an Unmanaged Disk
+`..$(Create VM) -> Disk -> Advanced -> Use managed disk -> No`
+- Select Storage Account
+
 #### Availability Sets
 
 Availability Set Group of related identical virtual machines are (un)deployed together. An Availability set is

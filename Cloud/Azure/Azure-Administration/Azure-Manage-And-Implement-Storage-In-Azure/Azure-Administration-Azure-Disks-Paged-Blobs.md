@@ -45,6 +45,52 @@ Azure Premium Storage - Client managed Disk with best performance
 
 Standard Azure Storage - for limiting costs 
 
+#### Ultra Disks
+
+|Disk size (GB)|IOPS|Throughput (MB/s)|
+|---|---|---|
+|4|1,200|300|
+|8|2,400|600|
+|16|4,800|1,200|
+|32|9,600|2,400|
+|64|19,200|4,000|
+|128|38,400|4,000|
+|256|76,800|2,000|
+|512|153,600|4,000|
+|1,024 - 65,536 (sizes in this range increase in 1 TiB increments)|160,000|2,000|
+#### Premium SSD v2
+
+|Disk Size|Maximum available IOPS|Maximum available throughput (MBps)|
+|---|---|---|
+|1 GiB-64 TiBs|3,000-80,000 (Increases by 500 IOPS per GiB)|125-1,200 (increases by 0.25 MBps per set IOPS)|
+
+#### Premium SSD
+
+|Disk size name|Disk size|IOPS|Throughput (MBps)|
+|---|---|---|---|
+|P4|32 GiB|120|25|
+|P15|256 GiB|1,100|125|
+|P40|2 TiB|7,500|250|
+|P80|32 TiB|20,000|900|
+
+#### Standard SSD
+
+|Disk size name|Disk size (GB)|IOPS|Throughput (MBps)|
+|---|---|---|---|
+|E4|32|500|60|
+|E15|256|500|60|
+|E40|2,048|500|60|
+|E80|32,767|6,000|750|
+
+#### Standard HDD
+
+|Disk size name|Disk size (GB)|IOPS|Throughput (MBps)|
+|---|---|---|---|
+|S4|32|500|60|
+|S15|256|500|60|
+|S40|2,048|500|60|
+|S80|32,767|2,000|500|
+
 ## Workflows
 
 Configure Disk Encryption -
