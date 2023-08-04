@@ -2,7 +2,7 @@
 
 Azure App Service is an HTTP-based service for hosting web applications, REST APIs, and mobile back ends. An App Service plan defines a set of compute resources for a web application to run; the compute resources are analogous to a server farm in conventional web hosting:
 - Choose your own programming language for Windows or Linux
-	- Azure App Services you supports the following runtimes: .NET, .NET Core, Java Ruby, node.js, PHP, Python
+	- Azure App Services you supports the following runtimes: ASP.NET, .NET Core, .NET Framework, Java, Ruby, Node.js, PHP, Python (Django or Flask), HTML, Wordpress ,custom containers
 - Platform as a Service
 	- Region
 	- Number of VMs
@@ -12,6 +12,16 @@ Azure App Service is an HTTP-based service for hosting web applications, REST AP
 	- Increase or decrease the resources allocated to run your app as needed, depending on the demand.
 - Deployment Slots
 - Continuous integration/deployment support
+- Built-in authentication and authorisation support.
+	- The security module handles several tasks for your app:
+		- Authenticate users with the specified provider
+		- Validate, store, and refresh tokens
+		- Manage the authenticated session
+		- Inject identity information into request headers
+
+App Services require App Service Plans - [[Azure-Administration-Configure-Azure-App-Service-Plan]], the App Service Plan Price Tiers: 
+![1080](azureappservicespricetier.png)
+
 
 Azure App service makes it easy to implement common:
 - Azure DevOps 
@@ -31,30 +41,44 @@ Limitations:
 The Azure app service Benefits
 ![1080](azureappservicesbenefits.png)
 
-An App Server will always run within an App Service plan that defines a set of compute resources for a web app to run. Defined by:
-- Operating System (Windows, Linux)
-- Region (West US, East US, etc.)
-- Number of VM instances
-- Size of VM instances (Small, Medium, Large)
-- Pricing tier (Free, Shared, Basic, Standard, Premium, PremiumV2, PremiumV3, Isolated, IsolatedV2) - list below by incremental cost:
-- Shared Compute Tier -  same Azure VM as other App Service apps, including apps of other customers:
-	- Free 
-	- Shared (Linux not supported)
-- Dedicated Compute Tier - Only app in the same App Service plan run dedicated Azure VMs:
-	- Basic 
-	- Standard 
-	- Premium - legacy:  PremiumV2, PremiumV3
-- Isolated Tier - dedicated Azure VMs on dedicated Azure Virtual Networks for highest performance, security, isolation:
-	- Isolated
-	- Isolated V2 
+Configuration Settings of App Service:
+- Name: unique name or custom domains
+- Publish:  App Service hosts (publishes) your app as code or as a Docker Container.
+- Runtime stack
+- OS
+- Region
+- App service Plan
+	- An App Service will always run within an App Service Plan that defines a set of compute resources for a web app to run. Defined by:
+		- Operating System (Windows, Linux)
+		- Region (West US, East US, etc.)
+		- Number of VM instances
+		- Size of VM instances (Small, Medium, Large)
+		- Pricing tier (Free, Shared, Basic, Standard, Premium, PremiumV2, PremiumV3, Isolated, IsolatedV2) - list below by incremental cost:
+		- Shared Compute Tier -  same Azure VM as other App Service apps, including apps of other customers:
+			- Free 
+			- Shared (Linux not supported)
+		- Dedicated Compute Tier - Only app in the same App Service plan run dedicated Azure VMs:
+			- Basic 
+			- Standard 
+			- Premium - legacy:  PremiumV2, PremiumV3
+		- Isolated Tier - dedicated Azure VMs on dedicated Azure Virtual Networks for highest performance, security, isolation:
+			- Isolated
+			- Isolated V2 
+- Post Creation Settings:
+	- Always On: 
+		- Always loaded even without traffic
+			- as Continuous WebJobs 
+			- or as WebJobs triggered by CRON expression
+	- ARR affinity 
+		- In multi-instance deployment ensure app client is routed to same instance for session lifetime
+	- Connection strings:
+		- Encrypted at rest and in-transit
 
-![1080](azureappservicespricetier.png)
 
 
 **Custom Containers** are supported, create docker file, upload to Azure Container Registry and deploy
 	
-**Deployment Slots** allows you create different environemtns of your web-application, can also swap environments - potential [Blue/Green deploy](https://en.wikipedia.org/wiki/Blue-green_deployment) 
-- Connections strings follow the content across the swap, Scale and Domains do not.
+
 	
 App Service Environment (ASE) is an Azure App Service feature that provides a fully isolated and dedicated environment for securely running App Service apps at high scale
 - Customers can create multiple ASEs:
@@ -63,7 +87,7 @@ App Service Environment (ASE) is an Azure App Service feature that provides a fu
 - Idea for horizontally scaling stateless application tiers in support of high requests per second (RPS) workloads
 - ASE comes with its own pricing tier (Isolated Tier)
 - ASEs can be used to configure security architecture
-- Apps running on ASEs can have their access gated by upstream devices, such as web applcation firewalls (WAFs)
+- Apps running on ASEs can have their access gated by upstream devices, such as web application firewalls (WAFs)
 - App Services Environments can be deployed  into AZ using zone pinning
 - Deployments types ASE:
 	- External ASE
@@ -74,6 +98,30 @@ Azure App services provides many ways to deploy your applications:
 	- No additional cost for WebJobs!
 
 ## Deployment
+
+**Deployment Slots** allows you create different environments of your web-application, can also swap environments - potential [Blue/Green deploy](https://en.wikipedia.org/wiki/Blue-green_deployment).
+- Deployment slots are live apps that have their own hostnames.
+- Deployment slots are available in the Standard, Premium, and Isolated App Service pricing tiers
+- App content and configuration elements can be swapped between two deployment slots
+	- Staging - Updated App can be swapped with App in the Production deployment slot
+	- Production 
+- Connections strings follow the content across the swap, Scale and Domains do not.
+- Auto swap:
+	- Auto swap streamlines Azure DevOps scenarios where you want to deploy your app continuously with zero cold starts and zero downtime for app customers. **Auto swap isn't currently supported for Web Apps on Linux.**
+
+Configure Deployment slots
+`Search -> App Service -> $AppService -> Deployment Slots`
+- New deployment slots can be empty or cloned.
+- Slot-specific app settings and connection strings (if applicable)
+- Continuous deployment settings (when enabled)
+- Azure App Service authentication settings (when enabled)
+
+|Swapped settings|Slot-specific settings|
+|---|---|
+|General settings, such as framework version, 32/64-bit, web sockets  <br>App settings *****  <br>Connection strings *****  <br>Handler mappings  <br>Public certificates  <br>WebJobs content  <br>Hybrid connections ******  <br>Service endpoints ******  <br>Azure Content Delivery Network ******  <br>Path mapping|Custom domain names  <br>Non-public certificates and TLS/SSL settings  <br>Scale settings  <br>Always On  <br>IP restrictions  <br>WebJobs schedulers  <br>Diagnostic settings  <br>Cross-origin resource sharing (CORS)  <br>Virtual network integration  <br>Managed identities  <br>Settings that end with the suffix _EXTENSION_VERSION|
+
+\* Setting can be configured to be slot-specific.
+\*\* Feature isn't currently available.
 
 #### Automated Deployment 
 
@@ -196,9 +244,9 @@ If you already have a working App Service certificate, you can:
 Deployment slots are configured in the Azure portal. You can swap your app content and configuration elements between deployment slots, including the production slot.
 ![1080](azureappservicesslotsvsswapped.png)
 
-## Insights
+#### Azure Insights
 
-App Services are integratable with Azure Insights to automatically detect performance anomalies in your apps. Language agnostic, on-off cloud location agnostics, DevOps integration and monitor and analyze data from mobile apps. Consider reviewing [[Azure-Administration-Azure-Monitor]].
+App Services are integrated with Azure Insights to automatically detect performance anomalies in your apps. Language agnostic, on-off cloud location agnostics, DevOps integration and monitor and analyze data from mobile apps. Consider reviewing [[Azure-Administration-Azure-Monitor]].
 
 ![1080](azureappserviesinsightpluses.png)
 
@@ -330,8 +378,14 @@ Create a Custom Domain for Azure App Service
 
 Backup Azure App Service (App configuration settings, File content, connected Databases) - requires:
 - Standard or Premium tier App Service plan 
+- Full backup is default; partial backups are supported; 10 GB in size
+	- Each consists of
+		- Zip file containing back-up data
+		- The XML manifest file of the zipped content
 - Storage Container - [[Azure-Administration-Storage-Accounts]]
 Provide the in `App Services -> $App -> Backup `
+- Check firewall on storage account!
+
 
 Deploy Code to a Azure App Service configure to deploy git source code.
 ```powershell

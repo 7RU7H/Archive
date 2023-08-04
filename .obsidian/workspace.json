@@ -20,24 +20,24 @@
             }
           },
           {
-            "id": "3eafc4afff863a77",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Deploy-And-Manage-Compute-Resources/Azure-Administration-Configure-Azure-App-Service-Plan.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "418b726f9fab73b1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "Cloud/Azure/Azure-Administration/Azure-Deploy-And-Manage-Compute-Resources/Azure-Administration-Azure-App-Services.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2bc5b0c1652ee28f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Deploy-And-Manage-Compute-Resources/Azure-Administration-Configure-Azure-App-Service-Plan.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Deploy-And-Manage-Compute-Resources/Azure-Administration-Azure-App-Services.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -138,12 +138,12 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "3eafc4afff863a77",
+  "active": "418b726f9fab73b1",
   "lastOpenFiles": [
-    "Cloud/Azure/Azure-Administration/Azure-Deploy-And-Manage-Compute-Resources/Azure-Administration-Azure-App-Services.md",
-    "Cloud/Azure/Azure-Administration/Azure-Deploy-And-Manage-Compute-Resources/Azure-Administration-Configure-Azure-App-Service-Plan.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+    "Cloud/Azure/Azure-Administration/Azure-Deploy-And-Manage-Compute-Resources/Azure-Administration-Azure-App-Services.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration.md",
+    "Cloud/Azure/Azure-Administration/Azure-Deploy-And-Manage-Compute-Resources/Azure-Administration-Configure-Azure-App-Service-Plan.md",
     "Cloud/Azure/Azure-Administration/Azure-Deploy-And-Manage-Compute-Resources/Azure-Administration-Azure-Virtual-Machines.md",
     "Cloud/Azure/Azure-Administration/Azure-Deploy-And-Manage-Compute-Resources/Azure-Administration-Configure-VM-Extensions.md",
     "Cloud/Azure/Azure-Administration/Azure-Deploy-And-Manage-Compute-Resources/Azure-Administration-Scale-And-Availability-Sets.md",

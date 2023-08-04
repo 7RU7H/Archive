@@ -1362,8 +1362,13 @@ Create a Custom Domain for Azure App Service
 
 Backup Azure App Service (App configuration settings, File content, connected Databases) - requires:
 - Standard or Premium tier App Service plan 
+- Full backup is default; partial backups are supported; 10 GB in size
+	- Each consists of
+		- Zip file containing back-up data
+		- The XML manifest file of the zipped content
 - Storage Container - [[Azure-Administration-Storage-Accounts]]
 Provide the in `App Services -> $App -> Backup `
+- Check firewall on storage account!`
 
 
 ## Azure Containerisation
