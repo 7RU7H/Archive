@@ -1,10 +1,7 @@
 Not to be confused with [[VS-Code]] ... it hurts.
 
-## Compiling Exploits
-
-For legacy `.NET` [c-sharpcorner](https://www.c-sharpcorner.com/article/open-legacy-projects-4-5-framework-in-visual-studio-2022/)
-
-Downloading [microsoft.netframework.referenceassemblies.net45](https://www.nuget.org/packages/microsoft.netframework.referenceassemblies.net45)
+Add Extensions:
+`Extensions -> Manage Extensions -> Search -> $oneyouwant -> Download`
 
 1. `Open Project`
 1. `Build -> Configuration Manager`
@@ -26,17 +23,18 @@ Change Target Framework, because...
 
 Compile 
 `Build -> Build Solution` 
+`[CTRL] + B`
 
-[Overide the  Language Version](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/configure-language-version), because...
+[Override the  Language Version](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/configure-language-version), because...
 - Manually edit your [project file](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/configure-language-version#edit-the-project-file).
 - Set the language version [for multiple projects in a subdirectory](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/configure-language-version#configure-multiple-projects).
 - Configure the [**LangVersion** compiler option](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/compiler-options/language#langversion).
 
 ## References
 
-[Microsoft official walkthrough-building-an-application](https://learn.microsoft.com/en-us/visualstudio/ide/walkthrough-building-an-application?view=vs-2022)
-
-[Overide the  Language Version](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/configure-language-version), because...
+[Microsoft Official Walkthrough-building-an-application](https://learn.microsoft.com/en-us/visualstudio/ide/walkthrough-building-an-application?view=vs-2022)
+[Override the  Language Version](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/configure-language-version), because...
 [Manually edit your project file](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/configure-language-version#edit-the-project-file).
-[Set the language version for multiple projects in a subdirectory](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/configure-language-version#configure-multiple-projects).
+[Set the language version for multiple projects in a sub-directory](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/configure-language-version#configure-multiple-projects).
 [Configure the **LangVersion** compiler option](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/compiler-options/language#langversion).
+[Microsoft.Learn - Visual Studio: Finding and Using Extensions](https://learn.microsoft.com/en-us/visualstudio/ido/finding-and-using-visual-studio-extensions?view=vs-2022)
