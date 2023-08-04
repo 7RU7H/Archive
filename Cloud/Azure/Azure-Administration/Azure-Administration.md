@@ -40,6 +40,7 @@ This a hub page group links to all relevant articles under a Azure Administratio
 [[Azure-Administration-Storage-Security-Strategies]]
 [[Azure-Administration-Azure-Storage-Tooling]]
 [[Azure-Administration-Configure-VM-Extensions]]
+[[Azure-Administration-Configure-Azure-App-Service-Plan]]
 
 For the Cheatsheet: [[Azure-Administration-Cheatsheet]]
 
