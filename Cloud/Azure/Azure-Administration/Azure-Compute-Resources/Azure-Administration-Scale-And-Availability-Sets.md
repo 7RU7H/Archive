@@ -194,6 +194,46 @@ Custom Script Extension - Container with a custom IIS webserver
 Export Template, custom template for mass use
 `VMs -> $CustomVm -> Export Template`
 
+
+Manually scale Virtual Machine Scale Sets
+```bash
+az vmss scale \
+    --name MyVMScaleSet \
+    --resource-group MyResourceGroup \
+    --new-capacity 6
+```
+
+Install an application across a scale set with Custom Script Extension - Script below
+```json
+# yourConfigV1.json 
+{
+  "fileUris": ["https://raw.githubusercontent.com/yourrepo/master/custom_application_v1.sh"],
+  "commandToExecute": "./custom_application_v1.sh"
+}
+```
+Install new application with Azure CLI and 
+```bash
+
+az vmss extension set \
+  --publisher Microsoft.Azure.Extensions \
+  --version 2.0 \
+  --name CustomScript \
+  --resource-group myResourceGroup \
+  --vmss-name yourScaleSet \
+  --settings @yourConfigV1.json
+```
+
+Create a Virtual Machine Scale Set with an upgrade policy 
+```bash
+az vmss create \
+  --resource-group MyResourceGroup \
+  --name MyScaleSet \
+  --image UbuntuLTS \
+  --upgrade-policy-mode automatic \
+  --admin-username azureuser \
+  --generate-ssh-keys
+```
+
 ## References
 
 [Youtube Azure Administrator Certification (AZ-104)](https://www.youtube.com/watch?v=10PbGbTUSAg)

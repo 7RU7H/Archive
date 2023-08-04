@@ -1788,6 +1788,13 @@ az deployment group create \
   --parameters $x=$y
 ```
 
+Delete a Resource Group
+```bash
+az group delete \
+      --name myResourceGroup \
+      --yes
+```
+
 Azure VM command with subcommand for managing VMs
 ```bash 
 # VM Subcommands:
@@ -1880,6 +1887,52 @@ az vm get-instance-view \
     --name SampleVM \
     --resource-group $resource_group_name \
     --query "instanceView.statuses[?starts_with(code, 'PowerState/')].displayStatus" -o tsv
+```
+
+View current upgrade policy of Virtual Machine Scale Set
+```bash
+az vmss show \
+    --name webServerScaleSet \
+    --resource-group myResourceGroup \
+    --query upgradePolicy.mode
+```
+
+Manually scale Virtual Machine Scale Sets
+```bash
+az vmss scale \
+    --name MyVMScaleSet \
+    --resource-group MyResourceGroup \
+    --new-capacity 6
+```
+
+Install an application across a scale set with Custom Script Extension - Script below
+```json
+# yourConfigV1.json 
+{
+  "fileUris": ["https://raw.githubusercontent.com/yourrepo/master/custom_application_v1.sh"],
+  "commandToExecute": "./custom_application_v1.sh"
+}
+```
+Install new application with Azure CLI and 
+```bash
+az vmss extension set \
+  --publisher Microsoft.Azure.Extensions \
+  --version 2.0 \
+  --name CustomScript \
+  --resource-group myResourceGroup \
+  --vmss-name yourScaleSet \
+  --settings @yourConfigV1.json
+```
+
+Create a Virtual Machine Scale Set with an upgrade policy 
+```bash
+az vmss create \
+  --resource-group MyResourceGroup \
+  --name MyScaleSet \
+  --image UbuntuLTS \
+  --upgrade-policy-mode automatic \
+  --admin-username azureuser \
+  --generate-ssh-keys
 ```
 
 Disk creation, retrieval and updating in Bash

@@ -44,7 +44,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Scale-And-Availability-Sets.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -138,10 +138,10 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "5ca1e30a6a4fd513",
+  "active": "3eafc4afff863a77",
   "lastOpenFiles": [
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
     "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Scale-And-Availability-Sets.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
     "Excalidraw/azure-updateandfault-domains.excalidraw.md",
     "Cloud/Azure/Azure-Administration/Azure-Manage-And-Implement-Storage-In-Azure/Azure-Administration-Azure-Disks-Paged-Blobs.md",
     "Cloud/Azure/Azure-Administration/Azure-Manage-And-Implement-Storage-In-Azure/Azure-Administration-Blob-Storage.md",
