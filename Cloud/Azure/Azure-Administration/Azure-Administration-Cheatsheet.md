@@ -45,6 +45,25 @@ Clear-Az # Clear settable values
 Set-Az # Opposite of Clear, Set values
 ```
 
+Know your Azure Agents and Extensions:
+- Agents and Extension disambiguation
+	-  Extensions
+		-  Virtual machine extensions:
+			- Small applications that automate the tasks of creating, maintaining, and removing virtual machines.
+		- Azure Custom Script Extension
+			- is used for post-deployment configuration, software installation, or any other configuration or management task.
+		- Desired State Configuration (DSC) 
+			- is a management platform to manage an IT and development infrastructure with configuration as code.
+		- Azure VMAccess extension
+			- acts as a KVM switch that allows you to access the console to reset access to Linux or perform disk-level maintenance.
+	- Agents
+		- Azure Monitor Agent - Collects monitoring data 
+			- Will replace the both Log Analytics Agent and Azure diagnostic at some point:
+				- (LEGACY - here for disambiguation) Azure Diagnostic Extension - Enables customers to receive extra data from guest OSes and Workload on Azure resource
+			- Log Analytics agent - Collects logs and performance data for Azure Resources
+				- for Linux as part of a solution to collect JSON output
+		- Dependency Agent 
+			- Collects discovered data about certain processes to maps all dependencies between virtual machines and any external process dependencies.
 
 ## Azure Policies
 

@@ -39,6 +39,7 @@ This a hub page group links to all relevant articles under a Azure Administratio
 [[Azure-Administrator-Load-Balancer]]
 [[Azure-Administration-Storage-Security-Strategies]]
 [[Azure-Administration-Azure-Storage-Tooling]]
+[[Azure-Administration-Configure-VM-Extensions]]
 
 For the Cheatsheet: [[Azure-Administration-Cheatsheet]]
 

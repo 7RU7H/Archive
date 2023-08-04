@@ -242,4 +242,4 @@ az vmss create \
 [Choose the right number of fault domains for Azure Virtual Machine Scale Sets](https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-manage-fault-domains)
 [Microsoft Technical Documentation](https://learn.microsoft.com/en-us/docs/)
 [Microsoft Learn](https://learn.microsoft.com/en-us/)
-[Learn Micorsoft - Availability Set Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/availability-set-overview)
+[Learn Microsoft - Availability Set Overview](https://learn.microsoft.com/en-us/azure/virtual-machines/availability-set-overview)
