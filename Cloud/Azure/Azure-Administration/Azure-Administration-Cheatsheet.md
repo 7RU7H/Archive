@@ -858,24 +858,37 @@ Pulling a configuration for lots of nodes - also included in the Powershell sect
 
 Create and Manage VM Scale Sets
 `Search -> Virtual machine scale sets` 
-- Size = Price; Azure Spot - discount unused pool ; image = OS, arch = x86 or arm64
-	- Azure Spot must have set a eviction policy as Azure has capcity needs:
-		- Deallocation - moves your VM to the stopped-deallocated state, allowing you to redeploy it later, with not guarantee of allocation success, you'll be charged storage costs for the underlying disks.
-		- Delete - VMs is deleted with underlying disk 
-- Orchestration mode:
-	- Uniform - for large scale stateless workloads with indentical instances - department workstation
-	- Flexible - high availability at scale with identical or multiple instances - any configuration to the scale set.
-- Advanced tab to enable beyond 100 instances; spreading for optimal spreading of allocation Implement Virtual Networking
-`Search -> Virtual Network -> $Vnet (With Subnet, VMs, DNS, NSGs, etc configured)` in the `Private DNS Zone -> Virtual Network Link -> + Add - provide a Link name, Vnet` 
- - Configure Scaling in the `Scaling` tab; 
-	 - Policy - min/max number of instances; manual or autoscaling 
-	 - Scale Vertically - CPU threshold, decrease of instances
-	 - Scale Horizonally - CPU threshold, duration, increase of instances
-	 - Scale-In policy - default, newest, oldest VMs
-
-Scale sets:
+Considerations:
+Scale sets are assigned to (like Availability sets):
 - Update Domains -  is a group of nodes that are upgraded together
 - Fault Domains -  is a group of nodes that represent a physical unit of failure
+- Basics
+	- Orchestration mode:
+		- Uniform - for large scale stateless workloads with identical instances - department workstation
+		- Flexible - high availability at scale with identical or multiple instances - any configuration to the scale set.
+	- Advanced tab to enable beyond 100 instances; spreading for optimal spreading of allocation 
+	- Configure Scaling in the `Scaling` tab; 
+		 - Policy - min/max number of instances; manual or autoscaling 
+		 - Scale in - CPU threshold, decrease of instances
+		 - Scale out - CPU threshold, duration, increase of instances
+		 - Scale-In policy - default, newest, oldest vms
+	- Size = Price; Azure Spot - discount unused pool ; image = OS, arch = x86 or arm64
+		- Azure Spot must have set a eviction policy as Azure has capacity needs:
+			- Deallocation - moves your VM to the stopped-deallocated state, allowing you to redeploy it later, with not guarantee of allocation success, you'll be charged storage costs for the underlying disks.
+			- Delete - VMs is deleted with underlying disk 
+- Continue with Disk, 
+-  Implement Virtual Networking `Search -> Virtual Network -> $Vnet (With Subnet, VMs, DNS, NSGs, etc configured)` in the `Private DNS Zone -> Virtual Network Link -> + Add - provide a Link name, Vnet` 
+- Scaling - Configure Scaling in the `Scaling` tab; 
+	 - Policy - min/max number of instances; manual or autoscaling 
+		- Manual - maintains a fixed instance count
+		- Autoscaling -  scales the capacity on any schedule, based on any metrics.
+	- Scale-In policy - default, newest, oldest VMs
+		 -  Scale in - by **an decrease in** X percentage and Y number of VM instances 
+	- Scale-out Policy
+		- Scale out - **increase in** X percentage, Y duration and by Z number of VM instances 
+- Management, Health, Tags and Review and Create
+- Advanced tab
+	- to enable beyond 100 instances; spreading for optimal spreading of allocation
 
 Size Scaling
 `Virtual Machines -> $VM -> Size -> Resize by select new size`

@@ -1,34 +1,35 @@
 # Azure Administration Scale and Availability Sets 
 
-Azure Scale sets allows automatic increases and decreases in VM capacity. Load Balancers can be associated with a Scale Set:
-- Evenly distribute VM across availablility Zones - more availability
+**Note: Microsoft doesn't automatically update your virtual machine operating system or other software, underlying periodically does** 
+
+Plan for maintenance and downtime:
+- Unplanned hardware maintenance
+- Unexpected Downtime
+- Planned maintenance 
+
+## Azure Scale sets
+
+Azure Virtual Machine Scale Sets are an Azure Compute resource that you can use to deploy and manage a set of **identical** virtual machines. Azure Scale sets allows automatic increases and decreases in VM capacity. Administrators could use Virtual Machine Scale Sets to run multiple instances of your application like a availability set
+- Must VMs within the Scale set must be identical
+
+Load Balancers can be associated with a Scale Set:
+- Evenly distribute VM across availability Zones - more availability
 - Use Load Balancer probe checks for more robust Health checks
 	- Load Balancers:
 		1. Application Gateway is an HTTP/HTTPS web traffic load balancer application firewall
 		2. Azure Load Balancer supports all TCP/UDP network traffic, port-forwarding and outbound flaws.
 
-An availability set is a logical feature you can use to ensure a group of related identical virtual machines are deployed together and torn down together. Azure manages physical location, Administrator builds:
-- Azure Portal
-- ARM - [[Azure-Administration-Azure-Resource-Manager]]
-- Scripting
-- API Tools
-Consider
-- Redundancy
-- Separation of Application Tiers - no single point of failure
-- Managed Disk for Block-Level Storage
-
-An Availability set is
+Scale sets are...
 - Assigned an:
 	- Fault Domain - up to 3
 		- Are a group of virtual machines that share a common power source and network switch.
-	- Update Domain - up to 20
+		- Two fault domains work together to mitigate against hardware failures, network outages, power interruptions, or software updates.
+	- Update Domains - up to 20
 		- Are groups of virtual machines and underlying physical hardware that can be rebooted at the same time
-		- If 5 Update domain, the 6th will be in the 1st, 7th will in the 2nd, etc - if 20 the 21th VM is in the 1st..
+		- Planned Maintenance:
+			- Only one update domain is rebooted at a time.
+		- If 5 (By default, there are five (non-user-configurable)) Update domains, the 6th will be in the 1st, 7th would in the 2nd if we added it, etc - if 20 the 21st VM is in the 1st.. 
 	- Can't be changed once the availability set has been created
-
-Scale sets:
-- Update Domains -  is a group of nodes that are upgraded together
-- Fault Domains -  is a group of nodes that represent a physical unit of failure
 
 A **Scaling Policy** determines what VM is removed to decrease the capacity of the Scale Set either:
 - Default - Delete VM with highest instance ID balanced across Availability Zones  and Fault Domains
@@ -51,13 +52,27 @@ Automatic Repair policy if an instance is found to be unhealthy the delete it an
 - Scaling in and out given demand
 - Define adjustment in capacity
 
-Availability Zone
-- Zonal Services pin each resource to a specific zone.
-- Zone-Redundant services are zone-redundant, the platform replicates automatically across all zones.
+## Azure Availability sets
 
-Plan for maintenance and unexpected downtime:
-- Use an availability set, which is a logical feature you can use to ensure a group of related virtual machines are deployed together - reducing single point of failure, that they are not upgraded at the same time.
-	- VMs in the set should be identical
+An Azure availability set is a logical feature you can use to ensure a group of related identical virtual machines are deployed together and torn down together. Azure manages a physical location Administrator manage policy inline with budgeting. 
+
+Characteristic of Azure availability sets:
+- All VMs *should*:
+	- Perform the identical set of functionalities
+	- Same software installed
+	- Be created first before added 
+	- To change availability set the VM needs to be deleted and then recreated
+- Azure runs an availability set run across multiple physical servers, compute racks, storage units, and network switches.
+- Administrators add disaster recovery and backup techniques using Azure 
+	- [[Azure-Administration-Azure-Backups]]
+	- [[Azure-Administration-Disaster-Recovery]]
+- Administrators need to consider:
+	- All the components of Disk and VMs [[Azure-Administration-Azure-Virtual-Machines]]
+	- Adding correct Load Balancers [[Azure-Administrator-Load-Balancer]]
+	- **Separate Application tiers**
+		- Each application tier exercised in your configuration should be located in a separate availability set:
+			- group VMs with similar functions together into separate availability sets
+		- For No single point of failure
 
 Microsoft provides [Service Level Agreements (SLAs) for Azure Virtual Machines](https://azure.microsoft.com/support/legal/sla/virtual-machines/v1_9/) for Azure virtual machines and availability sets. Considerations:
 - Redundancy
@@ -65,46 +80,80 @@ Microsoft provides [Service Level Agreements (SLAs) for Azure Virtual Machines](
 - Load balancing
 - Managed Disks
 
-For Domains:
-- `update domains`  -  is a group of nodes that are upgraded together during the process of a service upgrade
-	- Each `update domain`  contains a set of virtual machines and associated physical hardware that can be updated and rebooted at the same time.
-	- Configure up to 20, one update at a time
-	- Default: 5 non-user configurable update domains
-- `fault domains` -  is a group of nodes that represent a physical unit of failure
-	- Defines a group of virtual machines that share a common set of hardware that share a single point of failure
-	- 2 domains work together to mitigate against hardware failures, network outages, power interruptions, or software updates.
+Administrator tooling:
+- Azure Portal
+- ARM - [[Azure-Administration-Azure-Resource-Manager]]
+- Scripting
+- API Tools
+Consider:
+- Redundancy
+- Separation of Application Tiers - no single point of failure
+- Managed Disk for Block-Level Storage 
+
+An Availability set is
+- Assigned an:
+	- Fault Domain - up to 3
+		- Are a group of virtual machines that share a common power source and network switch.
+		- Two fault domains work together to mitigate against hardware failures, network outages, power interruptions, or software updates.
+	- Update Domains - up to 20
+		- Are groups of virtual machines and underlying physical hardware that can be rebooted at the same time
+		- Planned Maintenance:
+			- Only one update domain is rebooted at a time.
+		- If 5 (By default, there are five (non-user-configurable)) Update domains, the 6th will be in the 1st, 7th would in the 2nd if we added it, etc - if 20 the 21st VM is in the 1st.. 
+	- Can't be changed once the availability set has been created
+
+![1080](azure-updateandfault-domains.excalidraw)
 
 Availability Zones:
 - Unique physical locations within a Azure Region
 	- One or more Data centres
-- Minimum of three Availability zones
+- Minimum of three Availability zones to ensure resiliency 
 - Prevents against Data centre failure
 - Prevents single point of failure with Zone redundancy
 
 ![](azureservicessupportingavailabilityzones.png)
-
+for
 Scalability - goes Vertically (VM Size up or down) and Horizontally (Number of VMs)
 Considerations:
 - Limitations
 - Flexibility
 - Reprovisioning
 
-
 #### Workflows
 
 Create and Manage VM Scale Sets
 `Search -> Virtual machine scale sets` 
-- Size = Price; Azure Spot - discount unused pool ; image = OS, arch = x86 or arm64
-- Orchestration mode:
-	- Uniform - for large scale stateless workloads with indetical instances - department workstation
-	- Flexible - high availability at scale with identical or multiple instances - any configuration to the scale set.
-- Advanced tab to enable beyond 100 instances; spreading for optimal spreading of allocation 
- - Configure Scaling in the `Scaling` tab; 
+Considerations:
+Scale sets are assigned to (like Availability sets):
+- Update Domains -  is a group of nodes that are upgraded together
+- Fault Domains -  is a group of nodes that represent a physical unit of failure
+- Basics
+	- Orchestration mode:
+		- Uniform - for large scale stateless workloads with identical instances - department workstation
+		- Flexible - high availability at scale with identical or multiple instances - any configuration to the scale set.
+	- Advanced tab to enable beyond 100 instances; spreading for optimal spreading of allocation 
+	- Configure Scaling in the `Scaling` tab; 
+		 - Policy - min/max number of instances; manual or autoscaling 
+		 - Scale in - CPU threshold, decrease of instances
+		 - Scale out - CPU threshold, duration, increase of instances
+		 - Scale-In policy - default, newest, oldest vms
+	- Size = Price; Azure Spot - discount unused pool ; image = OS, arch = x86 or arm64
+		- Azure Spot must have set a eviction policy as Azure has capacity needs:
+			- Deallocation - moves your VM to the stopped-deallocated state, allowing you to redeploy it later, with not guarantee of allocation success, you'll be charged storage costs for the underlying disks.
+			- Delete - VMs is deleted with underlying disk 
+- Continue with Disk, 
+-  Implement Virtual Networking `Search -> Virtual Network -> $Vnet (With Subnet, VMs, DNS, NSGs, etc configured)` in the `Private DNS Zone -> Virtual Network Link -> + Add - provide a Link name, Vnet` 
+- Scaling - Configure Scaling in the `Scaling` tab; 
 	 - Policy - min/max number of instances; manual or autoscaling 
-	 - Scale in - CPU threshold, decrease of instances
-	 - Scale out - CPU threshold, duration, increase of instances
-	 - Scale-In policy - default, newest, oldest vms
-
+		- Manual - maintains a fixed instance count
+		- Autoscaling -  scales the capacity on any schedule, based on any metrics.
+	- Scale-In policy - default, newest, oldest VMs
+		 -  Scale in - by **an decrease in** X percentage and Y number of VM instances 
+	- Scale-out Policy
+		- Scale out - **increase in** X percentage, Y duration and by Z number of VM instances 
+- Management, Health, Tags and Review and Create
+- Advanced tab
+	- to enable beyond 100 instances; spreading for optimal spreading of allocation
 Size Scaling
 `Virtual Machines -> $VM -> Size -> Resize by select new size`
 Disk Scaling

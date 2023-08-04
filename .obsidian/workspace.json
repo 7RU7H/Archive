@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Manage-And-Implement-Storage-In-Azure/Azure-Administration-Azure-Disks-Paged-Blobs.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Scale-And-Availability-Sets.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Manage-And-Implement-Storage-In-Azure/Azure-Administration-Azure-Disks-Paged-Blobs.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Scale-And-Availability-Sets.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,11 +140,13 @@
   },
   "active": "5ca1e30a6a4fd513",
   "lastOpenFiles": [
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+    "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Scale-And-Availability-Sets.md",
+    "Excalidraw/azure-updateandfault-domains.excalidraw.md",
+    "Cloud/Azure/Azure-Administration/Azure-Manage-And-Implement-Storage-In-Azure/Azure-Administration-Azure-Disks-Paged-Blobs.md",
     "Cloud/Azure/Azure-Administration/Azure-Manage-And-Implement-Storage-In-Azure/Azure-Administration-Blob-Storage.md",
     "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Azure-Administration-Azure-Virtual-Machines.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
     "Cloud/Azure/Azure-Administration/Azure-Manage-And-Implement-Storage-In-Azure/Azure-Administration-Storage-Accounts.md",
-    "Cloud/Azure/Azure-Administration/Azure-Manage-And-Implement-Storage-In-Azure/Azure-Administration-Azure-Disks-Paged-Blobs.md",
     "Post-Exploitation/Privilege-Escalation/Linux/Important-Linux-Locations.md",
     "Tools/Detection-And-Monitoring/Velociraptor.md",
     "Tools/Debuggers-IDEs-Editors/IDEs/Microsoft-Visual-Studios.md",
@@ -165,8 +167,6 @@
     "Windows/Windows-Concepts/Windows-Events/Windows-Logging.md",
     "Windows/Windows-Concepts/Windows-Events/Windows-Events-To-Monitor.md",
     "Windows/Windows-Concepts/Windows-Events/ETW.md",
-    "Linux/Linux-Concepts/Linux-Logging.md",
-    "Linux/Linux-System-Administration/Linux-Logging.md",
     "Cloud/Azure/Azure-Administration/Azure-Storage/Untitled",
     "Images/azureprivatedns.png",
     "Images/azureenterprisechoicesofwan.png",
