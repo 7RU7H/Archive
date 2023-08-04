@@ -128,7 +128,8 @@ What is network level purpose of connections
 		 - Can you bypass with additional Headers?
 	- Endpoints?
 		- Fuzzed with Special characters on all end points - [[FFUF-Cheatsheet]]?
-	- CMS 
+	- CMS
+		- Is the version or plugin version vulnerable? 
 	- Does the website use a database for storage?
 	- Web server default Admin Login panels?
 		- Default credentials?
@@ -146,7 +147,8 @@ What is network level purpose of connections
 		- Does the non local request have it only parameters
 		- `ffuf -request search.req -request-proto http -w special-chars.txt -mc all` - which characters cause what issue that indicate what about the context? 
 		- What data returns from the testing the parameter?
-			- LFI? Can you read disk/memory?
+			- LFI? Can `include()` files from disk/memory
+			- Directory Traversal? Can you read disk/memory?
 			- RFI? Can you get remote resources? - Internal && External
 			- SSRF? Can you request known resources - ports, files, webpages?
 			- XSS? Can you execute javascript scripting?

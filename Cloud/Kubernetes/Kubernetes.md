@@ -1,6 +1,5 @@
 # Kubernetes 
 
-
 For hacking [[Kubernetes-Hacking]].
 
 Kubernetes Architecture:
@@ -16,7 +15,7 @@ Kubernetes Architecture:
 	- etcd
 - Node - where compute workloads run
 	- Kubelet
-		- Agent running on a node
+		- Agent running on a node - processes the orchestration requests
 	- Kube-Proxy 
 		- Responsible for local cluster networking
 		- Doesn't provide DNS services requires an add-on

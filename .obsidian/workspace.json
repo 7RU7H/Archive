@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Deploy-And-Manage-Compute-Resources/Azure-Administration-Azure-Container-Instances.md",
+                "file": "Cloud/Kubernetes/Kubernetes.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Deploy-And-Manage-Compute-Resources/Azure-Administration-Azure-Container-Instances.md",
+                "file": "Cloud/Kubernetes/Kubernetes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,9 +115,12 @@
   },
   "active": "fde47583abc3684f",
   "lastOpenFiles": [
+    "Cloud/Azure/Azure-Administration/Azure-Deploy-And-Manage-Compute-Resources/Azure-Administration-Azure-Kubernetes-Services.md",
+    "Images/azure-aksscalingimplementation.png",
+    "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
+    "Cloud/Azure/Azure-Administration/Azure-Deploy-And-Manage-Compute-Resources/Azure-Administration-Azure-Container-Instances.md",
     "README.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration.md",
-    "Cloud/Azure/Azure-Administration/Azure-Deploy-And-Manage-Compute-Resources/Azure-Administration-Azure-Container-Instances.md",
     "Cloud/Azure/Azure-Administration/Azure-Deploy-And-Manage-Compute-Resources/Azure-Administration-Azure-App-Services.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
     "Cloud/Azure/Azure-Administration/Azure-Deploy-And-Manage-Compute-Resources/Azure-Administration-Configure-Azure-App-Service-Plan.md",
@@ -138,10 +141,7 @@
     "Cloud/Azure/Azure-Administration/Azure-Manage-And-Implement-Storage-In-Azure/Azure-Administration-Azure-Storage-Tooling.md",
     "Cloud/Cloud-Hacking/Azure-Hacking.md",
     "Cloud/Azure/Azure-Administration/Azure-Manage-And-Implement-Storage-In-Azure/Azure-Administration-Files-And-File-Sync.md",
-    "Alternate-Resources.md",
     "Images/velociraptorofficialdocsimage-oneofthebestimageseveraboutdinosaurs.png",
-    "Security-Disciplines/Digital-Forensics/Digital-Forensics.md",
-    "Exploitation/CVEs/CVE-2021-3560.md",
     "Cloud/Azure/Azure-Administration/Azure-Storage/Untitled",
     "Images/azureprivatedns.png",
     "Images/azureenterprisechoicesofwan.png",
@@ -159,7 +159,6 @@
     "Images/azurefirewallfeatures.png",
     "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks",
     "Images/azureloganalyticsaccesscontrol.png",
-    "Images/azuremonitorcollectionforlogs.png",
     "Cloud/Azure/Azure-Administration/sedmB5DSu"
   ]
 }
