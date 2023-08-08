@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Manage-Identities-And-Governance/Azure-Administration-Microsoft-Entra-ID-Administration.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Manage-Identities-And-Governance/Azure-Administration-Azure-Roles-And-RBAC.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Manage-Identities-And-Governance/Azure-Administration-Microsoft-Entra-ID-Administration.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Manage-Identities-And-Governance/Azure-Administration-Azure-Roles-And-RBAC.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,13 +115,14 @@
   },
   "active": "fde47583abc3684f",
   "lastOpenFiles": [
+    "Cloud/Azure/Azure-Administration/Azure-Manage-Identities-And-Governance/Azure-Administration-Azure-Policies.md",
+    "Cloud/Azure/Azure-Administration/Azure-Manage-Identities-And-Governance/Azure-Administration-Microsoft-Entra-ID-Administration.md",
     "Tools/Detection-And-Monitoring/Velociraptor.md",
     "Tools/Query-Languages/VQL.md",
     "Tools/Query-Languages/Kibana.md",
     "Tools/Query-Languages/SPL.md",
     "Tools/Query-Languages/Kusto.md",
     "Tools/Query-Languages",
-    "Cloud/Azure/Azure-Administration/Azure-Manage-Identities-And-Governance/Azure-Administration-Microsoft-Entra-ID-Administration.md",
     "Tools/C2/Sliver/Sliver-Cheatsheet.md",
     "Development/Software-Development-Paradigms/Software-Development-Lifecycle.md",
     "Development/Software-Development-Paradigms/Solid-Design-Principles.md",
@@ -142,7 +143,6 @@
     "Excalidraw/azure-updateandfault-domains.excalidraw.md",
     "Cloud/Azure/Azure-Administration/Azure-Manage-And-Implement-Storage-In-Azure/Azure-Administration-Azure-Disks-Paged-Blobs.md",
     "Cloud/Azure/Azure-Administration/Azure-Manage-And-Implement-Storage-In-Azure/Azure-Administration-Blob-Storage.md",
-    "Cloud/Azure/Azure-Administration/Azure-Manage-And-Implement-Storage-In-Azure/Azure-Administration-Storage-Accounts.md",
     "Images/velociraptorofficialdocsimage-oneofthebestimageseveraboutdinosaurs.png",
     "Cloud/Azure/Azure-Administration/Azure-Storage/Untitled",
     "Images/azureprivatedns.png",

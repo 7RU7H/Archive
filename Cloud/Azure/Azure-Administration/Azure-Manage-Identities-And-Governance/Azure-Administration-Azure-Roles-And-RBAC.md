@@ -5,33 +5,43 @@
 Azure AD roles are used to manage Azure AD resources in a directory such as:
 - Create units
 - Edit units
-- Assign adminstrative roles to others
+- Assign administrative roles to others
 - Reset user passwords
 - Manage user licenses
 - Manage domains
+  
+Azure access management roles
+- Classic subscription administrator roles
+- Azure role-based access control (RBAC) roles
+- Azure Active Directory (Azure AD) administrator roles 
+ 
 Built-In Azure AD Roles:
 - Global Administrator - Full access to everything
-- User Administrator - Full access to creat and manage users
-- Billing Administrator - Make purchases, maneg subscriptions and support tickets
+- User Administrator - Full access to create and manage users
+- Billing Administrator - Make purchases, manage subscriptions and support tickets
+
+
 
 Governance is about enforcement of rules and ensuring proper functioning to standards. 
 - Policies  - WHAT 
 - [[Azure-Administration-Azure-Roles-And-RBAC]] - WHO
 - Budget - HOW MUCH
 
-Regarding [[Azure-Administration-Microsoft-Entra-ID-Administration]], do not use Classic subcription Roles use either RBAC or [Azure AD Administrator roles](https://learn.microsoft.com/en-us/azure/active-directory/roles/permissions-reference):
+Regarding [[Azure-Administration-Microsoft-Entra-ID-Administration]], do not use Classic subscription Roles use either RBAC or [Azure AD Administrator roles](https://learn.microsoft.com/en-us/azure/active-directory/roles/permissions-reference):
 ![1000](azurerolerbacandadminroles.png)
 Azure AD Roles are used to manage resources in Azure AD; Azure RBAC role provide more granular access management for Azure resources.
 
 #### Differentiation 
 
 Azure Policies vs. Azure Roles (RBAC)
+
 Azure Polices | Azure Roles
 --- | ---
 Ensure compliance of resources | Control access to resources
 Does not restrict actions | Manages User actions at different scopes - does restict on Azure Resources
 
 Azure AD Roles vs. Azure Roles (RBAC)
+
 Azure AD Roles | Azure Roles
 --- | ---
 Controls access of AD resources | Control access to Azure resources
@@ -44,18 +54,18 @@ Controls access of AD resources | Control access to Azure resources
 
 Role-based access control (RBAC) is a mechanism that can help you manage who can access your Azure resources. RBAC lets you determine what operations specific users can do on specific resources, and control what areas of a resource each user can access.
 
-Azure RBAC - Organizations using public cloud are concerned about:
-1. Ensuring that when people leave the organization, they lose access to resources in the cloud.
+Azure RBAC - Organisations using public cloud are concerned about:
+1. Ensuring that when people leave the organisation, they lose access to resources in the cloud.
 2. Striking the right balance between autonomy and central governance
 
 Fundamental Roles of Azure RBAC
 ![](azurefundamentalrbacroles.png)
 
-Azure RBAC is an allow model; `NotActions` to create a set of not allowed permissions that are then substracted from `Actions` to compute the effective permissions - for example the default [Contributor](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles#contributor) role :
+Azure RBAC is an allow model; `NotActions` to create a set of not allowed permissions that are then subtracted from `Actions` to compute the effective permissions - for example the default [Contributor](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles#contributor) role :
 -   Delete roles and role assignments
 -   Create roles and role assignments
 -   Grant the caller User Access Administrator access at the tenant scope
--   Create or update any blueprint artifacts
+-   Create or update any blueprint artefacts
 -   Delete any blueprint artifacts
 `Contributor` is for Admin grant user resource control access.. 
 
@@ -93,7 +103,7 @@ RBAC core concepts:
 		- Group - Groups Level Roles
 		- If Identity Protect - Security Roles
 		- If MFA - Authentication Roles 
-		- Privileged Role - Privileged Role Adminstrator
+		- Privileged Role - Privileged Role Administrator
 		- Users  - User Admin
 		- Support - Service Support Admin plus relevant service 
 	- Do not use with 
@@ -134,7 +144,7 @@ az role definition list --name "Contributor" --output json --query '[].{actions:
 [List Azure role definitions - Azure RBAC | Microsoft Learn](https://learn.microsoft.com/en-us/azure/role-based-access-control/role-definitions-list)
 
 Considerations:
-- job role vs resposibitilies, work scenarios - taskes - and miminum requriement necessary 
+- job role vs responsibilities, work scenarios - tasks - and minimum requirement necessary 
 - Scope of permissions
 - Builtin is better most of the time than custom - custom creates security overhead!
 - Assignments are also Deny not just allow - a deny assignment attaches a set of deny actions to a user, group, or service principal at a particular scope for the purpose of denying access.
@@ -143,7 +153,7 @@ Considerations:
 #### Role Creation
 
 Beware - [Azure role definitions](https://learn.microsoft.com/en-us/azure/role-based-access-control/role-definitions) - Property names will change whether its: 
-- Azure Powershell 
+- Azure PowerShell 
 ```powershell
 Name
 Id
