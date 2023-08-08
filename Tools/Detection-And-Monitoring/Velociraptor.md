@@ -16,7 +16,7 @@ Created by Mike Cohen, a former Google employee who worked on tools such as [GRR
 
 Additional resources
 - [https://docs.velociraptor.app/training/](https://docs.velociraptor.app/training/)
-- [https://docs.velociraptor.app/blog/](https://docs.velociraptor.app/blog/)
+- [https://docs.velociraptor.app/blog/](https://docs.velociraptor.app/blog/)Per the [documentation](https://docs.velociraptor.app/docs/vql/artifacts/), "_Velociraptor allows packaging VQL queries inside mini-programs called Artifacts. An artifact is simply a structured YAML file containing a query, with a name attached to it. This allows Velociraptor users to search for the query by name or description and simply run the query on the endpoint without necessarily needing to understand or type the query into the UI_".
 - [https://docs.velociraptor.app/presentations/](https://docs.velociraptor.app/presentations/)
 - [Subscriber room only - THM Velociraptor Room - deployment setup for testing](https://tryhackme.com/room/velociraptorhp)
 - [John Hammond YouTube - Mass Digital Forensics & Incident Response with Velociraptor - With creator Mike Cohen and Matt Green from Rapid7](https://www.youtube.com/watch?v=M7bMfdmWR7A)
@@ -51,8 +51,17 @@ Navigation:
 						- Specify Resources
 						- Review
 						- Launch
-		- VFS (Client Virtual Filesystem)
-		- Overview
+		- VFS (Client Virtual Filesystem) - [documentation](https://docs.velociraptor.app/docs/gui/vfs/): *"The VFS is simply a server side cache of the files on the endpoint. It is merely a familiar GUI to allow inspection of the client’s filesystem"*
+			- Four accessors - filesystem access drivers:
+				- file - uses operating system APIs to access files
+				- ntfs - uses raw NTFS parsing to access low level files
+				- registry - uses operating system APIs to access the Windows registry
+				- artefacts - previously run collections
+			- Buttons:
+				1. Refresh the current directory (sync its listing from the client)
+				2. Recursively refresh this directory (sync its listing from the client)
+				3. Recursively download this directory from the client
+		- Overview - Overview
 		- `VQL Drillown` view shows:
 			- Orange - Memory usage over a 24 hours time-span
 			- Blue - CPU usage over a 24 hours time-span
@@ -70,22 +79,13 @@ Navigation:
 	- Collected Artefacts
 	- Client Events
 
-
-
-
-
-
-
 #### VQL
 
-Get all the unique types and count of signal rules from `Hayabusa` being alerted on. 
-```sql
+For cheatsheet on VQL visit [[VQL]]
 
-SELECT * , count()  
-FROM source(artifact="Windows.EventLogs.Hayabusa/Results")
-GROUP BY RuleTitle
-```
+#### Artefacts
 
+Per the [documentation](https://docs.velociraptor.app/docs/vql/artifacts/), "_Velociraptor allows packaging VQL queries inside mini-programs called Artifacts. An artifact is simply a structured YAML file containing a query, with a name attached to it. This allows Velociraptor users to search for the query by name or description and simply run the query on the endpoint without necessarily needing to understand or type the query into the UI_".
 
 #### Deployment 
 

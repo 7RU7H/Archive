@@ -83,7 +83,7 @@ Improvement on SSDLC as someone forgot that security bugs existed, even though t
 - Planning (Feasibility Stage) and Risk Assessment Phase: 
 	- Define scope and purpose of the application
 	- Per planned feature gather all possible security considerations that promote security by design
-- Requirements Definition and amicroservicedditional Risk Assessment Phase: 
+- Requirements Definition and Risk Assessment Phase: 
 	- Per feature's requirements gather all possible security considerations that promote security by design
 	- Define prototype ideas and gathering all the necessary details, which may be in the form of:
 		- Making a list of all the requirements for the prototype system  

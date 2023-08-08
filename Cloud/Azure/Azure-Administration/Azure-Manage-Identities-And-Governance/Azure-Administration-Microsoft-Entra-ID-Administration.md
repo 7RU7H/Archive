@@ -14,7 +14,8 @@ See [[Active-Directory-Defined]] for on-premise AD definitions and descriptions.
 - Web-Application - IpD - google login 
 - External resources like Microsoft 365, the Azure portal, and SaaS applications.
 - Cloud apps developed for your organisation.
-
+- Flat - No OUs or GPOs
+ 
 Internal Resources | External  Resources
 --- | --- 
 Application within your internal network | Microsoft Office 365
@@ -82,7 +83,7 @@ You manage only users, groups, and policies - unless you deploy AD DS.
 
 #### Microsoft Entra ID  Domain Services 
 
-Microsoft Entra ID   Domain Services - some AD domain services are not available in the cloud - 
+Microsoft Entra ID Domain Services - some AD domain services are not available in the cloud - 
 Microsoft Entra ID  Directory Domain Services provides managed domain services such as:
 - Domain Joins
 - Group policies
@@ -91,12 +92,12 @@ Microsoft Entra ID  Directory Domain Services provides managed domain services s
 
 #### Microsoft Entra ID Connect
 
-Microsoft Entra ID  Connect is hybrid service to connect on-premise to Azure Account
+Microsoft Entra ID Connect is hybrid service to connect on-premise to Azure Account
 
 Password hash synchronization - sync on-premise AD with Cloud AD
-Pass-through authenication - sign-on with the same password for local and cloud AD
+Pass-through authentication - sign-on with the same password for local and cloud AD
 Federation integration - hybrid environment for local AD FS infrastructure - certificate renewal
-Synchronization - syncing data 
+Synchronisation - syncing data 
 Health Monitoring - monitoring in Azure Portal
 
 #### Microsoft Entra ID  join
@@ -108,7 +109,7 @@ Features:
 - Requires:
 	- Connection
 	- Register - register to manage
-	- Join - extension of registering a device and changes the local state of the device to enable sign-in from organizational account instead of personal 
+	- Join - extension of registering a device and changes the local state of the device to enable sign-in from organisational account instead of personal 
  - Potential combination of registration with other solutions
 
 ![](azureadbenefitsofazureadjoin.png)
@@ -201,7 +202,7 @@ Manage Tenants
 Create a Tenant
 `All Services -> Microsoft Entra ID  -> Manage Tenants -> Create`
 Configure Tenant
-`Create a Tenant -> Configuration -> Name -> Review and CReate -> Create`
+`Create a Tenant -> Configuration -> Name -> Review and Create -> Create`
 
 License Management
 `Search Microsoft Entra ID  -> Microsoft Entra ID  -> Licenses`

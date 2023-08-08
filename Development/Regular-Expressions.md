@@ -55,11 +55,11 @@ acb? # Will match ab and abc
 
 # Starting with 
 # Must be outside of square brackets else it will be consider as exclude single character 
-^ # start with character
+^PATTERN # start with character
 
 # Ending with
 # Must be inside of square brackets else it will be consider as exclude single character 
-$ # ends with character
+PATTERN$ # ends with character
 
 # Grouping
 ( )

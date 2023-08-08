@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud/Kubernetes/Kubernetes.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Manage-Identities-And-Governance/Azure-Administration-Microsoft-Entra-ID-Administration.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#excalidraw",
+                "query": "0>",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cloud/Kubernetes/Kubernetes.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Manage-Identities-And-Governance/Azure-Administration-Microsoft-Entra-ID-Administration.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,6 +115,18 @@
   },
   "active": "fde47583abc3684f",
   "lastOpenFiles": [
+    "Tools/Detection-And-Monitoring/Velociraptor.md",
+    "Tools/Query-Languages/VQL.md",
+    "Tools/Query-Languages/Kibana.md",
+    "Tools/Query-Languages/SPL.md",
+    "Tools/Query-Languages/Kusto.md",
+    "Tools/Query-Languages",
+    "Cloud/Azure/Azure-Administration/Azure-Manage-Identities-And-Governance/Azure-Administration-Microsoft-Entra-ID-Administration.md",
+    "Tools/C2/Sliver/Sliver-Cheatsheet.md",
+    "Development/Software-Development-Paradigms/Software-Development-Lifecycle.md",
+    "Development/Software-Development-Paradigms/Solid-Design-Principles.md",
+    "Development/Regular-Expressions.md",
+    "Cloud/Kubernetes/Kubernetes.md",
     "Cloud/Azure/Azure-Administration/Azure-Deploy-And-Manage-Compute-Resources/Azure-Administration-Azure-Kubernetes-Services.md",
     "Images/azure-aksscalingimplementation.png",
     "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
@@ -131,16 +143,6 @@
     "Cloud/Azure/Azure-Administration/Azure-Manage-And-Implement-Storage-In-Azure/Azure-Administration-Azure-Disks-Paged-Blobs.md",
     "Cloud/Azure/Azure-Administration/Azure-Manage-And-Implement-Storage-In-Azure/Azure-Administration-Blob-Storage.md",
     "Cloud/Azure/Azure-Administration/Azure-Manage-And-Implement-Storage-In-Azure/Azure-Administration-Storage-Accounts.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Important-Linux-Locations.md",
-    "Tools/Detection-And-Monitoring/Velociraptor.md",
-    "Tools/Debuggers-IDEs-Editors/IDEs/Microsoft-Visual-Studios.md",
-    "Development/Malware/Malware-Techniques/Malware-Techniques-Spoofing-Processes.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
-    "Windows/Windows-Commands/Windows-Commands.md",
-    "Exploitation/Development/Weaponizing-Vulnerabilities.md",
-    "Cloud/Azure/Azure-Administration/Azure-Manage-And-Implement-Storage-In-Azure/Azure-Administration-Azure-Storage-Tooling.md",
-    "Cloud/Cloud-Hacking/Azure-Hacking.md",
-    "Cloud/Azure/Azure-Administration/Azure-Manage-And-Implement-Storage-In-Azure/Azure-Administration-Files-And-File-Sync.md",
     "Images/velociraptorofficialdocsimage-oneofthebestimageseveraboutdinosaurs.png",
     "Cloud/Azure/Azure-Administration/Azure-Storage/Untitled",
     "Images/azureprivatedns.png",
@@ -158,7 +160,6 @@
     "Images/azurepremiumfirewallfeatures.png",
     "Images/azurefirewallfeatures.png",
     "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks",
-    "Images/azureloganalyticsaccesscontrol.png",
-    "Cloud/Azure/Azure-Administration/sedmB5DSu"
+    "Images/azureloganalyticsaccesscontrol.png"
   ]
 }
