@@ -2,7 +2,7 @@
 # Azure-Administration-Application-Gateways
 
 
-Azure Application Gateway is a aaplication-level routing and load balancing service that operates on OSI Layer 7 - Application Layer of the [[OSI-Model]]. 
+Azure Application Gateway is a application-level routing and load balancing service that operates on OSI Layer 7 - Application Layer of the [[OSI-Model]]. 
 
 Azure Web Application Firewall (WAF - but Azure) polices can be attached to an Application Gatewayto porivide addition security composed of:
 - Frontends
