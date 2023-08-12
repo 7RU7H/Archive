@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+                "file": "Security-Disciplines/Blue-Team/Security-Engineer-Role.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 508.5110321044922
+    "width": 200
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+                "file": "Security-Disciplines/Blue-Team/Security-Engineer-Role.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -145,8 +145,15 @@
   },
   "active": "31107ec091c748a2",
   "lastOpenFiles": [
-    "Cloud/Azure/Azure-Administration/Azure-Deploy-And-Manage-Compute-Resources/Azure-Administration-Scale-And-Availability-Sets.md",
+    "Security-Disciplines/Blue-Team/Windows-Blueteam.md",
+    "Security-Disciplines/Blue-Team/Security-Engineer-Role.md",
+    "Security-Disciplines/Blue-Team/Linux-Blueteam.md",
+    "Security-Disciplines/Blue-Team/Endpoint-Security.md",
+    "Security-Disciplines/Blue-Team/Defense-In-Depth.md",
+    "Security-Disciplines/Blue-Team/Auditing-And-Monitoring.md",
+    "Security-Disciplines/Blue-Team/Blue-Team-Key-Documents.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+    "Cloud/Azure/Azure-Administration/Azure-Deploy-And-Manage-Compute-Resources/Azure-Administration-Scale-And-Availability-Sets.md",
     "Cloud/Kubernetes/Kubernetes.md",
     "[Move.md",
     "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Private-Link-And-Endpoints.md",
@@ -164,13 +171,6 @@
     "2023-08-11.md",
     "Security-Disciplines/Cyber-Threat-Intelligence/CTI-And-Containment.md",
     "Security-Disciplines/Cyber-Threat-Intelligence/Cyber-Threat-Intelligence.md",
-    "Linux/Linux-Concepts/Linux-Permissions-and-Rights.md",
-    "Linux/Linux-Concepts/Linux-Common-File-Extensions.md",
-    "Tools/Cross-OS/Curl-Cheatsheet.md",
-    "Development/APIs/API-Fuzzing.md",
-    "Brain-Hacking/Actions/Learning-To-Hack.md",
-    "Brain-Hacking/Actions/Personality.md",
-    "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
     "Reconnaissance/OSINT",
     "Tools/OSINT",
     "Images/wheredoyouthinkitisdonefrom.png",
