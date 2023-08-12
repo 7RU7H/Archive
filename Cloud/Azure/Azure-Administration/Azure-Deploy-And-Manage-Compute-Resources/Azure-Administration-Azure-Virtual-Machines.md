@@ -23,7 +23,7 @@ Components created with the Virtual Machine:
 - Public IP address - Address that you will use to public access the VM
 - Virtual Network (VNet) - The network where your VM will reside
 
-Consider reading - [[Cloud-Initialization]]; regarding VMs in Azure they require some forethought and virtual infrastructure - Questions to ask what is the purpose of the VM, where should it then be availability in security, location, use, etc? Generally the cost part is then tweakable or more obvious
+Consider reading - [[Cloud-Initialisation]]; regarding VMs in Azure they require some forethought and virtual infrastructure - Questions to ask what is the purpose of the VM, where should it then be availability in security, location, use, etc? Generally the cost part is then tweakable or more obvious
 1. A network - How is the VM accessed and why
 2. A name - Does it fit a good naming and tag scheme to keep track of why you need it
 	- best to determine how tagging will fit within the large context   

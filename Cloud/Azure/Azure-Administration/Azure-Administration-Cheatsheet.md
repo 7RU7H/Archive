@@ -2258,6 +2258,19 @@ Create a Stored Access Policy for a Container
 az storage container policy create -name $polcyName --container-name $container --start $startTime-UTC --expiry $expiryTime-UTC --permissions $perm --account-key $storageAccountKey --account $storageName
 ```
 
+Create a SAS token for Blob storage and create a URI
+```bash
+az storage container generate-sas \
+    --account-name $storageAccount \
+    --container-name $container \
+	--name $blob \
+    --permissions acdrw \
+    --expiry $insertDate \
+    --auth-mode login \
+    --full-uri
+```
+
+
 Send HTTP requests with `Get-AzWebApp`
 ```bash
 $webapp = Get-AzWebApp -ResourceGroupName $rgName

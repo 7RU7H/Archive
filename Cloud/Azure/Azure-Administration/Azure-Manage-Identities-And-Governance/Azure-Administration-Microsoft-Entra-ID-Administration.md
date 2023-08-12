@@ -83,7 +83,7 @@ You manage only users, groups, and policies - unless you deploy AD DS.
 
 #### Microsoft Entra ID  Domain Services 
 
-Microsoft Entra ID Domain Services - some AD domain services are not available in the cloud - 
+Microsoft Entra ID Domain Services - some AD domain services are not available in the cloud.
 Microsoft Entra ID  Directory Domain Services provides managed domain services such as:
 - Domain Joins
 - Group policies
@@ -100,7 +100,7 @@ Federation integration - hybrid environment for local AD FS infrastructure - cer
 Synchronisation - syncing data 
 Health Monitoring - monitoring in Azure Portal
 
-#### Microsoft Entra ID  join
+#### Microsoft Entra ID Join
 
 Microsoft Entra ID enables single sign-on (SSO) to devices, applications, and services from anywhere. Securing is vital for compliance!
 Microsoft Entra ID  join - for device joining:
@@ -206,7 +206,7 @@ Configure Tenant
 
 License Management
 `Search Microsoft Entra ID  -> Microsoft Entra ID  -> Licenses`
-To assigna  license
+To assign a  license
 `All Products -> Assign`
 
 #### Create a Users, Groups and Manage Them  
@@ -292,7 +292,7 @@ az ad user delete
 New-AzureADUser
 # Remove a user
 Remove-AzADUser 
-wEPDwUKMTI3ODM5MzQ0Mg9kFgICAw8WAh4HZW5jdHlwZQUTbXVsdGlwYXJ0L2Zvcm0tZGF0YWRkWOy0CDxpPqG7BtAdOq8rOXuncl8=```
+```
 
 Bulk user and member creation:
 ```powershell

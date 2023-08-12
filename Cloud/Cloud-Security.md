@@ -226,7 +226,7 @@ AWS - Systems Manager
     - skill readiness
     - organisation alignment
 
-- Phishing Training
+- [[Phishing]] Training
 
 
 ## References
