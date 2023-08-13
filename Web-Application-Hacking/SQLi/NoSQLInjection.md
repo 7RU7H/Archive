@@ -6,7 +6,7 @@ NoSQL databases are non-relational meaning they do not store information in regu
 
 #### MongoDB
 
-[MongoDB](https://www.mongodb.com/) is JSON-like, document store type NoSQL database. Its data is a JSON-like structure called a **Document**. Documents are stored in an associative array with an arbitrary number of fields. These can be store heirarchically called **Collections**. Collections are the equivalent of tables in relational databases; multiple collections are grouped in **databases**. See [[MongoDB]].
+[MongoDB](https://www.mongodb.com/) is JSON-like, document store type NoSQL database. Its data is a JSON-like structure called a **Document**. Documents are stored in an associative array with an arbitrary number of fields. These can be store hierarchically called **Collections**. Collections are the equivalent of tables in relational databases; multiple collections are grouped in **databases**. See [[MongoDB]].
 
 I uses NoSQL queries, not SQL-like:
 ```nosql
@@ -14,17 +14,17 @@ I uses NoSQL queries, not SQL-like:
 ['KEY' => 'VALUE', 'KEY' => 'VALUE']
 ['KEY' => ['$lt'=>'1337']]` # Logic can eb used to filter
 ```
-Although keys in this instance can be strings, properties to which the value is some string relationed to it storage key: `["username" : "admin"]
+Although keys in this instance can be strings, properties to which the value is some string relation to it storage key: `["username" : "admin"]
 
 #### MongoDB injection
 
 Due NoSQL queries requiring nested associative arrays a NoSQL injection must be capable of injecting arrays into the application.
 
-This will authenication bypass to the first user in the database:  
+This will authentication bypass to the first user in the database:  
 `user[$ne]=xxxx&pass[$ne]=yyyy` or `user[$gt]=xxxx&pass[$gt]=yyyy`  
 query performed:  
 `['username'=>['$ne'=>['yyyy'] ], 'password'=>['$ne'=>'yyyy']]`
-To get the nth users, create filter with $nin by specifying criteria where the desired documents have some field, not in a list of values:  
+To get the nth users, create filter with `$nin` by specifying criteria where the desired documents have some field, not in a list of values:  
 `user[$nin][]=xxxx&pass[$ne]=yyyy`  
 The query performed:  
 `['username'=>['$nin'=>['admin'] ], 'password'=>['$ne'=>'00001111']]`

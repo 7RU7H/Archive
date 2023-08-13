@@ -1,6 +1,6 @@
 # DNS Active Recon
 
-[DNS](https://en.wikipedia.org/wiki/Domain_Name_System) is a distributed database responsible for translating domain names into IP addresses. [[DNS]] for conceptual stuff and for passive DNS recon [[DNS-Recon-Passive]].
+[DNS](https://en.wikipedia.org/wiki/Domain_Name_System) is a distributed database responsible for translating domain names into IP addresses. [[DNS-Defined]] for conceptual stuff and for passive DNS recon [[DNS-Recon-Passive]].
 
 - Priority - DNS Priority - The lower the number, the higher the priority. [infosecinstitute -dns-hacking](https://resources.infosecinstitute.com/topic/dns-hacking/)
 
@@ -163,7 +163,7 @@ site:$domain.$tld
 
 ## References
 
-[Bharath's "A penetration tester’s guide to subdomain enumeration" blog featured in Niteteam4!](https://blog.appsecco.com/a-penetration-testers-guide-to-sub-domain-enumeration-7d842d5570f6)
+[Bharath's "A penetration tester’s guide to subdomain enumeration" blog featured in Niteteam4](https://blog.appsecco.com/a-penetration-testers-guide-to-sub-domain-enumeration-7d842d5570f6)
 [Wonkastocks](https://pastebin.com/qLitw9eT)
 [Infinitelogins](https://infinitelogins.com/2020/12/09/enumerating-dns-port-53/)
 [Forward/Reverse Lookup](https://www.mustbegeek.com/understanding-forward-and-reverse-lookup-zones-in-dns/)

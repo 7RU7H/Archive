@@ -147,8 +147,10 @@ Improvement on SSDLC as someone forgot that security bugs existed, even though t
 #### Secure Code Review and Analysis
 
 - Types
-	- Static Application Security Testing (SAST) 
-		- white-box testing and analysis of source code
+	- [[Static-Application-Security-Testing]] (SAST) 
+		- White-box testing and analysis of source code
+			- **CI/CD integration:** Each time a pull request or a merge is made, SAST tools will check the code for vulnerabilities. 
+			- **IDE integration:** SAST tools can be integrated into IDEs 
 	- Software Composition Analysis (SCA) 
 		- automated scanning of dependencies for security vulnerabilities
 	- Dynamic Application Security Testing (DAST) 
@@ -208,3 +210,4 @@ OWASP S-SDLC
 
 [THM Software Development Lifecycle](https://tryhackme.com/room/sdlc)
 [THM Secure Software Development Lifecycle](https://tryhackme.com/room/securesdlc)
+[THM SAST Room](https://tryhackme.com/room/sast)
