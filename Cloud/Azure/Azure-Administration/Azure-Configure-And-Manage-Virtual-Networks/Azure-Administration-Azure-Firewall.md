@@ -74,7 +74,7 @@ Type Priority - NAT Rule before Network Rule before Application Rule.
 - **Application** rules define fully qualified domain names (FQDNs) that can be accessed from a Subnet
 
 Azure Firewall Rules are configured for: 
-- **NAT** - Azure Firewall destination network address translation (DNAT) rules to translate and filter inbound traffic to your subnetsThe Azure Firewall signatures/rulesets include:
+- **NAT** - Azure Firewall destination network address translation (DNAT) rules to translate and filter inbound traffic to your subnets. The Azure Firewall signatures/rulesets include:
 	- **Name**: Provide a label for the rule.
 	- **Protocol**: Choose the TCP or UDP protocol.
 	- **Source Address**: Identify the address as * (internet), a specific internet address, or a classless inter-domain routing (CIDR) block.
