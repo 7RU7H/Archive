@@ -1279,7 +1279,7 @@ Tags:
 Create a staging deployment slot and configure deployment 
 `App Services -> $App -> Deployment Slots -> + Add Slot`
 Then
-`$App -> Deplyment Centre -> Select a Source -> Save`
+`$App -> Deployment Centre -> Select a Source -> Save`
 
 Scale up/out Azure App Services
 `Search -> App Services -> Manual scale / Custom Autoscale`
@@ -1346,6 +1346,18 @@ Configure Application
 			- **Share name**: For advanced configuration, the file share name.
 			- **Access key**: For advanced configuration, the access key.
 			- **Mount path**: The absolute path in your container to mount the custom storage.
+
+`$app -> Certificates` for either: 
+
+|  |  | 
+|---|---|
+|Create a free App Service managed certificate|A private certificate that's free of charge and easy to use if you just need to secure your [custom domain](https://learn.microsoft.com/en-us/azure/app-service/app-service-web-tutorial-custom-domain) in App Service.|
+|Import an App Service certificate|A private certificate that's managed by Azure. It combines the simplicity of automated certificate management and the flexibility of renewal and export options.|
+|Import a certificate from Key Vault|Useful if you use [Azure Key Vault](https://learn.microsoft.com/en-us/azure/key-vault/) to manage your [PKCS12 certificates](https://wikipedia.org/wiki/PKCS_12). See [Private certificate requirements](https://learn.microsoft.com/en-us/azure/app-service/configure-ssl-certificate?tabs=apex#private-certificate-requirements).|
+|Upload a private certificate|If you already have a private certificate from a third-party provider, you can upload it. See [Private certificate requirements](https://learn.microsoft.com/en-us/azure/app-service/configure-ssl-certificate?tabs=apex#private-certificate-requirements).|
+|Upload a public certificate|Public certificates aren't used to secure custom domains, but you can load them into your code if you need them to access remote resources.|
+
+
 
 Create a Custom Domain for an Azure App Service
 `Search -> App Services -> Custom Domains`

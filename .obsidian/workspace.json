@@ -11,8 +11,12 @@
             "id": "985c2f33802fce88",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md"
+              }
             }
           }
         ]
@@ -140,6 +148,7 @@
   },
   "active": "985c2f33802fce88",
   "lastOpenFiles": [
+    "Cloud/Azure/Azure-Administration/Azure-Administration.md",
     "Web-Application-Hacking/SQLi/NoSQLInjection.md",
     "Services/Databases/MYSQL/MySQL-Cheatsheet.md",
     "Development/Software-Development-Paradigms/Software-Development-Lifecycle.md",
@@ -158,7 +167,6 @@
     "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Network-And-Application-Security-Groups.md",
     "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Network-Routes-And-Endpoints.md",
     "Cloud/Azure/Azure-Administration/Azure-Manage-And-Implement-Storage-In-Azure/Azure-Administration-Azure-Storage-Tooling.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration.md",
     "Cloud/Cloud-Security.md",
     "Cloud/Cloud-Initialisation.md",
     "Cloud/Azure/Azure-Administration/Azure-Manage-Identities-And-Governance/Azure-Administration-AD-Device-Management.md",
