@@ -42,6 +42,7 @@ Associating Public IP to a resource
 Associating Private IP to a resource 
 ![1080](azureassociatingprivateips.png)
 
+[View Azure virtual network topology | Microsoft Learn](https://learn.microsoft.com/en-us/azure/network-watcher/view-network-topology)
 
 #### Creating Virtual Networks
 
@@ -192,12 +193,7 @@ Application Security Groups - ASG tags are tags that help when the network is sp
 
 #### Azure Load Balancer
 
-
-
-
-[View Azure virtual network topology | Microsoft Learn](https://learn.microsoft.com/en-us/azure/network-watcher/view-network-topology)
-
-
+[[Azure-Administrator-Load-Balancer]]
 
 #### Designing an IP addressing schema for your Azure deployment
 

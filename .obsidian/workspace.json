@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+                "file": "Artificial-Intelligence/TALK-Context-Plus-Questions-How-GPT-based-AI-Will-Disrupt-Security.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 252.5
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+                "file": "Artificial-Intelligence/TALK-Context-Plus-Questions-How-GPT-based-AI-Will-Disrupt-Security.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+                "file": "Artificial-Intelligence/TALK-Context-Plus-Questions-How-GPT-based-AI-Will-Disrupt-Security.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md"
+                "file": "Artificial-Intelligence/TALK-Context-Plus-Questions-How-GPT-based-AI-Will-Disrupt-Security.md"
               }
             }
           }
@@ -143,12 +143,29 @@
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
   "active": "985c2f33802fce88",
   "lastOpenFiles": [
+    "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Backup-Resources/Azure-Administration-Log-Analytics.md",
+    "Artificial-Intelligence/TALK-Context-Plus-Questions-How-GPT-based-AI-Will-Disrupt-Security.md",
+    "Untitled",
+    "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Network-Routes-And-Endpoints.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+    "Cloud/Azure/Azure-Administration/AZ-104-Exam-Resources.md",
+    "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Private-Link-And-Endpoints.md",
+    "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Virtual-Networking-Peering.md",
+    "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Backup-Resources/Azure-Administration-Network-Watcher.md",
+    "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Virtual-WAN.md",
+    "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administrator-Load-Balancer.md",
+    "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Network-And-Application-Security-Groups.md",
+    "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Configure-Virtual-Networks.md",
+    "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Azure-Firewall.md",
+    "Images/Excalidraw/azure-virtualnetworking-diagram.excalidraw.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration.md",
+    "Reconnaissance/Active-Information-Gathering/DNS/DNS-Active-Recon.md",
     "Web-Application-Hacking/SQLi/NoSQLInjection.md",
     "Services/Databases/MYSQL/MySQL-Cheatsheet.md",
     "Development/Software-Development-Paradigms/Software-Development-Lifecycle.md",
@@ -159,21 +176,6 @@
     "Services/Databases/MYSQL/MySQL-Hacking.md",
     "Exploitation/CVEs/CVE-2021-3560.md",
     "Exploitation/CVEs/CVE-2022-26134.md",
-    "Exploitation/CVEs/CVE-2023-23397.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
-    "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Azure-Firewall.md",
-    "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Virtual-Networking-Peering.md",
-    "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Private-Link-And-Endpoints.md",
-    "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Network-And-Application-Security-Groups.md",
-    "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Network-Routes-And-Endpoints.md",
-    "Cloud/Azure/Azure-Administration/Azure-Manage-And-Implement-Storage-In-Azure/Azure-Administration-Azure-Storage-Tooling.md",
-    "Cloud/Cloud-Security.md",
-    "Cloud/Cloud-Initialisation.md",
-    "Cloud/Azure/Azure-Administration/Azure-Manage-Identities-And-Governance/Azure-Administration-AD-Device-Management.md",
-    "Cloud/Azure/Azure-Administration/Azure-Manage-Identities-And-Governance/Azure-Administration-Azure-Policies.md",
-    "Cloud/Azure/Azure-Administration/Azure-Manage-Identities-And-Governance/Azure-Administration-Microsoft-Entra-ID-Administration.md",
-    "Cloud/Azure/Azure-Administration/Azure-Manage-Identities-And-Governance/Azure-Administration-Cloud-Governance.md",
-    "Cloud/Azure/Azure-Administration/Azure-Manage-Identities-And-Governance/Azure-Administration-Azure-Roles-And-RBAC.md",
     "Reconnaissance/OSINT",
     "Tools/OSINT",
     "Images/wheredoyouthinkitisdonefrom.png",
@@ -192,7 +194,6 @@
     "Development/Software-Development-Paradigms",
     "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Untitled",
     "Tools/SysInternals/ProcDump",
-    "MacOS",
-    "Post-Exploitation/Stealth/Evasion/Logging-And-Monitoring-Evasion"
+    "MacOS"
   ]
 }

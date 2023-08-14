@@ -471,6 +471,8 @@ Add session persistence to a load balancer
 
 #### NSG Workflow
 
+2 NIC + 1 VNET = Application Security Group
+
 Overview of NSGs
 `Search -> Network Security Groups`
 - Inbound precedence: `Vnet -> NIC`
@@ -1357,7 +1359,7 @@ Configure Application
 |Upload a private certificate|If you already have a private certificate from a third-party provider, you can upload it. See [Private certificate requirements](https://learn.microsoft.com/en-us/azure/app-service/configure-ssl-certificate?tabs=apex#private-certificate-requirements).|
 |Upload a public certificate|Public certificates aren't used to secure custom domains, but you can load them into your code if you need them to access remote resources.|
 
-
+[Beware Caveats!](https://learn.microsoft.com/en-us/azure/app-service/configure-ssl-certificate?tabs=apex)
 
 Create a Custom Domain for an Azure App Service
 `Search -> App Services -> Custom Domains`

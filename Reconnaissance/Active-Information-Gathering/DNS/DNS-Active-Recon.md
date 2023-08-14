@@ -77,7 +77,7 @@ for server in $(host -t ns megacorpone.com | cut -d" " -f4); do host -l megacorp
 
 #### Forward Lookup Brute Forcing
 
-TL;DR - Forward lookup: query hostname for IP - What is the IP of this hostname? Foward lookup is defined as requesting an IP address of a hostname to query both a valid and an invalid hostname, if host successfully resolves a name to an IP, it could indicate a functional server. Check Seclists, [[Wordlist-Library]] and [[Wordlist-Considerations]] for comprehensive subdomain brute-forcing to  automate the forward DNS lookup of common hostnames.
+TL;DR - Forward lookup: query hostname for IP - What is the IP of this hostname? Forward lookup is defined as requesting an IP address of a hostname to query both a valid and an invalid hostname, if host successfully resolves a name to an IP, it could indicate a functional server. Check Seclists, [[Wordlist-Library]] and [[Wordlist-Considerations]] for comprehensive subdomain brute-forcing to  automate the forward DNS lookup of common hostnames.
 ```bash
 for ns in $(cat /usr/share/seclists/Discovery/DNS/$list.txt); do host $ns.$domain.$tld; done
 # Give the output from the above scan IP address with `host` from subnet range from $lowest to $highest  
@@ -103,7 +103,7 @@ Tools to consider
 
 #### DNS Zone Transfer
 
-TL;DR - DNS Zone Transfer - Database replication between related DNS servers in zone file is copied from a master DNS server to a slave server. If you can perform a DNS zone tranfer you can get alot of Network Information that the DNS server is connected to.
+TL;DR - DNS Zone Transfer - Database replication between related DNS servers in zone file is copied from a master DNS server to a slave server. If you can perform a DNS zone transfer you can get alot of Network Information that the DNS server is connected to.
 
 [DNS Zone Transfer](https://en.wikipedia.org/wiki/DNS_zone_transfer) *"also sometimes known by the inducing DNS query type AXFR, is a type of DNS transaction. It is one of the many mechanisms available for administrators to replicate DNS databases across a set of DNS servers. A zone transfer uses the Transmission Control Protocol for transport, and takes the form of a client–server transaction."* The result of a successful zone transfer is the zone file containing information about the entire DNS zone.
 

@@ -40,13 +40,13 @@ Extending On-Premise to Azure with [[IPsec]] tunnels - see [planning table](http
 	- S2S VPN gateways enable multiple VPN connects to different networks if route not policy based
 - Vnet-To-Vnet with IPSec/IKE VPN tunnel
 	- Cross-Region/Subscriptions/Deployment-model 
-- [Highly Available]((https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-highlyavailable) - better VM availbility due to redundancy
+- [Highly Available]((https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-highlyavailable) - better VM availability due to redundancy
 	- Active-Active - both VMs are active
 	- Active-Standby - one is on standby in case of failover
 
 Peering
 - ExpressRoute Private Peering - Connects a network to a virtual network via ExpressRoute Gateway
-	- ExpressRoute circuits enable multiple virtual networks to be connected to a single circuit, but vnet to Vnet better via peering - Big Enterprises want this for it being a private connection, no hops else where connect to Microsoft Backbone Network - not Geopolitical Region locked at the Premium level.
+	- ExpressRoute circuits enable multiple virtual networks to be connected to a single circuit, but VNet to VNet better via peering - Big Enterprises want this for it being a private connection, no hops else where connect to Microsoft Backbone Network - not Geopolitical Region locked at the Premium level.
 	- Can be encrypted, but is not by default - MaxSEC at the edge router provider 
 	- If Fast Path is Enabled it does not go via the Gateway, Gateway is required for routing information, also Fast Path does working for Peering.
 	- MPLS can be connect to backend at carrier neutral connect that can also connect ExpressRoute
@@ -105,7 +105,7 @@ Vnet Peering - requires account with `(Classic) Network Contributor` role
 - Extending Peering 
 	- Hub and spoke network - Central hub for VPN gateway, spoke Vnets
 	- User-defined route (UDR): either a hop to/from VM IP address or VPN Gateway
-	- Service chaining: define UDRs from Vnet to a network virtual appliance or VPN
+	- Service chaining: define UDRs from VNet to a network virtual appliance or VPN
 
 RDP in and Test with:
 ```powershell

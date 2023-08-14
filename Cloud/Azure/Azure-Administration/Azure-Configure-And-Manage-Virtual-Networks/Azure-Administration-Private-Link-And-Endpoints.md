@@ -27,7 +27,7 @@ Benefits:
 - You can deploy multiple Private Link Service resources on the same standard load balancer using different front-end IP configurations.
 - Third-Party providers a can be powered by Private Link
 
-The PaaS service still has a external facing endpoint that some companies do not want even with firewall/authentication - firewalls and authentication are bypassable. 
+The PaaS service still has a external facing endpoint that some companies do not want even with firewall/authentication - firewalls and authentication are bypass-able. 
 
 ## Azure Private Link
 
@@ -51,14 +51,6 @@ Private Endpoint is a network interface that enables a private and secure connec
 Private Endpoint 
 - Unused Private IP address is then mapped to a specified Azure service as a Private Endpoint 
 	- you can map multiple Private Endpoint interface to a single resource, but is not recommended - **Beware Here Be DNS issues**   
-
-
-## Workflows
-
-
-``
-
-
 
 ## References
 
