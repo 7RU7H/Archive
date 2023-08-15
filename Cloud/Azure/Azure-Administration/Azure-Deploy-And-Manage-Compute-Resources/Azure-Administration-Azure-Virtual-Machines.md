@@ -33,7 +33,7 @@ Consider reading - [[Cloud-Initialisation]]; regarding VMs in Azure they require
 	- Temporary disks - do not store on temporary disk, but log temporary data for security
 	- Linux `/dev/sdb`
 		- Windows `D:`
-1. OS - not just Windows, but if you want containerisation use [[Azure-Administration-Azure-Container-Instances]] - What is the user require to do their job? 
+1. OS - not just Windows, but if you want containerisation use [[Azure-Administration-Azure-Container-Registry-And-Instances]] - What is the user require to do their job? 
 	1. Azure Arc for abstraction layer on top of  Kubernetes Clusters
 1. Pricing 
 

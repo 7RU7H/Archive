@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Deploy-And-Manage-Compute-Resources/Azure-Administration-Container-Apps.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Deploy-And-Manage-Compute-Resources/Azure-Administration-Container-Apps.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Deploy-And-Manage-Compute-Resources/Azure-Administration-Container-Apps.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md"
+                "file": "Cloud/Azure/Azure-Administration/Azure-Deploy-And-Manage-Compute-Resources/Azure-Administration-Container-Apps.md"
               }
             }
           }
@@ -149,6 +149,12 @@
   },
   "active": "a44e5f78e57489a3",
   "lastOpenFiles": [
+    "Cloud/Azure/Azure-Administration/Azure-Deploy-And-Manage-Compute-Resources/Azure-Administration-Azure-Container-Registry-And-Instances.md",
+    "Cloud/Azure/Azure-Administration/Azure-Deploy-And-Manage-Compute-Resources/Azure-Administration-Container-Apps.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration.md",
+    "Cloud/Cloud-Hacking/Azure-Hacking.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+    "Cloud/Azure/Azure-Administration/Azure-Deploy-And-Manage-Compute-Resources/Azure-Administration-.md",
     "Tools/Content-Discovery-Tools/Gospider-Cheatsheet.md",
     "Development/Languages/Bash/Useful_Bash.md",
     "Securing-Networks-And-Systems/EDR/Aurora-EDR.md",
@@ -157,7 +163,6 @@
     "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Backup-Resources/Azure-Administration-Log-Analytics.md",
     "Untitled",
     "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Network-Routes-And-Endpoints.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
     "Cloud/Azure/Azure-Administration/AZ-104-Exam-Resources.md",
     "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Private-Link-And-Endpoints.md",
     "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Virtual-Networking-Peering.md",
@@ -168,14 +173,9 @@
     "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Configure-Virtual-Networks.md",
     "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Azure-Firewall.md",
     "Images/Excalidraw/azure-virtualnetworking-diagram.excalidraw.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration.md",
     "Reconnaissance/Active-Information-Gathering/DNS/DNS-Active-Recon.md",
     "Web-Application-Hacking/SQLi/NoSQLInjection.md",
     "Services/Databases/MYSQL/MySQL-Cheatsheet.md",
-    "Development/Software-Development-Paradigms/Software-Development-Lifecycle.md",
-    "Security-Disciplines/Static-Application-Security-Testing.md",
-    "Tools/Debuggers-IDEs-Editors/IDEs/VS-Code.md",
-    "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
     "Reconnaissance/OSINT",
     "Tools/OSINT",
     "Images/wheredoyouthinkitisdonefrom.png",

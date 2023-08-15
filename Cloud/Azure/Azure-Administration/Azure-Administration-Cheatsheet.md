@@ -2456,6 +2456,51 @@ az webapp show \
     --output tsv
 ```
 
+
+Create an Azure Container registry
+```bash
+az group create --name containerRegistry-rg --location $region
+az acr create --resource-group containerRegistry-rg --name $ACR_NAME --sku Premium
+```
+
+Build an Image
+```bash
+az acr build --registry $ACR_NAME --image $imageName
+```
+
+Verify Image
+```bash
+az acr repository list --name $ACR_NAME --output table
+```
+
+Enable the registry account
+```bash 
+az acr update -n $ACR_NAME --admin-enabled true
+az acr credential show --name $ACR_NAME
+```
+
+Deploy and then get IP address of Azure container
+```bash
+# Deploy
+az container create \
+    --resource-group $acrResourceGroup \
+    --name $name \
+    --image $ACR_NAME.azurecr.io/$imageName:$version \
+    --registry-login-server $ACR_NAME.azurecr.io \
+    --ip-address Public \
+    --location $region \
+    --registry-username $adminUsername \
+    --registry-password $adminPassword 
+# Get IP
+az container show --resource-group  $acrResourceGroup --name $name --query ipAddress.ip --output table
+```
+
+Replicate a container to a different Region
+```bash
+az acr replication create --registry $ACR_NAME --location $TargetRegion
+az acr replication list --registry $ACR_NAME --output table
+```
+
 ## References
 
 [John Savill's Microsoft Azure Master Class Part 6 - Networking](https://www.youtube.com/watch?v=K8ePZdLfU7M&t=3511s)

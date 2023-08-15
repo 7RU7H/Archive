@@ -16,7 +16,7 @@ This a hub page group links to all relevant articles under a Azure Administratio
 [[Azure-Administration-Azure-DNS]]
 [[Azure-Administration-Azure-Kubernetes-Services]]
 [[Azure-Administration-Container-Registries]]
-[[Azure-Administration-Azure-Container-Instances]]
+[[Azure-Administration-Azure-Container-Registry-And-Instances]]
 [[Azure-Administration-Scale-And-Availability-Sets]]
 [[Azure-Administration-Azure-Backups]]
 [[Azure-Administration-Log-Analytics]]
@@ -42,6 +42,7 @@ This a hub page group links to all relevant articles under a Azure Administratio
 [[Azure-Administration-Configure-VM-Extensions]]
 [[Azure-Administration-Configure-Azure-App-Service-Plan]]
 [[Azure-Administration-Cloud-Governance]]
+[[Azure-Administration-Container-Apps]]
 
 For the Cheatsheet: [[Azure-Administration-Cheatsheet]]
 

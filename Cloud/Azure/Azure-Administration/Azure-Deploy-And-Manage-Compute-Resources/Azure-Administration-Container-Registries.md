@@ -6,7 +6,7 @@ Azure Container Registry is managed, private Docker Registry service based on th
 Pull images from an Azure container registry to various deployment targets:
 - Kubernetes - see [[Azure-Administration-Azure-Kubernetes-Services]]
 - DC/OS
-- Docker Swarm - see [[Azure-Administration-Azure-Container-Instances]]
+- Docker Swarm - see [[Azure-Administration-Azure-Container-Registry-And-Instances]]
 
 Azure Container Registry (ACR) Tasks allw you to automate OS and framework patching for Docker Containers; triggering of automated builds:
 - Source code updates
