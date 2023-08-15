@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Artificial-Intelligence/TALK-Context-Plus-Questions-How-GPT-based-AI-Will-Disrupt-Security.md",
+                "file": "Securing-Networks-And-Systems/EDR/Aurora-EDR.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "nosql",
+                "query": "EDR",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 252.5
+    "width": 320.5
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Artificial-Intelligence/TALK-Context-Plus-Questions-How-GPT-based-AI-Will-Disrupt-Security.md",
+                "file": "Securing-Networks-And-Systems/EDR/Aurora-EDR.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Artificial-Intelligence/TALK-Context-Plus-Questions-How-GPT-based-AI-Will-Disrupt-Security.md",
+                "file": "Securing-Networks-And-Systems/EDR/Aurora-EDR.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Artificial-Intelligence/TALK-Context-Plus-Questions-How-GPT-based-AI-Will-Disrupt-Security.md"
+                "file": "Securing-Networks-And-Systems/EDR/Aurora-EDR.md"
               }
             }
           }
@@ -149,8 +149,10 @@
   },
   "active": "985c2f33802fce88",
   "lastOpenFiles": [
-    "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Backup-Resources/Azure-Administration-Log-Analytics.md",
+    "Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Red-KOTH-Battlegrounds-Cheatsheet-Windows.md",
+    "Securing-Networks-And-Systems/EDR/Aurora-EDR.md",
     "Artificial-Intelligence/TALK-Context-Plus-Questions-How-GPT-based-AI-Will-Disrupt-Security.md",
+    "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Backup-Resources/Azure-Administration-Log-Analytics.md",
     "Untitled",
     "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Network-Routes-And-Endpoints.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
@@ -174,8 +176,6 @@
     "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
     "Services/Databases/MYSQL/MySQL-SQL-Injection-Cheatsheet-Fixed-From-Pentest-Monkey.md",
     "Services/Databases/MYSQL/MySQL-Hacking.md",
-    "Exploitation/CVEs/CVE-2021-3560.md",
-    "Exploitation/CVEs/CVE-2022-26134.md",
     "Reconnaissance/OSINT",
     "Tools/OSINT",
     "Images/wheredoyouthinkitisdonefrom.png",

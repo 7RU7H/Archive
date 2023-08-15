@@ -10,7 +10,7 @@ Set-WinUserLanguageList -Force 'en-US'
 
 Hiding binaries
 ```powershll
-attrib +h mimikatz.exe
+attrib.exe +h mimikatz.exe
 ```
 
 Add a Domain Admin
