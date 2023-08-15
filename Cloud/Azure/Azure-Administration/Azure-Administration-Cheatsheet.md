@@ -1474,6 +1474,10 @@ Create a Recovery Service Vault
 `Search -> Recovery Services vaults -> + Create`
 - Multi-select for backup "What you want to backup" options
 
+
+Create Backup Vault
+`Search -> Backup Vault -> + Create`
+
 Configure replication of recover Service Vault
 `$Backup -> Properties -> Backup Configuration -> Update `
 - Choose: `Geo-redundant | Locally redundant | Zone redundant`
@@ -1550,7 +1554,7 @@ From a `$VM -> Overview -> Failover`
 	- `Commit` deletes all available recovery points for VM in Site Recovery and cannot change the recovery point! 
 - After failover, you reprotect the VM in secodary region to replicates back to the primary region 
 
-Failover back to primary region
+Reprotect back to primary region
 - Prerequisites: Set up replication
 - `$Vault -> $VM` - VM should be in `Protected` state, `Select Failover`: 
 	- Choose:
