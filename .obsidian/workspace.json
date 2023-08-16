@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "a44e5f78e57489a3",
+            "id": "dc58a29756765f8e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Deploy-And-Manage-Compute-Resources/Azure-Administration-Container-Apps.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Gospider",
+                "query": "Living-Off-",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 277.5
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Deploy-And-Manage-Compute-Resources/Azure-Administration-Container-Apps.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Deploy-And-Manage-Compute-Resources/Azure-Administration-Container-Apps.md",
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Deploy-And-Manage-Compute-Resources/Azure-Administration-Container-Apps.md"
+                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md"
               }
             }
           }
@@ -147,10 +147,18 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "a44e5f78e57489a3",
+  "active": "ed8f63df71621be6",
   "lastOpenFiles": [
-    "Cloud/Azure/Azure-Administration/Azure-Deploy-And-Manage-Compute-Resources/Azure-Administration-Azure-Container-Registry-And-Instances.md",
+    "Post-Exploitation/Stealth/Living-Off-The-Land/Windows-Living-Off-The-Land.md",
+    "Brain-Hacking/Actions/Beyond-Root-Ideas.md",
+    "Exploitation/Exploitation.md",
+    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Windows-File-Transfers.md",
+    "Post-Exploitation/Stealth/Evasion/Antivirus-Evasion/Signature-Evasion.md",
+    "Post-Exploitation/Stealth/Evasion/Antivirus-Evasion/Antivirus-Evasion.md",
+    "Cryptography-And-Authentication/RSA-Encryption.md",
     "Cloud/Azure/Azure-Administration/Azure-Deploy-And-Manage-Compute-Resources/Azure-Administration-Container-Apps.md",
+    "Software/Operating-Systems",
+    "Cloud/Azure/Azure-Administration/Azure-Deploy-And-Manage-Compute-Resources/Azure-Administration-Azure-Container-Registry-And-Instances.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration.md",
     "Cloud/Cloud-Hacking/Azure-Hacking.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
@@ -158,10 +166,9 @@
     "Tools/Content-Discovery-Tools/Gospider-Cheatsheet.md",
     "Development/Languages/Bash/Useful_Bash.md",
     "Securing-Networks-And-Systems/EDR/Aurora-EDR.md",
-    "Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Red-KOTH-Battlegrounds-Cheatsheet-Windows.md",
+    "Security-Disciplines/Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Red-KOTH-Battlegrounds-Cheatsheet-Windows.md",
     "Artificial-Intelligence/TALK-Context-Plus-Questions-How-GPT-based-AI-Will-Disrupt-Security.md",
     "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Backup-Resources/Azure-Administration-Log-Analytics.md",
-    "Untitled",
     "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Network-Routes-And-Endpoints.md",
     "Cloud/Azure/Azure-Administration/AZ-104-Exam-Resources.md",
     "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Private-Link-And-Endpoints.md",
@@ -169,13 +176,6 @@
     "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Backup-Resources/Azure-Administration-Network-Watcher.md",
     "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Virtual-WAN.md",
     "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administrator-Load-Balancer.md",
-    "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Network-And-Application-Security-Groups.md",
-    "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Configure-Virtual-Networks.md",
-    "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Azure-Firewall.md",
-    "Images/Excalidraw/azure-virtualnetworking-diagram.excalidraw.md",
-    "Reconnaissance/Active-Information-Gathering/DNS/DNS-Active-Recon.md",
-    "Web-Application-Hacking/SQLi/NoSQLInjection.md",
-    "Services/Databases/MYSQL/MySQL-Cheatsheet.md",
     "Reconnaissance/OSINT",
     "Tools/OSINT",
     "Images/wheredoyouthinkitisdonefrom.png",
@@ -194,6 +194,6 @@
     "Development/Software-Development-Paradigms",
     "Cloud/Azure/Azure-Administration/Azure-Compute-Resources/Untitled",
     "Tools/SysInternals/ProcDump",
-    "MacOS"
+    "Software/Operating-Systems/MacOS"
   ]
 }

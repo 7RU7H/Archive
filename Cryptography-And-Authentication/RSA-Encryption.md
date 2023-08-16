@@ -4,7 +4,7 @@ This article makes extensive use of the [RSA Wikipedia article](https://en.wikip
 
 ## Key Generation 
 
-1. Choose two distint prime numbers `p` and `q
+1. Choose two distinct prime numbers `p` and `q
     - Choose at random with both similar, but still differ in length - use [primality test](https://en.wikipedia.org/wiki/Primality_test)
 	- Keep `p` and `q` secret
 2. Compute `n` = `pq`
@@ -19,7 +19,6 @@ This article makes extensive use of the [RSA Wikipedia article](https://en.wikip
 5. Determine _d_ as _d_ ≡ _e_−1 (mod _λ_(_n_)); that is, _d_ is the [modular multiplicative inverse](https://en.wikipedia.org/wiki/Modular_multiplicative_inverse "Modular multiplicative inverse") of _e_ modulo _λ_(_n_).
     -   This means: solve for _d_ the equation _d_⋅_e_ ≡ 1 (mod _λ_(_n_)); _d_ can be computed efficiently by using the [extended Euclidean algorithm](https://en.wikipedia.org/wiki/Extended_Euclidean_algorithm "Extended Euclidean algorithm"), since, thanks to _e_ and _λ_(_n_) being coprime, said equation is a form of [Bézout's identity](https://en.wikipedia.org/wiki/B%C3%A9zout%27s_identity "Bézout's identity"), where _d_ is one of the coefficients.
     -   _d_ is kept secret as the _private key exponent_.
-
 
 ### Encryption
 

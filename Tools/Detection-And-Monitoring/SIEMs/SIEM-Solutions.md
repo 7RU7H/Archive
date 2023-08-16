@@ -10,7 +10,7 @@
 
 ## Log Ingestion
 
-Windows `Event Viewer` and [[Windows-Events-To-Monitor]] and for Linux .log file from [[Linux/Linux-Concepts/Linux-Logging]]
+Windows `Event Viewer` and [[Windows-Events-To-Monitor]] and for Linux .log file from [[Linux-Logging]]
 
 Some common methods used by these SIEM solutions are explained below:  
 
