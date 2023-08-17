@@ -64,7 +64,6 @@ Know your Azure Agents and Extensions:
 				- for Linux as part of a solution to collect JSON output
 		- Dependency Agent 
 			- Collects discovered data about certain processes to maps all dependencies between virtual machines and any external process dependencies.
-
 ## Azure Policies
 
 Governance is about enforcement of rules and ensuring proper functioning to standards. 
@@ -1572,8 +1571,18 @@ Reprotect back to primary region
 
 Access Azure Monitor
 `Search -> Monitor`
-Access Network Monitor 
+
+Access Network Watcher
 `Search -> Network Watcher`
+- One NW per region with:
+Features:
+- IP flow: internet or on-premise connection
+- Next hop: routing configuration 
+- VPN troubleshoot: VPN gateway or connection
+- NSG flow logs: to map IP traffic through a NSG
+- Connection Troubleshoot: Connective issues in Azure 
+- Connection Monitor: end-to-end connection monitoring
+
 
 [Diagnostic Extension]([Azure Diagnostics extension overview - Azure Monitor | Microsoft Learn](https://learn.microsoft.com/en-us/azure/azure-monitor/agents/diagnostics-extension-overview)) -  or Boot Diagnostics, Storage Explorer, Metrics - Autoscaling and Alerts, Data for [Azure Event Hubs](https://learn.microsoft.com/en-us/azure/azure-monitor/agents/diagnostics-extension-stream-event-hubs)
 - **Only Azure Resources and Azure Monitor Logs**

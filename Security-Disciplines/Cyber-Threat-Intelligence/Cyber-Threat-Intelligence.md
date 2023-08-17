@@ -54,14 +54,14 @@ Continous data processing from raw data to contextualised and actionable insight
 	- Sources of data and intel used in protection
 	- Defensive Tooling
 1. Collection
-	- Gathering process, usual automated for timesaving during triaging
+	- Gathering process, usual automated for time saving during triaging
 1. Processing
 	- Sorting, organising, data correlation and data presentation 
 1. Analysis
 	- Investigating potential threats
 	- Refining defensive action plans
 	- Strengthening security controls or justifying investments in additional resources
-1. Dissemation
+1. Dissemination
 	- Reporting produced for targeting specific stakeholders reporting requirements  
 1. Feedback
 	- Analysts rely on regular feedback provided by stakeholders to improve the threat intelligence process and implementation of security controls

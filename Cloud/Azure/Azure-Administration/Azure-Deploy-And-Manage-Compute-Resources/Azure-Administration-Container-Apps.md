@@ -57,7 +57,7 @@ Azure Container Apps allows your application to securely store sensitive configu
 - Adding, removing, or changing secrets doesn't generate new revisions.
 - Each application revision can reference one or more secrets.
 - Multiple revisions can reference the same secret(s).
-
+`Search Container Apps -> $ContainerApp -> Scale and replicas -> Scale -> Edit and deploy -> Scale -> Add Scale rule`
 An updated or deleted secret doesn't automatically affect existing revisions in your app. When a secret is updated or deleted, you can respond to changes in one of two ways:
 
 1. Deploy a new revision.
@@ -67,6 +67,10 @@ An updated or deleted secret doesn't automatically affect existing revisions in 
 
 Possibly at some point...
 ## Workflows
+
+Configure scaling for Container Apps
+`Search Container Apps -> $ContainerApp -> Scale and replicas -> Scale -> Edit and deploy -> Scale -> Add Scale rule`
+
 
 ```bash
 # Install Azure Container Apps Extension
