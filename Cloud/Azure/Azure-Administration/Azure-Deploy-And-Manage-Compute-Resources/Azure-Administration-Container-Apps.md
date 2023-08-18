@@ -4,7 +4,7 @@ Azure Container Apps provides the flexibility you need with a serverless contain
 - Deploying API endpoints
 - Hosting background processing applications
 - Handling event-driven processing
-- Running microservices
+- Running Microservices
 
 Microservice architectures allow:
 - Independent scaling, versioning, and upgrades

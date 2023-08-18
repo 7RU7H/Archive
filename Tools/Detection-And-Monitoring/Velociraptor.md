@@ -16,7 +16,7 @@ Created by Mike Cohen, a former Google employee who worked on tools such as [GRR
 
 Additional resources
 - [https://docs.velociraptor.app/training/](https://docs.velociraptor.app/training/)
-- [https://docs.velociraptor.app/blog/](https://docs.velociraptor.app/blog/)Per the [documentation](https://docs.velociraptor.app/docs/vql/artifacts/), "_Velociraptor allows packaging VQL queries inside mini-programs called Artifacts. An artifact is simply a structured YAML file containing a query, with a name attached to it. This allows Velociraptor users to search for the query by name or description and simply run the query on the endpoint without necessarily needing to understand or type the query into the UI_".
+- [https://docs.velociraptor.app/blog/](https://docs.velociraptor.app/blog/)Per the [documentation](https://docs.velociraptor.app/docs/vql/artifacts/), "_Velociraptor allows packaging VQL queries inside mini-programs called Artefacts. An artifact is simply a structured YAML file containing a query, with a name attached to it. This allows Velociraptor users to search for the query by name or description and simply run the query on the endpoint without necessarily needing to understand or type the query into the UI_".
 - [https://docs.velociraptor.app/presentations/](https://docs.velociraptor.app/presentations/)
 - [Subscriber room only - THM Velociraptor Room - deployment setup for testing](https://tryhackme.com/room/velociraptorhp)
 - [John Hammond YouTube - Mass Digital Forensics & Incident Response with Velociraptor - With creator Mike Cohen and Matt Green from Rapid7](https://www.youtube.com/watch?v=M7bMfdmWR7A)
@@ -85,7 +85,7 @@ For cheatsheet on VQL visit [[VQL]]
 
 #### Artefacts
 
-Per the [documentation](https://docs.velociraptor.app/docs/vql/artifacts/), "_Velociraptor allows packaging VQL queries inside mini-programs called Artifacts. An artifact is simply a structured YAML file containing a query, with a name attached to it. This allows Velociraptor users to search for the query by name or description and simply run the query on the endpoint without necessarily needing to understand or type the query into the UI_".
+Per the [documentation](https://docs.velociraptor.app/docs/vql/artifacts/), *"Velociraptor allows packaging VQL queries inside mini-programs called Artefacts. An artefact is simply a structured YAML file containing a query, with a name attached to it. This allows Velociraptor users to search for the query by name or description and simply run the query on the endpoint without necessarily needing to understand or type the query into the UI".*
 
 #### Deployment 
 

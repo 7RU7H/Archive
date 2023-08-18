@@ -17,6 +17,9 @@ Azure DNS lets you host your DNS records for your domains on Azure infrastructur
 		- Automatic Hostname record management
 		- Hostname resolution between virtual networks
 		- Azure region support in all Azure regions 
+		- Automatic registration of VMs from a VNet that you link to a private zone
+		- Forward DNS resolution across VNets that you link to your private zone
+		- Reverse DNS lookup within the VNet scope
 	- Internally facing custom domains  
 	- For:
 		- Name resolution scope to a single Vnet:
@@ -37,7 +40,16 @@ Azure DNS lets you host your DNS records for your domains on Azure infrastructur
 	- RBAC
 	- Activity Logs
 	- Resource Locking
+	- DNSSEC 
+		- enables a DNS zone and all records in the zone to be signed cryptographically so that client computers can validate the DNS response - mitigate spoofing and cache tampering 
+	- No zone transfers! 
 
+Limitations:
+- You can only link a specific virtual network (VNet) to one private zone. (Private zones are discussed later in this unit.)
+- Reverse (sometimes called _inverse_) DNS works only for the private IP address space in the linked VNet.
+- Conditional forwarding is not currently supported.
+- Azure DNS does not currently support Domain Name System Security Extensions (DNSSEC).
+- Azure DNS does not support zone transfers.
 
 [[DNS]] Servers in Azure
 - Maintains a local cache of recently accessed or used domain names and their IP addresses
@@ -104,6 +116,8 @@ Capabilities:
 	- Hybrid Cloud need for DNS resolution between Cloud and on-premises
 	- To centralise DNS resolution across Azure
 	- To distribute DNS resolution across Azure
+
+#### 
 
 ## Workflows
 

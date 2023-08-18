@@ -37,7 +37,7 @@ The authoritative nameserver contains DNS records in a local database known as t
 
 These are used find specific hostname and IP addresses.
 
-DNS caching is used to store local copies of DNS records at various stages of the lookup process to improve performance. Browser have a separate DNS cache from  local DNS client. The  DNS record's cache lifespan is set by Domain Owner with the Time To Live (TTL) field of a DNS record.It is used to improve performance and reliablitity of DNS.
+DNS caching is used to store local copies of DNS records at various stages of the lookup process to improve performance. Browser have a separate DNS cache from  local DNS client. The  DNS record's cache lifespan is set by Domain Owner with the Time To Live (TTL) field of a DNS record.It is used to improve performance and reliability of DNS.
 
 Record | Description
 --- | ---
@@ -75,18 +75,24 @@ From [Cloudflare's Learning dns-records](https://www.cloudflare.com/learning/dns
 -   **RP record** - This is the ‘responsible person’ record and it stores the email address of the person responsible for the domain.
 -   **SSHFP record** - This record stores the ‘SSH public key fingerprints’; SSH stands for Secure Shell and it’s a cryptographic networking protocol for secure communication over an unsecure network.
 
+## DNS Considerations
 
-## DNS Limitations
+#### Use case variations
+
+*Split-horizon DNS* (also sometimes called *split-brain DNS*) uses the same DNS domain name for both internet and internal resources.
+#### DNS Limitations
 
 - It is not a transport protocol!
--   The maximum length of the Fully Qualified FQDN domain name (including .separators) is 255 characters.
--   The subdomain name (label) length must not exceed 63 characters (not including .com, .net, etc)
+- The maximum length of the Fully Qualified FQDN domain name (including .separators) is 255 characters.
+- The subdomain name (label) length must not exceed 63 characters (not including .com, .net, etc)
 
-## DNSSEC
+## DNS Security
+#### DNSSEC
 
 DNSSEC protects internet users and applications from forged domain name system (DNS) data by using public key cryptography to digitally sign authoritative zone data when it enters the DNS and then validate 
 it at its destination.
 
+## Active Directory related DNS
 ## \_msdcs
 `_msdcs` domain **contains subdomains corresponding to all domains in the forest** (labeled by the domain's GUID). In these subdomains are service records for the DCs in those domains.
 
@@ -100,3 +106,4 @@ it at its destination.
 [msdcs domains](https://standalonelabs.wordpress.com/2011/05/08/what-is-the-_msdcs-subdomain/)
 [Cloudflare's Learning dns-records](https://www.cloudflare.com/learning/dns/dns-records/)
 [Azure What is DNS](https://learn.microsoft.com/en-us/training/modules/host-domain-azure-dns/2-what-is-azure-dns)
+[Microsoft Learn](https://learn.microsoft.com/)
