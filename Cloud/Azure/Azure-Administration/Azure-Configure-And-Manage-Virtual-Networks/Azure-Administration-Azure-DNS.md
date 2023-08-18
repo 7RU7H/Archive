@@ -117,8 +117,6 @@ Capabilities:
 	- To centralise DNS resolution across Azure
 	- To distribute DNS resolution across Azure
 
-#### 
-
 ## Workflows
 
 [Sample DNS script](https://github.com/MicrosoftDocs/mslearn-host-domain-azure-dns.git)

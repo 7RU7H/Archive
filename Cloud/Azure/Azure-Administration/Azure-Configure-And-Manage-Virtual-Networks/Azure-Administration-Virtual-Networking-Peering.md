@@ -79,7 +79,6 @@ Local Network Gateways - to represent the on-premises site that you want to conn
 On-Premise VPN devices: shared key and public IP address of your VPN gateway
 - Configuration scripts are available for some devices - [Download VPN device configuration scripts for S2S VPN connections](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-download-vpndevicescript) to find a downloadable script for your VPN device.
 
-
 ## Workflows
 
 - Regional Virtual Network peering - Cloud, Public or Government Region 
@@ -87,6 +86,10 @@ On-Premise VPN devices: shared key and public IP address of your VPN gateway
 
 You cannot:
 - Peering different cloud types:  China Cloud != Azure public cloud region != Microsoft Azure Government cloud region
+
+- Configure user-defined network routes
+	- `Search -> Route tables`
+
 
 Configure a Azure VPN Gateway in a peered virtual network as a transit point between target Virtual Networks for peering.
 - VPN gateway in the hub, not in peer networks
@@ -97,7 +100,7 @@ Configure a Azure VPN Gateway in a peered virtual network as a transit point be
 	- point-to-site
 
 Vnet Peering - requires account with `(Classic) Network Contributor` role
-`Search -> Virtual Networks -> $Vnet -> SEttings -> Peering -> Add(peering)` 
+`Search -> Virtual Networks -> $Vnet -> Settings -> Peering -> Add(peering)` 
 - Create in hub, not peers; make NSG rules!
 - One Gateway to Transit them All - vnet-to-vnet, site-to-site and point-to-site
 - Vnets must have resources, the first must be made with [[Azure-Administration-Azure-Resource-Manager]], the second is referred to as the remote network

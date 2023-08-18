@@ -403,6 +403,9 @@ Install-WindowsFeature -Name "RSAT-RemoteAccess-Powershell"
 - Internet
 - Network virtual appliance (NVA)
 
+Configure user-defined network routes
+- `Search -> Route tables`
+
 [Private Link Service](https://learn.microsoft.com/en-us/azure/private-link/create-private-link-service-portal?tabs=dynamic-ip) (connect private behind a Load balancer to a service or resource) - Requires: Internal Load balancer, VNets and reverse subnet
 `Private Link Center -> Private Links`; add Basics; 
 - Outbound settings
@@ -1599,6 +1602,19 @@ Configure VM for Log Analytics - Install and Configure Azure Diagnostics for Win
 	- Azure VMAccess Extension acts as a KVM switch that allows you to access the console to reset access to Linux or perform disk-level maintenance.
 Then `$VM -> Logs -> Enable -> chooose a Log Analytucs Workspace -> Enable `
 
+- Azure Storage Explorer
+	- Requires: 	
+		- (Azure Resource Manager)
+	- Connect to storage accounts associated with your Azure subscriptions.
+	- Connect to storage accounts and services that are shared from other Azure subscriptions.
+	- Connect to and manage local storage by using the Azure Storage Emulator.
+		- Sign-in through `StorageExplorer.exe` with an Azure Account
+		- Add a resource via Azure AD, choosing the Azure tenant and the associated account
+	- Or SAS
+		- Then find connection node: `Local & attached > Storage Accounts > Attached Container > Service`
+	- Or with Storage account name and key
+	- For Data Lake Storage Gen1:
+		-  URI associated with the data lake
 
 [IT Service Management Connector](https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/itsmc-definition#install-it-service-management-connector) - Integrate Azure Monitor with (non)Azure (only ITSM supported products) to resolve issues; can installed on LA Workspaces
 `Markplace -> ITSMC`; to connect `Resources -> $resource (include LA Workspaces) -> ITSM Connections`
