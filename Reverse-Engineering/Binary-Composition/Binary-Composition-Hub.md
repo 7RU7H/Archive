@@ -15,7 +15,7 @@ This a hub page linking to the different sections of dissambled binary, binaries
 
 
 ## Assembly
-[[Intel-Assembler-Instructions-To-Know]]
+[[x86-64-Assembly]]
 
 ## Hardware
 

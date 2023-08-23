@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+                "file": "Development/Languages/Assembly/x86-Assembly.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 571.5110321044922
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+                "file": "Development/Languages/Assembly/x86-Assembly.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+                "file": "Development/Languages/Assembly/x86-Assembly.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md"
+                "file": "Development/Languages/Assembly/x86-Assembly.md"
               }
             }
           }
@@ -149,8 +150,10 @@
   },
   "active": "fde47583abc3684f",
   "lastOpenFiles": [
-    "Cloud/Azure/Azure-Administration/Azure-Manage-And-Implement-Storage-In-Azure/Azure-Administration-Azure-Storage-Tooling.md",
+    "Development/Languages/Assembly/x86-64-Assembly.md",
+    "Development/Languages/Assembly/x86-Assembly.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+    "Cloud/Azure/Azure-Administration/Azure-Manage-And-Implement-Storage-In-Azure/Azure-Administration-Azure-Storage-Tooling.md",
     "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Virtual-Networking-Peering.md",
     "Excalidraw/azvnetservicechainingandudrs.excalidraw.md",
     "Excalidraw/azure-updateandfault-domains.excalidraw.md",
@@ -173,8 +176,6 @@
     "Tools/Content-Discovery-Tools/Gospider-Cheatsheet.md",
     "Software/Operating-Systems/Windows/Windows-Concepts/Windows-Filesystem/Windows-Permissions.md",
     "Software/Operating-Systems/Windows/Windows-Concepts/Windows-Filesystem/Windows-File-System.md",
-    "Software/Operating-Systems/Windows/Windows-Concepts/Windows-Filesystem/Windows-File-Paths.md",
-    "Software/Operating-Systems/Windows/Windows-Concepts/Windows-Events/Windows-Logging.md",
     "Software/Operating-Systems/Windows/Windows-Concepts/Windows-Filesystem",
     "Software/Operating-Systems/Windows/Windows-Concepts/Windows-Events",
     "Software/Operating-Systems/Windows/Windows-Concepts/Account-And-Group-Related",
