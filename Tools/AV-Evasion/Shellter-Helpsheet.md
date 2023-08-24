@@ -31,7 +31,7 @@ Shellter will obfuscates both the payload and payload decoder before injecting i
 
 **Payload (Selection)** - Select from a list of loads or a user provided custom payload
 
-**Regular Payload Options** - Set [[Metasploit]] options for one of the selected [[MSFvenom-Payloads]].
+**Regular Payload Options** - Set [[Metasploit]] options for one of the selected [[MSFVenom-Payloads]].
 
 **Verification Stage** - Shellter attempt to inject payload into `.exe` to reach the first instruction of the payload to test actual  applicability of the AV-Evasion executable.
 
