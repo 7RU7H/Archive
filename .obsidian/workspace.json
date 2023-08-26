@@ -30,9 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "cfdf1485c44a4fb6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/Network-Based/Proxying-And-Pivoting/sshuttle.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Networks/Proxies.md",
+                "file": "Tools/Network-Based/Proxying-And-Pivoting/sshuttle.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Networks/Proxies.md",
+                "file": "Tools/Network-Based/Proxying-And-Pivoting/sshuttle.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Networks/Proxies.md"
+                "file": "Tools/Network-Based/Proxying-And-Pivoting/sshuttle.md"
               }
             }
           }
@@ -159,13 +171,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "55595d6a5ea6aacc",
+  "active": "cfdf1485c44a4fb6",
   "lastOpenFiles": [
-    "Tools/Network-Based/Proxying-And-Pivoting/FoxyProxy.md",
     "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md",
+    "Tools/Network-Based/Proxying-And-Pivoting/sshuttle.md",
+    "Tools/Shells/Socat.md",
+    "Tools/Network-Based/Proxying-And-Pivoting/Plink.md",
+    "Tools/Network-Based/Proxying-And-Pivoting/SSH-Redirection-And-Tunnelling.md",
     "Networks/Proxies.md",
+    "Tools/Network-Based/Proxying-And-Pivoting/FoxyProxy.md",
     "Tools/Network-Based/Proxying-And-Pivoting/Proxychains.md",
-    "Tools/Network-Based/Proxying-And-Pivoting/SSH-Redirection.md",
     "Tools/Exploit-Frameworks/Metasploit/Metasploit.md",
     "Tools/Network-Based/Proxying-And-Pivoting",
     "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Windows-File-Transfers.md",
@@ -185,9 +200,6 @@
     "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Network-And-Application-Security-Groups.md",
     "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Azure-Firewall.md",
     "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Configure-Virtual-Networks.md",
-    "Cloud/Azure/Azure-Administration/Azure-Deploy-And-Manage-Compute-Resources/Azure-Administration-Azure-CLI.md",
-    "Images/Excalidraw/azure-virtualnetworking-diagram.excalidraw.md",
-    "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Azure-DNS.md",
     "Software/Operating-Systems/Windows/Windows-Concepts/Windows-Filesystem",
     "Software/Operating-Systems/Windows/Windows-Concepts/Windows-Events",
     "Software/Operating-Systems/Windows/Windows-Concepts/Account-And-Group-Related",

@@ -13,7 +13,6 @@ On the offensive side, proxies are useful for the following reasons:
 - Proxies make it easier to find vulnerabilities.
 - They allow us to perform faster repetitive testing tasks or manually dig deeper into the HTTP(S) traffic.
 
-
 ## FoxyProxy
 
 For [[FoxyProxy]] information follow the link
@@ -31,9 +30,7 @@ Certificate Authority (CA) is a entity that issues digital certificates. With HT
 
 ## SOCKS Tunnels
 
-To circumvent firewall protections, we need to tunnel our traffic to another network in a secure manner. Socket Secure (SOCKS) is network protocol which allow communication with servers through a firewall by tunnelling network traffic to actual server on the behalf of a client.
-
-Sock5 proxy supports tunnelling for UDP traffic, however not all proxifier tools support this.
+To circumvent firewall protections, we need to tunnel our traffic to another network in a secure manner. Socket Secure (SOCKS) is network protocol which allow communication with servers through a firewall by tunnelling network traffic to actual server on the behalf of a client. Sock5 proxy supports tunnelling for UDP traffic, however not all proxifier tools support this.
 
 #### SOCKS5 Proxy 
 

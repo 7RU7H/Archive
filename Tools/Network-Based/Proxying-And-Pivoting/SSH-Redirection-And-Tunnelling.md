@@ -1,7 +1,27 @@
-# SSH Tunneling Or Port Forwarding
+# SSH Redirection And Tunnelling
 
+## Introduction
 
-## SSH Tunneling & Local Port Forwarding
+For a broad usage of `ssh` visit: [[SSH-Cheatsheet]]
+
+Terminology:
+- Nested Sessions
+	- When additional sessions are initiated within a primary session 
+- Port Forwarding
+	- Forwarding - like email to forward it on to another, there sending a protocol to another machine via some intermediary 
+- Tunnelling
+	- Encapsulating protocols inside another
+- Proxying
+	- Like port forwarding except we are not limited by a port - we are still using a port to receive just that the protocols that we are receive are not limited to one port from one machine.
+
+```bash
+# Create new key to avoid mixing traffic
+ssh-keygen
+# Check how the kernel is managing ssh - not include here for non-systemd 
+sudo systemctl status ssh
+
+```
+## SSH Tunnelling & Local Port Forwarding
 
 ```bash
 # From Attack box
@@ -109,9 +129,9 @@ Then we can just connect from our localhost configured to route traffic throught
 smbclient -L 127.0.0.1 -U Administrator
 ```
 
-## SSH Remote Port Forwarding
+## SSH Remote/Reverse Port Forwarding
 
-Reversal of Local port forwarding as port is **opened** from the remote side of the connection and the traffic is forwarded to a port back to local box with remote flag with `ssh -R`.
+Remote or Reverse is a terminological yet-to-be-standardised dichotomy that will appear across the literature, blogs and discussions. It means the same thing, executing a command on a non-local box such that the local box receives the forwarded traffic from specific port.  Reversal of Local port forwarding as port is **opened** from the remote side of the connection and the traffic is forwarded to a port back to local box with remote flag with `ssh -R`. This is possible within a nested session of SSH, which means we have connected to a remote machine, but are initiating a new session within this session and are executing it on the remote machine. Therefore we are performing Remote/Reverse Port Forwarding as the command is being executed on the remote machine from within a nested session.
 
 ```bash
 # Syntax: ssh -N -R [bind_address:]port:host:hostport [username@address]
@@ -175,7 +195,7 @@ sudo proxychains <whatever command>
 
 ## References
 
-[Tunneling(Protocol) Wiki](https://en.wikipedia.org/wiki/Tunneling_protocol)
+[Wikipedia Tunnelling (Protocol)](https://en.wikipedia.org/wiki/Tunneling_protocol)
 [Port forwarding Wiki](https://en.wikipedia.org/wiki/Port_forwarding)
 [SSH has an academy](https://www.ssh.com/academy/ssh/protocol)
 [iredteam](https://www.ired.team/offensive-security/lateral-movement/ssh-tunnelling-port-forwarding)
