@@ -13,38 +13,37 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/Network-Based/Proxying-And-Pivoting/Proxychains.md",
+                "file": "Networks/Network-Security/Network-Security.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "55595d6a5ea6aacc",
+            "id": "6299d6c5689852b8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Networks/Proxies.md",
+                "file": "Services/Databases/Postgres/Confluence.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "cfdf1485c44a4fb6",
+            "id": "a3e7fd509368879f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/Network-Based/Proxying-And-Pivoting/sshuttle.md",
+                "file": "Services/Databases/Postgres/PostgreSQL.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -73,7 +72,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Proxies",
+                "query": "Postgresql",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -110,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/Network-Based/Proxying-And-Pivoting/sshuttle.md",
+                "file": "Networks/Network-Security/Network-Security.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tools/Network-Based/Proxying-And-Pivoting/sshuttle.md",
+                "file": "Networks/Network-Security/Network-Security.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tools/Network-Based/Proxying-And-Pivoting/sshuttle.md"
+                "file": "Networks/Network-Security/Network-Security.md"
               }
             }
           }
@@ -171,16 +170,24 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "cfdf1485c44a4fb6",
+  "active": "fde47583abc3684f",
   "lastOpenFiles": [
-    "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md",
-    "Tools/Network-Based/Proxying-And-Pivoting/sshuttle.md",
+    "Services/Databases/Postgres/PostgreSQL.md",
+    "README.md",
+    "Services/Databases/Postgres/Confluence.md",
+    "Services/Databases/Postgres",
+    "Post-Exploitation/Shadow-Networking/Port-Redirection-And-Tunnelling.md",
     "Tools/Shells/Socat.md",
-    "Tools/Network-Based/Proxying-And-Pivoting/Plink.md",
-    "Tools/Network-Based/Proxying-And-Pivoting/SSH-Redirection-And-Tunnelling.md",
-    "Networks/Proxies.md",
-    "Tools/Network-Based/Proxying-And-Pivoting/FoxyProxy.md",
+    "Networks/Network-Security/Network-Security.md",
+    "Tools/Authentication-Attacking",
+    "Networks/Network-Security/Untitled.md",
     "Tools/Network-Based/Proxying-And-Pivoting/Proxychains.md",
+    "Networks/Proxies.md",
+    "Tools/Network-Based/Proxying-And-Pivoting/sshuttle.md",
+    "Tools/Network-Based/Proxying-And-Pivoting/FoxyProxy.md",
+    "Tools/Network-Based/Proxying-And-Pivoting/SSH-Redirection-And-Tunnelling.md",
+    "Tools/Network-Based/Proxying-And-Pivoting/Plink.md",
+    "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md",
     "Tools/Exploit-Frameworks/Metasploit/Metasploit.md",
     "Tools/Network-Based/Proxying-And-Pivoting",
     "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Windows-File-Transfers.md",
@@ -194,12 +201,6 @@
     "Excalidraw/azvnetservicechainingandudrs.excalidraw.md",
     "Excalidraw/azure-updateandfault-domains.excalidraw.md",
     "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administrator-Load-Balancer.md",
-    "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Virtual-WAN.md",
-    "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Private-Link-And-Endpoints.md",
-    "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Network-Routes-And-Endpoints.md",
-    "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Network-And-Application-Security-Groups.md",
-    "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Azure-Firewall.md",
-    "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Configure-Virtual-Networks.md",
     "Software/Operating-Systems/Windows/Windows-Concepts/Windows-Filesystem",
     "Software/Operating-Systems/Windows/Windows-Concepts/Windows-Events",
     "Software/Operating-Systems/Windows/Windows-Concepts/Account-And-Group-Related",
@@ -207,8 +208,6 @@
     "Software/Operating-Systems/Linux/Distributions/Debian",
     "Software/Operating-Systems/Hacker-Distros/Kali/Setup-Services",
     "Software/Operating-Systems/Hacker-Distros/Kali/Kali-Security",
-    "Software/Operating-Systems/Hacker-Distros/Kali/Kali-Resources",
-    "Software/Operating-Systems/Hacker-Distros/Kali/Kali-Configuration",
     "Images/azure-aksscalingimplementation.png",
     "Images/velociraptorofficialdocsimage-oneofthebestimageseveraboutdinosaurs.png",
     "Images/azureprivatedns.png",
