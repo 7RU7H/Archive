@@ -21,14 +21,11 @@ With all collection comes the requirement for curation, both in collecting too m
 
 [[Cewl-Cheatsheet]]
 
-
 ## Permutation
 
 Yassine Aboukir recommends [ripgen](https://github.com/resyncgg/ripgen), a Rust-based high performance domain permutation generator. Also resolves these with [dnsx](https://github.com/projectdiscovery/dnsx) (grabbing the A records, filtering the unnecessary CDNs) and then probes active servers with [httpx](https://github.com/projectdiscovery/httpx). 
 
-
 ## References
-
 
 [Assetnote.Wordlists](https://github.com/assetnote/wordlists)
 [Assetnote.io](https://wordlists.assetnote.io/)

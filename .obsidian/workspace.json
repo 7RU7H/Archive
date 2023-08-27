@@ -4,43 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "12d4def2bbefc529",
+        "id": "a52ec18fe4169f0d",
         "type": "tabs",
         "children": [
           {
-            "id": "fde47583abc3684f",
+            "id": "1bcc71f470cc5f2b",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Networks/Network-Security/Network-Security.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6299d6c5689852b8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Services/Databases/Postgres/Confluence.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a3e7fd509368879f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Services/Databases/Postgres/PostgreSQL.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -72,7 +44,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Postgresql",
+                "query": "iptables",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -109,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Networks/Network-Security/Network-Security.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Networks/Network-Security/Network-Security.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -148,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Networks/Network-Security/Network-Security.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -170,37 +138,37 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "fde47583abc3684f",
+  "active": "ed8f63df71621be6",
   "lastOpenFiles": [
-    "Services/Databases/Postgres/PostgreSQL.md",
-    "README.md",
-    "Services/Databases/Postgres/Confluence.md",
-    "Services/Databases/Postgres",
+    "Development/Languages/Rust/Rust.md",
+    "Tools/Network-Based/Proxying-And-Pivoting/DNS-Tunnelling.md",
+    "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md",
+    "Tools/Network-Based/Proxying-And-Pivoting/Plink.md",
+    "Tools/Network-Based/Proxying-And-Pivoting/SSH-Redirection-And-Tunnelling.md",
     "Post-Exploitation/Shadow-Networking/Port-Redirection-And-Tunnelling.md",
-    "Tools/Shells/Socat.md",
+    "Services/Databases/Postgres/PostgreSQL.md",
+    "Services/Databases/Postgres/Confluence.md",
+    "Post-Exploitation/Stealth/Evasion/Evading-Firewalls.md",
+    "Software/Operating-Systems/Linux/Linux-Concepts/ipXtables.md",
     "Networks/Network-Security/Network-Security.md",
+    "Tools/Wordlists/Wordlist-Considerations.md",
+    "Tools/Wordlists/Wordlist-Library.md",
+    "Tools/Wordlists/Wordlists.md",
+    "README.md",
+    "Services/Databases/Postgres",
+    "Tools/Shells/Socat.md",
     "Tools/Authentication-Attacking",
     "Networks/Network-Security/Untitled.md",
     "Tools/Network-Based/Proxying-And-Pivoting/Proxychains.md",
     "Networks/Proxies.md",
     "Tools/Network-Based/Proxying-And-Pivoting/sshuttle.md",
     "Tools/Network-Based/Proxying-And-Pivoting/FoxyProxy.md",
-    "Tools/Network-Based/Proxying-And-Pivoting/SSH-Redirection-And-Tunnelling.md",
-    "Tools/Network-Based/Proxying-And-Pivoting/Plink.md",
-    "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md",
     "Tools/Exploit-Frameworks/Metasploit/Metasploit.md",
     "Tools/Network-Based/Proxying-And-Pivoting",
     "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Windows-File-Transfers.md",
     "Tools/C2/Sliver/Sliver-Cheatsheet.md",
     "Tools/Exploit-Frameworks/Metasploit/Pivoting-and-Proxying-with-Metasploit.md",
     "Tools/Exploit-Frameworks/Metasploit/Meterpreter-Commands.md",
-    "Tools/Exploit-Frameworks/Metasploit/MSFVenom-Payloads.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
-    "Cloud/Azure/Azure-Administration/Azure-Manage-And-Implement-Storage-In-Azure/Azure-Administration-Azure-Storage-Tooling.md",
-    "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Virtual-Networking-Peering.md",
-    "Excalidraw/azvnetservicechainingandudrs.excalidraw.md",
-    "Excalidraw/azure-updateandfault-domains.excalidraw.md",
-    "Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administrator-Load-Balancer.md",
     "Software/Operating-Systems/Windows/Windows-Concepts/Windows-Filesystem",
     "Software/Operating-Systems/Windows/Windows-Concepts/Windows-Events",
     "Software/Operating-Systems/Windows/Windows-Concepts/Account-And-Group-Related",

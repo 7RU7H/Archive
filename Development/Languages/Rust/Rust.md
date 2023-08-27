@@ -19,6 +19,7 @@ The rustc, cargo, rustup tools are installed to the `~/.cargo/bin`. Beware that 
 ## Building Projects
 
 Check cargo version with `cargo --version`
+1. Initialise with `cargo init` - if there is no .toml file
 1. Build your project with `cargo build`
 1. Run your project with `cargo run` 
 1. Test your project with `cargo test`

