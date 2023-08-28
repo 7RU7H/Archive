@@ -11,11 +11,40 @@
             "id": "1bcc71f470cc5f2b",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "5ec50f25f3cb07d7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6e22bfa928c82840",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/Network-Based/Port-scanning/Nmap/Nmap-Cheatsheet.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -44,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "iptables",
+                "query": "port scan",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -81,6 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +149,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md"
+              }
             }
           }
         ]
@@ -138,11 +171,21 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ed8f63df71621be6",
+  "active": "5ec50f25f3cb07d7",
   "lastOpenFiles": [
+    "Tools/Network-Based/Port-scanning/Nmap/Nmap-Cheatsheet.md",
+    "Tools/Vulnerability-Analysis/Nessus/Nessus.md",
+    "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md",
+    "Reconnaissance/Active-Information-Gathering/Vulnerability-Scanning.md",
+    "Reconnaissance/Active-Information-Gathering/SNMP/SNMP-Recon-Cheatsheet.md",
+    "Reconnaissance/Active-Information-Gathering/SMTP/SMTP-Recon-Cheatsheet.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+    "Post-Exploitation/Post-Exploitation-Enumeration/Network-Infrastructure-Enumeration.md",
+    "Post-Exploitation/Post-Exploitation-Enumeration/Foothold-Enumeration.md",
+    "Post-Exploitation/Post-Exploitation-Enumeration/Windows-Post-Exploitation-Info-Gathering.md",
+    "Reconnaissance/Active-Information-Gathering/Active-Recon.md",
     "Development/Languages/Rust/Rust.md",
     "Tools/Network-Based/Proxying-And-Pivoting/DNS-Tunnelling.md",
-    "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md",
     "Tools/Network-Based/Proxying-And-Pivoting/Plink.md",
     "Tools/Network-Based/Proxying-And-Pivoting/SSH-Redirection-And-Tunnelling.md",
     "Post-Exploitation/Shadow-Networking/Port-Redirection-And-Tunnelling.md",
@@ -158,17 +201,7 @@
     "Services/Databases/Postgres",
     "Tools/Shells/Socat.md",
     "Tools/Authentication-Attacking",
-    "Networks/Network-Security/Untitled.md",
-    "Tools/Network-Based/Proxying-And-Pivoting/Proxychains.md",
-    "Networks/Proxies.md",
-    "Tools/Network-Based/Proxying-And-Pivoting/sshuttle.md",
-    "Tools/Network-Based/Proxying-And-Pivoting/FoxyProxy.md",
-    "Tools/Exploit-Frameworks/Metasploit/Metasploit.md",
     "Tools/Network-Based/Proxying-And-Pivoting",
-    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Windows-File-Transfers.md",
-    "Tools/C2/Sliver/Sliver-Cheatsheet.md",
-    "Tools/Exploit-Frameworks/Metasploit/Pivoting-and-Proxying-with-Metasploit.md",
-    "Tools/Exploit-Frameworks/Metasploit/Meterpreter-Commands.md",
     "Software/Operating-Systems/Windows/Windows-Concepts/Windows-Filesystem",
     "Software/Operating-Systems/Windows/Windows-Concepts/Windows-Events",
     "Software/Operating-Systems/Windows/Windows-Concepts/Account-And-Group-Related",

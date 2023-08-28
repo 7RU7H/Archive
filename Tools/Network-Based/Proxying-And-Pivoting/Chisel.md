@@ -79,7 +79,7 @@ chisel client $serverIP:10000 R:10.10.10.1:12345:10.10.11.1:443
 ## Dynamic Port Forwarding  
 
 ```bash
-chisel server -host $interfaceIP -p 10000 -v --socks5
+chisel server --host $interfaceIP -p 10000 -v --socks5
 chisel client $interfaceIP:10000  10001:socks
 # comment sock4 ... and add to /etc/proxychains4.conf:
 socks5 $serverIP $serverPort 
@@ -88,7 +88,7 @@ socks5 $serverIP $serverPort
 ## Reverse Dynamic Socks Proxy
 
 ```bash
-chisel server -host $interfaceIP -p 10000 -v --socks5 --reverse
+chisel server --host $interfaceIP -p 10000 -v --socks5 --reverse
 chisel client $interfaceIP:10000  R:10001:socks
 # comment sock4 ... and add to /etc/proxychains4.conf:
 socks5 $serverIP $serverPort 

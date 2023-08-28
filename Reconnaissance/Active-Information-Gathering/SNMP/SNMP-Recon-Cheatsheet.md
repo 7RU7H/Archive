@@ -1,9 +1,14 @@
 # SNMP Cheatsheet
 
-Simple Network Management Protocol (SNMP) is based on UDP; stateless protocol making it to it is susceptible to IP spoofing and replay attacks.
-SNMP services misconfigurations lead to data leakages. It is meant to **manage** the network. SNMP protocols 1, 2, and 2c offer no traffic encryption and can be easily intercepted over a local network. For port information see [[Network-Protocols]].
+Simple Network Management Protocol (SNMP) is based on UDP; stateless protocol making it to it is susceptible to IP spoofing and replay attacks. SNMP services misconfigurations lead to data leakages. It is meant to **manage** the network. SNMP protocols 1, 2, and 2c offer no traffic encryption and can be easily intercepted over a local network. For port information see [[Network-Protocols]].
+
+
+## Version Considerations
+
+- SNMPv3 support only DES-56 (weak encryption standard), until recently now AES-256
 
 ## MIB Tree
+
 SNMP Management Information Base (MIB) is a database organised in tree based structure containing information usually related to network management. Leaves being the endpoints and the branches representing organisations or network functions.
 
 SNMP MIB values | SNMP Parameter
@@ -18,18 +23,29 @@ SNMP MIB values | SNMP Parameter
 
 ## Enumeration
 
-Never forget your `nmap sU` scans or equivalent.
-
-Requires a community list contains community strings and ip addresses. `onesixtyone` will then brute force against the list of ips.
+Never forget your `nmap -sU` scans or equivalent.
 ```bash
-onesixtyone -c $community -i $SMNP_IP_LIST
+sudo nmap -sU --open -p 161 $ip/$CIDR -oG open-snmp
 ```
 
+
+Requires a community list contains community strings and IP addresses. `onesixtyone` will then brute force against the list of IP addresses. 
+```bash
+echo "public\nprivate\ncommunity" > community 
+# Beware `onesixtyone` maintenance at points has lapse, but it is maintained
+onesixtyone -c community -i $SMNP_IP_LIST
+```
+
+`snmpwalk` is slower
 ```bash
 snmpwalk -c public -v1 -t 5 $IP $mib_values
+
+# Translate hex with -Oa 
+snmpwalk -c public -v1 -t 10 -Oa $IP | tee -a SNMPwalk-Oa
+
 ```
 
-## Ippsec approach
+## Ippsec's SNMP Recon Approach
 
 ```bash
 sudo apt install snmp-mibs-downloader

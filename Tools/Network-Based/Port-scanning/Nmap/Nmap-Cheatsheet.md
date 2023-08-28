@@ -1,7 +1,8 @@
 # Nmap Cheatsheet
+
 Check [[Nmap-AllTheScripts]] for NSE scripts
 
-**Nmap only supports ethernet interfaces (including most 802.11 wireless cards and many VPN clients) for raw packet scans**. Unless you use the -sT -Pn options, RAS connections (such as PPP dialups) and certain VPN clients are not supported.
+**Nmap only supports Ethernet interfaces (including most 802.11 wireless cards and many VPN clients) for raw packet scans**. Unless you use the -sT -Pn options, RAS connections (such as PPP dialups) and certain VPN clients are not supported.
 
 ## Utility
 ```bash
@@ -25,7 +26,7 @@ Addition host specifying flags
 nmap -iR $int	# random hosts
 --exclude $target
 --excludefile hosts.txt
--sL 			# creates host list listing each host of the network
+-sL 			# list targets host of the network of a range or cidr range
 -6				# IPv6 target(s)
 ```
 
