@@ -32,6 +32,18 @@
             }
           },
           {
+            "id": "8f0cc92ddbdd5368",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "6e22bfa928c82840",
             "type": "leaf",
             "state": {
@@ -44,7 +56,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -110,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md"
+                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md"
               }
             }
           }
@@ -171,15 +183,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5ec50f25f3cb07d7",
+  "active": "8f0cc92ddbdd5368",
   "lastOpenFiles": [
+    "Security-Disciplines/Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Blue-KOTH-Battlegrounds-Cheatsheet-Linux.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+    "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md",
     "Tools/Network-Based/Port-scanning/Nmap/Nmap-Cheatsheet.md",
     "Tools/Vulnerability-Analysis/Nessus/Nessus.md",
-    "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md",
     "Reconnaissance/Active-Information-Gathering/Vulnerability-Scanning.md",
     "Reconnaissance/Active-Information-Gathering/SNMP/SNMP-Recon-Cheatsheet.md",
     "Reconnaissance/Active-Information-Gathering/SMTP/SMTP-Recon-Cheatsheet.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
     "Post-Exploitation/Post-Exploitation-Enumeration/Network-Infrastructure-Enumeration.md",
     "Post-Exploitation/Post-Exploitation-Enumeration/Foothold-Enumeration.md",
     "Post-Exploitation/Post-Exploitation-Enumeration/Windows-Post-Exploitation-Info-Gathering.md",
@@ -199,7 +212,6 @@
     "Tools/Wordlists/Wordlists.md",
     "README.md",
     "Services/Databases/Postgres",
-    "Tools/Shells/Socat.md",
     "Tools/Authentication-Attacking",
     "Tools/Network-Based/Proxying-And-Pivoting",
     "Software/Operating-Systems/Windows/Windows-Concepts/Windows-Filesystem",

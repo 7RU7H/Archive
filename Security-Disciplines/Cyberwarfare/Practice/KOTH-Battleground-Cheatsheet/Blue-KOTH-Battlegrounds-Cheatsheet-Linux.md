@@ -27,6 +27,14 @@ Counter Hidden Bash Shells
 exec >/dev/tty
 ```
 
+
+## Services
+
+```bash
+# Inspect cron log file for running jobs
+grep "CRON" /var/log/syslog
+```
+
 ## Replace Vulnerable functions
 
 ```bash
