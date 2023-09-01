@@ -37,7 +37,31 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+                "file": "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "fa16361611e90493",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ad05ac39cc580e32",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +109,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "port scan",
+                "query": "shells",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -106,7 +130,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 457.5110321044922
+    "width": 385.5110321044922
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -122,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+                "file": "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+                "file": "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md"
+                "file": "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md"
               }
             }
           }
@@ -185,9 +209,18 @@
   },
   "active": "8f0cc92ddbdd5368",
   "lastOpenFiles": [
-    "Security-Disciplines/Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Blue-KOTH-Battlegrounds-Cheatsheet-Linux.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+    "Tools/Authentication-Attacking/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
+    "Cryptography-And-Authentication/Password-Attacks/Password-Attacks.md",
+    "Cryptography-And-Authentication/Password-Attacks/Password-Recovery.md",
+    "Exploitation/Shells/Reverse-Shells-Listing.md",
+    "Exploitation/Shells/Shells.md",
+    "Tools/Shells/Socat.md",
     "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
+    "Post-Exploitation/Stealth/Evasion/Evading-IPS-And-IDS.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+    "Security-Disciplines/Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Blue-KOTH-Battlegrounds-Cheatsheet-Linux.md",
     "Tools/Network-Based/Port-scanning/Nmap/Nmap-Cheatsheet.md",
     "Tools/Vulnerability-Analysis/Nessus/Nessus.md",
     "Reconnaissance/Active-Information-Gathering/Vulnerability-Scanning.md",
@@ -202,15 +235,6 @@
     "Tools/Network-Based/Proxying-And-Pivoting/Plink.md",
     "Tools/Network-Based/Proxying-And-Pivoting/SSH-Redirection-And-Tunnelling.md",
     "Post-Exploitation/Shadow-Networking/Port-Redirection-And-Tunnelling.md",
-    "Services/Databases/Postgres/PostgreSQL.md",
-    "Services/Databases/Postgres/Confluence.md",
-    "Post-Exploitation/Stealth/Evasion/Evading-Firewalls.md",
-    "Software/Operating-Systems/Linux/Linux-Concepts/ipXtables.md",
-    "Networks/Network-Security/Network-Security.md",
-    "Tools/Wordlists/Wordlist-Considerations.md",
-    "Tools/Wordlists/Wordlist-Library.md",
-    "Tools/Wordlists/Wordlists.md",
-    "README.md",
     "Services/Databases/Postgres",
     "Tools/Authentication-Attacking",
     "Tools/Network-Based/Proxying-And-Pivoting",

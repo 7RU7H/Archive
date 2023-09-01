@@ -412,7 +412,8 @@ Condense:
 			- OS control files 
 				- [[Windows-Registry]] control
 				- `/etc/`, `/usr`, `/var`
-			
+		- What processes are running?
+			- Is anything running as `root` or `system` account
 		- User Files
 			- Home directories 
 			- External to home directory owned files
