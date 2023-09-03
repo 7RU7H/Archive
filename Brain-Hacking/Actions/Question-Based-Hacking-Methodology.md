@@ -231,6 +231,7 @@ Condense:
 		- Step 3): Do you need to **(re)**TGT after re-synced to the DC: go to Step 1)
 		- Step 4): Are you running latest Tool versions!
 	- Is it really large and requires a [[Domain-Flyover]]
+	- Which DC has `PdcRoleOwner` (Primary DC with most up-to-date information)  property? 
 	- Have you got scope for [[Responder-Cheatsheet]] for [[LLMNR-Poisoning]] and [mitm6](https://github.com/dirkjanm/mitm6) - MITM those NTLM hashes.
 		- Have they not cracked yet?
 			- NTLM Relay Attack?

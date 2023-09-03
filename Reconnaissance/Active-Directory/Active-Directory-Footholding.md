@@ -1,4 +1,5 @@
 # Gaining a Foothold on Active Directory
+
 For enumeration see [[Active-Directory-Enumeration-Defined]] or general theory and definitions [[Active-Directory-Defined]]. For commands cheatsheet [[Active-Directory-Commands]] or for Privilege Escalation see [[Active-Directory-Privilege-Escalation]]. See [[Attacking-Kerberos]] for exclusively Kerberos related and information on the mechanics of Kerberos  [[Active-Directory-Kerberos-Authentication-Defined]].
 
 ## NTLM & NetNTLM Authenticated Services
