@@ -113,6 +113,9 @@ Get-DomainGroup -AdminCount | Get-DomainGroupMember -Recurse | ?{$_.MemberName -
 ## Logon and Sessions
 ```powershell
 Get-NetLoggedon -ComputerName <servername> #Get net logon users at the moment in a computer (need admins rights on target)
+# Uses NetWkstaUserEnum and  APIs
+# NetSessionEnum use sSrvsvcSessionInfo registry key located: 
+# HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanServer\DefaultSecurity
 Get-NetSession -ComputerName <servername> #Get active sessions on the host
 Get-LoggedOnLocal -ComputerName <servername> #Get locally logon users at the moment (need remote registry (default in server OS))
 Get-LastLoggedon -ComputerName <servername> #Get last user logged on (needs admin rigths in host)
