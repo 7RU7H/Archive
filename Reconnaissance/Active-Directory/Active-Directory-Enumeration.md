@@ -26,10 +26,14 @@ GUI User interaction with remote host - [[RDP-Recon]] and [[RDP]]
 Service to Domain Joined Machine communication with RPC - see [[RPC-Recon]]
 
 
-[[Crackmapexec-Cheatsheet]]
-
 [[PSExec]]
 [[WinRM]] 
+
+## Remote Tooling 
+
+[[Crackmapexec-Cheatsheet]]
+[[Bloodhound-Guide]] has a remote python ingestor `Bloodhound.py` 
+
 ## ACL, ACE and Object Permissions
 
 Access Control Lists ([ACL](https://learn.microsoft.com/en-us/windows/win32/secauthz/access-control-lists) (link:[[ACL-Abuse]])) is a list of [ACE](https://learn.microsoft.com/en-us/windows/win32/secauthz/access-control-entries)s (Access Control Entries) *Each ACE controls or monitors access to an object by a specified trustee. For information about adding, removing, or changing the ACEs in an object's ACLs.*
@@ -152,6 +156,22 @@ SPN enumeration - See [[Powerview-Cheatsheet]] and [[Bloodhound-Guide]]
 sc \\$ForEachMachine queryex type= service state= all
 setspn -L $service
 ```
+
+#### File Shares
+
+```powershell
+# If you have administrative privileges
+Get-WmiObject -Class Win32_Share -ComputerName *
+net share
+net view \\$ComputerName
+
+ls \\$SHARENAME\$path\$file.$extension
+# Find a Group policy preferences hash - 
+# findstr /si "cpassword=""
+# use gpp-decrypt "$GPPhash" on Kali
+```
+
+
 ## PowerView
 
 [Powerview](https://github.com/PowerShellMafia/PowerSploit/blob/master/Recon/PowerView.ps1) from PowerShellMafia's [PowerSploit](https://powersploit.readthedocs.io/en/latest/Recon/) repository is a a PowerShell module    designed to aid in reconnaissance of an Active Directory Domain. Although created before the advent of Bloodhound(visit [[Bloodhound-Guide]] for more details) it is still a powerful way to enumerate a domain, although probably in either obfuscated chunks or the translated to the direct Windows API or LDAP calls for more stealth.  Visit the [[Powerview-Cheatsheet]]

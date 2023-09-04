@@ -73,7 +73,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Reconnaissance/Active-Directory/Active-Directory-Enumeration.md",
+                "file": "Exploitation/Windows/Active-Directory/Ticket-Attacks/Silver-Tickets.md",
                 "mode": "source",
                 "source": false
               }
@@ -145,7 +145,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "IEX",
+                "query": "REP",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -182,7 +182,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Reconnaissance/Active-Directory/Active-Directory-Enumeration.md",
+                "file": "Exploitation/Windows/Active-Directory/Ticket-Attacks/Silver-Tickets.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -199,7 +199,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Reconnaissance/Active-Directory/Active-Directory-Enumeration.md",
+                "file": "Exploitation/Windows/Active-Directory/Ticket-Attacks/Silver-Tickets.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -222,7 +222,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Reconnaissance/Active-Directory/Active-Directory-Enumeration.md"
+                "file": "Exploitation/Windows/Active-Directory/Ticket-Attacks/Silver-Tickets.md"
               }
             }
           }
@@ -245,8 +245,18 @@
   },
   "active": "51d652420a3a5f1a",
   "lastOpenFiles": [
-    "Tools/AD-Offensive/Powerview/Powerview-Cheatsheet.md",
+    "Software/Operating-Systems/Windows/Active-Directory/Active-Directory-Kerberos-Authentication-Defined.md",
+    "Exploitation/Windows/Active-Directory/Ticket-Attacks/Silver-Tickets.md",
+    "Active-Directory-Kerberos-Authentication-Defined.md",
+    "Tools/AD-Offensive/Impacket/Impacket-Cheatsheet.md",
+    "Post-Exploitation/Credentials-Harvesting/AD-Credential-Harvesting.md",
+    "Exploitation/Windows/Active-Directory/AD-Automated-Relays-Exploitation.md",
+    "Exploitation/Windows/Active-Directory/Ticket-Attacks/Attacking-Kerberos.md",
+    "Services/Neo4j/Neo4j.md",
+    "Tools/AD-Offensive/Bloodhound-Guide.md",
     "Reconnaissance/Active-Directory/Active-Directory-Enumeration.md",
+    "Tools/AD-Offensive/Crackmapexec/Crackmapexec-Cheatsheet.md",
+    "Tools/AD-Offensive/Powerview/Powerview-Cheatsheet.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
     "Reconnaissance/Active-Directory/Active-Directory-Footholding.md",
@@ -262,16 +272,6 @@
     "Software/Operating-Systems/Windows/Windows-Concepts/Windows-Registry.md",
     "Tools/Network-Based/Port-scanning/Nmap/Nmap-Cheatsheet.md",
     "Software/Operating-Systems/Linux/Linux-Commands/Core-Linux-Commands.md",
-    "Security-Disciplines/Blue-Team/Auditing-And-Monitoring.md",
-    "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
-    "Tools/Authentication-Attacking/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
-    "Cryptography-And-Authentication/Password-Attacks/Password-Attacks.md",
-    "Cryptography-And-Authentication/Password-Attacks/Password-Recovery.md",
-    "Exploitation/Shells/Reverse-Shells-Listing.md",
-    "Exploitation/Shells/Shells.md",
-    "Tools/Shells/Socat.md",
-    "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md",
-    "Post-Exploitation/Stealth/Evasion/Evading-IPS-And-IDS.md",
     "Services/Databases/Postgres",
     "Tools/Authentication-Attacking",
     "Tools/Network-Based/Proxying-And-Pivoting",

