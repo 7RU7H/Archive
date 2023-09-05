@@ -73,7 +73,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Post-Exploitation/Post-Exploitation-Striking Gold-with-Covert-Recon-Derek-Rook-TALK.md",
+                "file": "Post-Exploitation/Stealth/Evasion/Antivirus-Evasion/Antivirus-Evasion.md",
                 "mode": "source",
                 "source": false
               }
@@ -166,8 +166,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 385.5110321044922,
-    "collapsed": true
+    "width": 385.5110321044922
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -183,7 +182,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Post-Exploitation/Post-Exploitation-Striking Gold-with-Covert-Recon-Derek-Rook-TALK.md",
+                "file": "Post-Exploitation/Stealth/Evasion/Antivirus-Evasion/Antivirus-Evasion.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -200,7 +199,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Post-Exploitation/Post-Exploitation-Striking Gold-with-Covert-Recon-Derek-Rook-TALK.md",
+                "file": "Post-Exploitation/Stealth/Evasion/Antivirus-Evasion/Antivirus-Evasion.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -223,7 +222,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Post-Exploitation/Post-Exploitation-Striking Gold-with-Covert-Recon-Derek-Rook-TALK.md"
+                "file": "Post-Exploitation/Stealth/Evasion/Antivirus-Evasion/Antivirus-Evasion.md"
               }
             }
           }
@@ -248,7 +247,6 @@
   "lastOpenFiles": [
     "Exploitation/Windows/Active-Directory/Ticket-Attacks/Silver-Tickets.md",
     "Post-Exploitation/Post-Exploitation-Striking Gold-with-Covert-Recon-Derek-Rook-TALK.md",
-    "2023-09-04.md",
     "Software/Operating-Systems/Windows/Active-Directory/Active-Directory-Kerberos-Authentication-Defined.md",
     "Active-Directory-Kerberos-Authentication-Defined.md",
     "Tools/AD-Offensive/Impacket/Impacket-Cheatsheet.md",
@@ -273,6 +271,7 @@
     "Post-Exploitation/Privilege-Escalation/Windows/SePrivileges/SeBackupPrivilege.md",
     "Software/Operating-Systems/Windows/Windows-Concepts/Windows-Processes.md",
     "Software/Operating-Systems/Windows/Windows-Concepts/Windows-Registry.md",
+    "Tools/Network-Based/Port-scanning/Nmap/Nmap-Cheatsheet.md",
     "Services/Databases/Postgres",
     "Tools/Authentication-Attacking",
     "Tools/Network-Based/Proxying-And-Pivoting",
