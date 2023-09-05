@@ -8,115 +8,55 @@
         "type": "tabs",
         "children": [
           {
-            "id": "1bcc71f470cc5f2b",
+            "id": "7e512121e58aaa57",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+                "file": "Exploitation/Windows/Active-Directory/Ticket-Attacks/Attacking-Kerberos.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "5ec50f25f3cb07d7",
+            "id": "ccfde409608b2004",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md",
+                "file": "Exploitation/Windows/Active-Directory/Ticket-Attacks/Golden-Tickets.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "8f0cc92ddbdd5368",
+            "id": "5d10ef955ab2dff9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
+                "file": "Exploitation/Windows/Active-Directory/Ticket-Attacks/Diamond-Tickets.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "fa16361611e90493",
+            "id": "5cce7cca192935a2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exploitation/Windows/Pass-The-Hash.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "18d37454269f4aa8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "51d652420a3a5f1a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Post-Exploitation/Stealth/Evasion/Antivirus-Evasion/Antivirus-Evasion.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8dc28d70190aebb6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tools/AD-Offensive/Powerview/Powerview-Cheatsheet.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ad05ac39cc580e32",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1fba3953e4bf15f0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Software/Operating-Systems/Windows/Windows-Concepts/Windows-Processes.md",
+                "file": "Exploitation/Windows/Active-Directory/Ticket-Attacks/Silver-Tickets.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -145,7 +85,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "REP",
+                "query": "Silver tickets",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -162,11 +102,13 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 385.5110321044922
+    "width": 385.5110321044922,
+    "collapsed": true
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -182,7 +124,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Post-Exploitation/Stealth/Evasion/Antivirus-Evasion/Antivirus-Evasion.md",
+                "file": "Exploitation/Windows/Active-Directory/Ticket-Attacks/Silver-Tickets.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -199,7 +141,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Post-Exploitation/Stealth/Evasion/Antivirus-Evasion/Antivirus-Evasion.md",
+                "file": "Exploitation/Windows/Active-Directory/Ticket-Attacks/Silver-Tickets.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -222,7 +164,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Post-Exploitation/Stealth/Evasion/Antivirus-Evasion/Antivirus-Evasion.md"
+                "file": "Exploitation/Windows/Active-Directory/Ticket-Attacks/Silver-Tickets.md"
               }
             }
           }
@@ -243,23 +185,27 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "51d652420a3a5f1a",
+  "active": "5cce7cca192935a2",
   "lastOpenFiles": [
+    "Exploitation/Windows/Active-Directory/Ticket-Attacks/Golden-Tickets.md",
     "Exploitation/Windows/Active-Directory/Ticket-Attacks/Silver-Tickets.md",
+    "Exploitation/Windows/Active-Directory/Ticket-Attacks/Attacking-Kerberos.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
+    "Post-Exploitation/Stealth/Evasion/Antivirus-Evasion/Antivirus-Evasion.md",
+    "Tools/AD-Offensive/Powerview/Powerview-Cheatsheet.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
+    "Software/Operating-Systems/Windows/Windows-Concepts/Windows-Processes.md",
+    "Exploitation/Windows/Active-Directory/Ticket-Attacks/Diamond-Tickets.md",
     "Post-Exploitation/Post-Exploitation-Striking Gold-with-Covert-Recon-Derek-Rook-TALK.md",
     "Software/Operating-Systems/Windows/Active-Directory/Active-Directory-Kerberos-Authentication-Defined.md",
     "Active-Directory-Kerberos-Authentication-Defined.md",
     "Tools/AD-Offensive/Impacket/Impacket-Cheatsheet.md",
     "Post-Exploitation/Credentials-Harvesting/AD-Credential-Harvesting.md",
     "Exploitation/Windows/Active-Directory/AD-Automated-Relays-Exploitation.md",
-    "Exploitation/Windows/Active-Directory/Ticket-Attacks/Attacking-Kerberos.md",
     "Services/Neo4j/Neo4j.md",
     "Tools/AD-Offensive/Bloodhound-Guide.md",
     "Reconnaissance/Active-Directory/Active-Directory-Enumeration.md",
     "Tools/AD-Offensive/Crackmapexec/Crackmapexec-Cheatsheet.md",
-    "Tools/AD-Offensive/Powerview/Powerview-Cheatsheet.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
     "Reconnaissance/Active-Directory/Active-Directory-Footholding.md",
     "Reconnaissance/Active-Directory",
     "Post-Exploitation/Stealth/Living-Off-The-Land/Windows-Living-Off-The-Land.md",
@@ -268,10 +214,6 @@
     "Software/Operating-Systems/Windows/Windows-Concepts/Windows-Filesystem/Windows-Permissions.md",
     "Exploitation/Windows/Pass-The-Hash.md",
     "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Privilege-Escalation.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/SePrivileges/SeBackupPrivilege.md",
-    "Software/Operating-Systems/Windows/Windows-Concepts/Windows-Processes.md",
-    "Software/Operating-Systems/Windows/Windows-Concepts/Windows-Registry.md",
-    "Tools/Network-Based/Port-scanning/Nmap/Nmap-Cheatsheet.md",
     "Services/Databases/Postgres",
     "Tools/Authentication-Attacking",
     "Tools/Network-Based/Proxying-And-Pivoting",
