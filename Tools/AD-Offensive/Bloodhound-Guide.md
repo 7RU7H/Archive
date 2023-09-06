@@ -117,7 +117,7 @@ ulimit -n 40000 # increase history
 sudo neo4j console
 # THEN goto localhost:7474
 ```
-For more [[Neo4j]] related information follow the link
+For more [[neo4j]] related information follow the link
 
 Beware importanting data is stored and retain after exiting. Comply with data protection and any data destruction policies, but also if you don't want to get confused by any old data - `Database Info -> Scroll to the bottom of the list -> Clear Database`.
 
