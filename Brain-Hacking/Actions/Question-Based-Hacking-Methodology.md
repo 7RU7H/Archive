@@ -1,4 +1,3 @@
-
 # Question Based Hacking Methodology
 
 

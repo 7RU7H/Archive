@@ -11,7 +11,7 @@ Definitions:
 	- Memory operands - (denoted by square brackets) reference memory locations
 
 #### Instructions
-
+x86
 `mov destination, source` - copy data from the source into the destination
 ```asm
 mov eax, 0xaa ; move immediate operand into the eax register
@@ -54,8 +54,111 @@ Flags are bits that are set in the Flags Register or `EFLAGS` register to repres
 |Interrupt Enable|IF|If set (1), it enables maskable hardware interrupts. If cleared (0), interrupts are disabled.|
 
 
+#### Arithmetic Operations
+```asm
+add dst, value ; add value to the destination as the result  
+
+; For Subtraction
+; If destination is smaller subtraced value the carry flag (CF) is set
+; Zero Flag (ZF) is set if result is zero
+sub dst, value 
+
+; For multiplication and division two registers are required 
+; Low bits are stored in eax and the higher bits are stored edx 
+; multiplies the value with eax and stores the result in edx:eax as a 64-bit value
+mul valae
+
+; divides a 64-bit value in edx:eax saving result in eax and remainder in edx
+div value 
+
+; ()crementation of a value in a register
+inc eax ; increment by 1
+dec eax ; decrement by 1
+```
+
+#### Logical Instructions
+```asm
+; Translate the hex into bits 
+; Bitwise AND = { 1 and 1 = 1 || 0 and 1 = 0} 
+and al, 0xXX 
+; Bitwise OR = { 0 or 1 = 1 || 0 or 0 = 0 }
+or al, 0xXX 
+; Bitwise NOT inverts operand bits = { 00001111 -> 00001111 }
+not al 
+; Bitwise XOR 
+; { 0xfc, 0x7c (eqv. 11111100 XOR 01111100) -> 10000000 } 
+; { 0x7c, 0x7c = 00000000} XOR a register results in 0 
+; XOR is used a more optimzed way to set a register to 00000000 than MOV 
+xor al, 0xXX 
+```
+
+#### Conditionals
+
+```asm
+; TEST 
+; bitwise AND, but sets the ZF if result is 0 
+; used to check if an operand has a NULL value by testing against itself
+; More optimal the comparing with value 0
+test dst, src
+
+; CMP
+; compares 2 operands and set ZF or CF 
+; dst - src = ZF | CF
+cmp dst, src
+
+```
+
+#### Branching
+
+Jump instructions
+
+|**Instruction**|**Explanation**|
+|---|---|
+|jz|Jump if the ZF is set (ZF=1).|
+|jnz|Jump if the ZF is not set (ZF=0).|
+|je|Jump if equal. Often used after a CMP instruction.|
+|jne|Jump if not equal. Often used after a CMP instruction.|
+|jg|Jump if the destination is greater than the source operand. Performs signed comparison and is often used after a CMP instruction.|
+|jl|Jump if the destination is lesser than the source operand. Performs signed comparison and is often used after a CMP instruction.|
+|jge|Jump if greater than or equal to. Jumps if the destination operand is greater than or equal to the source operand. Similar to the above instructions.|
+|jle|Jump if lesser than or equal to. Jumps if the destination operand is lesser than or equal to the source operand. Similar to the above instructions.|
+|ja|Jump if above. Similar to jg, but performs an unsigned comparison.|
+|jb|Jump if below. Similar to jl, but performs an unsigned comparison.|
+|jae|Jump if above or equal to. Similar to the above instructions.|
+|jbe|Jump if below or equal to. Similar to the above instructions.|
+
+#### Function Calls
+```asm
+;
+call location
+```
+
+#### Stack Calls
+```
+; Push a value from a source ONTO the stack 
+push src
+
+; `pusha` "push all words" pushes all 16 bit general purpose registers onto the stack: AX, BX, CX, DX, SI, DI, SP, BP
+pusha
+
+; `pushad` ` "push all double words" pushes all 32 bit general purpose registers onto the stack: EAX, EBX, ECX, EDX, ESI, EDI, ESP, EBP
+pushad 
+
+; Pop a value OFF the stack to a destination
+pop dst
+
+; `popa` "pop all words" pops the value sequentiall to all 16 bit general purpose registers from the top of the stack in THIS ORDER: DI, SI, BP, BX, DX, CX, AX
+popa
+
+; `popad` "pop all double words" pops the value sequentiall to all 32 bit general purpose registers from the top of the stack in THIS ORDER: EDI, ESI, EBP, EBX, EDX, ECX, EAX
+; SP or ESP is also adjusted to point to the new top of the stack
+popad 
+```
+
+
 ## References
 
 [THM x86 Assembly Room](https://tryhackme.com/room/x86assemblycrashcourse)
 [Wikipedia Opcodes](https://en.wikipedia.org/wiki/Opcode)
 [Wikipedia x86 assembly language](https://en.wikipedia.org/wiki/X86_assembly_language)
+[THM x86 Architecture Overview Room](https://tryhackme.com/room/x8664arch)

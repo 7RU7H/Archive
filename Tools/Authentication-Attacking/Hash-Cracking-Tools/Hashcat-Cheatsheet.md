@@ -8,7 +8,7 @@
 [Ippsec Recommends:](https://www.youtube.com/watch?v=H9FcE_FMZio)
 ```bash
 # Use a wordlist along side cracking
--r */InsidePro-Password.rule
+-r */InsidePro-PasswordPro.rule
 ```
 
 [Wordlist creation](https://infinitelogins.com/2020/11/16/using-hashcat-rules-to-create-custom-wordlists/)
