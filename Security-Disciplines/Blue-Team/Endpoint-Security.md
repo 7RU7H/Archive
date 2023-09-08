@@ -5,7 +5,7 @@
 
 Endpoints are the leaves to the branches of a network, a workstation, database or another production machine from where monitoring and logging of various activity can occur, be collected and processed in a more centralised location within a network.
 
-For Windows, Sysinternals is the suite of tools gain a deep insight on what is going on - the [[Sysinternals-Hub]] page will contain various tools of that suite used be *any* cyber security professional to perform investigation and analysis. Although every organisation is different there are less modular suites like: [[Osquery]] that centralise the data collection phase.  
+For Windows, Sysinternals is the suite of tools gain a deep insight on what is going on - the [[Sysinternals]] page will contain various tools of that suite used be *any* cyber security professional to perform investigation and analysis. Although every organisation is different there are less modular suites like: [[Osquery]] that centralise the data collection phase.  
 
 ## Endpoint Logging and Monitoring
 

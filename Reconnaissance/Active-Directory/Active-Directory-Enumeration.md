@@ -178,7 +178,7 @@ ls \\$SHARENAME\$path\$file.$extension
 
 ## SysInternals
 
-Visit [[Sysinternals-Hub]] for all the tools that will eventually get used at some point or better the official Documentation as there are so many. `PSLoggedon` can enumerate logged on users, but requires Remote Registry service - not enabled on default Windows Workstations since Windows 8.
+Visit [[Sysinternals]] for all the tools that will eventually get used at some point or better the official Documentation as there are so many. `PSLoggedon` can enumerate logged on users, but requires Remote Registry service - not enabled on default Windows Workstations since Windows 8.
 ```powershell
 PSLoggedon.exe 
 PSLoggedon64.exe 

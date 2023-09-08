@@ -59,7 +59,7 @@ GUI Configure DNS
 
 #### Remote Administration:
 
-Windows Sysinternals (consider the [[Sysinternals-Hub]]) is a collection of freeware tools that can assist in things like diagnosing, troubleshooting, and managing Windows systems. 
+Windows Sysinternals (consider the [[Sysinternals]]) is a collection of freeware tools that can assist in things like diagnosing, troubleshooting, and managing Windows systems. 
 Psexec2 is one of the CLI tools within the Sysinternals suite that has many features, 
 but one of the more prominent features is the ability to launch command prompts on remote devices.
 

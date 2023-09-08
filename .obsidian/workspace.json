@@ -18,8 +18,57 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "d2034fc1961858fc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3ca1d6efb43fbf6f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Exploitation/Windows/Active-Directory/Ticket-Attacks/Golden-Tickets.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "453e1f209723347b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/AD-Offensive/Impacket/Impacket-Cheatsheet.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d64627a08eca8d49",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Persistence/Active-Directory-Persistence/AD-Persistence-Credentials.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -48,7 +97,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Hashcat",
+                "query": "ntds",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,7 +118,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 385.5110321044922
+    "width": 582.5110321044922
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -85,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Development/Languages/Assembly/x86-Assembly.md",
+                "file": "Exploitation/Windows/Active-Directory/Ticket-Attacks/Golden-Tickets.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Development/Languages/Assembly/x86-Assembly.md",
+                "file": "Exploitation/Windows/Active-Directory/Ticket-Attacks/Golden-Tickets.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Development/Languages/Assembly/x86-Assembly.md"
+                "file": "Exploitation/Windows/Active-Directory/Ticket-Attacks/Golden-Tickets.md"
               }
             }
           }
@@ -146,34 +195,34 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2e81ae90bda8cc2f",
+  "active": "3ca1d6efb43fbf6f",
   "lastOpenFiles": [
-    "Tools/Authentication-Attacking/Hash-Cracking-Tools/Hashcat-Cheatsheet.md",
-    "Software/Operating-Systems/Windows/Windows-Concepts/Windows-Processes.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
-    "Development/Languages/Powershell/Useful_Powershell.md",
-    "Tools/AD-Offensive/Powerview/Powerview-Cheatsheet.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
+    "Persistence/Active-Directory-Persistence/AD-Persistence-Credentials.md",
+    "Persistence/Windows-Persistence/Windows-Persistence-Implant-Existing-Services.md",
+    "Persistence/Windows-Persistence/Windows-Persistence-Abusing-Scheduled-Tasks.md",
+    "Persistence/Windows-Persistence/Windows-Persistence-Backdooring-Files.md",
+    "Persistence/Windows-Persistence/DLL-Hijacking.md",
+    "Persistence/Windows-Persistence/Windows-Persistence.md",
+    "Persistence/Windows-Persistence/Windows-Persistence-Stashing.md",
+    "Persistence/Windows-Persistence/Windows-Persistence-Abusing-Services.md",
+    "Persistence/Windows-Persistence/Windows-Persistence-Logon-Triggered.md",
+    "Persistence/Windows-Persistence/Windows-Persistence-Tampering-with-Unprivileged-Accounts.md",
     "Exploitation/Windows/Pass-The-Hash.md",
-    "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
+    "Post-Exploitation/Lateral-Movement/Active-Directory-Lateral-Movement/AD-Lateral-Movement-Via-PsExec.md",
+    "Post-Exploitation/Lateral-Movement/Active-Directory-Lateral-Movement/Active-Directory-Lateral-Movement.md",
+    "Exploitation/Windows/Overpass-The-Hash.md",
+    "Exploitation/Windows/Active-Directory/Pass-The-Ticket.md",
+    "Post-Exploitation/Lateral-Movement/Active-Directory-Lateral-Movement/AD-Lateral-Movement-Via-WMI.md",
+    "Post-Exploitation/Lateral-Movement/Active-Directory-Lateral-Movement/AD-Lateral-Movement-With-DCOM.md",
+    "Post-Exploitation/Lateral-Movement/Active-Directory-Lateral-Movement/AD-Lateral-Movement-Via-WinRM.md",
+    "Tools/SysInternals/Sysinternals.md",
+    "Networks/Network-Protocols.md",
+    "Networks/Network-Theory/Network-Protocols/Network-Protocols-Hub.md",
+    "Tools/AD-Offensive/Impacket/Impacket-Cheatsheet.md",
     "Exploitation/Windows/Active-Directory/Ticket-Attacks/Golden-Tickets.md",
-    "Post-Exploitation/Stealth/Evasion/Antivirus-Evasion/Antivirus-Evasion.md",
-    "Networks/Network-Theory/IPvX/IPv4-Subnet-Masks-Dictionary.md",
-    "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
-    "Services/Neo4j/neo4j.md",
-    "Post-Exploitation/Stealth/Evasion/Antivirus-Evasion/AV-Fingerprinting.md",
-    "Post-Exploitation/Stealth/Evasion/Antivirus-Evasion/AMSI-Bypasses/AMSI-ScanBuffer-Patch.md",
-    "Post-Exploitation/Stealth/Evasion/Antivirus-Evasion/AMSI-Bypasses/AMSI-Buffer-Patch-In-memory.md",
-    "Post-Exploitation/Stealth/Evasion/Logging-And-Monitoring-Evasion/Logging-And-Monitoring-Evasion.md",
-    "Post-Exploitation/Stealth/Evasion/Logging-And-Monitoring-Evasion/ETW-Evasion-PowerShell-Reflection.md",
-    "Post-Exploitation/Stealth/Evasion/Logging-And-Monitoring-Evasion/ETW-Evasion-Patching-Tracing-Functions.md",
-    "Post-Exploitation/Stealth/Evasion/Logging-And-Monitoring-Evasion/ETW-Evasion-Group-Policy-Takeover.md",
-    "Post-Exploitation/Stealth/Evasion/Logging-And-Monitoring-Evasion/ETW-Evasion-Disabling-Providers.md",
-    "Post-Exploitation/Stealth/Evasion/Logging-And-Monitoring-Evasion/ETW-Evasion-Abusing-Log-Pipeline.md",
-    "Post-Exploitation/Stealth/Evasion/Antivirus-Evasion/Windows-Runtime-Detection-Evasion.md",
-    "Post-Exploitation/Stealth/Evasion/Antivirus-Evasion/Signature-Evasion.md",
-    "Post-Exploitation/Stealth/Evasion/Antivirus-Evasion/Process-Doppelganging.md",
+    "Exploitation/Windows/Active-Directory/AD-DC-Sync-Attack.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
+    "Development/Languages/Assembly/x86-Assembly.md",
     "Post-Exploitation/Stealth/Evasion/Antivirus-Evasion/AMSI-Bypasses",
     "Post-Exploitation/Stealth/Evasion/Logging-And-Monitoring-Evasion",
     "Post-Exploitation/Stealth/Evasion/Antivirus-Evasion",

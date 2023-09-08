@@ -1,5 +1,5 @@
-# Sysinternals-Hub
-This articles provide links to each SysInternal module
+# Sysinternals Hub
+This articles provide links to each SysInternals module
 
 [[Sysinternals-Sigcheck]]
 [[Sysinterals-Sysmon]]

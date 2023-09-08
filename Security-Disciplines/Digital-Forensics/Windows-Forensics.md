@@ -4,7 +4,7 @@ Tools are not analysis, but a means to collect and marshal data.
 - [[Autopsy]]
 - [[Regshot]]
 - [[Eric-Zimmerman-Tools]]
-- [[Sysinternals-Hub]]
+- [[Sysinternals]]
 - [[Kape]]
 - [FTK Imager](https://www.exterro.com/ftk-imager) 
 

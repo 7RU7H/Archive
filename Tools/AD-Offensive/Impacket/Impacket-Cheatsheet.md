@@ -12,7 +12,7 @@ From [Impacket Github](https://github.com/SecureAuthCorp/impacket) or [secureAut
 -   NMB and SMB1, SMB2 and SMB3 (high-level implementations).
 -   MSRPC version 5, over different transports: TCP, SMB/TCP, SMB/NetBIOS and HTTP.
 -   Plain, NTLM and Kerberos authentications, using password/hashes/tickets/keys.
--   Portions/full implementation of the following MSRPC interfaces: EPM, DTYPES, LSAD, LSAT, NRPC, RRP, SAMR, SRVS, WKST, SCMR, BKRP, DHCPM, EVEN6, MGMT, SASEC, TSCH, DCOM, WMI, OXABREF, NSPI, OXNSPI.
+-   Portions/full implementation of the following MSRPC interfaces: EPM, DTYPES, LSAD, LSAT, NRPC, RRP, SAMR, SRVS, ry to execute the dcsync technique and get access to dc1 in order to get the flag located on the administrator's desktop. To do so, log in via RDP as the _jeffadmin_ and perform dcsync against the doWKST, SCMR, BKRP, DHCPM, EVEN6, MGMT, SASEC, TSCH, DCOM, WMI, OXABREF, NSPI, OXNSPI.
 -   Portions of TDS (MSSQL) and LDAP protocol implementations.
 
 Impacket is an awesome suite of scripts written in python that are incorporated into tools like [[Crackmapexec-Cheatsheet]]. It is very useful suite of tools for [[Active-Directory-Enumeration-Defined]], [[Active-Directory-Footholding]], [[Attacking-Kerberos]], [[Active-Directory-Lateral-Movement]] and general [[Active-Directory-Privilege-Escalation]].
@@ -198,7 +198,7 @@ impacket-secretsdump -system system -security security -ntds ntds.dit LOCAL
 
 Perform a [[AD-DC-Sync-Attack]]
 ```bash
-secretsdump -just-dc $domain/$user@$DC-ip
+impacket-secretsdump -just-dc $domain/$user@$DC_IPaddress
 # For just ntlms 
 -just-dc-ntlm 
 ```
