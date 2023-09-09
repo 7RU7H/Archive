@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exploitation/Windows/Active-Directory/Ticket-Attacks/Golden-Tickets.md",
+                "file": "Exploitation/Windows/Active-Directory/AD-DC-Sync-Attack.md",
                 "mode": "source",
                 "source": false
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exploitation/Windows/Active-Directory/Ticket-Attacks/Golden-Tickets.md",
+                "file": "Exploitation/Windows/Active-Directory/AD-DC-Sync-Attack.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Exploitation/Windows/Active-Directory/Ticket-Attacks/Golden-Tickets.md",
+                "file": "Exploitation/Windows/Active-Directory/AD-DC-Sync-Attack.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Exploitation/Windows/Active-Directory/Ticket-Attacks/Golden-Tickets.md"
+                "file": "Exploitation/Windows/Active-Directory/AD-DC-Sync-Attack.md"
               }
             }
           }
@@ -197,6 +197,19 @@
   },
   "active": "3ca1d6efb43fbf6f",
   "lastOpenFiles": [
+    "Exploitation/Windows/Windows-Internals-Exploitation/Windows-Thread-Hijacking.md",
+    "Exploitation/Windows/Active-Directory/Ticket-Attacks/Attacking-Kerberos.md",
+    "Exploitation/Windows/Active-Directory/Ticket-Attacks/ASREP-Roasting.md",
+    "Exploitation/Windows/Windows-Internals-Exploitation/Windows-Shellcode-Injection.md",
+    "Exploitation/Windows/Windows-Internals-Exploitation/Windows-Process-Hollowing.md",
+    "Exploitation/Windows/Windows-Internals-Exploitation/Exploiting-Windows-Internals.md",
+    "Exploitation/Windows/Windows-Internals-Exploitation/AMSI-Exploitation.md",
+    "Exploitation/Windows/Windows-Internals-Exploitation/DLL-Injection.md",
+    "Post-Exploitation/Lateral-Movement/Lateral-Movement.md",
+    "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
+    "Exploitation/Windows/Active-Directory/Ticket-Attacks/Golden-Tickets.md",
+    "Post-Exploitation/Credentials-Harvesting/Windows-Cached-Credentials.md",
+    "Post-Exploitation/Lateral-Movement/Active-Directory-Lateral-Movement/Active-Directory-Lateral-Movement.md",
     "Persistence/Active-Directory-Persistence/AD-Persistence-Credentials.md",
     "Persistence/Windows-Persistence/Windows-Persistence-Implant-Existing-Services.md",
     "Persistence/Windows-Persistence/Windows-Persistence-Abusing-Scheduled-Tasks.md",
@@ -209,20 +222,7 @@
     "Persistence/Windows-Persistence/Windows-Persistence-Tampering-with-Unprivileged-Accounts.md",
     "Exploitation/Windows/Pass-The-Hash.md",
     "Post-Exploitation/Lateral-Movement/Active-Directory-Lateral-Movement/AD-Lateral-Movement-Via-PsExec.md",
-    "Post-Exploitation/Lateral-Movement/Active-Directory-Lateral-Movement/Active-Directory-Lateral-Movement.md",
     "Exploitation/Windows/Overpass-The-Hash.md",
-    "Exploitation/Windows/Active-Directory/Pass-The-Ticket.md",
-    "Post-Exploitation/Lateral-Movement/Active-Directory-Lateral-Movement/AD-Lateral-Movement-Via-WMI.md",
-    "Post-Exploitation/Lateral-Movement/Active-Directory-Lateral-Movement/AD-Lateral-Movement-With-DCOM.md",
-    "Post-Exploitation/Lateral-Movement/Active-Directory-Lateral-Movement/AD-Lateral-Movement-Via-WinRM.md",
-    "Tools/SysInternals/Sysinternals.md",
-    "Networks/Network-Protocols.md",
-    "Networks/Network-Theory/Network-Protocols/Network-Protocols-Hub.md",
-    "Tools/AD-Offensive/Impacket/Impacket-Cheatsheet.md",
-    "Exploitation/Windows/Active-Directory/Ticket-Attacks/Golden-Tickets.md",
-    "Exploitation/Windows/Active-Directory/AD-DC-Sync-Attack.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
-    "Development/Languages/Assembly/x86-Assembly.md",
     "Post-Exploitation/Stealth/Evasion/Antivirus-Evasion/AMSI-Bypasses",
     "Post-Exploitation/Stealth/Evasion/Logging-And-Monitoring-Evasion",
     "Post-Exploitation/Stealth/Evasion/Antivirus-Evasion",

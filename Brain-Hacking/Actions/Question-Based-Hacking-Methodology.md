@@ -243,14 +243,20 @@ Condense:
 			- Do the shares contain: shortcuts to executable, credentials, software, user and domain intel and information?	
 	 - Recursively have with current context and reappraise Bloodhound, your objectives and the potential paths - [[Bloodhound-Guide]]? - `-c DCOnly` is quieter!
 		1. How do I compromise credentials?
-			1. Is the credential reused/defaults/weak/hardcoded?
+			1. Is the credential reused/defaults/weak/hardcoded/cached?
 				1. Have reused all credentials with [[Password-Attacks]]?
-			2. ASREP-roast?
-			3. Kerberoastable?
-			4. Databases?
-			5. Network Shares/File system artefacts?
-			6. sMSA or [[gMSA-abuse]]?AD escalation and laterally movement, before Local Privilege Escalation is always a reduction in time to objective.
-			7. [[ACL-Abuse]]?
+				2. Do we the packet economy to try touch sensitive memory - [[Windows-Cached-Credentials]] 
+			2. Is there Kerberos 
+				- AS-REQ - AS-REP
+					1. ASREP-roast? 
+				- TGS-REQ - TGS-REP
+					 - Kerberoastable?
+					 - Is Clock time the same as the DC
+				- AP-REQ - AP-REP - What application can we pivot to domain internal or external
+			3. Databases?
+			4. Network Shares/File system artefacts?
+			5. sMSA or [[gMSA-abuse]]?AD escalation and laterally movement, before Local Privilege Escalation is always a reduction in time to objective.
+			6. [[ACL-Abuse]]?
 		3. What services can I access with those credentials?
 			1. Have you mapped the network, with or without SharpHound?
 			1. Is there evidence of network  requiring [[Proxies]] and [[Port-Redirection-And-Tunnelling]]  
