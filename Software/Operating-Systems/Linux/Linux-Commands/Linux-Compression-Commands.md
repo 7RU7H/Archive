@@ -10,6 +10,7 @@ engrampa $file
 
 ```bash
 tar xvf $file.tar
+tar xf $file.tar.gz
 gzip -x $file.gz
 7z e $file.7z
 unrar e $file.rar

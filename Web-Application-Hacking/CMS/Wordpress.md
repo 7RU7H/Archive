@@ -4,9 +4,9 @@ Checklist:
 - Login page
 - `robots.txt`
 - `/var/www/html/wp-config.php` contain credentials
-- Enumerate users with `-u` with wpscan
+- Enumerate users with `-u` with `wpscan`
 
-## WPscan
+## Cheatshee
 
 [Free 25 API requests per day](https://wpscan.com/pricing)
 
@@ -20,7 +20,7 @@ wpscan --url $url --api-token $APIKEY -U admin -P /usr/share/wordlists/rockyou.t
 ```
 
 
-## Scanning and Enumeration 
+#### Scanning and Enumeration 
 
 ```bash
 # Username can be guessed on WordPress since the username will generate a different error message if it doesn't exist.
@@ -48,7 +48,7 @@ https://monsite.com/wp-includes
 /_wpeprivate/config.json
 ```
 
-## Directory  Busting 
+#### Directory  Busting 
 Seclist wordlists
 ```
 Discovery/Web-Content/URLs/urls-wordpress-3.3.1.txt
@@ -56,21 +56,21 @@ Discovery/Web-Content/CMS/wordpress.fuzz.txt
 Passwords/Honeypot-Captures/wordpress-attacks-july2014.txt
 ```
 
-## Shells
+#### Shells
 Seclists
 ```
 /usr/share/seclists/Web-Shells/WordPress
 ```
 
-## Reverse Shells
+#### Reverse Shells
 
-```
+```php
 # You can reverse shell by editing templates (404.php, footer.php...)
 # Theme Editor use a 404 template as it won't break the site.
 # Plugin Editor  then go to /wp-content/plugins/<pluginname.php>
 ```
 
-## Hashes
+#### Hashes
 ```bash
 # Hashcat Hashmode = 400
 ```
