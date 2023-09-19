@@ -98,6 +98,7 @@ procdump -p <PID>
 // Upload and Download - use absolute path
 upload
 // Download to the directory executed sliver-server/client
+// BEWARE .Directory in Linux will not recursively down its contents
 // tar.gz recursively on a directory by default <feels good> 
 download
 // extract after downloading

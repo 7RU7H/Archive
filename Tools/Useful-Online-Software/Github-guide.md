@@ -1,6 +1,6 @@
 # Github
 
-For hacking Github Repositories see [[Git-Repository-Extraction]]
+For hacking Github Repositories see [[Git-Repository-Hacking]]
 
 ## AAARGH.. breath just use the correct git commands
 
