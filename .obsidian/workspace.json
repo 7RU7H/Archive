@@ -25,7 +25,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Important-Linux-Locations.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Windows/SePrivileges/SePrivilege-Token-Table.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b2671a467e301509",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Exploitation/Shells/Reverse-Shells-Listing.md",
                 "mode": "source",
                 "source": false
               }
@@ -61,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "etc/hosts",
+                "query": "apache",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Important-Linux-Locations.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Windows/SePrivileges/SePrivilege-Token-Table.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Important-Linux-Locations.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Windows/SePrivileges/SePrivilege-Token-Table.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Important-Linux-Locations.md"
+                "file": "Post-Exploitation/Privilege-Escalation/Windows/SePrivileges/SePrivilege-Token-Table.md"
               }
             }
           },
@@ -171,9 +183,14 @@
   },
   "active": "02792e209f20d3fe",
   "lastOpenFiles": [
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/Important-Linux-Locations.md",
+    "Exploitation/Shells/Reverse-Shells-Listing.md",
+    "Services/Webservers/Apache/Apache2/Apache2.md",
+    "Tools/Authentication-Attacking/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
+    "Cryptography-And-Authentication/Password-Attacks/Password-Attacks.md",
     "Services/SaltStack.md",
     "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Important-Linux-Locations.md",
     "Reconnaissance/Active-Information-Gathering/DNS/DNS-Active-Recon.md",
     "Services/Databases/MYSQL/MySQL-Cheatsheet.md",
     "Tools/C2/Sliver/Sliver-Cheatsheet.md",
@@ -193,11 +210,6 @@
     "Tools/Authentication-Attacking/Hash-Cracking-Tools/John-The-Ripper-Cheatsheet.md",
     "Development/Languages/Assembly/x86-Assembly.md",
     "Web-Application-Hacking/CMS/Wordpress.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
-    "Exploitation/Windows/Pass-The-Hash.md",
-    "Tools/Windows/Mimikatz/Mimikatz-Cheatsheet.md",
-    "Exploitation/Windows/Active-Directory/AD-DC-Sync-Attack.md",
-    "Exploitation/Windows/Windows-Internals-Exploitation/Windows-Thread-Hijacking.md",
     "Post-Exploitation/Stealth/Evasion/Antivirus-Evasion/AMSI-Bypasses",
     "Post-Exploitation/Stealth/Evasion/Logging-And-Monitoring-Evasion",
     "Post-Exploitation/Stealth/Evasion/Antivirus-Evasion",
