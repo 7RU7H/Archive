@@ -21,13 +21,38 @@ ssh-keygen
 # Check how the kernel is managing ssh - not include here for non-systemd 
 sudo systemctl status ssh
 ```
+
+For the Cheatsheet without explanations:
+```bash
+# Local Port Forward
+ssh -N -L 0.0.0.0:4141:$interfaceToAccessBox2:445 $box2User@$box2_address
+socat TCP-LISTEN:6969,fork,reuseaddr,bind=127.0.0.1 TCP:remote_ip:remote_port
+
+
+## Dynamic Port Forward
+ssh -N -D 0.0.0.0:9999 $box2User@$interfaceToAccessBox2
+# We need to run socat on kali through proxychains 
+proxychains socat TCP-LISTEN:4141,fork,reuseaddr,bind=127.0.0.1 TCP:$box2_address:6969
+
+
+## Remote Port Forward
+# Start an ssh server
+sudo systemctl start ssh
+sudo ss -tulpn
+# Connect back to the ssh server on $kaliAddress 
+ssh -N -R 127.0.0.1:2345:$targetAddress:$targetPort kali@$kaliAddress
+curl 127.0.0.1:2345
+# stop the ssh server
+sudo systemctl stop ssh
+```
+
 ## SSH Tunnelling & Local Port Forwarding
 
-As part of connecting to `BOX-01` create a Local port forward where from WAN create a `ssh` tunnel to through to a non-expose internal address. Listening port on WAN interface of `BOX-01` to tunnel traffic from the ssh server on `BOX-02`  to allow access to internal networks connected to the `?` interface
+As an example using Local Port Forwarding: connecting to `BOX-01` from `KALI` from the `WAN` via  `ssh` then tunnelling using `ssh` to tunnel through to a non-exposed internal address. Listening port on WAN interface of `BOX-01` then tunnel traffic back from the ssh server on `BOX-02`  to allow access to internal networks connected to the `?` interface.
 ```goat
-WAN             | DMZ                    | ?
-[KALI]  -->     [  BOX-01  ]  -->        [  BOX-02   ] -->  [ ? ]
-[    ]          [ssh client]  -->        [ssh sserver]      [   ]  
+Network Area | WAN             | DMZ                    | ?
+Box name     | [KALI]  -->     [  BOX-01  ]  -->        [  BOX-02   ] -->  [ ? ]
+Connection   | [    ]          [ssh client]  -->        [ssh sserver]      [   ] 
 ```
 
 ```bash
@@ -221,6 +246,9 @@ sudo proxychains <whatever command>
 ```
 #### Reverse/Remote Dynamic Port Forwarding
 
+
+Remote dynamic port forwarding has only been available since October 2017's OpenSSH 7.6. Only the OpenSSH `client` needs to be version 7.6 or greater  [https://www.openssh.com/txt/release-7.6](https://www.openssh.com/txt/release-7.6)
+
 From Client back to Kali we simply: 
 ```bash
 ssh -N -R 6969 kali@10.10.10.10
@@ -235,8 +263,6 @@ ssh -N -R 6969 kali@10.10.10.10
 - `scp.exe`
 - `sftp.exe`
 - `ssh.exe`
-- 
-
 
 ## References
 
@@ -247,3 +273,4 @@ ssh -N -R 6969 kali@10.10.10.10
 [THM Wreath Room](https://tryhackme.com/room/wreath)
 [Microsoft Devblogs penssh-based-client-and-server](https://devblogs.microsoft.com/commandline/windows10v1803/#openssh-based-client-and-server)
 [Microsoft Devblogs sing-the-openssh-beta-in-windows-10-fall-creators-update-and-windows-server-1709](https://devblogs.microsoft.com/powershell/using-the-openssh-beta-in-windows-10-fall-creators-update-and-windows-server-1709/)
+[https://www.openssh.com/txt/release-7.6](https://www.openssh.com/txt/release-7.6)
