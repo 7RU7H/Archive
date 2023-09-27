@@ -1,2 +1,2 @@
-[Jack Masa XSS mindmap](https://github.com/s0md3v/AwesomeXSS/blob/master/Database/jackmasa-mind-map.png) unfortunately I could find original source so all the more reason to mirror, but I await an account claiming to be Jack and hosting this incredible mind map:
+[Jack Masa XSS mindmap](https://github.com/s0md3v/AwesomeXSS/blob/master/Database/jackmasa-mind-map.png) unfortunately I could not find original source so all the more reason to mirror, but I await an account claiming to be Jack and hosting this incredible mind map:
 ![1080](jackmasa-mind-map.png)

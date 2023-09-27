@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Post-Exploitation/Shadow-Networking/Port-Redirection-And-Tunnelling.md",
+                "file": "Web-Application-Hacking/XSS/XSS-Cheatsheet.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 574.5110321044922
+    "width": 290.5
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Post-Exploitation/Shadow-Networking/Port-Redirection-And-Tunnelling.md",
+                "file": "Web-Application-Hacking/XSS/XSS-Cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Post-Exploitation/Shadow-Networking/Port-Redirection-And-Tunnelling.md",
+                "file": "Web-Application-Hacking/XSS/XSS-Cheatsheet.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Post-Exploitation/Shadow-Networking/Port-Redirection-And-Tunnelling.md"
+                "file": "Web-Application-Hacking/XSS/XSS-Cheatsheet.md"
               }
             }
           },
@@ -158,8 +158,13 @@
   },
   "active": "04bfa7dcaea4f86c",
   "lastOpenFiles": [
-    "Tools/Network-Based/Proxying-And-Pivoting/SSH-Redirection-And-Tunnelling.md",
+    "Security-Disciplines/Social-Engineering/Social-Engineering.md",
+    "Web-Application-Hacking/XSS/XSS-Cheatsheet.md",
+    "Web-Application-Hacking/XSS/Jack-Masa-Mindmap.md",
+    "This-Repository-Specific/click-the-link.md",
+    "Web-Application-Hacking/Cross-Site-Request-Forgery.md",
     "Post-Exploitation/Shadow-Networking/Port-Redirection-And-Tunnelling.md",
+    "Tools/Network-Based/Proxying-And-Pivoting/SSH-Redirection-And-Tunnelling.md",
     "Networks/Proxies.md",
     "Reconnaissance/HUMINT/User-Active-Recon.md",
     "Post-Exploitation/Privilege-Escalation/Windows/WESNG-Helpsheet.md",
@@ -179,12 +184,7 @@
     "Tools/C2/Sliver/Sliver-Cheatsheet.md",
     "Software/Operating-Systems/Linux/Distributions/Debian/Debian-Package-Management.md",
     "Tools/Useful-Online-Software/Github-guide.md",
-    "Reconnaissance/Active-Information-Gathering/IMAP/ICMP-Recon-Cheatsheet.md",
-    "Reconnaissance/Active-Information-Gathering/SMTP/SMTP-Recon-Cheatsheet.md",
     "Reconnaissance/Active-Information-Gathering/IMAP",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
-    "Software/File-Typology/xls-xlsx-Files.md",
-    "Software/File-Typology/YAML.md",
     "Post-Exploitation/Stealth/Evasion/Antivirus-Evasion/AMSI-Bypasses",
     "Post-Exploitation/Stealth/Evasion/Logging-And-Monitoring-Evasion",
     "Post-Exploitation/Stealth/Evasion/Antivirus-Evasion",
