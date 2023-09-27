@@ -2,9 +2,9 @@
 
 ## Introduction
 
-SQL injection is a technique used by attacked to execute malicious SQL statements with objective of stealing information, modifying the database or command execution from the context of database interacting with other networked components. Application commonly require dynamic SQL queries to display content conditionally by user context. Users are then granted some part in the process of displaying that content. This input without input sanitization the attacker can make the database interpret the user input as an SQL input instead of data. With parameter control attack can inject malicious query, which may be executed by the database. For introductory material about SQL see [[Introduction-to-SQL]], if you just here for [[SQLmap-CheatSheet]] then follow the latter link.
+SQL injection is a technique used by attacked to execute malicious SQL statements with objective of stealing information, modifying the database or command execution from the context of database interacting with other networked components. Application commonly require dynamic SQL queries to display content conditionally by user context. Users are then granted some part in the process of displaying that content. This input without input sanitation the attacker can make the database interpret the user input as an SQL input instead of data. With parameter control attack can inject malicious query, which may be executed by the database. For introductory material about SQL see [[Introduction-to-SQL]], if you just here for [[SQLmap-CheatSheet]] then follow the latter link.
 
-For possibly the best hand-on-lab on the internet see [TryHackMe SLQinjections Labs room](https://tryhackme.com/room/sqlilab), it has a good curve to the challenges and has a guidance feature so that in browser you can see what SQL quiery you sent. Invaluable Payloads up-to-date payload listings can be found:
+For possibly the best hand-on-lab on the internet see [TryHackMe SLQinjections Labs room](https://tryhackme.com/room/sqlilab), it has a good curve to the challenges and has a guidance feature so that in browser you can see what SQL query you sent. Invaluable Payloads up-to-date payload listings can be found:
 - [Payloadbox](https://github.com/payloadbox/sql-injection-payload-list)
 - [PayloadsAllTheThings/](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/SQL%20Injection)
 
@@ -27,19 +27,20 @@ by 7ru7h
 
 
 ## Methodology
-Indication of vulnerablity: 
+
+Indication of vulnerability: 
 - variations with use of  `'` which used a string delimiter. 
 
 Databases require instructional commands to store, organise and interact with data. 
-1. The requirement is to inject maliformed SQL queries to break the query syntax through a logical mechanism and the sql parser's interpretation of characters external usage in token classification.  
+1. The requirement is to inject malformed SQL queries to break the query syntax through a logical mechanism and the SQL parser's interpretation of characters external usage in token classification.  
 	- The `-` comment  character is recognised as a break from a functionality to interact with database. 
-	- Or `'` to indicate the opening of string declaration. The paring functions to consider the following set of character as string continously until otherwise stated. 
+	- Or `'` to indicate the opening of string declaration. The paring functions to consider the following set of character as string continuously until otherwise stated. 
 2. In breaking the query, access to debug messages or likewise indicated through commanding the server to delay its subsequent response demonstrating control of the server. 
 3. If it will `sleep` because a malicious query states such for a specified length of time 
 	- Then query may be transformed to the fix its breakage of syntax to 
 		- Then query actual information on the database. 
 			- [[FFUF-Cheatsheet]] maybe useful in fuzzing fields of the database.
-		- Or use the system hosting the database to use the database as storage for further movement with commands to code excution. 
+		- Or use the system hosting the database to use the database as storage for further movement with commands to code execution. 
 
 4. Nested SQL
 	- *A useful function in SQL is creating a query within a query, also known as a subquery or nested query. A nested query is a SELECT statement that is typically enclosed in parentheses, and embedded within a primary SELECT , INSERT , or DELETE operation.* [DigitalOcean Nest SQL](https://www.digitalocean.com/community/tutorials/how-to-use-nested-queries)
@@ -96,14 +97,26 @@ MySQL and MSSQL
 ```
 
 ## Defence and Mitigation
+
 [Prepared Statements prevent 'illegal' queries](https://en.wikipedia.org/wiki/Prepared_statement)
 
 ## Typology 
 
-Attack Vector | Method 
---- | ---
-Blind SQLi | Cause SQL error -> Fix it -> add SQL queries && Use sleep(5) if reponse is instant SQL query, then there is no SQLi
-Union SQLi |  Find number of columns -> Check suitable columns -> Attack
+Typological distinctions:
+- **In-Band** SQL injection:
+	- When a vulnerable application *on the same channel used by the attack* produces both the:
+		- Result of the query
+		- Application-returned value
+		- Find number of columns -> Check suitable columns -> Attack
+- **Blind** SQL injection - use SQLmap if you can!
+	- When a vulnerable application's responses are never returned and behaviour is inferred either with boolean or time-based logic:
+		- Time-based blind SQL injections
+
+		- Boolean-based blind SQL injections
+
+- **Out-of-Band** SQL injection: 
+	- When a vulnerable application is forced to respond over different channel than the original.
+
 With non Blind SQLi there is some form of extracted data:
 - Cookies
 - Field Display in HTML

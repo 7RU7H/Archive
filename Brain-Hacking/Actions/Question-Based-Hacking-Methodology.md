@@ -162,12 +162,42 @@ What is network level purpose of connections
 				- XSS, SSTI, etc?
 ... 
 - SQLI?
-	- Can you create an Error and fix it?
-	- Is the data returned a Boolean directly or indrectly?
-	- Are Headers used in the back to store SQL data?
-		- PHP: `X-Forward-For: 10.10.10.0.` to log IP addresses
-	- If nothing is returned can you query the database to sleep()?
-	- If there are multiple fields is there second order injection with `'\''` and `'"'` to generate a error, have do so for each?
+	- Are raw queries being made? 
+		- Can you create an Error and fix it?
+		- Is the data returned a Boolean directly or indirectly?
+			- Are Headers used in the back to store SQL data?
+				- PHP: `X-Forward-For: 10.10.10.0.` to log IP addresses
+	- Identified application using an SQL query? - beware the non-linear branching
+		- Concatenate (Version, SQL Language and business logic of Application language specifics) - what does this entail?
+		- Hypotheses and test (if no source code) how application makes an SQL query or multiple queries 
+		- Can you break it to create error messages?
+			- Did you read and proper [[Search-Engine-Dorking]]? 
+				- Can we SQLi and return output in the error message?
+				- Can we break it to enumerate insights as how application works not the database?
+		 - How many fields, double this number for number of quotes of the query 
+			- For each field what is the data-type
+		 - By Reponse Typology:
+			- By **In-Band** SQL injections:
+				- Is the result of the query is displayed along with the application-returned value?
+					- Go Union-based SQLi!
+						- How many columns?
+							- Column number must be the same as original query
+							- ID column exists!
+						- Data type of each column?
+							- Data type must be the same as original query
+								- Conversion functions exist for each SQL language fret not
+						 - Is what you querying for `LIKE "something"`?   
+			- By **Blind** SQL injections:
+				- Time-based Blind - `sleep` database `sleep
+				- Boolean-based Blind -  `IF`
+			- By **Out-of-Band** SQL injections: 
+		- Where is the data coming from?
+			- Which database(s) and table(s)?
+		- Did the developer put a query inside a query?
+			- Map out each query and sub-query like a `tree` to avoid *confused operator concatenation injection nullifying gibber*-the-SQL-injection-process phenomena
+		- If nothing has returned can you query the database to sleep()?
+		- If there are multiple fields is there second order injection with `'\''` and `'"'` to generate a error, have do so for each? 
+		- Can you write a webshell to the filesystem through injection?
 
 - LFI?
 	-  Add a `.` betwen `filename` and `.ext` for invalid file checks
@@ -227,7 +257,7 @@ Condense:
 		- Step 1): Continuously re-synced to the DC: `sudo ntpdate -s $targetDC.$domain.$tld` 
 			- temporal synced to target domain controller required for [[Attacking-Kerberos]] or any [[Active-Directory-Kerberos-Authentication-Defined]] 
 		- Step 2): Is Kinit configured properly?
-		- Step 3): Do you need to **(re)**TGT after re-synced to the DC: go to Step 1)
+		- Step 3): Do you need to **(re)**-TGT after re-synced to the DC: go to Step 1)
 		- Step 4): Are you running latest Tool versions!
 	- Is it really large and requires a [[Domain-Flyover]]
 	- Which DC has `PdcRoleOwner` (Primary DC with most up-to-date information)  property? 

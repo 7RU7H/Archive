@@ -6,13 +6,12 @@ Burp plus SQLMap
 `Proxy request -> right-click -> Save item`
 ```bash
 sqlmap -r filename
-```
-```python
+
 -p # parametre
 --privileges # db shell privileges
 --random-agent # always good because sqlmap states its sqlmap so WAF will catch it
-```
-```bash
+
+
 sqlmap --eval "python code to dynamical calculate parametres of sql quiery"
 ```
 

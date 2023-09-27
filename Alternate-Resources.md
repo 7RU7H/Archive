@@ -29,6 +29,11 @@ A good SysAdmin, DevOps, Cloud Engineer Cheatsheets
 #### Microsoft.Learn
 
 [Training | Microsoft Learn](https://learn.microsoft.com/en-us/training/) and [Technical documentation | Microsoft Learn](https://learn.microsoft.com/en-us/docs/) are well written training and documentation of all Microsoft Products - excellent for all colour teams. 
+
+#### PortSwigger
+
+[Portswigger](https://portswigger.net/) developers of Burp Suite as aswell as the resource library for the Web Application Academy - [Visit All Topics for all their listed topics](https://portswigger.net/web-security/all-topics)  
+
 ## References
 
 [HackTricks](https://book.hacktricks.xyz/welcome/readme)
