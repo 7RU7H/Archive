@@ -32,7 +32,7 @@ JSON Web Tokens [https://jwt.io/](https://jwt.io/). These are JSON base64 encode
 {HEADER}.{PAYLOAD}.
 ```
 
-Workflow
+Workflow - Add a space in plain text payloads to bypass base64 encoded payloads have `+` that denote a space between a dangerous character. Avoid it being URL encoded to a URL encoded `+` character and breaking the base64.
 ```bash
 # copy into a file
 cat cookie | awk -F. '{print $1}' | base64 -d
@@ -51,3 +51,4 @@ $1.$2.
 
 [https://jwt.io/](https://jwt.io/)
 [THM OWASP TOP 10 2021 Room](https://tryhackme.com/room/owasptop102021)
+[Ippsec Rocks](https://ippsec.rocks)

@@ -22,7 +22,7 @@ url/ENDPOINT?PARAMETRE=;ls+-la+/
 PARAMETRE=&type  
 ```
 
-%2F is URL encoded forward slash. `&` and `&&` to make additional commands to the payload that simply a one liner injected into a website.  
+`%2F` is URL encoded forward slash. `&` and `&&` to make additional commands to the payload that simply a one liner injected into a website.  
 
 Is Dos or PowerShell executing the command injection payload?
 ```powershell
@@ -40,7 +40,7 @@ sleep 5
 ```
 
 ## Remediation 
-2
+
 1. Vulnerable functions interacting with OS replaced
 2. Sanitise and Filtering Input - [Portswigger](https://portswigger.net/web-security/os-command-injection):
 	- Validating against a whitelist of permitted values.

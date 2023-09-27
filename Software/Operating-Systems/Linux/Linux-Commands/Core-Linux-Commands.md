@@ -43,7 +43,6 @@ THESE are values that add together read+write+exec = (1+2+4) -> 777
 chown :group
 chown user:user
 
-
 comm		#compare files
 comm $file.txt $file1.txt
 
@@ -62,7 +61,18 @@ diff -s 		report indentical files
 doas # Sudo alternative
 doas -s	# shell with root prompt
 
+```
 
+## `du`
+```bash
+# Total size of a directory - Ippsec
+du -sb $directory
+# Then plug the number in the float(HERE)  
+python3 -c "print(f'{float()/1024/1024:.2f} MB')"
+```
+
+## `echo`
+```bash
 echo 	write output at current location
 echo "stringwith whitespace you want to remove and append to a file" | tr -d " " >> FILE 
 
@@ -83,7 +93,7 @@ fg %$-		# previous job
 file		# reads file headers
 ```
 
-## Find
+## `find`
 ```bash
 find		find things
 find / -perm -u=s -type f 2>/dev/null 		Find SUID binaries
@@ -128,18 +138,18 @@ a = access, m = modified, c = created
 -[]min 
 ```
 
-## getcap
+## `getcap`
 ```bash
 getcap 		# displays the capabilities on the queried file(s)
 getcap -r / 2>/dev/null
 ```
 
-## head
+## `head`
 ```bash
 head		# print the first 10 lines of a file to stdout
 ```
 
-
+# `iconv`
 ```bash
 iconv 		convert file format
 
@@ -257,4 +267,9 @@ which $input	location of /bin/$input
 
 who		# logged in
 w       #
-```		
+```
+
+
+## References
+
+[Ippsec.Rocks](https://ippsec.rocks)

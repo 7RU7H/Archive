@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Web-Application-Hacking/XSS/XSS-Cheatsheet.md",
+                "file": "Reconnaissance/Git-Repository-Hacking.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Visual-S",
+                "query": "Shodan",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Web-Application-Hacking/XSS/XSS-Cheatsheet.md",
+                "file": "Reconnaissance/Git-Repository-Hacking.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Web-Application-Hacking/XSS/XSS-Cheatsheet.md",
+                "file": "Reconnaissance/Git-Repository-Hacking.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Web-Application-Hacking/XSS/XSS-Cheatsheet.md"
+                "file": "Reconnaissance/Git-Repository-Hacking.md"
               }
             }
           },
@@ -158,32 +158,32 @@
   },
   "active": "04bfa7dcaea4f86c",
   "lastOpenFiles": [
-    "Security-Disciplines/Social-Engineering/Social-Engineering.md",
+    "Reconnaissance/Passive-Information-Gathering/Shodan/Shodan.md",
+    "Reconnaissance/Passive-Information-Gathering/Passive-Recon.md",
+    "Web-Application-Hacking/JSON/JSON-Web-Tokens.md",
+    "Tools/Network-Based/Port-scanning/Nmap/Nmap-AllTheScripts.md",
+    "Software/Operating-Systems/Linux/Linux-Commands/Core-Linux-Commands.md",
+    "Software/Operating-Systems/Linux/Linux-Commands/Linux-Compression-Commands.md",
+    "Software/Operating-Systems/Linux/Linux-Commands/Linux-Command-Hub.md",
+    "Software/Operating-Systems/Linux/Linux-Commands/Linux-Hardware-Commands.md",
+    "Software/Operating-Systems/Linux/Linux-Commands/Linux-Memory-Commands.md",
+    "Software/Operating-Systems/Linux/Linux-Commands/Linux-Users-And-Group-Commands.md",
+    "Software/Operating-Systems/Linux/Linux-Commands/Linux-CLIMagic.md",
+    "Post-Exploitation/Networking/Pivoting-Tunnelling-And-Redirection-Master-Class-Darnell-And-Thurner-Notes.md",
+    "Post-Exploitation/Networking/Port-Redirection-And-Tunnelling.md",
+    "Security-Disciplines/Blue-Team/Finding-a-Domains-Worth-of-Malware-Jeff-McJunkin.md",
+    "Web-Application-Hacking/Command-Injection-Cheatsheet.md",
+    "Web-Application-Hacking/CMS/Wordpress.md",
+    "Services/Webservers/PHP-Webserver-Commonalities.md",
     "Web-Application-Hacking/XSS/XSS-Cheatsheet.md",
+    "Security-Disciplines/Social-Engineering/Social-Engineering.md",
     "Web-Application-Hacking/XSS/Jack-Masa-Mindmap.md",
     "This-Repository-Specific/click-the-link.md",
     "Web-Application-Hacking/Cross-Site-Request-Forgery.md",
-    "Post-Exploitation/Shadow-Networking/Port-Redirection-And-Tunnelling.md",
     "Tools/Network-Based/Proxying-And-Pivoting/SSH-Redirection-And-Tunnelling.md",
     "Networks/Proxies.md",
     "Reconnaissance/HUMINT/User-Active-Recon.md",
     "Post-Exploitation/Privilege-Escalation/Windows/WESNG-Helpsheet.md",
-    "Tools/Debuggers-IDEs-Editors/IDEs/Microsoft-Visual-Studios.md",
-    "Cloud/Azure/Azure-Administration/Azure-Deploy-And-Manage-Compute-Resources/Azure-Administration-Azure-App-Services.md",
-    "Exploitation/Shells/Reverse-Shells-Listing.md",
-    "Reconnaissance/Active-Information-Gathering/DNS/DNS-Active-Recon.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/SePrivileges/SePrivilege-Token-Table.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Important-Linux-Locations.md",
-    "Services/Webservers/Apache/Apache2/Apache2.md",
-    "Tools/Authentication-Attacking/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
-    "Cryptography-And-Authentication/Password-Attacks/Password-Attacks.md",
-    "Services/SaltStack.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
-    "Services/Databases/MYSQL/MySQL-Cheatsheet.md",
-    "Tools/C2/Sliver/Sliver-Cheatsheet.md",
-    "Software/Operating-Systems/Linux/Distributions/Debian/Debian-Package-Management.md",
-    "Tools/Useful-Online-Software/Github-guide.md",
     "Reconnaissance/Active-Information-Gathering/IMAP",
     "Post-Exploitation/Stealth/Evasion/Antivirus-Evasion/AMSI-Bypasses",
     "Post-Exploitation/Stealth/Evasion/Logging-And-Monitoring-Evasion",

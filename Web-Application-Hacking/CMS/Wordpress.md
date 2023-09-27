@@ -6,7 +6,7 @@ Checklist:
 - `/var/www/html/wp-config.php` contain credentials
 - Enumerate users with `-u` with `wpscan`
 
-## Cheatshee
+## Cheatsheet
 
 [Free 25 API requests per day](https://wpscan.com/pricing)
 
@@ -60,6 +60,7 @@ Passwords/Honeypot-Captures/wordpress-attacks-july2014.txt
 Seclists
 ```
 /usr/share/seclists/Web-Shells/WordPress
+/usr/share/seclists/Web-Shells/laudanum-1.0/wordpress/templates/shell.php
 ```
 
 #### Reverse Shells
@@ -68,6 +69,7 @@ Seclists
 # You can reverse shell by editing templates (404.php, footer.php...)
 # Theme Editor use a 404 template as it won't break the site.
 # Plugin Editor  then go to /wp-content/plugins/<pluginname.php>
+# Beware Theme must no be active 
 ```
 
 #### Hashes

@@ -189,7 +189,10 @@ ajaxRequest.send(params);
 ```
 Deliver Payload - article recommends [javascript-minifier.com](https://javascript-minifier.com/) - Use Minification and encoding with JavaScript in Browser developer console to encode minifed Javascript payloads
 ```js
-// use https://jscompress.com or similar to minify JavaScript
+// Use or similar to minify JavaScript: 
+// https://jscompress.com 
+// https://javascript-minifier.com/)
+// Then encode:
 function encode_to_javascript(string) {
             var input = string
             var output = '';

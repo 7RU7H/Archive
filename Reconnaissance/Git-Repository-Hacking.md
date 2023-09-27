@@ -72,6 +72,11 @@ git log
 git show
 ```
 
+`md5sum` hash a `$file.js` or any other library then look up the hash on opensource repositories on Github code to fingerprint the version - From [Ippsec.Rocks](https://ippsec.rocks) Get all md5sum for every version of test.js from repository sorted by commit hash:
+```bash
+fingerprint=test.js
+for in $(git log $fingerprint|grep ^commit|awk '{print $2}'); do git checkout -- $fingerprint; echo -n "$i md5sum $fingerprint; done
+```
 
 
 [truffleHog](https://github.com/dxa4481/truffleHog)
@@ -101,3 +106,14 @@ Linux - [GTFOBins - git](https://gtfobins.github.io/gtfobins/git/)
 [GTFOBins - git](https://gtfobins.github.io/gtfobins/git/)
 [Security Trails Github Dorks](https://securitytrails.com/blog/github-dorks)
 [techbeacon.com - cryptomining github actions](https://techbeacon.com/security/cryptominers-flooding-github-other-cloudy-dev-services) 
+[Ippsec.Rocks](https://ippsec.rocks) 
+[truffleHog](https://github.com/dxa4481/truffleHog)
+[gitraken](https://www.gitkraken.com/)
+[git-money](https://github.com/dnoiz1/git-money)
+[DVCS-pillage](https://github.com/evilpacket/DVCS-Pillage)
+[GitTools](https://github.com/internetwache/GitTools)
+[gitrob](https://github.com/michenriksen/gitrob)
+[git-vuln-finder](https://github.com/cve-search/git-vuln-finder)
+[Git-secrets](https://github.com/awslabs/git-secrets/blob/master/README.rst) and its [official documentation](https://github.com/awslabs/git-secrets/blob/master/README.rst%23installing-git-secrets) 
+[Git-Hound](https://github.com/ezekg/git-hound) is an alternative to Git-secrets.
+[git-dumper](https://github.com/arthaud/git-dumper)
