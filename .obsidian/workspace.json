@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "7a97950f692bcf55",
+        "id": "7bd265832cb05ece",
         "type": "tabs",
         "children": [
           {
-            "id": "04bfa7dcaea4f86c",
+            "id": "055d86663278bd71",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tools/Web-Applications-Attacking/SQLmap-CheatSheet.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -65,8 +61,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -86,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/Web-Applications-Attacking/SQLmap-CheatSheet.md",
+                "file": "Virtualization/Disable-Time-Synchronisation-With-Host-For-Guest-VMs.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +98,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tools/Web-Applications-Attacking/SQLmap-CheatSheet.md",
+                "file": "Virtualization/Disable-Time-Synchronisation-With-Host-For-Guest-VMs.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +121,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tools/Web-Applications-Attacking/SQLmap-CheatSheet.md"
+                "file": "Virtualization/Disable-Time-Synchronisation-With-Host-For-Guest-VMs.md"
               }
             }
           },
@@ -157,8 +152,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "04bfa7dcaea4f86c",
+  "active": "ed8f63df71621be6",
   "lastOpenFiles": [
+    "Tools/Web-Applications-Attacking/SQLmap-CheatSheet.md",
+    "Virtualization/Disable-Time-Synchronisation-With-Host-For-Guest-VMs.md",
     "Services/Databases/Database-Hacking.md",
     "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
     "Web-Application-Hacking/SQLi/SQLInjection.md",
@@ -183,8 +180,6 @@
     "Security-Disciplines/Blue-Team/Finding-a-Domains-Worth-of-Malware-Jeff-McJunkin.md",
     "Web-Application-Hacking/Command-Injection-Cheatsheet.md",
     "Web-Application-Hacking/CMS/Wordpress.md",
-    "Services/Webservers/PHP-Webserver-Commonalities.md",
-    "Web-Application-Hacking/XSS/XSS-Cheatsheet.md",
     "Reconnaissance/Active-Information-Gathering/IMAP",
     "Post-Exploitation/Stealth/Evasion/Antivirus-Evasion/AMSI-Bypasses",
     "Post-Exploitation/Stealth/Evasion/Logging-And-Monitoring-Evasion",
