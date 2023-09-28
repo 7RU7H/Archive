@@ -19,7 +19,7 @@ Kali, Parrot and Arch wordlists generally found  in `/usr/share/wordlists/`. The
 https://cirt.net/passwords
 https://default-password.info/
 
-## Password Attacks Against Network Sevices
+## Password Attacks Against Network Services
 1. Noisy attack
 
 1. Dangerous, can damage service for regular users

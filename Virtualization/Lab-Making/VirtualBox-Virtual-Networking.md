@@ -3,9 +3,6 @@
 
 [Abstract Programmer's explaination of VirtualBox networking](https://www.youtube.com/watch?v=2Fkf6Kysh7I) is possible the best explainations and demonstrations for each type of Virtual Networking configuration in VirtualBox, although is for an older version of VirtualBox contains caveats for each. [He references this forum post from Scottgus](https://forums.virtualbox.org/viewtopic.php?t=96608)
 
-
-
-
 ## Setup a Internal Network
 
 Setup a DHCP server to allocate IPs in a virtual network. From a [video explaination by CyberStudies](https://www.youtube.com/watch?v=lm_4hoe-K7U)

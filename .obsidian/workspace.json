@@ -11,8 +11,12 @@
             "id": "055d86663278bd71",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Virtualization/Lab-Making/Routing-Guest-VMs-Traffic-Through-A-Host-Machines-VPN.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -44,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "SQLmap",
+                "query": "float",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -81,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Virtualization/Disable-Time-Synchronisation-With-Host-For-Guest-VMs.md",
+                "file": "Virtualization/Lab-Making/Routing-Guest-VMs-Traffic-Through-A-Host-Machines-VPN.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Virtualization/Disable-Time-Synchronisation-With-Host-For-Guest-VMs.md",
+                "file": "Virtualization/Lab-Making/Routing-Guest-VMs-Traffic-Through-A-Host-Machines-VPN.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -121,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Virtualization/Disable-Time-Synchronisation-With-Host-For-Guest-VMs.md"
+                "file": "Virtualization/Lab-Making/Routing-Guest-VMs-Traffic-Through-A-Host-Machines-VPN.md"
               }
             }
           },
@@ -152,10 +156,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ed8f63df71621be6",
+  "active": "055d86663278bd71",
   "lastOpenFiles": [
-    "Tools/Web-Applications-Attacking/SQLmap-CheatSheet.md",
+    "Virtualization/Lab-Making/VirtualBox-Virtual-Networking.md",
+    "Virtualization/Lab-Making/Routing-Guest-VMs-Traffic-Through-A-Host-Machines-VPN.md",
+    "Tools/Authentication-Attacking/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
+    "Tools/Authentication-Attacking/Hash-Cracking-Tools/Hashcat-Cheatsheet.md",
+    "Cryptography-And-Authentication/Password-Attacks/Password-Attacks.md",
     "Virtualization/Disable-Time-Synchronisation-With-Host-For-Guest-VMs.md",
+    "Tools/Web-Applications-Attacking/SQLmap-CheatSheet.md",
     "Services/Databases/Database-Hacking.md",
     "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
     "Web-Application-Hacking/SQLi/SQLInjection.md",
@@ -175,11 +184,6 @@
     "Reconnaissance/Passive-Information-Gathering/Passive-Recon.md",
     "Reconnaissance/Passive-Information-Gathering/Shodan/Shodan.md",
     "Reconnaissance/Git-Repository-Hacking.md",
-    "Alternate-Resources.md",
-    "Post-Exploitation/Networking/Port-Redirection-And-Tunnelling.md",
-    "Security-Disciplines/Blue-Team/Finding-a-Domains-Worth-of-Malware-Jeff-McJunkin.md",
-    "Web-Application-Hacking/Command-Injection-Cheatsheet.md",
-    "Web-Application-Hacking/CMS/Wordpress.md",
     "Reconnaissance/Active-Information-Gathering/IMAP",
     "Post-Exploitation/Stealth/Evasion/Antivirus-Evasion/AMSI-Bypasses",
     "Post-Exploitation/Stealth/Evasion/Logging-And-Monitoring-Evasion",
