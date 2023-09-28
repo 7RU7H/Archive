@@ -124,3 +124,34 @@ tracert
     	-4                 Force using IPv4.
     	-6                 Force using IPv6.
 ```
+
+#### Netsh
+
+Packet capture with `netsh`
+```powershell
+netsh trace start capture=yes tracefile=C:\users\$user\desktop\$pcapname.etl
+netsh trace stop
+```
+
+#### DNS Related
+
+```powershell
+ipconfig /displaydns # bewrare alot of entries even by default
+ipconfig /flushdns # delete all entries
+# Perform DNS lookup without nslookup
+ping $domain.$tld
+ipconfig /displaydns
+# with nslookup
+nslookup dnsisdnssobedomainiant.dns
+nslookup 10.10.10.10 # reverse lookup IP returns domain
+# Windows hosts file is stored:
+C:\Windows\System32\Drivers\Etc\hosts
+# Hosts file data always stays in the DNS cache
+# Administrative notepad required!
+notepad C:\Windows\System32\Drivers\Etc\hosts
+# Lines addded for IPv4 = `10.10.10.10 dnsisdnssobedomainiant.dns`
+```
+
+## References
+
+[KevinCurran lab](https://kevincurran.org/com320/labs/dns.htm)

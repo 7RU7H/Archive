@@ -8,10 +8,13 @@ This repository stands on and shadows amongst absolute giants in the various com
 
 [Arch Wiki](https://archlinux.org/), due to Arch users general being power users having to troubleshoot, patch and maintain weirder parts of the OS the Arch Wiki is the best general Linux-based resource for information regardless of distribution or setup (Windows related information exists).  Do not be fooled by the density of information it is actually very concise it just support lots of variations how to do things.
 
+#### The Hacker Recipes
+
+[thehacker.recipes](https://www.thehacker.recipes/) *is aimed at providing technical guides on various hacking topics. The most advanced topics are Active Directory and Web services.* A Gitbook that has possible the most up-to-date resources regard Active Directory Attacks that include quality visual and examples for both Linux and Windows tooling.  
+
 #### HackTricks
 
-The Awesome HackTricks - probably the best resource on Ethical Hacking and Pentesting (all domains) on the Internet:
-[HackTricks](https://book.hacktricks.xyz/welcome/readme). HackTricks is also maintained an is textual representation of [PEASS-NG](https://github.com/carlospolop/PEASS-ng)
+The Awesome HackTricks - probably the best resource on Ethical Hacking and Pentesting (all domains) on the Internet: [HackTricks](https://book.hacktricks.xyz/welcome/readme). HackTricks is also maintained an is textual representation of [PEASS-NG](https://github.com/carlospolop/PEASS-ng)
 
 #### Ippsec.rocks and Ippsec's YouTube
 
