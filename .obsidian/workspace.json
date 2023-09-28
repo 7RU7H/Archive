@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exploitation/Windows/Active-Directory/ACL-Abuse/ACL-Abuse.md",
+                "file": "Exploitation/Windows/Active-Directory/Shadow-Credentials.md",
                 "mode": "source",
                 "source": false
               }
@@ -60,7 +60,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "float",
+                "query": "Shadow",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exploitation/Windows/Active-Directory/ACL-Abuse/ACL-Abuse.md",
+                "file": "Exploitation/Windows/Active-Directory/Shadow-Credentials.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Exploitation/Windows/Active-Directory/ACL-Abuse/ACL-Abuse.md",
+                "file": "Exploitation/Windows/Active-Directory/Shadow-Credentials.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Exploitation/Windows/Active-Directory/ACL-Abuse/ACL-Abuse.md"
+                "file": "Exploitation/Windows/Active-Directory/Shadow-Credentials.md"
               }
             }
           },
@@ -170,6 +170,9 @@
   },
   "active": "055d86663278bd71",
   "lastOpenFiles": [
+    "Exploitation/Windows/Active-Directory/ACL-Abuse/ACL-Abuse.md",
+    "Exploitation/Windows/Active-Directory/Shadow-Credentials.md",
+    "Software/Operating-Systems/Linux/Linux-Commands/Linux-Samba.md",
     "Exploitation/Windows/Active-Directory/ACL-Abuse/DACL-Abuse.md",
     "Alternate-Resources.md",
     "Images/DACL-abuse-dark.png",
@@ -195,9 +198,6 @@
     "Software/Operating-Systems/Linux/Linux-Commands/Linux-Memory-Commands.md",
     "Software/Operating-Systems/Linux/Linux-Commands/Linux-Hardware-Commands.md",
     "Software/Operating-Systems/Linux/Linux-Commands/Linux-Command-Hub.md",
-    "Software/Operating-Systems/Linux/Linux-Commands/Linux-Compression-Commands.md",
-    "Software/Operating-Systems/Linux/Linux-Commands/Core-Linux-Commands.md",
-    "Web-Application-Hacking/JSON/JSON-Web-Tokens.md",
     "Reconnaissance/Active-Information-Gathering/IMAP",
     "Post-Exploitation/Stealth/Evasion/Antivirus-Evasion/AMSI-Bypasses",
     "Post-Exploitation/Stealth/Evasion/Logging-And-Monitoring-Evasion",
