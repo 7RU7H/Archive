@@ -13,13 +13,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Alternate-Resources.md",
+                "file": "Tools/C2/Sliver/Sliver-Cheatsheet.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f55573ee8d977525",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/Data-Processing/JQ.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f05f6e27ce7e9371",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -48,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "add user",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +90,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -85,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Alternate-Resources.md",
+                "file": "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Alternate-Resources.md",
+                "file": "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Alternate-Resources.md"
+                "file": "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md"
               }
             }
           },
@@ -156,12 +182,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d7a57af6f63c9a43",
+  "active": "f05f6e27ce7e9371",
   "lastOpenFiles": [
+    "Tools/Data-Processing/JQ.md",
+    "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md",
+    "Tools/C2/Sliver/Sliver-Cheatsheet.md",
+    "Alternate-Resources.md",
     "Exploitation/Windows/Active-Directory/Ticket-Attacks/Diamond-Tickets.md",
     "Exploitation/Windows/Active-Directory/Ticket-Attacks/Sapphire-Tickets.md",
     "Software/Operating-Systems/Windows/Active-Directory/Active-Directory-Commands.md",
-    "Tools/C2/Sliver/Sliver-Cheatsheet.md",
     "Tools/Windows/RunasCs.md",
     "Security-Disciplines/Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Blue-KOTH-Battlegrounds-Cheatsheet-Windows.md",
     "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
@@ -170,7 +199,6 @@
     "Exploitation/Windows/Active-Directory/ACL-Abuse/ACL-Abuse.md",
     "Software/Operating-Systems/Linux/Linux-Commands/Linux-Samba.md",
     "Exploitation/Windows/Active-Directory/ACL-Abuse/DACL-Abuse.md",
-    "Alternate-Resources.md",
     "Images/DACL-abuse-dark.png",
     "Exploitation/Exploitation.md",
     "Software/Operating-Systems/Windows/Windows-Commands/Windows-Networking-Commands.md",
@@ -184,8 +212,6 @@
     "Tools/Web-Applications-Attacking/SQLmap-CheatSheet.md",
     "Services/Databases/Database-Hacking.md",
     "Web-Application-Hacking/SQLi/SQLInjection.md",
-    "Services/Databases/MSSQL/MSSQL-Hacking.md",
-    "Exploitation/Shells/Encoded-Shell-Spawning.md",
     "Reconnaissance/Active-Information-Gathering/IMAP",
     "Post-Exploitation/Stealth/Evasion/Antivirus-Evasion/AMSI-Bypasses",
     "Post-Exploitation/Stealth/Evasion/Logging-And-Monitoring-Evasion",

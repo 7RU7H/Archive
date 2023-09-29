@@ -5,43 +5,54 @@ Both introduced to `jq` and as a continuation of techniques in [Ippsec's: Manual
 # Convert Integers
 (.DotSomethingThatIsAnINT|tostring)
 # Display all json nicely
-cat user.json | jq .
+cat *_users.json | jq .
 # Put query at the end of the syntax
 # Show the Keys 
-cat user.json | jq '. | keys'
+cat *_users.json | jq '. | keys'
 # Show all the data key
-cat user.json | jq '.data'
+cat *_users.json | jq '.data'
 # Show all the data key as a list - removes the external data{ ..json..}
-cat user.json | jq '.data[]'
+cat *_users.json | jq '.data[]'
 # Dump all names
-cat user.json | jq '.data[].Properties | .name'
+cat *_users.json | jq '.data[].Properties | .name'
 # All enabled accounts
-cat user.json | jq '.data[].Properties | select( .enabled == true) | .name'
+cat *_users.json | jq '.data[].Properties | select( .enabled == true) | .name'
 # All disabled accounts
-cat user.json | jq '.data[].Properties | select( .enabled == false) | .name'
+cat *_users.json | jq '.data[].Properties | select( .enabled == false) | .name'
 # All enabled accounts with descriptions may contain passwords
-cat user.json | jq '.data[].Properties | select( .enabled == true) | select( .description != null) | .name + " " + .description'
+cat *_users.json | jq '.data[].Properties | select( .enabled == true) | select( .description != null) | .name + " " + .description'
+# To a file; add if only enabled accounts
+# select( .enabled == true) |
+cat *_users.json | jq '.data[].Properties | .name' | tr -d '\"' | awk -F@ '{print $1}' > usernames.txt
+# Get all account with SPNS then printing them 
+# I argued with ChatGPT for atleast 30 minutes till I got this:
+cat *_users.json | jq -r '.data[].Properties | {name: .name, SPNs: .serviceprincipalnames[]?}'
+
 # Enumerating accounts approximate logons and pwdlastset 
 # Beware lastlogon is not replicate between DC
 # lastlogontimestamp is replicated every two weeks
 # Avoid honeypots are never logged in!
 # Bruteforce accounts?
-cat user.json | jq '.data[].Properties | select( .enabled == true) |  | .name + " " + (.lastlogontimestamp|tostring)'
+cat *_users.json | jq '.data[].Properties | select( .enabled == true) | .name + " " + (.lastlogontimestamp|tostring)'
 # Output where pwdlastset is greater 
-cat user.json | jq '.data[].Properties | select( .enabled == true) | select(.pwdlastset > .lastlogontimestamp)| .name + " " + (.lastlogontimestamp|tostring) '
+cat *_users.json | jq '.data[].Properties | select( .enabled == true) | select(.pwdlastset > .lastlogontimestamp)| .name + " " + (.lastlogontimestamp|tostring) '
+3
 # Get all Kerberoastable accounts
-cat user.json | jq '.data[].Properties | select( .serviceprinciplenames != []) | .name'
+cat *_users.json | jq '.data[].Properties | select( .serviceprinciplenames != []) | .name'
 
 # Show all machines annd there OSes
-cat computers.json | jq '.data[].Properties | .name +  ":" + .operatingsystem'
+cat *_computers.json | jq '.data[].Properties | .name +  ":" + .operatingsystem'
 # Find all non Windows 10 pro
-cat computers.json | jq '.data[].Properties | select( . operatingsystem != "Windows 10 Pro") |  .name +  ":" + .operatingsystem'
+cat *_computers.json | jq '.data[].Properties | select( . operatingsystem != "Windows 10 Pro") |  .name +  ":" + .operatingsystem'
+
+# Get all the hostnames and remove the ""
+cat *_computers.json | jq '.data[].Properties | .name' | tr -d '\"' > $file.txt
 
 # lastlogontimestamp for machine is the last time that machine was powered on
-cat computers.json | jq '.data[].Properties | .name + ":" + (.lastlogintimestamp|tostring)'
+cat *_computers.json | jq '.data[].Properties | .name + ":" + (.lastlogintimestamp|tostring)'
 # use EpochConverter too convert
 # Check which machine have been on compared to a epoch
-cat computers.json | jq '.data[].Properties | select( .lastlogintimestamp > $EPOCH) | .name'
+cat *_computers.json | jq '.data[].Properties | select( .lastlogintimestamp > $EPOCH) | .name'
 ```
 
 ## References
