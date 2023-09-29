@@ -31,7 +31,6 @@ Change `Settings -> Edge Label Display & Node Label Display -> [both] to Always 
 -   **Outbound Control Rights** - Shows information regarding AD objects where this account has permissions to modify their attributes.  
 -   **Inbound Control Rights** -  Provides information regarding AD objects that can modify the attributes of this account.
 
-
 #### Mapping the Pwnable Path to DC
 Things to do
 1. Enter username owned -> `Right Click Node -> Mark User as Owned`

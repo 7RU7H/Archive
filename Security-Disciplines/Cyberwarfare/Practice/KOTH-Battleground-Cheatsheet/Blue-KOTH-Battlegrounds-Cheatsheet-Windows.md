@@ -2,7 +2,7 @@
 
 Use `netsh` like `wireshark` to monitor traffic to the box you are defending - @MalwareJake 
 ```powershell
-netsh trace start capture=yes
+netsh trace start capture=yes tracefile=C:\$path\$to\$pcap.etl
 netsh trace stop
 ```
 

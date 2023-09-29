@@ -369,8 +369,9 @@ Condense:
 	- Are we in the Cloud or On-premises
 	- What security is on host?
 		- Restricted Shell
+			- Windows `runas.exe` not work try: [[RunasCs]] or an alternative
 		- AV
-		 - Is the host Virtualised?
+		 - Is the host Visualised?
 		 - Virtualisation Software/Hardware?
 			- Are we in a container?
 				- Is it a container or cluster?
