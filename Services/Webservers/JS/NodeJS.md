@@ -1,7 +1,7 @@
 # NodeJS
 
 
-[Node.js](https://nodejs.org) is a [[Useful_Javascript]] framework, or web technology. Or external links:
+[Node.js](https://nodejs.org) is a [[Useful_JavaScript]] framework, or web technology. Or external links:
 [XinYminutes JS](https://learnxinyminutes.com/docs/javascript/) and 
 
 

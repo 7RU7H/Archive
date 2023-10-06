@@ -124,12 +124,12 @@ By default Nmap does not scan the ports in numerical order
 
 ## Scripts
 ```bash
--sC		#default scripts
--sV		#Version Detection
+-sC		# default scripts
+-sV		# Version Detection
 -sV –version-trace # Troubleshoot versions
--sR 	#Perform a RPC Scan
+-sR 	# Perform a RPC Scan
 
-
+--script-help= # Get information on a script
 --script
 --script auth
 --script broadcast

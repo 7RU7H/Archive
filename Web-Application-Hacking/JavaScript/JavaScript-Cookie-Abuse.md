@@ -1,4 +1,4 @@
-# Javascript Cookie Abuse
+# JavaScript Cookie Abuse
 
 
 [[NodeJS]]

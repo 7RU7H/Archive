@@ -6,7 +6,19 @@ PHP Filters are a powerful wrappers of lots a functionality that take input and 
 - [Only other is "callback" where all flags are ignored](https://www.php.net/manual/en/filter.filters.misc.php)
 - [PHP Filter flags](https://www.php.net/manual/en/filter.filters.flags.php) provides developers to filter by builtin conditions-on-passed-input, encode the input.
 
-File inclusion vulnerability exists due to how PHP filters are used with `include()`
+Use cases in Hacking
+```php
+// base64 encode to bypass filters
+?php://filter/convert.base64-encode/resource=$file.php
+
+// code execution - requires `allow_url_include`
+?php://data/text/plain,$urlencodePhpcode
+```
+
+- File inclusion vulnerabilities can exists due to how PHP filters are used with `include()`.
+- PHP servers are vulnerable to RFI (Remote [[File-Inclusion]]) if the `allow_url_include` it set
+- If [[HTML]] tags are missing and PHP is executing on the server we can use PHP filters to add `?php://filter/convert.base64-encode/resource=$CURRENTPAGE.php` to potential return the executed PHP back
+
 
 [LFI / RFI using PHP://filters](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/File%20Inclusion/README.md#lfi--rfi-using-wrappers)
 ```php

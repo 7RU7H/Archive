@@ -4,12 +4,12 @@
 	- [[EDR-Bypass]]ing requires more than just the [garble](https://github.com/burrowers/garble)(use to "*Obfuscate Go builds"*) and [go-donut](https://github.com/Binject/go-donut) - (go port of [donut](https://github.com/TheWover/donut) - *"Generates x86, x64, or AMD64+x86 position-independent shellcode that loads .NET Assemblies, PE files, and other Windows payloads from memory and runs them with parameters"*)
 	- Use a custom stager
 	- Modify - `~/.sliver/configs/http-c2.json`
-	- change or rotate extensions and filenames used in procedural URL generation
-	- mimic legitimate browser request headers (just take them directly from `Burp Suite`)
-	- mimic legitimate response headers (again, just steal them from some web app)
-	- consider domain fronting (thankfully, the Host header can now be configured)
+	- Change or rotate extensions and filenames used in procedural URL generation
+	- Mimic legitimate browser request headers (just take them directly from `Burp Suite`)
+	- Mimic legitimate response headers (again, just steal them from some web app)
+	- Consider domain fronting (thankfully, the Host header can now be configured)
 - Staging 
-	- *"only supports the MSF staging protocol served either over TCP or HTTP/S."*
+	- *"Only supports the MSF staging protocol served either over TCP or HTTP/S."*
 - Communication
 	- Procedural obfuscation - reduce communication profile for operator
 	- [Silver's Transport Encryption](https://github.com/BishopFox/sliver/wiki/Transport-Encryption)

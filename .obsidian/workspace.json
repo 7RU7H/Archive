@@ -4,47 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "7bd265832cb05ece",
+        "id": "9ca00294d5785cee",
         "type": "tabs",
         "children": [
           {
-            "id": "d7a57af6f63c9a43",
+            "id": "750027acfab6457d",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tools/C2/Sliver/Sliver-Cheatsheet.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f55573ee8d977525",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tools/Data-Processing/JQ.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f05f6e27ce7e9371",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -73,7 +44,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "HTML",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -90,12 +61,11 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 290.5
+    "width": 447.5
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -111,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -128,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md"
-              }
+              "state": {}
             }
           },
           {
@@ -182,12 +148,33 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f05f6e27ce7e9371",
+  "active": "750027acfab6457d",
   "lastOpenFiles": [
+    "Development/Languages/JavaScript/Useful_JavaScript.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
+    "Web-Application-Hacking/PHP-Filters.md",
+    "Web-Application-Hacking/JavaScript/JavaScript-Cookie-Abuse.md",
+    "Web-Application-Hacking/Web-Concepts/HTTP-Defined.md",
+    "Web-Application-Hacking/Web-Concepts/HTLM.md",
+    "Web-Application-Hacking/HTTP",
+    "Web-Application-Hacking/Respositories",
+    "Web-Application-Hacking/IDOR",
+    "Web-Application-Hacking/CMDI",
+    "Web-Application-Hacking/CSRF",
+    "Web-Application-Hacking/SSRF",
+    "Web-Application-Hacking/SSTI",
+    "Web-Application-Hacking/OWASP-Top-10-Historic-Definitions.md",
+    "Web-Application-Hacking/Javascript/JavaScript-Web-App-Hacking-Tricks.md",
+    "Tools/Network-Based/Port-scanning/Nmap/Nmap-Cheatsheet.md",
+    "Post-Exploitation/Stealth/Cleanup/Windows-Cleanup.md",
+    "Post-Exploitation/Post-Exploitation-Enumeration/Windows-Post-Exploitation-Info-Gathering.md",
+    "Post-Exploitation/Post-Exploitation-Enumeration/Foothold-Enumeration.md",
+    "Alternate-Resources.md",
+    "README.md",
+    "Brain-Hacking/Better-Resources.md",
+    "Tools/C2/Sliver/Sliver-Cheatsheet.md",
     "Tools/Data-Processing/JQ.md",
     "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md",
-    "Tools/C2/Sliver/Sliver-Cheatsheet.md",
-    "Alternate-Resources.md",
     "Exploitation/Windows/Active-Directory/Ticket-Attacks/Diamond-Tickets.md",
     "Exploitation/Windows/Active-Directory/Ticket-Attacks/Sapphire-Tickets.md",
     "Software/Operating-Systems/Windows/Active-Directory/Active-Directory-Commands.md",
@@ -196,32 +183,11 @@
     "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
     "Tools/AD-Offensive/Bloodhound-Guide.md",
     "Exploitation/Windows/Active-Directory/Shadow-Credentials.md",
-    "Exploitation/Windows/Active-Directory/ACL-Abuse/ACL-Abuse.md",
-    "Software/Operating-Systems/Linux/Linux-Commands/Linux-Samba.md",
-    "Exploitation/Windows/Active-Directory/ACL-Abuse/DACL-Abuse.md",
     "Images/DACL-abuse-dark.png",
-    "Exploitation/Exploitation.md",
-    "Software/Operating-Systems/Windows/Windows-Commands/Windows-Networking-Commands.md",
     "Images/DACL abuse-dark.png",
-    "Virtualization/Lab-Making/Routing-Guest-VMs-Traffic-Through-A-Host-Machines-VPN.md",
-    "Virtualization/Lab-Making/VirtualBox-Virtual-Networking.md",
-    "Tools/Authentication-Attacking/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
-    "Tools/Authentication-Attacking/Hash-Cracking-Tools/Hashcat-Cheatsheet.md",
-    "Cryptography-And-Authentication/Password-Attacks/Password-Attacks.md",
-    "Virtualization/Disable-Time-Synchronisation-With-Host-For-Guest-VMs.md",
-    "Tools/Web-Applications-Attacking/SQLmap-CheatSheet.md",
-    "Services/Databases/Database-Hacking.md",
-    "Web-Application-Hacking/SQLi/SQLInjection.md",
     "Reconnaissance/Active-Information-Gathering/IMAP",
     "Post-Exploitation/Stealth/Evasion/Antivirus-Evasion/AMSI-Bypasses",
     "Post-Exploitation/Stealth/Evasion/Logging-And-Monitoring-Evasion",
-    "Post-Exploitation/Stealth/Evasion/Antivirus-Evasion",
-    "Post-Exploitation/Stealth/Evasion",
-    "Reconnaissance/Active-Directory",
-    "Services/Databases/Postgres",
-    "Tools/Authentication-Attacking",
-    "Tools/Network-Based/Proxying-And-Pivoting",
-    "Software/Operating-Systems/Windows/Windows-Concepts/Windows-Filesystem",
     "Images/azure-aksscalingimplementation.png",
     "Images/velociraptorofficialdocsimage-oneofthebestimageseveraboutdinosaurs.png",
     "Images/azureprivatedns.png",

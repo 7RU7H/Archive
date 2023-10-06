@@ -11,10 +11,14 @@ This repository stands on and shadows amongst absolute giants in the various com
 #### The Hacker Recipes
 
 [thehacker.recipes](https://www.thehacker.recipes/) *is aimed at providing technical guides on various hacking topics. The most advanced topics are Active Directory and Web services.* A Gitbook that has possible the most up-to-date resources regard Active Directory Attacks that include quality visual and examples for both Linux and Windows tooling.  
-
 #### HackTricks
 
 The Awesome HackTricks - probably the best resource on Ethical Hacking and Pentesting (all domains) on the Internet: [HackTricks](https://book.hacktricks.xyz/welcome/readme). HackTricks is also maintained an is textual representation of [PEASS-NG](https://github.com/carlospolop/PEASS-ng)
+
+#### Harmj0y
+
+[blog.harmj0y.net](https://blog.harmj0y.net/) is the blog of 
+
 
 #### Ippsec.rocks and Ippsec's YouTube
 
@@ -26,8 +30,7 @@ John Hammond Youtube Content creator with over thousands of videos; his [Youtube
 
 #### Lzone
 
-A good SysAdmin, DevOps, Cloud Engineer Cheatsheets
-[lzone.de Cheatsheets](https://lzone.de/cheat-sheet.html)
+A good SysAdmin, DevOps, Cloud Engineer Cheatsheets at: [lzone.de Cheatsheets](https://lzone.de/cheat-sheet.html)
 
 #### Microsoft.Learn
 
@@ -35,7 +38,14 @@ A good SysAdmin, DevOps, Cloud Engineer Cheatsheets
 
 #### PortSwigger
 
-[Portswigger](https://portswigger.net/) developers of Burp Suite as aswell as the resource library for the Web Application Academy - [Visit All Topics for all their listed topics](https://portswigger.net/web-security/all-topics)  
+[Portswigger](https://portswigger.net/) developers of Burp Suite as as well as the resource library for the Web Application Academy - [Visit All Topics for all their listed topics](https://portswigger.net/web-security/all-topics). 
+
+#### Snovvcrash
+
+
+https://ppn.snovvcrash.rocks/
+
+#### xct 
 
 ## References
 
@@ -43,5 +53,6 @@ A good SysAdmin, DevOps, Cloud Engineer Cheatsheets
 [lzone.de Cheatsheets](https://lzone.de/cheat-sheet.html)
 [IppSec - YouTube](https://www.youtube.com/@ippsec)
 [IppSec - Search](https://ippsec.rocks/)
+[Portswigger](https://portswigger.net/)
 [Training | Microsoft Learn](https://learn.microsoft.com/en-us/training/)
 [Technical documentation | Microsoft Learn](https://learn.microsoft.com/en-us/docs/) 

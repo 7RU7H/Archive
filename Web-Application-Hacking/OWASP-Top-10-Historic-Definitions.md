@@ -17,7 +17,7 @@ Prevention:
 
 ## Cryptographic Failures
 
-Poor implementation of or lack of adequate cryptographic algorithms to protect data, or weak or faulty implementations; token cracking like [[JSON-Web-Tokens]], cookie cracking like [[Javascript-Cookie-Abuse]], man in the middle
+Poor implementation of or lack of adequate cryptographic algorithms to protect data, or weak or faulty implementations; token cracking like [[JSON-Web-Tokens]], cookie cracking like [[JavaScript-Cookie-Abuse]], man in the middle
 - [[MITM-Attacks]]
 - 
 Indicators of Vulnerability:
@@ -89,7 +89,7 @@ echo "$expectHash" && md5sum $file
 echo "$expectHash" && shasum -a $algorhythm $file
 ```
 
-- [[Javascript-Cookie-Abuse]] and [[JSON-Web-Tokens]]
+- [[JavaScript-Cookie-Abuse]] and [[JSON-Web-Tokens]]
 
 ## Security Logging and Monitoring Failures
 

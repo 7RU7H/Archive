@@ -2,7 +2,7 @@
 
 Given the discrepancy between term used in [[Port-Redirection-And-Tunnelling]] as a authorial decision I am just going to try standardise the Offensive Security terminology - so read the linked article for information regard why this repository uses a particular set of definitions.
 
-[Chisel](https://github.com/jpillora/chisel.git) *"is a fast TCP/UDP tunnel, transported over HTTP, secured via SSH. Single executable including both client and server. Written in Go (golang). Chisel is mainly useful for passing through firewalls, though it can also be used to provide a secure endpoint into your network."*
+[Chisel](https://github.com/jpillora/chisel.git) *"is a fast TCP/UDP tunnel, transported over HTTP, secured via SSH. Single executable including both client and server. Written in Go (Golang). Chisel is mainly useful for passing through firewalls, though it can also be used to provide a secure endpoint into your network."*
 
 ![](chiselworksthisway.png)
 
