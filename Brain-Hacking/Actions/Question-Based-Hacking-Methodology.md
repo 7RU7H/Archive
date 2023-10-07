@@ -251,16 +251,67 @@ Condense:
 - Internal Network
 
 - Active Directory
-	- Recursively while dealing with AD, Tools, your OS and you - have you configured correctly?:
-		- Step -1): Are *you* mentally prepared and ready to deal with the issue abound... 
-		- Step 0): is `/etc/hosts` configured `$DCipv4Address dc.$domain.$tld $domain.$tld` in this order!
-		- Step 1): Continuously re-synced to the DC: `sudo ntpdate -s $targetDC.$domain.$tld` 
-			- temporal synced to target domain controller required for [[Attacking-Kerberos]] or any [[Active-Directory-Kerberos-Authentication-Defined]] 
-		- Step 2): Is Kinit configured properly?
-		- Step 3): Do you need to **(re)**-TGT after re-synced to the DC: go to Step 1)
-		- Step 4): Are you running latest Tool versions!
-	- Is it really large and requires a [[Domain-Flyover]]
-	- Which DC has `PdcRoleOwner` (Primary DC with most up-to-date information)  property? 
+	- Setup, Objective, Scoping
+		- Workspace set up?
+		- Objectives (What is best as a service to your customer)?
+		- What would cause the most impact to long and short term existence of a organisation? - **be aware of the scope**
+			- Is Data a priority?
+				- PPI
+				- Intellectual property 
+			- Is excessive Access or Availability?
+				- Ransomware 
+				- (D)DoS
+		- Recursively while dealing with AD, Tools, your OS and you - have you configured correctly?:
+			- Step -1): Are *you* mentally prepared and ready to deal with the issue abound... 
+			- Step 0): is `/etc/hosts` configured `$DCipv4Address dc.$domain.$tld $domain.$tld` in this order!
+			- Step 1): Continuously re-synced to the DC: `sudo ntpdate -s $targetDC.$domain.$tld` 
+				- temporal synced to target domain controller required for [[Attacking-Kerberos]] or any [[Active-Directory-Kerberos-Authentication-Defined]] 
+			- Step 2): Is Kinit configured properly?
+			- Step 3): Do you need to **(re)**-TGT after re-synced to the DC: go to Step 1)
+			- Step 4): Are you running latest Tool versions!
+		- Is it really large and requires a [[Domain-Flyover]]
+	- Enumerating the Public Network
+		- Recon in the background, re-run recon just in case and do fast enumeration to start hacking ASAP. 
+		- What Network Services are running?
+			- What does it entail about the organisation? 
+				- What does the service entail about the box or container?
+					- i.e SSH -> Ubuntu versions
+					- Build numbers!
+					- Weird service headers combinations that indicate defensive mechanisms, containerisation 
+				- Are the versions vulnerable? 
+					- CVEs?
+		- First Credentials 
+	- Foothold Enumeration
+		- Be aware of defensive understanding of normal traffic 
+		- OSINT never stops and start External to the network
+			- Names, Usernames, Passwords, Sensitive information, Formatting for emails, usernames, administrative usernames  
+			- What Documents templates are there? 
+			- What files are shared?
+			- Obsidian `[[MACHINE NAME]]` to link machines by connections so that `CTRL + F` by a piece of connective information links the machine and is understandable how it is connected
+			- OSINT never stops and to get into the network the information prior and information gathered is a context and scope specific manner at this stage will map out the users, organisation and network. Read Hacker Read! 
+			- What is the Anti-Phishing
+	- Identify attack vectors in a target network
+		- Enumerate machines on a private network
+			- Machine names?
+				- Domain names
+				- Hostname
+			- Network layout?
+				- Subnets?
+				- Gateways?
+				- DMZ?
+				- External-to-Internal (regular user jump boxes) - VPN, RDP (Azure Bastion  (Home -> Cloud -> Office)) SSH servers
+			- What Network Services are running?
+				- What does it entail about the organisation? 
+				- What does the service entail about the box or container?
+					- i.e SSH -> Ubuntu versions
+					- Build numbers!
+					- Weird service headers combinations that indicate defensive mechanisms, containerisation 
+				- Are the versions vulnerable? 
+					- CVEs?
+			- What are the Internal services are running?
+				- Can any machine/service can be forced into connecting into a different remote machine then NTMLRelay? 
+					- [[Reponder]] for the hash; `impacket-ntlmrelayx`  - [[Impacket-Cheatsheet]] for the reverse shell
+	- Which DC has `PdcRoleOwner` (Primary DC with most up-to-date information) property? 
 	- Have you got scope for [[Responder-Cheatsheet]] for [[LLMNR-Poisoning]] and [mitm6](https://github.com/dirkjanm/mitm6) - MITM those NTLM hashes.
 		- Have they not cracked yet?
 			- NTLM Relay Attack?
@@ -285,7 +336,7 @@ Condense:
 				- AP-REQ - AP-REP - What application can we pivot to domain internal or external
 			3. Databases?
 			4. Network Shares/File system artefacts?
-			5. sMSA or [[gMSA-abuse]]?AD escalation and laterally movement, before Local Privilege Escalation is always a reduction in time to objective.
+			5. sMSA or [[gMSA-abuse]]? AD escalation and laterally movement, before Local Privilege Escalation is always a reduction in time to objective.
 			6. [[ACL-Abuse]]?
 		3. What services can I access with those credentials?
 			1. Have you mapped the network, with or without SharpHound?

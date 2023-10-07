@@ -10,7 +10,7 @@ An Application Programming Interface is middleware that facilitates communicatio
 
 - Try put in an empty body of HTTP request JSON `{}`
 
-- Fuzzing endpoing extensions 
+- Fuzzing endpoint3 extensions 
 	- `php,asp,aspx,jsp,py,txt,conf,config,bak,backup,swp,old,db,sq` [@hakluke](https://twitter.com/hakluke/status/1221792235215151104)
 
 
@@ -211,7 +211,7 @@ Migitiations and Preventions:
 		- Access controls relevant to each
 	- Avoid using production data with non-production API deployments 		
 - Retirement planning
-- API documentation available to those authorized to use the API
+- API documentation available to those authorised to use the API
 - Generate documentation automatically by adopting open standards
 - Document all aspects of your API
 - Perform risk analysis on newer versions that include security improvements

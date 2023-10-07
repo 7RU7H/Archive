@@ -16,6 +16,7 @@ gobuster dir -u 'http://box.ip/api/' -w ~/tools/SecLists/Discovery/Web-Content/a
 
 
 # Endpoint Enumeration
+
 [[Curl-Cheatsheet]]
 ```bash
 curl -X POST <machine ip>/api/items\?$PARAM\=

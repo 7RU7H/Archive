@@ -11,8 +11,12 @@
             "id": "750027acfab6457d",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -44,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "HTML",
+                "query": "blood",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 447.5
+    "width": 360.5
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md"
+              }
             }
           },
           {
@@ -145,11 +153,22 @@
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
   "active": "750027acfab6457d",
   "lastOpenFiles": [
+    "Tools/Exploit-Frameworks/Metasploit/Metasploit.md",
+    "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
+    "Tools/AD-Offensive/Bloodhound-Guide.md",
+    "Software/Operating-Systems/Windows/Windows-Commands/Windows-Commands.md",
+    "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md",
+    "Exploitation/CVEs/CVE-2023-4911.md",
+    "Software/Operating-Systems/Linux/Linux-Concepts/ELF-Binaries.md",
+    "Excalidraw/elfformat.excalidraw.md",
+    "Development/APIs/API-Hacking.md",
+    "Development/APIs/API-Fuzzing.md",
     "Development/Languages/JavaScript/Useful_JavaScript.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
     "Web-Application-Hacking/PHP-Filters.md",
@@ -173,16 +192,6 @@
     "README.md",
     "Brain-Hacking/Better-Resources.md",
     "Tools/C2/Sliver/Sliver-Cheatsheet.md",
-    "Tools/Data-Processing/JQ.md",
-    "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md",
-    "Exploitation/Windows/Active-Directory/Ticket-Attacks/Diamond-Tickets.md",
-    "Exploitation/Windows/Active-Directory/Ticket-Attacks/Sapphire-Tickets.md",
-    "Software/Operating-Systems/Windows/Active-Directory/Active-Directory-Commands.md",
-    "Tools/Windows/RunasCs.md",
-    "Security-Disciplines/Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Blue-KOTH-Battlegrounds-Cheatsheet-Windows.md",
-    "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
-    "Tools/AD-Offensive/Bloodhound-Guide.md",
-    "Exploitation/Windows/Active-Directory/Shadow-Credentials.md",
     "Images/DACL-abuse-dark.png",
     "Images/DACL abuse-dark.png",
     "Reconnaissance/Active-Information-Gathering/IMAP",

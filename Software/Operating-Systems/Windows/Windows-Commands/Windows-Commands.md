@@ -174,6 +174,7 @@ taskkill /PID $int # /F will force termination
 shutdown /r /fw /f /t 0
 ```
 
+
 ## References
 
 [Networkchuck top 40 CLI video](https://www.youtube.com/watch?v=Jfvg3CS1X3A)

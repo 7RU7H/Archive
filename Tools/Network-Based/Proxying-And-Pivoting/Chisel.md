@@ -33,7 +33,6 @@ echo "Chisel is now ready and minimised: "
 echo $chiselsize
 ```
 
-
 Ran either on Attack box or target box as a server or client
 
 - Regarding `--socks5` and `:socks`
@@ -54,7 +53,7 @@ sudo tcpdump -nvvvXi tun0 tcp port $PORT
 # -host otherwise default is 0.0.0.0
 # -v is useful for checking connection 
 # interfaceIP host ip for a tunX 
-chisel server -host $interfaceIP -p 10000 
+chisel server --host $interfaceIP -p 10000 
 # Client
 chisel client $interfaceIP:10000 127.0.0.1:10001
 ```
@@ -66,7 +65,7 @@ chisel client $interfaceIP:10000 127.0.0.1:10001
 # -host otherwise default is 0.0.0.0
 # -v is useful for checking connection 
 # interfaceIP host ip for a tunX 
-chisel server -host $interfaceIP -p 10000 --reverse
+chisel server --host $interfaceIP -p 10000 --reverse
 # Client
 # R .. reverse from
 # :$local_host == any interface opening a :$local_port
