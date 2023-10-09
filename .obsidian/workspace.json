@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exploitation/CVEs/CVE-2023-4911.md",
+                "file": "Web-Application-Hacking/Web-Exploits/Upload-Vulnerabilities.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 360.5
+    "width": 300.5110321044922
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exploitation/CVEs/CVE-2023-4911.md",
+                "file": "Web-Application-Hacking/Web-Exploits/Upload-Vulnerabilities.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Exploitation/CVEs/CVE-2023-4911.md",
+                "file": "Web-Application-Hacking/Web-Exploits/Upload-Vulnerabilities.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Exploitation/CVEs/CVE-2023-4911.md"
+                "file": "Web-Application-Hacking/Web-Exploits/Upload-Vulnerabilities.md"
               }
             }
           },
@@ -153,16 +153,18 @@
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
-      "command-palette:Open command palette": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false
+      "command-palette:Open command palette": false
     }
   },
-  "active": "750027acfab6457d",
+  "active": "ed8f63df71621be6",
   "lastOpenFiles": [
+    "Web-Application-Hacking/Web-Exploits/CSRF/Cross-Site-Request-Forgery.md",
+    "Web-Application-Hacking/Broken-Access-Control.md",
+    "Web-Application-Hacking/Web-Exploits",
+    "Exploitation/CVEs/CVE-2023-4911.md",
     "Exploitation/CVEs/CVE-2023-23397.md",
     "Exploitation/CVEs/CVE-2021-41773.md",
     "Exploitation/CVEs/CVE-2022-26134.md",
-    "Exploitation/CVEs/CVE-2023-4911.md",
     "Exploitation/CVEs/Spring4Shell.md",
     "Exploitation/CVEs/ZeroLogon.md",
     "Exploitation/Exploitation.md",
@@ -183,20 +185,17 @@
     "Web-Application-Hacking/Web-Concepts/HTLM.md",
     "Web-Application-Hacking/HTTP",
     "Web-Application-Hacking/Respositories",
-    "Web-Application-Hacking/IDOR",
-    "Web-Application-Hacking/CMDI",
-    "Web-Application-Hacking/CSRF",
-    "Web-Application-Hacking/SSRF",
-    "Web-Application-Hacking/SSTI",
+    "Web-Application-Hacking/Web-Exploits/IDOR",
+    "Web-Application-Hacking/Web-Exploits/CMDI",
+    "Web-Application-Hacking/Web-Exploits/CSRF",
+    "Web-Application-Hacking/Web-Exploits/SSRF",
+    "Web-Application-Hacking/Web-Exploits/SSTI",
     "Web-Application-Hacking/OWASP-Top-10-Historic-Definitions.md",
     "Web-Application-Hacking/Javascript/JavaScript-Web-App-Hacking-Tricks.md",
-    "Tools/Network-Based/Port-scanning/Nmap/Nmap-Cheatsheet.md",
-    "Post-Exploitation/Stealth/Cleanup/Windows-Cleanup.md",
     "Images/DACL-abuse-dark.png",
     "Images/DACL abuse-dark.png",
     "Reconnaissance/Active-Information-Gathering/IMAP",
     "Post-Exploitation/Stealth/Evasion/Antivirus-Evasion/AMSI-Bypasses",
-    "Post-Exploitation/Stealth/Evasion/Logging-And-Monitoring-Evasion",
     "Images/azure-aksscalingimplementation.png",
     "Images/velociraptorofficialdocsimage-oneofthebestimageseveraboutdinosaurs.png",
     "Images/azureprivatedns.png",

@@ -11,7 +11,7 @@ Definitions:
 	- Memory operands - (denoted by square brackets) reference memory locations
 
 #### Instructions
-x86
+
 `mov destination, source` - copy data from the source into the destination
 ```asm
 mov eax, 0xaa ; move immediate operand into the eax register
