@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md",
+                "file": "Exploitation/CVEs/CVE-2023-4911.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md",
+                "file": "Exploitation/CVEs/CVE-2023-4911.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md",
+                "file": "Exploitation/CVEs/CVE-2023-4911.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md"
+                "file": "Exploitation/CVEs/CVE-2023-4911.md"
               }
             }
           },
@@ -159,12 +159,18 @@
   },
   "active": "750027acfab6457d",
   "lastOpenFiles": [
+    "Exploitation/CVEs/CVE-2023-23397.md",
+    "Exploitation/CVEs/CVE-2021-41773.md",
+    "Exploitation/CVEs/CVE-2022-26134.md",
+    "Exploitation/CVEs/CVE-2023-4911.md",
+    "Exploitation/CVEs/Spring4Shell.md",
+    "Exploitation/CVEs/ZeroLogon.md",
+    "Exploitation/Exploitation.md",
+    "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md",
     "Tools/Exploit-Frameworks/Metasploit/Metasploit.md",
     "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
     "Tools/AD-Offensive/Bloodhound-Guide.md",
     "Software/Operating-Systems/Windows/Windows-Commands/Windows-Commands.md",
-    "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md",
-    "Exploitation/CVEs/CVE-2023-4911.md",
     "Software/Operating-Systems/Linux/Linux-Concepts/ELF-Binaries.md",
     "Excalidraw/elfformat.excalidraw.md",
     "Development/APIs/API-Hacking.md",
@@ -186,12 +192,6 @@
     "Web-Application-Hacking/Javascript/JavaScript-Web-App-Hacking-Tricks.md",
     "Tools/Network-Based/Port-scanning/Nmap/Nmap-Cheatsheet.md",
     "Post-Exploitation/Stealth/Cleanup/Windows-Cleanup.md",
-    "Post-Exploitation/Post-Exploitation-Enumeration/Windows-Post-Exploitation-Info-Gathering.md",
-    "Post-Exploitation/Post-Exploitation-Enumeration/Foothold-Enumeration.md",
-    "Alternate-Resources.md",
-    "README.md",
-    "Brain-Hacking/Better-Resources.md",
-    "Tools/C2/Sliver/Sliver-Cheatsheet.md",
     "Images/DACL-abuse-dark.png",
     "Images/DACL abuse-dark.png",
     "Reconnaissance/Active-Information-Gathering/IMAP",
