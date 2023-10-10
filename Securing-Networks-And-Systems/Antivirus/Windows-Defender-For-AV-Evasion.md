@@ -18,7 +18,7 @@
 		- Change Technique
 		- Change the API calls
 
-
+ 
 ## References
 
 [Wikipedia Windows Defender Antivirus](https://en.wikipedia.org/wiki/Microsoft_Defender_Antivirus)
