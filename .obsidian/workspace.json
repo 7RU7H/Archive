@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "9ca00294d5785cee",
+        "id": "0bb95ecdd9360a5f",
         "type": "tabs",
         "children": [
           {
-            "id": "750027acfab6457d",
+            "id": "23ec7c8447a90d36",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Exploitation/Windows/Potato-Exploits.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exploitation/Windows/Potato-Exploits.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Exploitation/Windows/Potato-Exploits.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Exploitation/Windows/Potato-Exploits.md"
-              }
+              "state": {}
             }
           },
           {
@@ -156,8 +148,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "750027acfab6457d",
+  "active": "23ec7c8447a90d36",
   "lastOpenFiles": [
+    "Tools/Useful-Online-Software/Cyberchef.md",
+    "Web-Application-Hacking/Web-Exploits/CMDI/Command-Injection-Cheatsheet.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation Bypassing-Contrained-Powershell.md",
+    "Post-Exploitation/Post-Exploitation-Enumeration/Windows-Post-Exploitation-Info-Gathering.md",
+    "Exploitation/Windows/Potato-Exploits.md",
     "README.md",
     "Wireless-Hacking/WIFI-Hacking.md",
     "Post-Exploitation/Stealth/Evasion/Antivirus-Evasion/Obfuscation-Principles.md",
@@ -178,13 +176,7 @@
     "Alternate-Resources.md",
     "Web-Application-Hacking/Web-Exploits/Upload-Vulnerabilities.md",
     "Web-Application-Hacking/Web-Exploits/CSRF/Cross-Site-Request-Forgery.md",
-    "Web-Application-Hacking/Broken-Access-Control.md",
     "Web-Application-Hacking/Web-Exploits",
-    "Exploitation/CVEs/CVE-2023-23397.md",
-    "Exploitation/CVEs/CVE-2021-41773.md",
-    "Exploitation/CVEs/CVE-2022-26134.md",
-    "Exploitation/CVEs/Spring4Shell.md",
-    "Exploitation/CVEs/ZeroLogon.md",
     "Web-Application-Hacking/HTTP",
     "Web-Application-Hacking/Respositories",
     "Web-Application-Hacking/Web-Exploits/IDOR",

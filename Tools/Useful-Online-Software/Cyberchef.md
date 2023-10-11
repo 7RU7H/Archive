@@ -15,6 +15,17 @@ CyberChef Open-Sourced through [GitHub](https://github.com/gchq/CyberChef)
 - Output 
 	- `TT` symbol `Click` for Drop-down to choose display from Raw Bytes, Simplified Chinese GB18030 - also has a search filter! 
 
+## Code Tidy
+
+- Minification
+- Beautification
+	- Generic pretty print C-style languages
+- X-Case: 
+	- Camel
+	- Snake
+	- Kebab
+- Render Markdown
+
 
 ## Phishing Email Analysis
 
