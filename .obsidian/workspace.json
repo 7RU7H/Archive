@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Wireless-Hacking/WIFI-Hacking.md",
+                "file": "Exploitation/Windows/Potato-Exploits.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Wireless-Hacking/WIFI-Hacking.md",
+                "file": "Exploitation/Windows/Potato-Exploits.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Wireless-Hacking/WIFI-Hacking.md",
+                "file": "Exploitation/Windows/Potato-Exploits.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Wireless-Hacking/WIFI-Hacking.md"
+                "file": "Exploitation/Windows/Potato-Exploits.md"
               }
             }
           },
@@ -158,6 +158,8 @@
   },
   "active": "750027acfab6457d",
   "lastOpenFiles": [
+    "README.md",
+    "Wireless-Hacking/WIFI-Hacking.md",
     "Post-Exploitation/Stealth/Evasion/Antivirus-Evasion/Obfuscation-Principles.md",
     "Post-Exploitation/Stealth/Evasion/Antivirus-Evasion/AMSI-Bypassing.md",
     "Post-Exploitation/Stealth/Evasion/Antivirus-Evasion/AMSI-Bypasses/AMSI-ScanBuffer-Patch.md",
@@ -169,7 +171,6 @@
     "Post-Exploitation/Stealth/Evasion/Antivirus-Evasion/Metasploit-AV-Evasion.md",
     "Post-Exploitation/Stealth/Evasion/Antivirus-Evasion/Process-Doppelganging.md",
     "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Privilege-Escalation.md",
-    "README.md",
     "Hardware/Threading.md",
     "Securing-Networks-And-Systems/Antivirus/Windows-Defender-For-AV-Evasion.md",
     "This-Repository-Specific/click-the-link.md",
@@ -184,7 +185,6 @@
     "Exploitation/CVEs/CVE-2022-26134.md",
     "Exploitation/CVEs/Spring4Shell.md",
     "Exploitation/CVEs/ZeroLogon.md",
-    "Exploitation/Exploitation.md",
     "Web-Application-Hacking/HTTP",
     "Web-Application-Hacking/Respositories",
     "Web-Application-Hacking/Web-Exploits/IDOR",

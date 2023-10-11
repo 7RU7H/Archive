@@ -2,7 +2,7 @@
 
 ## Gear
 Given that you may not have network card that has monitor mode:
-Recommended Adapters:  
+Recommended Adaptors:  
 Alfa Tube U: [https://amzn.to/3Q8Togp](https://amzn.to/3Q8Togp)  
 Alfa AWUS036NHA: [https://amzn.to/3wnyVen](https://amzn.to/3wnyVen)  
 Alfa AWUS036ACM: [https://amzn.to/3fCL4WT](https://amzn.to/3fCL4WT)  
