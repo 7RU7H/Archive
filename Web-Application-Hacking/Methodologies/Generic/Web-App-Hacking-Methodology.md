@@ -7,7 +7,7 @@ Web-related hacking may seem very independent as a system, but in actuality Web 
 You can do alot with just `Burp`, `[insert browser of choice] Dev tools`, `Nikto` a `insert directory buester of choice` and `curl`, but sometimes less so `curl` can be blocked as [[Mechanizing-The-Methodology]] points out method for bypassing curl blocking. Bounty bug tools and framework on Github have become numerous and powerful, [[Haddix-Methodology]] and [[Application-Analysis]] provide great sources of good tools.
 
 [[Nikto-Cheatsheet]]
-[[Burpsuite-Helpsheet]]
+[[BurpSuite]]
 [[OpenVAS]]
 [[Nmap-Cheatsheet]]
 
@@ -68,7 +68,7 @@ To find:
 Firefire DevTools `Debugger` may display JavaScript frameworks, hidden input fields, comments, client-side controls within HTML, JavaScript, and more. With `Debugger -> { }` we can prettify [minified code](https://en.wikipedia.org/wiki/Minification_(programming). `Right-click -> Inspect Element`
 
 #### Response Headers
-Firefire DevTools `Network` tool or for more manual customisation `curl`check out[[Curl-Cheatsheet]] or `Burpsuite` check out [[Burpsuite-Helpsheet]].
+Firefire DevTools `Network` tool or for more manual customisation `curl`check out[[Curl-Cheatsheet]] or `Burpsuite` check out [[BurpSuite]].
 
 #### Sitemaps
 These pages contain `Allow` and `Disallow` are directives for search engine bots and web crawlers to not to crawl.

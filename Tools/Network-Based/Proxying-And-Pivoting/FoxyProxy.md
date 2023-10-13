@@ -4,7 +4,7 @@
 
 For currently maintain source code visit: [foxyproxy/browser-extension](https://github.com/foxyproxy/browser-extension)
 
-FoxyProxy is used instead of other [[Proxies]] commonly handle BurpSuite/ZAP proxy - [[Burpsuite-Helpsheet]] and [[OWASP-ZAP]] 
+FoxyProxy is used instead of other [[Proxies]] commonly handle BurpSuite/ZAP proxy - [[BurpSuite]] and [[OWASP-ZAP]] 
 
 GUI Map
 - Options

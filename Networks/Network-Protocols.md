@@ -342,7 +342,7 @@ Seee for Redis-cli a client for Redis database locally: [[Redis-cli-Cheatsheet]]
 Legacy application [Pando](https://en.wikipedia.org/wiki/Pando_(application)) BitTorrent client and uses the BitTorrent protocol to transfer files.
 
 ## Burp Proxy
-Default port 8000, see [[Burpsuite-Helpsheet]]
+Default port 8000, see [[BurpSuite]]
 
 ## 8009 - Various
 [[Apache-Tomcat]]'s default port 8009

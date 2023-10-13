@@ -1,7 +1,7 @@
 # Web Hacking Checklist
 
 ## Walking the Website
-Mostly Ippsec inspired - use [[Burpsuite-Helpsheet]]
+Mostly Ippsec inspired - use [[BurpSuite]]
 0. `curl -L $url` for grepping 
 1. Check the Certificate - Contains email address
 2. Quick check for url: /index.(htlm/php)

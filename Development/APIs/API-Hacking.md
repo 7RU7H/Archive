@@ -16,7 +16,7 @@ An Application Programming Interface is middleware that facilitates communicatio
 
 - [[Postman-Helpsheet]] - [Postman]()
 - SoapUI 
-- [[Burpsuite-Helpsheet]]
+- [[BurpSuite]]
 - [[OWASP-ZAP]]
 
 ## API Security Issues

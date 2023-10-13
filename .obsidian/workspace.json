@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exploitation/Shells/Reverse-Shells-Listing.md",
+                "file": "Tools/Web-Applications-Attacking/Content-Discovery-Tools/Gospider-Cheatsheet.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,14 +25,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+                "file": "Tools/Web-Applications-Attacking/Burpsuite/BurpSuite.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -61,7 +60,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Sliver",
+                "query": "Gospider",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -78,7 +77,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+                "file": "Tools/Web-Applications-Attacking/Content-Discovery-Tools/Gospider-Cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+                "file": "Tools/Web-Applications-Attacking/Content-Discovery-Tools/Gospider-Cheatsheet.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md"
+                "file": "Tools/Web-Applications-Attacking/Content-Discovery-Tools/Gospider-Cheatsheet.md"
               }
             }
           },
@@ -169,11 +169,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "99e84c12c9d2b950",
+  "active": "23ec7c8447a90d36",
   "lastOpenFiles": [
-    "Post-Exploitation/Privilege-Escalation/Linux/Important-Linux-Locations.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
     "Exploitation/Shells/Reverse-Shells-Listing.md",
+    "Tools/Web-Applications-Attacking/Burpsuite/BurpSuite.md",
+    "Tools/Web-Applications-Attacking/Burpsuite/Burpsuite-Pro-Version.md",
+    "Development/APIs/API-Hacking.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/Important-Linux-Locations.md",
     "Services/Webservers/Apache/Apache2/Apache2.md",
     "Tools/C2/Introduction-To-Command-And-Control-Frameworks.md",
     "Tools/C2/Sliver/Sliver-Cheatsheet.md",
@@ -194,9 +197,6 @@
     "Post-Exploitation/Stealth/Evasion/Antivirus-Evasion/Signature-Evasion.md",
     "Post-Exploitation/Stealth/Evasion/Antivirus-Evasion/Inline-Hooking.md",
     "Post-Exploitation/Stealth/Evasion/Antivirus-Evasion/Antivirus-Evasion.md",
-    "Post-Exploitation/Stealth/Evasion/Antivirus-Evasion/Metasploit-AV-Evasion.md",
-    "Post-Exploitation/Stealth/Evasion/Antivirus-Evasion/Process-Doppelganging.md",
-    "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Privilege-Escalation.md",
     "Web-Application-Hacking/Web-Exploits",
     "Web-Application-Hacking/HTTP",
     "Web-Application-Hacking/Respositories",

@@ -1,4 +1,4 @@
-# Burpsuite
+# BurpSuite
 
 ## Important Notice
 
@@ -6,21 +6,60 @@ Warning with recent changes - [portswigger](https://portswigger.net/burp/documen
 
 They now added a `Burp -> Settings` and all the `Project options`, `User options` that are listed below as such and instructions are now in a Windows with there own search bar! Thank you for change this insane UI nightmare of lists of scrollable settings. Some of the tricks here are still useful, but it does mean that you now you just search for the settings you need to change.
 
-
 Prior to the disclaimer...
 
+This is not a full detailed guide of how to use Burp Suite more a selection of tricks and tips, for **Community Version Only**. It not really a cheatsheet and more a sheet of helpful stuff. There are full courses of how to use this available from Portswigger, but their are also massive amounts of free resources and relatively cheap resources to learn and practice from. This Helpsheet is more just shortcuts, but is intended to make available some of the functionality you may require extract from GUI menu to a scenario:   
+> *Problem X -> Do this with Burpsuite(plus another applications)*  
 
-This is not a full detailed guide of how to use burpsuite more a selection of tricks and tips, for **Community Version Only**. It not really a cheatsheet and more a sheet of helpful stuff. There are full courses of how to use this avaliable from Portswigger, but their are also massive amounts of free resources and relatively cheap resources to learn and practice from. This Helphsheet is more just shortcuts, but is intended to make avaliable some of the functionality you may require extract from GUI menu to a scenario:   
-*Problem X -> Do this with Burpsuite(plus another applications)*  
 It is also not a showcase of plugins I like or support.  
 Some of the tips very simple for simple problems, sometimes that is simply required.
 
-[Official Documentation](https://portswigger.net/burp/documentation/desktop)
+## Introduction
 
-# Cool things for the cmd [more]
-- Builtin Browser, never setup the burp certifact with your own browser every again!
+[THM](https://tryhackme.com/room/burpsuitebasics): *"Burp Suite is a Java-based framework designed to serve as a comprehensive solution for conducting web application penetration testing. It has become the industry standard tool for hands-on security assessments of web and mobile applications, including those that rely on application programming interfaces (APIs)."*
+
+For the [Official Documentation](https://portswigger.net/burp/documentation/desktop) 
+For article on the [[Burpsuite-Pro-Version]]
+
+#### Features
+
+- Proxy: intercept and modify requests and responses
+	- Logging
+		- HTTP History Sub-Tab
+		- WebSockets Sub-Tab
+	- WebSocket support
+	- Match and Replace
+		- Use [[Regular-Expressions]] to modify incoming and outgoing requests
+- Repeater: capturing, modifying and resending a request
+- Intruder: Rate-limited (Community version) endpoint spraying tool
+- Decoder: Decodes data
+- Comparer: compares two data streams at the word or byte level
+- Sequencer: assess token randomness
+
+Other Tabs:
+- Target
+	- Site map
+		- Maps web applications base on links, form and visited pages
+		- Issues definitions 
+			- [[Burpsuite-Pro-Version]] vulnerability scan
+		- Scope settings
+			- Scope via enabling include or exclude specific domains and IP addresses
+
+
+#### Key binds
+
+|Shortcut|Tab|
+|---|---|
+|`Ctrl + Shift + D`|Dashboard|
+|`Ctrl + Shift + T`|Target tab|
+|`Ctrl + Shift + P`|Proxy tab|
+|`Ctrl + Shift + I`|Intruder tab|
+|`Ctrl + Shift + R`|Repeater tab|
+
+# Cool things for the cmd more
+
+- Builtin Browser, never setup the burp certificate with your own browser every again!
 Go to `Project settings -> no sandbox for builtin browser`
-
 
 ## FoxyProxy/Firefox proxy
 
@@ -86,6 +125,7 @@ SSL/TLS  -> SSL pass through feature
 For customisation go to `User Options > Misc > Edit Hotkeys`, for default shortcuts:
 
 **Navigation**
+
 Shortcut | Function  
 --- | ---
 `Ctrl + Shift + D` | Switch to the Dashboard  
@@ -95,6 +135,7 @@ Shortcut | Function
 `Ctrl + Shift + R   ` | Switch to the Repeater tab
 
 **Proxy**
+
 Shortcut | Function  
 --- | ---
 `Ctrl + F` | Forward an intercepted message
@@ -129,7 +170,7 @@ Shortcut | Function
 ## References
 
 [Official Documentation](https://portswigger.net/burp/documentation/desktop)
-[THM basics](https://tryhackme.com/room/burpsuitebasics)
+[THM Burpsuite basics](https://tryhackme.com/room/burpsuitebasics)
 [official-ps/blog/ssl-pass-through](https://portswigger.net/blog/ssl-pass-through-in-burp)
 [cybrary](https://www.cybrary.it/blog/burp-suite-tutorial-part-2-essential-shortcuts-in-burp-suite-proxy-for-more/)
 [Match and Replace](https://portswigger.net/burp/documentation/desktop/tutorials/using-match-and-replace)
