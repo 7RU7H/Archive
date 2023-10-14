@@ -2,14 +2,14 @@
 
 ## Important Notice
 
-Warning with recent changes - [portswigger](https://portswigger.net/burp/documentation/desktop/settings) - December the 15th 2022
+Warning with recent changes - [Portswigger](https://portswigger.net/burp/documentation/desktop/settings) - December the 15th 2022
 
-They now added a `Burp -> Settings` and all the `Project options`, `User options` that are listed below as such and instructions are now in a Windows with there own search bar! Thank you for change this insane UI nightmare of lists of scrollable settings. Some of the tricks here are still useful, but it does mean that you now you just search for the settings you need to change.
+They now added a `Burp -> Settings` and all the `Project options`, `User options` that are listed below as such and instructions are now in a Windows with there own search bar! Thank you for change this insane UI nightmare of lists of scroll-able settings. Some of the tricks here are still useful, but it does mean that you now you just search for the settings you need to change.
 
 Prior to the disclaimer...
 
 This is not a full detailed guide of how to use Burp Suite more a selection of tricks and tips, for **Community Version Only**. It not really a cheatsheet and more a sheet of helpful stuff. There are full courses of how to use this available from Portswigger, but their are also massive amounts of free resources and relatively cheap resources to learn and practice from. This Helpsheet is more just shortcuts, but is intended to make available some of the functionality you may require extract from GUI menu to a scenario:   
-> *Problem X -> Do this with Burpsuite(plus another applications)*  
+> *Problem X -> Do this with Burpsuite (plus another applications)*  
 
 It is also not a showcase of plugins I like or support.  
 Some of the tips very simple for simple problems, sometimes that is simply required.
@@ -19,7 +19,7 @@ Some of the tips very simple for simple problems, sometimes that is simply requi
 [THM](https://tryhackme.com/room/burpsuitebasics): *"Burp Suite is a Java-based framework designed to serve as a comprehensive solution for conducting web application penetration testing. It has become the industry standard tool for hands-on security assessments of web and mobile applications, including those that rely on application programming interfaces (APIs)."*
 
 For the [Official Documentation](https://portswigger.net/burp/documentation/desktop) 
-For article on the [[Burpsuite-Pro-Version]]
+For article on the [[BurpSuite-Pro-Version]]
 
 #### Features
 

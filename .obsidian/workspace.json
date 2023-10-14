@@ -8,24 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "23ec7c8447a90d36",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tools/Web-Applications-Attacking/Content-Discovery-Tools/Gospider-Cheatsheet.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "99e84c12c9d2b950",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/Web-Applications-Attacking/Burpsuite/BurpSuite.md",
+                "file": "Web-Application-Hacking/Web-Exploits/XXE/XXE-Injection.md",
                 "mode": "source",
                 "source": false
               }
@@ -77,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/Web-Applications-Attacking/Content-Discovery-Tools/Gospider-Cheatsheet.md",
+                "file": "Web-Application-Hacking/Web-Exploits/XXE/XXE-Injection.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tools/Web-Applications-Attacking/Content-Discovery-Tools/Gospider-Cheatsheet.md",
+                "file": "Web-Application-Hacking/Web-Exploits/XXE/XXE-Injection.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tools/Web-Applications-Attacking/Content-Discovery-Tools/Gospider-Cheatsheet.md"
+                "file": "Web-Application-Hacking/Web-Exploits/XXE/XXE-Injection.md"
               }
             }
           },
@@ -169,10 +156,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "23ec7c8447a90d36",
+  "active": "99e84c12c9d2b950",
   "lastOpenFiles": [
-    "Exploitation/Shells/Reverse-Shells-Listing.md",
     "Tools/Web-Applications-Attacking/Burpsuite/BurpSuite.md",
+    "Tools/Web-Applications-Attacking/Content-Discovery-Tools/Gospider-Cheatsheet.md",
+    "Exploitation/Shells/Reverse-Shells-Listing.md",
     "Tools/Web-Applications-Attacking/Burpsuite/Burpsuite-Pro-Version.md",
     "Development/APIs/API-Hacking.md",
     "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
@@ -196,7 +184,6 @@
     "Post-Exploitation/Stealth/Evasion/Antivirus-Evasion/Windows-Runtime-Detection-Evasion.md",
     "Post-Exploitation/Stealth/Evasion/Antivirus-Evasion/Signature-Evasion.md",
     "Post-Exploitation/Stealth/Evasion/Antivirus-Evasion/Inline-Hooking.md",
-    "Post-Exploitation/Stealth/Evasion/Antivirus-Evasion/Antivirus-Evasion.md",
     "Web-Application-Hacking/Web-Exploits",
     "Web-Application-Hacking/HTTP",
     "Web-Application-Hacking/Respositories",
