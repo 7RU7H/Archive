@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Web-Application-Hacking/Web-Exploits/XXE/XXE-Injection.md",
+                "file": "Exploitation/CVEs/CVE-2023-22515.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Web-Application-Hacking/Web-Exploits/XXE/XXE-Injection.md",
+                "file": "Exploitation/CVEs/CVE-2023-22515.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Web-Application-Hacking/Web-Exploits/XXE/XXE-Injection.md",
+                "file": "Exploitation/CVEs/CVE-2023-22515.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Web-Application-Hacking/Web-Exploits/XXE/XXE-Injection.md"
+                "file": "Exploitation/CVEs/CVE-2023-22515.md"
               }
             }
           },
@@ -158,6 +158,8 @@
   },
   "active": "99e84c12c9d2b950",
   "lastOpenFiles": [
+    "Web-Application-Hacking/Web-Exploits/XXE/XXE-Injection.md",
+    "Exploitation/CVEs/CVE-2023-22515.md",
     "Tools/Web-Applications-Attacking/Burpsuite/BurpSuite.md",
     "Tools/Web-Applications-Attacking/Content-Discovery-Tools/Gospider-Cheatsheet.md",
     "Exploitation/Shells/Reverse-Shells-Listing.md",
@@ -182,8 +184,6 @@
     "Post-Exploitation/Stealth/Evasion/Antivirus-Evasion/AMSI-Bypasses/AMSI-ScanBuffer-Patch.md",
     "Post-Exploitation/Stealth/Evasion/Antivirus-Evasion/AMSI-Bypasses/AMSI-Buffer-Patch-In-memory.md",
     "Post-Exploitation/Stealth/Evasion/Antivirus-Evasion/Windows-Runtime-Detection-Evasion.md",
-    "Post-Exploitation/Stealth/Evasion/Antivirus-Evasion/Signature-Evasion.md",
-    "Post-Exploitation/Stealth/Evasion/Antivirus-Evasion/Inline-Hooking.md",
     "Web-Application-Hacking/Web-Exploits",
     "Web-Application-Hacking/HTTP",
     "Web-Application-Hacking/Respositories",
