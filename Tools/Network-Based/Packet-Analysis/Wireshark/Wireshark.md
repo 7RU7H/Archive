@@ -35,7 +35,7 @@ Found here: [[Wireshark-Useful-Packet-Filters]]
 
 
 ## Use cases
-Want a GUI with quick filters instead of [[Tcpdump-Cheatsheet]] and [[Useful_Bash]]?
+Want a GUI with quick filters instead of [[Tcpdump-Cheatsheet]] and [[Bash]]?
 -   Decrypting SSL and TLS Traffic: [David Bombal Youtube](https://www.youtube.com/watch?v=GMNOT1aZmD8)
 -   Detecting and troubleshooting network problems, such as network load failure points and congestion.
 -   Detecting security anomalies, such as rogue hosts, abnormal port usage, and suspicious traffic.

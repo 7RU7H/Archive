@@ -8,7 +8,7 @@ For more specific articles:
 [[Linux-Processes-Commands]]
 [[Linux-Common-File-Extensions]]
 [[Core-Linux-Commands]]
-[[Useful_Bash]]
+[[Bash]]
 [[Linux-Tricks]]
 
 # Useful terminal hotkeys
@@ -30,7 +30,7 @@ alias name='Put your commands here'
 ```
 
 # Bash Operators 101 
-See [[Useful_Bash]]
+See [[Bash]]
 ```bash
 & run command in the  background
 && cmd1 && cmd2 !! cmd1 has to be successful for next command to run
