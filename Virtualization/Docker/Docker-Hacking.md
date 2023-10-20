@@ -25,7 +25,7 @@ cat /proc/1/cgroup
 cat /proc/1/cgroup | grep docker
 ```
 
-Check for mount misconfigurations. It is a misconfiguration if Docker container is running `--privileged`, meaning we are can mount to these disks as containerr does not need disks 
+Check for mount misconfigurations. It is a misconfiguration if Docker container is running `--privileged`, meaning we are can mount to these disks as container does not need disks 
 ```bash
 # check if disks are mountable into the host filesystem 
 mount | grep /dev/sda 
@@ -49,8 +49,8 @@ find / -name docker.sock 2>/dev/null
 
 Docker has a socket [[Network-Protocols]] on 5000 so that another host can send commands to it, not default, but possible.
 
-
 ## Preface
+
 Add IP and domain name to /etc/hosts
 ```bash
 echo "$IP $DOMAIN" | tee -a /etc/hosts
@@ -76,7 +76,7 @@ COPY
 ````
 For full list see [Commands](https://docs.docker.com/engine/reference/commandline/cli/)
 
-##  Docker Enumeration
+## Docker Enumeration
 
 On target machine enumerate the lay of the land:
 ```bash
@@ -110,7 +110,7 @@ docker -H $remotehost run -v /:/mnt --rm -it $image:$tag chroot /mnt sh
 
 ## Abusing Docker Registry
 
-[Docker registries](https://docs.docker.com/registry/) are stateless server side application stores the Docker Image. Registries store and provide Docker images for use. Private registeries contain variouses called a **tag**. The Docker Registry is a JSON endpoint query it with 
+[Docker registries](https://docs.docker.com/registry/) are stateless server side application stores the Docker Image. Registries store and provide Docker images for use. Private registries contain various called a **tag**. The Docker Registry is a JSON endpoint query it with 
 
 Nmap scan to find the ports to interact with the container.
 

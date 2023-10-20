@@ -65,8 +65,19 @@ What is regular userland purpose
 What is does it run
 What is network level purpose of connections
 
+#### Setup Questions?
 
-#### Question
+- Noting? Why are you not..
+	- Directory
+		- Main notes file for: 
+			- General information 
+			- Strategic overview and insights of a machine
+			- Timeline of actions 
+				- Linking Note per Phase and Protocol, etc
+		- Note file per stage - per Phase and Protocol, etc 
+
+
+#### Questions
 
 - Are the people on the network [[OSINT]]able?
 	- Is it in-scope and most professional way [[OSINT-People]]
@@ -123,8 +134,9 @@ What is network level purpose of connections
 			-  [[Apache-Tomcat]]
 		- Vulnerable versioning? 
 	- Have you caused and dorked ([[Search-Engine-Dorking]]) the error messages? 
-	- What request methods?
-		 - Can you bypass with additional Headers?
+	- What request methods and can you get different results from changing them?
+		 - Can you bypass with additional Headers? 
+			 - Use `curl` with  `--proxy ` flag to prevent forget `Content-*` Headers that are required, which [[BurpSuite]] Community does not automatic update when you change the request type manually. 
 	- Endpoints?
 		- Fuzzed with Special characters on all end points - [[FFUF-Cheatsheet]]?
 	- CMS
