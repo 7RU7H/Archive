@@ -11,8 +11,12 @@
             "id": "ed9ebcbd807f923e",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Software/Operating-Systems/Linux/Linux-Commands/Grep-All-The-Things.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -44,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "showmount ",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -81,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Web-Application-Hacking/JavaScript/WebPacks.md",
+                "file": "Software/Operating-Systems/Linux/Linux-Commands/Grep-All-The-Things.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Web-Application-Hacking/JavaScript/WebPacks.md",
+                "file": "Software/Operating-Systems/Linux/Linux-Commands/Grep-All-The-Things.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -121,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Web-Application-Hacking/JavaScript/WebPacks.md"
+                "file": "Software/Operating-Systems/Linux/Linux-Commands/Grep-All-The-Things.md"
               }
             }
           },
@@ -135,11 +139,13 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -151,8 +157,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ed8f63df71621be6",
+  "active": "ed9ebcbd807f923e",
   "lastOpenFiles": [
+    "Software/Operating-Systems/Linux/Linux-Commands/Core-Linux-Commands.md",
+    "Tools/Cross-OS/Curl-Cheatsheet.md",
     "Tools/Authentication-Attacking/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
     "Web-Application-Hacking/JavaScript/WebPacks.md",
     "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
@@ -178,8 +186,6 @@
     "Post-Exploitation/Privilege-Escalation/Linux/Important-Linux-Locations.md",
     "Services/Webservers/Apache/Apache2/Apache2.md",
     "Tools/C2/Introduction-To-Command-And-Control-Frameworks.md",
-    "Tools/C2/Sliver/Sliver-Cheatsheet.md",
-    "Tools/Useful-Online-Software/Cyberchef.md",
     "Web-Application-Hacking/Web-Exploits",
     "Web-Application-Hacking/HTTP",
     "Web-Application-Hacking/Respositories",

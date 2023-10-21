@@ -46,9 +46,11 @@ chown user:user
 comm		#compare files
 comm $file.txt $file1.txt
 
-cp 		copy
+cp 		# copy
 -t		# working directory as target directory 		
 # use -- as delimiter instead of - for files containing a '-'
+cp --preserve # preserve the specified attributes (default: mode,ownership,timestamps), if possible additional attributes: context, links, xattr, all
+
 
 dd if=/dev/urandom of=randomfile bs=4M count=2 		# create a file of 8mb of random content
 
@@ -226,26 +228,29 @@ sleep		good for linux system on network for the hanging of connection
 ss		 	# socket statistic (netstat alternative)
 stat		# file/file system's status
 
-sudo -l	LISTs commands you are able to with an account! VERY USEFUL
-sudo -i	run a login shell as the target user
-sudo -e	edit files instead of running a command
-sudo -g --group=GROUP run command as group name or id
-sudo -C close all file descriptor >= n
-sudo -b	run command in background
-sudo -A	use a helper program for password prompting
-sudo --host=HOST	run command on host!
+sudo -l	# Lists commands you are able to with an account! VERY USEFUL
+sudo -i	# run a login shell as the target user
+sudo -e	# edit files instead of running a command
+sudo -g --group=GROUP # run command as group name or id
+sudo -C # close all file descriptor >= n
+sudo -b	# run command in background
+sudo -A	# use a helper program for password prompting
+sudo --host=HOST # run command on host!
 sudo -K	--remove-timestamp
 sudo -k --reset-timestamp
 
-systemctl	permanent system changes BEWARE!
-
+systemctl # permanent system changes BEWARE!
+systemctl stop $servicename
+systemctl start $servicename
+systemctl restart $servicename
 
 tac 
 -r -s 'x\|[^x]' Reverse a file character by character.
 
 tail		print last 10 lines of a file to stdout
 
-touch		create file
+touch		# create file
+touch -- --preserve=mode # preserve a files permissions 
 
 uname		system info
 
