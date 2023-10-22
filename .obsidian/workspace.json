@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/Wordlists/Generating-Usernames-And-Emails.md",
+                "file": "Tools/Shells/Socat.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "usernames",
+                "query": "WinRm",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +65,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/Wordlists/Generating-Usernames-And-Emails.md",
+                "file": "Tools/Shells/Socat.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tools/Wordlists/Generating-Usernames-And-Emails.md",
+                "file": "Tools/Shells/Socat.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tools/Wordlists/Generating-Usernames-And-Emails.md"
+                "file": "Tools/Shells/Socat.md"
               }
             }
           },
@@ -157,8 +158,13 @@
   },
   "active": "ed9ebcbd807f923e",
   "lastOpenFiles": [
-    "Reconnaissance/Active-Information-Gathering/SMTP/SMTP-Recon-Cheatsheet.md",
+    "Persistence/Windows-Persistence/Windows-Persistence-Tampering-with-Unprivileged-Accounts.md",
+    "Tools/Shells/Socat.md",
+    "Post-Exploitation/Networking/Port-Redirection-And-Tunnelling.md",
+    "Post-Exploitation/Networking/Pivoting-Tunnelling-And-Redirection-Master-Class-Darnell-And-Thurner-Notes.md",
+    "Tools/Authentication-Attacking/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
     "Tools/Wordlists/Generating-Usernames-And-Emails.md",
+    "Reconnaissance/Active-Information-Gathering/SMTP/SMTP-Recon-Cheatsheet.md",
     "Reconnaissance/Email-Harvesting.md",
     "Reconnaissance/Active-Information-Gathering/OS-Detection/OS-Detection.md",
     "Tools/Wordlists/Wordlists.md",
@@ -167,7 +173,6 @@
     "Reconnaissance/OSINT/OSINT-People.md",
     "Tools/Authentication-Attacking/Bruteforce-Login-Tools/Brutespray-Cheatsheet.md",
     "Tools/Authentication-Attacking/Bruteforce-Login-Tools/Crowbar-CheatSheat.md",
-    "Tools/Authentication-Attacking/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
     "Tools/Authentication-Attacking/Bruteforce-Login-Tools/Medusa-Cheatsheet.md",
     "Reconnaissance/HUMINT/User-Active-Recon.md",
     "Reconnaissance/OSINT/OSINT.md",
@@ -179,11 +184,7 @@
     "Development/Languages/Ruby/Ruby.md",
     "Services/SaltStack.md",
     "Development/Languages/Java/Java.md",
-    "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
-    "Virtualization/Docker/Docker-Hacking.md",
     "Development/Languages/Untitled",
-    "Virtualization/Docker/Docker.md",
-    "Services/Databases/Postgres/PostgreSQL.md",
     "Web-Application-Hacking/Web-Exploits",
     "Web-Application-Hacking/HTTP",
     "Web-Application-Hacking/Respositories",
