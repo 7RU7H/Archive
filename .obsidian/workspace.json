@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/Shells/Socat.md",
+                "file": "Web-Application-Hacking/Web-Exploits/SSRF/Server-Side-Request-Forgery.md",
                 "mode": "source",
                 "source": false
               }
@@ -65,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/Shells/Socat.md",
+                "file": "Web-Application-Hacking/Web-Exploits/SSRF/Server-Side-Request-Forgery.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tools/Shells/Socat.md",
+                "file": "Web-Application-Hacking/Web-Exploits/SSRF/Server-Side-Request-Forgery.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tools/Shells/Socat.md"
+                "file": "Web-Application-Hacking/Web-Exploits/SSRF/Server-Side-Request-Forgery.md"
               }
             }
           },
@@ -144,7 +143,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -156,10 +156,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ed9ebcbd807f923e",
+  "active": "eb64fac060409534",
   "lastOpenFiles": [
-    "Persistence/Windows-Persistence/Windows-Persistence-Tampering-with-Unprivileged-Accounts.md",
     "Tools/Shells/Socat.md",
+    "Persistence/Windows-Persistence/Windows-Persistence-Tampering-with-Unprivileged-Accounts.md",
     "Post-Exploitation/Networking/Port-Redirection-And-Tunnelling.md",
     "Post-Exploitation/Networking/Pivoting-Tunnelling-And-Redirection-Master-Class-Darnell-And-Thurner-Notes.md",
     "Tools/Authentication-Attacking/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
