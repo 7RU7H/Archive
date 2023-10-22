@@ -34,3 +34,4 @@ This is a TTPs to add to as I continue to learn and improve [[OSINT]]ing people 
 - How do use a site and account?
 - How do they socially connect to other users?
 	- Why do they connect?
+ - Usernames from names try - [[Generating-Usernames-And-Emails]]

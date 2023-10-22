@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Software/Operating-Systems/Linux/Linux-Commands/Grep-All-The-Things.md",
+                "file": "Tools/Wordlists/Generating-Usernames-And-Emails.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "usernames",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Software/Operating-Systems/Linux/Linux-Commands/Grep-All-The-Things.md",
+                "file": "Tools/Wordlists/Generating-Usernames-And-Emails.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Software/Operating-Systems/Linux/Linux-Commands/Grep-All-The-Things.md",
+                "file": "Tools/Wordlists/Generating-Usernames-And-Emails.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Software/Operating-Systems/Linux/Linux-Commands/Grep-All-The-Things.md"
+                "file": "Tools/Wordlists/Generating-Usernames-And-Emails.md"
               }
             }
           },
@@ -139,13 +139,11 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -159,9 +157,20 @@
   },
   "active": "ed9ebcbd807f923e",
   "lastOpenFiles": [
-    "Software/Operating-Systems/Linux/Linux-Commands/Core-Linux-Commands.md",
-    "Tools/Cross-OS/Curl-Cheatsheet.md",
+    "Reconnaissance/Active-Information-Gathering/SMTP/SMTP-Recon-Cheatsheet.md",
+    "Tools/Wordlists/Generating-Usernames-And-Emails.md",
+    "Reconnaissance/Email-Harvesting.md",
+    "Reconnaissance/Active-Information-Gathering/OS-Detection/OS-Detection.md",
+    "Tools/Wordlists/Wordlists.md",
+    "Tools/Wordlists/Wordlist-Considerations.md",
+    "Tools/Wordlists/Wordlist-Tools/Cewl-Cheatsheet.md",
+    "Reconnaissance/OSINT/OSINT-People.md",
+    "Tools/Authentication-Attacking/Bruteforce-Login-Tools/Brutespray-Cheatsheet.md",
+    "Tools/Authentication-Attacking/Bruteforce-Login-Tools/Crowbar-CheatSheat.md",
     "Tools/Authentication-Attacking/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
+    "Tools/Authentication-Attacking/Bruteforce-Login-Tools/Medusa-Cheatsheet.md",
+    "Reconnaissance/HUMINT/User-Active-Recon.md",
+    "Reconnaissance/OSINT/OSINT.md",
     "Web-Application-Hacking/JavaScript/WebPacks.md",
     "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
     "Tools/Web-Applications-Attacking/Burpsuite/BurpSuite.md",
@@ -175,17 +184,6 @@
     "Development/Languages/Untitled",
     "Virtualization/Docker/Docker.md",
     "Services/Databases/Postgres/PostgreSQL.md",
-    "Software/Operating-Systems/Hacker-Distros/Kali/Kali-Configuration/Configuring-Postgresql-With-Kali.md",
-    "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md",
-    "Web-Application-Hacking/Web-Exploits/SSTI/Server-Side-Template-Injection-Cheatsheet.md",
-    "Exploitation/CVEs/CVE-2023-22515.md",
-    "Web-Application-Hacking/Web-Exploits/XXE/XXE-Injection.md",
-    "Tools/Web-Applications-Attacking/Content-Discovery-Tools/Gospider-Cheatsheet.md",
-    "Exploitation/Shells/Reverse-Shells-Listing.md",
-    "Development/APIs/API-Hacking.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Important-Linux-Locations.md",
-    "Services/Webservers/Apache/Apache2/Apache2.md",
-    "Tools/C2/Introduction-To-Command-And-Control-Frameworks.md",
     "Web-Application-Hacking/Web-Exploits",
     "Web-Application-Hacking/HTTP",
     "Web-Application-Hacking/Respositories",

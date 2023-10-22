@@ -1,15 +1,15 @@
-# Brutespray
+# Brutespray Cheatsheet
 ## About
-Brute-Forcing from Nmap output - Automatically attempts default creds on found services.
+Brute-Forcing from Nmap output - Automatically attempts default credentials on found services.
 
 Created by: Shane Young/@t1d3nio && Jacob Robles/@shellfail
 
 ## # Installation
 Git clone and `pip install -r requirements.txt`
-On Kali:`apt-get install brutespray`
+On Kali: `apt-get install brutespray`
 
 ## Uses
-Can take an entire network range and its relative open services and try wordlists of users `-U` and passwords `-P` or single instances of users `-u` and passwords `-p`.
+Can take an entire network range and its relative open services and try [[Wordlists]] of users `-U` and passwords `-P` or single instances of users `-u` and passwords `-p`.
 
 ```bash
 python brutespray.py --file nmap.gnmap -u admin -P /usr/share/wordlist/rockyou.txt --threads 5 --hosts 5`
