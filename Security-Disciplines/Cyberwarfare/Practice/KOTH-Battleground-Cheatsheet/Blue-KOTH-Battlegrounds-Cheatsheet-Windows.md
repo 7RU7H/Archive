@@ -1,5 +1,11 @@
 # Blue Windows
 
+Background programs useful when you only have one reverse shell
+```powershell
+start /B $command
+start-job { $command }
+```
+
 Use `netsh` like `wireshark` to monitor traffic to the box you are defending - @MalwareJake 
 ```powershell
 netsh trace start capture=yes tracefile=C:\$path\$to\$pcap.etl

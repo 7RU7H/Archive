@@ -154,6 +154,16 @@ Socat as a Proxy
 socat TCP-LISTEN:6969,fork,reuseaddr,bind=127.0.0.1 TCP:remote_ip:remote_port
 ```
 
+From [fsodogandji](https://gist.github.com/fsodogandji/8521333)
+```bash
+# Tunnel from a proxy
+socat TCP4-L:10005,reuseaddr,fork,bind=127.0.1.1 PROXY:127.0.0.1,proxyport=10005
+# Installs a simple TCP port forwarder. With TCP4-LISTEN it listens on local port "www" until a connection comes in, accepts it,|
+#The service running on 172.16.245.11:5432 is forward to 172.16.251.139:5666|
+socat -d -d -lmlocal2 TCP4-LISTEN:5666,bind=172.16.251.139,su=nobody,fork,reuseaddr TCP4:172.16.245.11:5432
+```
+
+
 ## Port Redirection and Tunnelling with `socat`
 
 [[Port-Redirection-And-Tunnelling]] with `socat`
@@ -193,3 +203,4 @@ socat TCP-LISTEN:8000,reuseaddr,fork TCP:<destination_ip>:<destination_port>
 [gothburz](https://github.com/gothburz/OSCP-PWK2.0/blob/master/practical-tools/socat-shell-cheatsheet.md)
 [cheat](https://github.com/cheat/cheatsheets/blob/master/socat0)
 [THM Wreath Room](https://tryhackme.com/room/wreath)
+[fsodogandji](https://gist.github.com/fsodogandji/8521333)

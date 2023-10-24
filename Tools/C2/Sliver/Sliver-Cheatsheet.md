@@ -204,24 +204,38 @@ sock5 start
 socks5 stop -i <id>
 ```
 
-Pivots != `Portfwd`, egress through implants
+Sliver [Pivots](https://github.com/BishopFox/sliver/wiki/Pivots) != [Port-Forwarding](https://github.com/BishopFox/sliver/wiki/Port-Forwarding); Pivots are for C2 traffic, `portfwd` is *for tunneling generic tcp connections into a target environment.*
+
+Pivots != `Portfwd`, egress through implants; [Pivoting](https://github.com/BishopFox/sliver/wiki/Pivots) - C2 Traffic
 ```go
 // List all an decide
 beacons
 // For each required hop 
 use $implant
+// Requires interactive session
 interactive
+// List pivots
+pivots 
 // For implant that will be the pivot listener  
 use $session-id
 // Open a pivot port
 pivots tcp
+pivots tcp  --bind 0.0.0.0
 // get details on a specific pivot listener; graph will display the json with more info
 pivots detail | pivot graph
 // Generate a Pivot Implant  that will connect to the pivot listener 
 generate --tcp-pivot 10.10.10.10:6969
 ```
 
-
+[Port-Forwarding](https://github.com/BishopFox/sliver/wiki/Port-Forwarding) - Tunneling generic tcp connections
+```go
+// By default all port forwards will be bound to the `127.0.0.1` interface, but you can override this using the `--bind` flag
+// Local port forward
+portfwd add --remote 10.10.10.10:22
+// Reverse Port forward
+rportfwd add --remote 10.10.10.10:22
+// `wg-portfwd` WireGuard Port Foward requires WireGuard 
+```
 
 ## Detecting Sliver
 

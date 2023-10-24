@@ -3,6 +3,13 @@
 Website 
 `Ctrl + Shift + R` - cache refresh pages to ensure last game does not misinform as to current context
 
+Background programs useful when you only have one reverse shell
+```powershell
+start /B $command
+start-job { $command }
+```
+
+
 Change the keyboard layout - check in scope if so force any new user to have a weird keyboard layout
 ```powershell
 Set-WinUserLanguageList -Force 'en-US'
@@ -80,3 +87,5 @@ $Parameters = @{
 }
 New-SmbShare @Parameters
 ```
+
+
