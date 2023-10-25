@@ -26,7 +26,7 @@ Prevention:
 ## Injection
 
 Submitable data that is not properly filtered at an injection point: log in form, search feature or ANY interactive components.
-- SQLi see [[SQLInjection]]
+- SQLi see [[SQL-Injection]]
 - XSS (2021 included as an injection attack) [[XSS-Cheatsheet]], 
 - Remplate-injection like: [[Server-Side-Template-Injection-Cheatsheet]]
 - [[Command-Injection-Cheatsheet]] 

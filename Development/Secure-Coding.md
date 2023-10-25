@@ -45,7 +45,7 @@ Validating free-form Unicode text
 
 #### Vulnerable Database Access Coding
 
-Databases are a different service and require connection to it from another the service. If an attacker were able to read this sourcecode with hard coded credentials would be a enough in some case to not worry about SQLi. Although seeing that th e source code would unlikely be world readable, understanding [[SQLInjection]] requires  understanding how the another services, like a websites or an applications have to connect and then communicate to the database is key to securing and exploit insecure code. Language specific and insecure coding are both the fault of humans and exist regardless of language used here. Below are examples of vulnerable applicdation coding do not use!
+Databases are a different service and require connection to it from another the service. If an attacker were able to read this sourcecode with hard coded credentials would be a enough in some case to not worry about SQLi. Although seeing that th e source code would unlikely be world readable, understanding [[SQL-Injection]] requires  understanding how the another services, like a websites or an applications have to connect and then communicate to the database is key to securing and exploit insecure code. Language specific and insecure coding are both the fault of humans and exist regardless of language used here. Below are examples of vulnerable applicdation coding do not use!
 ```php
 $server="db";
 $user="logistics_user";

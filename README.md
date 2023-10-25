@@ -12,6 +12,8 @@ H.D. Moore: *“If you don’t think you’re a n00b, you’re not trying hard e
 
 See the [[About]] page for historic dumping of everything that was on this page as well a history of this repository. Among the issues of the author dyslexia is one that is high on the list and although Obsidian introduced a spellchecker in 2023, but it must have be a hard year and half of anyone reading the contents of this repository. Consider [[Alternate-Resources]] page that referenced throughout and support them please!
 
+To disambiguate pages that purely just the notes of talks, videos, lectures, podcasts, etc the file is prepended with the capitalised TALK- 
+
 #### For A Contents Page
 
 For full links to all Articles alphabetically see [[Contents]] to `./mkContents.sh` can be used to make this file. I have tested it with graph view, but have personally settled for not having it currently, but is there if anyone ever needs it - I decided the Graph looks better, but the script remains for others if required.

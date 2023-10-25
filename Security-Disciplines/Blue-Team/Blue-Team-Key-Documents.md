@@ -1,11 +1,11 @@
 # Blue Team Key Documents
 
-- Organiztion Chart
+- Organisation Chart
 - Network Diagrams
 - Data Flow Diagrams
 - Critical Asset, Data and Services List
 - Rules of Engagement (ROE) Limitations and Boundaries
-- Incideent Response Plan
+- Incident Response Plan
 - Business Continuity Plan
 - Disaster Recovery Plan
 - Required Notification Guidance

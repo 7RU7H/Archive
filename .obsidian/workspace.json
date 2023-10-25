@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md",
+                "file": "Web-Application-Hacking/Web-Exploits/SQLi/SQL-Injection.md",
                 "mode": "source",
                 "source": false
               }
@@ -82,7 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 278.5
+    "width": 200
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md",
+                "file": "Web-Application-Hacking/Web-Exploits/SQLi/SQL-Injection.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md",
+                "file": "Web-Application-Hacking/Web-Exploits/SQLi/SQL-Injection.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md"
+                "file": "Web-Application-Hacking/Web-Exploits/SQLi/SQL-Injection.md"
               }
             }
           },
@@ -171,32 +171,32 @@
   },
   "active": "03c4e5725d38bd70",
   "lastOpenFiles": [
-    "Web-Application-Hacking/Web-Exploits/SSRF/Server-Side-Request-Forgery.md",
     "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md",
+    "Web-Application-Hacking/Web-Exploits/SQLi/SQL-Injection.md",
+    "Web-Application-Hacking/Web-Exploits/SQLi/TALK-SQL-Injection-Beyond-Strict-Filter-Union-Without-Comma-And-Automating-Boolean-SQL-Injection-and-Evading-Filters.md",
+    "Alternate-Resources.md",
+    "README.md",
+    "Security-Disciplines/Blue-Team/Attack-Surface-Reduction.md",
+    "Security-Disciplines/Blue-Team/Blue-Team-Key-Documents.md",
+    "Security-Disciplines/Blue-Team/Detection-Engineering.md",
+    "Security-Disciplines/Blue-Team/Defense-In-Depth.md",
+    "Security-Disciplines/Blue-Team/Ransomware-Encrypted-File-Extensions-List.md",
+    "Security-Disciplines/Blue-Team/Security-Engineer-Role.md",
+    "Security-Disciplines/Blue-Team/Windows-Blueteam.md",
+    "Security-Disciplines/Blue-Team/Tactical-Detection.md",
+    "Security-Disciplines/Attribution-And-Analysis/TALK-Researched-Adversaries.md",
+    "Brain-Hacking/Actions/Improve-Your-Learning.md",
+    "Brain-Hacking/Actions/Learning-To-Hack.md",
+    "Brain-Hacking/Actions/Learning-To-Continue-Learning-Better.md",
+    "Brain-Hacking/Actions/Exercise.md",
+    "Brain-Hacking/Actions/Good-Acronyms-And-Phrases.md",
+    "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
+    "Web-Application-Hacking/Web-Exploits/SSRF/Server-Side-Request-Forgery.md",
     "Tools/C2/Sliver/Sliver-Cheatsheet.md",
     "Security-Disciplines/Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Blue-KOTH-Battlegrounds-Cheatsheet-Windows.md",
     "Security-Disciplines/Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Blue-KOTH-Battlegrounds-Cheatsheet-Linux.md",
     "Security-Disciplines/Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Red-KOTH-Battlegrounds-Cheatsheet-Windows.md",
     "Security-Disciplines/Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Red-KOTH-Battlegrounds-Cheatsheet-Linux.md",
-    "Security-Disciplines/Cyberwarfare/Practice/Default-Toolkit-Inventory.md",
-    "Security-Disciplines/Cyberwarfare/Practice/HTB-Battlegrounds.md",
-    "Security-Disciplines/Cyberwarfare/Practice/THM-King-Of-The-Hill.md",
-    "Tools/Shells/Socat.md",
-    "Persistence/Windows-Persistence/Windows-Persistence-Tampering-with-Unprivileged-Accounts.md",
-    "Post-Exploitation/Networking/Port-Redirection-And-Tunnelling.md",
-    "Post-Exploitation/Networking/Pivoting-Tunnelling-And-Redirection-Master-Class-Darnell-And-Thurner-Notes.md",
-    "Tools/Authentication-Attacking/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
-    "Tools/Wordlists/Generating-Usernames-And-Emails.md",
-    "Reconnaissance/Active-Information-Gathering/SMTP/SMTP-Recon-Cheatsheet.md",
-    "Reconnaissance/Email-Harvesting.md",
-    "Reconnaissance/Active-Information-Gathering/OS-Detection/OS-Detection.md",
-    "Tools/Wordlists/Wordlists.md",
-    "Tools/Wordlists/Wordlist-Considerations.md",
-    "Tools/Wordlists/Wordlist-Tools/Cewl-Cheatsheet.md",
-    "Reconnaissance/OSINT/OSINT-People.md",
-    "Tools/Authentication-Attacking/Bruteforce-Login-Tools/Brutespray-Cheatsheet.md",
-    "Tools/Authentication-Attacking/Bruteforce-Login-Tools/Crowbar-CheatSheat.md",
-    "Tools/Authentication-Attacking/Bruteforce-Login-Tools/Medusa-Cheatsheet.md",
     "Development/Languages/Untitled",
     "Web-Application-Hacking/Web-Exploits",
     "Web-Application-Hacking/HTTP",

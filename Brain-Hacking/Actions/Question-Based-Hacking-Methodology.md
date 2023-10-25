@@ -179,6 +179,7 @@ What is network level purpose of connections
 		- Is the data returned a Boolean directly or indirectly?
 			- Are Headers used in the back to store SQL data?
 				- PHP: `X-Forward-For: 10.10.10.0.` to log IP addresses
+	- What are the bad characters have you fuzzed them?
 	- Identified application using an SQL query? - beware the non-linear branching
 		- Concatenate (Version, SQL Language and business logic of Application language specifics) - what does this entail?
 		- Hypotheses and test (if no source code) how application makes an SQL query or multiple queries 

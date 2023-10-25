@@ -173,7 +173,7 @@ The API life cycle should include:
 
 #### Injection
 
-Where injection attacks can occur through API queries. See [[SQLInjection]], [[Command-Injection-Cheatsheet]], etc.
+Where injection attacks can occur through API queries. See [[SQL-Injection]], [[Command-Injection-Cheatsheet]], etc.
 
 Hunt for:
 - Unfiltered, unvalidated or unsanitized client-supplied data

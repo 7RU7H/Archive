@@ -10,11 +10,11 @@ Adaptive PenTesting - modern version of Pentesting covered here, thinking like a
 
 5% of Global Organisations can handle the capabilities of Red Teams.
 
-Major Progress in Red and Blue visibilty, understanding and collaboration; not wanting the Offensive Security side to not return the shadows.
+Major Progress in Red and Blue visibility, understanding and collaboration; not wanting the Offensive Security side to not return the shadows.
 
 I know I will alert, can I craft narrative reason with actions as to stop the SOC analyst raising the alert level to a higher level. 
 
-Use Big Powershell Script, write a comment stating it was written and forged signed by one of the organisation's legitamte Powershell users the SOC is going to consider it a false positive.
+Use Big PowerShell Script, write a comment stating it was written and forged signed by one of the organisation's legitamte Powershell users the SOC is going to consider it a false positive.
 
 ## Research Adversary
 
