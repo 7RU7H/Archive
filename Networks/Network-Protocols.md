@@ -336,7 +336,7 @@ See [[Evil-winrm-Cheatsheet]]
 
 ## 6379 - Redis
 
-Seee for Redis-cli a client for Redis database locally: [[Redis-cli-Cheatsheet]]
+Seee for Redis-cli a client for Redis database locally: [[Redis]]
 
 ## 7680 - Pando-pub
 Legacy application [Pando](https://en.wikipedia.org/wiki/Pando_(application)) BitTorrent client and uses the BitTorrent protocol to transfer files.

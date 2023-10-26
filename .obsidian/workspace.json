@@ -30,9 +30,33 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "63157988cd5afe98",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Web-Application-Hacking/Web-Exploits/SSRF/Server-Side-Request-Forgery.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e2b5d4ca84892239",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Services/Databases/Redis/Redis.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Web-Application-Hacking/Web-Exploits/SQLi/SQL-Injection.md",
+                "file": "Web-Application-Hacking/Web-Exploits/SSRF/Server-Side-Request-Forgery.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Web-Application-Hacking/Web-Exploits/SQLi/SQL-Injection.md",
+                "file": "Web-Application-Hacking/Web-Exploits/SSRF/Server-Side-Request-Forgery.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Web-Application-Hacking/Web-Exploits/SQLi/SQL-Injection.md"
+                "file": "Web-Application-Hacking/Web-Exploits/SSRF/Server-Side-Request-Forgery.md"
               }
             }
           },
@@ -169,10 +193,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "03c4e5725d38bd70",
+  "active": "63157988cd5afe98",
   "lastOpenFiles": [
-    "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md",
+    "Services/Databases/Redis/Redis.md",
+    "Web-Application-Hacking/Web-Exploits/SSRF/Server-Side-Request-Forgery.md",
     "Web-Application-Hacking/Web-Exploits/SQLi/SQL-Injection.md",
+    "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md",
     "Web-Application-Hacking/Web-Exploits/SQLi/TALK-SQL-Injection-Beyond-Strict-Filter-Union-Without-Comma-And-Automating-Boolean-SQL-Injection-and-Evading-Filters.md",
     "Alternate-Resources.md",
     "README.md",
@@ -191,12 +217,10 @@
     "Brain-Hacking/Actions/Exercise.md",
     "Brain-Hacking/Actions/Good-Acronyms-And-Phrases.md",
     "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
-    "Web-Application-Hacking/Web-Exploits/SSRF/Server-Side-Request-Forgery.md",
     "Tools/C2/Sliver/Sliver-Cheatsheet.md",
     "Security-Disciplines/Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Blue-KOTH-Battlegrounds-Cheatsheet-Windows.md",
     "Security-Disciplines/Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Blue-KOTH-Battlegrounds-Cheatsheet-Linux.md",
     "Security-Disciplines/Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Red-KOTH-Battlegrounds-Cheatsheet-Windows.md",
-    "Security-Disciplines/Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Red-KOTH-Battlegrounds-Cheatsheet-Linux.md",
     "Development/Languages/Untitled",
     "Web-Application-Hacking/Web-Exploits",
     "Web-Application-Hacking/HTTP",
