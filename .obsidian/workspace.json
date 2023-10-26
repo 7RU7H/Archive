@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Web-Application-Hacking/Web-Exploits/SQLi/SQL-Injection.md",
+                "file": "Services/Databases/MYSQL/MySQL-Hacking.md",
                 "mode": "source",
                 "source": false
               }
@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Services/Databases/Redis/Redis.md",
+                "file": "Services/Databases/MYSQL/MySQL-SQL-Injection-Cheatsheet.md",
                 "mode": "source",
                 "source": false
               }
@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
+                "file": "Services/Databases/MYSQL/MySQL-Hacking.md",
                 "mode": "source",
                 "source": false
               }
@@ -118,7 +118,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 305.5110321044922
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Services/Databases/Redis/Redis.md",
+                "file": "Services/Databases/MYSQL/MySQL-SQL-Injection-Cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Services/Databases/Redis/Redis.md",
+                "file": "Services/Databases/MYSQL/MySQL-SQL-Injection-Cheatsheet.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Services/Databases/Redis/Redis.md"
+                "file": "Services/Databases/MYSQL/MySQL-SQL-Injection-Cheatsheet.md"
               }
             }
           },
@@ -207,14 +207,17 @@
   },
   "active": "e2b5d4ca84892239",
   "lastOpenFiles": [
+    "Services/Databases/MYSQL/MySQL-Hacking.md",
+    "Services/Databases/MYSQL/MySQL-SQL-Injection-Cheatsheet.md",
     "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
+    "Services/Databases/MYSQL/MySQL-Cheatsheet.md",
     "Services/Databases/Redis/Redis.md",
+    "Web-Application-Hacking/Web-Exploits/SQLi/SQL-Injection.md",
     "Development/APIs/API-Hacking.md",
     "Web-Application-Hacking/CMS/Wordpress.md",
     "Brain-Hacking/Actions/Learning-To-Continue-Learning-Better.md",
     "Brain-Hacking/Actions/Learning-To-Hack.md",
     "Web-Application-Hacking/Web-Exploits/SSRF/Server-Side-Request-Forgery.md",
-    "Web-Application-Hacking/Web-Exploits/SQLi/SQL-Injection.md",
     "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md",
     "Web-Application-Hacking/Web-Exploits/SQLi/TALK-SQL-Injection-Beyond-Strict-Filter-Union-Without-Comma-And-Automating-Boolean-SQL-Injection-and-Evading-Filters.md",
     "Alternate-Resources.md",
@@ -230,9 +233,6 @@
     "Security-Disciplines/Attribution-And-Analysis/TALK-Researched-Adversaries.md",
     "Brain-Hacking/Actions/Improve-Your-Learning.md",
     "Brain-Hacking/Actions/Exercise.md",
-    "Brain-Hacking/Actions/Good-Acronyms-And-Phrases.md",
-    "Tools/C2/Sliver/Sliver-Cheatsheet.md",
-    "Security-Disciplines/Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Blue-KOTH-Battlegrounds-Cheatsheet-Windows.md",
     "Development/Languages/Untitled",
     "Web-Application-Hacking/Web-Exploits",
     "Web-Application-Hacking/HTTP",

