@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Web-Application-Hacking/Web-Exploits/SSRF/Server-Side-Request-Forgery.md",
+                "file": "Brain-Hacking/Actions/Learning-To-Continue-Learning-Better.md",
                 "mode": "source",
                 "source": false
               }
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Web-Application-Hacking/Web-Exploits/SSRF/Server-Side-Request-Forgery.md",
+                "file": "Brain-Hacking/Actions/Learning-To-Continue-Learning-Better.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Web-Application-Hacking/Web-Exploits/SSRF/Server-Side-Request-Forgery.md",
+                "file": "Brain-Hacking/Actions/Learning-To-Continue-Learning-Better.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Web-Application-Hacking/Web-Exploits/SSRF/Server-Side-Request-Forgery.md"
+                "file": "Brain-Hacking/Actions/Learning-To-Continue-Learning-Better.md"
               }
             }
           },
@@ -195,8 +195,9 @@
   },
   "active": "63157988cd5afe98",
   "lastOpenFiles": [
-    "Services/Databases/Redis/Redis.md",
+    "Brain-Hacking/Actions/Learning-To-Hack.md",
     "Web-Application-Hacking/Web-Exploits/SSRF/Server-Side-Request-Forgery.md",
+    "Services/Databases/Redis/Redis.md",
     "Web-Application-Hacking/Web-Exploits/SQLi/SQL-Injection.md",
     "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md",
     "Web-Application-Hacking/Web-Exploits/SQLi/TALK-SQL-Injection-Beyond-Strict-Filter-Union-Without-Comma-And-Automating-Boolean-SQL-Injection-and-Evading-Filters.md",
@@ -212,7 +213,6 @@
     "Security-Disciplines/Blue-Team/Tactical-Detection.md",
     "Security-Disciplines/Attribution-And-Analysis/TALK-Researched-Adversaries.md",
     "Brain-Hacking/Actions/Improve-Your-Learning.md",
-    "Brain-Hacking/Actions/Learning-To-Hack.md",
     "Brain-Hacking/Actions/Learning-To-Continue-Learning-Better.md",
     "Brain-Hacking/Actions/Exercise.md",
     "Brain-Hacking/Actions/Good-Acronyms-And-Phrases.md",
