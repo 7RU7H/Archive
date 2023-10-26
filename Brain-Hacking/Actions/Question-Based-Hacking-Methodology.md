@@ -131,7 +131,7 @@ What is network level purpose of connections
 			- Deserialization Attacks?
 		- Vulnerable webserver version?
 		- Webserver generic issues by type
-			-  [[Apache-Tomcat]]
+			- [[Apache-Tomcat]]
 		- Vulnerable versioning? 
 	- Have you caused and dorked ([[Search-Engine-Dorking]]) the error messages? 
 	- What request methods and can you get different results from changing them?
@@ -159,7 +159,7 @@ What is network level purpose of connections
 		- `ffuf -request search.req -request-proto http -w special-chars.txt -mc all` - which characters cause what issue that indicate what about the context? 
 		- What data returns from the testing the parameter?
 			- LFI? Can `include()` files from disk/memory
-			- Directory Traversal? Can you read disk/memory?
+			- Path Traversal? Can you read disk/memory?
 			- RFI? Can you get remote resources? - Internal && External
 			- SSRF? Can you request known resources - ports, files, webpages?
 			- XSS? Can you execute javascript scripting?
@@ -217,7 +217,7 @@ What is network level purpose of connections
 	- Adding a `/` in the middle of `filename.ext` to check characters
 
 - Web PrivEsc
-- Have you performed scanning or manual enumeration authenicated?
+- Have you performed scanning or manual enumeration authenticated?
 - How is authenicated user data reflected on the page?
 	- Framework? 
 	- Database?
@@ -241,9 +241,9 @@ Condense:
 	- RTFM and any reminders; reread the code?
 		- Checked the shebang on the python exploit? - Trolly python2 developers 
 	- Are there presuppositions that can be made before footholding a machine?
-		- Security - Network and Host - Traffic-typoplogy and AMSI or Shell jails?  
+		- Security - Network and Host - Traffic-typology and AMSI or Shell jails?  
 		- OS?
-	- Have you checked listeners, agents, tooling for your operatational errors? 
+	- Have you checked listeners, agents, tooling for your operational errors? 
 	- How does the application-to-gain-entry handle double and single quotes?
 	- Have you followed the principle that *"Two is one and one is none"*?
 

