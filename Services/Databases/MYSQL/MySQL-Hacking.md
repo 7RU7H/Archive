@@ -33,7 +33,6 @@ The basic methodology for exploiting MySQL:
 -   Execute and obtain RCE on the host.
 
 Either 
-
 ```sql
 CREATE TABLE users(
 id INT AUTO_INCREMENT,
