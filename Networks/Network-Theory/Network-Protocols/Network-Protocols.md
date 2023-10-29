@@ -2,43 +2,10 @@
 
 ## 20 & 21 - FTP
 
-File transfer protocol, client-server model
-- Control Connection - connection request - Port 21 for commands 
-- Data Connection - post authenication, used for transferring data -  Port 20 for data
-- Varienty of  clients: Telnet, Filezilla (Common IoC),  CuteFTP
-```bash
-wget -r ftp://[username]:[password]@[ip]/
-ftp ip
-# Active mode is used by client and server to negoiate authenication
--n 	prevent autologon
--v 	verbose server output
-
-USER username
-PASS password
-SYST	# system		system info
-PASV	# passive		enter passive mode - this is first command that is sent after auth
-TYPE A	# type ascii	enter ASCII mode
-ASCII   # Will perform the same as the above 
-IMAGE   # Binary mode 
-EBCDIC  # for EBCDIC character set
-STAT	# status		give server status
-LOCAL   # "Type L n" for machines that do not support 8-bit bytes transfer - n is byte size
-
-# If (up/down)loading files that are binaries!
-binary # prepare server for binary mode transfer
-get x.exe
-
-ls -la		list directory, sometimes ls DOES NOT WORK
-get file
-put file	upload files!
-```
-
+File transfer protocol, client-server model - visit [[FTP]]
 
 ## 22 - SSH & SFTP - Submodule of ssh
-Default port 22 - Secure File transfer protocol 
-[[SSH-Cheatsheet]]
-
-
+Default port 22 - Secure File transfer protocol - [[SSH-Cheatsheet]]
 
 ## 23 - TELNET
 
@@ -77,7 +44,7 @@ Microsoft Azure expands on DNS see [[Azure-Administration-Azure-DNS]]
 
 ## 69 UDP - TFTP
 
-Stands for trivial file transfer protocol - UDP FTP
+Stands for [trivial file transfer protocol](https://en.wikipedia.org/wiki/Trivial_File_Transfer_Protocol) - UDP FTP
 PXE Boot uses this Boot image retrieval/loading useful in [[Active-Directory-Footholding]]
 ```bash
 sudo apt install tftp
@@ -380,3 +347,4 @@ Erlang is a programming language designed around distributed computing and will 
 [iana](https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml)
 [speedguide](https://www.speedguide.net/port.php?)
 [Erlang-arce blogpost from Mubix](https://malicious.link/post/2018/erlang-arce/)
+[Wikipedia trivial file transfer protocol](https://en.wikipedia.org/wiki/Trivial_File_Transfer_Protocol)

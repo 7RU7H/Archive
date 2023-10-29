@@ -1,7 +1,6 @@
 # SNMP Cheatsheet
 
-Simple Network Management Protocol (SNMP) is based on UDP; stateless protocol making it to it is susceptible to IP spoofing and replay attacks. SNMP services misconfigurations lead to data leakages. It is meant to **manage** the network. SNMP protocols 1, 2, and 2c offer no traffic encryption and can be easily intercepted over a local network. For port information see [[Network-Protocols]].
-
+Simple Network Management Protocol ([[SNMP]]) is based on UDP; stateless protocol making it to it is susceptible to IP spoofing and replay attacks. SNMP services misconfigurations lead to data leakages. It is meant to **manage** the network. SNMP protocols 1, 2, and 2c offer no traffic encryption and can be easily intercepted over a local network. For port information see [[Network-Protocols]].
 
 ## Version Considerations
 
@@ -70,3 +69,4 @@ cat snmpwalk-output | grep iso.3.6.1.2.1.4.34.1.3.2.16|cut -d "." -f 13-28 | cut
 or 
 cat -n snmpbulkoutput | grep "inetCidrRouteIfIndex.ipv6"
 ```
+

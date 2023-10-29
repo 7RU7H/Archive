@@ -48,18 +48,7 @@ rfkill block wifi
 rfkill block bluetooth
 ```
 
-## SSH Related
 
-[SSH](https://linuxhint.com/disable_root_ssh_debian/)
-
-Helpful connect unwanted ssh connections back to there machine lol. 
-```bash
-socat -d -d TCP-L:22,reuseaddr,fork SYSTEM:"nc \\$SOCAT_PEERADDR 22
-```
-
-SSH Keys 
-
-[ssh tarpit](https://github.com/skeeto/endlessh)
 
 ## Iptables
 
@@ -218,8 +207,63 @@ Sometimes it pays to think similarly to protercting a domain controller, which d
 - Disable Root/Administrator remote access
 	- In `/etc/ssh/sshd_config`
 	 - [Deny RDP or other protocols for Administrators Group](https://learn.microsoft.com/en-us/troubleshoot/windows-server/remote/deny-user-permissions-to-logon-to-rd-session-host)
-- Use RSA keys for ssh, see [[SSH-Cheatsheet]] - `ssh-keygen -t rsa` 
+- Use RSA keys for `ssh`, see [[SSH-Cheatsheet]] - `ssh-keygen -t rsa` 
 - Use [[Cryptography]] - `openssl` for key generation 
+- Databases
+	- Run as specific user and not root
+	- Run on 127.0.0.1 not 0.0.0.0
+
+#### SSH Related
+
+[SSH](https://linuxhint.com/disable_root_ssh_debian/)
+
+Helpful connect unwanted ssh connections back to there machine lol. 
+```bash
+socat -d -d TCP-L:22,reuseaddr,fork SYSTEM:"nc \\$SOCAT_PEERADDR 22
+```
+
+SSH Keys 
+
+[ssh tarpit](https://github.com/skeeto/endlessh)
+
+Weak ciphers,kex,MACS? Check with:
+```bash
+sshd -T | grep “\(ciphers\|macs\|kexalgorithms\)”
+```
+
+[Disable SSH weak MAC Algorithms ](https://www.dbappweb.com/2021/07/14/disable-ssh-weak-mac-algorithms-in-linux/)
+```bash
+vim /etc/ssh/sshd_config
+# Remove MAC that disagree with your disposition
+# Restart ssh either by:
+service sshd restart
+systemctl restart sshd 
+# Check the list of MACs
+sshd -T |grep macs
+```
+
+[Disable weak SSH ciphers](https://bobcares.com/blog/how-to-disable-weak-ssh-ciphers-in-linux/) - Client and Server side!
+```bash
+vim /etc/ssh/sshd_config
+# Remove Ciphers that disagree with your disposition
+# Restart ssh either by:
+service sshd restart
+systemctl restart sshd 
+# Check the list of MACs
+sshd -T |grep ciphers
+```
+
+Do the same for `kexalgorithms` too!
+```bash
+vim /etc/ssh/sshd_config
+# Remove kexalgorithms that disagree with your disposition
+# Restart ssh either by:
+service sshd restart
+systemctl restart sshd 
+# Check the list of MACs
+sshd -T |grep kexalgorithms
+```
+
 
 ## Sudo / Doas
 

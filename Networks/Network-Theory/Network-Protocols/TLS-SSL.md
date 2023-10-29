@@ -13,8 +13,13 @@ Client <-> Ready Messages ("finished" message) <-> Server
 Client <-> Encrypted Sessions <-> Server
 ```
 
+
+## Hardening 
+
+[Diffie-Hellman TLS exist get rid of it check this link](https://weakdh.org/sysadmin.html)
+
 ## References
 
 [THM Network Security Protocols](https://tryhackme.com/room/networksecurityprotocols)
 [Secure Socket Shell](https://en.wikipedia.org/wiki/Transport_Layer_Security#SSL_1.0,_2.0,_and_3.0)
-[Transport Layer Security](https://en.wikipedia.org/wiki/Transport_Layer_Security)
+[Transport Layer Security](https://en.wikipedia.org/wiki/Transport_Layer_Security)[# Guide to Deploying Diffie-Hellman for TLS](https://weakdh.org/sysadmin.html)

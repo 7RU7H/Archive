@@ -12,8 +12,9 @@ whoami
 
 # Adding Users
 useradd
-
 useradd -u usergroup -g groupid -p cheese -s /bin/$shell -m /$username
+# Deleting users
+deluser $username
 
 # Modifying Users
 usermod
@@ -24,6 +25,9 @@ getent group sudo
 # Beware editing the sudoer file
 # Don't have no passwords, just don't - sudo + password are also a way of prevent you from just ruining your filesystem - you have to stop and enter a password before an action
 visudo 
+# For specific command without a password for sudo for a user
+$username ALL=NOPASSWD:/$path/$to/$bin
+
 
 # Passwords
 # Edit the /etc/passwd file, will prompt for nano, vim-* so

