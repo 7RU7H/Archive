@@ -42,6 +42,31 @@ snmpwalk -c public -v1 -t 5 $IP $mib_values
 # Translate hex with -Oa 
 snmpwalk -c public -v1 -t 10 -Oa $IP | tee -a SNMPwalk-Oa
 
+# Windows User Accounts
+snmpwalk -c public -v1 $TARGET 1.3.6.1.4.1.77.1.2.25
+
+# Windows Running Programs
+snmpwalk -c public -v1 $TARGET 1.3.6.1.2.1.25.4.2.1.2
+
+# Windows Hostname
+snmpwalk -c public -v1 $TARGET .1.3.6.1.2.1.1.5
+
+# Windows Share Information
+snmpwalk -c public -v1 $TARGET 1.3.6.1.4.1.77.1.2.3.1.1
+
+# Windows Share Information
+snmpwalk -c public -v1 $TARGET 1.3.6.1.4.1.77.1.2.27
+
+# Windows TCP Ports
+snmpwalk -c public -v1 $TARGET4 1.3.6.1.2.1.6.13.1.3
+
+# Software Name
+snmpwalk -c public -v1 $TARGET 1.3.6.1.2.1.25.6.3.1.2
+
+# brute-force community strings
+onesixtyone -i snmp-ips.txt -c community.txt
+
+snmp-check $TARGET
 ```
 
 ## Ippsec's SNMP Recon Approach
@@ -55,7 +80,7 @@ mibs :
 snmpbulkwalk -c public -v2c $IP .
 ```
 
-Snmpenum tool may not catch any weirdness.
+`snmpenum` tool may not catch any weirdness.
 
 ## Get an IPv6 Address from MIBs
 [[IPv6-Defined]] to understand IPv6
@@ -70,3 +95,7 @@ or
 cat -n snmpbulkoutput | grep "inetCidrRouteIfIndex.ipv6"
 ```
 
+## References
+
+[iredteam](https://www.ired.team/offensive-security-experiments/offensive-security-cheetsheets)
+[[IPv6-Defined]] 
