@@ -12,6 +12,10 @@ $file.war
 unzip $file.war    
 ```
 
+#### JVM - Java Virtual Machines
+
+[Wikipedia](https://en.wikipedia.org/wiki/Java_virtual_machine) A **Java virtual machine** (**JVM**) is a [virtual machine](https://en.wikipedia.org/wiki/Virtual_machine "Virtual machine") that enables a computer to run [Java](https://en.wikipedia.org/wiki/Java_(software_platform) "Java (software platform)") programs as well as programs written in [other languages](https://en.wikipedia.org/wiki/List_of_JVM_languages "List of JVM languages") that are also compiled to [Java bytecode](https://en.wikipedia.org/wiki/Java_bytecode "Java bytecode").
+
 #### Virtual Environment
 
 [Java Virtual Environment Jenv](https://medium.com/@bhagavathidhass/virtual-environments-for-python-ruby-and-java-87743478ae38):
@@ -38,3 +42,4 @@ p.waitFor()
 ## References
 
 [Java Virtual Environment Jenv](https://medium.com/@bhagavathidhass/virtual-environments-for-python-ruby-and-java-87743478ae38)
+[Wikipedia - JVMs](https://en.wikipedia.org/wiki/Java_virtual_machine) 

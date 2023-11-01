@@ -25,26 +25,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Web-Application-Hacking/Web-Exploits/SQLi/SQL-Injection.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e2b5d4ca84892239",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Reconnaissance/Active-Information-Gathering/SNMP/SNMP-Recon-Cheatsheet.md",
+                "file": "Web-Application-Hacking/PHP-Filters.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -73,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "SNMP",
+                "query": "curl",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -94,7 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 337.5
+    "width": 494.5
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -110,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Reconnaissance/Active-Information-Gathering/SNMP/SNMP-Recon-Cheatsheet.md",
+                "file": "Web-Application-Hacking/PHP-Filters.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Reconnaissance/Active-Information-Gathering/SNMP/SNMP-Recon-Cheatsheet.md",
+                "file": "Web-Application-Hacking/PHP-Filters.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Reconnaissance/Active-Information-Gathering/SNMP/SNMP-Recon-Cheatsheet.md"
+                "file": "Web-Application-Hacking/PHP-Filters.md"
               }
             }
           },
@@ -181,14 +169,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e2b5d4ca84892239",
+  "active": "03c4e5725d38bd70",
   "lastOpenFiles": [
-    "Software/File-Typology/Logs/Logs.md",
+    "Development/Languages/Java/Java.md",
+    "Software/Operating-Systems/Linux/Linux-Commands/Core-Linux-Commands.md",
+    "Software/Operating-Systems/Linux/Linux-Commands/Linux-Compression-Commands.md",
+    "Security-Disciplines/Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Red-KOTH-Battlegrounds-Cheatsheet-Linux.md",
+    "Web-Application-Hacking/PHP-Filters.md",
     "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
+    "Tools/Cross-OS/Curl-Cheatsheet.md",
+    "Software/File-Typology/Logs/Logs.md",
+    "Reconnaissance/Active-Information-Gathering/SNMP/SNMP-Recon-Cheatsheet.md",
     "Software/File-Typology/DS-Store-Files.md",
     "Web-Application-Hacking/Web-Exploits/Path-Traversal/Path-Traversal.md",
     "Web-Application-Hacking/Web-Exploits/File-Inclusion/File-Inclusion.md",
-    "Web-Application-Hacking/PHP-Filters.md",
     "Services/Databases/Redis/Redis.md",
     "Development/Regular-Expressions.md",
     "Networks/Network-Theory/Network-Protocols/SNMP.md",
@@ -196,8 +190,6 @@
     "Securing-Networks-And-Systems/Hardening/Linux-Hardening.md",
     "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Enumeration-Cheatsheet.md",
     "Reconnaissance/Active-Information-Gathering/Active-Recon.md",
-    "Reconnaissance/Active-Information-Gathering/SNMP/SNMP-Recon-Cheatsheet.md",
-    "Software/Operating-Systems/Linux/Linux-Commands/Linux-Compression-Commands.md",
     "Software/Operating-Systems/Linux/Linux-Commands/Linux-Users-And-Group-Commands.md",
     "Software/Operating-Systems/Windows/Active-Directory/Active-Directory-Authentication.md",
     "Networks/Network-Theory/Network-Protocols/Internet-Protocol.md",
@@ -206,10 +198,6 @@
     "Networks/Network-Theory/Network-Protocols/FTP.md",
     "Networks/Network-Theory/Network-Protocols/TLS-SSL.md",
     "Networks/Network-Theory/Network-Protocols/Application-Protocols/Application-Protocols.md",
-    "Services/Webservers/Nginx.md",
-    "Services/Webservers/Apache/Apache-Tomcat/Apache-Tomcat.md",
-    "Services/Databases/Postgres/PostgreSQL.md",
-    "Development/Languages/Python/Useful_Python.md",
     "Development/Languages/Untitled",
     "Web-Application-Hacking/Web-Exploits",
     "Web-Application-Hacking/HTTP",

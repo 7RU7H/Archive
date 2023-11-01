@@ -274,6 +274,12 @@ who		# logged in
 w       #
 ```
 
+Linux File ACLs and Attributes - 
+```bash
+getfacls
+chattr
+lsattr
+```
 
 ## References
 

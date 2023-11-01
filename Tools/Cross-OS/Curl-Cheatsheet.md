@@ -88,7 +88,7 @@ curl -X GET http://url/endpoint
 # -H, --header <header/@file> pass custom header(s) to server
 # same as --HEAD 
 # example:
-curl -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36' http://url/endpoing
+curl -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36' http://url/endpoint
 
 # HTTP POST data
 # POST variables can be set using the -d (--data) parameter.  

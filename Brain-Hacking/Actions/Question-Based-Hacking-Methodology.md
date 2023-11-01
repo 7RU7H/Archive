@@ -77,6 +77,14 @@ What is network level purpose of connections
 		- Note file per stage - per Phase and Protocol, etc 
 
 
+#### Are you stuck, tried *everything* and need to try harder?
+
+For exploits, troubleshooting and general problem solving:
+- If something should actually work and is not, why is not actually working? - it might not be a rabbit hole consider
+	- What components of the problem can you identify?
+	- What could actually be there but I have not identified and that is why it is probably not working as intended?
+	- What is the linear order of action, events, operations and how could *reasonable* hypothetical ghost components affect why something is not working?
+
 #### Questions
 
 - Are the people on the network [[OSINT]]able?
