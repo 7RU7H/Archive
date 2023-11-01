@@ -1,8 +1,8 @@
 # Redis
 ## Introduction to Redis
-Key value pair database
 
-(nil) mean does not exist
+- Key value pair database
+- (nil) mean does not exist
 
 ## Connecting
 ```bash

@@ -12,7 +12,11 @@ engrampa $file
 tar xvf $file.tar
 tar xf $file.tar.gz
 gzip -x $file.gz
-7z e $file.7z
+# 7z 
+7z e $file.7z # Extract
+7z x $file.7z # Extract a file with full paths
+
+# rar
 # Sometimes a .rar file fails to be unrared with e flag 
 unrar e $file.rar
 ```
@@ -29,6 +33,10 @@ for i in $(ls -1 | grep '.7z'); do 7z x $ip; wait; done
 ## Compression
 
 7z add to an archive
+```bash
+7z a archive.7z $toArchiveDir
 ```
-7z a 
-```
+
+## References
+
+[Github - cheat 7z](https://github.com/cheat/cheatsheets/blob/master/7z)

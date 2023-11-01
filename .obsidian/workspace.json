@@ -13,26 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Web-Application-Hacking/Web-Exploits/Path-Traversal/Path-Traversal.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "03c4e5725d38bd70",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Web-Application-Hacking/PHP-Filters.md",
+                "file": "Services/Databases/Redis/Redis.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -61,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "curl",
+                "query": "Redis",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -78,7 +65,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -98,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Web-Application-Hacking/PHP-Filters.md",
+                "file": "Services/Databases/Redis/Redis.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Web-Application-Hacking/PHP-Filters.md",
+                "file": "Services/Databases/Redis/Redis.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Web-Application-Hacking/PHP-Filters.md"
+                "file": "Services/Databases/Redis/Redis.md"
               }
             }
           },
@@ -169,19 +157,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "03c4e5725d38bd70",
+  "active": "ed9ebcbd807f923e",
   "lastOpenFiles": [
+    "Services/Databases/Database-Hacking.md",
+    "Software/Operating-Systems/Linux/Linux-Commands/Linux-Compression-Commands.md",
+    "Web-Application-Hacking/Web-Exploits/Path-Traversal/Path-Traversal.md",
+    "Web-Application-Hacking/PHP-Filters.md",
     "Development/Languages/Java/Java.md",
     "Software/Operating-Systems/Linux/Linux-Commands/Core-Linux-Commands.md",
-    "Software/Operating-Systems/Linux/Linux-Commands/Linux-Compression-Commands.md",
     "Security-Disciplines/Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Red-KOTH-Battlegrounds-Cheatsheet-Linux.md",
-    "Web-Application-Hacking/PHP-Filters.md",
     "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
     "Tools/Cross-OS/Curl-Cheatsheet.md",
     "Software/File-Typology/Logs/Logs.md",
     "Reconnaissance/Active-Information-Gathering/SNMP/SNMP-Recon-Cheatsheet.md",
     "Software/File-Typology/DS-Store-Files.md",
-    "Web-Application-Hacking/Web-Exploits/Path-Traversal/Path-Traversal.md",
     "Web-Application-Hacking/Web-Exploits/File-Inclusion/File-Inclusion.md",
     "Services/Databases/Redis/Redis.md",
     "Development/Regular-Expressions.md",
@@ -197,7 +186,6 @@
     "Networks/Network-Theory/Network-Protocols/Network-Protocols.md",
     "Networks/Network-Theory/Network-Protocols/FTP.md",
     "Networks/Network-Theory/Network-Protocols/TLS-SSL.md",
-    "Networks/Network-Theory/Network-Protocols/Application-Protocols/Application-Protocols.md",
     "Development/Languages/Untitled",
     "Web-Application-Hacking/Web-Exploits",
     "Web-Application-Hacking/HTTP",
