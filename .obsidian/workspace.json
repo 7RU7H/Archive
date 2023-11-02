@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Security-Disciplines/OPSEC-101.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Security-Disciplines/OPSEC-101.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Security-Disciplines/OPSEC-101.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Security-Disciplines/OPSEC-101.md"
+                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md"
               }
             }
           },
@@ -171,9 +171,9 @@
   },
   "active": "5fe4a76718b1b7b5",
   "lastOpenFiles": [
+    "Security-Disciplines/OPSEC-101.md",
     "Security-Disciplines/Red-Team/Red-Team-Theory/Red-Team-OPSEC.md",
     "Web-Application-Hacking/Web-App-Bug-Hunting.md",
-    "Security-Disciplines/OPSEC-101.md",
     "Tools/Useful-Online-Software/Code-Online.md",
     "Services/Webservers/Apache/Apache-Tomcat/Apache-Tomcat.md",
     "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
