@@ -11,7 +11,7 @@ Administrator portal can host files
 
 nginx - tomcat observe url parsing `/..;/`
 
-
+Fuzzing tomcat `////Admin` or `;/Admin`
 #### Ghostcat
 
 Upload should not necessarily require username and password

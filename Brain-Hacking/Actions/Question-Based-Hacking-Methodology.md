@@ -118,7 +118,11 @@ For exploits, troubleshooting and general problem solving:
 		- What do common extractions with CLI tools suggest about this ports use? -  `curl`, `telnet`, `nc`
 
 - Web
-	- Have you pressed `[CTRL + F12]` yet? - Browser `Inspect` does not show HTML encoded characters
+	- Is recon in the background and you manually hacking in the foreground?
+		- Are contextualising you content discovery bruteforce; understand the asset pick a contextually specific wordlist per stack?
+		- Have walked through the applicataion as a ordinary user?
+		- Have you pressed `[CTRL + F12]` yet? - Browser `Inspect` does not show HTML encoded characters
+		- Is it at static web page check extension that make pages dynamix index.html -> index.php,etc
 	- Does the site provide text to scrap into wordlist?
 	- Virtual hosting? 
 		- Fuzzable - rate limits?

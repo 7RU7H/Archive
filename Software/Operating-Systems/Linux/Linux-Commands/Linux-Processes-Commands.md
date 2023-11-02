@@ -22,10 +22,10 @@ bg | ctrl+z
 
 kill -9 processnumber # sigkill
 
-fg|bg %number = job number
-fg|bg %string = beginning of the suspended command's name
-fg|bg %+ OR %% = current job
-fg|bg %- = previous job
+fg|bg %number # job number
+fg|bg %string # beginning of the suspended command's name
+fg|bg %+ # OR %% current job
+fg|bg %- # previous job
 
 ```
 

@@ -7,4 +7,6 @@ lspci # list pci devices
 lsusb # list usb devices
 lspcmcia # list PCMCIA cards - apt install pcmciautils
 lsdev # procinfo package list communication resources used by devices
+lsblk # list block devices
+lsusb # list usb devices
 ```
