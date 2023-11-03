@@ -2,7 +2,6 @@
 For grep-related see [[Grep-All-The-Things]] and for other modules like `awk`, `sed` and `xargs` see [[Linux-Module-Commands]]. All network related commands current and legacy can be found here: [[Linux-Networking-Commands]]. For User and group related see [[Linux-Users-And-Group-Commands]]. For [[Systemctl]] related or for [[Linux-Maintaince-And-Troubleshooting-Commands]]. [[Linux-Memory-Commands]], [[Linux-Hardware-Commands]]
 
 ```bash
-
 apropos $string 		# search by keyword manual descript
 
 (sha1,sha256,sha512,md5)sum 
@@ -13,14 +12,16 @@ sha512sum -c tests.sha512		check batch
 base64 file.txt  			encode to base64
 base64 file.txt | base64 --decode	decode base64
 echo -n "string" | base64 -d
-
-cat 		read file to stdout
-cat -n		Number output lines
-cat -b		Number nonemtpy lines
-cat -v		Show nonprinting characters as ^x or M-x
-cat -t		.. and tabs as ^I
-cat -e		...and end lines with $
-cat -A		same -vte
+```
+## `cat`
+```bash
+cat 		# read file to stdout
+cat -n		# Number output lines
+cat -b		# Number non-empty lines
+cat -v		# Show nonprinting characters as ^x or M-x
+cat -t		# .. and tabs as ^I
+cat -e		# ...and end lines with $
+cat -A		# same -vte
 
 cd 	change directory 
 cd .. 	goto the parent of the current directory
@@ -149,6 +150,7 @@ getcap -r / 2>/dev/null
 ## `head`
 ```bash
 head		# print the first 10 lines of a file to stdout
+head -n $int # print $int number of the lines from the "head" of the file
 ```
 
 # `iconv`

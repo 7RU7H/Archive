@@ -25,14 +25,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+                "file": "Services/Databases/MYSQL/MySQL-Cheatsheet.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7521d635e4ea1f7d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Software/Operating-Systems/Linux/Linux-Commands/Core-Linux-Commands.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -61,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "OPSEC",
+                "query": "-commands",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+                "file": "Software/Operating-Systems/Linux/Linux-Commands/Core-Linux-Commands.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+                "file": "Software/Operating-Systems/Linux/Linux-Commands/Core-Linux-Commands.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md"
+                "file": "Software/Operating-Systems/Linux/Linux-Commands/Core-Linux-Commands.md"
               }
             }
           },
@@ -169,15 +181,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5fe4a76718b1b7b5",
+  "active": "7521d635e4ea1f7d",
   "lastOpenFiles": [
+    "Services/Databases/MYSQL/MySQL-Cheatsheet.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
     "Security-Disciplines/OPSEC-101.md",
     "Security-Disciplines/Red-Team/Red-Team-Theory/Red-Team-OPSEC.md",
     "Web-Application-Hacking/Web-App-Bug-Hunting.md",
     "Tools/Useful-Online-Software/Code-Online.md",
     "Services/Webservers/Apache/Apache-Tomcat/Apache-Tomcat.md",
     "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
     "Software/Operating-Systems/Linux/Linux-Commands/Core-Linux-Commands.md",
     "Software/Operating-Systems/Linux/Linux-Commands/Linux-Hardware-Commands.md",
     "Software/Operating-Systems/Linux/Linux-Commands/Linux-Processes-Commands.md",
@@ -197,7 +210,6 @@
     "Networks/Network-Theory/Network-Protocols/SNMP.md",
     "Software/File-Typology/Logs",
     "Securing-Networks-And-Systems/Hardening/Linux-Hardening.md",
-    "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Enumeration-Cheatsheet.md",
     "Development/Languages/Untitled",
     "Web-Application-Hacking/Web-Exploits",
     "Web-Application-Hacking/HTTP",
