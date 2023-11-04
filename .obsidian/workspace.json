@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Software/Operating-Systems/Linux/Linux-Commands/Core-Linux-Commands.md",
+                "file": "Software/File-Typology/Logs/Logs.md",
                 "mode": "source",
                 "source": false
               }
@@ -73,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "-commands",
+                "query": "Logs",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Software/Operating-Systems/Linux/Linux-Commands/Core-Linux-Commands.md",
+                "file": "Software/File-Typology/Logs/Logs.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Software/Operating-Systems/Linux/Linux-Commands/Core-Linux-Commands.md",
+                "file": "Software/File-Typology/Logs/Logs.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Software/Operating-Systems/Linux/Linux-Commands/Core-Linux-Commands.md"
+                "file": "Software/File-Typology/Logs/Logs.md"
               }
             }
           },
@@ -183,6 +183,11 @@
   },
   "active": "7521d635e4ea1f7d",
   "lastOpenFiles": [
+    "Software/Operating-Systems/Windows/Windows-Concepts/Windows-Events/ETW.md",
+    "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Backup-Resources/Azure-Administration-Azure-Monitor.md",
+    "Software/Operating-Systems/Linux/Linux-Commands/Linux-Compression-Commands.md",
+    "Development/APIs/API-Hacking.md",
+    "Software/Operating-Systems/Linux/Linux-Commands/Core-Linux-Commands.md",
     "Services/Databases/MYSQL/MySQL-Cheatsheet.md",
     "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
     "Security-Disciplines/OPSEC-101.md",
@@ -191,12 +196,10 @@
     "Tools/Useful-Online-Software/Code-Online.md",
     "Services/Webservers/Apache/Apache-Tomcat/Apache-Tomcat.md",
     "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
-    "Software/Operating-Systems/Linux/Linux-Commands/Core-Linux-Commands.md",
     "Software/Operating-Systems/Linux/Linux-Commands/Linux-Hardware-Commands.md",
     "Software/Operating-Systems/Linux/Linux-Commands/Linux-Processes-Commands.md",
     "Services/Databases/Redis/Redis.md",
     "Services/Databases/Database-Hacking.md",
-    "Software/Operating-Systems/Linux/Linux-Commands/Linux-Compression-Commands.md",
     "Web-Application-Hacking/Web-Exploits/Path-Traversal/Path-Traversal.md",
     "Web-Application-Hacking/PHP-Filters.md",
     "Development/Languages/Java/Java.md",
@@ -206,10 +209,7 @@
     "Reconnaissance/Active-Information-Gathering/SNMP/SNMP-Recon-Cheatsheet.md",
     "Software/File-Typology/DS-Store-Files.md",
     "Web-Application-Hacking/Web-Exploits/File-Inclusion/File-Inclusion.md",
-    "Development/Regular-Expressions.md",
-    "Networks/Network-Theory/Network-Protocols/SNMP.md",
     "Software/File-Typology/Logs",
-    "Securing-Networks-And-Systems/Hardening/Linux-Hardening.md",
     "Development/Languages/Untitled",
     "Web-Application-Hacking/Web-Exploits",
     "Web-Application-Hacking/HTTP",

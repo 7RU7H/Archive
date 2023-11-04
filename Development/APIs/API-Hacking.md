@@ -10,7 +10,7 @@ An Application Programming Interface is middleware that facilitates communicatio
 
 - Try put in an empty body of HTTP request JSON `{}`
 
-- Fuzzing endpoint3 extensions 
+- Fuzzing endpoint extensions 
 	- `php,asp,aspx,jsp,py,txt,conf,config,bak,backup,swp,old,db,sq` [@hakluke](https://twitter.com/hakluke/status/1221792235215151104)
 
 
@@ -53,7 +53,7 @@ Migitations:
 
 #### Broken User Authentication (BUA)
 
-Broken User Authentication (BUA) is incorrect implementation of authenication mechanism leading to the compromising of authentication tokens or temporary or permanent impersonation of user’s identities.
+Broken User Authentication (BUA) is incorrect implementation of authentication mechanism leading to the compromising of authentication tokens or temporary or permanent impersonation of user’s identities.
 
 Hunt for:
 - Can you: 

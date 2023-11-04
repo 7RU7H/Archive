@@ -2,6 +2,12 @@
 
 Logs are computer generated data that is recorded into a file in tabular structure and commonly have the file extension `.log`. The act of [Logging](https://en.wikipedia.org/wiki/Logging_(computing)): *logging is the act of keeping a [log](https://en.wiktionary.org/wiki/log#Etymology_2 "wikt:log") of [events](https://en.wikipedia.org/wiki/Event_(computing) "Event (computing)") that occur in a computer system, such as problems, errors or just information on current operations.* [THM Room - Intro to Logs](https://tryhackme.com/room/introtologs): *These records provide a detailed account of what a system has been doing, capturing a wide range of events such as user logins, file accesses, system errors, network connections, and changes to data or system configurations.*
 
+[THM Intro to Log analysis](https://tryhackme.com/room/introtologanalysis) states the importance of logs:
+- **System Troubleshooting**: Analyzing system errors and warning logs helps IT teams understand and quickly respond to system failures, minimizing downtime, and improving overall system reliability.
+- **Cyber Security Incidents:** In the security context, logs are crucial in detecting and responding to security incidents. Firewall logs, intrusion detection system (IDS) logs, and system authentication logs, for example, contain vital information about potential threats and suspicious activities. Performing log analysis helps SOC teams and Security Analysts identify and quickly respond to unauthorized access attempts, malware, data breaches, and other malicious activities.
+- **Threat Hunting:** On the proactive side, cyber security teams can use collected logs to actively search for advanced threats that may have evaded traditional security measures. Security Analysts and Threat Hunters can analyze logs to look for unusual patterns, anomalies, and indicators of compromise (IOCs) that might indicate the presence of a threat actor.
+- **Compliance:** Organizations must often maintain detailed records of their system's activities for regulatory and compliance purposes. Regular log analysis ensures that organizations can provide accurate reports and demonstrate compliance with regulations such as GDPR, HIPAA, or PCI DSS.
+
 [Crowdstrike's](https://www.crowdstrike.com/cybersecurity-101/observability/log-file/) Basic anatomy of a log file:
 - **The timestamp** – the exact time at which the event logged occurred
 - **User information**
@@ -14,6 +20,8 @@ Contextual Correlation is about understanding the situation and how events are c
 - **Who** is responsible?
 - **Were** their actions **successful**?
 - **What** was the result of their action?
+
+
 #### Relate Pages By Topic
 
 Linux related - [[Linux-Logging]]
@@ -134,3 +142,4 @@ Best Practices:
 [Syslog Protocol:](https://datatracker.ietf.org/doc/html/rfc5424)
 [OWASP Logging Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html)
 [Common Event Expression (CEE):](https://cee.mitre.org/)
+[THM Intro to Log analysis](https://tryhackme.com/room/introtologanalysis) 
