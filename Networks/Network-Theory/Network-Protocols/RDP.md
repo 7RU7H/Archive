@@ -1,5 +1,7 @@
 # Remote Desktop Protocol (RDP) 
 
+TCP 3389
+
 Beware - On Windows 11, [Network Level Authentication (NLA)](https://en.wikipedia.org/wiki/Network_Level_Authentication) is enabled by default for all RDP connections.
 
 ```bash
