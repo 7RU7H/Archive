@@ -129,8 +129,9 @@ For exploits, troubleshooting and general problem solving:
 		- Potential OSINTable VHOST from merging or referenced? 
 		- What does the VHOSTing indicate about the technological stack: Subdomains, Containerisation, Cloud?
 			- How is then stacked - bottom up from entry point?
-	- WAF?
+	- WAF? - [[Bypassing-WAFs]]
 		- `If-None-Match` 
+		- `X-Forwarded-For`
 	- Web server and Website Language
 		- Clarify host OS version from Web Server version? - Measure twice cut once!
 		- Vulnerable Language?

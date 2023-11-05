@@ -153,7 +153,7 @@ head		# print the first 10 lines of a file to stdout
 head -n $int # print $int number of the lines from the "head" of the file
 ```
 
-# `iconv`
+## `iconv`
 ```bash
 iconv 		convert file format
 
@@ -161,35 +161,46 @@ id		user id
 
 ln		create hardlink beetween files
 ln -s 		create softlink between files
+```
 
-ls 		list directory
-ls -l	list long formatting file wrx, filesize ... [filename] 
+## `ls`
+```bash
+ls # list directory
+ls -l # list long formatting file wrx, filesize ... [filename] 
 
-# for specific file info
-ls -a	list all files including dotfiles
-ls -a1 	list all on one line
-ls -A	list all file including double dotfiles
-ls -la / ... Look for hidden files under system root
-ls -s	list allocated blocs
-ls -i	list inodde numbers
-ls -L	Follow symlinks
-ls -H	follow symlinks on command line
-ls -R	recurse
-ls -d	list directories
-ls -h	list human readable size
-ls -n	list by uid and gids instead of names
-ls -ln	list long formattting and uid 
-ls -x	list by lines
-ls -S	sort by size
-ls -X	sort by extension
-ls -v	sort by version
-ls -t	sort by mtime
-ls -tc	sort by ctime
-ls -tu	sort by atime
-ls -r	reverse sort order
-ls --full-time	list full data and time
+# For specific file info
+ls -1 # One file per line
+ls -a # list all files including dotfiles
+ls -a1 # list all on one line
+ls -A # list all file including double dotfiles
+ls -la /  #  ... Look for hidden files under system root
+ls -s # list allocated blocs
+ls -i # list inodde numbers
+ls -L # Follow symlinks
+ls -H # follow symlinks on command line
+ls -R # recurse
+ls -d # list directories
+ls -h # list human readable size
+ls -n # list by uid and gids instead of names
+ls -ln # list long formattting and uid 
+ls -x # list by lines
+ls -S # sort by size
+ls -X # sort by extension
+ls -v # sort by version
+ls -t # sort by mtime
+ls -tc # sort by ctime
+ls -tu # sort by atime
+ls -r # reverse sort order
+ls --full-time # list full data and time
 ls --group-directories-first
 
+ls -1 --sort=time -r # File per line from earliest creation time to lastes
+ls -la --sort=time -r # Same above expect list all permissions  
+
+```
+
+## `lsof`
+```bash
 lsof   # List Open files
 
 lspci  # for hardware info
@@ -276,7 +287,7 @@ who		# logged in
 w       #
 ```
 
-Linux File ACLs and Attributes - 
+Linux File ACLs and Attributes 
 ```bash
 getfacls
 chattr

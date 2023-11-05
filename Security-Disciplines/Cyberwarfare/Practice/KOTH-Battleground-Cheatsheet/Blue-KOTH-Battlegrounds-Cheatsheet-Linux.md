@@ -27,15 +27,28 @@ Counter Hidden Bash Shells
 exec >/dev/tty
 ```
 
+#### File system
 
-## Services
+File permission of the earliest to latest files in the a directory
+```bash
+ls -la --sort=time -r
+```
+
+**BEWARE** the Linux File ACLs and Attributes - 
+```bash
+getfacls
+chattr
+lsattr
+```
+
+#### Services
 
 ```bash
 # Inspect cron log file for running jobs
 grep "CRON" /var/log/syslog
 ```
 
-## Replace Vulnerable functions
+#### Replace Vulnerable functions in services
 
 ```bash
 grep -r -e 'system(\|exec(' 2>/dev/null
