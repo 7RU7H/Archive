@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Web-Application-Hacking/Web-App-Bug-Hunting.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
                 "mode": "source",
                 "source": false
               }
@@ -37,7 +37,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/C2/Sliver/Sliver-Cheatsheet.md",
+                "file": "Services/Webservers/XAMPP/XAMPP.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "5a3c87848d74195e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/Web-Applications-Attacking/DAVtest.md",
                 "mode": "source",
                 "source": false
               }
@@ -49,14 +61,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Software/File-Typology/YAML.md",
+                "file": "Tools/Host-Privilege-Escalation/Windows/Seatbelt-Helpsheet.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -85,7 +97,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Sliver-C",
+                "query": "Seat",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -123,7 +135,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/C2/Sliver/Sliver-Cheatsheet.md",
+                "file": "Tools/Host-Privilege-Escalation/Windows/Seatbelt-Helpsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,7 +152,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tools/C2/Sliver/Sliver-Cheatsheet.md",
+                "file": "Tools/Host-Privilege-Escalation/Windows/Seatbelt-Helpsheet.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -163,7 +175,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tools/C2/Sliver/Sliver-Cheatsheet.md"
+                "file": "Tools/Host-Privilege-Escalation/Windows/Seatbelt-Helpsheet.md"
               }
             }
           },
@@ -194,10 +206,21 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8b8e6169a3e7a75e",
+  "active": "7521d635e4ea1f7d",
   "lastOpenFiles": [
-    "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
+    "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Privilege-Escalation.md",
+    "Tools/C2/Empire/Powershell-Empire-Modules.md",
     "Tools/C2/Sliver/Sliver-Cheatsheet.md",
+    "Services/Databases/MYSQL/MySQL-Cheatsheet.md",
+    "Software/File-Typology/YAML.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
+    "Web-Application-Hacking/Web-App-Bug-Hunting.md",
+    "Services/Webservers/XAMPP/XAMPP.md",
+    "Tools/Shells/Hoaxshell.md",
+    "Persistence/Persistence.md",
+    "Tools/Web-Applications-Attacking/DAVtest.md",
+    "Tools/Authentication-Attacking/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
+    "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
     "Networks/Network-Theory/Network-Protocols/RDP.md",
     "Web-Application-Hacking/Bypassing-WAFs.md",
     "Software/Operating-Systems/Linux/Linux-Commands/Core-Linux-Commands.md",
@@ -206,22 +229,11 @@
     "Security-Disciplines/Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Blue-KOTH-Battlegrounds-Cheatsheet-Windows.md",
     "Security-Disciplines/Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Red-KOTH-Battlegrounds-Cheatsheet-Windows.md",
     "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
-    "Services/Databases/MYSQL/MySQL-Cheatsheet.md",
-    "Software/File-Typology/YAML.md",
     "Software/Operating-Systems/Linux/Linux-Concepts/ELF-Binaries.md",
     "Software/Operating-Systems/Linux/Linux-Concepts/Linux-Shared-Libraries.md",
     "Software/File-Typology/Logs/Logs.md",
     "Software/Operating-Systems/Windows/Windows-Concepts/Windows-Events/ETW.md",
     "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Backup-Resources/Azure-Administration-Azure-Monitor.md",
-    "Software/Operating-Systems/Linux/Linux-Commands/Linux-Compression-Commands.md",
-    "Development/APIs/API-Hacking.md",
-    "Security-Disciplines/OPSEC-101.md",
-    "Security-Disciplines/Red-Team/Red-Team-Theory/Red-Team-OPSEC.md",
-    "Web-Application-Hacking/Web-App-Bug-Hunting.md",
-    "Tools/Useful-Online-Software/Code-Online.md",
-    "Services/Webservers/Apache/Apache-Tomcat/Apache-Tomcat.md",
-    "Software/Operating-Systems/Linux/Linux-Commands/Linux-Hardware-Commands.md",
-    "Software/Operating-Systems/Linux/Linux-Commands/Linux-Processes-Commands.md",
     "Software/File-Typology/Logs",
     "Development/Languages/Untitled",
     "Web-Application-Hacking/Web-Exploits",
