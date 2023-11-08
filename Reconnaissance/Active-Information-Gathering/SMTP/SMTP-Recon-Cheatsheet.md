@@ -1,11 +1,25 @@
 # SMTP Cheatsheet
 
-Simple Mail Transport Protocol (SMTP) - Vulnerable Email Servers can contain valuable information. 
-See [[Network-Protocols]] for port information.
+Simple Mail Transport Protocol (SMTP) - Vulnerable Email Servers can contain valuable information. See [[Network-Protocols]] for port information.
 
-See [Debug STMP connection for great description of SMTP commands that occuring exploitation of MAIL servers](https://www.sparkpost.com/blog/how-to-check-an-smtp-connection-with-a-manual-telnet-session/)
+See [Debug SMTP connection for great description of SMTP commands that occuring exploitation of MAIL servers](https://www.sparkpost.com/blog/how-to-check-an-smtp-connection-with-a-manual-telnet-session/)
 
-## SMTP with Telnet 
+`smtp-user-enum` for enumerating user - departments are users too! See section for usage.
+```bash
+# There are different methods
+smtp-user-enum -M VRFY -U potential-emails.txt -t $domain.$tld 
+
+smtp-user-enum -M RCPT -U departments.txt -t $domain.$tld
+```
+Better examples and clarity:
+```bash
+# Enumerate potiental email addresses for valid ones
+smtp-user-enum -M VRFY -U potential-email-addresses.txt -t $TargetIP -p $PORT | tee -a  smtp-user-enum-$PORT.out 
+# Then make a file of valid emails
+cat smtp-user-enum-25.out | grep exists | awk -F: '{print $2}' | sed 's/ exists//g'| tr -d ' ' > valid-emails.txt
+```
+
+SMTP with Telnet 
 ```bash
 telnet $IP 25
 nc -nv $IP 25
@@ -18,6 +32,33 @@ telnet> help # Display commands
 telnet> quit
 ```
 Code 250,251,252 means accepted and user account is valid; code 550 means invalid user.
+
+Sending Emails without [[SWAKS]]
+```c
+// connect
+nc $address 25
+// HELLO THERE
+helo hacker
+// response code
+MAIL FROM: impersonatableaccount@yourorganisation.com 
+// response code
+RCPT TO: poor.victim@yourorganisation.com // receipiant
+// response code
+DATA // Send some data !
+// response code
+Subject: Password Reset
+
+Hey Victim,
+
+// Your message goes here - do not put a single `.` on a line
+
+Kind Regards,
+impersonatableaccount
+.
+// Make sure you use the a single `.` on the final line to close DATA 
+// response code
+QUIT // terminates sessions
+```
 
 ## POP3
 
@@ -79,14 +120,6 @@ $ smtp-user-enum -M VRFY -U users.txt -t 10.0.0.1
 $ smtp-user-enum -M EXPN -u admin1 -t 10.0.0.1
 $ smtp-user-enum -M RCPT -U users.txt -T mail-server-ips.txt
 $ smtp-user-enum -M EXPN -D example.com -U users.txt -t 10.0.0.1
-```
-
-Better examples and clarity:
-```bash
-# Enumerate potiental email addresses for valid ones
-smtp-user-enum -M VRFY -U potential-email-addresses.txt -t $TargetIP -p $PORT | tee -a  smtp-user-enum-$PORT.out 
-# Then make a file of valid emails
-cat smtp-user-enum-25.out | grep exists | awk -F: '{print $2}' | sed 's/ exists//g'| tr -d ' ' > valid-emails.txt
 ```
 
 Alternatives:

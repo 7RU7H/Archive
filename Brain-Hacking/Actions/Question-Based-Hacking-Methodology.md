@@ -103,6 +103,14 @@ For exploits, troubleshooting and general problem solving:
 					- Is something that you can actually do - [do not try to pretend to be a old women combining something unfitting to meta-context, which your audience would perceive as less than normal](https://www.youtube.com/watch?v=9_OIs49m56E)
 			- ...then is the pretext fitting?
 
+- Phishing
+	- Can you impersonate the IT department or organisational authoritative account to get?
+		- Passwords or password resets?
+			- *Register for this new service - you just need to use you account details to finish the registration process and read Terms and Conditions*
+			- *Due to recent an up tick in attempts against your account the IT department requires you to change you password to a great level of complexity...*
+		- Intelligence?
+			- Information additive to further phishing progress at a later stage - how will it fit or can it be frame to further impersonate an individual?
+
 - Have you found data at any point?
 	- `exiftool` documents, images and .pdf for meta information - could contain usernames, modifications, etc
 	

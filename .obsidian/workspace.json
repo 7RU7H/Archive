@@ -20,6 +20,18 @@
             }
           },
           {
+            "id": "dd396b68057d74dd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "5fe4a76718b1b7b5",
             "type": "leaf",
             "state": {
@@ -66,9 +78,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "c0645c1db080bf9f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Reconnaissance/Active-Information-Gathering/SMTP/SMTP-Recon-Cheatsheet.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -97,7 +121,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Seat",
+                "query": "SMTP",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -114,8 +138,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -135,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/Host-Privilege-Escalation/Windows/Seatbelt-Helpsheet.md",
+                "file": "Reconnaissance/Active-Information-Gathering/SMTP/SMTP-Recon-Cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -152,7 +175,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tools/Host-Privilege-Escalation/Windows/Seatbelt-Helpsheet.md",
+                "file": "Reconnaissance/Active-Information-Gathering/SMTP/SMTP-Recon-Cheatsheet.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -175,7 +198,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tools/Host-Privilege-Escalation/Windows/Seatbelt-Helpsheet.md"
+                "file": "Reconnaissance/Active-Information-Gathering/SMTP/SMTP-Recon-Cheatsheet.md"
               }
             }
           },
@@ -206,21 +229,25 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7521d635e4ea1f7d",
+  "active": "c0645c1db080bf9f",
   "lastOpenFiles": [
+    "Tools/Host-Privilege-Escalation/Windows/Seatbelt-Helpsheet.md",
+    "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
+    "Reconnaissance/Active-Information-Gathering/SMTP/SMTP-Recon-Cheatsheet.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
+    "Reconnaissance/Active-Information-Gathering/Active-Recon.md",
     "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Privilege-Escalation.md",
     "Tools/C2/Empire/Powershell-Empire-Modules.md",
     "Tools/C2/Sliver/Sliver-Cheatsheet.md",
     "Services/Databases/MYSQL/MySQL-Cheatsheet.md",
     "Software/File-Typology/YAML.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
     "Web-Application-Hacking/Web-App-Bug-Hunting.md",
     "Services/Webservers/XAMPP/XAMPP.md",
     "Tools/Shells/Hoaxshell.md",
     "Persistence/Persistence.md",
     "Tools/Web-Applications-Attacking/DAVtest.md",
     "Tools/Authentication-Attacking/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
-    "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
     "Networks/Network-Theory/Network-Protocols/RDP.md",
     "Web-Application-Hacking/Bypassing-WAFs.md",
     "Software/Operating-Systems/Linux/Linux-Commands/Core-Linux-Commands.md",
@@ -228,12 +255,8 @@
     "Security-Disciplines/Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Red-KOTH-Battlegrounds-Cheatsheet-Linux.md",
     "Security-Disciplines/Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Blue-KOTH-Battlegrounds-Cheatsheet-Windows.md",
     "Security-Disciplines/Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Red-KOTH-Battlegrounds-Cheatsheet-Windows.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
     "Software/Operating-Systems/Linux/Linux-Concepts/ELF-Binaries.md",
     "Software/Operating-Systems/Linux/Linux-Concepts/Linux-Shared-Libraries.md",
-    "Software/File-Typology/Logs/Logs.md",
-    "Software/Operating-Systems/Windows/Windows-Concepts/Windows-Events/ETW.md",
-    "Cloud/Azure/Azure-Administration/Azure-Monitoring-And-Backup-Resources/Azure-Administration-Azure-Monitor.md",
     "Software/File-Typology/Logs",
     "Development/Languages/Untitled",
     "Web-Application-Hacking/Web-Exploits",
