@@ -6,13 +6,11 @@
 
 Brief disclosure on terminology, if there is a better way I will replace it
 
-#### Intel vs Information:
+#### Intel vs Information vs data:
 
-Intel - Human intelligence data - data made by humans 
-Information - Machine information provided by querying machines
-
-Intel - Alice is a Helpdesk operator, Bob requested a password reset 
-Information - the user Alice has X SID that then indicates Administrative Group  
+Intelligence - Data that is packaged as information that is actionable for humans 
+Information - Machine information provided by querying machines that has context
+Data - Raw sweet nutritious data. 
 
 #### True/False (Positives and Negatives) and the Null Space 
 

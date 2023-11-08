@@ -491,9 +491,6 @@ if __name__ == "__main__":
     #    data = pickle.load(f)
 ```
 
-
-
-
 # Appendix
 
 ## Tips for cleaner code
