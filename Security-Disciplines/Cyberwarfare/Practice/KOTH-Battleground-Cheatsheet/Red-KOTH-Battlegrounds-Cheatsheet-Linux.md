@@ -10,6 +10,12 @@ Hide your shell, beware is easily counterable [ethicalhacker club article](https
 exec >/dev/null # restored with: `exec >/dev/tty`
 ```
 
+Use Bash Globbing to clutter adversaries stdout on `ls` usage 
+```bash
+# ls on a directory with the below will produce the usage for ls
+touch ./--help 
+```
+
 Linux File ACLs and Attributes - 
 ```bash
 getfacls

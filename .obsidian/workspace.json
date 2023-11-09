@@ -8,43 +8,30 @@
         "type": "tabs",
         "children": [
           {
-            "id": "ed9ebcbd807f923e",
+            "id": "03c4e5725d38bd70",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "dd396b68057d74dd",
+            "id": "df71d9defb841dc1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "Security-Disciplines/Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Red-KOTH-Battlegrounds-Cheatsheet-Linux.md",
                 "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "5fe4a76718b1b7b5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tools/Debuggers-IDEs-Editors/IDEs/Microsoft-Visual-Studios.md",
-                "mode": "preview",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -73,7 +60,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "VS-Code",
+                "query": "RDP",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -94,7 +81,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 342.5
+    "width": 200
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -110,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md"
               }
             }
           },
@@ -181,35 +168,35 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "dd396b68057d74dd",
+  "active": "03c4e5725d38bd70",
   "lastOpenFiles": [
-    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
-    "Tools/Debuggers-IDEs-Editors/IDEs/Microsoft-Visual-Studios.md",
-    "Tools/Debuggers-IDEs-Editors/IDEs/VS-Code.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/SePrivileges/SePrivilege-Token-Table.md",
-    "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
-    "Services/Webservers/XAMPP/XAMPP.md",
-    "Tools/Web-Applications-Attacking/DAVtest.md",
-    "Tools/Host-Privilege-Escalation/Windows/Seatbelt-Helpsheet.md",
-    "Reconnaissance/Active-Information-Gathering/SMTP/SMTP-Recon-Cheatsheet.md",
-    "Development/Languages/Python/Useful_Python.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Scripts-And-Tools.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation Bypassing-Contrained-Powershell.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
-    "Reconnaissance/Active-Information-Gathering/Active-Recon.md",
-    "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Privilege-Escalation.md",
-    "Tools/C2/Empire/Powershell-Empire-Modules.md",
-    "Tools/C2/Sliver/Sliver-Cheatsheet.md",
-    "Services/Databases/MYSQL/MySQL-Cheatsheet.md",
-    "Software/File-Typology/YAML.md",
-    "Web-Application-Hacking/Web-App-Bug-Hunting.md",
-    "Tools/Shells/Hoaxshell.md",
-    "Persistence/Persistence.md",
-    "Tools/Authentication-Attacking/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
-    "Networks/Network-Theory/Network-Protocols/RDP.md",
-    "Web-Application-Hacking/Bypassing-WAFs.md",
-    "Software/Operating-Systems/Linux/Linux-Commands/Core-Linux-Commands.md",
-    "Security-Disciplines/Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Blue-KOTH-Battlegrounds-Cheatsheet-Linux.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+    "README.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
     "Security-Disciplines/Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Red-KOTH-Battlegrounds-Cheatsheet-Linux.md",
+    "Web-Application-Hacking/Web-Exploits/Upload-Vulnerabilities.md",
+    "Networks/Network-Theory/Network-Protocols/RDP.md",
+    "Tools/Shells/Hoaxshell.md",
+    "Networks/Network-Theory/Network-Protocols/Network-Protocols.md",
+    "Reconnaissance/Active-Directory/Active-Directory-Enumeration.md",
+    "Services/Databases/MYSQL/MySQL-SQL-Injection-Cheatsheet.md",
+    "Tools/C2/Sliver/Sliver-Cheatsheet.md",
+    "Services/Databases/MYSQL/MySQL-Hacking.md",
+    "Tools/Web-Applications-Attacking/DAVtest.md",
+    "Tools/Web-Applications-Attacking/Content-Discovery-Tools/Gospider-Cheatsheet.md",
+    "Web-Application-Hacking/Web-Exploits/SQLi/SQL-Injection.md",
+    "Web-Application-Hacking/Web-App-Bug-Hunting.md",
+    "Web-Application-Hacking/Bypassing-WAFs.md",
+    "Software/Operating-Systems/Linux/Linux-Concepts/Linux-Shared-Libraries.md",
+    "Software/File-Typology/Logs/Logs.md",
     "Software/File-Typology/Logs",
+    "Services/Webservers/Nginx.md",
+    "Networks/Network-Theory/Network-Protocols/SNMP.md",
+    "Networks/Network-Theory/Network-Protocols/FTP.md",
+    "Development/Languages/Introduction-to-SQL.md",
     "Development/Languages/Untitled",
     "Web-Application-Hacking/Web-Exploits",
     "Web-Application-Hacking/HTTP",
