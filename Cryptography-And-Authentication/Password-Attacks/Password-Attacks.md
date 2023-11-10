@@ -26,12 +26,12 @@ https://default-password.info/
 1. Time consuming - exponentiation of hopeful `< x^passwords_to_try`
 	1. Worst case its `$total_usernames^$total_passwords` 
 	1. Even slower if as protocol even restrict threaded interaction
-		1.   SMB
-		2.   RDP
+		1. [[SMB]] 
+		2. [[RDP]]
 
 ## Cracking Password Hashes
 
-Most system store password authentication locally in to for of cryptographic hashes. Linux stores hashes in `/etc/shadow` implementing shadow-utils, see [slashroot](https://www.slashroot.in/how-are-passwords-stored-linux-understanding-hashing-shadow-utils). Whereas for Windows systems are storeed in Security Accounts Manager(SAM); from NT 4.0 SP3 SYSKEY feature partial encrypts the SAM file. Previous and including Windows 2003 LM  and NTLM hashes are stored rather than just NTLM(**UNSALTED**) disabling LM from Vista onwards. Some hashes have [Salts](https://en.wikipedia.org/wiki/Salt_(cryptography)) to improve password storage security . Identification is the first stage to cracking as there are a vast number of types and strengths. Weak passwords are bad m'kay to see list of dumped passwords head over to [skullsecurity](https://wiki.skullsecurity.org/index.php?title=Passwords).
+Most system store password authentication locally in to for of cryptographic hashes. Linux stores hashes in `/etc/shadow` implementing shadow-utils, see [slashroot](https://www.slashroot.in/how-are-passwords-stored-linux-understanding-hashing-shadow-utils). Whereas for Windows systems are stored in Security Accounts Manager(SAM); from NT 4.0 SP3 SYSKEY feature partial encrypts the SAM file. Previous and including Windows 2003 LM  and NTLM hashes are stored rather than just NTLM(**UNSALTED**) disabling LM from Vista onwards. Some hashes have [Salts](https://en.wikipedia.org/wiki/Salt_(cryptography)) to improve password storage security . Identification is the first stage to cracking as there are a vast number of types and strengths. Weak passwords are bad m'kay to see list of dumped passwords head over to [skullsecurity](https://wiki.skullsecurity.org/index.php?title=Passwords).
 
 ## Tools
 [Raw tools for cracking link here](https://inventory.raw.pm/tools.html#title-tools-cracking)
@@ -60,8 +60,10 @@ This section contains some breif description of tools and links to cheatsheets.
 
 #### Cewl
 [Cewl](https://github.com/digininja/CeWL), spiders and scraps a site for words to build a list. The scrapped list's application in password cracking is minimal at best and generally would not meet password-enforcement requirements. For full cheatsheet [[Cewl-Cheatsheet]]
-```
-cewl -w list.txt -d 5 -m 5 <url> # --depth --morethanorequalto <wordsize>
+```bash
+# -d CrawlDepth
+# -m Min Word length
+cewl -w list.txt -d 5 -m 5 <url-as-final-arg> 
 ```
 
 #### Others
@@ -88,8 +90,9 @@ john --list=rules
 ```
 
 #### Wordlistctl
+```bash
 python3 /opt/wordlistctl/wordlistctl.py
-
+```
 
 ## Hashcracking
 
@@ -133,6 +136,7 @@ r
 ```
 
 **Mutation typology**
+
 Mutation | Description
 --- | ---
 Repetition mutation | the same group of characters are repeated several times
@@ -146,7 +150,7 @@ Delimiter mutation | delimiters are added between characters
 
 Password spraying is an effective technique used to identify valid credentials, used also for discovring weak passwords against authenication of various [[Network-Protocols]]. Common weak passwords often follow pattern and format like: `[season][currentyear]`
 
-- **Tools**
+#### Tools
 
 [RDPassSpray](https://github.com/xFreed0m/RDPassSpray)
 [[Brutespray-Cheatsheet]]
@@ -155,14 +159,13 @@ Password spraying is an effective technique used to identify valid credentials, 
 [MailSniper](https://github.com/dafthack/MailSniper)
 
 ## Pass the Hash
+
 Discovered in 1997, is a technique of collecting the NTLM/LM hashes for use in authenicating as a user with hash. For full cheatsheets: [[PtH-winexe-Cheatsheet]];
-
-
 
 
 ## References
 
-[TryHackMe Room](https://tryhackme.com/room/passwordattacks)
+[TryHackMe Password Attacks Room](https://tryhackme.com/room/passwordattacks)
 [Wiki Dictionary Attack](https://en.wikipedia.org/wiki/Dictionary_attack) 
 [Wiki Brute Force](https://en.wikipedia.org/wiki/Brute-force)
 [Wiki Password Cracking](https://en.wikipedia.org/wiki/Password_cracking)

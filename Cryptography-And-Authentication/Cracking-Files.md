@@ -22,7 +22,7 @@ openssl pkcs12 -in $file.pfx -nocert -out key.pem -nodes
 openssl pkcs12 -in $file.pfx -nokeys -out key.cert
 ```
 
-Certificate.pfx - Crack `pfx2john`   
+Certificate - Crack `pfx2john`   
 
 #### SSH Keys
 

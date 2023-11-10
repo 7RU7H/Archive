@@ -24,7 +24,7 @@ App | Location
 
 [Powershelladmin](https://www.powershelladmin.com/wiki/PowerShell_Executables_File_System_Locations.php)
 
-For all the [[Powershell-Verbs]].
+For all the [[PowerShell-Verbs]].
 
 ## Community Repositories
 

@@ -1,5 +1,9 @@
 # Chisel
 
+
+# WARNING BIG REWRITE INBOUND!!
+
+
 Given the discrepancy between term used in [[Port-Redirection-And-Tunnelling]] as a authorial decision I am just going to try standardise the Offensive Security terminology - so read the linked article for information regard why this repository uses a particular set of definitions.
 
 [Chisel](https://github.com/jpillora/chisel.git) *"is a fast TCP/UDP tunnel, transported over HTTP, secured via SSH. Single executable including both client and server. Written in Go (Golang). Chisel is mainly useful for passing through firewalls, though it can also be used to provide a secure endpoint into your network."*
@@ -33,7 +37,7 @@ echo "Chisel is now ready and minimised: "
 echo $chiselsize
 ```
 
-Ran either on Attack box or target box as a server or client
+**Ran either on Attack box or target box as a server or client** - you need to chain servers and client back to your endpoint server on your attacking machine
 
 - Regarding `--socks5` and `:socks`
 	- *"When the chisel server has `--socks5` enabled, remotes can specify "socks" in place of remote-host and remote-port.The default local host and port for a "socks" remote is 127.0.0.1:1080. Connections to this remote will terminate at the server's internal SOCKS5 proxy."*

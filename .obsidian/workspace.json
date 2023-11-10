@@ -20,6 +20,42 @@
             }
           },
           {
+            "id": "d2b7a08cf2dc5c2d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/Wordlists/Wordlist-Tools/MP32-Cheatsheet.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8355d44e80b3a13e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "40bd7d23609a88ae",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Software/Operating-Systems/Linux/Linux-Commands/Linux-Compression-Commands.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "df71d9defb841dc1",
             "type": "leaf",
             "state": {
@@ -31,7 +67,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -60,7 +97,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "RDP",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -81,7 +118,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 394.5
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -97,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
+                "file": "Software/Operating-Systems/Linux/Linux-Commands/Linux-Compression-Commands.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
+                "file": "Software/Operating-Systems/Linux/Linux-Commands/Linux-Compression-Commands.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md"
+                "file": "Software/Operating-Systems/Linux/Linux-Commands/Linux-Compression-Commands.md"
               }
             }
           },
@@ -168,14 +205,23 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "03c4e5725d38bd70",
+  "active": "40bd7d23609a88ae",
   "lastOpenFiles": [
+    "Cryptography-And-Authentication/Cracking-Files.md",
+    "Development/Languages/PowerShell/Useful_Powershell.md",
+    "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md",
+    "Tools/Wordlists/Wordlist-Tools/MP32-Cheatsheet.md",
+    "Tools/Wordlists/Wordlist-Tools/Crunch-Cheatsheet.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
+    "Services/KeePass.md",
+    "Tools/Authentication-Attacking/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
+    "Tools/Wordlists/Wordlist-Tools/Cewl-Cheatsheet.md",
+    "Cryptography-And-Authentication/Password-Attacks/Password-Attacks.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Scripts-And-Tools.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation Bypassing-Contrained-Powershell.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
     "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
     "README.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
     "Security-Disciplines/Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Red-KOTH-Battlegrounds-Cheatsheet-Linux.md",
     "Web-Application-Hacking/Web-Exploits/Upload-Vulnerabilities.md",
     "Networks/Network-Theory/Network-Protocols/RDP.md",
@@ -187,16 +233,7 @@
     "Services/Databases/MYSQL/MySQL-Hacking.md",
     "Tools/Web-Applications-Attacking/DAVtest.md",
     "Tools/Web-Applications-Attacking/Content-Discovery-Tools/Gospider-Cheatsheet.md",
-    "Web-Application-Hacking/Web-Exploits/SQLi/SQL-Injection.md",
-    "Web-Application-Hacking/Web-App-Bug-Hunting.md",
-    "Web-Application-Hacking/Bypassing-WAFs.md",
-    "Software/Operating-Systems/Linux/Linux-Concepts/Linux-Shared-Libraries.md",
-    "Software/File-Typology/Logs/Logs.md",
     "Software/File-Typology/Logs",
-    "Services/Webservers/Nginx.md",
-    "Networks/Network-Theory/Network-Protocols/SNMP.md",
-    "Networks/Network-Theory/Network-Protocols/FTP.md",
-    "Development/Languages/Introduction-to-SQL.md",
     "Development/Languages/Untitled",
     "Web-Application-Hacking/Web-Exploits",
     "Web-Application-Hacking/HTTP",
