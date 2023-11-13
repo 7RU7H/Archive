@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Software/Operating-Systems/Linux/Linux-Commands/Linux-Compression-Commands.md",
+                "file": "Securing-Networks-And-Systems/Secure-Network-Architecture.md",
                 "mode": "source",
                 "source": false
               }
@@ -118,7 +118,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 394.5
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -134,7 +135,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Software/Operating-Systems/Linux/Linux-Commands/Linux-Compression-Commands.md",
+                "file": "Securing-Networks-And-Systems/Secure-Network-Architecture.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +152,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Software/Operating-Systems/Linux/Linux-Commands/Linux-Compression-Commands.md",
+                "file": "Securing-Networks-And-Systems/Secure-Network-Architecture.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +175,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Software/Operating-Systems/Linux/Linux-Commands/Linux-Compression-Commands.md"
+                "file": "Securing-Networks-And-Systems/Secure-Network-Architecture.md"
               }
             }
           },
@@ -207,6 +208,8 @@
   },
   "active": "40bd7d23609a88ae",
   "lastOpenFiles": [
+    "Software/Operating-Systems/Linux/Linux-Commands/Linux-Compression-Commands.md",
+    "Securing-Networks-And-Systems/Secure-Network-Architecture.md",
     "Cryptography-And-Authentication/Cracking-Files.md",
     "Development/Languages/PowerShell/Useful_Powershell.md",
     "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md",
@@ -231,8 +234,6 @@
     "Services/Databases/MYSQL/MySQL-SQL-Injection-Cheatsheet.md",
     "Tools/C2/Sliver/Sliver-Cheatsheet.md",
     "Services/Databases/MYSQL/MySQL-Hacking.md",
-    "Tools/Web-Applications-Attacking/DAVtest.md",
-    "Tools/Web-Applications-Attacking/Content-Discovery-Tools/Gospider-Cheatsheet.md",
     "Software/File-Typology/Logs",
     "Development/Languages/Untitled",
     "Web-Application-Hacking/Web-Exploits",
