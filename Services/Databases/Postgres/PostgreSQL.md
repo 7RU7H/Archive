@@ -1,6 +1,6 @@
 # PostgreSQL Cheatsheet
 
-**Warning part of this article were created with ChatGTP 3.5 consulting the [PostgreSQL Documentation](https:--www.postgresql.org/docs/)**
+**Warning parts of this article were created with ChatGTP 3.5 and human consultation of the [PostgreSQL Documentation](https:--www.postgresql.org/docs/)**
 
 ```sql
 psql

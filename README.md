@@ -20,6 +20,12 @@ For full links to all Articles alphabetically see [[Contents]] to `./mkContents.
 
 For links and description about those resources, which I continuously use and use to validate other resources please consider reviewing the list of [[Alternate-Resources]]. Please be aware that this is on-going effort to add as I can a week to this. I add a description to each as well so if you do not like that email me. If you upset that you are not on that list and you are already referenced somewhere in this repository I will be trying add you as soon as possible.  
 
+#### AI 
+
+Any page containing any content that was aided in someway with AI will specify:
+- **Warning `QUANTITY` of this article were created with `< AI Model insert >` and human consultation of `< Relevant Documentation >`**
+
+
 #### Future 
 
 Hopeful in the future once I have made a rest API to have it be nice and query-able. It will be public, open source contribution version that would include addition functionality to the API to merge and archive comparative versioning to allow individual to build there own out of information the added or learnt rather than just a big Wikipedia of stuff that is there that allows you to track and make the connections for yourself. This is due to my personal educational experience just making this.
