@@ -4,8 +4,9 @@ Stateless without cookies. Data from one HTTP request does not influence the nex
 
 ## Versions
 
-**HTTP 1.0 is a non-persistent connection, and HTTP 1.1 is persistent connection**. For a connection Persistent or Non-persistent it is sure that to initiate TCP connection one RTT is used. RTT-> Time for a small packet to travel from client to server and back.
+- **HTTP 1.0 is a non-persistent connection, and HTTP 1.1 is persistent connection**. For a connection Persistent or Non-persistent it is sure that to initiate TCP connection one round-trip time (RTT) is used. RTT-> Time for a small packet to travel from client to server and back.
 
+- **HTTP 2.0 does not allow Transfer-Encoding**
 ## Requests
 
 METHODS | Description

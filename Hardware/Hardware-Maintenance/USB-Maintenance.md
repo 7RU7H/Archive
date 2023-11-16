@@ -1,4 +1,4 @@
-# USB-Maintenance
+# USB Maintenance
 
 
 Backup and compress data
@@ -23,7 +23,7 @@ Fix maybe?
 sudo fsck -v -a /dev/disk/by-id/$DISK_ID
 ```
 
-Repartition
+Re-partition
 ```bash
 fdisk -l 
 fdisk /dev/$disk
@@ -38,7 +38,7 @@ w # Write changes
 ```
 
 
-Reformating - will require partitions to reformat!
+Reformatting - will require partitions to reformat!
 ```bash
  # Find USB and show partition names
 lsblk -fp
@@ -50,7 +50,7 @@ mkfs.ntfs /dev/$sdxy
 ```
 
 
-Encrypting a USB flash memory - [THM](https://tryhackme.com/room/linuxsystemhardening) :
+Encrypting a USB flash memory - [THM](https://tryhackme.com/room/linuxsystemhardening):
 ```bash
 # List USB drives
 sudo lsblk

@@ -1,6 +1,6 @@
 # HTTP(S) Header Recon
 
-[[HTTP-Defined]]
+[[HTTP]]
 
 
 

@@ -152,7 +152,7 @@ LDAP connection to Global Catalog over SSL is port 3269
 
 ## 443 - HTTPS
 
-[[HTTP-Defined]]
+[[HTTP]]
 
 ## 445 - SMB
 

@@ -49,7 +49,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Securing-Networks-And-Systems/Secure-Network-Architecture.md",
+                "file": "Web-Application-Hacking/Web-Concepts/HTTP.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b8997eeb07e8b221",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
                 "mode": "source",
                 "source": false
               }
@@ -68,7 +80,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -118,8 +130,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 389.5
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -135,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Securing-Networks-And-Systems/Secure-Network-Architecture.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -152,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Securing-Networks-And-Systems/Secure-Network-Architecture.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -175,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Securing-Networks-And-Systems/Secure-Network-Architecture.md"
+                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md"
               }
             }
           },
@@ -206,10 +217,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "40bd7d23609a88ae",
+  "active": "b8997eeb07e8b221",
   "lastOpenFiles": [
-    "Software/Operating-Systems/Linux/Linux-Commands/Linux-Compression-Commands.md",
+    "Web-Application-Hacking/Web-Concepts/HTTP.md",
+    "Networks/Network-Theory/Network-Protocols/Network-Protocols-Hub.md",
+    "Hardware/Hardware-Maintenance/USB-Maintenance.md",
     "Securing-Networks-And-Systems/Secure-Network-Architecture.md",
+    "Software/Operating-Systems/Linux/Linux-Commands/Linux-Compression-Commands.md",
     "Cryptography-And-Authentication/Cracking-Files.md",
     "Development/Languages/PowerShell/Useful_Powershell.md",
     "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md",
@@ -231,9 +245,6 @@
     "Tools/Shells/Hoaxshell.md",
     "Networks/Network-Theory/Network-Protocols/Network-Protocols.md",
     "Reconnaissance/Active-Directory/Active-Directory-Enumeration.md",
-    "Services/Databases/MYSQL/MySQL-SQL-Injection-Cheatsheet.md",
-    "Tools/C2/Sliver/Sliver-Cheatsheet.md",
-    "Services/Databases/MYSQL/MySQL-Hacking.md",
     "Software/File-Typology/Logs",
     "Development/Languages/Untitled",
     "Web-Application-Hacking/Web-Exploits",
