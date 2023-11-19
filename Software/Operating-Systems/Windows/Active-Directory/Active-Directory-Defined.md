@@ -5,7 +5,7 @@ This is 101 ground-up and top-down explanation information cheatsheet and a hub 
 
 ## AD Defined:
 
-Active Directory or Active Directory Directory Services(ADDS) is a directory service for Windows Domain Networks. Microsoft scalable centralised IT management, authentication and authorization framework. Active Directory is a domain that is centralised collection of users and machines in network, AD is run from the Domain Controll server that runs AD services. Location, security and many other aspects make up a rational for a specific architecture of forests, trees, domains and the organisation units are each connected and how they are allowed to interact.
+Active Directory or Active Directory Directory Services(ADDS) is a directory service for Windows Domain Networks. Microsoft scalable centralised IT management, authentication and authorisation framework. Active Directory is a domain that is centralised collection of users and machines in network, AD is run from the Domain Control server that runs AD services. Location, security and many other aspects make up a rational for a specific architecture of forests, trees, domains and the organisation units are each connected and how they are allowed to interact.
 
 AD Components:  
 1. Domain Controllers - Windows 2000-20* server with ADDS installed
@@ -88,7 +88,7 @@ GPOs are processed in the following order:
 1. OU (parent, then child)
 
 **The GPO which is applied last will be the effective one**
-GPOs in AD work by each domain-joined computer, updated from the DC **EVERY** 90mins. Or with command: `gpupdate /force`
+GPOs in AD work by each domain-joined computer, updated from the DC **EVERY** 90 minites. Or with command: `gpupdate /force`
 
 ## Objects
 
@@ -120,11 +120,11 @@ On the DC use `Search -> Active Directory Users and Computers` to configure user
 
 ##### Domain Admins 
 
-These can access the DC and is the highest privledge level of a user.  
+These can access the DC and is the highest privileged level of a user.  
 
 ##### Service Accounts 
 
-[Service principle names](https://docs.microsoft.com/en-us/windows/win32/ad/service-principal-names?redirectedfrom=MSDN) as Applications are executed in the context of the operation system user and that user account defines that context, whereas service executed by system itself a [Service Account](https://docs.microsoft.com/en-us/windows/win32/services/service-user-accounts?redirectedfrom=MSDN). Used for service maintenance and required by Windows for services to pair a service with a service account. When applications need to access the domain resources or require Kerberos authenication; the application is executed in the context of a domain account referred to a service account, but is still a domain user account. Domain user account may be required to provide the service accounts more access to resource inside the domain. Execution of applications can be possible in the context of the local SYSTEM accounnt or "group Managed Service Account(gMSA).  The gMSA's can also perform automated credientals rotation = account password is 120 characetrs long and changes every 30 days. 
+[Service principle names](https://docs.microsoft.com/en-us/windows/win32/ad/service-principal-names?redirectedfrom=MSDN) as Applications are executed in the context of the operation system user and that user account defines that context, whereas service executed by system itself a [Service Account](https://docs.microsoft.com/en-us/windows/win32/services/service-user-accounts?redirectedfrom=MSDN). Used for service maintenance and required by Windows for services to pair a service with a service account. When applications need to access the domain resources or require Kerberos authentication; the application is executed in the context of a domain account referred to a service account, but is still a domain user account. Domain user account may be required to provide the service accounts more access to resource inside the domain. Execution of applications can be possible in the context of the local SYSTEM account or "group Managed Service Account(gMSA).  The gMSA's can also perform automated credentials rotation = account password is 120 characters long and changes every 30 days. 
 
 Service Accounts | Description
 --- | ---
@@ -160,13 +160,14 @@ Get-ADUser <user>
 
 #### Active Directory Groups
 
-Authorization process is controlled by membership in Active Directory Groups, for scalablity and dynamism
+Authorisation process is controlled by membership in Active Directory Groups, for scalablity and dynamism
 Group types:
 - Distribution Groups: used only to define email lists - No access rights or permission abilities, useful for enumeration 
 - Security Groups: used to assign permissions to shared resources.
 
 
 For incomplete list for demonstrative purposes:
+
 Security Group | Description
 --- | ---
 Domain Admins | Administrative Privileges over entire domain, including DC
@@ -221,7 +222,8 @@ Domain Schema are rules for object creation
 #### Azure AD
 
 Azure act as middle man between physical Active Directory and users' sign on machines, securing transaction between domains 
-It has its own terminalogy and security precautions beyond the that of physical AD
+
+It has its own terminology and security precautions beyond the that of physical AD
 Windows Server AD	Azure AD
 LDAP			Rest APIs
 NTLM			OAuth/SAML
@@ -233,15 +235,15 @@ Trusts			Guests
 ### Enterpries AD
 
 #### Topology
-
+```
 Branch1
 		  |
 dataCenter1 - internet
 		  |
 Branch2
-
-Data Centers contain: Application Servers, Domain Controller, seperated firewall/VPN
-Branch contain: workstations, sperated via firewall/VPN
+```
+Data Centres contain: Application Servers, Domain Controller, separated firewall/VPN
+Branch contain: workstations, separated via firewall/VPN
 
 Naming conventions:
 DC01, DC02, etc

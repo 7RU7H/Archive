@@ -1,6 +1,5 @@
 # Endpoint Security
 
-
 ## Introduction
 
 Endpoints are the leaves to the branches of a network, a workstation, database or another production machine from where monitoring and logging of various activity can occur, be collected and processed in a more centralised location within a network.

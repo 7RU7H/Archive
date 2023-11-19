@@ -21,7 +21,9 @@
 - Limit new artefact creation - no new accounts, GPOs, etc
 	- To prevent failures of appearing adversarial for blue team activity and providing the adversary a addition technique to utilise during this phase
 	- To prevent adversaries going undetected on meeting their objective the lowest of all low hanging fruit possible
-
+- Resetting Administrative Account passwords
+- Forward logs to the [[SIEM-Solutions]] your organisation's choice'
+- Prepare the disaster recovery plan -
 ## Identification
 
 #### Considerations
@@ -99,16 +101,90 @@ import-module Microsoft.PowerShell.Diagnostics
 Get-WinEvent -FilterHashtable @{LogName='Security'; ID=4719,4739} | ConvertTo-Xml | Out-File -FilePath 'events.xml'
 ```
 
-
 Use [[Bloodhound-Guide]] - to Bloodhound your environment to:
 - Find hidden relations
 - Find potential X-step to full re-compromise - [[Silver-Tickets]], [[Diamond-Tickets]] and [[Sapphire-Tickets]]!
 	- Monitor potential vectors as a [[Honeypots]] to then gain more [[CTI-And-Containment]] 
 		- Get IPs and domain names of C2 servers to had to authorities and for blacklisting 
 
-- (Do not use PowerView if you are going to  introduce attacking tool to enumerate the environment at least use Bloodhound) - PowerView is recommended by the THM room and here [[Powerview-Cheatsheet]], but it is basically Bloodhound without the visual aid or the breakdown of what the attacker will do. I would not recommend. You could just use the administrative PowerShell module for AD as administrators of the server instead of introducing more ways for attackers to use this functionality and impersonate the IR team!  
+- (Do not use PowerView if you are going to  introduce attacking tool to enumerate the environment at least use Bloodhound) - PowerView is recommended by the THM room and here [[Powerview-Cheatsheet]], but it is basically Bloodhound without the visual aid or the breakdown of what the attacker will do. I would not recommend. You could just use the administrative PowerShell module for AD as administrators of the server instead of introducing more ways for attackers to use this functionality and impersonate the IR team! 
+#### Domain Takeback
+
+A **Post-Compromise** plan must be in place to ensure the availability of services and minimise downtime for AD users.
+
+- Account level - case-by-case basis - beware the attacker waiting to calmly changing the password you requested for reset...
+	- Reset the password for accounts T0 - Administrative.
+	- Disable accounts
+		- Suspicious Accounts
+			- Old employees
+			- Soft-deleted accounts
+	- **Beware** changing the Kerberos Service Account password will cause disruption! 
+	- Reset the password of the domain controller machine prevent [[Silver-Tickets]], [[Sapphire-Tickets]] and [[Diamond-Tickets]] attacks
+	-  use the PowerShell `Reset-ComputerMachinePassword` for resetting computer objects on the domain
+- Restoring Domain Controller from a backup - **Do not restore an instance of a compromised DC**
+- Do the [[Malware-Analysis]]
+- Check the [[Persistence]] and [[Active-Directory-Persistence]]
+	- [[AD-Persistence-GPOs]] 
+	- [[AD-Persistence-ACLs]]
+	- [[AD-Permission-Abuse]]
+	- [[AD-Persistence-Tickets]]
+	- [[AD-Persistence-SID-History]]
+	- [[AD-Persistence-Credentials]]
+	- [[AD-Persistence-Group-Membership]]
+- Enable traffic filtering on inbound and outbound traffic to identify Indicators of Compromise (IOC) at the network level (to be carried out at the Security Operation Center level).
+- Use third parties to provide insight 
+	- Tools
+		- [Ping Castle](https://www.pingcastle.com/)
+	- [[SIEM-Solutions]]
+		- [[Splunk]]
+		- [[Wazuh]]
+
+#### Misconfigurations
+
+Misconfiguration is very safe way for attacker to leverage as the internal team created or mismanaged it into existence. 
+
+- Boot source in BIOS 
+	- Bootloaders could be weaponized by attackers boot devices and change login passwords 
+	- Configure the BIOS to prevent booting from CD/DVD, external devices (USB), or a floppy drive.
+- Machine access control
+	1. `Run -> gpedit.msc` 
+	1. Navigate to `Computer Configuration -> Policies -> Windows Settings -> Security Settings -> Local Policies -> User Rights Assignment`
+	2. Configure whom to be `Allow log on locally` by selecting the users and groups
+- Weak Passwords
+	- Higher complexity
+	- Password spray yourself
+- Prevent [[AD-DCSync-Attack]]s 
+	- If detected disable compromised account
+	- Audit DCSync privileges
+- Audit Scripting and application permissions on machines
+- Configure Network Time Synchronisation
+
+#### Post Recovery 
+
+Applying more [[Active-Directory-Hardening]], but more importantly questioning the why compromise occur prevents later attacks... as this get legal more legal the following is directly from the [THM Room](https://tryhackme.com/room/recoveringactivedirectory)
+- Policy Decisions
+	- A detailed cyber security plan must be developed in line with some international frameworks like [NIST](https://www.quest.com/community/blogs/b/microsoft-platform-management/posts/how-to-secure-active-directory-using-the-nist-cybersecurity-framework).
+	- Develop a disaster management policy to avoid such attacks in the future.
+	- Detailed cyber security audit of the infrastructure to locate the infection vector of the incident and determine the root cause.
+	- Ensure that logs from all the servers, computers, and network devices are maintained and forwarded to a reputable SIEM solution.
+- Domain Controller
+	- Adding permanent rules in SIEM to block command and control (C2) domains and IP addresses used by the attacker.
+	- Patching all vulnerable systems to prevent exploitation of systems through publicly available exploits. 
+	- Perform a thorough malware scanning of all domain controllers and domain-joined systems.  
+	- Perform operating system upgrades to the latest version of Windows Server as it offers more security features, like it provides AES encryption and supports [red architecture](https://learn.microsoft.com/en-us/security/compass/esae-retirement) more efficiently. 
+	- Remove the file shares on the domain controllers.
+	- Disable the use of removable media on host computers, as attackers may propagate the malware on the whole network. 
+- Backups 
+	- The organisation network must have redundant domain controllers in high availability (primary/secondary layout).
+	- Implement automated backup and recovery mechanisms.
+	- Regularly verifying the trusted backups for validating integrity.
+- Implementation of [CIS benchmarks](https://www.cisecurity.org/cis-benchmarks/)
 
 ## References
 
+[THM Recovering Active Directory Room](https://tryhackme.com/room/recoveringactivedirectory)
 [adamtheautomator - get-winevent](https://adamtheautomator.com/get-winevent/)
 [Phind](https://www.phind.com)
+[CIS benchmarks](https://www.cisecurity.org/cis-benchmarks/)
+[red architecture](https://learn.microsoft.com/en-us/security/compass/esae-retirement) 
+[NIST](https://www.quest.com/community/blogs/b/microsoft-platform-management/posts/how-to-secure-active-directory-using-the-nist-cybersecurity-framework).

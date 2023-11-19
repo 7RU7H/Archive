@@ -56,6 +56,13 @@ echo "export GOPATH=\"$HOME/go\"" | tee -a ~/.profile
 echo "export GOBIN=\"$GOPATH/bin\"" | tee -a ~/.profile
 ```
 
+#### Useful Golang
+
+```go
+
+func init() // This is a special function in golang - IS THE FIRST FUNCTION THAT WILL RUN IN YOUR PACKAGE
+```
+
 ## Secure Coding in Go
 
 [OWASP's Go-SCP](https://github.com/OWASP/Go-SCP) is a *"Go programming language secure coding practices guide"*

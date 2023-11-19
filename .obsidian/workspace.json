@@ -56,12 +56,24 @@
             }
           },
           {
+            "id": "fb30967215cd2e77",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Software/Operating-Systems/Windows/Windows-Concepts/Windows-Events/Windows-Events-To-Monitor.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "b8997eeb07e8b221",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+                "file": "Development/Languages/Go/Golang.md",
                 "mode": "source",
                 "source": false
               }
@@ -80,7 +92,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -109,7 +121,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "Windows-Events",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -146,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+                "file": "Web-Application-Hacking/Web-Concepts/HTTP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +175,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+                "file": "Web-Application-Hacking/Web-Concepts/HTTP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +198,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md"
+                "file": "Web-Application-Hacking/Web-Concepts/HTTP.md"
               }
             }
           },
@@ -217,11 +229,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b8997eeb07e8b221",
+  "active": "40bd7d23609a88ae",
   "lastOpenFiles": [
+    "Securing-Networks-And-Systems/Incident-Response/Recovering-Active-Directory.md",
+    "Exploitation/Windows/Active-Directory/AD-DCSync-Attack.md",
+    "Software/Operating-Systems/Windows/Windows-Concepts/Windows-Events/Windows-Events-To-Monitor.md",
+    "Security-Disciplines/Blue-Team/Endpoint-Security.md",
+    "Software/Operating-Systems/Windows/Active-Directory/Active-Directory-Defined.md",
     "Web-Application-Hacking/Web-Concepts/HTTP.md",
-    "Networks/Network-Theory/Network-Protocols/Network-Protocols-Hub.md",
+    "Development/Languages/Go/Golang.md",
+    "Web-Application-Hacking/Web-Exploits/CSRF/Cross-Site-Request-Forgery.md",
     "Hardware/Hardware-Maintenance/USB-Maintenance.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+    "Networks/Network-Theory/Network-Protocols/Network-Protocols-Hub.md",
     "Securing-Networks-And-Systems/Secure-Network-Architecture.md",
     "Software/Operating-Systems/Linux/Linux-Commands/Linux-Compression-Commands.md",
     "Cryptography-And-Authentication/Cracking-Files.md",
@@ -237,14 +257,6 @@
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Scripts-And-Tools.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation Bypassing-Contrained-Powershell.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
-    "README.md",
-    "Security-Disciplines/Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Red-KOTH-Battlegrounds-Cheatsheet-Linux.md",
-    "Web-Application-Hacking/Web-Exploits/Upload-Vulnerabilities.md",
-    "Networks/Network-Theory/Network-Protocols/RDP.md",
-    "Tools/Shells/Hoaxshell.md",
-    "Networks/Network-Theory/Network-Protocols/Network-Protocols.md",
-    "Reconnaissance/Active-Directory/Active-Directory-Enumeration.md",
     "Software/File-Typology/Logs",
     "Development/Languages/Untitled",
     "Web-Application-Hacking/Web-Exploits",

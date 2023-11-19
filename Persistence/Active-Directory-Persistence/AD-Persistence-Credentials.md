@@ -2,7 +2,7 @@
 
 This technique is the least reliable. Credential are:
 - Domain restricted, but
-	- Unless Account has `domain replication permissions`, which is required for [[AD-DC-Sync-Attack]]s
+	- Unless Account has `domain replication permissions`, which is required for [[AD-DCSync-Attack]]s
 - Credential are rotated(changed) and can be by Blue Team, but
 	- Near-privileged credentials for persistence is tactic of just enough to re-takeover, we need:
 		- Credentials with Local Administrator Rights on as many machines as possible
