@@ -20,6 +20,7 @@ gpg --import public.key
 
 ## Openssl
 ```bash
+
 openssl genrsa -aes256 -out private.key 8912
 openssl rsa -in private.key -pubout -out public.key
 openssl rsautl -encrypt -pubin -inkey public.key -in plaintext.txt -out encrypted.txt

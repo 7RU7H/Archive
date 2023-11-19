@@ -10,6 +10,29 @@ cd mongodb-linux-x86_64-3.4.7/bin
 ./mongo mongodb://$ip:27107
 ```
 
+
+[John Hammond's CTF katana](https://github.com/JohnHammond/ctf-katana) - Install, connect and get database information mongoDB properly
+```bash
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 9DA31620334BD75D9DCB49F368818C72E52529D4
+echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/4.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list
+sudo apt-get update
+sudo apt-get install -y mongodb-org
+
+mongo --username 'uname' -p 'pword' --host hostname.com:27017
+```
+... and get database information
+```sql
+show databases
+
+use <databasename>
+
+show collections
+
+c = db.<collectioname>
+
+c.find()
+```
+
 #### MongoDB CheatSheet
 
 [0xsyr0's](https://github.com/0xsyr0/OSCP#mongodb) modified OSCP cheatsheet:
@@ -61,3 +84,4 @@ ObjectId("$objectID")},{$set:{"$password":"$newPasswordHash"}})'
 [MongoDB documentation](https://www.mongodb.com/docs/)
 [Wikipedia MongoDB](https://en.wikipedia.org/wiki/MongoDB)
 [0xsyr0 OSCP cheatsheet](https://github.com/0xsyr0/OSCP#mongodb))
+[John Hammond's CTF katana](https://github.com/JohnHammond/ctf-katana) 

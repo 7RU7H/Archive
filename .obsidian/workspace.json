@@ -44,24 +44,36 @@
             }
           },
           {
-            "id": "40bd7d23609a88ae",
+            "id": "0fcf13a58dac9150",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Web-Application-Hacking/Web-Concepts/HTTP.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "fb30967215cd2e77",
+            "id": "7b77e13c46e93661",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Software/Operating-Systems/Windows/Windows-Concepts/Windows-Events/Windows-Events-To-Monitor.md",
+                "file": "Software/Operating-Systems/Linux/Linux-Commands/Linux-Module-Commands.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "40bd7d23609a88ae",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cryptography-And-Authentication/De-Or-En-Cryption.md",
                 "mode": "source",
                 "source": false
               }
@@ -78,21 +90,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "df71d9defb841dc1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Security-Disciplines/Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Red-KOTH-Battlegrounds-Cheatsheet-Linux.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -121,7 +121,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Windows-Events",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -158,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Web-Application-Hacking/Web-Concepts/HTTP.md",
+                "file": "Software/Operating-Systems/Linux/Linux-Commands/Linux-Module-Commands.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +175,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Web-Application-Hacking/Web-Concepts/HTTP.md",
+                "file": "Software/Operating-Systems/Linux/Linux-Commands/Linux-Module-Commands.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -198,7 +198,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Web-Application-Hacking/Web-Concepts/HTTP.md"
+                "file": "Software/Operating-Systems/Linux/Linux-Commands/Linux-Module-Commands.md"
               }
             }
           },
@@ -229,34 +229,34 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "40bd7d23609a88ae",
+  "active": "7b77e13c46e93661",
   "lastOpenFiles": [
-    "Securing-Networks-And-Systems/Incident-Response/Recovering-Active-Directory.md",
-    "Exploitation/Windows/Active-Directory/AD-DCSync-Attack.md",
-    "Software/Operating-Systems/Windows/Windows-Concepts/Windows-Events/Windows-Events-To-Monitor.md",
-    "Security-Disciplines/Blue-Team/Endpoint-Security.md",
-    "Software/Operating-Systems/Windows/Active-Directory/Active-Directory-Defined.md",
-    "Web-Application-Hacking/Web-Concepts/HTTP.md",
-    "Development/Languages/Go/Golang.md",
-    "Web-Application-Hacking/Web-Exploits/CSRF/Cross-Site-Request-Forgery.md",
-    "Hardware/Hardware-Maintenance/USB-Maintenance.md",
+    "Software/Operating-Systems/Linux/Linux-Commands/Linux-Networking-Commands.md",
+    "Software/Operating-Systems/Linux/Linux-Commands/Linux-One-Liners-To-Rule-Them-All.md",
+    "Software/Operating-Systems/Linux/Linux-Commands/Core-Linux-Commands.md",
+    "Software/Operating-Systems/Linux/Linux-Commands/Linux-Command-Hub.md",
+    "Software/Operating-Systems/Linux/Linux-Commands/Linux-Hardware-Commands.md",
+    "Software/Operating-Systems/Linux/Linux-Commands/Linux-Memory-Commands.md",
+    "Software/Operating-Systems/Linux/Linux-Commands/Linux-Module-Commands.md",
     "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
-    "Networks/Network-Theory/Network-Protocols/Network-Protocols-Hub.md",
-    "Securing-Networks-And-Systems/Secure-Network-Architecture.md",
-    "Software/Operating-Systems/Linux/Linux-Commands/Linux-Compression-Commands.md",
-    "Cryptography-And-Authentication/Cracking-Files.md",
-    "Development/Languages/PowerShell/Useful_Powershell.md",
     "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md",
     "Tools/Wordlists/Wordlist-Tools/MP32-Cheatsheet.md",
-    "Tools/Wordlists/Wordlist-Tools/Crunch-Cheatsheet.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
-    "Services/KeePass.md",
-    "Tools/Authentication-Attacking/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
-    "Tools/Wordlists/Wordlist-Tools/Cewl-Cheatsheet.md",
-    "Cryptography-And-Authentication/Password-Attacks/Password-Attacks.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Scripts-And-Tools.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation Bypassing-Contrained-Powershell.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
+    "Development/Languages/Go/Golang.md",
+    "Security-Disciplines/Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Red-KOTH-Battlegrounds-Cheatsheet-Linux.md",
+    "Cryptography-And-Authentication/De-Or-En-Cryption.md",
+    "Software/Operating-Systems/MacOS/MacOS-DFIR.md",
+    "Services/Databases/MongoDB/MongoDB.md",
+    "Software/Operating-Systems/MacOS/MacOS-Privilege-Escalation.md",
+    "Software/Operating-Systems/Linux/Linux-Concepts/Linux-Syscalls.md",
+    "Software/Operating-Systems/Windows/Windows-Concepts/Windows-Events/Windows-Events-To-Monitor.md",
+    "Web-Application-Hacking/Web-Concepts/HTTP.md",
+    "Securing-Networks-And-Systems/Incident-Response/Recovering-Active-Directory.md",
+    "Exploitation/Windows/Active-Directory/AD-DCSync-Attack.md",
+    "Security-Disciplines/Blue-Team/Endpoint-Security.md",
+    "Software/Operating-Systems/Windows/Active-Directory/Active-Directory-Defined.md",
+    "Web-Application-Hacking/Web-Exploits/CSRF/Cross-Site-Request-Forgery.md",
+    "Hardware/Hardware-Maintenance/USB-Maintenance.md",
+    "Networks/Network-Theory/Network-Protocols/Network-Protocols-Hub.md",
     "Software/File-Typology/Logs",
     "Development/Languages/Untitled",
     "Web-Application-Hacking/Web-Exploits",
