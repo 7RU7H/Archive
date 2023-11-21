@@ -20,36 +20,12 @@
             }
           },
           {
-            "id": "d2b7a08cf2dc5c2d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tools/Wordlists/Wordlist-Tools/MP32-Cheatsheet.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "8355d44e80b3a13e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0fcf13a58dac9150",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
                 "mode": "source",
                 "source": false
               }
@@ -91,8 +67,7 @@
               }
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -121,7 +96,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "gdb",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -138,7 +113,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -158,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Software/Operating-Systems/Linux/Linux-Commands/Linux-Module-Commands.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Software/Operating-Systems/Linux/Linux-Commands/Linux-Module-Commands.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -198,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Software/Operating-Systems/Linux/Linux-Commands/Linux-Module-Commands.md"
+                "file": "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md"
               }
             }
           },
@@ -229,18 +205,22 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7b77e13c46e93661",
+  "active": "03c4e5725d38bd70",
   "lastOpenFiles": [
+    "Reverse-Engineering/Reverse-Engineering-Tools.md",
+    "Reverse-Engineering/Reverse-Engineering.md",
+    "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md",
+    "Post-Exploitation/Stealth/Evasion/Antivirus-Evasion/Obfuscation-Principles.md",
+    "Post-Exploitation/Stealth/Evasion/Evading-IPS-And-IDS.md",
+    "Tools/Wordlists/Wordlist-Tools/MP32-Cheatsheet.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+    "Software/Operating-Systems/Linux/Linux-Commands/Linux-Module-Commands.md",
     "Software/Operating-Systems/Linux/Linux-Commands/Linux-Networking-Commands.md",
     "Software/Operating-Systems/Linux/Linux-Commands/Linux-One-Liners-To-Rule-Them-All.md",
     "Software/Operating-Systems/Linux/Linux-Commands/Core-Linux-Commands.md",
     "Software/Operating-Systems/Linux/Linux-Commands/Linux-Command-Hub.md",
     "Software/Operating-Systems/Linux/Linux-Commands/Linux-Hardware-Commands.md",
     "Software/Operating-Systems/Linux/Linux-Commands/Linux-Memory-Commands.md",
-    "Software/Operating-Systems/Linux/Linux-Commands/Linux-Module-Commands.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
-    "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md",
-    "Tools/Wordlists/Wordlist-Tools/MP32-Cheatsheet.md",
     "Development/Languages/Go/Golang.md",
     "Security-Disciplines/Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Red-KOTH-Battlegrounds-Cheatsheet-Linux.md",
     "Cryptography-And-Authentication/De-Or-En-Cryption.md",
@@ -253,10 +233,6 @@
     "Securing-Networks-And-Systems/Incident-Response/Recovering-Active-Directory.md",
     "Exploitation/Windows/Active-Directory/AD-DCSync-Attack.md",
     "Security-Disciplines/Blue-Team/Endpoint-Security.md",
-    "Software/Operating-Systems/Windows/Active-Directory/Active-Directory-Defined.md",
-    "Web-Application-Hacking/Web-Exploits/CSRF/Cross-Site-Request-Forgery.md",
-    "Hardware/Hardware-Maintenance/USB-Maintenance.md",
-    "Networks/Network-Theory/Network-Protocols/Network-Protocols-Hub.md",
     "Software/File-Typology/Logs",
     "Development/Languages/Untitled",
     "Web-Application-Hacking/Web-Exploits",

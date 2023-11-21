@@ -27,6 +27,12 @@ strings -e l # 16-bit littleendian
 
 ## GDB
 
+```bash
+shell pgrep $binaryname
+attach # attach to the procress
+info proc map # Check for static addresses
+```
+
 ## GEF
 
 *`GEF` (pronounced ʤɛf - "Jeff") is a kick-ass set of commands for X86, ARM, MIPS, PowerPC and SPARC to make GDB cool again for exploit dev. It is aimed to be used mostly by exploit developers and reverse-engineers, to provide additional features to GDB using the Python API to assist during the process of dynamic analysis and exploit development.* [Documentation](https://gef.readthedocs.io/en/master/)
@@ -68,6 +74,36 @@ Installation - beware command below are for Kali - 2023 - pip is not used
 ```bash
 apt-get update
 apt install python3-pwntools
+pwn --help
+usage: pwn [-h] {asm,checksec,constgrep,cyclic,debug,disasm,disablenx,elfdiff,elfpatch,errno,hex,libcdb,phd,pwnstrip,scramble,shellcraft,template,unhex,update,version} ...
+
+Pwntools Command-line Interface
+
+positional arguments:
+  {asm,checksec,constgrep,cyclic,debug,disasm,disablenx,elfdiff,elfpatch,errno,hex,libcdb,phd,pwnstrip,scramble,shellcraft,template,unhex,update,version}
+    asm                 Assemble shellcode into bytes
+    checksec            Check binary security settings
+    constgrep           Looking up constants from header files. Example: constgrep -c freebsd -m ^PROT_ '3 + 4'
+    cyclic              Cyclic pattern creator/finder
+    debug               Debug a binary in GDB
+    disasm              Disassemble bytes into text format
+    disablenx           Disable NX for an ELF binary
+    elfdiff             Compare two ELF files
+    elfpatch            Patch an ELF file
+    errno               Prints out error messages
+    hex                 Hex-encodes data provided on the command line or stdin
+    libcdb              Print various information about a libc binary
+    phd                 Pretty hex dump
+    pwnstrip            Strip binaries for CTF usage
+    scramble            Shellcode encoder
+    shellcraft          Microwave shellcode -- Easy, fast and delicious
+    template            Generate an exploit template
+    unhex               Decodes hex-encoded data provided on the command line or via stdin.
+    update              Check for pwntools updates
+    version             Pwntools version
+
+options:
+  -h, --help            show this help message and exit
 ```
 
 ## Radare2
