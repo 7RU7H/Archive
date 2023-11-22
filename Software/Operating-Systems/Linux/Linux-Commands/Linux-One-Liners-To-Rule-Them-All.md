@@ -9,9 +9,14 @@ Make a new sub-directory putting all current directory into that new directory
 mkdir $new_subdirectory | ls | grep -v $new_subdirectory | tr -S '\n' ' ' | xargs -I@ bash -c 'mv @ $new_subdirectory/'
 ```
 
-Find all the .nmap  files with open unique (no duplicates) confirmed (non 'service?') tcp services on open ports, sorted alphabetally file
+Find all the `.nmap` files with open unique (no duplicates) confirmed (non 'service?') tcp services on open ports, sorted alphabetically file
 ```bash
 find . -type f -name *.nmap -exec cat {} + | grep "/tcp" | sort -u | awk '{print $3}' | sort -u | grep -v '?\|[0-9]'
+```
+
+The me-special replace the spell mistake across multiple files of a similar format  
+```bash
+find . -type f -name *-insertfile-format-identifer-here* | grep -r -e 'Your Mistake' | awk -F: '{print $1}' | xargs -I {} sed 's/Your Mistake/A correction beware of the usage of symbols with sed rtfm/g' -i {}
 ```
 
 ## String One-Line
@@ -30,7 +35,7 @@ cat $file | awk '{print "echo \""$1" "$2"\" >> $output" }'
 
 ##  Grab References from a Markdown File
 
-May require some editting post also consider adding `sed`
+May require some editing post also consider adding `sed`
 ```bash
 cat $file.md| grep -r '](' | awk -F\) '{print $1")"}' | awk -F: '{print $2$3}'
 ```
@@ -47,6 +52,7 @@ sed -e "s/\b\(.\)/\l\1/g"
 
 ## Finding 
 
+Single line and remove unwanted with `grep -v` a list unwanted files or directories or patterns with to delimiter `\|`
 ```bash
 ls -1 | grep -v '$unwantdir\|proc'
 ```
@@ -57,6 +63,10 @@ for i in {1..10}; do echo "\"\$$i\" "; done | tr -d '\n'
 # returns "$1" "$2" "$3" "$4" "$5" "$6" "$7" "$8" "$9" "$10"
 ```
 
+All the exploit for the same version number - beware the `grep` [[Grep-All-The-Things]]
+```bash
+searchsploit $service | grep $aGoodGrepIsRequired | awk -F\| '{print $2}' | xargs -I {} searchsploit -m {}
+```
 
 ## References
 

@@ -1,4 +1,3 @@
-
 # Part 1-3: Five Windows Forensic Artefacts for Every Incident Response | Jake Williams
 
 Go take the full course - https://www.antisyphontraining.com/advanced-endpoint-investigations
@@ -68,7 +67,7 @@ Installers writing files will have there timestamps copied
 	-  The USN Journal also captures significantly more operation types than just MACB  
 	-  USN journal data may **include references to operations on deleted files**
 
-- [Mens Rea](https://en.wikipedia.org/wiki/Mens_rea)  do you have presence of mind when committing a crime. Did a potential Insider Threats clean up after itself? You had the presence of mind to clean up an malicious act. 
+- [Mens Rea](https://en.wikipedia.org/wiki/Mens_rea) do you have presence of mind when committing a crime. Did a potential Insider Threats clean up after itself? You had the presence of mind to clean up an malicious act. 
 
 Why Process USN Journal?
 - Some use cases for USN Journal analysis:  
@@ -81,7 +80,7 @@ Why Process USN Journal?
 
 Processing the USNJournal
 - The MFTECmd application from Eric Zimmerman used for MFT processing also processes data from the USN journal  
-	- The file name you need to acquire is $Extend\\$UsnJrnl  
+	- The file name you need to acquire is `$Extend\$UsnJrnl`  
 	- The data is in a special stream named $J  
 	- **This is hugely problematic - if you copying a file off NTFS the data streams go away!**
 	- **Some Forensics Tools do not export the Data Streams**
@@ -101,7 +100,7 @@ Prefetch files are not going to exist on Windows Server investigations!
 	- The principle is that files needed early in execution by an application won’t change substantially in future executions  
 - Prefetch files are not enabled on Windows servers and often are not enabled on workstations when Windows detects an SSD during installation  
 - Subsequent change to an SSD doesn’t disable Prefetch  
-- Prefetch files are located in C:\\windows\\Prefetch and have a .PF extension  
+- Prefetch files are located in `C:\windows\Prefetch` and have a .PF extension  
 	- One file is created per {appName, path, command line} tuple
 
 - The peCmd tool from Eric Zimmerman is a tool that can parse all known versions of prefetch files
@@ -118,7 +117,7 @@ Prefetch files are not going to exist on Windows Server investigations!
 
 ## Event Log Analysis
 
-*This is best of Event Log Analysis* plus see [[]]
+*This is best of Event Log Analysis* plus see [[ETW]]
 
 -  There are no shortage of tools to process .evtx logs  
 	- Including the native Windows Event Viewer - it is also horrible, but still a tool. 

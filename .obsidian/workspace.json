@@ -25,49 +25,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Windows/Privilege-Escalation-Important-Windows-Locations.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "7b77e13c46e93661",
+            "id": "9fb4ffd89f93f855",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Software/Operating-Systems/Linux/Linux-Commands/Linux-Module-Commands.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "40bd7d23609a88ae",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cryptography-And-Authentication/De-Or-En-Cryption.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b8997eeb07e8b221",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Development/Languages/Go/Golang.md",
+                "file": "Web-Application-Hacking/Web-Exploits/Path-Traversal/Path-Traversal.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -96,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "gdb",
+                "query": "Windows ssh directory",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -134,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
+                "file": "Web-Application-Hacking/Web-Exploits/Path-Traversal/Path-Traversal.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
+                "file": "Web-Application-Hacking/Web-Exploits/Path-Traversal/Path-Traversal.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md"
+                "file": "Web-Application-Hacking/Web-Exploits/Path-Traversal/Path-Traversal.md"
               }
             }
           },
@@ -205,34 +182,34 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "03c4e5725d38bd70",
+  "active": "9fb4ffd89f93f855",
   "lastOpenFiles": [
+    "Networks/Network-Theory/Network-Protocols/Network-Protocols.md",
+    "Tools/Shells/SSH-Cheatsheet.md",
+    "Web-Application-Hacking/Web-Exploits/Path-Traversal/Path-Traversal.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Privilege-Escalation-Important-Windows-Locations.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/Privilege-Escalation-Important-Linux-Locations.md",
+    "Software/Operating-Systems/Linux/Linux-Commands/Linux-One-Liners-To-Rule-Them-All.md",
+    "Reconnaissance/Active-Information-Gathering/RPC/RPC-Recon.md",
+    "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md",
+    "Development/Languages/Go/Golang.md",
+    "Cryptography-And-Authentication/De-Or-En-Cryption.md",
+    "Software/Operating-Systems/Linux/Linux-Commands/Linux-Module-Commands.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
+    "Security-Disciplines/Incident-Response/Five-Windows-Forensic-Artefacts-for-Every-Incident-Response.md",
     "Reverse-Engineering/Reverse-Engineering-Tools.md",
     "Reverse-Engineering/Reverse-Engineering.md",
-    "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md",
     "Post-Exploitation/Stealth/Evasion/Antivirus-Evasion/Obfuscation-Principles.md",
     "Post-Exploitation/Stealth/Evasion/Evading-IPS-And-IDS.md",
     "Tools/Wordlists/Wordlist-Tools/MP32-Cheatsheet.md",
     "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
-    "Software/Operating-Systems/Linux/Linux-Commands/Linux-Module-Commands.md",
     "Software/Operating-Systems/Linux/Linux-Commands/Linux-Networking-Commands.md",
-    "Software/Operating-Systems/Linux/Linux-Commands/Linux-One-Liners-To-Rule-Them-All.md",
     "Software/Operating-Systems/Linux/Linux-Commands/Core-Linux-Commands.md",
     "Software/Operating-Systems/Linux/Linux-Commands/Linux-Command-Hub.md",
     "Software/Operating-Systems/Linux/Linux-Commands/Linux-Hardware-Commands.md",
     "Software/Operating-Systems/Linux/Linux-Commands/Linux-Memory-Commands.md",
-    "Development/Languages/Go/Golang.md",
     "Security-Disciplines/Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Red-KOTH-Battlegrounds-Cheatsheet-Linux.md",
-    "Cryptography-And-Authentication/De-Or-En-Cryption.md",
     "Software/Operating-Systems/MacOS/MacOS-DFIR.md",
-    "Services/Databases/MongoDB/MongoDB.md",
-    "Software/Operating-Systems/MacOS/MacOS-Privilege-Escalation.md",
-    "Software/Operating-Systems/Linux/Linux-Concepts/Linux-Syscalls.md",
-    "Software/Operating-Systems/Windows/Windows-Concepts/Windows-Events/Windows-Events-To-Monitor.md",
-    "Web-Application-Hacking/Web-Concepts/HTTP.md",
-    "Securing-Networks-And-Systems/Incident-Response/Recovering-Active-Directory.md",
-    "Exploitation/Windows/Active-Directory/AD-DCSync-Attack.md",
-    "Security-Disciplines/Blue-Team/Endpoint-Security.md",
     "Software/File-Typology/Logs",
     "Development/Languages/Untitled",
     "Web-Application-Hacking/Web-Exploits",

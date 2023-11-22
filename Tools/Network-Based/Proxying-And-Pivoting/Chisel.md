@@ -9,14 +9,13 @@ Given the discrepancy between term used in [[Port-Redirection-And-Tunnelling]] a
 
 ![](chiselworksthisway.png)
 
-
 ## Compilation and Shrinking the binary
 
 ```bash
 #!/bin/bash
 git clone https://github.com/jpillora/chisel.git 
 cd chisel/
-# On Victim machine:
+# On Victim machine:  
 ldd --version # linux and windows
 
 
@@ -39,7 +38,7 @@ echo $chiselsize
 **Ran either on Attack box or target box as a server or client** - you need to chain servers and client back to your endpoint server on your attacking machine
 
 - Regarding `--socks5` and `:socks`
-	- *"When the chisel server has `--socks5` enabled, remotes can specify "socks" in place of remote-host and remote-port.The default local host and port for a "socks" remote is 127.0.0.1:1080. Connections to this remote will terminate at the server's internal SOCKS5 proxy."*
+	- *"When the chisel server has `--socks5` enabled, remotes can specify "socks" in place of remote-host and remote-port. The default local host and port for a "socks" remote is 127.0.0.1:1080. Connections to this remote will terminate at the server's internal SOCKS5 proxy."*
 
 - Regarding `--reverse` and `R:`... TLDR: `--reverse` allows reverse port forwarding, `R:` perform reverse port forward
 	- *"When the chisel server has `--reverse` enabled, remotes can be prefixed with `R` to denote that they are reversed. That is, the server will listen and accept connections, and they will be proxied through the client which specified the remote. Reverse remotes specifying "`R:socks`" will listen on the server's default socks port (1080) and terminate the connection at the client's internal SOCKS5 proxy."*

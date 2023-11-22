@@ -1,6 +1,6 @@
+# RPCclient
 
-## RPCclient
-Query MS-RPC for commands to try and estanblish a null session
+Query MS-RPC for commands to try and establish a null session
 ```bash
 rpcclient -U "" -N $IP
 # Authenticated Session
@@ -8,7 +8,7 @@ rpcclient -U <username> --password=<password> $ip
 ```
 See enumeration commands [[RPCClient-Cheatsheet]] and its usage [[RPCClient-Usage]]
 
-With enum4linux
+With `enum4linux`
 ```bash
 # Verbose mode
 enum4linux -v target-ip

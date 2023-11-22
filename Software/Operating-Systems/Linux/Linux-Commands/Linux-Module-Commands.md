@@ -1,7 +1,6 @@
 # Modules 
 
 Check [[Grep-All-The-Things]] and [[Core-Linux-Commands]], eventual I hope to expand and organise this for each to have there own file, but for now one will do.
-
 #### awk 
 ```bash
 awk [flags] [select pattern/find(sort)/commands] [input file]
@@ -95,7 +94,7 @@ find / -type f -name "*.txt" -exec rm {} \; # delete all the files with .txt ext
 find path -type f | xargs wc -w | tail -1
 ```
 
-## fold 
+#### fold 
 Wrap input lines in each FILE, writing to standard output, with no FILE, or when FILE is -, read standard input.
 ```bash
 fold 
