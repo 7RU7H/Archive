@@ -251,7 +251,7 @@ LDAP SSL is port 636
 
 ## 3269 (TCP/UDP) - Microsoft Global Catalog over SSL
 
-- msft-gc-ssl, Microsoft Global Catalog over SSL (similar to port 3268, LDAP over SSL) (official)
+- msft-gc-ssl, Microsoft Global Catalogue over SSL (similar to port 3268, LDAP over SSL) (official)
 
 LDAP (Lightweight Directory Access Protocol (over SSL)) Defaults:  - [[LDAP-Recon]]
 plain text LDAP is port 389 
@@ -260,6 +260,7 @@ LDAP SSL is port 636
 
 ## 3306 - MySQL
 
+[[MySQL-Cheatsheet]], [[MySQL-Hacking]] and [[MySQL-SQL-Injection-Cheatsheet]]
 `mysql -h ip -u user -p`
 
 ## 3389 (TCP) - RDP

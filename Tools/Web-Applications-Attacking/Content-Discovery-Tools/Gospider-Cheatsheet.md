@@ -21,6 +21,11 @@
 gospider -d 0 -s 'http://10.10.10.10' -a -d 5 -c 5 --sitemap --robots --blacklist jpg,jpeg,gif,css,tif,tiff,png,ttf,woff,woff2,ico,pdf,svg,txt  -o gospider
 ```
 
+Different access level different amount of pages to enumerate
+```bash
+gospider -d 0 -s 'http://10.10.10.10' -a -d 5 -c 5 --sitemap --robots --blacklist jpg,jpeg,gif,css,tif,tiff,png,ttf,woff,woff2,ico,pdf,svg,txt -H 'Cookie=yourcookiegoeshereas'  -o gospider-with-auth
+```
+
 ## References
 
 [GoSpider](https://github.com/jaeles-project/gospider) 
