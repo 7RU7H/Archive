@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Linux-File-Transfers.md",
+                "file": "Tools/Wordlists/Wordlist-Tools/Cupp-Cheatsheet.md",
                 "mode": "source",
                 "source": false
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "gospider",
+                "query": "Cup",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -170,7 +170,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Linux-File-Transfers.md",
+                "file": "Tools/Wordlists/Wordlist-Tools/Cupp-Cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,7 +187,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Linux-File-Transfers.md",
+                "file": "Tools/Wordlists/Wordlist-Tools/Cupp-Cheatsheet.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -210,7 +210,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Linux-File-Transfers.md"
+                "file": "Tools/Wordlists/Wordlist-Tools/Cupp-Cheatsheet.md"
               }
             }
           },
@@ -243,6 +243,9 @@
   },
   "active": "1b83558ac28041b0",
   "lastOpenFiles": [
+    "Cryptography-And-Authentication/Password-Attacks/Password-Attacks.md",
+    "Tools/Wordlists/Wordlist-Tools/Cupp-Cheatsheet.md",
+    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Linux-File-Transfers.md",
     "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
     "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
@@ -266,9 +269,6 @@
     "Post-Exploitation/Stealth/Evasion/Evading-IPS-And-IDS.md",
     "Tools/Wordlists/Wordlist-Tools/MP32-Cheatsheet.md",
     "Software/Operating-Systems/Linux/Linux-Commands/Linux-Networking-Commands.md",
-    "Software/Operating-Systems/Linux/Linux-Commands/Core-Linux-Commands.md",
-    "Software/Operating-Systems/Linux/Linux-Commands/Linux-Command-Hub.md",
-    "Software/Operating-Systems/Linux/Linux-Commands/Linux-Hardware-Commands.md",
     "Software/File-Typology/Logs",
     "Development/Languages/Untitled",
     "Web-Application-Hacking/Web-Exploits",

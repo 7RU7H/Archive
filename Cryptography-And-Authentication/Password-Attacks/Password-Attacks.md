@@ -40,7 +40,7 @@ Tool | Description | Local Cheatsheet | Links
 --- | --- | --- | ---
 Cewl | crawl a website and extract strings or keywords  | [[Cewl-Cheatsheet]] |
 Crunch | offline wordlist creation | [[Crunch-Cheatsheet]] |
-Cupp | create custom wordlists | |
+Cupp | create custom wordlists | [[Cupp-Cheatsheet]] |
 Mentalist | gui wordlist generation | |
 Haiti | hash identifier | |
 Hashid | Hash identifier | | [psypanda](https://psypanda.github.io/hashID/)
