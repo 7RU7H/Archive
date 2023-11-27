@@ -13,50 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8c5ce548ec559feb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tools/Host-Privilege-Escalation/PEASS-NG.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1537817ebe44c0ab",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "36b22339e5603520",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Exploitation/Shells/Encoded-Shell-Spawning.md",
+                "file": "Software/Operating-Systems/Windows/Windows-Commands/WMI-Commands.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -122,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/Host-Privilege-Escalation/PEASS-NG.md",
+                "file": "Software/Operating-Systems/Windows/Windows-Commands/WMI-Commands.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tools/Host-Privilege-Escalation/PEASS-NG.md",
+                "file": "Software/Operating-Systems/Windows/Windows-Commands/WMI-Commands.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tools/Host-Privilege-Escalation/PEASS-NG.md"
+                "file": "Software/Operating-Systems/Windows/Windows-Commands/WMI-Commands.md"
               }
             }
           },
@@ -194,10 +157,23 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8c5ce548ec559feb",
+  "active": "03c4e5725d38bd70",
   "lastOpenFiles": [
-    "Post-Exploitation/Lateral-Movement/Active-Directory-Lateral-Movement/Active-Directory-Lateral-Movement.md",
+    "Software/Operating-Systems/Windows/Windows-Commands/Windows-Networking-Commands.md",
+    "Software/Operating-Systems/Windows/Windows-Commands/Windows-Commands.md",
+    "Software/Operating-Systems/Windows/Windows-Commands/Icacls-Command.md",
+    "Software/Operating-Systems/Windows/Active-Directory/Active-Directory-sMSA-gMSA.md",
+    "Software/Operating-Systems/Windows/Active-Directory/Active-Directory-Privileged-Groups.md",
+    "Software/Operating-Systems/Windows/Active-Directory/Active-Directory-Kerberos-Authentication-Defined.md",
+    "Software/Operating-Systems/Windows/Active-Directory/Active-Directory-Defined.md",
+    "Software/Operating-Systems/Windows/Active-Directory/Active-Directory-Default-Security-Groups-Table.md",
+    "Software/Operating-Systems/Windows/Active-Directory/Active-Directory-Credential-Caching.md",
+    "Software/Operating-Systems/Windows/Active-Directory/Active-Directory-Commands.md",
+    "Software/Operating-Systems/Windows/Active-Directory/Active-Directory-Authentication.md",
+    "Software/Operating-Systems/Windows/Active-Directory/Active-Directory-Administration.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
     "Tools/Host-Privilege-Escalation/PEASS-NG.md",
+    "Post-Exploitation/Lateral-Movement/Active-Directory-Lateral-Movement/Active-Directory-Lateral-Movement.md",
     "Post-Exploitation/Escaping-Restricted-Environments/Python-Sandbox-Bypasses.md",
     "Post-Exploitation/Escaping-Restricted-Environments/Linux-Shell-Escapes.md",
     "Post-Exploitation/Credentials-Harvesting/AD-Credential-Harvesting.md",
@@ -209,19 +185,6 @@
     "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Linux-File-Transfers.md",
     "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/File-Transfers.md",
     "Reconnaissance/Active-Information-Gathering/Unknown-Service-Recon.md",
-    "Reconnaissance/Active-Information-Gathering/Vulnerability-Scanning.md",
-    "Reconnaissance/Active-Information-Gathering/Web-Analysis/HTTP(S)-Header-Recon.md",
-    "Tools/Web-Applications-Attacking/Nikto-Cheatsheet.md",
-    "Reconnaissance/Active-Information-Gathering/SNMP/SNMP-Recon-Cheatsheet.md",
-    "Reconnaissance/Active-Information-Gathering/POP3/POP3-Recon.md",
-    "Reconnaissance/Active-Information-Gathering/RDP/RDP-Recon.md",
-    "Reconnaissance/Active-Information-Gathering/IMAP/IMAP-Recon-Cheatsheet.md",
-    "Reconnaissance/Active-Information-Gathering/SMTP/SMTP-Recon-Cheatsheet.md",
-    "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
-    "Reconnaissance/Active-Information-Gathering/DNS/DNS-Active-Recon.md",
-    "Reconnaissance/Active-Directory/Active-Directory-Footholding.md",
-    "Reconnaissance/Active-Directory/Active-Directory-Enumeration.md",
-    "Software/Operating-Systems/Linux/Linux-Commands/Systemctl.md",
     "Software/File-Typology/Logs",
     "Development/Languages/Untitled",
     "Web-Application-Hacking/Web-Exploits",

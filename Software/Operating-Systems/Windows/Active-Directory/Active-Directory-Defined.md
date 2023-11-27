@@ -47,7 +47,7 @@ AD DS retains the databases and processes required to store and manage directory
 
 AD is organised around a top domain domain.com, with the possibility of subdomains sub.domain.com
 
-```
+```goat
 Forest  -	-	-	-	-	-	-	- Another Forest
 |		\							  /   /		\
 Tree  	 \	-	Connections Vary -   /	Tree 	Tree
@@ -132,7 +132,6 @@ Service Accounts | Description
 [LocalService](https://docs.microsoft.com/en-us/windows/win32/services/localservice-account?redirectedfrom=MSDN) |
 [NetworkService](https://docs.microsoft.com/en-us/windows/win32/services/networkservice-account?redirectedfrom=MSDN) |
 
- 
 ##### Local Administrators
 
 Users that make changes to local machines as an administrator, sometimes able to control other normal users, but cannot access domain controller
@@ -142,6 +141,8 @@ Users that make changes to local machines as an administrator, sometimes able to
 Regular users, can only log in on mahcine that they are authorized to access and may have some local administrator rights to machine
 
 #### Security Identifier or SID
+
+```goat
 S-R-I-SA
 S = literal "S"
 R = revision level (usually set to 1)
@@ -151,10 +152,10 @@ IP vs H
 Sub authority value is dynamic and consists tof two primary parts: 
 /	Domain's numeric identifier 	-22-1234-1234-1234 
 Relative identifier(RID) 	-1010
-
+```
 ##### Notes:
 BEWARE AD-cmdlets only installed by default on DCs!
-```
+```powershell
 Get-ADUser <user> 
 ```
 
@@ -178,7 +179,6 @@ Domain Users | Includes all existing user accounts in the domain
 Domain Computer | Includes all existing computer in the domain
 Domain Controllers | Includes all existing DCs on the domain
 See the table of [[Active-Directory-Default-Security-Groups-Table]] 
-
 
 
 For Active Directory, there are two types of administrative responsibilities:
@@ -215,7 +215,7 @@ Lightweight Directory Access Protocol (LDAP) is one the [[Network-Protocols]] ve
 Domain Schema are rules for object creation
 
 ## Domain Authentication
-[[Active-Directory-Authentication]] is detailed in the aforemented article, although a brief summary of both mechanism for the context of this article is also provided here. NTLM is the default Windows authentication protocol uses an encrypted challenge/response protocol. Whereas Kerberos Ticket System authenciation, discuss at length with related information in [[Active-Directory-Kerberos-Authentication-Defined]] see [[Attacking-Kerberos]]
+[[Active-Directory-Authentication]] is detailed in the aforementioned article, although a brief summary of both mechanism for the context of this article is also provided here. NTLM is the default Windows authentication protocol uses an encrypted challenge/response protocol. Whereas Kerberos Ticket System authentication, discuss at length with related information in [[Active-Directory-Kerberos-Authentication-Defined]] see [[Attacking-Kerberos]]
 		
 ### Cloud AD
 
@@ -224,13 +224,15 @@ Domain Schema are rules for object creation
 Azure act as middle man between physical Active Directory and users' sign on machines, securing transaction between domains 
 
 It has its own terminology and security precautions beyond the that of physical AD
-Windows Server AD	Azure AD
-LDAP			Rest APIs
-NTLM			OAuth/SAML
-Kerberos		OpenID
-OU Tree			Flat Structure
-Domains and Forests	Tenants
-Trusts			Guests
+
+Windows Server AD	| Azure AD
+--- | ---
+LDAP			| Rest APIs
+NTLM			| OAuth/SAML
+Kerberos		| OpenID
+OU Tree			| Flat Structure
+Domains and Forests | 	Tenants
+Trusts			| Guests
 
 ### Enterpries AD
 
@@ -291,3 +293,8 @@ Large organizations and enterprises often use added products and features which 
 [NetBIOS](https://networkencyclopedia.com/netbios/) 
 [DHCP](https://en.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol "Dynamic Host Configuration Protocol")
 [Security Principle](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/manage/understand-security-principals)
+[Documentation Security Principles](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/manage/understand-security-principals)
+[Service principle names](https://docs.microsoft.com/en-us/windows/win32/ad/service-principal-names?redirectedfrom=MSDN)
+[Wikipedia - Domain Name System](https://en.wikipedia.org/wiki/Domain_Name_System "Domain Name System") 
+[Wikipedia - IPv4](https://en.wikipedia.org/wiki/IPv4 "IPv4") 
+[Wikipedia - IPv6](https://en.wikipedia.org/wiki/IPv6 "IPv6") 

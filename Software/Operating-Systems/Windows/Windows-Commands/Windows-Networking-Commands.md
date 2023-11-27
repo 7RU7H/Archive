@@ -1,10 +1,7 @@
 # Windows Networking Commands
 
 ```powershell
-arp 
-	-a		display all network interface
-
-
+arp -a # display all network interfaces - IPv4 resolutions
 getmac /v # get mac address
 
 ipconfig # *"str" insert string like "Ethernet adapter Ethernet" 
@@ -18,40 +15,40 @@ ipconfig # *"str" insert string like "Ethernet adapter Ethernet"
 nbtstat # displays:
 	# information related to NETBIOS name table and cache
 	# NetBT protocol information for local and remote machine
-  	-a   (adapter status) Lists the remote machine's name table given its name
-	-A   (Adapter status) Lists the remote machine's name table given its IP address.
-  	-c   (cache)          Lists NBT's cache of remote [machine] names and their IP addresses
-  	-n   (names)          Lists local NetBIOS names.
- 	 -r   (resolved)       Lists names resolved by broadcast and via WINS
- 	 -R   (Reload)         Purges and reloads the remote cache name table
- 	 -S   (Sessions)       Lists sessions table with the destination IP addresses
- 	 -s   (sessions)       Lists sessions table converting destination IP
-                        addresses to computer NETBIOS names.
-  -RR  (ReleaseRefresh) Sends Name Release packets to WINS and then, starts Refresh
+  	-a # (adapter status) Lists the remote machine's name table given its name
+	-A # (Adapter status) Lists the remote machine's name table given its IP address.
+  	-c # (cache)          Lists NBT's cache of remote [machine] names and their IP addresses
+  	-n # (names)          Lists local NetBIOS names.
+ 	 -r # (resolved)       Lists names resolved by broadcast and via WINS
+ 	 -R # (Reload)         Purges and reloads the remote cache name table
+ 	 -S # (Sessions)       Lists sessions table with the destination IP addresses
+ 	 -s # (sessions)       Lists sessions table converting destination IP
+ # addresses to computer NETBIOS names.
+  -RR # (ReleaseRefresh) Sends Name Release packets to WINS and then, starts Refresh
 
 # BEWARE netsh advfirewall firewall 
 netsh 
 	firewall	# DEPRECATED
-		?              - Displays a list of commands.
-		add            - Adds firewall configuration.
-		delete         - Deletes firewall configuration.
-		dump           - Displays a configuration script.
-		help           - Displays a list of commands.
-		set            - Sets firewall configuration.
-		show           - Shows firewall configuration.
+		? # - Displays a list of commands.
+		add # - Adds firewall configuration.
+		delete # - Deletes firewall configuration.
+		dump # - Displays a configuration script.
+		help # - Displays a list of commands.
+		set # - Sets firewall configuration.
+		show # - Shows firewall configuration.
 	advfirewall
-		?              - Displays a list of commands.
-		consec         - Changes to the `netsh advfirewall consec' context.
-		dump           - Displays a configuration script.
-		export         - Exports the current policy to a file.
-		firewall       - Changes to the `netsh advfirewall firewall' context.
-		help           - Displays a list of commands.
-		import         - Imports a policy file into the current policy store.
-		mainmode       - Changes to the `netsh advfirewall mainmode' context.
-		monitor        - Changes to the `netsh advfirewall monitor' context.
-		reset          - Resets the policy to the default out-of-box policy.
-		set            - Sets the per-profile or global settings.
-		show           - Displays profile or global properties.
+		? # - Displays a list of commands.
+		consec # - Changes to the `netsh advfirewall consec' context.
+		dump # - Displays a configuration script.
+		export # - Exports the current policy to a file.
+		firewall # - Changes to the `netsh advfirewall firewall' context.
+		help # - Displays a list of commands.
+		import # - Imports a policy file into the current policy store.
+		mainmode # - Changes to the `netsh advfirewall mainmode' context.
+		monitor # - Changes to the `netsh advfirewall monitor' context.
+		reset # - Resets the policy to the default out-of-box policy.
+		set # - Sets the per-profile or global settings.
+		show # - Displays profile or global properties.
 
 netsh advfirewall firewall add rule name="Deny Ping" dir=in action=block protocol=icmpv4 remoteip=any
 netsh advfirewall firewall add rule name="Allow SSH" dir=in action=allow protocol=tcp localport=22
@@ -66,35 +63,34 @@ net share		# configure and manage shared resources
 	sharename=drive:path
 
 
-net use			# to connect to remote shared resources
+net use # to connect to remote shared resources
 
 netstat 
-	-a		display listen ports
-	-p		display by protocol
-	-n		show address numerically
-	-o		Process PID 
+	-a # display listen ports
+	-p # display by protocol
+	-n # show address numerically
+	-o # Process PID 
 
-nslookup # either fin  teh IP of a domain name or the domain name of an IP(revsere lookup)
+nslookup # either the IP of a domain name or the domain name of an IP(revsere lookup)
 
 pathping
 # Similar to tracert, once hop is confirmed a hop it will send multiple messages and provide statistics
 # More reliable than tracert to provide latency  information
-	-g host-list     Loose source route along host-list.
-    	-h maximum_hops  Maximum number of hops to search for target.
-	-i address       Use the specified source address.
-    	-n               Do not resolve addresses to hostnames.
-    	-p period        Wait period milliseconds between pings.
-	-q num_queries   Number of queries per hop.
-   	-w timeout       Wait timeout milliseconds for each reply.
-    	-4               Force using IPv4.
-    	-6               Force using IPv6.
+	-g $host-list # Loose source route along host-list.
+    	-h $maximum_hops # Maximum number of hops to search for target.
+	-i $address # Use the specified source address.
+    	-n # Do not resolve addresses to hostnames.
+    	-p $period # Wait period milliseconds between pings.
+	-q $num_queries # Number of queries per hop.
+   	-w timeout # Wait timeout milliseconds for each reply.
+    	-4 # Force using IPv4.
+    	-6 # Force using IPv6.
 
-ping $IP		ping	
-	-a		resolve address
-	-n 		change default packet count
+ping $IP # ping	
+	-a # resolve address
+	-n # change default packet count
 
-route 	
-	print 		display active routes
+route print		# display active routes
 
 # tasklist /svc
 sc start	# start a service

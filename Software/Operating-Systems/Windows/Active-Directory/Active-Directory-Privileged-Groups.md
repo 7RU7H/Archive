@@ -2,6 +2,7 @@
 
 
 Directly from [Microsoft Documentation](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/plan/security-best-practices/appendix-b--privileged-accounts-and-groups-in-active-directory)
+
 <table>
 <thead>
 <tr>
@@ -174,7 +175,7 @@ Directly from [Microsoft Documentation](https://learn.microsoft.com/en-us/window
 <tr>
 <td>Network Configuration Operators</td>
 <td>Built-in container<p>Domain-local security group</td>
-<td>Members of this group are granted privileges that allow them to manage configuration of networking features.<p><strong>Direct user rights:</strong> None<p><strong>Inherited user rights:</strong><p>Access this computer from the network<p>Add workstations to domain<p>Bypass tra# Poc’ing Beyond Domain Adminverse checking<p>Increase a process working set</td>
+<td>Members of this group are granted privileges that allow them to manage configuration of networking features.<p><strong>Direct user rights:</strong> None<p><strong>Inherited user rights:</strong><p>Access this computer from the network<p>Add workstations to domain<p>Bypass traverse checking<p>Increase a process working set</td>
 </tr>
 <tr>
 <td>Performance Log Users</td>

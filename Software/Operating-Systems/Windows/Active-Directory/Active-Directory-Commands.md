@@ -3,7 +3,6 @@ For exploitation see [[AD-Exploitation-Hub]] or general theory and definitions [
 
 BEWARE Active Directory cmdlets are only installed by default on Domain Controllers
 ```powershell
-
 import-module ActiveDirectory
 # General logic to syntax of powershell
 # Get-X = retrieve information of a object

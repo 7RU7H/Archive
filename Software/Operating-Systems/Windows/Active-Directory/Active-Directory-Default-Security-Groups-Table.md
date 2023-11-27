@@ -1,6 +1,7 @@
 # Active Directory Default Security Groups Table
 
-Consider [[Active-Directory-Privileged-Groups]] and this differs for [[Azure-Administration-Azure-Roles-And-RBAC]] where amongst many other thing primarilary ownship and contribution are considered over access control based on role in management cloud assets and data.
+Consider [[Active-Directory-Privileged-Groups]] and this differs for [[Azure-Administration-Azure-Roles-And-RBAC]] where amongst many other thing primarily ownership and contribution are considered over access control based on role in management cloud assets and data.
+
 Groups | Description
 --- | ---
 Domain Controllers | All domain controllers in the domain

@@ -8,7 +8,6 @@ Having started out never Adminstating AD to taking just trying to take OSCP(with
 1. Links are either external Documentation, Blogs or Internal links
 1. Red flags indicated with **!!RED-FLAG!!** - *"DO X OR BE SQUARE"**
 
-
 ## Configuring Users, Groups and Machines
 
 On the DC use `Search -> Active Directory Users and Computers` to configure users, groups or machines
@@ -29,7 +28,7 @@ Set-ADUser -ChangePasswordAtLogon $true -Identity <username> -Verbose
 #### Machine Organisation
 Segregating devices according to their use
 - May prevent over generalisation of a group policy
-- Seperating "Bring your own devices"
+- Separating "Bring your own devices"
 
 ## Configuring Group Policy
 
@@ -58,7 +57,7 @@ GPO are distributed to the network share called `SYSVOL`, which is store in the 
 
 ## Authentication
 
-- NetNTLM is considered obselete for good reason.
+- NetNTLM is considered obsolete for good reason.
 
 
 Consider a better password policy - view current:
@@ -73,7 +72,6 @@ A crude example:
 Set-ADDefaultDomainPasswordPolicy -Identity $domain -PasswordHistoryCount 10 -MinPasswordLength 12 -ComplexityEnabled $true
 ```
 
-
 ## Trees
 
 Domain Admins should not have Enterprise Admin level Privileges
@@ -82,4 +80,9 @@ Domain Admins should not have Enterprise Admin level Privileges
 
 Trust Direction
 1. One-way trust is contrary to the access directoion
-2. Two-way trust relationships are mutually authorise users form the other. By default join mulitple domains under a tree or forest will form a wo-way trust relationship.
+2. Two-way trust relationships are mutually authorise users form the other. By default join multiple domains under a tree or forest will form a two-way trust relationship.
+
+## References
+
+
+[UK government's Password advice](https://www.ncsc.gov.uk/collection/passwords/updating-your-approach)

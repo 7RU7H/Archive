@@ -1,10 +1,10 @@
 # Kerberos Authentication Defined
 
-The Kerberos authentication protocol is used by Microsoft, adopted from the Kerberos version 5 authentication protocol created by MIT and has been used as Microsoft's primary authentication mechanism since Windows Server 2003. Used to facilitate both authenication and authorization in Active Directory. Privilege Attribution Certificate contains all the relevant user information stored on each service - signed by target server and secret key value only known by DC. The DC acts a Key Distribution Centre(KDC) to authenicate client and allow authorization. SPN is the Service Principal Name and is a mapping between service and account, the KDC requires this to properly encrypt the service of the Service Ticket - with `Setspn.exe`.
+The Kerberos authentication protocol is used by Microsoft, adopted from the Kerberos version 5 authentication protocol created by MIT and has been used as Microsoft's primary authentication mechanism since Windows Server 2003. Used to facilitate both authentication and authorisation in Active Directory. Privilege Attribution Certificate contains all the relevant user information stored on each service - signed by target server and secret key value only known by DC. The DC acts a Key Distribution Centre(KDC) to authenticate client and allow authorisation. SPN is the Service Principal Name and is a mapping between service and account, the KDC requires this to properly encrypt the service of the Service Ticket - with `Setspn.exe`.
 
 ## Service Ticket
 
-KDC long-term secret key - derived from the krbtgt account password
+KDC long-term secret key - derived from the `krbtgt` account password
 - Used to encryupt the TGT (AS-REP) and sign the PAC (AS-REP and TGS-REP)
 Client long-term secret key - derived from the client account password
 - Used to check encyrpted timestamp (AS-REQ) and encrypt session key (AS-REP)
@@ -68,14 +68,14 @@ TGS\_REP	|		Packet contains:
 			A&B	 |	 are encrypted using session key from previously created TGT
 			C 	 |	 is encrypted with password hash of service account registered with the service
 
-Now the Client and Service can authenicate:
+Now the Client and Service can authenticate:
 
 AP\_REQ			username and timestamp (encrypted with session key associated with service ticket) and service ticket 			
 	
-1. Service performs to then send a service authenication		
+1. Service performs to then send a service authentication		
 1. Decrypted with service account password hash
 1. inspects packet data validity: username matches the decrypted one, 
-1. Group memberships are used the assigned the approiate permissions to user 
+1. Group memberships are used the assigned the appropriate permissions to user 
 
 This aides in mitigating against faking credentials 
 
