@@ -155,12 +155,16 @@ head -n $int # print $int number of the lines from the "head" of the file
 
 ## `iconv`
 ```bash
-iconv 		convert file format
-
-id		user id
-
-ln		create hardlink beetween files
-ln -s 		create softlink between files
+iconv 		# convert file format
+```
+`id`
+```bash
+id	#	user, group, and effective id
+```
+`ln`
+```bash
+ln	# 	create hardlink beetween files
+ln -s #		create softlink between files
 ```
 
 ## `ls`
@@ -232,14 +236,18 @@ ps -aux # -a - all with tty except session leaders; -u  -user orientated format;
 pwd		# print working directory
 
 reset		# reset shell
+```
+## `rm`
+```bash
+rm 		# remove file or folder, directories require -R switch: "rm -R dir"
+-r		# recursive directory removal
+rm -rf # FORCED recursive directory removal
 
-rm 		remove file or folder, directories require -R switch: "rm -R dir"
--r		recursive directory removal
 
-service		initialise services present in /etc/init.d
-sleep		good for linux system on network for the hanging of connection
+service		# initialise services present in /etc/init.d
+sleep		# good for linux system on network for the hanging of connection
 ss		 	# socket statistic (netstat alternative)
-stat		# file/file system's status
+stat $DIRECTORY	# file/file system's status from a directory --help lots of flags
 
 sudo -l	# Lists commands you are able to with an account! VERY USEFUL
 sudo -i	# run a login shell as the target user
@@ -265,7 +273,7 @@ tail		print last 10 lines of a file to stdout
 touch		# create file
 touch -- --preserve=mode # preserve a files permissions 
 
-uname		system info
+uname		# system info
 
 vimdiff		# opens vim with highlighting between multiple files
 

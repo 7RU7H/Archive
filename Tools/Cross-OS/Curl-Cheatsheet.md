@@ -166,7 +166,7 @@ curl https://httpbin.org/status/302  -w "%{response_code} %{redirect_url}" -s -o
 The proper way to upload files with CURL is to use **-F ( — form)** option, which will add **enctype=”multipart/form-data”** to the request.
 
 ```bash
-curl -F ‘data=@path/to/local/file’ UPLOAD_ADDRESS`
+curl -F 'data=@path/to/local/file' UPLOAD_ADDRESS
 ```
 
 ## Hacking with cURL

@@ -1,7 +1,9 @@
 # User and Group related commands
 
-For non-user-and-group related command see: [[Core-Linux-Commands]]
+**Warning `1 command` from this article was generated with the use of [Phind](https://www.phind.com/search?cache=pg2xr6qqorhhl45vb8flwxgu)  and human consultation of  testing `getent group groupname | cut -d: -f3` - listed references in references section  **
 
+
+For non-user-and-group related command see: [[Core-Linux-Commands]]
 ```bash
 # switch user "-l" is login switch
 su
@@ -41,17 +43,20 @@ chage -l jane
 
 
 # Lock account # places a ! in /etc/shadow
-usermod -L username 
-passwd -l username
-chage -e	change expiry date of passwd
-usermod -s 	change default shell of the user
+usermod -L $username 
+passwd -l $username
+chage -e	# change expiry date of passwd
+usermod -s 	# change default shell of the user
 
 # Groups 
 # list groups a user is a part of BUT THEN USE THIS FIND COMMAND 
 find / -group users -type f 2>/dev/null
 user* -* *group *
-useradd -G sudo username
-usermod -aG sudo username
+useradd -G sudo $username
+usermod -aG sudo $username
+
+# Get the GID for a group 
+getent group $groupname | cut -d: -f3
 
 groupadd $groupName
 # Add a group with a password
@@ -71,3 +76,8 @@ openssl passwd -1 -salt [salt] [password]
 ssh-keygen	generate a ssh key, store in /root/.ssh !! remember chmod 600
 ssh -i id_rsa root@ip
 ```
+
+
+## References
+
+[Phind](https://www.phind.com/search?cache=pg2xr6qqorhhl45vb8flwxgu) - References for "how to get the group id of a group in bash?" -> `getent group groupname | cut -d: -f3` number - [1](https://stackoverflow.com/questions/29357095/linux-how-to-get-group-id-from-group-name-and-vice-versa), [2](https://lindevs.com/get-group-id-gid-in-linux/), [3](https://askubuntu.com/questions/639990/what-is-the-group-id-of-this-group-name), [4](https://unix.stackexchange.com/questions/97657/how-to-list-groups-with-gid-in-redhat), [5](https://linuxize.com/post/how-to-list-groups-in-linux/), [6](https://superuser.com/questions/819199/how-can-i-get-the-unix-group-name-based-on-the-group-id), [7](https://devicetests.com/get-group-id-linux).

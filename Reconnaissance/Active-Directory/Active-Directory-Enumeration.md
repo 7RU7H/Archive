@@ -158,7 +158,6 @@ setspn -L $service
 ```
 
 #### File Shares
-
 ```powershell
 # If you have administrative privileges
 Get-WmiObject -Class Win32_Share -ComputerName *

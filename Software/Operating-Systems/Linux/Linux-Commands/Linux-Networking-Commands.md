@@ -19,6 +19,7 @@ arp
 	-n	# numerical address
 	-s 	# manually add addresses to the table
 	-d	# remove addresses from the table
+	-a  # All is the best  
 ```
 
 ## Dig
@@ -34,7 +35,6 @@ For activating IP forwarding, adding hosts and adding DNS servers
 echo "1" > /proc/sys/net/ipv4/ip_forward
 echo "10.10.10.10 domain.com subdomain.domain.com" | sudo tee -a /etc/hosts
 echo "nameserver x.x.x.x" > /etc/resolve.conf
-
 ```
 
 ## FTP
@@ -53,8 +53,11 @@ host -t SRRV _<service>_ tcp.url.com # Doman SRV lookup
 host -l <domain> <namesvr> # DNS transfer
 
 hostname	# convert hostnames to IP addresses and vice-versa
+```
 
-ifconfig	provides information on host (req. net-tools)
+## ifconfig
+```bash
+ifconfig	# provides information on host (req. net-tools)
 # flags:
 
 ```
@@ -162,6 +165,7 @@ share user x.x.x.x <sharename>$ # Mount windows share
 smbclient -U user \\\\<ip>\\<share> # Smb connect
 ```
 
+## tcpdump
 ```bash
 tcpdump 
 # flags: 

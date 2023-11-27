@@ -37,8 +37,7 @@ awk '{ print length, $0 }' | sort -n -s
 
 #### binwalk
 ```bash
-# Allows users to analyze and extract firmware images and helps in identifying code, 
-# files, and other information embedded in those, or inside another file, taking as an example steganography.
+# Allows users to analyze and extract firmware images and helps in identifying code, files, and other information embedded in those, or inside another file, taking as an example steganography.
 binwalk -e	extract known file types
 binwalk	-B	scan target files signatures
 binwalk -R	scan target files the specified sequence of byte
@@ -59,30 +58,32 @@ binwalk -d 	depth limit
 --silent				# silent errors
 -x [protocol://]host[:port] URL		# proxy!!!
 curl [option] [Protocol:HTTP, HTTPS, FTP, FTPS, SCP, SFTP, TFTP, DICT, TELNET, LDAP or FILE]
-curl --limit-rate 1234B http://www.ismycomputeron.com/		limit the connection speed to 1,234 bytes/second:
+curl --limit-rate 1234B http://www.ismycomputeron.com/		# limit the connection speed to 1,234 bytes/second:
 curl -#								display progress metre
-curl -o loginpage.html https://tryhackme.com/login		-o to save the file under a different name
-curl -O https://tryhackme.com/login				-O to save the file under the same name:
-curl -C-							resume broken download without specifying an offset
-curl -I -s https://tryhackme.com				fetch the headers silently
-curl -v http://ip:port 		-verbose
-curl -u 							user authentication
+curl -o loginpage.html https://tryhackme.com/login		# -o to save the file under a different name
+curl -O https://tryhackme.com/login # 	-O to save the file under the same name:
+curl -C-							# resume broken download without specifying an offset
+curl -I -s https://tryhackme.com	#			fetch the headers silently
+curl -v http://ip:port 		# -verbose
+curl -u 					# 		user authentication
 VERY USEFUL:
-curl -T								upload file!!!
-curl -x								if you have to view page through a proxy, specify the server
-curl -I								queries header not webpage
-curl -A								you can spcifiy user agent to make request to the server
-curl -:								follow redirects
-curl -b								specify cookies
-curl -X								specify http method!
+curl -T						# 		upload file!!!
+curl -x						#		if you have to view page through a proxy, specify the server
+curl -I						#		queries header not webpage
+curl -A						#		you can spcifiy user agent to make request to the server
+curl -:						#		follow redirects
+curl -b						#		specify cookies
+curl -X						#		specify http method!
 ```
 
 
 #### cut
 ```bash
+cut -d/ -f 2
+
 -d<delimiter> -f$int,			# cut by delimiter, for each field listed 1,2,3,4...
-````format for declaring a list is follows:
-            // List<datatype> <var n
+# format for declaring a list is follows:
+#            // List<datatype> <var n>
 ```
 
 #### find 

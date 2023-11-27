@@ -4,12 +4,12 @@
 
 File transfer protocol, client-server model - visit [[FTP]]
 
-## 22 - SSH & SFTP - Submodule of ssh
+## 22 - SSH & SFTP - Sub-module of ssh
 Default port 22 - Secure File transfer protocol - [[SSH-Cheatsheet]]
 
 ## 23 - TELNET
 
-Generall port 23, Telnet is cleartext and unsecure!
+General port 23, Telnet is cleartext and insecure!
 ```bash
 telnet $ip
 # THEN
@@ -288,6 +288,11 @@ SNMP Notification over SSH Transport Model
 ## 5355 - LLMNR 
 - [[Responder-Cheatsheet]] catches hashes from this port
 
+## 5432 - PostgreSQL
+
+[[PostgreSQL]]
+
+
 ## 5601 - Kibana
 
 Kibana provides search and data visualization capabilities for data indexed in Elasticsearch. The service runs per default on port 5601
@@ -295,8 +300,6 @@ Kibana provides search and data visualization capabilities for data indexed in E
 ## 5900 - VNC 
 
 [Virtual Network Computing](https://en.wikipedia.org/wiki/Virtual_Network_Computing) is a graphic desktop-sharing system that uses the [Remote Frame Buffer protocol (RFB)](https://en.wikipedia.org/wiki/RFB_protocol) to remotely control another [computer](https://en.wikipedia.org/wiki/Computer "Computer"). RDP software like Remmina can connect. [See redhat artical regarding screen sharing](https://www.redhat.com/sysadmin/vnc-screen-sharing-linux)
-
-
 ## 5985-6 - WinRM
 
 Windows Remote Management Protocol ports

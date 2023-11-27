@@ -1,13 +1,12 @@
-# Systemctl
+# `Systemctl`
 
-##  Service Management
-Starting and Stopping Services
+The `systemctl` command is used for Service Management on some Linux distributions 
 
 Starting
 ```bash
 sudo systemctl start application.service
 
-or simply
+# or simply
 
 sudo systemctl start application
 ```

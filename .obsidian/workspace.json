@@ -20,12 +20,12 @@
             }
           },
           {
-            "id": "1b83558ac28041b0",
+            "id": "8c5ce548ec559feb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/Wordlists/Wordlist-Tools/Cupp-Cheatsheet.md",
+                "file": "Tools/Host-Privilege-Escalation/PEASS-NG.md",
                 "mode": "source",
                 "source": false
               }
@@ -44,60 +44,12 @@
             }
           },
           {
-            "id": "7849cf463a21f611",
+            "id": "36b22339e5603520",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Networks/Network-Theory/Network-Protocols/Network-Protocols.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6cd170c0e290c304",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Services/Databases/MYSQL/MySQL-Cheatsheet.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8355d44e80b3a13e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Windows/Privilege-Escalation-Important-Windows-Locations.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9fb4ffd89f93f855",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Web-Application-Hacking/Web-Exploits/Path-Traversal/Path-Traversal.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "922c021125acb13d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tools/Web-Applications-Attacking/Content-Discovery-Tools/Gospider-Cheatsheet.md",
+                "file": "Exploitation/Shells/Encoded-Shell-Spawning.md",
                 "mode": "source",
                 "source": false
               }
@@ -133,7 +85,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Cup",
+                "query": "PEASS-NG",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -170,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/Wordlists/Wordlist-Tools/Cupp-Cheatsheet.md",
+                "file": "Tools/Host-Privilege-Escalation/PEASS-NG.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tools/Wordlists/Wordlist-Tools/Cupp-Cheatsheet.md",
+                "file": "Tools/Host-Privilege-Escalation/PEASS-NG.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -210,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tools/Wordlists/Wordlist-Tools/Cupp-Cheatsheet.md"
+                "file": "Tools/Host-Privilege-Escalation/PEASS-NG.md"
               }
             }
           },
@@ -233,6 +185,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-excalidraw-plugin:Create new drawing": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "switcher:Open quick switcher": false,
@@ -241,34 +194,34 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1b83558ac28041b0",
+  "active": "8c5ce548ec559feb",
   "lastOpenFiles": [
-    "Cryptography-And-Authentication/Password-Attacks/Password-Attacks.md",
-    "Tools/Wordlists/Wordlist-Tools/Cupp-Cheatsheet.md",
+    "Post-Exploitation/Lateral-Movement/Active-Directory-Lateral-Movement/Active-Directory-Lateral-Movement.md",
+    "Tools/Host-Privilege-Escalation/PEASS-NG.md",
+    "Post-Exploitation/Escaping-Restricted-Environments/Python-Sandbox-Bypasses.md",
+    "Post-Exploitation/Escaping-Restricted-Environments/Linux-Shell-Escapes.md",
+    "Post-Exploitation/Credentials-Harvesting/AD-Credential-Harvesting.md",
+    "Post-Exploitation/Data-Ex&Infiltration/Data-Exfiltration/Data-Exfiltration-Over-HTTP-and-HTTPS.md",
+    "Post-Exploitation/Data-Ex&Infiltration/Data-Exfiltration/Data-Exfiltration-Over-ICMP.md",
+    "Post-Exploitation/Data-Ex&Infiltration/Data-Exfiltration/Data-Exfiltration-Over-SSH.md",
+    "Post-Exploitation/Data-Ex&Infiltration/Git-Filtration-N-Escalation.md",
+    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Windows-File-Transfers.md",
     "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Linux-File-Transfers.md",
-    "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
-    "Services/Databases/MYSQL/MySQL-Cheatsheet.md",
-    "Networks/Network-Theory/Network-Protocols/Network-Protocols.md",
-    "Services/Databases/MYSQL/MySQL-Hacking.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Privilege-Escalation-Important-Windows-Locations.md",
-    "Tools/Web-Applications-Attacking/Content-Discovery-Tools/Gospider-Cheatsheet.md",
-    "Web-Application-Hacking/Web-Exploits/Path-Traversal/Path-Traversal.md",
-    "Tools/Shells/SSH-Cheatsheet.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Privilege-Escalation-Important-Linux-Locations.md",
-    "Software/Operating-Systems/Linux/Linux-Commands/Linux-One-Liners-To-Rule-Them-All.md",
-    "Reconnaissance/Active-Information-Gathering/RPC/RPC-Recon.md",
-    "Development/Languages/Go/Golang.md",
-    "Cryptography-And-Authentication/De-Or-En-Cryption.md",
-    "Software/Operating-Systems/Linux/Linux-Commands/Linux-Module-Commands.md",
-    "Security-Disciplines/Incident-Response/Five-Windows-Forensic-Artefacts-for-Every-Incident-Response.md",
-    "Reverse-Engineering/Reverse-Engineering-Tools.md",
-    "Reverse-Engineering/Reverse-Engineering.md",
-    "Post-Exploitation/Stealth/Evasion/Antivirus-Evasion/Obfuscation-Principles.md",
-    "Post-Exploitation/Stealth/Evasion/Evading-IPS-And-IDS.md",
-    "Tools/Wordlists/Wordlist-Tools/MP32-Cheatsheet.md",
-    "Software/Operating-Systems/Linux/Linux-Commands/Linux-Networking-Commands.md",
+    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/File-Transfers.md",
+    "Reconnaissance/Active-Information-Gathering/Unknown-Service-Recon.md",
+    "Reconnaissance/Active-Information-Gathering/Vulnerability-Scanning.md",
+    "Reconnaissance/Active-Information-Gathering/Web-Analysis/HTTP(S)-Header-Recon.md",
+    "Tools/Web-Applications-Attacking/Nikto-Cheatsheet.md",
+    "Reconnaissance/Active-Information-Gathering/SNMP/SNMP-Recon-Cheatsheet.md",
+    "Reconnaissance/Active-Information-Gathering/POP3/POP3-Recon.md",
+    "Reconnaissance/Active-Information-Gathering/RDP/RDP-Recon.md",
+    "Reconnaissance/Active-Information-Gathering/IMAP/IMAP-Recon-Cheatsheet.md",
+    "Reconnaissance/Active-Information-Gathering/SMTP/SMTP-Recon-Cheatsheet.md",
+    "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
+    "Reconnaissance/Active-Information-Gathering/DNS/DNS-Active-Recon.md",
+    "Reconnaissance/Active-Directory/Active-Directory-Footholding.md",
+    "Reconnaissance/Active-Directory/Active-Directory-Enumeration.md",
+    "Software/Operating-Systems/Linux/Linux-Commands/Systemctl.md",
     "Software/File-Typology/Logs",
     "Development/Languages/Untitled",
     "Web-Application-Hacking/Web-Exploits",

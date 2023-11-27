@@ -1,4 +1,4 @@
-
+# Python Tooling Libraries
 ## 2to3 Python Tool or AI
 
 [2to3](https://docs.python.org/3/library/2to3.html)
@@ -6,7 +6,7 @@
 
 ## Python2, 3 Exploit scripts and Hell itself
 
-Many hours of head banging of keyboard and searching for best answer for the future it seems python2 lives on the virtual environments - dead but virtualised. This has probably been the most annoying thing to deal with as the world has moved on but exploit scripts don't and neither do the vulnerablities really in a historic context python2 is nightmare also - i.e what if in 50 years we are stumped by this problem. 
+Many hours of head banging of keyboard and searching for best answer for the future it seems `Python2` lives on the virtual environments - dead but virtualised. This has probably been the most annoying thing to deal with as the world has moved on but exploit scripts don't and neither do the vulnerabilities really in a historic context `Python2` is nightmare also - i.e what if in 50 years we are stumped by this problem. 
 
 ```bash
 #!/bin/bash
@@ -35,7 +35,7 @@ pyenv global 2.7.18
 pyenv global system
 pyenv init
 ```
-add to your shell's .rc the below is for `zsh`'s `.zshrc`
+add to your shell's `.rc` the below is for `zsh`'s `.zshrc`
 ```bash
 # Load pyenv automatically by appending
 # the following to 
@@ -58,10 +58,10 @@ sudo pip2 install impacket
 
 ## Python Circles of Hell -  [Blackhillinfosec](https://www.blackhillsinfosec.com/wp-content/uploads/2020/08/SLIDES_PrettyLittlePythonSecretsEpisode1.pdf)
 
-- Don't cross the streams `apt-get` and `pip` varients - use only one
+- Don't cross the streams `apt-get` and `pip` variants - use only one
 - Use `VirtualEnvs` - `pyenv` for [Kali is official EOL](https://www.kali.org/docs/general-use/using-eol-python-versions/)
-- Pipx
-	- *“... Pipx is made specifically for application installation, as it adds isolation yet still makes the apps available in your shell: pipx creates an isolated environment for each application and its associated packages.”*  https://github.com/pipxproject/pipx
+- `pipx`
+	- *“... `pipx` is made specifically for application installation, as it adds isolation yet still makes the apps available in your shell: `pipx` creates an isolated environment for each application and its associated packages.”*  https://github.com/pipxproject/pipx
 ```bash
 python3 -m pip install pipx
 pipx ensurepath
@@ -87,3 +87,7 @@ of writing)
 ## References
 
 [Blackhillinfosec](https://www.blackhillsinfosec.com/wp-content/uploads/2020/08/SLIDES_PrettyLittlePythonSecretsEpisode1.pdf)
+[Kali is official EOL](https://www.kali.org/docs/general-use/using-eol-python-versions/)
+[Github- pipx](https://github.com/pipxproject/pipx)
+[ben leeyr](https://benleeyr.wordpress.com/2022/01/30/pyenv-installation-on-kali/)
+[2to3](https://docs.python.org/3/library/2to3.html)

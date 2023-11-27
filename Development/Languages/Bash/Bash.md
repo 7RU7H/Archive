@@ -149,7 +149,7 @@ for ((i=$x;i<=$y;i++))
 ```
 Before using the following functions, read below !For a sequence of numbers, you might use `seq`:
 ```bash
-for i in $(seq $x $y)
+for i in $(seq $x $y); do $CMD; done
 ```
 If you really need brace expansion, you can use `eval`:
 ```bash

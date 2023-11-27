@@ -6,23 +6,23 @@ Arch-based will be covered more in future, BUT Kali is where this is starting wi
 
 ```bash
 # APT & other disto System stuff:
-apt			is pacman for ubuntu, debian distos
-apt-cache search	display information stored in internal cached package database
-apt show package	display description
+apt			# is pacman for ubuntu, debian distos
+apt-cache search # 	display information stored in internal cached package database
+apt show package	# display description
 apt upgrade
 apt remove
 apt ermove --purge
 apt autoremove
 apt update
 apt install
-add-apt-repository	add addition repositories
-dpkg			package installer for ubuntu and debian
+add-apt-repository	# add addition repositories
+dpkg			# package installer for ubuntu and debian
 apt-get dist-upgrade # Offsec kali linux
 
-pacman			is apt for arch 
+pacman			# is apt for arch 
 add-apt-repository --remove ppa:PPA_Name/ppa
 apt remove
-lsb_release -a for version of unix
+lsb_release -a # for version of unix
 ```
 
 
@@ -34,12 +34,12 @@ sudo apt-get install <list of packages kept back>
 
 ## Disk Management
 ```bash
-# du 		diskusage
--a		list files with directory
--h		human readable
--c		print total size
--d		specify depth
---time		get timestamp
+du 		# diskusage
+-a		# list files with directory
+-h		# human readable
+-c		# print total size
+-d		# specify depth
+--time		# get timestamp
 
 # Lost a file?
 lsof | grep -i filename

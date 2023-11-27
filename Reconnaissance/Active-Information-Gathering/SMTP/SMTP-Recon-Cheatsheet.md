@@ -1,6 +1,10 @@
 # SMTP Cheatsheet
 
+*"You can't use smtp to read email, you need to use imap. pop3 won't help because it only lets you read the Inbox. Depending on what you mean by "sent successfully", a successful return from the send method will tell you what you want to know."* - [Bill Shannon on StackOverflow](https://stackoverflow.com/questions/40423574/read-sent-mails-using-smtp-java)... [[IMAP-Recon-Cheatsheet]] 
+
 Simple Mail Transport Protocol (SMTP) - Vulnerable Email Servers can contain valuable information. See [[Network-Protocols]] for port information.
+
+
 
 See [Debug SMTP connection for great description of SMTP commands that occuring exploitation of MAIL servers](https://www.sparkpost.com/blog/how-to-check-an-smtp-connection-with-a-manual-telnet-session/)
 
