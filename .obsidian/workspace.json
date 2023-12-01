@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Software/Operating-Systems/Windows/Windows-Commands/WMI-Commands.md",
+                "file": "Artificial-Intelligence/AI-ChatBots-Whispering.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Software/Operating-Systems/Windows/Windows-Commands/WMI-Commands.md",
+                "file": "Artificial-Intelligence/AI-ChatBots-Whispering.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Software/Operating-Systems/Windows/Windows-Commands/WMI-Commands.md",
+                "file": "Artificial-Intelligence/AI-ChatBots-Whispering.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Software/Operating-Systems/Windows/Windows-Commands/WMI-Commands.md"
+                "file": "Artificial-Intelligence/AI-ChatBots-Whispering.md"
               }
             }
           },
@@ -159,6 +159,8 @@
   },
   "active": "03c4e5725d38bd70",
   "lastOpenFiles": [
+    "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
+    "Software/Operating-Systems/Windows/Windows-Commands/WMI-Commands.md",
     "Software/Operating-Systems/Windows/Windows-Commands/Windows-Networking-Commands.md",
     "Software/Operating-Systems/Windows/Windows-Commands/Windows-Commands.md",
     "Software/Operating-Systems/Windows/Windows-Commands/Icacls-Command.md",
@@ -183,8 +185,6 @@
     "Post-Exploitation/Data-Ex&Infiltration/Git-Filtration-N-Escalation.md",
     "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Windows-File-Transfers.md",
     "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Linux-File-Transfers.md",
-    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/File-Transfers.md",
-    "Reconnaissance/Active-Information-Gathering/Unknown-Service-Recon.md",
     "Software/File-Typology/Logs",
     "Development/Languages/Untitled",
     "Web-Application-Hacking/Web-Exploits",

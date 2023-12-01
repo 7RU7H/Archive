@@ -2,7 +2,7 @@
 ## 2to3 Python Tool or AI
 
 [2to3](https://docs.python.org/3/library/2to3.html)
-[[AI-Whispering]]
+[[AI-ChatBots-Whispering]]
 
 ## Python2, 3 Exploit scripts and Hell itself
 
