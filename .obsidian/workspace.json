@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Networks/Network-Theory/Network-Protocols/RDP.md",
+                "file": "Tools/Web-Applications-Attacking/Nuclei.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Networks/Network-Theory/Network-Protocols/RDP.md",
+                "file": "Tools/Web-Applications-Attacking/Nuclei.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Networks/Network-Theory/Network-Protocols/RDP.md",
+                "file": "Tools/Web-Applications-Attacking/Nuclei.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Networks/Network-Theory/Network-Protocols/RDP.md"
+                "file": "Tools/Web-Applications-Attacking/Nuclei.md"
               }
             }
           },
@@ -159,6 +159,10 @@
   },
   "active": "03c4e5725d38bd70",
   "lastOpenFiles": [
+    "README.md",
+    "Tools/Web-Applications-Attacking/Nuclei.md",
+    "Tools/Web-Applications-Attacking/Burpsuite/BurpSuite.md",
+    "Networks/Network-Theory/Network-Protocols/RDP.md",
     "Software/Operating-Systems/Linux/Linux-Commands/Linux-One-Liners-To-Rule-Them-All.md",
     "Artificial-Intelligence/AI-ChatBots-Whispering.md",
     "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
@@ -181,10 +185,6 @@
     "Post-Exploitation/Escaping-Restricted-Environments/Python-Sandbox-Bypasses.md",
     "Post-Exploitation/Escaping-Restricted-Environments/Linux-Shell-Escapes.md",
     "Post-Exploitation/Credentials-Harvesting/AD-Credential-Harvesting.md",
-    "Post-Exploitation/Data-Ex&Infiltration/Data-Exfiltration/Data-Exfiltration-Over-HTTP-and-HTTPS.md",
-    "Post-Exploitation/Data-Ex&Infiltration/Data-Exfiltration/Data-Exfiltration-Over-ICMP.md",
-    "Post-Exploitation/Data-Ex&Infiltration/Data-Exfiltration/Data-Exfiltration-Over-SSH.md",
-    "Post-Exploitation/Data-Ex&Infiltration/Git-Filtration-N-Escalation.md",
     "Software/File-Typology/Logs",
     "Development/Languages/Untitled",
     "Web-Application-Hacking/Web-Exploits",

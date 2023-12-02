@@ -10,8 +10,6 @@ xfreerdp /u:$username /p:$Password /v:$IP
 rdesktop $ip
 ```
 
-
-
 ## Enumerating RDP
 
 Modified from HackTricks - [[Nmap-Cheatsheet]], [[Nmap-AllTheScripts]]

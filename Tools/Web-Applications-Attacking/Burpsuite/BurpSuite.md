@@ -68,7 +68,7 @@ Other Tabs:
 |`Ctrl + Shift + I`|Intruder tab|
 |`Ctrl + Shift + R`|Repeater tab|
 
-# Cool things for the cmd more
+# Cool things for the `cmd` more
 
 - Builtin Browser, never setup the burp certificate with your own browser every again!
 Go to `Project settings -> no sandbox for builtin browser`
