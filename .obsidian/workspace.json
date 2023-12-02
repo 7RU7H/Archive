@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Artificial-Intelligence/AI-ChatBots-Whispering.md",
+                "file": "Networks/Network-Theory/Network-Protocols/RDP.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "PEASS-NG",
+                "query": "'ls -1'",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Artificial-Intelligence/AI-ChatBots-Whispering.md",
+                "file": "Networks/Network-Theory/Network-Protocols/RDP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Artificial-Intelligence/AI-ChatBots-Whispering.md",
+                "file": "Networks/Network-Theory/Network-Protocols/RDP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Artificial-Intelligence/AI-ChatBots-Whispering.md"
+                "file": "Networks/Network-Theory/Network-Protocols/RDP.md"
               }
             }
           },
@@ -159,6 +159,8 @@
   },
   "active": "03c4e5725d38bd70",
   "lastOpenFiles": [
+    "Software/Operating-Systems/Linux/Linux-Commands/Linux-One-Liners-To-Rule-Them-All.md",
+    "Artificial-Intelligence/AI-ChatBots-Whispering.md",
     "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
     "Software/Operating-Systems/Windows/Windows-Commands/WMI-Commands.md",
     "Software/Operating-Systems/Windows/Windows-Commands/Windows-Networking-Commands.md",
@@ -183,8 +185,6 @@
     "Post-Exploitation/Data-Ex&Infiltration/Data-Exfiltration/Data-Exfiltration-Over-ICMP.md",
     "Post-Exploitation/Data-Ex&Infiltration/Data-Exfiltration/Data-Exfiltration-Over-SSH.md",
     "Post-Exploitation/Data-Ex&Infiltration/Git-Filtration-N-Escalation.md",
-    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Windows-File-Transfers.md",
-    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Linux-File-Transfers.md",
     "Software/File-Typology/Logs",
     "Development/Languages/Untitled",
     "Web-Application-Hacking/Web-Exploits",
