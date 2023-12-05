@@ -139,6 +139,10 @@ Armory
 ```go
 // Because why not
 armory install all 
+
+
+seatbelt -- -group=all full
+
 ```
 
 Shellcode generation

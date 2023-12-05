@@ -103,10 +103,10 @@ Contents
 
 #### Content Discovery Tools
 In no particular order
-1. [Gobuster](https://github.com/OJ/gobuster)
-1. [ffuf](https://github.com/ffuf/ffuf)
-1. [Wfuzz](https://github.com/xmendez/wfuzz)
-1. [Feroxbuster](https://github.com/epi052/feroxbuster) - PAUSABLE AND EDITABLE
+1. [Gobuster](https://github.com/OJ/gobuster) - [[Gobuster-Cheatsheet]]
+1. [ffuf](https://github.com/ffuf/ffuf) - [[FFUF-Cheatsheet]]
+1. [Wfuzz](https://github.com/xmendez/wfuzz) - [[WFUZZ]]
+1. [Feroxbuster](https://github.com/epi052/feroxbuster) - PAUSABLE AND EDITABLE - [[Feroxbuster]]
 1. [TurboIntruder](https://github.com/PortSwigger/turbo-intruder) - Burp plugin
 
 #### Content Discovery Wordlists

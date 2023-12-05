@@ -22,7 +22,7 @@ Bruteforcing Windows passwords with Kerberos is much faster than any other appro
 ./kerbrute_linux_amd64 passwordspray -d lab.ropnop.com domain_users.txt Password123  # Brute force one user (take care of policy!) 
 ./kerbrute_linux_amd64 bruteuser -d lab.ropnop.com passwords.lst thoffman  
 # General bruteforce (from username:password wordlist or from stdin) 
-./kerbrute -d lab.ropnop.com bruteforce -`
+./kerbrute -d lab.ropnop.com bruteforce -
 ```
 
 

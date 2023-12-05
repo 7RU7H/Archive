@@ -1,7 +1,7 @@
 # Unknown Service Recon
 
 ```bash
-amap -d $IP $PORT
+amap -d $IP $PORT | tee -a $PORT.amap
 ```
 
 

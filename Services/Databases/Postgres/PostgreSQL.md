@@ -28,7 +28,7 @@ postgres=# \q                        -- quit
 <DATABASE>=# select * from TabLeNameHeRE -- Case insensitive
 ```
 
-[HackTricks](https:--book.hacktricks.xyz/network-services-pentesting/pentesting-postgresql#rce) states that *"Since [version 9.3](https:--www.postgresql.org/docs/9.3/release-9-3.html) only **super users** and member of the group `**pg_execute_server_program**` can use copy for RCE.
+[HackTricks](https:--book.hacktricks.xyz/network-services-pentesting/pentesting-postgresql#rce) states that *"Since [version 9.3](https:www.postgresql.org/docs/9.3/release-9-3.html) only **super users** and member of the group `**pg_execute_server_program**` can use copy for RCE.
 
 ```sql
 #PoC

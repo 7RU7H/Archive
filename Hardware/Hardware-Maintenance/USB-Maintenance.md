@@ -47,8 +47,8 @@ umount $mountpoint
 mkfs.vfat /dev/$sdxy 
 # Format to NTFS
 mkfs.ntfs /dev/$sdxy 
-```
 
+```
 
 Encrypting a USB flash memory - [THM](https://tryhackme.com/room/linuxsystemhardening):
 ```bash
@@ -67,7 +67,6 @@ sudo mount /dev/mapper/EDCdrive /media/secure-USB
 # Check Settings:
 sudo cryptsetup luksDump /dev/sdb1
 ```
-
 
 ## References
 

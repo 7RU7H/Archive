@@ -7,7 +7,7 @@
 ## Basics
 
 We choose a wordlist assign the :FUZZ keyword to denote that will then at the point /FUZZ; this can also be embedded in file path
-```
+```bash
 ffuf -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-small.txt:FUZZ -u $URL/FUZZ
 ```
 The `-t` flag can control the amount threads on `ffuf`, careful of causing an negligent DoS attack through sending too many requests. Filters and Matcher option help reduce output - very important. Filter code `-fc 403` or match by code  `-mc 200` and filter size `-fs 0` display only the most relevant to find the what *maybe* there.
