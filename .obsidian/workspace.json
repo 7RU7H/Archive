@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "03c4e5725d38bd70",
+            "id": "9ec083d059c9e95c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Reconnaissance/Git-Repository-Hacking.md",
+                "file": "Tools/Web-Applications-Attacking/Content-Discovery-Tools/FFUF-Cheatsheet.md",
                 "mode": "source",
                 "source": false
               }
@@ -32,48 +32,12 @@
             }
           },
           {
-            "id": "c10c70dd3aa41f61",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Linux-File-Transfers.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "f6bbbb14d9074e97",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "Reconnaissance/Active-Directory/Active-Directory-Footholding.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9ec083d059c9e95c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tools/Web-Applications-Attacking/Content-Discovery-Tools/FFUF-Cheatsheet.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "cf0d52e281f7fa57",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,48 +68,12 @@
             }
           },
           {
-            "id": "e4d31b6fcc088c1d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tools/AD-Offensive/Kerbrute-Cheatsheet.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "51eca7afa0f93efb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "Tools/C2/Sliver/Sliver-Cheatsheet.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0ee58b0297190ca3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Web-Application-Hacking/CMS/Joomla.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "530ce83a7f6acaa4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Services/Databases/Postgres/PostgreSQL.md",
                 "mode": "source",
                 "source": false
               }
@@ -181,7 +109,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "joomla",
+                "query": "Linux-Hardening",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -198,8 +126,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -219,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+                "file": "Tools/C2/Sliver/Sliver-Cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -236,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+                "file": "Tools/C2/Sliver/Sliver-Cheatsheet.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -259,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md"
+                "file": "Tools/C2/Sliver/Sliver-Cheatsheet.md"
               }
             }
           },
@@ -291,34 +218,34 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "cf0d52e281f7fa57",
+  "active": "51eca7afa0f93efb",
   "lastOpenFiles": [
+    "Securing-Networks-And-Systems/Hardening/Linux-Hardening.md",
+    "Security-Disciplines/Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Blue-KOTH-Battlegrounds-Cheatsheet-Linux.md",
+    "Security-Disciplines/Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Blue-KOTH-Battlegrounds-Cheatsheet-Windows.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+    "Tools/C2/Sliver/Sliver-Cheatsheet.md",
+    "Services/Databases/Postgres/PostgreSQL.md",
     "Web-Application-Hacking/CMS/Joomla.md",
+    "Reconnaissance/Active-Directory/Active-Directory-Enumeration.md",
+    "Tools/AD-Offensive/Kerbrute-Cheatsheet.md",
+    "Reconnaissance/Valid-Usernames.md",
+    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/File-Transfers.md",
+    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Linux-File-Transfers.md",
+    "Tools/Web-Applications-Attacking/Content-Discovery-Tools/FFUF-Cheatsheet.md",
+    "Reconnaissance/Git-Repository-Hacking.md",
+    "Persistence/Linux-Persistence.md",
+    "Software/Operating-Systems/Linux/Linux-Commands/Linux-Compression-Commands.md",
+    "Development/Languages/Bash/Bash.md",
     "Tools/Authentication-Attacking/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
     "Reconnaissance/Active-Directory/Active-Directory-Footholding.md",
     "Tools/Authentication-Attacking/Bruteforce-Login-Tools/Medusa-Cheatsheet.md",
     "Tools/Authentication-Attacking/Bruteforce-Login-Tools/Crowbar-CheatSheat.md",
-    "Tools/C2/Sliver/Sliver-Cheatsheet.md",
     "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Privilege-Escalation.md",
     "Tools/Host-Privilege-Escalation/Windows/Seatbelt-Helpsheet.md",
     "Tools/AD-Offensive/Impacket/Impacket-Cheatsheet.md",
-    "Tools/AD-Offensive/Kerbrute-Cheatsheet.md",
-    "Reconnaissance/Active-Directory/Active-Directory-Enumeration.md",
-    "Reconnaissance/Valid-Usernames.md",
     "Reconnaissance/Active-Information-Gathering/SNMP/SNMP-Recon-Cheatsheet.md",
-    "Services/Databases/Postgres/PostgreSQL.md",
     "Reconnaissance/Email-Harvesting.md",
-    "Reconnaissance/Port-Knocking.md",
-    "Reconnaissance/SOCMINT.md",
-    "Reconnaissance/Passive-Information-Gathering/Passive-Recon.md",
-    "Reconnaissance/Passive-Information-Gathering/DNS-Recon-Passive.md",
-    "Reconnaissance/Passive-Information-Gathering/Search-Engine-Dorking.md",
-    "Reconnaissance/Passive-Information-Gathering/Website-Recon.md",
-    "Reconnaissance/OSINT/OSINT.md",
-    "Reconnaissance/OSINT/OSINT-People.md",
-    "Reconnaissance/HUMINT/User-Active-Recon.md",
-    "Services/Databases/MYSQL/MySQL-Cheatsheet.md",
-    "Reconnaissance/Active-Information-Gathering/Unknown-Service-Recon.md",
     "Software/File-Typology/Logs",
     "Development/Languages/Untitled",
     "Web-Application-Hacking/Web-Exploits",

@@ -23,7 +23,7 @@ echo
 
 ```
 
-# Special Bash Variables:
+#### Special Bash Variables:
 ```bash
 $0 			# The name of the Bash script
 $1 - $9 	# The first 9 arguments to the Bash script
@@ -37,14 +37,14 @@ $RANDOM 	# A random number
 $LINENO 	# The current line number in the script
 ```
 
-# Reading User Input
+#### Reading User Input
 ```bash
 read var		
 read -p	'Your input: ' var		#specify a prompt
 read -sp 'Your silent input: ' var 	#specify prompt for silent input
 ```
 
-# Conditional Statements
+#### Conditional Statements
 ```bash
 if [ evaluation ]
 then
@@ -59,7 +59,7 @@ else
 fi
 ```
 
-# Operators
+#### Operators
 ```bash
 # Logical Operators
 && AND		# is boolean operator! Executed based previous output...
@@ -116,7 +116,7 @@ id++, id–					# variable post-increment, post-decrement
 =, *=, /=, %=, +=, -=, «=, »=, &=, ^=, |= # For Arithmetic
 ```
 
-# For loop structure
+#### For loop structure
 ```bash
 for var-name in <list>
 do
@@ -156,7 +156,7 @@ If you really need brace expansion, you can use `eval`:
 for i in $(eval echo {$x..$y})
 ```
 
-# Using Files
+#### Using Files
 ```bash
 FILENAME=file.txt
 LINES=$(cat $FILENAME)
@@ -166,7 +166,7 @@ do
 done
 ```
 
-# Function definition 
+#### Function definition 
 You don't have to use the function keyword like C.
 ```bash
 function testfunc () #compond_cmd [>,<,>>] file
@@ -189,7 +189,7 @@ Declare a function with
 testfunc ## arg1 arg2 .. 
 ```
 
-# Case statements
+#### Case statements
 These are like switch statements 
 ```bash
 case "$Variable" in
@@ -201,7 +201,7 @@ esac
 ```
 [string variant](https://stackoverflow.com/questions/2283640/case-statements-evaluate-to-strings#2283814)
 
-# Parametre Expansion: indirection, listing and length
+#### Parametre Expansion: indirection, listing and length
 ```bash
 param="advanced"; parade="bash";
 name=(gnu not unix)
@@ -225,7 +225,7 @@ DECOMMA=${LIST:0:LENLIST}
 echo $DECOMMA
 ```
 
-# Arrays
+#### Arrays
 ```bash
 array=(zero one two );
 array+=( three )
@@ -235,7 +235,7 @@ echo "${array[1]}"
 echo ${!array[@]}
 ```
 
-# Session portability
+#### Session portability
 ```bash
 sudo bash -c ""
 $(declare -p parametres; declare -f functions) # put code here run code"
@@ -243,7 +243,7 @@ ssh remotehost "
 $(declare -p parametres; declare -f functions) # put code here run code"
 ```
 
-# Arguments and Usage
+#### Arguments and Usage
 ```bash
 if [ "$#" -ne $ARGTOTAL ]; then
 	echo "Usage: $0 <excepted> <arguments>"
@@ -251,7 +251,7 @@ if [ "$#" -ne $ARGTOTAL ]; then
 fi
 ```
 
-## Simple Port Scanner
+#### Simple Port Scanner
 ```bash
 #!/bin/bash
 # Takes an IP as an argument
@@ -268,7 +268,7 @@ echo "Done"
 ```
 
 
-## Check if Root/Sudo used
+#### Check if root or `sudo` used
 From [StackOverFlow](https://stackoverflow.com/questions/42875809/checking-sudo-in-bash-script-with-if-statements)
 ```bash
 if [[ "$EUID" = 0 ]]; then
@@ -284,20 +284,20 @@ else
 fi
 ```
 
-## Binary to Decimal Conversion
+#### Binary to Decimal Conversion
 
 ```bash
 onebyte=10100101
 echo "$((2#$onebyte))"
 ```
 
-## Recursive Directory Making
+#### Recursive Directory Making
 
 ```bash
 mkdir -p ~/parent-directory/{child-directory-1,child-directory-2,child-directory-3}
 ```
 
-## Coloring  Stdout
+#### Colouring  `stdout`
 
 ```bash
 BOLD="\e[1m"  
@@ -312,3 +312,10 @@ grey="\033[0;37m"
 reset="\033[m"
 ${BOLD}[+]USAGE:${NORMAL} ./search.sh  (OPTIONS)
 ```
+
+
+## References
+
+[More from askubuntu](https://askubuntu.com/questions/1057870/bash-script-for-i-in-x-y#1057897)
+[StackOverFlow](https://stackoverflow.com/questions/42875809/checking-sudo-in-bash-script-with-if-statements)
+[string variant](https://stackoverflow.com/questions/2283640/case-statements-evaluate-to-strings#2283814)[]

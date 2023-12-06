@@ -27,6 +27,14 @@ Counter Hidden Bash Shells
 exec >/dev/tty
 ```
 
+Defending against ssh session spying - [infosecmatter blog on ssh sniffing](https://www.infosecmatter.com/ssh-sniffing-ssh-spying-methods-and-defense/)
+```bash
+# is ptrace enabled?
+sysctl kernel.yama.ptrace_scope
+# ptrace only allows for one observer at a time!
+ps axwwf | grep -B2 $$
+```
+
 #### File system
 
 File permission of the earliest to latest files in the a directory
@@ -74,3 +82,4 @@ if (strpos($ip, ';') !== false) {
 ## References
 
 [ethicalhackerclub](https://ethicalhackers.club/hack-the-box-battlegrounds-cyber-mayhem-attack-defense-review-strategies-tips-and-tricks/)
+[infosecmatter blog on ssh sniffing](https://www.infosecmatter.com/ssh-sniffing-ssh-spying-methods-and-defense/)

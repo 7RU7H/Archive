@@ -119,6 +119,8 @@ exit
 // Within a sessions run a armory package eg:
 // Enumeration
 seatbelt -h
+// -- to segment flags and arguements
+seatbelt -- -group=all full
 sharpup audit
 // Kerberoasting
 rubeus kerberoast
@@ -139,10 +141,6 @@ Armory
 ```go
 // Because why not
 armory install all 
-
-
-seatbelt -- -group=all full
-
 ```
 
 Shellcode generation

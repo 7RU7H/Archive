@@ -48,8 +48,6 @@ rfkill block wifi
 rfkill block bluetooth
 ```
 
-
-
 ## Iptables
 
 Log new connections to a box [Ippsec](https://www.youtube.com/watch?v=ABVR8EgXsQU&t=186)
@@ -215,7 +213,7 @@ Sometimes it pays to think similarly to protercting a domain controller, which d
 
 #### SSH Related
 
-[SSH](https://linuxhint.com/disable_root_ssh_debian/)
+Disable root ssh [SSH](https://linuxhint.com/disable_root_ssh_debian/) 
 
 Helpful connect unwanted ssh connections back to there machine lol. 
 ```bash
@@ -264,6 +262,13 @@ systemctl restart sshd
 sshd -T |grep kexalgorithms
 ```
 
+Defending against ssh session spying - [infosecmatter blog on ssh sniffing](https://www.infosecmatter.com/ssh-sniffing-ssh-spying-methods-and-defense/)
+```bash
+# is ptrace enabled?
+sysctl kernel.yama.ptrace_scope
+# ptrace only allows for one observer at a time!
+ps axwwf | grep -B2 $$
+```
 
 ## Sudo / Doas
 

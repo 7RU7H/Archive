@@ -1,6 +1,8 @@
 # Linux Compression Commands
 
-## Just View 
+
+
+## Just View in GUI 
 
 ```bash
 engrampa $file
@@ -27,7 +29,6 @@ Mass Decompression
 for i in $(ls -1 | grep '.zip'); do unzip $i; done
 # .7z
 for i in $(ls -1 | grep '.7z'); do 7z x $ip; wait; done
-
 ```
 
 ## Compression
@@ -35,6 +36,16 @@ for i in $(ls -1 | grep '.7z'); do 7z x $ip; wait; done
 7z add to an archive
 ```bash
 7z a archive.7z $toArchiveDir
+```
+
+## Multi-file Archives
+
+Multiarchive zip files 
+```bash
+# if the result `ls` would be  archive1.zip, archive2.zip and archive3.zip
+# And require each combined to be a actual archive that can be decompressed
+cat archive*.zip > combined.zip
+unzip combined.zip
 ```
 
 ## References
