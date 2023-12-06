@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "f49299c65a68dcbe",
+        "id": "79ded2ec5850e64b",
         "type": "tabs",
         "children": [
           {
-            "id": "fd639ce228b303a1",
+            "id": "29c215ce85f70e66",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Windows/Bypassing-UAC/Bypassing-Windows-User-Account-Control.md",
+                "file": "Tools/Wordlists/Generating-Likely-Passwords.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Windows/Bypassing-UAC/Bypassing-Windows-User-Account-Control.md",
+                "file": "Tools/Wordlists/Generating-Likely-Passwords.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Windows/Bypassing-UAC/Bypassing-Windows-User-Account-Control.md",
+                "file": "Tools/Wordlists/Generating-Likely-Passwords.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Windows/Bypassing-UAC/Bypassing-Windows-User-Account-Control.md"
+                "file": "Tools/Wordlists/Generating-Likely-Passwords.md"
               }
             }
           },
@@ -157,19 +157,22 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "fd639ce228b303a1",
+  "active": "29c215ce85f70e66",
   "lastOpenFiles": [
+    "Services/Services-Hub.md",
+    "Services/Databases/MYSQL/MySQL-SQL-Injection-Cheatsheet.md",
+    "Tools/Wordlists/Generating-Likely-Passwords.md",
+    "Tools/Wordlists/Generating-Usernames-And-Emails.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Bypassing-UAC/Bypassing-Windows-User-Account-Control.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Scripts-And-Tools.md",
     "Services/Webservers/WebDAV/XAMPP.md",
-    "Tools/Wordlists/Generating-Usernames-And-Emails.md",
     "Reconnaissance/Active-Directory/Active-Directory-Footholding.md",
     "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/File-Transfers.md",
     "Tools/Web-Applications-Attacking/Content-Discovery-Tools/FFUF-Cheatsheet.md",
     "Reconnaissance/Active-Directory/Active-Directory-Enumeration.md",
     "Reconnaissance/Valid-Usernames.md",
-    "Tools/Wordlists/Generating-Likely-Passwords.md",
     "Tools/C2/Sliver/Sliver-Cheatsheet.md",
     "Securing-Networks-And-Systems/Hardening/Linux-Hardening.md",
     "Security-Disciplines/Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Blue-KOTH-Battlegrounds-Cheatsheet-Linux.md",
@@ -182,9 +185,6 @@
     "Reconnaissance/Git-Repository-Hacking.md",
     "Persistence/Linux-Persistence.md",
     "Software/Operating-Systems/Linux/Linux-Commands/Linux-Compression-Commands.md",
-    "Development/Languages/Bash/Bash.md",
-    "Tools/Authentication-Attacking/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
-    "Tools/Authentication-Attacking/Bruteforce-Login-Tools/Medusa-Cheatsheet.md",
     "Software/File-Typology/Logs",
     "Development/Languages/Untitled",
     "Web-Application-Hacking/Web-Exploits",
