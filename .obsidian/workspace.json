@@ -4,59 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "58c2ae548950dfd5",
+        "id": "f49299c65a68dcbe",
         "type": "tabs",
         "children": [
           {
-            "id": "9ec083d059c9e95c",
+            "id": "fd639ce228b303a1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/Web-Applications-Attacking/Content-Discovery-Tools/FFUF-Cheatsheet.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "596f3e13e103de8b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/File-Transfers.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f6bbbb14d9074e97",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Reconnaissance/Active-Directory/Active-Directory-Footholding.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ffbd6ac152c31619",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tools/Wordlists/Generating-Usernames-And-Emails.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Windows/Bypassing-UAC/Bypassing-Windows-User-Account-Control.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -122,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/Wordlists/Generating-Usernames-And-Emails.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Windows/Bypassing-UAC/Bypassing-Windows-User-Account-Control.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tools/Wordlists/Generating-Usernames-And-Emails.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Windows/Bypassing-UAC/Bypassing-Windows-User-Account-Control.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tools/Wordlists/Generating-Usernames-And-Emails.md"
+                "file": "Post-Exploitation/Privilege-Escalation/Windows/Bypassing-UAC/Bypassing-Windows-User-Account-Control.md"
               }
             }
           },
@@ -194,11 +157,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ffbd6ac152c31619",
+  "active": "fd639ce228b303a1",
   "lastOpenFiles": [
-    "Reconnaissance/Active-Directory/Active-Directory-Enumeration.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Scripts-And-Tools.md",
+    "Services/Webservers/WebDAV/XAMPP.md",
     "Tools/Wordlists/Generating-Usernames-And-Emails.md",
     "Reconnaissance/Active-Directory/Active-Directory-Footholding.md",
+    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/File-Transfers.md",
+    "Tools/Web-Applications-Attacking/Content-Discovery-Tools/FFUF-Cheatsheet.md",
+    "Reconnaissance/Active-Directory/Active-Directory-Enumeration.md",
     "Reconnaissance/Valid-Usernames.md",
     "Tools/Wordlists/Generating-Likely-Passwords.md",
     "Tools/C2/Sliver/Sliver-Cheatsheet.md",
@@ -209,19 +178,13 @@
     "Services/Databases/Postgres/PostgreSQL.md",
     "Web-Application-Hacking/CMS/Joomla.md",
     "Tools/AD-Offensive/Kerbrute-Cheatsheet.md",
-    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/File-Transfers.md",
     "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Linux-File-Transfers.md",
-    "Tools/Web-Applications-Attacking/Content-Discovery-Tools/FFUF-Cheatsheet.md",
     "Reconnaissance/Git-Repository-Hacking.md",
     "Persistence/Linux-Persistence.md",
     "Software/Operating-Systems/Linux/Linux-Commands/Linux-Compression-Commands.md",
     "Development/Languages/Bash/Bash.md",
     "Tools/Authentication-Attacking/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
     "Tools/Authentication-Attacking/Bruteforce-Login-Tools/Medusa-Cheatsheet.md",
-    "Tools/Authentication-Attacking/Bruteforce-Login-Tools/Crowbar-CheatSheat.md",
-    "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Privilege-Escalation.md",
-    "Tools/Host-Privilege-Escalation/Windows/Seatbelt-Helpsheet.md",
-    "Tools/AD-Offensive/Impacket/Impacket-Cheatsheet.md",
     "Software/File-Typology/Logs",
     "Development/Languages/Untitled",
     "Web-Application-Hacking/Web-Exploits",

