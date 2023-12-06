@@ -2,13 +2,25 @@
 
 For enumeration see [[Active-Directory-Enumeration-Defined]] or general theory and definitions [[Active-Directory-Defined]]. For commands cheatsheet [[Active-Directory-Commands]] or for Privilege Escalation see [[Active-Directory-Privilege-Escalation]]. See [[Attacking-Kerberos]] for exclusively Kerberos related and information on the mechanics of Kerberos  [[Active-Directory-Kerberos-Authentication-Defined]].
 
+## OSINT Users and Formatting
+
+[[OSINT-People]] with some form of [[OSINT]] get names to then generated:
+- [[Valid-Usernames]]
+- [[Email-Harvesting]]
+- [[Generating-Usernames-And-Emails]]
+
+
+This half information gathering process before password spraying, no password Kerberos and domain user  
+
+[[Generating-Likely-Passwords]]
+
 ## NTLM & NetNTLM Authenticated Services
 
-New Technology LAN Manager(NTLM) is a family of authentication protocols used to authenticate identities of users in the context of Active Directory network. Services use Windows' challenge-response protocol  called netNTLM. Allowing  services exposable to the internet authenticating on behalf of a client not client directly authenticating to Domain Controller. 
+New Technology LAN Manager(NTLM) is a family of authentication protocols used to authenticate identities of users in the context of Active Directory network. Services use Windows' challenge-response protocol  called NetNTLM. Allowing services exposed to the internet authenticating on behalf of a client not client directly authenticating to Domain Controller. 
 - [[RDP]]
 - Internal-Hosted Email 
 - Exposed VPN endpoints integrated into AD
-- Internet expose Web applications that use NetNTML 
+- Internet expose Web applications that use NetNTLM 
 
 
 - **Bruteforce**

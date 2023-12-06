@@ -1,12 +1,18 @@
 # Generating-Usernames-And-Emails
 
-#### Username Generation for Spraying
+### Username Generation for Spraying
+
+#### [Username-Anarchy](https://github.com/urbanadventurer/username-anarchy) 
+
+[Username-Anarchy](https://github.com/urbanadventurer/username-anarchy) are *Tools for generating usernames when penetration testing. Usernames are half the password brute force problem.*
 
 Ippsec and 0xDF have used [Username Anarchy](https://github.com/urbanadventurer/username-anarchy.git)
 ```bash
 git clone https://github.com/urbanadventurer/username-anarchy.git
 ruby username-anarchy/username-anarchy -i $input.txt -f flast,f.last,first.last,last.first > potential-usernames.txt 
 ```
+
+#### [namemash.py](https://gist.githubusercontent.com/superkojiman/11076951/raw/74f3de7740acb197ecfa8340d07d3926a95e5d46/namemash.py)
 
 Alh4zr3d used namemash.py - downed video can't check which
 ```bash
@@ -96,3 +102,4 @@ cat smtp-user-enum-25.out | grep exists | awk -F: '{print $2}' | sed 's/ exists/
 [cjaoude reformatted Gist](https://gist.github.com/cjaoude/fd9910626629b53c4d25)
 [Username Anarchy](https://github.com/urbanadventurer/username-anarchy.git)
 [ref: http://codefool.tumblr.com/post/15288874550/list-of-valid-and-invalid-email-addresses](http://codefool.tumblr.com/post/15288874550/list-of-valid-and-invalid-email-addresses)
+[namemash.py](https://gist.githubusercontent.com/superkojiman/11076951/raw/74f3de7740acb197ecfa8340d07d3926a95e5d46/namemash.py)

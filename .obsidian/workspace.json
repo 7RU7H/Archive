@@ -44,43 +44,19 @@
             }
           },
           {
-            "id": "469afee491fbbc4f",
+            "id": "ffbd6ac152c31619",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Reconnaissance/Valid-Usernames.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "62b2f00796973444",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Reconnaissance/Active-Directory/Active-Directory-Enumeration.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "51eca7afa0f93efb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tools/C2/Sliver/Sliver-Cheatsheet.md",
+                "file": "Tools/Wordlists/Generating-Usernames-And-Emails.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -146,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/C2/Sliver/Sliver-Cheatsheet.md",
+                "file": "Tools/Wordlists/Generating-Usernames-And-Emails.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tools/C2/Sliver/Sliver-Cheatsheet.md",
+                "file": "Tools/Wordlists/Generating-Usernames-And-Emails.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tools/C2/Sliver/Sliver-Cheatsheet.md"
+                "file": "Tools/Wordlists/Generating-Usernames-And-Emails.md"
               }
             }
           },
@@ -218,18 +194,21 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "51eca7afa0f93efb",
+  "active": "ffbd6ac152c31619",
   "lastOpenFiles": [
+    "Reconnaissance/Active-Directory/Active-Directory-Enumeration.md",
+    "Tools/Wordlists/Generating-Usernames-And-Emails.md",
+    "Reconnaissance/Active-Directory/Active-Directory-Footholding.md",
+    "Reconnaissance/Valid-Usernames.md",
+    "Tools/Wordlists/Generating-Likely-Passwords.md",
+    "Tools/C2/Sliver/Sliver-Cheatsheet.md",
     "Securing-Networks-And-Systems/Hardening/Linux-Hardening.md",
     "Security-Disciplines/Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Blue-KOTH-Battlegrounds-Cheatsheet-Linux.md",
     "Security-Disciplines/Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Blue-KOTH-Battlegrounds-Cheatsheet-Windows.md",
     "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
-    "Tools/C2/Sliver/Sliver-Cheatsheet.md",
     "Services/Databases/Postgres/PostgreSQL.md",
     "Web-Application-Hacking/CMS/Joomla.md",
-    "Reconnaissance/Active-Directory/Active-Directory-Enumeration.md",
     "Tools/AD-Offensive/Kerbrute-Cheatsheet.md",
-    "Reconnaissance/Valid-Usernames.md",
     "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/File-Transfers.md",
     "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Linux-File-Transfers.md",
     "Tools/Web-Applications-Attacking/Content-Discovery-Tools/FFUF-Cheatsheet.md",
@@ -238,14 +217,11 @@
     "Software/Operating-Systems/Linux/Linux-Commands/Linux-Compression-Commands.md",
     "Development/Languages/Bash/Bash.md",
     "Tools/Authentication-Attacking/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
-    "Reconnaissance/Active-Directory/Active-Directory-Footholding.md",
     "Tools/Authentication-Attacking/Bruteforce-Login-Tools/Medusa-Cheatsheet.md",
     "Tools/Authentication-Attacking/Bruteforce-Login-Tools/Crowbar-CheatSheat.md",
     "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Privilege-Escalation.md",
     "Tools/Host-Privilege-Escalation/Windows/Seatbelt-Helpsheet.md",
     "Tools/AD-Offensive/Impacket/Impacket-Cheatsheet.md",
-    "Reconnaissance/Active-Information-Gathering/SNMP/SNMP-Recon-Cheatsheet.md",
-    "Reconnaissance/Email-Harvesting.md",
     "Software/File-Typology/Logs",
     "Development/Languages/Untitled",
     "Web-Application-Hacking/Web-Exploits",
