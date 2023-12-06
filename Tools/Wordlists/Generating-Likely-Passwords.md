@@ -5,7 +5,7 @@
 
 #### Passwords profiling
 
-Wordlist generation questions?
+Generations [[Wordlists]] for password profiling questions?
 - Default Passwords are always there 
 	- Have tried the [[Default-Passwords-Data-Recovery-Table]] for a password on by service through the [[Services-Hub]] page.
 - Profiling
