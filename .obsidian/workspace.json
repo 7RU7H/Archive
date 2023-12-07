@@ -37,19 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exploitation/Windows/Pass-The-Hash.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "2d2681e17d38067d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Networks/Network-Theory/Network-Protocols/RDP.md",
+                "file": "Security-Disciplines/OPSEC-101.md",
                 "mode": "source",
                 "source": false
               }
@@ -80,7 +68,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -146,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/Useful-Online-Software/Github-guide.md",
+                "file": "Security-Disciplines/OPSEC-101.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tools/Useful-Online-Software/Github-guide.md",
+                "file": "Security-Disciplines/OPSEC-101.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tools/Useful-Online-Software/Github-guide.md"
+                "file": "Security-Disciplines/OPSEC-101.md"
               }
             }
           },
@@ -217,11 +205,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "474af22122320e1e",
+  "active": "9ef49bbf97d1213f",
   "lastOpenFiles": [
-    "Reconnaissance/Active-Information-Gathering/RPC/RPCClient-Cheatsheet.md",
-    "Networks/Network-Theory/Network-Protocols/RDP.md",
     "Exploitation/Windows/Pass-The-Hash.md",
+    "Reconnaissance/Active-Information-Gathering/RPC/RPCClient-Cheatsheet.md",
+    "Tools/Useful-Online-Software/Github-guide.md",
+    "Networks/Network-Theory/Network-Protocols/RDP.md",
     "Security-Disciplines/OPSEC-101.md",
     "Reconnaissance/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
     "Software/Operating-Systems/Linux/Linux-Commands/Grep-All-The-Things.md",
@@ -244,7 +233,6 @@
     "Services/Webservers/WebDAV/XAMPP.md",
     "Reconnaissance/Active-Directory/Active-Directory-Footholding.md",
     "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/File-Transfers.md",
-    "Tools/Web-Applications-Attacking/Content-Discovery-Tools/FFUF-Cheatsheet.md",
     "Software/File-Typology/Logs",
     "Development/Languages/Untitled",
     "Web-Application-Hacking/Web-Exploits",

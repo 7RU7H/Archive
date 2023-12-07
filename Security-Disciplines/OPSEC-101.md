@@ -7,6 +7,15 @@ Operations Security (OPSEC) is a term coined by the United States military. In t
 [The Grugq's OPSEC Because Jail is for wuftpd talk may also be helpful](https://www.youtube.com/watch?v=9XaYdCdwiWU)
 [BHIS | OPSEC Fundamentals for Remote Red Teams - Michael Allen](https://youtu.be/AHwfV3NFlno?si=ifq3zSkE2bFvaGJA)
 
+
+[Part 1-How to Live like a Criminal - Privacy Tips for the Non-Criminal | Ean Meyer & John Strand](https://www.youtube.com/watch?v=9iwh5J71pZg)
+[Part 2-How to Live like a Criminal - Privacy Tips for the Non-Criminal | Ean Meyer & John Strand](https://www.youtube.com/watch?v=r4SvCFxTMMk)
+[Part 3-How to Live like a Criminal - Privacy Tips for the Non-Criminal | Ean Meyer & John Strand](https://www.youtube.com/watch?v=JlVI705wHq8)
+
+## AD ID Level
+
+[Part 2-How to Live like a Criminal - Privacy Tips for the Non-Criminal | Ean Meyer & John Strand](https://www.youtube.com/watch?v=r4SvCFxTMMk) recommends the reading of [Ad IDs Behaving Badly](https://blog.appcensus.io/2019/02/14/ad-ids-behaving-badly/) by  [Serge Egelman](https://blog.appcensus.io/author/serge/)
+
 ## Human-Level
 
 It is hurts to get fucked, reason you may need OPSEC
@@ -97,6 +106,7 @@ SSL
 
 ## Moscow Rules
 
+[Part 1-How to Live like a Criminal - Privacy Tips for the Non-Criminal | Ean Meyer & John Strand](https://www.youtube.com/watch?v=9iwh5J71pZg)
 1. Assume Nothing
 2. Never go against your gut
 3. Everyone is potentially under opposition control
@@ -128,3 +138,6 @@ SSL
 [THM Red Team OpSec]()
 [BHIS | OPSEC Fundamentals for Remote Red Teams - Michael Allen](https://youtu.be/AHwfV3NFlno?si=ifq3zSkE2bFvaGJA)
 [The 0x0a hack Commandments Lyrics](https://genius.com/Dual-core-0x0a-hack-commandments-lyrics)
+[Part 1-How to Live like a Criminal - Privacy Tips for the Non-Criminal | Ean Meyer & John Strand](https://www.youtube.com/watch?v=9iwh5J71pZg)
+[Part 2-How to Live like a Criminal - Privacy Tips for the Non-Criminal | Ean Meyer & John Strand](https://www.youtube.com/watch?v=r4SvCFxTMMk)
+[Part 3-How to Live like a Criminal - Privacy Tips for the Non-Criminal | Ean Meyer & John Strand](https://www.youtube.com/watch?v=JlVI705wHq8)
