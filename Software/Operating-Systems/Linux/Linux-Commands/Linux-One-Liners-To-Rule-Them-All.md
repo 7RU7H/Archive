@@ -68,6 +68,14 @@ All the exploit for the same version number - beware the `grep` [[Grep-All-The-T
 searchsploit $service | grep $aGoodGrepIsRequired | awk -F\| '{print $2}' | xargs -I {} searchsploit -m {}
 ```
 
+For a list of domains find the total amount of a domain in a access.log file - [THM AdventOfCyber2023](https://tryhackme.com/room/adventofcyber2023)
+```bash
+for i in $(cat domain.txt); do echo "$(grep -ciE $i access.log) $i "; done
+# To count the domain include in file by times attempted to access:
+cut -d ' ' -f3 access.log | cut -d ':' -f1 | sort | uniq -c | sort -nr
+```
+
 ## References
 
 [Stackoverflow uppercasing first letter of words using sed](https://stackoverflow.com/questions/1538676/uppercasing-first-letter-of-words-using-sed)
+[THM AdventOfCyber2023](https://tryhackme.com/room/adventofcyber2023)

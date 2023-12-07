@@ -13,13 +13,62 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/Wordlists/Generating-Likely-Passwords.md",
+                "file": "Web-Application-Hacking/Web-Exploits/SQLi/SQL-Injection.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4585464a43f56b07",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Software/Operating-Systems/Linux/Linux-Commands/Core-Linux-Commands.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9ef49bbf97d1213f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Software/Operating-Systems/Linux/Linux-Commands/Grep-All-The-Things.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f76cdaf446233a18",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Software/Operating-Systems/Linux/Linux-Commands/Linux-One-Liners-To-Rule-Them-All.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "235570ecf004b4b8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Software/Operating-Systems/Linux/Linux-Commands/Linux-Module-Commands.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -85,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/Wordlists/Generating-Likely-Passwords.md",
+                "file": "Software/Operating-Systems/Linux/Linux-Commands/Linux-One-Liners-To-Rule-Them-All.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tools/Wordlists/Generating-Likely-Passwords.md",
+                "file": "Software/Operating-Systems/Linux/Linux-Commands/Linux-One-Liners-To-Rule-Them-All.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tools/Wordlists/Generating-Likely-Passwords.md"
+                "file": "Software/Operating-Systems/Linux/Linux-Commands/Linux-One-Liners-To-Rule-Them-All.md"
               }
             }
           },
@@ -157,11 +206,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "29c215ce85f70e66",
+  "active": "f76cdaf446233a18",
   "lastOpenFiles": [
+    "Software/Operating-Systems/Linux/Linux-Commands/Grep-All-The-Things.md",
+    "Software/Operating-Systems/Linux/Linux-Commands/Linux-Module-Commands.md",
+    "Software/Operating-Systems/Linux/Linux-Commands/Core-Linux-Commands.md",
+    "Web-Application-Hacking/Web-Exploits/SQLi/SQL-Injection.md",
+    "Tools/Web-Applications-Attacking/SQLmap-CheatSheet.md",
+    "Services/Databases/MYSQL/MySQL-Cheatsheet.md",
+    "Services/Databases/SQLite/SQLite-Hacking.md",
+    "Services/Databases/MYSQL/MySQL-Hacking.md",
+    "Tools/Wordlists/Generating-Likely-Passwords.md",
     "Services/Services-Hub.md",
     "Services/Databases/MYSQL/MySQL-SQL-Injection-Cheatsheet.md",
-    "Tools/Wordlists/Generating-Likely-Passwords.md",
     "Tools/Wordlists/Generating-Usernames-And-Emails.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Bypassing-UAC/Bypassing-Windows-User-Account-Control.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
@@ -177,14 +234,6 @@
     "Securing-Networks-And-Systems/Hardening/Linux-Hardening.md",
     "Security-Disciplines/Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Blue-KOTH-Battlegrounds-Cheatsheet-Linux.md",
     "Security-Disciplines/Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Blue-KOTH-Battlegrounds-Cheatsheet-Windows.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
-    "Services/Databases/Postgres/PostgreSQL.md",
-    "Web-Application-Hacking/CMS/Joomla.md",
-    "Tools/AD-Offensive/Kerbrute-Cheatsheet.md",
-    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Linux-File-Transfers.md",
-    "Reconnaissance/Git-Repository-Hacking.md",
-    "Persistence/Linux-Persistence.md",
-    "Software/Operating-Systems/Linux/Linux-Commands/Linux-Compression-Commands.md",
     "Software/File-Typology/Logs",
     "Development/Languages/Untitled",
     "Web-Application-Hacking/Web-Exploits",

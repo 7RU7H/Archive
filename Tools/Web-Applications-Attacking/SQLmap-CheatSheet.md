@@ -1,6 +1,12 @@
 # SQLMAP
 
-This is going to just the help page until I passed OSCP and most to clean up other SQLi related files.
+This is going to just the help page until I passed OSCP and most to clean up other [[SQL-Injection]] related files.
+
+
+```bash
+sqlmap -u $URL
+```
+
 
 Burp plus SQLMap
 `Proxy request -> right-click -> Save item`
@@ -20,7 +26,7 @@ sqlmap --eval "python code to dynamical calculate parametres of sql quiery"
 Options:
   -h, --help            Show basic help message and exit
   -hh                   Show advanced help message and exit
-  --version             Show program's version number and exit
+  --version             Show program version number and exit
   -v VERBOSE            Verbosity level: 0-6 (default 1)
 
   Target:
