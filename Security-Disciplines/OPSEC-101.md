@@ -1,6 +1,6 @@
 # OPSEC 101
 
-Sometimes we all need to return to Opsec 101: 
+Sometimes we all need to return to OPSEC 101: 
 
 Operations Security (OPSEC) is a term coined by the United States military. In the field of cybersecurity, let’s start with the definition provided by [NIST](https://csrc.nist.gov/glossary/term/opsec): *“Systematic and proven process by which potential adversaries can be denied information about capabilities and intentions by identifying, controlling, and protecting generally unclassified evidence of the planning and execution of sensitive activities. The process involves five steps: identification of critical information, analysis of threats, analysis of vulnerabilities, assessment of risks, and application of appropriate countermeasures.”*
 
@@ -86,17 +86,45 @@ exit
 	- IP activity must not corss-contaminate 
 		- one IP address per activity/user
 - domain name registrar
-    - private whois at time of registery
+    - private whois at time of registry
 SSL
 - certbot --register-unsafely-without-email
 - no self-signed certs or default
 
-## Group Specific OpSec Guides
+## Group Specific OPSEC Guides
 
 [[Red-Team-OPSEC]]
 
+## Moscow Rules
+
+1. Assume Nothing
+2. Never go against your gut
+3. Everyone is potentially under opposition control
+4. Do not lock back; you are never completely alone
+5. Go with the flow, blend in
+6. Vary your pattern and stay within your cover
+7. Lull them into a sense of complacency
+8. Do not harass the opposition
+9. Pick the time and place for action
+10. Keep your options open
+
+## 0x0a Hack Commandments - Annotated
+
+[The 0x0a hack Commandments Lyrics](https://genius.com/Dual-core-0x0a-hack-commandments-lyrics)
+
+1. Never let no one know how much code you hold - (do not reveal your capabilities)
+2. Never let them know your next move  - (be stealthy and do not telegraph)
+3. Never Trust Nobody - (Do not trust others)
+4. Shut the !@%& Up - (Shut up)
+5. Never do hacks where you rest - (Do not hack at your house)
+6. Any logged cleartext, forget it, Encrypt all your data - (Do not touch logs and always use all the encryption ubiquitously)
+7. Keep identities and profiles completely separate - (simple)
+8. Never keep no weight on you - (Do not store X (cryptocurrency,money,etc) in a place that is easy to access, on your person or )
+9. Use your right to your attorney, keep away from police - Use a lawyer, do not talk to police
+10.  Shut the actual !@%& Up - See commandment 4
 ## References
 
 [The Grugq's OPSEC Because Jail is for wuftpd Talk](https://www.youtube.com/watch?v=9XaYdCdwiWU)
 [THM Red Team OpSec]()
 [BHIS | OPSEC Fundamentals for Remote Red Teams - Michael Allen](https://youtu.be/AHwfV3NFlno?si=ifq3zSkE2bFvaGJA)
+[The 0x0a hack Commandments Lyrics](https://genius.com/Dual-core-0x0a-hack-commandments-lyrics)
