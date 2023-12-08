@@ -30,6 +30,15 @@ Hypertext Markup Language (HTML)
 
 See [[Basic-CSS]] of understanding of how CSS prettifies websites 
 
+#### Source Code that I needed explaining...
+
+[stackoverflow](https://stackoverflow.com/questions/6724515/what-is-the-purpose-of-the-html-no-js-class)
+```html
+<html>
+	class="no-js" <!-- Class to style html without JavaScript -->
+</html>
+```
+
 ## References
 
 [w3school HTML](https://www.w3schools.com/html/default.asp)

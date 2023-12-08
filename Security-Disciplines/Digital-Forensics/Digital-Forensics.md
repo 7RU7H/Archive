@@ -25,16 +25,7 @@ Dirty Wordlists
 [[Volatility]]
 [[Redline]]
 [[Velociraptor]]
-[FTK Imager](https://www.exterro.com/ftk-imager)  is a forensics tool that allows forensic specialists to acquire computer data and perform analysis without affecting the original evidence, preserving its authenticity, integrity, and validity for presentation during a trial in a court of law. It is premium software so will not receive coverage due to legal risks regardless if it is for education. 
-- UI Features: 
-	- Evidence Tree Pane which displays a hierarchical view of the added evidence sources?
-	- File List Pane
-		- Corrupted file - 0 file size
-		- Obfuscated - conflicting file  extension and header information
-		- Deleted files marked with an `X`
-	- Viewer Pane to show file contents
-- Forensic Features:
-	- Detect Encryption
+[[FTK-Imager]]
 
 
 #### OS Specific Cheatsheets:

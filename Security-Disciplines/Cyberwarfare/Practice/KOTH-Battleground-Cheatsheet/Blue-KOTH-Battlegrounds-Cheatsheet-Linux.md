@@ -35,6 +35,15 @@ sysctl kernel.yama.ptrace_scope
 ps axwwf | grep -B2 $$
 ```
 
+#### Networking 
+
+If you need to kill a specific process using a given port
+```bash
+ps aux | grep $app # or..
+pgrep $app
+sudo fuser -k 445/tcp
+```
+
 #### File system
 
 File permission of the earliest to latest files in the a directory
@@ -83,3 +92,4 @@ if (strpos($ip, ';') !== false) {
 
 [ethicalhackerclub](https://ethicalhackers.club/hack-the-box-battlegrounds-cyber-mayhem-attack-defense-review-strategies-tips-and-tricks/)
 [infosecmatter blog on ssh sniffing](https://www.infosecmatter.com/ssh-sniffing-ssh-spying-methods-and-defense/)
+[haax.fr linux-systems/tricks/](https://cheatsheet.haax.fr/linux-systems/tricks/)

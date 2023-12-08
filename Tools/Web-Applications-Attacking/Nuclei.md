@@ -1,7 +1,5 @@
 # Nuclei
 
-**Warning the  `Offensive Security Safe no auto-exploitation nuclei usage one liner` of this article was created with aid of [Phind](https://www.phind.com/search?cache=rehlye7rrv8dm35wkefq5816)  and human consultation of testing it on [[Proving-Grounds]] machines** 
-
 [Nuclei](https://github.com/projectdiscovery/nuclei) is a *Fast and customizable vulnerability scanner based on simple YAML based DSL. Nuclei is used to send requests across targets based on a template, leading to zero false positives and providing fast scanning on a large number of hosts. Nuclei offers scanning for a variety of protocols, including TCP, DNS, HTTP, SSL, File, Whois, Websocket, Headless, Code etc. With powerful and flexible templating, Nuclei can be used to model all kinds of security checks...We have a [dedicated repository](https://github.com/projectdiscovery/nuclei-templates) that houses various type of vulnerability templates contributed by **more than 300** security researchers and engineers.* 
 
 Install with go or [[Kali]] and `apt` beware if you want bleeding edge templates you need to use the `go install` and then alias it in you `.rc`
@@ -9,16 +7,71 @@ Install with go or [[Kali]] and `apt` beware if you want bleeding edge templates
 go install -v github.com/projectdiscovery/nuclei/v3/cmd/nuclei@latest
 ```
 
-General utility
+#### Templates
+
+[nuclei-templates](https://github.com/projectdiscovery/nuclei-templates) *"Community curated list of templates for the nuclei engine to find security vulnerabilities... Please navigate to [https://nuclei.projectdiscovery.io](https://nuclei.projectdiscovery.io) for detailed documentation to **build** new or your own **custom** templates."*
+## Cheatsheet
+#### General utility
 ```bash
 nuclei -h
-nuclei -ut 
+nuclei -ut # update templates
+nuclei -tl # list all templates
+
+nuclei -metrics # Expose metrics on a url
+
+# Rate limits
+-rate-limit # Control the total number of request to send per seconds
+-bulk-size # Control the number of hosts to process in parallel for each template
+-c # Control the number of templates to process in parallel
 ```
+
 
 ```bash
 nuclei -u https://$ip -o nuclei
 nuclei -u https://$subdomain.$domain -me nuclei # output in markdown 
 ```
+
+
+```bash
+# Use a configuration file against a listof urls
+# $HOME/.config/nuclei/config.yaml
+nuclei -config project.yaml -list urls.txt
+```
+
+[haax.fr example configuration](https://cheatsheet.haax.fr/web-pentest/tools/nuclei/)
+```bash
+# Example
+# Headers to include with each request.
+header:
+  - 'X-BugBounty-Hacker: h1/geekboy'
+  - 'User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64)'
+
+# Templates with tags to run
+tags: rce,lfi
+
+# Templates with tags to exclude
+exclude-tags: info
+
+# Templates to scan
+templates:
+  - cves/
+  - vulnerabilities/
+  - misconfiguration/
+
+# Templates to exclude scan
+exclude:
+  - vulnerabilities/xxx
+  - misconfiguration/xxxx
+
+# Send random User-agent for each scan
+random-agent: false
+
+# Rate limit configuration for scan
+rate-limit: 500
+bulk-size: 50
+concurrency: 50
+```
+
 
 ```bash
 nuclei -rf -u https://$ip -o nuclei # force all redirects
@@ -26,11 +79,14 @@ nuclei -rf -u https://$ip -o nuclei # force all redirects
 
 Offensive Security Safe no auto-exploitation `nuclei` usage.
 ```bash
-nuclei -u http://goodluckwithallyourexams.offset -etags exploit -me  -me nuclei 
+nuclei -u http://goodluckwithallyourexams.offset -etags exploit,rce,sqli,xss,lfi,ssti,ssrf,csrf,xxe,traversal,crlf,csv,injection,pollution,smuggling -debug -me nuclei 
 ```
 ## References
 
 [Nuclei](https://github.com/projectdiscovery/nuclei)
+[nuclei-templates](https://github.com/projectdiscovery/nuclei-templates) 
+[cheatsheet.haax.fr Nuclei cheatsheet](https://cheatsheet.haax.fr/web-pentest/tools/nuclei/)
+
 ## Appendix
 
 Usage for reference
@@ -47,7 +103,7 @@ TARGET:
    -l, -list string                 path to file containing a list of target URLs/hosts to scan (one per line)
    -eh, -exclude-hosts string[]     hosts to exclude to scan from the input list (ip, cidr, hostname)
    -resume string                   resume scan using resume.cfg (clustering will be disabled)
-   -sa, -scan-all-ips               scan all the IP's associated with dns record
+   -sa, -scan-all-ips               scan all the IPs associated with dns record
    -iv, -ip-version string[]        IP version to scan of hostname (4,6) - (default 4)
 
 TEMPLATES:

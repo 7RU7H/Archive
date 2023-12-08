@@ -1,14 +1,14 @@
 # Core Linux Commands
+
 For grep-related see [[Grep-All-The-Things]] and for other modules like `awk`, `sed` and `xargs` see [[Linux-Module-Commands]]. All network related commands current and legacy can be found here: [[Linux-Networking-Commands]]. For User and group related see [[Linux-Users-And-Group-Commands]]. For [[Systemctl]] related or for [[Linux-Maintaince-And-Troubleshooting-Commands]]. [[Linux-Memory-Commands]], [[Linux-Hardware-Commands]]
 
+# `apropos`
 ```bash
 apropos $string 		# search by keyword manual descript
+```
 
-(sha1,sha256,sha512,md5)sum 
-sha512sum file1 file2 file3 > tests.sha512
-sha512sum -c tests.sha512		check batch
-
-
+## `base64`
+```bash
 base64 file.txt  			encode to base64
 base64 file.txt | base64 --decode	decode base64
 echo -n "string" | base64 -d
@@ -141,6 +141,15 @@ a = access, m = modified, c = created
 -[]min 
 ```
 
+## `fuser`
+```bash
+# If you need to kill a specific process using a given port
+ps aux | grep $app # or..
+pgrep $app
+
+sudo fuser -k 445/tcp
+```
+
 ## `getcap`
 ```bash
 getcap 		# displays the capabilities on the queried file(s)
@@ -197,7 +206,9 @@ ls -tu # sort by atime
 ls -r # reverse sort order
 ls --full-time # list full data and time
 ls --group-directories-first
-
+(sha1,sha256,sha512,md5)sum https://cheatsheet.haax.fr/linux-systems/tricks/
+sha512sum file1 file2 file3 > tests.sha512
+sha512sum -c tests.sha512		check batch
 ls -1 --sort=time -r # File per line from earliest creation time to lastes
 ls -la --sort=time -r # Same above expect list all permissions  
 
@@ -240,7 +251,7 @@ reset		# reset shell
 ## `rm`
 ```bash
 rm 		# remove file or folder, directories require -R switch: "rm -R dir"
--r		# recursive directory removal
+-r		# recursive directory removalhaax.fr/linux-systems/tricks
 rm -rf # FORCED recursive directory removal
 
 
@@ -268,7 +279,12 @@ systemctl restart $servicename
 tac 
 -r -s 'x\|[^x]' Reverse a file character by character.
 
-tail		print last 10 lines of a file to stdout
+tail		print l(sha1,sha256,sha512,md5)sum 
+sha512sum file1 file2 file3 > tests.sha512
+sha512sum -c tests.sha512		check batchast 10 lines of a file to stdout
+(sha1,sha256,sha512,md5)sum 
+sha512sum file1 file2 file3 > tests.sha512
+sha512sum -c tests.sha512	# 	check batch
 
 touch		# create file
 touch -- --preserve=mode # preserve a files permissions 
@@ -305,3 +321,4 @@ lsattr
 ## References
 
 [Ippsec.Rocks](https://ippsec.rocks)
+[haax.fr/linux-systems/tricks](https://cheatsheet.haax.fr/linux-systems/tricks/)

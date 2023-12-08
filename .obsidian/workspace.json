@@ -20,36 +20,60 @@
             }
           },
           {
-            "id": "4585464a43f56b07",
+            "id": "fcb2933c05859479",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Software/Operating-Systems/Linux/Linux-Commands/Core-Linux-Commands.md",
+                "file": "Web-Application-Hacking/CMS/Wordpress.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "9ef49bbf97d1213f",
+            "id": "97fbed061c54e897",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Security-Disciplines/OPSEC-101.md",
+                "file": "Tools/Web-Applications-Attacking/Nuclei.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "dcda07880cf01510",
+            "id": "e1e855d478f691d9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Reconnaissance/Active-Information-Gathering/RPC/RPCClient-Cheatsheet.md",
+                "file": "Services/Databases/MYSQL/MySQL-SQL-Injection-Cheatsheet.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c7005df037021280",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Services/Databases/MSSQL/MSSQL-Hacking.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "127fbfdd6561bbcc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +121,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "RDP",
+                "query": "HTML",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -134,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Security-Disciplines/OPSEC-101.md",
+                "file": "Tools/Web-Applications-Attacking/Nuclei.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +175,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Security-Disciplines/OPSEC-101.md",
+                "file": "Tools/Web-Applications-Attacking/Nuclei.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +198,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Security-Disciplines/OPSEC-101.md"
+                "file": "Tools/Web-Applications-Attacking/Nuclei.md"
               }
             }
           },
@@ -205,34 +229,34 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9ef49bbf97d1213f",
+  "active": "97fbed061c54e897",
   "lastOpenFiles": [
-    "Exploitation/Windows/Pass-The-Hash.md",
-    "Reconnaissance/Active-Information-Gathering/RPC/RPCClient-Cheatsheet.md",
-    "Tools/Useful-Online-Software/Github-guide.md",
-    "Networks/Network-Theory/Network-Protocols/RDP.md",
-    "Security-Disciplines/OPSEC-101.md",
-    "Reconnaissance/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
-    "Software/Operating-Systems/Linux/Linux-Commands/Grep-All-The-Things.md",
-    "Software/Operating-Systems/Linux/Linux-Commands/Linux-One-Liners-To-Rule-Them-All.md",
     "Software/Operating-Systems/Linux/Linux-Commands/Linux-Module-Commands.md",
+    "Software/Operating-Systems/Linux/Linux-Commands/Linux-Command-Hub.md",
     "Software/Operating-Systems/Linux/Linux-Commands/Core-Linux-Commands.md",
-    "Web-Application-Hacking/Web-Exploits/SQLi/SQL-Injection.md",
-    "Tools/Web-Applications-Attacking/SQLmap-CheatSheet.md",
-    "Services/Databases/MYSQL/MySQL-Cheatsheet.md",
-    "Services/Databases/SQLite/SQLite-Hacking.md",
-    "Services/Databases/MYSQL/MySQL-Hacking.md",
-    "Tools/Wordlists/Generating-Likely-Passwords.md",
-    "Services/Services-Hub.md",
+    "Security-Disciplines/Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Red-KOTH-Battlegrounds-Cheatsheet-Linux.md",
+    "Security-Disciplines/Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Blue-KOTH-Battlegrounds-Cheatsheet-Windows.md",
+    "Security-Disciplines/Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Blue-KOTH-Battlegrounds-Cheatsheet-Linux.md",
+    "Development/Languages/Perl/Useful_Perl.md",
+    "Reconnaissance/Active-Information-Gathering/Active-Recon.md",
+    "Reconnaissance/Active-Information-Gathering/SNMP/SNMP-Recon-Cheatsheet.md",
+    "Web-Application-Hacking/Web-Concepts/HTLM.md",
+    "Tools/Web-Applications-Attacking/Nuclei.md",
+    "Web-Application-Hacking/CMS/Wordpress.md",
+    "Tools/Web-Applications-Attacking/Burpsuite/BurpSuite.md",
     "Services/Databases/MYSQL/MySQL-SQL-Injection-Cheatsheet.md",
-    "Tools/Wordlists/Generating-Usernames-And-Emails.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Bypassing-UAC/Bypassing-Windows-User-Account-Control.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Scripts-And-Tools.md",
-    "Services/Webservers/WebDAV/XAMPP.md",
-    "Reconnaissance/Active-Directory/Active-Directory-Footholding.md",
-    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/File-Transfers.md",
+    "Web-Application-Hacking/Web-Exploits/SQLi/SQL-Injection.md",
+    "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
+    "Services/Databases/MSSQL/MSSQL-Hacking.md",
+    "Services/Databases/MYSQL/MySQL-Hacking.md",
+    "Tools/Useful-Online-Software/Github-guide.md",
+    "Reconnaissance/Active-Information-Gathering/RPC/RPCClient-Cheatsheet.md",
+    "Tools/Forensics/FTK-Imager.md",
+    "Security-Disciplines/Digital-Forensics/Digital-Forensics.md",
+    "Security-Disciplines/Digital-Forensics/Windows-Forensics.md",
+    "Reconnaissance/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
+    "Security-Disciplines/OPSEC-101.md",
+    "Exploitation/Windows/Pass-The-Hash.md",
     "Software/File-Typology/Logs",
     "Development/Languages/Untitled",
     "Web-Application-Hacking/Web-Exploits",

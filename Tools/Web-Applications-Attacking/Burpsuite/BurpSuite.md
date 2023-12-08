@@ -83,7 +83,7 @@ Select manual proxy configuration:
 
 ## Burp Suite CA
 
-To intercept and analyse HTTPS traffic, BS has Certificate Authority and uses it to issue on-th-fly certificates for each website that we visit and pass through Burp.
+To intercept and analyse HTTPS traffic, BS has Certificate Authority and uses it to issue on-the-fly certificates for each website that we visit and pass through Burp.
 
 http://burp -> CA Certificate 
 save the file cacert.der to `/home/<user>/Downloads`

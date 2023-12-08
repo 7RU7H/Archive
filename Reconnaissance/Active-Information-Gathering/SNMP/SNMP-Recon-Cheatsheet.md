@@ -27,6 +27,14 @@ Never forget your `nmap -sU` scans or equivalent.
 sudo nmap -sU --open -p 161 $ip/$CIDR -oG open-snmp
 ```
 
+Example community strings
+```bash
+admin
+manager
+public
+private
+community
+```
 
 Requires a community list contains community strings and IP addresses. `onesixtyone` will then brute force against the list of IP addresses. 
 ```bash
@@ -99,3 +107,4 @@ cat -n snmpbulkoutput | grep "inetCidrRouteIfIndex.ipv6"
 
 [iredteam](https://www.ired.team/offensive-security-experiments/offensive-security-cheetsheets)
 [[IPv6-Defined]] 
+[haax.fr snmp](https://cheatsheet.haax.fr/network/services-enumeration/161_162_snmp/)

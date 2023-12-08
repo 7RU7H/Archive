@@ -23,7 +23,14 @@ chattr
 lsattr
 ```
 
+If you need to kill a specific process using a given port
+```bash
+ps aux | grep $app # or..
+pgrep $app
+sudo fuser -k 445/tcp
+```
 
 ## References
 
 [ethicalhacker club article](https://ethicalhackers.club/hack-the-box-battlegrounds-cyber-mayhem-attack-defense-review-strategies-tips-and-tricks/)
+[haax.fr linux-systems/tricks/](https://cheatsheet.haax.fr/linux-systems/tricks/)

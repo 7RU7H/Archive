@@ -1,6 +1,6 @@
 # Server Message Block 
 
-SMB originally ran on top of NetBIOS using port 139. NetBIOS is an older transport layer that allows Windows computer to communicate on the same network. Later versions of SMB(after Windows 2000) use port 445 on top of a TCP stack, TCP allows for internet communication.
+SMB originally ran on top of NetBIOS using port 139. NetBIOS is an older transport layer that allows Windows computer to communicate on the same network. Later versions of SMB (after Windows 2000) use port 445 on top of a TCP stack, TCP allows for internet communication.
 
 Shares in the wild
 
@@ -12,9 +12,9 @@ IPC$ | Disk | Remote IPC | Deals with Named Pipes - Attackers Enumerate Here! - 
 SYSVOL | Disk | Logon server share | [[Active-Directory-Defined]] GPP and GPO, configurations for domain-joined machines
 NETLOGON| 
 
-Some organisation have Anonymous logins due to not wanting make people authenicate when they mess with the share file, **but** put restriction on share files - not a misconfiguration [Ref: Unknown Artists](https://www.youtube.com/watch?v=n4DgGFpQrjk)
+Some organisation have Anonymous logins due to not wanting make people authenticate when they mess with the share file, **but** put restriction on share files - not a misconfiguration [Ref: Unknown Artists](https://www.youtube.com/watch?v=n4DgGFpQrjk)
 
-Shares utiliizing Home directories have [Roaming Profiles](https://docs.microsoft.com/en-us/windows-server/storage/folder-redirection/folder-redirection-rup-overview) - your bad stuff comes too!
+Shares utilising Home directories have [Roaming Profiles](https://docs.microsoft.com/en-us/windows-server/storage/folder-redirection/folder-redirection-rup-overview) - your bad stuff comes too!
 
 ## smbmap
 

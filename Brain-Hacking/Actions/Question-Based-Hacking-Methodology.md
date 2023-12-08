@@ -183,11 +183,11 @@ For exploits, troubleshooting and general problem solving:
 			- LFI? Can `include()` files from disk/memory
 			- Path Traversal? Can you read disk/memory?
 			- RFI? Can you get remote resources? - Internal && External
-			- SSRF? Can you request known resources - ports, files, webpages?
-			- XSS? Can you execute javascript scripting?
+			- SSRF? Can you request known resources - ports, files, web pages?
+			- XSS? Can you execute JavaScript scripting?
 			- SSTI? Can you exploit the template engines access to system?
 			- (no)SQLI? Can you create error code enough to PoC interaction with database?  
-			- CMDi? Can you execute with `& CMD` - windows  or `; CMD` - linux?
+			- CMDi? Can you execute with `& CMD` - windows  or `; CMD` - Linux?
 			- IDOR? Can you deserialize or decoded data; or modify data to change your object context?  
 			- Error text 
 				- What does the error mean? Just google it! 
@@ -211,7 +211,7 @@ For exploits, troubleshooting and general problem solving:
 				- Can we break it to enumerate insights as how application works not the database?
 		 - How many fields, double this number for number of quotes of the query 
 			- For each field what is the data-type
-		 - By Reponse Typology:
+		 - By Response Typology:
 			- By **In-Band** SQL injections:
 				- Is the result of the query is displayed along with the application-returned value?
 					- Go Union-based SQLi!
@@ -235,12 +235,12 @@ For exploits, troubleshooting and general problem solving:
 		- Can you write a webshell to the filesystem through injection?
 
 - LFI?
-	-  Add a `.` betwen `filename` and `.ext` for invalid file checks
+	-  Add a `.` between `filename` and `.ext` for invalid file checks
 	- Adding a `/` in the middle of `filename.ext` to check characters
 
 - Web PrivEsc
 - Have you performed scanning or manual enumeration authenticated?
-- How is authenicated user data reflected on the page?
+- How is authenticated user data reflected on the page?
 	- Framework? 
 	- Database?
 	- Session-related?
