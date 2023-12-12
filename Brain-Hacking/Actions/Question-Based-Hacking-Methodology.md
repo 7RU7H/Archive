@@ -260,14 +260,42 @@ Condense:
 [[Web-Hacking-Checklist]]
 
 - Prior to breaching
+	- Scope?
+		- OPSEC required? 
+	- Can you replicate everything prior to touching disk, memory or your cloth before making a mistake?  
 	- RTFM and any reminders; reread the code?
-		- Checked the shebang on the python exploit? - Trolly python2 developers 
+		- Checked the shebang on the python exploit? - Trolly python2 developers  
 	- Are there presuppositions that can be made before footholding a machine?
 		- Security - Network and Host - Traffic-typology and AMSI or Shell jails?  
 		- OS?
 	- Have you checked listeners, agents, tooling for your operational errors? 
 	- How does the application-to-gain-entry handle double and single quotes?
 	- Have you followed the principle that *"Two is one and one is none"*?
+
+- AV - Avoid first, replicate elsewhere first, do not hand over your AV evasion techniques to Cloud-based AI data aggregators'
+	- Replicate machine with AV, update AV signature and disconnect network adaptor - use snapshots, alway revert regardless
+	- Can use non-malicious software in malicious ways that are already on the machine?
+	- If you must bypass AV then..
+		- How unique is the code?
+		- Is there enough, but not too much and good quality obfuscation and encryption (it exists in regular software to protect intellectual property)?
+		- Is it safely tested elsewhere?
+		- Can you run in PowerShell version 2 - does not support AMSI even on Window 10
+		- Use API calls that are not intercepted
+		- "Unhook" API calls so AV does not have visibility
+		- [NtRaiseHardError](https://github.com/NtRaiseHardError/Antimalware-Research)
+		- Detect AV sandbox environments and run them differently
+			- [anticuckoo](https://github.com/therealdreg/anticuckoo)
+			- [fuzzing-the-windows-api-for-av-evasion](https://winternl.com/fuzzing-the-windows-api-for-av-evasion/)
+		- Encrypt payload and decrypt only at runtime
+		- Add extra strings from legitimate software 
+		- Add extra data to go above certain thresholds - add description that make the file huge
+
+
+- EDR - Avoid first, replicate elsewhere first, do not hand over your EDR related technique to Cloud-based AI data aggregators, vendors or Blue team
+	- Beware tread of early 2020s of hiding [[Persistence]] inside the EDR 
+	- Can use non-malicious software in malicious ways that are already on the machine?
+	- Is the user context general patterns 
+
 
 - Breaching
 	- Host OS and version?

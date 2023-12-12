@@ -25,7 +25,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Web-Application-Hacking/CMS/Wordpress.md",
+                "file": "Post-Exploitation/Evasion/Bypassing-Antivirus-With-Understanding-Comes-Ease-TALK.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b3be6b23750c29c5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +97,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "PowerView",
+                "query": "Nuclei",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -122,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Web-Application-Hacking/CMS/Wordpress.md",
+                "file": "Post-Exploitation/Evasion/Bypassing-Antivirus-With-Understanding-Comes-Ease-TALK.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Web-Application-Hacking/CMS/Wordpress.md",
+                "file": "Post-Exploitation/Evasion/Bypassing-Antivirus-With-Understanding-Comes-Ease-TALK.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Web-Application-Hacking/CMS/Wordpress.md"
+                "file": "Post-Exploitation/Evasion/Bypassing-Antivirus-With-Understanding-Comes-Ease-TALK.md"
               }
             }
           },
@@ -196,6 +208,16 @@
   },
   "active": "fcb2933c05859479",
   "lastOpenFiles": [
+    "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
+    "Post-Exploitation/Evasion/Bypassing-Antivirus-With-Understanding-Comes-Ease-TALK.md",
+    "Web-Application-Hacking/Methodologies/Haddix-Methodology/Application-Analysis.md",
+    "Images/relationship-between-false-positives-and-false-negatives-definitions-JM-WWHF-Talk.png",
+    "Images/relationship-between-false-positives-and-false-negatives-JM-WWHF-Talk.png",
+    "Post-Exploitation/Evasion/Antivirus-Evasion/Antivirus-Evasion.md",
+    "Post-Exploitation/Evasion/Antivirus-Evasion/Metasploit-AV-Evasion.md",
+    "Securing-Networks-And-Systems/Antivirus/Windows-Defender-For-AV-Evasion.md",
+    "Windows-Defender.md",
+    "Web-Application-Hacking/CMS/Wordpress.md",
     "Tools/Whisker.md",
     "Tools/AD-Offensive/Powerview/PowerView-Cheatsheet.md",
     "Reconnaissance/Active-Directory/Active-Directory-Enumeration.md",
@@ -208,20 +230,12 @@
     "Security-Disciplines/Red-Team/Red-Team-Theory/Red-Team-OPSEC.md",
     "Networks/Network-Theory/OSI-Model.md",
     "Services/Databases/MSSQL/MSSQL-Hacking.md",
-    "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
     "Tools/Useful-Online-Software/Github-guide.md",
-    "Web-Application-Hacking/CMS/Wordpress.md",
     "Tools/Web-Applications-Attacking/Nuclei.md",
     "Software/Operating-Systems/Linux/Linux-Commands/Linux-Module-Commands.md",
     "Software/Operating-Systems/Linux/Linux-Commands/Linux-Command-Hub.md",
     "Software/Operating-Systems/Linux/Linux-Commands/Core-Linux-Commands.md",
     "Security-Disciplines/Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Red-KOTH-Battlegrounds-Cheatsheet-Linux.md",
-    "Security-Disciplines/Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Blue-KOTH-Battlegrounds-Cheatsheet-Windows.md",
-    "Security-Disciplines/Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Blue-KOTH-Battlegrounds-Cheatsheet-Linux.md",
-    "Development/Languages/Perl/Useful_Perl.md",
-    "Reconnaissance/Active-Information-Gathering/Active-Recon.md",
-    "Reconnaissance/Active-Information-Gathering/SNMP/SNMP-Recon-Cheatsheet.md",
-    "Web-Application-Hacking/Web-Concepts/HTLM.md",
     "Software/File-Typology/Logs",
     "Development/Languages/Untitled",
     "Web-Application-Hacking/Web-Exploits",
@@ -239,8 +253,6 @@
     "Images/azureprivatedns.png",
     "Images/azureenterprisechoicesofwan.png",
     "Images/wheredoyouthinkitisdonefrom.png",
-    "Images/azurefirewalldeploymentoptions.png",
-    "Images/azurefirewallmanagerfeatures.png",
-    "Images/azurepremiumfirewallfeatures.png"
+    "Images/azurefirewalldeploymentoptions.png"
   ]
 }

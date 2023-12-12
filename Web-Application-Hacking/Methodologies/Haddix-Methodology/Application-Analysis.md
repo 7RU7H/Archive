@@ -39,7 +39,12 @@ Integrations
 
 ## Finding CVE's and Misconfigs
 #### Nuclei
-[Nuclei](https://github.com/projectdiscovery/nuclei)
+
+[Nuclei](https://github.com/projectdiscovery/nuclei) - [[Nuclei]] cheatsheet locally
+
+
+
+
 [Kali](https://www.kali.org/tools/nuclei/)
 ```bash
 sudo apt install nuclei # Kali
