@@ -32,18 +32,6 @@
             }
           },
           {
-            "id": "97fbed061c54e897",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tools/Web-Applications-Attacking/Nuclei.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "e1e855d478f691d9",
             "type": "leaf",
             "state": {
@@ -56,43 +44,19 @@
             }
           },
           {
-            "id": "c7005df037021280",
+            "id": "b730e3767315fb37",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Services/Databases/MSSQL/MSSQL-Hacking.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "127fbfdd6561bbcc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "474af22122320e1e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tools/Useful-Online-Software/Github-guide.md",
+                "file": "Networks/Network-Theory/Network-Protocols/DHCP.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -121,7 +85,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "HTML",
+                "query": "OSI-Mod",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -158,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/Web-Applications-Attacking/Nuclei.md",
+                "file": "Networks/Network-Theory/Network-Protocols/DHCP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tools/Web-Applications-Attacking/Nuclei.md",
+                "file": "Networks/Network-Theory/Network-Protocols/DHCP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -198,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tools/Web-Applications-Attacking/Nuclei.md"
+                "file": "Networks/Network-Theory/Network-Protocols/DHCP.md"
               }
             }
           },
@@ -226,11 +190,21 @@
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "97fbed061c54e897",
+  "active": "b730e3767315fb37",
   "lastOpenFiles": [
+    "Security-Disciplines/OPSEC-101.md",
+    "Security-Disciplines/Red-Team/Red-Team-Theory/Red-Team-OPSEC.md",
+    "Services/Databases/MYSQL/MySQL-SQL-Injection-Cheatsheet.md",
+    "Networks/Network-Theory/OSI-Model.md",
+    "Services/Databases/MSSQL/MSSQL-Hacking.md",
+    "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
+    "Tools/Useful-Online-Software/Github-guide.md",
+    "Web-Application-Hacking/CMS/Wordpress.md",
+    "Tools/Web-Applications-Attacking/Nuclei.md",
     "Software/Operating-Systems/Linux/Linux-Commands/Linux-Module-Commands.md",
     "Software/Operating-Systems/Linux/Linux-Commands/Linux-Command-Hub.md",
     "Software/Operating-Systems/Linux/Linux-Commands/Core-Linux-Commands.md",
@@ -241,22 +215,13 @@
     "Reconnaissance/Active-Information-Gathering/Active-Recon.md",
     "Reconnaissance/Active-Information-Gathering/SNMP/SNMP-Recon-Cheatsheet.md",
     "Web-Application-Hacking/Web-Concepts/HTLM.md",
-    "Tools/Web-Applications-Attacking/Nuclei.md",
-    "Web-Application-Hacking/CMS/Wordpress.md",
     "Tools/Web-Applications-Attacking/Burpsuite/BurpSuite.md",
-    "Services/Databases/MYSQL/MySQL-SQL-Injection-Cheatsheet.md",
     "Web-Application-Hacking/Web-Exploits/SQLi/SQL-Injection.md",
-    "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
-    "Services/Databases/MSSQL/MSSQL-Hacking.md",
     "Services/Databases/MYSQL/MySQL-Hacking.md",
-    "Tools/Useful-Online-Software/Github-guide.md",
     "Reconnaissance/Active-Information-Gathering/RPC/RPCClient-Cheatsheet.md",
     "Tools/Forensics/FTK-Imager.md",
     "Security-Disciplines/Digital-Forensics/Digital-Forensics.md",
     "Security-Disciplines/Digital-Forensics/Windows-Forensics.md",
-    "Reconnaissance/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
-    "Security-Disciplines/OPSEC-101.md",
-    "Exploitation/Windows/Pass-The-Hash.md",
     "Software/File-Typology/Logs",
     "Development/Languages/Untitled",
     "Web-Application-Hacking/Web-Exploits",

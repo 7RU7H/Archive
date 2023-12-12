@@ -3,7 +3,7 @@
 [[Network-Protocols]]
 [[Application-Protocols]]
 [[ARP-Protocol]]
-[[Dynamic-Host-Configuration-Protocol]]
+[[DHCP]]
 [[Internet-Protocol]]
 [[Link-Layer-Ethernet]]
 [[Network-Address-Translation]]

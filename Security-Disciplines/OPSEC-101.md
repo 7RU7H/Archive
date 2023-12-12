@@ -100,9 +100,41 @@ SSL
 - certbot --register-unsafely-without-email
 - no self-signed certs or default
 
-## Group Specific OPSEC Guides
+#### BHIS Talk on Modern OPSEC for non-criminals (abuse survivors,etc)
 
-[[Red-Team-OPSEC]]
+The below is a condensed list of actions, services and considerations noted and inspired by [Part 1-How to Live like a Criminal - Privacy Tips for the Non-Criminal | Ean Meyer & John Strand](https://www.youtube.com/watch?v=9iwh5J71pZg), [Part 2-How to Live like a Criminal - Privacy Tips for the Non-Criminal | Ean Meyer & John Strand](https://www.youtube.com/watch?v=r4SvCFxTMMk) and [Part 3-How to Live like a Criminal - Privacy Tips for the Non-Criminal | Ean Meyer & John Strand](https://www.youtube.com/watch?v=JlVI705wHq8). BHIS discussion about How to Live like a Criminal - Privacy Tips for the Non-Criminal is a catchy title but is also how to avoid abusers and be more private our modern techniques as of 2023.   
+
+A concept discussed predominately is the idea of a *pattern of life*. A pattern of life is every behaviour that is a data point or can with analytics and heuristic be evaluated as an assumption either by an algorithm or human analyst. These patterns of a victims life are then enumerated by the threat actor through big data, heuristics and graph based approaches to data analysis the connect you to secondary or tertiary or Nth total connections. Sadly predatory individuals or groups will *watering hole attack* known connections - the example given being that a survivor of domestic abuse will seek shelter with family and friends, but the attacker will enumerate to find these as they know that is where most victim will inherently go for safety. When you *bug out* (abandon your current life, its patterns (using devices, accounts, locations, etc) - you bug out hard. If you disconnect from the connection you do not contaminate or contact until potentially months and years later - do not touch or interact with computers, phones, IOT devices. These devices exist to collect an marshal data. 
+
+This is not for Red teams visit [[Red-Team-OPSEC]]. 
+
+- Grey Man Theory
+- Self Assessment
+	- Find data connected to an email or name - premium and vetted service
+	- 
+- Gear
+	- Use gift cards
+	- Do not **activate** or **use** burner devices in locations that connect to you or secondary or tertiary parties with connections back to you.
+	- Buy in cash
+		- Farmer Market ATMs - no cameras
+	- Do not buy used
+	- Prepaid services 
+		- Activate with gift cards
+		- In the car park - not all at once
+	- Wait 10 to 365 days use gear purchased locations with security cameras
+		- Security camera footage is retained for Nth length of time
+	- Use Infra red filter for face ID or Anti Camera fabrics
+	- Tails OS 
+- Communications 
+	- Duress Message
+	- Tor is not that good
+	- VPNs - [[IPsec]] is encrypted
+	- PGP - use encryption
+	- Signal
+- IRL  
+	- Being followed, go to a markets or festival to lose tails
+	- Use Infra red filter for face ID or Anti Camera fabrics
+	- EFF - prevent MITM-ing your phone
 
 ## Moscow Rules
 
@@ -141,3 +173,6 @@ SSL
 [Part 1-How to Live like a Criminal - Privacy Tips for the Non-Criminal | Ean Meyer & John Strand](https://www.youtube.com/watch?v=9iwh5J71pZg)
 [Part 2-How to Live like a Criminal - Privacy Tips for the Non-Criminal | Ean Meyer & John Strand](https://www.youtube.com/watch?v=r4SvCFxTMMk)
 [Part 3-How to Live like a Criminal - Privacy Tips for the Non-Criminal | Ean Meyer & John Strand](https://www.youtube.com/watch?v=JlVI705wHq8)
+
+
+
