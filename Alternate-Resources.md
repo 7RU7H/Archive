@@ -8,6 +8,13 @@ This repository stands on and shadows amongst absolute giants in the various com
 
 [Arch Wiki](https://archlinux.org/), due to Arch users general being power users having to troubleshoot, patch and maintain weirder parts of the OS the Arch Wiki is the best general Linux-based resource for information regardless of distribution or setup (Windows related information exists).  Do not be fooled by the density of information it is actually very concise it just support lots of variations how to do things.
 
+#### BHIS
+
+[Black Hills Information Security (BHIS)](https://www.blackhillsinfosec.com/) is security company and educator that is renowned in the industry and for InfoSec people generally for trying to elevate the standard of services and education for customers and hackers alike. And is related to [AntiSyphon Training](https://www.google.com/search?client=firefox-b-e&q=AntiSyphon)  *is here to disrupt the traditional training industry by providing high-quality and cutting-edge education to everyone, regardless of their financial position*. And there own very difficult geographically to get to cybersecurity conference [wildwesthackinfest](https://wildwesthackinfest.com/). All easily and freely available on YouTube:
+- [YouTube - WildWestHackinFest](https://m.youtube.com/@WildWestHackinFest/channels?view=49&shelf_id=7) 
+- [YouTube - BlackHillsInformationSecurity](https://www.youtube.com/c/BlackHillsInformationSecurity)
+- [YouTube - Antisyphon Training](https://www.youtube.com/channel/UCkFKiCm7dD0gsB4jqIdCuRQ)
+
 #### The Hacker Recipes
 
 [thehacker.recipes](https://www.thehacker.recipes/) *is aimed at providing technical guides on various hacking topics. The most advanced topics are Active Directory and Web services.* A Gitbook that has possible the most up-to-date resources regard Active Directory Attacks that include quality visual and examples for both Linux and Windows tooling.  

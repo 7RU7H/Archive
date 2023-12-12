@@ -32,31 +32,31 @@
             }
           },
           {
-            "id": "e1e855d478f691d9",
+            "id": "1ccb6ddf61c147b8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Services/Databases/MYSQL/MySQL-SQL-Injection-Cheatsheet.md",
+                "file": "Exploitation/Windows/Active-Directory/Shadow-Credentials.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "b730e3767315fb37",
+            "id": "50325df7f91dcf76",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Networks/Network-Theory/Network-Protocols/DHCP.md",
+                "file": "Tools/AD-Offensive/Powerview/PowerView-Cheatsheet.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +85,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "OSI-Mod",
+                "query": "PowerView",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Networks/Network-Theory/Network-Protocols/DHCP.md",
+                "file": "Web-Application-Hacking/CMS/Wordpress.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Networks/Network-Theory/Network-Protocols/DHCP.md",
+                "file": "Web-Application-Hacking/CMS/Wordpress.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Networks/Network-Theory/Network-Protocols/DHCP.md"
+                "file": "Web-Application-Hacking/CMS/Wordpress.md"
               }
             }
           },
@@ -194,11 +194,18 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "b730e3767315fb37",
+  "active": "fcb2933c05859479",
   "lastOpenFiles": [
+    "Tools/Whisker.md",
+    "Tools/AD-Offensive/Powerview/PowerView-Cheatsheet.md",
+    "Reconnaissance/Active-Directory/Active-Directory-Enumeration.md",
+    "Exploitation/Windows/Active-Directory/Shadow-Credentials.md",
+    "Tools/AD-Offensive/Rubeus-Cheatsheet.md",
+    "Services/Databases/MYSQL/MySQL-SQL-Injection-Cheatsheet.md",
+    "Networks/Network-Theory/Network-Protocols/DHCP.md",
+    "Alternate-Resources.md",
     "Security-Disciplines/OPSEC-101.md",
     "Security-Disciplines/Red-Team/Red-Team-Theory/Red-Team-OPSEC.md",
-    "Services/Databases/MYSQL/MySQL-SQL-Injection-Cheatsheet.md",
     "Networks/Network-Theory/OSI-Model.md",
     "Services/Databases/MSSQL/MSSQL-Hacking.md",
     "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
@@ -215,13 +222,6 @@
     "Reconnaissance/Active-Information-Gathering/Active-Recon.md",
     "Reconnaissance/Active-Information-Gathering/SNMP/SNMP-Recon-Cheatsheet.md",
     "Web-Application-Hacking/Web-Concepts/HTLM.md",
-    "Tools/Web-Applications-Attacking/Burpsuite/BurpSuite.md",
-    "Web-Application-Hacking/Web-Exploits/SQLi/SQL-Injection.md",
-    "Services/Databases/MYSQL/MySQL-Hacking.md",
-    "Reconnaissance/Active-Information-Gathering/RPC/RPCClient-Cheatsheet.md",
-    "Tools/Forensics/FTK-Imager.md",
-    "Security-Disciplines/Digital-Forensics/Digital-Forensics.md",
-    "Security-Disciplines/Digital-Forensics/Windows-Forensics.md",
     "Software/File-Typology/Logs",
     "Development/Languages/Untitled",
     "Web-Application-Hacking/Web-Exploits",

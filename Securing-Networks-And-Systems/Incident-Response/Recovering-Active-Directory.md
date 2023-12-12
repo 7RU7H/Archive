@@ -107,7 +107,7 @@ Use [[Bloodhound-Guide]] - to Bloodhound your environment to:
 	- Monitor potential vectors as a [[Honeypots]] to then gain more [[CTI-And-Containment]] 
 		- Get IPs and domain names of C2 servers to had to authorities and for blacklisting 
 
-- (Do not use PowerView if you are going to  introduce attacking tool to enumerate the environment at least use Bloodhound) - PowerView is recommended by the THM room and here [[Powerview-Cheatsheet]], but it is basically Bloodhound without the visual aid or the breakdown of what the attacker will do. I would not recommend. You could just use the administrative PowerShell module for AD as administrators of the server instead of introducing more ways for attackers to use this functionality and impersonate the IR team! 
+- (Do not use PowerView if you are going to  introduce attacking tool to enumerate the environment at least use Bloodhound) - PowerView is recommended by the THM room and here [[PowerView-Cheatsheet]], but it is basically Bloodhound without the visual aid or the breakdown of what the attacker will do. I would not recommend. You could just use the administrative PowerShell module for AD as administrators of the server instead of introducing more ways for attackers to use this functionality and impersonate the IR team! 
 #### Domain Takeback
 
 A **Post-Compromise** plan must be in place to ensure the availability of services and minimise downtime for AD users.

@@ -1,6 +1,6 @@
 # Active Directory Enumeration
 
-For a concise and relevant as *possible* to ethical hacking article on the subject of AD visit:[[Active-Directory-Defined]]
+For a concise and relevant as *possible* to ethical hacking article on the subject of AD visit: [[Active-Directory-Defined]]
 
 Everything with a Domain (domain-joined (part of a domain)) is a Organisational Unit an object with attributes. These objects represent data, policy and physical machines 
 
@@ -54,7 +54,7 @@ Visit the links to view exploitation of Object permissions
 - Self (Self-Membership): Add ourselves to for example a group
 
 
-Enumerate ACEs with PowerView:
+Enumerate ACEs with [[PowerView-Cheatsheet]] :
 ```powershell
 Get-ObjectAcl -Identity $username
 Get-ObjectAcl -Identity $username | select ObjectSID, SecurityIdentifier, ActiveDirectoryRights
@@ -150,7 +150,7 @@ $targetGroup.properties.member
 $nestedGroup = LDAPSearch -LDAPQuery "(&(objectCategory=group)(cn=$NESTEDGROUP*))"
 ```
 
-SPN enumeration - See [[Powerview-Cheatsheet]] and [[Bloodhound-Guide]] 
+SPN enumeration - See [[PowerView-Cheatsheet]] and [[Bloodhound-Guide]] 
 ```powershell
 # LDAP query (&(objectCategory=computer)(objectClass=computer))
 sc \\$ForEachMachine queryex type= service state= all
@@ -173,7 +173,7 @@ ls \\$SHARENAME\$path\$file.$extension
 
 ## PowerView
 
-[Powerview](https://github.com/PowerShellMafia/PowerSploit/blob/master/Recon/PowerView.ps1) from PowerShellMafia's [PowerSploit](https://powersploit.readthedocs.io/en/latest/Recon/) repository is a a PowerShell module    designed to aid in reconnaissance of an Active Directory Domain. Although created before the advent of Bloodhound(visit [[Bloodhound-Guide]] for more details) it is still a powerful way to enumerate a domain, although probably in either obfuscated chunks or the translated to the direct Windows API or LDAP calls for more stealth.  Visit the [[Powerview-Cheatsheet]]
+[Powerview](https://github.com/PowerShellMafia/PowerSploit/blob/master/Recon/PowerView.ps1) from PowerShellMafia's [PowerSploit](https://powersploit.readthedocs.io/en/latest/Recon/) repository is a a PowerShell module    designed to aid in reconnaissance of an Active Directory Domain. Although created before the advent of Bloodhound(visit [[Bloodhound-Guide]] for more details) it is still a powerful way to enumerate a domain, although probably in either obfuscated chunks or the translated to the direct Windows API or LDAP calls for more stealth.  Visit the [[PowerView-Cheatsheet]]
 
 ## SysInternals
 

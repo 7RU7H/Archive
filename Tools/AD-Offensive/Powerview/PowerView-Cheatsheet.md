@@ -1,4 +1,4 @@
-# Powerview-Cheatsheet
+# PowerView-Cheatsheet
 
 Union of cheatsheets from awesome places and people on the internet [HarmJ0y](https://gist.github.com/HarmJ0y/184f9822b195c52dd50c379ed3117993) and [Macostag](https://gist.github.com/macostag/44591910288d9cc8a1ed6ea35ac4f30f). Please thank [Mario(macostag)](https://github.com/macostag) and [HarmJ0y](https://github.com/HarmJ0y) for there work, I just formatted and manually diff-ed the cheatsheets for personal use. Note from [HarmJ0y](https://github.com/HarmJ0y): "*"
 PowerView's last major overhaul is detailed here: http://www.harmj0y.net/blog/powershell/make-powerview-great-again/, tricks for the 'old' PowerView are at https://gist.github.com/HarmJ0y/3328d954607d71362e3c"*
@@ -109,6 +109,7 @@ Get-NetComputer -Ping #Send a ping to check if the computers are working
 Get-NetComputer -Unconstrained #DCs always appear but aren't useful for privesc
 Get-NetComputer -TrustedToAuth #Find computers with Constrined Delegation
 Get-DomainGroup -AdminCount | Get-DomainGroupMember -Recurse | ?{$_.MemberName -like '*
+
 ```
 
 ## Logon and Sessions
@@ -219,6 +220,12 @@ Get-DomainGPO | %{Get-DomainObjectAcl -Identity $_.displayname -ResolveGUIDs}
 Find-InterestingDomainAcl -ResolveGUIDs | Select-Object ObjectDN,ActiveDirectoryRights,securityidentifier | Format-List
 ```
 
+[[Shadow-Credentials]] exploitation with [[Whisker]] and [[Rubeus-Cheatsheet]]
+```powershell
+# With our %USER% enumerate privileges - for any write privilege since the goal is to overwrite the `msDS-KeyCredentialLink` 
+Find-InterestingDomainAcl -ResolveGuids | Where-Object { $_.IdentityReferenceName -eq "$CURRENTUSER" } | Select-Object IdentityReferenceName, ObjectDN, ActiveDirectoryRights
+```
+
 ## Domain Trust
 ```powershell
 Get-NetDomainTrust #Get all domain trusts (parent, children and external)
@@ -239,3 +246,4 @@ Get-DomainForeignGroupMember #Get groups with privileges in other domains inside
 [HarmJ0y](https://github.com/HarmJ0y)
 [HarmJ0y Updated Cheatsheet](https://gist.github.com/HarmJ0y/184f9822b195c52dd50c379ed3117993) 
 [Macostag Cheatsheet](https://gist.github.com/macostag/44591910288d9cc8a1ed6ea35ac4f30f)
+[THM Day 11 of Advent of Cyber 2023](https://tryhackme.com/room/adventofcyber2023)
