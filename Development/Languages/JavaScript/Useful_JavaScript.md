@@ -2,6 +2,11 @@
 
 Firstly I apologise for those reading this. JavaScript seems insane to me. How is a integer not a data type or why should strings and integer be concatenate or how undefined variable not illegal? Above 95% of the internet is this. So it is important to know, but if you have come from other languages I decide to refer to as much to Wallace and Gromit to actual make the learning of this stick in my brain rather than exclamatory *"why?"* at everything instead of question with curiosity. [Here is meme joke for those who may be upset by Javascript or my insignificant opinions](https://www.youtube.com/watch?v=Uo3cL4nrGOk). Web Apps exist and I have to hack them sometimes, I respect JavaScript and what has done for the world and internet.
 
+[Mark Rendle - Programming's Greatest mistakes](https://www.youtube.com/watch?v=Y9clBHENy4Q) - JavaScript
+```javascript
+'B' + 'a' ++ 'a' + 'a' === 'BaNaNa'
+```
+
 ## Browser Tools
 
 Browser Developer Tools, `Ctrl + F12`  is a underrated and very powerful utility to understand and interact with Javascript. Every Browser has one. Use it.
@@ -73,3 +78,4 @@ stopaimmediatePropatio()
 ## References
 
 [Fireship.io ](https://www.youtube.com/shorts/7bmsDg4BaKw)
+[Mark Rendle - Programming's Greatest mistakes](https://www.youtube.com/watch?v=Y9clBHENy4Q)
