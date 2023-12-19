@@ -79,7 +79,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -145,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Services/Databases/MYSQL/MySQL-SQL-Injection-Cheatsheet.md",
+                "file": "Artificial-Intelligence/Machine-Learning.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -162,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Services/Databases/MYSQL/MySQL-SQL-Injection-Cheatsheet.md",
+                "file": "Artificial-Intelligence/Machine-Learning.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -185,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Services/Databases/MYSQL/MySQL-SQL-Injection-Cheatsheet.md"
+                "file": "Artificial-Intelligence/Machine-Learning.md"
               }
             }
           },
@@ -217,8 +218,9 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "29c215ce85f70e66",
+  "active": "44f8dce655697a8b",
   "lastOpenFiles": [
+    "Services/Databases/MYSQL/MySQL-SQL-Injection-Cheatsheet.md",
     "Web-Application-Hacking/Web-Exploits/SQLi/SQL-Injection.md",
     "Development/Languages/JavaScript/Useful_JavaScript.md",
     "Artificial-Intelligence/Machine-Learning.md",
@@ -240,7 +242,6 @@
     "Reconnaissance/Active-Directory/Active-Directory-Enumeration.md",
     "Exploitation/Windows/Active-Directory/Shadow-Credentials.md",
     "Tools/AD-Offensive/Rubeus-Cheatsheet.md",
-    "Services/Databases/MYSQL/MySQL-SQL-Injection-Cheatsheet.md",
     "Networks/Network-Theory/Network-Protocols/DHCP.md",
     "Alternate-Resources.md",
     "Security-Disciplines/OPSEC-101.md",
