@@ -1,6 +1,6 @@
 # Volatility
 
-[Volatility](https://github.com/volatilityfoundation/volatility) developers describe the Volatility framework: *"The Volatility Framework is a completely open collection of tools, implemented in Python under the GNU General Public License, for the extraction of digital artifacts from volatile memory (RAM) samples. The extraction techniques are performed completely independent of the system being investigated but offer visibilty into the runtime state of the system. The framework is intended to introduce people to the techniques and complexities associated with extracting digital artifacts from volatile memory samples and provide a platform for further work into this exciting area of research."*
+[Volatility](https://github.com/volatilityfoundation/volatility) developers describe the Volatility framework: *"The Volatility Framework is a completely open collection of tools, implemented in Python under the GNU General Public License, for the extraction of digital artefacts from volatile memory (RAM) samples. The extraction techniques are performed completely independent of the system being investigated but offer visibilty into the runtime state of the system. The framework is intended to introduce people to the techniques and complexities associated with extracting digital artifacts from volatile memory samples and provide a platform for further work into this exciting area of research."*
 
 To remain modern long past learning about Volatility this article will be covering the python3, there are ten plus year of resources for the original   
 
@@ -16,16 +16,16 @@ For collecting samples for analysis consider review the options in the article [
 
 ## Plugins
 
-Plugins are the heart of analytical lensing with Volatility. 
+Plugins are the tools for differing your typical analytical lenses with Volatility. They do not substitute for exploratory questioning as methodology, only enhance the potential for finding better answers. 
 
-[Community plugins for Volatility3](https://github.com/volatilityfoundation/community3) - contains Volatility3 plugins developed and maintained by the community.
+- [Community plugins for Volatility3](https://github.com/volatilityfoundation/community3) - contains Volatility3 plugins developed and maintained by the community.
 
 Previous Volatility versions would require manual identification of OS profile - OS and its build version. Volatility3 will automatically identify the host and build of the memory file, but you need to specify the operating system prior to specifying the plugin to be used for example:
-`windows.info`, `linux.info` and `mac.info`.
+- `windows.info`, `linux.info` and `mac.info`.
 
 ## Cheatsheet
 
-[Documentation](https://volatility3.readthedocs.io/en/latest/volatility3.plugins.html) and Initial Assimilations from [Andrea Fortuna](https://github.com/andreafortuna)
+[Documentation](https://volatility3.readthedocs.io/en/latest/volatility3.plugins.html) and Initial Assimilation from [Andrea Fortuna](https://github.com/andreafortuna)
 
 ```bash
 python3 vol.py -h # Help information
@@ -78,7 +78,7 @@ kdbgscan - `kdbgscan` - scans the KDBGHeader signature linked to Volatility prof
 
 kpcrscan - `kpcrscan` - scan for potential KPCR structures - [Andreas Fortuna](https://andreafortuna.org/2017/06/25/volatility-my-own-cheatsheet-part-1-image-identification/): *If the `KdVersionBlock` is not null, then it may be possible to find the machine's KDBG address via the KPCR. In fact, the backup method of finding KDBG used by plugins such as pslist is to leverage `kpcrscan` and then call the `KPCR.get_kdbg()` API function.*
 
-malfind - `.malfind` -  hunt for code injection - scans heap to identify exebutable bit set to `RWE` or `RX` 
+malfind - `.malfind` -  hunt for code injection - scans heap to identify executable bit set to `RWE` or `RX` 
 
 memmap - `.Memmap` - shows you exactly which pages are memory resident, given a specific process DTB (or kernel DTB if you use this plugin on the Idle or System process)
 ```bash
@@ -135,8 +135,6 @@ yarascan - `.yarascan` - compare the memory file against YARA rules
 
 apihooks - `.apihooks` (apparently is on the to-do) - https://github.com/volatilityfoundation/volatility3/issues/686
 moddump - `.moddump`
-
-
 
 ## References
 

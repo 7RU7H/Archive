@@ -73,7 +73,7 @@ Azure Policy  != Azure Roles && RBAC
 	- Azure Roles the object (that is an implementation of Azure Roles) each a type of Roles like Owner, Contributor, Reader...  
 	- RBAC controls access to resources - Manages User actions at different scopes 
 	- A Role has:
-		- Assignment, Scope, Role Definitions, Security Principle (Object: `user`, `group` or `application`))
+		- Assignment, Scope, Role Definitions, Security Principle (Object: `user`, `group` or `application`)
 - Budget - HOW MUCH?
  
 - [[Azure-Administration-Azure-Policies]] 

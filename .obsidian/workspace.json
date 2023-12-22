@@ -20,36 +20,12 @@
             }
           },
           {
-            "id": "fcb2933c05859479",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Security-Disciplines/Incident-Response/Linux-IR.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "b3be6b23750c29c5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1ccb6ddf61c147b8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Exploitation/Windows/Active-Directory/Shadow-Credentials.md",
+                "file": "Development/DevOps/SDLC.md",
                 "mode": "source",
                 "source": false
               }
@@ -78,7 +54,7 @@
     "type": "split",
     "children": [
       {
-        "id": "dcb777db7ca94047",
+        "id": "286746cae991a4d3",
         "type": "tabs",
         "children": [
           {
@@ -89,6 +65,14 @@
               "state": {
                 "sortOrder": "alphabetical"
               }
+            }
+          },
+          {
+            "id": "f144982d6ffcb7f8",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
             }
           },
           {
@@ -104,14 +88,6 @@
                 "extraContext": false,
                 "sortOrder": "alphabetical"
               }
-            }
-          },
-          {
-            "id": "f144982d6ffcb7f8",
-            "type": "leaf",
-            "state": {
-              "type": "bookmarks",
-              "state": {}
             }
           }
         ]
@@ -134,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Security-Disciplines/Incident-Response/Linux-IR.md",
+                "file": "Services/Webservers/Jenkins.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Security-Disciplines/Incident-Response/Linux-IR.md",
+                "file": "Services/Webservers/Jenkins.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Security-Disciplines/Incident-Response/Linux-IR.md"
+                "file": "Services/Webservers/Jenkins.md"
               }
             }
           },
@@ -206,36 +182,37 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "fcb2933c05859479",
+  "active": "ed8f63df71621be6",
   "lastOpenFiles": [
-    "Security-Disciplines/Incident-Response/Incident-Response.md",
+    "Exploitation/Shells/TTY-Spawning.md",
+    "Exploitation/Shells/Shells.md",
+    "Exploitation/Shells/Reverse-Shells-Listing.md",
+    "Exploitation/Shells/Encoded-Shell-Spawning.md",
+    "Exploitation/Shells/Bind-And-Reverse-Shells-Defined.md",
+    "Development/DevOps/SDLC.md",
+    "Cloud/Kubernetes/Kubernetes.md",
+    "Security-Disciplines/Static-Application-Security-Testing.md",
+    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/File-Transfers.md",
+    "Development/DevOps",
+    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Windows-File-Transfers.md",
+    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Linux-File-Transfers.md",
+    "Tools/Forensics/Volatility.md",
+    "Security-Disciplines/Digital-Forensics/Memory-Forensics.md",
+    "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
+    "Exploitation/Windows/Active-Directory/Shadow-Credentials.md",
+    "Services/Databases/MYSQL/MySQL-SQL-Injection-Cheatsheet.md",
     "Security-Disciplines/Incident-Response/Linux-IR.md",
-    "Security-Disciplines/Incident-Response/Incident-Response 1.md",
     "Tools/Network-Based/SilK.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+    "Security-Disciplines/Incident-Response/Incident-Response.md",
+    "Security-Disciplines/Incident-Response/Incident-Response 1.md",
     "Networks/Network-Theory/IANA-Assigned-Internet-Protocol-Numbers.md",
     "README.md",
     "Tools/Authentication-Attacking/Hash-Cracking-Tools/Hashcat-Cheatsheet.md",
     "Artificial-Intelligence/Machine-Learning.md",
-    "Services/Databases/MYSQL/MySQL-SQL-Injection-Cheatsheet.md",
     "Web-Application-Hacking/Web-Exploits/SQLi/SQL-Injection.md",
-    "Development/Languages/JavaScript/Useful_JavaScript.md",
-    "Excalidraw/ml-neural-networks.excalidraw.md",
-    "Services/Webservers/Jenkins.md",
-    "Post-Exploitation/Evasion/Bypassing-Antivirus-With-Understanding-Comes-Ease-TALK.md",
-    "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
-    "Web-Application-Hacking/Methodologies/Haddix-Methodology/Application-Analysis.md",
     "Images/relationship-between-false-positives-and-false-negatives-definitions-JM-WWHF-Talk.png",
     "Images/relationship-between-false-positives-and-false-negatives-JM-WWHF-Talk.png",
-    "Post-Exploitation/Evasion/Antivirus-Evasion/Antivirus-Evasion.md",
-    "Post-Exploitation/Evasion/Antivirus-Evasion/Metasploit-AV-Evasion.md",
-    "Securing-Networks-And-Systems/Antivirus/Windows-Defender-For-AV-Evasion.md",
-    "Windows-Defender.md",
-    "Web-Application-Hacking/CMS/Wordpress.md",
-    "Tools/Whisker.md",
-    "Tools/AD-Offensive/Powerview/PowerView-Cheatsheet.md",
-    "Reconnaissance/Active-Directory/Active-Directory-Enumeration.md",
-    "Exploitation/Windows/Active-Directory/Shadow-Credentials.md",
-    "Tools/AD-Offensive/Rubeus-Cheatsheet.md",
     "Software/File-Typology/Logs",
     "Development/Languages/Untitled",
     "Web-Application-Hacking/Web-Exploits",
@@ -245,7 +222,6 @@
     "Web-Application-Hacking/Web-Exploits/CMDI",
     "Web-Application-Hacking/Web-Exploits/CSRF",
     "Web-Application-Hacking/Web-Exploits/SSRF",
-    "Web-Application-Hacking/Web-Exploits/SSTI",
     "Images/DACL-abuse-dark.png",
     "Images/DACL abuse-dark.png",
     "Images/azure-aksscalingimplementation.png",

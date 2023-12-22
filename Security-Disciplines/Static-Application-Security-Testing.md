@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Static Application Security Testing is the practice of source code review that is static - not running to finding bugs, vulnerabilities and misconfigurations. Using a combination of manual analysis and automated tools will yield the best results rather either when performing Static Application Security Testing. Manual enumeration and analysis is time consumer and human-error prone; Automated tooling is only as good as human reading the output, signatures of potential issues in code, the parsing algorithm of the tool and the snippet sandboxing if implemented. For its use in the [[Software-Development-Lifecycle]] and DevOps related activities along SAST visit the linked page.
+Static Application Security Testing is the practice of source code review that is static - not running to finding bugs, vulnerabilities and misconfigurations. Using a combination of manual analysis and automated tools will yield the best results rather either when performing Static Application Security Testing. Manual enumeration and analysis is time consumer and human-error prone; Automated tooling is only as good as human reading the output, signatures of potential issues in code, the parsing algorithm of the tool and the snippet sandboxing if implemented. For its use in the [[Software-Development-Lifecycle]] ([[SDLC]]) and DevOps related activities along SAST visit the linked page.
 
 ## Considerations on "findings"
 
