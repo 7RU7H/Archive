@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exploitation/Authentication/Coerced-Authentication.md",
+                "file": "Web-Application-Hacking/Web-Exploits/SQLi/SQL-Injection.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exploitation/Authentication/Coerced-Authentication.md",
+                "file": "Web-Application-Hacking/Web-Exploits/SQLi/SQL-Injection.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Exploitation/Authentication/Coerced-Authentication.md",
+                "file": "Web-Application-Hacking/Web-Exploits/SQLi/SQL-Injection.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Exploitation/Authentication/Coerced-Authentication.md"
+                "file": "Web-Application-Hacking/Web-Exploits/SQLi/SQL-Injection.md"
               }
             }
           },
@@ -159,8 +159,9 @@
   },
   "active": "5fb79815f69e4730",
   "lastOpenFiles": [
-    "Security-Disciplines/Digital-Forensics/Mobile-Forensics.md",
+    "Web-Application-Hacking/Web-Exploits/SSRF/Server-Side-Request-Forgery.md",
     "Exploitation/Authentication/Coerced-Authentication.md",
+    "Security-Disciplines/Digital-Forensics/Mobile-Forensics.md",
     "Exploitation/Authentication",
     "Tools/Forensics/Autopsy.md",
     "Security-Disciplines/Digital-Forensics/Digital-Forensics.md",
@@ -185,7 +186,6 @@
     "Services/Databases/MYSQL/MySQL-SQL-Injection-Cheatsheet.md",
     "Development/Software-Development-Paradigms/Solid-Design-Principles.md",
     "Exploitation/Shells/TTY-Spawning.md",
-    "Exploitation/Shells/Shells.md",
     "Development/DevOps",
     "Images/relationship-between-false-positives-and-false-negatives-definitions-JM-WWHF-Talk.png",
     "Images/relationship-between-false-positives-and-false-negatives-JM-WWHF-Talk.png",
