@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Security-Disciplines/Digital-Forensics/Mobile-Forensics.md",
+                "file": "Exploitation/Authentication/Coerced-Authentication.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Security-Disciplines/Digital-Forensics/Mobile-Forensics.md",
+                "file": "Exploitation/Authentication/Coerced-Authentication.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Security-Disciplines/Digital-Forensics/Mobile-Forensics.md",
+                "file": "Exploitation/Authentication/Coerced-Authentication.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Security-Disciplines/Digital-Forensics/Mobile-Forensics.md"
+                "file": "Exploitation/Authentication/Coerced-Authentication.md"
               }
             }
           },
@@ -159,8 +159,10 @@
   },
   "active": "5fb79815f69e4730",
   "lastOpenFiles": [
-    "Tools/Forensics/Autopsy.md",
     "Security-Disciplines/Digital-Forensics/Mobile-Forensics.md",
+    "Exploitation/Authentication/Coerced-Authentication.md",
+    "Exploitation/Authentication",
+    "Tools/Forensics/Autopsy.md",
     "Security-Disciplines/Digital-Forensics/Digital-Forensics.md",
     "Exploitation/Development/Finding-Exploits.md",
     "Exploitation/Windows/Windows-Internals-Exploitation/Resources-List.md",
@@ -184,7 +186,6 @@
     "Development/Software-Development-Paradigms/Solid-Design-Principles.md",
     "Exploitation/Shells/TTY-Spawning.md",
     "Exploitation/Shells/Shells.md",
-    "Exploitation/Shells/Reverse-Shells-Listing.md",
     "Development/DevOps",
     "Images/relationship-between-false-positives-and-false-negatives-definitions-JM-WWHF-Talk.png",
     "Images/relationship-between-false-positives-and-false-negatives-JM-WWHF-Talk.png",
@@ -196,7 +197,6 @@
     "Web-Application-Hacking/Web-Exploits/IDOR",
     "Web-Application-Hacking/Web-Exploits/CMDI",
     "Web-Application-Hacking/Web-Exploits/CSRF",
-    "Web-Application-Hacking/Web-Exploits/SSRF",
     "Images/DACL-abuse-dark.png",
     "Images/DACL abuse-dark.png",
     "Images/azure-aksscalingimplementation.png",
