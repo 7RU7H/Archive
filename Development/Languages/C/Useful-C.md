@@ -1,4 +1,5 @@
 
+[[Valgrind]] and [[GDB]]/[[Microsoft-Visual-Studios]] your code! 
 
 Structs
 ```c

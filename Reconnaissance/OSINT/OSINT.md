@@ -22,7 +22,7 @@
 
 For People: [[OSINT-People]]
 
-
+For Locations: [[IMINT-GEOINT]]
 
 ## References
 

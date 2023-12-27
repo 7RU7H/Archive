@@ -312,6 +312,17 @@ Condense:
 	- `www-data` and variants will not have user directory how will that affect subsequent chain
  
 - Internal Network
+	- Use traffic analysis to find insecure updates
+		- is it over https?
+		- is certificate pinned?
+			- MITM the cert if is not
+		- is update signed?
+			 - if not the update does not certificate validate, swap out executable
+		- is signature validated?
+		- how is it validated?
+		- Specific Certificate fingerprint, is principle name?
+			- you can create self sign certs with any principle name
+
 
 - Active Directory
 	- Setup, Objective, Scoping

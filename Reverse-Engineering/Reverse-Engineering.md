@@ -49,7 +49,70 @@ man $cfunctionsName
 ## References
 
 [Kernelcon - Reverse Engineering with Chris Eagle](https://www.youtube.com/watch?v=YhyBRMOutOs)
+[IDA and Malware Reverse Eng. 101 by Jake Williams](https://www.youtube.com/watch?v=h8CkxCpnxes)
 ## Appendix
+
+#### Notes from [IDA and Malware Reverse Eng. 101 by Jake Williams](https://www.youtube.com/watch?v=h8CkxCpnxes)
+
+[IDA and Malware Reverse Eng. 101 by Jake Williams](https://www.youtube.com/watch?v=h8CkxCpnxes)
+
+```
+regshot snapshots the registry
+use fast ssd nvme VM for `scan dir` option REQUIRED. Compare registry changes
+
+procmon, real time register changes, less noisy than sysmon
+- process create filter, filter iut more noise
+
+combine regshot and procmon
+
+
+process hacker - check dll, edit memory on the fly
+- if x86 and x64 components it should be in programs folder
+memory tab of process hacker you can find string you were looking for - live jex editor
+
+netsh is tcpdump with PROCESS
+
+
+targets of opputunity
+
+create the file c:\program.exe
+
+process calls:
+c:\program.exe is genius as it will in process also be the inital lookup
+is the path qualified
+is the path unquoted 
+CreateFile (create or open) failures: 
+
+Column | Relation | Value
+--- | --- | --- 
+Operation | is | CreateFile
+Result | is not | SUCCESS
+Path | Ends with | exe
+
+regshot finds new services - process hacker has a popup on new service creation
+
+
+majorgeeks site 100% spyware free
+
+- Use traffic analysis to find insecure updates
+	- is it over https?
+		- is certificate pinned?
+			- MITM the cert if is not
+		- is update signed?
+			 - if not the update does not certificate validate, swap out executable
+		- is signature validated?
+		- how is it validated?
+		- Specific Certificate fingerprint, is principle name?
+			- you can create self sign certs with any principle name
+
+
+SysWow64 - x86 calls on third party good blue event monitor  commonly exploit because pathing
+
+writing tasks and executing tasks is a race condition
+
+if path is not explicit is then system hoping x
+```
+
 #### Notes from Chris Eagle from Kernelcon
 
 Reverse Engineering with Chris Eagle from [Kernelcon - Reverse Engineering with Chris Eagle](https://www.youtube.com/watch?v=YhyBRMOutOs)

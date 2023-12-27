@@ -21,6 +21,10 @@ Lose the Solution Explorer?
 Change Target Framework, because...
 `[Right Click]` the `[C#] $projectname` in `Solution Explorer` go to `Properties -> Target Framework`
 
+Configure precompiation headers
+`Project -> $NAME Properties -> Precompiled Headers -> Do not use precompiled headers`
+
+
 Compile 
 `Build -> Build Solution` 
 `[CTRL] + B`
@@ -29,6 +33,9 @@ Compile
 - Manually edit your [project file](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/configure-language-version#edit-the-project-file).
 - Set the language version [for multiple projects in a subdirectory](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/configure-language-version#configure-multiple-projects).
 - Configure the [**LangVersion** compiler option](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/compiler-options/language#langversion).
+
+Get implementations from Libraries
+`CTRL + Right-Click` on a name to find symbol results: `struct IMAGE_DOS_HEADER {}` and VS will find how it is defined 
 
 ## References
 

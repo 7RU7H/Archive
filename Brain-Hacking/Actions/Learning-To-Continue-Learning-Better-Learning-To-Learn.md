@@ -1,8 +1,25 @@
-# Learning To Continue Learning Better
+# Learning To Continue Learning Better Learning to Learn
 
-Results take time and require hindsight you never get till you have it
+- Results take time and require hindsight you never get till you have it
 
-#### From "Script-Kiddie / Junior Dev / etc."  Towards Professionalism
+- 5 minutes before trying to sleep always list what you learnt to yourself. 
+
+
+#### Recall and Mapping is important
+
+[Active recall](https://youtu.be/FatnXnlwAc4?si=sA7DvyU2b50hAnLM) Benjamin Keep video is self explainatory
+
+## The Big Videos are okay if .... 
+
+If you are going to learn from YouTube videos the 
+- Prime yourself by writing down what you know if anything max 5 minutes
+- Pay attention to video
+- Recall everything you learnt from video writing more down
+- Controlled forgetting make the information relevant to what you are doing some how
+
+If that is a lot of caveats use videos to reinforce what you have just read and **DONE** something.
+
+#### From "Script-Kiddie / Junior Developer / etc."  Towards Professionalism
 
 Milestones in capability and change in oneself and mostly are aided by cross-domain concepts and multi-disciplinary combinations 
 
@@ -11,7 +28,7 @@ Milestones in capability and change in oneself and mostly are aided by cross-dom
 - [Brian Schneier's Security Mindset](https://www.schneier.com/blog/archives/2008/03/the_security_mi_1.html)
 
 
-## Benjamin Keep Videos
+## Benjamin Keep's Videos
 
 #### Encoding with Generation
 
@@ -63,3 +80,4 @@ Break a complex task into parts and spend time being attentive to the singular p
 [Benjamin Keep YouTube - A Simple Way to Learn Complex Skills](https://www.youtube.com/watch?v=OI_3bQ-EWSI)
 [Benjamin Keep YouTube - When Active Learning Goes Right (And Wrong) | How Learning Works](https://www.youtube.com/watch?v=6EZ8rN5NJXw)
 [Benjamin Keep YouTube - The Experiment That Teaches People How To Learn](https://www.youtube.com/watch?v=JDb7EqCtlQc)
+[Benjamin Keep YouTube - Active recall](https://youtu.be/FatnXnlwAc4?si=sA7DvyU2b50hAnLM) 

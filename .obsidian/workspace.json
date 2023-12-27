@@ -4,47 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "79ded2ec5850e64b",
+        "id": "29b5aea50d6e2b91",
         "type": "tabs",
         "children": [
           {
-            "id": "29c215ce85f70e66",
+            "id": "5fb79815f69e4730",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Services/Databases/MYSQL/MySQL-SQL-Injection-Cheatsheet.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b3be6b23750c29c5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Development/DevOps/SDLC.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "50325df7f91dcf76",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tools/AD-Offensive/Powerview/PowerView-Cheatsheet.md",
+                "file": "Exploitation/Development/Finding-Exploits.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -81,7 +56,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Jenkins",
+                "query": "Memory address",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -110,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Services/Webservers/Jenkins.md",
+                "file": "Exploitation/Development/Finding-Exploits.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Services/Webservers/Jenkins.md",
+                "file": "Exploitation/Development/Finding-Exploits.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Services/Webservers/Jenkins.md"
+                "file": "Exploitation/Development/Finding-Exploits.md"
               }
             }
           },
@@ -182,35 +157,35 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "ed8f63df71621be6",
+  "active": "5fb79815f69e4730",
   "lastOpenFiles": [
+    "Exploitation/Windows/Windows-Internals-Exploitation/Resources-List.md",
+    "Networks/Network-Theory/Network-Technologies.md",
+    "Development/Concepts.md",
+    "Tools/Debuggers-IDEs-Editors/IDEs/Microsoft-Visual-Studios.md",
+    "Windows-Defender.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+    "Reverse-Engineering/Reverse-Engineering.md",
+    "Exploitation/Development/Finding-Exploits.md",
+    "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
+    "Brain-Hacking/Actions/Learning-To-Continue-Learning-Better-Learning-To-Learn.md",
+    "Development/Languages/C/Useful-C.md",
+    "Security-Disciplines/Social-Engineering/Social-Engineering.md",
+    "Reconnaissance/OSINT/OSINT.md",
+    "Reconnaissance/Passive-Information-Gathering/IMINT-GEOINT/IMINT-GEOINT.md",
+    "Reconnaissance/OSINT/OSINT-People.md",
+    "Hardware/Hardware-Maintenance/Hardware-Maintenance.md",
+    "Hardware/Hardware-Maintenance/USB-Maintenance.md",
+    "Tools/AD-Offensive/Powerview/PowerView-Cheatsheet.md",
+    "Services/Databases/MYSQL/MySQL-SQL-Injection-Cheatsheet.md",
+    "Development/Software-Development-Paradigms/Solid-Design-Principles.md",
     "Exploitation/Shells/TTY-Spawning.md",
     "Exploitation/Shells/Shells.md",
     "Exploitation/Shells/Reverse-Shells-Listing.md",
     "Exploitation/Shells/Encoded-Shell-Spawning.md",
     "Exploitation/Shells/Bind-And-Reverse-Shells-Defined.md",
     "Development/DevOps/SDLC.md",
-    "Cloud/Kubernetes/Kubernetes.md",
-    "Security-Disciplines/Static-Application-Security-Testing.md",
-    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/File-Transfers.md",
     "Development/DevOps",
-    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Windows-File-Transfers.md",
-    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Linux-File-Transfers.md",
-    "Tools/Forensics/Volatility.md",
-    "Security-Disciplines/Digital-Forensics/Memory-Forensics.md",
-    "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
-    "Exploitation/Windows/Active-Directory/Shadow-Credentials.md",
-    "Services/Databases/MYSQL/MySQL-SQL-Injection-Cheatsheet.md",
-    "Security-Disciplines/Incident-Response/Linux-IR.md",
-    "Tools/Network-Based/SilK.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
-    "Security-Disciplines/Incident-Response/Incident-Response.md",
-    "Security-Disciplines/Incident-Response/Incident-Response 1.md",
-    "Networks/Network-Theory/IANA-Assigned-Internet-Protocol-Numbers.md",
-    "README.md",
-    "Tools/Authentication-Attacking/Hash-Cracking-Tools/Hashcat-Cheatsheet.md",
-    "Artificial-Intelligence/Machine-Learning.md",
-    "Web-Application-Hacking/Web-Exploits/SQLi/SQL-Injection.md",
     "Images/relationship-between-false-positives-and-false-negatives-definitions-JM-WWHF-Talk.png",
     "Images/relationship-between-false-positives-and-false-negatives-JM-WWHF-Talk.png",
     "Software/File-Typology/Logs",

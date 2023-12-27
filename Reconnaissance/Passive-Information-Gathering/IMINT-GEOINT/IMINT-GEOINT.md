@@ -19,6 +19,7 @@ Camera location =  Images Details, webcam name, url pointer -> IP address to geo
 Recursively dork the image details(Dates, landmarks); Google map you way to look back onto the perspective from where you locate the camera.
 
 ## Considerations per location
+
 1. Language used
 1. Driving on which side of the road
 1. Cultural, Religious markers: cloths, places reduce potential places
@@ -32,9 +33,15 @@ Recursively dork the image details(Dates, landmarks); Google map you way to look
 - Personal information in their bio, or other personal data from their profile itself (Where they grew up, currently live, went to school, etc..).
 - Relevant posts that may contain information on their whereabouts or personal habits (Do they smoke? Drink? Go to bars often? Love to vacation to specific places? All this information can help in an investigation.)
 
+## Tools
+
+[bellingcat OpenStreetMap](https://osm-search.bellingcat.com) is a geolocation tool that can aid by searching by prompted properties - demonstration from [Gary Ruddell](https://youtu.be/a-bxfRhp8WA?si=TGOyVjp69LkcMD2Q)
+
 ## References
 
 [thisisfinx - helpful consideration - sploilers for THM Room - beware](https://thisisfinx.medium.com/1-4-tryhackme-kaffeesec-somesint-writeup-e1a7286b4824)
 [yandex](https://yandex.com)
 [RevEye - Firefox](https://addons.mozilla.org/en-GB/firefox/addon/reveye-ris/)
 [RevEye - Chrome](https://chrome.google.com/webstore/detail/reveye-reverse-image-sear/keaaclcjhehbbapnphnmpiklalfhelgf)
+[bellingcat OpenStreetMap](https://osm-search.bellingcat.com)
+[Gary Ruddell](https://youtu.be/a-bxfRhp8WA?si=TGOyVjp69LkcMD2Q)
