@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Web-Application-Hacking/Web-Exploits/SQLi/SQL-Injection.md",
+                "file": "Software/Services/Databases/MSSQL/MSSQL-Hacking.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Web-Application-Hacking/Web-Exploits/SQLi/SQL-Injection.md",
+                "file": "Software/Services/Databases/MSSQL/MSSQL-Hacking.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Web-Application-Hacking/Web-Exploits/SQLi/SQL-Injection.md",
+                "file": "Software/Services/Databases/MSSQL/MSSQL-Hacking.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Web-Application-Hacking/Web-Exploits/SQLi/SQL-Injection.md"
+                "file": "Software/Services/Databases/MSSQL/MSSQL-Hacking.md"
               }
             }
           },
@@ -159,6 +159,8 @@
   },
   "active": "5fb79815f69e4730",
   "lastOpenFiles": [
+    "Software/Services/Databases/MSSQL/MSSQL.md",
+    "Web-Application-Hacking/Web-Exploits/SQLi/SQL-Injection.md",
     "Web-Application-Hacking/Web-Exploits/SSRF/Server-Side-Request-Forgery.md",
     "Exploitation/Authentication/Coerced-Authentication.md",
     "Security-Disciplines/Digital-Forensics/Mobile-Forensics.md",
@@ -183,9 +185,7 @@
     "Hardware/Hardware-Maintenance/Hardware-Maintenance.md",
     "Hardware/Hardware-Maintenance/USB-Maintenance.md",
     "Tools/AD-Offensive/Powerview/PowerView-Cheatsheet.md",
-    "Services/Databases/MYSQL/MySQL-SQL-Injection-Cheatsheet.md",
-    "Development/Software-Development-Paradigms/Solid-Design-Principles.md",
-    "Exploitation/Shells/TTY-Spawning.md",
+    "Software/Services/Databases/MYSQL/MySQL-SQL-Injection-Cheatsheet.md",
     "Development/DevOps",
     "Images/relationship-between-false-positives-and-false-negatives-definitions-JM-WWHF-Talk.png",
     "Images/relationship-between-false-positives-and-false-negatives-JM-WWHF-Talk.png",

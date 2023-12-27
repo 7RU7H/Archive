@@ -19,7 +19,7 @@ The website [dnsdumpster](https://dnsdumpster.com/) *"is a FREE domain research 
 - [https://developers.facebook.com/tools/ct/](https://developers.facebook.com/tools/ct/)
 - [https://google.com/transparencyreport/https/ct/](https://www.google.com/transparencyreport/https/ct/)
 - [crt.sh](https://crt.sh/) is a online certificate fingerprinter. Where you provide *".. an **Identity** (Domain Name, Organization Name, etc), a **Certificate Fingerprint** (SHA-1 or SHA-256) or a **crt.sh ID**"*
-crt.sh has a [[Postgresql]] database for CT logged data: 
+crt.sh has a [[PostgreSQL]] database for CT logged data: 
 ```bash
 psql -h crt.sh -p 5432 -U guest certwatch
 ```
