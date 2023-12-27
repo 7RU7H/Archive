@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exploitation/Development/Finding-Exploits.md",
+                "file": "Security-Disciplines/Digital-Forensics/Mobile-Forensics.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exploitation/Development/Finding-Exploits.md",
+                "file": "Security-Disciplines/Digital-Forensics/Mobile-Forensics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Exploitation/Development/Finding-Exploits.md",
+                "file": "Security-Disciplines/Digital-Forensics/Mobile-Forensics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Exploitation/Development/Finding-Exploits.md"
+                "file": "Security-Disciplines/Digital-Forensics/Mobile-Forensics.md"
               }
             }
           },
@@ -159,6 +159,10 @@
   },
   "active": "5fb79815f69e4730",
   "lastOpenFiles": [
+    "Tools/Forensics/Autopsy.md",
+    "Security-Disciplines/Digital-Forensics/Mobile-Forensics.md",
+    "Security-Disciplines/Digital-Forensics/Digital-Forensics.md",
+    "Exploitation/Development/Finding-Exploits.md",
     "Exploitation/Windows/Windows-Internals-Exploitation/Resources-List.md",
     "Networks/Network-Theory/Network-Technologies.md",
     "Development/Concepts.md",
@@ -166,7 +170,6 @@
     "Windows-Defender.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
     "Reverse-Engineering/Reverse-Engineering.md",
-    "Exploitation/Development/Finding-Exploits.md",
     "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
     "Brain-Hacking/Actions/Learning-To-Continue-Learning-Better-Learning-To-Learn.md",
     "Development/Languages/C/Useful-C.md",
@@ -182,9 +185,6 @@
     "Exploitation/Shells/TTY-Spawning.md",
     "Exploitation/Shells/Shells.md",
     "Exploitation/Shells/Reverse-Shells-Listing.md",
-    "Exploitation/Shells/Encoded-Shell-Spawning.md",
-    "Exploitation/Shells/Bind-And-Reverse-Shells-Defined.md",
-    "Development/DevOps/SDLC.md",
     "Development/DevOps",
     "Images/relationship-between-false-positives-and-false-negatives-definitions-JM-WWHF-Talk.png",
     "Images/relationship-between-false-positives-and-false-negatives-JM-WWHF-Talk.png",

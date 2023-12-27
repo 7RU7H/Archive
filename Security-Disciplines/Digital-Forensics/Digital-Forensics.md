@@ -1,4 +1,3 @@
-
 # Digital Forensics
 
 This is a hub and overview page for Digital Forensics related topics. Although Digital Forensics and Incident Response are often combined and share skill sets, DF is the investigative and analytical side of the pairing. A field experts where apply forensic analysis and techniques to digital artefacts of human activity in computational devices. This expertise has application in criminal and defensive investigations. [Digital Forensics is the forensic examination of anything wherever computational data exists.](https://www.youtube.com/watch?v=ehxJZAGUaxY) The author consider the conceptual separation of [[Incident-Response 1]] and Digital Forensics a etymological imperative; simply Digital Forensics does not need Incident Response, but Incident Response requires techniques from Digital Forensics to evaluate data. Corporate definitions often coincide with the concatenating of tasks and title to save money.
@@ -17,6 +16,13 @@ Dirty Wordlists
 - Note taking while investigating to avoid:
 	- Recursive rabbit hole when dealing with [[Persistence]] mechanisms regardless of OS. 
 	- Missing Cleanup
+
+Image Acquisition types from [THM AoC 2023](https://tryhackme.com/room/adventofcyber2023): 
+	- Static acquisition: A **bit-by-bit image** of the disk is created while the device is turned off.
+	- Live acquisition: A **bit-by-bit image** of the disk is created while the device is turned on.
+	- Logical acquisition: A **select list of files** is copied from the seized device.
+	- Sparse acquisition: Select **fragments of unallocated data** are copied. The unallocated areas of the disk might contain deleted data; however, this approach is limited compared to static and live acquisition because it doesn’t cover the whole disk.
+
 
 #### Tools
 
@@ -81,3 +87,4 @@ Challenges faced
 [SANs DFIR - What is Digital Forensics & Incident Response (DFIR)?](https://www.youtube.com/watch?v=ehxJZAGUaxY)
 [FTK Imager](https://www.exterro.com/ftk-imager)  
 [THM Digital Forensics Case B4DM755 Room](https://tryhackme.com/room/caseb4dm755)
+[THM AoC 2023](https://tryhackme.com/room/adventofcyber2023)

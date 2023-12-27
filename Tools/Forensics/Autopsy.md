@@ -25,13 +25,12 @@ Browsing the Tree Viewer will display results in the Results View section - [Res
 
 Keyword Search is very useful for speeding up enumeration see Autopsy [documentation](http://sleuthkit.org/autopsy/docs/user-docs/4.12.0/ad_hoc_keyword_search_page.html)
 
-Data source Summary: `$DataSource -> Right Click -> View Summary Information` for seperate results viewer 
+Data source Summary: `$DataSource -> Right Click -> View Summary Information` for separate results viewer 
 
 Visualisation Tools
 [Visualisation Tools for Images/Videos](http://sleuthkit.org/autopsy/docs/user-docs/4.12.0/image_gallery_page.html)
 [Visualisation Tools for Communications](http://sleuthkit.org/autopsy/docs/user-docs/4.12.0/communications_page.html)
 [Visualisation Tools for Timeline](http://sleuthkit.org/autopsy/docs/user-docs/4.12.0/timeline_page.html)
-
 
 ## Workflow
 
