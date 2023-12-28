@@ -1,6 +1,7 @@
 # MySQL SQL Injection Cheatsheet
 
 This page is for SQL injection, for exploitation, misconfigurations and abuse of a MySQL database where you can access the database directly visit [[MySQL-Hacking]].  This page started as fixed version of Pentest Monkey cheatsheet that is old, but gold - it happen to use Unicode quotes so this is the *fixed* version. Other techniques, consideration and mitigation, etc will be added here over time.
+
 #### MySQL SQL Injection Cheatsheet - Fixed From Pentest-Monkey
 
 Fixed the Unicode single quotes for copy and paste -able. Pentest Monkey is Awesome.

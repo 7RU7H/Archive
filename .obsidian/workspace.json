@@ -13,18 +13,6 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Networks/Network-Theory/Network-Technologies.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "04d8a480a01e287e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
                 "file": "Web-Application-Hacking/Web-Exploits/SQLi/SQL-Injection.md",
                 "mode": "source",
                 "source": false
@@ -32,12 +20,12 @@
             }
           },
           {
-            "id": "246ad10de7b00434",
+            "id": "d5cce0984e3fcbb2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Development/Regular-Expressions.md",
+                "file": "Software/Services/Databases/MariaDB/MariaDB-Hacking.md",
                 "mode": "source",
                 "source": false
               }
@@ -67,8 +55,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -134,7 +121,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Development/Regular-Expressions.md",
+                "file": "Web-Application-Hacking/Web-Exploits/SQLi/SQL-Injection.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +138,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Development/Regular-Expressions.md",
+                "file": "Web-Application-Hacking/Web-Exploits/SQLi/SQL-Injection.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Development/Regular-Expressions.md"
+                "file": "Web-Application-Hacking/Web-Exploits/SQLi/SQL-Injection.md"
               }
             }
           },
@@ -192,8 +179,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -206,14 +192,22 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "246ad10de7b00434",
+  "active": "5fb79815f69e4730",
   "lastOpenFiles": [
+    "Software/Services/Databases/MariaDB/MariaDB-Hacking.md",
     "Web-Application-Hacking/Web-Exploits/SQLi/SQL-Injection.md",
-    "README.md",
+    "Software/Services/Databases/MYSQL/MySQL-SQL-Injection-Cheatsheet.md",
     "Software/Services/Databases/MYSQL/MySQL-Hacking.md",
     "Software/Services/Databases/MYSQL/MySQL-Cheatsheet.md",
-    "Software/Services/Databases/MSSQL/MSSQL.md",
     "Networks/Network-Theory/Network-Technologies.md",
+    "Post-Exploitation/Stealth/Cleanup/Linux-Cleanup.md",
+    "Hardware/Architectures/ARM.md",
+    "Development/Regular-Expressions.md",
+    "Hardware/Firmware",
+    "Hardware/Memory-Is-RAM",
+    "Hardware/Architectures",
+    "README.md",
+    "Software/Services/Databases/MSSQL/MSSQL.md",
     "Networks/Network-Theory/OSI-Model.md",
     "Software/Services/Databases/MSSQL/MSSQL-Hacking.md",
     "Web-Application-Hacking/Web-Exploits/SSRF/Server-Side-Request-Forgery.md",
@@ -230,11 +224,6 @@
     "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
     "Reverse-Engineering/Reverse-Engineering.md",
     "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
-    "Brain-Hacking/Actions/Learning-To-Continue-Learning-Better-Learning-To-Learn.md",
-    "Development/Languages/C/Useful-C.md",
-    "Security-Disciplines/Social-Engineering/Social-Engineering.md",
-    "Reconnaissance/OSINT/OSINT.md",
-    "Reconnaissance/Passive-Information-Gathering/IMINT-GEOINT/IMINT-GEOINT.md",
     "Development/DevOps",
     "Images/relationship-between-false-positives-and-false-negatives-definitions-JM-WWHF-Talk.png",
     "Images/relationship-between-false-positives-and-false-negatives-JM-WWHF-Talk.png",
@@ -243,9 +232,6 @@
     "Web-Application-Hacking/Web-Exploits",
     "Web-Application-Hacking/HTTP",
     "Web-Application-Hacking/Respositories",
-    "Web-Application-Hacking/Web-Exploits/IDOR",
-    "Web-Application-Hacking/Web-Exploits/CMDI",
-    "Web-Application-Hacking/Web-Exploits/CSRF",
     "Images/DACL-abuse-dark.png",
     "Images/DACL abuse-dark.png",
     "Images/azure-aksscalingimplementation.png",
