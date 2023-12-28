@@ -13,7 +13,43 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
+                "file": "Tools/Debuggers-IDEs-Editors/GDB.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9e40c2d9ce861f67",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Software/Operating-Systems/Linux/Linux-Commands/Linux-Module-Commands.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "501ed25d67e53bbe",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Development/Regular-Expressions.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "5882fe63e980787e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Reverse-Engineering/Reverse-Engineering-Tools.md",
                 "mode": "source",
                 "source": false
               }
@@ -56,7 +92,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "BHIS",
+                "query": "sed ",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +121,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
+                "file": "Tools/Debuggers-IDEs-Editors/GDB.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +138,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
+                "file": "Tools/Debuggers-IDEs-Editors/GDB.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md"
+                "file": "Tools/Debuggers-IDEs-Editors/GDB.md"
               }
             }
           },
@@ -158,8 +194,24 @@
   },
   "active": "44d6e991bcdb572d",
   "lastOpenFiles": [
-    "Web-Application-Hacking/Web-Exploits/SQLi/SQL-Injection.md",
+    "Development/Exploit-Development/gdb-cs.txt~",
+    "Development/Exploit-Development/gdb-cs.txt",
+    "Development/Exploit-Development/GEF.md",
+    "Tools/Debuggers-IDEs-Editors/GDB.md",
+    "Development/Exploit-Development/temp",
+    "Software/Operating-Systems/Linux/Linux-Commands/Linux-Module-Commands.md",
+    "Development/Exploit-Development/GEF.md.bak",
+    "Development/Exploit-Development",
+    "Security-Disciplines/Malware-Analysis/Malware-Analysis.md",
+    "Development/Regular-Expressions.md",
+    "Reverse-Engineering/Reverse-Engineering-Tools.md",
+    "Security-Disciplines/Malware-Analysis/Static-Malware-Analysis.md",
+    "Tools/Reverse-Engineering/Untitled",
+    "Tools/Reverse-Engineering/EDB.md",
+    "Tools/Reverse-Engineering/Ghidra-Cheatsheet.md",
+    "Tools/AD-Offensive/Whisker.md",
     "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
+    "Web-Application-Hacking/Web-Exploits/SQLi/SQL-Injection.md",
     "README.md",
     "Software/Services/Databases/MYSQL/MySQL-Hacking.md",
     "Software/Services/Databases/MariaDB/MariaDB-Hacking.md",
@@ -168,7 +220,6 @@
     "Networks/Network-Theory/Network-Technologies.md",
     "Post-Exploitation/Stealth/Cleanup/Linux-Cleanup.md",
     "Hardware/Architectures/ARM.md",
-    "Development/Regular-Expressions.md",
     "Hardware/Firmware",
     "Hardware/Memory-Is-RAM",
     "Hardware/Architectures",
@@ -177,25 +228,10 @@
     "Software/Services/Databases/MSSQL/MSSQL-Hacking.md",
     "Web-Application-Hacking/Web-Exploits/SSRF/Server-Side-Request-Forgery.md",
     "Exploitation/Authentication/Coerced-Authentication.md",
-    "Security-Disciplines/Digital-Forensics/Mobile-Forensics.md",
     "Exploitation/Authentication",
-    "Tools/Forensics/Autopsy.md",
-    "Security-Disciplines/Digital-Forensics/Digital-Forensics.md",
-    "Exploitation/Development/Finding-Exploits.md",
-    "Exploitation/Windows/Windows-Internals-Exploitation/Resources-List.md",
-    "Development/Concepts.md",
-    "Tools/Debuggers-IDEs-Editors/IDEs/Microsoft-Visual-Studios.md",
-    "Windows-Defender.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
-    "Reverse-Engineering/Reverse-Engineering.md",
     "Development/DevOps",
     "Images/relationship-between-false-positives-and-false-negatives-definitions-JM-WWHF-Talk.png",
     "Images/relationship-between-false-positives-and-false-negatives-JM-WWHF-Talk.png",
-    "Software/File-Typology/Logs",
-    "Development/Languages/Untitled",
-    "Web-Application-Hacking/Web-Exploits",
-    "Web-Application-Hacking/HTTP",
-    "Web-Application-Hacking/Respositories",
     "Images/DACL-abuse-dark.png",
     "Images/DACL abuse-dark.png",
     "Images/azure-aksscalingimplementation.png",
