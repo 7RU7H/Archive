@@ -195,9 +195,15 @@ For exploits, troubleshooting and general problem solving:
 				- Did you fuzz for special bad characters?
 				- XSS, SSTI, etc?
 ... 
-- SQLI?
-	- Are raw queries being made? 
+- SQLI? - [[SQL-Injection]]
+	- Do you have time to do this? - [[SQLmap-CheatSheet]]
+	- Always play guess the SQL query 
+		-  you may not need added logic or quotes 
+	- Are you starting small, being methodological building queries not from rabbit hole inbound?
+	- What is the website doing functionally with components on the same network or server or external dependencies?
+	- Are raw queries being made if any? 
 		- Can you create an Error and fix it?
+		- Union statements of the legitimate queries must be mirror numbers of outputs (columns,rows) in our SQL injection
 		- Is the data returned a Boolean directly or indirectly?
 			- Are Headers used in the back to store SQL data?
 				- PHP: `X-Forward-For: 10.10.10.0.` to log IP addresses
