@@ -13,13 +13,62 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Software/Services/Databases/MSSQL/MSSQL-Hacking.md",
+                "file": "Networks/Network-Theory/Network-Technologies.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "04d8a480a01e287e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Web-Application-Hacking/Web-Exploits/SQLi/SQL-Injection.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "246ad10de7b00434",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Development/Regular-Expressions.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "44d6e991bcdb572d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "677d35fd32c707cd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Software/Services/Databases/MYSQL/MySQL-Hacking.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -56,7 +105,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Memory address",
+                "query": "BHIS",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Software/Services/Databases/MSSQL/MSSQL-Hacking.md",
+                "file": "Development/Regular-Expressions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Software/Services/Databases/MSSQL/MSSQL-Hacking.md",
+                "file": "Development/Regular-Expressions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Software/Services/Databases/MSSQL/MSSQL-Hacking.md"
+                "file": "Development/Regular-Expressions.md"
               }
             }
           },
@@ -157,10 +206,16 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "5fb79815f69e4730",
+  "active": "246ad10de7b00434",
   "lastOpenFiles": [
-    "Software/Services/Databases/MSSQL/MSSQL.md",
     "Web-Application-Hacking/Web-Exploits/SQLi/SQL-Injection.md",
+    "README.md",
+    "Software/Services/Databases/MYSQL/MySQL-Hacking.md",
+    "Software/Services/Databases/MYSQL/MySQL-Cheatsheet.md",
+    "Software/Services/Databases/MSSQL/MSSQL.md",
+    "Networks/Network-Theory/Network-Technologies.md",
+    "Networks/Network-Theory/OSI-Model.md",
+    "Software/Services/Databases/MSSQL/MSSQL-Hacking.md",
     "Web-Application-Hacking/Web-Exploits/SSRF/Server-Side-Request-Forgery.md",
     "Exploitation/Authentication/Coerced-Authentication.md",
     "Security-Disciplines/Digital-Forensics/Mobile-Forensics.md",
@@ -169,7 +224,6 @@
     "Security-Disciplines/Digital-Forensics/Digital-Forensics.md",
     "Exploitation/Development/Finding-Exploits.md",
     "Exploitation/Windows/Windows-Internals-Exploitation/Resources-List.md",
-    "Networks/Network-Theory/Network-Technologies.md",
     "Development/Concepts.md",
     "Tools/Debuggers-IDEs-Editors/IDEs/Microsoft-Visual-Studios.md",
     "Windows-Defender.md",
@@ -181,11 +235,6 @@
     "Security-Disciplines/Social-Engineering/Social-Engineering.md",
     "Reconnaissance/OSINT/OSINT.md",
     "Reconnaissance/Passive-Information-Gathering/IMINT-GEOINT/IMINT-GEOINT.md",
-    "Reconnaissance/OSINT/OSINT-People.md",
-    "Hardware/Hardware-Maintenance/Hardware-Maintenance.md",
-    "Hardware/Hardware-Maintenance/USB-Maintenance.md",
-    "Tools/AD-Offensive/Powerview/PowerView-Cheatsheet.md",
-    "Software/Services/Databases/MYSQL/MySQL-SQL-Injection-Cheatsheet.md",
     "Development/DevOps",
     "Images/relationship-between-false-positives-and-false-negatives-definitions-JM-WWHF-Talk.png",
     "Images/relationship-between-false-positives-and-false-negatives-JM-WWHF-Talk.png",
