@@ -2,6 +2,8 @@
 
 My `gdb` is [[GEF]].
 
+## This is  work in progress as I need some baseline for a project at some point - see references for better lists
+
 Add debug information into a C binary `-g` for `gcc` and `clang`
 ```bash
 gcc -o main main.c -g
@@ -35,6 +37,7 @@ Help
 (gdb) help show commands
 ```
 
+General
 ```c
 // Useful if you have debug information  
 // 
@@ -109,8 +112,42 @@ Help
 // control watchpoint
 (gdb) delete/enable/disable <watchpoint#>
 
-```
+// Information
+//
+//
+(gdb) info args
+//
+(gdb) info breakpoints
+//
+(gdb) info display
+//
+(gdb) info locals
+//
+(gdb) info signal
+//
+(gdb) info sharedlibrary
+//
+(gdb) info watchpoints
+//
+(gdb) info function $regex
+//
+(gdb) info variable $regex
+//
+(gdb) info line 9001
+// 
+(gdb) info line *0x1337
+// print registers sans floats
+(gdb) info registers
+// print all registers
+(gdb) info all-registers        
 
+// History
+//
+// print command history (>= gdb 4.0)
+(gdb) show commands 
+// print command history (gdb 3.5)
+(gdb) info editing       	
+```
 
 #### Formatting Output
 

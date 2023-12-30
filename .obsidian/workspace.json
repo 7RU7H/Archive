@@ -44,6 +44,18 @@
             }
           },
           {
+            "id": "6dc5288fd92a63ca",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/Authentication-Attacking/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "5882fe63e980787e",
             "type": "leaf",
             "state": {
@@ -55,7 +67,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -121,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/Debuggers-IDEs-Editors/GDB.md",
+                "file": "Tools/Authentication-Attacking/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -138,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tools/Debuggers-IDEs-Editors/GDB.md",
+                "file": "Tools/Authentication-Attacking/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -161,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tools/Debuggers-IDEs-Editors/GDB.md"
+                "file": "Tools/Authentication-Attacking/Bruteforce-Login-Tools/Hydra-Cheatsheet.md"
               }
             }
           },
@@ -192,18 +205,21 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "44d6e991bcdb572d",
+  "active": "6dc5288fd92a63ca",
   "lastOpenFiles": [
+    "Brain-Hacking/Philosphy/NOPSEC-101.md",
+    "Tools/Authentication-Attacking/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
+    "Development/Regular-Expressions.md",
+    "Tools/Debuggers-IDEs-Editors/GDB.md",
+    "Tools/Web-Applications-Attacking/Burpsuite/BurpSuite.md",
+    "Software/Operating-Systems/Linux/Linux-Commands/Linux-Module-Commands.md",
     "Development/Exploit-Development/gdb-cs.txt~",
     "Development/Exploit-Development/gdb-cs.txt",
     "Development/Exploit-Development/GEF.md",
-    "Tools/Debuggers-IDEs-Editors/GDB.md",
     "Development/Exploit-Development/temp",
-    "Software/Operating-Systems/Linux/Linux-Commands/Linux-Module-Commands.md",
     "Development/Exploit-Development/GEF.md.bak",
     "Development/Exploit-Development",
     "Security-Disciplines/Malware-Analysis/Malware-Analysis.md",
-    "Development/Regular-Expressions.md",
     "Reverse-Engineering/Reverse-Engineering-Tools.md",
     "Security-Disciplines/Malware-Analysis/Static-Malware-Analysis.md",
     "Tools/Reverse-Engineering/Untitled",
@@ -226,10 +242,7 @@
     "Software/Services/Databases/MSSQL/MSSQL.md",
     "Networks/Network-Theory/OSI-Model.md",
     "Software/Services/Databases/MSSQL/MSSQL-Hacking.md",
-    "Web-Application-Hacking/Web-Exploits/SSRF/Server-Side-Request-Forgery.md",
-    "Exploitation/Authentication/Coerced-Authentication.md",
     "Exploitation/Authentication",
-    "Development/DevOps",
     "Images/relationship-between-false-positives-and-false-negatives-definitions-JM-WWHF-Talk.png",
     "Images/relationship-between-false-positives-and-false-negatives-JM-WWHF-Talk.png",
     "Images/DACL-abuse-dark.png",

@@ -68,11 +68,18 @@ Other Tabs:
 |`Ctrl + Shift + I`|Intruder tab|
 |`Ctrl + Shift + R`|Repeater tab|
 
-# Cool things for the `cmd` more
+## Cool things for the `cmd` more
 
 - Builtin Browser, never setup the burp certificate with your own browser every again!
 Go to `Project settings -> no sandbox for builtin browser`
 
+## Macros
+
+Need to create tokens dynamically? - Use a Macro
+- `Settings -> Sessions`
+- `Macros -> Add`; chose a URL and name macro
+- `Session Handling Rules -> Add`; define a scope and provide rule actions (select `Run a Macro`)
+	- Add value to field of where this token is with `Edit`
 ## FoxyProxy / Firefox proxy
 
 Firefox menu -> Settings -> Network Settings click Settings
@@ -85,9 +92,9 @@ Select manual proxy configuration:
 
 To intercept and analyse HTTPS traffic, BS has Certificate Authority and uses it to issue on-the-fly certificates for each website that we visit and pass through Burp.
 
-http://burp -> CA Certificate 
-save the file cacert.der to `/home/<user>/Downloads`
-GOTO Certificate manager in Firefox -> Import it!
+- http://burp -> CA Certificate 
+- Save the file cacert.der to `/home/<user>/Downloads`
+- Go to Certificate manager in Firefox -> Import it!
 
 ## Bypassing Proxy for (some) HTTPS Traffic
 
@@ -186,3 +193,4 @@ Shortcut | Function
 [cybrary](https://www.cybrary.it/blog/burp-suite-tutorial-part-2-essential-shortcuts-in-burp-suite-proxy-for-more/)
 [Match and Replace](https://portswigger.net/burp/documentation/desktop/tutorials/using-match-and-replace)
 [r3d-buck3t Medium Article IP bypassing](https://medium.com/r3d-buck3t/bypass-ip-restrictions-with-burp-suite-fb4c72ec8e9c)
+[THM Room BurpSuite Intruder](https://tryhackme.com/room/burpsuiteintruder)
