@@ -4,71 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "29b5aea50d6e2b91",
+        "id": "24ac54826f25bf21",
         "type": "tabs",
         "children": [
           {
-            "id": "44d6e991bcdb572d",
+            "id": "68bd1579e7bae56c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/Debuggers-IDEs-Editors/GDB.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9e40c2d9ce861f67",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Software/Operating-Systems/Linux/Linux-Commands/Linux-Module-Commands.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "501ed25d67e53bbe",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Development/Regular-Expressions.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6dc5288fd92a63ca",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tools/Authentication-Attacking/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "5882fe63e980787e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Reverse-Engineering/Reverse-Engineering-Tools.md",
+                "file": "Reconnaissance/Active-Information-Gathering/RPC/RPCClient-Cheatsheet.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -134,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/Authentication-Attacking/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
+                "file": "Reconnaissance/Active-Information-Gathering/RPC/RPCClient-Cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tools/Authentication-Attacking/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
+                "file": "Reconnaissance/Active-Information-Gathering/RPC/RPCClient-Cheatsheet.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tools/Authentication-Attacking/Bruteforce-Login-Tools/Hydra-Cheatsheet.md"
+                "file": "Reconnaissance/Active-Information-Gathering/RPC/RPCClient-Cheatsheet.md"
               }
             }
           },
@@ -205,14 +156,18 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "6dc5288fd92a63ca",
+  "active": "68bd1579e7bae56c",
   "lastOpenFiles": [
-    "Brain-Hacking/Philosphy/NOPSEC-101.md",
-    "Tools/Authentication-Attacking/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
-    "Development/Regular-Expressions.md",
+    "Reconnaissance/Active-Information-Gathering/RPC/RPCClient-Usage.md",
+    "Reconnaissance/Active-Information-Gathering/RPC/RPCClient-Cheatsheet.md",
+    "Reconnaissance/Active-Information-Gathering/RPC/RPC-Recon.md",
+    "Reverse-Engineering/Reverse-Engineering-Tools.md",
     "Tools/Debuggers-IDEs-Editors/GDB.md",
-    "Tools/Web-Applications-Attacking/Burpsuite/BurpSuite.md",
     "Software/Operating-Systems/Linux/Linux-Commands/Linux-Module-Commands.md",
+    "Development/Regular-Expressions.md",
+    "Tools/Authentication-Attacking/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
+    "Brain-Hacking/Philosphy/NOPSEC-101.md",
+    "Tools/Web-Applications-Attacking/Burpsuite/BurpSuite.md",
     "Development/Exploit-Development/gdb-cs.txt~",
     "Development/Exploit-Development/gdb-cs.txt",
     "Development/Exploit-Development/GEF.md",
@@ -220,7 +175,6 @@
     "Development/Exploit-Development/GEF.md.bak",
     "Development/Exploit-Development",
     "Security-Disciplines/Malware-Analysis/Malware-Analysis.md",
-    "Reverse-Engineering/Reverse-Engineering-Tools.md",
     "Security-Disciplines/Malware-Analysis/Static-Malware-Analysis.md",
     "Tools/Reverse-Engineering/Untitled",
     "Tools/Reverse-Engineering/EDB.md",
@@ -239,9 +193,6 @@
     "Hardware/Firmware",
     "Hardware/Memory-Is-RAM",
     "Hardware/Architectures",
-    "Software/Services/Databases/MSSQL/MSSQL.md",
-    "Networks/Network-Theory/OSI-Model.md",
-    "Software/Services/Databases/MSSQL/MSSQL-Hacking.md",
     "Exploitation/Authentication",
     "Images/relationship-between-false-positives-and-false-negatives-definitions-JM-WWHF-Talk.png",
     "Images/relationship-between-false-positives-and-false-negatives-JM-WWHF-Talk.png",

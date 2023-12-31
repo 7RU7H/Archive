@@ -1,4 +1,5 @@
-For `rcpclient` see [[SMB-Recon-Cheatsheet]]
+For `rcpclient` usage see [[RPCClient-Usage]] and for general pre-NullAuth or Authentication visit  [[RPC-Recon]]
+
 
 ```powershell
 querydispinfo
