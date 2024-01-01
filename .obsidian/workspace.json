@@ -13,13 +13,50 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Reconnaissance/Active-Information-Gathering/RPC/RPCClient-Cheatsheet.md",
+                "file": "Tools/C2/Sliver/Sliver-Cheatsheet.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "bdb5e5fe09acb735",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Exploitation/Shells/Bind-And-Reverse-Shells-Defined.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6dd3bf6e6839903f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/AD-Offensive/Impacket/Impacket-Cheatsheet.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "efbb9d38e326fb6a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Software/Operating-Systems/Hacker-Distros/Kali/Setup-Services/Kali-And-Wine.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -56,7 +93,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "sed ",
+                "query": "impacket",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Reconnaissance/Active-Information-Gathering/RPC/RPCClient-Cheatsheet.md",
+                "file": "Software/Operating-Systems/Hacker-Distros/Kali/Setup-Services/Kali-And-Wine.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Reconnaissance/Active-Information-Gathering/RPC/RPCClient-Cheatsheet.md",
+                "file": "Software/Operating-Systems/Hacker-Distros/Kali/Setup-Services/Kali-And-Wine.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Reconnaissance/Active-Information-Gathering/RPC/RPCClient-Cheatsheet.md"
+                "file": "Software/Operating-Systems/Hacker-Distros/Kali/Setup-Services/Kali-And-Wine.md"
               }
             }
           },
@@ -156,10 +193,20 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "68bd1579e7bae56c",
+  "active": "efbb9d38e326fb6a",
   "lastOpenFiles": [
-    "Reconnaissance/Active-Information-Gathering/RPC/RPCClient-Usage.md",
+    "Hardware/Hardware-Maintenance/USB-Maintenance.md",
+    "Software/Operating-Systems/Hacker-Distros/Kali/Setup-Services/Kali-And-Wine.md",
+    "Tools/AD-Offensive/Impacket/Impacket-Cheatsheet.md",
+    "Exploitation/Shells/Bind-And-Reverse-Shells-Defined.md",
+    "Tools/C2/Sliver/Sliver-Cheatsheet.md",
+    "Security-Disciplines/Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Red-KOTH-Battlegrounds-Cheatsheet-Windows.md",
+    "Exploitation/Shells/Reverse-Shells-Listing.md",
+    "Exploitation/Shells/TTY-Spawning.md",
+    "Exploitation/Shells/Shells.md",
     "Reconnaissance/Active-Information-Gathering/RPC/RPCClient-Cheatsheet.md",
+    "Development/Languages/Python/Useful_Python.md",
+    "Reconnaissance/Active-Information-Gathering/RPC/RPCClient-Usage.md",
     "Reconnaissance/Active-Information-Gathering/RPC/RPC-Recon.md",
     "Reverse-Engineering/Reverse-Engineering-Tools.md",
     "Tools/Debuggers-IDEs-Editors/GDB.md",
@@ -180,16 +227,6 @@
     "Tools/Reverse-Engineering/EDB.md",
     "Tools/Reverse-Engineering/Ghidra-Cheatsheet.md",
     "Tools/AD-Offensive/Whisker.md",
-    "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
-    "Web-Application-Hacking/Web-Exploits/SQLi/SQL-Injection.md",
-    "README.md",
-    "Software/Services/Databases/MYSQL/MySQL-Hacking.md",
-    "Software/Services/Databases/MariaDB/MariaDB-Hacking.md",
-    "Software/Services/Databases/MYSQL/MySQL-SQL-Injection-Cheatsheet.md",
-    "Software/Services/Databases/MYSQL/MySQL-Cheatsheet.md",
-    "Networks/Network-Theory/Network-Technologies.md",
-    "Post-Exploitation/Stealth/Cleanup/Linux-Cleanup.md",
-    "Hardware/Architectures/ARM.md",
     "Hardware/Firmware",
     "Hardware/Memory-Is-RAM",
     "Hardware/Architectures",

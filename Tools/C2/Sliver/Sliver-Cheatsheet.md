@@ -22,6 +22,9 @@
 sudo sliver
 sudo su - ; /root/sliver-server
 sliver-server
+systemctl <cmd> sliver
+
+sliver
 
 // Display help
 help <command>
