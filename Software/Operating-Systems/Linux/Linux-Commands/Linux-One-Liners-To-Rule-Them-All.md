@@ -75,6 +75,13 @@ for i in $(cat domain.txt); do echo "$(grep -ciE $i access.log) $i "; done
 cut -d ' ' -f3 access.log | cut -d ':' -f1 | sort | uniq -c | sort -nr
 ```
 
+## Git
+
+For directory full of repository update them all  
+```bash
+for i in $(ls -1); do cd $i/; git pull; wait; cd ../; done
+```
+
 ## References
 
 [Stackoverflow uppercasing first letter of words using sed](https://stackoverflow.com/questions/1538676/uppercasing-first-letter-of-words-using-sed)
