@@ -12,6 +12,7 @@ Operations Security (OPSEC) is a term coined by the United States military. In t
 [Part 2-How to Live like a Criminal - Privacy Tips for the Non-Criminal | Ean Meyer & John Strand](https://www.youtube.com/watch?v=r4SvCFxTMMk)
 [Part 3-How to Live like a Criminal - Privacy Tips for the Non-Criminal | Ean Meyer & John Strand](https://www.youtube.com/watch?v=JlVI705wHq8)
 
+[DEF CON 29 Recon Village - Ritu Gil - So You Want to OPSEC, Eh](https://www.youtube.com/watch?v=daXNSvb_S3w)
 ## AD ID Level
 
 [Part 2-How to Live like a Criminal - Privacy Tips for the Non-Criminal | Ean Meyer & John Strand](https://www.youtube.com/watch?v=r4SvCFxTMMk) recommends the reading of [Ad IDs Behaving Badly](https://blog.appcensus.io/2019/02/14/ad-ids-behaving-badly/) by  [Serge Egelman](https://blog.appcensus.io/author/serge/)
@@ -45,6 +46,31 @@ It is hurts to get fucked, reason you may need OPSEC
 5. Do not talk to authorities
 6. Do not let other have control over your actions
 
+## Your Contacts
+
+The following are all connect to you in terms of data and access points
+- Family
+- Friends
+- Co-Workers
+- Neighbours
+
+## Account Level
+
+- Account separation
+- Compromised accounts - haveibeenpwned
+
+## Application Level
+
+- Browser
+	- Do not use a search engine, just know the URL that are safes 
+		- Try `firefox --new-tab github.com`
+		- Disable browser defaulting to a search engine
+		- Copy and paste the URL from a list and no manual typing
+	- Disabling JS in browser
+	- Use an extension you *trust* to change the User-Agent for the broswer
+
+- Barcodes - some are more revealing than others 
+	- 
 ## OS-Level
 
 [[Whonix]]
@@ -173,6 +199,6 @@ This is not for Red teams visit [[Red-Team-OPSEC]].
 [Part 1-How to Live like a Criminal - Privacy Tips for the Non-Criminal | Ean Meyer & John Strand](https://www.youtube.com/watch?v=9iwh5J71pZg)
 [Part 2-How to Live like a Criminal - Privacy Tips for the Non-Criminal | Ean Meyer & John Strand](https://www.youtube.com/watch?v=r4SvCFxTMMk)
 [Part 3-How to Live like a Criminal - Privacy Tips for the Non-Criminal | Ean Meyer & John Strand](https://www.youtube.com/watch?v=JlVI705wHq8)
-
+[DEF CON 29 Recon Village - Ritu Gil - So You Want to OPSEC, Eh](https://www.youtube.com/watch?v=daXNSvb_S3w)
 
 

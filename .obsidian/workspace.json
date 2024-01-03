@@ -68,6 +68,18 @@
             }
           },
           {
+            "id": "e67ec2f646284ea6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Security-Disciplines/OPSEC-101.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "3aebbf6e1183fd37",
             "type": "leaf",
             "state": {
@@ -104,7 +116,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -141,7 +153,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Williams",
+                "query": "OPSEC",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -170,7 +182,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Software/Operating-Systems/Linux/Linux-Commands/Linux-One-Liners-To-Rule-Them-All.md",
+                "file": "Security-Disciplines/OPSEC-101.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,7 +199,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Software/Operating-Systems/Linux/Linux-Commands/Linux-One-Liners-To-Rule-Them-All.md",
+                "file": "Security-Disciplines/OPSEC-101.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -210,7 +222,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Software/Operating-Systems/Linux/Linux-Commands/Linux-One-Liners-To-Rule-Them-All.md"
+                "file": "Security-Disciplines/OPSEC-101.md"
               }
             }
           },
@@ -241,10 +253,14 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "aa9d6b54455621c9",
+  "active": "e67ec2f646284ea6",
   "lastOpenFiles": [
-    "Security-Disciplines/Red-Team/Red-Team-Theory/Adversary-Emulation.md",
+    "Cloud/Cloud-Security.md",
+    "Software/Services/Databases/Database-Hacking.md",
+    "Software/Services/Databases/Database-Security.md",
+    "Security-Disciplines/OPSEC-101.md",
     "Software/Operating-Systems/Linux/Linux-Commands/Linux-One-Liners-To-Rule-Them-All.md",
+    "Security-Disciplines/Red-Team/Red-Team-Theory/Adversary-Emulation.md",
     "Exploitation/Windows/Finding-Windows-Exploits.md",
     "Post-Exploitation/Stealth/Linux-Stealth.md",
     "Exploitation/Shells/Bind-And-Reverse-Shells-Defined.md",
@@ -265,15 +281,11 @@
     "Software/Operating-Systems/Linux/Linux-Commands/Linux-Module-Commands.md",
     "Development/Regular-Expressions.md",
     "Tools/Authentication-Attacking/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
-    "Brain-Hacking/Philosphy/NOPSEC-101.md",
-    "Tools/Web-Applications-Attacking/Burpsuite/BurpSuite.md",
     "Development/Exploit-Development/gdb-cs.txt~",
     "Development/Exploit-Development/gdb-cs.txt",
-    "Development/Exploit-Development/GEF.md",
     "Development/Exploit-Development/temp",
     "Development/Exploit-Development/GEF.md.bak",
     "Development/Exploit-Development",
-    "Security-Disciplines/Malware-Analysis/Malware-Analysis.md",
     "Tools/Reverse-Engineering/Untitled",
     "Hardware/Firmware",
     "Hardware/Memory-Is-RAM",

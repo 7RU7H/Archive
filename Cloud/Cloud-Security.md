@@ -1,5 +1,6 @@
 # Cloud Security 
 
+ Remember `Risk = Likelihood * Impact`. 
 
 
 
@@ -228,8 +229,15 @@ AWS - Systems Manager
 
 - [[Phishing]] Training
 
+## Security Through Asset Management 
+#### Pets and Cattle
+
+[SANS Cloud Security - New Paradigms for Cloud Security: Keynote](https://www.youtube.com/watch?v=gX7OMC_qDjI)
+- Pet versus Cattle - Should it be on the cloud
+	- Fewest pets and most cattle
 
 ## References
 
 [THM Intro TO Cloud Security](https://tryhackme.com/room/introductiontocloudsecurityc6)
 [Cloud SANS Zero to Hero Talk](https://www.youtube.com/watch?v=Xfq0sTW7cp8)
+[SANS Cloud Security - New Paradigms for Cloud Security: Keynote](https://www.youtube.com/watch?v=gX7OMC_qDjI)
