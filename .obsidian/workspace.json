@@ -20,72 +20,12 @@
             }
           },
           {
-            "id": "bdb5e5fe09acb735",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Exploitation/Shells/Bind-And-Reverse-Shells-Defined.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "010e94e4b33b2b67",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Post-Exploitation/Stealth/Linux-Stealth.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9bee66c57051a74c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Security-Disciplines/Red-Team/Red-Team-Theory/Adversary-Emulation.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "aa9d6b54455621c9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Software/Operating-Systems/Linux/Linux-Commands/Linux-One-Liners-To-Rule-Them-All.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e67ec2f646284ea6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Security-Disciplines/OPSEC-101.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "3aebbf6e1183fd37",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Exploitation/Windows/Finding-Windows-Exploits.md",
+                "file": "Reconnaissance/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
                 "mode": "source",
                 "source": false
               }
@@ -109,14 +49,74 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Software/Operating-Systems/Hacker-Distros/Kali/Setup-Services/Kali-And-Wine.md",
+                "file": "Reconnaissance/Active-Information-Gathering/LDAP/LDAP-Recon.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f830f5fe315701f7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/AD-Offensive/Bloodhound-Guide.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a6937e6ea0f811c1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/Authentication-Attacking/Hash-Cracking-Tools/Hashcat-Cheatsheet.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ce106202a49171df",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/Wordlists/Generating-Likely-Passwords.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "34cdd86b1df9b63f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Reconnaissance/Active-Information-Gathering/RPC/RPCClient-Cheatsheet.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b7e58037f6b3dcfb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Reconnaissance/Active-Information-Gathering/RPC/RPCClient-Cheatsheet.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -153,7 +153,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "OPSEC",
+                "query": "SYSVOL",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -166,7 +166,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 389.5
+    "width": 372.5
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -182,7 +182,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Security-Disciplines/OPSEC-101.md",
+                "file": "Reconnaissance/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -199,7 +199,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Security-Disciplines/OPSEC-101.md",
+                "file": "Reconnaissance/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -222,7 +222,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Security-Disciplines/OPSEC-101.md"
+                "file": "Reconnaissance/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md"
               }
             }
           },
@@ -253,34 +253,34 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "e67ec2f646284ea6",
+  "active": "aa9d6b54455621c9",
   "lastOpenFiles": [
+    "Software/Operating-Systems/Linux/Linux-Commands/Linux-One-Liners-To-Rule-Them-All.md",
+    "Reconnaissance/Active-Information-Gathering/RPC/RPCClient-Cheatsheet.md",
+    "Tools/AD-Offensive/Bloodhound-Guide.md",
+    "Reconnaissance/Active-Information-Gathering/LDAP/LDAP-Recon.md",
+    "Tools/Authentication-Attacking/Hash-Cracking-Tools/Hashcat-Cheatsheet.md",
+    "Cryptography-And-Authentication/Password-Attacks/Password-Attacks.md",
+    "Reconnaissance/Active-Information-Gathering/DNS/DNS-Active-Recon.md",
+    "Tools/Wordlists/Generating-Likely-Passwords.md",
+    "Tools/AD-Offensive/Impacket/Impacket-Cheatsheet.md",
+    "Exploitation/Windows/Finding-Windows-Exploits.md",
+    "Tools/C2/Sliver/Sliver-Cheatsheet.md",
+    "Security-Disciplines/Red-Team/Red-Team-Theory/Adversary-Emulation.md",
+    "Exploitation/Shells/Bind-And-Reverse-Shells-Defined.md",
+    "Tools/Recon-Frameworks/Amass.md",
+    "Reconnaissance/Active-Directory/Active-Directory-Recon.md",
+    "Reconnaissance/Active-Directory/Active-Directory-Enumeration.md",
+    "Reconnaissance/Local-Setup.md",
+    "Reconnaissance/Active-Directory/Active-Directory-Footholding.md",
+    "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
+    "Software/Operating-Systems/Hacker-Distros/Kali/Setup-Services/Kali-And-Wine.md",
+    "Security-Disciplines/OPSEC-101.md",
     "Cloud/Cloud-Security.md",
     "Software/Services/Databases/Database-Hacking.md",
     "Software/Services/Databases/Database-Security.md",
-    "Security-Disciplines/OPSEC-101.md",
-    "Software/Operating-Systems/Linux/Linux-Commands/Linux-One-Liners-To-Rule-Them-All.md",
-    "Security-Disciplines/Red-Team/Red-Team-Theory/Adversary-Emulation.md",
-    "Exploitation/Windows/Finding-Windows-Exploits.md",
     "Post-Exploitation/Stealth/Linux-Stealth.md",
-    "Exploitation/Shells/Bind-And-Reverse-Shells-Defined.md",
-    "Tools/AD-Offensive/Impacket/Impacket-Cheatsheet.md",
-    "Software/Operating-Systems/Hacker-Distros/Kali/Setup-Services/Kali-And-Wine.md",
     "Hardware/Hardware-Maintenance/USB-Maintenance.md",
-    "Tools/C2/Sliver/Sliver-Cheatsheet.md",
-    "Security-Disciplines/Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Red-KOTH-Battlegrounds-Cheatsheet-Windows.md",
-    "Exploitation/Shells/Reverse-Shells-Listing.md",
-    "Exploitation/Shells/TTY-Spawning.md",
-    "Exploitation/Shells/Shells.md",
-    "Reconnaissance/Active-Information-Gathering/RPC/RPCClient-Cheatsheet.md",
-    "Development/Languages/Python/Useful_Python.md",
-    "Reconnaissance/Active-Information-Gathering/RPC/RPCClient-Usage.md",
-    "Reconnaissance/Active-Information-Gathering/RPC/RPC-Recon.md",
-    "Reverse-Engineering/Reverse-Engineering-Tools.md",
-    "Tools/Debuggers-IDEs-Editors/GDB.md",
-    "Software/Operating-Systems/Linux/Linux-Commands/Linux-Module-Commands.md",
-    "Development/Regular-Expressions.md",
-    "Tools/Authentication-Attacking/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
     "Development/Exploit-Development/gdb-cs.txt~",
     "Development/Exploit-Development/gdb-cs.txt",
     "Development/Exploit-Development/temp",

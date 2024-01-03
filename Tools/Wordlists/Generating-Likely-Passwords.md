@@ -40,7 +40,7 @@ Generations [[Wordlists]] for password profiling questions?
 	- Expletives add length - user incentive with long strong password to add more words that are more memorable 
 
 
-
+[Kali's MP32 - hashcat/maskprocessor](https://www.kali.org/tools/maskprocessor/)
 ```bash
 mp32 --custom-charset1='!@#$%^' johndoe?d?1 > mp32-passwd.lst
 mp32 --custom-charset1='!@#$%^' jdoe?d?1 >> mp32-passwd.lst
@@ -50,3 +50,8 @@ mp32 --custom-charset1='!@#$%^' JDoe?d?1 >> mp32-passwd.lst
 mp32 --custom-charset1='!@#$%^' JoeDoe?d?1 >> mp32-passwd.lst
 cat mp32-passwd.lst | wc -l
 ```
+
+
+## References
+
+[Kali's MP32 - hashcat/maskprocessor](https://www.kali.org/tools/maskprocessor/)

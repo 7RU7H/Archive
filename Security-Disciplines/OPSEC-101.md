@@ -86,11 +86,11 @@ Change:
 
 Change default `user-agent` for tools and use user-agents that replicate target
 - use googlebot or windows as 
--  alias nmap,wpscan,curl, etc in .rc file to prevent accidental 
+-  alias `nmap`,`wpscan`,`curl`, etc in .rc file to prevent accidental 
 
 Networking
 - no 0.0.0.0 Network service
-- ssh port forwarding instead iptables
+- ssh port forwarding instead `iptables`
 - use common web server for redirectors
 - liberally use redirectors over multiple CSP - c2 traffic goes through these back to server
 - Consider [[Tor-Hidden-Services]] - beware the indicators

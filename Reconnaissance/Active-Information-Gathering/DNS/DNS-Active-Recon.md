@@ -79,8 +79,15 @@ for server in $(host -t ns megacorpone.com | cut -d" " -f4); do host -l megacorp
 
 TL;DR - Forward lookup: query hostname for IP - What is the IP of this hostname? Forward lookup is defined as requesting an IP address of a hostname to query both a valid and an invalid hostname, if host successfully resolves a name to an IP, it could indicate a functional server. Check Seclists, [[Wordlist-Library]] and [[Wordlist-Considerations]] for comprehensive subdomain brute-forcing to  automate the forward DNS lookup of common hostnames.
 ```bash
-for ns in $(cat /usr/share/seclists/Discovery/DNS/$list.txt); do host $ns.$domain.$tld; done
+for ns in $(cat /usr/share/seclists/Discovery/DNS/$list.txt); do host $ns.$domain.$tld | tee -a $domain-subdomains-with-host.txt; done
+
+cat $domain-subdomains-with-host.txt | grep -v 'not found\|error'
+
+
 # Give the output from the above scan IP address with `host` from subnet range from $lowest to $highest  
+
+
+
 low=0
 high=255
 for ip in $(seq $low $high); do host 10.10.10.$ip; done | grep -v "not found"
@@ -143,7 +150,10 @@ done
 
 [[Amass]]
 ```bash
-amass enum --passive -d $domain.$tld
+# Passive DNS recon --passive is deprecated
+amass enum -d $domain.$tld
+# Active recon 
+amass enum -active -d $domain.$tld -addr <address range>
 ```
 
 #### Stub Resolution

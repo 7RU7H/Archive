@@ -46,7 +46,16 @@ hashcat -m 1000 -a 3 -1 ?u?l hashes\users.txt ?1?1?1?l?d?d?s?s
 hashcat -m 1000 -a 3 -1 ?u?l hashes\users.txt ?1?1?1?1?d?d?d?s
 ```
 
+```bash
+# 
+hashcat -a $attack -m $hashtype -o $outputfile
 
+# Get all GPUS
+hashcat -I 
+
+# specific device
+-d $device
+```
 ## References
 
 [Hashcat's example hashes](https://hashcat.net/wiki/doku.php?id=example_hashes)
