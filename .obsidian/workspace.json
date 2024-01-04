@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Reconnaissance/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
+                "file": "Security-Disciplines/Cyber-Threat-Intelligence/Threat-Hunting.md",
                 "mode": "source",
                 "source": false
               }
@@ -153,7 +153,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "SYSVOL",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -182,7 +182,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Reconnaissance/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
+                "file": "Security-Disciplines/Cyber-Threat-Intelligence/Threat-Hunting.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -199,7 +199,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Reconnaissance/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
+                "file": "Security-Disciplines/Cyber-Threat-Intelligence/Threat-Hunting.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -222,7 +222,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Reconnaissance/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md"
+                "file": "Security-Disciplines/Cyber-Threat-Intelligence/Threat-Hunting.md"
               }
             }
           },
@@ -255,6 +255,11 @@
   },
   "active": "aa9d6b54455621c9",
   "lastOpenFiles": [
+    "Threat-Intelligence.md",
+    "Security-Disciplines/Cyber-Threat-Intelligence/Threat-Hunting.md",
+    "Tools/MISP.md",
+    "Security-Disciplines/Cyber-Threat-Intelligence/Cyber-Threat-Intelligence.md",
+    "Reconnaissance/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
     "Software/Operating-Systems/Linux/Linux-Commands/Linux-One-Liners-To-Rule-Them-All.md",
     "Reconnaissance/Active-Information-Gathering/RPC/RPCClient-Cheatsheet.md",
     "Tools/AD-Offensive/Bloodhound-Guide.md",
@@ -276,11 +281,6 @@
     "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
     "Software/Operating-Systems/Hacker-Distros/Kali/Setup-Services/Kali-And-Wine.md",
     "Security-Disciplines/OPSEC-101.md",
-    "Cloud/Cloud-Security.md",
-    "Software/Services/Databases/Database-Hacking.md",
-    "Software/Services/Databases/Database-Security.md",
-    "Post-Exploitation/Stealth/Linux-Stealth.md",
-    "Hardware/Hardware-Maintenance/USB-Maintenance.md",
     "Development/Exploit-Development/gdb-cs.txt~",
     "Development/Exploit-Development/gdb-cs.txt",
     "Development/Exploit-Development/temp",
