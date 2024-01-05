@@ -56,6 +56,30 @@
             }
           },
           {
+            "id": "0b1a135c118e5d70",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/Forensics/Volatility.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0c7b2a5194d4da59",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/Useful-Online-Software/GitHub.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "f830f5fe315701f7",
             "type": "leaf",
             "state": {
@@ -151,7 +175,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -188,7 +213,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "mingw",
+                "query": "volatility",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -197,8 +222,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -218,7 +242,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/C2/Sliver/Sliver-Cheatsheet.md",
+                "file": "Tools/Useful-Online-Software/GitHub.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -235,7 +259,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tools/C2/Sliver/Sliver-Cheatsheet.md",
+                "file": "Tools/Useful-Online-Software/GitHub.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -258,7 +282,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tools/C2/Sliver/Sliver-Cheatsheet.md"
+                "file": "Tools/Useful-Online-Software/GitHub.md"
               }
             }
           },
@@ -291,10 +315,14 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "68bd1579e7bae56c",
+  "active": "0c7b2a5194d4da59",
   "lastOpenFiles": [
-    "Exploitation/Exploit-Lookup-And-Maintaince/Compiling-Exploits.md",
+    "Tools/Forensics/Volatility.md",
+    "Reconnaissance/Active-Information-Gathering/LDAP/LDAP-Recon.md",
+    "Tools/AD-Offensive/Bloodhound-Guide.md",
+    "Tools/Wordlists/Generating-Likely-Passwords.md",
     "Tools/C2/Sliver/Sliver-Cheatsheet.md",
+    "Exploitation/Exploit-Lookup-And-Maintaince/Compiling-Exploits.md",
     "Tools/C2/Introduction-To-Command-And-Control-Frameworks.md",
     "Software/Operating-Systems/Linux/Linux-Commands/Core-Linux-Commands.md",
     "Development/Languages/Python/Useful_Python.md",
@@ -306,19 +334,15 @@
     "Reconnaissance/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
     "Software/Operating-Systems/Linux/Linux-Commands/Linux-One-Liners-To-Rule-Them-All.md",
     "Reconnaissance/Active-Information-Gathering/RPC/RPCClient-Cheatsheet.md",
-    "Tools/AD-Offensive/Bloodhound-Guide.md",
-    "Reconnaissance/Active-Information-Gathering/LDAP/LDAP-Recon.md",
     "Tools/Authentication-Attacking/Hash-Cracking-Tools/Hashcat-Cheatsheet.md",
     "Cryptography-And-Authentication/Password-Attacks/Password-Attacks.md",
     "Reconnaissance/Active-Information-Gathering/DNS/DNS-Active-Recon.md",
-    "Tools/Wordlists/Generating-Likely-Passwords.md",
     "Tools/AD-Offensive/Impacket/Impacket-Cheatsheet.md",
     "Exploitation/Windows/Finding-Windows-Exploits.md",
     "Security-Disciplines/Red-Team/Red-Team-Theory/Adversary-Emulation.md",
     "Exploitation/Shells/Bind-And-Reverse-Shells-Defined.md",
     "Tools/Recon-Frameworks/Amass.md",
     "Reconnaissance/Active-Directory/Active-Directory-Recon.md",
-    "Reconnaissance/Active-Directory/Active-Directory-Enumeration.md",
     "Development/Exploit-Development/gdb-cs.txt~",
     "Development/Exploit-Development/gdb-cs.txt",
     "Development/Exploit-Development/temp",

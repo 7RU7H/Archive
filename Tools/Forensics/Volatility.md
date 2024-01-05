@@ -25,6 +25,8 @@ Previous Volatility versions would require manual identification of OS profile -
 
 ## Cheatsheet
 
+#### REMEMBER TO DOWNLOAD THE SYMBOLS TABLES!
+
 [Documentation](https://volatility3.readthedocs.io/en/latest/volatility3.plugins.html) and Initial Assimilation from [Andrea Fortuna](https://github.com/andreafortuna)
 
 ```bash
@@ -34,8 +36,6 @@ python3 vol.py -f /file/path/dump.vmem # Load a memory dump to analyse
 python3 vol.py -p /file/path/plugin # Load a plugin 
 python3 vol.py -o /file/path/output # Output file path 
 ```
-
-
 
 Consider reading these:
 
@@ -112,7 +112,7 @@ ssdt - `.ssdt` - search for System Service Descriptor Table (SSDT) hooking has l
 
 vacdump - `.vacdump` - extract the range of pages described by a VAD node
 
-vadinfo - `.vadinfo` - VAD is [B Dolan-Gavitt](https://www.sciencedirect.com/science/article/pii/S1742287607000503)Virtual Address Descriptor tree is used by the Windows memory manager to describe memory ranges used by a process - [Andreas Fortuna](https://andreafortuna.org/2017/07/10/volatility-my-own-cheatsheet-part-3-process-memory/):
+vadinfo - `.vadinfo` - VAD is [B Dolan-Gavitt](https://www.sciencedirect.com/science/article/pii/S1742287607000503) Virtual Address Descriptor tree is used by the Windows memory manager to describe memory ranges used by a process - [Andreas Fortuna](https://andreafortuna.org/2017/07/10/volatility-my-own-cheatsheet-part-3-process-memory/):
 -   The address of the MMVAD structure in kernel memory
 -   The starting and ending virtual addresses in process memory that the MMVAD structure pertains to
 -   The VAD Tag

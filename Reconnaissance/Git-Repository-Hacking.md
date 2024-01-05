@@ -1,7 +1,7 @@
 # Git Repository Hacking
 
 
-For regular use of GitHub visit [[Github-guide]]
+For regular use of GitHub visit [[GitHub]]
 
 [ESTEBAN BORGES](https://securitytrails.com/blog/_author/estebanborges) article on [securitytrails.com about Github Dorks](https://securitytrails.com/blog/github-dorks) is referenced and used frequently it importantly mentioned on  [HackTricks - git](https://book.hacktricks.xyz/network-services-pentesting/pentesting-web/git) - recommended read as it scratches a surface of which is a very deep and rewarding topic. DevOps in AWS -[[AWS-Defined]]  and in [[Azure-DevOps]] have Github integration, there has been numerous vulnerabilities with Github as a service such [cryptomining github actions](https://techbeacon.com/security/cryptominers-flooding-github-other-cloudy-dev-services) . Development is complex, security is complex and managing people sharing complex projects will always lead to problems of implementation. 
 #### Github Dorks

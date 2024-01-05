@@ -1,6 +1,6 @@
-# Github
+# GitHub
 
-For hacking Github Repositories see [[Git-Repository-Hacking]]
+For hacking GitHub Repositories see [[Git-Repository-Hacking]]
 
 ## AAARGH.. breath just use the correct git commands
 
@@ -20,9 +20,19 @@ git push --all -f
 git config --global user.email youremail@email.com 
 ```
 
+## File Too Big 
 
-## Github Security
-Password got included in some field or log file and you are already panicing. As soon as possible:
+[StackOverflow - Schleis](https://stackoverflow.com/questions/20002557/how-to-remove-a-too-large-file-in-a-commit-when-my-branch-is-ahead-of-master-by)
+```bash
+# decrement commit
+git reset HEAD~
+rm path/to/chungus.file
+# And then commit
+```
+
+
+## GitHub Security
+Password got included in some field or log file and you are already panicking. As soon as possible:
 
 [Thanks Antonio Petricca](https://stackoverflow.com/questions/5099333/git-accidental-inclusion-of-password-how-do-i-fix-it#5099338i)
 ```bash
@@ -80,7 +90,6 @@ $ cd /tmp && touch aaa && gpg --sign aaa && rm aaa aaa.gpg && cd -
 ```
 
 ## References
-
 
 [SnovvCrash's Pentester's Promiscuous Notebook](https://ppn.snovvcrash.rocks/admin/git)
 [Nick Janetakis - GPG key pair](https://www.youtube.com/watch?v=1vVIpIvboSg)
