@@ -56,10 +56,15 @@ echo "export GOPATH=\"$HOME/go\"" | tee -a ~/.profile
 echo "export GOBIN=\"$GOPATH/bin\"" | tee -a ~/.profile
 ```
 
-#### Useful Golang
+```bash
+# Create a non persistent environment variable outside of GOBIN
+go env -w GOBIN=/somewhere/else/bin
+# unset
+go env -u GOBIN
+```
+
 
 ```go
-
 func init() // This is a special function in golang - IS THE FIRST FUNCTION THAT WILL RUN IN YOUR PACKAGE
 ```
 

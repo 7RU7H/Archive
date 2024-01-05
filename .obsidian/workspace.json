@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Security-Disciplines/Cyber-Threat-Intelligence/Threat-Hunting.md",
+                "file": "Development/Languages/Go/Golang.md",
                 "mode": "source",
                 "source": false
               }
@@ -114,9 +114,44 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "6539ed38db4e7944",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Software/Operating-Systems/Linux/Linux-Commands/Core-Linux-Commands.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2f5064f7d6d6c6ca",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/C2/Sliver/Sliver-Cheatsheet.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "685cc8c24ff9baa0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Exploitation/Exploit-Lookup-And-Maintaince/Compiling-Exploits.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -153,7 +188,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "mingw",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -162,7 +197,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -182,7 +218,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Security-Disciplines/Cyber-Threat-Intelligence/Threat-Hunting.md",
+                "file": "Tools/C2/Sliver/Sliver-Cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -199,7 +235,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Security-Disciplines/Cyber-Threat-Intelligence/Threat-Hunting.md",
+                "file": "Tools/C2/Sliver/Sliver-Cheatsheet.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -222,7 +258,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Security-Disciplines/Cyber-Threat-Intelligence/Threat-Hunting.md"
+                "file": "Tools/C2/Sliver/Sliver-Cheatsheet.md"
               }
             }
           },
@@ -236,11 +272,13 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -253,10 +291,16 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "aa9d6b54455621c9",
+  "active": "68bd1579e7bae56c",
   "lastOpenFiles": [
-    "Threat-Intelligence.md",
+    "Exploitation/Exploit-Lookup-And-Maintaince/Compiling-Exploits.md",
+    "Tools/C2/Sliver/Sliver-Cheatsheet.md",
+    "Tools/C2/Introduction-To-Command-And-Control-Frameworks.md",
+    "Software/Operating-Systems/Linux/Linux-Commands/Core-Linux-Commands.md",
+    "Development/Languages/Python/Useful_Python.md",
+    "Development/Languages/Go/Golang.md",
     "Security-Disciplines/Cyber-Threat-Intelligence/Threat-Hunting.md",
+    "Security-Disciplines/Cyber-Threat-Intelligence/Threat-Intelligence.md",
     "Tools/MISP.md",
     "Security-Disciplines/Cyber-Threat-Intelligence/Cyber-Threat-Intelligence.md",
     "Reconnaissance/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
@@ -270,17 +314,11 @@
     "Tools/Wordlists/Generating-Likely-Passwords.md",
     "Tools/AD-Offensive/Impacket/Impacket-Cheatsheet.md",
     "Exploitation/Windows/Finding-Windows-Exploits.md",
-    "Tools/C2/Sliver/Sliver-Cheatsheet.md",
     "Security-Disciplines/Red-Team/Red-Team-Theory/Adversary-Emulation.md",
     "Exploitation/Shells/Bind-And-Reverse-Shells-Defined.md",
     "Tools/Recon-Frameworks/Amass.md",
     "Reconnaissance/Active-Directory/Active-Directory-Recon.md",
     "Reconnaissance/Active-Directory/Active-Directory-Enumeration.md",
-    "Reconnaissance/Local-Setup.md",
-    "Reconnaissance/Active-Directory/Active-Directory-Footholding.md",
-    "Brain-Hacking/Actions/Question-Based-Hacking-Methodology.md",
-    "Software/Operating-Systems/Hacker-Distros/Kali/Setup-Services/Kali-And-Wine.md",
-    "Security-Disciplines/OPSEC-101.md",
     "Development/Exploit-Development/gdb-cs.txt~",
     "Development/Exploit-Development/gdb-cs.txt",
     "Development/Exploit-Development/temp",
