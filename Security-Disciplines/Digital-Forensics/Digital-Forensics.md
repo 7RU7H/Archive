@@ -28,7 +28,7 @@ Image Acquisition types from [THM AoC 2023](https://tryhackme.com/room/adventofc
 
 [[Kape]]
 [[Autopsy]]
-[[Volatility]]
+[[Volatility3]]
 [[Redline]]
 [[Velociraptor]]
 [[FTK-Imager]]

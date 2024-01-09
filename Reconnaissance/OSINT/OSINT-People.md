@@ -18,7 +18,7 @@ This is a TTPs to add to as I continue to learn and improve [[OSINT]]ing people 
 		- Linguist:
 			- Paralinguistic (non-verbal communication) in pictures and videos
 			- Phonetic: Dialect
-			- Lexical - Idiolect, Socialect
+			- Lexical - Idiolect, Sociolect
 			- Syntax: Is there emphasis? Idiot highlighting (e.g double negatives)
 			- Semantics: dense clusters of areas of meaning or meaninglessness (for various high order reasons)
 			- Pragmatic: How does the target approach cultural and social communication Maxims - Grice's, Relevancy Theory, etc 

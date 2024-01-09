@@ -1,15 +1,15 @@
-# Volatility
+# Volatility3
 
-[Volatility](https://github.com/volatilityfoundation/volatility) developers describe the Volatility framework: *"The Volatility Framework is a completely open collection of tools, implemented in Python under the GNU General Public License, for the extraction of digital artefacts from volatile memory (RAM) samples. The extraction techniques are performed completely independent of the system being investigated but offer visibilty into the runtime state of the system. The framework is intended to introduce people to the techniques and complexities associated with extracting digital artifacts from volatile memory samples and provide a platform for further work into this exciting area of research."*
+[Volatility3](https://github.com/volatilityfoundation/volatility3) developers describe the Volatility framework: *"Volatility is the world's most widely used framework for extracting digital artifacts from volatile memory (RAM) samples. The extraction techniques are performed completely independent of the system being investigated but offer visibility into the runtime state of the system."*
 
-To remain modern long past learning about Volatility this article will be covering the python3, there are ten plus year of resources for the original   
+The Volatility covered in this article will be `python3`, there are ten plus year of resources for the original. As of 2024 with the further shift from `python2` and the `setup.py` deprecated it is best to assume I will not cover Volatility(2).   
 
 The Volatility distribution is available from: [http://www.volatilityfoundation.org](http://www.volatilityfoundation.org/)
 
 The development branch from [Github](https://github.com/volatilityfoundation/volatility3)
 
 Some useful dependencies:
-[Yara-Python From VirusTotal](https://github.com/VirusTotal/yara-python) - The Python interface for YARA
+[Yara-Python From VirusTotal](https://github.com/VirusTotal/yara-python) - The Python interface for [[YARA]]
 [Capstone Engine](https://www.capstone-engine.org/download.html) - is a lightweight multi-platform, multi-architecture disassembly framework.
 
 For collecting samples for analysis consider review the options in the article [[Memory-Extraction]]
