@@ -85,7 +85,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Reconnaissance/Active-Information-Gathering/RPC/RPCClient-Cheatsheet.md",
+                "file": "Tools/Linux/Faketime.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,18 +104,6 @@
             }
           },
           {
-            "id": "6539ed38db4e7944",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Software/Operating-Systems/Linux/Linux-Commands/Core-Linux-Commands.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "2f5064f7d6d6c6ca",
             "type": "leaf",
             "state": {
@@ -128,19 +116,19 @@
             }
           },
           {
-            "id": "685cc8c24ff9baa0",
+            "id": "cae59ef777686dc9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exploitation/Exploit-Lookup-And-Maintaince/Compiling-Exploits.md",
+                "file": "Virtualization/Disable-Time-Synchronisation-With-Host-For-Guest-VMs.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -177,7 +165,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "mimikatz",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -186,8 +174,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -207,7 +194,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/AD-Offensive/Impacket/Impacket-Cheatsheet.md",
+                "file": "Tools/Linux/Faketime.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -224,7 +211,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tools/AD-Offensive/Impacket/Impacket-Cheatsheet.md",
+                "file": "Tools/Linux/Faketime.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -247,7 +234,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tools/AD-Offensive/Impacket/Impacket-Cheatsheet.md"
+                "file": "Tools/Linux/Faketime.md"
               }
             }
           },
@@ -280,8 +267,28 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "6dd3bf6e6839903f",
+  "active": "34cdd86b1df9b63f",
   "lastOpenFiles": [
+    "Reconnaissance/Active-Information-Gathering/RPC/RPCClient-Cheatsheet.md",
+    "Tools/Linux/Faketime.md",
+    "Tools/Linux",
+    "Virtualization/Disable-Time-Synchronisation-With-Host-For-Guest-VMs.md",
+    "Tools/C2/Sliver/Sliver-Cheatsheet.md",
+    "Software/Operating-Systems/Linux/Linux-Commands/Core-Linux-Commands.md",
+    "Exploitation/Exploit-Lookup-And-Maintaince/Compiling-Exploits.md",
+    "Persistence/Linux-Persistence.md",
+    "Software/Operating-Systems/Linux/Linux-Commands/Linux-Networking-Commands.md",
+    "Security-Disciplines/Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Blue-KOTH-Battlegrounds-Cheatsheet-Linux.md",
+    "Security-Disciplines/Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Blue-KOTH-Battlegrounds-Cheatsheet-Windows.md",
+    "Security-Disciplines/Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Red-KOTH-Battlegrounds-Cheatsheet-Windows.md",
+    "Security-Disciplines/Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Red-KOTH-Battlegrounds-Cheatsheet-Linux.md",
+    "Security-Disciplines/Cyberwarfare/Practice/HTB-Battlegrounds.md",
+    "Security-Disciplines/Cyberwarfare/Practice/THM-King-Of-The-Hill.md",
+    "Cryptography-And-Authentication/De-Or-En-Cryption.md",
+    "Post-Exploitation/Data-Ex&Infiltration/Data-Exfiltration/Data-Exfiltration-Over-DNS.md",
+    "Development/Languages/Bash/Bash.md",
+    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Linux-File-Transfers.md",
+    "Tools/AD-Offensive/Impacket/Impacket-Cheatsheet.md",
     "Tools/Windows/Mimikatz/Mimikatz-Cheatsheet.md",
     "Tools/Forensics/Volatility3.md",
     "Development/Languages/Python/Python-Tooling-Libraries.md",
@@ -289,25 +296,6 @@
     "README.md",
     "Reconnaissance/OSINT/OSINT-People.md",
     "Reconnaissance/SOCMINT.md",
-    "Reconnaissance/Active-Information-Gathering/LDAP/LDAP-Recon.md",
-    "Tools/Useful-Online-Software/GitHub.md",
-    "Reconnaissance/HUMINT/User-Active-Recon.md",
-    "Tools/Web-Applications-Attacking/Nikto-Cheatsheet.md",
-    "Tools/AD-Offensive/Bloodhound-Guide.md",
-    "Tools/Wordlists/Generating-Likely-Passwords.md",
-    "Tools/C2/Sliver/Sliver-Cheatsheet.md",
-    "Exploitation/Exploit-Lookup-And-Maintaince/Compiling-Exploits.md",
-    "Tools/C2/Introduction-To-Command-And-Control-Frameworks.md",
-    "Software/Operating-Systems/Linux/Linux-Commands/Core-Linux-Commands.md",
-    "Development/Languages/Python/Useful_Python.md",
-    "Development/Languages/Go/Golang.md",
-    "Security-Disciplines/Cyber-Threat-Intelligence/Threat-Hunting.md",
-    "Security-Disciplines/Cyber-Threat-Intelligence/Threat-Intelligence.md",
-    "Tools/MISP.md",
-    "Security-Disciplines/Cyber-Threat-Intelligence/Cyber-Threat-Intelligence.md",
-    "Reconnaissance/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
-    "Software/Operating-Systems/Linux/Linux-Commands/Linux-One-Liners-To-Rule-Them-All.md",
-    "Reconnaissance/Active-Information-Gathering/RPC/RPCClient-Cheatsheet.md",
     "Development/Exploit-Development/gdb-cs.txt~",
     "Development/Exploit-Development/gdb-cs.txt",
     "Development/Exploit-Development/temp",
@@ -317,7 +305,6 @@
     "Hardware/Firmware",
     "Hardware/Memory-Is-RAM",
     "Hardware/Architectures",
-    "Exploitation/Authentication",
     "Images/relationship-between-false-positives-and-false-negatives-definitions-JM-WWHF-Talk.png",
     "Images/relationship-between-false-positives-and-false-negatives-JM-WWHF-Talk.png",
     "Images/DACL-abuse-dark.png",

