@@ -44,139 +44,43 @@
             }
           },
           {
-            "id": "f8921dae9b18388d",
+            "id": "07d3c16164db88f2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exploitation/Windows/Active-Directory/AD-Resource-Based-Constrained-Delegation-Exploitation.md",
+                "file": "Post-Exploitation/Data-Ex&Infiltration/Data-Exfiltration/Data-Exfiltration-Over-HTTP-and-HTTPS.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "9df1dd1d61243ace",
+            "id": "9d8ff3a332436689",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cryptography-And-Authentication/Default-Credentials/netbiosX-Default-Credentials.md",
+                "file": "Tools/Shells/Hoaxshell.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "a02357a263d46189",
+            "id": "586bcf9e13a624d8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f830f5fe315701f7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tools/AD-Offensive/Bloodhound-Guide.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a6937e6ea0f811c1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tools/Authentication-Attacking/Hash-Cracking-Tools/Hashcat-Cheatsheet.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ce106202a49171df",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tools/Wordlists/Generating-Likely-Passwords.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "34cdd86b1df9b63f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tools/Linux/Faketime.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "cadd9b40513692f6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Exploitation/Windows/Active-Directory/AD-Resource-Based-Constrained-Delegation-Exploitation.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b7e58037f6b3dcfb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Reconnaissance/Active-Information-Gathering/RPC/RPCClient-Cheatsheet.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "2f5064f7d6d6c6ca",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tools/C2/Sliver/Sliver-Cheatsheet.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "cae59ef777686dc9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Virtualization/Disable-Time-Synchronisation-With-Host-For-Guest-VMs.md",
+                "file": "Security-Disciplines/Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Red-KOTH-Battlegrounds-Cheatsheet-Windows.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -213,7 +117,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "ntd",
+                "query": "Hoaxsh",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -243,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Post-Exploitation/Credentials-Harvesting/AD-Credential-Harvesting.md",
+                "file": "Tools/Shells/Hoaxshell.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -260,7 +164,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Post-Exploitation/Credentials-Harvesting/AD-Credential-Harvesting.md",
+                "file": "Tools/Shells/Hoaxshell.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -283,7 +187,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Post-Exploitation/Credentials-Harvesting/AD-Credential-Harvesting.md"
+                "file": "Tools/Shells/Hoaxshell.md"
               }
             }
           },
@@ -316,35 +220,35 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "aa9d6b54455621c9",
+  "active": "9d8ff3a332436689",
   "lastOpenFiles": [
-    "Post-Exploitation/Privilege-Escalation/Windows/SePrivileges/SeBackupPrivilege.md",
-    "Cryptography-And-Authentication/Default-Credentials/netbiosX-Default-Credentials.md",
-    "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Privilege-Escalation.md",
-    "Exploitation/Windows/Active-Directory/AD-Resource-Based-Constrained-Delegation-Exploitation.md",
-    "Tools/AD-Offensive/Impacket/Impacket-Cheatsheet.md",
-    "Tools/C2/Sliver/Sliver-Cheatsheet.md",
-    "Development/Languages/Go/Golang.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Bypassing-UAC/Bypassing-Windows-User-Account-Control.md",
+    "Post-Exploitation/Data-Ex&Infiltration/Data-Exfiltration/Data-Exfiltration-Over-HTTP-and-HTTPS.md",
     "Security-Disciplines/Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Red-KOTH-Battlegrounds-Cheatsheet-Windows.md",
+    "Security-Disciplines/Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Red-KOTH-Battlegrounds-Cheatsheet-Linux.md",
+    "Web-Application-Hacking/Web-Exploits/Upload-Vulnerabilities.md",
+    "Tools/AD-Offensive/Impacket/Impacket-Cheatsheet.md",
+    "Cryptography-And-Authentication/Default-Credentials/netbiosX-Default-Credentials.md",
+    "Tools/C2/Sliver/Sliver-Cheatsheet.md",
+    "Virtualization/Disable-Time-Synchronisation-With-Host-For-Guest-VMs.md",
+    "Reconnaissance/Active-Information-Gathering/RPC/RPCClient-Cheatsheet.md",
+    "Exploitation/Windows/Active-Directory/AD-Resource-Based-Constrained-Delegation-Exploitation.md",
+    "Tools/Wordlists/Generating-Likely-Passwords.md",
+    "Tools/AD-Offensive/Bloodhound-Guide.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
+    "Post-Exploitation/Credentials-Harvesting/AD-Credential-Harvesting.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/SePrivileges/SeBackupPrivilege.md",
+    "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Privilege-Escalation.md",
+    "Development/Languages/Go/Golang.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Bypassing-UAC/Bypassing-Windows-User-Account-Control.md",
     "Exploitation/Windows/Active-Directory/ACL-Abuse/GenericAll.md",
     "Exploitation/Windows/Active-Directory/Ticket-Attacks/Silver-Tickets.md",
-    "Reconnaissance/Active-Information-Gathering/RPC/RPCClient-Cheatsheet.md",
     "Exploitation/Windows/Active-Directory/Ticket-Attacks/Golden-Tickets.md",
     "Tools/Linux/Faketime.md",
     "Tools/Linux",
-    "Virtualization/Disable-Time-Synchronisation-With-Host-For-Guest-VMs.md",
     "Software/Operating-Systems/Linux/Linux-Commands/Core-Linux-Commands.md",
     "Exploitation/Exploit-Lookup-And-Maintaince/Compiling-Exploits.md",
     "Persistence/Linux-Persistence.md",
     "Software/Operating-Systems/Linux/Linux-Commands/Linux-Networking-Commands.md",
-    "Security-Disciplines/Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Blue-KOTH-Battlegrounds-Cheatsheet-Linux.md",
-    "Security-Disciplines/Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Blue-KOTH-Battlegrounds-Cheatsheet-Windows.md",
-    "Security-Disciplines/Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Red-KOTH-Battlegrounds-Cheatsheet-Linux.md",
-    "Security-Disciplines/Cyberwarfare/Practice/HTB-Battlegrounds.md",
-    "Security-Disciplines/Cyberwarfare/Practice/THM-King-Of-The-Hill.md",
-    "Cryptography-And-Authentication/De-Or-En-Cryption.md",
     "Development/Exploit-Development/gdb-cs.txt~",
     "Development/Exploit-Development/gdb-cs.txt",
     "Development/Exploit-Development/temp",

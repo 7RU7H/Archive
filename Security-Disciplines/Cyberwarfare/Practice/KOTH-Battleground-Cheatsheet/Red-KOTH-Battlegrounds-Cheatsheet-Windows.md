@@ -6,7 +6,9 @@ Website
 Background programs useful when you only have one reverse shell
 ```powershell
 start /B $command
-start-job { $command }
+
+
+Start-Job -ScriptBlock { Start-Process -FilePath "C:\Programdata\Word.exe" -Wait -WindowStyle Hidden }
 ```
 
 
