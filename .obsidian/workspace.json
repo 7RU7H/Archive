@@ -4,83 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "24ac54826f25bf21",
+        "id": "684f55e69545c691",
         "type": "tabs",
         "children": [
           {
-            "id": "68bd1579e7bae56c",
+            "id": "dc06963c4cec13d0",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tools/C2/Sliver/Sliver-Cheatsheet.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "aa9d6b54455621c9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Post-Exploitation/Credentials-Harvesting/AD-Credential-Harvesting.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6dd3bf6e6839903f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tools/AD-Offensive/Impacket/Impacket-Cheatsheet.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "07d3c16164db88f2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Post-Exploitation/Data-Ex&Infiltration/Data-Exfiltration/Data-Exfiltration-Over-HTTP-and-HTTPS.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9d8ff3a332436689",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Web-Application-Hacking/HTTPS-Certificates.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "586bcf9e13a624d8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Security-Disciplines/Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Red-KOTH-Battlegrounds-Cheatsheet-Windows.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -117,7 +52,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "openssl",
+                "query": "SeImper",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -126,7 +61,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -146,7 +82,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Web-Application-Hacking/HTTPS-Certificates.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +98,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Web-Application-Hacking/HTTPS-Certificates.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -185,9 +119,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Web-Application-Hacking/HTTPS-Certificates.md"
-              }
+              "state": {}
             }
           },
           {
@@ -219,17 +151,18 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "9d8ff3a332436689",
+  "active": "dc06963c4cec13d0",
   "lastOpenFiles": [
-    "README.md",
+    "Security-Disciplines/Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Red-KOTH-Battlegrounds-Cheatsheet-Windows.md",
+    "Post-Exploitation/Data-Ex&Infiltration/Data-Exfiltration/Data-Exfiltration-Over-HTTP-and-HTTPS.md",
+    "Tools/AD-Offensive/Impacket/Impacket-Cheatsheet.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/SePrivileges/SePrivilege-Token-Table.md",
     "Web-Application-Hacking/HTTPS-Certificates.md",
+    "README.md",
     "Tools/Web-Applications-Attacking/Burpsuite/BurpSuite.md",
     "Tools/Shells/Hoaxshell.md",
-    "Post-Exploitation/Data-Ex&Infiltration/Data-Exfiltration/Data-Exfiltration-Over-HTTP-and-HTTPS.md",
-    "Security-Disciplines/Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Red-KOTH-Battlegrounds-Cheatsheet-Windows.md",
     "Security-Disciplines/Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Red-KOTH-Battlegrounds-Cheatsheet-Linux.md",
     "Web-Application-Hacking/Web-Exploits/Upload-Vulnerabilities.md",
-    "Tools/AD-Offensive/Impacket/Impacket-Cheatsheet.md",
     "Cryptography-And-Authentication/Default-Credentials/netbiosX-Default-Credentials.md",
     "Tools/C2/Sliver/Sliver-Cheatsheet.md",
     "Virtualization/Disable-Time-Synchronisation-With-Host-For-Guest-VMs.md",
@@ -246,7 +179,6 @@
     "Exploitation/Windows/Active-Directory/ACL-Abuse/GenericAll.md",
     "Exploitation/Windows/Active-Directory/Ticket-Attacks/Silver-Tickets.md",
     "Exploitation/Windows/Active-Directory/Ticket-Attacks/Golden-Tickets.md",
-    "Tools/Linux/Faketime.md",
     "Tools/Linux",
     "Development/Exploit-Development/gdb-cs.txt~",
     "Development/Exploit-Development/gdb-cs.txt",
