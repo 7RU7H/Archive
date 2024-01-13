@@ -42,9 +42,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "82de40a49192103c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Post-Exploitation/Privilege-Escalation/Windows/SePrivileges/SeBackupPrivilege.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -81,7 +93,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Docker",
+                "query": "impacket",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -90,8 +102,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -111,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Virtualization/Docker/Docker-Hacking.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Windows/SePrivileges/SeBackupPrivilege.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -128,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Virtualization/Docker/Docker-Hacking.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Windows/SePrivileges/SeBackupPrivilege.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -151,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Virtualization/Docker/Docker-Hacking.md"
+                "file": "Post-Exploitation/Privilege-Escalation/Windows/SePrivileges/SeBackupPrivilege.md"
               }
             }
           },
@@ -184,8 +195,12 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "db5f771a903bc131",
+  "active": "82de40a49192103c",
   "lastOpenFiles": [
+    "Tools/AD-Offensive/Impacket/Impacket-Cheatsheet.md",
+    "Tools/Linux/Faketime.md",
+    "Tools/Shells/evil-winrm-Cheatsheet.md",
+    "Virtualization/Docker/Docker-Hacking.md",
     "Tools/Cross-OS/Curl-Cheatsheet.md",
     "Reconnaissance/Passive-Information-Gathering/Shodan/Shodan.md",
     "Web-Application-Hacking/CMS/Wordpress.md",
@@ -194,7 +209,6 @@
     "Networks/Network-Theory/ASNs.md",
     "Security-Disciplines/Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Red-KOTH-Battlegrounds-Cheatsheet-Windows.md",
     "Post-Exploitation/Data-Ex&Infiltration/Data-Exfiltration/Data-Exfiltration-Over-HTTP-and-HTTPS.md",
-    "Tools/AD-Offensive/Impacket/Impacket-Cheatsheet.md",
     "Post-Exploitation/Privilege-Escalation/Windows/SePrivileges/SePrivilege-Token-Table.md",
     "README.md",
     "Tools/Web-Applications-Attacking/Burpsuite/BurpSuite.md",
@@ -210,9 +224,6 @@
     "Tools/AD-Offensive/Bloodhound-Guide.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
     "Post-Exploitation/Credentials-Harvesting/AD-Credential-Harvesting.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/SePrivileges/SeBackupPrivilege.md",
-    "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Privilege-Escalation.md",
-    "Development/Languages/Go/Golang.md",
     "Tools/Linux",
     "Development/Exploit-Development/gdb-cs.txt~",
     "Development/Exploit-Development/gdb-cs.txt",

@@ -303,7 +303,7 @@ Kibana provides search and data visualization capabilities for data indexed in E
 ## 5985-6 - WinRM
 
 Windows Remote Management Protocol ports
-See [[Evil-winrm-Cheatsheet]]
+See [[evil-winrm-Cheatsheet]]
 
 ## 6379 - Redis
 
