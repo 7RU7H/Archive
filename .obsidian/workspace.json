@@ -25,14 +25,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Reconnaissance/Passive-Information-Gathering/Shodan/Shodan.md",
+                "file": "Tools/Cross-OS/Curl-Cheatsheet.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "db5f771a903bc131",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Virtualization/Docker/Docker-Hacking.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -69,7 +81,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Shodan",
+                "query": "Docker",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -99,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Reconnaissance/Passive-Information-Gathering/Shodan/Shodan.md",
+                "file": "Virtualization/Docker/Docker-Hacking.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Reconnaissance/Passive-Information-Gathering/Shodan/Shodan.md",
+                "file": "Virtualization/Docker/Docker-Hacking.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Reconnaissance/Passive-Information-Gathering/Shodan/Shodan.md"
+                "file": "Virtualization/Docker/Docker-Hacking.md"
               }
             }
           },
@@ -172,8 +184,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "b737512226513a1f",
+  "active": "db5f771a903bc131",
   "lastOpenFiles": [
+    "Tools/Cross-OS/Curl-Cheatsheet.md",
+    "Reconnaissance/Passive-Information-Gathering/Shodan/Shodan.md",
     "Web-Application-Hacking/CMS/Wordpress.md",
     "Images/shodan-cs-Joas-A-Santos-Linkedin.jpeg",
     "Web-Application-Hacking/HTTPS-Certificates.md",
@@ -199,7 +213,6 @@
     "Post-Exploitation/Privilege-Escalation/Windows/SePrivileges/SeBackupPrivilege.md",
     "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Privilege-Escalation.md",
     "Development/Languages/Go/Golang.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Bypassing-UAC/Bypassing-Windows-User-Account-Control.md",
     "Tools/Linux",
     "Development/Exploit-Development/gdb-cs.txt~",
     "Development/Exploit-Development/gdb-cs.txt",
