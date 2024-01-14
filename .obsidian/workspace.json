@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Virtualization/Docker/Docker-Hacking.md",
+                "file": "Tools/Network-Based/Port-scanning/Nmap/Nmap-AllTheScripts.md",
                 "mode": "source",
                 "source": false
               }
@@ -49,14 +49,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Windows/SePrivileges/SeBackupPrivilege.md",
+                "file": "Tools/Network-Based/Packet-Analysis/Wireshark/Wireshark-Useful-Packet-Filters.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -93,7 +93,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "impacket",
+                "query": "Nagios",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -102,7 +102,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -122,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Windows/SePrivileges/SeBackupPrivilege.md",
+                "file": "Tools/Network-Based/Port-scanning/Nmap/Nmap-AllTheScripts.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +140,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Windows/SePrivileges/SeBackupPrivilege.md",
+                "file": "Tools/Network-Based/Port-scanning/Nmap/Nmap-AllTheScripts.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +163,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Windows/SePrivileges/SeBackupPrivilege.md"
+                "file": "Tools/Network-Based/Port-scanning/Nmap/Nmap-AllTheScripts.md"
               }
             }
           },
@@ -195,12 +196,17 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "82de40a49192103c",
+  "active": "db5f771a903bc131",
   "lastOpenFiles": [
+    "Reconnaissance/Active-Information-Gathering/LDAP/LDAP-Recon.md",
+    "Virtualization/Docker/Docker-Hacking.md",
+    "Tools/Network-Based/Packet-Analysis/Wireshark/Wireshark-Useful-Packet-Filters.md",
+    "Tools/Network-Based/Packet-Analysis/Wireshark/Wireshark.md",
+    "Networks/Network-Theory/QUIC-Defined.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/SePrivileges/SeBackupPrivilege.md",
     "Tools/AD-Offensive/Impacket/Impacket-Cheatsheet.md",
     "Tools/Linux/Faketime.md",
     "Tools/Shells/evil-winrm-Cheatsheet.md",
-    "Virtualization/Docker/Docker-Hacking.md",
     "Tools/Cross-OS/Curl-Cheatsheet.md",
     "Reconnaissance/Passive-Information-Gathering/Shodan/Shodan.md",
     "Web-Application-Hacking/CMS/Wordpress.md",
@@ -219,11 +225,6 @@
     "Tools/C2/Sliver/Sliver-Cheatsheet.md",
     "Virtualization/Disable-Time-Synchronisation-With-Host-For-Guest-VMs.md",
     "Reconnaissance/Active-Information-Gathering/RPC/RPCClient-Cheatsheet.md",
-    "Exploitation/Windows/Active-Directory/AD-Resource-Based-Constrained-Delegation-Exploitation.md",
-    "Tools/Wordlists/Generating-Likely-Passwords.md",
-    "Tools/AD-Offensive/Bloodhound-Guide.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
-    "Post-Exploitation/Credentials-Harvesting/AD-Credential-Harvesting.md",
     "Tools/Linux",
     "Development/Exploit-Development/gdb-cs.txt~",
     "Development/Exploit-Development/gdb-cs.txt",
