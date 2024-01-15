@@ -65,7 +65,7 @@ snmpwalk -c public -v1 $TARGET 1.3.6.1.4.1.77.1.2.3.1.1
 # Windows Share Information
 snmpwalk -c public -v1 $TARGET 1.3.6.1.4.1.77.1.2.27
 
-# Windows TCP Ports
+# Windows TCP Portssnm
 snmpwalk -c public -v1 $TARGET4 1.3.6.1.2.1.6.13.1.3
 
 # Software Name

@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/Cross-OS/Curl-Cheatsheet.md",
+                "file": "Reconnaissance/Active-Information-Gathering/LDAP/LDAP-Recon.md",
                 "mode": "source",
                 "source": false
               }
@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/Network-Based/Port-scanning/Nmap/Nmap-AllTheScripts.md",
+                "file": "Reconnaissance/Active-Information-Gathering/SNMP/SNMP-Recon-Cheatsheet.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Nagios",
+                "query": "feroxbuster",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -102,8 +102,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -123,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/Network-Based/Port-scanning/Nmap/Nmap-AllTheScripts.md",
+                "file": "Reconnaissance/Active-Information-Gathering/SNMP/SNMP-Recon-Cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tools/Network-Based/Port-scanning/Nmap/Nmap-AllTheScripts.md",
+                "file": "Reconnaissance/Active-Information-Gathering/SNMP/SNMP-Recon-Cheatsheet.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -163,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tools/Network-Based/Port-scanning/Nmap/Nmap-AllTheScripts.md"
+                "file": "Reconnaissance/Active-Information-Gathering/SNMP/SNMP-Recon-Cheatsheet.md"
               }
             }
           },
@@ -198,7 +197,11 @@
   },
   "active": "db5f771a903bc131",
   "lastOpenFiles": [
+    "Software/Services/Webservers/Nagios.md",
+    "Reconnaissance/Active-Information-Gathering/SNMP/SNMP-Recon-Cheatsheet.md",
     "Reconnaissance/Active-Information-Gathering/LDAP/LDAP-Recon.md",
+    "Tools/Cross-OS/Curl-Cheatsheet.md",
+    "Tools/Network-Based/Port-scanning/Nmap/Nmap-AllTheScripts.md",
     "Virtualization/Docker/Docker-Hacking.md",
     "Tools/Network-Based/Packet-Analysis/Wireshark/Wireshark-Useful-Packet-Filters.md",
     "Tools/Network-Based/Packet-Analysis/Wireshark/Wireshark.md",
@@ -207,7 +210,6 @@
     "Tools/AD-Offensive/Impacket/Impacket-Cheatsheet.md",
     "Tools/Linux/Faketime.md",
     "Tools/Shells/evil-winrm-Cheatsheet.md",
-    "Tools/Cross-OS/Curl-Cheatsheet.md",
     "Reconnaissance/Passive-Information-Gathering/Shodan/Shodan.md",
     "Web-Application-Hacking/CMS/Wordpress.md",
     "Images/shodan-cs-Joas-A-Santos-Linkedin.jpeg",
@@ -222,9 +224,6 @@
     "Security-Disciplines/Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Red-KOTH-Battlegrounds-Cheatsheet-Linux.md",
     "Web-Application-Hacking/Web-Exploits/Upload-Vulnerabilities.md",
     "Cryptography-And-Authentication/Default-Credentials/netbiosX-Default-Credentials.md",
-    "Tools/C2/Sliver/Sliver-Cheatsheet.md",
-    "Virtualization/Disable-Time-Synchronisation-With-Host-For-Guest-VMs.md",
-    "Reconnaissance/Active-Information-Gathering/RPC/RPCClient-Cheatsheet.md",
     "Tools/Linux",
     "Development/Exploit-Development/gdb-cs.txt~",
     "Development/Exploit-Development/gdb-cs.txt",
