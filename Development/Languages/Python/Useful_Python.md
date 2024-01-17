@@ -5,6 +5,16 @@ Remember with python [you need a ruler for tab indentation](https://www.youtube.
 
 # Basics
 
+Python virtual environment
+```python
+python3 -m venv .venv
+
+source .venv/bin/activate 
+pip3 install .
+
+# deactivate # To deactivate virtual environment
+```
+
 ### Fundamentals
 
 ```python 

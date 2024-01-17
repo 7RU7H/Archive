@@ -37,7 +37,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Reconnaissance/Active-Information-Gathering/SNMP/SNMP-Recon-Cheatsheet.md",
+                "file": "Development/Languages/Python/Useful_Python.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "5104fc1aebcea152",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Web-Application-Hacking/Web-Exploits/SSRF/Server-Side-Request-Forgery.md",
                 "mode": "source",
                 "source": false
               }
@@ -56,7 +68,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -93,7 +105,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "feroxbuster",
+                "query": "Regex",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -122,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Reconnaissance/Active-Information-Gathering/SNMP/SNMP-Recon-Cheatsheet.md",
+                "file": "Web-Application-Hacking/Web-Exploits/SSRF/Server-Side-Request-Forgery.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Reconnaissance/Active-Information-Gathering/SNMP/SNMP-Recon-Cheatsheet.md",
+                "file": "Web-Application-Hacking/Web-Exploits/SSRF/Server-Side-Request-Forgery.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Reconnaissance/Active-Information-Gathering/SNMP/SNMP-Recon-Cheatsheet.md"
+                "file": "Web-Application-Hacking/Web-Exploits/SSRF/Server-Side-Request-Forgery.md"
               }
             }
           },
@@ -195,10 +207,16 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "db5f771a903bc131",
+  "active": "5104fc1aebcea152",
   "lastOpenFiles": [
-    "Software/Services/Webservers/Nagios.md",
+    "Development/Regular-Expressions.md",
+    "Development/Languages/Python/Useful_Python.md",
+    "Development/Languages/Python/Jupyter-Notebooks.md",
+    "Development/Languages/Python/Pandas.md",
+    "Development/Languages/Python/Python-Tooling-Libraries.md",
+    "Development/Languages/Python/Python-Network-Scripting.md",
     "Reconnaissance/Active-Information-Gathering/SNMP/SNMP-Recon-Cheatsheet.md",
+    "Software/Services/Webservers/Nagios.md",
     "Reconnaissance/Active-Information-Gathering/LDAP/LDAP-Recon.md",
     "Tools/Cross-OS/Curl-Cheatsheet.md",
     "Tools/Network-Based/Port-scanning/Nmap/Nmap-AllTheScripts.md",
@@ -218,12 +236,6 @@
     "Security-Disciplines/Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Red-KOTH-Battlegrounds-Cheatsheet-Windows.md",
     "Post-Exploitation/Data-Ex&Infiltration/Data-Exfiltration/Data-Exfiltration-Over-HTTP-and-HTTPS.md",
     "Post-Exploitation/Privilege-Escalation/Windows/SePrivileges/SePrivilege-Token-Table.md",
-    "README.md",
-    "Tools/Web-Applications-Attacking/Burpsuite/BurpSuite.md",
-    "Tools/Shells/Hoaxshell.md",
-    "Security-Disciplines/Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Red-KOTH-Battlegrounds-Cheatsheet-Linux.md",
-    "Web-Application-Hacking/Web-Exploits/Upload-Vulnerabilities.md",
-    "Cryptography-And-Authentication/Default-Credentials/netbiosX-Default-Credentials.md",
     "Tools/Linux",
     "Development/Exploit-Development/gdb-cs.txt~",
     "Development/Exploit-Development/gdb-cs.txt",
