@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "dc06963c4cec13d0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Networks/Network-Theory/ASNs.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "b737512226513a1f",
             "type": "leaf",
             "state": {
@@ -37,38 +25,62 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Development/Languages/Python/Useful_Python.md",
+                "file": "Exploitation/Binary-Exploitation/Binary-Exploitation-Enumeration.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "5104fc1aebcea152",
+            "id": "e24859da20174298",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Web-Application-Hacking/Web-Exploits/SSRF/Server-Side-Request-Forgery.md",
+                "file": "Development/Languages/Perl/Useful_Perl.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "82de40a49192103c",
+            "id": "a9824a3e1996d0d9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/Network-Based/Packet-Analysis/Wireshark/Wireshark-Useful-Packet-Filters.md",
+                "file": "Tools/C2/Sliver/Sliver-Cheatsheet.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6e681f534cde5c8a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/Binary-Exploitation-Tools/Pwntools.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c54fdcba43b17a32",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -105,7 +117,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Regex",
+                "query": "linux-pr",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -114,7 +126,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -134,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Web-Application-Hacking/Web-Exploits/SSRF/Server-Side-Request-Forgery.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +164,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Web-Application-Hacking/Web-Exploits/SSRF/Server-Side-Request-Forgery.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +187,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Web-Application-Hacking/Web-Exploits/SSRF/Server-Side-Request-Forgery.md"
+                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md"
               }
             }
           },
@@ -207,10 +220,27 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "5104fc1aebcea152",
+  "active": "c54fdcba43b17a32",
   "lastOpenFiles": [
-    "Development/Regular-Expressions.md",
+    "Tools/Binary-Exploitation-Tools/Pwntools.md",
+    "Development/Exploit-Development/angr.md",
+    "Exploitation/Binary-Exploitation/Binary-Exploitation-Enumeration.md",
+    "Development/Exploit-Development/pwndbg.md",
+    "Development/Exploit-Development/GEF.md",
+    "Tools/Debuggers-IDEs-Editors/GDB.md",
+    "Tools/Debuggers-IDEs-Editors/pwndbg-CheatSheet.pdf",
+    "Tools/C2/Sliver/Sliver-Cheatsheet.md",
+    "Development/Languages/Perl/Useful_Perl.md",
+    "Mobile/Android/Android.md",
+    "Mobile/Android",
+    "Mobile",
+    "Tools/Web-Applications-Attacking/Browsers.md",
+    "Tools/Reverse-Engineering/Radare2/Radare2-Commands.md",
+    "Tools/Reverse-Engineering/Radare2/Radare2-Cheatsheet.md",
+    "Development/Languages/Bash/Bash.md",
     "Development/Languages/Python/Useful_Python.md",
+    "Web-Application-Hacking/Web-Exploits/SSRF/Server-Side-Request-Forgery.md",
+    "Development/Regular-Expressions.md",
     "Development/Languages/Python/Jupyter-Notebooks.md",
     "Development/Languages/Python/Pandas.md",
     "Development/Languages/Python/Python-Tooling-Libraries.md",
@@ -221,21 +251,7 @@
     "Tools/Cross-OS/Curl-Cheatsheet.md",
     "Tools/Network-Based/Port-scanning/Nmap/Nmap-AllTheScripts.md",
     "Virtualization/Docker/Docker-Hacking.md",
-    "Tools/Network-Based/Packet-Analysis/Wireshark/Wireshark-Useful-Packet-Filters.md",
-    "Tools/Network-Based/Packet-Analysis/Wireshark/Wireshark.md",
-    "Networks/Network-Theory/QUIC-Defined.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/SePrivileges/SeBackupPrivilege.md",
-    "Tools/AD-Offensive/Impacket/Impacket-Cheatsheet.md",
-    "Tools/Linux/Faketime.md",
-    "Tools/Shells/evil-winrm-Cheatsheet.md",
-    "Reconnaissance/Passive-Information-Gathering/Shodan/Shodan.md",
-    "Web-Application-Hacking/CMS/Wordpress.md",
     "Images/shodan-cs-Joas-A-Santos-Linkedin.jpeg",
-    "Web-Application-Hacking/HTTPS-Certificates.md",
-    "Networks/Network-Theory/ASNs.md",
-    "Security-Disciplines/Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Red-KOTH-Battlegrounds-Cheatsheet-Windows.md",
-    "Post-Exploitation/Data-Ex&Infiltration/Data-Exfiltration/Data-Exfiltration-Over-HTTP-and-HTTPS.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/SePrivileges/SePrivilege-Token-Table.md",
     "Tools/Linux",
     "Development/Exploit-Development/gdb-cs.txt~",
     "Development/Exploit-Development/gdb-cs.txt",
@@ -243,9 +259,6 @@
     "Development/Exploit-Development/GEF.md.bak",
     "Development/Exploit-Development",
     "Tools/Reverse-Engineering/Untitled",
-    "Hardware/Firmware",
-    "Hardware/Memory-Is-RAM",
-    "Hardware/Architectures",
     "Images/relationship-between-false-positives-and-false-negatives-definitions-JM-WWHF-Talk.png",
     "Images/relationship-between-false-positives-and-false-negatives-JM-WWHF-Talk.png",
     "Images/DACL-abuse-dark.png",

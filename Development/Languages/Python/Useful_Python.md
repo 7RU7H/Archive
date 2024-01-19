@@ -25,7 +25,7 @@ pip3 install .
 myInt = 1337
 myFloat = 1010.0101
 myString = "ping"
-print(f"{myString[0]} {myString[1]} {myString[2]} {myString[3]} string slicing with \[1:2\] {myString[1:2]} python")
+print(f"{myString[0]} {myString[1]} {myString[2]} {myString[3]} string slicing with 1:2 {myString[1:2]} python")
 myList = ["burp", "gobuster", "hydra", "empire", "nikto", "nmap", "sqlmap", "wfuzz", "SecLists","PayloadAllTheThings","OWASPtop10","Discover by Lee Baird",False,True]
 print(f"{myString}.. using f-string(these can be used in variable declaration aswell!) in a print to stdout")
 print(f"reference by index value with square bracks: \[{mylist[1}\]") 
