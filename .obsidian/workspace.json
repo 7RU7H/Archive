@@ -25,19 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exploitation/Binary-Exploitation/Binary-Exploitation-Enumeration.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e24859da20174298",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Development/Languages/Perl/Useful_Perl.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
                 "mode": "source",
                 "source": false
               }
@@ -54,33 +42,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "6e681f534cde5c8a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tools/Binary-Exploitation-Tools/Pwntools.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c54fdcba43b17a32",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -126,8 +90,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -220,17 +183,18 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "c54fdcba43b17a32",
+  "active": "db5f771a903bc131",
   "lastOpenFiles": [
+    "Exploitation/Binary-Exploitation/Binary-Exploitation-Enumeration.md",
+    "Development/Languages/Perl/Useful_Perl.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
     "Tools/Binary-Exploitation-Tools/Pwntools.md",
     "Development/Exploit-Development/angr.md",
-    "Exploitation/Binary-Exploitation/Binary-Exploitation-Enumeration.md",
     "Development/Exploit-Development/pwndbg.md",
     "Development/Exploit-Development/GEF.md",
     "Tools/Debuggers-IDEs-Editors/GDB.md",
     "Tools/Debuggers-IDEs-Editors/pwndbg-CheatSheet.pdf",
     "Tools/C2/Sliver/Sliver-Cheatsheet.md",
-    "Development/Languages/Perl/Useful_Perl.md",
     "Mobile/Android/Android.md",
     "Mobile/Android",
     "Mobile",
@@ -250,7 +214,6 @@
     "Reconnaissance/Active-Information-Gathering/LDAP/LDAP-Recon.md",
     "Tools/Cross-OS/Curl-Cheatsheet.md",
     "Tools/Network-Based/Port-scanning/Nmap/Nmap-AllTheScripts.md",
-    "Virtualization/Docker/Docker-Hacking.md",
     "Images/shodan-cs-Joas-A-Santos-Linkedin.jpeg",
     "Tools/Linux",
     "Development/Exploit-Development/gdb-cs.txt~",
