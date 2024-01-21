@@ -26,7 +26,7 @@ jmp | Unconditional
 je | Equal/Zero
 jne | Not Equal/Not Zero
 js | Negative
-jns | Nonnegative
+jns | Non-Negative
 jg | Greater
 jge | Greater or Equal
 jl | Less

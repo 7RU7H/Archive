@@ -214,7 +214,7 @@ ls -la --sort=time -r # Same above expect list all permissions
 
 ```
 
-## `lsof`
+## `lsof`5
 ```bash
 lsof   # List Open files
 

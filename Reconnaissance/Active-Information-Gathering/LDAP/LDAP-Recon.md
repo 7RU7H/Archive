@@ -36,7 +36,7 @@ ldapsearch -x -H ldap://$IP -D '<domain>\<username>' -w '<password>' -b "CN=Doma
 ```bash
 ldapdomaindump -u '<DOMAIN>\<USERNAME>' -p <PASSWORD> $IP -o $output-directory-name
 
-#ldd2bloodhound -d $output-directory-name/*.json # Visualise with Bloodhound BUT:
+# ldd2bloodhound -d $output-directory-name/*.json # Visualise with Bloodhound BUT:
 # Note that these files are only compatible with **BloodHound 1.x** which is quite old. There are no plans to support the latest version as the [BloodHound.py project](https://github.com/fox-it/BloodHound.py) was made for this. With the DCOnly collection method this tool will also only talk to LDAP and collect more information than ldapdomaindump would.
 ```
 

@@ -129,10 +129,22 @@ int main()
 }
 ```
 
+[Inline](https://gcc.gnu.org/onlinedocs/gcc/extensions-to-the-c-language-family/how-to-use-inline-assembly-language-in-c-code.html) [[x86-Assembly]], or [[x86-64-Assembly]] - for size considerations see [Size of an asm](https://gcc.gnu.org/onlinedocs/gcc/extensions-to-the-c-language-family/how-to-use-inline-assembly-language-in-c-code.html#size-of-an-asm)
+```c
+int inlineThis() 
+{
+	// The optional `volatile` qualifier has no effect. All basic `asm` blocks are implicitly volatile.
+	__asm__ volatile (" ") X
+	// If you use the `inline` qualifier, then for inlining purposes the size of the `asm` statement is taken as the smallest size possible
+	__asm__ inline (" " )
+}
 
+```
 ## References
 
 [Windows - C Language Reference](https://learn.microsoft.com/en-us/cpp/c-language/c-language-reference?view=msvc-170)
 [GCC](https://linux.die.net/man/1/gcc)
 [XinYminutesC](https://learnxinyminutes.com/docs/c/)
 [Jacob Sorber Programming with Processes](https://www.youtube.com/playlist?list=PL9IEJIKnBJjFNNfpY6fHjVzAwtgRYjhPw)
+[Size of an asm](https://gcc.gnu.org/onlinedocs/gcc/extensions-to-the-c-language-family/how-to-use-inline-assembly-language-in-c-code.html#size-of-an-asm)
+[Inline Assembly Lanaguage in C Code - gcc.gnu.org](https://gcc.gnu.org/onlinedocs/gcc/extensions-to-the-c-language-family/how-to-use-inline-assembly-language-in-c-code.html)

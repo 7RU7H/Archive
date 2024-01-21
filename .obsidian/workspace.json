@@ -13,19 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Reconnaissance/Active-Information-Gathering/LDAP/LDAP-Recon.md",
+                "file": "Exploitation/CVEs/CVE-2023-7028.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "db5f771a903bc131",
+            "id": "823936febfd5c2ef",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+                "file": "Reconnaissance/Active-Information-Gathering/RPC/RPCClient-Cheatsheet.md",
                 "mode": "source",
                 "source": false
               }
@@ -43,8 +43,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -81,7 +80,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "linux-pr",
+                "query": "impacket",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -110,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+                "file": "Exploitation/CVEs/CVE-2023-7028.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+                "file": "Exploitation/CVEs/CVE-2023-7028.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md"
+                "file": "Exploitation/CVEs/CVE-2023-7028.md"
               }
             }
           },
@@ -183,11 +182,24 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "db5f771a903bc131",
+  "active": "b737512226513a1f",
   "lastOpenFiles": [
+    "Development/Languages/C/Useful-C.md",
+    "Exploitation/CVEs/CVE-2023-7028.md",
+    "Exploitation/Windows/Active-Directory/Ticket-Attacks/ASREP-Roasting.md",
+    "Tools/AD-Offensive/Impacket/Impacket-Cheatsheet.md",
+    "Reconnaissance/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
+    "Reconnaissance/Active-Information-Gathering/LDAP/LDAP-Recon.md",
+    "Reconnaissance/Active-Information-Gathering/RPC/RPC-Recon.md",
+    "Software/Services/Databases/MYSQL/MySQL-Cheatsheet.md",
+    "Reconnaissance/Active-Information-Gathering/DNS/DNS-Active-Recon.md",
+    "Reconnaissance/Active-Information-Gathering/RPC/RPCClient-Cheatsheet.md",
+    "Reconnaissance/Active-Information-Gathering/Active-Recon.md",
+    "Software/Operating-Systems/Linux/Linux-Commands/Core-Linux-Commands.md",
+    "Development/Languages/Assembly/x86-64-Assembly.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
     "Exploitation/Binary-Exploitation/Binary-Exploitation-Enumeration.md",
     "Development/Languages/Perl/Useful_Perl.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
     "Tools/Binary-Exploitation-Tools/Pwntools.md",
     "Development/Exploit-Development/angr.md",
     "Development/Exploit-Development/pwndbg.md",
@@ -201,19 +213,6 @@
     "Tools/Web-Applications-Attacking/Browsers.md",
     "Tools/Reverse-Engineering/Radare2/Radare2-Commands.md",
     "Tools/Reverse-Engineering/Radare2/Radare2-Cheatsheet.md",
-    "Development/Languages/Bash/Bash.md",
-    "Development/Languages/Python/Useful_Python.md",
-    "Web-Application-Hacking/Web-Exploits/SSRF/Server-Side-Request-Forgery.md",
-    "Development/Regular-Expressions.md",
-    "Development/Languages/Python/Jupyter-Notebooks.md",
-    "Development/Languages/Python/Pandas.md",
-    "Development/Languages/Python/Python-Tooling-Libraries.md",
-    "Development/Languages/Python/Python-Network-Scripting.md",
-    "Reconnaissance/Active-Information-Gathering/SNMP/SNMP-Recon-Cheatsheet.md",
-    "Software/Services/Webservers/Nagios.md",
-    "Reconnaissance/Active-Information-Gathering/LDAP/LDAP-Recon.md",
-    "Tools/Cross-OS/Curl-Cheatsheet.md",
-    "Tools/Network-Based/Port-scanning/Nmap/Nmap-AllTheScripts.md",
     "Images/shodan-cs-Joas-A-Santos-Linkedin.jpeg",
     "Tools/Linux",
     "Development/Exploit-Development/gdb-cs.txt~",
