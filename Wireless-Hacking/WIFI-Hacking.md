@@ -46,6 +46,13 @@ airmon-ng start wlan<NUM> # Put into monitor mode
 airmon-ng stop wlan<NUM> # End monitor mode
 ```
 
+## Alternative to `airX-ng`
+
+[cyberark](https://www.cyberark.com/resources/threat-research-blog/cracking-wifi-at-scale-with-one-simple-trick) recommends cracking WIFI with `hcxpcapngtool` that uses `hashcat` see: [[Hashcat-Cheatsheet]]
+```bash
+hcxpcapngtool -o $file.hash $file.pcapng
+```
+
 
 ## References
 
@@ -53,3 +60,4 @@ airmon-ng stop wlan<NUM> # End monitor mode
 [David Bombal](https://davidbombal.com/hack-wifi-from-1-80/)
 [medium Fabian Voith](https://fabian-voith.de/2020/04/22/get-alfa-awus036ach-usb-nic-running-on-kali-vm-to-attack-wireless-networks/)
 [referenced above kali blog](https://www.kali.org/blog/kali-linux-2017-1-release/)
+[cyberark](https://www.cyberark.com/resources/threat-research-blog/cracking-wifi-at-scale-with-one-simple-trick)

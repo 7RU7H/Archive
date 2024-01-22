@@ -13,7 +13,31 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exploitation/CVEs/CVE-2023-7028.md",
+                "file": "Tools/Network-Based/Packet-Analysis/pyrdp.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "cc1ac92034f5eed2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/Network-Based/Packet-Analysis/Wireshark/Wireshark.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d323009ef095e93e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Wireless-Hacking/WIFI-Hacking.md",
                 "mode": "source",
                 "source": false
               }
@@ -109,7 +133,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exploitation/CVEs/CVE-2023-7028.md",
+                "file": "Tools/Network-Based/Packet-Analysis/pyrdp.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +150,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Exploitation/CVEs/CVE-2023-7028.md",
+                "file": "Tools/Network-Based/Packet-Analysis/pyrdp.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +173,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Exploitation/CVEs/CVE-2023-7028.md"
+                "file": "Tools/Network-Based/Packet-Analysis/pyrdp.md"
               }
             }
           },
@@ -184,8 +208,12 @@
   },
   "active": "b737512226513a1f",
   "lastOpenFiles": [
-    "Development/Languages/C/Useful-C.md",
+    "Wireless-Hacking/WIFI-Hacking.md",
+    "Tools/Network-Based/Packet-Analysis/Wireshark/Wireshark.md",
+    "Tools/Network-Based/Packet-Analysis/Wireshark/Decrypting-RDP-From-Pcap.md",
+    "Tools/Network-Based/Packet-Analysis/pyrdp.md",
     "Exploitation/CVEs/CVE-2023-7028.md",
+    "Development/Languages/C/Useful-C.md",
     "Exploitation/Windows/Active-Directory/Ticket-Attacks/ASREP-Roasting.md",
     "Tools/AD-Offensive/Impacket/Impacket-Cheatsheet.md",
     "Reconnaissance/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
@@ -207,12 +235,8 @@
     "Tools/Debuggers-IDEs-Editors/GDB.md",
     "Tools/Debuggers-IDEs-Editors/pwndbg-CheatSheet.pdf",
     "Tools/C2/Sliver/Sliver-Cheatsheet.md",
-    "Mobile/Android/Android.md",
     "Mobile/Android",
     "Mobile",
-    "Tools/Web-Applications-Attacking/Browsers.md",
-    "Tools/Reverse-Engineering/Radare2/Radare2-Commands.md",
-    "Tools/Reverse-Engineering/Radare2/Radare2-Cheatsheet.md",
     "Images/shodan-cs-Joas-A-Santos-Linkedin.jpeg",
     "Tools/Linux",
     "Development/Exploit-Development/gdb-cs.txt~",

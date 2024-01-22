@@ -189,7 +189,10 @@ From the `Statistcs` drop down:
 -   Packet filter (pf)
 -   Windows Firewall (netsh new/old format)
 
+#### Decrypt WIFI
 
+Similarly to [[WIFI-Hacking]] tool like `air-x-ng` series you can crack some WIFI as [Gh05t-1337](https://github.com/Gh05t-1337/CTF-Writeups/tree/main/TryHackMe/AoC23%20Sidequest/1%20The%20Return%20of%20the%20Yeti) points out (spoilers for AoC 2023) with WireShark:
+-  `Edit > Preferences > Protocols > IEEE 802.11, and Edit Decryption keys`
 
 ## References
 
