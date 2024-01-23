@@ -38,6 +38,12 @@ move eax, [0xdeadbeef] ; move the value at the memory location into eax register
 `rol destination, count` rotates the destination to the right  
 -  `00001010` rotated left by 1 becomes `00010100` 
 
+`call`
+- How do arguments get passed to `call` instructions?
+	- The calling convention is defined in detail in [System V Application Binary Interface—AMD64 Architecture Processor Supplement.](http://www.x86-64.org/documentation/abi.pdf)
+
+
+[Wikipedia: x86 Instruction `test`](https://en.wikipedia.org/wiki/TEST_(x86_instruction) states the `test` [instruction](https://en.wikipedia.org/wiki/Instruction_(computing) "Instruction (computing)") performs a [bitwise AND](https://en.wikipedia.org/wiki/Bitwise_AND "Bitwise AND") on two [operands](https://en.wikipedia.org/wiki/Operand "Operand"). The [flags](https://en.wikipedia.org/wiki/FLAGS_register "FLAGS register") [`SF`](https://en.wikipedia.org/wiki/Sign_flag "Sign flag"), [`ZF`](https://en.wikipedia.org/wiki/Zero_flag "Zero flag"), [`PF`](https://en.wikipedia.org/wiki/Parity_flag "Parity flag") are modified while the result of the [AND](https://en.wikipedia.org/wiki/Bitwise_AND "Bitwise AND") is discarded.
 ## Flags
 
 Flags are bits that are set in the Flags Register or `EFLAGS` register to represent a condition or result of the most recent arithmetic or logical  
@@ -112,20 +118,21 @@ cmp dst, src
 
 Jump instructions
 
-|**Instruction**|**Explanation**|
-|---|---|
-|jz|Jump if the ZF is set (ZF=1).|
-|jnz|Jump if the ZF is not set (ZF=0).|
-|je|Jump if equal. Often used after a CMP instruction.|
-|jne|Jump if not equal. Often used after a CMP instruction.|
-|jg|Jump if the destination is greater than the source operand. Performs signed comparison and is often used after a CMP instruction.|
-|jl|Jump if the destination is lesser than the source operand. Performs signed comparison and is often used after a CMP instruction.|
-|jge|Jump if greater than or equal to. Jumps if the destination operand is greater than or equal to the source operand. Similar to the above instructions.|
-|jle|Jump if lesser than or equal to. Jumps if the destination operand is lesser than or equal to the source operand. Similar to the above instructions.|
-|ja|Jump if above. Similar to jg, but performs an unsigned comparison.|
-|jb|Jump if below. Similar to jl, but performs an unsigned comparison.|
-|jae|Jump if above or equal to. Similar to the above instructions.|
-|jbe|Jump if below or equal to. Similar to the above instructions.|
+| **Instruction** | **Explanation** |
+| ---- | ---- |
+| `jz` | Jump if the ZF is set (ZF=1). |
+| `jnz` | Jump if the ZF is not set (ZF=0). |
+| `je` | Jump if equal. Often used after a CMP instruction. |
+| `jne` | Jump if not equal. Often used after a CMP instruction. |
+| `jg` | Jump if the destination is greater than the source operand. Performs signed comparison and is often used after a CMP instruction. |
+| `jl` | Jump if the destination is lesser than the source operand. Performs signed comparison and is often used after a CMP instruction. |
+| `jge` | Jump if greater than or equal to. Jumps if the destination operand is greater than or equal to the source operand. Similar to the above instructions. |
+| `jle` | Jump if lesser than or equal to. Jumps if the destination operand is lesser than or equal to the source operand. Similar to the above instructions. |
+| `ja` | Jump if above. Similar to jg, but performs an unsigned comparison. |
+| `jb` | Jump if below. Similar to jl, but performs an unsigned comparison. |
+| `jae` | Jump if above or equal to. Similar to the above instructions. |
+| `jbe` | Jump if below or equal to. Similar to the above instructions. |
+| `js`  | Jump if signed flag is set by an earlier instruction |
 
 #### Function Calls
 ```asm
@@ -162,3 +169,5 @@ popad
 [Wikipedia Opcodes](https://en.wikipedia.org/wiki/Opcode)
 [Wikipedia x86 assembly language](https://en.wikipedia.org/wiki/X86_assembly_language)
 [THM x86 Architecture Overview Room](https://tryhackme.com/room/x8664arch)
+[Wikipedia: x86 Instruction `test`](https://en.wikipedia.org/wiki/TEST_(x86_instruction) s
+[System V Application Binary Interface—AMD64 Architecture Processor Supplement.](http://www.x86-64.org/documentation/abi.pdf)
