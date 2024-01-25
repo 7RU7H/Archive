@@ -8,24 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "b737512226513a1f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Development/Languages/Assembly/x86-Assembly.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "cc1ac92034f5eed2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/Network-Based/Packet-Analysis/Wireshark/Wireshark.md",
+                "file": "Virtualization/Docker/Docker-Hacking.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +92,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "impacket",
+                "query": "ftp",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -133,7 +121,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Development/Languages/Assembly/x86-Assembly.md",
+                "file": "Virtualization/Docker/Docker-Hacking.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,7 +138,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Development/Languages/Assembly/x86-Assembly.md",
+                "file": "Virtualization/Docker/Docker-Hacking.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -173,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Development/Languages/Assembly/x86-Assembly.md"
+                "file": "Virtualization/Docker/Docker-Hacking.md"
               }
             }
           },
@@ -206,11 +194,13 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "b737512226513a1f",
+  "active": "cc1ac92034f5eed2",
   "lastOpenFiles": [
+    "Tools/Network-Based/Packet-Analysis/Wireshark/Wireshark.md",
+    "Networks/Network-Theory/Network-Protocols/FTP.md",
+    "Development/Languages/Assembly/x86-Assembly.md",
     "Tools/Network-Based/Packet-Analysis/pyrdp.md",
     "Wireless-Hacking/WIFI-Hacking.md",
-    "Tools/Network-Based/Packet-Analysis/Wireshark/Wireshark.md",
     "Tools/Network-Based/Packet-Analysis/Wireshark/Decrypting-RDP-From-Pcap.md",
     "Exploitation/CVEs/CVE-2023-7028.md",
     "Development/Languages/C/Useful-C.md",
@@ -232,9 +222,7 @@
     "Development/Exploit-Development/angr.md",
     "Development/Exploit-Development/pwndbg.md",
     "Development/Exploit-Development/GEF.md",
-    "Tools/Debuggers-IDEs-Editors/GDB.md",
     "Tools/Debuggers-IDEs-Editors/pwndbg-CheatSheet.pdf",
-    "Tools/C2/Sliver/Sliver-Cheatsheet.md",
     "Mobile/Android",
     "Mobile",
     "Images/shodan-cs-Joas-A-Santos-Linkedin.jpeg",

@@ -17,8 +17,9 @@ Typically you are trying to escape from a  container and general these escapes s
 ls -la / # And find:
 .dockerenv
 
-# Lack of processes
+# Lack of processes or dockerd
 ps aux 
+ps aux | grep dockerd
 
 # Docker Processes
 cat /proc/1/cgroup 

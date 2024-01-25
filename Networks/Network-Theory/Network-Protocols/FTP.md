@@ -1,8 +1,8 @@
 # FTP
 
 - Control Connection - connection request - Port 21 for commands 
-- Data Connection - post authenication, used for transferring data -  Port 20 for data
-- Varienty of  clients: Telnet, Filezilla (Common IoC),  CuteFTP
+- Data Connection - post authentication, used for transferring data -  Port 20 for data
+- Variety of  clients: Telnet, Filezilla (Common IoC),  CuteFTP
 ```bash
 wget -r ftp://[username]:[password]@[ip]/
 ftp ip
