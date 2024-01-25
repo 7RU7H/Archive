@@ -24,7 +24,11 @@ ps aux | grep dockerd
 # Docker Processes
 cat /proc/1/cgroup 
 cat /proc/1/cgroup | grep docker
+# Traverse proc to host
+cd /proc/1234/root/
 ```
+[dockerd Documentation](https://docs.docker.com/engine/reference/commandline/dockerd/)
+
 
 Check for mount misconfigurations. It is a misconfiguration if Docker container is running `--privileged`, meaning we are can mount to these disks as container does not need disks 
 ```bash
@@ -276,3 +280,4 @@ Netcat
 [seccomp](https://docs.docker.com/engine/security/seccomp/)
 [AppArmor](https://docs.docker.com/engine/security/apparmor/)
 [THM Container Vulnerabilities](https://tryhackme.com/room/containervulnerabilitiesDG)
+[dockerd Documentation](https://docs.docker.com/engine/reference/commandline/dockerd/)

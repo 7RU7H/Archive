@@ -8,48 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "cc1ac92034f5eed2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Virtualization/Docker/Docker-Hacking.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d323009ef095e93e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Wireless-Hacking/WIFI-Hacking.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "823936febfd5c2ef",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Reconnaissance/Active-Information-Gathering/RPC/RPCClient-Cheatsheet.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "a9824a3e1996d0d9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/C2/Sliver/Sliver-Cheatsheet.md",
+                "file": "Tools/Web-Applications-Attacking/Content-Discovery-Tools/FFUF-Cheatsheet.md",
                 "mode": "source",
                 "source": false
               }
@@ -121,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Virtualization/Docker/Docker-Hacking.md",
+                "file": "Tools/Web-Applications-Attacking/Content-Discovery-Tools/FFUF-Cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -138,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Virtualization/Docker/Docker-Hacking.md",
+                "file": "Tools/Web-Applications-Attacking/Content-Discovery-Tools/FFUF-Cheatsheet.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -161,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Virtualization/Docker/Docker-Hacking.md"
+                "file": "Tools/Web-Applications-Attacking/Content-Discovery-Tools/FFUF-Cheatsheet.md"
               }
             }
           },
@@ -194,13 +158,16 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "cc1ac92034f5eed2",
+  "active": "a9824a3e1996d0d9",
   "lastOpenFiles": [
+    "Virtualization/Docker/Docker-Hacking.md",
+    "Tools/C2/Sliver/Sliver-Cheatsheet.md",
+    "Reconnaissance/Active-Information-Gathering/RPC/RPCClient-Cheatsheet.md",
+    "Wireless-Hacking/WIFI-Hacking.md",
     "Tools/Network-Based/Packet-Analysis/Wireshark/Wireshark.md",
     "Networks/Network-Theory/Network-Protocols/FTP.md",
     "Development/Languages/Assembly/x86-Assembly.md",
     "Tools/Network-Based/Packet-Analysis/pyrdp.md",
-    "Wireless-Hacking/WIFI-Hacking.md",
     "Tools/Network-Based/Packet-Analysis/Wireshark/Decrypting-RDP-From-Pcap.md",
     "Exploitation/CVEs/CVE-2023-7028.md",
     "Development/Languages/C/Useful-C.md",
@@ -211,7 +178,6 @@
     "Reconnaissance/Active-Information-Gathering/RPC/RPC-Recon.md",
     "Software/Services/Databases/MYSQL/MySQL-Cheatsheet.md",
     "Reconnaissance/Active-Information-Gathering/DNS/DNS-Active-Recon.md",
-    "Reconnaissance/Active-Information-Gathering/RPC/RPCClient-Cheatsheet.md",
     "Reconnaissance/Active-Information-Gathering/Active-Recon.md",
     "Software/Operating-Systems/Linux/Linux-Commands/Core-Linux-Commands.md",
     "Development/Languages/Assembly/x86-64-Assembly.md",
@@ -220,8 +186,6 @@
     "Development/Languages/Perl/Useful_Perl.md",
     "Tools/Binary-Exploitation-Tools/Pwntools.md",
     "Development/Exploit-Development/angr.md",
-    "Development/Exploit-Development/pwndbg.md",
-    "Development/Exploit-Development/GEF.md",
     "Tools/Debuggers-IDEs-Editors/pwndbg-CheatSheet.pdf",
     "Mobile/Android",
     "Mobile",

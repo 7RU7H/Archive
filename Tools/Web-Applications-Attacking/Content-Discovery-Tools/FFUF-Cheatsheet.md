@@ -74,8 +74,9 @@ ffuf -w ids.txt:FUZZ -u http://$IP/admin/admin.php -X POST -d 'id=FUZZ' -H 'Cont
 
 [It might be better to use](https://github.com/nsonaniya2010/SubDomainizer)
 ```bash
-ffuf -u 'http://$IP/path/?FUZZ=1' -c -w /usr/share/seclists/Discovery/Web-Content/burp-parameter-names.txt -fw 39  
-ffuf -u 'http://$IP/path/?FUZZ=1' -c -w /usr/share/seclists/Discovery/Web-Content/raft-medium-words-lowercase.txt -fw 39
+ffuf -u 'http://$IP/path/?FUZZ=1' -c -w /usr/share/seclists/Discovery/Web-Content/burp-parameter-names.txt:FUZZ -fw 39  
+
+ffuf -u 'http://$IP/path/?FUZZ=1' -c -w /usr/share/seclists/Discovery/Web-Content/raft-medium-words-lowercase.txt:FUZZ -fw 39
 ```
 If the parameter accepts integers we can use `-w -` to read from STDOUT.
 ```bash
