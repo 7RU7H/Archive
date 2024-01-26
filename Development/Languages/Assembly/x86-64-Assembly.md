@@ -1,8 +1,11 @@
 # x86-64 Assembly
 
 
+## Utilities
 
-[[Metasploit]] has a `msf-nasm_shell` utility for creating correct opcodes for instructions.
+Doing is the important part, make you quality of life easier and more visual:
+- [https://shell-storm.org/online/Online-Assembler-and-Disassembler/](https://shell-storm.org/online/Online-Assembler-and-Disassembler)
+- [[Metasploit]] has a `msf-nasm_shell` utility for creating correct opcodes for instructions.
 
 ## Syntax
 
@@ -50,4 +53,6 @@ jb | Below(unsigned)
 
 
 ## References
+
 [THM intro to x86-64](https://tryhackme.com/room/introtox8664)
+[https://shell-storm.org/online/Online-Assembler-and-Disassembler/](https://shell-storm.org/online/Online-Assembler-and-Disassembler)

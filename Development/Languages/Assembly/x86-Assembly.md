@@ -3,6 +3,9 @@
 [Wikipedia]() *"**x86 assembly language** is the name for the family of [assembly languages](https://en.wikipedia.org/wiki/Assembly_language "Assembly language") which provide some level of [backward compatibility](https://en.wikipedia.org/wiki/Backward_compatibility "Backward compatibility") with CPUs back to the [Intel 8008](https://en.wikipedia.org/wiki/Intel_8008 "Intel 8008") microprocessor, which was launched in April 1972."*
 
 
+## Try [https://shell-storm.org/online/Online-Assembler-and-Disassembler/](https://shell-storm.org/online/Online-Assembler-and-Disassembler)
+
+
 Definitions:
 - Opcodes (operation code) denotes an assembly instruction represented by a mnemonic combined with a one or more operands, translates to one or more bytes called an opcode. 
 - Operands:
@@ -171,3 +174,4 @@ popad
 [THM x86 Architecture Overview Room](https://tryhackme.com/room/x8664arch)
 [Wikipedia: x86 Instruction `test`](https://en.wikipedia.org/wiki/TEST_(x86_instruction) s
 [System V Application Binary Interface—AMD64 Architecture Processor Supplement.](http://www.x86-64.org/documentation/abi.pdf)
+[https://shell-storm.org/online/Online-Assembler-and-Disassembler/](https://shell-storm.org/online/Online-Assembler-and-Disassembler)

@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "684f55e69545c691",
+        "id": "60d5be72ed5ceaad",
         "type": "tabs",
         "children": [
           {
-            "id": "a9824a3e1996d0d9",
+            "id": "afc8f3293f1f3df1",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tools/Web-Applications-Attacking/Content-Discovery-Tools/FFUF-Cheatsheet.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -56,7 +52,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "ftp",
+                "query": "pfx",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +61,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -85,7 +82,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/Web-Applications-Attacking/Content-Discovery-Tools/FFUF-Cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +98,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tools/Web-Applications-Attacking/Content-Discovery-Tools/FFUF-Cheatsheet.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +119,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Tools/Web-Applications-Attacking/Content-Discovery-Tools/FFUF-Cheatsheet.md"
-              }
+              "state": {}
             }
           },
           {
@@ -158,34 +151,34 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "a9824a3e1996d0d9",
+  "active": "afc8f3293f1f3df1",
   "lastOpenFiles": [
-    "Virtualization/Docker/Docker-Hacking.md",
+    "Persistence/Active-Directory-Persistence/AD-Persistence-Certificates.md",
+    "Exploitation/Windows/Active-Directory/AD-Certificate-Exploitation.md",
+    "Development/Languages/Assembly/x86-64-Assembly.md",
+    "Development/Languages/Assembly/x86-Assembly.md",
+    "Exploitation/CVEs/ACropalypse.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/Privilege-Escalation-Important-Linux-Locations.md",
+    "Persistence/Windows-Persistence/DLL-Hijacking.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
     "Tools/C2/Sliver/Sliver-Cheatsheet.md",
+    "Tools/Web-Applications-Attacking/Content-Discovery-Tools/FFUF-Cheatsheet.md",
+    "Reconnaissance/Active-Information-Gathering/LDAP/LDAP-Recon.md",
+    "Exploitation/Shells/Bind-And-Reverse-Shells-Defined.md",
+    "Exploitation/Shells/Reverse-Shells-Listing.md",
+    "Tools/Shells/Powercat-Cheatsheet.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/PowerSploit-Helpsheet.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Powershell-Versions.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation Bypassing-Contrained-Powershell.md",
+    "Virtualization/Docker/Docker-Hacking.md",
     "Reconnaissance/Active-Information-Gathering/RPC/RPCClient-Cheatsheet.md",
     "Wireless-Hacking/WIFI-Hacking.md",
     "Tools/Network-Based/Packet-Analysis/Wireshark/Wireshark.md",
     "Networks/Network-Theory/Network-Protocols/FTP.md",
-    "Development/Languages/Assembly/x86-Assembly.md",
     "Tools/Network-Based/Packet-Analysis/pyrdp.md",
     "Tools/Network-Based/Packet-Analysis/Wireshark/Decrypting-RDP-From-Pcap.md",
-    "Exploitation/CVEs/CVE-2023-7028.md",
-    "Development/Languages/C/Useful-C.md",
-    "Exploitation/Windows/Active-Directory/Ticket-Attacks/ASREP-Roasting.md",
-    "Tools/AD-Offensive/Impacket/Impacket-Cheatsheet.md",
-    "Reconnaissance/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
-    "Reconnaissance/Active-Information-Gathering/LDAP/LDAP-Recon.md",
-    "Reconnaissance/Active-Information-Gathering/RPC/RPC-Recon.md",
-    "Software/Services/Databases/MYSQL/MySQL-Cheatsheet.md",
-    "Reconnaissance/Active-Information-Gathering/DNS/DNS-Active-Recon.md",
-    "Reconnaissance/Active-Information-Gathering/Active-Recon.md",
-    "Software/Operating-Systems/Linux/Linux-Commands/Core-Linux-Commands.md",
-    "Development/Languages/Assembly/x86-64-Assembly.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
-    "Exploitation/Binary-Exploitation/Binary-Exploitation-Enumeration.md",
-    "Development/Languages/Perl/Useful_Perl.md",
-    "Tools/Binary-Exploitation-Tools/Pwntools.md",
-    "Development/Exploit-Development/angr.md",
     "Tools/Debuggers-IDEs-Editors/pwndbg-CheatSheet.pdf",
     "Mobile/Android",
     "Mobile",
