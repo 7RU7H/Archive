@@ -14,7 +14,7 @@ For the author this talk will augment further information throughout this reposi
 	- Red team objectives
 		- [[PowerSploit]]
 		- [[Empire]]
-			- Recon - with [[Useful_Powershell]]
+			- Recon - with [[PowerShell]]
 				- SPN Scanning as service discovery -> Data (User ID, Password&LastSet, LastLogon, SPNServers)
 					- SQL servers, instances ports
 					- Exchnage Client Access server

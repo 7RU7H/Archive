@@ -1,8 +1,8 @@
 # Useful_Rust
 
-[I am not affliated with Rust organization, btw.](https://docs.google.com/forms/d/e/1FAIpQLSdaM4pdWFsLJ8GHIUFIhepuq0lfTg_b0mJ-hvwPdHa4UTRaAg/viewform)
+[I am not affiliated with Rust organization, btw.](https://docs.google.com/forms/d/e/1FAIpQLSdaM4pdWFsLJ8GHIUFIhepuq0lfTg_b0mJ-hvwPdHa4UTRaAg/viewform)
 
-## Installation and Maintance
+## Installation and Maintenance
 
 Linux install
 ```bash
@@ -14,7 +14,7 @@ Updating
 rustup update
 ```
 
-The rustc, cargo, rustup tools are installed to the `~/.cargo/bin`. Beware that rustup attempts to consider your PATH variable, you may need to set it if it fails. To uninstall  use: `rustup self uninstall`.
+The `rustc`, `cargo`, `rustup` tools are installed to the `~/.cargo/bin`. Beware that `rustup` attempts to configure your `PATH` variable, you may need to set it if it fails. To uninstall  use: `rustup self uninstall`.
 
 ## Building Projects
 

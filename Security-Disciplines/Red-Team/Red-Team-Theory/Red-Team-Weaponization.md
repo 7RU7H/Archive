@@ -31,7 +31,7 @@ Visual Basic for Applications is programming language developed by Microsoft imp
 
 ## Powershell
 
-Powershell is an object-oriented programming language executed from the Dynamic Language Runtime (DLR) in .NET with some exceptions for legacy uses. Although less prevelent in modern Red Teaming as it is more easy to monitor than C sharp usage, it is still very powerful weapon of choice. See [[Useful_Powershell]] and [[Basic_Powershell]] for respective insights and glossary of usage.
+Powershell is an object-oriented programming language executed from the Dynamic Language Runtime (DLR) in .NET with some exceptions for legacy uses. Although less prevelent in modern Red Teaming as it is more easy to monitor than C sharp usage, it is still very powerful weapon of choice. See [[PowerShell]] and [[Basic_Powershell]] for respective insights and glossary of usage.
 
 ## C2
 

@@ -18,21 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "986958addd1c9ef4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "LLM-Malware.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -69,7 +56,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "pfx",
+                "query": "convert ",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -82,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 314.5
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -99,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "LLM-Malware.md",
+                "file": "Development/Languages/Rust/Rust.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "LLM-Malware.md",
+                "file": "Development/Languages/Rust/Rust.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "LLM-Malware.md"
+                "file": "Development/Languages/Rust/Rust.md"
               }
             }
           },
@@ -172,9 +158,16 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "986958addd1c9ef4",
+  "active": "ed8f63df71621be6",
   "lastOpenFiles": [
-    "LLM-Malware.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
+    "Development/Languages/PowerShell/Basic_Powershell.md",
+    "Development/Languages/PowerShell/PowerShell.md",
+    "Development/Languages/PowerShell/PowerShell-WinAPI-Interaction.md",
+    "Development/Languages/PowerShell/PowerShell-Verbs.md",
+    "Development/Languages/PowerShell/PowerShell-Event-Logging.md.md",
+    "Software/Operating-Systems/Linux/Linux-Commands/Linux-Hardware-Commands.md",
+    "Artificial-Intelligence/LLM-Malware.md",
     "Development/Languages/Rust/Rust.md",
     "Persistence/Active-Directory-Persistence/AD-Persistence-Certificates.md",
     "Exploitation/Windows/Active-Directory/AD-Certificate-Exploitation.md",
@@ -184,7 +177,6 @@
     "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
     "Post-Exploitation/Privilege-Escalation/Linux/Privilege-Escalation-Important-Linux-Locations.md",
     "Persistence/Windows-Persistence/DLL-Hijacking.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
     "Tools/C2/Sliver/Sliver-Cheatsheet.md",
     "Tools/Web-Applications-Attacking/Content-Discovery-Tools/FFUF-Cheatsheet.md",
@@ -194,12 +186,6 @@
     "Tools/Shells/Powercat-Cheatsheet.md",
     "Post-Exploitation/Privilege-Escalation/Windows/PowerSploit-Helpsheet.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Powershell-Versions.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation Bypassing-Contrained-Powershell.md",
-    "Virtualization/Docker/Docker-Hacking.md",
-    "Reconnaissance/Active-Information-Gathering/RPC/RPCClient-Cheatsheet.md",
-    "Wireless-Hacking/WIFI-Hacking.md",
-    "Tools/Network-Based/Packet-Analysis/Wireshark/Wireshark.md",
-    "Networks/Network-Theory/Network-Protocols/FTP.md",
     "Tools/Debuggers-IDEs-Editors/pwndbg-CheatSheet.pdf",
     "Mobile/Android",
     "Mobile",

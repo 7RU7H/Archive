@@ -1,5 +1,5 @@
 # Powershell Verbs
-For [[Useful_Powershell]] general use follow the link.
+For [[PowerShell]] general use follow the link.
 A listing of powershell verbs, to grep and lookup. [Reference](https://docs.microsoft.com/en-us/powershell/scripting/developer/cmdlet/approved-verbs-for-windows-powershell-commands?view=powershell-7.2)
 
 ## Common Verbs

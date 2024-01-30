@@ -61,7 +61,7 @@ MITRE as detections are great baseline for defense, but signature-based detectio
 
 Customization and knowing were the detection will be is the basis for successful bypassing [[AMSI-Bypassing]] and [[EDR-Bypass]]
 
-Powershell is still [[Useful_Powershell]]..as detections are fragile. Change the defaults.
+Powershell is still [[PowerShell]]..as detections are fragile. Change the defaults.
 
 Obsure LOLBins like follina attack with [mtds.exe](https://lolbas-project.github.io/lolbas/Binaries/Msdt/) can bypass detections.
 
