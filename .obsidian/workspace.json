@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "986958addd1c9ef4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "LLM-Malware.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -86,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Development/Languages/Rust/Rust.md",
+                "file": "LLM-Malware.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Development/Languages/Rust/Rust.md",
+                "file": "LLM-Malware.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Development/Languages/Rust/Rust.md"
+                "file": "LLM-Malware.md"
               }
             }
           },
@@ -159,8 +172,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "afc8f3293f1f3df1",
+  "active": "986958addd1c9ef4",
   "lastOpenFiles": [
+    "LLM-Malware.md",
+    "Development/Languages/Rust/Rust.md",
     "Persistence/Active-Directory-Persistence/AD-Persistence-Certificates.md",
     "Exploitation/Windows/Active-Directory/AD-Certificate-Exploitation.md",
     "Development/Languages/Assembly/x86-64-Assembly.md",
@@ -185,8 +200,6 @@
     "Wireless-Hacking/WIFI-Hacking.md",
     "Tools/Network-Based/Packet-Analysis/Wireshark/Wireshark.md",
     "Networks/Network-Theory/Network-Protocols/FTP.md",
-    "Tools/Network-Based/Packet-Analysis/pyrdp.md",
-    "Tools/Network-Based/Packet-Analysis/Wireshark/Decrypting-RDP-From-Pcap.md",
     "Tools/Debuggers-IDEs-Editors/pwndbg-CheatSheet.pdf",
     "Mobile/Android",
     "Mobile",
