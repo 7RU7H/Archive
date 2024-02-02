@@ -22,10 +22,13 @@ For links and description about those resources, which I continuously use and us
 
 #### AI 
 
+[[Authors-Opinions-LLM]]
+
 Any page containing any content that was aided in someway with AI will specify:
 - **Warning `QUANTITY` of this article were created with `< AI Model insert >` and human consultation of `< Relevant Documentation >`**
 
-
+- **UPDATE 2/2/2024** 
+	- I will not any add any more AI assisted content and will attempt to remove it were possible - But leave the Warning in the appendix that page *was once made with AI* 
 #### Future 
 
 Hopeful in the future once I have made a rest API to have it be nice and query-able. It will be public, open source contribution version that would include addition functionality to the API to merge and archive comparative versioning to allow individual to build there own out of information the added or learnt rather than just a big Wikipedia of stuff that is there that allows you to track and make the connections for yourself. This is due to my personal educational experience just making this.
