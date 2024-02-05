@@ -4,40 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "60d5be72ed5ceaad",
+        "id": "a6e15f019c165e53",
         "type": "tabs",
         "children": [
           {
-            "id": "b9769f9f5566d907",
+            "id": "65f0a2087a554658",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Web-Application-Hacking/Web-Exploits/File-Inclusion/File-Inclusion.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6fb33ea39593c5bd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Web-Application-Hacking/Web-Exploits/Path-Traversal/Path-Traversal.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "85c58a39cdf23d36",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Web-Application-Hacking/PHP-Wrappers.md",
+                "file": "Web-Application-Hacking/Web-Exploits/HTTP-Request-Smuggling/HTTP-Request-Smuggling.md",
                 "mode": "source",
                 "source": false
               }
@@ -109,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Web-Application-Hacking/Web-Exploits/File-Inclusion/File-Inclusion.md",
+                "file": "Web-Application-Hacking/Web-Exploits/HTTP-Request-Smuggling/HTTP-Request-Smuggling.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Web-Application-Hacking/Web-Exploits/File-Inclusion/File-Inclusion.md",
+                "file": "Web-Application-Hacking/Web-Exploits/HTTP-Request-Smuggling/HTTP-Request-Smuggling.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Web-Application-Hacking/Web-Exploits/File-Inclusion/File-Inclusion.md"
+                "file": "Web-Application-Hacking/Web-Exploits/HTTP-Request-Smuggling/HTTP-Request-Smuggling.md"
               }
             }
           },
@@ -182,10 +158,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b9769f9f5566d907",
+  "active": "65f0a2087a554658",
   "lastOpenFiles": [
-    "Web-Application-Hacking/Web-Exploits/Path-Traversal/Path-Traversal.md",
+    "Excalidraw/modern-web-applications-http-request-smuggling.excalidraw.md",
+    "Web-Application-Hacking/Web-Exploits/HTTP-Request-Smuggling/HTTP-Request-Smuggling.md",
+    "Development/Regular-Expressions.md",
+    "Web-Application-Hacking/Web-Exploits/HTTP-Request-Smuggling",
+    "Security-Disciplines/Cyberwarfare/Practice/Dirty-Games/Dirty-R-vs-B-Windows.md",
+    "Security-Disciplines/Cyberwarfare/Practice/Dirty-Games",
     "Web-Application-Hacking/PHP-Wrappers.md",
+    "Web-Application-Hacking/Web-Exploits/Path-Traversal/Path-Traversal.md",
     "Web-Application-Hacking/Web-Exploits/File-Inclusion/File-Inclusion.md",
     "Tools/Web-Applications-Attacking/Content-Discovery-Tools/Feroxbuster.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
@@ -206,10 +188,6 @@
     "Development/Languages/Rust/Rust.md",
     "Development/Languages/PowerShell/Basic_Powershell.md",
     "Development/Languages/PowerShell/PowerShell.md",
-    "Development/Languages/PowerShell/PowerShell-WinAPI-Interaction.md",
-    "Development/Languages/PowerShell/PowerShell-Verbs.md",
-    "Development/Languages/PowerShell/PowerShell-Event-Logging.md.md",
-    "Software/Operating-Systems/Linux/Linux-Commands/Linux-Hardware-Commands.md",
     "Tools/Debuggers-IDEs-Editors/pwndbg-CheatSheet.pdf",
     "Mobile/Android",
     "Mobile",
@@ -219,8 +197,6 @@
     "Development/Exploit-Development/gdb-cs.txt",
     "Development/Exploit-Development/temp",
     "Development/Exploit-Development/GEF.md.bak",
-    "Development/Exploit-Development",
-    "Tools/Reverse-Engineering/Untitled",
     "Images/relationship-between-false-positives-and-false-negatives-definitions-JM-WWHF-Talk.png",
     "Images/relationship-between-false-positives-and-false-negatives-JM-WWHF-Talk.png",
     "Images/DACL-abuse-dark.png",
