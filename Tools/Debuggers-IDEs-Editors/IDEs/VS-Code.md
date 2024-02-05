@@ -1,4 +1,4 @@
-# VS Code variants
+# VS Code and variants
 
 Not to be confused with [[Microsoft-Visual-Studios]] ... it hurts or [vscodium](https://vscodium.com/)
 

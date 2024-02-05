@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/Debuggers-IDEs-Editors/IDEs/VS-Code.md",
+                "file": "Development/Languages/Assembly/ARM-Assembly.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/Debuggers-IDEs-Editors/IDEs/VS-Code.md",
+                "file": "Development/Languages/Assembly/ARM-Assembly.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tools/Debuggers-IDEs-Editors/IDEs/VS-Code.md",
+                "file": "Development/Languages/Assembly/ARM-Assembly.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tools/Debuggers-IDEs-Editors/IDEs/VS-Code.md"
+                "file": "Development/Languages/Assembly/ARM-Assembly.md"
               }
             }
           },
@@ -160,6 +160,10 @@
   },
   "active": "65f0a2087a554658",
   "lastOpenFiles": [
+    "Development/Languages/Assembly/x86-64-Assembly.md",
+    "Development/Languages/Assembly/ARM-Assembly.md",
+    "Tools/Debuggers-IDEs-Editors/IDEs/VS-Code.md",
+    "Brain-Hacking/Philosphy/Thought-Experiments.md",
     "Web-Application-Hacking/Web-Exploits/HTTP-Request-Smuggling/HTTP-Request-Smuggling.md",
     "Excalidraw/modern-web-applications-http-request-smuggling.excalidraw.md",
     "Development/Regular-Expressions.md",
@@ -184,10 +188,6 @@
     "README.md",
     "Artificial-Intelligence/Authors-Opinions-LLM.md",
     "Web-Application-Hacking/Broken-Access-Control.md",
-    "Web-Application-Hacking/Web-Concepts/Web-Applications.md",
-    "Development/Languages/Rust/Rust.md",
-    "Development/Languages/PowerShell/Basic_Powershell.md",
-    "Development/Languages/PowerShell/PowerShell.md",
     "Tools/Debuggers-IDEs-Editors/pwndbg-CheatSheet.pdf",
     "Mobile/Android",
     "Mobile",
