@@ -33,7 +33,7 @@ ServerAlias kali.org
 DocumentRoot /srv/www.kali.org/www
 </VirtualHost>
 ```
-The above is an example of a miminal configuration of of a few `Directory` blocks, each specifying different behaviours for the server depending of the location the location of the file being served.
+The above is an example of a minimal configuration of of a few `Directory` blocks, each specifying different behaviours for the server depending of the location the location of the file being served.
 ```
 <Directory /var/www>
 Options Includes FollowSymLinks

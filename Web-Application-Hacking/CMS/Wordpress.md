@@ -11,12 +11,17 @@ Checklist:
 [Free 25 API requests per day](https://wpscan.com/pricing)
 
 ```bash
-wpscan --url $url -e --api-token $APIKEY # -o filename
+# -e not argument - default is vp,vt,tt,cb,dbe,u,m
+wpscan --url $url --rua -e --api-token $APIKEY # -o filename
 # optional - all plugins, themes, plus timthumbs
 # vp,vt,tt,cb,dbe,u,m
 ap at t tt dbe u m cb
 
+# Brute forcing Admin user
 wpscan --url $url --api-token $APIKEY -U admin -P /usr/share/wordlists/rockyou.txt
+
+# Weird TLS issues
+--disable-tls-checks
 ```
 
 

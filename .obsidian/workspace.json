@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "1a10d81688d4e1a6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Web-Application-Hacking/Methodologies/Walking-Web-Applications/Web-App-Administration-Consoles.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -56,7 +69,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "schta",
+                "query": "phpmyadmin",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +78,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -85,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Development/Languages/Assembly/ARM-Assembly.md",
+                "file": "Web-Application-Hacking/Methodologies/Walking-Web-Applications/Web-App-Administration-Consoles.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Development/Languages/Assembly/ARM-Assembly.md",
+                "file": "Web-Application-Hacking/Methodologies/Walking-Web-Applications/Web-App-Administration-Consoles.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Development/Languages/Assembly/ARM-Assembly.md"
+                "file": "Web-Application-Hacking/Methodologies/Walking-Web-Applications/Web-App-Administration-Consoles.md"
               }
             }
           },
@@ -158,10 +172,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "65f0a2087a554658",
+  "active": "1a10d81688d4e1a6",
   "lastOpenFiles": [
-    "Development/Languages/Assembly/x86-64-Assembly.md",
+    "Software/Services/Webservers/Apache/Apache2/Apache2.md",
+    "Web-Application-Hacking/CMS/Wordpress.md",
     "Development/Languages/Assembly/ARM-Assembly.md",
+    "Development/Languages/Assembly/x86-64-Assembly.md",
     "Tools/Debuggers-IDEs-Editors/IDEs/VS-Code.md",
     "Brain-Hacking/Philosphy/Thought-Experiments.md",
     "Web-Application-Hacking/Web-Exploits/HTTP-Request-Smuggling/HTTP-Request-Smuggling.md",
@@ -186,8 +202,6 @@
     "Exploitation/Shells/Reverse-Shells-Listing.md",
     "Exploitation/Shells/Encoded-Shell-Spawning.md",
     "README.md",
-    "Artificial-Intelligence/Authors-Opinions-LLM.md",
-    "Web-Application-Hacking/Broken-Access-Control.md",
     "Tools/Debuggers-IDEs-Editors/pwndbg-CheatSheet.pdf",
     "Mobile/Android",
     "Mobile",
