@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "a6e15f019c165e53",
+        "id": "a8ff5876c1581a95",
         "type": "tabs",
         "children": [
           {
-            "id": "65f0a2087a554658",
+            "id": "118a595fddcaf99f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Development/Languages/Assembly/ARM-Assembly.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1a10d81688d4e1a6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Web-Application-Hacking/Methodologies/Walking-Web-Applications/Web-App-Administration-Consoles.md",
+                "file": "Security-Disciplines/Surveillance/Surveillance.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -78,8 +65,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -99,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Web-Application-Hacking/Methodologies/Walking-Web-Applications/Web-App-Administration-Consoles.md",
+                "file": "Security-Disciplines/Surveillance/Surveillance.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Web-Application-Hacking/Methodologies/Walking-Web-Applications/Web-App-Administration-Consoles.md",
+                "file": "Security-Disciplines/Surveillance/Surveillance.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Web-Application-Hacking/Methodologies/Walking-Web-Applications/Web-App-Administration-Consoles.md"
+                "file": "Security-Disciplines/Surveillance/Surveillance.md"
               }
             }
           },
@@ -172,11 +158,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1a10d81688d4e1a6",
+  "active": "118a595fddcaf99f",
   "lastOpenFiles": [
+    "Excalidraw/surveillance-standardABCpattern.excalidraw.md",
+    "Security-Disciplines/Surveillance/Surveillance.md",
+    "Security-Disciplines/Meta-Team-View.md",
+    "Security-Disciplines/Static-Application-Security-Testing.md",
+    "Security-Disciplines/OPSEC-101.md",
+    "Security-Disciplines/Surveillance",
+    "Security-Disciplines/OPSEC",
+    "Web-Application-Hacking/Methodologies/Walking-Web-Applications/Web-App-Administration-Consoles.md",
+    "Development/Languages/Assembly/ARM-Assembly.md",
     "Software/Services/Webservers/Apache/Apache2/Apache2.md",
     "Web-Application-Hacking/CMS/Wordpress.md",
-    "Development/Languages/Assembly/ARM-Assembly.md",
     "Development/Languages/Assembly/x86-64-Assembly.md",
     "Tools/Debuggers-IDEs-Editors/IDEs/VS-Code.md",
     "Brain-Hacking/Philosphy/Thought-Experiments.md",
@@ -196,12 +190,6 @@
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Scripts-And-Tools.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
     "Post-Exploitation/Data-Ex&Infiltration/Data-Exfiltration/Data-Exfiltration-Over-SMB.md",
-    "Post-Exploitation/Data-Ex&Infiltration/Data-Exfiltration/Data-Exfiltration-Over-HTTP-and-HTTPS.md",
-    "Persistence/Windows-Persistence/DLL-Hijacking.md",
-    "Exploitation/Windows/Active-Directory/AD-User-Exploitation.md",
-    "Exploitation/Shells/Reverse-Shells-Listing.md",
-    "Exploitation/Shells/Encoded-Shell-Spawning.md",
-    "README.md",
     "Tools/Debuggers-IDEs-Editors/pwndbg-CheatSheet.pdf",
     "Mobile/Android",
     "Mobile",
@@ -209,8 +197,6 @@
     "Tools/Linux",
     "Development/Exploit-Development/gdb-cs.txt~",
     "Development/Exploit-Development/gdb-cs.txt",
-    "Development/Exploit-Development/temp",
-    "Development/Exploit-Development/GEF.md.bak",
     "Images/relationship-between-false-positives-and-false-negatives-definitions-JM-WWHF-Talk.png",
     "Images/relationship-between-false-positives-and-false-negatives-JM-WWHF-Talk.png",
     "Images/DACL-abuse-dark.png",
