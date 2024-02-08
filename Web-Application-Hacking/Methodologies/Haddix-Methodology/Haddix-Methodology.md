@@ -1,7 +1,6 @@
 # Bug Hunter Methodology 
 For [[Application-Analysis]] by Jason Haddix follow the aforementioned link.
 Link all talks
-[]()
 
 # Disclaimer
 This is just my notes of the talks mentioned above. These notes were taken to further my research in bug hunting and ethical hacking.
@@ -13,7 +12,7 @@ The Web application hacker's handbook 2
 
 
 # Discovery
-Go the road less traveled:
+Go the road less travelled:
 1. subdomains
 1. obscure webservers
 1. find acquisitions especially new acquisition 
@@ -23,7 +22,7 @@ Go the road less traveled:
 
 # OSINT
 
-recon-ng
+[[Recon-ng]]
 
 READ previous bug bounties on a specific company:
 they appear in lots of places and gives you understanding about the targe

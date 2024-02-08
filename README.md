@@ -4,13 +4,13 @@
 
 Hacking Methodology, Cheatsheets, Conceptual Breakdowns - Now with pages that are spellchecked! 
 
-This is a continuous life-long project as the curated answer to the rise of LLMs and its evolution to create something entire human curated and referenced. Any usage of any products on a page-per-page basis will be indicated. If the said product does not provide a reference it won't by default be used.  Very open to feedback. 
+This is a continuous life-long project as the curated answer to the rise of LLMs and its evolution to create something entire human curated and referenced. Any usage of any products on a page-per-page basis will be indicated. If the said product does not provide a reference it won't by default be used. Very open to feedback. 
 
 H.D. Moore: *“If you don’t think you’re a n00b, you’re not trying hard enough.”*
 
 See the [[About]] page for historic dumping of everything that was on this page as well a history of this repository. Among the issues of the author dyslexia is one that is high on the list and although Obsidian introduced a spellchecker in 2023, but it must have be a hard year and half of anyone reading the contents of this repository. Consider [[Alternate-Resources]] page that referenced throughout and support them please!
 
-To disambiguate pages that purely just the notes of talks, videos, lectures, podcasts, etc the file is prepended with the capitalised TALK- 
+To disambiguate pages that purely just the notes of talks, videos, lectures, podcasts, etc the file is prepended with the capitalised `TALK-`.
 
 #### For A Contents Page
 

@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "a8ff5876c1581a95",
+        "id": "63431d93deaac6b7",
         "type": "tabs",
         "children": [
           {
-            "id": "118a595fddcaf99f",
+            "id": "6a3bcb697d191cf4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Security-Disciplines/Surveillance/Surveillance.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Security-Disciplines/Surveillance/Surveillance.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Security-Disciplines/Surveillance/Surveillance.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Security-Disciplines/Surveillance/Surveillance.md"
+                "file": "README.md"
               }
             }
           },
@@ -158,10 +158,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "118a595fddcaf99f",
+  "active": "6a3bcb697d191cf4",
   "lastOpenFiles": [
-    "Excalidraw/surveillance-standardABCpattern.excalidraw.md",
+    "Web-Application-Hacking/Methodologies/Haddix-Methodology/Haddix-Methodology.md",
     "Security-Disciplines/Surveillance/Surveillance.md",
+    "Excalidraw/surveillance-standardABCpattern.excalidraw.md",
     "Security-Disciplines/Meta-Team-View.md",
     "Security-Disciplines/Static-Application-Security-Testing.md",
     "Security-Disciplines/OPSEC-101.md",
@@ -189,7 +190,6 @@
     "Exploitation/Windows/Potato-Exploits.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Scripts-And-Tools.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
-    "Post-Exploitation/Data-Ex&Infiltration/Data-Exfiltration/Data-Exfiltration-Over-SMB.md",
     "Tools/Debuggers-IDEs-Editors/pwndbg-CheatSheet.pdf",
     "Mobile/Android",
     "Mobile",
