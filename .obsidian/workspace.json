@@ -4,31 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "ba20c97d58ba145e",
+        "id": "767cccd34de90aaa",
         "type": "tabs",
         "children": [
           {
-            "id": "e78b6bfd7b4c18be",
+            "id": "1c474100da7d9859",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Hardware/Hardware-Hacking/Firmware/Firmware-Extraction.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9006fabd940b7921",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Hardware/Protocols/JTAG.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -97,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Hardware/Hardware-Hacking/Firmware/Firmware-Extraction.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Hardware/Hardware-Hacking/Firmware/Firmware-Extraction.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Hardware/Hardware-Hacking/Firmware/Firmware-Extraction.md"
-              }
+              "state": {}
             }
           },
           {
@@ -170,11 +150,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e78b6bfd7b4c18be",
+  "active": "1c474100da7d9859",
   "lastOpenFiles": [
+    "Hardware/Hardware-Hacking/Firmware/Firmware-Extraction.md",
     "Hardware/Hardware-Hacking/Firmware/Firmware-Reversing.md",
     "Hardware/Protocols/JTAG.md",
-    "Hardware/Hardware-Hacking/Firmware/Firmware-Extraction.md",
     "Hardware/Protocols/I2C.md",
     "Hardware/Protocols/SPI.md",
     "Hardware/Protocols/USART.md",

@@ -71,7 +71,7 @@ JTAG
 opencd -f $configFile
 ```
 
-Binwalk the dumped firmware and extract
+`binwalk` the dumped firmware and extract
 ```bash
 binwalk -e $dump.bin
 ```
@@ -88,7 +88,10 @@ Either you have GUI = OS or you need [[IDA]] pro, Radare [[Radare2-Cheatsheet]],
 	- [[JTAG]] is the interface of choice
 	- Every vendor has non-version of [[JTAG]] adaptor and slightly differ
 
-Comments are then made regarding [[Backdoors]] firmware, firmware extraction in spoilage 
+Comments are then made regarding [[Backdoors]] firmware, firmware extraction in potential espionage, IP theft and reversing
+```bash
+flashrom -w $myBackdoorfirmware
+```
 ## References
 
 [DEF CON 24 - Hardware Hacking Village - Matt DuHarte - Basic Firmware Extraction](https://www.youtube.com/watch?v=Kxvpbu9STU4)
