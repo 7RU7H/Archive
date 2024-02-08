@@ -9,22 +9,7 @@ What you need as a beginner:
 - Shikra / Bus Pirate (recommendation are from 2016)
 - Microscope with Trinocular for pictures - good for reporting and legal issues
 
-
-1. OSINT the product and collection the manuals
-2. Vulnerability Analysis
-	1. How hard is it to open
-3.  What is the OS of the device
-4. Label the chips 
-5. Dork the previously acquired information
-	 - If it is a 
-		 - PCB like a Bus pirate or Shikra - cheap
-		 - laptop BIOS Data Prog - expensive
-6. Find the flash memory - branching depending on objectives
-	- Some devices do not have serial ports you can attach to and get root
-	- [[Rootkits]] exist 
-		- If you are doing [[Digital-Forensics]] the turning it on and extracting it when running is different - consider a Faraday cage
-		- We only want the Firmware that get booted to read or to write our own firmware to a device
-7. Connect to chip, use correct protocol (Either individual wire - tricky or correct clip (beware legal requirements for using the proprietor clips)) or heat gun of the chip and put in PCB that can read the chip (these will be able to read variants of the same chip there are lots))
+- [[Hardware-Protocols]], but you are not a electrical engineering you do not temperatures, etc
 	- [[JTAG]] - Pass-through mode except in one chain (step through to decide which you want to talk to)
 		- Up to 5 signals are used
 			- TDI (Test Data In)
@@ -47,10 +32,51 @@ What you need as a beginner:
 			- MOSI - Master Output, Slave input
 			- MISO - Master Input, Slave output
 			- SS - Select active chip slave
-8. With Bus Pirate plug in to USB 
+
+1. OSINT the product and collection the manuals
+2. Vulnerability Analysis
+	1. How hard is it to open
+3.  What is the OS of the device
+4. Label the chips 
+5. Dork the previously acquired information
+	 - If it is a 
+		 - PCB like a Bus pirate or Shikra - cheap
+		 - laptop BIOS Data Prog - expensive
+6. Find the flash memory - branching depending on objectives
+	- Some devices do not have serial ports you can attach to and get root
+	- [[Rootkits]] exist 
+		- If you are doing [[Digital-Forensics]] the turning it on and extracting it when running is different - consider a Faraday cage
+		- We only want the Firmware that get booted to read or to write our own firmware to a device
+7. Connect to chip
+	- UIse correct protocol (Either individual wire - tricky
+	- Correct IC test clip (beware legal requirements for using the proprietor clips)) 
+	- Power through
+		- Turn device on
+		- Bus Pirate plug in to USB 
+	- Smaller form factor chips
+		- Use microscope
+		- Either
+			- Solder wires - less than 4 inches to chip of **same length**
+			- Desolder off the chip and put in Flash socket Board that can read the chip (these will be able to read variants of the same chip there are lots))
 9. Use  mimicon/screen to get CLI
 10. Dump or Write new firmware to flash :)
 
+SPI
+```bash
+flashrom -p $adpatername -r spidump.bin
+```
+
+JTAG
+```bash
+opencd -f $configFile
+```
+
+Binwalk the dumped firmware and extract
+```bash
+binwalk -e $dump.bin
+```
+
+Either you have GUI = OS or you need [[IDA]] pro, Radare [[Radare2-Cheatsheet]], `strings`.
 
 - If your problem is unlabelled connector on board
 	- JTAGulator 

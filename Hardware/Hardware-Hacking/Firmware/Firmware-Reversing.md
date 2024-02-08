@@ -2,7 +2,7 @@
 
 [Firmware](https://en.wikipedia.org/wiki/Firmware)  is class of software that provides low-level control for device specific hardware. Ascher Opler coined the term _firmware_ in a 1967 _[Datamation](https://en.wikipedia.org/wiki/Datamation "Datamation")_ article as an intermediary term between hardware and software. Firmware is held in non-volatile memory such as ROM, EPROM, EEPROM and flash memory. 
 
-Motherboard and GPU BIOS, Storage Drives (HDD,SSD ODD), Embedded devices, IoT devices, Autombile computers
+Motherboard and GPU BIOS, Storage Drives (HDD,SSD ODD), Embedded devices, IoT devices, Automobile computers
 
 [[IoT-Device-Hacking]]
 
