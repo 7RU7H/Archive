@@ -6,7 +6,6 @@ Motherboard and GPU BIOS, Storage Drives (HDD,SSD ODD), Embedded devices, IoT de
 
 [[IoT-Device-Hacking]]
 
-
 Firmware reverse engineering is extracting the original code from the firmware binary file for analysis. 
 
 Potential Steps:
@@ -39,7 +38,7 @@ Is firmware encrypted?
 binwalk -E -N $encryptedFirmware.gpg
 ```
 
-Find Encryptiuon Keys Post-Firmware-Extraction
+Find Encryption Keys Post-Firmware-Extraction
 ```bash
 grep -ir key
 grep -ir paraphase # and other keys relative to encryptiong software
@@ -54,6 +53,8 @@ gpg --import $path/private.key
 gpg --list-secret-keys 
 gpg $firmware.gpg
 ```
+
+## [[Firmware-Extraction]]
 
 ## References
 

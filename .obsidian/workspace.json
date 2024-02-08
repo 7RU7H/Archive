@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Hardware/Hardware-Hacking/Firmware-Extraction.md",
+                "file": "Hardware/Hardware-Hacking/Firmware/Firmware-Reversing.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Hardware/Hardware-Hacking/Firmware-Extraction.md",
+                "file": "Hardware/Hardware-Hacking/Firmware/Firmware-Reversing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Hardware/Hardware-Hacking/Firmware-Extraction.md",
+                "file": "Hardware/Hardware-Hacking/Firmware/Firmware-Reversing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Hardware/Hardware-Hacking/Firmware-Extraction.md"
+                "file": "Hardware/Hardware-Hacking/Firmware/Firmware-Reversing.md"
               }
             }
           },
@@ -173,7 +173,7 @@
   "active": "e78b6bfd7b4c18be",
   "lastOpenFiles": [
     "Hardware/Protocols/JTAG.md",
-    "Hardware/Hardware-Hacking/Firmware-Extraction.md",
+    "Hardware/Hardware-Hacking/Firmware/Firmware-Extraction.md",
     "Hardware/Protocols/I2C.md",
     "Hardware/Protocols/SPI.md",
     "Hardware/Protocols/USART.md",
