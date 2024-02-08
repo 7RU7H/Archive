@@ -7,7 +7,7 @@ Cloud is a capacity that exposes some set of resources
 
 
 Agility - Different types and amounts requirements and services as technology evolves
-Consumption Based - High avaliability, Disaster Recovery 
+Consumption Based - High availability, Disaster Recovery 
 Scalability - Both Scaling up and down depending on need
 
 
@@ -21,7 +21,7 @@ Public Cloud
 	Internet
 	Consumption Based
 	Multi Location - Different customers
-Private Cloud - On premises infrastucture to host capacity  
+Private Cloud - On premises infrastructure to host capacity  
 	Capital Expenditure - Assets with lifespan that is for upfront
 	Block-Level Storage for persistent Data
 Hybrid Cloud

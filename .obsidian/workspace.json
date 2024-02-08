@@ -4,16 +4,28 @@
     "type": "split",
     "children": [
       {
-        "id": "63431d93deaac6b7",
+        "id": "ba20c97d58ba145e",
         "type": "tabs",
         "children": [
           {
-            "id": "6a3bcb697d191cf4",
+            "id": "e78b6bfd7b4c18be",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "Hardware/Hardware-Hacking/Firmware-Extraction.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9006fabd940b7921",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Hardware/Protocols/JTAG.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "Hardware/Hardware-Hacking/Firmware-Extraction.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "Hardware/Hardware-Hacking/Firmware-Extraction.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "Hardware/Hardware-Hacking/Firmware-Extraction.md"
               }
             }
           },
@@ -158,8 +170,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6a3bcb697d191cf4",
+  "active": "e78b6bfd7b4c18be",
   "lastOpenFiles": [
+    "Hardware/Protocols/JTAG.md",
+    "Hardware/Hardware-Hacking/Firmware-Extraction.md",
+    "Hardware/Protocols/I2C.md",
+    "Hardware/Protocols/SPI.md",
+    "Hardware/Protocols/USART.md",
+    "Hardware/Protocols/Hardware-Protocols.md",
+    "Hardware/Protocols",
+    "Cloud/Cloud-Computing-Defined.md",
+    "README.md",
     "Web-Application-Hacking/Methodologies/Haddix-Methodology/Haddix-Methodology.md",
     "Security-Disciplines/Surveillance/Surveillance.md",
     "Excalidraw/surveillance-standardABCpattern.excalidraw.md",
@@ -182,21 +203,12 @@
     "Security-Disciplines/Cyberwarfare/Practice/Dirty-Games/Dirty-R-vs-B-Windows.md",
     "Security-Disciplines/Cyberwarfare/Practice/Dirty-Games",
     "Web-Application-Hacking/PHP-Wrappers.md",
-    "Web-Application-Hacking/Web-Exploits/Path-Traversal/Path-Traversal.md",
-    "Web-Application-Hacking/Web-Exploits/File-Inclusion/File-Inclusion.md",
-    "Tools/Web-Applications-Attacking/Content-Discovery-Tools/Feroxbuster.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/SePrivileges/SeDebugPrivilege.md",
-    "Exploitation/Windows/Potato-Exploits.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Scripts-And-Tools.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
     "Tools/Debuggers-IDEs-Editors/pwndbg-CheatSheet.pdf",
     "Mobile/Android",
     "Mobile",
     "Images/shodan-cs-Joas-A-Santos-Linkedin.jpeg",
     "Tools/Linux",
     "Development/Exploit-Development/gdb-cs.txt~",
-    "Development/Exploit-Development/gdb-cs.txt",
     "Images/relationship-between-false-positives-and-false-negatives-definitions-JM-WWHF-Talk.png",
     "Images/relationship-between-false-positives-and-false-negatives-JM-WWHF-Talk.png",
     "Images/DACL-abuse-dark.png",
