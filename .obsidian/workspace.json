@@ -11,8 +11,12 @@
             "id": "1c474100da7d9859",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Web-Application-Hacking/Web-Exploits/HTTP-Request-Smuggling/HTTP-Request-Smuggling.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Web-Application-Hacking/Web-Exploits/HTTP-Request-Smuggling/HTTP-Request-Smuggling.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Web-Application-Hacking/Web-Exploits/HTTP-Request-Smuggling/HTTP-Request-Smuggling.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Web-Application-Hacking/Web-Exploits/HTTP-Request-Smuggling/HTTP-Request-Smuggling.md"
+              }
             }
           },
           {
@@ -152,6 +160,8 @@
   },
   "active": "1c474100da7d9859",
   "lastOpenFiles": [
+    "Excalidraw/httprequestsmugglingalidraw.md",
+    "Web-Application-Hacking/Web-Exploits/HTTP-Request-Smuggling/HTTP-Request-Smuggling.md",
     "Hardware/Hardware-Hacking/Firmware/Firmware-Extraction.md",
     "Hardware/Hardware-Hacking/Firmware/Firmware-Reversing.md",
     "Hardware/Protocols/JTAG.md",
@@ -177,11 +187,9 @@
     "Development/Languages/Assembly/x86-64-Assembly.md",
     "Tools/Debuggers-IDEs-Editors/IDEs/VS-Code.md",
     "Brain-Hacking/Philosphy/Thought-Experiments.md",
-    "Web-Application-Hacking/Web-Exploits/HTTP-Request-Smuggling/HTTP-Request-Smuggling.md",
     "Excalidraw/modern-web-applications-http-request-smuggling.excalidraw.md",
     "Development/Regular-Expressions.md",
     "Web-Application-Hacking/Web-Exploits/HTTP-Request-Smuggling",
-    "Security-Disciplines/Cyberwarfare/Practice/Dirty-Games/Dirty-R-vs-B-Windows.md",
     "Security-Disciplines/Cyberwarfare/Practice/Dirty-Games",
     "Tools/Debuggers-IDEs-Editors/pwndbg-CheatSheet.pdf",
     "Mobile/Android",
