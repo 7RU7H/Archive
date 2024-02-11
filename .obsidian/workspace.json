@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Web-Application-Hacking/Web-Exploits/HTTP-Request-Smuggling/HTTP-Request-Smuggling.md",
+                "file": "Virtualization/Docker/Container-Hardening.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 314.5
+    "width": 661.5
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Web-Application-Hacking/Web-Exploits/HTTP-Request-Smuggling/HTTP-Request-Smuggling.md",
+                "file": "Virtualization/Docker/Container-Hardening.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Web-Application-Hacking/Web-Exploits/HTTP-Request-Smuggling/HTTP-Request-Smuggling.md",
+                "file": "Virtualization/Docker/Container-Hardening.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Web-Application-Hacking/Web-Exploits/HTTP-Request-Smuggling/HTTP-Request-Smuggling.md"
+                "file": "Virtualization/Docker/Container-Hardening.md"
               }
             }
           },
@@ -160,8 +160,10 @@
   },
   "active": "1c474100da7d9859",
   "lastOpenFiles": [
-    "Excalidraw/httprequestsmugglingalidraw.md",
+    "Cloud/Azure/Azure-Administration/Azure-Manage-Identities-And-Governance/Azure-Administration-Azure-Roles-And-RBAC.md",
+    "Virtualization/Docker/Container-Hardening.md",
     "Web-Application-Hacking/Web-Exploits/HTTP-Request-Smuggling/HTTP-Request-Smuggling.md",
+    "Excalidraw/httprequestsmugglingalidraw.md",
     "Hardware/Hardware-Hacking/Firmware/Firmware-Extraction.md",
     "Hardware/Hardware-Hacking/Firmware/Firmware-Reversing.md",
     "Hardware/Protocols/JTAG.md",
@@ -187,8 +189,6 @@
     "Development/Languages/Assembly/x86-64-Assembly.md",
     "Tools/Debuggers-IDEs-Editors/IDEs/VS-Code.md",
     "Brain-Hacking/Philosphy/Thought-Experiments.md",
-    "Excalidraw/modern-web-applications-http-request-smuggling.excalidraw.md",
-    "Development/Regular-Expressions.md",
     "Web-Application-Hacking/Web-Exploits/HTTP-Request-Smuggling",
     "Security-Disciplines/Cyberwarfare/Practice/Dirty-Games",
     "Tools/Debuggers-IDEs-Editors/pwndbg-CheatSheet.pdf",
