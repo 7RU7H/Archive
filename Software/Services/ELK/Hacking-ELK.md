@@ -13,7 +13,7 @@ in input, filter and output modules. The service gets interesting when having co
 
 `adm` a group of [[Linux-Users-And-Groups]] is allowed to read these logs; depending on the context of the file system writablity is is potentially a vector escalation - see [[Privilege-Escalation]]. 
 
-Some versions of Logstash vulerable to [[Log4J]]
+Some versions of Logstash vulerable to [[Log4Shell]]
 
 ## References
 

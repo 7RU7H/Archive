@@ -1,5 +1,6 @@
 # Container Hardening
 
+[[Docker]] uses the container abstraction to run applications with only the utilities that the application needs on top of a host OS. Hardening containers is important to prevent resource mismanagement, [[Docker-Hacking]] and your containers being vulnerable.
 
 #### Review and Audit Docker Images
 
@@ -9,6 +10,14 @@ How?
 - Check the Docker file
 - [Dive](https://github.com/wagoodman/dive) can aid in reverse engineering a Docker image by inspecting what is executed and changed at each layer of the image during the build process.
 
+Vulnerability scanning with:
+- [Grype](https://github.com/anchore/grype)
+```bash
+# Vulnerability scan:
+grype $imagename --scope all-layers
+# Scan exported container filesystem:
+grype /path/to/image.tar 
+```
 #### Docker Daemon
 
 **If you must expose the Docker Daemon** use secure communication to prevent unauthorised access
@@ -89,7 +98,6 @@ docker run --rm -it --security-opt seccomp=/home/cmnatic/container1/seccomp/prof
 ```
 
 #### AppArmor
-
 
 [AppArmor](https://apparmor.net/) *"AppArmor is an effective and easy-to-use Linux application security system. AppArmor proactively protects the operating system and applications from external or internal threats, even zero-day attacks, by enforcing good behavior and preventing both known and unknown application flaws from being exploited. AppArmor supplements the traditional Unix discretionary access control (DAC) model by providing mandatory access control (MAC). It has been included in the mainline Linux kernel since version 2.6.36 and its development has been supported by Canonical since 2009."*
 
@@ -175,3 +183,5 @@ This is from [THM Container Hardening Room](https://tryhackme.com/room/container
 [seccomp](https://man7.org/linux/man-pages/man2/seccomp.2.html)
 [Docker Scout tool](https://github.com/docker/scout-cli) 
 [Docker Scout documentation](https://docs.docker.com/scout/) 
+ [Dive](https://github.com/wagoodman/dive)
+ [Grype](https://github.com/anchore/grype)

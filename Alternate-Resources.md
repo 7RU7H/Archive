@@ -10,11 +10,14 @@ This repository stands on and shadows amongst absolute giants in the various com
 
 #### BHIS
 
-[Black Hills Information Security (BHIS)](https://www.blackhillsinfosec.com/) is security company and educator that is renowned in the industry and for InfoSec people generally for trying to elevate the standard of services and education for customers and hackers alike. And is related to [AntiSyphon Training](https://www.google.com/search?client=firefox-b-e&q=AntiSyphon)  *is here to disrupt the traditional training industry by providing high-quality and cutting-edge education to everyone, regardless of their financial position*. And there own very difficult geographically to get to cybersecurity conference [wildwesthackinfest](https://wildwesthackinfest.com/). All easily and freely available on YouTube:
+[Black Hills Information Security (BHIS)](https://www.blackhillsinfosec.com/) is security company and educator that is renowned in the industry and for InfoSec people generally for trying to elevate the standard of services and education for customers and hackers alike. And is related to [AntiSyphon Training](https://www.google.com/search?client=firefox-b-e&q=AntiSyphon)  *is here to disrupt the traditional training industry by providing high-quality and cutting-edge education to everyone, regardless of their financial position*. And there own very difficult geographically to get to Cyber Security conference [wildwesthackinfest](https://wildwesthackinfest.com/). All easily and freely available on YouTube:
 - [YouTube - WildWestHackinFest](https://m.youtube.com/@WildWestHackinFest/channels?view=49&shelf_id=7) 
 - [YouTube - BlackHillsInformationSecurity](https://www.youtube.com/c/BlackHillsInformationSecurity)
 - [YouTube - Antisyphon Training](https://www.youtube.com/channel/UCkFKiCm7dD0gsB4jqIdCuRQ)
 
+#### DistroTube
+
+[DistroTube - YoutTube](https://www.youtube.com/@DistroTube) *"DistroTube (DT) is a YouTube channel started by me, Derek Taylor (also DT), in October 2017. Topics include Linux distro reviews, news, opinion and tutorials. Some of my favorite topics include the command line, tiling window managers, vim and emacs, free software and open source software."* This channel of depth and width of Linux content that is generally Arch-based and very informative.
 #### The Hacker Recipes
 
 [thehacker.recipes](https://www.thehacker.recipes/) *is aimed at providing technical guides on various hacking topics. The most advanced topics are Active Directory and Web services.* A Gitbook that has possible the most up-to-date resources regard Active Directory Attacks that include quality visual and examples for both Linux and Windows tooling.  
@@ -24,7 +27,7 @@ The Awesome HackTricks - probably the best resource on Ethical Hacking and Pente
 
 #### Harmj0y
 
-[blog.harmj0y.net](https://blog.harmj0y.net/) is the blog of 
+[blog.harmj0y.net](https://blog.harmj0y.net/) is the blog of 2010-2020 defining exploitation of Active Directory.
 
 
 #### Ippsec.rocks and Ippsec's YouTube
@@ -49,19 +52,13 @@ A good SysAdmin, DevOps, Cloud Engineer Cheatsheets at: [lzone.de Cheatsheets](h
 
 #### Snovvcrash
 
-
 https://ppn.snovvcrash.rocks/
+
+
+#### The Linux cast
+
+[The Linux Cast - Youtube](https://www.youtube.com/@TheLinuxCast) for all your *"Daily FOSS related content, weekly Linux podcasts, and more coming at you from an eternal Linux noob."* This is great Linux YouTube channel that is very helpful for decision making on the details of Linux that you may need help with. The content is very user friendly and is only about Linux, no rabbitholes.   
 
 #### xct 
 
-
-
-## References
-
-[HackTricks](https://book.hacktricks.xyz/welcome/readme)
-[lzone.de Cheatsheets](https://lzone.de/cheat-sheet.html)
-[IppSec - YouTube](https://www.youtube.com/@ippsec)
-[IppSec - Search](https://ippsec.rocks/)
-[Portswigger](https://portswigger.net/)
-[Training | Microsoft Learn](https://learn.microsoft.com/en-us/training/)
-[Technical documentation | Microsoft Learn](https://learn.microsoft.com/en-us/docs/) 
+[xct](https://github.com/xct) One of the Top HackTheBox players, OSEE, OSCE3, CRTO, and CISSP qualified, graduated with an MSc in Applied IT Security. Founder and content creator of [vulnlab](https://www.vulnlab.com/) and [vulnlab - YouTube channel](https://www.youtube.com/playlist?list=PLPBVZbjvnjVmAyAHZ2CRg-92zoH5z_386), Visit [vulndev.io](https://vulndev.io/) for personal blog, which like the Youtube Channel publishes some Writeups for HackTheBox and TryHackme.

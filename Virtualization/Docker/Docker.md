@@ -39,18 +39,18 @@ docker ps -a # incuded stopped
 docker pull $package:$tag
 # image command for image manage
 docker image
-build # Build an image from a Dockerfile
-history # Show the history of an image
-import # Import the contents from a tarball to create a filesystem image
-inspect # Display detailed information on one or more images
-load # Load an image from a tar archive or STDIN
-ls # List images
-prune # Remove unused images
-pull # Download an image from a registry
-push # Upload an image to a registry
-rm # Remove one or more images
-save # Save one or more images to a tar archive (streamed to STDOUT by default)
-tag # Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE
+docker image build # Build an image from a Dockerfile
+docker image history # Show the history of an image
+docker image import # Import the contents from a tarball to create a filesystem image
+docker image inspect # Display detailed information on one or more images
+docker image load # Load an image from a tar archive or STDIN
+docker image ls # List images
+docker image prune # Remove unused images
+docker image pull # Download an image from a registry
+docker image push # Upload an image to a registry
+docker image rm # Remove one or more images
+docker image save # Save one or more images to a tar archive (streamed to STDOUT by default)
+docker image tag # Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE
 
 
 # Docker daemon stats and information
