@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "Exploitation/CVEs/Log4J.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "56a3a0a28ca0a549",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "Virtualization/Docker/Container-Hardening.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -69,7 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 661.5
+    "width": 491.5
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -158,10 +171,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1c474100da7d9859",
+  "active": "56a3a0a28ca0a549",
   "lastOpenFiles": [
-    "Cloud/Azure/Azure-Administration/Azure-Manage-Identities-And-Governance/Azure-Administration-Azure-Roles-And-RBAC.md",
+    "Exploitation/CVEs/Log4J.md",
     "Virtualization/Docker/Container-Hardening.md",
+    "Cloud/Azure/Azure-Administration/Azure-Manage-Identities-And-Governance/Azure-Administration-Azure-Roles-And-RBAC.md",
     "Web-Application-Hacking/Web-Exploits/HTTP-Request-Smuggling/HTTP-Request-Smuggling.md",
     "Excalidraw/httprequestsmugglingalidraw.md",
     "Hardware/Hardware-Hacking/Firmware/Firmware-Extraction.md",
@@ -188,7 +202,6 @@
     "Web-Application-Hacking/CMS/Wordpress.md",
     "Development/Languages/Assembly/x86-64-Assembly.md",
     "Tools/Debuggers-IDEs-Editors/IDEs/VS-Code.md",
-    "Brain-Hacking/Philosphy/Thought-Experiments.md",
     "Web-Application-Hacking/Web-Exploits/HTTP-Request-Smuggling",
     "Security-Disciplines/Cyberwarfare/Practice/Dirty-Games",
     "Tools/Debuggers-IDEs-Editors/pwndbg-CheatSheet.pdf",
