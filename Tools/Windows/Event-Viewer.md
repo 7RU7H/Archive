@@ -37,7 +37,11 @@ Generally the amount of information is enormous so the workflow is centered arou
 
 Remote Event logging 
 `Event Viewer (Local) > Connect to Another Computer...`
+Search by Parent Process
+`Event Viewer -> Find -> ParentProcessId: <PID>`
 
+Search by a specific provider  - very very helpful
+`Event Viewer -> Advanced -> Show only the specified providers... (remember to click the drop down before typing)
 ## References
 
 [THM Windows Event Logs Room](https://tryhackme.com/room/windowseventlogs)

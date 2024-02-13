@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Alternate-Resources.md",
+                "file": "Brain-Hacking/Actions/Question-Based-Forensics-Methodology.md",
                 "mode": "source",
                 "source": false
               }
@@ -56,7 +56,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "phpmyadmin",
+                "query": "Brim",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +65,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Alternate-Resources.md",
+                "file": "Brain-Hacking/Actions/Question-Based-Forensics-Methodology.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Alternate-Resources.md",
+                "file": "Brain-Hacking/Actions/Question-Based-Forensics-Methodology.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Alternate-Resources.md"
+                "file": "Brain-Hacking/Actions/Question-Based-Forensics-Methodology.md"
               }
             }
           },
@@ -160,6 +161,12 @@
   },
   "active": "56a3a0a28ca0a549",
   "lastOpenFiles": [
+    "Tools/Windows/Event-Viewer.md",
+    "Tools/Network-Based/Packet-Analysis/Brim/Brim.md",
+    "Brain-Hacking/Actions/Question-Based-Forensics-Methodology.md",
+    "Development/Languages/Go/Golang.md",
+    "Development/Languages/Go/Go-Testdriven-Development.md",
+    "Alternate-Resources.md",
     "Exploitation/CVEs/Log4Shell.md",
     "Virtualization/Docker/Container-Hardening.md",
     "Virtualization/Docker/Docker.md",
@@ -181,14 +188,8 @@
     "Excalidraw/surveillance-standardABCpattern.excalidraw.md",
     "Security-Disciplines/Meta-Team-View.md",
     "Security-Disciplines/Static-Application-Security-Testing.md",
-    "Security-Disciplines/OPSEC-101.md",
     "Security-Disciplines/Surveillance",
     "Security-Disciplines/OPSEC",
-    "Web-Application-Hacking/Methodologies/Walking-Web-Applications/Web-App-Administration-Consoles.md",
-    "Development/Languages/Assembly/ARM-Assembly.md",
-    "Software/Services/Webservers/Apache/Apache2/Apache2.md",
-    "Web-Application-Hacking/CMS/Wordpress.md",
-    "Development/Languages/Assembly/x86-64-Assembly.md",
     "Web-Application-Hacking/Web-Exploits/HTTP-Request-Smuggling",
     "Security-Disciplines/Cyberwarfare/Practice/Dirty-Games",
     "Tools/Debuggers-IDEs-Editors/pwndbg-CheatSheet.pdf",
