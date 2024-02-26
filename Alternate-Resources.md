@@ -15,6 +15,9 @@ This repository stands on and shadows amongst absolute giants in the various com
 - [YouTube - BlackHillsInformationSecurity](https://www.youtube.com/c/BlackHillsInformationSecurity)
 - [YouTube - Antisyphon Training](https://www.youtube.com/channel/UCkFKiCm7dD0gsB4jqIdCuRQ)
 
+#### CryptoCat
+
+[CryptoCat - YouTube](https://www.youtube.com/@_CryptoCat) *"InfoSec education channel: CTF walkthroughs, binary exploitation, pen-testing, bug bounty, malware analysis, programming/scripting etc."* - [HTB profile](https://app.hackthebox.com/profile/11897(), [GitHub](https://github.com/Crypto-Cat) and [Twitch](https://www.twitch.tv/cryptocat23)
 #### DistroTube
 
 [DistroTube - YoutTube](https://www.youtube.com/@DistroTube) *"DistroTube (DT) is a YouTube channel started by me, Derek Taylor (also DT), in October 2017. Topics include Linux distro reviews, news, opinion and tutorials. Some of my favorite topics include the command line, tiling window managers, vim and emacs, free software and open source software."* This channel of depth and width of Linux content that is generally Arch-based and very informative.

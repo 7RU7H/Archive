@@ -121,7 +121,7 @@ exit
 // Within a sessions run a armory package eg:
 // Enumeration
 seatbelt -h
-// -- to segment flags and arguements
+// -- to segment flags and arguments
 seatbelt -- -group=all full
 sharpup audit
 // Kerberoasting

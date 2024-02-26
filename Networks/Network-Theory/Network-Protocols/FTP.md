@@ -28,6 +28,11 @@ get x.exe
 ls -la		list directory, sometimes ls DOES NOT WORK
 get file
 put file	upload files!
+
+# Append to a local file from a remote file 
+appe
+localfile: 
+remotefile:
 ```
 
 
@@ -47,5 +52,5 @@ systemctl restart vsfptd
 
 ## References
 
-
 [Secure vsftpd](https://www.xmodulo.com/secure-ftp-service-vsftpd-linux.html)
+[appe to write to files](https://stackoverflow.com/questions/30103662/append-data-to-file-on-ftp-server-in-python )

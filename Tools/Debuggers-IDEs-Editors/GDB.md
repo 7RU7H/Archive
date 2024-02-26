@@ -1,6 +1,6 @@
 # GDB
 
-My `gdb` is [[GEF]] or [[pwndgb]].
+My `gdb` is [[GEF]] or [[pwndbg]].
 
 ## This is  work in progress as I need some baseline for a project at some point - see references for better lists
 

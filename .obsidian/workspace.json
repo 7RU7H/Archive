@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "767cccd34de90aaa",
+        "id": "30e038a5e2d61c82",
         "type": "tabs",
         "children": [
           {
-            "id": "56a3a0a28ca0a549",
+            "id": "e0dc54735718117d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Brain-Hacking/Actions/Question-Based-Forensics-Methodology.md",
+                "file": "Alternate-Resources.md",
                 "mode": "source",
                 "source": false
               }
@@ -56,7 +56,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Brim",
+                "query": "FTP ",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,8 +65,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Brain-Hacking/Actions/Question-Based-Forensics-Methodology.md",
+                "file": "Alternate-Resources.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Brain-Hacking/Actions/Question-Based-Forensics-Methodology.md",
+                "file": "Alternate-Resources.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Brain-Hacking/Actions/Question-Based-Forensics-Methodology.md"
+                "file": "Alternate-Resources.md"
               }
             }
           },
@@ -159,35 +158,36 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "56a3a0a28ca0a549",
+  "active": "e0dc54735718117d",
   "lastOpenFiles": [
-    "Tools/Windows/Event-Viewer.md",
-    "Tools/Network-Based/Packet-Analysis/Brim/Brim.md",
-    "Brain-Hacking/Actions/Question-Based-Forensics-Methodology.md",
+    "Tools/Debuggers-IDEs-Editors/GDB.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+    "Networks/Network-Theory/Network-Protocols/FTP.md",
+    "Software/Operating-Systems/Hacker-OSes/Parrot/Parrot.md",
+    "Development/Exploit-Development/GEF.md",
+    "Exploitation/Binary-Exploitation/Binary-Exploitation-Enumeration.md",
+    "Development/Exploit-Development/angr.md",
+    "Software/Operating-Systems/Hacker-OSes/CommandoVM/CommandoVM.md",
+    "Software/Operating-Systems/Hacker-OSes/Parrot",
+    "Tools/C2/Sliver/Sliver-Cheatsheet.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/PowerSploit-Helpsheet.md",
+    "Exploitation/Shells/Reverse-Shells-Listing.md",
+    "Reconnaissance/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
+    "Hardware/Hardware-Maintenance/USB-Maintenance.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation Bypassing-Contrained-Powershell.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Scripts-And-Tools.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
+    "Security-Disciplines/Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Blue-KOTH-Battlegrounds-Cheatsheet-Windows.md",
+    "Tools/AD-Offensive/Impacket/Impacket-Cheatsheet.md",
+    "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Privilege-Escalation.md",
+    "Software/Operating-Systems/Linux/Linux-Commands/Linux-Compression-Commands.md",
+    "Tools/Web-Applications-Attacking/Content-Discovery-Tools/Feroxbuster.md",
+    "Tools/Web-Applications-Attacking/Content-Discovery-Tools/Gobuster-Cheatsheet.md",
     "Development/Languages/Go/Golang.md",
-    "Development/Languages/Go/Go-Testdriven-Development.md",
-    "Alternate-Resources.md",
-    "Exploitation/CVEs/Log4Shell.md",
-    "Virtualization/Docker/Container-Hardening.md",
-    "Virtualization/Docker/Docker.md",
-    "Cloud/Azure/Azure-Administration/Azure-Manage-Identities-And-Governance/Azure-Administration-Azure-Roles-And-RBAC.md",
-    "Web-Application-Hacking/Web-Exploits/HTTP-Request-Smuggling/HTTP-Request-Smuggling.md",
-    "Excalidraw/httprequestsmugglingalidraw.md",
-    "Hardware/Hardware-Hacking/Firmware/Firmware-Extraction.md",
-    "Hardware/Hardware-Hacking/Firmware/Firmware-Reversing.md",
-    "Hardware/Protocols/JTAG.md",
-    "Hardware/Protocols/I2C.md",
-    "Hardware/Protocols/SPI.md",
-    "Hardware/Protocols/USART.md",
-    "Hardware/Protocols/Hardware-Protocols.md",
+    "Brain-Hacking/Actions/Question-Based-Forensics-Methodology.md",
+    "Tools/Windows/Event-Viewer.md",
     "Hardware/Protocols",
-    "Cloud/Cloud-Computing-Defined.md",
-    "README.md",
-    "Web-Application-Hacking/Methodologies/Haddix-Methodology/Haddix-Methodology.md",
-    "Security-Disciplines/Surveillance/Surveillance.md",
-    "Excalidraw/surveillance-standardABCpattern.excalidraw.md",
-    "Security-Disciplines/Meta-Team-View.md",
-    "Security-Disciplines/Static-Application-Security-Testing.md",
     "Security-Disciplines/Surveillance",
     "Security-Disciplines/OPSEC",
     "Web-Application-Hacking/Web-Exploits/HTTP-Request-Smuggling",
@@ -197,7 +197,6 @@
     "Mobile",
     "Images/shodan-cs-Joas-A-Santos-Linkedin.jpeg",
     "Tools/Linux",
-    "Development/Exploit-Development/gdb-cs.txt~",
     "Images/relationship-between-false-positives-and-false-negatives-definitions-JM-WWHF-Talk.png",
     "Images/relationship-between-false-positives-and-false-negatives-JM-WWHF-Talk.png",
     "Images/DACL-abuse-dark.png",
