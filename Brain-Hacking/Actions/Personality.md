@@ -10,6 +10,6 @@ Often it is ourselves that our own problems
 3. Do whatever it was in the advice you need a do it in the same day 
 4. Find more relevant advice and repeat
 5. [Deal with any Authorities of all domains (cyber, physical), shapes, colours, beliefs, etc in a manner that is safe for them and you](https://www.youtube.com/watch?v=uj0mtxXEGE8)  - avoid brutality, shut up and keep asking to see a lawyer - (Someone who can help talk to authority better than you)
-6. Watch  [[OPSEC-101]] by the Grugq and understand the game theory is everywhere and most people are out for themselves
+6. Watch  [[OPSEC]] by the Grugq and understand the game theory is everywhere and most people are out for themselves
 7. Every institution will seek to protect itself - 7ru7h's Dad favourite phrase
 8. A conspiracy is two federal agents and one fool in a room 

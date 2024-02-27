@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Alternate-Resources.md",
+                "file": "Reconnaissance/OSINT/OSINT-People.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 491.5
+    "width": 344.5
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Alternate-Resources.md",
+                "file": "Reconnaissance/OSINT/OSINT-People.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Alternate-Resources.md",
+                "file": "Reconnaissance/OSINT/OSINT-People.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Alternate-Resources.md"
+                "file": "Reconnaissance/OSINT/OSINT-People.md"
               }
             }
           },
@@ -160,6 +160,9 @@
   },
   "active": "e0dc54735718117d",
   "lastOpenFiles": [
+    "Security-Disciplines/OPSEC.md",
+    "Reconnaissance/OSINT/OSINT-People.md",
+    "Alternate-Resources.md",
     "Tools/Debuggers-IDEs-Editors/GDB.md",
     "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
     "Networks/Network-Theory/Network-Protocols/FTP.md",
@@ -184,9 +187,6 @@
     "Software/Operating-Systems/Linux/Linux-Commands/Linux-Compression-Commands.md",
     "Tools/Web-Applications-Attacking/Content-Discovery-Tools/Feroxbuster.md",
     "Tools/Web-Applications-Attacking/Content-Discovery-Tools/Gobuster-Cheatsheet.md",
-    "Development/Languages/Go/Golang.md",
-    "Brain-Hacking/Actions/Question-Based-Forensics-Methodology.md",
-    "Tools/Windows/Event-Viewer.md",
     "Hardware/Protocols",
     "Security-Disciplines/Surveillance",
     "Security-Disciplines/OPSEC",

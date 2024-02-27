@@ -2,7 +2,7 @@
 
 NopSec != [OopSec](https://www.youtube.com/watch?v=StSLxFbVz0M)
 
-The inverse of [[OPSEC-101]], the information warfare to promote branding and reinforce identity over of external forces. The objective of NOPSEC is to focus your life and not enjoy the insanity of being paranoid and doing the weird loop-de-loop nonsensical and illogical behaviours of cultures while hacking or living life. This was scrapped from lived experiences and the residues of joy that I should share with the world dripping off my brain writing the Archive. This is not a replacement for OPSEC, but more a yin-yang or Taoist addition - The wise man can hear NOPSEC in the wind. 
+The inverse of [[OPSEC]], the information warfare to promote branding and reinforce identity over of external forces. The objective of NOPSEC is to focus your life and not enjoy the insanity of being paranoid and doing the weird loop-de-loop nonsensical and illogical behaviours of cultures while hacking or living life. This was scrapped from lived experiences and the residues of joy that I should share with the world dripping off my brain writing the Archive. This is not a replacement for OPSEC, but more a yin-yang or Taoist addition - The wise man can hear NOPSEC in the wind. 
 
 
 This is a work in progress, my plan is to make have very combined simple list and graph like extension to it like control flow and then have big bullet point list of say if you questioned my reasoning then the follow list of why each simple statement is a proof of concept and answer to why it works later.

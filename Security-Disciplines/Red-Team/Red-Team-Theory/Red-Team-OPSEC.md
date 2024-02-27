@@ -2,7 +2,7 @@
 
 Operations Security (OPSEC) is a term coined by the United States military. In the field of cyber-security, let’s start with the definition provided by [NIST](https://csrc.nist.gov/glossary/term/opsec): *“Systematic and proven process by which potential adversaries can be denied information about capabilities and intentions by identifying, controlling, and protecting generally unclassified evidence of the planning and execution of sensitive activities. The process involves five steps: identification of critical information, analysis of threats, analysis of vulnerabilities, assessment of risks, and application of appropriate countermeasures.”*
 
-Consider [[OPSEC-101]]
+Consider [[OPSEC]]
 ## Critical Information
 
 Client Information & Red Team information:

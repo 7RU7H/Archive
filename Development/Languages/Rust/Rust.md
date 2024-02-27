@@ -170,7 +170,7 @@ crate-type = ["cdylib"]
 ```
 
 - Features that stand out
-	- `LITCRYPT` and `LITCRYPT2` - OPSEC feature - [[OPSEC-101]] 
+	- `LITCRYPT` and `LITCRYPT2` - OPSEC feature - [[OPSEC]] 
 		- These packages the encrypts text using a basic XOR method
 		- Protects plain text from static analysis tools
 		- `LITCRYPT2` encrypts strings while compiling - encrypting on disk and in memory at runtime, decrypting when required
