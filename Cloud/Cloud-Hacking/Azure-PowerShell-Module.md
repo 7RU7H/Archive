@@ -20,7 +20,7 @@ Set-Az # Opposite of Clear, Set values
 
 [Azure AD deprecation](https://learn.microsoft.com/en-us/powershell/module/azuread/?view=azureadps-2.0): *"Azure AD PowerShell is planned for deprecation. For more details on the deprecation plans, see the [deprecation update](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/azure-ad-change-management-simplified/ba-p/2967456). You can start trying [Microsoft Graph PowerShell](https://learn.microsoft.com/en-us/powershell/microsoftgraph/overview) to interact with Azure AD as you would in Azure AD PowerShell. In addition, Microsoft Graph PowerShell allows you access to all Microsoft Graph APIs and is available on PowerShell 7. For answers to frequent migration queries, see the [migration FAQ](https://learn.microsoft.com/en-us/powershell/azure/active-directory/migration-faq?view=azureadps-2.0)."*
 
-Always update the PowerShell - older versions are very unsafe, if possible remove old PowerShell. See [[PowerShell]] and [[Basic_Powershell]] respectively. [[Microsoft-Visual-Studios]] requires `Connect-AzAccount`
+Always update the PowerShell - older versions are very unsafe, if possible remove old PowerShell. See [[PowerShell]] and [[Basic-Powershell]] respectively. [[Microsoft-Visual-Studios]] requires `Connect-AzAccount`
 
 ```powershell
 Add-AzAccount # Login to Azure

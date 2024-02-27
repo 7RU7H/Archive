@@ -13,13 +13,50 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Reconnaissance/OSINT/OSINT-People.md",
+                "file": "Tools/C2/Sliver/Sliver-Cheatsheet.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ad09fa77054969d4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Post-Exploitation/Privilege-Escalation/Windows/SePrivileges/SePrivilege-Token-Table.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "41d56b10fa8a54e5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Development/Languages/PowerShell/Basic-Powershell.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8cf67ff627e163f8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -85,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Reconnaissance/OSINT/OSINT-People.md",
+                "file": "Development/Languages/PowerShell/Basic-Powershell.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Reconnaissance/OSINT/OSINT-People.md",
+                "file": "Development/Languages/PowerShell/Basic-Powershell.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Reconnaissance/OSINT/OSINT-People.md"
+                "file": "Development/Languages/PowerShell/Basic-Powershell.md"
               }
             }
           },
@@ -158,10 +195,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e0dc54735718117d",
+  "active": "41d56b10fa8a54e5",
   "lastOpenFiles": [
-    "Security-Disciplines/OPSEC.md",
+    "Exploitation/Shells/Reverse-Shells-Listing.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/SePrivileges/SePrivilege-Token-Table.md",
+    "Tools/C2/Sliver/Sliver-Cheatsheet.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
     "Reconnaissance/OSINT/OSINT-People.md",
+    "Security-Disciplines/OPSEC.md",
     "Alternate-Resources.md",
     "Tools/Debuggers-IDEs-Editors/GDB.md",
     "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
@@ -172,21 +214,16 @@
     "Development/Exploit-Development/angr.md",
     "Software/Operating-Systems/Hacker-OSes/CommandoVM/CommandoVM.md",
     "Software/Operating-Systems/Hacker-OSes/Parrot",
-    "Tools/C2/Sliver/Sliver-Cheatsheet.md",
     "Post-Exploitation/Privilege-Escalation/Windows/PowerSploit-Helpsheet.md",
-    "Exploitation/Shells/Reverse-Shells-Listing.md",
     "Reconnaissance/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
     "Hardware/Hardware-Maintenance/USB-Maintenance.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation Bypassing-Contrained-Powershell.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Scripts-And-Tools.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
     "Security-Disciplines/Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Blue-KOTH-Battlegrounds-Cheatsheet-Windows.md",
     "Tools/AD-Offensive/Impacket/Impacket-Cheatsheet.md",
     "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Privilege-Escalation.md",
     "Software/Operating-Systems/Linux/Linux-Commands/Linux-Compression-Commands.md",
     "Tools/Web-Applications-Attacking/Content-Discovery-Tools/Feroxbuster.md",
-    "Tools/Web-Applications-Attacking/Content-Discovery-Tools/Gobuster-Cheatsheet.md",
     "Hardware/Protocols",
     "Security-Disciplines/Surveillance",
     "Security-Disciplines/OPSEC",
