@@ -1,6 +1,6 @@
 # Server Message Block 
 
-SMB originally ran on top of NetBIOS using port 139. NetBIOS is an older transport layer that allows Windows computer to communicate on the same network. Later versions of SMB (after Windows 2000) use port 445 on top of a TCP stack, TCP allows for internet communication.
+SMB originally ran on top of NetBIOS using port 139. NetBIOS is an older transport layer that allows Windows computer to communicate on the same network. Later versions of SMB (after Windows 2000) use port 445 on top of a TCP stack, TCP allows for internet communication. Linux can install a compatible command line utility to connect to SMB with SAMBA, see [[Linux-Samba]].
 
 Shares in the wild
 
@@ -16,7 +16,7 @@ Some organisation have Anonymous logins due to not wanting make people authentic
 
 Shares utilising Home directories have [Roaming Profiles](https://docs.microsoft.com/en-us/windows-server/storage/folder-redirection/folder-redirection-rup-overview) - your bad stuff comes too!
 
-## smbmap
+## `smbmap`
 
 Shows Share **Permissions** and Comment
 ```bash
@@ -36,14 +36,14 @@ smbmap -H $IP -u $user -p $password -r --exclude SYSVOL,IPC$
 smbmap -H $IP -u $user -p $password  --download user$/$username/Documents/$file.txt
 ```
 
-## nbtscan 
+## `nbtscan` 
 
 Scan NetBIOS name servers, enumerate connection points across a network
 ```bash
 nbtscan -r $IP/$CIDR
 ```
 
-## smbget
+## `smbget`
 
 Recursively download an entire share
 ```bash
@@ -51,7 +51,7 @@ smbget -R smb://$IP/$share
 # Or better use smbclient
 ```
 
-## smbclient
+## `smbclient`
 
 ```bash
 # list share with valid user and password
@@ -85,7 +85,7 @@ smbclient //$IP/$sahre -c 'cd folder;get desired_file_name' password -U username
 smbclient //$IP/$share -c 'put /var/www/my_local_file.txt .\target_folder\target_file.txt' password -U username 
 ```
 
-## Crackmapexec!
+## `crackmapexec`
 
 [[Crackmapexec-Cheatsheet]]
 ```bash
@@ -99,7 +99,7 @@ crackmapexec smb -u 'guest' -p '' --rid-brute
 crackmapexec smb -u 'sysadmin' -p '123lsapasswordsforfree' --rlsa
 ```
 
-## enum4linux Enumeration
+## `enum4linux` Enumeration
 
 ```bash
 enum4linux -a $IP #  Anonymous session
@@ -110,9 +110,9 @@ enum4linux -u <user> -p <pass> -P $IP # Password policy
 enum4linux -a $IP | tee -a enumFourLinux # output to file nicely :)
 ```
 
-## nmap - Enum Users
+## `nmap` - Enum Users
 
-Oneliner for enumerating SMB shares
+Oneliner for enumerating SMB shares - see [[Nmap-Cheatsheet]]
 ```bash
 nmap -p 139,445 --script=smb-enum-shares.nse,smb-enum-users.nse $IP
 ```
@@ -148,9 +148,9 @@ nmap -p 445 --script smb-vuln-ms17-010 $ip
 nmap –p 445 --script smb-brute –script-args userdb=user-list.txt,passdb=pass-list.txt $ip
 ```
 
-## Metasploit
+## Metasploit - `msfconsole`
 
-Auxiliary module
+Auxiliary module - see [[Meterpreter-Commands]]
 ```ruby
 search smb_login
 ```

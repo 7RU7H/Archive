@@ -89,7 +89,6 @@ To mitigate against [[Rogue-DNS]], DHCP Snooping can be implemented
 	- *ARP inspection will validate and rate-limit ARP packets as necessary; if an ARP packet's MAC and IP address do not match, the protocol will intercept, log, and discard the packet.*
 	- *ARP inspection uses the DHCP binding database filled from DHCP snooping as its list of binding IP addresses.*
 
-
 ## References
 
 [CISCO Meraki VLAN tagging](https://documentation.meraki.com/General_Administration/Tools_and_Troubleshooting/Fundamentals_of_802.1Q_VLAN_Tagging) 

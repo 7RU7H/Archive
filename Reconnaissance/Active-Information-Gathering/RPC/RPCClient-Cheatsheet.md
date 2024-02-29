@@ -4,7 +4,6 @@ For `rcpclient` usage see [[RPCClient-Usage]] and for general pre-NullAuth or Au
 ```powershell
 querydispinfo
 srvinfo
-
 lookupdomain $domain
 querydominfo
 enumdomusers

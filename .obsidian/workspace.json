@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "30e038a5e2d61c82",
+        "id": "57370cdfe0706bc9",
         "type": "tabs",
         "children": [
           {
-            "id": "ad09fa77054969d4",
+            "id": "df4fe6e80d6b6ef3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Securing-Networks-And-Systems/Secure-Network-Architecture.md",
+                "file": "Reconnaissance/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Securing-Networks-And-Systems/Secure-Network-Architecture.md",
+                "file": "Reconnaissance/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Securing-Networks-And-Systems/Secure-Network-Architecture.md",
+                "file": "Reconnaissance/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Securing-Networks-And-Systems/Secure-Network-Architecture.md"
+                "file": "Reconnaissance/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md"
               }
             }
           },
@@ -158,10 +158,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ad09fa77054969d4",
+  "active": "df4fe6e80d6b6ef3",
   "lastOpenFiles": [
-    "Networks/Network-Theory/Network-Protocols/SSL-TLS.md",
+    "Reconnaissance/Active-Information-Gathering/DNS/DNS-Active-Recon.md",
+    "DNS-Defined.md",
+    "Reconnaissance/Active-Information-Gathering/LDAP/LDAP-Recon.md",
+    "Reconnaissance/Active-Information-Gathering/RSIP/RSIP-Recon.md",
+    "Reconnaissance/Active-Information-Gathering/RPC/RPCClient-Cheatsheet.md",
+    "Reconnaissance/Active-Information-Gathering/RPC/RPCClient-Usage.md",
+    "Reconnaissance/Active-Information-Gathering/RPC/RPC-Recon.md",
     "Securing-Networks-And-Systems/Secure-Network-Architecture.md",
+    "Networks/Network-Theory/Network-Protocols/SSL-TLS.md",
     "Networks/Network-Security/Network-Security.md",
     "Networks/Network-Security/Securing-Network-Services.md",
     "Post-Exploitation/Privilege-Escalation/Windows/SePrivileges/SePrivilege-Token-Table.md",
@@ -179,14 +186,7 @@
     "Software/Operating-Systems/Hacker-OSes/Parrot/Parrot.md",
     "Development/Exploit-Development/GEF.md",
     "Exploitation/Binary-Exploitation/Binary-Exploitation-Enumeration.md",
-    "Development/Exploit-Development/angr.md",
-    "Software/Operating-Systems/Hacker-OSes/CommandoVM/CommandoVM.md",
     "Software/Operating-Systems/Hacker-OSes/Parrot",
-    "Post-Exploitation/Privilege-Escalation/Windows/PowerSploit-Helpsheet.md",
-    "Reconnaissance/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
-    "Hardware/Hardware-Maintenance/USB-Maintenance.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation Bypassing-Contrained-Powershell.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Scripts-And-Tools.md",
     "Hardware/Protocols",
     "Security-Disciplines/Surveillance",
     "Security-Disciplines/OPSEC",

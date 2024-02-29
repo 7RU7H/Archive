@@ -2,15 +2,16 @@
 
 Lightweight Directory Access Protocol, Lightweight Directory Access Protocol,Lightweight Directory Access Protocol...
 
-## Nmap
+## `nmap`
 
+[[Nmap-Cheatsheet]]
 ```bash
 sudo nmap  -n -Pn -sV -vv --script=ldap-search -p 389 --script-args ldap.maxobjects=-1 -oA nmap/ldap-search $IP
 
 sudo nmap -n -Pn -sV -oN ldapNotBrute --script "ldap* and not brute" -p 389 $ip_address
 ```
 
-## ldapsearch
+## `ldapsearch`
 
 ```bash
 ldapsearch ldap://$IP -x # Simple authentication if this work try the below
@@ -32,7 +33,7 @@ ldapsearch -x -H ldap://$IP -D '<domain>\<username>' -w '<password>' -b "CN=Comp
 ldapsearch -x -H ldap://$IP -D '<domain>\<username>' -w '<password>' -b "CN=Domain Admins,CN=Users,DC=<domain>,DC=<domain>"
 ```
 
-## ldapdomaindump
+## `ldapdomaindump`
 ```bash
 ldapdomaindump -u '<DOMAIN>\<USERNAME>' -p <PASSWORD> $IP -o $output-directory-name
 
@@ -44,14 +45,14 @@ Optional user and password
 
 https://github.com/ropnop/go-windapsearch
 
-## Python Ldap
+## Python LDAP
 [See script for enumeration](https://github.com/curtishoughton/Penetration-Testing-Cheat-Sheet/blob/master/Enumeration/LDAP/LDAP.md)
 
 ## Rogue LDAP Server?
-[[Kali-Setup-Rogue-LDAP-Server]]
-A malicious LDAP server for JNDI injection attacks. [Github-veracode-research rogue-jndi](https://github.com/veracode-research/rogue-jndi)
+[[Kali-Setup-Rogue-LDAP-Server]] is a malicious LDAP server for JNDI injection attacks. [Github-veracode-research rogue-jndi](https://github.com/veracode-research/rogue-jndi)
 
 ## References
 [Curtis Houghton is awesome](https://github.com/curtishoughton/Penetration-Testing-Cheat-Sheet/blob/master/Enumeration/LDAP/LDAP.md)
 [Pentest CS for LDAP ivanversluis](https://github.com/ivanversluis/pentest-hacktricks/blob/master/pentesting/pentesting-ldap.md)
-[Penting LDAP Hacktricks]https://book.hacktricks.xyz/network-services-pentesting/pentesting-ldap
+[Penting LDAP Hacktricks](https://book.hacktricks.xyz/network-services-pentesting/pentesting-ldap)
+[Github-veracode-research rogue-jndi](https://github.com/veracode-research/rogue-jndi)
