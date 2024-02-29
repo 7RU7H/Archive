@@ -16,7 +16,7 @@
 		- Cloud can be flat - even in Active Directory - as Governance over the entire set of resource is controlled at the management plane with Policy and Roles with Role Based Access Controls
 			- The Hardware is the provider's - your network is virtualised
 			- Do not need Domain Controllers in the cloud 
-
+	- [[Secure-Network-Architecture]] best practices
 - Services:
 	- Promote encryption at rest, egress and ingress (outbound and inbound)
 

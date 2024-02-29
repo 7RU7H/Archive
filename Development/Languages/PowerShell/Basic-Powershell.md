@@ -1,5 +1,5 @@
 # Basic Powershell
-For [[PowerShell-Verbs]], [[Powershell-Versions]] and more hacking themed [[PowerShell]] and [[PowerShell-Event-Logging.md]]. Although generally Powershell on more modern network is more secure than it used to be it is still very useful and can be downgraded in some instances, but there is always [[Basic-Csharp]] and [[Useful_Csharp]].
+For [[PowerShell-Verbs]], [[Powershell-Versions]] and more hacking themed [[PowerShell]] and [[PowerShell-Event-Logging.md]]. Although generally PowerShell on more modern network is more secure than it used to be it is still very useful and can be downgraded in some instances, but there is always [[Basic-Csharp]] and [[Useful_Csharp]].
 
 ## Basics
 

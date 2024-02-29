@@ -18,7 +18,7 @@ Register either an authentic-looking domain name or one that mimics the identity
 
 ## SSL/TLS Certificates
 
-Creating SSL/TLS certificates for your chosen domain name, equating to more authenticity. See [[TLS-SSL]]
+Creating SSL/TLS certificates for your chosen domain name, equating to more authenticity. See [[SSL-TLS]]
 
 ## Email Server/Account 
 Email server or register with an SMTP email provider. 

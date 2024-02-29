@@ -41,7 +41,7 @@ Audit | Security services or devices
 
 #### Network Security Policies and Controls
 
-Traffic Filtering
+Traffic Filtering and Packet Analysis
 - Access Control Lists
 	- Contains Access Control entries (rules that define profiles based on pre-defined criteria - source and destinations addresses, MAC address)
 	- [Cisco](https://www.cisco.com/c/en/us/td/docs/routers/asr9000/software/asr9k_r4-0/addr_serv/command/reference/ir40asrbook_chapter1.html#:~:text=An%20access%20control%20list%20(ACL,queueing%2C%20and%20dynamic%20access%20control.)) uses ACLs for traffic filtering, priority or custom queuing, and dynamic access control.
@@ -57,6 +57,39 @@ set policy access-list <acl_number> rule <1-65535> action <permit|deny>
 set policy access-list <acl_number> rule <1-65535> <destination|source> <any|host|inverse-mask|network>
 ```
 
+Zone-Pair Policies and Filtering
+- Employ [[Firewalls]] and apply the requirements of zones to firewall rules
+	- Not all traffic is IPv4!
+	- Define default actions and state rules for each pair in both directions, then add additional actions and rules for singular requirements on top
+
+```bash
+set zone-policy zone <zone-name> default-action <action>
+set zone-policy zone <zone-name> interface <interface>
+# Apply and keep to a ruleset name scheme - good name helps!
+set zone-policy zone <zone A> from <zone B> firewall <name> <ruleset name>
+```
+
+Validating Traffic
+- [[SSL-TLS]] Inspection
+	- Use a Man in the middle SSL Proxy to intercept protocols that use SSL encrypted traffic - beware does have negative affects on security posture (passwords in plain text, a network service that could be compromised by an adversary) and traffic speeds
+	- Once decrypted the proxy will send it to a UTM (Unified Threat Management) platform, which will perform deep packet inspection
+
+#### Mitigating Attacks
+
+To mitigate against [[Rogue-DNS]], DHCP Snooping can be implemented
+- [Cisco](https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst6500/ios/12-2SXF/native/configuration/guide/swcg/snoodhcp.pdf) defines as *"a security feature that acts like a firewall between untrusted hosts and trusted DHCP servers."*
+- DHCP Snooping operates on the switch at layer two 
+	- The switch will store untrusted hosts with leased IP addresses a DHCP Binding Database, which is then used to validate traffic with other protocols for inspection - like dynamic ARP inspection; example conditions provided by [THM Introduction to Security Architecture Room](https://tryhackme.com/room/introtosecurityarchitecture), which claims that *"there is no standardization of DHCP snooping. That said, it generally does not change between vendors, unlike other protocols)"*:
+		- Any DHCP packet is received from outside of the network.
+		- The source MAC address and DHCP client hardware address do not match.
+		- A `DHCPRELEASE` or `DHCPDECLINE` packet is received on an untrusted interface that does not match an interface that the source address already has registered.
+		- A DHCP packet that includes a relay agent address that is not `0.0.0.0`
+- [Cisco](https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst4500/12-2/25ew/configuration/guide/conf/dynarp.html) defines *"ARP inspection as "a security feature that validates Address Resolution Protocol (ARP) packets in a network."*
+	- From the [THM Introduction to Security Architecture Room](https://tryhackme.com/room/introtosecurityarchitecture):
+	- *ARP inspection will validate and rate-limit ARP packets as necessary; if an ARP packet's MAC and IP address do not match, the protocol will intercept, log, and discard the packet.*
+	- *ARP inspection uses the DHCP binding database filled from DHCP snooping as its list of binding IP addresses.*
+
+
 ## References
 
 [CISCO Meraki VLAN tagging](https://documentation.meraki.com/General_Administration/Tools_and_Troubleshooting/Fundamentals_of_802.1Q_VLAN_Tagging) 
@@ -64,4 +97,6 @@ set policy access-list <acl_number> rule <1-65535> <destination|source> <any|hos
 [Open vSwitch](https://www.openvswitch.org/)
 [VyOS](https://vyos.io/)
 [Cisco ACL usage](https://www.cisco.com/c/en/us/td/docs/routers/asr9000/software/asr9k_r4-0/addr_serv/command/reference/ir40asrbook_chapter1.html#:~:text=An%20access%20control%20list%20(ACL,queueing%2C%20and%20dynamic%20access%20control.)) 
-[THM Introduction to Security Architecture](https://tryhackme.com/room/introtosecurityarchitecture)
+[THM Introduction to Security Architecture Room](https://tryhackme.com/room/introtosecurityarchitecture)
+[Cisco - ARP inspection](https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst4500/12-2/25ew/configuration/guide/conf/dynarp.html)
+[Cisco - DHCP Snooping](https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst6500/ios/12-2SXF/native/configuration/guide/swcg/snoodhcp.pdf) 

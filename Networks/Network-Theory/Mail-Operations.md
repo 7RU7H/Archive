@@ -17,7 +17,7 @@ simple mail transfer protocol
 MUA -(smtp)-> MSA/MTA -> SMTP -> MTA/MDA -(POP3/IMAP)-> MUA
 ```
 
-SMTP(S) uses TLS/SSL - [[TLS-SSL]]
+SMTP(S) uses TLS/SSL - [[SSL-TLS]]
 - SMTP is an “Email Push Protocol” used to transfer email messages from the client to the server
 	- SMTP End-to-End: Email communication between organizations
 		 - Sender-side SMTP client initiates an SMTP connection

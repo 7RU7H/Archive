@@ -35,7 +35,7 @@ docker context use development-environment-host
 docker context use default
 ```
 
-Daemon is interacted with HTTP/S - [[TLS-SSL]] remembering or review best practices for TLS certificate management
+Daemon is interacted with HTTP/S - [[SSL-TLS]] remembering or review best practices for TLS certificate management
 ```bash
 # Run docker in TLS mode
 dockerd --tlsverify --tlscacert=myca.pem --tlscert=myserver-cert.pem --tlskey=myserver-key.pem -H=0.0.0.0:2376

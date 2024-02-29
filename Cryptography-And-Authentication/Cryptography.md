@@ -314,7 +314,7 @@ SSL encryption procedures leverages both asymmetric and symmetric encryption. To
 
 It bypasses the weakness of symmetric encryption by using asymmetric encryption to transmit the symmetric key. But, has several problems.
 
-Transport layer security (TLS) - [[TLS-SSL]]
+Transport layer security (TLS) - [[SSL-TLS]]
 
 Use `openssl` for SSL/TLS workflow
 ```bash

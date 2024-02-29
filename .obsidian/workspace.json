@@ -8,55 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "e0dc54735718117d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tools/C2/Sliver/Sliver-Cheatsheet.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "ad09fa77054969d4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Windows/SePrivileges/SePrivilege-Token-Table.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "41d56b10fa8a54e5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Development/Languages/PowerShell/Basic-Powershell.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8cf67ff627e163f8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
+                "file": "Securing-Networks-And-Systems/Secure-Network-Architecture.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -93,7 +56,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "FTP ",
+                "query": "ovs-vsc",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -122,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Development/Languages/PowerShell/Basic-Powershell.md",
+                "file": "Securing-Networks-And-Systems/Secure-Network-Architecture.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Development/Languages/PowerShell/Basic-Powershell.md",
+                "file": "Securing-Networks-And-Systems/Secure-Network-Architecture.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Development/Languages/PowerShell/Basic-Powershell.md"
+                "file": "Securing-Networks-And-Systems/Secure-Network-Architecture.md"
               }
             }
           },
@@ -195,10 +158,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "41d56b10fa8a54e5",
+  "active": "ad09fa77054969d4",
   "lastOpenFiles": [
-    "Exploitation/Shells/Reverse-Shells-Listing.md",
+    "Networks/Network-Theory/Network-Protocols/SSL-TLS.md",
+    "Securing-Networks-And-Systems/Secure-Network-Architecture.md",
+    "Networks/Network-Security/Network-Security.md",
+    "Networks/Network-Security/Securing-Network-Services.md",
     "Post-Exploitation/Privilege-Escalation/Windows/SePrivileges/SePrivilege-Token-Table.md",
+    "Development/Languages/PowerShell/Basic-Powershell.md",
+    "Exploitation/Shells/Reverse-Shells-Listing.md",
     "Tools/C2/Sliver/Sliver-Cheatsheet.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
@@ -219,11 +187,6 @@
     "Hardware/Hardware-Maintenance/USB-Maintenance.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation Bypassing-Contrained-Powershell.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Scripts-And-Tools.md",
-    "Security-Disciplines/Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Blue-KOTH-Battlegrounds-Cheatsheet-Windows.md",
-    "Tools/AD-Offensive/Impacket/Impacket-Cheatsheet.md",
-    "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Privilege-Escalation.md",
-    "Software/Operating-Systems/Linux/Linux-Commands/Linux-Compression-Commands.md",
-    "Tools/Web-Applications-Attacking/Content-Discovery-Tools/Feroxbuster.md",
     "Hardware/Protocols",
     "Security-Disciplines/Surveillance",
     "Security-Disciplines/OPSEC",

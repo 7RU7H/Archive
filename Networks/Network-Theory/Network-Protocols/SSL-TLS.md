@@ -1,4 +1,4 @@
-# TLS/SSL
+# SSL/TLS/
 
 [Secure Socket Shell](https://en.wikipedia.org/wiki/Transport_Layer_Security#SSL_1.0,_2.0,_and_3.0) (SSL) - now deprecated, but [Transport Layer Security](https://en.wikipedia.org/wiki/Transport_Layer_Security) (TLS) is built on top of it. TLS is a cryptographic protocol to secure network communication. TLSD is closely related to Datagram Transport Layer Security and in  runs in the Presentation Layer of the [[OSI-Model]].
 

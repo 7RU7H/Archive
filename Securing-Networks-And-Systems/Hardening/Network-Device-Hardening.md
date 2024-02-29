@@ -61,7 +61,7 @@ Network Devices include:
 		- Strong Encryption Algorithm
 		- Keep updated 
 		- Implement strong authentication
-			- [[TLS-SSL]] and a secure hashing algorithm
+			- [[SSL-TLS]] and a secure hashing algorithm
 		- Change the default credentials
 		- Enable Perfect Forward Secrecy (PFS)
 			- Generate unique session keys
