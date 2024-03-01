@@ -3,7 +3,7 @@
 
 For regular use of GitHub visit [[GitHub]]
 
-[ESTEBAN BORGES](https://securitytrails.com/blog/_author/estebanborges) article on [securitytrails.com about Github Dorks](https://securitytrails.com/blog/github-dorks) is referenced and used frequently it importantly mentioned on  [HackTricks - git](https://book.hacktricks.xyz/network-services-pentesting/pentesting-web/git) - recommended read as it scratches a surface of which is a very deep and rewarding topic. DevOps in AWS -[[AWS-Defined]]  and in [[Azure-DevOps]] have Github integration, there has been numerous vulnerabilities with Github as a service such [cryptomining github actions](https://techbeacon.com/security/cryptominers-flooding-github-other-cloudy-dev-services) . Development is complex, security is complex and managing people sharing complex projects will always lead to problems of implementation. 
+[ESTEBAN BORGES](https://securitytrails.com/blog/_author/estebanborges) article on [securitytrails.com about Github Dorks](https://securitytrails.com/blog/github-dorks) is referenced and used frequently it importantly mentioned on  [HackTricks - git](https://book.hacktricks.xyz/network-services-pentesting/pentesting-web/git) - recommended read as it scratches a surface of which is a very deep and rewarding topic. DevOps in AWS -[[AWS-Defined]]  and in [[Azure-DevOps]] have GitHub integration, there has been numerous vulnerabilities with GitHub as a service such [cryptomining github actions](https://techbeacon.com/security/cryptominers-flooding-github-other-cloudy-dev-services) . Development is complex, security is complex and managing people sharing complex projects will always lead to problems of implementation. 
 #### Github Dorks
 
 [Security Trails Github Dorks](https://securitytrails.com/blog/github-dorks)
@@ -40,14 +40,14 @@ filename:.git-credentials
 
 #### Mitigation and Prevention Tools
 
-[Security Trail Github Dorks](https://securitytrails.com/blog/github-dorks) recommends:
+[Security Trail GitHub Dorks](https://securitytrails.com/blog/github-dorks) recommends:
 - [Git-secrets](https://github.com/awslabs/git-secrets/blob/master/README.rst) , written by a team at AWS to prevent developers from publicly sharing confidential keys
 	- [official documentation](https://github.com/awslabs/git-secrets/blob/master/README.rst%23installing-git-secrets) 
 - [Git-Hound](https://github.com/ezekg/git-hound) is an alternative to Git-secrets.
 
 #### Dumping Tools
 
-Dumping tools  dump a Repository from a URL
+Dumping tools dump a Repository from a URL
 
 [git-dumper](https://github.com/arthaud/git-dumper)
 
@@ -72,14 +72,19 @@ git log
 git show
 ```
 
-`md5sum` hash a `$file.js` or any other library then look up the hash on opensource repositories on Github code to fingerprint the version - From [Ippsec.Rocks](https://ippsec.rocks) Get all md5sum for every version of test.js from repository sorted by commit hash:
+`md5sum` hash a `$file.js` or any other library then look up the hash on opensource repositories on GitHub code to fingerprint the version - From [Ippsec.Rocks](https://ippsec.rocks) Get all `md5sum` for every version of test.js from repository sorted by commit hash:
 ```bash
 fingerprint=test.js
 for in $(git log $fingerprint|grep ^commit|awk '{print $2}'); do git checkout -- $fingerprint; echo -n "$i md5sum $fingerprint; done
 ```
 
 
-[truffleHog](https://github.com/dxa4481/truffleHog)
+[trufflehog](https://github.com/trufflesecurity/trufflehog)
+```bash
+trufflehog git https://github.com/trufflesecurity/test_keys --only-verified
+# use your GitHub personal access token to avoid the rate limiting: 
+--token
+```
 #### Content Visibility Tools
 
 [gitraken](https://www.gitkraken.com/)
@@ -107,7 +112,7 @@ Linux - [GTFOBins - git](https://gtfobins.github.io/gtfobins/git/)
 [Security Trails Github Dorks](https://securitytrails.com/blog/github-dorks)
 [techbeacon.com - cryptomining github actions](https://techbeacon.com/security/cryptominers-flooding-github-other-cloudy-dev-services) 
 [Ippsec.Rocks](https://ippsec.rocks) 
-[truffleHog](https://github.com/dxa4481/truffleHog)
+[trufflehog](https://github.com/trufflesecurity/trufflehog)
 [gitraken](https://www.gitkraken.com/)
 [git-money](https://github.com/dnoiz1/git-money)
 [DVCS-pillage](https://github.com/evilpacket/DVCS-Pillage)

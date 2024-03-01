@@ -1,4 +1,4 @@
-# Open-Source-Code
+# Open-Source-Code Passive Reconnaissance
 
 [doc.github searching on github](https://docs.github.com/en/search-github/searching-on-github/searching-code) *"You can search for code on GitHub and narrow the results using these code search qualifiers in any combination."*
 
@@ -11,16 +11,17 @@
 - [https://bitbucket.org/product](https://bitbucket.org/product)
 
 ## Searching Git 
+
 - https://docs.github.com/en/search-github/searching-on-github/searching-code for entropy-based detection attempts to find strings that have high amounts of entropy
 - [https://help.github.com/en/github/searching-for-information-on-github/searching-code](https://help.github.com/en/github/searching-for-information-on-github/searching-code) 
 
 ## Tools
 
-- From Github
-[git-all-the-secrets](https://github.com/anshumanbh/git-all-secrets)
-[trufflehog](https://github.com/trufflesecurity/trufflehog)
-[gitrob](https://github.com/michenriksen/gitrob)
-[gitleaks](https://github.com/zricethezav/gitleaks) 
+From [[Git-Repository-Hacking]]:
+- [git-all-the-secrets](https://github.com/anshumanbh/git-all-secrets)
+- [trufflehog](https://github.com/trufflesecurity/trufflehog)
+- [gitrob](https://github.com/michenriksen/gitrob)
+- [gitleaks](https://github.com/zricethezav/gitleaks) 
 
 ## HTTP(S)
 

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Reconnaissance/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
+                "file": "Reconnaissance/Git-Repository-Hacking.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Reconnaissance/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
+                "file": "Reconnaissance/Git-Repository-Hacking.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Reconnaissance/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
+                "file": "Reconnaissance/Git-Repository-Hacking.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Reconnaissance/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md"
+                "file": "Reconnaissance/Git-Repository-Hacking.md"
               }
             }
           },
@@ -160,6 +160,8 @@
   },
   "active": "df4fe6e80d6b6ef3",
   "lastOpenFiles": [
+    "Reconnaissance/Passive-Information-Gathering/Source-Code/Open-Source-Code-Passive-Reconnaissance.md",
+    "Reconnaissance/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
     "Reconnaissance/Active-Information-Gathering/DNS/DNS-Active-Recon.md",
     "DNS-Defined.md",
     "Reconnaissance/Active-Information-Gathering/LDAP/LDAP-Recon.md",
@@ -184,8 +186,6 @@
     "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
     "Networks/Network-Theory/Network-Protocols/FTP.md",
     "Software/Operating-Systems/Hacker-OSes/Parrot/Parrot.md",
-    "Development/Exploit-Development/GEF.md",
-    "Exploitation/Binary-Exploitation/Binary-Exploitation-Enumeration.md",
     "Software/Operating-Systems/Hacker-OSes/Parrot",
     "Hardware/Protocols",
     "Security-Disciplines/Surveillance",
