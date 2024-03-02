@@ -152,4 +152,6 @@ Examples of use...
 ```
 
 ## References
+
 [xinyMinutes](https://learnxinyminutes.com/docs/powershell/)
+[hacktricks](https://book.hacktricks.xyz/windows-hardening/basic-powershell-for-pentesters)

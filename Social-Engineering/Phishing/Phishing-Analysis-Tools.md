@@ -29,7 +29,7 @@ https://www.wannabrowser.net/
 
 ### URL extractor
 URL Extractor: https://www.convertcsv.com/url-extractor.htm
-[[Cyberchef]] -> Extract URLs
+[[CyberChef]] -> Extract URLs
 
 ## URL reputation
 

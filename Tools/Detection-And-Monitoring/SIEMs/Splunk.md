@@ -131,7 +131,7 @@ Windows Registry
 Find [[Bad-USBs]]
 `Vendor Id` + `Model ID` and enter into [Device Hunt](https://devicehunt.com/) 
 
-Convert weird strings with [[Cyberchef]]
+Convert weird strings with [[CyberChef]]
 
 Events before/after or same time of this a particular event
 On the `Time` column of `Time | Event` in List formatting:

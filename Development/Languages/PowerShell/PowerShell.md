@@ -183,7 +183,9 @@ Get-Acl # Get owner of directory again careful of relative running from another 
 
 Where-Object # TODO
 Import-CSV file.csv     # Read a CSV file
-```
+
+[xinyMinutes](https://learnxinyminutes.com/docs/powershell/)
+[hacktricks](https://book.hacktricks.xyz/windows-hardening/basic-powershell-for-pentesters)```
 
 ## Processes tasks and scheduled tasks
 ```powershell
@@ -294,6 +296,21 @@ Get-ChildItem -Path cert:\LocalMachine
 powershell -c [convert]::ToBase64String((cat $file -Encoding byte)) 
 ```
 
+[Medium PowerShell Obfuscation - SecureTacticsTS](https://medium.com/@SecureTacticsTS/simple-but-effective-powershell-obfuscation-techniques-b38900d8f7dd)
+```powershell
+$Encoded = [convert]::ToBase64String([System.Text.encoding]::Unicode.GetBytes())
+$Encoding2 =[System.Text.Encoding]::Utf8.GetString([System.Convert]::FromBase64String('MQAwAC4AMQAxAC4AMwAuADEAOQAzADoAOAA0ADQAMwA='))
+```
+
+[SANS](https://www.sans.org/blog/month-of-powershell-profile-hack-base64-encoding-decoding/)
+```powershell
+Function ConvertFrom-Base64($base64) {
+    return [System.Text.Encoding]::ASCII.GetString([System.Convert]::FromBase64String($base64))
+}
+Function ConvertTo-Base64($plain) {
+    return [Convert]::ToBase64String([Text.Encoding]::ASCII.GetBytes($plain))
+}
+```
 ## Formatting
 Powershell formating leads to obsucation with [-f Format operator](https://ss64.com/ps/syntax-f-operator.html)
 ```powershell
@@ -363,3 +380,7 @@ Create new type accelerators [idera adding-new-type-accelerators-in-powershell](
 [docs.microsoft.com about_type_accelerators in powershell-7.1](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_type_accelerators?view=powershell-7.1)
 [idera adding-new-type-accelerators-in-powershell](https://community.idera.com/database-tools/powershell/powertips/b/tips/posts/adding-new-type-accelerators-in-powershell) 
 [THM Holo](https://tryhackme.com/room/hololive)
+[xinyMinutes](https://learnxinyminutes.com/docs/powershell/)
+[hacktricks](https://book.hacktricks.xyz/windows-hardening/basic-powershell-for-pentesters)
+[Medium PowerShell Obfuscation - SecureTacticsTS](https://medium.com/@SecureTacticsTS/simple-but-effective-powershell-obfuscation-techniques-b38900d8f7dd)
+[SANS](https://www.sans.org/blog/month-of-powershell-profile-hack-base64-encoding-decoding/)

@@ -2,7 +2,7 @@
 
 ## CyberChef
 
-[[Cyberchef]]
+[[CyberChef]]
  
 ## Boxentriq
 
