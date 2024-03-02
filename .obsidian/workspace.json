@@ -11,8 +11,12 @@
             "id": "76626a6d43f39bdb",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Tools/Network-Based/Ligolo-ng.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Software/File-Typology/BMP.md",
+                "file": "Tools/Network-Based/Ligolo-ng.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Software/File-Typology/BMP.md",
+                "file": "Tools/Network-Based/Ligolo-ng.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -121,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Software/File-Typology/BMP.md"
+                "file": "Tools/Network-Based/Ligolo-ng.md"
               }
             }
           },
@@ -145,17 +149,18 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "obsidian-excalidraw-plugin:Create new drawing": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "ed8f63df71621be6",
+  "active": "76626a6d43f39bdb",
   "lastOpenFiles": [
+    "Tools/Network-Based/Ligolo-ng.md",
     "Software/File-Typology/YAML.md",
     "Software/File-Typology/BMP.md",
     "Software/File-Typology/File-Extensions.md",
@@ -183,7 +188,6 @@
     "Reconnaissance/Active-Information-Gathering/RSIP/RSIP-Recon.md",
     "Reconnaissance/Active-Information-Gathering/RPC/RPCClient-Cheatsheet.md",
     "Reconnaissance/Active-Information-Gathering/RPC/RPCClient-Usage.md",
-    "Reconnaissance/Active-Information-Gathering/RPC/RPC-Recon.md",
     "Software/Operating-Systems/Hacker-OSes/Parrot",
     "Hardware/Protocols",
     "Security-Disciplines/Surveillance",
