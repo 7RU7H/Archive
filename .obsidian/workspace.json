@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/Network-Based/Ligolo-ng.md",
+                "file": "Security-Disciplines/Incident-Response/Incident-Response.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 344.5
+    "width": 301.5
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/Network-Based/Ligolo-ng.md",
+                "file": "Security-Disciplines/Incident-Response/Incident-Response.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tools/Network-Based/Ligolo-ng.md",
+                "file": "Security-Disciplines/Incident-Response/Incident-Response.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tools/Network-Based/Ligolo-ng.md"
+                "file": "Security-Disciplines/Incident-Response/Incident-Response.md"
               }
             }
           },
@@ -160,6 +160,10 @@
   },
   "active": "76626a6d43f39bdb",
   "lastOpenFiles": [
+    "Security-Disciplines/Incident-Response/Incident-Response 1.md",
+    "Security-Disciplines/Incident-Response/Incident-Response.md",
+    "Security-Disciplines/Incident-Response/Incident-Handling-Life-Cycle.md",
+    "README.md",
     "Tools/Network-Based/Ligolo-ng.md",
     "Software/File-Typology/YAML.md",
     "Software/File-Typology/BMP.md",
@@ -184,10 +188,6 @@
     "Reconnaissance/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
     "Reconnaissance/Active-Information-Gathering/DNS/DNS-Active-Recon.md",
     "DNS-Defined.md",
-    "Reconnaissance/Active-Information-Gathering/LDAP/LDAP-Recon.md",
-    "Reconnaissance/Active-Information-Gathering/RSIP/RSIP-Recon.md",
-    "Reconnaissance/Active-Information-Gathering/RPC/RPCClient-Cheatsheet.md",
-    "Reconnaissance/Active-Information-Gathering/RPC/RPCClient-Usage.md",
     "Software/Operating-Systems/Hacker-OSes/Parrot",
     "Hardware/Protocols",
     "Security-Disciplines/Surveillance",
