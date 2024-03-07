@@ -161,10 +161,19 @@
   },
   "active": "76626a6d43f39bdb",
   "lastOpenFiles": [
-    "Images/deviantollam-ilmi-talk-securityhingesandjambpins.png",
-    "Images/deviantollam-ilmi-talk-hingeremoval.png",
+    "Images/deviantollam-ilmi-talk-dooredgegaps.png",
+    "Images/deviantollam-ilmi-talk-thumbturnflipper.png",
+    "Images/deviantollam-ilmi-talk-deadboltwiththumbturn.png",
+    "Images/deviantollam-ilmi-talk-exitpaddles.png",
+    "Images/deviantollam-ilmi-talk-weatherstrippingisnotasecuritydevice.png",
+    "Images/deviantollam-ilmi-talk-deadlatchrequireproperdoorfilmentconfigurations.png",
     "Security-Disciplines/Incident-Response/Incident-Response.md",
     "Security-Disciplines/Physical-Security/Physical-Security.md",
+    "Images/deviantollam-ilmi-talk-deadlatchrequireproperdoorfilment.png",
+    "Images/deviantollam-ilmi-talk-deadlatchclosed.png",
+    "Images/deviantollam-ilmi-talk-deadlatches.png",
+    "Images/deviantollam-ilmi-talk-securityhingesandjambpins.png",
+    "Images/deviantollam-ilmi-talk-hingeremoval.png",
     "Security-Disciplines/Physical-Security",
     "Security-Disciplines/Incident-Response/Incident-Response 1.md",
     "Security-Disciplines/Incident-Response/Incident-Handling-Life-Cycle.md",
@@ -197,15 +206,6 @@
     "Security-Disciplines/OPSEC",
     "Web-Application-Hacking/Web-Exploits/HTTP-Request-Smuggling",
     "Security-Disciplines/Cyberwarfare/Practice/Dirty-Games",
-    "Tools/Debuggers-IDEs-Editors/pwndbg-CheatSheet.pdf",
-    "Images/shodan-cs-Joas-A-Santos-Linkedin.jpeg",
-    "Images/relationship-between-false-positives-and-false-negatives-definitions-JM-WWHF-Talk.png",
-    "Images/relationship-between-false-positives-and-false-negatives-JM-WWHF-Talk.png",
-    "Images/DACL-abuse-dark.png",
-    "Images/DACL abuse-dark.png",
-    "Images/azure-aksscalingimplementation.png",
-    "Images/velociraptorofficialdocsimage-oneofthebestimageseveraboutdinosaurs.png",
-    "Images/azureprivatedns.png",
-    "Images/azureenterprisechoicesofwan.png"
+    "Tools/Debuggers-IDEs-Editors/pwndbg-CheatSheet.pdf"
   ]
 }
