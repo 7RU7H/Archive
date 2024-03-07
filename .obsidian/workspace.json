@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Security-Disciplines/Incident-Response/Incident-Response.md",
+                "file": "Security-Disciplines/Physical-Security/Physical-Security.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 301.5
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Security-Disciplines/Incident-Response/Incident-Response.md",
+                "file": "Security-Disciplines/Physical-Security/Physical-Security.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Security-Disciplines/Incident-Response/Incident-Response.md",
+                "file": "Security-Disciplines/Physical-Security/Physical-Security.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Security-Disciplines/Incident-Response/Incident-Response.md"
+                "file": "Security-Disciplines/Physical-Security/Physical-Security.md"
               }
             }
           },
@@ -160,8 +161,12 @@
   },
   "active": "76626a6d43f39bdb",
   "lastOpenFiles": [
-    "Security-Disciplines/Incident-Response/Incident-Response 1.md",
+    "Images/deviantollam-ilmi-talk-securityhingesandjambpins.png",
+    "Images/deviantollam-ilmi-talk-hingeremoval.png",
     "Security-Disciplines/Incident-Response/Incident-Response.md",
+    "Security-Disciplines/Physical-Security/Physical-Security.md",
+    "Security-Disciplines/Physical-Security",
+    "Security-Disciplines/Incident-Response/Incident-Response 1.md",
     "Security-Disciplines/Incident-Response/Incident-Handling-Life-Cycle.md",
     "README.md",
     "Tools/Network-Based/Ligolo-ng.md",
@@ -186,8 +191,6 @@
     "Reconnaissance/Git-Repository-Hacking.md",
     "Reconnaissance/Passive-Information-Gathering/Source-Code/Open-Source-Code-Passive-Reconnaissance.md",
     "Reconnaissance/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
-    "Reconnaissance/Active-Information-Gathering/DNS/DNS-Active-Recon.md",
-    "DNS-Defined.md",
     "Software/Operating-Systems/Hacker-OSes/Parrot",
     "Hardware/Protocols",
     "Security-Disciplines/Surveillance",
@@ -195,7 +198,6 @@
     "Web-Application-Hacking/Web-Exploits/HTTP-Request-Smuggling",
     "Security-Disciplines/Cyberwarfare/Practice/Dirty-Games",
     "Tools/Debuggers-IDEs-Editors/pwndbg-CheatSheet.pdf",
-    "Mobile/Android",
     "Images/shodan-cs-Joas-A-Santos-Linkedin.jpeg",
     "Images/relationship-between-false-positives-and-false-negatives-definitions-JM-WWHF-Talk.png",
     "Images/relationship-between-false-positives-and-false-negatives-JM-WWHF-Talk.png",
@@ -204,7 +206,6 @@
     "Images/azure-aksscalingimplementation.png",
     "Images/velociraptorofficialdocsimage-oneofthebestimageseveraboutdinosaurs.png",
     "Images/azureprivatedns.png",
-    "Images/azureenterprisechoicesofwan.png",
-    "Images/wheredoyouthinkitisdonefrom.png"
+    "Images/azureenterprisechoicesofwan.png"
   ]
 }
