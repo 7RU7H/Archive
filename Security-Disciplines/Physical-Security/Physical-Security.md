@@ -1,5 +1,7 @@
 # Physical Security
 
+TOOOL, The Open Organisation Of Lockpickers at [https://toool.us/](https://toool.us/)
+
 
 - Entry Typology
 	- Overt - Destructive and noticeable leaving physical and sonic traces
@@ -8,16 +10,85 @@
 	- Surreptitious 	- Undetectable to trained and untrained people and would undetected in forensic investigation
 #### Introductory Talks
 
-[YouTube - I'll Let Myself In: Tactics of Physical Pen Testers](https://www.youtube.com/watch?v=rnmcRTnTNC8): *Many organizations are accustomed to being scared at the results of their network scans and digital penetration tests, but seldom do these tests yield outright "surprise" across an entire enterprise. Some servers are unpatched, some software is vulnerable, and networks are often not properly segmented. No huge shocks there. As head of a Physical Penetration team, however, my deliverable day tends to be quite different. With faces agog, executives routinely watch me describe (or show video) of their doors and cabinets popping open in seconds. This presentation will highlight some of the most exciting and shocking methods by which my team and I routinely let ourselves in on physical jobs.*
+[YouTube - I'll Let Myself In: Tactics of Physical Pen Testers](https://www.youtube.com/watch?v=rnmcRTnTNC8): *"Many organizations are accustomed to being scared at the results of their network scans and digital penetration tests, but seldom do these tests yield outright "surprise" across an entire enterprise. Some servers are unpatched, some software is vulnerable, and networks are often not properly segmented. No huge shocks there. As head of a Physical Penetration team, however, my deliverable day tends to be quite different. With faces agog, executives routinely watch me describe (or show video) of their doors and cabinets popping open in seconds. This presentation will highlight some of the most exciting and shocking methods by which my team and I routinely let ourselves in on physical jobs."*
 
 - Lock Picking is the 9th thing on the list to do
 - Installation of Doors is very important
 - Doors are legally required to open in an emergency
 
+[Patrick McNeil - The Right Way To Do Wrong](https://www.youtube.com/watch?v=sw94smSiJBY): *"CackalackyCon1 - Patrick McNeil - The Right Way To Do Wrong: Physical security secrets of criminals and professionals alike In 1905 Harry Houdini wrote his first book entitled “The Right Way to Do Wrong” wherein he divulged the lockpicking and other trade secrets of criminals. People make assumptions about how schemes work and believe them to be complicated, yet in many cases the insider knows how simple they are. Most people assume that besides tailgating and social engineering, real break-ins (or physical security testing) are all about picking locks. However, the secret is that on physical pentests it’s typically unnecessary to do that! Some physical controls have known bypasses, and some building contractors (or even locksmiths) don't implement things correctly. Just like Houdini, I’ll be divulging the simple tricks of the trade employed by both criminals and professional physical pentesters to bypass physical controls without using lockpicks. You may be shocked and amazed by what you see, and once you leave you'll be an insider too - seeing insecurity everywhere!"*
+
+- Schemes are something very simple and sometimes just knowing the secret
+- Lockpicking is mostly unnecessary 
+- Common mistakes of lock fitters and access control systems
+- Not discussed:
+	- Badge Cloning
+	- Network Dropboxes
+	- Keyloggers
+	- Keyboard Emulators
+	- Badge Scan Interception (BLEKey)
+	- "Drop" USBs
+- Bad locks are everywhere
+
+
+- Padlocks
+	- Found: Document recycling bins, Gates, Document boxes..
+	- Tools
+		- Padlock shims - inserted between the shackle and the lock body pushes the locking lever away; reusable, may need to two on some padlocks. 
+			- Put on the outside and move it twisting it so that is on the inside to push the locking lever away
+
+![](patrickneal-cackalackycon-padlockshims.png)
+
+Lever Bypass
+![](patrickneal-cackalackycon-leverbypass.png)
+
+If the back of the lock core is missing you reach through past the pins and trip the latch directly. Patrick consider it is easier to rake a master lock open than to use dual mast lever bypass *shanks*.
+
+Warded "Picks" / "Bypass Keys"
+![](patrickneal-cackalackycon-wardedpicksbypasskeys.png)
+Warded is in reference to *"the two piece of metal inside the lock and they fit into the notches of the key and when you turn the key there is a single lever typically inside of there that will release the shackle that lever is typically way at the top"*.
+
+Actuator Bypass - American or Abus Tools
+
+American 700 and 1100 series and Abus 72, other manufacturers and copy-cat manufacturers. 1100 and Abus 72 are lock-out tag-out locks (a locks for machinery usage-safety not security)
+![](patrickneal-cackalackycon-actuatorbypasses.png)
+
+The Actuator turns the back of the lock the key would press on this and turn it clockwise to release the shackle. Tools then attempt to jam between the Actuator and other piece of the lock to turn it. Fix: American - put a security wafer at the back of the lock. This is broken with a Peterson Wafer Breaker and hammer.
+
+
+Comb Picks / Overlifting
+
+Padlocks with a wide body, but small core is an indication the the lock could be Overlifted; the vulnerability is due to the pin chambers being too long.
+![](patrickneal-cackalackycon-combpicks.png)
+A Comb Pick need the space to push everything up out of the core.
+
+- Very effective on Master 140
+
+Sesame Locks
+
+Lots of copy-cats of the Master 175 locks exist and very likely is also vulnerable; Sesame locks are found in a environment where it is administratively easier to distribute a combination and not a key. 
+![](patrickneal-cackalackycon-sesamelocks.png)
+From Max Power @dontlook talk that is not available on YouTube anymore
+![](patrickneal-cackalackycon-sesamelocksTANGs.png)
+The yellow circle is added by Patrick to so where the thin piece of metal where the knife is in the middle of the Actuators.
+Technique:
+1. Insert a hook pick over the top of a dial or a shim between the dials
+2. Depress shackle
+3. Push down "fingers" to lift the tang at the top of the lock, or lift from the back
+4. Release shackle
+
+Decoding Combo Locks
+
+15:37
+
+Raking
+
+
+
 ## Techniques
+
 #### Hinge Removal
 Hinge Removal
-![](deviantollam-ilmi-talk-hingeremoval.png)
 
 Security Hinges and Jamb Pins prevent some hinge removal
 ![](deviantollam-ilmi-talk-securityhingesandjambpins.png)
@@ -53,7 +124,7 @@ Opens with a Thumb Turn Flipper; notable more useful in California, which has lo
 ![](deviantollam-ilmi-talk-thumbturnflipper.png)
 
 Some gases can also be sprayed through the gaps in the door to replicate smoke that will trigger the door to open. For Dust Off require **inverting** the can to boiling off R34a - [Wikipedia - 1,1,1,2-Tetrafluoroethane](https://en.wikipedia.org/wiki/1%2C1%2C1%2C2-Tetrafluoroethane) to create cold gas cloud:
-![](deviantollam-ilmi-talk-dooredgegaps.png)
+
 Request-To-Exit (REX) Sensors (Thermal sensor) are tripped by the gas Passive Infrared Sensor do not differentiate between hot and cold - it is just `different equals human`. 
 
 15:56
@@ -65,3 +136,6 @@ Request-To-Exit (REX) Sensors (Thermal sensor) are tripped by the gas Passive In
 
 [THM Physical Security](https://tryhackme.com/room/physicalsecurityintro)
 [YouTube - I'll Let Myself In: Tactics of Physical Pen Testers](https://www.youtube.com/watch?v=rnmcRTnTNC8)
+[Patrick McNeil - The Right Way To Do Wrong](https://www.youtube.com/watch?v=sw94smSiJBY)
+[https://toool.us/](https://toool.us/)
+[Wikipedia - 1,1,1,2-Tetrafluoroethane](https://en.wikipedia.org/wiki/1%2C1%2C1%2C2-Tetrafluoroethane) 
