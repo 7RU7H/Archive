@@ -12,9 +12,9 @@ echo "All Linux modules can be used in Bash Scripting!"
 
 name="mrBASH is a variable name"
 
-echo "$name using the dollar/pound sign to substitute var \$ + name" 
+echo "$name using the dollar/pound sign to substitute var $ + name" 
 echo
-echo "Use \$ and () or backticks(legacy way) to output a command or multiple to a variable with ="
+echo "Use $ and () or backticks(legacy way) to output a command or multiple to a variable with ="
 echo
 echo "Numbers are strings if they are enclosed with double quotations(single quotes are not interpretered!) and numeric variables are not - integers only!"
 echo

@@ -56,7 +56,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "File",
+                "query": "Physical-Se",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 344.5
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -155,29 +154,30 @@
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
-      "command-palette:Open command palette": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false
+      "command-palette:Open command palette": false
     }
   },
   "active": "76626a6d43f39bdb",
   "lastOpenFiles": [
-    "Images/patrickneal-cackalackycon-sesamelocksTANGs.png",
-    "Images/patrickneal-cackalackycon-sesamelocks.png",
-    "Images/patrickneal-cackalackycon-combpicks.png",
-    "Images/patrickneal-cackalackycon-actuatorbypasses.png",
-    "Images/patrickneal-cackalackycon-wardedpicksbypasskeys.png",
-    "Images/patrickneal-cackalackycon-leverbypass.png",
-    "Images/patrickneal-cackalackycon-padlockshims.png",
-    "Images/deviantollam-ilmi-talk-dooredgegaps.png",
-    "Images/deviantollam-ilmi-talk-thumbturnflipper.png",
-    "Images/deviantollam-ilmi-talk-deadboltwiththumbturn.png",
-    "Images/deviantollam-ilmi-talk-exitpaddles.png",
-    "Security-Disciplines/Incident-Response/Incident-Response.md",
+    "Images/patrickneal-cackalackycon-withthumbturnflipper.png",
+    "Images/patrickneal-cackalackycon-lockswith-thumbturnlevers.png",
+    "Images/patrickneal-cackalackycon-crashbarbypass.png",
+    "Images/patrickneal-cackalackycon-crashbarsandexitpaddles.png",
+    "Images/patrickneal-cackalackycon-leverhandleunderdoorthetoolattack.png",
+    "Images/patrickneal-cackalackycon-bypassingprotectiveplates.png",
+    "Images/patrickneal-cackalackycon-properdeadlatchinstallation.png",
+    "Images/patrickneal-cackalackycon-doorlatchbypassloidtools.png",
+    "Images/patrickneal-cackalackycon-jigglerortryoutkeys.png",
+    "Securing-Networks-And-Systems/Hardening/Linux-Hardening.md",
     "Security-Disciplines/Physical-Security/Physical-Security.md",
     "Security-Disciplines/Physical-Security",
-    "Security-Disciplines/Incident-Response/Incident-Response 1.md",
-    "Security-Disciplines/Incident-Response/Incident-Handling-Life-Cycle.md",
-    "README.md",
+    "Images/patrickneal-cackalackycon-wardedpicksbypasskeys.png",
+    "Images/patrickneal-cackalackycon-sesamelocksTANGs.png",
+    "Development/Languages/Bash/Bash.md",
+    "Exploitation/Binary-Exploitation/Buffer-Overflow/Stackbased-Buffer-Overflow-Scripts.md",
+    "Exploitation/Binary-Exploitation/Buffer-Overflow/Stackbased-Buffer-Overflows.md",
+    "Exploitation/Binary-Exploitation/sedNDQpE8",
+    "Exploitation/Binary-Exploitation/sedarKP5v",
     "Tools/Network-Based/Ligolo-ng.md",
     "Software/File-Typology/YAML.md",
     "Software/File-Typology/BMP.md",
@@ -204,8 +204,6 @@
     "Hardware/Protocols",
     "Security-Disciplines/Surveillance",
     "Security-Disciplines/OPSEC",
-    "Web-Application-Hacking/Web-Exploits/HTTP-Request-Smuggling",
-    "Security-Disciplines/Cyberwarfare/Practice/Dirty-Games",
-    "Tools/Debuggers-IDEs-Editors/pwndbg-CheatSheet.pdf"
+    "Web-Application-Hacking/Web-Exploits/HTTP-Request-Smuggling"
   ]
 }
