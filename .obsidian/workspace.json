@@ -154,11 +154,15 @@
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
   "active": "76626a6d43f39bdb",
   "lastOpenFiles": [
+    "Excalidraw/LockAnatomony-101draw.md",
+    "Security-Disciplines/Physical-Security/Physical-Security.md",
+    "Security-Disciplines/Physical-Security/Locksmith-Terminology.md",
     "Images/patrickneal-cackalackycon-withthumbturnflipper.png",
     "Images/patrickneal-cackalackycon-lockswith-thumbturnlevers.png",
     "Images/patrickneal-cackalackycon-crashbarbypass.png",
@@ -169,10 +173,8 @@
     "Images/patrickneal-cackalackycon-doorlatchbypassloidtools.png",
     "Images/patrickneal-cackalackycon-jigglerortryoutkeys.png",
     "Securing-Networks-And-Systems/Hardening/Linux-Hardening.md",
-    "Security-Disciplines/Physical-Security/Physical-Security.md",
     "Security-Disciplines/Physical-Security",
     "Images/patrickneal-cackalackycon-wardedpicksbypasskeys.png",
-    "Images/patrickneal-cackalackycon-sesamelocksTANGs.png",
     "Development/Languages/Bash/Bash.md",
     "Exploitation/Binary-Exploitation/Buffer-Overflow/Stackbased-Buffer-Overflow-Scripts.md",
     "Exploitation/Binary-Exploitation/Buffer-Overflow/Stackbased-Buffer-Overflows.md",
@@ -199,7 +201,6 @@
     "Post-Exploitation/Evasion/Bypassing-Antivirus-With-Understanding-Comes-Ease-TALK.md",
     "Reconnaissance/Git-Repository-Hacking.md",
     "Reconnaissance/Passive-Information-Gathering/Source-Code/Open-Source-Code-Passive-Reconnaissance.md",
-    "Reconnaissance/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
     "Software/Operating-Systems/Hacker-OSes/Parrot",
     "Hardware/Protocols",
     "Security-Disciplines/Surveillance",

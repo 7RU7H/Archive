@@ -2,7 +2,12 @@
 
 ## Introduction
 
-TOOOL, The Open Organisation Of Lockpickers at [https://toool.us/](https://toool.us/)
+- TOOOL, The Open Organisation Of Lockpickers at [https://toool.us/](https://toool.us/)
+- [https://www.locksmiths.co.uk/locksmith-terminology-parts-of-locks/](https://www.locksmiths.co.uk/locksmith-terminology-parts-of-locks/) or the local mirror [[Locksmith-Terminology]]
+
+
+
+
 
 ## Entry Types
 
@@ -35,8 +40,22 @@ TOOOL, The Open Organisation Of Lockpickers at [https://toool.us/](https://too
 
 ## Terminology 
 
--  Dead Bolt bolt protrudes into the frame of the door preventing it from opening
--  Raking 
+[[Locksmith-Terminology]] is a mirror referenced in the introductory section, but below are terminology to be 
+
+- Lock Type 
+	- Dead Bolt bolt protrudes into the frame of the door preventing it from opening
+- Lock Anatomy
+	- Actuator allows locking lugs to retract when the core is turned
+	- Ball Bearings are non-shimmable elements for padlocks used to keep a shackle in place
+	- Cylinder
+	- Driver pin are top half of a pin stack and have Teeth (see Teeth) 
+	- Key Pins are located on the bottom half of a pin stack
+	- Shackle
+	- Shear Line is the interface between the two pins (Key and Driver) in a pin stack
+	- Spring
+	- Teeth (pointy bits on the Driver Pins)
+- Techniques
+	- Raking 
 
 ## Padlocks
 
@@ -184,3 +203,4 @@ Ollam - 15:56
 [Patrick McNeil - The Right Way To Do Wrong](https://www.youtube.com/watch?v=sw94smSiJBY)
 [https://toool.us/](https://toool.us/)
 [Wikipedia - 1,1,1,2-Tetrafluoroethane](https://en.wikipedia.org/wiki/1%2C1%2C1%2C2-Tetrafluoroethane) 
+[https://www.locksmiths.co.uk/locksmith-terminology-parts-of-locks/](https://www.locksmiths.co.uk/locksmith-terminology-parts-of-locks/).
