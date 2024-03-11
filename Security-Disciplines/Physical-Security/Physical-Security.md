@@ -2,7 +2,11 @@
 
 ## Introduction
 
-- TOOOL, The Open Organisation Of Lockpickers at [https://toool.us/](https://toool.us/)
+
+[Wikipedia -  Lock picking](https://en.wikipedia.org/wiki/Lock_picking) refers to Lock picking as two word as: *"the practice of unlocking a [lock](https://en.wikipedia.org/wiki/Lock_(security_device) "Lock (security device)") by manipulating the components of the lock device without the original key."*
+
+
+- TOOOL, The Open Organisation Of Lock pickers at [https://toool.us/](https://toool.us/)
 - [https://www.locksmiths.co.uk/locksmith-terminology-parts-of-locks/](https://www.locksmiths.co.uk/locksmith-terminology-parts-of-locks/) or the local mirror [[Locksmith-Terminology]]
 
 
@@ -55,8 +59,23 @@
 	- Spring
 	- Teeth (pointy bits on the Driver Pins)
 - Techniques
-	- Raking 
-
+	- Raking
+	- Single Pin Picking (SPP) is picking a lock one pin at a time
+- Lock Picking Tools
+	- Pin Tumbler Tools:
+		- Ball Pick
+		- Bump Keys
+		- Decoder Pick
+		- Half-Diamond Pick
+		- Hook Pick is a hook shaped pick for SPP
+		- Rake Pick - for Raking
+		- Skeleton keys or ([Wikipedia -  Lock picking](https://en.wikipedia.org/wiki/Lock_picking)): *"The warded pick, also known as a [skeleton key](https://en.wikipedia.org/wiki/Skeleton_key "Skeleton key"), is used for opening [warded locks](https://en.wikipedia.org/wiki/Warded_lock "Warded lock")*".
+		- Tension Wrench is used to apply torque to core of a lock whn picking
+	- Wafer tumbler Tools
+		- Jigglers or Try-out keys
+		- Pick guns
+		- Tubular lock pick
+ 
 ## Padlocks
 
 Padlocks - found: Document recycling bins, Gates, Document boxes..
@@ -204,3 +223,4 @@ Ollam - 15:56
 [https://toool.us/](https://toool.us/)
 [Wikipedia - 1,1,1,2-Tetrafluoroethane](https://en.wikipedia.org/wiki/1%2C1%2C1%2C2-Tetrafluoroethane) 
 [https://www.locksmiths.co.uk/locksmith-terminology-parts-of-locks/](https://www.locksmiths.co.uk/locksmith-terminology-parts-of-locks/).
+[Wikipedia -  Lock picking](https://en.wikipedia.org/wiki/Lock_picking)
