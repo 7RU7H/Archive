@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Security-Disciplines/Physical-Security/Physical-Security.md",
+                "file": "Brain-Hacking/Philosophy/Meta-Methodology.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Security-Disciplines/Physical-Security/Physical-Security.md",
+                "file": "Brain-Hacking/Philosophy/Meta-Methodology.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Security-Disciplines/Physical-Security/Physical-Security.md",
+                "file": "Brain-Hacking/Philosophy/Meta-Methodology.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Security-Disciplines/Physical-Security/Physical-Security.md"
+                "file": "Brain-Hacking/Philosophy/Meta-Methodology.md"
               }
             }
           },
@@ -160,6 +160,11 @@
   },
   "active": "76626a6d43f39bdb",
   "lastOpenFiles": [
+    "README.md",
+    "Brain-Hacking/Philosophy/Meta-Methodology.md",
+    "Software/Operating-Systems/Linux/btrfs-FileSystem.md",
+    "Security-Disciplines/Physical-Security/Physical-Security.md",
+    "Software/T",
     "Networks/Network-Theory/IANA-Assigned-Internet-Protocol-Numbers.md",
     "Brain-Hacking/Question-Based-Methodologies/Question-Based-Pwning-Methodology.md",
     "Brain-Hacking/Question-Based-Methodologies/Question-Based-Reversing-Methodology.md",
@@ -171,7 +176,6 @@
     "Brain-Hacking/Learning/Learn-to",
     "Brain-Hacking/Learning",
     "Brain-Hacking/Question-Based-Methodologies",
-    "Security-Disciplines/Physical-Security/Physical-Security.md",
     "Excalidraw/LockAnatomony-101draw.md",
     "Security-Disciplines/Physical-Security/Locksmith-Terminology.md",
     "Images/patrickneal-cackalackycon-withthumbturnflipper.png",
@@ -201,10 +205,6 @@
     "Exploitation/Shells/Shells.md",
     "Post-Exploitation/Evasion/Antivirus-Evasion/AMSI-Bypasses/AMSI-Bypassing.md",
     "Post-Exploitation/Evasion/Antivirus-Evasion/AMSI-Bypasses/AMSI-Buffer-Patch-In-memory.md",
-    "Development/Languages/PowerShell/Basic-Powershell.md",
-    "Tools/Useful-Online-Software/CyberChef.md",
-    "Post-Exploitation/Evasion/Antivirus-Evasion/AMSI-Bypasses/Untitled.md",
-    "Tools/Malware/Obfuscators",
-    "Tools/Emulation"
+    "Tools/Malware/Obfuscators"
   ]
 }
