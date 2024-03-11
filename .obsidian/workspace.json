@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "2d0b4251f33453e3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Brain-Hacking/Question-Based-Methodologies/Question-Based-Pwning-Methodology.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -56,7 +69,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Physical-Se",
+                "query": "angr",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Security-Disciplines/Physical-Security/Physical-Security.md",
+                "file": "Brain-Hacking/Question-Based-Methodologies/Question-Based-Pwning-Methodology.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Security-Disciplines/Physical-Security/Physical-Security.md",
+                "file": "Brain-Hacking/Question-Based-Methodologies/Question-Based-Pwning-Methodology.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Security-Disciplines/Physical-Security/Physical-Security.md"
+                "file": "Brain-Hacking/Question-Based-Methodologies/Question-Based-Pwning-Methodology.md"
               }
             }
           },
@@ -158,10 +171,20 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "76626a6d43f39bdb",
+  "active": "2d0b4251f33453e3",
   "lastOpenFiles": [
-    "Excalidraw/LockAnatomony-101draw.md",
+    "Brain-Hacking/Question-Based-Methodologies/Question-Based-Reversing-Methodology.md",
+    "Brain-Hacking/Question-Based-Methodologies/Question-Based-Pwning-Methodology.md",
+    "Brain-Hacking/Philosophy/Hacking-The-Thing.md",
+    "Brain-Hacking/Problem-Solving/Hacking-Meta-Hacking-Problems.md",
+    "Development/Exploit-Development/angr.md",
+    "Brain-Hacking/Problem-Solving",
+    "Brain-Hacking/Cyber-Related-Actions",
+    "Brain-Hacking/Learning/Learn-to",
+    "Brain-Hacking/Learning",
+    "Brain-Hacking/Question-Based-Methodologies",
     "Security-Disciplines/Physical-Security/Physical-Security.md",
+    "Excalidraw/LockAnatomony-101draw.md",
     "Security-Disciplines/Physical-Security/Locksmith-Terminology.md",
     "Images/patrickneal-cackalackycon-withthumbturnflipper.png",
     "Images/patrickneal-cackalackycon-lockswith-thumbturnlevers.png",
@@ -194,17 +217,7 @@
     "Tools/Useful-Online-Software/CyberChef.md",
     "Post-Exploitation/Evasion/Antivirus-Evasion/AMSI-Bypasses/Untitled.md",
     "Post-Exploitation/Stealth/Living-Off-The-Land/Windows-Living-Off-The-Land.md",
-    "Tools/Malware/Obfuscators/Chimera.md",
     "Tools/Malware/Obfuscators",
-    "Tools/Useful-Online-Software/MISP.md",
-    "Tools/Emulation",
-    "Post-Exploitation/Evasion/Bypassing-Antivirus-With-Understanding-Comes-Ease-TALK.md",
-    "Reconnaissance/Git-Repository-Hacking.md",
-    "Reconnaissance/Passive-Information-Gathering/Source-Code/Open-Source-Code-Passive-Reconnaissance.md",
-    "Software/Operating-Systems/Hacker-OSes/Parrot",
-    "Hardware/Protocols",
-    "Security-Disciplines/Surveillance",
-    "Security-Disciplines/OPSEC",
-    "Web-Application-Hacking/Web-Exploits/HTTP-Request-Smuggling"
+    "Tools/Emulation"
   ]
 }
