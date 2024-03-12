@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Brain-Hacking/Philosophy/Meta-Methodology.md",
+                "file": "Security-Disciplines/Physical-Security/Physical-Security.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Brain-Hacking/Philosophy/Meta-Methodology.md",
+                "file": "Security-Disciplines/Physical-Security/Physical-Security.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Brain-Hacking/Philosophy/Meta-Methodology.md",
+                "file": "Security-Disciplines/Physical-Security/Physical-Security.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Brain-Hacking/Philosophy/Meta-Methodology.md"
+                "file": "Security-Disciplines/Physical-Security/Physical-Security.md"
               }
             }
           },
@@ -160,10 +160,23 @@
   },
   "active": "76626a6d43f39bdb",
   "lastOpenFiles": [
-    "README.md",
-    "Brain-Hacking/Philosophy/Meta-Methodology.md",
-    "Software/Operating-Systems/Linux/btrfs-FileSystem.md",
+    "Images/patrickneal-cackalackycon-blackbagthatisnothavingtobeblack.png",
+    "Images/patrickneal-cackalackycon-keychainofdoom-telephony-access-control-boxes.png",
+    "Images/patrickneal-cackalackycon-keychainofdoom-elevatorsupervisorykey.png",
+    "Images/patrickneal-cackalackycon-keychainofdoompart2.png",
+    "Images/patrickneal-cackalackycon-keychainofdoom.png",
+    "Images/patrickneal-cackalackycon-tubularlocks.png",
+    "Images/patrickneal-cackalackycon-antijamming-with-tension-wrench-andjamming.png",
+    "Images/patrickneal-cackalackycon-keylockboxesbuttons.png",
+    "Images/patrickneal-cackalackycon-keylockboxes.png",
+    "Security-Disciplines/Physical-Security/Locksmith-Terminology.md",
     "Security-Disciplines/Physical-Security/Physical-Security.md",
+    "Images/patrickneal-cackalackycon-magnets-andkabasimplex.png",
+    "Images/patrickneal-cackalackycon-adamritebypasstool.png",
+    "Alternate-Resources.md",
+    "Brain-Hacking/Philosophy/Meta-Methodology.md",
+    "README.md",
+    "Software/Operating-Systems/Linux/btrfs-FileSystem.md",
     "Software/T",
     "Networks/Network-Theory/IANA-Assigned-Internet-Protocol-Numbers.md",
     "Brain-Hacking/Question-Based-Methodologies/Question-Based-Pwning-Methodology.md",
@@ -177,19 +190,8 @@
     "Brain-Hacking/Learning",
     "Brain-Hacking/Question-Based-Methodologies",
     "Excalidraw/LockAnatomony-101draw.md",
-    "Security-Disciplines/Physical-Security/Locksmith-Terminology.md",
-    "Images/patrickneal-cackalackycon-withthumbturnflipper.png",
-    "Images/patrickneal-cackalackycon-lockswith-thumbturnlevers.png",
-    "Images/patrickneal-cackalackycon-crashbarbypass.png",
-    "Images/patrickneal-cackalackycon-crashbarsandexitpaddles.png",
-    "Images/patrickneal-cackalackycon-leverhandleunderdoorthetoolattack.png",
-    "Images/patrickneal-cackalackycon-bypassingprotectiveplates.png",
-    "Images/patrickneal-cackalackycon-properdeadlatchinstallation.png",
-    "Images/patrickneal-cackalackycon-doorlatchbypassloidtools.png",
-    "Images/patrickneal-cackalackycon-jigglerortryoutkeys.png",
     "Securing-Networks-And-Systems/Hardening/Linux-Hardening.md",
     "Security-Disciplines/Physical-Security",
-    "Images/patrickneal-cackalackycon-wardedpicksbypasskeys.png",
     "Development/Languages/Bash/Bash.md",
     "Exploitation/Binary-Exploitation/Buffer-Overflow/Stackbased-Buffer-Overflow-Scripts.md",
     "Exploitation/Binary-Exploitation/Buffer-Overflow/Stackbased-Buffer-Overflows.md",
@@ -203,8 +205,6 @@
     "Exploitation/Windows/Potato-Exploits.md",
     "Exploitation/Exploitation.md",
     "Exploitation/Shells/Shells.md",
-    "Post-Exploitation/Evasion/Antivirus-Evasion/AMSI-Bypasses/AMSI-Bypassing.md",
-    "Post-Exploitation/Evasion/Antivirus-Evasion/AMSI-Bypasses/AMSI-Buffer-Patch-In-memory.md",
     "Tools/Malware/Obfuscators"
   ]
 }

@@ -8,11 +8,23 @@
 
 - TOOOL, The Open Organisation Of Lock pickers at [https://toool.us/](https://toool.us/)
 - [https://www.locksmiths.co.uk/locksmith-terminology-parts-of-locks/](https://www.locksmiths.co.uk/locksmith-terminology-parts-of-locks/) or the local mirror [[Locksmith-Terminology]]
+- YouTube (in no particular order)
+	- [lockpickinglawyer](https://www.youtube.com/@lockpickinglawyer)
+	- [bosnianbill](https://www.youtube.com/@bosnianbill)
+	- [DeviantOllam](https://www.youtube.com/@DeviantOllam)
+	- [RoonPicker](https://www.youtube.com/@RoonPicker)
 
-
-
-
-
+PDF: [BlackHat - Ten Things Everyone Should Know About Lockpicking & Physical Security by Deviant Ollam](https://www.blackhat.com/presentations/bh-europe-08/Deviant_Ollam/Whitepaper/bh-eu-08-deviant_ollam-WP.pdf) - List, but read and watch
+1. Locks are not complicated mechanisms
+2. Most locks are wildly easy to pick
+3. Unpickable doesn’t mean invulnerable
+4. Minor (component) changes make a big difference
+5. Advanced features aren’t a panacea
+6. Adding electricity isn’t magical
+7. Safe locks vary as widely as door locks
+8. Bump keying is a real problem, but one with real solutions
+9. Large facilities have their own unique concerns
+10. Security in the Real World (is mostly threaten by brute force not finesse tactics)
 ## Entry Types
 
 - Entry Typology
@@ -20,6 +32,7 @@
 	- Covert - Undetectable to the untrained, forensic investigation would discover traces 
 		- Lock Picking damages locks to some degree regardless of technique
 	- Surreptitious 	- Undetectable to trained and untrained people and would undetected in forensic investigation
+
 #### Introductory Talks 
 
 [YouTube - I'll Let Myself In: Tactics of Physical Pen Testers](https://www.youtube.com/watch?v=rnmcRTnTNC8): *"Many organizations are accustomed to being scared at the results of their network scans and digital penetration tests, but seldom do these tests yield outright "surprise" across an entire enterprise. Some servers are unpatched, some software is vulnerable, and networks are often not properly segmented. No huge shocks there. As head of a Physical Penetration team, however, my deliverable day tends to be quite different. With faces agog, executives routinely watch me describe (or show video) of their doors and cabinets popping open in seconds. This presentation will highlight some of the most exciting and shocking methods by which my team and I routinely let ourselves in on physical jobs."*
@@ -54,11 +67,19 @@
 	- Cylinder
 	- Driver pin are top half of a pin stack and have Teeth (see Teeth) 
 	- Key Pins are located on the bottom half of a pin stack
+	- Pin chamber are chambers drill through Shell and Plug and where the pin is located
+	- Plug is where the key goes
+	- Security Driver Pins
+		- Serrated will give several clicks as it is being picked
+		- Mushroom 
+		- Spool
 	- Shackle
 	- Shear Line is the interface between the two pins (Key and Driver) in a pin stack
-	- Spring
+	- Shell is the main body of the lock that the plug sits
+	- Spring prevents Driver and Key pins from rattling around
 	- Teeth (pointy bits on the Driver Pins)
 - Techniques
+	- False set is if a pin appears to be set but it doesn't rattle - [lockpickshop](https://www.lockpickshop.com/Lockpicking-Guide/lock-picking_ch8.htm)
 	- Raking
 	- Single Pin Picking (SPP) is picking a lock one pin at a time
 - Lock Picking Tools
@@ -70,12 +91,34 @@
 		- Hook Pick is a hook shaped pick for SPP
 		- Rake Pick - for Raking
 		- Skeleton keys or ([Wikipedia -  Lock picking](https://en.wikipedia.org/wiki/Lock_picking)): *"The warded pick, also known as a [skeleton key](https://en.wikipedia.org/wiki/Skeleton_key "Skeleton key"), is used for opening [warded locks](https://en.wikipedia.org/wiki/Warded_lock "Warded lock")*".
-		- Tension Wrench is used to apply torque to core of a lock whn picking
+		- Tension Wrench is used to apply torque to core of a lock when picking
 	- Wafer tumbler Tools
 		- Jigglers or Try-out keys
 		- Pick guns
 		- Tubular lock pick
- 
+	 - Tubular Locks
+		 - Tubular pick, is called a pick but it is an impressioning device 
+	- Bypass Tools:
+		- Under the Door Tool (UDT)
+		- Crashbar bypass
+		- Thumbturn
+		- Latch loid
+		- Plastic Sheets
+		- Lever Bypass or "shiv"
+		- Canned Air
+	- Alarm bypass and Magnetic utility 
+		- Strong Rare Earth Magnet
+		- Magnetic pole detector - check if the door is alarmed
+	- Duct or Clear Packing Tape
+	- Dress for success
+	- GOJFC - Authorised to Test Card
+#### Tooling
+
+[[Pretext]] is very important, know yourself and know other biases and desire to help - from [Patrick McNeil - The Right Way To Do Wrong](https://www.youtube.com/watch?v=sw94smSiJBY)
+![](patrickneal-cackalackycon-blackbagthatisnothavingtobeblack.png)
+
+
+
 ## Padlocks
 
 Padlocks - found: Document recycling bins, Gates, Document boxes..
@@ -208,11 +251,75 @@ Some gases can also be sprayed through the gaps in the door to replicate smoke t
 
 Request-To-Exit (REX) Sensors (Thermal sensor) are tripped by the gas Passive Infrared 
 Sensor do not differentiate between hot and cold - it is just `different equals human`. 
+![](patrickneal-cackalackycon-rexsensorbypass.png)
+Patrick has also seen:
+- Helium Balloons 
+- Disposable hand warmers on a wire
+- Vape smoke
+- Ollam's Whiskey 
+
+#### Adams Rite Bypass Tool
+
+Commonly found on commercial storefront doors in USA
+It employs a [Mortise Cylinder](https://www.adamsrite.com/en/products/accessories/4036-mortise-cylinder-4066-thumbturn) that *provides five-pin security with most Adams Rite deadlocks or deadlatches.* Typically these mortise cylinders are open at the back and so if there is a opening you can reach through into the back with bypass tool that is angled to hit the latch release lever.
+![](patrickneal-cackalackycon-adamritebypasstool.png)
+[Bosian Bill's YouTube Video on Adams Rite Bypass](https://www.youtube.com/watch?v=vXrlZJKpK0o)
+
+#### Kaba Simplex 
+
+Patrick referencing [Bosian Bill's YouTube Video: Kaba Simplex Door Combination Lock Defeated w/Sparrows "MAGNETO"](https://www.youtube.com/watch?v=2KSoPIeN9wY), there is also  the [LockPickingLawyer](https://www.youtube.com/watch?v=cCay5ek_cW0) Video on picking it too. Picture below demonstrates the use of a magnet to pulls the flag to unlock it... 
+![](patrickneal-cackalackycon-magnets-andkabasimplex.png)
+Put magnet into a sock to prevent the magnet getting stuck to the door. These also have a manufacturer default password:
+1. 2 + 4 simultaneously
+2. then depress 3 
+3. then feel for the click as each button is depressed
+
+#### Key Lock Boxes
+
+Key Lockbox combo decoding utilises a small piece of feeler gauge to decode the combination. The feeler gauge is placed between the dials, which then slowly rotated and  the feeler gauge will drop and this will indicate the notch. Repeat for each dial, then rotate all wheels one increment at a time until you find the gate and it opens up. [DeviantOllam - Decoding Multi-Wheel Locks with a Mini Knife](https://www.youtube.com/watch?v=8NqyjrMYZXo)
+![](patrickneal-cackalackycon-keylockboxes.png)
+
+For boxes with buttons - `jamming` buttons technique :
+![](patrickneal-cackalackycon-keylockboxesbuttons.png)
+
+Anti Jamming Boxes like the below - David S from Oak City Locksport 0-day (at video release):
+1. Tension wrench
+2. and then start jamming (feedback is more nuanced)
+![](patrickneal-cackalackycon-antijamming-with-tension-wrench-andjamming.png)
+
+
+#### Tubular Locks 
+
+[Wikipedia](https://en.wikipedia.org/wiki/Tubular_pin_tumbler_lock) states that *"a **tubular pin tumbler lock**, also known as a **circle pin tumbler lock**, **radial lock**, or the trademark **Ace lock** popularized by manufacturer [Chicago Lock Company](https://en.wikipedia.org/wiki/Chicago_Lock_Company "Chicago Lock Company") since 1933, is a variety of [pin tumbler lock](https://en.wikipedia.org/wiki/Pin_tumbler_lock "Pin tumbler lock") in which a number of pins are arranged in a circular pattern, and the corresponding key is tubular or cylindrical in shape. Most locks use between six and eight pins, although some use as few as four or as many as ten. The devices have been widely used on [vending machines](https://en.wikipedia.org/wiki/Vending_machines "Vending machines"), [elevators](https://en.wikipedia.org/wiki/Elevator "Elevator"), [public computers](https://en.wikipedia.org/wiki/Public_computers "Public computers"), and [bicycle locks](https://en.wikipedia.org/wiki/Bicycle_lock "Bicycle lock")."* But also backups for electronic safes, computer security cables, storage boxes mounted above the door/
+![](patrickneal-cackalackycon-tubularlocks.png)
+Round key fits into it pushes in the pins to the depths based on the cuts in the key and you hit the sheer line and it allows you to turn. To *"pick"* you use a Tubular pick, but it is an impressioning device:
+- Put it into the lock
+- Tension on the outside
+- Rotate the tubular pick back and forth
+- Based on the press of the spring come back at the tubular pick it pushes the pins up and you form a key 
+
+#### Knox
+
+Medeco-Biaxial lock that is very difficult to pick [YouTube video of RoonPicker picking a Medeco-Biaxial lock](https://www.youtube.com/watch?v=tkPxxbYTAOg). When fitted they are sent with a key that only Knox has access to, not available to Lock Smiths you have to order it from Knox. Each Key is numbered and tracked by Knox, these keys are for Law Enforcement and Fire Department to get into a building. There one master key per municipality area - this is bad if it is stolen as the thief would have access to buildings in that area. 
+
+#### Common Keys
+
+Manufacturers will use the same lock and therefore the keys are not unique among manufacturers. [Howard Payne & Deviant Ollam - This Key is Your Key, This Key is My Key](https://www.youtube.com/watch?v=a9b9IYqsb_U) (amazing talk name referencing [Woody Guthrie - This Land Is Your Land](https://www.youtube.com/watch?v=wxiMrvDbq3s))
+![](patrickneal-cackalackycon-keychainofdoom.png)
+and Elevator locks:
+![](patrickneal-cackalackycon-keychainofdoompart2.png)
+Elevator Supervisory Keys - more stealth than Fire Emergency keys:
+![](patrickneal-cackalackycon-keychainofdoom-elevatorsupervisorykey.png)
+
+Access Control Boxes unfortunately use common keys
+![](patrickneal-cackalackycon-keychainofdoom-telephony-access-control-boxes.png)
+On the Doorking boxes they have a momentary switch so carry wire to short the circuit of the terminal. The Linear shown above has a tamper switch use a magnet up against side of the box to bypass the tamper switch which is just a read switch. The Linear Pro Access was discuss in the [DEF CON 23 - Dennis Maldonado - Are We Really Safe? - Bypassing Access Control Systems](https://www.youtube.com/watch?v=-cZ7eDV2n5Y) talk.
+
 
 Patrick - 27:47
 Ollam - 15:56
 
-- Plates covering latch can still be bypassed
+
 
 
 ## References
@@ -224,3 +331,14 @@ Ollam - 15:56
 [Wikipedia - 1,1,1,2-Tetrafluoroethane](https://en.wikipedia.org/wiki/1%2C1%2C1%2C2-Tetrafluoroethane) 
 [https://www.locksmiths.co.uk/locksmith-terminology-parts-of-locks/](https://www.locksmiths.co.uk/locksmith-terminology-parts-of-locks/).
 [Wikipedia -  Lock picking](https://en.wikipedia.org/wiki/Lock_picking)
+[Bosian Bill's YouTube Video on Adams Rite Bypass](https://www.youtube.com/watch?v=vXrlZJKpK0o)
+[www.adamsrite.com Mortise Cylinder](https://www.adamsrite.com/en/products/accessories/4036-mortise-cylinder-4066-thumbturn) 
+[Bosian Bill's YouTube Video: Kaba Simplex Door Combination Lock Defeated w/Sparrows "MAGNETO"](https://www.youtube.com/watch?v=2KSoPIeN9wY)
+[LockPickingLawyer - Kaba Simplex Series 1000](https://www.youtube.com/watch?v=cCay5ek_cW0)
+[DeviantOllam - Decoding Multi-Wheel Locks with a Mini Knife](https://www.youtube.com/watch?v=8NqyjrMYZXo)
+[Wikipedia - Tubular pin tumbler lock](https://en.wikipedia.org/wiki/Tubular_pin_tumbler_lock) 
+[YouTube video of RoonPicker picking a Medeco-Biaxial lock](https://www.youtube.com/watch?v=tkPxxbYTAOg)
+[DEF CON 23 - Dennis Maldonado - Are We Really Safe? - Bypassing Access Control Systems](https://www.youtube.com/watch?v=-cZ7eDV2n5Y)
+[Lockpickworld](https://www.lockpickworld.com/pages/how-to-pick-locks)
+[lockpickshop](https://www.lockpickshop.com/Lockpicking-Guide/lock-picking_ch8.htm)
+[BlackHat - Ten Things Everyone Should Know About Lockpicking & Physical Security by Deviant Ollam](https://www.blackhat.com/presentations/bh-europe-08/Deviant_Ollam/Whitepaper/bh-eu-08-deviant_ollam-WP.pdf)

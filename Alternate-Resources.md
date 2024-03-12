@@ -39,8 +39,11 @@ The Awesome HackTricks - probably the best resource on Ethical Hacking and Pente
 
 #### John Hammond
 
-John Hammond Youtube Content creator with over thousands of videos; his [Youtube channel](https://www.youtube.com/channel/UCVeW9qkBjo3zosnqUbG7CFw) is 20 minute digestible videos that tackle both real-world and CTF problems with focus on accessibility to Cybersecurity in the real world. [John also the opposite of his meme counter-part](https://antagonists.fandom.com/wiki/Dr._John_Hammond) in that he educates malicious activity for safety of all rather the creating a theme park of hacking-horrors for money.
+John Hammond is a YouTube Content creator with over thousands of videos; his [Youtube channel](https://www.youtube.com/channel/UCVeW9qkBjo3zosnqUbG7CFw) is 20 minute digestible videos that tackle both real-world and CTF problems with focus on accessibility to Cybersecurity in the real world. [John also the opposite of his meme counter-part](https://antagonists.fandom.com/wiki/Dr._John_Hammond) in that he educates malicious activity for safety of all rather the creating a theme park of hacking-horrors for money.
 
+#### LaurieWired
+
+ Laurie Kirk is a professional Reverse Engineer, with a [DEFCON31 Talk - DEF CON 31 - Runtime Riddles - Abusing Manipulation Points in the Android Source - Laurie Kirk](https://www.youtube.com/watch?v=Bq7Z3X4xwCE). [LaurieWired](https://www.youtube.com/@lauriewired) is also YouTube Content creator reverse engineer malware, focusing on cross-platform and mobile analysis. Her [Github](https://github.com/LaurieWired)
 #### Lzone
 
 A good SysAdmin, DevOps, Cloud Engineer Cheatsheets at: [lzone.de Cheatsheets](https://lzone.de/cheat-sheet.html)
