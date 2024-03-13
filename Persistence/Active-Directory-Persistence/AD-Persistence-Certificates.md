@@ -1,6 +1,6 @@
 # Active Directory Persistence With Certificates
 
-We the use of [[AD-Certificate-Exploitation]], leveraging certifications to become Domain Admins can be viable method of persistemces as all that is requiered is a valid certificate used for client authentication. The certificate can be used to request a TGT. The certificate has to be revoked or expire for a failure state to occur, therefore potential persistent access by default for around 5 years. 
+We the use of [[AD-Certificate-Exploitation]], leveraging certifications to become Domain Admins can be viable method of persistence as all that is required is a valid certificate used for client authentication. The certificate can be used to request a TGT. The certificate has to be revoked or expire for a failure state to occur, therefore potential persistent access by default for around 5 years. 
 
 ## Certificate Authority CA 
 

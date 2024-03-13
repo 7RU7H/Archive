@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Security-Disciplines/Physical-Security/Physical-Security.md",
+                "file": "Exploitation/Exploitation.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Security-Disciplines/Physical-Security/Physical-Security.md",
+                "file": "Exploitation/Exploitation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Security-Disciplines/Physical-Security/Physical-Security.md",
+                "file": "Exploitation/Exploitation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Security-Disciplines/Physical-Security/Physical-Security.md"
+                "file": "Exploitation/Exploitation.md"
               }
             }
           },
@@ -160,6 +160,21 @@
   },
   "active": "76626a6d43f39bdb",
   "lastOpenFiles": [
+    "Security-Disciplines/Penetration-Testing/Tactical-Post-Exploitation.md",
+    "Security-Disciplines/Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Blue-KOTH-Battlegrounds-Cheatsheet-Linux.md",
+    "Security-Disciplines/Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Red-KOTH-Battlegrounds-Cheatsheet-Linux.md",
+    "Brain-Hacking/Question-Based-Methodologies/Question-Based-Hacking-Methodology.md",
+    "Hardware/Flipper-Zero/Flipper-Zero.md",
+    "Reverse-Engineering/Source-Code-Analysis.md",
+    "Reverse-Engineering/Reverse-Engineering.md",
+    "Reverse-Engineering/Binary-Composition/Program-Memory.md",
+    "Reverse-Engineering/Binary-Composition/Binary-Composition-Hub.md",
+    "Software/Operating-Systems/Windows/Windows-Concepts/Windows-Events/ETW.md",
+    "Securing-Networks-And-Systems/EDR/Aurora-EDR.md",
+    "Persistence/Active-Directory-Persistence/AD-Persistence-Certificates.md",
+    "Cloud/Azure/Azure-Administration/Azure-Manage-Identities-And-Governance/Azure-Administration-Cloud-Governance.md",
+    "Cloud/Azure/Azure-Administration/Azure-Manage-Identities-And-Governance/Azure-Administration-AD-Device-Management.md",
+    "Security-Disciplines/Physical-Security/Physical-Security.md",
     "Images/deviantollam-ilmi-talk-snifferonrfid.png",
     "Images/deviantollam-ilmi-talk-credentialgrabbingbyproximity.png",
     "Images/deviantollam-ilmi-talk-Babaklongrangereader.png",
@@ -170,9 +185,7 @@
     "Images/deviantollam-ilmi-talk-postalswitchisamomentary.png",
     "Images/deviantollam-ilmi-talk-pswwiredup.png",
     "Images/deviantollam-ilmi-talk-pswtoo.png",
-    "Images/deviantollam-ilmi-talk-solonoidpowereddoorlock.png",
     "Security-Disciplines/Physical-Security/Locksmith-Terminology.md",
-    "Security-Disciplines/Physical-Security/Physical-Security.md",
     "Alternate-Resources.md",
     "Brain-Hacking/Philosophy/Meta-Methodology.md",
     "README.md",
@@ -189,22 +202,9 @@
     "Brain-Hacking/Learning/Learn-to",
     "Brain-Hacking/Learning",
     "Brain-Hacking/Question-Based-Methodologies",
-    "Excalidraw/LockAnatomony-101draw.md",
-    "Securing-Networks-And-Systems/Hardening/Linux-Hardening.md",
     "Security-Disciplines/Physical-Security",
-    "Development/Languages/Bash/Bash.md",
-    "Exploitation/Binary-Exploitation/Buffer-Overflow/Stackbased-Buffer-Overflow-Scripts.md",
-    "Exploitation/Binary-Exploitation/Buffer-Overflow/Stackbased-Buffer-Overflows.md",
     "Exploitation/Binary-Exploitation/sedNDQpE8",
     "Exploitation/Binary-Exploitation/sedarKP5v",
-    "Tools/Network-Based/Ligolo-ng.md",
-    "Software/File-Typology/YAML.md",
-    "Software/File-Typology/BMP.md",
-    "Software/File-Typology/File-Extensions.md",
-    "Development/Languages/PowerShell/PowerShell.md",
-    "Exploitation/Windows/Potato-Exploits.md",
-    "Exploitation/Exploitation.md",
-    "Exploitation/Shells/Shells.md",
     "Tools/Malware/Obfuscators"
   ]
 }

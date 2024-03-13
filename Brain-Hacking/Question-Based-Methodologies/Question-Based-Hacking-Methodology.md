@@ -487,17 +487,17 @@ Condense:
 - What accounts are later objectives based on Company Role?
 
 
-- Localhost enumeration and assess the need to Privilege Escalation
+- Localhost enumeration and assess the need to Privilege Escalate:
 	- As operator are you?
-		- Stopping, considering security mechanisms that maybe in place to alert SOC, IR, etc.
-		- Are you meeting objective on a granular level with any action
-		- Gaining situational awareness
-		- Noting effectively 
-			- Pathing affectively
-			- Reducing information overload 
-		- Meeting requirements of stealth or (non)-harmful activities
-		- Assess the value of time in Privilege Escalating locally - should you laterally move?
-	- Are we in the Cloud or On-premises
+		- Stopping, considering security mechanisms that maybe in place to alert SOC, IR, etc?
+		- Are you meeting objective on a granular level with any action?
+		- Gaining situational awareness?
+		- Noting effectively?
+			- Pathing effectively to your objective, accessing relevance? 
+			- Reducing information overload, by accessing relevance?
+		- Meeting requirements of stealth or (non)-harmful activities?
+		- Assess the value of time in Privilege Escalating locally - should you laterally move instead?
+	- Are we in the Cloud or On-premises?
 	- What security is on host?
 		- Restricted Shell
 			- Windows `runas.exe` not work try: [[RunasCs]] or an alternative
@@ -506,29 +506,31 @@ Condense:
 		 - Virtualisation Software/Hardware?
 			- Are we in a container?
 				- Is it a container or cluster?
-			- Container/Pod image
+			- What is the Container/Pod image?
 			- What is the network configuration for the container(s)/cluster?
 			- Virtual Networking?
 	- What is CPU architecture and its implications?
 	- Operating System?
 		- [[Linux-Privilege-Escalation]]
 		- [[Windows-Privilege-Escalation-Enumeration]] and [[Windows-Privilege-Escalation-Vectors]]
-	- Have two is one - one is none? - Multiple shells for stability issues
+	- Have two is one - one is none - done? - Multiple shells, persistence mechanism for stability and return issues
 	- Are you able to run in memory?
 		- If not have you a method of altering the file system records to cleanup and **set a reminder** that you have touched disk?
-	- Living Off the Land Binaries?
+	- What is the scope of what users of that machine use the machine for and how?
+		- How can these be leveraged for stealth and objectives?
+	- Are there Living Off the Land Binaries to use?
 		- Custom and non-default additions including the below
 			- Custom additions are potentially normal, what is normal usage look like to security? 
 		- GTFOBins
 		- [[Windows-Living-Off-The-Land]]
-	- Kernel Version?  - and wait unless it Pwnkit and time saving situation
+	- Kernel Version?  - and wait unless it is Pwnkit or temporal equivalent that is reliable instant root/nt system and time saving situation?
 	- What services and applications are installed?
 		- What services are running?
-			- Why are they running - purpose of machine?
+			- Why are they running - purpose of the machine?
 			- What is running at high privileges?
 				- Should system or root be running that service?
-				- What is the file system tree surrounding the execution path?
-				- What DLLs is it using?
+				- What is the file system tree surrounding the execution path and is it controllable?
+				- What DLLs or SO libraries are being used?
 					- What is the file system tree surrounding a targetable DLL
 		- Installed Packages and Versions
 			- Third Applications? 
