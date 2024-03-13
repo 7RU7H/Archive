@@ -6,6 +6,8 @@
 [Wikipedia -  Lock picking](https://en.wikipedia.org/wiki/Lock_picking) refers to Lock picking as two word as: *"the practice of unlocking a [lock](https://en.wikipedia.org/wiki/Lock_(security_device) "Lock (security device)") by manipulating the components of the lock device without the original key."*
 
 
+Authorial Note: a Children's Book from my childhood is now forever changed by learning about this: enjoy the Michael Rosen discuss the meta-context of Physical Security: [We're Going On a Bear Hunt](https://www.youtube.com/watch?v=Iou5LV9dRP0) , but instead of bears you and I have will catch bull of eye-rubbing levels of WTF is this world really... standard Legal Disclaimers and do not be a horrible person, help people and do not put others at risk. 
+
 - TOOOL, The Open Organisation Of Lock pickers at [https://toool.us/](https://toool.us/)
 - [https://www.locksmiths.co.uk/locksmith-terminology-parts-of-locks/](https://www.locksmiths.co.uk/locksmith-terminology-parts-of-locks/) or the local mirror [[Locksmith-Terminology]]
 - YouTube (in no particular order)
@@ -40,6 +42,11 @@ PDF: [BlackHat - Ten Things Everyone Should Know About Lockpicking & Physical Se
 - Lock Picking is the 9th thing on the list to do
 - Installation of Doors is very important
 - Doors are legally required to open in an emergency
+- Under the Door, Over the Door and through the door and around the door
+- OH GOD THE KEYS ARE THE SAME KEY!
+
+Ollam's EDC Keyring of Doom:
+![](deviantollam-ilmi-talk-everydaycarrykeys.png)
 
 [Patrick McNeil - The Right Way To Do Wrong](https://www.youtube.com/watch?v=sw94smSiJBY): *"CackalackyCon1 - Patrick McNeil - The Right Way To Do Wrong: Physical security secrets of criminals and professionals alike In 1905 Harry Houdini wrote his first book entitled “The Right Way to Do Wrong” wherein he divulged the lockpicking and other trade secrets of criminals. People make assumptions about how schemes work and believe them to be complicated, yet in many cases the insider knows how simple they are. Most people assume that besides tailgating and social engineering, real break-ins (or physical security testing) are all about picking locks. However, the secret is that on physical pentests it’s typically unnecessary to do that! Some physical controls have known bypasses, and some building contractors (or even locksmiths) don't implement things correctly. Just like Houdini, I’ll be divulging the simple tricks of the trade employed by both criminals and professional physical pentesters to bypass physical controls without using lockpicks. You may be shocked and amazed by what you see, and once you leave you'll be an insider too - seeing insecurity everywhere!"*
 
@@ -79,8 +86,11 @@ PDF: [BlackHat - Ten Things Everyone Should Know About Lockpicking & Physical Se
 	- Spring prevents Driver and Key pins from rattling around
 	- Teeth (pointy bits on the Driver Pins)
 - Techniques
+	- Bumping - a bypass method uses a key cut to the lowest depths and kinetic energy to bounce the driver pins above the shear line and allow a lock to be opened
+	- Decoding - testing the combination through tension and feel rather than brute forcing combinations
 	- False set is if a pin appears to be set but it doesn't rattle - [lockpickshop](https://www.lockpickshop.com/Lockpicking-Guide/lock-picking_ch8.htm)
 	- Raking
+	- Rapping - opening Locks with spring loaded locking lugs by tapping a hammer on the side of the lock
 	- Single Pin Picking (SPP) is picking a lock one pin at a time
 - Lock Picking Tools
 	- Pin Tumbler Tools:
@@ -97,11 +107,21 @@ PDF: [BlackHat - Ten Things Everyone Should Know About Lockpicking & Physical Se
 		- Pick guns
 		- Tubular lock pick
 	 - Tubular Locks
-		 - Tubular pick, is called a pick but it is an impressioning device 
-	- Bypass Tools:
+		 - Tubular pick, is called a pick but it is an impressioning device
+	- Padlocks Bypass Tools:
+		- Jiggler - wiggled inside the keyway of wafer locks to roughly simulate the biting of the key and open the lock.
+		- Knife - for an unshielded padlock
+		- Mini knife for Masterlock 175
+		- Shim - for Padlocks with spring loaded locking lugs rather than ball bearings - inserted into the gaps between the casing and the lugs turned facing inside lugs to open the padlock 
+	- Hardware Bypass Tools:
+		- Over the Door - 33mm Film
 		- Under the Door Tool (UDT)
+		- Double Door Tool - for double doors with crash bar on the secure side
 		- Crashbar bypass
 		- Thumbturn
+		- Air Wedge - Pump with a bag attached - insert empty bag into gaps between doors and door frames or between double doors - also common automobile entry - and pump up the bag!
+		- Shim - for improperly hung doors
+		- Traveller Hook - Latch slipping and improperly hung doors
 		- Latch loid
 		- Plastic Sheets
 		- Lever Bypass or "shiv"
@@ -265,6 +285,8 @@ It employs a [Mortise Cylinder](https://www.adamsrite.com/en/products/accessorie
 ![](patrickneal-cackalackycon-adamritebypasstool.png)
 [Bosian Bill's YouTube Video on Adams Rite Bypass](https://www.youtube.com/watch?v=vXrlZJKpK0o)
 
+This can be prevented with shielding.
+
 #### Kaba Simplex 
 
 Patrick referencing [Bosian Bill's YouTube Video: Kaba Simplex Door Combination Lock Defeated w/Sparrows "MAGNETO"](https://www.youtube.com/watch?v=2KSoPIeN9wY), there is also  the [LockPickingLawyer](https://www.youtube.com/watch?v=cCay5ek_cW0) Video on picking it too. Picture below demonstrates the use of a magnet to pulls the flag to unlock it... 
@@ -276,8 +298,14 @@ Put magnet into a sock to prevent the magnet getting stuck to the door. These al
 
 #### Key Lock Boxes
 
+Key Boxes are for different contractors to enter building 
+![](deviantollam-ilmi-talk-keyboxes.png)
+
+
 Key Lockbox combo decoding utilises a small piece of feeler gauge to decode the combination. The feeler gauge is placed between the dials, which then slowly rotated and  the feeler gauge will drop and this will indicate the notch. Repeat for each dial, then rotate all wheels one increment at a time until you find the gate and it opens up. [DeviantOllam - Decoding Multi-Wheel Locks with a Mini Knife](https://www.youtube.com/watch?v=8NqyjrMYZXo)
 ![](patrickneal-cackalackycon-keylockboxes.png)
+
+
 
 For boxes with buttons - `jamming` buttons technique :
 ![](patrickneal-cackalackycon-keylockboxesbuttons.png)
@@ -315,10 +343,105 @@ Access Control Boxes unfortunately use common keys
 ![](patrickneal-cackalackycon-keychainofdoom-telephony-access-control-boxes.png)
 On the Doorking boxes they have a momentary switch so carry wire to short the circuit of the terminal. The Linear shown above has a tamper switch use a magnet up against side of the box to bypass the tamper switch which is just a read switch. The Linear Pro Access was discuss in the [DEF CON 23 - Dennis Maldonado - Are We Really Safe? - Bypassing Access Control Systems](https://www.youtube.com/watch?v=-cZ7eDV2n5Y) talk.
 
+Deviant Ollam and wife demonstrating system that requires a fob to open, but deviant has the common key and can flip the relay inside the box:
+![](deviantollam-ilmi-talk-key-alike.png)
+The Door King has been the same shape since 1992; Everything Door King uses the same key.
+![](deviantollam-ilmi-talk-doorkingkey16120.png)
 
-Patrick - 27:47
-Ollam - 15:56
+Door King also has Electronic components on some systems, opened with a common key...
+![](deviantollam-ilmi-talk-doorkingboxinternals.png)
+Both manual below display similar schematics for the terminal electronics (but are not the same as the [YouTube - I'll Let Myself In: Tactics of Physical Pen Testers](https://www.youtube.com/watch?v=rnmcRTnTNC8)), but do show which Dry Contacts (see [Wikipedia - Dry contacts (No Current definition probably, because I am no expert in electronics and just noted that here just to ensure universal scepticism to what I put here and may be read by others)](https://en.wikipedia.org/wiki/Dry_contact) *A dry contact is the synonym of volt free — it is not "wetted" by a voltage source. Dry contact can refer to a secondary set of contacts of a relay circuit which does not make or break the primary current being controlled by the relay. U*)  of the Terminal are the relays for the door:
+- https://www.doorking.com/sites/default/files/downloads/1812-065-M-3-07.pdf
+- https://doorking.com/sites/default/files/downloads/1835-065-D-5-17.pdf
 
+You can just bridge the circuit, you could also bridge Relay 2s to open that door too..
+![](deviantollam-ilmi-talk-bridgingcircuits.png)
+
+If by the electronics it indicates (yellow arrows) that it there is one common and one normally open that means it is a Solonoid Powered Door Locks meaning there normally no power required, but by bridging relays with wire the door will suddenly open.
+![](deviantollam-ilmi-talk-solonoidpowereddoorlock.png)
+
+Similarly to Ollam talk the https://doorking.com/sites/default/files/downloads/1835-065-D-5-17.pdf shows `PSW` 
+![](deviantollam-ilmi-talk-pswtoo.png)
+
+If these are wired up:
+![](deviantollam-ilmi-talk-pswwiredup.png)
+In this example the Postal Switch is just a momentary
+![](deviantollam-ilmi-talk-postalswitchisamomentary.png)
+These knockout can be banged out a replaced with a lock, the tail piece:
+![](deviantollam-ilmi-talk-tailpieceofamomentary.png)
+...will swing around a press the momentary switch (the button looking thing above)
+
+CH751 keys is very common place
+![](deviantollam-ilmi-talk-CH751key.png)
+
+1284X key is Ford motor company Crown Key - meaning every American Police Cruisers use this key and then when those Queen Vic cruiser are End of Life with Law enforcement they become... Taxis. When I heard this for the second-to-third time it I still needed a minute to recover.
+
+FEO-K1 Elevator Key
+C415A and CH751 - Filing cabinet keys
+16120 - Door King Key
+222343 (A126) - Linear Boxes key
+Cuff Key
+
+Wire Bridge (paper clips with insulation burnt off the tips)
+#### Lever Style Door Handles
+
+Door knobs are less prevalent and have mostly been replaced by Lever Style Door Handles to ensure that those with reduced grip and tactile function can open doors. Under the Door Tools are used to attack these as they can be opened from the inside.
+![](deviantollam-ilmi-talk-leverstyledoorhandles.png)
+And a picture from the other side of the door:
+![](deviantollam-ilmi-talk-underdoorattacks.png)
+Only very secure facilities require badging out of a room as well as in. 
+
+Migitation against Under the Door Attack: Dynamic Door Bottoms
+![](deviantollam-ilmi-talk-underthedoorprevention.png)
+
+But Over to Door attack with 35mm Film to open the door from the inside
+[LockPickingLawyer - Opening a Locked Door With Movie Film (With Deviant Ollam)](https://www.youtube.com/watch?v=byYGPO4ptxs)
+![](lockpickinglawyeranddevollamopendoorswithfilmfromtheotherside.png)
+Shrouds around the handles should be considered to prevent Over the Door attacks
+![](deviantollam-ilmi-talk-shroudtopreventoverthedoorattacks.png)
+These are found in [Grainger Catalogues](https://en.wikipedia.org/wiki/W._W._Grainger) (American industrial supply chain company buildings) are used to prevent carts from crashing into doors
+
+Hotels also mount these door handles down:
+![](deviantollam-ilmi-talk-hotelsmountingdoorhandlesdown.png)
+Hotel Doors with clips - these are the feet you put on slidey door closits 
+![](deviantollam-ilmi-talk-hoteldoorswithclips.png)
+
+#### Electronic Credentials
+
+Card Cloning
+
+Credential Sniffing
+
+Babak's long range reader 
+![](deviantollam-ilmi-talk-Babaklongrangereader.png)
+
+Credential grabbing with the device above inside the pack to the individuals left:
+![](deviantollam-ilmi-talk-credentialgrabbingbyproximity.png)
+
+If you can get the read off the wall you can install a sniffer on the backside of the reader:
+![](deviantollam-ilmi-talk-snifferonrfid.png)
+
+#### Alternative Key Copying
+
+[WildWest Hacking Fest: Copying Keys from Photos, Molds & More](https://www.youtube.com/watch?v=AayXf5aRFTI) by DeviantOllan: *"Most folk are aware that it's not a good idea to hand a stranger your keys... some very security-conscious folk are even wary of letting potential attackers SEE your keys. The risks of casting, molding, teleduplication, and quick decoding are real and such caution is merited. However, how many of you have ever actually /performed/ an attack like this yourself? Have you ever witnessed it live and in person?"*
+
+#### Weird Ways and [[Social-Engineering]]
+
+- Steal keys
+[Wikipedia -Dry contacts (No Current definition probably)](https://en.wikipedia.org/wiki/Dry_contact) 
+
+- Look like you belong and do what those belong there do
+
+- Pretext/ Cover Stories:
+	- Elevator Repair from: [YouTube - I'll Let Myself In: Tactics of Physical Pen Testers](https://www.youtube.com/watch?v=rnmcRTnTNC8)
+		- Dress for success, have a clip board (get a metal one that you can hide food, tools, etc inside) and badge
+		- Be in an elevator
+		- Press E button to communicate:
+			- "This is a test of the emergency phone in this elevator"
+			- "Can you hear me clearly right now?"
+			- "Can you tell me where I am calling from?"
+		- Depending on the building this will be automated or go to some human at a desk:
+			- [[Social-Engineering]] the individual on the desk to panic about not know where the call is coming from will override the concerns about not being informed as to elevator testing being scheduled
 
 
 
@@ -342,3 +465,7 @@ Ollam - 15:56
 [Lockpickworld](https://www.lockpickworld.com/pages/how-to-pick-locks)
 [lockpickshop](https://www.lockpickshop.com/Lockpicking-Guide/lock-picking_ch8.htm)
 [BlackHat - Ten Things Everyone Should Know About Lockpicking & Physical Security by Deviant Ollam](https://www.blackhat.com/presentations/bh-europe-08/Deviant_Ollam/Whitepaper/bh-eu-08-deviant_ollam-WP.pdf)
+[LockPickingLawyer - Opening a Locked Door With Movie Film (With Deviant Ollam)](https://www.youtube.com/watch?v=byYGPO4ptxs)
+[Wikipedia - W.W.Grainger ](https://en.wikipedia.org/wiki/W._W._Grainger)
+[Wikipedia -Dry contacts (No Current definition probably)](https://en.wikipedia.org/wiki/Dry_contact) 
+[thecoregroup](https://thecoregroup.net/)
