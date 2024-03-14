@@ -75,8 +75,6 @@ curl -:						#		follow redirects
 curl -b						#		specify cookies
 curl -X						#		specify http method!
 ```
-
-
 #### cut
 ```bash
 cut -d/ -f 2

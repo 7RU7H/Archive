@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exploitation/Exploitation.md",
+                "file": "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Windows-File-Transfers.md",
                 "mode": "source",
                 "source": false
               }
@@ -56,7 +56,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "angr",
+                "query": "docker",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exploitation/Exploitation.md",
+                "file": "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Windows-File-Transfers.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Exploitation/Exploitation.md",
+                "file": "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Windows-File-Transfers.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Exploitation/Exploitation.md"
+                "file": "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Windows-File-Transfers.md"
               }
             }
           },
@@ -160,6 +160,15 @@
   },
   "active": "76626a6d43f39bdb",
   "lastOpenFiles": [
+    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Linux-File-Transfers.md",
+    "Virtualization/Docker/Docker-Hacking.md",
+    "Software/Services/Containerisation.md",
+    "Cryptography-And-Authentication/Cracking-Files.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/Privilege-Escalation-Important-Linux-Locations.md",
+    "Software/Operating-Systems/Linux/Linux-Commands/Linux-Module-Commands.md",
+    "README.md",
+    "Exploitation/Exploitation.md",
     "Security-Disciplines/Penetration-Testing/Tactical-Post-Exploitation.md",
     "Security-Disciplines/Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Blue-KOTH-Battlegrounds-Cheatsheet-Linux.md",
     "Security-Disciplines/Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Red-KOTH-Battlegrounds-Cheatsheet-Linux.md",
@@ -187,16 +196,7 @@
     "Images/deviantollam-ilmi-talk-pswtoo.png",
     "Security-Disciplines/Physical-Security/Locksmith-Terminology.md",
     "Alternate-Resources.md",
-    "Brain-Hacking/Philosophy/Meta-Methodology.md",
-    "README.md",
-    "Software/Operating-Systems/Linux/btrfs-FileSystem.md",
     "Software/T",
-    "Networks/Network-Theory/IANA-Assigned-Internet-Protocol-Numbers.md",
-    "Brain-Hacking/Question-Based-Methodologies/Question-Based-Pwning-Methodology.md",
-    "Brain-Hacking/Question-Based-Methodologies/Question-Based-Reversing-Methodology.md",
-    "Brain-Hacking/Philosophy/Hacking-The-Thing.md",
-    "Brain-Hacking/Problem-Solving/Hacking-Meta-Hacking-Problems.md",
-    "Development/Exploit-Development/angr.md",
     "Brain-Hacking/Problem-Solving",
     "Brain-Hacking/Cyber-Related-Actions",
     "Brain-Hacking/Learning/Learn-to",
