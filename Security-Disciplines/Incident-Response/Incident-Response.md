@@ -71,9 +71,20 @@ Level 4: Crisis Management Team (CMT) Incident
 NIST's [SP-800-61 Incident Handling guide](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r2.pdf)
 
 1.  Preparation
-2.  Detection and Analysis
-3.  Containment, Eradication, and Recovery
-4.  Post-incident Activity
+	- Identify key stake holders and call trees (list of people to call that are responsible accounting for absence)
+	- Create and update Response playbooks
+	- Exercises for teams
+	- Continuous [[Threat-Hunting]] to create new alert rules 
+1.  Detection and Analysis
+	- Review alerts
+	- Perform a [[Digital-Forensics]] investigation
+	- Perform [[Malware-Analysis]]
+1.  Containment, Eradication, and Recovery
+	- Contain the problem
+	- Eradicate the problem
+	- Recover and return to Business as Usual
+1.  Post-incident Activity
+	- Evaluation
 
 SANS's [Incident Handler's handbook](https://www.sans.org/white-papers/33901/):
 
@@ -84,6 +95,13 @@ SANS's [Incident Handler's handbook](https://www.sans.org/white-papers/33901/):
 5.  Recovery
 6.  Lessons Learned
 
+#### Common Pitfalls
+
+- Insufficient Hardening
+- Insufficient Logging
+- Insufficient- and Over-Alerting
+- Insufficient Determination of Incident Scope
+- Insufficient Backups
 
 ## References
 
