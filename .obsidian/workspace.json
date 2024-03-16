@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exploitation/CVEs/Pwnkit.md",
+                "file": "Reconnaissance/OSINT/OSINT-Chris-Kubecka-DEFCON-27-Talk.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exploitation/CVEs/Pwnkit.md",
+                "file": "Reconnaissance/OSINT/OSINT-Chris-Kubecka-DEFCON-27-Talk.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Exploitation/CVEs/Pwnkit.md",
+                "file": "Reconnaissance/OSINT/OSINT-Chris-Kubecka-DEFCON-27-Talk.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Exploitation/CVEs/Pwnkit.md"
+                "file": "Reconnaissance/OSINT/OSINT-Chris-Kubecka-DEFCON-27-Talk.md"
               }
             }
           },
@@ -160,6 +160,18 @@
   },
   "active": "76626a6d43f39bdb",
   "lastOpenFiles": [
+    "Images/chriskubecka-openautomateddemandresponse-attachsystems.png",
+    "Images/chriskubecka-ismemegoddess-part2.png",
+    "Images/chriskubecka-ismemegoddess.png",
+    "Images/chriskubecka-protocolattachedtowindturbines.png",
+    "Images/chriskubecka-weedismoneymaking.png",
+    "Images/chriskubecka-gchqandtheunderground.png",
+    "Images/chriskubecka-salmonfarm.png",
+    "Images/chriskubecka-logisticshack.png",
+    "Images/chriskubecka-openeuropeansystems.png",
+    "Images/chriskubecka-openchinesesystems.png",
+    "Exploitation/CVEs/Pwnkit.md",
+    "Reconnaissance/OSINT/OSINT-Chris-Kubecka-DEFCON-27-Talk.md",
     "Exploitation/CVEs/Sudo-CVEs.md",
     "Exploitation/CVEs/CVE-2023-7028.md",
     "Exploitation/CVEs/CVE-2021-41773.md",
@@ -183,19 +195,7 @@
     "Reverse-Engineering/Reverse-Engineering.md",
     "Reverse-Engineering/Binary-Composition/Program-Memory.md",
     "Reverse-Engineering/Binary-Composition/Binary-Composition-Hub.md",
-    "Software/Operating-Systems/Windows/Windows-Concepts/Windows-Events/ETW.md",
-    "Securing-Networks-And-Systems/EDR/Aurora-EDR.md",
-    "Persistence/Active-Directory-Persistence/AD-Persistence-Certificates.md",
     "Images/deviantollam-ilmi-talk-snifferonrfid.png",
-    "Images/deviantollam-ilmi-talk-credentialgrabbingbyproximity.png",
-    "Images/deviantollam-ilmi-talk-Babaklongrangereader.png",
-    "Images/deviantollam-ilmi-talk-babiklongrangereader.png",
-    "Images/deviantollam-ilmi-talk-everydaycarrykeys.png",
-    "Images/deviantollam-ilmi-talk-CH751key.png",
-    "Images/deviantollam-ilmi-talk-tailpieceofamomentary.png",
-    "Images/deviantollam-ilmi-talk-postalswitchisamomentary.png",
-    "Images/deviantollam-ilmi-talk-pswwiredup.png",
-    "Images/deviantollam-ilmi-talk-pswtoo.png",
     "Software/T",
     "Brain-Hacking/Problem-Solving",
     "Brain-Hacking/Cyber-Related-Actions",
