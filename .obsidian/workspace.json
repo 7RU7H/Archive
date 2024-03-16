@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+                "file": "Brain-Hacking/Question-Based-Methodologies/Question-Based-OSINT-Methodology.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 344.5
+    "width": 242.5
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+                "file": "Brain-Hacking/Question-Based-Methodologies/Question-Based-OSINT-Methodology.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+                "file": "Brain-Hacking/Question-Based-Methodologies/Question-Based-OSINT-Methodology.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md"
+                "file": "Brain-Hacking/Question-Based-Methodologies/Question-Based-OSINT-Methodology.md"
               }
             }
           },
@@ -160,6 +160,8 @@
   },
   "active": "76626a6d43f39bdb",
   "lastOpenFiles": [
+    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+    "Brain-Hacking/Question-Based-Methodologies/Question-Based-OSINT-Methodology.md",
     "Exploitation/CVEs/Pwnkit.md",
     "Exploitation/CVEs/Dirty-Pipe.md",
     "Security-Disciplines/Incident-Response/Cyber-Crisis-Management.md",
@@ -183,7 +185,6 @@
     "Virtualization/Docker/Docker-Hacking.md",
     "Software/Services/Containerisation.md",
     "Cryptography-And-Authentication/Cracking-Files.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
     "Post-Exploitation/Privilege-Escalation/Linux/Privilege-Escalation-Important-Linux-Locations.md",
     "Software/Operating-Systems/Linux/Linux-Commands/Linux-Module-Commands.md",
     "README.md",
@@ -195,7 +196,6 @@
     "Hardware/Flipper-Zero/Flipper-Zero.md",
     "Reverse-Engineering/Source-Code-Analysis.md",
     "Reverse-Engineering/Reverse-Engineering.md",
-    "Reverse-Engineering/Binary-Composition/Program-Memory.md",
     "Software/T",
     "Brain-Hacking/Problem-Solving",
     "Brain-Hacking/Cyber-Related-Actions",
