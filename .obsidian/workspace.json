@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Security-Disciplines/Incident-Response/Cyber-Crisis-Management.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Security-Disciplines/Incident-Response/Cyber-Crisis-Management.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Security-Disciplines/Incident-Response/Cyber-Crisis-Management.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Security-Disciplines/Incident-Response/Cyber-Crisis-Management.md"
+                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md"
               }
             }
           },
@@ -160,6 +160,8 @@
   },
   "active": "76626a6d43f39bdb",
   "lastOpenFiles": [
+    "Exploitation/CVEs/Pwnkit.md",
+    "Exploitation/CVEs/Dirty-Pipe.md",
     "Security-Disciplines/Incident-Response/Cyber-Crisis-Management.md",
     "Reconnaissance/OSINT/OSINT-Chris-Kubecka-DEFCON-27-Talk.md",
     "Images/chriskubecka-openautomateddemandresponse-attachsystems.png",
@@ -172,7 +174,6 @@
     "Images/chriskubecka-logisticshack.png",
     "Images/chriskubecka-openeuropeansystems.png",
     "Images/chriskubecka-openchinesesystems.png",
-    "Exploitation/CVEs/Pwnkit.md",
     "Exploitation/CVEs/Sudo-CVEs.md",
     "Exploitation/CVEs/CVE-2023-7028.md",
     "Exploitation/CVEs/CVE-2021-41773.md",
@@ -195,7 +196,6 @@
     "Reverse-Engineering/Source-Code-Analysis.md",
     "Reverse-Engineering/Reverse-Engineering.md",
     "Reverse-Engineering/Binary-Composition/Program-Memory.md",
-    "Reverse-Engineering/Binary-Composition/Binary-Composition-Hub.md",
     "Software/T",
     "Brain-Hacking/Problem-Solving",
     "Brain-Hacking/Cyber-Related-Actions",
