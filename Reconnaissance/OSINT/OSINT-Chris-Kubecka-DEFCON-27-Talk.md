@@ -1,4 +1,3 @@
-
 # [[OSINT]] Chris Kubecka DEFCON 27 Talk
 
 
@@ -78,7 +77,7 @@ These Turbines are also attached to other [[Network-Protocols]] and therefore ot
 
 #### Smart Electric Meters
 
-- Mandatory in some EU countires
+- Mandatory in some EU countries
 - Mandatory in some US areas
 - Privacy concerns 
 	- Can be refused in Netherlands

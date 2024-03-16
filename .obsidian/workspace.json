@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Reconnaissance/OSINT/OSINT-Chris-Kubecka-DEFCON-27-Talk.md",
+                "file": "Security-Disciplines/Incident-Response/Cyber-Crisis-Management.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Reconnaissance/OSINT/OSINT-Chris-Kubecka-DEFCON-27-Talk.md",
+                "file": "Security-Disciplines/Incident-Response/Cyber-Crisis-Management.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Reconnaissance/OSINT/OSINT-Chris-Kubecka-DEFCON-27-Talk.md",
+                "file": "Security-Disciplines/Incident-Response/Cyber-Crisis-Management.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Reconnaissance/OSINT/OSINT-Chris-Kubecka-DEFCON-27-Talk.md"
+                "file": "Security-Disciplines/Incident-Response/Cyber-Crisis-Management.md"
               }
             }
           },
@@ -160,6 +160,8 @@
   },
   "active": "76626a6d43f39bdb",
   "lastOpenFiles": [
+    "Security-Disciplines/Incident-Response/Cyber-Crisis-Management.md",
+    "Reconnaissance/OSINT/OSINT-Chris-Kubecka-DEFCON-27-Talk.md",
     "Images/chriskubecka-openautomateddemandresponse-attachsystems.png",
     "Images/chriskubecka-ismemegoddess-part2.png",
     "Images/chriskubecka-ismemegoddess.png",
@@ -171,7 +173,6 @@
     "Images/chriskubecka-openeuropeansystems.png",
     "Images/chriskubecka-openchinesesystems.png",
     "Exploitation/CVEs/Pwnkit.md",
-    "Reconnaissance/OSINT/OSINT-Chris-Kubecka-DEFCON-27-Talk.md",
     "Exploitation/CVEs/Sudo-CVEs.md",
     "Exploitation/CVEs/CVE-2023-7028.md",
     "Exploitation/CVEs/CVE-2021-41773.md",
@@ -195,7 +196,6 @@
     "Reverse-Engineering/Reverse-Engineering.md",
     "Reverse-Engineering/Binary-Composition/Program-Memory.md",
     "Reverse-Engineering/Binary-Composition/Binary-Composition-Hub.md",
-    "Images/deviantollam-ilmi-talk-snifferonrfid.png",
     "Software/T",
     "Brain-Hacking/Problem-Solving",
     "Brain-Hacking/Cyber-Related-Actions",
