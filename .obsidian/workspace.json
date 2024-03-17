@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Brain-Hacking/Question-Based-Methodologies/Question-Based-OSINT-Methodology.md",
+                "file": "Security-Disciplines/Incident-Response/Cyber-Crisis-Management.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Brain-Hacking/Question-Based-Methodologies/Question-Based-OSINT-Methodology.md",
+                "file": "Security-Disciplines/Incident-Response/Cyber-Crisis-Management.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Brain-Hacking/Question-Based-Methodologies/Question-Based-OSINT-Methodology.md",
+                "file": "Security-Disciplines/Incident-Response/Cyber-Crisis-Management.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Brain-Hacking/Question-Based-Methodologies/Question-Based-OSINT-Methodology.md"
+                "file": "Security-Disciplines/Incident-Response/Cyber-Crisis-Management.md"
               }
             }
           },
@@ -160,11 +160,12 @@
   },
   "active": "76626a6d43f39bdb",
   "lastOpenFiles": [
-    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+    "Post-Exploitation/Data-Ex&Infiltration/Data-Exfiltration/Data-Exfiltration.md",
+    "Security-Disciplines/Incident-Response/Cyber-Crisis-Management.md",
     "Brain-Hacking/Question-Based-Methodologies/Question-Based-OSINT-Methodology.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
     "Exploitation/CVEs/Pwnkit.md",
     "Exploitation/CVEs/Dirty-Pipe.md",
-    "Security-Disciplines/Incident-Response/Cyber-Crisis-Management.md",
     "Reconnaissance/OSINT/OSINT-Chris-Kubecka-DEFCON-27-Talk.md",
     "Images/chriskubecka-openautomateddemandresponse-attachsystems.png",
     "Images/chriskubecka-ismemegoddess-part2.png",
@@ -195,7 +196,6 @@
     "Brain-Hacking/Question-Based-Methodologies/Question-Based-Hacking-Methodology.md",
     "Hardware/Flipper-Zero/Flipper-Zero.md",
     "Reverse-Engineering/Source-Code-Analysis.md",
-    "Reverse-Engineering/Reverse-Engineering.md",
     "Software/T",
     "Brain-Hacking/Problem-Solving",
     "Brain-Hacking/Cyber-Related-Actions",

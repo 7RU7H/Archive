@@ -6,6 +6,20 @@ Decision to determine the level of the issue is based on:
 - `number of affected users`
 - `impact` being measure by the operability of system(s) affected and by how much
 
+#### Process of CMT
+
+[THM Cyber Crisis Management Room](https://tryhackme.com/room/cybercrisismanagement): *"It is important to note that during the entire process, the CMT remains static. Rather than have members of the main CMT split off and find information, SMEs are used to bring information to the CMT. This is because if the CMT team were to split off during a critical moment, it would waste time to assemble the team again. This model ensures that the CMT can always receive critical information from stakeholders and SMEs."*
+
+1. Golden Hour
+2. information Update <--> Triage
+3. Action Discussion <--> Action Approval
+	- Action Discussion:
+		- Restricting remote access via VPN
+		- Domain Takedowns of a Domain Controller
+		- Switching a system to a disaster recovery environment
+	- Action Approval - Time Sensitive ([[Ransomware]] encrypting an entire system, preventing total [[Data-Exfiltration]], etc)
+		- Decisions will often be made very hierarchically and directly by the CEO
+1. Documentation and Crisis Closure
 
 #### Roles in the CMT
 
@@ -22,6 +36,13 @@ Hierarchy and Chain of command is best for CMT as democratised decision making i
 | Subject Matter Experts  | Most of the members of the CMT are not technical. These are members that are exceptional at business concerns but do not usually concern themselves with the day-to-day complexities of actually running the organisation's systems. During a cyber crisis, subject matter experts (SMEs) play a vital role in providing critical information to the members of the CMT. This information then helps inform the team about the crisis scope and which actions would be the best to perform. During a cyber crisis, this would most likely include the head of the SOC and/or the incident manager of the CSIRT. |
 | Scribe                  | Note-taking is incredibly important during a cyber crisis. It is important to create a full timeline of events as this often has to be disclosed to other third parties, such as the government or regulator. The role of the scribe is therefore important to detail all events and conversations during the CMT session.                                                                                                                                                                                                                                                                                      |
 |                         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+
+Subject Matter Experts are very important in aiding CMT in areas where the requirement for knowledge depth in subject is vital to the CMT to act effectively. A CMT is still a group, which teamed to provide breadth of mixed expertise and capabilities, but as a group are more effective than a straining a few SMEs to perform both roles. SMEs job is to provide information to the CMT to act upon it.
+
+[THM Cyber Crisis Management Room](https://tryhackme.com/room/cybercrisismanagement) :
+*The CMT can only take effective actions if the following is true:*
+- *The CMT must have an accurate understanding of the scope of the incident, including what has happened and what the impact is on the business. It will never be possible to understand the full crisis scope as the investigation will still be ongoing, but having an as clear as possible picture is important.*  
+- *The CMT has to understand what actions are available for them to take and what the impact vs effectiveness of these actions would be*
 #### The Golden Hour
 
 - Assembly
@@ -37,7 +58,13 @@ Hierarchy and Chain of command is best for CMT as democratised decision making i
 	- Controlling the narrative
 	- Calming 
 
+#### Actions of a CMT
 
+- Internal Communication
+- External Communication
+- Informing Regulators
+- Contacting Law Enforcement
+- Exercising CMT
 
 ## References
 
