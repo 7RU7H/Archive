@@ -251,6 +251,13 @@ if [ "$#" -ne $ARGTOTAL ]; then
 fi
 ```
 
+#### Host IPv4 address Generator And Recon Hosts
+[Inspired by StackOverflow answer](https://stackoverflow.com/questions/43805963/how-to-iterate-a-for-loop-and-create-a-customized-string?rq=3)
+```bash
+threeoctets="10.0.3."; for (( i = 0; i <= 255; ++i )); do echo "$threeoctets$i"; done
+# Requires netcat
+threeoctets="10.0.3."; for (( i = 0; i <= 255; ++i )); do ip="$threeoctets$i";nc -nvv -w 1 -z $ip 22; done
+```
 #### Simple Port Scanner
 ```bash
 #!/bin/bash
@@ -318,4 +325,5 @@ ${BOLD}[+]USAGE:${NORMAL} ./search.sh  (OPTIONS)
 
 [More from askubuntu](https://askubuntu.com/questions/1057870/bash-script-for-i-in-x-y#1057897)
 [StackOverFlow](https://stackoverflow.com/questions/42875809/checking-sudo-in-bash-script-with-if-statements)
-[string variant](https://stackoverflow.com/questions/2283640/case-statements-evaluate-to-strings#2283814)[]
+[string variant](https://stackoverflow.com/questions/2283640/case-statements-evaluate-to-strings#2283814)
+[StackOverflow answer inspiration for Host IPv4 address Generator](https://stackoverflow.com/questions/43805963/how-to-iterate-a-for-loop-and-create-a-customized-string?rq=3)

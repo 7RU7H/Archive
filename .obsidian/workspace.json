@@ -13,26 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b9b59ab8fcbc070d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Virtualization/Docker/Docker-Hacking.md",
+                "file": "Development/Languages/Bash/Bash.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Virtualization/Docker/Docker-Hacking.md",
+                "file": "Development/Languages/Bash/Bash.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Virtualization/Docker/Docker-Hacking.md",
+                "file": "Development/Languages/Bash/Bash.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Virtualization/Docker/Docker-Hacking.md"
+                "file": "Development/Languages/Bash/Bash.md"
               }
             }
           },
@@ -171,9 +158,21 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "b9b59ab8fcbc070d",
+  "active": "76626a6d43f39bdb",
   "lastOpenFiles": [
+    "Reconnaissance/Active-Information-Gathering/Netcat-As-Recon.md",
+    "Post-Exploitation/Post-Exploitation-Enumeration/macOS-Information-Gathering.md",
+    "Post-Exploitation/Post-Exploitation-Enumeration/Foothold-Enumeration.md",
+    "Post-Exploitation/Post-Exploitation-Enumeration/Windows-Post-Exploitation-Info-Gathering.md",
+    "Post-Exploitation/Post-Exploitation-Enumeration/Post-Exploitation-Striking Gold-with-Covert-Recon-Derek-Rook-TALK.md",
+    "Post-Exploitation/Post-Exploitation-Enumeration/Network-Infrastructure-Enumeration.md",
+    "Development/Languages/Bash/Bash.md",
+    "Reconnaissance/Port-Knocking.md",
+    "Post-Exploitation/Lateral-Movement/Lateral-Movement.md",
+    "Post-Exploitation/Networking/Pivoting-Tunnelling-And-Redirection-Master-Class-Darnell-And-Thurner-Notes.md",
+    "Post-Exploitation/Networking/Port-Redirection-And-Tunnelling.md",
     "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/Privilege-Escalation-Important-Linux-Locations.md",
     "Virtualization/Docker/Docker-Hacking.md",
     "Security-Disciplines/Incident-Response/Cyber-Crisis-Management.md",
     "Post-Exploitation/Data-Ex&Infiltration/Data-Exfiltration/Data-Exfiltration.md",
@@ -197,18 +196,6 @@
     "Security-Disciplines/Incident-Response/Incident-Response.md",
     "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Windows-File-Transfers.md",
     "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Linux-File-Transfers.md",
-    "Software/Services/Containerisation.md",
-    "Cryptography-And-Authentication/Cracking-Files.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Privilege-Escalation-Important-Linux-Locations.md",
-    "Software/Operating-Systems/Linux/Linux-Commands/Linux-Module-Commands.md",
-    "README.md",
-    "Exploitation/Exploitation.md",
-    "Security-Disciplines/Penetration-Testing/Tactical-Post-Exploitation.md",
-    "Security-Disciplines/Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Blue-KOTH-Battlegrounds-Cheatsheet-Linux.md",
-    "Security-Disciplines/Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Red-KOTH-Battlegrounds-Cheatsheet-Linux.md",
-    "Brain-Hacking/Question-Based-Methodologies/Question-Based-Hacking-Methodology.md",
-    "Hardware/Flipper-Zero/Flipper-Zero.md",
-    "Reverse-Engineering/Source-Code-Analysis.md",
     "Software/T",
     "Brain-Hacking/Problem-Solving",
     "Brain-Hacking/Cyber-Related-Actions",
