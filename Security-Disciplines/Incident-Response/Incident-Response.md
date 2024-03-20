@@ -6,6 +6,10 @@ More commonly as of 2020s referred to as the [[Purple-Team]], Incident Response 
 - Containment, Eradication and Remediation
 - Post-Incident activities
 
+## Preparation
+
+
+
 ## IR and IM
 
 The primary objective is ascertain the scope of incident, otherwise incident management process will not be sufficient in response to totality of the incident.  
@@ -106,4 +110,5 @@ SANS's [Incident Handler's handbook](https://www.sans.org/white-papers/33901/):
 ## References
 
 [THM DFIR Room](https://tryhackme.com/room/introductoryroomdfirmodule)
-[THM Intro to IR and IM](https://tryhackme.com/room/introtoirandim)
+[THM Intro to IR and IM Room](https://tryhackme.com/room/introtoirandim)
+[THM Preparation Room](https://tryhackme.com/room/preparation)
