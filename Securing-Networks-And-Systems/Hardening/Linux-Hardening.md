@@ -4,7 +4,7 @@
 
 [[Physical-Security]] for your Linux machine...
 
-Encrypt your drives. Defense in depth; depth being analogus to wasting the time of the attacker.  
+Encrypt your drives. Defence in depth; depth being analogous to wasting the time of the attacker.  
 
 GRUB password with [PBKDF2](https://en.wikipedia.org/wiki/PBKDF2)
 ```bash
@@ -12,8 +12,20 @@ GRUB password with [PBKDF2](https://en.wikipedia.org/wiki/PBKDF2)
 grub2-mkpasswd-pbkdf2
 ```
 
-For [[Kali-Hardening]] LVM encryption is avaliable preinstall.
+For [[Kali-Hardening]] LVM encryption is available pre-install.
+## Patch Management
 
+1. Remove unnecessary packages and service
+
+Some distributions have unattended-upgrades package to mitigate against low-hanging-fruit [[Linux-Kernel]] exploits
+Ubuntu:  [unattended-upgrades](https://packages.ubuntu.com/jammy/admin/unattended-upgrades):
+- Installed by default from 18.04 onwards and
+- Manually installed on on Ubuntu back to at least 10.04 (Lucid).
+
+Debian [unattended-upgrades](https://packages.ubuntu.com/jammy/admin/unattended-upgrades) has of [Debian 9 (Stretch)](https://wiki.debian.org/UnattendedUpgrades) is installed by default .
+- [HTB Academy](https://academy.hackthebox.com) states: *"Debian based operating systems going back to before Jessie also have this package available."*
+Red Hat based systems:[yum-cron manpage](https://man7.org/linux/man-pages/man8/yum-cron.8.html) 
+- [redhat blog: using yum-cron](https://www.redhat.com/sysadmin/using-yum-cron) 
 
 ## Snort
 
@@ -63,6 +75,17 @@ sudo mount -o remount,noexec /dev/shm
 mount | grep shm # to check flags
 ```
 
+## User Management
+
+- Limit the number of users and administrator accounts
+- Ensure valid/invalid logins are logged and monitored
+- Long Strong Password Policy
+	- Prevent password reuse with `/etc/security/opasswd` and PAM module
+- MFA if possible
+- [[Principle-Of-Least-Privilege]] 
+	- Group
+	- SUID/SGUID
+	- sudo/doas etc
 
 ## Filesystem 
 
@@ -139,6 +162,38 @@ cryptmount mycryptlabel
 # unmount
 cryptmount -u mycryptlabel
 ```
+
+Audit writable files and directories and any binaries set with the SUID bit.
+```bash
+find / -type f -perm -u=s 2>/dev/null
+find / -type f -perm -g=s 2>/dev/null
+find / -type d -perm -u=s 2>/dev/null
+find / -type d -perm -g=s 2>/dev/null
+```
+
+Ensure that any cron jobs and sudo privileges specify any binaries using the absolute path.
+```bash
+cat /etc/crontab
+# Check each!
+ls -la  /etc/cron.d*
+# Sudoers file!
+sudo cat /etc/sudoers 
+```
+
+- Do not allow storage of credentials in cleartext in world-readable files or environment variables.
+
+- Clean up home directories and bash history.
+	- Permissions
+	- Binaries -> `/opt/`, `/var/share` etc.
+	- Nice directory structures that are make it easier to track files 
+	- Check `au[Puppet](https://puppet.com/use-cases/configuration-management/), [SaltStack](https://github.com/saltstack/salt), [Zabbix](https://en.wikipedia.org/wiki/Zabbix) and [Nagios](https://en.wikipedia.org/wiki/Nagios) to automatethorized_hosts`
+
+Ensure that low-privileged users cannot modify any custom libraries called by programs
+```bash
+find / -type f -writable -user $username 2>/dev/null
+find / -type d -writable -user $username 2>/dev/null
+```
+
 
 ## Firewalls
 
@@ -335,6 +390,8 @@ sed 's/*/[a-zA-Z0-9_-]/g' /etc/sudoers.d/$USER
 
 [CrowdStrike:](https://www.crowdstrike.com/guides/linux-logging/advanced-concepts/) *"Linux uses a daemon called rsyslogd to process messages using the syslog protocol. This service evolved from the regular syslog daemon to the current enterprise-level logging system."* Its configuration file can be found at `/etc/rsyslog.conf` on Red Hat, Debian-based including [[Kali]], and Fedora. Its directives are located in `/etc/rsyslog.d/*.conf`
 
+[[Linux-Logging]] if required for detection, beware `logrotate` can be a [[Linux-Privilege-Escalation]] mechanism. 
+
 [CrowdStrike example of writing kernel logging with an alert level then forwarding to a remote host](https://www.crowdstrike.com/guides/linux-logging/advanced-concepts/) 
 ```bash
 # Write kernel logs to file
@@ -374,6 +431,19 @@ For [[Debian-Package-Management]] [logcheck](https://www.debian.org/doc/manuals/
 		- `/var/log/apt/history.log` - command history
 		- `/var/log/apt/term.log` - terminal output
 
+## Auditing Tools
+
+[Lynis](https://github.com/CISOfy/lynis) is for Unix-based systems (Linux, macOS, BDS, etc.)
+```
+./lynis audit system
+```
+
+[Puppet](https://puppet.com/use-cases/configuration-management/), [SaltStack](https://github.com/saltstack/salt), [Zabbix](https://en.wikipedia.org/wiki/Zabbix) and [Nagios](https://en.wikipedia.org/wiki/Nagios) to automate user management checks push messages to a Slack channel or email box. 
+Auto correction to correct issues over a fleet of node:
+- Remote actions (Zabbix) 
+- Remediation Actions (Nagios)
+Checksum verification of sensitive files or binaries:
+- Zabbix
 ## Distribution Specific Guides
 
 - [Fedora](https://docs.fedoraproject.org/en-US/fedora/17/html/Security_Guide/chap-Security_Guide-Basic_Hardening.html)
@@ -406,3 +476,9 @@ For [[Debian-Package-Management]] [logcheck](https://www.debian.org/doc/manuals/
 [Uncomplicated Firewall (ufw)](https://wiki.ubuntu.com/UncomplicatedFirewall)
 [Snort](https://www.snort.org/faq/what-is-snort) 
 [Fail2ban](https://github.com/fail2ban/fail2ban)
+[unattended-upgrades](https://packages.ubuntu.com/jammy/admin/unattended-upgrades)
+[Debian 9 (Stretch)](https://wiki.debian.org/UnattendedUpgrades) 
+[HTB Academy](https://academy.hackthebox.com)
+[yum-cron manpage](https://man7.org/linux/man-pages/man8/yum-cron.8.html) 
+[redhat blog: using yum-cron](https://www.redhat.com/sysadmin/using-yum-cron) 
+[Lynis](https://github.com/CISOfy/lynis) 

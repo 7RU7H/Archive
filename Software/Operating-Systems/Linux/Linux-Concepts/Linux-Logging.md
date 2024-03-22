@@ -37,6 +37,24 @@ ausearch --message USER_LOGIN --success no --interpret
 ausearch --message USER_LOGIN --success no --interpret | grep ct=root | wc -l
 ```
 
+`logrotate` archives or disposes of old logs to prevent excessive disk usage. Beware this can be used for [[Linux-Privilege-Escalation]] if run as root or privileged user log file write permissions and has vulnerable versions:
+- 3.8.6
+- 3.11.0
+- 3.15.0
+- 3.18.0
+```bash
+man logrotate
+logrotate --help
+# The configuration file is located:
+cat /etc/logrotate.conf
+# Confirguation files per service 
+ls -la /etc/logrotate.d/*
+
+logrotate [OPTION...] <configfile>
+# Forcing new rotation by set the date after the individual log files in the status file:
+cat /var/lib/logrotate.status # or...
+logrotate -f # --force to force rotation 
+```
 
 ## References
 
@@ -44,3 +62,4 @@ ausearch --message USER_LOGIN --success no --interpret | grep ct=root | wc -l
 [THM Intro to SIEM](https://tryhackme.com/room/introtosiem)
 [Crowdstrike Advanced Linux Logging](https://www.crowdstrike.com/guides/linux-logging/advanced-concepts/)
 [Wikipedia syslog-ng](https://github.com/syslog-ng/syslog-ng)
+[HTB Academy Logrotate](https://academy.hackthebox.com)

@@ -8,43 +8,55 @@
         "type": "tabs",
         "children": [
           {
-            "id": "76626a6d43f39bdb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Exploitation/Video-Game-Hacking/Video-Game-Hacking.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "18c4a28c09ff7070",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+                "file": "Cloud/Kubernetes/Kubernetes.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "4005fa0608eaf732",
+            "id": "76f426e641a10d90",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Security-Disciplines/Digital-Forensics/Linux-Forensics.md",
+                "file": "Persistence/Linux-Persistence.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f6b1931f571c0ea0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Reconnaissance/Passive-Information-Gathering/Search-Engine-Dorking.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ba89ec4a9bc49053",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Securing-Networks-And-Systems/Hardening/Linux-Hardening.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -110,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Security-Disciplines/Digital-Forensics/Linux-Forensics.md",
+                "file": "Securing-Networks-And-Systems/Hardening/Linux-Hardening.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Security-Disciplines/Digital-Forensics/Linux-Forensics.md",
+                "file": "Securing-Networks-And-Systems/Hardening/Linux-Hardening.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Security-Disciplines/Digital-Forensics/Linux-Forensics.md"
+                "file": "Securing-Networks-And-Systems/Hardening/Linux-Hardening.md"
               }
             }
           },
@@ -183,13 +195,16 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "4005fa0608eaf732",
+  "active": "ba89ec4a9bc49053",
   "lastOpenFiles": [
-    "Persistence/Rootkits/Rootkits.md",
-    "Security-Disciplines/Digital-Forensics/Linux-Forensics.md",
     "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+    "Software/Operating-Systems/Linux/Linux-Concepts/Linux-Logging.md",
+    "Reconnaissance/Passive-Information-Gathering/Search-Engine-Dorking.md",
     "Persistence/Linux-Persistence.md",
+    "Cloud/Kubernetes/Kubernetes.md",
     "Exploitation/Video-Game-Hacking/Video-Game-Hacking.md",
+    "Security-Disciplines/Digital-Forensics/Linux-Forensics.md",
+    "Persistence/Rootkits/Rootkits.md",
     "Tools/C2/Sliver/Sliver-Cheatsheet.md",
     "Development/Languages/Bash/Bash.md",
     "Security-Disciplines/Incident-Response/Incident-Response.md",
@@ -208,9 +223,6 @@
     "Post-Exploitation/Post-Exploitation-Enumeration/Network-Infrastructure-Enumeration.md",
     "Reconnaissance/Port-Knocking.md",
     "Post-Exploitation/Lateral-Movement/Lateral-Movement.md",
-    "Post-Exploitation/Networking/Pivoting-Tunnelling-And-Redirection-Master-Class-Darnell-And-Thurner-Notes.md",
-    "Post-Exploitation/Networking/Port-Redirection-And-Tunnelling.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Privilege-Escalation-Important-Linux-Locations.md",
     "Images/chriskubecka-openautomateddemandresponse-attachsystems.png",
     "Images/chriskubecka-ismemegoddess-part2.png",
     "Images/chriskubecka-ismemegoddess.png",

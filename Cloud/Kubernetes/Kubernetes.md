@@ -1,5 +1,8 @@
 # Kubernetes 
 
+[Kubernetes](https://kubernetes.io/docs/concepts/overview/), *"also known as K8s, is an open-source system for automating deployment, scaling, and management of containerized applications."*
+
+
 For hacking [[Kubernetes-Hacking]].
 
 Kubernetes Architecture:
@@ -173,10 +176,12 @@ kubectl <cmd> statefulset
 
 ## References
 
+[THM Intro to Kubernetes Room](https://tryhackme.com/room/introtok8s)
 [Online YAML prettifier](https://onlineyamltools.com/prettify-yaml)
 [NSA CISA Kubenetes Hardening Guide](https://media.defense.gov/2022/Aug/29/2003066362/-1/-1/0/CTR_KUBERNETES_HARDENING_GUIDANCE_1.2_20220829.PDF)
 [Google's Kubenetes Hardening Documentation](https://cloud.google.com/kubernetes-engine/docs/how-to/hardening-your-cluster#restrict_self_modify)
 [Microsoft Learn]([Configure Azure Kubernetes Service networking - Training | Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/configure-azure-kubernetes-service/4-kubernetes-networking))
 [Bluematador's kubectl-cheatsheet](https://www.bluematador.com/learn/kubectl-cheatsheet)
 [Microsoft Learn's Intro to Kubernetes](https://learn.microsoft.com/en-us/training/modules/intro-to-kubernetes/)
-[Replication Controller Vs Replica Set | by Avinash Kumar - The Learning Destination | Medium](https://medium.com/@avinashkumarmahto51/replication-controller-vs-replica-set-29b5e0bc83d9))'
+[Replication Controller Vs Replica Set | by Avinash Kumar - The Learning Destination | Medium](https://medium.com/@avinashkumarmahto51/replication-controller-vs-replica-set-29b5e0bc83d9)
+[Kubernetes](https://kubernetes.io/docs/concepts/overview/)
