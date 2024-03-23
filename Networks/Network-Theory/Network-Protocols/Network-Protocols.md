@@ -178,10 +178,12 @@ Recon with `ike-scan`, see [[IPsec]]
 Line Printer Daemon
 
 ## 591- HTTP-ALT
-//default 591
 
-## 631 - IPP
-Internet printing protocol default port 631
+Default port 591
+
+## 631 - [[IPP]]
+
+Internet Printing Protocol default port 631
 
 ## 636 - LDAPS
 
