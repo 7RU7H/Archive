@@ -40,7 +40,7 @@ pip install win_unicode_console
 - `db/*` - database of supported models
 - `lpd/*` - Scripts for LPD fuzzing
 
-Printer Languages
+Printer Languages supported by [PRET](https://github.com/RUB-NDS/PRET), but it is better to just `help` to list the commands supported potentially by the Printer
 1. PS (Postscript)
 2. PJL (Printer Job Language)
 3. PCL (Printer Command Language)
@@ -98,7 +98,6 @@ Generic file system operations with a PS/PJL/PCL specific implementation are:
 │ free      │  ✓  │  ✓  │  ✓  │ Show available memory.                 │
 └───────────┴─────┴─────┴─────┴────────────────────────────────────────┘
 ```
-
 
 
 #### Cheatsheets
