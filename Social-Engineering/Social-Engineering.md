@@ -1,6 +1,5 @@
 # Social Engineering
 
-# Social Engineering
 
 [Robin Dreeke's Mantra](https://www.youtube.com/watch?v=H3XR4QrJyxA) to gain another's trust:
 - seek their thoughts and opinions
@@ -18,7 +17,7 @@ Context is almost everything and paranoia is much worse than diligence.
 
 #### Work in progress
 
-This is just a place to dump ideas and theory before seperating out cheatsheets and theory, etc to other pages
+This is just a place to dump ideas and theory before separating out cheatsheets and theory, etc to other pages
 
 
 Consensus and Social Proof

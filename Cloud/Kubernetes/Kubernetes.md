@@ -2,6 +2,14 @@
 
 [Kubernetes](https://kubernetes.io/docs/concepts/overview/), *"also known as K8s, is an open-source system for automating deployment, scaling, and management of containerized applications."*
 
+Kubernetes is:
+- Container orchestration
+- Used for microservices as alternative to monolithic applications
+- Design to try to be:
+	- Portable across architectures
+	- Scalable
+	- *highly Available* (it runtime management so that services remain up)
+- Authorial opinion: ...is not a simple solution and has lot of very interesting complexities for better and for worse. This has led to third parties providing the backbone and management because of the knowledge required to *gleem the `kube`* - know some fundamentals of networking and system administration helps.
 
 For hacking [[Kubernetes-Hacking]].
 

@@ -1,4 +1,4 @@
-# Hardening
+# Hardening Linux
 
 ## Physical Security
 
@@ -444,6 +444,13 @@ Auto correction to correct issues over a fleet of node:
 - Remediation Actions (Nagios)
 Checksum verification of sensitive files or binaries:
 - Zabbix
+
+#### Rootkit detection
+
+[[Rootkits]] are very bad, have some piece of mind by using (these will still require you to follow up on anything - it will not auto-remove a rootkit or definitively declare you have a rootkit - beware the difference of tool and being a tool - use brain, be brave and investigate):
+- [Chkrootkit (Check Rootkit)](https://www.chkrootkit.org/)
+- [RKHunter (Rootkit Hunter)](https://rkhunter.sourceforge.net/) 
+
 ## Distribution Specific Guides
 
 - [Fedora](https://docs.fedoraproject.org/en-US/fedora/17/html/Security_Guide/chap-Security_Guide-Basic_Hardening.html)
@@ -452,6 +459,8 @@ Checksum verification of sensitive files or binaries:
 
 - Consideration to add on research... 
 	- [Exec Shield](https://en.wikipedia.org/wiki/Exec_Shield) 
+
+
 
 ## References
 
@@ -482,3 +491,5 @@ Checksum verification of sensitive files or binaries:
 [yum-cron manpage](https://man7.org/linux/man-pages/man8/yum-cron.8.html) 
 [redhat blog: using yum-cron](https://www.redhat.com/sysadmin/using-yum-cron) 
 [Lynis](https://github.com/CISOfy/lynis) 
+[Chkrootkit (Check Rootkit)](https://www.chkrootkit.org/)
+[RKHunter (Rootkit Hunter)](https://rkhunter.sourceforge.net/) 

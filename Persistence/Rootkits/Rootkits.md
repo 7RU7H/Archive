@@ -10,8 +10,9 @@
 ## Linux 
 
 
-#### Mitigation
-[Chkrootkit (Check Rootkit)](https://www.chkrootkit.org/)
+[[Rootkits]] are very bad, have some piece of mind by using (these will still require you to follow up on anything - it will not auto-remove a rootkit or definitively declare you have a rootkit - beware the difference of tool and being a tool - use brain, be brave and investigate):
+- [Chkrootkit (Check Rootkit)](https://www.chkrootkit.org/)
+- [RKHunter (Rootkit Hunter)](https://rkhunter.sourceforge.net/) 
 
 ## Github Examples 
 
@@ -26,3 +27,4 @@
 [m0nad's Diamorphine](https://github.com/m0nad/Diamorphine/blob/master/README.md)
 [Kris Nova's (RIP) boopkit](https://github.com/krisnova/boopkit) 
 [Chkrootkit (Check Rootkit)](https://www.chkrootkit.org/)
+[RKHunter (Rootkit Hunter)](https://rkhunter.sourceforge.net/) 

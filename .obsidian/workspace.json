@@ -13,13 +13,50 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Social-Engineering/Social-Engineering.md",
+                "file": "Cloud/Kubernetes/Kubernetes.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c1024000d01ab76a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Securing-Networks-And-Systems/Hardening/Linux-Hardening.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "fb82aa00322ae0da",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Development/Languages/Bash/Bash.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "564d47e1e59c43f4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Software/Operating-Systems/Linux/Linux-Commands/Linux-Module-Commands.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -56,7 +93,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Sliver",
+                "query": "rootkits",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +102,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -85,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Social-Engineering/Social-Engineering.md",
+                "file": "Securing-Networks-And-Systems/Hardening/Linux-Hardening.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +140,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Social-Engineering/Social-Engineering.md",
+                "file": "Securing-Networks-And-Systems/Hardening/Linux-Hardening.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +163,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Social-Engineering/Social-Engineering.md"
+                "file": "Securing-Networks-And-Systems/Hardening/Linux-Hardening.md"
               }
             }
           },
@@ -158,22 +196,24 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "18c4a28c09ff7070",
+  "active": "c1024000d01ab76a",
   "lastOpenFiles": [
+    "Persistence/Rootkits/Rootkits.md",
+    "Securing-Networks-And-Systems/Hardening/Linux-Hardening.md",
+    "Development/Languages/Bash/Bash.md",
     "Cloud/Kubernetes/Kubernetes.md",
+    "Software/Operating-Systems/Linux/Linux-Commands/Linux-Module-Commands.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+    "Social-Engineering/Social-Engineering.md",
     "Persistence/Linux-Persistence.md",
     "Hardware/Hardware-Hacking/Printer-Hacking.md",
     "Networks/Network-Theory/Network-Protocols/IPP.md",
     "Networks/Network-Theory/Network-Protocols/Network-Protocols.md",
     "Reconnaissance/Passive-Information-Gathering/Search-Engine-Dorking.md",
-    "Securing-Networks-And-Systems/Hardening/Linux-Hardening.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
     "Software/Operating-Systems/Linux/Linux-Concepts/Linux-Logging.md",
     "Exploitation/Video-Game-Hacking/Video-Game-Hacking.md",
     "Security-Disciplines/Digital-Forensics/Linux-Forensics.md",
-    "Persistence/Rootkits/Rootkits.md",
     "Tools/C2/Sliver/Sliver-Cheatsheet.md",
-    "Development/Languages/Bash/Bash.md",
     "Security-Disciplines/Incident-Response/Incident-Response.md",
     "Virtualization/Docker/Docker-Hacking.md",
     "Exploitation/CVEs/Sudo-CVEs.md",
@@ -184,8 +224,6 @@
     "Post-Exploitation/Data-Ex&Infiltration/Data-Exfiltration/Data-Exfiltration-Over-DNS.md",
     "Reconnaissance/Active-Information-Gathering/Netcat-As-Recon.md",
     "Post-Exploitation/Post-Exploitation-Enumeration/macOS-Information-Gathering.md",
-    "Post-Exploitation/Post-Exploitation-Enumeration/Foothold-Enumeration.md",
-    "Post-Exploitation/Post-Exploitation-Enumeration/Windows-Post-Exploitation-Info-Gathering.md",
     "Images/chriskubecka-openautomateddemandresponse-attachsystems.png",
     "Images/chriskubecka-ismemegoddess-part2.png",
     "Images/chriskubecka-ismemegoddess.png",
