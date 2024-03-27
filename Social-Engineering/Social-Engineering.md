@@ -17,6 +17,50 @@ Context is almost everything and paranoia is much worse than diligence.
 
 #### Work in progress
 
+
+#### Phases
+
+- Recon
+	- Dumpster Diving
+	- [[Search-Engine-Dorking]]
+	- [[OSINT]]
+	- [[SOCMINT]]
+	- [[IMINT-GEOINT]]
+	- Cyber [[Active-Recon]] and [[Passive-Recon]]
+	- [[Malware]]
+		- Screenshoting 
+		- [[Keyloggers]]
+	- Shoulder Surfing
+		- Reading over the shoulder of someone on phone or computer
+- Pretexting - Taking on a persona
+	- More planning and research equates to more success
+		- Objectives
+		- Possible paths including failure states to pivot from
+		- Is friendly all it takes
+	- Shared interests help
+	- Acting and Authenticity
+	- Keep it simple stupid
+	- Use information that does not require verification
+- Elicitation - Using persona to extract information
+	- People like to appear informed 
+	- People like to be appreciate 
+	- Most people are honest
+	- Mirroring effectively
+	- Retain character 
+	- Create trust
+	- Effective Questioning
+		- Neutral question - not directing the answer
+		- Open Question - encourages long answers
+		- Closed questions - yes or no, good or bad
+		- Leading questions - coercing a target answer
+- Manipulation - is not influencing, which is change a persons mind for their benefit where manipulation is to do so against the interests of a victim
+	- Fear - but provide the relief
+	- Guilt 
+		- compliance by favour
+		- blackmail
+	- Foot in the door 
+
+
 This is just a place to dump ideas and theory before separating out cheatsheets and theory, etc to other pages
 
 
@@ -57,7 +101,34 @@ Ultimately you are trying what you can to remain objective as possible and defle
 
 Familiarity and Trust
 
+#### Personal Mitigation 
+
+- Know and train the common target:
+	- Junior staff
+	- Contractors
+	- Administration 
+	- Support staff
+- Ask for identification 
+- Watch for out of character questions
+- Do not let the guest roam free in building
+- Do not use discarded USBs that are found lying around
+- Be aware of what you are saying
+- Shred Documents and do not just bin them
+- Do not store confidential information on a USB
+- Use hard drive encryption
+- Be aware who is looking over your shoulder
+
+#### Corporate Mitigation
+
+- Identify information or assets are the most valuable
+- Implement information coding (colour coding for scaling the secrecy requirements for documents)
+- Start with a template then refine - [https://www.sans.org/security-resources/policies](https://www.sans.org/security-resources/policies)
+- Patch systems regularly
+- Setup document destroying service
+- Never assume your company is too small to be a target
 
 ## References
 
 [Robin Dreeke - Sizing People Up DEFCON talk](https://www.youtube.com/watch?v=H3XR4QrJyxA)
+[Hacking Humans : Social Engineering Techniques and How to Protect Against Them - Stephen Haunts](https://www.youtube.com/watch?v=YVqurfWzB-Q)
+[https://www.sans.org/security-resources/policies](https://www.sans.org/security-resources/policies)

@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Securing-Networks-And-Systems/Hardening/Linux-Hardening.md",
+                "file": "Social-Engineering/Social-Engineering.md",
                 "mode": "source",
                 "source": false
               }
@@ -102,8 +102,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -123,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Securing-Networks-And-Systems/Hardening/Linux-Hardening.md",
+                "file": "Social-Engineering/Social-Engineering.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Securing-Networks-And-Systems/Hardening/Linux-Hardening.md",
+                "file": "Social-Engineering/Social-Engineering.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -163,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Securing-Networks-And-Systems/Hardening/Linux-Hardening.md"
+                "file": "Social-Engineering/Social-Engineering.md"
               }
             }
           },
@@ -198,8 +197,8 @@
   },
   "active": "c1024000d01ab76a",
   "lastOpenFiles": [
-    "Persistence/Rootkits/Rootkits.md",
     "Securing-Networks-And-Systems/Hardening/Linux-Hardening.md",
+    "Persistence/Rootkits/Rootkits.md",
     "Development/Languages/Bash/Bash.md",
     "Cloud/Kubernetes/Kubernetes.md",
     "Software/Operating-Systems/Linux/Linux-Commands/Linux-Module-Commands.md",
