@@ -37,26 +37,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Development/Languages/Bash/Bash.md",
+                "file": "Web-Application-Hacking/Web-Exploits/Upload-Vulnerabilities.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "564d47e1e59c43f4",
+            "id": "59d9b99def1fdc4a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Software/Operating-Systems/Linux/Linux-Commands/Linux-Module-Commands.md",
+                "file": "Brain-Hacking/Question-Based-Methodologies/Question-Based-Hacking-Methodology.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Social-Engineering/Social-Engineering.md",
+                "file": "Brain-Hacking/Question-Based-Methodologies/Question-Based-Hacking-Methodology.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Social-Engineering/Social-Engineering.md",
+                "file": "Brain-Hacking/Question-Based-Methodologies/Question-Based-Hacking-Methodology.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Social-Engineering/Social-Engineering.md"
+                "file": "Brain-Hacking/Question-Based-Methodologies/Question-Based-Hacking-Methodology.md"
               }
             }
           },
@@ -195,15 +195,17 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "c1024000d01ab76a",
+  "active": "59d9b99def1fdc4a",
   "lastOpenFiles": [
-    "Securing-Networks-And-Systems/Hardening/Linux-Hardening.md",
-    "Persistence/Rootkits/Rootkits.md",
+    "Web-Application-Hacking/Web-Exploits/Upload-Vulnerabilities.md",
+    "Brain-Hacking/Question-Based-Methodologies/Question-Based-Hacking-Methodology.md",
     "Development/Languages/Bash/Bash.md",
-    "Cloud/Kubernetes/Kubernetes.md",
+    "Securing-Networks-And-Systems/Hardening/Linux-Hardening.md",
     "Software/Operating-Systems/Linux/Linux-Commands/Linux-Module-Commands.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
     "Social-Engineering/Social-Engineering.md",
+    "Persistence/Rootkits/Rootkits.md",
+    "Cloud/Kubernetes/Kubernetes.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
     "Persistence/Linux-Persistence.md",
     "Hardware/Hardware-Hacking/Printer-Hacking.md",
     "Networks/Network-Theory/Network-Protocols/IPP.md",
@@ -221,8 +223,6 @@
     "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/File-Transfers.md",
     "Tools/Shells/SSH-Cheatsheet.md",
     "Post-Exploitation/Data-Ex&Infiltration/Data-Exfiltration/Data-Exfiltration-Over-DNS.md",
-    "Reconnaissance/Active-Information-Gathering/Netcat-As-Recon.md",
-    "Post-Exploitation/Post-Exploitation-Enumeration/macOS-Information-Gathering.md",
     "Images/chriskubecka-openautomateddemandresponse-attachsystems.png",
     "Images/chriskubecka-ismemegoddess-part2.png",
     "Images/chriskubecka-ismemegoddess.png",
