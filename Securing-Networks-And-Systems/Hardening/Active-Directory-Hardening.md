@@ -1,11 +1,11 @@
-# Active-Directory-Hardening
+# Active Directory Hardening
 
 For encompassing article about the features of Active Directory - [[Active-Directory-Defined]] 
 ``
 It would recommended to make a [[Active-Directory-Lab]] 
 
 - Active Directory Hardening: Level - Actions
-	- Implement Least Privilege Model
+	- Implement Principle of Least Privilege Model - [[Principle-Of-Least-Privilege]]
 		- Creating the Right Type of Accounts:
 			- No Guest accounts - just why?
 			- User accounts - promote regular use 
@@ -32,7 +32,7 @@ It would recommended to make a [[Active-Directory-Lab]]
 		- LAN Manager Hash
 			- `Group Policy Management Editor -> Computer Configuration -> Policies -> Windows Settings -> Security Settings -> Local Policies -> Security Options -> double click -> "Network security: Do not store LM hash value on next password change policy" -> select "Define policy setting"
 		- SMB Signing
-			- `Group Policy Management Editor -> Computer Configuration -> Policies -> Windows Settings > Security Settings -> Loca, how many users have the same password as aaron.booth?l Policies -> Security Options -> double click "Microsoft network server: Digitally sign communication (always)" -> select Enable Digitally Sign Communications`
+			- `Group Policy Management Editor -> Computer Configuration -> Policies -> Windows Settings > Security Settings -> Local, how many users have the same password as aaron.booth?l Policies -> Security Options -> double click "Microsoft network server: Digitally sign communication (always)" -> select Enable Digitally Sign Communications`
 		- LDAP Signing
 			- `Group Policy Management Editor -> Computer Configuration -> Policies -> Windows Settings -> Security Settings -> Local Policies -> Security Options -> "Domain controller: LDAP server signing requirements" -> select Require signing from the dropdown`
 		- Password Separation:
@@ -52,7 +52,7 @@ It would recommended to make a [[Active-Directory-Lab]]
 					- Force password rotation on users, but do not make too short users with make it insecure
 		- Add [MFA](https://docs.microsoft.com/en-us/azure/active-directory/authentication/howto-mfa-getstarted)
 	- Protecting Against Known Attacks
-		- Kerberoasting and ASREProasting [[Attacking-Kerberos]]
+		- Kerberoasting and ASREP-Roasting [[Attacking-Kerberos]]
 			- [Microsoft Official Kerberoasting Article](https://microsoft.com/security/blog/2020/08/27/stopping-active-directory-attacks-and-other-post-exploitation-behavior-with-amsi-and-machine-learning/)
 			- [[Silver-Tickets]]
 			- [[Golden-Tickets]]
@@ -67,7 +67,7 @@ It would recommended to make a [[Active-Directory-Lab]]
 			- `Open Microsoft Security Compliance Website -> click "Download" -> click "Windows Servers Security Baseline.zip" -> Download` - [From](https://www.microsoft.com/en-us/download/details.aspx?id=55319)
 			- `powershell.exe expand-archive "Windows Servers Security Baseline.zip" -> Scripts -> select a script to execute with PowerShell`
 		- [Policy Analyser](https://www.microsoft.com/en-us/download/details.aspx?id=55319)
-			- `PolicyAnalyzer.exe``
+			- `PolicyAnalyzer.exe`
 			- Compare Group Policy to check for:
 				- Inconsistencies
 				- Redundant settings
@@ -75,8 +75,8 @@ It would recommended to make a [[Active-Directory-Lab]]
 	
 ## Workflows
 
-Manage Trusts
-`Server Manager > Tools > Active Directory Domains and Trust`
+Manage Trusts: 
+- `Server Manager > Tools > Active Directory Domains and Trust`
 
 ## References
 

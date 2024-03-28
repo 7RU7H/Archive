@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Brain-Hacking/Question-Based-Methodologies/Question-Based-Hacking-Methodology.md",
+                "file": "Tools/Debuggers-IDEs-Editors/IDEs/Microsoft-Visual-Studios.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "rootkits",
+                "query": "Visual-Studios",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -102,7 +102,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -122,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Brain-Hacking/Question-Based-Methodologies/Question-Based-Hacking-Methodology.md",
+                "file": "Tools/Debuggers-IDEs-Editors/IDEs/Microsoft-Visual-Studios.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +140,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Brain-Hacking/Question-Based-Methodologies/Question-Based-Hacking-Methodology.md",
+                "file": "Tools/Debuggers-IDEs-Editors/IDEs/Microsoft-Visual-Studios.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +163,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Brain-Hacking/Question-Based-Methodologies/Question-Based-Hacking-Methodology.md"
+                "file": "Tools/Debuggers-IDEs-Editors/IDEs/Microsoft-Visual-Studios.md"
               }
             }
           },
@@ -197,8 +198,15 @@
   },
   "active": "59d9b99def1fdc4a",
   "lastOpenFiles": [
-    "Web-Application-Hacking/Web-Exploits/Upload-Vulnerabilities.md",
+    "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+    "Reconnaissance/OSINT/OSINT.md",
+    "Software/Services/Webservers/Apache/Apache-Tomcat/Apache-Tomcat.md",
+    "Tools/Reverse-Engineering/Ghidra-Cheatsheet.md",
     "Brain-Hacking/Question-Based-Methodologies/Question-Based-Hacking-Methodology.md",
+    "Securing-Networks-And-Systems/Hardening/Active-Directory-Hardening.md",
+    "Persistence/Active-Directory-Persistence/AD-Persistence-Certificates.md",
+    "Persistence/Active-Directory-Persistence/AD-Persistence-Tickets.md",
+    "Web-Application-Hacking/Web-Exploits/Upload-Vulnerabilities.md",
     "Development/Languages/Bash/Bash.md",
     "Securing-Networks-And-Systems/Hardening/Linux-Hardening.md",
     "Software/Operating-Systems/Linux/Linux-Commands/Linux-Module-Commands.md",
@@ -216,13 +224,6 @@
     "Security-Disciplines/Digital-Forensics/Linux-Forensics.md",
     "Tools/C2/Sliver/Sliver-Cheatsheet.md",
     "Security-Disciplines/Incident-Response/Incident-Response.md",
-    "Virtualization/Docker/Docker-Hacking.md",
-    "Exploitation/CVEs/Sudo-CVEs.md",
-    "Exploitation/CVEs/Pwnkit.md",
-    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Linux-File-Transfers.md",
-    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/File-Transfers.md",
-    "Tools/Shells/SSH-Cheatsheet.md",
-    "Post-Exploitation/Data-Ex&Infiltration/Data-Exfiltration/Data-Exfiltration-Over-DNS.md",
     "Images/chriskubecka-openautomateddemandresponse-attachsystems.png",
     "Images/chriskubecka-ismemegoddess-part2.png",
     "Images/chriskubecka-ismemegoddess.png",

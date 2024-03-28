@@ -1,4 +1,12 @@
-Not to be confused with [[VS-Code]] ... it hurts.
+#  Microsoft Visual Studios
+
+## Beware!! 
+#### READ the .suo files for all visual studios code you use
+#### Prevent being hacked
+
+Also ...Not to be confused with [[VS-Code]] ... it hurts. Still I confused the two...
+
+## Using Visual Studios
 
 Add Extensions:
 `Extensions -> Manage Extensions -> Search -> $oneyouwant -> Download`

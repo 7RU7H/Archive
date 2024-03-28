@@ -1,15 +1,16 @@
 # Apache Tomcat
 
 
-## Vulnerabilities and Enumaration
+## Vulnerabilities and Enumeration
 
-Default password: metasploit module auxillary scanner! 
+Default password: `metasploit` module auxiliary scanner! 
 
 Administrator portal can host files
 `/manager/`
 `/manager-gui/`
 
 nginx - tomcat observe url parsing `/..;/`
+
 
 Fuzzing tomcat `////Admin` or `;/Admin`
 #### Ghostcat

@@ -1,12 +1,17 @@
 # Active Directory Persistence With Certificates
 
-We the use of [[AD-Certificate-Exploitation]], leveraging certifications to become Domain Admins can be viable method of persistence as all that is required is a valid certificate used for client authentication. The certificate can be used to request a TGT. The certificate has to be revoked or expire for a failure state to occur, therefore potential persistent access by default for around 5 years. 
+We can use [[AD-Certificate-Exploitation]], leveraging certifications to become Domain Administrators, as a viable method of persistence. All that is required is:
+- A valid certificate used for client authentication
+- The certificate can be used to request a TGT.
+- The certificate has to be revoked or expire for a failure state to occur, therefore potential persistent access by default is approximately around 5 years depending on certificate rotation. 
 
 ## Certificate Authority CA 
 
-Steal the private key of the root CA's certificate to generate our own certificates. Blue can not revoke them as they were never issue by the CA and would require a CA rotation - all issued certificates would have to be revoked and new one reinstated! With [[Mimikatz-Cheatsheet]] or [SharpDPAPI](https://github.com/GhostPack/SharpDPAPI)
+Steal the private key of the root CA's certificate to generate our own certificates. Blue can not revoke them as they were never issued by the CA and would require a CA rotation - all issued certificates would have to be revoked and new one reinstated! 
 
-The private key of the CA is stored on the CA server, if not protoect through Hardware Security Module (HSM) - a hardware-based protection method - it is protected by the machine Data Protection API (DPAPI).
+The private key of the CA is stored on the CA server, if not protected through Hardware Security Module (HSM) - a hardware-based protection method - it is protected by the machine Data Protection API (DPAPI).
+
+With [[Mimikatz-Cheatsheet]] or [SharpDPAPI](https://github.com/GhostPack/SharpDPAPI):
 
 Way to exfiltrate the certificates with PowerShell
 ```powershell
@@ -22,9 +27,10 @@ $bytes = [System.Convert]::FromBase64String($base64String)
 Set-Content -Path "<YOUR PATH>\file.pfx" -Value $bytes -Encoding Byte
 ```
 
+With Mimikatz - [[Mimikatz-Cheatsheet]]
 ```powershell
 # View CA Certificate on the DC 
-# Some Certificate do not allow exporting the private key  
+# Some Certificates do not allow exporting the private key  
 crypto::certificates /systemstore:local_machine
 # Therefore use Mimikatz to generate a new certificate 
 privilege::debug
