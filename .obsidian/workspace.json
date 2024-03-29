@@ -25,26 +25,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Social-Engineering/Social-Engineering.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "fb82aa00322ae0da",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Networks/Administrative-Tiering-In-Active-Directory.md",
+                "file": "Security-Disciplines/Digital-Forensics/Digital-Forensics.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -110,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Networks/Administrative-Tiering-In-Active-Directory.md",
+                "file": "Security-Disciplines/Digital-Forensics/Digital-Forensics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Networks/Administrative-Tiering-In-Active-Directory.md",
+                "file": "Security-Disciplines/Digital-Forensics/Digital-Forensics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Networks/Administrative-Tiering-In-Active-Directory.md"
+                "file": "Security-Disciplines/Digital-Forensics/Digital-Forensics.md"
               }
             }
           },
@@ -183,10 +171,12 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "fb82aa00322ae0da",
+  "active": "c1024000d01ab76a",
   "lastOpenFiles": [
-    "Securing-Networks-And-Systems/Principle-Of-Least-Privilege.md",
+    "Social-Engineering/Social-Engineering.md",
+    "Security-Disciplines/Digital-Forensics/Digital-Forensics.md",
     "Networks/Administrative-Tiering-In-Active-Directory.md",
+    "Securing-Networks-And-Systems/Principle-Of-Least-Privilege.md",
     "Software/Operating-Systems/Windows/Active-Directory/Active-Directory.md",
     "Web-Application-Hacking/Web-Exploits/Upload-Vulnerabilities.md",
     "Tools/Debuggers-IDEs-Editors/IDEs/Microsoft-Visual-Studios.md",
@@ -201,7 +191,6 @@
     "Development/Languages/Bash/Bash.md",
     "Securing-Networks-And-Systems/Hardening/Linux-Hardening.md",
     "Software/Operating-Systems/Linux/Linux-Commands/Linux-Module-Commands.md",
-    "Social-Engineering/Social-Engineering.md",
     "Persistence/Rootkits/Rootkits.md",
     "Cloud/Kubernetes/Kubernetes.md",
     "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
@@ -210,7 +199,6 @@
     "Networks/Network-Theory/Network-Protocols/IPP.md",
     "Networks/Network-Theory/Network-Protocols/Network-Protocols.md",
     "Reconnaissance/Passive-Information-Gathering/Search-Engine-Dorking.md",
-    "Software/Operating-Systems/Linux/Linux-Concepts/Linux-Logging.md",
     "Images/chriskubecka-openautomateddemandresponse-attachsystems.png",
     "Images/chriskubecka-ismemegoddess-part2.png",
     "Images/chriskubecka-ismemegoddess.png",

@@ -18,6 +18,12 @@ Context is almost everything and paranoia is much worse than diligence.
 #### Work in progress
 
 
+#### Columbo
+
+1. Behave faux confused and act stupid, but invited other to help you understand something as method of questioning 
+	- compare information to evidence and pervasive facts about the world and systems in it, etc...
+	- The other participants will provide you with *their* information that *they* want to provide
+
 #### Phases
 
 - Recon
