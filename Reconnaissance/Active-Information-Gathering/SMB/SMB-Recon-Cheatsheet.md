@@ -9,7 +9,7 @@ Sharename | Type | Comment | Description
 ADMIN$ | Disk | Remote Admin | Share used for psexec
 C$ | Disk | Default Share | Direct C drive access
 IPC$ | Disk | Remote IPC | Deals with Named Pipes - Attackers Enumerate Here! - If you can Read [[Crackmapexec-Cheatsheet]] `--rid-brute`
-SYSVOL | Disk | Logon server share | [[Active-Directory-Defined]] GPP and GPO, configurations for domain-joined machines
+SYSVOL | Disk | Logon server share | [[Active-Directory]] GPP and GPO, configurations for domain-joined machines
 NETLOGON| 
 
 Some organisation have Anonymous logins due to not wanting make people authenticate when they mess with the share file, **but** put restriction on share files - not a misconfiguration [Ref: Unknown Artists](https://www.youtube.com/watch?v=n4DgGFpQrjk)

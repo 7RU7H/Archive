@@ -1,6 +1,6 @@
 # Active Directory Enumeration
 
-For a concise and relevant as *possible* to ethical hacking article on the subject of AD visit: [[Active-Directory-Defined]]
+For a concise and relevant as *possible* to ethical hacking article on the subject of AD visit: [[Active-Directory]]
 
 Everything with a Domain (domain-joined (part of a domain)) is a Organisational Unit an object with attributes. These objects represent data, policy and physical machines 
 

@@ -1,6 +1,6 @@
 # Active Directory Hardening
 
-For encompassing article about the features of Active Directory - [[Active-Directory-Defined]] 
+For encompassing article about the features of Active Directory - [[Active-Directory]] 
 ``
 It would recommended to make a [[Active-Directory-Lab]] 
 

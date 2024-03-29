@@ -5,7 +5,7 @@ Under construction
 ## Introduction
 This is manual setup guide and walkthrough of Active Directory for those that the hands on experience of making and configuring there own. There are many video guides list for variations., but this article contains both VMware(WILL AT SOME POINT) and Virtualbox setups. A brief overview of automated and automating setups will also be provided, but the overall idea is to build ground up knowledge and experience before firing of a script someone else wrote to make some vulnerable. Some have suggestedm, especially for beginnners, that the more intimate experience of turning on and off settings and testing is more valuable than than the script kiddie *spin up VM and wap-out-the someone-elses script then bang tools together to get x outcome*. 
 
-Secondly AD is everywhere and this article is full of acronyms to ensure that the length of this is smaller than the size of the official documentation so firstly open [[Active-Directory-Defined]]. If you require termonolgy there is a glossary at the end of the page, but the article also contains defintions, theory and architecture related information. 
+Secondly AD is everywhere and this article is full of acronyms to ensure that the length of this is smaller than the size of the official documentation so firstly open [[Active-Directory]]. If you require termonolgy there is a glossary at the end of the page, but the article also contains defintions, theory and architecture related information. 
 
 ##### Contents
 1. List of Requirements and where to get them

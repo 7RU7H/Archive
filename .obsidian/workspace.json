@@ -37,26 +37,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Web-Application-Hacking/Web-Exploits/Upload-Vulnerabilities.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "59d9b99def1fdc4a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tools/Debuggers-IDEs-Editors/IDEs/Microsoft-Visual-Studios.md",
+                "file": "Networks/Administrative-Tiering-In-Active-Directory.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -102,8 +90,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -123,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/Debuggers-IDEs-Editors/IDEs/Microsoft-Visual-Studios.md",
+                "file": "Networks/Administrative-Tiering-In-Active-Directory.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tools/Debuggers-IDEs-Editors/IDEs/Microsoft-Visual-Studios.md",
+                "file": "Networks/Administrative-Tiering-In-Active-Directory.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -163,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tools/Debuggers-IDEs-Editors/IDEs/Microsoft-Visual-Studios.md"
+                "file": "Networks/Administrative-Tiering-In-Active-Directory.md"
               }
             }
           },
@@ -196,8 +183,13 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "59d9b99def1fdc4a",
+  "active": "fb82aa00322ae0da",
   "lastOpenFiles": [
+    "Securing-Networks-And-Systems/Principle-Of-Least-Privilege.md",
+    "Networks/Administrative-Tiering-In-Active-Directory.md",
+    "Software/Operating-Systems/Windows/Active-Directory/Active-Directory.md",
+    "Web-Application-Hacking/Web-Exploits/Upload-Vulnerabilities.md",
+    "Tools/Debuggers-IDEs-Editors/IDEs/Microsoft-Visual-Studios.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
     "Reconnaissance/OSINT/OSINT.md",
     "Software/Services/Webservers/Apache/Apache-Tomcat/Apache-Tomcat.md",
@@ -206,7 +198,6 @@
     "Securing-Networks-And-Systems/Hardening/Active-Directory-Hardening.md",
     "Persistence/Active-Directory-Persistence/AD-Persistence-Certificates.md",
     "Persistence/Active-Directory-Persistence/AD-Persistence-Tickets.md",
-    "Web-Application-Hacking/Web-Exploits/Upload-Vulnerabilities.md",
     "Development/Languages/Bash/Bash.md",
     "Securing-Networks-And-Systems/Hardening/Linux-Hardening.md",
     "Software/Operating-Systems/Linux/Linux-Commands/Linux-Module-Commands.md",
@@ -220,10 +211,6 @@
     "Networks/Network-Theory/Network-Protocols/Network-Protocols.md",
     "Reconnaissance/Passive-Information-Gathering/Search-Engine-Dorking.md",
     "Software/Operating-Systems/Linux/Linux-Concepts/Linux-Logging.md",
-    "Exploitation/Video-Game-Hacking/Video-Game-Hacking.md",
-    "Security-Disciplines/Digital-Forensics/Linux-Forensics.md",
-    "Tools/C2/Sliver/Sliver-Cheatsheet.md",
-    "Security-Disciplines/Incident-Response/Incident-Response.md",
     "Images/chriskubecka-openautomateddemandresponse-attachsystems.png",
     "Images/chriskubecka-ismemegoddess-part2.png",
     "Images/chriskubecka-ismemegoddess.png",

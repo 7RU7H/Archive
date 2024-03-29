@@ -9,7 +9,7 @@ Active Directory is not Microsoft Entra ID formerly known as Azure AD:
 - Microsoft Entra ID is flat, Active Directory domains are trees and forest 
 - Domain controllers are deployed only when required for compatibility for Domain Services
 
-See [[Active-Directory-Defined]] for on-premise AD definitions and descriptions. It is the principle Identity and Access management service. Authorise and authenticate to multiple sources: 
+See [[Active-Directory]] for on-premise AD definitions and descriptions. It is the principle Identity and Access management service. Authorise and authenticate to multiple sources: 
 - On-Premise AD, Internal resources and apps located on your corporate network
 - Web-Application - IpD - google login 
 - External resources like Microsoft 365, the Azure portal, and SaaS applications.

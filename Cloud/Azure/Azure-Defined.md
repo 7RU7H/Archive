@@ -56,7 +56,7 @@ Consider reviewing [[Azure-Administration-Subscriptions]]
 
 #### Authentication and Authorization
 
-Azure Active Directory is a Cloud identity provider [[Active-Directory-Defined]],  the Authentication protocols used in Azure include:
+Azure Active Directory is a Cloud identity provider [[Active-Directory]],  the Authentication protocols used in Azure include:
 - Open ID connect
 - SAML
 - WS-Fed

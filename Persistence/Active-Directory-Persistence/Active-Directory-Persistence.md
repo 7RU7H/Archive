@@ -1,5 +1,5 @@
 # Active Directory Persistence
-For Active Directory we can use traditional methods of [[Persistence]] as well as specifical [[Active-Directory-Defined]] Persistence. This one of the final stages [[Lockhead-Martin-Cyber-Kill-Chain]], after [[Active-Directory-Privilege-Escalation]] and [[Active-Directory-Lateral-Movement]]. Although any real-world penetration tests or red team engagements, persistence is not a part of the scope due to the risk of incomplete removal once the assessment is complete.
+For Active Directory we can use traditional methods of [[Persistence]] as well as specifical [[Active-Directory]] Persistence. This one of the final stages [[Lockhead-Martin-Cyber-Kill-Chain]], after [[Active-Directory-Privilege-Escalation]] and [[Active-Directory-Lateral-Movement]]. Although any real-world penetration tests or red team engagements, persistence is not a part of the scope due to the risk of incomplete removal once the assessment is complete.
 
 
 ## Golden Ticket Attacks
