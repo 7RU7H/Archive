@@ -23,7 +23,8 @@ Kubernetes Architecture:
 		- Cloud controllers integrate with the underlying cloud technologies
 	- Scheduler
 		- Responsible for the assignment of workloads across all nodes.
-	- etcd
+	- [etcd](https://kubernetes.io/docs/tasks/administer-cluster/configure-upgrade-etcd/) 
+		- A  key value store used as Kubernetes' backing store for all cluster data
 - Node - where compute workloads run
 	- Kubelet
 		- Agent running on a node - processes the orchestration requests
@@ -193,3 +194,4 @@ kubectl <cmd> statefulset
 [Microsoft Learn's Intro to Kubernetes](https://learn.microsoft.com/en-us/training/modules/intro-to-kubernetes/)
 [Replication Controller Vs Replica Set | by Avinash Kumar - The Learning Destination | Medium](https://medium.com/@avinashkumarmahto51/replication-controller-vs-replica-set-29b5e0bc83d9)
 [Kubernetes](https://kubernetes.io/docs/concepts/overview/)
+[etcd](https://kubernetes.io/docs/tasks/administer-cluster/configure-upgrade-etcd/) 
