@@ -12,7 +12,7 @@ From a `$VM -> Overview -> Failover`
 - Be aware of adding disk after enabling replication - where are the replication points and which is to be replicated? 
 - `(un)Tick - Shut down machine before beginning failover  ` 
 - If satified with failover select `Overview -> Commit`
-	- `Commit` deletes all available recovery points for VM in Site Rrcovery and cannot change the recovery point! 
+	- `Commit` deletes all available recovery points for VM in Site Rcovery and cannot change the recovery point! 
 - After failover, you reprotect the VM in secodary region to replicates back to the primary region 
 
 Failover back to primary region
