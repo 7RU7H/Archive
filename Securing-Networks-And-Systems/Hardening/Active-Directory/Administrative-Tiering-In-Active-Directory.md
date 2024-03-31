@@ -35,6 +35,30 @@ Tiering Administrator Accounts:
 - Tier 0 should contain Administrators accounts that manage CA and Identity Management solutions
 - Tier 1 should contain Administrator accounts that manage File and Application Servers 
 - Tier 2 should contain Administrator accounts that manage Workstations and End-user devices
+
+#### Implementation Considerations
+
+Implement OUs:
+- Each Tier 0 - 2 must be segmented by Organizational Units (OUs):
+	- Users
+	- Groups
+	- Devices - machines have accounts too!
+	- Service Accounts - services have accounts too!
+
+Implementing Access Restrictions via Group Policies:
+- Modify User Rights Assignment: `Computer Configuration` -> `Policies` -> `Windows Settings` -> `Security Settings` -> `Local Policies` -> `User Rights Assignment`
+- Options:
+	- Deny log on as a batch job: denies users from logging into the machine as a scheduled task.
+	- Deny log on as a service: denies users from logging into the device as a service.
+	- Deny log on locally: restricts users from logging into the machine physically.
+	- Deny log on through Terminal Services: denies users logging into the machine via RDP.
+	- Deny access to this computer from the network: denies access to network services like SMB, NetBIOS, CIFS and others.
+
+Configuring Administrative Rights:
+Modifying GPOs for `Restricted Groups` (Group of Groups that are Restricted):
+- `Computer Configuration` -> `Policies` -> `Windows Settings` -> `Security Settings` -> `Restricted Groups`
+Modiying GPOs for User Rights Assignment:
+- `Computer Configuration` -> `Policies` -> `Windows Settings` -> `Security Settings` -> `Local Policies` -> `User Rights Assignment`
 ## References
 
 [THM AD Tier Model Room](https://tryhackme.com/r/room/adtiermodel)
