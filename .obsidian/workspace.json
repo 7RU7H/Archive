@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/Binary-Exploitation-Tools/Pwntools.md",
+                "file": "Exploitation/Binary-Exploitation/Shellcode-Injection.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/Binary-Exploitation-Tools/Pwntools.md",
+                "file": "Exploitation/Binary-Exploitation/Shellcode-Injection.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tools/Binary-Exploitation-Tools/Pwntools.md",
+                "file": "Exploitation/Binary-Exploitation/Shellcode-Injection.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tools/Binary-Exploitation-Tools/Pwntools.md"
+                "file": "Exploitation/Binary-Exploitation/Shellcode-Injection.md"
               }
             }
           },
@@ -184,9 +184,14 @@
   },
   "active": "c1024000d01ab76a",
   "lastOpenFiles": [
-    "Development/Languages/C/Useful-C.md",
     "Tools/Binary-Exploitation-Tools/Pwntools.md",
+    "Exploitation/Binary-Exploitation/Shellcode-Injection.md",
+    "Tools/Debuggers-IDEs-Editors/GDB.md",
+    "Development/Exploit-Development/GEF.md",
+    "Reconnaissance/SOCMINT.md",
+    "Cloud/Ansible.md",
     "Cloud/GitLab.md",
+    "Development/Languages/C/Useful-C.md",
     "Exploitation/Development/Pwntools.md",
     "Exploitation/Shells/Shells.md",
     "Computer-Science-Concepts.md",
@@ -194,9 +199,6 @@
     "Computer-Science",
     "Exploitation/Binary-Exploitation/Mitigations/PIE.md",
     "Exploitation/Binary-Exploitation/Mitigations",
-    "Cloud/Ansible.md",
-    "Development/Exploit-Development/GEF.md",
-    "Reconnaissance/SOCMINT.md",
     "Hardware/Flipper-Zero/Flipper-Zero.md",
     "Securing-Networks-And-Systems/Hardening/Active-Directory/Administrative-Tiering-In-Active-Directory.md",
     "Securing-Networks-And-Systems/Hardening/Active-Directory/Active-Directory-Hardening.md",
@@ -211,8 +213,6 @@
     "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
     "Reconnaissance/OSINT/OSINT.md",
     "Software/Services/Webservers/Apache/Apache-Tomcat/Apache-Tomcat.md",
-    "Tools/Reverse-Engineering/Ghidra-Cheatsheet.md",
-    "Brain-Hacking/Question-Based-Methodologies/Question-Based-Hacking-Methodology.md",
     "Images/chriskubecka-openautomateddemandresponse-attachsystems.png",
     "Images/chriskubecka-ismemegoddess-part2.png",
     "Images/chriskubecka-ismemegoddess.png",

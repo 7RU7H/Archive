@@ -2,7 +2,23 @@
 
 My `gdb` is [[GEF]] or [[pwndbg]].
 
-## This is  work in progress as I need some baseline for a project at some point - see references for better lists
+GDB Quick Commands
+- disassemble: `disas <addr>`
+- continue: `c`
+- step: `s`
+- step over: `n`
+- finish function: `fin`
+- dump memory: `x/20x <addr>`
+- dump registers: `info registers`
+- dump call stack: `bt`
+- list breakpoints: `info break`
+- memory mapping: `vmmap`
+- heap infos: `heap chunks`,`print main_arena`
+- show GOT: `print $_got()`
+- pattern: `pattern create <n>`, `pattern search <offset>`
+- shellcode: `shellcode search <arch>`, `shellcode get <num>`
+
+#### This is  work in progress as I need some baseline for a project at some point - see references for better lists
 
 Add debug information into a C binary `-g` for `gcc` and `clang`
 ```bash
