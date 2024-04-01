@@ -1,6 +1,21 @@
 
 [[Valgrind]] and [[GDB]]/[[Microsoft-Visual-Studios]] your code! 
 
+
+Stack Versus Heap variable declaration
+```c
+// stack variables are declared like this:
+int stackVariable = 69;
+
+// malloc return a pointer to heap variable and takes a int as size 
+int *heapVariable = malloc(sizeof(int));
+// then needs to have a value assigned:
+*heapVariable = 69;
+// Alway free memory after use
+free(heapVariable);
+```
+
+
 Structs
 ```c
 struct rectangle {
