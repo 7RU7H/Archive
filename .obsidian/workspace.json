@@ -25,19 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exploitation/Binary-Exploitation/Shellcode-Injection.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6a0bb9b1095878d1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computer-Science-Concepts.md",
+                "file": "Exploitation/Video-Game-Hacking/Video-Game-Hacking.md",
                 "mode": "source",
                 "source": false
               }
@@ -81,7 +69,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Encoding",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -94,7 +82,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 448.5
+    "width": 448.5,
+    "collapsed": true
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -110,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exploitation/Binary-Exploitation/Shellcode-Injection.md",
+                "file": "Exploitation/Video-Game-Hacking/Video-Game-Hacking.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Exploitation/Binary-Exploitation/Shellcode-Injection.md",
+                "file": "Exploitation/Video-Game-Hacking/Video-Game-Hacking.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Exploitation/Binary-Exploitation/Shellcode-Injection.md"
+                "file": "Exploitation/Video-Game-Hacking/Video-Game-Hacking.md"
               }
             }
           },
@@ -184,8 +173,9 @@
   },
   "active": "c1024000d01ab76a",
   "lastOpenFiles": [
-    "Tools/Binary-Exploitation-Tools/Pwntools.md",
+    "Exploitation/Exploitation.md",
     "Exploitation/Binary-Exploitation/Shellcode-Injection.md",
+    "Tools/Binary-Exploitation-Tools/Pwntools.md",
     "Tools/Debuggers-IDEs-Editors/GDB.md",
     "Development/Exploit-Development/GEF.md",
     "Reconnaissance/SOCMINT.md",
@@ -212,7 +202,6 @@
     "Tools/Debuggers-IDEs-Editors/IDEs/Microsoft-Visual-Studios.md",
     "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
     "Reconnaissance/OSINT/OSINT.md",
-    "Software/Services/Webservers/Apache/Apache-Tomcat/Apache-Tomcat.md",
     "Images/chriskubecka-openautomateddemandresponse-attachsystems.png",
     "Images/chriskubecka-ismemegoddess-part2.png",
     "Images/chriskubecka-ismemegoddess.png",
