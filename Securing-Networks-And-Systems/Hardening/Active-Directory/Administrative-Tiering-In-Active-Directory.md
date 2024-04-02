@@ -39,14 +39,23 @@ Tiering Administrator Accounts:
 #### Implementation Considerations
 
 Implement OUs:
-- Each Tier 0 - 2 must be segmented by Organizational Units (OUs):
+- Each Tier 0 - 2 must be segmented by Organisational Units (OUs):
 	- Users
 	- Groups
 	- Devices - machines have accounts too!
 	- Service Accounts - services have accounts too!
 
 Implementing Access Restrictions via Group Policies:
-- Modify User Rights Assignment: `Computer Configuration` -> `Policies` -> `Windows Settings` -> `Security Settings` -> `Local Policies` -> `User Rights Assignment`
+- `Window` -> `(BELOW THESE OPTION) New Window, Cascade, Tile Horizontally, Arrange Icons` -> select a view depending on hierarchy: Forest, Domains, Sites, Group Policy Modelling, Group Policy Results 
+- Modify User Rights Assignment:
+	1. Descend till you reach the OU hierarchy point required
+	2. ` Right-Click "Computer Configuration"` -> `(Drop Down)` -> `Edit` 
+	1. Then use the GPO Management Editor: 
+		- `Computer Configuration` -> `Policies` -> `Windows Settings` -> `Security Settings` -> `Local Policies` -> `User Rights Assignment`
+	4. `Right-Click ` -> `(Drop Down)` -> `Properties`
+	5. `Tick "Define these policy settings:"`
+	6. `Add User or Group` and add - `$DOMAIN\$userORgroup` - one at time no comma delimited lists
+	7. `Apply`
 - Options:
 	- Deny log on as a batch job: denies users from logging into the machine as a scheduled task.
 	- Deny log on as a service: denies users from logging into the device as a service.
@@ -57,8 +66,9 @@ Implementing Access Restrictions via Group Policies:
 Configuring Administrative Rights:
 Modifying GPOs for `Restricted Groups` (Group of Groups that are Restricted):
 - `Computer Configuration` -> `Policies` -> `Windows Settings` -> `Security Settings` -> `Restricted Groups`
-Modiying GPOs for User Rights Assignment:
+Modifying GPOs for User Rights Assignment:
 - `Computer Configuration` -> `Policies` -> `Windows Settings` -> `Security Settings` -> `Local Policies` -> `User Rights Assignment`
+
 ## References
 
 [THM AD Tier Model Room](https://tryhackme.com/r/room/adtiermodel)
