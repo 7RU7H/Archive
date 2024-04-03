@@ -4,35 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "c702a265dd780665",
+        "id": "a5080d88859c295f",
         "type": "tabs",
         "children": [
           {
-            "id": "18c4a28c09ff7070",
+            "id": "5563c4fd2ea22ef1",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cloud/Kubernetes/Kubernetes.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c1024000d01ab76a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Exploitation/Video-Game-Hacking/Video-Game-Hacking.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -82,8 +65,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 448.5,
-    "collapsed": true
+    "width": 448.5
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -99,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exploitation/Video-Game-Hacking/Video-Game-Hacking.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Exploitation/Video-Game-Hacking/Video-Game-Hacking.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Exploitation/Video-Game-Hacking/Video-Game-Hacking.md"
-              }
+              "state": {}
             }
           },
           {
@@ -171,8 +149,22 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c1024000d01ab76a",
+  "active": "5563c4fd2ea22ef1",
   "lastOpenFiles": [
+    "Exploitation/CVEs/Dirty-Pagetable.md",
+    "Exploitation/CVEs/Logrotten.md",
+    "Software/Operating-Systems/Linux/Linux-Concepts/Linux-Logging.md",
+    "Software/Services/Logging/Logrotate.md",
+    "Software/Services/Logging",
+    "Exploitation/Server-Side/Server-Side-XSS.md",
+    "Exploitation/CVEs/Untitled",
+    "Web-Application-Hacking/Web-Exploits/XSS/XSS-Cheatsheet.md",
+    "Web-Application-Hacking/Web-Exploits/SQLi/SQL-Truncation.md",
+    "Web-Application-Hacking/Web-Exploits/SQLi/SQL-Injection.md",
+    "Exploitation/Shells/Reverse-Shells-Listing.md",
+    "Securing-Networks-And-Systems/Hardening/Active-Directory/Administrative-Tiering-In-Active-Directory.md",
+    "Cloud/Kubernetes/Kubernetes.md",
+    "Exploitation/Video-Game-Hacking/Video-Game-Hacking.md",
     "Exploitation/Exploitation.md",
     "Exploitation/Binary-Exploitation/Shellcode-Injection.md",
     "Tools/Binary-Exploitation-Tools/Pwntools.md",
@@ -189,19 +181,7 @@
     "Computer-Science",
     "Exploitation/Binary-Exploitation/Mitigations/PIE.md",
     "Exploitation/Binary-Exploitation/Mitigations",
-    "Hardware/Flipper-Zero/Flipper-Zero.md",
-    "Securing-Networks-And-Systems/Hardening/Active-Directory/Administrative-Tiering-In-Active-Directory.md",
-    "Securing-Networks-And-Systems/Hardening/Active-Directory/Active-Directory-Hardening.md",
     "Securing-Networks-And-Systems/Hardening/Active-Directory",
-    "Security-Disciplines/Digital-Forensics/Digital-Forensics.md",
-    "Social-Engineering/Social-Engineering.md",
-    "Networks/Administrative-Tiering-In-Active-Directory.md",
-    "Securing-Networks-And-Systems/Principle-Of-Least-Privilege.md",
-    "Software/Operating-Systems/Windows/Active-Directory/Active-Directory.md",
-    "Web-Application-Hacking/Web-Exploits/Upload-Vulnerabilities.md",
-    "Tools/Debuggers-IDEs-Editors/IDEs/Microsoft-Visual-Studios.md",
-    "Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
-    "Reconnaissance/OSINT/OSINT.md",
     "Images/chriskubecka-openautomateddemandresponse-attachsystems.png",
     "Images/chriskubecka-ismemegoddess-part2.png",
     "Images/chriskubecka-ismemegoddess.png",
@@ -216,8 +196,6 @@
     "Brain-Hacking/Problem-Solving",
     "Brain-Hacking/Cyber-Related-Actions",
     "Brain-Hacking/Learning/Learn-to",
-    "Brain-Hacking/Learning",
-    "Brain-Hacking/Question-Based-Methodologies",
-    "Security-Disciplines/Physical-Security"
+    "Brain-Hacking/Learning"
   ]
 }
