@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "a5080d88859c295f",
+        "id": "8b65702e93677cca",
         "type": "tabs",
         "children": [
           {
-            "id": "5563c4fd2ea22ef1",
+            "id": "b31e0bff95eb7cbd",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Brain-Hacking/Problem-Solving/Tradecraft-To-BrainCraft.md",
+                "file": "Computer-Science/Arithmetic-Operations.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Brain-Hacking/Problem-Solving/Tradecraft-To-BrainCraft.md",
+                "file": "Computer-Science/Arithmetic-Operations.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Brain-Hacking/Problem-Solving/Tradecraft-To-BrainCraft.md",
+                "file": "Computer-Science/Arithmetic-Operations.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Brain-Hacking/Problem-Solving/Tradecraft-To-BrainCraft.md"
+                "file": "Computer-Science/Arithmetic-Operations.md"
               }
             }
           },
@@ -157,11 +157,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5563c4fd2ea22ef1",
+  "active": "b31e0bff95eb7cbd",
   "lastOpenFiles": [
+    "README.md",
+    "Computer-Science/Arithmetic-Operations.md",
+    "Brain-Hacking/Problem-Solving/Tradecraft-To-BrainCraft.md",
     "Images/cia-structuredanalyticstimeline.png",
     "Security-Disciplines/Digital-Forensics/Windows-Forensics/Windows-Applications-Forensics.md",
-    "Brain-Hacking/Problem-Solving/Tradecraft-To-BrainCraft.md",
     "Development/Languages/PowerShell/PowerShell-Event-Logging.md.md",
     "Software/Operating-Systems/Windows/Windows-Concepts/Windows-Events/Windows-Events-To-Monitor.md",
     "Exploitation/Binary-Exploitation/Binary-Exploitation-Enumeration.md",
@@ -189,7 +191,6 @@
     "Exploitation/Video-Game-Hacking/Video-Game-Hacking.md",
     "Exploitation/Exploitation.md",
     "Exploitation/Binary-Exploitation/Shellcode-Injection.md",
-    "Tools/Binary-Exploitation-Tools/Pwntools.md",
     "Computer-Science",
     "Exploitation/Binary-Exploitation/Mitigations",
     "Securing-Networks-And-Systems/Hardening/Active-Directory",
@@ -202,7 +203,6 @@
     "Images/chriskubecka-salmonfarm.png",
     "Images/chriskubecka-logisticshack.png",
     "Images/chriskubecka-openeuropeansystems.png",
-    "Images/chriskubecka-openchinesesystems.png",
     "Software/T",
     "Brain-Hacking/Problem-Solving"
   ]
