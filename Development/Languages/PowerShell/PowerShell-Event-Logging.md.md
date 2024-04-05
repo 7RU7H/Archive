@@ -51,3 +51,17 @@ Get-Process | Where-Object { $_.ProcessName -eq "Sysmon" } # Get information of 
 Get-Process -ID $PID -IncludeUserName # Owner of proccess
 Get-Process -ID $PID | Format-Table * # All data on a PID
 ```
+
+Credential Dumping Attack Hunting
+```
+Get-WinEvent -FilterHashtable @{Path='C:\path\to\Logfile.evtx'; ID=10} | Where-Object {$_.Properties[8].Value -like "lsass.exe"} | Select-Object -Property *
+```
+
+Hunting for Unsigned DLLs by Analyzing Event Logs
+```powershell
+# AhmedZia's Hunting for Unsigned DLLs by Analyzing Event Logs:
+Get-WinEvent -FilterHashtable @{Path='C:\path\to\logfile.evtx'; ID=7} | Where-Object {$_.Properties[12].Value -eq "false"} | Select-Object -Property *
+```
+## References
+
+[THM Windows Applications Room](https://tryhackme.com/r/room/windowsapplications)

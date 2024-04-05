@@ -1,5 +1,6 @@
+# Network Forensics
 
-[Network Forensics](https://en.wikipedia.org/wiki/Network_forensics) is a sub-branch of digital Forensics and focuses on monitoring and analysis of network traffic. It is the discipline of capturing network traffic, organising and handling data to then analyse it and form basis of understanding as to attribute cause for some purpose, beyond the investigation. It primary purposes are Security Operations (SOC) and Incident Handling/Response and Threat Hunting, but generally for information gathering, legal evidence, or intrusion detection. SOCs are daily security monitoring activities on system performance and health, user behaviour, and security issues. Incident Handling/Response and Threat Hunting purpose of Network Forensics occuring During/Post-incident investigation activities on understanding the reason for the incident, detecting malicious and suspicious activity, and investigating the data flow content. The investigated data types are either live traffice, traffic captures and log files. 
+[Network Forensics](https://en.wikipedia.org/wiki/Network_forensics) is a sub-branch of digital Forensics and focuses on monitoring and analysis of network traffic. It is the discipline of capturing network traffic, organising and handling data to then analyse it and form basis of understanding as to attribute cause for some purpose, beyond the investigation. It primary purposes are Security Operations (SOC) and Incident Handling/Response and Threat Hunting, but generally for information gathering, legal evidence, or intrusion detection. SOCs are daily security monitoring activities on system performance and health, user behaviour, and security issues. Incident Handling/Response and Threat Hunting purpose of Network Forensics occurring During/Post-incident investigation activities on understanding the reason for the incident, detecting malicious and suspicious activity, and investigating the data flow content. The investigated data types are either live traffic, traffic captures and log files. 
 
   
 **Use cases** |  **Description**
@@ -11,15 +12,15 @@
 **Policy/Regulation compliance control**  | Reviewing overall network behaviour helps detect policy/regulation compliance.
 
 - Record packets of network traffic  
-- Create investigatable sources
+- Create investigat-able sources
 - Establishing Attribution
 
-An investigation process identifies communicated hosts in terms of time, frequency, protocol, application and data, therefore tries to answer the **5W**;
--   Who (Source IP and port)
--   What (Data/payload)
--   Where (Destination IP and port)
--   When (Time and data)
--   Why (How/What happened)
+An investigation process identifies communicated hosts in terms of time, frequency, protocol, application and data, therefore tries to answer the **5Ws**;
+-  Who (Source IP and port)
+-  What (Data/payload)
+-  Where (Destination IP and port)
+-  When (Time and data)
+-  Why (How/What happened)
 
 Advantages | Challenges
 --- | ---

@@ -11,8 +11,12 @@
             "id": "5563c4fd2ea22ef1",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Brain-Hacking/Problem-Solving/Tradecraft-To-BrainCraft.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Brain-Hacking/Problem-Solving/Tradecraft-To-BrainCraft.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Brain-Hacking/Problem-Solving/Tradecraft-To-BrainCraft.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Brain-Hacking/Problem-Solving/Tradecraft-To-BrainCraft.md"
+              }
             }
           },
           {
@@ -151,6 +159,20 @@
   },
   "active": "5563c4fd2ea22ef1",
   "lastOpenFiles": [
+    "Images/cia-structuredanalyticstimeline.png",
+    "Security-Disciplines/Digital-Forensics/Windows-Forensics/Windows-Applications-Forensics.md",
+    "Brain-Hacking/Problem-Solving/Tradecraft-To-BrainCraft.md",
+    "Development/Languages/PowerShell/PowerShell-Event-Logging.md.md",
+    "Software/Operating-Systems/Windows/Windows-Concepts/Windows-Events/Windows-Events-To-Monitor.md",
+    "Exploitation/Binary-Exploitation/Binary-Exploitation-Enumeration.md",
+    "Tools/SysInternals/Sysmon/Sysmon-Basic-Hunting.md",
+    "Security-Disciplines/Digital-Forensics/Windows-Forensics/Windows-Forensics.md",
+    "Security-Disciplines/Digital-Forensics/Memory-Forensics.md",
+    "Security-Disciplines/Digital-Forensics/Network-Forensics.md",
+    "Security-Disciplines/Digital-Forensics/Anti-Forensic-Techniques/Timestomping.md",
+    "Security-Disciplines/Digital-Forensics/Anti-Forensic-Techniques",
+    "Security-Disciplines/Digital-Forensics/Linux-Forensics",
+    "Security-Disciplines/Digital-Forensics/Windows-Forensics",
     "Exploitation/CVEs/Dirty-Pagetable.md",
     "Exploitation/CVEs/Logrotten.md",
     "Software/Operating-Systems/Linux/Linux-Concepts/Linux-Logging.md",
@@ -168,18 +190,7 @@
     "Exploitation/Exploitation.md",
     "Exploitation/Binary-Exploitation/Shellcode-Injection.md",
     "Tools/Binary-Exploitation-Tools/Pwntools.md",
-    "Tools/Debuggers-IDEs-Editors/GDB.md",
-    "Development/Exploit-Development/GEF.md",
-    "Reconnaissance/SOCMINT.md",
-    "Cloud/Ansible.md",
-    "Cloud/GitLab.md",
-    "Development/Languages/C/Useful-C.md",
-    "Exploitation/Development/Pwntools.md",
-    "Exploitation/Shells/Shells.md",
-    "Computer-Science-Concepts.md",
-    "Brain-Hacking/Question-Based-Methodologies/Question-Based-Pwning-Methodology.md",
     "Computer-Science",
-    "Exploitation/Binary-Exploitation/Mitigations/PIE.md",
     "Exploitation/Binary-Exploitation/Mitigations",
     "Securing-Networks-And-Systems/Hardening/Active-Directory",
     "Images/chriskubecka-openautomateddemandresponse-attachsystems.png",
@@ -193,9 +204,6 @@
     "Images/chriskubecka-openeuropeansystems.png",
     "Images/chriskubecka-openchinesesystems.png",
     "Software/T",
-    "Brain-Hacking/Problem-Solving",
-    "Brain-Hacking/Cyber-Related-Actions",
-    "Brain-Hacking/Learning/Learn-to",
-    "Brain-Hacking/Learning"
+    "Brain-Hacking/Problem-Solving"
   ]
 }
