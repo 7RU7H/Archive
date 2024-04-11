@@ -1,4 +1,4 @@
-# Administrative Tiering In Active Directory
+# Active Directory Administrative Tiering 
 
 #### [[Principle-Of-Least-Privilege]] and AD
 
@@ -69,6 +69,18 @@ Modifying GPOs for `Restricted Groups` (Group of Groups that are Restricted):
 Modifying GPOs for User Rights Assignment:
 - `Computer Configuration` -> `Policies` -> `Windows Settings` -> `Security Settings` -> `Local Policies` -> `User Rights Assignment`
 
+Delegating Permissions `<verb>` AD Object
+- `Open Active Directory Users and Computers` -> `Right-Click to dropdown` -> `Delegate Control` -> `Delegation of Control Wizard` -> `Next` -> `Add...` an AD Object then either:
+	- `Delegate the following common task:`
+		- Select from List
+	- `Create a custom task to delegate:`
+		- Either:
+			- `This folder, existing objects in this folder, and creation of new objects in this folder`
+			- `Only the following objects in the folder` - this option unlocks both `(Create / Delete) selected objects in this folder`
+		- Then `Show these permissions:` to then select permissions based on the categorise (there are a lot per category), to the tick:
+			- General
+			- Property-specific
+			- Creation/deletion of specific child objects
 ## References
 
 [THM AD Tier Model Room](https://tryhackme.com/r/room/adtiermodel)

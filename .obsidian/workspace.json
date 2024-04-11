@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+                "file": "Development/Languages/Python/Useful_Python.md",
                 "mode": "source",
                 "source": false
               }
@@ -56,7 +56,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "ISO",
+                "query": "tcpdump",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+                "file": "Development/Languages/Python/Useful_Python.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+                "file": "Development/Languages/Python/Useful_Python.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md"
+                "file": "Development/Languages/Python/Useful_Python.md"
               }
             }
           },
@@ -159,6 +159,10 @@
   },
   "active": "6522beff7bc9a760",
   "lastOpenFiles": [
+    "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md",
+    "Securing-Networks-And-Systems/Hardening/Active-Directory/Active-Directory-Administrative-Tiering.md",
+    "Securing-Networks-And-Systems/Hardening/Active-Directory/Active-Directory-Hardening.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
     "Software/Operating-Systems/Linux/Linux-Commands/Linux-CLIMagic.md",
     "Hardware/Hardware-Maintenance/USB-Maintenance.md",
     "Computer-Science/Arithmetic-Operations.md",
@@ -187,10 +191,6 @@
     "Web-Application-Hacking/Web-Exploits/XSS/XSS-Cheatsheet.md",
     "Web-Application-Hacking/Web-Exploits/SQLi/SQL-Truncation.md",
     "Web-Application-Hacking/Web-Exploits/SQLi/SQL-Injection.md",
-    "Exploitation/Shells/Reverse-Shells-Listing.md",
-    "Securing-Networks-And-Systems/Hardening/Active-Directory/Administrative-Tiering-In-Active-Directory.md",
-    "Cloud/Kubernetes/Kubernetes.md",
-    "Exploitation/Video-Game-Hacking/Video-Game-Hacking.md",
     "Computer-Science",
     "Exploitation/Binary-Exploitation/Mitigations",
     "Securing-Networks-And-Systems/Hardening/Active-Directory",

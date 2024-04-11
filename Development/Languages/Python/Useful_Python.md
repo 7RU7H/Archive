@@ -1,7 +1,6 @@
 # Useful Python(3 only)
 
-This is a condensed and *Hacking Themed* resource for python.
-Remember with python [you need a ruler for tab indentation](https://www.youtube.com/watch?v=YnL9vAFphmE) and [sometimes we have a competition to write the longest list comprehension...and sometimes it's in production...and sometimes we don't call it a competition but work](https://www.youtube.com/watch?v=BgxklT94W0I) which requires a [phd](https://www.youtube.com/watch?v=xyrgkui0uCA). This like [xinyMinutes](https://learnxinyminutes.com/docs/python) with most hacking theme and base of things I have found or used.
+This is a condensed and *Hacking Themed* resource for python. Remember with python [you need a ruler for tab indentation](https://www.youtube.com/watch?v=YnL9vAFphmE) and [sometimes we have a competition to write the longest list comprehension...and sometimes it's in production...and sometimes we don't call it a competition but work](https://www.youtube.com/watch?v=BgxklT94W0I) which requires a [phd](https://www.youtube.com/watch?v=xyrgkui0uCA). This like [xinyMinutes](https://learnxinyminutes.com/docs/python) with most hacking theme and base of things I have found or used.
 
 # Basics
 
@@ -60,6 +59,9 @@ myList.append("crackmapexec")
 .split('delimiter')
 .index()
 # Looping with for, for range, while keywords
+# C-Style For loop: for(int i=0; i<69; i++) .. in python: 
+for i in range(0,69,1):
+    print(f"{i}")
 for tool in myList:
 	print(f"{tool} is ready for use!")
 	print("SERIOUS COUNTING IN A WHILE AND THEN AFOR LOOP")
@@ -522,3 +524,12 @@ print("DRY but away from condition pyramids of doom")
 print("Functionally like lego, compositional and extendable but closed for modification")
 ```
 
+## References
+
+[xct solution to HTB retired machine](https://www.youtube.com/watch?v=w2K-bQNs3cg)
+[stackoverflow](https://stackoverflow.com/questions/9450446/how-do-i-use-a-c-style-for-loop-in-python)
+https://tryhackme.com/room/bufferoverflowprep
+https://docs.python.org/3/library/struct.html
+https://docs.pwntools.com/en/stable/
+*[you need a ruler for tab indentation](https://www.youtube.com/watch?v=YnL9vAFphmE) and [sometimes we have a competition to write the longest list comprehension...and sometimes it's in production...and sometimes we don't call it a competition but work](https://www.youtube.com/watch?v=BgxklT94W0I) which requires a [phd](https://www.youtube.com/watch?v=xyrgkui0uCA).*
+[xinyMinutes](https://learnxinyminutes.com/docs/python)
