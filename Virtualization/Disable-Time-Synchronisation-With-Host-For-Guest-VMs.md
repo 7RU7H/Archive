@@ -1,6 +1,6 @@
 # Disable Time Synchronisation with Host for Guest VMs
 
-Disabling Time Synchronisation with Host for Guest Virtual Machines is of situational importance and generally it is not necessary. If for example you happen to being [[Attacking-Kerberos]], but are not  synchronised to the Domain Controller internal clock skew errors or maybe you what to have a Honeypot or create [[Malware-Sandbox]] where the time is deliberately set for deceptive purposes.. 
+Disabling Time Synchronisation with Host for Guest Virtual Machines is of situational importance and generally it is not necessary. If for example you happen to being [[Attacking-Kerberos]], but are not synchronised to the Domain Controller, endless internal clock skew errors or maybe you what to have a Honeypot or create [[Malware-Sandbox]] where the time is deliberately set for deceptive purposes.. so change it:
 ## [VMWare](https://kb.vmware.com/s/article/1189)
 
 - Solutions to syncing to host:
@@ -26,7 +26,6 @@ To disable one-off time synchronization in a VM, you must set the following adva
 |   |
 |---|
 |time.synchronize.continue = "FALSE"<br>time.synchronize.restore = "FALSE"<br>time.synchronize.resume.disk = "FALSE"<br>time.synchronize.shrink = "FALSE"<br>time.synchronize.tools.startup = "FALSE"<br>time.synchronize.tools.enable = "FALSE"<br>time.synchronize.resume.host = "FALSE"|
-
 
 ## [Virtualbox](https://forums.virtualbox.org/viewtopic.php?t=97014)
 

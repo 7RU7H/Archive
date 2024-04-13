@@ -47,13 +47,6 @@ Virtualiser - Virtualbox or VMWare
 Provisioner - [[Virtualization/Ansible]] - Or Packer provisioners [Windows Shell](https://developer.hashicorp.com/packer/docs/provisioners/windows-shell) or [Powershell](https://www.packer.io/docs/provisioners/powershell)
 
 
-## Puzzle Creation Requirements
-Context. 
-Make it fun.
-Make as new in vulnerablity and other box 
-
-
-
 ## References
 
 [Mich Van Deusen's Blog](https://micahvandeusen.com/creating-a-vulnerable-machine/)
