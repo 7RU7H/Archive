@@ -97,7 +97,7 @@ socks5 $serverIP $serverPort
 
 ## Reverse Pivot with Chisel Explained:
 
-Chisel is useful when you can not port forward with ssh. You would then need chisel for reverse pivoting, which is the reverse of port forward as the **Remote box is listening** to connect back the attack to open up the tunnel. For information about [[Port-Redirection-And-Tunnelling]].
+Chisel is useful when you can not port forward with ssh. You would then need chisel for reverse pivoting, which is the reverse of port forward as the **remote box is listening** to connect back the attack to open up the tunnel. For information about [[Port-Redirection-And-Tunnelling]].
 
 ```bash
 # AttackBox
@@ -166,11 +166,7 @@ nohup ./chisel client 10.10.10.10:10000 R:10011:127.0.0.1:11011 & # $Kaliclient_
 nohup ./chisel client 192.168.0.1:11000 R:11012:127.0.0.1:12000 &
 # Box 3 192.168.0.2 
 # shell 192.168.0.2 1200?
-
-
 ```
-
-
 
 [Consideration for Windows](https://learn.microsoft.com/en-US/troubleshoot/windows-client/deployment/create-user-defined-service)
 

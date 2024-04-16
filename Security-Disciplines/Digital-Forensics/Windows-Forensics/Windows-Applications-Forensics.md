@@ -3,7 +3,7 @@
 ## Introduction
 
 
-For this page I will try to only have the PowerShell and other method mentioned to their respective linked pages. 
+For this page I will try to provide multiple ways including the PowerShell and other method mentioned to their respective linked pages. 
 #### Logging
 
 [[ETW]] is the underlying system of logging in Windows 
@@ -16,8 +16,9 @@ For this page I will try to only have the PowerShell and other method mentioned 
 - CLI utility `wevutil.exe`
 - PowerShell's `Get-WinEvent / Get-EventLog`. [[PowerShell-Event-Logging.md]]
 
-
 #### Scheduled Tasks and Services
+
+The `taskschd.msc` is good for providing holistic visual representation of scheduled task as clunky as it is to use a directory tree to find malicious tasks. Combine with PowerShell to find outliers that may indicate [[Windows-Persistence-Abusing-Scheduled-Tasks]].
 
 - Event ID `4698` - A scheduled task was created.
 - Event ID `4702` - A scheduled task was updated.
@@ -43,7 +44,7 @@ Get-WinEvent -FilterHashtable @{LogName='System'; ID=7045; StartTime=$startDate;
 # AhmedZia's find suspicious command execution
 Get-WinEvent -FilterHashtable @{ LogName='Microsoft-Windows-PowerShell/Operational'; Id='4104';} | Where-object -Property Message -Match "[A-Za-z0-9+/=]{150}" | Format-List -Property Message
 
-
+# These are more useful as Persistence vuia Scheduled taskes requires something to eventually communicate back to an adversary
 (Get-ScheduledTask -TaskName $REPLACE_WITH_ACTUAL_TASKNAME).Actions
 (Get-ScheduledTask -TaskName $REPLACE_WITH_ACTUAL_TASKNAME).Triggers
 (Get-ScheduledTask -TaskName $REPLACE_WITH_ACTUAL_TASKNAME).Principal
@@ -55,11 +56,25 @@ Credential Dumping Attack Hunting
 Get-WinEvent -FilterHashtable @{Path='C:\path\to\Logfile.evtx'; ID=10} | Where-Object {$_.Properties[8].Value -like "lsass.exe"} | Select-Object -Property *
 ```
 
-Hunting for Unsigned DLLs by Analyzing Event Logs
+Hunting for Unsigned DLLs by Analysing Event Logs
 ```powershell
 # AhmedZia's Hunting for Unsigned DLLs by Analyzing Event Logs:
 Get-WinEvent -FilterHashtable @{Path='C:\path\to\logfile.evtx'; ID=7} | Where-Object {$_.Properties[12].Value -eq "false"} | Select-Object -Property *
 ```
+
+#### Services
+
+`services.msc`
+Clicking on a Service opens a window shows:
+- General provides:
+	- `Path to executable: $PATH`, Startup type and Service status
+- "Log On As" entails which user is running the service
+- 
+
+
+[[Windows-Persistence-Abusing-Services]]
+
+
 ## References
 
 [THM Windows Applications Room](https://tryhackme.com/r/room/windowsapplications)

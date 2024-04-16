@@ -54,13 +54,27 @@ This inspired by reading the above link and *improving* it slightly
 			- Could the assumption have been true in the past but less so now?
 			-  If the assumption proves to be wrong, would it significantly alter the analytic line? How?
 			- Has this process identified new factors that need further analysis?
-	- Quality of Information Check
+	- Quality of Information Checks
 		- CIA: *"Evaluates completeness and soundness of available information sources."*
-	- Indicators or Signposts of Change
-		-  CIA: *"Periodically review a list of observable events or trends to track events, monitor targets, spot emerging trends, and warn of unanticipated change."*
+		- Who, what, where, why, how - in what context - metadata and full discourse appraisal
+		- Is a scientific or replicatable method used? 
+		- Is is mathematical proof or an BS (everything unless the truthful true provable is just BS)
+	- Indicators or Signposts of Change 
+		- CIA: *"Periodically review a list of observable events or trends to track events, monitor targets, spot emerging trends, and warn of unanticipated change."*
+		- Everything always changes at the molecular level and therefore to the best effectiveness periodic checking rather than using assumptions - [[Social-Engineering]] like simple scams use your brain's shortcuts (assumptions) to bypass your frontal cortex. Do not scam yourself
 	- Analysis of Competing Hypotheses (ACH)
-		-  CIA: *"Identification of alternative explanations (hypotheses) and evaluation of all evidence that will disconfirm rather than confirm hypotheses."*
+		- CIA: *"Identification of alternative explanations (hypotheses) and evaluation of all evidence that will disconfirm rather than confirm hypotheses."*
 - Contrarian Techniques
+	- Go-Full-Reductionist:
+		- Find the bounds of which a set ideas are constrained by requiring more than the most reductionist stance on the subject matter. 
+	- Go-Full-Contrarian and find the [Reductio ad absurdum](https://en.wikipedia.org/wiki/Reductio_ad_absurdum)
+		- Frame the commonly accepted in a absurd contrarian hypothetical example
+	- Back in my reality.. Culture superstition
+		- Deliberately superimpose another reality from a different culture (potentially from different time if it subtle (i.e. Roman slave reality is not really useful for Packet Analysis))
+	- Roast the ideas, not the analyst:
+		- Frame the analysis in lexicon, syntax of a stand up comedian to simplify and shift perspective of information as if you are [roasting](https://en.wikipedia.org/wiki/Roast_(comedy)) the idea
+	- Tell me all the connections like I am five in reverse as a linear sequence from a point `n` of assumed `N`...:
+		- Spot looping and branching, till you are very frustrated or found new paths out of brute-forcing a conversation with the participant enragingly requesting the next connecting response
 	- Devil’s Advocacy
 		-  CIA: *"Challenging a single, strongly held view or consensus by building the best possible case for an alternative explanation"*
 	- Team A/Team B
@@ -68,14 +82,14 @@ This inspired by reading the above link and *improving* it slightly
 	- High-Impact/Low-Probability Analysis
 		-  CIA: *"Highlights a seemingly unlikely event that would have major policy consequences if it happened."*
 	- “What If?” Analysis
-		-  CIA: *"Assumes that an event has occurred with potential (negative or positive) impact and explains how it might come about."*
+		-  CIA: *"Assumes that an event has occurred with potential (negative or positive) impact and explains how it might come about."* 
 - Imaginative Thinking Techniques
 	- Brainstorming
 		-  CIA: *"An unconstrained group process designed to generate new ideas and concepts"*
 	- Outside-In Thinking:
 		- CIA: *"Used to identify the full range of basic forces, factors, and trends that would indirectly shape an issue"*
 	- Red Team Analysis
-		- CIA: *"Models the behavior of an individual or group by trying to replicate how an adversary would think about an issue"*
+		- CIA: *"Models the behaviour of an individual or group by trying to replicate how an adversary would think about an issue"*
 	- Alternative Futures Analysis
 		- CIA: "*Systematically explores multiple ways a situation can develop when there is high complexity and uncertainty*"
 - Strategies for Using Structured Analytic Techniques
@@ -83,3 +97,5 @@ This inspired by reading the above link and *improving* it slightly
 ## References
 
 [https://www.cia.gov/resources/csi/static/Tradecraft-Primer-apr09.pdf](https://www.cia.gov/resources/csi/static/Tradecraft-Primer-apr09.pdf)
+[Wikipedia - Reductio ad absurdum](https://en.wikipedia.org/wiki/Reductio_ad_absurdum)
+[Wikipedia - roasting](https://en.wikipedia.org/wiki/Roast_(comedy))
