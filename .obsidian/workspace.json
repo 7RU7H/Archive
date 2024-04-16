@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Brain-Hacking/Problem-Solving/Tradecraft-To-BrainCraft.md",
+                "file": "Tools/Debuggers-IDEs-Editors/IDEs/VS-Code.md",
                 "mode": "source",
                 "source": false
               }
@@ -56,7 +56,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "VS-Code",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +65,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Brain-Hacking/Problem-Solving/Tradecraft-To-BrainCraft.md",
+                "file": "Tools/Debuggers-IDEs-Editors/IDEs/VS-Code.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Brain-Hacking/Problem-Solving/Tradecraft-To-BrainCraft.md",
+                "file": "Tools/Debuggers-IDEs-Editors/IDEs/VS-Code.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Brain-Hacking/Problem-Solving/Tradecraft-To-BrainCraft.md"
+                "file": "Tools/Debuggers-IDEs-Editors/IDEs/VS-Code.md"
               }
             }
           },
@@ -159,6 +160,7 @@
   },
   "active": "6522beff7bc9a760",
   "lastOpenFiles": [
+    "Brain-Hacking/Problem-Solving/Tradecraft-To-BrainCraft.md",
     "Brain-Hacking/Life-Cheatsheet.md",
     "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md",
     "Exploitation/Windows/Active-Directory/Ticket-Attacks/Attacking-Kerberos.md",
@@ -176,7 +178,6 @@
     "Hardware/Hardware-Maintenance/USB-Maintenance.md",
     "Computer-Science/Arithmetic-Operations.md",
     "README.md",
-    "Brain-Hacking/Problem-Solving/Tradecraft-To-BrainCraft.md",
     "Images/cia-structuredanalyticstimeline.png",
     "Development/Languages/PowerShell/PowerShell-Event-Logging.md.md",
     "Software/Operating-Systems/Windows/Windows-Concepts/Windows-Events/Windows-Events-To-Monitor.md",

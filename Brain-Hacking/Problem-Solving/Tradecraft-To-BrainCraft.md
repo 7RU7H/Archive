@@ -3,8 +3,6 @@
 Information is everywhere and everything and even beyond that there is information about information and therefore making sense of everything that is relevant and significant with difficult problems requires a set of problem solving techniques that are found in Intelligence Analytics and "Trade Craft" of other contexts. This page is me attempt to compress this information into useful cognitive schemata to make actionable techniques to memorise. 
 
 
-
-
 - CIA Trade Craft Primer - 2009 
 	- Regardless of this being allegedly from 2009 the importance of fundamental base-lining of how to think is far more important that how *internet-recent* and up-to-date the techniques are. This is where this page started from. Lowest common denominator techniques that not any special technology (computational, analytical, cognitive, etc) that are all publicly available - Authors Assumption
 
