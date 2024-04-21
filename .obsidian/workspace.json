@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/Debuggers-IDEs-Editors/IDEs/VS-Code.md",
+                "file": "Web-Application-Hacking/Web-Exploits/XSS/XSS-Cheatsheet.md",
                 "mode": "source",
                 "source": false
               }
@@ -65,8 +65,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/Debuggers-IDEs-Editors/IDEs/VS-Code.md",
+                "file": "Web-Application-Hacking/Web-Exploits/XSS/XSS-Cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tools/Debuggers-IDEs-Editors/IDEs/VS-Code.md",
+                "file": "Web-Application-Hacking/Web-Exploits/XSS/XSS-Cheatsheet.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tools/Debuggers-IDEs-Editors/IDEs/VS-Code.md"
+                "file": "Web-Application-Hacking/Web-Exploits/XSS/XSS-Cheatsheet.md"
               }
             }
           },
@@ -160,6 +159,10 @@
   },
   "active": "6522beff7bc9a760",
   "lastOpenFiles": [
+    "Tools/Web-Applications-Attacking/Browsers.md",
+    "Web-Application-Hacking/Web-Exploits/XSS/XSS-Cheatsheet.md",
+    "Development/Languages/JavaScript/Useful_JavaScript.md",
+    "Tools/Debuggers-IDEs-Editors/IDEs/VS-Code.md",
     "Brain-Hacking/Problem-Solving/Tradecraft-To-BrainCraft.md",
     "Brain-Hacking/Life-Cheatsheet.md",
     "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md",
@@ -183,10 +186,6 @@
     "Software/Operating-Systems/Windows/Windows-Concepts/Windows-Events/Windows-Events-To-Monitor.md",
     "Exploitation/Binary-Exploitation/Binary-Exploitation-Enumeration.md",
     "Tools/SysInternals/Sysmon/Sysmon-Basic-Hunting.md",
-    "Security-Disciplines/Digital-Forensics/Windows-Forensics/Windows-Forensics.md",
-    "Security-Disciplines/Digital-Forensics/Memory-Forensics.md",
-    "Security-Disciplines/Digital-Forensics/Network-Forensics.md",
-    "Security-Disciplines/Digital-Forensics/Anti-Forensic-Techniques/Timestomping.md",
     "Security-Disciplines/Digital-Forensics/Anti-Forensic-Techniques",
     "Security-Disciplines/Digital-Forensics/Linux-Forensics",
     "Security-Disciplines/Digital-Forensics/Windows-Forensics",
