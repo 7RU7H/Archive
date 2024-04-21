@@ -194,6 +194,8 @@ socat tcp-l:8000 tcp:$LocalBoxAddr:443 &
 
 # For port reuse from some proxy to another listening C2/Server/etc 
 socat TCP-LISTEN:8000,reuseaddr,fork TCP:<destination_ip>:<destination_port>
+
+nohup socat TCP-LISTEN:8000,reuseaddr,fork TCP:10.10.10.10:8443 &
 ```
 
 

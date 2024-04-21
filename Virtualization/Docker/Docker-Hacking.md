@@ -55,8 +55,9 @@ cd /proc/1234/root/
 Check for mount misconfigurations. It is a misconfiguration if Docker container is running `--privileged`, meaning we are can mount to these disks as container does not need disks 
 ```bash
 # check if disks are mountable into the host filesystem 
-mount | grep /dev/sda 
-mount /dev/sdaX /mnt
+fdisk -l # Is a better way as disks can named by the users...
+
+mount /dev/$sdaX /mnt
 
 # If you are not root or another mn
 

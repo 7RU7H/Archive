@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "fe7a0de69ce9178d",
+        "id": "42f4e7ff2f6ed587",
         "type": "tabs",
         "children": [
           {
-            "id": "6522beff7bc9a760",
+            "id": "fb43b0804fd0068c",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Web-Application-Hacking/Web-Exploits/XSS/XSS-Cheatsheet.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Web-Application-Hacking/Web-Exploits/XSS/XSS-Cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Web-Application-Hacking/Web-Exploits/XSS/XSS-Cheatsheet.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Web-Application-Hacking/Web-Exploits/XSS/XSS-Cheatsheet.md"
-              }
+              "state": {}
             }
           },
           {
@@ -157,10 +149,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6522beff7bc9a760",
+  "active": "fb43b0804fd0068c",
   "lastOpenFiles": [
-    "Tools/Web-Applications-Attacking/Browsers.md",
+    "Tools/Shells/Socat.md",
+    "Reconnaissance/Active-Information-Gathering/Netcat-As-Recon.md",
+    "Exploitation/CVEs/Log4Shell.md",
+    "Virtualization/Docker/Docker-Hacking.md",
+    "Virtualization/Docker/Docker.md",
+    "Reconnaissance/Active-Information-Gathering/OS-Detection/OS-Detection.md",
+    "Reconnaissance/Active-Information-Gathering/Active-Recon.md",
+    "Reconnaissance/Active-Information-Gathering/Unknown-Service-Recon.md",
     "Web-Application-Hacking/Web-Exploits/XSS/XSS-Cheatsheet.md",
+    "Tools/Web-Applications-Attacking/Browsers.md",
     "Development/Languages/JavaScript/Useful_JavaScript.md",
     "Tools/Debuggers-IDEs-Editors/IDEs/VS-Code.md",
     "Brain-Hacking/Problem-Solving/Tradecraft-To-BrainCraft.md",
@@ -177,15 +177,7 @@
     "Securing-Networks-And-Systems/Hardening/Active-Directory/Active-Directory-Administrative-Tiering.md",
     "Securing-Networks-And-Systems/Hardening/Active-Directory/Active-Directory-Hardening.md",
     "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
-    "Software/Operating-Systems/Linux/Linux-Commands/Linux-CLIMagic.md",
-    "Hardware/Hardware-Maintenance/USB-Maintenance.md",
-    "Computer-Science/Arithmetic-Operations.md",
-    "README.md",
     "Images/cia-structuredanalyticstimeline.png",
-    "Development/Languages/PowerShell/PowerShell-Event-Logging.md.md",
-    "Software/Operating-Systems/Windows/Windows-Concepts/Windows-Events/Windows-Events-To-Monitor.md",
-    "Exploitation/Binary-Exploitation/Binary-Exploitation-Enumeration.md",
-    "Tools/SysInternals/Sysmon/Sysmon-Basic-Hunting.md",
     "Security-Disciplines/Digital-Forensics/Anti-Forensic-Techniques",
     "Security-Disciplines/Digital-Forensics/Linux-Forensics",
     "Security-Disciplines/Digital-Forensics/Windows-Forensics",
