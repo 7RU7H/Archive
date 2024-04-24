@@ -11,8 +11,12 @@
             "id": "fb43b0804fd0068c",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Security-Disciplines/Digital-Forensics/Windows-Forensics/Windows-User-Account-Forensics.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Security-Disciplines/Digital-Forensics/Windows-Forensics/Windows-User-Account-Forensics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Security-Disciplines/Digital-Forensics/Windows-Forensics/Windows-User-Account-Forensics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Security-Disciplines/Digital-Forensics/Windows-Forensics/Windows-User-Account-Forensics.md"
+              }
             }
           },
           {
@@ -151,6 +159,8 @@
   },
   "active": "fb43b0804fd0068c",
   "lastOpenFiles": [
+    "Post-Exploitation/Lateral-Movement/Lateral-Movement.md",
+    "Security-Disciplines/Digital-Forensics/Windows-Forensics/Windows-User-Account-Forensics.md",
     "Tools/Shells/Socat.md",
     "Reconnaissance/Active-Information-Gathering/Netcat-As-Recon.md",
     "Exploitation/CVEs/Log4Shell.md",
@@ -175,8 +185,6 @@
     "Virtualization/Virtual-Machines.md",
     "Development/Languages/Python/Useful-Python.md",
     "Securing-Networks-And-Systems/Hardening/Active-Directory/Active-Directory-Administrative-Tiering.md",
-    "Securing-Networks-And-Systems/Hardening/Active-Directory/Active-Directory-Hardening.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
     "Images/cia-structuredanalyticstimeline.png",
     "Security-Disciplines/Digital-Forensics/Anti-Forensic-Techniques",
     "Security-Disciplines/Digital-Forensics/Linux-Forensics",
