@@ -1,5 +1,11 @@
 # Windows User Account Forensics
 
+#### Introduction
+
+[Locard's exchange principle (Wikipedia)](https://en.wikipedia.org/wiki/Locard%27s_exchange_principle)
+
+#### Typology and Security Risks
+
 Typology of Windows User Accounts:
 - Local User Accounts: local to and directly managed  by a machine 
 - Domain Accounts: local to the domain managed by a Domain Controller
@@ -87,7 +93,16 @@ Remember you are writing to disk...
 
 #### User Artefacts in Authentication Protocols
 
-Authentication can occur over a network if enabled, which can artefacts from network traffic, which requires [[Network-Forensics]] - ``
+Authentication can occur over a network if enabled, which can artefacts from network traffic, which requires [[Network-Forensics]] - Use brain with tools not just the tools. Network traffic data to consider:
+- Source and Destinations 
+	- IP Addresses, Hostnames, Domain Names, Ports
+- Timestamps 
+- Authentication Protocols
+- Success and Failure Indicators
+- Packet Data
+- Payload Data
+
+There is a lot of data mentioned above so the best approach is question-based for the objective of reducing the data set to the abnormal and then piecing events through time from a red team thinking (hypothesis and simulate the linear steps taken by over-arching *what* you are looking to identify and verify with data from, the perspective of adversary, suspect, etc).
 
 Domain authentication is more modern AD LANs *should be* using Kerberos - (see [[Active-Directory-Kerberos-Authentication-Defined]])
 
@@ -97,8 +112,56 @@ Domain authentication is more modern AD LANs *should be* using Kerberos - (see [
 - Event ID 4768: A Kerberos authentication ticket (TGT) was requested. 
 - Event ID 4771: Kerberos pre-authentication failed.
 
-Use brain. If lots of failed to log on from the same user or list of users around a similar time period. 
+#### Group Policy (GPO) Artefacts
 
+Consider adversarial uses of GPOs to achieve objectives:
+- Reconnaissance: [[Active-Directory-Recon]]
+- Lateral Movement: [[AD-Group-Policy-Objects-Exploitation]]
+- Security Policy Modification: Tampering with GPOs weakening security setting.
+- Persistence: [[AD-Persistence-GPOs]]
+
+Compare User Context that uses the machine Vs artefacts of potential unauthorised changes.
+
+List all GPOs of a Domain in a Forest in `Group Policy Management` Application:
+ 1. `Group Policy Management` 
+ 2. -> `Forest:` ->  Forest Name 
+ 3. -> `Domains`  -> Domain 
+ 4. -> `Group Policy Objects`
+5. `Right Click` -> `Drop Down: Edit..`
+An example would be changes to Windows  Defender Firewall found in changes to GPO: `Computer Configuration > Policies > Administrative Templates > Network > Network Connections > Windows Defender Firewall > Domain Profile`
+Another in changes to the Logon/Logoff scripts run by a User:
+`User Configuration > Policies > Windows Settings > Scripts (Logon/Logoff)`
+Or changes to Windows Defender at the GPO level:
+`Computer Configuration > Policies > Administrative Templates > Windows Components > Windows Defender Antivirus > Real-time Protection`
+
+
+Detectable User-centric Artefacts in Group Policy Object Tampering:
+- Custom User Settings:
+	- Traces to look for:
+		- **`HKEY_CURRENT_USER`** registry keys
+		- User Profile Directories
+	- Examples: 
+		- Desktop configurations, startup programs and security configurations - why would normal user write custom XML to subvert something in Active Directory?
+- Login Scripts:
+	- Traces to look for:
+		- script files in the `SYSVOL` folder and execution logs within user profiles, found under the **`User Configuration`** settings of a GPO
+- User Rights Assignments: 
+	- Traces to look for:
+		- Unauthorized alterations in user rights and permissions `Security` database at `%SystemRoot%\security\database\secedit.sdb`
+- Security Policy Changes:
+	- Traces to look for:
+		- System-wide modifications to security policies by GPOs are recorded in the registry under `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies`, reflected in the `Local Security Policy`
+- System Services Configurations:
+	- Traces to look for:
+		- `HKEY_LOCAL_MACHINE\SYSTEM` Registry Hive
+	- Examples
+		- alterations in configuration files located in `%SystemRoot%\System32\drivers\etc`
+- Network Configuration Adjustments:
+	- Traces to look for:
+		- `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\NetworkList`
+	- Examples
+		- startup type and permissions changes
 ## References
 
 [THM Windows User Account Forensics](https://tryhackme.com/r/room/windowsuseraccountforensics)
+[Locard's exchange principle (Wikipedia)](https://en.wikipedia.org/wiki/Locard%27s_exchange_principle)

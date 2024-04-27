@@ -290,7 +290,7 @@ chroot /mnt # Now go full linux pirate and board the container
 
 Use the Docker Client to make a privileged container
 ```bash
-docker -H unix:///app/docker.sock run --rm -d --privileged -v /:/hostsystem $DockerImageName
+docker -H unix:///app/docker.sock run --rm -d --privileged -v /:/host $image bash $DockerImageName
 # Check if Container is operational
 docker -H unix:///app/docker.sock ps
 # Get Shell on Docker through the Docker Client
