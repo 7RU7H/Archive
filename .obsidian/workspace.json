@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Development/Languages/Go/Useful-Go.md",
+                "file": "Software/Operating-Systems/Linux/Linux-Commands/Linux-Module-Commands.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "97f746e53c5cb844",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Web-Application-Hacking/Web-Exploits/XSS/XSS-Cheatsheet.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -56,7 +69,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Locard",
+                "query": "XSS",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +78,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -85,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Development/Languages/Go/Useful-Go.md",
+                "file": "Web-Application-Hacking/Web-Exploits/XSS/XSS-Cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Development/Languages/Go/Useful-Go.md",
+                "file": "Web-Application-Hacking/Web-Exploits/XSS/XSS-Cheatsheet.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Development/Languages/Go/Useful-Go.md"
+                "file": "Web-Application-Hacking/Web-Exploits/XSS/XSS-Cheatsheet.md"
               }
             }
           },
@@ -157,10 +171,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7f3c57710780bb69",
+  "active": "97f746e53c5cb844",
   "lastOpenFiles": [
-    "Development/Languages/Go/Golang.md",
+    "Exploitation/Client-Side-Attacks/Client-Side-Attacks.md",
+    "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md",
+    "Web-Application-Hacking/Web-Exploits/XSS/XSS-Cheatsheet.md",
+    "Web-Application-Hacking/Methodologies/Haddix-Methodology/Application-Analysis.md",
+    "Tools/Web-Applications-Attacking/Content-Discovery-Tools/Feroxbuster.md",
+    "Tools/Data-Processing/JQ.md",
+    "Software/Operating-Systems/Linux/Linux-Commands/Linux-Module-Commands.md",
     "Development/Languages/Go/Useful-Go.md",
+    "Development/Languages/Go/Golang.md",
     "Virtualization/Disable-Time-Synchronisation-With-Host-For-Guest-VMs.md",
     "Virtualization/Ansible.md",
     "Security-Disciplines/Digital-Forensics/Digital-Forensics.md",
@@ -178,13 +199,6 @@
     "Reconnaissance/Active-Information-Gathering/OS-Detection/OS-Detection.md",
     "Reconnaissance/Active-Information-Gathering/Active-Recon.md",
     "Reconnaissance/Active-Information-Gathering/Unknown-Service-Recon.md",
-    "Web-Application-Hacking/Web-Exploits/XSS/XSS-Cheatsheet.md",
-    "Tools/Web-Applications-Attacking/Browsers.md",
-    "Development/Languages/JavaScript/Useful_JavaScript.md",
-    "Tools/Debuggers-IDEs-Editors/IDEs/VS-Code.md",
-    "Brain-Hacking/Problem-Solving/Tradecraft-To-BrainCraft.md",
-    "Brain-Hacking/Life-Cheatsheet.md",
-    "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md",
     "Images/cia-structuredanalyticstimeline.png",
     "Security-Disciplines/Digital-Forensics/Anti-Forensic-Techniques",
     "Security-Disciplines/Digital-Forensics/Linux-Forensics",

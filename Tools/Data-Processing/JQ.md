@@ -53,6 +53,9 @@ cat *_computers.json | jq '.data[].Properties | .name + ":" + (.lastlogintimesta
 # use EpochConverter too convert
 # Check which machine have been on compared to a epoch
 cat *_computers.json | jq '.data[].Properties | select( .lastlogintimestamp > $EPOCH) | .name'
+
+# VHOST fuzzing with ffuf
+cat foundVhosts.ffuf | jq '.results[].host'
 ```
 
 ## References

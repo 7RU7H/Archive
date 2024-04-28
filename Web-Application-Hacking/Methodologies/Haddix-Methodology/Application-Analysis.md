@@ -102,7 +102,7 @@ Contents
 1. Do the above but with **mobile version** [apkleaks](https://github.com/dwisiswant0/apkleaks) 
 1. Changes! Stay updated via
 	1. Newletters
-	2. Affliate Programs
+	2. Affiliate Programs
 	3. Googling Conference Talks
 	4. Monitoring the domain for code changes
 
@@ -140,10 +140,10 @@ Fetch known URLs from AlienVault's Open Threat Exchange, the Wayback Machine, an
 **UNSPAMIFY THE OUTPUT**
 
 [wordlistgen](https://github.com/ameenmaali/wordlistgen)
-wordlistgen is a tool to pass a list of URLs and get back a list of relevant words for your wordlists. Wordlists are much more effective when you take the application's context into consideration. wordlistgen pulls out URL components, such as subdomain names, paths, query strings, etc. and spits them back to stdout so you can easily add them to your wordlists
+`wordlistgen` is a tool to pass a list of URLs and get back a list of relevant words for your wordlists. Wordlists are much more effective when you take the application's context into consideration. `wordlistgen` pulls out URL components, such as subdomain names, paths, query strings, etc. and spits them back to stdout so you can easily add them to your wordlists
 
 [trashcompactor](https://github.com/michael1026/trashcompactor)
-Simple Go program to remove URLs with duplicate funcionality based on script resources included. The theory behind this being if two pages include the same five scripts, they most likely have the same functionality.
+Simple Go program to remove URLs with duplicate functionality based on script resources included. The theory behind this being if two pages include the same five scripts, they most likely have the same functionality.
 
 #### Application Analysis
 How does the app pass data?

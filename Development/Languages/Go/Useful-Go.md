@@ -48,6 +48,7 @@ func main() {
 	switch {
 		case 0:
 			hackingString = append(hackingString, " that you are")
+			b := []byte(hackingString) // convert a string to byte slice
 		case 1, 2:
 			theHackMap := make(map[int]string)
 			betterFinalString := append(hackingString, " hacking the planet"
