@@ -56,7 +56,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "XSS",
+                "query": "HTML",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +65,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -159,10 +160,11 @@
   },
   "active": "6f39140f0558ed30",
   "lastOpenFiles": [
+    "Web-Application-Hacking/Web-Concepts/HTML.md",
+    "Web-Application-Hacking/Web-Exploits/XSS/XSS-Cheatsheet.md",
     "Software/Services/Databases/MYSQL/MySQL-Hacking.md",
     "Tools/Web-Applications-Attacking/Content-Discovery-Tools/Feroxbuster.md",
     "Software/Operating-Systems/Linux/Linux-Commands/Linux-Module-Commands.md",
-    "Web-Application-Hacking/Web-Exploits/XSS/XSS-Cheatsheet.md",
     "Exploitation/Client-Side-Attacks/Client-Side-Attacks.md",
     "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md",
     "Web-Application-Hacking/Methodologies/Haddix-Methodology/Application-Analysis.md",
@@ -184,7 +186,6 @@
     "Exploitation/CVEs/Log4Shell.md",
     "Virtualization/Docker/Docker.md",
     "Reconnaissance/Active-Information-Gathering/OS-Detection/OS-Detection.md",
-    "Reconnaissance/Active-Information-Gathering/Active-Recon.md",
     "Images/cia-structuredanalyticstimeline.png",
     "Security-Disciplines/Digital-Forensics/Anti-Forensic-Techniques",
     "Security-Disciplines/Digital-Forensics/Linux-Forensics",
