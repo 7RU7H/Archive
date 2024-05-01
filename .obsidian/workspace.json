@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Web-Application-Hacking/Web-Exploits/XSS/XSS-Cheatsheet.md",
+                "file": "Web-Application-Hacking/Web-Exploits/Web-App-Race-Conditions/Web-App-Race-Conditions.md",
                 "mode": "source",
                 "source": false
               }
@@ -65,8 +65,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Web-Application-Hacking/Web-Exploits/XSS/XSS-Cheatsheet.md",
+                "file": "Web-Application-Hacking/Web-Exploits/Web-App-Race-Conditions/Web-App-Race-Conditions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Web-Application-Hacking/Web-Exploits/XSS/XSS-Cheatsheet.md",
+                "file": "Web-Application-Hacking/Web-Exploits/Web-App-Race-Conditions/Web-App-Race-Conditions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Web-Application-Hacking/Web-Exploits/XSS/XSS-Cheatsheet.md"
+                "file": "Web-Application-Hacking/Web-Exploits/Web-App-Race-Conditions/Web-App-Race-Conditions.md"
               }
             }
           },
@@ -160,8 +159,11 @@
   },
   "active": "6f39140f0558ed30",
   "lastOpenFiles": [
-    "Web-Application-Hacking/Web-Concepts/HTML.md",
+    "Computer-Science/Programming.md",
+    "Web-Application-Hacking/Web-Exploits/Web-App-Race-Conditions/Web-App-Race-Conditions.md",
     "Web-Application-Hacking/Web-Exploits/XSS/XSS-Cheatsheet.md",
+    "Web-Application-Hacking/Web-Exploits/Web-App-Race-Conditions",
+    "Web-Application-Hacking/Web-Concepts/HTML.md",
     "Software/Services/Databases/MYSQL/MySQL-Hacking.md",
     "Tools/Web-Applications-Attacking/Content-Discovery-Tools/Feroxbuster.md",
     "Software/Operating-Systems/Linux/Linux-Commands/Linux-Module-Commands.md",
@@ -184,8 +186,6 @@
     "Tools/Shells/Socat.md",
     "Reconnaissance/Active-Information-Gathering/Netcat-As-Recon.md",
     "Exploitation/CVEs/Log4Shell.md",
-    "Virtualization/Docker/Docker.md",
-    "Reconnaissance/Active-Information-Gathering/OS-Detection/OS-Detection.md",
     "Images/cia-structuredanalyticstimeline.png",
     "Security-Disciplines/Digital-Forensics/Anti-Forensic-Techniques",
     "Security-Disciplines/Digital-Forensics/Linux-Forensics",
@@ -204,7 +204,6 @@
     "Images/chriskubecka-salmonfarm.png",
     "Images/chriskubecka-logisticshack.png",
     "Images/chriskubecka-openeuropeansystems.png",
-    "Software/T",
-    "Brain-Hacking/Problem-Solving"
+    "Software/T"
   ]
 }
