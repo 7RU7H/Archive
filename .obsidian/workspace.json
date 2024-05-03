@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Web-Application-Hacking/Web-Exploits/Web-App-Race-Conditions/Web-App-Race-Conditions.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Web-Application-Hacking/Web-Exploits/Web-App-Race-Conditions/Web-App-Race-Conditions.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Web-Application-Hacking/Web-Exploits/Web-App-Race-Conditions/Web-App-Race-Conditions.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Web-Application-Hacking/Web-Exploits/Web-App-Race-Conditions/Web-App-Race-Conditions.md"
+                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md"
               }
             }
           },
@@ -159,8 +159,8 @@
   },
   "active": "6f39140f0558ed30",
   "lastOpenFiles": [
-    "Computer-Science/Programming.md",
     "Web-Application-Hacking/Web-Exploits/Web-App-Race-Conditions/Web-App-Race-Conditions.md",
+    "Computer-Science/Programming.md",
     "Web-Application-Hacking/Web-Exploits/XSS/XSS-Cheatsheet.md",
     "Web-Application-Hacking/Web-Exploits/Web-App-Race-Conditions",
     "Web-Application-Hacking/Web-Concepts/HTML.md",
