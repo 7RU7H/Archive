@@ -17,7 +17,11 @@ This repository stands on and shadows amongst absolute giants in the various com
 
 #### CryptoCat
 
-[CryptoCat - YouTube](https://www.youtube.com/@_CryptoCat) *"InfoSec education channel: CTF walkthroughs, binary exploitation, pen-testing, bug bounty, malware analysis, programming/scripting etc."* - [HTB profile](https://app.hackthebox.com/profile/11897(), [GitHub](https://github.com/Crypto-Cat) and [Twitch](https://www.twitch.tv/cryptocat23)
+[CryptoCat - YouTube](https://www.youtube.com/@_CryptoCat) *"InfoSec education channel: CTF walkthroughs, binary exploitation, pen-testing, bug bounty, malware analysis, programming/scripting etc."* - [HTB profile](https://app.hackthebox.com/profile/11897(), [GitHub](https://github.com/Crypto-Cat) and [Twitch](https://www.twitch.tv/cryptocat23) - Good Writeups, explanations, references and demonstration a British IppSec that covers lots of HackTheBox material at a range of levels and subject matters that are not just retired boxes that IppSec likes or did. 
+
+#### David Bombal
+
+[David Bombal - YouTube](https://www.youtube.com/@davidbombal) *"Want to learn about IT? Want to get ahead in your career?  Well, this is the right place!"*. The foundations that are commonly not asked for from David are on this channel. Networking, Scripting and IT are what may not get the views, but are some of the content that people wanted Hacking related information actually need. He also has a big profile that gets some incredible interviews that you would not have gotten free decades ago. 
 #### DistroTube
 
 [DistroTube - YoutTube](https://www.youtube.com/@DistroTube) *"DistroTube (DT) is a YouTube channel started by me, Derek Taylor (also DT), in October 2017. Topics include Linux distro reviews, news, opinion and tutorials. Some of my favorite topics include the command line, tiling window managers, vim and emacs, free software and open source software."* This channel of depth and width of Linux content that is generally Arch-based and very informative.

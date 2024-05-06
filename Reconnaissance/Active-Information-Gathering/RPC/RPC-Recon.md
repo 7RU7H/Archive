@@ -1,4 +1,4 @@
-# RPCclient
+# `rpcclient`
 
 Query MS-RPC for commands to try and establish a null session
 ```bash
