@@ -11,8 +11,12 @@
             "id": "009384e516b824fb",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Development/Languages/JavaScript/Useful_JavaScript.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Development/Languages/JavaScript/Useful_JavaScript.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Development/Languages/JavaScript/Useful_JavaScript.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Development/Languages/JavaScript/Useful_JavaScript.md"
+              }
             }
           },
           {
@@ -151,6 +159,9 @@
   },
   "active": "009384e516b824fb",
   "lastOpenFiles": [
+    "Development/Regular-Expressions.md",
+    "Development/Languages/JavaScript/Useful_JavaScript.md",
+    "Software/Operating-Systems/Linux/QEMU.md",
     "Securing-Networks-And-Systems/Systems-Alchemy-The-Transmutation-Of-Hacking-TALK.md",
     "Security-Disciplines/Blue-Team/The-New-OSINT-Cheat-Code-LLM-TALK.md",
     "Images/intelligence-cycle-SANs-MattWilliamsIsHilarious.png",
@@ -176,9 +187,6 @@
     "Web-Application-Hacking/Methodologies/Haddix-Methodology/Application-Analysis.md",
     "Tools/Data-Processing/JQ.md",
     "Development/Languages/Go/Useful-Go.md",
-    "Development/Languages/Go/Golang.md",
-    "Virtualization/Disable-Time-Synchronisation-With-Host-For-Guest-VMs.md",
-    "Virtualization/Ansible.md",
     "Images/cia-structuredanalyticstimeline.png",
     "Security-Disciplines/Digital-Forensics/Anti-Forensic-Techniques",
     "Security-Disciplines/Digital-Forensics/Linux-Forensics",

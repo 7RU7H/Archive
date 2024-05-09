@@ -9,7 +9,7 @@ Firstly I apologise for those reading this. JavaScript seems insane to me. How i
 
 ## Browser Tools
 
-Browser Developer Tools, `Ctrl + F12`  is a underrated and very powerful utility to understand and interact with Javascript. Every Browser has one. Use it.
+Browser Developer Tools, `Ctrl + F12`  is a underrated and very powerful utility to understand and interact with JavaScript. Every Browser has one. Use it.
 - Inspector tab `Right Click -> Inspect Element` 
 - Console tab can view log/error messages and run JS code within the browser. 
 - Debugger tab  can set breakpoints and step-through instructions. Consider prettifying the JS from its mimified format - click  `{ }` at the bottom of the middle of the pane. 
@@ -21,12 +21,53 @@ Browser Developer Tools, `Ctrl + F12`  is a underrated and very powerful utility
 **Objects** are abstract containers that represented by data types and contain characteristics, you **Declare** objects to create and define it, **Assign** -ing value to that object and define **Scope** to what the object can affect and its accessibility - outside a code block it is global (generally a bad idea) and inside it is local variable.
 
 ```javascript
+let a = "a" // block-scoped mutable variable
+var b = 1 // GLOBAL mutatable variable - avoid
+const c = a+b // block-scoped constant variable
+
+// Operators
+// +
+// ++
+// -
+// --
+// *
+// /
+// %
+// let ComparisonOperator = "
+// ==
+// === // Equal and identiical
+// !=
+// !== // Not identical
+// <
+// <=
+// >
+// >=
+// >=
 // This is just comment made by '//' not code.
 // There is cheese and cracker references to make my life learn javascript more comfortable - - think wallace and grommit, if not go watch wallace and grommit JS is evil. Lol
 const x = 1; // = is the assignment operator the ; closes the statement syntactically
 var y = { foo: "bar"}; // object with property named foo with value "bar"
 var y = 2; // integers are not data types! Lunacy
 var z; // Z is undefined... Insanity.
+if x !== 2 {
+	switch (y) {
+		case 1:
+			for (a = 1; a <= 10; a++) {
+				console.log(`Number: ${a}`); // ${substitute with literal value no format specifiers }
+				}
+			break;
+		default:
+			document.write('script'); // document, HTML DOM write method()
+	}
+} else if {
+	while (x <=y) {
+		console.log(x++x+y) // enjoy
+		console.log('B' + 'a' ++ 'a' + 'a')
+	}
+} else {
+	switch ;
+}
+
 const crackers_types ["Water Biscuit", "Cream Cracker"]; // String array
 // Naming is case sensitive; letters, numbers and underscore and dollar sign, must not begin with a digit and must not be a keyword
 let some_butter = "with Butter to keep the cheese on top!";   
@@ -43,17 +84,29 @@ var cheese = {
 };
 cheese.toString();
 console.log(cheese + some_butter); //String concatenation
-console.log(x + some_butter); // -> "1with Butter to keep the cheese on top!" Maddness.
+console.log(x + some_butter); // -> "1with Butter to keep the cheese on top!" Madness.
+
+// Objects
+var choosePill = { // This is also a global btw..beware
+	pillOne: 'Red',
+    pillTwo: 'Blue',
+    pillThree: 'Escape the bounds on your concept of context and choice'
+};
+// Arrays
+let indexes ['zeroth','oneth','twoth'];
+indexs[0];
 ```
+
+For functions consider which ES versions - [w3schools JS Versions](https://www.w3schools.com/js/js_versions.asp)
 
 Different ways variable create keywords
 
-Task |  `var`  | `let` | `const`
- --- | --- | --- | ---
-Declared before use | N/A | X | X
-Block Scope | N/A | X | X
-Redeclare | X | N/A | N/A 
-Reassign | X | X | N/A 
+| Task                | `var` | `let` | `const` |
+| ------------------- | ----- | ----- | ------- |
+| Declared before use | N/A   | X     | X       |
+| Block Scope         | N/A   | X     | X       |
+| Redeclare           | X     | N/A   | N/A     |
+| Reassign            | X     | X     | N/A     |
 
 
 ## Minification
@@ -79,3 +132,6 @@ stopaimmediatePropatio()
 
 [Fireship.io ](https://www.youtube.com/shorts/7bmsDg4BaKw)
 [Mark Rendle - Programming's Greatest mistakes](https://www.youtube.com/watch?v=Y9clBHENy4Q)
+[THM Room - Javascript Basics](https://tryhackme.com/r/room/javascriptbasics)
+[w3schools HTML DOM write()](https://www.w3schools.com/jsref/met_doc_write.asp)
+[w3schools JS Versions](https://www.w3schools.com/js/js_versions.asp)
