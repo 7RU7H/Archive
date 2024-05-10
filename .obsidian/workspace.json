@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Software/Operating-Systems/Linux/Linux-Concepts/Linux-Permissions-and-Rights.md",
+                "file": "Tools/Authentication-Attacking/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
                 "mode": "source",
                 "source": false
               }
@@ -56,7 +56,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Linux-File-Path",
+                "query": "POP3",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Software/Operating-Systems/Linux/Linux-Concepts/Linux-Permissions-and-Rights.md",
+                "file": "Tools/Authentication-Attacking/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Software/Operating-Systems/Linux/Linux-Concepts/Linux-Permissions-and-Rights.md",
+                "file": "Tools/Authentication-Attacking/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Software/Operating-Systems/Linux/Linux-Concepts/Linux-Permissions-and-Rights.md"
+                "file": "Tools/Authentication-Attacking/Bruteforce-Login-Tools/Hydra-Cheatsheet.md"
               }
             }
           },
@@ -159,6 +159,12 @@
   },
   "active": "f6e4ac8aeebc8bc0",
   "lastOpenFiles": [
+    "Development/Languages/Python/Useful-Python.md",
+    "Development/Languages/Python/Python-Tooling-Libraries.md",
+    "Development/Languages/Python/Python-Network-Scripting.md",
+    "Reconnaissance/Active-Information-Gathering/DNS/DNS-Active-Recon.md",
+    "Networks/Network-Theory/Network-Protocols/Network-Protocols.md",
+    "Software/Operating-Systems/Linux/Linux-Concepts/Linux-Permissions-and-Rights.md",
     "Software/Operating-Systems/Linux/Linux-Concepts/Linux-File-System.md",
     "Software/Operating-Systems/Linux/Linux-Concepts/Linux-File-Paths.md",
     "Web-Application-Hacking/Web-Exploits/File-Inclusion/File-Inclusion.md",
@@ -181,12 +187,6 @@
     "Reconnaissance/OSINT/OSINT-Chris-Kubecka-DEFCON-27-Talk.md",
     "Reconnaissance/OSINT/OSINT.md",
     "Reconnaissance/HUMINT/User-Active-Recon.md",
-    "Reconnaissance/Active-Information-Gathering/RPC/RPC-Recon.md",
-    "Reconnaissance/Active-Information-Gathering/RPC/RPCClient-Usage.md",
-    "Web-Application-Hacking/Web-Exploits/Web-App-Race-Conditions/Web-App-Race-Conditions.md",
-    "README.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
-    "Computer-Science/Programming.md",
     "Web-Application-Hacking/Web-Exploits/Web-App-Race-Conditions",
     "Images/cia-structuredanalyticstimeline.png",
     "Security-Disciplines/Digital-Forensics/Anti-Forensic-Techniques",

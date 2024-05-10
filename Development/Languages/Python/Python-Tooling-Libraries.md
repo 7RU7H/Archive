@@ -19,7 +19,7 @@ pipx install x
 - zipapp creation: ```
 ```bash
 python -m pip install -r requirements.txt --target myapp  
-python –m zipapp -p “/usr/bin/env python3” myapp –m “myapp:main
+python -m zipapp -p "/usr/bin/env python3" myapp -m "myapp:main"
 ```
 
 

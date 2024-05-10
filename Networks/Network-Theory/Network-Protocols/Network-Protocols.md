@@ -59,7 +59,6 @@ tftp $ip
 
 ## 80 - HTTP
 
-
 [[Web-Hacking-Checklist]], [[Website-Recon]] and [[Web-App-Hacking-Methodology]].
 
 ## 88 - Kerberos
