@@ -36,7 +36,7 @@ Get-NetTCPConnection -remoteaddress 10.10.10.10 | select state, creationtime, lo
 # TCP connections and assoicated processes
 Get-NetTCPConnection | select LocalAddress,localport,remoteaddress,remoteport,state,@{name="process";Expression={(get-process -id $_.OwningProcess).ProcessName}}, @{Name="cmdline";Expression={(Get-WmiObject Win32_Process -filter "ProcessId = $($_.OwningProcess)").commandline}} | sort Remoteaddress -Descending | ft -wrap -autosize
 # UDP connections
-Get-NetUDPEndpoint | select local*,creationtime, remote* | ft -autosize
+Get-NetUDPEndpoint | select local*,creationtime,remote* | ft -autosize
 
 # DNS Cache: On Windows is a local database
 Get-DnsClientCache | ? Entry -NotMatch "workst|servst|memes|kerb|ws|ocsp" | out-string -width 1000
@@ -47,6 +47,7 @@ gc -tail 4 "C:\Windows\System32\Drivers\etc\hosts"
 qwinsta
 # SMB Shares
 Get-SmbConnection
+Get-SmbShare
 ```
 
 Packet Monitoring - beware normal authentication occurs if you have keys to decrypt traffic so does anyone that finds an packet captures
