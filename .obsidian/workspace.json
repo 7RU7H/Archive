@@ -13,7 +13,31 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/Authentication-Attacking/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
+                "file": "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0730a0d02b71be2e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Post-Exploitation/Networking/Port-Redirection-And-Tunnelling.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "69678c5253fe6378",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
                 "mode": "source",
                 "source": false
               }
@@ -56,7 +80,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "POP3",
+                "query": "ssh -R",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/Authentication-Attacking/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
+                "file": "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tools/Authentication-Attacking/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
+                "file": "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tools/Authentication-Attacking/Bruteforce-Login-Tools/Hydra-Cheatsheet.md"
+                "file": "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md"
               }
             }
           },
@@ -159,6 +183,15 @@
   },
   "active": "f6e4ac8aeebc8bc0",
   "lastOpenFiles": [
+    "Post-Exploitation/Networking/Port-Redirection-And-Tunnelling.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/System-Group-That-Grants-Linux-Privileges.md",
+    "Tools/Network-Based/Proxying-And-Pivoting/SSH-Redirection-And-Tunnelling.md",
+    "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md",
+    "Exploitation/CVEs/Pwnkit.md",
+    "Software/Services/Databases/MYSQL/MySQL-Cheatsheet.md",
+    "Web-Application-Hacking/CMS/Wordpress.md",
+    "Tools/Authentication-Attacking/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
     "Development/Languages/Python/Useful-Python.md",
     "Development/Languages/Python/Python-Tooling-Libraries.md",
     "Development/Languages/Python/Python-Network-Scripting.md",
@@ -177,16 +210,7 @@
     "Security-Disciplines/Digital-Forensics/Network-Forensics/Network-Forensics.md",
     "Security-Disciplines/Digital-Forensics/Network-Forensics",
     "Development/Languages/JavaScript/Useful_JavaScript.md",
-    "Development/Regular-Expressions.md",
-    "Software/Operating-Systems/Linux/QEMU.md",
-    "Securing-Networks-And-Systems/Systems-Alchemy-The-Transmutation-Of-Hacking-TALK.md",
-    "Security-Disciplines/Blue-Team/The-New-OSINT-Cheat-Code-LLM-TALK.md",
     "Images/intelligence-cycle-SANs-MattWilliamsIsHilarious.png",
-    "Alternate-Resources.md",
-    "Reconnaissance/OSINT/OSINT-People.md",
-    "Reconnaissance/OSINT/OSINT-Chris-Kubecka-DEFCON-27-Talk.md",
-    "Reconnaissance/OSINT/OSINT.md",
-    "Reconnaissance/HUMINT/User-Active-Recon.md",
     "Web-Application-Hacking/Web-Exploits/Web-App-Race-Conditions",
     "Images/cia-structuredanalyticstimeline.png",
     "Security-Disciplines/Digital-Forensics/Anti-Forensic-Techniques",

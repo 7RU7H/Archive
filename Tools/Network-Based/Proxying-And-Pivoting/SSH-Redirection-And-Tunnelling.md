@@ -206,7 +206,7 @@ sudo ss -tulpn
 sudo systemctl stop ssh
 ```
 
-#### Local Dynamic Port Forwarding
+#### Local Dynamic Proxy
 
 ```bash
 # Syntax

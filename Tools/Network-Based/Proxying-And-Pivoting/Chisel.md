@@ -48,6 +48,30 @@ Capture `chisel` traffic with `tcpdump`
 sudo tcpdump -nvvvXi tun0 tcp port $PORT
 ```
 
+## Authentication
+
+Staying encrypted even in CTFs is a good habit to get into...
+```bash
+ --keygen # A path to write a newly generated PEM-encoded SSH private key file. If users depend on your --key fingerprint, you may also include your --key to output your existing key. Use - (dash) to output the generated key to stdout.
+
+--keyfile # An optional path to a PEM-encoded SSH private key. When     this flag is set, the --key option is ignored, and the provided private key     is used to secure all communications. (defaults to the CHISEL_KEY_FILE   environment variable). Since ECDSA keys are short, you may also set keyfile to an inline base64 private key (e.g. chisel server --keygen - | base64).
+
+--authfile # An optional path to a users.json file. This file should be an object with users defined like:
+      {
+        "<user:pass>": ["<addr-regex>","<addr-regex>"]
+      }
+# when <user> connects, their <pass> will be verified and then each of the remote addresses will be compared against the list of address regular expressions for a match. Addresses will always come in the form "<remote-host>:<remote-port>" for normal remotes and "R:<local-interface>:<local-port>" for reverse port forwarding remotes. This file will be automatically reloaded on change.
+
+--auth # An optional string representing a single user with full access, in the form of <user:pass>. It is equivalent to creating an authfile with {"<user:pass>": [""]}. If unset, it will use the environment variable AUTH.
+	
+--tls-cert # Enables TLS and provides optional path to a PEM-encoded TLS certificate. When this flag is set, you must also set --tls-key, and you cannot set --tls-domain.
+
+--tls-domain # Enables TLS and automatically acquires a TLS key and     certificate using LetsEncrypt. Setting --tls-domain requires port 443. You may specify multiple --tls-domain flags to serve multiple domains. The resulting files are cached in the "$HOME/.cache/chisel" directory. You can modify this path by setting the CHISEL_LE_CACHE variable, or disable caching by setting this variable to "-". You can optionally provide a certificate notification email by setting CHISEL_LE_EMAIL.
+
+--tls-ca # a path to a PEM encoded CA certificate bundle or a directory     holding multiple PEM encode CA certificate bundle files, which is used to  validate client connections. The provided CA certificates will be used instead of the system roots. This is commonly used to implement mutual-TLS. 
+```
+
+
 ## Local Port Forwarding
 
 ```bash
