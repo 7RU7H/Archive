@@ -22,11 +22,14 @@ cat -v		# Show nonprinting characters as ^x or M-x
 cat -t		# .. and tabs as ^I
 cat -e		# ...and end lines with $
 cat -A		# same -vte
-
-cd 	change directory 
-cd .. 	goto the parent of the current directory
-cd ../	traverse directory tree
-cd -	return to last directory
+```
+## `cd` 
+```
+cd 	# change directory 
+cd .. 	# goto the parent of the current directory
+cd ../	# traverse directory tree
+cd -	# return to last directory
+cd ~/   # goto user's home directory
 
 Chmod 	change permissions of a file
 chmod u=rwx,g=rx,o=rw myfile
@@ -53,6 +56,17 @@ cp 		# copy
 cp --preserve # preserve the specified attributes (default: mode,ownership,timestamps), if possible additional attributes: context, links, xattr, all
 
 
+```
+## `date`
+```bash
+# Current  local system time
+date
+# What was the date nth unit-of-time ago?
+date --date="5 year ago"
+date --date="1360 day ago"
+```
+
+```
 dd if=/dev/urandom of=randomfile bs=4M count=2 		# create a file of 8mb of random content
 
 diff		compare files byte-to-byte
@@ -214,7 +228,7 @@ ls -la --sort=time -r # Same above expect list all permissions
 
 ```
 
-## `lsof`5
+## `lsof`
 ```bash
 lsof   # List Open files
 
@@ -322,3 +336,4 @@ lsattr
 
 [Ippsec.Rocks](https://ippsec.rocks)
 [haax.fr/linux-systems/tricks](https://cheatsheet.haax.fr/linux-systems/tricks/)
+[redhat - formatting date command ](https://www.redhat.com/sysadmin/formatting-date-command)

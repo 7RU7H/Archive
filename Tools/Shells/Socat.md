@@ -196,6 +196,9 @@ socat tcp-l:8000 tcp:$LocalBoxAddr:443 &
 socat TCP-LISTEN:8000,reuseaddr,fork TCP:<destination_ip>:<destination_port>
 
 nohup socat TCP-LISTEN:8000,reuseaddr,fork TCP:10.10.10.10:8443 &
+
+# Use a specific interface IP with range=
+nohup socat TCP-LISTEN:10000,reuseaddr,fork,range=172.17.0.1/24 TCP:10.10.10.10:6969 &
 ```
 
 
