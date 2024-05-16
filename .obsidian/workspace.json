@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Software/Services/Webservers/Jenkins.md",
+                "file": "Brain-Hacking/Problem-Solving/Black-Box-Method.md",
                 "mode": "source",
                 "source": false
               }
@@ -65,8 +65,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Software/Services/Webservers/Jenkins.md",
+                "file": "Brain-Hacking/Problem-Solving/Black-Box-Method.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Software/Services/Webservers/Jenkins.md",
+                "file": "Brain-Hacking/Problem-Solving/Black-Box-Method.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Software/Services/Webservers/Jenkins.md"
+                "file": "Brain-Hacking/Problem-Solving/Black-Box-Method.md"
               }
             }
           },
@@ -160,6 +159,15 @@
   },
   "active": "f6e4ac8aeebc8bc0",
   "lastOpenFiles": [
+    "Brain-Hacking/Problem-Solving/Reasoning-Typology.md",
+    "Brain-Hacking/Problem-Solving/Hacking-Meta-Hacking-Problems.md",
+    "Brain-Hacking/Problem-Solving/Tradecraft-To-BrainCraft.md",
+    "Brain-Hacking/Question-Based-Methodologies/Question-Based-Reversing-Methodology.md",
+    "Brain-Hacking/Question-Based-Methodologies/Question-Based-Pwning-Methodology.md",
+    "Brain-Hacking/Question-Based-Methodologies/Question-Based-OSINT-Methodology.md",
+    "Brain-Hacking/Question-Based-Methodologies/Question-Based-Forensics-Methodology.md",
+    "Brain-Hacking/Question-Based-Methodologies/Question-Based-Hacking-Methodology.md",
+    "Software/Services/Webservers/Jenkins.md",
     "Web-Application-Hacking/CMS/Wordpress.md",
     "Security-Disciplines/CTF-Platforms/TryHackMe.md",
     "Software/Operating-Systems/Linux/Linux-Commands/Core-Linux-Commands.md",
@@ -177,15 +185,6 @@
     "Development/Languages/Python/Python-Network-Scripting.md",
     "Reconnaissance/Active-Information-Gathering/DNS/DNS-Active-Recon.md",
     "Networks/Network-Theory/Network-Protocols/Network-Protocols.md",
-    "Software/Operating-Systems/Linux/Linux-Concepts/Linux-Permissions-and-Rights.md",
-    "Software/Operating-Systems/Linux/Linux-Concepts/Linux-File-System.md",
-    "Software/Operating-Systems/Linux/Linux-Concepts/Linux-File-Paths.md",
-    "Web-Application-Hacking/Web-Exploits/File-Inclusion/File-Inclusion.md",
-    "Software/Operating-Systems/Windows/Windows-Concepts/Windows-Filesystem/Windows-File-Paths.md",
-    "Reconnaissance/Active-Information-Gathering/SMTP/SMTP-Recon-Cheatsheet.md",
-    "Security-Disciplines/Digital-Forensics/Network-Forensics/Windows-Network-Forensics.md",
-    "Reconnaissance/Passive-Information-Gathering/Shodan/Shodan.md",
-    "Reconnaissance/Passive-Information-Gathering/Passive-Recon.md",
     "Security-Disciplines/Digital-Forensics/Network-Forensics",
     "Images/intelligence-cycle-SANs-MattWilliamsIsHilarious.png",
     "Web-Application-Hacking/Web-Exploits/Web-App-Race-Conditions",

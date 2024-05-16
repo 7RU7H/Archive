@@ -12,6 +12,10 @@ Intelligence - Data that is packaged as information that is actionable for human
 Information - Machine information provided by querying machines that has context
 Data - Raw sweet nutritious data. 
 
+## Reasoning about information
+
+[[Reasoning-Typology]]
+
 #### True/False (Positives and Negatives) and the Null Space 
 
 True Positives - Detected and is vulnerable
