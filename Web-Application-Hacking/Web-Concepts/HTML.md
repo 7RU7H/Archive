@@ -28,7 +28,7 @@ Hypertext Markup Language (HTML)
 				<!-- This a comment this symbol: => is a line break -->		                    
 ```
 
-See [[Basic-CSS]] of understanding of how CSS prettifies websites 
+See [[CSS]] of understanding of how CSS prettifies websites 
 
 #### Source Code that I needed explaining...
 

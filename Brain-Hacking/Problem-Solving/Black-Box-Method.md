@@ -2,7 +2,7 @@
 
 A [Black box](https://en.wikipedia.org/wiki/Black_box) *"is a system which can be viewed in terms of its inputs and outputs, without any knowledge of its internal workings."* 
 
-As method, Black-boxing a concept to learn or solve a problem, is systemic methodology of testing the inputs and outputs to extrapolate the internal concepts enscapsulated within a problem or complex concepts to learn.
+As method, Black-boxing a concept to learn or solve a problem, is systemic methodology of testing the inputs and outputs to extrapolate the internal concepts encapsulated within a problem or complex concepts to learn.
 
 ## Colin Galen's Advantages & Practicalities - Plus my additions
 

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Brain-Hacking/Problem-Solving/Black-Box-Method.md",
+                "file": "Web-Application-Hacking/Web-Exploits/Web-App-Race-Conditions/Web-App-Race-Conditions.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Brain-Hacking/Problem-Solving/Black-Box-Method.md",
+                "file": "Web-Application-Hacking/Web-Exploits/Web-App-Race-Conditions/Web-App-Race-Conditions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Brain-Hacking/Problem-Solving/Black-Box-Method.md",
+                "file": "Web-Application-Hacking/Web-Exploits/Web-App-Race-Conditions/Web-App-Race-Conditions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Brain-Hacking/Problem-Solving/Black-Box-Method.md"
+                "file": "Web-Application-Hacking/Web-Exploits/Web-App-Race-Conditions/Web-App-Race-Conditions.md"
               }
             }
           },
@@ -159,6 +159,10 @@
   },
   "active": "f6e4ac8aeebc8bc0",
   "lastOpenFiles": [
+    "Web-Application-Hacking/Web-Concepts/Web-Applications.md",
+    "Web-Application-Hacking/Web-Concepts/Client-Server-Model.md",
+    "Development/Languages/CSS/CSS.md",
+    "Brain-Hacking/Problem-Solving/Black-Box-Method.md",
     "Brain-Hacking/Problem-Solving/Reasoning-Typology.md",
     "Brain-Hacking/Problem-Solving/Hacking-Meta-Hacking-Problems.md",
     "Brain-Hacking/Problem-Solving/Tradecraft-To-BrainCraft.md",
@@ -181,10 +185,6 @@
     "Software/Services/Databases/MYSQL/MySQL-Cheatsheet.md",
     "Tools/Authentication-Attacking/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
     "Development/Languages/Python/Useful-Python.md",
-    "Development/Languages/Python/Python-Tooling-Libraries.md",
-    "Development/Languages/Python/Python-Network-Scripting.md",
-    "Reconnaissance/Active-Information-Gathering/DNS/DNS-Active-Recon.md",
-    "Networks/Network-Theory/Network-Protocols/Network-Protocols.md",
     "Security-Disciplines/Digital-Forensics/Network-Forensics",
     "Images/intelligence-cycle-SANs-MattWilliamsIsHilarious.png",
     "Web-Application-Hacking/Web-Exploits/Web-App-Race-Conditions",
