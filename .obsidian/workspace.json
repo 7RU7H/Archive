@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Mobile/Android/Android.md",
+                "file": "Software/Operating-Systems/Linux/Linux-System-Administration/XFCE.md",
                 "mode": "source",
                 "source": false
               }
@@ -56,7 +56,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Jenkins",
+                "query": "Firefox",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Mobile/Android/Android.md",
+                "file": "Software/Operating-Systems/Linux/Linux-System-Administration/XFCE.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Mobile/Android/Android.md",
+                "file": "Software/Operating-Systems/Linux/Linux-System-Administration/XFCE.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Mobile/Android/Android.md"
+                "file": "Software/Operating-Systems/Linux/Linux-System-Administration/XFCE.md"
               }
             }
           },
@@ -159,6 +159,13 @@
   },
   "active": "01ee782ab108772c",
   "lastOpenFiles": [
+    "Software/Browsers/Firefox.md",
+    "Software/Operating-Systems/Linux/Linux-System-Administration/XFCE.md",
+    "Tools/Web-Applications-Attacking/Browsers.md",
+    "Software/Browsers",
+    "Software/File-Typology/Bazaar-Files.md",
+    "Networks/Network-Security/Cloudflare.md",
+    "Mobile/Android/Android.md",
     "Web-Application-Hacking/Web-Exploits/Web-App-Race-Conditions/Web-App-Race-Conditions.md",
     "Web-Application-Hacking/Web-Concepts/Web-Applications.md",
     "Web-Application-Hacking/Web-Concepts/Client-Server-Model.md",
@@ -179,12 +186,6 @@
     "Tools/Shells/Socat.md",
     "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md",
     "Post-Exploitation/Networking/Port-Redirection-And-Tunnelling.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/System-Group-That-Grants-Linux-Privileges.md",
-    "Tools/Network-Based/Proxying-And-Pivoting/SSH-Redirection-And-Tunnelling.md",
-    "Exploitation/CVEs/Pwnkit.md",
-    "Software/Services/Databases/MYSQL/MySQL-Cheatsheet.md",
-    "Tools/Authentication-Attacking/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
     "Security-Disciplines/Digital-Forensics/Network-Forensics",
     "Images/intelligence-cycle-SANs-MattWilliamsIsHilarious.png",
     "Web-Application-Hacking/Web-Exploits/Web-App-Race-Conditions",
@@ -196,7 +197,6 @@
     "Exploitation/CVEs/Untitled",
     "Computer-Science",
     "Exploitation/Binary-Exploitation/Mitigations",
-    "Securing-Networks-And-Systems/Hardening/Active-Directory",
     "Images/chriskubecka-openautomateddemandresponse-attachsystems.png",
     "Images/chriskubecka-ismemegoddess-part2.png",
     "Images/chriskubecka-ismemegoddess.png",

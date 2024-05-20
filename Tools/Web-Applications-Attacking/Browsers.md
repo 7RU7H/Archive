@@ -5,7 +5,7 @@ Much like the Vim/Emacs or the X vs Y Programming Language and or Paradigm, inte
 #### Developer Tools 
 
 Developer Tools Hotkeys
-- Firefox, press `Ctrl + Shift + K`
+- [[Firefox]], press `Ctrl + Shift + K`
 - Google Chrome, press `Ctrl + Shift + J`
 - Safari, press `Command + Option + J`
 
