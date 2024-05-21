@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Hardware/Hardware-Maintenance/Data-Destruction.md",
+                "file": "Software/Services/Backup/Borg.md",
                 "mode": "source",
                 "source": false
               }
@@ -65,8 +65,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Hardware/Hardware-Maintenance/Data-Destruction.md",
+                "file": "Software/Services/Backup/Borg.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Hardware/Hardware-Maintenance/Data-Destruction.md",
+                "file": "Software/Services/Backup/Borg.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Hardware/Hardware-Maintenance/Data-Destruction.md"
+                "file": "Software/Services/Backup/Borg.md"
               }
             }
           },
@@ -160,8 +159,11 @@
   },
   "active": "01ee782ab108772c",
   "lastOpenFiles": [
-    "Networks/Network-Theory/Network-Protocols/IPsec.md",
+    "Post-Exploitation/Stealth/Cleanup/Linux-Cleanup.md",
+    "Software/Services/Backup/Borg.md",
+    "Software/Services/Backup",
     "Hardware/Hardware-Maintenance/Data-Destruction.md",
+    "Networks/Network-Theory/Network-Protocols/IPsec.md",
     "Hardware/Hardware-Maintenance/USB-Maintenance.md",
     "Software/Operating-Systems/Linux/Linux-System-Administration/XFCE.md",
     "Software/Browsers/Firefox.md",
@@ -185,8 +187,6 @@
     "Brain-Hacking/Question-Based-Methodologies/Question-Based-Hacking-Methodology.md",
     "Software/Services/Webservers/Jenkins.md",
     "Web-Application-Hacking/CMS/Wordpress.md",
-    "Security-Disciplines/CTF-Platforms/TryHackMe.md",
-    "Software/Operating-Systems/Linux/Linux-Commands/Core-Linux-Commands.md",
     "Security-Disciplines/Digital-Forensics/Network-Forensics",
     "Images/intelligence-cycle-SANs-MattWilliamsIsHilarious.png",
     "Web-Application-Hacking/Web-Exploits/Web-App-Race-Conditions",
@@ -197,7 +197,6 @@
     "Software/Services/Logging",
     "Exploitation/CVEs/Untitled",
     "Computer-Science",
-    "Exploitation/Binary-Exploitation/Mitigations",
     "Images/chriskubecka-openautomateddemandresponse-attachsystems.png",
     "Images/chriskubecka-ismemegoddess-part2.png",
     "Images/chriskubecka-ismemegoddess.png",
