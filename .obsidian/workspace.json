@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Software/Operating-Systems/Linux/Linux-System-Administration/XFCE.md",
+                "file": "Hardware/Hardware-Maintenance/Data-Destruction.md",
                 "mode": "source",
                 "source": false
               }
@@ -56,7 +56,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Firefox",
+                "query": "Ipsec",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +65,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Software/Operating-Systems/Linux/Linux-System-Administration/XFCE.md",
+                "file": "Hardware/Hardware-Maintenance/Data-Destruction.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Software/Operating-Systems/Linux/Linux-System-Administration/XFCE.md",
+                "file": "Hardware/Hardware-Maintenance/Data-Destruction.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Software/Operating-Systems/Linux/Linux-System-Administration/XFCE.md"
+                "file": "Hardware/Hardware-Maintenance/Data-Destruction.md"
               }
             }
           },
@@ -159,8 +160,11 @@
   },
   "active": "01ee782ab108772c",
   "lastOpenFiles": [
-    "Software/Browsers/Firefox.md",
+    "Networks/Network-Theory/Network-Protocols/IPsec.md",
+    "Hardware/Hardware-Maintenance/Data-Destruction.md",
+    "Hardware/Hardware-Maintenance/USB-Maintenance.md",
     "Software/Operating-Systems/Linux/Linux-System-Administration/XFCE.md",
+    "Software/Browsers/Firefox.md",
     "Tools/Web-Applications-Attacking/Browsers.md",
     "Software/Browsers",
     "Software/File-Typology/Bazaar-Files.md",
@@ -183,9 +187,6 @@
     "Web-Application-Hacking/CMS/Wordpress.md",
     "Security-Disciplines/CTF-Platforms/TryHackMe.md",
     "Software/Operating-Systems/Linux/Linux-Commands/Core-Linux-Commands.md",
-    "Tools/Shells/Socat.md",
-    "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md",
-    "Post-Exploitation/Networking/Port-Redirection-And-Tunnelling.md",
     "Security-Disciplines/Digital-Forensics/Network-Forensics",
     "Images/intelligence-cycle-SANs-MattWilliamsIsHilarious.png",
     "Web-Application-Hacking/Web-Exploits/Web-App-Race-Conditions",

@@ -1,6 +1,6 @@
+# IPsec
 
 When two remote site what to exchange information, one safe way is virtual connect with vpn encrypted tunnel. Troubleshooot IPsec with [https://docs.netgate.com/pfsense/en/latest/troubleshooting/ipsec.html](https://docs.netgate.com/pfsense/en/latest/troubleshooting/ipsec.html), suggested by [Ippsec](https://www.youtube.com/watch?v=1ae64CdwLHE)
-
 
 ## IPsec-v3
 
@@ -10,13 +10,13 @@ When two remote site what to exchange information, one safe way is virtual conne
 			- Transport - the original IP Header is not encrypted
 				- `[IP Header][Unencrypted ESP Header][TCP|UDP Header][Payload][ESP Trailer][ESP AUTH]`
 				- ESP Trailer encapsulated the ESP Payload
-				- ESP Auth contains a hash to authenicate everything from ESP Header to Trailer
-		1. Tunnel Mode: authenication for the IP Header, TCP/UDP header and data
+				- ESP Auth contains a hash to authenticate everything from ESP Header to Trailer
+		1. Tunnel Mode: authentication for the IP Header, TCP/UDP header and data
 			- Tunnel - original IP is also encrypted
 				- `[IP Header][ESP Header][IP Header][TCP|UDP Header][Payload][ESP Trailer][ESP AUTH]`
 				- The first IP header is new
-				- ESP Auth contains a hash to authenicate everything from ESP Header to Trailer
-- Encapsulating Security Payload (ESP) forauthentication, integrity, and confidentiality.
+				- ESP Auth contains a hash to authenticate everything from ESP Header to Trailer
+- Encapsulating Security Payload (ESP) for authentication, integrity, and confidentiality.
 - Security Association (SA) is responsible for negotiating the encryption keys and algorithms. 
 	- [Internet Key Exchange](https://en.wikipedia.org/wiki/Internet_Key_Exchange "Internet Key Exchange") (IKE) 
 	- [Kerberized Internet Negotiation of Keys](https://en.wikipedia.org/wiki/Kerberized_Internet_Negotiation_of_Keys "Kerberized Internet Negotiation of Keys") (KINK)
@@ -52,14 +52,14 @@ Prior to connection - Establishing of cryptographic settings - Internet Key Exch
 				- Pneumonic: 
 					- H - Hash
 					- A - Auth
-					- G - DiffieHellman Group asymetric
+					- G - Diffie-Hellman Group asymmetric
 					- L - Lifetime
-					- E - Encryption symetric blunk data transfer
+					- E - Encryption symmetric block data transfer
 			1. IKE Phase Two 
 				1. IPsec cryptosettings 
 					- Both must match on both peers; 
 					- These setting feed into a tunnel interface.
-					- Inbetween these two interfaces the symmetrically encrypted traffic can traverse.]
+					- In between these two interfaces the symmetrically encrypted traffic can traverse.
 					- IP Protocol 50
 
 ## Encapsulating Security Payload (ESP)
@@ -100,6 +100,30 @@ If there is NAT boudary between the two sites we must add a NAT traveral - add U
 `[IP Header][UDP Header][ESP HEADER][IP Header][TCP|UDP Header][Payload][ESP Trailer][ESP AUTH]`
 
 ## OpenVPN
+
+Prevent accidental IP leaking from VPN dropping from [BHIS | OPSEC Fundamentals for Remote Red Teams - Michael Allen](https://youtu.be/AHwfV3NFlno?si=ifq3zSkE2bFvaGJA)
+```bash
+#!/bin/bash
+
+# Prevent accidental IP leaking from VPN dropping
+# 
+# Author: BHIS - Michael Allen 
+#
+# Watch: https://youtu.be/AHwfV3NFlno?si=ifq3zSkE2bFvaGJA
+# 
+# Run with openvpn
+# `openvpn --script-security 2 --down vpn-down.sh --config $VPNfile`
+
+echo "Disabling Network Interfaces..."
+systemctl stop network-manager
+killall -9 dhclient
+for in $(ifconfig | grep -iEo '^[a-z0-9]+:' | grep -v '^lo:$' | cut -d ':' -f 1)
+do
+	ifconfig $i 0.0.0.0 down
+done
+echo "VPN gone down completed disabling Network Interfaces"
+exit
+```
 
 ## Strongswan
 
@@ -148,7 +172,8 @@ Some issuse that you will face I will state here as demonstrative of the configu
 [THM Network Security Protocols](https://tryhackme.com/room/networksecurityprotocols)
 [Wikipedia](https://en.wikipedia.org/wiki/IPsec)
 [What is IPSec?](https://www.youtube.com/watch?v=tuDVWQOG0C0)
-[Troubleshoot Ipsec https://docs.netgate.com/pfsense/en/latest/troubleshooting/ipsec.html](https://docs.netgate.com/pfsense/en/latest/troubleshooting/ipsec.html)
+[BHIS | OPSEC Fundamentals for Remote Red Teams - Michael Allen](https://youtu.be/AHwfV3NFlno?si=ifq3zSkE2bFvaGJA)
 [Ippsec Conceal Video discusses Ipsec](https://www.youtube.com/watch?v=1ae64CdwLHE)
 [Wikipedia Internet Key Exchange](https://en.wikipedia.org/wiki/Internet_Key_Exchange "Internet Key Exchange")
 [Wikipedia Kerberized Internet Negotiation of Keys](https://en.wikipedia.org/wiki/Kerberized_Internet_Negotiation_of_Keys "Kerberized Internet Negotiation of Keys") 
+[Troubleshoot Ipsec https://docs.netgate.com/pfsense/en/latest/troubleshooting/ipsec.html](https://docs.netgate.com/pfsense/en/latest/troubleshooting/ipsec.html)
