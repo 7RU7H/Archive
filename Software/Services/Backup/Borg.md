@@ -4,7 +4,6 @@
 
 [borgbackup.readthedocs.io](https://borgbackup.readthedocs.io)
 
-
 ```bash
 apt install borgbackup
 ```

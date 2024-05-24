@@ -1,6 +1,6 @@
 # Useful PowerShell
 
-This is a condensed and *Hacking themed* resource for PowerShell. PowerShell is a massive and my humble opinion a *weird* object-oriented programming language.  Windows and PowerShell are not case-sensitive, but a *standard* readability is to use upper-case first letter - I suggest not unless you need to present your work(use a script to change it to *standard*). Every command has a `cmdlet` and combinations of `verb-noun` to construct command that would be too numerous to list. So to define the theme of this document is oneliners catergorised by use(*just in case at some point they maybe some exceptions like two oneliners that need to be seperate executions* **THESE WILL HAVE A `# TASKNAME Command # THEN Command`**. I am in the process of making this better for my own use:
+This is a condensed and *Hacking themed* resource for PowerShell. PowerShell is a massive and my humble opinion a *weird* object-oriented programming language.  Windows and PowerShell are not case-sensitive, but a *standard* readability is to use upper-case first letter - I suggest not unless you need to present your work(use a script to change it to *standard*). Every command has a `cmdlet` and combinations of `verb-noun` to construct command that would be too numerous to list. So to define the theme of this document is oneliners categorised by use(*just in case at some point they maybe some exceptions like two oneliners that need to be separate executions* **THESE WILL HAVE A `# TASKNAME Command # THEN Command`**. I am in the process of making this better for my own use:
 1. Adding aliases that I might want to use instead of full command
 2. Making the comments defining explaining a better layout
 
@@ -172,6 +172,8 @@ Set-Location 		# choose a directory for context to operate
 Get-FileHash -Path ... -Algorithm
 CertUtil -hashfile [FILE] MD5|SHA256|SHA512
 ## Finding ##
+# -Force flag to show hidden or system items 
+
 Get-ChildItem # Aliased ls, dir, gci
 Get-ChildItem -Hidden
 Get-ChildItem -Path C:\ -Include *.doc,*.[FILETYPE] -File -Recurse -ErrorAction SilentlyContinue #Find all finds of a particular filetype:
@@ -384,3 +386,4 @@ Create new type accelerators [idera adding-new-type-accelerators-in-powershell](
 [hacktricks](https://book.hacktricks.xyz/windows-hardening/basic-powershell-for-pentesters)
 [Medium PowerShell Obfuscation - SecureTacticsTS](https://medium.com/@SecureTacticsTS/simple-but-effective-powershell-obfuscation-techniques-b38900d8f7dd)
 [SANS](https://www.sans.org/blog/month-of-powershell-profile-hack-base64-encoding-decoding/)
+[learn.microsoft.com - Working with files and folders](https://learn.microsoft.com/en-us/powershell/scripting/samples/working-with-files-and-folders?view=powershell-7.4)
