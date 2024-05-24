@@ -91,7 +91,7 @@ Docker `compose`is for multiple containers to interact with each other while nee
 # directive=value
 
 # Comment
- # Leading whitespace before comments and instructions are ignored
+# Leading whitespace before comments and instructions are ignored
 # INSTRUCTION arguments
 
 # From initializes a new build stage and sets the base image
@@ -101,7 +101,7 @@ RUN <command>
 RUN <executable> 
 # Security level either: insecure or sandbox
 RUN --security=
-# Netwokr either: default, none or host
+# Network either: default, none or host
 RUN --network=
 # Copy
 # ADD != COPY; COPY is basic copy

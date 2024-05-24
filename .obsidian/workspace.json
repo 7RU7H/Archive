@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Development/Languages/Go/Golang.md",
+                "file": "Software/Operating-Systems/Linux/Linux-Sandboxing.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Development/Languages/Go/Golang.md",
+                "file": "Software/Operating-Systems/Linux/Linux-Sandboxing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Development/Languages/Go/Golang.md",
+                "file": "Software/Operating-Systems/Linux/Linux-Sandboxing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Development/Languages/Go/Golang.md"
+                "file": "Software/Operating-Systems/Linux/Linux-Sandboxing.md"
               }
             }
           },
@@ -172,6 +172,10 @@
   },
   "active": "9cf1e5a6f60ab82f",
   "lastOpenFiles": [
+    "Virtualization/Docker/Docker.md",
+    "Software/Operating-Systems/Linux/Linux-Sandboxing.md",
+    "Development/Languages/Go/Golang.md",
+    "Development/Languages/Ruby/Ruby.md",
     "Development/VS-Code-Codium-Debugging.md",
     "Development/Languages/PowerShell/PowerShell.md",
     "Reconnaissance/Passive-Information-Gathering/Search-Engine-Dorking.md",
@@ -196,10 +200,6 @@
     "Brain-Hacking/Problem-Solving/Reasoning-Typology.md",
     "Brain-Hacking/Problem-Solving/Hacking-Meta-Hacking-Problems.md",
     "Brain-Hacking/Problem-Solving/Tradecraft-To-BrainCraft.md",
-    "Brain-Hacking/Question-Based-Methodologies/Question-Based-Reversing-Methodology.md",
-    "Brain-Hacking/Question-Based-Methodologies/Question-Based-Pwning-Methodology.md",
-    "Brain-Hacking/Question-Based-Methodologies/Question-Based-OSINT-Methodology.md",
-    "Brain-Hacking/Question-Based-Methodologies/Question-Based-Forensics-Methodology.md",
     "Security-Disciplines/Digital-Forensics/Network-Forensics",
     "Images/intelligence-cycle-SANs-MattWilliamsIsHilarious.png",
     "Web-Application-Hacking/Web-Exploits/Web-App-Race-Conditions",
