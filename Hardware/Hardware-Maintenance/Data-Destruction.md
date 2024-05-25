@@ -10,6 +10,16 @@ https://www.gnu.org/software/coreutils/manual/html_node/shred-invocation.html
 ## Linux
 
 
+Full USB drives
+```bash
+sudo dd if=/dev/zero of=/dev/sdb1 bs=1M
+```
+
+```bash
+sudo shred -n 3 -z /dev/sdb1
+```
+For other [[USB-Maintenance]] follow that link.
+
 #### Debian-based
 
 #### RedHat
@@ -18,3 +28,6 @@ https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/se
 
 ## Windows
 
+## References
+
+[baeldung usb-drive-format](https://www.baeldung.com/linux/usb-drive-format)

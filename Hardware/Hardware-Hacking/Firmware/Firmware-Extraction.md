@@ -73,8 +73,42 @@ opencd -f $configFile
 
 `binwalk` the dumped firmware and extract
 ```bash
+# For dependencies for jefferson - currently the onyl way was to use pip and break system packages on a VM, beware
+apt install python3-cstruct binwalk
+pip install --user jefferson --break-system-packages
+
 binwalk -e $dump.bin
+binwalk --run-as=root -e  $firmware.img | tee -a binwalk-output-e.binwalk
 ```
+Strings
+```bash
+# Search each file specified and print any printable character strings found that are at least four characters long and followed by an unprintable character. 
+# Often used to find human-readable content within binary files.
+# Different strings encoding may reveal different hardcoded credentials on poor designed applications
+strings -e s # 7-bit byte (used for ASCII, ISO 8859) - Default
+strings -e S # 8-bit byte
+strings -e b # 16-bit bigendian
+strings -e l # 16-bit littleendian
+strings -e s $firmware.img | tee -a fw.strings-s;
+strings -e S $firmware.img | tee -a fw.strings-S;
+strings -e b $firmware.img | tee -a fw.strings-b;
+strings -e l $firmware.img | tee -a fw.strings-l;
+```
+
+Create a block device (`mtdblock` ([Memory Technology Device](https://en.wikipedia.org/wiki/Memory_Technology_Device))) that will allow us to dump the flash memory for [Journalling Flash File System](https://en.wikipedia.org/wiki/JFFS)
+```bash
+ls -la /dev/ | grep mtdblock0
+# rm -rf /dev/mtdblock0 # if exists
+mknod /dev/mtdblock0 b 31 0
+mkdir /mnt/jffs2_file/
+modprobe jffs2
+modprobe mtdram
+modprobe mtdblock
+dd if=$firmware.img.extracted/$INT.jffs2 of=/dev/mtdblock0
+mount -t jffs2 /dev/mtdblock0 /mnt/jffs2_file/
+cd /mnt/jffs2_file/
+```
+
 
 Either you have GUI = OS or you need [[IDA]] pro, Radare [[Radare2-Cheatsheet]], `strings`.
 
@@ -92,6 +126,10 @@ Comments are then made regarding [[Backdoors]] firmware, firmware extraction in 
 ```bash
 flashrom -w $myBackdoorfirmware
 ```
+
 ## References
 
 [DEF CON 24 - Hardware Hacking Village - Matt DuHarte - Basic Firmware Extraction](https://www.youtube.com/watch?v=Kxvpbu9STU4)
+[THM Dumping Router Firmware Room](https://tryhackme.com/r/room/rfirmware)
+[Wikipedia - Memory Technology Device](https://en.wikipedia.org/wiki/Memory_Technology_Device)
+[Wikipedia - Journalling Flash File System](https://en.wikipedia.org/wiki/JFFS)

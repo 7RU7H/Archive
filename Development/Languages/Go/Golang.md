@@ -1,6 +1,8 @@
 # Golang 
 
-## Installing GO
+## Installing Go
+
+[go.dev/doc/install - Official Install Documentation](https://go.dev/doc/install)
 
 ## Compiling Go
 [Official Compilation Tutorial](https://go.dev/doc/tutorial/compile-install)
@@ -31,9 +33,8 @@ go build -ldflags="-s -w"
 upx <binary>
 ```
 
-## Effective Go
-
-[Effective Go is a great article to write idiomatic Go Code](https://go.dev/doc/effective_go)
+## Effective Go and Writing Go Code
+[go.dev/doc/code](https://go.dev/doc/code) explains how to write and compile and install go source code. [Effective Go is a great article to write idiomatic Go Code](https://go.dev/doc/effective_go)
 
 ## Test Driven Development Template
 
@@ -82,3 +83,5 @@ func init() // This is a special function in golang - IS THE FIRST FUNCTION THAT
 [Effective Go is a great article to write idiomatic Go Code](https://go.dev/doc/effective_go)
 [Building for specific archs and oses](https://www.digitalocean.com/community/tutorials/building-go-applications-for-different-operating-systems-and-architectures)
 [OWASP's Go-SCP](https://github.com/OWASP/Go-SCP)
+[go.dev/doc/code](https://go.dev/doc/code) 
+[go.dev/doc/install - Official Install Documentation](https://go.dev/doc/install)

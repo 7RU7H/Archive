@@ -28,6 +28,7 @@ Re-partition
 fdisk -l 
 fdisk /dev/$disk
 # press m for help
+g # New GUID Partition Table - 64-bit partitions table scheme and supports up to 128 primary partitions
 # Example of a single partition MBR
 n # new partition
 p # Primary
@@ -43,12 +44,24 @@ Reformatting - will require partitions to reformat!
  # Find USB and show partition names
 lsblk -fp
 umount $mountpoint
-# Format to FAT32
-mkfs.vfat /dev/$sdxy 
+# FAT32
+sudo mkfs.fat -F 32 -n Pendrive /dev/sdb1
+# Format to VFAT32
+mkfs.vfat -F 32 /dev/$sdxy 
 # Format to NTFS
 mkfs.ntfs /dev/$sdxy 
-
+# Format to ext4 - file
+# -L: Label
+# -m reserved block percentage
+# -b block size
+sudo mkfs.ext4 -L Pendrive -m 1 -b 4096 /dev/sdb1
+# Format to exFAT
+sudo mkfs.btrfs -n Pendrive /dev/sdb1
+# Format to xfs
+sudo mkfs.xfs -n Pendrive /dev/sdb1
 ```
+For [FAT](https://en.wikipedia.org/wiki/File_Allocation_Table) (File Allocation Table), [FAT16](https://en.wikipedia.org/wiki/File_Allocation_Table#FAT16), [VFAT](https://en.wikipedia.org/wiki/File_Allocation_Table#VFAT) (Virtual FAT), and [FAT32](https://www.baeldung.com/cs/ntfs-vs-fat32-vs-exfat#fat32) file systems Wikipedia links are provided by [baeldung usb-drive-format](https://www.baeldung.com/linux/usb-drive-format).
+
 
 Encrypting a USB flash memory - [THM](https://tryhackme.com/room/linuxsystemhardening):
 ```bash
@@ -73,3 +86,4 @@ sudo cryptsetup luksDump /dev/sdb1
 [maketecheasier](https://www.maketecheasier.com/repair-corrupted-usb-drive-linux/)
 [THM Room Linux System Hardening](https://tryhackme.com/room/linuxsystemhardening)
 [Arch Wiki](https://wiki.archlinux.org/title/USB_flash_installation_medium)
+[baeldung usb-drive-format](https://www.baeldung.com/linux/usb-drive-format)

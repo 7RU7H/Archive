@@ -1,7 +1,8 @@
 # Linux Persistence
 
 For general overview of persistence that OS neutral: [[Persistence]].
-
+![](linux-persistence-map.png)
+[Credit: pberda.github/io](https://pberba.github.io/security/2021/11/22/linux-threat-hunting-for-persistence-sysmon-auditd-webshell/)
 #### Nohup
 
 Use `nohup` - no hang up in a script to make call back.  
@@ -144,3 +145,4 @@ loginctl enable-linger
 [PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology and Resources/Linux - Persistence.md)
 [Mitre Persistence](https://attack.mitre.org/techniques/T1098)
 [Alexey Petrenko's Systemd persistence](https://medium.com/@alexeypetrenko/systemd-user-level-persistence-25eb562d2ea8)
+[pberda.github/io Article and Persistence Map](https://pberba.github.io/security/2021/11/22/linux-threat-hunting-for-persistence-sysmon-auditd-webshell/)

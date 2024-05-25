@@ -78,6 +78,14 @@ func calculateTotalHack() {
 
 ```
 
+
+```go
+import (
+	"flags"
+)
+
+// -h is a default flag for help!
+```
 ## References
 
 [learnxinyminutes - Go](https://learnxinyminutes.com/docs/go/)
