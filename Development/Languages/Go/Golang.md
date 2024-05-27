@@ -69,6 +69,10 @@ go env -u GOBIN
 func init() // This is a special function in golang - IS THE FIRST FUNCTION THAT WILL RUN IN YOUR PACKAGE
 ```
 
+## Debugging with Golang
+
+[go.dev gdb](https://go.dev/doc/gdb) debugging with [[GDB]]
+
 ## Secure Coding in Go
 
 [OWASP's Go-SCP](https://github.com/OWASP/Go-SCP) is a *"Go programming language secure coding practices guide"*
@@ -85,3 +89,4 @@ func init() // This is a special function in golang - IS THE FIRST FUNCTION THAT
 [OWASP's Go-SCP](https://github.com/OWASP/Go-SCP)
 [go.dev/doc/code](https://go.dev/doc/code) 
 [go.dev/doc/install - Official Install Documentation](https://go.dev/doc/install)
+[go.dev gdb](https://go.dev/doc/gdb) 

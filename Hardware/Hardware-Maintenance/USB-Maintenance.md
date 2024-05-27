@@ -44,6 +44,9 @@ Reformatting - will require partitions to reformat!
  # Find USB and show partition names
 lsblk -fp
 umount $mountpoint
+# EXFAT
+mkfs.exfat /dev/sda1
+
 # FAT32
 sudo mkfs.fat -F 32 -n Pendrive /dev/sdb1
 # Format to VFAT32

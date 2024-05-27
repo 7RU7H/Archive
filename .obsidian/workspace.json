@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Persistence/Linux-Persistence.md",
+                "file": "Development/Exploit-Development/GEF.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,13 +25,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Hardware/Hardware-Maintenance/USB-Maintenance.md",
+                "file": "Cryptography-And-Authentication/De-Or-En-Cryption.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "93df66d44d217c4f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Development/Languages/Go/Golang.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -68,7 +81,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Firmware",
+                "query": "xfce",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -97,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Persistence/Linux-Persistence.md",
+                "file": "Cryptography-And-Authentication/De-Or-En-Cryption.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Persistence/Linux-Persistence.md",
+                "file": "Cryptography-And-Authentication/De-Or-En-Cryption.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Persistence/Linux-Persistence.md"
+                "file": "Cryptography-And-Authentication/De-Or-En-Cryption.md"
               }
             }
           },
@@ -166,40 +179,41 @@
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "01ee782ab108772c",
+  "active": "7a4fc53a71420abf",
   "lastOpenFiles": [
+    "Cryptography-And-Authentication/Cracking-Files.md",
+    "Cryptography-And-Authentication/De-Or-En-Cryption.md",
+    "Cryptography-And-Authentication/AD-Azure-Weak-Password-Finding.md",
+    "Cryptography-And-Authentication/RSA-Encryption.md",
+    "Hardware/Hardware-Maintenance/USB-Maintenance.md",
+    "HTTP2.md",
+    "Development/Languages/Go/Golang.md",
+    "Web-Application-Hacking/Web-Exploits/HTTP-Request-Smuggling/HTTP-Request-Smuggling.md",
+    "Web-Application-Hacking/Web-Exploits/Upload-Vulnerabilities.md",
+    "Development/Exploit-Development/GEF.md",
+    "Virtualization/Cloud/Ansible.md",
+    "Software/Operating-Systems/Linux/Linux-System-Administration/XFCE.md",
+    "Persistence/Linux-Persistence.md",
     "Hardware/Hardware-Hacking/Firmware/Firmware-Extraction.md",
     "Images/linux-persistence-map.png",
     "Reverse-Engineering/Source-Code-Analysis.md",
     "Reverse-Engineering/Reverse-Engineering.md",
     "Exploitation/Binary-Exploitation/Binary-Exploitation-Enumeration.md",
     "Hardware/Hardware-Maintenance/Data-Destruction.md",
-    "Hardware/Hardware-Maintenance/USB-Maintenance.md",
     "Hardware/Hardware-Maintenance/Hardware-Maintenance.md",
     "Software/Operating-Systems/Linux/Linux-Sandboxing.md",
     "Development/VS-Code-Codium-Debugging.md",
-    "Development/Languages/Go/Golang.md",
     "Development/Languages/Go/Useful-Go.md",
     "Post-Exploitation/Stealth/Cleanup/Linux-Cleanup.md",
     "Software/Services/Backup/Borg.md",
     "Software/Services/Backup",
     "Networks/Network-Theory/Network-Protocols/IPsec.md",
-    "Software/Operating-Systems/Linux/Linux-System-Administration/XFCE.md",
     "Software/Browsers/Firefox.md",
-    "Tools/Web-Applications-Attacking/Browsers.md",
     "Software/Browsers",
-    "Software/File-Typology/Bazaar-Files.md",
-    "Networks/Network-Security/Cloudflare.md",
-    "Mobile/Android/Android.md",
-    "Web-Application-Hacking/Web-Exploits/Web-App-Race-Conditions/Web-App-Race-Conditions.md",
-    "Web-Application-Hacking/Web-Concepts/Web-Applications.md",
-    "Web-Application-Hacking/Web-Concepts/Client-Server-Model.md",
-    "Development/Languages/CSS/CSS.md",
-    "Brain-Hacking/Problem-Solving/Black-Box-Method.md",
-    "Brain-Hacking/Problem-Solving/Reasoning-Typology.md",
     "Security-Disciplines/Digital-Forensics/Network-Forensics",
     "Images/intelligence-cycle-SANs-MattWilliamsIsHilarious.png",
     "Web-Application-Hacking/Web-Exploits/Web-App-Race-Conditions",

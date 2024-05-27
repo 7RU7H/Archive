@@ -2,7 +2,9 @@
 
 For definitions and concepts try here: [[Cryptography]]
 
-## gpg
+## `gpg`
+
+[GnuPG or GPG](https://gnupg.org/) is an Open Source implementation of PGP from the GNU project.
 ```bash
 killall gpg-agent
 
@@ -18,7 +20,7 @@ gpg --decrypt blowfish.plain.gpg
 gpg --import public.key
 ```
 
-## Openssl
+## `openssl`
 ```bash
 
 openssl genrsa -aes256 -out private.key 8912
@@ -33,7 +35,7 @@ openssl rsautl -decrypt -inkey private.key -in encrypted.txt -out plaintext.txt
 # -salt val           Use provided salt
 ```
 
-## ssh-keygen
+## `ssh-keygen`
 ```bash
 ssh-keygen
 ssh-copy-id -i /.ssh/id_rsa.pub kali@localhost # send to remote server
@@ -54,3 +56,10 @@ cat $file # beware escape characters for the terminal
 ## Cryptogram solving
 
 [quipqiup](https://www.quipqiup.com/) *"a fast and automated cryptogram solver by [Edwin Olson](http://april.eecs.umich.edu/people/ebolson). It can solve simple substitution ciphers often found in newspapers, including puzzles like cryptoquips (in which word boundaries are preserved) and patristocrats (inwhi chwor dboun darie saren t).*"*
+
+## References
+
+[quipqiup](https://www.quipqiup.com/) 
+[THM Encryption 101 Room](https://tryhackme.com/r/room/encryptioncrypto101)
+[THM Intro to Cryptography Room](https://tryhackme.com/r/room/cryptographyintro)
+[THM Linux Strength Training Room](https://tryhackme.com/r/room/linuxstrengthtraining)
