@@ -2,7 +2,11 @@
 
 Eventually this list will become more full - if you are not here I probably finding the time to put you here. These just resource I have turned to - if you are not I will discover and place you here.
 
-This repository stands on and shadows amongst absolute giants in the various communities that may largely go unnoticed. As a thanks and recognition as well a firm statement of transcendence through the power of dispersed information here is a list of *Alternate* or **better resources** with a sentence at most a description in alphabetical order:
+This repository stands on and in the shadows amongst absolute giants from various communities that may largely go unnoticed. As a thanks and recognition as well a firm statement of transcendence through the power of dispersed information here is a list of *Alternate* or **better resources** with a sentence at most a description in alphabetical order:
+
+#### Alh4zr3d 
+
+Ex fighter pilot and Python developer turned Infosec's biggest proponent of Cthulhu lore and Nim. Malder-in-chef, his back catalogue of streams [on Twitch](https://www.twitch.tv/alh4zr3d/about) is full incredibly funny and educational streams of retired HTB boxes, THM machines, lots of AD lab work, Red teaming, Malware and chat full of real hackers and professionals and also Al malding proving his awesomeness after four hours. He is a busy dude now though, hopeful happier given how difficult it would be to stream boxes like he did and sometimes does. [YouTube](https://www.youtube.com/channel/UCz-Z-d2VPQXHGkch0-_KovA)
 
 #### Arch Wiki
 
@@ -47,7 +51,7 @@ John Hammond is a YouTube Content creator with over thousands of videos; his [Yo
 
 #### LaurieWired
 
- Laurie Kirk is a professional Reverse Engineer, with a [DEFCON31 Talk - DEF CON 31 - Runtime Riddles - Abusing Manipulation Points in the Android Source - Laurie Kirk](https://www.youtube.com/watch?v=Bq7Z3X4xwCE). [LaurieWired](https://www.youtube.com/@lauriewired) is also YouTube Content creator reverse engineer malware, focusing on cross-platform and mobile analysis. Her [Github](https://github.com/LaurieWired)
+ Laurie Kirk is a professional Reverse Engineer, with a [DEFCON31 Talk - DEF CON 31 - Runtime Riddles - Abusing Manipulation Points in the Android Source - Laurie Kirk](https://www.youtube.com/watch?v=Bq7Z3X4xwCE). [LaurieWired](https://www.youtube.com/@lauriewired) is also YouTube Content creator reverse engineer malware, focusing on cross-platform (with mostly ARM and C++ focus) and mobile analysis. Her [Github](https://github.com/LaurieWired). 
 #### Lzone
 
 A good SysAdmin, DevOps, Cloud Engineer Cheatsheets at: [lzone.de Cheatsheets](https://lzone.de/cheat-sheet.html)
@@ -60,6 +64,10 @@ A good SysAdmin, DevOps, Cloud Engineer Cheatsheets at: [lzone.de Cheatsheets](h
 
 [Portswigger](https://portswigger.net/) developers of Burp Suite as as well as the resource library for the Web Application Academy - [Visit All Topics for all their listed topics](https://portswigger.net/web-security/all-topics). 
 
+#### Primagen
+
+
+
 #### Snovvcrash
 
 https://ppn.snovvcrash.rocks/
@@ -67,8 +75,11 @@ https://ppn.snovvcrash.rocks/
 
 #### The Linux cast
 
-[The Linux Cast - Youtube](https://www.youtube.com/@TheLinuxCast) for all your *"Daily FOSS related content, weekly Linux podcasts, and more coming at you from an eternal Linux noob."* This is great Linux YouTube channel that is very helpful for decision making on the details of Linux that you may need help with. The content is very user friendly and is only about Linux, no rabbitholes.   
+[The Linux Cast - Youtube](https://www.youtube.com/@TheLinuxCast) for all your *"Daily FOSS related content, weekly Linux podcasts, and more coming at you from an eternal Linux noob."* This is great Linux YouTube channel that is very helpful for decision making on the details of Linux that you may need help with. The content is very user friendly and is only about Linux, no rabbitholes. His videos are thought out, to the point and do not perpetuate drama(s). Awesome dude.
 
+##### Thor
+
+Multi-Black badge winning, Game Developer, Pentested real power plants in the US, SE and security staff member, first [Twitch](https://www.twitch.tv/piratesoftware) programmer of the year award. Has probably saved more human lives than ferrets by now while being a standout human in practically all regards by helping others. His dad is was also the Blizzard Cinematic directory so the poor guy also has to also save Ferrets on the side to be just as cool. [@PirateSoftware](https://x.com/PirateSoftware), [YouTube](https://www.youtube.com/@PirateSoftware)
 #### xct 
 
 [xct](https://github.com/xct) One of the Top HackTheBox players, OSEE, OSCE3, CRTO, and CISSP qualified, graduated with an MSc in Applied IT Security. Founder and content creator of [vulnlab](https://www.vulnlab.com/) and [vulnlab - YouTube channel](https://www.youtube.com/playlist?list=PLPBVZbjvnjVmAyAHZ2CRg-92zoH5z_386), Visit [vulndev.io](https://vulndev.io/) for personal blog, which like the Youtube Channel publishes some Writeups for HackTheBox and TryHackme.

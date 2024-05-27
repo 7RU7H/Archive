@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cryptography-And-Authentication/De-Or-En-Cryption.md",
+                "file": "Alternate-Resources.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cryptography-And-Authentication/De-Or-En-Cryption.md",
+                "file": "Alternate-Resources.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cryptography-And-Authentication/De-Or-En-Cryption.md",
+                "file": "Alternate-Resources.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cryptography-And-Authentication/De-Or-En-Cryption.md"
+                "file": "Alternate-Resources.md"
               }
             }
           },
@@ -185,8 +185,8 @@
   },
   "active": "7a4fc53a71420abf",
   "lastOpenFiles": [
-    "Cryptography-And-Authentication/Cracking-Files.md",
     "Cryptography-And-Authentication/De-Or-En-Cryption.md",
+    "Cryptography-And-Authentication/Cracking-Files.md",
     "Cryptography-And-Authentication/AD-Azure-Weak-Password-Finding.md",
     "Cryptography-And-Authentication/RSA-Encryption.md",
     "Hardware/Hardware-Maintenance/USB-Maintenance.md",
