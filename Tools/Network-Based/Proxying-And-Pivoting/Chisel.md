@@ -18,13 +18,14 @@ cd chisel/
 # On Victim machine:  
 ldd --version # linux and windows
 
+CGO_ENABLED=0 go build # For static without c runtime libraries
 
 # To mimise binary size
 # -s strip binary of debug info
 # -w strip of dwarf infomation
-go build -ldflags="-s -w" 
+CGO_ENABLED=0 go build -ldflags="-s -w" 
 # Build for windows
-GOOS=windows GOARCH=amd64 go build -ldflags="-s -w"
+CGO_ENABLED=0 GOOS=windows GOARCH=amd64 go build -ldflags="-s -w"
 upx chisel
 
 # IPsec stuff I failed to get workingchisel server --port 8080 --reverse

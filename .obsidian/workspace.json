@@ -25,7 +25,31 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Alternate-Resources.md",
+                "file": "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ea126996af279fbf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/C2/Sliver/Sliver-Cheatsheet.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b0170b8f1202db12",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Persistence/Linux-Persistence.md",
                 "mode": "source",
                 "source": false
               }
@@ -44,7 +68,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -81,7 +105,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "xfce",
+                "query": "golang ",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -110,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Alternate-Resources.md",
+                "file": "Persistence/Linux-Persistence.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Alternate-Resources.md",
+                "file": "Persistence/Linux-Persistence.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Alternate-Resources.md"
+                "file": "Persistence/Linux-Persistence.md"
               }
             }
           },
@@ -183,15 +207,18 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "7a4fc53a71420abf",
+  "active": "b0170b8f1202db12",
   "lastOpenFiles": [
+    "Tools/C2/Sliver/Sliver-Cheatsheet.md",
+    "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md",
+    "Development/Languages/Go/Golang.md",
+    "Alternate-Resources.md",
     "Cryptography-And-Authentication/De-Or-En-Cryption.md",
     "Cryptography-And-Authentication/Cracking-Files.md",
     "Cryptography-And-Authentication/AD-Azure-Weak-Password-Finding.md",
     "Cryptography-And-Authentication/RSA-Encryption.md",
     "Hardware/Hardware-Maintenance/USB-Maintenance.md",
     "HTTP2.md",
-    "Development/Languages/Go/Golang.md",
     "Web-Application-Hacking/Web-Exploits/HTTP-Request-Smuggling/HTTP-Request-Smuggling.md",
     "Web-Application-Hacking/Web-Exploits/Upload-Vulnerabilities.md",
     "Development/Exploit-Development/GEF.md",
@@ -209,10 +236,7 @@
     "Development/VS-Code-Codium-Debugging.md",
     "Development/Languages/Go/Useful-Go.md",
     "Post-Exploitation/Stealth/Cleanup/Linux-Cleanup.md",
-    "Software/Services/Backup/Borg.md",
     "Software/Services/Backup",
-    "Networks/Network-Theory/Network-Protocols/IPsec.md",
-    "Software/Browsers/Firefox.md",
     "Software/Browsers",
     "Security-Disciplines/Digital-Forensics/Network-Forensics",
     "Images/intelligence-cycle-SANs-MattWilliamsIsHilarious.png",

