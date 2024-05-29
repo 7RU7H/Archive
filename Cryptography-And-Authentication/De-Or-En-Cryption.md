@@ -20,6 +20,16 @@ gpg --decrypt blowfish.plain.gpg
 gpg --import public.key
 ```
 
+Have no public key?
+```bash
+gpg --keyid-format long --verify SHA256SUMS.gpg SHA256SUMS
+# No public key
+gpg --keyid-format long --keyserver hkp://keyserver.ubuntu.com --recv-keys 0x$KEYinAbove
+# You can now inspect the key fingerprints by running:
+gpg --keyid-format long --list-keys --with-fingerprint 0x$KEYinAbove
+# I have test with and without 0x and both work..
+```
+[Best simple way of explaining GPG-age from Ubuntu Tutorials](https://ubuntu.com/tutorials/how-to-verify-ubuntu#4-retrieve-the-correct-signature-key)
 ## `openssl`
 ```bash
 

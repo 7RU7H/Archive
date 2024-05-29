@@ -20,12 +20,12 @@
             }
           },
           {
-            "id": "7a4fc53a71420abf",
+            "id": "8c6d813e7fc08ebf",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/C2/Covenant/Covenant.md",
+                "file": "Cryptography-And-Authentication/De-Or-En-Cryption.md",
                 "mode": "source",
                 "source": false
               }
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/C2/Covenant/Covenant.md",
+                "file": "Cryptography-And-Authentication/De-Or-En-Cryption.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tools/C2/Covenant/Covenant.md",
+                "file": "Cryptography-And-Authentication/De-Or-En-Cryption.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tools/C2/Covenant/Covenant.md"
+                "file": "Cryptography-And-Authentication/De-Or-En-Cryption.md"
               }
             }
           },
@@ -195,10 +195,14 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "7a4fc53a71420abf",
+  "active": "8c6d813e7fc08ebf",
   "lastOpenFiles": [
-    "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md",
+    "Software/Operating-Systems/Linux/Linux-Commands/Linux-Users-And-Group-Commands.md",
+    "Images/whatisthisdebiandocs-1.png",
+    "Images/whatisthisdebiandocs.png",
+    "Development/Languages/Perl/Perl.md",
     "Tools/C2/Covenant/Covenant.md",
+    "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md",
     "Tools/AD-Offensive/Rubeus-Cheatsheet.md",
     "Development/Exploit-Development/GEF.md",
     "Tools/C2/Covenant/Convenant-DOTNET-3dot1-dependices-mirror.md",
@@ -222,9 +226,6 @@
     "Hardware/Hardware-Hacking/Firmware/Firmware-Extraction.md",
     "Images/linux-persistence-map.png",
     "Reverse-Engineering/Source-Code-Analysis.md",
-    "Reverse-Engineering/Reverse-Engineering.md",
-    "Exploitation/Binary-Exploitation/Binary-Exploitation-Enumeration.md",
-    "Hardware/Hardware-Maintenance/Data-Destruction.md",
     "Software/Services/Backup",
     "Software/Browsers",
     "Security-Disciplines/Digital-Forensics/Network-Forensics",
@@ -240,8 +241,6 @@
     "Images/chriskubecka-ismemegoddess-part2.png",
     "Images/chriskubecka-ismemegoddess.png",
     "Images/chriskubecka-protocolattachedtowindturbines.png",
-    "Images/chriskubecka-weedismoneymaking.png",
-    "Images/chriskubecka-gchqandtheunderground.png",
-    "Images/chriskubecka-salmonfarm.png"
+    "Images/chriskubecka-weedismoneymaking.png"
   ]
 }
