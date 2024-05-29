@@ -1,7 +1,7 @@
 # Sliver Cheatsheet
 
 - OPSEC 
-	- [[EDR-Bypass]]ing requires more than just the [garble](https://github.com/burrowers/garble)(use to "*Obfuscate Go builds"*) and [go-donut](https://github.com/Binject/go-donut) - (go port of [donut](https://github.com/TheWover/donut) - *"Generates x86, x64, or AMD64+x86 position-independent shellcode that loads .NET Assemblies, PE files, and other Windows payloads from memory and runs them with parameters"*)
+	- [[EDR-Bypass]]ing requires more than just the [garble](https://github.com/burrowers/garble) (use to "*Obfuscate Go builds"*) and [go-donut](https://github.com/Binject/go-donut) - (go port of [donut](https://github.com/TheWover/donut) - *"Generates x86, x64, or AMD64+x86 position-independent shellcode that loads .NET Assemblies, PE files, and other Windows payloads from memory and runs them with parameters"*)
 	- Use a custom stager
 	- Modify - `~/.sliver/configs/http-c2.json`
 	- Change or rotate extensions and filenames used in procedural URL generation

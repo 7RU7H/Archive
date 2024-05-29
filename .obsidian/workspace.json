@@ -25,19 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ea126996af279fbf",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tools/C2/Sliver/Sliver-Cheatsheet.md",
+                "file": "Tools/C2/Covenant/Covenant.md",
                 "mode": "source",
                 "source": false
               }
@@ -68,7 +56,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -105,7 +93,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "golang ",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -134,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Persistence/Linux-Persistence.md",
+                "file": "Tools/C2/Covenant/Covenant.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Persistence/Linux-Persistence.md",
+                "file": "Tools/C2/Covenant/Covenant.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Persistence/Linux-Persistence.md"
+                "file": "Tools/C2/Covenant/Covenant.md"
               }
             }
           },
@@ -207,10 +195,18 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "b0170b8f1202db12",
+  "active": "7a4fc53a71420abf",
   "lastOpenFiles": [
-    "Tools/C2/Sliver/Sliver-Cheatsheet.md",
     "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md",
+    "Tools/C2/Covenant/Covenant.md",
+    "Tools/AD-Offensive/Rubeus-Cheatsheet.md",
+    "Development/Exploit-Development/GEF.md",
+    "Tools/C2/Covenant/Convenant-DOTNET-3dot1-dependices-mirror.md",
+    "Tools/C2/C2-Matrix.md",
+    "Tools/C2/Improving-Existing-C2-Setups.md",
+    "Tools/C2/Sliver/Sliver-Cheatsheet.md",
+    "Tools/C2/Covenant",
+    "Persistence/Linux-Persistence.md",
     "Development/Languages/Go/Golang.md",
     "Alternate-Resources.md",
     "Cryptography-And-Authentication/De-Or-En-Cryption.md",
@@ -221,21 +217,14 @@
     "HTTP2.md",
     "Web-Application-Hacking/Web-Exploits/HTTP-Request-Smuggling/HTTP-Request-Smuggling.md",
     "Web-Application-Hacking/Web-Exploits/Upload-Vulnerabilities.md",
-    "Development/Exploit-Development/GEF.md",
     "Virtualization/Cloud/Ansible.md",
     "Software/Operating-Systems/Linux/Linux-System-Administration/XFCE.md",
-    "Persistence/Linux-Persistence.md",
     "Hardware/Hardware-Hacking/Firmware/Firmware-Extraction.md",
     "Images/linux-persistence-map.png",
     "Reverse-Engineering/Source-Code-Analysis.md",
     "Reverse-Engineering/Reverse-Engineering.md",
     "Exploitation/Binary-Exploitation/Binary-Exploitation-Enumeration.md",
     "Hardware/Hardware-Maintenance/Data-Destruction.md",
-    "Hardware/Hardware-Maintenance/Hardware-Maintenance.md",
-    "Software/Operating-Systems/Linux/Linux-Sandboxing.md",
-    "Development/VS-Code-Codium-Debugging.md",
-    "Development/Languages/Go/Useful-Go.md",
-    "Post-Exploitation/Stealth/Cleanup/Linux-Cleanup.md",
     "Software/Services/Backup",
     "Software/Browsers",
     "Security-Disciplines/Digital-Forensics/Network-Forensics",
@@ -247,7 +236,6 @@
     "Security-Disciplines/Digital-Forensics/Windows-Forensics",
     "Software/Services/Logging",
     "Exploitation/CVEs/Untitled",
-    "Computer-Science",
     "Images/chriskubecka-openautomateddemandresponse-attachsystems.png",
     "Images/chriskubecka-ismemegoddess-part2.png",
     "Images/chriskubecka-ismemegoddess.png",
