@@ -38,7 +38,7 @@ This a hub page to link to all the Linux based concepts in this repository. Linu
 [[Linux-DNS-Configuration]]
 [[Linux-Networking]]
 [[Linux-Users-And-Groups]]
-[[Linux-Crons]]
+[[Linux-Cronjobs]]
 [[Linux-Logging]]
 [[Sudo]]
 [[ELF-Binaries]]

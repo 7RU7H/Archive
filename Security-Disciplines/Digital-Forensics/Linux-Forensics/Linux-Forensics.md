@@ -13,7 +13,7 @@ md5sum $file
 sha256sum $file
 ```
 
-Artefact Gathering
+#### Artefact Gathering
 ```bash
 # OS release information
 cat /etc/os-release
@@ -65,6 +65,11 @@ ps aux
 cat /etc/hosts
 cat /etc/resolv.conf
 ```
+
+
+#### Processs
+
+See [[Linux-Process-Analysis]] for [[Persistence]] methods used by attackers.
 
 #### Directories and Files; Permissions and Timestamping
 

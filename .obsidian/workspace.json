@@ -8,24 +8,24 @@
         "type": "tabs",
         "children": [
           {
-            "id": "01ee782ab108772c",
+            "id": "b0170b8f1202db12",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cryptography-And-Authentication/De-Or-En-Cryption.md",
+                "file": "Software/Operating-Systems/Linux/Linux-Commands/Systemctl.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "b0170b8f1202db12",
+            "id": "57180b41d4780cc6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Persistence/Linux-Persistence.md",
+                "file": "Software/Operating-Systems/Linux/Linux-Commands/Linux-Processes-Commands.md",
                 "mode": "source",
                 "source": false
               }
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cryptography-And-Authentication/De-Or-En-Cryption.md",
+                "file": "Software/Operating-Systems/Linux/Linux-Commands/Systemctl.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cryptography-And-Authentication/De-Or-En-Cryption.md",
+                "file": "Software/Operating-Systems/Linux/Linux-Commands/Systemctl.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cryptography-And-Authentication/De-Or-En-Cryption.md"
+                "file": "Software/Operating-Systems/Linux/Linux-Commands/Systemctl.md"
               }
             }
           },
@@ -182,12 +182,21 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "01ee782ab108772c",
+  "active": "b0170b8f1202db12",
   "lastOpenFiles": [
+    "Software/Operating-Systems/Linux/Linux-Commands/Systemd.md",
+    "Software/Operating-Systems/Linux/Linux-Commands/Systemd-Controveries.md",
+    "Software/Operating-Systems/Linux/Linux-Commands/Systemctl.md",
+    "Persistence/Linux-Persistence.md",
+    "Security-Disciplines/Digital-Forensics/Linux-Forensics/Linux-Process-Analysis.md",
+    "Security-Disciplines/Digital-Forensics/Linux-Forensics/Linux-Forensics.md",
+    "Software/Operating-Systems/Linux/Linux-Concepts/Linux-Cronjobs.md",
+    "Software/Operating-Systems/Linux/Linux-Commands/Linux-Processes-Commands.md",
+    "Tools/Linux/PSPY.md",
+    "Cryptography-And-Authentication/De-Or-En-Cryption.md",
     "Development/Exploit-Development/GEF.md",
     "Tools/C2/Covenant/Covenant.md",
     "Software/Operating-Systems/Linux/Linux-Commands/Linux-Users-And-Group-Commands.md",
-    "Cryptography-And-Authentication/De-Or-En-Cryption.md",
     "Images/whatisthisdebiandocs-1.png",
     "Images/whatisthisdebiandocs.png",
     "Development/Languages/Perl/Perl.md",
@@ -198,21 +207,13 @@
     "Tools/C2/Improving-Existing-C2-Setups.md",
     "Tools/C2/Sliver/Sliver-Cheatsheet.md",
     "Tools/C2/Covenant",
-    "Persistence/Linux-Persistence.md",
     "Development/Languages/Go/Golang.md",
     "Alternate-Resources.md",
     "Cryptography-And-Authentication/Cracking-Files.md",
     "Cryptography-And-Authentication/AD-Azure-Weak-Password-Finding.md",
     "Cryptography-And-Authentication/RSA-Encryption.md",
     "Hardware/Hardware-Maintenance/USB-Maintenance.md",
-    "HTTP2.md",
-    "Web-Application-Hacking/Web-Exploits/HTTP-Request-Smuggling/HTTP-Request-Smuggling.md",
-    "Web-Application-Hacking/Web-Exploits/Upload-Vulnerabilities.md",
-    "Virtualization/Cloud/Ansible.md",
-    "Software/Operating-Systems/Linux/Linux-System-Administration/XFCE.md",
-    "Hardware/Hardware-Hacking/Firmware/Firmware-Extraction.md",
     "Images/linux-persistence-map.png",
-    "Reverse-Engineering/Source-Code-Analysis.md",
     "Software/Services/Backup",
     "Software/Browsers",
     "Security-Disciplines/Digital-Forensics/Network-Forensics",
