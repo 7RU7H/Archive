@@ -67,7 +67,7 @@ Use offensive tool [pspy](https://github.com/DominicBreuker/pspy) for defensive 
 
 [[Linux-Cronjobs]]
 - main crontab file at `/etc/crontab` governs system-wide cronjobs.
-- users crontab files stored: `/var/spool/cron/crontabs`
+- users crontab files stored: `/var/spool/cron/crontabs/`
 - `/etc/` contains cronjob related by the unit of time directories:
 	- `/etc/cron.hourly/` - System cronjobs that run once per hour.
 	- `/etc/cron.daily/` - System cronjobs that run once per day.
@@ -83,10 +83,90 @@ cronjob execution logs
 sudo grep cron /var/log/syslog | grep -E 'failed|error|fatal'
 ```
 
+```bash
+sudo bash -c 'for user in $(cut -f1 -d: /etc/passwd); do entries=$(crontab -u $user -l 2>/dev/null | grep -v "^#"); if [ -n "$entries" ]; then echo "$user: Crontab entry found!"; echo "$entries"; echo; fi; done'
+```
+
 [[PSPY]] again is good! Use offensive tool [pspy](https://github.com/DominicBreuker/pspy) for defensive purposes (used in [[Red-KOTH-Battlegrounds-Cheatsheet-Linux]], local tool page: [[PSPY]]). [THM Linux Process Analysis Room](https://tryhackme.com/r/room/linuxprocessanalysis):*"without the need for root privileges. It is designed to capture and display real-time information about running processes, including their execution commands, user IDs, process IDs (PIDs), parent process IDs (PPIDs), timestamps, and other relevant details. It operates by reading data directly from the `/proc` virtual filesystem, providing real-time insights into process activity without modifying system files or requiring elevated permissions."*
 
 ## Services
 
+Depending on the distribution, services are managed by the system's service management utility. For a more authoritative description from [baeldung](https://www.baeldung.com/linux/differences-systemctl-service) of *the two most relevant init systems*:
+ - [SysVInit](https://wiki.archlinux.org/title/SysVinit) is the classic initialization process in Linux. The initialization process relies on the individual service to install relevant scripts on the _/etc/init.d_ directory. Additionally, the scripts must support the standard commands such as _start_, _stop_, and _status_. One of the main characteristics of this init system is that it is a start-once process and does not track the individual services afterward. The [_service_](https://linux.die.net/man/8/service) command is used for running these init scripts from the terminal.
+- [SystemD](https://man7.org/linux/man-pages/man1/systemd.1.html), on the other hand, is a recent initialization system that aims to replace SysVInit. In fact, most Linux distributions such as Debian and Red Hat are already using SystemD as their init system out of the box. In contrast to SysVInit, SystemD continues to run as a daemon process after the initialization is completed. Additionally, they are also actively tracking the services through their _cgroups_. The [systemctl](https://www.man7.org/linux/man-pages/man1/systemctl.1.html) command is the entry point for users to interact and configures the SystemD.
+
+Normally `x.service` is in the `/etc/systemd/system/` directory.
+```bash
+systemctl status <service>
+systemctl enable <service>
+systemctl disable <service>
+systemctl restart <service>
+systemctl start <service>
+systemctl stop <service>
+
+# Use `systemctl` to iterate and query all the services on the system
+systemctl list-units --all --type=service
+# q to exit
+# Same as above but only running services
+systemctl list-units --type=service --state=running
+```
+
+Example of what the configuration for a service looks sort of like:
+```bash
+[Unit]
+Description=Description goes here
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/path/to/binary/or/script
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+```
+
+`journalctl` is used in systemd logging workflow, configuration file found `/etc/systemd/journald.conf`; [digitalocean - journalctl article](https://www.digitalocean.com/community/tutorials/how-to-use-journalctl-to-view-and-manipulate-systemd-logs)
+```bash
+man systemd.journal-fields
+# UTC timestamps
+journalctl --utc
+# Logs from current boot
+journalctl -b
+journalctl -b -1 # From the relative pointer
+journalctl -b 879206e3d1ce473753459a2fb8875bbe # boot ID
+journalctl -p err -b # By priority
+# Saved previous boots
+journalctl --list-boots
+# Most recent logs
+journalctl -n $int # by some number
+# Follow logs as they are being writen
+journalctl -f
+# Disk usage metrics
+journalctl --disk-usage
+# Entries from timestamp(s)
+journalctl --since "2015-01-10 17:15:00"
+journalctl --since "2015-01-10" --until "2015-01-11 03:00"
+journalctl --since yesterday
+journalctl --since 09:00 --until "1 hour ago"
+# Filter by service, can provide multiple -u $serviceA -u $serviceB
+journalctl -u $serviceName.service
+# Filter by _PID, _UID _GUID
+journalctl _PID=8088
+# view group IDs
+journalctl -F _GID
+# By component
+journalctl /usr/bin/bash
+# Kernel messages
+journalctl -k
+journalctl -k -b -5 # From 5 boots ago..
+# Modifying display
+journalctl --no-full # ... where information is removed
+journalctl -a # all information
+journalctl --no-pager # easy to read (do not use with automation of text manipulationm tools)
+# Outputs
+journalctl -b -u $service.service -o json # For JeSON
+```
 ## Autostart scripting
 
 ## Application Artefacts
@@ -96,7 +176,8 @@ sudo grep cron /var/log/syslog | grep -E 'failed|error|fatal'
 
 [THM Linux Process Analysis Room](https://tryhackme.com/r/room/linuxprocessanalysis)
 [pspy - GitHub](https://github.com/DominicBreuker/pspy) 
-
+[baeldung Linux systemctl service differences](https://www.baeldung.com/linux/differences-systemctl-service) 
+[digitalocean - journalctl article](https://www.digitalocean.com/community/tutorials/how-to-use-journalctl-to-view-and-manipulate-systemd-logs)
 ## Appendix
 
 `ps` usage.

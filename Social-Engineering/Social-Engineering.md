@@ -90,10 +90,12 @@ Authority
 
 Intimidation
 - Intimidation at its best when the victim does the most mental effort to:
-	- conform to a understandly fear inducing Narratological directionalism (leading someone to a cliff to lets them mentalise the outcomes)
+	- conform to a understanding about fear inducing Narratological directionalism (leading someone to a cliff to lets them mentalisation of the outcomes)
 	- easily visualise outcomes use of euphemistic language 
 	- understandable, but brief
 	- vocal and syntactic control to 
+- [Lazy Eye](https://www.youtube.com/watch?v=uWCH9unC0Wc) for the Critical Hit!
+
 
 Protections and Mitigation:
 - Buy time to think objectively
@@ -138,3 +140,4 @@ Familiarity and Trust
 [Robin Dreeke - Sizing People Up DEFCON talk](https://www.youtube.com/watch?v=H3XR4QrJyxA)
 [Hacking Humans : Social Engineering Techniques and How to Protect Against Them - Stephen Haunts](https://www.youtube.com/watch?v=YVqurfWzB-Q)
 [https://www.sans.org/security-resources/policies](https://www.sans.org/security-resources/policies)
+[Lazy Eye](https://www.youtube.com/watch?v=uWCH9unC0Wc)

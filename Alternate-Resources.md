@@ -19,6 +19,9 @@ Ex fighter pilot and Python developer turned Infosec's biggest proponent of Cthu
 - [YouTube - BlackHillsInformationSecurity](https://www.youtube.com/c/BlackHillsInformationSecurity)
 - [YouTube - Antisyphon Training](https://www.youtube.com/channel/UCkFKiCm7dD0gsB4jqIdCuRQ)
 
+#### Aquinas - ChrisPritchard
+
+[Aquinas](https://tryhackme.com/p/Aquinas) is a Top 10 THM, F\#, Rust and Go Developer, his very active [GitHub](https://github.com/ChrisPritchard) contains probably the best [writeups for KOTH on THM](https://github.com/ChrisPritchard/ctf-writeups/tree/master/tryhackme-koth), which are meticulous; his THM writeup are very clear and [objective centric](https://github.com/ChrisPritchard/ctf-writeups). He also has made me reconsider Go for scripting on the fly, how to approach various KOTH tactics, amongst making me reconsider how I write my own - just a treasure trove of awesome. 
 #### CryptoCat
 
 [CryptoCat - YouTube](https://www.youtube.com/@_CryptoCat) *"InfoSec education channel: CTF walkthroughs, binary exploitation, pen-testing, bug bounty, malware analysis, programming/scripting etc."* - [HTB profile](https://app.hackthebox.com/profile/11897(), [GitHub](https://github.com/Crypto-Cat) and [Twitch](https://www.twitch.tv/cryptocat23) - Good Writeups, explanations, references and demonstration a British IppSec that covers lots of HackTheBox material at a range of levels and subject matters that are not just retired boxes that IppSec likes or did. 

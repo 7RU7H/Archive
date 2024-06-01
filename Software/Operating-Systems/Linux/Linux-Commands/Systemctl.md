@@ -1,6 +1,35 @@
-# `Systemctl`
+# `systemctl`
 
-The `systemctl` command is used for Service Management on some Linux distributions 
+The `systemctl` command is used for Service Management on some Linux distributions.. [[journalctl]] is used for log manipulation, monitoring, etc. Normally `x.service` is in the `/etc/systemd/system/` directory.
+```bash
+systemctl status <service>
+systemctl enable <service>
+systemctl disable <service>
+systemctl restart <service>
+systemctl start <service>
+systemctl stop <service>
+
+# Use `systemctl` to iterate and query all the services on the system
+systemctl list-units --all --type=service
+# q to exit
+# Same as above but only running services
+systemctl list-units --type=service --state=running
+```
+
+Example of what the configuration for a service looks sort of like:
+```bash
+[Unit]
+Description=Description goes here
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/path/to/binary/or/script
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+```
 
 Starting
 ```bash
@@ -40,7 +69,17 @@ Verify a service file
 ```bash
 sudo systemd-analyze verify application.service
 ```
-Following the logs dor those services
+Following the logs for those services
 ```bash
 sudo journalctl -u application.service
 ```
+
+Use `systemctl` to iterate and query all the services on the system
+```bash
+systemctl list-units --all --type=service
+```
+
+
+## References
+
+[THM Linux Process Analysis Room](https://tryhackme.com/r/room/linuxprocessanalysis)

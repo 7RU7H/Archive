@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Software/Operating-Systems/Linux/Linux-Commands/Linux-Processes-Commands.md",
+                "file": "Security-Disciplines/Digital-Forensics/Linux-Forensics/Linux-Process-Analysis.md",
                 "mode": "source",
                 "source": false
               }
@@ -43,7 +43,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -109,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Software/Operating-Systems/Linux/Linux-Commands/Systemctl.md",
+                "file": "Security-Disciplines/Digital-Forensics/Linux-Forensics/Linux-Process-Analysis.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Software/Operating-Systems/Linux/Linux-Commands/Systemctl.md",
+                "file": "Security-Disciplines/Digital-Forensics/Linux-Forensics/Linux-Process-Analysis.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Software/Operating-Systems/Linux/Linux-Commands/Systemctl.md"
+                "file": "Security-Disciplines/Digital-Forensics/Linux-Forensics/Linux-Process-Analysis.md"
               }
             }
           },
@@ -182,16 +183,21 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "b0170b8f1202db12",
+  "active": "57180b41d4780cc6",
   "lastOpenFiles": [
+    "Software/Operating-Systems/Linux/Linux-Commands/Systemctl.md",
+    "Security-Disciplines/Digital-Forensics/Linux-Forensics/Linux-Process-Analysis.md",
+    "Software/Operating-Systems/Linux/Linux-Commands/journalctl.md",
+    "Development/Languages/Python/Useful-Python.md",
+    "Social-Engineering/Social-Engineering.md",
+    "Alternate-Resources.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+    "Software/Operating-Systems/Linux/Linux-Commands/Linux-Processes-Commands.md",
     "Software/Operating-Systems/Linux/Linux-Commands/Systemd.md",
     "Software/Operating-Systems/Linux/Linux-Commands/Systemd-Controveries.md",
-    "Software/Operating-Systems/Linux/Linux-Commands/Systemctl.md",
     "Persistence/Linux-Persistence.md",
-    "Security-Disciplines/Digital-Forensics/Linux-Forensics/Linux-Process-Analysis.md",
     "Security-Disciplines/Digital-Forensics/Linux-Forensics/Linux-Forensics.md",
     "Software/Operating-Systems/Linux/Linux-Concepts/Linux-Cronjobs.md",
-    "Software/Operating-Systems/Linux/Linux-Commands/Linux-Processes-Commands.md",
     "Tools/Linux/PSPY.md",
     "Cryptography-And-Authentication/De-Or-En-Cryption.md",
     "Development/Exploit-Development/GEF.md",
@@ -208,11 +214,6 @@
     "Tools/C2/Sliver/Sliver-Cheatsheet.md",
     "Tools/C2/Covenant",
     "Development/Languages/Go/Golang.md",
-    "Alternate-Resources.md",
-    "Cryptography-And-Authentication/Cracking-Files.md",
-    "Cryptography-And-Authentication/AD-Azure-Weak-Password-Finding.md",
-    "Cryptography-And-Authentication/RSA-Encryption.md",
-    "Hardware/Hardware-Maintenance/USB-Maintenance.md",
     "Images/linux-persistence-map.png",
     "Software/Services/Backup",
     "Software/Browsers",
