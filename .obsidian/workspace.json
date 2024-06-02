@@ -13,18 +13,6 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Software/Operating-Systems/Linux/Linux-Commands/Systemctl.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "57180b41d4780cc6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
                 "file": "Security-Disciplines/Digital-Forensics/Linux-Forensics/Linux-Process-Analysis.md",
                 "mode": "source",
                 "source": false
@@ -43,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -183,9 +170,13 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "57180b41d4780cc6",
+  "active": "b0170b8f1202db12",
   "lastOpenFiles": [
     "Software/Operating-Systems/Linux/Linux-Commands/Systemctl.md",
+    "Security-Disciplines/Cyberwarfare/Practice/THM-King-Of-The-Hill.md",
+    "Security-Disciplines/Cyberwarfare/Practice/HTB-Battlegrounds.md",
+    "Security-Disciplines/Cyberwarfare/Practice/Default-Toolkit-Inventory.md",
+    "Security-Disciplines/Cyberwarfare/Practice/Dirty-Games/Dirty-R-vs-B-Windows.md",
     "Security-Disciplines/Digital-Forensics/Linux-Forensics/Linux-Process-Analysis.md",
     "Software/Operating-Systems/Linux/Linux-Commands/journalctl.md",
     "Development/Languages/Python/Useful-Python.md",
@@ -209,11 +200,7 @@
     "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md",
     "Tools/AD-Offensive/Rubeus-Cheatsheet.md",
     "Tools/C2/Covenant/Convenant-DOTNET-3dot1-dependices-mirror.md",
-    "Tools/C2/C2-Matrix.md",
-    "Tools/C2/Improving-Existing-C2-Setups.md",
-    "Tools/C2/Sliver/Sliver-Cheatsheet.md",
     "Tools/C2/Covenant",
-    "Development/Languages/Go/Golang.md",
     "Images/linux-persistence-map.png",
     "Software/Services/Backup",
     "Software/Browsers",

@@ -169,9 +169,32 @@ journalctl -b -u $service.service -o json # For JeSON
 ```
 ## Autostart scripting
 
+Misconfiguration of permissions of Autostart scripts could be used by attackers to leverage persistence mechanisms  
+System-wide Autostart scripts found:
+- `/etc/init.d/`
+- `/etc/rc.d/`
+- `/etc/systemd/system/`
+User-specific Autostart scripts found:
+- `~/.config/autostart/` 
+- `~/.config/`
 ## Application Artefacts
 
+```bash
+# Package Manager
+sudo dpkg -l
+sudo pacman -q # arch 
 
+# Vim, Emacs, Nano
+# .nano_history emacs.d
+find /home/ -type f -name ".viminfo" 2>/dev/null
+
+# Browser 
+sudo find /home -type d \( -path "*/.mozilla/firefox" -o -path "*/.config/google-chrome" \) 2>/dev/null
+
+
+```
+
+[Dumpzilla.py](https://www.dumpzilla.org)
 ## References
 
 [THM Linux Process Analysis Room](https://tryhackme.com/r/room/linuxprocessanalysis)
