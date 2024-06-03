@@ -13,7 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Networks/Network-Theory/IPvX/IPv4.md",
+                "file": "Tools/Steganography/Steghide.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a792b5f1f41af74f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Development/Languages/Bash/Bash.md",
                 "mode": "source",
                 "source": false
               }
@@ -80,7 +92,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Vim",
+                "query": "Stega",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -109,7 +121,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Networks/Network-Theory/IPvX/IPv4.md",
+                "file": "Tools/Steganography/Steghide.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +138,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Networks/Network-Theory/IPvX/IPv4.md",
+                "file": "Tools/Steganography/Steghide.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Networks/Network-Theory/IPvX/IPv4.md"
+                "file": "Tools/Steganography/Steghide.md"
               }
             }
           },
@@ -184,15 +196,19 @@
   },
   "active": "b0170b8f1202db12",
   "lastOpenFiles": [
-    "Networks/Network-Theory/IPvX/IPv6-Defined.md",
+    "Development/Languages/Bash/Bash.md",
+    "Tools/Steganography/Steghide.md",
+    "Reconnaissance/OSINT/OSINT-People.md",
+    "Tools/Steganography",
+    "README.md",
     "Networks/Network-Theory/IPvX/IPv4.md",
+    "Networks/Network-Theory/IPvX/IPv6-Defined.md",
     "Networks/Routers.md",
     "Post-Exploitation/Networking/Pivoting.md",
     "Post-Exploitation/Networking/Tunneling.md",
     "Post-Exploitation/Lateral-Movement/Lateral-Movement.md",
     "Post-Exploitation/Networking/Port-Redirection-And-Tunnelling.md",
     "Post-Exploitation/Networking/Port-Redirection.md",
-    "README.md",
     "Tools/Debuggers-IDEs-Editors/Editors/Emacs.md",
     "Tools/Debuggers-IDEs-Editors/Editors/Vim/Vim-Hack-Tricks.md",
     "Security-Disciplines/Digital-Forensics/Linux-Forensics/Linux-Process-Analysis.md",
@@ -207,9 +223,6 @@
     "Software/Operating-Systems/Linux/Linux-Commands/journalctl.md",
     "Development/Languages/Python/Useful-Python.md",
     "Social-Engineering/Social-Engineering.md",
-    "Alternate-Resources.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
-    "Software/Operating-Systems/Linux/Linux-Commands/Linux-Processes-Commands.md",
     "Images/whatisthisdebiandocs-1.png",
     "Images/whatisthisdebiandocs.png",
     "Tools/C2/Covenant",
@@ -224,7 +237,6 @@
     "Security-Disciplines/Digital-Forensics/Linux-Forensics",
     "Security-Disciplines/Digital-Forensics/Windows-Forensics",
     "Software/Services/Logging",
-    "Exploitation/CVEs/Untitled",
     "Images/chriskubecka-openautomateddemandresponse-attachsystems.png",
     "Images/chriskubecka-ismemegoddess-part2.png",
     "Images/chriskubecka-ismemegoddess.png",
