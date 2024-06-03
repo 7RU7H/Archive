@@ -24,7 +24,13 @@ Null Space -
 
 - Consider how your problem is on OSI layer - Please Do Not Throw Away Sausage Pizza 
 
+#### Data is everything
 
+Consider Data sets
+- Baseline normal
+- True-Negatives
+- False-Positives
+- Real world examples: open source known malicious; [[MITRE-ATT&CK]] framework, etc
 #### Thought Process Considerations
 
 

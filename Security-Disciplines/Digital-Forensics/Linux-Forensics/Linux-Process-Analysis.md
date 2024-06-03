@@ -180,7 +180,8 @@ User-specific Autostart scripts found:
 ## Application Artefacts
 
 ```bash
-# Package Manager
+# Package Managers - remember C2s, custom software, etc will not show up here!
+# Vulnerable version maybe used for Persistence->PrivEsc
 sudo dpkg -l
 sudo pacman -q # arch 
 
@@ -194,7 +195,52 @@ sudo find /home -type d \( -path "*/.mozilla/firefox" -o -path "*/.config/google
 
 ```
 
-[Dumpzilla.py](https://www.dumpzilla.org)
+[Dumpzilla.py](https://www.dumpzilla.org) - this tool is also amazing for copying configurations of browsers to other places 
+```bash
+sudo python3 /home/investigator/dumpzilla.py /home/$username/.mozilla/firefox/$weirdstring.default-release --Summary --Verbosity CRITICAL
+# Usage:
+ --Addons
+ --Search
+ --Bookmarks [-bm_create_range <start> <end>][-bm_last_range <start> <end>]
+ --Certoverride
+ --Cookies [-showdom] [-domain <string>] [-name <string>] [-hostcookie <string>] [-access <date>] [-create <date>]
+           [-secure <0|1>] [-httponly <0|1>] [-last_range <start> <end>] [-create_range <start> <end>]
+ --Downloads [-range <start> <end>]
+ --Export <directory> (export data as json)
+ --Forms [-value <string>] [-forms_range <start> <end>]
+ --Help (shows this help message and exit)
+ --History [-url <string>] [-title <string>] [-date <date>] [-history_range <start> <end>] [-frequency]
+ --Keypinning [-entry_type <HPKP|HSTS>]
+ --OfflineCache [-cache_range <start> <end> -extract <directory>]
+ --Preferences
+ --Passwords
+ --Permissions [-host <string>] [-modif <date>] [-modif_range <start> <end>]
+ --RegExp (use Regular Expresions for string type filters instead of Wildcards)
+ --Session
+ --Summary (no data extraction, only summary report)
+ --Thumbnails [-extract_thumb <directory>]
+ --Verbosity (DEBUG|INFO|WARNING|ERROR|CRITICAL)
+ --Watch [-text <string>] (shows in daemon mode the URLs and text form in real time; Unix only)
+
+Wildcards (without RegExp option):
+
+ '%'  Any string of any length (including zero length)
+ '_'  Single character
+ '\'  Escape character
+
+Regular Expresions: https://docs.python.org/3/library/re.html
+
+Date syntax:
+
+ YYYY-MM-DD hh:mi:ss (wildcards allowed)
+
+Profile location:
+
+ WinXP profile -> 'C:\Documents and Settings\%USERNAME%\Application Data\Mozilla\Firefox\Profiles\xxxx.default'
+ Win7 profile  -> 'C:\Users\%USERNAME%\AppData\Roaming\Mozilla\Firefox\Profiles\xxxx.default'
+ MacOS profile -> '/Users/$USER/Library/Application\ Support/Firefox/Profiles/xxxx.default'
+ Unix profile  -> '/home/$USER/.mozilla/firefox/xxxx.default'
+```
 ## References
 
 [THM Linux Process Analysis Room](https://tryhackme.com/r/room/linuxprocessanalysis)

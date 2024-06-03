@@ -13,6 +13,11 @@ md5sum $file
 sha256sum $file
 ```
 
+Consider Data sets
+- Baseline normal
+- True-Negatives
+- False-Positives
+- Real world examples: open source known malicious; [[MITRE-ATT&CK]] framework, etc
 #### Artefact Gathering
 ```bash
 # OS release information

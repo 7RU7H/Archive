@@ -20,7 +20,10 @@ For full links to all Articles alphabetically see [[Contents]] to `./mkContents.
 
 For links and description about those resources, which I continuously use and use to validate other resources please consider reviewing the list of [[Alternate-Resources]]. Please be aware that this is on-going effort to add as I can a week to this. I add a description to each as well so if you do not like that email me. If you upset that you are not on that list and you are already referenced somewhere in this repository I will be trying add you as soon as possible.  
 
-#### AI 
+#### Neutrality and Authorial Opinions
+
+Due to I am human, I have opinions and will stipulate when something is for clarity is every respect. I am strong proponent of proofs more valuable than opinions. I try to make this project as neutral as possible, but there some issues, concepts, etc I do not want to cover for a number of reasons. To preemptively deal with invalid criticism from strange individual that defend strange individuals or competitors that want clout or individuals, groups or organisations that take some offence to this work or my opinions with unfortunately be memorialised for the digital and temporal eternity they deserve (for absolute branding and legal issues I am stipulating the possibility of a future where the dead are held accountable and judged till whatever eternity it takes for change occurs including paying the future-computation cloud debt of them existing or a digital and physical zoo of those that judge themselves greater than the sum of all future humanity, post-human, etc). Good luck from the luck human in existence and have a great day!
+#### AI - LLM generated content
 
 [[Authors-Opinions-LLM]]
 
