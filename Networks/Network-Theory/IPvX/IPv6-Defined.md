@@ -75,6 +75,21 @@ ip -6 neigh
 
 `nmap -6`
 
+## Notes for further research at some point
+
+- mobile devices. For example, LTE is IPv6 only
+
+Federal Acquisition Regulation requirements. Dual stack is required.
+There is also Federal US level requirements to move to IPv6 - there have been issues with this since its publication, but that is Authorial hearsay memory not fact. 
+- https://www.cio.gov/assets/resources/IPv6%20Federal%20Task%20Force_Public%20FAQ_January%202022_Final%20Draft.pdf
+
+https://www.acquisition.gov/gsam/511.170
+
+https://www.reddit.com/r/aws/comments/f2ffha/calling_aws_architects_how_common_is_the_request/
+
+
+
+[HTB Academy Pivot Module](https://academy.hackthebox.com/)
 ## References
 
 [Ippsec Sneaky IPv6 Talk](https://www.youtube.com/watch?v=1UGxjqTnuyo)

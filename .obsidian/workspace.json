@@ -13,7 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "Networks/Network-Theory/IPvX/IPv4.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c0ae1bd0d21ea61e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Post-Exploitation/Lateral-Movement/Lateral-Movement.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "Networks/Network-Theory/IPvX/IPv4.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "Networks/Network-Theory/IPvX/IPv4.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "Networks/Network-Theory/IPvX/IPv4.md"
               }
             }
           },
@@ -172,6 +184,15 @@
   },
   "active": "b0170b8f1202db12",
   "lastOpenFiles": [
+    "Networks/Network-Theory/IPvX/IPv6-Defined.md",
+    "Networks/Network-Theory/IPvX/IPv4.md",
+    "Networks/Routers.md",
+    "Post-Exploitation/Networking/Pivoting.md",
+    "Post-Exploitation/Networking/Tunneling.md",
+    "Post-Exploitation/Lateral-Movement/Lateral-Movement.md",
+    "Post-Exploitation/Networking/Port-Redirection-And-Tunnelling.md",
+    "Post-Exploitation/Networking/Port-Redirection.md",
+    "README.md",
     "Tools/Debuggers-IDEs-Editors/Editors/Emacs.md",
     "Tools/Debuggers-IDEs-Editors/Editors/Vim/Vim-Hack-Tricks.md",
     "Security-Disciplines/Digital-Forensics/Linux-Forensics/Linux-Process-Analysis.md",
@@ -189,15 +210,6 @@
     "Alternate-Resources.md",
     "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
     "Software/Operating-Systems/Linux/Linux-Commands/Linux-Processes-Commands.md",
-    "Software/Operating-Systems/Linux/Linux-Commands/Systemd.md",
-    "Software/Operating-Systems/Linux/Linux-Commands/Systemd-Controveries.md",
-    "Persistence/Linux-Persistence.md",
-    "Software/Operating-Systems/Linux/Linux-Concepts/Linux-Cronjobs.md",
-    "Tools/Linux/PSPY.md",
-    "Cryptography-And-Authentication/De-Or-En-Cryption.md",
-    "Development/Exploit-Development/GEF.md",
-    "Tools/C2/Covenant/Covenant.md",
-    "Software/Operating-Systems/Linux/Linux-Commands/Linux-Users-And-Group-Commands.md",
     "Images/whatisthisdebiandocs-1.png",
     "Images/whatisthisdebiandocs.png",
     "Tools/C2/Covenant",
