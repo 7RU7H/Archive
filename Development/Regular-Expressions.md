@@ -79,8 +79,16 @@ For  >= 8 character containing atleast one of each: uppercase letter, lowercase 
 ```
 
 Find the urls both http and https, optional www
-```
+```bash
 '^http(s)?://(www)?.+\..+
+```
+
+
+From BugCrowd article: [BugCrowd RegExp Article](https://www.bugcrowd.com/blog/how-to-regex-a-practical-guide-to-regular-expressions-regex-for-hackers/)
+```bash
+cat urls.txt | grep -P (?<=://)(?i)[a-z,.]*
+
+cat urls.txt | pcregrep -o '(?<=://)(?i)[a-z,.]*'
 ```
 
 
@@ -99,3 +107,4 @@ https://regex101.com/
 [Regex Wiki](https://en.wikipedia.org/wiki/Regular_expression)
 [Wikipedia String Searching Algorithms](https://en.wikipedia.org/wiki/String-searching_algorithm)  
 [noulakaz](https://www.noulakaz.net/2007/03/18/a-regular-expression-to-check-for-prime-numbers/)
+[BugCrowd RegExp Article](https://www.bugcrowd.com/blog/how-to-regex-a-practical-guide-to-regular-expressions-regex-for-hackers/)

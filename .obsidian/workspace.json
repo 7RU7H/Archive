@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/Steganography/Steghide.md",
+                "file": "Post-Exploitation/Evasion/Antivirus-Evasion/AMSI-Bypasses/AMSI-Bypassing.md",
                 "mode": "source",
                 "source": false
               }
@@ -92,7 +92,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Stega",
+                "query": "AMS",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -121,7 +121,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/Steganography/Steghide.md",
+                "file": "Post-Exploitation/Evasion/Antivirus-Evasion/AMSI-Bypasses/AMSI-Bypassing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -138,7 +138,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tools/Steganography/Steghide.md",
+                "file": "Post-Exploitation/Evasion/Antivirus-Evasion/AMSI-Bypasses/AMSI-Bypassing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -161,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tools/Steganography/Steghide.md"
+                "file": "Post-Exploitation/Evasion/Antivirus-Evasion/AMSI-Bypasses/AMSI-Bypassing.md"
               }
             }
           },
@@ -196,8 +196,12 @@
   },
   "active": "b0170b8f1202db12",
   "lastOpenFiles": [
-    "Development/Languages/Bash/Bash.md",
+    "Post-Exploitation/Evasion/Antivirus-Evasion/AMSI-Bypasses/AMSI-Bypass-Techniques.md",
+    "Post-Exploitation/Evasion/Antivirus-Evasion/AMSI-Bypasses/AMSI-Bypassing.md",
+    "Software/Operating-Systems/Windows/Windows-Concepts/AMSI.md",
+    "Development/Regular-Expressions.md",
     "Tools/Steganography/Steghide.md",
+    "Development/Languages/Bash/Bash.md",
     "Reconnaissance/OSINT/OSINT-People.md",
     "Tools/Steganography",
     "README.md",
@@ -219,10 +223,6 @@
     "Security-Disciplines/Cyberwarfare/Practice/THM-King-Of-The-Hill.md",
     "Security-Disciplines/Cyberwarfare/Practice/HTB-Battlegrounds.md",
     "Security-Disciplines/Cyberwarfare/Practice/Default-Toolkit-Inventory.md",
-    "Security-Disciplines/Cyberwarfare/Practice/Dirty-Games/Dirty-R-vs-B-Windows.md",
-    "Software/Operating-Systems/Linux/Linux-Commands/journalctl.md",
-    "Development/Languages/Python/Useful-Python.md",
-    "Social-Engineering/Social-Engineering.md",
     "Images/whatisthisdebiandocs-1.png",
     "Images/whatisthisdebiandocs.png",
     "Tools/C2/Covenant",

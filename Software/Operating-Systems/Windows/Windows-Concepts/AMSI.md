@@ -59,9 +59,6 @@ var scriptExtent = scriptBlockAst.Extent;    
 [Information about AMSI integration in third-party products](https://docs.microsoft.com/en-us/windows/win32/amsi/dev-audience](https://docs.microsoft.com/en-us/windows/win32/amsi/dev-audience)
 
 
-
-
-
 Illustrated workflow below describes the end-to-end flow of AMSI's integration with macro execution within Microsoft Office.
 ![](integ-js-vba.png)
 

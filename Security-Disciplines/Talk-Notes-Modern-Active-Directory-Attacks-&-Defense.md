@@ -267,7 +267,7 @@ Some of these mitigations are from 2015, no Principle Least Privilege is mention
 	- Constained Powershell
 		- Constrained Language mode - does have .NET and advanced functionality
 		- Enabled in AppLocker in allow mode
-	- Antimalware Integration (Win 10) [[ASMI]]
+	- Antimalware Integration (Win 10) [[AMSI]]
 		- Be aware of [[AMSI-Exploitation]] and [[AMSI-Bypassing]]
 	
 	
