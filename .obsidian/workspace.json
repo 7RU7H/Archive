@@ -13,7 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Post-Exploitation/Evasion/Antivirus-Evasion/AMSI-Bypasses/AMSI-Bypassing.md",
+                "file": "Security-Disciplines/Digital-Forensics/Windows-Forensics/Windows-Registry-Forensics.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4b9a91279b647825",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Software/Operating-Systems/Linux/Linux-Commands/Systemd-Controveries.md",
                 "mode": "source",
                 "source": false
               }
@@ -121,7 +133,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Post-Exploitation/Evasion/Antivirus-Evasion/AMSI-Bypasses/AMSI-Bypassing.md",
+                "file": "Security-Disciplines/Digital-Forensics/Windows-Forensics/Windows-Registry-Forensics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -138,7 +150,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Post-Exploitation/Evasion/Antivirus-Evasion/AMSI-Bypasses/AMSI-Bypassing.md",
+                "file": "Security-Disciplines/Digital-Forensics/Windows-Forensics/Windows-Registry-Forensics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -161,7 +173,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Post-Exploitation/Evasion/Antivirus-Evasion/AMSI-Bypasses/AMSI-Bypassing.md"
+                "file": "Security-Disciplines/Digital-Forensics/Windows-Forensics/Windows-Registry-Forensics.md"
               }
             }
           },
@@ -196,6 +208,14 @@
   },
   "active": "b0170b8f1202db12",
   "lastOpenFiles": [
+    "Persistence/Linux-Persistence.md",
+    "Software/Operating-Systems/Linux/Linux-Commands/Systemd-Controveries.md",
+    "Software/Operating-Systems/Linux/Linux-Commands/Systemd.md",
+    "Security-Disciplines/Secrets-To-Optimal-Client-Service.md",
+    "Tools/Forensics/FTK-Imager.md",
+    "Security-Disciplines/Digital-Forensics/Windows-Forensics/Windows-Registry-Forensics.md",
+    "Hardware/Hardware-Maintenance/USB-Maintenance.md",
+    "Hardware/Hardware-Maintenance/Hardware-Maintenance.md",
     "Post-Exploitation/Evasion/Antivirus-Evasion/AMSI-Bypasses/AMSI-Bypass-Techniques.md",
     "Post-Exploitation/Evasion/Antivirus-Evasion/AMSI-Bypasses/AMSI-Bypassing.md",
     "Software/Operating-Systems/Windows/Windows-Concepts/AMSI.md",
@@ -215,14 +235,6 @@
     "Post-Exploitation/Networking/Port-Redirection.md",
     "Tools/Debuggers-IDEs-Editors/Editors/Emacs.md",
     "Tools/Debuggers-IDEs-Editors/Editors/Vim/Vim-Hack-Tricks.md",
-    "Security-Disciplines/Digital-Forensics/Linux-Forensics/Linux-Process-Analysis.md",
-    "Security-Disciplines/Digital-Forensics/Linux-Forensics/Linux-Forensics.md",
-    "Brain-Hacking/Problem-Solving/Reasoning-Typology.md",
-    "Brain-Hacking/Question-Based-Methodologies/Question-Based-Forensics-Methodology.md",
-    "Software/Operating-Systems/Linux/Linux-Commands/Systemctl.md",
-    "Security-Disciplines/Cyberwarfare/Practice/THM-King-Of-The-Hill.md",
-    "Security-Disciplines/Cyberwarfare/Practice/HTB-Battlegrounds.md",
-    "Security-Disciplines/Cyberwarfare/Practice/Default-Toolkit-Inventory.md",
     "Images/whatisthisdebiandocs-1.png",
     "Images/whatisthisdebiandocs.png",
     "Tools/C2/Covenant",

