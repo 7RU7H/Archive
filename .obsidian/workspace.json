@@ -8,48 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "b0170b8f1202db12",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Security-Disciplines/Digital-Forensics/Windows-Forensics/Windows-Registry-Forensics.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4b9a91279b647825",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Software/Operating-Systems/Linux/Linux-Commands/Systemd-Controveries.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "a792b5f1f41af74f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Development/Languages/Bash/Bash.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c0ae1bd0d21ea61e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Post-Exploitation/Lateral-Movement/Lateral-Movement.md",
+                "file": "Tools/Steganography/Steghide.md",
                 "mode": "source",
                 "source": false
               }
@@ -133,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Security-Disciplines/Digital-Forensics/Windows-Forensics/Windows-Registry-Forensics.md",
+                "file": "Tools/Steganography/Steghide.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Security-Disciplines/Digital-Forensics/Windows-Forensics/Windows-Registry-Forensics.md",
+                "file": "Tools/Steganography/Steghide.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -173,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Security-Disciplines/Digital-Forensics/Windows-Forensics/Windows-Registry-Forensics.md"
+                "file": "Tools/Steganography/Steghide.md"
               }
             }
           },
@@ -206,14 +170,23 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "b0170b8f1202db12",
+  "active": "a792b5f1f41af74f",
   "lastOpenFiles": [
+    "Tools/Useful-Online-Software/CyberChef.md",
+    "Software/Operating-Systems/Linux/Linux-Commands/Linux-One-Liners-To-Rule-Them-All.md",
+    "Development/Languages/Python/Useful-Python.md",
+    "Development/Languages/Python/Python-Tooling-Libraries.md",
+    "Development/Languages/Bash/Bash.md",
+    "Post-Exploitation/Lateral-Movement/Lateral-Movement.md",
+    "Software/Operating-Systems/Linux/Linux-Commands/Systemd-Controversies.md",
+    "Software/Operating-Systems/Hacker-OSes/Kali/Kali-Purple.md",
+    "Social-Engineering/Body-Language/Facial-Expressions.md",
+    "Software/Operating-Systems/Hacker-OSes/Kali/Kali-Configuration/Updating-Burpsuite-On-Kali.md",
+    "Security-Disciplines/Digital-Forensics/Windows-Forensics/Windows-Registry-Forensics.md",
     "Persistence/Linux-Persistence.md",
-    "Software/Operating-Systems/Linux/Linux-Commands/Systemd-Controveries.md",
     "Software/Operating-Systems/Linux/Linux-Commands/Systemd.md",
     "Security-Disciplines/Secrets-To-Optimal-Client-Service.md",
     "Tools/Forensics/FTK-Imager.md",
-    "Security-Disciplines/Digital-Forensics/Windows-Forensics/Windows-Registry-Forensics.md",
     "Hardware/Hardware-Maintenance/USB-Maintenance.md",
     "Hardware/Hardware-Maintenance/Hardware-Maintenance.md",
     "Post-Exploitation/Evasion/Antivirus-Evasion/AMSI-Bypasses/AMSI-Bypass-Techniques.md",
@@ -221,20 +194,11 @@
     "Software/Operating-Systems/Windows/Windows-Concepts/AMSI.md",
     "Development/Regular-Expressions.md",
     "Tools/Steganography/Steghide.md",
-    "Development/Languages/Bash/Bash.md",
     "Reconnaissance/OSINT/OSINT-People.md",
     "Tools/Steganography",
     "README.md",
     "Networks/Network-Theory/IPvX/IPv4.md",
     "Networks/Network-Theory/IPvX/IPv6-Defined.md",
-    "Networks/Routers.md",
-    "Post-Exploitation/Networking/Pivoting.md",
-    "Post-Exploitation/Networking/Tunneling.md",
-    "Post-Exploitation/Lateral-Movement/Lateral-Movement.md",
-    "Post-Exploitation/Networking/Port-Redirection-And-Tunnelling.md",
-    "Post-Exploitation/Networking/Port-Redirection.md",
-    "Tools/Debuggers-IDEs-Editors/Editors/Emacs.md",
-    "Tools/Debuggers-IDEs-Editors/Editors/Vim/Vim-Hack-Tricks.md",
     "Images/whatisthisdebiandocs-1.png",
     "Images/whatisthisdebiandocs.png",
     "Tools/C2/Covenant",

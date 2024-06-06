@@ -1,7 +1,7 @@
-# Facial Expression
+# Facial Expressions
 
 
-The face takes primacy - is a behavious consistent with comfort and discomfort:
+The face takes primacy - is a behaviours consistent with comfort and discomfort:
 - Comfort 
 	- Behaviour associated: Smiling, Laughing
 	- Pupil are slightly wider

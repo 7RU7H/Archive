@@ -86,9 +86,6 @@ sudo pip2 install -U setuptools
 sudo pip2 install impacket
 ```
 
-
-
-
 ## References
 
 [Blackhillinfosec](https://www.blackhillsinfosec.com/wp-content/uploads/2020/08/SLIDES_PrettyLittlePythonSecretsEpisode1.pdf)

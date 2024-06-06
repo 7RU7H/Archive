@@ -2,7 +2,7 @@
 
 [Need to test but you can revert back to older burp with spider as part of community](https://neversecure.ca/2021/07/12/changing-burpsuite-versions-on-kali-linux/)
 
-Burpsuite is pre-installed in a slightly unusual manner on Kali Linux it is a scripted startup so do not remove the script file - `/usr/bin/burpsuite`
+[[BurpSuite]] is pre-installed in a slightly unusual manner on Kali Linux it is a scripted startup so do not remove the script file - `/usr/bin/burpsuite`
 This is the file : `/usr/bin/burpsuite`
 ```bash
 #!/usr/bin/env sh

@@ -1,3 +1,8 @@
+# Systemd Controversies
+
+
+This is the authors attempt to understand something sort of *political* in regard to Linux and System Administration. It contains none of my opinions, just what I found regarding the controversies of `systemd`, references are provided with data as they are just mirrors.
+
 
 https://pwnies.com/systemd-bugs/
 [5998](https://github.com/systemd/systemd/issues/5998), [6225](https://github.com/systemd/systemd/issues/6225), [6214](https://github.com/systemd/systemd/issues/6214), [5144](https://github.com/systemd/systemd/issues/5144), [6237](https://github.com/systemd/systemd/issues/6237)

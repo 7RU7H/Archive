@@ -1,12 +1,19 @@
 # Steghide
 
+Install
 ```bash
 sudo pacman -S steghide # Arch AUR btw !!
 sudo apt install steghide # Ubuntu/Linux Mint
 ```
 
-
 Limitations being [websites.umass.edu steghide](https://websites.umass.edu/Techbytes/tag/steghide/) *"limited amount of ‘cover’ files – JPEG, BMP, WAV, and AU."* **Authorial opinion**: at least webp is not for the sake of all Malware Analysts' blood pressures.
+
+Embedding a file example
+```bash
+# Quietly, force and without embedding meta data use steghide to 
+steghide embed -ef $file_to_embed.txt -cf $cover_file -p "passphrases are better than passwords" -z $1_to_9_compression_levels -e rijndael-256 -f -K -q
+```
+
 
 Usage:
 ```bash
@@ -63,7 +70,7 @@ To embed emb.txt in cvr.jpg: steghide embed -cf cvr.jpg -ef emb.txt
 To extract embedded data from stg.jpg: steghide extract -sf stg.jpg
 ```
 
-2024 implemented algorithms for `-e` flag 
+2024 implemented algorithms for `-e` flag  (I have yet to find a way to pick a specific mode)
 ```bash
 steghide encinfo
 encryption algorithms:
@@ -87,8 +94,6 @@ enigma: stream
 rc2: cbc cfb ctr ecb ncfb nofb ofb
 tripledes: cbc cfb ctr ecb ncfb nofb ofb
 ```
-
-
 
 [websites.umass.edu steghide](https://websites.umass.edu/Techbytes/tag/steghide/)  article recommend `shred` to destroy message file
 ```bash

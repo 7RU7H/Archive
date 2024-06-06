@@ -2,7 +2,7 @@
 
 This is a condensed and *Hacking Themed* resource for python. Remember with python [you need a ruler for tab indentation](https://www.youtube.com/watch?v=YnL9vAFphmE) and [sometimes we have a competition to write the longest list comprehension...and sometimes it's in production...and sometimes we don't call it a competition but work](https://www.youtube.com/watch?v=BgxklT94W0I) which requires a [phd](https://www.youtube.com/watch?v=xyrgkui0uCA). This like [xinyMinutes](https://learnxinyminutes.com/docs/python) with most hacking theme and base of things I have found or used.
 
-# Basics
+## Basics
 
 Python virtual environment
 ```python
@@ -14,12 +14,11 @@ pip3 install .
 # deactivate # To deactivate virtual environment
 ```
 
-### Fundamentals
-
+#### Fundamentals
 ```python 
 #! /usr/bin/python3 # Shebang line
 # Comments with # 
-	# Tab indentation is
+	# Tab indentation is bad 4 spaces or just get a Linter
 
 myInt = 1337
 myFloat = 1010.0101
@@ -73,8 +72,7 @@ for tool in myList:
 			print(f"{i+{str({int(i)})} is f strings nesting")
 ```
 
-### Functions
-
+#### Functions
 ```python 
 def commands():
     theMethod = {
@@ -100,8 +98,7 @@ def commands():
     print("complete")
 ```
 
-### Function declaration, returns, \*args and \*\*kwargs
-
+#### Function declaration with `return`, `*args`and `**kwargs`
 ```python
 def super_func(*args)
     return sum(args)
@@ -113,8 +110,7 @@ print("special_func(**kwargs) can accept any number of any type keyword=value")
 print("Ordering dule: params, *args, defult parameters then **kwargs")
 ```
 
-### File IO and User Input with keyword input
-
+#### File IO and User Input with keyword input
 ```python
 # This consider nooby 
 print("Would you like to read from the demo.txt? Y/n:")
@@ -138,15 +134,17 @@ with open(ip_range, "r") as f:
 
 ```
 
-### CLI and ENV
+#### CLI and `ENV`
+
+Run python3 without have to use a file or `-c`
 ```bash
 python3 
 python3 -v
 ```
 
-# Next level
+## Next level
 
-Python3 modules
+`python3` modules
 
 The old faithful; create a http server on port 1337
 ```bash
@@ -158,8 +156,7 @@ Convert any data that is json input into cli and human readable formatting
 curl http://allthejson | python3 -m json.tool
 ```
 
-
-### Enumerate
+#### Enumerate
 Enumerate is commonly consider better in many case for solving problems with iterables, they return index and element:
 ```python
 for i,word in enumerate('iteratables are tuples, lists, sets, dict, strings'):
@@ -170,7 +167,7 @@ for i,word in enumerate('iteratables are tuples, lists, sets, dict, strings'):
     	i -= 1
 ```
 
-## Hex2Bin & Hexdump
+#### Hex2Bin & Hexdump
 ```python
 def h2bin(x):
         return decode_hex(x.replace(' ', '').replace('\n', ''))[0]
@@ -188,14 +185,26 @@ test = h2bin('''00 00 00 ''')
 ```
 [akshatmittal](https://gist.github.com/akshatmittal/10279360) updated from [exploitdb](https://www.exploit-db.com/exploits/32745)
 
+#### Random
+```python
+import string
+import random
 
-## With key word File I/O
+def generate_random_word(length):
+   letters = string.ascii_lowercase
+   return ''.join(random.choice(letters) for i in length) # enumerate?
+
+def random_hex(length):
+   hex = string.hexdigits
+   return ''.join(random.choice(hex) for i in length)
+```
+#### With key word File I/O
 ```python
 with open(wordlist, "r") as f:
             words = f.read()
 ```
 
-### Nonlocal keyword
+#### Nonlocal keyword
 ```python
 nonlocal # thisnotglobalbutoutsidefunctionscopyinguse with care
 ```
@@ -209,7 +218,7 @@ externalImports = "External modules work in a similar way except we will need to
 print(externalImports)
 ```
 
-### re module
+#### [[Regular-Expressions]]
 Find substrings with regex functionality in strings annd counting substrings or regexs:
 ```python
 import re
@@ -219,7 +228,7 @@ res = len(re.findall('', string))#, re.IGNORECASE))
 res = [re.sub(pattern, '', i) for i in list] 
 ```
 
-### Boolean
+#### Booleans
 Ternary and shortcircuiting
 ```python
 is_ternary = True
@@ -229,6 +238,7 @@ if is_ternary or is_short_circuiting
 print("Short circuiting using or with is_ternary and is_short_circuiting being True")
 print("is keyword check the value in memory is the same")
 ```
+
 
 ## Some Modules and Packages for Hackers
 ### requests
@@ -501,6 +511,23 @@ if __name__ == "__main__":
     # Test with:
     #with open('badpickle.pkl', 'rb') as f:
     #    data = pickle.load(f)
+```
+
+This an example of **VERY BAD** use of Thread module [THM Race Conditions Attacks Room](https://tryhackme.com/r/room/raceconditionsattacks); find this - here be [[Race-Conditions]]
+```python
+import thread
+# Do not use this it will create race conditions!
+threadx = threading.Thread(target=race_condition_ahoy(args), name="Thread-X")
+thready = threading.Thread(target=race_condition_ahoy(args), name="Thread-Y")
+threadz = threading.Thread(target=race_condition_ahoy(args), name="Thread-Z")
+
+threadx.start()
+thready.start()
+threadz.start()
+
+threadx.join()
+thready.join()
+threadz.join()
 ```
 
 # Appendix

@@ -1,6 +1,6 @@
 # Windows Registry Forensics
 
-
+For more information locally on Windows Registry and its hives see [[Windows-Registry]] page
 ## Data Acquisition
 
 #### Live Acquisition

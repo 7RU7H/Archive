@@ -7,6 +7,12 @@ It’s the Cyber Swiss Army Knife.
 
 CyberChef Open-Sourced through [GitHub](https://github.com/gchq/CyberChef)
 
+Install as a [[Docker]] container - you can build your own see [GitHub](https://github.com/gchq/CyberChef)
+```bash
+docker run -it -p 8080:80 ghcr.io/gchq/cyberchef:latest
+```
+
+
 ## UI Tricks
 
 - Input

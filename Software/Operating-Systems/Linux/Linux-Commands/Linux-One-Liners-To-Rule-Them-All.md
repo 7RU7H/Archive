@@ -21,9 +21,16 @@ find . -type f -name *-insertfile-format-identifer-here* | grep -r -e 'Your Mist
 
 ## String One-Line
 
-Print all but the first field with awk
+Print all but the first field with `awk`
 ```bash
 awk '{for (i=2; i<=NF; i++) printf $i " "; print $NF}'
+```
+
+## Get a specific line from a file
+
+```bash
+# replace "" with '' for non-variable usage
+awk "NR==$lineNumber{ print; exit }"
 ```
 
 ## Line by line make a file
