@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/Steganography/Steghide.md",
+                "file": "Social-Engineering/Manipulation-Tactics.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/Steganography/Steghide.md",
+                "file": "Social-Engineering/Manipulation-Tactics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tools/Steganography/Steghide.md",
+                "file": "Social-Engineering/Manipulation-Tactics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tools/Steganography/Steghide.md"
+                "file": "Social-Engineering/Manipulation-Tactics.md"
               }
             }
           },
@@ -172,6 +172,12 @@
   },
   "active": "a792b5f1f41af74f",
   "lastOpenFiles": [
+    "Tools/Debuggers-IDEs-Editors/GDB.md",
+    "Social-Engineering/Manipulation-Tactics.md",
+    "Hardware/Hardware-Maintenance/USB-Maintenance.md",
+    "Hardware/Hardware-Maintenance/Hardware-Maintenance.md",
+    "README.md",
+    "Tools/Steganography/Steghide.md",
     "Tools/Useful-Online-Software/CyberChef.md",
     "Software/Operating-Systems/Linux/Linux-Commands/Linux-One-Liners-To-Rule-Them-All.md",
     "Development/Languages/Python/Useful-Python.md",
@@ -187,18 +193,12 @@
     "Software/Operating-Systems/Linux/Linux-Commands/Systemd.md",
     "Security-Disciplines/Secrets-To-Optimal-Client-Service.md",
     "Tools/Forensics/FTK-Imager.md",
-    "Hardware/Hardware-Maintenance/USB-Maintenance.md",
-    "Hardware/Hardware-Maintenance/Hardware-Maintenance.md",
     "Post-Exploitation/Evasion/Antivirus-Evasion/AMSI-Bypasses/AMSI-Bypass-Techniques.md",
     "Post-Exploitation/Evasion/Antivirus-Evasion/AMSI-Bypasses/AMSI-Bypassing.md",
     "Software/Operating-Systems/Windows/Windows-Concepts/AMSI.md",
     "Development/Regular-Expressions.md",
-    "Tools/Steganography/Steghide.md",
     "Reconnaissance/OSINT/OSINT-People.md",
     "Tools/Steganography",
-    "README.md",
-    "Networks/Network-Theory/IPvX/IPv4.md",
-    "Networks/Network-Theory/IPvX/IPv6-Defined.md",
     "Images/whatisthisdebiandocs-1.png",
     "Images/whatisthisdebiandocs.png",
     "Tools/C2/Covenant",

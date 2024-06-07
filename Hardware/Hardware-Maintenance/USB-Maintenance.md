@@ -31,7 +31,6 @@ fdisk /dev/$disk
 g # New GUID Partition Table - 64-bit partitions table scheme and supports up to 128 primary partitions
 # Example of a single partition MBR
 n # new partition
-p # Primary
 $numberOfPartitions
 p # Print partitions table
 w # Write changes
@@ -84,9 +83,16 @@ sudo mount /dev/mapper/EDCdrive /media/secure-USB
 sudo cryptsetup luksDump /dev/sdb1
 ```
 
+Delete a partition-table signatures from [serverfault](https://serverfault.com/questions/250839/deleting-all-partitions-from-the-command-line)
+```bash
+wipefs -a /dev/sda
+
+```
+
 ## References
 
 [maketecheasier](https://www.maketecheasier.com/repair-corrupted-usb-drive-linux/)
 [THM Room Linux System Hardening](https://tryhackme.com/room/linuxsystemhardening)
 [Arch Wiki](https://wiki.archlinux.org/title/USB_flash_installation_medium)
 [baeldung usb-drive-format](https://www.baeldung.com/linux/usb-drive-format)
+[serverfault](https://serverfault.com/questions/250839/deleting-all-partitions-from-the-command-line)

@@ -13,7 +13,7 @@ GDB Quick Commands
 - dump call stack: `bt`
 - list breakpoints: `info break`
 - memory mapping: `vmmap`
-- heap infos: `heap chunks`,`print main_arena`
+- heap info: `heap chunks`,`print main_arena`
 - show GOT: `print $_got()`
 - pattern: `pattern create <n>`, `pattern search <offset>`
 - shellcode: `shellcode search <arch>`, `shellcode get <num>`
