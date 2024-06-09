@@ -13,7 +13,43 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Social-Engineering/Manipulation-Tactics.md",
+                "file": "Hardware/Hardware-Maintenance/USB-Maintenance.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "fe4b509b25361458",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/Forensics/Volatility3.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c58ac51bc6b182ae",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Security-Disciplines/Digital-Forensics/Windows-Forensics/Windows-Memory-Forensics.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e2f7c98b9e924070",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Exploitation/Binary-Exploitation/Binary-Exploitation-Enumeration.md",
                 "mode": "source",
                 "source": false
               }
@@ -31,7 +67,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -97,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Social-Engineering/Manipulation-Tactics.md",
+                "file": "Security-Disciplines/Digital-Forensics/Windows-Forensics/Windows-Memory-Forensics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Social-Engineering/Manipulation-Tactics.md",
+                "file": "Security-Disciplines/Digital-Forensics/Windows-Forensics/Windows-Memory-Forensics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Social-Engineering/Manipulation-Tactics.md"
+                "file": "Security-Disciplines/Digital-Forensics/Windows-Forensics/Windows-Memory-Forensics.md"
               }
             }
           },
@@ -170,12 +207,15 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "a792b5f1f41af74f",
+  "active": "c58ac51bc6b182ae",
   "lastOpenFiles": [
-    "Tools/Debuggers-IDEs-Editors/GDB.md",
-    "Social-Engineering/Manipulation-Tactics.md",
+    "Tools/Forensics/Volatility3.md",
+    "Security-Disciplines/Digital-Forensics/Windows-Forensics/Windows-Memory-Forensics.md",
+    "Exploitation/Binary-Exploitation/Binary-Exploitation-Enumeration.md",
     "Hardware/Hardware-Maintenance/USB-Maintenance.md",
     "Hardware/Hardware-Maintenance/Hardware-Maintenance.md",
+    "Social-Engineering/Manipulation-Tactics.md",
+    "Tools/Debuggers-IDEs-Editors/GDB.md",
     "README.md",
     "Tools/Steganography/Steghide.md",
     "Tools/Useful-Online-Software/CyberChef.md",
@@ -195,9 +235,6 @@
     "Tools/Forensics/FTK-Imager.md",
     "Post-Exploitation/Evasion/Antivirus-Evasion/AMSI-Bypasses/AMSI-Bypass-Techniques.md",
     "Post-Exploitation/Evasion/Antivirus-Evasion/AMSI-Bypasses/AMSI-Bypassing.md",
-    "Software/Operating-Systems/Windows/Windows-Concepts/AMSI.md",
-    "Development/Regular-Expressions.md",
-    "Reconnaissance/OSINT/OSINT-People.md",
     "Tools/Steganography",
     "Images/whatisthisdebiandocs-1.png",
     "Images/whatisthisdebiandocs.png",
