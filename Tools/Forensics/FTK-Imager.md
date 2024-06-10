@@ -28,6 +28,13 @@ Option 1:
 Option 2:
 Navigate to desired file system location of a registry hive and export the required files with `Export Files`
 
+
+`Evidence Tree` pane and navigate to `File > Verify Drive/Image` to obtain its MD5 and SHA1 hashes.
+
+Recover Deleted Files and Directories:
+`Right-click`  on individual files or directories with an X select `Export Files`
+
+Use `Ctrl + F` to search for specific text within a file
 ## References
 
 [FTK Imager](https://www.exterro.com/ftk-imager) 

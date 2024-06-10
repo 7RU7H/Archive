@@ -69,6 +69,9 @@ A good SysAdmin, DevOps, Cloud Engineer Cheatsheets at: [lzone.de Cheatsheets](h
 
 #### Primagen
 
+#### Pentestlab.blog
+
+[pentestlab.blog](https://pentestlab.blog): *"Pentestlab.blog has a long term history in the offensive security space by delivering content for over a decade. Articles discussed in pentestlab.blog have been used by cyber security professionals and red teamers for their day to day job and by students and lecturers in academia. If you have benefit by the content all these years and you would like to support us on the maintenance costs please consider a donation."*
 
 
 #### Snovvcrash

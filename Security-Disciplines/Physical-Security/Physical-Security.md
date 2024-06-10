@@ -5,8 +5,9 @@
 
 [Wikipedia -  Lock picking](https://en.wikipedia.org/wiki/Lock_picking) refers to Lock picking as two word as: *"the practice of unlocking a [lock](https://en.wikipedia.org/wiki/Lock_(security_device) "Lock (security device)") by manipulating the components of the lock device without the original key."*
 
-
 Authorial Note: a Children's Book from my childhood is now forever changed by learning about this: enjoy the Michael Rosen discuss the meta-context of Physical Security: [We're Going On a Bear Hunt](https://www.youtube.com/watch?v=Iou5LV9dRP0) , but instead of bears you and I have will catch bull of eye-rubbing levels of WTF is this world really... standard Legal Disclaimers and do not be a horrible person, help people and do not put others at risk. 
+
+Live demonstration and historic issues with Locks and Security is best explained with this talk from [SaintCon Keynote YouTube - LockPickingLawyer](https://www.youtube.com/watch?v=IH0GXWQDk0Q) description: *"The Lock Picking Lawyer is one of the most well-known names in the world of lock picking and covert entry. He is best known for his extremely popular, eponymous YouTube channel. This channel features over 1,000 videos exposing weaknesses and defects found in locking devices so that consumers can make better security decisions. What’s less well-known is that he also works with lock manufacturers to improve their products, private companies to improve their security, tool-makers to improve their products, and government agencies. As his name suggests, the Lock Picking Lawyer was a business litigator for nearly 15 years, but recently retired from practicing law to devote all of his time to security work."*
 
 - TOOOL, The Open Organisation Of Lock pickers at [https://toool.us/](https://toool.us/)
 - [https://www.locksmiths.co.uk/locksmith-terminology-parts-of-locks/](https://www.locksmiths.co.uk/locksmith-terminology-parts-of-locks/) or the local mirror [[Locksmith-Terminology]]
@@ -469,3 +470,4 @@ If you can get the read off the wall you can install a sniffer on the backside o
 [Wikipedia - W.W.Grainger ](https://en.wikipedia.org/wiki/W._W._Grainger)
 [Wikipedia -Dry contacts (No Current definition probably)](https://en.wikipedia.org/wiki/Dry_contact) 
 [thecoregroup](https://thecoregroup.net/)
+[SaintCon Keynote YouTube - LockPickingLawyer](https://www.youtube.com/watch?v=IH0GXWQDk0Q) 

@@ -4,71 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "8470da10d657cc67",
+        "id": "32dd0b28f47a1caa",
         "type": "tabs",
         "children": [
           {
-            "id": "a792b5f1f41af74f",
+            "id": "5b0814ef496bb8d8",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Hardware/Hardware-Maintenance/USB-Maintenance.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "fe4b509b25361458",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tools/Forensics/Volatility3.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c58ac51bc6b182ae",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Security-Disciplines/Digital-Forensics/Windows-Forensics/Windows-Memory-Forensics.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e2f7c98b9e924070",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Exploitation/Binary-Exploitation/Binary-Exploitation-Enumeration.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "93df66d44d217c4f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Development/Languages/Go/Golang.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -134,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Security-Disciplines/Digital-Forensics/Windows-Forensics/Windows-Memory-Forensics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Security-Disciplines/Digital-Forensics/Windows-Forensics/Windows-Memory-Forensics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -173,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Security-Disciplines/Digital-Forensics/Windows-Forensics/Windows-Memory-Forensics.md"
-              }
+              "state": {}
             }
           },
           {
@@ -207,16 +150,28 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "c58ac51bc6b182ae",
+  "active": "5b0814ef496bb8d8",
   "lastOpenFiles": [
-    "Tools/Forensics/Volatility3.md",
-    "Security-Disciplines/Digital-Forensics/Windows-Forensics/Windows-Memory-Forensics.md",
+    "Development/Languages/Go/Golang.md",
     "Exploitation/Binary-Exploitation/Binary-Exploitation-Enumeration.md",
     "Hardware/Hardware-Maintenance/USB-Maintenance.md",
+    "Software/Operating-Systems/Windows/Windows-Concepts/Shim-Database.md",
+    "Alternate-Resources.md",
+    "Persistence/Windows-Persistence/Windows-Persistence.md",
+    "README.md",
+    "Security-Disciplines/Digital-Forensics/Windows-Forensics/Windows-Memory-Forensics.md",
+    "Artificial-Intelligence/AI-For-Hacking.md",
+    "Artificial-Intelligence/AI-Risks.md",
+    "Tools/Forensics/FTK-Imager.md",
+    "Tools/Forensics/Volatility3.md",
+    "Tools/SysInternals/Sysinternals.md",
+    "Tools/Windows/EZViewer.md",
+    "Tools/Windows/EZViewer",
+    "Security-Disciplines/Physical-Security/Physical-Security.md",
+    "Development/Makefiles.md",
     "Hardware/Hardware-Maintenance/Hardware-Maintenance.md",
     "Social-Engineering/Manipulation-Tactics.md",
     "Tools/Debuggers-IDEs-Editors/GDB.md",
-    "README.md",
     "Tools/Steganography/Steghide.md",
     "Tools/Useful-Online-Software/CyberChef.md",
     "Software/Operating-Systems/Linux/Linux-Commands/Linux-One-Liners-To-Rule-Them-All.md",
@@ -224,17 +179,6 @@
     "Development/Languages/Python/Python-Tooling-Libraries.md",
     "Development/Languages/Bash/Bash.md",
     "Post-Exploitation/Lateral-Movement/Lateral-Movement.md",
-    "Software/Operating-Systems/Linux/Linux-Commands/Systemd-Controversies.md",
-    "Software/Operating-Systems/Hacker-OSes/Kali/Kali-Purple.md",
-    "Social-Engineering/Body-Language/Facial-Expressions.md",
-    "Software/Operating-Systems/Hacker-OSes/Kali/Kali-Configuration/Updating-Burpsuite-On-Kali.md",
-    "Security-Disciplines/Digital-Forensics/Windows-Forensics/Windows-Registry-Forensics.md",
-    "Persistence/Linux-Persistence.md",
-    "Software/Operating-Systems/Linux/Linux-Commands/Systemd.md",
-    "Security-Disciplines/Secrets-To-Optimal-Client-Service.md",
-    "Tools/Forensics/FTK-Imager.md",
-    "Post-Exploitation/Evasion/Antivirus-Evasion/AMSI-Bypasses/AMSI-Bypass-Techniques.md",
-    "Post-Exploitation/Evasion/Antivirus-Evasion/AMSI-Bypasses/AMSI-Bypassing.md",
     "Tools/Steganography",
     "Images/whatisthisdebiandocs-1.png",
     "Images/whatisthisdebiandocs.png",
@@ -249,7 +193,6 @@
     "Security-Disciplines/Digital-Forensics/Anti-Forensic-Techniques",
     "Security-Disciplines/Digital-Forensics/Linux-Forensics",
     "Security-Disciplines/Digital-Forensics/Windows-Forensics",
-    "Software/Services/Logging",
     "Images/chriskubecka-openautomateddemandresponse-attachsystems.png",
     "Images/chriskubecka-ismemegoddess-part2.png",
     "Images/chriskubecka-ismemegoddess.png",

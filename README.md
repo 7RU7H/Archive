@@ -4,7 +4,7 @@
 
 Hacking Methodology, Cheatsheets, Conceptual Breakdowns - Now with pages that are spellchecked! 
 
-This is a continuous life-long project as the curated answer to the rise of LLMs and its evolution to create something entire human curated and referenced. Any usage of any products on a page-per-page basis will be indicated. If the said product does not provide a reference it won't by default be used. Very open to feedback. 
+This is a continuous life-long project as the curated answer to the rise of LLMs and its evolution to create something entire human curated and referenced. Any usage of any products on a page-per-page basis will be indicated. If the said product does not provide a reference it won't by default be used. Very open to feedback. All information was obtained from clear-net sites only with references provided.
 
 H.D. Moore: *“If you don’t think you’re a n00b, you’re not trying hard enough.”*
 

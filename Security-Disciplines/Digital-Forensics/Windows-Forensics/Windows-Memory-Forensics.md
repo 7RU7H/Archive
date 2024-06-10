@@ -19,6 +19,19 @@ Concepts and Terminology:
 		- [[Kali]] - [bulk-extractor for Kali](https://www.kali.org/tools/bulk-extractor/)
 	- For some living off the land without `strings.exe` as a DFIR person [REF](https://superuser.com/questions/124081/is-there-a-windows-equivalent-of-the-unix-strings-command) `more < FILE_PATH.exe | findstr "."` 
 - `hiberfil.sys` Microsoft can converts the RAM content into a hibernation file `hiberfil.sys`
+	- Located normally `C:\hiberfil.sys` 
+		- Contains the follow non-exhaustive list:
+		- The memory snapshot of the RAM at the time of hibernation.
+		- Provide information about the user activities.
+		- Running processes.
+		- Network connections.
+		- Recently opened files.
+	- [[FTK-Imager]] can be used to extract the `hiberfil.sys` file
+	- [[HibernationRecon]] can be used to decompress the `hiberfil.sys` file 
+	- Then [[Volatility3]] or 2 to extract information from memory dump
+
+
+
 #### Tooling
 
 [[Volatility3]]
