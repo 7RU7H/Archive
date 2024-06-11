@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "32dd0b28f47a1caa",
+        "id": "6a5d5ef4a9a6b0c3",
         "type": "tabs",
         "children": [
           {
-            "id": "5b0814ef496bb8d8",
+            "id": "46104772f6557e66",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Brain-Hacking/Problem-Solving/Rabbitholes.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -52,7 +56,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "AMS",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Brain-Hacking/Problem-Solving/Rabbitholes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Brain-Hacking/Problem-Solving/Rabbitholes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Brain-Hacking/Problem-Solving/Rabbitholes.md"
+              }
             }
           },
           {
@@ -132,7 +140,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -150,8 +158,11 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "5b0814ef496bb8d8",
+  "active": "46104772f6557e66",
   "lastOpenFiles": [
+    "Brain-Hacking/Problem-Solving/Rabbitholes.md",
+    "Development/Languages/Rust/Rust.md",
+    "Cryptography-And-Authentication/One-Time-Pad.md",
     "Development/Languages/Go/Golang.md",
     "Exploitation/Binary-Exploitation/Binary-Exploitation-Enumeration.md",
     "Hardware/Hardware-Maintenance/USB-Maintenance.md",
@@ -176,9 +187,6 @@
     "Tools/Useful-Online-Software/CyberChef.md",
     "Software/Operating-Systems/Linux/Linux-Commands/Linux-One-Liners-To-Rule-Them-All.md",
     "Development/Languages/Python/Useful-Python.md",
-    "Development/Languages/Python/Python-Tooling-Libraries.md",
-    "Development/Languages/Bash/Bash.md",
-    "Post-Exploitation/Lateral-Movement/Lateral-Movement.md",
     "Tools/Steganography",
     "Images/whatisthisdebiandocs-1.png",
     "Images/whatisthisdebiandocs.png",

@@ -1,7 +1,8 @@
-# Useful_Rust
+# Rust
 
 [I am not affiliated with Rust organization, btw.](https://docs.google.com/forms/d/e/1FAIpQLSdaM4pdWFsLJ8GHIUFIhepuq0lfTg_b0mJ-hvwPdHa4UTRaAg/viewform)
 
+**Authorial Opinion - for my own memory (as of 10/6/2024): No 2 dimensional arrays in Rust, my guess is because crabs only move in 1 dimension of left and right**
 ## Installation and Maintenance
 
 Linux install
