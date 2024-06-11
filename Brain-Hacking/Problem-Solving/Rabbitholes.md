@@ -1,6 +1,24 @@
 # Rabbitholes
 
 
+Due to Rabbitholes being a concept tied *personally* to OSCP. This page is about dealing with them. Unlike many detractor of Offensive Security's  fame or infamy regarding OSCP specifically -  **authorial opinion**: think that approach is probably the best and only way to measure some problem solving skills. That those that detract do not move beyond to understand why someone would cause you this much pain for something that you want so much hurts. It hurts everyone. These thinking skills that are probably required for those that want to go much further than OSCP, which I do, but I understand why other don't. For some it is a milestone and endpoint not midpoint or starting point probably more because of where they are in life and how much effort it represent to them relatively. I spent a long time investing the why to actually to be good. It was and still is very painful. I think the problem is clarity of how to approach understanding this subject matter. I also think that the raw pain and struggle  is something I would one day need to teach my children. Without charging them X amount of money for the privilege and escalating the act of problem solving to be fun, cross-domain and applicable to their personal development. Without being puzzles are fun with Pavlovs dog treats are flag.txt for cleaning your room. With just the truest distilled understanding, knowledge and practice without the degree of suffering like the OSCP.  
+
+- Investing in the correct amount of noting for the job:
+	- Labs are not exams, boxes are not labs, a box is not the exam
+	- You can have too much in some areas 
+	- And not enough in others
+- Do Proving Ground Machines that are OSCP level, by being old exam machines then:
+1. Make or theorise (graph out each step) a boxes as if you were making the exam 
+	- Find your weaknesses
+		- Can you port forward in various ways and receive shells?
+		- Do you understand OWASP top 10 in context of OSCP like exam machine
+		- Do understand the difference in ahcking AD and boot2root
+		- Do you understand why multiple ultimately failing paths are failing path before or during and why the way you approach a machine is not going to get you flags 
+	- Understand how to troll educationally from a:
+		- Are those doing my OSCP like box doing noting, understand when to pivot to another box or route to a flag not fixating on a path or piece information
+
+
+This is probably the best explanation I have found other than having to figure out for myself.
 >[Rabbitholes Guide from ChrisPritchard - Aquinas's OSCP Guide](https://github.com/ChrisPritchard/ctf-writeups/blob/master/oscp-guide.md):
  >- If you are on a 20 or 25 pt box and it has a website at port 80 with a file named 'creds' in it. Thats pretty obviously a red herring.
 > - you get access to something and immediately hit a wall: e.g. a database that you get creds to, but once in, the db has no tables of note, and your account has no privileges
@@ -10,7 +28,9 @@
 
 
 
-**Authorial Note**: I will return to this to make some Rabbithole memetic that is funny (therefore memorable) and importantly useful. 
+**Authorial Note**: I will return to this to make some Rabbithole memetic that is funny (therefore memorable) and importantly useful. Also more work for both
+- PWK200
+- PWK300 and any other I will end up doing
 
 *Simplifying* and adding to this further:
 - Spin plates and time is just a number...
@@ -41,7 +61,7 @@
 			- Are you keeping *good* notes: 
 			- Are you asking questions of yourself, the time, the boxes, etc
 		- Judgement over your noting and situation
-			- Its is a test: are you judging the situation for what it is - you hit a wall with some path (exploit, misconfiguration, finding)
+			- Its is a test: are you judging the situation for what it is - you hit a wall with some path (exploits, misconfigurations, findings)
 ## References
 
 [Rabbitholes Guide from ChrisPritchard - Aquinas's OSCP Guide](https://github.com/ChrisPritchard/ctf-writeups/blob/master/oscp-guide.md)
