@@ -16,7 +16,28 @@ Due to Rabbitholes being a concept tied *personally* to OSCP. This page is about
 		- Do you understand why multiple ultimately failing paths are failing path before or during and why the way you approach a machine is not going to get you flags 
 	- Understand how to troll educationally from a:
 		- Are those doing my OSCP like box doing noting, understand when to pivot to another box or route to a flag not fixating on a path or piece information
-
+- Is your current methodology a question based methodology 
+	- Do not be a tool, Tool do x for a problem; Reframe everything as questions - not tools
+	- Interrogatives are like requests and response - no response entails something, just a actual response or just the facial expression change
+- Understand the systems mindset
+	- If not do not Sys-Admin X = how can you tell Sys-Admin A to do something else
+	- If you do not take a step back and understand what system is within different contexts = how are you going to hack this, btw - Bruteforcing passwords and phishing examiners?
+- Understand a security mindset - start from lines on blueprints to examples, build patterns and models and judgemental understanding (it takes time)
+	1. Get or make a blueprint for a hypothetical safe then like child draw how with all the superpowers of fiction how you could get inside that safe
+	2. Limit in conceptual scope what you can do and what the "safe" is i.e a mysql database:
+		- Ask questions that define how it exists and is interactable on a network, host OS, etc
+- Understand the OFFSEC student mindset
+	- Try Harder
+	- Try Smarter (but do not cheat, or cheat yourself)
+	- WiRE:
+		- Write, Isitarabbithole, Read, Execute - combine exploits, by think it does X + Y -> something that is part of chain to do some objective 
+- Understand relevance to OFFSEC course material
+	- Compress it all down, but understand the irrelevance for the exam of some the material 
+		- reduce all non relevant to phase - XSS only would matter in a context where no user interaction and we could reflect in back on the page and the page or service read that page and executes it - not your browser
+- Understand the OFFSEC examiner mindset (exam machine engineers)
+	- If your job was machine engineer how would make similar boxes:
+		- Have you made a rabbithole?
+		- Why is something not or is OSCP relevant?
 
 This is probably the best explanation I have found other than having to figure out for myself.
 >[Rabbitholes Guide from ChrisPritchard - Aquinas's OSCP Guide](https://github.com/ChrisPritchard/ctf-writeups/blob/master/oscp-guide.md):
