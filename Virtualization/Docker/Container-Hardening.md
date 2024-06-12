@@ -183,5 +183,5 @@ This is from [THM Container Hardening Room](https://tryhackme.com/room/container
 [seccomp](https://man7.org/linux/man-pages/man2/seccomp.2.html)
 [Docker Scout tool](https://github.com/docker/scout-cli) 
 [Docker Scout documentation](https://docs.docker.com/scout/) 
- [Dive](https://github.com/wagoodman/dive)
- [Grype](https://github.com/anchore/grype)
+[Dive](https://github.com/wagoodman/dive) 
+[Grype](https://github.com/anchore/grype)

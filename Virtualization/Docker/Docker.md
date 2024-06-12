@@ -82,7 +82,7 @@ Docker `compose`is for multiple containers to interact with each other while nee
 - uses .yaml composition files
 - [see](https://docs.docker.com/compose/gettingstarted/)
 
-[Dockerfiles](https://docs.docker.com/engine/reference/builder/) have the syntax: `INSTRUCTION arguments`
+[Dockerfiles](https://docs.docker.com/engine/reference/builder/) have the syntax: `INSTRUCTION arguments`, it has no extension it is just Dockerfile
 
 ```dockerfile
 # Parse directives
