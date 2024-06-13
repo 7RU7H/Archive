@@ -13,7 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Brain-Hacking/Problem-Solving/Rabbitholes.md",
+                "file": "Artificial-Intelligence/TALK-Practical-AI-for-Bounty-Hunters.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8be0b3e7ac52bd02",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/AI/Fabric.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Brain-Hacking/Problem-Solving/Rabbitholes.md",
+                "file": "Artificial-Intelligence/TALK-Practical-AI-for-Bounty-Hunters.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Brain-Hacking/Problem-Solving/Rabbitholes.md",
+                "file": "Artificial-Intelligence/TALK-Practical-AI-for-Bounty-Hunters.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Brain-Hacking/Problem-Solving/Rabbitholes.md"
+                "file": "Artificial-Intelligence/TALK-Practical-AI-for-Bounty-Hunters.md"
               }
             }
           },
@@ -160,6 +172,11 @@
   },
   "active": "46104772f6557e66",
   "lastOpenFiles": [
+    "Tools/Web-Applications-Attacking/Nuclei.md",
+    "Artificial-Intelligence/TALK-Practical-AI-for-Bounty-Hunters.md",
+    "Tools/AI/Fabric.md",
+    "Tools/AI",
+    "Brain-Hacking/Problem-Solving/Rabbitholes.md",
     "Virtualization/Docker/Docker.md",
     "Persistence/Linux-Persistence.md",
     "Software/Operating-Systems/Linux/Linux-Commands/Systemctl.md",
@@ -174,7 +191,6 @@
     "Brain-Hacking/Philosophy/Meta-Methodology.md",
     "Brain-Hacking/Philosophy/Hacking-The-Thing.md",
     "Brain-Hacking/Life-Cheatsheet.md",
-    "Brain-Hacking/Problem-Solving/Rabbitholes.md",
     "Development/Languages/Rust/Rust.md",
     "Cryptography-And-Authentication/One-Time-Pad.md",
     "Development/Languages/Go/Golang.md",
@@ -183,9 +199,6 @@
     "Software/Operating-Systems/Windows/Windows-Concepts/Shim-Database.md",
     "Alternate-Resources.md",
     "Persistence/Windows-Persistence/Windows-Persistence.md",
-    "README.md",
-    "Security-Disciplines/Digital-Forensics/Windows-Forensics/Windows-Memory-Forensics.md",
-    "Artificial-Intelligence/AI-For-Hacking.md",
     "Tools/Windows/EZViewer",
     "Tools/Steganography",
     "Images/whatisthisdebiandocs-1.png",
@@ -200,7 +213,6 @@
     "Images/cia-structuredanalyticstimeline.png",
     "Security-Disciplines/Digital-Forensics/Anti-Forensic-Techniques",
     "Security-Disciplines/Digital-Forensics/Linux-Forensics",
-    "Security-Disciplines/Digital-Forensics/Windows-Forensics",
     "Images/chriskubecka-openautomateddemandresponse-attachsystems.png",
     "Images/chriskubecka-ismemegoddess-part2.png",
     "Images/chriskubecka-ismemegoddess.png",
