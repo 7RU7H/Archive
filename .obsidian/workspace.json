@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/AI/Fabric.md",
+                "file": "Alternate-Resources.md",
                 "mode": "source",
                 "source": false
               }
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/AI/Fabric.md",
+                "file": "Alternate-Resources.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tools/AI/Fabric.md",
+                "file": "Alternate-Resources.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tools/AI/Fabric.md"
+                "file": "Alternate-Resources.md"
               }
             }
           },
@@ -184,12 +184,12 @@
   },
   "active": "8be0b3e7ac52bd02",
   "lastOpenFiles": [
+    "Artificial-Intelligence/TALK-Practical-AI-for-Bounty-Hunters.md",
+    "Tools/AI/Fabric.md",
     "Virtualization/Docker/Docker.md",
     "Software/Services/KASM-Workspaces.md",
     "Development/Languages/Bash/Bash.md",
-    "Tools/AI/Fabric.md",
     "Tools/Useful-Online-Software/GitHub.md",
-    "Artificial-Intelligence/TALK-Practical-AI-for-Bounty-Hunters.md",
     "Tools/Web-Applications-Attacking/Nuclei.md",
     "Tools/AI",
     "Brain-Hacking/Problem-Solving/Rabbitholes.md",
