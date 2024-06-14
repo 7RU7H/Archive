@@ -2,7 +2,7 @@
 
 For hacking GitHub Repositories see [[Git-Repository-Hacking]]
 
-## AAARGH.. breath just use the correct git commands
+#### AAARGH.. breath just use the correct git commands
 
 ```bash
 # Check local repo status to its remote hosted on github
@@ -14,13 +14,20 @@ git branch # display branches
 git push --all -f
 ```
 
-## Git not recording pushes?
+
+#### `curl` to get the latest releases of a repository
+
+[[Curl-Cheatsheet]]]
+```bash
+curl -s https://api.github.com/repos/$OWNER/$REPO/releases/latest | grep "browser_download_url" | cut -d '"' -f 4
+```
+#### Git not recording pushes?
 [StackOverflow - Johnathan Chad Faling](https://stackoverflow.com/questions/15289768/github-commits-arent-recorded-in-the-your-contributions-calendar#19384175)
 ```bash
 git config --global user.email youremail@email.com 
 ```
 
-## File Too Big 
+#### File Too Big 
 
 [StackOverflow - Schleis](https://stackoverflow.com/questions/20002557/how-to-remove-a-too-large-file-in-a-commit-when-my-branch-is-ahead-of-master-by)
 ```bash
@@ -31,7 +38,7 @@ rm path/to/chungus.file
 ```
 
 
-## GitHub Security
+#### GitHub Security
 Password got included in some field or log file and you are already panicking. As soon as possible:
 
 [Thanks Antonio Petricca](https://stackoverflow.com/questions/5099333/git-accidental-inclusion-of-password-how-do-i-fix-it#5099338i)
@@ -49,13 +56,13 @@ git rebase --continue
 git push --force
 ```
 
-## Forget to add something to the commit 
+#### Forget to add something to the commit 
 Beware it will amend. No jokes. [Primeagen](https://www.youtube.com/c/ThePrimeagen)
 ```bash
 git commit --amend --no-edit
 ```
 
-## Pull requests with Snovvcrash
+#### Pull requests with Snovvcrash
 
 Syncing a forked repository:
 ```bash

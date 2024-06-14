@@ -8,24 +8,36 @@
         "type": "tabs",
         "children": [
           {
-            "id": "46104772f6557e66",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Artificial-Intelligence/TALK-Practical-AI-for-Bounty-Hunters.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "8be0b3e7ac52bd02",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "Tools/AI/Fabric.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8b767d8390ecffb5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Software/Services/KASM-Workspaces.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9198a035965c98c6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Virtualization/Docker/Docker.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Artificial-Intelligence/TALK-Practical-AI-for-Bounty-Hunters.md",
+                "file": "Tools/AI/Fabric.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Artificial-Intelligence/TALK-Practical-AI-for-Bounty-Hunters.md",
+                "file": "Tools/AI/Fabric.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Artificial-Intelligence/TALK-Practical-AI-for-Bounty-Hunters.md"
+                "file": "Tools/AI/Fabric.md"
               }
             }
           },
@@ -170,14 +182,17 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "46104772f6557e66",
+  "active": "8be0b3e7ac52bd02",
   "lastOpenFiles": [
-    "Tools/Web-Applications-Attacking/Nuclei.md",
-    "Artificial-Intelligence/TALK-Practical-AI-for-Bounty-Hunters.md",
+    "Virtualization/Docker/Docker.md",
+    "Software/Services/KASM-Workspaces.md",
+    "Development/Languages/Bash/Bash.md",
     "Tools/AI/Fabric.md",
+    "Tools/Useful-Online-Software/GitHub.md",
+    "Artificial-Intelligence/TALK-Practical-AI-for-Bounty-Hunters.md",
+    "Tools/Web-Applications-Attacking/Nuclei.md",
     "Tools/AI",
     "Brain-Hacking/Problem-Solving/Rabbitholes.md",
-    "Virtualization/Docker/Docker.md",
     "Persistence/Linux-Persistence.md",
     "Software/Operating-Systems/Linux/Linux-Commands/Systemctl.md",
     "Software/Operating-Systems/Linux/Linux-Commands/Systemd.md",
@@ -196,9 +211,6 @@
     "Development/Languages/Go/Golang.md",
     "Exploitation/Binary-Exploitation/Binary-Exploitation-Enumeration.md",
     "Hardware/Hardware-Maintenance/USB-Maintenance.md",
-    "Software/Operating-Systems/Windows/Windows-Concepts/Shim-Database.md",
-    "Alternate-Resources.md",
-    "Persistence/Windows-Persistence/Windows-Persistence.md",
     "Tools/Windows/EZViewer",
     "Tools/Steganography",
     "Images/whatisthisdebiandocs-1.png",
