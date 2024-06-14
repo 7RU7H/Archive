@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Alternate-Resources.md",
+                "file": "Tools/Architecture/x86-Tools.md",
                 "mode": "source",
                 "source": false
               }
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Alternate-Resources.md",
+                "file": "Tools/Architecture/x86-Tools.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Alternate-Resources.md",
+                "file": "Tools/Architecture/x86-Tools.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Alternate-Resources.md"
+                "file": "Tools/Architecture/x86-Tools.md"
               }
             }
           },
@@ -184,7 +184,14 @@
   },
   "active": "8be0b3e7ac52bd02",
   "lastOpenFiles": [
+    "Tools/Documentation/Doxygen.md",
+    "Tools/Architecture/x86-Tools.md",
+    "Tools/Architecture",
+    "README.md",
+    "Tools/Documentation",
     "Artificial-Intelligence/TALK-Practical-AI-for-Bounty-Hunters.md",
+    "Alternate-Resources.md",
+    "Development/Regular-Expressions.md",
     "Tools/AI/Fabric.md",
     "Virtualization/Docker/Docker.md",
     "Software/Services/KASM-Workspaces.md",
@@ -206,11 +213,6 @@
     "Brain-Hacking/Philosophy/Meta-Methodology.md",
     "Brain-Hacking/Philosophy/Hacking-The-Thing.md",
     "Brain-Hacking/Life-Cheatsheet.md",
-    "Development/Languages/Rust/Rust.md",
-    "Cryptography-And-Authentication/One-Time-Pad.md",
-    "Development/Languages/Go/Golang.md",
-    "Exploitation/Binary-Exploitation/Binary-Exploitation-Enumeration.md",
-    "Hardware/Hardware-Maintenance/USB-Maintenance.md",
     "Tools/Windows/EZViewer",
     "Tools/Steganography",
     "Images/whatisthisdebiandocs-1.png",
@@ -223,8 +225,6 @@
     "Images/intelligence-cycle-SANs-MattWilliamsIsHilarious.png",
     "Web-Application-Hacking/Web-Exploits/Web-App-Race-Conditions",
     "Images/cia-structuredanalyticstimeline.png",
-    "Security-Disciplines/Digital-Forensics/Anti-Forensic-Techniques",
-    "Security-Disciplines/Digital-Forensics/Linux-Forensics",
     "Images/chriskubecka-openautomateddemandresponse-attachsystems.png",
     "Images/chriskubecka-ismemegoddess-part2.png",
     "Images/chriskubecka-ismemegoddess.png",

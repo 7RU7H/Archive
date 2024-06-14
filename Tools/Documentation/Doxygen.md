@@ -1,0 +1,6 @@
+
+[Doxygen - Wikipedia](https://en.wikipedia.org/wiki/Doxygen) *"is a [documentation generator](https://en.wikipedia.org/wiki/Documentation_generator "Documentation generator")[[4]](https://en.wikipedia.org/wiki/Doxygen#cite_note-4)[[5]](https://en.wikipedia.org/wiki/Doxygen#cite_note-5)[[6]](https://en.wikipedia.org/wiki/Doxygen#cite_note-6)[[7]](https://en.wikipedia.org/wiki/Doxygen#cite_note-7) and [static analysis](https://en.wikipedia.org/wiki/Static_program_analysis "Static program analysis") tool for software [source trees](https://en.wikipedia.org/wiki/Source_code#Organization "Source code"). When used as a documentation generator, Doxygen extracts information from specially-formatted comments within the code. When used for analysis, Doxygen uses its [parse tree](https://en.wikipedia.org/wiki/Parse_tree "Parse tree") to generate diagrams and charts of the code structure. Doxygen can cross reference documentation and code, so that the reader of a document can easily refer to the actual code."*
+
+## References
+
+[Doxygen - Wikipedia](https://en.wikipedia.org/wiki/Doxygen)
