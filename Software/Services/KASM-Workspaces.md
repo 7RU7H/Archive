@@ -3,6 +3,8 @@
 
 [Standalone KASM Docker containers - Docker](https://hub.docker.com/u/kasmweb) 
 
+
+
 Helpful Video [Kasm Workspaces - Installation](https://www.youtube.com/watch?v=BYJ0M04cD18)
 1. Installation: https://kasmweb.com/docs/latest/install.html
 ```bash

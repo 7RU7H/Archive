@@ -142,7 +142,7 @@ https://howto.thec2matrix.com/
 #### Accessing and managing C2 infrastructure
 
 - C2 management interface should not be directly accessible 
-- For OPSEC and it's easy to fingerprint C2 servers:  
+- For [[OPSEC]] and it's easy to fingerprint C2 servers:  
 	- For example, in versions prior to 3.13, Cobalt Strike C2 servers were able to be identified by an extra space (\x20) at the end of the HTTP Response
 
 ##### SSH port forwarding

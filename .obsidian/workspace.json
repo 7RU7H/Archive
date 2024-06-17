@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/Architecture/x86-Tools.md",
+                "file": "Security-Disciplines/Digital-Forensics/Windows-Forensics/Windows-Memory-Forensics.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Software/Services/KASM-Workspaces.md",
+                "file": "Artificial-Intelligence/TALK-Practical-AI-for-Bounty-Hunters.md",
                 "mode": "source",
                 "source": false
               }
@@ -43,7 +43,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -80,7 +81,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "systemd",
+                "query": "OPSEC",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -109,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/Architecture/x86-Tools.md",
+                "file": "Artificial-Intelligence/TALK-Practical-AI-for-Bounty-Hunters.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tools/Architecture/x86-Tools.md",
+                "file": "Artificial-Intelligence/TALK-Practical-AI-for-Bounty-Hunters.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tools/Architecture/x86-Tools.md"
+                "file": "Artificial-Intelligence/TALK-Practical-AI-for-Bounty-Hunters.md"
               }
             }
           },
@@ -182,10 +183,16 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "8be0b3e7ac52bd02",
+  "active": "8b767d8390ecffb5",
   "lastOpenFiles": [
-    "Tools/Documentation/Doxygen.md",
+    "Artificial-Intelligence/AI-For-Hacking.md",
+    "Software/Services/KASM-Workspaces.md",
+    "Security-Disciplines/Digital-Forensics/Windows-Forensics/Windows-Memory-Forensics.md",
+    "Cryptography-And-Authentication/De-Or-En-Cryption.md",
+    "Security-Disciplines/OPSEC.md",
+    "Tools/C2/Introduction-To-Command-And-Control-Frameworks.md",
     "Tools/Architecture/x86-Tools.md",
+    "Tools/Documentation/Doxygen.md",
     "Tools/Architecture",
     "README.md",
     "Tools/Documentation",
@@ -194,7 +201,6 @@
     "Development/Regular-Expressions.md",
     "Tools/AI/Fabric.md",
     "Virtualization/Docker/Docker.md",
-    "Software/Services/KASM-Workspaces.md",
     "Development/Languages/Bash/Bash.md",
     "Tools/Useful-Online-Software/GitHub.md",
     "Tools/Web-Applications-Attacking/Nuclei.md",
@@ -208,11 +214,6 @@
     "Securing-Networks-And-Systems/Incident-Response/Recovering-Active-Directory.md",
     "Brain-Hacking/Problem-Solving/Philosophical-Razors.md",
     "Brain-Hacking/Problem-Solving/Reasoning-Typology.md",
-    "Brain-Hacking/Cyber-Related-Actions/Beyond-Root-Ideas.md",
-    "Brain-Hacking/Philosophy/NOPSEC-101.md",
-    "Brain-Hacking/Philosophy/Meta-Methodology.md",
-    "Brain-Hacking/Philosophy/Hacking-The-Thing.md",
-    "Brain-Hacking/Life-Cheatsheet.md",
     "Tools/Windows/EZViewer",
     "Tools/Steganography",
     "Images/whatisthisdebiandocs-1.png",

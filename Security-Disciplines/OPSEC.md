@@ -8,6 +8,13 @@ Operations Security (OPSEC) is a term coined by the United States military. In t
 [BHIS | OPSEC Fundamentals for Remote Red Teams - Michael Allen](https://youtu.be/AHwfV3NFlno?si=ifq3zSkE2bFvaGJA)
 
 
+- Cover
+- Concealment
+- Compartmentalisation
+	- Segmenting  machine, accounts, covers, IOCs 
+
+
+
 [Part 1-How to Live like a Criminal - Privacy Tips for the Non-Criminal | Ean Meyer & John Strand](https://www.youtube.com/watch?v=9iwh5J71pZg)
 [Part 2-How to Live like a Criminal - Privacy Tips for the Non-Criminal | Ean Meyer & John Strand](https://www.youtube.com/watch?v=r4SvCFxTMMk)
 [Part 3-How to Live like a Criminal - Privacy Tips for the Non-Criminal | Ean Meyer & John Strand](https://www.youtube.com/watch?v=JlVI705wHq8)
