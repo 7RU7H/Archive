@@ -10,7 +10,7 @@ I2C make two lines for communcation:
 
 Address signal that is sent on the SDA wire instead of a Chip select wire to determine which peripheral to comunicate up to 1008 devices can be connected to the same two lines
 
-![1000](I2C-protocol)
+![1000](I2C-protocol.md)
 
 Start and Stop signal are used to prevent communication collisions - device talking over each other. Each device monitors start and stop. 
 

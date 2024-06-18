@@ -26,7 +26,7 @@ Peering Restrictions:
 - Internet
 - Network virtual appliance (NVA)
 
-![1080](azvnetservicechainingandudrs.excalidraw)
+![1080](azvnetservicechainingandudrs.excalidraw.md)
 
 #### VPN Gateways and Connecting On-Premises to Azure
 

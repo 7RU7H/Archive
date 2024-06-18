@@ -35,7 +35,7 @@ Important Points:
 - Force a Surveillance team to burn assets
 	- Know the pattern of how a tail an
 
-![1920](surveillance-standardABCpattern.excalidraw)
+![1920](surveillance-standardABCpattern.excalidraw.md)
 
 ## References
 

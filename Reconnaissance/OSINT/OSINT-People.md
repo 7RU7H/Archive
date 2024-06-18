@@ -31,6 +31,7 @@ This is a TTPs to add to as I continue to learn and improve [[OSINT]]-ing people
 - Images?
 	- Use [[Exiftool]] to check for non-stripped image data
 	- Reverse Image Search
+		- Google, Bing
 	- Is your target capable of [[Steganography]]  
 
 - What is the basic profile of target?

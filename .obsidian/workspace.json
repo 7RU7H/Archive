@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Artificial-Intelligence/TALK-Practical-AI-for-Bounty-Hunters.md",
+                "file": "Reconnaissance/Passive-Information-Gathering/Search-Engine-Dorking.md",
                 "mode": "source",
                 "source": false
               }
@@ -81,7 +81,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "OPSEC",
+                "query": "OSINT",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Artificial-Intelligence/TALK-Practical-AI-for-Bounty-Hunters.md",
+                "file": "Reconnaissance/Passive-Information-Gathering/Search-Engine-Dorking.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Artificial-Intelligence/TALK-Practical-AI-for-Bounty-Hunters.md",
+                "file": "Reconnaissance/Passive-Information-Gathering/Search-Engine-Dorking.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Artificial-Intelligence/TALK-Practical-AI-for-Bounty-Hunters.md"
+                "file": "Reconnaissance/Passive-Information-Gathering/Search-Engine-Dorking.md"
               }
             }
           },
@@ -185,9 +185,14 @@
   },
   "active": "8b767d8390ecffb5",
   "lastOpenFiles": [
+    "Reconnaissance/Active-Directory/Active-Directory-Footholding.md",
+    "Reconnaissance/OSINT/OSINT-People.md",
+    "Reconnaissance/Passive-Information-Gathering/Search-Engine-Dorking.md",
+    "Reconnaissance/OSINT/OSINT.md",
+    "Artificial-Intelligence/TALK-Practical-AI-for-Bounty-Hunters.md",
+    "Security-Disciplines/Digital-Forensics/Windows-Forensics/Windows-Memory-Forensics.md",
     "Artificial-Intelligence/AI-For-Hacking.md",
     "Software/Services/KASM-Workspaces.md",
-    "Security-Disciplines/Digital-Forensics/Windows-Forensics/Windows-Memory-Forensics.md",
     "Cryptography-And-Authentication/De-Or-En-Cryption.md",
     "Security-Disciplines/OPSEC.md",
     "Tools/C2/Introduction-To-Command-And-Control-Frameworks.md",
@@ -196,7 +201,6 @@
     "Tools/Architecture",
     "README.md",
     "Tools/Documentation",
-    "Artificial-Intelligence/TALK-Practical-AI-for-Bounty-Hunters.md",
     "Alternate-Resources.md",
     "Development/Regular-Expressions.md",
     "Tools/AI/Fabric.md",
@@ -210,10 +214,6 @@
     "Software/Operating-Systems/Linux/Linux-Commands/Systemctl.md",
     "Software/Operating-Systems/Linux/Linux-Commands/Systemd.md",
     "Virtualization/Docker/Container-Hardening.md",
-    "Securing-Networks-And-Systems/Honeypots.md",
-    "Securing-Networks-And-Systems/Incident-Response/Recovering-Active-Directory.md",
-    "Brain-Hacking/Problem-Solving/Philosophical-Razors.md",
-    "Brain-Hacking/Problem-Solving/Reasoning-Typology.md",
     "Tools/Windows/EZViewer",
     "Tools/Steganography",
     "Images/whatisthisdebiandocs-1.png",

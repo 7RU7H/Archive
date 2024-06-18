@@ -102,7 +102,7 @@ An Availability set is
 		- If 5 (By default, there are five (non-user-configurable)) Update domains, the 6th will be in the 1st, 7th would in the 2nd if we added it, etc - if 20 the 21st VM is in the 1st.. 
 	- Can't be changed once the availability set has been created
 
-![1080](azure-updateandfault-domains.excalidraw)
+![1080](azure-updateandfault-domains.excalidraw.md)
 
 Availability Zones:
 - Unique physical locations within a Azure Region

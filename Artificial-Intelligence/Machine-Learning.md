@@ -6,7 +6,7 @@
 #### Particle Swarm
 #### Neural Networks
 
-![1080](ml-neural-networks.excalidraw)
+![1080](ml-neural-networks.excalidraw.md)
 
 Feed-forward loop is the method of how data is sent through the neural network
 - Normalisation of values
