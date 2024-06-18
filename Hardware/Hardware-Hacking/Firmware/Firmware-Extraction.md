@@ -33,7 +33,7 @@ What you need as a beginner:
 			- MISO - Master Input, Slave output
 			- SS - Select active chip slave
 
-1. OSINT the product and collection the manuals
+1. [[OSINT]] the product and collection the manuals
 2. Vulnerability Analysis
 	1. How hard is it to open
 3.  What is the OS of the device

@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Reconnaissance/Passive-Information-Gathering/Search-Engine-Dorking.md",
+                "file": "Networks/Network-Theory/VLAN.md",
                 "mode": "source",
                 "source": false
               }
@@ -81,7 +81,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "OSINT",
+                "query": "VLANs",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Reconnaissance/Passive-Information-Gathering/Search-Engine-Dorking.md",
+                "file": "Networks/Network-Theory/VLAN.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Reconnaissance/Passive-Information-Gathering/Search-Engine-Dorking.md",
+                "file": "Networks/Network-Theory/VLAN.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Reconnaissance/Passive-Information-Gathering/Search-Engine-Dorking.md"
+                "file": "Networks/Network-Theory/VLAN.md"
               }
             }
           },
@@ -185,35 +185,35 @@
   },
   "active": "8b767d8390ecffb5",
   "lastOpenFiles": [
-    "Reconnaissance/Active-Directory/Active-Directory-Footholding.md",
-    "Reconnaissance/OSINT/OSINT-People.md",
+    "Exploitation/Network/NBSN-SMB-Spoofing-And-Capture.md",
+    "Exploitation/Network/SSL-Stripping-Attack.md",
+    "Software/Services/Solaris.md",
+    "Networks/Network-Bridge.md",
+    "Post-Exploitation/Networking/Tunnelling.md",
+    "Networks/Network-Theory/VLAN.md",
+    "Networks/Network-Theory/Network-Protocols/RDP.md",
+    "Networks/Network-Theory/Network-Protocols/Network-Address-Translation.md",
+    "Networks/Network-Theory/Network-Protocols/Network-Protocols.md",
+    "Networks/Network-Theory/Network-Technologies.md",
+    "Networks/Network-Theory/Network-Protocols/PPTP.md",
+    "Networks/Network-Theory/Network-Protocols/IPsec.md",
+    "Mobile/Mobile-Application-Testing.md",
+    "Hardware/Hardware-Maintenance/USB-Maintenance.md",
+    "Hardware/Hardware-Maintenance/Hardware-Maintenance.md",
+    "Hardware/Hardware-Hacking/Printer-Hacking.md",
+    "Hardware/Hardware-Hacking/Hardware-Hacking.md",
+    "Hardware/Hardware-Hacking/Firmware/Firmware-Reversing.md",
+    "Hardware/Hardware-Hacking/Firmware/Firmware-Extraction.md",
+    "Software/Services/Oracle.md",
+    "Tools/Network-Based/Port-scanning/Nmap/Nmap-Cheatsheet.md",
+    "Networks/Cisco-Commands.md",
+    "Hardware/Protocols/I2C.md",
+    "Hardware/Protocols/Hardware-Protocols.md",
     "Reconnaissance/Passive-Information-Gathering/Search-Engine-Dorking.md",
-    "Reconnaissance/OSINT/OSINT.md",
-    "Artificial-Intelligence/TALK-Practical-AI-for-Bounty-Hunters.md",
-    "Security-Disciplines/Digital-Forensics/Windows-Forensics/Windows-Memory-Forensics.md",
-    "Artificial-Intelligence/AI-For-Hacking.md",
-    "Software/Services/KASM-Workspaces.md",
-    "Cryptography-And-Authentication/De-Or-En-Cryption.md",
-    "Security-Disciplines/OPSEC.md",
-    "Tools/C2/Introduction-To-Command-And-Control-Frameworks.md",
-    "Tools/Architecture/x86-Tools.md",
-    "Tools/Documentation/Doxygen.md",
+    "Reconnaissance/Active-Directory/Active-Directory-Footholding.md",
     "Tools/Architecture",
-    "README.md",
     "Tools/Documentation",
-    "Alternate-Resources.md",
-    "Development/Regular-Expressions.md",
-    "Tools/AI/Fabric.md",
-    "Virtualization/Docker/Docker.md",
-    "Development/Languages/Bash/Bash.md",
-    "Tools/Useful-Online-Software/GitHub.md",
-    "Tools/Web-Applications-Attacking/Nuclei.md",
     "Tools/AI",
-    "Brain-Hacking/Problem-Solving/Rabbitholes.md",
-    "Persistence/Linux-Persistence.md",
-    "Software/Operating-Systems/Linux/Linux-Commands/Systemctl.md",
-    "Software/Operating-Systems/Linux/Linux-Commands/Systemd.md",
-    "Virtualization/Docker/Container-Hardening.md",
     "Tools/Windows/EZViewer",
     "Tools/Steganography",
     "Images/whatisthisdebiandocs-1.png",

