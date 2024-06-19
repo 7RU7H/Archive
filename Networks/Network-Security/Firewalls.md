@@ -1,12 +1,18 @@
 # Firewalls
 
-A firewall is software or hardware that parses incoming and outgoing network packets and compares it against a set of rules before passing or blocking it. For evasion techniques see [[Evading-Firewalls]]
+A firewall is software or hardware that parses incoming and outgoing network packets and compares it against a set of rules before passing or blocking it. For evasion techniques see [[Evading-Firewalls]].
+
+Firewalls receive, and then drop or allow or reject, incoming and outgoing traffic that passing through the firewall. Firewalls typical have configuration of rules defined by a Administrator generally at highest architectural level.
+
+Accept: Sends Packet to confirm connection.
+Drop: Drop connection does Packet back to source.
+Reject: Sends Pack to confirm rejected connection.
 
 ## Types of Firewall
 
-A filtering network gateway is a type of firewall that protects an entire network, usually installed on a dedicated machine configured as a gateway for the network so that it can parse all packets that pass in and out of the network. Whereas local firewall is a software service on one machine in order to filter or limit access to some local services and/or preventing rogue outgoing connections. More specfic typology:
+A filtering network gateway is a type of firewall that protects an entire network, usually installed on a dedicated machine configured as a gateway for the network so that it can parse all packets that pass in and out of the network. Whereas local firewall is a software service on one machine in order to filter or limit access to some local services and/or preventing rogue outgoing connections. More specific typology:
 
--   Packet-Filtering Firewall: Packet-filtering inspects the protocol, source and destination IP addresses, and source and destination ports in the case of TCP and UDP datagrams. It is a stateless inspection firewall.
+-   Packet-Filtering Firewall: A Packet Filter, filters packets by rules detirmined in the Access Control List(ACL). Packet-filtering inspects the protocol, source and destination IP addresses, and source and destination ports in the case of TCP and UDP datagrams. It is a stateless inspection firewall. 
 -   Circuit-Level Gateway: In addition to the features offered by the packet-filtering firewalls, circuit-level gateways can provide additional capabilities, such as checking TCP three-way-handshake against the firewall rules.
 -   Stateful Inspection Firewall: Track of the established TCP sessions, therefore it can detect and block any TCP packet outside an established TCP session.
 -   Proxy Firewall: A proxy firewall is also referred to as Application Firewall (AF) and Web Application Firewall (WAF). It is designed to masquerade as the original client and requests on its behalf. This process allows the proxy firewall to inspect the contents of the packet payload instead of being limited to the packet headers. Generally speaking, this is used for web applications and does not work for all protocols.

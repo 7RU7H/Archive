@@ -37,7 +37,7 @@ Function		Ordering and time management of data between source to destination, Ha
 Layer
 Protocol		Network Layer
 Data Unit(PDU)	Packet
-Function		Routing and broadcasting of messages, addressing of multiple 					  																		   				 hosts
+Function		Routing and broadcasting of messages, addressing of multiple hosts
 
 Layer 			2
 Protocol		Data Link Layer
@@ -52,6 +52,20 @@ Function		Transfers raw data between physical machine and physical medium
 
 ```
 
+Layer 2 
+```goat
+MAC addresses - burn in hardware identifiers 
+
+Broadcast 
+Broadcast address ff:ff:ff:ff:ff:ff - can send information to every host in a network segment 
+
+arp - datalink layer protocol used to discover and map other layer 2 devices
+```
+
+
 ## References
 
 [Wikipedia PDU](https://en.wikipedia.org/wiki/Protocol_data_unit)
+[YouTube - Part 1 Networking for Pentesters: Beginner -SheNetworks - Serena  DiPenti - BHIS](https://www.youtube.com/watch?v=FFzBgb00ffk)
+[YouTube - Part 2 Networking for Pentesters: Beginner -SheNetworks - Serena  DiPenti - BHIS](https://www.youtube.com/watch?v=ikIGTW0uraA)
+[YouTube - Part 3 Networking for Pentesters: Beginner -SheNetworks - Serena  DiPenti - BHIS](https://www.youtube.com/watch?v=HS0bicAd-5A)

@@ -1,22 +1,41 @@
 # Network Technologies      
 
-# THIS IS JUST SCAFFOLDING - REVIEW OF NOTES INCOMING
+### GETTING THERE
+
+Textual graph from a source machine to some destination on the Internet 
 
 
-[SheNetworks - Serena  DiPenti - BHIS] 
+[[OSI-Model]] - this page needs formatting
+
+[[Network-Address-Translation]]
+
+[[VLAN]]s are not a security mechanism it used for OSI layer 1-4 management
+- Prevent Broadcast noise 
+- Segmentation  
+
+[[VPN]]
+
+[[DNS]] 
+
+[[ARP-Protocol]]
+
+
+[[ICMP]]
+
+[[Routing-Tables]]
+
+
+
+[[Network-Bridge]]
+
+https://www.youtube.com/watch?v=p0Ar6eincE0
 
 
 
 
-Layer 2 
-```goat
-MAC addresses - burn in hardware identifiers 
+[[HTTPS]]
 
-Broadcast 
-Broadcast address ff:ff:ff:ff:ff:ff - can send information to every host in a network segment 
 
-arp - datalink layer protocol used to discover and map other layer 2 devices
-```
 
 
 
@@ -35,22 +54,11 @@ Linklocal address - start with  169 - debug your internet
 Documentation
 Multicast address
 
-NAT - multiple IP address into one address 
-
-Simplification of NAT - User browsers to a website
-- Private IP of your device communicates with Router... 
-- the Public Router (your router, it is public as it needs to communicate with other devidces other than the private ones) the Private IP of your device is translated to a Public address to communicate back a forth between.. 
-- Public IP (probably IPS) that does a similar translation to get data from that internet website back to the router then router translates back to your Private IP 
 
 
-Private IP Range Classes
 
-Class | Start |  Finish |  Subnet | Addresses
---- | --- | --- | --- | ---
-A |  10.0.0.0 | 10.255.255.255 | /8 | 16 Million
-B | 172.16.0.0 | 172.31.255.255 | /16 | 65,000
-C | 192.168.0.0 | 192.168.255.255 | /24 | 254
+## References
 
-VLANs are not a security mechanism it use for OSI layer 1-4 management
-- Prevent Broadcast noise 
-- Segmentation  
+[YouTube - Part 1 Networking for Pentesters: Beginner -SheNetworks - Serena  DiPenti - BHIS](https://www.youtube.com/watch?v=FFzBgb00ffk)
+[YouTube - Part 2 Networking for Pentesters: Beginner -SheNetworks - Serena  DiPenti - BHIS](https://www.youtube.com/watch?v=ikIGTW0uraA)
+[YouTube - Part 3 Networking for Pentesters: Beginner -SheNetworks - Serena  DiPenti - BHIS](https://www.youtube.com/watch?v=HS0bicAd-5A)
