@@ -9,7 +9,7 @@ System Resource Usage Monitor - 30-60 day log retention lifespan
 - Application, Service, Network and User activity
 - `C:\Windows\System32\sru\SRUDB.dat` - SRUM Database
 
-Use [[Kape]] to export SRUM data - this file is locked with running
+Use [[KAPE]] to export SRUM data - this file is locked with running
 ```powershell
 .\kape.exe --tsource C:\Windows\System32\sru --tdest %SRUMPATH%\SRUM --tflush --mdest %SRUMPATH%\MODULE --mflush --module SRUMDump --target SRUM
 ```

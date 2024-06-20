@@ -69,7 +69,7 @@ These are my key takeaways from this talk:
 
 #### Tools
 
-[[Kape]]
+[[KAPE]]
 [[Autopsy]]
 [[Volatility3]]
 [[Redline]]

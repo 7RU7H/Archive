@@ -5,7 +5,7 @@ Tools are not analysis, but a means to collect and marshal data.
 - [[Regshot]]
 - [[Eric-Zimmerman-Tools]]
 - [[Sysinternals]]
-- [[Kape]]
+- [[KAPE]]
 - [FTK Imager](https://www.exterro.com/ftk-imager) 
 
 ##  System Information 
@@ -43,7 +43,7 @@ SAM hive and user information:
 
 
 For a cheatsheet and short explanations of Hives and Keys see [[Windows-Registry]]. Bear in mind in attempting to copy the registry hives from `%WINDIR%\System32\Config` you will not be able, as it is a restricted file. Use:
-- [[Kape]]
+- [[KAPE]]
 - [[Autopsy]]
 - [FTK Imager](https://www.exterro.com/ftk-imager) is similar to Autopsy
 

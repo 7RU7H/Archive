@@ -72,6 +72,13 @@ for tool in myList:
 			print(f"{i+{str({int(i)})} is f strings nesting")
 ```
 
+#### Strings
+```python
+my_string = "hellothere"
+my_str_iterator = my_string.split()
+my_rev_iterator = reversed(my_str_iterator)
+my_rev_iterator_is_now_a_string = my_rev_iterator.join()
+```
 #### Functions
 ```python 
 def commands():
@@ -560,3 +567,4 @@ https://docs.python.org/3/library/struct.html
 https://docs.pwntools.com/en/stable/
 *[you need a ruler for tab indentation](https://www.youtube.com/watch?v=YnL9vAFphmE) and [sometimes we have a competition to write the longest list comprehension...and sometimes it's in production...and sometimes we don't call it a competition but work](https://www.youtube.com/watch?v=BgxklT94W0I) which requires a [phd](https://www.youtube.com/watch?v=xyrgkui0uCA).*
 [xinyMinutes](https://learnxinyminutes.com/docs/python)
+[w3schools - Python](https://www.w3schools.com/python/)

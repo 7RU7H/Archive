@@ -1,10 +1,8 @@
-# Kape
+# KAPE
 
-Kroll Artifact Parser and Extractor (KAPE) parses and extracts Windows forensics artifacts. It is portable and can be used remotely from network locations or from USB drives.
+Kroll Artifact Parser and Extractor (KAPE) parses and extracts Windows forensics artefacts. It is portable and can be used remotely from network locations or from USB drives.
 
-
-
-1. Kape extracts from:
+1. KAPE extracts from:
 	- Live System 
 	- Mounted image 
 	- [F-response](https://www.f-response.com/) utility
@@ -13,20 +11,60 @@ Kroll Artifact Parser and Extractor (KAPE) parses and extracts Windows forensics
 4. KAPE module options
 5. Module Output run against the files at the copied location 
 
-## KAPE's Teminology
-
-- Targets - are artifacts
-	- A TKAPE file contains information about the artifact that we want to collect, such as the path, category, and file masks to collect.
+KAPE Targets
+- Targets = artefacts
+	- A TKAPE file contains information about the artefact that we want to collect, such as the path, category, and file masks to collect.
 - Compound Targets 
 	- A Target that is a composite of multiple other Targets; Commands like
 		- `BasicCollection`
 		- `!SANS_triage` 
 		- `KAPEtriage`
 - `!Disabled` - non active Targets, they are kept in the KAPE instance, but not displayed
-- `!Local` - Artifacts you do not want to sync with KAPE Github repository
+- `!Local` - Artefacts you do not want to sync with KAPE GitHub repository
 
-## CLI
+KAPE Modules
+- Module for KAPE have the `.mkape` extension found `Modules` directory
+- Includes templates and guide for custom module creation
 
+KAPE Binaries 
+- Binaries for various Forensics activities found the `bin` directory
+- [GitHub - grayfold3d/Get-KapeModuleBinaries](https://github.com/grayfold3d/Get-KapeModuleBinaries)
+- [GitHub - EricZimmerman/Get-ZimmermanTools](https://github.com/EricZimmerman/Get-ZimmermanTools)
+
+CLI and GUI:
+- `kape.exe` is CLI (run with Elevated PowerShell)
+	- KAPE has a Batch mode if a list of commands are provided in a `_kape.cli` file, stored in the same directory as the `kape.exe`(automatic checks if  `_kape.cli` file is present)
+- `gkape.exe` is the GUI variant; it will also generate a CLI `kape.exe` one liner: good for replication!
+	- `Use Target Options` checkbox contains the following options:
+		- `Target Source`
+		- `Target Destination`
+			- `Flush` checkbox will delete all the contents of the Target destination
+			- `Add %d` will append date info to the directory name where the collected data is saved
+			- `Add %m` will append machine info to the Target destination directory
+		- Process Volume Shadow Copies by enabling `Process VSCs`
+		- `Container`:
+			- `VHDX`
+			- `VHD`
+			- `Zip`
+			- `transfer` checkbox if we want to transfer the collected artifacts through an SFTP server or an S3 bucket
+	- `Use Module Options` contains the following options:
+		- `Module Source` - cannot be the same `Target Source`
+		- `Module Destination` cannot be the same `Target Destination`
+
+
+
+
+
+
+## References
+
+[THM Kape Room](https://tryhackme.com/room/kape)
+[GitHub - grayfold3d/Get-KapeModuleBinaries](https://github.com/grayfold3d/Get-KapeModuleBinaries)
+[GitHub - EricZimmerman/Get-ZimmermanTools](https://github.com/EricZimmerman/Get-ZimmermanTools)
+
+## Appendix
+
+Usage
 ```powershell
 kape.exe
 
@@ -117,8 +155,3 @@ Examples: kape.exe --tsource L: --target RegistryHives --tdest "c:\temp\Registry
 
           Full documentation: https://ericzimmerman.github.io/KapeDocs/
 ```
-
-
-## References
-
-[THM Kape Room](https://tryhackme.com/room/kape)

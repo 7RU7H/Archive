@@ -2,7 +2,7 @@
 
 
 If you want to grab a copy the registry hives from `%WINDIR%\System32\Config`, you cannot because it is a restricted file. Use:
-- [[Kape]]
+- [[KAPE]]
 - [[Autopsy]]
 - [FTK Imager](https://www.exterro.com/ftk-imager) is similar to Autopsy
 
