@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/Forensics/KAPE.md",
+                "file": "Wireless-Hacking/WIFI-Hacking.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/Forensics/KAPE.md",
+                "file": "Wireless-Hacking/WIFI-Hacking.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tools/Forensics/KAPE.md",
+                "file": "Wireless-Hacking/WIFI-Hacking.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tools/Forensics/KAPE.md"
+                "file": "Wireless-Hacking/WIFI-Hacking.md"
               }
             }
           },
@@ -160,9 +160,16 @@
   },
   "active": "8be0b3e7ac52bd02",
   "lastOpenFiles": [
+    "WPA / [[WPA2.md",
+    "Wireless-Hacking/WIFI-Hacking.md",
+    "WPA ",
+    "Development/Languages/Bash/Bash.md",
+    "Hardware/Hardware-Maintenance/USB-Maintenance.md",
+    "Development/Languages/Python/Useful-Python.md",
+    "Development/Languages/Python/Python-Tooling-Libraries.md",
+    "Tools/Forensics/KAPE.md",
     "Security-Disciplines/Digital-Forensics/Windows-Forensics/Windows-Memory-Forensics.md",
     "Networks/Network-Theory/Routing-Tables.md",
-    "Development/Languages/Python/Useful-Python.md",
     "Networks/Network-Theory/Network-Technologies.md",
     "Networks/Network-Theory/Network-Protocols/Network-Address-Translation.md",
     "Networks/Network-Theory/Network-Protocols/HTTPS.md",
@@ -181,12 +188,6 @@
     "Networks/Network-Theory/Network-Protocols/DNS/Setup-DNS.md",
     "Networks/Network-Theory/Network-Protocols/DNS",
     "Networks/Network-Theory/VLAN.md",
-    "Exploitation/Network/NBSN-SMB-Spoofing-And-Capture.md",
-    "Exploitation/Network/SSL-Stripping-Attack.md",
-    "Software/Services/Solaris.md",
-    "Networks/Network-Bridge.md",
-    "Post-Exploitation/Networking/Tunnelling.md",
-    "Networks/Network-Theory/Network-Protocols/RDP.md",
     "Tools/Architecture",
     "Tools/Documentation",
     "Tools/AI",
@@ -198,7 +199,6 @@
     "Images/linux-persistence-map.png",
     "Software/Services/Backup",
     "Software/Browsers",
-    "Security-Disciplines/Digital-Forensics/Network-Forensics",
     "Images/intelligence-cycle-SANs-MattWilliamsIsHilarious.png",
     "Images/cia-structuredanalyticstimeline.png",
     "Images/chriskubecka-openautomateddemandresponse-attachsystems.png",

@@ -1,2 +1,0 @@
-# Network Address Translation (NAT)
-

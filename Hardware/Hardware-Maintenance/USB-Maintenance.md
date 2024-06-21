@@ -1,5 +1,6 @@
 # USB Maintenance
 
+[YouTube - Funny and only slightly relevant](https://www.youtube.com/watch?v=ZY2XoQCxGxg); USB maintenance is important.
 
 Backup and compress data
 ```bash
@@ -96,3 +97,4 @@ wipefs -a /dev/sda
 [Arch Wiki](https://wiki.archlinux.org/title/USB_flash_installation_medium)
 [baeldung usb-drive-format](https://www.baeldung.com/linux/usb-drive-format)
 [serverfault](https://serverfault.com/questions/250839/deleting-all-partitions-from-the-command-line)
+[YouTube - Funny and only slightly relevant](https://www.youtube.com/watch?v=ZY2XoQCxGxg)
