@@ -12,7 +12,7 @@ SID history are not restricted to only including SIDs from other domains therefo
 - Very Stealthy - SIDs are added to the user's token, privileges would be respected even if the account is not a member of the actual group. It would look like a normal user in Domain Users group but with Enterprise Admin privileges - can alter a current normal user with these privileges for extra subterfuge.
 
 ```powershell
-Get-ADUser <your ad username> -properties sidhistory,memberof # Check history, get sid
+Get-ADUser $username -properties sidhistory,memberof # Check history, get sid
 Get-ADGroup "Domain Admins" # SID of Domain Admins Group
 
 Stop-Service -Name ntds -force 

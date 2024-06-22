@@ -18,18 +18,18 @@ Group Policy Management in AD provides a central mechanism to manage the local p
 -   Ensure Windows updates are applied promptly.
 -   Disable use of the NTLM v1 authentication protocol (which is weaker than Kerberos).
 
-Group Policy Management (GPM) define policies directly on to the AD structure. Domain-joined computers would then pull all policies from SYSVOL periodically and apply the relevant ones. By default, policies are replicated every 15 minutes through the gpupdate application. See [[AD-Group-Policy-Objects-Exploitation]]. Concerning persistence, it is a matter of configuration of GPO hooks:
+Group Policy Management (GPM) define policies directly on to the AD structure. Domain-joined computers would then pull all policies from SYSVOL periodically and apply the relevant ones. By default, policies are replicated every 15 minutes through the `gpupdate` application. See [[AD-Group-Policy-Objects-Exploitation]]. Concerning persistence, it is a matter of configuration of GPO hooks:
 
 -   Restricted Group Membership - Results in administrative access to all or some hosts within the domain
 -   Logon Script Deployment - Shell callback every time a user authenticates to a host in the domain.
 
-Requires some [[Shells]] as one is none and two is one. Powershell or Batch as Windows allows us to execution through logo GPO. Copy the scripts to the SYSVOL directory like: `C:/Windows/SYSVOL/sysvol/$domain/scripts/`
+Requires some [[Shells]] as one is none and two is one. PowerShell or Batch as Windows allows us to execution through logo GPO. Copy the scripts to the SYSVOL directory like: `C:/Windows/SYSVOL/sysvol/$domain/scripts/`
 
 Create GPO:
 1. Open MMC
 2. `File -> Add/Remove Snap-in`
 3. Select `Group Policy Management` Snap-in and click `Add` and then `Ok`
-Then write our contents to the Default Domain Policy, which should propagate to all AD objects. Conside the your context and strategy  
+Then write our contents to the Default Domain Policy, which should propagate to all AD objects. Consider the your context and strategy  
 1. Choose an OU and select `Create a GPO in this domain`
 2. Give GPO a name
 3. `Right Click -> Enforced` - ensure that your policy will apply, even if there is a conflicting policy

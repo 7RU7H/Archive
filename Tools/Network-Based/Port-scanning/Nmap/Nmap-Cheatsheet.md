@@ -223,6 +223,7 @@ Cycle through the ports to enumerate firewall blacklisting.
 Use non blocked ports
 
 ## Port forward/tunneling/mapping
+
 [[Port-Redirection-And-Tunnelling]], but with ncat
 Defined as: Fowarding packet sent to one destination port to another destination port.
 Either `-c` or `--sh-exec`
@@ -258,3 +259,38 @@ Session splicing
 -ff
 -mtu
 ```
+
+## Tricks
+#### [Using Nmap to generate lists of IP addresses](https://github.com/droberson/rtfm/blob/master/rtfm.md#using-nmap-to-generate-lists-of-ip-addresses)
+
+This is a mirror from [GitHub droberson/rtfm rtfm.md#using-nmap-to-generate-lists-of-ip-addresses](https://github.com/droberson/rtfm/blob/master/rtfm.md#using-nmap-to-generate-lists-of-ip-addresses)
+
+- Sometimes a tool will not allow you use CIDR notation to express network addresses, or will require you to provide it a list of IP addresses. `nmap` provides the `-sL` (list scan) option that can generate these lists easily, complete with host and network exclusion, ranges, and so on:
+
+```bash
+nmap -n -sL 10.10.0.0/22 10.100.0.32/27 192.168.0.2-254 \
+            --exclude 192.168.0.250,10.10.0.3.254       \
+            | grep "Nmap scan report for"               \
+            | awk {'print $5'}
+```
+
+- You can also omit the -n flag and easily resolve ranges of IP addresses. If an IP address resolves, it will display "hostname (ip address)". If it does not resolve, it will simply display the IP address:
+
+```bash
+nmap -sL 10.10.0.0/22 | awk {'print $5, $6'}
+```
+
+- Sometimes, you may need to use a different DNS server rather than whatever is in your `/etc/resolv.conf` to mass resolve a list of IPs:
+
+```bash
+nmap -n -sL 10.10.0.0/24      \
+| grep "Nmap scan report for" \
+| awk {'print $5'}            \
+| while read ip; 
+   do host $ip ALTERNATEDNSSERVERGOESHERE | grep "domain name pointer";
+done
+```
+
+## References
+
+[GitHub droberson/rtfm rtfm.md#using-nmap-to-generate-lists-of-ip-addresses](https://github.com/droberson/rtfm/blob/master/rtfm.md#using-nmap-to-generate-lists-of-ip-addresses)

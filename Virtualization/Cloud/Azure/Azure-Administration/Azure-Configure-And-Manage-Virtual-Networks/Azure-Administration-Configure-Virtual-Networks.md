@@ -102,11 +102,11 @@ View a Network Typology by Subscription, Resource Group and VNet
 #### Supported Types of IP Traffic
 
 - Standard IP-based Protocol support include:
-	- TCP
-	- UDP
-	- ICMP
+	- [[TCP]]
+	- [[UDP]]
+	- [[ICMP]]
 
-Some outside of the above may work, but Load balancers may not understnad
+Some outside of the above may work, but Load balancers may not understand
 
 - Multicast, broadcast IP-in-IP encapsulated packets and Generic Routing Encapsulation (GRE) is blocked! 
 	- This is Software defined networking, this is not Virtual LAN - no [[OSI-Model]] Layer 2

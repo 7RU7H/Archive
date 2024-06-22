@@ -46,14 +46,10 @@ CLI and GUI:
 			- `VHDX`
 			- `VHD`
 			- `Zip`
-			- `transfer` checkbox if we want to transfer the collected artifacts through an SFTP server or an S3 bucket
+			- `transfer` checkbox if we want to transfer the collected artefacts through an SFTP server or an S3 bucket
 	- `Use Module Options` contains the following options:
 		- `Module Source` - cannot be the same `Target Source`
 		- `Module Destination` cannot be the same `Target Destination`
-
-
-
-
 
 
 ## References

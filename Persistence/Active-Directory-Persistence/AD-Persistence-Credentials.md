@@ -23,7 +23,7 @@ Each domain controller runs a process called the Knowledge Consistency Checker (
 
 #### Shadow Copies
 
-Volume Shadow Service (VSS) is a Microsoft backup technology that allows creation of snapshots of files or entire volumes use it copy `ntds.dit`, `hlkm\SYSTEM`, `hlkm\SAM` and `hlkm\SECURITY`. Exfiltration([[Data-Exfiltration-Defined]]) via some method is required.
+Volume Shadow Service (VSS) is a Microsoft backup technology that allows creation of snapshots of files or entire volumes use it copy `ntds.dit`, `hlkm\SYSTEM`, `hlkm\SAM` and `hlkm\SECURITY`. Exfiltration ([[Data-Exfiltration-Defined]]) via some method is required.
 ```powershell
 # Snapshot 
 vshadow.exe -nw -p  C:

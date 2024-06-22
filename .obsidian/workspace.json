@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Social-Engineering/Negotiation.md",
+                "file": "Tools/Network-Based/Port-scanning/Nmap/Nmap-Cheatsheet.md",
                 "mode": "source",
                 "source": false
               }
@@ -56,7 +56,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Redis",
+                "query": "nmap",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +65,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Social-Engineering/Negotiation.md",
+                "file": "Tools/Network-Based/Port-scanning/Nmap/Nmap-Cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Social-Engineering/Negotiation.md",
+                "file": "Tools/Network-Based/Port-scanning/Nmap/Nmap-Cheatsheet.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Social-Engineering/Negotiation.md"
+                "file": "Tools/Network-Based/Port-scanning/Nmap/Nmap-Cheatsheet.md"
               }
             }
           },
@@ -160,33 +161,33 @@
   },
   "active": "8be0b3e7ac52bd02",
   "lastOpenFiles": [
-    "Virtualization/Cloud/Kubernetes/Kubernetes-Hacking.md",
+    "Exploitation/Shells/Reverse-Shells-Listing.md",
+    "Exploitation/Shells/Shells.md",
+    "Networks/Network-Theory/Network-Protocols/EtherNet-IP.md",
+    "Networks/Network-Theory/Network-Protocols/ICMP.md",
+    "Virtualization/Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Configure-Virtual-Networks.md",
+    "Networks/Cisco.md",
+    "Persistence/Windows-Persistence/Windows-Persistence-Stashing.md",
+    "Cryptography-And-Authentication/Default-Credentials/droberson-mirror-Default-Credentials.md",
+    "Exploitation/Windows/Active-Directory/ACL-Abuse/ACL-Abuse.md",
+    "Persistence/Active-Directory-Persistence/AD-Persistence-ACLs.md",
+    "Persistence/Active-Directory-Persistence/AD-Persistence-Credentials.md",
+    "Persistence/Active-Directory-Persistence/AD-Persistence-Certificates.md",
+    "Persistence/Active-Directory-Persistence/AD-Persistence-GPOs.md",
+    "Persistence/Active-Directory-Persistence/AD-Persistence-Group-Membership.md",
+    "Persistence/Active-Directory-Persistence/AD-Persistence-SID-History.md",
+    "Persistence/Active-Directory-Persistence/AD-Persistence-Tickets.md",
+    "Tools/Forensics/KAPE.md",
+    "Hardware/Hardware-Maintenance/USB-Maintenance.md",
     "Social-Engineering/Negotiation.md",
+    "Virtualization/Cloud/Kubernetes/Kubernetes-Hacking.md",
     "Software/Services/Oracle.md",
     "Software/Services/Databases/Redis/Redis.md",
     "Web-Application-Hacking/Web-Shells.md",
     "Security-Disciplines/Cyberwarfare/Practice/Dirty-Games/Dirty-R-vs-B-Windows.md",
     "README.md",
     "Hardware/Hardware-Hacking/Firmware/Firmware-Extraction.md",
-    "Hardware/Hardware-Maintenance/Hardware-Maintenance.md",
-    "Wireless-Hacking/WIFI-Hacking.md",
-    "WPA / [[WPA2.md",
     "WPA ",
-    "Development/Languages/Bash/Bash.md",
-    "Hardware/Hardware-Maintenance/USB-Maintenance.md",
-    "Development/Languages/Python/Useful-Python.md",
-    "Development/Languages/Python/Python-Tooling-Libraries.md",
-    "Tools/Forensics/KAPE.md",
-    "Security-Disciplines/Digital-Forensics/Windows-Forensics/Windows-Memory-Forensics.md",
-    "Networks/Network-Theory/Routing-Tables.md",
-    "Networks/Network-Theory/Network-Technologies.md",
-    "Networks/Network-Theory/Network-Protocols/Network-Address-Translation.md",
-    "Networks/Network-Theory/Network-Protocols/HTTPS.md",
-    "Ettercap or NetHunter Man In The Middle ([[MITM-Attacks.md",
-    "Networks/Network-Theory/Network-Protocols/VPN.md",
-    "Networks/Network-Security/Firewalls.md",
-    "Networks/Network-Theory/Network-Protocols/Network-Protocols.md",
-    "Networks/Network-Theory/Network-Protocols/PAT.md",
     "Networks/Network-Theory/Network-Protocols/DNS",
     "Tools/Architecture",
     "Tools/Documentation",

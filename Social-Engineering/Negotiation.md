@@ -14,7 +14,7 @@ These are Principles not rules, modified here as a `key:value` pair; `principle:
 
 #### Eclectic Insights
 
-Important Ferengi Rules of Acquisition for negociation - [memory-alpha.fandom.com/wiki/Rules_of_Acquisition](https://memory-alpha.fandom.com/wiki/Rules_of_Acquisition)  modified here as a `key:value` pair; `principle:foridiotslikeme`::
+Important Ferengi Rules of Acquisition for negotiation - [memory-alpha.fandom.com/wiki/Rules_of_Acquisition](https://memory-alpha.fandom.com/wiki/Rules_of_Acquisition)  modified here as a `key:value` pair; `principle:foridiotslikeme`::
 3. Never spend more for an acquisition than you have to ` : always accounting for all activities`
 7. Keep your ears open `: learn and keep learning listen you idiot; the quieter you are the more you hear`
 8. Small print leads to large risk ` : details matter, step back an understand the timeline/narrative if Rule 7. is not followed you will miss the detail`

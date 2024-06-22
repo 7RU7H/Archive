@@ -15,7 +15,7 @@ lsblk
 # Reformat if requried
 sudo mkfs.vfat /dev/$SDA123
 sudo fsck -v -a /dev/disk/by-id/$DISK_ID
-sudo cat Downloads/your.iso > /disk/by-id/$DISK_ID
+sudo cat Downloads/your.iso > /dev/disk/by-id/$DISK_ID
 sudo sync # will take some time
 ```
 
