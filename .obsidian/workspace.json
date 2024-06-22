@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Wireless-Hacking/WIFI-Hacking.md",
+                "file": "Virtualization/Cloud/Kubernetes/Kubernetes-Hacking.md",
                 "mode": "source",
                 "source": false
               }
@@ -56,7 +56,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "KAPE",
+                "query": "Redis",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Wireless-Hacking/WIFI-Hacking.md",
+                "file": "Virtualization/Cloud/Kubernetes/Kubernetes-Hacking.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Wireless-Hacking/WIFI-Hacking.md",
+                "file": "Virtualization/Cloud/Kubernetes/Kubernetes-Hacking.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Wireless-Hacking/WIFI-Hacking.md"
+                "file": "Virtualization/Cloud/Kubernetes/Kubernetes-Hacking.md"
               }
             }
           },
@@ -160,8 +160,15 @@
   },
   "active": "8be0b3e7ac52bd02",
   "lastOpenFiles": [
-    "WPA / [[WPA2.md",
+    "Software/Services/Oracle.md",
+    "Software/Services/Databases/Redis/Redis.md",
+    "Web-Application-Hacking/Web-Shells.md",
+    "Security-Disciplines/Cyberwarfare/Practice/Dirty-Games/Dirty-R-vs-B-Windows.md",
+    "README.md",
+    "Hardware/Hardware-Hacking/Firmware/Firmware-Extraction.md",
+    "Hardware/Hardware-Maintenance/Hardware-Maintenance.md",
     "Wireless-Hacking/WIFI-Hacking.md",
+    "WPA / [[WPA2.md",
     "WPA ",
     "Development/Languages/Bash/Bash.md",
     "Hardware/Hardware-Maintenance/USB-Maintenance.md",
@@ -180,14 +187,7 @@
     "Networks/Network-Theory/Network-Protocols/PAT.md",
     "Networks/Network-Theory/Network-Protocols/NAT.md",
     "Networks/Network-Theory/Network-Protocols/DNS/DNS.md",
-    "Networks/Network-Security/Cloudflare.md",
-    "Networks/Network-Theory/OSI-Model.md",
-    "Networks/Network-Theory/Network-Protocols/DHCP.md",
-    "Networks/Network-Theory/Network-Protocols/ICMP.md",
-    "Networks/Network-Theory/Network-Protocols/ARP-Protocol.md",
-    "Networks/Network-Theory/Network-Protocols/DNS/Setup-DNS.md",
     "Networks/Network-Theory/Network-Protocols/DNS",
-    "Networks/Network-Theory/VLAN.md",
     "Tools/Architecture",
     "Tools/Documentation",
     "Tools/AI",

