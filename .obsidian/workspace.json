@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Virtualization/Cloud/Kubernetes/Kubernetes-Hacking.md",
+                "file": "Social-Engineering/Negotiation.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Virtualization/Cloud/Kubernetes/Kubernetes-Hacking.md",
+                "file": "Social-Engineering/Negotiation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Virtualization/Cloud/Kubernetes/Kubernetes-Hacking.md",
+                "file": "Social-Engineering/Negotiation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Virtualization/Cloud/Kubernetes/Kubernetes-Hacking.md"
+                "file": "Social-Engineering/Negotiation.md"
               }
             }
           },
@@ -160,6 +160,8 @@
   },
   "active": "8be0b3e7ac52bd02",
   "lastOpenFiles": [
+    "Virtualization/Cloud/Kubernetes/Kubernetes-Hacking.md",
+    "Social-Engineering/Negotiation.md",
     "Software/Services/Oracle.md",
     "Software/Services/Databases/Redis/Redis.md",
     "Web-Application-Hacking/Web-Shells.md",
@@ -185,8 +187,6 @@
     "Networks/Network-Security/Firewalls.md",
     "Networks/Network-Theory/Network-Protocols/Network-Protocols.md",
     "Networks/Network-Theory/Network-Protocols/PAT.md",
-    "Networks/Network-Theory/Network-Protocols/NAT.md",
-    "Networks/Network-Theory/Network-Protocols/DNS/DNS.md",
     "Networks/Network-Theory/Network-Protocols/DNS",
     "Tools/Architecture",
     "Tools/Documentation",
