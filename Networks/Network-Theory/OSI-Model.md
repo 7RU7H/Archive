@@ -52,9 +52,11 @@ Function		Transfers raw data between physical machine and physical medium
 
 ```
 
+
+
 Layer 2 
 ```goat
-MAC addresses - burn in hardware identifiers 
+MAC Media Access Control, physical addresses - burnt in hardware identifiers 
 
 Broadcast 
 Broadcast address ff:ff:ff:ff:ff:ff - can send information to every host in a network segment 
