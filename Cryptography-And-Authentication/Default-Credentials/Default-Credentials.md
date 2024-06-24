@@ -1,4 +1,13 @@
-# Default credentials for various devices and software
+# Default credentials
+
+
+[https://default-password.info/](https://default-password.info/) is mouse heavy, but extensive list more default credentials
+[https://cirt.net/passwords](https://cirt.net/passwords) is a table of 2Wire and 360 Systems default passwords
+
+For the DataRecovery table mirror see: [[Default-Passwords-Data-Recovery-Table]]
+#### [droberson/rtfm defaults.md](https://github.com/droberson/rtfm/blob/master/defaults.md)
+
+A mirror of [droberson/rtfm defaults.md](https://github.com/droberson/rtfm/blob/master/defaults.md), because the pain of missing default passwords on CTFs scarred my brain and droberson's addition worth sharing over the book RTFM
 
 Product/Software | Service | Username | Password | Remarks
 ---------------- | ------- | -------- | -------- | -------
@@ -81,3 +90,10 @@ zmodo Cameras/DVRs (multiple) | ??? | admin | 888888 |
 ZyXEL PK5001Z | telnet | admin | CenturyL1nk | CVE-2016-10401
 ZyXEL PK5001Z | telnet | admin | QwestM0dem |
 ZyXEL PK5001Z | user account | root | zyad5001 | CVE-2016-10401
+
+
+## References
+
+[droberson/rtfm defaults.md](https://github.com/droberson/rtfm/blob/master/defaults.md)
+[https://default-password.info/](https://default-password.info/) 
+[https://cirt.net/passwords](https://cirt.net/passwords)

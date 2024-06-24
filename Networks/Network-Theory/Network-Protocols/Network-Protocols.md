@@ -295,6 +295,10 @@ SNMP Notification over SSH Transport Model
 [[PostgreSQL]]
 
 
+## TCP/UDP - 5060-1 - SIP
+
+[[SIP]] TCP or UDP for unencrypted signalling or 5061 for TLS
+
 ## TCP - 5601 - Kibana
 
 Kibana provides search and data visualization capabilities for data indexed in Elasticsearch. The service runs per default on port 5601
