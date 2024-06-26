@@ -1,63 +1,34 @@
 # Cryptography 
 
-- Note Split out
+# Under restructuring
+
+
+For terminology: [[Cryptography-Glossary]]
+
 
 For a list of commands related to cryptography try here: [[De-Or-En-Cryption]]
 
-## Glossary
 
-AES: 128-bit symmetric-key block cipher with three fixed key size variants.
+## Tooling 
 
-Asymmetric encryption: Model of encryption that uses the recipient's public key to encrypt a message, and the recipient's private key to decrypt a message.
 
-Bit: The smallest unit of binary data. Must be either 0 or 1.
+- Mathematics:
+	- [yafu](https://sourceforge.net/projects/yafu/) - Helps factor large numbers
+	- [Factordb](http://factordb.com) - Database of large factored numbers
+- Rainbow tables
+	- [Rapid Tables](https://www.rapidtables.com)
+- Cryptanalysis:
+	- [featherduster](https://github.com/nccgroup/featherduster) - An automated, modular cryptanalysis tool; i.e., a Weapon of Math Destruction
+- Bitwise 
+	- [1xor](https://github.com/droberson/1xor) - Helps solve 1 byte XOR puzzles
+- Conversion
+	- Large hex/decimal conversion @ [ss64.com](http://ss64.com/convert.html)
+- Probably Everything
+	- [dcode.fr](https://www.dcode.fr/tools-list) - [[Puzzle-Solution-Tools]]
 
-Block Cipher: An encryption algorithm that operates on a group of bit at once rather than only one bit at a time. Contrast with Stream Cipher.
-
-Blowfish: 64-bit symmetric-key block cipher with variable key size.
-
-Byte: Eight bits of binary data. There are 256 (2^8) potential values.
-
-Cipher text: Text that has been transformed into an unreadable message via some encryption algorithm.
-
-Clear text: Human-legible text. Can be transformed into cipher text via an encryption algorithm. Synonym of "plain text".
-
-Cryptographic key: A string of bits used by a cryptographic algorithm to transform plain text into cipher text or vice versa.
-
-Decoding: The opposite of encoding.
-
-Decryption: The opposite of encryption.
-
-Digest: The output of a hashing algorithm. Synonym for "hash".
-
-Encoding: A means of transforming data from one format to another.
-
-Encryption: The process of scrambling data or messages, making it unreadable and secret.
-
-Entropy: The amount of unpredictability in a given cipher text. Entropy colloquially refers to how close the cipher text is to ideal randomly generated text.
-
-Fundamental Theorem of Arithmetic: The mathematical statement that every natural number greater than 1 must be either prime or a product of unique prime factors. Forms the basis of many asymmetric cryptography implementations.
-
-Hash: The output of a hashing algorithm. Synonym for "digest".
-
-Hashing algorithm: A one-way function that takes arbitrary input and produces fixed-length output, such that every unique input produces unique output with very high probability.
-
-MD5:1 Widely used hashing function that produces a 128-bit digest. Although MD5 was initially designed to be used as a cryptographic hash function, it has been found to suffer from extensive vulnerabilities. It can still be used as a checksum to verify data integrity.
-
-Nibble: Four bits of binary data. There are 16 (2^4) potential values.
-
-Plain text: Human-legible text. Can be transformed into cipher text via an encryption algorithm.
-
-Salt: A string appended to a password to create a unique digest when run through a hashing algorithm.
-
-Stream Cipher: An encryption algorithm that operates on one bit of plaintext at a time. Contrast with Block Cipher.
-
-Substitution Cipher: An encryption algorithm that operates by replace each character of a plain text set of characters with another, the key would be the rotation or identifier for character sets that replace the plain text.
-
-Symmetric-key encryption: Model of encryption that uses the same shared key for both encryption and decryption.
-
-Transposition cipher: Rearranges the order of the characters of a plain text by key the ordering of encrypted output.
-
+- [HashID](https://github.com/psypanda/hashID) - Identify hash types
+- [John the Ripper](https://github.com/magnumripper/JohnTheRipper) - JtR w/ Jumbo patches -  [[John-The-Ripper-Cheatsheet]]
+- [Hashcat ](https://hashcat.net/hashcat/) - [[Hashcat-Cheatsheet]]
 
 ## Encoding
 
@@ -94,21 +65,17 @@ Encoding
 # beware of characters like newlines no the cmdline 
 # -w0 wrap amount
 base64 (-d for decode) | base64 -d -w0 
+```
+
+## Checksums
+
+Linux Checksum commands
+```
 md5sum
 shasum
-sha256
+sha256sum
 sha512sum
 ```
-
-Important password file paths:
-```
-/etc/passwrd
-/etc/shadow
-/etc/pam.d/commonc-pasword
-
-C:\Windows\System32\config\*SAM
-```
-
 
 ## Cryptographic Hashing
 
@@ -123,7 +90,7 @@ john --list=foramt | grep
 
 #### Salt
 
-A salt is an preferably random, nuique generated string, it mixed with cleartext input, then the hash is calculated for the mixed string. It is useful as the same password will produce the same hash, so to store user passwords with the potential for same password use can be avoid with salting.Salting protects against rainbow table attacks.o
+A salt is an preferably random, uique generated string, it mixed with cleartext input, then the hash is calculated for the mixed string. It is useful as the same password will produce the same hash, so to store user passwords with the potential for same password use can be avoid with salting.Salting protects against rainbow table attacks.o
 
 Hashing passwords:
 ```
@@ -131,7 +98,7 @@ import hashlib
 string = "saltedpassword"
 hashlib.sha256(string.encode()).hexdigest()
 ```
-Unix has different variations of mkpasswd
+Unix has different variations of `mkpasswd`
 ```
 mkpasswd -m SHA-512 foobar salt
 ```
@@ -215,95 +182,7 @@ openssl aes-256-cbc -pbkdf2 -iter 10000 -e -in message.txt -out encrypted_messag
 openssl aes-256-cbc -pbkdf2 -iter 10000 -d -in encrypted_message -out original_message.txt
 ```
 
-## Asymmetric Encryption
 
-Asymmetric encryption can solve integrity, authenticity and nonrepudiation
-
-Theory
-- Public key to distribute 
-- Private key is kept confidential
-- `$A` (Holds prviate to decrypt, and public key to distribute) ` -> exchange  ->` `$B` (Holds public key to encrypt) 
-```bash
-gpg --gen-key
-gpg --output example-pub.asc --armor --export Offsec # armor flag for output being in ASCII
-
-echo "Asymmetric encryption example" > asymmetry.txt
-gpg --recipient Offsec --encrypt asymmetry.txt
-# transfer file
-gpg --decrypt asymmetry.txt.gpg # requires passphrase
-```
-It can sometimes be tricky to recall who has to use which keys to encrypt and decrypt messages with asymmetric encryption. We can use the following mnemonics to help us remember: 
-SUPER 
-1. S = Sender 
-1. U = Uses 
-1. P = Public
-1. E = Encryption-key of 
-1. R = Receiver.
-
-```goat
-Alice -> Bob
-1. Alice encrypts with Bob's public key
-2. Bob decrypts with Bob's private key
-Bob  -> Alice
-1. Bob encrypts with Alice's public key
-2. Alice decrypts with Alice's private key
-```
-
-Asymmetric key-pairs can also be used to sign and verify messages.
-A will sign the message with private key and B verifies it with the public key - Signing != sending the private key!!
-
-#### Asymmetric Encryption Mathematics
-
-RSA got its name from its inventors, Rivest, Shamir, and Adleman
-
-Prime Factorisation:
-
-```bash
-x * y = z # z being the unqiue product of two prime numbers, so for:
-primes={p,q}
-product=n
-
-# Using n as base:
-# Perform additional maths to output two special numbers e and d 
-# !! such that their properties are relative to n
-# Public key as a:
-tuple(n,e)
-# Private key as a: 
-tuple(n,d)
-
-# THM - to see real values for p and q:
-# Generate a RSA
-openssl genrsa -out private-key.pem 2048
-# Using RSA make public key from private key
-openssl rsa -in private-key.pem -pubout -out public-key.pem
-# For the values of:
-# p, q, n, e, d := prime1, prime2, modulus, publicExponent, publicExponent
-# in the following command
-openssl rsa -in private-key.pem -text -noout
-```
-
-#### Asymmetric Encrypted Bind Shells
-
-Encrypted communication rely on the Secure Sockets Layer (SSL)
-```bash
-openssl req -newkey rsa:2048 -nodes -keyout bind_shell.key -x509 -days 30 -out bind_shell.crt
-
-# req = create a new certificate
-# -newkey generate a new private key
-# rsa:2048 defines the encryption algorithm we want to use. This is similar to the --cipher-algo flag used by gpg. In this case, we're using the RSA algorithm with a 2048-bit key length.
-# -nodes create the private key without a passphrase
-# -key save the generated private key to an output file in Base64 format.
-# -x509 ensures that our certificate is self-signed; an  alternative is to use an existing certificate authority
-# -days certificate is valid for
-# -out saves the certificate to file, also in Base64 format
-# This creates a bind_shell.crt(certificate) and bind_shell.key(private key)
-
-socat OPENSSL-LISTEN:443,cert=bind_shell.pem,verify=0,fork EXEC:/bin//bash
-
-# Host certificate with socat 
-
-socat - OPENSSL:$IP:$PORT,verify=0 <cmd>
-```
 
 #### PKI SSL/TLS
 
@@ -333,32 +212,6 @@ openssl req -x509 -newkey -nodes rsa:4096 -keyout key.pem -out cert.pem -sha256 
 openssl x509 -in cert.pem -text
 ```
 
-#### Diffie-Hellman Key Exchange
-
-Diffie-Hellman is an asymmetric encryption algorithm. The key exchange is prone to a [[MITM-Attacks]].
-
-Use openssl to generate and view keys
-```bash
-# Generate a diffie-helman key
-openssl dhparam -out dhparams.pem $size
-# View the prime number `P` and generator `G`
-openssl dhparam -in dhparams.pem -text -noout
-```
-
-[The mathematics below is noted from the youtube video Diffie Hellman -the Mathematics bit- Computerphile](https://www.youtube.com/watch?v=Yjrfm_oRO0w&t=1s):
-
-Alice | Public  |Bob
---- | --- |---
-`a`| `g`, `n`, | `b`
-- `g` - small prime number
-- `n` - a very large 2000-4000 bits long number
-- `a` - private number of Alice between 1 and `n`
-- `b` - private number of Bob between 1 and `n`
-1. Alice calculates `g^a mod n = A`  - [Discrete log problem](https://en.wikipedia.org/wiki/Discrete_logarithm)
-1. Bob calculates `g^b mod n = B`  
-1. Then each shares `A and B`
-2. Alice `(g^B)^a mod n` - each has (due to power of exponentiation is just) `g^ab mod n`
-3. Bob `(g^A)^b mod n`  - each has (due to power of exponentiation is just) `g^ab mod n`
 
 ## Ciphers
 
@@ -411,8 +264,6 @@ gpg --decrypt blowfish.plain.gpg
 [Public Key Cryptography - Computerphile](https://www.youtube.com/watch?v=GSIDS_lvRv4)
 [AES Explained (Advanced Encryption Standard) - Computerphile](https://www.youtube.com/watch?v=O4xNJsjtN6E)
 [Encryption & Entropy - Computerphile](https://www.youtube.com/watch?v=8VSuwDG4bhw)
-[Secret Key Exchange (Diffie-Hellman) - Computerphile](https://www.youtube.com/watch?v=NmM9HA2MQGI)
 [Wikipedia - AES](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard)
 [Wikipedia Discrete log problem](https://en.wikipedia.org/wiki/Discrete_logarithm)
-[Youtube - Diffie Hellman - the Mathematics bit- Computerphile](https://www.youtube.com/watch?v=Yjrfm_oRO0w&t=1s):
 [RFC2104](https://www.rfc-editor.org/rfc/rfc2104) 

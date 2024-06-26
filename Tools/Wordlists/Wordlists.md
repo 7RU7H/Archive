@@ -14,6 +14,7 @@ Although default list are sometime enough they can often provide a base dictiona
 
 [Assetnote.Wordlists](https://github.com/assetnote/wordlists)
 [Assetnote.io](https://wordlists.assetnote.io/)
+[wiki.skullsecurity.org/index.php/Passwords](https://wiki.skullsecurity.org/index.php/Passwords)
 
 ## Collection and Curation Tooling
 
@@ -29,4 +30,4 @@ Yassine Aboukir recommends [ripgen](https://github.com/resyncgg/ripgen), a Rust-
 
 [Assetnote.Wordlists](https://github.com/assetnote/wordlists)
 [Assetnote.io](https://wordlists.assetnote.io/)
-
+[wiki.skullsecurity.org/index.php/Passwords](https://wiki.skullsecurity.org/index.php/Passwords)

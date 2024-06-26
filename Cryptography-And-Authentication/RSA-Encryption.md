@@ -2,6 +2,7 @@
 
 This article makes extensive use of the [RSA Wikipedia article](https://en.wikipedia.org/wiki/RSA_(cryptosystem)#Operation)
 
+If stuck read [How RSA works](https://simple.wikipedia.org/wiki/RSA_algorithm) - cited by [GitHub - droberson/rtfm ctf.md](https://github.com/droberson/rtfm/blob/master/ctf.md)
 ## Key Generation 
 
 1. Choose two distinct prime numbers `p` and `q
@@ -40,9 +41,9 @@ Alice can recover m from c by using her private key exponent d by computing
 Given m, she can recover the original message M by reversing the padding scheme.
 
 
-
-
-
 ## References
+
+[THM Room Introduction to Cryptography](https://tryhackme.com/room/cryptographyintr)
 [Primality test Wikipedia article](https://en.wikipedia.org/wiki/Primality_test)
 [RSA Wikipedia article](https://en.wikipedia.org/wiki/RSA_(cryptosystem)#Operation)
+[How RSA works](https://simple.wikipedia.org/wiki/RSA_algorithm) - cited by [GitHub - droberson/rtfm ctf.md](https://github.com/droberson/rtfm/blob/master/ctf.md)

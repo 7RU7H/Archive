@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "c5b7aef1a4129902",
+        "id": "fcf91bc0bbce67bb",
         "type": "tabs",
         "children": [
           {
-            "id": "49e9d69daa8e8658",
+            "id": "ec73e2251a3f031b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Development/Languages/Go/Golang.md",
+                "file": "Reverse-Engineering/Reverse-Engineering-Tools.md",
                 "mode": "source",
                 "source": false
               }
@@ -56,7 +56,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Whonix",
+                "query": "Reverse Image ",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Development/Languages/Go/Golang.md",
+                "file": "Reverse-Engineering/Reverse-Engineering-Tools.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Development/Languages/Go/Golang.md",
+                "file": "Reverse-Engineering/Reverse-Engineering-Tools.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Development/Languages/Go/Golang.md"
+                "file": "Reverse-Engineering/Reverse-Engineering-Tools.md"
               }
             }
           },
@@ -158,8 +158,19 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "49e9d69daa8e8658",
+  "active": "ec73e2251a3f031b",
   "lastOpenFiles": [
+    "Reconnaissance/Passive-Information-Gathering/IMINT-GEOINT/IMINT-GEOINT.md",
+    "Tools/Wordlists/Wordlists.md",
+    "Tools/Authentication-Attacking/Bruteforce-Login-Tools/Brutespray-Cheatsheet.md",
+    "Cryptography-And-Authentication/Cryptography.md",
+    "Cryptography-And-Authentication/RSA-Encryption.md",
+    "Hardware/Hardware-Maintenance/USB-Maintenance.md",
+    "Cryptography-And-Authentication/Password-Attacks/Passwords.md",
+    "Cryptography-And-Authentication/Cryptography-Glossary.md",
+    "Cryptography-And-Authentication/Password-Attacks/Password-Files.md",
+    "Cryptography-And-Authentication/Asymmetric-Encryption.md",
+    "Cryptography-And-Authentication/Diffie-Hellman.md",
     "Networks/Network-Theory/Network-Protocols/Network-Protocols.md",
     "Networks/Network-Theory/Network-Protocols/SIP.md",
     "Networks/Network-Technologies/VOIP.md",
@@ -177,16 +188,6 @@
     "Networks/Network-Theory/Network-Protocols/EtherNet-IP.md",
     "Networks/Network-Theory/Network-Protocols/ICMP.md",
     "Virtualization/Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Configure-Virtual-Networks.md",
-    "Networks/Cisco.md",
-    "Persistence/Windows-Persistence/Windows-Persistence-Stashing.md",
-    "Exploitation/Windows/Active-Directory/ACL-Abuse/ACL-Abuse.md",
-    "Persistence/Active-Directory-Persistence/AD-Persistence-ACLs.md",
-    "Persistence/Active-Directory-Persistence/AD-Persistence-Credentials.md",
-    "Persistence/Active-Directory-Persistence/AD-Persistence-Certificates.md",
-    "Persistence/Active-Directory-Persistence/AD-Persistence-GPOs.md",
-    "Persistence/Active-Directory-Persistence/AD-Persistence-Group-Membership.md",
-    "Persistence/Active-Directory-Persistence/AD-Persistence-SID-History.md",
-    "Persistence/Active-Directory-Persistence/AD-Persistence-Tickets.md",
     "WPA ",
     "Networks/Network-Theory/Network-Protocols/DNS",
     "Tools/Architecture",

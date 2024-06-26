@@ -119,7 +119,9 @@ db main # set breakpint on main
 dc # continue execution
 ```
 
+## uncompyle6
 
+[python-uncompyle6](https://github.com/rocky/python-uncompyle6) is a *"A cross-version Python bytecode decompiler... A native Python cross-version decompiler and fragment decompiler. The successor to decompyle, uncompyle, and uncompyle2."*
 
 ## References
 
@@ -131,3 +133,4 @@ dc # continue execution
 [Python library documentation](http://docs.pwntools.com/en/stable)
 [GDB plugin documentation](https://browserpwndbg.readthedocs.io/en/docs/)
 [GEF Documentation](https://gef.readthedocs.io/en/master/)
+[python-uncompyle6](https://github.com/rocky/python-uncompyle6) 
