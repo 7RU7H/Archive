@@ -22,7 +22,7 @@ This is probably the best explanation I have found other than having to figure o
 - Offensive Security may harden services against exploits, so...
 	- If it does not work, check, because it is still valid for report - examiner want you to prove you are doing a job
 	- Be tacticool with your resets
-- Preparing for the practical part of the exam is understanding what is not possible for them to test and why, the grey area.accronyms
+- Preparing for the practical part of the exam is understanding what is not possible for them to test and why, the grey area.
 	- No NTLMRelaying, because tooling
 	- No Automated Users
 	- No exploits that *require* some Auto-Exploit tool to brute force till 

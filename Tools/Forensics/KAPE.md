@@ -1,6 +1,6 @@
 # KAPE
 
-Kroll Artifact Parser and Extractor (KAPE) parses and extracts Windows forensics artefacts. It is portable and can be used remotely from network locations or from USB drives.
+Kroll Artifact Parser and Extractor (KAPE) parses and extracts Windows forensics artefacts. It is portable and can be used remotely from network locations or from USB drives. Visit [GitHub -  Awesome-KAPE](tps://github.com/AndrewRathbun/Awesome-KAPE/blob/main/README.md) for a curated list of KAPE-related resources, this page is more summarise usage.
 
 1. KAPE extracts from:
 	- Live System 
@@ -32,7 +32,7 @@ KAPE Binaries
 - [GitHub - EricZimmerman/Get-ZimmermanTools](https://github.com/EricZimmerman/Get-ZimmermanTools)
 
 CLI and GUI:
-- `kape.exe` is CLI (run with Elevated PowerShell)
+- `kape.exe` is CLI (run with Elevated [[PowerShell]])
 	- KAPE has a Batch mode if a list of commands are provided in a `_kape.cli` file, stored in the same directory as the `kape.exe`(automatic checks if  `_kape.cli` file is present)
 - `gkape.exe` is the GUI variant; it will also generate a CLI `kape.exe` one liner: good for replication!
 	- `Use Target Options` checkbox contains the following options:
@@ -51,13 +51,17 @@ CLI and GUI:
 		- `Module Source` - cannot be the same `Target Source`
 		- `Module Destination` cannot be the same `Target Destination`
 
+`_kape.cli` files [ericzimmerman.github.io/KapeDocs - Batch Mode](https://ericzimmerman.github.io/KapeDocs/#!Pages%5C3.1-Batch-mode.md):
+
 
 ## References
 
 [THM Kape Room](https://tryhackme.com/room/kape)
 [GitHub - grayfold3d/Get-KapeModuleBinaries](https://github.com/grayfold3d/Get-KapeModuleBinaries)
 [GitHub - EricZimmerman/Get-ZimmermanTools](https://github.com/EricZimmerman/Get-ZimmermanTools)
-
+[ericzimmerman.github.io/KapeDocs - Using-KAPE.md](https://ericzimmerman.github.io/KapeDocs/#!Pages%5C3.-Using-KAPE.md)
+[ericzimmerman.github.io/KapeDocs - Batch Mode](https://ericzimmerman.github.io/KapeDocs/#!Pages%5C3.1-Batch-mode.md)
+[GitHub -  Awesome-KAPE](tps://github.com/AndrewRathbun/Awesome-KAPE/blob/main/README.md)
 ## Appendix
 
 Usage

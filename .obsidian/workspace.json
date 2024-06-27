@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Reverse-Engineering/Reverse-Engineering-Tools.md",
+                "file": "Tools/Forensics/KAPE.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Reverse-Engineering/Reverse-Engineering-Tools.md",
+                "file": "Tools/Forensics/KAPE.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Reverse-Engineering/Reverse-Engineering-Tools.md",
+                "file": "Tools/Forensics/KAPE.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Reverse-Engineering/Reverse-Engineering-Tools.md"
+                "file": "Tools/Forensics/KAPE.md"
               }
             }
           },
@@ -160,6 +160,12 @@
   },
   "active": "ec73e2251a3f031b",
   "lastOpenFiles": [
+    "Brain-Hacking/Problem-Solving/Rabbitholes.md",
+    "Security-Disciplines/Surveillance/Counter-Surveillance.md",
+    "Security-Disciplines/Surveillance/Surveillance.md",
+    "Social-Engineering/Negotiation.md",
+    "Hardware/Hardware-Maintenance/Data-Destruction.md",
+    "Reverse-Engineering/Reverse-Engineering-Tools.md",
     "Reconnaissance/Passive-Information-Gathering/IMINT-GEOINT/IMINT-GEOINT.md",
     "Tools/Wordlists/Wordlists.md",
     "Tools/Authentication-Attacking/Bruteforce-Login-Tools/Brutespray-Cheatsheet.md",
@@ -182,12 +188,6 @@
     "Exploitation/CVEs/Legacy-Windows-Vulnerabilities.md",
     "Software/Operating-Systems/Hacker-OSes/Whonix/Whonix.md",
     "Cryptography-And-Authentication/De-Or-En-Cryption.md",
-    "Tools/Network-Based/Port-scanning/Nmap/Nmap-Cheatsheet.md",
-    "Exploitation/Shells/Reverse-Shells-Listing.md",
-    "Exploitation/Shells/Shells.md",
-    "Networks/Network-Theory/Network-Protocols/EtherNet-IP.md",
-    "Networks/Network-Theory/Network-Protocols/ICMP.md",
-    "Virtualization/Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Configure-Virtual-Networks.md",
     "WPA ",
     "Networks/Network-Theory/Network-Protocols/DNS",
     "Tools/Architecture",

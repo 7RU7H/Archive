@@ -1,6 +1,32 @@
 # Negotiation
 
 
+#### Black Swan Method
+
+ [YouTube - Top 10 MOST Powerful Negotiation Tips | Black Swan Method | Chris Voss](https://www.youtube.com/watch?v=V-IVYaRJ9Ow)
+
+Principles discussed in tangent to the list:
+- Everyone suffers from Decisions Fatigue 
+- Taking away autonomy, the participate will disagree even when it is not in their interest
+- Use techniques on a regular basis, build it in
+
+
+1. Is now a bad time to talk?
+2. Is it a ridiculous idea ...?
+3. Are you against ...?
+4. Have you given up on ...? - If they have ghosted you; you have probably been explaining or educating 
+	1. Get a That's Right - talk in terms of their priorities and perspective; and go silent till a That's Right or..
+	2. say: "It's sounds like I have left something out."
+5. Letting out "No" a little at a time.
+	- How am I supposed to do that? - Forces empathy
+	- If countered, you have more clarity
+6. Your offer is very generous, but I'm afraid it just doesn't work for me - Removes external criteria
+7. Sounds like you have place you like to start (Alternative: Sounds like you got a something you'd like to discuss) - as a response to how are you? (Authorial note: this is a very negotiation setting specific Tip beware this wont work in the  regular day to day)
+8. What makes you ask? - Question behind the question
+9. Seems like you have a good reason for asking? - Control time, control silence
+10. It seems like you have a reason for not doing... - re-engagement while they feel safe and respected 
+
+
 #### Harvard 4 Elements of Principled Negotiation
 
 From [harvard.edu/ - principled-negotiation-focus-interests-create-value/](https://www.pon.harvard.edu/daily/negotiation-skills-daily/principled-negotiation-focus-interests-create-value/)
@@ -60,5 +86,6 @@ Unofficial rules
 - Time, like latinum, is a highly limited commodity. ` : sometimes deals are time sensitive`
 ## References
 
+[YouTube - Top 10 MOST Powerful Negotiation Tips | Black Swan Method | Chris Voss](https://www.youtube.com/watch?v=V-IVYaRJ9Ow)
 [harvard.edu/ - principled-negotiation-focus-interests-create-value/](https://www.pon.harvard.edu/daily/negotiation-skills-daily/principled-negotiation-focus-interests-create-value/)
 [memory-alpha.fandom.com/wiki/Rules_of_Acquisition](https://memory-alpha.fandom.com/wiki/Rules_of_Acquisition)
