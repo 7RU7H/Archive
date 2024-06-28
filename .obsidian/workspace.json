@@ -4,16 +4,40 @@
     "type": "split",
     "children": [
       {
-        "id": "fcf91bc0bbce67bb",
+        "id": "82113cd61f1f377a",
         "type": "tabs",
         "children": [
           {
-            "id": "ec73e2251a3f031b",
+            "id": "f6f7ee8e6fdc0a62",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Windows/Bypassing-UAC/Bypassing-Windows-User-Account-Control.md",
+                "file": "Exploitation/TALK-Discovering-and-Exploiting-N-Days.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "921bff6edc1b9d5a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/Web-Applications-Attacking/Nuclei.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "5fe1787f1fdc07ef",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Reconnaissance/Passive-Information-Gathering/Shodan/Shodan.md",
                 "mode": "source",
                 "source": false
               }
@@ -56,7 +80,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Reverse Image ",
+                "query": "Shodan",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Windows/Bypassing-UAC/Bypassing-Windows-User-Account-Control.md",
+                "file": "Exploitation/TALK-Discovering-and-Exploiting-N-Days.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Windows/Bypassing-UAC/Bypassing-Windows-User-Account-Control.md",
+                "file": "Exploitation/TALK-Discovering-and-Exploiting-N-Days.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Windows/Bypassing-UAC/Bypassing-Windows-User-Account-Control.md"
+                "file": "Exploitation/TALK-Discovering-and-Exploiting-N-Days.md"
               }
             }
           },
@@ -158,8 +182,18 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "ec73e2251a3f031b",
+  "active": "f6f7ee8e6fdc0a62",
   "lastOpenFiles": [
+    "Tools/Web-Applications-Attacking/Nuclei.md",
+    "Exploitation/TALK-Discovering-and-Exploiting-N-Days.md",
+    "Reconnaissance/Passive-Information-Gathering/Shodan/Shodan.md",
+    "httpx.md",
+    "Post-Exploitation/Evasion/TALK-Bypassing-Antivirus-With-Understanding-Comes-Ease.md",
+    "Securing-Networks-And-Systems/TALK-Systems-Alchemy-The-Transmutation-Of-Hacking.md",
+    "Post-Exploitation/Post-Exploitation-Enumeration/TALK-Post-Exploitation-Striking Gold-with-Covert-Recon.md",
+    "Security-Disciplines/Cyber-Threat-Intelligence/TALK-Threat-Hunting.md",
+    "Security-Disciplines/Blue-Team/TALK-The-New-OSINT-Cheat-Code-LLM.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Bypassing-UAC/Bypassing-Windows-User-Account-Control.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Bypassing-UAC/UAC-AutoElevate-List.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Bypassing-UAC/UACME-Keys.md",
     "Brain-Hacking/Problem-Solving/Rabbitholes.md",
@@ -176,18 +210,8 @@
     "Cryptography-And-Authentication/RSA-Encryption.md",
     "Hardware/Hardware-Maintenance/USB-Maintenance.md",
     "Cryptography-And-Authentication/Password-Attacks/Passwords.md",
-    "Cryptography-And-Authentication/Cryptography-Glossary.md",
-    "Cryptography-And-Authentication/Password-Attacks/Password-Files.md",
-    "Cryptography-And-Authentication/Asymmetric-Encryption.md",
-    "Cryptography-And-Authentication/Diffie-Hellman.md",
-    "Networks/Network-Theory/Network-Protocols/Network-Protocols.md",
-    "Networks/Network-Theory/Network-Protocols/SIP.md",
-    "Networks/Network-Technologies/VOIP.md",
     "Networks/Network-Theory/Network-Protocols/sedQr2JUP",
-    "Networks/Network-Technologies/Network-Technologies.md",
     "Networks/Network-Technologies",
-    "Cryptography-And-Authentication/Default-Credentials/Default-Credentials.md",
-    "Networks/Network-Theory/OSI-Model.md",
     "WPA ",
     "Networks/Network-Theory/Network-Protocols/DNS",
     "Tools/Architecture",

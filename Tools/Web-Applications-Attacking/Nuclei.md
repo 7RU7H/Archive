@@ -7,9 +7,40 @@ Install with go or [[Kali]] and `apt` beware if you want bleeding edge templates
 go install -v github.com/projectdiscovery/nuclei/v3/cmd/nuclei@latest
 ```
 
+Important Notes about default Behaviour from [[TALK-Discovering-and-Exploiting-N-Days]] from [YouTube - Discovering and Exploiting N-Days w/ Corey Ham](https://www.youtube.com/watch?v=YxEEEOh6pc0):
+- Don’t discount the unknown severity:
+	- API keys and credentials are often reported in this category.
+- [[HTTPX]]
+	- HTTP-based templates need HTTP input, meaning a URL. 
+	- Nuclei will attempt to find these by default, by running [httpx](https://github.com/projectdiscovery/httpx)
+	- By default, httpx will only check the DEFAULT ports for http/https, 80 and 443.​
+- Burp has a nuclei template generator add-on: [https://github.com/portswigger/nuclei-template-generator](https://github.com/portswigger/nuclei-template-generator)
 #### Templates
 
 [nuclei-templates](https://github.com/projectdiscovery/nuclei-templates) *"Community curated list of templates for the nuclei engine to find security vulnerabilities... Please navigate to [https://nuclei.projectdiscovery.io](https://nuclei.projectdiscovery.io) for detailed documentation to **build** new or your own **custom** templates."*
+
+Example Template from [[TALK-Discovering-and-Exploiting-N-Days]] from [YouTube - Discovering and Exploiting N-Days w/ Corey Ham](https://www.youtube.com/watch?v=YxEEEOh6pc0)
+```bash
+id: x-uber-header
+
+info:
+  name: Uber Custom Header
+  author: corey
+  severity: info
+  description: Custom X-Uber header identification
+
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}"
+
+    matchers:
+      - type: word
+        part: header
+        words:
+          - "X-Uber"
+```
 ## Cheatsheet
 #### General utility
 ```bash
@@ -86,7 +117,7 @@ nuclei -u http://goodluckwithallyourexams.offset -etags exploit,rce,sqli,xss,lfi
 [Nuclei](https://github.com/projectdiscovery/nuclei)
 [nuclei-templates](https://github.com/projectdiscovery/nuclei-templates) 
 [cheatsheet.haax.fr Nuclei cheatsheet](https://cheatsheet.haax.fr/web-pentest/tools/nuclei/)
-
+[YouTube - Discovering and Exploiting N-Days w/ Corey Ham](https://www.youtube.com/watch?v=YxEEEOh6pc0)
 ## Appendix
 
 Usage for reference
