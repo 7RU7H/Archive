@@ -118,6 +118,8 @@ nuclei -u http://goodluckwithallyourexams.offset -etags exploit,rce,sqli,xss,lfi
 [nuclei-templates](https://github.com/projectdiscovery/nuclei-templates) 
 [cheatsheet.haax.fr Nuclei cheatsheet](https://cheatsheet.haax.fr/web-pentest/tools/nuclei/)
 [YouTube - Discovering and Exploiting N-Days w/ Corey Ham](https://www.youtube.com/watch?v=YxEEEOh6pc0)
+[https://github.com/portswigger/nuclei-template-generator](https://github.com/portswigger/nuclei-template-generator)
+
 ## Appendix
 
 Usage for reference

@@ -13,31 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exploitation/TALK-Discovering-and-Exploiting-N-Days.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "921bff6edc1b9d5a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tools/Web-Applications-Attacking/Nuclei.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "5fe1787f1fdc07ef",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Reconnaissance/Passive-Information-Gathering/Shodan/Shodan.md",
+                "file": "Development/Languages/Bash/Bash.md",
                 "mode": "source",
                 "source": false
               }
@@ -109,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exploitation/TALK-Discovering-and-Exploiting-N-Days.md",
+                "file": "Development/Languages/Bash/Bash.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Exploitation/TALK-Discovering-and-Exploiting-N-Days.md",
+                "file": "Development/Languages/Bash/Bash.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Exploitation/TALK-Discovering-and-Exploiting-N-Days.md"
+                "file": "Development/Languages/Bash/Bash.md"
               }
             }
           },
@@ -184,8 +160,8 @@
   },
   "active": "f6f7ee8e6fdc0a62",
   "lastOpenFiles": [
-    "Tools/Web-Applications-Attacking/Nuclei.md",
     "Exploitation/TALK-Discovering-and-Exploiting-N-Days.md",
+    "Tools/Web-Applications-Attacking/Nuclei.md",
     "Reconnaissance/Passive-Information-Gathering/Shodan/Shodan.md",
     "httpx.md",
     "Post-Exploitation/Evasion/TALK-Bypassing-Antivirus-With-Understanding-Comes-Ease.md",

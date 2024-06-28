@@ -30,7 +30,7 @@ SSL CN Search [[TALK-Discovering-and-Exploiting-N-Days]] - [YouTube - Discoverin
 ssl.cert.subject.cn:*.$domain.com
 ```
 
-Exporting Results from Shodan with CLI
+Exporting Results from Shodan with CLI - [help.shodan.io/guides/how-to-download-data-with-api](https://help.shodan.io/guides/how-to-download-data-with-api)
 ```bash
 # Add API Key
 shodan init <api_key>
@@ -104,3 +104,4 @@ ssl.cert.subject.CN http.title "Invalid URL"
 [Karma v2](https://github.com/Dheerajmadhukar/karma_v2) 
 [Official Shodan examples](https://www.shodan.io/search/examples)
 [YouTube - Discovering and Exploiting N-Days w/ Corey Ham](https://www.youtube.com/watch?v=YxEEEOh6pc0)
+[help.shodan.io/guides/how-to-download-data-with-api](https://help.shodan.io/guides/how-to-download-data-with-api)

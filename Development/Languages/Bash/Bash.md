@@ -58,7 +58,7 @@ else
   echo "do something else" 
 fi
 ```
-
+ 
 #### Operators
 ```bash
 # Logical Operators
