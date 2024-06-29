@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Development/Languages/Bash/Bash.md",
+                "file": "Mobile/Android/Android-Hacking.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "459d471fbf2a74d0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Mobile/Mobile-Applications.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Development/Languages/Bash/Bash.md",
+                "file": "Mobile/Mobile-Applications.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Development/Languages/Bash/Bash.md",
+                "file": "Mobile/Mobile-Applications.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Development/Languages/Bash/Bash.md"
+                "file": "Mobile/Mobile-Applications.md"
               }
             }
           },
@@ -158,8 +171,13 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "f6f7ee8e6fdc0a62",
+  "active": "459d471fbf2a74d0",
   "lastOpenFiles": [
+    "Mobile/Android/Android-Hacking.md",
+    "Mobile/Mobile-Applications.md",
+    "Mobile/Mobile-Application-Testing.md",
+    "Persistence/Windows-Persistence/Windows-Persistence.md",
+    "Development/Languages/Bash/Bash.md",
     "Exploitation/TALK-Discovering-and-Exploiting-N-Days.md",
     "Tools/Web-Applications-Attacking/Nuclei.md",
     "Reconnaissance/Passive-Information-Gathering/Shodan/Shodan.md",
@@ -181,11 +199,6 @@
     "Reverse-Engineering/Reverse-Engineering-Tools.md",
     "Reconnaissance/Passive-Information-Gathering/IMINT-GEOINT/IMINT-GEOINT.md",
     "Tools/Wordlists/Wordlists.md",
-    "Tools/Authentication-Attacking/Bruteforce-Login-Tools/Brutespray-Cheatsheet.md",
-    "Cryptography-And-Authentication/Cryptography.md",
-    "Cryptography-And-Authentication/RSA-Encryption.md",
-    "Hardware/Hardware-Maintenance/USB-Maintenance.md",
-    "Cryptography-And-Authentication/Password-Attacks/Passwords.md",
     "Networks/Network-Theory/Network-Protocols/sedQr2JUP",
     "Networks/Network-Technologies",
     "WPA ",
