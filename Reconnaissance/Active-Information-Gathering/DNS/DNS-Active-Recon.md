@@ -82,12 +82,7 @@ TL;DR - Forward lookup: query hostname for IP - What is the IP of this hostname?
 for ns in $(cat /usr/share/seclists/Discovery/DNS/$list.txt); do host $ns.$domain.$tld | tee -a $domain-subdomains-with-host.txt; done
 
 cat $domain-subdomains-with-host.txt | grep -v 'not found\|error'
-
-
 # Give the output from the above scan IP address with `host` from subnet range from $lowest to $highest  
-
-
-
 low=0
 high=255
 for ip in $(seq $low $high); do host 10.10.10.$ip; done | grep -v "not found"
@@ -146,6 +141,14 @@ done
 ```
 [Script](https://github.com/7RU7H/AllTheHackingScripts/blob/main/bash/dnsZoneTransfer.sh)
 
+#### DMARC
+
+[Wikipedia DMARC](https://en.wikipedia.org/wiki/DMARC) *"Domain-based Message Authentication, Reporting and Conformance (DMARC) is an [email authentication](https://en.wikipedia.org/wiki/Email_authentication "Email authentication") protocol...DMARC records are published in DNS with a subdomain label `_dmarc.*`"* [HackTricks Pentesting SMTP](https://book.hacktricks.xyz/network-services-pentesting/pentesting-smtp#dmarc-domain-based-message-authentication-reporting-and-conformance) "*DMARC enhances email security by building on SPF and DKIM protocols. It outlines policies that guide mail servers in the handling of emails from a specific domain, including how to deal with authentication failures and where to send reports about email processing actions.*"
+```bash
+# Check the text record of _dmarc. subdomain's existence
+dig txt _dmarc.$DOMAIN | grep dmarc
+```
+Source [0xsyr0/Awesome-Cybersecurity-Handbooks - 01_information_gathering.md](https://github.com/0xsyr0/Awesome-Cybersecurity-Handbooks/blob/main/handbooks/01_information_gathering.md) 
 #### Bruteforcing DNS
 
 [[Amass]]
@@ -189,3 +192,6 @@ site:$domain.$tld
 [nsec3walker](https//dnscurve.org/nsec3walker.html)
 [nsec3mapper](https//github.com/anonion0/nsec3map)
 [infosecinstitute-dns-hacking](https://resources.infosecinstitute.com/topic/dns-hacking/)
+[Wikipedia DMARC](https://en.wikipedia.org/wiki/DMARC)
+[HackTricks Pentesting SMTP](https://book.hacktricks.xyz/network-services-pentesting/pentesting-smtp#dmarc-domain-based-message-authentication-reporting-and-conformance) 
+[0xsyr0/Awesome-Cybersecurity-Handbooks - 01_information_gathering.md](https://github.com/0xsyr0/Awesome-Cybersecurity-Handbooks/blob/main/handbooks/01_information_gathering.md) 

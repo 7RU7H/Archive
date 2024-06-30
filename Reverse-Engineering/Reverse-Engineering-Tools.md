@@ -21,6 +21,22 @@ strings -e b # 16-bit bigendian
 strings -e l # 16-bit littleendian
 ```
 
+
+
+## CFR
+
+CFR is a JVM bytecode decompiler - visit [https://www.benf.org/other](https://www.benf.org/other)
+```c
+$ java -jar cfr-0.151.jar --outputpath /PATH/TO/DIRECTORY/ /PATH/TO/FILE/<FILE>.jar
+```
+
+## dumpbin
+
+```c
+C:\>dumpbin /headers /PATH/TO/FILE/<FILE>.exe
+C:\>dumpbin /exports /PATH/TO/FILE/<FILE>.dll
+```
+
 ## EDG
 
 [[EDB]]
@@ -134,3 +150,5 @@ dc # continue execution
 [GDB plugin documentation](https://browserpwndbg.readthedocs.io/en/docs/)
 [GEF Documentation](https://gef.readthedocs.io/en/master/)
 [python-uncompyle6](https://github.com/rocky/python-uncompyle6) 
+[https://www.benf.org/other](https://www.benf.org/other)
+[0xsyr0/Awesome-Cybersecurity-Handbooks - 07_reverse_engineering.md](https://github.com/0xsyr0/Awesome-Cybersecurity-Handbooks/blob/main/handbooks/07_reverse_engineering.md)
