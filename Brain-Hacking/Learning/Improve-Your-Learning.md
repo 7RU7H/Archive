@@ -31,9 +31,9 @@ TL;DR - TODOs
 	- [(Daniel, Lafortune, Pallascio, et al., 2005)](https://www.researchgate.net/profile/Marie-france_Daniel/publication/262849880_Modeling_the_Development_Process_of_Dialogical_Critical_Thinking_in_Pupils_Aged_10_to_12_Years/links/54ee0f110cf25238f93984dd.pdf) 
 - Create a model what you are learn
 	- [(Intel, 2012)](https://www.intel.com/content/dam/www/program/education/us/en/documents/project-design/strategies/instructionalstrategies-modeling.pdf) 
-- Ask yourself am I learning anything doing X, but also explore and experiement with cross-domain ideas; fixation on single disciplines (i.e. in Music:
+- Ask yourself am I learning anything doing X, but also explore and experiment with cross-domain ideas; fixation on single disciplines (i.e. in Music:
 	- Music is divided into roles based on the ranges of pitch, but if you only fixate one range you do not appreciate what each instrument at each range accomplishes 
-- Practice the 4 types of learning with respect to complexity of the topic, port number need repeatition - AD exploitation requires graphing
+- Practice the 4 types of learning with respect to complexity of the topic, port number need repetition - AD exploitation requires graphing
 - Exercise: Increase your ability to take in new information, by chemical hacking your brain to learning 15% more effectively (also improves mental health, sleep schedules - the first thing a mental health profession will check if you are ill or heading toward being unwell is how much exercise you do). 
 	- [(Warner, 2006)](https://www.webmd.com/diet/news/20061103/exercise-fights-fatigue-boosts-energy) - Exercise improves almost everything
 	- [(Rodriguez, 2015)](https://www.scientificamerican.com/article/hit-the-gym-after-studying-to-boost-recall/) - Exercise after study to boost recall

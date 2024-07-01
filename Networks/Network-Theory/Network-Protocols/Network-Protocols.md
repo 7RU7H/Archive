@@ -306,11 +306,12 @@ Kibana provides search and data visualization capabilities for data indexed in E
 ## TCP - 5900 - VNC 
 
 [Virtual Network Computing](https://en.wikipedia.org/wiki/Virtual_Network_Computing) is a graphic desktop-sharing system that uses the [Remote Frame Buffer protocol (RFB)](https://en.wikipedia.org/wiki/RFB_protocol) to remotely control another [computer](https://en.wikipedia.org/wiki/Computer "Computer"). RDP software like Remmina can connect. [See redhat artical regarding screen sharing](https://www.redhat.com/sysadmin/vnc-screen-sharing-linux)
-## TCP - 5985-6 - WinRM
+## TCP - 5985-6 - [[WinRM]]
 
-Windows Remote Management Protocol ports
-See [[evil-winrm-Cheatsheet]]
-
+Windows Remote Management Protocol ports 5985-6
+See [[evil-winrm-Cheatsheet]], [[Crackmapexec-Cheatsheet]]
+- Port 5985 for [[HTTP]] transport 
+- Port 5986 for [[HTTPS]] Transport.
 ## TCP - 6379 - Redis
 
 Seee for Redis-cli a client for Redis database locally: [[Redis]]

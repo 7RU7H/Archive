@@ -2,7 +2,6 @@
 
 This is a hub and overview page for Digital Forensics related topics. Although Digital Forensics and Incident Response are often combined and share skill sets, DF is the investigative and analytical side of the pairing. A field experts where apply forensic analysis and techniques to digital artefacts of human activity in computational devices. This expertise has application in criminal and defensive investigations. [Digital Forensics is the forensic examination of anything wherever computational data exists.](https://www.youtube.com/watch?v=ehxJZAGUaxY) The author consider the conceptual separation of [[Incident-Response]] and Digital Forensics a etymological imperative; simply Digital Forensics does not need Incident Response, but Incident Response requires techniques from Digital Forensics to evaluate data. Corporate definitions often coincide with the concatenating of tasks and title to save money.
 
-
 #### Concepts
 
 - Artefacts - Data as evidence that indicate a definable activity performed on a system
@@ -23,7 +22,16 @@ Image Acquisition types from [THM AoC 2023](https://tryhackme.com/room/adventofc
 - Logical acquisition: A **select list of files** is copied from the seized device.
 - Sparse acquisition: Select **fragments of unallocated data** are copied. The unallocated areas of the disk might contain deleted data; however, this approach is limited compared to static and live acquisition because it doesn’t cover the whole disk.
 
-####  [Defcon 21 - Forensic Fails - Shift + Delete Won't Help You Here](https://www.youtube.com/watch?v=NG9Cg_vBKOg)
+
+#### In Practice
+
+Acquisite 
+Investigate 
+Hunt 
+Respond
+
+
+#### [Defcon 21 - Forensic Fails - Shift + Delete Won't Help You Here](https://www.youtube.com/watch?v=NG9Cg_vBKOg)
 
 Inspired initially by the [Defcon 21 - Forensic Fails - Shift + Delete Won't Help You Here](https://www.youtube.com/watch?v=NG9Cg_vBKOg), Eric Robi & Michael Perklin whom discuss:
 - Approaches thinking Forensically 
@@ -134,3 +142,4 @@ Challenges faced
 [(Wikipedia) mens rea](https://en.wikipedia.org/wiki/Mens_rea)
 [Defcon 21 - Forensic Fails - Shift + Delete Won't Help You Here](https://www.youtube.com/watch?v=NG9Cg_vBKOg)
 [Locard's exchange principle (Wikipedia)](https://en.wikipedia.org/wiki/Locard%27s_exchange_principle)
+[THM Room - Windows Incident Surface](https://tryhackme.com/r/room/winincidentsurface)

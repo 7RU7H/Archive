@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "077d5567a512ab8b",
+        "id": "16e872f832213c77",
         "type": "tabs",
         "children": [
           {
-            "id": "cf702e46593c0b37",
+            "id": "a49801013e4f463f",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -150,8 +150,17 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "cf702e46593c0b37",
+  "active": "a49801013e4f463f",
   "lastOpenFiles": [
+    "Networks/Network-Theory/Network-Protocols/Network-Protocols.md",
+    "Networks/Network-Theory/Network-Protocols/WinRM.md",
+    "Development/Languages/PowerShell/PowerShell.md",
+    "Tools/Shells/evil-winrm-Cheatsheet.md",
+    "Networks/Network-Theory/Network-Protocols/WMI.md",
+    "Brain-Hacking/Learning/Power-Thorough-Learning.md",
+    "Brain-Hacking/Learning/Improve-Your-Learning.md",
+    "Social-Engineering/Social-Power.md",
+    "Security-Disciplines/Digital-Forensics/Digital-Forensics.md",
     "Mobile/Android/Android-Hacking.md",
     "Exploitation/CVEs/ImageTragick.md",
     "Reverse-Engineering/Reverse-Engineering-Tools.md",
@@ -169,15 +178,6 @@
     "Post-Exploitation/Evasion/TALK-Bypassing-Antivirus-With-Understanding-Comes-Ease.md",
     "Securing-Networks-And-Systems/TALK-Systems-Alchemy-The-Transmutation-Of-Hacking.md",
     "Post-Exploitation/Post-Exploitation-Enumeration/TALK-Post-Exploitation-Striking Gold-with-Covert-Recon.md",
-    "Security-Disciplines/Cyber-Threat-Intelligence/TALK-Threat-Hunting.md",
-    "Security-Disciplines/Blue-Team/TALK-The-New-OSINT-Cheat-Code-LLM.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Bypassing-UAC/Bypassing-Windows-User-Account-Control.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Bypassing-UAC/UAC-AutoElevate-List.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Bypassing-UAC/UACME-Keys.md",
-    "Brain-Hacking/Problem-Solving/Rabbitholes.md",
-    "Tools/Forensics/KAPE.md",
-    "Security-Disciplines/Surveillance/Counter-Surveillance.md",
-    "Security-Disciplines/Surveillance/Surveillance.md",
     "Networks/Network-Theory/Network-Protocols/sedQr2JUP",
     "Networks/Network-Technologies",
     "WPA ",
