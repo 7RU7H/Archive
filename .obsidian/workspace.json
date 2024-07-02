@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Brain-Hacking/Question-Based-Methodologies/Question-Based-Hacking-Methodology.md",
+                "file": "Tools/C2/Sliver/TALK-Ace-The-OSEP-Exam-with-Sliver-Framework.md",
                 "mode": "source",
                 "source": false
               }
@@ -81,7 +81,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Reverse-Engin",
+                "query": "TALK",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Brain-Hacking/Question-Based-Methodologies/Question-Based-Hacking-Methodology.md",
+                "file": "Tools/C2/Sliver/TALK-Ace-The-OSEP-Exam-with-Sliver-Framework.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Brain-Hacking/Question-Based-Methodologies/Question-Based-Hacking-Methodology.md",
+                "file": "Tools/C2/Sliver/TALK-Ace-The-OSEP-Exam-with-Sliver-Framework.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Brain-Hacking/Question-Based-Methodologies/Question-Based-Hacking-Methodology.md"
+                "file": "Tools/C2/Sliver/TALK-Ace-The-OSEP-Exam-with-Sliver-Framework.md"
               }
             }
           },
@@ -185,9 +185,10 @@
   },
   "active": "f0eb76d0d5d554c2",
   "lastOpenFiles": [
+    "Tools/C2/Sliver/TALK-Ace-The-OSEP-Exam-with-Sliver-Framework.md",
+    "Brain-Hacking/Question-Based-Methodologies/Question-Based-Hacking-Methodology.md",
     "Persistence/Persistence.md",
     "Development/Application-Security-For-The-Paranoid.md",
-    "Brain-Hacking/Question-Based-Methodologies/Question-Based-Hacking-Methodology.md",
     "Tools/C2/Sliver/Sliver.md",
     "Development/Malware/C2-Design.md",
     "Images/c2-serialization-formats-moloch.png",
@@ -213,7 +214,6 @@
     "Reconnaissance/Passive-Information-Gathering/Shodan/Shodan.md",
     "Reconnaissance/Passive-Information-Gathering/Passive-Recon.md",
     "Reconnaissance/Active-Information-Gathering/DNS/DNS-Active-Recon.md",
-    "Mobile/Mobile-Applications.md",
     "Networks/Network-Theory/Network-Protocols/sedQr2JUP",
     "Networks/Network-Technologies",
     "WPA ",

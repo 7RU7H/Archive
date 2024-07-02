@@ -691,11 +691,6 @@ Condense:
 				1. Hardcoded Credentials
 
 
-
-
-
-
-
 Persistence 
 - Scope?
 Reasons for wanting persistence on a machine or network:
