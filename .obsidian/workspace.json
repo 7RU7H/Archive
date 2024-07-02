@@ -13,13 +13,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Persistence/Windows-Persistence/Windows-Registry-Persistence.md",
+                "file": "Tools/C2/Sliver/Sliver.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d201097bf57ac2b4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Development/Malware/C2-Design.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f0eb76d0d5d554c2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Brain-Hacking/Question-Based-Methodologies/Question-Based-Hacking-Methodology.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -85,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Persistence/Windows-Persistence/Windows-Registry-Persistence.md",
+                "file": "Brain-Hacking/Question-Based-Methodologies/Question-Based-Hacking-Methodology.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Persistence/Windows-Persistence/Windows-Registry-Persistence.md",
+                "file": "Brain-Hacking/Question-Based-Methodologies/Question-Based-Hacking-Methodology.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Persistence/Windows-Persistence/Windows-Registry-Persistence.md"
+                "file": "Brain-Hacking/Question-Based-Methodologies/Question-Based-Hacking-Methodology.md"
               }
             }
           },
@@ -158,8 +183,19 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "a49801013e4f463f",
+  "active": "f0eb76d0d5d554c2",
   "lastOpenFiles": [
+    "Persistence/Persistence.md",
+    "Development/Application-Security-For-The-Paranoid.md",
+    "Brain-Hacking/Question-Based-Methodologies/Question-Based-Hacking-Methodology.md",
+    "Tools/C2/Sliver/Sliver.md",
+    "Development/Malware/C2-Design.md",
+    "Images/c2-serialization-formats-moloch.png",
+    "Images/c2-protocols-moloch.png",
+    "Images/programlanguages-adv-disadv-moloch-sliver-talk.png",
+    "Security-Disciplines/Red-Team/Red-Team-Hub.md",
+    "Security-Disciplines/Red-Team/Red-Team-Theory/Redteam-Checklist.md",
+    "Security-Disciplines/Red-Team/Red-Team-Theory/Red-Team-Fundementals.md",
     "Persistence/Windows-Persistence/Windows-Registry-Persistence.md",
     "Networks/Network-Theory/Network-Protocols/Network-Protocols.md",
     "Networks/Network-Theory/Network-Protocols/WinRM.md",
@@ -178,14 +214,6 @@
     "Reconnaissance/Passive-Information-Gathering/Passive-Recon.md",
     "Reconnaissance/Active-Information-Gathering/DNS/DNS-Active-Recon.md",
     "Mobile/Mobile-Applications.md",
-    "Mobile/Mobile-Application-Testing.md",
-    "Persistence/Windows-Persistence/Windows-Persistence.md",
-    "Development/Languages/Bash/Bash.md",
-    "Exploitation/TALK-Discovering-and-Exploiting-N-Days.md",
-    "Tools/Web-Applications-Attacking/Nuclei.md",
-    "httpx.md",
-    "Post-Exploitation/Evasion/TALK-Bypassing-Antivirus-With-Understanding-Comes-Ease.md",
-    "Securing-Networks-And-Systems/TALK-Systems-Alchemy-The-Transmutation-Of-Hacking.md",
     "Networks/Network-Theory/Network-Protocols/sedQr2JUP",
     "Networks/Network-Technologies",
     "WPA ",
@@ -202,9 +230,6 @@
     "Images/intelligence-cycle-SANs-MattWilliamsIsHilarious.png",
     "Images/cia-structuredanalyticstimeline.png",
     "Images/chriskubecka-openautomateddemandresponse-attachsystems.png",
-    "Images/chriskubecka-ismemegoddess-part2.png",
-    "Images/chriskubecka-ismemegoddess.png",
-    "Images/chriskubecka-protocolattachedtowindturbines.png",
-    "Images/chriskubecka-weedismoneymaking.png"
+    "Images/chriskubecka-ismemegoddess-part2.png"
   ]
 }

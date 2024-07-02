@@ -1,4 +1,10 @@
-# Red Team Development Checklist
+# Redteam Checklist
+
+Moloch from [YouTube - The Sliver C2 Framework - Moloch](https://www.youtube.com/watch?v=tkjMZuZ_8nw): *"Remember the real adversary is Third Parties."* The rest of this page is a mirror from [redteam.guide/](https://redteam.guide/docs/checklists/red-team-checklist/).
+
+##  Checklist
+
+- Red Team Development Checklist
     ☐ Determine required knowledge and skills
         ☐ Identify and implement alternate methods for bridging knowledge gaps
     ☐ Develop roles and responsibilities guide
@@ -12,7 +18,7 @@
     ☐ Develop technical briefing template
     ☐ Develop report template
 
-# Planning - Red Team Engagement Checklist
+- Planning - Red Team Engagement Checklist
     ☐ Engagement Planning
         ☐ ROE
             ☐ Event Communication plan
@@ -50,7 +56,7 @@
         ☐ Deploy tools to infrastructure
     ☐ Data collection repository
 
-# Execution - Red Team Engagement Checklist 
+- Execution - Red Team Engagement Checklist 
     ☐ Daily completion and roll-up confirmation
         ☐ Capture logs
         ☐ Capture screenshots
@@ -58,7 +64,7 @@
     ☐ Daily (or twice daily) mandatory internal RT SITREP
     ☐ Update real-time attack diagram
 
-# Culmination - Red Team Engagement Checklist
+- Culmination - Red Team Engagement Checklist
     ☐ Engagement Closeout
         ☐ Roll up data
         ☐ Roll back system changes
@@ -75,3 +81,4 @@
 
 ## References
 [redteam.guide/](https://redteam.guide/docs/checklists/red-team-checklist/)
+[YouTube - The Sliver C2 Framework - Moloch](https://www.youtube.com/watch?v=tkjMZuZ_8nw)

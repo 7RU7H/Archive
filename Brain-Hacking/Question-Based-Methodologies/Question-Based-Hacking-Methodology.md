@@ -698,7 +698,14 @@ Condense:
 
 Persistence 
 - Scope?
-	
+Reasons for wanting persistence on a machine or network:
+1. Backdooring and post-detection re-entrance.
+2. Stability and a operational section of the network to work from.
+3. Gaining foothold a hard to reproduce, especially if is phished for.
+4. Re-exploitation is not always possible post compromised or is also not fittingly stealthy.
+5. The SOC or Blue/Purple teams may have or would make significantly easier to detect.
+
+Reason for not wanting persistence is that is very hard to detect, but anyone else could exploit use the same exploitation mechanism.
 
 - Have you cleaned up?
 

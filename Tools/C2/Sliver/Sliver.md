@@ -1,5 +1,9 @@
-# Sliver Cheatsheet
+# Sliver
 
+[YouTube - The Sliver C2 Framework - Moloch](https://www.youtube.com/watch?v=tkjMZuZ_8nw) description: *"Guest speaker talk on the Sliver C2 Framework by Moloch, the creator of Sliver."*
+
+Inspired by Trusting Trust; TLDR 3 Pages and attempt to reference Professor Brailsford once a year: The Great, Professor Brailsford reflections: [YouTube Reflections on Trusting Trust - Computerphile](https://www.youtube.com/watch?v=SJ7lOus1FzQ). White paper: [https://www.cs.cmu.edu Thompson_1984_ReflectionsonTrustingTrust.pdf](https://www.cs.cmu.edu/~rdriley/487/papers/Thompson_1984_ReflectionsonTrustingTrust.pdf)
+#### Configuration
 - OPSEC 
 	- [[EDR-Bypass]]ing requires more than just the [garble](https://github.com/burrowers/garble) (use to "*Obfuscate Go builds"*) and [go-donut](https://github.com/Binject/go-donut) - (go port of [donut](https://github.com/TheWover/donut) - *"Generates x86, x64, or AMD64+x86 position-independent shellcode that loads .NET Assemblies, PE files, and other Windows payloads from memory and runs them with parameters"*)
 	- Use a custom stager
@@ -14,6 +18,8 @@
 	- Procedural obfuscation - reduce communication profile for operator
 	- [Silver's Transport Encryption](https://github.com/BishopFox/sliver/wiki/Transport-Encryption)
 	- DNS transport is optimised for speed, not evasion
+
+#### Cheatsheet
 
 [Sliver Wiki](https://github.com/BishopFox/sliver/wiki/)
 ```go
@@ -304,3 +310,6 @@ NT* AND *AUTHORITY\\SYSTEM*)
 [garble](https://github.com/burrowers/garble)
 [donut](https://github.com/TheWover/donut) 
 [Silver's Transport Encryption](https://github.com/BishopFox/sliver/wiki/Transport-Encryption)
+[YouTube - The Sliver C2 Framework - Moloch](https://www.youtube.com/watch?v=tkjMZuZ_8nw)
+[YouTube Reflections on Trusting Trust - Computerphile](https://www.youtube.com/watch?v=SJ7lOus1FzQ)
+[https://www.cs.cmu.edu Thompson_1984_ReflectionsonTrustingTrust.pdf](https://www.cs.cmu.edu/~rdriley/487/papers/Thompson_1984_ReflectionsonTrustingTrust.pdf)
