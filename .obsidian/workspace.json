@@ -13,38 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/C2/Sliver/Sliver.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d201097bf57ac2b4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Development/Malware/C2-Design.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f0eb76d0d5d554c2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tools/C2/Sliver/TALK-Ace-The-OSEP-Exam-with-Sliver-Framework.md",
+                "file": "Web-Application-Hacking/Web-Exploits/SQLi/ORM-Injection.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -110,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/C2/Sliver/TALK-Ace-The-OSEP-Exam-with-Sliver-Framework.md",
+                "file": "Web-Application-Hacking/Web-Exploits/SQLi/ORM-Injection.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tools/C2/Sliver/TALK-Ace-The-OSEP-Exam-with-Sliver-Framework.md",
+                "file": "Web-Application-Hacking/Web-Exploits/SQLi/ORM-Injection.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tools/C2/Sliver/TALK-Ace-The-OSEP-Exam-with-Sliver-Framework.md"
+                "file": "Web-Application-Hacking/Web-Exploits/SQLi/ORM-Injection.md"
               }
             }
           },
@@ -183,14 +158,17 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "f0eb76d0d5d554c2",
+  "active": "a49801013e4f463f",
   "lastOpenFiles": [
+    "Web-Application-Hacking/Broken-Access-Control.md",
+    "Web-Application-Hacking/Web-Exploits/SQLi/ORM-Injection.md",
+    "Tools/C2/Sliver/Sliver.md",
+    "Development/Malware/C2-Design.md",
+    "Exploitation/Exploitation.md",
     "Tools/C2/Sliver/TALK-Ace-The-OSEP-Exam-with-Sliver-Framework.md",
     "Brain-Hacking/Question-Based-Methodologies/Question-Based-Hacking-Methodology.md",
     "Persistence/Persistence.md",
     "Development/Application-Security-For-The-Paranoid.md",
-    "Tools/C2/Sliver/Sliver.md",
-    "Development/Malware/C2-Design.md",
     "Images/c2-serialization-formats-moloch.png",
     "Images/c2-protocols-moloch.png",
     "Images/programlanguages-adv-disadv-moloch-sliver-talk.png",
@@ -211,9 +189,6 @@
     "Exploitation/CVEs/ImageTragick.md",
     "Reverse-Engineering/Reverse-Engineering-Tools.md",
     "Reverse-Engineering/Reverse-Engineering.md",
-    "Reconnaissance/Passive-Information-Gathering/Shodan/Shodan.md",
-    "Reconnaissance/Passive-Information-Gathering/Passive-Recon.md",
-    "Reconnaissance/Active-Information-Gathering/DNS/DNS-Active-Recon.md",
     "Networks/Network-Theory/Network-Protocols/sedQr2JUP",
     "Networks/Network-Technologies",
     "WPA ",
