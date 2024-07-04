@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Web-Application-Hacking/Web-Exploits/SQLi/ORM-Injection.md",
+                "file": "Hardware/Hardware-Hacking/TALK-Samy-Kamkars-Crash-Course-in-How-to-Be-a-Hardware-Hacker.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Web-Application-Hacking/Web-Exploits/SQLi/ORM-Injection.md",
+                "file": "Hardware/Hardware-Hacking/TALK-Samy-Kamkars-Crash-Course-in-How-to-Be-a-Hardware-Hacker.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Web-Application-Hacking/Web-Exploits/SQLi/ORM-Injection.md",
+                "file": "Hardware/Hardware-Hacking/TALK-Samy-Kamkars-Crash-Course-in-How-to-Be-a-Hardware-Hacker.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Web-Application-Hacking/Web-Exploits/SQLi/ORM-Injection.md"
+                "file": "Hardware/Hardware-Hacking/TALK-Samy-Kamkars-Crash-Course-in-How-to-Be-a-Hardware-Hacker.md"
               }
             }
           },
@@ -160,8 +160,10 @@
   },
   "active": "a49801013e4f463f",
   "lastOpenFiles": [
-    "Web-Application-Hacking/Broken-Access-Control.md",
+    "Images/kamkars-fav-diy-hwh-basics-tools.png",
     "Web-Application-Hacking/Web-Exploits/SQLi/ORM-Injection.md",
+    "Hardware/Hardware-Hacking/TALK-Samy-Kamkars-Crash-Course-in-How-to-Be-a-Hardware-Hacker.md",
+    "Web-Application-Hacking/Broken-Access-Control.md",
     "Tools/C2/Sliver/Sliver.md",
     "Development/Malware/C2-Design.md",
     "Exploitation/Exploitation.md",
@@ -187,8 +189,6 @@
     "Security-Disciplines/Digital-Forensics/Digital-Forensics.md",
     "Mobile/Android/Android-Hacking.md",
     "Exploitation/CVEs/ImageTragick.md",
-    "Reverse-Engineering/Reverse-Engineering-Tools.md",
-    "Reverse-Engineering/Reverse-Engineering.md",
     "Networks/Network-Theory/Network-Protocols/sedQr2JUP",
     "Networks/Network-Technologies",
     "WPA ",
