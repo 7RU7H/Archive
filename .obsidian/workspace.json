@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Hardware/Hardware-Hacking/TALK-Samy-Kamkars-Crash-Course-in-How-to-Be-a-Hardware-Hacker.md",
+                "file": "Tools/C2/Sliver/TALK-Ace-The-OSEP-Exam-with-Sliver-Framework.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Hardware/Hardware-Hacking/TALK-Samy-Kamkars-Crash-Course-in-How-to-Be-a-Hardware-Hacker.md",
+                "file": "Tools/C2/Sliver/TALK-Ace-The-OSEP-Exam-with-Sliver-Framework.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Hardware/Hardware-Hacking/TALK-Samy-Kamkars-Crash-Course-in-How-to-Be-a-Hardware-Hacker.md",
+                "file": "Tools/C2/Sliver/TALK-Ace-The-OSEP-Exam-with-Sliver-Framework.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Hardware/Hardware-Hacking/TALK-Samy-Kamkars-Crash-Course-in-How-to-Be-a-Hardware-Hacker.md"
+                "file": "Tools/C2/Sliver/TALK-Ace-The-OSEP-Exam-with-Sliver-Framework.md"
               }
             }
           },
@@ -160,14 +160,15 @@
   },
   "active": "a49801013e4f463f",
   "lastOpenFiles": [
+    "Exploitation/Windows/Windows-Internals-Exploitation/Windows-Shellcode-Injection.md",
+    "Tools/C2/Sliver/TALK-Ace-The-OSEP-Exam-with-Sliver-Framework.md",
+    "Hardware/Hardware-Hacking/TALK-Samy-Kamkars-Crash-Course-in-How-to-Be-a-Hardware-Hacker.md",
     "Images/kamkars-fav-diy-hwh-basics-tools.png",
     "Web-Application-Hacking/Web-Exploits/SQLi/ORM-Injection.md",
-    "Hardware/Hardware-Hacking/TALK-Samy-Kamkars-Crash-Course-in-How-to-Be-a-Hardware-Hacker.md",
     "Web-Application-Hacking/Broken-Access-Control.md",
     "Tools/C2/Sliver/Sliver.md",
     "Development/Malware/C2-Design.md",
     "Exploitation/Exploitation.md",
-    "Tools/C2/Sliver/TALK-Ace-The-OSEP-Exam-with-Sliver-Framework.md",
     "Brain-Hacking/Question-Based-Methodologies/Question-Based-Hacking-Methodology.md",
     "Persistence/Persistence.md",
     "Development/Application-Security-For-The-Paranoid.md",
@@ -204,7 +205,6 @@
     "Images/linux-persistence-map.png",
     "Images/intelligence-cycle-SANs-MattWilliamsIsHilarious.png",
     "Images/cia-structuredanalyticstimeline.png",
-    "Images/chriskubecka-openautomateddemandresponse-attachsystems.png",
-    "Images/chriskubecka-ismemegoddess-part2.png"
+    "Images/chriskubecka-openautomateddemandresponse-attachsystems.png"
   ]
 }
