@@ -14,6 +14,7 @@ Including snippets and information from the blog post [bishopfox.com/blog/passin
 - GitHub has a lot of awesome repositories! Make sure whatever you decide to use, you understand what it is doing and how you can modify it if needed.
 - MalDev Academy
 - HTB Academy Kerberos
+- [[Sliver]]
 
 - [[Active-Directory-Certificate-Services]] is very prominent in more modern 2023+ environment, check for the big lateral movement wins. 
 - ChatGPT Games of Throne Username lists; the YouTube is based on DOAD, the exam report and exam may still have restrictions on AI Chat Bot usage.  

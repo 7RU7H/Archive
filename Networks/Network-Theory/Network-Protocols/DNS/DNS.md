@@ -2,11 +2,19 @@
 
 ## Introduction
 
-Domain Name System([DNS](https://en.wikipedia.org/wiki/Domain_Name_System)) is a distributed database responsible for translating domain names into IP addresses. 
+Domain Name System([DNS](https://en.wikipedia.org/wiki/Domain_Name_System)) is a distributed database responsible for translating domain names into IP addresses. The best place to start from a Cyber Security perspective is this talk : [YouTube - BHIS: DNS Deep Diving with Serena DiPenti](https://www.youtube.com/watch?v=p0Ar6eincE0&t=6s).
 
 A DNS Server provides:
 - Maintains a local cache of recently accessed or used domain names and their IP addresses.
 - Maintains the key-value pair database of IP addresses and any host or subdomain over which the DNS server has authority
+
+A good introduction with a practical implications to understand DNS at a personal level would be [YouTube - Dave's Garage DNS Demystified: Everything You Should Know for Faster Internet!](https://www.youtube.com/watch?v=49PhEUZVjzQ) *"Dave explains DNS, the Domain Name System, as well as how to benchmark and optimize your own DNS."* This video references using bench marking to improve internet speeds:
+- https://www.grc.com/dns/benchmark.htm
+
+**BUT Beware configuring default DNS servers:**
+- Terms of use
+- Privacy varies
+- Breaking changes and then in resolving on the machine you configured
 
 ## Links
 
@@ -112,3 +120,5 @@ it at its destination.
 [Cloudflare's Learning dns-records](https://www.cloudflare.com/learning/dns/dns-records/)
 [Azure What is DNS](https://learn.microsoft.com/en-us/training/modules/host-domain-azure-dns/2-what-is-azure-dns)
 [Microsoft Learn](https://learn.microsoft.com/)
+[YouTube - Dave's Garage DNS Demystified: Everything You Should Know for Faster Internet!](https://www.youtube.com/watch?v=49PhEUZVjzQ)
+[YouTube - BHIS: DNS Deep Diving with Serena DiPenti](https://www.youtube.com/watch?v=p0Ar6eincE0&t=6s)

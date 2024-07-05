@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/C2/Sliver/TALK-Ace-The-OSEP-Exam-with-Sliver-Framework.md",
+                "file": "Tools/C2/Sliver/TALK-Pwning-the-Domain-With-Sliver-Framework.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6732e339690c7ec2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/Web-Applications-Attacking/jsluice.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -56,7 +69,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "TALK",
+                "query": "KASM",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/C2/Sliver/TALK-Ace-The-OSEP-Exam-with-Sliver-Framework.md",
+                "file": "Tools/Web-Applications-Attacking/jsluice.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tools/C2/Sliver/TALK-Ace-The-OSEP-Exam-with-Sliver-Framework.md",
+                "file": "Tools/Web-Applications-Attacking/jsluice.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tools/C2/Sliver/TALK-Ace-The-OSEP-Exam-with-Sliver-Framework.md"
+                "file": "Tools/Web-Applications-Attacking/jsluice.md"
               }
             }
           },
@@ -144,8 +157,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -158,10 +170,15 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "a49801013e4f463f",
+  "active": "6732e339690c7ec2",
   "lastOpenFiles": [
-    "Exploitation/Windows/Windows-Internals-Exploitation/Windows-Shellcode-Injection.md",
+    "Networks/Network-Theory/Network-Protocols/DNS/DNS.md",
+    "Tools/Web-Applications-Attacking/jsluice.md",
+    "Software/Services/KASM-Workspaces.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+    "Tools/C2/Sliver/TALK-Pwning-the-Domain-With-Sliver-Framework.md",
     "Tools/C2/Sliver/TALK-Ace-The-OSEP-Exam-with-Sliver-Framework.md",
+    "Exploitation/Windows/Windows-Internals-Exploitation/Windows-Shellcode-Injection.md",
     "Hardware/Hardware-Hacking/TALK-Samy-Kamkars-Crash-Course-in-How-to-Be-a-Hardware-Hacker.md",
     "Images/kamkars-fav-diy-hwh-basics-tools.png",
     "Web-Application-Hacking/Web-Exploits/SQLi/ORM-Injection.md",
@@ -185,11 +202,6 @@
     "Tools/Shells/evil-winrm-Cheatsheet.md",
     "Networks/Network-Theory/Network-Protocols/WMI.md",
     "Brain-Hacking/Learning/Power-Thorough-Learning.md",
-    "Brain-Hacking/Learning/Improve-Your-Learning.md",
-    "Social-Engineering/Social-Power.md",
-    "Security-Disciplines/Digital-Forensics/Digital-Forensics.md",
-    "Mobile/Android/Android-Hacking.md",
-    "Exploitation/CVEs/ImageTragick.md",
     "Networks/Network-Theory/Network-Protocols/sedQr2JUP",
     "Networks/Network-Technologies",
     "WPA ",
