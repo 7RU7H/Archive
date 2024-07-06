@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/Web-Applications-Attacking/jsluice.md",
+                "file": "Software/Services/Neo4j/neo4j.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "KASM",
+                "query": "neo4j",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -78,7 +78,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -98,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/Web-Applications-Attacking/jsluice.md",
+                "file": "Software/Services/Neo4j/neo4j.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tools/Web-Applications-Attacking/jsluice.md",
+                "file": "Software/Services/Neo4j/neo4j.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tools/Web-Applications-Attacking/jsluice.md"
+                "file": "Software/Services/Neo4j/neo4j.md"
               }
             }
           },
@@ -172,8 +173,15 @@
   },
   "active": "6732e339690c7ec2",
   "lastOpenFiles": [
-    "Networks/Network-Theory/Network-Protocols/DNS/DNS.md",
+    "Software/Services/Webservers/JS/NodeJS.md",
+    "Web-Application-Hacking/JavaScript/JavaScript-Cookie-Abuse.md",
+    "Reconnaissance/Active-Information-Gathering/Port-Scanning.md",
+    "Reconnaissance/Active-Information-Gathering/Active-Recon.md",
+    "Reconnaissance/Active-Information-Gathering/Netcat-As-Recon.md",
+    "Security-Disciplines/CTF-Platforms/CTFs.md",
+    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Active-Directory-File-Transfers.md",
     "Tools/Web-Applications-Attacking/jsluice.md",
+    "Networks/Network-Theory/Network-Protocols/DNS/DNS.md",
     "Software/Services/KASM-Workspaces.md",
     "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
     "Tools/C2/Sliver/TALK-Pwning-the-Domain-With-Sliver-Framework.md",
@@ -195,13 +203,6 @@
     "Security-Disciplines/Red-Team/Red-Team-Hub.md",
     "Security-Disciplines/Red-Team/Red-Team-Theory/Redteam-Checklist.md",
     "Security-Disciplines/Red-Team/Red-Team-Theory/Red-Team-Fundementals.md",
-    "Persistence/Windows-Persistence/Windows-Registry-Persistence.md",
-    "Networks/Network-Theory/Network-Protocols/Network-Protocols.md",
-    "Networks/Network-Theory/Network-Protocols/WinRM.md",
-    "Development/Languages/PowerShell/PowerShell.md",
-    "Tools/Shells/evil-winrm-Cheatsheet.md",
-    "Networks/Network-Theory/Network-Protocols/WMI.md",
-    "Brain-Hacking/Learning/Power-Thorough-Learning.md",
     "Networks/Network-Theory/Network-Protocols/sedQr2JUP",
     "Networks/Network-Technologies",
     "WPA ",
