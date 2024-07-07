@@ -4,6 +4,8 @@
 
 This is sequel to [[TALK-Ace-The-OSEP-Exam-with-Sliver-Framework]]
 
+[[Sliver]]
+
 Recap:
 - Recent changes to GOAD
 - Starting on Meeren in Essos domain from

@@ -7,6 +7,7 @@ Inspired by Trusting Trust; TL;DR 3 Pages and attempt to reference Professor Bra
 - OPSEC 
 	- [[EDR-Bypass]]ing requires more than just the [garble](https://github.com/burrowers/garble) (use to "*Obfuscate Go builds"*) and [go-donut](https://github.com/Binject/go-donut) - (go port of [donut](https://github.com/TheWover/donut) - *"Generates x86, x64, or AMD64+x86 position-independent shellcode that loads .NET Assemblies, PE files, and other Windows payloads from memory and runs them with parameters"*)
 	- Use a custom stager
+	- Edit the `systemd` service or equivalents  (`systemd` configure from [infosecn1nja](https://github.com/infosecn1nja/red-team-scripts/blob/main/sliver.md) example below)
 	- Modify - `~/.sliver/configs/http-c2.json`
 	- Change or rotate extensions and filenames used in procedural URL generation
 	- Mimic legitimate browser request headers (just take them directly from `Burp Suite`)
@@ -18,6 +19,45 @@ Inspired by Trusting Trust; TL;DR 3 Pages and attempt to reference Professor Bra
 	- Procedural obfuscation - reduce communication profile for operator
 	- [Silver's Transport Encryption](https://github.com/BishopFox/sliver/wiki/Transport-Encryption)
 	- DNS transport is optimised for speed, not evasion
+
+Default:
+```bash
+[Unit]
+Description=Sliver
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=on-failure
+RestartSec=3
+User=root
+ExecStart=/root/sliver-server daemon
+
+[Install]
+WantedBy=multi-user.target
+```
+ 
+ [infosecn1nja](https://github.com/infosecn1nja/red-team-scripts/blob/main/sliver.md)'s
+```bash
+cat > /etc/systemd/system/sliver.service << EOL
+[Unit]
+Description=Sliver Server
+After=syslog.target network.target
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=120
+LimitNOFILE=20000
+Environment=LANG=en_US.UTF-8
+ExecStart=/opt/sliver/sliver-server_linux daemon -l 0.0.0.0 -p <port>
+
+[Install]
+WantedBy=multi-user.target
+EOL
+```
+
 
 #### Cheatsheet
 
@@ -313,3 +353,4 @@ NT* AND *AUTHORITY\\SYSTEM*)
 [YouTube - The Sliver C2 Framework - Moloch](https://www.youtube.com/watch?v=tkjMZuZ_8nw)
 [YouTube Reflections on Trusting Trust - Computerphile](https://www.youtube.com/watch?v=SJ7lOus1FzQ)
 [https://www.cs.cmu.edu Thompson_1984_ReflectionsonTrustingTrust.pdf](https://www.cs.cmu.edu/~rdriley/487/papers/Thompson_1984_ReflectionsonTrustingTrust.pdf)
+[infosecn1nja - red-team-scripts sliver](https://github.com/infosecn1nja/red-team-scripts/blob/main/sliver.md) 

@@ -13,26 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/C2/Sliver/TALK-Pwning-the-Domain-With-Sliver-Framework.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6732e339690c7ec2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tools/Forensics/Autopsy.md",
+                "file": "Mobile/Android/Android.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/Forensics/Autopsy.md",
+                "file": "Mobile/Android/Android.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tools/Forensics/Autopsy.md",
+                "file": "Mobile/Android/Android.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tools/Forensics/Autopsy.md"
+                "file": "Mobile/Android/Android.md"
               }
             }
           },
@@ -170,8 +157,14 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "6732e339690c7ec2",
+  "active": "a49801013e4f463f",
   "lastOpenFiles": [
+    "Mobile/Android/Android-Hacking.md",
+    "Tools/C2/Sliver/Sliver.md",
+    "Security-Disciplines/Red-Team/Red-Team-Theory/Red-Team-Tooling.md",
+    "Tools/C2/Sliver/TALK-Pwning-the-Domain-With-Sliver-Framework.md",
+    "Tools/C2/Sliver/TALK-Ace-The-OSEP-Exam-with-Sliver-Framework.md",
+    "Tools/Forensics/Autopsy.md",
     "Tools/Web-Applications-Attacking/Content-Discovery-Tools/FFUF-Cheatsheet.md",
     "Software/Operating-Systems/Windows/Windows-Concepts/Windows-Registry.md",
     "Security-Disciplines/Digital-Forensics/Windows-Forensics/Windows-Registry-Forensics.md",
@@ -189,16 +182,10 @@
     "Networks/Network-Theory/Network-Protocols/DNS/DNS.md",
     "Software/Services/KASM-Workspaces.md",
     "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
-    "Tools/C2/Sliver/TALK-Pwning-the-Domain-With-Sliver-Framework.md",
-    "Tools/C2/Sliver/TALK-Ace-The-OSEP-Exam-with-Sliver-Framework.md",
     "Exploitation/Windows/Windows-Internals-Exploitation/Windows-Shellcode-Injection.md",
     "Hardware/Hardware-Hacking/TALK-Samy-Kamkars-Crash-Course-in-How-to-Be-a-Hardware-Hacker.md",
     "Images/kamkars-fav-diy-hwh-basics-tools.png",
     "Web-Application-Hacking/Web-Exploits/SQLi/ORM-Injection.md",
-    "Web-Application-Hacking/Broken-Access-Control.md",
-    "Tools/C2/Sliver/Sliver.md",
-    "Development/Malware/C2-Design.md",
-    "Exploitation/Exploitation.md",
     "Images/c2-serialization-formats-moloch.png",
     "Images/c2-protocols-moloch.png",
     "Images/programlanguages-adv-disadv-moloch-sliver-talk.png",

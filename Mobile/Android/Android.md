@@ -2,7 +2,6 @@
 
 **Beware methods and tools used in this page will almost certainly void any warranty you have for your device**
 
-
 ## Termux
 
 Install Git and Configure Termux and Android File system from [Alan C. Bonnici - Medium](https://chribonn.medium.com/how-to-clone-and-synchronise-a-github-repository-on-android-a59ddf7cd092)
@@ -17,6 +16,13 @@ git config --global user.name "<name>"
 git config --global user.email "<email>"
 termux-setup-storage
 ```
+
+
+## Rooting an Android Phone
+
+[Wikipedia]() state *"Rooting is the process by which users of [Android](https://en.wikipedia.org/wiki/Android_(operating_system) "Android (operating system)") devices can attain [privileged control](https://en.wikipedia.org/wiki/Privilege_escalation "Privilege escalation") (known as [root access](https://en.wikipedia.org/wiki/Root_access "Root access")) over various subsystems of the device, usually smartphones and [tablets](https://en.wikipedia.org/wiki/Tablet_computer "Tablet computer").)"*.
+
+
 
 
 ## Flashing Firmware
