@@ -3,6 +3,13 @@
 [**The official description**](https://www.autopsy.com/): "_Autopsy is the premier open source forensics platform which is fast, easy-to-use, and capable of analysing all types of mobile devices and digital media. Its plug-in architecture enables extensibility from community-developed or custom-built modules. Autopsy evolves to meet the needs of hundreds of thousands of professionals in law enforcement, national security, litigation support, and corporate investigation._"
 
 Autopsy case files have the .aut file extension
+## Installation 
+
+Some Linux Distributions hang on the "Starting Modules" [solution](https://sleuthkit.discourse.group/t/hangs-on-starting-modules-ubuntu-20-04/2598/2)
+```bash
+bin/autopsy --nosplash
+```
+
 
 ##  UI
 
@@ -69,3 +76,4 @@ The initial phase can be compute heavy  be patient and selective (if practicing)
 [Autopsy Visualisation Tools for Images/Videos](http://sleuthkit.org/autopsy/docs/user-docs/4.12.0/image_gallery_page.html)
 [Autopsy Visualisation Tools for Communications](http://sleuthkit.org/autopsy/docs/user-docs/4.12.0/communications_page.html)
 [Autopsy Visualisation Tools for Timeline](http://sleuthkit.org/autopsy/docs/user-docs/4.12.0/timeline_page.html)
+[sleuthkit.discourse.group dxbi's linux needs nosplash solution](https://sleuthkit.discourse.group/t/hangs-on-starting-modules-ubuntu-20-04/2598/2)

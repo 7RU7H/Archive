@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Software/Services/Neo4j/neo4j.md",
+                "file": "Tools/Forensics/Autopsy.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "neo4j",
+                "query": "FTK ",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -78,8 +78,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -99,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Software/Services/Neo4j/neo4j.md",
+                "file": "Tools/Forensics/Autopsy.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Software/Services/Neo4j/neo4j.md",
+                "file": "Tools/Forensics/Autopsy.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Software/Services/Neo4j/neo4j.md"
+                "file": "Tools/Forensics/Autopsy.md"
               }
             }
           },
@@ -173,6 +172,12 @@
   },
   "active": "6732e339690c7ec2",
   "lastOpenFiles": [
+    "Tools/Web-Applications-Attacking/Content-Discovery-Tools/FFUF-Cheatsheet.md",
+    "Software/Operating-Systems/Windows/Windows-Concepts/Windows-Registry.md",
+    "Security-Disciplines/Digital-Forensics/Windows-Forensics/Windows-Registry-Forensics.md",
+    "Tools/Forensics/FTK-Imager.md",
+    "Security-Disciplines/Digital-Forensics/Digital-Forensics.md",
+    "Software/Services/Neo4j/neo4j.md",
     "Software/Services/Webservers/JS/NodeJS.md",
     "Web-Application-Hacking/JavaScript/JavaScript-Cookie-Abuse.md",
     "Reconnaissance/Active-Information-Gathering/Port-Scanning.md",
@@ -194,15 +199,9 @@
     "Tools/C2/Sliver/Sliver.md",
     "Development/Malware/C2-Design.md",
     "Exploitation/Exploitation.md",
-    "Brain-Hacking/Question-Based-Methodologies/Question-Based-Hacking-Methodology.md",
-    "Persistence/Persistence.md",
-    "Development/Application-Security-For-The-Paranoid.md",
     "Images/c2-serialization-formats-moloch.png",
     "Images/c2-protocols-moloch.png",
     "Images/programlanguages-adv-disadv-moloch-sliver-talk.png",
-    "Security-Disciplines/Red-Team/Red-Team-Hub.md",
-    "Security-Disciplines/Red-Team/Red-Team-Theory/Redteam-Checklist.md",
-    "Security-Disciplines/Red-Team/Red-Team-Theory/Red-Team-Fundementals.md",
     "Networks/Network-Theory/Network-Protocols/sedQr2JUP",
     "Networks/Network-Technologies",
     "WPA ",

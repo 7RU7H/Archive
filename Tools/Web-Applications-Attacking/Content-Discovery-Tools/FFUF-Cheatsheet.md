@@ -55,7 +55,11 @@ ffuf -u http://$IP/Login -c -w /usr/share/wordlists/rockyou.txt -X POST -d 'user
 
 Need to figure out what the server is running:
 ```bash
-ffuf -w /usr/share/seclists/Discovery/Web-Content/web-extensions.txt:FUZZ -u http://$IP/index.FUZZ 
+# 200 is valid extension on some applications
+# Consider duration as to extension checks
+# Context dependent
+# OMFG-check-the-wordlist for '.' else TEARS IN RAIN
+ffuf -w /usr/share/seclists/Discovery/Web-Content/web-extensions.txt:FUZZ -u http://$IP/indexFUZZ 
 ```
 
 #### Fuzzing for Pages

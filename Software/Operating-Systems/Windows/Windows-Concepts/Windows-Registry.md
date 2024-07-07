@@ -39,7 +39,7 @@ Root keys:
 	- Configuration information of the local machine - HKLM
 	- `\SYSTEM\CurrentControlSet\Control\Session Manager\Environment` - System environment variables
 - `HKEY_CLASSES_ROOT`
-	- `Subkey HKLM\Software` - HKCR, stores information program execution:
+	- `Subkey HKLM\Software` - HKCR stores information program execution:
 	- From Windows 2000 `HKCU\Software\Classes would override the defaults of HKLM\Software\Classes`
 	- HKCR merges a view of the registry from both sources and back compatible with earlier windows versions. Be considerate of the parent/child structuring when store keys where existing keys enter the search chain
 - `HKEY_CURRENT_CONFIG`
