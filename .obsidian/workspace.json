@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "16e872f832213c77",
+        "id": "9d9a09da52b183e0",
         "type": "tabs",
         "children": [
           {
-            "id": "a49801013e4f463f",
+            "id": "c43737c1e8c47c85",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Mobile/Android/Android.md",
+                "file": "Development/Languages/Go/Useful-Go.md",
                 "mode": "source",
                 "source": false
               }
@@ -56,7 +56,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "FTK ",
+                "query": "MICE",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Mobile/Android/Android.md",
+                "file": "Development/Languages/Go/Useful-Go.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Mobile/Android/Android.md",
+                "file": "Development/Languages/Go/Useful-Go.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Mobile/Android/Android.md"
+                "file": "Development/Languages/Go/Useful-Go.md"
               }
             }
           },
@@ -157,8 +157,11 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "a49801013e4f463f",
+  "active": "c43737c1e8c47c85",
   "lastOpenFiles": [
+    "Development/Languages/Go/Golang.md",
+    "Brain-Hacking/Cyber-Related-Actions/Good-Acronyms-And-Phrases.md",
+    "Mobile/Android/Android.md",
     "Mobile/Android/Android-Hacking.md",
     "Tools/C2/Sliver/Sliver.md",
     "Security-Disciplines/Red-Team/Red-Team-Theory/Red-Team-Tooling.md",
@@ -182,10 +185,7 @@
     "Networks/Network-Theory/Network-Protocols/DNS/DNS.md",
     "Software/Services/KASM-Workspaces.md",
     "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
-    "Exploitation/Windows/Windows-Internals-Exploitation/Windows-Shellcode-Injection.md",
-    "Hardware/Hardware-Hacking/TALK-Samy-Kamkars-Crash-Course-in-How-to-Be-a-Hardware-Hacker.md",
     "Images/kamkars-fav-diy-hwh-basics-tools.png",
-    "Web-Application-Hacking/Web-Exploits/SQLi/ORM-Injection.md",
     "Images/c2-serialization-formats-moloch.png",
     "Images/c2-protocols-moloch.png",
     "Images/programlanguages-adv-disadv-moloch-sliver-talk.png",

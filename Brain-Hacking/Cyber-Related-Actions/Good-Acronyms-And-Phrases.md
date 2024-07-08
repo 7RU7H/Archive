@@ -37,7 +37,7 @@ Instead of FBI Open up! Try Joe Navarro, :
 		- Semantic - Meaning and humans only can deal in a maximum of 3-5 layers (my research and guess : proof counting groups of objects - also try have a conversation when you are allude to five different discourse in one conversation - Good luck)   
 	- Attribute - [[Survival-Heuristics]], Attribution is continuous and dangerous to objectives  
 		- Linguistic
-			- Discourse - Over multiple interactions what are the patterns - No text, person can escape discourse even everything outside of that discourse is potentially reversible. 
+			- discourse - Over multiple interactions what are the patterns - No text, person can escape discourse even everything outside of that discourse is potentially reversible. 
 		- Summations of Observations
 		- Out of place
 		- Details 
@@ -55,13 +55,27 @@ Instead of FBI Open up! Try Joe Navarro, :
 	- If you cant improvise you are low-entropy uniqueness that puts you in the uncanny valley very quickly. Under some contexts there are expectations for formalities that are like scripted conversation, but human brains focus of the uniqueness.
 
 
-#### MICE
+#### MICE & BEWARE
 
 For your [[Social-Engineering]] and self assessment
-- Money - Greed
-- Ideology - Belief
-- Corruption - Desire
-- Ego - Internal-Mythology
+- MICE:
+	- Money - Greed
+	- Ideology - Belief
+	- Cohesion - Corruptibility 
+	- Ego - Internal-Mythology
+- BEWARE: 
+	- Business Opportunity
+	- Ethno-Nationalism
+	- Wealth - 
+	- Academic Advancement
+	- Repression - 
+	- Emotional Bonds - Social networking, Trust, etc 
+
+Everyone is a DINO; ancient hardware and forgotten software; Authors addition
+- Directive
+- Identity
+- Negativity
+- Opportunity 
 
 #### OODA
 
