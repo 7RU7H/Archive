@@ -70,6 +70,8 @@ For your [[Social-Engineering]] and self assessment
 	- Academic Advancement
 	- Repression - 
 	- Emotional Bonds - Social networking, Trust, etc 
+	- [euintelligenceacademy - CHINA’S ESPIONAGE RECRUITMENT MOTIVATIONS Getting Rid of the MICE by Nicholas Eftimiades](https://www.euintelligenceacademy.eu/sites/eia/files/2023%201204%20EIA%20Paper%205.pdf)
+
 
 Everyone is a DINO; ancient hardware and forgotten software; Authors addition
 - Directive
@@ -79,14 +81,22 @@ Everyone is a DINO; ancient hardware and forgotten software; Authors addition
 
 #### OODA
 
+[Wikipedia OODA loop](https://en.wikipedia.org/wiki/OODA_loop):
 - Observe
 - Orientate
 - Decide
-- Action
+- Act
 
-#### SEES
+#### SEES 
 
+From [YouTube: RUSI Annual Security Lecture 2022 with Sir Jeremy Fleming, Director of GCHQ](https://www.youtube.com/watch?v=tp67D9WKpgE)
 - Situational Awareness - Good intel 
 - Explanation - Information requires explanation for further use 
 - Estimation - Modelling 
 - Strategic Notice - Preemptive strategy from given some Intel, its explanations and modelling - what do it entail for what could happen in the future and what to do about it.
+
+## References
+
+ [euintelligenceacademy - CHINA’S ESPIONAGE RECRUITMENT MOTIVATIONS Getting Rid of the MICE by Nicholas Eftimiades](https://www.euintelligenceacademy.eu/sites/eia/files/2023%201204%20EIA%20Paper%205.pdf)
+ [YouTube: RUSI Annual Security Lecture 2022 with Sir Jeremy Fleming, Director of GCHQ](https://www.youtube.com/watch?v=tp67D9WKpgE)
+ [Wikipedia OODA loop](https://en.wikipedia.org/wiki/OODA_loop)

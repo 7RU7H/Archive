@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Development/Languages/Go/Useful-Go.md",
+                "file": "Exploitation/Linux-Race-Conditions.md",
                 "mode": "source",
                 "source": false
               }
@@ -56,7 +56,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "MICE",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 448.5
+    "width": 416.5
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Development/Languages/Go/Useful-Go.md",
+                "file": "Exploitation/Linux-Race-Conditions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Development/Languages/Go/Useful-Go.md",
+                "file": "Exploitation/Linux-Race-Conditions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Development/Languages/Go/Useful-Go.md"
+                "file": "Exploitation/Linux-Race-Conditions.md"
               }
             }
           },
@@ -144,7 +144,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -159,8 +160,15 @@
   },
   "active": "c43737c1e8c47c85",
   "lastOpenFiles": [
+    "Security-Disciplines/Malware-Analysis/Malware-Analysis-Resources.md",
+    "Exploitation/Linux-Race-Conditions.md",
+    "Development/Languages/Python/Useful-Python.md",
     "Development/Languages/Go/Golang.md",
+    "Development/Languages/Ruby/Ruby.md",
     "Brain-Hacking/Cyber-Related-Actions/Good-Acronyms-And-Phrases.md",
+    "Development/Regular-Expressions.md",
+    "Development/Languages/Python/Pandas.md",
+    "Development/Languages/Go/Useful-Go.md",
     "Mobile/Android/Android.md",
     "Mobile/Android/Android-Hacking.md",
     "Tools/C2/Sliver/Sliver.md",
@@ -178,13 +186,6 @@
     "Web-Application-Hacking/JavaScript/JavaScript-Cookie-Abuse.md",
     "Reconnaissance/Active-Information-Gathering/Port-Scanning.md",
     "Reconnaissance/Active-Information-Gathering/Active-Recon.md",
-    "Reconnaissance/Active-Information-Gathering/Netcat-As-Recon.md",
-    "Security-Disciplines/CTF-Platforms/CTFs.md",
-    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Active-Directory-File-Transfers.md",
-    "Tools/Web-Applications-Attacking/jsluice.md",
-    "Networks/Network-Theory/Network-Protocols/DNS/DNS.md",
-    "Software/Services/KASM-Workspaces.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
     "Images/kamkars-fav-diy-hwh-basics-tools.png",
     "Images/c2-serialization-formats-moloch.png",
     "Images/c2-protocols-moloch.png",

@@ -367,6 +367,43 @@ def examples_subproccess():
 exit_code = subprocess.call
 ```
 
+### Bitstring manipulation
+```python
+def bitstring_to_bytes(s):
+    v = int(s, 2)
+    b = bytearray()
+    while v:
+        b.append(v & 0xff)
+        v >>= 8
+    return bytes(b[::-1])
+ 
+base = "010101..." # the bit string
+n = 8 # change something every n bits
+result = ""
+
+# Iterate over bitstring, doing something  every n bits
+for i in xrange(n,len(base)-n,n):
+  # do manipulation here
+  result += num
+print(bitstring_to_bytes(result))
+```
+### Named Capture Groups
+
+[Mozilla - Reference/Regular_expressions/Named_capturing_group](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Named_capturing_group) states Named Capture Groups as being: *"A named capturing group is a particular kind of [capturing group](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Capturing_group) that allows to give a name to the group.*" 
+```python
+m = re.search('[e]\s:\s(?P<e>\d+){0,1}',text.decode('utf-8'))
+  if m != None and 'e' in m.groupdict():
+    e = int(m.group('e'))
+```
+
+### Printing NTML Hashes
+
+```python
+import hashlib,binascii
+hash = hashlib.new('md4', "".encode('utf-16le')).digest()
+print(binascii.hexlify(hash))
+```
+
 ### Async 
 ```python
 async def put_proc_queue():
@@ -568,3 +605,5 @@ https://docs.pwntools.com/en/stable/
 *[you need a ruler for tab indentation](https://www.youtube.com/watch?v=YnL9vAFphmE) and [sometimes we have a competition to write the longest list comprehension...and sometimes it's in production...and sometimes we don't call it a competition but work](https://www.youtube.com/watch?v=BgxklT94W0I) which requires a [phd](https://www.youtube.com/watch?v=xyrgkui0uCA).*
 [xinyMinutes](https://learnxinyminutes.com/docs/python)
 [w3schools - Python](https://www.w3schools.com/python/)
+[Mozilla - Reference/Regular_expressions/Named_capturing_group](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Named_capturing_group)
+[notes.vulndev - Python](https://notes.vulndev.io/wiki/misc/language-and-framwork-specifics/python)

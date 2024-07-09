@@ -26,9 +26,17 @@ rbenv global 1.9.3-p327 # set the global system version of ruby
 rbenv versions # list all ruby versions known to rbenv  
 rbenv shell 1.9.3 # set shell specific ruby.
 ```
+#### Hacking Ruby
 
+```ruby
+# ||= Operator Will only excute the right hand side if the left hand side is not null or undefined:
+a ||= <some statement>
+# Reflect in ruby
+obj.instance_eval('ruby code')
+```
 
 ## References
 
 [Ruby Virtual Environment Rbenv](https://medium.com/@bhagavathidhass/virtual-environments-for-python-ruby-and-java-87743478ae38)
 [Conor Livingston StackOverflow](https://stackoverflow.com/questions/12979343/how-to-find-out-which-rails-version-an-existing-rails-application-is-built-on)
+[notes.Vulndeb - Ruby](https://notes.vulndev.io/wiki/misc/language-and-framwork-specifics/ruby)
