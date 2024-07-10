@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exploitation/Linux-Race-Conditions.md",
+                "file": "Brain-Hacking/Biases.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exploitation/Linux-Race-Conditions.md",
+                "file": "Brain-Hacking/Biases.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Exploitation/Linux-Race-Conditions.md",
+                "file": "Brain-Hacking/Biases.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Exploitation/Linux-Race-Conditions.md"
+                "file": "Brain-Hacking/Biases.md"
               }
             }
           },
@@ -160,8 +160,10 @@
   },
   "active": "c43737c1e8c47c85",
   "lastOpenFiles": [
-    "Security-Disciplines/Malware-Analysis/Malware-Analysis-Resources.md",
+    "README.md",
+    "Brain-Hacking/Biases.md",
     "Exploitation/Linux-Race-Conditions.md",
+    "Security-Disciplines/Malware-Analysis/Malware-Analysis-Resources.md",
     "Development/Languages/Python/Useful-Python.md",
     "Development/Languages/Go/Golang.md",
     "Development/Languages/Ruby/Ruby.md",
@@ -184,8 +186,6 @@
     "Software/Services/Neo4j/neo4j.md",
     "Software/Services/Webservers/JS/NodeJS.md",
     "Web-Application-Hacking/JavaScript/JavaScript-Cookie-Abuse.md",
-    "Reconnaissance/Active-Information-Gathering/Port-Scanning.md",
-    "Reconnaissance/Active-Information-Gathering/Active-Recon.md",
     "Images/kamkars-fav-diy-hwh-basics-tools.png",
     "Images/c2-serialization-formats-moloch.png",
     "Images/c2-protocols-moloch.png",
