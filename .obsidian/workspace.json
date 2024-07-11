@@ -13,7 +13,25 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Brain-Hacking/Biases.md",
+                "file": "Tools/C2/Sliver/TALK-Pwning-the-Domain-With-Sliver-Framework.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "38b1eca79d2f481e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fac92a44fea2f6d6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/C2/Sliver/TALK-Ace-The-OSEP-Exam-with-Sliver-Framework.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +103,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Brain-Hacking/Biases.md",
+                "file": "Tools/C2/Sliver/TALK-Ace-The-OSEP-Exam-with-Sliver-Framework.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +120,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Brain-Hacking/Biases.md",
+                "file": "Tools/C2/Sliver/TALK-Ace-The-OSEP-Exam-with-Sliver-Framework.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +143,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Brain-Hacking/Biases.md"
+                "file": "Tools/C2/Sliver/TALK-Ace-The-OSEP-Exam-with-Sliver-Framework.md"
               }
             }
           },
@@ -158,10 +176,12 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "c43737c1e8c47c85",
+  "active": "fac92a44fea2f6d6",
   "lastOpenFiles": [
-    "README.md",
+    "Tools/C2/Sliver/TALK-Pwning-the-Domain-With-Sliver-Framework.md",
+    "Tools/C2/Sliver/TALK-Ace-The-OSEP-Exam-with-Sliver-Framework.md",
     "Brain-Hacking/Biases.md",
+    "README.md",
     "Exploitation/Linux-Race-Conditions.md",
     "Security-Disciplines/Malware-Analysis/Malware-Analysis-Resources.md",
     "Development/Languages/Python/Useful-Python.md",
@@ -175,8 +195,6 @@
     "Mobile/Android/Android-Hacking.md",
     "Tools/C2/Sliver/Sliver.md",
     "Security-Disciplines/Red-Team/Red-Team-Theory/Red-Team-Tooling.md",
-    "Tools/C2/Sliver/TALK-Pwning-the-Domain-With-Sliver-Framework.md",
-    "Tools/C2/Sliver/TALK-Ace-The-OSEP-Exam-with-Sliver-Framework.md",
     "Tools/Forensics/Autopsy.md",
     "Tools/Web-Applications-Attacking/Content-Discovery-Tools/FFUF-Cheatsheet.md",
     "Software/Operating-Systems/Windows/Windows-Concepts/Windows-Registry.md",
