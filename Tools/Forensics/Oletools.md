@@ -15,8 +15,8 @@ oleid $maldoc
 ```
  `oledump.py`
 ```bash
-# Get the Streams 
-oledump.py $maldoc
+# Get the Streams - M denotes stream that contain Macros; -i provides byes breakdown, very useful!
+oledump.py -i $maldoc
 # Best practice seems to be go string by string till you hit a good line
 oledump.py -s $int $maldoc
 oledump.py -s $specialLineNum -S $maldoc

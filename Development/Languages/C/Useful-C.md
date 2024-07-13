@@ -91,7 +91,23 @@ return *pIndirectPlugOfThePlugOfTheVideo;
 // Uninitialised pointer random value till it is initialised
 // Void pointer is just the address and is not type defined and must be cast to a object pointer before use. It assigned nil type information. Malloc API has allocate memory that can then be told what type of object will stored at that memory
 void*
-
+// Hacking the Art of Exploitation - page 55
+int void_pointry() 
+{
+	int i;
+	char char_array[5] = {'a','b','c','d','e'};
+	int int_array[5] = {1,2,3,4,5}
+	char *char_pointer;
+	int *int_pointer;
+	char_pointer = (char *) int_array; // Typecast into 
+	int_pointer = (int *) char_array; // pointer's data type
+	for (i=0; i <5; i++) {
+		printf("[integer pointer] points to %p, which conatins the char '%c'\n", int_pointer, *int_pointer);
+		printf("[char pointer] points to %p, which conatins the int '%c'\n", char_pointer, *char_pointer);
+		int_pointer = (int *) ((char *) int_pointer +1);
+		char_pointer = (char *) ((int *) char_pointer +1);
+	}
+}
 
 // Function Pointer is a pointer to a function 
 // Beware readability
@@ -163,3 +179,4 @@ int inlineThis()
 [Jacob Sorber Programming with Processes](https://www.youtube.com/playlist?list=PL9IEJIKnBJjFNNfpY6fHjVzAwtgRYjhPw)
 [Size of an asm](https://gcc.gnu.org/onlinedocs/gcc/extensions-to-the-c-language-family/how-to-use-inline-assembly-language-in-c-code.html#size-of-an-asm)
 [Inline Assembly Lanaguage in C Code - gcc.gnu.org](https://gcc.gnu.org/onlinedocs/gcc/extensions-to-the-c-language-family/how-to-use-inline-assembly-language-in-c-code.html)
+[Hacking: The Art of Exploitation, 2nd Edition 2nd ed. by Erickson, Jon (ISBN: 0689145714418)](Hacking: The Art of Exploitation, 2nd Edition 2nd ed. by Erickson, Jon (ISBN: 0689145714418)
