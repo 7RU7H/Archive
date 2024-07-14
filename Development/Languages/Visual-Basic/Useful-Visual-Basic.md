@@ -9,6 +9,13 @@ shell.Run("C:\Windows\System32\cmd.exe " & WScript.ScriptFullName),0,True
 ```
 If .vbs is blacklisted run using wscript /e:VBScript with a rename to script.txt 
 
+
+
+```vb
+& ' Generates a string concatenation of two expressions.
+```
+
+
 ## Visual Basic 4 Apps 
 
 #### Word Macro shell:
@@ -89,11 +96,16 @@ Sub MyMacro()
 End Sub
 ```
 
+#### Analysis of bad VB
+
+Online compilers
+https://onecompiler.com/vb/
+https://www.onlinegdb.com/online_vb_compiler
+
+
 #### Obfuscation
 
 [[Obfuscation-Principles]]
-
-
 ```vb
 Chr() ' return the character associated with the specified character code.
 ChrW() ' Returns the Unicode character that corresponds to the specified character code
@@ -101,8 +113,11 @@ CBool() ' convert to a boolean
 Len() ' returns the number of characters in a text string.
 LenB() ' returns the number of bytes used to represent the characters in a text string
 Trim() ' Trims both leading and tailing string expressions
+Xor() ' Performs a logical exclusion on two `Boolean` expressions, or a bitwise exclusion on two numeric expressions.
+
 ```
 
+https://learn.microsoft.com/en-us/dotnet/visual-basic/language-reference/operators/xor-operator
 https://learn.microsoft.com/en-us/office/vba/language/reference/user-interface-help/chr-function
 https://support.microsoft.com/en-gb/office/len-lenb-functions-29236f94-cedc-429d-affd-b5e33d2c67cb
 https://learn.microsoft.com/en-us/office/vba/language/reference/user-interface-help/ltrim-rtrim-and-trim-functions

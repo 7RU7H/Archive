@@ -31,7 +31,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -97,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/Forensics/Oletools.md",
+                "file": "Development/Languages/Visual-Basic/Useful-Visual-Basic.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tools/Forensics/Oletools.md",
+                "file": "Development/Languages/Visual-Basic/Useful-Visual-Basic.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tools/Forensics/Oletools.md"
+                "file": "Development/Languages/Visual-Basic/Useful-Visual-Basic.md"
               }
             }
           },
@@ -170,11 +171,11 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "c43737c1e8c47c85",
+  "active": "097b72872ac2792d",
   "lastOpenFiles": [
+    "Tools/Forensics/Oletools.md",
     "Development/Languages/Visual-Basic/Useful-Visual-Basic.md",
     "Security-Disciplines/Digital-Forensics/Malicious-Documents/MalDoc-Analysis.md",
-    "Tools/Forensics/Oletools.md",
     "Hardware/Hardware-Maintenance/Data-Destruction.md",
     "Hardware/Hardware-Maintenance/USB-Maintenance.md",
     "Artificial-Intelligence/AI.md",
