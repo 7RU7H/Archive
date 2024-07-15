@@ -25,14 +25,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Development/Languages/Visual-Basic/Useful-Visual-Basic.md",
+                "file": "Tools/C2/Sliver/TALK-Pwning-the-Domain-With-Sliver-Framework.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Development/Languages/Visual-Basic/Useful-Visual-Basic.md",
+                "file": "Tools/Forensics/Oletools.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Development/Languages/Visual-Basic/Useful-Visual-Basic.md",
+                "file": "Tools/Forensics/Oletools.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Development/Languages/Visual-Basic/Useful-Visual-Basic.md"
+                "file": "Tools/Forensics/Oletools.md"
               }
             }
           },
@@ -171,10 +170,12 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "097b72872ac2792d",
+  "active": "c43737c1e8c47c85",
   "lastOpenFiles": [
+    "Development/Languages/Visual-Basic/Visual-Basic.md",
     "Tools/Forensics/Oletools.md",
-    "Development/Languages/Visual-Basic/Useful-Visual-Basic.md",
+    "Tools/C2/Sliver/TALK-Pwning-the-Domain-With-Sliver-Framework.md",
+    "Development/Languages/Go/Golang.md",
     "Security-Disciplines/Digital-Forensics/Malicious-Documents/MalDoc-Analysis.md",
     "Hardware/Hardware-Maintenance/Data-Destruction.md",
     "Hardware/Hardware-Maintenance/USB-Maintenance.md",
@@ -184,7 +185,6 @@
     "Images/spqa-miessler-march2023-medium.png",
     "Development/Languages/C/Useful-C.md",
     "Tools/Forensics/trid.md",
-    "Tools/C2/Sliver/TALK-Pwning-the-Domain-With-Sliver-Framework.md",
     "Security-Disciplines/Digital-Forensics/Malicious-Documents",
     "Tools/C2/Sliver/TALK-Ace-The-OSEP-Exam-with-Sliver-Framework.md",
     "Brain-Hacking/Biases.md",
@@ -192,7 +192,6 @@
     "Exploitation/Linux-Race-Conditions.md",
     "Security-Disciplines/Malware-Analysis/Malware-Analysis-Resources.md",
     "Development/Languages/Python/Useful-Python.md",
-    "Development/Languages/Go/Golang.md",
     "Development/Languages/Ruby/Ruby.md",
     "Brain-Hacking/Cyber-Related-Actions/Good-Acronyms-And-Phrases.md",
     "Development/Regular-Expressions.md",

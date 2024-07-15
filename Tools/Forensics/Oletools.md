@@ -1,5 +1,7 @@
 # Oletools
 
+Is used in [[MalDoc-Analysis]] to analyse specifically malicious [[Visual-Basic]]. Although it is just a tool is very effective at finding [true horrors](https://www.youtube.com/watch?v=xydcP31wVRk), a brain is still required as with all tooling; `tool ^ tool =  tool^2` and `brain + tool = success(Nth*brain) float`
+
 `oleid`
 ```bash
 # Get basic information 
@@ -48,3 +50,7 @@ oletimes $maldoc
 # Get the type of Subs
 olevba
 ```
+
+## References
+
+[Youtube - Excel Macros and the true horrors that dwell within meme](https://www.youtube.com/watch?v=xydcP31wVRk)

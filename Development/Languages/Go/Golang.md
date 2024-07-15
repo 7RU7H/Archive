@@ -36,13 +36,14 @@ upx <binary>
 ## Effective Go and Writing Go Code
 [go.dev/doc/code](https://go.dev/doc/code) explains how to write and compile and install go source code. [Effective Go is a great article to write idiomatic Go Code](https://go.dev/doc/effective_go)
 
+As for unofficial standards of go project layout see [github.com/golang-standards/project-layout](https://github.com/golang-standards/project-layout) has 47k Stars as of 15/04/2024
 ## Test Driven Development Template
 
 [[Go-Testdriven-Development]]
 
 ## Golang Installation for Linux-Based Hacker Distros
 
-[Install Golang](https://go.dev/doc/install)
+[Install Golang](https://go.dev/doc/install) 
 ```bash
 # Careful, <version> and Chip varience
 wget https://go.dev/dl/go1.<version>.tar.gz
@@ -90,3 +91,4 @@ func init() // This is a special function in golang - IS THE FIRST FUNCTION THAT
 [go.dev/doc/code](https://go.dev/doc/code) 
 [go.dev/doc/install - Official Install Documentation](https://go.dev/doc/install)
 [go.dev gdb](https://go.dev/doc/gdb) 
+[github.com/golang-standards/project-layout](https://github.com/golang-standards/project-layout)
