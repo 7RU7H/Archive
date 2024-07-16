@@ -72,7 +72,7 @@ gdb -q /path/to/my/bin
 
 [[Ghidra-Cheatsheet]]
 
-## Immunity Debugg
+## Immunity Debugger
 
 [[Immunity-Debugger-Helpsheet]]
 
