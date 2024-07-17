@@ -4,7 +4,9 @@
 If you want to grab a copy the registry hives from `%WINDIR%\System32\Config`, you cannot because it is a restricted file. Use:
 - [[KAPE]]
 - [[Autopsy]]
-- [FTK Imager](https://www.exterro.com/ftk-imager) is similar to Autopsy
+- [FTK Imager](https://www.exterro.com/ftk-imager) is similar to [[Autopsy]]
+
+The Registry Hives are located `C:\Windows\System32\Config`
 
 After extraction:
 - [AccessData's Registry Viewer](https://accessdata.com/product-download/registry-viewer-2-0-0) has a similar user interface to the Windows Registry Editor - load one hive at a time and it can't take the transaction logs into account.
@@ -14,9 +16,9 @@ After extraction:
 
 ## Key Properties
 
-REG_SZrepresents a single null terminated string
+`REG_SZ` represents a single null terminated string
 
-Run OR RunOnce
+`Run` OR `RunOnce`
 
 ## Key Layout
 

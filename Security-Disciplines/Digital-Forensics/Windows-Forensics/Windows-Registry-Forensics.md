@@ -1,6 +1,6 @@
 # Windows Registry Forensics
 
-For more information locally on Windows Registry and its hives see [[Windows-Registry]] page
+For more information locally on Windows Registry and its hives see [[Windows-Registry]] page; the Registry Hives are located `C:\Windows\System32\Config`.
 ## Data Acquisition
 
 #### Live Acquisition
@@ -47,3 +47,4 @@ Navigate to desired file system location of a registry hive and export the requi
 ## References
 
 [THM Expediting Registry Analysis Room](https://tryhackme.com/r/room/expregistryforensics)
+[THM Forensics Room 1](https://tryhackme.com/room/windowsforensics1)

@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "c43737c1e8c47c85",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Reverse-Engineering/Reverse-Engineering.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "097b72872ac2792d",
             "type": "leaf",
             "state": {
@@ -30,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "cb9fee666c2704d8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Brain-Hacking/Problem-Solving/Problem-Microscope.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -81,7 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 416.5
+    "width": 446.5
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -97,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Reverse-Engineering/Reverse-Engineering.md",
+                "file": "Brain-Hacking/Problem-Solving/Problem-Microscope.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Reverse-Engineering/Reverse-Engineering.md",
+                "file": "Brain-Hacking/Problem-Solving/Problem-Microscope.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Reverse-Engineering/Reverse-Engineering.md"
+                "file": "Brain-Hacking/Problem-Solving/Problem-Microscope.md"
               }
             }
           },
@@ -170,19 +171,26 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "ed8f63df71621be6",
+  "active": "cb9fee666c2704d8",
   "lastOpenFiles": [
-    "Reverse-Engineering/Reverse-Engineering-Tools.md",
+    "Tools/Reverse-Engineering/scdbg.md",
+    "Brain-Hacking/Problem-Solving/Problem-Microscope.md",
+    "Tools/Forensics/ViperMonkey.md",
+    "().md",
+    "Tools/Forensics/FTK-Imager.md",
+    "Security-Disciplines/Digital-Forensics/Malicious-Documents/MalDoc-Analysis.md",
+    "Software/Operating-Systems/Windows/Windows-Concepts/Windows-Registry.md",
+    "Security-Disciplines/Digital-Forensics/Windows-Forensics/Windows-Registry-Forensics.md",
+    "Tools/C2/Sliver/TALK-Pwning-the-Domain-With-Sliver-Framework.md",
     "Reverse-Engineering/Reverse-Engineering.md",
+    "Reverse-Engineering/Reverse-Engineering-Tools.md",
     "Development/Languages/Python/Useful-Python.md",
     "Tools/Forensics/Oletools.md",
     "Exploitation/Windows/Finding-Windows-Exploits.md",
     "Security-Disciplines/Incident-Response/Five-Windows-Forensic-Artefacts-for-Every-Incident-Response.md",
     "Security-Disciplines/Malware-Analysis/IDA-Malware-Reverse-Engineering-101-By-Jake-Williams-Notes.md",
     "Development/Languages/Visual-Basic/Visual-Basic.md",
-    "Tools/C2/Sliver/TALK-Pwning-the-Domain-With-Sliver-Framework.md",
     "Development/Languages/Go/Golang.md",
-    "Security-Disciplines/Digital-Forensics/Malicious-Documents/MalDoc-Analysis.md",
     "Hardware/Hardware-Maintenance/Data-Destruction.md",
     "Hardware/Hardware-Maintenance/USB-Maintenance.md",
     "Artificial-Intelligence/AI.md",
@@ -193,13 +201,6 @@
     "Tools/Forensics/trid.md",
     "Security-Disciplines/Digital-Forensics/Malicious-Documents",
     "Tools/C2/Sliver/TALK-Ace-The-OSEP-Exam-with-Sliver-Framework.md",
-    "Brain-Hacking/Biases.md",
-    "README.md",
-    "Exploitation/Linux-Race-Conditions.md",
-    "Security-Disciplines/Malware-Analysis/Malware-Analysis-Resources.md",
-    "Development/Languages/Ruby/Ruby.md",
-    "Brain-Hacking/Cyber-Related-Actions/Good-Acronyms-And-Phrases.md",
-    "Development/Regular-Expressions.md",
     "Images/kamkars-fav-diy-hwh-basics-tools.png",
     "Images/c2-serialization-formats-moloch.png",
     "Images/c2-protocols-moloch.png",
