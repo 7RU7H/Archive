@@ -13,6 +13,16 @@ Client <-> Ready Messages ("finished" message) <-> Server
 Client <-> Encrypted Sessions <-> Server
 ```
 
+SSL/TLS versioning - source [YouTube - Understanding Cryptography for Offensive Security w/ Ayub Yusuf](https://www.youtube.com/watch?v=S8esOtKmFDc)
+
+Version | Status              
+--- | -
+SSLv2 | Depreciated in 2011 
+SSLv3 | Depreciated in 2015 
+TLS 1.0 | Depreciated in 2021 
+TLS 1.1 | Depreciated in 2021 
+TLS 1.2 | Active since 2008   
+TLS 1.3 | Active since 2018   
 
 ## Hardening 
 

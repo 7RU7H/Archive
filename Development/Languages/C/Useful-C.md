@@ -160,7 +160,7 @@ int main()
 }
 ```
 
-[Inline](https://gcc.gnu.org/onlinedocs/gcc/extensions-to-the-c-language-family/how-to-use-inline-assembly-language-in-c-code.html) [[x86-Assembly]], or [[x86-64-Assembly]] - for size considerations see [Size of an asm](https://gcc.gnu.org/onlinedocs/gcc/extensions-to-the-c-language-family/how-to-use-inline-assembly-language-in-c-code.html#size-of-an-asm)
+[Inline](https://gcc.gnu.org/onlinedocs/gcc/extensions-to-the-c-language-family/how-to-use-inline-assembly-language-in-c-code.html) [[x86-Assembly]], or [[x86-64-Assembly]] - for size considerations see [Size of an asm](https://gcc.gnu.org/onlinedocs/gcc/extensions-to-the-c-language-family/how-to-use-inline-assembly-language-in-c-code.html#size-of-an-asm); The `asm` keyword is a GNU extension. When writing code that can be compiled with [`-ansi`](https://gcc.gnu.org/onlinedocs/gcc/gcc-command-options/options-controlling-c-dialect.html#cmdoption-ansi) and the various [`-std`](https://gcc.gnu.org/onlinedocs/gcc/gcc-command-options/options-controlling-c-dialect.html#cmdoption-std) options, use `__asm__` instead of `asm` (see [Alternate Keywords](https://gcc.gnu.org/onlinedocs/gcc/extensions-to-the-c-language-family/alternate-keywords.html#alternate-keywords)).
 ```c
 int inlineThis() 
 {

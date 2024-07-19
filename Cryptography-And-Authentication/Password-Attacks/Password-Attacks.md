@@ -1,5 +1,10 @@
 # Password Attacks
 
+Complexity of extended alphabet used by number of Characters for time to crack
+![](charstillcrackgraph-securitydotorg.png)
+[YouTube - Understanding Cryptography for Offensive Security w/ Ayub Yusuf](https://www.youtube.com/watch?v=S8esOtKmFDc) cites Source: https://www.security.org/
+
+
 ## Quick Links
 
 For just [OpenWall wiki's sample hashes can be found here](https://openwall.info/wiki/john/sample-hashes) and similarly [Hashcat's example hashes](https://hashcat.net/wiki/doku.php?id=example_hashes). These are good for rough useful visual guide and naming format for both tools usage. For basic cryptography see [[Cryptography]] and [[De-Or-En-Cryption]] for applications you may need
@@ -177,3 +182,4 @@ Discovered in 1997, is a technique of collecting the NTLM/LM hashes for use in a
 [Salts](https://en.wikipedia.org/wiki/Salt_(cryptography))
 [Slashroot Article](https://www.slashroot.in/how-are-passwords-stored-linux-understanding-hashing-shadow-utils)
 [skullsecurity](https://wiki.skullsecurity.org/index.php?title=Passwords)
+[YouTube - Understanding Cryptography for Offensive Security w/ Ayub Yusuf](https://www.youtube.com/watch?v=S8esOtKmFDc) cites Source: https://www.security.org/

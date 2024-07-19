@@ -124,13 +124,13 @@ Accessing Registry Hives(offline):
 	
 A majority are stored: `C:\Windows\System32\Config`
 
-Hive | Mounting 
---- | ---
-DEFAULT |	(mounted on `HKEY_USERS\DEFAULT`)
-SAM |	(mounted on `HKEY_LOCAL_MACHINE\SAM`)
-SECURITY |	(mounted on `HKEY_LOCAL_MACHINE\Security`)
-SOFTWARE |	(mounted on `HKEY_LOCAL_MACHINE\Software`)
-SYSTEM  |	mounted on `HKEY_LOCAL_MACHINE\System`)
+| Hive     | Mounting                                   |
+| -------- | ------------------------------------------ |
+| DEFAULT  | (mounted on `HKEY_USERS\DEFAULT`)          |
+| SAM      | (mounted on `HKEY_LOCAL_MACHINE\SAM`)      |
+| SECURITY | (mounted on `HKEY_LOCAL_MACHINE\Security`) |
+| SOFTWARE | (mounted on `HKEY_LOCAL_MACHINE\Software`) |
+| SYSTEM   | mounted on `HKEY_LOCAL_MACHINE\System`)    |
 
 ```powershell
 # Windows Registry 

@@ -112,7 +112,7 @@ ssh -i .ssh/id_rsa kali@localhost # logon to remote server with key
 
 
 ## Cracking Files
-Consider [[Cracking-Files]]
+Consider [[Cracking-Files-And-Directories]]
 
 Weird string in a file? Screenshot each! Retain originals
 ```bash

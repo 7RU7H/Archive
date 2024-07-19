@@ -12,7 +12,7 @@ john --list=formats | grep $grep_
 
 ## Scenarios
 
-Cracking a file check out [[Cracking-Files]]
+Cracking a file check out [[Cracking-Files-And-Directories]]
 Have a `/etc/passwd` and `/etc/shadow`
 
 ```bash

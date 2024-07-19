@@ -1,27 +1,27 @@
-
+# Cracking Files and Directories
 #### bitlocker
 - Crack with `bitlocker2john`
 #### .doc files
 
 Office Documents - Crack with `office2john`
 
-#### dmg
+#### `dmg`
 - Crack with `dmg2john`
 
-#### gpg
+#### `gpg`
 
 - Crack with `gpg2john`
-#### hccap
+#### `hccap`
 - Crack with `hccap2john`
 #### Keepass Files
 Keepass .kdbx files - Crack with `keepass2john file.kdbx > kp2John-userkeypass`
-- Can take key files as arguements... `keepass2john -k keyfile file.kdbx > kp2John-userkeypass``
+- Can take key files as arguments... `keepass2john -k keyfile file.kdbx > kp2John-userkeypass``
 ```bash
 for file in $(ls $setofkeyfiles); do keepass2john -k $img db.kdbx | sed "s/db/$file/g"; done >> keyfiles_john
 ```
 [Ippsec](https://www.youtube.com/watch?v=CO_g3wtC7rk) and [0xdf](https://0xdf.gitlab.io/2019/10/26/htb-safe.html)
 
-#### keepass
+#### `keepass`
 - Crack with `keepass2john`
 
 
@@ -47,13 +47,13 @@ Certificate - Crack with `pfx2john`
 
 SSH Keys - Crack with `ssh2john`
 
-#### uaf
+#### `uaf`
 - Crack with `uaf2john`
 #### vncpcap
 - Crack with `vncpcap2john`
 #### wpapcap
 - Crack with `wpapcap2john`
-#### Zip files
+#### `zip` files
 
 Zip files - Crack with `zip2john` 
 - Hashcat mode 17200
