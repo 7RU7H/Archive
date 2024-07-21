@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cryptography-And-Authentication/TALK-Understand-Cryptography-for-Offensive-Security-with-Ayub-Yusuf.md",
+                "file": "Development/Languages/Go/Useful-Go.md",
                 "mode": "source",
                 "source": false
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cryptography-And-Authentication/TALK-Understand-Cryptography-for-Offensive-Security-with-Ayub-Yusuf.md",
+                "file": "Development/Languages/Go/Useful-Go.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cryptography-And-Authentication/TALK-Understand-Cryptography-for-Offensive-Security-with-Ayub-Yusuf.md",
+                "file": "Development/Languages/Go/Useful-Go.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cryptography-And-Authentication/TALK-Understand-Cryptography-for-Offensive-Security-with-Ayub-Yusuf.md"
+                "file": "Development/Languages/Go/Useful-Go.md"
               }
             }
           },
@@ -209,8 +209,9 @@
   },
   "active": "16afc56c9be0f29c",
   "lastOpenFiles": [
-    "Cryptography-And-Authentication/Password-Attacks/Password-Attacks.md",
+    "Development/Languages/Go/Golang.md",
     "Cryptography-And-Authentication/TALK-Understand-Cryptography-for-Offensive-Security-with-Ayub-Yusuf.md",
+    "Cryptography-And-Authentication/Password-Attacks/Password-Attacks.md",
     "Images/charstillcrackgraph-securitydotorg.png",
     "Networks/Network-Theory/Network-Protocols/SSL-TLS.md",
     "Tools/Useful-Online-Software/CyberChef.md",
@@ -237,7 +238,6 @@
     "Tools/Forensics/FTK-Imager.md",
     "Security-Disciplines/Digital-Forensics/Malicious-Documents/MalDoc-Analysis.md",
     "Security-Disciplines/Digital-Forensics/Windows-Forensics/Windows-Registry-Forensics.md",
-    "Reverse-Engineering/Reverse-Engineering.md",
     "Images/spqa-miessler-march2023-medium.png",
     "Security-Disciplines/Digital-Forensics/Malicious-Documents",
     "Images/kamkars-fav-diy-hwh-basics-tools.png",
