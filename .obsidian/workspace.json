@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Development/Languages/Go/Useful-Go.md",
+                "file": "Cryptography-And-Authentication/Key-Management/Key-Management.md",
                 "mode": "source",
                 "source": false
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Development/Languages/Go/Useful-Go.md",
+                "file": "Cryptography-And-Authentication/Key-Management/Key-Management.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Development/Languages/Go/Useful-Go.md",
+                "file": "Cryptography-And-Authentication/Key-Management/Key-Management.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Development/Languages/Go/Useful-Go.md"
+                "file": "Cryptography-And-Authentication/Key-Management/Key-Management.md"
               }
             }
           },
@@ -209,14 +209,18 @@
   },
   "active": "16afc56c9be0f29c",
   "lastOpenFiles": [
+    "Cryptography-And-Authentication/Key-Management/Credential-Management.md",
+    "Cryptography-And-Authentication/Key-Management/Key-Management.md",
+    "Development/Languages/Go/Useful-Go.md",
+    "Cryptography-And-Authentication/Key-Management",
+    "Development/Languages/Bash/Bash.md",
+    "Tools/C2/Sliver/TALK-Pwning-the-Domain-With-Sliver-Framework.md",
     "Development/Languages/Go/Golang.md",
     "Cryptography-And-Authentication/TALK-Understand-Cryptography-for-Offensive-Security-with-Ayub-Yusuf.md",
     "Cryptography-And-Authentication/Password-Attacks/Password-Attacks.md",
     "Images/charstillcrackgraph-securitydotorg.png",
     "Networks/Network-Theory/Network-Protocols/SSL-TLS.md",
     "Tools/Useful-Online-Software/CyberChef.md",
-    "Development/Languages/Bash/Bash.md",
-    "Tools/C2/Sliver/TALK-Pwning-the-Domain-With-Sliver-Framework.md",
     "Cryptography-And-Authentication/Cracking-Files-And-Directories.md",
     "Cryptography-And-Authentication/Cryptography-Gone-Wrong.md",
     "Cryptography-And-Authentication/Diffie-Hellman.md",
@@ -235,9 +239,6 @@
     "Tools/Reverse-Engineering/scdbg.md",
     "Tools/Forensics/ViperMonkey.md",
     "().md",
-    "Tools/Forensics/FTK-Imager.md",
-    "Security-Disciplines/Digital-Forensics/Malicious-Documents/MalDoc-Analysis.md",
-    "Security-Disciplines/Digital-Forensics/Windows-Forensics/Windows-Registry-Forensics.md",
     "Images/spqa-miessler-march2023-medium.png",
     "Security-Disciplines/Digital-Forensics/Malicious-Documents",
     "Images/kamkars-fav-diy-hwh-basics-tools.png",
@@ -250,7 +251,6 @@
     "Networks/Network-Theory/Network-Protocols/DNS",
     "Tools/Architecture",
     "Tools/Documentation",
-    "Tools/AI",
     "Images/whatisthisdebiandocs-1.png",
     "Images/whatisthisdebiandocs.png",
     "Images/linux-persistence-map.png",

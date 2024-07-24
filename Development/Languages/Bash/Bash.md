@@ -233,6 +233,11 @@ array=("${array[@]// /_}") # recreate array with spaces in elements as underscor
 array=( "${array[@]:2:3}" )
 echo "${array[1]}"
 echo ${!array[@]}
+
+# Print all elements each of them on new line.
+for item in "${array[@]}"; do
+    echo "$item"
+done
 ```
 
 #### Session portability
