@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cryptography-And-Authentication/Key-Management/Key-Management.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
                 "mode": "source",
                 "source": false
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cryptography-And-Authentication/Key-Management/Key-Management.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cryptography-And-Authentication/Key-Management/Key-Management.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cryptography-And-Authentication/Key-Management/Key-Management.md"
+                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md"
               }
             }
           },
@@ -209,8 +209,8 @@
   },
   "active": "16afc56c9be0f29c",
   "lastOpenFiles": [
-    "Cryptography-And-Authentication/Key-Management/Credential-Management.md",
     "Cryptography-And-Authentication/Key-Management/Key-Management.md",
+    "Cryptography-And-Authentication/Key-Management/Credential-Management.md",
     "Development/Languages/Go/Useful-Go.md",
     "Cryptography-And-Authentication/Key-Management",
     "Development/Languages/Bash/Bash.md",
