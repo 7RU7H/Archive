@@ -1,6 +1,6 @@
 # Detecting Deception
 
-Beware of long standing terrible unscientific material regarding this topic. 
+Beware of long standing terrible unscientific material regarding this topic as if it is too good to be true it probably is, does it have proof consider: [YouTube Patrick Boyle - History's Greatest Conman](https://www.youtube.com/watch?v=oWIqI11wtZ8).
 
 To detect deception we have to remember:
 - There is no Pinocchio effect! There is no Paralinguistic features indicative of deception.
@@ -39,3 +39,4 @@ To detect deception we have to remember:
 ## References
 
 [Youtube - Joe Navarro - Interrogation Techniques](https://www.youtube.com/watch?v=KfkOSYpMToo)
+[YouTube Patrick Boyle - History's Greatest Conman](https://www.youtube.com/watch?v=oWIqI11wtZ8)

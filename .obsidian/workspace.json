@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+                "file": "Brain-Hacking/Problem-Solving/Problems-Compass.md",
                 "mode": "source",
                 "source": false
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+                "file": "Brain-Hacking/Problem-Solving/Problems-Compass.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+                "file": "Brain-Hacking/Problem-Solving/Problems-Compass.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md"
+                "file": "Brain-Hacking/Problem-Solving/Problems-Compass.md"
               }
             }
           },
@@ -209,6 +209,15 @@
   },
   "active": "16afc56c9be0f29c",
   "lastOpenFiles": [
+    "Brain-Hacking/Problem-Solving/Problem-Solving.md",
+    "Brain-Hacking/Problem-Solving/Problems-Compass.md",
+    "Brain-Hacking/Philosophy/Meta-Methodology.md",
+    "Brain-Hacking/Philosophy/Hacking-Meta-Hacking-Problems.md",
+    "Brain-Hacking/Problem-Solving/Reasoning-Typology.md",
+    "Brain-Hacking/Problem-Solving/Problem-Microscope.md",
+    "Social-Engineering/Detecting-Deception.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/System-Group-That-Grants-Linux-Privileges.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
     "Cryptography-And-Authentication/Key-Management/Key-Management.md",
     "Cryptography-And-Authentication/Key-Management/Credential-Management.md",
     "Development/Languages/Go/Useful-Go.md",
@@ -227,18 +236,9 @@
     "Cryptography-And-Authentication/RSA-Encryption.md",
     "Cryptography-And-Authentication/Replay-Attacks.md",
     "Cryptography-And-Authentication/De-Or-En-Cryption.md",
-    "Brain-Hacking/Problem-Solving/Problem-Microscope.md",
     "Development/Languages/C/Useful-C.md",
-    "Software/Operating-Systems/Linux/Distributions/Arch/Arch.md",
-    "Software/Operating-Systems/Linux/Distributions/OpenSUSE/OpenSUSE.md",
     "Software/Operating-Systems/Linux/Distributions/OpenSUSE",
     "Software/Operating-Systems/Linux/Distributions/Arch",
-    "Cryptography-And-Authentication/Cryptography.md",
-    "Cryptography-And-Authentication/Cryptography-Glossary.md",
-    "Software/Operating-Systems/Windows/Windows-Concepts/Windows-Registry.md",
-    "Tools/Reverse-Engineering/scdbg.md",
-    "Tools/Forensics/ViperMonkey.md",
-    "().md",
     "Images/spqa-miessler-march2023-medium.png",
     "Security-Disciplines/Digital-Forensics/Malicious-Documents",
     "Images/kamkars-fav-diy-hwh-basics-tools.png",
