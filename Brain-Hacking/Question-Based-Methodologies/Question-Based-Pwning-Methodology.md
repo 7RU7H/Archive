@@ -23,17 +23,39 @@ Null Space -
 
 - Consider how your problem is on OSI layer - Please Do Not Throw Away Sausage Pizza 
 
+WiRE
+- How can I `Write` to ...?
+- How can I `...is it a Rabbithole?`
+- How can I `Read` from ...?\
+- How can I `Execute` something else?
 
+Is this template effective?
 
+[[Reverse-Engineering]] with [[Question-Based-Reversing-Methodology]] 
 
+Architectural Nuances and Idiomatic to chipset
 
+Timing attacks
 
+Side Channels
 
+System Calls
+
+Memory Protections
+	[[ASLR]]
+    [[RELRO]]
+    [[Stack-Canaries]]
+    [[NX]]
+	[[PIE]]
+    [[FORTIFY]]
+
+Hooking
 
 
 
 Pwning
 - [[Tools/Binary-Exploitation-Tools/Pwntools|Pwntools]]
+	- Are you using `Pwntools` effectively?
 - Low hanging fruits?
 	- Any interesting [[Binary-Exploitation-Enumeration]] through `strings` and metadata
 - Have you run `ltrace ./binary`?

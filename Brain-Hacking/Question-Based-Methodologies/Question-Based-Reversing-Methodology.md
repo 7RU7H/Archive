@@ -26,8 +26,16 @@ Null Space -
 
 
 
+What are you looking for?
+How can we extract it?
 
+What is the flowchart?
 
+Are you here to debug?
+- Can we extract and isolate
+
+Is it malware, if so then...?
+- [[Obfuscation-Principles]]
 
 
 
@@ -43,3 +51,4 @@ Reversing
 - **Do not assume** the order of variables pushed to the stack, it depends on compilation and language - there is very limited information about this... have you tested and noted the ordering of pushes to memory or stack of variables,data, etc?
 	- What is a total of all variables placed on the stack?
 		-  [[Ghidra-Cheatsheet]] per function with `-0xSignedOffsetAsHex:NumberOfAVal`
+

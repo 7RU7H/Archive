@@ -1,12 +1,29 @@
 # Question Based Hacking Methodology
 
+Changes to be made
+
+formating with #### 
+
+Hacking is Generalised Security and System mindset and thinking
+- True/False Positives should be there not in the individual
+
+Noting-Questions
+Web to Web Hacking
+SE, \*Ishing to SE
+Penetration-Testing 
+Red Team
+Active Directory Hacking
+Cloud Hacking 
+Hacking Hackers 
+CTI QB M? 
+Systemic Hacking - Systems Alchemy
 
 
 ## Terminology
 
 Brief disclosure on terminology, if there is a better way I will replace it
 
-#### Intel vs Information vs data:
+#### Intel vs Information vs Data:
 
 Intelligence - Data that is packaged as information that is actionable for humans 
 Information - Machine information provided by querying machines that has context
@@ -41,27 +58,61 @@ Null Space -
 #### Notes to tidy 
 
 - Basics are fundamentals and forming questions are vital for answers, result, clues, etc
-What
-Why
-Where
-How
-Who 
 
 
-What systems are online, but available
-Who can connect
-What is allowed to connect - type of connection 
-What is connected to what
-How is it connected
-How are you connecting
-What permissions do you have
-How can use current level of access to get more access
 
-Where can input be provided 
-What can be requested
+- System Status
+	- Online?
+	- Offline?
+		- Can we affect boot?
+	- Backed-up?
+		- Are their credentials or data 
+		- Can infect to affect a environment wide restoration that is instant re-compromise
+	- Soft Deleted?
+		- How can legitimise restoration for our objectives?
+		- Are accounts, data, still usage in active environment
+	- Hard Deleted?
+		- Why? 
+			- Was it a mistake or..
+			- Something more weird like, test environments in Cloud
+		- What artefacts, credentials or data has been backup?
 
+
+
+
+Compromised an Account..?
+- Access?
+- Permissions?
+- Credentials, Tickets, Tokens, Keys, etc...
+- How to use the above and situation knowledge to gain more of the above ...
+
+
+Input?
+- To where, how, method?
+	- [[HTTP-Request-Smuggling]]
+	- [[DDoS-Attacks]], [[DOS-Attacks]]
+	- Multiple streams of input data to potential affect [[Race-Conditions]] 
+Processing?
+- What systems process the information?
+	- How?
+- What transformations are made from input?
+	- What data formatting
+	- What systems parse that data?
+	- What system format data? 
+	- Example: API Call for some JSON to the another API call to a database query to Authorise login? 
+Output
+- White Box output?
+- Black Box output?
+
+
+Where, how and what can we do to the input to meet objectives?
+- 
+What and how can be requested?
+- Protocol
+	- Methods
+What is the response?
 What does the output suggest?
-- Error - information disclosure  
+- Error and debug information - Information disclosure  
 
 What is regular userland purpose
 What is does it run

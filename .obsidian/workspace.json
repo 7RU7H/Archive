@@ -37,7 +37,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Brain-Hacking/Problem-Solving/Problems-Compass.md",
+                "file": "Brain-Hacking/Question-Based-Methodologies/Question-Based-Hacking-Methodology.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a32e313d8855d371",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Brain-Hacking/Problem-Solving/Reasoning-Typology.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,6 +81,24 @@
           }
         ],
         "currentTab": 2
+      },
+      {
+        "id": "e8bb271cc88d00ee",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "32d930d9ca4322a0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Brain-Hacking/Question-Based-Methodologies/Question-Based-Hacking-Methodology.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -134,7 +164,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Brain-Hacking/Problem-Solving/Problems-Compass.md",
+                "file": "Brain-Hacking/Question-Based-Methodologies/Question-Based-Hacking-Methodology.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +181,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Brain-Hacking/Problem-Solving/Problems-Compass.md",
+                "file": "Brain-Hacking/Question-Based-Methodologies/Question-Based-Hacking-Methodology.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +204,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Brain-Hacking/Problem-Solving/Problems-Compass.md"
+                "file": "Brain-Hacking/Question-Based-Methodologies/Question-Based-Hacking-Methodology.md"
               }
             }
           },
@@ -209,11 +239,16 @@
   },
   "active": "16afc56c9be0f29c",
   "lastOpenFiles": [
+    "Brain-Hacking/Question-Based-Methodologies/Question-Based-Reversing-Methodology.md",
+    "Brain-Hacking/Question-Based-Methodologies/Question-Based-Pwning-Methodology.md",
+    "Brain-Hacking/Question-Based-Methodologies/Question-Based-OSINT-Methodology.md",
+    "Brain-Hacking/Question-Based-Methodologies/Question-Based-Forensics-Methodology.md",
+    "Brain-Hacking/Problem-Solving/Philosophical-Razors.md",
+    "Brain-Hacking/Problem-Solving/Reasoning-Typology.md",
+    "Brain-Hacking/Problem-Solving/Problem-Compass.md",
     "Brain-Hacking/Problem-Solving/Problem-Solving.md",
-    "Brain-Hacking/Problem-Solving/Problems-Compass.md",
     "Brain-Hacking/Philosophy/Meta-Methodology.md",
     "Brain-Hacking/Philosophy/Hacking-Meta-Hacking-Problems.md",
-    "Brain-Hacking/Problem-Solving/Reasoning-Typology.md",
     "Brain-Hacking/Problem-Solving/Problem-Microscope.md",
     "Social-Engineering/Detecting-Deception.md",
     "Post-Exploitation/Privilege-Escalation/Linux/System-Group-That-Grants-Linux-Privileges.md",
@@ -232,11 +267,6 @@
     "Tools/Useful-Online-Software/CyberChef.md",
     "Cryptography-And-Authentication/Cracking-Files-And-Directories.md",
     "Cryptography-And-Authentication/Cryptography-Gone-Wrong.md",
-    "Cryptography-And-Authentication/Diffie-Hellman.md",
-    "Cryptography-And-Authentication/RSA-Encryption.md",
-    "Cryptography-And-Authentication/Replay-Attacks.md",
-    "Cryptography-And-Authentication/De-Or-En-Cryption.md",
-    "Development/Languages/C/Useful-C.md",
     "Software/Operating-Systems/Linux/Distributions/OpenSUSE",
     "Software/Operating-Systems/Linux/Distributions/Arch",
     "Images/spqa-miessler-march2023-medium.png",

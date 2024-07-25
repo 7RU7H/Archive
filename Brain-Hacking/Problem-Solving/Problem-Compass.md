@@ -1,4 +1,4 @@
-# Problems Compass
+# Problem Compass
 
 **This section contains an obundasnce Authorial Opinions and Philosophising that some may find offensive, junk or not adhering to their reality**, I am very happy to bow to the **scientific reasoning and critical reasoning of others** done with quality assured methods. Also this model contain potshots and people and nonsense that is high circulated for profit and I if those that participate conceptual racketeering should do so for free if it was that important that it trumps established reasoning and methods to reason about anything that by design seek to improve on the what been established in a provable way.
 

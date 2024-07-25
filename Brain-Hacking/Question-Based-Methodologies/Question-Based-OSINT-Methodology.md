@@ -28,10 +28,20 @@ Null Space -
 
 
 
+[[Reasoning-Typology]]
+Abductive Reasoning - simplest explanation is most likely
+Deductive Reasoning - premise with results which require both to be true
+Inductive Reasoning - generalisations, principles applied to observations 
+
+[[Rabbitholes]] exist 
+
+*Homebrew* tooling that I am working on here and there that you should not be taken seriously as I have real experience other than struggling with CTFs:
+[[Problem-Compass]], [[Problem-Microscope]]
 
 
+Effective [[Search-Engine-Dorking]]
 
-
+Prompts and AI Chatbots a auxiliary way to condense historic searchable data, beware of the risks of AI usage and validity 
 
 
 

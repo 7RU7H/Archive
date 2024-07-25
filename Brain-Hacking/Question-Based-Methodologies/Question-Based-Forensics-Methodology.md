@@ -1,11 +1,26 @@
-
 # Question Based Forensics Methodology
 
 
-## Reasoning about information
+
+Forensic activities are the attempt to result in a graph that is hyper-decriminative distinctive nodes and edges as sets of nodes and edges. 
+
+Similar to gravity the the forensician task is to separate fields of connection that form as close to the actual events
+
+It requires meta and adversarial knowledge of activities to solve complex chains of insight and perspective relative problems. 
+
+It always has some implementation of timelining.
+
+Often requires tangential, passive and very indirect sourcing of information as a reconnaissance activity, but analytical and operating with past information more than present information.
 
 [[Reasoning-Typology]]
+Abductive Reasoning - simplest explanation is most likely
+Deductive Reasoning - premise with results which require both to be true
+Inductive Reasoning - generalisations, principles applied to observations 
 
+[[Rabbitholes]] exist 
+
+*Homebrew* tooling that I am working on here and there that you should not be taken seriously as I have real experience other than struggling with CTFs:
+[[Problem-Compass]], [[Problem-Microscope]]
 #### True/False (Positives and Negatives) and the Null Space 
 
 True Positives - Detected and is vulnerable
@@ -31,6 +46,16 @@ Consider Data sets
 - True-Negatives
 - False-Positives
 - Real world examples: open source known malicious; [[MITRE-ATT&CK]] framework, etc
+
+
+How to not contaminate and store data? - Data Retention
+How to effectively process data without alter the original Data Processing 
+Informational Evaluation 
+
+
+- Reasoning about information
+	- [[Reasoning-Typology]]
+
 #### Thought Process Considerations
 
 
