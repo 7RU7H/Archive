@@ -4,6 +4,8 @@
 [YouTube: Systems Alchemy: The Transmutation Of Hacking - The Grugq](https://www.youtube.com/watch?v=P6PnhDfWvx0)
 *Everywhere we look we find complex systems creating, enabling, controlling and shaping the fabric of modern life. The critical infrastructure of society is dependent on systems, mostly privately owned, that have same the inherent problems of all complex systems. In this keynote we examine the properties of systems and how understanding them creates new opportunities for hacking. Adopting systems thinking allows hackers to target and manipulate everything from critical social infrastructure to the very physics of cyberspace. === Thaddeus Grugq (thegrugq) has been a cybersecurity pioneer for over two decades. His early work created the field of counter forensics. Grugq was actively involved in the information warfare campaign of 2016. More recently he has been managing The Glasshouse Center, a cyber strategy and policy forum examining the nature of cyber conflict. Grugq has been quoted on cybersecurity in The Washington Post, The New York Times, BBC, Vice News, and numerous other news media.*
 
+Updated with [t2/2024 - Systems Alchemy: The Transmutation of Hacking (Thaddeus grugq)](https://www.youtube.com/watch?v=JYhIui542Xg) - 26/07/2024
+
 Rules from this:
 1. System only understand their input
 	- If the system didn't see it, it didn't happen
@@ -16,7 +18,7 @@ Rules from this:
 
 
 Yandex.Taxi - 1/9/2022:
-Does this count as System Hacking? No discussion  was that is not Technical no, **BUT it is** the **entirity of Yandex** got hacked
+Does this count as System Hacking? No discussion  was that is not Technical no, **BUT it is** the **entirety of Yandex** got hacked
 
 Lead Primitives into effects gold
 
@@ -29,24 +31,42 @@ It is a Sociotechno System:
  Human can detect something is going wrong
 - But the system can not
 
-Grupq says this is difficult to predict this as in all computer science theory, but there is Test Driven development..
+Grugq says this is difficult to predict this as in all computer science theory, but there is Test Driven development..
 
-Systems are only as good as their sensory organs
+
+Systems are very easy:
+- Elements
+- Interconnection
+- Function/Purpose
+
+But complex system have unexpected behaviour.
 
 Rules:
-1. System only understand their input
+1. System only understand input with respect to sensory input (at any level) systems (sensory organs)
+	- Systems are only as good as its sensory organs
 	- If the system didn't see it, it didn't happen
 	- If it did it did happen
 2. Important variable are found by accident - I disagree, but proof exist otherwise 
-	- Easy to verify problems after
+	- Easy to retroactively verify problems
 3. Its systems all the way down
+4. Policy affects operational environment, unless rules are not enforceable (or APT does not care) or underlying infrastructure is not directly controlled. 
+5. Physics of cyber is determined by shareholder value
 
+liblzma Backdoored by probably Russia - 3 years of work
+- Hacked the Open Source System
+	- SE the Developer with
+		- Meaningful contribution
+		- Fake discourse with Dev to control the control of the repo
 
-Cyber Space is all controlled by Private Companies and control the physics of that space:
+All of Cyber is controlled by Company; Cyber Space is all controlled by Private Companies and control the physics of that space:
 - Physical infrastructure
+	- Telcos, ISPs, Internet Giants, etc, etc
 - Digital infrastructure
+	- Policy affects operational environment
 
-It is controlled by Company Policy; Russia State Propaganda was controlled by Facebook (now Meta) company Policy about how to operate as a by-product of the changes in terms of use. Policy alters the environments, simply Ukraine cutting all Ukraine-Russia Telcos change the environment of the invading forces.
+It is controlled by Company Policy; Russia State Propaganda was controlled by Facebook (now Meta) company Policy about how to operate as a by-product of the changes in terms of use. Policy alters the environments, simply Ukraine cutting all Ukraine-Russia Telcos change the environment of the invading forces on the 24th of February 2022. 
+
+Physics of cyber is determined by shareholder value
 
 Authorial Notes: 
 - Although this example is kind simple and neat here are better examples:
@@ -60,7 +80,7 @@ Authorial Notes:
 	- Communications:
 		- [Crypto AG](https://en.wikipedia.org/wiki/Crypto_AG)
 		- Printing Press:
-			- Need of monastic organised caligraphers and informational control by the Papal institutions - was made open source subverting 
+			- Need of monastic organised calligraphers and informational control by the Papal institutions - was made open source subverting 
 	- Kinetic Warefare
 		- Mongol Biological Warfare of catapulting the dead over seized fortifications
 		- Napalming a jungle in Vietnam
@@ -70,10 +90,62 @@ The physics of cyber is determined by shareholder value. Brian Snow, former dire
 
 If Google wanted to shut down all NSA cyber operations in the Netherlands they could. It is just a bad political decisions in the Netherlands, but could Chad, South Sudan or Burma? Interestingly.
 
-Robotaxies: Systems in Human space are not design to handle the messiness of those spaces. Funny videos not included here. People behave really weirdly in these - basically the treat them as Hotels.
+Robotaxies: Systems in Human space are not design to handle the messiness of those spaces. Funny videos not included here. When RoboTaxi's freak out they stop
+- Running through yellow emergency tape and ignoring warning signs to enter a street strewn with storm-damaged electrical wires, then drving past emergency vehicles with some of those wires snarled around rooftop lidar sensors
+- Twice blocking firehouse driveways, require another firehouse to dispatch an ambulance to medical emergency
+- Sitting motionless on a one-way street and forcing a firetruck to backup and take another route to a blazing building
+- Pulling up behind a firetruck that was flashing its emergency lights and parking there, interfering with firefighters unloading ladders
+- Entering an active fire scene, then paring with one of its tires on top of a fire hose.
+- Telsa attacked by a truck with traffic light being transported on the back of it
+- Food delivery vehicle going through a crime scene:
+	- Important variables are found by accident
+- Driverless vehicle pulled over, but the because the police man walks away or the vehicle is not programmed for the exchange it drives off
+People behave really weirdly in these as well
+- basically the treat them as Hotels.
+- Traffic cone on the hood of the vehicle will stop the vehicle 
 
 Complex System fail in complex ways, because Reality is more complex than it seems.
+- When modelling reality the result Models then needing to continually be improved with more granularity to be closer 
 
-Systems do not adapt to people 
+Systems do not adapt to people.
+- Systems are easier to put than to take down
+- People adapt to systems
+- Updating system take people time and work
+- Organisations of people then adapt to systems in ways that require less time and work and not care about the objective big-picture what should be done.
+
+Questions:
+- Will the US Law Ethical Hacker help Boards of Corporations by Law?
+	- Answer: No
+		- Will any law hold Board of Directors accountable entirely? 
+		- Microsoft's backsliding causing actual national security problems - because of their lobbying to not be held accountable
+			- Responsible disclosure and vendor control
+			- Lobby against exploiting commercial operating systems including the US Gov.
+- What is the method to understand the system you are building?
+	- Excellent question
+		- Information Flows
+		- Jargons
+		- Speed Stock and Depletion
+		- Systems thinking is to big for practical use its more for practical - Good Luck
+		- https://en.wikipedia.org/wiki/Systemantics
+- How much exploit enumeration not be a guessing game?
+	- Implicit assumption are part of guaranteed complex failure
+	- The more experience from Intelligence Analysts is actually better than what models they use
+- Automated response systems are a wishlist item for C-Suite, how to convince them otherwise?
+	- Sorry doesn't answer your question
+	- AI good for certain things if you are already an expert 
+	- AI cars turn a driver in to a driving instructor
+	- Axiomatically a bad for code
+	- AI has the same sort of voice, so there is no flavour
+- If there was a accident (in reference to the robot going in crime and accident zone) could you not create buffer zone
+
+52:Pre not finished
 
 
+
+
+
+## References
+
+[Crypto AG](https://en.wikipedia.org/wiki/Crypto_AG)
+[YouTube: Systems Alchemy: The Transmutation Of Hacking - The Grugq](https://www.youtube.com/watch?v=P6PnhDfWvx0)
+[t2/2024 - Systems Alchemy: The Transmutation of Hacking (Thaddeus grugq)](https://www.youtube.com/watch?v=JYhIui542Xg)

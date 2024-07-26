@@ -73,7 +73,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+                "file": "Securing-Networks-And-Systems/TALK-Systems-Alchemy-The-Transmutation-Of-Hacking.md",
                 "mode": "source",
                 "source": false
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Browsers",
+                "query": "Systems-",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -126,7 +126,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -146,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+                "file": "Securing-Networks-And-Systems/TALK-Systems-Alchemy-The-Transmutation-Of-Hacking.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +164,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+                "file": "Securing-Networks-And-Systems/TALK-Systems-Alchemy-The-Transmutation-Of-Hacking.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +187,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md"
+                "file": "Securing-Networks-And-Systems/TALK-Systems-Alchemy-The-Transmutation-Of-Hacking.md"
               }
             }
           },
@@ -221,6 +222,7 @@
   },
   "active": "a9d60f0b876ccccd",
   "lastOpenFiles": [
+    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
     "Tools/Web-Applications-Attacking/Browsers.md",
     "Development/Languages/JavaScript/Useful_JavaScript.md",
     "Software/Services/Package-Managers/NPM.md",
@@ -241,7 +243,6 @@
     "Brain-Hacking/Problem-Solving/Problem-Microscope.md",
     "Social-Engineering/Detecting-Deception.md",
     "Post-Exploitation/Privilege-Escalation/Linux/System-Group-That-Grants-Linux-Privileges.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
     "Cryptography-And-Authentication/Key-Management/Credential-Management.md",
     "Development/Languages/Go/Useful-Go.md",
     "Cryptography-And-Authentication/Key-Management",
