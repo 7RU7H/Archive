@@ -33,8 +33,19 @@
 		- Authenticate properly
 	- Key Storage - Encryption at rest with your storage solutions
 		- Provide storage solutions - decide before users do
+			- Cloud based
+				- [AWS Key Management Service](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html) (KMS)
+				- [Azure Key Vault](https://learn.microsoft.com/en-us/azure/key-vault/general/basic-concepts)
+				- [Google Cloud Key Management Service](https://cloud.google.com/security/products/security-key-management?hl=en) provide managed environments for handling cryptographic keys.
 		- Encrypted databases 
 		- Specialised [hardware security modules](https://cpl.thalesgroup.com/en-gb/encryption/hardware-security-modules) (HSMs)
+		- [[RBAC]] - Role-Based Access Control
+		- [[ABAC]] - Attribute-Based Access Control 
+			- More Granular than RBAC so should only be used sparingly to avoid complexity creep and also avoid solving problems with micro adjustments rather than focusing Top-down 
+		- [[Authentication]] implemented properly and upgraded over time
+		- Accountability
+			- Auditing
+			- Monitoring
 	- Key Usage - Authenticate properly, Access Control properly
 	- Key Backup and Recovery - Encryption at rest, purge periods (soft delete for a specified number of days)
 	2. Key Rotation

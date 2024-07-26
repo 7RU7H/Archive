@@ -107,11 +107,19 @@ Different ways variable create keywords
 | Block Scope         | N/A   | X     | X       |
 | Redeclare           | X     | N/A   | N/A     |
 | Reassign            | X     | X     | N/A     |
+|                     |       |       |         |
 
+## Source Code
 
-## Minification
+#### Minification
 
-Minification compresses JS files by removing unnecessary content: ws, comment, also with and as part of dev obfuscation. Various JS library use various techniques to minified the source code, obfuscating JS is make the source code incredibly slow. On top of it being JS... JS beautifier is a good tool to de-minify
+Minification compresses JS files by removing unnecessary content: ws, comment, also with and as part of dev obfuscation. Various JS library use various techniques to minified the source code, obfuscating JS is make the source code incredibly slow. On top of it being JS... 
+\
+
+- JS beautifier is a good tool to de-minify.
+- Either [[CyberChef]] your minified code or [lissy93](https://notes.aliciasykes.com/40065/50-awesome-dev-tool-tips):
+- Under `⋮` → `Settings` → `Experiments` Select `Automatically pretty print in the Sources Panel`.
+
 
 ## Files  
 
@@ -135,3 +143,4 @@ stopaimmediatePropatio()
 [THM Room - Javascript Basics](https://tryhackme.com/r/room/javascriptbasics)
 [w3schools HTML DOM write()](https://www.w3schools.com/jsref/met_doc_write.asp)
 [w3schools JS Versions](https://www.w3schools.com/js/js_versions.asp)
+[lissy93 Dev Tips](https://notes.aliciasykes.com/40065/50-awesome-dev-tool-tips)

@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Brain-Hacking/Question-Based-Methodologies/Question-Based-Hacking-Methodology.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
@@ -73,32 +73,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Software/Operating-Systems/Linux/Distributions/Arch/Arch.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
-      },
-      {
-        "id": "e8bb271cc88d00ee",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "32d930d9ca4322a0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Brain-Hacking/Question-Based-Methodologies/Question-Based-Hacking-Methodology.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -135,7 +117,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "Browsers",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -164,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Brain-Hacking/Question-Based-Methodologies/Question-Based-Hacking-Methodology.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -181,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Brain-Hacking/Question-Based-Methodologies/Question-Based-Hacking-Methodology.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -204,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Brain-Hacking/Question-Based-Methodologies/Question-Based-Hacking-Methodology.md"
+                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md"
               }
             }
           },
@@ -237,8 +219,15 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "16afc56c9be0f29c",
+  "active": "a9d60f0b876ccccd",
   "lastOpenFiles": [
+    "Tools/Web-Applications-Attacking/Browsers.md",
+    "Development/Languages/JavaScript/Useful_JavaScript.md",
+    "Software/Services/Package-Managers/NPM.md",
+    "Cryptography-And-Authentication/Key-Management/Key-Management.md",
+    "Software/Operating-Systems/Linux/Distributions/Arch/Arch.md",
+    "README.md",
+    "Brain-Hacking/Question-Based-Methodologies/Question-Based-Hacking-Methodology.md",
     "Brain-Hacking/Question-Based-Methodologies/Question-Based-Reversing-Methodology.md",
     "Brain-Hacking/Question-Based-Methodologies/Question-Based-Pwning-Methodology.md",
     "Brain-Hacking/Question-Based-Methodologies/Question-Based-OSINT-Methodology.md",
@@ -253,20 +242,13 @@
     "Social-Engineering/Detecting-Deception.md",
     "Post-Exploitation/Privilege-Escalation/Linux/System-Group-That-Grants-Linux-Privileges.md",
     "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
-    "Cryptography-And-Authentication/Key-Management/Key-Management.md",
     "Cryptography-And-Authentication/Key-Management/Credential-Management.md",
     "Development/Languages/Go/Useful-Go.md",
     "Cryptography-And-Authentication/Key-Management",
     "Development/Languages/Bash/Bash.md",
     "Tools/C2/Sliver/TALK-Pwning-the-Domain-With-Sliver-Framework.md",
     "Development/Languages/Go/Golang.md",
-    "Cryptography-And-Authentication/TALK-Understand-Cryptography-for-Offensive-Security-with-Ayub-Yusuf.md",
-    "Cryptography-And-Authentication/Password-Attacks/Password-Attacks.md",
     "Images/charstillcrackgraph-securitydotorg.png",
-    "Networks/Network-Theory/Network-Protocols/SSL-TLS.md",
-    "Tools/Useful-Online-Software/CyberChef.md",
-    "Cryptography-And-Authentication/Cracking-Files-And-Directories.md",
-    "Cryptography-And-Authentication/Cryptography-Gone-Wrong.md",
     "Software/Operating-Systems/Linux/Distributions/OpenSUSE",
     "Software/Operating-Systems/Linux/Distributions/Arch",
     "Images/spqa-miessler-march2023-medium.png",
