@@ -74,7 +74,7 @@ sed -i 's/exec(/passthru(/g' $file
 sed -i 's/system(/passthru(/g' $file
 ```
 
-PHP - see [[Useful_PHP]]
+PHP - see [[PHP]]
 ```php
 eval() -> get_file_contents
 

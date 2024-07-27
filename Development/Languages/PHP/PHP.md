@@ -1,4 +1,4 @@
-# Useful_PHP
+# Useful PHP
 
 [RTFM here is a documentation](https://www.php.net/) below is just useful PHP with description how its workings. One of the many Web-Hackronomicons of eye-brow-raising levels of secure language design with the insanity of multiple function calls capable of doing the exact same thing. Try to remember which are all of the vulnerable code in which server context and user context when humans like trust and favourites, where is the person that shouts remember the Pwhpaarrr 1.69 version of with a similar function called that is allowed by some design loop hole. 
 
@@ -20,6 +20,12 @@ php -S 0.0.0.0:8000
 Execute file:
 ```bash
 php file.php
+```
+
+
+```php
+
+// comm/ents
 ```
 
 

@@ -1,4 +1,3 @@
-
 # Systems Alchemy: The Transmutation Of Hacking - The Grugq
 
 [YouTube: Systems Alchemy: The Transmutation Of Hacking - The Grugq](https://www.youtube.com/watch?v=P6PnhDfWvx0)

@@ -1,14 +1,17 @@
-# SQLMAP
-
-This is going to just the help page until I passed OSCP and most to clean up other [[SQL-Injection]] related files.
+# `sqlmap`
 
 
 ```bash
 sqlmap -u $URL
 ```
 
+```bash 
+--level # 1-5
+--risk # 1-3 
+```
 
-Burp plus SQLMap
+
+[[BurpSuite]] plus SQLMap
 `Proxy request -> right-click -> Save item`
 ```bash
 sqlmap -r filename
