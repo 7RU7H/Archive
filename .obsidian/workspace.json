@@ -20,18 +20,6 @@
             }
           },
           {
-            "id": "16afc56c9be0f29c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "a32e313d8855d371",
             "type": "leaf",
             "state": {
@@ -91,8 +79,7 @@
               }
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -158,7 +145,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/Web-Applications-Attacking/SQLmap-CheatSheet.md",
+                "file": "Tools/C2/Sliver/TALK-Pwning-the-Domain-With-Sliver-Framework.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +162,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tools/Web-Applications-Attacking/SQLmap-CheatSheet.md",
+                "file": "Tools/C2/Sliver/TALK-Pwning-the-Domain-With-Sliver-Framework.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -198,7 +185,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tools/Web-Applications-Attacking/SQLmap-CheatSheet.md"
+                "file": "Tools/C2/Sliver/TALK-Pwning-the-Domain-With-Sliver-Framework.md"
               }
             }
           },
@@ -231,14 +218,18 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "e9cfc42bbcd9c4e1",
+  "active": "097b72872ac2792d",
   "lastOpenFiles": [
+    "Virtualization/Cloud/Kubernetes/Kubernetes-Hacking.md",
+    "Virtualization/Cloud/Kubernetes/Kubernetes.md",
+    "Cryptography-And-Authentication/Key-Management/Key-Management.md",
+    "README.md",
+    "Tools/Web-Applications-Attacking/SQLmap-CheatSheet.md",
     "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
     "Brain-Hacking/Problem-Solving/Reasoning-Typology.md",
     "Web-Application-Hacking/Web-Exploits/SQLi/SQL-Injection.md",
     "Development/Languages/PHP/PHP.md",
     "Security-Disciplines/Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Blue-KOTH-Battlegrounds-Cheatsheet-Linux.md",
-    "Tools/Web-Applications-Attacking/SQLmap-CheatSheet.md",
     "Software/Operating-Systems/Linux/Distributions/OpenSUSE/OpenSUSE.md",
     "Tools/C2/Sliver/TALK-Pwning-the-Domain-With-Sliver-Framework.md",
     "Tools/Useful-Online-Software/GitHub.md",
@@ -248,17 +239,13 @@
     "Tools/Web-Applications-Attacking/Browsers.md",
     "Development/Languages/JavaScript/Useful_JavaScript.md",
     "Software/Services/Package-Managers/NPM.md",
-    "Cryptography-And-Authentication/Key-Management/Key-Management.md",
     "Software/Operating-Systems/Linux/Distributions/Arch/Arch.md",
-    "README.md",
     "Brain-Hacking/Question-Based-Methodologies/Question-Based-Hacking-Methodology.md",
     "Brain-Hacking/Question-Based-Methodologies/Question-Based-Reversing-Methodology.md",
     "Brain-Hacking/Question-Based-Methodologies/Question-Based-Pwning-Methodology.md",
     "Brain-Hacking/Question-Based-Methodologies/Question-Based-OSINT-Methodology.md",
     "Brain-Hacking/Question-Based-Methodologies/Question-Based-Forensics-Methodology.md",
     "Brain-Hacking/Problem-Solving/Philosophical-Razors.md",
-    "Brain-Hacking/Problem-Solving/Problem-Compass.md",
-    "Brain-Hacking/Problem-Solving/Problem-Solving.md",
     "Cryptography-And-Authentication/Key-Management",
     "Images/charstillcrackgraph-securitydotorg.png",
     "Software/Operating-Systems/Linux/Distributions/OpenSUSE",

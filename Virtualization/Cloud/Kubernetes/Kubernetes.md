@@ -1,6 +1,6 @@
 # Kubernetes 
 
-[Kubernetes](https://kubernetes.io/docs/concepts/overview/), *"also known as K8s, is an open-source system for automating deployment, scaling, and management of containerized applications."*
+[Kubernetes](https://kubernetes.io/docs/concepts/overview/), *"also known as K8s, is an open-source system for automating deployment, scaling, and management of containerized applications."*. Developed by Google.
 
 Kubernetes is:
 - Container orchestration
@@ -11,21 +11,30 @@ Kubernetes is:
 	- *highly Available* (it runtime management so that services remain up)
 - Authorial opinion: ...is not a simple solution and has lot of very interesting complexities for better and for worse. This has led to third parties providing the backbone and management because of the knowledge required to *gleem the `kube`* - know some fundamentals of networking and system administration helps.
 
+Kubernetes does not provide:
+- Middleware
+- Data-processing frameworks
+- Databases
+- Caches
+- Cluster storage systems
+
 For hacking [[Kubernetes-Hacking]].
 
 Kubernetes Architecture:
 - Control Plane - services that manage orchestration
-	- kube-apiserver
+	- kube-apiserver - `API server` - `TCP/6443`
 		- All communication between the components in Kubernetes is done through this API
 		- kube-apiserver exposes a RESTful API that you can use to post commands or YAML-based configuration files
-	- Controller Manager
+	- Controller Manager - `TCP/10252`
 		- Launches and monitors the controllers configured for a cluster through the API server
 		- Cloud controllers integrate with the underlying cloud technologies
-	- Scheduler
+	- Scheduler - `TCP/10225`
 		- Responsible for the assignment of workloads across all nodes.
-	- [etcd](https://kubernetes.io/docs/tasks/administer-cluster/configure-upgrade-etcd/) 
+	- [etcd](https://kubernetes.io/docs/tasks/administer-cluster/configure-upgrade-etcd/)  - `TCP/2379,2380`
 		- A  key value store used as Kubernetes' backing store for all cluster data
-- Node - where compute workloads run
+	- Kubelet API - `TCP/10250`
+	- Read-Only Kubelet API - `TCP/10255`
+- `Minions` - Worker Nodes - where compute workloads run
 	- Kubelet
 		- Agent running on a node - processes the orchestration requests
 	- Kube-Proxy 
@@ -34,12 +43,14 @@ Kubernetes Architecture:
 	- Container Runtime 
 		- underlying software that runs containers on a Kubernetes cluster
 
-Kubernetes does not provide:
-- Middleware
-- Data-processing frameworks
-- Databases
-- Caches
-- Cluster storage systems
+| **Control Plane Network Service** | **TCP Ports**  |
+| --------------------------------- | -------------- |
+| `etcd`                            | `2379`, `2380` |
+| `API server`                      | `6443`         |
+| `Scheduler`                       | `10251`        |
+| `Controller Manager`              | `10252`        |
+| `Kubelet API`                     | `10250`        |
+| `Read-Only Kubelet API`           | `10255`        |
 
 Hierarchy of Kubernetes:
 - Cluster
@@ -153,7 +164,17 @@ kubectl <cmd> serviceaccount
 kubectl <cmd> statefulset
 ```
 
+#### Kubernetes API
 
+Can recieve communication from external and internals, hosts and kubernetes  
+
+| **Request** | **Description**                                                |
+| ----------- | -------------------------------------------------------------- |
+| `GET`       | Retrieves information about a resource or a list of resources. |
+| `POST`      | Creates a new resource.                                        |
+| `PUT`       | Updates an existing resource.                                  |
+| `PATCH`     | Applies partial updates to a resource.                         |
+| `DELETE`    | Removes a resource.                                            |
 #### Hardening K8
 
 - Patching 
@@ -195,3 +216,4 @@ kubectl <cmd> statefulset
 [Replication Controller Vs Replica Set | by Avinash Kumar - The Learning Destination | Medium](https://medium.com/@avinashkumarmahto51/replication-controller-vs-replica-set-29b5e0bc83d9)
 [Kubernetes](https://kubernetes.io/docs/concepts/overview/)
 [etcd](https://kubernetes.io/docs/tasks/administer-cluster/configure-upgrade-etcd/) 
+[HTB Academy](https://academy.hackthebox.com)

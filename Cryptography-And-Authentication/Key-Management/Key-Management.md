@@ -49,7 +49,22 @@
 	- Key Usage - Authenticate properly, Access Control properly
 	- Key Backup and Recovery - Encryption at rest, purge periods (soft delete for a specified number of days)
 	2. Key Rotation
-	3. Key Termination
+		- Rotation Policies
+			- Cryptoperiod: time period of usage, sensitivity of data protected and compliance requirements
+			- Automation of rotation to reducing human error
+			- Versioning and Backward compatibility
+		- Alerting
+			- Monitor Keys
+			- Alerts for rotation events
+			- Use an Alerting mechanism that *stack holders will actually be able to respond too* - the Cyber Security's version of a tree falling in the wood   
+		- Revocation Mechanisms
+			- Certificate Revocation Lists (CRL) - [CRLs](https://www.techtarget.com/searchsecurity/definition/Certificate-Revocation-List#:~:text=It%20is%20a%20type%20of,the%20CA%20to%20prevent%20tampering.)
+			- Online Certificate Status Protocol (OSCP) - [OCSP](https://www.ibm.com/docs/en/i/7.4?topic=concepts-online-certificate-status-protocol)
+			- Key status services for non PKI systems
+		- Communicating Revocation
+			- Notify stakeholders
+			- Update access controls
+	1. Key Termination
 		- Key Revocation
 		- Key Destruction
 - Review [CSAs](https://cloudsecurityalliance.org/artifacts/key-management-lifecycle-best-practices) best practices.
@@ -58,3 +73,5 @@
 [THM Room CryptoOps](https://tryhackme.com/r/room/introductiontocryptops)
 [CSAs KLI Best Practices](https://cloudsecurityalliance.org/artifacts/key-management-lifecycle-best-practices)
 [thalesgroup - Hardware Security Module](https://cpl.thalesgroup.com/en-gb/encryption/hardware-security-modules) 
+[CRLs](https://www.techtarget.com/searchsecurity/definition/Certificate-Revocation-List#:~:text=It%20is%20a%20type%20of,the%20CA%20to%20prevent%20tampering.)
+[OCSP](https://www.ibm.com/docs/en/i/7.4?topic=concepts-online-certificate-status-protocol)
