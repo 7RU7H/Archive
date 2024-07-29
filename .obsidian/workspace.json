@@ -20,66 +20,19 @@
             }
           },
           {
-            "id": "a32e313d8855d371",
+            "id": "40fcecaa9f20f8e6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "357ed3a08e4d07ef",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Web-Application-Hacking/Web-Exploits/SQLi/SQL-Injection.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e9cfc42bbcd9c4e1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tools/Web-Applications-Attacking/SQLmap-CheatSheet.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6a84c7fce1f206c5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Development/Languages/PHP/PHP.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a9d60f0b876ccccd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Securing-Networks-And-Systems/TALK-Systems-Alchemy-The-Transmutation-Of-Hacking.md",
+                "file": "Security-Disciplines/Cyber-Threat-Intelligence/Threat-Modelling.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -116,7 +69,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Useful PHP",
+                "query": "MITRE-ATT",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -145,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/C2/Sliver/TALK-Pwning-the-Domain-With-Sliver-Framework.md",
+                "file": "Security-Disciplines/Cyber-Threat-Intelligence/Threat-Modelling.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -162,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tools/C2/Sliver/TALK-Pwning-the-Domain-With-Sliver-Framework.md",
+                "file": "Security-Disciplines/Cyber-Threat-Intelligence/Threat-Modelling.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -185,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tools/C2/Sliver/TALK-Pwning-the-Domain-With-Sliver-Framework.md"
+                "file": "Security-Disciplines/Cyber-Threat-Intelligence/Threat-Modelling.md"
               }
             }
           },
@@ -218,24 +171,25 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "097b72872ac2792d",
+  "active": "40fcecaa9f20f8e6",
   "lastOpenFiles": [
+    "Tools/C2/Sliver/TALK-Pwning-the-Domain-With-Sliver-Framework.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+    "Web-Application-Hacking/Web-Exploits/SQLi/SQL-Injection.md",
+    "Tools/Web-Applications-Attacking/SQLmap-CheatSheet.md",
+    "Development/Languages/PHP/PHP.md",
+    "Securing-Networks-And-Systems/TALK-Systems-Alchemy-The-Transmutation-Of-Hacking.md",
+    "Security-Disciplines/TALK-Luck-Timing-And-A-Nice-Cup-Of-Tea-Andy-Jones-Keynote.md",
     "Virtualization/Cloud/Kubernetes/Kubernetes-Hacking.md",
     "Virtualization/Cloud/Kubernetes/Kubernetes.md",
     "Cryptography-And-Authentication/Key-Management/Key-Management.md",
     "README.md",
-    "Tools/Web-Applications-Attacking/SQLmap-CheatSheet.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
     "Brain-Hacking/Problem-Solving/Reasoning-Typology.md",
-    "Web-Application-Hacking/Web-Exploits/SQLi/SQL-Injection.md",
-    "Development/Languages/PHP/PHP.md",
     "Security-Disciplines/Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Blue-KOTH-Battlegrounds-Cheatsheet-Linux.md",
     "Software/Operating-Systems/Linux/Distributions/OpenSUSE/OpenSUSE.md",
-    "Tools/C2/Sliver/TALK-Pwning-the-Domain-With-Sliver-Framework.md",
     "Tools/Useful-Online-Software/GitHub.md",
     "Tools/Useful-Online-Software/CyberChef.md",
     "Development/Languages/Bash/Bash.md",
-    "Securing-Networks-And-Systems/TALK-Systems-Alchemy-The-Transmutation-Of-Hacking.md",
     "Tools/Web-Applications-Attacking/Browsers.md",
     "Development/Languages/JavaScript/Useful_JavaScript.md",
     "Software/Services/Package-Managers/NPM.md",
@@ -245,7 +199,6 @@
     "Brain-Hacking/Question-Based-Methodologies/Question-Based-Pwning-Methodology.md",
     "Brain-Hacking/Question-Based-Methodologies/Question-Based-OSINT-Methodology.md",
     "Brain-Hacking/Question-Based-Methodologies/Question-Based-Forensics-Methodology.md",
-    "Brain-Hacking/Problem-Solving/Philosophical-Razors.md",
     "Cryptography-And-Authentication/Key-Management",
     "Images/charstillcrackgraph-securitydotorg.png",
     "Software/Operating-Systems/Linux/Distributions/OpenSUSE",

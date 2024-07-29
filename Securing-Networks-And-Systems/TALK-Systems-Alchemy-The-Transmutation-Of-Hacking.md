@@ -135,12 +135,29 @@ Questions:
 	- AI cars turn a driver in to a driving instructor
 	- Axiomatically a bad for code
 	- AI has the same sort of voice, so there is no flavour
-- If there was a accident (in reference to the robot going in crime and accident zone) could you not create buffer zone
-
-52:Pre not finished
-
-
-
+- If there was a accident (in reference to the robot going in crime and accident zone) could you not create buffer zone and reroute the vehicle?
+	- I do not know I do not work at these companies
+		- You want to create dynamic system
+		- AI = A lot of Indians; You build a system that is suppose to be autonomous and then you need staff it with loads of people to micro everything. Amazon AI was just a lot of Indians
+	- Reality is more complex than it seems
+- Do we have any solution to this - distress in voice
+	- System do not actually solve problems they shift problems
+		- Example small town rubbish collection:
+			- Systemic rubbish collection solves everyone individually have to take junk to predefined location
+			- But introduces
+				- Unions 
+				- Regulations
+				- Defining what is rubbish
+					- Recycling 
+					- Regular waste
+					- Yard waste
+				- Truck purchases
+				- Organising Rubbish collection as organisation: 
+					- Holidays
+	- Paperless office dream became a problem where computers make creating paper so cheap we have more paper than we ever had before.
+	- Systems can oppose their own function
+- Experience calcifies perspective
+	- Buddhist cultivate beginner mind
 
 
 ## References
