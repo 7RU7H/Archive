@@ -3,10 +3,10 @@
 
 For regular use of GitHub visit [[GitHub]]
 
-[ESTEBAN BORGES](https://securitytrails.com/blog/_author/estebanborges) article on [securitytrails.com about Github Dorks](https://securitytrails.com/blog/github-dorks) is referenced and used frequently it importantly mentioned on  [HackTricks - git](https://book.hacktricks.xyz/network-services-pentesting/pentesting-web/git) - recommended read as it scratches a surface of which is a very deep and rewarding topic. DevOps in AWS -[[AWS-Defined]]  and in [[Azure-DevOps]] have GitHub integration, there has been numerous vulnerabilities with GitHub as a service such [cryptomining github actions](https://techbeacon.com/security/cryptominers-flooding-github-other-cloudy-dev-services) . Development is complex, security is complex and managing people sharing complex projects will always lead to problems of implementation. 
-#### Github Dorks
+[ESTEBAN BORGES](https://securitytrails.com/blog/_author/estebanborges) article on [securitytrails.com about GitHub Dorks](https://securitytrails.com/blog/github-dorks) is referenced and used frequently it importantly mentioned on  [HackTricks - git](https://book.hacktricks.xyz/network-services-pentesting/pentesting-web/git) - recommended read as it scratches a surface of which is a very deep and rewarding topic. DevOps in AWS -[[AWS-Defined]]  and in [[Azure-DevOps]] have GitHub integration, there has been numerous vulnerabilities with GitHub as a service such [cryptomining github actions](https://techbeacon.com/security/cryptominers-flooding-github-other-cloudy-dev-services) . Development is complex, security is complex and managing people sharing complex projects will always lead to problems of implementation. 
+#### GitHub Dorks
 
-[Security Trails Github Dorks](https://securitytrails.com/blog/github-dorks)
+[Security Trails GitHub Dorks](https://securitytrails.com/blog/github-dorks)
 
 Keywords to try - worth considering
 ```bash
@@ -20,7 +20,7 @@ redis_password
 root_password
 ```
 
-Actual Github Dorks - [github-dork.py](https://github.com/techgaun/github-dorks) is recommended in this article (it use github search to automate similar queries below)
+Actual GitHub Dorks - [github-dork.py](https://github.com/techgaun/github-dorks) is recommended in this article (it use github search to automate similar queries below)
 ```bash
 filename:.npmrc _auth
 filename:.dockercfg auth
@@ -99,6 +99,22 @@ For sensitive information [gitrob](https://github.com/michenriksen/gitrob)
 [[Snyk]]
 [git-vuln-finder](https://github.com/cve-search/git-vuln-finder)
 
+#### Cross Fork Object Reference
+
+If you are considering so anything *private* on GitHub be aware that like other Repositories accessable deleted and private data is possible through CFOR. 
+- Deleted Fork
+	- Make a fork of a repository
+	- Add a commit and note the hash
+	- Delete that fork
+	- Use the `commit/$hash` part of the GitHub URL on the original project to be able to access the deleted fork.
+- Private Fork (This very significant for all projects that have a internal private upstream fork for development and testing (which also could have all the nice tokens,keys and credentials you could ever need)) 
+	- Private Repository is created
+	- Create Internal Private Fork is then created
+	- Commits occur...
+	- Main Private Repository is made Public, Internal is still Private
+	- By using the hash from the Private Internal Repository Fork, we can query the `commit/$hash` part of the GitHub URL on the Public Repository to access the Private Internal Fork version of that Repository
+
+https://infosec.exchange/@malwarejake cited [https://trufflesecurity.com/blog/anyone-can-access-deleted-and-private-repo-data-github](https://trufflesecurity.com/blog/anyone-can-access-deleted-and-private-repo-data-github)
 
 #### Git GTFOBin
 
@@ -109,7 +125,7 @@ Linux - [GTFOBins - git](https://gtfobins.github.io/gtfobins/git/)
 
 [HackTricks - git](https://book.hacktricks.xyz/network-services-pentesting/pentesting-web/git)
 [GTFOBins - git](https://gtfobins.github.io/gtfobins/git/)
-[Security Trails Github Dorks](https://securitytrails.com/blog/github-dorks)
+[Security Trails GitHub Dorks](https://securitytrails.com/blog/github-dorks)
 [techbeacon.com - cryptomining github actions](https://techbeacon.com/security/cryptominers-flooding-github-other-cloudy-dev-services) 
 [Ippsec.Rocks](https://ippsec.rocks) 
 [trufflehog](https://github.com/trufflesecurity/trufflehog)
@@ -122,3 +138,4 @@ Linux - [GTFOBins - git](https://gtfobins.github.io/gtfobins/git/)
 [Git-secrets](https://github.com/awslabs/git-secrets/blob/master/README.rst) and its [official documentation](https://github.com/awslabs/git-secrets/blob/master/README.rst%23installing-git-secrets) 
 [Git-Hound](https://github.com/ezekg/git-hound) is an alternative to Git-secrets.
 [git-dumper](https://github.com/arthaud/git-dumper)
+https://infosec.exchange/@malwarejake cited [https://trufflesecurity.com/blog/anyone-can-access-deleted-and-private-repo-data-github](https://trufflesecurity.com/blog/anyone-can-access-deleted-and-private-repo-data-github)

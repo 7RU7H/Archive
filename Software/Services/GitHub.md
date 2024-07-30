@@ -1,7 +1,6 @@
 # GitHub
 
 For hacking GitHub Repositories see [[Git-Repository-Hacking]]
-
 #### AAARGH.. breath just use the correct git commands
 
 ```bash
@@ -39,6 +38,7 @@ rm path/to/chungus.file
 
 
 #### GitHub Security
+
 Password got included in some field or log file and you are already panicking. As soon as possible:
 
 [Thanks Antonio Petricca](https://stackoverflow.com/questions/5099333/git-accidental-inclusion-of-password-how-do-i-fix-it#5099338i)

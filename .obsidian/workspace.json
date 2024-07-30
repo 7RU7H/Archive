@@ -18,21 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "40fcecaa9f20f8e6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Security-Disciplines/Cyber-Threat-Intelligence/Threat-Modelling.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -69,7 +56,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "MITRE-ATT",
+                "query": "Intent",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Security-Disciplines/Cyber-Threat-Intelligence/Threat-Modelling.md",
+                "file": "Tools/C2/Sliver/TALK-Pwning-the-Domain-With-Sliver-Framework.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Security-Disciplines/Cyber-Threat-Intelligence/Threat-Modelling.md",
+                "file": "Tools/C2/Sliver/TALK-Pwning-the-Domain-With-Sliver-Framework.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Security-Disciplines/Cyber-Threat-Intelligence/Threat-Modelling.md"
+                "file": "Tools/C2/Sliver/TALK-Pwning-the-Domain-With-Sliver-Framework.md"
               }
             }
           },
@@ -171,8 +158,14 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "40fcecaa9f20f8e6",
+  "active": "097b72872ac2792d",
   "lastOpenFiles": [
+    "Tools/Useful-Online-Software/Code-Online.md",
+    "Security-Disciplines/Cyber-Threat-Intelligence/Threat-Modelling.md",
+    "Tools/Useful-Online-Software/GitHub.md",
+    "Software/Services/GitHub.md",
+    "Reconnaissance/Git-Repository-Hacking.md",
+    "Software/Services/Git-Repository-Hacking.md",
     "Tools/C2/Sliver/TALK-Pwning-the-Domain-With-Sliver-Framework.md",
     "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
     "Web-Application-Hacking/Web-Exploits/SQLi/SQL-Injection.md",
@@ -187,18 +180,12 @@
     "Brain-Hacking/Problem-Solving/Reasoning-Typology.md",
     "Security-Disciplines/Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Blue-KOTH-Battlegrounds-Cheatsheet-Linux.md",
     "Software/Operating-Systems/Linux/Distributions/OpenSUSE/OpenSUSE.md",
-    "Tools/Useful-Online-Software/GitHub.md",
     "Tools/Useful-Online-Software/CyberChef.md",
     "Development/Languages/Bash/Bash.md",
     "Tools/Web-Applications-Attacking/Browsers.md",
     "Development/Languages/JavaScript/Useful_JavaScript.md",
     "Software/Services/Package-Managers/NPM.md",
     "Software/Operating-Systems/Linux/Distributions/Arch/Arch.md",
-    "Brain-Hacking/Question-Based-Methodologies/Question-Based-Hacking-Methodology.md",
-    "Brain-Hacking/Question-Based-Methodologies/Question-Based-Reversing-Methodology.md",
-    "Brain-Hacking/Question-Based-Methodologies/Question-Based-Pwning-Methodology.md",
-    "Brain-Hacking/Question-Based-Methodologies/Question-Based-OSINT-Methodology.md",
-    "Brain-Hacking/Question-Based-Methodologies/Question-Based-Forensics-Methodology.md",
     "Cryptography-And-Authentication/Key-Management",
     "Images/charstillcrackgraph-securitydotorg.png",
     "Software/Operating-Systems/Linux/Distributions/OpenSUSE",
