@@ -18,8 +18,33 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "e0fcc0644b278dda",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ec27bd7cc6ebd708",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Software/Services/Webservers/PHP-Webserver-Commonalities.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -85,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/C2/Sliver/TALK-Pwning-the-Domain-With-Sliver-Framework.md",
+                "file": "Software/Services/Webservers/PHP-Webserver-Commonalities.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tools/C2/Sliver/TALK-Pwning-the-Domain-With-Sliver-Framework.md",
+                "file": "Software/Services/Webservers/PHP-Webserver-Commonalities.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tools/C2/Sliver/TALK-Pwning-the-Domain-With-Sliver-Framework.md"
+                "file": "Software/Services/Webservers/PHP-Webserver-Commonalities.md"
               }
             }
           },
@@ -158,34 +183,34 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "097b72872ac2792d",
+  "active": "ed8f63df71621be6",
   "lastOpenFiles": [
+    "Security-Disciplines/TALK-Notes-Modern-Active-Directory-Attacks-And-Defense.md",
+    "Security-Disciplines/TALK-Luck-Timing-And-A-Nice-Cup-Of-Tea-Andy-Jones-Keynote.md",
+    "Software/Services/Webservers/Nginx.md",
+    "Software/Services/Webservers/Jenkins.md",
+    "Software/Services/Webservers/Flask.md",
+    "Software/Services/Webservers/ASP-DotNet-Webserver-Commonalities.md",
+    "Software/Services/Webservers/WebDAV/XAMPP.md",
+    "Software/Services/Webservers/Sinatra/Sinatra.md",
+    "Software/Services/Webservers/JS/nttpd.md",
+    "Software/Services/Webservers/JS/NodeJS.md",
+    "Software/Services/Webservers/IIS/IIS.md",
+    "Software/Services/Webservers/Apache/Apache2/Apache2.md",
+    "Software/Services/Webservers/Apache/Apache-Tomcat/Apache-Tomcat.md",
+    "Software/Services/Webservers/Apache/Apache-Groovy/Apache-Groovy.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+    "Networks/Network-Theory/Network-Protocols/Network-Protocols.md",
+    "Software/Services/Databases/MYSQL/MySQL-Hacking.md",
+    "Tools/C2/Sliver/TALK-Pwning-the-Domain-With-Sliver-Framework.md",
     "Tools/Useful-Online-Software/Code-Online.md",
     "Security-Disciplines/Cyber-Threat-Intelligence/Threat-Modelling.md",
     "Tools/Useful-Online-Software/GitHub.md",
     "Software/Services/GitHub.md",
     "Reconnaissance/Git-Repository-Hacking.md",
     "Software/Services/Git-Repository-Hacking.md",
-    "Tools/C2/Sliver/TALK-Pwning-the-Domain-With-Sliver-Framework.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
     "Web-Application-Hacking/Web-Exploits/SQLi/SQL-Injection.md",
     "Tools/Web-Applications-Attacking/SQLmap-CheatSheet.md",
-    "Development/Languages/PHP/PHP.md",
-    "Securing-Networks-And-Systems/TALK-Systems-Alchemy-The-Transmutation-Of-Hacking.md",
-    "Security-Disciplines/TALK-Luck-Timing-And-A-Nice-Cup-Of-Tea-Andy-Jones-Keynote.md",
-    "Virtualization/Cloud/Kubernetes/Kubernetes-Hacking.md",
-    "Virtualization/Cloud/Kubernetes/Kubernetes.md",
-    "Cryptography-And-Authentication/Key-Management/Key-Management.md",
-    "README.md",
-    "Brain-Hacking/Problem-Solving/Reasoning-Typology.md",
-    "Security-Disciplines/Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Blue-KOTH-Battlegrounds-Cheatsheet-Linux.md",
-    "Software/Operating-Systems/Linux/Distributions/OpenSUSE/OpenSUSE.md",
-    "Tools/Useful-Online-Software/CyberChef.md",
-    "Development/Languages/Bash/Bash.md",
-    "Tools/Web-Applications-Attacking/Browsers.md",
-    "Development/Languages/JavaScript/Useful_JavaScript.md",
-    "Software/Services/Package-Managers/NPM.md",
-    "Software/Operating-Systems/Linux/Distributions/Arch/Arch.md",
     "Cryptography-And-Authentication/Key-Management",
     "Images/charstillcrackgraph-securitydotorg.png",
     "Software/Operating-Systems/Linux/Distributions/OpenSUSE",

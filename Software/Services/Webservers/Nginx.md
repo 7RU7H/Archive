@@ -1,5 +1,8 @@
 # Nginx
 
+
+, don't forget to check `.bak` or `.backup`
+
 ## Hardening
 
 [Change the NGINX user](https://fedingo.com/how-to-change-nginx-user/)
