@@ -1,4 +1,4 @@
-# Manipulation Tactics
+# Manipulation Techniques
 
 This is a just tactics listing along with defences and mitigation for the socially inept or too optimistic made from the thumbnails of videos I did not watch.
 

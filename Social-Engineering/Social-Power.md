@@ -25,7 +25,7 @@
 13. **When Asking for Help, Appeal to People’s Self-Interest, Never to Their Mercy or Gratitude**
 14. **Pose as a Friend, Work as a Spy**
 15. **Crush Your Enemy Totally**
-16. **Use Absence to Increase Respect and Honor**
+16. **Use Absence to Increase Respect and Honour**
 17. **Keep Others in Suspended Terror: Cultivate an Air of Unpredictability**
 18. **Do Not Build Fortresses to Protect Yourself – Isolation is Dangerous**
 19. **Know Who You’re Dealing With – Do Not Offend the Wrong Person**

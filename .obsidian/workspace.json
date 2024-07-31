@@ -13,38 +13,25 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/C2/Sliver/TALK-Pwning-the-Domain-With-Sliver-Framework.md",
+                "file": "Web-Application-Hacking/Web-Application-Authentication-Attacks.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "e0fcc0644b278dda",
+            "id": "632788f3ec904267",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ec27bd7cc6ebd708",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Software/Services/Webservers/PHP-Webserver-Commonalities.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Privilege-Escalation.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -81,7 +68,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Intent",
+                "query": "DnsAdmins",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -110,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Software/Services/Webservers/PHP-Webserver-Commonalities.md",
+                "file": "Web-Application-Hacking/Web-Application-Authentication-Attacks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Software/Services/Webservers/PHP-Webserver-Commonalities.md",
+                "file": "Web-Application-Hacking/Web-Application-Authentication-Attacks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Software/Services/Webservers/PHP-Webserver-Commonalities.md"
+                "file": "Web-Application-Hacking/Web-Application-Authentication-Attacks.md"
               }
             }
           },
@@ -183,10 +170,24 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "ed8f63df71621be6",
+  "active": "097b72872ac2792d",
   "lastOpenFiles": [
-    "Security-Disciplines/TALK-Notes-Modern-Active-Directory-Attacks-And-Defense.md",
+    "Web-Application-Hacking/Web-Exploits/Form-Manipulation.md",
+    "Web-Application-Hacking/Web-Application-Authentication-Attacks.md",
+    "Default.md",
+    "Tools/C2/Sliver/TALK-Pwning-the-Domain-With-Sliver-Framework.md",
+    "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Privilege-Escalation.md",
+    "Development/Languages/Rust/Rust.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+    "Social-Engineering/Detecting-Deception.md",
+    "Social-Engineering/Social-Power.md",
+    "Social-Engineering/Social-Engineering.md",
+    "Social-Engineering/Negotiation.md",
+    "Social-Engineering/Manipulation-Techniques.md",
+    "Brain-Hacking/Question-Based-Methodologies/Question-Based-CISO-Methodology.md",
     "Security-Disciplines/TALK-Luck-Timing-And-A-Nice-Cup-Of-Tea-Andy-Jones-Keynote.md",
+    "Software/Services/Webservers/PHP-Webserver-Commonalities.md",
+    "Security-Disciplines/TALK-Notes-Modern-Active-Directory-Attacks-And-Defense.md",
     "Software/Services/Webservers/Nginx.md",
     "Software/Services/Webservers/Jenkins.md",
     "Software/Services/Webservers/Flask.md",
@@ -197,20 +198,6 @@
     "Software/Services/Webservers/JS/NodeJS.md",
     "Software/Services/Webservers/IIS/IIS.md",
     "Software/Services/Webservers/Apache/Apache2/Apache2.md",
-    "Software/Services/Webservers/Apache/Apache-Tomcat/Apache-Tomcat.md",
-    "Software/Services/Webservers/Apache/Apache-Groovy/Apache-Groovy.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
-    "Networks/Network-Theory/Network-Protocols/Network-Protocols.md",
-    "Software/Services/Databases/MYSQL/MySQL-Hacking.md",
-    "Tools/C2/Sliver/TALK-Pwning-the-Domain-With-Sliver-Framework.md",
-    "Tools/Useful-Online-Software/Code-Online.md",
-    "Security-Disciplines/Cyber-Threat-Intelligence/Threat-Modelling.md",
-    "Tools/Useful-Online-Software/GitHub.md",
-    "Software/Services/GitHub.md",
-    "Reconnaissance/Git-Repository-Hacking.md",
-    "Software/Services/Git-Repository-Hacking.md",
-    "Web-Application-Hacking/Web-Exploits/SQLi/SQL-Injection.md",
-    "Tools/Web-Applications-Attacking/SQLmap-CheatSheet.md",
     "Cryptography-And-Authentication/Key-Management",
     "Images/charstillcrackgraph-securitydotorg.png",
     "Software/Operating-Systems/Linux/Distributions/OpenSUSE",

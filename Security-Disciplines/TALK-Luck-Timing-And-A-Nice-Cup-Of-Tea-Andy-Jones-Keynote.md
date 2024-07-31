@@ -1,8 +1,5 @@
 
-
-Join us for the next edition of t2 on April 18-19, 2024. Clarion Hotel Helsinki [https://t2.fi/](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbV8wSzhYdVdSWGgyTFZTQUJTbGJkVUd2Z2RXd3xBQ3Jtc0tub2lwTWJaWGNMbVpRNUxHVXZ1QWJTMEZ1UWJJLUM0cWlQZmtrc1A3b3IwZndNTEpQcUNtSDdrcnBUSEZhNl9UbE9TV0dMLXc2TG9SU1Qwd3d1bW5xN3h3RVJsd3Q5SWlMMERJVVA2NWtObUdMU05IUQ&q=https%3A%2F%2Ft2.fi%2F&v=wT2r5VuYCU0) | Andy Jones was the CISO of Maersk during the NotPetya cyberattack in 2017. In the keynote he details the incident and its global impact.
-
-https://www.youtube.com/watch?v=wT2r5VuYCU0
+[Youtube Luck,Timing And A Nice Cup Of Tea Andy Jones Keynote](https://www.youtube.com/watch?v=wT2r5VuYCU0) Description: *"Join us for the next edition of t2 on April 18-19, 2024. Clarion Hotel Helsinki [https://t2.fi/](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbV8wSzhYdVdSWGgyTFZTQUJTbGJkVUd2Z2RXd3xBQ3Jtc0tub2lwTWJaWGNMbVpRNUxHVXZ1QWJTMEZ1UWJJLUM0cWlQZmtrc1A3b3IwZndNTEpQcUNtSDdrcnBUSEZhNl9UbE9TV0dMLXc2TG9SU1Qwd3d1bW5xN3h3RVJsd3Q5SWlMMERJVVA2NWtObUdMU05IUQ&q=https%3A%2F%2Ft2.fi%2F&v=wT2r5VuYCU0)  Andy Jones was the CISO of Maersk during the NotPetya cyberattack in 2017. In the keynote he details the incident and its global impact."*
 
 This is an awesome talk.
 
@@ -20,7 +17,6 @@ Discusses how everyones device one by one start failing. Andy drives the 5 minut
 - All headoffice phones were down
 
 15 Billion dollar company down in 15 minutes. In the crisis room they looked out the windows and saw shoppers shopping, so it must just be Maersk. Ransomware notice (non non-encrypted drives) and nothing worked.
-
 
 Maersk loves a crisis, but most ship and water related crises.
 
@@ -102,7 +98,7 @@ The people aspect was a lesson in and of itself
 
 Recovery questions
 - Which systems should be recovered first?
-- How do you re-synch the data?
+- How do you re-sync the data?
 - How do you roll-out in days not months?
 - Will legacy still work?
 - Where is the clear restore point?
@@ -137,3 +133,8 @@ The Board are happy to sign off on Cyber Security Risks, but they still do not w
 Live by social media - Die by social media: Rumour about reinfection on Social Media made people pull plug and lot 2 days.
 
 Big incidents like this are a **pivotal business point for Third Parties!**
+
+## References
+
+[Youtube Luck,Timing And A Nice Cup Of Tea Andy Jones Keynote](https://www.youtube.com/watch?v=wT2r5VuYCU0)
+[Wikipedia - Maersk](https://en.wikipedia.org/wiki/Maersk)
