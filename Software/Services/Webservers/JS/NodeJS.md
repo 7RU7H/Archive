@@ -6,6 +6,7 @@
 
 Node application will almost always accepts [[JSON]]
 
+[NodeJS 2024 TypeScript integration is not compiled enjoy](https://nodejs.org/en/learn/getting-started/nodejs-with-typescript)
 
 #### Tools
 
@@ -64,3 +65,4 @@ node> password = "jU5t_a_sna_3lpm1dg347_u_4_mfr54b"> var i;> var buffer = Array(
 [XinYminutes JS](https://learnxinyminutes.com/docs/javascript/)
 [Javascript beautifer](https://beautifier.io/)
 [Node.js](https://nodejs.org)
+[NodeJS 2024 TypeScript integration](https://nodejs.org/en/learn/getting-started/nodejs-with-typescript)

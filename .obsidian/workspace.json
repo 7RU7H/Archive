@@ -20,6 +20,30 @@
             }
           },
           {
+            "id": "3a5fb3543ce4ec2b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Software/Operating-Systems/Linux/Distributions/Arch/Arch.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "5e13ce40cfc9fada",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Hardware/Hardware-Maintenance/USB-Maintenance.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "632788f3ec904267",
             "type": "leaf",
             "state": {
@@ -43,7 +67,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -80,7 +105,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "runas",
+                "query": "Node",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -93,7 +118,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 541.5
+    "width": 250.5
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -109,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exploitation/Windows/Windows-EOL.md",
+                "file": "Software/Operating-Systems/Linux/Distributions/Arch/Arch.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Exploitation/Windows/Windows-EOL.md",
+                "file": "Software/Operating-Systems/Linux/Distributions/Arch/Arch.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Exploitation/Windows/Windows-EOL.md"
+                "file": "Software/Operating-Systems/Linux/Distributions/Arch/Arch.md"
               }
             }
           },
@@ -182,10 +207,14 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "097b72872ac2792d",
+  "active": "3a5fb3543ce4ec2b",
   "lastOpenFiles": [
-    "Tools/C2/Sliver/TALK-Pwning-the-Domain-With-Sliver-Framework.md",
+    "Hardware/Hardware-Maintenance/USB-Maintenance.md",
+    "Software/Operating-Systems/Linux/Distributions/Arch/Arch.md",
     "Exploitation/Windows/Windows-EOL.md",
+    "Exploitation/Windows/Windows-EOL-Exploitation.md",
+    "Software/Services/Webservers/JS/NodeJS.md",
+    "Tools/C2/Sliver/TALK-Pwning-the-Domain-With-Sliver-Framework.md",
     "Security-Disciplines/Cyberwarfare/Practice/KOTH-Battleground-Cheatsheet/Red-KOTH-Battlegrounds-Cheatsheet-Windows.md",
     "Web-Application-Hacking/Web-Application-Authentication-Attacks.md",
     "Exploitation/Windows/Active-Directory/AD-Domain-Exploitation.md",
@@ -206,10 +235,6 @@
     "Social-Engineering/Manipulation-Techniques.md",
     "Brain-Hacking/Question-Based-Methodologies/Question-Based-CISO-Methodology.md",
     "Security-Disciplines/TALK-Luck-Timing-And-A-Nice-Cup-Of-Tea-Andy-Jones-Keynote.md",
-    "Software/Services/Webservers/PHP-Webserver-Commonalities.md",
-    "Security-Disciplines/TALK-Notes-Modern-Active-Directory-Attacks-And-Defense.md",
-    "Software/Services/Webservers/Nginx.md",
-    "Software/Services/Webservers/Jenkins.md",
     "Cryptography-And-Authentication/Key-Management",
     "Images/charstillcrackgraph-securitydotorg.png",
     "Software/Operating-Systems/Linux/Distributions/OpenSUSE",
