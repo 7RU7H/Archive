@@ -26,8 +26,14 @@
 - What potential valid Usernames or Emails?
 	- [[Generating-Usernames-And-Emails]]
 - Are there Verbose Error messages?
-	- These can reveal potential formatting of valid usernames or emails, software versions for Databases, Web Servers, APIs, etc.
-	- Invalid Login Attempt can be used to blind enumerate valid users
+	- These can reveal potential...
+		- Formatting of valid usernames or emails
+		- Software versions for Databases, Web Servers, APIs, etc.
+		- Internal Paths: file Paths, Directory structures that lead to configuration files and secret files
+		- User information: 
+			- If you can get regular user information what about Administrative?
+		- Password Policy 
+	- Invalid Login Attempts can be used to blind enumerate valid users
 	- [[SQL-Injection]]?
 	- [[Path-Traversal]]?
 	- [[File-Inclusion]]?
