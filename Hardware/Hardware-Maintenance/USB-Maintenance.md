@@ -84,7 +84,7 @@ sudo mount /dev/mapper/EDCdrive /media/secure-USB
 sudo cryptsetup luksDump /dev/sdb1
 ```
 
-Delete a partition-table signatures from [serverfault](https://serverfault.com/questions/250839/deleting-all-partitions-from-the-command-line)
+Delete a partition-table signatures - from [serverfault](https://serverfault.com/questions/250839/deleting-all-partitions-from-the-command-line)
 ```bash
 wipefs -a /dev/sda
 

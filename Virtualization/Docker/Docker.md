@@ -2,9 +2,9 @@
 
 ## Introduction
 
-For instructions on installation, images and use cases per distribution/OS see: [Docker for Kali](Kali-Setup-Docker.md), for [[Docker-Hacking]]. Originally created by Solomon Hykes in 2013, Docker an open-source containisation platform. While containerisation's original concepts started in 1979 with Unix V7, Docker has made containerisation a popular technology since its release in 2013.
+For instructions on installation, images and use cases per distribution/OS see: [Docker for Kali](Kali-Setup-Docker.md), for [[Docker-Hacking]]. Originally created by Solomon Hykes in 2013, Docker an open-source containerisation platform. While containerisation's original concepts started in 1979 with Unix V7, Docker has made containerisation a popular technology since its release in 2013.
 
-#### What is Docker and Containeristion?
+#### What is Docker and Containerisation?
 
 [[Containerisation]] is explained by article linked, Docker is open-source containerisation platform that allows Applications to be published, shared and deployed across any infrastructure that can run Docker. The Docker Engine that is layer of computational organisation above the hardware, the host OS and its kernel. It is not a hypervisor. Each Docker contain must have the same kernel type to operate. A container is commonly used to hold an environment or specific OS of an OS family to test system variation of running software. It is similar to VM hosting but Docker with there is **NO** virtualisation, hence requiring host OS that host Contain running similar OSes. Docker images are a read-only template of instruction for creating a Docker container. 
 #### CLI
