@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+                "file": "Post-Exploitation/Restricted-Desktop-Environment-Breakout/Restricted-Desktop-Environment-Breakout.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+                "file": "Post-Exploitation/Restricted-Desktop-Environment-Breakout/Restricted-Desktop-Environment-Breakout.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+                "file": "Post-Exploitation/Restricted-Desktop-Environment-Breakout/Restricted-Desktop-Environment-Breakout.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md"
+                "file": "Post-Exploitation/Restricted-Desktop-Environment-Breakout/Restricted-Desktop-Environment-Breakout.md"
               }
             }
           },
@@ -160,6 +160,10 @@
   },
   "active": "a7c2065fcf204188",
   "lastOpenFiles": [
+    "Web-Application-Hacking/Web-Application-Authentication-Attacks.md",
+    "Post-Exploitation/Restricted-Desktop-Environment-Breakout/Restricted-Desktop-Environment-Breakout.md",
+    "Post-Exploitation/Restricted-Desktop-Environment-Breakout",
+    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
     "Persistence/Linux-Persistence.md",
     "Persistence/Persistence.md",
     "Software/Operating-Systems/Linux/Linux-Concepts/Linux-Cronjobs.md",
@@ -182,10 +186,7 @@
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
     "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Enumeration-Cheatsheet.md",
     "Development/Languages/Python/Useful-Python.md",
-    "Web-Application-Hacking/Web-Application-Authentication-Attacks.md",
     "Security-Disciplines/TALK-Laywer-Passport-Locksmith-Gun.md",
-    "Exploitation/Windows/Windows-EOL-Exploitation.md",
-    "Software/Services/Webservers/JS/NodeJS.md",
     "Cryptography-And-Authentication/Key-Management",
     "Images/charstillcrackgraph-securitydotorg.png",
     "Software/Operating-Systems/Linux/Distributions/OpenSUSE",
@@ -201,7 +202,6 @@
     "WPA ",
     "Networks/Network-Theory/Network-Protocols/DNS",
     "Tools/Architecture",
-    "Tools/Documentation",
     "Images/whatisthisdebiandocs-1.png",
     "Images/whatisthisdebiandocs.png",
     "Images/linux-persistence-map.png",

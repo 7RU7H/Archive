@@ -40,6 +40,24 @@
 	- Form-Manipulation? - [THM Enumeration Bruteforce Room](https://tryhackme.com/r/room/enumerationbruteforce) States as: *"Tweaking form fields or parameters can trick the application into displaying errors that disclose backend logic or sensitive user information. For example, altering hidden form fields to trigger validation errors might reveal insights into the expected data format or structure."*- But No PortSwigger, HackTricks or PayloadAllTheThings
 	- [[Application-Fuzzing]] - send weird inputs to parts of the application to find weak points
 
+
+Password Reset Flow Vulnerabilities
+- Reset Types:
+	- Email-based Reset
+	- Security Question-based Reset
+	- SMS-Based Reset
+	- MFA [[Coerced-Authentication]]
+- Vulnerabilities that affect types:
+	- Predictable Tokens
+	- Token Expiration Issues
+	- Insufficient Validation
+	- Information Disclosure
+	- Insecure Transports
+	- Token Lifetime Issues:
+		- Multiple tokens existing at the same time
+		- Life span is too long 
+
+
 ## References
 
 [THM Enumeration Bruteforce Room](https://tryhackme.com/r/room/enumerationbruteforce)
