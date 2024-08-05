@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "659bcd09497b04cb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Web-Application-Hacking/Web-Application-Authentication-Attacks.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Post-Exploitation/Restricted-Desktop-Environment-Breakout/Restricted-Desktop-Environment-Breakout.md",
+                "file": "Web-Application-Hacking/Web-Application-Authentication-Attacks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Post-Exploitation/Restricted-Desktop-Environment-Breakout/Restricted-Desktop-Environment-Breakout.md",
+                "file": "Web-Application-Hacking/Web-Application-Authentication-Attacks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Post-Exploitation/Restricted-Desktop-Environment-Breakout/Restricted-Desktop-Environment-Breakout.md"
+                "file": "Web-Application-Hacking/Web-Application-Authentication-Attacks.md"
               }
             }
           },
@@ -158,10 +171,13 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "a7c2065fcf204188",
+  "active": "659bcd09497b04cb",
   "lastOpenFiles": [
-    "Web-Application-Hacking/Web-Application-Authentication-Attacks.md",
+    "Images/mozilla-http-auth.png",
     "Post-Exploitation/Restricted-Desktop-Environment-Breakout/Restricted-Desktop-Environment-Breakout.md",
+    "Development/Languages/Bash/Bash.md",
+    "Development/Malware/Go/Go-Malware-Writing-For-Windows.md",
+    "Web-Application-Hacking/Web-Application-Authentication-Attacks.md",
     "Post-Exploitation/Restricted-Desktop-Environment-Breakout",
     "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
     "Persistence/Linux-Persistence.md",
@@ -184,9 +200,6 @@
     "Virtualization/Docker/Docker.md",
     "Tools/C2/Sliver/Sliver.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
-    "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Enumeration-Cheatsheet.md",
-    "Development/Languages/Python/Useful-Python.md",
-    "Security-Disciplines/TALK-Laywer-Passport-Locksmith-Gun.md",
     "Cryptography-And-Authentication/Key-Management",
     "Images/charstillcrackgraph-securitydotorg.png",
     "Software/Operating-Systems/Linux/Distributions/OpenSUSE",
