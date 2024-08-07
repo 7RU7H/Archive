@@ -13,7 +13,7 @@ Logs are computer generated data that is recorded into a file in tabular structu
 - **User information**
 - **Event information** – what was the action taken
 
-Contextual Correlation is about understanding the situation and how events are connected. The log data is analysed, aggregated, and is cross-referenced. Similar for [[Question-Based-Hacking-Methodology]], a [[Question-Based-DFIR-Methodology]] very general categorises around asking questions:
+Contextual Correlation is about understanding the situation and how events are connected. The log data is analysed, aggregated, and is cross-referenced. Similar for [[Question-Based-Penetration-Testing-Methodology]], a [[Question-Based-DFIR-Methodology]] very general categorises around asking questions:
 - **What** happened?
 - **When** did it happen?
 - **Where** did it happen?

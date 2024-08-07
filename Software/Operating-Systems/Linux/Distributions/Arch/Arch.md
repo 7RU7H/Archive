@@ -37,6 +37,11 @@ w # Write changes
 ```
 Consider https://wiki.archlinux.org/title/Partitioning#Example_layouts
 
+For EFI, which you are probably install it on consider:
+1. Have big enough swap partition, because if the RAM fill up it will crash
+
+
+
 Post install general recommendations https://wiki.archlinux.org/title/General_recommendations
 
 ## `pacman`

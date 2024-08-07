@@ -88,7 +88,7 @@ ctrl+c  # to close
 fg # bring and gives us a reference to use when writing reports for clients.g a background process back inot use on the terminal
 fg
 bg | ctrl+z
-
+kill -s SIGTERM 1337
 kill -9 $PID # sigkill
 ```
 

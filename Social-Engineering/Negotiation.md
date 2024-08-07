@@ -1,6 +1,17 @@
 # Negotiation
 
 
+Empathetic Model - [YouTube - Former FBI Agent Explains How to Negotiate - WIRED](https://www.youtube.com/watch?v=yH5ChB7awcM)
+1. Assessment Phase
+2. Engagement Phase
+3. Transaction Phase
+
+Chronicity - How we use time; Whoever dominates time controls all battles and all wars.
+- Juries are less lenient in the afternoon - why? blood sugar! 
+
+Entropy - through venting
+- Attrition of energy spent around a topic you want to dominant at a later point, to ensure the engagement becomes warped towards your objectives
+
 #### Black Swan Method
 
  [YouTube - Top 10 MOST Powerful Negotiation Tips | Black Swan Method | Chris Voss](https://www.youtube.com/watch?v=V-IVYaRJ9Ow)
@@ -89,3 +100,4 @@ Unofficial rules
 [YouTube - Top 10 MOST Powerful Negotiation Tips | Black Swan Method | Chris Voss](https://www.youtube.com/watch?v=V-IVYaRJ9Ow)
 [harvard.edu/ - principled-negotiation-focus-interests-create-value/](https://www.pon.harvard.edu/daily/negotiation-skills-daily/principled-negotiation-focus-interests-create-value/)
 [memory-alpha.fandom.com/wiki/Rules_of_Acquisition](https://memory-alpha.fandom.com/wiki/Rules_of_Acquisition)
+[YouTube - Former FBI Agent Explains How to Negotiate - WIRED](https://www.youtube.com/watch?v=yH5ChB7awcM)

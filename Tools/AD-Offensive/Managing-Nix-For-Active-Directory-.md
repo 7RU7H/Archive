@@ -2,7 +2,7 @@
 
 ## Check list
 
-From the local [[Question-Based-Hacking-Methodology]]
+From the local [[Question-Based-Penetration-Testing-Methodology]]
 
 Have you checked?:
 - Step -1): Are *you* mentally prepared and ready to deal with the issue abound... 

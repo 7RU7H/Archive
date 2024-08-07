@@ -25,7 +25,7 @@ It is skill set that is built over years of time, orangutan can use tools, scrip
 	- If your data is a mess how are you going to connect that data to find the way 
 	- If you have the infrastructure to replicate the target, you do not get into the Schrödinger's Hack of whether interaction (successful, erroneous, destructive) or lack of interaction, **which may then affect later interactions thereby failing yourself by not be organised and methodical**   
 4. Creativity in connecting data to be combined into doing - an activity to separate the useful information and connecting it together
-5. Tool are extensions of **your** [[Question-Based-Hacking-Methodology]] (you have to make and practice and revise **your capabilities**)
+5. Tool are extensions of **your** [[Question-Based-Penetration-Testing-Methodology]] (you have to make and practice and revise **your capabilities**)
 
 
 4. Train your brain to love solving problems. Hacking is problem solving a task with the payoff that often a takes long time to get to. 

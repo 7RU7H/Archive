@@ -1,6 +1,6 @@
 # Web Application Bug Hunting 
 
-These will hopeful be added as I can to the [[Question-Based-Hacking-Methodology]] 
+These will hopeful be added as I can to the [[Question-Based-Penetration-Testing-Methodology]] 
 
 [Critical Thinking - Bug Bounty Podcast - Attack Vector Ideation](https://www.youtube.com/watch?v=jDpQRBiUtCo)
 - Role based Access Control (RBAC) matrixing  

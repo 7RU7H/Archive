@@ -10,7 +10,7 @@ This is a hub page for *"Brain Hacking*" or ways to improve your cognition.
 [[Improve-Your-Learning]]
 [[Learning-To-Hack]]
 [[Personality]]
-[[Question-Based-Hacking-Methodology]]
+[[Question-Based-Penetration-Testing-Methodology]]
 [[Reframing-Hard-Cybersecurity-Problems-For-Fun-And-Profit]]
 [[RTFM]]
 [[Survival-Heuristics]]
