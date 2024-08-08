@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Privilege-Escalation.md",
+                "file": "This-Repository-Specific/Hacking-Memes.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Privilege-Escalation.md",
+                "file": "This-Repository-Specific/Hacking-Memes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Privilege-Escalation.md",
+                "file": "This-Repository-Specific/Hacking-Memes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Privilege-Escalation.md"
+                "file": "This-Repository-Specific/Hacking-Memes.md"
               }
             }
           },
@@ -172,8 +172,8 @@
   },
   "active": "a7c2065fcf204188",
   "lastOpenFiles": [
-    "Exploitation/CVEs/CVE-2024-37085.md",
     "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Privilege-Escalation.md",
+    "Exploitation/CVEs/CVE-2024-37085.md",
     "Exploitation/Windows/Active-Directory/ACL-Abuse/ReadGMSAPassword.md",
     "Exploitation/Windows/Active-Directory/ACL-Abuse/WriteDacl.md",
     "Exploitation/Windows/Active-Directory/ACL-Abuse/GenericAll.md",
