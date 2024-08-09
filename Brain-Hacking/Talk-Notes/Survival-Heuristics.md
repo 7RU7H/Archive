@@ -14,21 +14,21 @@ These are the TL;DWatch notes and takeways from the excellent talk: [Survival He
 	- Excessive comparison to the abstract **entirely unknowable** universal actuality 
 - **Trends are Always about past!**
 	- Do not depend on trends
-	- Cause in terms of probablity does not really affect the subsequent output
+	- Cause in terms of probability does not really affect the subsequent output
 	- Observe and analyse the small indicators of change
 	- Observe the present very careful
-	- Non-obvious indicators of whatever phenonmenon, continues to link to larger phenonmena you are observing  
+	- Non-obvious indicators of whatever phenomenon, continues to link to larger phenomena you are observing  
 - **Most Things Don't Happen by Chance**
 	- Random cluster exists, but is clusters are still patterns
 	- "*Chance*" must be exchange for phase for "I do not understand the causality chain"
-	- Respect Exponential Causility and it is related to expoential functions
+	- Respect Exponential Causality and it is related to exponential functions
 	- Linear thinking, does not factor the multiplicity of causality links from one point.
 - **Worst Case Scenarios Happen**
 	- Worst case actually happen conflated it with unlikely and not impossible
-	- Probability of something occurring is independent from th econsequences to that event may have
+	- Probability of something occurring is independent from the consequences to that event may have
 - **When You're Explaining You're Losing**
 	- Act of explaining is counter-productive, especially in argument 
-	- Compelling examples and stories are better, rather than rely only on technical explaination
+	- Compelling examples and stories are better, rather than rely only on technical explanation
 - **You Never Run out of Bullets**
 	- Linear thinking does not account for some *"accountables"*
 	- Life happens, stuff happens people will keep going however
@@ -39,7 +39,7 @@ These are the TL;DWatch notes and takeways from the excellent talk: [Survival He
 
 ## Strategies
 
-- **Contruct and Revise Analytic Landscape**
+- **Construct and Revise Analytic Landscape**
 	Rules:
 	- Consult outsiders
 	- Present it graphically - no text
@@ -50,26 +50,26 @@ These are the TL;DWatch notes and takeways from the excellent talk: [Survival He
 - **Apply Category System**
 	- Apply a Category System
 		- Example: CYNEFIN Framework
-		- Complex `(CE)` (Patterns) **probe**, sense respond | Complicated (Analysis, Experts) sense, **analyse** respond | Choatic `C!=E` (No patterns) **act**, sense, respond | Simple `C==E` (best practice, SOPs) sense, **categorise**, respond
+		- Complex `(CE)` (Patterns) **probe**, sense respond | Complicated (Analysis, Experts) sense, **analyse** respond | Chaotic `C!=E` (No patterns) **act**, sense, respond | Simple `C==E` (best practice, SOPs) sense, **categorise**, respond
 - **Know Your Thinking Style**
 	- There is not a good test
 	- Simple things still apply: Optimist or Pessimist
 	- Gregorc thinking inventory: Abstract or Concrete, Random or Sequential
 - **Find a Thinking Partner**
 	- Explore ideas with others
-	- Dont ignore the analogue techniques: Take a walk with your thinking partner
+	- Do not ignore the analogue techniques: Take a walk with your thinking partner
 - **Deploy Diversity of Thought**
 		- Free flowing debate is best, allow dissent to be wrong
 			- Will lead to better outcomes.
-		- Managing differences of oppinion is very difficult 
+		- Managing differences of opinion is very difficult 
 			- Conducting management affects this:
 				- 10 minute meeting = must be important for diversity of thought to occur
 - **Think together from the start**
 	- Collaborate from the start 
-	- Otherwise you are deconflicting 
+	- Otherwise you are de-conflicting 
 	- Especially with Diversity of Thought
 - **Respect your Intuition**
-	- Your brain is always operation, it can reveal it to your conciousness
+	- Your brain is always operation, it can reveal it to your consciousness
 	- Author notes: Brain has to actually do what she is deciding to work in the first place... 
 
 ## References

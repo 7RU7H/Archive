@@ -6,21 +6,21 @@ Objectives:
 1. Improve the quality of information we take in
 2.Improve the way or mode in which we receive information
 3. Improve our practice of retrieving information
-4. Improve upon self-discipline and methodology of self-critque to find flaws and schedule a solution to improve on that flaw  
+4. Improve upon self-discipline and methodology of self-critique to find flaws and schedule a solution to improve on that flaw  
 
 Concepts:
 - Cognative Load - Too much information at once
-- [Contextualised Learning](https://files.eric.ed.gov/fulltext/ED448304.pdf) - it is easiler to learn something if you are contextualising it with practice
+- [Contextualised Learning](https://files.eric.ed.gov/fulltext/ED448304.pdf) - it is easier to learn something if you are contextualising it with practice
 - [Transversal Skills Lopez and Rodriguez-Lopez, 2020)](https://ervet-journal.springeropen.com/articles/10.1186/s40461-020-00100-0](https://ervet-journal.springeropen.com/articles/10.1186/s40461-020-00100-0) 
 	- Focus on understanding:
 		- Methodology
 		- Techniques
 		- Purpose of actions
-- Demonstrative Method - modeling what is intended to be learnt 
+- Demonstrative Method - modelling what is intended to be learnt 
 	- Re-enforce verification of our work - Science!  
 - [Interleaving](https://academicaffairs.arizona.edu/l2l-strategy-interleaving) - learning in context one task to for example exploit a system may actually help one understand how to detect it
 - Priming - briefing your brain with information of something that is upcoming have memories to reference and instantiate 
-- Modeling - map out material to be learnt in model of context
+- Modelling - map out material to be learnt in model of context
 
 
 TL;DR - TODOs
@@ -40,7 +40,7 @@ TL;DR - TODOs
 - One to four hours a day is better than 15 hours a day, but if you want to work alot then pivot and manage deep and shallower work intervals 
 - Sleep is important for learning - [(Sandoiu, 2018)](https://www.medicalnewstoday.com/articles/321161) , [(Massachusetts Institute of Technology, 2019)](https://www.sciencedaily.com/releases/2019/10/191001083956.htm) 
 - Learn by doing, remember by doing
-	- i.e. in Music: Learn all the theory, but never practice with instrument make your composition unnatuaral (the physical actualities of your limbs or organ when playing have to inform a composition); it is common for composers to hand over alot of interpretation and control to the player.
+	- i.e. in Music: Learn all the theory, but never practice with instrument make your composition unnatural (the physical actualities of your limbs or organ when playing have to inform a composition); it is common for composers to hand over alot of interpretation and control to the player.
 - Listen to listen, don't listen to respond
 - Be humble - masters are always humble as they understand there is always something still to humble them
 - Try to the least smart person in the room surrounded by smarter people.
@@ -55,7 +55,7 @@ TL;DR - TODOs
 		- Do not work from bed, bed is to sleep.
 - Schedule time to experiment and improvise
 	- Experiment-and-experiment-again mindset ensures you trying different combinations and understand a further completeness of a unit of something.
-- Good Notetaking, Flashcards, etc are subjectively made, but quality is empirical
+- Good Note taking, Flashcards, etc are subjectively made, but quality is empirical
 - Retrieval Practice 
 	- Recall practice
 	- Before reaching for solution in notes or online - STOP and try and make your brain remember or solve it first, then look if you cant remember AND to check if you are correct
@@ -74,7 +74,7 @@ TL;DR - TODOs
 	3.  Identify gaps
 	4.  Return to study
 
-This will not make a genius in a week or a month, but will make a better student and teacher over the course months. It is a investment that willl last a lifetime. But with that stated you must **PRACTICE IT**, like incident response you must actually try to respond to the incident in the first place otherwise you have failed.
+This will not make a genius in a week or a month, but will make a better student and teacher over the course months. It is a investment that will last a lifetime. But with that stated you must **PRACTICE IT**, like incident response you must actually try to respond to the incident in the first place otherwise you have failed.
 
 ## Attention
 
@@ -83,20 +83,20 @@ Dual Coding - Multiple modes of the same or similar information used to learn a 
 
 ## Time Investment 
 
-- Increase Cognitive Load - Dont use the 25 mins work 5 mins break method
+- Increase Cognitive Load - Do not use the 25 mins work 5 mins break method
 	- Have deep and shallow Work sections 
 	- Interweave Practice and Theory 
-		- Read a Page, find the important parts if you dont remmeber them then improve you cognitive load on reading to finding those parts again and re-read
+		- Read a Page, find the important parts if you do not remember them then improve you cognitive load on reading to finding those parts again and re-read
 - Critical Reflection of technique, what do and what does not work
-	- Seperate an amount time to recall after Deep and Shallow type of application of learning.
+	- Separate an amount time to recall after Deep and Shallow type of application of learning.
 - Learning Objectives
-	- What level of learning I am practicing?
+	- What level of learning I am practising?
 	- Pre study to figure out the relationships, but delay note taking
-	- After priming an understand solidification concept by concept by laying and spreading out over time the concepts that are relvant to the overall learning plan over a long period of time being generious in how stupid you actually are and not too tight in time scheduling.
+	- After priming an understand solidification concept by concept by laying and spreading out over time the concepts that are relevant to the overall learning plan over a long period of time being generous in how stupid you actually are and not too tight in time scheduling.
 
-## How we fundementally remember
+## How we fundamentally remember
 
-Symbiotic relationship of **Encoding** memories and **Recalling**. Remain calm and remember you will forget things and that is ok. The important information is the you schedule a set amount of time to understand what it relevant to you given your objective of what you must/want to learn. Encoding is linearly following the day to day doing of the tasks to learn. The old *insert social media or old media format* of telling to just do the stuff. Be kind to yourself allow yourself time to fail and rememer everyone starts somewhere and that in utero, we all start off growing from arsehole. Just do not be a arsehole to others or yourself. Recall the things that matter and getting stressed by what does and does not matter is just you being a silly arsehole trying to grow. Growing is always painful, take it slow and then speed it up. Start somewhere and start at some point, but make time to remember to remember the good things you did tto achieve your objectives. Even if it was a bad day, you took 30 minutes to read or watch something about the thing you wantedd to do or learn to then do more of it. No person has infinite time to remember to to encode everything do not worry.   
+Symbiotic relationship of **Encoding** memories and **Recalling**. Remain calm and remember you will forget things and that is OK. The important information is the you schedule a set amount of time to understand what it relevant to you given your objective of what you must/want to learn. Encoding is linearly following the day to day doing of the tasks to learn. The old *insert social media or old media format* of telling to just do the stuff. Be kind to yourself allow yourself time to fail and remember everyone starts somewhere and that in utero, we all start off growing from arsehole. Just do not be a arsehole to others or yourself. Recall the things that matter and getting stressed by what does and does not matter is just you being a silly arsehole trying to grow. Growing is always painful, take it slow and then speed it up. Start somewhere and start at some point, but make time to remember to remember the good things you did to achieve your objectives. Even if it was a bad day, you took 30 minutes to read or watch something about the thing you wanted to do or learn to then do more of it. No person has infinite time to remember to to encode everything do not worry.   
 
 ## Learning Typology 
 
@@ -111,7 +111,7 @@ Figure 1 - Information in isolation
 ```
 IDEA
 ```
-Figure 2 - Practicing applying the information
+Figure 2 - Practising applying the information
 ```
 [IDEA a] -> [IDEA b]
 ```
@@ -163,9 +163,13 @@ Building things: make an AD lab, a website, etc - if you can build them you can 
 
 Put books in the toilet to read, if was a instrument carry or have smaller instrument to play, leave what you need to learn everywhere or take it with you. 
 
-Play the instrument in front the television, play the jingles, practice holding or playing ostenato, but for hacking related - have an account for only hacking related mediam stuff and prioritise going to this account over any others. 
+Play the instrument in front the television, play the jingles, practice holding or playing ostentation, but for hacking related - have an account for only hacking related medium stuff and prioritise going to this account over any others. 
 
-Be mentored, follow along with a youtuber or streamer, get you hands on the keyboard and be mentored for almost free.
+Be mentored, follow along with a YouTube or streamer, get you hands on the keyboard and be mentored for almost free.
+
+## Essays
+
+One page essays...
 
 
 ## References

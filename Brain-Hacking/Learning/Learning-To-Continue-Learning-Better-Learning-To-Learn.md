@@ -7,7 +7,7 @@
 
 #### Recall and Mapping is important
 
-[Active recall](https://youtu.be/FatnXnlwAc4?si=sA7DvyU2b50hAnLM) Benjamin Keep video is self explainatory
+[Active recall](https://youtu.be/FatnXnlwAc4?si=sA7DvyU2b50hAnLM) Benjamin Keep video is self explanatory
 
 ## The Big Videos are okay if .... 
 

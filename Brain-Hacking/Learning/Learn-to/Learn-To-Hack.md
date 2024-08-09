@@ -1,3 +1,8 @@
+# Learn to Hack
+
+# This is very 2021-2022 centric beware
+
+
 By 7ru7h therefore as always look at other sources, it is just good for being a researcher or hacker or whatever
 
 Warning does contain enjoy the spicey takes, like programming and CTF vs Bug hunting

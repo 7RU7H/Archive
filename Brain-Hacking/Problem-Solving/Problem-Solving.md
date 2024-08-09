@@ -15,5 +15,8 @@
 - Data Domain
 - Discourse
 - Beyond Accepted Current Understanding (BACU)
-
+- Boolean and AntiBoolean Indicators
+	- Null space
+	- True positive.. 
+	- ...
 

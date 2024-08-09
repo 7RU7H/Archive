@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "This-Repository-Specific/Hacking-Memes.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "This-Repository-Specific/Hacking-Memes.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "This-Repository-Specific/Hacking-Memes.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "This-Repository-Specific/Hacking-Memes.md"
+                "file": "README.md"
               }
             }
           },
@@ -172,32 +172,32 @@
   },
   "active": "a7c2065fcf204188",
   "lastOpenFiles": [
-    "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Privilege-Escalation.md",
-    "Exploitation/CVEs/CVE-2024-37085.md",
-    "Exploitation/Windows/Active-Directory/ACL-Abuse/ReadGMSAPassword.md",
-    "Exploitation/Windows/Active-Directory/ACL-Abuse/WriteDacl.md",
-    "Exploitation/Windows/Active-Directory/ACL-Abuse/GenericAll.md",
-    "Exploitation/Windows/Active-Directory/ACL-Abuse/GetAllChanges.md",
-    "Exploitation/Windows/Active-Directory/ACL-Abuse/GenericWrite.md",
-    "Exploitation/CVEs/CVE-2023-23572.md",
-    "Development/APIs/API-Hacking.md",
-    "Brain-Hacking/Question-Based-Methodologies/Question-Based-Penetration-Testing-Methodology.md",
-    "Brain-Hacking/Question-Based-Methodologies/Question-Based-Web-Application-Hacking-Methodology.md",
-    "Software/Operating-Systems/Linux/Linux-Commands/Linux-Processes-Commands.md",
-    "Software/Operating-Systems/Linux/Linux-Concepts/Linux-Common-File-Extensions.md",
-    "Software/Operating-Systems/Linux/Linux-Concepts/Linux-Concepts.md",
-    "Software/Operating-Systems/Linux/Linux-Concepts/Linux-Cronjobs.md",
-    "Software/Operating-Systems/Linux/Linux-Concepts/Linux-Defined.md",
-    "Software/Operating-Systems/Linux/Linux-Concepts/Linux-File-Paths.md",
-    "Software/Operating-Systems/Linux/Linux-Concepts/Linux-DNS-Configuration.md",
-    "Software/Operating-Systems/Linux/Linux-Concepts/Linux-File-System.md",
-    "Software/Operating-Systems/Linux/Linux-Concepts/Linux-Kernel.md",
-    "Software/Operating-Systems/Linux/Linux-Concepts/Linux-Logging.md",
-    "Software/Operating-Systems/Linux/Linux-Concepts/Linux-Network-Services.md",
-    "Software/Operating-Systems/Linux/Linux-Concepts/Linux-Networking.md",
-    "Software/Operating-Systems/Linux/Linux-Concepts/Linux-Permissions-and-Rights.md",
-    "Software/Operating-Systems/Linux/Linux-Concepts/Linux-Shared-Libraries.md",
-    "Software/Operating-Systems/Linux/Linux-Concepts/Linux-System-Information.md",
+    "Brain-Hacking/Actions/Personality.md",
+    "Brain-Hacking/Actions/Exercise.md",
+    "Brain-Hacking/Cyber-Related-Actions/Beyond-Root-Ideas.md",
+    "Brain-Hacking/Cyber-Related-Actions/Good-Acronyms-And-Phrases.md",
+    "Brain-Hacking/Cyber-Related-Actions/RTFM.md",
+    "Brain-Hacking/Cyber-Related-Actions/Troubleshooting.md",
+    "Brain-Hacking/Learning/Learn-to/Learn-To-Hack.md",
+    "Brain-Hacking/Learning/Improve-Your-Learning.md",
+    "Brain-Hacking/Learning/Learning-To-Continue-Learning-Better-Learning-To-Learn.md",
+    "Brain-Hacking/Learning/Power-Thorough-Learning.md",
+    "Brain-Hacking/Philosophy/Meta-Methodology.md",
+    "Brain-Hacking/Philosophy/NOPSEC-101.md",
+    "Brain-Hacking/Philosophy/Hacking-Meta-Hacking-Problems.md",
+    "Brain-Hacking/Philosophy/Hacking-The-Thing.md",
+    "Brain-Hacking/Problem-Solving/Black-Box-Method.md",
+    "Brain-Hacking/Problem-Solving/Philosophical-Razors.md",
+    "Brain-Hacking/Problem-Solving/Problem-Compass.md",
+    "Brain-Hacking/Problem-Solving/Problem-Microscope.md",
+    "Brain-Hacking/Problem-Solving/Problem-Solving.md",
+    "Brain-Hacking/Problem-Solving/Rabbitholes.md",
+    "Brain-Hacking/Problem-Solving/Reasoning-Typology.md",
+    "Brain-Hacking/Problem-Solving/Tradecraft-To-BrainCraft.md",
+    "Brain-Hacking/Talk-Notes/Reframing-Hard-Cybersecurity-Problems-For-Fun-And-Profit.md",
+    "Brain-Hacking/Talk-Notes/Survival-Heuristics.md",
+    "Brain-Hacking/Biases.md",
+    "Brain-Hacking/Brain-Hacking-Hub.md",
     "Exploitation/Insider-Threats",
     "Images/mozilla-http-auth.png",
     "Post-Exploitation/Restricted-Desktop-Environment-Breakout",
