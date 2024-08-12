@@ -10,6 +10,18 @@ This is probably the best explanation I have found other than having to figure o
 > - generally if you spend hours and get nowhere, you are better off doing more enumeration than just beating your head against it. You can always come back later.
 
 
+- Obvious Stupid - Peak, but do not invest
+	- sometimes this is also the stupid you need, be quick and methodical do not emotional invest!
+- HitTheSuccesToWallOfNOPENOTHINGHERE- 2 steps forward 3 steps back; Move on, prepare for disappointment like this
+	- Access a database, but there is no creds that work (save them anyway), no table, user is guest only - Its nasty - 2 steps forward, 3 steps back rabbithole
+- Exploit *all the way to root with this one easy script* - too good to be true, try, but ...yep.
+	- Webserver to root vulns on 20-25 point box - Very unlikely, try it, and see if its been blocked
+- ExploitDoesNotCompute - Methodically beforehand exploit-dev it properly - read, understand, modify correctly; tried a couple of times, NOPE? -> QUICK move on!
+	- Try a couple of times (making sure you trying after reading, modifying and understanding what it is intended to do - IE IT IS CORRECT and SHOULD WORK, but DOES NOT)
+- HoursInTheSwampOfProblems - RUN around and Run away to a different problem you can solve.
+	- Pivot to something else, time spent elsewhere (if you noted and logged what you did try is) much better use of your time
+
+
 *"Simplifying"* and adding to this further:
 - Spin plates and time is just a number...
 	- by noting well and keeping time without stressing you can move on to something else and come back later

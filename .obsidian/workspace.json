@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Linux-File-Transfers.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Linux-File-Transfers.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Linux-File-Transfers.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Linux-File-Transfers.md"
+                "file": "README.md"
               }
             }
           },
@@ -158,15 +158,19 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "b7a8aff5f3c40aa6",
+  "active": "ed8f63df71621be6",
   "lastOpenFiles": [
+    "Alternate-Resources.md",
+    "README.md",
+    "Brain-Hacking/Problem-Solving/Rabbitholes.md",
+    "Virtualization/Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+    "This-Repository-Specific/Hacking-Memes.md",
+    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Linux-File-Transfers.md",
     "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/File-Transfers.md",
     "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Windows-File-Transfers.md",
-    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Linux-File-Transfers.md",
     "Social-Engineering/Social-Power.md",
     "Social-Engineering/Detecting-Deception.md",
     "Social-Engineering/Body-Language/Body-Language.md",
-    "README.md",
     "Exploitation/CVEs/CVE-2023-23572.md",
     "Spear-Phishing.md",
     "Images/exploitisweird-cve-2023-23572.png",
@@ -183,10 +187,6 @@
     "Brain-Hacking/Philosophy/Meta-Methodology.md",
     "Brain-Hacking/Philosophy/NOPSEC-101.md",
     "Brain-Hacking/Philosophy/Hacking-Meta-Hacking-Problems.md",
-    "Brain-Hacking/Philosophy/Hacking-The-Thing.md",
-    "Brain-Hacking/Problem-Solving/Black-Box-Method.md",
-    "Brain-Hacking/Problem-Solving/Philosophical-Razors.md",
-    "Brain-Hacking/Problem-Solving/Problem-Compass.md",
     "Exploitation/Insider-Threats",
     "Images/mozilla-http-auth.png",
     "Post-Exploitation/Restricted-Desktop-Environment-Breakout",

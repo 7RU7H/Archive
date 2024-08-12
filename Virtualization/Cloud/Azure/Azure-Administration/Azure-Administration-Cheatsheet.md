@@ -1,3 +1,4 @@
+# Azure Administration Cheatsheet
 
 - Access the portal at https://portal.azure.com/ -  great for performing single tasks
 - Cloud Shell on the `>_` Icon; Temporary Host - per-session, per-user basis
@@ -19,10 +20,10 @@ PowerShell Cmdlet Logic
 ```powershell
 # Microsoft Graph Module
 Get-Mg # Retrieve information
-New-Mg # Create Mgure X
-Update-Mg # Update Mgure X
+New-Mg # Create Azure X
+Update-Mg # Update Azure X
 Add-Mg # Add X to Existing Mgure Y
-Move-Mg # Move Mg X to Y
+Move-Mg # Move Az X to Y
 Export-Mg # Capture to a template
 Import-Mg # Import config
 Remove-Mg # Remove..
@@ -30,7 +31,7 @@ Select-Mg # Select != Get; Choose X
 Invoke-Mg # Contruct and Perform X
 Clear-Mg # Clear settable values
 Set-Mg # Opposite of Clear, Set values
-# Deprecated Zure Powershell Module
+# Deprecated Azure Powershell Module
 Get-Az # Retrieve information
 New-Az # Create Azure X
 Update-Az # Update Azure X
