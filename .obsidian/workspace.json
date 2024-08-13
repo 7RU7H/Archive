@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "5f842404ec6ab8ef",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Development/Software-Development-Paradigms/NASA-Power-Of-Ten.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -56,7 +69,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Dockerfile",
+                "query": "Zephr",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "Development/Software-Development-Paradigms/NASA-Power-Of-Ten.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "Development/Software-Development-Paradigms/NASA-Power-Of-Ten.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "Development/Software-Development-Paradigms/NASA-Power-Of-Ten.md"
               }
             }
           },
@@ -158,13 +171,23 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "ed8f63df71621be6",
+  "active": "5f842404ec6ab8ef",
   "lastOpenFiles": [
-    "Alternate-Resources.md",
+    "Securing-Networks-And-Systems/Hardening/Linux-Hardening.md",
+    "Development/Software-Development-Paradigms/NASA-Power-Of-Ten.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
+    "This-Repository-Specific/Hacking-Memes.md",
+    "Security-Disciplines/Penetration-Testing/TALK-Pentests-The-Jason-Bourne-Approach-Turning-Regular-Biros-Into-Weapons-by-Andy-Gill.md",
+    "Security-Disciplines/TALK-Luck-Timing-And-A-Nice-Cup-Of-Tea-Andy-Jones-Keynote.md",
+    "Security-Disciplines/TALK-Notes-Modern-Active-Directory-Attacks-And-Defense.md",
+    "Tools/C2/Sliver/TALK-Pwning-the-Domain-With-Sliver-Framework.md",
+    "Virtualization/Docker/Docker.md",
+    "Virtualization/Docker/Docker-Hacking.md",
     "README.md",
+    "Alternate-Resources.md",
     "Brain-Hacking/Problem-Solving/Rabbitholes.md",
     "Virtualization/Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
-    "This-Repository-Specific/Hacking-Memes.md",
     "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Linux-File-Transfers.md",
     "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/File-Transfers.md",
     "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Windows-File-Transfers.md",
@@ -177,16 +200,6 @@
     "Brain-Hacking/Actions/Personality.md",
     "Brain-Hacking/Actions/Exercise.md",
     "Brain-Hacking/Cyber-Related-Actions/Beyond-Root-Ideas.md",
-    "Brain-Hacking/Cyber-Related-Actions/Good-Acronyms-And-Phrases.md",
-    "Brain-Hacking/Cyber-Related-Actions/RTFM.md",
-    "Brain-Hacking/Cyber-Related-Actions/Troubleshooting.md",
-    "Brain-Hacking/Learning/Learn-to/Learn-To-Hack.md",
-    "Brain-Hacking/Learning/Improve-Your-Learning.md",
-    "Brain-Hacking/Learning/Learning-To-Continue-Learning-Better-Learning-To-Learn.md",
-    "Brain-Hacking/Learning/Power-Thorough-Learning.md",
-    "Brain-Hacking/Philosophy/Meta-Methodology.md",
-    "Brain-Hacking/Philosophy/NOPSEC-101.md",
-    "Brain-Hacking/Philosophy/Hacking-Meta-Hacking-Problems.md",
     "Exploitation/Insider-Threats",
     "Images/mozilla-http-auth.png",
     "Post-Exploitation/Restricted-Desktop-Environment-Breakout",

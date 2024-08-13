@@ -89,6 +89,15 @@ mount | grep shm # to check flags
 
 ## Filesystem 
 
+Hardening `/dev/shm` - improved: [tenable - /dev/shm solution](https://www.tenable.com/audits/items/CIS_Ubuntu_20.04_LTS_v1.0.0_Server_L1.audit:64bb8e8c9f25ebb5b52506dfae57ad23)
+```bash
+# Edit /etc/fstab and add or edit the following line:
+echo "tmpfs /dev/shm tmpfs defaults,noexec,nodev,nosuid,seclabel 0 0" | tee -a /etc/fstab
+# Run the following command to remount /dev/shm:
+mount -o remount,noexec,nodev,nosuid /dev/shm
+```
+
+
 Modern \*nix ship  with LUKS (Linux Unified Key Setup), from [THM](https://tryhackme.com/room/linuxsystemhardening) :
 *"Most distributions let you encrypt a drive using a graphical interface. However, if you would like to set up LUKS from the command line, the steps are along these lines:*"
 - Install `cryptsetup-luks`. (You can issue `apt install cryptsetup`, `yum install cryptsetup-luks` or `dnf install cryptsetup-luks` for Ubuntu/Debian, RHEL/Cent OS, and Fedora, respectively.)
@@ -493,3 +502,4 @@ Checksum verification of sensitive files or binaries:
 [Lynis](https://github.com/CISOfy/lynis) 
 [Chkrootkit (Check Rootkit)](https://www.chkrootkit.org/)
 [RKHunter (Rootkit Hunter)](https://rkhunter.sourceforge.net/) 
+[tenable - /dev/shm solution](https://www.tenable.com/audits/items/CIS_Ubuntu_20.04_LTS_v1.0.0_Server_L1.audit:64bb8e8c9f25ebb5b52506dfae57ad23)
