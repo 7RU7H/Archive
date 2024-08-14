@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "5ae154eaa84897a7",
+        "id": "4ef29f893390ae98",
         "type": "tabs",
         "children": [
           {
-            "id": "b7a8aff5f3c40aa6",
+            "id": "eec52bd1aa7be394",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "5f842404ec6ab8ef",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Development/Software-Development-Paradigms/NASA-Power-Of-Ten.md",
+                "file": "Hardware/Hardware-Hacking/Cold-Boot-Attacks.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Development/Software-Development-Paradigms/NASA-Power-Of-Ten.md",
+                "file": "Hardware/Hardware-Hacking/Cold-Boot-Attacks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Development/Software-Development-Paradigms/NASA-Power-Of-Ten.md",
+                "file": "Hardware/Hardware-Hacking/Cold-Boot-Attacks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Development/Software-Development-Paradigms/NASA-Power-Of-Ten.md"
+                "file": "Hardware/Hardware-Hacking/Cold-Boot-Attacks.md"
               }
             }
           },
@@ -171,16 +158,22 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "5f842404ec6ab8ef",
+  "active": "eec52bd1aa7be394",
   "lastOpenFiles": [
-    "Securing-Networks-And-Systems/Hardening/Linux-Hardening.md",
-    "Development/Software-Development-Paradigms/NASA-Power-Of-Ten.md",
+    "Security-Disciplines/Digital-Forensics/Cold-System-Forensics.md",
+    "Hardware/Hardware-Hacking/Cold-Boot-Attacks.md",
+    "Securing-Networks-And-Systems/Side-Channel-Attacks.md",
+    "Security-Disciplines/For-Individuals/OPSEC/Privacy.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
+    "Securing-Networks-And-Systems/Untitled",
+    "Security-Disciplines/For-Individuals/OPSEC",
+    "Development/Software-Development-Paradigms/NASA-Power-Of-Ten.md",
+    "Securing-Networks-And-Systems/Hardening/Linux-Hardening.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
     "This-Repository-Specific/Hacking-Memes.md",
     "Security-Disciplines/Penetration-Testing/TALK-Pentests-The-Jason-Bourne-Approach-Turning-Regular-Biros-Into-Weapons-by-Andy-Gill.md",
     "Security-Disciplines/TALK-Luck-Timing-And-A-Nice-Cup-Of-Tea-Andy-Jones-Keynote.md",
-    "Security-Disciplines/TALK-Notes-Modern-Active-Directory-Attacks-And-Defense.md",
+    "Security-Disciplines/Penetration-Testing/TALK-Notes-Modern-Active-Directory-Attacks-And-Defense.md",
     "Tools/C2/Sliver/TALK-Pwning-the-Domain-With-Sliver-Framework.md",
     "Virtualization/Docker/Docker.md",
     "Virtualization/Docker/Docker-Hacking.md",
@@ -195,11 +188,7 @@
     "Social-Engineering/Detecting-Deception.md",
     "Social-Engineering/Body-Language/Body-Language.md",
     "Exploitation/CVEs/CVE-2023-23572.md",
-    "Spear-Phishing.md",
     "Images/exploitisweird-cve-2023-23572.png",
-    "Brain-Hacking/Actions/Personality.md",
-    "Brain-Hacking/Actions/Exercise.md",
-    "Brain-Hacking/Cyber-Related-Actions/Beyond-Root-Ideas.md",
     "Exploitation/Insider-Threats",
     "Images/mozilla-http-auth.png",
     "Post-Exploitation/Restricted-Desktop-Environment-Breakout",
@@ -215,8 +204,6 @@
     "Images/programlanguages-adv-disadv-moloch-sliver-talk.png",
     "Networks/Network-Theory/Network-Protocols/sedQr2JUP",
     "Networks/Network-Technologies",
-    "WPA ",
-    "Networks/Network-Theory/Network-Protocols/DNS",
     "Images/whatisthisdebiandocs-1.png",
     "Images/whatisthisdebiandocs.png"
   ]
