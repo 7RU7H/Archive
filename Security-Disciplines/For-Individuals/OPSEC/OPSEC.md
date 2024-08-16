@@ -14,13 +14,13 @@ Operations Security (OPSEC) is a term coined by the United States military. In t
 	- Segmenting  machine, accounts, covers, IOCs 
 
 
-
+Must watch
 [Part 1-How to Live like a Criminal - Privacy Tips for the Non-Criminal | Ean Meyer & John Strand](https://www.youtube.com/watch?v=9iwh5J71pZg)
 [Part 2-How to Live like a Criminal - Privacy Tips for the Non-Criminal | Ean Meyer & John Strand](https://www.youtube.com/watch?v=r4SvCFxTMMk)
 [Part 3-How to Live like a Criminal - Privacy Tips for the Non-Criminal | Ean Meyer & John Strand](https://www.youtube.com/watch?v=JlVI705wHq8)
-
+Week later revision, before rewatching the above
 [DEF CON 29 Recon Village - Ritu Gil - So You Want to OPSEC, Eh](https://www.youtube.com/watch?v=daXNSvb_S3w)
-## AD ID Level
+#### AD ID Level
 
 [Part 2-How to Live like a Criminal - Privacy Tips for the Non-Criminal | Ean Meyer & John Strand](https://www.youtube.com/watch?v=r4SvCFxTMMk) recommends the reading of [Ad IDs Behaving Badly](https://blog.appcensus.io/2019/02/14/ad-ids-behaving-badly/) by  [Serge Egelman](https://blog.appcensus.io/author/serge/)
 

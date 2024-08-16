@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Hardware/Electronics.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
@@ -56,7 +56,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "venv",
+                "query": "Commandments",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Hardware/Electronics.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Hardware/Electronics.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Hardware/Electronics.md"
+                "file": "README.md"
               }
             }
           },
@@ -160,6 +160,16 @@
   },
   "active": "512777f9b4d681cb",
   "lastOpenFiles": [
+    "Brain-Hacking/Life-Cheatsheet.md",
+    "Brain-Hacking/Cyber-Related-Actions/Troubleshooting.md",
+    "Brain-Hacking/Cyber-Related-Actions/Good-Acronyms-And-Phrases.md",
+    "Brain-Hacking/Philosophy/NOPSEC-101.md",
+    "Security-Disciplines/For-Individuals/OPSEC/OPSEC.md",
+    "README.md",
+    "Development/Languages/Rust/Rust.md",
+    "Development/Languages/Rust/TALK-Rust-Fundamentals-for-InfoSec.md",
+    "Alternate-Resources.md",
+    "Tools/OSINT/web-check.md",
     "Hardware/Electronics.md",
     "Virtualization/Cloud/Azure/Azure-Administration/Azure-Deploy-And-Manage-Compute-Resources/Azure-Administration-Azure-App-Services.md",
     "Hardware/Hardware-Hacking/Cold-Boot-Attacks.md",
@@ -178,16 +188,6 @@
     "Security-Disciplines/Penetration-Testing/TALK-Notes-Modern-Active-Directory-Attacks-And-Defense.md",
     "Tools/C2/Sliver/TALK-Pwning-the-Domain-With-Sliver-Framework.md",
     "Virtualization/Docker/Docker.md",
-    "Virtualization/Docker/Docker-Hacking.md",
-    "README.md",
-    "Alternate-Resources.md",
-    "Brain-Hacking/Problem-Solving/Rabbitholes.md",
-    "Virtualization/Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
-    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Linux-File-Transfers.md",
-    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/File-Transfers.md",
-    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Windows-File-Transfers.md",
-    "Social-Engineering/Social-Power.md",
-    "Social-Engineering/Detecting-Deception.md",
     "Images/exploitisweird-cve-2023-23572.png",
     "Exploitation/Insider-Threats",
     "Images/mozilla-http-auth.png",
