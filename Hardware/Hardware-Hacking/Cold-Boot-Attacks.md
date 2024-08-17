@@ -51,5 +51,6 @@ If you need to scared out of shared Cloud and Data Centers consider how some in 
 > 6. Then get some people to find what you were looking for in a time constrained workplace setting... (the easiest on this list)
 > 7. Then explain the above to your boss and how that is value or even possible
 > Are you really able to prove anything with just a VM image to non-technical people in a court? Are you are Law Firm standing to gain from the disputes? What kind of criminals have AWS or Azure subscriptions? Have you been hit in the head with Server and are you in some kind of Coma? 
+> - I am also certain that this is not a novel argument and I pretty sure I have heard someone on a podcast, talk or conference, not sure - but I remember the person saying them stating this issue before the big migration towards the cloud.
 
 

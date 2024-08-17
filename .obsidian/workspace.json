@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "Development/Programming-Paradigms/Big-O.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "Development/Programming-Paradigms/Big-O.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "Development/Programming-Paradigms/Big-O.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "Development/Programming-Paradigms/Big-O.md"
               }
             }
           },
@@ -160,20 +160,22 @@
   },
   "active": "512777f9b4d681cb",
   "lastOpenFiles": [
+    "Security-Disciplines/Digital-Forensics/Cold-System-Forensics.md",
+    "Development/Programming-Paradigms/Big-O.md",
+    "Security-Disciplines/Digital-Forensics/Digital-Forensics.md",
+    "Hardware/Hardware-Hacking/Cold-Boot-Attacks.md",
+    "README.md",
     "Brain-Hacking/Life-Cheatsheet.md",
     "Brain-Hacking/Cyber-Related-Actions/Troubleshooting.md",
     "Brain-Hacking/Cyber-Related-Actions/Good-Acronyms-And-Phrases.md",
     "Brain-Hacking/Philosophy/NOPSEC-101.md",
     "Security-Disciplines/For-Individuals/OPSEC/OPSEC.md",
-    "README.md",
     "Development/Languages/Rust/Rust.md",
     "Development/Languages/Rust/TALK-Rust-Fundamentals-for-InfoSec.md",
     "Alternate-Resources.md",
     "Tools/OSINT/web-check.md",
     "Hardware/Electronics.md",
     "Virtualization/Cloud/Azure/Azure-Administration/Azure-Deploy-And-Manage-Compute-Resources/Azure-Administration-Azure-App-Services.md",
-    "Hardware/Hardware-Hacking/Cold-Boot-Attacks.md",
-    "Security-Disciplines/Digital-Forensics/Cold-System-Forensics.md",
     "Securing-Networks-And-Systems/Side-Channel-Attacks.md",
     "Security-Disciplines/For-Individuals/OPSEC/Privacy.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
@@ -186,8 +188,6 @@
     "Security-Disciplines/Penetration-Testing/TALK-Pentests-The-Jason-Bourne-Approach-Turning-Regular-Biros-Into-Weapons-by-Andy-Gill.md",
     "Security-Disciplines/TALK-Luck-Timing-And-A-Nice-Cup-Of-Tea-Andy-Jones-Keynote.md",
     "Security-Disciplines/Penetration-Testing/TALK-Notes-Modern-Active-Directory-Attacks-And-Defense.md",
-    "Tools/C2/Sliver/TALK-Pwning-the-Domain-With-Sliver-Framework.md",
-    "Virtualization/Docker/Docker.md",
     "Images/exploitisweird-cve-2023-23572.png",
     "Exploitation/Insider-Threats",
     "Images/mozilla-http-auth.png",

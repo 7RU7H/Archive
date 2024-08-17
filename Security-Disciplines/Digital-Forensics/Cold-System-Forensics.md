@@ -22,8 +22,36 @@ If you need to scared out of shared Cloud and Data Centers consider how some in 
 > 6. Then get some people to find what you were looking for in a time constrained workplace setting... (the easiest on this list)
 > 7. Then explain the above to your boss and how that is value or even possible
 > Are you really able to prove anything with just a VM image to non-technical people in a court? Are you are Law Firm standing to gain from the disputes? What kind of criminals have AWS or Azure subscriptions? Have you been hit in the head with Server and are you in some kind of Coma? 
+> - I am also certain that this is not a novel argument and I pretty sure I have heard someone on a podcast, talk or conference, not sure - but I remember the person saying them stating this issue before the big migration towards the cloud.
 
 
+Order Volatility - Prioritisation based on the data potential exposure to change:
+- CPU registers and cache
+- Routing table, ARP Cache, Process table, Kernel Statistics and RAM
+- Temporary File Systems
+- Hard Disk
+- Remote Logging and Monitoring Data
+- Physical Configuration and Network Typology
+- Archival Media
+
+
+Acquisition Methods:
+- Disk imaging - copy bit-by-bit of forensic data to another media of storage for replication and investigation without harming the original
+	- Write blocking
+- Physical Acquisition
+	- Chip-off forensics: delicate process involving removing and reading a storage chip
+	- Joint Test Action Group (JTAG) forensics: [[JTAG]] protocol interface to access data from embedded systems. 
+- Secure Storage:
+	- Faraday Cages: prevent contamination between devices and wireless and radio transmission signal of all kind
+	- Device separation and asset management
+	- Access Control 
+	- Environmental Control - [[Physical-Security]]
+	- Regular Auditing
+- Chain of Custody of Forensic Data:
+	- Document every step
+	- Secure Transport
+	- Hashing
+	- Write Blocking
 
 ## References
 

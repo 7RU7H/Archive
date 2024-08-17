@@ -22,6 +22,15 @@ Image Acquisition types from [THM AoC 2023](https://tryhackme.com/room/adventofc
 - Logical acquisition: A **select list of files** is copied from the seized device.
 - Sparse acquisition: Select **fragments of unallocated data** are copied. The unallocated areas of the disk might contain deleted data; however, this approach is limited compared to static and live acquisition because it doesn’t cover the whole disk.
 
+Order Volatility - Prioritisation based on the data potential exposure to change:
+- CPU registers and cache
+- Routing table, ARP Cache, Process table, Kernel Statistics and RAM
+- Temporary File Systems
+- Hard Disk
+- Remote Logging and Monitoring Data
+- Physical Configuration and Network Typology
+- Archival Media
+
 
 #### In Practice
 
@@ -143,3 +152,4 @@ Challenges faced
 [Defcon 21 - Forensic Fails - Shift + Delete Won't Help You Here](https://www.youtube.com/watch?v=NG9Cg_vBKOg)
 [Locard's exchange principle (Wikipedia)](https://en.wikipedia.org/wiki/Locard%27s_exchange_principle)
 [THM Room - Windows Incident Surface](https://tryhackme.com/r/room/winincidentsurface)
+[THM Room Intro to cold system forensics](https://tryhackme.com/r/room/introtocoldsystemforensics)
