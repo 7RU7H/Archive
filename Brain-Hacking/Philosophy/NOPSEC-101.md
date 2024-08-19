@@ -1,8 +1,12 @@
 # NOPSEC 101 
 
-NOPSEC != [OopSec](https://www.youtube.com/watch?v=StSLxFbVz0M) and is the argument for inverse of [[OPSEC]] and bettering your OPSEC be being more conscious of its affect on your campaigns, life, etc. 
+The purpose of writing and refining this page is excise of trying to write well and write short essays about complex topics.
 
-Also with 18 years of (as of 2024) potential Intel and AMD hardcorded exploitable RCEs, firmware for Motherboards and components, backdooring in Assembly instruction sets, Software and Network protocols and porbably anywhere else. Where the first Quantuum computation was *confirmed* publicly in 2000 making all encryption just way of atleast making everything not absolute observable to everyone else. Are OPSEC proponents not accounting for the noise of the internet of the total unobservable chaos of all that information in transit and at rest.
+NOPSEC != [OopSec](https://www.youtube.com/watch?v=StSLxFbVz0M) and is the argument for inverse of [[OPSEC]] and bettering your OPSEC be being more conscious of is affect on your campaigns, life, etc. OPSEC is not secrecy. OPSEC is a set of ideals on top a lot tools that obfuscate whether you operational secure - just because did not say X you still tacitly said Y. Locard's Principle of exchange always exist. NOPSEC and OPSEC are not for everyone. Do you have a working Quantum Computer and the staff to analyse and store complex states that very few people can understand? No, even if you did, good luck. 
+
+This page is like saying game hacking more powerful than getting someone else to play the game so you do not have culpability. The informational state of the game is changed, the useful idiot you got to play the game still has to play the game like everyone else - just more sneaky. 
+
+Also with 18 years of (as of 2024) potential Intel and AMD hardcorded exploitable RCEs, firmware for Motherboards and components, backdooring in Assembly instruction sets, Software and Network protocols and probably anywhere else. Where the first Quantum computation was *confirmed* publicly in 2000 making all encryption just way of at least making everything not absolute observable to everyone else. Are OPSEC proponents not accounting for the noise of the internet of the total unobservable chaos of all that information in transit and at rest.
  
 This is not a replacement for OPSEC or is this a avocation to just NOPSEC. NOPSEC is just a name to challenge OPSEC as a way of functioning. 
 
@@ -37,7 +41,7 @@ It is an attempt to state the efficiency and limitations of OPSEC therefore make
 
 - Acknowledgement of the entire field of informational and cyberware:
 	- Information warfare reinforces identity and control over external forces.
-	- By having Identicators of Continuation you control adversaries attempting to use your identity as cover, while have Identity Management 
+	- By having Identicators of Continuation you control adversaries attempting to use your identity as cover, while have [[Identity-And-Access-Management]]
 - Open acknowledgement and definition regulates action on objectives. 
 	- Being to truest self or truest group to some ideal as part of the set of objectives, if that does not conform to the collective algorithm of historical legal actualities then your or your group are the problem unto themselves.
 - It recognises that everything is breached or backdoored to focus on using computer for the highest purpose possible in strategic and quality of life purposes. Rather dismissing it till device is no longer usable
@@ -62,13 +66,13 @@ It is an attempt to state the efficiency and limitations of OPSEC therefore make
 - What is secret can be kept secret by your conquerors and be use as exploitable blackmail - then you are a tool with a lifecycle and not a agent of operationalised objectives
 - Dependencies and triage become more like real organisations reflecting the environment and then personal will to optimise that to a higher form
 - Recognition of the truth of that you are not special and no one is
-- Recognition of the truth of  your capabilities rather the continuous imposter syndrome (or hiding it because OPSEC issues have weird affects) 
+- Recognition of the truth of  your capabilities rather the continuous impostor syndrome (or hiding it because OPSEC issues have weird affects) 
 - Be not needing OPSEC to function you can have failings and learn from them and not dump and then have to rebuild everything
 - Social media use must have purpose, because you have to manage time and empathetic commonality
 - Use the algorithms of insert-big-corp-here to aid in reinforcing the NOPSEC
 - You operate all the time not when is OPSEC or if you have OPSEC infrastructure in place - you will improve more quickly
-- You engage in discourse and ask questions and solve more problems and understand more, rather than acknowledging everything single webpage you visit is a connection of your culpability in some investigation 
-- Let everyone else be stupid and hack all the things you shouldn't because its stupid and then do Labs on ethnical hacking sites, without lose the ability to touch a computer for 4 plus years
+- You engage in discourse and ask questions and solve more problems and understand more, rather than acknowledging everything single web page you visit is a connection of your culpability in some investigation 
+- Let everyone else be stupid and hack all the things, you shouldn't because its stupid. Then learn about it in detail on Labs on ethical hacking sites, without losing the ability to touch a computer for 4 plus years
 - You get feedback and that can be acted upon
 - You accept that to most people, people that are good with computers are like wizards that are not trusted, be like a Witcher and you are facing the ethical and technical monsters of our time - rather than ostrocisation 
 	- If you are loud then everyone know you are there, either you are food or not a threat - be a white blood cell to humanity
@@ -86,6 +90,16 @@ It is an attempt to state the efficiency and limitations of OPSEC therefore make
 - You are the patterns of life, patterns are enumeratable, why not have positive value adding patterns that affect all areas of life
 - OPSEC is continuous sacrifice in silent acceptance that you can only operate as a group maybe for some time, not a net positive. 
 - OPSEC is embodiment of dispowerment - if you can not openly do something are you really powerful?
+- If you are not paranoid then you are not vigilant enough about the underlying tools you are using that *must be secure, because OPSEC* - you are asserted that the cat is a live and well in the box in a Schrodinger's Cat scenario
 
+#### Examples of NOPSEC
 
+Where the may have been a smidgen of OPSEC 
 
+- Russia acknowledging Trump, won Trump the election, not any hacking - ordinary non-technical people see a person knows another like they speak with their neighbour. To the ordinary person Trump could just smooth over a issue with Putin. Similarly with North Korea years later, polls went through the roof. 
+- Boris Johnson misuse of words deliberately as signalling strategy to indicate something being somehow wrong, because he said incorrectly *vEEgan sausage rolls*
+- Find - Chinese General sat on the top of the fort with less than 1000 men besieged by many tens of the thousand and because of NOPSEC of exuding true self on the information it prevent further siege, because the sieging army retreating thinking it was a trap. 
+- All Propaganda wants to be NOPSEC
+- Jason Street exists awesomely and does great talks and work.
+- Everything Alister Crowley did without being incarcerated once.
+- Any attack in any multiplayer game, martial combat, etc where you telegraph a misleading strike - D-Day landings?
