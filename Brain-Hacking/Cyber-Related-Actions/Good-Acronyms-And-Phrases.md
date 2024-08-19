@@ -35,7 +35,7 @@ Instead of FBI Open up! Try Joe Navarro, :
 		- Phonetic - What words do they stress
 		- Syntactic - Where the words are placed within a sentence is very important
 		- Semantic - Meaning and humans only can deal in a maximum of 3-5 layers (my research and guess : proof counting groups of objects - also try have a conversation when you are allude to five different discourse in one conversation - Good luck)   
-	- Attribute - [[Survival-Heuristics]], Attribution is continuous and dangerous to objectives  
+	- Attribute - [[TALK-Survival-Heuristics]], Attribution is continuous and dangerous to objectives  
 		- Linguistic
 			- discourse - Over multiple interactions what are the patterns - No text, person can escape discourse even everything outside of that discourse is potentially reversible. 
 		- Summations of Observations

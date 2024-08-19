@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Security-Disciplines/Digital-Forensics/Cold-System-Forensics.md",
+                "file": "Brain-Hacking/Problem-Solving/Black-Box-Method.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Security-Disciplines/Digital-Forensics/Cold-System-Forensics.md",
+                "file": "Brain-Hacking/Problem-Solving/Black-Box-Method.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Security-Disciplines/Digital-Forensics/Cold-System-Forensics.md",
+                "file": "Brain-Hacking/Problem-Solving/Black-Box-Method.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Security-Disciplines/Digital-Forensics/Cold-System-Forensics.md"
+                "file": "Brain-Hacking/Problem-Solving/Black-Box-Method.md"
               }
             }
           },
@@ -160,10 +160,13 @@
   },
   "active": "512777f9b4d681cb",
   "lastOpenFiles": [
+    "Brain-Hacking/Talk-Notes/TALK-Survival-Heuristics.md",
+    "Brain-Hacking/Talk-Notes/TALK-Reframing-Hard-Cybersecurity-Problems-For-Fun-And-Profit.md",
+    "Cryptography-And-Authentication/De-Or-En-Cryption.md",
+    "Security-Disciplines/Digital-Forensics/Cold-System-Forensics.md",
     "Development/Languages/Go/Golang.md",
     "Development/Malware/Go/Go-Malware-Writing-For-Windows.md",
     "Development/Programming-Paradigms/Big-O.md",
-    "Security-Disciplines/Digital-Forensics/Cold-System-Forensics.md",
     "Security-Disciplines/Digital-Forensics/Digital-Forensics.md",
     "Hardware/Hardware-Hacking/Cold-Boot-Attacks.md",
     "README.md",
@@ -185,9 +188,6 @@
     "Security-Disciplines/For-Individuals/OPSEC",
     "Development/Software-Development-Paradigms/NASA-Power-Of-Ten.md",
     "Securing-Networks-And-Systems/Hardening/Linux-Hardening.md",
-    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
-    "This-Repository-Specific/Hacking-Memes.md",
-    "Security-Disciplines/Penetration-Testing/TALK-Pentests-The-Jason-Bourne-Approach-Turning-Regular-Biros-Into-Weapons-by-Andy-Gill.md",
     "Images/exploitisweird-cve-2023-23572.png",
     "Exploitation/Insider-Threats",
     "Images/mozilla-http-auth.png",

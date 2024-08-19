@@ -4,12 +4,12 @@ These are the TL;DWatch notes and takeways from the excellent talk: [Survival He
 
 ## Traps to Avoid
 
-- **Avoid the streetlight affect**
+- **Avoid the streetlight effect**
 	- Be humble about the decisions you make about:
 	- Information accuracy 
 	- Current level of knowledge
 	- You are biased
-	- Your perspective is (flawed) slice of collective consensus reailty and abstract **entirely unknowable** universal reality
+	- Your perspective is (flawed) slice of collective consensus reality and abstract **entirely unknowable** universal reality
 	- Comparison to the estimatable potential reality
 	- Excessive comparison to the abstract **entirely unknowable** universal actuality 
 - **Trends are Always about past!**
