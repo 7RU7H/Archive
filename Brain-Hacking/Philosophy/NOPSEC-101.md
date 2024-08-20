@@ -1,8 +1,62 @@
 # NOPSEC 101 
 
-The purpose of writing and refining this page is excise of trying to write well and write short essays about complex topics.
+The purpose of writing and refining this page is excise of trying to write well and write short essays about complex topics. I would the first person any room to enjoy the minutia of the almost perfect OPSEC system.
 
-NOPSEC != [OopSec](https://www.youtube.com/watch?v=StSLxFbVz0M) and is the argument for inverse of [[OPSEC]] and bettering your OPSEC be being more conscious of is affect on your campaigns, life, etc. OPSEC is not secrecy. OPSEC is a set of ideals on top a lot tools that obfuscate whether you operational secure - just because did not say X you still tacitly said Y. Locard's Principle of exchange always exist. NOPSEC and OPSEC are not for everyone. Do you have a working Quantum Computer and the staff to analyse and store complex states that very few people can understand? No, even if you did, good luck. 
+Short essays
+
+TLDR:
+Premise -> OPSEC is very expensive and form a NOPSEC perspective has weird issues at a micro and macro scale that in the long term result that misaligned from the original objective. 
+
+PURPOSE 
+
+References
+Appendix 
+
+
+
+OPSEC 
+Propose NOPSEC as joke and superset of OPSEC  
+
+
+To begin abstractly, consider a informational reference frame which has the properties of causality, entropy and negentropy exists.
+
+Locard's Principal of Exchange applied
+
+
+OPSEC is use to achieve an outcome with the least moves possibles that must be the least visible possible, with the least relational data points that as cluster could be interpreted as the cause of action.  
+
+NOPSEC is where you can use OPSEC, it is just appreciation that the least moves possibles with the least visibility affect on the environment for a result is not always plausably possible. 
+
+Then inversely ... and excessively materialise 
+
+Cheating at snooker. 
+How can you play snooker in with OPSEC? Proxies? 
+- Just moved the problem to another vector with more human mistakes and issues to avoid using technology
+- And if you use technological proxy like a special gun that fires a special bullet that can knock the Black ball in, you have the technical debt of R&D, Manufacture, Training, Disposal, Implanting and maintain persistence, Access control management for development ... and that is before making the shot. For the
+Post action analytical costs for concerned sides are huge. 
+
+The amount of Locard Principle of Exchange creation is shifted to more secure areas of the environment that if that burnt before or after ...
+
+Fallacy of attribution is that is there is only some many combinations of who did anything that OPSEC become mathematically just psychological gaming of OPSEC user to help stave of flight responses? 
+
+
+If you can use NOPSEC you can walk into the room exchange information to allow you then move the ball in front of all witnesses and leave. You had to have the correct information and payload delivery in the first place to be there, do execute the task and be able to leave. 
+
+
+Recursive acknowledgement of participant games - X knows that Y knows that X knows each both know A and have proof that opposition knows about A. 
+
+OPSEC - why is cant do what NOPSEC can, 
+
+NOPSEC
+
+Examples
+
+Conclusion
+
+
+
+
+NOPSEC != [OopSec](https://www.youtube.com/watch?v=StSLxFbVz0M) and is the argument for inverse of [[OPSEC]] and bettering your OPSEC be being more conscious of is affect on your campaigns, life, etc. OPSEC is not secrecy. OPSEC is a set of ideals on top a lot tools that obfuscate whether you operational secure - just because did not say X you still tacitly said Y. Locard's Principle of exchange always exist. NOPSEC and OPSEC are not for everyone. Do you have a working Quantum Computer and the staff to analyse and store complex states that very few people can understand? No, even if you did, good luck. This is also the result of not having tendencies to want Hacking other people or a working Quantum Computer or the budget.
 
 This page is like saying game hacking more powerful than getting someone else to play the game so you do not have culpability. The informational state of the game is changed, the useful idiot you got to play the game still has to play the game like everyone else - just more sneaky. 
 
@@ -94,7 +148,24 @@ It is an attempt to state the efficiency and limitations of OPSEC therefore make
 
 #### Examples of NOPSEC
 
-Where the may have been a smidgen of OPSEC 
+Where the may have been a smidgen of OPSEC, from the microscopic to massive 
+
+- Tuberculous is parasite of the immune system, using the macrophages modify it to be a host to then propagate slowly enough to avoid macrophage against macrophage. When a host macrophage is expended it burst, your cells then contain the macrophage host together in a clump creating a granuloma for more replication. If you immune system is not strong enough the granuloma bursts causing flooding of the lungs to ensure external propagation thorough fluids expelled. Immune system then cause lots of damage to your body as a response to attempt eradicate Tuberculous.
+	- Enjoy: [YouTube: Kurzgesagt - This Disease is Deadlier than the plague](https://www.youtube.com/watch?v=GFLb5h2O2Ww)
+
+> Researching this:
+- Colonies of Ants do not use OPSEC - information is used to control network where each ant is very simple and can do simple tasks, but together operate in a very complex way: farming plants with other insects, creating floating structures from there connected bodies to protect against high water levels,
+
+- Honey Badger  - tough, strong immune system with hardest working liver in the galaxy morty, can take risks, weaponize sent warfare, can use tools and repurpose objects, persistence. 
+
+- Elephants - Memory 
+
+- Eyes on the back of you can protect you against Tigers.
+- Sperm whales sound can vibrate things to death
+
+- Aposematism in Nature -  WTF is that don't touch that - aposemantism https://www.youtube.com/watch?v=i6V-RBjecpI; anti-Aposemantism of people being peacockish as 
+
+- Stone fish, Cone Snail, Angel Shark for the OPSEC
 
 - Russia acknowledging Trump, won Trump the election, not any hacking - ordinary non-technical people see a person knows another like they speak with their neighbour. To the ordinary person Trump could just smooth over a issue with Putin. Similarly with North Korea years later, polls went through the roof. 
 - Boris Johnson misuse of words deliberately as signalling strategy to indicate something being somehow wrong, because he said incorrectly *vEEgan sausage rolls*
@@ -103,3 +174,8 @@ Where the may have been a smidgen of OPSEC
 - Jason Street exists awesomely and does great talks and work.
 - Everything Alister Crowley did without being incarcerated once.
 - Any attack in any multiplayer game, martial combat, etc where you telegraph a misleading strike - D-Day landings?
+
+
+## References
+
+[YouTube: Kurzgesagt - This Disease is Deadlier than the plague](https://www.youtube.com/watch?v=GFLb5h2O2Ww)
