@@ -141,13 +141,13 @@ sigaction(SIGTERM, handler);
 
 signal(SIGINT, handler);
 signal(SIGTERM, handler);
-// SIGKILL cannot be handler - oreder not a request
+// SIGKILL cannot be handler - ordered not a request
 ```
 
 Simple use system to call another binary - see [[Compiling-Exploits]]
 ```c
-#include "stdlib.h"
-//#include "stdafx.h" speeds up compile time
+#include <stdlib.h>
+//#include <stdafx.h> speeds up compile time
 // i686-w64-mingw32-gcc shell.c -o shell.exe
 // x86_64-w64-mingw32 shell.c -o shell.exe
 

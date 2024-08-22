@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Brain-Hacking/Philosophy/NOPSEC-101.md",
+                "file": "Brain-Hacking/Philosophy/Strategy.md",
                 "mode": "source",
                 "source": false
               }
@@ -56,7 +56,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Identity Management",
+                "query": "Ferengi",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Brain-Hacking/Philosophy/NOPSEC-101.md",
+                "file": "Brain-Hacking/Philosophy/Strategy.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Brain-Hacking/Philosophy/NOPSEC-101.md",
+                "file": "Brain-Hacking/Philosophy/Strategy.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Brain-Hacking/Philosophy/NOPSEC-101.md"
+                "file": "Brain-Hacking/Philosophy/Strategy.md"
               }
             }
           },
@@ -160,6 +160,13 @@
   },
   "active": "f97441f58cb6007d",
   "lastOpenFiles": [
+    "Brain-Hacking/Learning/Power-Thorough-Learning.md",
+    "Brain-Hacking/Philosophy/Strategy.md",
+    "Social-Engineering/Negotiation.md",
+    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Linux-File-Transfers.md",
+    "Development/Languages/C/Useful-C.md",
+    "Development/Languages/C/Concurrent-C.md",
+    "Brain-Hacking/Philosophy/NOPSEC-101.md",
     "Securing-Networks-And-Systems/Identity-And-Access-Management.md",
     "Securing-Networks-And-Systems/Hardening/MacOS.md",
     "Brain-Hacking/Problem-Solving/Black-Box-Method.md",
@@ -176,16 +183,9 @@
     "Brain-Hacking/Life-Cheatsheet.md",
     "Brain-Hacking/Cyber-Related-Actions/Troubleshooting.md",
     "Brain-Hacking/Cyber-Related-Actions/Good-Acronyms-And-Phrases.md",
-    "Brain-Hacking/Philosophy/NOPSEC-101.md",
     "Security-Disciplines/For-Individuals/OPSEC/OPSEC.md",
     "Development/Languages/Rust/Rust.md",
     "Development/Languages/Rust/TALK-Rust-Fundamentals-for-InfoSec.md",
-    "Alternate-Resources.md",
-    "Tools/OSINT/web-check.md",
-    "Hardware/Electronics.md",
-    "Virtualization/Cloud/Azure/Azure-Administration/Azure-Deploy-And-Manage-Compute-Resources/Azure-Administration-Azure-App-Services.md",
-    "Securing-Networks-And-Systems/Side-Channel-Attacks.md",
-    "Security-Disciplines/For-Individuals/OPSEC/Privacy.md",
     "Securing-Networks-And-Systems/Untitled",
     "Security-Disciplines/For-Individuals/OPSEC",
     "Images/exploitisweird-cve-2023-23572.png",

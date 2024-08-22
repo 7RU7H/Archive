@@ -1,8 +1,15 @@
 # NOPSEC 101 
 
+
+## Wanting to make this better I write this to remind myself of the time and place
+
+
+
 The purpose of writing and refining this page is excise of trying to write well and write short essays about complex topics. I would the first person any room to enjoy the minutia of the almost perfect OPSEC system.
 
-Short essays
+
+
+Short essays - review
 
 TLDR:
 Premise -> OPSEC is very expensive and form a NOPSEC perspective has weird issues at a micro and macro scale that in the long term result that misaligned from the original objective. 
