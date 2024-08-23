@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Brain-Hacking/Philosophy/Strategy.md",
+                "file": "Brain-Hacking/Actions/SE-SalesForce-Playbook.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Brain-Hacking/Philosophy/Strategy.md",
+                "file": "Brain-Hacking/Actions/SE-SalesForce-Playbook.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Brain-Hacking/Philosophy/Strategy.md",
+                "file": "Brain-Hacking/Actions/SE-SalesForce-Playbook.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Brain-Hacking/Philosophy/Strategy.md"
+                "file": "Brain-Hacking/Actions/SE-SalesForce-Playbook.md"
               }
             }
           },
@@ -160,8 +160,11 @@
   },
   "active": "f97441f58cb6007d",
   "lastOpenFiles": [
-    "Brain-Hacking/Learning/Power-Thorough-Learning.md",
+    "Brain-Hacking/Actions/Empathic-Methodology.md",
+    "Brain-Hacking/Actions/SE-SalesForce-Playbook.md",
+    "README.md",
     "Brain-Hacking/Philosophy/Strategy.md",
+    "Brain-Hacking/Learning/Power-Thorough-Learning.md",
     "Social-Engineering/Negotiation.md",
     "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Linux-File-Transfers.md",
     "Development/Languages/C/Useful-C.md",
@@ -179,13 +182,10 @@
     "Development/Programming-Paradigms/Big-O.md",
     "Security-Disciplines/Digital-Forensics/Digital-Forensics.md",
     "Hardware/Hardware-Hacking/Cold-Boot-Attacks.md",
-    "README.md",
     "Brain-Hacking/Life-Cheatsheet.md",
     "Brain-Hacking/Cyber-Related-Actions/Troubleshooting.md",
     "Brain-Hacking/Cyber-Related-Actions/Good-Acronyms-And-Phrases.md",
     "Security-Disciplines/For-Individuals/OPSEC/OPSEC.md",
-    "Development/Languages/Rust/Rust.md",
-    "Development/Languages/Rust/TALK-Rust-Fundamentals-for-InfoSec.md",
     "Securing-Networks-And-Systems/Untitled",
     "Security-Disciplines/For-Individuals/OPSEC",
     "Images/exploitisweird-cve-2023-23572.png",
