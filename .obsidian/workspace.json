@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Security-Disciplines/Malware-Analysis/Static-Malware-Analysis.md",
+                "file": "Brain-Hacking/Problem-Solving/Philosophical-Razors.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Security-Disciplines/Malware-Analysis/Static-Malware-Analysis.md",
+                "file": "Brain-Hacking/Problem-Solving/Philosophical-Razors.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Security-Disciplines/Malware-Analysis/Static-Malware-Analysis.md",
+                "file": "Brain-Hacking/Problem-Solving/Philosophical-Razors.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Security-Disciplines/Malware-Analysis/Static-Malware-Analysis.md"
+                "file": "Brain-Hacking/Problem-Solving/Philosophical-Razors.md"
               }
             }
           },
@@ -172,8 +172,9 @@
   },
   "active": "f97441f58cb6007d",
   "lastOpenFiles": [
-    "Tools/Reverse-Engineering/Ghidra-Cheatsheet.md",
+    "Brain-Hacking/Problem-Solving/Causality.md",
     "Security-Disciplines/Malware-Analysis/Static-Malware-Analysis.md",
+    "Tools/Reverse-Engineering/Ghidra-Cheatsheet.md",
     "Tools/Malware/VirusTotal.md",
     "Brain-Hacking/Actions/SE-SalesForce-Playbook.md",
     "Brain-Hacking/Actions/Empathic-Methodology.md",
@@ -197,7 +198,6 @@
     "Development/Programming-Paradigms/Big-O.md",
     "Security-Disciplines/Digital-Forensics/Digital-Forensics.md",
     "Hardware/Hardware-Hacking/Cold-Boot-Attacks.md",
-    "Brain-Hacking/Life-Cheatsheet.md",
     "Securing-Networks-And-Systems/Untitled",
     "Security-Disciplines/For-Individuals/OPSEC",
     "Images/exploitisweird-cve-2023-23572.png",
