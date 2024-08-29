@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Brain-Hacking/Problem-Solving/Philosophical-Razors.md",
+                "file": "Tools/C2/Sliver/TALK-Ace-The-OSEP-Exam-with-Sliver-Framework.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,13 +25,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/Reverse-Engineering/Ghidra-Cheatsheet.md",
+                "file": "Brain-Hacking/Philosophy/Strategy/Strategy.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -68,7 +69,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Ghidra",
+                "query": "Sliver",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -97,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Brain-Hacking/Problem-Solving/Philosophical-Razors.md",
+                "file": "Brain-Hacking/Philosophy/Strategy/Strategy.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Brain-Hacking/Problem-Solving/Philosophical-Razors.md",
+                "file": "Brain-Hacking/Philosophy/Strategy/Strategy.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Brain-Hacking/Problem-Solving/Philosophical-Razors.md"
+                "file": "Brain-Hacking/Philosophy/Strategy/Strategy.md"
               }
             }
           },
@@ -161,25 +162,33 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "obsidian-excalidraw-plugin:Create new drawing": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "f97441f58cb6007d",
+  "active": "54c7deb50de2f8eb",
   "lastOpenFiles": [
+    "Brain-Hacking/Philosophy/Hacking-The-Thing.md",
+    "Brain-Hacking/Brain-Hacking-Hub.md",
+    "Brain-Hacking/Philosophy/Hacking-Meta-Hacking-Problems.md",
+    "Brain-Hacking/Philosophy/Strategy/Hacking-Strategy.md",
+    "Brain-Hacking/Philosophy/Strategy/Strategy.md",
+    "Brain-Hacking/Philosophy/Strategy",
+    "Tools/Reverse-Engineering/Ghidra-Cheatsheet.md",
+    "Tools/C2/Sliver/TALK-Ace-The-OSEP-Exam-with-Sliver-Framework.md",
+    "Hardware/Flipper-Zero/Flipper-Zero.md",
+    "Brain-Hacking/Problem-Solving/Philosophical-Razors.md",
     "Brain-Hacking/Problem-Solving/Causality.md",
     "Security-Disciplines/Malware-Analysis/Static-Malware-Analysis.md",
-    "Tools/Reverse-Engineering/Ghidra-Cheatsheet.md",
     "Tools/Malware/VirusTotal.md",
     "Brain-Hacking/Actions/SE-SalesForce-Playbook.md",
     "Brain-Hacking/Actions/Empathic-Methodology.md",
     "README.md",
-    "Brain-Hacking/Philosophy/Strategy.md",
     "Brain-Hacking/Learning/Power-Thorough-Learning.md",
     "Social-Engineering/Negotiation.md",
     "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Linux-File-Transfers.md",
@@ -191,13 +200,6 @@
     "Brain-Hacking/Problem-Solving/Black-Box-Method.md",
     "Brain-Hacking/Talk-Notes/TALK-Survival-Heuristics.md",
     "Brain-Hacking/Talk-Notes/TALK-Reframing-Hard-Cybersecurity-Problems-For-Fun-And-Profit.md",
-    "Cryptography-And-Authentication/De-Or-En-Cryption.md",
-    "Security-Disciplines/Digital-Forensics/Cold-System-Forensics.md",
-    "Development/Languages/Go/Golang.md",
-    "Development/Malware/Go/Go-Malware-Writing-For-Windows.md",
-    "Development/Programming-Paradigms/Big-O.md",
-    "Security-Disciplines/Digital-Forensics/Digital-Forensics.md",
-    "Hardware/Hardware-Hacking/Cold-Boot-Attacks.md",
     "Securing-Networks-And-Systems/Untitled",
     "Security-Disciplines/For-Individuals/OPSEC",
     "Images/exploitisweird-cve-2023-23572.png",
@@ -215,7 +217,6 @@
     "Images/c2-protocols-moloch.png",
     "Images/programlanguages-adv-disadv-moloch-sliver-talk.png",
     "Networks/Network-Theory/Network-Protocols/sedQr2JUP",
-    "Networks/Network-Technologies",
     "Images/whatisthisdebiandocs-1.png",
     "Images/whatisthisdebiandocs.png"
   ]

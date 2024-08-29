@@ -1,9 +1,70 @@
 # Strategy
 
 
+##### Applying Military Strategy in Life - Microsoft Talk
+
+[YouTube - Applying Military Strategy in Life - Microsoft Talk](https://www.youtube.com/watch?v=Pmx2cbLGzzo) description: *Here is the full lecture I gave at Microsoft 12 years ago. I hope you enjoy it. Robert Greene is the author of the New York Times bestsellers The 48 Laws of Power, The Art of Seduction, The 33 Strategies of War, The 50th Law, Mastery, The Laws of Human Nature, and most recently, The Daily Laws.*
+
+
+**Authors opinions**: *Heaven is grand strategy, but Robert sort lacks the idea that more of X is more problems, because he likes writing books. Widening the scope, widens the problems that come with scope, but that is why it is a mountain analogy.*
+
+Understand and master:
+- Time
+- Culture
+- Weapon
+- Adaptability
+- Patterns
+- Always do something different
+- Know your mark
+- Defy Expectation
+- Formlessness
+- Fluid improvisational mind (Robert aggrandises mythology and acting - forgetting that the map is not the territory)
+- Creativity
+- Subvert everything
+- What does APT and you depend on?
+- Strategy is perspective, how's you recon, planning, logistics and intelligence and team play - visibility over all the past, present and future
+- Discipline and focus replaces moral 
+- Strategy is non-formulaic and is not problem solving or tactics which are formulaic
+- Do not fight the last war
+- The map is not the territory
+- Belief is the death of intelligence, never believe yours or anyone else's bullshit and always update yourself of the actualities of the current real. 
+- End game is everything
+
+Properties infer casual strategic patterns that are observable in linear entities and groups: childhood is reflected into adulthood - in a developmental Piaget sense not a Freud, Jung or Peterson sense - archetypes are just cluster graphs - biases over the set properties in very unstrategic use of data analysis. 
+
+Strategical Planning is phases of initial, recursive substitution of sets of focuses till require provision of novelty, original and relevance is exhausted and aligned with the time requirements to control Time. Always control time. 
+
+Law:
+- Seeing what you want to see in your intelligence (data -> information -> intelligence)
+
+Modern office politics is tactical hell: guerrilla warfare in the cultural accepted passive aggressive normalities that are almost always short-term, rarely long term (and if so are one set of moves to an objective not sets of sets of moves to objectives). Therefore it cultivates the most manipulative, petty and sly, but not strategic or abnormal aggressive - like boiling water - not hydrogen bomb.
+
+**Authors opinions**: *Beware or don't sandbox actuality, sandboxes are analytical partial graphs - map is not the territory,... and simulated territory situated in the actual territory is escapable as it inherently has controls that make it a sandbox, which are reflective of the higher actuality* - [[Sandbox-Evasion]], Container escapes - [[Docker-Hacking]], etc
+
+
+##### The 33 Strategies of War Summarised in Under 8 Minutes by Robert Greene
+
+[YouTube - The 33 Strategies of War Summarised in Under 8 Minutes by Robert Greene](https://www.youtube.com/watch?v=jG-NF2g5EXA) Description: *In this video, I will take you through a condensed journey of my book "The 33 Strategies of War" Drawing from historical examples, military campaigns, and timeless wisdom, I provide you with a roadmap to triumph in any competitive situation. Discover the power of the "Defensive Warfare" strategies that teach you to protect yourself against unexpected attacks and maintain a strong defense. Explore the profound wisdom of "Offensive Warfare," where I reveal techniques to take the initiative, seize control, and conquer your adversaries. Whether you seek success in business, relationships, or personal growth, "The 33 Strategies of War" will equip you with the mental arsenal needed to achieve your goals.*
+
+Mountain of Strategic Perspective
+- You are the problem first
+- Not fight the last war
+- Escape tactical hell
+- Sense of urgency
+
+Team play
+
+Planning
+- Start at the conclusion and work backwards
+- Recursively down till week ahead..
+- Have direction and remind yourself
+- Priority in the plan in the current point
+
+
+READ BOOK and OTHERS DISCOURSE - this will be updated at some point.
+
 
 ##### Stupidity, Learning and Strategy
-
 
 [YouTube: Patrick Boyle Adam Robinson - Strategy for Investing and for Life](https://www.youtube.com/watch?v=pWodxNjmIwQ), description: *"Today in a podcast style episode I welcome my friend Adam Robinson who has had possibly the most interesting career of anyone I know. He was a teenage Chess prodigy who trained with Bobby Fischer as Fischer prepared to play Boris Spassky for the 1972 world championship – in what has gone on to be known as The Match of The Century. He was an undergrad at The Wharton School at the University of Pennsylvania and later earned a law degree at Oxford University. He cracked the SAT and other standardized tests launching the Princeton Review Company – which he later sold. Adam is an Artificial Intelligence pioneer, a quantitative trader, a New York Times best-selling author, and an all-round master of strategy. His company Robinson Global Strategies provides macro research to some of the world’s most successful hedge funds. Adam's newest book How Not to be Stupid is one of the very few books to be endorsed by Warren Buffett."*
 
@@ -42,7 +103,7 @@ Administrative State
 - Recognise complexity, then break it down for parts, patterns and puzzles
 - Spend time trying to be smart to really be creative, simply to induce open mind 
 - Spend time listening observing others - musicality comes more from applied expertise in listening to others - does not mean you need to be a expert take something from it, that is still quality
-- Avoiding Error Management - A and B scored differently, both the same mistakes, B just caught the mistake.
+- Error Management - A and B scored differently, both the same mistakes, B just caught the mistake.
 	- Know the common mistakes
 	- Make all the mistakes 
 	- Systematise rules to not make those mistakes till intuitive and ...
@@ -77,3 +138,5 @@ Monger and Buffet: Make it as simple as possible
 ## References
 
 [YouTube: Patrick Boyle Adam Robinson - Strategy for Investing and for Life](https://www.youtube.com/watch?v=pWodxNjmIwQ)
+[YouTube - The 33 Strategies of War Summarised in Under 8 Minutes by Robert Greene](https://www.youtube.com/watch?v=jG-NF2g5EXA)
+[YouTube - Applying Military Strategy in Life - Microsoft Talk](https://www.youtube.com/watch?v=Pmx2cbLGzzo)

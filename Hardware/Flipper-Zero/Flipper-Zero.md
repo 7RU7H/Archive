@@ -1,4 +1,3 @@
-
 # Flipper Zero
 
 ## Introduction

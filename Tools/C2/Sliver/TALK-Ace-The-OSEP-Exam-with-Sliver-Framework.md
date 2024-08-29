@@ -120,7 +120,7 @@ int TimeDelayComparison()
 	Sleep(i * 1000);
 	end_t = clock();
 
-	if (((double)end_t - start_t) / CLOCKS_PER_SEC) < i) {
+	if ((((double)end_t - start_t) / CLOCKS_PER_SEC) < i) {
 		exit(0);
 	}
 	total_t = (double)(end_t - start_t) / CLOCKS_PER_SEC;
