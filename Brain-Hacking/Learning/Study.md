@@ -1,5 +1,13 @@
 # Study 
 
+
+#### Focus 
+
+- Pomdoro Method does not work in a world were every person, group, corporation, government, etc wants you attention and most profit from taking it.
+- Expand your attention, by rewarding incremental prolonging focus and retention of time focusing; **Authors stipulations: TLDR I have yet to figure out a best amount**: i.e sometimes its more about knowing when to walk away from a problem and wait - sometimes its better to continue on (it is really difficult to tell its like the Turing Complete problem for Learning, but every variable which are using to monitor changes...). 
+
+#### Building Muscle and Power
+
 [YouTube Crystal Clear Mathematics - How to Build Mathematical 'Muscle and Power'](https://www.youtube.com/watch?v=yvEHcsfkDX4) Description: *If you have been following this video series, you should now have an effective study system/structure in place and an understanding of how your memory works, good study attitudes, a good working environment, and an established daily routine. But what do you actually do when you sit down to study mathematics? There are four ways in which you can study mathematics and this video describes the fourth method: seeking out challenging and very difficult problems to develop superior mathematical 'muscle,' finesse and expertise.*
 
 Define rules about how you should study to [[Avoiding-Examination-Errors]] (contains information from Crystal Clear Mathematics), to learn and understand:
