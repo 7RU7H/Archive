@@ -1,3 +1,22 @@
+# Study 
+
+[YouTube Crystal Clear Mathematics - How to Build Mathematical 'Muscle and Power'](https://www.youtube.com/watch?v=yvEHcsfkDX4) Description: *If you have been following this video series, you should now have an effective study system/structure in place and an understanding of how your memory works, good study attitudes, a good working environment, and an established daily routine. But what do you actually do when you sit down to study mathematics? There are four ways in which you can study mathematics and this video describes the fourth method: seeking out challenging and very difficult problems to develop superior mathematical 'muscle,' finesse and expertise.*
+
+Define rules about how you should study to [[Avoiding-Examination-Errors]] (contains information from Crystal Clear Mathematics), to learn and understand:
+- Fact ~ Summary - extract and organise; your brain and the experiences in your life are yours and you need to organise them yourself to what is meaningful and understandable to you
+- Skills ~ Drill Work - Skills that demonstrate understanding of the syllabus
+- Errors (Develop Habits) [[Avoiding-Examination-Errors]].
+	- Excise around and in learning (~15% uptake increase over time is massive) 
+	- Place, Psyche, Purpose (informed by the anything below)
+	- Routine
+	- Rigour in how you do activities you will be examined on
+	- Recite the required (factoid in conceptually motivated learning), found in practice by practising
+	- Reading fast and slow, extracting and application (test the extracted), testing and teaching
+- Finesse  
+	- Think mathematical - apply mathematics to everyday and where you can
+	- Seek out challenges with difficult questions
+
+
 ## Study Less Study Smart
 
 #### Marty Lobdell - Study Less Study Smart - Notes
