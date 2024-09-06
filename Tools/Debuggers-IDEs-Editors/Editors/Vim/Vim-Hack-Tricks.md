@@ -1,5 +1,14 @@
 # Vim Hack Tricks
+
 See [[Vim-Cheatsheet]] for glossary
+
+## (Un)Comment a line
+
+From [gist Hemrajbhattarai comment to (un) comment multiple lines vim](https://gist.github.com/ultim8k/d8326a0cd7646356acf0dc3baf8e78ff) - [Hemrajbhattarai](https://gist.github.com/Hemrajbhattarai)
+1. Get the first and last line number to affect
+2. `:1,10s/^/\/\/` or what comment symbol required
+3. Press enter
+
 
 ## Macro Expand Users.txt
 From the [Ippsec Sauna Video](https://www.youtube.com/watch?v=uLNpR3AnE-Y)
@@ -20,3 +29,4 @@ Start with `Vim Hack` -> `Vim Hack, Vim.Hack, VHack, V.Hack`
 ## References
 
 [Ippsec Sauna Video](https://www.youtube.com/watch?v=uLNpR3AnE-Y)
+[gist Hemrajbhattarai comment to (un) comment multiple lines vim](https://gist.github.com/ultim8k/d8326a0cd7646356acf0dc3baf8e78ff)

@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "0800b2cb01b41e55",
+        "id": "e57f202870194805",
         "type": "tabs",
         "children": [
           {
-            "id": "f97441f58cb6007d",
+            "id": "3778539c3adc60e8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Social-Engineering/Negotiation.md",
+                "file": "Development/Regular-Expressions.md",
                 "mode": "source",
                 "source": false
               }
@@ -56,7 +56,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Rules of Acqui",
+                "query": "Vim",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,8 +65,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Social-Engineering/Negotiation.md",
+                "file": "Development/Regular-Expressions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Social-Engineering/Negotiation.md",
+                "file": "Development/Regular-Expressions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Social-Engineering/Negotiation.md"
+                "file": "Development/Regular-Expressions.md"
               }
             }
           },
@@ -159,8 +158,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f97441f58cb6007d",
+  "active": "3778539c3adc60e8",
   "lastOpenFiles": [
+    "Tools/Debuggers-IDEs-Editors/Editors/Vim/Vim-Hack-Tricks.md",
+    "Tools/Debuggers-IDEs-Editors/Editors/Vim/Vim-Cheatsheet.md",
+    "Exploitation/Windows/Active-Directory/ACL-Abuse/GenericAll.md",
+    "Social-Engineering/Negotiation.md",
     "Brain-Hacking/Learning/Study.md",
     "Brain-Hacking/Learning/Power-Thorough-Learning.md",
     "Brain-Hacking/Learning/Avoiding-Examination-Errors.md",
@@ -181,13 +184,9 @@
     "Brain-Hacking/Actions/SE-SalesForce-Playbook.md",
     "Brain-Hacking/Actions/Empathic-Methodology.md",
     "README.md",
-    "Social-Engineering/Negotiation.md",
     "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Linux-File-Transfers.md",
     "Development/Languages/C/Useful-C.md",
     "Development/Languages/C/Concurrent-C.md",
-    "Brain-Hacking/Philosophy/NOPSEC-101.md",
-    "Securing-Networks-And-Systems/Identity-And-Access-Management.md",
-    "Securing-Networks-And-Systems/Hardening/MacOS.md",
     "Securing-Networks-And-Systems/Untitled",
     "Security-Disciplines/For-Individuals/OPSEC",
     "Images/exploitisweird-cve-2023-23572.png",
