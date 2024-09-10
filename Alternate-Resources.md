@@ -89,3 +89,7 @@ Multi-Black badge winning, Game Developer, Pentested real power plants in the US
 #### xct 
 
 [xct](https://github.com/xct) One of the Top HackTheBox players, OSEE, OSCE3, CRTO, and CISSP qualified, graduated with an MSc in Applied IT Security. Founder and content creator of [vulnlab](https://www.vulnlab.com/) and [vulnlab - YouTube channel](https://www.youtube.com/playlist?list=PLPBVZbjvnjVmAyAHZ2CRg-92zoH5z_386), Visit [vulndev.io](https://vulndev.io/) for personal blog, which like the Youtube Channel publishes some Writeups for HackTheBox and TryHackme.
+
+#### ZephrFish 
+
+[GitHub - ZephrFish](https://github.com/ZephrFish) Scottish Red and Purple team lead - [personal blog](https://blog.zsec.uk/), a DEFCON goon, inspirational leader, Hacker, Builder, Thinker, FAFO Engineer, Author and awesome memorable and insight speaker for InfoSec Cons and holds CRTO, OSCP, and OSWP. He is also Scotland's NUC's Womble in Chief.

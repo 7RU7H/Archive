@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Development/Regular-Expressions.md",
+                "file": "Development/Malware/Go/Go-Malware-Writing-For-Windows.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Development/Regular-Expressions.md",
+                "file": "Development/Malware/Go/Go-Malware-Writing-For-Windows.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Development/Regular-Expressions.md",
+                "file": "Development/Malware/Go/Go-Malware-Writing-For-Windows.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Development/Regular-Expressions.md"
+                "file": "Development/Malware/Go/Go-Malware-Writing-For-Windows.md"
               }
             }
           },
@@ -160,10 +160,18 @@
   },
   "active": "3778539c3adc60e8",
   "lastOpenFiles": [
+    "Brain-Hacking/Problem-Solving/Problem-Solving.md",
+    "Alternate-Resources.md",
+    "Brain-Hacking/Problem-Solving/Black-Box-Method.md",
+    "Development/Malware/Go/Go-Malware-Writing-For-Windows.md",
+    "Social-Engineering/Negotiation.md",
+    "Tools/Forensics/Volatility3.md",
+    "Security-Disciplines/Digital-Forensics/Linux-Forensics/Linux-Forensics.md",
+    "Security-Disciplines/Digital-Forensics/Linux-Forensics/Linux-Process-Analysis.md",
+    "Development/Regular-Expressions.md",
     "Tools/Debuggers-IDEs-Editors/Editors/Vim/Vim-Hack-Tricks.md",
     "Tools/Debuggers-IDEs-Editors/Editors/Vim/Vim-Cheatsheet.md",
     "Exploitation/Windows/Active-Directory/ACL-Abuse/GenericAll.md",
-    "Social-Engineering/Negotiation.md",
     "Brain-Hacking/Learning/Study.md",
     "Brain-Hacking/Learning/Power-Thorough-Learning.md",
     "Brain-Hacking/Learning/Avoiding-Examination-Errors.md",
@@ -179,14 +187,6 @@
     "Hardware/Flipper-Zero/Flipper-Zero.md",
     "Brain-Hacking/Problem-Solving/Philosophical-Razors.md",
     "Brain-Hacking/Problem-Solving/Causality.md",
-    "Security-Disciplines/Malware-Analysis/Static-Malware-Analysis.md",
-    "Tools/Malware/VirusTotal.md",
-    "Brain-Hacking/Actions/SE-SalesForce-Playbook.md",
-    "Brain-Hacking/Actions/Empathic-Methodology.md",
-    "README.md",
-    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Linux-File-Transfers.md",
-    "Development/Languages/C/Useful-C.md",
-    "Development/Languages/C/Concurrent-C.md",
     "Securing-Networks-And-Systems/Untitled",
     "Security-Disciplines/For-Individuals/OPSEC",
     "Images/exploitisweird-cve-2023-23572.png",
