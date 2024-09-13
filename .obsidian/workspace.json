@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "e57f202870194805",
+        "id": "6ab394c584bf67b8",
         "type": "tabs",
         "children": [
           {
-            "id": "3778539c3adc60e8",
+            "id": "162abb0c20767fba",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Development/Malware/Go/Go-Malware-Writing-For-Windows.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
                 "mode": "source",
                 "source": false
               }
@@ -56,7 +56,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Vim",
+                "query": "childhood ",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Development/Malware/Go/Go-Malware-Writing-For-Windows.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Development/Malware/Go/Go-Malware-Writing-For-Windows.md",
+                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Development/Malware/Go/Go-Malware-Writing-For-Windows.md"
+                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md"
               }
             }
           },
@@ -158,12 +158,22 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3778539c3adc60e8",
+  "active": "162abb0c20767fba",
   "lastOpenFiles": [
+    "Web-Application-Hacking/Web-Exploits/SSTI/Server-Side-Template-Injection-Cheatsheet.md",
+    "Reconnaissance/Active-Information-Gathering/OS-Detection/OS-Detection.md",
+    "Reconnaissance/TALK-Mechanizing-The-Methodology.md",
+    "Software/Operating-Systems/Linux/Linux-Commands/Linux-Hardware-Commands.md",
+    "Software/Operating-Systems/Linux/Linux-Commands/Linux-Maintaince-And-Troubleshooting-Commands.md",
+    "Software/Operating-Systems/Linux/Linux-Commands/Linux-Command-Hub.md",
+    "Software/Operating-Systems/Linux/Linux-Commands/Core-Linux-Commands.md",
+    "Brain-Hacking/Question-Based-Methodologies/Question-Based-Forensics-Methodology.md",
+    "Brain-Hacking/Philosophy/Strategy/Hacking-Strategy.md",
+    "Brain-Hacking/Philosophy/Strategy/Strategy.md",
     "Brain-Hacking/Problem-Solving/Problem-Solving.md",
+    "Development/Malware/Go/Go-Malware-Writing-For-Windows.md",
     "Alternate-Resources.md",
     "Brain-Hacking/Problem-Solving/Black-Box-Method.md",
-    "Development/Malware/Go/Go-Malware-Writing-For-Windows.md",
     "Social-Engineering/Negotiation.md",
     "Tools/Forensics/Volatility3.md",
     "Security-Disciplines/Digital-Forensics/Linux-Forensics/Linux-Forensics.md",
@@ -176,17 +186,7 @@
     "Brain-Hacking/Learning/Power-Thorough-Learning.md",
     "Brain-Hacking/Learning/Avoiding-Examination-Errors.md",
     "Tools/C2/Sliver/TALK-Pwning-the-Domain-With-Sliver-Framework.md",
-    "Tools/C2/Sliver/TALK-Ace-The-OSEP-Exam-with-Sliver-Framework.md",
-    "Brain-Hacking/Philosophy/Hacking-The-Thing.md",
-    "Brain-Hacking/Brain-Hacking-Hub.md",
-    "Brain-Hacking/Philosophy/Hacking-Meta-Hacking-Problems.md",
-    "Brain-Hacking/Philosophy/Strategy/Hacking-Strategy.md",
-    "Brain-Hacking/Philosophy/Strategy/Strategy.md",
     "Brain-Hacking/Philosophy/Strategy",
-    "Tools/Reverse-Engineering/Ghidra-Cheatsheet.md",
-    "Hardware/Flipper-Zero/Flipper-Zero.md",
-    "Brain-Hacking/Problem-Solving/Philosophical-Razors.md",
-    "Brain-Hacking/Problem-Solving/Causality.md",
     "Securing-Networks-And-Systems/Untitled",
     "Security-Disciplines/For-Individuals/OPSEC",
     "Images/exploitisweird-cve-2023-23572.png",

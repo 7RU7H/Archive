@@ -11,7 +11,7 @@
 	- Attack Techniques
 - Personal Sandbox environment 
 - Portability
-	- With Cloud computing cloning a setup  and deploying it for bug bounty or security assessment -Daniel Messlier talks in [[Mechanizing-The-Methodology]] 
+	- With Cloud computing cloning a setup  and deploying it for bug bounty or security assessment -Daniel Messlier talks in [[TALK-Mechanizing-The-Methodology]] 
 	- Between personal machines
 - Safety
 	- Protect against your own personal stupidity or mistakes and not angrying anyone or local authorities.

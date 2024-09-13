@@ -1,5 +1,6 @@
 # Mechanizing The Methodology
-How to find vulnerabilities while you're doing other things. By [Daniel Miessler](https://danielmiessler.com) [Twitter](https://twitter.com/danielmiessler). This is an incredible talk and very insightful. If you are a beginner to cli-linux or looking into automation or if you need to focus on the larger meta-cognitive connections 
+
+How to find vulnerabilities while you're doing other things. By [Daniel Miessler](https://danielmiessler.com) [Twitter](https://twitter.com/danielmiessler). This is an incredible talk and very insightful. If you are a beginner to cli-Linux or looking into automation or if you need to focus on the larger meta-cognitive connections 
 
 These are my notes of this talk and [article](https://danielmiessler.com/blog/mechanizing-the-methodology/)
 
@@ -10,10 +11,10 @@ It is not either automated or manual; automation can feed your manual work. You 
 
 Using the Unix Philosophy
 1. Make each program do one thing well.
-2. Expect the output of every program to becom the input to another, as yet unknown, program.
+2. Expect the output of every program to become the input to another, as yet unknown, program.
 
 Daniel Miessler's Web related questions:
-What are thier subdomains?
+What are their subdomains?
 What ports are open?
 Is this IP running a web server?
 Has this site changed?
@@ -21,7 +22,7 @@ Is this a sensitive site?
 What urls are in their JS?
 Which of these share analytics code?
 What domains do they own?
-Which certs are abouit to expire?
+Which certs are about to expire?
 What are all the links on this site?
 What are this on this site?
 What are this customer's ASN?
@@ -35,7 +36,7 @@ Do those accounts have sensitive content?
 Do those accounts have content related to work?
 Do they any s3 buckets that are open?
 Are they server databases?
-Are they open or bruteforceable?
+Are they open or brute-forceable?
 
 So questions can be combined: 
 
@@ -43,7 +44,7 @@ What are their subdomains?
 +
 What ips are running web servers?
 
-Unix philosphy = simple & discrete
+Unix philosophy = simple & discrete
 1. domains.txt -> check_subdomain.sh 
 2. check_subdomain.sh -> subdomains.txt
 3. subdomains.txt -> check_webserver.sh
@@ -61,11 +62,11 @@ masscan --rate 100000 -p7,9,13,21-23,25-26,37,53,79-81,88,106,110-111,113,119,13
 
 ![Image](recon-mtm-module-philosophy.png)
 
-Daniel Miessler likes the hydrid for thsi unix-y approach without have to rewrite curl.
+Daniel Miessler likes the hybrid for this unix-y approach without have to rewrite curl.
 
 ## Get a Page's HTML
 
-Full HTML is a fundemental seed for many other modules to which you can find potentially sensitive fields, parse links, pull out JS files, etc. `Curl` is denied by alot of pages so:
+Full HTML is a fundamental seed for many other modules to which you can find potentially sensitive fields, parse links, pull out JS files, etc. `Curl` is denied by a lot of pages so:
 `live_sites.txt -> get_html.sh -> $site.html`. 
 
 ```bash
@@ -75,7 +76,7 @@ Now you then have full HTML to parse and inspect.
 
 ## Getting the domains that redirect to a domain
 
-Top-level scope for a given company requires pivoting from known TLD to other TLD in various wats by folling redirects to a trust domain.
+Top-level scope for a given company requires pivoting from known TLD to other TLD in various ways by followng redirects to a trust domain.
 
 `domains.txt -> get_redirects.sh -> $site.redirects`
 
@@ -117,7 +118,7 @@ thecybermentor
 
 They are helping the community, they make tools, educate and hunt for bugs!
 
-## How to run an automated testing platofrm on a $10 linux box
+## How to run an automated testing platform on a $10 linux box
 1. Break your techniques into questions
 2. Create a separate UNIXY module for each step
 3. Create intuitive output artifacts that can be used as inputs to other modules
@@ -125,7 +126,7 @@ They are helping the community, they make tools, educate and hunt for bugs!
 5. continuously those modules using Cron
 6. use Amazon SES or Slack for alerting
 7. Wire up your full config using Terraform/Ansible/Axiom for easy deployment
-8. Follwo the best testers/creator in industry to stay up on new techniques 
+8. Follow the best testers/creator in industry to stay up on new techniques 
 9. Come back and hack manually on what your automation finds
 10. Profit ( in relaxation,time,money or all the above)
 

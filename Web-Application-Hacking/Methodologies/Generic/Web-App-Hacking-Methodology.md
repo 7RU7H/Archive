@@ -4,7 +4,7 @@
 Web-related hacking may seem very independent as a system, but in actuality Web applications are an attack vector that is a layer over other systems, thus are often a common path to a foothold on that underlying system. For a more Bug Bounty focuesed recon methodology see the awesome [[Haddix-Methodology]] and follow this link for [[Application-Analysis]], both concatenated versions of the versions of these talks by Jason Haddix. Web-Apps generally expose a large attack surface due to intial requirement of having to be exposed to the internet, a lack of mature application code, multiple dependencies from language libraries or framework usage and insecure server configurations.
 
 ## Tools
-You can do alot with just `Burp`, `[insert browser of choice] Dev tools`, `Nikto` a `insert directory buester of choice` and `curl`, but sometimes less so `curl` can be blocked as [[Mechanizing-The-Methodology]] points out method for bypassing curl blocking. Bounty bug tools and framework on Github have become numerous and powerful, [[Haddix-Methodology]] and [[Application-Analysis]] provide great sources of good tools.
+You can do alot with just `Burp`, `[insert browser of choice] Dev tools`, `Nikto` a `insert directory buester of choice` and `curl`, but sometimes less so `curl` can be blocked as [[TALK-Mechanizing-The-Methodology]] points out method for bypassing curl blocking. Bounty bug tools and framework on Github have become numerous and powerful, [[Haddix-Methodology]] and [[Application-Analysis]] provide great sources of good tools.
 
 [[Nikto-Cheatsheet]]
 [[BurpSuite]]

@@ -1,7 +1,5 @@
 # Question Based Forensics Methodology
 
-
-
 Forensic activities are the attempt to result in a graph that is hyper-decriminative distinctive nodes and edges as sets of nodes and edges. 
 
 Similar to gravity the the forensician task is to separate fields of connection that form as close to the actual events
