@@ -18,6 +18,30 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "49891a8e4873b4ce",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Networks/Network-Theory/Network-Protocols/Network-Protocols.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "953733d7b532573c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Development/Regular-Expressions.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ]
       }
@@ -56,7 +80,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "childhood ",
+                "query": "Splunk",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -160,6 +184,13 @@
   },
   "active": "162abb0c20767fba",
   "lastOpenFiles": [
+    "Development/Regular-Expressions.md",
+    "Networks/Network-Theory/Network-Protocols/Network-Protocols.md",
+    "Networks/Network-Theory/Network-Protocols/DHCP.md",
+    "Tools/Detection-And-Monitoring/SIEMs/Splunk.md",
+    "Exploitation/CVEs/PrintNightmare.md",
+    "Development/Malware/Go/Go-Malware-Writing-For-Windows.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
     "Web-Application-Hacking/Web-Exploits/SSTI/Server-Side-Template-Injection-Cheatsheet.md",
     "Reconnaissance/Active-Information-Gathering/OS-Detection/OS-Detection.md",
     "Reconnaissance/TALK-Mechanizing-The-Methodology.md",
@@ -171,21 +202,14 @@
     "Brain-Hacking/Philosophy/Strategy/Hacking-Strategy.md",
     "Brain-Hacking/Philosophy/Strategy/Strategy.md",
     "Brain-Hacking/Problem-Solving/Problem-Solving.md",
-    "Development/Malware/Go/Go-Malware-Writing-For-Windows.md",
     "Alternate-Resources.md",
     "Brain-Hacking/Problem-Solving/Black-Box-Method.md",
     "Social-Engineering/Negotiation.md",
     "Tools/Forensics/Volatility3.md",
     "Security-Disciplines/Digital-Forensics/Linux-Forensics/Linux-Forensics.md",
     "Security-Disciplines/Digital-Forensics/Linux-Forensics/Linux-Process-Analysis.md",
-    "Development/Regular-Expressions.md",
     "Tools/Debuggers-IDEs-Editors/Editors/Vim/Vim-Hack-Tricks.md",
     "Tools/Debuggers-IDEs-Editors/Editors/Vim/Vim-Cheatsheet.md",
-    "Exploitation/Windows/Active-Directory/ACL-Abuse/GenericAll.md",
-    "Brain-Hacking/Learning/Study.md",
-    "Brain-Hacking/Learning/Power-Thorough-Learning.md",
-    "Brain-Hacking/Learning/Avoiding-Examination-Errors.md",
-    "Tools/C2/Sliver/TALK-Pwning-the-Domain-With-Sliver-Framework.md",
     "Brain-Hacking/Philosophy/Strategy",
     "Securing-Networks-And-Systems/Untitled",
     "Security-Disciplines/For-Individuals/OPSEC",

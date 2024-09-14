@@ -42,6 +42,11 @@ DNS EndPoint Mapper
 
 Microsoft Azure expands on DNS see [[Azure-Administration-Azure-DNS]]
 
+## UDP - 67-8 DHCP
+
+[Wikipedia Dynamic Host Configuration Protocol](https://en.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol): 
+- [[DHCP]] Client 67
+- [[DHCP]] Client 68 
 ## UDP - 69  - TFTP
 
 Stands for [trivial file transfer protocol](https://en.wikipedia.org/wiki/Trivial_File_Transfer_Protocol) - UDP FTP
