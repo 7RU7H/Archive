@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+                "file": "Development/Languages/Go/Useful-Go.md",
                 "mode": "source",
                 "source": false
               }
@@ -80,7 +80,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Splunk",
+                "query": "Hydra",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -93,7 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 342.5
+    "width": 200
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+                "file": "Development/Languages/Go/Useful-Go.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
+                "file": "Development/Languages/Go/Useful-Go.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md"
+                "file": "Development/Languages/Go/Useful-Go.md"
               }
             }
           },
@@ -173,24 +173,31 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "obsidian-excalidraw-plugin:Create new drawing": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
   "active": "162abb0c20767fba",
   "lastOpenFiles": [
+    "Development/Languages/Go/Go-Testdriven-Development.md",
+    "Development/Languages/Go/Golang.md",
+    "Hardware/Electronics/Electronics.md",
+    "Hardware/Electronics/Electronics-Components.md",
+    "Hardware/Electronics/Electronics-Repair.md",
+    "Hardware/Electronics",
+    "Tools/Authentication-Attacking/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
+    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
     "Development/Regular-Expressions.md",
     "Networks/Network-Theory/Network-Protocols/Network-Protocols.md",
     "Networks/Network-Theory/Network-Protocols/DHCP.md",
     "Tools/Detection-And-Monitoring/SIEMs/Splunk.md",
     "Exploitation/CVEs/PrintNightmare.md",
     "Development/Malware/Go/Go-Malware-Writing-For-Windows.md",
-    "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
     "Web-Application-Hacking/Web-Exploits/SSTI/Server-Side-Template-Injection-Cheatsheet.md",
     "Reconnaissance/Active-Information-Gathering/OS-Detection/OS-Detection.md",
     "Reconnaissance/TALK-Mechanizing-The-Methodology.md",
@@ -204,12 +211,6 @@
     "Brain-Hacking/Problem-Solving/Problem-Solving.md",
     "Alternate-Resources.md",
     "Brain-Hacking/Problem-Solving/Black-Box-Method.md",
-    "Social-Engineering/Negotiation.md",
-    "Tools/Forensics/Volatility3.md",
-    "Security-Disciplines/Digital-Forensics/Linux-Forensics/Linux-Forensics.md",
-    "Security-Disciplines/Digital-Forensics/Linux-Forensics/Linux-Process-Analysis.md",
-    "Tools/Debuggers-IDEs-Editors/Editors/Vim/Vim-Hack-Tricks.md",
-    "Tools/Debuggers-IDEs-Editors/Editors/Vim/Vim-Cheatsheet.md",
     "Brain-Hacking/Philosophy/Strategy",
     "Securing-Networks-And-Systems/Untitled",
     "Security-Disciplines/For-Individuals/OPSEC",
@@ -227,7 +228,6 @@
     "Images/c2-serialization-formats-moloch.png",
     "Images/c2-protocols-moloch.png",
     "Images/programlanguages-adv-disadv-moloch-sliver-talk.png",
-    "Networks/Network-Theory/Network-Protocols/sedQr2JUP",
     "Images/whatisthisdebiandocs-1.png",
     "Images/whatisthisdebiandocs.png"
   ]

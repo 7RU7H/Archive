@@ -42,14 +42,19 @@ const ImportantNumber int = 69
 // Example of a method that requires a instance of gopherShape
 // Domenstrated named return types 
 func (g *gopherShape) () (result string, err error) { 
-
 	return result, nil
 }
 
-InfoLogger = log.New(os.Stdout, "INFO: ", log.Ldate|log.Ltime|log.Lshortfile)
-WarningLogger = log.New(os.Stdout, "WARNING: ", log.Ldate|log.Ltime|log.Lshortfile)
-ErrorLogger = log.New(os.Stdout, "ERROR: ", log.Ldate|log.Ltime|log.Lshortfile)
-
+// https://github.com/BishopFox/sliver/blob/master/server/cli/cli.go
+func initConsoleLogging(appDir string) *os.File {
+	log.SetFlags(log.LstdFlags | log.Lshortfile)
+	logFile, err := os.OpenFile(filepath.Join(appDir, "logs", logFileName), os.O_RDWR|os.O_CREATE|os.O_APPEND, 0o600)
+	if err != nil {
+		log.Fatalf("Error opening file: %v", err)
+	}
+	log.SetOutput(logFile)
+	return logFile
+}
 
 func main() {
 	var hackingString, argument string 
@@ -61,11 +66,10 @@ func main() {
 	// CLI ./usefulGolang cmd -a <string arg here> 
 	aCommand.StringVar(&argument, "a", "default value", "An description")
 	// Depending on project, either args are handlede as array or string; Or more likely public CLI repositories that handle this 
-	err := initaliseLogging()
-	if err != nil {
-		fmt.Fprintln(os.Stderr, "Error:", err)
-		panic(err) // Exit safetly after goroutines returns and crashes
-	}
+	
+	logFile := initConsoleLogging(appDir)
+	defer logFile.Close()
+
 	time.Sleep(1 * time.Second)
 
 	switch {
@@ -80,7 +84,10 @@ func main() {
 				theHackMap[i] = char
 			}
 		case 3:
-			err = calculateTotalHack()
+			// Below is more pretty way of writing the golang err != nil, usable if a function just returns a err
+			if err = calculateTotalHack(); err != nil {
+				panic(err) // Exit safetly after goroutines returns and crashes
+			}
 		// default: You do not always need a `default:` statement
 	
 	} 
