@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Development/Languages/Go/Useful-Go.md",
+                "file": "Post-Exploitation/Evasion/Antivirus-Evasion/PowerShell-Scriptblock-Smuggling.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -109,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Development/Languages/Go/Useful-Go.md",
+                "file": "Post-Exploitation/Evasion/Antivirus-Evasion/PowerShell-Scriptblock-Smuggling.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Development/Languages/Go/Useful-Go.md",
+                "file": "Post-Exploitation/Evasion/Antivirus-Evasion/PowerShell-Scriptblock-Smuggling.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Development/Languages/Go/Useful-Go.md"
+                "file": "Post-Exploitation/Evasion/Antivirus-Evasion/PowerShell-Scriptblock-Smuggling.md"
               }
             }
           },
@@ -184,6 +185,8 @@
   },
   "active": "162abb0c20767fba",
   "lastOpenFiles": [
+    "Development/Languages/Go/Useful-Go.md",
+    "Post-Exploitation/Evasion/Antivirus-Evasion/PowerShell-Scriptblock-Smuggling.md",
     "Development/Languages/Go/Go-Testdriven-Development.md",
     "Development/Languages/Go/Golang.md",
     "Hardware/Electronics/Electronics.md",
@@ -209,8 +212,6 @@
     "Brain-Hacking/Philosophy/Strategy/Hacking-Strategy.md",
     "Brain-Hacking/Philosophy/Strategy/Strategy.md",
     "Brain-Hacking/Problem-Solving/Problem-Solving.md",
-    "Alternate-Resources.md",
-    "Brain-Hacking/Problem-Solving/Black-Box-Method.md",
     "Brain-Hacking/Philosophy/Strategy",
     "Securing-Networks-And-Systems/Untitled",
     "Security-Disciplines/For-Individuals/OPSEC",

