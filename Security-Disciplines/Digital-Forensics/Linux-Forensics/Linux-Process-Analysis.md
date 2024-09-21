@@ -28,6 +28,18 @@ ps -u $username
 # All processes hierarchically displayed EXTRA FULL
 ps -eFH
 ```
+Output information:
+- **USER**: The user who owns the process.
+- **PID**: Process ID.
+- **%CPU**: CPU usage percentage.
+- **%MEM**: Memory usage percentage.
+- **VSZ**: Virtual memory size.
+- **RSS**: Resident Set Size (memory currently used).
+- **TTY**: Terminal associated with the process.
+- **STAT**: Process state (e.g., R for running, S for sleeping, Z for zombie).
+- **START**: Start time of the process.
+- **COMMAND**: Command that started the process.
+
 
 `pgrep` `grep` for processes
 ```bash
@@ -50,6 +62,8 @@ pstree -p -g
 ```bash
 
 lsof -p $PID
+# List open files with info on network connections (IPs not hostnames) with port numbers
+lsof -i -P -n
 ```
 
 `top` has real-time monitoring capabilities
@@ -247,6 +261,7 @@ Profile location:
 [pspy - GitHub](https://github.com/DominicBreuker/pspy) 
 [baeldung Linux systemctl service differences](https://www.baeldung.com/linux/differences-systemctl-service) 
 [digitalocean - journalctl article](https://www.digitalocean.com/community/tutorials/how-to-use-journalctl-to-view-and-manipulate-systemd-logs)
+[THM Linux Incident Surface](https://tryhackme.com/r/room/linuxincidentsurface)
 ## Appendix
 
 `ps` usage.

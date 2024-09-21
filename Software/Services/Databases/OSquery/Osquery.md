@@ -80,8 +80,19 @@ Join
 select a.column a.column a.column from aTableVardeclared a JOIN b.column b.column b.column from bTableVardeclared b LIMIT 10;
 ```
 
+#### Useful Queries
+
+
+```sql
+-- Display network information about a process using its PID
+SELECT pid, fd, socket, local_address, remote_address FROM process_open_sockets WHERE pid = 1337;
+```
+
+
+
 ## References
 
+[THM Linux Incident Surface](https://tryhackme.com/r/room/linuxincidentsurface)
 [Osquery Schema Documentation](https://osquery.io/schema/)
 [THM OSquery room](https://tryhackme.com/room/osqueryf8)
 [Github OSquery](https://github.com/osquery/osquery)

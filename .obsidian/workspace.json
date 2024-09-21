@@ -4,22 +4,47 @@
     "type": "split",
     "children": [
       {
-        "id": "ef18d0a5ff5df32c",
+        "id": "92f292f530bf1683",
         "type": "tabs",
         "children": [
           {
-            "id": "044c40545c1f7678",
+            "id": "f4d2849c3fdc57da",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Development/Regular-Expressions.md",
+                "file": "Security-Disciplines/Digital-Forensics/Linux-Forensics/Linux-Forensics.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d9d71cfdcb891481",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Software/Services/Databases/OSquery/Osquery.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "44b92e144592a3ac",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Security-Disciplines/Digital-Forensics/Linux-Forensics/Linux-Process-Analysis.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -69,8 +94,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 219.5,
-    "collapsed": true
+    "width": 282.5
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -86,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Development/Regular-Expressions.md",
+                "file": "Security-Disciplines/Digital-Forensics/Linux-Forensics/Linux-Process-Analysis.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Development/Regular-Expressions.md",
+                "file": "Security-Disciplines/Digital-Forensics/Linux-Forensics/Linux-Process-Analysis.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Development/Regular-Expressions.md"
+                "file": "Security-Disciplines/Digital-Forensics/Linux-Forensics/Linux-Process-Analysis.md"
               }
             }
           },
@@ -159,8 +183,13 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "ed8f63df71621be6",
+  "active": "44b92e144592a3ac",
   "lastOpenFiles": [
+    "Software/Services/Databases/OSquery/Osquery.md",
+    "Security-Disciplines/Digital-Forensics/Linux-Forensics/Linux-Forensics.md",
+    "Security-Disciplines/Digital-Forensics/Linux-Forensics/Linux-Process-Analysis.md",
+    "Brain-Hacking/Question-Based-Methodologies/Question-Based-Forensics-Methodology.md",
+    "Development/Regular-Expressions.md",
     "Networks/Network-Theory/Network-Protocols/Network-Protocols.md",
     "Reconnaissance/Active-Information-Gathering/DNS/DNS-Active-Recon.md",
     "Web-Application-Hacking/Methodologies/Haddix-Methodology/Application-Analysis.md",
@@ -177,17 +206,12 @@
     "Hardware/Electronics",
     "Tools/Authentication-Attacking/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
     "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
-    "Development/Regular-Expressions.md",
     "Networks/Network-Theory/Network-Protocols/DHCP.md",
     "Tools/Detection-And-Monitoring/SIEMs/Splunk.md",
     "Exploitation/CVEs/PrintNightmare.md",
     "Development/Malware/Go/Go-Malware-Writing-For-Windows.md",
     "Web-Application-Hacking/Web-Exploits/SSTI/Server-Side-Template-Injection-Cheatsheet.md",
     "Reconnaissance/Active-Information-Gathering/OS-Detection/OS-Detection.md",
-    "Reconnaissance/TALK-Mechanizing-The-Methodology.md",
-    "Software/Operating-Systems/Linux/Linux-Commands/Linux-Hardware-Commands.md",
-    "Software/Operating-Systems/Linux/Linux-Commands/Linux-Maintaince-And-Troubleshooting-Commands.md",
-    "Software/Operating-Systems/Linux/Linux-Commands/Linux-Command-Hub.md",
     "Brain-Hacking/Philosophy/Strategy",
     "Securing-Networks-And-Systems/Untitled",
     "Security-Disciplines/For-Individuals/OPSEC",

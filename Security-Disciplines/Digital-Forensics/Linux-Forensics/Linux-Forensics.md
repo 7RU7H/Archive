@@ -1,5 +1,24 @@
 # Linux Forensics
 
+Consider Objectives:
+- What is weird for the situation?
+	- Anything (including system-related processes) running in `/tmp`, `/var/tmp` or `/dev/shm`
+	- Strange child-parent processes or Orphan processes
+	- Strange network connection from a process
+	- Strange cronjobs
+- Identifying and patching the vulnerabilities
+- Minimizing the usage of unwanted services
+- Check the interfaces where the user interacts
+- Minimizing the publically exposed services, applications, ports, etc
+
+
+- Logs
+- Network Traffic
+- Processes and Services
+- Filesystem and processes integrity
+
+#### Before Investigating...
+
 Mitigate security risk by using mounted file system containing essential library files, binaries, etc and exporting `PATH` variables to prevent inadvertently executing malicious code or compromised utilities on system. 
 ```bash
 export PATH=/mnt/usb/bin:/mnt/usb/sbin
@@ -18,6 +37,10 @@ Consider Data sets
 - True-Negatives
 - False-Positives
 - Real world examples: open source known malicious; [[MITRE-ATT&CK]] framework, etc
+
+Does the box have [[Osquery]]?
+
+
 #### Artefact Gathering
 ```bash
 # OS release information
@@ -175,5 +198,6 @@ sudo rkhunter -c -sk
 ```
 ## References
 
+[THM Linux Incident Surface](https://tryhackme.com/r/room/linuxincidentsurface)
 [THM Linux File System Analysis Room](https://tryhackme.com/r/room/linuxfilesystemanalysis)
 [VirusTotal](https://www.virustotal.com/gui/home/upload) 
