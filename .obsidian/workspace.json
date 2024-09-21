@@ -4,35 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "6ab394c584bf67b8",
+        "id": "ef18d0a5ff5df32c",
         "type": "tabs",
         "children": [
           {
-            "id": "162abb0c20767fba",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Post-Exploitation/Evasion/Antivirus-Evasion/PowerShell-Scriptblock-Smuggling.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "49891a8e4873b4ce",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Networks/Network-Theory/Network-Protocols/Network-Protocols.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "953733d7b532573c",
+            "id": "044c40545c1f7678",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -93,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
+    "width": 219.5,
     "collapsed": true
   },
   "right": {
@@ -110,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Post-Exploitation/Evasion/Antivirus-Evasion/PowerShell-Scriptblock-Smuggling.md",
+                "file": "Development/Regular-Expressions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Post-Exploitation/Evasion/Antivirus-Evasion/PowerShell-Scriptblock-Smuggling.md",
+                "file": "Development/Regular-Expressions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Post-Exploitation/Evasion/Antivirus-Evasion/PowerShell-Scriptblock-Smuggling.md"
+                "file": "Development/Regular-Expressions.md"
               }
             }
           },
@@ -183,10 +159,16 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "162abb0c20767fba",
+  "active": "ed8f63df71621be6",
   "lastOpenFiles": [
-    "Development/Languages/Go/Useful-Go.md",
+    "Networks/Network-Theory/Network-Protocols/Network-Protocols.md",
+    "Reconnaissance/Active-Information-Gathering/DNS/DNS-Active-Recon.md",
+    "Web-Application-Hacking/Methodologies/Haddix-Methodology/Application-Analysis.md",
+    "Web-Application-Hacking/Methodologies/Haddix-Methodology/Haddix-Methodology.md",
+    "Web-Application-Hacking/Web-App-Bug-Hunting.md",
+    "Web-Application-Hacking/Web-Application-Authentication-Attacks.md",
     "Post-Exploitation/Evasion/Antivirus-Evasion/PowerShell-Scriptblock-Smuggling.md",
+    "Development/Languages/Go/Useful-Go.md",
     "Development/Languages/Go/Go-Testdriven-Development.md",
     "Development/Languages/Go/Golang.md",
     "Hardware/Electronics/Electronics.md",
@@ -196,7 +178,6 @@
     "Tools/Authentication-Attacking/Bruteforce-Login-Tools/Hydra-Cheatsheet.md",
     "Post-Exploitation/Privilege-Escalation/Linux/Linux-Privilege-Escalation.md",
     "Development/Regular-Expressions.md",
-    "Networks/Network-Theory/Network-Protocols/Network-Protocols.md",
     "Networks/Network-Theory/Network-Protocols/DHCP.md",
     "Tools/Detection-And-Monitoring/SIEMs/Splunk.md",
     "Exploitation/CVEs/PrintNightmare.md",
@@ -207,11 +188,6 @@
     "Software/Operating-Systems/Linux/Linux-Commands/Linux-Hardware-Commands.md",
     "Software/Operating-Systems/Linux/Linux-Commands/Linux-Maintaince-And-Troubleshooting-Commands.md",
     "Software/Operating-Systems/Linux/Linux-Commands/Linux-Command-Hub.md",
-    "Software/Operating-Systems/Linux/Linux-Commands/Core-Linux-Commands.md",
-    "Brain-Hacking/Question-Based-Methodologies/Question-Based-Forensics-Methodology.md",
-    "Brain-Hacking/Philosophy/Strategy/Hacking-Strategy.md",
-    "Brain-Hacking/Philosophy/Strategy/Strategy.md",
-    "Brain-Hacking/Problem-Solving/Problem-Solving.md",
     "Brain-Hacking/Philosophy/Strategy",
     "Securing-Networks-And-Systems/Untitled",
     "Security-Disciplines/For-Individuals/OPSEC",
