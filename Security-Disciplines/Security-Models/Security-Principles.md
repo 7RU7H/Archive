@@ -50,7 +50,7 @@ Warning not design for:
 - Availability
 
 Extension to this:
-- Authencity 
+- Authenticity 
 - Non-repudiation: Refusing the denial from original sources counter claim they are the original source
 
 #### Parkerian Hexad

@@ -6,7 +6,7 @@ Do not script anything - always be authentic
 
 Late Night Radio DJ Voice tone for calming?
 
-How many decisions have you taken today- social and cognitive fatigue exist 
+How many decisions have you taken today; be aware of yours and other social and cognitive fatigue 
 
 How does chronicity affect you and your objectives 
 
@@ -17,7 +17,7 @@ What is the [[Social-Power]] dynamic?
 	- Shutting up?
 	- Other
 
-If you do talk then everything is a negotiation
+If you do talk then everything is a negotiation?
 - Are prepared? 
 - Empathetic Model - [YouTube - Former FBI Agent Explains How to Negotiate - WIRED](https://www.youtube.com/watch?v=yH5ChB7awcM)
 1. Assessment Phase

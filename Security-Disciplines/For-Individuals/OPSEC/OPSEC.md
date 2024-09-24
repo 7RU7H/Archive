@@ -11,7 +11,7 @@ Operations Security (OPSEC) is a term coined by the United States military. In t
 - Cover
 - Concealment
 - Compartmentalisation
-	- Segmenting  machine, accounts, covers, IOCs 
+	- Segmenting machine, accounts, covers, IOCs 
 
 
 Must watch
@@ -175,7 +175,7 @@ This is not for Red teams visit [[Red-Team-OPSEC]].
 1. Assume Nothing
 2. Never go against your gut
 3. Everyone is potentially under opposition control
-4. Do not lock back; you are never completely alone
+4. Do not look back; you are never completely alone
 5. Go with the flow, blend in
 6. Vary your pattern and stay within your cover
 7. Lull them into a sense of complacency

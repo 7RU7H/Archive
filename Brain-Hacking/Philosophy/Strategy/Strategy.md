@@ -23,7 +23,7 @@ Understand and master:
 - Subvert everything
 - What does APT and you depend on?
 - Strategy is perspective, how's you recon, planning, logistics and intelligence and team play - visibility over all the past, present and future
-- Discipline and focus replaces moral 
+- Discipline and focus replaces morality
 - Strategy is non-formulaic and is not problem solving or tactics which are formulaic
 - Do not fight the last war
 - The map is not the territory
@@ -119,14 +119,14 @@ Insightful  statements:
 
 Thinking with check lists in the wrong scenario.
 
-Error handling Systemetise Rules - embed the lesson in some kind of rule
+Error handling Systematise Rules - embed the lesson in some kind of rule
 - Pokeyoke factories in Japan: a task must first be finished    
 
-When everything is too weird and you are at loss or losing hard, If computational sensor hand over to human (fighter pilot) - consider what you should do ahead of time
+When everything is too weird and you are at loss or losing hard, if computational sensor arms the need to hand over to a human (fighter pilot) - consider what you should do ahead of time
 
 The better player is always lucky - that player has situated the state of play to be that player has defined through play
 
-Monger: spend time trying not to be stupid to smart;
+Monger: spend time trying not to be stupid to be smart:
 Rule 1: Do not lose money
 Rule 2: See Rule 1
 - The affect being that by trying not to lose money you will attempt to not rather than introduce discrepancies

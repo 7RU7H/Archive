@@ -46,7 +46,7 @@ Cyber Security Governance - from [THM Governance & Regulation Room](https://tryh
 	- Preparing policies and procedures that govern the use and protection of information assets.
 	- Explanation and example through real-world scenarios communicated in both technical and non-technical - impact based on organisation's role that you are communicating it too; for example:
 		- CEO - How much money would this cost if we did not comply be a Law and were found negligent in protecting customer data both from fines and in reputation with clients. 
-	- Incident Response Procedures - [[Incident-Response 1|Incident-Response 1]]
+	- Incident Response Procedures - [[Incident-Response]]
 - Risk Management:
 	- Conduct risk assessments
 	- Implement risk mitigation measures
