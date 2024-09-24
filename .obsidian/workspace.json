@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "6f1439e537e4d5d2",
+        "id": "fb7b5dfa0eccebf5",
         "type": "tabs",
         "children": [
           {
-            "id": "a8e4ac9d2bd06557",
+            "id": "0ecee983bac6f966",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Securing-Networks-And-Systems/Browser-Hardening.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -52,7 +56,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "gdb",
+                "query": "Wordlists",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Securing-Networks-And-Systems/Browser-Hardening.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Securing-Networks-And-Systems/Browser-Hardening.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Securing-Networks-And-Systems/Browser-Hardening.md"
+              }
             }
           },
           {
@@ -150,8 +158,11 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "a8e4ac9d2bd06557",
+  "active": "0ecee983bac6f966",
   "lastOpenFiles": [
+    "Securing-Networks-And-Systems/Browser-Hardening.md",
+    "Tools/Wordlists/Wordlist-Library.md",
+    "Tools/Wordlists/Wordlist-Considerations.md",
     "Social-Engineering/Negotiation.md",
     "Social-Engineering/Manipulation-Techniques.md",
     "Social-Engineering/Detecting-Deception.md",
@@ -176,9 +187,6 @@
     "Tools/Reverse-Engineering/scdbg.md",
     "Tools/Reverse-Engineering/EDB.md",
     "Reverse-Engineering/Reverse-Engineering.md",
-    "Development/Languages/Python/Useful-Python.md",
-    "Security-Disciplines/Digital-Forensics/Linux-Forensics/Linux-Process-Analysis.md",
-    "Software/Services/Databases/OSquery/Osquery.md",
     "Hardware/Electronics",
     "Brain-Hacking/Philosophy/Strategy",
     "Securing-Networks-And-Systems/Untitled",
