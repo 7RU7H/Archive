@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Securing-Networks-And-Systems/Browser-Hardening.md",
+                "file": "Artificial-Intelligence/AI-ChatBots-Whispering.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "5175a193a3704696",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AI-Exploits.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Securing-Networks-And-Systems/Browser-Hardening.md",
+                "file": "AI-Exploits.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Securing-Networks-And-Systems/Browser-Hardening.md",
+                "file": "AI-Exploits.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Securing-Networks-And-Systems/Browser-Hardening.md"
+                "file": "AI-Exploits.md"
               }
             }
           },
@@ -158,8 +171,12 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "0ecee983bac6f966",
+  "active": "5175a193a3704696",
   "lastOpenFiles": [
+    "Artificial-Intelligence/AI-ChatBots-Whispering.md",
+    "AI-Exploits.md",
+    "Artificial-Intelligence/AI-For-Hacking.md",
+    "Artificial-Intelligence/AI.md",
     "Securing-Networks-And-Systems/Browser-Hardening.md",
     "Tools/Wordlists/Wordlist-Library.md",
     "Tools/Wordlists/Wordlist-Considerations.md",
@@ -182,11 +199,7 @@
     "Security-Disciplines/Cyberwarfare/Theory/Cyberwarfare-Considerations.md",
     "Brain-Hacking/Problem-Solving/Problem-Compass.md",
     "Brain-Hacking/Problem-Solving/Causality.md",
-    "Tools/Debuggers-IDEs-Editors/GDB.md",
     "Tools/Debuggers-IDEs-Editors/pwndbg-CheatSheet.pdf",
-    "Tools/Reverse-Engineering/scdbg.md",
-    "Tools/Reverse-Engineering/EDB.md",
-    "Reverse-Engineering/Reverse-Engineering.md",
     "Hardware/Electronics",
     "Brain-Hacking/Philosophy/Strategy",
     "Securing-Networks-And-Systems/Untitled",

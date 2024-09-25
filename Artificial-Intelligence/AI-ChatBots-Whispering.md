@@ -47,6 +47,7 @@ The best way to start in hacking AI Chatbots is to consider as a device to Discl
 - Impersonation - Impersonate a known  security identifiable individual that access control object that is query-able by AI chatbot to then leak sensitive information 
 - Switching Mode - Prompt the AI to run in a different mode    
 
+
 ## References
 
 [Santiago](https://twitter.com/svpino/status/1611357154514186241)
