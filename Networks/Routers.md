@@ -11,6 +11,8 @@ EIGRP
 
 OSPF
 
-##  References
+SOHO denotes Small Office, Home Office Routers
+## References
 
 [HTB Academy Pivot Module](https://academy.hackthebox.com/)
+[Wikipedia Routers](https://en.wikipedia.org/wiki/Router_(computing))

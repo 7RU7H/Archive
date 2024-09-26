@@ -4,6 +4,8 @@ AES: 128-bit symmetric-key block cipher with three fixed key size variants.
 
 Asymmetric encryption: Model of encryption that uses the recipient's public key to encrypt a message, and the recipient's private key to decrypt a message.
 
+Attestation: [OWASP Cryptography](https://owasp.org/www-project-developer-guide/draft/foundations/crypto_principles/): *"Attestation is the act of “bearing witness” or certifying something for a particular use or purpose."*
+
 Bit: The smallest unit of binary data. Must be either 0 or 1.
 
 Block Cipher: An encryption algorithm that operates on a group of bit at once rather than only one bit at a time. Contrast with Stream Cipher.
@@ -56,3 +58,4 @@ Transposition cipher: Rearranges the order of the characters of a plain text by 
 ## References
 
 [THM Room Introduction to Cryptography](https://tryhackme.com/room/cryptographyintr)
+[OWASP Cryptography](https://owasp.org/www-project-developer-guide/draft/foundations/crypto_principles/)

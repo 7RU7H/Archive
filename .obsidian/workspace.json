@@ -4,35 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "fb7b5dfa0eccebf5",
+        "id": "ac5aedd4e299290e",
         "type": "tabs",
         "children": [
           {
-            "id": "0ecee983bac6f966",
+            "id": "f9f52459cd39f95b",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Artificial-Intelligence/AI-ChatBots-Whispering.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "5175a193a3704696",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "AI-Exploits.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -69,7 +52,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Wordlists",
+                "query": "MITM",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -82,7 +65,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 282.5
+    "width": 403.5
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -98,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AI-Exploits.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AI-Exploits.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "AI-Exploits.md"
-              }
+              "state": {}
             }
           },
           {
@@ -171,10 +150,21 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "5175a193a3704696",
+  "active": "f9f52459cd39f95b",
   "lastOpenFiles": [
-    "Artificial-Intelligence/AI-ChatBots-Whispering.md",
+    "Exploitation/Network/MITM-Attacks.md",
+    "Virtualization/Cloud/Cloud-Security.md",
+    "Cryptography/Cryptography-Glossary.md",
+    "Cryptography/Cryptography.md",
+    "Securing-Networks-And-Systems/Authentication/Authentication.md",
+    "Securing-Networks-And-Systems/Authentication/Password-Attacks/Password-Attacks.md",
+    "Exploitation/Network/Replay-Attacks.md",
+    "Securing-Networks-And-Systems/Authentication/Authentication.md~",
+    "Networks/Routers.md",
+    "Virtualization/Cloud/Azure/Azure-Hacking",
+    "Securing-Networks-And-Systems/Authentication",
     "AI-Exploits.md",
+    "Artificial-Intelligence/AI-ChatBots-Whispering.md",
     "Artificial-Intelligence/AI-For-Hacking.md",
     "Artificial-Intelligence/AI.md",
     "Securing-Networks-And-Systems/Browser-Hardening.md",
@@ -191,14 +181,6 @@
     "Security-Disciplines/Security-Models/Diamond-Model.md",
     "Security-Disciplines/Security-Models/Governance-And-Regulation.md",
     "Security-Disciplines/Security-Models/Security-Controls.md",
-    "Security-Disciplines/Security-Models/Security-Policies.md",
-    "Security-Disciplines/Security-Models/Security-Strategies.md",
-    "Security-Disciplines/Security-Models/Security-Principles.md",
-    "Brain-Hacking/Problem-Solving/Problem-Microscope.md",
-    "Security-Disciplines/Cyberwarfare/Theory/The-Grugq-Is-Powerful-Cyberwarfare-Resource.md",
-    "Security-Disciplines/Cyberwarfare/Theory/Cyberwarfare-Considerations.md",
-    "Brain-Hacking/Problem-Solving/Problem-Compass.md",
-    "Brain-Hacking/Problem-Solving/Causality.md",
     "Tools/Debuggers-IDEs-Editors/pwndbg-CheatSheet.pdf",
     "Hardware/Electronics",
     "Brain-Hacking/Philosophy/Strategy",
@@ -208,10 +190,7 @@
     "Exploitation/Insider-Threats",
     "Images/mozilla-http-auth.png",
     "Post-Exploitation/Restricted-Desktop-Environment-Breakout",
-    "Cryptography-And-Authentication/Key-Management",
     "Images/charstillcrackgraph-securitydotorg.png",
-    "Software/Operating-Systems/Linux/Distributions/OpenSUSE",
-    "Software/Operating-Systems/Linux/Distributions/Arch",
     "Images/spqa-miessler-march2023-medium.png",
     "Images/kamkars-fav-diy-hwh-basics-tools.png",
     "Images/c2-serialization-formats-moloch.png",
