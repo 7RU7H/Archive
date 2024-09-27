@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "ac5aedd4e299290e",
+        "id": "7159013ac118463c",
         "type": "tabs",
         "children": [
           {
-            "id": "f9f52459cd39f95b",
+            "id": "20afe620b4f4414a",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -52,7 +52,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "MITM",
+                "query": "Side-Cha",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -150,8 +150,12 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "f9f52459cd39f95b",
+  "active": "20afe620b4f4414a",
   "lastOpenFiles": [
+    "Securing-Networks-And-Systems/Side-Channel-Attacks.md",
+    "Security-Disciplines/Cyber-Threat-Intelligence/TALK-Threat-Hunting-Seriously-I-Really-Can-Still-See-You.md",
+    "Security-Disciplines/Cyber-Threat-Intelligence/Threat-Modelling.md",
+    "Security-Disciplines/Cyber-Threat-Intelligence/Threat-Intelligence.md",
     "Exploitation/Network/MITM-Attacks.md",
     "Virtualization/Cloud/Cloud-Security.md",
     "Cryptography/Cryptography-Glossary.md",
@@ -177,10 +181,6 @@
     "Security-Disciplines/Physical-Security/Physical-Security.md",
     "Brain-Hacking/Philosophy/Strategy/Strategy.md",
     "Brain-Hacking/Actions/Empathic-Methodology.md",
-    "Security-Disciplines/Malware-Analysis/Static-Malware-Analysis.md",
-    "Security-Disciplines/Security-Models/Diamond-Model.md",
-    "Security-Disciplines/Security-Models/Governance-And-Regulation.md",
-    "Security-Disciplines/Security-Models/Security-Controls.md",
     "Tools/Debuggers-IDEs-Editors/pwndbg-CheatSheet.pdf",
     "Hardware/Electronics",
     "Brain-Hacking/Philosophy/Strategy",
