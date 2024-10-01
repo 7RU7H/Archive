@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cryptography/Cryptographic-Attacks/Padding-Oracle-Attack.md",
+                "file": "Exploitation/Side-Channel-Attacks/Side-Channel-Attacks.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,14 +25,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exploitation/Supply-Chain-Attacks/Software-Supply-Chain-Attacks.md",
+                "file": "Securing-Networks-And-Systems/Hardening/Browser-Hardening.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -69,7 +68,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Supply",
+                "query": "Cold-B",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -98,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exploitation/Supply-Chain-Attacks/Software-Supply-Chain-Attacks.md",
+                "file": "Exploitation/Side-Channel-Attacks/Side-Channel-Attacks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Exploitation/Supply-Chain-Attacks/Software-Supply-Chain-Attacks.md",
+                "file": "Exploitation/Side-Channel-Attacks/Side-Channel-Attacks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Exploitation/Supply-Chain-Attacks/Software-Supply-Chain-Attacks.md"
+                "file": "Exploitation/Side-Channel-Attacks/Side-Channel-Attacks.md"
               }
             }
           },
@@ -171,15 +170,18 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "75ad5dc0222ad96c",
+  "active": "b0c65b26e22d86b0",
   "lastOpenFiles": [
-    "Securing-Networks-And-Systems/Browser-Hardening.md",
+    "Exploitation/Side-Channel-Attacks/Cold-Boot-Attacks.md",
+    "Exploitation/Side-Channel-Attacks/Side-Channel-Attacks.md",
+    "Exploitation/Side-Channel-Attacks",
+    "Securing-Networks-And-Systems/Hardening/MacOS-Hardening.md",
+    "Cryptography/Cryptographic-Attacks/Padding-Oracle-Attack.md",
+    "Securing-Networks-And-Systems/Hardening/Browser-Hardening.md",
     "Exploitation/Supply-Chain-Attacks/Software-Supply-Chain-Attacks.md",
     "Exploitation/Supply-Chain-Attacks",
     "Software/Services/Package-Managers/NPM.md",
-    "Cryptography/Cryptographic-Attacks/Padding-Oracle-Attack.md",
     "Side-Channels-Attacks.md",
-    "Securing-Networks-And-Systems/Side-Channel-Attacks.md",
     "Artificial-Intelligence/AI-Exploits.md",
     "Cryptography/Cryptographic-Attacks",
     "Security-Disciplines/For-Individuals/OPSEC/Privacy.md",
@@ -202,13 +204,10 @@
     "Securing-Networks-And-Systems/Authentication",
     "Artificial-Intelligence/AI-ChatBots-Whispering.md",
     "Artificial-Intelligence/AI-For-Hacking.md",
-    "Artificial-Intelligence/AI.md",
-    "Tools/Wordlists/Wordlist-Library.md",
     "Tools/Debuggers-IDEs-Editors/pwndbg-CheatSheet.pdf",
     "Hardware/Electronics",
     "Brain-Hacking/Philosophy/Strategy",
     "Securing-Networks-And-Systems/Untitled",
-    "Security-Disciplines/For-Individuals/OPSEC",
     "Images/exploitisweird-cve-2023-23572.png",
     "Images/mozilla-http-auth.png",
     "Images/charstillcrackgraph-securitydotorg.png",
