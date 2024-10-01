@@ -1,4 +1,4 @@
-# OPSEC 101
+# OPSEC 
 
 Sometimes we all need to return to OPSEC 101: 
 
