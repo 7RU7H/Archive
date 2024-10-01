@@ -20,7 +20,7 @@ Problem scope
 - As a process on your machine
 	- Memory corruption vulnerability
 - As binary that uses libraries, drivers on your machine
-	- Supply chain attacks on dependencies 
+	- [[Software-Supply-Chain-Attacks]] on dependencies 
 
 Future concerns:
 - AI Client-side integrations 

@@ -126,7 +126,7 @@ New Packages:
 - Is the code clear and readable? If it is, then issues will be much easier to spot
 - Is the license compatible with your project, and have you acknowledged the terms (e.g. attribution)
 - How large is the package? And how will this affect your project's bundle size
-Hack with: Supply chain attacks
+Hack with: [[Software-Supply-Chain-Attacks]]
 
 Strict installs
 ```
