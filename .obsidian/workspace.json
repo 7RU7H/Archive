@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exploitation/Side-Channel-Attacks/Side-Channel-Attacks.md",
+                "file": "Security-Disciplines/For-Individuals/OPSEC/OPSEC.md",
                 "mode": "source",
                 "source": false
               }
@@ -68,7 +68,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Cold-B",
+                "query": "OPSEC",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -81,7 +81,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 268.5
+    "width": 451.5
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exploitation/Side-Channel-Attacks/Side-Channel-Attacks.md",
+                "file": "Security-Disciplines/For-Individuals/OPSEC/OPSEC.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Exploitation/Side-Channel-Attacks/Side-Channel-Attacks.md",
+                "file": "Security-Disciplines/For-Individuals/OPSEC/OPSEC.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Exploitation/Side-Channel-Attacks/Side-Channel-Attacks.md"
+                "file": "Security-Disciplines/For-Individuals/OPSEC/OPSEC.md"
               }
             }
           },
@@ -170,20 +170,31 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "b0c65b26e22d86b0",
+  "active": "ed8f63df71621be6",
   "lastOpenFiles": [
-    "Exploitation/Side-Channel-Attacks/Cold-Boot-Attacks.md",
+    "Tools/OSINT/web-check.md",
     "Exploitation/Side-Channel-Attacks/Side-Channel-Attacks.md",
-    "Exploitation/Side-Channel-Attacks",
+    "Images/Excalidraw/USART-protocol.excalidraw.md",
+    "Tools/Cross-OS/Exiftool.md",
+    "Images/yaraconditions.png_original",
+    "Images/yaraconditions.png_exiftool_tmp",
+    "Images/wwh-seriouslyireallycanstillseeyou-llmnrandwpadprimer.png_original",
+    "Images/wwh-seriouslyireallycanstillseeyou-llmnrandwpadprimer.png_exiftool_tmp",
+    "Images/wireshark-toolbar.png_original",
+    "Images/wireshark-stop.png_original",
+    "Images/wireshark-statusbar.png_original",
+    "Images/wireshark-start.png_original",
+    "Images/wireshark-packetlist.png_original",
+    "Images/wireshark-packetlist.png_exiftool_tmp",
+    "Exploitation/Side-Channel-Attacks/Side-Channel-Attacks-Against-Cryptography.md",
+    "Exploitation/Side-Channel-Attacks/Cold-Boot-Attacks.md",
     "Securing-Networks-And-Systems/Hardening/MacOS-Hardening.md",
     "Cryptography/Cryptographic-Attacks/Padding-Oracle-Attack.md",
     "Securing-Networks-And-Systems/Hardening/Browser-Hardening.md",
     "Exploitation/Supply-Chain-Attacks/Software-Supply-Chain-Attacks.md",
-    "Exploitation/Supply-Chain-Attacks",
     "Software/Services/Package-Managers/NPM.md",
     "Side-Channels-Attacks.md",
     "Artificial-Intelligence/AI-Exploits.md",
-    "Cryptography/Cryptographic-Attacks",
     "Security-Disciplines/For-Individuals/OPSEC/Privacy.md",
     "Development/Languages/Bash/Bash.md",
     "Networks/Network-Security/Network-Security.md",
@@ -197,17 +208,6 @@
     "Cryptography/Cryptography.md",
     "Securing-Networks-And-Systems/Authentication/Authentication.md",
     "Securing-Networks-And-Systems/Authentication/Password-Attacks/Password-Attacks.md",
-    "Exploitation/Network/Replay-Attacks.md",
-    "Securing-Networks-And-Systems/Authentication/Authentication.md~",
-    "Networks/Routers.md",
-    "Virtualization/Cloud/Azure/Azure-Hacking",
-    "Securing-Networks-And-Systems/Authentication",
-    "Artificial-Intelligence/AI-ChatBots-Whispering.md",
-    "Artificial-Intelligence/AI-For-Hacking.md",
-    "Tools/Debuggers-IDEs-Editors/pwndbg-CheatSheet.pdf",
-    "Hardware/Electronics",
-    "Brain-Hacking/Philosophy/Strategy",
-    "Securing-Networks-And-Systems/Untitled",
     "Images/exploitisweird-cve-2023-23572.png",
     "Images/mozilla-http-auth.png",
     "Images/charstillcrackgraph-securitydotorg.png",

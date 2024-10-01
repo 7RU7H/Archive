@@ -2,7 +2,7 @@
 
 Universal Synchronous/Asynchronous Receiver-Transmitter (USART) communication, or as it is better known, serial communication, is a protocol that uses two wires.
 
-![](USART-protocol)
+![](USART-protocol.excalidraw.md)
 
 One wire is used to transmit (TX) data from device A to device B, and the other wire is used to receive (RX) data on device A from device B. There is no clock line and the device must agree to the configuration of communication:
 - Communication speed - baud rate or bit rate, devices can choose depending on compatibility between devices
