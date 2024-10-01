@@ -1,12 +1,26 @@
 # Browser Hardening
 
-Browser Hardening is difficult. The Browser has lots of vectors of exposure and is powerful tool in the hands of everyone. 
+Browser Hardening is difficult. The Browser has lots of vectors of exposure, vulnerability at various point in the Markov chain from user typing a request to response reflected to the user. It is also powerful tool in the hands of everyone, designed for everyone on every architecture and device anyone is actually on. This page is not intended to be alarmist as UK's [NSCS Managing Web Browser Security](https://www.ncsc.gov.uk/collection/device-security-guidance/policies-and-settings/managing-web-browser-security) *"Today, they are generally secure in their default state. As a result, the NCSC no longer has detailed configuration guidance `(hyperlink dead)` for each major browser. Instead, this high-level guidance will help you develop an approach to secure web browsing that works for your organisation."*  - the TL;DR is:
+- Does it work and is patch?
+- Beware user bypassing security features (RBAC on the Browser settings)
+- Beware weird BYOB / Third-party plugins/extensions 
+- Enforce trusted and modern Authentication methods
+	- Password Managers on the OS, not the browser
+- Privacy in your may be both good for user OPSEC, but bad for your Visibility in [[Deep-Packet-Inspection]] (beware policy on use) 
+- RBAC the JavaScript Console to prevent:
+	- [[Social-Engineering]] against user,
+	- Exploitation of Browser for general Kill-Chain reasons (as browsers are on almost every machine, by default) 
+- Browsers on Phones, Kiosks exist! 
 
 Problem scope
+- They are everywhere users are (Desk|Laptops), Phones, Tablets, Kiosks, Handhelds, Software-in-Software (Steam has its own Browser) 
+- Multiple Protocol (some not encrypted by default)
+- Multiple Protocols at different level of [[OSI-Model]] are interactable
 - Developers probably must compete across most devices and architectures
- - [[JavaScript]]
- - Many sites require credentials
- - Global incentivisation data harvesting - leads to tracking, browser fingerprinting, 
+- [[JavaScript]]
+- Many sites require credentials and many ways to have credentials in memory in some implementation
+- The word Data does not actually describe what is going on with some of the Data in the entire Browsing Markov Chain
+- Global incentivisation data harvesting - leads to tracking design at (server and client ([[Browser-Fingerprinting]]))-side various levels (CSS, cookies, addresses, heuristics, , 
 
 
 - Routing

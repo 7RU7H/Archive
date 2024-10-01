@@ -31,7 +31,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -97,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Exploitation/Side-Channel-Attacks/Side-Channel-Attacks.md",
+                "file": "Securing-Networks-And-Systems/Hardening/Browser-Hardening.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Exploitation/Side-Channel-Attacks/Side-Channel-Attacks.md",
+                "file": "Securing-Networks-And-Systems/Hardening/Browser-Hardening.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Exploitation/Side-Channel-Attacks/Side-Channel-Attacks.md"
+                "file": "Securing-Networks-And-Systems/Hardening/Browser-Hardening.md"
               }
             }
           },
@@ -170,12 +171,12 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "b0c65b26e22d86b0",
+  "active": "75ad5dc0222ad96c",
   "lastOpenFiles": [
+    "Exploitation/Side-Channel-Attacks/Side-Channel-Attacks.md",
     "Security-Disciplines/Attribution.md",
     "Exploitation/Side-Channel-Attacks/Acoustic-Attacks.md",
     "Exploitation/Side-Channel-Attacks/Light-Attacks.md",
-    "Exploitation/Side-Channel-Attacks/Side-Channel-Attacks.md",
     "Tools/OSINT/web-check.md",
     "Security-Disciplines/For-Individuals/OPSEC/OPSEC.md",
     "Tools/Cross-OS/Exiftool.md",
