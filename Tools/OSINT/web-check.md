@@ -1,4 +1,4 @@
-# web-check
+# `web-check`
 
 [GitHub - web-check](https://github.com/Lissy93/web-check) *All-in-one OSINT tool for analysing any website. Get an insight into the inner-workings of a given website: uncover potential attack vectors, analyse server architecture, view security configurations, and learn what technologies a site is using. Currently the dashboard will show: IP info, SSL chain, DNS records, cookies, headers, domain info, search crawl rules, page map, server location, redirect ledger, open ports, traceroute, DNS security extensions, site performance, trackers, associated hostnames, carbon footprint.*
 

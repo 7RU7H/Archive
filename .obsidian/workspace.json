@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Development/Languages/Bash/Bash.md",
+                "file": "Exploitation/Side-Channel-Attacks/Side-Channel-Attacks.md",
                 "mode": "source",
                 "source": false
               }
@@ -68,7 +68,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "exiftool",
+                "query": "Air-",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -81,7 +81,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 451.5
+    "width": 310.5
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Development/Languages/Bash/Bash.md",
+                "file": "Exploitation/Side-Channel-Attacks/Side-Channel-Attacks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Development/Languages/Bash/Bash.md",
+                "file": "Exploitation/Side-Channel-Attacks/Side-Channel-Attacks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Development/Languages/Bash/Bash.md"
+                "file": "Exploitation/Side-Channel-Attacks/Side-Channel-Attacks.md"
               }
             }
           },
@@ -172,6 +172,14 @@
   },
   "active": "b0c65b26e22d86b0",
   "lastOpenFiles": [
+    "Security-Disciplines/Attribution.md",
+    "Exploitation/Side-Channel-Attacks/Acoustic-Attacks.md",
+    "Exploitation/Side-Channel-Attacks/Light-Attacks.md",
+    "Exploitation/Side-Channel-Attacks/Side-Channel-Attacks.md",
+    "Tools/OSINT/web-check.md",
+    "Security-Disciplines/For-Individuals/OPSEC/OPSEC.md",
+    "Tools/Cross-OS/Exiftool.md",
+    "Development/Languages/Bash/Bash.md",
     "Images/azureapplicationgatewayflowdiagram.png_original_exiftool_tmp",
     "Images/chriskubecka-ismemegoddess.png_original_exiftool_tmp",
     "Images/azurecomparisonbetweenmabsandmars.png_original_original_original",
@@ -182,11 +190,6 @@
     "Images/azureenterprisechoicesofwan.png_original_exiftool_tmp",
     "Images/chriskubecka-gchqandtheunderground.png_original_exiftool_tmp",
     "Images/patrickneal-cackalackycon-bypassingprotectiveplates.png_original_exiftool_tmp",
-    "Images/c2-protocols-moloch.png_original_exiftool_tmp",
-    "Tools/Cross-OS/Exiftool.md",
-    "Security-Disciplines/For-Individuals/OPSEC/OPSEC.md",
-    "Tools/OSINT/web-check.md",
-    "Exploitation/Side-Channel-Attacks/Side-Channel-Attacks.md",
     "Exploitation/Side-Channel-Attacks/Side-Channel-Attacks-Against-Cryptography.md",
     "Images/Excalidraw/USART-protocol.excalidraw.md",
     "Exploitation/Side-Channel-Attacks/Cold-Boot-Attacks.md",
@@ -198,7 +201,6 @@
     "Side-Channels-Attacks.md",
     "Artificial-Intelligence/AI-Exploits.md",
     "Security-Disciplines/For-Individuals/OPSEC/Privacy.md",
-    "Development/Languages/Bash/Bash.md",
     "Networks/Network-Security/Network-Security.md",
     "Post-Exploitation/Credentials-Harvesting/Browser-Credential-Harvesting.md",
     "Security-Disciplines/Cyber-Threat-Intelligence/TALK-Threat-Hunting-Seriously-I-Really-Can-Still-See-You.md",
@@ -206,8 +208,6 @@
     "Security-Disciplines/Cyber-Threat-Intelligence/Threat-Intelligence.md",
     "Exploitation/Network/MITM-Attacks.md",
     "Virtualization/Cloud/Cloud-Security.md",
-    "Cryptography/Cryptography-Glossary.md",
-    "Cryptography/Cryptography.md",
     "Images/exploitisweird-cve-2023-23572.png",
     "Images/mozilla-http-auth.png",
     "Images/charstillcrackgraph-securitydotorg.png",
