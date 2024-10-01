@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "20afe620b4f4414a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Securing-Networks-And-Systems/Browser-Hardening.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "b0c65b26e22d86b0",
             "type": "leaf",
             "state": {
@@ -97,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Securing-Networks-And-Systems/Browser-Hardening.md",
+                "file": "Securing-Networks-And-Systems/Side-Channel-Attacks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Securing-Networks-And-Systems/Browser-Hardening.md",
+                "file": "Securing-Networks-And-Systems/Side-Channel-Attacks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Securing-Networks-And-Systems/Browser-Hardening.md"
+                "file": "Securing-Networks-And-Systems/Side-Channel-Attacks.md"
               }
             }
           },
@@ -170,12 +158,16 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "20afe620b4f4414a",
+  "active": "b0c65b26e22d86b0",
   "lastOpenFiles": [
-    "Security-Disciplines/For-Individuals/OPSEC/Privacy.md",
-    "Securing-Networks-And-Systems/Browser-Hardening.md",
-    "Development/Languages/Bash/Bash.md",
+    "Artificial-Intelligence/AI-Exploits.md",
     "Securing-Networks-And-Systems/Side-Channel-Attacks.md",
+    "Cryptography/Cryptographic-Attacks/Padding-Oracle-Attack.md",
+    "Side-Channels-Attacks.md",
+    "Cryptography/Cryptographic-Attacks",
+    "Securing-Networks-And-Systems/Browser-Hardening.md",
+    "Security-Disciplines/For-Individuals/OPSEC/Privacy.md",
+    "Development/Languages/Bash/Bash.md",
     "Networks/Network-Security/Network-Security.md",
     "Post-Exploitation/Credentials-Harvesting/Browser-Credential-Harvesting.md",
     "Security-Disciplines/Cyber-Threat-Intelligence/TALK-Threat-Hunting-Seriously-I-Really-Can-Still-See-You.md",
@@ -192,15 +184,12 @@
     "Networks/Routers.md",
     "Virtualization/Cloud/Azure/Azure-Hacking",
     "Securing-Networks-And-Systems/Authentication",
-    "Artificial-Intelligence/AI-Exploits.md",
     "Artificial-Intelligence/AI-ChatBots-Whispering.md",
     "Artificial-Intelligence/AI-For-Hacking.md",
     "Artificial-Intelligence/AI.md",
     "Tools/Wordlists/Wordlist-Library.md",
     "Tools/Wordlists/Wordlist-Considerations.md",
     "Social-Engineering/Negotiation.md",
-    "Social-Engineering/Manipulation-Techniques.md",
-    "Social-Engineering/Detecting-Deception.md",
     "Tools/Debuggers-IDEs-Editors/pwndbg-CheatSheet.pdf",
     "Hardware/Electronics",
     "Brain-Hacking/Philosophy/Strategy",
@@ -209,7 +198,6 @@
     "Images/exploitisweird-cve-2023-23572.png",
     "Exploitation/Insider-Threats",
     "Images/mozilla-http-auth.png",
-    "Post-Exploitation/Restricted-Desktop-Environment-Breakout",
     "Images/charstillcrackgraph-securitydotorg.png",
     "Images/spqa-miessler-march2023-medium.png",
     "Images/kamkars-fav-diy-hwh-basics-tools.png",
