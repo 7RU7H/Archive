@@ -13,10 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exploitation/Side-Channel-Attacks/Side-Channel-Attacks.md",
+                "file": "Exploitation/CVEs/PrintNightmare.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "PrintNightmare"
             }
           },
           {
@@ -25,10 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Securing-Networks-And-Systems/Hardening/Browser-Hardening.md",
+                "file": "Software/Services/GitHub/GitHub.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "GitHub"
             }
           }
         ],
@@ -52,7 +56,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -60,7 +66,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           },
           {
@@ -69,20 +77,22 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Air-",
+                "query": "GitHub",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 310.5
+    "width": 431.5
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -106,7 +116,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": true,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Browser-Hardening"
             }
           },
           {
@@ -118,7 +130,9 @@
                 "file": "Securing-Networks-And-Systems/Hardening/Browser-Hardening.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Browser-Hardening"
             }
           },
           {
@@ -129,7 +143,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -139,7 +155,9 @@
               "type": "outline",
               "state": {
                 "file": "Securing-Networks-And-Systems/Hardening/Browser-Hardening.md"
-              }
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Browser-Hardening"
             }
           },
           {
@@ -149,7 +167,9 @@
               "type": "all-properties",
               "state": {
                 "sortOrder": "frequency"
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
             }
           }
         ],
@@ -167,12 +187,18 @@
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
-      "command-palette:Open command palette": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false
+      "command-palette:Open command palette": false
     }
   },
   "active": "75ad5dc0222ad96c",
   "lastOpenFiles": [
+    "Software/Services/KeePass.md",
+    "Securing-Networks-And-Systems/Hardening/Browser-Hardening.md",
+    "Software/Services/GitHub",
+    "Exploitation/CVEs/PrintNightmare.md",
+    "Exploitation/Exploitation.md",
+    "Brain-Hacking/Question-Based-Methodologies/Question-Based-Penetration-Testing-Methodology.md",
+    "Brain-Hacking/Question-Based-Methodologies/Question-Based-Web-Application-Hacking-Methodology.md",
     "Exploitation/Side-Channel-Attacks/Side-Channel-Attacks.md",
     "Security-Disciplines/Attribution.md",
     "Exploitation/Side-Channel-Attacks/Acoustic-Attacks.md",
@@ -190,13 +216,11 @@
     "Images/deviantollam-ilmi-talk-underdoorattacks.png_original_exiftool_tmp",
     "Images/azureenterprisechoicesofwan.png_original_exiftool_tmp",
     "Images/chriskubecka-gchqandtheunderground.png_original_exiftool_tmp",
-    "Images/patrickneal-cackalackycon-bypassingprotectiveplates.png_original_exiftool_tmp",
     "Exploitation/Side-Channel-Attacks/Side-Channel-Attacks-Against-Cryptography.md",
     "Images/Excalidraw/USART-protocol.excalidraw.md",
     "Exploitation/Side-Channel-Attacks/Cold-Boot-Attacks.md",
     "Securing-Networks-And-Systems/Hardening/MacOS-Hardening.md",
     "Cryptography/Cryptographic-Attacks/Padding-Oracle-Attack.md",
-    "Securing-Networks-And-Systems/Hardening/Browser-Hardening.md",
     "Exploitation/Supply-Chain-Attacks/Software-Supply-Chain-Attacks.md",
     "Software/Services/Package-Managers/NPM.md",
     "Side-Channels-Attacks.md",
@@ -204,11 +228,6 @@
     "Security-Disciplines/For-Individuals/OPSEC/Privacy.md",
     "Networks/Network-Security/Network-Security.md",
     "Post-Exploitation/Credentials-Harvesting/Browser-Credential-Harvesting.md",
-    "Security-Disciplines/Cyber-Threat-Intelligence/TALK-Threat-Hunting-Seriously-I-Really-Can-Still-See-You.md",
-    "Security-Disciplines/Cyber-Threat-Intelligence/Threat-Modelling.md",
-    "Security-Disciplines/Cyber-Threat-Intelligence/Threat-Intelligence.md",
-    "Exploitation/Network/MITM-Attacks.md",
-    "Virtualization/Cloud/Cloud-Security.md",
     "Images/exploitisweird-cve-2023-23572.png",
     "Images/mozilla-http-auth.png",
     "Images/charstillcrackgraph-securitydotorg.png",

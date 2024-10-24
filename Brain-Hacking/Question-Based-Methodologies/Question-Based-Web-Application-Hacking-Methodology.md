@@ -33,7 +33,7 @@
 		- Are contextualising you content discovery bruteforce; understand the asset pick a contextually specific wordlist per stack?
 		- Have walked through the applicataion as a ordinary user?
 		- Have you pressed `[CTRL + F12]` yet? - Browser `Inspect` does not show HTML encoded characters
-		- Is it at static web page check extension that make pages dynamix index.html -> index.php,etc
+		- Is it at static web page check extension that make pages dynamic index.html -> index.php,etc
 	- Does the site provide text to scrap into wordlist?
 	- Virtual hosting? 
 		- Fuzzable - rate limits?
@@ -46,7 +46,7 @@
 	- Web server and Website Language
 		- Clarify host OS version from Web Server version? - Measure twice cut once!
 		- Vulnerable Language?
-		- Javascript? - modern browsers can debug especially useful blind exploit development
+		- JavaScript? - modern browsers can debug especially useful blind exploit development
 			-  XSS?
 				- What Input Validation?
 					- Which characters?

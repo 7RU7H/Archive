@@ -13,6 +13,15 @@ git branch # display branches
 git push --all -f
 ```
 
+#### Branches
+
+```bash
+# View avaliable branch from a repositories directory
+git branch -a 
+
+
+git clone --single-branch --branch $branchname $remote_repo
+```
 
 #### `curl` to get the latest releases of a repository
 

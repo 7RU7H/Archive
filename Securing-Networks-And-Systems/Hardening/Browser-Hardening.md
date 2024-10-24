@@ -13,7 +13,7 @@ Browser Hardening is difficult. The Browser has lots of vectors of exposure, vul
 - Browsers on Phones, Kiosks exist! 
 
 Problem scope
-- They are everywhere users are (Desk|Laptops), Phones, Tablets, Kiosks, Handhelds, Software-in-Software (Steam has its own Browser) 
+- They are everywhere users are (Desk/Lap)-tops, Phones, Tablets, Kiosks, Handhelds, Software-in-Software (Steam has its own Browser) 
 - Multiple Protocol (some not encrypted by default)
 - Multiple Protocols at different level of [[OSI-Model]] are interactable
 - Developers probably must compete across most devices and architectures
