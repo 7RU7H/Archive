@@ -1,3 +1,10 @@
+# Deception and Counter Deception
+
+This page was initialised from the [DEF CON 32 - Counter Deception: Defending Yourself in a World Full of Lies - Tom Cross, Greg Conti](https://www.youtube.com/watch?v=gHqDEMrqTjE) YouTube description: *"The Internet was supposed to give us access to the world's information, so that people, everywhere, would be able to know the truth. But that’s not how things worked out. Instead, we have a digital deception engine of global proportions. Nothing that comes through the screen can be trusted, and even the things that are technically true have been selected, massaged, and amplified in support of someone’s messaging strategy. Deception isn’t just about narratives - we see deception at every layer of the network stack, from spoofed electromagnetic signatures, to false flags in malware, to phony personas used to access networks and spread influence. They hide in our blindspots, exploit our biases, and fill our egos while manipulating our perceptions. How do we decide what is real? This talk examines time-tested maxims that teach the craft of effective deception, and then inverts those offensive principles to provide defensive strategies. We’ll explore ways to counter biases, triangulate information sources, detect narratives, and how hackers can build tools that can change the game. At their best, hackers lift their heads up above the masses to see how the world actually works, not how it purports to work, and then take action to make the world a better place. You’ll leave this talk with practical skills to do just that."* Not all concepts are covered on the page.
+
+## Deception Maxim
+
+
 Maxim 1 - Magruder’s Principle
 It is easier to maintain a pre-existing belief in the target than force a change in beliefs
 
@@ -102,10 +109,13 @@ Reality: 1 + 2 + 3 + 4 + 5
 Four Focus Areas.
 
 Counter-Maxims | Projects
+--- | ---
 Model the adversary's capabilities and neutralize them. | DISARM Framework Misinformation Village
 Measure reality from multiple perspectives and resolutions. | Can we build tools for information
 triangulation?
 Apply the same critical analysis to facts that support your assumptions that you apply to facts that contradict them. | How do we know when questions have been raised about what we're reading?
 Develop lots of trustworthy sources of data and analysis. | How can we identify and collect networks of experts?
 
+## References
 
+[DEF CON 32 - Counter Deception: Defending Yourself in a World Full of Lies - Tom Cross, Greg Conti](https://www.youtube.com/watch?v=gHqDEMrqTjE)
