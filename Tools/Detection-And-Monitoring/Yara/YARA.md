@@ -1,14 +1,14 @@
-# Yara
+# YARA
 
-Yet Another Ridiculous Acronym (YARA) is considered *"The pattern matching swiss knife for malware researchers (and everyone else)"*. More precisely Yara can identify information based on both binary and textual patterns, such as hexadecimal and strings contained within a file. [VirusTotal Github Repository](https://github.com/VirusTotal/yara) states: *"YARA is a tool aimed at (but not limited to) helping malware researchers to identify and classify malware samples. With YARA you can create descriptions of malware families (or whatever you want to describe) based on textual or binary patterns. Each description, a.k.a. rule, consists of a set of strings and a boolean expression which determine its logic."*
+Yet Another Ridiculous Acronym (YARA) is considered *"The pattern matching swiss knife for malware researchers (and everyone else)"*. More precisely YARA can identify information based on both binary and textual patterns, such as hexadecimal and strings contained within a file. [VirusTotal Github Repository](https://github.com/VirusTotal/yara) states: *"YARA is a tool aimed at (but not limited to) helping malware researchers to identify and classify malware samples. With YARA you can create descriptions of malware families (or whatever you want to describe) based on textual or binary patterns. Each description, a.k.a. rule, consists of a set of strings and a boolean expression which determine its logic."*
 
-For the [Yara Documentation](https://yara.readthedocs.io/en/stable/)
+For the [YARA Documentation](https://yara.readthedocs.io/en/stable/)
 
-## Yara Rules
+## YARA Rules
 
 Rules are used to label these pattern to later identification.
 
-To use a Yara rule every `yara` command requires two arguments to be valid, these are:  
+To use a YARA rule every `yara` command requires two arguments to be valid, these are:  
 **1)** The rule file we create  
 **2)** Name of file, directory, or process ID to use the rule for.
 
@@ -18,7 +18,7 @@ To use a Yara rule every `yara` command requires two arguments to be valid, thes
 all, and, any, ascii, at, base64, base64wide, condition, contains, endswith, entrypoint, false, filesize, for, fullword, global, import, icontains, iendswith, iequals, in, include, int16, int16be, int32, int32be, int8, int8be, istartswith, matches, meta,nocase, none, not
 of, or, private, rule, startswith, strings, them, true, uint16, uint16be, uint32, uint32be, uint8, uint8be, wide, xor, define
 
-#### Anatomy of a Yara Rule
+#### Anatomy of a YARA Rule
 
 [Securitybreak.io Medium](https://blog.securitybreak.io/security-infographics-9c4d3bd891ef#18dd)
 ![](anatomyofyararules.png)
@@ -37,7 +37,7 @@ import "ModuleNamehere" // Must be place outside of Rule {}
 //global rule GlobalRuleExample // would be globalise
 //private rule PrivateRuleExample // not reported with private
 //localised to this file:
-rule ExampleRule : Tag1 Tag2 // `: Tag Tag ` for later filtering with Yara 
+rule ExampleRule : Tag1 Tag2 // `: Tag Tag ` for later filtering with YARA 
 {
 	meta:
 	//Provide additional data about you r rule here
@@ -86,7 +86,7 @@ nd still be looking for a game o        $a = { E8 00 00 00 00 } // Entrypoint st
 #### Conditions
 ![](yaraconditions.png)
 
-#### Yara Regex
+#### YARA Regex
 
 YARA’s regular expressions recognise the following metacharacters:
 ```json
@@ -132,14 +132,14 @@ YARA’s regular expressions recognise the following metacharacters:
 `\B` Match except at a word boundary
 ```
 
-## Yara Modules
+## YARA Modules
 
 - [Cuckoo Sandbox](https://cuckoosandbox.org/)
 
 - [Python's PE Module](https://pypi.org/project/pefile/) 
 
 
-## Yara Useful Auxiliary Toolset
+## YARA Useful Auxiliary Toolset
 
 [Yara-CI](https://yara-ci.cloud.virustotal.com/): *"YARA-CI helps you to keep your [YARA](https://virustotal.github.io/yara/) rules in good shape. It can be integrated into any GitHub repository containing YARA rules, and it will run automated tests every time you make some change."*
 
@@ -157,11 +157,11 @@ Consult:
 -   [https://www.bsk-consulting.de/2015/10/17/how-to-write-simple-but-sound-yara-rules-part-2/](https://www.bsk-consulting.de/2015/10/17/how-to-write-simple-but-sound-yara-rules-part-2/)
 -   [https://www.bsk-consulting.de/2016/04/15/how-to-write-simple-but-sound-yara-rules-part-3/](https://www.bsk-consulting.de/2016/04/15/how-to-write-simple-but-sound-yara-rules-part-3/)
 
-[Yextend](https://github.com/BayshoreNetworks/yextend): *"Yara integrated software to handle archive file data."*
+[Yextend](https://github.com/BayshoreNetworks/yextend): *"YARA integrated software to handle archive file data."*
 
 [Loki](https://github.com/Neo23x0/Loki)  is a *"Simple IOC and Incident Response Scanner"*. Detection is based on:
 1. File Name IOC - Regex match on full file path/name
-2. Yara Rule Check - Yara signature match on file data and process memory
+2. YARA Rule Check - YARA signature match on file data and process memory
 3. Hash Check - Compares known malicious hashes (MD5, SHA1, SHA256) with scanned files
 4. C2 Back Connect Check - Compares process connection endpoints with C2 IOCs (new since version v.10)
 
@@ -169,7 +169,7 @@ Consult:
 
 [FENRIR](https://github.com/Neo23x0/Fenrir) - Simple Bash IOC Scanner
 
-[YAYA](https://github.com/EFForg/yaya) - Yet Another Yara Automaton - Automatically curate open source yara rules and run scans
+[YAYA](https://github.com/EFForg/yaya) - Yet Another YARA Automaton - Automatically curate open source YARA rules and run scans
 
 [VALHALLA](https://www.nextron-systems.com/valhalla/)  -  boosts your detection capabilities with the power of thousands of hand-crafted high-quality [YARA](https://virustotal.github.io/yara/) and [Sigma](https://github.com/SigmaHQ/sigma) rules.
 

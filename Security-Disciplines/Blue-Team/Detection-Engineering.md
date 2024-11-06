@@ -58,7 +58,7 @@ Workflow of Detection Engineering
 	- Log Collection
 - Rule Writing
 	- [[Snort]]
-	- [[Yara]]
+	- [[YARA]]
 	- [[Sigma]]
 - Deployment, Automation & Tuning
 

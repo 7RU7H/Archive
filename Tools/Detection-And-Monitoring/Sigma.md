@@ -1,16 +1,16 @@
 
 [Sigma](https://github.com/SigmaHQ/sigma) *"Sigma is a generic and open signature format that allows you to describe relevant log events in a straightforward manner. The rule format is very flexible, easy to write and applicable to any type of log file. The main purpose of this project is to provide a structured form in which researchers or analysts can describe their once developed detection methods and make them shareable with others...Sigma is for log files what [Snort](https://www.snort.org/) is for network traffic and [YARA](https://github.com/VirusTotal/yara) is for files."*
 
-Both [[Snort]] and [[Yara]] are also present in the Archive.
+Both [[Snort]] and [[YARA]] are also present in the Archive.
 
-- Create detection methods and signature alongside IoCs and [[Yara]] rules
+- Create detection methods and signature alongside IoCs and [[YARA]] rules
 - Write [[SIEM-Solutions]] search that avoid vendor lock-in
 - Share signatures
 - Write Custom Detection rules
 
 `Sigma Format` for generic signature descriptions -> `Sigma Converter` applies predefined and custom field mapping -> To third parties like [[Splunk]] search, [[ELK-Defined]] search queries and other [[SIEM-Solutions]] queries.
 
-Sigma allows for standardisation format to share analysis, IoCs, [[Yara]] rules, which may not be available from the in-house collected data.
+Sigma allows for standardisation format to share analysis, IoCs, [[YARA]] rules, which may not be available from the in-house collected data.
 
 ## Sigma Rule Syntax
 

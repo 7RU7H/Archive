@@ -14,6 +14,26 @@ This half information gathering process before password spraying, no password Ke
 
 [[Generating-Likely-Passwords]]
 
+
+## Enumerate Service Accounts
+
+[A Comprehensive Guide to Finding Service Accounts in Active Directory](https://thehackernews.com/2024/10/a-comprehensive-guide-to-finding.html):
+1. Review any lists or documentation that might contain information about services accounts properties - names, descriptions, associated applications or scripts
+2. Use AD Tooling
+	1. Active Directory Users and Computers (ADUC) console
+3. Search by Special Account Flags  - with PowerShell, [[LDAP-Recon]]
+	1. `DONT_EXPIRE_PASSWORD` 
+	2. `PASSWORD_NOT_REQUIRED`
+4. Check Group Memberships
+5. Monitor Dependencies - needs a service account to function properly - check!
+6. Audit Logs - Monitor targets logs for indications of service account usage
+	1. logon attempt to DC
+	2. password changes to DC
+
+
+
+
+
 ## NTLM & NetNTLM Authenticated Services
 
 New Technology LAN Manager(NTLM) is a family of authentication protocols used to authenticate identities of users in the context of Active Directory network. Services use Windows' challenge-response protocol  called NetNTLM. Allowing services exposed to the internet authenticating on behalf of a client not client directly authenticating to Domain Controller. 
@@ -190,3 +210,4 @@ Can be used to automated this process with scripts like:
 [Microsoft Deployment Toolkit](https://www.microsoft.com/en-gb/download/details.aspx?id=54259)
 [Medium: Pwning Printers with LDAP Pass-Back Attack](https://medium.com/r3d-buck3t/pwning-printers-with-ldap-pass-back-attack-a0d8fa495210)
 [Powerpxe-github](https://github.com/wavestone-cdt/powerpxe)
+[A Comprehensive Guide to Finding Service Accounts in Active Directory](https://thehackernews.com/2024/10/a-comprehensive-guide-to-finding.html)
