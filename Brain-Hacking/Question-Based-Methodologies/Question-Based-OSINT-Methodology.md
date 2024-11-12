@@ -1,3 +1,4 @@
+
 # Question Based OSINT Methodology
 
 
@@ -22,7 +23,8 @@ Null Space -
 	- Consider how atypical the logic chain of events is a why it may have happened
 	- Always collect clues and not opinions - collecting opinion lead nowhere, but clues a pieces of a puzzle leading somewhere
 
-- Consider how your problem is on OSI layer - Please Do Not Throw Away Sausage Pizza 
+
+Consider how your problem is on OSI layer - Please Do Not Throw Away Sausage Pizza 
 
 
 

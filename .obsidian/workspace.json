@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "b6b00b07e29e0a0c",
+        "id": "b720042c6909cbc3",
         "type": "tabs",
         "children": [
           {
-            "id": "5d880412de43d628",
+            "id": "48804396831d1486",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Security-Disciplines/Environmental-Emergency-Preparation.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Environmental-Emergency-Preparation"
+              "title": "New tab"
             }
           }
         ]
@@ -62,7 +58,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "GitHub",
+                "query": "JQ",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -176,36 +172,37 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "5d880412de43d628",
+  "active": "48804396831d1486",
   "lastOpenFiles": [
+    "Virtualization/Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
+    "Brain-Hacking/Problem-Solving/Tradecraft-To-BrainCraft.md",
+    "Brain-Hacking/Problem-Solving/Reasoning-Typology.md",
+    "Brain-Hacking/Problem-Solving/Rabbitholes.md",
+    "Brain-Hacking/Problem-Solving/Problem-Solving.md",
+    "Brain-Hacking/Problem-Solving/Problem-Microscope.md",
+    "Brain-Hacking/Problem-Solving/Problem-Compass.md",
+    "Brain-Hacking/Problem-Solving/Philosophical-Razors.md",
+    "Brain-Hacking/Problem-Solving/Causality.md",
+    "Brain-Hacking/Problem-Solving/Black-Box-Method.md",
+    "Brain-Hacking/Question-Based-Methodologies/Question-Based-Penetration-Testing-Methodology.md",
+    "Brain-Hacking/Question-Based-Methodologies/Question-Based-OSINT-Methodology.md",
+    "Brain-Hacking/Question-Based-Methodologies/Question-Based-Forensics-Methodology.md",
+    "Brain-Hacking/Question-Based-Methodologies/Question-Based-CTI-Methodology.md",
+    "Brain-Hacking/Question-Based-Methodologies/Question-Based-CISO-Methodology.md",
+    "Security-Disciplines/Cyberwarfare/Theory/Cyberwarfare-Considerations.md",
+    "Security-Disciplines/Cyberwarfare/Theory/The-Grugq-Is-Powerful-Cyberwarfare-Resource.md",
+    "Security-Disciplines/Surveillance/Counter-Surveillance.md",
+    "Security-Disciplines/Attribution.md",
+    "Tools/Data-Processing/JQ.md",
     "Post-Exploitation/Stealth/Living-Off-The-Land/Living-Off-The-Land.md",
     "Security-Disciplines/Environmental-Emergency-Preparation.md",
     "Reconnaissance/Active-Directory/Active-Directory-Footholding.md",
-    "Brain-Hacking/Question-Based-Methodologies/Question-Based-CISO-Methodology.md",
-    "Brain-Hacking/Question-Based-Methodologies/Question-Based-CTI-Methodology.md",
     "Tools/Detection-And-Monitoring/Yara/YARA.md~",
     "Tools/Detection-And-Monitoring/Yara/YARA.md",
-    "Brain-Hacking/Question-Based-Methodologies/Question-Based-Forensics-Methodology.md",
     "Artificial-Intelligence/AI-Exploits.md",
     "Software/Services/Password-Managers/Hacking-KeePass.md",
-    "Software/Services/Password-Managers/KeePass.md",
-    "().md",
     "Software/Services/Password-Managers",
-    "Exploitation/CVEs/PrintNightmare.md",
-    "Software/Services/GitHub/GitHub.md",
-    "Securing-Networks-And-Systems/Hardening/Browser-Hardening.md",
     "Software/Services/GitHub",
-    "Exploitation/Exploitation.md",
-    "Brain-Hacking/Question-Based-Methodologies/Question-Based-Penetration-Testing-Methodology.md",
-    "Brain-Hacking/Question-Based-Methodologies/Question-Based-Web-Application-Hacking-Methodology.md",
-    "Exploitation/Side-Channel-Attacks/Side-Channel-Attacks.md",
-    "Security-Disciplines/Attribution.md",
-    "Exploitation/Side-Channel-Attacks/Acoustic-Attacks.md",
-    "Exploitation/Side-Channel-Attacks/Light-Attacks.md",
-    "Tools/OSINT/web-check.md",
-    "Security-Disciplines/For-Individuals/OPSEC/OPSEC.md",
-    "Tools/Cross-OS/Exiftool.md",
-    "Development/Languages/Bash/Bash.md",
     "Images/azureapplicationgatewayflowdiagram.png_original_exiftool_tmp",
     "Images/chriskubecka-ismemegoddess.png_original_exiftool_tmp",
     "Images/azurecomparisonbetweenmabsandmars.png_original_original_original",
@@ -213,7 +210,6 @@
     "Images/procmonbar.png_original_original_original",
     "Images/procmonbar.png_original_original_exiftool_tmp",
     "Images/deviantollam-ilmi-talk-underdoorattacks.png_original_exiftool_tmp",
-    "Exploitation/Side-Channel-Attacks/Side-Channel-Attacks-Against-Cryptography.md",
     "Images/exploitisweird-cve-2023-23572.png",
     "Images/mozilla-http-auth.png",
     "Images/charstillcrackgraph-securitydotorg.png",

@@ -5,7 +5,7 @@
 
 [YouTube - How to solve any problem - Maths Sorcerer](https://www.youtube.com/watch?v=T9SONj3fHz0):
 1. You have to understand the problem
-2. Find the connection between the data and the unknown. You may be obliged to consider auxiliary problems if an immediate connection cannot be found. You should obtain eventually a plan of the s1olution.
+2. Find the connection between the data and the unknown. You may be obliged to consider auxiliary problems if an immediate connection cannot be found. You should obtain eventually a plan of the solution.
 3. Carry out your plan
 4. Examine the solution obtained
 
@@ -26,7 +26,7 @@ Embrace the hack
 Are you affected by Streetlight Effect?
 Trends are past data, does the past reflect the future at some ratio?
 Do you understand the causality chain?
-Worst scenarios happen, what is the spectrum = do not confuse with likelihood spectrum
+Worst case scenarios happen, what is the spectrum = do not confuse with likelihood spectrum
 Is there a analogy and example for that?
 You Never Run out of Bullets - shit happens, linear thinking does not account for everything?
 Emotions can Kill people and analytical process, are they affecting you?
@@ -35,7 +35,7 @@ Have you applied type theory?
 Thinkers have styles, are you mixing another styles or understanding your styles failings affecting analysis?
 What do you thinking partners thin and are they diverse enough, did you start together (you need to start together)?
 Are you measurements for good analysis (non)functioning or find the nullspace and oddities they should? 
-Are you respecting intuition measurable?  
+Are you respecting intuition measurably?  
 
 CARL - Construct Analytically Revised Landscapes
 
