@@ -11,9 +11,9 @@ Log entries generally required:
 -  Event identification for data handling
 -  Data about the Event 
 
-With logging [[SIEM-Solutions]], SOC Analysts and System Adminstrators can assess:
-- What occured?
-- When it occured? 
-- Where it occured?
+With logging [[SIEM-Solutions]], SOC Analysts and System Administrators can assess:
+- What occurred?
+- When it occurred? 
+- Where it occurred?
 - Who instigated the event and its success?
 - Result of the event
