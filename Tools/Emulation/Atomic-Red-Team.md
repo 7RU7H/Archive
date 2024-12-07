@@ -56,7 +56,7 @@ Where-Object Name -Match "T1566.001|T1203|T1059.003|T1083|T1082|T1016|T1049|T100
 ```
 
 #### Warning - Warning - Warning - Warning
-**You may not be able to clear logs in production environments for a good reason, just don't - they barely store enough to catch people - do not be a accidental insider threat**
+**You may not be able to clear logs in production environments for a good reason, just don't - they barely store enough to catch people - do not be an accidental insider threat**
 
 Customisation of Atomic Red Team
 ```powershell

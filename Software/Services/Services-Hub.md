@@ -41,7 +41,7 @@
 [[Smart-Contract-Hacking]]
 [[Containerisation]]
 [[UniFi]]
-[[ELK-Defined]]
+[[ELK]]
 [[Hacking-ELK]]
 [[Snort]]
 [[Hacking-KeePass]]

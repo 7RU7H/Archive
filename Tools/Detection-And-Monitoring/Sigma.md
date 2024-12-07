@@ -8,7 +8,7 @@ Both [[Snort]] and [[YARA]] are also present in the Archive.
 - Share signatures
 - Write Custom Detection rules
 
-`Sigma Format` for generic signature descriptions -> `Sigma Converter` applies predefined and custom field mapping -> To third parties like [[Splunk]] search, [[ELK-Defined]] search queries and other [[SIEM-Solutions]] queries.
+`Sigma Format` for generic signature descriptions -> `Sigma Converter` applies predefined and custom field mapping -> To third parties like [[Splunk]] search, [[ELK]] search queries and other [[SIEM-Solutions]] queries.
 
 Sigma allows for standardisation format to share analysis, IoCs, [[YARA]] rules, which may not be available from the in-house collected data.
 

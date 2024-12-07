@@ -1,5 +1,5 @@
 
-See [[ELK-Defined]] for legitimate uses of the Elastix Stack
+See [[ELK]] for legitimate uses of the Elastix Stack
 
 Default password
 ```
