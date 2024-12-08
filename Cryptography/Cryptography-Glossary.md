@@ -8,6 +8,8 @@ Attestation: [OWASP Cryptography](https://owasp.org/www-project-developer-guide/
 
 Bit: The smallest unit of binary data. Must be either 0 or 1.
 
+[Blinding](https://en.wikipedia.org/wiki/Blinding_(cryptography)) is a technique to mitigate [[Side-Channel-Attacks]] by obfuscating or encoding input to some other compute that does not strictly know the input.
+
 Block Cipher: An encryption algorithm that operates on a group of bit at once rather than only one bit at a time. Contrast with Stream Cipher.
 
 Blowfish: 64-bit symmetric-key block cipher with variable key size.
