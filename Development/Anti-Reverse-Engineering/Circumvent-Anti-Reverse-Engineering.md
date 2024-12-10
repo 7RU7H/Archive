@@ -16,8 +16,8 @@ Use scripting for configuration:
 ## Packer Identification and Unpacking
 
 Identification in Tools:
-- DetectItEasy (DIE) 
-- PEStudio
+- DetectItEasy ([[DIE]]) 
+- [[PEStudio]]
 
 Manual Unpacking 
 
