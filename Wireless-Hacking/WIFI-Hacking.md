@@ -41,7 +41,26 @@ RADIUS | A server for authenticating clients, not just for wifi.
 	- Remediation:
 		- WPA-Enterprise
 
-## Checks 
+## Networking Pre-Tool 
+
+
+```bash
+iw 
+iw dev $interface
+iw phy $wifiHardwareByName # Or digit for the index $wifiHardwareByIndex
+iw reg $regulatoryAgent
+
+iw dev # List all interfaces similar to `$interface info`
+iw wlan0 info # Displays the following
+# addr is the MAC/BSSID
+# type is client mode: monitor, managed, etc
+iw dev $interface scan # Scans the area for available WIFI network from that interface
+
+ip link set dev $interface down
+iw dev $interface set type monitor
+ip link set dev $interface up
+```
+
 
 First Check adaptor configuration, check for `Mode:Monitor` and then check again after running `airmon-ng`
 ```bash

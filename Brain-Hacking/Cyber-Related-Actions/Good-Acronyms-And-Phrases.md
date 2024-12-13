@@ -6,7 +6,7 @@ This a small collection of good acronyms and phrase for problem solving and life
 
 Screws, Bolts, etc are tightened clockwise - to the right and loosened to the left.
 
-#### Please Do Not Throw Away Sausage Pizza
+#### Please Do Not Throw Sausage Pizza Away!
 
 [[OSI-Model]] - Enjoy
 

@@ -157,7 +157,7 @@ scp /file target@myhost.com:/directory
 sleep		good for linux system on network for the hanging of connection
 ```
 
-# SMB
+## SMB
 See [[SMB-Recon-Cheatsheet]] for more tools and commands
 ```bash
 smb//<ip>/share                 # Access Windows share
@@ -211,7 +211,12 @@ known_hosts
 # 1. Remove the known_hosts file or entry to that server in the file or 2. add the -o stricthostkeychecking=no option to the ssh command. Remember that this file is a security mechanism to prevent an unauthorized host from eavesdropping on network traffic. In real-world practice, this mechanism should not be bypassed.
 ```
 
-## Change MAC Address
+## WIFI Related
+
+[[WIFI-Hacking]]
+
+## Tricks
+#### Change MAC Address
 ```bash
 export MAC=xx:xx:xx:xx:xx:xx
 ifconfig <int> hw ether <MAC>
