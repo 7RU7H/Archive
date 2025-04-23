@@ -213,7 +213,7 @@ known_hosts
 
 ## WIFI Related
 
-[[WIFI-Hacking]]
+[[WiFi-Hacking]]
 
 ## Tricks
 #### Change MAC Address

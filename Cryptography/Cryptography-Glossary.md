@@ -48,6 +48,8 @@ Plain text: Human-legible text. Can be transformed into cipher text via an encry
 
 Salt: A string appended to a password to create a unique digest when run through a hashing algorithm.
 
+Snake oil: cryptographic method considered bogus or fraudulent
+
 Stream Cipher: An encryption algorithm that operates on one bit of plaintext at a time. Contrast with Block Cipher.
 
 Substitution Cipher: An encryption algorithm that operates by replace each character of a plain text set of characters with another, the key would be the rotation or identifier for character sets that replace the plain text.
@@ -61,3 +63,4 @@ Transposition cipher: Rearranges the order of the characters of a plain text by 
 
 [THM Room Introduction to Cryptography](https://tryhackme.com/room/cryptographyintr)
 [OWASP Cryptography](https://owasp.org/www-project-developer-guide/draft/foundations/crypto_principles/)
+[THM Search Skills](https://tryhackme.com/r/room/searchskills)

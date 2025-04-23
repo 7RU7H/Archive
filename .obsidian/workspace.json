@@ -8,6 +8,34 @@
         "type": "tabs",
         "children": [
           {
+            "id": "409c730191ffe47e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Software/Operating-Systems/Linux/Linux-Commands/Core-Linux-Commands.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Core-Linux-Commands"
+            }
+          },
+          {
+            "id": "db6a64a6f2258ff1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Development/Regular-Expressions.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Regular-Expressions"
+            }
+          },
+          {
             "id": "7e2d5cad20847963",
             "type": "leaf",
             "state": {
@@ -27,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Software/Operating-Systems/Linux/Linux-Commands/Linux-Networking-Commands.md",
+                "file": "Networks/Network-Theory/Network-Protocols/Network-Protocols.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Linux-Networking-Commands"
+              "title": "Network-Protocols"
             }
           },
           {
@@ -41,16 +69,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Wireless-Hacking/WIFI-Hacking.md",
+                "file": "Networks/Network-Theory/OSI-Model.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "WIFI-Hacking"
+              "title": "OSI-Model"
+            }
+          },
+          {
+            "id": "4e855d75213ab979",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Wireless-Hacking/WiFi-Hacking.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "WiFi-Hacking"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -69,7 +111,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -91,7 +134,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "OSI ",
+                "query": "find ",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -168,10 +211,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Securing-Networks-And-Systems/Hardening/Browser-Hardening.md"
+                "file": "Development/Regular-Expressions.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Browser-Hardening"
+              "title": "Outline of Regular-Expressions"
             }
           },
           {
@@ -196,44 +242,46 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-excalidraw-plugin:Create new drawing": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
-      "command-palette:Open command palette": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false
+      "command-palette:Open command palette": false
     }
   },
-  "active": "d6884cdd4dfb42ae",
+  "active": "db6a64a6f2258ff1",
   "lastOpenFiles": [
-    "Software/Operating-Systems/Linux/Linux-Commands/Linux-Networking-Commands.md",
-    "Wireless-Hacking/WIFI-Hacking.md",
-    "Brain-Hacking/Cyber-Related-Actions/Good-Acronyms-And-Phrases.md",
-    "Networks/Network-Theory/OSI-Model.md",
+    "Reconnaissance/OSINT/The-New-OSINT-Cheat-Code-LLM-TALK.md",
+    "Artificial-Intelligence/The-New-OSINT-Cheat-Code-LLM-TALK.md",
+    "Alledged-Real-World-Stuff/Surviving-with-Nothing.md",
+    "Alledged-Real-World-Stuff/Starting-A-Fire.md",
+    "Alledged-Real-World-Stuff",
+    "Software/Operating-Systems/Linux/Linux-Commands/Core-Linux-Commands.md",
     "Development/Languages/C/Useful-C.md",
+    "Software/Operating-Systems/Linux/Linux-Commands/Grep-All-The-Things.md",
+    "Cryptography/De-Or-En-Cryption.md",
+    "Hardware/Hardware-Maintenance/USB-Maintenance.md",
+    "Software/Operating-Systems/Windows/Windows-Concepts/Windows-Events/ETW.md",
+    "Securing-Networks-And-Systems/EDR/Aurora-EDR.md",
+    "Software/Operating-Systems/Linux/Linux-Commands/Linux-CLIMagic.md",
+    "Software/Operating-Systems/Linux/Linux-Commands/sedaQ0JGi",
+    "Reconnaissance/Passive-Information-Gathering/Shodan/Shodan.md",
+    "Software/Operating-Systems/Linux/Linux-Concepts/Linux-Cronjobs.md",
+    "Reconnaissance/Passive-Information-Gathering/Search-Engine-Dorking.md",
+    "Cryptography/Cryptography-Glossary.md",
+    "Software/Operating-Systems/Linux/Linux-Commands/Linux-Networking-Commands.md",
+    "Wireless-Hacking/WiFi-Hacking.md",
+    "Wireless-Hacking/WPS.md",
+    "Networks/Network-Theory/OSI-Model.md",
+    "Networks/Network-Theory/Network-Protocols/ARP-Protocol.md",
+    "Cryptography/PCI.md",
+    "Brain-Hacking/Cyber-Related-Actions/Good-Acronyms-And-Phrases.md",
     "Software/Operating-Systems/Windows/FlareVM/FlareVM.md",
     "Development/Anti-Reverse-Engineering/Circumvent-Anti-Reverse-Engineering.md",
     "README.md",
     "Software/Operating-Systems/Windows/FlareVM",
-    "Development/Regular-Expressions.md",
-    "Exploitation/Side-Channel-Attacks/Side-Channel-Attacks.md",
-    "Cryptography/Cryptography-Glossary.md",
-    "Web-Application-Hacking/Web-Exploits/XXE/XXE-Injection.md",
-    "Development/Languages/Python/Useful-Python.md",
-    "Security-Disciplines/CTI/Intelligence-Analysis.md",
-    "Tools/Emulation/Atomic-Red-Team.md",
-    "Exploitation/Binary-Exploitation/Binary-Exploitation-Enumeration.md",
-    "Reverse-Engineering/Reverse-Engineering.md",
-    "Software/Services/ELK/ELK.md",
-    "Software/Operating-Systems/Windows/Windows-Concepts/Windows-Events/Windows-Events-To-Monitor.md",
-    "Security-Disciplines/Digital-Forensics/Windows-Forensics/Windows-User-Account-Forensics.md",
-    "Development/Languages/PowerShell/PowerShell-Event-Logging.md.md",
-    "Software/File-Typology/Logs/Logs.md",
-    "Security-Disciplines/Digital-Forensics/Log-Analysis.md",
-    "Social-Engineering/Social-Engineering.md",
-    "Social-Engineering/Social-Power.md",
-    "Virtualization/Cloud/Azure/Azure-Administration/Azure-Administration-Cheatsheet.md",
     "Tools/Detection-And-Monitoring/Yara/YARA.md~",
     "Software/Services/Password-Managers",
     "Software/Services/GitHub",
@@ -241,8 +289,6 @@
     "Images/chriskubecka-ismemegoddess.png_original_exiftool_tmp",
     "Images/azurecomparisonbetweenmabsandmars.png_original_original_original",
     "Images/azurecomparisonbetweenmabsandmars.png_original_original_exiftool_tmp",
-    "Images/procmonbar.png_original_original_original",
-    "Images/procmonbar.png_original_original_exiftool_tmp",
     "Images/exploitisweird-cve-2023-23572.png",
     "Images/mozilla-http-auth.png",
     "Images/charstillcrackgraph-securitydotorg.png",
