@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Development/Regular-Expressions.md",
+                "file": "Security-Disciplines/CTI/Microsofts-APT-As-Weather-Taxonomy.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Regular-Expressions"
+              "title": "Microsofts-APT-As-Weather-Taxonomy"
             }
           },
           {
@@ -134,7 +134,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "find ",
+                "query": "electronic",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -253,6 +253,11 @@
   },
   "active": "db6a64a6f2258ff1",
   "lastOpenFiles": [
+    "Hardware/Electronics/Electronics.md",
+    "Security-Disciplines/CTI/Microsofts-APT-As-Weather-Taxonomy.md",
+    "Hardware/Electronics/Electronics-Repair.md",
+    "Hardware/Electronics/Electronics-Components.md",
+    "Development/Regular-Expressions.md",
     "Reconnaissance/OSINT/The-New-OSINT-Cheat-Code-LLM-TALK.md",
     "Artificial-Intelligence/The-New-OSINT-Cheat-Code-LLM-TALK.md",
     "Alledged-Real-World-Stuff/Surviving-with-Nothing.md",
@@ -276,11 +281,6 @@
     "Wireless-Hacking/WPS.md",
     "Networks/Network-Theory/OSI-Model.md",
     "Networks/Network-Theory/Network-Protocols/ARP-Protocol.md",
-    "Cryptography/PCI.md",
-    "Brain-Hacking/Cyber-Related-Actions/Good-Acronyms-And-Phrases.md",
-    "Software/Operating-Systems/Windows/FlareVM/FlareVM.md",
-    "Development/Anti-Reverse-Engineering/Circumvent-Anti-Reverse-Engineering.md",
-    "README.md",
     "Software/Operating-Systems/Windows/FlareVM",
     "Tools/Detection-And-Monitoring/Yara/YARA.md~",
     "Software/Services/Password-Managers",
