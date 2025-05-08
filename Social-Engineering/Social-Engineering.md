@@ -1,5 +1,6 @@
 # Social Engineering
 
+#### Robin Dreeke Manta
 
 [Robin Dreeke's Mantra](https://www.youtube.com/watch?v=H3XR4QrJyxA) to gain another's trust:
 - seek their thoughts and opinions
@@ -15,12 +16,71 @@ Why are they trying to...
 
 Context is almost everything and paranoia is much worse than diligence.
 
-#### Work in progress
+#### 4 Laws behaviour childhood
 
+1. Everyone is suffering and insecure
+2. .
+3. .
+4. Everyone = Childhood Suffering \* Childhood Reward
+	- How does someone make and maintain friendships?
+#### Facial expression reading is essential = just read the lines on their face (and let the back part of your brain handle the recognition)
+
+#### What does the participant want me to feel about them and what do they want me to notice? Everyone is wearing a mask how thick or thin is it?
+#### Use their words
+
+#### Everyone is screwed up = understand a person deals with judgement and shame; how do they hide it?
+
+#### The Limbic system is responsible for gut feelings
+
+#### Blink Rate as measurement of stress
+
+#### Bait Question or Elicitation 
+
+Bait Question:
+- Is there any reason their was `x <witness testimony, artifact (does not have to be true..)> 
+
+Elicitation - statements bypass frontal cortex protection mechanisms
+- `<Greeting>`... `lead in like:` I hear that you employee pays you X amount -
+#### Missing words, like pronouns = signal distancing 
+
+#### Find the culprit = *"What do you think the punishment should be?* 
+
+#### Fear speeds up the body; are you fastest enough?
+#### Is that true?
+
+#### Sociopaths and Psychopaths vs total calm and have neutral facial expressions = that is what they need
+
+#### Eye Closing
+
+Either:
+- Emotional blocking
+- False humility 
+	- Is there a postural readjustment and facial difference? 
+
+#### Walk them thorough the five stages of grief 
+
+- Grief
+- Anger
+- Bargaining
+- Depression
+- Acceptance
+
+#### Manipulators
+
+Tactics
+- **F**ear
+- **O**bligation
+- **G**uilt
+
+Seeking:
+- **C**ontrol
+- **A**pproval
+- **V**alidation
+- **A**ttention
 
 #### Columbo
 
-1. Behave faux confused and act stupid, but invited other to help you understand something as method of questioning 
+1. Behave faux confused and act stupid, but invite others to help you understand something as method of questioning 
 	- compare information to evidence and pervasive facts about the world and systems in it, etc...
 	- The other participants will provide you with *their* information that *they* want to provide
 
@@ -141,3 +201,5 @@ Familiarity and Trust
 [Hacking Humans : Social Engineering Techniques and How to Protect Against Them - Stephen Haunts](https://www.youtube.com/watch?v=YVqurfWzB-Q)
 [https://www.sans.org/security-resources/policies](https://www.sans.org/security-resources/policies)
 [Lazy Eye](https://www.youtube.com/watch?v=uWCH9unC0Wc)
+[Numerous YouTube @chasehughesofficial videos and shorts](https://www.youtube.com/@chasehughesofficial)
+[Numerous YouTube @Andrew-Bustamante videos and shorts](https://www.youtube.com/@Andrew-Bustamante)

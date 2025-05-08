@@ -12,19 +12,19 @@ You can do alot with just `Burp`, `[insert browser of choice] Dev tools`, `Nikto
 [[Nmap-Cheatsheet]]
 
 
-## Web Application Assessment vs Peneteration test
-Web App assessments have borad objective on a small selection of applcations or hosts. Whereas Penetration tests are very specific goal over  a larger than the web application potential scoping. [See Penetration Testing Execution Standard (PTES)](http://www.pentest-standard.org/index.php/Main_Page) and [OWASP's Web Application Security Testing](https://owasp.org/www-project-web-security-testing-guide/) for some ideas around the various stardards applied to assesement structuring.
+## Web Application Assessment vs Penetration test
+Web App assessments have borad objective on a small selection of applications or hosts. Whereas Penetration tests are very specific goal over  a larger than the web application potential scoping. [See Penetration Testing Execution Standard (PTES)](http://www.pentest-standard.org/index.php/Main_Page) and [OWASP's Web Application Security Testing](https://owasp.org/www-project-web-security-testing-guide/) for some ideas around the various standards applied to assessment structuring.
 
 ## Web Application Assessment
 Information gathering 
-Component identification is vital to time effiency when enumerating as the underlying technology must be targeted.
+Component identification is vital to time efficiency when enumerating as the underlying technology must be targeted.
  - Programming Language and Frameworks
  - Web Server Software
  - Database Software
- - SErver Operating system
+ - Server Operating system
 
 ## Attack Surface
-Detirmination of attack surface is outlined in [[Application-Analysis]].
+Determination of attack surface is outlined in [[Application-Analysis]].
 0. Stack Enumeration
 1. URLs
 	1. File extension are less common given [[HTTP-Routing]]
@@ -60,15 +60,17 @@ To find:
 1. Spider/bust a site for libraries, API, .extensions
 *Disclaimer: Applications leveraging routes use logic to determine what content is returned to the user and make URI extensions largely irrelevant*
 2. `Server:` header
-3. Injection attacks that target the Templates of Frameworke
+3. Injection attacks that target the Templates of Framework
 4. Injection attacks that target the Database
 5. Parameters?
 
 #### Page Content Inspection 
-Firefire DevTools `Debugger` may display JavaScript frameworks, hidden input fields, comments, client-side controls within HTML, JavaScript, and more. With `Debugger -> { }` we can prettify [minified code](https://en.wikipedia.org/wiki/Minification_(programming). `Right-click -> Inspect Element`
+
+Firefox DevTools `Debugger` may display JavaScript frameworks, hidden input fields, comments, client-side controls within HTML, JavaScript, and more. With `Debugger -> { }` we can prettify [minified code](https://en.wikipedia.org/wiki/Minification_(programming). `Right-click -> Inspect Element`
 
 #### Response Headers
-Firefire DevTools `Network` tool or for more manual customisation `curl`check out[[Curl-Cheatsheet]] or `Burpsuite` check out [[BurpSuite]].
+
+Firefox DevTools `Network` tool or for more manual customisation `curl`check out [[Curl-Cheatsheet]] or `Burpsuite` check out [[BurpSuite]].
 
 #### Sitemaps
 These pages contain `Allow` and `Disallow` are directives for search engine bots and web crawlers to not to crawl.
