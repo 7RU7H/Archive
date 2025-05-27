@@ -4,7 +4,7 @@
 #### Focus 
 
 - Pomdoro Method does not work in a world were every person, group, corporation, government, etc wants you attention and most profit from taking it.
-- Expand your attention, by rewarding incremental prolonging focus and retention of time focusing; **Authors stipulations: TLDR I have yet to figure out a best amount**: i.e sometimes its more about knowing when to walk away from a problem and wait - sometimes its better to continue on (it is really difficult to tell its like the Turing Complete problem for Learning, but every variable which are using to monitor changes...). 
+- Expand your attention, by rewarding incrementally, prolonging that reward to master focus. Mastering focus and its retention is excise that requires time focusing; **Authors stipulations: TLDR I have yet to figure out a best amount**: i.e sometimes its more about knowing when to walk away from a problem and wait - sometimes its better to continue on (it is really difficult to tell its like the Turing Complete problem for Learning, but every variable which are using to monitor changes...). 
 
 #### Building Muscle and Power
 

@@ -9,7 +9,7 @@ Correlation != Causation
 // Trap 2 - Simpson's Paradox - J. Pearl summarised: Treatment is good for men and women, but bad for a person.
 Conditions on Covariate // Apply types
 
-// Trap 3 - Symetry 
+// Trap 3 - Symmetry 
 Causality in Detirministic Universe is always asymetrical
 - Algebra is bad -> use: 
 
@@ -17,9 +17,6 @@ Structural Causal Model: Directed Acyclic Graph
 
 Structural Equation Models: X := fi(x) 
 ```
-
-
-
 
 ## References
 

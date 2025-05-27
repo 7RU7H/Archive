@@ -8,13 +8,13 @@ Collapsing recursion with the Cardinality of Problems Compass
 	- Theorising, worrying too far `ahead`s
 	- Not understanding that the non-flat earth, means that problem over the horizon get undefinable like curvature  
 - `below`, the pit below
-	- Nested conditional hell hole of (crypto-/pseudo/feels-like)exponential  `below`
+	- Nested conditional hell hole of (crypto-/pseudo/feels-like) exponential  `below`
 	- The worrying pit of ifs, buts, possibilities 
 - Nostalgia-ing to the `behind`
 	- Memories can be seductive, generally the traumatic is not remembered 
 	- PTSD is a real problem
 - `here` 
-	- Procastinating or nullworking on the spot `here`
+	- Procastinating or null working on the spot `here`
 		- Stop and what is on the to do list, not the recommended by third party list
 - Weight of the sky filled with problems `above`
 	- Crushing abstraction that is weightless and navigable as provable by suicide being a choice taken when it is perceived to the best choice for the individual  

@@ -1,4 +1,4 @@
-
+# Concurrent-C
 ## By Library 
 
 
@@ -11,6 +11,11 @@ compiled with `gcc -lpthread main.c`; with semaphors `-lpthread -lrt`
 #include <pthread.h>
 #include <unistd.h>
 #include <semaphore.h>
+
+// https://www.geeksforgeeks.org/use-posix-semaphores-c/
+// https://dev.to/quantumsheep/basics-of-multithreading-in-c-4pam
+// pthread.h - POSIX
+// compiled with `gcc -lpthread main.c`; with semaphors `-lpthread -lrt`
 
 // Mutexs are used to avoid race conditions
 // Lock a single target from multiple operation 
