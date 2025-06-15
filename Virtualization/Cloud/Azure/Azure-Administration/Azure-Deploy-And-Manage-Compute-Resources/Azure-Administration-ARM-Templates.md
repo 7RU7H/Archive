@@ -260,6 +260,7 @@ You can use Azure API via CLI,  PowerShell or SDK to fetch outputs.
 
 ## Storage Account Template
 
+[[JSON]]
 ```JSON
 {
   "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",

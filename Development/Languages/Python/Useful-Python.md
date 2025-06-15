@@ -164,6 +164,7 @@ curl http://allthejson | python3 -m json.tool
 ```
 
 #### Enumerate
+
 Enumerate is commonly consider better in many case for solving problems with iterables, they return index and element:
 ```python
 for i,word in enumerate('iteratables are tuples, lists, sets, dict, strings'):
@@ -259,7 +260,7 @@ r.headers
 r.encoding
 r.json
 ```
-### socket
+### s `6t
 ```python
 import socket
 
@@ -338,7 +339,7 @@ def test_bad_type(self):
 [Reference](https://www.digitalocean.com/community/tutorials/how-to-use-subprocess-to-run-external-programs-in-python-3)
 
 ```python
-def examples_subproccess(): 
+def examples_subprocess(): 
     #stdout as result
     result = subprocess.run(["cat", "sample.txt"], stderr=subprocess.PIPE, text=True)
     print(result.stderr)
@@ -553,7 +554,7 @@ if __name__ == "__main__":
     with open('badpickle.pkl', 'wb') as f:
         pickle.dump(RCE(),f)
     # Test with:
-    #with open('badpickle.pkl', 'rb') as f:
+    # with open('badpickle.pkl', 'rb') as f:
     #    data = pickle.load(f)
 ```
 

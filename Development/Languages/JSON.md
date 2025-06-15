@@ -1,5 +1,6 @@
 # JSON
 
+Reading JSON on the command in a smart way requires [[JQ]]
 
 Extract field with `jq` - [Ipsec.rocks](https://ippsec.rocks)
 ```bash
