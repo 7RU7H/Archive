@@ -262,6 +262,14 @@ pwd		# print working directory
 
 reset		# reset shell
 ```
+
+#### `mkdir`
+
+```bash
+--mode=r    # chmod all r 
+-v    # verbose
+-Z    # SElinux secuirty conext of each nested directory is set to default
+```
 ## `rm`
 ```bash
 rm 		# remove file or folder, directories require -R switch: "rm -R dir"
