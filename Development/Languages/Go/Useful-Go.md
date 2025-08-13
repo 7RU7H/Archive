@@ -6,6 +6,7 @@ go routines
 chans
 interfaces
 errors
+continue
 ```
 
 Chris Pritchard's [GO-SCRIPTING.md](https://github.com/ChrisPritchard/ctf-writeups/blob/master/GO-SCRIPTING.md)

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Brain-Hacking/Strategy/36-Stratagems.md",
+                "file": "Brain-Hacking/Learning/Stupidity.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "36-Stratagems"
+              "title": "Stupidity"
             }
           }
         ]
@@ -182,10 +182,23 @@
   },
   "active": "9634f876fa9adcb0",
   "lastOpenFiles": [
+    "Brain-Hacking/Philosophy/Hacking-Meta-Hacking-Problems.md",
+    "Brain-Hacking/Philosophy/Meta-Methodology.md",
+    "Brain-Hacking/Philosophy/Hacking-The-Thing.md",
+    "Brain-Hacking/Actions/Personality.md",
+    "Hardware/Electronics/Electronics.md",
+    "Hardware/Electronics/Electronics-Components.md",
+    "Hardware/Electronics/Electronics-Repair.md",
+    "Computer-Science/Quantum-Computing/Quantum-Computing.md",
+    "Alledged-Real-World-Stuff/No-Simulation-Proof.md",
+    "Development/Languages/C/Useful-C.md",
+    "Development/Languages/Go/Useful-Go.md",
+    "Development/Languages/Go/Golang.md",
+    "Brain-Hacking/Question-Based-Methodologies/Question-Based-Web-Application-Hacking-Methodology.md",
+    "Brain-Hacking/Question-Based-Methodologies/Question-Based-Penetration-Testing-Methodology.md",
+    "Brain-Hacking/Strategy/36-Stratagems.md",
     "Brain-Hacking/Strategy/36-Hackogems-of-Rooting.md",
     "Brain-Hacking/Strategy/36-Stratagems-For-21st-Century.md",
-    "Brain-Hacking/Strategy/36-Stratagems.md",
-    "Brain-Hacking/Question-Based-Methodologies/Question-Based-Penetration-Testing-Methodology.md",
     "Brain-Hacking/Strategy/Hacking-Strategy.md",
     "Exploitation/Linux-Race-Conditions.md",
     "Software/Operating-Systems/Linux/Linux-Commands/Linux-Compression-Commands.md",
@@ -195,19 +208,6 @@
     "Post-Exploitation/Privilege-Escalation/Linux/Privilege-Escalation-Important-Linux-Locations.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
     "Software/Operating-Systems/Linux/Linux-Commands/Linux-CLIMagic.md",
-    "Software/Operating-Systems/Linux/Linux-Commands/Core-Linux-Commands.md",
-    "Reconnaissance/Active-Information-Gathering/HTTP(S)/Website-Content-Active-Recon.md",
-    "README.md",
-    "Development/Languages/Bash/Bash.md",
-    "Brain-Hacking/Learning/Stupidity.md",
-    "Social-Engineering/Psychological-Patterns-Of-Strange-Personalities.md",
-    "Brain-Hacking/Strategy/Strategy.md",
-    "Brain-Hacking/Learning/Learn-to/Learn-To-Hack.md",
-    "Brain-Hacking/Talk-Notes/TALK-Survival-Heuristics.md",
-    "Brain-Hacking/Talk-Notes/TALK-Reframing-Hard-Cybersecurity-Problems-For-Fun-And-Profit.md",
-    "Brain-Hacking/Question-Based-Methodologies/Question-Based-Web-Application-Hacking-Methodology.md",
-    "Brain-Hacking/Question-Based-Methodologies/Question-Based-Reversing-Methodology.md",
-    "Brain-Hacking/Question-Based-Methodologies/Question-Based-Pwning-Methodology.md",
     "Brain-Hacking/Strategy",
     "Brain-Hacking/Learning/Learn-to",
     "Brain-Hacking/Talk-Notes",

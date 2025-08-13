@@ -13,3 +13,5 @@ Often it is ourselves that our own problems
 6. Watch  [[OPSEC]] by the Grugq and understand the game theory is everywhere and most people are out for themselves
 7. Every institution will seek to protect itself - 7ru7h's Dad favourite phrase
 8. A conspiracy is two federal agents and one fool in a room 
+
+

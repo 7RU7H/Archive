@@ -418,14 +418,14 @@ Condense:
 - What accounts are later objectives based on Company Role?
 
 
-- Localhost enumeration and assess the need to Privilege Escalate:
+- Localhost enumeration and assessing the need to Privilege Escalate:
 	- As operator are you?
 		- Stopping, considering security mechanisms that maybe in place to alert SOC, IR, etc?
 		- Are you meeting objective on a granular level with any action?
 		- Gaining situational awareness?
 		- Noting effectively?
-			- Pathing effectively to your objective, accessing relevance? 
-			- Reducing information overload, by accessing relevance?
+			- Pathing effectively to your objective, assessing relevance? 
+			- Reducing information overload, by assessing relevance?
 		- Meeting requirements of stealth or (non)-harmful activities?
 		- Assess the value of time in Privilege Escalating locally - should you laterally move instead?
 	- Are we in the Cloud or On-premises?
@@ -454,15 +454,15 @@ Condense:
 			- Custom additions are potentially normal, what is normal usage look like to security? 
 		- GTFOBins
 		- [[Windows-Living-Off-The-Land]]
-	- Kernel Version?  - and wait unless it is Pwnkit or temporal equivalent that is reliable instant root/nt system and time saving situation?
+	- Kernel Version?  - and wait unless it is [[Pwnkit]] or temporal equivalent that is reliable instant `root`/`nt system` and time saving situation?
 	- What services and applications are installed?
 		- What services are running?
 			- Why are they running - purpose of the machine?
 			- What is running at high privileges?
 				- Should system or root be running that service?
 				- What is the file system tree surrounding the execution path and is it controllable?
-				- What DLLs or SO libraries are being used?
-					- What is the file system tree surrounding a targetable DLL
+				- What DLLs ([[Dynamic-Link-Libraries]]) or SO ([[Shared-Object-Libraries]]) libraries are being used?
+					- What is the file system tree surrounding a target-able DLLs ([[Dynamic-Link-Libraries]]) or SO ([[Shared-Object-Libraries]]) libraries
 		- Installed Packages and Versions
 			- Third Applications? 
 				1. Does third-party application have installation management rights that affect the file system structure to cause misconfiguration?
@@ -479,16 +479,17 @@ Condense:
 		- Group Hierarchy
 			- Nesting?
 				- Misconfiguration in the chain? 
-		- UAC and sudo-like privileges
+		- UAC ([[Windows-User-Account-Control]]) and [[Sudo]]-like privileges
 			- User-by-user basis  
 		- What password policies, if any, are enforced on the host? 
 	- File System Permissions
 		- What is readable?
 		- What is writable?
 		- What is executable?
+		- How does symlinking affect permissions
 		- How, where and what is current user allowed to do with the above can this be used to achieve objectives? 
 			- By default
-			- UAC, sePrivilegeTokens, SETUID and SETGID Permissions
+			- UAC ([[Windows-User-Account-Control]]), sePrivilegeTokens [[SePrivilege-Token-Table]], SETUID and SETGID Permissions
 		- Is the executable PATH variable controllable?
 			- Modifiable
 			- Pathing insecure/misconfiguration/fault 
@@ -505,7 +506,7 @@ Condense:
 			- Configuration files
 				- Can contain credentials
 			- Credential files
-				- Shadow, SAM, SYSTEM hives
+				- Shadow, SAM, SYSTEM hives [[AD-Credential-Harvesting]], [[Shadow-Credentials]], [[Windows-Cached-Credentials]]
 				- Hashes in files non secure locations 
 					- `/etc/passwd` - embedded devices
 					- User files
@@ -514,24 +515,24 @@ Condense:
 				- [[Windows-Registry]] control
 				- `/etc/`, `/usr`, `/var`
 		- What processes are running?
-			- Is anything running as `root` or `system` account
+			- Is anything running as `root` or `nt system` or target-relevant account
 		- User Files
 			- Home directories 
 			- External to home directory owned files
 		- Environment Variables
-			- PATH variable misconfigurations and traversal algorithm issues 
+			- `PATH=` variable misconfigurations and traversal algorithm issues 
 			- Container credentials 
 			- Container Network information 
 		- Scheduled tasks?
 			- What does the task do and interact with **directing**, **subsequently** and as a **by-product-of-either**?
-			- Are  able to hijack anything on the *entire chain*?
+			- Are able to hijack anything on the *entire chain*?
 		- Networking?
 			- What does the segmentation entail for access?
 			- Current IP addressing information    
 			- What sockets are in use?
 			- What sockets are we able to control if any?
 			- Anything interesting in the `/etc/hosts` file?
-		       - Is the host joined to an Active Directory domain?
+			    - Is the host joined to an Active Directory domain?
 			- Are there any interesting network connections to other systems in the internal network or even outside the network?
 			- What does access is potential gained from using [[Port-Redirection-And-Tunnelling]] 
 			- If we domain or network joined what ports are exposed to localhost, but not remote host?
@@ -551,7 +552,7 @@ Condense:
 Persistence 
 - Scope?
 Reasons for wanting persistence on a machine or network:
-1. Backdooring and post-detection re-entrance.
+1. Backdoor-ing and post-detection re-entrance.
 2. Stability and a operational section of the network to work from.
 3. Gaining foothold a hard to reproduce, especially if is phished for.
 4. Re-exploitation is not always possible post compromised or is also not fittingly stealthy.

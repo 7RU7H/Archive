@@ -1,7 +1,7 @@
 # Quantum Computing
 
 
-[Wikipedia Quantum Computing](https://en.wikipedia.org/wiki/Quantum_computing) simply states *"A **quantum computer** is a [computer](https://en.wikipedia.org/wiki/Computer "Computer") that exploits [quantum mechanical](https://en.wikipedia.org/wiki/Quantum_mechanical "Quantum mechanical") phenomena."* The hardware, to overstate is physical matter, which exhibits properties of both waves and particles. The properties exact state is also reverse recursively affect by the same higher order laws of Quantum mechanics.
+[Wikipedia Quantum Computing](https://en.wikipedia.org/wiki/Quantum_computing) simply states *"A **quantum computer** is a [computer](https://en.wikipedia.org/wiki/Computer "Computer") that exploits [quantum mechanical](https://en.wikipedia.org/wiki/Quantum_mechanical "Quantum mechanical") phenomena."* The hardware, to overstate is physical matter, which exhibits properties of both waves and particles. The properties exact state is also reverse recursively affected by the same higher order laws of Quantum mechanics.
 
 1. True Positive
 2. False Positive
@@ -9,7 +9,7 @@
 4. True Negative
 Complex null states and external states that do not directly or indirectly interfere and the inverse.  
 
-Classical computing is a exploitation of simplification of Electro-magnetism binary systems like true or false, on or off, peaks  of a sine wave oscillation, etc.  Qubits, is a contraction of Quantum bits and singularly a Qubit.
+Classical computing is a exploitation of simplification of Electro-magnetism binary systems like true or false, on or off, peaks  of a sine wave oscillation, etc. Qubits, is a contraction of Quantum bits and singularly a Qubit.
 ```c
 // Classical Computing
 0 | 1
