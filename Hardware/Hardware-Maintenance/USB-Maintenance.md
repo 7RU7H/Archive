@@ -2,6 +2,12 @@
 
 [YouTube - Funny and only slightly relevant](https://www.youtube.com/watch?v=ZY2XoQCxGxg); USB maintenance is important.
 
+
+Mount to different volume types
+```bash
+mount -t exfat /dev/sdXN /mnt/usb
+```
+
 Backup and compress data
 ```bash
 ls /dev/disk/by-id # Check the disk name
