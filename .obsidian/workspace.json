@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "2392a26847c90578",
+            "id": "b675279a6ad21fba",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -63,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "/sda",
+                "query": "Amp",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,7 +74,8 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -180,11 +181,24 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2392a26847c90578",
+  "active": "904463d60d8efa8d",
   "lastOpenFiles": [
+    "Alledged-Real-World-Stuff/Physics-Glossary/firefox",
+    "Alledged-Real-World-Stuff/Physics-Glossary/Waves-Glossary.md",
+    "Alledged-Real-World-Stuff/Physics-Glossary/Thermodynamics.md",
+    "Alledged-Real-World-Stuff/Physics-Glossary/Optics-Glossary.md",
+    "Alledged-Real-World-Stuff/Physics-Glossary/Modern-Physics.md",
+    "Alledged-Real-World-Stuff/Physics-Glossary/Mechanics-Glossary.md",
+    "Alledged-Real-World-Stuff/Physics-Glossary/Fluids-Glossary.md",
+    "Alledged-Real-World-Stuff/Physics-Glossary/Electromagnetism-Glossary.md",
+    "Alledged-Real-World-Stuff/Physics-Glossary",
+    "Software/Services/GitHub/Git-Repository-Hacking.md",
+    "Hardware/Hardware-Maintenance/USB-Maintenance.md",
+    "Hardware/Hardware-Maintenance/Hardware-Maintenance.md",
+    "Development/Languages/Bash/Bash.md",
+    "Software/Services/GitHub/GitHub.md",
     "Exploitation/CVEs/Shellshock.md",
     "Exploitation/CVEs/Dirty-Pipe.md",
-    "Hardware/Hardware-Maintenance/USB-Maintenance.md",
     "Development/Languages/C/Useful-C.md",
     "Computer-Science/Programming.md",
     "Brain-Hacking/Learning/Stupidity.md",
@@ -196,18 +210,6 @@
     "Hardware/Electronics/Electronics-Components.md",
     "Hardware/Electronics/Electronics-Repair.md",
     "Computer-Science/Quantum-Computing/Quantum-Computing.md",
-    "Alledged-Real-World-Stuff/No-Simulation-Proof.md",
-    "Development/Languages/Go/Useful-Go.md",
-    "Development/Languages/Go/Golang.md",
-    "Brain-Hacking/Question-Based-Methodologies/Question-Based-Web-Application-Hacking-Methodology.md",
-    "Brain-Hacking/Question-Based-Methodologies/Question-Based-Penetration-Testing-Methodology.md",
-    "Brain-Hacking/Strategy/36-Stratagems.md",
-    "Brain-Hacking/Strategy/36-Hackogems-of-Rooting.md",
-    "Brain-Hacking/Strategy/36-Stratagems-For-21st-Century.md",
-    "Brain-Hacking/Strategy/Hacking-Strategy.md",
-    "Exploitation/Linux-Race-Conditions.md",
-    "Software/Operating-Systems/Linux/Linux-Commands/Linux-Compression-Commands.md",
-    "Software/Operating-Systems/Linux-And-Windows-Same-Commands.md",
     "Brain-Hacking/Strategy",
     "Brain-Hacking/Learning/Learn-to",
     "Brain-Hacking/Talk-Notes",
@@ -217,7 +219,6 @@
     "Brain-Hacking/Learning",
     "Brain-Hacking/Cyber-Related-Actions",
     "Brain-Hacking/Actions",
-    "Brain-Hacking",
     "Images/exploitisweird-cve-2023-23572.png",
     "Images/mozilla-http-auth.png",
     "Images/charstillcrackgraph-securitydotorg.png",

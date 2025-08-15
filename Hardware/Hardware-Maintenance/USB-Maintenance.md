@@ -2,7 +2,7 @@
 
 [YouTube - Funny and only slightly relevant](https://www.youtube.com/watch?v=ZY2XoQCxGxg); USB maintenance is important.
 
-
+[[GitHub]]
 Mount to different volume types
 ```bash
 mount -t exfat /dev/sdXN /mnt/usb
