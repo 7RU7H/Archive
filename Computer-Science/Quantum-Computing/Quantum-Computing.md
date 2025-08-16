@@ -1,7 +1,7 @@
 # Quantum Computing
 
 
-[Wikipedia Quantum Computing](https://en.wikipedia.org/wiki/Quantum_computing) simply states *"A **quantum computer** is a [computer](https://en.wikipedia.org/wiki/Computer "Computer") that exploits [quantum mechanical](https://en.wikipedia.org/wiki/Quantum_mechanical "Quantum mechanical") phenomena."* The hardware, to overstate is physical matter, which exhibits properties of both waves and particles. The properties exact state is also reverse recursively affected by the same higher order laws of Quantum mechanics.
+[Wikipedia Quantum Computing](https://en.wikipedia.org/wiki/Quantum_computing) simply states *"A **quantum computer** is a [computer](https://en.wikipedia.org/wiki/Computer "Computer") that exploits [quantum mechanical](https://en.wikipedia.org/wiki/Quantum_mechanical "Quantum mechanical") phenomena."* The hardware, to overstate is physical matter, which exhibits properties of both waves and particles. The properties exact state is also reverse recursively affected by the same higher order laws of Quantum mechanics. For hacking Quantum Computer visit [[Quantum-Hacking]]
 
 1. True Positive
 2. False Positive
@@ -38,6 +38,12 @@ Correlation due to determinism?
 - Interference is the phenomenon in which entangled quantum states can interact and produce states at different points in time, becoming more entangled or affected by decoherence 
 
 Quantum Computing is a kind of instantaneous and ongoing mortgaging of a computation simultaneously as providing the solution at the beginning of its runtime, if a solution is deterministically available within the time-span of computers capabilities. 
+
+#### Emulation
+
+
+
+
 ## References
 
 [YouTube: The Race to Harness Quantum Computing's Mind-Bending Power: The Future With Hannah Fry](https://www.youtube.com/watch?v=1_gJp2uAjO0)
