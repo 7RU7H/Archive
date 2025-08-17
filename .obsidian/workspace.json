@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer-Science/Quantum-Computing/Quantum-Hacking.md",
+                "file": "Alledged-Real-World-Stuff/Physics-Glossary/Stars/Neutron-Stars.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Quantum-Hacking"
+              "title": "Neutron-Stars"
             }
           }
         ]
@@ -182,6 +182,10 @@
   },
   "active": "b675279a6ad21fba",
   "lastOpenFiles": [
+    "Alledged-Real-World-Stuff/Physics-Glossary/Bosons-And-Fermions.md",
+    "Alledged-Real-World-Stuff/Physics-Glossary/Nuclear-Pasta.md",
+    "Alledged-Real-World-Stuff/Physics-Glossary/Stars/Neutron-Stars.md",
+    "Computer-Science/Quantum-Computing/Quantum-Hacking.md",
     "Brain-Hacking/Strategy/36-Hackogems-of-Rooting.md",
     "Networks/Network-Theory/Network-Protocols/VPN.md",
     "Brain-Hacking/Strategy/36-Stratagems.md",
@@ -193,11 +197,8 @@
     "Brain-Hacking/Learning/Learning-To-Continue-Learning-Better-Learning-To-Learn.md",
     "Brain-Hacking/Learning/Improve-Your-Learning.md",
     "Brain-Hacking/Learning/Avoiding-Examination-Errors.md",
-    "Alledged-Real-World-Stuff/Physics-Glossary/Stars/Neutron-Star.md",
-    "Alledged-Real-World-Stuff/Physics-Glossary/Bosons-And-Fermions.md",
     "Alledged-Real-World-Stuff/Physics-Glossary/Stars",
     "Alledged-Real-World-Stuff/Physics-Glossary/Modern-Physics.md",
-    "Computer-Science/Quantum-Computing/Quantum-Hacking.md",
     "Computer-Science/Quantum-Computing/Quantum-Computing.md",
     "Development/Languages/JSON.md",
     "Hardware/Hardware-Maintenance/USB-Maintenance.md",
@@ -210,7 +211,6 @@
     "Alledged-Real-World-Stuff/Physics-Glossary/Electromagnetism-Glossary.md",
     "Alledged-Real-World-Stuff/Physics-Glossary",
     "Software/Services/GitHub/Git-Repository-Hacking.md",
-    "Hardware/Hardware-Maintenance/Hardware-Maintenance.md",
     "Brain-Hacking/Strategy",
     "Brain-Hacking/Learning/Learn-to",
     "Brain-Hacking/Talk-Notes",
