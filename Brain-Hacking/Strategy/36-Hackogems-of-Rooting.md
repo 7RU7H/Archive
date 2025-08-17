@@ -1,7 +1,7 @@
 # 36 Hackogems of Rooting
 ## Chapter 1: Rooting Stratagems 
 ###### Disinfo-war the IR to cross the air gap 
-###### DDOS the VPN server to rescue  
+###### [[DOS-Attacks]]/[[DDoS-Attacks]] the [[VPN]] server to rescue  
 ###### TTP with a Living off the land Binaries
 ###### Persist at leisure while the Blue team labours
 ###### Exploit administrative chaos 
@@ -14,7 +14,7 @@
 ###### Sacrifice  something to optimise the economy of objective achieving 
 ###### Take the free wins, but check they are not costly before and after
 ## Chapter 3: Offensive Stratagems 
-###### Command context.bin to define the STDOUT 
+###### Command context.bin to define the `stdout` 
 ###### Borrow a corpse to resurrect the soul (借屍還魂, Jiè shī huán hún)
 ###### Lure the tiger down the mountain (调虎離山, Diào hǔ lí shān)
 ###### In order to root, one must risk
@@ -25,7 +25,7 @@
 ###### Side channels attack on target are just another entry
 ###### Like the environment show how you should look 
 ###### Slough off ego, insecurity in masquerading, reframe the value in enemies' objectives to them
-###### Plan, do not rush, two is one and one is none in shells as in TTPs, whether blue or red, shut the door on all theives
+###### Plan, do not rush, two is one and one is none in shells as in TTPs, whether blue or red, shut the door on all thieves
 ###### Befriend and collaborate against a common problem
 ###### Obtain and contributed to collaboration and open source resources to defeat the opponent
 ## Chapter 5: Combined Stratagems (並戰計, Bìng zhàn jì)

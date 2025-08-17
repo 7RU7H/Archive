@@ -1,6 +1,6 @@
 # Quantum Hacking
 
-23:46
+33:28
 
 
 This page is based on notes taken from the follow Lectures: [Lecture: ], [Lecture: ] and [Lecture: ]
@@ -35,7 +35,7 @@ Hack -> Integrate imperfection into security -> Model of Equipement --
 Sometimes the security proof needs updating..
 
 
-#### Commercial QKD
+#### Commercial QKDs (2014)
 
 Classical encryptors:
 - L2, 2 Gbit/s
@@ -56,8 +56,12 @@ Quantis RNG simply (copied from [Quantum hacking - Vadim Makarov Lecture Part 1]
 - Weak Coherent Light source `->`
 - `->` `[/]` 50/50 Beam splitter to make physically random decision) 
 	- photon will go depending on its photon number (if small number (close to single photon))
-- `->` Photon detector `-D` 
-- Both `-D` `->` converge on: `[Clicks Processed]` outputting `->` `Random Stream`  
+- `->` pair of Photon detectors `-D` 
+	- Both `-D` `->` converge on:
+- Simple device that captures the `[Clicks Processed]` that outputs `->` a `Random Stream` 
+
+
+
 
 
 #### Question Based Hacking a QKD, Quantum Computers, etc
@@ -68,6 +72,27 @@ Quantis RNG simply (copied from [Quantum hacking - Vadim Makarov Lecture Part 1]
 	- Is there sequential randomness (of data) at each level of abstraction? 
 - Can we trust the Manufacture?
 	- Human will be Humans to other (h/'/H `||!?` )umans and Monkeys are just sign language experts without Lab coats.
+	- Has the manufacturer:
+		- Tapped the device to record the stream for playback?
+		- Added a pre-recorded random sequence generator and a switch?
+		- With [[Firmware-Extraction]] is there malicious code
+		- Is the Quantis RNG device isolated from [[Side-Channel-Attacks]]
+		- Is there a hardcoded secrets?
+		- Has manufacturer susceptible to Hardware or [[Software-Supply-Chain-Attacks]]?
+
+
+#### Double Click attacks
+
+
+Occur naturally of detector darks counts, mutli-photon pulses... Discard them? Intercept-resend attack... with a twist:
+```
+Alice -->[Eve [Bob'] [Alice'] ] --> 100 photons --> Bob chooses the detection basis so that either (how many discards?):
+
+1. Bob: detects in Eve's Basis: single click
+2. Bob: detects in conjugate nasis: double click, discard
+```
+Proper treatment for double clicks: assign a random bit value.
+
 
 
 

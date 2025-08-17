@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Brain-Hacking/Strategy/36-Hackogems-of-Rooting.md",
+                "file": "Computer-Science/Quantum-Computing/Quantum-Hacking.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "36-Hackogems-of-Rooting"
+              "title": "Quantum-Hacking"
             }
           }
         ]
@@ -182,6 +182,8 @@
   },
   "active": "b675279a6ad21fba",
   "lastOpenFiles": [
+    "Brain-Hacking/Strategy/36-Hackogems-of-Rooting.md",
+    "Networks/Network-Theory/Network-Protocols/VPN.md",
     "Brain-Hacking/Strategy/36-Stratagems.md",
     "Brain-Hacking/Strategy/Strategy.md",
     "Brain-Hacking/Learning/Learn-to/Learn-To-Hack.md",
@@ -209,8 +211,6 @@
     "Alledged-Real-World-Stuff/Physics-Glossary",
     "Software/Services/GitHub/Git-Repository-Hacking.md",
     "Hardware/Hardware-Maintenance/Hardware-Maintenance.md",
-    "Development/Languages/Bash/Bash.md",
-    "Software/Services/GitHub/GitHub.md",
     "Brain-Hacking/Strategy",
     "Brain-Hacking/Learning/Learn-to",
     "Brain-Hacking/Talk-Notes",
