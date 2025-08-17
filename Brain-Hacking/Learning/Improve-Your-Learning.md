@@ -1,15 +1,15 @@
 # Learning
 
-This basically hack together and I think a better way to teach how to learn more effetively than [Justin Sung](https://www.youtube.com/c/JustinSung) as really the key to all learning is a compression and hyper-connectively. This a more effective way as to memorise this simple short sentence per-concept manual. 
+This basically started as hack-together-page. I thought there was better way to teach how to learn more effectively than [Justin Sung](https://www.youtube.com/c/JustinSung). His model did not account for requirements to learn other subjects, really the key to all learning is a compression and hyper-connectivity. This a more effective way as to memorise this simple short sentence per-concept manual. Mastery in learning comes from learning to accept that you must only want to expand on the fundamentals of the subject, not in the egotism of future - you will be happy and learn faster and never give up. As it is just like when a child learns to communicate - you learn to do not do some action because of a higher order personal, societal reasons - flow with the universe and not to twist the universe into your image.
 
 Objectives:
 1. Improve the quality of information we take in
-2.Improve the way or mode in which we receive information
+2. Improve the way or mode in which we receive information
 3. Improve our practice of retrieving information
 4. Improve upon self-discipline and methodology of self-critique to find flaws and schedule a solution to improve on that flaw  
 
 Concepts:
-- Cognative Load - Too much information at once
+- Cognitive Load - Too much information at once
 - [Contextualised Learning](https://files.eric.ed.gov/fulltext/ED448304.pdf) - it is easier to learn something if you are contextualising it with practice
 - [Transversal Skills Lopez and Rodriguez-Lopez, 2020)](https://ervet-journal.springeropen.com/articles/10.1186/s40461-020-00100-0](https://ervet-journal.springeropen.com/articles/10.1186/s40461-020-00100-0) 
 	- Focus on understanding:
@@ -21,6 +21,13 @@ Concepts:
 - [Interleaving](https://academicaffairs.arizona.edu/l2l-strategy-interleaving) - learning in context one task to for example exploit a system may actually help one understand how to detect it
 - Priming - briefing your brain with information of something that is upcoming have memories to reference and instantiate 
 - Modelling - map out material to be learnt in model of context
+
+Participating in the target subject everyday 
+- Do something
+- Ask questions
+- Make maps from notes to reference and memorise
+- Research something 
+- Read something: learn the terminology, conceptual domains, schools of thought 
 
 
 TL;DR - TODOs
@@ -46,7 +53,7 @@ TL;DR - TODOs
 - Try to the least smart person in the room surrounded by smarter people.
 - Challenge yourself
 	- Embrace challenge and push yourself
-- Follow and practice with a master 
+- Follow along and practice with a master 
 	- Be kind as challenge is not a kindness
 	- Other often have better and, more importantly different ideas and methods 
 - Pick a good place to learn
@@ -68,11 +75,14 @@ TL;DR - TODOs
 - SQ3R and PQ4R methods 
 	- Survey, question, read, recite and review
 	- Preview, question, read, reflect, recite and review - [good for reading comprehension](https://www.verywellfamily.com/strategy-improves-reading-comprehension-2162266)
+- Incomplete problem strategy taps into the "generation effect," a phenomenon in which learners better remember information they generate themselves.
+	- Scaffolding and Zone of Proximal Development (ZPD) Teaching
 - Feynman Technique 
 	1.  Learn a X
 	2.  Explain it to a beginner
 	3.  Identify gaps
 	4.  Return to study
+
 
 This will not make a genius in a week or a month, but will make a better student and teacher over the course months. It is a investment that will last a lifetime. But with that stated you must **PRACTICE IT**, like incident response you must actually try to respond to the incident in the first place otherwise you have failed.
 

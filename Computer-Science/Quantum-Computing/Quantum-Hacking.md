@@ -51,7 +51,7 @@ QKD to another node (4km)
 QKD to another node (14km)
 
 
-Quantis RNG simply (copied from [Lecture Part 1]())
+Quantis RNG simply (copied from [Quantum hacking - Vadim Makarov Lecture Part 1](https://www.youtube.com/watch?v=2r7B8Zpxmcw))
 
 - Weak Coherent Light source `->`
 - `->` `[/]` 50/50 Beam splitter to make physically random decision) 
@@ -73,6 +73,6 @@ Quantis RNG simply (copied from [Lecture Part 1]())
 
 
 
+## References
 
-
-## Reference
+[Quantum hacking - Vadim Makarov Lecture Part 1](https://www.youtube.com/watch?v=2r7B8Zpxmcw))

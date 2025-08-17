@@ -13,32 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Computer-Science/Quantum-Computing/Quantum-Hacking.md",
+                "file": "Brain-Hacking/Strategy/36-Hackogems-of-Rooting.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Quantum-Hacking"
-            }
-          }
-        ]
-      },
-      {
-        "id": "e2cf5b9f27faa212",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "8a6e059fe819d664",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computer-Science/Quantum-Computing/Quantum-Computing.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Quantum-Computing"
+              "title": "36-Hackogems-of-Rooting"
             }
           }
         ]
@@ -200,8 +180,21 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8a6e059fe819d664",
+  "active": "b675279a6ad21fba",
   "lastOpenFiles": [
+    "Brain-Hacking/Strategy/36-Stratagems.md",
+    "Brain-Hacking/Strategy/Strategy.md",
+    "Brain-Hacking/Learning/Learn-to/Learn-To-Hack.md",
+    "Brain-Hacking/Learning/Stupidity.md",
+    "Brain-Hacking/Learning/Study.md",
+    "Brain-Hacking/Learning/Power-Thorough-Learning.md",
+    "Brain-Hacking/Learning/Learning-To-Continue-Learning-Better-Learning-To-Learn.md",
+    "Brain-Hacking/Learning/Improve-Your-Learning.md",
+    "Brain-Hacking/Learning/Avoiding-Examination-Errors.md",
+    "Alledged-Real-World-Stuff/Physics-Glossary/Stars/Neutron-Star.md",
+    "Alledged-Real-World-Stuff/Physics-Glossary/Bosons-And-Fermions.md",
+    "Alledged-Real-World-Stuff/Physics-Glossary/Stars",
+    "Alledged-Real-World-Stuff/Physics-Glossary/Modern-Physics.md",
     "Computer-Science/Quantum-Computing/Quantum-Hacking.md",
     "Computer-Science/Quantum-Computing/Quantum-Computing.md",
     "Development/Languages/JSON.md",
@@ -210,7 +203,6 @@
     "Alledged-Real-World-Stuff/Physics-Glossary/Waves-Glossary.md",
     "Alledged-Real-World-Stuff/Physics-Glossary/Thermodynamics.md",
     "Alledged-Real-World-Stuff/Physics-Glossary/Optics-Glossary.md",
-    "Alledged-Real-World-Stuff/Physics-Glossary/Modern-Physics.md",
     "Alledged-Real-World-Stuff/Physics-Glossary/Mechanics-Glossary.md",
     "Alledged-Real-World-Stuff/Physics-Glossary/Fluids-Glossary.md",
     "Alledged-Real-World-Stuff/Physics-Glossary/Electromagnetism-Glossary.md",
@@ -219,17 +211,6 @@
     "Hardware/Hardware-Maintenance/Hardware-Maintenance.md",
     "Development/Languages/Bash/Bash.md",
     "Software/Services/GitHub/GitHub.md",
-    "Exploitation/CVEs/Shellshock.md",
-    "Exploitation/CVEs/Dirty-Pipe.md",
-    "Development/Languages/C/Useful-C.md",
-    "Computer-Science/Programming.md",
-    "Brain-Hacking/Learning/Stupidity.md",
-    "Brain-Hacking/Philosophy/Hacking-Meta-Hacking-Problems.md",
-    "Brain-Hacking/Philosophy/Meta-Methodology.md",
-    "Brain-Hacking/Philosophy/Hacking-The-Thing.md",
-    "Brain-Hacking/Actions/Personality.md",
-    "Hardware/Electronics/Electronics.md",
-    "Hardware/Electronics/Electronics-Components.md",
     "Brain-Hacking/Strategy",
     "Brain-Hacking/Learning/Learn-to",
     "Brain-Hacking/Talk-Notes",
@@ -237,7 +218,6 @@
     "Brain-Hacking/Problem-Solving",
     "Brain-Hacking/Philosophy",
     "Brain-Hacking/Learning",
-    "Brain-Hacking/Cyber-Related-Actions",
     "Images/exploitisweird-cve-2023-23572.png",
     "Images/mozilla-http-auth.png",
     "Images/charstillcrackgraph-securitydotorg.png",

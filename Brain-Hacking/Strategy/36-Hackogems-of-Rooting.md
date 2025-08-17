@@ -41,4 +41,4 @@
 ###### Let the opponent's own agents sow discord in the opponents's home environment
 ###### Self-Inflict injury on yourself to control trust in events and participants
 ## Chain stratagems
-###### If all else fails, retreat to off-grid simulated environments and try harder and smarter, before performing an unexpected reboot
+###### If all else fails, retreat to an off-grid simulated environment and try harder and smarter, before performing an unexpected reboot
