@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Alledged-Real-World-Stuff/Physics-Glossary/Stars/Neutron-Stars.md",
+                "file": "Alledged-Real-World-Stuff/Physics-Glossary/Black-Holes.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Neutron-Stars"
+              "title": "Black-Holes"
             }
           }
         ]
@@ -182,9 +182,10 @@
   },
   "active": "b675279a6ad21fba",
   "lastOpenFiles": [
+    "Alledged-Real-World-Stuff/Physics-Glossary/Stars/Neutron-Stars.md",
+    "Alledged-Real-World-Stuff/Physics-Glossary/Black-Holes.md",
     "Alledged-Real-World-Stuff/Physics-Glossary/Bosons-And-Fermions.md",
     "Alledged-Real-World-Stuff/Physics-Glossary/Nuclear-Pasta.md",
-    "Alledged-Real-World-Stuff/Physics-Glossary/Stars/Neutron-Stars.md",
     "Computer-Science/Quantum-Computing/Quantum-Hacking.md",
     "Brain-Hacking/Strategy/36-Hackogems-of-Rooting.md",
     "Networks/Network-Theory/Network-Protocols/VPN.md",
@@ -210,7 +211,6 @@
     "Alledged-Real-World-Stuff/Physics-Glossary/Fluids-Glossary.md",
     "Alledged-Real-World-Stuff/Physics-Glossary/Electromagnetism-Glossary.md",
     "Alledged-Real-World-Stuff/Physics-Glossary",
-    "Software/Services/GitHub/Git-Repository-Hacking.md",
     "Brain-Hacking/Strategy",
     "Brain-Hacking/Learning/Learn-to",
     "Brain-Hacking/Talk-Notes",
