@@ -110,8 +110,19 @@ Magnitude in electromagnetism concerns:
 
 Quantum Magnitude the combined bodies Quantum entanglement affect of both decoherence and interference on a body and its forces over time.
 
+
+#### Superconductivity 
+
+Superconductivity at the microscope level exists according to BCS Theory [Wikipedia -BCS theory](https://en.wikipedia.org/wiki/BCS_theory#Details)
+- BCS theory starts from the assumption that there is some attraction between electrons, which can overcome the [Coulomb repulsion](https://en.wikipedia.org/wiki/Coulomb_repulsion "Coulomb repulsion")
+	- **Evidence of a [band gap](https://en.wikipedia.org/wiki/Band_gap "Band gap") at the Fermi level**
+	- **Isotope effect on the critical temperature, suggesting lattice interactions**
+	- **An [exponential rise](https://en.wikipedia.org/wiki/Exponential_growth "Exponential growth") in [heat capacity](https://en.wikipedia.org/wiki/Heat_capacity "Heat capacity") near the critical temperature for some superconductors**
+	- **The lessening of the measured energy gap towards the critical temperature**
+
 ## References
 
 [Mario Chavarría's Formulia App](https://play.google.com/store/apps/details?id=m4.enginary&hl=en-US)
 [Wikipedia - Ampère's circuital law](https://en.wikipedia.org/wiki/Amp%C3%A8re%27s_circuital_law)
 [Wikipedia - Ampère's Force Law](https://en.wikipedia.org/wiki/Amp%C3%A8re%27s_force_law)
+[Wikipedia - BCS_theory](https://en.wikipedia.org/wiki/BCS_theory#Details)
