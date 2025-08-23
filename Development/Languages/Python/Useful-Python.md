@@ -260,7 +260,7 @@ r.headers
 r.encoding
 r.json
 ```
-### s `6t
+### socket
 ```python
 import socket
 

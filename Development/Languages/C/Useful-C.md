@@ -2,6 +2,19 @@
 
 [[Valgrind]] and [[GDB]]/[[Microsoft-Visual-Studios]] your code! 
 
+Function with `n` are generally safer that those without
+
+```c
+#include <stdlib.h>
+#include <string.h>
+
+char str_a[20];
+
+strncpy(str_a, "Hello, Internet\n"); // \n null byte require for string termination
+
+
+
+```
 
 Stack Versus Heap variable declaration
 ```c

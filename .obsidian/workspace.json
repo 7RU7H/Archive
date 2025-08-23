@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Alledged-Real-World-Stuff/Physics-Glossary/Electromagnetism-Glossary.md",
+                "file": "Development/Languages/C/Useful-C.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Electromagnetism-Glossary"
+              "title": "Useful-C"
             }
           }
         ]
@@ -63,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Amp",
+                "query": "\"Art of\"",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,7 +74,8 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -181,8 +182,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b675279a6ad21fba",
+  "active": "904463d60d8efa8d",
   "lastOpenFiles": [
+    "Development/Languages/C/Concurrent-C.md",
+    "Development/Languages/Python/Useful-Python.md",
+    "Alledged-Real-World-Stuff/Physics-Glossary/Electromagnetism-Glossary.md",
     "Alledged-Real-World-Stuff/Physics-Glossary/Black-Holes.md",
     "Alledged-Real-World-Stuff/Physics-Glossary/Stars/Neutron-Stars.md",
     "Alledged-Real-World-Stuff/Physics-Glossary/Bosons-And-Fermions.md",
@@ -208,9 +212,6 @@
     "Alledged-Real-World-Stuff/Physics-Glossary/Waves-Glossary.md",
     "Alledged-Real-World-Stuff/Physics-Glossary/Thermodynamics.md",
     "Alledged-Real-World-Stuff/Physics-Glossary/Optics-Glossary.md",
-    "Alledged-Real-World-Stuff/Physics-Glossary/Mechanics-Glossary.md",
-    "Alledged-Real-World-Stuff/Physics-Glossary/Fluids-Glossary.md",
-    "Alledged-Real-World-Stuff/Physics-Glossary/Electromagnetism-Glossary.md",
     "Alledged-Real-World-Stuff/Physics-Glossary",
     "Brain-Hacking/Strategy",
     "Brain-Hacking/Learning/Learn-to",
