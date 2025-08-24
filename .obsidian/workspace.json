@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Development/Languages/C/Useful-C.md",
+                "file": "Alledged-Real-World-Stuff/Physics-Glossary/Quantum-Mechanics-Glossary.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Useful-C"
+              "title": "Quantum-Mechanics-Glossary"
             }
           }
         ]
@@ -74,8 +74,7 @@
               "title": "Search"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -182,15 +181,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "904463d60d8efa8d",
+  "active": "b675279a6ad21fba",
   "lastOpenFiles": [
+    "Alledged-Real-World-Stuff/Physics-Glossary/Nuclear-Pasta.md",
+    "Alledged-Real-World-Stuff/Physics-Glossary/Modern-Physics.md",
+    "Alledged-Real-World-Stuff/Physics-Glossary/Quantum-Mechanics-Glossary.md",
+    "Alledged-Real-World-Stuff/Physics-Glossary/Thermodynamics.md",
+    "Development/Languages/C/Useful-C.md",
     "Development/Languages/C/Concurrent-C.md",
     "Development/Languages/Python/Useful-Python.md",
     "Alledged-Real-World-Stuff/Physics-Glossary/Electromagnetism-Glossary.md",
     "Alledged-Real-World-Stuff/Physics-Glossary/Black-Holes.md",
     "Alledged-Real-World-Stuff/Physics-Glossary/Stars/Neutron-Stars.md",
     "Alledged-Real-World-Stuff/Physics-Glossary/Bosons-And-Fermions.md",
-    "Alledged-Real-World-Stuff/Physics-Glossary/Nuclear-Pasta.md",
     "Computer-Science/Quantum-Computing/Quantum-Hacking.md",
     "Brain-Hacking/Strategy/36-Hackogems-of-Rooting.md",
     "Networks/Network-Theory/Network-Protocols/VPN.md",
@@ -204,14 +207,10 @@
     "Brain-Hacking/Learning/Improve-Your-Learning.md",
     "Brain-Hacking/Learning/Avoiding-Examination-Errors.md",
     "Alledged-Real-World-Stuff/Physics-Glossary/Stars",
-    "Alledged-Real-World-Stuff/Physics-Glossary/Modern-Physics.md",
     "Computer-Science/Quantum-Computing/Quantum-Computing.md",
     "Development/Languages/JSON.md",
     "Hardware/Hardware-Maintenance/USB-Maintenance.md",
     "Alledged-Real-World-Stuff/Physics-Glossary/firefox",
-    "Alledged-Real-World-Stuff/Physics-Glossary/Waves-Glossary.md",
-    "Alledged-Real-World-Stuff/Physics-Glossary/Thermodynamics.md",
-    "Alledged-Real-World-Stuff/Physics-Glossary/Optics-Glossary.md",
     "Alledged-Real-World-Stuff/Physics-Glossary",
     "Brain-Hacking/Strategy",
     "Brain-Hacking/Learning/Learn-to",

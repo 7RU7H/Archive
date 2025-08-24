@@ -1,6 +1,8 @@
 # Thermodynamics
 
+#### Dissipation
 
+[Wikipedia - Dissipation](https://en.wikipedia.org/wiki/Dissipation): *"**dissipation** is the result of an [irreversible process](https://en.wikipedia.org/wiki/Irreversible_process "Irreversible process") that affects a [thermodynamic system](https://en.wikipedia.org/wiki/Thermodynamic_system "Thermodynamic system"). In a dissipative process, [energy](https://en.wikipedia.org/wiki/Energy "Energy") ([internal](https://en.wikipedia.org/wiki/Internal_energy "Internal energy"), bulk flow [kinetic](https://en.wikipedia.org/wiki/Kinetic_energy "Kinetic energy"), or system [potential](https://en.wikipedia.org/wiki/Potential_energy "Potential energy")) [transforms](https://en.wikipedia.org/wiki/Energy_transformation "Energy transformation") from an initial form to a final form, where the capacity of the final form to do [thermodynamic work](https://en.wikipedia.org/wiki/Work_\(thermodynamics\) "Work (thermodynamics)") is less than that of the initial form."*
 #### Temperature
 
 Temperature: internal energy that a body possesses
@@ -63,3 +65,4 @@ Gay-Lussac's Law: Relates to the pressure and temperature of a gas at constant v
 ## References
 
 [Mario Chavarría's Formulia App](https://play.google.com/store/apps/details?id=m4.enginary&hl=en-US)
+[Wikipedia - Dissipation](https://en.wikipedia.org/wiki/Dissipation)
