@@ -1,9 +1,6 @@
 # Quantum Hacking
 
-33:28
-
-
-This page is based on notes taken from the follow Lectures: [Lecture: ], [Lecture: ] and [Lecture: ]
+This page is based on notes taken from the follow Lectures: [Quantum hacking - Vadim Makarov Lecture Part 1](https://www.youtube.com/watch?v=2r7B8Zpxmcw), [Lecture: ] and [Lecture: ]
 
 Quantum Hacking is:
 - Discovering vulnerabilities
@@ -60,10 +57,6 @@ Quantis RNG simply (copied from [Quantum hacking - Vadim Makarov Lecture Part 1]
 	- Both `-D` `->` converge on:
 - Simple device that captures the `[Clicks Processed]` that outputs `->` a `Random Stream` 
 
-
-
-
-
 #### Question Based Hacking a QKD, Quantum Computers, etc
 
 - True Randomness?
@@ -84,7 +77,7 @@ Quantis RNG simply (copied from [Quantum hacking - Vadim Makarov Lecture Part 1]
 #### Double Click attacks
 
 
-Occur naturally of detector darks counts, mutli-photon pulses... Discard them? Intercept-resend attack... with a twist:
+Occur naturally of detector dark counts, multi-photon pulses... Discard them? Intercept-resend attack... with a twist:
 ```
 Alice -->[Eve [Bob'] [Alice'] ] --> 100 photons --> Bob chooses the detection basis so that either (how many discards?):
 
@@ -93,8 +86,26 @@ Alice -->[Eve [Bob'] [Alice'] ] --> 100 photons --> Bob chooses the detection ba
 ```
 Proper treatment for double clicks: assign a random bit value.
 
+#### Trojan Horse Attacks
 
+- All Optical components will have some back-reflection
 
+If we capture the back reflection we can store and read data still we decode transmission
+
+In this example Alice does not measure the Quantum states being transmitted
+![](quantum-trojan-horse-attack-MAKAROV.png)
+
+The research group mapped the reflection types:
+- The scheme with different components used is the bar graph atop the line graph (C, BS, etc) map to distance from the entrance
+![](quantum-trojan-horse-attack-plugangplay-MAKAROV.png)
+
+#### Counter Measures
+
+You need to check each EGM pulse in case of [[Side-Channel-Attacks]]
+- Make a Monitoring Detector
+- Consider the limitations of the Electronics 
+- Consider the Phase modulation wave (has a rise, bump, plateau and fall), attacks occur outside of the plateau
+![](quantum-trojan-horse-attack-plugangplay-countermeasures-MAKAROV.png)
 
 
 

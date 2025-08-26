@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Alledged-Real-World-Stuff/Physics-Glossary/Quantum-Mechanics-Glossary.md",
+                "file": "Computer-Science/Quantum-Computing/Quantum-Hacking.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Quantum-Mechanics-Glossary"
+              "title": "Quantum-Hacking"
             }
           }
         ]
@@ -183,9 +183,14 @@
   },
   "active": "b675279a6ad21fba",
   "lastOpenFiles": [
+    "Images/quantum-trojan-horse-attack-plugangplay-MAKAROV.png",
+    "Images/quantum-trojan-horse-attack-MAKAROV.png",
+    "Excalidraw/Drawing 2025-08-26 14.09.57.excalidraw.md",
+    "Computer-Science/Quantum-Computing/Quantum-Hacking.md",
+    "Excalidraw",
+    "Alledged-Real-World-Stuff/Physics-Glossary/Quantum-Mechanics-Glossary.md",
     "Alledged-Real-World-Stuff/Physics-Glossary/Nuclear-Pasta.md",
     "Alledged-Real-World-Stuff/Physics-Glossary/Modern-Physics.md",
-    "Alledged-Real-World-Stuff/Physics-Glossary/Quantum-Mechanics-Glossary.md",
     "Alledged-Real-World-Stuff/Physics-Glossary/Thermodynamics.md",
     "Development/Languages/C/Useful-C.md",
     "Development/Languages/C/Concurrent-C.md",
@@ -194,7 +199,6 @@
     "Alledged-Real-World-Stuff/Physics-Glossary/Black-Holes.md",
     "Alledged-Real-World-Stuff/Physics-Glossary/Stars/Neutron-Stars.md",
     "Alledged-Real-World-Stuff/Physics-Glossary/Bosons-And-Fermions.md",
-    "Computer-Science/Quantum-Computing/Quantum-Hacking.md",
     "Brain-Hacking/Strategy/36-Hackogems-of-Rooting.md",
     "Networks/Network-Theory/Network-Protocols/VPN.md",
     "Brain-Hacking/Strategy/36-Stratagems.md",
@@ -208,8 +212,6 @@
     "Brain-Hacking/Learning/Avoiding-Examination-Errors.md",
     "Alledged-Real-World-Stuff/Physics-Glossary/Stars",
     "Computer-Science/Quantum-Computing/Quantum-Computing.md",
-    "Development/Languages/JSON.md",
-    "Hardware/Hardware-Maintenance/USB-Maintenance.md",
     "Alledged-Real-World-Stuff/Physics-Glossary/firefox",
     "Alledged-Real-World-Stuff/Physics-Glossary",
     "Brain-Hacking/Strategy",
@@ -218,7 +220,6 @@
     "Brain-Hacking/Question-Based-Methodologies",
     "Brain-Hacking/Problem-Solving",
     "Brain-Hacking/Philosophy",
-    "Brain-Hacking/Learning",
     "Images/exploitisweird-cve-2023-23572.png",
     "Images/mozilla-http-auth.png",
     "Images/charstillcrackgraph-securitydotorg.png",
@@ -227,7 +228,6 @@
     "Images/c2-serialization-formats-moloch.png",
     "Images/c2-protocols-moloch.png",
     "Images/programlanguages-adv-disadv-moloch-sliver-talk.png",
-    "Images/whatisthisdebiandocs-1.png",
-    "Images/whatisthisdebiandocs.png"
+    "Images/whatisthisdebiandocs-1.png"
   ]
 }
