@@ -31,6 +31,23 @@ Red Hat based systems:[yum-cron manpage](https://man7.org/linux/man-pages/man8/y
 
 [Snort](https://www.snort.org/faq/what-is-snort) - consider [[Snort]] article locally - *"Snort is an open source network intrusion prevention system, capable of performing real-time traffic analysis and packet logging on IP networks. It can perform protocol analysis, content searching/matching, and can be used to detect a variety of attacks and probes, such as buffer overflows, stealth port scans, CGI attacks, SMB probes, OS fingerprinting attempts, and much more."*
 
+Very simple bash script
+```bash
+#!/bin/bash
+
+if [ "$#" -ne 2]; then
+	echo "Usage: $0 <interface> <path to snort.conf>"
+	exit
+fi
+
+snort -T -c $CONFPATH
+wait
+LOGPATH=/tmp/snort
+mkdir $LOGPATH
+
+snort -K ascii -q A console -i $IFCONF -l $LOGPATH -c $CONFPATH
+```
+
 
 ## Fail2Ban
 

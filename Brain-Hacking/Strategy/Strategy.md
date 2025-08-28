@@ -9,9 +9,9 @@
 **Authors opinions**: *Heaven is grand strategy, but Robert sort lacks the idea that more of X is more problems, because he likes writing books. Widening the scope, widens the problems that come with scope, but that is why it is a mountain analogy.*
 
 Understand and master:
-- Time
+- Time and timings
 - Culture
-- Weapon
+- Everything is Weapon 
 - Adaptability
 - Patterns
 - Always do something different
@@ -19,15 +19,16 @@ Understand and master:
 - Defy Expectation
 - Formlessness
 - Fluid improvisational mind (Robert aggrandises mythology and acting - forgetting that the map is not the territory)
-- Creativity
 - Subvert everything
 - What does APT and you depend on?
 - Strategy is perspective, how's you recon, planning, logistics and intelligence and team play - visibility over all the past, present and future
-- Discipline and focus replaces morality
+- Discipline and focus replaces moral
 - Strategy is non-formulaic and is not problem solving or tactics which are formulaic
 - Do not fight the last war
 - The map is not the territory
 - Belief is the death of intelligence, never believe yours or anyone else's bullshit and always update yourself of the actualities of the current real. 
+- - Resources
+- Preparation is everything
 - End game is everything
 
 Properties infer casual strategic patterns that are observable in linear entities and groups: childhood is reflected into adulthood - in a developmental Piaget sense not a Freud, Jung or Peterson sense - archetypes are just cluster graphs - biases over the set properties in very unstrategic use of data analysis. 
