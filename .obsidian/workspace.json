@@ -13,26 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Brain-Hacking/Strategy/Strategy.md",
+                "file": "Hardware/Electronics/Electronics.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Strategy"
-            }
-          },
-          {
-            "id": "38f10c3a823ed3f9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Development/Languages/Bash/Bash.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Bash"
+              "title": "Electronics"
             }
           }
         ]
@@ -77,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Red Team Field",
+                "query": "OPSEC",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -197,6 +183,12 @@
   },
   "active": "b675279a6ad21fba",
   "lastOpenFiles": [
+    "Software/Virtualization/Docker/Draft-Docker-System-Administration.md",
+    "Software/Virtualization/Docker/Docker.md",
+    "Brain-Hacking/Strategy/Strategy.md",
+    "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Privilege-Escalation.md",
+    "Security-Disciplines/For-Individuals/OPSEC/OPSEC.md",
+    "This-Repository-Specific/About.md",
     "Brain-Hacking/Question-Based-Methodologies/Question-Based-Web-Application-Hacking-Methodology.md",
     "Software/Operating-Systems/Linux/Linux-System-Administration/Linux-System-Administration.md",
     "Post-Exploitation/Stealth/Linux-Stealth.md",
@@ -220,12 +212,6 @@
     "Alledged-Real-World-Stuff/Physics-Glossary/Black-Holes.md",
     "Alledged-Real-World-Stuff/Physics-Glossary/Stars/Neutron-Stars.md",
     "Alledged-Real-World-Stuff/Physics-Glossary/Bosons-And-Fermions.md",
-    "Brain-Hacking/Strategy/36-Hackogems-of-Rooting.md",
-    "Networks/Network-Theory/Network-Protocols/VPN.md",
-    "Brain-Hacking/Strategy/36-Stratagems.md",
-    "Brain-Hacking/Strategy/Strategy.md",
-    "Brain-Hacking/Learning/Learn-to/Learn-To-Hack.md",
-    "Brain-Hacking/Learning/Stupidity.md",
     "Alledged-Real-World-Stuff/Physics-Glossary/Stars",
     "Alledged-Real-World-Stuff/Physics-Glossary/firefox",
     "Alledged-Real-World-Stuff/Physics-Glossary",

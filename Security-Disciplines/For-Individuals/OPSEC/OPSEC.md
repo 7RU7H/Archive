@@ -60,7 +60,14 @@ The following are all connect to you in terms of data and access points
 - Friends
 - Co-Workers
 - Neighbours
+##  OPSEC Mistakes
 
+
+[Advent Of Cyber 2024](https://tryhackme.com/r/room/adventofcyber2024):
+- Reusing usernames, email addresses, or account handles across multiple platforms.
+- Using identifiable metadata in code, documents, or images, which may reveal personal information like device names, GPS coordinates, or timestamps.
+- Posting publicly on forums or GitHub (Like in this current scenario) with details that tie back to their real identity or reveal their location or habits.
+- Failing to use a VPN or proxy while conducting malicious activities allows law enforcement to track their real IP address.
 ## Account Level
 
 - Account separation
@@ -207,5 +214,5 @@ This is not for Red teams visit [[Red-Team-OPSEC]].
 [Part 2-How to Live like a Criminal - Privacy Tips for the Non-Criminal | Ean Meyer & John Strand](https://www.youtube.com/watch?v=r4SvCFxTMMk)
 [Part 3-How to Live like a Criminal - Privacy Tips for the Non-Criminal | Ean Meyer & John Strand](https://www.youtube.com/watch?v=JlVI705wHq8)
 [DEF CON 29 Recon Village - Ritu Gil - So You Want to OPSEC, Eh](https://www.youtube.com/watch?v=daXNSvb_S3w)
-
+[Advent Of Cyber 2024](https://tryhackme.com/r/room/adventofcyber2024)
 

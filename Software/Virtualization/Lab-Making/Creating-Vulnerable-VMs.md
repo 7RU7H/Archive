@@ -44,7 +44,7 @@ Virtualiser - Virtualbox or VMWare
 	- Preseed files (include anisible is you using it to provision)
 	- `packer validate $build.json`
 	- `packer build $build.json*`
-Provisioner - [[Virtualization/Ansible]] - Or Packer provisioners [Windows Shell](https://developer.hashicorp.com/packer/docs/provisioners/windows-shell) or [Powershell](https://www.packer.io/docs/provisioners/powershell)
+Provisioner - [[Software/Virtualization/Ansible]] - Or Packer provisioners [Windows Shell](https://developer.hashicorp.com/packer/docs/provisioners/windows-shell) or [Powershell](https://www.packer.io/docs/provisioners/powershell)
 
 
 ## References
