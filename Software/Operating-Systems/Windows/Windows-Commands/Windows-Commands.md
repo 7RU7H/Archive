@@ -33,7 +33,9 @@ cls # Clear screen
 
 powercfg /batteryreport
 
-systeminfo
+systeminfo # does not display full OS version
+
+ver # get windows version
 
 noun query	# A useful verb to inquire as to info of the previous noun
 noun delete	# delete functionality relating to the noun
@@ -169,6 +171,8 @@ taskkill /PID $int # /F will force termination
 
 # Retart to system bios without touching a hotkey!
 shutdown /r /fw /f /t 0
+# Abort scheduled shutdown
+shutdown /a
 ```
 
 
@@ -176,3 +180,4 @@ shutdown /r /fw /f /t 0
 
 [Networkchuck top 40 CLI video](https://www.youtube.com/watch?v=Jfvg3CS1X3A)
 [Windows Commands](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands)
+[THM Windows Commandline](https://tryhackme.com/room/windowscommandline)

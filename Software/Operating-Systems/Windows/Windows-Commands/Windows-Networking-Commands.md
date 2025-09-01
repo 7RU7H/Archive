@@ -70,6 +70,7 @@ netstat
 	-p # display by protocol
 	-n # show address numerically
 	-o # Process PID 
+	-b # Binary 
 
 nslookup # either the IP of a domain name or the domain name of an IP(revsere lookup)
 
