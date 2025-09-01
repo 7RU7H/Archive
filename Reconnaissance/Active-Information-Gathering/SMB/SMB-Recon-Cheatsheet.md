@@ -90,13 +90,13 @@ smbclient //$IP/$share -c 'put /var/www/my_local_file.txt .\target_folder\target
 [[Crackmapexec-Cheatsheet]]
 ```bash
 # Run crackmapexec any command to initalize it
-crackmapexec smb
+crackmapexec smb $IP 
 # Guest authorization recon
-crackmapexec smb -u 'guest' -p '' --shares
+crackmapexec smb $IP  -u 'guest' -p '' --shares
 # If you can read IPC$
-crackmapexec smb -u 'guest' -p '' --rid-brute
+crackmapexec smbq $IP  -u 'guest' -p '' --rid-brute
 # Authenticated local admin 
-crackmapexec smb -u 'sysadmin' -p '123lsapasswordsforfree' --rlsa
+crackmapexec smb $IP  -u 'sysadmin' -p '123lsapasswordsforfree' --rlsa
 ```
 
 ## `enum4linux` Enumeration

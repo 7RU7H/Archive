@@ -45,6 +45,16 @@ rm path/to/chungus.file
 # And then commit
 ```
 
+#### Download some of a repository
+
+Just want the `.git` directory and sparse amount of files [stackoverflow download-a-single-folder-or-directory-from-a-github-repository](https://stackoverflow.com/questions/7106012/download-a-single-folder-or-directory-from-a-github-repository)
+```bash
+git clone --filter=blob:none --sparse <repository-url>
+cd <repository-name>
+git sparse-checkout set ".git"
+git checkout
+```
+
 
 #### GitHub Security
 
@@ -114,3 +124,4 @@ $ cd /tmp && touch aaa && gpg --sign aaa && rm aaa aaa.gpg && cd -
 [StackOverflow - Antonio Petricca](https://stackoverflow.com/questions/5099333/git-accidental-inclusion-of-password-how-do-i-fix-it#5099338i)
 [StackOverflow - Johnathan Chad Faling](https://stackoverflow.com/questions/15289768/github-commits-arent-recorded-in-the-your-contributions-calendar#19384175)
 [Github Documentation](https://docs.github.com/en)
+[stackoverflow download-a-single-folder-or-directory-from-a-github-repository](https://stackoverflow.com/questions/7106012/download-a-single-folder-or-directory-from-a-github-repository)

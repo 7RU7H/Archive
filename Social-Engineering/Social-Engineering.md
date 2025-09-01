@@ -40,7 +40,7 @@ Bait Question:
 - Is there any reason their was `x <witness testimony, artifact (does not have to be true..)> 
 
 Elicitation - statements bypass frontal cortex protection mechanisms
-- `<Greeting>`... `lead in like:` I hear that you employee pays you X amount -
+- `<Greeting>`... `lead in like:` I hear that your employee pays you X amount -
 #### Missing words, like pronouns = signal distancing 
 
 #### Find the culprit = *"What do you think the punishment should be?* 
