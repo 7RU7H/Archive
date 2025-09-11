@@ -27,7 +27,6 @@ smbmap -H $IP -u 'Guest' -p 'Anonymous'
 smbmap -H $IP -u 'Guest' -p ''
 # Always recursively check all credentials and permissions
 smbmap -H $IP -u $user -p $password
-
 # Recursively list dirs, files 
 smbmap -H $IP -R --exclude SYSVOL,IPC$
 # Recursive list contents of directory
@@ -64,16 +63,11 @@ smbclient -L //$IP/tmp
 smbclient -U '' -L //$IP/anon
 smbclient -N //$IP/tmp --option='client min protocol=NT1' # legacy
 smbclient -U //$IP/share\ with\ whitespace # \ to escape whitespace
-```
-
-To escape white space in smb client!
-```bash
+# To escape white space in smb client!
 smbclient //10.10.10.10/annoying\ white\ spaces\ share
-smb: \> cd "Active Directory\ # will work to escape the whitespace
-```
+smb: \> cd "Active Directory\ " # will work to escape the whitespace
 
-Exfiltrating files
-```bash
+# Exfiltrating files
 smb: \> prompt off 
 smb: \> recurse on 
 smb: \> mget * # Download everything instead of manually 

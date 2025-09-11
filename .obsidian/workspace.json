@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Web-Application-Hacking/Web-Concepts/HTTP.md",
+                "file": "Exploitation/CVEs/CVE-2021-41773.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "HTTP"
+              "title": "CVE-2021-41773"
             }
           }
         ]
@@ -183,6 +183,17 @@
   },
   "active": "11a506e092c8c6f9",
   "lastOpenFiles": [
+    "Exploitation/Shells/Reverse-Shells-Listing.md",
+    "Exploitation/Shells/Shells.md",
+    "Reconnaissance/OSINT/OSINT.md",
+    "Development/Malware/Malware.md",
+    "Alledged-Real-World-Stuff/Physics-Glossary/Stars/Stars.md",
+    "README.md",
+    "Development/Languages/JavaScript/JavaScript.md",
+    "Reconnaissance/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
+    "Reconnaissance/Active-Information-Gathering/RPC/RPC-Recon.md",
+    "Development/Languages/C/Useful-C.md",
+    "Web-Application-Hacking/Web-Concepts/HTTP.md",
     "Software/Services/Webservers/Web-Applications.md",
     "Securing-Networks-And-Systems/Hardening/Active-Directory/Active-Directory-Hardening.md",
     "Exploitation/CVEs/CVE-2024-21413.md",
@@ -191,8 +202,6 @@
     "Social-Engineering/Social-Power.md",
     "Software/Services/GitHub/GitHub.md",
     "Post-Exploitation/Data-Ex&Infiltration/Git-Filtration-N-Escalation.md",
-    "Reconnaissance/Active-Information-Gathering/RPC/RPC-Recon.md",
-    "Reconnaissance/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
     "Tools/AD-Offensive/Crackmapexec/Crackmapexec-Cheatsheet.md",
     "Software/Operating-Systems/Windows/Windows-Commands/Windows-Commands.md",
     "Software/Operating-Systems/Windows/Windows-Commands/Windows-Networking-Commands.md",
@@ -200,15 +209,6 @@
     "Software/Virtualization/Docker/Draft-Docker-System-Administration.md",
     "Software/Virtualization/Docker/Docker.md",
     "Brain-Hacking/Strategy/Strategy.md",
-    "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Privilege-Escalation.md",
-    "Security-Disciplines/For-Individuals/OPSEC/OPSEC.md",
-    "This-Repository-Specific/About.md",
-    "Brain-Hacking/Question-Based-Methodologies/Question-Based-Web-Application-Hacking-Methodology.md",
-    "Software/Operating-Systems/Linux/Linux-System-Administration/Linux-System-Administration.md",
-    "Post-Exploitation/Stealth/Linux-Stealth.md",
-    "Security-Disciplines/Blue-Team/Blue-Team-Key-Documents.md",
-    "Software/Operating-Systems/Linux/Linux-System-Administration/Common-Linux-Administration-Alternatives.md",
-    "Securing-Networks-And-Systems/Hardening/Linux-Hardening.md",
     "Images/quantum-trojan-horse-attack-plugangplay-MAKAROV.png",
     "Images/quantum-trojan-horse-attack-MAKAROV.png",
     "Excalidraw",

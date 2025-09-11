@@ -29,6 +29,15 @@ int *heapVariable = malloc(sizeof(int));
 free(heapVariable);
 ```
 
+Sizes and ranges of `int` types
+```c
+unsigned int four_bytes; // range 0 to 4,294,967,295 (32-bit)
+signed int four_bytes; //-2,147,483,648 to 2,147,483,647 (32-bit)
+unsigned short int two_bytes; // 0 to 65,535
+signed short int two_bytes; // -32,768 to 32,767
+unsigned long int four_bytes_32bit_eight_bytes_64bit; 
+signed long int four_bytes_32bit_eight_bytes_64bit; 
+```
 
 Structs
 ```c
@@ -53,6 +62,9 @@ struct rectangle {
 ```
 
 Pointers - [recommended viewing Dave's Garage Youtube video](https://www.youtube.com/watch?v=IrGjyfBC-u0) 
+- `32-bit points = 4 bytes`
+- `64-bit points = 8 bytes`
+	- Beware [Windows: 32-bit integers, 64-bit pointers source: news.ycombinator.com](https://news.ycombinator.com/item?id=32566874)
 ```c
 // Pointer are stored memory addresses, they point to memory address where values are stored
 // Indirection - a pointer hold the address of values 
@@ -194,3 +206,4 @@ int inlineThis()
 [Size of an asm](https://gcc.gnu.org/onlinedocs/gcc/extensions-to-the-c-language-family/how-to-use-inline-assembly-language-in-c-code.html#size-of-an-asm)
 [Inline Assembly Lanaguage in C Code - gcc.gnu.org](https://gcc.gnu.org/onlinedocs/gcc/extensions-to-the-c-language-family/how-to-use-inline-assembly-language-in-c-code.html)
 [Hacking: The Art of Exploitation, 2nd Edition 2nd ed. by Erickson, Jon (ISBN: 0689145714418)](Hacking: The Art of Exploitation, 2nd Edition 2nd ed. by Erickson, Jon (ISBN: 0689145714418)
+[news.ycombinator.com: Windows: 32-bit integers, 64-bit pointers](https://news.ycombinator.com/item?id=32566874)

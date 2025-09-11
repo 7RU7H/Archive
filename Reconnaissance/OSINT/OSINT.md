@@ -1,3 +1,5 @@
+# OSINT
+
 [Open-Source Intelligence](https://en.wikipedia.org/wiki/Open-source_intelligence) is the gathering and analysing data from open source (covert and publicly available sources) to produce actionable intelligence. Categorises of sources:
 - Media
 - Internet

@@ -21,7 +21,7 @@ Windows scripting host is a built-in Windows administration tool that runs batch
 
 ## An HTML Application (HTA)
 
-HTML Application (HTA) allows create a downloadable files,  dynamicHTLM pages that contain JScript and VBScript that encapsulates internal how it should displayed and rendered. The exploitation of this mechanicanism is that is native packaging method that contains potential malicious code that can executed.  The THM Room suggests [ActiveX](https://en.wikipedia.org/wiki/ActiveX) , although note that in the last decade was notorious for exploitation and commonly removed or disabled or filtered by Windows Defender APT. See [[Visual-Basic]] for use case of HTA and [[Useful_JavaScript]] for a basic understanding and list of good [[Vulnerable-Javascript-Functions]] to leverage follow the latter link.
+HTML Application (HTA) allows create a downloadable files,  dynamicHTLM pages that contain JScript and VBScript that encapsulates internal how it should displayed and rendered. The exploitation of this mechanicanism is that is native packaging method that contains potential malicious code that can executed.  The THM Room suggests [ActiveX](https://en.wikipedia.org/wiki/ActiveX) , although note that in the last decade was notorious for exploitation and commonly removed or disabled or filtered by Windows Defender APT. See [[Visual-Basic]] for use case of HTA and [[JavaScript]] for a basic understanding and list of good [[Vulnerable-Javascript-Functions]] to leverage follow the latter link.
 
 Another way to generate and server malicious HTA is with [[Metasploit]] and the module `exploit/windows/misc/hta_server`
 
