@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exploitation/CVEs/CVE-2021-41773.md",
+                "file": "Exploitation/CVEs/CVE-2023-27350.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CVE-2021-41773"
+              "title": "CVE-2023-27350"
             }
           }
         ]
@@ -183,6 +183,12 @@
   },
   "active": "11a506e092c8c6f9",
   "lastOpenFiles": [
+    "Development/Languages/Go/Golang.md",
+    "Exploitation/CVEs/CVE-2023-27350.md",
+    "Development/Languages/Go/Go-Testdriven-Development.md",
+    "Development/Languages/Go/Useful-Go.md",
+    "Development/Malware/Go/Go-Malware-Writing-For-Windows.md",
+    "Exploitation/CVEs/CVE-2021-41773.md",
     "Exploitation/Shells/Reverse-Shells-Listing.md",
     "Exploitation/Shells/Shells.md",
     "Reconnaissance/OSINT/OSINT.md",
@@ -203,12 +209,6 @@
     "Software/Services/GitHub/GitHub.md",
     "Post-Exploitation/Data-Ex&Infiltration/Git-Filtration-N-Escalation.md",
     "Tools/AD-Offensive/Crackmapexec/Crackmapexec-Cheatsheet.md",
-    "Software/Operating-Systems/Windows/Windows-Commands/Windows-Commands.md",
-    "Software/Operating-Systems/Windows/Windows-Commands/Windows-Networking-Commands.md",
-    "Hardware/Electronics/Electronics.md",
-    "Software/Virtualization/Docker/Draft-Docker-System-Administration.md",
-    "Software/Virtualization/Docker/Docker.md",
-    "Brain-Hacking/Strategy/Strategy.md",
     "Images/quantum-trojan-horse-attack-plugangplay-MAKAROV.png",
     "Images/quantum-trojan-horse-attack-MAKAROV.png",
     "Excalidraw",
