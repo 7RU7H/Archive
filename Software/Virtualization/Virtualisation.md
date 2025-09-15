@@ -10,7 +10,7 @@ Benefits
 
 Hypervisor Typology
 
-Type 1 Hypervisors   
+#### Type 1 Hypervisors   
 
 Also termed as "bare metal hypervisors" as the hypervisor is the layer on top of the hardware and is the often headless operating system (remote management accessible via web-based portal).
 ```goat
@@ -20,8 +20,9 @@ Also termed as "bare metal hypervisors" as the hypervisor is the layer on top of
 [Hardware]
 ```
 
-Type 2 Hypervisors 
+#### Type 2 Hypervisors 
 
+Also termed as "hosted hypervisors"
 ```goat
 [App][App]
 [Guest OS]
@@ -30,8 +31,28 @@ Type 2 Hypervisors
 [Hardware]
 ```
 
+#### Technologies
+
+Hyper-V (both a type 1 and type 2 Hypervisor)
+VirtualBox (type 2) 
+VMWare ESXi (type 1)
+VMWare WorkStation (type 2) 
+QEMU (can emulate full systems can be used with a Kernal-based Virtual Machine for near native speeds)
+
+
+#### Internals
+
+Virtual CPU
+Virtual RAM
+Virtual Storage
+Virtual Networking
+
+Paravirtualisation is the concept of the guest virtual machine have self knowledge of its virtualisation and not using bare metal hardware.
+
+Nested Virtualisation is running a Hypervisor inside a Virtual Machine
 
 ## References
 
 [Virtualisation](https://en.wikipedia.org/wiki/Virtualization)
 [THM Virtualization and Containers Room](https://tryhackme.com/room/virtualizationandcontainers)
+[THM Hypervisor Internals Room](https://tryhackme.com/room/hypervisorinternals)

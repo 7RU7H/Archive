@@ -8,10 +8,20 @@ Function with `n` are generally safer that those without
 #include <stdlib.h>
 #include <string.h>
 
+// Both used to create aliases
+#define macro // preprocessor directive (search and replace before compilation)
+#typedef custom_types
+
+#typedef struct one_alias {
+
+}another_alias; // you can use either, which is a weird
+
+
 char str_a[20];
 
 strncpy(str_a, "Hello, Internet\n"); // \n null byte require for string termination
 
+#typedef return_type_of_function (*pointer_to_a_function)(parameters_of_a_function);
 
 
 ```
