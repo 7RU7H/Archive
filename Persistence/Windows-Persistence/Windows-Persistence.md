@@ -57,6 +57,8 @@ Consider reviewing and supporting [pentestlab.blog](https://pentestlab.blog/meth
 [[Windows-Persistence-Logon-Triggered]]
 [[Windows-Persistence-RDP]]
 [[Windows-Persistence-Implant-Existing-Services]]
+[[Windows-Persistence-COM-Object-Hijacking]]
+[[Windows-Persistence-Stashing]]
 
 
 ## References

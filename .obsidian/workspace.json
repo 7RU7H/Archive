@@ -13,12 +13,32 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Software/Virtualization/Virtualisation.md",
+                "file": "Persistence/Windows-Persistence/Windows-Persistence-COM-Object-Hijacking.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Virtualisation"
+              "title": "Windows-Persistence-COM-Object-Hijacking"
+            }
+          }
+        ]
+      },
+      {
+        "id": "6c8dc1b75987af11",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "25177565bdbdca64",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Post-Exploitation/Privilege-Escalation/Windows/Bypassing-UAC/Bypassing-Windows-User-Account-Control.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Bypassing-Windows-User-Account-Control"
             }
           }
         ]
@@ -63,7 +83,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "RDP",
+                "query": "registry",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,7 +94,8 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -183,6 +204,19 @@
   },
   "active": "11a506e092c8c6f9",
   "lastOpenFiles": [
+    "Post-Exploitation/Privilege-Escalation/Windows/Bypassing-UAC/Bypassing-Windows-User-Account-Control.md",
+    "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Privilege-Escalation.md",
+    "Persistence/Windows-Persistence/Windows-Persistence-COM-Object-Hijacking.md",
+    "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Enumeration-Cheatsheet.md",
+    "Persistence/Windows-Persistence/Windows-Persistence-Logon-Triggered.md",
+    "Exploitation/CVEs/PrintNightmare.md",
+    "Persistence/Windows-Persistence/Windows-Persistence.md",
+    "Alledged-Real-World-Stuff/Physics-Glossary/Modern-Physics.md",
+    "Alledged-Real-World-Stuff/Physics-Glossary/Elementary-Particles.md",
+    "Alledged-Real-World-Stuff/Physics-Glossary/Mechanics-Glossary.md",
+    "Alledged-Real-World-Stuff/Physics-Glossary/Electromagnetism-Glossary.md",
+    "Alledged-Real-World-Stuff/Physics-Glossary/Nuclear-Pasta.md",
+    "Software/Virtualization/Virtualisation.md",
     "Development/Languages/C/Useful-C.md",
     "Development/Languages/C/Concurrent-C.md",
     "ICS/Attacking-Industrial-Control-Systems.md",
@@ -197,19 +231,6 @@
     "Exploitation/Shells/Shells.md",
     "Reconnaissance/OSINT/OSINT.md",
     "Development/Malware/Malware.md",
-    "Alledged-Real-World-Stuff/Physics-Glossary/Stars/Stars.md",
-    "README.md",
-    "Development/Languages/JavaScript/JavaScript.md",
-    "Reconnaissance/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
-    "Reconnaissance/Active-Information-Gathering/RPC/RPC-Recon.md",
-    "Web-Application-Hacking/Web-Concepts/HTTP.md",
-    "Software/Services/Webservers/Web-Applications.md",
-    "Securing-Networks-And-Systems/Hardening/Active-Directory/Active-Directory-Hardening.md",
-    "Exploitation/CVEs/CVE-2024-21413.md",
-    "Web-Application-Hacking/Web-Concepts/HTML.md",
-    "Social-Engineering/Social-Engineering.md",
-    "Social-Engineering/Social-Power.md",
-    "Software/Services/GitHub/GitHub.md",
     "Images/quantum-trojan-horse-attack-plugangplay-MAKAROV.png",
     "Images/quantum-trojan-horse-attack-MAKAROV.png",
     "Excalidraw",
