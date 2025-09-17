@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Alledged-Real-World-Stuff/Business.md",
+                "file": "Exploitation/Shells/Reverse-Shells-Listing.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Business"
+              "title": "Reverse-Shells-Listing"
             }
           }
         ]
@@ -183,8 +183,13 @@
   },
   "active": "11a506e092c8c6f9",
   "lastOpenFiles": [
-    "Persistence/Windows-Persistence/Windows-Persistence-COM-Object-Hijacking.md",
+    "Exploitation/Shells/Shells.md",
+    "Exploitation/CVEs/CVE-2025-32433.md",
+    "Development/Languages/Erlang/Erlang.md",
+    "Development/Languages/Erlang",
+    "README.md",
     "Alledged-Real-World-Stuff/Business.md",
+    "Persistence/Windows-Persistence/Windows-Persistence-COM-Object-Hijacking.md",
     "Post-Exploitation/Privilege-Escalation/Windows/Bypassing-UAC/Bypassing-Windows-User-Account-Control.md",
     "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Privilege-Escalation.md",
     "Post-Exploitation/Privilege-Escalation/Active-Directory/Active-Directory-Enumeration-Cheatsheet.md",
@@ -206,10 +211,6 @@
     "Development/Languages/Go/Go-Testdriven-Development.md",
     "Development/Languages/Go/Useful-Go.md",
     "Development/Malware/Go/Go-Malware-Writing-For-Windows.md",
-    "Exploitation/CVEs/CVE-2021-41773.md",
-    "Exploitation/Shells/Reverse-Shells-Listing.md",
-    "Exploitation/Shells/Shells.md",
-    "Reconnaissance/OSINT/OSINT.md",
     "Images/quantum-trojan-horse-attack-plugangplay-MAKAROV.png",
     "Images/quantum-trojan-horse-attack-MAKAROV.png",
     "Excalidraw",
@@ -220,7 +221,6 @@
     "Brain-Hacking/Learning/Learn-to",
     "Brain-Hacking/Talk-Notes",
     "Brain-Hacking/Question-Based-Methodologies",
-    "Brain-Hacking/Problem-Solving",
     "Images/exploitisweird-cve-2023-23572.png",
     "Images/mozilla-http-auth.png",
     "Images/charstillcrackgraph-securitydotorg.png",
