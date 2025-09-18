@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exploitation/Shells/Reverse-Shells-Listing.md",
+                "file": "Security-Disciplines/Digital-Forensics/MacOS-Forensics/MacOS-DFIR.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Reverse-Shells-Listing"
+              "title": "MacOS-DFIR"
             }
           }
         ]
@@ -63,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "registry",
+                "query": "MySQL",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -183,6 +183,21 @@
   },
   "active": "11a506e092c8c6f9",
   "lastOpenFiles": [
+    "Software/Operating-Systems/MacOS/macOS-Hub-Page.md",
+    "Security-Disciplines/Digital-Forensics/MacOS-Forensics/MacOS-DFIR.md",
+    "Security-Disciplines/Digital-Forensics/MacOS-Forensics/MacOS-Forensics.md",
+    "Software/Services/Databases/MYSQL/MySQL-Cheatsheet.md",
+    "Security-Disciplines/Digital-Forensics/MacOS-Forensics",
+    "Development/Languages/Introduction-to-SQL.md",
+    "Software/Services/Databases/MYSQL/MySQL-Hacking.md",
+    "Software/Services/Databases/Database-Hacking.md",
+    "Software/Operating-Systems/Linux/Linux-Commands/Linux-Networking-Commands.md",
+    "Tools/Network-Based/Proxying-And-Pivoting/Chisel.md",
+    "Tools/Network-Based/Proxying-And-Pivoting/DNS-Tunnelling.md",
+    "Reconnaissance/Active-Directory/Active-Directory-Footholding.md",
+    "Networks/Network-Theory/Network-Protocols/Oracle-TNS.md",
+    "Networks/Network-Theory/Network-Protocols/Network-Protocols.md",
+    "Exploitation/Shells/Reverse-Shells-Listing.md",
     "Exploitation/Shells/Shells.md",
     "Exploitation/CVEs/CVE-2025-32433.md",
     "Development/Languages/Erlang/Erlang.md",
@@ -196,21 +211,7 @@
     "Persistence/Windows-Persistence/Windows-Persistence-Logon-Triggered.md",
     "Exploitation/CVEs/PrintNightmare.md",
     "Persistence/Windows-Persistence/Windows-Persistence.md",
-    "Alledged-Real-World-Stuff/Physics-Glossary/Modern-Physics.md",
-    "Alledged-Real-World-Stuff/Physics-Glossary/Elementary-Particles.md",
-    "Alledged-Real-World-Stuff/Physics-Glossary/Mechanics-Glossary.md",
-    "Alledged-Real-World-Stuff/Physics-Glossary/Electromagnetism-Glossary.md",
-    "Alledged-Real-World-Stuff/Physics-Glossary/Nuclear-Pasta.md",
-    "Software/Virtualization/Virtualisation.md",
-    "Development/Languages/C/Useful-C.md",
-    "Development/Languages/C/Concurrent-C.md",
-    "ICS/Attacking-Industrial-Control-Systems.md",
-    "Exploitation/CVEs/CVE-2023-27350.md",
     "ICS",
-    "Development/Languages/Go/Golang.md",
-    "Development/Languages/Go/Go-Testdriven-Development.md",
-    "Development/Languages/Go/Useful-Go.md",
-    "Development/Malware/Go/Go-Malware-Writing-For-Windows.md",
     "Images/quantum-trojan-horse-attack-plugangplay-MAKAROV.png",
     "Images/quantum-trojan-horse-attack-MAKAROV.png",
     "Excalidraw",
@@ -220,7 +221,6 @@
     "Brain-Hacking/Strategy",
     "Brain-Hacking/Learning/Learn-to",
     "Brain-Hacking/Talk-Notes",
-    "Brain-Hacking/Question-Based-Methodologies",
     "Images/exploitisweird-cve-2023-23572.png",
     "Images/mozilla-http-auth.png",
     "Images/charstillcrackgraph-securitydotorg.png",

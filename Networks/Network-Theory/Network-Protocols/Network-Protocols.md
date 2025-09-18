@@ -1,4 +1,6 @@
-# Network Protocols Cheatsheet
+# Network Protocols 
+
+This is a Cheatsheet of Network Protocols to then lookup details by following links
 
 ## TCP - 20 & 21 - FTP
 
@@ -220,6 +222,16 @@ IMAPS default port 993, [Internet messaging access protocol](https://en.wikipedi
 
 ## TCP - 995 - POP3S
 [[Mail-Operations]]
+
+## 1521,1522-1529 - Oracle TNS Listener
+
+[SnowWight Hackdocs](https://github.com/TheSnowWight/hackdocs/blob/master/pentesting/1521-1522-1529-pentesting-oracle-listener/README.md) updated
+```bash
+tnscmd10g status-p 1521 -h <IP> #The SID are inside: SERVICE=(SERVICE_NAME=<SID_NAME>)
+```
+
+See [[Oracle-TNS]] for hacking
+
 
 ## TCP - 1723 - 
 ## TCP - 1883 - MQTT

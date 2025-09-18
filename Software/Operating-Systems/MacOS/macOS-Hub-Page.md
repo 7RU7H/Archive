@@ -73,8 +73,60 @@ Preview Pane
 #### `Kernel API` [Cocoa](https://developer.apple.com/library/archive/documentation/macOSX/Conceptual/OSX_Technology_Overview/CocoaApplicationLayer/CocoaApplicationLayer.html): API used with macOS
 
 
+## HFS and APFS File systems
 
+2001: From MacOS 9 was replaced by MacOS X, a Unix-like operating system derived from the NeXTSTEP OS from NeXT Computer. This caused issues with the HFS+ file system (no permissions or hard linking)
 
+2017: APFS replaces HFS
+
+HFS:
+- 512 byte sectors
+- 32 addresses to access blocks
+- maximum number of allocation blocks is 2^32
+- boot volume resides in sectors 0 and 1
+- allocation file keeps track of the used and the unused allocation blocks
+- The catalogue file contains a catalogue of all the files and directories stored in the volume in a [B-tree](https://en.wikipedia.org/wiki/B-tree#:~:text=A%20B%2Dtree%20index%20creates,pages%20at%20the%20lowest%20level.) format
+- Attributes of the files are stored in the attributes file
+- File names are encoded in [UTF-16](https://en.wikipedia.org/wiki/UTF-16) and can be up to 255 UTF-16 code unit lengths
+- File permissions and hard links were not present in HFS
+- Dates beyond 6 February 2040 are unsupported
+- Maximum resolution of timestamps to the second
+- Snapshot capability was unavailable
+
+APFS (Apple File System container):
+- APFS supports timestamps up to 1 nanosecond.
+- Dates beyond 6 February 2040 are possible.
+- Full disk encryption is supported natively.
+- Snapshots are available for creating read-only, point-in-time file system instances.
+- Apple introduced redirect-on-write, a crash-protection feature. To avoid data corruption, data is written to new blocks, and the old ones are released once done instead of rewriting existing ones.
+- The maximum number of files stored in the system has been increased to 2^63
+- APFS uses GUID Partition Table (GPT)
+- Each container can contain multiple volumes
+
+`/home`, `/var` , `/opt`, `/etc`, `/tmp`, `/dev`, `/sbin`, `/bin`, etc like Linux are found as they would in a Linux File System:
+- `/private` contains `var`, `etc`, and `tmp` - require root permission to modify
+- `/Library`
+- `/Users`
+
+Domains:
+- Local Domain contains resources common to all users of the local computer
+- System Domain contains software developed and managed by Apple
+- User Domain contains user data and files
+- Network Domain contains network resources
+
+## File types
+
+`.plist` or property list files contain system configurations similar to the Windows Registry in Microsoft Windows
+
+`.app` files are application executables often found in the Applications directory
+
+`.dmg` files are macOS disk image files
+
+`.kext` files are kernel extension files **deprecated** - similar to Windows drivers
+
+`.dylib` dynamically loaded library files
+
+`.xar` files are archive files replacing `.pkg` package installer files
 ## References
 
 [HTB Academy MacOS fundamentals](https://academy.hackthebox.com/module/157/section/1520)
