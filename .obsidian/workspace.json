@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Security-Disciplines/Digital-Forensics/MacOS-Forensics/MacOS-DFIR.md",
+                "file": "Networks/Network-Theory/Network-Protocols/Oracle-TNS.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "MacOS-DFIR"
+              "title": "Oracle-TNS"
             }
           }
         ]
@@ -183,6 +183,11 @@
   },
   "active": "021a85d4e1b8964b",
   "lastOpenFiles": [
+    "Tools/Exploit-Frameworks/ODAT.md",
+    "Networks/Network-Theory/Network-Protocols/Oracle-TNS.md",
+    "Software/Operating-Systems/Linux/Linux-System-Administration/Linux-System-Administration.md",
+    "Networks/Network-Theory/Network-Protocols/Untitled.md",
+    "Security-Disciplines/Digital-Forensics/MacOS-Forensics/MacOS-DFIR.md",
     "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Windows-File-Transfers.md",
     "Tools/AD-Offensive/Impacket/Impacket-Cheatsheet.md",
     "Exploitation/Windows/Active-Directory/ACL-Abuse/GenericAll.md",
@@ -204,11 +209,6 @@
     "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Vectors.md",
     "Post-Exploitation/Post-Exploitation-Enumeration/Foothold-Enumeration.md",
     "Post-Exploitation/Post-Exploitation-Enumeration/Windows-Post-Exploitation-Info-Gathering.md",
-    "Exploitation/Shells/Reverse-Shells-Listing.md",
-    "Chaining-Exploits.md",
-    "Security-Disciplines/Digital-Forensics/MacOS-Forensics/MacOS-DFIR.md",
-    "Software/Operating-Systems/MacOS/macOS-Hub-Page.md",
-    "Security-Disciplines/Digital-Forensics/MacOS-Forensics/MacOS-Forensics.md",
     "Security-Disciplines/Digital-Forensics/MacOS-Forensics",
     "Development/Languages/Erlang",
     "ICS",

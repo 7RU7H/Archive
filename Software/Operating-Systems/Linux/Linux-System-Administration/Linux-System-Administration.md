@@ -1,7 +1,13 @@
-
 # Linux System Administration
 
 
+
+```bash
+# Which glibc does a machine has installed
+ldd --version
+```
+
+```
 ```bash 
 passwd $user # change password
 ```
