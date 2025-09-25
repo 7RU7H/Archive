@@ -47,18 +47,18 @@ diskutil
 diskutil apfs
 diskutil apfs list # list APFS volumes
 
-# List all volumes
+# List all volumes for volume number
 apfsutil $macdisk.img
 
 # Mount with apfs-fuse
-apfs-fuse mac-disk.img $dirToMountTo
+apfs-fuse -v $volumeNumber mac-disk.img $dirToMountTo
 
-# OS version
+# OS version - System Volume
 cat /System/Library/CoreServices/SystemVersion.plist
 # Mac Serial Number is found either (use sqlite DB browser):
 /private/var/folders/*/$DARWIN_USER_DIR/C/locationd/consolidated.db /private/var/folders/*/$DARWIN_USER_DIR/C/locationd/cache_encryptedA.db
 # Installation date
-stat -x /private/var/db/.AppleSetupDone
+stat -x /private/var/db/.AppleSetupDone # just `stat` no flags on linux 
 plistutil -p /private/var/db/softwareupdate/journal.plist
 
 # Timezone enumeration involves following the symlink 
@@ -109,6 +109,17 @@ log show --last 1m
 log show --predicate 'subsystem=="com.apple.sharing" and category=="AirDrop" and eventMessage contains "Discoverable"'
 # Filter for logins
 log show --info --predicate 'eventMessage contains "com.apple.system.loginwindow" and eventMessage contains "SessionAgentNotificationCenter"' 
+
+
+# Network interfaces
+/Library/Preferences/SystemConfiguration/NetworkInterfaces.plist
+# DHCP settings (file.plist per interface!) en0 is builtin
+/private/var/db/dhcpclient/leases/en0.plist
+# Wireless
+/Library/Preferences/com.apple.wifi.known-networks.plist
+
+log show --info --predicate 'senderImagePath contains "IPConfiguration" and (eventMessage contains "SSID" or eventMessage contains "Lease" or eventMessage contains "network changed")'
+
 ```
 
 
