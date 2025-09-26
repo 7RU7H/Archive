@@ -14,6 +14,13 @@ pip3 install .
 # deactivate # To deactivate virtual environment
 ```
 
+Python proxy to [[BurpSuite]] 
+```python
+# Add by globals
+proxy = { "http": "http://127.0.0.1:8080" }
+# Modify existing request args and append proxies=proxy
+r.request(args,args, proxies=proxy)
+```
 #### Fundamentals
 ```python 
 #! /usr/bin/python3 # Shebang line
@@ -236,8 +243,19 @@ res = len(re.findall('', string))#, re.IGNORECASE))
 res = [re.sub(pattern, '', i) for i in list] 
 ```
 
+#### String Generation
+```python
+four_zeroes_to_nine_thousand_and_ninety_nine = [str(i).zfill(4) for i in range(10000)]
+
+
+# 000A -> 999Z
+result = [f"{str(i).zfill(3)}{letter}" 
+         for i in range(10000) 
+         for letter in 'ABCDEFGHIJKLMNOPQRSTUVWXYZ']
+```
+
 #### Booleans
-Ternary and shortcircuiting
+Ternary and short-circuiting
 ```python
 is_ternary = True
 ternary_op_message = "This message will print at evaluation of the boolean  of is_tenery with if and else" if is_tenary else "Not ternary"
@@ -274,12 +292,8 @@ print(s.recv(buffer_size).decode())
 s.send("Message".encode())
 s.close()
 ```
-### pwntools
-```python
-import pwntools
-```
 
-## Testing
+#### Testing
 
 Unit Testing
 ```python
@@ -332,9 +346,9 @@ def test_bad_type(self):
 
 ```
 
-# Advanced
+## Advanced
 
-### Subproceses
+#### Subproceses
 
 [Reference](https://www.digitalocean.com/community/tutorials/how-to-use-subprocess-to-run-external-programs-in-python-3)
 
@@ -368,7 +382,7 @@ def examples_subprocess():
 exit_code = subprocess.call
 ```
 
-### Bitstring manipulation
+#### Bitstring manipulation
 ```python
 def bitstring_to_bytes(s):
     v = int(s, 2)
@@ -388,7 +402,7 @@ for i in xrange(n,len(base)-n,n):
   result += num
 print(bitstring_to_bytes(result))
 ```
-### Named Capture Groups
+#### Named Capture Groups
 
 [Mozilla - Reference/Regular_expressions/Named_capturing_group](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Named_capturing_group) states Named Capture Groups as being: *"A named capturing group is a particular kind of [capturing group](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Capturing_group) that allows to give a name to the group.*" 
 ```python
@@ -397,7 +411,7 @@ m = re.search('[e]\s:\s(?P<e>\d+){0,1}',text.decode('utf-8'))
     e = int(m.group('e'))
 ```
 
-### Printing NTML Hashes
+#### Printing NTML Hashes
 
 ```python
 import hashlib,binascii
@@ -405,7 +419,7 @@ hash = hashlib.new('md4', "".encode('utf-16le')).digest()
 print(binascii.hexlify(hash))
 ```
 
-### Async 
+#### Async 
 ```python
 async def put_proc_queue():
 #tools_dictionary key and the value become
@@ -439,7 +453,7 @@ await run_parallelism(
 )	
 ```
 
-## Encoding, Packing Bytes and Strings
+#### Encoding, Packing Bytes and Strings
 https://tryhackme.com/room/bufferoverflowprep
 https://docs.python.org/3/library/struct.html
 https://docs.pwntools.com/en/stable/
@@ -498,8 +512,12 @@ with socket.socket() as s:
 
 ```
 
-Pwntool Packing
+### pwntools
 ```python
+import pwntools
+
+# Pwntool Packing
+
 >>> p8(0)
 b'\x00'
 >>> p32(0xdeadbeef)
@@ -541,7 +559,7 @@ with open('serialized.pkl', 'rb') as f:
     data = pickle.load(f)
 ```
 
-Pickle exploit
+#### Pickle exploit
 ```python
 import pickle, base64, os
 
@@ -608,3 +626,4 @@ https://docs.pwntools.com/en/stable/
 [w3schools - Python](https://www.w3schools.com/python/)
 [Mozilla - Reference/Regular_expressions/Named_capturing_group](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Named_capturing_group)
 [notes.vulndev - Python](https://notes.vulndev.io/wiki/misc/language-and-framwork-specifics/python)
+[THM Custom Tooling Python](https://tryhackme.com/room/customtoolingpython)

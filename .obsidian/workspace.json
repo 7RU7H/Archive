@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exploitation/CVEs/CVE-2024-10924.md",
+                "file": "Development/Languages/Python/Useful-Python.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CVE-2024-10924"
+              "title": "Useful-Python"
             }
           }
         ]
@@ -183,14 +183,18 @@
   },
   "active": "021a85d4e1b8964b",
   "lastOpenFiles": [
-    "Tools/Network-Based/Proxying-And-Pivoting/Proxychains.md",
+    "Development/Languages/PHP/PHP.md",
+    "Exploitation/PHP-Object-Injection.md",
+    "Development/Languages/Python/Useful-Python.md",
+    "Exploitation/Shells/TTY-Spawning.md",
+    "Exploitation/Shells/Shells.md",
+    "Exploitation/Shells/Reverse-Shells-Listing.md",
     "Exploitation/CVEs/CVE-2024-10924.md",
+    "Tools/Network-Based/Proxying-And-Pivoting/Proxychains.md",
     "Networks/Proxies.md",
     "Post-Exploitation/Networking/Pivoting-Tunnelling-And-Redirection-Master-Class-Darnell-And-Thurner-Notes.md",
     "Exploitation/Chaining-Exploits.md",
     "Exploitation/Web-Application-Hacking/Web-Exploits/XSS/XSS-Cheatsheet.md",
-    "Exploitation/Shells/Reverse-Shells-Listing.md",
-    "Exploitation/Shells/Shells.md",
     "Tools/Web-Applications-Attacking/Nikto-Cheatsheet.md",
     "Reconnaissance/Active-Information-Gathering/Active-Recon.md",
     "Security-Disciplines/Digital-Forensics/MacOS-Forensics/MacOS-DFIR.md",
@@ -205,10 +209,6 @@
     "Post-Exploitation/Lateral-Movement/Active-Directory-Lateral-Movement/Active-Directory-Lateral-Movement.md",
     "Software/Services/Password-Managers/Hacking-KeePass.md",
     "Software/Operating-Systems/Windows/Windows-Commands/Windows-Commands.md",
-    "Tools/Forensics/Volatility3.md",
-    "Tools/Exploit-Frameworks/Metasploit/Metasploit.md",
-    "Security-Disciplines/Adversary-Emulation.md",
-    "Security-Disciplines/Cyberwarfare/Practice/Default-Toolkit-Inventory.md",
     "Security-Disciplines/Digital-Forensics/MacOS-Forensics",
     "Development/Languages/Erlang",
     "ICS",
