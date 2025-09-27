@@ -50,6 +50,10 @@ filename:.git-credentials
 Dumping tools dump a Repository from a URL
 
 [git-dumper](https://github.com/arthaud/git-dumper)
+```bash
+# pip install git-dumper # official way, but 
+git-dumper http://sadwebsite.$tdl/.git outputDirectory # --proxy 127.0.0.1 8080
+```
 
 #### Manual Enumeration
 

