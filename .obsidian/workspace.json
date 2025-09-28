@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Development/Languages/Python/Useful-Python.md",
+                "file": "Alledged-Real-World-Stuff/Physics-Glossary/Quantum-Mechanics-Glossary.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Useful-Python"
+              "title": "Quantum-Mechanics-Glossary"
             }
           }
         ]
@@ -183,8 +183,11 @@
   },
   "active": "021a85d4e1b8964b",
   "lastOpenFiles": [
-    "Software/Services/GitHub/Git-Repository-Hacking.md",
+    "README.md",
+    "Alternate-Resources.md",
     "Development/Languages/Python/Useful-Python.md",
+    "Alledged-Real-World-Stuff/Rational.md",
+    "Software/Services/GitHub/Git-Repository-Hacking.md",
     "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Linux-File-Transfers.md",
     "Post-Exploitation/Data-Ex&Infiltration/Data-Exfiltration/Data-Exfiltration.md",
     "Post-Exploitation/Data-Ex&Infiltration/Data-Exfiltration/Data-Exfiltration-Over-DNS.md",
@@ -206,9 +209,6 @@
     "Networks/Network-Theory/Network-Protocols/Oracle-TNS.md",
     "Tools/Exploit-Frameworks/ODAT.md",
     "Software/Operating-Systems/Linux/Linux-System-Administration/Linux-System-Administration.md",
-    "Networks/Network-Theory/Network-Protocols/Untitled.md",
-    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Windows-File-Transfers.md",
-    "Tools/AD-Offensive/Impacket/Impacket-Cheatsheet.md",
     "Security-Disciplines/Digital-Forensics/MacOS-Forensics",
     "Development/Languages/Erlang",
     "ICS",
