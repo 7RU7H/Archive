@@ -46,7 +46,15 @@ Nibble: Four bits of binary data. There are 16 (2^4) potential values.
 
 Plain text: Human-legible text. Can be transformed into cipher text via an encryption algorithm.
 
+Pseudorandom Number Generator (PRNG): generate random numbers algorithmically based on an initial seed value and are not True Random Number Generators, either:
+- Statistical PRNG
+- Cryptographically secure PRNG
+
+Randomness: property referring to the lack of pattern observability
+
 Salt: A string appended to a password to create a unique digest when run through a hashing algorithm.
+
+Seeding: An initial value, a seed, that is use to generate data 
 
 Snake oil: cryptographic method considered bogus or fraudulent
 
@@ -58,7 +66,7 @@ Symmetric-key encryption: Model of encryption that uses the same shared key for 
 
 Transposition cipher: Rearranges the order of the characters of a plain text by key the ordering of encrypted output.
 
-
+True Random Number Generators (TRNG): generate randomness by relying on unpredictable physical phenomena like thermal noise or radioactive decay.
 ## References
 
 [THM Room Introduction to Cryptography](https://tryhackme.com/room/cryptographyintr)

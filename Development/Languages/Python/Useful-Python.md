@@ -265,6 +265,34 @@ print("Short circuiting using or with is_ternary and is_short_circuiting being T
 print("is keyword check the value in memory is the same")
 ```
 
+#### Numpy
+
+
+
+Monte Carlo with `numpy` and `matplotlib` from [RiskByNumber YouTube Video: A Simple Solution for Really Hard Problems: Monte Carlo Simulation ](https://www.youtube.com/watch?v=slbZ-SLpIgg)
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+simulations = 10000
+hourA = 1 # least time for a
+hourB = 5 # maximum time for a
+hourC = 2 # least time for b
+hourD = 6 # maximum time for b
+
+a = np.random.uniform(hourA, hourB, simulations)
+b = np.random.uniform(hourC, hourD, simulations)
+
+duration = a + b
+
+# Interpret duration with matplotlib
+plt.figure(figsize = (3, 1.5)
+plt.hist(duration, density = True) # create histogram, plotting everything in the form of probability densities
+plt.avxline(9, color = 'r') # add a verticle line at 9 
+plt.show()
+print((duration > 9).sum()/simulations)
+
+```
 
 ## Some Modules and Packages for Hackers
 ### requests
@@ -668,3 +696,4 @@ https://docs.pwntools.com/en/stable/
 [Mozilla - Reference/Regular_expressions/Named_capturing_group](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Named_capturing_group)
 [notes.vulndev - Python](https://notes.vulndev.io/wiki/misc/language-and-framwork-specifics/python)
 [THM Custom Tooling Python](https://tryhackme.com/room/customtoolingpython)
+[RiskByNumber YouTube Video: A Simple Solution for Really Hard Problems: Monte Carlo Simulation ](https://www.youtube.com/watch?v=slbZ-SLpIgg)

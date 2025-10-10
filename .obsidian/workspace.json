@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Alledged-Real-World-Stuff/Physics-Glossary/Quantum-Mechanics-Glossary.md",
+                "file": "Development/Languages/Python/Useful-Python.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Quantum-Mechanics-Glossary"
+              "title": "Useful-Python"
             }
           }
         ]
@@ -183,6 +183,12 @@
   },
   "active": "021a85d4e1b8964b",
   "lastOpenFiles": [
+    "Alledged-Real-World-Stuff/Business.md",
+    "Alledged-Real-World-Stuff/Life.md",
+    "Social-Engineering/Negotiation.md",
+    "Social-Engineering/Social-Engineering.md",
+    "Cryptography/Cryptography-Glossary.md",
+    "Alledged-Real-World-Stuff/Physics-Glossary/Quantum-Mechanics-Glossary.md",
     "README.md",
     "Alternate-Resources.md",
     "Development/Languages/Python/Useful-Python.md",
@@ -203,12 +209,6 @@
     "Post-Exploitation/Networking/Pivoting-Tunnelling-And-Redirection-Master-Class-Darnell-And-Thurner-Notes.md",
     "Exploitation/Chaining-Exploits.md",
     "Exploitation/Web-Application-Hacking/Web-Exploits/XSS/XSS-Cheatsheet.md",
-    "Tools/Web-Applications-Attacking/Nikto-Cheatsheet.md",
-    "Reconnaissance/Active-Information-Gathering/Active-Recon.md",
-    "Security-Disciplines/Digital-Forensics/MacOS-Forensics/MacOS-DFIR.md",
-    "Networks/Network-Theory/Network-Protocols/Oracle-TNS.md",
-    "Tools/Exploit-Frameworks/ODAT.md",
-    "Software/Operating-Systems/Linux/Linux-System-Administration/Linux-System-Administration.md",
     "Security-Disciplines/Digital-Forensics/MacOS-Forensics",
     "Development/Languages/Erlang",
     "ICS",

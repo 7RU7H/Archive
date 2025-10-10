@@ -1,4 +1,0 @@
-# MacOS Forensics
-
-[[MacOS]]
-

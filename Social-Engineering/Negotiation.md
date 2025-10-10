@@ -49,6 +49,15 @@ These are Principles not rules, modified here as a `key:value` pair; `principle:
 4. Insist on using objective criteria :  ` : has a criteria or everything has no price or bargain or value gain`
 
 
+Inspired by the Bastard negotiation strategy from: [FortNine How to Rip Off the Dealership - Bastard Negotiating Tactics](https://www.youtube.com/watch?v=Fbr3JZAXDxA) 
+Preparation:
+- How and when participate gets value from the negotiation 
+- What timing makes the successful negotiation most likely based on time
+- Go to the table know what you want, how much it is going to cost plus an alternatives to bluff with and to settle with if miscalculation that would result in the long term more cost 
+At Negotiation:
+1. Bluff what is proverbially on the table - exhaust decision making, prop up resolution to then...
+2. Then rearrange the table with a swap due to attempting to get preferential deal 
+
 #### Eclectic Insights
 
 Important Ferengi Rules of Acquisition for negotiation - [memory-alpha.fandom.com/wiki/Rules_of_Acquisition](https://memory-alpha.fandom.com/wiki/Rules_of_Acquisition)  modified here as a `key:value` pair; `principle:foridiotslikeme`::
@@ -101,3 +110,4 @@ Unofficial rules
 [harvard.edu/ - principled-negotiation-focus-interests-create-value/](https://www.pon.harvard.edu/daily/negotiation-skills-daily/principled-negotiation-focus-interests-create-value/)
 [memory-alpha.fandom.com/wiki/Rules_of_Acquisition](https://memory-alpha.fandom.com/wiki/Rules_of_Acquisition)
 [YouTube - Former FBI Agent Explains How to Negotiate - WIRED](https://www.youtube.com/watch?v=yH5ChB7awcM)
+[FortNine How to Rip Off the Dealership - Bastard Negotiating Tactics](https://www.youtube.com/watch?v=Fbr3JZAXDxA) 
