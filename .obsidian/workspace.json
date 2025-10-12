@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Development/Languages/Python/Useful-Python.md",
+                "file": "Exploitation/CVEs/CVE-2025-55241.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Useful-Python"
+              "title": "CVE-2025-55241"
             }
           }
         ]
@@ -183,6 +183,8 @@
   },
   "active": "021a85d4e1b8964b",
   "lastOpenFiles": [
+    "Development/Languages/Python/Useful-Python.md",
+    "Exploitation/CVEs/CVE-2025-55241.md",
     "Alledged-Real-World-Stuff/Business.md",
     "Alledged-Real-World-Stuff/Life.md",
     "Social-Engineering/Negotiation.md",
@@ -191,7 +193,6 @@
     "Alledged-Real-World-Stuff/Physics-Glossary/Quantum-Mechanics-Glossary.md",
     "README.md",
     "Alternate-Resources.md",
-    "Development/Languages/Python/Useful-Python.md",
     "Alledged-Real-World-Stuff/Rational.md",
     "Software/Services/GitHub/Git-Repository-Hacking.md",
     "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Linux-File-Transfers.md",
@@ -208,7 +209,6 @@
     "Networks/Proxies.md",
     "Post-Exploitation/Networking/Pivoting-Tunnelling-And-Redirection-Master-Class-Darnell-And-Thurner-Notes.md",
     "Exploitation/Chaining-Exploits.md",
-    "Exploitation/Web-Application-Hacking/Web-Exploits/XSS/XSS-Cheatsheet.md",
     "Security-Disciplines/Digital-Forensics/MacOS-Forensics",
     "Development/Languages/Erlang",
     "ICS",
