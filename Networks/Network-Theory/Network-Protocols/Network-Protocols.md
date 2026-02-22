@@ -147,6 +147,16 @@ nc -nv <IP> 143
 openssl s_client -connect <IP>:993 -quiet
 ```
 
+
+```bash
+telnet $ip 143
+LOGIN
+SELECT
+FLAGS
+FETCH $emailNumber boby[] # To read an emai;
+LOGOUT
+```
+
 ## TCP - 389 - LDAP
 
 Lightweight Directory Access Protocol - [[LDAP-Recon]]
@@ -376,3 +386,4 @@ Erlang is a programming language designed around distributed computing and will 
 [speedguide](https://www.speedguide.net/port.php?)
 [Erlang-arce blogpost from Mubix](https://malicious.link/post/2018/erlang-arce/)
 [Wikipedia trivial file transfer protocol](https://en.wikipedia.org/wiki/Trivial_File_Transfer_Protocol)
+[THM networking core protocols](https://tryhackme.com/room/networkingcoreprotocols)

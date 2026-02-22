@@ -42,7 +42,10 @@ Want a GUI with quick filters instead of [[Tcpdump-Cheatsheet]] and [[Bash]]?
 -   Investigating and learning protocol details, such as response codes and payload data.
 -   Create Firewall rules on the for various vendors from a couple of clicks 
 
-
+```bash
+# Dumps the TLS keys to the `ssl-key.log`
+chromium --ssl-key-log-file=~/ssl-key.log` Dumps the TLS keys to the `ssl-key.log`
+```
 ## Capture filters
 Filter by interface discard any from unselected interfaces like Display Filters uses the [Berkley Packet Filter](https://biot.com/capstats/bpf.html) syntax. 
 
@@ -74,9 +77,12 @@ Start button to start capturing:
 Red square to stop and green fin button to restart the capture.
 ![Stop](wireshark-stop.png)
 
-## Great GUI trick and Packet Navigation
+## Great GUI tricks and Packet Navigation
 
 TL;DR - Follow packets and learn filter logic
+
+#### Import TLS certificates
+`File -> Preferences -> Protocols -> TLS `
 
 #### Prepared Filters
 A Glossary exist under `Analyze -> Display Filter Expression`; it has a search bar for quality of life.
@@ -205,3 +211,4 @@ Similarly to [[WiFi-Hacking]] tool like `air-x-ng` series you can crack some WIF
 [THM Wireshark Room Wireshark Basics](https://tryhackme.com/room/wiresharkthebasics)  
 [THM Packet Operations Room](https://tryhackme.com/room/wiresharkpacketoperations)
 [The Other THM Wireshark Room - Wireshark 101](https://tryhackme.com/room/wireshark)
+[THM Networking Secure Protocols Room](https://tryhackme.com/room/networkingsecureprotocols)

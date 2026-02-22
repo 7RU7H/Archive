@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Development/Regular-Expressions.md",
+                "file": "Tools/Network-Based/Packet-Analysis/Wireshark/Wireshark-Useful-Packet-Filters.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Regular-Expressions"
+              "title": "Wireshark-Useful-Packet-Filters"
             }
           }
         ],
@@ -78,7 +78,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Git",
+                "query": "wireshark",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -198,6 +198,10 @@
   },
   "active": "ab3d8dca0387ff21",
   "lastOpenFiles": [
+    "Tools/Network-Based/Packet-Analysis/Wireshark/Wireshark.md",
+    "Networks/Network-Theory/Network-Protocols/Network-Protocols.md",
+    "Networks/Network-Theory/Routing.md",
+    "Development/Regular-Expressions.md",
     "Development/Languages/C/Useful-C.md",
     "Development/Languages/C/Concurrent-C.md",
     "Development/Languages/C/Bad-C.md",
@@ -221,10 +225,6 @@
     "Software/Services/GitHub/Git-Repository-Hacking.md",
     "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Linux-File-Transfers.md",
     "Post-Exploitation/Data-Ex&Infiltration/Data-Exfiltration/Data-Exfiltration.md",
-    "Post-Exploitation/Data-Ex&Infiltration/Data-Exfiltration/Data-Exfiltration-Over-DNS.md",
-    "Post-Exploitation/Data-Ex&Infiltration/Data-Exfiltration/Data-Exfiltration-Over-ICMP.md",
-    "Exploitation/Shells/Reverse-Shells-Listing.md",
-    "Development/Languages/PHP/PHP.md",
     "Security-Disciplines/Digital-Forensics/MacOS-Forensics",
     "Development/Languages/Erlang",
     "ICS",
