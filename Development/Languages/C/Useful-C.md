@@ -100,7 +100,7 @@ int getTotalTheMemberVars(someStruct * pStruct)
 // The array is "syntactic sugar" for the memory address
 // char * contains the address of the first byte of a string in memory
 // The size of an array is its actual size, where the pointers is system dependent 32-bit and 64bit
-char someText[] = "Subscribe to Dave's Garage on Youtube, he bought Pinball on Windows amongst alot other things!"; // \x00 terminates a string! 
+char someText[] = "Subscribe to Dave's Garage on Youtube, he brought Pinball to Windows amongst alot other things!"; // \x00 terminates a string! 
 char * pSomeText = someText; 
 int aPinballLoses[] = { 1, 2, 3, 4, 5};
 int * pPinballLoses = aPinballLoses;
@@ -115,7 +115,7 @@ pPinballLoses++; // 32-bit integers is a 4 byte move 8 + 8 + 8 + 8 or 4*8 = 32
 //pIndirectPlugOfThePlugOfTheVideo 
 //Points to...
 //pMicrosoftAndAIModelsIntoResurrectingPinball
-char * pMicrosoftAndAIModelsIntoResurrectingPinball = "Microsoft putting Pinball on Windows 11 will make some people switch Windows 11";
+char * pMicrosoftAndAIModelsIntoResurrectingPinball = "Microsoft putting Pinball on Windows 11 will make some people switch to Windows 11";
 char ** pIndirectPlugOfThePlugOfTheVideo = &pMicrosoftAndAIModelsIntoResurrectingPinball;
 // So
 return *pIndirectPlugOfThePlugOfTheVideo;

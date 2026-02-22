@@ -1,6 +1,6 @@
 # Ancient Fire starting
 
-This page is just a regurgitation of a awesome video with Dr. Bill Schindler, a professor of archaeology and anthropology from the [WIRED YouTube video: How to Start a Fire in a Survival Situation](https://www.youtube.com/watch?v=ZPr-a8kht2E)
+This page is just a regurgitation of a awesome video with Dr. Bill Schindler, a professor of archaeology and anthropology from the [WIRED YouTube video: How to Start a Fire in a Survival Situation](https://www.youtube.com/watch?v=ZPr-a8kht2E).
 
 Its all about HEAT generation and retention
 
@@ -19,6 +19,7 @@ If possible a bow drill can be made with string to wrap around the drill (use a 
 
 Otherwise, wet hands and start with the drill a lowest part of one hand and rotate it fully to generate as many rotations as possible before rotating the opposite direction.
 
+Or get or make a Adiabatic compression lighter.
 
 ## References
 

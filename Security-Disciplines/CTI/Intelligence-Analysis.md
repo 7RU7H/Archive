@@ -9,7 +9,7 @@ Although this is a circular process is also intractable so is not fixed linear s
 Planning
 - For example: Policy Makers -> Intelligence community (What is X?)
 Collection
-- [[OSINT]], [[HUMINT]], [[GEOINT]], [[IMINT]], etc...
+- [[OSINT]], [[HUMINT]], [[IMINT]], [[IMINT]], etc...
 Procession
 - Translation, Curation, Database building, Provide context to Source information, etc
 Analysis 
