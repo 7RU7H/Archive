@@ -73,16 +73,33 @@ WHERE something > "Something" -- need to confirm measurements
 WHERE something <= "Something" -- need to confirm measurements
 WHERE something >= "Something" -- need to confirm measurements
 
--- FUNCTION
+-- FUNCTIONs
 
 -- CONCAT()
 SELECT CONCAT(example_column1, " is a type of" example_column2, " book.") AS example_column3 FROM example_table_name;
 -- GROUP_CONCAT
 SELECT example_column1 GROUP_CONCAT(example_column1, " is a type of" example_column2, " book.") AS example_column3 FROM example_table_name GROUP BY example_column1;
+-- SUBSTRING()
+-- WHERE 1 and 4 are substring lengths
+SELECT SUBSTRING(example_column1, 1, 4) AS example_column2 FROM example_table_name;
+-- LENGTH()
+SELECT LENGTH(example_column1) AS example_column2 FROM example_table_name;
 
 -- Aggregate Function
+-- COUNT()
 SELECT COUNT(*) example_column1 FROM example_table_name;
+-- SUM()
+SELECT SUM(example_column1) AS example_column2 FROM example_table_name;
+-- MAX()
+SELECT MAX(example_column1) AS example_column1 FROM example_table_name;
+-- MIN() 
+SELECT MIN(example_column1) AS example_column2 FROM example_table_name;
+```
 
+Useful Combinations
+```sql
+-- Output all entries by those not ending in a 0 by a specific column
+SELECT * FROM example_column1 WHERE SUBSTRING(example_column1, LENGTH(example_column1), 1) <> '0'
 ```
 ## Database Cheatsheets and Helpsheets
 
