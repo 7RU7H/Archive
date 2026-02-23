@@ -2,12 +2,15 @@
 
 
 ```bash
-sqlmap -u $URL
-```
-
-```bash 
+# Use single quotes
+sqlmap -u '$URL'
 --level # 1-5
 --risk # 1-3 
+--level=5 --risk=3 --dbs # list all databases
+--level=5 --risk=3 -D $databaseName
+-level=5 --risk=3 -D $databaseName --tables
+
+
 ```
 
 

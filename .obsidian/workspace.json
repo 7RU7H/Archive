@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Development/Regular-Expressions.md",
+                "file": "Software/Operating-Systems/Linux/Linux-Commands/Linux-Module-Commands.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Regular-Expressions"
+              "title": "Linux-Module-Commands"
             }
           },
           {
@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/Network-Based/Packet-Analysis/Wireshark/Wireshark-Useful-Packet-Filters.md",
+                "file": "Software/Services/Databases/Database-Hacking.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Wireshark-Useful-Packet-Filters"
+              "title": "Database-Hacking"
             }
           }
         ],
@@ -78,7 +78,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "wireshark",
+                "query": "Databases",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -89,7 +89,8 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -198,10 +199,17 @@
   },
   "active": "ab3d8dca0387ff21",
   "lastOpenFiles": [
+    "Tools/Network-Based/Packet-Analysis/Tcpdump-Cheatsheet.md",
+    "Exploitation/Web-Application-Hacking/Web-Shells.md",
+    "Exploitation/Shells/Bind-And-Reverse-Shells-Defined.md",
+    "Tools/Web-Applications-Attacking/Content-Discovery-Tools/Gobuster-Cheatsheet.md",
+    "Software/Operating-Systems/Linux/Linux-Commands/Linux-Module-Commands.md",
+    "Development/Regular-Expressions.md",
+    "Tools/Web-Applications-Attacking/SQLmap-CheatSheet.md",
+    "Tools/Network-Based/Packet-Analysis/Wireshark/Wireshark-Useful-Packet-Filters.md",
     "Tools/Network-Based/Packet-Analysis/Wireshark/Wireshark.md",
     "Networks/Network-Theory/Network-Protocols/Network-Protocols.md",
     "Networks/Network-Theory/Routing.md",
-    "Development/Regular-Expressions.md",
     "Development/Languages/C/Useful-C.md",
     "Development/Languages/C/Concurrent-C.md",
     "Development/Languages/C/Bad-C.md",
@@ -218,13 +226,6 @@
     "Social-Engineering/Negotiation.md",
     "Social-Engineering/Social-Engineering.md",
     "Cryptography/Cryptography-Glossary.md",
-    "Alledged-Real-World-Stuff/Physics-Glossary/Quantum-Mechanics-Glossary.md",
-    "README.md",
-    "Alternate-Resources.md",
-    "Alledged-Real-World-Stuff/Rational.md",
-    "Software/Services/GitHub/Git-Repository-Hacking.md",
-    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Linux-File-Transfers.md",
-    "Post-Exploitation/Data-Ex&Infiltration/Data-Exfiltration/Data-Exfiltration.md",
     "Security-Disciplines/Digital-Forensics/MacOS-Forensics",
     "Development/Languages/Erlang",
     "ICS",

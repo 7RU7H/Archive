@@ -221,9 +221,10 @@ strings -e l # 16-bit littleendian
 #### tar
 ```bash
 tar -xf archive.tar
--x tells tar to extract files from an archive.
--f tells tar that the next argument will be the name of the archive to operate on
+-x # tells tar to extract files from an archive.
+-f # tells tar that the next argument will be the name of the archive to operate on
 tar -zxvf file
+```
 
 #### tr
 #TR for TRANSLATIONS!

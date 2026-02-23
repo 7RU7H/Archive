@@ -1,5 +1,6 @@
-# Tcpdump
-Tcpdump is *" a powerful command-line packet analyzer; and libpcap, a portable C/C++ library for network traffic capture*
+# `tcpdump`
+
+`tcpdump` is *" a powerful command-line packet analyzer; and libpcap, a portable C/C++ library for network traffic capture*.  Written in C and C++ along with its library `libpcap` for Unix-like systems it was later ported to Windows with a corresponding library `winpcap`.
 
 To capture capture traffic:
 ```bash
