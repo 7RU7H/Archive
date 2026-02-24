@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Development/Languages/JavaScript/JavaScript.md",
+                "file": "Security-Disciplines/SOC.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "JavaScript"
+              "title": "SOC"
             }
           }
         ],
@@ -78,7 +78,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Wireshark",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -89,7 +89,8 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -196,9 +197,22 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ab3d8dca0387ff21",
+  "active": "904463d60d8efa8d",
   "lastOpenFiles": [
+    "Security-Disciplines/Incident-Response/Incident-Response.md",
+    "Security-Disciplines/SOC.md",
+    "Brain-Hacking/Question-Based-Methodologies/Question-Based-Forensics-Methodology.md",
+    "Brain-Hacking/Question-Based-Methodologies/Question-Based-Reversing-Methodology.md",
     "Brain-Hacking/Question-Based-Methodologies/Question-Based-Web-Application-Hacking-Methodology.md",
+    "Cryptography/Hashing.md",
+    "Cryptography/De-Or-En-Cryption.md",
+    "Cryptography/Cracking-Files-And-Directories.md",
+    "Cryptography/Asymmetric-Encryption.md",
+    "Cryptography/Cryptography.md",
+    "Cryptography/Cryptography-Glossary.md",
+    "Cryptography/TALK-Understand-Cryptography-for-Offensive-Security-with-Ayub-Yusuf.md",
+    "Cryptography/TALK-GUR-RIBYHGVBA-BS-PELCGBTENCUL.md",
+    "Cryptography/RSA-Encryption.md",
     "Development/Languages/JavaScript/JavaScript.md",
     "Exploitation/Web-Application-Hacking/Web-Concepts/HTML.md",
     "Development/Languages/PowerShell/PowerShell.md",
@@ -211,20 +225,7 @@
     "Exploitation/Shells/Bind-And-Reverse-Shells-Defined.md",
     "Tools/Web-Applications-Attacking/Content-Discovery-Tools/Gobuster-Cheatsheet.md",
     "Software/Operating-Systems/Linux/Linux-Commands/Linux-Module-Commands.md",
-    "Development/Regular-Expressions.md",
-    "Tools/Web-Applications-Attacking/SQLmap-CheatSheet.md",
-    "Networks/Network-Theory/Network-Protocols/Network-Protocols.md",
-    "Networks/Network-Theory/Routing.md",
-    "Development/Languages/C/Useful-C.md",
-    "Development/Languages/C/Concurrent-C.md",
-    "Development/Languages/C/Bad-C.md",
-    "Hardware/Hardware-Maintenance/USB-Maintenance.md",
-    "Wireless-Hacking/WiFi-Hacking.md",
-    "Networks/Network-Theory/Network-Protocols/Oracle-TNS.md",
-    "Alledged-Real-World-Stuff/Starting-A-Fire.md",
-    "Reconnaissance/IMINT/IMINT.md",
     "Reconnaissance/IMINT",
-    "Exploitation/CVEs/CVE-2025-55241.md",
     "Security-Disciplines/Digital-Forensics/MacOS-Forensics",
     "Development/Languages/Erlang",
     "ICS",

@@ -8,7 +8,7 @@ More commonly as of 2020s referred to as the [[Purple-Team]], Incident Response 
 
 ## Preparation
 
-
+Three pillars of SOC People, Process, Technology
 
 ## IR and IM
 
