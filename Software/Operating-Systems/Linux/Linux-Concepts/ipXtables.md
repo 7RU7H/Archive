@@ -1,5 +1,6 @@
-
 # iptables and ip6tables
+
+[[nftables]] is considered to be the successor.
 
 
 Commands:

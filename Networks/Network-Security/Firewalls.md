@@ -12,21 +12,42 @@ Reject: Sends Pack to confirm rejected connection.
 
 A filtering network gateway is a type of firewall that protects an entire network, usually installed on a dedicated machine configured as a gateway for the network so that it can parse all packets that pass in and out of the network. Whereas local firewall is a software service on one machine in order to filter or limit access to some local services and/or preventing rogue outgoing connections. More specific typology:
 
--   Packet-Filtering Firewall: A Packet Filter, filters packets by rules detirmined in the Access Control List(ACL). Packet-filtering inspects the protocol, source and destination IP addresses, and source and destination ports in the case of TCP and UDP datagrams. It is a stateless inspection firewall. 
--   Circuit-Level Gateway: In addition to the features offered by the packet-filtering firewalls, circuit-level gateways can provide additional capabilities, such as checking TCP three-way-handshake against the firewall rules.
--   Stateful Inspection Firewall: Track of the established TCP sessions, therefore it can detect and block any TCP packet outside an established TCP session.
--   Proxy Firewall: A proxy firewall is also referred to as Application Firewall (AF) and Web Application Firewall (WAF). It is designed to masquerade as the original client and requests on its behalf. This process allows the proxy firewall to inspect the contents of the packet payload instead of being limited to the packet headers. Generally speaking, this is used for web applications and does not work for all protocols.
--   Next-Generation Firewall (NGFW): It can  monitor all network layers, from OSI Layer 2 to OSI Layer 7. It has application awareness and control. 
--   Cloud Firewall or Firewall as a Service (FWaaS): FWaaS replaces a hardware firewall in a cloud environment. Its features might be comparable to NGFW, depending on the service provider; however, it benefits from the scalability of cloud architecture. 
 
-##  Next-Generation Firewalls
+- Stateless Firewall:
+	- Basic filtering  
+	- No track of previous connections  
+	- Efficient for high-speed networks
+-  Packet-Filtering Firewall: 
+	- A Packet Filter, filters packets by rules detirmined in the Access Control List(ACL). Packet-filtering inspects the protocol, source and destination IP addresses, and source and destination ports in the case of TCP and UDP datagrams. It is a stateless inspection firewall. 
+- Circuit-Level Gateway: 
+	- In addition to the features offered by the packet-filtering firewalls, circuit-level gateways can provide additional capabilities, such as checking TCP three-way-handshake against the firewall rules.
+- Stateful (Inspection) Firewall: 
+	- Track of the established TCP sessions, therefore it can detect and block any TCP packet outside an established TCP session.
+	- Recognize traffic by patterns  
+	- Complex rules can be applicable  
+	- Monitor the network connections
+-  Proxy Firewall: 
+	- A proxy firewall is also referred to as Application Firewall (AF) and Web Application Firewall (WAF). It is designed to masquerade as the original client and requests on its behalf. This process allows the proxy firewall to inspect the contents of the packet payload instead of being limited to the packet headers. Generally speaking, this is used for web applications and does not work for all protocols.
+	- Inspect the data inside the packets as well  
+	- Provides content filtering options 
+	- Provides application control
+	- Decrypts and inspects SSL/TLS data packets|
+-   Next-Generation Firewall (NGFW) 2021-2026+: 
+	- It can monitor all network layers, from OSI Layer 2 to OSI Layer 7. It has application awareness and control. 
+	- Provides advanced threat protection  
+	- Comes with an intrusion prevention system  
+	- Identify anomalies based on heuristic analysis  
+	- Decrypts and inspects SSL/TLS data packets
+	- Integrate a firewall and a real-time Intrusion Prevention System (IPS). It can stop any detected threat in real-time.
+	- Identify users and their traffic. It can enforce the security policy per-user or per-group basis.
+	- Identify the applications and protocols regardless of the port number being used.
+	- Identify the content being transmitted. It can enforce the security policy in case any violating content is detected.
+	- Ability to decrypt SSL/TLS and SSH traffic. For instance, it restricts evasive techniques built around encryption to transfer malicious files
+-  Cloud Firewall or Firewall as a Service (FWaaS): 
+	- FWaaS replaces a hardware firewall in a cloud environment. Its features might be comparable to NGFW, depending on the service provider; however, it benefits from the scalability of cloud architecture. 
 
--   Integrate a firewall and a real-time Intrusion Prevention System (IPS). It can stop any detected threat in real-time.
--   Identify users and their traffic. It can enforce the security policy per-user or per-group basis.
--   Identify the applications and protocols regardless of the port number being used.
--   Identify the content being transmitted. It can enforce the security policy in case any violating content is detected.
--   Ability to decrypt SSL/TLS and SSH traffic. For instance, it restricts evasive techniques built around encryption to transfer malicious files.
 
+[[ipXtables]]
 ## References
 
 [THM Firewalls Room](https://tryhackme.com/room/redteamfirewalls)

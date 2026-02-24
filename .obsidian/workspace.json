@@ -13,30 +13,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Software/Operating-Systems/Linux/Linux-Commands/Linux-Module-Commands.md",
+                "file": "Networks/Network-Security/Firewalls.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Linux-Module-Commands"
-            }
-          },
-          {
-            "id": "ab3d8dca0387ff21",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Security-Disciplines/SOC.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "SOC"
+              "title": "Firewalls"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -78,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "Firewall",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -197,10 +182,21 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "904463d60d8efa8d",
+  "active": "021a85d4e1b8964b",
   "lastOpenFiles": [
-    "Security-Disciplines/Incident-Response/Incident-Response.md",
+    "Software/Operating-Systems/Linux/Linux-Concepts/ipXtables.md",
+    "Networks/Network-Security/Firewalls.md",
+    "Reconnaissance/GEOINT.md",
+    "Reconnaissance/Port-Knocking.md",
+    "Reconnaissance/SOCMINT.md",
+    "Tools/Network-Based/Packet-Analysis/Tcpdump-Cheatsheet.md",
+    "Software/Operating-Systems/Linux/Linux-Commands/Linux-Module-Commands.md",
+    "Software/Virtualization/Lab-Making/VirtualBox-Virtual-Networking.md",
+    "Software/Virtualization/Lab-Making/VirtualBox-Windows-10-VM.md",
+    "Software/Virtualization/Virtual-Machines.md",
+    "Software/Virtualization/Virtualisation.md",
     "Security-Disciplines/SOC.md",
+    "Security-Disciplines/Incident-Response/Incident-Response.md",
     "Brain-Hacking/Question-Based-Methodologies/Question-Based-Forensics-Methodology.md",
     "Brain-Hacking/Question-Based-Methodologies/Question-Based-Reversing-Methodology.md",
     "Brain-Hacking/Question-Based-Methodologies/Question-Based-Web-Application-Hacking-Methodology.md",
@@ -214,17 +210,6 @@
     "Cryptography/TALK-GUR-RIBYHGVBA-BS-PELCGBTENCUL.md",
     "Cryptography/RSA-Encryption.md",
     "Development/Languages/JavaScript/JavaScript.md",
-    "Exploitation/Web-Application-Hacking/Web-Concepts/HTML.md",
-    "Development/Languages/PowerShell/PowerShell.md",
-    "Tools/Network-Based/Packet-Analysis/Wireshark/Wireshark-Useful-Packet-Filters.md",
-    "Tools/Network-Based/Packet-Analysis/Wireshark/Wireshark.md",
-    "Security-Disciplines/Digital-Forensics/Network-Forensics/Network-Forensics.md",
-    "Software/Services/Databases/Database-Hacking.md",
-    "Tools/Network-Based/Packet-Analysis/Tcpdump-Cheatsheet.md",
-    "Exploitation/Web-Application-Hacking/Web-Shells.md",
-    "Exploitation/Shells/Bind-And-Reverse-Shells-Defined.md",
-    "Tools/Web-Applications-Attacking/Content-Discovery-Tools/Gobuster-Cheatsheet.md",
-    "Software/Operating-Systems/Linux/Linux-Commands/Linux-Module-Commands.md",
     "Reconnaissance/IMINT",
     "Security-Disciplines/Digital-Forensics/MacOS-Forensics",
     "Development/Languages/Erlang",

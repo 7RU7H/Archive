@@ -18,13 +18,22 @@ sudo tcpdump -n -r password_cracking_filtered.pcap | awk -F" " '{print $5}' | so
 
 Filtering packets
 ```bash
--n port 80
--n src host $IP
--n dst host $IP
--nX # Print packet data 
+tcpdump $protcol
+tcpdump -n port 80
+tcpdump -n src host $IP
+tcpdump -c 5 -n # output numbering and the set number of packets
+tcpdump -n dst host $IP
+tcpdump -nX # Print packet data 
 
--A -n 'tcp[13] = 24' # Only packets bit set to ACK and PSH 
+tcpdump -i $interface # Listen on a specific interface
+tcpdump -i any
+
+tcpdump $protocol -r traffic.pcap # read pcap file by protocol 
+
+tcpdump -A -n 'tcp[13] = 24' # Only packets bit set to ACK and PSH 
 ```
 
 ## References
+
 [tcpdump](https://www.tcpdump.org/)
+[THM tcpdump Room](https://tryhackme.com/room/tcpdump)
