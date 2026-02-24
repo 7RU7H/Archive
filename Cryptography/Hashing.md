@@ -45,6 +45,18 @@ Table from
 | `$6$`                          | sha512crypt is a hash based on SHA-2 with 512-bit output originally developed for GNU libc and commonly used on (older) Linux systems                                                            |
 | `$md5`                         | SunMD5 is a hash based on the MD5 algorithm originally developed for Solaris                                                                                                                     |
 | `$1$`                          | md5crypt is a hash based on the MD5 algorithm originally developed for FreeBSD                                                                                                                   |
+#### Integrity Checking
+
+Check for file modification...
+#### HMACs
+
+**HMAC (Keyed-Hash Message Authentication Code)** is a type of message authentication code (MAC) that uses a cryptographic hash function in combination with a secret key to verify the authenticity and integrity of data. How it works:
+1. The secret key is padded to the block size of the hash function.
+2. The padded key is XORed with a constant (usually a block of zeros or ones).
+3. The message is hashed using the hash function with the XORed key.
+4. The result from Step 3 is then hashed again with the same hash function but using the padded key XORed with another constant.
+5. The final output is the HMAC value, typically a fixed-size string.
+
 ## References
 
 [THM Hashing Basics Room](https://tryhackme.com/room/hashingbasics)
