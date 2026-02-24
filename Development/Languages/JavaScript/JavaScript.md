@@ -21,9 +21,15 @@ Browser Developer Tools, `Ctrl + F12`  is a underrated and very powerful utility
 **Objects** are abstract containers that represented by data types and contain characteristics, you **Declare** objects to create and define it, **Assign** -ing value to that object and define **Scope** to what the object can affect and its accessibility - outside a code block it is global (generally a bad idea) and inside it is local variable.
 
 ```javascript
+// declaring variables; let and const are scope blocked
 let a = "a" // block-scoped mutable variable
 var b = 1 // GLOBAL mutatable variable - avoid
 const c = a+b // block-scoped constant variable
+
+// Data Types
+number
+boolen
+string
 
 // Operators
 // +
@@ -49,11 +55,13 @@ const x = 1; // = is the assignment operator the ; closes the statement syntacti
 var y = { foo: "bar"}; // object with property named foo with value "bar"
 var y = 2; // integers are not data types! Lunacy
 var z; // Z is undefined... Insanity.
+prompt("Do you want to continue? (Y/n)")
 if x !== 2 {
 	switch (y) {
 		case 1:
 			for (a = 1; a <= 10; a++) {
 				console.log(`Number: ${a}`); // ${substitute with literal value no format specifiers }
+				alert("Number: " + a " triggered an alert")
 				}
 			break;
 		default:
@@ -97,6 +105,24 @@ let indexes ['zeroth','oneth','twoth'];
 indexs[0];
 ```
 
+Integrating with [[HTML]] 
+```html
+<!-- Internal JS in a file internal.html-->
+<script>
+	// Code block goes here
+	id = "Happy Hacking"
+<script0/>
+document.getElementById("Happy Hacking").innerHTML
+
+<!-- External  JS in a file script.js -->
+<script>
+	// Code block goes here
+	id = "HappyHacking"
+<script0/>
+document.getElementById("HappyHacking").innerHTML = "The result is: " + HappyHacking;
+```
+
+
 For functions consider which ES versions - [w3schools JS Versions](https://www.w3schools.com/js/js_versions.asp)
 
 Different ways variable create keywords
@@ -120,7 +146,8 @@ Minification compresses JS files by removing unnecessary content: ws, comment, a
 - Either [[CyberChef]] your minified code or [lissy93](https://notes.aliciasykes.com/40065/50-awesome-dev-tool-tips):
 - Under `⋮` → `Settings` → `Experiments` Select `Automatically pretty print in the Sources Panel`.
 
-
+https://codebeautify.org/javascript-obfuscator
+https://obf-io.deobfuscate.io/
 ## Files  
 
 Client side JavaScript files **Should Not** contain any secret values, passwords, encryption keys or any "hidden" functionality - but when has that stop developers.
@@ -136,6 +163,12 @@ Turn copy and paste when it is turned on
 stopaimmediatePropatio()
 ```
 
+#### Best Practices
+
+- Avoid relying on Client Side Validation only
+- Refrain from adding untrusted libraries
+- Avoid hardcoded secrets
+- Minify and obfuscate your Javascript code
 ## References
 
 [Fireship.io ](https://www.youtube.com/shorts/7bmsDg4BaKw)

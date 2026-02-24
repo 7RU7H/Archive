@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Software/Services/Databases/Database-Hacking.md",
+                "file": "Development/Languages/JavaScript/JavaScript.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Database-Hacking"
+              "title": "JavaScript"
             }
           }
         ],
@@ -78,7 +78,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Databases",
+                "query": "Wireshark",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -89,8 +89,7 @@
               "title": "Search"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -199,6 +198,14 @@
   },
   "active": "ab3d8dca0387ff21",
   "lastOpenFiles": [
+    "Brain-Hacking/Question-Based-Methodologies/Question-Based-Web-Application-Hacking-Methodology.md",
+    "Development/Languages/JavaScript/JavaScript.md",
+    "Exploitation/Web-Application-Hacking/Web-Concepts/HTML.md",
+    "Development/Languages/PowerShell/PowerShell.md",
+    "Tools/Network-Based/Packet-Analysis/Wireshark/Wireshark-Useful-Packet-Filters.md",
+    "Tools/Network-Based/Packet-Analysis/Wireshark/Wireshark.md",
+    "Security-Disciplines/Digital-Forensics/Network-Forensics/Network-Forensics.md",
+    "Software/Services/Databases/Database-Hacking.md",
     "Tools/Network-Based/Packet-Analysis/Tcpdump-Cheatsheet.md",
     "Exploitation/Web-Application-Hacking/Web-Shells.md",
     "Exploitation/Shells/Bind-And-Reverse-Shells-Defined.md",
@@ -206,8 +213,6 @@
     "Software/Operating-Systems/Linux/Linux-Commands/Linux-Module-Commands.md",
     "Development/Regular-Expressions.md",
     "Tools/Web-Applications-Attacking/SQLmap-CheatSheet.md",
-    "Tools/Network-Based/Packet-Analysis/Wireshark/Wireshark-Useful-Packet-Filters.md",
-    "Tools/Network-Based/Packet-Analysis/Wireshark/Wireshark.md",
     "Networks/Network-Theory/Network-Protocols/Network-Protocols.md",
     "Networks/Network-Theory/Routing.md",
     "Development/Languages/C/Useful-C.md",
@@ -220,12 +225,6 @@
     "Reconnaissance/IMINT/IMINT.md",
     "Reconnaissance/IMINT",
     "Exploitation/CVEs/CVE-2025-55241.md",
-    "Development/Languages/Python/Useful-Python.md",
-    "Alledged-Real-World-Stuff/Business.md",
-    "Alledged-Real-World-Stuff/Life.md",
-    "Social-Engineering/Negotiation.md",
-    "Social-Engineering/Social-Engineering.md",
-    "Cryptography/Cryptography-Glossary.md",
     "Security-Disciplines/Digital-Forensics/MacOS-Forensics",
     "Development/Languages/Erlang",
     "ICS",

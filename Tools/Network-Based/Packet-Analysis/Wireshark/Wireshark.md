@@ -1,8 +1,7 @@
 # Wireshark
 
 
-I actively recommend Wireshark as personally it help me really understand [[Network-Protocols]],[[Network-Protocols-Hub]] and [[TCP-IP-Model]]  and I highly recommend it.
-
+I actively recommend Wireshark as personally it help me really understand [[Network-Protocols]],[[Network-Protocols-Hub]] and [[TCP-IP-Model]]  and I highly recommend it. For [[Wireshark-Useful-Packet-Filters]] follow this link.
 ## Introduction
 
 For capture packets Wireshark uses the libraries [Libpcap](https://www.tcpdump.org/manpages/pcap.3pcap.html) on Linux from the maintainers of Tcpdump (see [[Tcpdump-Cheatsheet]] for more Tcpdump information), [Winpcap](https://www.winpcap.org/) on Windows, but is unmaintained as of 2018, see [Npcap](https://nmap.org/npcap/) as replacement for WinPcap and WinPcap Pro. With this we can reduce network traffic with `capture filters` to define what we want to capture -> `capture engine` told like to make a more public and open source,o capture the specified network traffic -> and `display filters` to make visible only the ouput the relevant with `filters` as commands. From [Wireshark Official](https://www.wireshark.org/) 
@@ -82,7 +81,7 @@ Red square to stop and green fin button to restart the capture.
 TL;DR - Follow packets and learn filter logic
 
 #### Import TLS certificates
-`File -> Preferences -> Protocols -> TLS `
+`Edit -> Preferences -> Protocols -> TLS `
 
 #### Prepared Filters
 A Glossary exist under `Analyze -> Display Filter Expression`; it has a search bar for quality of life.

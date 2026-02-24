@@ -29,6 +29,9 @@
 
 
 - Web
+	- Have you clicked through the application like a normal user
+	- Checked the source
+		- `<script>` tag with a `src` attribute, page is loading external JS from a separate file.
 	- Is recon in the background and you manually hacking in the foreground?
 		- Are contextualising you content discovery bruteforce; understand the asset pick a contextually specific wordlist per stack?
 		- Have walked through the applicataion as a ordinary user?

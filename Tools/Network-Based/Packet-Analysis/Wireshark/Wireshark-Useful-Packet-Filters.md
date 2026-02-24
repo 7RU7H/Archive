@@ -1,4 +1,4 @@
-# Useful Wireshark Packet Filters
+# Useful `wireshark` Packet Filters
 
 ## Filter Types
 

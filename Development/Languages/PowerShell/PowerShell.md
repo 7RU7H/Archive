@@ -62,9 +62,13 @@ while(1) { cat index.html | nc -w1 -l -p 8080 }
 ## General
 ```powershell
 Get-Command              # list of powershell commands, BEWARE OF THE LISTS
+Get-Command -CommandType "Function"
+Get-Date
 Get-Verb				 # list all verbs
 Get-Help                 # help for specific cmdlet
 Get-Help $Command-Namepowershell -c [convert]::ToBase64String((cat ..\..\secrets\hudson.util.Secret -Encoding byte)) 
+Get-Help New-LocalUser -examples # Get examples of usage
+
 Get-Command Verb-* 
 Get-Command *-Noun # Commands and Cmdlets are both executables in ps, Command= compiled, can be solo-executed cmdlets
 Get-Command | Get-Member -MemberType Method # view members for a the get command
@@ -72,10 +76,15 @@ Get-Command -Type Cmdlets | Measure-Object -Sum -ErrorAction SilentlyContinue
 Get-Alias		
 Set-Alias				 	# Make commands
 Set-Alias -Name helpmeplease -Value Get-help
+
+Write-Output # Like echo "echo" or type "type"
 ```
 
 ## Providers and Modules
 ```powershell
+Find-Module -Name "PowerShell*"
+Install-Module -Name "PowerShellTest"
+
 # A provider is .NET program to access data stores
 # Typically included in modules and are accessible after the module has been loaded into the current session
 Get-PSProvider
@@ -131,9 +140,20 @@ Select-Object -Property Mode, Name
 -last 	# gets the last x object
 -unique # shows the unique objects
 -skip   # skips x objects
+
+gci | Select-Object Name,Length
+
+
+Select-String -Path ".\flag.txt" -Pattern "HACK:{"
+
 Where-Object # Filter through objects
 ```
+## User`
+```powershell
+Get-LocalUser
 
+
+```
 ## Strings
 ```powershell
 Select-String "..." -List  # CAREFUL WHERE YOU RUN it relative to working directory location!
@@ -144,6 +164,8 @@ Get-ChildItem C:\ -Recurse | Select-String -Pattern "password"
 ## Maths, Counting and Measuring
 ```powershell
 Measure-Object -Sum -ErrorAction SilentlyContinue
+Get-Content | Sort-Object Length
+
 ```
 
 ## File and Directory interactions
@@ -151,6 +173,12 @@ Measure-Object -Sum -ErrorAction SilentlyContinue
 ## Reading and Writing 
 Get-Content							  # Reading file
 Get-Content -Path .\filename.FILETYPE # -Raw for raw file output
+
+get-FileHash -Path .\flag.txt
+
+# Show all Alternate Data Streams
+Get-Item -Path "C:\flag.txt" -Stream *
+
 
 Set-Content 		# Writing to files
 Expand-Archive -Path .\*.zip -DestinationPath C:\Destination # Expand a zip file
@@ -179,15 +207,24 @@ Get-ChildItem -Hidden
 Get-ChildItem -Path C:\ -Include *.doc,*.[FILETYPE] -File -Recurse -ErrorAction SilentlyContinue #Find all finds of a particular filetype:
 Get-ChildItem –Path C:\ -Include *HSG* -Exclude *.JPG,*.MP3,*.TMP -File -Recurse -ErrorAction SilentlyContinue # Find all find that include *"..."* BUT also exclude wildcard. Filetype
 Get-Childitem -Path C:\ -Recurse # Display directory listing under a parent file, flag: recursive for recursive directory scrapping
+Get-Childitem -Path C:\flag Where-Object -Property "Extension" -eq ".txt" -like "root*"
+
 gci -Filter "" –Directory |  % { $_.fullname } # Find directoies
 
 Get-Acl # Get owner of directory again careful of relative running from another directory
 
 Where-Object # TODO
 Import-CSV file.csv     # Read a CSV file
+# Create, copy and Remove Directories and files
+New-Item -Path ".\newDir" -ItemType "Directory"
+Remove-Item -Path ".\byeDir" -ItemType "Directory"
+Copy-Item -Path ".\moreDir2" -Destination ".\moreDir-copy"-ItemType "Directory"
+
+```
 
 [xinyMinutes](https://learnxinyminutes.com/docs/powershell/)
 [hacktricks](https://book.hacktricks.xyz/windows-hardening/basic-powershell-for-pentesters)```
+
 
 ## Processes tasks and scheduled tasks
 ```powershell
@@ -249,7 +286,12 @@ New-ItemProperty -Path $RegistryPath -Name $Name -Value $Value -PropertyType DWO
 
 ## Networking
 ```powershell
+
+Get-NetIPConfiguration # Info on Network Interfaces 
+Get-NetIPADdress # ALL IP addresses configured on system 
 # Test connection
+Get-NetTCPConnection # Current TCP connections
+# Get-NetUDPConnection - does not exist? 
 Test-NetConnection -ComputerName 127.0.0.1 -Port 80 -InformationLevel 'Detailed'
 # Check the test connection with:
 (New-Object System.Net.Sockets.TcpClient("127.0.0.1", "80")).Connected
@@ -260,6 +302,7 @@ netstat -noa |findstr "LISTENING" |findstr "PORTNUMBER"                 # Find p
 nslookup.exe
 server ip
 ls -d domainname
+
 ```
 
 ## Host Security Detection
