@@ -23,8 +23,10 @@ oleid $maldoc
 # Get the Streams - M denotes stream that contain Macros; -i provides byes breakdown, very useful!
 oledump.py -i $maldoc
 # Best practice seems to be go string by string till you hit a good line
-oledump.py -s $int $maldoc
+oledump.py -s $int $maldoc # -select data stream 
 oledump.py -s $specialLineNum -S $maldoc
+--vbadecompress # automatically decompress any compressed VBA macros 
+# M in the column between streams and named stream indicates a VBA mcro
 ```
  `olefile`    
 ```
@@ -58,3 +60,4 @@ olevba
 
 [GitHub oletools](https://github.com/decalage2/oletools)
 [Youtube - Excel Macros and the true horrors that dwell within meme](https://www.youtube.com/watch?v=xydcP31wVRk)
+[THM Remnux getting started Room](https://tryhackme.com/room/remnuxgettingstarted)

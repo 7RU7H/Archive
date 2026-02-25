@@ -4,39 +4,38 @@
     "type": "split",
     "children": [
       {
-        "id": "154178787d0f02d5",
+        "id": "5dd0e04048e89135",
         "type": "tabs",
         "children": [
           {
-            "id": "021a85d4e1b8964b",
+            "id": "7e82fa5f39c07760",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Networks/Network-Security/Firewalls.md",
+                "file": "Tools/CAPA.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Firewalls"
+              "title": "CAPA"
             }
           },
           {
-            "id": "120fdc5f095daec4",
+            "id": "4f35d7b6211ff284",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Security-Disciplines/For-Individuals/OPSEC/OPSEC.md",
+                "file": "Tools/Forensics/Volatility3.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "OPSEC"
+              "title": "Volatility3"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -78,7 +77,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "openvpn",
+                "query": "CAPA",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -89,8 +88,7 @@
               "title": "Search"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -197,12 +195,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "120fdc5f095daec4",
+  "active": "7e82fa5f39c07760",
   "lastOpenFiles": [
+    "Tools/Inetsim.md",
+    "Tools/CAPA.md",
+    "Tools/Forensics/Volatility3.md",
+    "Tools/Forensics/Oletools.md",
+    "Networks/Network-Security/Firewalls.md",
+    "Security-Disciplines/For-Individuals/OPSEC/OPSEC.md",
     "Networks/Network-Theory/Network-Protocols/IPsec.md",
     "Cryptography/Hashing.md",
     "Exploitation/IAAA.md",
-    "Networks/Network-Security/Firewalls.md",
     "Software/Operating-Systems/Linux/Linux-Concepts/ipXtables.md",
     "Reconnaissance/GEOINT.md",
     "Reconnaissance/Port-Knocking.md",
@@ -220,11 +223,6 @@
     "Brain-Hacking/Question-Based-Methodologies/Question-Based-Web-Application-Hacking-Methodology.md",
     "Cryptography/De-Or-En-Cryption.md",
     "Cryptography/Cracking-Files-And-Directories.md",
-    "Cryptography/Asymmetric-Encryption.md",
-    "Cryptography/Cryptography.md",
-    "Cryptography/Cryptography-Glossary.md",
-    "Cryptography/TALK-Understand-Cryptography-for-Offensive-Security-with-Ayub-Yusuf.md",
-    "Cryptography/TALK-GUR-RIBYHGVBA-BS-PELCGBTENCUL.md",
     "Reconnaissance/IMINT",
     "Security-Disciplines/Digital-Forensics/MacOS-Forensics",
     "Development/Languages/Erlang",

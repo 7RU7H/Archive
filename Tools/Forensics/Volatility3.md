@@ -130,7 +130,13 @@ verinfo - `verinfo` - display the version information embedded in PE files
 
 yarascan - `.yarascan` - compare the memory file against YARA rules
 
+#### Useful One-or-Couple liners 
 
+Find malicious processes - sick one liner from [THM Remnux getting started](https://tryhackme.com/room/remnuxgettingstarted)
+```bash
+for plugin in windows.malfind.Malfind windows.psscan.PsScan windows.pstree.PsTree windows.pslist.PsList windows.cmdline.CmdLine windows.filescan.FileScan windows.dlllist.DllList; do vol3 -q -f wcry.mem $plugin > wcry.$plugin.txt; done
+
+```
 ### ! Not covered in Volatility3
 
 apihooks - `.apihooks` (apparently is on the to-do) - https://github.com/volatilityfoundation/volatility3/issues/686
@@ -151,3 +157,4 @@ moddump - `.moddump`
 [mnin The mis-leading 'Active' in PsActiveProcessHEad and ActiveProcessLinks ](https://mnin.blogspot.com/2011/03/mis-leading-active-in.html)
 [The VAD Tree - B Dolan-Gavitt](https://www.sciencedirect.com/science/article/pii/S1742287607000503)
 [The Art of Memory Forensics: Detecting Malware and Threats in Windows, Linux, and Mac Memory](https://www.wiley.com/en-gb/The+Art+of+Memory+Forensics:+Detecting+Malware+and+Threats+in+Windows,+Linux,+and+Mac+Memory-p-9781118825099)
+[THM Remnux getting started](https://tryhackme.com/room/remnuxgettingstarted)
