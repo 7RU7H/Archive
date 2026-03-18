@@ -4,7 +4,7 @@ Useful Flags
 ```bash
 -i	access with private key
 -L	local_port:remote_address:remote_port # for local port fowarding
--R	port:loca_address:local_port # For remote port forwarding 
+-R	port:local_address:local_port # For remote port forwarding 
 -D	local_PORT # Dynamic port fowarding, creates sockets proxy on localhost
 -N	Do not execute a remote command. Useful in for just forwardin ports
 -p  Port

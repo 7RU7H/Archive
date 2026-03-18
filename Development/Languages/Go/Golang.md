@@ -65,6 +65,14 @@ go env -w GOBIN=/somewhere/else/bin
 go env -u GOBIN
 ```
 
+place in developer .rc file
+```bash
+export GOPATH=$HOME/go
+export GOBIN=$GOPATH/bin
+export PATH=$PATH:$GOBIN
+export PATH=$PATH:$GOBIN:$GOROOT/bin
+
+```
 
 ```go
 func init() // This is a special function in golang - IS THE FIRST FUNCTION THAT WILL RUN IN YOUR PACKAGE
@@ -92,3 +100,4 @@ func init() // This is a special function in golang - IS THE FIRST FUNCTION THAT
 [go.dev/doc/install - Official Install Documentation](https://go.dev/doc/install)
 [go.dev gdb](https://go.dev/doc/gdb) 
 [github.com/golang-standards/project-layout](https://github.com/golang-standards/project-layout)
+[itsfoss.gitlab.io](https://itsfoss.gitlab.io/post/how-to-install-golang-go-on-debian-12-11-or-10/)
