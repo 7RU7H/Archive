@@ -167,7 +167,7 @@ Do not confuse:
 
 [[Vulnerability-Assessment]] with [[Vulnerability-Scanning]]
 - [[OpenVAS]]
-- [[Tools/Vulnerability-Analysis/Nessus/Nessus|Nessus]]
+- [[Nessus|Nessus]]
 - [[ISS-Scanner]]
 
 [[Penetration-Testing]]

@@ -26,7 +26,7 @@ From [YouTube - Bsides London: Off The Hinge: Dating With OSINT - Taylor Rhoades
 
 [[theHarvester]]
 [[Recon-ng]]
-[[SpiderFoot]]
+[[Spiderfoot]]
 [[Sherlock]]
 
 #### Browser Plugins

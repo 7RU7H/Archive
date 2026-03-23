@@ -54,7 +54,7 @@ Hooking
 
 
 Pwning
-- [[Tools/Binary-Exploitation-Tools/Pwntools|Pwntools]]
+- [[Pwntools|Pwntools]]
 	- Are you using `Pwntools` effectively?
 - Low hanging fruits?
 	- Any interesting [[Binary-Exploitation-Enumeration]] through `strings` and metadata

@@ -40,7 +40,7 @@ Therefore to prevent good lies
 
 
 
-#### Subversion - People
+#### [[Subversion]] - People
 
 Soviet defector [Yuri Bezmenov](https://en.wikipedia.org/wiki/Yuri_Bezmenov)'s [1983 Lecture on Subversion](https://www.youtube.com/watch?v=1FElIhOh_KI&pp=ygUVWXVyaSBCZXptZW5vdiBsZWN0dXJl)
 You cannot subvert an enemy that does not want to be subverted - to prevent subversion have *"faith"* (authorial note: *faith* < TRUST ) in moral superiority... 

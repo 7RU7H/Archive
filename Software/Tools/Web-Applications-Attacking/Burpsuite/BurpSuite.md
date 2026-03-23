@@ -19,7 +19,7 @@ Some of the tips very simple for simple problems, sometimes that is simply requi
 [THM](https://tryhackme.com/room/burpsuitebasics): *"Burp Suite is a Java-based framework designed to serve as a comprehensive solution for conducting web application penetration testing. It has become the industry standard tool for hands-on security assessments of web and mobile applications, including those that rely on application programming interfaces (APIs)."*
 
 For the [Official Documentation](https://portswigger.net/burp/documentation/desktop) 
-For article on the [[BurpSuite-Pro-Version]]
+For article on the [[Burpsuite-Pro-Version]]
 
 #### Features
 
