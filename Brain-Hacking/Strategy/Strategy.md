@@ -1,5 +1,12 @@
 # Strategy
 
+#### How Spies Think
+
+[How Spies Think | Secrets of British Intelligence](https://www.youtube.com/watch?v=LOjSQUuSaB0) description: *Dr Helen Fry is joined by Sir David Omand, former director of GCHQ. They discuss David's time at GCHQ, Russia and Ukraine, and how intelligence relates to everyday life.* Apply:
+- Situation awareness through information gathering
+- Trust, but verify
+- Explain the facts
+- Estimate the future
 
 ##### Applying Military Strategy in Life - Microsoft Talk
 
@@ -139,5 +146,5 @@ Monger and Buffet: Make it as simple as possible
 ## References
 
 [YouTube: Patrick Boyle Adam Robinson - Strategy for Investing and for Life](https://www.youtube.com/watch?v=pWodxNjmIwQ)
-[YouTube - The 33 Strategies of War Summarised in Under 8 Minutes by Robert Greene](https://www.youtube.com/watch?v=jG-NF2g5EXA)
+[YouTube - The 33 Strategies of War Summarised in Under 8 Minutes by Robert Greene](https://www.youtube.com/watch?v=jG-NF2g5EXA)[How Spies Think | Secrets of British Intelligence](https://www.youtube.com/watch?v=LOjSQUuSaB0) 
 [YouTube - Applying Military Strategy in Life - Microsoft Talk](https://www.youtube.com/watch?v=Pmx2cbLGzzo)
