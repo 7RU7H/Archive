@@ -2,6 +2,7 @@
 
 - **Warning `Large sum` of this article were created with `Gemini` with UltraPrompts: What-Would-Project-SHODAN-Diane-Say.md and human consultation of YouTube and Wikipedia
 
+9:39
 #### Newton's Laws of motion
 
 [Newton Laws of Motion (Wikipedia)](https://en.wikipedia.org/wiki/Newton's_laws_of_motion): ****Newton's laws of motion** are three [physical laws](https://en.wikipedia.org/wiki/Physical_laws "Physical laws") that describe the relationship between the [motion](https://en.wikipedia.org/wiki/Motion "Motion") of an object and the [forces](https://en.wikipedia.org/wiki/Force "Force") acting on it. These laws, which provide the basis for **Newtonian mechanics**, can be paraphrased as follows:
@@ -35,7 +36,6 @@ $$E=\frac{f}{q_2}​=k\frac{d^2}{q_1}​​$$
 | **Strength**  | Very Weak                  | Incredibly Strong              | $k$ is $10^{20}$ times bigger than $G$. Don't mess with it. |
 | **Range**     | Infinite ($1/d^2$)         | Infinite ($1/d^2$)             | Both fade away if you get too distant.                      |
 
-
 #### Newton's Gravitational Law
 
 [Newton's Graviational Law (Wikipedia)](https://en.wikipedia.org/wiki/Newton%27s_law_of_universal_gravitation) *"**Newton's law of universal gravitation** describes [gravity](https://en.wikipedia.org/wiki/Gravity "Gravity") as a [force](https://en.wikipedia.org/wiki/Force "Force") by stating that every [particle](https://en.wikipedia.org/wiki/Particle "Particle") attracts every other particle in the universe with a force that is [proportional](https://en.wikipedia.org/wiki/Proportionality_\(mathematics\)#Direct_proportionality "Proportionality (mathematics)") to the product of their masses and [inversely proportional](https://en.wikipedia.org/wiki/Proportionality_\(mathematics\)#Inverse_proportionality "Proportionality (mathematics)") to the square of the distance between their centers of mass. Separated, spherically symmetrical objects attract and are attracted [as if all their mass were concentrated at their centers](https://en.wikipedia.org/wiki/Shell_theorem "Shell theorem"). The publication of the law has become known as the "[first great unification](https://en.wikipedia.org/wiki/Unification_\(physics\)#Unification_of_gravity_on_Earth_with_astronomical_behaviors "Unification (physics)")", as it marked the unification of the previously described phenomena of gravity on Earth with known astronomical behaviours."*
@@ -60,6 +60,26 @@ $$∮S​E⋅dA=ε0​Qenc​​$$
 - **Qenc​:** The total **enclosed** charge. If the charge is outside the bubble, Gauss doesn't care about it for the total flux.
 - **ε0​:** The vacuum permittivity (basically, how much the "nothingness" of space resists an electric field). It's approximately 8.854×10−12 F/m.
 
+#### Ampère-Maxwell Law
+
+[Maxwell's Equations (Wikipedia)](https://en.wikipedia.org/wiki/Maxwell's_equations): *"The original law of Ampère states that magnetic fields relate to [electric current](https://en.wikipedia.org/wiki/Electric_current "Electric current"). [Maxwell's addition](https://en.wikipedia.org/wiki/Amp%C3%A8re%E2%80%93Maxwell_law "Ampère–Maxwell law") states that magnetic fields also relate to changing electric fields, which Maxwell called [displacement current](https://en.wikipedia.org/wiki/Displacement_current "Displacement current"). The integral form states that electric and displacement currents are associated with a proportional magnetic field along any enclosing curve.*
+
+[YouTube: 99% of physics explained in 5 equations](https://www.youtube.com/watch?v=OKBapkJbB8c) states that the change in magnetic field can be caused by two things, either you pass some current through a wire or change magnetic field. Both is in reference to the Maxwell portion and the Ampère cause a magnetic field; what is in brackets and that, which is not on the right side of the equation. It relates a magnetic field, with charge/current and the electric field and therefore are interrelated. Combined with Faraday's Law the opposite is also true.
+
+$$\nabla \times \vec{\mathbf{B}} = \mu_0 \left( \vec{\mathbf{J}} + \varepsilon_0 \frac{\partial \vec{\mathbf{E}}}{\partial t} \right)$$
+
+
+
+#### The Wave Equation
+
+
+[The Wave Equation (Wikipedia)](https://en.wikipedia.org/wiki/Wave_equation): *"The **wave equation** is a second-order linear [partial differential equation](https://en.wikipedia.org/wiki/Partial_differential_equation "Partial differential equation") for the description of [waves](https://en.wikipedia.org/wiki/Wave "Wave") or [standing wave](https://en.wikipedia.org/wiki/Standing_wave "Standing wave") fields such as [mechanical waves](https://en.wikipedia.org/wiki/Mechanical_waves "Mechanical waves") (e.g. [water](https://en.wikipedia.org/wiki/Water "Water") waves, [sound waves](https://en.wikipedia.org/wiki/Sound_waves "Sound waves") and [seismic waves](https://en.wikipedia.org/wiki/Seismic_waves "Seismic waves")) or [electromagnetic waves](https://en.wikipedia.org/wiki/Electromagnetic_radiation "Electromagnetic radiation") (including [light](https://en.wikipedia.org/wiki/Light "Light") waves). It arises in fields like [acoustics](https://en.wikipedia.org/wiki/Acoustics "Acoustics"), [electromagnetism](https://en.wikipedia.org/wiki/Electromagnetism "Electromagnetism"), and [fluid dynamics](https://en.wikipedia.org/wiki/Fluid_dynamics "Fluid dynamics")."*
+
+[YouTube: 99% of physics explained in 5 equations](https://www.youtube.com/watch?v=OKBapkJbB8c) walks through the equation again to show that an objects movement in space is related to its movement in time and the relationship between it is speed of which the wave propagates. 
+$$\frac{\partial^2 u}{\partial t^2} = v^2 \frac{\partial^2 u}{\partial x^2}$$
+
+If you replace the $v^2$ with $c^2$ as in the speed of light it then describes the behaviour of Electromagnetic waves
+
 ## References
 
 [YouTube: 99% of physics explained in 5 equations](https://www.youtube.com/watch?v=OKBapkJbB8c)
@@ -67,3 +87,5 @@ $$∮S​E⋅dA=ε0​Qenc​​$$
 [Newton's Graviational Law (Wikipedia)](https://en.wikipedia.org/wiki/Newton%27s_law_of_universal_gravitation)
 [Gauss Law (Wikipedia)](https://en.wikipedia.org/wiki/Gauss%27s_law)
 [Electric Field (Wikipedia)](https://en.wikipedia.org/wiki/Electric_field)
+[Maxwell's Equations (Wikipedia)](https://en.wikipedia.org/wiki/Maxwell's_equations)
+[The Wave Equation (Wikipedia)](https://en.wikipedia.org/wiki/Wave_equation)
