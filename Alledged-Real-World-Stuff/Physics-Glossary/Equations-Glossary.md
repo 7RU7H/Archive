@@ -2,7 +2,6 @@
 
 - **Warning `Large sum` of this article were created with `Gemini` with UltraPrompts: What-Would-Project-SHODAN-Diane-Say.md and human consultation of YouTube and Wikipedia
 
-9:39
 #### Newton's Laws of motion
 
 [Newton Laws of Motion (Wikipedia)](https://en.wikipedia.org/wiki/Newton's_laws_of_motion): ****Newton's laws of motion** are three [physical laws](https://en.wikipedia.org/wiki/Physical_laws "Physical laws") that describe the relationship between the [motion](https://en.wikipedia.org/wiki/Motion "Motion") of an object and the [forces](https://en.wikipedia.org/wiki/Force "Force") acting on it. These laws, which provide the basis for **Newtonian mechanics**, can be paraphrased as follows:
@@ -50,26 +49,6 @@ It is noteworthy that:
 - Each mass is accelerating towards one another with $F = ma$ , and can only be attracted to one another unless they are equal in charge polarity 
 - Replacing G with a symbol to refer to Electricity and you get an equation for an Electrical Field
 
-#### Gauss's Law
-
-[Gauss's Law (Wikipedia)](https://en.wikipedia.org/wiki/Gauss%27s_law) *"In [electromagnetism](https://en.wikipedia.org/wiki/Electromagnetism "Electromagnetism"), **Gauss's law**, also known as **Gauss's flux theorem** or sometimes **Gauss's theorem**, is one of [Maxwell's equations](https://en.wikipedia.org/wiki/Maxwell%27s_equations "Maxwell's equations"). It is an application of the [divergence theorem](https://en.wikipedia.org/wiki/Divergence_theorem "Divergence theorem"), and it relates the distribution of [electric charge](https://en.wikipedia.org/wiki/Electric_charge "Electric charge") to the resulting [electric field](https://en.wikipedia.org/wiki/Electric_field "Electric field")."* In integral form:
-$$∮S​E⋅dA=ε0​Qenc​​$$
-- **∮S​:** This is a surface integral over a **closed** surface (often called a Gaussian surface). Think of it like a perfectly sealed bubble.  
-- **E:** The electric field vector.
-- **dA:** An infinitesimal patch of area on our "bubble," pointing outward.
-- **Qenc​:** The total **enclosed** charge. If the charge is outside the bubble, Gauss doesn't care about it for the total flux.
-- **ε0​:** The vacuum permittivity (basically, how much the "nothingness" of space resists an electric field). It's approximately 8.854×10−12 F/m.
-
-#### Ampère-Maxwell Law
-
-[Maxwell's Equations (Wikipedia)](https://en.wikipedia.org/wiki/Maxwell's_equations): *"The original law of Ampère states that magnetic fields relate to [electric current](https://en.wikipedia.org/wiki/Electric_current "Electric current"). [Maxwell's addition](https://en.wikipedia.org/wiki/Amp%C3%A8re%E2%80%93Maxwell_law "Ampère–Maxwell law") states that magnetic fields also relate to changing electric fields, which Maxwell called [displacement current](https://en.wikipedia.org/wiki/Displacement_current "Displacement current"). The integral form states that electric and displacement currents are associated with a proportional magnetic field along any enclosing curve.*
-
-[YouTube: 99% of physics explained in 5 equations](https://www.youtube.com/watch?v=OKBapkJbB8c) states that the change in magnetic field can be caused by two things, either you pass some current through a wire or change magnetic field. Both is in reference to the Maxwell portion and the Ampère cause a magnetic field; what is in brackets and that, which is not on the right side of the equation. It relates a magnetic field, with charge/current and the electric field and therefore are interrelated. Combined with Faraday's Law the opposite is also true.
-
-$$\nabla \times \vec{\mathbf{B}} = \mu_0 \left( \vec{\mathbf{J}} + \varepsilon_0 \frac{\partial \vec{\mathbf{E}}}{\partial t} \right)$$
-
-
-
 #### The Wave Equation
 
 
@@ -80,6 +59,36 @@ $$\frac{\partial^2 u}{\partial t^2} = v^2 \frac{\partial^2 u}{\partial x^2}$$
 
 If you replace the $v^2$ with $c^2$ as in the speed of light it then describes the behaviour of Electromagnetic waves
 
+## Maxwell's Equations
+
+[YouTube: You don't understand Maxwell's equations](https://www.youtube.com/watch?v=KHaBmJ_g2VQ), states that because of the equals sign is like assignment in programming we can treat the right-side of the equation as the cause and the left as the effect 
+#### Gauss's Law (Electric Fields or Electrostatics)
+
+This equation describes how electric charges produce electric fields from the divergent electric field vector. The electric flux through a closed surface is proportional to the enclosed electric charge. The Rho is the charge density sitting in space over the per-mutative of free space. 
+
+$$\nabla \cdot \mathbf{E} = \frac{\rho}{\epsilon_0}$$
+#### Gauss's Law (Magneticism)
+
+This law states that there are no "magnetic charges" (monopoles); magnetic field lines always form continuous loops. Currently there are no observed magnetic charges or monocles. There is no single thing that creates magnetic fields and is caused by something else usually an electric field. You also cannot have a divergent magnetic field.
+
+$$\nabla \cdot \mathbf{B} = 0$$
+
+
+#### Faraday's Law of Induction
+
+This equation shows that a time-varying magnetic field creates a spatially varying, electric field (electromagnetic induction). Divergent curl or rotation of the electric field is caused by something: a changing magnetic field.
+$$\nabla \times \mathbf{E} = -\frac{\partial \mathbf{B}}{\partial t}$$
+#### Ampère Law
+
+This describes how magnetic fields are generated by electric currents and by changing electric fields (the displacement current). [Maxwell's Equations (Wikipedia)](https://en.wikipedia.org/wiki/Maxwell's_equations): *"The original law of Ampère states that magnetic fields relate to [electric current](https://en.wikipedia.org/wiki/Electric_current "Electric current"). [Maxwell's addition](https://en.wikipedia.org/wiki/Amp%C3%A8re%E2%80%93Maxwell_law "Ampère–Maxwell law") states that magnetic fields also relate to changing electric fields, which Maxwell called [displacement current](https://en.wikipedia.org/wiki/Displacement_current "Displacement current"). The integral form states that electric and displacement currents are associated with a proportional magnetic field along any enclosing curve.*
+
+[YouTube: 99% of physics explained in 5 equations](https://www.youtube.com/watch?v=OKBapkJbB8c) states that the change in magnetic field can be caused by two things, either you pass some current through a wire or change magnetic field. Both is in reference to the Maxwell portion and the Ampère cause a magnetic field; what is in brackets and that, which is not on the right side of the equation. It relates a magnetic field, with charge/current and the electric field and therefore are interrelated. Combined with Faraday's Law the opposite is also true.
+
+$$\nabla \times \vec{\mathbf{B}} = \mu_0 \left( \vec{\mathbf{J}} + \varepsilon_0 \frac{\partial \vec{\mathbf{E}}}{\partial t} \right)$$
+
+
+
+
 ## References
 
 [YouTube: 99% of physics explained in 5 equations](https://www.youtube.com/watch?v=OKBapkJbB8c)
@@ -89,3 +98,4 @@ If you replace the $v^2$ with $c^2$ as in the speed of light it then describes t
 [Electric Field (Wikipedia)](https://en.wikipedia.org/wiki/Electric_field)
 [Maxwell's Equations (Wikipedia)](https://en.wikipedia.org/wiki/Maxwell's_equations)
 [The Wave Equation (Wikipedia)](https://en.wikipedia.org/wiki/Wave_equation)
+[YouTube: You don't understand Maxwell's equations](https://www.youtube.com/watch?v=KHaBmJ_g2VQ)
