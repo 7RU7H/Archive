@@ -36,7 +36,7 @@ nmapRate=# None
 interface=tun0
 # add -v flag for naabu verbosity - does not do anything in 2.0.5
 # add -stats for time, PPS, packets percentage 
-sudo naabu -host 10.10.10.10 -p 0-65535 -i $interface -c $workers -rate $naabuRate -nc -o naabu/10-10-10-10-allports -nmap-cli 'nmap -sV -sC --min-rate $nmapRate -e $interface -oN nmap/from-naabu-some-ports-sc-sv'
+sudo naabu -v -stats -host 10.10.10.10 -p 0-65535 -i $interface -c $workers -rate $naabuRate -nc -o naabu/10-10-10-10-allports -nmap-cli 'nmap -sV -sC --min-rate $nmapRate -e $interface -oN nmap/from-naabu-some-ports-sc-sv'
 ```
 
 

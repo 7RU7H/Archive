@@ -3,7 +3,7 @@
 ![](69thukTHM.png)
 https://tryhackme.com/p/CyberOwl
 ![](5ec914c35ec3f227230cc3a0-1772903671362.png)
-In the realm of cybersecurity, the wise owl sees all, but speaks only in code.
+In the realm of `cybersecurity`, the wise owl sees all, but speaks only in code.
 ## Overview 
 
 ![](2026-04-11_13-23.png)
