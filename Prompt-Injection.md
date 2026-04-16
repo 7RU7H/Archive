@@ -14,7 +14,7 @@
 - **Sensitive Data Disclosure:** 
 	- If not properly sanitised, models can often provide output containing sensitive information such as proprietary information, personally identifiable information, Intellectual property, etc. 
 - **Prompt Injection for destruction and model information denial:** 
-	- Prompt injection is one of the most commonly used attacks against LLMs and chatbots. In this attack, a crafted input is provided to overrides its original instructions that would originally be outputed, similar to control flow hijack attacks against traditional systems with writing into a binary. [[Shellcode-Injection]]
+	- Prompt injection is one of the most commonly used attacks against LLMs and chatbots. In this attack, a crafted input is provided to overrides its original instructions that would originally be outputted, similar to control flow hijack attacks against traditional systems with writing into a binary. [[Shellcode-Injection]]
 
 
 
