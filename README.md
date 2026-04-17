@@ -1,4 +1,4 @@
-# Archive
+# The Archive
 
 ![](69thukTHM.png)
 https://tryhackme.com/p/CyberOwl
@@ -6,8 +6,8 @@ https://tryhackme.com/p/CyberOwl
 In the realm of `cybersecurity`, the wise owl sees all, but speaks only in code.
 ## Overview 
 
+Me getting me focking THM assessment. Check out that Graph View in Obsidian.
 ![](2026-04-11_13-23.png)
-
 Hacking Methodology, Cheatsheets, Conceptual Breakdowns - Now with pages that are spellchecked! 
 
 This is a continuous life-long project as the curated answer to the rise of LLMs and its evolution to create something entire human curated and referenced. Any usage of any products on a page-per-page basis will be indicated. If the said product does not provide a reference it won't by default be used. Very open to feedback. All information was obtained from clear-net sites only with references provided.
