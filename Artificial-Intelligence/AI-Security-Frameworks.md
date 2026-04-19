@@ -1,5 +1,23 @@
+# AI Security Frameworks
 
-LLM Attack Surface; There are six key LLM (Large Language Model) components that can be targeted by attackers:
+#### [[Blueteam-Hub]] link
+
+Blue Team usage of AI has positive use cases in the 
+- Ability to Analyse
+- Ability to Digest
+- Ability to Predict
+- Ability to Investigate
+
+With the costs of:
+- [[Securing-AI-Models]]
+- Implementing [[AI-Security-Standards]]
+- Privacy Protection
+- [[Model-Monitoring]]
+
+
+#### LLM Attack Surface
+
+There are six key LLM (Large Language Model) components that can be targeted by attackers:
 - Prompt - Attacks like prompt injections, where malicious input is used to manipulate the AI's output
 - Response - Misuse or leakage of sensitive information in AI-generated responses
 - Model - Theft, poisoning, or manipulation of the AI model
@@ -17,3 +35,4 @@ Frameworks
 ## References
 
 [thehackernews.com - 10/2024 from-misuse-to-abuse-ai-risks](https://thehackernews.com/2024/10/from-misuse-to-abuse-ai-risks-and.html)
+[THM AI/ML security threats](https://tryhackme.com/room/aimlsecuritythreats)

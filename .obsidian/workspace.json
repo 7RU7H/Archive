@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Software/Tools/Useful-Online-Software/Strudel.md",
+                "file": "Artificial-Intelligence/AI-Models-And-Data.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Strudel"
+              "title": "AI-Models-And-Data"
             }
           }
         ]
@@ -183,10 +183,23 @@
   },
   "active": "f368891c949f3bdf",
   "lastOpenFiles": [
+    "Artificial-Intelligence/AI-Security-Frameworks.md",
+    "Artificial-Intelligence/AI-Models-And-Data.md",
+    "Artificial-Intelligence/AI.md",
+    "Artificial-Intelligence/AI-Data-Poisoning.md",
+    "Social-Engineering/Vhishing.md",
+    "Artificial-Intelligence/Deepfaking.md",
+    "Artificial-Intelligence/Model-Drifting.md",
+    "Artificial-Intelligence/AI-Privacy-Leakage.md",
+    "Artificial-Intelligence/Model-Theft.md",
+    "Images/68dac5d6d4d4f23175b3296f-1768314591776.svg",
+    "README.md",
+    "Artificial-Intelligence/AI-ChatBots-Whispering.md",
+    "Artificial-Intelligence/LLM-Malware.md",
+    "Artificial-Intelligence/Prompt-Injection.md",
+    "Software/Tools/Useful-Online-Software/Strudel.md",
     "Software/Tools/Cross-OS/Exiftool.md",
     "Hardware/Hardware-Maintenance/USB-Maintenance.md",
-    "Software/Tools/Useful-Online-Software/Strudel.md",
-    "README.md",
     "Images/mozilla-http-auth.png_exiftool_tmp",
     "Images/evadeIDPandIPSwithRely.png_exiftool_tmp",
     "Images/azureapplicationgatewayflowdiagram.png_exiftool_tmp",
@@ -201,8 +214,6 @@
     "Artificial-Intelligence/Prompt-Engineering.md",
     "Software/Virtualization/Cloud/Cloud-Computing-Defined.md",
     "Images/THM-cloudcomputingfundamentals.svg",
-    "Images/68dac5d6d4d4f23175b3296f-1768314591776.svg",
-    "Prompt-Injection.md",
     "Software/Tools/Useful-Online-Software/Puzzle-Solution-Tools.md",
     "Software/Tools/Useful-Online-Software/MISP.md",
     "Software/Tools/Useful-Online-Software/Code-Online.md",
@@ -210,7 +221,6 @@
     "Software/Tools/Network-Based/Port-scanning/Naabu-Cheatsheet.md",
     "Software/Tools/Network-Based/Port-scanning/Masscan/Masscan-Cheatsheet.md",
     "Reconnaissance/Active-Information-Gathering/Port-Scanning.md",
-    "Reconnaissance/Active-Information-Gathering/Active-Recon.md",
     "Images/2026-04-11_13-23.png",
     "Images/5ec914c35ec3f227230cc3a0-1772903671362.png",
     "Images/yaraCS.png",
@@ -218,16 +228,6 @@
     "Images/windowsProcesses.png",
     "Images/windowsPortableExecutableFormat.png",
     "Images/windowsMemoryManager.png",
-    "Images/windowsInternals.png",
-    "Images/Excalidraw/azure-virtualnetworking-diagram.excalidraw.md",
-    "Images/Excalidraw/USART-protocol.excalidraw.md",
-    "Development/Markdown-Cheatsheet.md",
-    "Alledged-Real-World-Stuff/Physics-Glossary/Equations-Glossary.md",
-    "Software/Tools/C2/Sliver/Sliver.md",
-    "Brain-Hacking/Strategy/Strategy.md",
-    "Social-Engineering/Counter-Subversion.md",
-    "Social-Engineering/Subversion.md",
-    "Security-Disciplines/Cyberwarfare/Theory/Cyberwarfare-Considerations.md",
-    "Exploitation/Windows/Active-Directory/Ticket-Attacks/ASREP-Roasting.md"
+    "Images/windowsInternals.png"
   ]
 }
