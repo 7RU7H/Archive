@@ -57,6 +57,12 @@ This evident in the follow ways:
 **2. Specialisation increases attack surface**
 - [Cisco](https://blogs.cisco.com/security/fine-tuning-llms-breaks-their-safety-and-security-alignment) found that fine-tuned models are measurably more susceptible to prompt injection than the base models they were fine-tuned on.
 **3. Version matters, and it's rarely tracked**
+
+#### Model Cards
+
+Model Cards were intended to help solve the Black Box problem that model is.
+[Google researchers in 2019 (opens in new tab)](https://arxiv.org/abs/1810.03993) and has since become the closest thing the industry has to a standard transparency format. Consider [[Black-Box-Method]] for more examples around solving Black Box problems
+
 ## Reference
 
 [THM AI Models and Data Room](https://tryhackme.com/room/aimodelsdata)
