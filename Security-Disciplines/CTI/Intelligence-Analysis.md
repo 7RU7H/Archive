@@ -1,5 +1,4 @@
 
-
 #### Intelligence Cycle
 
 Agents in these models: Intelligence Community, Customers, Target
