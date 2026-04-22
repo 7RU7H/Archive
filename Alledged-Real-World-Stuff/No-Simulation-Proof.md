@@ -6,7 +6,7 @@ And I am the Social Media manager getting sent to Brazil -> []
 
 Use this application with a limited dictionary.
 
-(Disprove)Deprove a Simulation (stdin, stdout stderr) with Biological Imperative and protected Life algorithm with time travel family holiday policy committee
+Disprove a Simulation (stdin, stdout stderr) with a Biological Imperative and to protected the Life algorithm with time travel family holiday policy committee
 https://www.port.ac.uk/news-events-and-blogs/news/scientist-suggests-gravity-further-supports-theory-we-are-living-in-a-simulated-universe []()
 - Size of the Universe (light measuring this properly)
 - Fundamental model of Universe would require a computer infinitely big and Black hole are just wholes in the Dark matter of the Universe 
