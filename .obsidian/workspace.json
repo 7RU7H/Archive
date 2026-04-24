@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Artificial-Intelligence/LLMs.md",
+                "file": "Software/Tools/Network-Based/Packet-Analysis/Tcpdump-Cheatsheet.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "LLMs"
+              "title": "Tcpdump-Cheatsheet"
             }
           }
         ]
@@ -83,7 +83,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Equation",
+                "query": "tcpdump",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -203,6 +203,12 @@
   },
   "active": "0df7cfdb1dea3f6f",
   "lastOpenFiles": [
+    "README.md",
+    "Software/Tools/Network-Based/Packet-Analysis/Tcpdump-Cheatsheet.md",
+    "Software/Operating-Systems/Linux/Linux-Commands/Linux-Networking-Commands.md",
+    "Software/Operating-Systems/Linux/Linux-Commands/Linux-CLIMagic.md",
+    "Development/Software-Development-Paradigms/Software-Development-Lifecycle.md",
+    "Development/DevOps/SDLC.md",
     "Artificial-Intelligence/Prompt-Engineering.md",
     "Artificial-Intelligence/LLMs.md",
     "Alledged-Real-World-Stuff/No-Simulation-Proof.md",
@@ -210,7 +216,6 @@
     "Development/Markdown-Cheatsheet.md",
     "Security-Disciplines/CTI/Intelligence-Analysis.md",
     "Artificial-Intelligence/AI-Models-And-Data.md",
-    "README.md",
     "Artificial-Intelligence/AI-Security-Frameworks.md",
     "Artificial-Intelligence/AI.md",
     "Artificial-Intelligence/AI-Data-Poisoning.md",
@@ -225,7 +230,6 @@
     "Artificial-Intelligence/Prompt-Injection.md",
     "Software/Tools/Useful-Online-Software/Strudel.md",
     "Software/Tools/Cross-OS/Exiftool.md",
-    "Hardware/Hardware-Maintenance/USB-Maintenance.md",
     "Images/mozilla-http-auth.png_exiftool_tmp",
     "Images/evadeIDPandIPSwithRely.png_exiftool_tmp",
     "Images/azureapplicationgatewayflowdiagram.png_exiftool_tmp",
@@ -236,11 +240,7 @@
     "Images/azureaksstorageclasses.png_exiftool_tmp",
     "Images/asciiDecHexCharTable.png_exiftool_tmp",
     "Images/thmC2stagelessPayload.png_exiftool_tmp",
-    "Development/Languages/Bash/Bash.md",
-    "Software/Virtualization/Cloud/Cloud-Computing-Defined.md",
     "Images/THM-cloudcomputingfundamentals.svg",
-    "Software/Tools/Useful-Online-Software/Puzzle-Solution-Tools.md",
-    "Software/Tools/Useful-Online-Software/MISP.md",
     "Images/2026-04-11_13-23.png",
     "Images/5ec914c35ec3f227230cc3a0-1772903671362.png",
     "Images/yaraCS.png",
