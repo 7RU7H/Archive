@@ -65,6 +65,8 @@ openssl rsa -in private-key.pem -pubout -out public-key.pem
 openssl rsa -in private-key.pem -text -noout
 ```
 
+$ϕ(n) = n − p − q + 1$
+
 #### Asymmetric Encrypted Bind Shells
 
 Encrypted communication rely on the Secure Sockets Layer (SSL)
@@ -91,3 +93,4 @@ socat - OPENSSL:$IP:$PORT,verify=0 <cmd>
 ## References
 
 [THM Room Introduction to Cryptography](https://tryhackme.com/room/cryptographyintr)
+[THM Room Public Key Cryptography](https://tryhackme.com/room/publickeycrypto)

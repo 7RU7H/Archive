@@ -13,32 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Software/Tools/Network-Based/Packet-Analysis/Tcpdump-Cheatsheet.md",
+                "file": "Software/Tools/Shells/Putty.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Tcpdump-Cheatsheet"
-            }
-          }
-        ]
-      },
-      {
-        "id": "882bbb92abddd578",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "decc0d9966a3fda5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Development/Markdown-Cheatsheet.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Markdown-Cheatsheet"
+              "title": "Putty"
             }
           }
         ]
@@ -83,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tcpdump",
+                "query": "SSH",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -203,8 +183,21 @@
   },
   "active": "0df7cfdb1dea3f6f",
   "lastOpenFiles": [
-    "README.md",
+    "Software/Tools/Password-Managers/Keepass.md",
+    "Development/Markdown-Cheatsheet.md",
+    "Software/Tools/Password-Managers",
+    "Software/Tools/Shells/Putty.md",
+    "Software/Tools/Shells/SSH-Cheatsheet.md",
+    "Software/Virtualization/Cloud/Azure/Azure-Administration/Azure-Deploy-And-Manage-Compute-Resources/Azure-Administration-Azure-Virtual-Machines.md",
+    "Cryptography/Cracking-Files-And-Directories.md",
+    "Software/Tools/Data-Processing/JQ.md",
+    "Exploitation/Video-Game-Hacking/Video-Game-Hacking.md",
+    "Exploitation/Exploitation.md",
+    "Security-Disciplines/CTI/Intelligence-Analysis.md",
+    "Reconnaissance/OSINT/OSINT-Chris-Kubecka-DEFCON-27-Talk.md",
+    "Cryptography/Asymmetric-Encryption.md",
     "Software/Tools/Network-Based/Packet-Analysis/Tcpdump-Cheatsheet.md",
+    "README.md",
     "Software/Operating-Systems/Linux/Linux-Commands/Linux-Networking-Commands.md",
     "Software/Operating-Systems/Linux/Linux-Commands/Linux-CLIMagic.md",
     "Development/Software-Development-Paradigms/Software-Development-Lifecycle.md",
@@ -213,23 +206,11 @@
     "Artificial-Intelligence/LLMs.md",
     "Alledged-Real-World-Stuff/No-Simulation-Proof.md",
     "Alledged-Real-World-Stuff/Physics-Glossary/Equations-Glossary.md",
-    "Development/Markdown-Cheatsheet.md",
-    "Security-Disciplines/CTI/Intelligence-Analysis.md",
     "Artificial-Intelligence/AI-Models-And-Data.md",
     "Artificial-Intelligence/AI-Security-Frameworks.md",
     "Artificial-Intelligence/AI.md",
     "Artificial-Intelligence/AI-Data-Poisoning.md",
-    "Social-Engineering/Vhishing.md",
-    "Artificial-Intelligence/Deepfaking.md",
-    "Artificial-Intelligence/Model-Drifting.md",
-    "Artificial-Intelligence/AI-Privacy-Leakage.md",
-    "Artificial-Intelligence/Model-Theft.md",
     "Images/68dac5d6d4d4f23175b3296f-1768314591776.svg",
-    "Artificial-Intelligence/AI-ChatBots-Whispering.md",
-    "Artificial-Intelligence/LLM-Malware.md",
-    "Artificial-Intelligence/Prompt-Injection.md",
-    "Software/Tools/Useful-Online-Software/Strudel.md",
-    "Software/Tools/Cross-OS/Exiftool.md",
     "Images/mozilla-http-auth.png_exiftool_tmp",
     "Images/evadeIDPandIPSwithRely.png_exiftool_tmp",
     "Images/azureapplicationgatewayflowdiagram.png_exiftool_tmp",
@@ -239,7 +220,6 @@
     "Images/azurevmandcontaincomparison.png_exiftool_tmp",
     "Images/azureaksstorageclasses.png_exiftool_tmp",
     "Images/asciiDecHexCharTable.png_exiftool_tmp",
-    "Images/thmC2stagelessPayload.png_exiftool_tmp",
     "Images/THM-cloudcomputingfundamentals.svg",
     "Images/2026-04-11_13-23.png",
     "Images/5ec914c35ec3f227230cc3a0-1772903671362.png",
