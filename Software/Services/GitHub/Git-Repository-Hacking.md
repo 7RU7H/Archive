@@ -89,6 +89,18 @@ trufflehog git https://github.com/trufflesecurity/test_keys --only-verified
 # use your GitHub personal access token to avoid the rate limiting: 
 --token
 ```
+
+[GitHub gittyleaks](https://github.com/kootenpv/gittyleaks)
+```bash
+pip3 install gittyleaks
+
+gittyleaks --find-anything --verbose
+# gittyleaks -l some-git-cloneable-link
+gittyleaks -link https://github.com/kootenpv/yagmail
+# gittyleaks -user githubusername -repo githubusername
+gittyleaks -user kootenpv -repo yagmail
+
+```
 #### Content Visibility Tools
 
 [gitraken](https://www.gitkraken.com/)
@@ -143,3 +155,4 @@ Linux - [GTFOBins - git](https://gtfobins.github.io/gtfobins/git/)
 [Git-Hound](https://github.com/ezekg/git-hound) is an alternative to Git-secrets.
 [git-dumper](https://github.com/arthaud/git-dumper)
 https://infosec.exchange/@malwarejake cited [https://trufflesecurity.com/blog/anyone-can-access-deleted-and-private-repo-data-github](https://trufflesecurity.com/blog/anyone-can-access-deleted-and-private-repo-data-github)
+[GitHub gittyleaks](https://github.com/kootenpv/gittyleaks)

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Software/Tools/Shells/Putty.md",
+                "file": "Development/DevOps/Pipeline-Automation.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Putty"
+              "title": "Pipeline-Automation"
             }
           }
         ]
@@ -63,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "SSH",
+                "query": "GitHub",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,7 +74,8 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -183,10 +184,14 @@
   },
   "active": "0df7cfdb1dea3f6f",
   "lastOpenFiles": [
+    "Software/Services/GitHub/Git-Repository-Hacking.md",
+    "Development/DevOps/Pipeline-Automation.md",
+    "Development/DevOps/SDLC.md",
+    "README.md",
+    "Software/Tools/Shells/Putty.md",
     "Software/Tools/Password-Managers/Keepass.md",
     "Development/Markdown-Cheatsheet.md",
     "Software/Tools/Password-Managers",
-    "Software/Tools/Shells/Putty.md",
     "Software/Tools/Shells/SSH-Cheatsheet.md",
     "Software/Virtualization/Cloud/Azure/Azure-Administration/Azure-Deploy-And-Manage-Compute-Resources/Azure-Administration-Azure-Virtual-Machines.md",
     "Cryptography/Cracking-Files-And-Directories.md",
@@ -197,19 +202,15 @@
     "Reconnaissance/OSINT/OSINT-Chris-Kubecka-DEFCON-27-Talk.md",
     "Cryptography/Asymmetric-Encryption.md",
     "Software/Tools/Network-Based/Packet-Analysis/Tcpdump-Cheatsheet.md",
-    "README.md",
     "Software/Operating-Systems/Linux/Linux-Commands/Linux-Networking-Commands.md",
     "Software/Operating-Systems/Linux/Linux-Commands/Linux-CLIMagic.md",
     "Development/Software-Development-Paradigms/Software-Development-Lifecycle.md",
-    "Development/DevOps/SDLC.md",
     "Artificial-Intelligence/Prompt-Engineering.md",
     "Artificial-Intelligence/LLMs.md",
     "Alledged-Real-World-Stuff/No-Simulation-Proof.md",
     "Alledged-Real-World-Stuff/Physics-Glossary/Equations-Glossary.md",
     "Artificial-Intelligence/AI-Models-And-Data.md",
     "Artificial-Intelligence/AI-Security-Frameworks.md",
-    "Artificial-Intelligence/AI.md",
-    "Artificial-Intelligence/AI-Data-Poisoning.md",
     "Images/68dac5d6d4d4f23175b3296f-1768314591776.svg",
     "Images/mozilla-http-auth.png_exiftool_tmp",
     "Images/evadeIDPandIPSwithRely.png_exiftool_tmp",
