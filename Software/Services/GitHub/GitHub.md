@@ -8,19 +8,29 @@ For hacking GitHub Repositories see [[Git-Repository-Hacking]]
 git status -uno
 git branch # display branches
 
+
+git add . # --sparse
+
 # Are you really sure the local is ahead of the remote?
 # Push once, measure twice - DOUBLE CHECK!
 git push --all -f
+
+# committing
+git commit -a
+git commit -m "message"
 ```
 
 #### Branches
 
 ```bash
-# View avaliable branch from a repositories directory
+# View avaliable branch from a repositories directory both local and remote branches
 git branch -a 
+git branch -r # just remote
 
-
+# clone a single branch
 git clone --single-branch --branch $branchname $remote_repo
+# Update remote-tracking branches
+git fetch 
 ```
 
 #### `curl` to get the latest releases of a repository
@@ -125,3 +135,4 @@ $ cd /tmp && touch aaa && gpg --sign aaa && rm aaa aaa.gpg && cd -
 [StackOverflow - Johnathan Chad Faling](https://stackoverflow.com/questions/15289768/github-commits-arent-recorded-in-the-your-contributions-calendar#19384175)
 [Github Documentation](https://docs.github.com/en)
 [stackoverflow download-a-single-folder-or-directory-from-a-github-repository](https://stackoverflow.com/questions/7106012/download-a-single-folder-or-directory-from-a-github-repository)
+[THM Room Source Code Security](https://tryhackme.com/room/sourcecodesecurity)
