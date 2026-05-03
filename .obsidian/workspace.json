@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "8e10bb0a9af27041",
+        "id": "ed9a9147bc7aa7a4",
         "type": "tabs",
         "children": [
           {
-            "id": "d6d969d21c735c76",
+            "id": "74933d977a526a51",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Development/Languages/Go/Useful-Go.md",
+                "file": "Software/Services/Intrusion-Detection-Systems.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Useful-Go"
+              "title": "Intrusion-Detection-Systems"
             }
           }
         ]
@@ -63,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "IDS",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 332.5
+    "width": 200
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -181,10 +181,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d6d969d21c735c76",
+  "active": "74933d977a526a51",
   "lastOpenFiles": [
-    "README.md",
+    "Software/Services/Snort/Snort.md",
+    "Software/Services/Intrusion-Detection-Systems.md",
+    "Post-Exploitation/Evasion/IDS-Evasion.md",
+    "Post-Exploitation/Evasion/Evading-IPS-And-IDS.md",
+    "Software/Virtualization/Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Configure-Virtual-Networks.md",
     "Development/Languages/Go/Useful-Go.md",
+    "Cryptography/Diffie-Hellman.md",
+    "README.md",
     "Development/Languages/Go/Golang.md",
     "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Linux-File-Transfers.md",
     "Software/Tools/Shells/SSH-Cheatsheet.md",
@@ -204,12 +210,6 @@
     "Software/Tools/Data-Processing/JQ.md",
     "Exploitation/Video-Game-Hacking/Video-Game-Hacking.md",
     "Exploitation/Exploitation.md",
-    "Security-Disciplines/CTI/Intelligence-Analysis.md",
-    "Reconnaissance/OSINT/OSINT-Chris-Kubecka-DEFCON-27-Talk.md",
-    "Cryptography/Asymmetric-Encryption.md",
-    "Software/Tools/Network-Based/Packet-Analysis/Tcpdump-Cheatsheet.md",
-    "Software/Operating-Systems/Linux/Linux-Commands/Linux-Networking-Commands.md",
-    "Software/Operating-Systems/Linux/Linux-Commands/Linux-CLIMagic.md",
     "Images/68dac5d6d4d4f23175b3296f-1768314591776.svg",
     "Images/mozilla-http-auth.png_exiftool_tmp",
     "Images/evadeIDPandIPSwithRely.png_exiftool_tmp",

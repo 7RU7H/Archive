@@ -27,6 +27,10 @@ Alice | Public  |Bob
 2. Alice `(g^B)^a mod n` - each has (due to power of exponentiation is just) `g^ab mod n`
 3. Bob `(g^A)^b mod n`  - each has (due to power of exponentiation is just) `g^ab mod n`
 
+```bash
+python3 -c 'print((g ** a) % n)'
+```
+
 ## References
 
 [Secret Key Exchange (Diffie-Hellman) - Computerphile](https://www.youtube.com/watch?v=NmM9HA2MQGI)

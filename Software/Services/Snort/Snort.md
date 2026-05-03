@@ -6,6 +6,7 @@ For more information regarding IDS and IPS systems view the articles [[Intrusion
 *"Snort can be deployed inline to stop these packets, as well. Snort has three primary uses: As a packet sniffer like tcpdump, as a packet logger — which is useful for network traffic debugging, or it can be used as a full-blown network intrusion prevention system. Snort can be downloaded and configured for personal and business use alike."*
 
 ## Capabilities
+
 -   Live traffic analysis
 -   Attack and probe detection
 -   Packet logging
@@ -30,6 +31,23 @@ For more information regarding IDS and IPS systems view the articles [[Intrusion
 	- [[Zeek]]: Network Monitoring, traffic investigation and detecting chained event
 	- [[Snort]] : Itrusion detection and prevention to stop the known threats and attacks
 
+## Rule Format
+
+```c
+[ACTION] [Protocol] [Source IP] [Source Port] -> [Destination IP] [Destination Port] [Rule metadata]([Message];[signature ID]; [Rule Revision];)  
+```
+
+[THM IDS Fundamentals](https://tryhackme.com/room/idsfundamentals):
+- **Action:** This specifies which action to take when the rule triggers. In this case, we have the action to "alert" when the traffic matches this rule.
+- **Protocol:** This refers to the protocol that matches this rule. In this case, we use the protocol "ICMP" when pinging a host.
+- **Source IP:** This determines the IP originating from the traffic. Since we want to detect traffic from any source IP, we set this as "any".
+- **Source port:** This determines the port from which the traffic originates. Since we want to detect traffic from any source port, we set this as "any".
+- **Destination IP:** This specifies the destination IP to which the matching traffic comes; it generates the alert. In this case, we used "$HOME_NET". This is a variable, and we defined its value as our whole network’s range in Snort’s configuration file.
+- **Destination port:** This specifies the port the traffic would reach. Since we want to detect traffic coming to any port, we set it to "any."
+- **Rule mhttps://tryhackme.com/room/idsfundamentalsetadata:** Every rule has some metadata. That is defined at the end of the rule in parentheses. The following are its components:
+    - **Message (msg):** This describes the message displayed when the subject rule triggers. The message should indicate the type of activity detected. In this case, we used "Ping Detected".
+    - **Signature ID (sid):** Every rule has a unique identifier that differentiates it from others. This identifier is called the signature ID (sid). In this case, we set the sid to "10001".
+    - **Rule revision (rev):** This sets the rule's revision number. Every time the rule is modified, its revision number is incremented, which helps in tracking changes to any rule.
 
 ## Utility
 
@@ -37,9 +55,16 @@ Version and .conf testing
 ```bash
 snort -V # Version
 snort -h # HELP!
+
+# Custom Rules file path and editing
+sudo vim /etc/snort/rules/local.rules
+
 # Test -T the -c .conf
 sudo snort -c /etc/snort/snort.conf -T # -q # for quiet mode
+# Test with terminal 
+sudo snort -q -l /var/log/snort -i lo -A console -c /etc/snort/snort.conf
 ```
+
 
 ## Sniffing Mode 
 ```bash
@@ -74,9 +99,9 @@ snort -r $logname.log -n 10 # Process only the first 10 lines
 snort -r $logname.log -n 10 -vxde # As above with all sniffing parameters
 ```
 
-## IDS/IPS Mode
+## IDS/IPS Mode (Network Intrusion Detection System mode)
 
-NIDS mode parametres
+NIDS mode parameters
 ```bash
 snort -c /etc/snort/snort.conf # Define config file
 snort -c /etc/snort/snort.conf  -T # Test config file
@@ -99,6 +124,10 @@ snort -c /etc/snort/snort.conf -q -Q daq afpacket -i $iface0:$iface1
 ## PCAP Investigtion 
 
 ```bash
+sudo snort -q -l /var/log/snort -r $example.pcap -A console -c /etc/snort/snort.con
+
+
+
 # Investigate with default reading options
 snort -r $file.pcap # Read a pcap
 snort --pcap-list="$file0.pcap $file1.pcap $file2.pcap $file3.pcap " # space sperated pcap list
@@ -109,8 +138,11 @@ snort --pcap-show # Show pcap name on console during processing
 sudo snort -c /etc/snort/snort.conf -q -r $file0.pcap -A console -n 10
 ```
 
+
+
 ## References
 
 [Snort](https://www.snort.org/)
 [THM Snort Room](https://tryhackme.com/room/snort)
 [Snort wiki](https://en.wikipedia.org/wiki/Snort_(software))
+[THM IDS Fundamentals](https://tryhackme.com/room/idsfundamentals)
