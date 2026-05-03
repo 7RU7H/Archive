@@ -225,3 +225,6 @@
 	- Framework? 
 	- Database?
 	- Session-related?
+
+Getting a Shell
+- Have you tried dorking for a similar RCE technique for a similar stack?

@@ -74,6 +74,9 @@ git status
 git log
 # Difference between commits
 git show
+
+grep -r "assword =" 
+grep -r database
 ```
 
 `md5sum` hash a `$file.js` or any other library then look up the hash on opensource repositories on GitHub code to fingerprint the version - From [Ippsec.Rocks](https://ippsec.rocks) Get all `md5sum` for every version of test.js from repository sorted by commit hash:

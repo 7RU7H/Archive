@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Software/Services/Intrusion-Detection-Systems.md",
+                "file": "Software/Tools/CAPA.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Intrusion-Detection-Systems"
+              "title": "CAPA"
             }
           }
         ]
@@ -63,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "IDS",
+                "query": "CAPA",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,11 +74,12 @@
               "title": "Search"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 419.5
   },
   "right": {
     "id": "a8801793a2fc8477",
@@ -183,8 +184,20 @@
   },
   "active": "74933d977a526a51",
   "lastOpenFiles": [
-    "Software/Services/Snort/Snort.md",
+    "Exploitation/Web-Application-Hacking/Web-Exploits/SSRF/Server-Side-Request-Forgery.md",
+    "Brain-Hacking/Question-Based-Methodologies/Question-Based-Web-Application-Hacking-Methodology.md",
+    "Brain-Hacking/Question-Based-Methodologies/Question-Based-Penetration-Testing-Methodology.md",
+    "Brain-Hacking/Question-Based-Methodologies/Question-Based-CTI-Methodology.md",
+    "Brain-Hacking/Question-Based-Methodologies/Question-Based-Forensics-Methodology.md",
+    "Exploitation/Shells/TTY-Spawning.md",
+    "Exploitation/Shells/Reverse-Shells-Listing.md",
+    "Exploitation/Shells/Shells.md",
+    "Software/Services/Databases/MYSQL/MySQL-Cheatsheet.md",
+    "Software/Services/Databases/Database-Hacking.md",
+    "Software/Services/GitHub/Git-Repository-Hacking.md",
+    "Post-Exploitation/Data-Ex&Infiltration/Git-Filtration-N-Escalation.md",
     "Software/Services/Intrusion-Detection-Systems.md",
+    "Software/Services/Snort/Snort.md",
     "Post-Exploitation/Evasion/IDS-Evasion.md",
     "Post-Exploitation/Evasion/Evading-IPS-And-IDS.md",
     "Software/Virtualization/Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Configure-Virtual-Networks.md",
@@ -197,19 +210,7 @@
     "Software/Virtualization/Cloud/Azure/Azure-Administration/Azure-Deploy-And-Manage-Compute-Resources/Azure-Administration-Azure-Virtual-Machines.md",
     "Software/Services/Webservers/Nginx.md",
     "Software/Services/GitHub/GitHub.md",
-    "Development/DevOps/Source-Code-Security.md",
-    "Development/DevOps/Pipeline-Automation.md",
-    "Reconnaissance/Active-Information-Gathering/SNMP/SNMP-Recon-Cheatsheet.md",
-    "Software/Services/GitHub/Git-Repository-Hacking.md",
-    "Development/DevOps/SDLC.md",
-    "Software/Tools/Shells/Putty.md",
-    "Software/Tools/Password-Managers/Keepass.md",
-    "Development/Markdown-Cheatsheet.md",
     "Software/Tools/Password-Managers",
-    "Cryptography/Cracking-Files-And-Directories.md",
-    "Software/Tools/Data-Processing/JQ.md",
-    "Exploitation/Video-Game-Hacking/Video-Game-Hacking.md",
-    "Exploitation/Exploitation.md",
     "Images/68dac5d6d4d4f23175b3296f-1768314591776.svg",
     "Images/mozilla-http-auth.png_exiftool_tmp",
     "Images/evadeIDPandIPSwithRely.png_exiftool_tmp",
