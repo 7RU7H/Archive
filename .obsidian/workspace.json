@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Software/Tools/CAPA.md",
+                "file": "Software/Tools/Cryptography/Openssl.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CAPA"
+              "title": "Openssl"
             }
           }
         ]
@@ -63,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "CAPA",
+                "query": "openssl",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,8 +74,7 @@
               "title": "Search"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -184,16 +183,22 @@
   },
   "active": "74933d977a526a51",
   "lastOpenFiles": [
+    "Exploitation/CVEs/CopyFail.md",
+    "Software/Tools/Cryptography/Openssl.md",
+    "Software/Tools/Cryptography",
+    "Brain-Hacking/Question-Based-Methodologies/Question-Based-Penetration-Testing-Methodology.md",
+    "Software/Services/Databases/SQLite/SQLite-Hacking.md",
+    "Software/Services/Databases/Database-Hacking.md",
+    "Security-Disciplines/Business-Mathematics.md",
+    "Software/Tools/CAPA.md",
     "Exploitation/Web-Application-Hacking/Web-Exploits/SSRF/Server-Side-Request-Forgery.md",
     "Brain-Hacking/Question-Based-Methodologies/Question-Based-Web-Application-Hacking-Methodology.md",
-    "Brain-Hacking/Question-Based-Methodologies/Question-Based-Penetration-Testing-Methodology.md",
     "Brain-Hacking/Question-Based-Methodologies/Question-Based-CTI-Methodology.md",
     "Brain-Hacking/Question-Based-Methodologies/Question-Based-Forensics-Methodology.md",
     "Exploitation/Shells/TTY-Spawning.md",
     "Exploitation/Shells/Reverse-Shells-Listing.md",
     "Exploitation/Shells/Shells.md",
     "Software/Services/Databases/MYSQL/MySQL-Cheatsheet.md",
-    "Software/Services/Databases/Database-Hacking.md",
     "Software/Services/GitHub/Git-Repository-Hacking.md",
     "Post-Exploitation/Data-Ex&Infiltration/Git-Filtration-N-Escalation.md",
     "Software/Services/Intrusion-Detection-Systems.md",
@@ -205,11 +210,6 @@
     "Cryptography/Diffie-Hellman.md",
     "README.md",
     "Development/Languages/Go/Golang.md",
-    "Post-Exploitation/Data-Ex&Infiltration/File-Transfers/Linux-File-Transfers.md",
-    "Software/Tools/Shells/SSH-Cheatsheet.md",
-    "Software/Virtualization/Cloud/Azure/Azure-Administration/Azure-Deploy-And-Manage-Compute-Resources/Azure-Administration-Azure-Virtual-Machines.md",
-    "Software/Services/Webservers/Nginx.md",
-    "Software/Services/GitHub/GitHub.md",
     "Software/Tools/Password-Managers",
     "Images/68dac5d6d4d4f23175b3296f-1768314591776.svg",
     "Images/mozilla-http-auth.png_exiftool_tmp",
@@ -220,7 +220,6 @@
     "Images/msetwdiagram.png_exiftool_tmp",
     "Images/azurevmandcontaincomparison.png_exiftool_tmp",
     "Images/azureaksstorageclasses.png_exiftool_tmp",
-    "Images/asciiDecHexCharTable.png_exiftool_tmp",
     "Images/THM-cloudcomputingfundamentals.svg",
     "Images/2026-04-11_13-23.png",
     "Images/5ec914c35ec3f227230cc3a0-1772903671362.png",

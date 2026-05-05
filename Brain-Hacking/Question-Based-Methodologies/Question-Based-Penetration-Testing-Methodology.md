@@ -449,6 +449,7 @@ Condense:
 		- If not have you a method of altering the file system records to cleanup and **set a reminder** that you have touched disk?
 	- What is the scope of what users of that machine use the machine for and how?
 		- How can these be leveraged for stealth and objectives?
+	- What recent vulnerabilities in software distribution or major software are on the box? 
 	- Are there Living Off the Land Binaries to use?
 		- Custom and non-default additions including the below
 			- Custom additions are potentially normal, what is normal usage look like to security? 
