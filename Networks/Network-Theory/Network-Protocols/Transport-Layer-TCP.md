@@ -16,7 +16,7 @@ A -> ACK -> B
 	- Timestamps option can reduce retransmission timer 
 	 - SACK_PERM TSVal, TSecr - Timestamp Value and Timestamp Echo Reply - do not confused with [[Wireshark]] Time stamping
 	- Some increment by the milliseconds or network latency
-	- [[TCP-IP-Model]]
+	- [[TCP-IP-Model 1]]
 	- [[TCP-Wrappers]]
 
 ## References

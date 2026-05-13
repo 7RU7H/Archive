@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Reconnaissance/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
+                "file": "Networks/Network-Theory/TCP-IP-Model.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "SMB-Recon-Cheatsheet"
+              "title": "TCP-IP-Model"
             }
           }
         ]
@@ -63,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "awk",
+                "query": "OSI-Model",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -183,33 +183,35 @@
   },
   "active": "0a2dc3abb1c5882a",
   "lastOpenFiles": [
+    "Networks/Network-Theory/OSI-Model.md",
+    "Networks/Network-Theory/Packet-Transfers.md",
+    "Images/packet_transfer.png",
+    "Networks/Network-Theory/TCP-IP-Model.md",
+    "Networks/Network-Theory/TCP-IP-Model 1.md",
+    "Images/net_models_pdu2_updated.png",
+    "Images/net_models4_updated.png",
+    "Brain-Hacking/Cyber-Related-Actions/Good-Acronyms-And-Phrases.md",
+    "Networks/Proxies.md",
+    "Security-Disciplines/Digital-Forensics/Network-Forensics/Network-Forensics.md",
+    "Software/Tools/Shells/SSH-Cheatsheet.md",
+    "Post-Exploitation/Networking/Port-Redirection-And-Tunnelling.md",
+    "Post-Exploitation/Networking/Pivoting-Tunnelling-And-Redirection-Master-Class-Darnell-And-Thurner-Notes.md",
+    "Post-Exploitation/Networking/Port-Redirection.md",
+    "Software/Tools/C2/Sliver/Sliver.md",
+    "Reconnaissance/Active-Information-Gathering/SNMP/SNMP-Recon-Cheatsheet.md",
+    "Software/Tools/Cryptography/Openssl.md",
+    "Post-Exploitation/Credentials-Harvesting/Backup-Images.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation-Enumeration.md",
+    "Post-Exploitation/Privilege-Escalation/Windows/Windows-Privilege-Escalation Bypassing-Contrained-Powershell.md",
+    "Post-Exploitation/Post-Exploitation-Enumeration/Windows-Post-Exploitation-Info-Gathering.md",
+    "Post-Exploitation/Credentials-Harvesting/AD-Credential-Harvesting.md",
+    "Reconnaissance/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
+    "Networks/Network-Theory/Network-Topologies.md",
     "Networks/Network-Theory/Network-Typologies.md",
     "Networks/Network-Technologies/Network-Technologies.md",
-    "Exploitation/Web-Application-Hacking/Web-Exploits/SSTI/Server-Side-Template-Injection-Cheatsheet.md",
-    "Reconnaissance/Active-Information-Gathering/SMB/SMB-Recon-Cheatsheet.md",
-    "Software/Tools/Cryptography/Openssl.md",
-    "Exploitation/CVEs/CopyFail.md",
+    "Networks/Network-Theory/VLAN.md",
+    "Cryptography/Cryptographic-Attacks/Cryptographic-Attacks-Cheatsheet.md",
     "Software/Tools/Cryptography",
-    "Brain-Hacking/Question-Based-Methodologies/Question-Based-Penetration-Testing-Methodology.md",
-    "Software/Services/Databases/SQLite/SQLite-Hacking.md",
-    "Software/Services/Databases/Database-Hacking.md",
-    "Security-Disciplines/Business-Mathematics.md",
-    "Software/Tools/CAPA.md",
-    "Exploitation/Web-Application-Hacking/Web-Exploits/SSRF/Server-Side-Request-Forgery.md",
-    "Brain-Hacking/Question-Based-Methodologies/Question-Based-Web-Application-Hacking-Methodology.md",
-    "Brain-Hacking/Question-Based-Methodologies/Question-Based-CTI-Methodology.md",
-    "Brain-Hacking/Question-Based-Methodologies/Question-Based-Forensics-Methodology.md",
-    "Exploitation/Shells/TTY-Spawning.md",
-    "Exploitation/Shells/Reverse-Shells-Listing.md",
-    "Exploitation/Shells/Shells.md",
-    "Software/Services/Databases/MYSQL/MySQL-Cheatsheet.md",
-    "Software/Services/GitHub/Git-Repository-Hacking.md",
-    "Post-Exploitation/Data-Ex&Infiltration/Git-Filtration-N-Escalation.md",
-    "Software/Services/Intrusion-Detection-Systems.md",
-    "Software/Services/Snort/Snort.md",
-    "Post-Exploitation/Evasion/IDS-Evasion.md",
-    "Post-Exploitation/Evasion/Evading-IPS-And-IDS.md",
-    "Software/Virtualization/Cloud/Azure/Azure-Administration/Azure-Configure-And-Manage-Virtual-Networks/Azure-Administration-Configure-Virtual-Networks.md",
     "Software/Tools/Password-Managers",
     "Images/68dac5d6d4d4f23175b3296f-1768314591776.svg",
     "Images/mozilla-http-auth.png_exiftool_tmp",
@@ -225,9 +227,6 @@
     "Images/5ec914c35ec3f227230cc3a0-1772903671362.png",
     "Images/yaraCS.png",
     "Images/WIRESHARKcolours!.png",
-    "Images/windowsProcesses.png",
-    "Images/windowsPortableExecutableFormat.png",
-    "Images/windowsMemoryManager.png",
-    "Images/windowsInternals.png"
+    "Images/windowsProcesses.png"
   ]
 }

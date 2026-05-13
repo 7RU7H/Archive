@@ -1,12 +1,11 @@
 # OSI MODEL
 
-### PDU 
 
-[Wikipedia](https://en.wikipedia.org/wiki/Protocol_data_unit) *"In telecommunications, a protocol data unit (PDU) is a single unit of information transmitted among peer entities of a computer network. A PDU is composed of protocol-specific control information and user data. In the layered architectures of communication protocol stacks, each layer implements protocols tailored to the specific type or mode of data exchange."*
+**Please Do Not Throw Sausage Pizza Away!**
+![](net_models4_updated.png)
+[HTB Academy Introduction to Networking](https://academy.hackthebox.com/app/module/34/section/301) *"The `OSI` model, often referred to as `ISO/OSI` layer model, is a reference model that can be used to describe and define the communication between systems. The term `OSI` stands for `Open Systems Interconnection` model, published by the `International Telecommunication Union` (`ITU`) and the `International Organization for Standardization` (`ISO`)"*
 
-### Design Principle: Encapsulation
-
-The OSI model expects data to travel up the various layers via encapsulation. 
+The [[OSI-Model]] expects data to travel up the various layers via encapsulation. 
 Each layer contains descriptions of information at the next layer as well as the intended message itself.
 
 ### Layers
@@ -71,3 +70,5 @@ arp - datalink layer protocol used to discover and map other layer 2 devices
 [YouTube - Part 1 Networking for Pentesters: Beginner -SheNetworks - Serena  DiPenti - BHIS](https://www.youtube.com/watch?v=FFzBgb00ffk)
 [YouTube - Part 2 Networking for Pentesters: Beginner -SheNetworks - Serena  DiPenti - BHIS](https://www.youtube.com/watch?v=ikIGTW0uraA)
 [YouTube - Part 3 Networking for Pentesters: Beginner -SheNetworks - Serena  DiPenti - BHIS](https://www.youtube.com/watch?v=HS0bicAd-5A)
+
+[HTB Academy Introduction to Networking](https://academy.hackthebox.com/app/module/34/section/301)

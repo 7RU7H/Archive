@@ -12,6 +12,9 @@
 WAN 
 - is identifiable by *WAN Specific routing protocol such as BGP and if the IP Schema in use is not within RFC 1918 (10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16).*
 
+LAN
+- [[VLAN]]
+
 VPN
 - Site-to-Site VPNs
 	- Both server and client are Network Devices, generally to join company networks together
